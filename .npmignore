@@ -1,0 +1,8 @@
+node_modules
+src
+public
+.git
+.vscode
+app
+build
+app-doc

@@ -1,0 +1,145 @@
+/* === Variable and mixins overides === */
+$switch-width: 48px;
+$switch-height: 24px;
+$switch-sm-width: 32px;
+$switch-sm-height: 16px;
+
+$switch-indicator-width: 18px;
+$switch-indicator-height: 18px;
+$switch-sm-indicator-width: 10px;
+$switch-sm-indicator-height: 10px;
+
+$switch-focus-shadow: 0 0 0 2px $focus;
+
+/* === Bootstrap Import === */
+
+/* === Custom styles === */
+
+.switch-label {
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 0.5rem;
+  font-size: $text-sm;
+  line-height: $height-text-sm;
+  margin-bottom: 0;
+  margin-top: 0.125rem;
+}
+
+.switch {
+  position: relative;
+  width: fit-content;
+  max-width: 100%;
+  height: fit-content;
+  min-height: 24px;
+  margin-bottom: 0;
+  vertical-align: middle;
+  display: inline-grid;
+  grid-template-columns: min-content;
+  grid-template-rows: 1fr;
+  align-items: center;
+
+  &.switch-dark {
+    input:checked + .slider {
+      background-color: $body-color;
+    }
+  }
+
+  &.switch-sm {
+    min-height: 16px;
+    .slider {
+      width: $switch-sm-width;
+      height: $switch-sm-height;
+      &:before {
+        height: $switch-sm-indicator-height;
+        width: $switch-sm-indicator-width;
+        left: 2px;
+        bottom: 3px;
+      }
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(18px);
+    }
+  }
+
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+
+    &:checked + .slider {
+      background-color: $blue;
+    }
+
+    &:focus + .slider {
+      box-shadow: $switch-focus-shadow;
+      outline: none;
+    }
+
+    &:checked + .slider:before {
+      transform: translateX(26px);
+    }
+
+    ~ .switch-label.on,
+    &:checked ~ .switch-label.off {
+      display: none;
+    }
+
+    &:checked ~ .switch-label.on,
+    ~ .switch-label.off {
+      display: inline-block;
+    }
+
+    &:disabled + .slider {
+      background-color: $disabled-bg;
+      cursor: not-allowed;
+      &:before {
+        background-color: $disabled-text;
+      }
+    }
+  }
+
+  .slider {
+    position: relative;
+    cursor: pointer;
+    background-color: $grisulado-300;
+    transition: 0.4s;
+    border-radius: 50px;
+    width: $switch-width;
+    height: $switch-height;
+    display: inline-block;
+    grid-column: 1 / 2;
+    grid-row: 1;
+
+    &:before {
+      position: absolute;
+      content: '';
+      height: $switch-indicator-height;
+      width: $switch-indicator-width;
+      left: 2px;
+      bottom: 3px;
+      background-color: $white;
+      transition: 0.4s;
+      border-radius: 50%;
+    }
+  }
+
+  .switch-label {
+    margin-top: 0;
+    word-wrap: break-word;
+    grid-column: 2 / 3;
+    grid-row: 1;
+    &[aria-label] {
+      grid-column: 1 / 2;
+    }
+    &.disabled {
+      color: $grisulado-300;
+    }
+  }
+}
+
+.disabled {
+  cursor: not-allowed;
+}

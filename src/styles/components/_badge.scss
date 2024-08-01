@@ -1,0 +1,56 @@
+/* === Variable and mixins overides === */
+
+$badge-color: $body-color;
+$badge-font-size: $text-sm;
+$badge-font-weight: $font-weight-normal;
+$badge-border-radius: 0.5rem;
+$badge-separation: 0.5rem;
+
+$badge-padding-y: 0.125rem;
+$badge-padding-x: 0.25rem;
+
+/* === Custom variables and mixins === */
+
+@mixin badge-variant-custom($color, $value) {
+  color: $body-color;
+  background-color: map-get($theme-color-light-bg, $color);
+  box-shadow: 0 0 0 1px map-get($theme-colors, $color);
+
+  @at-root a#{&} {
+    &:hover,
+    &.hover {
+      color: $hover;
+      box-shadow: 0 0 0 2px $hover;
+      background-color: map-get($theme-color-light-bg, $color);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+    }
+    &:focus,
+    &.focus {
+      outline: 0;
+      background-color: $light;
+      box-shadow: $focus-box-shadow;
+    }
+  }
+}
+
+
+/* === Custom styles === */
+
+.badge {
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: $height-text-sm;
+  min-height: 24px;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-right: $badge-separation;
+}
+
+@each $color, $value in $theme-colors {
+  .badge-#{$color} {
+    @include badge-variant-custom($color, $value);
+  }
+}

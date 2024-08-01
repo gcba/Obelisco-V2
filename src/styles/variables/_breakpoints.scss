@@ -1,0 +1,61 @@
+// Grid breakpoints
+/* $grid-breakpoints: (
+  xs: 0,
+  sm: 592px,
+  md: 752px,
+  lg: 976px,
+  xl: 1120px
+); */
+$custom-breakpoints: (
+  xs: 0,
+  sm: 592px,
+  md: 752px,
+  lg: 976px,
+  xl: 1120px,
+  xxl: 1128px
+);
+
+$grid-breakpoints: $custom-breakpoints;
+
+// Grid containers
+$container-max-widths: (
+  sm: 560px,
+  md: 720px,
+  lg: 944px,
+  xl: 1088px,
+  xxl: 1100px
+);
+/* $container-max-widths: (
+  sm: 560px,
+  md: 720px,
+  lg: 944px,
+  xl: 1088px
+); */
+
+// Grid columns
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+
+
+// Test de breakpoints y @include media-breakpoint-up()
+// body {
+//   @include media-breakpoint-up(xs) {
+//     background-color: white;
+//   }
+
+//   @include media-breakpoint-up(sm) {
+//     background-color: aqua;
+//   }
+
+//   @include media-breakpoint-up(md) {
+//     background-color: orange;
+//   }
+
+//   @include media-breakpoint-up(lg) {
+//     background-color: violet;
+//   }
+
+//   @include media-breakpoint-up(xl) {
+//     background-color: blue;
+//   }
+// }

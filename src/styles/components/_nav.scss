@@ -1,0 +1,558 @@
+/* === Variable and mixins overides === */
+@use "sass:math";
+
+$nav-link-simple-active-font-weight: $font-weight-bold;
+$nav-link-active-font-weight: $font-weight-normal;
+$nav-link-line-heght: 1.378;
+
+$nav-link-lg-font-weight: $font-weight-normal;
+$nav-link-lg-font-size: 1.125rem;
+
+$nav-icon-font-size: 1.25rem;
+
+$nav-link-padding-sm-y: 0.25rem;
+$nav-link-padding-sm-x: 0.5rem;
+$nav-link-vertical-padding-x: 1.125rem;
+$nav-link-padding-x: 0.75rem;
+$nav-link-padding-y: 0.5rem;
+$nav-link-padding-lg-y: 0.75rem;
+$nav-mobile-inner-padding-y: 0.75rem;
+$nav-mobile-bg: $grisulado-10;
+
+$nav-link-disabled-color: $grisulado-300 !important;
+$nav-link-hover-bg: $grisulado-50;
+
+$nav-pills-link-active-bg: $active;
+$nav-link-hover-color: $hover;
+$nav-link-border-active: $active;
+
+$nav-link-fixed-width: 15.625rem;
+
+$nav-focus-width: 0.25rem;
+$input-btn-focus-box-shadow: 0 0 0 $nav-focus-width $focus;
+$input-btn-hover-box-shadow: 0 0 0 math.div($nav-focus-width, 2) $hover;
+
+$icon-expand: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAEKADAAQAAAABAAAAEAAAAAAXnVPIAAAAPElEQVQ4EWNkwAEsPGL+I0ud2LGEEZkPYzPBGOTSowYwMDCihzapgTkMAhFr6gKFA3rYjKZE3KmD4nQAADIcCfkjs4flAAAAAElFTkSuQmCC');
+$icon-collapse: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAECAYAAACHtL/sAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAEKADAAQAAAABAAAABAAAAACC/WKKAAAAGElEQVQYGWO08Ij5z0ABYKJAL1jrwBsAAOG3AePub4ocAAAAAElFTkSuQmCC');
+$icon-user: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(56, 72, 92);transform: ;msFilter:;"><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path></svg>');
+$icon-user-active: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path></svg>');
+$icon-user-hover: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 123, 199);transform: ;msFilter:;"><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path></svg>');
+/* === Custom variables and mixins === */
+
+/* === Custom styles === */
+
+.nav {
+  &:not(.tabs) {
+    gap: 0.625rem;
+  }
+
+  .nav-item {
+    .nav-link {
+      min-height: 40px;
+      padding: $nav-link-padding-y $nav-link-padding-x;
+
+      &-lg {
+        min-height: 48px;
+        padding: $nav-link-padding-lg-y $nav-link-padding-x;
+      }
+
+      &-sm {
+        min-height: 30px;
+        padding: $nav-link-padding-sm-y $nav-link-padding-sm-x;
+        @extend .text-md;
+
+        .nav-icon {
+
+          .bx,
+          .material-icons-round {
+            font-size: $nav-icon-font-size;
+          }
+        }
+      }
+    }
+  }
+
+  &.tabs {
+    .nav-item>.nav-link {
+      &-lg {
+        padding: $nav-link-padding-lg-y $nav-link-padding-x;
+      }
+
+      &-sm {
+        padding: $nav-link-padding-sm-y $nav-link-padding-x;
+      }
+    }
+  }
+
+  &.flex-column {
+    gap: 0.25rem;
+    margin-top: 0.188rem;
+    background-color: $white;
+    border-radius: $border-radius * 2;
+
+    &:first-child {
+      margin-top: 0;
+
+      >.nav-item>.nav-link {
+        padding: 0.75rem 1rem;
+      }
+    }
+
+    .nav-item>.nav-link {
+      max-height: fit-content;
+    }
+
+    .nav .nav-item .nav-link .nav-icon {
+
+      i,
+      .material-icons-round {
+        display: none;
+      }
+    }
+  }
+}
+
+.nav-pills {
+  .nav-item {
+    .nav-link {
+      .nav-icon {
+
+        i,
+        .material-icons-round {
+          font-size: $nav-icon-font-size;
+          display: inline;
+        }
+      }
+    }
+
+    .nav-link {
+      text-decoration: none;
+      background-color: $white;
+      outline: 0.125rem solid transparent;
+
+      &:hover {
+        span {
+          @extend .underline-1;
+          text-decoration-color: transparent;
+        }
+      }
+
+      &:focus {
+        outline: 0.25rem solid transparent;
+        outline-offset: 0px;
+
+        span {
+          text-decoration: none;
+        }
+      }
+
+      &.active-child {
+        outline: 0.25rem solid transparent;
+        outline-offset: -2px;
+
+        &:focus,
+        &.focus {
+          outline-offset: 0px;
+        }
+      }
+
+      .nav-icon {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem; //Este gap define el espaciado en navegación vertical y horizontal
+      }
+    }
+  }
+}
+
+.nav-link {
+  color: $body-color;
+  @extend .headline-md;
+  font-weight: $font-weight-normal;
+  // font-size: $nav-link-lg-font-size;
+  // line-height: $nav-link-line-heght;
+  // font-family: $font-family-headings;
+
+  @include border-radius($border-radius * 2);
+
+  &:visited {
+    color: $body-color;
+  }
+
+  &.border-link {
+    box-shadow: 0 0 0 2px $grisulado-50;
+  }
+
+  i {
+    vertical-align: middle;
+  }
+
+  // @include hover() {
+  //   box-shadow: $input-btn-hover-box-shadow;
+  //   color: $nav-link-hover-color;
+  //   @extend .underline-1;
+  //   text-decoration-color: transparent;
+
+  //   &:visited {
+  //     color: $nav-link-hover-color;
+  //   }
+
+  //   .nav-icon {
+
+  //     .bx,
+  //     .material-icons-round {
+  //       text-decoration: none;
+  //     }
+  //   }
+  // } este mixin ya no existe, se añade hover ?
+
+  &:hover {
+    box-shadow: $input-btn-hover-box-shadow;
+    color: $nav-link-hover-color;
+    text-decoration: underline;
+
+    &:visited {
+      color: $nav-link-hover-color;
+    }
+
+    .nav-icon {
+      i {
+        text-decoration: none;
+      }
+
+      span {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  //fin del hover 
+
+  &:focus,
+  &.focus {
+    outline: 0;
+    box-shadow: $input-btn-focus-box-shadow;
+    color: $body-color;
+    text-decoration: none;
+
+    .nav-icon {
+      i {
+        text-decoration: none;
+      }
+
+      span {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &.active-child {
+    color: $active;
+    font-weight: $nav-link-active-font-weight;
+
+    &:hover,
+    &:focus {
+      color: $active;
+      font-weight: $nav-link-active-font-weight;
+      box-shadow: none;
+
+      span {
+        text-decoration: none !important;
+      }
+
+      .nav-icon {
+
+        i,
+        .material-icons-round {
+          text-decoration: none;
+        }
+
+        span {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.nav-pills {
+  .nav-link {
+    @include border-radius($border-radius * 2);
+
+    &.active,
+    &:active {
+      color: $white;
+      background-color: $nav-pills-link-active-bg;
+      outline: 0.25rem solid transparent;
+      outline-offset: -2px;
+
+      &:hover,
+      &:focus {
+        color: $white;
+        background-color: $nav-pills-link-active-bg;
+        text-decoration: none;
+        box-shadow: none;
+
+        span {
+          text-decoration: none;
+        }
+
+        .nav-icon {
+          i {
+            text-decoration: none;
+          }
+
+          span {
+            text-decoration: none;
+          }
+        }
+      }
+
+      &.active-child {
+        color: $blue;
+        font-weight: $nav-link-active-font-weight;
+        text-decoration: none;
+        font-weight: $nav-link-active-font-weight;
+        box-shadow: none;
+        background-color: $white;
+      }
+
+      .nav-icon {
+        span {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  &.tabs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    padding-bottom: 0.25rem;
+
+    .nav-item {
+      white-space: nowrap;
+
+      button {
+        border: none;
+      }
+
+      .nav-link {
+        background: transparent;
+        transition: font-weight 0.4s ease-in-out;
+
+        &.active,
+        &:active {
+          font-weight: $font-weight-bold;
+          color: $body-color;
+          box-shadow: inset 0px -4px 0px 0px $nav-link-border-active;
+          border-radius: 0;
+
+          &:hover {
+            box-shadow: inset 0px -4px 0px 0px $nav-link-border-active;
+          }
+
+          &:focus {
+            border-radius: $border-radius * 2;
+          }
+        }
+
+        &:focus {
+          box-shadow: $input-btn-focus-box-shadow inset;
+
+          &:hover {
+            box-shadow: $input-btn-focus-box-shadow inset;
+          }
+        }
+
+        &:hover {
+          box-shadow: none;
+
+          .nav-icon {
+
+            .bx,
+            .material-icons-round {
+              text-decoration: none;
+            }
+          }
+        }
+
+        .nav-icon {
+          justify-content: center;
+          gap: 0.625rem; //Este gap define el espaciado en pestañas
+        }
+      }
+    }
+
+    .nav-item[draggable='true'] {
+      cursor: move;
+    }
+
+    &.nav-box {
+      border: none;
+      padding: 0;
+
+      .nav-item {
+        .nav-link {
+          background-color: $grisulado-50;
+          border-radius: 8px 8px 0px 0px;
+          border: none;
+
+          &.active,
+          &:active {
+            background-color: $grisulado-10;
+            color: $active;
+            box-shadow: none;
+
+            &:focus {
+              border-radius: $border-radius * 2 $border-radius * 2 0px 0px;
+            }
+          }
+        }
+      }
+
+      &-bg {
+        @extend .nav-box;
+
+        .nav-item {
+          .nav-link {
+
+            &.active,
+            &:active {
+              background-color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.tabs-slider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0;
+
+  &:has(.icons-container) {
+    padding: 0 2.5rem;
+  }
+
+  .nav {
+    width: fit-content;
+    overflow-x: hidden;
+
+    &.fixedWidth {
+      .nav-item>.nav-link {
+        width: auto;
+        min-width: $nav-link-fixed-width;
+
+        @include media-breakpoint-down(md) {
+          min-width: auto;
+        }
+      }
+    }
+  }
+
+  .right-left {
+    width: 2.5rem;
+    height: 100%;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+
+    >span {
+      font-size: 16px;
+    }
+
+    &:nth-of-type(1) {
+      left: 0;
+    }
+
+    &:nth-of-type(2) {
+      right: 0;
+      display: flex;
+    }
+  }
+
+  @extend .tabs;
+}
+
+.nav .nav {
+  .nav-link {
+    padding-left: $nav-link-vertical-padding-x * 2.4444;
+  }
+
+  .nav {
+    .nav-link {
+      padding-left: $nav-link-vertical-padding-x * 4;
+    }
+
+    .nav {
+      .nav-link {
+        padding-left: $nav-link-vertical-padding-x * 4.5;
+      }
+    }
+  }
+}
+
+/* === Mobile styles === */
+
+.nav-mobile-trigger {
+  background-color: $nav-mobile-bg;
+  border-radius: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: $nav-link-lg-font-weight;
+
+  &:after {
+    content: '';
+    display: block;
+    background: $icon-collapse no-repeat center;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  &.collapsed:after {
+    background-image: $icon-expand;
+  }
+}
+
+.nav-responsive {
+  background-color: $nav-mobile-bg;
+
+  .nav-link {
+    padding: $nav-link-padding-y $nav-link-vertical-padding-x + math.div($nav-link-vertical-padding-x, 4);
+    border-radius: 0;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .nav-mobile-trigger {
+    display: none;
+  }
+
+  .nav-responsive {
+    background-color: transparent;
+
+    .nav-link {
+      padding: $nav-link-padding-y $nav-link-vertical-padding-x;
+      @include border-radius($border-radius);
+    }
+
+    &.collapse:not(.show) {
+      display: block;
+    }
+  }
+}

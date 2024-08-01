@@ -1,0 +1,101 @@
+/* === Variable and mixins overides === */
+
+$modal-header-padding-x: spaceUnits(6);
+$modal-header-padding-y: spaceUnits(6);
+$modal-header-padding: $modal-header-padding-y $modal-header-padding-x;
+
+// Whitespace on modal body content
+$modal-inner-padding-x: spaceUnits(6);
+$modal-inner-padding-y: spaceUnits(4);
+$modal-inner-padding: $modal-inner-padding-y $modal-inner-padding-x;
+$modal-inner-padding-bottom: 1.125rem;
+
+$modal-footer-margin-between: spaceUnits(3);
+
+$modal-content-border-radius: spaceUnits(2);
+$modal-sm: 340px;
+$modal-mobile: 328px;
+$modal-dialog-margin-y-sm-up: 3rem;
+
+/* === Custom variables and mixins === */
+
+/* === Bootstrap Import === */
+// @import "node_modules/bootstrap/scss/modal";
+
+/* === Custom styles === */
+
+// Nota de Nico: Estos estilos no se comportan siempre de la forma esperada,
+// habría que ajustarlos, pero al cambiar el funcionamiento de los modals,
+// no va a hacer falta.
+
+.modal {
+  .modal-sm {
+    min-width: 340px;
+  }
+
+  .form-group {
+    input,
+    textarea {
+      margin-bottom: $modal-inner-padding;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .modal-content {
+    border: none;
+    padding: 1.5rem;
+
+    .modal-header {
+      border-bottom: 0;
+      padding: 0 0 0.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      box-shadow: 0px 1px 0px 0px $grisulado-50;
+
+      &.unbordered {
+        box-shadow: none;
+        background: none;
+      }
+
+      small {
+        margin-bottom: 0.5rem;
+      }
+
+      .modal-title {
+        @extend .headline-lg;
+        font-weight: $font-weight-semibold;
+      }
+    }
+
+    .modal-body {
+      padding: spaceUnits(2) 0 0;
+
+      p {
+      }
+
+      > *:last-child {
+        margin: 0;
+      }
+    }
+
+    .modal-footer {
+      border-top: 0;
+      padding: 1rem 0 0;
+      gap: 0.5rem;
+
+      button.btn {
+        margin: 0px;
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: $modal-mobile;
+      margin: auto;
+      padding: 1rem;
+    }
+  }
+}

@@ -1,0 +1,249 @@
+$logo-color: #61DBFB;
+$Atom-size: 420px;
+$Atom-bg: $logo-color;
+$Atom-border-width: 3px;
+$Atom-border-color: $logo-color;
+
+
+$Atom-nucleus-size: 25px;
+$Atom-nucleus-bg: linear-gradient(-180deg, $logo-color 0%, $logo-color 100%);
+$Atom-nucleus-glow-radius: 12px;
+
+$Atom-orbit-tickness: 4px;
+$Atom-orbit-color: white;
+
+$Atom-electron-radius: 6px;
+$Atom-electron-border-width: 3px;
+$Atom-electron-glow-radius: 6px;
+
+$Atom-Yrotation: 70deg;
+$Atom-Ztilt: 60deg;
+
+$width: 420px;
+$height: 420px;
+$reactColor: #61dafb;
+$reactCircle: 9px;
+$dotSize: 15px;
+
+$Atom-electrons: (
+  top: (
+    background: linear-gradient(-180deg, $logo-color 0%, $logo-color 100%),
+    glow: $logo-color,
+    orbitDuration: 7s,
+    tilt: 0deg,
+    startRotation: 0deg
+  ),
+  left: (
+    background: linear-gradient(-180deg, $logo-color 0%, $logo-color 100%),
+    glow: $logo-color,
+    orbitDuration: 3.5s,
+    tilt: -$Atom-Ztilt, 
+    startRotation: 60deg
+  ),
+  right: (
+    background: linear-gradient(-180deg, $logo-color 0%, $logo-color 100%),
+    glow: $logo-color,
+    orbitDuration: 5s,
+    tilt: $Atom-Ztilt,
+    startRotation: 120deg
+  )
+);
+
+@mixin circle($Atom-radius) {
+  display: block;
+  content: '';
+  width: $Atom-radius * 2;
+  height: $Atom-radius * 2;
+  margin-left: -$Atom-radius;
+  margin-top: -$Atom-radius;
+  border-radius: 50%;
+}
+
+.Atom {
+  width: $Atom-size;
+  height: $Atom-size;
+  position: relative;
+  border-radius: 50%;
+}
+
+.Atom-nucleus,
+.Atom-nucleus:before {
+  position: absolute;
+  background: $Atom-nucleus-bg;
+}
+
+.Atom-nucleus {
+  @include circle($Atom-nucleus-size * 0.5);
+  // box-shadow: 0 0 12px 4px $logo-color;
+  z-index: 2;
+}
+
+.Atom-nucleus:before {
+  @include circle($Atom-nucleus-size * 0.5 + $Atom-nucleus-glow-radius);
+  top: $Atom-nucleus-size * 0.5;
+  left: $Atom-nucleus-size * 0.5;
+  opacity: 0.1;
+}
+
+.Atom-orbit {
+  position: absolute;
+  width: $Atom-size;
+  height: $Atom-size;
+  border: solid $Atom-orbit-tickness transparent;
+  transform-style: preserve-3d;
+}
+
+.Atom-orbit--visible {
+  border-radius: 50%;
+  border-color: $Atom-orbit-color;
+}
+
+.Atom-electron {
+  transform-style: preserve-3d;
+  
+  &:before {
+    @include circle($Atom-electron-radius + $Atom-electron-glow-radius);
+    position: absolute;
+    top: $Atom-size * 0.5;
+    left: $Atom-size * 0.5;
+  }
+  
+  &:after {
+    @include circle($Atom-electron-radius);
+    position: absolute;
+    top: $Atom-size * 0.5;
+    left: $Atom-size * 0.5;
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@each $name, $values in $Atom-electrons {
+  // tilt each orbit
+  .Atom-orbit--#{$name}.Atom-orbit--visible, #inner-ellipse-#{$name} {
+    transform: rotateZ(map-get($values, 'tilt')) rotateY($Atom-Yrotation);
+  }
+  
+  .Atom-orbit--#{$name}.Atom-orbit--foreground, #inner-ellipse-#{$name} {
+    transform: translateZ(100px) rotateZ(map-get($values, 'tilt')) rotateY($Atom-Yrotation);
+  }
+  
+  $startRotation: map-get($values, 'startRotation');
+  
+  // animate each electron to rotate around the orbit
+  @keyframes rotate-#{$name} {
+    0%   { transform: rotate($startRotation + 0deg)   translate(-$Atom-size * 0.5) rotate(-$startRotation - 0deg)}
+    100% { transform: rotate($startRotation + 360deg) translate(-$Atom-size * 0.5) rotate(-$startRotation - 360deg) }
+  }
+  
+  // animate each electron to rotate around the orbit
+  @keyframes zind-left {
+    0%   { z-index: 1}
+    49%   { z-index: 1}
+    50% { z-index: 3}
+    100% { z-index: 3 }
+  }
+  // animate each electron to rotate around the orbit
+  @keyframes zind-right {
+    0%   { z-index: 3}
+    49%   { z-index: 3}
+    50% { z-index: 1}
+    100% { z-index: 1 }
+  }
+  // animate each electron to rotate around the orbit
+  @keyframes zind-top {
+    0%   { z-index: 1}
+    24%   { z-index: 1}
+    25% { z-index: 3}
+    75% { z-index: 3 }
+    76% { z-index: 1 }
+  }
+  
+  .Atom-orbit--#{$name} {
+    animation: zind-#{$name} infinite linear;
+    animation-duration: map-get($values, 'orbitDuration');
+    .Atom-electron {
+      animation: rotate-#{$name} infinite linear;
+      animation-duration: map-get($values, 'orbitDuration');
+      transform: rotate($startRotation + 0deg)   translate(-$Atom-size * 0.5) rotate(-$startRotation - 0deg);
+
+      &:before,
+      &:after {
+        transform:   rotateY(-$Atom-Yrotation) rotateZ(- map-get($values, 'tilt'));
+      }
+      &:before {
+        background: map-get($values, 'background');
+        opacity: 0.2;
+      }
+      &:after {
+        background: map-get($values, 'background');
+        box-shadow: 0px 0px 5px 0px map-get($values, 'glow');
+      }
+    }
+  }
+}
+
+#react {
+  width: 410px;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  padding-top: 10px;
+//   &:before {
+//     content: " ";
+//     border: $reactCircle solid $reactColor;
+//     position: absolute;
+//     width: $width;
+//     height: $height;
+//     // top: 10%;
+//     // left: 28%;
+//     position: absolute;
+//     border-radius: 50%;
+//     // transform: rotate(-210deg)
+//   }
+}
+
+#inner-ellipse-left {
+    
+    border: $reactCircle solid $reactColor;
+    width: $height;
+    height: $height;
+    // top: 10%;
+    // left: 10%;
+    position: absolute;
+    border-radius: 50%;
+    // transform: rotate(-210deg)
+  
+}
+
+#inner-ellipse-right{
+  border: $reactCircle solid $reactColor;
+  width: $height;
+  height: $height;
+  position: absolute;
+  border-radius: 50%;
+//   top: 10%;
+//   left: 30%;
+//   transform: rotate(210deg);
+}
+
+#inner-ellipse-top {
+  border: $reactCircle solid $reactColor;
+  position: absolute;
+//   top: 28%;
+//   left: 10%;
+  width: $height;
+  height: $height;
+  border-radius: 50%;
+}
+
+#dot {
+  position: absolute;
+  width: $dotSize + 15px;
+  height:$dotSize + 15px;
+  background-color: $reactColor;
+  box-shadow: 0 0 12px 4px $logo-color;
+  border-radius: 50%;
+  top: 45%;
+  right: 45%;
+}
+

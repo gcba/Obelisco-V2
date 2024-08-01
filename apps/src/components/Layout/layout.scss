@@ -1,0 +1,85 @@
+// Header styles
+.navbar {
+  position: sticky !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+
+  .navbar-brand {
+    position: relative;
+    transition: all 0.3s ease;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      background-image: linear-gradient(to bottom,
+          transparent 10%,
+          rgba(210, 210, 210, 0.05) 50%,
+          rgba(200, 200, 200, 0.062) 95%);
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      transform: perspective(250px) rotateX(20deg) translateY(-5%) translateZ(0);
+
+      .react-logo {
+        opacity: 1;
+        transform: translateY(10%);
+      }
+
+      &::before {
+        opacity: 1;
+      }
+    }
+
+    .header-logo {
+      box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
+    }
+
+    .react-logo {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      transform: translateY(25%);
+      transition: 0.3s ease;
+      opacity: 0;
+    }
+  }
+
+  // Transition for nav-link
+  .navbar-collapse>.navbar-content>.navbar-sections>.custom-nav>.nav>.nav-item>.nav-link {
+    transition: 0.15s ease-in-out;
+  }
+
+  // Drawer Styles
+  .drawerCustom {
+    background-color: #ffffff;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-top: 2rem;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    white-space: nowrap;
+
+    .nav-item {
+      .nav-link {
+        transition: 0.15s ease-in-out;
+      }
+    }
+  }
+
+  .custom-nav {
+    .nav {
+      flex-direction: row !important;
+    }
+  }
+
+  // Drawer Styles
+}

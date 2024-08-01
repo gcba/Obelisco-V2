@@ -23,7 +23,7 @@ const InstallationModule: React.FC = () => {
             <h1>Installation</h1>
           </HeadingTemplate>
 
-          <MainDescription description="Explora esta sección para encontrar el comando de instalación de React-Obelisco utilizando NPM. Se recomienda utilizar versiones superiores a la 16 para asegurar la compatibilidad y obtener lo mejor de nuestra librería de componentes." />
+          <MainDescription description="Explora esta sección para encontrar el comando de instalación de Obelisco v2 utilizando NPM. Se recomienda utilizar versiones superiores a la 16 para asegurar la compatibilidad y obtener lo mejor de nuestra librería de componentes." />
 
           <Divisor />
 
@@ -35,7 +35,7 @@ const InstallationModule: React.FC = () => {
 
           <CodeCopy code={code} />
 
-          <SimpleText description="Así de sencillo es instalarlo y comenzar a aprovechar todas las funcionalidades de React-Obelisco." />
+          <SimpleText description="Así de sencillo es instalarlo y comenzar a aprovechar todas las funcionalidades de Obelisco v2." />
 
           <SimpleText description="Esta biblioteca ha sido sometida a pruebas de compatibilidad y rendimiento en entornos que incluyen Next.js 12, Next.js 13 y Next.js 14. También ha sido evaluada en Vite, desde la versión 2.9 hasta la versión más reciente, la 5. Puedes encontrar detalles sobre su implementación en estas versiones visitando los siguientes enlaces." />
 

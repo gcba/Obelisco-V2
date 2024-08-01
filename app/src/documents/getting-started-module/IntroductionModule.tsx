@@ -17,7 +17,7 @@ const IntroductionModule: React.FC = () => {
             <h1>Introducción</h1>
           </HeadingTemplate>
 
-          <MainDescription description="¡Bienvenidos a la documentación de la libreria de componentes React-Obelisco!" />
+          <MainDescription description="¡Bienvenidos a la documentación de la libreria de componentes Obelisco v2!" />
 
           <Divisor />
 
@@ -25,9 +25,9 @@ const IntroductionModule: React.FC = () => {
             <h2>¿Qué es React-Obelisco?</h2>
           </HeadingTemplate>
 
-          <SimpleText description="React-Obelisco es una librería de componentes para React que simplifica el desarrollo de interfaces web. Con una amplia variedad de componentes, acelera la creación de aplicaciones elegantes. Descubre la eficiencia y versatilidad de React-Obelisco para impulsar tu desarrollo frontend." />
+          <SimpleText description="Obelisco v2 es una librería de componentes para simplificar el desarrollo de interfaces web. Con una amplia variedad de componentes, acelera la creación de aplicaciones elegantes. Descubre la eficiencia y versatilidad de Obelisco v2 para impulsar tu desarrollo frontend." />
 
-          <SimpleText description="Además, React-Obelisco ofrece una experiencia de usuario fluida y atractiva, permitiendo una fácil integración de recursos esenciales para un desarrollo eficiente. Desde su sencilla instalación hasta la importación intuitiva de componentes, React-Obelisco es la herramienta ideal para desarrolladores que buscan optimizar su flujo de trabajo y crear interfaces web impactantes de manera rápida y eficaz." />
+          <SimpleText description="Además, Obelisco v2 ofrece una experiencia de usuario fluida y atractiva, permitiendo una fácil integración de recursos esenciales para un desarrollo eficiente. Desde su sencilla instalación hasta la importación intuitiva de componentes, Obelisco es la herramienta ideal para desarrolladores que buscan optimizar su flujo de trabajo y crear interfaces web impactantes de manera rápida y eficaz." />
 
           <Divisor />
 
@@ -37,12 +37,12 @@ const IntroductionModule: React.FC = () => {
 
           <div className="list-informative">
             <h3 className="list-informative-subtitle">
-              React-Obelisco se destaca por sus características clave:
+              Obelisco se destaca por sus características clave:
             </h3>
             <ul className="list-informative-check">
               <li>
                 <strong>Integración con Bootstrap:</strong> Construido sobre la
-                base de Bootstrap, React-Obelisco hereda su potente sistema de
+                base de Bootstrap 5.3, Obelisco hereda su potente sistema de
                 diseño, facilitando la creación de interfaces consistentes y
                 estéticas.
               </li>
@@ -95,7 +95,7 @@ const IntroductionModule: React.FC = () => {
             <h2>Accesibilidad</h2>
           </HeadingTemplate>
 
-          <SimpleText description="React-Obelisco prioriza la accesibilidad, asegurando que todos los usuarios, independientemente de sus habilidades, puedan interactuar con las interfaces de manera efectiva. Con etiquetas semánticas, compatibilidad con lectores de pantalla y controles de teclado, cada componente cumple con estándares estrictos. El diseño incluye contrastes de color accesibles y descripciones adecuadas para elementos interactivos, garantizando una experiencia equitativa para usuarios con discapacidades visuales. La accesibilidad no es solo una característica, sino un compromiso integral en React-Obelisco, proporcionando interfaces web inclusivas y accesibles para un público diverso." />
+          <SimpleText description="Obelisco prioriza la accesibilidad, asegurando que todos los usuarios, independientemente de sus habilidades, puedan interactuar con las interfaces de manera efectiva. Con etiquetas semánticas, compatibilidad con lectores de pantalla y controles de teclado, cada componente cumple con estándares estrictos. El diseño incluye contrastes de color accesibles y descripciones adecuadas para elementos interactivos, garantizando una experiencia equitativa para usuarios con discapacidades visuales. La accesibilidad no es solo una característica, sino un compromiso integral en React-Obelisco, proporcionando interfaces web inclusivas y accesibles para un público diverso." />
         </div>
       </Flex>
     </BoxTemplate>

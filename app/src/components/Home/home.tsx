@@ -25,7 +25,7 @@ const HomeOne = () => (
         </div>
         <div className="content-buttom">
           <Link
-            href="https://github.com/gcba/react-obelisco"
+            href="https://github.com/davisLjr/obelisco-v2"
             className="btn btn-primary btn-lg btn-icon"
           >
             <i className="bx bxl-github"></i>

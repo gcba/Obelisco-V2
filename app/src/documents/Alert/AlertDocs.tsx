@@ -8,7 +8,7 @@ import HeadingTemplate from '@/components/Template/HeadingTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 import Divisor from '@/components/Template/Divisor';
 import SimpleText from '@/components/Template/SimpleText';
-import { EGcodeAccessComplete, EGcodeAlertImport, EGcodeDimissible } from './code-views';
+import { EGcodeWithStrong, EGcodeSimpleAlert, EGcodeCloseAlert } from './code-views';
 
 const AlertDocs: React.FC = () => {
 
@@ -28,7 +28,6 @@ const AlertDocs: React.FC = () => {
           section2Ref,
           section3Ref,
           section4Ref,
-          section5Ref,
         ]}>
           {({ currentElementIndexInViewport }) => (
             <div className='box-scrollspy'>
@@ -40,10 +39,9 @@ const AlertDocs: React.FC = () => {
                   <p className='font-weight-bold mb-1'> On this page
                   </p>
                   <li className={currentElementIndexInViewport === 0 ? "active" : ""}><a href="#section-1">Introducción</a></li>
-                  <li className={currentElementIndexInViewport === 1 ? "active" : ""}><a href="#section-2">Importación</a></li>
-                  <li className={currentElementIndexInViewport === 2 ? "active" : ""}><a href="#section-3">Uso</a></li>
-                  <li className={currentElementIndexInViewport === 3 ? "active" : ""}><a href="#section-4">Simple Completo</a></li>
-                  <li className={currentElementIndexInViewport === 4 ? "active" : ""}><a href="#section-5">Con cierre</a></li>
+                  <li className={currentElementIndexInViewport === 1 ? "active" : ""}><a href="#section-2">Simple</a></li>
+                  <li className={currentElementIndexInViewport === 2 ? "active" : ""}><a href="#section-3">Con cierre</a></li>
+                  <li className={currentElementIndexInViewport === 3 ? "active" : ""}><a href="#section-4">Con Lista</a></li>
                 </ul>
               </div>
 
@@ -60,43 +58,110 @@ const AlertDocs: React.FC = () => {
 
                   <section id="section-2" ref={section2Ref}>
                     <HeadingTemplate>
-                      <h2 className="mb-4">import</h2>
+                      <h2 className="mb-4">Simple</h2>
                     </HeadingTemplate>
-                    <SimpleText description="Recuerda importarlo de manera correcta, ya sea el componente completo o cada modulo del componente por separado." />
-                    <CodeCopy code={EGcodeAlertImport} />
+
+                    <div className="col-12 col-lg-8 mx-auto">
+                      <div className="alert alert-info" role="alert">
+                        <p>Esta es la descripción de una alerta de información.</p>
+                      </div>
+                      <br />
+                      <div className="alert alert-primary" role="alert">
+                        <p>Esta es la descripción de una alerta de advertencia.</p>
+                      </div>
+                      <br />
+                      <div className="alert alert-success" role="alert">
+                        <p>Esta es la descripción de una alerta de éxito.</p>
+                      </div>
+                      <br />
+                      <div className="alert alert-danger" role="alert">
+                        <p>Esta es la descripción de una alerta de error.</p>
+                      </div>
+                      <br />
+                    </div>
+                    <CodeCopy code={EGcodeSimpleAlert} />
                   </section>
 
                   <Divisor />
 
                   <section id="section-3" ref={section3Ref}>
                     <HeadingTemplate>
-                      <h2 className="mb-4">Usage</h2>
+                      <h2 className="mb-4">Con cierre</h2>
                     </HeadingTemplate>
-                    <SimpleText description="loremloremlorem loremloremlorem loremlorem lorem lorem loremlorem." />
+
+                    <div className="w-50 d-flex flex-column gap-2 mb-3">
+                      <div
+                        className="alert alert-warning alert-dismissible show fade"
+                        role="alert"
+                      >
+                        <p>Esta es la descripción de una alerta de error.</p>
+                        <button
+                          type="button"
+                          className="close"
+                          data-dismiss="alert"
+                          aria-label="Cerrar"
+                        >
+                          <span className="material-icons-round">close</span>
+                        </button>
+                      </div>
+
+                      <p>Nuevo html de B5</p>
+
+                      <div
+                        className="alert alert-warning alert-dismissible fade show"
+                        role="alert"
+                      >
+                        <strong>Holy guacamole!</strong> You should check in on some of those
+                        fields below.
+                        <button
+                          type="button"
+                          className="btn-close"
+                          data-bs-dismiss="alert"
+                          aria-label="Cerrar"
+                        ></button>
+                      </div>
+                    </div>
+
+                    <CodeCopy code={EGcodeCloseAlert} />
                   </section>
 
                   <Divisor />
 
                   <section id="section-4" ref={section4Ref}>
                     <HeadingTemplate>
-                      <h3 className="mb-4">Simple completo</h3>
+                      <h3 className="mb-4">Con lista</h3>
                     </HeadingTemplate>
-                    <SimpleText description="Este componente proporciona el componente Alerta simple con todas sus props para ser usado de manera correcta." />
+
+                    <div className="w-50 d-flex flex-column gap-2 mb-3 mx-auto">
+                      <div className="alert alert-danger" role="alert">
+                        <p>
+                          <strong>Este es un destacado de una alerta de error.</strong>
+                          Esta es la descripción de una alerta de error que continua al texto
+                          destacado.
+                        </p>
+                        <ol className="list-links">
+                          <li>
+                            <a href="#">Ancla al error 1</a>
+                          </li>
+                          <li>
+                            <a href="#">Ancla al error 2</a>
+                          </li>
+                          <li>
+                            <a href="#">Ancla al error 3</a>
+                          </li>
+                          <li>
+                            <a href="#">Ancla al error 4</a>
+                          </li>
+                          <li>
+                            <a href="#">Ancla al error 5</a>
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
 
                     <br />
 
-                    <CodeCopy code={EGcodeAccessComplete} />
-                  </section>
-
-                  <Divisor />
-
-                  <section id="section-5" ref={section5Ref}>
-                    <HeadingTemplate>
-                      <h3 className="mb-4">Alerta con cierre</h3>
-                    </HeadingTemplate>
-                    <SimpleText description="Esta alerta incluye un boton de cierre que permite ocultar la alerta mediante de el click en el boton de cierre." />
-
-                    <CodeCopy code={EGcodeDimissible} />
+                    <CodeCopy code={EGcodeWithStrong} />
                   </section>
                 </div>
               </article>

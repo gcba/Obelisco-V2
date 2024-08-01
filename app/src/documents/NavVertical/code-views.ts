@@ -1,38 +1,81 @@
+export const EGcodeSimpleAlert =
+  `
+    <div class="alert alert-info" role="alert">
+      <p>Esta es la descripción de una alerta de información.</p>
+    </div>
+    
+    <div class="alert alert-primary" role="alert">
+      <p>Esta es la descripción de una alerta de advertencia.</p>
+    </div>
+    
+    <div class="alert alert-success" role="alert">
+      <p>Esta es la descripción de una alerta de éxito.</p>
+    </div>
+    
+    <div class="alert alert-danger" role="alert">
+      <p>Esta es la descripción de una alerta de error.</p>
+    </div>
 
-export const EGcodeImportNavVertical = `import Access from "@componentes/Access";`;
-
-export const EGcodeNavVertical1 = `
-  <Access title="Access title" description="descripción" url="www.gcba.com" size="small" >
-    <span className="material-icons-round">face</span>
-  </Access>
 `;
 
-export const EGcodeNavVertical2 = `
-  <AccessTitle title="" className=""/>
-`;
+export const EGcodeCloseAlert =
+  `
+  <div
+    class="alert alert-warning alert-dismissible show fade"
+    role="alert"
+  >
+    <p>Esta es la descripción de una alerta de error.</p>
+    <button
+      type="button"
+      class="close"
+      data-dismiss="alert"
+      aria-label="Cerrar"
+    >
+      <span class="material-icons-round">close</span>
+    </button>
+  </div>
 
-export const EGcodeNavVertical3 = `
-  <Accessdescription description="" className=""/>
-`;
+  <p>Nuevo html de B5</p>
 
-export const EGcodeNavVertical4 = `
-  <AccessLink url="" className="">
-  
-  </AccessLink>
-`;
+  <div
+    class="alert alert-warning alert-dismissible fade show"
+    role="alert"
+  >
+    <strong>Holy guacamole!</strong> You should check in on some of those
+    fields below.
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="alert"
+      aria-label="Cerrar"
+    ></button>
+  </div>
 
-export const EGcodeNavVertical5 = `
-  <AccessContent className="">
+`
 
-  </AccessContent>
-`;
-
-export const EGcodeNavVertical6 = `
-  <AccessLink url="" className="">
-    <span className="material-icons-round">face</span>
-    <AccessContent>
-      <AccessTitle title="" />
-      <Accessdescription description="" />
-    </AccessContent>
-  </AccessLink>
+export const EGcodeWithStrong = `
+  <div class="alert alert-danger" role="alert">
+    <p>
+      <strong>Este es un destacado de una alerta de error.</strong>
+      Esta es la descripción de una alerta de error que continua al texto
+      destacado.
+    </p>
+    <ol class="list-links">
+      <li>
+        <a href="#">Ancla al error 1</a>
+      </li>
+      <li>
+        <a href="#">Ancla al error 2</a>
+      </li>
+      <li>
+        <a href="#">Ancla al error 3</a>
+      </li>
+      <li>
+        <a href="#">Ancla al error 4</a>
+      </li>
+      <li>
+        <a href="#">Ancla al error 5</a>
+      </li>
+    </ol>
+  </div>
 `;

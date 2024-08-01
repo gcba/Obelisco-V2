@@ -27,7 +27,7 @@
     &:hover {
       transform: perspective(250px) rotateX(20deg) translateY(-5%) translateZ(0);
 
-      .react-logo {
+      .obelisco-logo {
         opacity: 1;
         transform: translateY(10%);
       }
@@ -41,7 +41,7 @@
       box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
     }
 
-    .react-logo {
+    .obelisco-logo {
       position: absolute;
       bottom: 0;
       left: 0;
@@ -50,6 +50,7 @@
       transform: translateY(25%);
       transition: 0.3s ease;
       opacity: 0;
+      object-fit: contain;
     }
   }
 

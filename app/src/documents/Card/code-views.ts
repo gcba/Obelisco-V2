@@ -1,128 +1,81 @@
+export const EGcodeSimpleAlert =
+  `
+    <div class="alert alert-info" role="alert">
+      <p>Esta es la descripción de una alerta de información.</p>
+    </div>
+    
+    <div class="alert alert-primary" role="alert">
+      <p>Esta es la descripción de una alerta de advertencia.</p>
+    </div>
+    
+    <div class="alert alert-success" role="alert">
+      <p>Esta es la descripción de una alerta de éxito.</p>
+    </div>
+    
+    <div class="alert alert-danger" role="alert">
+      <p>Esta es la descripción de una alerta de error.</p>
+    </div>
 
-export const EGcodeImportButton = `import Access from "@componentes/Access";`;
-
-export const EGCodeButton = `<Button>Default Button</Button>`;
-
-export const EGCodeButtonExpandable = `
-  <Button isSecondary isExpanded>Expandible</Button>
 `;
 
-export const EGCodeButtonIcon = `
-      <Button isIcon>
-        <i className="bx bxs-info-circle"></i>
-        Botón
-      </Button>
-      <Button isSecondary isIcon>
-        <i className="bx bxs-info-circle"></i>
-        Botón
-      </Button>
-      <Button isSuccess isIcon>
-        <i className="bx bxs-info-circle"></i>
-        Botón
-      </Button>
-      <Button isDanger isIcon>
-        <i className="bx bxs-info-circle"></i>
-        Botón
-      </Button>
-      <Button isLink isIcon>
-        <i className="bx bxs-info-circle"></i>
-        Botón
-      </Button>
-      <Button isOutlinePrimary isIcon>
-        <i className="bx bxs-info-circle"></i>
-        Botón
-      </Button>
-      <Button isOutlineSecondary isIcon>
-        <i className="bx bxs-info-circle"></i>
-        Botón
-      </Button>
-      <Button isOutlineSuccess isIcon>
-        <i className="bx bxs-info-circle"></i>
-        Botón
-      </Button>
-      <Button isOutlineDanger isIcon>
-        <i className="bx bxs-info-circle"></i>
-        Botón
-      </Button>
-      <Button isOutlineLink isIcon>
-        <i className="bx bxs-info-circle"></i>
-        Botón
-      </Button>
-`;
+export const EGcodeCloseAlert =
+  `
+  <div
+    class="alert alert-warning alert-dismissible show fade"
+    role="alert"
+  >
+    <p>Esta es la descripción de una alerta de error.</p>
+    <button
+      type="button"
+      class="close"
+      data-dismiss="alert"
+      aria-label="Cerrar"
+    >
+      <span class="material-icons-round">close</span>
+    </button>
+  </div>
 
-export const EGCodeButtonOutline = `
-  <Button isOutlinePrimary>Large Button</Button>
-  <Button isOutlineSecondary>Default Button</Button>
-  <Button isOutlineSuccess>Small Button</Button>
-  <Button isOutlineDanger>Small Button</Button>
-  <Button isOutlineLink>Small Button</Button>
-`;
+  <p>Nuevo html de B5</p>
 
-export const EGCodeButtonSizes = `
-  <Button size="lg">LG Button</Button>
-  <Button>Default Button</Button>
-  <Button size="sm">SM Button</Button>
-`;
+  <div
+    class="alert alert-warning alert-dismissible fade show"
+    role="alert"
+  >
+    <strong>Holy guacamole!</strong> You should check in on some of those
+    fields below.
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="alert"
+      aria-label="Cerrar"
+    ></button>
+  </div>
 
-export const EGCodeButtonSpinner = `
-  <Button isIcon>
-    <div className="spinner-border text-dark spinner-border-sm" role="status">
-      <span className="sr-only">Cargando...</span>
-    </div>
-    Botón
-  </Button>
-  <Button isSecondary isIcon>
-    <div className="spinner-border text-light spinner-border-sm" role="status">
-      <span className="sr-only">Cargando...</span>
-    </div>
-    Botón
-  </Button>
-  <Button isSuccess isIcon>
-    <div className="spinner-border text-light spinner-border-sm" role="status">
-      <span className="sr-only">Cargando...</span>
-    </div>
-    Botón
-  </Button>
-  <Button isDanger isIcon>
-    <div className="spinner-border text-light spinner-border-sm" role="status">
-      <span className="sr-only">Cargando...</span>
-    </div>
-    Botón
-  </Button>
-  <Button isLink isIcon>
-    <div className="spinner-border text-info spinner-border-sm" role="status">
-      <span className="sr-only">Cargando...</span>
-    </div>
-    Botón
-  </Button>
-  <Button isOutlinePrimary isIcon>
-    <div className="spinner-border text-dark spinner-border-sm" role="status">
-      <span className="sr-only">Cargando...</span>
-    </div>
-    Botón
-  </Button>
-  <Button isOutlineSecondary isIcon>
-    <div className="spinner-border text-secondary  spinner-border-sm" role="status">
-      <span className="sr-only">Cargando...</span>
-    </div>
-    Botón
-  </Button>
-  <Button isOutlineSuccess isIcon>
-    <div className="spinner-border text-success spinner-border-sm" role="status">
-      <span className="sr-only">Cargando...</span>
-    </div>
-    Botón
-  </Button>
-  <Button isOutlineDanger isIcon>
-    <div className="spinner-border text-danger spinner-border-sm" role="status">
-      <span className="sr-only">Cargando...</span>
-    </div>
-    Botón
-  </Button>
-  <Button isOutlineLink isIcon>
-    <div className="spinner-border text-info spinner-border-sm" role="status">
-      <span className="sr-only">Cargando...</span>
-    </div>
-    Botón
-  </Button>
+`
+
+export const EGcodeWithStrong = `
+  <div class="alert alert-danger" role="alert">
+    <p>
+      <strong>Este es un destacado de una alerta de error.</strong>
+      Esta es la descripción de una alerta de error que continua al texto
+      destacado.
+    </p>
+    <ol class="list-links">
+      <li>
+        <a href="#">Ancla al error 1</a>
+      </li>
+      <li>
+        <a href="#">Ancla al error 2</a>
+      </li>
+      <li>
+        <a href="#">Ancla al error 3</a>
+      </li>
+      <li>
+        <a href="#">Ancla al error 4</a>
+      </li>
+      <li>
+        <a href="#">Ancla al error 5</a>
+      </li>
+    </ol>
+  </div>
 `;

@@ -9,8 +9,8 @@ import NavLayout from '../../Navigation/nav';
 export default function HeaderDesktop () {
 
   const gettingPages = [
-    {text: "Inicio", url: "/getting-started", id: 1},
-    {text: "Componentes", url: "/components", id: 2},
+    { text: "Inicio", url: "/getting-started", id: 1 },
+    { text: "Componentes", url: "/components", id: 2 },
   ];
 
   return (
@@ -28,9 +28,9 @@ export default function HeaderDesktop () {
             height={41}
           />
           <Image
-            className="react-logo"
-            src="/react-logo.svg"
-            width={41}
+            className="obelisco-logo"
+            src="/obelisco-logo.png"
+            width={76}
             height={41}
             alt="Logo React obelisco"
           />
@@ -40,7 +40,7 @@ export default function HeaderDesktop () {
           <div className="navbar-content">
             <div className="navbar-sections m-0">
               <h3 className="navbar-sections-title">Secciones</h3>
-              <NavLayout items={gettingPages} className='custom-nav'/>
+              <NavLayout items={gettingPages} className='custom-nav' />
             </div>
           </div>
         </div>

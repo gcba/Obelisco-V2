@@ -50,18 +50,18 @@
 //Esta clase es independiente de .table-responsive, de manera que si en drupal no se usa, se puede eliminar la clase .table-responsive
 
 //Notificaciones - HEADER
-.notification {
-  position: relative;
+// .notification {
+//   position: relative;
 
-  &[aria-expanded=false]:before {
-    content: "" !important;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    display: inline-block;
-    width: 7px;
-    height: 7px;
-    background-color: $danger;
-    border-radius: 50%;
-  }
-}
+//   &[aria-expanded=false]:before {
+//     content: "" !important;
+//     position: absolute;
+//     top: 8px;
+//     right: 8px;
+//     display: inline-block;
+//     width: 7px;
+//     height: 7px;
+//     background-color: $danger;
+//     border-radius: 50%;
+//   }
+// }

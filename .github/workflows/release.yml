@@ -1,15 +1,16 @@
-name: Test build
+name: Release
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
   workflow_dispatch:
 
 jobs:
-  build:
+
+  release:
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+
     runs-on: ubuntu-latest
 
     steps:
@@ -25,3 +26,8 @@ jobs:
 
       - name: Run a build
         run: npm run build
+
+      - name: Run Release
+        run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

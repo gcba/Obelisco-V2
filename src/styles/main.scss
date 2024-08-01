@@ -9,6 +9,9 @@
 @import "variables/typography";
 @import "variables/colors";
 
+// Import utilities
+@import "utilities/globals";
+
 // Import component styles
 @import "components/alert";
 @import "components/banner";

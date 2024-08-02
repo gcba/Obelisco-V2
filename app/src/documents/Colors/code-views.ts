@@ -1,0 +1,52 @@
+export const BG_THEME_COLORS = `
+  <div class="bg-primary"> primary</div>
+  <div class="bg-secondary text-white"> secondary</div>
+  <div class="bg-danger"> danger</div>
+  <div class="bg-success"> success</div>
+  <div class="bg-warning"> warning</div>
+  <div class="bg-info"> info</div>
+  <div class="bg-light"> light</div>
+  <div class="bg-dark text-white"> dark</div>
+`;
+export const TEXT_THEME_COLORS = `
+  <p class="text-body-secondary">text-body-secondary</p>
+  <p class="text-body-tertiary">text-body-tertiary</p>
+  <div class="text-primary"> primary</div>
+  <div class="text-secondary"> secondary</div>
+  <div class="text-danger"> danger</div>
+  <div class="text-success"> success</div>
+  <div class="text-warning"> warning</div>
+  <div class="text-info"> info</div>
+  <div class="text-light bg-dark"> light</div>
+  <div class="text-dark"> dark</div>
+  <div class="text-white bg-dark"> white</div>
+  <div class="text-black"> black</div>
+`;
+export const BG_THEME_COLORS_PASTEL = `
+  <div class="bg-sky"> sky</div>
+  <div class="bg-lavender"> lavender</div>
+  <div class="bg-blackberry"> blackberry</div>
+  <div class="bg-berries"> berries</div>
+  <div class="bg-musket"> musket</div>
+  <div class="bg-strawberry"> strawberry</div>
+  <div class="bg-coral"> coral</div>
+  <div class="bg-citrus"> citrus</div>
+  <div class="bg-lime"> lime</div>
+  <div class="bg-avocado"> avocado</div>
+  <div class="bg-pistachio"> pistachio</div>
+  <div class="bg-aqua"> aqua</div>
+`;
+export const TEXT_THEME_COLORS_PASTEL = `
+  <div class="text-sky"> sky</div>
+  <div class="text-lavender"> lavender</div>
+  <div class="text-blackberry"> blackberry</div>
+  <div class="text-berries"> berries</div>
+  <div class="text-musket"> musket</div>
+  <div class="text-strawberry"> strawberry</div>
+  <div class="text-coral"> coral</div>
+  <div class="text-citrus"> citrus</div>
+  <div class="text-lime"> lime</div>
+  <div class="text-avocado"> avocado</div>
+  <div class="text-pistachio"> pistachio</div>
+  <div class="text-aqua"> aqua</div>
+`;

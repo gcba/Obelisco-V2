@@ -1,0 +1,15 @@
+/* Backgrounds colors */
+@each $key, $value in $theme-colors {
+  .bg-#{$key} {
+    background-color: $value !important;
+  }
+}
+/* Backgrounds colors pastel */
+@each $key, $value in $theme-colors-pastel {
+  .bg-#{$key} {
+    background-color: $value !important;
+  }
+  .text-#{$key} {
+    color: $value !important;
+  }
+}

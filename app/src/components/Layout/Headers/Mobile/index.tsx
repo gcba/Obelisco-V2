@@ -57,6 +57,14 @@ export default function HeaderMobile () {
                   </div>
                 </Link>
               </li>
+              <li className="nav-item mb-3" onClick={handleLinkClick}>
+                <Link className={`nav-link ${pathname === '/templates' ? 'active' : ''}`} href="/templates">
+                  <div className="nav-icon">
+                    <span className="material-icons-round">wysiwyg</span>
+                    <span>Templates</span>
+                  </div>
+                </Link>
+              </li>
               <li className="nav-item" onClick={handleLinkClick}>
                 <Link className={`nav-link ${pathname === '/components' ? 'active' : ''}`} href="/components">
                   <div className="nav-icon">

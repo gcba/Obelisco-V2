@@ -11933,21 +11933,6 @@ textarea.form-control-lg {
     background-color: white;
   }
 }
-.notification {
-  position: relative;
-}
-.notification[aria-expanded=false]:before {
-  content: "" !important;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: inline-block;
-  width: 7px;
-  height: 7px;
-  background-color: #CC3333;
-  border-radius: 50%;
-}
-
 /* === Estilos de headings de h1 a h6 ====  */
 .h1,
 h1 {

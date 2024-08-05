@@ -11993,21 +11993,6 @@ body {
     background-color: white;
   }
 }
-.notification {
-  position: relative;
-}
-.notification[aria-expanded=false]:before {
-  content: "" !important;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: inline-block;
-  width: 7px;
-  height: 7px;
-  background-color: #CC3333;
-  border-radius: 50%;
-}
-
 /* === Variable and mixins overides === */
 /* === Custom variables and mixins === */
 /* === Custom styles === */

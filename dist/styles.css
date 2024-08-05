@@ -13,16 +13,15 @@
 /*  Colors pastel  */
 /* === Variables del Theme-color === */
 /* === Theme-color === */
+/* === Body === */
 /* === Estados === */
 /*  Hover  */
 /*  Focus  */
 /*  Active  */
 /*  Visited  */
 /*  Disabled  */
-/* === Enlace === */
+/* === Enlace || Style anchor elements. === */
 /* === Borders === */
-/* === Body === */
-/* ------ Boton link ------ */
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -117,11 +116,11 @@
   --bs-tertiary-bg: #E5E5E5;
   --bs-tertiary-bg-rgb: 229, 229, 229;
   --bs-heading-color: inherit;
-  --bs-link-color: #336ACC;
-  --bs-link-color-rgb: 51, 106, 204;
+  --bs-link-color: #101E37;
+  --bs-link-color-rgb: 16, 30, 55;
   --bs-link-decoration: underline;
-  --bs-link-hover-color: #2955a3;
-  --bs-link-hover-color-rgb: 41, 85, 163;
+  --bs-link-hover-color: #274986;
+  --bs-link-hover-color-rgb: 39, 73, 134;
   --bs-code-color: #d63384;
   --bs-highlight-color: #101E37;
   --bs-highlight-bg: #FFF5CC;
@@ -3274,7 +3273,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #666666;
   --bs-btn-disabled-border-color: transparent;
   --bs-btn-box-shadow: 0 0 0 #000;
-  --bs-btn-focus-shadow-rgb: 82, 128, 212;
+  --bs-btn-focus-shadow-rgb: 52, 64, 85;
   text-decoration: underline;
 }
 .btn-link:focus-visible {

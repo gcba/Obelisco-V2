@@ -197,6 +197,9 @@ $theme-colors-pastel: (
   "aqua": $aqua
 );
 
+/* === Body === */
+$body-color: $blue-900;
+$body-secondary-color: $grisulado-800 !default;
 
 /* === Estados === */
 /*  Hover  */
@@ -220,8 +223,9 @@ $visited-bg-dark: $purple-200; // #E299FF
 $disabled-text: $grisulado-600; // #69788A
 $disabled-bg: $grisulado-300; // #9EAAB8
 
-/* === Enlace === */
-$link: $sky-700;
+/* === Enlace || Style anchor elements. === */
+$link-color: $body-color;
+$link-hover-color: $hover-color;
 
 /* === Borders === */
 $border-color: $grisulado-100;
@@ -229,14 +233,3 @@ $border-color-subtle: $grisulado-100;
 
 $box-shadow: $grisulado-100;
 $box-shadow-subtle: $grisulado-100;
-
-
-/* === Body === */
-$body-color: $blue-900;
-$body-secondary-color: $grisulado-800 !default;
-
-/* ------ Boton link ------ */
-$ghost: $white;
-$ghost-hover: $sky-50;
-$ghost-active: $sky-100;
-

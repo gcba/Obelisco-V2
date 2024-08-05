@@ -36,12 +36,11 @@ const BannerDocs: React.FC = () => {
                   className='scrollspy'
                   data-cy="nav-wrapper"
                 >
-                  <p className='font-weight-bold mb-1'> On this page
-                  </p>
+                  <p className='font-weight-bold mb-1'> <strong>Componentes</strong> | Banner </p>
                   <li className={currentElementIndexInViewport === 0 ? "active" : ""}><a href="#section-1">Introducción</a></li>
-                  <li className={currentElementIndexInViewport === 1 ? "active" : ""}><a href="#section-2">Simple</a></li>
-                  <li className={currentElementIndexInViewport === 2 ? "active" : ""}><a href="#section-3">Con cierre</a></li>
-                  <li className={currentElementIndexInViewport === 3 ? "active" : ""}><a href="#section-4">Con Lista</a></li>
+                  <li className={currentElementIndexInViewport === 1 ? "active" : ""}><a href="#section-2">Tipos</a></li>
+                  <li className={currentElementIndexInViewport === 2 ? "active" : ""}><a href="#section-3">Con botón</a></li>
+                  <li className={currentElementIndexInViewport === 3 ? "active" : ""}><a href="#section-4">Con botones</a></li>
                 </ul>
               </div>
 
@@ -53,7 +52,6 @@ const BannerDocs: React.FC = () => {
                     </HeadingTemplate>
                     <MainDescription description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the." />
                   </section>
-
                   <Divisor />
 
                   <section id="section-2" ref={section2Ref}>
@@ -61,107 +59,156 @@ const BannerDocs: React.FC = () => {
                       <h2 className="mb-4">Simple</h2>
                     </HeadingTemplate>
 
-                    <div className="col-12 col-lg-8 mx-auto">
-                      <div className="alert alert-info" role="alert">
-                        <p>Esta es la descripción de una alerta de información.</p>
-                      </div>
-                      <br />
-                      <div className="alert alert-primary" role="alert">
-                        <p>Esta es la descripción de una alerta de advertencia.</p>
-                      </div>
-                      <br />
-                      <div className="alert alert-success" role="alert">
-                        <p>Esta es la descripción de una alerta de éxito.</p>
-                      </div>
-                      <br />
-                      <div className="alert alert-danger" role="alert">
-                        <p>Esta es la descripción de una alerta de error.</p>
-                      </div>
-                      <br />
+                    <div className="col-12 mx-auto mb-5">
+                        <div className="banner">
+                          <div className="banner-content">
+                            <p className="banner-text">
+                              Esta descripción de banner
+                              <strong>puede tener énfasis</strong>
+                              y
+                              <a href="#" target="_blank" rel="noreferrer">enlace</a>
+                              .
+                            </p>
+                          </div>
+                        </div>
+                        <div className="banner banner-dark">
+                          <div className="banner-content">
+                            <p className="banner-text">
+                              Esta descripción de banner
+                              <strong>puede tener énfasis</strong>
+                              y
+                              <a href="#" target="_blank" rel="noreferrer">enlace</a>
+                              .
+                            </p>
+                          </div>
+                        </div>
                     </div>
-                    <CodeCopy code={EGcodeSimpleAlert} />
+                    {/* <CodeCopy code={EGcodeSimpleAlert} /> */}
                   </section>
 
                   <Divisor />
 
                   <section id="section-3" ref={section3Ref}>
                     <HeadingTemplate>
-                      <h2 className="mb-4">Con cierre</h2>
+                      <h2 className="mb-4">Con botón</h2>
                     </HeadingTemplate>
 
-                    <div className="w-50 d-flex flex-column gap-2 mb-3">
-                      <div
-                        className="alert alert-warning alert-dismissible show fade"
-                        role="alert"
-                      >
-                        <p>Esta es la descripción de una alerta de error.</p>
-                        <button
-                          type="button"
-                          className="close"
-                          data-dismiss="alert"
-                          aria-label="Cerrar"
-                        >
-                          <span className="material-icons-round">close</span>
-                        </button>
+                    <div className="col-12 mx-auto mb-5">
+                      <div className="banner">
+                        <div className="banner-content">
+                          <span className="material-icons-round">departure_board</span>
+                          <p className="banner-text">
+                            Este banner tiene un solo botón y
+                            <strong>puede tener énfasis</strong>
+                            . Se truncan los textos que superen más de una línea de texto.
+                          </p>
+                          <div className="banner-actions">
+                            <a
+                              href="#"
+                              target="_blank"
+                              rel="noreferrer"
+                              className="btn btn-sm btn-secondary"
+                            >
+                              Botón
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="banner banner-dark">
+                        <div className="banner-content">
+                          <span className="material-icons-round">departure_board</span>
+                          <p className="banner-text">
+                            Este banner tiene un solo botón y
+                            <strong>puede tener énfasis</strong>
+                            . Se truncan los textos que superen más de una línea de texto.
+                          </p>
+                          <div className="banner-actions">
+                            <a
+                              href="#"
+                              target="_blank"
+                              rel="noreferrer"
+                              className="btn btn-sm btn-secondary"
+                            >
+                              Botón
+                            </a>
+                          </div>
+                        </div>
                       </div>
 
-                      <p>Nuevo html de B5</p>
-
-                      <div
-                        className="alert alert-warning alert-dismissible fade show"
-                        role="alert"
-                      >
-                        <strong>Holy guacamole!</strong> You should check in on some of those
-                        fields below.
-                        <button
-                          type="button"
-                          className="btn-close"
-                          data-bs-dismiss="alert"
-                          aria-label="Cerrar"
-                        ></button>
-                      </div>
                     </div>
 
-                    <CodeCopy code={EGcodeCloseAlert} />
+                    {/* <CodeCopy code={EGcodeCloseAlert} /> */}
                   </section>
 
                   <Divisor />
 
                   <section id="section-4" ref={section4Ref}>
                     <HeadingTemplate>
-                      <h3 className="mb-4">Con lista</h3>
+                      <h3 className="mb-4">Con botones</h3>
                     </HeadingTemplate>
 
-                    <div className="w-50 d-flex flex-column gap-2 mb-3 mx-auto">
-                      <div className="alert alert-danger" role="alert">
-                        <p>
-                          <strong>Este es un destacado de una alerta de error.</strong>
-                          Esta es la descripción de una alerta de error que continua al texto
-                          destacado.
-                        </p>
-                        <ol className="list-links">
-                          <li>
-                            <a href="#">Ancla al error 1</a>
-                          </li>
-                          <li>
-                            <a href="#">Ancla al error 2</a>
-                          </li>
-                          <li>
-                            <a href="#">Ancla al error 3</a>
-                          </li>
-                          <li>
-                            <a href="#">Ancla al error 4</a>
-                          </li>
-                          <li>
-                            <a href="#">Ancla al error 5</a>
-                          </li>
-                        </ol>
+                    <div className="col-12 mx-auto mb-5">
+                      <div className="banner">
+                        <div className="banner-content">
+                          <span className="material-icons-round">cookie</span>
+                          <p className="banner-text">
+                            Este banner tiene dos botones y
+                            <strong>puede tener énfasis</strong>
+                            . Se truncan los textos que superen más de una línea de texto.
+                          </p>
+                          <div className="banner-actions">
+                            <a
+                              href="#"
+                              target="_blank"
+                              rel="noreferrer"
+                              className="btn btn-sm btn-secondary"
+                            >
+                              Botón
+                            </a>
+                            <a
+                              href="#"
+                              target="_blank"
+                              rel="noreferrer"
+                              className="btn btn-sm btn-primary"
+                            >
+                              Botón
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="banner banner-dark">
+                        <div className="banner-content">
+                          <span className="material-icons-round">cookie</span>
+                          <p className="banner-text">
+                            Este banner tiene dos botones y
+                            <strong>puede tener énfasis</strong>
+                            . Se truncan los textos que superen más de una línea de texto.
+                          </p>
+                          <div className="banner-actions">
+                            <a
+                              href="#"
+                              target="_blank"
+                              rel="noreferrer"
+                              className="btn btn-sm btn-secondary"
+                            >
+                              Botón
+                            </a>
+                            <a
+                              href="#"
+                              target="_blank"
+                              rel="noreferrer"
+                              className="btn btn-sm btn-primary"
+                            >
+                              Botón
+                            </a>
+                          </div>
+                        </div>
                       </div>
                     </div>
 
                     <br />
 
-                    <CodeCopy code={EGcodeWithStrong} />
+                    {/* <CodeCopy code={EGcodeWithStrong} /> */}
                   </section>
                 </div>
               </article>
@@ -174,3 +221,72 @@ const BannerDocs: React.FC = () => {
 };
 
 export default BannerDocs;
+
+
+/*********************************************************************** */
+
+// Base
+//import React from 'react';
+//import './Banner.stories.scss';
+
+// Addons
+//import { withA11y } from '@storybook/addon-a11y';
+
+// Components
+//import { Banner, BUTTON_BANNER, BUTTONS_BANNER, TEXT_BANNER_LINK, TextBannerButton, handleTextResponsive } from '.';
+
+// Configuración general del componente
+// export default {
+//   title: 'Componentes|Banner',
+//   //decorators: [withA11y]
+// };
+
+// export const BannerTypes = (): JSX.Element => {
+//   return (
+//     <div className="storybook__container-banner">
+//       <Banner textBanner={TEXT_BANNER_LINK} />
+//       <Banner textBanner={TEXT_BANNER_LINK} isDark={true} />
+//     </div>
+//   );
+// };
+// BannerTypes.story = { name: 'Tipos' };
+
+// export const BannerButton = (): JSX.Element => {
+//   handleTextResponsive();
+//   return (
+//     <div className="storybook__container-banner">
+//       <Banner
+//         iconBanner="departure_board"
+//         buttons={BUTTON_BANNER}
+//         textBanner={<TextBannerButton textButtonAmount="un solo botón" />}
+//       />
+//       <Banner
+//         iconBanner="departure_board"
+//         buttons={BUTTON_BANNER}
+//         textBanner={<TextBannerButton textButtonAmount="un solo botón" />}
+//         isDark={true}
+//       />
+//     </div>
+//   );
+// };
+// BannerButton.story = { name: 'Con botón' };
+
+// export const BannerButtons = (): JSX.Element => {
+//   handleTextResponsive();
+//   return (
+//     <div className="storybook__container-banner">
+//       <Banner
+//         iconBanner="cookie"
+//         buttons={BUTTONS_BANNER}
+//         textBanner={<TextBannerButton textButtonAmount="dos botones" />}
+//       />
+//       <Banner
+//         iconBanner="cookie"
+//         buttons={BUTTONS_BANNER}
+//         textBanner={<TextBannerButton textButtonAmount="dos botones" />}
+//         isDark={true}
+//       />
+//     </div>
+//   );
+// };
+// BannerButtons.story = { name: 'Con botones' };

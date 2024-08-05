@@ -51,7 +51,7 @@ const TooltipDocs: React.FC = () => {
                 </ul>
               </div>
 
-              <article className="box-content col-12 col-lg-8">
+              <article className="box-content col-12 col-lg-8 p-0">
                 <div data-cy="section-wrapper">
                   <section id="section-1" ref={section1Ref}>
                     <HeadingTemplate>
@@ -120,9 +120,10 @@ const TooltipDocs: React.FC = () => {
                         </span>
                       </div>
                     </div>
-                    <div className="row mb-4 justify-content-center">
-                      <div className="col-auto">
+                    <div className="d-flex flex-wrap justify-content-between mb-4">
+                      <div className="d-flex flex-column align-items-start">
                         <span
+                          className="mb-4"
                           data-direction="right-bottom"
                           data-tooltip='Esta es la descripción de un tooltip "derecha-abajo".'
                           tabIndex={0}
@@ -137,9 +138,8 @@ const TooltipDocs: React.FC = () => {
                             </span>
                           </button>
                         </span>
-                      </div>
-                      <div className="col-auto">
                         <span
+                          className="mb-4"
                           data-direction="right"
                           data-tooltip='Esta es la descripción de un tooltip "derecha".'
                           tabIndex={0}
@@ -154,8 +154,6 @@ const TooltipDocs: React.FC = () => {
                             </span>
                           </button>
                         </span>
-                      </div>
-                      <div className="col-auto">
                         <span
                           data-direction="right-top"
                           data-tooltip='Esta es la descripción de un tooltip "derecha-arriba".'
@@ -172,10 +170,9 @@ const TooltipDocs: React.FC = () => {
                           </button>
                         </span>
                       </div>
-                    </div>
-                    <div className="row mb-4 justify-content-center">
-                      <div className="col-auto">
+                      <div className="d-flex flex-column align-items-end">
                         <span
+                          className="mb-4"
                           data-direction="left-bottom"
                           data-tooltip='Esta es la descripción de un tooltip "izquierda-abajo".'
                           tabIndex={0}
@@ -190,9 +187,8 @@ const TooltipDocs: React.FC = () => {
                             </span>
                           </button>
                         </span>
-                      </div>
-                      <div className="col-auto">
                         <span
+                          className="mb-4"
                           data-direction="left"
                           data-tooltip='Esta es la descripción de un tooltip "izquierda".'
                           tabIndex={0}
@@ -207,8 +203,6 @@ const TooltipDocs: React.FC = () => {
                             </span>
                           </button>
                         </span>
-                      </div>
-                      <div className="col-auto">
                         <span
                           data-direction="left-top"
                           data-tooltip='Esta es la descripción de un tooltip "izquierda-arriba".'
@@ -323,28 +317,24 @@ const TooltipDocs: React.FC = () => {
                         </span>
                       </div>
                     </div>
-                    <div className="row mb-4 justify-content-center">
-                      <div className="col-auto">
+                    <div className="d-flex flex-wrap justify-content-between mb-4">
+                      <div className="d-flex flex-column align-items-start">
                         <span
                           data-direction="right-bottom"
                           data-tooltip='Esta es la descripción de un tooltip "derecha-abajo".'
-                          className="icon-box bg-light"
+                          className="icon-box bg-light mb-4"
                           tabIndex={0}
                         >
                           <span className="material-symbols-rounded">help</span>
                         </span>
-                      </div>
-                      <div className="col-auto">
                         <span
                           data-direction="right"
                           data-tooltip='Esta es la descripción de un tooltip "derecha".'
-                          className="icon-box bg-light"
+                          className="icon-box bg-light mb-4"
                           tabIndex={0}
                         >
                           <span className="material-symbols-rounded">help</span>
                         </span>
-                      </div>
-                      <div className="col-auto">
                         <span
                           data-direction="right-top"
                           data-tooltip='Esta es la descripción de un tooltip "derecha-arriba".'
@@ -354,29 +344,23 @@ const TooltipDocs: React.FC = () => {
                           <span className="material-symbols-rounded">help</span>
                         </span>
                       </div>
-                    </div>
-                    <div className="row mb-4 justify-content-center">
-                      <div className="col-auto">
+                      <div className="d-flex flex-column align-items-end">
                         <span
                           data-direction="left-bottom"
                           data-tooltip='Esta es la descripción de un tooltip "izquierda-abajo".'
-                          className="icon-box bg-light"
+                          className="icon-box bg-light mb-4"
                           tabIndex={0}
                         >
                           <span className="material-symbols-rounded">help</span>
                         </span>
-                      </div>
-                      <div className="col-auto">
                         <span
                           data-direction="left"
                           data-tooltip='Esta es la descripción de un tooltip "izquierda".'
-                          className="icon-box bg-light"
+                          className="icon-box bg-light mb-4"
                           tabIndex={0}
                         >
                           <span className="material-symbols-rounded">help</span>
                         </span>
-                      </div>
-                      <div className="col-auto">
                         <span
                           data-direction="left-top"
                           data-tooltip='Esta es la descripción de un tooltip "izquierda-arriba".'

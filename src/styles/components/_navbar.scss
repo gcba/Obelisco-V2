@@ -1040,7 +1040,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
                 text-overflow: ellipsis;
 
                 @include media-breakpoint-down(sm) {
-                  background-color: $grisulado-10;
+                  background-color: $grisulado-50;
                 }
 
                 &[type='search']~.reset[type='reset'] {

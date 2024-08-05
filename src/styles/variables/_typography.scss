@@ -1,12 +1,6 @@
-/* === Familia Tipográfica === */
-$font-family-polyfill: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
-  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-$font-family-base: 'Open Sans', $font-family-polyfill; // Se sobreescribe variable de Bootstrap
-$font-family-headings: 'Nunito', $font-family-base;
-
 /* === Titulos | Headings === */
 /* font-size Titulos */
-$h1-font-size: 2.5rem !default;
+$h1-font-size: 2.5rem;
 $h2-font-size: 2.25rem;
 $h3-font-size: 2rem;
 $h4-font-size: 1.75rem;

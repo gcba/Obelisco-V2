@@ -17,7 +17,7 @@
   &::-webkit-scrollbar {
     width: 16px;
     height: 16px;
-    background-color: $grisulado-10;
+    background-color: $grisulado-50;
     border-radius: 100px;
     outline: 0.125rem solid transparent;
   }
@@ -32,7 +32,7 @@
   }
 
   &:focus-visible {
-    box-shadow: 0 0 0 0.25rem $focus;
+    box-shadow: 0 0 0 0.25rem $focus-color;
     outline: none;
   }
 }

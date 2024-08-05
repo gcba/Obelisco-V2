@@ -1,189 +1,82 @@
-/* === Custom variables and mixins === */
-
-$text-muted: $grisulado-700;
-
-// Links
-$link-decoration: underline;
-$link-hover-decoration: underline;
-
-$right-arrow-icon: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjMDA3YmM3IiBkPSJNMTEuMjkzIDE3LjI5M0wxMi43MDcgMTguNzA3IDE5LjQxNCAxMiAxMi43MDcgNS4yOTMgMTEuMjkzIDYuNzA3IDE1LjU4NiAxMSA2IDExIDYgMTMgMTUuNTg2IDEzeiIvPjwvc3ZnPg==');
-
-/* === Custom styles === */
-
-/* Font weight */
-.font-weight-semibold {
-  font-weight: $font-weight-semibold !important;
-  /* Esta clase no pertenece a bootstraps, fue creada para el font-weight: 600; */
+/* === Estilos de headings de h1 a h6 ====  */
+@each $i, $styles in $heading-styles {
+  .h#{$i},
+  h#{$i} {
+    font-family: $font-family-headings;
+    font-size: map-get($styles, font-size);
+    line-height: map-get($styles, line-height);
+    font-weight: map-get($styles, font-weight);
+  }
+}
+@each $i, $size in $heading-sizes-mobile {
+  @include media-breakpoint-down(md) {
+    .h#{$i},
+    h#{$i} {
+      font-size: $size;
+    }
+  }
 }
 
-/* Fin del Font weight */
-
-
-/* Headings */
-h1,
-.h1 {
-  font-weight: $h1-font-weight;
-  line-height: $height-h1;
+/* === Estilos de headline (Titulares)  ====  */
+@each $i, $styles in $headline-styles {
+  .headline-#{$i} {
+    font-family: $font-family-headings;
+    font-size: map-get($styles, font-size);
+    line-height: map-get($styles, line-height);
+    font-weight: map-get($styles, font-weight);
+  }
 }
 
-h2,
-.h2 {
-  font-weight: $h2-font-weight;
-  line-height: $height-h2;
+/* === Estilos de Cuerpo  ====  */
+@each $i, $styles in $body-styles {
+  .text-#{$i} {
+    font-family: $font-family-sans-serif;
+    font-size: map-get($styles, font-size);
+    line-height: map-get($styles, line-height);
+    font-weight: map-get($styles, font-weight);
+  }
 }
-
-h3,
-.h3 {
-  font-weight: $h3-font-weight;
-  line-height: $height-h3;
+p {
+  @extend .text-md;
 }
-
-h4,
-.h4 {
-  font-weight: $h4-font-weight;
-  line-height: $height-h4;
+small,
+.small {
+  @extend .text-sm;
 }
-
-h5,
-.h5 {
-  font-weight: $h5-font-weight;
-  line-height: $height-h5;
-}
-
-h6,
-.h6 {
-  font-weight: $h6-font-weight;
-  line-height: $height-h6;
-}
-
-/* Fin de Headings */
-
-/* Textos */
-.lead,
-.text-xl {
-  line-height: $text-lead-line-height;
-  font-size: $text-lead-size;
-}
-
-.text-lg {
-  font-size: $text-lg;
-  line-height: $height-text-lg;
-}
-
-.text-md {
-  font-size: $text-md;
-  line-height: $height-text-md;
-}
-
-.text-sm,
-.small,
-small {
-  font-size: $text-sm;
-  line-height: $height-text-sm;
-}
-
-.text-xs {
-  font-size: $text-xs;
-  line-height: $height-text-xs;
-}
-
-/* Fin de textos Textos */
-
-/*  Inicio de Titulares para componentes, son los estilos que se aplicaran a los componentes */
-.headline-lg,
-.headline-md,
-.headline-sm {
-  font-family: $font-family-headings;
-  line-height: $height-headline;
-}
-
-.headline-lg {
-  font-size: $headline-lg;
-  font-weight: $font-weight-bold;
-}
-
-.headline-md {
-  font-size: $headline-md;
-  font-weight: $font-weight-semibold;
-}
-
-.headline-sm {
-  font-size: $headline-sm;
-  line-height: $height-headline-sm;
-  font-weight: $font-weight-semibold;
-}
-
-/* Fin de Titulares para componentes */
-
-
-/*  Customizacion general traes estilos como unterline, link y blockquote. */
-
+/* === Estilos de Subrayado  ====  */
 .underline-1 {
   text-decoration: underline;
   text-decoration-thickness: 1px;
 }
-
 .underline-2 {
   text-decoration: underline;
 }
-
-.link-arrow {
-  &:after {
-    content: $right-arrow-icon;
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: spaceUnits(1);
-    transition: $transition-base;
-  }
-
-  &:hover:after {
-    margin-left: spaceUnits(2);
-  }
-}
-
-//Citas
+/* === Estilos de Citas  ====  */
 blockquote {
   padding: 1.5rem 2rem;
   margin: 0;
-  border-left: spaceUnits(1) solid $grisulado-700;
+  border-left: 0.25rem solid $grisulado-700;
   font-style: italic;
-
   p {
-    @extend .text-lg;
-    margin-bottom: 0;
+    font-size: $lg-body-fs;
+    margin-bottom: 0.75rem;
   }
-
-  small,
-  span.text-sm,
-  span.small {
-    display: inline-block;
-    margin-top: 0.75rem;
-    font-style: normal;
+  .author {
+    font-size: $sm-body-fs;
     font-weight: $font-weight-semibold;
+    margin-bottom: 0;
+    font-style: normal;
   }
 }
-
-/* Fin de estilos customizados */
-
-/* Estilos mobile */
-@include media-breakpoint-down(sm) {
-  blockquote {
-    padding-left: spaceUnits(6);
-    margin: spaceUnits(8) spaceUnits(22);
-  }
-
-  h1,
-  .h1 {
-    font-size: $size-h1-mobile;
-  }
-
-  h2,
-  .h2 {
-    font-size: $size-h2-mobile;
-  }
-
-  h3,
-  .h3 {
-    font-size: $size-h3-mobile;
+/* === Estilos Truncamiento de texto  ====  */
+/* Clases 'ellipsis-' de 1 linea a 4 lineas (ellipsis-1, ellipsis-2, ..) */
+@for $i from 1 through 4 {
+  .ellipsis-#{$i} {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: #{$i};
+    line-clamp: #{$i};
   }
 }

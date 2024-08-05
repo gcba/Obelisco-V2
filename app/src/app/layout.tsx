@@ -7,8 +7,10 @@ import NavLayout from "@/components/Layout/Navigation/nav";
 // import 'obelisco-v2/dist/styles.css';
 
 export const componentsPages = [
-  { text: "Alertas", url: "/components/alert", id: 1 },
-  { text: "Banner", url: "/components/banner", id: 2 },
+  { text: "Tipografía", url: "/components/typography", id: 0 },
+  { text: "Colores", url: "/components/colors", id: 1 },
+  { text: "Alertas", url: "/components/alert", id: 2 },
+  /* { text: "Banner", url: "/components/banner", id: 2 },
   { text: "Bloque de trámite", url: "/components/block", id: 3 },
   { text: "Colapsable", url: "/components/collapse", id: 4 },
   { text: "Botón", url: "/components/button", id: 5 },
@@ -19,7 +21,7 @@ export const componentsPages = [
     id: 7,
   },
   { text: "Tarjetas", url: "/components/cards", id: 8 },
-  { text: "Pestañas", url: "/components/tabs", id: 9 },
+  { text: "Pestañas", url: "/components/tabs", id: 9 }, */
 ];
 
 const gettingPages = [
@@ -40,7 +42,6 @@ export default function RootLayout ({
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet" />
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
         {/* Material Symbols Round */}
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
       </head>

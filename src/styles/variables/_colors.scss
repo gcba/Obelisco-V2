@@ -1,7 +1,6 @@
 // Color system
 
 /* === Gray scale === */
-$white: #FFFFFF;
 $gray-50: #F2F2F2;
 $gray-100: #E5E5E5;
 $gray-200: #CCCCCC;
@@ -13,20 +12,19 @@ $gray-700: #4C4C4C;
 $gray-800: #333333;
 $gray-900: #191919;
 $gray-950: #000000;
-$black: #000000;
 
 /* === Grisulado === */
-$grisulado-10: #F3F6F9;
-$grisulado-50: #E6EBF0;
-$grisulado-100: #D1D8E0;
-$grisulado-200: #B8C1CC;
-$grisulado-300: #9EAAB8;
-$grisulado-400: #8A97A8;
-$grisulado-500: #69788A;
-$grisulado-600: #5C6A7A;
-$grisulado-700: #505E70;
-$grisulado-800: #425266;
-$grisulado-900: #38485C;
+$grisulado-50: #F3F6F9;
+$grisulado-100: #E6EBF0;
+$grisulado-200: #D1D8E0;
+$grisulado-300: #B8C1CC;
+$grisulado-400: #9EAAB8;
+$grisulado-500: #8A97A8;
+$grisulado-600: #69788A;
+$grisulado-700: #5C6A7A;
+$grisulado-800: #505E70;
+$grisulado-900: #425266;
+$grisulado-950: #38485C;
 
 /* === Blue === */
 $blue-50: #ECF0F9;
@@ -47,7 +45,6 @@ $yellow-100: #FFF5CC;
 $yellow-200: #FFEB99;
 $yellow-300: #FFE066;
 $yellow-400: #FFD633;
-$yellow-500: #FFCC00;
 $yellow-500: #FFCC00;
 $yellow-600: #CCA300;
 $yellow-700: #997A00;
@@ -133,18 +130,18 @@ $sky-800: #004357;
 $sky-900: #002733;
 $sky-950: #001419;
 
-/* === Color palette === */
+/* === Colors palette === */
 $blue: $blue-500;
-$purple: $purple-200; //mismo color que antes
-$red: $red-500;
+$red: $red-500; 
 $orange: $orange-500;
 $yellow: $yellow-500;
-$green: $green-600; //mismo color que antes
+$green: $green-600;
 $teal: #18b596;
-$cyan: $cyan-400; //mismo color que antes
-
-/* === Color pastel === */
-
+$cyan: $cyan-400;
+$purple: $purple-200;
+$white: #FFFFFF;
+$black: #000000;
+/*  Colors pastel  */
 $sky: #99e8ff;
 $lavender: #99b5ff;
 $blackberry: #af99ff;
@@ -158,91 +155,81 @@ $avocado: #b5ff99;
 $pistachio: #99ffaf;
 $aqua: #99ffe2;
 
-/* === Color types === */
+/* === Variables del Theme-color === */
 $primary: $blue; //blue-500
 $secondary: $blue-900;
 $success: $green; //$green-600
 $danger: $red; //$red-500;
 $warning: $orange; //orange-500
 $info: $sky-600;
-$light: $grisulado-10;
+$light: $grisulado-50;
 $dark: $sky-900;
 
-/* ------ Hover ------ */
-$hover: $blue-700;
-$hover-box-shadow: 0 0 0 2px $hover;
-
-/* ------ Focus ------ */
-$focus: $cyan-800;
-$focus-box-shadow: 0 0 0 4px $focus;
-$focus-box-shadow-subtle: 0 0 0 2px $focus;
-
-/* ------ Active ------ */
-$active: $blue-700;
-$press: $blue-800; //#1C345F
-$active-border: $blue-800; //#1C345F
-
-/* ------ Visited ------ */
-$visited: $purple-700; // #6D0099
-$visited-bg-dark: $purple-200; // #E299FF
-
-/* ------ Disabled ------ */
-$disabled-text: $grisulado-500; // #6D0099
-$disabled-bg: $grisulado-300; // #9EAAB8
-
-/* ------ Boton link ------ */
-$ghost: $white;
-$ghost-hover: $sky-50;
-$ghost-active: $sky-100;
-$link-color: $sky-700;
-$link: $sky-700;
+/* === Theme-color === */
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+$semantic-colors-light-bg: (
+  "success": $green-50,
+  "danger": $red-50,
+  "warning": $orange-50,
+  "info": $sky-50,
+);
+$theme-colors-pastel: (
+  "sky": $sky,
+  "lavender": $lavender,
+  "blackberry": $blackberry,
+  "berries": $berries,
+  "musket": $musket,
+  "strawberry": $strawberry,
+  "coral": $coral,
+  "citrus": $citrus,
+  "lime": $lime,
+  "avocado": $avocado,
+  "pistachio": $pistachio,
+  "aqua": $aqua
+);
 
 /* === Body === */
-
-$body-bg: $white;
 $body-color: $blue-900;
-$text-muted: $grisulado-800;
+$body-secondary-color: $grisulado-800 !default;
 
-/* === Theme colors === */
-$theme-colors: (
-  primary: $primary,
-  //$blue-500
-  secondary: $secondary,
-  //$blue-900
-  success: $success,
-  //$green-600
-  danger: $danger,
-  //$red-500,
-  warning: $warning,
-  //orange-500
-  info: $info,
-  //$sky-600;
-  light: $light,
-  //$grisulado-10
-  dark: $dark,
-  //$sky-900;
-);
+/* === Estados === */
+/*  Hover  */
+$hover-color: $blue-700;
+$hover-box-shadow: 0 0 0 0.125rem $hover-color;
 
-$theme-color-light-bg: (
-  "info": $sky-50,
-  "warning": $orange-50,
-  "danger": $red-50,
-  "success": $green-50,
-  "primary": $blue-50,
-  "secondary": $gray-50 //Falta definir este color en Figma
-);
+/*  Focus  */
+$focus-color: $cyan-800;
+$focus-box-shadow: 0 0 0 0.25rem $focus-color;
+$focus-box-shadow-subtle: 0 0 0 0.125rem $focus-color;
 
-$theme-colors-obelisco: (
-  'sky': $sky,
-  'lavender': $lavender,
-  'blackberry': $blackberry,
-  'berries': $berries,
-  'musket': $musket,
-  'strawberry': $strawberry,
-  'coral': $coral,
-  'citrus': $citrus,
-  'lime': $lime,
-  'avocado': $avocado,
-  'pistachio': $pistachio,
-  'aqua': $aqua
-);
+/*  Active  */
+$active-color: $blue-700;
+$active-border-color: $blue-800; //#1C345F
+
+/*  Visited  */
+$visited-color: $purple-700; // #6D0099
+$visited-bg-dark: $purple-200; // #E299FF
+
+/*  Disabled  */
+$disabled-text: $grisulado-600; // #69788A
+$disabled-bg: $grisulado-300; // #9EAAB8
+
+/* === Enlace || Style anchor elements. === */
+$link-color: $body-color;
+$link-hover-color: $hover-color;
+
+/* === Borders === */
+$border-color: $grisulado-100;
+$border-color-subtle: $grisulado-100;
+
+$box-shadow: $grisulado-100;
+$box-shadow-subtle: $grisulado-100;

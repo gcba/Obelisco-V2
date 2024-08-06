@@ -15,8 +15,8 @@ export default function HeaderDesktop () {
   ];
 
   return (
-    <header className="navbar navbar-light navbar-expand-lg" role="banner">
-      <Link href="#main" className="skip-to-main-content-link">
+    <header className="navbar navbar-light navbar-expand-lg shadow-sm p-3 mb-5 bg-body rounded" role="banner">
+      <Link href="#main" className="skip-to-main-content-link visually-hidden">
         Saltar al contenido principal
       </Link>
       <div className="container header-container">
@@ -37,10 +37,10 @@ export default function HeaderDesktop () {
           />
         </Link>
         <HeaderMobile />
-        <div className="collapse navbar-collapse" id="navbarContent">
+        <div className="collapse navbar-collapse justify-content-end" id="navbarContent">
           <div className="navbar-content">
             <div className="navbar-sections m-0">
-              <h3 className="navbar-sections-title">Secciones</h3>
+              {/* <h3 className="navbar-sections-title">Secciones</h3> */}
               <NavLayout items={gettingPages} className='custom-nav' />
             </div>
           </div>

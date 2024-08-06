@@ -132,7 +132,7 @@ $sky-950: #001419;
 
 /* === Colors palette === */
 $blue: $blue-500;
-$red: $red-500; 
+$red: $red-500;
 $orange: $orange-500;
 $yellow: $yellow-500;
 $green: $green-600;
@@ -167,14 +167,14 @@ $dark: $sky-900;
 
 /* === Theme-color === */
 $theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark
 );
 $semantic-colors-light-bg: (
   "success": $green-50,

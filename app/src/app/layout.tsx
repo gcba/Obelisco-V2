@@ -15,12 +15,23 @@ export const componentsPages = [
   { text: "Bloque de trámite", url: "/components/block", id: 3 },
   { text: "Colapsable", url: "/components/collapse", id: 4 },
   { text: "Botón", url: "/components/button", id: 5 },
-  { text: "Navegacion vertical", url: "/components/nav-vertical", id: 6 },
+  { text: "Navegacion vertical", url: "/components/nav-vertical", id: 6 },*/
   {
     text: "Navegacion Horizontal",
     url: "/components/nav-horizontal",
-    id: 7,
+    id: 3,
   },
+  {
+    text: "Navegacion Vertical",
+    url: "/components/nav-vertical",
+    id: 4,
+  },
+  {
+    text: "Pestañas",
+    url: "/components/tabs",
+    id: 5,
+  },
+  /*
   { text: "Tarjetas", url: "/components/cards", id: 8 },
   { text: "Pestañas", url: "/components/tabs", id: 9 }, */
   { text: "Switch", url: "/components/switch", id: 12 },

@@ -7,8 +7,7 @@ import BoxTemplate from '@/components/Template/Box';
 import HeadingTemplate from '@/components/Template/HeadingTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 import Divisor from '@/components/Template/Divisor';
-import SimpleText from '@/components/Template/SimpleText';
-import { EGcodeWithStrong, EGcodeSimpleAlert, EGcodeCloseAlert } from './code-views';
+import { EGcodeSimpleTabs, EGcodeSimpleTabsWithIcon, EGcodeTabsWidth, EGcodeTabsBg } from './code-views';
 
 const TabsDocs: React.FC = () => {
 
@@ -40,8 +39,8 @@ const TabsDocs: React.FC = () => {
                   </p>
                   <li className={currentElementIndexInViewport === 0 ? "active" : ""}><a href="#section-1">Introducción</a></li>
                   <li className={currentElementIndexInViewport === 1 ? "active" : ""}><a href="#section-2">Simple</a></li>
-                  <li className={currentElementIndexInViewport === 2 ? "active" : ""}><a href="#section-3">Con cierre</a></li>
-                  <li className={currentElementIndexInViewport === 3 ? "active" : ""}><a href="#section-4">Con Lista</a></li>
+                  <li className={currentElementIndexInViewport === 2 ? "active" : ""}><a href="#section-3">Ancho Fijo</a></li>
+                  <li className={currentElementIndexInViewport === 3 ? "active" : ""}><a href="#section-4">Con contenedor</a></li>
                 </ul>
               </div>
 
@@ -62,106 +61,483 @@ const TabsDocs: React.FC = () => {
                     </HeadingTemplate>
 
                     <div className="col-12 col-lg-8 mx-auto">
-                      <div className="alert alert-info" role="alert">
-                        <p>Esta es la descripción de una alerta de información.</p>
+                      <nav className="tabs-slider" aria-label="Navegación por pestañas">
+                        <ul className="nav nav-pills tabs" id="simple-myTab" role="tablist">
+                          <li className="nav-item" role="presentation">
+                            <button
+                              className="nav-link"
+                              data-bs-toggle="tab"
+                              data-bs-target="#panel-content-1"
+                              type="button"
+                              role="tab"
+                              aria-controls="panel-content-1"
+                              aria-selected="false"
+                              id="tab-1"
+                            >
+                              Pestaña 1
+                            </button>
+                          </li>
+                          <li className="nav-item" role="presentation">
+                            <button
+                              className="nav-link"
+                              data-bs-toggle="tab"
+                              data-bs-target="#panel-content-2"
+                              type="button"
+                              role="tab"
+                              aria-controls="panel-content-2"
+                              aria-selected="false"
+                              id="tab-2"
+                            >
+                              Pestaña 2
+                            </button>
+                          </li>
+                          <li className="nav-item" role="presentation">
+                            <button
+                              className="nav-link active"
+                              data-bs-toggle="tab"
+                              data-bs-target="#panel-content-3"
+                              type="button"
+                              role="tab"
+                              aria-controls="panel-content-3"
+                              aria-selected="true"
+                              id="tab-3"
+                            >
+                              Pestaña 3
+                            </button>
+                          </li>
+                          <li className="nav-item" role="presentation">
+                            <button
+                              className="nav-link disabled"
+                              disabled
+                              tabIndex={-1}
+                              data-bs-toggle="tab"
+                              data-bs-target="#panel-content-4"
+                              type="button"
+                              role="tab"
+                              aria-controls="panel-content-4"
+                              aria-selected="false"
+                              id="tab-4"
+                            >
+                              Pestaña 4
+                            </button>
+                          </li>
+                        </ul>
+                      </nav>
+                      <div className="tab-content" id="simple-myTabContent">
+                        <div
+                          className="tab-pane fade"
+                          id="panel-content-1"
+                          role="tabpanel"
+                          aria-labelledby="tab-1"
+                        >
+                          Contenido Pestaña 1
+                        </div>
+                        <div
+                          className="tab-pane fade"
+                          id="panel-content-2"
+                          role="tabpanel"
+                          aria-labelledby="tab-2"
+                        >
+                          Contenido Pestaña 2
+                        </div>
+                        <div
+                          className="tab-pane fade show active"
+                          id="panel-content-3"
+                          role="tabpanel"
+                          aria-labelledby="tab-3"
+                        >
+                          Contenido Pestaña 3
+                        </div>
+                        <div
+                          className="tab-pane fade"
+                          id="panel-content-4"
+                          role="tabpanel"
+                          aria-labelledby="tab-4"
+                        >
+                          Contenido Pestaña 4
+                        </div>
                       </div>
-                      <br />
-                      <div className="alert alert-primary" role="alert">
-                        <p>Esta es la descripción de una alerta de advertencia.</p>
-                      </div>
-                      <br />
-                      <div className="alert alert-success" role="alert">
-                        <p>Esta es la descripción de una alerta de éxito.</p>
-                      </div>
-                      <br />
-                      <div className="alert alert-danger" role="alert">
-                        <p>Esta es la descripción de una alerta de error.</p>
-                      </div>
-                      <br />
                     </div>
-                    <CodeCopy code={EGcodeSimpleAlert} />
+
+                    <CodeCopy code={EGcodeSimpleTabs} />
+
+                    <div className="col-12 col-lg-8 mx-auto">
+                      <nav className="tabs-slider" aria-label="Navegación por pestañas">
+                        <ul className="nav nav-pills tabs" id="icon-myTab" role="tablist">
+                          <li className="nav-item" role="presentation">
+                            <button
+                              className="nav-link active"
+                              data-bs-toggle="tab"
+                              data-bs-target="#panel-icon-content-1"
+                              type="button"
+                              role="tab"
+                              aria-controls="panel-icon-content-1"
+                              aria-selected="true"
+                              id="tab-icon-1"
+                            >
+                              <div className="nav-icon">
+                                Pestaña 1
+                                <span className="material-symbols-rounded">
+                                  home
+                                </span>
+                              </div>
+                            </button>
+                          </li>
+                          <li className="nav-item" role="presentation">
+                            <button
+                              className="nav-link"
+                              data-bs-toggle="tab"
+                              data-bs-target="#panel-icon-content-2"
+                              type="button"
+                              role="tab"
+                              aria-controls="panel-icon-content-2"
+                              aria-selected="false"
+                              id="tab-icon-2"
+                            >
+                              <div className="nav-icon">
+                                Pestaña 2
+                                <span className="material-symbols-rounded">
+                                  home
+                                </span>
+                              </div>
+                            </button>
+                          </li>
+                          <li className="nav-item" role="presentation">
+                            <button
+                              className="nav-link"
+                              data-bs-toggle="tab"
+                              data-bs-target="#panel-icon-content-3"
+                              type="button"
+                              role="tab"
+                              aria-controls="panel-icon-content-3"
+                              aria-selected="false"
+                              id="tab-icon-3"
+                              disabled
+                            >
+                              <div className="nav-icon">
+                                Pestaña 3
+                                <span className="material-symbols-rounded">
+                                  home
+                                </span>
+                              </div>
+                            </button>
+                          </li>
+                          <li className="nav-item" role="presentation">
+                            <button
+                              className="nav-link"
+                              data-bs-toggle="tab"
+                              data-bs-target="#panel-icon-content-4"
+                              type="button"
+                              role="tab"
+                              aria-controls="panel-icon-content-4"
+                              aria-selected="false"
+                              id="tab-icon-4"
+                            >
+                              <div className="nav-icon">
+                                Pestaña 4
+                                <span className="material-symbols-rounded">
+                                  home
+                                </span>
+                              </div>
+                            </button>
+                          </li>
+                        </ul>
+                      </nav>
+                      <div className="tab-content" id="icon-myTabContent">
+                        <div
+                          className="tab-pane fade show active"
+                          id="panel-icon-content-1"
+                          role="tabpanel"
+                          aria-labelledby="tab-icon-1"
+                        >
+                          Contenido Pestaña 1
+                        </div>
+                        <div
+                          className="tab-pane fade"
+                          id="panel-icon-content-2"
+                          role="tabpanel"
+                          aria-labelledby="tab-icon-2"
+                        >
+                          Contenido Pestaña 2
+                        </div>
+                        <div
+                          className="tab-pane fade"
+                          id="panel-icon-content-3"
+                          role="tabpanel"
+                          aria-labelledby="tab-icon-3"
+                        >
+                          Contenido Pestaña 3
+                        </div>
+                        <div
+                          className="tab-pane fade"
+                          id="panel-icon-content-4"
+                          role="tabpanel"
+                          aria-labelledby="tab-icon-4"
+                        >
+                          Contenido Pestaña 4
+                        </div>
+                      </div>
+                    </div>
+
+                    <CodeCopy code={EGcodeSimpleTabsWithIcon} />
                   </section>
 
                   <Divisor />
 
                   <section id="section-3" ref={section3Ref}>
                     <HeadingTemplate>
-                      <h2 className="mb-4">Con cierre</h2>
+                      <h2 className="mb-4">Ancho fijo</h2>
                     </HeadingTemplate>
 
-                    <div className="w-50 d-flex flex-column gap-2 mb-3">
-                      <div
-                        className="alert alert-warning alert-dismissible show fade"
-                        role="alert"
-                      >
-                        <p>Esta es la descripción de una alerta de error.</p>
-                        <button
-                          type="button"
-                          className="close"
-                          data-dismiss="alert"
-                          aria-label="Cerrar"
+                    <div className="col-12">
+                      <nav className="tabs-slider" aria-label="Navegación por pestañas">
+                        <ul className="nav nav-pills tabs fixedWidth" id="icon-myTab" role="tablist">
+                          <li className="nav-item" role="presentation">
+                            <button
+                              className="nav-link active"
+                              data-bs-toggle="tab"
+                              data-bs-target="#panel-width-content-1"
+                              type="button"
+                              role="tab"
+                              aria-controls="panel-width-content-1"
+                              aria-selected="true"
+                              id="tab-width-1"
+                            >
+                              <div className="nav-icon">
+                                Pestaña 1
+                                <span className="material-symbols-rounded">
+                                  home
+                                </span>
+                              </div>
+                            </button>
+                          </li>
+                          <li className="nav-item" role="presentation">
+                            <button
+                              className="nav-link"
+                              data-bs-toggle="tab"
+                              data-bs-target="#panel-width-content-2"
+                              type="button"
+                              role="tab"
+                              aria-controls="panel-width-content-2"
+                              aria-selected="false"
+                              id="tab-width-2"
+                            >
+                              <div className="nav-icon">
+                                Pestaña 2
+                                <span className="material-symbols-rounded">
+                                  home
+                                </span>
+                              </div>
+                            </button>
+                          </li>
+                          <li className="nav-item" role="presentation">
+                            <button
+                              className="nav-link"
+                              data-bs-toggle="tab"
+                              data-bs-target="#panel-width-content-3"
+                              type="button"
+                              role="tab"
+                              aria-controls="panel-width-content-3"
+                              aria-selected="false"
+                              id="tab-width-3"
+                              disabled
+                            >
+                              <div className="nav-icon">
+                                Pestaña 3
+                                <span className="material-symbols-rounded">
+                                  home
+                                </span>
+                              </div>
+                            </button>
+                          </li>
+                          <li className="nav-item" role="presentation">
+                            <button
+                              className="nav-link"
+                              data-bs-toggle="tab"
+                              data-bs-target="#panel-width-content-4"
+                              type="button"
+                              role="tab"
+                              aria-controls="panel-width-content-4"
+                              aria-selected="false"
+                              id="tab-width-4"
+                            >
+                              <div className="nav-icon">
+                                Pestaña 4
+                                <span className="material-symbols-rounded">
+                                  home
+                                </span>
+                              </div>
+                            </button>
+                          </li>
+                        </ul>
+                      </nav>
+                      <div className="tab-content" id="icon-myTabContent">
+                        <div
+                          className="tab-pane fade show active"
+                          id="panel-width-content-1"
+                          role="tabpanel"
+                          aria-labelledby="tab-width-1"
                         >
-                          <span className="material-icons-round">close</span>
-                        </button>
-                      </div>
-
-                      <p>Nuevo html de B5</p>
-
-                      <div
-                        className="alert alert-warning alert-dismissible fade show"
-                        role="alert"
-                      >
-                        <strong>Holy guacamole!</strong> You should check in on some of those
-                        fields below.
-                        <button
-                          type="button"
-                          className="btn-close"
-                          data-bs-dismiss="alert"
-                          aria-label="Cerrar"
-                        ></button>
+                          Contenido Pestaña 1
+                        </div>
+                        <div
+                          className="tab-pane fade"
+                          id="panel-width-content-2"
+                          role="tabpanel"
+                          aria-labelledby="tab-width-2"
+                        >
+                          Contenido Pestaña 2
+                        </div>
+                        <div
+                          className="tab-pane fade"
+                          id="panel-width-content-3"
+                          role="tabpanel"
+                          aria-labelledby="tab-width-3"
+                        >
+                          Contenido Pestaña 3
+                        </div>
+                        <div
+                          className="tab-pane fade"
+                          id="panel-width-content-4"
+                          role="tabpanel"
+                          aria-labelledby="tab-width-4"
+                        >
+                          Contenido Pestaña 4
+                        </div>
                       </div>
                     </div>
 
-                    <CodeCopy code={EGcodeCloseAlert} />
+                    <CodeCopy code={EGcodeTabsWidth} />
                   </section>
 
                   <Divisor />
 
                   <section id="section-4" ref={section4Ref}>
                     <HeadingTemplate>
-                      <h3 className="mb-4">Con lista</h3>
+                      <h3 className="mb-4">Con contenedor</h3>
                     </HeadingTemplate>
 
-                    <div className="w-50 d-flex flex-column gap-2 mb-3 mx-auto">
-                      <div className="alert alert-danger" role="alert">
-                        <p>
-                          <strong>Este es un destacado de una alerta de error.</strong>
-                          Esta es la descripción de una alerta de error que continua al texto
-                          destacado.
-                        </p>
-                        <ol className="list-links">
-                          <li>
-                            <a href="#">Ancla al error 1</a>
+                    <div className="col-12">
+                      <nav className="tabs-slider" aria-label="Navegación por pestañas">
+                        <ul className="nav nav-pills tabs nav-box" id="icon-myTab" role="tablist">
+                          <li className="nav-item" role="presentation">
+                            <button
+                              className="nav-link active"
+                              data-bs-toggle="tab"
+                              data-bs-target="#panel-bg-content-1"
+                              type="button"
+                              role="tab"
+                              aria-controls="panel-bg-content-1"
+                              aria-selected="true"
+                              id="tab-bg-1"
+                            >
+                              <div className="nav-icon">
+                                Pestaña 1
+                                <span className="material-symbols-rounded">
+                                  home
+                                </span>
+                              </div>
+                            </button>
                           </li>
-                          <li>
-                            <a href="#">Ancla al error 2</a>
+                          <li className="nav-item" role="presentation">
+                            <button
+                              className="nav-link"
+                              data-bs-toggle="tab"
+                              data-bs-target="#panel-bg-content-2"
+                              type="button"
+                              role="tab"
+                              aria-controls="panel-bg-content-2"
+                              aria-selected="false"
+                              id="tab-bg-2"
+                            >
+                              <div className="nav-icon">
+                                Pestaña 2
+                                <span className="material-symbols-rounded">
+                                  home
+                                </span>
+                              </div>
+                            </button>
                           </li>
-                          <li>
-                            <a href="#">Ancla al error 3</a>
+                          <li className="nav-item" role="presentation">
+                            <button
+                              className="nav-link"
+                              data-bs-toggle="tab"
+                              data-bs-target="#panel-bg-content-3"
+                              type="button"
+                              role="tab"
+                              aria-controls="panel-bg-content-3"
+                              aria-selected="false"
+                              id="tab-bg-3"
+                              disabled
+                            >
+                              <div className="nav-icon">
+                                Pestaña 3
+                                <span className="material-symbols-rounded">
+                                  home
+                                </span>
+                              </div>
+                            </button>
                           </li>
-                          <li>
-                            <a href="#">Ancla al error 4</a>
+                          <li className="nav-item" role="presentation">
+                            <button
+                              className="nav-link"
+                              data-bs-toggle="tab"
+                              data-bs-target="#panel-bg-content-4"
+                              type="button"
+                              role="tab"
+                              aria-controls="panel-bg-content-4"
+                              aria-selected="false"
+                              id="tab-bg-4"
+                            >
+                              <div className="nav-icon">
+                                Pestaña 4
+                                <span className="material-symbols-rounded">
+                                  home
+                                </span>
+                              </div>
+                            </button>
                           </li>
-                          <li>
-                            <a href="#">Ancla al error 5</a>
-                          </li>
-                        </ol>
+                        </ul>
+                      </nav>
+                      <div className="tab-content" id="icon-myTabContent">
+                        <div
+                          className="tab-pane fade show active"
+                          id="panel-bg-content-1"
+                          role="tabpanel"
+                          aria-labelledby="tab-bg-1"
+                        >
+                          Contenido Pestaña 1
+                        </div>
+                        <div
+                          className="tab-pane fade"
+                          id="panel-bg-content-2"
+                          role="tabpanel"
+                          aria-labelledby="tab-bg-2"
+                        >
+                          Contenido Pestaña 2
+                        </div>
+                        <div
+                          className="tab-pane fade"
+                          id="panel-bg-content-3"
+                          role="tabpanel"
+                          aria-labelledby="tab-bg-3"
+                        >
+                          Contenido Pestaña 3
+                        </div>
+                        <div
+                          className="tab-pane fade"
+                          id="panel-bg-content-4"
+                          role="tabpanel"
+                          aria-labelledby="tab-bg-4"
+                        >
+                          Contenido Pestaña 4
+                        </div>
                       </div>
                     </div>
 
                     <br />
 
-                    <CodeCopy code={EGcodeWithStrong} />
+                    <CodeCopy code={EGcodeTabsBg} />
                   </section>
                 </div>
               </article>

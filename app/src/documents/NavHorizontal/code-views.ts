@@ -1,81 +1,115 @@
-export const EGcodeSimpleAlert =
+export const EGcodeSimpleNavHorizontal =
   `
-    <div class="alert alert-info" role="alert">
-      <p>Esta es la descripción de una alerta de información.</p>
-    </div>
-    
-    <div class="alert alert-primary" role="alert">
-      <p>Esta es la descripción de una alerta de advertencia.</p>
-    </div>
-    
-    <div class="alert alert-success" role="alert">
-      <p>Esta es la descripción de una alerta de éxito.</p>
-    </div>
-    
-    <div class="alert alert-danger" role="alert">
-      <p>Esta es la descripción de una alerta de error.</p>
-    </div>
-
+  <nav>
+    <ul class="nav flex-row nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#"><span>Link</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#"><span>Activo</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><span>Link</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" aria-disabled="true" tabIndex={-1}>
+          <span>Deshabilitado</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
 `;
 
-export const EGcodeCloseAlert =
+export const EGcodeWithIconHorizontal =
   `
-  <div
-    class="alert alert-warning alert-dismissible show fade"
-    role="alert"
-  >
-    <p>Esta es la descripción de una alerta de error.</p>
-    <button
-      type="button"
-      class="close"
-      data-dismiss="alert"
-      aria-label="Cerrar"
-    >
-      <span class="material-icons-round">close</span>
-    </button>
-  </div>
-
-  <p>Nuevo html de B5</p>
-
-  <div
-    class="alert alert-warning alert-dismissible fade show"
-    role="alert"
-  >
-    <strong>Holy guacamole!</strong> You should check in on some of those
-    fields below.
-    <button
-      type="button"
-      class="btn-close"
-      data-bs-dismiss="alert"
-      aria-label="Cerrar"
-    ></button>
-  </div>
+  <nav>
+    <ul class="nav flex-row nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <div class="nav-icon">
+            <i class="bx bxs-user-circle"></i>
+            <span>Link</span>
+          </div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">
+          <div class="nav-icon">
+            <i class="bx bxs-user-circle"></i>
+            <span>Activo</span>
+          </div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <div class="nav-icon">
+            <i class="bx bxs-user-circle"></i>
+            <span>Link</span>
+          </div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" aria-disabled="true" tabindex="-1">
+          <div class="nav-icon">
+            <i class="bx bxs-user-circle"></i>
+            <span>Deshabilitado</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <br />
+  <nav>
+    <ul class="nav flex-row nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <div class="nav-icon">
+            <span>Link</span>
+            <i class="bx bxs-user-circle"></i>
+          </div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">
+          <div class="nav-icon">
+            <span>Activo</span>
+            <i class="bx bxs-user-circle"></i>
+          </div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <div class="nav-icon">
+            <span>Link</span>
+            <i class="bx bxs-user-circle"></i>
+          </div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" aria-disabled="true" tabindex="-1">
+          <div class="nav-icon">
+            <span>Deshabilitado</span>
+            <i class="bx bxs-user-circle"></i>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </nav>
 
 `
 
-export const EGcodeWithStrong = `
-  <div class="alert alert-danger" role="alert">
-    <p>
-      <strong>Este es un destacado de una alerta de error.</strong>
-      Esta es la descripción de una alerta de error que continua al texto
-      destacado.
-    </p>
-    <ol class="list-links">
-      <li>
-        <a href="#">Ancla al error 1</a>
+export const EGcodeSizesHorizontal = `
+  <nav>
+    <ul class="nav flex-row nav-pills">
+      <li class="nav-item">
+        <a class="nav-link nav-link-lg border-link" href="#"><span>Link</span></a>
       </li>
-      <li>
-        <a href="#">Ancla al error 2</a>
+      <li class="nav-item">
+        <a class="nav-link border-link" href="#"><span>Link</span></a>
       </li>
-      <li>
-        <a href="#">Ancla al error 3</a>
+      <li class="nav-item">
+        <a class="nav-link nav-link-sm border-link" href="#"><span>Link</span></a>
       </li>
-      <li>
-        <a href="#">Ancla al error 4</a>
-      </li>
-      <li>
-        <a href="#">Ancla al error 5</a>
-      </li>
-    </ol>
-  </div>
+    </ul>
+  </nav>
 `;

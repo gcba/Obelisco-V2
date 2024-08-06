@@ -94,7 +94,7 @@ const SwitchDocs: React.FC = () => {
                         <span className="switch-label off">Apagado</span>
                       </label>
                       <label className="switch" htmlFor="switch-2">
-                        <input type="checkbox" id="switch-2" checked />
+                        <input type="checkbox" id="switch-2" defaultChecked />
                         <span className="slider"></span>
                         <span className="switch-label on">Prendido</span>
                         <span className="switch-label off">Apagado</span>
@@ -115,7 +115,11 @@ const SwitchDocs: React.FC = () => {
                         className="switch switch-dark"
                         htmlFor="switch-dark-2"
                       >
-                        <input type="checkbox" id="switch-dark-2" checked />
+                        <input
+                          type="checkbox"
+                          id="switch-dark-2"
+                          defaultChecked
+                        />
                         <span className="slider"></span>
                         <span className="switch-label on">Prendido</span>
                         <span className="switch-label off">Apagado</span>
@@ -146,7 +150,7 @@ const SwitchDocs: React.FC = () => {
                         ></span>
                       </label>
                       <label className="switch" htmlFor="switch-3-2">
-                        <input type="checkbox" id="switch-3-2" checked />
+                        <input type="checkbox" id="switch-3-2" defaultChecked />
                         <span className="slider"></span>
                         <span
                           className="switch-label on"
@@ -182,7 +186,7 @@ const SwitchDocs: React.FC = () => {
                         <input
                           type="checkbox"
                           id="switch-label-hidden-3-2"
-                          checked
+                          defaultChecked
                         />
                         <span className="slider"></span>
                         <span
@@ -214,7 +218,7 @@ const SwitchDocs: React.FC = () => {
                         <span className="switch-label off">Apagado</span>
                       </label>
                       <label className="switch" htmlFor="switch-4-2">
-                        <input type="checkbox" id="switch-4-2" checked />
+                        <input type="checkbox" id="switch-4-2" defaultChecked />
                         <span className="slider"></span>
                         <span className="switch-label on">Prendido</span>
                         <span className="switch-label off">Apagado</span>
@@ -241,7 +245,11 @@ const SwitchDocs: React.FC = () => {
                         className="switch switch-sm"
                         htmlFor="switch-small-4-2"
                       >
-                        <input type="checkbox" id="switch-small-4-2" checked />
+                        <input
+                          type="checkbox"
+                          id="switch-small-4-2"
+                          defaultChecked
+                        />
                         <span className="slider"></span>
                         <span
                           className="switch-label on"
@@ -264,8 +272,8 @@ const SwitchDocs: React.FC = () => {
                       <h2 className="mb-4">Deshabilitado</h2>
                     </HeadingTemplate>
 
-                    <div className="row mb-2">
-                      <label className="switch" htmlFor="switch-5-1">
+                    <div className="row">
+                      <label className="switch mb-2" htmlFor="switch-5-1">
                         <input type="checkbox" id="switch-5-1" disabled />
                         <span className="slider"></span>
                         <span className="switch-label disabled on">
@@ -275,12 +283,12 @@ const SwitchDocs: React.FC = () => {
                           Apagado / Deshabilitado
                         </span>
                       </label>
-                      <label className="switch" htmlFor="switch-5-2">
+                      <label className="switch mb-2" htmlFor="switch-5-2">
                         <input
                           type="checkbox"
                           id="switch-5-2"
                           disabled
-                          checked
+                          defaultChecked
                         />
                         <span className="slider"></span>
                         <span className="switch-label disabled on">
@@ -314,7 +322,7 @@ const SwitchDocs: React.FC = () => {
                           type="checkbox"
                           id="switch-disabled-5-2"
                           disabled
-                          checked
+                          defaultChecked
                         />
                         <span className="slider"></span>
                         <span

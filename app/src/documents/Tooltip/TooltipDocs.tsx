@@ -120,7 +120,7 @@ const TooltipDocs: React.FC = () => {
                         </span>
                       </div>
                     </div>
-                    <div className="d-flex flex-wrap justify-content-between mb-4">
+                    <div className="d-flex flex-wrap justify-content-between mb-4 px-lg-5 mx-lg-5">
                       <div className="d-flex flex-column align-items-start">
                         <span
                           className="mb-4"
@@ -317,7 +317,7 @@ const TooltipDocs: React.FC = () => {
                         </span>
                       </div>
                     </div>
-                    <div className="d-flex flex-wrap justify-content-between mb-4">
+                    <div className="d-flex flex-wrap justify-content-between mb-4 px-lg-5 mx-lg-5">
                       <div className="d-flex flex-column align-items-start">
                         <span
                           data-direction="right-bottom"

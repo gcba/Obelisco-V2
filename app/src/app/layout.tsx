@@ -11,33 +11,25 @@ export const componentsPages = [
   { text: "Colores", url: "/components/colors", id: 1 },
   { text: "Enlace", url: "/components/link", id: 2 },
   { text: "Alertas", url: "/components/alert", id: 3 },
-  /* { text: "Banner", url: "/components/banner", id: 2 },
-  { text: "Bloque de trámite", url: "/components/block", id: 3 },
-  { text: "Colapsable", url: "/components/collapse", id: 4 },
-  { text: "Botón", url: "/components/button", id: 5 },
-  { text: "Navegacion vertical", url: "/components/nav-vertical", id: 6 },*/
   {
     text: "Navegacion Horizontal",
     url: "/components/nav-horizontal",
-    id: 3,
+    id: 4,
   },
   {
     text: "Navegacion Vertical",
     url: "/components/nav-vertical",
-    id: 4,
+    id: 5,
   },
   {
     text: "Pestañas",
     url: "/components/tabs",
-    id: 5,
+    id: 6,
   },
-  /*
-  { text: "Tarjetas", url: "/components/cards", id: 8 },
-  { text: "Pestañas", url: "/components/tabs", id: 9 }, */
-  { text: "Switch", url: "/components/switch", id: 12 },
-  { text: "Tooltip", url: "/components/tooltip", id: 13 },
-  { text: "Modal", url: "/components/modal", id: 14 },
-  { text: "Mensaje de estado", url: "/components/status-message", id: 15 },
+  { text: "Switch", url: "/components/switch", id: 7 },
+  { text: "Tooltip", url: "/components/tooltip", id: 8 },
+  { text: "Modal", url: "/components/modal", id: 9 },
+  { text: "Mensaje de estado", url: "/components/status-message", id: 10 },
 ];
 
 const gettingPages = [
@@ -45,7 +37,7 @@ const gettingPages = [
   { text: "Importaciones", url: "/getting-started/imports", id: 3 },
 ];
 
-export default function RootLayout({
+export default function RootLayout ({
   children,
 }: Readonly<{
   children: React.ReactNode;

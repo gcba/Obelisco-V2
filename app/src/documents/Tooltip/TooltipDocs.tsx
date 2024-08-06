@@ -57,7 +57,7 @@ const TooltipDocs: React.FC = () => {
                     <HeadingTemplate>
                       <h1>Tooltip</h1>
                     </HeadingTemplate>
-                    <MainDescription description="Los interruptores permiten a los usuarios alternar entre dos estados, como encendido y apagado. Son útiles para configuraciones rápidas y fáciles de usar." />
+                    <MainDescription description="Pequeña ventana emergente que proporciona información contextual adicional sobre un elemento al pasar el cursor sobre él." />
                   </section>
 
                   <Divisor />

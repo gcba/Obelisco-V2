@@ -24,6 +24,8 @@ export const componentsPages = [
   { text: "Pestañas", url: "/components/tabs", id: 9 }, */
   { text: "Switch", url: "/components/switch", id: 12 },
   { text: "Tooltip", url: "/components/tooltip", id: 13 },
+  { text: "Modal", url: "/components/modal", id: 14 },
+  { text: "Mensaje de estado", url: "/components/status-message", id: 15 },
 ];
 
 const gettingPages = [
@@ -56,10 +58,6 @@ export default function RootLayout({
         {/* Material Symbols Round */}
         <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
-          rel="stylesheet"
-        />
-        <link
-          href="https://gcba.github.io/Obelisco/obelisco.css"
           rel="stylesheet"
         />
       </head>

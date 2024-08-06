@@ -9,7 +9,7 @@ $switch-indicator-height: 18px;
 $switch-sm-indicator-width: 10px;
 $switch-sm-indicator-height: 10px;
 
-$switch-focus-shadow: 0 0 0 2px $focus;
+$switch-focus-shadow: 0 0 0 2px $focus-color;
 
 /* === Bootstrap Import === */
 
@@ -19,8 +19,8 @@ $switch-focus-shadow: 0 0 0 2px $focus;
   display: inline-block;
   cursor: pointer;
   padding-left: 0.5rem;
-  font-size: $text-sm;
-  line-height: $height-text-sm;
+  font-size: 0.813rem;
+  line-height: 1.25rem;
   margin-bottom: 0;
   margin-top: 0.125rem;
 }

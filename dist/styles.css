@@ -12604,7 +12604,7 @@ blockquote .author {
   .nav-responsive.collapse:not(.show) {
     display: block;
   }
-
+}
 /* === Variable and mixins  === */
 /* === Custom styles === */
 a {
@@ -12724,6 +12724,7 @@ a.link-white {
 a.link-white:focus {
   border-radius: 0.5rem;
   box-shadow: 0 0 0 0.125rem white;
+}
 
 /* === Variable and mixins overides === */
 /* === Custom variables and mixins === */

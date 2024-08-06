@@ -65,10 +65,11 @@ hr {
 //Estilos generales del front.
 .box {
   display: flex;
-  justify-content: center;
   gap: 2rem;
 
   @media (max-width: 974px) {
+    padding: 1.5rem;
+
     .nav-left {
       display: none;
     }
@@ -185,7 +186,7 @@ hr {
 }
 
 .color-box {
-  width:96px;
+  width: 96px;
   height: 48px;
   border-radius: .5rem;
   text-align: center;

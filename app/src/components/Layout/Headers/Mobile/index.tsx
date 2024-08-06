@@ -30,13 +30,15 @@ export default function HeaderMobile () {
   }, []);
 
   return (
-    <>
+    <div>
       <button
         className="navbar-toggler"
         type="button"
         onClick={toggleDrawer}
         aria-label="Menú"
-      ></button>
+      >
+        <i className='bx bx-menu'></i>
+      </button>
       <Drawer
         open={isOpen}
         onClose={toggleDrawer}
@@ -158,6 +160,6 @@ export default function HeaderMobile () {
           </nav>
         </div>
       </Drawer>
-    </>
+    </div>
   )
 }

@@ -214,6 +214,7 @@ $focus-box-shadow-subtle: 0 0 0 0.125rem $focus-color;
 /*  Active  */
 $active-color: $blue-700;
 $active-border-color: $blue-800; //#1C345F
+$active-border: 0 0 0 0.125rem $active-color;
 
 /*  Visited  */
 $visited-color: $purple-700; // #6D0099
@@ -227,9 +228,12 @@ $disabled-bg: $grisulado-300; // #9EAAB8
 $link-color: $body-color;
 $link-hover-color: $hover-color;
 
-/* === Borders === */
+/* === Border, Box-shadow, Outline === */
 $border-color: $grisulado-100;
 $border-color-subtle: $grisulado-100;
 
-$box-shadow: $grisulado-100;
-$box-shadow-subtle: $grisulado-100;
+$box-shadow: 0 0 0 0.125rem $grisulado-100;
+$box-shadow-subtle: 0 0 0 0.125rem $grisulado-50;
+
+$outline-transparent: 0.25rem solid transparent;
+$outline-transparent-subtle: 0.125rem solid transparent;

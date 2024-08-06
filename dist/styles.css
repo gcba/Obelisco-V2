@@ -21,7 +21,7 @@
 /*  Visited  */
 /*  Disabled  */
 /* === Enlace || Style anchor elements. === */
-/* === Borders === */
+/* === Border, Box-shadow, Outline === */
 /* === Familia Tipográfica === */
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
@@ -136,7 +136,7 @@
   --bs-border-radius-xxl: 2rem;
   --bs-border-radius-2xl: var(--bs-border-radius-xxl);
   --bs-border-radius-pill: 50rem;
-  --bs-box-shadow: #E6EBF0;
+  --bs-box-shadow: 0 0 0 0.125rem #E6EBF0;
   --bs-box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   --bs-box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   --bs-box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.075);
@@ -12617,7 +12617,7 @@ a {
   text-decoration-thickness: 1px;
   backface-visibility: hidden;
 }
-a:visited {
+a:not(.btn, .nav-link, .list-group-item, .calendar-link, .dropdown-item, .badge):visited {
   color: #6D0099;
 }
 a:hover, a.hover {

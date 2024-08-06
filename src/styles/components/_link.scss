@@ -41,7 +41,7 @@ a {
   text-decoration-thickness: 1px;
   backface-visibility: hidden;
 
-  &:visited {
+  &:not(.btn, .nav-link, .list-group-item, .calendar-link, .dropdown-item, .badge):visited {
     color: $visited-color;
   }
 

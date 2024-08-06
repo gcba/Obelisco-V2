@@ -9,7 +9,8 @@ import NavLayout from "@/components/Layout/Navigation/nav";
 export const componentsPages = [
   { text: "Tipografía", url: "/components/typography", id: 0 },
   { text: "Colores", url: "/components/colors", id: 1 },
-  { text: "Alertas", url: "/components/alert", id: 2 },
+  { text: "Enlace", url: "/components/link", id: 2 },
+  { text: "Alertas", url: "/components/alert", id: 3 },
   /* { text: "Banner", url: "/components/banner", id: 2 },
   { text: "Bloque de trámite", url: "/components/block", id: 3 },
   { text: "Colapsable", url: "/components/collapse", id: 4 },
@@ -33,6 +34,10 @@ export const componentsPages = [
   /*
   { text: "Tarjetas", url: "/components/cards", id: 8 },
   { text: "Pestañas", url: "/components/tabs", id: 9 }, */
+  { text: "Switch", url: "/components/switch", id: 12 },
+  { text: "Tooltip", url: "/components/tooltip", id: 13 },
+  { text: "Modal", url: "/components/modal", id: 14 },
+  { text: "Mensaje de estado", url: "/components/status-message", id: 15 },
 ];
 
 const gettingPages = [
@@ -40,7 +45,7 @@ const gettingPages = [
   { text: "Importaciones", url: "/getting-started/imports", id: 3 },
 ];
 
-export default function RootLayout ({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -50,11 +55,23 @@ export default function RootLayout ({
     <html lang="en">
       <head>
         <link href="../../../dist/styles.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet" />
-        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+          rel="stylesheet"
+        />
         {/* Material Symbols Round */}
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
+          rel="stylesheet"
+        />
       </head>
       <body>
         <HeaderDesktop />
@@ -86,8 +103,16 @@ export default function RootLayout ({
           </main>
         </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossOrigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossOrigin="anonymous"></script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+          integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+          crossOrigin="anonymous"
+        ></script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+          integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+          crossOrigin="anonymous"
+        ></script>
       </body>
     </html>
   );

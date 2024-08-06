@@ -1,0 +1,130 @@
+$icon-check: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(56, 72, 92);transform: ;msFilter:;"><path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path></svg>');
+$icon-institutional: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="76" height="41" viewBox="0 0 76 41" fill="none"><path fill="rgb(255, 211, 5)" d="M75.2614 32.3779L60.6847 4.21161C59.4274 1.71131 56.8514 0 53.8611 0H53.8539C50.8672 0 48.2876 1.71131 47.0303 4.21161L36.7697 24.0375C35.624 21.9984 33.7974 20.3988 31.5925 19.5341C34.0532 17.7543 35.6564 14.8541 35.6564 11.5828C35.6564 7.78914 33.502 4.50704 30.3532 2.8786C27.579 1.41948 24.4122 0.594454 21.0545 0.594454H5.70676C2.55075 0.594454 0 3.1452 0 6.294V34.8566C0 38.0054 2.55075 40.5561 5.70676 40.5561H22.3046C25.5039 40.5561 28.5482 39.8932 31.3115 38.7115L32.3635 38.2036C32.4211 38.1747 32.4788 38.1459 32.5364 38.1171C33.5344 39.7708 35.3394 40.884 37.4182 40.884C39.7275 40.884 41.7162 39.515 42.6133 37.537C43.0601 36.4922 44.0688 35.7537 45.2577 35.696H62.4537C63.6462 35.7537 64.6513 36.4922 65.0981 37.537C65.9916 39.515 67.9839 40.884 70.2932 40.884C73.4456 40.884 75.9964 38.326 75.9964 35.1881C75.9964 34.1649 75.7334 33.2065 75.2578 32.3815"></path></svg>');
+$inset: -0.15rem 0 0 -0.2rem;
+$inset-institutional: 0.15rem 0 0 0;
+$padding-icon-institutional: 4.05rem;
+$width-icon-institutional: 6.972rem;
+$height-icon-institutional: 3.75rem;
+$status-size: 3.75rem;
+$status-padding-top: 3.55rem;
+$status-title-padding: 1rem;
+$status-margin-bottom: 1rem;
+$status-list-margin-bottom: 2rem;
+$status-list-padding-left: 1.5rem;
+$status-list-item-margin-bottom: 0.75rem;
+$status-list-icon-left: -0.3rem;
+$status-types: ("success", "danger", "primary", "info", "institutional");
+$alert-icons: (
+  "success":
+    url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(38, 135, 74, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"></path></svg>'),
+  "danger":
+    url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(201, 59, 59, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm4.207 12.793-1.414 1.414L12 13.414l-2.793 2.793-1.414-1.414L10.586 12 7.793 9.207l1.414-1.414L12 10.586l2.793-2.793 1.414 1.414L13.414 12l2.793 2.793z"></path></svg>'),
+  "warning":
+    url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 168, 46, 1);transform: ;msFilter:;"><path d="M12.884 2.532c-.346-.654-1.422-.654-1.768 0l-9 17A.999.999 0 0 0 3 21h18a.998.998 0 0 0 .883-1.467L12.884 2.532zM13 18h-2v-2h2v2zm-2-4V9h2l.001 5H11z"></path></svg>'),
+  "primary":
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(51, 106, 204, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>'),
+  "info":
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 133, 173, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>'),
+);
+
+$status-icons: map-merge(
+  $alert-icons,
+  (
+    "institutional": $icon-institutional,
+  )
+);
+
+@mixin status-icon($type) {
+  &::before {
+    background-image: map-get($status-icons, $type);
+
+    @if $type == "institutional" {
+      width: $width-icon-institutional;
+      height: $height-icon-institutional;
+      inset: $inset-institutional;
+    }
+  }
+}
+
+.status {
+  position: relative;
+  padding-top: $status-padding-top;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: $status-size;
+    height: $status-size;
+    inset: $inset;
+  }
+
+  @each $color in $status-types {
+    &.status-#{$color} {
+      @include status-icon($color);
+
+      @if $color == "institutional" {
+        padding-top: $padding-icon-institutional;
+      }
+    }
+  }
+
+  .status-title {
+    font-weight: 600;
+    margin: $status-title-padding 0;
+    line-height: 1.2;
+    font-size: 1.75rem;
+  }
+
+  .status-text {
+    margin-bottom: $status-margin-bottom;
+  }
+
+  &:not(:has(.status-list)) .status-text {
+    margin-bottom: $status-margin-bottom;
+
+    &:not(:has(+ .status-text)),
+    + .status-text {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .status-list {
+    list-style: none;
+    padding-left: $status-list-padding-left;
+    margin-bottom: $status-list-margin-bottom;
+
+    > li {
+      margin-bottom: $status-list-item-margin-bottom;
+
+      &::before {
+        position: absolute;
+        left: $status-list-icon-left;
+        vertical-align: middle;
+        content: "";
+        display: inline-block;
+        height: 1.5rem;
+        width: 1.5rem;
+        min-width: 1.5rem;
+        background: transparent $icon-check no-repeat center center;
+      }
+    }
+  }
+
+  //   @include media-breakpoint-down(xs) {
+  //     > .btn {
+  //       width: 100%;
+  //     }
+  //   }
+
+  //   > .btn + .btn {
+  //     margin-left: 1rem;
+
+  //     @include media-breakpoint-down(xs) {
+  //       margin-left: 0;
+  //       margin-top: 1rem;
+  //       width: 100%;
+  //     }
+  //   }
+}

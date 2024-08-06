@@ -1,5 +1,5 @@
 import Link from "next/link";
-import {usePathname} from "next/navigation";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 interface NavItem {
@@ -14,12 +14,12 @@ interface NavProps {
   className?: string;
 }
 
-const NavLayout = ({items, className}: NavProps) => {
+const NavLayout = ({ items, className }: NavProps) => {
   const pathname = usePathname();
 
   return (
     <nav className={className}>
-      <ul className="nav flex-column nav-pills pt-2">
+      <ul className="nav flex-column nav-pills">
         {items.map((item, index) => {
           const isActive = pathname.startsWith(item.url || "#");
 
@@ -30,9 +30,8 @@ const NavLayout = ({items, className}: NavProps) => {
               ) : (
                 <Link
                   href={item.url || "#"}
-                  className={`nav-link w-100 text-left ${
-                    isActive ? "active" : ""
-                  }`}
+                  className={`nav-link w-100 text-left ${isActive ? "active" : ""
+                    }`}
                 >
                   {item.text}
                 </Link>

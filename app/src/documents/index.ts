@@ -9,4 +9,5 @@ export * from "./getting-started-module/ImportsModule";
 export * from "./getting-started-module/InstallationModule";
 export * from "./getting-started-module/IntroductionModule";
 export * from "./Typography/TypographyDocs";
+export * from "./Link/LinkDocs";
 export * from "./Card/CardDocs"

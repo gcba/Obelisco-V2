@@ -41,10 +41,10 @@ hr {
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     width: 20px;
     height: 20px;
-    background-image: url('../../public/icon/copy.svg');
+    background-image: url("../../public/icon/copy.svg");
     background-size: 20px;
     background-repeat: no-repeat;
     position: absolute;
@@ -65,10 +65,11 @@ hr {
 //Estilos generales del front.
 .box {
   display: flex;
-  justify-content: center;
   gap: 2rem;
 
   @media (max-width: 974px) {
+    padding: 1.5rem;
+
     .nav-left {
       display: none;
     }
@@ -107,7 +108,7 @@ hr {
     }
 
     // Transition for nav-link
-    .nav>.nav-item>.nav-link {
+    .nav > .nav-item > .nav-link {
       transition: 0.2s;
 
       &.active {
@@ -166,12 +167,12 @@ hr {
 
 // End GAP styles custom
 
-// Toast Styles 
+// Toast Styles
 .custom-toast {
   box-shadow: 0 4px 12px #00000002;
 }
 
-// End Toast Styles 
+// End Toast Styles
 
 // Class custom
 
@@ -185,9 +186,9 @@ hr {
 }
 
 .color-box {
-  width:96px;
+  width: 96px;
   height: 48px;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   text-align: center;
   display: flex;
   align-items: center;

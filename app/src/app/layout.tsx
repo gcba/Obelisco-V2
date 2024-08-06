@@ -9,7 +9,8 @@ import NavLayout from "@/components/Layout/Navigation/nav";
 export const componentsPages = [
   { text: "Tipografía", url: "/components/typography", id: 0 },
   { text: "Colores", url: "/components/colors", id: 1 },
-  { text: "Alertas", url: "/components/alert", id: 2 },
+  { text: "Enlace", url: "/components/link", id: 2 },
+  { text: "Alertas", url: "/components/alert", id: 3 },
   /* { text: "Banner", url: "/components/banner", id: 2 },
   { text: "Bloque de trámite", url: "/components/block", id: 3 },
   { text: "Colapsable", url: "/components/collapse", id: 4 },

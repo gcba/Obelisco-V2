@@ -15,11 +15,11 @@ $font-size-icon-card: 2rem;
 $card-size: 64px;
 
 $box-shadow-access: 0 0 0 2px $grisulado-50;
-$box-shadow-access-hover: 0 0 0 2px #007bc7;
+$box-shadow-access-hover: 0 0 0 2px #274986;
 $box-shadow-access-hover-danger: 0 0 0 2px $red;
 $border-radius-card-item: 0 0 8px 8px;
 
-$box-shadow-access-focus: 0 0 0 4px #274986; // $focus-box-shadow
+$box-shadow-access-focus: 0 0 0 4px #218274; // $focus-box-shadow
 
 $no-text-decoration: none;
 
@@ -54,7 +54,7 @@ $list-group-icon-logout: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http:
 
 //Se crean clases que se extienden de card para comportamiento card-deck en accesos
 .access-deck {
-  @extend .card-deck !optional; // chequear
+  @extend .card-deck !optional; // chequear el optional
 
   .list-group-item {
     margin-left: 0.938rem;
@@ -63,8 +63,8 @@ $list-group-icon-logout: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http:
 }
 
 .access-deck.access-column {
-  @extend .card-deck !optional; // chequear
-  @extend .card-column !optional; // chequear
+  @extend .card-deck !optional; // chequear el optional
+  @extend .card-column !optional; // chequear el optional
 }
 
 @include media-breakpoint-down(xs) {
@@ -86,11 +86,11 @@ a.list-group-item {
   border: none;
   box-shadow: $box-shadow-access;
   outline: 0.125rem solid transparent;
-  border-radius: $list-group-border;
-  padding: $list-group-padding;
+  border-radius: 8px; // $list-group-border
+  padding: 1.5rem; // $list-group-padding
   display: flex;
   backface-visibility: hidden;
-  width: 340px;
+  width: 340px; // antes era 100% pero nose como toma el ancho fijo
   height: auto;
 
   @include media-breakpoint-down(xs) {
@@ -121,34 +121,35 @@ a.list-group-item {
     width: 100%;
 
     .access-text {
-      @extend .text-sm;
+      // @extend .text-sm;
       font-weight: $font-weight-normal;
-      margin: 0.125rem 0 0;
-      color: $grisulado-800;
+      font-size: 13px;
+      margin: 0;
+      color: #425266; // $grisulado-800
     }
   }
 
   &:visited {
-    color: $list-group-color;
+    color: #38485c; // $list-group-color: $grisulado-900; | #38485c
   }
 
   &:first-child {
-    border-radius: $list-group-border;
+    border-radius: 8px; // $list-group-border
   }
 
   &:last-child {
     margin-bottom: 0px;
-    border-radius: $list-group-border;
+    border-radius: 8px; // $list-group-border
 
     &:is(.card-item) {
-      border-radius: $border-radius-card-item;
+      border-radius: 0 0 8px 8px; // $border-radius-card-item
     }
   }
 
   &:hover,
   &.hover {
     box-shadow: $box-shadow-access-hover;
-    color: #007bc7; // $blue
+    color: #007bc7; // $list-group-color-hover - $blue
     text-decoration: $no-text-decoration;
     backface-visibility: visible;
 
@@ -172,7 +173,7 @@ a.list-group-item {
 
   &:focus,
   &.focus {
-    box-shadow: $box-shadow-access-focus;
+    box-shadow: $box-shadow-access-focus; 
     outline: 0.25rem solid transparent;
     background: $white;
 
@@ -181,7 +182,7 @@ a.list-group-item {
 
       &.list-group-item-logout {
         color: $danger;
-        box-shadow: $box-shadow-access-focus;
+        box-shadow: $box-shadow-access-focus; 
 
         &:after {
           @include access-icon($list-group-icon-logout);
@@ -208,17 +209,17 @@ a.list-group-item {
     box-shadow: $box-shadow-access-focus;
     outline: 0.25rem solid transparent;
     outline-offset: -2px;
-    background-color: $white;
-    color: #007bc7;
+    background-color: #274986; // antes $white
+    color: white; // $list-group-color-hover
 
     .access-title {
       @extend .underline-2;
       text-decoration-color: transparent;
     }
 
-    &:not(:focus) {
-      color: #007bc7;
-    }
+    // &:not(:focus) {
+    //   color: #007bc7;
+    // }
 
     &.list-group-item-logout {
       box-shadow: $box-shadow-access-hover-danger;
@@ -227,11 +228,10 @@ a.list-group-item {
     &:after {
       @include access-icon($list-group-icon-arrow-hover);
     }
-    &:not(:focus) {
-      color: #007bc7;
-    }
+    
 
     .access-text {
+      font-size: 13px;
       //   color: $hover;
     }
   }
@@ -245,9 +245,11 @@ a.list-group-item {
   &.item-sm {
     padding: $padding-list-group-item-sm;
 
-    @include media-breakpoint-down(xs) {
-      padding: $padding-list-group-item-sm-mobile;
-    }
+    // @include media-breakpoint-down(xs) {
+    //   padding: $padding-list-group-item-sm-mobile;
+    // }
+
+    // Este codigo provoca que tenga otro padding en Desktop
   }
 
   &.list-group-item-logout {
@@ -308,7 +310,7 @@ a.list-group-item {
     width: 100%;
     box-shadow: $box-shadow-access;
     outline: 0.125rem solid transparent;
-    border-radius: $list-group-border;
+    border-radius: 8px; // $list-group-border
     padding-bottom: 0;
 
     .clearfix {
@@ -334,7 +336,7 @@ a.list-group-item {
             }
 
             &:focus {
-              box-shadow: $box-shadow-access-focus;
+              box-shadow: $box-shadow-access-focus; 
             }
           }
         }
@@ -364,7 +366,7 @@ a.list-group-item {
         background-color: #f3f6f9;
         flex: 0 0 $card-size;
         height: $card-size;
-        border-radius: $list-group-border;
+        border-radius: 8px; // $list-group-border
         text-align: center;
         line-height: $card-size;
         display: flex;
@@ -403,7 +405,7 @@ a.list-group-item {
 
           &:active,
           &.active {
-            box-shadow: $box-shadow-access-focus;
+            box-shadow:  $box-shadow-access-focus; 
           }
 
           &:hover,
@@ -413,7 +415,7 @@ a.list-group-item {
 
           &:focus,
           &.focus {
-            box-shadow: $box-shadow-access-focus;
+            box-shadow:$box-shadow-access-focus; 
           }
         }
 

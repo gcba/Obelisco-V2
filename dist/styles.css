@@ -238,7 +238,7 @@ hr {
   opacity: 0.25;
 }
 
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+h6, .h6, h5, .h5, h4, .h4, .group-access .card-access .card-access-body .card-access-title, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
@@ -273,11 +273,11 @@ h3, .h3 {
   }
 }
 
-h4, .h4 {
+h4, .h4, .group-access .card-access .card-access-body .card-access-title {
   font-size: calc(1.275rem + 0.3vw);
 }
 @media (min-width: 1200px) {
-  h4, .h4 {
+  h4, .h4, .group-access .card-access .card-access-body .card-access-title {
     font-size: 1.5rem;
   }
 }
@@ -11958,7 +11958,7 @@ h3 {
   font-weight: 600;
 }
 
-.h4,
+.h4, .group-access .card-access .card-access-body .card-access-title,
 h4 {
   font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.75rem;
@@ -12001,14 +12001,14 @@ h6 {
   }
 }
 /* === Estilos de headline (Titulares)  ====  */
-.headline-lg {
+.headline-lg, .group-access .card-access .card-access-body h4, .group-access .card-access .card-access-body .h4, .group-access .card-access .card-access-body .card-access-title {
   font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.25rem;
   line-height: 1.5rem;
   font-weight: 700;
 }
 
-.headline-md, .nav-link {
+.headline-md, .group-access .card-access .container-access .access-option .title-option, .nav-link {
   font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.125rem;
   line-height: 1.5rem;
@@ -12037,14 +12037,14 @@ h6 {
   font-weight: 400;
 }
 
-.text-md, .nav .nav-item .nav-link-sm, p {
+.text-md, a.list-group-item .access-title, .nav .nav-item .nav-link-sm, p {
   font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 400;
 }
 
-.text-sm, small,
+.text-sm, a.list-group-item .access-content .access-text, small,
 .small {
   font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.875rem;
@@ -12065,7 +12065,7 @@ h6 {
   text-decoration-thickness: 1px;
 }
 
-.underline-2 {
+.underline-2, a.list-group-item:active .access-title, a.list-group-item.active .access-title, a.list-group-item:hover .access-title, a.list-group-item.hover .access-title {
   text-decoration: underline;
 }
 
@@ -12724,6 +12724,318 @@ a.link-white {
 a.link-white:focus {
   border-radius: 0.5rem;
   box-shadow: 0 0 0 0.125rem white;
+}
+
+/* === Custom variables and mixins === */
+/* === Bootstrap Import === */
+/* === Custom styles === */
+.access-deck .list-group-item {
+  margin-left: 0.938rem;
+  margin-right: 0.938rem;
+}
+
+.access-deck .list-group-item {
+  margin-left: 0;
+  margin-right: 0;
+}
+.access-deck .list-group-item:nth-of-type(2) {
+  margin-top: 30px;
+}
+
+a.list-group-item {
+  text-decoration: none;
+  color: #101E37;
+  border: none;
+  box-shadow: 0 0 0 2px #F3F6F9;
+  outline: 0.125rem solid transparent;
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  backface-visibility: hidden;
+  width: 340px;
+  height: auto;
+  padding: 1rem;
+}
+a.list-group-item i,
+a.list-group-item .material-icons-round {
+  font-size: 1.5rem;
+  align-self: center;
+  margin-right: 0.75rem;
+  vertical-align: middle;
+}
+a.list-group-item .access-title {
+  font-weight: 400;
+  display: inline-block;
+}
+a.list-group-item:not(.access-content) > .access-title {
+  width: 100%;
+}
+a.list-group-item .access-content {
+  width: 100%;
+}
+a.list-group-item .access-content .access-text {
+  font-weight: 400;
+  margin: 0.125rem 0 0;
+  color: #505E70;
+}
+a.list-group-item:visited {
+  color: #101E37;
+}
+a.list-group-item:first-child {
+  border-radius: 8px;
+}
+a.list-group-item:last-child {
+  margin-bottom: 0px;
+  border-radius: 8px;
+}
+a.list-group-item:last-child:is(.card-item) {
+  border-radius: 0 0 8px 8px;
+}
+a.list-group-item:hover, a.list-group-item.hover {
+  box-shadow: 0 0 0 2px #007bc7;
+  color: #007bc7;
+  text-decoration: none;
+  backface-visibility: visible;
+}
+a.list-group-item:hover.list-group-item-logout, a.list-group-item.hover.list-group-item-logout {
+  box-shadow: 0 0 0 2px #CC3333;
+}
+a.list-group-item:hover .access-title, a.list-group-item.hover .access-title {
+  text-decoration-color: transparent;
+}
+a.list-group-item:hover:after, a.list-group-item.hover:after {
+  content: "";
+  height: 1.5rem;
+  width: 1.5rem;
+  min-width: 1.5rem;
+  background: transparent url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><g clip-path="url(%23clip0_1497_853)"><path d="M9.83547 15.88L13.7155 12L9.83547 8.11998C9.44547 7.72998 9.44547 7.09998 9.83547 6.70998C10.2255 6.31998 10.8555 6.31998 11.2455 6.70998L15.8355 11.3C16.2255 11.69 16.2255 12.32 15.8355 12.71L11.2455 17.3C10.8555 17.69 10.2255 17.69 9.83547 17.3C9.45547 16.91 9.44547 16.27 9.83547 15.88Z" fill="%23274986"/></g><defs><clipPath id="clip0_1497_853"><rect width="24" height="24" fill="white" transform="translate(0.54541)"/></clipPath></defs></svg>') no-repeat center center;
+}
+a.list-group-item:focus, a.list-group-item.focus {
+  box-shadow: 0 0 0 4px #274986;
+  outline: 0.25rem solid transparent;
+  background: #FFFFFF;
+}
+a.list-group-item:focus:hover, a.list-group-item.focus:hover {
+  color: #101E37;
+}
+a.list-group-item:focus:hover.list-group-item-logout, a.list-group-item.focus:hover.list-group-item-logout {
+  color: #CC3333;
+  box-shadow: 0 0 0 4px #274986;
+}
+a.list-group-item:focus:hover.list-group-item-logout:after, a.list-group-item.focus:hover.list-group-item-logout:after {
+  content: "";
+  height: 1.5rem;
+  width: 1.5rem;
+  min-width: 1.5rem;
+  background: transparent url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" style="fill: rgba(201, 59, 59, 1);msFilter:;"><g><path d="M0,0h24v24H0V0z" fill="none"/></g><g><g><path d="M5,5h6c0.55,0,1-0.45,1-1v0c0-0.55-0.45-1-1-1H5C3.9,3,3,3.9,3,5v14c0,1.1,0.9,2,2,2h6c0.55,0,1-0.45,1-1v0 c0-0.55-0.45-1-1-1H5V5z"/><path d="M20.65,11.65l-2.79-2.79C17.54,8.54,17,8.76,17,9.21V11h-7c-0.55,0-1,0.45-1,1v0c0,0.55,0.45,1,1,1h7v1.79 c0,0.45,0.54,0.67,0.85,0.35l2.79-2.79C20.84,12.16,20.84,11.84,20.65,11.65z"/></g></g></svg>') no-repeat center center;
+}
+a.list-group-item:focus:hover:after, a.list-group-item.focus:hover:after {
+  float: right;
+  content: "";
+  height: 1.5rem;
+  width: 1.5rem;
+  min-width: 1.5rem;
+  background: transparent url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><g clip-path="url(%23clip0_1497_1475)"><path d="M9.83547 15.88L13.7155 12L9.83547 8.11998C9.44547 7.72998 9.44547 7.09998 9.83547 6.70998C10.2255 6.31998 10.8555 6.31998 11.2455 6.70998L15.8355 11.3C16.2255 11.69 16.2255 12.32 15.8355 12.71L11.2455 17.3C10.8555 17.69 10.2255 17.69 9.83547 17.3C9.45547 16.91 9.44547 16.27 9.83547 15.88Z" fill="%23101E37"/></g><defs><clipPath id="clip0_1497_1475"><rect width="24" height="24" fill="white" transform="translate(0.54541)"/></clipPath></defs></svg>') no-repeat center center;
+}
+a.list-group-item:focus:hover .access-title, a.list-group-item.focus:hover .access-title {
+  text-decoration: none;
+}
+a.list-group-item:focus-visible {
+  outline: 0.25rem solid transparent;
+}
+a.list-group-item:active, a.list-group-item.active {
+  box-shadow: 0 0 0 4px #274986;
+  outline: 0.25rem solid transparent;
+  outline-offset: -2px;
+  background-color: #FFFFFF;
+  color: #007bc7;
+}
+a.list-group-item:active .access-title, a.list-group-item.active .access-title {
+  text-decoration-color: transparent;
+}
+a.list-group-item:active:not(:focus), a.list-group-item.active:not(:focus) {
+  color: #007bc7;
+}
+a.list-group-item:active.list-group-item-logout, a.list-group-item.active.list-group-item-logout {
+  box-shadow: 0 0 0 2px #CC3333;
+}
+a.list-group-item:active:after, a.list-group-item.active:after {
+  content: "";
+  height: 1.5rem;
+  width: 1.5rem;
+  min-width: 1.5rem;
+  background: transparent url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><g clip-path="url(%23clip0_1497_853)"><path d="M9.83547 15.88L13.7155 12L9.83547 8.11998C9.44547 7.72998 9.44547 7.09998 9.83547 6.70998C10.2255 6.31998 10.8555 6.31998 11.2455 6.70998L15.8355 11.3C16.2255 11.69 16.2255 12.32 15.8355 12.71L11.2455 17.3C10.8555 17.69 10.2255 17.69 9.83547 17.3C9.45547 16.91 9.44547 16.27 9.83547 15.88Z" fill="%23274986"/></g><defs><clipPath id="clip0_1497_853"><rect width="24" height="24" fill="white" transform="translate(0.54541)"/></clipPath></defs></svg>') no-repeat center center;
+}
+a.list-group-item:active:not(:focus), a.list-group-item.active:not(:focus) {
+  color: #007bc7;
+}
+a.list-group-item:after {
+  float: right;
+  content: "";
+  height: 1.5rem;
+  width: 1.5rem;
+  min-width: 1.5rem;
+  background: transparent url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><g clip-path="url(%23clip0_1497_1475)"><path d="M9.83547 15.88L13.7155 12L9.83547 8.11998C9.44547 7.72998 9.44547 7.09998 9.83547 6.70998C10.2255 6.31998 10.8555 6.31998 11.2455 6.70998L15.8355 11.3C16.2255 11.69 16.2255 12.32 15.8355 12.71L11.2455 17.3C10.8555 17.69 10.2255 17.69 9.83547 17.3C9.45547 16.91 9.44547 16.27 9.83547 15.88Z" fill="%23101E37"/></g><defs><clipPath id="clip0_1497_1475"><rect width="24" height="24" fill="white" transform="translate(0.54541)"/></clipPath></defs></svg>') no-repeat center center;
+  margin-left: 0.25rem;
+}
+a.list-group-item.item-sm {
+  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 1rem;
+}
+a.list-group-item.list-group-item-logout {
+  box-shadow: 0 0 0 2px #CC3333;
+  color: #CC3333;
+}
+a.list-group-item.list-group-item-logout:visited {
+  color: #CC3333;
+}
+a.list-group-item.list-group-item-logout:after {
+  content: "";
+  height: 1.5rem;
+  width: 1.5rem;
+  min-width: 1.5rem;
+  background: transparent url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" style="fill: rgba(201, 59, 59, 1);msFilter:;"><g><path d="M0,0h24v24H0V0z" fill="none"/></g><g><g><path d="M5,5h6c0.55,0,1-0.45,1-1v0c0-0.55-0.45-1-1-1H5C3.9,3,3,3.9,3,5v14c0,1.1,0.9,2,2,2h6c0.55,0,1-0.45,1-1v0 c0-0.55-0.45-1-1-1H5V5z"/><path d="M20.65,11.65l-2.79-2.79C17.54,8.54,17,8.76,17,9.21V11h-7c-0.55,0-1,0.45-1,1v0c0,0.55,0.45,1,1,1h7v1.79 c0,0.45,0.54,0.67,0.85,0.35l2.79-2.79C20.84,12.16,20.84,11.84,20.65,11.65z"/></g></g></svg>') no-repeat center center;
+}
+a.list-group-item.list-group-item-logout:hover {
+  box-shadow: 0 0 0 2px #CC3333;
+  color: #CC3333;
+}
+a.list-group-item.list-group-item-logout.logout-sm {
+  padding: 0.525rem 0.75rem;
+  line-height: 1.45;
+}
+
+.list-group {
+  gap: 1rem;
+}
+@media (min-width: 752px) {
+  .list-group.list-group-row {
+    flex-direction: row;
+  }
+}
+.list-group.list-group-row .list-group-item {
+  width: 100%;
+}
+.list-group .list-group-title,
+.list-group .list-group-category {
+  padding: 0.5rem 1rem;
+  margin: 0;
+}
+.list-group .no-shadow {
+  box-shadow: none;
+}
+
+.group-access {
+  display: grid;
+  margin-bottom: 1rem;
+  background-color: #FFFFFF;
+}
+.group-access .card-access {
+  display: grid;
+  width: 100%;
+  box-shadow: 0 0 0 2px #F3F6F9;
+  outline: 0.125rem solid transparent;
+  border-radius: 8px;
+  padding-bottom: 0;
+}
+.group-access .card-access .clearfix {
+  margin: -2px 0 0.5rem;
+  border: none;
+  height: 0.125rem;
+  min-height: 0.125rem;
+  background-color: #F3F6F9;
+}
+.group-access .card-access .card-access-body {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  padding: 1rem;
+}
+.group-access .card-access .card-access-body:not(.p-list):has(~ .container-access) ~ .card-item {
+  box-shadow: none;
+}
+.group-access .card-access .card-access-body:not(.p-list):has(~ .container-access) ~ .card-item:hover {
+  box-shadow: 0 0 0 2px #007bc7;
+}
+.group-access .card-access .card-access-body:not(.p-list):has(~ .container-access) ~ .card-item:focus {
+  box-shadow: 0 0 0 4px #274986;
+}
+.group-access .card-access .card-access-body h4, .group-access .card-access .card-access-body .h4, .group-access .card-access .card-access-body .card-access-title {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+.group-access .card-access .card-access-body:not(.reverse) {
+  justify-content: space-between;
+}
+.group-access .card-access .card-access-body .card-access-title {
+  margin-bottom: 0.25rem;
+}
+.group-access .card-access .card-access-body .card-access-text {
+  margin: 0;
+}
+.group-access .card-access .card-access-body .card-access-icon {
+  font-size: 2rem;
+  background-color: #f3f6f9;
+  flex: 0 0 64px;
+  height: 64px;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.group-access .card-access .card-access-body .card-access-icon.descriptive {
+  color: #336ACC;
+  font-weight: 600;
+  font-size: 1.806rem;
+  font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.group-access .card-access .card-access-body.reverse {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+.group-access .card-access .container-access .access-option {
+  padding: 0;
+}
+.group-access .card-access .container-access .access-option .list-group-item:last-child {
+  margin-bottom: 0;
+}
+.group-access .card-access .container-access .access-option .item-sm {
+  box-shadow: none;
+  margin-bottom: 0.5rem;
+}
+.group-access .card-access .container-access .access-option .item-sm:active, .group-access .card-access .container-access .access-option .item-sm.active {
+  box-shadow: 0 0 0 4px #274986;
+}
+.group-access .card-access .container-access .access-option .item-sm:hover, .group-access .card-access .container-access .access-option .item-sm.hover {
+  box-shadow: 0 0 0 2px #007bc7;
+}
+.group-access .card-access .container-access .access-option .item-sm:focus, .group-access .card-access .container-access .access-option .item-sm.focus {
+  box-shadow: 0 0 0 4px #274986;
+}
+.group-access .card-access .container-access .access-option .title-option {
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.group-access .card-access .container-access + .clearfix {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+.group-access .card-access .container-access + .clearfix + .card-item {
+  border-radius: 0.5rem;
+}
+.group-access .card-access .container-access + .clearfix + .card-item:focus {
+  box-shadow: 0 0 0 4px #274986;
+}
+.group-access .card-item {
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* === Variable and mixins overides === */

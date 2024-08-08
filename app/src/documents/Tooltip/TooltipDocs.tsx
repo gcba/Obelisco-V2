@@ -14,7 +14,6 @@ const TooltipDocs: React.FC = () => {
   const section2Ref = useRef<HTMLDivElement>(null);
   const section3Ref = useRef<HTMLDivElement>(null);
   const section4Ref = useRef<HTMLDivElement>(null);
-  const section5Ref = useRef<HTMLDivElement>(null);
 
   return (
     <BoxTemplate>
@@ -70,159 +69,6 @@ const TooltipDocs: React.FC = () => {
                     <div className="row mb-4 justify-content-center">
                       <div className="col-auto">
                         <span
-                          data-direction="top-right"
-                          data-tooltip='Esta es la descripción de un tooltip "arriba-derecha".'
-                          tabIndex={0}
-                        >
-                          <button
-                            type="button"
-                            className="btn btn-primary btn-icon"
-                            aria-label="Botón"
-                          >
-                            <span className="material-symbols-rounded">
-                              turn_right
-                            </span>
-                          </button>
-                        </span>
-                      </div>
-                      <div className="col-auto">
-                        <span
-                          data-direction="top"
-                          data-tooltip='Esta es la descripción de un tooltip "arriba".'
-                          tabIndex={0}
-                        >
-                          <button
-                            type="button"
-                            className="btn btn-primary btn-icon"
-                            aria-label="Botón"
-                          >
-                            <span className="material-symbols-rounded">
-                              arrow_upward
-                            </span>
-                          </button>
-                        </span>
-                      </div>
-                      <div className="col-auto">
-                        <span
-                          data-direction="top-left"
-                          data-tooltip='Esta es la descripción de un tooltip "arriba-izquierda".'
-                          tabIndex={0}
-                        >
-                          <button
-                            type="button"
-                            className="btn btn-primary btn-icon"
-                            aria-label="Botón"
-                          >
-                            <span className="material-symbols-rounded">
-                              turn_left
-                            </span>
-                          </button>
-                        </span>
-                      </div>
-                    </div>
-                    <div className="d-flex flex-wrap justify-content-between mb-4 px-lg-5 mx-lg-5">
-                      <div className="d-flex flex-column align-items-start">
-                        <span
-                          className="mb-4"
-                          data-direction="right-bottom"
-                          data-tooltip='Esta es la descripción de un tooltip "derecha-abajo".'
-                          tabIndex={0}
-                        >
-                          <button
-                            type="button"
-                            className="btn btn-primary btn-icon"
-                            aria-label="Botón"
-                          >
-                            <span className="material-symbols-rounded">
-                              south_east
-                            </span>
-                          </button>
-                        </span>
-                        <span
-                          className="mb-4"
-                          data-direction="right"
-                          data-tooltip='Esta es la descripción de un tooltip "derecha".'
-                          tabIndex={0}
-                        >
-                          <button
-                            type="button"
-                            className="btn btn-primary btn-icon"
-                            aria-label="Botón"
-                          >
-                            <span className="material-symbols-rounded">
-                              arrow_forward
-                            </span>
-                          </button>
-                        </span>
-                        <span
-                          data-direction="right-top"
-                          data-tooltip='Esta es la descripción de un tooltip "derecha-arriba".'
-                          tabIndex={0}
-                        >
-                          <button
-                            type="button"
-                            className="btn btn-primary btn-icon"
-                            aria-label="Botón"
-                          >
-                            <span className="material-symbols-rounded">
-                              north_east
-                            </span>
-                          </button>
-                        </span>
-                      </div>
-                      <div className="d-flex flex-column align-items-end">
-                        <span
-                          className="mb-4"
-                          data-direction="left-bottom"
-                          data-tooltip='Esta es la descripción de un tooltip "izquierda-abajo".'
-                          tabIndex={0}
-                        >
-                          <button
-                            type="button"
-                            className="btn btn-primary btn-icon"
-                            aria-label="Botón"
-                          >
-                            <span className="material-symbols-rounded">
-                              south_west
-                            </span>
-                          </button>
-                        </span>
-                        <span
-                          className="mb-4"
-                          data-direction="left"
-                          data-tooltip='Esta es la descripción de un tooltip "izquierda".'
-                          tabIndex={0}
-                        >
-                          <button
-                            type="button"
-                            className="btn btn-primary btn-icon"
-                            aria-label="Botón"
-                          >
-                            <span className="material-symbols-rounded">
-                              keyboard_backspace
-                            </span>
-                          </button>
-                        </span>
-                        <span
-                          data-direction="left-top"
-                          data-tooltip='Esta es la descripción de un tooltip "izquierda-arriba".'
-                          tabIndex={0}
-                        >
-                          <button
-                            type="button"
-                            className="btn btn-primary btn-icon"
-                            aria-label="Botón"
-                          >
-                            <span className="material-symbols-rounded">
-                              north_west
-                            </span>
-                          </button>
-                        </span>
-                      </div>
-                    </div>
-                    <div className="row mb-4 justify-content-center">
-                      <div className="col-auto">
-                        <span
                           data-direction="bottom-right"
                           data-tooltip='Esta es la descripción de un tooltip "abajo-derecha".'
                           tabIndex={0}
@@ -273,6 +119,160 @@ const TooltipDocs: React.FC = () => {
                         </span>
                       </div>
                     </div>
+                    <div className="d-flex flex-wrap justify-content-between mb-4 px-lg-5 mx-lg-5">
+                      <div className="d-flex flex-column align-items-start px-lg-5 mx-lg-5">
+                        <span
+                          className="mb-4"
+                          data-direction="right-bottom"
+                          data-tooltip='Esta es la descripción de un tooltip "derecha-abajo".'
+                          tabIndex={0}
+                        >
+                          <button
+                            type="button"
+                            className="btn btn-primary btn-icon"
+                            aria-label="Botón"
+                          >
+                            <span className="material-symbols-rounded">
+                              south_east
+                            </span>
+                          </button>
+                        </span>
+                        <span
+                          className="mb-4"
+                          data-direction="right"
+                          data-tooltip='Esta es la descripción de un tooltip "derecha".'
+                          tabIndex={0}
+                        >
+                          <button
+                            type="button"
+                            className="btn btn-primary btn-icon"
+                            aria-label="Botón"
+                          >
+                            <span className="material-symbols-rounded">
+                              arrow_forward
+                            </span>
+                          </button>
+                        </span>
+                        <span
+                          data-direction="right-top"
+                          data-tooltip='Esta es la descripción de un tooltip "derecha-arriba".'
+                          tabIndex={0}
+                        >
+                          <button
+                            type="button"
+                            className="btn btn-primary btn-icon"
+                            aria-label="Botón"
+                          >
+                            <span className="material-symbols-rounded">
+                              north_east
+                            </span>
+                          </button>
+                        </span>
+                      </div>
+                      <div className="d-flex flex-column align-items-end px-lg-5 mx-lg-5">
+                        <span
+                          className="mb-4"
+                          data-direction="left-bottom"
+                          data-tooltip='Esta es la descripción de un tooltip "izquierda-abajo".'
+                          tabIndex={0}
+                        >
+                          <button
+                            type="button"
+                            className="btn btn-primary btn-icon"
+                            aria-label="Botón"
+                          >
+                            <span className="material-symbols-rounded">
+                              south_west
+                            </span>
+                          </button>
+                        </span>
+                        <span
+                          className="mb-4"
+                          data-direction="left"
+                          data-tooltip='Esta es la descripción de un tooltip "izquierda".'
+                          tabIndex={0}
+                        >
+                          <button
+                            type="button"
+                            className="btn btn-primary btn-icon"
+                            aria-label="Botón"
+                          >
+                            <span className="material-symbols-rounded">
+                              keyboard_backspace
+                            </span>
+                          </button>
+                        </span>
+                        <span
+                          data-direction="left-top"
+                          data-tooltip='Esta es la descripción de un tooltip "izquierda-arriba".'
+                          tabIndex={0}
+                        >
+                          <button
+                            type="button"
+                            className="btn btn-primary btn-icon"
+                            aria-label="Botón"
+                          >
+                            <span className="material-symbols-rounded">
+                              north_west
+                            </span>
+                          </button>
+                        </span>
+                      </div>
+                    </div>
+
+                    <div className="row mb-4 justify-content-center">
+                      <div className="col-auto">
+                        <span
+                          data-direction="top-right"
+                          data-tooltip='Esta es la descripción de un tooltip "arriba-derecha".'
+                          tabIndex={0}
+                        >
+                          <button
+                            type="button"
+                            className="btn btn-primary btn-icon"
+                            aria-label="Botón"
+                          >
+                            <span className="material-symbols-rounded">
+                              turn_right
+                            </span>
+                          </button>
+                        </span>
+                      </div>
+                      <div className="col-auto">
+                        <span
+                          data-direction="top"
+                          data-tooltip='Esta es la descripción de un tooltip "arriba".'
+                          tabIndex={0}
+                        >
+                          <button
+                            type="button"
+                            className="btn btn-primary btn-icon"
+                            aria-label="Botón"
+                          >
+                            <span className="material-symbols-rounded">
+                              arrow_upward
+                            </span>
+                          </button>
+                        </span>
+                      </div>
+                      <div className="col-auto">
+                        <span
+                          data-direction="top-left"
+                          data-tooltip='Esta es la descripción de un tooltip "arriba-izquierda".'
+                          tabIndex={0}
+                        >
+                          <button
+                            type="button"
+                            className="btn btn-primary btn-icon"
+                            aria-label="Botón"
+                          >
+                            <span className="material-symbols-rounded">
+                              turn_left
+                            </span>
+                          </button>
+                        </span>
+                      </div>
+                    </div>
 
                     <br />
                     <CodeCopy code={TooltipWithButtons} />
@@ -288,8 +288,8 @@ const TooltipDocs: React.FC = () => {
                     <div className="row mb-4 justify-content-center">
                       <div className="col-auto">
                         <span
-                          data-direction="top-right"
-                          data-tooltip='Esta es la descripción de un tooltip "arriba-derecha".'
+                          data-direction="bottom-right"
+                          data-tooltip='Esta es la descripción de un tooltip "abajo-derecha".'
                           className="icon-box bg-light"
                           tabIndex={0}
                         >
@@ -298,8 +298,8 @@ const TooltipDocs: React.FC = () => {
                       </div>
                       <div className="col-auto">
                         <span
-                          data-direction="top"
-                          data-tooltip='Esta es la descripción de un tooltip "arriba".'
+                          data-direction="bottom"
+                          data-tooltip='Esta es la descripción de un tooltip "abajo".'
                           className="icon-box bg-light"
                           tabIndex={0}
                         >
@@ -308,8 +308,8 @@ const TooltipDocs: React.FC = () => {
                       </div>
                       <div className="col-auto">
                         <span
-                          data-direction="top-left"
-                          data-tooltip='Esta es la descripción de un tooltip "arriba-izquierda".'
+                          data-direction="bottom-left"
+                          data-tooltip='Esta es la descripción de un tooltip "abajo-izquierda".'
                           className="icon-box bg-light"
                           tabIndex={0}
                         >
@@ -317,8 +317,9 @@ const TooltipDocs: React.FC = () => {
                         </span>
                       </div>
                     </div>
+
                     <div className="d-flex flex-wrap justify-content-between mb-4 px-lg-5 mx-lg-5">
-                      <div className="d-flex flex-column align-items-start">
+                      <div className="d-flex flex-column align-items-start px-lg-5 mx-lg-5">
                         <span
                           data-direction="right-bottom"
                           data-tooltip='Esta es la descripción de un tooltip "derecha-abajo".'
@@ -344,7 +345,7 @@ const TooltipDocs: React.FC = () => {
                           <span className="material-symbols-rounded">help</span>
                         </span>
                       </div>
-                      <div className="d-flex flex-column align-items-end">
+                      <div className="d-flex flex-column align-items-end px-lg-5 mx-lg-5">
                         <span
                           data-direction="left-bottom"
                           data-tooltip='Esta es la descripción de un tooltip "izquierda-abajo".'
@@ -374,8 +375,8 @@ const TooltipDocs: React.FC = () => {
                     <div className="row mb-4 justify-content-center">
                       <div className="col-auto">
                         <span
-                          data-direction="bottom-right"
-                          data-tooltip='Esta es la descripción de un tooltip "abajo-derecha".'
+                          data-direction="top-right"
+                          data-tooltip='Esta es la descripción de un tooltip "arriba-derecha".'
                           className="icon-box bg-light"
                           tabIndex={0}
                         >
@@ -384,8 +385,8 @@ const TooltipDocs: React.FC = () => {
                       </div>
                       <div className="col-auto">
                         <span
-                          data-direction="bottom"
-                          data-tooltip='Esta es la descripción de un tooltip "abajo".'
+                          data-direction="top"
+                          data-tooltip='Esta es la descripción de un tooltip "arriba".'
                           className="icon-box bg-light"
                           tabIndex={0}
                         >
@@ -394,8 +395,8 @@ const TooltipDocs: React.FC = () => {
                       </div>
                       <div className="col-auto">
                         <span
-                          data-direction="bottom-left"
-                          data-tooltip='Esta es la descripción de un tooltip "abajo-izquierda".'
+                          data-direction="top-left"
+                          data-tooltip='Esta es la descripción de un tooltip "arriba-izquierda".'
                           className="icon-box bg-light"
                           tabIndex={0}
                         >

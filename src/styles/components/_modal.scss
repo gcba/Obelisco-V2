@@ -51,17 +51,19 @@ $modal-dialog-margin-y-sm-up: 3rem;
 
       small {
         margin-bottom: 0.5rem;
+        color: $blue-900;
       }
 
       .modal-title {
-        font-size: 1.188rem;
-        font-weight: 700;
-        color: #38485c;
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: $blue-900;
       }
     }
 
     .modal-body {
       padding: spaceUnits(2) 0 0;
+      color: $blue-900;
 
       > *:last-child {
         margin: 0;

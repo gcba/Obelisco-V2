@@ -118,9 +118,13 @@ const SwitchDocs: React.FC = () => {
                           </li>
                           <li>Éste es otro ítem dentro de una lista.</li>
                         </ul>
-                        <button type="button" className="btn btn-secondary">
-                          Botón
-                        </button>
+                        <div className="card card-block">
+                          <div className="card-body">
+                            <button className="btn btn-lg btn-primary btn-block">
+                              Iniciar trámite
+                            </button>
+                          </div>
+                        </div>
                       </div>
                     </div>
 
@@ -160,15 +164,13 @@ const SwitchDocs: React.FC = () => {
                               Capacitación
                             </li>
                           </ul>
-                          <button type="button" className="btn btn-secondary">
-                            Botón
-                          </button>
-                          <button
-                            type="button"
-                            className="btn btn-outline-secondary"
-                          >
-                            Botón
-                          </button>
+                          <div className="card card-block">
+                            <div className="card-body">
+                              <button className="btn btn-lg btn-primary btn-block">
+                                Iniciar trámite
+                              </button>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -200,9 +202,13 @@ const SwitchDocs: React.FC = () => {
                             con la finalidad de guiar y ayudar a las personas
                             usuarias a finalizar un proceso o iniciar uno nuevo.
                           </p>
-                          <button type="button" className="btn btn-secondary">
-                            Botón
-                          </button>
+                          <div className="card card-block">
+                            <div className="card-body">
+                              <button className="btn btn-lg btn-primary btn-block">
+                                Iniciar trámite
+                              </button>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -243,15 +249,13 @@ const SwitchDocs: React.FC = () => {
                               Capacitación
                             </li>
                           </ul>
-                          <button type="button" className="btn btn-secondary">
-                            Botón
-                          </button>
-                          <button
-                            type="button"
-                            className="btn btn-outline-secondary"
-                          >
-                            Botón
-                          </button>
+                          <div className="card card-block">
+                            <div className="card-body">
+                              <button className="btn btn-lg btn-primary btn-block">
+                                Iniciar trámite
+                              </button>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -279,12 +283,13 @@ const SwitchDocs: React.FC = () => {
                             botones: {""}
                             <a href="#">https://ejemplo.buenosaires.gob.ar</a>
                           </p>
-                          <button
-                            type="button"
-                            className="btn btn-outline-link"
-                          >
-                            Ir al sitio web
-                          </button>
+                          <div className="card card-block">
+                            <div className="card-body">
+                              <button className="btn btn-lg btn-primary btn-block">
+                                Iniciar trámite
+                              </button>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>

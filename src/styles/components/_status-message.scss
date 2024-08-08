@@ -73,12 +73,14 @@ $status-icons: map-merge(
   .status-title {
     font-weight: 600;
     margin: $status-title-padding 0;
-    line-height: 1.2;
+    line-height: 2.25rem;
     font-size: 1.75rem;
+    color: $blue-900;
   }
 
   .status-text {
     margin-bottom: $status-margin-bottom;
+    color: $blue-900;
   }
 
   &:not(:has(.status-list)) .status-text {
@@ -94,9 +96,11 @@ $status-icons: map-merge(
     list-style: none;
     padding-left: $status-list-padding-left;
     margin-bottom: $status-list-margin-bottom;
+    color: $blue-900;
 
     > li {
       margin-bottom: $status-list-item-margin-bottom;
+      color: $blue-900;
 
       &::before {
         position: absolute;

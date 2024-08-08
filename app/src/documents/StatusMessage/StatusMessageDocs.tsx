@@ -9,7 +9,7 @@ import MainDescription from "@/components/Template/MainDescription";
 import Divisor from "@/components/Template/Divisor";
 import { SMType1, SMType2, SMType3, SMType4, SMType5 } from "./code-views";
 
-const SwitchDocs: React.FC = () => {
+const StatusMessageDocs: React.FC = () => {
   const section1Ref = useRef<HTMLDivElement>(null);
   const section2Ref = useRef<HTMLDivElement>(null);
   const section3Ref = useRef<HTMLDivElement>(null);
@@ -290,4 +290,4 @@ const SwitchDocs: React.FC = () => {
   );
 };
 
-export default SwitchDocs;
+export default StatusMessageDocs;

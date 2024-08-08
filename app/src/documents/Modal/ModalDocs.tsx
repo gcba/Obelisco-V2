@@ -124,7 +124,7 @@ const SwitchDocs: React.FC = () => {
                             >
                               Volver atrás
                             </button>
-                            <button type="button" className="btn btn-primary">
+                            <button type="button" className="btn btn-secondary">
                               Continuar
                             </button>
                           </div>
@@ -177,7 +177,7 @@ const SwitchDocs: React.FC = () => {
                           <div className="modal-footer">
                             <button
                               type="button"
-                              className="btn btn-primary"
+                              className="btn btn-secondary"
                               data-bs-dismiss="modal"
                             >
                               Aceptar

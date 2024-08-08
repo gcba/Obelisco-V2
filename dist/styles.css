@@ -13135,10 +13135,12 @@ a.link-white:focus {
   font-size: 1.25rem;
   font-weight: 600;
   color: #101E37;
+  line-height: 24px;
 }
 .modal .modal-content .modal-body {
   padding: 0.5rem 0 0;
   color: #101E37;
+  line-height: 24px;
 }
 .modal .modal-content .modal-body > *:last-child {
   margin: 0;

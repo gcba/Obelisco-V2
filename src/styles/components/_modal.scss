@@ -58,12 +58,14 @@ $modal-dialog-margin-y-sm-up: 3rem;
         font-size: 1.25rem;
         font-weight: 600;
         color: $blue-900;
+        line-height: 24px;
       }
     }
 
     .modal-body {
       padding: spaceUnits(2) 0 0;
       color: $blue-900;
+      line-height: 24px;
 
       > *:last-child {
         margin: 0;

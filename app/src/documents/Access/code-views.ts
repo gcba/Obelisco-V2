@@ -2,18 +2,23 @@
 export const EGcodeSimpleAccess =
   `
     <div class="list-group">
+
       <a href="#" class="list-group-item item-sm">
         <span class="access-title">Acceso</span>
       </a>
+
       <a href="#" class="list-group-item item-sm active">
         <span class="access-title">Acceso</span>
       </a>
+
       <a href="#" class="list-group-item item-sm hover">
         <span class="access-title">Acceso</span>
       </a>
+
       <a href="#" class="list-group-item item-sm focus">
         <span class="access-title">Acceso</span>
       </a>
+
     </div>
 
 `;
@@ -22,30 +27,35 @@ export const EGcodeSimpleAccess =
 export const EGcodeWithDescriptionAccess =
   `
   <div className="list-group">
+
     <a href="" className="list-group-item item-sm">
       <div className="access-content">
         <span className="access-title">Acceso</span>
         <p className="access-text">Descripción (Opcional)</p>
       </div>
     </a>
+
     <a href="" className="list-group-item item-sm active">
       <div className="access-content">
         <span className="access-title">Acceso</span>
         <p className="access-text">Descripción (Opcional)</p>
       </div>
     </a>
+
     <a href="" className="list-group-item item-sm hover">
       <div className="access-content">
         <span className="access-title">Acceso</span>
         <p className="access-text">Descripción (Opcional)</p>
       </div>
     </a>
+
     <a href="" className="list-group-item item-sm focus">
       <div className="access-content">
         <span className="access-title">Acceso</span>
         <p className="access-text">Descripción (Opcional)</p>
       </div>
     </a>
+
   </div>
 
 `;
@@ -54,6 +64,7 @@ export const EGcodeWithDescriptionAccess =
 export const EGcodeWithIconAccess =
   `
   <div className="list-group">
+
     <a href="" className="list-group-item item-sm">
     <i className="bx bxs-info-circle"></i>  
     <div className="access-content">
@@ -61,6 +72,7 @@ export const EGcodeWithIconAccess =
         <p className="access-text">Descripción (Opcional)</p>
       </div>
     </a>
+
     <a href="" className="list-group-item item-sm active">
     <i className="bx bxs-info-circle"></i>  
     <div className="access-content">
@@ -68,6 +80,7 @@ export const EGcodeWithIconAccess =
         <p className="access-text">Descripción (Opcional)</p>
       </div>
     </a>
+
     <a href="" className="list-group-item item-sm hover">
     <i className="bx bxs-info-circle"></i>  
     <div className="access-content">
@@ -75,6 +88,7 @@ export const EGcodeWithIconAccess =
         <p className="access-text">Descripción (Opcional)</p>
       </div>
     </a>
+
     <a href="" className="list-group-item item-sm focus">
     <i className="bx bxs-info-circle"></i>  
     <div className="access-content">
@@ -82,6 +96,7 @@ export const EGcodeWithIconAccess =
         <p className="access-text">Descripción (Opcional)</p>
       </div>
     </a>
+
   </div>
 
 `;
@@ -90,12 +105,15 @@ export const EGcodeWithIconAccess =
 export const EGcodeSizesAccess =
   `
   <div className="list-group">
+
     <a href="" className="list-group-item ">
       <span className="access-title">Acceso</span>
     </a>
+    
     <a href="" className="list-group-item item-sm hover">
       <span className="access-title">Acceso</span>
     </a>
+
   </div>
 
 `;

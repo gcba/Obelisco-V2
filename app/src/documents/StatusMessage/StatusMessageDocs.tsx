@@ -47,28 +47,28 @@ const SwitchDocs: React.FC = () => {
                       currentElementIndexInViewport === 1 ? "active" : ""
                     }
                   >
-                    <a href="#section-2">Exito</a>
+                    <a href="#section-2">De información</a>
                   </li>
                   <li
                     className={
                       currentElementIndexInViewport === 2 ? "active" : ""
                     }
                   >
-                    <a href="#section-3">Advertencia</a>
+                    <a href="#section-3">De exitó</a>
                   </li>
                   <li
                     className={
                       currentElementIndexInViewport === 3 ? "active" : ""
                     }
                   >
-                    <a href="#section-4">Información</a>
+                    <a href="#section-4">De advertencia</a>
                   </li>
                   <li
                     className={
                       currentElementIndexInViewport === 4 ? "active" : ""
                     }
                   >
-                    <a href="#section-5">Error</a>
+                    <a href="#section-5">De peligro</a>
                   </li>
                   <li
                     className={
@@ -93,7 +93,39 @@ const SwitchDocs: React.FC = () => {
 
                   <section id="section-2" ref={section2Ref}>
                     <HeadingTemplate>
-                      <h2 className="mb-4">Exito</h2>
+                      <h2 className="mb-4">Información</h2>
+                    </HeadingTemplate>
+
+                    <div className="container p-5 bg-light">
+                      <div className="status status-info">
+                        <h2 className="status-title">
+                          Esto es un título de un mensaje de información
+                        </h2>
+                        <p className="status-text">
+                          Este es un párrafo que brinda información necesaria
+                          con la finalidad de guiar y ayudar a las personas
+                          usuarias a finalizar un proceso o iniciar uno nuevo.
+                        </p>
+                        <p className="status-text">
+                          Este es un párrafo que brinda información necesaria
+                          con la finalidad de guiar y ayudar a las personas
+                          usuarias a finalizar un proceso o iniciar uno nuevo.
+                        </p>
+                        <button type="button" className="btn btn-secondary">
+                          Botón
+                        </button>
+                      </div>
+                    </div>
+
+                    <br />
+                    <CodeCopy code={SMType1} />
+                  </section>
+
+                  <Divisor />
+
+                  <section id="section-3" ref={section3Ref}>
+                    <HeadingTemplate>
+                      <h2 className="mb-4">Éxito</h2>
                     </HeadingTemplate>
 
                     <div className="container p-5 bg-light">
@@ -109,8 +141,7 @@ const SwitchDocs: React.FC = () => {
                         <ul className="status-list">
                           <li>
                             Éste es un ítem dentro de una lista que puede
-                            contener un {""}
-                            <a href="#">enlace</a>.
+                            contener un <a href="#">enlace</a>.
                           </li>
                           <li>
                             Los ítems pueden contener o no enlaces. Este es un
@@ -118,60 +149,9 @@ const SwitchDocs: React.FC = () => {
                           </li>
                           <li>Éste es otro ítem dentro de una lista.</li>
                         </ul>
-                        <div className="card card-block">
-                          <div className="card-body">
-                            <button className="btn btn-lg btn-primary btn-block">
-                              Iniciar trámite
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <br />
-                    <CodeCopy code={SMType1} />
-                  </section>
-
-                  <Divisor />
-
-                  <section id="section-3" ref={section3Ref}>
-                    <HeadingTemplate>
-                      <h2 className="mb-4">Advertencia</h2>
-                    </HeadingTemplate>
-
-                    <div className="container p-5 bg-light">
-                      <div className="storybook__container-status">
-                        <div className="status status-primary">
-                          <h2 className="status-title">
-                            Esto es un título de un mensaje de advertencia
-                          </h2>
-                          <p className="status-text">
-                            Esto es un párrafo que advierte y sirve para
-                            indicarle al usuario que preste atención a
-                            determinada información o acción que debe realizar.
-                          </p>
-                          <ul className="status-list">
-                            <li>
-                              Contar con Clave Ciudad de
-                              <a href="#">AGIP</a>
-                            </li>
-                            <li>
-                              Cargar en el Sistema de Tramitación a Distancia
-                              (TAD) la siguiente documentación obligatoria:
-                            </li>
-                            <li>
-                              Anexo II Formulario de Presentación de Programa de
-                              Capacitación
-                            </li>
-                          </ul>
-                          <div className="card card-block">
-                            <div className="card-body">
-                              <button className="btn btn-lg btn-primary btn-block">
-                                Iniciar trámite
-                              </button>
-                            </div>
-                          </div>
-                        </div>
+                        <button type="button" className="btn btn-secondary">
+                          Botón
+                        </button>
                       </div>
                     </div>
 
@@ -183,33 +163,42 @@ const SwitchDocs: React.FC = () => {
 
                   <section id="section-4" ref={section4Ref}>
                     <HeadingTemplate>
-                      <h2 className="mb-4">Información</h2>
+                      <h2 className="mb-4">Advertencia</h2>
                     </HeadingTemplate>
 
                     <div className="container p-5 bg-light">
-                      <div className="storybook__container-status">
-                        <div className="status status-info">
-                          <h2 className="status-title">
-                            Esto es un título de un mensaje de información
-                          </h2>
-                          <p className="status-text">
-                            Este es un párrafo que brinda información necesaria
-                            con la finalidad de guiar y ayudar a las personas
-                            usuarias a finalizar un proceso o iniciar uno nuevo.
-                          </p>
-                          <p className="status-text">
-                            Este es un párrafo que brinda información necesaria
-                            con la finalidad de guiar y ayudar a las personas
-                            usuarias a finalizar un proceso o iniciar uno nuevo.
-                          </p>
-                          <div className="card card-block">
-                            <div className="card-body">
-                              <button className="btn btn-lg btn-primary btn-block">
-                                Iniciar trámite
-                              </button>
-                            </div>
-                          </div>
-                        </div>
+                      <div className="status status-warning">
+                        <h2 className="status-title">
+                          Esto es un título de un mensaje de advertencia
+                        </h2>
+                        <p className="status-text">
+                          Esto es un párrafo que advierte y sirve para indicarle
+                          al usuario que preste atención a determinada
+                          información o acción que debe realizar.
+                        </p>
+                        <ul className="status-list">
+                          <li>
+                            Contar con Clave Ciudad de
+                            <a href="#">AGIP</a>
+                          </li>
+                          <li>
+                            Cargar en el Sistema de Tramitación a Distancia
+                            (TAD) la siguiente documentación obligatoria:
+                          </li>
+                          <li>
+                            Anexo II Formulario de Presentación de Programa de
+                            Capacitación
+                          </li>
+                        </ul>
+                        <button type="button" className="btn btn-secondary">
+                          Botón
+                        </button>
+                        <button
+                          type="button"
+                          className="btn btn-outline-secondary"
+                        >
+                          Botón
+                        </button>
                       </div>
                     </div>
 
@@ -225,38 +214,38 @@ const SwitchDocs: React.FC = () => {
                     </HeadingTemplate>
 
                     <div className="container p-5 bg-light">
-                      <div className="storybook__container-status">
-                        <div className="status status-danger">
-                          <h2 className="status-title">
-                            Esto es un título de un mensaje de peligro
-                          </h2>
-                          <p className="status-text">
-                            Este párrafo sirve para comunicar que algo salió mal
-                            y explica cómo puede ser solucionado. Muestra
-                            errores sobre algo que se realizó.
-                          </p>
-                          <ul className="status-list">
-                            <li>
-                              Contar con Clave Ciudad de
-                              <a href="#">AGIP</a>
-                            </li>
-                            <li>
-                              Cargar en el Sistema de Tramitación a Distancia
-                              (TAD) la siguiente documentación obligatoria:
-                            </li>
-                            <li>
-                              Anexo II Formulario de Presentación de Programa de
-                              Capacitación
-                            </li>
-                          </ul>
-                          <div className="card card-block">
-                            <div className="card-body">
-                              <button className="btn btn-lg btn-primary btn-block">
-                                Iniciar trámite
-                              </button>
-                            </div>
-                          </div>
-                        </div>
+                      <div className="status status-danger">
+                        <h2 className="status-title">
+                          Esto es un título de un mensaje de peligro
+                        </h2>
+                        <p className="status-text">
+                          Este párrafo sirve para comunicar que algo salió mal y
+                          explica cómo puede ser solucionado. Muestra errores
+                          sobre algo que se realizó.
+                        </p>
+                        <ul className="status-list">
+                          <li>
+                            Contar con Clave Ciudad de
+                            <a href="#">AGIP</a>
+                          </li>
+                          <li>
+                            Cargar en el Sistema de Tramitación a Distancia
+                            (TAD) la siguiente documentación obligatoria:
+                          </li>
+                          <li>
+                            Anexo II Formulario de Presentación de Programa de
+                            Capacitación
+                          </li>
+                        </ul>
+                        <button type="button" className="btn btn-secondary">
+                          Botón
+                        </button>
+                        <button
+                          type="button"
+                          className="btn btn-outline-secondary"
+                        >
+                          Botón
+                        </button>
                       </div>
                     </div>
 
@@ -272,25 +261,19 @@ const SwitchDocs: React.FC = () => {
                     </HeadingTemplate>
 
                     <div className="container p-5 bg-light">
-                      <div className="storybook__container-status-institutional">
-                        <div className="status status-institutional">
-                          <h2 className="status-title">
-                            Este es un mensaje institucional del Gobierno de la
-                            Ciudad de Buenos Aires
-                          </h2>
-                          <p className="status-text">
-                            En el cuerpo de este componente pueden ir enlaces o
-                            botones: {""}
-                            <a href="#">https://ejemplo.buenosaires.gob.ar</a>
-                          </p>
-                          <div className="card card-block">
-                            <div className="card-body">
-                              <button className="btn btn-lg btn-primary btn-block">
-                                Iniciar trámite
-                              </button>
-                            </div>
-                          </div>
-                        </div>
+                      <div className="status status-institutional">
+                        <h2 className="status-title">
+                          Este es un mensaje institucional del Gobierno de la
+                          Ciudad de Buenos Aires
+                        </h2>
+                        <p className="status-text">
+                          En el cuerpo de este componente pueden ir enlaces o
+                          botones:
+                          <a href="#">https://ejemplo.buenosaires.gob.ar</a>
+                        </p>
+                        <button type="button" className="btn btn-outline-link">
+                          Ir al sitio web
+                        </button>
                       </div>
                     </div>
 

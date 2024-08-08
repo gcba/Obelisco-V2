@@ -104,16 +104,16 @@ const AccessDocs: React.FC = () => {
 
                     <div className="list-group">
                       <a href="" className="list-group-item item-sm">
-                        Acceso
+                        <span className="access-title">Acceso</span>
                       </a>
                       <a href="" className="list-group-item item-sm active">
-                        Acceso
+                        <span className="access-title">Acceso</span>
                       </a>
                       <a href="" className="list-group-item item-sm hover">
-                        Acceso
+                        <span className="access-title">Acceso</span>
                       </a>
                       <a href="" className="list-group-item item-sm focus">
-                        Acceso
+                        <span className="access-title">Acceso</span>
                       </a>
                     </div>
                   </section>

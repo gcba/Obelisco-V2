@@ -12044,7 +12044,7 @@ h6 {
   font-weight: 400;
 }
 
-.text-sm, a.list-group-item .access-content .access-text, small,
+.text-sm, small,
 .small {
   font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.875rem;
@@ -12775,11 +12775,12 @@ a.list-group-item .access-content {
 }
 a.list-group-item .access-content .access-text {
   font-weight: 400;
-  margin: 0.125rem 0 0;
-  color: #505E70;
+  font-size: 13px;
+  margin: 0;
+  color: #425266;
 }
 a.list-group-item:visited {
-  color: #101E37;
+  color: #38485c;
 }
 a.list-group-item:first-child {
   border-radius: 8px;
@@ -12792,7 +12793,7 @@ a.list-group-item:last-child:is(.card-item) {
   border-radius: 0 0 8px 8px;
 }
 a.list-group-item:hover, a.list-group-item.hover {
-  box-shadow: 0 0 0 2px #007bc7;
+  box-shadow: 0 0 0 2px #274986;
   color: #007bc7;
   text-decoration: none;
   backface-visibility: visible;
@@ -12847,27 +12848,26 @@ a.list-group-item:active, a.list-group-item.active {
   box-shadow: 0 0 0 4px #274986;
   outline: 0.25rem solid transparent;
   outline-offset: -2px;
-  background-color: #FFFFFF;
-  color: #007bc7;
+  background-color: #274986;
+  color: white;
 }
 a.list-group-item:active .access-title, a.list-group-item.active .access-title {
   text-decoration-color: transparent;
-}
-a.list-group-item:active:not(:focus), a.list-group-item.active:not(:focus) {
-  color: #007bc7;
 }
 a.list-group-item:active.list-group-item-logout, a.list-group-item.active.list-group-item-logout {
   box-shadow: 0 0 0 2px #CC3333;
 }
 a.list-group-item:active:after, a.list-group-item.active:after {
+  fill: white;
   content: "";
   height: 1.5rem;
   width: 1.5rem;
   min-width: 1.5rem;
-  background: transparent url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><g clip-path="url(%23clip0_1497_853)"><path d="M9.83547 15.88L13.7155 12L9.83547 8.11998C9.44547 7.72998 9.44547 7.09998 9.83547 6.70998C10.2255 6.31998 10.8555 6.31998 11.2455 6.70998L15.8355 11.3C16.2255 11.69 16.2255 12.32 15.8355 12.71L11.2455 17.3C10.8555 17.69 10.2255 17.69 9.83547 17.3C9.45547 16.91 9.44547 16.27 9.83547 15.88Z" fill="%23274986"/></g><defs><clipPath id="clip0_1497_853"><rect width="24" height="24" fill="white" transform="translate(0.54541)"/></clipPath></defs></svg>') no-repeat center center;
+  background: transparent url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' style='fill:white;'><path d='M9.29 6.71c-.39.39-.39 1.02 0 1.41L13.17 12l-3.88 3.88c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z'></path></svg>") no-repeat center center;
 }
-a.list-group-item:active:not(:focus), a.list-group-item.active:not(:focus) {
-  color: #007bc7;
+a.list-group-item:active .access-text, a.list-group-item.active .access-text {
+  font-size: 13px;
+  color: white;
 }
 a.list-group-item:after {
   float: right;
@@ -12880,7 +12880,6 @@ a.list-group-item:after {
 }
 a.list-group-item.item-sm {
   padding: 0.75rem 1.5rem;
-  padding: 0.5rem 1rem;
 }
 a.list-group-item.list-group-item-logout {
   box-shadow: 0 0 0 2px #CC3333;
@@ -12956,7 +12955,7 @@ a.list-group-item.list-group-item-logout.logout-sm {
   box-shadow: none;
 }
 .group-access .card-access .card-access-body:not(.p-list):has(~ .container-access) ~ .card-item:hover {
-  box-shadow: 0 0 0 2px #007bc7;
+  box-shadow: 0 0 0 2px #274986;
 }
 .group-access .card-access .card-access-body:not(.p-list):has(~ .container-access) ~ .card-item:focus {
   box-shadow: 0 0 0 4px #274986;
@@ -13010,7 +13009,7 @@ a.list-group-item.list-group-item-logout.logout-sm {
   box-shadow: 0 0 0 4px #274986;
 }
 .group-access .card-access .container-access .access-option .item-sm:hover, .group-access .card-access .container-access .access-option .item-sm.hover {
-  box-shadow: 0 0 0 2px #007bc7;
+  box-shadow: 0 0 0 2px #274986;
 }
 .group-access .card-access .container-access .access-option .item-sm:focus, .group-access .card-access .container-access .access-option .item-sm.focus {
   box-shadow: 0 0 0 4px #274986;

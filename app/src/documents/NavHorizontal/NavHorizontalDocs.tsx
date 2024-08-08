@@ -7,7 +7,7 @@ import BoxTemplate from '@/components/Template/Box';
 import HeadingTemplate from '@/components/Template/HeadingTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 import Divisor from '@/components/Template/Divisor';
-import { EGcodeSimpleNavHorizontal, EGcodeWithIconHorizontal, EGcodeSizesHorizontal } from './code-views';
+import { EGcodeSimpleNavHorizontal, EGcodeWithIconHorizontal, EGcodeSizesHorizontal, EGcodeWithBorderHorizontal } from './code-views';
 
 const NavHorizontalDocs: React.FC = () => {
 
@@ -98,7 +98,7 @@ const NavHorizontalDocs: React.FC = () => {
                           <li className="nav-item">
                             <a className="nav-link" href="#">
                               <div className="nav-icon">
-                                <i className="bx bxs-user-circle"></i>
+                                <i className="bx bxs-user-circle o-icon"></i>
                                 <span>Link</span>
                               </div>
                             </a>
@@ -106,7 +106,7 @@ const NavHorizontalDocs: React.FC = () => {
                           <li className="nav-item">
                             <a className="nav-link active" href="#">
                               <div className="nav-icon">
-                                <i className="bx bxs-user-circle"></i>
+                                <i className="bx bxs-user-circle o-icon"></i>
                                 <span>Activo</span>
                               </div>
                             </a>
@@ -114,7 +114,7 @@ const NavHorizontalDocs: React.FC = () => {
                           <li className="nav-item">
                             <a className="nav-link" href="#">
                               <div className="nav-icon">
-                                <i className="bx bxs-user-circle"></i>
+                                <i className="bx bxs-user-circle o-icon"></i>
                                 <span>Link</span>
                               </div>
                             </a>
@@ -122,7 +122,7 @@ const NavHorizontalDocs: React.FC = () => {
                           <li className="nav-item">
                             <a className="nav-link disabled" href="#" aria-disabled="true" tabIndex={-1}>
                               <div className="nav-icon">
-                                <i className="bx bxs-user-circle"></i>
+                                <i className="bx bxs-user-circle o-icon"></i>
                                 <span>Deshabilitado</span>
                               </div>
                             </a>
@@ -136,7 +136,7 @@ const NavHorizontalDocs: React.FC = () => {
                             <a className="nav-link" href="#">
                               <div className="nav-icon">
                                 <span>Link</span>
-                                <i className="bx bxs-user-circle"></i>
+                                <i className="bx bxs-user-circle o-icon"></i>
                               </div>
                             </a>
                           </li>
@@ -144,7 +144,7 @@ const NavHorizontalDocs: React.FC = () => {
                             <a className="nav-link active" href="#">
                               <div className="nav-icon">
                                 <span>Activo</span>
-                                <i className="bx bxs-user-circle"></i>
+                                <i className="bx bxs-user-circle o-icon"></i>
                               </div>
                             </a>
                           </li>
@@ -152,7 +152,7 @@ const NavHorizontalDocs: React.FC = () => {
                             <a className="nav-link" href="#">
                               <div className="nav-icon">
                                 <span>Link</span>
-                                <i className="bx bxs-user-circle"></i>
+                                <i className="bx bxs-user-circle o-icon"></i>
                               </div>
                             </a>
                           </li>
@@ -160,7 +160,7 @@ const NavHorizontalDocs: React.FC = () => {
                             <a className="nav-link disabled" href="#" aria-disabled="true" tabIndex={-1}>
                               <div className="nav-icon">
                                 <span>Deshabilitado</span>
-                                <i className="bx bxs-user-circle"></i>
+                                <i className="bx bxs-user-circle o-icon"></i>
                               </div>
                             </a>
                           </li>
@@ -212,7 +212,7 @@ const NavHorizontalDocs: React.FC = () => {
                           <li className="nav-item">
                             <a className="nav-link border-link" href="#">
                               <div className="nav-icon">
-                                <i className="bx bxs-user-circle"></i>
+                                <i className="bx bxs-user-circle o-icon"></i>
                                 <span>Link</span>
                               </div>
                             </a>
@@ -220,7 +220,7 @@ const NavHorizontalDocs: React.FC = () => {
                           <li className="nav-item">
                             <a className="nav-link border-link active" href="#">
                               <div className="nav-icon">
-                                <i className="bx bxs-user-circle"></i>
+                                <i className="bx bxs-user-circle o-icon"></i>
                                 <span>Activo</span>
                               </div>
                             </a>
@@ -228,7 +228,7 @@ const NavHorizontalDocs: React.FC = () => {
                           <li className="nav-item">
                             <a className="nav-link border-link" href="#">
                               <div className="nav-icon">
-                                <i className="bx bxs-user-circle"></i>
+                                <i className="bx bxs-user-circle o-icon"></i>
                                 <span>Link</span>
                               </div>
                             </a>
@@ -241,7 +241,7 @@ const NavHorizontalDocs: React.FC = () => {
                               tabIndex={-1}
                             >
                               <div className="nav-icon">
-                                <i className="bx bxs-user-circle"></i>
+                                <i className="bx bxs-user-circle o-icon"></i>
                                 <span>Deshabilitado</span>
                               </div>
                             </a>
@@ -250,7 +250,7 @@ const NavHorizontalDocs: React.FC = () => {
                       </nav>
                     </div>
 
-                    <CodeCopy code={EGcodeSizesHorizontal} />
+                    <CodeCopy code={EGcodeWithBorderHorizontal} />
                   </section>
 
                   <br />

@@ -30,6 +30,7 @@ export const componentsPages = [
   { text: "Tooltip", url: "/components/tooltip", id: 8 },
   { text: "Modal", url: "/components/modal", id: 9 },
   { text: "Mensaje de estado", url: "/components/status-message", id: 10 },
+  { text: "Desplagable de Navegación", url: "/components/dropdown-nav", id: 11 },
 ];
 
 const gettingPages = [

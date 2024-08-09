@@ -12065,7 +12065,7 @@ h6 {
   text-decoration-thickness: 1px;
 }
 
-.underline-2, a.list-group-item:active .access-title, a.list-group-item.active .access-title, a.list-group-item:hover .access-title, a.list-group-item.hover .access-title {
+.underline-2, a.list-group-item:hover .access-title, a.list-group-item.hover .access-title {
   text-decoration: underline;
 }
 
@@ -12729,19 +12729,58 @@ a.link-white:focus {
 /* === Custom variables and mixins === */
 /* === Bootstrap Import === */
 /* === Custom styles === */
-.access-deck .list-group-item {
-  margin-left: 0.938rem;
-  margin-right: 0.938rem;
+/* Inicio - 4 columnas */
+@media (min-width: 1601px) {
+  .access-deck.max-cards-3 .list-group-item {
+    flex: 0 0 calc(33.33% - 15px); /* 33.33% para 3 columnas, ajustado por margen */
+    max-width: calc(33.33% - 15px);
+  }
 }
-
-.access-deck .list-group-item {
-  margin-left: 0;
-  margin-right: 0;
+@media (max-width: 1600px) {
+  .access-deck.max-cards-3 .list-group-item {
+    flex: 0 0 calc(33.33% - 15px); /* 3 columnas */
+    max-width: calc(33.33% - 15px);
+  }
 }
-.access-deck .list-group-item:nth-of-type(2) {
-  margin-top: 30px;
+@media (max-width: 1320px) {
+  .access-deck.max-cards-3 .list-group-item {
+    flex: 0 0 calc(50% - 15px); /* 2 columnas */
+    max-width: calc(50% - 15px);
+  }
 }
-
+@media (max-width: 768px) {
+  .access-deck.max-cards-3 .list-group-item {
+    flex: 0 0 calc(100% - 15px); /* 1 columna */
+    max-width: calc(100% - 15px);
+  }
+}
+/* Fin - 4 columnas */
+/* Inicio - 3 columnas */
+@media (min-width: 1601px) {
+  .access-deck.max-cards-3 .list-group-item {
+    flex: 0 0 calc(33.33% - 15px); /* 33.33% para 3 columnas, ajustado por margen */
+    max-width: calc(33.33% - 15px);
+  }
+}
+@media (max-width: 1600px) {
+  .access-deck.max-cards-3 .list-group-item {
+    flex: 0 0 calc(33.33% - 15px); /* 3 columnas */
+    max-width: calc(33.33% - 15px);
+  }
+}
+@media (max-width: 1320px) {
+  .access-deck.max-cards-3 .list-group-item {
+    flex: 0 0 calc(50% - 15px); /* 2 columnas */
+    max-width: calc(50% - 15px);
+  }
+}
+@media (max-width: 768px) {
+  .access-deck.max-cards-3 .list-group-item {
+    flex: 0 0 calc(100% - 15px); /* 1 columna */
+    max-width: calc(100% - 15px);
+  }
+}
+/* Fin - 3 columnas */
 a.list-group-item {
   text-decoration: none;
   color: #101E37;
@@ -12754,6 +12793,7 @@ a.list-group-item {
   backface-visibility: hidden;
   width: 340px;
   height: auto;
+  margin: 0px 15px;
   padding: 1rem;
 }
 a.list-group-item i,

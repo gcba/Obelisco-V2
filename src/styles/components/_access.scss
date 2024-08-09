@@ -54,32 +54,108 @@ $list-group-icon-arrow-active: url("data:image/svg+xml;utf8,<svg xmlns='http://w
 /* === Custom styles === */
 
 //Se crean clases que se extienden de card para comportamiento card-deck en accesos
-.access-deck {
-  @extend .card-deck !optional; // chequear el optional
+// .access-deck .list-group-item {
 
-  .list-group-item {
-    margin-left: 0.938rem;
-    margin-right: 0.938rem;
+// }
+
+// .access-deck {
+//   // @extend .card-deck !optional; // chequear el optional
+
+//   .list-group-item {
+
+//   }
+// }
+
+// .access-deck.access-column {
+//   // @extend .card-deck !optional; // chequear el optional
+//   // @extend .card-column !optional; // chequear el optional
+// }
+
+// @include media-breakpoint-down(xs) {
+//   .access-deck {
+//     .list-group-item {
+//       margin-left: 0;
+//       margin-right: 0;
+
+//       &:nth-of-type(2) {
+//         margin-top: 30px;
+//       }
+//     }
+//   }
+// }
+
+/* Inicio - 4 columnas */
+// @media (min-width: 1601px) {
+//   .access-deck.max-cards-4 .list-group-item {
+//     flex: 0 0 calc(25% - 15px); /* 25% para 4 columnas, ajustado por margen */
+//     max-width: calc(25% - 15px);
+//   }
+// }
+
+// @media (min-width: 993px) {
+//   .access-deck.max-cards-4 .list-group-item {
+//     flex: 0 0 calc(25% - 15px); /* 4 columnas */
+//     max-width: calc(25% - 15px);
+//   }
+// }
+@media (min-width: 1601px) {
+  .access-deck.max-cards-3 .list-group-item {
+    flex: 0 0 calc(33.33% - 15px); /* 33.33% para 3 columnas, ajustado por margen */
+    max-width: calc(33.33% - 15px);
   }
 }
 
-.access-deck.access-column {
-  @extend .card-deck !optional; // chequear el optional
-  @extend .card-column !optional; // chequear el optional
-}
-
-@include media-breakpoint-down(xs) {
-  .access-deck {
-    .list-group-item {
-      margin-left: 0;
-      margin-right: 0;
-
-      &:nth-of-type(2) {
-        margin-top: 30px;
-      }
-    }
+@media (max-width: 1600px) {
+  .access-deck.max-cards-3 .list-group-item {
+    flex: 0 0 calc(33.33% - 15px); /* 3 columnas */
+    max-width: calc(33.33% - 15px);
   }
 }
+
+@media (max-width: 1320px) {
+  .access-deck.max-cards-3 .list-group-item {
+    flex: 0 0 calc(50% - 15px); /* 2 columnas */
+    max-width: calc(50% - 15px);
+  }
+}
+
+@media (max-width: 768px) {
+  .access-deck.max-cards-3 .list-group-item {
+    flex: 0 0 calc(100% - 15px); /* 1 columna */
+    max-width: calc(100% - 15px);
+  }
+}
+/* Fin - 4 columnas */
+
+/* Inicio - 3 columnas */
+@media (min-width: 1601px) {
+  .access-deck.max-cards-3 .list-group-item {
+    flex: 0 0 calc(33.33% - 15px); /* 33.33% para 3 columnas, ajustado por margen */
+    max-width: calc(33.33% - 15px);
+  }
+}
+
+@media (max-width: 1600px) {
+  .access-deck.max-cards-3 .list-group-item {
+    flex: 0 0 calc(33.33% - 15px); /* 3 columnas */
+    max-width: calc(33.33% - 15px);
+  }
+}
+
+@media (max-width: 1320px) {
+  .access-deck.max-cards-3 .list-group-item {
+    flex: 0 0 calc(50% - 15px); /* 2 columnas */
+    max-width: calc(50% - 15px);
+  }
+}
+
+@media (max-width: 768px) {
+  .access-deck.max-cards-3 .list-group-item {
+    flex: 0 0 calc(100% - 15px); /* 1 columna */
+    max-width: calc(100% - 15px);
+  }
+}
+/* Fin - 3 columnas */
 
 a.list-group-item {
   text-decoration: $no-text-decoration;
@@ -93,6 +169,7 @@ a.list-group-item {
   backface-visibility: hidden;
   width: 340px; // antes era 100% pero nose como toma el ancho fijo
   height: auto;
+  margin: 0px 15px;
 
   @include media-breakpoint-down(xs) {
     padding: $list-group-padding-mobile;
@@ -174,7 +251,7 @@ a.list-group-item {
 
   &:focus,
   &.focus {
-    box-shadow: $box-shadow-access-focus; 
+    box-shadow: $box-shadow-access-focus;
     outline: 0.25rem solid transparent;
     background: $white;
 
@@ -183,7 +260,7 @@ a.list-group-item {
 
       &.list-group-item-logout {
         color: $danger;
-        box-shadow: $box-shadow-access-focus; 
+        box-shadow: $box-shadow-access-focus;
 
         &:after {
           @include access-icon($list-group-icon-logout);
@@ -211,10 +288,10 @@ a.list-group-item {
     outline: 0.25rem solid transparent;
     outline-offset: -2px;
     background-color: #274986; // antes $white
-    color: white; // $list-group-color-hover
+    color: white;
 
     .access-title {
-      @extend .underline-2;
+      // @extend .underline-2;
       text-decoration-color: transparent;
     }
 
@@ -230,11 +307,10 @@ a.list-group-item {
       fill: white;
       @include access-icon($list-group-icon-arrow-active); // icono blanco
     }
-    
 
     .access-text {
       font-size: 13px;
-        color: white;
+      color: white;
     }
   }
 
@@ -338,7 +414,7 @@ a.list-group-item {
             }
 
             &:focus {
-              box-shadow: $box-shadow-access-focus; 
+              box-shadow: $box-shadow-access-focus;
             }
           }
         }
@@ -407,7 +483,7 @@ a.list-group-item {
 
           &:active,
           &.active {
-            box-shadow:  $box-shadow-access-focus; 
+            box-shadow: $box-shadow-access-focus;
           }
 
           &:hover,
@@ -417,7 +493,7 @@ a.list-group-item {
 
           &:focus,
           &.focus {
-            box-shadow:$box-shadow-access-focus; 
+            box-shadow: $box-shadow-access-focus;
           }
         }
 

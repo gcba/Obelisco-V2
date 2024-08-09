@@ -61,9 +61,9 @@ const AccessDocs: React.FC = () => {
           ]}
         >
           {({ currentElementIndexInViewport }) => (
-            <div className="box-scrollspy">
-              <div className="nav-scrollspy d-none d-lg-block">
-                <ul className="scrollspy" data-cy="nav-wrapper">
+            <div className="box-scrollspy ">
+              <div className="nav-scrollspy  d-lg-block">
+                <ul className="scrollspy " data-cy="nav-wrapper">
                   <p className="font-weight-bold mb-1"> On this page</p>
                   <li
                     className={
@@ -306,41 +306,22 @@ const AccessDocs: React.FC = () => {
                     </HeadingTemplate>
 
                     <div className="container">
-                      <div className="row">
-                        <div className="col-12">
-                          <div className="access-deck d-flex flex-wrap gap-3">
-                            <a
-                              href="#"
-                              className="list-group-item list-group-item-action item-sm"
-                            >
-                              <span className="access-title">Acceso</span>
-                            </a>
-                            <a
-                              href="#"
-                              className="list-group-item list-group-item-action item-sm"
-                            >
-                              <span className="access-title">Acceso</span>
-                            </a>
-                            <a
-                              href="#"
-                              className="list-group-item list-group-item-action item-sm"
-                            >
-                              <span className="access-title">Acceso</span>
-                            </a>
-                            <a
-                              href="#"
-                              className="list-group-item list-group-item-action item-sm"
-                            >
-                              <span className="access-title">Acceso</span>
-                            </a>
-                            <a
-                              href="#"
-                              className="list-group-item list-group-item-action item-sm"
-                            >
-                              <span className="access-title">Acceso</span>
-                            </a>
-                          </div>
-                        </div>
+                      <div className="access-deck max-cards-4 row">
+                        <a href="#" className="list-group-item item-sm col">
+                          <span className="access-title">Acceso</span>
+                        </a>
+                        <a href="#" className="list-group-item item-sm col">
+                          <span className="access-title">Acceso</span>
+                        </a>
+                        <a href="#" className="list-group-item item-sm col">
+                          <span className="access-title">Acceso</span>
+                        </a>
+                        <a href="#" className="list-group-item item-sm col">
+                          <span className="access-title">Acceso</span>
+                        </a>
+                        <a href="#" className="list-group-item item-sm col">
+                          <span className="access-title">Acceso</span>
+                        </a>
                       </div>
                     </div>
 
@@ -357,24 +338,25 @@ const AccessDocs: React.FC = () => {
                     </HeadingTemplate>
 
                     <div className="container">
-                      <div className="access-deck max-cards-3">
-                        <a href="#" className="list-group-item item-sm">
+                      <div className="access-deck max-cards-3 row">
+                        <a href="#" className="list-group-item item-sm col">
                           <span className="access-title">Acceso</span>
                         </a>
-                        <a href="#" className="list-group-item item-sm">
+                        <a href="#" className="list-group-item item-sm col">
                           <span className="access-title">Acceso</span>
                         </a>
-                        <a href="#" className="list-group-item item-sm">
+                        <a href="#" className="list-group-item item-sm col">
                           <span className="access-title">Acceso</span>
                         </a>
-                        <a href="#" className="list-group-item item-sm">
+                        <a href="#" className="list-group-item item-sm col">
                           <span className="access-title">Acceso</span>
                         </a>
-                        <a href="#" className="list-group-item item-sm">
+                        <a href="#" className="list-group-item item-sm col">
                           <span className="access-title">Acceso</span>
                         </a>
                       </div>
                     </div>
+
                     <CodeCopy code={EGcodeListWidthComplete3ColumnsAccess} />
                   </section>
 
@@ -447,24 +429,25 @@ const AccessDocs: React.FC = () => {
                     </HeadingTemplate>
 
                     <div className="container">
-                      <div className="access-deck access-column max-cards-4">
-                        <a href="#" className="list-group-item item-sm">
+                      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+                        <a href="#" className="col list-group-item item-sm">
                           <span className="access-title">Acceso</span>
                         </a>
-                        <a href="#" className="list-group-item item-sm">
+                        <a href="#" className="col list-group-item item-sm">
                           <span className="access-title">Acceso</span>
                         </a>
-                        <a href="#" className="list-group-item item-sm">
+                        <a href="#" className="col list-group-item item-sm">
                           <span className="access-title">Acceso</span>
                         </a>
-                        <a href="#" className="list-group-item item-sm">
+                        <a href="#" className="col list-group-item item-sm">
                           <span className="access-title">Acceso</span>
                         </a>
-                        <a href="#" className="list-group-item item-sm">
+                        <a href="#" className="col list-group-item item-sm">
                           <span className="access-title">Acceso</span>
                         </a>
                       </div>
                     </div>
+
                     <CodeCopy code={EGcodeListWidthByAccess4ColumnsAccess} />
                   </section>
 

@@ -758,7 +758,7 @@ progress {
 .container-lg,
 .container-md,
 .container-sm {
-  --bs-gutter-x: 1.5rem;
+  --bs-gutter-x: 2rem;
   --bs-gutter-y: 0;
   width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
@@ -801,8 +801,8 @@ progress {
   --bs-breakpoint-xxl: 1400px;
 }
 
-.row {
-  --bs-gutter-x: 1.5rem;
+.row, .max-items-1, .max-items-2, .max-items-3, .max-items-4 {
+  --bs-gutter-x: 2rem;
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
@@ -810,7 +810,7 @@ progress {
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
-.row > * {
+.row > *, .max-items-1 > *, .max-items-2 > *, .max-items-3 > *, .max-items-4 > * {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
@@ -828,7 +828,7 @@ progress {
   width: auto;
 }
 
-.row-cols-1 > * {
+.row-cols-1 > *, .max-items-1 > *, .max-items-2 > *, .max-items-3 > *, .max-items-4 > * {
   flex: 0 0 auto;
   width: 100%;
 }
@@ -1039,7 +1039,7 @@ progress {
     flex: 0 0 auto;
     width: 100%;
   }
-  .row-cols-sm-2 > * {
+  .row-cols-sm-2 > *, .max-items-2 > *, .max-items-3 > *, .max-items-4 > * {
     flex: 0 0 auto;
     width: 50%;
   }
@@ -1212,7 +1212,7 @@ progress {
     flex: 0 0 auto;
     width: 50%;
   }
-  .row-cols-md-3 > * {
+  .row-cols-md-3 > *, .max-items-3 > *, .max-items-4 > * {
     flex: 0 0 auto;
     width: 33.33333333%;
   }
@@ -1385,7 +1385,7 @@ progress {
     flex: 0 0 auto;
     width: 33.33333333%;
   }
-  .row-cols-lg-4 > * {
+  .row-cols-lg-4 > *, .max-items-4 > * {
     flex: 0 0 auto;
     width: 25%;
   }
@@ -4333,7 +4333,7 @@ textarea.form-control-lg {
   --bs-card-color: ;
   --bs-card-bg: var(--bs-body-bg);
   --bs-card-img-overlay-padding: 1rem;
-  --bs-card-group-margin: 0.75rem;
+  --bs-card-group-margin: 1rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -5339,7 +5339,7 @@ textarea.form-control-lg {
   --bs-toast-zindex: 1090;
   --bs-toast-padding-x: 0.75rem;
   --bs-toast-padding-y: 0.5rem;
-  --bs-toast-spacing: 1.5rem;
+  --bs-toast-spacing: 2rem;
   --bs-toast-max-width: 350px;
   --bs-toast-font-size: 0.875rem;
   --bs-toast-color: ;
@@ -11881,19 +11881,27 @@ textarea.form-control-lg {
 /* line-height Cuerpo */
 /* font-weight Cuerpo */
 /* === Body - variables de Bootstrap === */
-/* $grid-breakpoints: (
-  xs: 0,
-  sm: 592px,
-  md: 752px,
-  lg: 976px,
-  xl: 1120px
-); */
-/* $container-max-widths: (
-  sm: 560px,
-  md: 720px,
-  lg: 944px,
-  xl: 1088px
-); */
+.max-items-1, .max-items-2, .max-items-3, .max-items-4 {
+  row-gap: 2rem;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 712px;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  .row, .max-items-1, .max-items-2, .max-items-3, .max-items-4 {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+  }
+  .row > *, .max-items-1 > *, .max-items-2 > *, .max-items-3 > *, .max-items-4 > * {
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+}
 .responsive-scroll {
   padding: 0.5rem;
   border: none;
@@ -11982,19 +11990,19 @@ h6 {
   font-weight: 600;
 }
 
-@media (max-width: 751.98px) {
+@media (max-width: 767.98px) {
   .h1,
   h1 {
     font-size: 2.375rem;
   }
 }
-@media (max-width: 751.98px) {
+@media (max-width: 767.98px) {
   .h2,
   h2 {
     font-size: 2.125rem;
   }
 }
-@media (max-width: 751.98px) {
+@media (max-width: 767.98px) {
   .h3,
   h3 {
     font-size: 1.875rem;
@@ -12522,7 +12530,7 @@ blockquote .author {
   width: auto;
   min-width: 15.625rem;
 }
-@media (max-width: 751.98px) {
+@media (max-width: 767.98px) {
   .tabs-slider .nav.fixedWidth .nav-item > .nav-link {
     min-width: auto;
   }
@@ -12590,7 +12598,7 @@ blockquote .author {
   border-radius: 0;
 }
 
-@media (min-width: 752px) {
+@media (min-width: 768px) {
   .nav-mobile-trigger {
     display: none;
   }
@@ -12971,7 +12979,7 @@ a.link-white:focus {
   top: calc(50% - 8px);
 }
 
-@media (max-width: 751.98px) {
+@media (max-width: 767.98px) {
   [data-tooltip]:after {
     max-width: 10rem;
   }
@@ -13150,7 +13158,7 @@ a.link-white:focus {
 .modal .modal-content .modal-footer button.btn {
   margin: 0px;
 }
-@media (max-width: 591.98px) {
+@media (max-width: 575.98px) {
   .modal .modal-content {
     width: 328px;
     margin: auto;

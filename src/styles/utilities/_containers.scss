@@ -1,0 +1,36 @@
+.max-items-1 {
+  @extend .row;
+  row-gap: 2rem;
+  @extend .row-cols-1;
+}
+.max-items-2 {
+  @extend .max-items-1;
+  @extend .row-cols-sm-2;
+}
+.max-items-3 {
+  @extend .max-items-2;
+  @extend .row-cols-md-3;
+}
+.max-items-4 {
+  @extend .max-items-3;
+  @extend .row-cols-lg-4;
+}
+
+// Entre 768px y 991px el gap entre elementos es de 24px, por lo que se modifica el padding y margins, manteniendo el area diseñable en 688px
+@media (min-width: 768px) and (max-width: 991px) {
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 712px; // 688px + 24px
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  .row {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+  }
+  .row > * {
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+}

@@ -1,0 +1,11 @@
+.home {
+  min-width: 99vw;
+  background: #fafbff;
+
+  .box-home {
+    height: calc(100vh - 83px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

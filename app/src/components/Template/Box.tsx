@@ -1,13 +1,16 @@
 import React, { ReactNode } from "react";
-interface BoxData {
+
+interface BoxTemplateProps {
   children: ReactNode | ReactNode[];
+  className?: string;
 }
 
-const BoxTemplate = ({ children }: BoxData) => {
+const BoxTemplate = ({ children, className }: BoxTemplateProps) => {
   return (
-    <div className="py-3 py-md-5">
+    <div className={className}>
       {children}
     </div>
   );
 };
+
 export default BoxTemplate;

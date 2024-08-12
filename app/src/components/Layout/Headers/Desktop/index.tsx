@@ -15,7 +15,7 @@ export default function HeaderDesktop () {
   ];
 
   return (
-    <header className="navbar navbar-light navbar-expand-lg shadow-sm p-3 mb-5 bg-body rounded" role="banner">
+    <header className="navbar navbar-light navbar-expand-lg shadow-sm p-3 mb-0 bg-body rounded" role="banner">
       <Link href="#main" className="skip-to-main-content-link visually-hidden">
         Saltar al contenido principal
       </Link>

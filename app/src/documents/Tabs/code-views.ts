@@ -1,6 +1,6 @@
 export const EGcodeSimpleTabs =
   `
-  <nav class="tabs-slider" aria-label="Navegación por pestañas">
+  <nav class="tabs-box" aria-label="Navegación por pestañas">
     <ul class="nav nav-pills tabs" id="simple-myTab" role="tablist">
       <li class="nav-item" role="presentation">
         <button
@@ -100,7 +100,7 @@ export const EGcodeSimpleTabs =
 
 export const EGcodeSimpleTabsWithIcon =
   `
-  <nav class="tabs-slider" aria-label="Navegación por pestañas">
+  <nav class="tabs-box" aria-label="Navegación por pestañas">
     <ul class="nav nav-pills tabs" id="icon-myTab" role="tablist">
       <li class="nav-item" role="presentation">
         <button
@@ -115,7 +115,7 @@ export const EGcodeSimpleTabsWithIcon =
         >
           <div class="nav-icon">
             Pestaña 1
-            <span class="material-symbols-rounded">
+            <span class="material-symbols-rounded o-icon">
               home
             </span>
           </div>
@@ -134,7 +134,7 @@ export const EGcodeSimpleTabsWithIcon =
         >
           <div class="nav-icon">
             Pestaña 2
-            <span class="material-symbols-rounded">
+            <span class="material-symbols-rounded o-icon">
               home
             </span>
           </div>
@@ -154,7 +154,7 @@ export const EGcodeSimpleTabsWithIcon =
         >
           <div class="nav-icon">
             Pestaña 3
-            <span class="material-symbols-rounded">
+            <span class="material-symbols-rounded o-icon">
               home
             </span>
           </div>
@@ -173,7 +173,7 @@ export const EGcodeSimpleTabsWithIcon =
         >
           <div class="nav-icon">
             Pestaña 4
-            <span class="material-symbols-rounded">
+            <span class="material-symbols-rounded o-icon">
               home
             </span>
           </div>
@@ -218,8 +218,8 @@ export const EGcodeSimpleTabsWithIcon =
 `;
 
 export const EGcodeTabsWidth = `
-  <nav className="tabs-slider" aria-label="Navegación por pestañas">
-    <ul className="nav nav-pills tabs fixedWidth" id="icon-myTab" role="tablist">
+  <nav className="tabs-box" aria-label="Navegación por pestañas">
+    <ul className="nav nav-pills tabs fixed-width" id="icon-myTab" role="tablist">
       <li className="nav-item" role="presentation">
         <button
           className="nav-link active"
@@ -233,7 +233,7 @@ export const EGcodeTabsWidth = `
         >
           <div className="nav-icon">
             Pestaña 1
-            <span className="material-symbols-rounded">
+            <span className="material-symbols-rounded o-icon">
               home
             </span>
           </div>
@@ -252,7 +252,7 @@ export const EGcodeTabsWidth = `
         >
           <div className="nav-icon">
             Pestaña 2
-            <span className="material-symbols-rounded">
+            <span className="material-symbols-rounded o-icon">
               home
             </span>
           </div>
@@ -272,7 +272,7 @@ export const EGcodeTabsWidth = `
         >
           <div className="nav-icon">
             Pestaña 3
-            <span className="material-symbols-rounded">
+            <span className="material-symbols-rounded o-icon">
               home
             </span>
           </div>
@@ -291,7 +291,7 @@ export const EGcodeTabsWidth = `
         >
           <div className="nav-icon">
             Pestaña 4
-            <span className="material-symbols-rounded">
+            <span className="material-symbols-rounded o-icon">
               home
             </span>
           </div>
@@ -336,7 +336,7 @@ export const EGcodeTabsWidth = `
 `
 
 export const EGcodeTabsBg = `
-  <nav className="tabs-slider" aria-label="Navegación por pestañas">
+  <nav className="tabs-box" aria-label="Navegación por pestañas">
     <ul className="nav nav-pills tabs nav-box" id="icon-myTab" role="tablist">
       <li className="nav-item" role="presentation">
         <button
@@ -351,7 +351,7 @@ export const EGcodeTabsBg = `
         >
           <div className="nav-icon">
             Pestaña 1
-            <span className="material-symbols-rounded">
+            <span className="material-symbols-rounded o-icon">
               home
             </span>
           </div>
@@ -370,7 +370,7 @@ export const EGcodeTabsBg = `
         >
           <div className="nav-icon">
             Pestaña 2
-            <span className="material-symbols-rounded">
+            <span className="material-symbols-rounded o-icon">
               home
             </span>
           </div>
@@ -390,7 +390,7 @@ export const EGcodeTabsBg = `
         >
           <div className="nav-icon">
             Pestaña 3
-            <span className="material-symbols-rounded">
+            <span className="material-symbols-rounded o-icon">
               home
             </span>
           </div>
@@ -409,7 +409,7 @@ export const EGcodeTabsBg = `
         >
           <div className="nav-icon">
             Pestaña 4
-            <span className="material-symbols-rounded">
+            <span className="material-symbols-rounded o-icon">
               home
             </span>
           </div>

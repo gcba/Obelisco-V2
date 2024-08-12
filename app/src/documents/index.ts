@@ -1,4 +1,3 @@
-
 export * from "./Alert/AlertDocs";
 export * from "./Banner/BannerDocs";
 export * from "./Button/ButtonDocs";
@@ -12,3 +11,8 @@ export * from "./Typography/TypographyDocs";
 export * from "./Link/LinkDocs";
 export * from "./Card/CardDocs";
 export * from "./DropdownNav/DropdownNavDocs";
+export * from "./Modal/ModalDocs";
+export * from "./Switch/SwitchDocs";
+export * from "./Tooltip/TooltipDocs";
+export * from "./Badge/BadgeDocs";
+export * from "./StatusMessage/StatusMessageDocs";

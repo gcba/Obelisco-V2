@@ -16,6 +16,8 @@ import SwitchDocs from '@/documents/Switch/SwitchDocs';
 import TabsDocs from '@/documents/Tabs/TabsDocs';
 import TooltipDocs from '@/documents/Tooltip/TooltipDocs';
 import TypographyDocs from '@/documents/Typography/TypographyDocs';
+import DropdownNavDocs from '@/documents/DropdownNav/DropdownNavDocs';
+import GridDocs from '@/documents/Grid/GridDocs';
 
 // davis: se mapean las url con componentes
 const componentMap: { [key: string]: React.ReactNode } = {
@@ -36,6 +38,8 @@ const componentMap: { [key: string]: React.ReactNode } = {
   tabs: <TabsDocs />,
   tooltip: <TooltipDocs />,
   typography: <TypographyDocs />,
+  'dropdown-nav': <DropdownNavDocs />,
+  grid: <GridDocs />
 };
 
 export default function ComponentPage ({ params }: { params: { componentName: string } }) {

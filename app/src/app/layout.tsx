@@ -83,7 +83,7 @@ export default function RootLayout ({
                 children
               ) : (
                 <div className="row pt-5">
-                  <div className="col-3  ">
+                  <div className="col-3 d-none d-lg-block ">
                     {pathname.includes("/components") && (
                       <div className="nav-left">
                         <div className="nav-left-box-title">
@@ -97,7 +97,7 @@ export default function RootLayout ({
                     {pathname.includes("/getting-started") && (
                       <div className="nav-left">
                         <div className="nav-left-box-title">
-                          <h3 className="pl-2 ">Comenzando</h3>
+                          <p className="headline-lg fw-bold">Comenzando</p>
                         </div>
                         <hr />
                         <NavLayout items={gettingPages} />

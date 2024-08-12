@@ -47,7 +47,7 @@ export default function HeaderMobile () {
         size={isMobile ? 250 : 300}
       >
         <div className="px-4 pb-5">
-          <h3 className="navbar-sections-title">Secciones</h3>
+          <h3 className="headline-lg fw-bold">Secciones</h3>
           <hr className="my-4" />
           <nav>
             <ul className="nav d-block nav-pills">
@@ -78,7 +78,7 @@ export default function HeaderMobile () {
             </ul>
           </nav>
           <hr className="my-4" />
-          <h3 className="navbar-sections-title mt-4">Componentes</h3>
+          <h3 className="headline-lg fw-bold mt-4">Componentes</h3>
           <nav>
             <ul className="nav flex-column nav-pills pt-2">
               {/* <li className="nav-item" onClick={handleLinkClick}>

@@ -9,6 +9,7 @@ import NavLayout from "@/components/Layout/Navigation/nav";
 export const componentsPages = [
   { text: "Tipografía", url: "/components/typography", id: 0 },
   { text: "Colores", url: "/components/colors", id: 1 },
+  { text: "Grilla", url: "/components/grid", id: 1 },
   { text: "Enlace", url: "/components/link", id: 2 },
   { text: "Alertas", url: "/components/alert", id: 3 },
   {

@@ -30,6 +30,7 @@ export const componentsPages = [
   { text: "Tooltip", url: "/components/tooltip", id: 8 },
   { text: "Modal", url: "/components/modal", id: 9 },
   { text: "Mensaje de estado", url: "/components/status-message", id: 10 },
+  { text: "Etiquetas", url: "/components/badge", id: 11 },
 ];
 
 const gettingPages = [
@@ -37,7 +38,7 @@ const gettingPages = [
   { text: "Importaciones", url: "/getting-started/imports", id: 3 },
 ];
 
-export default function RootLayout ({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;

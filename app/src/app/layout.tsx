@@ -70,27 +70,36 @@ export default function RootLayout ({
 
         <div className="layout">
           <main>
-            <div className="box">
-              {pathname.includes("/components") && (
-                <div className="nav-left">
-                  <div className="nav-left-box-title">
-                    <h3 className="pl-2">Componentes</h3>
-                  </div>
-                  <hr />
-                  <NavLayout items={componentsPages} />
-                </div>
-              )}
-              {pathname.includes("/getting-started") && (
-                <div className="nav-left">
-                  <div className="nav-left-box-title">
-                    <h3 className="pl-2 ">Comenzando</h3>
-                  </div>
-                  <hr />
-                  <NavLayout items={gettingPages} />
-                </div>
-              )}
+            <div className="container">
+              <div className="row pt-5">
+                <div className="col-3  ">
 
-              <div className="">{children}</div>
+                  {pathname.includes("/components") && (
+                    <div className="nav-left">
+                      <div className="nav-left-box-title">
+                        <p className="headline-lg fw-bold">Componentes</p>
+                      </div>
+                      <hr />
+                      <NavLayout items={componentsPages} />
+                    </div>
+                  )}
+
+                  {pathname.includes("/getting-started") && (
+                    <div className="nav-left">
+                      <div className="nav-left-box-title">
+                        <h3 className="pl-2 ">Comenzando</h3>
+                      </div>
+                      <hr />
+                      <NavLayout items={gettingPages} />
+                    </div>
+                  )}
+                </div>
+
+                <div className="col-12 col-lg-9">
+                  {children}
+                </div>
+              </div>
+
             </div>
           </main>
         </div>

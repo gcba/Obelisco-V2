@@ -1,5 +1,5 @@
 $icon-check: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(56, 72, 92);transform: ;msFilter:;"><path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path></svg>');
-$icon-institutional: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="76" height="41" viewBox="0 0 76 41" fill="none"><path fill="rgb(255, 211, 5)" d="M75.2614 32.3779L60.6847 4.21161C59.4274 1.71131 56.8514 0 53.8611 0H53.8539C50.8672 0 48.2876 1.71131 47.0303 4.21161L36.7697 24.0375C35.624 21.9984 33.7974 20.3988 31.5925 19.5341C34.0532 17.7543 35.6564 14.8541 35.6564 11.5828C35.6564 7.78914 33.502 4.50704 30.3532 2.8786C27.579 1.41948 24.4122 0.594454 21.0545 0.594454H5.70676C2.55075 0.594454 0 3.1452 0 6.294V34.8566C0 38.0054 2.55075 40.5561 5.70676 40.5561H22.3046C25.5039 40.5561 28.5482 39.8932 31.3115 38.7115L32.3635 38.2036C32.4211 38.1747 32.4788 38.1459 32.5364 38.1171C33.5344 39.7708 35.3394 40.884 37.4182 40.884C39.7275 40.884 41.7162 39.515 42.6133 37.537C43.0601 36.4922 44.0688 35.7537 45.2577 35.696H62.4537C63.6462 35.7537 64.6513 36.4922 65.0981 37.537C65.9916 39.515 67.9839 40.884 70.2932 40.884C73.4456 40.884 75.9964 38.326 75.9964 35.1881C75.9964 34.1649 75.7334 33.2065 75.2578 32.3815"></path></svg>');
+$icon-institutional: url('data:image/svg+xml,<svg width="121" height="65" viewBox="0 0 121 65" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(%23clip0_695_7971)"><path d="M119.666 51.481L96.4894 6.69648C94.4902 2.72098 90.3944 0 85.6399 0H85.6284C80.8796 0 76.7781 2.72098 74.7788 6.69648L58.4644 38.2198C56.6428 34.9775 53.7385 32.4341 50.2327 31.0593C54.1452 28.2295 56.6943 23.6181 56.6943 18.4168C56.6943 12.3848 53.2688 7.16621 48.2621 4.57698C43.8513 2.25698 38.816 0.945184 33.4772 0.945184H9.07425C4.05619 0.945184 0.000488281 5.00088 0.000488281 10.0075V55.4221C0.000488281 60.4287 4.05619 64.4844 9.07425 64.4844H35.4649C40.5517 64.4844 45.3922 63.4304 49.7859 61.5515L51.4586 60.7438C51.5502 60.698 51.6419 60.6522 51.7335 60.6063C53.3203 63.2357 56.1902 65.0057 59.4955 65.0057C63.1674 65.0057 66.3295 62.8289 67.7558 59.6841C68.4662 58.0228 70.0701 56.8485 71.9605 56.7569H99.3021C101.198 56.8485 102.796 58.0228 103.507 59.6841C104.927 62.8289 108.095 65.0057 111.767 65.0057C116.779 65.0057 120.835 60.9386 120.835 55.9491C120.835 54.3223 120.417 52.7985 119.661 51.4867" fill="%23FFD305"/></g><defs><clipPath id="clip0_695_7971"><rect width="120.84" height="65" fill="white" transform="translate(0.000488281)"/></clipPath></defs></svg>');
 $inset: -0.15rem 0 0 -0.2rem;
 $inset-institutional: 0.15rem 0 0 0;
 $padding-icon-institutional: 4.05rem;
@@ -9,26 +9,24 @@ $status-size: 3.75rem;
 $status-padding-top: 3.55rem;
 $status-title-padding: 1rem;
 $status-margin-bottom: 1rem;
-$status-list-margin-bottom: 2rem;
+$status-list-margin-bottom: 3rem;
 $status-list-padding-left: 1.5rem;
-$status-list-item-margin-bottom: 0.75rem;
+$status-list-item-margin-bottom: 1rem;
 $status-list-icon-left: -0.3rem;
-$status-types: ("success", "danger", "primary", "info", "institutional");
-$alert-icons: (
-  "success":
-    url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(38, 135, 74, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"></path></svg>'),
-  "danger":
-    url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(201, 59, 59, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm4.207 12.793-1.414 1.414L12 13.414l-2.793 2.793-1.414-1.414L10.586 12 7.793 9.207l1.414-1.414L12 10.586l2.793-2.793 1.414 1.414L13.414 12l2.793 2.793z"></path></svg>'),
-  "warning":
-    url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 168, 46, 1);transform: ;msFilter:;"><path d="M12.884 2.532c-.346-.654-1.422-.654-1.768 0l-9 17A.999.999 0 0 0 3 21h18a.998.998 0 0 0 .883-1.467L12.884 2.532zM13 18h-2v-2h2v2zm-2-4V9h2l.001 5H11z"></path></svg>'),
-  "primary":
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(51, 106, 204, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>'),
+$status-types: ("info", "success", "danger", "warning", "institutional");
+$success-icons-list: (
   "info":
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 133, 173, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>'),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="%23007BC7"><path d="M453-280h60v-240h-60v240Zm26.98-314q14.02 0 23.52-9.2T513-626q0-14.45-9.48-24.22-9.48-9.78-23.5-9.78t-23.52 9.78Q447-640.45 447-626q0 13.6 9.48 22.8 9.48 9.2 23.5 9.2Zm.29 514q-82.74 0-155.5-31.5Q252-143 197.5-197.5t-86-127.34Q80-397.68 80-480.5t31.5-155.66Q143-709 197.5-763t127.34-85.5Q397.68-880 480.5-880t155.66 31.5Q709-817 763-763t85.5 127Q880-563 880-480.27q0 82.74-31.5 155.5Q817-252 763-197.68q-54 54.31-127 86Q563-80 480.27-80Z"/></svg>'),
+  "success":
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="%2326874A"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg>'),
+  "warning":
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="%23FFA82E"><path d="M92-120q-9 0-15.65-4.13Q69.7-128.25 66-135q-4.17-6.6-4.58-14.3Q61-157 66-165l388-670q5-8 11.5-11.5T480-850q8 0 14.5 3.5T506-835l388 670q5 8 4.58 15.7-.41 7.7-4.58 14.3-3.7 6.75-10.35 10.87Q877-120 868-120H92Zm392.18-117q12.82 0 21.32-8.68 8.5-8.67 8.5-21.5 0-12.82-8.68-21.32-8.67-8.5-21.5-8.5-12.82 0-21.32 8.68-8.5 8.67-8.5 21.5 0 12.82 8.68 21.32 8.67 8.5 21.5 8.5Zm0-111q12.82 0 21.32-8.63 8.5-8.62 8.5-21.37v-164q0-12.75-8.68-21.38-8.67-8.62-21.5-8.62-12.82 0-21.32 8.62-8.5 8.63-8.5 21.38v164q0 12.75 8.68 21.37 8.67 8.63 21.5 8.63Z"/></svg>'),
+  "danger":
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="%23BD2A2A"><path d="M479.98-280q14.02 0 23.52-9.48t9.5-23.5q0-14.02-9.48-23.52t-23.5-9.5q-14.02 0-23.52 9.48t-9.5 23.5q0 14.02 9.48 23.52t23.5 9.5Zm3.2-153q12.82 0 21.32-8.63 8.5-8.62 8.5-21.37v-193q0-12.75-8.68-21.38-8.67-8.62-21.5-8.62-12.82 0-21.32 8.62-8.5 8.63-8.5 21.38v193q0 12.75 8.68 21.37 8.67 8.63 21.5 8.63Zm-2.91 353q-82.74 0-155.5-31.5Q252-143 197.5-197.5t-86-127.34Q80-397.68 80-480.5t31.5-155.66Q143-709 197.5-763t127.34-85.5Q397.68-880 480.5-880t155.66 31.5Q709-817 763-763t85.5 127Q880-563 880-480.27q0 82.74-31.5 155.5Q817-252 763-197.68q-54 54.31-127 86Q563-80 480.27-80Z"/></svg>'),
 );
 
 $status-icons: map-merge(
-  $alert-icons,
+  $success-icons-list,
   (
     "institutional": $icon-institutional,
   )
@@ -73,12 +71,14 @@ $status-icons: map-merge(
   .status-title {
     font-weight: 600;
     margin: $status-title-padding 0;
-    line-height: 1.2;
+    line-height: 2.25rem;
     font-size: 1.75rem;
+    color: $blue-900;
   }
 
   .status-text {
     margin-bottom: $status-margin-bottom;
+    color: $blue-900;
   }
 
   &:not(:has(.status-list)) .status-text {
@@ -91,40 +91,29 @@ $status-icons: map-merge(
   }
 
   .status-list {
-    list-style: none;
     padding-left: $status-list-padding-left;
     margin-bottom: $status-list-margin-bottom;
+    color: $blue-900;
 
     > li {
       margin-bottom: $status-list-item-margin-bottom;
-
-      &::before {
-        position: absolute;
-        left: $status-list-icon-left;
-        vertical-align: middle;
-        content: "";
-        display: inline-block;
-        height: 1.5rem;
-        width: 1.5rem;
-        min-width: 1.5rem;
-        background: transparent $icon-check no-repeat center center;
-      }
+      color: $blue-900;
     }
   }
 
-  //   @include media-breakpoint-down(xs) {
-  //     > .btn {
-  //       width: 100%;
-  //     }
-  //   }
+  @include media-breakpoint-down(xs) {
+    > .btn {
+      width: 100%;
+    }
+  }
 
-  //   > .btn + .btn {
-  //     margin-left: 1rem;
+  > .btn + .btn {
+    margin-left: 1rem;
 
-  //     @include media-breakpoint-down(xs) {
-  //       margin-left: 0;
-  //       margin-top: 1rem;
-  //       width: 100%;
-  //     }
-  //   }
+    @include media-breakpoint-down(xs) {
+      margin-left: 0;
+      margin-top: 1rem;
+      width: 100%;
+    }
+  }
 }

@@ -9,6 +9,7 @@ import NavLayout from "@/components/Layout/Navigation/nav";
 export const componentsPages = [
   { text: "Tipografía", url: "/components/typography", id: 0 },
   { text: "Colores", url: "/components/colors", id: 1 },
+  { text: "Grilla", url: "/components/grid", id: 1 },
   { text: "Enlace", url: "/components/link", id: 2 },
   { text: "Alertas", url: "/components/alert", id: 3 },
   {
@@ -30,6 +31,8 @@ export const componentsPages = [
   { text: "Tooltip", url: "/components/tooltip", id: 8 },
   { text: "Modal", url: "/components/modal", id: 9 },
   { text: "Mensaje de estado", url: "/components/status-message", id: 10 },
+  { text: "Desplagable de Navegación", url: "/components/dropdown-nav", id: 11 },
+  { text: "Etiquetas", url: "/components/badge", id: 12 },
 ];
 
 const gettingPages = [
@@ -37,7 +40,7 @@ const gettingPages = [
   { text: "Importaciones", url: "/getting-started/imports", id: 3 },
 ];
 
-export default function RootLayout ({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;

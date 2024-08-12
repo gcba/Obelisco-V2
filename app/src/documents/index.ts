@@ -10,6 +10,7 @@ export * from "./getting-started-module/IntroductionModule";
 export * from "./Typography/TypographyDocs";
 export * from "./Link/LinkDocs";
 export * from "./Card/CardDocs";
+export * from "./DropdownNav/DropdownNavDocs";
 export * from "./Modal/ModalDocs";
 export * from "./Switch/SwitchDocs";
 export * from "./Tooltip/TooltipDocs";

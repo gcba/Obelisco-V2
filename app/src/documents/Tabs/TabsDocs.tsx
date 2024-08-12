@@ -61,7 +61,7 @@ const TabsDocs: React.FC = () => {
                     </HeadingTemplate>
 
                     <div className="col-12 col-lg-8 mx-auto">
-                      <nav className="tabs-slider" aria-label="Navegación por pestañas">
+                      <nav className="tabs-box" aria-label="Navegación por pestañas">
                         <ul className="nav nav-pills tabs" id="simple-myTab" role="tablist">
                           <li className="nav-item" role="presentation">
                             <button
@@ -162,7 +162,7 @@ const TabsDocs: React.FC = () => {
                     <CodeCopy code={EGcodeSimpleTabs} />
 
                     <div className="col-12 col-lg-8 mx-auto">
-                      <nav className="tabs-slider" aria-label="Navegación por pestañas">
+                      <nav className="tabs-box" aria-label="Navegación por pestañas">
                         <ul className="nav nav-pills tabs" id="icon-myTab" role="tablist">
                           <li className="nav-item" role="presentation">
                             <button
@@ -177,7 +177,7 @@ const TabsDocs: React.FC = () => {
                             >
                               <div className="nav-icon">
                                 Pestaña 1
-                                <span className="material-symbols-rounded">
+                                <span className="material-symbols-rounded o-icon">
                                   home
                                 </span>
                               </div>
@@ -196,7 +196,7 @@ const TabsDocs: React.FC = () => {
                             >
                               <div className="nav-icon">
                                 Pestaña 2
-                                <span className="material-symbols-rounded">
+                                <span className="material-symbols-rounded o-icon">
                                   home
                                 </span>
                               </div>
@@ -216,7 +216,7 @@ const TabsDocs: React.FC = () => {
                             >
                               <div className="nav-icon">
                                 Pestaña 3
-                                <span className="material-symbols-rounded">
+                                <span className="material-symbols-rounded o-icon">
                                   home
                                 </span>
                               </div>
@@ -235,7 +235,7 @@ const TabsDocs: React.FC = () => {
                             >
                               <div className="nav-icon">
                                 Pestaña 4
-                                <span className="material-symbols-rounded">
+                                <span className="material-symbols-rounded o-icon">
                                   home
                                 </span>
                               </div>
@@ -290,8 +290,8 @@ const TabsDocs: React.FC = () => {
                     </HeadingTemplate>
 
                     <div className="col-12">
-                      <nav className="tabs-slider" aria-label="Navegación por pestañas">
-                        <ul className="nav nav-pills tabs fixedWidth" id="icon-myTab" role="tablist">
+                      <nav className="tabs-box" aria-label="Navegación por pestañas">
+                        <ul className="nav nav-pills tabs fixed-width" id="icon-myTab" role="tablist">
                           <li className="nav-item" role="presentation">
                             <button
                               className="nav-link active"
@@ -305,7 +305,7 @@ const TabsDocs: React.FC = () => {
                             >
                               <div className="nav-icon">
                                 Pestaña 1
-                                <span className="material-symbols-rounded">
+                                <span className="material-symbols-rounded o-icon">
                                   home
                                 </span>
                               </div>
@@ -324,7 +324,7 @@ const TabsDocs: React.FC = () => {
                             >
                               <div className="nav-icon">
                                 Pestaña 2
-                                <span className="material-symbols-rounded">
+                                <span className="material-symbols-rounded o-icon">
                                   home
                                 </span>
                               </div>
@@ -344,7 +344,7 @@ const TabsDocs: React.FC = () => {
                             >
                               <div className="nav-icon">
                                 Pestaña 3
-                                <span className="material-symbols-rounded">
+                                <span className="material-symbols-rounded o-icon">
                                   home
                                 </span>
                               </div>
@@ -363,7 +363,7 @@ const TabsDocs: React.FC = () => {
                             >
                               <div className="nav-icon">
                                 Pestaña 4
-                                <span className="material-symbols-rounded">
+                                <span className="material-symbols-rounded o-icon">
                                   home
                                 </span>
                               </div>
@@ -418,7 +418,7 @@ const TabsDocs: React.FC = () => {
                     </HeadingTemplate>
 
                     <div className="col-12">
-                      <nav className="tabs-slider" aria-label="Navegación por pestañas">
+                      <nav className="tabs-box" aria-label="Navegación por pestañas">
                         <ul className="nav nav-pills tabs nav-box" id="icon-myTab" role="tablist">
                           <li className="nav-item" role="presentation">
                             <button
@@ -433,7 +433,7 @@ const TabsDocs: React.FC = () => {
                             >
                               <div className="nav-icon">
                                 Pestaña 1
-                                <span className="material-symbols-rounded">
+                                <span className="material-symbols-rounded o-icon">
                                   home
                                 </span>
                               </div>
@@ -452,7 +452,7 @@ const TabsDocs: React.FC = () => {
                             >
                               <div className="nav-icon">
                                 Pestaña 2
-                                <span className="material-symbols-rounded">
+                                <span className="material-symbols-rounded o-icon">
                                   home
                                 </span>
                               </div>
@@ -472,7 +472,7 @@ const TabsDocs: React.FC = () => {
                             >
                               <div className="nav-icon">
                                 Pestaña 3
-                                <span className="material-symbols-rounded">
+                                <span className="material-symbols-rounded o-icon">
                                   home
                                 </span>
                               </div>
@@ -491,7 +491,7 @@ const TabsDocs: React.FC = () => {
                             >
                               <div className="nav-icon">
                                 Pestaña 4
-                                <span className="material-symbols-rounded">
+                                <span className="material-symbols-rounded o-icon">
                                   home
                                 </span>
                               </div>

@@ -103,7 +103,7 @@ const NavVerticalDocs: React.FC = () => {
                           <li className="nav-item">
                             <a className="nav-link" href="#">
                               <div className="nav-icon">
-                                <i className="bx bxs-user-circle"></i>
+                                <i className="bx bxs-user-circle o-icon"></i>
                                 <span>Link</span>
                               </div>
                             </a>
@@ -111,7 +111,7 @@ const NavVerticalDocs: React.FC = () => {
                           <li className="nav-item">
                             <a className="nav-link active" href="#">
                               <div className="nav-icon">
-                                <i className="bx bxs-user-circle"></i>
+                                <i className="bx bxs-user-circle o-icon"></i>
                                 <span>Activo</span>
                               </div>
                             </a>
@@ -119,7 +119,7 @@ const NavVerticalDocs: React.FC = () => {
                           <li className="nav-item">
                             <a className="nav-link" href="#">
                               <div className="nav-icon">
-                                <i className="bx bxs-user-circle"></i>
+                                <i className="bx bxs-user-circle o-icon"></i>
                                 <span>Link</span>
                               </div>
                             </a>
@@ -132,7 +132,7 @@ const NavVerticalDocs: React.FC = () => {
                               tabIndex={-1}
                             >
                               <div className="nav-icon">
-                                <i className="bx bxs-user-circle"></i>
+                                <i className="bx bxs-user-circle o-icon"></i>
                                 <span>Deshabilitado</span>
                               </div>
                             </a>
@@ -203,7 +203,7 @@ const NavVerticalDocs: React.FC = () => {
                           <li className="nav-item">
                             <a className="nav-link" href="#">
                               <div className="nav-icon">
-                                <i className="bx bxs-user-circle"></i>
+                                <i className="bx bxs-user-circle o-icon"></i>
                                 <span>Categorías</span>
                               </div>
                             </a>
@@ -211,7 +211,7 @@ const NavVerticalDocs: React.FC = () => {
                           <li className="nav-item">
                             <a className="nav-link active-child" href="#">
                               <div className="nav-icon">
-                                <i className="bx bxs-user-circle"></i>
+                                <i className="bx bxs-user-circle o-icon"></i>
                                 <span>Locales y comercios</span>
                               </div>
                             </a>
@@ -244,7 +244,7 @@ const NavVerticalDocs: React.FC = () => {
                           <li className="nav-item">
                             <a className="nav-link" href="#">
                               <div className="nav-icon">
-                                <i className="bx bxs-user-circle"></i>
+                                <i className="bx bxs-user-circle o-icon"></i>
                                 <span>Actividades jurídicas</span>
                               </div>
                             </a>
@@ -252,7 +252,7 @@ const NavVerticalDocs: React.FC = () => {
                           <li className="nav-item">
                             <a className="nav-link" href="#">
                               <div className="nav-icon">
-                                <i className="bx bxs-user-circle"></i>
+                                <i className="bx bxs-user-circle o-icon"></i>
                                 <span>Otras actividades</span>
                               </div>
                             </a>
@@ -336,7 +336,7 @@ const NavVerticalDocs: React.FC = () => {
                             <li className="nav-item">
                               <a className="nav-link" href="#">
                                 <div className="nav-icon">
-                                  <i className="bx bxs-user-circle"></i>
+                                  <i className="bx bxs-user-circle o-icon"></i>
                                   <span>Categorías</span>
                                 </div>
                               </a>
@@ -344,7 +344,7 @@ const NavVerticalDocs: React.FC = () => {
                             <li className="nav-item">
                               <a className="nav-link active-child" href="#">
                                 <div className="nav-icon">
-                                  <i className="bx bxs-user-circle"></i>
+                                  <i className="bx bxs-user-circle o-icon"></i>
                                   <span>Locales y comercios</span>
                                 </div>
                               </a>
@@ -387,7 +387,7 @@ const NavVerticalDocs: React.FC = () => {
                             <li className="nav-item">
                               <a className="nav-link" href="#">
                                 <div className="nav-icon">
-                                  <i className="bx bxs-user-circle"></i>
+                                  <i className="bx bxs-user-circle o-icon"></i>
                                   <span>Actividades jurídicas</span>
                                 </div>
                               </a>
@@ -395,7 +395,7 @@ const NavVerticalDocs: React.FC = () => {
                             <li className="nav-item">
                               <a className="nav-link" href="#">
                                 <div className="nav-icon">
-                                  <i className="bx bxs-user-circle"></i>
+                                  <i className="bx bxs-user-circle o-icon"></i>
                                   <span>Otras actividades</span>
                                 </div>
                               </a>

@@ -7,7 +7,7 @@ import BoxTemplate from "@/components/Template/Box";
 import HeadingTemplate from "@/components/Template/HeadingTemplate";
 import MainDescription from "@/components/Template/MainDescription";
 import Divisor from "@/components/Template/Divisor";
-import { EGcodeSimpleAlert, EGcodeCloseAlert } from "./code-views";
+import { BadgeColors, BadgeTypes } from "./code-views";
 
 const BadgeDocs: React.FC = () => {
   const section1Ref = useRef<HTMLDivElement>(null);
@@ -63,14 +63,17 @@ const BadgeDocs: React.FC = () => {
                       <h2 className="mb-4">Colores</h2>
                     </HeadingTemplate>
 
-                    <div className="">
-                      <span className="badge badge-secondary">Etiqueta</span>
-                      <span className="badge badge-danger">Etiqueta</span>
-                      <span className="badge badge-success">Etiqueta</span>
-                      <span className="badge badge-info">Etiqueta</span>
-                      <span className="badge badge-primary">Etiqueta</span>
+                    <div className="grid gap-5">
+                      <span className="badge badge-default">
+                        Predeterminada
+                      </span>
+                      <span className="badge badge-danger">Peligro</span>
+                      <span className="badge badge-info">Info</span>
+                      <span className="badge badge-success">Éxito</span>
+                      <span className="badge badge-warning">Advertencia</span>
                     </div>
-                    <CodeCopy code={EGcodeSimpleAlert} />
+
+                    <CodeCopy code={BadgeColors} />
                   </section>
 
                   <Divisor />
@@ -80,22 +83,19 @@ const BadgeDocs: React.FC = () => {
                       <h2 className="mb-4">Enlace</h2>
                     </HeadingTemplate>
 
-                    <div className="">
-                      <a href="#" className="badge badge-secondary">
-                        Etiqueta
+                    <div className="grid gap-5">
+                      <a href="#" className="badge badge-default">
+                        ETIQUETA
                       </a>
-                      <a href="#" className="badge hover badge-secondary">
-                        Etiqueta
+                      <a href="#" className="badge hover badge-default">
+                        ETIQUETA
                       </a>
-                      <a href="#" className="badge focus hover badge-secondary">
-                        Etiqueta
-                      </a>
-                      <a href="#" className="badge focus badge-secondary">
-                        Etiqueta
+                      <a href="#" className="badge focus badge-default">
+                        ETIQUETA
                       </a>
                     </div>
 
-                    <CodeCopy code={EGcodeCloseAlert} />
+                    <CodeCopy code={BadgeTypes} />
                   </section>
                 </div>
               </article>

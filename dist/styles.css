@@ -13678,100 +13678,20 @@ a.link-white:focus {
   font-size: 0.875rem;
 }
 
-.badge-primary {
+.badge-default {
   color: #101E37;
-  background-color: #ECF0F9;
-  box-shadow: 0 0 0 1px #336ACC;
-  outline: 0.125rem solid transparent;
-}
-a.badge-primary:hover, a.badge-primary.hover {
-  color: #274986;
-  box-shadow: 0 0 0 2px #274986;
-  background-color: #ECF0F9;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-}
-a.badge-primary:focus, a.badge-primary.focus {
-  outline: 0;
   background-color: #F3F6F9;
-  box-shadow: 0 0 0 0.25rem #218274;
-  outline: 0.25rem solid transparent;
-}
-
-.badge-secondary {
-  color: #101E37;
-  background-color: #F2F2F2;
   box-shadow: 0 0 0 1px #101E37;
   outline: 0.125rem solid transparent;
 }
-a.badge-secondary:hover, a.badge-secondary.hover {
+a.badge-default:hover, a.badge-default.hover {
   color: #274986;
   box-shadow: 0 0 0 2px #274986;
-  background-color: #F2F2F2;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-}
-a.badge-secondary:focus, a.badge-secondary.focus {
-  outline: 0;
   background-color: #F3F6F9;
-  box-shadow: 0 0 0 0.25rem #218274;
-  outline: 0.25rem solid transparent;
-}
-
-.badge-success {
-  color: #101E37;
-  background-color: #F2FBF5;
-  box-shadow: 0 0 0 1px #26874A;
-  outline: 0.125rem solid transparent;
-}
-a.badge-success:hover, a.badge-success.hover {
-  color: #274986;
-  box-shadow: 0 0 0 2px #274986;
-  background-color: #F2FBF5;
   text-decoration: underline;
   text-decoration-thickness: 1px;
 }
-a.badge-success:focus, a.badge-success.focus {
-  outline: 0;
-  background-color: #F3F6F9;
-  box-shadow: 0 0 0 0.25rem #218274;
-  outline: 0.25rem solid transparent;
-}
-
-.badge-info {
-  color: #101E37;
-  background-color: #E5F9FF;
-  box-shadow: 0 0 0 1px #0086AD;
-  outline: 0.125rem solid transparent;
-}
-a.badge-info:hover, a.badge-info.hover {
-  color: #274986;
-  box-shadow: 0 0 0 2px #274986;
-  background-color: #E5F9FF;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-}
-a.badge-info:focus, a.badge-info.focus {
-  outline: 0;
-  background-color: #F3F6F9;
-  box-shadow: 0 0 0 0.25rem #218274;
-  outline: 0.25rem solid transparent;
-}
-
-.badge-warning {
-  color: #101E37;
-  background-color: #FFF4E5;
-  box-shadow: 0 0 0 1px #FF9500;
-  outline: 0.125rem solid transparent;
-}
-a.badge-warning:hover, a.badge-warning.hover {
-  color: #274986;
-  box-shadow: 0 0 0 2px #274986;
-  background-color: #FFF4E5;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-}
-a.badge-warning:focus, a.badge-warning.focus {
+a.badge-default:focus, a.badge-default.focus {
   outline: 0;
   background-color: #F3F6F9;
   box-shadow: 0 0 0 0.25rem #218274;
@@ -13798,36 +13718,60 @@ a.badge-danger:focus, a.badge-danger.focus {
   outline: 0.25rem solid transparent;
 }
 
-.badge-light {
+.badge-info {
   color: #101E37;
-  box-shadow: 0 0 0 1px #F3F6F9;
+  background-color: #ECF0F9;
+  box-shadow: 0 0 0 1px #336ACC;
   outline: 0.125rem solid transparent;
 }
-a.badge-light:hover, a.badge-light.hover {
+a.badge-info:hover, a.badge-info.hover {
   color: #274986;
   box-shadow: 0 0 0 2px #274986;
+  background-color: #ECF0F9;
   text-decoration: underline;
   text-decoration-thickness: 1px;
 }
-a.badge-light:focus, a.badge-light.focus {
+a.badge-info:focus, a.badge-info.focus {
   outline: 0;
   background-color: #F3F6F9;
   box-shadow: 0 0 0 0.25rem #218274;
   outline: 0.25rem solid transparent;
 }
 
-.badge-dark {
+.badge-success {
   color: #101E37;
-  box-shadow: 0 0 0 1px #002733;
+  background-color: #F2FBF5;
+  box-shadow: 0 0 0 1px #26874A;
   outline: 0.125rem solid transparent;
 }
-a.badge-dark:hover, a.badge-dark.hover {
+a.badge-success:hover, a.badge-success.hover {
   color: #274986;
   box-shadow: 0 0 0 2px #274986;
+  background-color: #F2FBF5;
   text-decoration: underline;
   text-decoration-thickness: 1px;
 }
-a.badge-dark:focus, a.badge-dark.focus {
+a.badge-success:focus, a.badge-success.focus {
+  outline: 0;
+  background-color: #F3F6F9;
+  box-shadow: 0 0 0 0.25rem #218274;
+  outline: 0.25rem solid transparent;
+}
+
+.badge-warning {
+  color: #101E37;
+  background-color: #FFF4E5;
+  box-shadow: 0 0 0 1px #FF9500;
+  outline: 0.125rem solid transparent;
+}
+a.badge-warning:hover, a.badge-warning.hover {
+  color: #274986;
+  box-shadow: 0 0 0 2px #274986;
+  background-color: #FFF4E5;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+a.badge-warning:focus, a.badge-warning.focus {
   outline: 0;
   background-color: #F3F6F9;
   box-shadow: 0 0 0 0.25rem #218274;

@@ -4,7 +4,6 @@ import React, { useRef, useEffect, useState } from 'react';
 import { Scrollspy } from "@makotot/ghostui";
 import HeadingTemplate from '@/components/Template/HeadingTemplate';
 import Divisor from '@/components/Template/Divisor';
-import MainDescription from './MainDescription';
 import SimpleText from './SimpleText';
 
 interface Section {
@@ -12,15 +11,14 @@ interface Section {
   title: string;
   content: React.ReactNode;
   description?: string;
+  h1?: boolean;
 }
 
 interface DocumentationTemplateProps {
   sections: Section[];
-  title: string;
-  description: string;
 }
 
-const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections, title, description }) => {
+const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections }) => {
   const sectionRefs = sections.map(() => useRef<HTMLDivElement>(null));
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
@@ -49,23 +47,14 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
         <div className='box-scrollspy'>
           <article className="box-content">
             <div data-cy="section-wrapper">
-              <section>
-                <HeadingTemplate className='pt-0'>
-                  <h1>{title}</h1>
-                </HeadingTemplate>
-                <MainDescription description={description} />
-              </section>
-
-              <Divisor />
-
               {sections.map((section, index) => (
                 <section
                   key={section.id}
                   id={section.id}
                   ref={sectionRefs[index]}
                 >
-                  <HeadingTemplate className='pt-5'>
-                    <h2 className="mb-4">{section.title}</h2>
+                  <HeadingTemplate className='pt-2'>
+                    {section.h1 ? (<h1 className="mb-4">{section.title}</h1>) : (<h2 className="mb-4">{section.title}</h2>)}
                   </HeadingTemplate>
                   {section.description && <SimpleText description={section.description} />}
                   {section.content}

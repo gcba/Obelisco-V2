@@ -46,8 +46,7 @@ $banner-padding-mobile: 0.25rem;
     align-items: center;
     grid-gap: $banner-gap;
 
-    .material-icons-round,
-    .bx {
+    .o-icon {
       font-size: $banner-icon-size;
       grid-column: 1 / 2;
     }
@@ -69,7 +68,7 @@ $banner-padding-mobile: 0.25rem;
     }
 
     &:has(.banner-actions),
-    &:has(.material-icons-round, .bx) {
+    &:has(.o-icon) {
       .banner-text {
         display: -webkit-box;
         -webkit-line-clamp: 1;
@@ -87,7 +86,7 @@ $banner-padding-mobile: 0.25rem;
       }
     }
 
-    &:not(:has(.material-icons-round, .bx)) {
+    &:not(:has(.o-icon)) {
       grid-template-columns: 1fr auto;
 
       .banner-text {
@@ -115,8 +114,7 @@ $banner-padding-mobile: 0.25rem;
       grid-template-columns: auto 1fr;
       grid-template-rows: auto;
 
-      .material-icons-round,
-      .bx {
+      .o-icon {
         grid-area: 1 / 1 / 2 / 2;
         align-self: flex-start;
       }
@@ -129,7 +127,7 @@ $banner-padding-mobile: 0.25rem;
         grid-area: 2 / 2 / 3 / 3;
       }
 
-      &:not(:has(.material-icons-round, .bx)) {
+      &:not(:has(.o-icon)) {
         grid-template-columns: 1fr;
         grid-column-gap: 0;
 

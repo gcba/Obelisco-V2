@@ -1,7 +1,3 @@
-'use client'
-
-import React from 'react';
-
 import CodeCopy from "@/components/CodeBox";
 import MainDescription from '@/components/Template/MainDescription';
 import Divisor from '@/components/Template/Divisor';
@@ -13,11 +9,10 @@ const NavVerticalDocs: React.FC = () => {
   const sections = [
     {
       id: 'section-1',
-      title: 'introduccion',
+      title: 'Navegación Vertical',
+      h1: true,
       content: (
-        <>
-          <MainDescription description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the." />
-        </>
+        <MainDescription description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the." />
       ),
       description: undefined
     },
@@ -377,8 +372,6 @@ const NavVerticalDocs: React.FC = () => {
   return (
     <DocumentationTemplate
       sections={sections}
-      title="Navegación Vertical"
-      description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the."
     />
   );
 };

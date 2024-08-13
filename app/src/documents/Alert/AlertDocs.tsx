@@ -1,17 +1,14 @@
-// app/components/alert/page.tsx
-'use client';
-
-import React from 'react';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import CodeCopy from "@/components/CodeBox";
 import { EGcodeSimpleAlert, EGcodeCloseAlert, EGcodeWithStrong } from './code-views';
+import MainDescription from '@/components/Template/MainDescription';
 
 const AlertDocs: React.FC = () => {
   const sections = [
     {
       id: "section-1",
       title: "Introducción",
-      content: <p>Las alertas son avisos que mantienen a los usuarios informados sobre el estado del sistema y pueden requerir o no que realicen una acción.</p>,
+      content: <MainDescription description='Las alertas son avisos que mantienen a los usuarios informados sobre el estado del sistema y pueden requerir o no que realicen una acción.' />
     },
     {
       id: "section-2",
@@ -80,8 +77,6 @@ const AlertDocs: React.FC = () => {
 
   return (
     <DocumentationTemplate
-      title="Alertas"
-      description="Las alertas son avisos que mantienen a los usuarios informados sobre el estado del sistema y pueden requerir o no que realicen una acción."
       sections={sections}
     />
   );

@@ -1,4 +1,3 @@
-import BoxTemplate from "@/components/Template/Box";
 import MainDescription from '@/components/Template/MainDescription';
 import { SMType1, SMType2, SMType3, SMType4, SMType5 } from "./code-views";
 import CodeCopy from '@/components/CodeBox';
@@ -175,9 +174,7 @@ const sections = [
 
 const StatusMessageDocs: React.FC = () => {
   return (
-    <BoxTemplate>
-      <DocumentationTemplate sections={sections} />
-    </BoxTemplate>
+    <DocumentationTemplate sections={sections} />
   );
 };
 

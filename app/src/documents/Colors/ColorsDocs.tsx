@@ -1,5 +1,4 @@
 import CodeCopy from "@/components/CodeBox";
-import BoxTemplate from "@/components/Template/Box";
 import MainDescription from "@/components/Template/MainDescription";
 import {
   BG_THEME_COLORS,
@@ -96,9 +95,7 @@ const ColorsDocs: React.FC = () => {
   ];
 
   return (
-    <BoxTemplate>
-      <DocumentationTemplate sections={sections} />
-    </BoxTemplate>
+    <DocumentationTemplate sections={sections} />
   );
 };
 

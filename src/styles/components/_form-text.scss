@@ -1,0 +1,46 @@
+@mixin apply-headline-styles($size) {
+  font-size: map-get(map-get($headline-styles, $size), font-size);
+  line-height: map-get(map-get($headline-styles, $size), line-height);
+  font-weight: map-get(map-get($headline-styles, $size), font-weight);
+}
+
+.form-label {
+  @include apply-headline-styles(md);
+  color: $grisulado-950;
+  margin: 0;
+
+  &.disabled {
+    color: $grisulado-400;
+  }
+}
+
+.form-control {
+  background-color: $grisulado-50;
+  padding: 13px 16px;
+  color: $grisulado-950;
+  font-size: $md-body-fs;
+  font-weight: $md-body-fw;
+  border: none;
+  border-radius: $border-radius-lg;
+  box-shadow: $box-shadow;
+
+  &:focus {
+    background-color: $grisulado-50;
+    box-shadow: $focus-box-shadow;
+    border-color: transparent;
+  }
+
+  &:disabled {
+    background-color: $grisulado-50;
+    color: $disabled-text;
+  }
+
+  &:disabled::placeholder {
+    color: $disabled-text;
+    color: red;
+  }
+
+  &.form-white {
+    background-color: $white;
+  }
+}

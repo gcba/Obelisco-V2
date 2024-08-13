@@ -37,6 +37,7 @@ export const componentsPages = [
     id: 11,
   },
   { text: "Etiquetas", url: "/components/badge", id: 12 },
+  { text: "Spinner", url: "/components/spinner", id: 13 },
 ];
 
 const gettingPages = [

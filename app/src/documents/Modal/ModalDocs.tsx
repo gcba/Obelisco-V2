@@ -63,9 +63,7 @@ const SwitchDocs: React.FC = () => {
                         <button
                           type="button"
                           className="btn btn-primary"
-                          // Se cambia 'data-toggle' a 'data-bs-toggle'
                           data-bs-toggle="modal"
-                          // Se cambia 'data-target' a 'data-bs-target'
                           data-bs-target="#exampleModal1"
                         >
                           Modal de confirmación
@@ -93,17 +91,12 @@ const SwitchDocs: React.FC = () => {
                       </div>
                     </div>
 
-                    {/* Cambios en las clases y atributos de modal */}
                     <div
                       className="modal fade"
                       tabIndex={-1}
-                      //  Eliminación del 'role="dialog"' ya que Bootstrap 5 lo maneja automáticamente
                       id="exampleModal1"
                     >
-                      <div
-                        className="modal-dialog modal-dialog-centered modal-sm"
-                        // Eliminación del 'role="document"' ya que no es necesario en Bootstrap 5
-                      >
+                      <div className="modal-dialog modal-dialog-centered modal-sm">
                         <div className="modal-content">
                           <div className="modal-header">
                             <h4 className="modal-title">¡Importante!</h4>
@@ -116,7 +109,6 @@ const SwitchDocs: React.FC = () => {
                             </p>
                           </div>
                           <div className="modal-footer">
-                            {/* Se cambia 'data-dismiss' a 'data-bs-dismiss' */}
                             <button
                               type="button"
                               className="btn btn-outline-link"

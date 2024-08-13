@@ -1,23 +1,15 @@
-'use client'
-
-import React, { useRef } from 'react';
-import { Scrollspy } from "@makotot/ghostui";
 import CodeCopy from "@/components/CodeBox";
-import BoxTemplate from '@/components/Template/Box';
-import HeadingTemplate from '@/components/Template/HeadingTemplate';
 import MainDescription from '@/components/Template/MainDescription';
-import Divisor from '@/components/Template/Divisor';
 import { EGcodeSimpleNavHorizontal, EGcodeWithIconHorizontal, EGcodeSizesHorizontal } from './code-views';
-import DocumentationTemplate from '@/components/Template/DocumentationTemplate'; // Importa el componente
+import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 
 const sections = [
   {
     id: 'section-1',
     title: 'Navegación horizontal',
+    h1: true,
     content: (
-      <>
-        <MainDescription description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the." />
-      </>
+      <MainDescription description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the." />
     ),
     description: undefined
   },
@@ -211,8 +203,6 @@ const NavHorizontalDocs: React.FC = () => {
   return (
     <DocumentationTemplate
       sections={sections}
-      title="Navegación horizontal"
-      description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the."
     />
   );
 };

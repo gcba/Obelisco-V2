@@ -1,3 +1,8 @@
+// Accesibilidad
+.sr-only {
+  @extend .visually-hidden;
+}
+
 .responsive-scroll {
   padding: 0.5rem;
   border: none;

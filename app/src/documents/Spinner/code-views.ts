@@ -39,7 +39,7 @@ export const SPINNER_SIZES =
 export const SPINNER_BLOCK =
   `
     <div className="col-4 col-md-2 mx-auto">
-        <div className="spinner-block text-info" role="status">
+        <div className="spinner-block text-primary" role="status">
             <span className="sr-only">Cargando...</span>
         </div>
     </div>

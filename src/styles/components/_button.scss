@@ -37,12 +37,38 @@ $theme-color-btn-bg-hover: (
     opacity: 1;
   }
 }
+
+@mixin btn-without-styles {
+  color: $body-color;
+  background-color: $white;
+  outline-color: $white;
+  &:hover,
+  &.hover,
+  &:visited,
+  &:focus,
+  &.focus,
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active {
+    color: $body-color;
+    background-color: $white;
+    outline-color: $white;
+    box-shadow: none;
+  }
+}
 .btn {
   @extend .headline-md; // Nunito, 18px, 24px
   font-weight: $font-weight-bold; // 700
   padding: $btn-padding-md;
   border-radius: $border-radius-lg; // 0.5rem
   min-height: 2.5rem; // 40px
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  // Estilos para icono en botón
+  .o-icon {
+    font-size: 1rem;
+  }
   // Button Sizes
   &-sm {
     min-height: 2rem; // 32px
@@ -52,6 +78,10 @@ $theme-color-btn-bg-hover: (
   &-lg {
     min-height: 3rem; // 48px
     padding: $btn-padding-lg;
+    // Estilos para icono en botón
+    .o-icon {
+      font-size: 1.25rem;
+    }
   }
 }
 
@@ -131,6 +161,9 @@ $theme-color-btn-bg-hover: (
         color: $btn-link-color;
       }
     }
+    @if ($color == "warning" or $color == "dark" or $color == "light") {
+      @include btn-without-styles;
+    }
   }
 
   .btn-outline-#{$color} {
@@ -156,6 +189,10 @@ $theme-color-btn-bg-hover: (
         color: $btn-link-color;
       }
     }
+
+    @if ($color == "warning" or $color == "dark" or $color == "light") {
+      @include btn-without-styles;
+    }
   }
 }
 
@@ -168,23 +205,9 @@ a.btn {
   display: block;
   width: 100%;
 }
-//Botón con ícono
+
+//Botón con spinner
 .btn-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.25rem;
-
-  .o-icon {
-    font-size: 1rem;
-  }
-
-  &.btn-lg {
-    .o-icon {
-      font-size: 1.25rem;
-    }
-  }
-
   //Botón con spinner
   &:focus,
   &.focus,
@@ -208,7 +231,7 @@ a.btn {
 // Button background dark
 .bg-dark,
 .banner-dark .banner-content .banner-actions {
-  > .btn.btn-primary,
+  .btn.btn-primary,
   .btn.btn-outline-primary {
     &.hover,
     &:hover,
@@ -231,7 +254,7 @@ a.btn {
       color: $body-color;
     }
   }
-  > .btn.btn-secondary,
+  .btn.btn-secondary,
   .btn.btn-outline-secondary {
     background-color: $white;
     color: $body-color;
@@ -255,7 +278,7 @@ a.btn {
       color: $body-color;
     }
   }
-  > .btn.btn-danger {
+  .btn.btn-danger {
     &.hover,
     &:hover,
     &.active,
@@ -281,7 +304,7 @@ a.btn {
       color: $red-600;
     }
   }
-  > .btn.btn-outline-danger {
+  .btn.btn-outline-danger {
     color: $red-200;
     outline: 0.125rem solid $red-200;
     &.hover,
@@ -309,7 +332,7 @@ a.btn {
       color: $white;
     }
   }
-  > .btn.btn-outline-link {
+  .btn.btn-outline-link {
     color: $blue-100;
     outline: 0.125rem solid $blue-100;
     background-color: transparent;

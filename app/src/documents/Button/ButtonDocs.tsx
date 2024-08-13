@@ -63,7 +63,6 @@ const ButtonDocs: React.FC = () => {
             estilo de un botón, simplemente pueden utilizarse las clases
             correspondientes de botones.
           </p>
-          <br />
           <div className="d-flex gap-3 justify-content-center flex-wrap">
             <a className="btn btn-primary" href="#" target="_blank">
               Enlace
@@ -109,64 +108,6 @@ const ButtonDocs: React.FC = () => {
               Link
             </button>
           </div>
-          {/* <div className="d-flex gap-3 flex-wrap">
-            <button type="button" className="btn btn-primary">
-              Primary
-            </button>
-            <button type="button" className="btn btn-secondary">
-              Secondary
-            </button>
-            <button type="button" className="btn btn-success">
-              Success
-            </button>
-            <button type="button" className="btn btn-danger">
-              Danger
-            </button>
-            <button type="button" className="btn btn-warning">
-              Warning
-            </button>
-            <button type="button" className="btn btn-info">
-              Info
-            </button>
-            <button type="button" className="btn btn-light">
-              Light
-            </button>
-            <button type="button" className="btn btn-dark">
-              Dark
-            </button>
-
-            <button type="button" className="btn btn-link">
-              Link
-            </button>
-          </div>
-          <br />
-          <div className="d-flex gap-3 flex-wrap">
-            <button type="button" className="btn btn-outline-primary">
-              Primary
-            </button>
-            <button type="button" className="btn btn-outline-secondary">
-              Secondary
-            </button>
-            <button type="button" className="btn btn-outline-success">
-              Success
-            </button>
-            <button type="button" className="btn btn-outline-danger">
-              Danger
-            </button>
-            <button type="button" className="btn btn-outline-warning">
-              Warning
-            </button>
-            <button type="button" className="btn btn-outline-info">
-              Info
-            </button>
-            <button type="button" className="btn btn-outline-light">
-              Light
-            </button>
-            <button type="button" className="btn btn-outline-dark">
-              Dark
-            </button>
-          </div>
-          <br /> */}
         </>
       ),
     },
@@ -244,7 +185,7 @@ const ButtonDocs: React.FC = () => {
         <>
           <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center">
             <div>
-              <button type="button" className="btn btn-primary btn-icon">
+              <button type="button" className="btn btn-primary">
                 <i className="bx bxs-info-circle o-icon"></i>
                 Botón
               </button>
@@ -252,7 +193,7 @@ const ButtonDocs: React.FC = () => {
             <div>
               <button
                 type="button"
-                className="btn btn-primary btn-icon"
+                className="btn btn-primary"
                 aria-label="Botón"
               >
                 <span
@@ -265,68 +206,6 @@ const ButtonDocs: React.FC = () => {
             </div>
           </div>
           <br />
-          {/* <div className="d-flex gap-3 flex-wrap align-items-center">
-          <div>
-              <button type="button" className="btn btn-primary btn-sm btn-icon">
-                <i className="bx bxs-info-circle o-icon"></i>
-                Chico
-              </button>
-            </div>
-            <div>
-              <button type="button" className="btn btn-primary btn-icon">
-                <i className="bx bxs-info-circle o-icon"></i>
-                Mediano
-              </button>
-            </div>
-            <div>
-              <button type="button" className="btn btn-primary btn-lg btn-icon">
-                <i className="bx bxs-info-circle o-icon"></i>
-                Grande
-              </button>
-            </div>
-            <div>
-              <button
-                type="button"
-                className="btn btn-primary btn-sm btn-icon"
-                aria-label="Botón"
-              >
-                <span
-                  className="material-symbols-rounded o-icon"
-                  aria-hidden="true"
-                >
-                  info
-                </span>
-              </button>
-            </div>
-            <div>
-              <button
-                type="button"
-                className="btn btn-primary btn-icon"
-                aria-label="Botón"
-              >
-                <span
-                  className="material-symbols-rounded o-icon"
-                  aria-hidden="true"
-                >
-                  info
-                </span>
-              </button>
-            </div>
-            <div>
-              <button
-                type="button"
-                className="btn btn-primary btn-lg btn-icon"
-                aria-label="Botón"
-              >
-                <span
-                  className="material-symbols-rounded o-icon"
-                  aria-hidden="true"
-                >
-                  info
-                </span>
-              </button>
-            </div>
-          </div> */}
           <CodeCopy code={BUTTON_ICON} />
         </>
       ),

@@ -40,11 +40,11 @@ export const BUTTON_BLOCK =
 `;
 export const BUTTON_ICON =
   `
-    <button type="button" class="btn btn-primary btn-icon">
+    <button type="button" class="btn btn-primary">
       <i class="bx bxs-info-circle o-icon"></i> Botón
     </button>
 
-    <button type="button" class="btn btn-primary btn-icon" aria-label="Botón">
+    <button type="button" class="btn btn-primary" aria-label="Botón">
       <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>
     </button>
 `;

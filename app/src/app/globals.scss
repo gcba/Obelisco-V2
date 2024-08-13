@@ -1,4 +1,4 @@
-// @import "~@gcba/obelisco/dist/obelisco.css";
+@import "../../../dist/styles.css";
 
 // Generic Styles
 html {
@@ -125,4 +125,16 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* estilos navegacion vertical izquierdo */
+.sticky-nav {
+  position: sticky;
+  top: 132px;
+
+  nav {
+    overflow-y: scroll;
+    height: 68dvh;
+    padding: 0.3rem;
+  }
 }

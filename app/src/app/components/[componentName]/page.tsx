@@ -39,7 +39,7 @@ const componentMap: { [key: string]: React.ReactNode } = {
   tooltip: <TooltipDocs />,
   typography: <TypographyDocs />,
   'dropdown-nav': <DropdownNavDocs />,
-  grid: <GridDocs />
+  grid: <GridDocs />,
 };
 
 export default function ComponentPage ({ params }: { params: { componentName: string } }) {

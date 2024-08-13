@@ -19,7 +19,7 @@ const NavLayout = ({ items, className }: NavProps) => {
 
   return (
     <nav className={className}>
-      <ul className="nav flex-column nav-pills">
+      <ul className="nav flex-column nav-pills hola">
         {items.map((item, index) => {
           const isActive = pathname.startsWith(item.url || "#");
 

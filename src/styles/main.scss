@@ -3,15 +3,16 @@
 // Import Obelisco colors
 @import "variables/colors";
 @import "variables/fonts";
+@import "variables/breakpoints";
 // Import Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 // Import custom variables and mixins
 @import "variables/typography";
-@import "variables/breakpoints";
 @import "variables/mixins";
 
 // Import utilities
+@import "utilities/containers";
 @import "utilities/globals";
 
 // Import component styles
@@ -26,3 +27,9 @@
 @import "components/switch";
 @import "components/modal";
 @import "components/status-message";
+@import "components/dropdown";
+@import "components/tabs";
+@import "components/badge";
+@import "components/banner";
+@import "components/spinner";
+@import "components/button";

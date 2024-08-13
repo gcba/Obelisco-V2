@@ -1,9 +1,7 @@
-import HomeOne from "@/components/Home/home";
+import HomeDocs from "@/documents/Home/homeDocs";
 
 export default function Home () {
   return (
-    <main>
-      <HomeOne />
-    </main>
+    <HomeDocs />
   );
 }

@@ -1,81 +1,140 @@
-export const EGcodeSimpleAlert =
+export const EGcodeSimpleBanner =
   `
-    <div class="alert alert-info" role="alert">
-      <p>Esta es la descripción de una alerta de información.</p>
-    </div>
-    
-    <div class="alert alert-primary" role="alert">
-      <p>Esta es la descripción de una alerta de advertencia.</p>
-    </div>
-    
-    <div class="alert alert-success" role="alert">
-      <p>Esta es la descripción de una alerta de éxito.</p>
-    </div>
-    
-    <div class="alert alert-danger" role="alert">
-      <p>Esta es la descripción de una alerta de error.</p>
+    <div className="banner">
+      <div className="banner-content">
+        <p className="banner-text">
+          Esta descripción de banner
+          <strong>puede tener énfasis</strong>
+          y
+          <a href="#" target="_blank" rel="noreferrer">enlace</a>
+          .
+        </p>
+      </div>
     </div>
 
+    <div className="banner banner-dark">
+      <div className="banner-content">
+        <p className="banner-text">
+          Esta descripción de banner
+          <strong>puede tener énfasis</strong>
+          y
+          <a href="#" target="_blank" rel="noreferrer">enlace</a>
+          .
+        </p>
+      </div>
+    </div>
 `;
 
-export const EGcodeCloseAlert =
+export const EGcodeSimpleBannerWithButton =
   `
-  <div
-    class="alert alert-warning alert-dismissible show fade"
-    role="alert"
-  >
-    <p>Esta es la descripción de una alerta de error.</p>
-    <button
-      type="button"
-      class="close"
-      data-dismiss="alert"
-      aria-label="Cerrar"
-    >
-      <span class="material-icons-round">close</span>
-    </button>
+  <div className="banner">
+    <div className="banner-content">
+      <span className="material-symbols-rounded o-icon">
+        terminal
+      </span>
+      <p className="banner-text">
+        Este banner tiene un solo botón y
+        <strong>puede tener énfasis</strong>
+        . Se truncan los textos que superen más de una línea de texto.
+      </p>
+      <div className="banner-actions">
+        <a
+          href="#"
+          target="_blank"
+          rel="noreferrer"
+          className="btn btn-sm btn-secondary"
+        >
+          Botón
+        </a>
+      </div>
+    </div>
   </div>
 
-  <p>Nuevo html de B5</p>
-
-  <div
-    class="alert alert-warning alert-dismissible fade show"
-    role="alert"
-  >
-    <strong>Holy guacamole!</strong> You should check in on some of those
-    fields below.
-    <button
-      type="button"
-      class="btn-close"
-      data-bs-dismiss="alert"
-      aria-label="Cerrar"
-    ></button>
+  <div className="banner banner-dark">
+    <div className="banner-content">
+      <span className="material-symbols-rounded o-icon">
+        terminal
+      </span>
+      <p className="banner-text">
+        Este banner tiene un solo botón y
+        <strong>puede tener énfasis</strong>
+        . Se truncan los textos que superen más de una línea de texto.
+      </p>
+      <div className="banner-actions">
+        <a
+          href="#"
+          target="_blank"
+          rel="noreferrer"
+          className="btn btn-sm btn-secondary"
+        >
+          Botón
+        </a>
+      </div>
+    </div>
   </div>
 
 `
 
-export const EGcodeWithStrong = `
-  <div class="alert alert-danger" role="alert">
-    <p>
-      <strong>Este es un destacado de una alerta de error.</strong>
-      Esta es la descripción de una alerta de error que continua al texto
-      destacado.
-    </p>
-    <ol class="list-links">
-      <li>
-        <a href="#">Ancla al error 1</a>
-      </li>
-      <li>
-        <a href="#">Ancla al error 2</a>
-      </li>
-      <li>
-        <a href="#">Ancla al error 3</a>
-      </li>
-      <li>
-        <a href="#">Ancla al error 4</a>
-      </li>
-      <li>
-        <a href="#">Ancla al error 5</a>
-      </li>
-    </ol>
+export const EGcodeSimpleBannerWithButtons = `
+  <div className="banner">
+    <div className="banner-content">
+      <span className="material-symbols-rounded o-icon">
+        terminal
+      </span>
+      <p className="banner-text">
+        Este banner tiene dos botones y
+        <strong>puede tener énfasis</strong>
+        . Se truncan los textos que superen más de una línea de texto.
+      </p>
+      <div className="banner-actions">
+        <a
+          href="#"
+          target="_blank"
+          rel="noreferrer"
+          className="btn btn-sm btn-secondary"
+        >
+          Botón
+        </a>
+        <a
+          href="#"
+          target="_blank"
+          rel="noreferrer"
+          className="btn btn-sm btn-primary"
+        >
+          Botón
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div className="banner banner-dark">
+    <div className="banner-content">
+      <span className="material-symbols-rounded o-icon">
+        terminal
+      </span>
+      <p className="banner-text">
+        Este banner tiene dos botones y
+        <strong>puede tener énfasis</strong>
+        . Se truncan los textos que superen más de una línea de texto.
+      </p>
+      <div className="banner-actions">
+        <a
+          href="#"
+          target="_blank"
+          rel="noreferrer"
+          className="btn btn-sm btn-secondary"
+        >
+          Botón
+        </a>
+        <a
+          href="#"
+          target="_blank"
+          rel="noreferrer"
+          className="btn btn-sm btn-primary"
+        >
+          Botón
+        </a>
+      </div>
+    </div>
   </div>
 `;

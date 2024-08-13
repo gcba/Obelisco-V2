@@ -205,16 +205,20 @@ $body-secondary-color: $grisulado-800 !default;
 /*  Hover  */
 $hover-color: $blue-700;
 $hover-box-shadow: 0 0 0 0.125rem $hover-color;
+$hover-color-danger: $red-600;
+$hover-box-shadow-danger: 0 0 0 0.125rem $hover-color-danger;
 
 /*  Focus  */
 $focus-color: $cyan-800;
 $focus-box-shadow: 0 0 0 0.25rem $focus-color;
 $focus-box-shadow-subtle: 0 0 0 0.125rem $focus-color;
+$focus-box-shadow-danger: 0 0 0 0.25rem $red-800;
 
 /*  Active  */
 $active-color: $blue-700;
 $active-border-color: $blue-800; //#1C345F
 $active-border: 0 0 0 0.125rem $active-color;
+$active-color-danger: $red-600;
 
 /*  Visited  */
 $visited-color: $purple-700; // #6D0099

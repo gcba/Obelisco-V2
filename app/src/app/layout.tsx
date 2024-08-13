@@ -1,14 +1,13 @@
 "use client";
 import { usePathname } from "next/navigation";
-import "../../../dist/styles.css";
 import "./globals.scss";
 import HeaderDesktop from "@/components/Layout/Headers/Desktop";
 import NavLayout from "@/components/Layout/Navigation/nav";
-// import 'obelisco-v2/dist/styles.css';
 
 export const componentsPages = [
   { text: "Tipografía", url: "/components/typography", id: 0 },
   { text: "Colores", url: "/components/colors", id: 1 },
+  { text: "Grilla", url: "/components/grid", id: 1 },
   { text: "Enlace", url: "/components/link", id: 2 },
   { text: "Alertas", url: "/components/alert", id: 3 },
   {
@@ -30,7 +29,16 @@ export const componentsPages = [
   { text: "Tooltip", url: "/components/tooltip", id: 8 },
   { text: "Modal", url: "/components/modal", id: 9 },
   { text: "Mensaje de estado", url: "/components/status-message", id: 10 },
-  { text: "Formulario de textos", url: "/components/form-text", id: 11 },
+  {
+    text: "Desplagable de Navegación",
+    url: "/components/dropdown-nav",
+    id: 11,
+  },
+  { text: "Etiquetas", url: "/components/badge", id: 12 },
+  { text: "Banner", url: "/components/banner", id: 13 }
+  { text: "Spinner", url: "/components/spinner", id: 14 },
+  { text: "Botones", url: "/components/button", id: 15 },
+  { text: "Formulario de textos", url: "/components/form-text", id: 16 },
 ];
 
 const gettingPages = [
@@ -44,10 +52,10 @@ export default function RootLayout ({
   children: React.ReactNode;
 }>) {
   const pathname = usePathname();
+  const isHome = pathname === "/";
   return (
     <html lang="en">
       <head>
-        <link href="../../../dist/styles.css" rel="stylesheet" />
         <link
           href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
           rel="stylesheet"
@@ -71,27 +79,36 @@ export default function RootLayout ({
 
         <div className="layout">
           <main>
-            <div className="box">
-              {pathname.includes("/components") && (
-                <div className="nav-left">
-                  <div className="nav-left-box-title">
-                    <h3 className="pl-2">Componentes</h3>
-                  </div>
-                  <hr />
-                  <NavLayout items={componentsPages} />
-                </div>
-              )}
-              {pathname.includes("/getting-started") && (
-                <div className="nav-left">
-                  <div className="nav-left-box-title">
-                    <h3 className="pl-2 ">Comenzando</h3>
-                  </div>
-                  <hr />
-                  <NavLayout items={gettingPages} />
-                </div>
-              )}
+            <div className="container">
+              {isHome ? (
+                children
+              ) : (
+                <div className="row pt-5">
+                  <div className="col-3 d-none d-lg-block ">
+                    {pathname.includes("/components") && (
+                      <div className="nav-left sticky-nav">
+                        <div className="nav-left-box-title">
+                          <p className="headline-lg fw-bold">Componentes</p>
+                        </div>
+                        <hr />
+                        <NavLayout items={componentsPages} />
+                      </div>
+                    )}
 
-              <div className="">{children}</div>
+                    {pathname.includes("/getting-started") && (
+                      <div className="nav-left position-sticky">
+                        <div className="nav-left-box-title">
+                          <p className="headline-lg fw-bold">Comenzando</p>
+                        </div>
+                        <hr />
+                        <NavLayout items={gettingPages} />
+                      </div>
+                    )}
+                  </div>
+
+                  <div className="col-12 col-lg-9">{children}</div>
+                </div>
+              )}
             </div>
           </main>
         </div>

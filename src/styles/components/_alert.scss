@@ -1,42 +1,54 @@
-/* === Variable and mixins overides === */
-
 $alert-padding-y: 1rem;
 $alert-padding-x: 1.5rem;
 $alert-padding-x-mobile: 1rem;
 $alert-padding-left: 3.75rem;
 $alert-padding-left-mobile: 3.25rem;
-
+ 
 $alert-border-width: 2px;
-
+ 
 $alert-border-level: 0;
-
+ 
 $alert-icon-size: 1.5rem;
 $alert-icon-position-top: 1rem;
 $alert-icon-position-left: 1.5rem;
 $alert-icon-position-left-mobile: 1rem;
 $alert-close-btn-width: 5.5rem;
 $alert-text-distance: 0.5rem;
-
+ 
 // Íconos para cada tipo de alerta
-
+ 
 $close-icon: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' height='24' width='24' viewBox='0 0 24 24' style='fill: rgba(0, 0, 0, 1)'><path d='m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z'></path></svg>");
-
+ 
 $alert-icons: (
-  'success': url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(38, 135, 74, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"></path></svg>'),
-  'danger': url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(201, 59, 59, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm4.207 12.793-1.414 1.414L12 13.414l-2.793 2.793-1.414-1.414L10.586 12 7.793 9.207l1.414-1.414L12 10.586l2.793-2.793 1.414 1.414L13.414 12l2.793 2.793z"></path></svg>'),
-  'warning': url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 168, 46, 1);transform: ;msFilter:;"><path d="M12.884 2.532c-.346-.654-1.422-.654-1.768 0l-9 17A.999.999 0 0 0 3 21h18a.998.998 0 0 0 .883-1.467L12.884 2.532zM13 18h-2v-2h2v2zm-2-4V9h2l.001 5H11z"></path></svg>'),
-  'primary': url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(51, 106, 204, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>'),
-  'info': url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 133, 173, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>')
+  'success':
+    url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(38, 135, 74, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"></path></svg>'),
+  'danger':
+    url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(201, 59, 59, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm4.207 12.793-1.414 1.414L12 13.414l-2.793 2.793-1.414-1.414L10.586 12 7.793 9.207l1.414-1.414L12 10.586l2.793-2.793 1.414 1.414L13.414 12l2.793 2.793z"></path></svg>'),
+  'warning':
+    url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 168, 46, 1);transform: ;msFilter:;"><path d="M12.884 2.532c-.346-.654-1.422-.654-1.768 0l-9 17A.999.999 0 0 0 3 21h18a.998.998 0 0 0 .883-1.467L12.884 2.532zM13 18h-2v-2h2v2zm-2-4V9h2l.001 5H11z"></path></svg>'),
+  'primary':
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(51, 106, 204, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>'),
+  'info':
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 133, 173, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>')
 );
-
+ 
 /* === Custom variables and mixins === */
+ 
+$theme-color-light-bg: (
+  "info": $sky-50,
+  "warning": $orange-50,
+  "danger": $red-50,
+  "success": $green-50,
+  "primary": $blue-50,
+  "secondary": $gray-50 //Falta definir este color en Figma
+);
 
 @mixin alert-icon($type) {
   &::before {
     background-image: map-get($alert-icons, $type);
   }
 }
-
+ 
 @mixin alert-types($type) {
   background-color: map-get($theme-color-light-bg, $type);
   border: none;
@@ -44,16 +56,16 @@ $alert-icons: (
   outline-offset: -2px;
   border-radius: 0.5rem;
 }
-
-
+ 
+ 
 /* === Custom styles === */
-
+ 
 .alert {
   counter-reset: section;
   padding-left: $alert-padding-left;
   word-break: break-word;
   margin-bottom: 0;
-
+ 
   &::before {
     content: '';
     position: absolute;
@@ -63,63 +75,62 @@ $alert-icons: (
     height: $alert-icon-size;
     inset: $alert-icon-position-top 0 0 $alert-icon-position-left;
   }
-
-
+ 
+ 
   @each $name, $color in $theme-colors {
     &.alert-#{$name} {
-      @include alert-icon($name);
-      @include alert-types($name);
-      color: $body-color;
+        @include alert-icon($name);
+        @include alert-types($name);
+        color: $body-color;
     }
   }
-
+ 
   p,
   ol {
     margin-bottom: $alert-text-distance;
   }
-
+ 
   ol {
     color: $body-color;
     padding-left: 0;
     list-style: none;
-
+ 
     &.list-links {
       color: $blue;
-
+ 
       span {
         text-decoration: underline;
       }
     }
-
+ 
     li {
       margin-bottom: $alert-text-distance;
-
+ 
       &::before {
         counter-increment: section;
         content: counter(section) '. ';
       }
     }
   }
-
+ 
   *:last-child {
     margin-bottom: 0;
   }
-
+ 
   a:not(.btn) {
     color: $blue;
-
+ 
     &:visited {
       color: $blue;
     }
   }
-
+ 
   &.alert-dismissible {
     padding-right: 3.75rem;
-
     p {
       margin-bottom: 0;
     }
-
+ 
     .close {
       color: $body-color;
       opacity: 1;
@@ -129,19 +140,18 @@ $alert-icons: (
     }
   }
 }
-
+ 
 @include media-breakpoint-down(sm) {
   .alert {
     padding-left: $alert-padding-left-mobile;
     padding-right: $alert-padding-x-mobile;
-
+ 
     &::before {
       left: $alert-icon-position-left-mobile;
     }
-
+ 
     &.alert-dismissible {
       padding-right: 3.25rem;
-
       .close {
         margin-right: $alert-padding-x-mobile;
       }

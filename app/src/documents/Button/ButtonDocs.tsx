@@ -11,6 +11,8 @@ import {
   BUTTON_ICON,
   BUTTON_BLOCK,
   BUTTON_ANCHOR,
+  BUTTON_SPINNER,
+  BUTTON_OUTLINE_SPINNER,
 } from "./code-views";
 
 const ButtonDocs: React.FC = () => {
@@ -73,7 +75,9 @@ const ButtonDocs: React.FC = () => {
           </div>
           <CodeCopy code={BUTTON_ANCHOR} />
           <br />
-          <p className="headline-lg fw-bold">Estilos de botones en fondo oscuro</p>
+          <p className="headline-lg fw-bold">
+            Estilos de botones en fondo oscuro
+          </p>
           <div className="d-flex gap-3 justify-content-center flex-wrap bg-dark p-2">
             <button type="button" className="btn btn-primary">
               Primario
@@ -184,41 +188,137 @@ const ButtonDocs: React.FC = () => {
       content: (
         <>
           <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center">
-            <div>
-              <button type="button" className="btn btn-primary">
-                <i className="bx bxs-info-circle o-icon"></i>
-                Botón
-              </button>
-            </div>
-            <div>
-              <button
-                type="button"
-                className="btn btn-primary"
-                aria-label="Botón"
+            <button type="button" className="btn btn-primary">
+              <i className="bx bxs-info-circle o-icon"></i>
+              Botón
+            </button>
+            <button
+              type="button"
+              className="btn btn-primary"
+              aria-label="Botón"
+            >
+              <span
+                className="material-symbols-rounded o-icon"
+                aria-hidden="true"
               >
-                <span
-                  className="material-symbols-rounded o-icon"
-                  aria-hidden="true"
-                >
-                  info
-                </span>
-              </button>
-            </div>
+                info
+              </span>
+            </button>
           </div>
           <br />
           <CodeCopy code={BUTTON_ICON} />
         </>
       ),
     },
+    {
+      id: "section-5",
+      title: "Con spinner",
+      content: (
+        <>
+          <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center">
+            <button type="button" className="btn btn-primary">
+              <div
+                className="spinner-border text-light spinner-border-sm"
+                role="status"
+              >
+                <span className="sr-only">Cargando...</span>
+              </div>
+              Botón
+            </button>
+            <button type="button" className="btn btn-secondary">
+              <div
+                className="spinner-border text-light spinner-border-sm"
+                role="status"
+              >
+                <span className="sr-only">Cargando...</span>
+              </div>
+              Botón
+            </button>
+            <button type="button" className="btn btn-success">
+              <div
+                className="spinner-border text-light spinner-border-sm"
+                role="status"
+              >
+                <span className="sr-only">Cargando...</span>
+              </div>
+              Botón
+            </button>
+            <button type="button" className="btn btn-danger">
+              <div
+                className="spinner-border text-light spinner-border-sm"
+                role="status"
+              >
+                <span className="sr-only">Cargando...</span>
+              </div>
+              Botón
+            </button>
+            <button type="button" className="btn btn-link">
+              <div
+                className="spinner-border text-info spinner-border-sm"
+                role="status"
+              >
+                <span className="sr-only">Cargando...</span>
+              </div>
+              Botón
+            </button>
+          </div>
+          <CodeCopy code={BUTTON_SPINNER} />
+          <br />
+          <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center">
+            <button type="button" className="btn btn-outline-primary">
+              <div
+                className="spinner-border text-primary spinner-border-sm"
+                role="status"
+              >
+                <span className="sr-only">Cargando...</span>
+              </div>
+              Botón
+            </button>
+            <button type="button" className="btn btn-outline-secondary">
+              <div
+                className="spinner-border text-secondary spinner-border-sm"
+                role="status"
+              >
+                <span className="sr-only">Cargando...</span>
+              </div>
+              Botón
+            </button>
+            <button type="button" className="btn btn-outline-success">
+              <div
+                className="spinner-border text-success spinner-border-sm"
+                role="status"
+              >
+                <span className="sr-only">Cargando...</span>
+              </div>
+              Botón
+            </button>
+            <button type="button" className="btn btn-outline-danger">
+              <div
+                className="spinner-border text-danger spinner-border-sm"
+                role="status"
+              >
+                <span className="sr-only">Cargando...</span>
+              </div>
+              Botón
+            </button>
+            <button type="button" className="btn btn-outline-link">
+              <div
+                className="spinner-border text-info spinner-border-sm"
+                role="status"
+              >
+                <span className="sr-only">Cargando...</span>
+              </div>
+              Botón
+            </button>
+          </div>
+          <CodeCopy code={BUTTON_OUTLINE_SPINNER} />
+          <br />
+        </>
+      ),
+    },
   ];
 
-  return (
-    <DocumentationTemplate
-      title="Botones"
-      description="Los botones permiten iniciar acciones o navegar a otras páginas. Las etiquetas de los botones expresan qué acción ocurrirá cuando la persona usuaria interactúe con él."
-      sections={sections}
-    />
-  );
+  return <DocumentationTemplate sections={sections} />;
 };
 
 export default ButtonDocs;

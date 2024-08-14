@@ -55,7 +55,7 @@ $calc-right-x: calc(0% - 30px);
   //Arrow
   &:before {
     transform: rotate($tooltip-arrow-rotate);
-    background-color: $grisulado-700;
+    background-color: $blue-950;
     border-radius: $tooltip-arrow-border-radius;
     width: $tooltip-arrow;
     height: $tooltip-arrow;
@@ -83,7 +83,7 @@ $calc-right-x: calc(0% - 30px);
   //Arrow
   &:before {
     transform: rotate($tooltip-arrow-rotate);
-    background-color: $grisulado-700;
+    background-color: $blue-950;
     border-radius: 2px;
     width: $tooltip-arrow;
     height: $tooltip-arrow;
@@ -145,7 +145,7 @@ $calc-right-x: calc(0% - 30px);
     overflow: hidden;
     padding: $tooltip-padding;
     border-radius: $tooltip-border-radius;
-    background: $grisulado-700;
+    background: $blue-950;
     color: $white;
     z-index: 99;
     width: max-content;

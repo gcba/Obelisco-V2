@@ -1,0 +1,176 @@
+.tabs-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0;
+
+  /* tabs-controls es el contenedor de los botones prev y next */
+  &:has(.tabs-controls) {
+    padding: 0 2.5rem;
+  }
+
+  .nav {
+    width: fit-content;
+    overflow-x: hidden;
+
+    /*Esta clase "fixed-width" genera la variante ancho completo de tabs */
+    &.fixed-width {
+      .nav-item>.nav-link {
+        width: auto;
+        min-width: $nav-link-fixed-width;
+
+        @include media-breakpoint-down(md) {
+          min-width: auto;
+        }
+      }
+    }
+
+    /* Esta seccion define los tamaños disponibles para tabs */
+    &.tabs {
+      .nav-item>.nav-link {
+        &-lg {
+          padding: $nav-link-padding-lg-y $nav-link-padding-x;
+        }
+
+        &-sm {
+          padding: $nav-link-padding-sm-y $nav-link-padding-x;
+        }
+      }
+    }
+  }
+
+  /* Estilos de Tabs, moficia los estilos de cada item de la pestaña */
+  .tabs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    padding-bottom: 0.25rem;
+
+    .nav-item {
+      white-space: nowrap;
+
+      button {
+        border: none;
+      }
+
+      .nav-link {
+        background: transparent;
+        transition: font-weight 0.4s ease-in-out;
+
+        &.active,
+        &:active {
+          font-weight: $font-weight-bold;
+          color: $body-color;
+          box-shadow: inset 0px -4px 0px 0px $nav-link-border-active;
+          border-radius: 0;
+
+          &:hover {
+            box-shadow: inset 0px -4px 0px 0px $nav-link-border-active;
+          }
+
+          &:focus {
+            border-radius: $border-radius * 2;
+          }
+        }
+
+        &:focus {
+          box-shadow: $input-btn-focus-box-shadow inset;
+
+          &:hover {
+            box-shadow: $input-btn-focus-box-shadow inset;
+          }
+        }
+
+        &:hover {
+          box-shadow: none;
+
+          .nav-icon {
+            .o-icon {
+              text-decoration: none;
+            }
+          }
+        }
+
+        .nav-icon {
+          justify-content: center;
+          gap: 0.625rem; //Este gap define el espaciado en pestañas
+        }
+      }
+    }
+
+    .nav-item[draggable='true'] {
+      cursor: move;
+    }
+
+    /* Estilos para pestañas con fondo, son dos variables de fondo, nav-box y nav-box-bg  */
+    &.nav-box {
+      border: none;
+      padding: 0;
+
+      .nav-item {
+        .nav-link {
+          background-color: $grisulado-50;
+          border-radius: 8px 8px 0px 0px;
+          border: none;
+
+          &.active,
+          &:active {
+            background-color: $grisulado-50;
+            color: $active-color;
+            box-shadow: none;
+
+            &:focus {
+              border-radius: $border-radius * 2 $border-radius * 2 0px 0px;
+            }
+          }
+        }
+      }
+
+      &-bg {
+        @extend .nav-box;
+
+        .nav-item {
+          .nav-link {
+
+            &.active,
+            &:active {
+              background-color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* Estilos para botones prev y next de el slider de la pestaña */
+  .prev-next {
+    width: 2.5rem;
+    height: 100%;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+
+    >span {
+      font-size: 16px;
+    }
+
+    &:nth-of-type(1) {
+      left: 0;
+    }
+
+    &:nth-of-type(2) {
+      right: 0;
+      display: flex;
+    }
+  }
+
+  @extend .tabs;
+}

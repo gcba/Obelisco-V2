@@ -32,7 +32,7 @@ export const EGcodeWithIconVertical =
       <li class="nav-item">
         <a class="nav-link" href="#">
           <div class="nav-icon">
-            <i class="bx bxs-user-circle"></i>
+            <i class="bx bxs-user-circle o-icon"></i>
             <span>Link</span>
           </div>
         </a>
@@ -40,7 +40,7 @@ export const EGcodeWithIconVertical =
       <li class="nav-item">
         <a class="nav-link active" href="#">
           <div class="nav-icon">
-            <i class="bx bxs-user-circle"></i>
+            <i class="bx bxs-user-circle o-icon"></i>
             <span>Activo</span>
           </div>
         </a>
@@ -48,7 +48,7 @@ export const EGcodeWithIconVertical =
       <li class="nav-item">
         <a class="nav-link" href="#">
           <div class="nav-icon">
-            <i class="bx bxs-user-circle"></i>
+            <i class="bx bxs-user-circle o-icon"></i>
             <span>Link</span>
           </div>
         </a>
@@ -61,7 +61,7 @@ export const EGcodeWithIconVertical =
           tabindex="-1"
         >
           <div class="nav-icon">
-            <i class="bx bxs-user-circle"></i>
+            <i class="bx bxs-user-circle o-icon"></i>
             <span>Deshabilitado</span>
           </div>
         </a>
@@ -225,7 +225,7 @@ export const EGcodeThreeLevelWithIconVertical = `
       <li class="nav-item">
         <a class="nav-link" href="#">
           <div class="nav-icon">
-            <i class="bx bxs-user-circle"></i>
+            <i class="bx bxs-user-circle o-icon"></i>
             <span>Categorías</span>
           </div>
         </a>
@@ -233,7 +233,7 @@ export const EGcodeThreeLevelWithIconVertical = `
       <li class="nav-item">
         <a class="nav-link active-child" href="#">
           <div class="nav-icon">
-            <i class="bx bxs-user-circle"></i>
+            <i class="bx bxs-user-circle o-icon"></i>
             <span>Locales y comercios</span>
           </div>
         </a>
@@ -276,7 +276,7 @@ export const EGcodeThreeLevelWithIconVertical = `
       <li class="nav-item">
         <a class="nav-link" href="#">
           <div class="nav-icon">
-            <i class="bx bxs-user-circle"></i>
+            <i class="bx bxs-user-circle o-icon"></i>
             <span>Actividades jurídicas</span>
           </div>
         </a>
@@ -284,7 +284,7 @@ export const EGcodeThreeLevelWithIconVertical = `
       <li class="nav-item">
         <a class="nav-link" href="#">
           <div class="nav-icon">
-            <i class="bx bxs-user-circle"></i>
+            <i class="bx bxs-user-circle o-icon"></i>
             <span>Otras actividades</span>
           </div>
         </a>

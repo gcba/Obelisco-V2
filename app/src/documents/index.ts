@@ -1,4 +1,5 @@
 export * from "./Alert/AlertDocs";
+export * from "./Access/AccessDocs"
 export * from "./Banner/BannerDocs";
 export * from "./Button/ButtonDocs";
 export * from "./Collapse/CollapseDocs";

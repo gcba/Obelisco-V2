@@ -186,9 +186,9 @@ const AlertDocs: React.FC = () => {
           >
             <strong>Este es un destacado de una alerta de información. </strong>
             Esta es la descripción de una alerta de información que continua al
-            texto destacado, incluso con{" "}
+            texto destacado, incluso 
             <a href="#" className="alert-link">
-              enlace
+              con enlaces
             </a>
             .
             <button
@@ -205,9 +205,9 @@ const AlertDocs: React.FC = () => {
           >
             <strong>Este es un destacado de una alerta de información. </strong>
             Esta es la descripción de una alerta de información que continua al
-            texto destacado, incluso con{" "}
+            texto destacado, incluso 
             <a href="#" className="alert-link">
-              enlace
+              con enlaces
             </a>
             .
             <button
@@ -224,9 +224,9 @@ const AlertDocs: React.FC = () => {
           >
             <strong>Este es un destacado de una alerta de información. </strong>
             Esta es la descripción de una alerta de información que continua al
-            texto destacado, incluso con{" "}
+            texto destacado, incluso 
             <a href="#" className="alert-link">
-              enlace
+              con enlaces
             </a>
             .
             <button
@@ -243,9 +243,9 @@ const AlertDocs: React.FC = () => {
           >
             <strong>Este es un destacado de una alerta de información. </strong>
             Esta es la descripción de una alerta de información que continua al
-            texto destacado, incluso con{" "}
+            texto destacado, incluso 
             <a href="#" className="alert-link">
-              enlace
+              con enlaces
             </a>
             .
             <button
@@ -264,7 +264,7 @@ const AlertDocs: React.FC = () => {
     },
     {
       id: "section-6",
-      title: "Con lista de enlaces",
+      title: "Con lista de enlacess",
       content: (
         <section>
           <div
@@ -311,7 +311,7 @@ const AlertDocs: React.FC = () => {
     },
     {
       id: "section-7",
-      title: "Con lista de enlaces descriptiva",
+      title: "Con lista de enlacess descriptiva",
       content: (
         <section>
           <div

@@ -1,10 +1,8 @@
 "use client";
 import { usePathname } from "next/navigation";
-import "../../../dist/styles.css";
 import "./globals.scss";
 import HeaderDesktop from "@/components/Layout/Headers/Desktop";
 import NavLayout from "@/components/Layout/Navigation/nav";
-// import 'obelisco-v2/dist/styles.css';
 
 export const componentsPages = [
   { text: "Tipografía", url: "/components/typography", id: 0 },
@@ -37,6 +35,9 @@ export const componentsPages = [
     id: 11,
   },
   { text: "Etiquetas", url: "/components/badge", id: 12 },
+  { text: "Banner", url: "/components/banner", id: 13 }
+  { text: "Spinner", url: "/components/spinner", id: 14 },
+  { text: "Botones", url: "/components/button", id: 15 },
 ];
 
 const gettingPages = [
@@ -54,7 +55,6 @@ export default function RootLayout ({
   return (
     <html lang="en">
       <head>
-        <link href="../../../dist/styles.css" rel="stylesheet" />
         <link
           href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
           rel="stylesheet"
@@ -85,7 +85,7 @@ export default function RootLayout ({
                 <div className="row pt-5">
                   <div className="col-3 d-none d-lg-block ">
                     {pathname.includes("/components") && (
-                      <div className="nav-left">
+                      <div className="nav-left sticky-nav">
                         <div className="nav-left-box-title">
                           <p className="headline-lg fw-bold">Componentes</p>
                         </div>
@@ -95,7 +95,7 @@ export default function RootLayout ({
                     )}
 
                     {pathname.includes("/getting-started") && (
-                      <div className="nav-left">
+                      <div className="nav-left position-sticky">
                         <div className="nav-left-box-title">
                           <p className="headline-lg fw-bold">Comenzando</p>
                         </div>

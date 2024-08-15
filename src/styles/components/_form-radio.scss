@@ -83,7 +83,7 @@ $custom-control-focus-color: $focus-color;
   left: 8px;
 }
 
-// Radio Input
+// Radio y Checkbox Input
 .form-check {
   padding: 0;
   margin-bottom: 0.5rem;
@@ -91,11 +91,16 @@ $custom-control-focus-color: $focus-color;
   .form-check-label {
     display: flex;
     gap: 0.25rem;
-    align-items: center;
-    padding: 0;
+    align-items: flex-start;
     width: fit-content;
     position: relative;
-
+    padding: 0;
+    
+    /* .form-check-text {
+      padding: 0 .25rem 0 0;
+    } */
+    
+    // Radio Input
     .form-check-input[type="radio"] {
       float: unset;
       margin: 0.125rem;
@@ -161,6 +166,142 @@ $custom-control-focus-color: $focus-color;
         color: $disabled-text;
         text-decoration: none;
         cursor: unset;
+      }
+    }
+  }
+
+
+  &.form-checkbox {
+    .form-check-label {
+      /* display: flex;
+      gap: 0.25rem;
+      align-items: center;
+      width: fit-content;
+      position: relative; */
+      padding: 0.5rem 0;
+      gap: 0;
+  
+      .form-check-text {
+        padding: 0 .25rem;
+      }
+      // Radio Input
+      .form-check-input[type="checkbox"] {
+        float: unset;
+        margin: 0 .5rem;
+        height: 1.5rem;
+        width: 1.5rem;
+        max-width: 1.5rem;
+        border: 0.125rem solid $body-color;
+
+        &:disabled, &.disabled {
+          border-color: $disabled-text;
+          opacity: 1;
+        }
+  
+        &:checked {
+          border-color: $active-color;
+          background-color: $active-color;
+          background-image: $custom-checkbox-indicator-icon-checked;
+          box-shadow: none;
+          /* box-shadow: inset 0 0 0 3.4px $white; */
+          &:disabled, &.disabled {
+            background-image: none;
+            background-color: $disabled-text;
+            border-color: $disabled-text;
+            opacity: 1;
+          }
+          &:active {
+            background-color: $active-color;
+          }
+        }
+  
+        &:focus,
+        &:focus-visible {
+          /* box-shadow: 0 0 0 7px $focus-color, inset 0 0 0 3.4px $white;
+          outline: 3px solid $white;
+          outline-offset: 0; */
+          box-shadow: none;
+  
+          // Estilos en el caso de que el focus sea en en el label  y no en el input solo
+          &:after {
+            content: '';
+            border-radius: 0.5rem;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            box-shadow: $focus-box-shadow;
+          }
+        }
+
+        &:active {
+          background-color: unset;
+          &:focus {
+            &:after {
+              box-shadow: none;
+            }
+          }
+
+        }
+  
+        &.is-invalid:not(:checked) {
+          border-color: $danger;
+        }
+      }
+  
+      &:hover {
+        cursor: pointer;
+        .form-check-input[type="checkbox"]:not(:disabled) {
+          border-color: $hover-color;
+          cursor: pointer;
+
+          &:checked {
+            background-color: $blue-800;
+            border-color: $blue-800;
+
+            ~.form-check-text {
+              color: $blue-800;
+              text-decoration: none;
+            }
+          }
+        }
+        .form-check-text {
+          color: $hover-color;
+          text-decoration: underline;
+          text-decoration-thickness: 1px;
+          cursor: pointer;
+        }
+
+        :has(.form-check-input[type="checkbox"]:checked) {
+          .form-check-text {
+            color: $blue-800;
+            text-decoration: none;
+          }
+        }
+      }
+  
+      &[aria-disabled="true"],
+      &[aria-disabled="true"]:hover {
+        cursor: unset;
+        color: $disabled-text;
+        opacity: 1;
+        .form-check-input[type="checkbox"] {
+          border-color: $disabled-text;
+          cursor: unset;
+
+          &:checked {
+            background-image: none;
+            background-color: $disabled-text;
+            opacity: 1;
+
+          }
+        }
+        .form-check-text {
+          color: $disabled-text;
+          text-decoration: none;
+          cursor: unset;
+        }
       }
     }
   }

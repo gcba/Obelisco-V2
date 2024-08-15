@@ -1,11 +1,30 @@
-export async function generateStaticParams () {
+export async function generateStaticParams() {
   const componentNames = [
-    'alert', 'badge', 'banner', 'block', 'button', 'cards', 'collapse',
-    'colors', 'link', 'modal', 'nav-horizontal', 'nav-vertical', 'status-message',
-    'switch', 'tabs', 'tooltip', 'typography', 'dropdown-nav', 'grid', 'banner', 'spinner'
+    "alert",
+    "badge",
+    "banner",
+    "block",
+    "button",
+    "cards",
+    "collapse",
+    "colors",
+    "link",
+    "modal",
+    "nav-horizontal",
+    "nav-vertical",
+    "status-message",
+    "switch",
+    "tabs",
+    "tooltip",
+    "typography",
+    "dropdown-nav",
+    "grid",
+    "banner",
+    "spinner",
+    "map",
   ];
 
-  return componentNames.map(name => ({
+  return componentNames.map((name) => ({
     componentName: name,
   }));
 }

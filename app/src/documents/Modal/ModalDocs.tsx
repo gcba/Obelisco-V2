@@ -3,7 +3,7 @@ import { ModalTypes } from "./code-views";
 import CodeCopy from "@/components/CodeBox";
 import MainDescription from "@/components/Template/MainDescription";
 
-const SwitchDocs: React.FC = () => {
+const ModalDocs: React.FC = () => {
   const sections = [
     {
       id: "section-1",
@@ -143,4 +143,4 @@ const SwitchDocs: React.FC = () => {
   return <DocumentationTemplate sections={sections} />;
 };
 
-export default SwitchDocs;
+export default ModalDocs;

@@ -186,7 +186,7 @@ const AlertDocs: React.FC = () => {
           >
             <strong>Este es un destacado de una alerta de información. </strong>
             Esta es la descripción de una alerta de información que continua al
-            texto destacado, incluso 
+            texto destacado, incluso {" "}
             <a href="#" className="alert-link">
               con enlaces
             </a>
@@ -205,7 +205,7 @@ const AlertDocs: React.FC = () => {
           >
             <strong>Este es un destacado de una alerta de información. </strong>
             Esta es la descripción de una alerta de información que continua al
-            texto destacado, incluso 
+            texto destacado, incluso {" "}
             <a href="#" className="alert-link">
               con enlaces
             </a>
@@ -224,7 +224,7 @@ const AlertDocs: React.FC = () => {
           >
             <strong>Este es un destacado de una alerta de información. </strong>
             Esta es la descripción de una alerta de información que continua al
-            texto destacado, incluso 
+            texto destacado, incluso {" "}
             <a href="#" className="alert-link">
               con enlaces
             </a>
@@ -243,7 +243,7 @@ const AlertDocs: React.FC = () => {
           >
             <strong>Este es un destacado de una alerta de información. </strong>
             Esta es la descripción de una alerta de información que continua al
-            texto destacado, incluso 
+            texto destacado, incluso {" "}
             <a href="#" className="alert-link">
               con enlaces
             </a>
@@ -264,7 +264,7 @@ const AlertDocs: React.FC = () => {
     },
     {
       id: "section-6",
-      title: "Con lista de enlacess",
+      title: "Con lista de enlaces",
       content: (
         <section>
           <div
@@ -311,7 +311,7 @@ const AlertDocs: React.FC = () => {
     },
     {
       id: "section-7",
-      title: "Con lista de enlacess descriptiva",
+      title: "Con lista de enlaces descriptiva",
       content: (
         <section>
           <div

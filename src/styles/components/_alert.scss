@@ -40,7 +40,7 @@ $theme-color-light-bg: (
   "danger": $red-50,
   "success": $green-50,
   "primary": $blue-50,
-  "secondary": $gray-50 //Falta definir este color en Figma,,
+  "secondary": $gray-50 //Falta definir este color en Figma,
 );
 
 /* === Custom variables and mixins === */
@@ -65,9 +65,8 @@ $theme-color-light-bg: (
   counter-reset: section;
   padding-left: $alert-padding-left;
   word-break: break-word;
-  margin-bottom: 0;
-  width: 712px;
   margin-bottom: 1rem;
+  width: 712px;
 
   &::before {
     content: "";
@@ -93,16 +92,18 @@ $theme-color-light-bg: (
   }
 
   ol {
-    color: $body-color;
+    color: $body-color; // $body-color
     padding-left: 0;
     list-style: none;
 
     &.list-links {
-      color: $blue; // era $blue
+      color: #38485c;
 
-      span {
-        text-decoration: underline;
-      }
+      // span {
+      //   // color: #101E37;
+      //   // text-decoration: underline;
+      // }
+      // Así queda como Obelisco hoy
     }
 
     li {
@@ -120,8 +121,7 @@ $theme-color-light-bg: (
   }
 
   a:not(.btn) {
-    color: #101e37; //$blue
-    font-weight: 400;
+    // color: $blue;
 
     &:visited {
       color: $blue;
@@ -141,6 +141,11 @@ $theme-color-light-bg: (
       margin: $alert-padding-y $alert-padding-x 0 0;
       height: 1.5rem;
     }
+  }
+
+  .alert-link{
+    font-weight: 400;
+    color: #101E37;
   }
 }
 

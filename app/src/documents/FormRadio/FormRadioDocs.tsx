@@ -1,9 +1,8 @@
 import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
 import CodeCopy from "@/components/CodeBox";
 import {
-  EGcodeSimpleAlert,
-  EGcodeCloseAlert,
-  EGcodeWithStrong,
+  RADIO,
+  RADIO_DISABLED,
 } from "./code-views";
 import MainDescription from "@/components/Template/MainDescription";
 
@@ -21,88 +20,93 @@ const FormRadioDocs: React.FC = () => {
       title: "Casilla única",
       content: (
         <div className="">
+          <p className="headline-md">Seleccioná una opción *</p>
           <div className="form-check">
-            <input
-              className="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-              id="flexRadioDefault1"
-            />
-            <label className="form-check-label" htmlFor="flexRadioDefault1">
-              Default radio
+            <label className="form-check-label" htmlFor="profession-designer">
+              <input
+                className="form-check-input"
+                type="radio"
+                name="profession"
+                id="profession-designer"
+                value="diseñador"
+                defaultChecked={true}
+              />
+              <span className="form-check-text">Diseñador</span>
             </label>
           </div>
           <div className="form-check">
-            <input
-              className="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-              id="flexRadioDefault2"
-            />
-            <label className="form-check-label" htmlFor="flexRadioDefault2">
-              Default checked radio
+            <label className="form-check-label" htmlFor="profession-developer">
+              <input
+                className="form-check-input"
+                type="radio"
+                name="profession"
+                id="profession-developer"
+                value="desarrollador"
+              />
+              <span className="form-check-text">Desarrollador</span>
             </label>
           </div>
-          
+          <div className="form-check">
+            <label className="form-check-label" htmlFor="profession-content">
+              <input
+                className="form-check-input"
+                type="radio"
+                name="profession"
+                id="profession-content"
+                value="redactor"
+              />
+              <span className="form-check-text">Redactor de contenidos</span>
+            </label>
+          </div>
+          <div className="form-check">
+            <label className="form-check-label" htmlFor="validation-content">
+              <input
+                className="form-check-input is-invalid"
+                type="radio"
+                name="profession"
+                id="validation-content"
+                value="invalido"
+              />
+              <span className="form-check-text">Inválido</span>
+            </label>
+          </div>
           <br />
-          <CodeCopy code={EGcodeSimpleAlert} />
+          <CodeCopy code={RADIO} />
         </div>
       ),
     },
     {
       id: "section-3",
-      title: "Con cierre",
+      title: "Deshabilitado",
       content: (
-        <div className="w-50 d-flex flex-column gap-2 mb-3">
-          <div
-            className="alert alert-warning alert-dismissible show fade"
-            role="alert"
-          >
-            <p>Esta es la descripción de una alerta de error.</p>
-            <button
-              type="button"
-              className="close"
-              data-dismiss="alert"
-              aria-label="Cerrar"
+        <>
+          <div className="form-check">
+            <label
+              className="form-check-label"
+              htmlFor="disabled"
+              aria-disabled="true"
             >
-              <span className="material-icons-round">close</span>
-            </button>
+              <input
+                className="form-check-input"
+                type="radio"
+                name="profession"
+                id="disabled"
+                value="disabled"
+                disabled
+              />
+              <span className="form-check-text">Deshabilitado</span>
+            </label>
           </div>
-          <CodeCopy code={EGcodeCloseAlert} />
-        </div>
+          <br />
+          <CodeCopy code={RADIO_DISABLED} />
+        </>
       ),
     },
     {
       id: "section-4",
-      title: "Con lista",
+      title: "Casilla de selección múltiple",
       content: (
-        <div className="w-50 d-flex flex-column gap-2 mb-3 mx-auto">
-          <div className="alert alert-danger" role="alert">
-            <p>
-              <strong>Este es un destacado de una alerta de error.</strong>
-              Esta es la descripción de una alerta de error que continua al
-              texto destacado.
-            </p>
-            <ol className="list-links">
-              <li>
-                <a href="#">Ancla al error 1</a>
-              </li>
-              <li>
-                <a href="#">Ancla al error 2</a>
-              </li>
-              <li>
-                <a href="#">Ancla al error 3</a>
-              </li>
-              <li>
-                <a href="#">Ancla al error 4</a>
-              </li>
-              <li>
-                <a href="#">Ancla al error 5</a>
-              </li>
-            </ol>
-          </div>
-          <CodeCopy code={EGcodeWithStrong} />
-        </div>
+        <></>
       ),
     },
   ];

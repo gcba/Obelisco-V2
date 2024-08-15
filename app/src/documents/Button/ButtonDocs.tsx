@@ -66,52 +66,14 @@ const ButtonDocs: React.FC = () => {
             correspondientes de botones.
           </p>
           <div className="d-flex gap-3 justify-content-center flex-wrap">
-            <a className="btn btn-primary" href="#" target="_blank">
+            <a className="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer">
               Enlace
             </a>
-            <a className="btn btn-outline-primary" href="#" target="_blank">
+            <a className="btn btn-outline-primary" href="#" target="_blank" rel="noopener noreferrer">
               Enlace
             </a>
           </div>
           <CodeCopy code={BUTTON_ANCHOR} />
-          <br />
-          <p className="headline-lg fw-bold">
-            Estilos de botones en fondo oscuro
-          </p>
-          <div className="d-flex gap-3 justify-content-center flex-wrap bg-dark p-2">
-            <button type="button" className="btn btn-primary">
-              Primario
-            </button>
-            <button type="button" className="btn btn-secondary">
-              Secundario
-            </button>
-            <button type="button" className="btn btn-success">
-              Éxito
-            </button>
-            <button type="button" className="btn btn-danger">
-              Error
-            </button>
-            <button type="button" className="btn btn-link">
-              Link
-            </button>
-          </div>
-          <div className="d-flex gap-3 justify-content-center flex-wrap bg-dark p-2">
-            <button type="button" className="btn btn-outline-primary">
-              Primario
-            </button>
-            <button type="button" className="btn btn-outline-secondary">
-              Secundario
-            </button>
-            <button type="button" className="btn btn-outline-success">
-              Éxito
-            </button>
-            <button type="button" className="btn btn-outline-danger">
-              Error
-            </button>
-            <button type="button" className="btn btn-outline-link">
-              Link
-            </button>
-          </div>
         </>
       ),
     },

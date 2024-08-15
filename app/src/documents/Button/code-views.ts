@@ -16,8 +16,13 @@ export const BUTTON_OUTLINE =
 `;
 export const BUTTON_ANCHOR =
   `
-    <a class="btn btn-primary" href="#" target="_blank">Enlace</a>
-    <a class="btn btn-outline-primary" href="#" target="_blank">Enlace</a>
+    <a class="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer">
+      Enlace
+    </a>
+    <a class="btn btn-outline-primary" href="#" target="_blank" 
+    rel="noopener noreferrer">
+      Enlace
+    </a>
 `;
 
 export const BUTTON_SIZES =
@@ -41,7 +46,8 @@ export const BUTTON_BLOCK =
 export const BUTTON_ICON =
   `
     <button type="button" class="btn btn-primary">
-      <i class="bx bxs-info-circle o-icon"></i> Botón
+      <i class="bx bxs-info-circle o-icon"></i> 
+      Botón
     </button>
 
     <button type="button" class="btn btn-primary" aria-label="Botón">

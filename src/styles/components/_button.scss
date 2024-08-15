@@ -4,12 +4,9 @@ $btn-link-bg: $white;
 $btn-link-bg-active: $sky-100;
 
 /* === Custom variables and mixins === */
-
 $btn-padding-sm: 0.25rem 0.5rem;
 $btn-padding-md: 0.5rem 1rem;
 $btn-padding-lg: 0.75rem 1.25rem;
-
-$btn-hover-width: 0.125rem;
 
 $theme-colors: map-merge(
   $theme-colors,
@@ -65,10 +62,12 @@ $theme-color-btn-bg-hover: (
   align-items: center;
   justify-content: center;
   gap: 0.25rem;
+
   // Estilos para icono en botón
   .o-icon {
     font-size: 1rem;
   }
+
   // Button Sizes
   &-sm {
     min-height: 2rem; // 32px
@@ -78,7 +77,8 @@ $theme-color-btn-bg-hover: (
   &-lg {
     min-height: 3rem; // 48px
     padding: $btn-padding-lg;
-    // Estilos para icono en botón
+
+    // Estilos para icono en botón grande
     .o-icon {
       font-size: 1.25rem;
     }
@@ -94,19 +94,11 @@ $theme-color-btn-bg-hover: (
     outline: 0.125rem solid map-get($theme-colors, $color);
     outline-offset: -0.125rem;
     transition: all ease-in-out 50ms;
-    /*  @if ($color != "warning" and  $color != "info" and  $color != "dark" and  $color != "light")  {
-       
-      } */
 
     &:hover,
     &.hover {
       outline-color: transparent;
       background-color: map-get($theme-color-btn-bg-hover, $color);
-      box-shadow: 0
-        0
-        0
-        $btn-hover-width
-        map-get($theme-color-btn-bg-hover, $color);
     }
     &:visited {
       color: $white;
@@ -128,11 +120,6 @@ $theme-color-btn-bg-hover: (
     &:not(:disabled):not(.disabled).active {
       outline: $outline-transparent-subtle;
       background-color: map-get($theme-color-btn-bg-hover, $color);
-      box-shadow: 0
-        0
-        0
-        $btn-hover-width
-        map-get($theme-color-btn-bg-hover, $color);
 
       &:focus,
       &.focus {
@@ -157,7 +144,6 @@ $theme-color-btn-bg-hover: (
       &:not(:disabled):not(.disabled):active,
       &:not(:disabled):not(.disabled).active {
         background-color: $btn-link-bg-active;
-        box-shadow: 0 0 0 $btn-hover-width $btn-link-bg-active;
         color: $btn-link-color;
       }
     }
@@ -226,114 +212,3 @@ a.btn {
     }
   }
 } */
-
-// Button background dark
-.bg-dark,
-.banner-dark .banner-content .banner-actions {
-  .btn.btn-primary,
-  .btn.btn-outline-primary {
-    &.hover,
-    &:hover,
-    &.active,
-    &:active {
-      box-shadow: 0 0 0 2px $blue-100;
-      background-color: $blue-100;
-      outline-color: $blue-100;
-      color: $body-color;
-    }
-    &.focus,
-    &:focus {
-      box-shadow: 0 0 0 4px $focus-color;
-      background-color: $blue-100;
-      outline-color: $blue-100;
-      color: $body-color;
-    }
-    &:active,
-    &.active {
-      color: $body-color;
-    }
-  }
-  .btn.btn-secondary,
-  .btn.btn-outline-secondary {
-    background-color: $white;
-    color: $body-color;
-    outline: 0.125rem solid $white;
-    &.hover,
-    &:hover,
-    &.active,
-    &:active {
-      box-shadow: 0 0 0 2px $gray-100;
-      background-color: $gray-100;
-      outline-color: $gray-100;
-    }
-    &.focus,
-    &:focus {
-      box-shadow: 0 0 0 4px $focus-color;
-      background-color: $gray-100;
-      outline-color: $gray-100;
-    }
-    &:active,
-    &.active {
-      color: $body-color;
-    }
-  }
-  .btn.btn-danger {
-    &.hover,
-    &:hover,
-    &.active,
-    &:active {
-      box-shadow: 0 0 0 2px $red-100;
-      background-color: $red-100;
-      outline-color: $red-100;
-      color: $red-600;
-    }
-    &.focus,
-    &:focus {
-      box-shadow: 0 0 0 4px $red-400;
-      background-color: $red-100;
-      outline-color: $red-100;
-      color: $red-600;
-      &:active,
-      &.active {
-        box-shadow: 0 0 0 4px $red-400;
-      }
-    }
-    &:active,
-    &.active {
-      color: $red-600;
-    }
-  }
-  .btn.btn-outline-danger {
-    color: $red-200;
-    outline: 0.125rem solid $red-200;
-    &.hover,
-    &:hover,
-    &.active,
-    &:active {
-      box-shadow: 0 0 0 2px $white;
-      background-color: $red-500;
-      outline-color: $red-500;
-      color: $white;
-    }
-    &.focus,
-    &:focus {
-      box-shadow: 0 0 0 4px $red-500;
-      background-color: $red-500;
-      outline-color: $red-500;
-      color: $white;
-      &:active,
-      &.active {
-        box-shadow: 0 0 0 4px $red-500;
-      }
-    }
-    &:active,
-    &.active {
-      color: $white;
-    }
-  }
-  .btn.btn-outline-link {
-    color: $blue-100;
-    outline: 0.125rem solid $blue-100;
-    background-color: transparent;
-  }
-}

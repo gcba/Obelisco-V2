@@ -11,12 +11,6 @@
     "build": "npm run build-css",
     "i-app": "cd app && npm install"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",

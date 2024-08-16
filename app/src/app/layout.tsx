@@ -38,6 +38,8 @@ export const componentsPages = [
   { text: "Banner", url: "/components/banner", id: 13 },
   { text: "Spinner", url: "/components/spinner", id: 14 },
   { text: "Botones", url: "/components/button", id: 15 },
+  { text: "Mapa", url: "/components/map", id: 16 },
+  { text: "Destacado", url: "/components/highlighted", id: 17 },
 ];
 
 const gettingPages = [

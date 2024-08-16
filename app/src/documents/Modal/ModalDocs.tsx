@@ -72,8 +72,8 @@ const ModalDocs: React.FC = () => {
                 </div>
                 <div className="modal-footer">
                   <button
-                    type="button"
-                    className="btn btn-outline-link"
+                    type="button" 
+                    className="btn btn-outline-primary"
                     data-bs-dismiss="modal"
                   >
                     Volver atrás

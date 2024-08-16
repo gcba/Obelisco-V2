@@ -44,7 +44,7 @@ const componentMap: { [key: string]: React.ReactNode } = {
   'dropdown-nav': <DropdownNavDocs />,
   grid: <GridDocs />,
   spinner: <SpinnerDocs />,
-  breadcrumb: <BreadcrumbDocs />
+  breadcrumb: <BreadcrumbDocs />,
   'form-text': <FormTextDocs />
 };
 

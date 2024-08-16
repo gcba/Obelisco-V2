@@ -26,209 +26,101 @@ const HighlightedDocs: React.FC = () => {
             acción.
           </p>
           <div className="">
-            <div className="panel-horizontal-content">
-              <div className="card card-simple panel-horizontal">
-                <img
-                  src="https://gcba.github.io/Obelisco/panel/destacado-bs-as.jpg"
-                  alt="descripción de imagen"
-                  className="card-img"
-                />
-                <div className="card-body">
-                  <h2 className="card-title">Título del destacado</h2>
-                  <p className="card-text">
-                    Este es el cuerpo de un destacado. Debe ser breve y conciso,
-                    de pocas líneas. No puede contener negritas ni enlaces. Este
-                    es el cuerpo de un destacado. Debe ser breve y conciso, de
-                    pocas líneas. No puede contener negritas ni enlaces
-                  </p>
-                  <div className="panel-footer">
-                    <a className="btn btn-primary btn-lg" href="#">
-                      Botón
-                    </a>
-                    <a className="btn btn-secondary btn-lg" href="#">
-                      Botón
-                    </a>
-                  </div>
+            <h3>HORIZONTAL</h3>
+            <div className="highlighted highlighted-horizontal">
+              <img
+                src="https://gcba.github.io/Obelisco/panel/destacado-bs-as.jpg"
+                alt="descripción de imagen"
+                className="highlighted-img"
+              />
+              <div className="highlighted-body">
+                <h2 className="highlighted-title">Título del destacado</h2>
+                <p className="highlighted-text">
+                  Este es el cuerpo de un destacado. Debe ser breve y conciso,
+                  de pocas líneas. No puede contener negritas ni enlaces. Este
+                  es el cuerpo de un destacado. Debe ser breve y conciso, de
+                  pocas líneas. No puede contener negritas ni enlaces
+                </p>
+                <div className="highlighted-footer">
+                  <a className="btn btn-primary btn-lg" href="#">
+                    Botón
+                  </a>
+                  <a className="btn btn-secondary btn-lg" href="#">
+                    Botón
+                  </a>
                 </div>
               </div>
             </div>
             <br />
-            <div className="panel-horizontal-content">
-              <div className="card card-simple panel-horizontal">
+            <br />
+            <br />
+            <h3>VERTICAL</h3>
+            <div className="highlighted-container">
+
+              <div className="highlighted highlighted-vertical">
                 <img
-                  src="https://gcba.github.io/Obelisco/panel/destacado-bs-as.jpg"
+                  src="panel/destacado-bs-as.jpg"
                   alt="descripción de imagen"
-                  className="card-img"
+                  className="highlighted-img"
                 />
-                <div className="card-body">
-                  <h2 className="card-title">Título del destacado</h2>
-                  <p className="card-text">
-                    Este es el cuerpo de un destacado. Debe ser breve y conciso,
-                    de pocas líneas. No puede contener negritas ni enlaces. Este
-                    es el cuerpo de un destacado. Debe ser breve y conciso, de
-                    pocas líneas. No puede contener negritas ni enlaces
+                <div className="highlighted-body">
+                  <h2 className="highlighted-title">Título del destacado</h2>
+                  <p className="highlighted-text">
+                    Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
+                    líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un
+                    destacado. Debe ser breve y conciso, de pocas líneas. No puede
+                    contener negritas ni enlaces
                   </p>
-                  <div className="panel-footer">
-                    <a className="btn btn-primary btn-lg" href="#">
-                      Botón
-                    </a>
+                  <div className="highlighted-footer">
+                    <a className="btn btn-primary btn-lg" href="#">Botón</a>
                   </div>
                 </div>
               </div>
-            </div>
-            <br />
-            <div className="panel-horizontal-content">
-              <div className="card card-simple panel-horizontal">
+              <div className="highlighted highlighted-vertical">
                 <img
-                  src="https://gcba.github.io/Obelisco/panel/destacado-bs-as.jpg"
+                  src="panel/destacado-bs-as.jpg"
                   alt="descripción de imagen"
-                  className="card-img"
+                  className="highlighted-img"
                 />
-                <div className="card-body">
-                  <h2 className="card-title">Título del destacado</h2>
-                  <p className="card-text">
-                    Este es el cuerpo de un destacado. Debe ser breve y conciso,
-                    de pocas líneas. No puede contener negritas ni enlaces. Este
-                    es el cuerpo de un destacado. Debe ser breve y conciso, de
-                    pocas líneas. No puede contener negritas ni enlaces
+                <div className="highlighted-body">
+                  <h2 className="highlighted-title">Título del destacado</h2>
+                  <p className="highlighted-text">
+                    Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
+                    líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un
+                    destacado. Debe ser breve y conciso, de pocas líneas. No puede
+                    contener negritas ni enlaces
                   </p>
-                  <div className="panel-footer">
+                  <div className="highlighted-footer">
                     <a
                       className="btn btn-secondary btn-lg btn-icon"
                       href="#"
                       target="_blank"
                       download=""
                     >
-                      <span className="material-icons-round">
-                        file_download
-                      </span>
+                      <span className="material-icons-round">file_download</span>
                       Descargar
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            <br />
-            <div className="panel-horizontal-content">
-              <div className="card card-simple panel-horizontal">
-                <img
-                  src="https://gcba.github.io/Obelisco/panel/destacado-bs-as.jpg"
-                  alt="descripción de imagen"
-                  className="card-img"
-                />
-                <div className="card-body">
-                  <h2 className="card-title">Título del destacado</h2>
-                  <p className="card-text">
-                    Este es el cuerpo de un destacado. Debe ser breve y conciso,
-                    de pocas líneas. No puede contener negritas ni enlaces. Este
-                    es el cuerpo de un destacado. Debe ser breve y conciso, de
-                    pocas líneas. No puede contener negritas ni enlaces
+          </div>
+          <br />
+          <br />
+          <br />
+          <h3>LATERAL</h3>
+          <div className="row">
+            <div className="col-4">
+              <div className="highlighted highlighted-lateral">
+                <div className="highlighted-body">
+                  <h2 className="highlighted-title">Título del destacado</h2>
+                  <p className="highlighted-text">
+                    Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
+                    líneas. No puede contener negritas ni enlaces.
                   </p>
-                  <div className="panel-footer">
-                    <a className="external" href="#" target="_blank">
-                      Enlace externo
-                    </a>
+                  <div className="highlighted-footer">
+                    <a className="btn btn-primary btn-lg btn-block" href="#">Iniciar trámite</a>
                   </div>
-                </div>
-              </div>
-            </div>
-            <br />
-            <div className="panel-horizontal-content">
-              <div className="card card-simple panel-horizontal">
-                <img
-                  src="https://gcba.github.io/Obelisco/panel/destacado-bs-as.jpg"
-                  alt="descripción de imagen"
-                  className="card-img"
-                />
-                <div className="card-body">
-                  <h2 className="card-title">Título del destacado</h2>
-                  <p className="card-text">
-                    Este es el cuerpo de un destacado. Debe ser breve y conciso,
-                    de pocas líneas. No puede contener negritas ni enlaces. Este
-                    es el cuerpo de un destacado. Debe ser breve y conciso, de
-                    pocas líneas. No puede contener negritas ni enlaces
-                  </p>
-                  <div className="panel-footer">
-                    <a href="#" className="list-group-item item-sm">
-                      <i className="bx bxs-info-circle"></i>
-                      <div className="access-content">
-                        <span className="access-title">Acceso</span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="modal fade" tabIndex={-1} id="exampleModal1">
-            <div className="modal-dialog modal-dialog-centered modal-sm">
-              <div className="modal-content">
-                <div className="modal-header">
-                  <h4 className="modal-title">¡Importante!</h4>
-                </div>
-                <div className="modal-body">
-                  <p>
-                    Antes de realizar la ficha de salud, tené en cuenta haber
-                    realizado los pasos previos correspondientes.
-                  </p>
-                </div>
-                <div className="modal-footer">
-                  <button
-                    type="button"
-                    className="btn btn-outline-link"
-                    data-bs-dismiss="modal"
-                  >
-                    Volver atrás
-                  </button>
-                  <button type="button" className="btn btn-secondary">
-                    Continuar
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="modal fade" tabIndex={-1} id="exampleModal2">
-            <div className="modal-dialog modal-dialog-centered modal-sm">
-              <div className="modal-content">
-                <div className="modal-header">
-                  <h4 className="modal-title">Eliminar documento</h4>
-                </div>
-                <div className="modal-body">
-                  <p>El documento que seleccionaste será eliminado.</p>
-                </div>
-                <div className="modal-footer">
-                  <button
-                    type="button"
-                    className="btn btn-outline-secondary"
-                    data-bs-dismiss="modal"
-                  >
-                    Cancelar
-                  </button>
-                  <button type="button" className="btn btn-danger">
-                    Eliminar
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="modal fade" tabIndex={-1} id="exampleModal3">
-            <div className="modal-dialog modal-dialog-centered modal-sm">
-              <div className="modal-content">
-                <div className="modal-header unbordered">
-                  <small>CARGA EXITOSA</small>
-                  <h4 className="modal-title">
-                    Los archivos se cargaron correctamente
-                  </h4>
-                </div>
-                <div className="modal-footer">
-                  <button
-                    type="button"
-                    className="btn btn-secondary"
-                    data-bs-dismiss="modal"
-                  >
-                    Aceptar
-                  </button>
                 </div>
               </div>
             </div>

@@ -38,6 +38,7 @@ export const componentsPages = [
   { text: "Banner", url: "/components/banner", id: 13 },
   { text: "Spinner", url: "/components/spinner", id: 14 },
   { text: "Botones", url: "/components/button", id: 15 },
+  { text: "Formulario de textos", url: "/components/form-text", id: 16 },
 ];
 
 const gettingPages = [

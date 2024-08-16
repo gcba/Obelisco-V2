@@ -115,7 +115,7 @@ input[type="date"] {
       background-image: $form-search-icon;
       background-repeat: no-repeat;
       background-position: center right 1rem;
-      padding-right: 4.2rem;
+      padding-right: 6rem;
       box-sizing: border-box;
 
       .reset {
@@ -140,13 +140,44 @@ input[type="date"] {
       right: 50px;
       top: 50%;
       transform: translate(0, -50%);
-      height: 2.5rem;
-      width: 1.5rem;
-      min-width: 1.5rem;
+      height: 100%;
+      width: 3.4rem;
     }
 
     &:disabled {
       background-image: $form-search-icon-disabled;
+      
+      ~.button-search {
+        background-image: $form-search-icon-disabled;
+        pointer-events: none;
+      }
+    }
+
+    &.input-search-with-button {
+      &[type="search"] {
+        background-image: none;
+      }
+    }
+  }
+
+  .button-search {
+    background-image: $form-search-icon;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    width: 3.4rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    align-items: center;
+    display: flex;
+    border: none;
+
+    &:focus {
+      @include focus-style;
+      outline: none;
+      border-radius: $border-radius-lg;
     }
   }
 
@@ -159,7 +190,7 @@ input[type="date"] {
     &::after {
       content: '';
       position: relative;
-      left: 17px;
+      left: 26.5px;
       top: 50%;
       transform: translate(0, -50%);
       display: inline-block;
@@ -172,7 +203,7 @@ input[type="date"] {
     &:focus,
     &:focus-visible {
       box-shadow: $focus-box-shadow;
-      border-radius: 0.5rem;
+      border-radius: $border-radius-lg;
       outline: 0.25rem solid transparent;
 
       &::after {

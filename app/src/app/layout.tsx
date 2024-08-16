@@ -38,7 +38,9 @@ export const componentsPages = [
   { text: "Banner", url: "/components/banner", id: 13 },
   { text: "Spinner", url: "/components/spinner", id: 14 },
   { text: "Botones", url: "/components/button", id: 15 },
-  { text: "Formulario - Radio", url: "/components/form-radio", id: 16 },
+  { text: "Miga de pan", url: "/components/breadcrumb", id: 16 },
+  { text: "Formulario de textos", url: "/components/form-text", id: 17 },
+  { text: "Formulario - Radio", url: "/components/form-radio", id: 18 },
 ];
 
 const gettingPages = [

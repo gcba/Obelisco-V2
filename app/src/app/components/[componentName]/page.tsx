@@ -19,6 +19,8 @@ import TypographyDocs from '@/documents/Typography/TypographyDocs';
 import DropdownNavDocs from '@/documents/DropdownNav/DropdownNavDocs';
 import GridDocs from '@/documents/Grid/GridDocs';
 import SpinnerDocs from '@/documents/Spinner/SpinnerDocs';
+import BreadcrumbDocs from '@/documents/Breadcrumb/BreadcrumbDocs';
+import FormTextDocs from '@/documents/Form-text/FormText';
 import FormRadioDocs from '@/documents/FormRadio/FormRadioDocs';
 
 // davis: se mapean las url con componentes
@@ -43,6 +45,8 @@ const componentMap: { [key: string]: React.ReactNode } = {
   'dropdown-nav': <DropdownNavDocs />,
   grid: <GridDocs />,
   spinner: <SpinnerDocs />,
+  breadcrumb: <BreadcrumbDocs />,
+  'form-text': <FormTextDocs />,
   'form-radio': <FormRadioDocs />
 };
 

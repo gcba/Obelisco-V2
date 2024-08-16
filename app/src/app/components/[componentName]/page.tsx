@@ -21,6 +21,8 @@ import GridDocs from "@/documents/Grid/GridDocs";
 import SpinnerDocs from "@/documents/Spinner/SpinnerDocs";
 import MapDocs from "@/documents/Map/MapDocs";
 import HighlightedDocs from "@/documents/Highlighted/HighlightedDocs";
+import BreadcrumbDocs from '@/documents/Breadcrumb/BreadcrumbDocs';
+import FormTextDocs from '@/documents/Form-text/FormText';
 
 // davis: se mapean las url con componentes
 const componentMap: { [key: string]: React.ReactNode } = {
@@ -44,6 +46,8 @@ const componentMap: { [key: string]: React.ReactNode } = {
   "dropdown-nav": <DropdownNavDocs />,
   grid: <GridDocs />,
   spinner: <SpinnerDocs />,
+  breadcrumb: <BreadcrumbDocs />,
+  'form-text': <FormTextDocs />,
   map: <MapDocs />,
   highlighted: <HighlightedDocs />,
 };

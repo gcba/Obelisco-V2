@@ -26,13 +26,13 @@ const LinkDocs: React.FC = () => {
         <>
           <div className="container">
             <p>
-              <a href="#" target="_blank" rel="noreferrer">
+              <a href="#" target="_blank" rel="noopener noreferrer">
                 enlace en párrafo
               </a>
             </p>
             <p>
               <small>
-                <a href="#" target="_blank" rel="noreferrer">
+                <a href="#" target="_blank" rel="noopener noreferrer">
                   enlaces en párrafo
                 </a>
               </small>
@@ -42,7 +42,7 @@ const LinkDocs: React.FC = () => {
                 <a
                   href="#"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="link-white"
                 >
                   enlace en párrafo
@@ -53,7 +53,7 @@ const LinkDocs: React.FC = () => {
                   <a
                     href="#"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     className="link-white"
                   >
                     enlaces en párrafo
@@ -78,7 +78,7 @@ const LinkDocs: React.FC = () => {
                   className="external"
                   href="#"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   enlace externo
                 </a>
@@ -90,7 +90,7 @@ const LinkDocs: React.FC = () => {
                   className="external link-white"
                   href="#"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   enlace externo
                 </a>
@@ -113,7 +113,7 @@ const LinkDocs: React.FC = () => {
                   className="download"
                   href="#"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   download=""
                 >
                   enlace de descarga
@@ -127,7 +127,7 @@ const LinkDocs: React.FC = () => {
                   className="download link-white"
                   href="#"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   download=""
                 >
                   enlace de descarga
@@ -138,7 +138,7 @@ const LinkDocs: React.FC = () => {
               className="btn btn-secondary btn-sm download-link my-3"
               href="#"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               download=""
             >
               Descargar
@@ -160,7 +160,7 @@ const LinkDocs: React.FC = () => {
                   className="access"
                   href="#"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   enlace de acceso
                 </a>
@@ -173,7 +173,7 @@ const LinkDocs: React.FC = () => {
                   className="access link-white"
                   href="#"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                 >
                   enlace de acceso
                 </a>

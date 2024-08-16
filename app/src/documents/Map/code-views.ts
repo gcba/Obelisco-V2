@@ -1,88 +1,58 @@
-export const ModalTypes = `//CONFIRMACIÓN
-<button 
-  type="button" 
-  class="btn btn-primary" 
-  data-bs-toggle="modal" 
-  data-bs-target="#exampleModal1"
->
-  Modal de confirmación
-</button>
-<div class="modal fade" tabindex="-1" id="exampleModal1">
-  <div class="modal-dialog modal-dialog-centered modal-sm">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title">¡Importante!</h4>
-      </div>
-      <div class="modal-body">
-        <p>
-          Antes de realizar la ficha de salud, 
-          tené en cuenta haber realizado los pasos previos correspondientes.
-        </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-link" data-bs-dismiss="modal">
-          Volver atrás
-        </button>
-        <button type="button" class="btn btn-primary">Continuar</button>
-      </div>
+export const MapLateral = `<div class="card card-map">
+    <div class="card-body">
+    <h2 class="card-title">Ubicación</h2>
+    <p class="card-text">Av. Uspallata 3160</p>
+    <div class="card-iframe">
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.561313314447!2d-58.40988132452283!3d-34.64052465944252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb0de7f4d675%3A0xfc2ef5324296a64!2sUspallata%203160%2C%20C1437JCL%20CABA!5e0!3m2!1ses!2sar!4v1704218461718!5m2!1ses!2sar"
+        width="600"
+        height="146"
+        title="Mapa de como llegar"
+        allowfullscreen="true"
+        loading="lazy"
+        tabindex="-1"
+        referrerpolicy="no-referrer-when-downgrade"
+        style="border: 0px;"
+        ></iframe>
     </div>
-  </div>
+    <a
+        href="https://mapa.buenosaires.gob.ar/comollego/?lat=-34.640340&amp;lng=-58.407032&amp;zl=15&amp;modo=transporte&amp;dir=Uspallata+3160"
+        class="btn btn-primary btn-lg btn-block"
+        target="_blank"
+        rel="noreferrer"
+        tabindex="0"
+    >
+        Cómo llego
+    </a>
+    </div>
 </div>
-
-//MDDAL DE PELIGRO
-<button 
-  type="button" 
-  class="btn btn-primary" 
-  data-bs-toggle="modal" 
-  data-bs-target="#exampleModal2"
->
-  Modal de peligro
-</button>
-<div class="modal fade" tabindex="-1" id="exampleModal2">
-  <div class="modal-dialog modal-dialog-centered modal-sm">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title">Eliminar documento</h4>
-      </div>
-      <div class="modal-body">
-        <p>El documento que seleccionaste será eliminado.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
-          Cancelar
-        </button>
-        <button type="button" class="btn btn-danger">Eliminar</button>
-      </div>
+`;
+export const MapInstitution = `<div class="card card-map">
+    <div class="card-body">
+    <h3 class="card-title">Ubicación</h3>
+    <p class="card-text">Av. Uspallata 3160</p>
+    <div class="card-iframe">
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.561313314447!2d-58.40988132452283!3d-34.64052465944252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb0de7f4d675%3A0xfc2ef5324296a64!2sUspallata%203160%2C%20C1437JCL%20CABA!5e0!3m2!1ses!2sar!4v1704218461718!5m2!1ses!2sar"
+        width="600"
+        height="146"
+        title="Mapa de como llegar"
+        allowfullscreen="true"
+        loading="lazy"
+        tabindex="-1"
+        referrerpolicy="no-referrer-when-downgrade"
+        style="border: 0px;"
+        ></iframe>
     </div>
-  </div>
-</div>
-
-//MODAL DE RECONOCIMIENTO
-<button 
-  type="button" 
-  class="btn btn-primary" 
-  data-bs-toggle="modal" 
-  data-bs-target="#exampleModal3"
->
-  Modal de reconocimiento
-</button>
-<div class="modal fade" tabindex="-1" id="exampleModal3">
-  <div class="modal-dialog modal-dialog-centered modal-sm">
-    <div class="modal-content">
-      <div class="modal-header unbordered">
-        <small>CARGA EXITOSA</small>
-        <h4 class="modal-title">Los archivos se cargaron correctamente</h4>
-      </div>
-      <div class="modal-footer">
-        <button 
-          type="button" 
-          class="btn btn-primary" 
-          data-bs-dismiss="modal"
-        >
-          Aceptar
-        </button>
-      </div>
+    <a
+        href="https://mapa.buenosaires.gob.ar/comollego/?lat=-34.640340&amp;lng=-58.407032&amp;zl=15&amp;modo=transporte&amp;dir=Uspallata+3160"
+        class="btn btn-primary btn-lg btn-block"
+        target="_blank"
+        rel="noreferrer"
+        tabindex="0"
+    >
+        Cómo llego
+    </a>
     </div>
-  </div>
 </div>
 `;

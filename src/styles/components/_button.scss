@@ -83,6 +83,44 @@ $theme-color-btn-bg-hover: (
       font-size: 1.25rem;
     }
   }
+
+  //Boton xs solo con icono, para tabla
+  &-xs {
+    min-height: 1.75rem; // 48px
+    padding: 0.125rem; //2px
+    width: 1.75rem;
+    max-width: 1.75rem;
+    height: 1.75rem;
+    border-radius: $border-radius-sm; //.25rem
+    border: none;
+    outline: $outline-transparent-subtle;
+
+    // Estilos para icono en botón grande
+    .o-icon {
+      font-size: 1.5rem;
+      width: 1.5rem;
+      max-width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    &:hover,
+    &.hover {
+      background-color: $grisulado-100;
+    }
+
+    &:focus,
+    &.focus {
+      box-shadow: $focus-box-shadow;
+      border-radius: $border-radius-sm; //.25rem
+      text-decoration: none;
+      outline: $outline-transparent;
+    }
+    
+    &:active,
+    &.active {
+      box-shadow: none;
+    }
+  }
 }
 
 @each $color, $value in $theme-colors {

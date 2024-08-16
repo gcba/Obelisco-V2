@@ -66,10 +66,20 @@ const ButtonDocs: React.FC = () => {
             correspondientes de botones.
           </p>
           <div className="d-flex gap-3 justify-content-center flex-wrap">
-            <a className="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer">
+            <a
+              className="btn btn-primary"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Enlace
             </a>
-            <a className="btn btn-outline-primary" href="#" target="_blank" rel="noopener noreferrer">
+            <a
+              className="btn btn-outline-primary"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Enlace
             </a>
           </div>
@@ -173,7 +183,7 @@ const ButtonDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-5",
+      id: "section-6",
       title: "Con spinner",
       content: (
         <>
@@ -275,6 +285,40 @@ const ButtonDocs: React.FC = () => {
           </div>
           <CodeCopy code={BUTTON_OUTLINE_SPINNER} />
           <br />
+        </>
+      ),
+    },
+    {
+      id: "section-7",
+      title: "Botón XS - Icono",
+      content: (
+        <>
+          <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center">
+            <button type="button" className="btn btn-xs" aria-label="Editar">
+              <span
+                className="material-symbols-rounded o-icon"
+                aria-hidden="true"
+              >
+                edit
+              </span>
+            </button>
+            <button type="button" className="btn btn-xs" aria-label="Editar">
+              <i className="bx bxs-trash-alt o-icon"></i>
+            </button>
+            <a href="#" className="btn btn-xs" aria-label="Editar" tabIndex={0}>
+              <span
+                className="material-symbols-rounded o-icon"
+                aria-hidden="true"
+              >
+                visibility
+              </span>
+            </a>
+            <a href="#" className="btn btn-xs" aria-label="Editar" tabIndex={0}>
+              <i className="bx bxs-download o-icon"></i>
+            </a>
+          </div>
+          <br />
+          <CodeCopy code={BUTTON_ICON} />
         </>
       ),
     },

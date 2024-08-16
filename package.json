@@ -9,13 +9,10 @@
     "watch-css": "nodemon --watch src/styles --ext scss --exec \"npm run build-css\"",
     "build-css": "sass src/styles/main.scss dist/styles.css",
     "build": "npm run build-css",
-    "i-app": "cd app && npm install"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "i-app": "cd app && npm install",
+    "format": "prettier --write \"src/**/*.scss\"",
+    "lint": "stylelint \"src/**/*.scss\"",
+    "lint-fix": "stylelint \"src/**/*.scss\" --fix"
   },
   "keywords": [],
   "author": "",
@@ -38,7 +35,12 @@
     "concurrently": "^8.2.2",
     "html-webpack-plugin": "^5.6.0",
     "nodemon": "^3.1.4",
+    "prettier": "^3.3.3",
     "semantic-release": "^24.0.0",
+    "stylelint": "^16.8.2",
+    "stylelint-config-prettier-scss": "^1.0.0",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-config-standard-scss": "^13.1.0",
     "webpack": "^5.93.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4"

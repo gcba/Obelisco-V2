@@ -107,6 +107,7 @@ $theme-color-btn-bg-hover: (
     &:focus,
     &.focus,
     &:focus-visible {
+      color: $white;
       outline: $outline-transparent;
       box-shadow: $focus-box-shadow;
       text-decoration: none;
@@ -120,11 +121,15 @@ $theme-color-btn-bg-hover: (
     &:not(:disabled):not(.disabled).active {
       outline: $outline-transparent-subtle;
       background-color: map-get($theme-color-btn-bg-hover, $color);
+      box-shadow: none;
 
       &:focus,
       &.focus {
         box-shadow: $focus-box-shadow;
         text-decoration: none;
+        @if $color == "danger" {
+          box-shadow: $focus-box-shadow-danger;
+        }
       }
     }
 
@@ -137,7 +142,9 @@ $theme-color-btn-bg-hover: (
 
       &:hover,
       &.hover,
-      &:visited {
+      &:visited,
+      &:focus,
+      &.focus {
         color: $btn-link-color;
       }
 

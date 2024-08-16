@@ -22,7 +22,7 @@ export async function generateStaticParams() {
     "banner",
     "spinner",
     "map",
-    "highlighted",, 'breadcrumb', 'form-text'
+    "highlighted", 'breadcrumb', 'form-text',
   ];
 
   return componentNames.map((name) => ({

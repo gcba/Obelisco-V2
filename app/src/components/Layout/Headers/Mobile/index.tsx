@@ -156,6 +156,9 @@ export default function HeaderMobile () {
               <li className="nav-item" onClick={handleLinkClick}>
                 <Link className="nav-link w-100 text-left " href="/components/tabs">Pestañas</Link>
               </li>
+              <li className="nav-item" onClick={handleLinkClick}>
+                <Link className="nav-link w-100 text-left " href="/components/form-text">Formulario de textos</Link>
+              </li>
             </ul>
           </nav>
         </div>

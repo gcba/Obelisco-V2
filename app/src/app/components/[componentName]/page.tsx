@@ -23,6 +23,7 @@ import MapDocs from "@/documents/Map/MapDocs";
 import HighlightedDocs from "@/documents/Highlighted/HighlightedDocs";
 import BreadcrumbDocs from '@/documents/Breadcrumb/BreadcrumbDocs';
 import FormTextDocs from '@/documents/Form-text/FormText';
+import FormSelectionDocs from '@/documents/FormSelection/FormSelectionDocs';
 
 // davis: se mapean las url con componentes
 const componentMap: { [key: string]: React.ReactNode } = {
@@ -49,7 +50,8 @@ const componentMap: { [key: string]: React.ReactNode } = {
   breadcrumb: <BreadcrumbDocs />,
   'form-text': <FormTextDocs />,
   map: <MapDocs />,
-  highlighted: <HighlightedDocs />,
+  highlighted: <HighlightedDocs />,,
+  'form-selection': <FormSelectionDocs />
 };
 
 export default function ComponentPage({

@@ -1,4 +1,12 @@
 // Se utilizan $grid-breakpoints y $container-max-widths de Bootstrap 5
 
+// VIEWPORT --------------------- MAX-WIDTH ------- GAP ------ AREA DISEÑABLE
+// Menos de 576px --------------- 100% ------------ 32px ----- 100%
+// Entre 767px y 576px ---------- 540px ----------- 32px ----- 508px
+// Entre 991px y 768px ---------- 720px ----------- 24px ----- 696px
+// Entre 992px Y 1199px --------- 960px ----------- 24px ----- 936px
+// Mayor a 1200px --------------- 1140px ---------- 32px ----- 1108px
+// Mayor a 1400px --------------- 1320px ---------- 32px ----- 1288px
+
 // Grid columns
 $grid-gutter-width: 2rem; // Establece el padding right y left de la clase .container y .col ($grid-gutter-width * 0.5 (16px)) asi como tambien el margin right y left de la clase .row (- $grid-gutter-width * 0.5 (16px))

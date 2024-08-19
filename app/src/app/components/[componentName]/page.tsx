@@ -50,7 +50,7 @@ const componentMap: { [key: string]: React.ReactNode } = {
   breadcrumb: <BreadcrumbDocs />,
   'form-text': <FormTextDocs />,
   map: <MapDocs />,
-  highlighted: <HighlightedDocs />,,
+  highlighted: <HighlightedDocs />,
   'form-selection': <FormSelectionDocs />
 };
 

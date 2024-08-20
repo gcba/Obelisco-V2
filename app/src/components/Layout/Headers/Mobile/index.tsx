@@ -1,32 +1,32 @@
-import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
-import Drawer from 'react-modern-drawer'
+import Link from "next/link";
+import React, { useEffect, useState } from "react";
+import Drawer from "react-modern-drawer";
 import { usePathname } from "next/navigation";
 
 //import styles 👇
-import 'react-modern-drawer/dist/index.css'
+import "react-modern-drawer/dist/index.css";
 
-export default function HeaderMobile () {
-  const [isOpen, setIsOpen] = useState(false)
+export default function HeaderMobile() {
+  const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const pathname = usePathname();
 
   const toggleDrawer = () => {
-    setIsOpen((prevState) => !prevState)
-  }
+    setIsOpen((prevState) => !prevState);
+  };
   const handleLinkClick = () => {
     setIsOpen(false); // Cierra el drawer cuando se hace clic en un enlace
   };
 
   useEffect(() => {
-    function handleResize () {
+    function handleResize() {
       setIsMobile(window.innerWidth < 375); // Cambia 375 por el ancho deseado para el modo móvil
     }
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     handleResize();
 
-    return () => window.removeEventListener('resize', handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
@@ -37,13 +37,13 @@ export default function HeaderMobile () {
         onClick={toggleDrawer}
         aria-label="Menú"
       >
-        <i className='bx bx-menu'></i>
+        <i className="bx bx-menu"></i>
       </button>
       <Drawer
         open={isOpen}
         onClose={toggleDrawer}
-        direction='left'
-        className='drawerCustom'
+        direction="left"
+        className="drawerCustom"
         size={isMobile ? 250 : 300}
       >
         <div className="px-4 pb-5">
@@ -52,7 +52,12 @@ export default function HeaderMobile () {
           <nav>
             <ul className="nav d-block nav-pills">
               <li className="nav-item mb-3" onClick={handleLinkClick}>
-                <Link className={`nav-link ${pathname === '/getting-started' ? 'active' : ''}`} href="/getting-started">
+                <Link
+                  className={`nav-link ${
+                    pathname === "/getting-started" ? "active" : ""
+                  }`}
+                  href="/getting-started"
+                >
                   <div className="nav-icon">
                     <span className="material-icons-round">home</span>
                     <span>Inicio</span>
@@ -60,7 +65,12 @@ export default function HeaderMobile () {
                 </Link>
               </li>
               <li className="nav-item mb-3" onClick={handleLinkClick}>
-                <Link className={`nav-link ${pathname === '/templates' ? 'active' : ''}`} href="/templates">
+                <Link
+                  className={`nav-link ${
+                    pathname === "/templates" ? "active" : ""
+                  }`}
+                  href="/templates"
+                >
                   <div className="nav-icon">
                     <span className="material-icons-round">wysiwyg</span>
                     <span>Templates</span>
@@ -68,7 +78,12 @@ export default function HeaderMobile () {
                 </Link>
               </li>
               <li className="nav-item" onClick={handleLinkClick}>
-                <Link className={`nav-link ${pathname === '/components' ? 'active' : ''}`} href="/components">
+                <Link
+                  className={`nav-link ${
+                    pathname === "/components" ? "active" : ""
+                  }`}
+                  href="/components"
+                >
                   <div className="nav-icon">
                     <span className="material-icons-round">code</span>
                     <span>Componentes</span>
@@ -85,25 +100,60 @@ export default function HeaderMobile () {
                 <Link className={`nav-link w-100 text-left ${pathname === '/components/access' ? 'active' : ''}`} href="/components/access">Accesos</Link>
               </li> */}
               <li className="nav-item" onClick={handleLinkClick}>
-                <Link className={`nav-link w-100 text-left ${pathname === '/components/alert' ? 'active' : ''}`} href="/components/alert">Alertas</Link>
+                <Link
+                  className={`nav-link w-100 text-left ${
+                    pathname === "/components/alert" ? "active" : ""
+                  }`}
+                  href="/components/alert"
+                >
+                  Alertas
+                </Link>
               </li>
               {/* <li className="nav-item" onClick={handleLinkClick}>
                 <Link className={`nav-link w-100 text-left ${pathname === '/components/audio' ? 'active' : ''}`} href="/components/audio">Audio</Link>
               </li> */}
               <li className="nav-item" onClick={handleLinkClick}>
-                <Link className={`nav-link w-100 text-left ${pathname === '/components/banner' ? 'active' : ''}`} href="/components/banner">Banner</Link>
+                <Link
+                  className={`nav-link w-100 text-left ${
+                    pathname === "/components/banner" ? "active" : ""
+                  }`}
+                  href="/components/banner"
+                >
+                  Banner
+                </Link>
               </li>
               <li className="nav-item" onClick={handleLinkClick}>
-                <Link className={`nav-link w-100 text-left ${pathname === '/components/block' ? 'active' : ''}`} href="/components/block">Bloque de trámite</Link>
+                <Link
+                  className={`nav-link w-100 text-left ${
+                    pathname === "/components/block" ? "active" : ""
+                  }`}
+                  href="/components/block"
+                >
+                  Bloque de trámite
+                </Link>
               </li>
               {/* <li className="nav-item" onClick={handleLinkClick}>
                 <Link className={`nav-link w-100 text-left ${pathname === '/components/breadcrumb' ? 'active' : ''}`} href="/components/breadcrumb">Migas de pan</Link>
               </li> */}
               <li className="nav-item" onClick={handleLinkClick}>
-                <Link className={`nav-link w-100 text-left ${pathname === '/components/button' ? 'active' : ''}`} href="/components/button">Botón</Link>
+                <Link
+                  className={`nav-link w-100 text-left ${
+                    pathname === "/components/button" ? "active" : ""
+                  }`}
+                  href="/components/button"
+                >
+                  Botón
+                </Link>
               </li>
               <li className="nav-item" onClick={handleLinkClick}>
-                <Link className={`nav-link w-100 text-left ${pathname === '/components/collapse' ? 'active' : ''}`} href="/components/collapse">Colapsable</Link>
+                <Link
+                  className={`nav-link w-100 text-left ${
+                    pathname === "/components/collapse" ? "active" : ""
+                  }`}
+                  href="/components/collapse"
+                >
+                  Colapsable
+                </Link>
               </li>
               {/* <li className="nav-item" onClick={handleLinkClick}>
                 <Link className={`nav-link w-100 text-left ${pathname === '/components/footer' ? 'active' : ''}`} href="/components/footer">Footer</Link>
@@ -112,10 +162,28 @@ export default function HeaderMobile () {
                 <Link className={`nav-link w-100 text-left ${pathname === '/components/gallery' ? 'active' : ''}`} href="/components/gallery">Galeria</Link>
               </li> */}
               <li className="nav-item" onClick={handleLinkClick}>
-                <Link className={`nav-link w-100 text-left ${pathname === '/components/navigation-vertical' ? 'active' : ''}`} href="/components/navigation-vertical">Navegacion vertical</Link>
+                <Link
+                  className={`nav-link w-100 text-left ${
+                    pathname === "/components/navigation-vertical"
+                      ? "active"
+                      : ""
+                  }`}
+                  href="/components/navigation-vertical"
+                >
+                  Navegacion vertical
+                </Link>
               </li>
               <li className="nav-item" onClick={handleLinkClick}>
-                <Link className={`nav-link w-100 text-left ${pathname === '/components/navigation-horizontal' ? 'active' : ''}`} href="/components/navigation-horizontal">Navegacion Horizontal</Link>
+                <Link
+                  className={`nav-link w-100 text-left ${
+                    pathname === "/components/navigation-horizontal"
+                      ? "active"
+                      : ""
+                  }`}
+                  href="/components/navigation-horizontal"
+                >
+                  Navegacion Horizontal
+                </Link>
               </li>
               {/* <li className="nav-item" onClick={handleLinkClick}>
                 <Link className={`nav-link w-100 text-left ${pathname === '/components/spinner' ? 'active' : ''}`} href="/components/spinner">Spinner</Link>
@@ -142,7 +210,14 @@ export default function HeaderMobile () {
                 <Link className={`nav-link w-100 text-left ${pathname === '/components/stepper' ? 'active' : ''}`} href="/components/stepper">Pasos de un formulario</Link>
               </li> */}
               <li className="nav-item" onClick={handleLinkClick}>
-                <Link className={`nav-link w-100 text-left ${pathname === '/components/card' ? 'active' : ''}`} href="/components/card">Tarjetas</Link>
+                <Link
+                  className={`nav-link w-100 text-left ${
+                    pathname === "/components/card" ? "active" : ""
+                  }`}
+                  href="/components/card"
+                >
+                  Tarjetas
+                </Link>
               </li>
               {/* <li className="nav-item" onClick={handleLinkClick}>
                 <Link className={`nav-link w-100 text-left ${pathname === '/components/map' ? 'active' : ''}`} href="/components/map">Mapa</Link>
@@ -154,7 +229,20 @@ export default function HeaderMobile () {
                 <Link className="nav-link w-100 text-left " href="/components/list-link">Lista de Pasos</Link>
               </li> */}
               <li className="nav-item" onClick={handleLinkClick}>
-                <Link className="nav-link w-100 text-left " href="/components/tabs">Pestañas</Link>
+                <Link
+                  className="nav-link w-100 text-left "
+                  href="/components/tabs"
+                >
+                  Pestañas
+                </Link>
+              </li>
+              <li className="nav-item" onClick={handleLinkClick}>
+                <Link
+                  className="nav-link w-100 text-left "
+                  href="/components/map"
+                >
+                  Mapa
+                </Link>
               </li>
               <li className="nav-item" onClick={handleLinkClick}>
                 <Link className="nav-link w-100 text-left " href="/components/form-text">Formulario de textos</Link>
@@ -164,5 +252,5 @@ export default function HeaderMobile () {
         </div>
       </Drawer>
     </div>
-  )
+  );
 }

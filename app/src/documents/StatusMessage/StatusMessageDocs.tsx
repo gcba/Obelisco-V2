@@ -31,6 +31,8 @@ const sections = [
               Este es un párrafo que brinda información necesaria con la finalidad de guiar y ayudar a las personas usuarias a finalizar un proceso o iniciar uno nuevo.
             </p>
             <button type="button" className="btn btn-secondary">
+  <i className="bx bxs-info-circle o-icon"></i> 
+
               Botón
             </button>
           </div>
@@ -63,6 +65,8 @@ const sections = [
               <li>Éste es otro ítem dentro de una lista.</li>
             </ul>
             <button type="button" className="btn btn-secondary">
+  <i className="bx bxs-info-circle o-icon"></i> 
+
               Botón
             </button>
           </div>
@@ -97,9 +101,12 @@ const sections = [
               </li>
             </ul>
             <button type="button" className="btn btn-secondary">
+  <i className="bx bxs-info-circle o-icon"></i> 
               Botón
             </button>
             <button type="button" className="btn btn-outline-secondary">
+  <i className="bx bxs-info-circle o-icon"></i> 
+
               Botón
             </button>
           </div>
@@ -134,9 +141,13 @@ const sections = [
               </li>
             </ul>
             <button type="button" className="btn btn-secondary">
+  <i className="bx bxs-info-circle o-icon"></i> 
+
               Botón
             </button>
             <button type="button" className="btn btn-outline-secondary">
+  <i className="bx bxs-info-circle o-icon"></i> 
+
               Botón
             </button>
           </div>
@@ -160,8 +171,9 @@ const sections = [
               En el cuerpo de este componente pueden ir enlaces o botones:
               <a href="#">https://ejemplo.buenosaires.gob.ar</a>
             </p>
-            <button type="button" className="btn btn-outline-link">
-              Ir al sitio web
+            <button type="button" className="btn btn-primary">
+            <i className="bx bxs-info-circle o-icon"></i> 
+            Ir al sitio web
             </button>
           </div>
         </div>

@@ -41,6 +41,9 @@ export const componentsPages = [
   { text: "Miga de pan", url: "/components/breadcrumb", id: 16 },
   { text: "Formulario de textos", url: "/components/form-text", id: 17 },
   {text: "Barra de progreso", url:"./progress-bar", id:18},
+  { text: "Formulario Casillas de selección", url: "/components/form-selection", id: 19 },
+  { text: "Mapa", url: "/components/map", id: 20 },
+  { text: "Destacado", url: "/components/highlighted", id: 21 },
 ];
 
 const gettingPages = [
@@ -48,7 +51,7 @@ const gettingPages = [
   { text: "Importaciones", url: "/getting-started/imports", id: 3 },
 ];
 
-export default function RootLayout ({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;

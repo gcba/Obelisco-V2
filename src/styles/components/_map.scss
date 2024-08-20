@@ -1,0 +1,37 @@
+.card-map {
+  .card-body {
+    padding: 24px;
+
+    .card-title {
+      font-size: 1.25rem;
+      margin-bottom: 0;
+      font-weight: 700;
+      line-height: 24px;
+      color: $blue-900;
+    }
+
+    .card-text {
+      margin-top: 0.25rem;
+      color: $blue-900;
+    }
+
+    .card-iframe {
+      max-height: 146px;
+      margin: 1rem 0;
+
+      iframe,
+      div {
+        width: 100%;
+        max-height: 146px;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        outline: none;
+        border-radius: 8px;
+      }
+    }
+
+    .btn {
+      width: 100%;
+    }
+  }
+}

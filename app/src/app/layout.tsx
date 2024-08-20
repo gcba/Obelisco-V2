@@ -34,13 +34,18 @@ export const componentsPages = [
     url: "/components/dropdown-nav",
     id: 11,
   },
-  { text: "Etiquetas", url: "/components/badge", id: 12 },
-  { text: "Banner", url: "/components/banner", id: 13 },
-  { text: "Spinner", url: "/components/spinner", id: 14 },
-  { text: "Botones", url: "/components/button", id: 15 },
-  { text: "Miga de pan", url: "/components/breadcrumb", id: 16 },
-  { text: "Formulario de textos", url: "/components/form-text", id: 17 },
-  { text: "Formulario Casillas de selección", url: "/components/form-selection", id: 18 },
+  {
+    text: "Desplagable de Selección",
+    url: "/components/dropdown-sel",
+    id: 12,
+  },
+  { text: "Etiquetas", url: "/components/badge", id: 13 },
+  { text: "Banner", url: "/components/banner", id: 14 },
+  { text: "Spinner", url: "/components/spinner", id: 15 },
+  { text: "Botones", url: "/components/button", id: 16 },
+  { text: "Miga de pan", url: "/components/breadcrumb", id: 17 },
+  { text: "Formulario de textos", url: "/components/form-text", id: 18 },
+  { text: "Formulario Casillas de selección", url: "/components/form-selection", id: 19 },
 ];
 
 const gettingPages = [

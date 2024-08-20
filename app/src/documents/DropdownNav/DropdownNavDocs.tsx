@@ -8,7 +8,7 @@ const sections = [
     id: 'section-1',
     title: 'Desplegable de navegación',
     content: (
-      <MainDescription description="La tipografía es nuestro sistema de fuentes. Las buenas prácticas ayudan a presentar el contenido de manera clara y eficiente." />
+      <MainDescription description="Este tipo de desplegables permite acceder a opciones de navegación y funcionalidades adicionales de manera organizada, desplegándolas de forma vertical u horizontal." />
     ),
     h1: true,
   },

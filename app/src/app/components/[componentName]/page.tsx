@@ -1,26 +1,27 @@
-import { notFound } from 'next/navigation';
 import AlertDocs from '@/documents/Alert/AlertDocs';
 import BadgeDocs from '@/documents/Badge/BadgeDocs';
 import BannerDocs from '@/documents/Banner/BannerDocs';
 import BlockDocs from '@/documents/Block/BlockDocs';
+import BreadcrumbDocs from '@/documents/Breadcrumb/BreadcrumbDocs';
 import ButtonDocs from '@/documents/Button/ButtonDocs';
 import CardDocs from '@/documents/Card/CardDocs';
 import CollapseDocs from '@/documents/Collapse/CollapseDocs';
 import ColorsDocs from '@/documents/Colors/ColorsDocs';
+import DropdownNavDocs from '@/documents/DropdownNav/DropdownNavDocs';
+import FormTextDocs from '@/documents/Form-text/FormText';
+import GridDocs from '@/documents/Grid/GridDocs';
 import LinkDocs from '@/documents/Link/LinkDocs';
 import ModalDocs from '@/documents/Modal/ModalDocs';
 import NavHorizontalDocs from '@/documents/NavHorizontal/NavHorizontalDocs';
 import NavVerticalDocs from '@/documents/NavVertical/NavVerticalDocs';
+import ProgressBarDocs from '@/documents/ProgressBar/ProgressBarDocs';
+import SpinnerDocs from '@/documents/Spinner/SpinnerDocs';
 import StatusMessageDocs from '@/documents/StatusMessage/StatusMessageDocs';
 import SwitchDocs from '@/documents/Switch/SwitchDocs';
 import TabsDocs from '@/documents/Tabs/TabsDocs';
 import TooltipDocs from '@/documents/Tooltip/TooltipDocs';
 import TypographyDocs from '@/documents/Typography/TypographyDocs';
-import DropdownNavDocs from '@/documents/DropdownNav/DropdownNavDocs';
-import GridDocs from '@/documents/Grid/GridDocs';
-import SpinnerDocs from '@/documents/Spinner/SpinnerDocs';
-import BreadcrumbDocs from '@/documents/Breadcrumb/BreadcrumbDocs';
-import FormTextDocs from '@/documents/Form-text/FormText';
+import { notFound } from 'next/navigation';
 
 // davis: se mapean las url con componentes
 const componentMap: { [key: string]: React.ReactNode } = {
@@ -45,10 +46,11 @@ const componentMap: { [key: string]: React.ReactNode } = {
   grid: <GridDocs />,
   spinner: <SpinnerDocs />,
   breadcrumb: <BreadcrumbDocs />,
-  'form-text': <FormTextDocs />
+  'form-text': <FormTextDocs />,
+  'progress-bar': <ProgressBarDocs />
 };
 
-export default function ComponentPage ({ params }: { params: { componentName: string } }) {
+export default function ComponentPage({ params }: { params: { componentName: string } }) {
   const { componentName } = params;
 
   const component = componentMap[componentName];

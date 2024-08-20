@@ -40,6 +40,7 @@ export const componentsPages = [
   { text: "Botones", url: "/components/button", id: 15 },
   { text: "Miga de pan", url: "/components/breadcrumb", id: 16 },
   { text: "Formulario de textos", url: "/components/form-text", id: 17 },
+  {text: "Barra de progreso", url:"./progress-bar", id:18},
 ];
 
 const gettingPages = [

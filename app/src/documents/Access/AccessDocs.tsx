@@ -150,226 +150,131 @@ const AccessDocs: React.FC = () => {
     },
     {
       id: "section-6",
-      title: "Lista ancho completo | Cuatro Columnas",
+      title: "Disposición",
       content: (
-        <section>
-          <div className="container">
-            <div className="access-deck max-cards-4 row">
-              <a href="#" className="list-group-item item-sm col">
-                <span className="access-title">Acceso</span>
-              </a>
-              <a href="#" className="list-group-item item-sm col">
-                <span className="access-title">Acceso</span>
-              </a>
-              <a href="#" className="list-group-item item-sm col">
-                <span className="access-title">Acceso</span>
-              </a>
-              <a href="#" className="list-group-item item-sm col">
-                <span className="access-title">Acceso</span>
-              </a>
-              <a href="#" className="list-group-item item-sm col">
-                <span className="access-title">Acceso</span>
-              </a>
+        <>
+          {/* Cuatro Columnas */}
+          <section>
+            <h3>Cuatro columnas</h3>
+            <div className="container">
+              <div className="access-items-4">
+                <div className="col">
+                  <a href="#" className="list-group-item item-sm">
+                    <span className="access-title">Acceso</span>
+                  </a>
+                </div>
+                <div className="col">
+                  <a href="#" className="list-group-item item-sm">
+                    <span className="access-title">Acceso</span>
+                  </a>
+                </div>
+                <div className="col">
+                  <a href="#" className="list-group-item item-sm">
+                    <span className="access-title">Acceso</span>
+                  </a>
+                </div>
+                <div className="col">
+                  <a href="#" className="list-group-item item-sm">
+                    <span className="access-title">Acceso</span>
+                  </a>
+                </div>
+                <div className="col">
+                  <a href="#" className="list-group-item item-sm">
+                    <span className="access-title">Acceso</span>
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
 
-          <CodeCopy code={EGcodeListWidthComplete4ColumnsAccess} />
-        </section>
-      ),
-    },
-    {
-      id: "section-7",
-      title: "Lista ancho completo | Tres Columnas",
-      content: (
-        <section>
-          <div className="container">
-            <div className="access-deck max-cards-3 row">
-              <a href="#" className="list-group-item item-sm col">
-                <span className="access-title">Acceso</span>
-              </a>
-              <a href="#" className="list-group-item item-sm col">
-                <span className="access-title">Acceso</span>
-              </a>
-              <a href="#" className="list-group-item item-sm col">
-                <span className="access-title">Acceso</span>
-              </a>
-              <a href="#" className="list-group-item item-sm col">
-                <span className="access-title">Acceso</span>
-              </a>
-              <a href="#" className="list-group-item item-sm col">
-                <span className="access-title">Acceso</span>
-              </a>
-            </div>
-          </div>
+            <CodeCopy code={EGcodeListWidthComplete4ColumnsAccess} />
+          </section>
 
-          <CodeCopy code={EGcodeListWidthComplete3ColumnsAccess} />
-        </section>
-      ),
-    },
-    {
-      id: "section-8",
-      title: "Lista ancho completo | Dos Columnas",
-      content: (
-        <section>
-          <div className="container">
-            <div className="access-deck max-cards-2">
-              <a href="#" className="list-group-item item-sm">
-                <span className="access-title">Acceso</span>
-              </a>
-              <a href="#" className="list-group-item item-sm">
-                <span className="access-title">Acceso</span>
-              </a>
-              <a href="#" className="list-group-item item-sm">
-                <span className="access-title">Acceso</span>
-              </a>
-              <a href="#" className="list-group-item item-sm">
-                <span className="access-title">Acceso</span>
-              </a>
-              <a href="#" className="list-group-item item-sm">
-                <span className="access-title">Acceso</span>
-              </a>
+          {/* Tres Columnas */}
+          <section>
+            <h3>Tres Columnas</h3>
+            <div className="container">
+              <div className="access-items-3">
+                <div className="col">
+                  <a href="#" className="list-group-item item-sm">
+                    <span className="access-title">Acceso</span>
+                  </a>
+                </div>
+                <div className="col">
+                  <a href="#" className="list-group-item item-sm">
+                    <span className="access-title">Acceso</span>
+                  </a>
+                </div>
+                <div className="col">
+                  <a href="#" className="list-group-item item-sm">
+                    <span className="access-title">Acceso</span>
+                  </a>
+                </div>
+                <div className="col">
+                  <a href="#" className="list-group-item item-sm">
+                    <span className="access-title">Acceso</span>
+                  </a>
+                </div>
+                <div className="col">
+                  <a href="#" className="list-group-item item-sm">
+                    <span className="access-title">Acceso</span>
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-          <CodeCopy code={EGcodeListWidthComplete2ColumnsAccess} />
-        </section>
-      ),
-    },
-    {
-      id: "section-9",
-      title: "Lista ancho completo | Una Columna",
-      content: (
-        <section>
-          <div className="container">
-            <div className="access-deck max-cards-1">
-              <a href="#" className="list-group-item item-sm">
-                <span className="access-title">Acceso</span>
-              </a>
-              <a href="#" className="list-group-item item-sm">
-                <span className="access-title">Acceso</span>
-              </a>
-              <a href="#" className="list-group-item item-sm">
-                <span className="access-title">Acceso</span>
-              </a>
-              <a href="#" className="list-group-item item-sm">
-                <span className="access-title">Acceso</span>
-              </a>
-            </div>
-          </div>
-          <CodeCopy code={EGcodeListWidthComplete1ColumnAccess} />
-        </section>
-      ),
-    },
-    {
-      id: "section-10",
-      title: "Lista ancho por acceso | Cuatro Columna",
-      content: (
-        <section>
-          <div className="container">
-            <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
-              <a href="#" className="col list-group-item item-sm">
-                <span className="access-title">Acceso</span>
-              </a>
-              <a href="#" className="col list-group-item item-sm">
-                <span className="access-title">Acceso</span>
-              </a>
-              <a href="#" className="col list-group-item item-sm">
-                <span className="access-title">Acceso</span>
-              </a>
-              <a href="#" className="col list-group-item item-sm">
-                <span className="access-title">Acceso</span>
-              </a>
-              <a href="#" className="col list-group-item item-sm">
-                <span className="access-title">Acceso</span>
-              </a>
-            </div>
-          </div>
 
-          <CodeCopy code={EGcodeListWidthByAccess4ColumnsAccess} />
-        </section>
-      ),
-    },
-    {
-      id: "section-11",
-      title: "Lista ancho por acceso | Tres Columnas",
-      content: (
-        <section>
-          <div className="container">
-            <div className="access-deck access-column max-cards-3">
-              <a href="#" className="list-group-item item-sm">
-                <span className="access-title">Acceso</span>
-              </a>
-              <a href="#" className="list-group-item item-sm">
-                <span className="access-title">Acceso</span>
-              </a>
-              <a href="#" className="list-group-item item-sm">
-                <span className="access-title">Acceso</span>
-              </a>
-              <a href="#" className="list-group-item item-sm">
-                <span className="access-title">Acceso</span>
-              </a>
-              <a href="#" className="list-group-item item-sm">
-                <span className="access-title">Acceso</span>
-              </a>
+            <CodeCopy code={EGcodeListWidthComplete3ColumnsAccess} />
+          </section>
+
+          {/* Una columna */}
+          <section>
+            <h3>Una Columna con Aside</h3>
+            <div className="container">
+              <div className="row">
+                {/* Columna para el div de accesos */}
+                <div className="col-12 col-lg-4">
+                  <div className="max-items-1">
+                    <div className="col">
+                      <a href="#" className="list-group-item item-sm">
+                        <span className="access-title">Acceso</span>
+                      </a>
+                    </div>
+                    <div className="col">
+                      <a href="#" className="list-group-item item-sm">
+                        <span className="access-title">Acceso</span>
+                      </a>
+                    </div>
+                    <div className="col">
+                      <a href="#" className="list-group-item item-sm">
+                        <span className="access-title">Acceso</span>
+                      </a>
+                    </div>
+                    <div className="col">
+                      <a href="#" className="list-group-item item-sm">
+                        <span className="access-title">Acceso</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Columna para el contenido a un lado */}
+                <div className="col-12 col-lg-8">
+                  <div className="other-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Possimus nesciunt sed dolorem laboriosam eius voluptatibus
+                    omnis accusantium, non atque et at consequuntur accusamus,
+                    facilis officia nam consectetur aliquam sunt ipsum. Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                    nesciunt sed dolorem laboriosam eius voluptatibus omnis
+                    accusantium, non atque et at consequuntur accusamus, facilis
+                    officia nam consectetur aliquam sunt ipsum.
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <CodeCopy code={EGcodeListWidthByAccess3ColumnsAccess} />
-        </section>
-      ),
-    },
-    {
-      id: "section-12",
-      title: "Lista ancho por acceso | Dos Columnas",
-      content: (
-        <section>
-          <div className="container">
-            <div className="access-deck access-column max-cards-2">
-              <a href="#" className="list-group-item item-sm">
-                <span className="access-title">Acceso</span>
-              </a>
-              <a href="#" className="list-group-item item-sm">
-                <span className="access-title">Acceso</span>
-              </a>
-              <a href="#" className="list-group-item item-sm">
-                <span className="access-title">Acceso</span>
-              </a>
-              <a href="#" className="list-group-item item-sm">
-                <span className="access-title">Acceso</span>
-              </a>
-              <a href="#" className="list-group-item item-sm">
-                <span className="access-title">Acceso</span>
-              </a>
-            </div>
-          </div>
-          <CodeCopy code={EGcodeListWidthByAccess2ColumnsAccess} />
-        </section>
-      ),
-    },
-    {
-      id: "section-12",
-      title: "Lista ancho por acceso | Una Columna",
-      content: (
-        <section>
-          <div className="container">
-            <div className="access-deck access-column max-cards-4">
-              <a href="#" className="list-group-item item-sm">
-                <span className="access-title">Acceso</span>
-              </a>
-              <a href="#" className="list-group-item item-sm">
-                <span className="access-title">Acceso</span>
-              </a>
-              <a href="#" className="list-group-item item-sm">
-                <span className="access-title">Acceso</span>
-              </a>
-              <a href="#" className="list-group-item item-sm">
-                <span className="access-title">Acceso</span>
-              </a>
-              <a href="#" className="list-group-item item-sm">
-                <span className="access-title">Acceso</span>
-              </a>
-            </div>
-          </div>
-          <CodeCopy code={EGcodeListWidthByAccess1ColumnAccess} />
-        </section>
+
+            <CodeCopy code={EGcodeListWidthComplete1ColumnAccess} />
+          </section>
+        </>
       ),
     },
   ];

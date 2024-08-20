@@ -1,0 +1,163 @@
+
+/* === Variable and mixins  === */
+$checkbox-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" style="&%2310;"><rect x="1" y="1" width="22" height="22" rx="2" fill="" stroke="" stroke-width="2" style="&%2310;"/><path d="M9.1725 16.1625L5.7025 12.6925C5.3125 12.3025 4.6825 12.3025 4.2925 12.6925C3.9025 13.0825 3.9025 13.7125 4.2925 14.1025L8.4725 18.2825C8.8625 18.6725 9.4925 18.6725 9.8825 18.2825L20.4625 7.7025C20.8525 7.3125 20.8525 6.6825 20.4625 6.2925C20.0725 5.9025 19.4425 5.9025 19.0525 6.2925L9.1725 16.1625Z" fill="white"/></svg>');
+
+// Mixin para radio y checkbox
+@mixin form-check($type) {
+  @extend .form-check;
+  padding: 0;
+  margin-bottom: 0;
+
+  .form-#{$type}-label {
+    @extend .form-check-label;
+    display: flex;
+    gap: 0;
+    align-items: flex-start;
+    width: fit-content;
+    position: relative;
+    padding: 0.5rem 0;
+
+    .form-#{$type}-input {
+      @extend .form-check-input;
+      float: unset;
+      margin: 0.125rem 0.625rem; //0 10px
+      height: 1.25rem; //20px
+      width: 1.25rem; //20px
+      max-width: 1.25rem;
+      border: 0.125rem solid $body-color;
+
+      &:disabled, &.disabled {
+        border-color: $disabled-text;
+        opacity: 1;
+
+        ~ .form-#{$type}-text {
+          color: $disabled-text;
+        }
+      }
+
+      &:checked {
+        border-color: $active-color;
+        background-color: $active-color;
+
+        &:disabled, &.disabled {
+          background-image: none;
+          background-color: $disabled-text;
+          border-color: $disabled-text;
+          opacity: 1;
+        }
+
+        &:active {
+          background-color: $active-color;
+        }
+      }
+
+      &.is-invalid {
+        border-color: $danger;
+        
+        &:checked {
+          border-color: $active-color;
+          background-color: $active-color;
+        }
+        &:focus, &:focus-visible {
+          box-shadow: none;
+        }
+      }
+
+      &:focus,
+      &:focus-visible {
+        box-shadow: none;
+        border-color: $body-color;
+        &:checked {
+          border-color: $active-color;
+        }
+
+        // Estilos en el caso de que el focus sea en en el label  y no en el input solo
+        &:after {
+          content: '';
+          border-radius: 0.5rem;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          box-shadow: $focus-box-shadow;
+        }
+        ~.form-#{$type}-text {
+          padding-right: .25rem;
+        }
+      }
+
+      &:active {
+        background-color: unset;
+        &:focus {
+          &:after {
+            box-shadow: none;
+          }
+        }
+      }
+    }
+    
+    &:hover:not([aria-disabled="true"]) {
+      cursor: pointer;
+      .form-#{$type}-input {
+        border-color: $hover-color;
+        cursor: pointer;
+      }
+      .form-#{$type}-text {
+        color: $hover-color;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        cursor: pointer;
+      }
+    }
+
+    &[aria-disabled="true"],
+    &[aria-disabled="true"]:hover {
+      cursor: unset;
+      color: $disabled-text;
+      opacity: 1;
+      .form-#{$type}-input {
+        border-color: $disabled-text;
+        cursor: unset;
+        &:checked {
+          background-image: none;
+          background-color: $disabled-text;
+          opacity: 1;
+        }
+      }
+      .form-#{$type}-text {
+        color: $disabled-text;
+        text-decoration: none;
+        cursor: unset;
+      }
+    }
+  }
+}
+
+// Radio
+.form-radio {
+  @include form-check('radio');
+  .form-radio-label {
+    .form-radio-input {
+      &:checked {
+        background-image: none;
+        box-shadow: inset 0 0 0 3.4px $white;
+      }
+      &.is-invalid:checked {
+        box-shadow: inset 0 0 0 3.4px $white;
+      }
+    }
+  }
+}
+// Checkbox
+.form-checkbox {
+  @include form-check('checkbox');
+  .form-checkbox-label {
+    .form-checkbox-input {
+      &:checked {
+        background-image: $checkbox-image;
+        box-shadow: none;
+      }
+    }
+  }
+}

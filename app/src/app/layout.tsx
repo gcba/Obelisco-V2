@@ -41,6 +41,7 @@ export const componentsPages = [
   { text: "Miga de pan", url: "/components/breadcrumb", id: 16 },
   { text: "Formulario de textos", url: "/components/form-text", id: 17 },
   { text: "Formulario Casillas de selección", url: "/components/form-selection", id: 18 },
+  { text: "Galería", url: "/components/gallery", id: 20 },
 ];
 
 const gettingPages = [

@@ -86,8 +86,6 @@ const SpinnerDocs: React.FC = () => {
 
   return (
     <DocumentationTemplate
-      title="Spinner"
-      description="Un spinner es un indicador visual que ayuda a notificar a las personas usuarias que la carga de contenido o la recuperación de datos está en curso."
       sections={sections}
     />
   );

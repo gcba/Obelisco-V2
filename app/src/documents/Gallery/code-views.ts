@@ -6,7 +6,10 @@ export const GalleryExample = `//GRID
     data-bs-toggle="modal"
     data-bs-target="#modalGallery"
   >
-    <img src="https://gcba.github.io/Obelisco/gallery/1.jpg" alt="Texto alternativo de la imagen" />
+    <img 
+      src="https://gcba.github.io/Obelisco/gallery/1.jpg" 
+      alt="Texto alternativo de la imagen" 
+    />
   </a>
   <a
     href="gallery/2.jpg"
@@ -14,7 +17,10 @@ export const GalleryExample = `//GRID
     data-bs-toggle="modal"
     data-bs-target="#modalGallery"
   >
-    <img src="https://gcba.github.io/Obelisco/gallery/2.jpg" alt="Texto alternativo de la imagen" />
+    <img 
+      src="https://gcba.github.io/Obelisco/gallery/2.jpg" 
+      alt="Texto alternativo de la imagen" 
+    />
   </a>
   <a
     href="gallery/3.jpg"
@@ -22,7 +28,10 @@ export const GalleryExample = `//GRID
     data-bs-toggle="modal"
     data-bs-target="#modalGallery"
   >
-    <img src="https://gcba.github.io/Obelisco/gallery/3.jpg" alt="Texto alternativo de la imagen" />
+    <img 
+      src="https://gcba.github.io/Obelisco/gallery/3.jpg" 
+      alt="Texto alternativo de la imagen" 
+    />
   </a>
 </div>
 

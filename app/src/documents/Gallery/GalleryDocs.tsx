@@ -86,7 +86,7 @@ const GalleryDocs: React.FC = () => {
             <>
               <div className="container">
                 <div className="row">
-                  <div className="col-12 col-md-8 offset-md-2">
+                  <div className="p-0 col-12 col-md-8 offset-md-2">
                     <div className="gallery-grid gallery-max-3">
                       <a
                         href="gallery/1.jpg"

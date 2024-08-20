@@ -40,9 +40,10 @@ export const componentsPages = [
   { text: "Botones", url: "/components/button", id: 15 },
   { text: "Miga de pan", url: "/components/breadcrumb", id: 16 },
   { text: "Formulario de textos", url: "/components/form-text", id: 17 },
-  { text: "Formulario Casillas de selección", url: "/components/form-selection", id: 18 },
-  { text: "Mapa", url: "/components/map", id: 18 },
-  { text: "Destacado", url: "/components/highlighted", id: 19 },
+  {text: "Barra de progreso", url:"./progress-bar", id:18},
+  { text: "Formulario Casillas de selección", url: "/components/form-selection", id: 19 },
+  { text: "Mapa", url: "/components/map", id: 20 },
+  { text: "Destacado", url: "/components/highlighted", id: 21 },
 ];
 
 const gettingPages = [

@@ -24,6 +24,7 @@ import HighlightedDocs from "@/documents/Highlighted/HighlightedDocs";
 import BreadcrumbDocs from '@/documents/Breadcrumb/BreadcrumbDocs';
 import FormTextDocs from '@/documents/Form-text/FormText';
 import FormSelectionDocs from '@/documents/FormSelection/FormSelectionDocs';
+import ProgressBarDocs from '@/documents/ProgressBar/ProgressBarDocs';
 
 // davis: se mapean las url con componentes
 const componentMap: { [key: string]: React.ReactNode } = {
@@ -49,16 +50,13 @@ const componentMap: { [key: string]: React.ReactNode } = {
   spinner: <SpinnerDocs />,
   breadcrumb: <BreadcrumbDocs />,
   'form-text': <FormTextDocs />,
+  'progress-bar': <ProgressBarDocs />,
   map: <MapDocs />,
   highlighted: <HighlightedDocs />,
   'form-selection': <FormSelectionDocs />
 };
 
-export default function ComponentPage({
-  params,
-}: {
-  params: { componentName: string };
-}) {
+export default function ComponentPage({ params }: { params: { componentName: string } }) {
   const { componentName } = params;
 
   const component = componentMap[componentName];

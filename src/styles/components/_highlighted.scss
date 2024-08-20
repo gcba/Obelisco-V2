@@ -370,44 +370,44 @@ $panel-deck-card-mr: 2rem;
   }
 }
 
-.highlighted {
-  .highlighted-img,
-  video {
-    width: 100%;
-    max-width: 526px;
-    height: 296px;
-    border-radius: $card-border-radius;
-    object-fit: cover;
-    object-position: center;
-    aspect-ratio: 16/9;
-  }
+// .highlighted {
+//   .highlighted-img,
+//   video {
+//     width: 100%;
+//     max-width: 526px;
+//     height: 296px;
+//     border-radius: $card-border-radius;
+//     object-fit: cover;
+//     object-position: center;
+//     aspect-ratio: 16/9;
+//   }
 
-  .highlighted-body {
-    padding: 0;
-    width: 100%;
-    max-width: 712px;
+//   .highlighted-body {
+//     padding: 0;
+//     width: 100%;
+//     max-width: 712px;
 
-    .highlighted-title {
-      @extend .h4;
-    }
+//     .highlighted-title {
+//       @extend .h4;
+//     }
 
-    .highlighted-text {
-    }
-  }
+//     .highlighted-text {
+//     }
+//   }
 
-  .highlighted-footer {
-    @extend .h4;
-  }
-}
+//   .highlighted-footer {
+//     @extend .h4;
+//   }
+// }
 
-.highlighted-horizontal {
-}
+// .highlighted-horizontal {
+// }
 
-.highlighted-vertical {
-}
+// .highlighted-vertical {
+// }
 
-.highlighted-lateral {
-}
+// .highlighted-lateral {
+// }
 
-.highlighted-container {
-}
+// .highlighted-container {
+// }

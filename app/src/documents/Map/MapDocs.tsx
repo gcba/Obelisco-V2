@@ -1,7 +1,8 @@
-import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
-import { MapInstitution, MapLateral } from "./code-views";
 import CodeCopy from "@/components/CodeBox";
+import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
 import MainDescription from "@/components/Template/MainDescription";
+
+import { MapInstitution, MapLateral } from "./code-views";
 
 const MapDocs: React.FC = () => {
   const sections = [

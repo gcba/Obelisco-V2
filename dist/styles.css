@@ -238,7 +238,7 @@ hr {
   opacity: 0.25;
 }
 
-h6, .h6, h5, .h5, h4, .h4, .highlighted .highlighted-footer, .highlighted .highlighted-body .highlighted-title, .card.panel-lateral .card-body .card-title, .card.panel-vertical .card-body .card-title, .card.panel-horizontal .card-body .card-title, h3, .h3, h2, .h2, h1, .h1 {
+h6, .h6, h5, .h5, h4, .h4, .card.panel-lateral .card-body .card-title, .card.panel-vertical .card-body .card-title, .card.panel-horizontal .card-body .card-title, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
@@ -273,11 +273,11 @@ h3, .h3 {
   }
 }
 
-h4, .h4, .highlighted .highlighted-footer, .highlighted .highlighted-body .highlighted-title, .card.panel-lateral .card-body .card-title, .card.panel-vertical .card-body .card-title, .card.panel-horizontal .card-body .card-title {
+h4, .h4, .card.panel-lateral .card-body .card-title, .card.panel-vertical .card-body .card-title, .card.panel-horizontal .card-body .card-title {
   font-size: calc(1.275rem + 0.3vw);
 }
 @media (min-width: 1200px) {
-  h4, .h4, .highlighted .highlighted-footer, .highlighted .highlighted-body .highlighted-title, .card.panel-lateral .card-body .card-title, .card.panel-vertical .card-body .card-title, .card.panel-horizontal .card-body .card-title {
+  h4, .h4, .card.panel-lateral .card-body .card-title, .card.panel-vertical .card-body .card-title, .card.panel-horizontal .card-body .card-title {
     font-size: 1.5rem;
   }
 }
@@ -11967,7 +11967,7 @@ h3 {
   font-weight: 600;
 }
 
-.h4, .highlighted .highlighted-footer, .highlighted .highlighted-body .highlighted-title, .card.panel-lateral .card-body .card-title, .card.panel-vertical .card-body .card-title, .card.panel-horizontal .card-body .card-title,
+.h4, .card.panel-lateral .card-body .card-title, .card.panel-vertical .card-body .card-title, .card.panel-horizontal .card-body .card-title,
 h4 {
   font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.75rem;
@@ -16061,21 +16061,6 @@ a.btn {
   }
 }
 
-.highlighted .highlighted-img,
-.highlighted video {
-  width: 100%;
-  max-width: 526px;
-  height: 296px;
-  border-radius: var(--bs-border-radius);
-  object-fit: cover;
-  object-position: center;
-  aspect-ratio: 16/9;
-}
-.highlighted .highlighted-body {
-  padding: 0;
-  width: 100%;
-  max-width: 712px;
-}
 /* === Variable and mixins  === */
 .form-radio {
   padding: 0;

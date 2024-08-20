@@ -13,7 +13,8 @@ const GalleryGrid: React.FC<{ images: string[]; maxColumns: number }> = ({ image
     <div className={`gallery-grid gallery-max-${maxColumns} mb-5`}>
       {images.map((src, index) => (
         <div className="gallery-grid-item" key={index}>
-          <img src={src} alt={`Imagen ${index + 1}`} />
+          <img
+            src={src} alt={`Imagen ${index + 1}`} />
         </div>
       ))}
     </div>
@@ -94,7 +95,8 @@ const GalleryDocs: React.FC = () => {
                         data-bs-toggle="modal"
                         data-bs-target="#modalGallery"
                       >
-                        <img src="https://gcba.github.io/Obelisco/gallery/1.jpg" alt="Texto alternativo de la imagen" />
+                        <img
+                          src="https://gcba.github.io/Obelisco/gallery/1.jpg" alt="Texto alternativo de la imagen" />
                       </a>
                       <a
                         href="gallery/2.jpg"
@@ -102,7 +104,8 @@ const GalleryDocs: React.FC = () => {
                         data-bs-toggle="modal"
                         data-bs-target="#modalGallery"
                       >
-                        <img src="https://gcba.github.io/Obelisco/gallery/2.jpg" alt="Texto alternativo de la imagen" />
+                        <img
+                          src="https://gcba.github.io/Obelisco/gallery/2.jpg" alt="Texto alternativo de la imagen" />
                       </a>
                       <a
                         href="gallery/3.jpg"
@@ -110,7 +113,8 @@ const GalleryDocs: React.FC = () => {
                         data-bs-toggle="modal"
                         data-bs-target="#modalGallery"
                       >
-                        <img src="https://gcba.github.io/Obelisco/gallery/3.jpg" alt="Texto alternativo de la imagen" />
+                        <img
+                          src="https://gcba.github.io/Obelisco/gallery/3.jpg" alt="Texto alternativo de la imagen" />
                       </a>
                     </div>
                   </div>
@@ -138,6 +142,7 @@ const GalleryDocs: React.FC = () => {
                       <div className="carousel-inner">
                         <div className="carousel-item active" data-bs-interval="3000">
                           <img
+
                             src="https://gcba.github.io/Obelisco/gallery/1.jpg"
                             className="d-block w-100"
                             alt="Texto alternativo de la imagen"
@@ -162,6 +167,7 @@ const GalleryDocs: React.FC = () => {
                         </div>
                         <div className="carousel-item" data-bs-interval="3000">
                           <img
+
                             src="https://gcba.github.io/Obelisco/gallery/2.jpg"
                             className="d-block w-100"
                             alt="Texto alternativo de la imagen"
@@ -186,6 +192,7 @@ const GalleryDocs: React.FC = () => {
                         </div>
                         <div className="carousel-item" data-bs-interval="3000">
                           <img
+
                             src="https://gcba.github.io/Obelisco/gallery/3.jpg"
                             className="d-block w-100"
                             alt="Texto alternativo de la imagen"

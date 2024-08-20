@@ -9,6 +9,8 @@ const SpinnerDocs: React.FC = () => {
   const sections = [
     {
       id: "section-1",
+      description: "lorem ipsum dolor sit amet, lorem ipsum dolor sit amet v lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+      h1: true,
       title: "Tipos",
       content: (
         <>

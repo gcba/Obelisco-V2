@@ -130,8 +130,8 @@ const AlertDocs: React.FC = () => {
             className="alert alert-success alert-dismissible fade show"
             role="alert"
           >
-            <strong>Este es un destacado de una alerta de información. </strong>
-            Esta es la descripción de una alerta de información que continua al
+            <strong>Este es un destacado de una alerta de éxito. </strong>
+            Esta es la descripción de una alerta de éxito que continua al
             texto destacado.
             <button
               type="button"
@@ -160,8 +160,8 @@ const AlertDocs: React.FC = () => {
             className="alert alert-danger alert-dismissible fade show"
             role="alert"
           >
-            <strong>Este es un destacado de una alerta de información. </strong>
-            Esta es la descripción de una alerta de información que continua al
+            <strong>Este es un destacado de una alerta de error. </strong>
+            Esta es la descripción de una alerta de error que continua al
             texto destacado.
             <button
               type="button"
@@ -203,8 +203,8 @@ const AlertDocs: React.FC = () => {
             className="alert alert-success alert-dismissible fade show"
             role="alert"
           >
-            <strong>Este es un destacado de una alerta de información. </strong>
-            Esta es la descripción de una alerta de información que continua al
+            <strong>Este es un destacado de una alerta de éxito. </strong>
+            Esta es la descripción de una alerta de éxito que continua al
             texto destacado, incluso {" "}
             <a href="#" className="alert-link">
               con enlaces
@@ -222,8 +222,8 @@ const AlertDocs: React.FC = () => {
             className="alert alert-warning alert-dismissible fade show"
             role="alert"
           >
-            <strong>Este es un destacado de una alerta de información. </strong>
-            Esta es la descripción de una alerta de información que continua al
+            <strong>Este es un destacado de una alerta de advertencia. </strong>
+            Esta es la descripción de una alerta de advertencia que continua al
             texto destacado, incluso {" "}
             <a href="#" className="alert-link">
               con enlaces
@@ -241,8 +241,8 @@ const AlertDocs: React.FC = () => {
             className="alert alert-danger alert-dismissible fade show"
             role="alert"
           >
-            <strong>Este es un destacado de una alerta de información. </strong>
-            Esta es la descripción de una alerta de información que continua al
+            <strong>Este es un destacado de una alerta de error. </strong>
+            Esta es la descripción de una alerta de error que continua al
             texto destacado, incluso {" "}
             <a href="#" className="alert-link">
               con enlaces

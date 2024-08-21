@@ -28,28 +28,28 @@ export const EGcodeWithDescriptionAccess =
   `
   <div className="list-group">
 
-    <a href="" className="list-group-item item-sm">
+    <a href="#" className="list-group-item item-sm">
       <div className="access-content">
         <span className="access-title">Acceso</span>
         <p className="access-text">Descripción (Opcional)</p>
       </div>
     </a>
 
-    <a href="" className="list-group-item item-sm active">
+    <a href="#" className="list-group-item item-sm active">
       <div className="access-content">
         <span className="access-title">Acceso</span>
         <p className="access-text">Descripción (Opcional)</p>
       </div>
     </a>
 
-    <a href="" className="list-group-item item-sm hover">
+    <a href="#" className="list-group-item item-sm hover">
       <div className="access-content">
         <span className="access-title">Acceso</span>
         <p className="access-text">Descripción (Opcional)</p>
       </div>
     </a>
 
-    <a href="" className="list-group-item item-sm focus">
+    <a href="#" className="list-group-item item-sm focus">
       <div className="access-content">
         <span className="access-title">Acceso</span>
         <p className="access-text">Descripción (Opcional)</p>
@@ -65,7 +65,7 @@ export const EGcodeWithIconAccess =
   `
   <div className="list-group">
 
-    <a href="" className="list-group-item item-sm">
+    <a href="#" className="list-group-item item-sm">
     <i className="bx bxs-info-circle"></i>  
     <div className="access-content">
         <span className="access-title">Acceso</span>
@@ -73,7 +73,7 @@ export const EGcodeWithIconAccess =
       </div>
     </a>
 
-    <a href="" className="list-group-item item-sm active">
+    <a href="#" className="list-group-item item-sm active">
     <i className="bx bxs-info-circle"></i>  
     <div className="access-content">
         <span className="access-title">Acceso</span>
@@ -81,7 +81,7 @@ export const EGcodeWithIconAccess =
       </div>
     </a>
 
-    <a href="" className="list-group-item item-sm hover">
+    <a href="#" className="list-group-item item-sm hover">
     <i className="bx bxs-info-circle"></i>  
     <div className="access-content">
         <span className="access-title">Acceso</span>
@@ -89,7 +89,7 @@ export const EGcodeWithIconAccess =
       </div>
     </a>
 
-    <a href="" className="list-group-item item-sm focus">
+    <a href="#" className="list-group-item item-sm focus">
     <i className="bx bxs-info-circle"></i>  
     <div className="access-content">
         <span className="access-title">Acceso</span>
@@ -106,11 +106,11 @@ export const EGcodeSizesAccess =
   `
   <div className="list-group">
 
-    <a href="" className="list-group-item ">
+    <a href="#" className="list-group-item ">
       <span className="access-title">Acceso</span>
     </a>
     
-    <a href="" className="list-group-item item-sm hover">
+    <a href="#" className="list-group-item item-sm hover">
       <span className="access-title">Acceso</span>
     </a>
 
@@ -121,55 +121,115 @@ export const EGcodeSizesAccess =
 // Lista ancho completo | 4 columnas
 export const EGcodeListWidthComplete4ColumnsAccess =
   `
-  
+  <div className="access-items-4">
+    <div className="col">
+      <a href="#" className="list-group-item item-sm">
+        <span className="access-title">Acceso</span>
+      </a>
+    </div>
+    <div className="col">
+      <a href="#" className="list-group-item item-sm">
+        <span className="access-title">Acceso</span>
+      </a>
+    </div>
+    <div className="col">
+      <a href="#" className="list-group-item item-sm">
+        <span className="access-title">Acceso</span>
+      </a>
+    </div>
+    <div className="col">
+      <a href="#" className="list-group-item item-sm">
+        <span className="access-title">Acceso</span>
+      </a>
+    </div>
+    <div className="col">
+      <a href="#" className="list-group-item item-sm">
+        <span className="access-title">Acceso</span>
+      </a>
+    </div>
+  </div>
 
 `;
 
 // Lista ancho completo | 3 columnas
 export const EGcodeListWidthComplete3ColumnsAccess =
   `
-  
+<div className="access-items-3">
+  <div className="col">
+    <a href="#" className="list-group-item item-sm">
+      <span className="access-title">Acceso</span>
+    </a>
+  </div>
+  <div className="col">
+    <a href="#" className="list-group-item item-sm">
+      <span className="access-title">Acceso</span>
+    </a>
+  </div>
+  <div className="col">
+    <a href="#" className="list-group-item item-sm">
+      <span className="access-title">Acceso</span>
+    </a>
+  </div>
+  <div className="col">
+    <a href="#" className="list-group-item item-sm">
+      <span className="access-title">Acceso</span>
+    </a>
+  </div>
+  <div className="col">
+    <a href="#" className="list-group-item item-sm">
+      <span className="access-title">Acceso</span>
+    </a>
+  </div>
+</div>
 
 `;
 
 // Lista ancho completo | 2 columnas
-export const EGcodeListWidthComplete2ColumnsAccess =
+export const EGcodeListWidthComplete1ColumnWithAside =
   `
-  
+  <div className="container">
+      <div className="row">
+                
+        {/* Columna para el div de accesos */}
+        <div className="col-12 col-lg-4">
+          <div className="max-items-1">
+            <div className="col">
+              <a href="#" className="list-group-item item-sm">
+                <span className="access-title">Acceso</span>
+              </a>
+            </div>
+          <div className="col">
+            <a href="#" className="list-group-item item-sm">
+              <span className="access-title">Acceso</span>
+            </a>
+          </div>
+          <div className="col">
+            <a href="#" className="list-group-item item-sm">
+              <span className="access-title">Acceso</span>
+            </a>
+          </div>
+          <div className="col">
+            <a href="#" className="list-group-item item-sm">
+              <span className="access-title">Acceso</span>
+            </a>
+          </div>
+        </div>
+      </div>
 
-`;
-
-// Lista ancho completo | 1 columna
-export const EGcodeListWidthComplete1ColumnAccess =
-  `
-  
-
-`;
-
-// Lista ancho por acceso | 4 columnas
-export const EGcodeListWidthByAccess4ColumnsAccess =
-  `
-  
-
-`;
-
-// Lista ancho por acceso | 3 columnas
-export const EGcodeListWidthByAccess3ColumnsAccess =
-  `
-  
-
-`;
-
-// Lista ancho por acceso | 2 columnas
-export const EGcodeListWidthByAccess2ColumnsAccess =
-  `
-  
-
-`;
-
-// Lista ancho por acceso | 1 columna
-export const EGcodeListWidthByAccess1ColumnAccess =
-  `
-  
+      {/* Columna para el contenido a un lado */}
+      <div className="col-12 col-lg-8">
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Possimus nesciunt sed dolorem laboriosam eius voluptatibus
+          omnis accusantium, non atque et at consequuntur accusamus,
+          facilis officia nam consectetur aliquam sunt ipsum. Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Possimus
+          nesciunt sed dolorem laboriosam eius voluptatibus omnis
+          accusantium, non atque et at consequuntur accusamus, facilis
+          officia nam consectetur aliquam sunt ipsum.
+        </div>
+      </div>
+    </div>
+  </div>
 
 `;

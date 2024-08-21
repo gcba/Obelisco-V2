@@ -66,7 +66,7 @@ $theme-color-light-bg: (
   padding-left: $alert-padding-left;
   word-break: break-word;
   margin-bottom: 1rem;
-  width: 712px;
+  max-width: 728px;
 
   &::before {
     content: "";
@@ -145,7 +145,7 @@ $theme-color-light-bg: (
 
   .alert-link{
     font-weight: 400;
-    color: #101E37;
+    color: $list-link-color;
   }
 }
 

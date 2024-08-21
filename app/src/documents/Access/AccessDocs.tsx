@@ -15,12 +15,7 @@ import {
   EGcodeSizesAccess,
   EGcodeListWidthComplete4ColumnsAccess,
   EGcodeListWidthComplete3ColumnsAccess,
-  EGcodeListWidthComplete2ColumnsAccess,
-  EGcodeListWidthComplete1ColumnAccess,
-  EGcodeListWidthByAccess4ColumnsAccess,
-  EGcodeListWidthByAccess3ColumnsAccess,
-  EGcodeListWidthByAccess2ColumnsAccess,
-  EGcodeListWidthByAccess1ColumnAccess,
+  EGcodeListWidthComplete1ColumnWithAside,
 } from "./code-views";
 import { idText } from "typescript";
 import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
@@ -155,7 +150,7 @@ const AccessDocs: React.FC = () => {
         <>
           {/* Cuatro Columnas */}
           <section>
-            <h3>Cuatro columnas</h3>
+            <h2>Cuatro columnas</h2>
             <div className="container">
               <div className="access-items-4">
                 <div className="col">
@@ -191,7 +186,7 @@ const AccessDocs: React.FC = () => {
 
           {/* Tres Columnas */}
           <section>
-            <h3>Tres Columnas</h3>
+            <h2>Tres Columnas</h2>
             <div className="container">
               <div className="access-items-3">
                 <div className="col">
@@ -227,9 +222,10 @@ const AccessDocs: React.FC = () => {
 
           {/* Una columna */}
           <section>
-            <h3>Una Columna con Aside</h3>
+            <h2>Una Columna con Aside</h2>
             <div className="container">
               <div className="row">
+
                 {/* Columna para el div de accesos */}
                 <div className="col-12 col-lg-4">
                   <div className="max-items-1">
@@ -258,7 +254,7 @@ const AccessDocs: React.FC = () => {
 
                 {/* Columna para el contenido a un lado */}
                 <div className="col-12 col-lg-8">
-                  <div className="other-content">
+                  <div>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Possimus nesciunt sed dolorem laboriosam eius voluptatibus
                     omnis accusantium, non atque et at consequuntur accusamus,
@@ -272,7 +268,7 @@ const AccessDocs: React.FC = () => {
               </div>
             </div>
 
-            <CodeCopy code={EGcodeListWidthComplete1ColumnAccess} />
+            <CodeCopy code={EGcodeListWidthComplete1ColumnWithAside} />
           </section>
         </>
       ),

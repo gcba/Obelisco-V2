@@ -1,6 +1,6 @@
 .max-items-1 {
   @extend .row;
-  row-gap: 2rem;
+  row-gap: 1rem;
   @extend .row-cols-1;
   @media screen and (min-width: 768) and (max-width: 991) {
     row-gap: 1.5rem;

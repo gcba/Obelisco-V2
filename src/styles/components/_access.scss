@@ -1,4 +1,5 @@
 /* === Custom variables and mixins === */
+$list-link-color: #007BC7;
 
 $list-group-color: $body-color;
 // #007bc7: $hover;
@@ -7,8 +8,18 @@ $list-group-padding: 1.5rem;
 $list-group-padding-mobile: 1rem;
 
 $padding-card-access-body: 1.5rem;
+
+// Padding item-sm
 $padding-list-group-item-sm: 0.75rem 1.5rem;
+$padding-list-group-item-sm-tablet: 0.5rem 1rem;
 $padding-list-group-item-sm-mobile: 0.5rem 1rem;
+
+// Padding list-group
+$list-group-padding: 1.5rem;
+$list-group-padding-tablet: 1rem;
+$list-group-padding-mobile: 1rem;
+
+
 $padding-title-option: 0.75rem 1.5rem;
 $padding-title-option-first-child: 0.75rem 1.5rem 0;
 $font-size-icon-card: 2rem;
@@ -59,15 +70,15 @@ a.list-group-item {
   border: none;
   outline: 0.125rem solid $grisulado-50;
   border-radius: $list-group-border; // $list-group-border
-  padding: 1.5rem; // $list-group-padding
+  padding: $list-group-padding; // $list-group-padding
   display: flex;
   backface-visibility: hidden;
   max-width: 348px;
   height: auto;
 
-  @include media-breakpoint-down(xs) {
-    padding: $list-group-padding-mobile;
-  }
+  // @include media-breakpoint-down(xs) {
+  //   padding: $list-group-padding-mobile;
+  // }
 
   i,
   .material-icons-round {
@@ -233,7 +244,7 @@ a.list-group-item {
   }
 
   &.item-sm {
-    padding: $padding-list-group-item-sm;
+    padding: $padding-list-group-item-sm; //
   }
 
   &.list-group-item-logout {
@@ -371,7 +382,7 @@ a.list-group-item {
       }
 
       @include media-breakpoint-down(xs) {
-        padding: 1rem;
+        // padding: 1rem;
       }
     }
 

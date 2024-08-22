@@ -30,6 +30,8 @@ export const componentsPages = [
   { text: "Switch", url: "/components/switch", id: 22 },
   { text: "Tooltip", url: "/components/tooltip", id: 23 },
   { text: "Tipografia", url: "/components/typography", id: 24 },
+  { text: "Accesos", url: "/components/access", id: 25 },
+
 ];
 
 export const gettingPages = [

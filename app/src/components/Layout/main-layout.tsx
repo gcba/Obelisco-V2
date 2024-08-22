@@ -33,6 +33,7 @@ export const componentsPages = [
   { text: "Switch", url: "/components/switch", id: 22 },
   { text: "Tipografia", url: "/components/typography", id: 24 },
   { text: "Tooltip", url: "/components/tooltip", id: 23 },
+  { text: "Calendario", url: "/components/calendar", id: 23 },
 ];
 
 

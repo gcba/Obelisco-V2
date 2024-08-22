@@ -27,6 +27,7 @@ import ProgressBarDocs from '@/documents/ProgressBar/ProgressBarDocs';
 import MapDocs from "@/documents/Map/MapDocs";
 import GalleryDocs from "@/documents/Gallery/GalleryDocs";
 import PaginationDocs from '@/documents/Pagination/PaginationDocs';
+import CalendarDocs from "@/documents/Calendar/MapDocs";
 
 
 // davis: se mapean las url con componentes
@@ -57,6 +58,7 @@ const componentMap: { [key: string]: React.ReactNode } = {
   'map': <MapDocs />,
   'gallery': <GalleryDocs />,
   'pagination': <PaginationDocs />,
+  'calendar': <CalendarDocs />
 };
 
 export default function ComponentPage({ params }: { params: { componentName: string } }) {

@@ -16832,5 +16832,240 @@ a.btn, a.progression-link {
     min-width: unset;
   }
 }
+/* === Custom variables and mixins === */
+/* === Custom styles === */
+.calendar {
+  width: 100%;
+  max-width: 328px;
+  background-color: #FFFFFF;
+  padding: 0.5rem 0.25rem;
+}
+@media (min-width: 768px) {
+  .calendar {
+    max-width: 340px;
+  }
+}
+.calendar .calendar-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 0.25rem;
+  height: 24px;
+}
+.calendar .calendar-header .calendar-title,
+.calendar .calendar-header .calendar-year {
+  font-weight: 600;
+  font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-bottom: 0;
+}
+.calendar .calendar-body {
+  padding: 1rem 0 0;
+  color: #5C6A7A;
+  margin-bottom: 0;
+}
+.calendar .calendar-body table {
+  width: 100%;
+  text-align: center;
+}
+.calendar .calendar-body table th,
+.calendar .calendar-body table td {
+  padding: 0;
+}
+.calendar .calendar-body table th span,
+.calendar .calendar-body table td span {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  line-height: 40px;
+  border-radius: 50%;
+  margin: 0.25rem 0;
+}
+.calendar .calendar-body table .calendar-week-header th {
+  height: 48px;
+}
+.calendar .calendar-body table .calendar-week {
+  line-height: 8px;
+}
+.calendar .calendar-body table .calendar-week:nth-of-type(odd) td {
+  padding: 0.25rem 0;
+}
+.calendar .calendar-body table .calendar-week:nth-of-type(1) td {
+  padding: 0.5rem 0 0.25rem;
+}
+.calendar .calendar-body table .calendar-week td {
+  pointer-events: inherit;
+}
+.calendar .calendar-body table .calendar-week td .calendar-link {
+  border-radius: 50%;
+  margin: 0.25rem 0;
+  outline: 0.125rem solid transparent;
+}
+.calendar .calendar-body table .calendar-week td .calendar-link:hover {
+  outline: 0.25rem solid transparent;
+}
+.calendar .calendar-body table .calendar-week td .calendar-link:hover .active-secondary {
+  background-color: #69788A;
+}
+.calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-sky {
+  background-color: #66ddff !important;
+  color: #2e3947;
+}
+.calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-lavender {
+  background-color: #6690ff !important;
+  color: #2e3947;
+}
+.calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-coral {
+  background-color: #ff8766 !important;
+  color: #2e3947;
+}
+.calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-avocado {
+  background-color: #90ff66 !important;
+  color: #2e3947;
+}
+.calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-citrus {
+  background-color: #ffd466 !important;
+  color: #2e3947;
+}
+.calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-lime {
+  background-color: #ddff66 !important;
+  color: #2e3947;
+}
+.calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-pistachio {
+  background-color: #66ff87 !important;
+  color: #2e3947;
+}
+.calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-berries {
+  background-color: #d466ff !important;
+  color: #2e3947;
+}
+.calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-musket {
+  background-color: #ff66dd !important;
+  color: #2e3947;
+}
+.calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-aqua {
+  background-color: #66ffd4 !important;
+  color: #2e3947;
+}
+.calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-strawberry {
+  background-color: #ff66d8 !important;
+  color: #2e3947;
+}
+.calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-blackberry {
+  background-color: #8766ff !important;
+  color: #2e3947;
+}
+.calendar .calendar-body table .calendar-week td .calendar-link:hover .bg-gray {
+  background-color: #cccccc !important;
+  color: #2e3947;
+}
+.calendar .calendar-body table .calendar-week td .calendar-link:focus {
+  box-shadow: none;
+  backface-visibility: inherit;
+}
+.calendar .calendar-body table .calendar-week td .calendar-link:active {
+  box-shadow: none;
+  backface-visibility: inherit;
+}
+.calendar .calendar-body table .calendar-week td .calendar-link:active .active,
+.calendar .calendar-body table .calendar-week td .calendar-link:active .active-secondary {
+  box-shadow: 0 0 0 0.125rem 0 0 0 0.125rem #274986;
+}
+.calendar .calendar-body table .calendar-week td span:after {
+  line-height: 1.5;
+}
+.calendar .calendar-body table .calendar-week td span.disabled {
+  color: #B8C1CC;
+}
+.calendar .calendar-body table .calendar-week td span.active, .calendar .calendar-body table .calendar-week td span.active-secondary {
+  color: #FFFFFF;
+  background-color: #336ACC;
+  min-width: 100%;
+  height: 100%;
+  margin: 0;
+  outline: 0.125rem solid transparent;
+  cursor: pointer;
+}
+.calendar .calendar-body table .calendar-week td span.active.bg-gray, .calendar .calendar-body table .calendar-week td span.active-secondary.bg-gray {
+  background-color: #E5E5E5;
+}
+.calendar .calendar-body table .calendar-week td span.active.bg-sky, .calendar .calendar-body table .calendar-week td span.active-secondary.bg-sky {
+  color: #425266;
+}
+.calendar .calendar-body table .calendar-week td span.active.bg-lavender, .calendar .calendar-body table .calendar-week td span.active-secondary.bg-lavender {
+  color: #425266;
+}
+.calendar .calendar-body table .calendar-week td span.active.bg-coral, .calendar .calendar-body table .calendar-week td span.active-secondary.bg-coral {
+  color: #425266;
+}
+.calendar .calendar-body table .calendar-week td span.active.bg-avocado, .calendar .calendar-body table .calendar-week td span.active-secondary.bg-avocado {
+  color: #425266;
+}
+.calendar .calendar-body table .calendar-week td span.active.bg-citrus, .calendar .calendar-body table .calendar-week td span.active-secondary.bg-citrus {
+  color: #425266;
+}
+.calendar .calendar-body table .calendar-week td span.active.bg-lime, .calendar .calendar-body table .calendar-week td span.active-secondary.bg-lime {
+  color: #425266;
+}
+.calendar .calendar-body table .calendar-week td span.active.bg-pistachio, .calendar .calendar-body table .calendar-week td span.active-secondary.bg-pistachio {
+  color: #425266;
+}
+.calendar .calendar-body table .calendar-week td span.active.bg-berries, .calendar .calendar-body table .calendar-week td span.active-secondary.bg-berries {
+  color: #425266;
+}
+.calendar .calendar-body table .calendar-week td span.active.bg-musket, .calendar .calendar-body table .calendar-week td span.active-secondary.bg-musket {
+  color: #425266;
+}
+.calendar .calendar-body table .calendar-week td span.active.bg-aqua, .calendar .calendar-body table .calendar-week td span.active-secondary.bg-aqua {
+  color: #425266;
+}
+.calendar .calendar-body table .calendar-week td span.active.bg-strawberry, .calendar .calendar-body table .calendar-week td span.active-secondary.bg-strawberry {
+  color: #425266;
+}
+.calendar .calendar-body table .calendar-week td span.active.bg-blackberry, .calendar .calendar-body table .calendar-week td span.active-secondary.bg-blackberry {
+  color: #425266;
+}
+.calendar .calendar-body table .calendar-week td span.active.bg-gray, .calendar .calendar-body table .calendar-week td span.active-secondary.bg-gray {
+  color: #425266;
+}
+.calendar .calendar-body table .calendar-week td span.active-secondary {
+  background-color: #425266;
+}
+.calendar .calendar-footer .calendar-footer-list {
+  margin-top: 1rem;
+  box-shadow: 0px -1px 0px 0px #F3F6F9;
+  padding: 1rem 0.5rem 0;
+  margin-bottom: 0;
+}
+.calendar .calendar-footer .calendar-footer-list li {
+  list-style-type: none;
+}
+.calendar .calendar-footer .calendar-footer-list li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.calendar .calendar-footer .accordion {
+  margin-top: 1rem;
+}
+.calendar .calendar-footer .accordion .card {
+  margin-bottom: 0;
+}
+.calendar .calendar-footer .accordion .card .calendar-footer-list {
+  margin: 0;
+  box-shadow: none;
+  padding: 0;
+}
+
+.calendar-deck {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  justify-content: center;
+}
+@media (min-width: 1200px) {
+  .calendar-deck {
+    justify-content: space-between;
+    column-gap: 19px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

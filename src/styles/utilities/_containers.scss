@@ -19,6 +19,25 @@
   @extend .row-cols-lg-4;
 }
 
+// Entre 768px y 1199px (tablet) el gap entre elementos es de 24px, por lo que se modifica el padding y margins, manteniendo el area diseñable en 696px (entre 768px y 991px) y 936px (entre 992px y 1199px)
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container-md,
+  .container-sm,
+  .container {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  .row {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+  }
+  .row > * {
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+}
+
+
 .access-items-3 {
   @extend .row;
   row-gap: 2rem;
@@ -39,23 +58,4 @@
 .access-items-4 {
   @extend .access-items-3;
   @extend .row-cols-lg-4;
-}
-
-// Entre 768px y 991px el gap entre elementos es de 24px, por lo que se modifica el padding y margins, manteniendo el area diseñable en 688px
-@media (min-width: 768px) and (max-width: 991px) {
-  .container-md,
-  .container-sm,
-  .container {
-    max-width: 712px; // 688px + 24px
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-  }
-  .row {
-    margin-left: -0.75rem;
-    margin-right: -0.75rem;
-  }
-  .row > * {
-    padding-right: 0.75rem;
-    padding-left: 0.75rem;
-  }
 }

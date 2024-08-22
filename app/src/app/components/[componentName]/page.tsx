@@ -23,6 +23,7 @@ import BreadcrumbDocs from '@/documents/Breadcrumb/BreadcrumbDocs';
 import FormTextDocs from '@/documents/Form-text/FormText';
 import FormSelectionDocs from '@/documents/FormSelection/FormSelectionDocs';
 import GalleryDocs from "@/documents/Gallery/GalleryDocs";
+import PaginationDocs from '@/documents/Pagination/PaginationDocs';
 
 // davis: se mapean las url con componentes
 const componentMap: { [key: string]: React.ReactNode } = {
@@ -49,7 +50,8 @@ const componentMap: { [key: string]: React.ReactNode } = {
   breadcrumb: <BreadcrumbDocs />,
   'form-text': <FormTextDocs />,
   'form-selection': <FormSelectionDocs />,
-  'gallery': <GalleryDocs />
+  'gallery': <GalleryDocs />,
+  'pagination': <PaginationDocs />
 };
 
 export default function ComponentPage ({ params }: { params: { componentName: string } }) {

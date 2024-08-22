@@ -31,7 +31,7 @@ const generateCode = (numImages: number): string => {
     imagesCode += `
     <a
       href="gallery/${i}.jpg"
-      class="gallery-grid-item"
+      className="gallery-grid-item"
       data-bs-toggle="modal"
       data-bs-target="#modalGallery"
     >
@@ -42,7 +42,7 @@ const generateCode = (numImages: number): string => {
     </a>
     `;
   }
-  return `<div class="gallery-grid gallery-max-${Math.min(numImages, 7)}">
+  return `<div className="gallery-grid gallery-max-${Math.min(numImages, 7)}">
     ${imagesCode}
   </div>`;
 };
@@ -142,7 +142,6 @@ const GalleryDocs: React.FC = () => {
                       <div className="carousel-inner">
                         <div className="carousel-item active" data-bs-interval="3000">
                           <img
-
                             src="https://gcba.github.io/Obelisco/gallery/1.jpg"
                             className="d-block w-100"
                             alt="Texto alternativo de la imagen"
@@ -284,12 +283,12 @@ const GalleryDocs: React.FC = () => {
 
 export default GalleryDocs;
 
-{/* <!-- Cambiado 'data-toggle' a 'data-bs-toggle' --> */ }
-{/* <!-- Cambiado 'data-target' a 'data-bs-target' --> */ }
-{/* <!-- Cambiado 'data-backdrop' a 'data-bs-backdrop' --> */ }
-{/* <!-- Añadido 'slide' para la transición --> */ }
-{/* <!-- Cambiado 'data-ride' a 'data-bs-ride' --> */ }
-{/* <!-- Cambiado 'data-interval' a 'data-bs-interval' --> */ }
-{/* <!-- Cambiado 'sr-only' a 'visually-hidden' --> */ }
-{/* !-- Cambiado 'data-slide' a 'data-bs-slide' --> */ }
-{/* <!-- Cambiado 'data-target' a 'data-bs-target' --> */ }
+/*  Cambiado 'data-toggle' a 'data-bs-toggle' 
+ Cambiado 'data-target' a 'data-bs-target' 
+ Cambiado 'data-backdrop' a 'data-bs-backdrop' 
+ Añadido 'slide' para la transición 
+ Cambiado 'data-ride' a 'data-bs-ride' 
+ Cambiado 'data-interval' a 'data-bs-interval' 
+ Cambiado 'sr-only' a 'visually-hidden' 
+ Cambiado 'data-slide' a 'data-bs-slide' 
+ Cambiado 'data-target' a 'data-bs-target'  */

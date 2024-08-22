@@ -42,6 +42,7 @@ export const componentsPages = [
   { text: "Formulario de textos", url: "/components/form-text", id: 17 },
   { text: "Formulario Casillas de selección", url: "/components/form-selection", id: 18 },
   { text: "Galería", url: "/components/gallery", id: 20 },
+  { text: "Paginado", url: "/components/pagination", id: 21 },
 ];
 
 const gettingPages = [

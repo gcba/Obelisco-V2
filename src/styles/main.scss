@@ -1,39 +1,44 @@
 // src/styles/main.scss
 
 // Import Obelisco colors
-@import "variables/colors";
-@import "variables/fonts";
-@import "variables/breakpoints";
+@import 'variables/colors';
+@import 'variables/fonts';
+@import 'variables/breakpoints';
 // Import Bootstrap
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
 // Import custom variables and mixins
-@import "variables/typography";
-@import "variables/mixins";
+@import 'variables/typography';
+@import 'variables/mixins';
 
 // Import utilities
-@import "utilities/containers";
-@import "utilities/globals";
+@import 'utilities/containers';
+@import 'utilities/globals';
 
 // Import component styles
-@import "components/typography";
-@import "components/colors";
-@import "components/nav";
-@import "components/button";
-@import "components/link";
-@import "components/form-text";
+@import 'components/typography';
+@import 'components/colors';
+@import 'components/nav';
+@import 'components/button';
+@import 'components/link';
+@import 'components/form-text';
 
 // @import "components/card";
-@import "components/tooltip";
-@import "components/switch";
-@import "components/modal";
-@import "components/status-message";
-@import "components/dropdown";
-@import "components/tabs";
-@import "components/badge";
-@import "components/banner";
-@import "components/spinner";
-@import "components/breadcrumb";
-@import "components/form-radio";
+
+@import 'components/tooltip';
+@import 'components/switch';
+@import 'components/modal';
+@import 'components/status-message';
+@import 'components/dropdown';
+@import 'components/tabs';
+@import 'components/badge';
+@import 'components/banner';
+@import 'components/spinner';
+@import 'components/button';
+@import 'components/breadcrumb';
+@import 'components/map';
+@import 'components/highlighted';
+@import 'components/form-radio';
+@import "components/progress-bar";
 @import 'components/gallery';
 @import 'components/pagination';

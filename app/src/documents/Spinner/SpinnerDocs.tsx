@@ -9,6 +9,8 @@ const SpinnerDocs: React.FC = () => {
   const sections = [
     {
       id: "section-1",
+      description: "lorem ipsum dolor sit amet, lorem ipsum dolor sit amet v lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+      h1: true,
       title: "Tipos",
       content: (
         <>
@@ -86,8 +88,6 @@ const SpinnerDocs: React.FC = () => {
 
   return (
     <DocumentationTemplate
-      title="Spinner"
-      description="Un spinner es un indicador visual que ayuda a notificar a las personas usuarias que la carga de contenido o la recuperación de datos está en curso."
       sections={sections}
     />
   );

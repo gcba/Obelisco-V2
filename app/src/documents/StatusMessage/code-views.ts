@@ -13,6 +13,7 @@ export const SMType1 = `<div className="status status-info">
     usuarias a finalizar un proceso o iniciar uno nuevo.
   </p>
   <button type="button" className="btn btn-secondary">
+  <i class="bx bxs-info-circle o-icon"></i> 
     Botón
   </button>
 </div>
@@ -39,6 +40,7 @@ export const SMType2 = `<div className="status status-success">
     <li>Éste es otro ítem dentro de una lista.</li>
   </ul>
   <button type="button" className="btn btn-secondary">
+  <i class="bx bxs-info-circle o-icon"></i> 
     Botón
   </button>
 </div>
@@ -68,12 +70,14 @@ export const SMType3 = `<div className="status status-warning">
     </li>
   </ul>
   <button type="button" className="btn btn-secondary">
+  <i className="bx bxs-info-circle o-icon"></i> 
     Botón
   </button>
   <button
     type="button"
     className="btn btn-outline-secondary"
   >
+  <i class="bx bxs-info-circle o-icon"></i> 
     Botón
   </button>
 </div>
@@ -103,12 +107,14 @@ export const SMType4 = `<div className="status status-danger">
     </li>
   </ul>
   <button type="button" className="btn btn-secondary">
+  <i class="bx bxs-info-circle o-icon"></i> 
     Botón
   </button>
   <button
     type="button"
     className="btn btn-outline-secondary"
   >
+  <i class="bx bxs-info-circle o-icon"></i> 
     Botón
   </button>
 </div>
@@ -124,7 +130,8 @@ export const SMType5 = `<div className="status status-institutional">
     botones:
     <a href="#">https://ejemplo.buenosaires.gob.ar</a>
   </p>
-  <button type="button" className="btn btn-outline-link">
+  <button type="button" className="btn btn-primary">
+  <i class="bx bxs-info-circle o-icon"></i> 
     Ir al sitio web
   </button>
 </div>

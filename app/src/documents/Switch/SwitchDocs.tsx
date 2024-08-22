@@ -9,6 +9,7 @@ const SwitchDocs: React.FC = () => {
     {
       id: "section-1",
       title: "Switch",
+      h1: true,
       content: (
         <MainDescription description="Los interruptores permiten a los usuarios alternar entre dos estados, como encendido y apagado. Son útiles para configuraciones rápidas y fáciles de usar." />
       )

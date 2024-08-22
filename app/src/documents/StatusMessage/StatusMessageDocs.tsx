@@ -19,7 +19,7 @@ const sections = [
     title: 'Información',
     content: (
       <>
-        <div className="container p-5 bg-light">
+        <div className="container p-3 bg-light">
           <div className="status status-info">
             <h2 className="status-title">
               Esto es un título de un mensaje de información
@@ -47,7 +47,7 @@ const sections = [
     title: 'Éxito',
     content: (
       <>
-        <div className="container p-5 bg-light">
+        <div className="container p-3 bg-light">
           <div className="status status-success">
             <h2 className="status-title">
               Esto es un título de un mensaje de éxito
@@ -81,7 +81,7 @@ const sections = [
     title: 'Advertencia',
     content: (
       <>
-        <div className="container p-5 bg-light">
+        <div className="container p-3 bg-light">
           <div className="status status-warning">
             <h2 className="status-title">
               Esto es un título de un mensaje de advertencia
@@ -121,7 +121,7 @@ const sections = [
     title: 'Error',
     content: (
       <>
-        <div className="container p-5 bg-light">
+        <div className="container p-3 bg-light">
           <div className="status status-danger">
             <h2 className="status-title">
               Esto es un título de un mensaje de peligro
@@ -162,7 +162,7 @@ const sections = [
     title: 'Institucional',
     content: (
       <>
-        <div className="container p-5 bg-light">
+        <div className="container p-3 bg-light">
           <div className="status status-institutional">
             <h2 className="status-title">
               Este es un mensaje institucional del Gobierno de la Ciudad de Buenos Aires

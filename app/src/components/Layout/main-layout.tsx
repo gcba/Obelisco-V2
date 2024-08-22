@@ -16,6 +16,7 @@ export const componentsPages = [
   // { text: "Destacado", url: "/components/highlighted", id: 8 },
   { text: "Enlace", url: "/components/link", id: 9 },
   { text: "Espaciado", url: "/components/grid", id: 10 },
+  { text: "Etiquetas", url: "/components/badge", id: 23 },
   { text: "Formulario de Textos", url: "/components/form-text", id: 11 },
   { text: "Formulario de seleccion", url: "/components/form-selection", id: 12 },
   // { text: "Footer", url: "/components/footer", id: 13 },
@@ -33,6 +34,7 @@ export const componentsPages = [
   { text: "Tipografia", url: "/components/typography", id: 24 },
   { text: "Tooltip", url: "/components/tooltip", id: 23 },
 ];
+
 
 
 export const gettingPages = [

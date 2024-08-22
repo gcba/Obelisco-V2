@@ -5,12 +5,3 @@ export default function Home() {
     <HomeDocs />
   );
 }
-
-// Etiquetas 
-// Mensaje de estados 
-// Modal 
-// Switch 
-// Tooltip 
-// Mapa 
-// Galería   
-// Paginado 

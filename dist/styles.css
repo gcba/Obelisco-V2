@@ -14049,14 +14049,20 @@ input[type=search]::-moz-search-clear-button {
   margin-bottom: 1rem;
   color: #101E37;
 }
-.status > .btn, .status > .progression-link {
-  width: 100%;
+@media (max-width: 575.98px) {
+  .status > .btn, .status > .progression-link {
+    width: 100%;
+  }
 }
 .status > .btn + .btn, .status > .progression-link + .btn, .status > .btn + .progression-link, .status > .progression-link + .progression-link {
   margin-left: 1rem;
-  margin-left: 0;
-  margin-top: 1rem;
-  width: 100%;
+}
+@media (max-width: 575.98px) {
+  .status > .btn + .btn, .status > .progression-link + .btn, .status > .btn + .progression-link, .status > .progression-link + .progression-link {
+    margin-left: 0;
+    margin-top: 1rem;
+    width: 100%;
+  }
 }
 
 /* === Custom variables === */

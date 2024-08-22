@@ -57,7 +57,6 @@ const componentMap: { [key: string]: React.ReactNode } = {
   'map': <MapDocs />,
   'gallery': <GalleryDocs />,
   'pagination': <PaginationDocs />,
-
 };
 
 export default function ComponentPage({ params }: { params: { componentName: string } }) {

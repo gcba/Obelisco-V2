@@ -96,13 +96,20 @@ $calc-right-x: calc(0% - 30px);
 
 //ICON BOX
 .icon-box {
+  min-height: $tooltip-icon-box-size;
   max-height: $tooltip-icon-box-size;
+  height: $tooltip-icon-box-size;
+  width: $tooltip-icon-box-size;
   max-width: $tooltip-icon-box-size;
-  padding: $tooltip-icon-box-padding;
+  min-width: $tooltip-icon-box-size;
   border-radius: $tooltip-icon-box-border-radius;
+  padding: 16px;
 
-  & > * {
-    font-size: $tooltip-icon-size;
+  span,
+  i {
+    width: 16px;
+    height: 16px;
+    font-size: 1rem;
   }
 }
 
@@ -132,7 +139,7 @@ $calc-right-x: calc(0% - 30px);
 
   //ARROW
   &:before {
-    content: "";
+    content: '';
     z-index: 100;
     border-bottom: 0.125rem solid transparent;
     border-right: 0.125rem solid transparent;
@@ -163,8 +170,8 @@ $calc-right-x: calc(0% - 30px);
   }
 
   //VOID DATATOOLTIP
-  [data-tooltip=""]:after,
-  [data-tooltip=""]:before {
+  [data-tooltip='']:after,
+  [data-tooltip='']:before {
     display: none !important;
   }
 
@@ -176,7 +183,7 @@ $calc-right-x: calc(0% - 30px);
 
   //-------------------DIRECTIONS-----------------
   //DEFAULT
-  &[data-direction=""] {
+  &[data-direction=''] {
     @include tooltipY(
       left,
       bottom,
@@ -188,7 +195,7 @@ $calc-right-x: calc(0% - 30px);
   }
 
   //TOP
-  &[data-direction="top"] {
+  &[data-direction='top'] {
     @include tooltipY(
       left,
       bottom,
@@ -200,7 +207,7 @@ $calc-right-x: calc(0% - 30px);
   }
 
   //TOP RIGHT
-  &[data-direction="top-right"] {
+  &[data-direction='top-right'] {
     @include tooltipY(
       left,
       bottom,
@@ -212,7 +219,7 @@ $calc-right-x: calc(0% - 30px);
   }
 
   //TOP LEFT
-  &[data-direction="top-left"] {
+  &[data-direction='top-left'] {
     @include tooltipY(
       right,
       bottom,
@@ -224,7 +231,7 @@ $calc-right-x: calc(0% - 30px);
   }
 
   //BOTTOM
-  &[data-direction="bottom"] {
+  &[data-direction='bottom'] {
     @include tooltipY(
       left,
       top,
@@ -236,7 +243,7 @@ $calc-right-x: calc(0% - 30px);
   }
 
   //BOTTOM RIGHT
-  &[data-direction="bottom-right"] {
+  &[data-direction='bottom-right'] {
     @include tooltipY(
       left,
       top,
@@ -248,7 +255,7 @@ $calc-right-x: calc(0% - 30px);
   }
 
   //BOTTOM LEFT
-  &[data-direction="bottom-left"] {
+  &[data-direction='bottom-left'] {
     @include tooltipY(
       right,
       top,
@@ -260,7 +267,7 @@ $calc-right-x: calc(0% - 30px);
   }
 
   //LEFT
-  &[data-direction="left"] {
+  &[data-direction='left'] {
     @include tooltipX(
       right,
       $calc-left,
@@ -273,7 +280,7 @@ $calc-right-x: calc(0% - 30px);
   }
 
   //LEFT-TOP
-  &[data-direction="left-top"] {
+  &[data-direction='left-top'] {
     @include tooltipX(
       right,
       $calc-left,
@@ -286,7 +293,7 @@ $calc-right-x: calc(0% - 30px);
   }
 
   //LEFT-BOTTOM
-  &[data-direction="left-bottom"] {
+  &[data-direction='left-bottom'] {
     @include tooltipX(
       right,
       $calc-left,
@@ -299,7 +306,7 @@ $calc-right-x: calc(0% - 30px);
   }
 
   //RIGHT
-  &[data-direction="right"] {
+  &[data-direction='right'] {
     @include tooltipX(
       left,
       $calc-right,
@@ -312,7 +319,7 @@ $calc-right-x: calc(0% - 30px);
   }
 
   //RIGHT-TOP
-  &[data-direction="right-top"] {
+  &[data-direction='right-top'] {
     @include tooltipX(
       left,
       $calc-right,
@@ -325,7 +332,7 @@ $calc-right-x: calc(0% - 30px);
   }
 
   //RIGHT-BOTTOM
-  &[data-direction="right-bottom"] {
+  &[data-direction='right-bottom'] {
     @include tooltipX(
       left,
       $calc-right,

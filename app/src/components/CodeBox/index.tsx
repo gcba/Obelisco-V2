@@ -25,7 +25,7 @@ const CodeCopy = ({ code }: { code: string }) => {
       <div
         onClick={copyCode}
         style={{ cursor: "pointer" }}
-        className="box-code pb-2"
+        className="box-code pb-2 w-100"
       >
         <SyntaxHighlighter
           language="tsx"

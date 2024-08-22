@@ -82,6 +82,39 @@ const GalleryDocs: React.FC = () => {
         },
         {
           id: "section-2",
+          title: "Grillas",
+          content: (
+            <>
+              <div className="container">
+                <div className="row justify-content-center">
+                  <h5 className="mb-3 text-center">Cantidad de imágenes:</h5>
+                  <div className="col-12 col-md-10 text-center">
+                    <div className="btn-group mb-4" role="group" aria-label="Grillas de imágenes">
+                      {[1, 2, 3, 4, 5, 6, 7].map((num) => (
+                        <button
+                          key={num}
+                          type="button"
+                          className={`btn ${selectedGrid === num - 1 ? 'btn-primary' : 'btn-secondary'}`}
+                          onClick={() => setSelectedGrid(num - 1)}
+                        >
+                          {num}
+                        </button>
+                      ))}
+                    </div>
+                    <GalleryGrid
+                      images={images.slice(0, selectedGrid + 1)}
+                      maxColumns={selectedGrid + 1}
+                    />
+                  </div>
+                  <br />
+                  <CodeGrid numImages={selectedGrid + 1} />
+                </div>
+              </div>
+            </>
+          ),
+        },
+        {
+          id: "section-3",
           title: "Interactiva",
           content: (
             <>
@@ -243,52 +276,10 @@ const GalleryDocs: React.FC = () => {
             </>
           ),
         },
-        {
-          id: "section-3",
-          title: "Grillas",
-          content: (
-            <>
-              <div className="container">
-                <div className="row justify-content-center">
-                  <h5 className="mb-3 text-center">Cantidad de imágenes:</h5>
-                  <div className="col-12 col-md-10 text-center">
-                    <div className="btn-group mb-4" role="group" aria-label="Grillas de imágenes">
-                      {[1, 2, 3, 4, 5, 6, 7].map((num) => (
-                        <button
-                          key={num}
-                          type="button"
-                          className={`btn ${selectedGrid === num - 1 ? 'btn-primary' : 'btn-secondary'}`}
-                          onClick={() => setSelectedGrid(num - 1)}
-                        >
-                          {num}
-                        </button>
-                      ))}
-                    </div>
-                    <GalleryGrid
-                      images={images.slice(0, selectedGrid + 1)}
-                      maxColumns={selectedGrid + 1}
-                    />
-                  </div>
-                  <br />
-                  <CodeGrid numImages={selectedGrid + 1} />
-                </div>
-              </div>
-            </>
-          ),
-        },
+
       ]}
     />
   );
 };
 
 export default GalleryDocs;
-
-/*  Cambiado 'data-toggle' a 'data-bs-toggle' 
- Cambiado 'data-target' a 'data-bs-target' 
- Cambiado 'data-backdrop' a 'data-bs-backdrop' 
- Añadido 'slide' para la transición 
- Cambiado 'data-ride' a 'data-bs-ride' 
- Cambiado 'data-interval' a 'data-bs-interval' 
- Cambiado 'sr-only' a 'visually-hidden' 
- Cambiado 'data-slide' a 'data-bs-slide' 
- Cambiado 'data-target' a 'data-bs-target'  */

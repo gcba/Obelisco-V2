@@ -19,14 +19,15 @@ import TypographyDocs from "@/documents/Typography/TypographyDocs";
 import DropdownNavDocs from "@/documents/DropdownNav/DropdownNavDocs";
 import GridDocs from "@/documents/Grid/GridDocs";
 import SpinnerDocs from "@/documents/Spinner/SpinnerDocs";
-import MapDocs from "@/documents/Map/MapDocs";
 import HighlightedDocs from "@/documents/Highlighted/HighlightedDocs";
 import BreadcrumbDocs from '@/documents/Breadcrumb/BreadcrumbDocs';
 import FormTextDocs from '@/documents/Form-text/FormText';
 import FormSelectionDocs from '@/documents/FormSelection/FormSelectionDocs';
+import ProgressBarDocs from '@/documents/ProgressBar/ProgressBarDocs';
+import MapDocs from "@/documents/Map/MapDocs";
 import GalleryDocs from "@/documents/Gallery/GalleryDocs";
 import PaginationDocs from '@/documents/Pagination/PaginationDocs';
-import ProgressBarDocs from '@/documents/ProgressBar/ProgressBarDocs';
+
 
 // davis: se mapean las url con componentes
 const componentMap: { [key: string]: React.ReactNode } = {
@@ -52,7 +53,11 @@ const componentMap: { [key: string]: React.ReactNode } = {
   spinner: <SpinnerDocs />,
   breadcrumb: <BreadcrumbDocs />,
   'form-text': <FormTextDocs />,
-  'form-selection': <FormSelectionDocs />
+  'form-selection': <FormSelectionDocs />,
+  'map': <MapDocs />,
+  'gallery': <GalleryDocs />,
+  'pagination': <PaginationDocs />,
+
 };
 
 export default function ComponentPage({ params }: { params: { componentName: string } }) {

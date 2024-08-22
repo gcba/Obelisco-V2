@@ -19,18 +19,21 @@ export const componentsPages = [
   { text: "Formulario de Textos", url: "/components/form-text", id: 11 },
   { text: "Formulario de seleccion", url: "/components/form-selection", id: 12 },
   // { text: "Footer", url: "/components/footer", id: 13 },
+  { text: "Galería", url: "/components/gallery", id: 24 },
   { text: "Mapa", url: "/components/map", id: 14 },
-  { text: "Modal", url: "/components/modal", id: 15 },
   { text: "Mensaje de estado", url: "/components/status-message", id: 16 },
+  { text: "Modal", url: "/components/modal", id: 15 },
   { text: "Navegacion horizontal", url: "/components/nav-horizontal", id: 17 },
   { text: "Navegacion vertical", url: "/components/nav-vertical", id: 18 },
+  { text: "Paginado", url: "/components/pagination", id: 24 },
   { text: "Pestañas", url: "/components/tabs", id: 19 },
   { text: "ProgressBar", url: "/components/progress-bar", id: 20 },
   { text: "Spinner", url: "/components/spinner", id: 21 },
   { text: "Switch", url: "/components/switch", id: 22 },
-  { text: "Tooltip", url: "/components/tooltip", id: 23 },
   { text: "Tipografia", url: "/components/typography", id: 24 },
+  { text: "Tooltip", url: "/components/tooltip", id: 23 },
 ];
+
 
 export const gettingPages = [
   { text: "Instalacción", url: "/getting-started/installation", id: 2 },

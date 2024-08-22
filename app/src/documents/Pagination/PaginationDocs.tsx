@@ -27,7 +27,7 @@ const PaginationDocs: React.FC = () => {
         <>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur expedita autem in quae culpa illum sed, eveniet perferendis ratione soluta, est assumenda ducimus corporis. Deleniti dolore quaerat consequuntur dolorem sequi?</p>
 
-          <div className="row justify-content-center mt-5">
+          <div className="row justify-content-center mt-4">
             <div className="col-auto">
               <div className="btn-group" role="group" aria-label="Basic example">
                 <button type="button" className={`btn ${selectedExample === 'inicial' ? 'btn-primary' : 'btn-secondary'}`} onClick={() => setSelectedExample('inicial')}>Inicial</button>
@@ -40,8 +40,8 @@ const PaginationDocs: React.FC = () => {
 
             {selectedExample === 'inicial' && (
               <>
-                <div className="col-auto">
-                  <nav aria-label="Ejemplo de paginado numerado inicial" className='mb-3'>
+                <div className="col-auto mb-4">
+                  <nav aria-label="Ejemplo de paginado numerado inicial">
                     <ul className="pagination">
                       <li className="page-item" style={{ opacity: 0 }}>
                         <span className="page-link">
@@ -70,7 +70,7 @@ const PaginationDocs: React.FC = () => {
             )}
             {selectedExample === 'central' && (
               <>
-                <div className="col-auto">
+                <div className="col-auto mb-4">
                   <nav aria-label="Ejemplo de paginado numerado central">
                     <ul className="pagination">
                       <li className="page-item">
@@ -100,7 +100,7 @@ const PaginationDocs: React.FC = () => {
             )}
             {selectedExample === 'final' && (
               <>
-                <div className="col-auto">
+                <div className="col-auto mb-4">
                   <nav aria-label="Ejemplo de paginado numerado final">
                     <ul className="pagination">
                       <li className="page-item">

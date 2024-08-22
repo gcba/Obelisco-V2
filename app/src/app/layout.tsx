@@ -39,6 +39,8 @@ export const componentsPages = [
   { text: "Spinner", url: "/components/spinner", id: 14 },
   { text: "Botones", url: "/components/button", id: 15 },
   { text: "Accesos", url: "/components/access", id: 16 },
+  { text: "Tarjetas", url: "/components/cards", id: 17 },
+ 
 
 ];
 

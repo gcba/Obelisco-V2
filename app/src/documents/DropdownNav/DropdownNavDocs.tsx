@@ -24,7 +24,7 @@ const sections = [
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            <span className="btn-dropdown-text">Desplegable</span>
+            <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
             <span
               className="material-symbols-rounded o-icon btn-dropdown-icon"
               aria-label="hidden"
@@ -81,7 +81,7 @@ const sections = [
             >
               menu
             </span>
-            <span className="btn-dropdown-text">Desplegable</span>
+            <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
           </button>
           <div className="dropdown-menu">
             <a className="dropdown-item" href="#">
@@ -174,7 +174,7 @@ const sections = [
             >
               expand_more
             </span>
-            <span className="btn-dropdown-text">Desplegable</span>
+            <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
           </button>
           <div className="dropdown-menu dropdown-menu-end">
             <a className="dropdown-item" href="#">
@@ -221,7 +221,7 @@ const sections = [
             aria-expanded="false"
             data-bs-auto-close="outside"
           >
-            <span className="btn-dropdown-text">Desplegable</span>
+            <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
             <span
               className="material-symbols-rounded o-icon btn-dropdown-icon"
               aria-label="hidden"
@@ -238,7 +238,7 @@ const sections = [
                 aria-expanded="false"
               >
                 <i className="bx bxs-info-circle o-icon"></i>
-                <span className="btn-dropdown-text">
+                <span className="btn-dropdown-text ellipsis-1">
                   Opción en cascada
                 </span>
                 <span
@@ -308,7 +308,7 @@ const sections = [
               >
                 expand_more
               </span>
-              <span className="btn-dropdown-text">Desplegable</span>
+              <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
             </button>
             <div className="dropdown-menu dropdown-menu-end">
               <div className="dropdown sub-dropdown">
@@ -325,7 +325,7 @@ const sections = [
                     expand_more
                   </span>
 
-                  <span className="btn-dropdown-text">
+                  <span className="btn-dropdown-text ellipsis-1">
                     Opción en cascada
                   </span>
                   <i className="bx bxs-info-circle o-icon"></i>

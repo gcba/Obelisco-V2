@@ -16,7 +16,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
 
 /* === Custom styles === */
 
-//Mixin sizes dropdown
+//Mixin tamaños de dropdown
 @mixin dropdown-sm() {
   .btn-dropdown, .dropdown-item {
     min-height: 2rem;
@@ -50,7 +50,22 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
     top: 0.75rem;
   }
 }
-//fin Mixin sizes dropdown
+
+//Mixin Tamaño de button y dropdown-menu de dropdown
+@mixin dropdown-size($val) {
+  #{$val}-width: 348px;
+  width: 100%;
+
+  @include media-breakpoint-down(xl) {
+    #{$val}-width: 336px;
+  }
+  @include media-breakpoint-down(md) {
+    #{$val}-width: 328px;
+  }
+  @media screen and (max-width: 359.98px) {
+    #{$val}-width: 248px;
+  }
+}
 
 // Desplegable de navegación
 .dropdown {
@@ -71,15 +86,21 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
     display: flex;
     align-items: center;
     gap: $dropdown-btn-gap;
+    @include dropdown-size('max');
+    min-width: fit-content;
 
     // Botón con borde
     &.btn-dropdown-border {
-      box-shadow: $box-shadow;
+      outline: .125rem solid $grisulado-100;
     }
 
     .o-icon,
     .btn-dropdown-icon {
       font-size: 1.5rem;
+    }
+
+    .btn-dropdown-text {
+      text-align: left;
     }
 
     // Animación de icono
@@ -90,7 +111,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
 
     // Estados
     &:hover {
-      box-shadow: $hover-box-shadow;
+      outline: $hover-outline;
       color: $hover-color;
       text-decoration: none;
     }
@@ -116,6 +137,15 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
         transition: $animation-toggle;
       }
     }
+
+    &:not(.show) {
+      &.selected{
+        color: $active-color;
+        .btn-dropdown-icon {
+          color: $body-color;
+        }
+      }
+    }
   }
 
   .dropdown-menu {
@@ -123,15 +153,9 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
     border-radius: $border-radius-lg;
     padding: 0;
     margin-top: 0.5rem !important;
-    box-shadow: $box-shadow;
-    outline: $outline-transparent-subtle;
-    max-width: 340px;
-    min-width: 340px;
-    width: 100%;
-
-    @include media-breakpoint-down(sm) {
-      min-width: 250px;
-    }
+    outline: .125rem solid $grisulado-100;
+    @include dropdown-size('min');
+    max-width: 348px;
 
     .dropdown-item {
       border-radius: $border-radius-lg;
@@ -162,7 +186,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
 
       &:hover {
         background-color: $white;
-        box-shadow: $hover-box-shadow;
+        outline: $hover-outline;
         color: $hover-color;
 
         .item-text {
@@ -191,7 +215,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
         color: $danger;
 
         &:hover {
-          box-shadow: $hover-box-shadow-danger;
+          outline: $hover-outline-danger;
           color: $hover-color-danger;
 
           .item-text {
@@ -202,6 +226,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
 
         &:focus {
           box-shadow: $focus-box-shadow-danger;
+          outline: $outline-transparent;
           color: $danger;
           &:hover {
             .item-text {
@@ -215,6 +240,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
           color: $white;
           background-color: $active-color-danger;
           box-shadow: none;
+          outline-color: transparent;
         }
 
         &.disabled,
@@ -267,6 +293,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
           ~.form-checkbox-label, ~.form-radio-label {
             padding-right: .75rem; //12px
             box-shadow: 0 0 0 0.25rem $active-border-color;
+            outline: $outline-transparent;
           }
         }
       }
@@ -334,6 +361,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
         position: static !important;
         transform: none !important;
         box-shadow: none;
+        outline-color: transparent;
         margin: 0.25rem 0 !important;
         .dropdown-item {
           @include media-breakpoint-down(lg) {
@@ -341,9 +369,9 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
           }
         }
         @include media-breakpoint-up(lg) {
-          box-shadow: $box-shadow;
+          outline: .125rem solid $grisulado-100;
           position: absolute !important;
-          inset: 0px auto auto 340px !important;
+          inset: 0px auto auto 348px !important;
           margin: 0 0 0 0.5rem !important;
         }
       }
@@ -368,7 +396,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
         }
         .dropdown-menu {
           @include media-breakpoint-up(lg) {
-            inset: 0px auto auto -348px !important;
+            inset: 0px auto auto -356px !important;
             margin: 0 0.5rem 0 0 !important;
           }
         }

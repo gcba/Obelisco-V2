@@ -1,7 +1,9 @@
+"use client"
 import CodeCopy from '@/components/CodeBox';
 import MainDescription from '@/components/Template/MainDescription';
-import { DROPDOWN_CHECKBOX, DROPDOWN_CHECKBOX_SIZES, DROPDOWN_RADIO, DROPDOWN_RADIO_SIZES } from './code-views';
+import { DROPDOWN_CHECKBOX, DROPDOWN_CHECKBOX_JS, DROPDOWN_CHECKBOX_JS_CODE, DROPDOWN_CHECKBOX_SIZES, DROPDOWN_RADIO, DROPDOWN_RADIO_JS, DROPDOWN_RADIO_JS_CODE, DROPDOWN_RADIO_SIZES } from './code-views';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
+import { useEffect } from 'react';
 
 const sections = [
   {
@@ -31,7 +33,9 @@ const sections = [
             >
               person
             </span>
-            <span className="btn-dropdown-text">Desplegable</span>
+            <span className="btn-dropdown-text ellipsis-1">Desplegable
+            </span>
+            
             <span
               className="material-symbols-rounded o-icon btn-dropdown-icon"
               aria-label="hidden"
@@ -96,6 +100,7 @@ const sections = [
             data-bs-toggle="dropdown"
             aria-expanded="false"
             data-bs-auto-close="outside"
+            id="btnDropdownRadio"
           >
             <span
               className="material-symbols-rounded o-icon"
@@ -103,7 +108,7 @@ const sections = [
             >
               person
             </span>
-            <span className="btn-dropdown-text">Desplegable</span>
+            <span className="btn-dropdown-text ellipsis-1" id="btnDropdownRadioText">Desplegable</span>
             <span
               className="material-symbols-rounded o-icon btn-dropdown-icon"
               aria-label="hidden"
@@ -175,7 +180,7 @@ const sections = [
             >
               person
             </span>
-            <span className="btn-dropdown-text">Desplegable</span>
+            <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
             <span
               className="material-symbols-rounded o-icon btn-dropdown-icon"
               aria-label="hidden"
@@ -238,7 +243,7 @@ const sections = [
             >
               person
             </span>
-            <span className="btn-dropdown-text">Desplegable</span>
+            <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
             <span
               className="material-symbols-rounded o-icon btn-dropdown-icon"
               aria-label="hidden"
@@ -301,7 +306,7 @@ const sections = [
             >
               person
             </span>
-            <span className="btn-dropdown-text">Desplegable</span>
+            <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
             <span
               className="material-symbols-rounded o-icon btn-dropdown-icon"
               aria-label="hidden"
@@ -373,7 +378,7 @@ const sections = [
             >
               person
             </span>
-            <span className="btn-dropdown-text">Desplegable</span>
+            <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
             <span
               className="material-symbols-rounded o-icon btn-dropdown-icon"
               aria-label="hidden"
@@ -436,7 +441,7 @@ const sections = [
             >
               person
             </span>
-            <span className="btn-dropdown-text">Desplegable</span>
+            <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
             <span
               className="material-symbols-rounded o-icon btn-dropdown-icon"
               aria-label="hidden"
@@ -499,7 +504,7 @@ const sections = [
             >
               person
             </span>
-            <span className="btn-dropdown-text">Desplegable</span>
+            <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
             <span
               className="material-symbols-rounded o-icon btn-dropdown-icon"
               aria-label="hidden"
@@ -552,9 +557,193 @@ const sections = [
       </>
     ),
   },
+  {
+    id: 'section-6',
+    title: 'Implementación',
+    content: (
+      <>
+        <p>A continuación, se presenta un ejemplo de código JavaScript para su implementación, teniendo en cuenta los estilos y funcionalidad al seleccionar una opción.</p>
+        <p>Es importante tener en cuenta que la funcionalidad deberá integrarse de acuerdo con la tecnología utilizada, como por ejemplo React o Angular.</p>
+        <h3 className="fw-normal">Desplegable con casillas de opción múltiple</h3>
+        <div className="dropdown">
+          <button
+            type="button"
+            className="btn btn-dropdown btn-dropdown-border"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            data-bs-auto-close="outside"
+            id="btnDropdownCheckboxJs"
+          >
+            <span
+              className="material-symbols-rounded o-icon"
+              aria-label="hidden"
+            >
+              person
+            </span>
+            <span className="btn-dropdown-text ellipsis-1">Desplegable
+              <span id="counterDropdownCheckboxJs"></span>
+            </span>
+            
+            <span
+              className="material-symbols-rounded o-icon btn-dropdown-icon"
+              aria-label="hidden"
+            >
+              expand_more
+            </span>
+          </button>
+          <div className="dropdown-menu">
+            <div className="form-checkbox">
+              <input
+                className="form-checkbox-input"
+                type="checkbox"
+                name="dropdownCheckboxJs"
+                id="option-1-js"
+                value="option-1-js"
+                />
+              <label className="form-checkbox-label" htmlFor="option-1-js">
+                Opción de selección múltiple 1
+              </label>
+            </div>
+            <div className="form-checkbox">
+              <input
+                className="form-checkbox-input"
+                type="checkbox"
+                name="dropdownCheckboxJs"
+                id="option-2-js"
+                value="option-2-js"
+                />
+              <label className="form-checkbox-label" htmlFor="option-2-js">
+                Opción de selección múltiple 2
+              </label>
+            </div>
+            <div className="form-checkbox">
+              <input
+                className="form-checkbox-input"
+                type="checkbox"
+                name="dropdownCheckboxJs"
+                id="option-3-js"
+                value="option-3-js"
+                disabled
+                />
+              <label className="form-checkbox-label" htmlFor="option-3-js">
+                Opción de selección múltiple 3
+              </label>
+            </div>
+          </div>
+        </div>
+        <br />
+        <CodeCopy code={DROPDOWN_CHECKBOX_JS_CODE} />
+        <CodeCopy code={DROPDOWN_CHECKBOX_JS} />
+        <br />
+        <h3 className="fw-normal">Desplegable con casillas de opción única</h3>
+        <div className="dropdown">
+          <button
+            type="button"
+            className="btn btn-dropdown btn-dropdown-border"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            data-bs-auto-close="outside"
+            id="btnDropdownRadioJs"
+          >
+            <span
+              className="material-symbols-rounded o-icon"
+              aria-label="hidden"
+            >
+              person
+            </span>
+            <span className="btn-dropdown-text ellipsis-1" id="btnDropdownRadioTextJs">Desplegable</span>
+            <span
+              className="material-symbols-rounded o-icon btn-dropdown-icon"
+              aria-label="hidden"
+            >
+              expand_more
+            </span>
+          </button>
+          <div className="dropdown-menu">
+            <div className="form-radio reverse">
+              <input
+                className="form-radio-input"
+                type="radio"
+                name="dropdownRadioJs"
+                id="option-radio-1-js"
+                value="option-1"
+                />
+              <label className="form-radio-label" htmlFor="option-radio-1-js">
+                Opción de selección única 1
+              </label>
+            </div>
+            <div className="form-radio reverse">
+              <input
+                className="form-radio-input"
+                type="radio"
+                name="dropdownRadioJs"
+                id="option-radio-2-js"
+                value="option-2"
+                />
+              <label className="form-radio-label" htmlFor="option-radio-2-js">
+                Opción de selección única 2
+              </label>
+            </div>
+            <div className="form-radio reverse">
+              <input
+                className="form-radio-input"
+                type="radio"
+                name="dropdownRadioJs"
+                id="option-radio-3-js"
+                value="option-3"
+                disabled
+                />
+              <label className="form-radio-label" htmlFor="option-radio-3-js">
+                Opción de selección única 3
+              </label>
+            </div>
+          </div>
+        </div>
+        <br />
+        <CodeCopy code={DROPDOWN_RADIO_JS_CODE} />
+        <CodeCopy code={DROPDOWN_RADIO_JS} />
+      </>
+    ),
+  },
 ];
 
 const DropdownSelDocs: React.FC = () => {
+  useEffect(() => {
+    // Selección todos los inputs de tipo radio
+    const radios = document.querySelectorAll('input[type="radio"][name="dropdownRadioJs"]');
+    radios.forEach((radio) => {
+      radio.addEventListener('change', function (event: Event) {
+        const target = event.currentTarget as HTMLInputElement;
+        const selectedText = target.nextElementSibling?.textContent?.trim() || '';
+        const buttonText = document.getElementById('btnDropdownRadioTextJs');
+        const button = document.getElementById('btnDropdownRadioJs');
+        if (buttonText && button) {
+          buttonText.textContent = selectedText;
+          button.classList.add('selected');
+        }
+      });
+    });
+    
+    // Selección todos los inputs de tipo checkbox
+    const checkboxes = document.querySelectorAll('input[type="checkbox"][name="dropdownCheckboxJs"]');
+    const counter = document.getElementById('counterDropdownCheckboxJs');
+    const btnDropdown = document.getElementById('btnDropdownCheckboxJs');
+    checkboxes.forEach((checkbox) => {
+      checkbox.addEventListener('change', function () {
+        const selectedCount = Array.from(checkboxes)
+            .filter((cb) => (cb as HTMLInputElement).checked).length;
+        if (counter) {
+          if (selectedCount == 0) {
+            counter.textContent = '';
+            btnDropdown?.classList.remove('selected');
+          } else {
+            counter.textContent = ` (${selectedCount}) `;
+            btnDropdown?.classList.add('selected');
+          }
+        }
+      });
+    });
+  }, []);
   return (
     <DocumentationTemplate sections={sections} />
   );

@@ -207,6 +207,8 @@ $hover-color: $blue-700;
 $hover-box-shadow: 0 0 0 0.125rem $hover-color;
 $hover-color-danger: $red-600;
 $hover-box-shadow-danger: 0 0 0 0.125rem $hover-color-danger;
+$hover-outline: 0.125rem solid $hover-color;
+$hover-outline-danger: 0.125rem solid $hover-color-danger;
 
 /*  Focus  */
 $focus-color: $cyan-800;

@@ -130,6 +130,8 @@ $checkbox-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"
     &:checked {
       background-image: none;
       box-shadow: inset 0 0 0 3.4px $white;
+      outline: .25rem solid transparent;
+      outline-offset: -.625rem;
     }
     &.is-invalid:checked {
       box-shadow: inset 0 0 0 3.4px $white;

@@ -1,31 +1,32 @@
-export const EGcodeSimpleBanner =
+export const BANNER_SIMPLE =
   `
-    <div className="banner">
-      <div className="banner-content">
-        <p className="banner-text">
-          Esta descripción de banner
-          <strong>puede tener énfasis</strong>
-          y
-          <a href="#" target="_blank" rel="noreferrer">enlace</a>
-          .
-        </p>
-      </div>
+  <div className="banner">
+    <div className="banner-content">
+      <p className="banner-text">
+        Esta descripción de banner
+        <strong>puede tener énfasis</strong>
+        y
+        <a href="#" target="_blank" rel="noreferrer">enlace</a>
+        .
+      </p>
     </div>
-
-    <div className="banner banner-dark">
-      <div className="banner-content">
-        <p className="banner-text">
-          Esta descripción de banner
-          <strong>puede tener énfasis</strong>
-          y
-          <a href="#" target="_blank" rel="noreferrer">enlace</a>
-          .
-        </p>
-      </div>
-    </div>
+  </div>
 `;
-
-export const EGcodeSimpleBannerWithButton =
+export const BANNER_SIMPLE_DARK =
+  `
+  <div className="banner banner-dark">
+    <div className="banner-content">
+      <p className="banner-text">
+        Esta descripción de banner
+        <strong>puede tener énfasis</strong>
+        y
+        <a href="#" target="_blank" rel="noreferrer">enlace</a>
+        .
+      </p>
+    </div>
+  </div>
+`;
+export const BANNER_BUTTON =
   `
   <div className="banner">
     <div className="banner-content">
@@ -49,7 +50,9 @@ export const EGcodeSimpleBannerWithButton =
       </div>
     </div>
   </div>
-
+`;
+export const BANNER_BUTTON_DARK =
+  `
   <div className="banner banner-dark">
     <div className="banner-content">
       <span className="material-symbols-rounded o-icon">
@@ -72,10 +75,9 @@ export const EGcodeSimpleBannerWithButton =
       </div>
     </div>
   </div>
-
-`
-
-export const EGcodeSimpleBannerWithButtons = `
+`;
+export const BANNER_BUTTONS =
+  `
   <div className="banner">
     <div className="banner-content">
       <span className="material-symbols-rounded o-icon">
@@ -106,7 +108,9 @@ export const EGcodeSimpleBannerWithButtons = `
       </div>
     </div>
   </div>
-
+`;
+export const BANNER_BUTTONS_DARK =
+  `
   <div className="banner banner-dark">
     <div className="banner-content">
       <span className="material-symbols-rounded o-icon">

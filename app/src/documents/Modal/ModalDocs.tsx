@@ -1,7 +1,9 @@
+
+import CodeContainer from "@/components/CodeContainer";
 import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
-import { ModalTypes } from "./code-views";
-import CodeCopy from "@/components/CodeBox";
 import MainDescription from "@/components/Template/MainDescription";
+
+import { MODAL_CONFIRM, MODAL_DANGER, MODAL_RECOGNITION } from "./code-views";
 
 const ModalDocs: React.FC = () => {
   const sections = [
@@ -16,17 +18,11 @@ const ModalDocs: React.FC = () => {
 
     {
       id: "section-2",
-      title: "Ejemplo",
+      title: "Tipos",
       content: (
         <>
-          <p>
-            Los modales muestran información importante que las personas
-            usuarias deben reconocer. Aparecen en forma de ventana sobre la
-            interfaz y bloquean el flujo de trabajo hasta que se selecciona una
-            acción.
-          </p>
-          <div className="row justify-content-between">
-            <div className="col-auto">
+          <CodeContainer codeHTML={MODAL_CONFIRM}>
+            <div className="container">
               <button
                 type="button"
                 className="btn btn-primary"
@@ -36,29 +32,7 @@ const ModalDocs: React.FC = () => {
                 Modal de confirmación
               </button>
             </div>
-            <div className="col-auto">
-              <button
-                type="button"
-                className="btn btn-primary"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal2"
-              >
-                Modal de peligro
-              </button>
-            </div>
-            <div className="col-auto">
-              <button
-                type="button"
-                className="btn btn-primary"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal3"
-              >
-                Modal de reconocimiento
-              </button>
-            </div>
-          </div>
-
-          <div className="modal fade" tabIndex={-1} id="exampleModal1">
+            <div className="modal fade" tabIndex={-1} id="exampleModal1">
             <div className="modal-dialog modal-dialog-centered modal-sm">
               <div className="modal-content">
                 <div className="modal-header">
@@ -85,58 +59,81 @@ const ModalDocs: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="modal fade" tabIndex={-1} id="exampleModal2">
-            <div className="modal-dialog modal-dialog-centered modal-sm">
-              <div className="modal-content">
-                <div className="modal-header">
-                  <h4 className="modal-title">Eliminar documento</h4>
-                </div>
-                <div className="modal-body">
-                  <p>El documento que seleccionaste será eliminado.</p>
-                </div>
-                <div className="modal-footer">
-                  <button
-                    type="button"
-                    className="btn btn-outline-secondary"
-                    data-bs-dismiss="modal"
-                  >
-                    Cancelar
-                  </button>
-                  <button type="button" className="btn btn-danger">
-                    Eliminar
-                  </button>
+          </CodeContainer>
+          <br />
+          <CodeContainer codeHTML={MODAL_DANGER}>
+            <div className="container">
+              <button
+                type="button"
+                className="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal2"
+              >
+                Modal de peligro
+              </button>
+            </div>
+            <div className="modal fade" tabIndex={-1} id="exampleModal2">
+              <div className="modal-dialog modal-dialog-centered modal-sm">
+                <div className="modal-content">
+                  <div className="modal-header">
+                    <h4 className="modal-title">Eliminar documento</h4>
+                  </div>
+                  <div className="modal-body">
+                    <p>El documento que seleccionaste será eliminado.</p>
+                  </div>
+                  <div className="modal-footer">
+                    <button
+                      type="button"
+                      className="btn btn-outline-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Cancelar
+                    </button>
+                    <button type="button" className="btn btn-danger">
+                      Eliminar
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="modal fade" tabIndex={-1} id="exampleModal3">
-            <div className="modal-dialog modal-dialog-centered modal-sm">
-              <div className="modal-content">
-                <div className="modal-header unbordered">
-                  <small>CARGA EXITOSA</small>
-                  <h4 className="modal-title">
-                    Los archivos se cargaron correctamente
-                  </h4>
-                </div>
-                <div className="modal-footer">
-                  <button
-                    type="button"
-                    className="btn btn-secondary"
-                    data-bs-dismiss="modal"
-                  >
-                    Aceptar
-                  </button>
+          </CodeContainer>
+          <br />
+          <CodeContainer codeHTML={MODAL_RECOGNITION}>
+            <div className="container">
+              <button
+                type="button"
+                className="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal3"
+              >
+                Modal de reconocimiento
+              </button>
+            </div>
+            <div className="modal fade" tabIndex={-1} id="exampleModal3">
+              <div className="modal-dialog modal-dialog-centered modal-sm">
+                <div className="modal-content">
+                  <div className="modal-header unbordered">
+                    <small>CARGA EXITOSA</small>
+                    <h4 className="modal-title">
+                      Los archivos se cargaron correctamente
+                    </h4>
+                  </div>
+                  <div className="modal-footer">
+                    <button
+                      type="button"
+                      className="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Aceptar
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </CodeContainer>
+          <br /><br /><br /><br />
         </>
       ),
-    },
-    {
-      id: "section-3",
-      title: "Tipos",
-      content: <CodeCopy code={ModalTypes} />,
     },
   ];
 

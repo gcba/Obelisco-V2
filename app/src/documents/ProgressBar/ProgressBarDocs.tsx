@@ -1,160 +1,172 @@
 "use client";
 
-import CodeCopy from "@/components/CodeBox";
+import CodeContainer from "@/components/CodeContainer";
 import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
+import MainDescription from "@/components/Template/MainDescription";
 
-import { PROGRESSBAR_TYPES, SPINNER_SIZES } from "./code-views";
+import { PROGRESSBAR_DESCRIPTION_INFO, PROGRESSBAR_DESCRIPTION_SUCCESS, PROGRESSBAR_TYPES_INFO, PROGRESSBAR_TYPES_SUCCESS } from "./code-views";
 
 const ProgressBarDocs: React.FC = () => {
   const sections = [
     {
       id: "section-1",
       title: "Barra de progreso",
-      description: "lorem ipsum dolor sit amet, lorem ipsum dolor sit amet. lorem ipsum dolor sit amet lorem. Lorem ipsum dolor sit",
       h1: true,
       content: (
-        <>
-          <div className="progress">
-            <div
-              className="progress-bar bg-info"
-              role="progressbar"
-              aria-valuenow={25}
-              aria-valuemin={0}
-              aria-valuemax={100}
-              style={{width: '25%'}}
-            ></div>
-          </div>
-          
-          <br/>
-          
-          <div className="progress">
-            <div
-              className="progress-bar bg-info"
-              role="progressbar"
-              aria-valuenow={50}
-              aria-valuemin={0}
-              aria-valuemax={100}
-              style={{width: '50%'}}
-            ></div>
-          </div>
-          
-          <br />        
-          
-          <div className="progress">
-            <div
-              className="progress-bar bg-info"
-              role="progressbar"
-              aria-valuenow={100}
-              aria-valuemin={0}
-              aria-valuemax={100}
-              style={{width: '100%'}}
-            ></div>
-          </div>
-          
-          <br />
-
-          <div className="progress">
-            <div
-              className="progress-bar bg-success"
-              role="progressbar"
-              aria-valuenow={25}
-              aria-valuemin={0}
-              aria-valuemax={100}
-              style={{width: '25%'}}
-            ></div>
-          </div>
-          
-          <br />
-
-          <div className="progress">
-            <div
-              className="progress-bar bg-success"
-              role="progressbar"
-              aria-valuenow={50}
-              aria-valuemin={0}
-              aria-valuemax={100}
-              style={{width: '50%'}}
-            ></div>
-          </div>
-
-          <br />
-          
-          <div className="progress">
-            <div
-              className="progress-bar bg-success"
-              role="progressbar"
-              aria-valuenow={100}
-              aria-valuemin={0}
-              aria-valuemax={100}
-              style={{width: '100%'}}
-            ></div>
-          </div>
-          <br />
-          <CodeCopy code={PROGRESSBAR_TYPES} />
-        </>
+        <MainDescription description="Las barras de progreso muestran visualmente el avance de un proceso de varios pasos a partir de la interacción de la persona usuaria." />
       ),
     },
     {
       id: "section-2",
+      title: "Simple",
+      content: (
+        <>
+          <CodeContainer codeHTML={PROGRESSBAR_TYPES_INFO}>
+            <div className="container">
+              <div className="progress">
+                <div
+                  className="progress-bar bg-info"
+                  role="progressbar"
+                  aria-valuenow={25}
+                  aria-valuemin={0}
+                  aria-valuemax={100}
+                  style={{width: '25%'}}
+                ></div>
+              </div>
+              <br/>
+              <div className="progress">
+                <div
+                  className="progress-bar bg-info"
+                  role="progressbar"
+                  aria-valuenow={50}
+                  aria-valuemin={0}
+                  aria-valuemax={100}
+                  style={{width: '50%'}}
+                ></div>
+              </div>
+              <br />        
+              <div className="progress">
+                <div
+                  className="progress-bar bg-info"
+                  role="progressbar"
+                  aria-valuenow={100}
+                  aria-valuemin={0}
+                  aria-valuemax={100}
+                  style={{width: '100%'}}
+                ></div>
+              </div>
+            </div>
+          </CodeContainer>
+          <br />
+          <CodeContainer codeHTML={PROGRESSBAR_TYPES_SUCCESS}>
+            <div className="container">
+                <div className="progress">
+                <div
+                  className="progress-bar bg-success"
+                  role="progressbar"
+                  aria-valuenow={25}
+                  aria-valuemin={0}
+                  aria-valuemax={100}
+                  style={{width: '25%'}}
+                ></div>
+              </div>
+              
+              <br />
+
+              <div className="progress">
+                <div
+                  className="progress-bar bg-success"
+                  role="progressbar"
+                  aria-valuenow={50}
+                  aria-valuemin={0}
+                  aria-valuemax={100}
+                  style={{width: '50%'}}
+                ></div>
+              </div>
+
+              <br />
+              
+              <div className="progress">
+                <div
+                  className="progress-bar bg-success"
+                  role="progressbar"
+                  aria-valuenow={100}
+                  aria-valuemin={0}
+                  aria-valuemax={100}
+                  style={{width: '100%'}}
+                ></div>
+              </div>
+            </div>
+          </CodeContainer>
+
+        </>
+      ),
+    },
+    {
+      id: "section-3",
       title: "Con descripción",
       content: (
         <>
-          <p className="steps">Descripción</p>
-          <div className="progress">
-            <div
-              className="progress-bar bg-info"
-              role="progressbar"
-              aria-valuenow={50}
-              aria-valuemin={0}
-              aria-valuemax={100}
-              style={{width: '50%'}}
-            ></div>
+        <CodeContainer codeHTML={PROGRESSBAR_DESCRIPTION_INFO}>
+          <div className="container">
+            <p className="steps">Descripción</p>
+            <div className="progress">
+              <div
+                className="progress-bar bg-info"
+                role="progressbar"
+                aria-valuenow={50}
+                aria-valuemin={0}
+                aria-valuemax={100}
+                style={{width: '50%'}}
+              ></div>
+            </div>
+              
+            <br/>
+              
+            <p className="steps">Descripción</p>
+            <div className="progress">
+              <div
+                className="progress-bar bg-info"
+                role="progressbar"
+                aria-valuenow={100}
+                aria-valuemin={0}
+                aria-valuemax={100}
+                style={{width: '100%'}}
+              ></div>
+            </div>
           </div>
-            
-          <br/>
-            
-          <p className="steps">Descripción</p>
-          <div className="progress">
-            <div
-              className="progress-bar bg-info"
-              role="progressbar"
-              aria-valuenow={100}
-              aria-valuemin={0}
-              aria-valuemax={100}
-              style={{width: '100%'}}
-            ></div>
+        </CodeContainer>
+        <br />
+        <CodeContainer codeHTML={PROGRESSBAR_DESCRIPTION_SUCCESS}>
+          <div className="container">
+            <p className="steps">Descripción</p>
+            <div className="progress">
+              <div
+                className="progress-bar bg-success"
+                role="progressbar"
+                aria-valuenow={50}
+                aria-valuemin={0}
+                aria-valuemax={100}
+                style={{width: '50%'}}
+              ></div>
+            </div>
+              
+            <br/>
+              
+            <p className="steps">Descripción</p>
+            <div className="progress">
+              <div
+                className="progress-bar bg-success"
+                role="progressbar"
+                aria-valuenow={100}
+                aria-valuemin={0}
+                aria-valuemax={100}
+                style={{width: '100%'}}
+              ></div>
+            </div>
           </div>
-            
-          <br />
-
-          <p className="steps">Descripción</p>
-          <div className="progress">
-            <div
-              className="progress-bar bg-success"
-              role="progressbar"
-              aria-valuenow={50}
-              aria-valuemin={0}
-              aria-valuemax={100}
-              style={{width: '50%'}}
-            ></div>
-          </div>
-            
-          <br/>
-            
-          <p className="steps">Descripción</p>
-          <div className="progress">
-            <div
-              className="progress-bar bg-success"
-              role="progressbar"
-              aria-valuenow={100}
-              aria-valuemin={0}
-              aria-valuemax={100}
-              style={{width: '100%'}}
-            ></div>
-          </div>
-
-          <br />
-          <CodeCopy code={SPINNER_SIZES} />
+        </CodeContainer>
+        <br /><br /><br /><br />
         </>
       ),
     }

@@ -1,4 +1,4 @@
-export const PROGRESSBAR_TYPES =
+export const PROGRESSBAR_TYPES_INFO =
   `
     <div className="progress">
         <div
@@ -7,7 +7,7 @@ export const PROGRESSBAR_TYPES =
             aria-valuenow="25"
             aria-valuemin="0"
             aria-valuemax="100"
-            style={{width: '25%'}}
+            style="width: 25%;"
         ></div>
     </div>
     
@@ -20,7 +20,7 @@ export const PROGRESSBAR_TYPES =
             aria-valuenow="50"
             aria-valuemin="0"
             aria-valuemax="100"
-            style={{width: '50%'}}
+            style="width: 50%;"
         ></div>
     </div>
     
@@ -33,12 +33,13 @@ export const PROGRESSBAR_TYPES =
             aria-valuenow="100"
             aria-valuemin="0"
             aria-valuemax="100"
-            style={{width: '100%'}}
+            style="width: 100%;"
         ></div>
     </div>
-    
-    <br />
+`;
 
+export const PROGRESSBAR_TYPES_SUCCESS =
+  `
     <div className="progress">
         <div
             className="progress-bar bg-success"
@@ -46,7 +47,7 @@ export const PROGRESSBAR_TYPES =
             aria-valuenow="25"
             aria-valuemin="0"
             aria-valuemax="100"
-            style={{width: '25%'}}
+            style="width: 25%;"
         ></div>
     </div>
     
@@ -59,7 +60,7 @@ export const PROGRESSBAR_TYPES =
             aria-valuenow="50"
             aria-valuemin="0"
             aria-valuemax="100"
-            style={{width: '50%'}}
+            style="width: 50%;"
         ></div>
     </div>
 
@@ -72,22 +73,22 @@ export const PROGRESSBAR_TYPES =
             aria-valuenow="100"
             aria-valuemin="0"
             aria-valuemax="100"
-            style={{width: '100%'}}
+            style="width: 100%;"
         ></div>
     </div>
 `;
 
-export const SPINNER_SIZES =
+export const PROGRESSBAR_DESCRIPTION_INFO =
   `
     <p className="steps">Descripción</p>
     <div className="progress">
         <div
             className="progress-bar bg-info"
             role="progressbar"
-            aria-valuenow={50}
-            aria-valuemin={0}
-            aria-valuemax={100}
-            style={{width: '50%'}}
+            aria-valuenow="50"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="width: 50%;"
         ></div>
     </div>
     
@@ -98,24 +99,24 @@ export const SPINNER_SIZES =
         <div
             className="progress-bar bg-info"
             role="progressbar"
-            aria-valuenow={100}
-            aria-valuemin={0}
-            aria-valuemax={100}
-            style={{width: '100%'}}
+            aria-valuenow="100"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="width: 100%;"
         ></div>
     </div>
-    
-    <br />
-
+`;
+export const PROGRESSBAR_DESCRIPTION_SUCCESS =
+  `
     <p className="steps">Descripción</p>
     <div className="progress">
         <div
             className="progress-bar bg-success"
             role="progressbar"
-            aria-valuenow={50}
-            aria-valuemin={0}
-            aria-valuemax={100}
-            style={{width: '50%'}}
+            aria-valuenow="50"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="width: 50%;"
         ></div>
     </div>
     
@@ -126,19 +127,10 @@ export const SPINNER_SIZES =
         <div
             className="progress-bar bg-success"
             role="progressbar"
-            aria-valuenow={100}
-            aria-valuemin={0}
-            aria-valuemax={100}
-            style={{width: '100%'}}
+            aria-valuenow="50"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="width: 50%;"
         ></div>
-    </div>
-`;
-
-export const SPINNER_BLOCK =
-  `
-    <div className="col-4 col-md-2 mx-auto">
-        <div className="spinner-block text-primary" role="status">
-            <span className="sr-only">Cargando...</span>
-        </div>
     </div>
 `;

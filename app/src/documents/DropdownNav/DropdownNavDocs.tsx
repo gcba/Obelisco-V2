@@ -19,7 +19,7 @@ const sections = [
     content: (
       <>
         <CodeContainer codeHTML={DROPDOWN}>
-          <div className="ps-2 ps-sm-3">
+          <div className="container">
             <div className="dropdown">
               <button
                 type="button"
@@ -72,7 +72,7 @@ const sections = [
         </CodeContainer>
         <br />
         <CodeContainer codeHTML={DROPDOWN_MENU_ICON}>
-          <div className="ps-2 ps-sm-3">
+          <div className="container">
             <div className="dropdown">
               <button
                 type="button"
@@ -118,7 +118,7 @@ const sections = [
         </CodeContainer>
         <br />
         <CodeContainer codeHTML={DROPDOWN_MENU_ICON_ONLY}>
-          <div className="ps-2 ps-sm-3">
+          <div className="container">
             <div className="dropdown">
               <button
                 type="button"
@@ -171,7 +171,7 @@ const sections = [
     content: (
       <>
         <CodeContainer codeHTML={DROPDOWN_MENU_RIGHT}>
-          <div className="pe-2 pe-xl-3">
+          <div className="container">
             <div className="dropdown ms-auto">
               <button
                 type="button"
@@ -225,7 +225,7 @@ const sections = [
     content: (
       <>
         <CodeContainer codeHTML={DROPDOWN_CASCADE}>
-          <div className="ps-2 ps-sm-3">
+          <div className="container">
             <div className="dropdown">
               <button
                 type="button"
@@ -309,7 +309,7 @@ const sections = [
         </CodeContainer>
         <br />
         <CodeContainer codeHTML={DROPDOWN_CASCADE_RIGHT}>
-          <div className="pe-2 pe-sm-3">
+          <div className="container">
             <div className="dropdown ms-auto">
               <button
                 type="button"

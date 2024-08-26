@@ -24,7 +24,7 @@ const BannerDocs: React.FC = () => {
           <div className="banner">
             <div className="banner-content">
               <p className="banner-text">
-                Esta descripción de banner <strong>puede tener énfasis</strong> y <a href="#" target="_blank" rel="noreferrer">enlace</a>.
+                Esta descripción de banner <strong>puede tener énfasis</strong> y <a href="#" target="_blank" rel="noopener noreferrer">enlace</a>.
               </p>
             </div>
           </div>
@@ -34,7 +34,7 @@ const BannerDocs: React.FC = () => {
           <div className="banner banner-dark">
             <div className="banner-content">
               <p className="banner-text">
-                Esta descripción de banner <strong>puede tener énfasis</strong> y <a href="#" target="_blank" rel="noreferrer"> enlace</a>.
+                Esta descripción de banner <strong>puede tener énfasis</strong> y <a href="#" target="_blank" rel="noopener noreferrer"> enlace</a>.
               </p>
             </div>
           </div>
@@ -61,7 +61,7 @@ const BannerDocs: React.FC = () => {
                   <a
                     href="#"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     className="btn btn-sm btn-secondary"
                   >
                     Botón
@@ -85,7 +85,7 @@ const BannerDocs: React.FC = () => {
                   <a
                     href="#"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     className="btn btn-sm btn-secondary"
                   >
                     Botón
@@ -117,7 +117,7 @@ const BannerDocs: React.FC = () => {
                 <a
                   href="#"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="btn btn-sm btn-secondary"
                 >
                   Botón
@@ -125,7 +125,7 @@ const BannerDocs: React.FC = () => {
                 <a
                   href="#"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="btn btn-sm btn-primary"
                 >
                   Botón
@@ -150,7 +150,7 @@ const BannerDocs: React.FC = () => {
                 <a
                   href="#"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="btn btn-sm btn-secondary"
                 >
                   Botón
@@ -158,7 +158,7 @@ const BannerDocs: React.FC = () => {
                 <a
                   href="#"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="btn btn-sm btn-primary"
                 >
                   Botón

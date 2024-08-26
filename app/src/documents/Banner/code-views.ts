@@ -6,7 +6,7 @@ export const BANNER_SIMPLE =
         Esta descripción de banner
         <strong>puede tener énfasis</strong>
         y
-        <a href="#" target="_blank" rel="noreferrer">enlace</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">enlace</a>
         .
       </p>
     </div>
@@ -20,7 +20,7 @@ export const BANNER_SIMPLE_DARK =
         Esta descripción de banner
         <strong>puede tener énfasis</strong>
         y
-        <a href="#" target="_blank" rel="noreferrer">enlace</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">enlace</a>
         .
       </p>
     </div>
@@ -42,7 +42,7 @@ export const BANNER_BUTTON =
         <a
           href="#"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="btn btn-sm btn-secondary"
         >
           Botón
@@ -67,7 +67,7 @@ export const BANNER_BUTTON_DARK =
         <a
           href="#"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="btn btn-sm btn-secondary"
         >
           Botón
@@ -92,7 +92,7 @@ export const BANNER_BUTTONS =
         <a
           href="#"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="btn btn-sm btn-secondary"
         >
           Botón
@@ -100,7 +100,7 @@ export const BANNER_BUTTONS =
         <a
           href="#"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="btn btn-sm btn-primary"
         >
           Botón
@@ -125,7 +125,7 @@ export const BANNER_BUTTONS_DARK =
         <a
           href="#"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="btn btn-sm btn-secondary"
         >
           Botón
@@ -133,7 +133,7 @@ export const BANNER_BUTTONS_DARK =
         <a
           href="#"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="btn btn-sm btn-primary"
         >
           Botón

@@ -1,7 +1,8 @@
-import CodeCopy from "@/components/CodeBox";
-import MainDescription from '@/components/Template/MainDescription';
-import { EGcodeSimpleNavHorizontal, EGcodeWithIconHorizontal, EGcodeSizesHorizontal } from './code-views';
+import CodeContainer from "@/components/CodeContainer";
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
+import MainDescription from '@/components/Template/MainDescription';
+
+import { NAV_HORIZONTAL_SIMPLE, NAV_HORIZONTAL_ICON, NAV_HORIZONTAL_ICON_RIGHT, NAV_HORIZONTAL_SIZES, NAV_HORIZONTAL_BORDER } from './code-views';
 
 const sections = [
   {
@@ -17,7 +18,7 @@ const sections = [
     id: 'section-2',
     title: 'Simple',
     content: (
-      <>
+      <CodeContainer codeHTML={NAV_HORIZONTAL_SIMPLE}>
         <div className="col-12 col-lg-8 mx-auto pb-2">
           <nav>
             <ul className="nav flex-row nav-pills">
@@ -38,8 +39,7 @@ const sections = [
             </ul>
           </nav>
         </div>
-        <CodeCopy code={EGcodeSimpleNavHorizontal} />
-      </>
+      </CodeContainer>
     )
   },
   {
@@ -47,6 +47,7 @@ const sections = [
     title: 'Simple con icono',
     content: (
       <>
+      <CodeContainer codeHTML={NAV_HORIZONTAL_ICON}>
         <div className="col-12 col-lg-8 mx-auto pb-2">
           <nav>
             <ul className="nav flex-row nav-pills">
@@ -84,7 +85,11 @@ const sections = [
               </li>
             </ul>
           </nav>
-          <br />
+        </div>
+      </CodeContainer>
+      <br />
+      <CodeContainer codeHTML={NAV_HORIZONTAL_ICON_RIGHT}>
+        <div className="col-12 col-lg-8 mx-auto pb-2">
           <nav>
             <ul className="nav flex-row nav-pills">
               <li className="nav-item">
@@ -122,7 +127,7 @@ const sections = [
             </ul>
           </nav>
         </div>
-        <CodeCopy code={EGcodeWithIconHorizontal} />
+      </CodeContainer>
       </>
     )
   },
@@ -131,6 +136,7 @@ const sections = [
     title: 'Tamaños',
     content: (
       <>
+      <CodeContainer codeHTML={NAV_HORIZONTAL_SIZES}>
         <div className="col-12 col-lg-8 mx-auto pb-2">
           <nav>
             <ul className="nav flex-row nav-pills">
@@ -146,7 +152,7 @@ const sections = [
             </ul>
           </nav>
         </div>
-        <CodeCopy code={EGcodeSizesHorizontal} />
+      </CodeContainer>
       </>
     )
   },
@@ -155,45 +161,47 @@ const sections = [
     title: 'Con borde',
     content: (
       <>
-        <div className="col-12 col-lg-8 mx-auto pb-2">
-          <nav>
-            <ul className="nav flex-row nav-pills">
-              <li className="nav-item">
-                <a className="nav-link border-link" href="#">
-                  <div className="nav-icon">
-                    <i className="bx bxs-user-circle"></i>
-                    <span>Link</span>
-                  </div>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link border-link active" href="#">
-                  <div className="nav-icon">
-                    <i className="bx bxs-user-circle"></i>
-                    <span>Activo</span>
-                  </div>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link border-link" href="#">
-                  <div className="nav-icon">
-                    <i className="bx bxs-user-circle"></i>
-                    <span>Link</span>
-                  </div>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link border-link disabled" href="#" aria-disabled="true" tabIndex={-1}>
-                  <div className="nav-icon">
-                    <i className="bx bxs-user-circle"></i>
-                    <span>Deshabilitado</span>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <CodeCopy code={EGcodeSizesHorizontal} />
+        <CodeContainer codeHTML={NAV_HORIZONTAL_BORDER}>
+          <div className="col-12 col-lg-8 mx-auto pb-2">
+            <nav>
+              <ul className="nav flex-row nav-pills">
+                <li className="nav-item">
+                  <a className="nav-link border-link" href="#">
+                    <div className="nav-icon">
+                      <i className="bx bxs-user-circle"></i>
+                      <span>Link</span>
+                    </div>
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link border-link active" href="#">
+                    <div className="nav-icon">
+                      <i className="bx bxs-user-circle"></i>
+                      <span>Activo</span>
+                    </div>
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link border-link" href="#">
+                    <div className="nav-icon">
+                      <i className="bx bxs-user-circle"></i>
+                      <span>Link</span>
+                    </div>
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link border-link disabled" href="#" aria-disabled="true" tabIndex={-1}>
+                    <div className="nav-icon">
+                      <i className="bx bxs-user-circle"></i>
+                      <span>Deshabilitado</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </CodeContainer>
+        <br /><br /><br /><br />
       </>
     )
   }

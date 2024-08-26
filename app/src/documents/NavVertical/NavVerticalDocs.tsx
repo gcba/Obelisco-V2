@@ -1,8 +1,8 @@
-import CodeCopy from "@/components/CodeBox";
-import MainDescription from '@/components/Template/MainDescription';
-import Divisor from '@/components/Template/Divisor';
-import { EGcodeSimpleNavVertical, EGcodeWithIconVertical, EGcodeTwoLevelVertical, EGcodeTwoLevelWithIconVertical, EGcodeThreeLevelVertical, EGcodeThreeLevelWithIconVertical } from './code-views';
+import CodeContainer from "@/components/CodeContainer";
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
+import MainDescription from '@/components/Template/MainDescription';
+
+import { NAV_VERTICAL_SIMPLE, NAV_VERTICAL_ICON, NAV_VERTICAL_TWO_LEVEL_ICON, NAV_VERTICAL_TWO_LEVEL, NAV_VERTICAL_THREE_LEVEL, NAV_VERTICAL_THREE_LEVEL_ICON } from './code-views';
 
 const NavVerticalDocs: React.FC = () => {
 
@@ -21,32 +21,33 @@ const NavVerticalDocs: React.FC = () => {
       title: 'Simple',
       content: (
         <>
-          <div className="col-12 col-lg-8 mx-auto pb-2">
-            <nav>
-              <ul className="nav flex-column nav-pills">
-                <li className="nav-item">
-                  <a className="nav-link" href="#"><span>Link</span></a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link active" href="#"><span>Activo</span></a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#"><span>Link</span></a>
-                </li>
-                <li className="nav-item">
-                  <a
-                    className="nav-link disabled"
-                    href="#"
-                    aria-disabled="true"
-                    tabIndex={-1}
-                  >
-                    <span>Deshabilitado</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <CodeCopy code={EGcodeSimpleNavVertical} />
+          <CodeContainer codeHTML={NAV_VERTICAL_SIMPLE}>
+            <div className="col-12 col-lg-8 mx-auto pb-2">
+              <nav>
+                <ul className="nav flex-column nav-pills">
+                  <li className="nav-item">
+                    <a className="nav-link" href="#"><span>Link</span></a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link active" href="#"><span>Activo</span></a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#"><span>Link</span></a>
+                  </li>
+                  <li className="nav-item">
+                    <a
+                      className="nav-link disabled"
+                      href="#"
+                      aria-disabled="true"
+                      tabIndex={-1}
+                    >
+                      <span>Deshabilitado</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </CodeContainer>
         </>
       )
     },
@@ -55,51 +56,51 @@ const NavVerticalDocs: React.FC = () => {
       title: 'Simple con icono',
       content: (
         <>
-          <div className="col-12 col-lg-8 mx-auto pb-2">
-            <nav>
-              <ul className="nav flex-column nav-pills">
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    <div className="nav-icon">
-                      <i className="bx bxs-user-circle"></i>
-                      <span>Link</span>
-                    </div>
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link active" href="#">
-                    <div className="nav-icon">
-                      <i className="bx bxs-user-circle"></i>
-                      <span>Activo</span>
-                    </div>
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    <div className="nav-icon">
-                      <i className="bx bxs-user-circle"></i>
-                      <span>Link</span>
-                    </div>
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a
-                    className="nav-link disabled"
-                    href="#"
-                    aria-disabled="true"
-                    tabIndex={-1}
-                  >
-                    <div className="nav-icon">
-                      <i className="bx bxs-user-circle"></i>
-                      <span>Deshabilitado</span>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-
-          <CodeCopy code={EGcodeWithIconVertical} />
+          <CodeContainer codeHTML={NAV_VERTICAL_ICON}>
+            <div className="col-12 col-lg-8 mx-auto pb-2">
+              <nav>
+                <ul className="nav flex-column nav-pills">
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">
+                      <div className="nav-icon">
+                        <i className="bx bxs-user-circle"></i>
+                        <span>Link</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link active" href="#">
+                      <div className="nav-icon">
+                        <i className="bx bxs-user-circle"></i>
+                        <span>Activo</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">
+                      <div className="nav-icon">
+                        <i className="bx bxs-user-circle"></i>
+                        <span>Link</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a
+                      className="nav-link disabled"
+                      href="#"
+                      aria-disabled="true"
+                      tabIndex={-1}
+                    >
+                      <div className="nav-icon">
+                        <i className="bx bxs-user-circle"></i>
+                        <span>Deshabilitado</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </CodeContainer>
         </>
       )
     },
@@ -108,119 +109,119 @@ const NavVerticalDocs: React.FC = () => {
       title: 'Dos niveles',
       content: (
         <>
-          <div className="col-12 col-lg-8 mx-auto pb-2">
-            <nav>
-              <ul className="nav flex-column nav-pills nav-lg">
-                <li className="nav-item">
-                  <a className="nav-link" href="#"><span>Categorías</span></a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link active-child" href="#">
-                    <span>Locales y comercios</span>
-                  </a>
-                  <ul className="nav flex-column nav-pills">
-                    <li className="nav-item">
-                      <a className="nav-link" href="#">
-                        <span>
-                          Local Indumentaria y calzado. (Actividades comerciales de
-                          venta).
-                        </span>
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link active" href="#">
-                        <span>Locales gastronómicos: “para llevar/takeaway”</span>
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="#"><span>Locales de óptica</span></a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="#">
-                        <span>
-                          Comercial minorista (excluyendo indumentaria y calzado)
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#"><span>Actividades jurídicas</span></a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#"><span>Otras actividades</span></a>
-                </li>
-              </ul>
-            </nav>
-
-            <Divisor />
-
-            <nav>
-              <ul className="nav flex-column nav-pills nav-lg">
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    <div className="nav-icon">
-                      <i className="bx bxs-user-circle"></i>
-                      <span>Categorías</span>
-                    </div>
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link active-child" href="#">
-                    <div className="nav-icon">
-                      <i className="bx bxs-user-circle"></i>
+          <CodeContainer codeHTML={NAV_VERTICAL_TWO_LEVEL}>
+            <div className="col-12 col-lg-8 mx-auto pb-2">
+              <nav>
+                <ul className="nav flex-column nav-pills nav-lg">
+                  <li className="nav-item">
+                    <a className="nav-link" href="#"><span>Categorías</span></a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link active-child" href="#">
                       <span>Locales y comercios</span>
-                    </div>
-                  </a>
-                  <ul className="nav flex-column nav-pills">
-                    <li className="nav-item">
-                      <a className="nav-link" href="#">
-                        <span>
-                          Local Indumentaria y calzado. (Actividades comerciales de
-                          venta).
-                        </span>
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link active" href="#">
-                        <span>Locales gastronómicos: “para llevar/takeaway”</span>
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="#"><span>Locales de óptica</span></a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="#">
-                        <span>
-                          Comercial minorista (excluyendo indumentaria y calzado)
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    <div className="nav-icon">
-                      <i className="bx bxs-user-circle"></i>
-                      <span>Actividades jurídicas</span>
-                    </div>
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    <div className="nav-icon">
-                      <i className="bx bxs-user-circle"></i>
-                      <span>Otras actividades</span>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-
-          <CodeCopy code={EGcodeTwoLevelVertical} />
+                    </a>
+                    <ul className="nav flex-column nav-pills">
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">
+                          <span>
+                            Local Indumentaria y calzado. (Actividades comerciales de
+                            venta).
+                          </span>
+                        </a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link active" href="#">
+                          <span>Locales gastronómicos: “para llevar/takeaway”</span>
+                        </a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#"><span>Locales de óptica</span></a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">
+                          <span>
+                            Comercial minorista (excluyendo indumentaria y calzado)
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#"><span>Actividades jurídicas</span></a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#"><span>Otras actividades</span></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </CodeContainer>
           <br />
-          <CodeCopy code={EGcodeTwoLevelWithIconVertical} />
+          <CodeContainer codeHTML={NAV_VERTICAL_TWO_LEVEL_ICON}>
+            <div className="col-12 col-lg-8 mx-auto pb-2">
+              <nav>
+                <ul className="nav flex-column nav-pills nav-lg">
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">
+                      <div className="nav-icon">
+                        <i className="bx bxs-user-circle"></i>
+                        <span>Categorías</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link active-child" href="#">
+                      <div className="nav-icon">
+                        <i className="bx bxs-user-circle"></i>
+                        <span>Locales y comercios</span>
+                      </div>
+                    </a>
+                    <ul className="nav flex-column nav-pills">
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">
+                          <span>
+                            Local Indumentaria y calzado. (Actividades comerciales de
+                            venta).
+                          </span>
+                        </a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link active" href="#">
+                          <span>Locales gastronómicos: “para llevar/takeaway”</span>
+                        </a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#"><span>Locales de óptica</span></a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">
+                          <span>
+                            Comercial minorista (excluyendo indumentaria y calzado)
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">
+                      <div className="nav-icon">
+                        <i className="bx bxs-user-circle"></i>
+                        <span>Actividades jurídicas</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">
+                      <div className="nav-icon">
+                        <i className="bx bxs-user-circle"></i>
+                        <span>Otras actividades</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </CodeContainer>
         </>
       )
     },
@@ -229,64 +230,66 @@ const NavVerticalDocs: React.FC = () => {
       title: 'Tres niveles',
       content: (
         <>
-          <div className="col-12 col-lg-8 mx-auto pb-2">
-            <nav>
-              <ul className="nav flex-column nav-pills nav-lg">
-                <li className="nav-item">
-                  <a className="nav-link" href="#"><span>Categorías</span></a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link active-child" href="#">
-                    <span>Locales y comercios</span>
-                  </a>
-                  <ul className="nav flex-column nav-pills">
-                    <li className="nav-item">
-                      <a className="nav-link" href="#">
-                        <span>
-                          Local Indumentaria y calzado. (Actividades comerciales de
-                          venta).
-                        </span>
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link active-child" href="#">
-                        <span>Locales gastronómicos: “para llevar/takeaway”</span>
-                      </a>
-                      <ul className="nav flex-column nav-pills">
-                        <li className="nav-item">
-                          <a className="nav-link" href="#">
-                            <span>Con local a la calle</span>
-                          </a>
-                        </li>
-                        <li className="nav-item">
-                          <a className="nav-link active" href="#"><span>Food trucks</span></a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="#"><span>Locales de óptica</span></a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="#">
-                        <span>
-                          Comercial minorista (excluyendo indumentaria y calzado)
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#"><span>Actividades jurídicas</span></a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#"><span>Otras actividades</span></a>
-                </li>
-              </ul>
-            </nav>
-
-            <Divisor />
-
-            <div className="storybook__container-nav">
+          <CodeContainer codeHTML={NAV_VERTICAL_THREE_LEVEL}>
+            <div className="col-12 col-lg-8 mx-auto pb-2">
+              <nav>
+                <ul className="nav flex-column nav-pills nav-lg">
+                  <li className="nav-item">
+                    <a className="nav-link" href="#"><span>Categorías</span></a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link active-child" href="#">
+                      <span>Locales y comercios</span>
+                    </a>
+                    <ul className="nav flex-column nav-pills">
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">
+                          <span>
+                            Local Indumentaria y calzado. (Actividades comerciales de
+                            venta).
+                          </span>
+                        </a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link active-child" href="#">
+                          <span>Locales gastronómicos: “para llevar/takeaway”</span>
+                        </a>
+                        <ul className="nav flex-column nav-pills">
+                          <li className="nav-item">
+                            <a className="nav-link" href="#">
+                              <span>Con local a la calle</span>
+                            </a>
+                          </li>
+                          <li className="nav-item">
+                            <a className="nav-link active" href="#"><span>Food trucks</span></a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#"><span>Locales de óptica</span></a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">
+                          <span>
+                            Comercial minorista (excluyendo indumentaria y calzado)
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#"><span>Actividades jurídicas</span></a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#"><span>Otras actividades</span></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </CodeContainer>
+          <br />
+          <CodeContainer codeHTML={NAV_VERTICAL_THREE_LEVEL_ICON}>
+            <div className="col-12 col-lg-8 mx-auto pb-2">
               <nav>
                 <ul className="nav flex-column nav-pills nav-lg">
                   <li className="nav-item">
@@ -359,11 +362,8 @@ const NavVerticalDocs: React.FC = () => {
                 </ul>
               </nav>
             </div>
-          </div>
-
-          <CodeCopy code={EGcodeThreeLevelVertical} />
-          <br />
-          <CodeCopy code={EGcodeThreeLevelWithIconVertical} />
+          </CodeContainer>
+          <br /><br /><br /><br />
         </>
       )
     }

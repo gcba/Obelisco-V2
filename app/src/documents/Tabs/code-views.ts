@@ -1,4 +1,4 @@
-export const EGcodeSimpleTabs =
+export const TABS_SIMPLE =
   `
   <nav class="tabs-box" aria-label="Navegación por pestañas">
     <ul class="nav nav-pills tabs" id="simple-myTab" role="tablist">
@@ -97,8 +97,7 @@ export const EGcodeSimpleTabs =
     </div>
   </div>
 `;
-
-export const EGcodeSimpleTabsWithIcon =
+export const TABS_SIMPLE_ICON =
   `
   <nav class="tabs-box" aria-label="Navegación por pestañas">
     <ul class="nav nav-pills tabs" id="icon-myTab" role="tablist">
@@ -216,8 +215,7 @@ export const EGcodeSimpleTabsWithIcon =
     </div>
   </div>
 `;
-
-export const EGcodeTabsWidth = `
+export const TABS_FIXED_WIDTH = `
   <nav className="tabs-box" aria-label="Navegación por pestañas">
     <ul className="nav nav-pills tabs fixed-width" id="icon-myTab" role="tablist">
       <li className="nav-item" role="presentation">
@@ -334,8 +332,7 @@ export const EGcodeTabsWidth = `
     </div>
   </div>
 `
-
-export const EGcodeTabsBg = `
+export const TABS_CONTAINER = `
   <nav className="tabs-box" aria-label="Navegación por pestañas">
     <ul className="nav nav-pills tabs nav-box" id="icon-myTab" role="tablist">
       <li className="nav-item" role="presentation">

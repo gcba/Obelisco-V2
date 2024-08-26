@@ -1,0 +1,195 @@
+"use client";
+import React, { useEffect, useRef, useState } from "react";
+import { useId } from 'react';
+
+import CodeCopy from "../CodeBox";
+import styles from './CodeContainer.module.scss';
+
+const CodeContainer = ({ codeHTML, children, codeJS }: { codeHTML: string, children?: React.ReactNode, codeJS?: string }) => {
+  const [showButtonHTML, setShowButtonHTML] = useState(false);
+  const [isExpandedHTML, setIsExpandedHTML] = useState(false);
+  const [isHigherHTML, setIsHigherHTML] = useState(false);
+
+  const [showButtonJS, setShowButtonJS] = useState(false);
+  const [isExpandedJS, setIsExpandedJS] = useState(false);
+  const [isHigherJS, setIsHigherJS] = useState(false);
+
+  const codeHTMLRef = useRef<HTMLDivElement | null>(null);
+  const codeJSRef = useRef<HTMLDivElement | null>(null);
+  const id = useId();
+
+  useEffect(() => {
+    const currentCodeHTMLRef = codeHTMLRef.current;
+    const currentCodeJSRef = codeJSRef.current;
+
+    const observerHTML = new ResizeObserver(() => {
+      if (currentCodeHTMLRef) {
+        const height = currentCodeHTMLRef.clientHeight;
+        setShowButtonHTML(height > 300);
+        setIsHigherHTML(height > 300);
+      }
+    });
+
+    const observerJS = new ResizeObserver(() => {
+      if (currentCodeJSRef) {
+        const height = currentCodeJSRef.clientHeight;
+        setShowButtonJS(height > 300);
+        setIsHigherJS(height > 300);
+      }
+    });
+
+    if (currentCodeHTMLRef) {
+      observerHTML.observe(currentCodeHTMLRef);
+    }
+
+    if (currentCodeJSRef) {
+      observerJS.observe(currentCodeJSRef);
+    }
+
+    return () => {
+      if (currentCodeHTMLRef) {
+        observerHTML.unobserve(currentCodeHTMLRef);
+      }
+
+      if (currentCodeJSRef) {
+        observerJS.unobserve(currentCodeJSRef);
+      }
+    };
+  }, [codeHTML, codeJS]);
+
+  const toggleExpandHTML = () => {
+    setIsExpandedHTML(!isExpandedHTML);
+  };
+
+  const toggleExpandJS = () => {
+    setIsExpandedJS(!isExpandedJS);
+  };
+
+  return (
+    <>
+      <nav className="tabs-box" aria-label="Navegación por pestañas">
+        <ul className="nav nav-pills tabs nav-box" id={`icon-myTab-${id}`} role="tablist">
+          <li className="nav-item" role="presentation">
+            <button
+              className="nav-link active"
+              data-bs-toggle="tab"
+              data-bs-target={`#panel-bg-content-1-${id}`}
+              type="button"
+              role="tab"
+              aria-controls={`panel-bg-content-1-${id}`}
+              aria-selected="true"
+              id={`tab-bg-1-${id}`}
+            >
+              <div className="nav-icon">
+                <i className="bx bxs-component"></i>
+                Componente
+              </div>
+            </button>
+          </li>
+          <li className="nav-item" role="presentation">
+            <button
+              className="nav-link"
+              data-bs-toggle="tab"
+              data-bs-target={`#panel-bg-content-2-${id}`}
+              type="button"
+              role="tab"
+              aria-controls={`panel-bg-content-2-${id}`}
+              aria-selected="false"
+              id={`tab-bg-2-${id}`}
+            >
+              <div className="nav-icon">
+                <i className="bx bx-code-alt"></i>
+                HTML
+              </div>
+            </button>
+          </li>
+          {codeJS && (
+            <li className="nav-item" role="presentation">
+              <button
+                className="nav-link"
+                data-bs-toggle="tab"
+                data-bs-target={`#panel-bg-content-3-${id}`}
+                type="button"
+                role="tab"
+                aria-controls={`panel-bg-content-3-${id}`}
+                aria-selected="false"
+                id={`tab-bg-3-${id}`}
+              >
+                <div className="nav-icon">
+                  <i className="bx bxs-file-js"></i>
+                  JS
+                </div>
+              </button>
+            </li>
+          )}
+        </ul>
+      </nav>
+      <div className={`tab-content ${styles.tabCodeContainer}`} id={`icon-myTabContent-${id}`}>
+        <div
+          className="tab-pane fade show active"
+          id={`panel-bg-content-1-${id}`}
+          role="tabpanel"
+          aria-labelledby={`tab-bg-1-${id}`}
+        >
+          <div className="py-5">{children}</div>
+        </div>
+        <div
+          className="tab-pane fade"
+          id={`panel-bg-content-2-${id}`}
+          role="tabpanel"
+          aria-labelledby={`tab-bg-2-${id}`}
+        >
+          <div className={`${styles.codeBoxDisplay} ${!isExpandedHTML ? styles.expanded : ''}`}
+            style={{ maxHeight: isExpandedHTML ? 'none' : '300px' }}>
+            <div ref={codeHTMLRef} className={styles.codeBoxCopyCode}>
+              <div className={isHigherHTML && !isExpandedHTML ? styles.faded : ''}></div>
+              <CodeCopy code={codeHTML} />
+            </div>
+
+            {showButtonHTML && (
+              <button
+                className={`btn btn-primary btn-sm ${styles.codeBoxButton}`}
+                onClick={toggleExpandHTML}
+              >
+                {isExpandedHTML ? 'Ver menos' : 'Ver más'}
+                <span className={`material-symbols-rounded ${styles.codeBoxButtonIcon} ${isExpandedHTML ? styles.expanded : ''}`}>
+                  keyboard_arrow_down 
+                </span>
+              </button>
+            )}
+          </div>
+        </div>
+        {codeJS && (
+          <div
+            className="tab-pane fade"
+            id={`panel-bg-content-3-${id}`}
+            role="tabpanel"
+            aria-labelledby={`tab-bg-3-${id}`}
+          >
+            <div className={`${styles.codeBoxDisplay} ${!isExpandedJS ? styles.expanded : ''}`}
+              style={{ maxHeight: isExpandedJS ? 'none' : '300px' }}>
+              <div ref={codeJSRef} className={styles.codeBoxCopyCode}>
+                <div className={isHigherJS && !isExpandedJS ? styles.faded : ''}></div>
+                <CodeCopy code={codeJS} />
+              </div>
+
+              {showButtonJS && (
+                <button
+                  className={`btn btn-primary btn-sm ${styles.codeBoxButton}`}
+                  onClick={toggleExpandJS}
+                >
+                  {isExpandedJS ? 'Ver menos' : 'Ver más'}
+                  <span className={`material-symbols-rounded ${styles.codeBoxButtonIcon} ${isExpandedJS ? styles.expanded : ''}`}>
+                    keyboard_arrow_down 
+                  </span>
+                </button>
+              )}
+            </div>
+          </div>
+        )}
+      </div>
+    </>
+  );
+};
+
+export default CodeContainer;

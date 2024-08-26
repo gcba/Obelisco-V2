@@ -2,18 +2,15 @@
     outline: .125rem solid #E6EBF0;
     outline-offset: -.125rem;
     border-radius: 0 .75rem .75rem .75rem;
-    &.expanded {
-        padding-bottom: 1rem;
-    }
 }
 .codeBoxDisplay {
-    border-radius: .75rem;
+    border-radius: .3em;
     overflow-y: hidden;
     position: relative;
 }
 .codeBoxButton {
     position: absolute;
-    top: .375rem;
+    top: 0.5rem;
     right: 1rem;
     min-width: 140px;
 }
@@ -25,18 +22,13 @@
       transition: transform 0.2s ease-in-out;
     }
 }
-.codeBoxCopyCode {
-    padding: 2.25rem 1rem .5rem;
-    border-radius: .75rem;
-    position: relative;
-}
 .faded {
     position: absolute;
-    top: 2.75rem;
-    width: calc(100% - 2rem);
-    height: calc(100% - 66px);
+    top: 0;
+    width: 100%;
+    height: 100%;
     z-index: 1;
-    border-radius: .25rem;
-    background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.9));
-    max-height: 258px;
+    border-radius: 0.3em;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9));
+    max-height: 300px;
 }

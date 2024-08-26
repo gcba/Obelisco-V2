@@ -1,8 +1,10 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import { useId } from 'react';
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { Toaster, toast } from 'sonner';
 
-import CodeCopy from "../CodeBox";
 import styles from './CodeContainer.module.scss';
 
 const CodeContainer = ({ codeHTML, children, codeJS }: { codeHTML: string, children?: React.ReactNode, codeJS?: string }) => {
@@ -63,6 +65,21 @@ const CodeContainer = ({ codeHTML, children, codeJS }: { codeHTML: string, child
 
   const toggleExpandJS = () => {
     setIsExpandedJS(!isExpandedJS);
+  };
+
+  const codeRef = useRef<HTMLElement | null>(null);
+
+  const copyCode = () => {
+    if (codeRef.current) {
+      const codeToCopy = codeRef.current.innerText;
+      navigator.clipboard.writeText(codeToCopy);
+
+      toast.success('Copiado', {
+        duration: 1000,
+        className: 'custom-toast',
+        description: 'Se copió correctamente',
+      });
+    }
   };
 
   return (
@@ -134,59 +151,87 @@ const CodeContainer = ({ codeHTML, children, codeJS }: { codeHTML: string, child
           <div className="py-5">{children}</div>
         </div>
         <div
-          className="tab-pane fade"
+          className="tab-pane fade p-2 position-relative"
           id={`panel-bg-content-2-${id}`}
           role="tabpanel"
           aria-labelledby={`tab-bg-2-${id}`}
+          ref={codeHTMLRef}
         >
-          <div className={`${styles.codeBoxDisplay} ${!isExpandedHTML ? styles.expanded : ''}`}
+          <div className={`${styles.codeBoxDisplay} ${!isExpandedHTML ? styles.expanded : ''} ${isHigherHTML ? 'mt-4 pt-3' : ''}`}
             style={{ maxHeight: isExpandedHTML ? 'none' : '300px' }}>
-            <div ref={codeHTMLRef} className={styles.codeBoxCopyCode}>
+            <div
+              onClick={copyCode}
+              style={{ cursor: "pointer" }}
+              className="box-code w-100"
+              ref={codeHTMLRef}
+            >
               <div className={isHigherHTML && !isExpandedHTML ? styles.faded : ''}></div>
-              <CodeCopy code={codeHTML} />
+              <SyntaxHighlighter
+                language="tsx"
+                style={dracula}
+                customStyle={{ cursor: "pointer", margin: 0 }}
+                codeTagProps={{ ref: codeRef }}
+                wrapLongLines
+              >
+                {codeHTML}
+              </SyntaxHighlighter>
             </div>
-
-            {showButtonHTML && (
+          </div>
+          {showButtonHTML && (
               <button
                 className={`btn btn-primary btn-sm ${styles.codeBoxButton}`}
                 onClick={toggleExpandHTML}
               >
                 {isExpandedHTML ? 'Ver menos' : 'Ver más'}
                 <span className={`material-symbols-rounded ${styles.codeBoxButtonIcon} ${isExpandedHTML ? styles.expanded : ''}`}>
-                  keyboard_arrow_down 
+                  keyboard_arrow_down
                 </span>
               </button>
             )}
-          </div>
+          <Toaster position="bottom-right" expand={false} />
         </div>
-        {codeJS && (
+        {codeJS && 
           <div
-            className="tab-pane fade"
+            className="tab-pane fade p-2 position-relative"
             id={`panel-bg-content-3-${id}`}
             role="tabpanel"
             aria-labelledby={`tab-bg-3-${id}`}
+            ref={codeJSRef}
           >
-            <div className={`${styles.codeBoxDisplay} ${!isExpandedJS ? styles.expanded : ''}`}
+            <div className={`${styles.codeBoxDisplay} ${!isExpandedJS ? styles.expanded : ''} ${isHigherJS ? 'mt-4 pt-3' : ''}`}
               style={{ maxHeight: isExpandedJS ? 'none' : '300px' }}>
-              <div ref={codeJSRef} className={styles.codeBoxCopyCode}>
+              <div
+                onClick={copyCode}
+                style={{ cursor: "pointer" }}
+                className="box-code w-100"
+                ref={codeJSRef}
+              >
                 <div className={isHigherJS && !isExpandedJS ? styles.faded : ''}></div>
-                <CodeCopy code={codeJS} />
+                <SyntaxHighlighter
+                  language="tsx"
+                  style={dracula}
+                  customStyle={{ cursor: "pointer", margin: 0 }}
+                  codeTagProps={{ ref: codeRef }}
+                  wrapLongLines
+                >
+                  {codeJS}
+                </SyntaxHighlighter>
               </div>
-
-              {showButtonJS && (
+            </div>
+            {showButtonJS && (
                 <button
                   className={`btn btn-primary btn-sm ${styles.codeBoxButton}`}
                   onClick={toggleExpandJS}
                 >
                   {isExpandedJS ? 'Ver menos' : 'Ver más'}
                   <span className={`material-symbols-rounded ${styles.codeBoxButtonIcon} ${isExpandedJS ? styles.expanded : ''}`}>
-                    keyboard_arrow_down 
+                    keyboard_arrow_down
                   </span>
                 </button>
               )}
-            </div>
+            <Toaster position="bottom-right" expand={false} />
           </div>
-        )}
+        }
       </div>
     </>
   );

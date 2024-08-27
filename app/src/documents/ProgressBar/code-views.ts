@@ -1,8 +1,8 @@
 export const PROGRESSBAR_TYPES_INFO =
   `
-    <div className="progress">
+    <div class="progress">
         <div
-            className="progress-bar bg-info"
+            class="progress-bar bg-info"
             role="progressbar"
             aria-valuenow="25"
             aria-valuemin="0"
@@ -13,9 +13,9 @@ export const PROGRESSBAR_TYPES_INFO =
     
     <br/>
     
-    <div className="progress">
+    <div class="progress">
         <div
-            className="progress-bar bg-info"
+            class="progress-bar bg-info"
             role="progressbar"
             aria-valuenow="50"
             aria-valuemin="0"
@@ -26,9 +26,9 @@ export const PROGRESSBAR_TYPES_INFO =
     
     <br />        
     
-    <div className="progress">
+    <div class="progress">
         <div
-            className="progress-bar bg-info"
+            class="progress-bar bg-info"
             role="progressbar"
             aria-valuenow="100"
             aria-valuemin="0"
@@ -40,9 +40,9 @@ export const PROGRESSBAR_TYPES_INFO =
 
 export const PROGRESSBAR_TYPES_SUCCESS =
   `
-    <div className="progress">
+    <div class="progress">
         <div
-            className="progress-bar bg-success"
+            class="progress-bar bg-success"
             role="progressbar"
             aria-valuenow="25"
             aria-valuemin="0"
@@ -53,9 +53,9 @@ export const PROGRESSBAR_TYPES_SUCCESS =
     
     <br />
 
-    <div className="progress">
+    <div class="progress">
         <div
-            className="progress-bar bg-success"
+            class="progress-bar bg-success"
             role="progressbar"
             aria-valuenow="50"
             aria-valuemin="0"
@@ -66,9 +66,9 @@ export const PROGRESSBAR_TYPES_SUCCESS =
 
     <br />
     
-    <div className="progress">
+    <div class="progress">
         <div
-            className="progress-bar bg-success"
+            class="progress-bar bg-success"
             role="progressbar"
             aria-valuenow="100"
             aria-valuemin="0"
@@ -80,10 +80,10 @@ export const PROGRESSBAR_TYPES_SUCCESS =
 
 export const PROGRESSBAR_DESCRIPTION_INFO =
   `
-    <p className="steps">Descripción</p>
-    <div className="progress">
+    <p class="steps">Descripción</p>
+    <div class="progress">
         <div
-            className="progress-bar bg-info"
+            class="progress-bar bg-info"
             role="progressbar"
             aria-valuenow="50"
             aria-valuemin="0"
@@ -94,10 +94,10 @@ export const PROGRESSBAR_DESCRIPTION_INFO =
     
     <br/>
     
-    <p className="steps">Descripción</p>
-    <div className="progress">
+    <p class="steps">Descripción</p>
+    <div class="progress">
         <div
-            className="progress-bar bg-info"
+            class="progress-bar bg-info"
             role="progressbar"
             aria-valuenow="100"
             aria-valuemin="0"
@@ -108,10 +108,10 @@ export const PROGRESSBAR_DESCRIPTION_INFO =
 `;
 export const PROGRESSBAR_DESCRIPTION_SUCCESS =
   `
-    <p className="steps">Descripción</p>
-    <div className="progress">
+    <p class="steps">Descripción</p>
+    <div class="progress">
         <div
-            className="progress-bar bg-success"
+            class="progress-bar bg-success"
             role="progressbar"
             aria-valuenow="50"
             aria-valuemin="0"
@@ -122,10 +122,10 @@ export const PROGRESSBAR_DESCRIPTION_SUCCESS =
     
     <br/>
     
-    <p className="steps">Descripción</p>
-    <div className="progress">
+    <p class="steps">Descripción</p>
+    <div class="progress">
         <div
-            className="progress-bar bg-success"
+            class="progress-bar bg-success"
             role="progressbar"
             aria-valuenow="50"
             aria-valuemin="0"

@@ -16,6 +16,7 @@ const FormSelectionDocs: React.FC = () => {
     {
       id: "section-1",
       title: "Casillas de selección (Radio y Checkbox)",
+      h1: true,
       content: (
         <MainDescription description="Las casillas de selección permiten a los usuarios elegir entre opciones únicas o múltiples. Radio se usa para seleccionar solo una opción dentro de un grupo, mientras que Checkbox permite seleccionar varias opciones a la vez." />
       ),

@@ -1,12 +1,12 @@
 "use client";
 import Image from 'next/image';
-import React from 'react';
-import "../../layout.scss";
 import Link from 'next/link';
-import HeaderMobile from '../Mobile';
-import NavLayout from '../../Navigation/nav';
 
-export default function HeaderDesktop () {
+import "../../layout.scss";
+import NavLayout from '../../Navigation/nav';
+import HeaderMobile from '../Mobile';
+
+export default function HeaderDesktop() {
 
   const gettingPages = [
     { text: "Inicio", url: "/getting-started", id: 1 },

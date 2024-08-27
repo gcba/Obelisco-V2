@@ -20,7 +20,7 @@ export const ModalTypes = `//CONFIRMACIÓN
         </p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">
+        <button type="button" class="btn btn-outline-link" data-bs-dismiss="modal">
           Volver atrás
         </button>
         <button type="button" class="btn btn-primary">Continuar</button>

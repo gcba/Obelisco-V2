@@ -20,6 +20,7 @@ const ButtonDocs: React.FC = () => {
     {
       id: "section-1",
       title: "Tipos",
+      h1: true,
       content: (
         <>
           <div className="d-flex gap-3 justify-content-center flex-wrap">

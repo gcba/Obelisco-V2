@@ -18,17 +18,17 @@ body {
   box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
-  width: 8px;
-}
+// ::-webkit-scrollbar {
+//   width: 8px;
+// }
 
-::-webkit-scrollbar-thumb {
-  background-color: #38485c;
-}
+// ::-webkit-scrollbar-thumb {
+//   background-color: #38485c;
+// }
 
-::-webkit-scrollbar-track {
-  background-color: #f0f0f0;
-}
+// ::-webkit-scrollbar-track {
+//   background-color: #f0f0f0;
+// }
 
 // End Generic Styles
 
@@ -40,34 +40,6 @@ hr {
 }
 
 // End Styles for Divisor
-
-// Styles for the box-code
-.box-code {
-  width: 100%;
-  position: relative;
-
-  &::before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    background-image: url("../../public/icon/copy.svg");
-    background-size: 20px;
-    background-repeat: no-repeat;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-  }
-
-  &:hover::before {
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out;
-  }
-}
-
-// End Styles for the box-code
-
 
 //Styles for component Scrollspy
 .box-scrollspy {
@@ -123,12 +95,18 @@ hr {
   max-width: 720px;
 }
 
+.max-600 {
+  max-width: 600px;
+}
+
 .color-box {
-  width: 96px;
-  height: 48px;
+  width: 192px;
+  height: 72px;
   border-radius: 0.5rem;
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }

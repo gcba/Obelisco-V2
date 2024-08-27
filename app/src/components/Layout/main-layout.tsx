@@ -31,7 +31,7 @@ export const componentsPages = [
   { text: "Tooltip", url: "/components/tooltip", id: 23 },
   { text: "Tipografia", url: "/components/typography", id: 24 },
   { text: "Accesos", url: "/components/access", id: 25 },
-
+  { text: "Tablas", url:"/components/table", id: 25}
 ];
 
 export const gettingPages = [

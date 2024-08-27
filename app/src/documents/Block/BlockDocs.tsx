@@ -1,6 +1,6 @@
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import { EGcodeWithStrong, EGcodeSimpleAlert, EGcodeCloseAlert } from './code-views';
-import CodeCopy from '@/components/CodeBox';
+import CodeCopy from '@/components/CodeCopy';
 
 const BlockDocs: React.FC = () => {
   const sections = [

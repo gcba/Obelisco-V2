@@ -2,7 +2,7 @@
 
 import React, { useRef } from "react";
 import { Scrollspy } from "@makotot/ghostui";
-import CodeCopy from "@/components/CodeBox";
+import CodeCopy from "@/components/CodeCopy";
 import BoxTemplate from "@/components/Template/Box";
 import HeadingTemplate from "@/components/Template/HeadingTemplate";
 import MainDescription from "@/components/Template/MainDescription";

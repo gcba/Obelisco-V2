@@ -4,12 +4,12 @@ export const BadgeColors = `<span class="badge badge-default">Predeterminada</sp
 <span class="badge badge-success">Éxito</span>
 <span class="badge badge-warning">Advertencia</span>`;
 
-export const BadgeTypes = `<a href="#" className="badge badge-default">
+export const BadgeTypes = `<a href="#" class="badge badge-default">
   ETIQUETA
 </a>
-<a href="#" className="badge badge-default hover">
+<a href="#" class="badge badge-default hover">
   ETIQUETA
 </a>
-<a href="#" className="badge badge-default focus">
+<a href="#" class="badge badge-default focus">
   ETIQUETA
 </a>`;

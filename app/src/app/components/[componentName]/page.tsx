@@ -26,6 +26,7 @@ import FormTextDocs from '@/documents/Form-text/FormText';
 import FormSelectionDocs from '@/documents/FormSelection/FormSelectionDocs';
 import DropdownSelDocs from '@/documents/DropdownSel/DropdownSelDocs';
 import ProgressBarDocs from '@/documents/ProgressBar/ProgressBarDocs';
+import TableDocs from "@/documents/Table/TableDocs";
 
 // davis: se mapean las url con componentes
 const componentMap: { [key: string]: React.ReactNode } = {
@@ -55,7 +56,8 @@ const componentMap: { [key: string]: React.ReactNode } = {
   'progress-bar': <ProgressBarDocs />,
   map: <MapDocs />,
   highlighted: <HighlightedDocs />,
-  'form-selection': <FormSelectionDocs />
+  'form-selection': <FormSelectionDocs />,
+  table: <TableDocs />,
 };
 
 export default function ComponentPage({ params }: { params: { componentName: string } }) {

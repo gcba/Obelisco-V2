@@ -26,7 +26,8 @@ export async function generateStaticParams() {
     'breadcrumb', 
     'form-text', 
     'form-selection',
-    'progress-bar'
+    'progress-bar',
+    'table'
   ];
 
   return componentNames.map((name) => ({

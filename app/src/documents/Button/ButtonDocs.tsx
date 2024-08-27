@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import CodeContainer from "@/components/CodeContainer";
+import CodeBox from "@/components/CodeBox";
 import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
 
 import {
@@ -26,7 +26,7 @@ const ButtonDocs: React.FC = () => {
       h1: true,
       content: (
         <>
-          <CodeContainer codeHTML={BUTTON_SOLID}>
+          <CodeBox codeHTML={BUTTON_SOLID}>
             <div className="d-flex gap-3 justify-content-center flex-wrap">
               <button type="button" className="btn btn-primary">
                 Primario
@@ -44,9 +44,9 @@ const ButtonDocs: React.FC = () => {
                 Link
               </button>
             </div>
-          </CodeContainer>
+          </CodeBox>
           <br />
-          <CodeContainer codeHTML={BUTTON_OUTLINE}>
+          <CodeBox codeHTML={BUTTON_OUTLINE}>
             <div className="d-flex gap-3 justify-content-center flex-wrap">
               <button type="button" className="btn btn-outline-primary">
                 Primario
@@ -64,14 +64,14 @@ const ButtonDocs: React.FC = () => {
                 Link
               </button>
             </div>
-          </CodeContainer>
+          </CodeBox>
           <br />
           <p>
             En caso de requerir que un elemento <code>anchor</code> adopte el
             estilo de un botón, simplemente pueden utilizarse las clases
             correspondientes de botones.
           </p>
-          <CodeContainer codeHTML={BUTTON_ANCHOR}>
+          <CodeBox codeHTML={BUTTON_ANCHOR}>
             <div className="d-flex gap-3 justify-content-center flex-wrap">
               <a
                 className="btn btn-primary"
@@ -90,7 +90,7 @@ const ButtonDocs: React.FC = () => {
                 Enlace
               </a>
             </div>
-          </CodeContainer>
+          </CodeBox>
         </>
       ),
     },
@@ -99,7 +99,7 @@ const ButtonDocs: React.FC = () => {
       title: "Tamaños",
       content: (
         <>
-        <CodeContainer codeHTML={BUTTON_SIZES}>
+        <CodeBox codeHTML={BUTTON_SIZES}>
           <div className="d-flex gap-3 flex-wrap justify-content-center align-items-center">
             <div>
               <button type="button" className="btn btn-primary btn-sm">
@@ -117,7 +117,7 @@ const ButtonDocs: React.FC = () => {
               </button>
             </div>
           </div>
-        </CodeContainer>
+        </CodeBox>
         </>
       ),
     },
@@ -126,7 +126,7 @@ const ButtonDocs: React.FC = () => {
       title: "Estado Deshabilitado",
       content: (
         <>
-        <CodeContainer codeHTML={BUTTON_DISABLED}>
+        <CodeBox codeHTML={BUTTON_DISABLED}>
           <div className="d-flex gap-3 flex-wrap justify-content-center align-items-center">
             <div>
               <button type="button" className="btn btn-primary btn-sm" disabled>
@@ -144,7 +144,7 @@ const ButtonDocs: React.FC = () => {
               </button>
             </div>
           </div>
-        </CodeContainer>
+        </CodeBox>
         </>
       ),
     },
@@ -153,13 +153,13 @@ const ButtonDocs: React.FC = () => {
       title: "Expandible",
       content: (
         <>
-        <CodeContainer codeHTML={BUTTON_BLOCK}>
+        <CodeBox codeHTML={BUTTON_BLOCK}>
           <div className="col-12 col-lg-6 mx-auto">
             <button type="button" className="btn btn-primary btn-block">
               Botón Expandible
             </button>
           </div>
-        </CodeContainer>
+        </CodeBox>
         </>
       ),
     },
@@ -168,7 +168,7 @@ const ButtonDocs: React.FC = () => {
       title: "Con icono",
       content: (
         <>
-          <CodeContainer codeHTML={BUTTON_ICON}>
+          <CodeBox codeHTML={BUTTON_ICON}>
             <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center">
               <button type="button" className="btn btn-primary">
                 <i className="bx bxs-info-circle o-icon"></i>
@@ -187,7 +187,7 @@ const ButtonDocs: React.FC = () => {
                 </span>
               </button>
             </div>
-          </CodeContainer>
+          </CodeBox>
         </>
       ),
     },
@@ -196,7 +196,7 @@ const ButtonDocs: React.FC = () => {
       title: "Con spinner",
       content: (
         <>
-          <CodeContainer codeHTML={BUTTON_SPINNER}>
+          <CodeBox codeHTML={BUTTON_SPINNER}>
             <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center">
               <button type="button" className="btn btn-primary">
                 <div
@@ -244,9 +244,9 @@ const ButtonDocs: React.FC = () => {
                 Botón
               </button>
             </div>
-          </CodeContainer>
+          </CodeBox>
           <br />
-          <CodeContainer codeHTML={BUTTON_OUTLINE_SPINNER}>
+          <CodeBox codeHTML={BUTTON_OUTLINE_SPINNER}>
             <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center">
               <button type="button" className="btn btn-outline-primary">
                 <div
@@ -294,7 +294,7 @@ const ButtonDocs: React.FC = () => {
                 Botón
               </button>
             </div>
-          </CodeContainer>
+          </CodeBox>
         </>
       ),
     },
@@ -303,7 +303,7 @@ const ButtonDocs: React.FC = () => {
       title: "Botón XS - Icono",
       content: (
         <>
-          <CodeContainer codeHTML={BUTTON_ICON_XS}>
+          <CodeBox codeHTML={BUTTON_ICON_XS}>
             <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center">
               <button type="button" className="btn btn-xs" aria-label="Editar">
                 <span
@@ -328,7 +328,7 @@ const ButtonDocs: React.FC = () => {
                 <i className="bx bxs-download o-icon"></i>
               </a>
             </div>
-          </CodeContainer>
+          </CodeBox>
           <br />
           <br />
         </>

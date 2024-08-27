@@ -1,6 +1,6 @@
 import { TooltipWithButtons, TooltipWithIcons } from "./code-views";
 import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
-import CodeCopy from "@/components/CodeBox";
+import CodeCopy from "@/components/CodeCopy";
 import MainDescription from "@/components/Template/MainDescription";
 
 const TooltipDocs: React.FC = () => {

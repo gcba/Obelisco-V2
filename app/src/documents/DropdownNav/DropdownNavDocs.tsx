@@ -1,4 +1,4 @@
-import CodeContainer from "@/components/CodeContainer";
+import CodeBox from "@/components/CodeBox";
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
@@ -18,7 +18,7 @@ const sections = [
     title: 'Con icono',
     content: (
       <>
-        <CodeContainer codeHTML={DROPDOWN}>
+        <CodeBox codeHTML={DROPDOWN}>
           <div className="container">
             <div className="dropdown">
               <button
@@ -69,9 +69,9 @@ const sections = [
               </div>
             </div>
           </div>
-        </CodeContainer>
+        </CodeBox>
         <br />
-        <CodeContainer codeHTML={DROPDOWN_MENU_ICON}>
+        <CodeBox codeHTML={DROPDOWN_MENU_ICON}>
           <div className="container">
             <div className="dropdown">
               <button
@@ -115,9 +115,9 @@ const sections = [
               </div>
             </div>
           </div>
-        </CodeContainer>
+        </CodeBox>
         <br />
-        <CodeContainer codeHTML={DROPDOWN_MENU_ICON_ONLY}>
+        <CodeBox codeHTML={DROPDOWN_MENU_ICON_ONLY}>
           <div className="container">
             <div className="dropdown">
               <button
@@ -161,7 +161,7 @@ const sections = [
               </div>
             </div>
           </div>
-        </CodeContainer>
+        </CodeBox>
       </>
     ),
   },
@@ -170,7 +170,7 @@ const sections = [
     title: 'Disposición derecha',
     content: (
       <>
-        <CodeContainer codeHTML={DROPDOWN_MENU_RIGHT}>
+        <CodeBox codeHTML={DROPDOWN_MENU_RIGHT}>
           <div className="container">
             <div className="dropdown ms-auto">
               <button
@@ -215,7 +215,7 @@ const sections = [
               </div>
             </div>
           </div>
-        </CodeContainer>
+        </CodeBox>
       </>
     ),
   },
@@ -224,7 +224,7 @@ const sections = [
     title: 'Con cascada',
     content: (
       <>
-        <CodeContainer codeHTML={DROPDOWN_CASCADE}>
+        <CodeBox codeHTML={DROPDOWN_CASCADE}>
           <div className="container">
             <div className="dropdown">
               <button
@@ -306,9 +306,9 @@ const sections = [
               </div>
             </div>
           </div>
-        </CodeContainer>
+        </CodeBox>
         <br />
-        <CodeContainer codeHTML={DROPDOWN_CASCADE_RIGHT}>
+        <CodeBox codeHTML={DROPDOWN_CASCADE_RIGHT}>
           <div className="container">
             <div className="dropdown ms-auto">
               <button
@@ -391,7 +391,7 @@ const sections = [
               </div>
             </div>
           </div>
-        </CodeContainer>
+        </CodeBox>
         <br /><br /><br /><br />
       </>
     ),

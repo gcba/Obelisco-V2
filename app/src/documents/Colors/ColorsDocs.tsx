@@ -1,4 +1,4 @@
-import CodeContainer from "@/components/CodeContainer";
+import CodeBox from "@/components/CodeBox";
 import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
 import MainDescription from "@/components/Template/MainDescription";
 
@@ -22,7 +22,7 @@ const ColorsDocs: React.FC = () => {
       title: "Theme-colors",
       content: (
         <>
-          <CodeContainer codeHTML={BG_THEME_COLORS}>
+          <CodeBox codeHTML={BG_THEME_COLORS}>
             <div className="container">
               <div className="d-flex gap-2 mb-3 flex-wrap text-white">
                 <div className="color-box bg-primary">primary</div>
@@ -35,9 +35,9 @@ const ColorsDocs: React.FC = () => {
                 <div className="color-box bg-dark">dark</div>
               </div>
             </div>
-          </CodeContainer>
+          </CodeBox>
           <br />
-          <CodeContainer codeHTML={TEXT_THEME_COLORS}>
+          <CodeBox codeHTML={TEXT_THEME_COLORS}>
             <div className="container">
               <div className="d-flex flex-column gap-2 mb-3">
                 <p className="text-body-secondary">text-body-secondary</p>
@@ -54,7 +54,7 @@ const ColorsDocs: React.FC = () => {
                 <div className="text-black">black</div>
               </div>
             </div>
-          </CodeContainer>
+          </CodeBox>
         </>
       ),
     },
@@ -63,7 +63,7 @@ const ColorsDocs: React.FC = () => {
       title: "Colores pasteles",
       content: (
         <>
-          <CodeContainer codeHTML={BG_THEME_COLORS_PASTEL}>
+          <CodeBox codeHTML={BG_THEME_COLORS_PASTEL}>
             <div className="container">
               <div className="d-flex gap-2 mb-3 flex-wrap">
                 <div className="color-box bg-sky">sky</div>
@@ -80,9 +80,9 @@ const ColorsDocs: React.FC = () => {
                 <div className="color-box bg-aqua">aqua</div>
               </div>
             </div>
-          </CodeContainer>
+          </CodeBox>
           <br />
-          <CodeContainer codeHTML={TEXT_THEME_COLORS_PASTEL}>
+          <CodeBox codeHTML={TEXT_THEME_COLORS_PASTEL}>
             <div className="container">
               <div className="d-flex flex-column gap-2 mb-3 flex-wrap">
                 <div className="text-sky bg-dark">sky</div>
@@ -99,7 +99,7 @@ const ColorsDocs: React.FC = () => {
                 <div className="text-aqua bg-dark">aqua</div>
               </div>
             </div>
-          </CodeContainer>
+          </CodeBox>
           <br /><br /><br /><br />
         </>
       ),

@@ -1,4 +1,4 @@
-import CodeContainer from "@/components/CodeContainer";
+import CodeBox from "@/components/CodeBox";
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
@@ -18,7 +18,7 @@ const sections = [
     id: 'section-2',
     title: 'Simple',
     content: (
-      <CodeContainer codeHTML={NAV_HORIZONTAL_SIMPLE}>
+      <CodeBox codeHTML={NAV_HORIZONTAL_SIMPLE}>
         <div className="col-12 col-lg-8 mx-auto pb-2">
           <nav>
             <ul className="nav flex-row nav-pills">
@@ -39,7 +39,7 @@ const sections = [
             </ul>
           </nav>
         </div>
-      </CodeContainer>
+      </CodeBox>
     )
   },
   {
@@ -47,7 +47,7 @@ const sections = [
     title: 'Simple con icono',
     content: (
       <>
-      <CodeContainer codeHTML={NAV_HORIZONTAL_ICON}>
+      <CodeBox codeHTML={NAV_HORIZONTAL_ICON}>
         <div className="col-12 col-lg-8 mx-auto pb-2">
           <nav>
             <ul className="nav flex-row nav-pills">
@@ -86,9 +86,9 @@ const sections = [
             </ul>
           </nav>
         </div>
-      </CodeContainer>
+      </CodeBox>
       <br />
-      <CodeContainer codeHTML={NAV_HORIZONTAL_ICON_RIGHT}>
+      <CodeBox codeHTML={NAV_HORIZONTAL_ICON_RIGHT}>
         <div className="col-12 col-lg-8 mx-auto pb-2">
           <nav>
             <ul className="nav flex-row nav-pills">
@@ -127,7 +127,7 @@ const sections = [
             </ul>
           </nav>
         </div>
-      </CodeContainer>
+      </CodeBox>
       </>
     )
   },
@@ -136,7 +136,7 @@ const sections = [
     title: 'Tamaños',
     content: (
       <>
-      <CodeContainer codeHTML={NAV_HORIZONTAL_SIZES}>
+      <CodeBox codeHTML={NAV_HORIZONTAL_SIZES}>
         <div className="col-12 col-lg-8 mx-auto pb-2">
           <nav>
             <ul className="nav flex-row nav-pills">
@@ -152,7 +152,7 @@ const sections = [
             </ul>
           </nav>
         </div>
-      </CodeContainer>
+      </CodeBox>
       </>
     )
   },
@@ -161,7 +161,7 @@ const sections = [
     title: 'Con borde',
     content: (
       <>
-        <CodeContainer codeHTML={NAV_HORIZONTAL_BORDER}>
+        <CodeBox codeHTML={NAV_HORIZONTAL_BORDER}>
           <div className="col-12 col-lg-8 mx-auto pb-2">
             <nav>
               <ul className="nav flex-row nav-pills">
@@ -200,7 +200,7 @@ const sections = [
               </ul>
             </nav>
           </div>
-        </CodeContainer>
+        </CodeBox>
         <br /><br /><br /><br />
       </>
     )

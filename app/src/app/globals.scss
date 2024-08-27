@@ -41,34 +41,6 @@ hr {
 
 // End Styles for Divisor
 
-// Styles for the box-code
-.box-code {
-  width: 100%;
-  position: relative;
-
-  &::before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    background-image: url("../../public/icon/copy.svg");
-    background-size: 20px;
-    background-repeat: no-repeat;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-  }
-
-  &:hover::before {
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out;
-  }
-}
-
-// End Styles for the box-code
-
-
 //Styles for component Scrollspy
 .box-scrollspy {
   margin: 0 auto;

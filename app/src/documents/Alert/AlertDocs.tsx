@@ -1,5 +1,5 @@
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
-import CodeCopy from "@/components/CodeBox";
+import CodeCopy from "@/components/CodeCopy";
 import { EGcodeSimpleAlert, EGcodeCloseAlert, EGcodeWithStrong } from './code-views';
 import MainDescription from '@/components/Template/MainDescription';
 

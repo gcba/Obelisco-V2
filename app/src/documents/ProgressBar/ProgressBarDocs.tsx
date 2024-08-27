@@ -1,6 +1,6 @@
 "use client";
 
-import CodeContainer from "@/components/CodeContainer";
+import CodeBox from "@/components/CodeBox";
 import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
 import MainDescription from "@/components/Template/MainDescription";
 
@@ -21,7 +21,7 @@ const ProgressBarDocs: React.FC = () => {
       title: "Simple",
       content: (
         <>
-          <CodeContainer codeHTML={PROGRESSBAR_TYPES_INFO}>
+          <CodeBox codeHTML={PROGRESSBAR_TYPES_INFO}>
             <div className="container">
               <div className="progress">
                 <div
@@ -56,9 +56,9 @@ const ProgressBarDocs: React.FC = () => {
                 ></div>
               </div>
             </div>
-          </CodeContainer>
+          </CodeBox>
           <br />
-          <CodeContainer codeHTML={PROGRESSBAR_TYPES_SUCCESS}>
+          <CodeBox codeHTML={PROGRESSBAR_TYPES_SUCCESS}>
             <div className="container">
                 <div className="progress">
                 <div
@@ -97,7 +97,7 @@ const ProgressBarDocs: React.FC = () => {
                 ></div>
               </div>
             </div>
-          </CodeContainer>
+          </CodeBox>
 
         </>
       ),
@@ -107,7 +107,7 @@ const ProgressBarDocs: React.FC = () => {
       title: "Con descripción",
       content: (
         <>
-        <CodeContainer codeHTML={PROGRESSBAR_DESCRIPTION_INFO}>
+        <CodeBox codeHTML={PROGRESSBAR_DESCRIPTION_INFO}>
           <div className="container">
             <p className="steps">Descripción</p>
             <div className="progress">
@@ -135,9 +135,9 @@ const ProgressBarDocs: React.FC = () => {
               ></div>
             </div>
           </div>
-        </CodeContainer>
+        </CodeBox>
         <br />
-        <CodeContainer codeHTML={PROGRESSBAR_DESCRIPTION_SUCCESS}>
+        <CodeBox codeHTML={PROGRESSBAR_DESCRIPTION_SUCCESS}>
           <div className="container">
             <p className="steps">Descripción</p>
             <div className="progress">
@@ -165,7 +165,7 @@ const ProgressBarDocs: React.FC = () => {
               ></div>
             </div>
           </div>
-        </CodeContainer>
+        </CodeBox>
         <br /><br /><br /><br />
         </>
       ),

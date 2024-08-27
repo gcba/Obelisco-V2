@@ -1,4 +1,4 @@
-import CodeContainer from '@/components/CodeContainer';
+import CodeBox from '@/components/CodeBox';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
@@ -27,7 +27,7 @@ const GridDocs: React.FC = () => {
       title: 'Layouts',
       content: (
         <>
-          <CodeContainer codeHTML={LAYOUTS}>
+          <CodeBox codeHTML={LAYOUTS}>
             <div className="container text-center text-white">
               <div className="bg-primary py-2">container</div>
             </div>
@@ -42,7 +42,7 @@ const GridDocs: React.FC = () => {
                 </div>
               </div>
             </div>
-          </CodeContainer>
+          </CodeBox>
         </>
       ),
       h1: false,
@@ -52,7 +52,7 @@ const GridDocs: React.FC = () => {
       title: 'Disposiciones',
       content: (
         <>
-          <CodeContainer codeHTML={FOUR_COLUMNS}>
+          <CodeBox codeHTML={FOUR_COLUMNS}>
             <div className="container">
               <h3>Cuatro columnas</h3>
               <div className="max-items-4 text-white text-center">
@@ -73,9 +73,9 @@ const GridDocs: React.FC = () => {
                 </div>
               </div>
             </div>
-          </CodeContainer>
+          </CodeBox>
           <br />
-          <CodeContainer codeHTML={THREE_COLUMNS}>
+          <CodeBox codeHTML={THREE_COLUMNS}>
             <div className="container">
               <h3>Tres columnas</h3>
               <div className="max-items-3 text-white text-center">
@@ -96,9 +96,9 @@ const GridDocs: React.FC = () => {
                 </div>
               </div>
             </div>
-          </CodeContainer>
+          </CodeBox>
           <br />
-          <CodeContainer codeHTML={TWO_COLUMNS}>
+          <CodeBox codeHTML={TWO_COLUMNS}>
             <div className="container">
               <h3>Dos columnas</h3>
               <div className="max-items-2 text-white text-center">
@@ -113,9 +113,9 @@ const GridDocs: React.FC = () => {
                 </div>
               </div>
             </div>
-          </CodeContainer>
+          </CodeBox>
           <br />
-          <CodeContainer codeHTML={ONE_COLUMN}>
+          <CodeBox codeHTML={ONE_COLUMN}>
             <div className="container">
               <h3>Una columna</h3>
               <div className="max-items-1 text-white text-center">
@@ -130,7 +130,7 @@ const GridDocs: React.FC = () => {
                 </div>
               </div>
             </div>
-          </CodeContainer>
+          </CodeBox>
           <br /><br /><br /><br />
         </>
       ),

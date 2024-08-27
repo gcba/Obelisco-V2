@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import CodeContainer from "@/components/CodeContainer";
+import CodeBox from "@/components/CodeBox";
 import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
 import MainDescription from "@/components/Template/MainDescription";
 
@@ -23,7 +23,7 @@ const SpinnerDocs: React.FC = () => {
       title: "Tipos",
       content: (
         <>
-          <CodeContainer codeHTML={SPINNER_TYPES}>
+          <CodeBox codeHTML={SPINNER_TYPES}>
             <div className="d-flex gap-3 align-items-center justify-content-center">
               <div className="spinner-border text-primary" role="status">
                 <span className="sr-only">Cargando...</span>
@@ -47,7 +47,7 @@ const SpinnerDocs: React.FC = () => {
                 <span className="sr-only">Cargando...</span>
               </div>
             </div>
-          </CodeContainer>
+          </CodeBox>
         </>
       ),
     },
@@ -56,7 +56,7 @@ const SpinnerDocs: React.FC = () => {
       title: "Tamaños",
       content: (
         <>
-          <CodeContainer codeHTML={SPINNER_SIZES}>
+          <CodeBox codeHTML={SPINNER_SIZES}>
             <div className="d-flex gap-4 align-items-center justify-content-center">
               <div
                 className="spinner-border text-primary spinner-border-sm"
@@ -74,7 +74,7 @@ const SpinnerDocs: React.FC = () => {
                 <span className="sr-only">Cargando...</span>
               </div>
             </div>
-          </CodeContainer>
+          </CodeBox>
         </>
       ),
     },
@@ -83,13 +83,13 @@ const SpinnerDocs: React.FC = () => {
       title: "Expandible",
       content: (
         <>
-          <CodeContainer codeHTML={SPINNER_BLOCK}>
+          <CodeBox codeHTML={SPINNER_BLOCK}>
             <div className="col-4 col-md-2 mx-auto">
               <div className="spinner-block text-primary" role="status">
                 <span className="sr-only">Cargando...</span>
               </div>
             </div>
-          </CodeContainer>
+          </CodeBox>
           <br /><br /><br /><br />
         </>
       ),

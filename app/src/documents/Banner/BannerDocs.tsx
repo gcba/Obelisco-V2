@@ -1,4 +1,4 @@
-import CodeContainer from '@/components/CodeContainer';
+import CodeBox from '@/components/CodeBox';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
@@ -20,7 +20,7 @@ const BannerDocs: React.FC = () => {
       title: "Simple",
       content: (
         <>
-        <CodeContainer codeHTML={BANNER_SIMPLE}>
+        <CodeBox codeHTML={BANNER_SIMPLE}>
           <div className="banner">
             <div className="banner-content">
               <p className="banner-text">
@@ -28,9 +28,9 @@ const BannerDocs: React.FC = () => {
               </p>
             </div>
           </div>
-        </CodeContainer>
+        </CodeBox>
         <br />
-        <CodeContainer codeHTML={BANNER_SIMPLE_DARK}>
+        <CodeBox codeHTML={BANNER_SIMPLE_DARK}>
           <div className="banner banner-dark">
             <div className="banner-content">
               <p className="banner-text">
@@ -38,7 +38,7 @@ const BannerDocs: React.FC = () => {
               </p>
             </div>
           </div>
-        </CodeContainer>
+        </CodeBox>
         </>
       ),
     },
@@ -47,7 +47,7 @@ const BannerDocs: React.FC = () => {
       title: "Con botón",
       content: (
         <>
-          <CodeContainer codeHTML={BANNER_BUTTON}>
+          <CodeBox codeHTML={BANNER_BUTTON}>
             <div className="banner">
               <div className="banner-content">
                 <span className="material-symbols-rounded o-icon">
@@ -69,9 +69,9 @@ const BannerDocs: React.FC = () => {
                 </div>
               </div>
             </div>
-          </CodeContainer>
+          </CodeBox>
           <br />
-          <CodeContainer codeHTML={BANNER_BUTTON_DARK}>
+          <CodeBox codeHTML={BANNER_BUTTON_DARK}>
             <div className="banner banner-dark">
               <div className="banner-content">
                 <span className="material-symbols-rounded o-icon">
@@ -93,7 +93,7 @@ const BannerDocs: React.FC = () => {
                 </div>
               </div>
             </div>
-          </CodeContainer>
+          </CodeBox>
         </>
       ),
     },
@@ -102,7 +102,7 @@ const BannerDocs: React.FC = () => {
       title: "Con botones",
       content: (
         <>
-        <CodeContainer codeHTML={BANNER_BUTTONS}>
+        <CodeBox codeHTML={BANNER_BUTTONS}>
           <div className="banner">
             <div className="banner-content">
               <span className="material-symbols-rounded o-icon">
@@ -133,9 +133,9 @@ const BannerDocs: React.FC = () => {
               </div>
             </div>
           </div>
-        </CodeContainer>
+        </CodeBox>
         <br />
-        <CodeContainer codeHTML={BANNER_BUTTONS_DARK}>
+        <CodeBox codeHTML={BANNER_BUTTONS_DARK}>
           <div className="banner banner-dark">
             <div className="banner-content">
               <span className="material-symbols-rounded o-icon">
@@ -166,7 +166,7 @@ const BannerDocs: React.FC = () => {
               </div>
             </div>
           </div>
-        </CodeContainer>
+        </CodeBox>
         <br /><br /><br /><br />
         </>
       ),

@@ -1,4 +1,4 @@
-import CodeContainer from "@/components/CodeContainer";
+import CodeBox from "@/components/CodeBox";
 import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
 import MainDescription from "@/components/Template/MainDescription";
 
@@ -29,7 +29,7 @@ const MapDocs: React.FC = () => {
             antes del footer o de la sección de noticias relacionadas.
           </p>
 
-          <CodeContainer codeHTML={MAP_LATERAL}>
+          <CodeBox codeHTML={MAP_LATERAL}>
             <div className="container">
               <div className="row">
                 <div className="col-sm-12 col-md-6">
@@ -64,7 +64,7 @@ const MapDocs: React.FC = () => {
                 </div>
               </div>
             </div>
-          </CodeContainer>
+          </CodeBox>
         </>
       ),
     },
@@ -79,7 +79,7 @@ const MapDocs: React.FC = () => {
           </p>
           <p>Ocupa el 100 % de las columnas disponibles en mobile.</p>
 
-          <CodeContainer codeHTML={MAP_INSTITUTION}>
+          <CodeBox codeHTML={MAP_INSTITUTION}>
             <div className="container">
               <div className="row">
                 <div className="col-sm-12 col-md-8">
@@ -114,7 +114,7 @@ const MapDocs: React.FC = () => {
                 </div>
               </div>
             </div>
-          </CodeContainer>
+          </CodeBox>
         </>
       ),
     },

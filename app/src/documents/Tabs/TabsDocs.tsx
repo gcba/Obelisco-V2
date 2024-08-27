@@ -1,4 +1,4 @@
-import CodeContainer from "@/components/CodeContainer";
+import CodeBox from "@/components/CodeBox";
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from "@/components/Template/MainDescription";
 
@@ -20,7 +20,7 @@ const TabsDocs: React.FC = () => {
       title: 'Simple',
       content: (
         <>
-          <CodeContainer codeHTML={TABS_SIMPLE}>
+          <CodeBox codeHTML={TABS_SIMPLE}>
             <div className="col-12 col-lg-8 mx-auto">
               <nav className="tabs-slider" aria-label="Navegación por pestañas">
                 <ul className="nav nav-pills tabs" id="simple-myTab" role="tablist">
@@ -119,9 +119,9 @@ const TabsDocs: React.FC = () => {
                 </div>
               </div>
             </div>
-          </CodeContainer>
+          </CodeBox>
           <br />
-          <CodeContainer codeHTML={TABS_SIMPLE_ICON}>
+          <CodeBox codeHTML={TABS_SIMPLE_ICON}>
             <div className="col-12 col-lg-8 mx-auto">
               <nav className="tabs-slider" aria-label="Navegación por pestañas">
                 <ul className="nav nav-pills tabs" id="icon-myTab" role="tablist">
@@ -239,7 +239,7 @@ const TabsDocs: React.FC = () => {
                 </div>
               </div>
             </div>
-          </CodeContainer>
+          </CodeBox>
         </>
       ),
     },
@@ -247,7 +247,7 @@ const TabsDocs: React.FC = () => {
       id: 'section-3',
       title: 'Ancho fijo',
       content: (
-        <CodeContainer codeHTML={TABS_FIXED_WIDTH}>
+        <CodeBox codeHTML={TABS_FIXED_WIDTH}>
           <div className="container">
             <nav className="tabs-slider" aria-label="Navegación por pestañas">
               <ul className="nav nav-pills tabs fixedWidth" id="icon-myTab" role="tablist">
@@ -365,7 +365,7 @@ const TabsDocs: React.FC = () => {
               </div>
             </div>
           </div>
-        </CodeContainer>
+        </CodeBox>
       ),
     },
     {
@@ -373,7 +373,7 @@ const TabsDocs: React.FC = () => {
       title: 'Con contenedor',
       content: (
         <>
-          <CodeContainer codeHTML={TABS_CONTAINER}>
+          <CodeBox codeHTML={TABS_CONTAINER}>
             <div className="container">
               <nav className="tabs-box" aria-label="Navegación por pestañas">
                 <ul className="nav nav-pills tabs nav-box" id="icon-myTab" role="tablist">
@@ -491,7 +491,7 @@ const TabsDocs: React.FC = () => {
                 </div>
               </div>
             </div>
-          </CodeContainer>
+          </CodeBox>
           <br /><br /><br /><br />
         </>
       ),

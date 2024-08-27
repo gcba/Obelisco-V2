@@ -1,4 +1,4 @@
-import CodeContainer from "@/components/CodeContainer";
+import CodeBox from "@/components/CodeBox";
 import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
 import MainDescription from "@/components/Template/MainDescription";
 
@@ -19,7 +19,7 @@ const TypographyDocs: React.FC = () => {
       title: "Títulos",
       content: (
         <>
-          <CodeContainer codeHTML={HEADINGS}>
+          <CodeBox codeHTML={HEADINGS}>
             <div className="container">
               <h1>Headings h1 - Nunito, 40px, IL 48px</h1>
               <h2>Headings h2 - Nunito, 36px, IL 44px</h2>
@@ -28,7 +28,7 @@ const TypographyDocs: React.FC = () => {
               <h5>Headings h5 - Nunito, 24px, IL 32px</h5>
               <h6>Headings h6 - Nunito, 20px, IL 28px</h6>
             </div>
-          </CodeContainer>
+          </CodeBox>
         </>
       ),
     },
@@ -37,13 +37,13 @@ const TypographyDocs: React.FC = () => {
       title: "Titulares",
       content: (
         <>
-          <CodeContainer codeHTML={HEADLINE}>
+          <CodeBox codeHTML={HEADLINE}>
             <div className="container">
               <p className="headline-lg">Titular L - Nunito, 20px, IL 24px</p>
               <p className="headline-md">Titular M - Nunito, 18px, IL 24px</p>
               <p className="headline-sm">Titular S - Nunito, 16px, IL 20px</p>
             </div>
-          </CodeContainer>
+          </CodeBox>
         </>
       ),
     },
@@ -52,7 +52,7 @@ const TypographyDocs: React.FC = () => {
       title: "Cuerpo",
       content: (
         <>
-          <CodeContainer codeHTML={BODY}>
+          <CodeBox codeHTML={BODY}>
             <div className="container">
               <p className="text-xl">Cuerpo XL - Open Sans, 20px, IL 28px</p>
               <p className="text-lg">Cuerpo L - Open Sans, 18px, IL 28px</p>
@@ -62,7 +62,7 @@ const TypographyDocs: React.FC = () => {
               <br />
               <p>Cuerpo M - Predeterminado - Open Sans, 16px, IL 24px</p>
             </div>
-          </CodeContainer>
+          </CodeBox>
         </>
       ),
     },
@@ -71,7 +71,7 @@ const TypographyDocs: React.FC = () => {
       title: "Otros estilos",
       content: (
         <>
-          <CodeContainer codeHTML={OTHER_STYLES}>
+          <CodeBox codeHTML={OTHER_STYLES}>
             <div className="container">
               <p className="fw-normal">Texto con font-weight normal (400)</p>
               <p className="fw-semibold">Texto con font-weight semibold (600)</p>
@@ -80,7 +80,7 @@ const TypographyDocs: React.FC = () => {
               <p className="underline-1">Texto subrayado con grosor de 1px</p>
               <p className="underline-2">Texto subrayado con grosor de 2px</p>
             </div>
-          </CodeContainer>
+          </CodeBox>
         </>
       ),
     },
@@ -89,7 +89,7 @@ const TypographyDocs: React.FC = () => {
       title: "Listas predeterminadas",
       content: (
         <>
-          <CodeContainer codeHTML={DEFAULT_LISTS}>
+          <CodeBox codeHTML={DEFAULT_LISTS}>
             <div className="container">
               <ul>
                 <li>Esto es el texto de una lista</li>
@@ -103,7 +103,7 @@ const TypographyDocs: React.FC = () => {
                 <li>Esto es el texto de una lista ordenada</li>
               </ol>
             </div>
-          </CodeContainer>
+          </CodeBox>
         </>
       ),
     },
@@ -112,14 +112,14 @@ const TypographyDocs: React.FC = () => {
       title: "Citas",
       content: (
         <>
-          <CodeContainer codeHTML={BLOCKQUOTE}>
+          <CodeBox codeHTML={BLOCKQUOTE}>
             <div className="container">
               <blockquote>
                 <p>Este es un apartado del texto que se quiere destacar por su importancia dentro del contenido de la página.</p>
                 <p className="author">Nombre del autor de la cita</p>
               </blockquote>
             </div>
-          </CodeContainer>
+          </CodeBox>
           <br /><br /><br /><br />
         </>
       ),

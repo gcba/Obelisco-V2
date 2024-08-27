@@ -1,4 +1,4 @@
-import CodeContainer from "@/components/CodeContainer";
+import CodeBox from "@/components/CodeBox";
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
@@ -21,7 +21,7 @@ const NavVerticalDocs: React.FC = () => {
       title: 'Simple',
       content: (
         <>
-          <CodeContainer codeHTML={NAV_VERTICAL_SIMPLE}>
+          <CodeBox codeHTML={NAV_VERTICAL_SIMPLE}>
             <div className="col-12 col-lg-8 mx-auto pb-2">
               <nav>
                 <ul className="nav flex-column nav-pills">
@@ -47,7 +47,7 @@ const NavVerticalDocs: React.FC = () => {
                 </ul>
               </nav>
             </div>
-          </CodeContainer>
+          </CodeBox>
         </>
       )
     },
@@ -56,7 +56,7 @@ const NavVerticalDocs: React.FC = () => {
       title: 'Simple con icono',
       content: (
         <>
-          <CodeContainer codeHTML={NAV_VERTICAL_ICON}>
+          <CodeBox codeHTML={NAV_VERTICAL_ICON}>
             <div className="col-12 col-lg-8 mx-auto pb-2">
               <nav>
                 <ul className="nav flex-column nav-pills">
@@ -100,7 +100,7 @@ const NavVerticalDocs: React.FC = () => {
                 </ul>
               </nav>
             </div>
-          </CodeContainer>
+          </CodeBox>
         </>
       )
     },
@@ -109,7 +109,7 @@ const NavVerticalDocs: React.FC = () => {
       title: 'Dos niveles',
       content: (
         <>
-          <CodeContainer codeHTML={NAV_VERTICAL_TWO_LEVEL}>
+          <CodeBox codeHTML={NAV_VERTICAL_TWO_LEVEL}>
             <div className="col-12 col-lg-8 mx-auto pb-2">
               <nav>
                 <ul className="nav flex-column nav-pills nav-lg">
@@ -155,9 +155,9 @@ const NavVerticalDocs: React.FC = () => {
                 </ul>
               </nav>
             </div>
-          </CodeContainer>
+          </CodeBox>
           <br />
-          <CodeContainer codeHTML={NAV_VERTICAL_TWO_LEVEL_ICON}>
+          <CodeBox codeHTML={NAV_VERTICAL_TWO_LEVEL_ICON}>
             <div className="col-12 col-lg-8 mx-auto pb-2">
               <nav>
                 <ul className="nav flex-column nav-pills nav-lg">
@@ -221,7 +221,7 @@ const NavVerticalDocs: React.FC = () => {
                 </ul>
               </nav>
             </div>
-          </CodeContainer>
+          </CodeBox>
         </>
       )
     },
@@ -230,7 +230,7 @@ const NavVerticalDocs: React.FC = () => {
       title: 'Tres niveles',
       content: (
         <>
-          <CodeContainer codeHTML={NAV_VERTICAL_THREE_LEVEL}>
+          <CodeBox codeHTML={NAV_VERTICAL_THREE_LEVEL}>
             <div className="col-12 col-lg-8 mx-auto pb-2">
               <nav>
                 <ul className="nav flex-column nav-pills nav-lg">
@@ -286,9 +286,9 @@ const NavVerticalDocs: React.FC = () => {
                 </ul>
               </nav>
             </div>
-          </CodeContainer>
+          </CodeBox>
           <br />
-          <CodeContainer codeHTML={NAV_VERTICAL_THREE_LEVEL_ICON}>
+          <CodeBox codeHTML={NAV_VERTICAL_THREE_LEVEL_ICON}>
             <div className="col-12 col-lg-8 mx-auto pb-2">
               <nav>
                 <ul className="nav flex-column nav-pills nav-lg">
@@ -362,7 +362,7 @@ const NavVerticalDocs: React.FC = () => {
                 </ul>
               </nav>
             </div>
-          </CodeContainer>
+          </CodeBox>
           <br /><br /><br /><br />
         </>
       )

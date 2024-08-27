@@ -1,4 +1,4 @@
-import CodeContainer from "@/components/CodeContainer";
+import CodeBox from "@/components/CodeBox";
 import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
 import MainDescription from "@/components/Template/MainDescription";
 
@@ -25,7 +25,7 @@ const LinkDocs: React.FC = () => {
       title: 'Predeterminado',
       content: (
         <>
-          <CodeContainer codeHTML={LINK_DEFAULT}>
+          <CodeBox codeHTML={LINK_DEFAULT}>
             <div className="container">
               <p>
                 <a href="#" target="_blank" rel="noopener noreferrer">
@@ -64,7 +64,7 @@ const LinkDocs: React.FC = () => {
                 </p>
               </div>
             </div>
-          </CodeContainer>
+          </CodeBox>
         </>
       ),
     },
@@ -73,7 +73,7 @@ const LinkDocs: React.FC = () => {
       title: 'Externo',
       content: (
         <>
-          <CodeContainer codeHTML={LINK_EXTERNAL}>
+          <CodeBox codeHTML={LINK_EXTERNAL}>
             <div className="container">
               <div className="p-2">
                 <p>
@@ -100,7 +100,7 @@ const LinkDocs: React.FC = () => {
                 </p>
               </div>
             </div>
-          </CodeContainer>
+          </CodeBox>
         </>
       ),
     },
@@ -109,7 +109,7 @@ const LinkDocs: React.FC = () => {
       title: 'Descarga',
       content: (
         <>
-          <CodeContainer codeHTML={LINK_DOWNLOAD}>
+          <CodeBox codeHTML={LINK_DOWNLOAD}>
             <div className="container">
               <div className="p-2">
                 <p>
@@ -148,7 +148,7 @@ const LinkDocs: React.FC = () => {
                 Descargar
               </a>
             </div>
-          </CodeContainer>
+          </CodeBox>
         </>
       )
     },
@@ -157,7 +157,7 @@ const LinkDocs: React.FC = () => {
       title: 'Acceso',
       content: (
         <>
-          <CodeContainer codeHTML={LINK_ACCESS}>
+          <CodeBox codeHTML={LINK_ACCESS}>
             <div className="container">
               <div className="p-2">
                 <p>
@@ -185,7 +185,7 @@ const LinkDocs: React.FC = () => {
                 </p>
               </div>
             </div>
-          </CodeContainer>
+          </CodeBox>
           <br /><br /><br /><br />
         </>
       )

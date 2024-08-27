@@ -1,6 +1,6 @@
 import MainDescription from "@/components/Template/MainDescription";
 import { SwitchDisabled, SwitchSizes, SwitchTypes, SwitchWithoutLabel } from "./code-views";
-import CodeCopy from "@/components/CodeBox";
+import CodeCopy from "@/components/CodeCopy";
 import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
 
 const SwitchDocs: React.FC = () => {

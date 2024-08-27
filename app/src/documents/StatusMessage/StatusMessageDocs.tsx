@@ -1,4 +1,4 @@
-import CodeContainer from '@/components/CodeContainer';
+import CodeBox from '@/components/CodeBox';
 import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
 import MainDescription from '@/components/Template/MainDescription';
 
@@ -20,7 +20,7 @@ const sections = [
     title: 'Información',
     content: (
       <>
-        <CodeContainer codeHTML={SMType1}>
+        <CodeBox codeHTML={SMType1}>
           <div className="container p-5 bg-light">
             <div className="status status-info">
               <h2 className="status-title">
@@ -38,7 +38,7 @@ const sections = [
               </button>
             </div>
           </div>
-        </CodeContainer>
+        </CodeBox>
       </>
     ),
   },
@@ -47,7 +47,7 @@ const sections = [
     title: 'Éxito',
     content: (
       <>
-        <CodeContainer codeHTML={SMType2}>
+        <CodeBox codeHTML={SMType2}>
           <div className="container p-5 bg-light">
             <div className="status status-success">
               <h2 className="status-title">
@@ -71,7 +71,7 @@ const sections = [
               </button>
             </div>
           </div>
-        </CodeContainer>
+        </CodeBox>
       </>
     ),
   },
@@ -80,7 +80,7 @@ const sections = [
     title: 'Advertencia',
     content: (
       <>
-        <CodeContainer codeHTML={SMType3}>
+        <CodeBox codeHTML={SMType3}>
           <div className="container p-5 bg-light">
             <div className="status status-warning">
               <h2 className="status-title">
@@ -110,7 +110,7 @@ const sections = [
               </button>
             </div>
           </div>
-        </CodeContainer>
+        </CodeBox>
       </>
     ),
   },
@@ -119,7 +119,7 @@ const sections = [
     title: 'Error',
     content: (
       <>
-        <CodeContainer codeHTML={SMType4}>
+        <CodeBox codeHTML={SMType4}>
           <div className="container p-5 bg-light">
             <div className="status status-danger">
               <h2 className="status-title">
@@ -149,7 +149,7 @@ const sections = [
               </button>
             </div>
           </div>
-        </CodeContainer>
+        </CodeBox>
       </>
     ),
   },
@@ -158,7 +158,7 @@ const sections = [
     title: 'Institucional',
     content: (
       <>
-        <CodeContainer codeHTML={SMType5}>
+        <CodeBox codeHTML={SMType5}>
           <div className="container p-5 bg-light">
             <div className="status status-institutional">
               <h2 className="status-title">
@@ -174,7 +174,7 @@ const sections = [
               </button>
             </div>
           </div>
-        </CodeContainer>
+        </CodeBox>
         <br /><br /><br /><br />
       </>
     ),

@@ -1,5 +1,5 @@
 
-import CodeContainer from "@/components/CodeContainer";
+import CodeBox from "@/components/CodeBox";
 import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
 import MainDescription from "@/components/Template/MainDescription";
 
@@ -21,7 +21,7 @@ const ModalDocs: React.FC = () => {
       title: "Tipos",
       content: (
         <>
-          <CodeContainer codeHTML={MODAL_CONFIRM}>
+          <CodeBox codeHTML={MODAL_CONFIRM}>
             <div className="container">
               <button
                 type="button"
@@ -59,9 +59,9 @@ const ModalDocs: React.FC = () => {
               </div>
             </div>
           </div>
-          </CodeContainer>
+          </CodeBox>
           <br />
-          <CodeContainer codeHTML={MODAL_DANGER}>
+          <CodeBox codeHTML={MODAL_DANGER}>
             <div className="container">
               <button
                 type="button"
@@ -96,9 +96,9 @@ const ModalDocs: React.FC = () => {
                 </div>
               </div>
             </div>
-          </CodeContainer>
+          </CodeBox>
           <br />
-          <CodeContainer codeHTML={MODAL_RECOGNITION}>
+          <CodeBox codeHTML={MODAL_RECOGNITION}>
             <div className="container">
               <button
                 type="button"
@@ -130,7 +130,7 @@ const ModalDocs: React.FC = () => {
                 </div>
               </div>
             </div>
-          </CodeContainer>
+          </CodeBox>
           <br /><br /><br /><br />
         </>
       ),

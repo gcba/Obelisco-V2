@@ -1,7 +1,10 @@
 .max-items-1 {
   @extend .row;
-  row-gap: 2rem;
+  row-gap: 1rem;
   @extend .row-cols-1;
+  @media screen and (min-width: 768) and (max-width: 991) {
+    row-gap: 1.5rem;
+  }
 }
 .max-items-2 {
   @extend .max-items-1;
@@ -32,4 +35,27 @@
     padding-right: 0.75rem;
     padding-left: 0.75rem;
   }
+}
+
+
+.access-items-3 {
+  @extend .row;
+  row-gap: 2rem;
+  @media screen and (min-width: 360px) and (max-width: 991px) {
+    a.list-group-item {
+      max-width: 100%;
+    }
+    row-gap: 1.5rem;
+  }
+
+  @media screen and (min-width: 360px) and (max-width: 767px) {
+    row-gap: 1rem;
+  }
+
+  @extend .row-cols-1;
+  @extend .row-cols-lg-3;
+}
+.access-items-4 {
+  @extend .access-items-3;
+  @extend .row-cols-lg-4;
 }

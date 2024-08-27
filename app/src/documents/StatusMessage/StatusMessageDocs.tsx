@@ -1,7 +1,8 @@
-import MainDescription from '@/components/Template/MainDescription';
-import { SMType1, SMType2, SMType3, SMType4, SMType5 } from "./code-views";
-import CodeCopy from '@/components/CodeBox';
+import CodeBox from '@/components/CodeBox';
 import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
+import MainDescription from '@/components/Template/MainDescription';
+
+import { SMType1, SMType2, SMType3, SMType4, SMType5 } from "./code-views";
 
 
 
@@ -36,9 +37,7 @@ const sections = [
               Botón
             </button>
           </div>
-        </div>
-        <br />
-        <CodeCopy code={SMType1} />
+        </CodeBox>
       </>
     ),
   },
@@ -70,9 +69,7 @@ const sections = [
               Botón
             </button>
           </div>
-        </div>
-        <br />
-        <CodeCopy code={SMType2} />
+        </CodeBox>
       </>
     ),
   },
@@ -110,9 +107,7 @@ const sections = [
               Botón
             </button>
           </div>
-        </div>
-        <br />
-        <CodeCopy code={SMType3} />
+        </CodeBox>
       </>
     ),
   },
@@ -151,9 +146,7 @@ const sections = [
               Botón
             </button>
           </div>
-        </div>
-        <br />
-        <CodeCopy code={SMType4} />
+        </CodeBox>
       </>
     ),
   },
@@ -176,9 +169,8 @@ const sections = [
             Ir al sitio web
             </button>
           </div>
-        </div>
-        <br />
-        <CodeCopy code={SMType5} />
+        </CodeBox>
+        <br /><br /><br /><br />
       </>
     ),
   },

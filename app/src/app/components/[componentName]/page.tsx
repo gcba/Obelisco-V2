@@ -23,12 +23,13 @@ import HighlightedDocs from "@/documents/Highlighted/HighlightedDocs";
 import BreadcrumbDocs from '@/documents/Breadcrumb/BreadcrumbDocs';
 import FormTextDocs from '@/documents/Form-text/FormText';
 import FormSelectionDocs from '@/documents/FormSelection/FormSelectionDocs';
+import DropdownSelDocs from '@/documents/DropdownSel/DropdownSelDocs';
 import ProgressBarDocs from '@/documents/ProgressBar/ProgressBarDocs';
 import MapDocs from "@/documents/Map/MapDocs";
 import GalleryDocs from "@/documents/Gallery/GalleryDocs";
 import PaginationDocs from '@/documents/Pagination/PaginationDocs';
 import CalendarDocs from "@/documents/Calendar/MapDocs";
-
+import TableDocs from "@/documents/Table/TableDocs";
 
 // davis: se mapean las url con componentes
 const componentMap: { [key: string]: React.ReactNode } = {
@@ -49,7 +50,8 @@ const componentMap: { [key: string]: React.ReactNode } = {
   tabs: <TabsDocs />,
   tooltip: <TooltipDocs />,
   typography: <TypographyDocs />,
-  "dropdown-nav": <DropdownNavDocs />,
+  'dropdown-nav': <DropdownNavDocs />,
+  'dropdown-sel': <DropdownSelDocs />,
   grid: <GridDocs />,
   spinner: <SpinnerDocs />,
   breadcrumb: <BreadcrumbDocs />,
@@ -58,7 +60,10 @@ const componentMap: { [key: string]: React.ReactNode } = {
   'map': <MapDocs />,
   'gallery': <GalleryDocs />,
   'pagination': <PaginationDocs />,
-  'calendar': <CalendarDocs />
+  'calendar': <CalendarDocs />,
+  'progress-bar': <ProgressBarDocs />,
+  highlighted: <HighlightedDocs />,
+  table: <TableDocs />,
 };
 
 export default function ComponentPage({ params }: { params: { componentName: string } }) {

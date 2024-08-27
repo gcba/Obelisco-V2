@@ -1,4 +1,4 @@
-export const TooltipWithButtons = `//SUPERIOR
+export const TOOLTIP_BUTTONS = `//SUPERIOR
 <span
   data-direction="top-right"
   data-tooltip='Esta es la descripción de un tooltip "arriba-derecha".'
@@ -141,7 +141,7 @@ export const TooltipWithButtons = `//SUPERIOR
 </span>
 `;
 
-export const TooltipWithIcons = `//SUPERIOR
+export const TOOLTIP_ICONS = `//SUPERIOR
 <span
   data-direction="top-right"
   data-tooltip='Esta es la descripción de un tooltip "arriba-derecha".'

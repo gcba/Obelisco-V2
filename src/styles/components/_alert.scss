@@ -22,11 +22,25 @@ $alert-text-distance: 0.5rem;
 $close-icon: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' height='24' width='24' viewBox='0 0 24 24' style='fill: rgba(0, 0, 0, 1)'><path d='m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z'></path></svg>");
 
 $alert-icons: (
-  'success': url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(38, 135, 74, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"></path></svg>'),
-  'danger': url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(201, 59, 59, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm4.207 12.793-1.414 1.414L12 13.414l-2.793 2.793-1.414-1.414L10.586 12 7.793 9.207l1.414-1.414L12 10.586l2.793-2.793 1.414 1.414L13.414 12l2.793 2.793z"></path></svg>'),
-  'warning': url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 168, 46, 1);transform: ;msFilter:;"><path d="M12.884 2.532c-.346-.654-1.422-.654-1.768 0l-9 17A.999.999 0 0 0 3 21h18a.998.998 0 0 0 .883-1.467L12.884 2.532zM13 18h-2v-2h2v2zm-2-4V9h2l.001 5H11z"></path></svg>'),
-  'primary': url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(51, 106, 204, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>'),
-  'info': url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 133, 173, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>')
+  "success":
+    url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(38, 135, 74, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"></path></svg>'),
+  "danger":
+    url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(201, 59, 59, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm4.207 12.793-1.414 1.414L12 13.414l-2.793 2.793-1.414-1.414L10.586 12 7.793 9.207l1.414-1.414L12 10.586l2.793-2.793 1.414 1.414L13.414 12l2.793 2.793z"></path></svg>'),
+  "warning":
+    url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 168, 46, 1);transform: ;msFilter:;"><path d="M12.884 2.532c-.346-.654-1.422-.654-1.768 0l-9 17A.999.999 0 0 0 3 21h18a.998.998 0 0 0 .883-1.467L12.884 2.532zM13 18h-2v-2h2v2zm-2-4V9h2l.001 5H11z"></path></svg>'),
+  "primary":
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(51, 106, 204, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>'),
+  "info":
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 133, 173, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>'),
+);
+
+$theme-color-light-bg: (
+  "info": $sky-50,
+  "warning": $orange-50,
+  "danger": $red-50,
+  "success": $green-50,
+  "primary": $blue-50,
+  "secondary": $gray-50 //Falta definir este color en Figma,
 );
 
 /* === Custom variables and mixins === */
@@ -45,17 +59,17 @@ $alert-icons: (
   border-radius: 0.5rem;
 }
 
-
 /* === Custom styles === */
 
 .alert {
   counter-reset: section;
   padding-left: $alert-padding-left;
   word-break: break-word;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
+  max-width: 728px;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     background-repeat: no-repeat;
     background-size: contain;
@@ -63,7 +77,6 @@ $alert-icons: (
     height: $alert-icon-size;
     inset: $alert-icon-position-top 0 0 $alert-icon-position-left;
   }
-
 
   @each $name, $color in $theme-colors {
     &.alert-#{$name} {
@@ -79,16 +92,18 @@ $alert-icons: (
   }
 
   ol {
-    color: $body-color;
+    color: $body-color; // $body-color
     padding-left: 0;
     list-style: none;
 
     &.list-links {
-      color: $blue;
+      color: #38485c;
 
-      span {
-        text-decoration: underline;
-      }
+      // span {
+      //   // color: #101E37;
+      //   // text-decoration: underline;
+      // }
+      // Así queda como Obelisco hoy
     }
 
     li {
@@ -96,7 +111,7 @@ $alert-icons: (
 
       &::before {
         counter-increment: section;
-        content: counter(section) '. ';
+        content: counter(section) ". ";
       }
     }
   }
@@ -106,7 +121,7 @@ $alert-icons: (
   }
 
   a:not(.btn) {
-    color: $blue;
+    // color: $blue;
 
     &:visited {
       color: $blue;
@@ -115,7 +130,6 @@ $alert-icons: (
 
   &.alert-dismissible {
     padding-right: 3.75rem;
-
     p {
       margin-bottom: 0;
     }
@@ -127,6 +141,11 @@ $alert-icons: (
       margin: $alert-padding-y $alert-padding-x 0 0;
       height: 1.5rem;
     }
+  }
+
+  .alert-link{
+    font-weight: 400;
+    color: $list-link-color;
   }
 }
 
@@ -141,7 +160,6 @@ $alert-icons: (
 
     &.alert-dismissible {
       padding-right: 3.25rem;
-
       .close {
         margin-right: $alert-padding-x-mobile;
       }

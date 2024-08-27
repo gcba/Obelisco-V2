@@ -1,4 +1,4 @@
-import CodeCopy from "@/components/CodeBox";
+import CodeCopy from "@/components/CodeCopy";
 import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
 import MainDescription from "@/components/Template/MainDescription";
 import { BadgeColors, BadgeTypes } from "./code-views";

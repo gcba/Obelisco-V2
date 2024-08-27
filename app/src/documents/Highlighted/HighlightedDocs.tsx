@@ -1,6 +1,6 @@
 import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
 import { ModalTypes } from "./code-views";
-import CodeCopy from "@/components/CodeBox";
+import CodeCopy from "@/components/CodeCopy";
 import MainDescription from "@/components/Template/MainDescription";
 
 const HighlightedDocs: React.FC = () => {

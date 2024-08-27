@@ -1,12 +1,13 @@
-import CodeCopy from "@/components/CodeBox";
+import CodeBox from "@/components/CodeBox";
+import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
 import MainDescription from "@/components/Template/MainDescription";
+
 import {
   LINK_DEFAULT,
   LINK_EXTERNAL,
   LINK_DOWNLOAD,
   LINK_ACCESS,
 } from "./code-views";
-import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
 
 const LinkDocs: React.FC = () => {
   const sections = [
@@ -24,45 +25,46 @@ const LinkDocs: React.FC = () => {
       title: 'Predeterminado',
       content: (
         <>
-          <div className="container">
-            <p>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                enlace en párrafo
-              </a>
-            </p>
-            <p>
-              <small>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  enlaces en párrafo
-                </a>
-              </small>
-            </p>
-            <div className="bg-dark p-2">
+          <CodeBox codeHTML={LINK_DEFAULT}>
+            <div className="container">
               <p>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="link-white"
-                >
+                <a href="#" target="_blank" rel="noopener noreferrer">
                   enlace en párrafo
-                </a>{" "}
+                </a>
               </p>
-              <p className="mb-0">
+              <p>
                 <small>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    enlaces en párrafo
+                  </a>
+                </small>
+              </p>
+              <div className="bg-dark p-2">
+                <p>
                   <a
                     href="#"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="link-white"
                   >
-                    enlaces en párrafo
-                  </a>
-                </small>
-              </p>
+                    enlace en párrafo
+                  </a>{" "}
+                </p>
+                <p className="mb-0">
+                  <small>
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="link-white"
+                    >
+                      enlaces en párrafo
+                    </a>
+                  </small>
+                </p>
+              </div>
             </div>
-          </div>
-          <CodeCopy code={LINK_DEFAULT} />
+          </CodeBox>
         </>
       ),
     },
@@ -71,33 +73,34 @@ const LinkDocs: React.FC = () => {
       title: 'Externo',
       content: (
         <>
-          <div className="container">
-            <div className="p-2">
-              <p>
-                <a
-                  className="external"
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  enlace externo
-                </a>
-              </p>
+          <CodeBox codeHTML={LINK_EXTERNAL}>
+            <div className="container">
+              <div className="p-2">
+                <p>
+                  <a
+                    className="external"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    enlace externo
+                  </a>
+                </p>
+              </div>
+              <div className="bg-dark p-2">
+                <p className="mb-0">
+                  <a
+                    className="external link-white"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    enlace externo
+                  </a>
+                </p>
+              </div>
             </div>
-            <div className="bg-dark p-2">
-              <p className="mb-0">
-                <a
-                  className="external link-white"
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  enlace externo
-                </a>
-              </p>
-            </div>
-          </div>
-          <CodeCopy code={LINK_EXTERNAL} />
+          </CodeBox>
         </>
       ),
     },
@@ -106,45 +109,46 @@ const LinkDocs: React.FC = () => {
       title: 'Descarga',
       content: (
         <>
-          <div className="container">
-            <div className="p-2">
-              <p>
-                <a
-                  className="download"
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  download=""
-                >
-                  enlace de descarga
-                </a>
-              </p>
-            </div>
+          <CodeBox codeHTML={LINK_DOWNLOAD}>
+            <div className="container">
+              <div className="p-2">
+                <p>
+                  <a
+                    className="download"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    download=""
+                  >
+                    enlace de descarga
+                  </a>
+                </p>
+              </div>
 
-            <div className="bg-dark p-2">
-              <p className="mb-0">
-                <a
-                  className="download link-white"
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  download=""
-                >
-                  enlace de descarga
-                </a>
-              </p>
+              <div className="bg-dark p-2">
+                <p className="mb-0">
+                  <a
+                    className="download link-white"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    download=""
+                  >
+                    enlace de descarga
+                  </a>
+                </p>
+              </div>
+              <a
+                className="btn btn-secondary btn-sm download-link my-3"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                download=""
+              >
+                Descargar
+              </a>
             </div>
-            <a
-              className="btn btn-secondary btn-sm download-link my-3"
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              download=""
-            >
-              Descargar
-            </a>
-          </div>
-          <CodeCopy code={LINK_DOWNLOAD} />
+          </CodeBox>
         </>
       )
     },
@@ -153,34 +157,36 @@ const LinkDocs: React.FC = () => {
       title: 'Acceso',
       content: (
         <>
-          <div className="container">
-            <div className="p-2">
-              <p>
-                <a
-                  className="access"
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  enlace de acceso
-                </a>
-              </p>
-            </div>
+          <CodeBox codeHTML={LINK_ACCESS}>
+            <div className="container">
+              <div className="p-2">
+                <p>
+                  <a
+                    className="access"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    enlace de acceso
+                  </a>
+                </p>
+              </div>
 
-            <div className="bg-dark p-2">
-              <p className="mb-0">
-                <a
-                  className="access link-white"
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  enlace de acceso
-                </a>
-              </p>
+              <div className="bg-dark p-2">
+                <p className="mb-0">
+                  <a
+                    className="access link-white"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    enlace de acceso
+                  </a>
+                </p>
+              </div>
             </div>
-          </div>
-          <CodeCopy code={LINK_ACCESS} />
+          </CodeBox>
+          <br /><br /><br /><br />
         </>
       )
     }

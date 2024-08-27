@@ -1,4 +1,4 @@
-import CodeCopy from "@/components/CodeBox";
+import CodeCopy from "@/components/CodeCopy";
 import BoxTemplate from "@/components/Template/Box";
 import Divisor from "@/components/Template/Divisor";
 import Flex from "@/components/Template/Flex";

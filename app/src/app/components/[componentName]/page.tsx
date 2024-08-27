@@ -24,6 +24,7 @@ import HighlightedDocs from "@/documents/Highlighted/HighlightedDocs";
 import BreadcrumbDocs from '@/documents/Breadcrumb/BreadcrumbDocs';
 import FormTextDocs from '@/documents/Form-text/FormText';
 import FormSelectionDocs from '@/documents/FormSelection/FormSelectionDocs';
+import DropdownSelDocs from '@/documents/DropdownSel/DropdownSelDocs';
 import ProgressBarDocs from '@/documents/ProgressBar/ProgressBarDocs';
 
 // davis: se mapean las url con componentes
@@ -45,7 +46,8 @@ const componentMap: { [key: string]: React.ReactNode } = {
   tabs: <TabsDocs />,
   tooltip: <TooltipDocs />,
   typography: <TypographyDocs />,
-  "dropdown-nav": <DropdownNavDocs />,
+  'dropdown-nav': <DropdownNavDocs />,
+  'dropdown-sel': <DropdownSelDocs />,
   grid: <GridDocs />,
   spinner: <SpinnerDocs />,
   breadcrumb: <BreadcrumbDocs />,

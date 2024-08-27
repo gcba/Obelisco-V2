@@ -19,16 +19,6 @@ const MapDocs: React.FC = () => {
       title: "Lateral",
       content: (
         <>
-          <p>
-            En desktop ocupa 4 columnas, y se ubica a la derecha del cuerpo de
-            una página simple o de noticias.
-          </p>
-          <p>
-            Ocupa el 100 % de las columnas disponibles en mobile. Cuando cumple
-            la función de mapa lateral, se ubica luego del cuerpo de la página,
-            antes del footer o de la sección de noticias relacionadas.
-          </p>
-
           <CodeBox codeHTML={MAP_LATERAL}>
             <div className="container">
               <div className="row">
@@ -73,12 +63,6 @@ const MapDocs: React.FC = () => {
       title: "Institucional",
       content: (
         <>
-          <p>
-            Ocupa 6 columnas en Desktop. Se utiliza dentro del bloque
-            institucional en páginas de área, antes del footer.
-          </p>
-          <p>Ocupa el 100 % de las columnas disponibles en mobile.</p>
-
           <CodeBox codeHTML={MAP_INSTITUTION}>
             <div className="container">
               <div className="row">
@@ -115,6 +99,7 @@ const MapDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
+          <br /><br /><br /><br />
         </>
       ),
     },

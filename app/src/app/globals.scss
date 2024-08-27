@@ -96,11 +96,13 @@ hr {
 }
 
 .color-box {
-  width: 96px;
-  height: 48px;
+  width: 192px;
+  height: 72px;
   border-radius: 0.5rem;
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }

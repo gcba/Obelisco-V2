@@ -1,4 +1,4 @@
-export const EGcodeSimpleTabs =
+export const TABS_SIMPLE =
   `
   <nav class="tabs-box" aria-label="Navegación por pestañas">
     <ul class="nav nav-pills tabs" id="simple-myTab" role="tablist">
@@ -97,8 +97,7 @@ export const EGcodeSimpleTabs =
     </div>
   </div>
 `;
-
-export const EGcodeSimpleTabsWithIcon =
+export const TABS_SIMPLE_ICON =
   `
   <nav class="tabs-box" aria-label="Navegación por pestañas">
     <ul class="nav nav-pills tabs" id="icon-myTab" role="tablist">
@@ -216,13 +215,12 @@ export const EGcodeSimpleTabsWithIcon =
     </div>
   </div>
 `;
-
-export const EGcodeTabsWidth = `
-  <nav className="tabs-box" aria-label="Navegación por pestañas">
-    <ul className="nav nav-pills tabs fixed-width" id="icon-myTab" role="tablist">
-      <li className="nav-item" role="presentation">
+export const TABS_FIXED_WIDTH = `
+  <nav class="tabs-box" aria-label="Navegación por pestañas">
+    <ul class="nav nav-pills tabs fixed-width" id="icon-myTab" role="tablist">
+      <li class="nav-item" role="presentation">
         <button
-          className="nav-link active"
+          class="nav-link active"
           data-bs-toggle="tab"
           data-bs-target="#panel-icon-content-1"
           type="button"
@@ -231,17 +229,17 @@ export const EGcodeTabsWidth = `
           aria-selected="true"
           id="tab-icon-1"
         >
-          <div className="nav-icon">
+          <div class="nav-icon">
             Pestaña 1
-            <span className="material-symbols-rounded o-icon">
+            <span class="material-symbols-rounded o-icon">
               home
             </span>
           </div>
         </button>
       </li>
-      <li className="nav-item" role="presentation">
+      <li class="nav-item" role="presentation">
         <button
-          className="nav-link"
+          class="nav-link"
           data-bs-toggle="tab"
           data-bs-target="#panel-icon-content-2"
           type="button"
@@ -250,17 +248,17 @@ export const EGcodeTabsWidth = `
           aria-selected="false"
           id="tab-icon-2"
         >
-          <div className="nav-icon">
+          <div class="nav-icon">
             Pestaña 2
-            <span className="material-symbols-rounded o-icon">
+            <span class="material-symbols-rounded o-icon">
               home
             </span>
           </div>
         </button>
       </li>
-      <li className="nav-item" role="presentation">
+      <li class="nav-item" role="presentation">
         <button
-          className="nav-link"
+          class="nav-link"
           data-bs-toggle="tab"
           data-bs-target="#panel-icon-content-3"
           type="button"
@@ -270,17 +268,17 @@ export const EGcodeTabsWidth = `
           id="tab-icon-3"
           disabled
         >
-          <div className="nav-icon">
+          <div class="nav-icon">
             Pestaña 3
-            <span className="material-symbols-rounded o-icon">
+            <span class="material-symbols-rounded o-icon">
               home
             </span>
           </div>
         </button>
       </li>
-      <li className="nav-item" role="presentation">
+      <li class="nav-item" role="presentation">
         <button
-          className="nav-link"
+          class="nav-link"
           data-bs-toggle="tab"
           data-bs-target="#panel-icon-content-4"
           type="button"
@@ -289,9 +287,9 @@ export const EGcodeTabsWidth = `
           aria-selected="false"
           id="tab-icon-4"
         >
-          <div className="nav-icon">
+          <div class="nav-icon">
             Pestaña 4
-            <span className="material-symbols-rounded o-icon">
+            <span class="material-symbols-rounded o-icon">
               home
             </span>
           </div>
@@ -299,9 +297,9 @@ export const EGcodeTabsWidth = `
       </li>
     </ul>
   </nav>
-  <div className="tab-content" id="icon-myTabContent">
+  <div class="tab-content" id="icon-myTabContent">
     <div
-      className="tab-pane fade show active"
+      class="tab-pane fade show active"
       id="panel-icon-content-1"
       role="tabpanel"
       aria-labelledby="tab-icon-1"
@@ -309,7 +307,7 @@ export const EGcodeTabsWidth = `
       Contenido Pestaña 1
     </div>
     <div
-      className="tab-pane fade"
+      class="tab-pane fade"
       id="panel-icon-content-2"
       role="tabpanel"
       aria-labelledby="tab-icon-2"
@@ -317,7 +315,7 @@ export const EGcodeTabsWidth = `
       Contenido Pestaña 2
     </div>
     <div
-      className="tab-pane fade"
+      class="tab-pane fade"
       id="panel-icon-content-3"
       role="tabpanel"
       aria-labelledby="tab-icon-3"
@@ -325,7 +323,7 @@ export const EGcodeTabsWidth = `
       Contenido Pestaña 3
     </div>
     <div
-      className="tab-pane fade"
+      class="tab-pane fade"
       id="panel-icon-content-4"
       role="tabpanel"
       aria-labelledby="tab-icon-4"
@@ -334,13 +332,12 @@ export const EGcodeTabsWidth = `
     </div>
   </div>
 `
-
-export const EGcodeTabsBg = `
-  <nav className="tabs-box" aria-label="Navegación por pestañas">
-    <ul className="nav nav-pills tabs nav-box" id="icon-myTab" role="tablist">
-      <li className="nav-item" role="presentation">
+export const TABS_CONTAINER = `
+  <nav class="tabs-box" aria-label="Navegación por pestañas">
+    <ul class="nav nav-pills tabs nav-box" id="icon-myTab" role="tablist">
+      <li class="nav-item" role="presentation">
         <button
-          className="nav-link active"
+          class="nav-link active"
           data-bs-toggle="tab"
           data-bs-target="#panel-bg-content-1"
           type="button"
@@ -349,17 +346,17 @@ export const EGcodeTabsBg = `
           aria-selected="true"
           id="tab-bg-1"
         >
-          <div className="nav-icon">
+          <div class="nav-icon">
             Pestaña 1
-            <span className="material-symbols-rounded o-icon">
+            <span class="material-symbols-rounded o-icon">
               home
             </span>
           </div>
         </button>
       </li>
-      <li className="nav-item" role="presentation">
+      <li class="nav-item" role="presentation">
         <button
-          className="nav-link"
+          class="nav-link"
           data-bs-toggle="tab"
           data-bs-target="#panel-bg-content-2"
           type="button"
@@ -368,17 +365,17 @@ export const EGcodeTabsBg = `
           aria-selected="false"
           id="tab-bg-2"
         >
-          <div className="nav-icon">
+          <div class="nav-icon">
             Pestaña 2
-            <span className="material-symbols-rounded o-icon">
+            <span class="material-symbols-rounded o-icon">
               home
             </span>
           </div>
         </button>
       </li>
-      <li className="nav-item" role="presentation">
+      <li class="nav-item" role="presentation">
         <button
-          className="nav-link"
+          class="nav-link"
           data-bs-toggle="tab"
           data-bs-target="#panel-bg-content-3"
           type="button"
@@ -388,17 +385,17 @@ export const EGcodeTabsBg = `
           id="tab-bg-3"
           disabled
         >
-          <div className="nav-icon">
+          <div class="nav-icon">
             Pestaña 3
-            <span className="material-symbols-rounded o-icon">
+            <span class="material-symbols-rounded o-icon">
               home
             </span>
           </div>
         </button>
       </li>
-      <li className="nav-item" role="presentation">
+      <li class="nav-item" role="presentation">
         <button
-          className="nav-link"
+          class="nav-link"
           data-bs-toggle="tab"
           data-bs-target="#panel-bg-content-4"
           type="button"
@@ -407,9 +404,9 @@ export const EGcodeTabsBg = `
           aria-selected="false"
           id="tab-bg-4"
         >
-          <div className="nav-icon">
+          <div class="nav-icon">
             Pestaña 4
-            <span className="material-symbols-rounded o-icon">
+            <span class="material-symbols-rounded o-icon">
               home
             </span>
           </div>
@@ -417,9 +414,9 @@ export const EGcodeTabsBg = `
       </li>
     </ul>
   </nav>
-  <div className="tab-content" id="icon-myTabContent">
+  <div class="tab-content" id="icon-myTabContent">
     <div
-      className="tab-pane fade show active"
+      class="tab-pane fade show active"
       id="panel-bg-content-1"
       role="tabpanel"
       aria-labelledby="tab-bg-1"
@@ -427,7 +424,7 @@ export const EGcodeTabsBg = `
       Contenido Pestaña 1
     </div>
     <div
-      className="tab-pane fade"
+      class="tab-pane fade"
       id="panel-bg-content-2"
       role="tabpanel"
       aria-labelledby="tab-bg-2"
@@ -435,7 +432,7 @@ export const EGcodeTabsBg = `
       Contenido Pestaña 2
     </div>
     <div
-      className="tab-pane fade"
+      class="tab-pane fade"
       id="panel-bg-content-3"
       role="tabpanel"
       aria-labelledby="tab-bg-3"
@@ -443,7 +440,7 @@ export const EGcodeTabsBg = `
       Contenido Pestaña 3
     </div>
     <div
-      className="tab-pane fade"
+      class="tab-pane fade"
       id="panel-bg-content-4"
       role="tabpanel"
       aria-labelledby="tab-bg-4"

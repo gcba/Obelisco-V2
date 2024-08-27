@@ -1,6 +1,7 @@
+import CodeBox from '@/components/CodeBox';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
-import CodeCopy from '@/components/CodeBox';
 import MainDescription from '@/components/Template/MainDescription';
+
 import {
   FOUR_COLUMNS,
   LAYOUTS,
@@ -26,22 +27,22 @@ const GridDocs: React.FC = () => {
       title: 'Layouts',
       content: (
         <>
-          <div className="container text-center text-white">
-            <div className="bg-primary py-2">container</div>
-          </div>
-          <br />
-          <div className="container text-white text-center">
-            <div className="row">
-              <div className="col-12 col-lg-8">
-                <div className="bg-primary py-2">col-12 col-lg-8</div>
-              </div>
-              <div className="col-12 col-lg-4">
-                <div className="bg-primary py-2">col-12 col-lg-4</div>
+          <CodeBox codeHTML={LAYOUTS}>
+            <div className="container text-center text-white">
+              <div className="bg-primary py-2">container</div>
+            </div>
+            <br />
+            <div className="container text-white text-center">
+              <div className="row">
+                <div className="col-12 col-lg-8">
+                  <div className="bg-primary py-2">col-12 col-lg-8</div>
+                </div>
+                <div className="col-12 col-lg-4">
+                  <div className="bg-primary py-2">col-12 col-lg-4</div>
+                </div>
               </div>
             </div>
-          </div>
-          <br />
-          <CodeCopy code={LAYOUTS} />
+          </CodeBox>
         </>
       ),
       h1: false,
@@ -51,85 +52,86 @@ const GridDocs: React.FC = () => {
       title: 'Disposiciones',
       content: (
         <>
-          <div className="container">
-            <h3>Cuatro columnas</h3>
-            <div className="max-items-4 text-white text-center">
-              <div className="col">
-                <div className="bg-primary py-2">1</div>
-              </div>
-              <div className="col">
-                <div className="bg-primary py-2">2</div>
-              </div>
-              <div className="col">
-                <div className="bg-primary py-2">3</div>
-              </div>
-              <div className="col">
-                <div className="bg-primary py-2">4</div>
-              </div>
-              <div className="col">
-                <div className="bg-primary py-2">5</div>
-              </div>
-            </div>
-          </div>
-          <br />
-          <CodeCopy code={FOUR_COLUMNS} />
-          <br />
-          <div className="container">
-            <h3>Tres columnas</h3>
-            <div className="max-items-3 text-white text-center">
-              <div className="col">
-                <div className="bg-primary py-2">1</div>
-              </div>
-              <div className="col">
-                <div className="bg-primary py-2">2</div>
-              </div>
-              <div className="col">
-                <div className="bg-primary py-2">3</div>
-              </div>
-              <div className="col">
-                <div className="bg-primary py-2">4</div>
-              </div>
-              <div className="col">
-                <div className="bg-primary py-2">5</div>
+          <CodeBox codeHTML={FOUR_COLUMNS}>
+            <div className="container">
+              <h3>Cuatro columnas</h3>
+              <div className="max-items-4 text-white text-center">
+                <div className="col">
+                  <div className="bg-primary py-2">1</div>
+                </div>
+                <div className="col">
+                  <div className="bg-primary py-2">2</div>
+                </div>
+                <div className="col">
+                  <div className="bg-primary py-2">3</div>
+                </div>
+                <div className="col">
+                  <div className="bg-primary py-2">4</div>
+                </div>
+                <div className="col">
+                  <div className="bg-primary py-2">5</div>
+                </div>
               </div>
             </div>
-          </div>
+          </CodeBox>
           <br />
-          <CodeCopy code={THREE_COLUMNS} />
-          <br />
-          <div className="container">
-            <h3>Dos columnas</h3>
-            <div className="max-items-2 text-white text-center">
-              <div className="col">
-                <div className="bg-primary py-2">1</div>
-              </div>
-              <div className="col">
-                <div className="bg-primary py-2">2</div>
-              </div>
-              <div className="col">
-                <div className="bg-primary py-2">3</div>
+          <CodeBox codeHTML={THREE_COLUMNS}>
+            <div className="container">
+              <h3>Tres columnas</h3>
+              <div className="max-items-3 text-white text-center">
+                <div className="col">
+                  <div className="bg-primary py-2">1</div>
+                </div>
+                <div className="col">
+                  <div className="bg-primary py-2">2</div>
+                </div>
+                <div className="col">
+                  <div className="bg-primary py-2">3</div>
+                </div>
+                <div className="col">
+                  <div className="bg-primary py-2">4</div>
+                </div>
+                <div className="col">
+                  <div className="bg-primary py-2">5</div>
+                </div>
               </div>
             </div>
-          </div>
+          </CodeBox>
           <br />
-          <CodeCopy code={TWO_COLUMNS} />
-          <br />
-          <div className="container">
-            <h3>Una columna</h3>
-            <div className="max-items-1 text-white text-center">
-              <div className="col">
-                <div className="bg-primary py-2">1</div>
-              </div>
-              <div className="col">
-                <div className="bg-primary py-2">2</div>
-              </div>
-              <div className="col">
-                <div className="bg-primary py-2">3</div>
+          <CodeBox codeHTML={TWO_COLUMNS}>
+            <div className="container">
+              <h3>Dos columnas</h3>
+              <div className="max-items-2 text-white text-center">
+                <div className="col">
+                  <div className="bg-primary py-2">1</div>
+                </div>
+                <div className="col">
+                  <div className="bg-primary py-2">2</div>
+                </div>
+                <div className="col">
+                  <div className="bg-primary py-2">3</div>
+                </div>
               </div>
             </div>
-          </div>
+          </CodeBox>
           <br />
-          <CodeCopy code={ONE_COLUMN} />
+          <CodeBox codeHTML={ONE_COLUMN}>
+            <div className="container">
+              <h3>Una columna</h3>
+              <div className="max-items-1 text-white text-center">
+                <div className="col">
+                  <div className="bg-primary py-2">1</div>
+                </div>
+                <div className="col">
+                  <div className="bg-primary py-2">2</div>
+                </div>
+                <div className="col">
+                  <div className="bg-primary py-2">3</div>
+                </div>
+              </div>
+            </div>
+          </CodeBox>
+          <br /><br /><br /><br />
         </>
       ),
       h1: false,

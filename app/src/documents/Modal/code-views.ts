@@ -1,4 +1,4 @@
-export const ModalTypes = `//CONFIRMACIÓN
+export const MODAL_CONFIRM = `
 <button 
   type="button" 
   class="btn btn-primary" 
@@ -28,8 +28,8 @@ export const ModalTypes = `//CONFIRMACIÓN
     </div>
   </div>
 </div>
-
-//MDDAL DE PELIGRO
+`;
+export const MODAL_DANGER = `
 <button 
   type="button" 
   class="btn btn-primary" 
@@ -56,8 +56,8 @@ export const ModalTypes = `//CONFIRMACIÓN
     </div>
   </div>
 </div>
-
-//MODAL DE RECONOCIMIENTO
+`;
+export const MODAL_RECOGNITION = `
 <button 
   type="button" 
   class="btn btn-primary" 

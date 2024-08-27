@@ -1,4 +1,3 @@
-
 import CodeBox from "@/components/CodeBox";
 import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
 import MainDescription from "@/components/Template/MainDescription";
@@ -31,56 +30,55 @@ const ModalDocs: React.FC = () => {
               >
                 Modal de confirmación
               </button>
+              <div className="col-auto">
+                <button
+                  type="button"
+                  className="btn btn-primary mb-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal2"
+                >
+                  Modal de peligro
+                </button>
+              </div>
+              <div className="col-auto">
+                <button
+                  type="button"
+                  className="btn btn-primary mb-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal3"
+                >
+                  Modal de reconocimiento
+                </button>
+              </div>
             </div>
-            <div className="col-auto">
-              <button
-                type="button"
-                className="btn btn-primary mb-3"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal2"
-              >
-                Modal de peligro
-              </button>
-            </div>
-            <div className="col-auto">
-              <button
-                type="button"
-                className="btn btn-primary mb-3"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal3"
-              >
-                Modal de reconocimiento
-              </button>
-            </div>
-          </div>
 
-          <div className="modal fade" tabIndex={-1} id="exampleModal1">
-            <div className="modal-dialog modal-dialog-centered modal-sm">
-              <div className="modal-content">
-                <div className="modal-header">
-                  <h4 className="modal-title">¡Importante!</h4>
-                </div>
-                <div className="modal-body">
-                  <p>
-                    Antes de realizar la ficha de salud, tené en cuenta haber
-                    realizado los pasos previos correspondientes.
-                  </p>
-                </div>
-                <div className="modal-footer">
-                  <button
-                    type="button" 
-                    className="btn btn-outline-primary"
-                    data-bs-dismiss="modal"
-                  >
-                    Volver atrás
-                  </button>
-                  <button type="button" className="btn btn-secondary">
-                    Continuar
-                  </button>
+            <div className="modal fade" tabIndex={-1} id="exampleModal1">
+              <div className="modal-dialog modal-dialog-centered modal-sm">
+                <div className="modal-content">
+                  <div className="modal-header">
+                    <h4 className="modal-title">¡Importante!</h4>
+                  </div>
+                  <div className="modal-body">
+                    <p>
+                      Antes de realizar la ficha de salud, tené en cuenta haber
+                      realizado los pasos previos correspondientes.
+                    </p>
+                  </div>
+                  <div className="modal-footer">
+                    <button
+                      type="button"
+                      className="btn btn-outline-primary"
+                      data-bs-dismiss="modal"
+                    >
+                      Volver atrás
+                    </button>
+                    <button type="button" className="btn btn-secondary">
+                      Continuar
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
           </CodeBox>
           <br />
           <CodeBox codeHTML={MODAL_DANGER}>

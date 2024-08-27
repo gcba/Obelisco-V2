@@ -2,7 +2,6 @@
 $calendar-spacing: 0.5rem 0.25rem;
 $calendar-footer-spacing: 1rem 0.5rem 0;
 $calendar-td-span-size: 2.25rem;
-// $calendar-link-color-hover-focus: $hover;
 
 $chromatic-colors: (
   bg-sky: $sky,
@@ -27,23 +26,21 @@ $chromatic-colors: (
   background-color: $white;
   padding: $calendar-spacing;
 
-  @include media-breakpoint-up(md) {
-    max-width: 340px;
-  }
-
   .calendar-header {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 0 0.25rem;
+    padding: 0 0.625rem;
     height: 24px;
+
     .calendar-title,
     .calendar-year {
-      //   font-size: $headline-lg;
-      //   line-height: $height-headline;
-      font-weight: $font-weight-semibold;
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+      font-weight: 600;
       font-family: $font-family-headings;
       margin-bottom: 0;
+      color: $blue-800;
     }
   }
 
@@ -71,17 +68,19 @@ $chromatic-colors: (
 
       .calendar-week-header {
         th {
-          //   font-weight: $font-weight-bold;
-          //   font-family: $font-family-headings;
+          font-weight: 700;
+          font-family: 'Nunito', sans-serif;
           height: 48px;
-          //   background-color: $ghost;
+          background-color: $cyan-50;
+          color: $grisulado-900;
         }
       }
 
       .calendar-week {
         line-height: 8px;
+
         &:nth-of-type(even) {
-          //   background-color: $ghost;
+          background-color: $cyan-50;
         }
         &:nth-of-type(odd) {
           td {
@@ -96,6 +95,7 @@ $chromatic-colors: (
 
         td {
           pointer-events: inherit;
+
           .calendar-link {
             border-radius: 50%;
             margin: 0.25rem 0;
@@ -104,10 +104,10 @@ $chromatic-colors: (
             &:hover {
               outline: 0.25rem solid transparent;
               .active {
-                // background-color: $calendar-link-color-hover-focus;
+                background-color: $blue-600;
               }
               .active-secondary {
-                background-color: $grisulado-600;
+                background-color: $blue-950;
               }
 
               @each $clase, $color in $chromatic-colors {
@@ -121,9 +121,17 @@ $chromatic-colors: (
             &:focus {
               box-shadow: none;
               backface-visibility: inherit;
+              .active {
+                background-color: $blue-600;
+                color: $white;
+              }
+              .active-secondary {
+                background-color: $blue-900;
+                color: $white;
+              }
               .active,
               .active-secondary {
-                // box-shadow: 0 0 0 0.125rem $focus;
+                box-shadow: 0 0 0 0.125rem $focus-color;
               }
             }
 
@@ -132,10 +140,13 @@ $chromatic-colors: (
               backface-visibility: inherit;
               .active,
               .active-secondary {
-                box-shadow: 0 0 0 0.125rem $active-border;
+                box-shadow: 0 0 0 0.125rem $blue-800;
               }
               .active {
-                // background-color: $hover;
+                background-color: $blue-600;
+              }
+              .active-secondary {
+                background-color: $blue-950;
               }
             }
           }
@@ -152,13 +163,13 @@ $chromatic-colors: (
             &.active,
             &.active-secondary {
               color: $white;
-              background-color: $blue;
+              background-color: $blue-500;
               min-width: 100%;
               height: 100%;
               margin: 0;
               outline: 0.125rem solid transparent;
-
               cursor: pointer;
+
               &.bg-gray {
                 background-color: $gray-100;
               }
@@ -171,7 +182,7 @@ $chromatic-colors: (
             }
 
             &.active-secondary {
-              background-color: $grisulado-900;
+              background-color: $blue-900;
             }
           }
         }
@@ -187,8 +198,8 @@ $chromatic-colors: (
       margin-bottom: 0;
 
       li {
-        // font-size: $text-sm;
-        // line-height: $height-text-sm;
+        font-size: 0.875rem;
+        line-height: 20px;
         list-style-type: none;
         &:not(:last-child) {
           margin-bottom: 0.5rem;
@@ -205,6 +216,14 @@ $chromatic-colors: (
           padding: 0;
         }
       }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    max-width: 328px;
+
+    .calendar-header {
+      padding: 0 0.25rem;
     }
   }
 }

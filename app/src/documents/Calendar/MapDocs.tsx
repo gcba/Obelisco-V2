@@ -29,7 +29,7 @@ const CalendarDocs: React.FC = () => {
             antes del footer o de la sección de noticias relacionadas.
           </p>
 
-          <div className="calendar">
+          {/* <div className="calendar">
             <div className="calendar-header">
               <h2 className="calendar-title">Enero</h2>
               <span className="calendar-year">2024</span>
@@ -105,8 +105,7 @@ const CalendarDocs: React.FC = () => {
                 </tbody>
               </table>
             </div>
-          </div>
-
+          </div> */}
 
           <CodeCopy code={MapLateral} />
         </>
@@ -122,7 +121,7 @@ const CalendarDocs: React.FC = () => {
             institucional en páginas de área, antes del footer.
           </p>
 
-          <div className="calendar">
+          {/* <div className="calendar">
             <div className="calendar-header">
               <h2 className="calendar-title">Enero</h2>
               <span className="calendar-year">2024</span>
@@ -213,20 +212,20 @@ const CalendarDocs: React.FC = () => {
             <div className="calendar-footer">
               <ul className="calendar-footer-list">
                 <li>
-                  <strong>1.</strong>
+                  <strong>1. </strong>
                   Nombre del evento.
                 </li>
                 <li>
-                  <strong>10.</strong>
+                  <strong>10. </strong>
                   Nombre del evento.
                 </li>
                 <li>
-                  <strong>25.</strong>
+                  <strong>25. </strong>
                   Nombre del evento.
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
 
 
           <CodeCopy code={MapInstitution} />
@@ -267,7 +266,7 @@ const CalendarDocs: React.FC = () => {
                     <td></td>
                     <td>
                       <a href="#" className="calendar-link" title="Nombre del evento.">
-                        <span className="active">1</span>
+                        <span className="active-secondary">1</span>
                       </a>
                     </td>
                     <td><span>2</span></td>
@@ -335,15 +334,15 @@ const CalendarDocs: React.FC = () => {
             <div className="calendar-footer">
               <ul className="calendar-footer-list">
                 <li>
-                  <strong>1.</strong>
+                  <strong>1. </strong>
                   Nombre del evento.
                 </li>
                 <li>
-                  <strong>10.</strong>
+                  <strong>10. </strong>
                   Nombre del evento.
                 </li>
                 <li>
-                  <strong>25.</strong>
+                  <strong>25. </strong>
                   Nombre del evento.
                 </li>
               </ul>
@@ -456,15 +455,15 @@ const CalendarDocs: React.FC = () => {
             <div className="calendar-footer">
               <ul className="calendar-footer-list">
                 <li>
-                  <strong>1.</strong>
+                  <strong>1. </strong>
                   Nombre del evento.
                 </li>
                 <li>
-                  <strong>10.</strong>
+                  <strong>10. </strong>
                   Nombre del evento.
                 </li>
                 <li>
-                  <strong>25.</strong>
+                  <strong>25. </strong>
                   Nombre del evento.
                 </li>
               </ul>
@@ -629,55 +628,55 @@ const CalendarDocs: React.FC = () => {
           <div className="card-body">
             <ul className="calendar-footer-list">
               <li>
-                <strong>1.</strong>
+                <strong>1. </strong>
                 Nombre del evento.
               </li>
               <li>
-                <strong>2.</strong>
+                <strong>2. </strong>
                 Nombre del evento.
               </li>
               <li>
-                <strong>3.</strong>
+                <strong>3. </strong>
                 Nombre del evento.
               </li>
               <li>
-                <strong>4.</strong>
+                <strong>4. </strong>
                 Nombre del evento.
               </li>
               <li>
-                <strong>5.</strong>
+                <strong>5. </strong>
                 Nombre del evento.
               </li>
               <li>
-                <strong>6.</strong>
+                <strong>6. </strong>
                 Nombre del evento.
               </li>
               <li>
-                <strong>7.</strong>
+                <strong>7. </strong>
                 Nombre del evento.
               </li>
               <li>
-                <strong>8.</strong>
+                <strong>8. </strong>
                 Nombre del evento.
               </li>
               <li>
-                <strong>9.</strong>
+                <strong>9. </strong>
                 Nombre del evento.
               </li>
               <li>
-                <strong>10.</strong>
+                <strong>10. </strong>
                 Nombre del evento.
               </li>
               <li>
-                <strong>11.</strong>
+                <strong>11. </strong>
                 Nombre del evento.
               </li>
               <li>
-                <strong>12.</strong>
+                <strong>12. </strong>
                 Nombre del evento.
               </li>
               <li>
-                <strong>13.</strong>
+                <strong>13. </strong>
                 Nombre del evento.
               </li>
             </ul>

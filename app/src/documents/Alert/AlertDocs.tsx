@@ -1,5 +1,7 @@
-import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
 import CodeCopy from "@/components/CodeBox";
+import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
+import MainDescription from "@/components/Template/MainDescription";
+
 import {
   EGcodeSimpleAlert,
   EGcodeWithClose,
@@ -8,7 +10,7 @@ import {
   EGcodeListLink,
   EGcodeListLinkWithDescription,
 } from "./code-views";
-import MainDescription from "@/components/Template/MainDescription";
+
 
 const AlertDocs: React.FC = () => {
   const sections = [
@@ -25,7 +27,7 @@ const AlertDocs: React.FC = () => {
       description: "pequeña descripcion sobre un tipo de alerta.",
       content: (
         <section>
-          <div className="alert alert-primary" role="alert">
+          <div className="alert alert-info" role="alert">
             Esta es la descripción de una alerta de información.
           </div>
 
@@ -51,7 +53,7 @@ const AlertDocs: React.FC = () => {
       content: (
         <section>
           <div
-            className="alert alert-primary alert-dismissible fade show"
+            className="alert alert-info alert-dismissible fade show"
             role="alert"
           >
             Esta es la descripción de una alerta de información.
@@ -112,7 +114,7 @@ const AlertDocs: React.FC = () => {
       content: (
         <section>
           <div
-            className="alert alert-primary alert-dismissible fade show"
+            className="alert alert-info alert-dismissible fade show"
             role="alert"
           >
             <strong>Este es un destacado de una alerta de información. </strong>
@@ -181,7 +183,7 @@ const AlertDocs: React.FC = () => {
       content: (
         <section>
           <div
-            className="alert alert-primary alert-dismissible fade show"
+            className="alert alert-info alert-dismissible fade show"
             role="alert"
           >
             <strong>Este es un destacado de una alerta de información. </strong>
@@ -268,7 +270,7 @@ const AlertDocs: React.FC = () => {
       content: (
         <section>
           <div
-            className="alert alert-primary alert-dismissible fade show"
+            className="alert alert-info alert-dismissible fade show"
             role="alert"
           >
             <strong>Este es un destacado de una alerta de información. </strong>
@@ -315,7 +317,7 @@ const AlertDocs: React.FC = () => {
       content: (
         <section>
           <div
-            className="alert alert-primary alert-dismissible fade show"
+            className="alert alert-info alert-dismissible fade show"
             role="alert"
           >
             <strong>Este es un destacado de una alerta de información. </strong>

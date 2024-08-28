@@ -1,140 +1,63 @@
-import CodeCopy from "@/components/CodeCopy";
-import BoxTemplate from "@/components/Template/Box";
-import Divisor from "@/components/Template/Divisor";
-import Flex from "@/components/Template/Flex";
-import HeadingTemplate from "@/components/Template/HeadingTemplate";
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
+
+import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
 import MainDescription from "@/components/Template/MainDescription";
-import SimpleText from "@/components/Template/SimpleText";
-import React from "react";
+
+import { CDN_CODE, NPM_CODE, PNPM_CODE, YARN_CODE } from './code-views';
 
 const InstallationModule: React.FC = () => {
-  // Contenido del módulo instalacion
+  const sections = [
+    {
+      id: "section-1",
+      title: "Instalación",
+      content: (
+        <MainDescription 
+          description="En esta sección, aprenderás cómo instalar y comenzar a utilizar la librería de estilos de componentes Obelisco V2 en tus proyectos. Siguiendo unos sencillos pasos, podrás integrar nuestros componentes estilizados en cualquier aplicación web, ya sea que trabajes con React, Angular, o cualquier otra tecnología." 
+        />
+      ),
+      h1: true,
+    },
+    {
+      id: "section-2",
+      title: "Instalación con npm",
+      description: "Para instalar la librería de componentes Obelisco V2 en tu proyecto, puedes utilizar cualquiera de los siguientes gestores de paquetes:",
+      content: (
+        <>
+          <h3>npm:</h3>
+          <SyntaxHighlighter language="bash" style={dracula}>
+            {NPM_CODE}
+          </SyntaxHighlighter>
 
-  const code = `
-  npm i @gcba/reactobelisco
-  
-`;
+          <br />
 
-  return (
-    <BoxTemplate>
-      <Flex>
-        <div className="col-12 col-lg-8">
-          <HeadingTemplate>
-            <h1>Installation</h1>
-          </HeadingTemplate>
+          <h3>yarn:</h3>
+          <SyntaxHighlighter language="bash" style={dracula}>
+            {YARN_CODE}
+          </SyntaxHighlighter>
+          
+          <br />
 
-          <MainDescription description="Explora esta sección para encontrar el comando de instalación de Obelisco v2 utilizando NPM. Se recomienda utilizar versiones superiores a la 16 para asegurar la compatibilidad y obtener lo mejor de nuestra librería de componentes." />
+          <h3>pnpm:</h3>
+          <SyntaxHighlighter language="bash" style={dracula}>
+            {PNPM_CODE}
+          </SyntaxHighlighter>
+        </>
+      ),
+    },
+    {
+      id: "section-3",
+      title: "Uso con CDN",
+      description: "Si prefieres no instalar nada localmente, puedes incluir los estilos directamente desde nuestra CDN:",
+      content: (
+        <SyntaxHighlighter language="html" style={dracula}>
+          {CDN_CODE}
+        </SyntaxHighlighter>
+      ),
+    },
+  ];
 
-          <Divisor />
-
-          <HeadingTemplate>
-            <h2>With NPM</h2>
-          </HeadingTemplate>
-
-          <SimpleText description="Haz clic en nuestro cuadro de código para copiar el comando y pégalo en tu consola. " />
-
-          <CodeCopy code={code} />
-
-          <SimpleText description="Así de sencillo es instalarlo y comenzar a aprovechar todas las funcionalidades de Obelisco v2." />
-
-          <SimpleText description="Esta biblioteca ha sido sometida a pruebas de compatibilidad y rendimiento en entornos que incluyen Next.js 12, Next.js 13 y Next.js 14. También ha sido evaluada en Vite, desde la versión 2.9 hasta la versión más reciente, la 5. Puedes encontrar detalles sobre su implementación en estas versiones visitando los siguientes enlaces." />
-
-          <Divisor />
-
-          <div className="card-deck max-cards-2 card-column">
-            <div className="card card-horizontal">
-              <i className="bx bxs-info-circle card-icon-left"></i>
-              <div className="card-body">
-                <h3 className="card-title">
-                  <a href="#" className="card-title-link">
-                    Título de la tarjeta con más de una línea
-                  </a>
-                </h3>
-                <p className="card-text">Descripción de la tarjeta</p>
-              </div>
-            </div>
-            <div className="card card-horizontal">
-              <i className="bx bxs-info-circle card-icon-left"></i>
-              <div className="card-body">
-                <h3 className="card-title">
-                  <a href="#" className="card-title-link">
-                    Título de la tarjeta con más de una línea
-                  </a>
-                </h3>
-                <p className="card-text">Descripción de la tarjeta</p>
-              </div>
-            </div>
-            <div className="card card-horizontal">
-              <i className="bx bxs-info-circle card-icon-left"></i>
-              <div className="card-body">
-                <h3 className="card-title">
-                  <a href="#" className="card-title-link">
-                    Título de la tarjeta con más de una línea
-                  </a>
-                </h3>
-                <p className="card-text">Descripción de la tarjeta</p>
-              </div>
-            </div>
-            <div className="card card-horizontal">
-              <i className="bx bxs-info-circle card-icon-left"></i>
-              <div className="card-body">
-                <h3 className="card-title">
-                  <a href="#" className="card-title-link">
-                    Título de la tarjeta con más de una línea
-                  </a>
-                </h3>
-                <p className="card-text">Descripción de la tarjeta</p>
-              </div>
-            </div>
-            <div className="card card-horizontal">
-              <i className="bx bxs-info-circle card-icon-left"></i>
-              <div className="card-body">
-                <h3 className="card-title">
-                  <a href="#" className="card-title-link">
-                    Título de la tarjeta con más de una línea
-                  </a>
-                </h3>
-                <p className="card-text">Descripción de la tarjeta</p>
-              </div>
-            </div>
-            <div className="card card-horizontal">
-              <i className="bx bxs-info-circle card-icon-left"></i>
-              <div className="card-body">
-                <h3 className="card-title">
-                  <a href="#" className="card-title-link">
-                    Título de la tarjeta con más de una línea
-                  </a>
-                </h3>
-                <p className="card-text">Descripción de la tarjeta</p>
-              </div>
-            </div>
-            <div className="card card-horizontal">
-              <i className="bx bxs-info-circle card-icon-left"></i>
-              <div className="card-body">
-                <h3 className="card-title">
-                  <a href="#" className="card-title-link">
-                    Título de la tarjeta con más de una línea
-                  </a>
-                </h3>
-                <p className="card-text">Descripción de la tarjeta</p>
-              </div>
-            </div>
-            <div className="card card-horizontal">
-              <i className="bx bxs-info-circle card-icon-left"></i>
-              <div className="card-body">
-                <h3 className="card-title">
-                  <a href="#" className="card-title-link">
-                    Título de la tarjeta con más de una línea
-                  </a>
-                </h3>
-                <p className="card-text">Descripción de la tarjeta</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Flex>
-    </BoxTemplate>
-  );
+  return <DocumentationTemplate sections={sections} />;
 };
 
 export default InstallationModule;

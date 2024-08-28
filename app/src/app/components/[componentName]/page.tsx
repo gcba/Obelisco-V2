@@ -1,42 +1,45 @@
-import { notFound } from "next/navigation";
+import AccessDocs from "@/documents/Access/AccessDocs";
 import AlertDocs from "@/documents/Alert/AlertDocs";
 import BadgeDocs from "@/documents/Badge/BadgeDocs";
 import BannerDocs from "@/documents/Banner/BannerDocs";
 import BlockDocs from "@/documents/Block/BlockDocs";
+import BreadcrumbDocs from '@/documents/Breadcrumb/BreadcrumbDocs';
 import ButtonDocs from "@/documents/Button/ButtonDocs";
+import CalendarDocs from "@/documents/Calendar/MapDocs";
 import CardDocs from "@/documents/Card/CardDocs";
 import CollapseDocs from "@/documents/Collapse/CollapseDocs";
 import ColorsDocs from "@/documents/Colors/ColorsDocs";
+import DropdownNavDocs from "@/documents/DropdownNav/DropdownNavDocs";
+import DropdownSelDocs from '@/documents/DropdownSel/DropdownSelDocs';
+import FormTextDocs from '@/documents/Form-text/FormText';
+import FormSelectionDocs from '@/documents/FormSelection/FormSelectionDocs';
+import GalleryDocs from "@/documents/Gallery/GalleryDocs";
+import GridDocs from "@/documents/Grid/GridDocs";
+import HighlightedDocs from "@/documents/Highlighted/HighlightedDocs";
 import LinkDocs from "@/documents/Link/LinkDocs";
+import MapDocs from "@/documents/Map/MapDocs";
 import ModalDocs from "@/documents/Modal/ModalDocs";
 import NavHorizontalDocs from "@/documents/NavHorizontal/NavHorizontalDocs";
 import NavVerticalDocs from "@/documents/NavVertical/NavVerticalDocs";
+import PaginationDocs from '@/documents/Pagination/PaginationDocs';
+import ProgressBarDocs from '@/documents/ProgressBar/ProgressBarDocs';
+import SpinnerDocs from "@/documents/Spinner/SpinnerDocs";
 import StatusMessageDocs from "@/documents/StatusMessage/StatusMessageDocs";
 import SwitchDocs from "@/documents/Switch/SwitchDocs";
+import TableDocs from "@/documents/Table/TableDocs";
 import TabsDocs from "@/documents/Tabs/TabsDocs";
 import TooltipDocs from "@/documents/Tooltip/TooltipDocs";
 import TypographyDocs from "@/documents/Typography/TypographyDocs";
-import DropdownNavDocs from "@/documents/DropdownNav/DropdownNavDocs";
-import GridDocs from "@/documents/Grid/GridDocs";
-import SpinnerDocs from "@/documents/Spinner/SpinnerDocs";
-import HighlightedDocs from "@/documents/Highlighted/HighlightedDocs";
-import BreadcrumbDocs from '@/documents/Breadcrumb/BreadcrumbDocs';
-import FormTextDocs from '@/documents/Form-text/FormText';
-import FormSelectionDocs from '@/documents/FormSelection/FormSelectionDocs';
-import DropdownSelDocs from '@/documents/DropdownSel/DropdownSelDocs';
-import ProgressBarDocs from '@/documents/ProgressBar/ProgressBarDocs';
-import MapDocs from "@/documents/Map/MapDocs";
-import GalleryDocs from "@/documents/Gallery/GalleryDocs";
-import PaginationDocs from '@/documents/Pagination/PaginationDocs';
-import CalendarDocs from "@/documents/Calendar/MapDocs";
-import TableDocs from "@/documents/Table/TableDocs";
+import { notFound } from "next/navigation";
 
 // davis: se mapean las url con componentes
 const componentMap: { [key: string]: React.ReactNode } = {
   alert: <AlertDocs />,
+  access: <AccessDocs />,
   badge: <BadgeDocs />,
   banner: <BannerDocs />,
   block: <BlockDocs />,
+  breadcrumb: <BreadcrumbDocs />,
   button: <ButtonDocs />,
   cards: <CardDocs />,
   collapse: <CollapseDocs />,
@@ -54,13 +57,12 @@ const componentMap: { [key: string]: React.ReactNode } = {
   'dropdown-sel': <DropdownSelDocs />,
   grid: <GridDocs />,
   spinner: <SpinnerDocs />,
-  breadcrumb: <BreadcrumbDocs />,
   'form-text': <FormTextDocs />,
   'form-selection': <FormSelectionDocs />,
-  'map': <MapDocs />,
-  'gallery': <GalleryDocs />,
-  'pagination': <PaginationDocs />,
-  'calendar': <CalendarDocs />,
+  map: <MapDocs />,
+  gallery: <GalleryDocs />,
+  pagination: <PaginationDocs />,
+  calendar: <CalendarDocs />,
   'progress-bar': <ProgressBarDocs />,
   highlighted: <HighlightedDocs />,
   table: <TableDocs />,

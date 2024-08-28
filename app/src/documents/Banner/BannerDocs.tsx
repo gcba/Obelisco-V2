@@ -8,7 +8,6 @@ const BannerDocs: React.FC = () => {
 
   const sections = [
     {
-      id: "section-1",
       title: "Banner",
       content: (
         <MainDescription description="Los banners muestran mensajes importantes y breves, a modo de aviso general, para informar a los usuarios sobre temas de diverso interés. Se muestran al ancho completo." />
@@ -16,7 +15,7 @@ const BannerDocs: React.FC = () => {
       h1: true,
     },
     {
-      id: "section-2",
+      id: "section-1",
       title: "Simple",
       content: (
         <>
@@ -43,7 +42,7 @@ const BannerDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-3",
+      id: "section-2",
       title: "Con botón",
       content: (
         <>
@@ -98,7 +97,7 @@ const BannerDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-4",
+      id: "section-3",
       title: "Con botones",
       content: (
         <>
@@ -167,7 +166,7 @@ const BannerDocs: React.FC = () => {
             </div>
           </div>
         </CodeBox>
-        <br /><br /><br /><br />
+        <br /><br />
         </>
       ),
     },

@@ -1,5 +1,6 @@
 export async function generateStaticParams() {
   const componentNames = [
+    "access",
     "alert",
     "badge",
     "banner",

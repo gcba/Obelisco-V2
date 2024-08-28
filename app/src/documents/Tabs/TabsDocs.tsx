@@ -22,7 +22,7 @@ const TabsDocs: React.FC = () => {
         <>
           <CodeBox codeHTML={TABS_SIMPLE}>
             <div className="col-12 col-lg-8 mx-auto">
-              <nav className="tabs-slider" aria-label="Navegación por pestañas">
+              <nav className="tabs-box" aria-label="Navegación por pestañas">
                 <ul className="nav nav-pills tabs" id="simple-myTab" role="tablist">
                   <li className="nav-item" role="presentation">
                     <button
@@ -123,7 +123,7 @@ const TabsDocs: React.FC = () => {
           <br />
           <CodeBox codeHTML={TABS_SIMPLE_ICON}>
             <div className="col-12 col-lg-8 mx-auto">
-              <nav className="tabs-slider" aria-label="Navegación por pestañas">
+              <nav className="tabs-box" aria-label="Navegación por pestañas">
                 <ul className="nav nav-pills tabs" id="icon-myTab" role="tablist">
                   <li className="nav-item" role="presentation">
                     <button
@@ -249,7 +249,7 @@ const TabsDocs: React.FC = () => {
       content: (
         <CodeBox codeHTML={TABS_FIXED_WIDTH}>
           <div className="container">
-            <nav className="tabs-slider" aria-label="Navegación por pestañas">
+            <nav className="tabs-box" aria-label="Navegación por pestañas">
               <ul className="nav nav-pills tabs fixedWidth" id="icon-myTab" role="tablist">
                 <li className="nav-item" role="presentation">
                   <button

@@ -18,10 +18,11 @@ const CardDocs: React.FC = () => {
       title: "Horizontal",
       content: (
         <>
-          <h2>Con ícono</h2>
+          <h3 className="mt-5" >Con ícono</h3>
+          
           <div className="card card-horizontal">
-            <i className="bx bxs-info-circle card-icon-left"></i>
-            <div className="card-body">
+          <i className="bx bxs-info-circle card-icon-left"></i>
+          <div className="card-body">
               <h5 className="card-title">
                 <a href="#" className="card-title-link">
                   Título de la tarjeta con más de una línea
@@ -31,14 +32,78 @@ const CardDocs: React.FC = () => {
             </div>
           </div>
 
-          <h3>Con imagen</h3>
-          <div className="card card-horizontal"></div>
+          <div className="card card-horizontal unbordered">
+          <i className="bx bxs-info-circle card-icon-left"></i>
+          <div className="card-body">
+              <h5 className="card-title">
+                <a href="#" className="card-title-link">
+                  Título de la tarjeta con más de una línea
+                </a>
+              </h5>
+              <p className="card-text">Descripción de la tarjeta</p>
+            </div>
+          </div>
 
-          <h3>Solo texto</h3>
-          <div className="card card-horizontal"></div>
+          <h3 className="mt-5" >Con imagen</h3>
+          <div className="card card-horizontal">
+          <img src="https://gcba.github.io/Obelisco/cards/img-left.jpg" className="card-img-left" alt="Img GCBA" />
+          <div className="card-body">
+              <h5 className="card-title">
+                <a href="#" className="card-title-link">
+                  Título de la tarjeta con más de una línea
+                </a>
+              </h5>
+              <p className="card-text">Descripción de la tarjeta</p>
+            </div>
+          </div>
 
-          <h3>Temática</h3>
-          <div className="card card-horizontal"></div>
+          <div className="card card-horizontal unbordered">
+          <img src="https://gcba.github.io/Obelisco/cards/img-left.jpg" className="card-img-left" alt="Img GCBA" />
+          <div className="card-body">
+              <h5 className="card-title">
+                <a href="#" className="card-title-link">
+                  Título de la tarjeta con más de una línea
+                </a>
+              </h5>
+              <p className="card-text">Descripción de la tarjeta</p>
+            </div>
+          </div>
+
+          <h3 className="mt-5" >Solo texto</h3>
+          <div className="card card-horizontal">
+          <div className="card-body">
+              <h5 className="card-title">
+                <a href="#" className="card-title-link">
+                  Título de la tarjeta con más de una línea
+                </a>
+              </h5>
+              <p className="card-text">Descripción de la tarjeta</p>
+            </div>
+          </div>
+
+          <div className="card card-horizontal unbordered">
+          <div className="card-body">
+              <h5 className="card-title">
+                <a href="#" className="card-title-link">
+                  Título de la tarjeta con más de una línea
+                </a>
+              </h5>
+              <p className="card-text">Descripción de la tarjeta</p>
+            </div>
+          </div>
+
+          <h3 className="mt-5" >Temática</h3>
+          <div className="card card-horizontal unbordered">
+            <img className="card-img-left" src="https://gcba.github.io/Obelisco/cards/home.svg" alt="Imagen Tematica" />
+          <div className="card-body">
+              <h5 className="card-title">
+                <a href="#" className="card-title-link">
+                  Título de la tarjeta con más de una línea
+                </a>
+              </h5>
+              <p className="card-text">Descripción de la tarjeta</p>
+            </div>
+          </div>
         </>
       ),
     },
@@ -47,18 +112,87 @@ const CardDocs: React.FC = () => {
       title: "Vertical",
       content: (
         <>
-          <h3>Con ícono</h3>
-          <p>ejemplo</p>
+        
+        <h3>Con ícono</h3>
+        <div className="card">
+        <i className="bx bxs-info-circle card-icon-left"></i>
+        <div className="card-body">
+            <h5 className="card-title">
+              <a href="#" className="card-title-link">
+                Título de la tarjeta
+              </a>
+            </h5>
+            <p className="card-text">Descripción de la tarjeta</p>
+          </div>
+        </div>
 
-          <h3>Con imagen</h3>
-          <p>ejemplo</p>
+        <h3 className="mt-5" >Con imagen</h3>
+        <div className="card">
+        <img className="card-img-top" src="https://gcba.github.io/Obelisco/cards/img-top.jpg" alt="Imagen Tarjeta Noticia"  />
+        <div className="card-body">
+            <h5 className="card-title">
+              <a href="#" className="card-title-link">
+                Título de la tarjeta
+              </a>
+            </h5>
+            <p className="card-text">Descripción de la tarjeta</p>
+          </div>
+        </div>
 
-          <h3>Noticia</h3>
-          <p>ejemplo</p>
+        <h3 className="mt-5" >Noticia</h3>
+        <div className="card">
+          <img className="card-img-top" src="https://gcba.github.io/Obelisco/cards/img-top.jpg" alt="Imagen Tarjeta Noticia"  />
+        <div className="card-body">
+        <div className="card-badges">
+            <span className="badge badge-secondary">etiqueta 1</span>
+            <span className="badge badge-secondary">etiqueta 2</span>
+          </div>
+            <h5 className="card-title">
+              <a href="#" className="card-title-link">
+                Título de la tarjeta
+              </a>
+            </h5>
+            <p className="card-text">Descripción de la tarjeta</p>
+            <div className="card-info">
+              <div className="pt-2">
+                <small>
+                  <span>Fecha de publicación</span>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
 
-          <h3>Agenda</h3>
-          <p>ejemplo</p>
-        </>
+        <h3 className="mt-5" >Agenda</h3>
+        <div className="card">
+        <img className="card-img-top" src="https://gcba.github.io/Obelisco/cards/img-top.jpg" alt="Imagen Tarjeta Noticia"  />
+        <div className="card-body">
+            <p className="card-headline">sobrelinea</p>
+            <h5 className="card-title">
+              <a href="#" className="card-title-link">
+                Título de la tarjeta
+              </a>
+            </h5>
+            <p className="card-text">Descripción de la tarjeta</p>
+            <div className="card-info">
+              <div className="pt-2">
+                <small>
+                <span className="material-symbols-rounded">
+                calendar_today
+                </span>
+                  Lun 01/1
+                </small>
+                <small>
+                <span className="material-symbols-rounded">
+                schedule
+                </span>
+                   17 | 18 | 19 hs
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
       ),
     },
     {

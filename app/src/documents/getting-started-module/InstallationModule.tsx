@@ -24,21 +24,21 @@ const InstallationModule: React.FC = () => {
       description: "Para instalar la librería de componentes Obelisco V2 en tu proyecto, puedes utilizar cualquiera de los siguientes gestores de paquetes:",
       content: (
         <>
-          <h3>npm:</h3>
+          <h3 className="headline-lg">npm:</h3>
           <SyntaxHighlighter language="bash" style={dracula}>
             {NPM_CODE}
           </SyntaxHighlighter>
 
           <br />
 
-          <h3>yarn:</h3>
+          <h3 className="headline-lg">yarn:</h3>
           <SyntaxHighlighter language="bash" style={dracula}>
             {YARN_CODE}
           </SyntaxHighlighter>
           
           <br />
 
-          <h3>pnpm:</h3>
+          <h3 className="headline-lg">pnpm:</h3>
           <SyntaxHighlighter language="bash" style={dracula}>
             {PNPM_CODE}
           </SyntaxHighlighter>

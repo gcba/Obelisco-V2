@@ -3,6 +3,7 @@
 import { useState } from "react";
 
 import CodeBox from "@/components/CodeBox";
+import CodeBox from "@/components/CodeBox";
 import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
 import MainDescription from "@/components/Template/MainDescription";
 
@@ -11,11 +12,10 @@ import { GalleryExample } from "./code-views";
 
 const GalleryGrid: React.FC<{ images: string[]; maxColumns: number }> = ({ images, maxColumns }) => (
   <>
-    <div className={`gallery-grid gallery-max-${maxColumns} mb-5`}>
+    <div className={`gallery-grid gallery-max-${maxColumns}`}>
       {images.map((src, index) => (
         <div className="gallery-grid-item" key={index}>
-          <img
-            src={src} alt={`Imagen ${index + 1}`} />
+          <img src={src} alt={`Imagen ${index + 1}`} />
         </div>
       ))}
     </div>
@@ -64,7 +64,6 @@ const GalleryDocs: React.FC = () => {
     <DocumentationTemplate
       sections={[
         {
-          id: "section-1",
           title: "Galería",
           content: (
             <MainDescription description="Descubre nuestra galería de imágenes. Navega a través de una cuadrícula de fotos interactivas y de una vista ampliada con nuestro carrusel." />
@@ -72,7 +71,7 @@ const GalleryDocs: React.FC = () => {
           h1: true,
         },
         {
-          id: "section-2",
+          id: "section-1",
           title: "Grillas",
           content: (
             <>
@@ -105,7 +104,7 @@ const GalleryDocs: React.FC = () => {
           ),
         },
         {
-          id: "section-3",
+          id: "section-2",
           title: "Interactiva",
           content: (
             <CodeBox codeHTML={GalleryExample}>
@@ -157,88 +156,88 @@ const GalleryDocs: React.FC = () => {
                       Cerrar ventana
                     </a>
 
-                    <div
-                      id="modalGalleryControls"
-                      className="carousel slide"
-                      data-bs-ride="carousel"
-                      data-bs-interval="false"
-                    >
-                      <div className="carousel-inner">
-                        <div className="carousel-item active" data-bs-interval="3000">
-                          <img
-                            src="https://gcba.github.io/Obelisco/gallery/1.jpg"
-                            className="d-block w-100"
-                            alt="Texto alternativo de la imagen"
-                          />
-                          <div className="carousel-caption">
-                            <div className="row mb-4">
-                              <div className="col">
-                                <span className="text-xs">Autor de la imagen.</span>
+                      <div
+                        id="modalGalleryControls"
+                        className="carousel slide"
+                        data-bs-ride="carousel"
+                        data-bs-interval="false"
+                      >
+                        <div className="carousel-inner">
+                          <div className="carousel-item active" data-bs-interval="3000">
+                            <img
+                              src="https://gcba.github.io/Obelisco/gallery/1.jpg"
+                              className="d-block w-100"
+                              alt="Texto alternativo de la imagen"
+                            />
+                            <div className="carousel-caption">
+                              <div className="row mb-4">
+                                <div className="col">
+                                  <span className="text-xs">Autor de la imagen.</span>
+                                </div>
+                                <div className="col text-end">
+                                  <span className="text-xs">Imagen 1/3</span>
+                                </div>
                               </div>
-                              <div className="col text-end">
-                                <span className="text-xs">Imagen 1/3</span>
-                              </div>
+                              <h5 className="h2">Título de la imagen 1.</h5>
+                              <p>
+                                Descripción o epígrafe de la imagen.
+                                <br />
+                                Recomendamos en este espacio no utilizar más de 2 líneas, para
+                                generar una lectura óptima.
+                              </p>
                             </div>
-                            <h5 className="h2">Título de la imagen 1.</h5>
-                            <p>
-                              Descripción o epígrafe de la imagen.
-                              <br />
-                              Recomendamos en este espacio no utilizar más de 2 líneas, para
-                              generar una lectura óptima.
-                            </p>
                           </div>
-                        </div>
-                        <div className="carousel-item" data-bs-interval="3000">
-                          <img
+                          <div className="carousel-item" data-bs-interval="3000">
+                            <img
 
-                            src="https://gcba.github.io/Obelisco/gallery/2.jpg"
-                            className="d-block w-100"
-                            alt="Texto alternativo de la imagen"
-                          />
-                          <div className="carousel-caption">
-                            <div className="row mb-4">
-                              <div className="col">
-                                <span className="text-xs">Autor de la imagen.</span>
+                              src="https://gcba.github.io/Obelisco/gallery/2.jpg"
+                              className="d-block w-100"
+                              alt="Texto alternativo de la imagen"
+                            />
+                            <div className="carousel-caption">
+                              <div className="row mb-4">
+                                <div className="col">
+                                  <span className="text-xs">Autor de la imagen.</span>
+                                </div>
+                                <div className="col text-end">
+                                  <span className="text-xs">Imagen 2/3</span>
+                                </div>
                               </div>
-                              <div className="col text-end">
-                                <span className="text-xs">Imagen 2/3</span>
-                              </div>
+                              <h5 className="h2">Título de la imagen 2.</h5>
+                              <p>
+                                Descripción o epígrafe de la imagen.
+                                <br />
+                                Recomendamos en este espacio no utilizar más de 2 líneas, para
+                                generar una lectura óptima.
+                              </p>
                             </div>
-                            <h5 className="h2">Título de la imagen 2.</h5>
-                            <p>
-                              Descripción o epígrafe de la imagen.
-                              <br />
-                              Recomendamos en este espacio no utilizar más de 2 líneas, para
-                              generar una lectura óptima.
-                            </p>
                           </div>
-                        </div>
-                        <div className="carousel-item" data-bs-interval="3000">
-                          <img
+                          <div className="carousel-item" data-bs-interval="3000">
+                            <img
 
-                            src="https://gcba.github.io/Obelisco/gallery/3.jpg"
-                            className="d-block w-100"
-                            alt="Texto alternativo de la imagen"
-                          />
-                          <div className="carousel-caption">
-                            <div className="row mb-4">
-                              <div className="col">
-                                <span className="text-xs">Autor de la imagen.</span>
+                              src="https://gcba.github.io/Obelisco/gallery/3.jpg"
+                              className="d-block w-100"
+                              alt="Texto alternativo de la imagen"
+                            />
+                            <div className="carousel-caption">
+                              <div className="row mb-4">
+                                <div className="col">
+                                  <span className="text-xs">Autor de la imagen.</span>
+                                </div>
+                                <div className="col text-end">
+                                  <span className="text-xs">Imagen 3/3</span>
+                                </div>
                               </div>
-                              <div className="col text-end">
-                                <span className="text-xs">Imagen 3/3</span>
-                              </div>
+                              <h5 className="h2">Título de la imagen 3.</h5>
+                              <p>
+                                Descripción o epígrafe de la imagen.
+                                <br />
+                                Recomendamos en este espacio no utilizar más de 2 líneas, para
+                                generar una lectura óptima.
+                              </p>
                             </div>
-                            <h5 className="h2">Título de la imagen 3.</h5>
-                            <p>
-                              Descripción o epígrafe de la imagen.
-                              <br />
-                              Recomendamos en este espacio no utilizar más de 2 líneas, para
-                              generar una lectura óptima.
-                            </p>
                           </div>
                         </div>
-                      </div>
 
                       <button
                         className="carousel-control-prev"

@@ -12,13 +12,12 @@ import {
 const ColorsDocs: React.FC = () => {
   const sections = [
     {
-      id: "section-1",
       title: "Paleta de colores",
       content: <MainDescription description="El color es una herramienta que transmite personalidad, establece un tono, llama la atención e indica importancia " />,
       h1: true,
     },
     {
-      id: "section-2",
+      id: "section-1",
       title: "Theme-colors",
       content: (
         <>
@@ -59,8 +58,8 @@ const ColorsDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-3",
-      title: "Colores pasteles",
+      id: "section-2",
+      title: "Detalles cromáticos",
       content: (
         <>
           <CodeBox codeHTML={BG_THEME_COLORS_PASTEL}>
@@ -100,7 +99,7 @@ const ColorsDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-          <br /><br /><br /><br />
+          <br /><br />
         </>
       ),
     },

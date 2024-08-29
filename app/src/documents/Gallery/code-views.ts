@@ -1,4 +1,375 @@
-export const GalleryExample = `//GRID
+export const GALLERY_GRID_1 = `
+  <div className="gallery-grid gallery-max-1">
+
+    <a
+      href="gallery/1.jpg"
+      className="gallery-grid-item"
+      data-bs-toggle="modal"
+      data-bs-target="#modalGallery"
+    >
+      <img 
+        src="https://gcba.github.io/Obelisco/gallery/1.jpg" 
+        alt="Texto alternativo de la imagen"
+      />
+    </a>
+
+  </div>
+`;
+export const GALLERY_GRID_2 = `
+  <div className="gallery-grid gallery-max-2">
+
+    <a
+      href="gallery/1.jpg"
+      className="gallery-grid-item"
+      data-bs-toggle="modal"
+      data-bs-target="#modalGallery"
+    >
+      <img 
+        src="https://gcba.github.io/Obelisco/gallery/1.jpg" 
+        alt="Texto alternativo de la imagen"
+      />
+    </a>
+
+    <a
+      href="gallery/2.jpg"
+      className="gallery-grid-item"
+      data-bs-toggle="modal"
+      data-bs-target="#modalGallery"
+    >
+      <img 
+        src="https://gcba.github.io/Obelisco/gallery/2.jpg" 
+        alt="Texto alternativo de la imagen"
+      />
+    </a>
+
+  </div>
+`;
+export const GALLERY_GRID_3 = `
+  <div className="gallery-grid gallery-max-3">
+    
+    <a
+      href="gallery/1.jpg"
+      className="gallery-grid-item"
+      data-bs-toggle="modal"
+      data-bs-target="#modalGallery"
+    >
+      <img 
+        src="https://gcba.github.io/Obelisco/gallery/1.jpg" 
+        alt="Texto alternativo de la imagen"
+      />
+    </a>
+    
+    <a
+      href="gallery/2.jpg"
+      className="gallery-grid-item"
+      data-bs-toggle="modal"
+      data-bs-target="#modalGallery"
+    >
+      <img 
+        src="https://gcba.github.io/Obelisco/gallery/2.jpg" 
+        alt="Texto alternativo de la imagen"
+      />
+    </a>
+    
+    <a
+      href="gallery/3.jpg"
+      className="gallery-grid-item"
+      data-bs-toggle="modal"
+      data-bs-target="#modalGallery"
+    >
+      <img 
+        src="https://gcba.github.io/Obelisco/gallery/3.jpg" 
+        alt="Texto alternativo de la imagen"
+      />
+    </a>
+    
+  </div>
+`;
+export const GALLERY_GRID_4 = `
+  <div className="gallery-grid gallery-max-4">
+    
+    <a
+      href="gallery/1.jpg"
+      className="gallery-grid-item"
+      data-bs-toggle="modal"
+      data-bs-target="#modalGallery"
+    >
+      <img 
+        src="https://gcba.github.io/Obelisco/gallery/1.jpg" 
+        alt="Texto alternativo de la imagen"
+      />
+    </a>
+    
+    <a
+      href="gallery/2.jpg"
+      className="gallery-grid-item"
+      data-bs-toggle="modal"
+      data-bs-target="#modalGallery"
+    >
+      <img 
+        src="https://gcba.github.io/Obelisco/gallery/2.jpg" 
+        alt="Texto alternativo de la imagen"
+      />
+    </a>
+    
+    <a
+      href="gallery/3.jpg"
+      className="gallery-grid-item"
+      data-bs-toggle="modal"
+      data-bs-target="#modalGallery"
+    >
+      <img 
+        src="https://gcba.github.io/Obelisco/gallery/3.jpg" 
+        alt="Texto alternativo de la imagen"
+      />
+    </a>
+    
+    <a
+      href="gallery/4.jpg"
+      className="gallery-grid-item"
+      data-bs-toggle="modal"
+      data-bs-target="#modalGallery"
+    >
+      <img 
+        src="https://gcba.github.io/Obelisco/gallery/4.jpg" 
+        alt="Texto alternativo de la imagen"
+      />
+    </a>
+    
+  </div>
+`;
+export const GALLERY_GRID_5 = `
+  <div className="gallery-grid gallery-max-5">
+    
+    <a
+      href="gallery/1.jpg"
+      className="gallery-grid-item"
+      data-bs-toggle="modal"
+      data-bs-target="#modalGallery"
+    >
+      <img 
+        src="https://gcba.github.io/Obelisco/gallery/1.jpg" 
+        alt="Texto alternativo de la imagen"
+      />
+    </a>
+    
+    <a
+      href="gallery/2.jpg"
+      className="gallery-grid-item"
+      data-bs-toggle="modal"
+      data-bs-target="#modalGallery"
+    >
+      <img 
+        src="https://gcba.github.io/Obelisco/gallery/2.jpg" 
+        alt="Texto alternativo de la imagen"
+      />
+    </a>
+    
+    <a
+      href="gallery/3.jpg"
+      className="gallery-grid-item"
+      data-bs-toggle="modal"
+      data-bs-target="#modalGallery"
+    >
+      <img 
+        src="https://gcba.github.io/Obelisco/gallery/3.jpg" 
+        alt="Texto alternativo de la imagen"
+      />
+    </a>
+    
+    <a
+      href="gallery/4.jpg"
+      className="gallery-grid-item"
+      data-bs-toggle="modal"
+      data-bs-target="#modalGallery"
+    >
+      <img 
+        src="https://gcba.github.io/Obelisco/gallery/4.jpg" 
+        alt="Texto alternativo de la imagen"
+      />
+    </a>
+    
+    <a
+      href="gallery/5.jpg"
+      className="gallery-grid-item"
+      data-bs-toggle="modal"
+      data-bs-target="#modalGallery"
+    >
+      <img 
+        src="https://gcba.github.io/Obelisco/gallery/5.jpg" 
+        alt="Texto alternativo de la imagen"
+      />
+    </a>
+    
+  </div>
+`;
+export const GALLERY_GRID_6 = `
+  <div className="gallery-grid gallery-max-6">
+    
+    <a
+      href="gallery/1.jpg"
+      className="gallery-grid-item"
+      data-bs-toggle="modal"
+      data-bs-target="#modalGallery"
+    >
+      <img 
+        src="https://gcba.github.io/Obelisco/gallery/1.jpg" 
+        alt="Texto alternativo de la imagen"
+      />
+    </a>
+    
+    <a
+      href="gallery/2.jpg"
+      className="gallery-grid-item"
+      data-bs-toggle="modal"
+      data-bs-target="#modalGallery"
+    >
+      <img 
+        src="https://gcba.github.io/Obelisco/gallery/2.jpg" 
+        alt="Texto alternativo de la imagen"
+      />
+    </a>
+    
+    <a
+      href="gallery/3.jpg"
+      className="gallery-grid-item"
+      data-bs-toggle="modal"
+      data-bs-target="#modalGallery"
+    >
+      <img 
+        src="https://gcba.github.io/Obelisco/gallery/3.jpg" 
+        alt="Texto alternativo de la imagen"
+      />
+    </a>
+    
+    <a
+      href="gallery/4.jpg"
+      className="gallery-grid-item"
+      data-bs-toggle="modal"
+      data-bs-target="#modalGallery"
+    >
+      <img 
+        src="https://gcba.github.io/Obelisco/gallery/4.jpg" 
+        alt="Texto alternativo de la imagen"
+      />
+    </a>
+    
+    <a
+      href="gallery/5.jpg"
+      className="gallery-grid-item"
+      data-bs-toggle="modal"
+      data-bs-target="#modalGallery"
+    >
+      <img 
+        src="https://gcba.github.io/Obelisco/gallery/5.jpg" 
+        alt="Texto alternativo de la imagen"
+      />
+    </a>
+    
+    <a
+      href="gallery/6.jpg"
+      className="gallery-grid-item"
+      data-bs-toggle="modal"
+      data-bs-target="#modalGallery"
+    >
+      <img 
+        src="https://gcba.github.io/Obelisco/gallery/6.jpg" 
+        alt="Texto alternativo de la imagen"
+      />
+    </a>
+    
+  </div>
+`;
+export const GALLERY_GRID_7 = `
+  <div className="gallery-grid gallery-max-7">
+    
+    <a
+      href="gallery/1.jpg"
+      className="gallery-grid-item"
+      data-bs-toggle="modal"
+      data-bs-target="#modalGallery"
+    >
+      <img 
+        src="https://gcba.github.io/Obelisco/gallery/1.jpg" 
+        alt="Texto alternativo de la imagen"
+      />
+    </a>
+    
+    <a
+      href="gallery/2.jpg"
+      className="gallery-grid-item"
+      data-bs-toggle="modal"
+      data-bs-target="#modalGallery"
+    >
+      <img 
+        src="https://gcba.github.io/Obelisco/gallery/2.jpg" 
+        alt="Texto alternativo de la imagen"
+      />
+    </a>
+    
+    <a
+      href="gallery/3.jpg"
+      className="gallery-grid-item"
+      data-bs-toggle="modal"
+      data-bs-target="#modalGallery"
+    >
+      <img 
+        src="https://gcba.github.io/Obelisco/gallery/3.jpg" 
+        alt="Texto alternativo de la imagen"
+      />
+    </a>
+    
+    <a
+      href="gallery/4.jpg"
+      className="gallery-grid-item"
+      data-bs-toggle="modal"
+      data-bs-target="#modalGallery"
+    >
+      <img 
+        src="https://gcba.github.io/Obelisco/gallery/4.jpg" 
+        alt="Texto alternativo de la imagen"
+      />
+    </a>
+    
+    <a
+      href="gallery/5.jpg"
+      className="gallery-grid-item"
+      data-bs-toggle="modal"
+      data-bs-target="#modalGallery"
+    >
+      <img 
+        src="https://gcba.github.io/Obelisco/gallery/5.jpg" 
+        alt="Texto alternativo de la imagen"
+      />
+    </a>
+    
+    <a
+      href="gallery/6.jpg"
+      className="gallery-grid-item"
+      data-bs-toggle="modal"
+      data-bs-target="#modalGallery"
+    >
+      <img 
+        src="https://gcba.github.io/Obelisco/gallery/6.jpg" 
+        alt="Texto alternativo de la imagen"
+      />
+    </a>
+    
+    <a
+      href="gallery/7.jpg"
+      className="gallery-grid-item"
+      data-bs-toggle="modal"
+      data-bs-target="#modalGallery"
+    >
+      <img 
+        src="https://gcba.github.io/Obelisco/gallery/7.jpg" 
+        alt="Texto alternativo de la imagen"
+      />
+    </a>
+    
+  </div>
+`;
+export const GALLERY_INTERACTIVE = `//GRID
 <div class="gallery-grid gallery-max-3">
   <a
     href="gallery/1.jpg"

@@ -13,7 +13,6 @@ import {
 const GridDocs: React.FC = () => {
   const sections = [
     {
-      id: 'section-1',
       title: 'Grilla',
       content: (
         <>
@@ -23,7 +22,7 @@ const GridDocs: React.FC = () => {
       h1: true,
     },
     {
-      id: 'section-2',
+      id: 'section-1',
       title: 'Layouts',
       content: (
         <>
@@ -48,7 +47,7 @@ const GridDocs: React.FC = () => {
       h1: false,
     },
     {
-      id: 'section-3',
+      id: 'section-2',
       title: 'Disposiciones',
       content: (
         <>
@@ -131,7 +130,7 @@ const GridDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-          <br /><br /><br /><br />
+          <br /><br />
         </>
       ),
       h1: false,

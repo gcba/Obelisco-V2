@@ -1,4 +1,5 @@
 import CodeBox from "@/components/CodeBox";
+import CodeBox from "@/components/CodeBox";
 import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
 import MainDescription from "@/components/Template/MainDescription";
 
@@ -8,15 +9,14 @@ import { BadgeColors, BadgeTypes } from "./code-views";
 const BadgeDocs: React.FC = () => {
   const sections = [
     {
-      id: "section-1",
-      title: "Etiqueta",
+      title: "Etiquetas",
       content: (
-        <MainDescription description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the." />
+        <MainDescription description="Las etiquetas se utilizan para identificar y categorizar la información dentro de una página proporcionando más detalles a los usuarios sobre el contenido que necesitan." />
       ),
       h1: true,
     },
     {
-      id: "section-2",
+      id: "section-1",
       title: "Colores",
       content: (
         <CodeBox codeHTML={BadgeColors}>
@@ -35,7 +35,7 @@ const BadgeDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-3",
+      id: "section-2",
       title: "Enlace",
       content: (
         <CodeBox codeHTML={BadgeTypes}>

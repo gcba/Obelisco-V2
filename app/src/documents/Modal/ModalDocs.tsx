@@ -7,7 +7,6 @@ import { MODAL_CONFIRM, MODAL_DANGER, MODAL_RECOGNITION } from "./code-views";
 const ModalDocs: React.FC = () => {
   const sections = [
     {
-      id: "section-1",
       title: "Modal",
       h1: true,
       content: (
@@ -16,7 +15,7 @@ const ModalDocs: React.FC = () => {
     },
 
     {
-      id: "section-2",
+      id: "section-1",
       title: "Tipos",
       content: (
         <>

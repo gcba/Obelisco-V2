@@ -2,11 +2,10 @@ import CodeBox from '@/components/CodeBox';
 import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
 import MainDescription from '@/components/Template/MainDescription';
 
-import { SMType1, SMType2, SMType3, SMType4, SMType5 } from "./code-views";
+import { SM_INFO, SM_SUCCESS, SM_WARNING, SM_DANGER, SM_INSTITUTIONAL } from "./code-views";
 
 const sections = [
   {
-    id: 'section-1',
     title: 'Mensaje de estado',
     content: (
       <MainDescription description="Los mensajes de estado son comunicaciones que ayudan a las personas usuarias a tomar decisiones premeditadas. Informan que algo ha ocurrido o va a ocurrir y tal vez requieran de su acción. También, sirven para reducir la incertidumbre y evitar que los usuarios cometan errores." />
@@ -14,7 +13,7 @@ const sections = [
     h1: true,
   },
   {
-    id: 'section-2',
+    id: 'section-1',
     title: 'Información',
     content: (
       <CodeBox codeHTML={SMType1}>
@@ -39,7 +38,7 @@ const sections = [
     ),
   },
   {
-    id: 'section-3',
+    id: 'section-2',
     title: 'Éxito',
     content: (
       <CodeBox codeHTML={SMType2}>
@@ -70,7 +69,7 @@ const sections = [
     ),
   },
   {
-    id: 'section-4',
+    id: 'section-3',
     title: 'Advertencia',
     content: (
       <CodeBox codeHTML={SMType3}>
@@ -107,7 +106,7 @@ const sections = [
     ),
   },
   {
-    id: 'section-5',
+    id: 'section-4',
     title: 'Error',
     content: (
       <CodeBox codeHTML={SMType4}>
@@ -144,7 +143,7 @@ const sections = [
     ),
   },
   {
-    id: 'section-6',
+    id: 'section-5',
     title: 'Institucional',
     content: (
       <CodeBox codeHTML={SMType5}>

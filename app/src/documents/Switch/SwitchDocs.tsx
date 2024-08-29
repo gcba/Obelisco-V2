@@ -2,21 +2,20 @@ import CodeBox from "@/components/CodeBox";
 import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
 import MainDescription from "@/components/Template/MainDescription";
 
-import { SWITCH_DARK, SWITCH_DEFAULT, SWITCH_DISABLED, SWITCH_SIZES, SWITCH_WITHOUT_LABEL } from "./code-views";
+import { SWITCH_DARK, SWITCH_DEFAULT, SWITCH_DISABLED, SWITCH_SIZES, SWITCH_SIZES_SM, SWITCH_WITHOUT_LABEL } from "./code-views";
 
 const SwitchDocs: React.FC = () => {
 
   const sections = [
     {
-      id: "section-1",
       title: "Switch",
       h1: true,
       content: (
-        <MainDescription description="Los interruptores permiten a los usuarios alternar entre dos estados, como encendido y apagado. Son útiles para configuraciones rápidas y fáciles de usar." />
+        <MainDescription description="Los switchs permiten que las personas usuarias alternen entre dos estados posibles, como “prendido” y “apagado”." />
       )
     },
     {
-      id: "section-2",
+      id: "section-1",
       title: "Tipos",
       content: (
         <>
@@ -57,7 +56,7 @@ const SwitchDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-3",
+      id: "section-2",
       title: "Sin label",
       content: (
         <>
@@ -97,7 +96,7 @@ const SwitchDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-4",
+      id: "section-3",
       title: "Tamaños",
       content: (
         <>
@@ -117,6 +116,11 @@ const SwitchDocs: React.FC = () => {
                   <span className="switch-label off">Apagado</span>
                 </label>
               </div>
+            </div>
+          </CodeBox>
+          <br />
+          <CodeBox codeHTML={SWITCH_SIZES_SM}>
+            <div className="container">
               <div className="row">
                 <label className="switch switch-sm" htmlFor="switch-small-4-1">
                   <input type="checkbox" id="switch-small-4-1" />
@@ -137,7 +141,7 @@ const SwitchDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-5",
+      id: "section-4",
       title: "Deshabilitado",
       content: (
         <>
@@ -181,7 +185,7 @@ const SwitchDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-          <br /><br /><br /><br />
+          <br /><br />
         </>
       ),
     }

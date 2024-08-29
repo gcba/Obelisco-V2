@@ -7,16 +7,14 @@ import { TOOLTIP_BUTTONS, TOOLTIP_ICONS } from "./code-views";
 const TooltipDocs: React.FC = () => {
   const sections = [
     {
-      id: "section-1",
       title: "Tooltip",
       h1: true,
       content: (
-        <MainDescription description="Pequeña ventana emergente que proporciona información contextual
-          adicional sobre un elemento al pasar el cursor sobre él." />
+        <MainDescription description="Los tooltip muestran ayuda contextual o información sobre componentes específicos cuando un usuario se desplaza o se enfoca en ellos." />
       ),
     },
     {
-      id: "section-2",
+      id: "section-1",
       title: "Con botones",
       content: (
         <CodeBox codeHTML={TOOLTIP_BUTTONS}>
@@ -218,7 +216,7 @@ const TooltipDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-3",
+      id: "section-2",
       title: "Con iconos",
       content: (
         <CodeBox codeHTML={TOOLTIP_ICONS}>

@@ -8,16 +8,14 @@ const NavVerticalDocs: React.FC = () => {
 
   const sections = [
     {
-      id: 'section-1',
       title: 'Navegación Vertical',
       h1: true,
       content: (
-        <MainDescription description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the." />
-      ),
-      description: undefined
+        <MainDescription description="La navegación vertical debe usarse cuando el espacio horizontal es más amplio y cuando la lista de secciones es mayor de lo que se puede presentar al usuario en un formato horizontal. También se pueden usar como anclas dentro del contenido en una sola página." />
+      )
     },
     {
-      id: 'section-2',
+      id: 'section-1',
       title: 'Simple',
       content: (
         <>
@@ -52,7 +50,7 @@ const NavVerticalDocs: React.FC = () => {
       )
     },
     {
-      id: 'section-3',
+      id: 'section-2',
       title: 'Simple con icono',
       content: (
         <>
@@ -105,7 +103,7 @@ const NavVerticalDocs: React.FC = () => {
       )
     },
     {
-      id: 'section-4',
+      id: 'section-3',
       title: 'Dos niveles',
       content: (
         <>
@@ -226,7 +224,7 @@ const NavVerticalDocs: React.FC = () => {
       )
     },
     {
-      id: 'section-5',
+      id: 'section-4',
       title: 'Tres niveles',
       content: (
         <>
@@ -363,7 +361,7 @@ const NavVerticalDocs: React.FC = () => {
               </nav>
             </div>
           </CodeBox>
-          <br /><br /><br /><br />
+          <br /><br />
         </>
       )
     }

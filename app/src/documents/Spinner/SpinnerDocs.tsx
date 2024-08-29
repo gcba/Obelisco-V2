@@ -11,7 +11,6 @@ import { SPINNER_BLOCK, SPINNER_SIZES, SPINNER_TYPES } from "./code-views";
 const SpinnerDocs: React.FC = () => {
   const sections = [
     {
-      id: "section-1",
       h1: true,
       title: "Spinner",
       content: (
@@ -19,63 +18,59 @@ const SpinnerDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-2",
+      id: "section-1",
       title: "Tipos",
       content: (
-        <>
-          <CodeBox codeHTML={SPINNER_TYPES}>
-            <div className="d-flex gap-3 align-items-center justify-content-center">
-              <div className="spinner-border text-primary" role="status">
-                <span className="sr-only">Cargando...</span>
-              </div>
-              <div className="spinner-border text-secondary" role="status">
-                <span className="sr-only">Cargando...</span>
-              </div>
-              <div className="spinner-border text-success" role="status">
-                <span className="sr-only">Cargando...</span>
-              </div>
-              <div className="spinner-border text-danger" role="status">
-                <span className="sr-only">Cargando...</span>
-              </div>
-              <div className="spinner-border text-info" role="status">
-                <span className="sr-only">Cargando...</span>
-              </div>
-              <div className="spinner-border text-light" role="status">
-                <span className="sr-only">Cargando...</span>
-              </div>
-              <div className="spinner-border text-dark" role="status">
-                <span className="sr-only">Cargando...</span>
-              </div>
+        <CodeBox codeHTML={SPINNER_TYPES}>
+          <div className="d-flex gap-3 align-items-center justify-content-center">
+            <div className="spinner-border text-primary" role="status">
+              <span className="sr-only">Cargando...</span>
             </div>
-          </CodeBox>
-        </>
+            <div className="spinner-border text-secondary" role="status">
+              <span className="sr-only">Cargando...</span>
+            </div>
+            <div className="spinner-border text-success" role="status">
+              <span className="sr-only">Cargando...</span>
+            </div>
+            <div className="spinner-border text-danger" role="status">
+              <span className="sr-only">Cargando...</span>
+            </div>
+            <div className="spinner-border text-info" role="status">
+              <span className="sr-only">Cargando...</span>
+            </div>
+            <div className="spinner-border text-light" role="status">
+              <span className="sr-only">Cargando...</span>
+            </div>
+            <div className="spinner-border text-dark" role="status">
+              <span className="sr-only">Cargando...</span>
+            </div>
+          </div>
+        </CodeBox>
       ),
     },
     {
       id: "section-2",
       title: "Tamaños",
       content: (
-        <>
-          <CodeBox codeHTML={SPINNER_SIZES}>
-            <div className="d-flex gap-4 align-items-center justify-content-center">
-              <div
-                className="spinner-border text-primary spinner-border-sm"
-                role="status"
-              >
-                <span className="sr-only">Cargando...</span>
-              </div>
-              <div className="spinner-border text-primary" role="status">
-                <span className="sr-only">Cargando...</span>
-              </div>
-              <div
-                className="spinner-border text-primary spinner-border-lg"
-                role="status"
-              >
-                <span className="sr-only">Cargando...</span>
-              </div>
+        <CodeBox codeHTML={SPINNER_SIZES}>
+          <div className="d-flex gap-4 align-items-center justify-content-center">
+            <div
+              className="spinner-border text-primary spinner-border-sm"
+              role="status"
+            >
+              <span className="sr-only">Cargando...</span>
             </div>
-          </CodeBox>
-        </>
+            <div className="spinner-border text-primary" role="status">
+              <span className="sr-only">Cargando...</span>
+            </div>
+            <div
+              className="spinner-border text-primary spinner-border-lg"
+              role="status"
+            >
+              <span className="sr-only">Cargando...</span>
+            </div>
+          </div>
+        </CodeBox>
       ),
     },
     {
@@ -90,7 +85,7 @@ const SpinnerDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-          <br /><br /><br /><br />
+          <br /><br />
         </>
       ),
     },

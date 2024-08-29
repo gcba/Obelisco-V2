@@ -17,4 +17,5 @@ export * from "./Switch/SwitchDocs";
 export * from "./Tooltip/TooltipDocs";
 export * from "./Badge/BadgeDocs";
 export * from "./StatusMessage/StatusMessageDocs";
+export * from "./Header/HeaderDocs";
 export * from "./Home/homeDocs"

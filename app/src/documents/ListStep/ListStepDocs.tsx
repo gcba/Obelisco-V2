@@ -2,22 +2,22 @@ import CodeBox from '@/components/CodeBox';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
-import { FOOTER } from './code-views';
+import { LIST_STEP } from './code-views';
 
-const FooterDocs: React.FC = () => {
+const ListStepDocs: React.FC = () => {
   const sections = [
     {
-      title: 'Footer (pie de página)',
+      title: 'Lista de pasos',
       h1: true,
       content: (
-        <MainDescription description="El pie de página (o footer en Inglés) se sitúa en la parte inferior de todos los activos digitales de Gobierno. Contiene información institucional o de acceso rápido que permite a los usuarios encontrar de forma sencilla la información que necesitan." />
+        <MainDescription description="Las listas se utilizan para agrupar una serie de elementos relacionados. Para listas que presentan un orden secuencial de pasos, utilizamos la Lista de pasos." />
       ),
     },
     {
       id: 'section-1',
-      title: 'Completo',
+      title: 'Tamaños',
       content: (
-        <CodeBox codeHTML={FOOTER}>
+        <CodeBox codeHTML={LIST_STEP}>
           <div className="container">
             lorem
           </div>
@@ -33,4 +33,4 @@ const FooterDocs: React.FC = () => {
   );
 };
 
-export default FooterDocs;
+export default ListStepDocs;

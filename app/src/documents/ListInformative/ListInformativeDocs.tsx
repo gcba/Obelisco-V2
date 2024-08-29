@@ -2,22 +2,22 @@ import CodeBox from '@/components/CodeBox';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
-import { FOOTER } from './code-views';
+import { LIST_INFORMATIVE } from './code-views';
 
-const FooterDocs: React.FC = () => {
+const ListInformativeDocs: React.FC = () => {
   const sections = [
     {
-      title: 'Footer (pie de página)',
+      title: 'Lista informativa',
       h1: true,
       content: (
-        <MainDescription description="El pie de página (o footer en Inglés) se sitúa en la parte inferior de todos los activos digitales de Gobierno. Contiene información institucional o de acceso rápido que permite a los usuarios encontrar de forma sencilla la información que necesitan." />
+        <MainDescription description="Las listas informativas organizan piezas simples de información en forma vertical. Se utilizan cuando sus elementos no transmiten un orden secuencial específico." />
       ),
     },
     {
       id: 'section-1',
-      title: 'Completo',
+      title: 'Con viñeta',
       content: (
-        <CodeBox codeHTML={FOOTER}>
+        <CodeBox codeHTML={LIST_INFORMATIVE}>
           <div className="container">
             lorem
           </div>
@@ -33,4 +33,4 @@ const FooterDocs: React.FC = () => {
   );
 };
 
-export default FooterDocs;
+export default ListInformativeDocs;

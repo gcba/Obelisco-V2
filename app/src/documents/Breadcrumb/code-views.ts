@@ -1,4 +1,4 @@
-export const EGcodeSimpleBreadcrumb =
+export const BREADCRUMB =
   `
     <nav aria-label="Navegación secundaria">
       <ol class="breadcrumb">

@@ -40,10 +40,10 @@ export default function HeaderMobile() {
         size={isMobile ? 250 : 300}
       >
         <div className="px-4 pb-5">
-          <h3 className="headline-lg fw-bold">Secciones</h3>
+          <p className="headline-lg fw-bold">Secciones</p>
           <hr className="my-4" />
           <NavLayout items={gettingPages} />
-          <h3 className="headline-lg fw-bold mt-4">Componentes</h3>
+          <p className="headline-lg fw-bold mt-4">Componentes</p>
           <hr className="my-4" />
           <NavLayout items={componentsPages} />
         </div>

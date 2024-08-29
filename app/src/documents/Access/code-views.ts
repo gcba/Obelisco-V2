@@ -1,5 +1,7 @@
+
 // Simple
-export const EGcodeSimpleAccess = `
+export const SIMPLE_ACCESS =
+  `
     <div class="list-group">
 
       <a href="#" class="list-group-item item-sm">
@@ -23,7 +25,8 @@ export const EGcodeSimpleAccess = `
 `;
 
 // Con descripcion
-export const EGcodeWithDescriptionAccess = `
+export const WITH_DESCRIPTION_ACCESS =
+  `
   <div className="list-group">
 
     <a href="#" className="list-group-item item-sm">
@@ -59,7 +62,8 @@ export const EGcodeWithDescriptionAccess = `
 `;
 
 // Con icono
-export const EGcodeWithIconAccess = `
+export const WITH_ICON_ACCESS =
+  `
   <div className="list-group">
 
     <a href="#" className="list-group-item item-sm">
@@ -99,23 +103,22 @@ export const EGcodeWithIconAccess = `
 `;
 
 // Tamaños
-export const EGcodeSizesAccess = `
+export const SIZES_ACCESS =
+  `
   <div className="list-group">
-
     <a href="#" className="list-group-item ">
       <span className="access-title">Acceso</span>
     </a>
-    
     <a href="#" className="list-group-item item-sm hover">
       <span className="access-title">Acceso</span>
     </a>
-
   </div>
 
 `;
 
 // Lista ancho completo | 4 columnas
-export const EGcodeListWidthComplete4ColumnsAccess = `
+export const FOUR_COLUMNS_ACCESS =
+  `
   <div className="access-items-4">
     <div className="col">
       <a href="#" className="list-group-item item-sm">
@@ -147,7 +150,8 @@ export const EGcodeListWidthComplete4ColumnsAccess = `
 `;
 
 // Lista ancho completo | 3 columnas
-export const EGcodeListWidthComplete3ColumnsAccess = `
+export const THREE_COLUMNS_ACCESS =
+  `
 <div className="access-items-3">
   <div className="col">
     <a href="#" className="list-group-item item-sm">
@@ -179,11 +183,11 @@ export const EGcodeListWidthComplete3ColumnsAccess = `
 `;
 
 // Lista ancho completo | 2 columnas
-export const EGcodeListWidthComplete1ColumnWithAside = `
+export const ONE_COLUMN_ACCESS =
+  `
   <div className="container">
       <div className="row">
-                
-        {/* Columna para el div de accesos */}
+        {/* Columna para accesos */}
         <div className="col-12 col-lg-4">
           <div className="max-items-1">
             <div className="col">
@@ -226,3 +230,4 @@ export const EGcodeListWidthComplete1ColumnWithAside = `
   </div>
 
 `;
+

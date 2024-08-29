@@ -1,31 +1,34 @@
+import CodeBox from "@/components/CodeBox";
 import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
-import CodeCopy from "@/components/CodeBox";
-import {
-  EGcodeSimpleAlert,
-  EGcodeWithClose,
-  EGcodeHighlighted,
-  EGcodeHyperlink,
-  EGcodeListLink,
-  EGcodeListLinkWithDescription,
-} from "./code-views";
 import MainDescription from "@/components/Template/MainDescription";
+
+import {
+  SIMPLE_ALERT,
+  WITH_CLOSE_ALERT,
+  HIGHLIGTHED_ALERT,
+  HYPERLINK_ALERT,
+  LIST_LINK_ALERT,
+  WITH_DESCRIPTION_ALERT,
+} from "./code-views";
+
 
 const AlertDocs: React.FC = () => {
   const sections = [
     {
-      id: "section-1",
+      id: "",
       title: "Introducción",
       content: (
         <MainDescription description="Las alertas son avisos que mantienen a los usuarios informados sobre el estado del sistema y pueden requerir o no que realicen una acción." />
       ),
     },
     {
-      id: "section-2",
+      id: "section-1",
       title: "Simple",
       description: "pequeña descripcion sobre un tipo de alerta.",
       content: (
+        <CodeBox codeHTML={SIMPLE_ALERT}>
         <section>
-          <div className="alert alert-primary" role="alert">
+          <div className="alert alert-info" role="alert">
             Esta es la descripción de una alerta de información.
           </div>
 
@@ -41,17 +44,18 @@ const AlertDocs: React.FC = () => {
             Esta es la descripción de una alerta de error.
           </div>
           <br />
-          <CodeCopy code={EGcodeSimpleAlert} />
         </section>
+        </CodeBox>
       ),
     },
     {
-      id: "section-3",
+      id: "section-2",
       title: "Con cierre",
       content: (
+        <CodeBox codeHTML={WITH_CLOSE_ALERT}>
         <section>
           <div
-            className="alert alert-primary alert-dismissible fade show"
+            className="alert alert-info alert-dismissible fade show"
             role="alert"
           >
             Esta es la descripción de una alerta de información.
@@ -102,17 +106,19 @@ const AlertDocs: React.FC = () => {
             ></button>
           </div>
 
-          <CodeCopy code={EGcodeWithClose} />
         </section>
+        </CodeBox>
       ),
     },
     {
-      id: "section-4",
+      id: "section-3",
       title: "Con destacado",
       content: (
+        <CodeBox codeHTML={HIGHLIGTHED_ALERT}>
+
         <section>
           <div
-            className="alert alert-primary alert-dismissible fade show"
+            className="alert alert-info alert-dismissible fade show"
             role="alert"
           >
             <strong>Este es un destacado de una alerta de información. </strong>
@@ -171,17 +177,19 @@ const AlertDocs: React.FC = () => {
             ></button>
           </div>
 
-          <CodeCopy code={EGcodeHighlighted} />
         </section>
+        </CodeBox>
       ),
     },
     {
-      id: "section-5",
+      id: "section-4",
       title: "Con hipervinculo",
       content: (
+        <CodeBox codeHTML={HYPERLINK_ALERT}>
+
         <section>
           <div
-            className="alert alert-primary alert-dismissible fade show"
+            className="alert alert-info alert-dismissible fade show"
             role="alert"
           >
             <strong>Este es un destacado de una alerta de información. </strong>
@@ -258,17 +266,19 @@ const AlertDocs: React.FC = () => {
 
           <br />
 
-          <CodeCopy code={EGcodeHyperlink} />
         </section>
+        </CodeBox>
       ),
     },
     {
-      id: "section-6",
+      id: "section-5",
       title: "Con lista de enlaces",
       content: (
+        <CodeBox codeHTML={LIST_LINK_ALERT}>
+
         <section>
           <div
-            className="alert alert-primary alert-dismissible fade show"
+            className="alert alert-info alert-dismissible fade show"
             role="alert"
           >
             <strong>Este es un destacado de una alerta de información. </strong>
@@ -304,18 +314,19 @@ const AlertDocs: React.FC = () => {
           </div>
 
           <br />
-
-          <CodeCopy code={EGcodeListLink} />
         </section>
+        </CodeBox>
       ),
     },
     {
-      id: "section-7",
+      id: "section-6",
       title: "Con lista de enlaces descriptiva",
       content: (
+        <CodeBox codeHTML={WITH_DESCRIPTION_ALERT}>
+
         <section>
           <div
-            className="alert alert-primary alert-dismissible fade show"
+            className="alert alert-info alert-dismissible fade show"
             role="alert"
           >
             <strong>Este es un destacado de una alerta de información. </strong>
@@ -341,9 +352,8 @@ const AlertDocs: React.FC = () => {
           </div>
 
           <br />
-
-          <CodeCopy code={EGcodeListLinkWithDescription} />
         </section>
+        </CodeBox>
       ),
     },
   ];

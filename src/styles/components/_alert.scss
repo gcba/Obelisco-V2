@@ -130,6 +130,7 @@ $theme-color-light-bg: (
 
   &.alert-dismissible {
     padding-right: 3.75rem;
+
     p {
       margin-bottom: 0;
     }
@@ -160,6 +161,7 @@ $theme-color-light-bg: (
 
     &.alert-dismissible {
       padding-right: 3.25rem;
+
       .close {
         margin-right: $alert-padding-x-mobile;
       }

@@ -7,7 +7,8 @@ import CodeBox from '@/components/CodeBox';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
-import { PaginationExample, PaginationExample1, PaginationExample2, PaginationExample3 } from './code-views';
+import { PAGINATION_CENTRAL, PAGINATION_FINAL, PAGINATION_INITIAL, PAGINATION_DESCRIPTION } from './code-views';
+
 
 const PaginationDocs: React.FC = () => {
   const [selectedExample, setSelectedExample] = useState<'inicial' | 'central' | 'final'>('inicial');
@@ -15,12 +16,12 @@ const PaginationDocs: React.FC = () => {
   const getCodeExample = () => {
     switch (selectedExample) {
       case 'central':
-        return PaginationExample2;
+        return PAGINATION_CENTRAL;
       case 'final':
-        return PaginationExample3;
+        return PAGINATION_FINAL;
       case 'inicial':
       default:
-        return PaginationExample1;
+        return PAGINATION_INITIAL;
     }
   };
 
@@ -137,7 +138,7 @@ const PaginationDocs: React.FC = () => {
       id: 'section-3',
       title: 'Descriptivo',
       content: (
-        <CodeCopy codeHTML={PaginationExample} >
+        <CodeCopy codeHTML={PAGINATION_DESCRIPTION} >
           <div className="container">
             <div className="pagination">
               <div className="page-navigation">

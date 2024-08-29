@@ -1,9 +1,8 @@
 import CodeBox from "@/components/CodeBox";
-import CodeBox from "@/components/CodeBox";
 import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
 import MainDescription from "@/components/Template/MainDescription";
 
-import { BadgeColors, BadgeTypes } from "./code-views";
+import { BADGE_COLORS, BADGE_TYPES } from "./code-views";
 
 
 const BadgeDocs: React.FC = () => {
@@ -19,7 +18,7 @@ const BadgeDocs: React.FC = () => {
       id: "section-1",
       title: "Colores",
       content: (
-        <CodeBox codeHTML={BadgeColors}>
+        <CodeBox codeHTML={BADGE_COLORS}>
           <div className="row justify-content-center">
             <div className="col-auto">
               <div className="grid gap-5">
@@ -38,7 +37,7 @@ const BadgeDocs: React.FC = () => {
       id: "section-2",
       title: "Enlace",
       content: (
-        <CodeBox codeHTML={BadgeTypes}>
+        <CodeBox codeHTML={BADGE_TYPES}>
           <div className="row justify-content-center">
             <div className="col-auto">
               <div className="grid gap-5">

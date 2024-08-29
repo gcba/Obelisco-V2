@@ -3,11 +3,10 @@
 import { useState } from "react";
 
 import CodeBox from "@/components/CodeBox";
-import CodeBox from "@/components/CodeBox";
 import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
 import MainDescription from "@/components/Template/MainDescription";
+import { GALLERY_INTERACTIVE } from "./code-views";
 
-import { GalleryExample } from "./code-views";
 
 
 const GalleryGrid: React.FC<{ images: string[]; maxColumns: number }> = ({ images, maxColumns }) => (
@@ -107,7 +106,7 @@ const GalleryDocs: React.FC = () => {
           id: "section-2",
           title: "Interactiva",
           content: (
-            <CodeBox codeHTML={GalleryExample}>
+            <CodeBox codeHTML={GALLERY_INTERACTIVE}>
               <div className="container">
                 <div className="row">
                   <div className="p-0 col-12 col-md-8 offset-md-2">

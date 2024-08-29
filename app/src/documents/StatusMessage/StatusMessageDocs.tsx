@@ -16,7 +16,7 @@ const sections = [
     id: 'section-1',
     title: 'Información',
     content: (
-      <CodeBox codeHTML={SMType1}>
+      <CodeBox codeHTML={SM_INFO}>
         <div className="px-4 col-sm-12 col-md-8">
           <div className="status status-info">
             <h2 className="status-title">
@@ -41,7 +41,7 @@ const sections = [
     id: 'section-2',
     title: 'Éxito',
     content: (
-      <CodeBox codeHTML={SMType2}>
+      <CodeBox codeHTML={SM_SUCCESS}>
         <div className="px-4 col-sm-12 col-md-8">
           <div className="status status-success">
             <h2 className="status-title">
@@ -72,7 +72,7 @@ const sections = [
     id: 'section-3',
     title: 'Advertencia',
     content: (
-      <CodeBox codeHTML={SMType3}>
+      <CodeBox codeHTML={SM_WARNING}>
         <div className="px-4 col-sm-12 col-md-8">
           <div className="status status-warning">
             <h2 className="status-title">
@@ -109,7 +109,7 @@ const sections = [
     id: 'section-4',
     title: 'Error',
     content: (
-      <CodeBox codeHTML={SMType4}>
+      <CodeBox codeHTML={SM_DANGER}>
         <div className="px-4 col-sm-12 col-md-8">
           <div className="status status-danger">
             <h2 className="status-title">
@@ -146,7 +146,7 @@ const sections = [
     id: 'section-5',
     title: 'Institucional',
     content: (
-      <CodeBox codeHTML={SMType5}>
+      <CodeBox codeHTML={SM_INSTITUTIONAL}>
         <div className="px-4 col-sm-12 col-md-8">
           <div className="status status-institutional">
             <h2 className="status-title">

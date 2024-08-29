@@ -103,22 +103,6 @@ const FormTextDocs: React.FC = () => {
         <>
           <CodeBox codeHTML={INPUT_DISABLED}>
             <div className="container">
-              <form className="col-12 col-lg-6">
-                <label htmlFor="example-six" className="form-label">Ejemplo campo de texto</label>
-                <div className='search-container'>
-                  <input type="search" className="form-control input-search" id="example-six" aria-describedby="Search" placeholder="Buscador" disabled />
-                  <button className="reset" type="reset" aria-label="Borrar"></button>
-                </div>
-              </form>
-              
-              <form className="col-12 col-lg-6">
-                <label htmlFor="example-six" className="form-label">Ejemplo campo de texto</label>
-                <div className='search-container'>
-                  <input type="search" className="form-control input-search input-search-with-button" id="example-six" aria-describedby="Search" placeholder="Buscador"  disabled/>
-                  <button className="reset" type="reset" aria-label="Borrar"></button>
-                  <button className='button-search'></button>
-                </div>
-              </form>
 
               <div className="col-12 col-lg-6">
                 <label htmlFor="example-five" className="form-label">Ejemplo campo de texto</label>

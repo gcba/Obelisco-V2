@@ -11,7 +11,7 @@ import SimpleText from './SimpleText';
 interface Section {
   id?: string;
   title: string;
-  content: React.ReactNode;
+  content?: React.ReactNode;
   description?: string;
   h1?: boolean;
 }

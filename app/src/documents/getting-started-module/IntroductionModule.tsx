@@ -1,105 +1,72 @@
-import BoxTemplate from "@/components/Template/Box";
-import Divisor from "@/components/Template/Divisor";
-import Flex from "@/components/Template/Flex";
-import HeadingTemplate from "@/components/Template/HeadingTemplate";
-import MainDescription from "@/components/Template/MainDescription";
-import SimpleText from "@/components/Template/SimpleText";
-import React from "react";
+import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
 
 const IntroductionModule: React.FC = () => {
-  // Contenido del módulo introduccion
-
-  return (
-    <BoxTemplate>
-      <Flex>
-        <div className="col-12 col-lg-8">
-          <HeadingTemplate>
-            <h1>Introducción</h1>
-          </HeadingTemplate>
-
-          <MainDescription description="¡Bienvenidos a la documentación de la libreria de componentes Obelisco v2!" />
-
-          <Divisor />
-
-          <HeadingTemplate>
-            <h2>¿Qué es React-Obelisco?</h2>
-          </HeadingTemplate>
-
-          <SimpleText description="Obelisco v2 es una librería de componentes para simplificar el desarrollo de interfaces web. Con una amplia variedad de componentes, acelera la creación de aplicaciones elegantes. Descubre la eficiencia y versatilidad de Obelisco v2 para impulsar tu desarrollo frontend." />
-
-          <SimpleText description="Además, Obelisco v2 ofrece una experiencia de usuario fluida y atractiva, permitiendo una fácil integración de recursos esenciales para un desarrollo eficiente. Desde su sencilla instalación hasta la importación intuitiva de componentes, Obelisco es la herramienta ideal para desarrolladores que buscan optimizar su flujo de trabajo y crear interfaces web impactantes de manera rápida y eficaz." />
-
-          <Divisor />
-
-          <HeadingTemplate>
-            <h2>Principales características</h2>
-          </HeadingTemplate>
-
-          <div className="list-informative">
-            <h3 className="list-informative-subtitle">
-              Obelisco se destaca por sus características clave:
-            </h3>
-            <ul className="list-informative-check">
-              <li>
-                <strong>Integración con Bootstrap:</strong> Construido sobre la
-                base de Bootstrap 5.3, Obelisco hereda su potente sistema de
-                diseño, facilitando la creación de interfaces consistentes y
-                estéticas.
-              </li>
-              <li>
-                <strong>Paleta de Colores Predefinida:</strong> Ofrece una
-                paleta de colores cuidadosamente seleccionada, simplificando la
-                toma de decisiones de diseño y garantizando la coherencia visual
-                en toda la aplicación.
-              </li>
-              <li>
-                <strong>Accesibilidad Garantizada:</strong> Con un enfoque
-                prioritario en la accesibilidad, cada componente de
-                React-Obelisco está diseñado para cumplir con las mejores
-                prácticas, asegurando una experiencia inclusiva para todos los
-                usuarios.
-              </li>
-              <li>
-                <strong>Amplia Variedad de Componentes:</strong> Más de 20
-                componentes disponibles, con más de 30 variantes, proporcionan
-                flexibilidad y versatilidad para adaptarse a diversas
-                necesidades de diseño y funcionalidades.
-              </li>
-              <li>
-                <strong>Tipografía Predefinida:</strong> Incluye tipografías
-                predefinidas que complementan la estética general, facilitando
-                la consistencia en la presentación del texto en toda la
-                aplicación.
-              </li>
-            </ul>
-          </div>
-
-          <Divisor />
-
-          <HeadingTemplate>
-            <h2>Cómo utilizar estos documentos</h2>
-          </HeadingTemplate>
-
-          <SimpleText
-            description="   En el lado izquierdo de la pantalla, encontrarás la barra de
-            navegación de documentos. Las páginas de los documentos están
-            organizadas secuencialmente, desde lo básico hasta lo avanzado, para
-            que pueda seguirlas paso a paso al crear su aplicación. Sin embargo,
-            puede leerlos en cualquier orden o pasar a las páginas que se
-            apliquen a su caso de uso."
-          />
-
-          <Divisor />
-
-          <HeadingTemplate>
-            <h2>Accesibilidad</h2>
-          </HeadingTemplate>
-
-          <SimpleText description="Obelisco prioriza la accesibilidad, asegurando que todos los usuarios, independientemente de sus habilidades, puedan interactuar con las interfaces de manera efectiva. Con etiquetas semánticas, compatibilidad con lectores de pantalla y controles de teclado, cada componente cumple con estándares estrictos. El diseño incluye contrastes de color accesibles y descripciones adecuadas para elementos interactivos, garantizando una experiencia equitativa para usuarios con discapacidades visuales. La accesibilidad no es solo una característica, sino un compromiso integral en React-Obelisco, proporcionando interfaces web inclusivas y accesibles para un público diverso." />
+  const sections = [
+    {
+      id: "section-1",
+      title: "Introducción",
+      content: (
+        <>
+          <p className='lead'>
+            Obelisco v2 es un Sistema de diseño basado en componentes para productos digitales de la Ciudad de Buenos Aires, diseñado para continuar la evolución de Obelisco en su segunda versión.
+          </p>
+          <p className='lead'>
+            Este sistema brinda una mejor experiencia de usuario y simplifica el desarrollo de interfaces web al mantener una armonía digital enfocada en la experiencia de los usuarios, proporcionada por el Gobierno de la Ciudad de Buenos Aires (GCBA).
+          </p>
+          <p className='lead'>
+            Con una amplia variedad de componentes, Obelisco v2 acelera la creación de aplicaciones elegantes y funcionales.
+          </p>
+        </>
+      ),
+      h1: true,
+    },
+    {
+      id: "section-2",
+      title: "¿Qué es Obelisco v2?",
+      description: `
+        Obelisco v2 es una librería de estilos que facilita la creación de interfaces web mediante componentes que mantienen una coherencia estética y funcional. 
+        Este sistema es ideal para desarrollar productos digitales con un diseño armonioso y enfocado en la experiencia del usuario. 
+        Proporcionada por el GCBA, Obelisco v2 ofrece una integración sencilla de recursos esenciales que permiten un desarrollo eficiente y estandarizado.
+      `,
+    },
+    {
+      id: "section-3",
+      title: "Características Principales",
+      content: (
+        <div className="col-12">
+          <ul>
+            <li>
+              <strong>Integración con Bootstrap:</strong> Construido sobre la base de Bootstrap 5.3, Obelisco v2 hereda un sistema de diseño robusto, facilitando la creación de interfaces consistentes y atractivas.
+            </li>
+            <li>
+              <strong>Paleta de Colores Predefinida:</strong> Ofrece una paleta de colores cuidadosamente seleccionada, lo que simplifica la toma de decisiones de diseño y garantiza coherencia visual en toda la aplicación.
+            </li>
+            <li>
+              <strong>Accesibilidad Garantizada:</strong> Con un enfoque prioritario en la accesibilidad, cada componente de Obelisco v2 está diseñado para cumplir con las mejores prácticas, asegurando una experiencia inclusiva para todos los usuarios.
+            </li>
+            <li>
+              <strong>Amplia Variedad de Componentes:</strong> Con más de 20 componentes disponibles y más de 30 variantes, Obelisco v2 proporciona flexibilidad y versatilidad para adaptarse a diversas necesidades de diseño y funcionalidad.
+            </li>
+            <li>
+              <strong>Tipografía Predefinida:</strong> Incluye tipografías predefinidas que complementan la estética general, facilitando la consistencia en la presentación del texto en toda la aplicación.
+            </li>
+          </ul>
         </div>
-      </Flex>
-    </BoxTemplate>
-  );
+      ),
+    },
+    {
+      id: "section-4",
+      title: "Accesibilidad",
+      description: `
+        La accesibilidad es una prioridad en Obelisco v2. Cada componente está diseñado para garantizar que todos los usuarios, independientemente de sus habilidades, puedan interactuar con las interfaces de manera efectiva. 
+        Se incluyen etiquetas semánticas, compatibilidad con lectores de pantalla, y controles de teclado, asegurando el cumplimiento de estándares estrictos. 
+        Además, se cuida el contraste de colores y se proporcionan descripciones adecuadas para elementos interactivos, garantizando una experiencia equitativa para todos los usuarios. 
+        En Obelisco v2, la accesibilidad no es solo una característica, sino un compromiso integral que garantiza interfaces web inclusivas y accesibles para un público diverso.
+      `,
+    },
+  ];
+
+  return <DocumentationTemplate sections={sections} />;
 };
 
 export default IntroductionModule;

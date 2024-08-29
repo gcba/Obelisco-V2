@@ -1,3 +1,5 @@
+$nav-link-fixed-width: 15.625rem;
+
 .tabs-box {
   width: 100%;
   display: flex;
@@ -151,12 +153,12 @@
     background: transparent;
     position: absolute;
     top: 0;
-    display: none;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     padding: 0;
     border: none;
+    display: flex;
 
     >span {
       font-size: 16px;
@@ -168,7 +170,6 @@
 
     &:nth-of-type(2) {
       right: 0;
-      display: flex;
     }
   }
 

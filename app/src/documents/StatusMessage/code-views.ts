@@ -1,4 +1,4 @@
-export const SMType1 = `<div class="status status-info">
+export const SM_INFO = `<div class="status status-info">
   <h2 class="status-title">
     Esto es un título de un mensaje de información
   </h2>
@@ -19,7 +19,7 @@ export const SMType1 = `<div class="status status-info">
 </div>
 `;
 
-export const SMType2 = `<div class="status status-success">
+export const SM_SUCCESS = `<div class="status status-success">
   <h2 class="status-title">
     Esto es un título de un mensaje de éxito
   </h2>
@@ -46,7 +46,7 @@ export const SMType2 = `<div class="status status-success">
 </div>
 `;
 
-export const SMType3 = `<div class="status status-warning">
+export const SM_WARNING = `<div class="status status-warning">
   <h2 class="status-title">
     Esto es un título de un mensaje de advertencia
   </h2>
@@ -83,7 +83,7 @@ export const SMType3 = `<div class="status status-warning">
 </div>
 `;
 
-export const SMType4 = `<div class="status status-danger">
+export const SM_DANGER = `<div class="status status-danger">
   <h2 class="status-title">
     Esto es un título de un mensaje de peligro
   </h2>
@@ -120,7 +120,7 @@ export const SMType4 = `<div class="status status-danger">
 </div>
 `;
 
-export const SMType5 = `<div class="status status-institutional">
+export const SM_INSTITUTIONAL = `<div class="status status-institutional">
   <h2 class="status-title">
     Este es un mensaje institucional del Gobierno de la
     Ciudad de Buenos Aires

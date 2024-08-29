@@ -98,8 +98,8 @@ export const SWITCH_SIZES = `<label class="switch" for="switch-1">
   <span class="switch-label on">Prendido</span>
   <span class="switch-label off">Apagado</span>
 </label>
-
-<label class="switch switch-sm" for="switch-small-1">
+`;
+export const SWITCH_SIZES_SM = `<label class="switch switch-sm" for="switch-small-1">
   <input type="checkbox" id="switch-small-1" />
   <span class="slider"></span>
   <span class="switch-label on" aria-label="Prendido"></span>
@@ -113,7 +113,6 @@ export const SWITCH_SIZES = `<label class="switch" for="switch-1">
   <span class="switch-label off" aria-label="Apagado"></span>
 </label>
 `;
-
 export const SWITCH_DISABLED = `<label class="switch" for="switch-1">
   <input type="checkbox" id="switch-1" disabled="" />
   <span class="slider"></span>

@@ -12,7 +12,6 @@ import {
 const LinkDocs: React.FC = () => {
   const sections = [
     {
-      id: 'section-1',
       title: 'Enlaces',
       h1: true,
       content: (
@@ -21,7 +20,7 @@ const LinkDocs: React.FC = () => {
     },
 
     {
-      id: 'section-2',
+      id: 'section-1',
       title: 'Predeterminado',
       content: (
         <>
@@ -69,7 +68,7 @@ const LinkDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-3',
+      id: 'section-2',
       title: 'Externo',
       content: (
         <>
@@ -105,7 +104,7 @@ const LinkDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-4',
+      id: 'section-3',
       title: 'Descarga',
       content: (
         <>
@@ -153,7 +152,7 @@ const LinkDocs: React.FC = () => {
       )
     },
     {
-      id: 'section-5',
+      id: 'section-4',
       title: 'Acceso',
       content: (
         <>
@@ -186,7 +185,7 @@ const LinkDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-          <br /><br /><br /><br />
+          <br /><br />
         </>
       )
     }

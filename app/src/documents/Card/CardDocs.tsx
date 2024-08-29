@@ -1,37 +1,29 @@
+import CodeBox from '@/components/CodeBox';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
+
+import { CARDS } from './code-views';
 
 const CardDocs: React.FC = () => {
   const sections = [
     {
-      id: 'section-1',
       title: 'Tarjetas',
+      h1: true,
       content: (
         <div>
-          <MainDescription description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the." />
+          <MainDescription description="Las tarjetas son componentes accionables que se utilizan en grupo para comunicar información que requiere de cierto tipo de categorización y jerarquización visual. Se visualizan en contenedores flexibles y actúan como punto de entrada a un tema en particular." />
         </div>
       ),
-      h1: true,
     },
     {
-      id: 'section-2',
-      title: 'Simple',
+      id: 'section-1',
+      title: 'Horizontal',
       content: (
-        <p>ejemplo</p>
-      ),
-    },
-    {
-      id: 'section-3',
-      title: 'Con cierre',
-      content: (
-        <p>ejemplo</p>
-      ),
-    },
-    {
-      id: 'section-4',
-      title: 'Con lista',
-      content: (
-        <p>ejemplo</p>
+        <CodeBox codeHTML={CARDS}>
+          <div className="container">
+            lorem
+          </div>
+        </CodeBox>
       ),
     },
   ];

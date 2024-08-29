@@ -7,7 +7,6 @@ import { HEADLINE, HEADINGS, BODY, OTHER_STYLES, DEFAULT_LISTS, BLOCKQUOTE } fro
 const TypographyDocs: React.FC = () => {
   const sections = [
     {
-      id: "section-1",
       h1: true,
       title: "Tipografía",
       content: (
@@ -15,7 +14,7 @@ const TypographyDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-2",
+      id: "section-1",
       title: "Títulos",
       content: (
         <>
@@ -33,7 +32,7 @@ const TypographyDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-3",
+      id: "section-2",
       title: "Titulares",
       content: (
         <>
@@ -48,7 +47,7 @@ const TypographyDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-4",
+      id: "section-3",
       title: "Cuerpo",
       content: (
         <>
@@ -67,7 +66,7 @@ const TypographyDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-5",
+      id: "section-4",
       title: "Otros estilos",
       content: (
         <>
@@ -85,7 +84,7 @@ const TypographyDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-6",
+      id: "section-5",
       title: "Listas predeterminadas",
       content: (
         <>
@@ -108,7 +107,7 @@ const TypographyDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-7",
+      id: "section-6",
       title: "Citas",
       content: (
         <>
@@ -120,7 +119,7 @@ const TypographyDocs: React.FC = () => {
               </blockquote>
             </div>
           </CodeBox>
-          <br /><br /><br /><br />
+          <br /><br />
         </>
       ),
     },

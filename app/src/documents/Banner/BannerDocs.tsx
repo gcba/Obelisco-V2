@@ -19,25 +19,25 @@ const BannerDocs: React.FC = () => {
       title: "Simple",
       content: (
         <>
-        <CodeBox codeHTML={BANNER_SIMPLE}>
-          <div className="banner">
-            <div className="banner-content">
-              <p className="banner-text">
-                Esta descripción de banner <strong>puede tener énfasis</strong> y <a href="#" target="_blank" rel="noopener noreferrer">enlace</a>.
-              </p>
+          <CodeBox codeHTML={BANNER_SIMPLE}>
+            <div className="banner">
+              <div className="banner-content">
+                <p className="banner-text">
+                  Esta descripción de banner <strong>puede tener énfasis</strong> y <a href="#" target="_blank" rel="noopener noreferrer">enlace</a>.
+                </p>
+              </div>
             </div>
-          </div>
-        </CodeBox>
-        <br />
-        <CodeBox codeHTML={BANNER_SIMPLE_DARK}>
-          <div className="banner banner-dark">
-            <div className="banner-content">
-              <p className="banner-text">
-                Esta descripción de banner <strong>puede tener énfasis</strong> y <a href="#" target="_blank" rel="noopener noreferrer"> enlace</a>.
-              </p>
+          </CodeBox>
+          <br />
+          <CodeBox codeHTML={BANNER_SIMPLE_DARK}>
+            <div className="banner banner-dark">
+              <div className="banner-content">
+                <p className="banner-text">
+                  Esta descripción de banner <strong>puede tener énfasis</strong> y <a href="#" target="_blank" rel="noopener noreferrer"> enlace</a>.
+                </p>
+              </div>
             </div>
-          </div>
-        </CodeBox>
+          </CodeBox>
         </>
       ),
     },

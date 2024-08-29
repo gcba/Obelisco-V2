@@ -8,15 +8,14 @@ const TabsDocs: React.FC = () => {
 
   const sections = [
     {
-      id: 'section-1',
       title: 'Pestañas',
       h1: true,
       content: (
-        <MainDescription description="Lorem Ipsum is simply dummy text of the printing and typesetting industry.." />
+        <MainDescription description="Las pestañas se pueden usar para organizar contenido como formularios, configuraciones y tableros para que un usuario no tenga que navegar fuera de su flujo de trabajo para completar su tarea." />
       ),
     },
     {
-      id: 'section-2',
+      id: 'section-1',
       title: 'Simple',
       content: (
         <>
@@ -244,7 +243,7 @@ const TabsDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-3',
+      id: 'section-2',
       title: 'Ancho fijo',
       content: (
         <CodeBox codeHTML={TABS_FIXED_WIDTH}>
@@ -369,7 +368,7 @@ const TabsDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-4',
+      id: 'section-3',
       title: 'Con contenedor',
       content: (
         <>
@@ -492,7 +491,7 @@ const TabsDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-          <br /><br /><br /><br />
+          <br /><br />
         </>
       ),
     },

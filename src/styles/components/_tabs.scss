@@ -69,10 +69,12 @@ $nav-link-fixed-width: 15.625rem;
 
           &:hover {
             box-shadow: inset 0 -4px 0 0 $nav-link-border-active;
+            background: none;
           }
 
           &:focus {
             border-radius: $border-radius * 2;
+            background: none;
           }
         }
 

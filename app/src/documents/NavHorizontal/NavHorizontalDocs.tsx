@@ -6,16 +6,14 @@ import { NAV_HORIZONTAL_SIMPLE, NAV_HORIZONTAL_ICON, NAV_HORIZONTAL_ICON_RIGHT, 
 
 const sections = [
   {
-    id: 'section-1',
-    title: 'Navegación horizontal',
+    title: 'Navegación Horizontal',
     h1: true,
     content: (
-      <MainDescription description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the." />
-    ),
-    description: undefined
+      <MainDescription description="Permite a las personas usuarias a navegar por las vistas sin salir de la página. Siempre contienen al menos dos elementos y una esta activa a la vez. Generalmente se utilizan en encabezados o secciones grandes." />
+    )
   },
   {
-    id: 'section-2',
+    id: 'section-1',
     title: 'Simple',
     content: (
       <CodeBox codeHTML={NAV_HORIZONTAL_SIMPLE}>
@@ -43,7 +41,7 @@ const sections = [
     )
   },
   {
-    id: 'section-3',
+    id: 'section-2',
     title: 'Simple con icono',
     content: (
       <>
@@ -132,7 +130,7 @@ const sections = [
     )
   },
   {
-    id: 'section-4',
+    id: 'section-3',
     title: 'Tamaños',
     content: (
       <>
@@ -157,7 +155,7 @@ const sections = [
     )
   },
   {
-    id: 'section-5',
+    id: 'section-4',
     title: 'Con borde',
     content: (
       <>
@@ -201,7 +199,7 @@ const sections = [
             </nav>
           </div>
         </CodeBox>
-        <br /><br /><br /><br />
+        <br /><br />
       </>
     )
   }

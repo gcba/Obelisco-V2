@@ -1,4 +1,4 @@
-export const PaginationExample = `<div className="pagination">
+export const PAGINATION_DESCRIPTION = `<div className="pagination">
   <div class="page-navigation">
     <div class="page-item">
       <a class="btn page-link" href="#">
@@ -15,7 +15,7 @@ export const PaginationExample = `<div className="pagination">
   </div>
 </div>`;
 
-export const PaginationExample1 = `<nav aria-label="Ejemplo de paginado numerado inicial">
+export const PAGINATION_INITIAL = `<nav aria-label="Ejemplo de paginado numerado inicial">
   <ul class="pagination">
     <li class="page-item" style="opacity: 0;">
       <span class="page-link">
@@ -39,7 +39,7 @@ export const PaginationExample1 = `<nav aria-label="Ejemplo de paginado numerado
   </ul>
 </nav>`;
 
-export const PaginationExample2 = `<nav aria-label="Ejemplo de paginado numerado central">
+export const PAGINATION_CENTRAL = `<nav aria-label="Ejemplo de paginado numerado central">
   <ul class="pagination">
     <li class="page-item">
       <a class="page-link" href="#">
@@ -63,7 +63,7 @@ export const PaginationExample2 = `<nav aria-label="Ejemplo de paginado numerado
   </ul>
 </nav>`;
 
-export const PaginationExample3 = `<nav aria-label="Ejemplo de paginado numerado final">
+export const PAGINATION_FINAL = `<nav aria-label="Ejemplo de paginado numerado final">
   <ul class="pagination">
     <li class="page-item">
       <a class="page-link" href="#">

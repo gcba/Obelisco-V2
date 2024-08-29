@@ -10,7 +10,6 @@ const TabsDocs: React.FC = () => {
 
   const sections = [
     {
-      id: 'section-1',
       title: 'Pestañas',
       h1: true,
       content: (
@@ -18,7 +17,7 @@ const TabsDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-2',
+      id: 'section-1',
       title: 'Simple',
       content: (
         <div className="col-12 max-720">
@@ -246,7 +245,7 @@ const TabsDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-3',
+      id: 'section-2',
       title: 'Ancho fijo',
       content: (
         <CodeBox codeHTML={TABS_FIXED_WIDTH}>
@@ -371,7 +370,7 @@ const TabsDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-4',
+      id: 'section-3',
       title: 'Con contenedor',
       content: (
         <div className="col-12 max-720">

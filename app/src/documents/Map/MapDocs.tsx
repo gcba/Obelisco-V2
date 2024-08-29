@@ -7,15 +7,14 @@ import { MAP_INSTITUTION, MAP_LATERAL } from "./code-views";
 const MapDocs: React.FC = () => {
   const sections = [
     {
-      id: "section-1",
       title: "Mapa",
-      content: (
-        <MainDescription description="El mapa brinda contexto gráfico sobre una ubicación y te redirige al mapa interactivo de Buenos Aires." />
-      ),
       h1: true,
+      content: (
+        <MainDescription description="El mapa brinda contexto sobre una ubicación geográfica y redirige a la persona usuaria al mapa interactivo de Buenos Aires. A su vez, permite a las personas usuarias anticipar y planificar sus acciones." />
+      ),
     },
     {
-      id: "section-2",
+      id: "section-1",
       title: "Lateral",
       content: (
         <>
@@ -59,7 +58,7 @@ const MapDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-3",
+      id: "section-2",
       title: "Institucional",
       content: (
         <>
@@ -99,7 +98,7 @@ const MapDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-          <br /><br /><br /><br />
+          <br /><br />
         </>
       ),
     },

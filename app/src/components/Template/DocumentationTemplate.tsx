@@ -1,13 +1,15 @@
 'use client';
 
-import React, { useRef, useEffect, useState } from 'react';
 import { Scrollspy } from "@makotot/ghostui";
-import HeadingTemplate from '@/components/Template/HeadingTemplate';
+import React, { useEffect, useState, useMemo, useCallback } from 'react';
+
 import Divisor from '@/components/Template/Divisor';
+import HeadingTemplate from '@/components/Template/HeadingTemplate';
+
 import SimpleText from './SimpleText';
 
 interface Section {
-  id: string;
+  id?: string;
   title: string;
   content?: React.ReactNode;
   description?: string;
@@ -19,10 +21,10 @@ interface DocumentationTemplateProps {
 }
 
 const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections }) => {
-  const sectionRefs = sections.map(() => useRef<HTMLDivElement>(null));
+  const sectionRefs = useMemo(() => sections.map(() => React.createRef<HTMLDivElement>()), [sections]);
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     sectionRefs.forEach((ref, index) => {
       const element = ref.current;
       if (element) {
@@ -32,14 +34,14 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections 
         }
       }
     });
-  };
-
+  }, [sectionRefs]);
+  
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [handleScroll]);
 
   return (
     <Scrollspy sectionRefs={sectionRefs} offset={84}>
@@ -50,7 +52,7 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections 
               {sections.map((section, index) => (
                 <section
                   key={section.id}
-                  id={section.id}
+                  id={section.id || undefined}
                   ref={sectionRefs[index]}
                 >
                   <HeadingTemplate className='pt-2'>
@@ -66,11 +68,12 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections 
 
           <div className='nav-scrollspy d-none d-lg-block flex-grow-1'>
             <ul className='scrollspy' data-cy="nav-wrapper">
-              <p className='headline-md fw-bold mb-1'>On this page</p>
+              <p className='headline-md fw-bold mb-1'>Variantes</p>
               {sections.map((section, index) => (
-                <li key={section.id} className={activeIndex === index ? "active" : ""}>
+                section.id &&
+                (<li key={section.id} className={activeIndex === index ? "active" : ""}>
                   <a href={`#${section.id}`} className='text-sm'>{section.title}</a>
-                </li>
+                </li>)
               ))}
             </ul>
           </div>

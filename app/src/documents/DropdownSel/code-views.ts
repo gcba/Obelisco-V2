@@ -316,7 +316,71 @@ export const DROPDOWN_RADIO_SIZES = `
     </div>
   </div>
 `;
-export const DROPDOWN_CHECKBOX_SIZES = `
+export const DROPDOWN_RADIO_SIZES_MD = `
+  <div class="dropdown">
+    <button
+      type="button"
+      class="btn btn-dropdown btn-dropdown-border"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+      data-bs-auto-close="outside"
+    >
+      <span
+        class="material-symbols-rounded o-icon"
+        aria-label="hidden"
+      >
+        person
+      </span>
+      <span class="btn-dropdown-text">Desplegable</span>
+      <span
+        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        aria-label="hidden"
+      >
+        expand_more
+      </span>
+    </button>
+    <div class="dropdown-menu">
+      <div class="form-radio reverse">
+        <input
+          class="form-radio-input"
+          type="radio"
+          name="dropdownRadioMd"
+          id="option-radio-md-1"
+          value="option-1"
+          />
+        <label class="form-radio-label" for="option-radio-md-1">
+          Opción de selección única 1
+        </label>
+      </div>
+      <div class="form-radio reverse">
+        <input
+          class="form-radio-input"
+          type="radio"
+          name="dropdownRadioMd"
+          id="option-radio-md-2"
+          value="option-2"
+          />
+        <label class="form-radio-label" for="option-radio-md-2">
+          Opción de selección única 2
+        </label>
+      </div>
+      <div class="form-radio reverse">
+        <input
+          class="form-radio-input"
+          type="radio"
+          name="dropdownRadioMd"
+          id="option-radio-md-3"
+          value="option-3"
+          disabled
+          />
+        <label class="form-radio-label" for="option-radio-md-3">
+          Opción de selección única 3
+        </label>
+      </div>
+    </div>
+  </div>
+`;
+export const DROPDOWN_RADIO_SIZES_LG = `
   <div class="dropdown dropdown-lg">
     <button
       type="button"
@@ -340,46 +404,111 @@ export const DROPDOWN_CHECKBOX_SIZES = `
       </span>
     </button>
     <div class="dropdown-menu">
-      <div class="form-checkbox">
+      <div class="form-radio reverse">
         <input
-          class="form-checkbox-input"
-          type="checkbox"
-          name="dropdownCheckboxLg"
-          id="option-checkbox-lg-1"
+          class="form-radio-input"
+          type="radio"
+          name="dropdownRadioLg"
+          id="option-radio-lg-1"
           value="option-1"
           />
-        <label class="form-checkbox-label" for="option-checkbox-lg-1">
-          Opción de selección múltiple 1
+        <label class="form-radio-label" for="option-radio-lg-1">
+          Opción de selección única 1
         </label>
       </div>
-      <div class="form-checkbox">
+      <div class="form-radio reverse">
         <input
-          class="form-checkbox-input"
-          type="checkbox"
-          name="dropdownCheckboxLg"
-          id="option-checkbox-lg-2"
+          class="form-radio-input"
+          type="radio"
+          name="dropdownRadioLg"
+          id="option-radio-lg-2"
           value="option-2"
           />
-        <label class="form-checkbox-label" for="option-checkbox-lg-2">
-          Opción de selección múltiple 2
+        <label class="form-radio-label" for="option-radio-lg-2">
+          Opción de selección única 2
         </label>
       </div>
-      <div class="form-checkbox">
+      <div class="form-radio reverse">
         <input
-          class="form-checkbox-input"
-          type="checkbox"
-          name="dropdownCheckboxLg"
-          id="option-checkbox-lg-3"
+          class="form-radio-input"
+          type="radio"
+          name="dropdownRadioLg"
+          id="option-radio-lg-3"
           value="option-3"
           disabled
           />
-        <label class="form-checkbox-label" for="option-checkbox-lg-3">
-          Opción de selección múltiple 3
+        <label class="form-radio-label" for="option-radio-lg-3">
+          Opción de selección única 3
         </label>
       </div>
     </div>
   </div>
-  <br />
+`;
+export const DROPDOWN_RADIO_SIZES_SM = `
+  <div class="dropdown dropdown-sm">
+    <button
+      type="button"
+      class="btn btn-dropdown btn-dropdown-border"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+      data-bs-auto-close="outside"
+    >
+      <span
+        class="material-symbols-rounded o-icon"
+        aria-label="hidden"
+      >
+        person
+      </span>
+      <span class="btn-dropdown-text">Desplegable</span>
+      <span
+        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        aria-label="hidden"
+      >
+        expand_more
+      </span>
+    </button>
+    <div class="dropdown-menu">
+      <div class="form-radio reverse">
+        <input
+          class="form-radio-input"
+          type="radio"
+          name="dropdownRadioSm"
+          id="option-radio-sm-1"
+          value="option-1"
+          />
+        <label class="form-radio-label" for="option-radio-sm-1">
+          Opción de selección única 1
+        </label>
+      </div>
+      <div class="form-radio reverse">
+        <input
+          class="form-radio-input"
+          type="radio"
+          name="dropdownRadioSm"
+          id="option-radio-sm-2"
+          value="option-2"
+          />
+        <label class="form-radio-label" for="option-radio-sm-2">
+          Opción de selección única 2
+        </label>
+      </div>
+      <div class="form-radio reverse">
+        <input
+          class="form-radio-input"
+          type="radio"
+          name="dropdownRadioSm"
+          id="option-radio-sm-3"
+          value="option-3"
+          disabled
+          />
+        <label class="form-radio-label" for="option-radio-3">
+          Opción de selección única 3
+        </label>
+      </div>
+    </div>
+  </div>
+`;
+export const DROPDOWN_CHECKBOX_SIZES_MD = `
   <div class="dropdown">
     <button
       type="button"
@@ -442,7 +571,8 @@ export const DROPDOWN_CHECKBOX_SIZES = `
       </div>
     </div>
   </div>
-  <br />
+`;
+export const DROPDOWN_CHECKBOX_SIZES_SM = `
   <div class="dropdown dropdown-sm">
     <button
       type="button"
@@ -506,7 +636,71 @@ export const DROPDOWN_CHECKBOX_SIZES = `
     </div>
   </div> 
 `;
-export const DROPDOWN_RADIO_JS = `
+export const DROPDOWN_CHECKBOX_SIZES_LG = `
+  <div class="dropdown dropdown-lg">
+    <button
+      type="button"
+      class="btn btn-dropdown btn-dropdown-border"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+      data-bs-auto-close="outside"
+    >
+      <span
+        class="material-symbols-rounded o-icon"
+        aria-label="hidden"
+      >
+        person
+      </span>
+      <span class="btn-dropdown-text">Desplegable</span>
+      <span
+        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        aria-label="hidden"
+      >
+        expand_more
+      </span>
+    </button>
+    <div class="dropdown-menu">
+      <div class="form-checkbox">
+        <input
+          class="form-checkbox-input"
+          type="checkbox"
+          name="dropdownCheckboxLg"
+          id="option-checkbox-lg-1"
+          value="option-1"
+          />
+        <label class="form-checkbox-label" for="option-checkbox-lg-1">
+          Opción de selección múltiple 1
+        </label>
+      </div>
+      <div class="form-checkbox">
+        <input
+          class="form-checkbox-input"
+          type="checkbox"
+          name="dropdownCheckboxLg"
+          id="option-checkbox-lg-2"
+          value="option-2"
+          />
+        <label class="form-checkbox-label" for="option-checkbox-lg-2">
+          Opción de selección múltiple 2
+        </label>
+      </div>
+      <div class="form-checkbox">
+        <input
+          class="form-checkbox-input"
+          type="checkbox"
+          name="dropdownCheckboxLg"
+          id="option-checkbox-lg-3"
+          value="option-3"
+          disabled
+          />
+        <label class="form-checkbox-label" for="option-checkbox-lg-3">
+          Opción de selección múltiple 3
+        </label>
+      </div>
+    </div>
+  </div>
+`;
+export const DROPDOWN_RADIO_HTML = `
   <div class="dropdown">
     <button
       type="button"
@@ -571,7 +765,7 @@ export const DROPDOWN_RADIO_JS = `
     </div>
   </div>
 `;
-export const DROPDOWN_CHECKBOX_JS = `
+export const DROPDOWN_CHECKBOX_HTML = `
   <div class="dropdown">
     <button
       type="button"
@@ -639,13 +833,13 @@ export const DROPDOWN_CHECKBOX_JS = `
     </div>
   </div>
 `;
-export const DROPDOWN_CHECKBOX_JS_CODE = `
+export const DROPDOWN_CHECKBOX_JS = `
   const checkboxes = document.querySelectorAll('input[type="checkbox"][name="dropdownCheckboxJs"]');
   const counter = document.getElementById('counterDropdownCheckboxJs');
   const btnDropdown = document.getElementById('btnDropdownCheckboxJs');
   if (checkboxes) {
     checkboxes.forEach((checkbox) => {
-      checkbox.addEventListener('change', function () {
+      checkbox.addEventListener('change', function() {
         const selectedCount = Array.from(checkboxes).filter(cb => cb.checked).length;
         if (counter) {
           if (selectedCount == 0) {
@@ -660,11 +854,11 @@ export const DROPDOWN_CHECKBOX_JS_CODE = `
     });
   }
 `;
-export const DROPDOWN_RADIO_JS_CODE = `
+export const DROPDOWN_RADIO_JS = `
   const radios = document.querySelectorAll('input[type="radio"][name="dropdownRadioJs"]');
   if (radios) {
     radios.forEach((radio) => {
-      radio.addEventListener('change', function () {
+      radio.addEventListener('change', function() {
         const selectedText = this.nextElementSibling.textContent.trim();
         const buttonText = document.getElementById('btnDropdownRadioTextJs');
         const button = document.getElementById('btnDropdownRadioJs');

@@ -7,7 +7,6 @@ import { MODAL_CONFIRM, MODAL_DANGER, MODAL_RECOGNITION } from "./code-views";
 const ModalDocs: React.FC = () => {
   const sections = [
     {
-      id: "section-1",
       title: "Modal",
       h1: true,
       content: (
@@ -16,7 +15,7 @@ const ModalDocs: React.FC = () => {
     },
 
     {
-      id: "section-2",
+      id: "section-1",
       title: "Tipos",
       content: (
         <>
@@ -30,26 +29,6 @@ const ModalDocs: React.FC = () => {
               >
                 Modal de confirmación
               </button>
-              <div className="col-auto">
-                <button
-                  type="button"
-                  className="btn btn-primary mb-3"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal2"
-                >
-                  Modal de peligro
-                </button>
-              </div>
-              <div className="col-auto">
-                <button
-                  type="button"
-                  className="btn btn-primary mb-3"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal3"
-                >
-                  Modal de reconocimiento
-                </button>
-              </div>
             </div>
 
             <div className="modal fade" tabIndex={-1} id="exampleModal1">

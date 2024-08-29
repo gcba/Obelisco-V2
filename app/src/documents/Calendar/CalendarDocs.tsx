@@ -1,34 +1,28 @@
-import CodeCopy from "@/components/CodeBox";
+import CodeBox from "@/components/CodeBox";
 import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
 import MainDescription from "@/components/Template/MainDescription";
 
-import { MapInstitution, MapLateral } from "./code-views";
+import { CALENDAR} from "./code-views";
 
 const CalendarDocs: React.FC = () => {
   const sections = [
     {
-      id: "section-1",
       title: "Calendario",
-      content: (
-        <MainDescription description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui minima tenetur dolor repellat molestiae fugiat inventore. Facilis explicabo voluptatum quaerat ipsam velit amet? Quia maxime pariatur qui quasi, veritatis nihil!." />
-      ),
       h1: true,
+      content: (
+        <MainDescription description="El calendario es una representación visual en forma de tabla que exhibe eventos y fechas importantes correspondientes a los días de la semana de un mes determinado." />
+      ),
     },
     {
-      id: "section-2",
+      id: "section-1",
       title: "Sin evento",
       content: (
         <>
-          <p>
-            En desktop ocupa 4 columnas, y se ubica a la derecha del cuerpo de
-            una página simple o de noticias.
-          </p>
-          <p>
-            Ocupa el 100 % de las columnas disponibles en mobile. Cuando cumple
-            la función de mapa lateral, se ubica luego del cuerpo de la página,
-            antes del footer o de la sección de noticias relacionadas.
-          </p>
-
+          <CodeBox codeHTML={CALENDAR}>
+            <div className="container">
+              lorem
+            </div>
+          </CodeBox>
           {/* <div className="calendar">
             <div className="calendar-header">
               <h2 className="calendar-title">Enero</h2>
@@ -106,13 +100,11 @@ const CalendarDocs: React.FC = () => {
               </table>
             </div>
           </div> */}
-
-          <CodeCopy code={MapLateral} />
         </>
       ),
     },
     {
-      id: "section-3",
+      id: "section-2",
       title: "Con eventos - predeterminado",
       content: (
         <>
@@ -226,23 +218,14 @@ const CalendarDocs: React.FC = () => {
               </ul>
             </div>
           </div> */}
-
-
-          <CodeCopy code={MapInstitution} />
         </>
       ),
     },
     {
-      id: "section-4",
+      id: "section-3",
       title: "Con eventos - enlaces",
       content: (
         <>
-          <p>
-            Ocupa 6 columnas en Desktop. Se utiliza dentro del bloque
-            institucional en páginas de área, antes del footer.
-          </p>
-
-
           <div className="calendar">
             <div className="calendar-header">
               <h2 className="calendar-title">Enero</h2>
@@ -348,22 +331,14 @@ const CalendarDocs: React.FC = () => {
               </ul>
             </div>
           </div>
-
-          <CodeCopy code={MapInstitution} />
         </>
       ),
     },
     {
-      id: "section-5",
+      id: "section-4",
       title: "Con eventos - enlaces",
       content: (
         <>
-          <p>
-            Ocupa 6 columnas en Desktop. Se utiliza dentro del bloque
-            institucional en páginas de área, antes del footer.
-          </p>
-
-
           <div className="calendar">
             <div className="calendar-header">
               <h2 className="calendar-title">Enero</h2>
@@ -469,22 +444,14 @@ const CalendarDocs: React.FC = () => {
               </ul>
             </div>
           </div>
-
-          <CodeCopy code={MapInstitution} />
         </>
       ),
     },
     {
-      id: "section-6",
+      id: "section-5",
       title: "Con eventos - referencia cromaticas",
       content: (
         <>
-          <p>
-            Ocupa 6 columnas en Desktop. Se utiliza dentro del bloque
-            institucional en páginas de área, antes del footer.
-          </p>
-
-
           <div className="calendar">
   <div className="calendar-header">
     <h2 className="calendar-title">Enero</h2>
@@ -687,8 +654,6 @@ const CalendarDocs: React.FC = () => {
   </div>
 </div>
 
-
-          <CodeCopy code={MapInstitution} />
         </>
       ),
     },

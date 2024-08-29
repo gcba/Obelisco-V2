@@ -4,6 +4,7 @@ import React from "react";
 
 import CodeBox from "@/components/CodeBox";
 import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
+import MainDescription from "@/components/Template/MainDescription";
 
 import {
   BUTTON_SOLID,
@@ -21,9 +22,15 @@ import {
 const ButtonDocs: React.FC = () => {
   const sections = [
     {
+      title: 'Botones',
+      content: (
+        <MainDescription description="Los botones permiten iniciar acciones o navegar a otras páginas. Las etiquetas de los botones expresan qué acción ocurrirá cuando la persona usuaria interactúe con él." />
+      ),
+      h1: true,
+    },
+    {
       id: "section-1",
       title: "Tipos",
-      h1: true,
       content: (
         <>
           <CodeBox codeHTML={BUTTON_SOLID}>

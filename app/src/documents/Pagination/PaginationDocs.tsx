@@ -2,31 +2,28 @@
 
 import React, { useState } from 'react';
 
-import CodeCopy from '@/components/CodeBox';
+import CodeBox from '@/components/CodeBox';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
-import { PaginationExample, PaginationExample1, PaginationExample2, PaginationExample3 } from './code-views';
+import { PAGINATION_DESCRIPTION, PAGINATION_INITIAL, PAGINATION_CENTRAL, PAGINATION_FINAL } from './code-views';
 
 const PaginationDocs: React.FC = () => {
   const [selectedExample, setSelectedExample] = useState<'inicial' | 'central' | 'final'>('inicial');
 
   const sections = [
     {
-      id: 'section-1',
       title: 'Paginado',
       h1: true,
       content: (
-        <MainDescription description='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur expedita autem in quae culpa illum sed, eveniet perferendis ratione soluta, est assumenda ducimus corporis. Deleniti dolore quaerat consequuntur dolorem sequi.' />
+        <MainDescription description='El paginado se utiliza para dividir contenido o datos en varias páginas, con un control para navegar a la página siguiente o anterior.' />
       ),
     },
     {
-      id: 'section-2',
+      id: 'section-1',
       title: 'Numerado',
       content: (
         <>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur expedita autem in quae culpa illum sed, eveniet perferendis ratione soluta, est assumenda ducimus corporis. Deleniti dolore quaerat consequuntur dolorem sequi?</p>
-
           <div className="row justify-content-center mt-4">
             <div className="col-auto">
               <div className="btn-group" role="group" aria-label="Basic example">
@@ -36,8 +33,9 @@ const PaginationDocs: React.FC = () => {
               </div>
             </div>
           </div>
+          <br /><br />
+          <CodeBox codeHTML={selectedExample === 'inicial' ? PAGINATION_INITIAL : selectedExample === 'central' ? PAGINATION_CENTRAL : PAGINATION_FINAL}>
           <div className="row mt-5 justify-content-center text-center">
-
             {selectedExample === 'inicial' && (
               <>
                 <div className="col-auto mb-4">
@@ -65,7 +63,6 @@ const PaginationDocs: React.FC = () => {
                     </ul>
                   </nav>
                 </div>
-                <CodeCopy code={PaginationExample1} />
               </>
             )}
             {selectedExample === 'central' && (
@@ -95,7 +92,6 @@ const PaginationDocs: React.FC = () => {
                     </ul>
                   </nav>
                 </div>
-                <CodeCopy code={PaginationExample2} />
               </>
             )}
             {selectedExample === 'final' && (
@@ -125,36 +121,40 @@ const PaginationDocs: React.FC = () => {
                     </ul>
                   </nav>
                 </div>
-                <CodeCopy code={PaginationExample3} />
               </>
             )}
-          </div>
+            </div>
+          </CodeBox>
+          
         </>
       ),
     },
     {
-      id: 'section-3',
+      id: 'section-2',
       title: 'Descriptivo',
       content: (
         <>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur expedita autem in quae culpa illum sed, eveniet perferendis ratione soluta, est assumenda ducimus corporis. Deleniti dolore quaerat consequuntur dolorem sequi?</p>
-          <div className="pagination">
-            <div className="page-navigation">
-              <div className="page-item">
-                <a className="btn page-link" href="#">
-                  <span className="page-previous-icon" aria-hidden="true"></span>
-                  <span className="page-next-text">Anterior</span>
-                </a>
-              </div>
-              <div className="page-item">
-                <a className="btn page-link" href="#">
-                  <span className="page-next-text">Siguiente</span>
-                  <span className="page-next-icon" aria-hidden="true"></span>
-                </a>
+          <CodeBox codeHTML={PAGINATION_DESCRIPTION}>
+            <div className="container">
+              <div className="pagination">
+                <div className="page-navigation">
+                  <div className="page-item">
+                    <a className="btn page-link" href="#">
+                      <span className="page-previous-icon" aria-hidden="true"></span>
+                      <span className="page-next-text">Anterior</span>
+                    </a>
+                  </div>
+                  <div className="page-item">
+                    <a className="btn page-link" href="#">
+                      <span className="page-next-text">Siguiente</span>
+                      <span className="page-next-icon" aria-hidden="true"></span>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <CodeCopy code={PaginationExample} />
+          </CodeBox>
+          <br /><br />
         </>
       ),
     },

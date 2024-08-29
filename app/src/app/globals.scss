@@ -55,24 +55,42 @@ hr {
       list-style: none;
       top: 140px;
       right: 0;
-      background-color: #fff;
+      background-color: transparent;
       padding: 0 0 0 2rem;
       position: sticky;
       display: flex;
       flex-direction: column;
       gap: 0.3rem;
 
+      li a {
+        font-weight: 600;
+        font-family: "Nunito","Open Sans",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+      }
+      
+      li:active a {
+        box-shadow: 0 0 0 0.125rem #218274;
+        border-radius: .5rem;
+      }
+
       a {
         text-decoration: none;
-        color: #38485c;
+        color: #101E37;
       }
 
       .active {
         a {
-          color: #007bc7;
+          color: #336ACC;
+
+          
+          &:focus, &:active {
+            box-shadow: 0 0 0 0.125rem #218274;
+          }
         }
       }
     }
+  }
+  .box-content section:last-child {
+    min-height: calc(100vh - 83px);
   }
 }
 

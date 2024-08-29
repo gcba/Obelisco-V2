@@ -1,23 +1,22 @@
-export const EGcodeSimpleAlert = `
+export const SIMPLE_ALERT =
+  `
     <div class="alert alert-info" role="alert">
       <p>Esta es la descripción de una alerta de información.</p>
     </div>
-    
     <div class="alert alert-primary" role="alert">
       <p>Esta es la descripción de una alerta de advertencia.</p>
     </div>
-    
     <div class="alert alert-success" role="alert">
       <p>Esta es la descripción de una alerta de éxito.</p>
     </div>
-    
     <div class="alert alert-danger" role="alert">
       <p>Esta es la descripción de una alerta de error.</p>
     </div>
 
 `;
 
-export const EGcodeWithClose = `
+export const WITH_CLOSE_ALERT =
+  `
     <div className="alert alert-primary alert-dismissible fade show" role="alert">
       Esta es la descripción de una alerta de información.
       <button
@@ -27,7 +26,6 @@ export const EGcodeWithClose = `
             aria-label="Cerrar">
       </button>
     </div>
-
     <div className="alert alert-success alert-dismissible fade show" role="alert">
       Esta es la descripción de una alerta de éxito.
       <button
@@ -37,7 +35,6 @@ export const EGcodeWithClose = `
             aria-label="Cerrar">
       </button>
     </div>
-
     <div className="alert alert-warning alert-dismissible fade show" role="alert">
       Esta es la descripción de una alerta de advertencia.
       <button
@@ -47,7 +44,6 @@ export const EGcodeWithClose = `
             aria-label="Cerrar">
       </button>
     </div>
-
     <div className="alert alert-danger alert-dismissible fade show" role="alert">
       Esta es la descripción de una alerta de error.
       <button
@@ -59,7 +55,7 @@ export const EGcodeWithClose = `
     </div>
 `;
 
-export const EGcodeHighlighted = `
+export const HIGHLIGTHED_ALERT = `
     <div className="alert alert-primary alert-dismissible fade show" role="alert">
         <strong>Este es un destacado de una alerta de información. </strong>
             Esta es la descripción de una alerta de información que continua al
@@ -71,7 +67,6 @@ export const EGcodeHighlighted = `
             aria-label="Cerrar">
         </button>
     </div>
-
     <div className="alert alert-success alert-dismissible fade show" role="alert">
         <strong>Este es un destacado de una alerta de información. </strong>
             Esta es la descripción de una alerta de información que continua al
@@ -83,7 +78,6 @@ export const EGcodeHighlighted = `
             aria-label="Cerrar">
         </button>
     </div>
-
     <div className="alert alert-warning alert-dismissible fade show" role="alert">
         <strong>Este es un destacado de una alerta de información. </strong>
             Esta es la descripción de una alerta de información que continua al
@@ -95,7 +89,6 @@ export const EGcodeHighlighted = `
             aria-label="Cerrar">
         </button>
     </div>
-
     <div className="alert alert-danger alert-dismissible fade show" role="alert">
         <strong>Este es un destacado de una alerta de información. </strong>
             Esta es la descripción de una alerta de información que continua al
@@ -109,7 +102,7 @@ export const EGcodeHighlighted = `
     </div>
 `;
 
-export const EGcodeHyperlink = `
+export const HYPERLINK_ALERT = `
     <div className="alert alert-primary alert-dismissible fade show" role="alert">
         <strong>Este es un destacado de una alerta de información. </strong>
             Esta es la descripción de una alerta de información que continua al
@@ -122,7 +115,6 @@ export const EGcodeHyperlink = `
             aria-label="Cerrar">
         </button>
     </div>
-
     <div className="alert alert-success alert-dismissible fade show" role="alert">
         <strong>Este es un destacado de una alerta de información. </strong>
             Esta es la descripción de una alerta de información que continua al
@@ -135,7 +127,6 @@ export const EGcodeHyperlink = `
             aria-label="Cerrar">
         </button>
     </div>
-
     <div className="alert alert-warning alert-dismissible fade show" role="alert">
         <strong>Este es un destacado de una alerta de información. </strong>
             Esta es la descripción de una alerta de información que continua al
@@ -148,7 +139,6 @@ export const EGcodeHyperlink = `
             aria-label="Cerrar">
         </button>
     </div>
-
     <div className="alert alert-danger alert-dismissible fade show" role="alert">
         <strong>Este es un destacado de una alerta de información. </strong>
             Esta es la descripción de una alerta de información que continua al
@@ -163,7 +153,7 @@ export const EGcodeHyperlink = `
     </div>
 `;
 
-export const EGcodeListLink = `
+export const LIST_LINK_ALERT = `
           <div className="alert alert-primary alert-dismissible fade show" role="alert">
             <strong>Este es un destacado de una alerta de información. </strong>
             Esta es la descripción de una alerta de información que continua al
@@ -198,7 +188,7 @@ export const EGcodeListLink = `
           </div>
 `;
 
-export const EGcodeListLinkWithDescription = `
+export const WITH_DESCRIPTION_ALERT = `
           <div className="alert alert-primary alert-dismissible fade show" role="alert">
             <strong>Este es un destacado de una alerta de información. </strong>
             Esta es la descripción de una alerta de información que continua al

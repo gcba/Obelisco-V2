@@ -206,98 +206,100 @@ const TabsDocs: React.FC = () => {
       id: 'section-2',
       title: 'Ancho fijo',
       content: (
-        <CodeBox codeHTML={TABS_FIXED_WIDTH}>
-          <div className="container">
-            <nav className="tabs-box" aria-label="Navegación por pestañas">
-              <ul className="nav nav-pills tabs fixed-width" id="icon-myTab" role="tablist">
-                <li className="nav-item" role="presentation">
-                  <button
-                    className="nav-link active"
-                    data-bs-toggle="tab"
-                    data-bs-target="#panel-width-content-1"
-                    type="button"
-                    role="tab"
-                    aria-controls="panel-width-content-1"
-                    aria-selected="true"
-                    id="tab-width-1"
-                  >
-                    <div className="nav-icon">
-                      Pestaña 1<span className="material-symbols-rounded">home</span>
-                    </div>
-                  </button>
-                </li>
-                <li className="nav-item" role="presentation">
-                  <button
-                    className="nav-link"
-                    data-bs-toggle="tab"
-                    data-bs-target="#panel-width-content-2"
-                    type="button"
-                    role="tab"
-                    aria-controls="panel-width-content-2"
-                    aria-selected="false"
-                    id="tab-width-2"
-                  >
-                    <div className="nav-icon">
-                      Pestaña 2<span className="material-symbols-rounded">home</span>
-                    </div>
-                  </button>
-                </li>
-                <li className="nav-item" role="presentation">
-                  <button
-                    className="nav-link"
-                    data-bs-toggle="tab"
-                    data-bs-target="#panel-width-content-3"
-                    type="button"
-                    role="tab"
-                    aria-controls="panel-width-content-3"
-                    aria-selected="false"
-                    id="tab-width-3"
-                    disabled
-                  >
-                    <div className="nav-icon">
-                      Pestaña 3<span className="material-symbols-rounded">home</span>
-                    </div>
-                  </button>
-                </li>
-                <li className="nav-item" role="presentation">
-                  <button
-                    className="nav-link"
-                    data-bs-toggle="tab"
-                    data-bs-target="#panel-width-content-4"
-                    type="button"
-                    role="tab"
-                    aria-controls="panel-width-content-4"
-                    aria-selected="false"
-                    id="tab-width-4"
-                  >
-                    <div className="nav-icon">
-                      Pestaña 4<span className="material-symbols-rounded">home</span>
-                    </div>
-                  </button>
-                </li>
-              </ul>
-            </nav>
-            <div className="tab-content" id="icon-myTabContent">
-              <div
-                className="tab-pane fade show active"
-                id="panel-width-content-1"
-                role="tabpanel"
-                aria-labelledby="tab-width-1"
-              >
-                Contenido Pestaña 1
-              </div>
-              <div className="tab-pane fade" id="panel-width-content-2" role="tabpanel" aria-labelledby="tab-width-2">
-                Contenido Pestaña 2
-              </div>
-              <div className="tab-pane fade" id="panel-width-content-3" role="tabpanel" aria-labelledby="tab-width-3">
-                Contenido Pestaña 3
-              </div>
-              <div className="tab-pane fade" id="panel-width-content-4" role="tabpanel" aria-labelledby="tab-width-4">
-                Contenido Pestaña 4
+        <div className="col-12 max-720">          
+          <CodeBox codeHTML={TABS_FIXED_WIDTH}>
+            <div className="container">
+              <nav className="tabs-box" aria-label="Navegación por pestañas">
+                <ul className="nav nav-pills tabs fixed-width" id="icon-myTab" role="tablist">
+                  <li className="nav-item" role="presentation">
+                    <button
+                      className="nav-link active"
+                      data-bs-toggle="tab"
+                      data-bs-target="#panel-width-content-1"
+                      type="button"
+                      role="tab"
+                      aria-controls="panel-width-content-1"
+                      aria-selected="true"
+                      id="tab-width-1"
+                    >
+                      <div className="nav-icon">
+                        Pestaña 1<span className="material-symbols-rounded">home</span>
+                      </div>
+                    </button>
+                  </li>
+                  <li className="nav-item" role="presentation">
+                    <button
+                      className="nav-link"
+                      data-bs-toggle="tab"
+                      data-bs-target="#panel-width-content-2"
+                      type="button"
+                      role="tab"
+                      aria-controls="panel-width-content-2"
+                      aria-selected="false"
+                      id="tab-width-2"
+                    >
+                      <div className="nav-icon">
+                        Pestaña 2<span className="material-symbols-rounded">home</span>
+                      </div>
+                    </button>
+                  </li>
+                  <li className="nav-item" role="presentation">
+                    <button
+                      className="nav-link"
+                      data-bs-toggle="tab"
+                      data-bs-target="#panel-width-content-3"
+                      type="button"
+                      role="tab"
+                      aria-controls="panel-width-content-3"
+                      aria-selected="false"
+                      id="tab-width-3"
+                      disabled
+                    >
+                      <div className="nav-icon">
+                        Pestaña 3<span className="material-symbols-rounded">home</span>
+                      </div>
+                    </button>
+                  </li>
+                  <li className="nav-item" role="presentation">
+                    <button
+                      className="nav-link"
+                      data-bs-toggle="tab"
+                      data-bs-target="#panel-width-content-4"
+                      type="button"
+                      role="tab"
+                      aria-controls="panel-width-content-4"
+                      aria-selected="false"
+                      id="tab-width-4"
+                    >
+                      <div className="nav-icon">
+                        Pestaña 4<span className="material-symbols-rounded">home</span>
+                      </div>
+                    </button>
+                  </li>
+                </ul>
+              </nav>
+              <div className="tab-content" id="icon-myTabContent">
+                <div
+                  className="tab-pane fade show active"
+                  id="panel-width-content-1"
+                  role="tabpanel"
+                  aria-labelledby="tab-width-1"
+                >
+                  Contenido Pestaña 1
+                </div>
+                <div className="tab-pane fade" id="panel-width-content-2" role="tabpanel" aria-labelledby="tab-width-2">
+                  Contenido Pestaña 2
+                </div>
+                <div className="tab-pane fade" id="panel-width-content-3" role="tabpanel" aria-labelledby="tab-width-3">
+                  Contenido Pestaña 3
+                </div>
+                <div className="tab-pane fade" id="panel-width-content-4" role="tabpanel" aria-labelledby="tab-width-4">
+                  Contenido Pestaña 4
+                </div>
               </div>
             </div>
-          </div>
-        </CodeBox>
+          </CodeBox>
+        </div>
       ),
     },
     {

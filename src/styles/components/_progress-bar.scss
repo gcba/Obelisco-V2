@@ -24,6 +24,7 @@ $progress-bg: $grisulado-100;
   border-radius: 20px;
   outline: 0.25rem solid transparent;
   outline-offset: -2px;
+
   //Por accesibilidad en Modo Alto Contraste, se agrega color de fondo blanco a la barra de progreso
   @media (forced-colors: active) {
     forced-color-adjust: none;
@@ -37,9 +38,6 @@ $progress-bg: $grisulado-100;
 
   &-item {
     padding-left: $progression-padding-left;
-  }
-
-  &-item {
     color: $progression-font-color;
     position: relative;
     display: flex;
@@ -47,7 +45,7 @@ $progress-bg: $grisulado-100;
     flex-grow: 1;
     padding-bottom: $progression-text-spacing;
 
-    &:before {
+    &::before {
       content: '';
       position: absolute;
       background-color: $progression-default-color;
@@ -58,7 +56,7 @@ $progress-bg: $grisulado-100;
       top: $font-size-base / 2;
     }
 
-    &:not(:last-child):after {
+    &:not(:last-child)::after {
       content: '';
       position: absolute;
       background-color: $progression-default-color;
@@ -81,22 +79,22 @@ $progress-bg: $grisulado-100;
       display: block;
     }
 
-    &:before {
+    &::before {
       top: $line-height-base / 2 - $font-size-base / 2;
       width: $progression-circle-active-size;
       height: $progression-circle-active-size;
       left: 0;
     }
 
-    &:not(:last-child):after {
+    &:not(:last-child)::after {
       background: linear-gradient(0deg, $progression-default-color 50%, $body-color 50%);
     }
   }
 
   .active,
   .completed {
-    &:before,
-    &:not(:last-child):after {
+    &::before,
+    &:not(:last-child)::after {
       background-color: $body-color;
     }
   }

@@ -1,6 +1,6 @@
-import Link from "next/link";
-import "./home.scss";
-import React from "react";
+import Link from 'next/link';
+import './home.scss';
+import React from 'react';
 
 const HomeDocs = () => (
   <div className="row box-home">
@@ -10,22 +10,16 @@ const HomeDocs = () => (
           Crea aplicaciones Web <strong>con velocidad</strong>
         </h1>
         <p>
-          Descubre Obelisco v2, la librería de estilos de componentes que
-          impulsa la construcción rápida y elegante de interfaces.
+          Descubre Obelisco v2, la librería de estilos de componentes que impulsa la construcción rápida y elegante de
+          interfaces.
         </p>
       </div>
       <div className="d-flex flex-wrap gap-2">
-        <Link
-          href="https://github.com/davisLjr/obelisco-v2"
-          className="btn btn-primary btn-lg btn-icon"
-        >
+        <Link href="https://github.com/davisLjr/obelisco-v2" className="btn btn-primary btn-lg btn-icon">
           <i className="bx bxl-github"></i>
           Github
         </Link>
-        <Link
-          href="/getting-started"
-          className="btn btn-secondary btn-lg btn-icon"
-        >
+        <Link href="/getting-started" className="btn btn-secondary btn-lg btn-icon">
           Get Started
           <i className="bx bx-right-arrow-alt"></i>
         </Link>

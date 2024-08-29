@@ -1,21 +1,21 @@
-import CodeBox from "@/components/CodeBox";
-import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
-import MainDescription from "@/components/Template/MainDescription";
+import CodeBox from '@/components/CodeBox';
+import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
+import MainDescription from '@/components/Template/MainDescription';
 
-import { MAP_INSTITUTION, MAP_LATERAL } from "./code-views";
+import { MAP_INSTITUTION, MAP_LATERAL } from './code-views';
 
 const MapDocs: React.FC = () => {
   const sections = [
     {
-      title: "Mapa",
+      title: 'Mapa',
       h1: true,
       content: (
         <MainDescription description="El mapa brinda contexto sobre una ubicación geográfica y redirige a la persona usuaria al mapa interactivo de Buenos Aires. A su vez, permite a las personas usuarias anticipar y planificar sus acciones." />
       ),
     },
     {
-      id: "section-1",
-      title: "Lateral",
+      id: 'section-1',
+      title: 'Lateral',
       content: (
         <CodeBox codeHTML={MAP_LATERAL}>
           <div className="container">
@@ -35,7 +35,7 @@ const MapDocs: React.FC = () => {
                         loading="lazy"
                         tabIndex={-1}
                         referrerPolicy="no-referrer-when-downgrade"
-                        style={{ border: "0px" }}
+                        style={{ border: '0px' }}
                       ></iframe>
                     </div>
                     <a
@@ -56,8 +56,8 @@ const MapDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-2",
-      title: "Institucional",
+      id: 'section-2',
+      title: 'Institucional',
       content: (
         <CodeBox codeHTML={MAP_INSTITUTION}>
           <div className="container">
@@ -77,7 +77,7 @@ const MapDocs: React.FC = () => {
                         loading="lazy"
                         tabIndex={-1}
                         referrerPolicy="no-referrer-when-downgrade"
-                        style={{ border: "0px" }}
+                        style={{ border: '0px' }}
                       ></iframe>
                     </div>
                     <a

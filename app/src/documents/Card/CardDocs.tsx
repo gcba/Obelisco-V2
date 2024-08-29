@@ -20,17 +20,13 @@ const CardDocs: React.FC = () => {
       title: 'Horizontal',
       content: (
         <CodeBox codeHTML={CARDS}>
-          <div className="container">
-            lorem
-          </div>
+          <div className="container">lorem</div>
         </CodeBox>
       ),
     },
   ];
 
-  return (
-    <DocumentationTemplate sections={sections} />
-  );
+  return <DocumentationTemplate sections={sections} />;
 };
 
 export default CardDocs;

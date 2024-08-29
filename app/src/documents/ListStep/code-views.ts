@@ -1,4 +1,3 @@
-export const LIST_STEP =
-  `
+export const LIST_STEP = `
     lorem
 `;

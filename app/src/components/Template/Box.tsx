@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, { ReactNode } from 'react';
 
 interface BoxTemplateProps {
   children: ReactNode | ReactNode[];
@@ -6,11 +6,7 @@ interface BoxTemplateProps {
 }
 
 const BoxTemplate = ({ children, className }: BoxTemplateProps) => {
-  return (
-    <div className={className}>
-      {children}
-    </div>
-  );
+  return <div className={className}>{children}</div>;
 };
 
 export default BoxTemplate;

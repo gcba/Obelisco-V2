@@ -1,5 +1,4 @@
-export const NAV_HORIZONTAL_SIMPLE =
-  `
+export const NAV_HORIZONTAL_SIMPLE = `
   <nav>
     <ul class="nav flex-row nav-pills">
       <li class="nav-item">
@@ -19,8 +18,7 @@ export const NAV_HORIZONTAL_SIMPLE =
     </ul>
   </nav>
 `;
-export const NAV_HORIZONTAL_ICON_RIGHT =
-  `
+export const NAV_HORIZONTAL_ICON_RIGHT = `
   <nav>
     <ul class="nav flex-row nav-pills">
       <li class="nav-item">
@@ -58,8 +56,7 @@ export const NAV_HORIZONTAL_ICON_RIGHT =
     </ul>
   </nav>
 `;
-export const NAV_HORIZONTAL_ICON =
-  `
+export const NAV_HORIZONTAL_ICON = `
   <nav>
     <ul class="nav flex-row nav-pills">
       <li class="nav-item">
@@ -97,8 +94,7 @@ export const NAV_HORIZONTAL_ICON =
     </ul>
   </nav>
 `;
-export const EGcodeWithIconHorizontal =
-  `
+export const EGcodeWithIconHorizontal = `
   <nav>
     <ul class="nav flex-row nav-pills">
       <li class="nav-item">

@@ -20,7 +20,7 @@ $carousel-margin-bottom: 0.25rem * 4;
 
 /* === Custom variables and mixins === */
 
-@mixin makeGrid($images) {
+@mixin make-grid($images) {
   @if $images == 1 {
     &:nth-child(1) {
       grid-area: 1 / 1 / 2 / 5;
@@ -268,43 +268,43 @@ $carousel-margin-bottom: 0.25rem * 4;
 
   &.gallery-max-1 {
     .gallery-grid-item {
-      @include makeGrid(1);
+      @include make-grid(1);
     }
   }
 
   &.gallery-max-2 {
     .gallery-grid-item {
-      @include makeGrid(2);
+      @include make-grid(2);
     }
   }
 
   &.gallery-max-3 {
     .gallery-grid-item {
-      @include makeGrid(3);
+      @include make-grid(3);
     }
   }
 
   &.gallery-max-4 {
     .gallery-grid-item {
-      @include makeGrid(4);
+      @include make-grid(4);
     }
   }
 
   &.gallery-max-5 {
     .gallery-grid-item {
-      @include makeGrid(5);
+      @include make-grid(5);
     }
   }
 
   &.gallery-max-6 {
     .gallery-grid-item {
-      @include makeGrid(6);
+      @include make-grid(6);
     }
   }
 
   &.gallery-max-7 {
     .gallery-grid-item {
-      @include makeGrid(7);
+      @include make-grid(7);
     }
   }
 

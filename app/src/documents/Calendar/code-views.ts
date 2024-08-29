@@ -482,7 +482,7 @@ export const CALENDAR_COLLAPSE = `<div class="calendar">
     </div>
 </div>`;
 
-export const CALENDAR_CHROMATIC  = `<div class="calendar">
+export const CALENDAR_CHROMATIC = `<div class="calendar">
     <div class="calendar-header">
         <h2 class="calendar-title">Enero</h2>
         <span class="calendar-year">2024</span>

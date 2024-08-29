@@ -23,9 +23,11 @@ $checkbox-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"
     }
     .form-#{$type}-input {
       border-color: $hover-color;
+
       &:checked {
         background-color: $disabled-text;
       }
+
       &.is-invalid {
         border-color: $hover-color;
       }
@@ -53,6 +55,7 @@ $checkbox-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"
       ~.form-#{$type}-label {
         padding-right: .25rem;
         box-shadow: $focus-box-shadow;
+
         &[aria-label] {
           padding-right: 0;
         }
@@ -79,6 +82,7 @@ $checkbox-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"
         cursor: not-allowed;
       }
     }
+
     &:active {
       background-color: unset;
       filter: brightness(100%);
@@ -91,6 +95,7 @@ $checkbox-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"
         border-color: $active-color;
         background-color: $active-color;
       }
+
       &:focus, &:focus-visible {
         box-shadow: none;
       }
@@ -108,6 +113,7 @@ $checkbox-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"
     .form-#{$type}-input {
       left: unset;
       right: 0;
+
       &:focus {
         ~.form-#{$type}-label {
           padding-right: 2.5rem; //40px
@@ -126,6 +132,7 @@ $checkbox-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"
 // Radio
 .form-radio {
   @include form-check('radio');
+
   .form-radio-input {
     &:checked {
       background-image: none;
@@ -133,14 +140,17 @@ $checkbox-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"
       outline: .25rem solid transparent;
       outline-offset: -.625rem;
     }
+
     &.is-invalid:checked {
       box-shadow: inset 0 0 0 3.4px $white;
     }
   }
 }
+
 // Checkbox
 .form-checkbox {
   @include form-check('checkbox');
+
   .form-checkbox-input {
     &:checked {
       background-image: $checkbox-image;

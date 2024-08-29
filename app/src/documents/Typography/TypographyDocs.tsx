@@ -1,21 +1,21 @@
-import CodeBox from "@/components/CodeBox";
-import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
-import MainDescription from "@/components/Template/MainDescription";
+import CodeBox from '@/components/CodeBox';
+import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
+import MainDescription from '@/components/Template/MainDescription';
 
-import { HEADLINE, HEADINGS, BODY, OTHER_STYLES, DEFAULT_LISTS, BLOCKQUOTE } from "./code-views";
+import { HEADLINE, HEADINGS, BODY, OTHER_STYLES, DEFAULT_LISTS, BLOCKQUOTE } from './code-views';
 
 const TypographyDocs: React.FC = () => {
   const sections = [
     {
       h1: true,
-      title: "Tipografía",
+      title: 'Tipografía',
       content: (
         <MainDescription description="La tipografía es nuestro sistema de fuentes. Las buenas prácticas ayudan a presentar el contenido de manera clara y eficiente." />
       ),
     },
     {
-      id: "section-1",
-      title: "Títulos",
+      id: 'section-1',
+      title: 'Títulos',
       content: (
         <>
           <CodeBox codeHTML={HEADINGS}>
@@ -32,8 +32,8 @@ const TypographyDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-2",
-      title: "Titulares",
+      id: 'section-2',
+      title: 'Titulares',
       content: (
         <>
           <CodeBox codeHTML={HEADLINE}>
@@ -47,8 +47,8 @@ const TypographyDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-3",
-      title: "Cuerpo",
+      id: 'section-3',
+      title: 'Cuerpo',
       content: (
         <>
           <CodeBox codeHTML={BODY}>
@@ -66,8 +66,8 @@ const TypographyDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-4",
-      title: "Otros estilos",
+      id: 'section-4',
+      title: 'Otros estilos',
       content: (
         <>
           <CodeBox codeHTML={OTHER_STYLES}>
@@ -84,8 +84,8 @@ const TypographyDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-5",
-      title: "Listas predeterminadas",
+      id: 'section-5',
+      title: 'Listas predeterminadas',
       content: (
         <>
           <CodeBox codeHTML={DEFAULT_LISTS}>
@@ -107,29 +107,29 @@ const TypographyDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-6",
-      title: "Citas",
+      id: 'section-6',
+      title: 'Citas',
       content: (
         <>
           <CodeBox codeHTML={BLOCKQUOTE}>
             <div className="container">
               <blockquote>
-                <p>Este es un apartado del texto que se quiere destacar por su importancia dentro del contenido de la página.</p>
+                <p>
+                  Este es un apartado del texto que se quiere destacar por su importancia dentro del contenido de la
+                  página.
+                </p>
                 <p className="author">Nombre del autor de la cita</p>
               </blockquote>
             </div>
           </CodeBox>
-          <br /><br />
+          <br />
+          <br />
         </>
       ),
     },
   ];
 
-  return (
-    <DocumentationTemplate
-      sections={sections}
-    />
-  );
+  return <DocumentationTemplate sections={sections} />;
 };
 
 export default TypographyDocs;

@@ -1,4 +1,3 @@
-export const TABLE =
-  `
+export const TABLE = `
     lorem
 `;

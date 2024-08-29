@@ -18,9 +18,7 @@ const ListInformativeDocs: React.FC = () => {
       title: 'Con viñeta',
       content: (
         <CodeBox codeHTML={LIST_INFORMATIVE}>
-          <div className="container">
-            lorem
-          </div>
+          <div className="container">lorem</div>
         </CodeBox>
       ),
     },

@@ -13,7 +13,7 @@
     "i-app": "cd app && npm install",
     "format": "prettier --write \"src/**/*.scss\"",
     "lint": "stylelint \"src/**/*.scss\"",
-    "lint-fix": "stylelint \"src/**/*.scss\" --fix"
+    "lint:fix": "stylelint \"src/**/*.scss\" --fix"
   },
   "keywords": [],
   "author": "",

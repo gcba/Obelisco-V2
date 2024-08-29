@@ -2,5 +2,7 @@
 next-env.d.ts
 node_modules
 public
-yarn.lock
 package-lock.json
+.eslintrc.json.prettierrc.json
+next.config.mjs
+package.json

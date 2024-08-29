@@ -19,10 +19,12 @@ const FormSearchDocs: React.FC = () => {
       content: (
         <CodeBox codeHTML={SEARCH}>
           <div className="container">
-            <div  className="col-12 col-lg-6">
+            <div className="col-12 col-lg-6">
               <form>
-                <label htmlFor="search" className="form-label">Ejemplo Buscador</label>
-                <div className='search-container'>
+                <label htmlFor="search" className="form-label">
+                  Ejemplo Buscador
+                </label>
+                <div className="search-container">
                   <input type="search" className="form-control input-search" id="search" placeholder="Buscador" />
                   <button className="reset" type="reset" aria-label="Borrar"></button>
                 </div>
@@ -38,11 +40,18 @@ const FormSearchDocs: React.FC = () => {
       content: (
         <CodeBox codeHTML={SEARCH_BUTTON}>
           <div className="container">
-            <div  className="col-12 col-lg-6">
+            <div className="col-12 col-lg-6">
               <form>
-                <label htmlFor="search-btn" className="form-label">Ejemplo Buscador con botón</label>
-                <div className='search-container'>
-                  <input type="search" className="form-control input-search input-search-with-button" id="search-btn" placeholder="Buscador" />
+                <label htmlFor="search-btn" className="form-label">
+                  Ejemplo Buscador con botón
+                </label>
+                <div className="search-container">
+                  <input
+                    type="search"
+                    className="form-control input-search input-search-with-button"
+                    id="search-btn"
+                    placeholder="Buscador"
+                  />
                   <button className="reset" type="reset" aria-label="Borrar"></button>
                   <button className="button-search" type="submit" aria-label="Buscar"></button>
                 </div>
@@ -58,15 +67,23 @@ const FormSearchDocs: React.FC = () => {
       content: (
         <CodeBox codeHTML={SEARCH_DISABLED}>
           <div className="container">
-              <div  className="col-12 col-lg-6">
-                <form>
-                  <label htmlFor="search-btn" className="form-label">Ejemplo buscador deshabilitado</label>
-                  <div className='search-container'>
-                    <input type="search" className="form-control input-search input-search-with-button" id="search-btn" placeholder="Buscador" disabled />
-                    <button className="reset" type="reset" aria-label="Borrar"></button>
-                  </div>
-                </form>
-              </div>
+            <div className="col-12 col-lg-6">
+              <form>
+                <label htmlFor="search-btn" className="form-label">
+                  Ejemplo buscador deshabilitado
+                </label>
+                <div className="search-container">
+                  <input
+                    type="search"
+                    className="form-control input-search input-search-with-button"
+                    id="search-btn"
+                    placeholder="Buscador"
+                    disabled
+                  />
+                  <button className="reset" type="reset" aria-label="Borrar"></button>
+                </div>
+              </form>
+            </div>
           </div>
         </CodeBox>
       ),

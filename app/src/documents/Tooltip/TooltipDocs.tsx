@@ -1,21 +1,21 @@
-import CodeBox from "@/components/CodeBox";
-import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
-import MainDescription from "@/components/Template/MainDescription";
+import CodeBox from '@/components/CodeBox';
+import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
+import MainDescription from '@/components/Template/MainDescription';
 
-import { TOOLTIP_BUTTONS, TOOLTIP_ICONS } from "./code-views";
+import { TOOLTIP_BUTTONS, TOOLTIP_ICONS } from './code-views';
 
 const TooltipDocs: React.FC = () => {
   const sections = [
     {
-      title: "Tooltip",
+      title: 'Tooltip',
       h1: true,
       content: (
         <MainDescription description="Los tooltip muestran ayuda contextual o información sobre componentes específicos cuando un usuario se desplaza o se enfoca en ellos." />
       ),
     },
     {
-      id: "section-1",
-      title: "Con botones",
+      id: 'section-1',
+      title: 'Con botones',
       content: (
         <CodeBox codeHTML={TOOLTIP_BUTTONS}>
           <div className="row mb-4 justify-content-center">
@@ -25,31 +25,15 @@ const TooltipDocs: React.FC = () => {
                 data-tooltip='Esta es la descripción de un tooltip "abajo-derecha".'
                 tabIndex={0}
               >
-                <button
-                  type="button"
-                  className="btn btn-primary btn-icon"
-                  aria-label="Botón"
-                >
-                  <span className="material-symbols-rounded o-icon">
-                    subdirectory_arrow_right
-                  </span>
+                <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
+                  <span className="material-symbols-rounded o-icon">subdirectory_arrow_right</span>
                 </button>
               </span>
             </div>
             <div className="col-auto">
-              <span
-                data-direction="bottom"
-                data-tooltip='Esta es la descripción de un tooltip "abajo".'
-                tabIndex={0}
-              >
-                <button
-                  type="button"
-                  className="btn btn-primary btn-icon"
-                  aria-label="Botón"
-                >
-                  <span className="material-symbols-rounded o-icon">
-                    arrow_downward
-                  </span>
+              <span data-direction="bottom" data-tooltip='Esta es la descripción de un tooltip "abajo".' tabIndex={0}>
+                <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
+                  <span className="material-symbols-rounded o-icon">arrow_downward</span>
                 </button>
               </span>
             </div>
@@ -59,14 +43,8 @@ const TooltipDocs: React.FC = () => {
                 data-tooltip='Esta es la descripción de un tooltip "abajo-izquierda".'
                 tabIndex={0}
               >
-                <button
-                  type="button"
-                  className="btn btn-primary btn-icon"
-                  aria-label="Botón"
-                >
-                  <span className="material-symbols-rounded o-icon">
-                    subdirectory_arrow_left
-                  </span>
+                <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
+                  <span className="material-symbols-rounded o-icon">subdirectory_arrow_left</span>
                 </button>
               </span>
             </div>
@@ -79,11 +57,7 @@ const TooltipDocs: React.FC = () => {
                 data-tooltip='Esta es la descripción de un tooltip "derecha-abajo".'
                 tabIndex={0}
               >
-                <button
-                  type="button"
-                  className="btn btn-primary btn-icon"
-                  aria-label="Botón"
-                >
+                <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
                   <span className="material-symbols-rounded o-icon">south_east</span>
                 </button>
               </span>
@@ -93,14 +67,8 @@ const TooltipDocs: React.FC = () => {
                 data-tooltip='Esta es la descripción de un tooltip "derecha".'
                 tabIndex={0}
               >
-                <button
-                  type="button"
-                  className="btn btn-primary btn-icon"
-                  aria-label="Botón"
-                >
-                  <span className="material-symbols-rounded o-icon">
-                    arrow_forward
-                  </span>
+                <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
+                  <span className="material-symbols-rounded o-icon">arrow_forward</span>
                 </button>
               </span>
               <span
@@ -108,11 +76,7 @@ const TooltipDocs: React.FC = () => {
                 data-tooltip='Esta es la descripción de un tooltip "derecha-arriba".'
                 tabIndex={0}
               >
-                <button
-                  type="button"
-                  className="btn btn-primary btn-icon"
-                  aria-label="Botón"
-                >
+                <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
                   <span className="material-symbols-rounded o-icon">north_east</span>
                 </button>
               </span>
@@ -124,11 +88,7 @@ const TooltipDocs: React.FC = () => {
                 data-tooltip='Esta es la descripción de un tooltip "izquierda-abajo".'
                 tabIndex={0}
               >
-                <button
-                  type="button"
-                  className="btn btn-primary btn-icon"
-                  aria-label="Botón"
-                >
+                <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
                   <span className="material-symbols-rounded o-icon">south_west</span>
                 </button>
               </span>
@@ -138,14 +98,8 @@ const TooltipDocs: React.FC = () => {
                 data-tooltip='Esta es la descripción de un tooltip "izquierda".'
                 tabIndex={0}
               >
-                <button
-                  type="button"
-                  className="btn btn-primary btn-icon"
-                  aria-label="Botón"
-                >
-                  <span className="material-symbols-rounded o-icon">
-                    keyboard_backspace
-                  </span>
+                <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
+                  <span className="material-symbols-rounded o-icon">keyboard_backspace</span>
                 </button>
               </span>
               <span
@@ -153,11 +107,7 @@ const TooltipDocs: React.FC = () => {
                 data-tooltip='Esta es la descripción de un tooltip "izquierda-arriba".'
                 tabIndex={0}
               >
-                <button
-                  type="button"
-                  className="btn btn-primary btn-icon"
-                  aria-label="Botón"
-                >
+                <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
                   <span className="material-symbols-rounded o-icon">north_west</span>
                 </button>
               </span>
@@ -170,29 +120,15 @@ const TooltipDocs: React.FC = () => {
                 data-tooltip='Esta es la descripción de un tooltip "arriba-derecha".'
                 tabIndex={0}
               >
-                <button
-                  type="button"
-                  className="btn btn-primary btn-icon"
-                  aria-label="Botón"
-                >
+                <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
                   <span className="material-symbols-rounded o-icon">turn_right</span>
                 </button>
               </span>
             </div>
             <div className="col-auto">
-              <span
-                data-direction="top"
-                data-tooltip='Esta es la descripción de un tooltip "arriba".'
-                tabIndex={0}
-              >
-                <button
-                  type="button"
-                  className="btn btn-primary btn-icon"
-                  aria-label="Botón"
-                >
-                  <span className="material-symbols-rounded o-icon">
-                    arrow_upward
-                  </span>
+              <span data-direction="top" data-tooltip='Esta es la descripción de un tooltip "arriba".' tabIndex={0}>
+                <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
+                  <span className="material-symbols-rounded o-icon">arrow_upward</span>
                 </button>
               </span>
             </div>
@@ -202,11 +138,7 @@ const TooltipDocs: React.FC = () => {
                 data-tooltip='Esta es la descripción de un tooltip "arriba-izquierda".'
                 tabIndex={0}
               >
-                <button
-                  type="button"
-                  className="btn btn-primary btn-icon"
-                  aria-label="Botón"
-                >
+                <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
                   <span className="material-symbols-rounded o-icon">turn_left</span>
                 </button>
               </span>
@@ -216,8 +148,8 @@ const TooltipDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-2",
-      title: "Con iconos",
+      id: 'section-2',
+      title: 'Con iconos',
       content: (
         <CodeBox codeHTML={TOOLTIP_ICONS}>
           <div className="row mb-4 justify-content-center">

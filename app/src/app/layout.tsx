@@ -2,9 +2,9 @@
 /* eslint-disable @next/next/no-page-custom-font */
 /* eslint-disable @next/next/no-sync-scripts */
 
-import "./globals.scss";
-import HeaderDesktop from "@/components/Layout/Headers/Desktop";
-import MainLayout from "@/components/Layout/main-layout";
+import './globals.scss';
+import HeaderDesktop from '@/components/Layout/Headers/Desktop';
+import MainLayout from '@/components/Layout/main-layout';
 
 export default function RootLayout({
   children,
@@ -22,25 +22,20 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap"
           rel="stylesheet"
         />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
-          rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
       </head>
       <body>
         <HeaderDesktop />
         <div className="layout">
           <main>
-            <MainLayout >
-              {children}
-            </MainLayout>
+            <MainLayout>{children}</MainLayout>
           </main>
         </div>
 
         <script
           src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
           integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-          crossOrigin ="anonymous"
+          crossOrigin="anonymous"
         ></script>
         <script
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"

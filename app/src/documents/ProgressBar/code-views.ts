@@ -1,5 +1,4 @@
-export const PROGRESSBAR_TYPES_INFO =
-  `
+export const PROGRESSBAR_TYPES_INFO = `
     <div class="progress">
         <div
             class="progress-bar bg-info"
@@ -38,8 +37,7 @@ export const PROGRESSBAR_TYPES_INFO =
     </div>
 `;
 
-export const PROGRESSBAR_TYPES_SUCCESS =
-  `
+export const PROGRESSBAR_TYPES_SUCCESS = `
     <div class="progress">
         <div
             class="progress-bar bg-success"
@@ -78,8 +76,7 @@ export const PROGRESSBAR_TYPES_SUCCESS =
     </div>
 `;
 
-export const PROGRESSBAR_DESCRIPTION_INFO =
-  `
+export const PROGRESSBAR_DESCRIPTION_INFO = `
     <p class="steps">Descripción</p>
     <div class="progress">
         <div
@@ -106,8 +103,7 @@ export const PROGRESSBAR_DESCRIPTION_INFO =
         ></div>
     </div>
 `;
-export const PROGRESSBAR_DESCRIPTION_SUCCESS =
-  `
+export const PROGRESSBAR_DESCRIPTION_SUCCESS = `
     <p class="steps">Descripción</p>
     <div class="progress">
         <div

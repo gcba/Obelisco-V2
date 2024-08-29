@@ -36,9 +36,11 @@
     font-weight: map-get($styles, font-weight);
   }
 }
+
 p {
   @extend .text-md;
 }
+
 small,
 .small {
   @extend .text-sm;
@@ -48,6 +50,7 @@ small,
   text-decoration: underline;
   text-decoration-thickness: 1px;
 }
+
 .underline-2 {
   text-decoration: underline;
 }
@@ -57,10 +60,12 @@ blockquote {
   margin: 0;
   border-left: 0.25rem solid $grisulado-700;
   font-style: italic;
+
   p {
     font-size: $lg-body-fs;
     margin-bottom: 0.75rem;
   }
+
   .author {
     font-size: $sm-body-fs;
     font-weight: $font-weight-semibold;

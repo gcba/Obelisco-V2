@@ -16,7 +16,7 @@ $nav-link-fixed-width: 15.625rem;
     width: fit-content;
     overflow-x: hidden;
 
-    /*Esta clase "fixed-width" genera la variante ancho completo de tabs */
+    /* Esta clase "fixed-width" genera la variante ancho completo de tabs */
     &.fixed-width {
       .nav-item>.nav-link {
         width: auto;
@@ -45,8 +45,7 @@ $nav-link-fixed-width: 15.625rem;
   /* Estilos de Tabs, moficia los estilos de cada item de la pestaña */
   .tabs {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-flow: row nowrap;
     text-align: center;
     padding-bottom: 0.25rem;
 
@@ -65,11 +64,11 @@ $nav-link-fixed-width: 15.625rem;
         &:active {
           font-weight: $font-weight-bold;
           color: $body-color;
-          box-shadow: inset 0px -4px 0px 0px $nav-link-border-active;
+          box-shadow: inset 0 -4px 0 0 $nav-link-border-active;
           border-radius: 0;
 
           &:hover {
-            box-shadow: inset 0px -4px 0px 0px $nav-link-border-active;
+            box-shadow: inset 0 -4px 0 0 $nav-link-border-active;
           }
 
           &:focus {
@@ -114,7 +113,7 @@ $nav-link-fixed-width: 15.625rem;
       .nav-item {
         .nav-link {
           background-color: $grisulado-50;
-          border-radius: 8px 8px 0px 0px;
+          border-radius: 8px 8px 0 0;
           border: none;
 
           &.active,
@@ -124,7 +123,7 @@ $nav-link-fixed-width: 15.625rem;
             box-shadow: none;
 
             &:focus {
-              border-radius: $border-radius * 2 $border-radius * 2 0px 0px;
+              border-radius: $border-radius * 2 $border-radius * 2 0 0;
             }
           }
         }
@@ -135,7 +134,6 @@ $nav-link-fixed-width: 15.625rem;
 
         .nav-item {
           .nav-link {
-
             &.active,
             &:active {
               background-color: white;

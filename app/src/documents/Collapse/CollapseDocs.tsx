@@ -20,17 +20,13 @@ const CollapseDocs: React.FC = () => {
       title: 'Slección única',
       content: (
         <CodeBox codeHTML={COLLAPSE}>
-          <div className="container">
-            lorem
-          </div>
+          <div className="container">lorem</div>
         </CodeBox>
       ),
     },
   ];
 
-  return (
-    <DocumentationTemplate sections={sections} />
-  );
+  return <DocumentationTemplate sections={sections} />;
 };
 
 export default CollapseDocs;

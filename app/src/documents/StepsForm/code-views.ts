@@ -1,4 +1,3 @@
-export const STEPS_FORM =
-  `
+export const STEPS_FORM = `
     lorem
 `;

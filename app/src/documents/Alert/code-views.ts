@@ -53,7 +53,7 @@ export const WITH_CLOSE_ALERT =
             aria-label="Cerrar">
       </button>
     </div>
-`
+`;
 
 export const HIGHLIGTHED_ALERT = `
     <div className="alert alert-primary alert-dismissible fade show" role="alert">

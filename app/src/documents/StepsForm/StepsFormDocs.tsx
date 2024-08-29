@@ -18,9 +18,7 @@ const StepsFormDocs: React.FC = () => {
       title: 'Pasos de un formulario',
       content: (
         <CodeBox codeHTML={STEPS_FORM}>
-          <div className="container">
-            lorem
-          </div>
+          <div className="container">lorem</div>
         </CodeBox>
       ),
     },

@@ -1,4 +1,3 @@
-export const BLOCK =
-  `
+export const BLOCK = `
     lorem
 `;

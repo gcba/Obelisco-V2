@@ -1,29 +1,21 @@
-import React, {ReactNode} from "react";
+import React, { ReactNode } from 'react';
 
 interface FlexData {
   children: ReactNode[] | ReactNode;
-  justify?: "start" | "end" | "center" | "between" | "around" | "evenly";
-  justifySm?: "start" | "end" | "center" | "between" | "around" | "evenly";
-  justifyMd?: "start" | "end" | "center" | "between" | "around" | "evenly";
-  justifyLg?: "start" | "end" | "center" | "between" | "around" | "evenly";
+  justify?: 'start' | 'end' | 'center' | 'between' | 'around' | 'evenly';
+  justifySm?: 'start' | 'end' | 'center' | 'between' | 'around' | 'evenly';
+  justifyMd?: 'start' | 'end' | 'center' | 'between' | 'around' | 'evenly';
+  justifyLg?: 'start' | 'end' | 'center' | 'between' | 'around' | 'evenly';
 }
 
-const Flex = ({
-  children,
-  justify,
-  justifySm,
-  justifyMd,
-  justifyLg,
-}: FlexData) => {
+const Flex = ({ children, justify, justifySm, justifyMd, justifyLg }: FlexData) => {
   const getJustifyClass = (breakpoint?: string) => (value?: string) =>
-    value
-      ? `justify-content${breakpoint ? `-${breakpoint}` : ""}-${value}`
-      : "";
+    value ? `justify-content${breakpoint ? `-${breakpoint}` : ''}-${value}` : '';
 
   const justifyClass = getJustifyClass()(justify);
-  const justifySmClass = getJustifyClass("sm")(justifySm);
-  const justifyMdClass = getJustifyClass("md")(justifyMd);
-  const justifyLgClass = getJustifyClass("lg")(justifyLg);
+  const justifySmClass = getJustifyClass('sm')(justifySm);
+  const justifyMdClass = getJustifyClass('md')(justifyMd);
+  const justifyLgClass = getJustifyClass('lg')(justifyLg);
 
   const className = `d-flex ${justifyClass} ${justifySmClass} ${justifyMdClass} ${justifyLgClass}`;
 

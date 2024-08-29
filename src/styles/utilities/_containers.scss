@@ -2,35 +2,40 @@
   @extend .row;
   row-gap: 1rem;
   @extend .row-cols-1;
-  @media screen and (min-width: 768) and (max-width: 991) {
+  @media screen and (width >= 768) and (width <= 991) {
     row-gap: 1.5rem;
   }
 }
+
 .max-items-2 {
   @extend .max-items-1;
   @extend .row-cols-sm-2;
 }
+
 .max-items-3 {
   @extend .max-items-2;
   @extend .row-cols-md-3;
 }
+
 .max-items-4 {
   @extend .max-items-3;
   @extend .row-cols-lg-4;
 }
 
 // Entre 768px y 1199px (tablet) el gap entre elementos es de 24px, por lo que se modifica el padding y margins, manteniendo el area diseñable en 696px (entre 768px y 991px) y 936px (entre 992px y 1199px)
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (width >= 768px) and (width <= 1199px) {
   .container-md,
   .container-sm,
   .container {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
+
   .row {
     margin-left: -0.75rem;
     margin-right: -0.75rem;
   }
+
   .row > * {
     padding-right: 0.75rem;
     padding-left: 0.75rem;
@@ -41,20 +46,21 @@
 .access-items-3 {
   @extend .row;
   row-gap: 2rem;
-  @media screen and (min-width: 360px) and (max-width: 991px) {
+  @media screen and (width >= 360px) and (width <= 991px) {
     a.list-group-item {
       max-width: 100%;
     }
     row-gap: 1.5rem;
   }
 
-  @media screen and (min-width: 360px) and (max-width: 767px) {
+  @media screen and (width >= 360px) and (width <= 767px) {
     row-gap: 1rem;
   }
 
   @extend .row-cols-1;
   @extend .row-cols-lg-3;
 }
+
 .access-items-4 {
   @extend .access-items-3;
   @extend .row-cols-lg-4;

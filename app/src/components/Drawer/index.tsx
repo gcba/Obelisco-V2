@@ -11,14 +11,7 @@ interface DrawerProps {
   className?: string;
 }
 
-const Drawer: React.FC<DrawerProps> = ({
-  open,
-  onClose,
-  children,
-  size = 300,
-  direction = 'left',
-  className = '',
-}) => {
+const Drawer: React.FC<DrawerProps> = ({ open, onClose, children, size = 300, direction = 'left', className = '' }) => {
   const drawerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {

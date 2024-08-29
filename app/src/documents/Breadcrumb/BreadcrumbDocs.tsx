@@ -22,19 +22,25 @@ const BreadcrumbDocs: React.FC = () => {
             <div className="container">
               <nav aria-label="Navegación secundaria">
                 <ol className="breadcrumb">
-                  <li className="breadcrumb-item"><a href="#">Inicio</a></li>
+                  <li className="breadcrumb-item">
+                    <a href="#">Inicio</a>
+                  </li>
                   <li className="breadcrumb-item">
                     <a href="#">Página intermedia con mucho mucho texto</a>
                   </li>
-                  <li className="breadcrumb-item"><a href="#">Intermedia</a></li>
-                  <li className="breadcrumb-item"><a href="#">Página anterior</a></li>
+                  <li className="breadcrumb-item">
+                    <a href="#">Intermedia</a>
+                  </li>
+                  <li className="breadcrumb-item">
+                    <a href="#">Página anterior</a>
+                  </li>
                 </ol>
               </nav>
             </div>
           </CodeBox>
         </>
       ),
-    }
+    },
   ];
 
   return <DocumentationTemplate sections={sections} />;

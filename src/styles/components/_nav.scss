@@ -101,18 +101,54 @@ $icon-user-hover: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w
 .nav-pills {
   .nav-item {
     .nav-link {
-      .nav-icon {
-        .o-icon {
-          font-size: $nav-icon-font-size;
-          display: inline;
-        }
-      }
-    }
-
-    .nav-link {
       text-decoration: none;
       background-color: $white;
       outline: 0.125rem solid transparent;
+      @include border-radius($border-radius * 2);
+
+    &.active,
+    &:active {
+      color: $white;
+      background-color: $nav-pills-link-active-bg;
+      outline: 0.25rem solid transparent;
+      outline-offset: -2px;
+
+      &:hover,
+      &:focus {
+        color: $white;
+        background-color: $nav-pills-link-active-bg;
+        text-decoration: none;
+        box-shadow: none;
+
+        span {
+          text-decoration: none;
+        }
+
+        .nav-icon {
+          .o-icon {
+            text-decoration: none;
+          }
+
+          span {
+            text-decoration: none;
+          }
+        }
+      }
+
+      &.active-child {
+        color: $blue;
+        text-decoration: none;
+        font-weight: $nav-link-active-font-weight;
+        box-shadow: none;
+        background-color: $white;
+      }
+
+      .nav-icon {
+        span {
+          text-decoration: none;
+        }
+      }
+    }
 
       &:hover {
         span {
@@ -123,7 +159,7 @@ $icon-user-hover: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w
 
       &:focus {
         outline: 0.25rem solid transparent;
-        outline-offset: 0px;
+        outline-offset: 0;
 
         span {
           text-decoration: none;
@@ -136,7 +172,7 @@ $icon-user-hover: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w
 
         &:focus,
         &.focus {
-          outline-offset: 0px;
+          outline-offset: 0;
         }
       }
 
@@ -144,6 +180,11 @@ $icon-user-hover: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w
         display: flex;
         align-items: center;
         gap: 0.25rem; //Este gap define el espaciado en navegación vertical y horizontal
+
+        .o-icon {
+          font-size: $nav-icon-font-size;
+          display: inline;
+        }
       }
     }
   }
@@ -222,57 +263,6 @@ $icon-user-hover: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w
           text-decoration: none;
         }
 
-        span {
-          text-decoration: none;
-        }
-      }
-    }
-  }
-}
-
-.nav-pills {
-  .nav-link {
-    @include border-radius($border-radius * 2);
-
-    &.active,
-    &:active {
-      color: $white;
-      background-color: $nav-pills-link-active-bg;
-      outline: 0.25rem solid transparent;
-      outline-offset: -2px;
-
-      &:hover,
-      &:focus {
-        color: $white;
-        background-color: $nav-pills-link-active-bg;
-        text-decoration: none;
-        box-shadow: none;
-
-        span {
-          text-decoration: none;
-        }
-
-        .nav-icon {
-          .o-icon {
-            text-decoration: none;
-          }
-
-          span {
-            text-decoration: none;
-          }
-        }
-      }
-
-      &.active-child {
-        color: $blue;
-        font-weight: $nav-link-active-font-weight;
-        text-decoration: none;
-        font-weight: $nav-link-active-font-weight;
-        box-shadow: none;
-        background-color: $white;
-      }
-
-      .nav-icon {
         span {
           text-decoration: none;
         }

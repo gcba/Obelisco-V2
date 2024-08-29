@@ -1,5 +1,4 @@
-export const TABS_SIMPLE =
-  `
+export const TABS_SIMPLE = `
   <nav class="tabs-box" aria-label="Navegación por pestañas">
     <ul class="nav nav-pills tabs" id="simple-myTab" role="tablist">
       <li class="nav-item" role="presentation">
@@ -97,8 +96,7 @@ export const TABS_SIMPLE =
     </div>
   </div>
 `;
-export const TABS_SIMPLE_ICON =
-  `
+export const TABS_SIMPLE_ICON = `
   <nav class="tabs-box" aria-label="Navegación por pestañas">
     <ul class="nav nav-pills tabs" id="icon-myTab" role="tablist">
       <li class="nav-item" role="presentation">
@@ -331,7 +329,7 @@ export const TABS_FIXED_WIDTH = `
       Contenido Pestaña 4
     </div>
   </div>
-`
+`;
 export const TABS_CONTAINER = `
   <nav class="tabs-box" aria-label="Navegación por pestañas">
     <ul class="nav nav-pills tabs nav-box" id="icon-myTab" role="tablist">
@@ -450,8 +448,7 @@ export const TABS_CONTAINER = `
   </div>
 `;
 
-export const TABS_SLIDER = 
-`
+export const TABS_SLIDER = `
   <nav className="tabs-box" aria-label="Navegación por pestañas">
     <ul className="nav nav-pills tabs" id="tab-set-1" role="tablist">
       <li className="nav-item" role="presentation">
@@ -1029,7 +1026,7 @@ export const TABS_SLIDER =
       Contenido Pestaña 10
     </div>
   </div>
-`
+`;
 
 export const TABS_WITH_BOX = `
 <div className="container bg-light py-4">
@@ -1149,4 +1146,4 @@ export const TABS_WITH_BOX = `
     </div>
   </div>
 </div>
-`
+`;

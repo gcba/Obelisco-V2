@@ -1,4 +1,3 @@
-export const LIST_INFORMATIVE =
-  `
+export const LIST_INFORMATIVE = `
     lorem
 `;

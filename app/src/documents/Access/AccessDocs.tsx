@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import React from "react";
 
@@ -228,7 +228,6 @@ const AccessDocs: React.FC = () => {
             <h2>Una Columna con Aside</h2>
             <div className="container">
               <div className="row">
-
                 {/* Columna para el div de accesos */}
                 <div className="col-12 col-lg-4">
                   <div className="max-items-1">
@@ -258,14 +257,11 @@ const AccessDocs: React.FC = () => {
                 {/* Columna para el contenido a un lado */}
                 <div className="col-12 col-lg-8">
                   <div>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Possimus nesciunt sed dolorem laboriosam eius voluptatibus
-                    omnis accusantium, non atque et at consequuntur accusamus,
-                    facilis officia nam consectetur aliquam sunt ipsum. Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Possimus
-                    nesciunt sed dolorem laboriosam eius voluptatibus omnis
-                    accusantium, non atque et at consequuntur accusamus, facilis
-                    officia nam consectetur aliquam sunt ipsum.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt sed dolorem laboriosam
+                    eius voluptatibus omnis accusantium, non atque et at consequuntur accusamus, facilis officia nam
+                    consectetur aliquam sunt ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                    nesciunt sed dolorem laboriosam eius voluptatibus omnis accusantium, non atque et at consequuntur
+                    accusamus, facilis officia nam consectetur aliquam sunt ipsum.
                   </div>
                 </div>
               </div>

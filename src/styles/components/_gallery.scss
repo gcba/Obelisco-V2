@@ -1,22 +1,22 @@
 /* === Variable and mixins overides === */
 
-$carousel-control-padding: spaceUnits(3);
-$carousel-control-icon-size: spaceUnits(6);
-$carousel-control-size: $carousel-control-icon-size + $carousel-control-padding * 2;
+$carousel-control-padding: 0.25rem * 3;
+$carousel-control-icon-size: 0.25rem * 6;
+$carousel-control-size: $carousel-control-icon-size + $carousel-control-padding *
+  2;
 $carousel-control-border-radius: 100%;
 
 $carousel-control-space-x-mobile: $carousel-control-size * 0.25;
-$carousel-control-space-top-mobile: spaceUnits(25);
+$carousel-control-space-top-mobile: 0.5rem5;
 
 $carousel-control-space-x: $carousel-control-size * -1.5;
-$carousel-control-space-top: spaceUnits(50);
-
+$carousel-control-space-top: 0.25rem * 50;
 
 $carousel-control-prev-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(56,72,92,0.9999);transform: ;msFilter:;"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"/></svg>');
 $carousel-control-next-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(56,72,92,0.9999);transform: ;msFilter:;"><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"/></svg>');
 
 $carousel-close-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" style="fill: rgba(56,72,92,0.9999);transform: ;msFilter:;"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"/></svg>');
-$carousel-margin-bottom: spaceUnits(4);
+$carousel-margin-bottom: 0.25rem * 4;
 
 /* === Custom variables and mixins === */
 
@@ -236,7 +236,7 @@ $carousel-margin-bottom: spaceUnits(4);
     width: fit-content;
     margin-left: auto;
 
-    &:after {
+    &::after {
       vertical-align: middle;
       content: '';
       display: inline-block;
@@ -254,8 +254,7 @@ $carousel-margin-bottom: spaceUnits(4);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: min-content;
-  grid-column-gap: $grid-gutter-width;
-  grid-row-gap: $grid-gutter-width;
+  grid-gap: $grid-gutter-width $grid-gutter-width;
 
   .gallery-grid-item {
     > img {
@@ -310,8 +309,7 @@ $carousel-margin-bottom: spaceUnits(4);
   }
 
   @include media-breakpoint-down(sm) {
-    grid-column-gap: 12px;
-    grid-row-gap: 12px;
+    grid-gap: 12px;
 
     .gallery-grid-item {
       > img {

@@ -16,8 +16,7 @@ export const SM_INFO = `<div class="status status-info">
   <i class="bx bxs-info-circle o-icon"></i> 
     Botón
   </button>
-</div>
-`;
+</div>`;
 
 export const SM_SUCCESS = `<div class="status status-success">
   <h2 class="status-title">
@@ -43,8 +42,7 @@ export const SM_SUCCESS = `<div class="status status-success">
   <i class="bx bxs-info-circle o-icon"></i> 
     Botón
   </button>
-</div>
-`;
+</div>`;
 
 export const SM_WARNING = `<div class="status status-warning">
   <h2 class="status-title">
@@ -80,8 +78,7 @@ export const SM_WARNING = `<div class="status status-warning">
   <i class="bx bxs-info-circle o-icon"></i> 
     Botón
   </button>
-</div>
-`;
+</div>`;
 
 export const SM_DANGER = `<div class="status status-danger">
   <h2 class="status-title">
@@ -117,8 +114,7 @@ export const SM_DANGER = `<div class="status status-danger">
   <i class="bx bxs-info-circle o-icon"></i> 
     Botón
   </button>
-</div>
-`;
+</div>`;
 
 export const SM_INSTITUTIONAL = `<div class="status status-institutional">
   <h2 class="status-title">
@@ -134,5 +130,4 @@ export const SM_INSTITUTIONAL = `<div class="status status-institutional">
   <i class="bx bxs-info-circle o-icon"></i> 
     Ir al sitio web
   </button>
-</div>
-`;
+</div>`;

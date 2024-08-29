@@ -17,7 +17,7 @@ const sections = [
     title: 'Información',
     content: (
       <CodeBox codeHTML={SM_INFO}>
-        <div className="container p-3 bg-light">
+        <div className="px-4 col-sm-12 col-md-8">
           <div className="status status-info">
             <h2 className="status-title">
               Esto es un título de un mensaje de información
@@ -42,7 +42,7 @@ const sections = [
     title: 'Éxito',
     content: (
       <CodeBox codeHTML={SM_SUCCESS}>
-        <div className="container p-3 bg-light">
+        <div className="px-4 col-sm-12 col-md-8">
           <div className="status status-success">
             <h2 className="status-title">
               Esto es un título de un mensaje de éxito
@@ -73,7 +73,7 @@ const sections = [
     title: 'Advertencia',
     content: (
       <CodeBox codeHTML={SM_WARNING}>
-        <div className="container p-3 bg-light">
+        <div className="px-4 col-sm-12 col-md-8">
           <div className="status status-warning">
             <h2 className="status-title">
               Esto es un título de un mensaje de advertencia
@@ -110,7 +110,7 @@ const sections = [
     title: 'Error',
     content: (
       <CodeBox codeHTML={SM_DANGER}>
-        <div className="container p-3 bg-light">
+        <div className="px-4 col-sm-12 col-md-8">
           <div className="status status-danger">
             <h2 className="status-title">
               Esto es un título de un mensaje de peligro
@@ -146,25 +146,23 @@ const sections = [
     id: 'section-5',
     title: 'Institucional',
     content: (
-      <>
-        <CodeBox codeHTML={SM_INSTITUTIONAL}>
-          <div className="container p-3 bg-light">
-            <div className="status status-institutional">
-              <h2 className="status-title">
-                Este es un mensaje institucional del Gobierno de la Ciudad de Buenos Aires
-              </h2>
-              <p className="status-text">
-                En el cuerpo de este componente pueden ir enlaces o botones: <a href="#">https://ejemplo.buenosaires.gob.ar</a>
-              </p>
-              <button type="button" className="btn btn-primary">
-                <i className="bx bxs-info-circle o-icon"></i>
-                Ir al sitio web
-              </button>
-            </div>
+      <CodeBox codeHTML={SM_INSTITUTIONAL}>
+        <div className="px-4 col-sm-12 col-md-8">
+          <div className="status status-institutional">
+            <h2 className="status-title">
+              Este es un mensaje institucional del Gobierno de la Ciudad de Buenos Aires
+            </h2>
+            <p className="status-text">
+              En el cuerpo de este componente pueden ir enlaces o botones:
+              <a href="#">https://ejemplo.buenosaires.gob.ar</a>
+            </p>
+            <button type="button" className="btn btn-primary">
+              <i className="bx bxs-info-circle o-icon"></i>
+              Ir al sitio web
+            </button>
           </div>
-        </CodeBox>
-        <br /><br />
-      </>
+        </div>
+      </CodeBox>
     ),
   },
 ];

@@ -138,8 +138,7 @@ export const TOOLTIP_BUTTONS = `//SUPERIOR
   <button type="button" class="btn btn-primary btn-icon" aria-label="Botón">
     <span class="material-symbols-rounded o-icon">subdirectory_arrow_left</span>
   </button>
-</span>
-`;
+</span>`;
 
 export const TOOLTIP_ICONS = `//SUPERIOR
 <span
@@ -243,5 +242,4 @@ export const TOOLTIP_ICONS = `//SUPERIOR
   tabindex="0"
 >
   <span class="material-symbols-rounded o-icon">help</span>
-</span>
-`;
+</span>`;

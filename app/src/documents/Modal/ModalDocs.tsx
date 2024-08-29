@@ -130,7 +130,7 @@ const ModalDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-          <br /><br /><br /><br />
+          <br />
         </>
       ),
     },

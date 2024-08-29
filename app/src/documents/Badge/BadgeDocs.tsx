@@ -4,6 +4,7 @@ import MainDescription from "@/components/Template/MainDescription";
 
 import { BADGE_COLORS, BADGE_TYPES } from "./code-views";
 
+
 const BadgeDocs: React.FC = () => {
   const sections = [
     {
@@ -18,13 +19,15 @@ const BadgeDocs: React.FC = () => {
       title: "Colores",
       content: (
         <CodeBox codeHTML={BADGE_COLORS}>
-          <div className="container">
-            <div className="grid gap-5">
-              <span className="badge badge-default">Predeterminada</span>
-              <span className="badge badge-danger">Peligro</span>
-              <span className="badge badge-info">Info</span>
-              <span className="badge badge-success">Éxito</span>
-              <span className="badge badge-warning">Advertencia</span>
+          <div className="row justify-content-center">
+            <div className="col-auto">
+              <div className="grid gap-5">
+                <span className="badge badge-default">Predeterminada</span>
+                <span className="badge badge-danger">Peligro</span>
+                <span className="badge badge-info">Info</span>
+                <span className="badge badge-success">Éxito</span>
+                <span className="badge badge-warning">Advertencia</span>
+              </div>
             </div>
           </div>
         </CodeBox>
@@ -34,9 +37,9 @@ const BadgeDocs: React.FC = () => {
       id: "section-2",
       title: "Enlace",
       content: (
-        <>
-          <CodeBox codeHTML={BADGE_TYPES}>
-            <div className="container">
+        <CodeBox codeHTML={BADGE_TYPES}>
+          <div className="row justify-content-center">
+            <div className="col-auto">
               <div className="grid gap-5">
                 <a href="#" className="badge badge-default">
                   Etiqueta
@@ -49,10 +52,8 @@ const BadgeDocs: React.FC = () => {
                 </a>
               </div>
             </div>
-          </CodeBox>
-          <br /><br />
-        </>
-        
+          </div>
+        </CodeBox>
       ),
     },
   ];

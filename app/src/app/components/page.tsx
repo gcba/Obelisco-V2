@@ -9,7 +9,7 @@ export default function ComponentsPage() {
         {componentNames.map((name, index) => (
           <div className="col" key={index}>
             <Link href={`components/${name}`} className="list-group-item item-sm">
-              <span className="material-symbols-rounded">
+              <span className="material-symbols-rounded o-icon">
                 code_blocks
               </span>
               <div className="access-content">

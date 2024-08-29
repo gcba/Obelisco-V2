@@ -30,26 +30,6 @@ const ModalDocs: React.FC = () => {
               >
                 Modal de confirmación
               </button>
-              <div className="col-auto">
-                <button
-                  type="button"
-                  className="btn btn-primary mb-3"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal2"
-                >
-                  Modal de peligro
-                </button>
-              </div>
-              <div className="col-auto">
-                <button
-                  type="button"
-                  className="btn btn-primary mb-3"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal3"
-                >
-                  Modal de reconocimiento
-                </button>
-              </div>
             </div>
 
             <div className="modal fade" tabIndex={-1} id="exampleModal1">
@@ -151,7 +131,7 @@ const ModalDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-          <br /><br /><br /><br />
+          <br />
         </>
       ),
     },

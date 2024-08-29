@@ -1,5 +1,4 @@
-export const MODAL_CONFIRM = `
-<button 
+export const MODAL_CONFIRM = `<button 
   type="button" 
   class="btn btn-primary" 
   data-bs-toggle="modal" 
@@ -27,10 +26,9 @@ export const MODAL_CONFIRM = `
       </div>
     </div>
   </div>
-</div>
-`;
-export const MODAL_DANGER = `
-<button 
+</div>`;
+
+export const MODAL_DANGER = `<button 
   type="button" 
   class="btn btn-primary" 
   data-bs-toggle="modal" 
@@ -55,10 +53,9 @@ export const MODAL_DANGER = `
       </div>
     </div>
   </div>
-</div>
-`;
-export const MODAL_RECOGNITION = `
-<button 
+</div>`;
+
+export const MODAL_RECOGNITION = `<button 
   type="button" 
   class="btn btn-primary" 
   data-bs-toggle="modal" 
@@ -84,5 +81,4 @@ export const MODAL_RECOGNITION = `
       </div>
     </div>
   </div>
-</div>
-`;
+</div>`;

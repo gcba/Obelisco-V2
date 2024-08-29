@@ -1,7 +1,9 @@
-import CodeCopy from "@/components/CodeCopy";
+import CodeBox from "@/components/CodeBox";
 import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
 import MainDescription from "@/components/Template/MainDescription";
+
 import { BadgeColors, BadgeTypes } from "./code-views";
+
 
 const BadgeDocs: React.FC = () => {
   const sections = [
@@ -17,36 +19,42 @@ const BadgeDocs: React.FC = () => {
       id: "section-2",
       title: "Colores",
       content: (
-        <>
-          <div className="grid gap-5">
-            <span className="badge badge-default">Predeterminada</span>
-            <span className="badge badge-danger">Peligro</span>
-            <span className="badge badge-info">Info</span>
-            <span className="badge badge-success">Éxito</span>
-            <span className="badge badge-warning">Advertencia</span>
+        <CodeBox codeHTML={BadgeColors}>
+          <div className="row justify-content-center">
+            <div className="col-auto">
+              <div className="grid gap-5">
+                <span className="badge badge-default">Predeterminada</span>
+                <span className="badge badge-danger">Peligro</span>
+                <span className="badge badge-info">Info</span>
+                <span className="badge badge-success">Éxito</span>
+                <span className="badge badge-warning">Advertencia</span>
+              </div>
+            </div>
           </div>
-          <CodeCopy code={BadgeColors} />
-        </>
+        </CodeBox>
       ),
     },
     {
       id: "section-3",
       title: "Enlace",
       content: (
-        <>
-          <div className="grid gap-5">
-            <a href="#" className="badge badge-default">
-              Etiqueta
-            </a>
-            <a href="#" className="badge hover badge-default">
-              Etiqueta
-            </a>
-            <a href="#" className="badge focus badge-default">
-              Etiqueta
-            </a>
+        <CodeBox codeHTML={BadgeTypes}>
+          <div className="row justify-content-center">
+            <div className="col-auto">
+              <div className="grid gap-5">
+                <a href="#" className="badge badge-default">
+                  Etiqueta
+                </a>
+                <a href="#" className="badge hover badge-default">
+                  Etiqueta
+                </a>
+                <a href="#" className="badge focus badge-default">
+                  Etiqueta
+                </a>
+              </div>
+            </div>
           </div>
-          <CodeCopy code={BadgeTypes} />
-        </>
+        </CodeBox>
       ),
     },
   ];

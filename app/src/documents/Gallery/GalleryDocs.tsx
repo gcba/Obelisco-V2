@@ -2,11 +2,12 @@
 
 import { useState } from "react";
 
-import CodeCopy from "@/components/CodeBox";
+import CodeBox from "@/components/CodeBox";
 import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
 import MainDescription from "@/components/Template/MainDescription";
 
 import { GalleryExample } from "./code-views";
+
 
 const GalleryGrid: React.FC<{ images: string[]; maxColumns: number }> = ({ images, maxColumns }) => (
   <>
@@ -21,9 +22,6 @@ const GalleryGrid: React.FC<{ images: string[]; maxColumns: number }> = ({ image
   </>
 );
 
-interface CodeGridProps {
-  numImages: number;
-}
 
 const generateCode = (numImages: number): string => {
   let imagesCode = '';
@@ -47,13 +45,6 @@ const generateCode = (numImages: number): string => {
   </div>`;
 };
 
-const CodeGrid: React.FC<CodeGridProps> = ({ numImages }) => {
-  const code = generateCode(numImages);
-
-  return (
-    <CodeCopy code={code} />
-  );
-};
 
 
 const GalleryDocs: React.FC = () => {
@@ -85,31 +76,31 @@ const GalleryDocs: React.FC = () => {
           title: "Grillas",
           content: (
             <>
-              <div className="container">
-                <div className="row justify-content-center">
-                  <h5 className="mb-3 text-center">Cantidad de imágenes:</h5>
-                  <div className="col-12 col-md-10 text-center">
-                    <div className="btn-group mb-4" role="group" aria-label="Grillas de imágenes">
-                      {[1, 2, 3, 4, 5, 6, 7].map((num) => (
-                        <button
-                          key={num}
-                          type="button"
-                          className={`btn ${selectedGrid === num - 1 ? 'btn-primary' : 'btn-secondary'}`}
-                          onClick={() => setSelectedGrid(num - 1)}
-                        >
-                          {num}
-                        </button>
-                      ))}
+              <CodeBox codeHTML={generateCode(selectedGrid + 1)}>
+                <div className="container">
+                  <div className="row justify-content-center">
+                    <h5 className="mb-3 text-center">Cantidad de imágenes:</h5>
+                    <div className="col-12 col-md-10 text-center">
+                      <div className="btn-group mb-4" role="group" aria-label="Grillas de imágenes">
+                        {[1, 2, 3, 4, 5, 6, 7].map((num) => (
+                          <button
+                            key={num}
+                            type="button"
+                            className={`btn ${selectedGrid === num - 1 ? 'btn-primary' : 'btn-secondary'}`}
+                            onClick={() => setSelectedGrid(num - 1)}
+                          >
+                            {num}
+                          </button>
+                        ))}
+                      </div>
+                      <GalleryGrid
+                        images={images.slice(0, selectedGrid + 1)}
+                        maxColumns={selectedGrid + 1}
+                      />
                     </div>
-                    <GalleryGrid
-                      images={images.slice(0, selectedGrid + 1)}
-                      maxColumns={selectedGrid + 1}
-                    />
                   </div>
-                  <br />
-                  <CodeGrid numImages={selectedGrid + 1} />
                 </div>
-              </div>
+              </CodeBox>
             </>
           ),
         },
@@ -117,7 +108,7 @@ const GalleryDocs: React.FC = () => {
           id: "section-3",
           title: "Interactiva",
           content: (
-            <>
+            <CodeBox codeHTML={GalleryExample}>
               <div className="container">
                 <div className="row">
                   <div className="p-0 col-12 col-md-8 offset-md-2">
@@ -271,12 +262,9 @@ const GalleryDocs: React.FC = () => {
                   </div>
                 </div>
               </div>
-              <br />
-              <CodeCopy code={GalleryExample} />
-            </>
+            </CodeBox>
           ),
         },
-
       ]}
     />
   );

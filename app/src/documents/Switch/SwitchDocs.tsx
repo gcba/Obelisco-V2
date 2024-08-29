@@ -21,7 +21,7 @@ const SwitchDocs: React.FC = () => {
       content: (
         <>
           <CodeBox codeHTML={SWITCH_DEFAULT}>
-            <div className="container d-flex gap-5 flex-wrap">
+            <div className="container d-flex gap-4 flex-wrap">
               <label className="switch" htmlFor="switch-1">
                 <input type="checkbox" id="switch-1" />
                 <span className="slider"></span>
@@ -38,7 +38,7 @@ const SwitchDocs: React.FC = () => {
           </CodeBox>
           <br />
           <CodeBox codeHTML={SWITCH_DARK}>
-            <div className="container d-flex gap-5 flex-wrap">
+            <div className="container d-flex gap-4 flex-wrap">
               <label className="switch switch-dark" htmlFor="switch-dark-1">
                 <input type="checkbox" id="switch-dark-1" />
                 <span className="slider"></span>

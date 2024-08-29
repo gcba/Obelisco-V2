@@ -18,9 +18,7 @@ const HeaderDocs: React.FC = () => {
       title: 'Con buscador',
       content: (
         <CodeBox codeHTML={HEADER}>
-          <div className="container">
-            lorem
-          </div>
+          <div className="container">lorem</div>
         </CodeBox>
       ),
     },

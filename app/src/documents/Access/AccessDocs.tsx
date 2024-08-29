@@ -1,12 +1,15 @@
-"use client";
+'use client';
 
-import React, { useRef } from "react";
-import { Scrollspy } from "@makotot/ghostui";
-import CodeCopy from "@/components/CodeBox";
-import BoxTemplate from "@/components/Template/Box";
-import HeadingTemplate from "@/components/Template/HeadingTemplate";
-import MainDescription from "@/components/Template/MainDescription";
-import SimpleText from "@/components/Template/SimpleText";
+import { Scrollspy } from '@makotot/ghostui';
+import React, { useRef } from 'react';
+import { idText } from 'typescript';
+
+import CodeCopy from '@/components/CodeBox';
+import BoxTemplate from '@/components/Template/Box';
+import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
+import HeadingTemplate from '@/components/Template/HeadingTemplate';
+import MainDescription from '@/components/Template/MainDescription';
+import SimpleText from '@/components/Template/SimpleText';
 
 import {
   EGcodeSimpleAccess,
@@ -16,22 +19,20 @@ import {
   EGcodeListWidthComplete4ColumnsAccess,
   EGcodeListWidthComplete3ColumnsAccess,
   EGcodeListWidthComplete1ColumnWithAside,
-} from "./code-views";
-import { idText } from "typescript";
-import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
+} from './code-views';
 
 const AccessDocs: React.FC = () => {
   const sections = [
     {
-      id: "section-1",
-      title: "Introducción",
+      id: 'section-1',
+      title: 'Introducción',
       content: (
         <MainDescription description="Los accesos son avisos que mantienen a los usuarios informados sobre el estado del sistema y pueden requerir o no que realicen una acción." />
       ),
     },
     {
-      id: "section-2",
-      title: "Simple",
+      id: 'section-2',
+      title: 'Simple',
       content: (
         <section>
           <div className="list-group">
@@ -53,8 +54,8 @@ const AccessDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-3",
-      title: "Con descripción",
+      id: 'section-3',
+      title: 'Con descripción',
       content: (
         <section>
           <div className="list-group">
@@ -88,8 +89,8 @@ const AccessDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-4",
-      title: "Con icono",
+      id: 'section-4',
+      title: 'Con icono',
       content: (
         <section>
           <div className="list-group">
@@ -127,8 +128,8 @@ const AccessDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-5",
-      title: "Tamaños",
+      id: 'section-5',
+      title: 'Tamaños',
       content: (
         <section>
           <div className="list-group">
@@ -144,8 +145,8 @@ const AccessDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-6",
-      title: "Disposición",
+      id: 'section-6',
+      title: 'Disposición',
       content: (
         <>
           {/* Cuatro Columnas */}
@@ -225,7 +226,6 @@ const AccessDocs: React.FC = () => {
             <h2>Una Columna con Aside</h2>
             <div className="container">
               <div className="row">
-
                 {/* Columna para el div de accesos */}
                 <div className="col-12 col-lg-4">
                   <div className="max-items-1">
@@ -255,14 +255,11 @@ const AccessDocs: React.FC = () => {
                 {/* Columna para el contenido a un lado */}
                 <div className="col-12 col-lg-8">
                   <div>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Possimus nesciunt sed dolorem laboriosam eius voluptatibus
-                    omnis accusantium, non atque et at consequuntur accusamus,
-                    facilis officia nam consectetur aliquam sunt ipsum. Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Possimus
-                    nesciunt sed dolorem laboriosam eius voluptatibus omnis
-                    accusantium, non atque et at consequuntur accusamus, facilis
-                    officia nam consectetur aliquam sunt ipsum.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt sed dolorem laboriosam
+                    eius voluptatibus omnis accusantium, non atque et at consequuntur accusamus, facilis officia nam
+                    consectetur aliquam sunt ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                    nesciunt sed dolorem laboriosam eius voluptatibus omnis accusantium, non atque et at consequuntur
+                    accusamus, facilis officia nam consectetur aliquam sunt ipsum.
                   </div>
                 </div>
               </div>

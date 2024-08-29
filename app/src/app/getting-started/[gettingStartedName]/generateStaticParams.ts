@@ -1,8 +1,7 @@
 export async function generateStaticParamsGetting() {
-  const gettingStartedNames = [
-    'imports', 'installation'];
+  const gettingStartedNames = ['imports', 'installation'];
 
-  return gettingStartedNames.map(name => ({
+  return gettingStartedNames.map((name) => ({
     gettingStartedName: name,
   }));
 }

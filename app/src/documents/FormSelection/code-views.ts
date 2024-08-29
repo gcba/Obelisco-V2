@@ -1,5 +1,4 @@
-export const RADIO =
-`
+export const RADIO = `
   <p class="headline-md">Seleccioná una opción *</p>
     <div class="form-radio">
       <input
@@ -52,8 +51,7 @@ export const RADIO =
     </div>
 `;
 
-export const RADIO_DISABLED =
-`
+export const RADIO_DISABLED = `
   <<div class="form-radio">
     <input
         class="form-radio-input"
@@ -83,8 +81,7 @@ export const RADIO_DISABLED =
   </div>
 `;
 
-export const CHECKBOX =
-`
+export const CHECKBOX = `
   <p class="headline-md">Seleccioná una o varias opciones *</p>
   <div class="form-checkbox">
     <input
@@ -136,8 +133,7 @@ export const CHECKBOX =
     </label>
   </div>
 `;
-export const CHECKBOX_NO_TEXT =
-`
+export const CHECKBOX_NO_TEXT = `
   <div class="form-checkbox">
     <input
       class="form-checkbox-input"
@@ -150,8 +146,7 @@ export const CHECKBOX_NO_TEXT =
     </label>
   </div>
 `;
-export const CHECKBOX_TERMS =
-`
+export const CHECKBOX_TERMS = `
   <div class="form-checkbox">
     <input
       class="form-checkbox-input"
@@ -165,8 +160,7 @@ export const CHECKBOX_TERMS =
     </label>
   </div>
 `;
-export const CHECKBOX_DISABLED =
-`
+export const CHECKBOX_DISABLED = `
   <div class="form-checkbox" >
     <input
       class="form-checkbox-input"
@@ -195,8 +189,7 @@ export const CHECKBOX_DISABLED =
     </label>
   </div>
 `;
-export const CHECKBOX_RADIO_POSITION =
-`
+export const CHECKBOX_RADIO_POSITION = `
   <div class="form-checkbox reverse">
     <input
       class="form-checkbox-input"
@@ -222,4 +215,3 @@ export const CHECKBOX_RADIO_POSITION =
     </label>
   </div>
 `;
-

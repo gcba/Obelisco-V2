@@ -13,7 +13,14 @@
   },
   "ignorePatterns": ["/*.config.*", "package.json"],
   "rules": {
-    "space-before-function-paren": ["error", "never"],
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "always", // Permite un espacio en funciones anónimas
+        "named": "never", // No permite espacio en funciones nombradas
+        "asyncArrow": "always" // Permite un espacio en funciones flecha asíncronas
+      }
+    ],
     "import-helpers/order-imports": [
       "warn",
       {

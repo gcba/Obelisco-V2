@@ -1,6 +1,5 @@
 // Simple
-export const EGcodeSimpleAccess =
-  `
+export const EGcodeSimpleAccess = `
     <div class="list-group">
 
       <a href="#" class="list-group-item item-sm">
@@ -24,8 +23,7 @@ export const EGcodeSimpleAccess =
 `;
 
 // Con descripcion
-export const EGcodeWithDescriptionAccess =
-  `
+export const EGcodeWithDescriptionAccess = `
   <div className="list-group">
 
     <a href="#" className="list-group-item item-sm">
@@ -61,8 +59,7 @@ export const EGcodeWithDescriptionAccess =
 `;
 
 // Con icono
-export const EGcodeWithIconAccess =
-  `
+export const EGcodeWithIconAccess = `
   <div className="list-group">
 
     <a href="#" className="list-group-item item-sm">
@@ -102,8 +99,7 @@ export const EGcodeWithIconAccess =
 `;
 
 // Tamaños
-export const EGcodeSizesAccess =
-  `
+export const EGcodeSizesAccess = `
   <div className="list-group">
 
     <a href="#" className="list-group-item ">
@@ -119,8 +115,7 @@ export const EGcodeSizesAccess =
 `;
 
 // Lista ancho completo | 4 columnas
-export const EGcodeListWidthComplete4ColumnsAccess =
-  `
+export const EGcodeListWidthComplete4ColumnsAccess = `
   <div className="access-items-4">
     <div className="col">
       <a href="#" className="list-group-item item-sm">
@@ -152,8 +147,7 @@ export const EGcodeListWidthComplete4ColumnsAccess =
 `;
 
 // Lista ancho completo | 3 columnas
-export const EGcodeListWidthComplete3ColumnsAccess =
-  `
+export const EGcodeListWidthComplete3ColumnsAccess = `
 <div className="access-items-3">
   <div className="col">
     <a href="#" className="list-group-item item-sm">
@@ -185,8 +179,7 @@ export const EGcodeListWidthComplete3ColumnsAccess =
 `;
 
 // Lista ancho completo | 2 columnas
-export const EGcodeListWidthComplete1ColumnWithAside =
-  `
+export const EGcodeListWidthComplete1ColumnWithAside = `
   <div className="container">
       <div className="row">
                 

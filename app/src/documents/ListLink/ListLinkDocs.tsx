@@ -18,9 +18,7 @@ const ListLinkDocs: React.FC = () => {
       title: 'Lista de enlaces',
       content: (
         <CodeBox codeHTML={LIST_LINK}>
-          <div className="container">
-            lorem
-          </div>
+          <div className="container">lorem</div>
         </CodeBox>
       ),
     },

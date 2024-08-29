@@ -18,9 +18,7 @@ const ListStepDocs: React.FC = () => {
       title: 'Tamaños',
       content: (
         <CodeBox codeHTML={LIST_STEP}>
-          <div className="container">
-            lorem
-          </div>
+          <div className="container">lorem</div>
         </CodeBox>
       ),
     },

@@ -1,4 +1,3 @@
-export const LIST_LINK =
-  `
+export const LIST_LINK = `
     lorem
 `;

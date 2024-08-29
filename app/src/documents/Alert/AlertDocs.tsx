@@ -1,5 +1,7 @@
-import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
-import CodeCopy from "@/components/CodeBox";
+import CodeCopy from '@/components/CodeBox';
+import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
+import MainDescription from '@/components/Template/MainDescription';
+
 import {
   EGcodeSimpleAlert,
   EGcodeWithClose,
@@ -7,22 +9,21 @@ import {
   EGcodeHyperlink,
   EGcodeListLink,
   EGcodeListLinkWithDescription,
-} from "./code-views";
-import MainDescription from "@/components/Template/MainDescription";
+} from './code-views';
 
 const AlertDocs: React.FC = () => {
   const sections = [
     {
-      id: "section-1",
-      title: "Introducción",
+      id: 'section-1',
+      title: 'Introducción',
       content: (
         <MainDescription description="Las alertas son avisos que mantienen a los usuarios informados sobre el estado del sistema y pueden requerir o no que realicen una acción." />
       ),
     },
     {
-      id: "section-2",
-      title: "Simple",
-      description: "pequeña descripcion sobre un tipo de alerta.",
+      id: 'section-2',
+      title: 'Simple',
+      description: 'pequeña descripcion sobre un tipo de alerta.',
       content: (
         <section>
           <div className="alert alert-primary" role="alert">
@@ -46,60 +47,28 @@ const AlertDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-3",
-      title: "Con cierre",
+      id: 'section-3',
+      title: 'Con cierre',
       content: (
         <section>
-          <div
-            className="alert alert-primary alert-dismissible fade show"
-            role="alert"
-          >
+          <div className="alert alert-primary alert-dismissible fade show" role="alert">
             Esta es la descripción de una alerta de información.
-            <button
-              type="button"
-              className="btn-close"
-              data-bs-dismiss="alert"
-              aria-label="Cerrar"
-            ></button>
+            <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
           </div>
 
-          <div
-            className="alert alert-success alert-dismissible fade show"
-            role="alert"
-          >
+          <div className="alert alert-success alert-dismissible fade show" role="alert">
             Esta es la descripción de una alerta de éxito.
-            <button
-              type="button"
-              className="btn-close"
-              data-bs-dismiss="alert"
-              aria-label="Cerrar"
-            ></button>
+            <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
           </div>
 
-          <div
-            className="alert alert-warning alert-dismissible fade show"
-            role="alert"
-          >
+          <div className="alert alert-warning alert-dismissible fade show" role="alert">
             Esta es la descripción de una alerta de advertencia.
-            <button
-              type="button"
-              className="btn-close"
-              data-bs-dismiss="alert"
-              aria-label="Cerrar"
-            ></button>
+            <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
           </div>
 
-          <div
-            className="alert alert-danger alert-dismissible fade show"
-            role="alert"
-          >
+          <div className="alert alert-danger alert-dismissible fade show" role="alert">
             Esta es la descripción de una alerta de error.
-            <button
-              type="button"
-              className="btn-close"
-              data-bs-dismiss="alert"
-              aria-label="Cerrar"
-            ></button>
+            <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
           </div>
 
           <CodeCopy code={EGcodeWithClose} />
@@ -107,68 +76,32 @@ const AlertDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-4",
-      title: "Con destacado",
+      id: 'section-4',
+      title: 'Con destacado',
       content: (
         <section>
-          <div
-            className="alert alert-primary alert-dismissible fade show"
-            role="alert"
-          >
+          <div className="alert alert-primary alert-dismissible fade show" role="alert">
             <strong>Este es un destacado de una alerta de información. </strong>
-            Esta es la descripción de una alerta de información que continua al
-            texto destacado.
-            <button
-              type="button"
-              className="btn-close"
-              data-bs-dismiss="alert"
-              aria-label="Cerrar"
-            ></button>
+            Esta es la descripción de una alerta de información que continua al texto destacado.
+            <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
           </div>
 
-          <div
-            className="alert alert-success alert-dismissible fade show"
-            role="alert"
-          >
+          <div className="alert alert-success alert-dismissible fade show" role="alert">
             <strong>Este es un destacado de una alerta de éxito. </strong>
-            Esta es la descripción de una alerta de éxito que continua al
-            texto destacado.
-            <button
-              type="button"
-              className="btn-close"
-              data-bs-dismiss="alert"
-              aria-label="Cerrar"
-            ></button>
+            Esta es la descripción de una alerta de éxito que continua al texto destacado.
+            <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
           </div>
 
-          <div
-            className="alert alert-warning alert-dismissible fade show"
-            role="alert"
-          >
+          <div className="alert alert-warning alert-dismissible fade show" role="alert">
             <strong>Este es un destacado de una alerta de información. </strong>
-            Esta es la descripción de una alerta de información que continua al
-            texto destacado.
-            <button
-              type="button"
-              className="btn-close"
-              data-bs-dismiss="alert"
-              aria-label="Cerrar"
-            ></button>
+            Esta es la descripción de una alerta de información que continua al texto destacado.
+            <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
           </div>
 
-          <div
-            className="alert alert-danger alert-dismissible fade show"
-            role="alert"
-          >
+          <div className="alert alert-danger alert-dismissible fade show" role="alert">
             <strong>Este es un destacado de una alerta de error. </strong>
-            Esta es la descripción de una alerta de error que continua al
-            texto destacado.
-            <button
-              type="button"
-              className="btn-close"
-              data-bs-dismiss="alert"
-              aria-label="Cerrar"
-            ></button>
+            Esta es la descripción de una alerta de error que continua al texto destacado.
+            <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
           </div>
 
           <CodeCopy code={EGcodeHighlighted} />
@@ -176,84 +109,44 @@ const AlertDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-5",
-      title: "Con hipervinculo",
+      id: 'section-5',
+      title: 'Con hipervinculo',
       content: (
         <section>
-          <div
-            className="alert alert-primary alert-dismissible fade show"
-            role="alert"
-          >
+          <div className="alert alert-primary alert-dismissible fade show" role="alert">
             <strong>Este es un destacado de una alerta de información. </strong>
-            Esta es la descripción de una alerta de información que continua al
-            texto destacado, incluso {" "}
+            Esta es la descripción de una alerta de información que continua al texto destacado, incluso{' '}
             <a href="#" className="alert-link">
               con enlaces
             </a>
-            .
-            <button
-              type="button"
-              className="btn-close"
-              data-bs-dismiss="alert"
-              aria-label="Cerrar"
-            ></button>
+            .<button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
           </div>
 
-          <div
-            className="alert alert-success alert-dismissible fade show"
-            role="alert"
-          >
+          <div className="alert alert-success alert-dismissible fade show" role="alert">
             <strong>Este es un destacado de una alerta de éxito. </strong>
-            Esta es la descripción de una alerta de éxito que continua al
-            texto destacado, incluso {" "}
+            Esta es la descripción de una alerta de éxito que continua al texto destacado, incluso{' '}
             <a href="#" className="alert-link">
               con enlaces
             </a>
-            .
-            <button
-              type="button"
-              className="btn-close"
-              data-bs-dismiss="alert"
-              aria-label="Cerrar"
-            ></button>
+            .<button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
           </div>
 
-          <div
-            className="alert alert-warning alert-dismissible fade show"
-            role="alert"
-          >
+          <div className="alert alert-warning alert-dismissible fade show" role="alert">
             <strong>Este es un destacado de una alerta de advertencia. </strong>
-            Esta es la descripción de una alerta de advertencia que continua al
-            texto destacado, incluso {" "}
+            Esta es la descripción de una alerta de advertencia que continua al texto destacado, incluso{' '}
             <a href="#" className="alert-link">
               con enlaces
             </a>
-            .
-            <button
-              type="button"
-              className="btn-close"
-              data-bs-dismiss="alert"
-              aria-label="Cerrar"
-            ></button>
+            .<button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
           </div>
 
-          <div
-            className="alert alert-danger alert-dismissible fade show"
-            role="alert"
-          >
+          <div className="alert alert-danger alert-dismissible fade show" role="alert">
             <strong>Este es un destacado de una alerta de error. </strong>
-            Esta es la descripción de una alerta de error que continua al
-            texto destacado, incluso {" "}
+            Esta es la descripción de una alerta de error que continua al texto destacado, incluso{' '}
             <a href="#" className="alert-link">
               con enlaces
             </a>
-            .
-            <button
-              type="button"
-              className="btn-close"
-              data-bs-dismiss="alert"
-              aria-label="Cerrar"
-            ></button>
+            .<button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
           </div>
 
           <br />
@@ -263,17 +156,13 @@ const AlertDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-6",
-      title: "Con lista de enlaces",
+      id: 'section-6',
+      title: 'Con lista de enlaces',
       content: (
         <section>
-          <div
-            className="alert alert-primary alert-dismissible fade show"
-            role="alert"
-          >
+          <div className="alert alert-primary alert-dismissible fade show" role="alert">
             <strong>Este es un destacado de una alerta de información. </strong>
-            Esta es la descripción de una alerta de información que continua al
-            texto destacado.
+            Esta es la descripción de una alerta de información que continua al texto destacado.
             <ol className="list-links">
               <li>
                 <a className="alert-link" href="#">
@@ -310,17 +199,13 @@ const AlertDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-7",
-      title: "Con lista de enlaces descriptiva",
+      id: 'section-7',
+      title: 'Con lista de enlaces descriptiva',
       content: (
         <section>
-          <div
-            className="alert alert-primary alert-dismissible fade show"
-            role="alert"
-          >
+          <div className="alert alert-primary alert-dismissible fade show" role="alert">
             <strong>Este es un destacado de una alerta de información. </strong>
-            Esta es la descripción de una alerta de información que continua al
-            texto destacado.
+            Esta es la descripción de una alerta de información que continua al texto destacado.
             <ol className="list-links">
               <li>
                 <span>Texto descriptivo 1</span>

@@ -1,22 +1,28 @@
-import CodeBox from "@/components/CodeBox";
-import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
-import MainDescription from "@/components/Template/MainDescription";
+import CodeBox from '@/components/CodeBox';
+import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
+import MainDescription from '@/components/Template/MainDescription';
 
-import { SWITCH_DARK, SWITCH_DEFAULT, SWITCH_DISABLED, SWITCH_SIZES, SWITCH_SIZES_SM, SWITCH_WITHOUT_LABEL } from "./code-views";
+import {
+  SWITCH_DARK,
+  SWITCH_DEFAULT,
+  SWITCH_DISABLED,
+  SWITCH_SIZES,
+  SWITCH_SIZES_SM,
+  SWITCH_WITHOUT_LABEL,
+} from './code-views';
 
 const SwitchDocs: React.FC = () => {
-
   const sections = [
     {
-      title: "Switch",
+      title: 'Switch',
       h1: true,
       content: (
         <MainDescription description="Los switchs permiten que las personas usuarias alternen entre dos estados posibles, como “prendido” y “apagado”." />
-      )
+      ),
     },
     {
-      id: "section-1",
-      title: "Tipos",
+      id: 'section-1',
+      title: 'Tipos',
       content: (
         <>
           <CodeBox codeHTML={SWITCH_DEFAULT}>
@@ -56,8 +62,8 @@ const SwitchDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-2",
-      title: "Sin label",
+      id: 'section-2',
+      title: 'Sin label',
       content: (
         <>
           <CodeBox codeHTML={SWITCH_WITHOUT_LABEL}>
@@ -96,8 +102,8 @@ const SwitchDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-3",
-      title: "Tamaños",
+      id: 'section-3',
+      title: 'Tamaños',
       content: (
         <>
           <CodeBox codeHTML={SWITCH_SIZES}>
@@ -141,8 +147,8 @@ const SwitchDocs: React.FC = () => {
       ),
     },
     {
-      id: "section-4",
-      title: "Deshabilitado",
+      id: 'section-4',
+      title: 'Deshabilitado',
       content: (
         <>
           <CodeBox codeHTML={SWITCH_DISABLED}>
@@ -151,22 +157,14 @@ const SwitchDocs: React.FC = () => {
                 <label className="switch mb-2" htmlFor="switch-5-1">
                   <input type="checkbox" id="switch-5-1" disabled />
                   <span className="slider"></span>
-                  <span className="switch-label disabled on">
-                    Prendido / Deshabilitado
-                  </span>
-                  <span className="switch-label disabled off">
-                    Apagado / Deshabilitado
-                  </span>
+                  <span className="switch-label disabled on">Prendido / Deshabilitado</span>
+                  <span className="switch-label disabled off">Apagado / Deshabilitado</span>
                 </label>
                 <label className="switch mb-2" htmlFor="switch-5-2">
                   <input type="checkbox" id="switch-5-2" disabled defaultChecked />
                   <span className="slider"></span>
-                  <span className="switch-label disabled on">
-                    Prendido / Deshabilitado
-                  </span>
-                  <span className="switch-label disabled off">
-                    Apagado / Deshabilitado
-                  </span>
+                  <span className="switch-label disabled on">Prendido / Deshabilitado</span>
+                  <span className="switch-label disabled off">Apagado / Deshabilitado</span>
                 </label>
               </div>
               <div className="row">
@@ -185,17 +183,14 @@ const SwitchDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-          <br /><br />
+          <br />
+          <br />
         </>
       ),
-    }
+    },
   ];
 
-  return (
-    <DocumentationTemplate
-      sections={sections}
-    />
-  );
+  return <DocumentationTemplate sections={sections} />;
 };
 
 export default SwitchDocs;

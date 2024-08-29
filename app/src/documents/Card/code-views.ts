@@ -1,4 +1,3 @@
-export const CARDS =
-  `
+export const CARDS = `
     lorem
 `;

@@ -1,6 +1,6 @@
-import AccessDocs from "@/documents/Access/AccessDocs";
-import React from "react";
+import AccessDocs from '@/documents/Access/AccessDocs';
+import React from 'react';
 
-export default function AccessPage () {
+export default function AccessPage() {
   return <AccessDocs />;
 }

@@ -18,9 +18,7 @@ const FooterDocs: React.FC = () => {
       title: 'Completo',
       content: (
         <CodeBox codeHTML={FOOTER}>
-          <div className="container">
-            lorem
-          </div>
+          <div className="container">lorem</div>
         </CodeBox>
       ),
     },

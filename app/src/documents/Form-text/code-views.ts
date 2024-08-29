@@ -1,31 +1,25 @@
-export const INPUT_TEXT =
-  `
+export const INPUT_TEXT = `
   <label for="exampleInputTexto" class="form-label">Ejemplo campo de texto</label>
   <input type="text" class="form-control" id="exampleInputTexto" aria-describedby="Texto" placeholder="Textos" />
 `;
 
-export const INPUT_NUMBER =
-  `
+export const INPUT_NUMBER = `
   <label for="exampleInputNumber" class="form-label">Ejemplo campo de numero</label>
   <input type="number" class="form-control" id="exampleInputNumber" aria-describedby="Number" placeholder="Números" />
 `;
-export const INPUT_MAIL =
-  `
+export const INPUT_MAIL = `
   <label for="exampleInputEmail" class="form-label">Ejemplo campo de mail</label>
   <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="Email" placeholder="Email@test.com" />
 `;
-export const INPUT_DATE =
-  `
+export const INPUT_DATE = `
   <label for="exampleInputDate" class="form-label">Fecha</label>
   <input type="date" class="form-control" id="exampleInputDate" aria-describedby="Date" placeholder="Selecciona la fecha" />
 `;
-export const INPUT_BLOCK =
-  `
+export const INPUT_BLOCK = `
   <label for="exampleFormControlTextarea1" class="form-label">Ejemplo TextArea</label>
   <textarea class="form-control" id="exampleFormControlTextarea1" />
 `;
-export const INPUT_DISABLED =
-  `
+export const INPUT_DISABLED = `
     <form class="col-12 col-lg-6">
       <label for="example-six" class="form-label">Ejemplo campo de texto</label>
       <div class='search-container'>
@@ -68,8 +62,7 @@ export const INPUT_DISABLED =
       <textarea class="form-control" id="example-one" disabled />
     </div>
 `;
-export const INPUT_VALIDATION_TEXT =
-  `
+export const INPUT_VALIDATION_TEXT = `
     <form class="col-12 col-lg-6">
       <label for="ejemplo-1" class="form-label">Ejemplo campo de texto</label>
       <input type="text" class="form-control is-invalid" id="ejemplo-1" aria-describedby="Texto" placeholder="Textos" required />
@@ -85,8 +78,7 @@ export const INPUT_VALIDATION_TEXT =
       </div>
     </form>
 `;
-export const INPUT_VALIDATION_NUMBER =
-  `
+export const INPUT_VALIDATION_NUMBER = `
   <form class="col-12 col-lg-6">
     <label for="ejemplo-2" class="form-label">Ejemplo campo de numero</label>
     <input type="number" class="form-control is-valid" id="ejemplo-2" aria-describedby="Number" placeholder="Números" required />
@@ -102,8 +94,7 @@ export const INPUT_VALIDATION_NUMBER =
     </div>
   </form>
 `;
-export const INPUT_VALIDATION_MAIL =
-  `
+export const INPUT_VALIDATION_MAIL = `
   <form class="col-12 col-lg-6">
     <label for="ejemplo-3-1" class="form-label">Ejemplo campo de mail</label>
     <input type="email" class="form-control is-invalid" id="ejemplo-3-1" aria-describedby="Email" placeholder="Email@test.com" required />
@@ -119,8 +110,7 @@ export const INPUT_VALIDATION_MAIL =
     </div>
   </form>
 `;
-export const INPUT_VALIDATION_DATE =
-  `
+export const INPUT_VALIDATION_DATE = `
   <form class="col-12 col-lg-6">
     <label for="ejemplo-4" class="form-label">Ejemplo campo de fecha</label>
     <input type="date" class="form-control is-valid" id="ejemplo-4" aria-describedby="Date" placeholder="selecciona tu fecha" required />
@@ -136,8 +126,7 @@ export const INPUT_VALIDATION_DATE =
     </div>
   </form>
 `;
-export const INPUT_VALIDATION_TEXTAREA =
-  `
+export const INPUT_VALIDATION_TEXTAREA = `
   <form class="col-12 col-lg-6">
     <label for="ejemplo-5" class="form-label">Ejemplo TextArea</label>
     <textarea class="form-control is-invalid" id="ejemplo-5" required />

@@ -1,5 +1,4 @@
-export const EGcodeSimpleAlert =
-  `
+export const EGcodeSimpleAlert = `
     <div class="alert alert-info" role="alert">
       <p>Esta es la descripción de una alerta de información.</p>
     </div>
@@ -18,8 +17,7 @@ export const EGcodeSimpleAlert =
 
 `;
 
-export const EGcodeWithClose =
-  `
+export const EGcodeWithClose = `
     <div className="alert alert-primary alert-dismissible fade show" role="alert">
       Esta es la descripción de una alerta de información.
       <button
@@ -59,7 +57,7 @@ export const EGcodeWithClose =
             aria-label="Cerrar">
       </button>
     </div>
-`
+`;
 
 export const EGcodeHighlighted = `
     <div className="alert alert-primary alert-dismissible fade show" role="alert">

@@ -1,5 +1,4 @@
-export const SPINNER_TYPES =
-  `
+export const SPINNER_TYPES = `
     <div class="spinner-border text-primary" role="status">
         <span class="sr-only">Cargando...</span>
     </div>
@@ -23,8 +22,7 @@ export const SPINNER_TYPES =
     </div>
 `;
 
-export const SPINNER_SIZES =
-  `
+export const SPINNER_SIZES = `
     <div class="spinner-border text-primary spinner-border-sm" role="status">
         <span class="sr-only">Cargando...</span>
     </div>
@@ -36,8 +34,7 @@ export const SPINNER_SIZES =
     </div>
 `;
 
-export const SPINNER_BLOCK =
-  `
+export const SPINNER_BLOCK = `
     <div class="col-4 col-md-2 mx-auto">
         <div class="spinner-block text-primary" role="status">
             <span class="sr-only">Cargando...</span>

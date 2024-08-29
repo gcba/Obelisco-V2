@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import Drawer from '../../../Drawer/index'; 
-import { componentsPages, gettingPages } from '../../main-layout';
+import { componentsPages, formsPages, gettingPages, organismsPages, stylesPages } from '../../main-layout';
 import NavLayout from '../../Navigation/nav';
 
 export default function HeaderMobile() {
@@ -43,9 +43,21 @@ export default function HeaderMobile() {
           <p className="headline-lg fw-bold">Secciones</p>
           <hr className="my-4" />
           <NavLayout items={gettingPages} />
+          <p className="headline-lg fw-bold mt-4">Estilos</p>
+          <hr className="my-4" />
+          <NavLayout items={stylesPages} />
           <p className="headline-lg fw-bold mt-4">Componentes</p>
           <hr className="my-4" />
           <NavLayout items={componentsPages} />
+          <p className="headline-lg fw-bold mt-4">Formularios</p>
+          <hr className="my-4" />
+          <NavLayout items={formsPages} />
+          {/* Al crear organismos, eliminar el div con clase d-none que envuelve al titulo y nav */}
+          <div className="d-none">
+            <p className="headline-lg fw-bold mt-4">Organismos</p>
+            <hr className="my-4" />
+            <NavLayout items={organismsPages} />
+          </div>
         </div>
       </Drawer>
     </div>

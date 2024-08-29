@@ -13,6 +13,7 @@ import DropdownNavDocs from "@/documents/DropdownNav/DropdownNavDocs";
 import DropdownSelDocs from '@/documents/DropdownSel/DropdownSelDocs';
 import FooterDocs from "@/documents/Footer/FooterDocs";
 import FormTextDocs from '@/documents/Form-text/FormText';
+import FormSearchDocs from "@/documents/FormSearch/FormSearch";
 import FormSelectionDocs from '@/documents/FormSelection/FormSelectionDocs';
 import GalleryDocs from "@/documents/Gallery/GalleryDocs";
 import GridDocs from "@/documents/Grid/GridDocs";
@@ -70,6 +71,7 @@ const componentMap: { [key: string]: React.ReactNode } = {
   spinner: <SpinnerDocs />,
   'form-text': <FormTextDocs />,
   'form-selection': <FormSelectionDocs />,
+  'form-search': <FormSearchDocs />,
   map: <MapDocs />,
   gallery: <GalleryDocs />,
   pagination: <PaginationDocs />,

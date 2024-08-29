@@ -133,11 +133,12 @@ hr {
 .sticky-nav {
   position: sticky;
   top: 132px;
+  overflow-y: scroll;
+  height: 75dvh;
 
   nav {
-    overflow-y: scroll;
-    height: 68dvh;
     padding: 0.3rem;
+    margin-bottom: 1.5rem;
   }
 }
 .box-content {

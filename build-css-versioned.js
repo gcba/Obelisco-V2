@@ -1,7 +1,7 @@
 const { exec } = require('child_process')
 const { version } = require('./package.json')
 
-const outputFileName = `versions/${version}.css`
+const outputFileName = `static/versions/${version}/obelisco.css`
 const command = `sass src/styles/main.scss ${outputFileName}`
 
 exec(command, (err, stdout, stderr) => {

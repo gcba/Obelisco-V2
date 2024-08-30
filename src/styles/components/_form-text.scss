@@ -12,7 +12,7 @@ $validation-icons: (
 @mixin focus-style {
   background-color: $grisulado-50;
   box-shadow: $focus-box-shadow;
-  border-color: transparent;
+  outline: $outline-transparent;
 }
 
 .form-label {
@@ -30,12 +30,13 @@ $validation-icons: (
 .form-control {
   background-color: $grisulado-50;
   padding: .75rem 1rem;
-  color: $grisulado-950;
+  color: $body-color;
   font-size: $md-body-fs;
   font-weight: $md-body-fw;
   border: none;
   border-radius: $border-radius-lg;
-  box-shadow: $box-shadow;
+  outline: $outline-border;
+  outline-offset: 0;
 
   &.is-valid,
   &.is-invalid {
@@ -135,6 +136,7 @@ input[type="date"] {
 
     &[type='search']~.reset[type='reset'] {
       border: none;
+      border-radius: .5rem;
       position: absolute;
       background: transparent $form-search-button-reset no-repeat center center;
       right: 50px;
@@ -173,11 +175,11 @@ input[type="date"] {
     align-items: center;
     display: flex;
     border: none;
+    border-radius: $border-radius-lg;
+    outline: $outline-transparent-subtle;
 
     &:focus {
       @include focus-style;
-      outline: none;
-      border-radius: $border-radius-lg;
     }
   }
 

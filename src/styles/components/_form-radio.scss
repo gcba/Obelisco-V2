@@ -55,6 +55,7 @@ $checkbox-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"
       ~.form-#{$type}-label {
         padding-right: .25rem;
         box-shadow: $focus-box-shadow;
+        outline: $outline-transparent;
 
         &[aria-label] {
           padding-right: 0;

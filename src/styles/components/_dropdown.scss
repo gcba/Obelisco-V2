@@ -351,6 +351,14 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
         white-space: normal;
         font-size: $md-body-fs;
         font-family: $font-family-sans-serif;
+        outline: none;
+
+        &:hover {
+          outline: $hover-outline;
+        }
+        &:focus {
+          outline: $outline-transparent;
+        }
 
         .btn-dropdown-text {
           flex-grow: 1;

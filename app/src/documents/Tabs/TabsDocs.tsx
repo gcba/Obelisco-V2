@@ -1,5 +1,4 @@
 import CodeBox from '@/components/CodeBox';
-import Divisor from '@/components/Template/Divisor';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
@@ -10,6 +9,10 @@ import {
   TABS_SIMPLE,
   TABS_SLIDER,
   TABS_WITH_BOX,
+  TABS_SLIDER_CONTAINER,
+  TABS_LARGE,
+  TABS_MEDIUM,
+  TABS_SMALL,
 } from './code-views';
 
 const TabsDocs: React.FC = () => {
@@ -27,7 +30,7 @@ const TabsDocs: React.FC = () => {
       content: (
         <div className="col-12 max-720">
           <CodeBox codeHTML={TABS_SIMPLE}>
-            <div className="col-12 col-lg-8 mx-auto">
+            <div className="container">
               <nav className="tabs-box" aria-label="Navegación por pestañas">
                 <ul className="nav nav-pills tabs" id="simple-myTab" role="tablist">
                   <li className="nav-item" role="presentation">
@@ -106,9 +109,16 @@ const TabsDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-          <br />
+        </div>
+      ),
+    },
+    {
+      id: 'section-2',
+      title: 'Con icono',
+      content: (
+        <div className="col-12 max-720">
           <CodeBox codeHTML={TABS_SIMPLE_ICON}>
-            <div className="col-12 col-lg-8 mx-auto">
+            <div className="container">
               <nav className="tabs-box" aria-label="Navegación por pestañas">
                 <ul className="nav nav-pills tabs" id="icon-myTab" role="tablist">
                   <li className="nav-item" role="presentation">
@@ -123,7 +133,8 @@ const TabsDocs: React.FC = () => {
                       id="tab-icon-1"
                     >
                       <div className="nav-icon">
-                        Pestaña 1<span className="material-symbols-rounded">home</span>
+                        <span>Pestaña 1</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -139,7 +150,8 @@ const TabsDocs: React.FC = () => {
                       id="tab-icon-2"
                     >
                       <div className="nav-icon">
-                        Pestaña 2<span className="material-symbols-rounded">home</span>
+                        <span>Pestaña 2</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -156,7 +168,8 @@ const TabsDocs: React.FC = () => {
                       disabled
                     >
                       <div className="nav-icon">
-                        Pestaña 3<span className="material-symbols-rounded">home</span>
+                        <span>Pestaña 3</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -172,7 +185,8 @@ const TabsDocs: React.FC = () => {
                       id="tab-icon-4"
                     >
                       <div className="nav-icon">
-                        Pestaña 4<span className="material-symbols-rounded">home</span>
+                        <span>Pestaña 4</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -203,7 +217,7 @@ const TabsDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-2',
+      id: 'section-3',
       title: 'Ancho fijo',
       content: (
         <div className="col-12 max-720">          
@@ -223,7 +237,8 @@ const TabsDocs: React.FC = () => {
                       id="tab-width-1"
                     >
                       <div className="nav-icon">
-                        Pestaña 1<span className="material-symbols-rounded">home</span>
+                        <span>Pestaña 1</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -239,7 +254,8 @@ const TabsDocs: React.FC = () => {
                       id="tab-width-2"
                     >
                       <div className="nav-icon">
-                        Pestaña 2<span className="material-symbols-rounded">home</span>
+                        <span>Pestaña 2</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -256,7 +272,8 @@ const TabsDocs: React.FC = () => {
                       disabled
                     >
                       <div className="nav-icon">
-                        Pestaña 3<span className="material-symbols-rounded">home</span>
+                        <span>Pestaña 3</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -272,7 +289,8 @@ const TabsDocs: React.FC = () => {
                       id="tab-width-4"
                     >
                       <div className="nav-icon">
-                        Pestaña 4<span className="material-symbols-rounded">home</span>
+                        <span>Pestaña 4</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -303,7 +321,7 @@ const TabsDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-3',
+      id: 'section-4',
       title: 'Con contenedor',
       content: (
         <div className="col-12 max-720">
@@ -323,7 +341,8 @@ const TabsDocs: React.FC = () => {
                       id="tab-bg-1"
                     >
                       <div className="nav-icon">
-                        Pestaña 1<span className="material-symbols-rounded o-icon">home</span>
+                        <span>Pestaña 1</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -339,7 +358,8 @@ const TabsDocs: React.FC = () => {
                       id="tab-bg-2"
                     >
                       <div className="nav-icon">
-                        Pestaña 2<span className="material-symbols-rounded o-icon">home</span>
+                        <span>Pestaña 2</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -356,7 +376,8 @@ const TabsDocs: React.FC = () => {
                       disabled
                     >
                       <div className="nav-icon">
-                        Pestaña 3<span className="material-symbols-rounded o-icon">home</span>
+                         <span>Pestaña 3</span>
+                         <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -372,7 +393,8 @@ const TabsDocs: React.FC = () => {
                       id="tab-bg-4"
                     >
                       <div className="nav-icon">
-                        Pestaña 4<span className="material-symbols-rounded o-icon">home</span>
+                        <span>Pestaña 4</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -423,7 +445,8 @@ const TabsDocs: React.FC = () => {
                       id="unique-tab-1"
                     >
                       <div className="nav-icon">
-                        Pestaña 1<span className="material-symbols-rounded o-icon">home</span>
+                        <span>Pestaña 1</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -439,7 +462,8 @@ const TabsDocs: React.FC = () => {
                       id="unique-tab-2"
                     >
                       <div className="nav-icon">
-                        Pestaña 2<span className="material-symbols-rounded o-icon">home</span>
+                        <span>Pestaña 2</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -456,7 +480,8 @@ const TabsDocs: React.FC = () => {
                       disabled
                     >
                       <div className="nav-icon">
-                        Pestaña 3<span className="material-symbols-rounded o-icon">home</span>
+                        <span>Pestaña 3</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -472,7 +497,8 @@ const TabsDocs: React.FC = () => {
                       id="unique-tab-4"
                     >
                       <div className="nav-icon">
-                        Pestaña 4<span className="material-symbols-rounded o-icon">home</span>
+                        <span>Pestaña 4</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -510,6 +536,11 @@ const TabsDocs: React.FC = () => {
           <CodeBox codeHTML={TABS_SLIDER}>
             <div className="container">
               <nav className="tabs-box" aria-label="Navegación por pestañas">
+                <div className="tabs-controls">
+                  <button className="prev" id="prev">
+                    <span className="material-symbols-rounded" aria-hidden="true">chevron_left</span>
+                  </button>
+                </div>
                 <ul className="nav nav-pills tabs" id="tab-set-1" role="tablist">
                   <li className="nav-item" role="presentation">
                     <button
@@ -523,7 +554,8 @@ const TabsDocs: React.FC = () => {
                       id="tab-1"
                     >
                       <div className="nav-icon">
-                        Pestaña 1<span className="material-symbols-rounded o-icon">home</span>
+                        <span>Pestaña 1</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -539,7 +571,8 @@ const TabsDocs: React.FC = () => {
                       id="tab-2"
                     >
                       <div className="nav-icon">
-                        Pestaña 2<span className="material-symbols-rounded o-icon">home</span>
+                        <span>Pestaña 2</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -555,7 +588,8 @@ const TabsDocs: React.FC = () => {
                       id="tab-3"
                     >
                       <div className="nav-icon">
-                        Pestaña 3<span className="material-symbols-rounded o-icon">home</span>
+                        <span>Pestaña 3</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -571,7 +605,8 @@ const TabsDocs: React.FC = () => {
                       id="tab-4"
                     >
                       <div className="nav-icon">
-                        Pestaña 4<span className="material-symbols-rounded o-icon">home</span>
+                        <span>Pestaña 4</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -587,7 +622,8 @@ const TabsDocs: React.FC = () => {
                       id="tab-5"
                     >
                       <div className="nav-icon">
-                        Pestaña 5<span className="material-symbols-rounded o-icon">home</span>
+                        <span>Pestaña 5</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -603,7 +639,8 @@ const TabsDocs: React.FC = () => {
                       id="tab-6"
                     >
                       <div className="nav-icon">
-                        Pestaña 6<span className="material-symbols-rounded o-icon">home</span>
+                        <span>Pestaña 6</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -619,7 +656,8 @@ const TabsDocs: React.FC = () => {
                       id="tab-7"
                     >
                       <div className="nav-icon">
-                        Pestaña 7<span className="material-symbols-rounded o-icon">home</span>
+                        <span>Pestaña 7</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -635,7 +673,8 @@ const TabsDocs: React.FC = () => {
                       id="tab-8"
                     >
                       <div className="nav-icon">
-                        Pestaña 8<span className="material-symbols-rounded o-icon">home</span>
+                        <span>Pestaña 8</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -651,7 +690,8 @@ const TabsDocs: React.FC = () => {
                       id="tab-9"
                     >
                       <div className="nav-icon">
-                        Pestaña 9<span className="material-symbols-rounded o-icon">home</span>
+                        <span>Pestaña 9</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -667,18 +707,15 @@ const TabsDocs: React.FC = () => {
                       id="tab-10"
                     >
                       <div className="nav-icon">
-                        Pestaña 10
-                        <span className="material-symbols-rounded o-icon">home</span>
+                        <span>Pestaña 10</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
                 </ul>
                 <div className="tabs-controls">
-                  <button className="prev-next" id="prev">
-                    <span className="material-symbols-rounded">chevron_left</span>
-                  </button>
-                  <button className="prev-next" id="next">
-                    <span className="material-symbols-rounded">chevron_right</span>
+                  <button className="next" id="next">
+                    <span className="material-symbols-rounded" aria-hidden="true">chevron_right</span>
                   </button>
                 </div>
               </nav>
@@ -714,10 +751,24 @@ const TabsDocs: React.FC = () => {
                   Contenido Pestaña 10
                 </div>
               </div>
-
-              <Divisor />
-
+            </div>
+          </CodeBox>
+        </div>
+      ),
+    },
+    {
+      id: 'section-7',
+      title: 'Desplazable con contenedor',
+      content: (
+        <div className="col-12 max-720">
+          <CodeBox codeHTML={TABS_SLIDER_CONTAINER}>
+            <div className="container">
               <nav className="tabs-box" aria-label="Navegación por pestañas">
+                <div className="tabs-controls">
+                  <button className="prev" id="prev-tab">
+                    <span className="material-symbols-rounded" aria-hidden="true">chevron_left</span>
+                  </button>
+                </div>
                 <ul className="nav nav-pills tabs nav-box" id="tab-set-2" role="tablist">
                   <li className="nav-item" role="presentation">
                     <button
@@ -731,7 +782,8 @@ const TabsDocs: React.FC = () => {
                       id="tab-11"
                     >
                       <div className="nav-icon">
-                        Pestaña 1<span className="material-symbols-rounded o-icon">home</span>
+                        <span>Pestaña 1</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -747,7 +799,8 @@ const TabsDocs: React.FC = () => {
                       id="tab-12"
                     >
                       <div className="nav-icon">
-                        Pestaña 2<span className="material-symbols-rounded o-icon">home</span>
+                        <span>Pestaña 2</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -763,7 +816,8 @@ const TabsDocs: React.FC = () => {
                       id="tab-13"
                     >
                       <div className="nav-icon">
-                        Pestaña 3<span className="material-symbols-rounded o-icon">home</span>
+                        <span>Pestaña 3</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -779,7 +833,8 @@ const TabsDocs: React.FC = () => {
                       id="tab-14"
                     >
                       <div className="nav-icon">
-                        Pestaña 4<span className="material-symbols-rounded o-icon">home</span>
+                        <span>Pestaña 4</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -795,7 +850,8 @@ const TabsDocs: React.FC = () => {
                       id="tab-15"
                     >
                       <div className="nav-icon">
-                        Pestaña 5<span className="material-symbols-rounded o-icon">home</span>
+                        <span>Pestaña 5</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -811,7 +867,8 @@ const TabsDocs: React.FC = () => {
                       id="tab-16"
                     >
                       <div className="nav-icon">
-                        Pestaña 6<span className="material-symbols-rounded o-icon">home</span>
+                        <span>Pestaña 6</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -827,7 +884,8 @@ const TabsDocs: React.FC = () => {
                       id="tab-17"
                     >
                       <div className="nav-icon">
-                        Pestaña 7<span className="material-symbols-rounded o-icon">home</span>
+                        <span>Pestaña 7</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -843,7 +901,8 @@ const TabsDocs: React.FC = () => {
                       id="tab-18"
                     >
                       <div className="nav-icon">
-                        Pestaña 8<span className="material-symbols-rounded o-icon">home</span>
+                        <span>Pestaña 8</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -859,7 +918,8 @@ const TabsDocs: React.FC = () => {
                       id="tab-19"
                     >
                       <div className="nav-icon">
-                        Pestaña 9<span className="material-symbols-rounded o-icon">home</span>
+                        <span>Pestaña 9</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
@@ -875,18 +935,15 @@ const TabsDocs: React.FC = () => {
                       id="tab-20"
                     >
                       <div className="nav-icon">
-                        Pestaña 10
-                        <span className="material-symbols-rounded o-icon">home</span>
+                        <span>Pestaña 10</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
                       </div>
                     </button>
                   </li>
                 </ul>
                 <div className="tabs-controls">
-                  <button className="prev-next" id="prev-tab">
-                    <span className="material-symbols-rounded">chevron_left</span>
-                  </button>
-                  <button className="prev-next" id="next-tab">
-                    <span className="material-symbols-rounded">chevron_right</span>
+                  <button className="next" id="next-tab">
+                    <span className="material-symbols-rounded" aria-hidden="true">chevron_right</span>
                   </button>
                 </div>
               </nav>
@@ -924,11 +981,346 @@ const TabsDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-          <br />
-          <br />
-          <br />
-          <br />
         </div>
+      ),
+    },
+    {
+      id: 'section-8',
+      title: 'Tamaños',
+      content: (
+        <>
+          <h3>Grande</h3>
+          <CodeBox codeHTML={TABS_LARGE}>
+            <div className="container">
+              <nav className="tabs-box" aria-label="Navegación por pestañas">
+                <ul className="nav nav-pills tabs" id="large-myTab" role="tablist">
+                  <li className="nav-item" role="presentation">
+                    <button
+                      className="nav-link nav-link-lg active"
+                      data-bs-toggle="tab"
+                      data-bs-target="#panel-large-content-1"
+                      type="button"
+                      role="tab"
+                      aria-controls="panel-large-content-1"
+                      aria-selected="true"
+                      id="tab-large-1"
+                    >
+                      <div className="nav-icon">
+                        <span>Pestaña grande 1</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+                      </div>
+                    </button>
+                  </li>
+                  <li className="nav-item" role="presentation">
+                    <button
+                      className="nav-link nav-link-lg"
+                      data-bs-toggle="tab"
+                      data-bs-target="#panel-large-content-2"
+                      type="button"
+                      role="tab"
+                      aria-controls="panel-large-content-2"
+                      aria-selected="false"
+                      id="tab-large-2"
+                    >
+                      <div className="nav-icon">
+                        <span>Pestaña grande 2</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+                      </div>
+                    </button>
+                  </li>
+                </ul>
+              </nav>
+              <div className="tab-content" id="large-myTabContent">
+                <div
+                  className="tab-pane fade show active"
+                  id="panel-large-content-1"
+                  role="tabpanel"
+                  aria-labelledby="tab-large-1"
+                >
+                  Contenido Pestaña 1
+                </div>
+                <div className="tab-pane fade" id="panel-large-content-2" role="tabpanel" aria-labelledby="tab-large-2">
+                  Contenido Pestaña 2
+                </div>
+              </div>
+              <br />
+              <br />
+              <nav className="tabs-box" aria-label="Navegación por pestañas">
+                <ul className="nav nav-pills tabs nav-box" id="large-cont-myTab" role="tablist">
+                  <li className="nav-item" role="presentation">
+                    <button
+                      className="nav-link nav-link-lg active"
+                      data-bs-toggle="tab"
+                      data-bs-target="#panel-large-cont-content-1"
+                      type="button"
+                      role="tab"
+                      aria-controls="panel-large-cont-content-1"
+                      aria-selected="true"
+                      id="tab-large-cont-1"
+                    >
+                      <div className="nav-icon">
+                        <span>Pestaña grande 1</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+                      </div>
+                    </button>
+                  </li>
+                  <li className="nav-item" role="presentation">
+                    <button
+                      className="nav-link nav-link-lg"
+                      data-bs-toggle="tab"
+                      data-bs-target="#panel-large-cont-content-2"
+                      type="button"
+                      role="tab"
+                      aria-controls="panel-large-cont-content-2"
+                      aria-selected="false"
+                      id="tab-large-cont-2"
+                    >
+                      <div className="nav-icon">
+                        <span>Pestaña grande 2</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+                      </div>
+                    </button>
+                  </li>
+                </ul>
+              </nav>
+              <div className="tab-content" id="large-cont-myTabContent">
+                <div
+                  className="tab-pane fade show active"
+                  id="panel-large-cont-content-1"
+                  role="tabpanel"
+                  aria-labelledby="tab-large-cont-1"
+                >
+                  Contenido Pestaña 1
+                </div>
+                <div className="tab-pane fade" id="panel-large-cont-content-2" role="tabpanel" aria-labelledby="tab-large-cont-2">
+                  Contenido Pestaña 2
+                </div>
+              </div>
+            </div>
+          </CodeBox>
+          <br />
+          <h3>Mediano</h3>
+          <CodeBox codeHTML={TABS_MEDIUM}>
+            <div className="container">
+              <nav className="tabs-box" aria-label="Navegación por pestañas">
+                <ul className="nav nav-pills tabs" id="medium-myTab" role="tablist">
+                  <li className="nav-item" role="presentation">
+                    <button
+                      className="nav-link active"
+                      data-bs-toggle="tab"
+                      data-bs-target="#panel-medium-content-1"
+                      type="button"
+                      role="tab"
+                      aria-controls="panel-medium-content-1"
+                      aria-selected="true"
+                      id="tab-medium-1"
+                    >
+                      <div className="nav-icon">
+                        <span>Pestaña grande 1</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+                      </div>
+                    </button>
+                  </li>
+                  <li className="nav-item" role="presentation">
+                    <button
+                      className="nav-link"
+                      data-bs-toggle="tab"
+                      data-bs-target="#panel-medium-content-2"
+                      type="button"
+                      role="tab"
+                      aria-controls="panel-medium-content-2"
+                      aria-selected="false"
+                      id="tab-medium-2"
+                    >
+                      <div className="nav-icon">
+                        <span>Pestaña grande 2</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+                      </div>
+                    </button>
+                  </li>
+                </ul>
+              </nav>
+              <div className="tab-content" id="medium-myTabContent">
+                <div
+                  className="tab-pane fade show active"
+                  id="panel-medium-content-1"
+                  role="tabpanel"
+                  aria-labelledby="tab-medium-1"
+                >
+                  Contenido Pestaña 1
+                </div>
+                <div className="tab-pane fade" id="panel-medium-content-2" role="tabpanel" aria-labelledby="tab-medium-2">
+                  Contenido Pestaña 2
+                </div>
+              </div>
+              <br />
+              <br />
+              <nav className="tabs-box" aria-label="Navegación por pestañas">
+                <ul className="nav nav-pills tabs nav-box" id="medium-cont-myTab" role="tablist">
+                  <li className="nav-item" role="presentation">
+                    <button
+                      className="nav-link active"
+                      data-bs-toggle="tab"
+                      data-bs-target="#panel-medium-cont-content-1"
+                      type="button"
+                      role="tab"
+                      aria-controls="panel-medium-cont-content-1"
+                      aria-selected="true"
+                      id="tab-medium-cont-1"
+                    >
+                      <div className="nav-icon">
+                        <span>Pestaña grande 1</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+                      </div>
+                    </button>
+                  </li>
+                  <li className="nav-item" role="presentation">
+                    <button
+                      className="nav-link"
+                      data-bs-toggle="tab"
+                      data-bs-target="#panel-medium-cont-content-2"
+                      type="button"
+                      role="tab"
+                      aria-controls="panel-medium-cont-content-2"
+                      aria-selected="false"
+                      id="tab-medium-cont-2"
+                    >
+                      <div className="nav-icon">
+                        <span>Pestaña grande 2</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+                      </div>
+                    </button>
+                  </li>
+                </ul>
+              </nav>
+              <div className="tab-content" id="medium-cont-myTabContent">
+                <div
+                  className="tab-pane fade show active"
+                  id="panel-medium-cont-content-1"
+                  role="tabpanel"
+                  aria-labelledby="tab-medium-cont-1"
+                >
+                  Contenido Pestaña 1
+                </div>
+                <div className="tab-pane fade" id="panel-medium-cont-content-2" role="tabpanel" aria-labelledby="tab-medium-cont-2">
+                  Contenido Pestaña 2
+                </div>
+              </div>
+            </div>
+          </CodeBox>
+          <br />
+          <h3>Chico</h3>
+          <CodeBox codeHTML={TABS_SMALL}>
+            <div className="container">
+              <nav className="tabs-box" aria-label="Navegación por pestañas">
+                <ul className="nav nav-pills tabs" id="small-myTab" role="tablist">
+                  <li className="nav-item" role="presentation">
+                    <button
+                      className="nav-link nav-link-sm active"
+                      data-bs-toggle="tab"
+                      data-bs-target="#panel-small-content-1"
+                      type="button"
+                      role="tab"
+                      aria-controls="panel-small-content-1"
+                      aria-selected="true"
+                      id="tab-small-1"
+                    >
+                      <div className="nav-icon">
+                        <span>Pestaña grande 1</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+                      </div>
+                    </button>
+                  </li>
+                  <li className="nav-item" role="presentation">
+                    <button
+                      className="nav-link nav-link-sm"
+                      data-bs-toggle="tab"
+                      data-bs-target="#panel-small-content-2"
+                      type="button"
+                      role="tab"
+                      aria-controls="panel-small-content-2"
+                      aria-selected="false"
+                      id="tab-small-2"
+                    >
+                      <div className="nav-icon">
+                        <span>Pestaña grande 2</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+                      </div>
+                    </button>
+                  </li>
+                </ul>
+              </nav>
+              <div className="tab-content" id="small-myTabContent">
+                <div
+                  className="tab-pane fade show active"
+                  id="panel-small-content-1"
+                  role="tabpanel"
+                  aria-labelledby="tab-small-1"
+                >
+                  Contenido Pestaña 1
+                </div>
+                <div className="tab-pane fade" id="panel-small-content-2" role="tabpanel" aria-labelledby="tab-small-2">
+                  Contenido Pestaña 2
+                </div>
+              </div>
+              <br />
+              <br />
+              <nav className="tabs-box" aria-label="Navegación por pestañas">
+                <ul className="nav nav-pills tabs nav-box" id="small-cont-myTab" role="tablist">
+                  <li className="nav-item" role="presentation">
+                    <button
+                      className="nav-link nav-link-sm active"
+                      data-bs-toggle="tab"
+                      data-bs-target="#panel-small-cont-content-1"
+                      type="button"
+                      role="tab"
+                      aria-controls="panel-small-cont-content-1"
+                      aria-selected="true"
+                      id="tab-small-cont-1"
+                    >
+                      <div className="nav-icon">
+                        <span>Pestaña grande 1</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+                      </div>
+                    </button>
+                  </li>
+                  <li className="nav-item" role="presentation">
+                    <button
+                      className="nav-link nav-link-sm"
+                      data-bs-toggle="tab"
+                      data-bs-target="#panel-small-cont-content-2"
+                      type="button"
+                      role="tab"
+                      aria-controls="panel-small-cont-content-2"
+                      aria-selected="false"
+                      id="tab-small-cont-2"
+                    >
+                      <div className="nav-icon">
+                        <span>Pestaña grande 2</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+                      </div>
+                    </button>
+                  </li>
+                </ul>
+              </nav>
+              <div className="tab-content" id="small-cont-myTabContent">
+                <div
+                  className="tab-pane fade show active"
+                  id="panel-small-cont-content-1"
+                  role="tabpanel"
+                  aria-labelledby="tab-small-cont-1"
+                >
+                  Contenido Pestaña 1
+                </div>
+                <div className="tab-pane fade" id="panel-small-cont-content-2" role="tabpanel" aria-labelledby="tab-small-cont-2">
+                  Contenido Pestaña 2
+                </div>
+              </div>
+            </div>
+          </CodeBox>
+          <br /><br />
+        </>
+        
       ),
     },
   ];

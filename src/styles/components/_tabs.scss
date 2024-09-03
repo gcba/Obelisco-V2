@@ -1,4 +1,5 @@
 $nav-link-fixed-width: 15.625rem;
+$border-radius-tabs: 0.5rem 0.5rem 0 0;
 
 .tabs-box {
   width: 100%;
@@ -9,7 +10,7 @@ $nav-link-fixed-width: 15.625rem;
 
   /* tabs-controls es el contenedor de los botones prev y next */
   &:has(.tabs-controls) {
-    padding: 0 2.5rem;
+    padding: 0 3rem;
   }
 
   .nav {
@@ -18,7 +19,7 @@ $nav-link-fixed-width: 15.625rem;
 
     /* Esta clase "fixed-width" genera la variante ancho completo de tabs */
     &.fixed-width {
-      .nav-item>.nav-link {
+      .nav-item > .nav-link {
         width: auto;
         min-width: $nav-link-fixed-width;
 
@@ -30,115 +31,104 @@ $nav-link-fixed-width: 15.625rem;
 
     /* Esta seccion define los tamaños disponibles para tabs */
     &.tabs {
-      .nav-item>.nav-link {
-        &-lg {
-          padding: $nav-link-padding-lg-y $nav-link-padding-x;
-        }
-
-        &-sm {
-          padding: $nav-link-padding-sm-y $nav-link-padding-x;
-        }
-      }
-    }
-  }
-
-  /* Estilos de Tabs, moficia los estilos de cada item de la pestaña */
-  .tabs {
-    display: flex;
-    flex-flow: row nowrap;
-    text-align: center;
-    padding-bottom: 0.25rem;
-
-    .nav-item {
-      white-space: nowrap;
-
-      button {
-        border: none;
-      }
-
-      .nav-link {
-        background: transparent;
-        transition: font-weight 0.4s ease-in-out;
-
-        &.active,
-        &:active {
-          font-weight: $font-weight-bold;
-          color: $body-color;
-          box-shadow: inset 0 -4px 0 0 $nav-link-border-active;
-          border-radius: 0;
-
-          &:hover {
-            box-shadow: inset 0 -4px 0 0 $nav-link-border-active;
-            background: none;
-          }
-
-          &:focus {
-            border-radius: $border-radius * 2;
-            background: none;
-          }
-        }
-
-        &:focus {
-          box-shadow: $input-btn-focus-box-shadow inset;
-
-          &:hover {
-            box-shadow: $input-btn-focus-box-shadow inset;
-          }
-        }
-
-        &:hover {
-          box-shadow: none;
-
-          .nav-icon {
-            .o-icon {
-              text-decoration: none;
-            }
-          }
-        }
-
-        .nav-icon {
-          justify-content: center;
-          gap: 0.625rem; //Este gap define el espaciado en pestañas
-        }
-      }
-    }
-
-    .nav-item[draggable='true'] {
-      cursor: move;
-    }
-
-    /* Estilos para pestañas con fondo, son dos variables de fondo, nav-box y nav-box-bg  */
-    &.nav-box {
-      border: none;
-      padding: 0;
+      gap: 0;
+      flex-flow: row nowrap;
+      text-align: center;
+      padding-bottom: 0.25rem;
 
       .nav-item {
+        white-space: nowrap;
+
         .nav-link {
-          background-color: $grisulado-50;
-          border-radius: 8px 8px 0 0;
-          border: none;
+          background: transparent;
+          transition: font-weight 0.4s ease-in-out;
+
+          &:focus {
+            box-shadow: inset $focus-box-shadow;
+            outline-offset: -0.25rem;
+          }
 
           &.active,
           &:active {
-            background-color: $grisulado-50;
-            color: $active-color;
-            box-shadow: none;
+            -webkit-text-stroke: 0.5px $body-color;
+            color: $body-color;
+            border-radius: $border-radius-tabs;
+            box-shadow: inset 0 -0.25rem 0 0 $active-color;
+            outline: 0.25rem solid transparent;
+            outline-offset: -0.25rem;
+
+            &:hover {
+              box-shadow: inset 0 -0.25rem 0 0 $active-color;
+              background-color: transparent;
+            }
 
             &:focus {
-              border-radius: $border-radius * 2 $border-radius * 2 0 0;
+              background-color: transparent;
+            }
+
+            &:focus-visible {
+              border-radius: $border-radius-lg;
+              box-shadow: inset $focus-box-shadow;
+              background-color: transparent;
             }
           }
+
+          //Estilo de pestaña con icono
+          .nav-icon {
+            justify-content: center;
+            gap: 0.625rem;
+          }
+        }
+
+        &[draggable='true'] {
+          cursor: move;
         }
       }
 
-      &-bg {
-        @extend .nav-box;
+      /* Estilos para pestañas con fondo, son dos variables de fondo, nav-box y nav-box-bg  */
+      &.nav-box {
+        border: none;
+        padding: 0;
 
         .nav-item {
           .nav-link {
+            background-color: $grisulado-100;
+            border-radius: $border-radius-tabs;
+            border: none;
+            &:focus {
+              border-radius: $border-radius-lg;
+            }
+
             &.active,
             &:active {
-              background-color: white;
+              background-color: $grisulado-50;
+              border-radius: $border-radius-tabs;
+              color: $active-color;
+              box-shadow: none;
+
+              &:focus-visible {
+                border-radius: 0.5rem;
+                box-shadow: inset $focus-box-shadow;
+              }
+            }
+
+            &.disabled,
+            &:disabled {
+              color: $disabled-text;
+              background-color: $disabled-bg;
+            }
+          }
+        }
+
+        &-bg {
+          @extend .nav-box;
+
+          .nav-item {
+            .nav-link {
+              &.active,
+              &:active {
+                background-color: $white;
+              }
             }
           }
         }
@@ -147,31 +137,28 @@ $nav-link-fixed-width: 15.625rem;
   }
 
   /* Estilos para botones prev y next de el slider de la pestaña */
-  .prev-next {
-    width: 2.5rem;
+  .prev,
+  .next {
+    width: 3rem;
     height: 100%;
     background: transparent;
     position: absolute;
     top: 0;
+    display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    padding: 0;
     border: none;
-    display: flex;
+    padding: .75rem;
 
-    >span {
-      font-size: 16px;
-    }
-
-    &:nth-of-type(1) {
-      left: 0;
-    }
-
-    &:nth-of-type(2) {
-      right: 0;
+    > span {
+      font-size: 1.5rem;
     }
   }
-
-  @extend .tabs;
+  .prev {
+    left: 0;
+  }
+  .next {
+    right: 0;
+  }
 }

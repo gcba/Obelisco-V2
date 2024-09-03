@@ -1,5 +1,6 @@
 export const componentNames = [
   'alert',
+  'access',
   'badge',
   'banner',
   'block',

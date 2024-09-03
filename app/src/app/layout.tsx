@@ -2,6 +2,7 @@
 /* eslint-disable @next/next/no-page-custom-font */
 /* eslint-disable @next/next/no-sync-scripts */
 
+import Footer from '@/components/Layout/Footer/footer';
 import './globals.scss';
 import HeaderDesktop from '@/components/Layout/Headers/Desktop';
 import MainLayout from '@/components/Layout/main-layout';
@@ -30,6 +31,7 @@ export default function RootLayout({
           <main>
             <MainLayout>{children}</MainLayout>
           </main>
+          <Footer />
         </div>
 
         <script

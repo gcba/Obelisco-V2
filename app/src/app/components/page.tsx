@@ -7,6 +7,7 @@ import { componentsPages, formsPages, organismsPages, stylesPages } from '@/comp
 export default function ComponentsPage() {
   return (
     <>
+      <h1 className='visually-hidden'>Secciones de la libreria de componentes Obelisco v2</h1>
       <div className="mb-5 bg-light p-3 rounded-4">
         <p className="headline-lg fw-bold">Estilos</p>
         <div className="access-items-3">

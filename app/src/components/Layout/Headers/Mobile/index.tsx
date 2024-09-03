@@ -24,7 +24,7 @@ export default function HeaderMobile() {
   }, []);
 
   return (
-    <div>
+    <div className='d-block d-lg-none'>
       <button className="navbar-toggler btn btn-outline-primary" type="button" onClick={toggleDrawer} aria-label="Menú">
         <i className="bx bx-menu"></i>
       </button>

@@ -70,7 +70,7 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       {isHome ? (
         children
       ) : (
-        <div className="row pt-5">
+        <div className="row v-height-100 pt-5">
           <div className="col-3 d-none d-lg-block ">
             {pathname.includes('/components') && (
               <div className="nav-left sticky-nav">

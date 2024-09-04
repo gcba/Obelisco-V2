@@ -1,233 +1,367 @@
 
 // Simple
-export const SIMPLE_ACCESS =
-  `
-    <div class="list-group">
-
-      <a href="#" class="list-group-item item-sm">
-        <span class="access-title">Acceso</span>
-      </a>
-
-      <a href="#" class="list-group-item item-sm active">
-        <span class="access-title">Acceso</span>
-      </a>
-
-      <a href="#" class="list-group-item item-sm hover">
-        <span class="access-title">Acceso</span>
-      </a>
-
-      <a href="#" class="list-group-item item-sm focus">
-        <span class="access-title">Acceso</span>
-      </a>
-
+export const SIMPLE_ACCESS = `
+<div class="row">
+  <div class="col-12 col-md-6">
+    <div class="access-items-1">
+      <div class="col">
+        <a href="#" class="list-group-item item-sm">
+          <div class="access-content">
+            <span class="access-title">Acceso</span>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="list-group-item item-sm hover">
+          <div class="access-content">
+            <span class="access-title">Acceso</span>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="list-group-item item-sm focus">
+          <div class="access-content">
+            <span class="access-title">Acceso</span>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="list-group-item item-sm active">
+          <div class="access-content">
+            <span class="access-title">Acceso</span>
+          </div>
+        </a>
+      </div>
     </div>
-
+  </div>
+</div>
 `;
 
 // Con descripcion
-export const WITH_DESCRIPTION_ACCESS =
-  `
-  <div className="list-group">
-
-    <a href="#" className="list-group-item item-sm">
-      <div className="access-content">
-        <span className="access-title">Acceso</span>
-        <p className="access-text">Descripción (Opcional)</p>
+export const DESCRIPTION_ACCESS = `
+<div class="row">
+  <div class="col-12 col-md-6">
+    <div class="access-items-1">
+      <div class="col">
+        <a href="#" class="list-group-item item-sm">
+          <div class="access-content">
+            <span class="access-title">Acceso</span>
+            <p class="access-text">Descripción (Opcional)</p>
+          </div>
+        </a>
       </div>
-    </a>
-
-    <a href="#" className="list-group-item item-sm active">
-      <div className="access-content">
-        <span className="access-title">Acceso</span>
-        <p className="access-text">Descripción (Opcional)</p>
+      <div class="col">
+        <a href="#" class="list-group-item item-sm hover">
+          <div class="access-content">
+            <span class="access-title">Acceso</span>
+            <p class="access-text">Descripción (Opcional)</p>
+          </div>
+        </a>
       </div>
-    </a>
-
-    <a href="#" className="list-group-item item-sm hover">
-      <div className="access-content">
-        <span className="access-title">Acceso</span>
-        <p className="access-text">Descripción (Opcional)</p>
+      <div class="col">
+        <a href="#" class="list-group-item item-sm focus">
+          <div class="access-content">
+            <span class="access-title">Acceso</span>
+            <p class="access-text">Descripción (Opcional)</p>
+          </div>
+        </a>
       </div>
-    </a>
-
-    <a href="#" className="list-group-item item-sm focus">
-      <div className="access-content">
-        <span className="access-title">Acceso</span>
-        <p className="access-text">Descripción (Opcional)</p>
+      <div class="col">
+        <a href="#" class="list-group-item item-sm active">
+          <div class="access-content">
+            <span class="access-title">Acceso</span>
+            <p class="access-text">Descripción (Opcional)</p>
+          </div>
+        </a>
       </div>
-    </a>
-
+    </div>
   </div>
-
+</div>
 `;
 
 // Con icono
-export const WITH_ICON_ACCESS =
-  `
-  <div className="list-group">
-
-    <a href="#" className="list-group-item item-sm">
-    <i className="bx bxs-info-circle"></i>  
-    <div className="access-content">
-        <span className="access-title">Acceso</span>
-        <p className="access-text">Descripción (Opcional)</p>
+export const ICON_ACCESS = `
+<div class="row">
+  <div class="col-12 col-md-6">
+    <div class="access-items-1">
+      <div class="col">
+        <a href="#" class="list-group-item item-sm">
+          <span class="material-symbols-rounded o-icon">info</span>
+          <div class="access-content">
+            <span class="access-title">Acceso</span>
+            <p class="access-text">Descripción (Opcional)</p>
+          </div>
+        </a>
       </div>
-    </a>
-
-    <a href="#" className="list-group-item item-sm active">
-    <i className="bx bxs-info-circle"></i>  
-    <div className="access-content">
-        <span className="access-title">Acceso</span>
-        <p className="access-text">Descripción (Opcional)</p>
+      <div class="col">
+        <a href="#" class="list-group-item item-sm hover">
+          <span class="material-symbols-rounded o-icon">info</span>
+          <div class="access-content">
+            <span class="access-title">Acceso</span>
+            <p class="access-text">Descripción (Opcional)</p>
+          </div>
+        </a>
       </div>
-    </a>
-
-    <a href="#" className="list-group-item item-sm hover">
-    <i className="bx bxs-info-circle"></i>  
-    <div className="access-content">
-        <span className="access-title">Acceso</span>
-        <p className="access-text">Descripción (Opcional)</p>
+      <div class="col">
+        <a href="#" class="list-group-item item-sm focus">
+          <span class="material-symbols-rounded o-icon">info</span>
+          <div class="access-content">
+            <span class="access-title">Acceso</span>
+            <p class="access-text">Descripción (Opcional)</p>
+          </div>
+        </a>
       </div>
-    </a>
-
-    <a href="#" className="list-group-item item-sm focus">
-    <i className="bx bxs-info-circle"></i>  
-    <div className="access-content">
-        <span className="access-title">Acceso</span>
-        <p className="access-text">Descripción (Opcional)</p>
+      <div class="col">
+        <a href="#" class="list-group-item item-sm active">
+          <span class="material-symbols-rounded o-icon">info</span>
+          <div class="access-content">
+            <span class="access-title">Acceso</span>
+            <p class="access-text">Descripción (Opcional)</p>
+          </div>
+        </a>
       </div>
-    </a>
-
+    </div>
   </div>
-
+</div>
 `;
 
 // Tamaños
-export const SIZES_ACCESS =
-  `
-  <div className="list-group">
-    <a href="#" className="list-group-item ">
-      <span className="access-title">Acceso</span>
-    </a>
-    <a href="#" className="list-group-item item-sm hover">
-      <span className="access-title">Acceso</span>
-    </a>
-  </div>
-
-`;
-
-// Lista ancho completo | 4 columnas
-export const FOUR_COLUMNS_ACCESS =
-  `
-  <div className="access-items-4">
-    <div className="col">
-      <a href="#" className="list-group-item item-sm">
-        <span className="access-title">Acceso</span>
-      </a>
+export const SIZES_ACCESS = `
+<div class="row">
+  <div class="col-12 col-md-6">
+    <div class="access-items-1">
+      <div class="col">
+        <a href="#" class="list-group-item item-sm">
+          <span class="material-symbols-rounded o-icon">info</span>
+          <div class="access-content">
+            <span class="access-title">Acceso</span>
+            <p class="access-text">Descripción (Opcional)</p>
+          </div>
+        </a>
+      </div>
+      <div class="col">
+        <a href="#" class="list-group-item">
+          <span class="material-symbols-rounded o-icon">info</span>
+          <div class="access-content">
+            <span class="access-title">Acceso</span>
+            <p class="access-text">Descripción (Opcional)</p>
+          </div>
+        </a>
+      </div>
     </div>
-    <div className="col">
-      <a href="#" className="list-group-item item-sm">
-        <span className="access-title">Acceso</span>
-      </a>
-    </div>
-    <div className="col">
-      <a href="#" className="list-group-item item-sm">
-        <span className="access-title">Acceso</span>
-      </a>
-    </div>
-    <div className="col">
-      <a href="#" className="list-group-item item-sm">
-        <span className="access-title">Acceso</span>
-      </a>
-    </div>
-    <div className="col">
-      <a href="#" className="list-group-item item-sm">
-        <span className="access-title">Acceso</span>
-      </a>
-    </div>
-  </div>
-
-`;
-
-// Lista ancho completo | 3 columnas
-export const THREE_COLUMNS_ACCESS =
-  `
-<div className="access-items-3">
-  <div className="col">
-    <a href="#" className="list-group-item item-sm">
-      <span className="access-title">Acceso</span>
-    </a>
-  </div>
-  <div className="col">
-    <a href="#" className="list-group-item item-sm">
-      <span className="access-title">Acceso</span>
-    </a>
-  </div>
-  <div className="col">
-    <a href="#" className="list-group-item item-sm">
-      <span className="access-title">Acceso</span>
-    </a>
-  </div>
-  <div className="col">
-    <a href="#" className="list-group-item item-sm">
-      <span className="access-title">Acceso</span>
-    </a>
-  </div>
-  <div className="col">
-    <a href="#" className="list-group-item item-sm">
-      <span className="access-title">Acceso</span>
-    </a>
   </div>
 </div>
-
 `;
 
-// Lista ancho completo | 2 columnas
-export const ONE_COLUMN_ACCESS =
-  `
-  <div className="container">
-      <div className="row">
-        {/* Columna para accesos */}
-        <div className="col-12 col-lg-4">
-          <div className="max-items-1">
-            <div className="col">
-              <a href="#" className="list-group-item item-sm">
-                <span className="access-title">Acceso</span>
-              </a>
-            </div>
-          <div className="col">
-            <a href="#" className="list-group-item item-sm">
-              <span className="access-title">Acceso</span>
+// 4 columnas
+export const FOUR_COLUMNS_ACCESS = `
+<div class="row">
+  <div class="access-items-4">
+    <div class="col">
+      <a href="#" class="list-group-item item-sm">
+        <div class="access-content">
+          <span class="access-title">Acceso</span>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="#" class="list-group-item item-sm">
+        <div class="access-content">
+          <span class="access-title">Acceso</span>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="#" class="list-group-item item-sm">
+        <div class="access-content">
+          <span class="access-title">Acceso</span>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="#" class="list-group-item item-sm">
+        <div class="access-content">
+          <span class="access-title">Acceso</span>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="#" class="list-group-item item-sm">
+        <div class="access-content">
+          <span class="access-title">Acceso</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+`;
+export const FOUR_COLUMNS_ACCESS_SECOND = `
+<div class="row">
+  <div class="access-items-4 row-cols-md-1">
+    <div class="col">
+      <a href="#" class="list-group-item item-sm">
+        <div class="access-content">
+          <span class="access-title">Acceso</span>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="#" class="list-group-item item-sm">
+        <div class="access-content">
+          <span class="access-title">Acceso</span>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="#" class="list-group-item item-sm">
+        <div class="access-content">
+          <span class="access-title">Acceso</span>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="#" class="list-group-item item-sm">
+        <div class="access-content">
+          <span class="access-title">Acceso</span>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="#" class="list-group-item item-sm">
+        <div class="access-content">
+          <span class="access-title">Acceso</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+// 3 columnas
+export const THREE_COLUMNS_ACCESS = `
+<div class="row">
+  <div class="access-items-3">
+    <div class="col">
+      <a href="#" class="list-group-item item-sm">
+        <div class="access-content">
+          <span class="access-title">Acceso</span>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="#" class="list-group-item item-sm">
+        <div class="access-content">
+          <span class="access-title">Acceso</span>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="#" class="list-group-item item-sm">
+        <div class="access-content">
+          <span class="access-title">Acceso</span>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="#" class="list-group-item item-sm">
+        <div class="access-content">
+          <span class="access-title">Acceso</span>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="#" class="list-group-item item-sm">
+        <div class="access-content">
+          <span class="access-title">Acceso</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+`;
+export const THREE_COLUMNS_ACCESS_SECOND = `
+<div class="row">
+  <div class="access-items-3 row-cols-md-1">
+    <div class="col">
+      <a href="#" class="list-group-item item-sm">
+        <div class="access-content">
+          <span class="access-title">Acceso</span>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="#" class="list-group-item item-sm">
+        <div class="access-content">
+          <span class="access-title">Acceso</span>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="#" class="list-group-item item-sm">
+        <div class="access-content">
+          <span class="access-title">Acceso</span>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="#" class="list-group-item item-sm">
+        <div class="access-content">
+          <span class="access-title">Acceso</span>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="#" class="list-group-item item-sm">
+        <div class="access-content">
+          <span class="access-title">Acceso</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+// 1 columna
+export const ONE_COLUMN_ACCESS = `
+  <div class="container" >
+    <div class="row">
+      <div class="col-12 col-xl-4">
+        <div class="access-items-1">
+          <div class="col">
+            <a href="#" class="list-group-item item-sm">
+              <div class="access-content">
+                <span class="access-title">Acceso</span>
+              </div>
             </a>
           </div>
-          <div className="col">
-            <a href="#" className="list-group-item item-sm">
-              <span className="access-title">Acceso</span>
+          <div class="col">
+            <a href="#" class="list-group-item item-sm">
+              <div class="access-content">
+                <span class="access-title">Acceso</span>
+              </div>
             </a>
           </div>
-          <div className="col">
-            <a href="#" className="list-group-item item-sm">
-              <span className="access-title">Acceso</span>
+          <div class="col">
+            <a href="#" class="list-group-item item-sm">
+              <div class="access-content">
+                <span class="access-title">Acceso</span>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a href="#" class="list-group-item item-sm">
+              <div class="access-content">
+                <span class="access-title">Acceso</span>
+              </div>
             </a>
           </div>
         </div>
       </div>
-
-      {/* Columna para el contenido a un lado */}
-      <div className="col-12 col-lg-8">
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Possimus nesciunt sed dolorem laboriosam eius voluptatibus
-          omnis accusantium, non atque et at consequuntur accusamus,
-          facilis officia nam consectetur aliquam sunt ipsum. Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Possimus
-          nesciunt sed dolorem laboriosam eius voluptatibus omnis
-          accusantium, non atque et at consequuntur accusamus, facilis
-          officia nam consectetur aliquam sunt ipsum.
-        </div>
+      <div class="col-12 col-xl-8">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias quo repellendus earum dolorem, eos ex reprehenderit labore consequuntur, nemo velit quod adipisci laborum saepe officiis culpa doloremque nulla obcaecati sapiente.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias quo repellendus earum dolorem, eos ex reprehenderit labore consequuntur, nemo velit quod adipisci laborum saepe officiis culpa doloremque nulla obcaecati sapiente.</p>
       </div>
     </div>
   </div>
-
 `;
 

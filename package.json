@@ -15,6 +15,7 @@
     "build-css": "sass src/styles/main.scss dist/styles.css",
     "build": "npm run build-css",
     "build-versioned": "node build-css-versioned.js",
+    "prettier:check-library": "prettier --check \"src/**/*.scss\"",
     "prettier:library": "prettier --write \"src/**/*.scss\"",
     "lint:library": "stylelint \"src/**/*.scss\"",
     "lint-fix:library": "stylelint \"src/**/*.scss\" --fix",

@@ -49,7 +49,7 @@ Importar los estilos en el archivo principal del proyecto:
 ```sh
 import 'obelisco-v2/dist/styles.css';
 o
-<link rel="stylesheet" href="ruta/al/proyecto/dist/obelisco.css">
+<link rel="stylesheet" href="ruta/al/proyecto/dist/styles.css">
 ```
 
 ### Tipografías
@@ -72,9 +72,10 @@ npm install boxicons
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
 ```
 
-Material Symbols:
+Material Symbols con npm o CDN:
 
 ```sh
+npm install material-symbols@latest
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 ```
 

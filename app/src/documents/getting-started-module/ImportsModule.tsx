@@ -23,6 +23,7 @@ const ImportsModule: React.FC = () => {
         <MainDescription description="Después de instalar Obelisco V2 o hacer el llamado a través de la CDN, es necesario importar ciertos complementos esenciales para asegurar el correcto funcionamiento y el estilo de los componentes de Obelisco V2. A continuación, se detallan los recursos que debes incluir en tu proyecto:" />
       ),
       h1: true,
+      defaultTitle: true,
     },
     {
       id: 'section-2',
@@ -79,6 +80,13 @@ const ImportsModule: React.FC = () => {
           <br />
 
           <h3 className="headline-lg">Material Symbols:</h3>
+          <SyntaxHighlighter language="bash" style={dracula} wrapLongLines>
+            {`npm install material-symbols@latest`}
+          </SyntaxHighlighter>
+
+          <br />
+
+          <h3 className="headline-lg">O puedes utilizar la CDN:</h3>
           <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
             {MATERIAL_SYMBOLS_CODE}
           </SyntaxHighlighter>

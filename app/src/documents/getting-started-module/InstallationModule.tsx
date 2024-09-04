@@ -15,6 +15,7 @@ const InstallationModule: React.FC = () => {
         <MainDescription description="En esta sección, aprenderás cómo instalar y comenzar a utilizar la librería de estilos de componentes Obelisco V2 en tus proyectos. Siguiendo unos sencillos pasos, podrás integrar nuestros componentes estilizados en cualquier aplicación web, ya sea que trabajes con React, Angular, o cualquier otra tecnología." />
       ),
       h1: true,
+      defaultTitle: true,
     },
     {
       id: 'section-2',

@@ -16,18 +16,22 @@ export default function Footer() {
                   src="https://gcba.github.io/Obelisco/footer/ciudad-ba-sm.svg"
                   alt="Logo de Ciudad de Buenos Aires"
                   height="48"
+                  width="100"
                 />
                 <Image
                   className="d-none d-lg-inline"
                   src="https://gcba.github.io/Obelisco/footer/ciudad-ba-sm.svg"
                   alt="Logo de Ciudad de Buenos Aires"
                   height="40"
+                  width="120"
                 />
                 <div className="h-100 mx-3 bg-warning"></div>
                 <Image
                   className="img-vamos-ba"
                   src="https://gcba.github.io/Obelisco/footer/vamos-ba.svg"
                   alt="Logo de Vamos Buenos Aires"
+                  height="40"
+                  width="100"
                 />
               </div>
               <div className="col-12">

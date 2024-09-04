@@ -14,6 +14,7 @@ $nav-link-vertical-padding-x: 1.125rem;
 nav {
   .nav-pills {
     gap: 0.625rem;
+
     .nav-item {
       .nav-link {
         color: $body-color;
@@ -51,6 +52,7 @@ nav {
 
         &:visited {
           color: $body-color;
+
           &.disabled,
           &:disabled {
             color: $disabled-text;
@@ -77,8 +79,10 @@ nav {
             @extend .underline-1;
             text-decoration-color: transparent;
           }
+
           .nav-icon {
             text-decoration: none;
+
             span:not(.o-icon) {
               @extend .underline-1;
               text-decoration-color: transparent;
@@ -102,6 +106,7 @@ nav {
               text-decoration: none;
             }
           }
+
           span {
             text-decoration: none;
           }
@@ -225,11 +230,13 @@ nav {
         .nav-link {
           padding-left: $nav-link-vertical-padding-x * 2.4444;
         }
+
         // Espaciado nav vertical 3er nivel
         .nav {
           .nav-link {
             padding-left: $nav-link-vertical-padding-x * 4;
           }
+
           // Espaciado nav vertical 4to nivel
           .nav {
             .nav-link {

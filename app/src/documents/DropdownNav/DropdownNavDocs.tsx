@@ -1,8 +1,15 @@
-import CodeBox from "@/components/CodeBox";
+import CodeBox from '@/components/CodeBox';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
-import { DROPDOWN, DROPDOWN_CASCADE, DROPDOWN_CASCADE_RIGHT, DROPDOWN_MENU_ICON, DROPDOWN_MENU_ICON_ONLY, DROPDOWN_MENU_RIGHT, } from './code-views';
+import {
+  DROPDOWN,
+  DROPDOWN_CASCADE,
+  DROPDOWN_CASCADE_RIGHT,
+  DROPDOWN_MENU_ICON,
+  DROPDOWN_MENU_ICON_ONLY,
+  DROPDOWN_MENU_RIGHT,
+} from './code-views';
 
 const sections = [
   {
@@ -27,40 +34,28 @@ const sections = [
                 aria-expanded="false"
               >
                 <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
-                <span
-                  className="material-symbols-rounded o-icon btn-dropdown-icon"
-                  aria-label="hidden"
-                >
+                <span className="material-symbols-rounded o-icon btn-dropdown-icon" aria-label="hidden">
                   expand_more
                 </span>
               </button>
               <div className="dropdown-menu">
                 <a className="dropdown-item" href="#">
                   <i className="bx bxs-info-circle o-icon"></i>
-                  <span className="item-text">
-                    Opción de navegación
-                  </span>
+                  <span className="item-text">Opción de navegación</span>
                   <i className="bx bxs-info-circle o-icon"></i>
                 </a>
                 <a className="dropdown-item" href="#">
                   <i className="bx bxs-info-circle o-icon"></i>
-                  <span className="item-text text-end">
-                    Opción de navegación
-                  </span>
+                  <span className="item-text text-end">Opción de navegación</span>
                   <i className="bx bxs-info-circle o-icon"></i>
                 </a>
                 <a className="dropdown-item disabled" href="#">
                   <i className="bx bxs-info-circle o-icon"></i>
-                  <span className="item-text text-end">
-                    Opción de navegación
-                  </span>
+                  <span className="item-text text-end">Opción de navegación</span>
                   <i className="bx bxs-info-circle o-icon"></i>
                 </a>
                 <a className="dropdown-item item-danger" href="#">
-                  <span
-                    className="material-symbols-rounded o-icon"
-                    aria-label="hidden"
-                  >
+                  <span className="material-symbols-rounded o-icon" aria-label="hidden">
                     logout
                   </span>
                   <span className="item-text">Cerrar sesión</span>
@@ -79,10 +74,7 @@ const sections = [
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <span
-                  className="material-symbols-rounded o-icon"
-                  aria-label="hidden"
-                >
+                <span className="material-symbols-rounded o-icon" aria-label="hidden">
                   menu
                 </span>
                 <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
@@ -90,24 +82,15 @@ const sections = [
               <div className="dropdown-menu">
                 <a className="dropdown-item" href="#">
                   <i className="bx bxs-info-circle o-icon"></i>
-                  <span className="item-text">
-                    Opción de navegación
-                  </span>
+                  <span className="item-text">Opción de navegación</span>
                 </a>
                 <a className="dropdown-item" href="#">
-                  <span className="item-text text-end">
-                    Opción de navegación
-                  </span>
+                  <span className="item-text text-end">Opción de navegación</span>
                   <i className="bx bxs-info-circle o-icon"></i>
                 </a>
                 <a className="dropdown-item item-danger" href="#">
-                  <span className="item-text text-end">
-                    Cerrar sesión
-                  </span>
-                  <span
-                    className="material-symbols-rounded o-icon"
-                    aria-label="hidden"
-                  >
+                  <span className="item-text text-end">Cerrar sesión</span>
+                  <span className="material-symbols-rounded o-icon" aria-label="hidden">
                     logout
                   </span>
                 </a>
@@ -126,34 +109,22 @@ const sections = [
                 aria-expanded="false"
                 aria-label="Menu"
               >
-                <span
-                  className="material-symbols-rounded o-icon"
-                  aria-label="hidden"
-                >
+                <span className="material-symbols-rounded o-icon" aria-label="hidden">
                   menu
                 </span>
               </button>
               <div className="dropdown-menu">
                 <a className="dropdown-item" href="#">
                   <i className="bx bxs-info-circle o-icon"></i>
-                  <span className="item-text">
-                    Opción de navegación
-                  </span>
+                  <span className="item-text">Opción de navegación</span>
                 </a>
                 <a className="dropdown-item" href="#">
-                  <span className="item-text text-end">
-                    Opción de navegación
-                  </span>
+                  <span className="item-text text-end">Opción de navegación</span>
                   <i className="bx bxs-info-circle o-icon"></i>
                 </a>
                 <a className="dropdown-item item-danger" href="#">
-                  <span className="item-text text-end">
-                    Cerrar sesión
-                  </span>
-                  <span
-                    className="material-symbols-rounded o-icon"
-                    aria-label="hidden"
-                  >
+                  <span className="item-text text-end">Cerrar sesión</span>
+                  <span className="material-symbols-rounded o-icon" aria-label="hidden">
                     logout
                   </span>
                 </a>
@@ -178,10 +149,7 @@ const sections = [
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <span
-                  className="material-symbols-rounded o-icon btn-dropdown-icon"
-                  aria-label="hidden"
-                >
+                <span className="material-symbols-rounded o-icon btn-dropdown-icon" aria-label="hidden">
                   expand_more
                 </span>
                 <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
@@ -198,10 +166,7 @@ const sections = [
                 </a>
                 <a className="dropdown-item item-danger" href="#">
                   <span className="item-text">Cerrar sesión</span>
-                  <span
-                    className="material-symbols-rounded o-icon"
-                    aria-label="hidden"
-                  >
+                  <span className="material-symbols-rounded o-icon" aria-label="hidden">
                     logout
                   </span>
                 </a>
@@ -228,10 +193,7 @@ const sections = [
                 data-bs-auto-close="outside"
               >
                 <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
-                <span
-                  className="material-symbols-rounded o-icon btn-dropdown-icon"
-                  aria-label="hidden"
-                >
+                <span className="material-symbols-rounded o-icon btn-dropdown-icon" aria-label="hidden">
                   expand_more
                 </span>
               </button>
@@ -244,52 +206,36 @@ const sections = [
                     aria-expanded="false"
                   >
                     <i className="bx bxs-info-circle o-icon"></i>
-                    <span className="btn-dropdown-text ellipsis-1">
-                      Opción en cascada
-                    </span>
-                    <span
-                      className="material-symbols-rounded o-icon btn-dropdown-icon"
-                      aria-label="hidden"
-                    >
+                    <span className="btn-dropdown-text ellipsis-1">Opción en cascada</span>
+                    <span className="material-symbols-rounded o-icon btn-dropdown-icon" aria-label="hidden">
                       expand_more
                     </span>
                   </button>
                   <div className="dropdown-menu">
                     <a className="dropdown-item" href="#">
-
-                      <span className="item-text">
-                        Opción de navegación
-                      </span>
+                      <span className="item-text">Opción de navegación</span>
                     </a>
                     <a className="dropdown-item" href="#">
-                      <span className="item-text">
-                        Opción de navegación
-                      </span>
+                      <span className="item-text">Opción de navegación</span>
                     </a>
                     <a className="dropdown-item" href="#">
-                      <span className="item-text">
-                        Opción de navegación
-                      </span>
+                      <span className="item-text">Opción de navegación</span>
                     </a>
                   </div>
                 </div>
                 <a className="dropdown-item" href="#">
-                  <span className="item-text">
-                    Opción de navegación
-                  </span>
+                  <span className="item-text">Opción de navegación</span>
                 </a>
                 <a className="dropdown-item" href="#">
-                  <span className="item-text">
-                    Opción de navegación
-                  </span>
+                  <span className="item-text">Opción de navegación</span>
                 </a>
                 <a className="dropdown-item" href="#">
-                  <span className="item-text">
-                    Opción de navegación
-                  </span>
+                  <span className="item-text">Opción de navegación</span>
                 </a>
                 <a className="dropdown-item item-danger" href="#">
-                  <span className="material-symbols-rounded o-icon" aria-label="hidden">logout</span>
+                  <span className="material-symbols-rounded o-icon" aria-label="hidden">
+                    logout
+                  </span>
                   <span className="item-text">Cerrar sesión</span>
                 </a>
               </div>
@@ -307,10 +253,7 @@ const sections = [
                 aria-expanded="false"
                 data-bs-auto-close="outside"
               >
-                <span
-                  className="material-symbols-rounded o-icon btn-dropdown-icon"
-                  aria-label="hidden"
-                >
+                <span className="material-symbols-rounded o-icon btn-dropdown-icon" aria-label="hidden">
                   expand_more
                 </span>
                 <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
@@ -323,57 +266,37 @@ const sections = [
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    <span
-                      className="material-symbols-rounded o-icon btn-dropdown-icon"
-                      aria-label="hidden"
-                    >
+                    <span className="material-symbols-rounded o-icon btn-dropdown-icon" aria-label="hidden">
                       expand_more
                     </span>
 
-                    <span className="btn-dropdown-text ellipsis-1">
-                      Opción en cascada
-                    </span>
+                    <span className="btn-dropdown-text ellipsis-1">Opción en cascada</span>
                     <i className="bx bxs-info-circle o-icon"></i>
                   </button>
                   <div className="dropdown-menu">
                     <a className="dropdown-item" href="#">
-                      <span className="item-text">
-                        Opción de navegación
-                      </span>
+                      <span className="item-text">Opción de navegación</span>
                     </a>
                     <a className="dropdown-item" href="#">
-                      <span className="item-text">
-                        Opción de navegación
-                      </span>
+                      <span className="item-text">Opción de navegación</span>
                     </a>
                     <a className="dropdown-item" href="#">
-                      <span className="item-text">
-                        Opción de navegación
-                      </span>
+                      <span className="item-text">Opción de navegación</span>
                     </a>
                   </div>
                 </div>
                 <a className="dropdown-item" href="#">
-                  <span className="item-text">
-                    Opción de navegación
-                  </span>
+                  <span className="item-text">Opción de navegación</span>
                 </a>
                 <a className="dropdown-item" href="#">
-                  <span className="item-text">
-                    Opción de navegación
-                  </span>
+                  <span className="item-text">Opción de navegación</span>
                 </a>
                 <a className="dropdown-item" href="#">
-                  <span className="item-text">
-                    Opción de navegación
-                  </span>
+                  <span className="item-text">Opción de navegación</span>
                 </a>
                 <a className="dropdown-item item-danger" href="#">
                   <span className="item-text">Cerrar sesión</span>
-                  <span
-                    className="material-symbols-rounded o-icon"
-                    aria-label="hidden"
-                  >
+                  <span className="material-symbols-rounded o-icon" aria-label="hidden">
                     logout
                   </span>
                 </a>
@@ -381,16 +304,15 @@ const sections = [
             </div>
           </div>
         </CodeBox>
-        <br /><br />
+        <br />
+        <br />
       </>
     ),
   },
 ];
 
 const DropdownNavDocs: React.FC = () => {
-  return (
-    <DocumentationTemplate sections={sections} />
-  );
+  return <DocumentationTemplate sections={sections} />;
 };
 
 export default DropdownNavDocs;

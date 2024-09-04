@@ -1,135 +1,137 @@
-"use client";
+'use client';
 
-import React, { useRef } from "react";
-import { Scrollspy } from "@makotot/ghostui";
-import CodeCopy from "@/components/CodeBox";
-import BoxTemplate from "@/components/Template/Box";
-import HeadingTemplate from "@/components/Template/HeadingTemplate";
+import React from "react";
+
+import CodeBox from "@/components/CodeBox";
+import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
 import MainDescription from "@/components/Template/MainDescription";
-import SimpleText from "@/components/Template/SimpleText";
 
 import {
-  EGcodeSimpleAccess,
-  EGcodeWithDescriptionAccess,
-  EGcodeWithIconAccess,
-  EGcodeSizesAccess,
-  EGcodeListWidthComplete4ColumnsAccess,
-  EGcodeListWidthComplete3ColumnsAccess,
-  EGcodeListWidthComplete1ColumnWithAside,
+  SIMPLE_ACCESS,
+  WITH_DESCRIPTION_ACCESS,
+  WITH_ICON_ACCESS,
+  FOUR_COLUMNS_ACCESS,
+  THREE_COLUMNS_ACCESS,
+  ONE_COLUMN_ACCESS,
+  SIZES_ACCESS,
 } from "./code-views";
-import { idText } from "typescript";
-import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
 
 const AccessDocs: React.FC = () => {
   const sections = [
     {
-      id: "section-1",
-      title: "Introducción",
+      id: "",
+      title: "Accesos",
       content: (
-        <MainDescription description="Los accesos son avisos que mantienen a los usuarios informados sobre el estado del sistema y pueden requerir o no que realicen una acción." />
+        <MainDescription description="Los accesos funcionan como puntos de ingreso a diferentes secciones y pueden agruparse cuando hay una similitud en su contenido." />
+      ),
+    },
+    {
+      id: "section-1",
+      title: "Simple",
+      content: (
+        <CodeBox codeHTML={SIMPLE_ACCESS}>
+          <section className="container" >
+          <div className="list-group">
+            <a href="#" className="list-group-item item-sm">
+              <span className="access-title">Acceso</span>
+            </a>
+            <a href="#" className="list-group-item item-sm active">
+              <span className="access-title">Acceso</span>
+            </a>
+            <a href="#" className="list-group-item item-sm hover">
+              <span className="access-title">Acceso</span>
+            </a>
+            <a href="#" className="list-group-item item-sm focus">
+              <span className="access-title">Acceso</span>
+            </a>
+          </div>
+        </section>
+        </CodeBox>
+        
       ),
     },
     {
       id: "section-2",
-      title: "Simple",
+      title: "Con descripción",
       content: (
+        <CodeBox codeHTML={WITH_DESCRIPTION_ACCESS}>
         <section>
           <div className="list-group">
             <a href="#" className="list-group-item item-sm">
-              <span className="access-title">Acceso</span>
+              <div className="access-content">
+                <span className="access-title">Acceso</span>
+                <p className="access-text">Descripción (Opcional)</p>
+              </div>
             </a>
             <a href="#" className="list-group-item item-sm active">
-              <span className="access-title">Acceso</span>
+              <div className="access-content">
+                <span className="access-title">Acceso</span>
+                <p className="access-text">Descripción (Opcional)</p>
+              </div>
             </a>
             <a href="#" className="list-group-item item-sm hover">
-              <span className="access-title">Acceso</span>
+              <div className="access-content">
+                <span className="access-title">Acceso</span>
+                <p className="access-text">Descripción (Opcional)</p>
+              </div>
             </a>
             <a href="#" className="list-group-item item-sm focus">
-              <span className="access-title">Acceso</span>
+              <div className="access-content">
+                <span className="access-title">Acceso</span>
+                <p className="access-text">Descripción (Opcional)</p>
+              </div>
             </a>
           </div>
-          <CodeCopy code={EGcodeSimpleAccess} />
         </section>
+        </CodeBox>
+
       ),
     },
     {
       id: "section-3",
-      title: "Con descripción",
+      title: "Con icono",
       content: (
+        <CodeBox codeHTML={WITH_ICON_ACCESS}>
         <section>
           <div className="list-group">
             <a href="#" className="list-group-item item-sm">
+            <span className="material-symbols-rounded o-icon">info</span>
               <div className="access-content">
                 <span className="access-title">Acceso</span>
                 <p className="access-text">Descripción (Opcional)</p>
               </div>
             </a>
             <a href="#" className="list-group-item item-sm active">
+            <span className="material-symbols-rounded o-icon">info</span>
               <div className="access-content">
                 <span className="access-title">Acceso</span>
                 <p className="access-text">Descripción (Opcional)</p>
               </div>
             </a>
             <a href="#" className="list-group-item item-sm hover">
+            <span className="material-symbols-rounded o-icon">info</span>
               <div className="access-content">
                 <span className="access-title">Acceso</span>
                 <p className="access-text">Descripción (Opcional)</p>
               </div>
             </a>
             <a href="#" className="list-group-item item-sm focus">
+            <span className="material-symbols-rounded o-icon">info</span>
               <div className="access-content">
                 <span className="access-title">Acceso</span>
                 <p className="access-text">Descripción (Opcional)</p>
               </div>
             </a>
           </div>
-          <CodeCopy code={EGcodeWithDescriptionAccess} />
         </section>
+        </CodeBox>
       ),
     },
     {
       id: "section-4",
-      title: "Con icono",
-      content: (
-        <section>
-          <div className="list-group">
-            <a href="#" className="list-group-item item-sm">
-              <i className="bx bxs-info-circle"></i>
-              <div className="access-content">
-                <span className="access-title">Acceso</span>
-                <p className="access-text">Descripción (Opcional)</p>
-              </div>
-            </a>
-            <a href="#" className="list-group-item item-sm active">
-              <i className="bx bxs-info-circle"></i>
-              <div className="access-content">
-                <span className="access-title">Acceso</span>
-                <p className="access-text">Descripción (Opcional)</p>
-              </div>
-            </a>
-            <a href="#" className="list-group-item item-sm hover">
-              <i className="bx bxs-info-circle"></i>
-              <div className="access-content">
-                <span className="access-title">Acceso</span>
-                <p className="access-text">Descripción (Opcional)</p>
-              </div>
-            </a>
-            <a href="#" className="list-group-item item-sm focus">
-              <i className="bx bxs-info-circle"></i>
-              <div className="access-content">
-                <span className="access-title">Acceso</span>
-                <p className="access-text">Descripción (Opcional)</p>
-              </div>
-            </a>
-          </div>
-          <CodeCopy code={EGcodeWithIconAccess} />
-        </section>
-      ),
-    },
-    {
-      id: "section-5",
       title: "Tamaños",
       content: (
+        <CodeBox codeHTML={SIZES_ACCESS}>
         <section>
           <div className="list-group">
             <a href="#" className="list-group-item ">
@@ -139,15 +141,16 @@ const AccessDocs: React.FC = () => {
               <span className="access-title">Acceso</span>
             </a>
           </div>
-          <CodeCopy code={EGcodeSizesAccess} />
         </section>
+        </CodeBox>
       ),
     },
     {
-      id: "section-6",
+      id: "section-5",
       title: "Disposición",
       content: (
         <>
+        <CodeBox codeHTML={FOUR_COLUMNS_ACCESS}>
           {/* Cuatro Columnas */}
           <section>
             <h2>Cuatro columnas</h2>
@@ -180,10 +183,10 @@ const AccessDocs: React.FC = () => {
                 </div>
               </div>
             </div>
-
-            <CodeCopy code={EGcodeListWidthComplete4ColumnsAccess} />
           </section>
+          </CodeBox>
 
+          <CodeBox codeHTML={THREE_COLUMNS_ACCESS}>
           {/* Tres Columnas */}
           <section>
             <h2>Tres Columnas</h2>
@@ -216,16 +219,15 @@ const AccessDocs: React.FC = () => {
                 </div>
               </div>
             </div>
-
-            <CodeCopy code={EGcodeListWidthComplete3ColumnsAccess} />
           </section>
+          </CodeBox>
 
+          <CodeBox codeHTML={ONE_COLUMN_ACCESS}>
           {/* Una columna */}
           <section>
             <h2>Una Columna con Aside</h2>
             <div className="container">
               <div className="row">
-
                 {/* Columna para el div de accesos */}
                 <div className="col-12 col-lg-4">
                   <div className="max-items-1">
@@ -255,21 +257,17 @@ const AccessDocs: React.FC = () => {
                 {/* Columna para el contenido a un lado */}
                 <div className="col-12 col-lg-8">
                   <div>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Possimus nesciunt sed dolorem laboriosam eius voluptatibus
-                    omnis accusantium, non atque et at consequuntur accusamus,
-                    facilis officia nam consectetur aliquam sunt ipsum. Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Possimus
-                    nesciunt sed dolorem laboriosam eius voluptatibus omnis
-                    accusantium, non atque et at consequuntur accusamus, facilis
-                    officia nam consectetur aliquam sunt ipsum.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nesciunt sed dolorem laboriosam
+                    eius voluptatibus omnis accusantium, non atque et at consequuntur accusamus, facilis officia nam
+                    consectetur aliquam sunt ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                    nesciunt sed dolorem laboriosam eius voluptatibus omnis accusantium, non atque et at consequuntur
+                    accusamus, facilis officia nam consectetur aliquam sunt ipsum.
                   </div>
                 </div>
               </div>
             </div>
-
-            <CodeCopy code={EGcodeListWidthComplete1ColumnWithAside} />
           </section>
+          </CodeBox>
         </>
       ),
     },

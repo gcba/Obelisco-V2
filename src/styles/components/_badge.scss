@@ -2,17 +2,17 @@
 $badge-color: $body-color;
 $badge-font-size: 0.875rem;
 $badge-font-weight: $font-weight-normal;
-$badge-border-radius: spaceUnits(2);
-$badge-separation: spaceUnits(2);
+$badge-border-radius: 0.5rem;
+$badge-separation: 0.5rem;
 $badge-padding-y: 0.125rem;
 $badge-padding-x: 0.25rem;
 
 $badge-theme-color: (
-  "default": $blue-900,
-  "danger": $red-500,
-  "info": $blue-500,
-  "success": $green-600,
-  "warning": $orange-500,
+  'default': $blue-900,
+  'danger': $red-500,
+  'info': $blue-500,
+  'success': $green-600,
+  'warning': $orange-500,
 );
 
 $badge-bg-theme-color: (
@@ -39,9 +39,9 @@ $badge-bg-theme-color: (
       text-decoration: underline;
       text-decoration-thickness: 1px;
     }
+
     &:focus,
     &.focus {
-      outline: 0;
       background-color: $light;
       box-shadow: $focus-box-shadow;
       outline: 0.25rem solid transparent;

@@ -56,6 +56,7 @@ $chromatic-colors: (
       th,
       td {
         padding: 0;
+
         span {
           height: 40px;
           width: 40px;
@@ -69,7 +70,7 @@ $chromatic-colors: (
       .calendar-week-header {
         th {
           font-weight: 700;
-          font-family: 'Nunito', sans-serif;
+          font-family: Nunito, sans-serif;
           height: 48px;
           background-color: $cyan-50;
           color: $grisulado-900;
@@ -82,11 +83,13 @@ $chromatic-colors: (
         &:nth-of-type(even) {
           background-color: $cyan-50;
         }
+
         &:nth-of-type(odd) {
           td {
             padding: 0.25rem 0;
           }
         }
+
         &:nth-of-type(1) {
           td {
             padding: 0.5rem 0 0.25rem;
@@ -103,9 +106,11 @@ $chromatic-colors: (
 
             &:hover {
               outline: 0.25rem solid transparent;
+
               .active {
                 background-color: $blue-600;
               }
+
               .active-secondary {
                 background-color: $blue-950;
               }
@@ -121,14 +126,17 @@ $chromatic-colors: (
             &:focus {
               box-shadow: none;
               backface-visibility: inherit;
+
               .active {
                 background-color: $blue-600;
                 color: $white;
               }
+
               .active-secondary {
                 background-color: $blue-900;
                 color: $white;
               }
+
               .active,
               .active-secondary {
                 box-shadow: 0 0 0 0.125rem $focus-color;
@@ -138,13 +146,16 @@ $chromatic-colors: (
             &:active {
               box-shadow: none;
               backface-visibility: inherit;
+
               .active,
               .active-secondary {
                 box-shadow: 0 0 0 0.125rem $blue-800;
               }
+
               .active {
                 background-color: $blue-600;
               }
+
               .active-secondary {
                 background-color: $blue-950;
               }
@@ -152,7 +163,7 @@ $chromatic-colors: (
           }
 
           span {
-            &:after {
+            &::after {
               line-height: 1.5;
             }
 
@@ -193,7 +204,7 @@ $chromatic-colors: (
   .calendar-footer {
     .calendar-footer-list {
       margin-top: 1rem;
-      box-shadow: 0px -1px 0px 0px $grisulado-50;
+      box-shadow: 0 -1px 0 0 $grisulado-50;
       padding: $calendar-footer-spacing;
       margin-bottom: 0;
 
@@ -201,15 +212,19 @@ $chromatic-colors: (
         font-size: 0.875rem;
         line-height: 20px;
         list-style-type: none;
+
         &:not(:last-child) {
           margin-bottom: 0.5rem;
         }
       }
     }
+
     .accordion {
       margin-top: 1rem;
+
       .card {
         margin-bottom: 0;
+
         .calendar-footer-list {
           margin: 0;
           box-shadow: none;
@@ -232,8 +247,7 @@ $chromatic-colors: (
 .calendar-deck {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 2rem;
-  row-gap: 2rem;
+  gap: 2rem;
   justify-content: center;
 
   @include media-breakpoint-up(xl) {

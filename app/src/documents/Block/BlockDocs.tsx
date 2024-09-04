@@ -18,9 +18,7 @@ const BlockDocs: React.FC = () => {
       title: 'Con título',
       content: (
         <CodeBox codeHTML={BLOCK}>
-          <div className="container">
-            lorem
-          </div>
+          <div className="container">lorem</div>
         </CodeBox>
       ),
     },

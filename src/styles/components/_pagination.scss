@@ -9,8 +9,8 @@ $pagination-box-shadow: 0 0 0 0.125rem $grisulado-50;
 $pagination-focus-box-shadow: 0 0 0 0.25rem $cyan-800;
 $pagination-hover-box-shadow: 0 0 0 0.125rem $blue-700;
 
-$pagination-padding-y: spaceUnits(2);
-$pagination-padding-x: spaceUnits(3);
+$pagination-padding-y: 0.5rem;
+$pagination-padding-x: 0.25rem * 3;
 $pagination-border-width: 0;
 
 $pagination-disabled-bg: transparent;
@@ -19,8 +19,8 @@ $pagination-active-bg: $blue-700;
 
 /* === Custom variables and mixins === */
 $pagination-size: 40px;
-$pagination-icon-padding-x-sm: spaceUnits(1);
-$pagination-icon-padding-x: spaceUnits(2);
+$pagination-icon-padding-x-sm: 0.25rem;
+$pagination-icon-padding-x: 0.5rem;
 
 $pagination-icon-left-hover: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgb(39,73,134);transform:;-ms-filter:"><path d="M14.71 6.71c-.39-.39-1.02-.39-1.41 0L8.71 11.3c-.39.39-.39 1.02 0 1.41l4.59 4.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L10.83 12l3.88-3.88c.39-.39.38-1.03 0-1.41z"></path></svg>');
 $pagination-icon-right-hover: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgb(39,73,134);transform:;-ms-filter:"><path d="M9.29 6.71c-.39.39-.39 1.02 0 1.41L13.17 12l-3.88 3.88c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z"></path></svg>');
@@ -31,7 +31,14 @@ $pagination-icon-right: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.o
 $pagination-icon-right-active: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgb(255,255,255);transform:;-ms-filter:"><path d="M9.29 6.71c-.39.39-.39 1.02 0 1.41L13.17 12l-3.88 3.88c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z"></path></svg>');
 $pagination-icon-left-active: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgb(255,255,255);transform:;-ms-filter:"><path d="M14.71 6.71c-.39-.39-1.02-.39-1.41 0L8.71 11.3c-.39.39-.39 1.02 0 1.41l4.59 4.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L10.83 12l3.88-3.88c.39-.39.38-1.03 0-1.41z"></path></svg>');
 
-@mixin pagination-states($text-decoration, $box-shadow, $bg-color, $color, $icon-left, $icon-right) {
+@mixin pagination-states(
+  $text-decoration,
+  $box-shadow,
+  $bg-color,
+  $color,
+  $icon-left,
+  $icon-right
+) {
   text-decoration: none;
   box-shadow: $box-shadow;
   background-color: $bg-color;
@@ -64,7 +71,6 @@ $pagination-icon-left-active: url('data:image/svg+xml;utf8,<svg xmlns="http://ww
       box-shadow: none;
 
       .page-link {
-        box-shadow: none;
         background-color: transparent;
         padding: 0;
         outline: none;
@@ -111,7 +117,9 @@ $pagination-icon-left-active: url('data:image/svg+xml;utf8,<svg xmlns="http://ww
         padding-right: $pagination-icon-padding-x-sm;
       }
 
-      &:has(.page-previous-icon, .page-next-icon):not(:has(.page-next-text, .page-previous-text)) {
+      &:has(.page-previous-icon, .page-next-icon):not(
+          :has(.page-next-text, .page-previous-text)
+        ) {
         padding-left: $pagination-icon-padding-x;
         padding-right: $pagination-icon-padding-x;
       }
@@ -122,50 +130,57 @@ $pagination-icon-left-active: url('data:image/svg+xml;utf8,<svg xmlns="http://ww
 
       &:focus,
       &.focus {
-        @include pagination-states(none,
+        @include pagination-states(
+          none,
           $pagination-focus-box-shadow,
           $pagination-bg,
           $pagination-color,
           $pagination-icon-left,
-          $pagination-icon-right );
+          $pagination-icon-right
+        );
         outline: 0.25rem solid transparent;
       }
 
       &:hover,
       &.hover {
-        @include pagination-states(underline,
+        @include pagination-states(
+          underline,
           $pagination-hover-box-shadow,
           $pagination-bg,
           $pagination-hover-color,
           $pagination-icon-left-hover,
-          $pagination-icon-right-hover );
+          $pagination-icon-right-hover
+        );
         text-decoration: none;
       }
     }
 
     &:active,
     &.active {
-
       .page-link,
       .page-link:visited {
-        @include pagination-states(none,
+        @include pagination-states(
+          none,
           $pagination-box-shadow,
           $pagination-active-bg,
           $pagination-active-color,
           $pagination-icon-left-active,
-          $pagination-icon-right-active );
+          $pagination-icon-right-active
+        );
         z-index: 0;
         outline: 0.25rem solid transparent;
         outline-offset: -2px;
 
         &:hover,
         &.hover {
-          @include pagination-states(none,
+          @include pagination-states(
+            none,
             $pagination-box-shadow,
             $pagination-active-bg,
             $pagination-active-color,
             $pagination-icon-left-active,
-            $pagination-icon-right-active );
+            $pagination-icon-right-active
+          );
         }
 
         &:focus,
@@ -191,8 +206,8 @@ $pagination-icon-left-active: url('data:image/svg+xml;utf8,<svg xmlns="http://ww
   }
 
   .page-navigation {
-    padding-top: spaceUnits(6);
-    padding-bottom: spaceUnits(4);
+    padding-top: 0.25rem * 6;
+    padding-bottom: 0.25rem * 4;
     width: 100%;
     display: flex;
     justify-content: space-between;

@@ -20,14 +20,10 @@ $link-download-link-sm: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http:/
   margin-right: $icon-margin-right;
   padding-left: 1.25rem;
   background: 0 0;
-  background-color: currentColor;
-  -webkit-mask-image: $icon-link, linear-gradient(transparent, transparent);
+  background-color: currentcolor;
   mask-image: $icon-link, linear-gradient(transparent, transparent);
-  -webkit-mask-position: center center;
   mask-position: center center;
-  -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  -webkit-mask-size: 1.25rem 1.25rem;
   mask-size: 1.25rem 1.25rem;
 }
 
@@ -117,7 +113,7 @@ a {
     }
 
     &.btn-lg {
-      &:before {
+      &::before {
         background: transparent $link-download-link no-repeat center center;
         height: 1.25rem;
         width: 1.25rem;

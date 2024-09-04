@@ -1,5 +1,4 @@
-export const NAV_VERTICAL_SIMPLE =
-  `
+export const NAV_VERTICAL_SIMPLE = `
   <nav>
     <ul class="nav flex-column nav-pills">
       <li class="nav-item">
@@ -24,8 +23,7 @@ export const NAV_VERTICAL_SIMPLE =
     </ul>
   </nav>
 `;
-export const NAV_VERTICAL_ICON =
-  `
+export const NAV_VERTICAL_ICON = `
   <nav>
     <ul class="nav flex-column nav-pills">
       <li class="nav-item">

@@ -1,4 +1,3 @@
-export const HEADER =
-  `
+export const HEADER = `
     lorem
 `;

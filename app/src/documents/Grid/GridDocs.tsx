@@ -2,13 +2,7 @@ import CodeBox from '@/components/CodeBox';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
-import {
-  FOUR_COLUMNS,
-  LAYOUTS,
-  ONE_COLUMN,
-  THREE_COLUMNS,
-  TWO_COLUMNS,
-} from './code-views';
+import { FOUR_COLUMNS, LAYOUTS, ONE_COLUMN, THREE_COLUMNS, TWO_COLUMNS } from './code-views';
 
 const GridDocs: React.FC = () => {
   const sections = [
@@ -130,16 +124,15 @@ const GridDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-          <br /><br />
+          <br />
+          <br />
         </>
       ),
       h1: false,
-    }
+    },
   ];
 
-  return (
-    <DocumentationTemplate sections={sections} />
-  );
+  return <DocumentationTemplate sections={sections} />;
 };
 
 export default GridDocs;

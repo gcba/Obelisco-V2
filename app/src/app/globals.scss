@@ -2,7 +2,7 @@
 // @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded');
 @import url('../../node_modules/boxicons/css/boxicons.min.css');
-@import "../../../dist/styles.css";
+@import '../../../dist/styles.css';
 
 // Generic Styles
 html {
@@ -64,25 +64,39 @@ hr {
 
       li a {
         font-weight: 600;
-        font-family: "Nunito","Open Sans",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        font-family:
+          'Nunito',
+          'Open Sans',
+          system-ui,
+          -apple-system,
+          'Segoe UI',
+          Roboto,
+          'Helvetica Neue',
+          Arial,
+          'Noto Sans',
+          sans-serif,
+          'Apple Color Emoji',
+          'Segoe UI Emoji',
+          'Segoe UI Symbol',
+          'Noto Color Emoji';
       }
-      
+
       li:active a {
         box-shadow: 0 0 0 0.125rem #218274;
-        border-radius: .5rem;
+        border-radius: 0.5rem;
       }
 
       a {
         text-decoration: none;
-        color: #101E37;
+        color: #101e37;
       }
 
       .active {
         a {
-          color: #336ACC;
+          color: #336acc;
 
-          
-          &:focus, &:active {
+          &:focus,
+          &:active {
             box-shadow: 0 0 0 0.125rem #218274;
           }
         }
@@ -117,6 +131,10 @@ hr {
   max-width: 600px;
 }
 
+.v-height-100 {
+  min-height: calc(100dvh - 83px);
+}
+
 .color-box {
   width: 192px;
   height: 72px;
@@ -133,11 +151,12 @@ hr {
 .sticky-nav {
   position: sticky;
   top: 132px;
+  overflow-y: scroll;
+  height: 75dvh;
 
   nav {
-    overflow-y: scroll;
-    height: 68dvh;
     padding: 0.3rem;
+    margin-bottom: 1.5rem;
   }
 }
 .box-content {

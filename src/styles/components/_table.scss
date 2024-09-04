@@ -43,16 +43,20 @@ $table-head-bg: $grisulado-100;
         &.tb-link {
           min-width: 204px;
         }
+
         &.tb-button {
           min-width: 152px;
         }
+
         &.tb-check {
           min-width: 136px;
           opacity: 0;
         }
+
         &.tb-tag {
           min-width: 140px;
         }
+
         &.tb-number {
           min-width: 136px;
         }
@@ -70,7 +74,6 @@ $table-head-bg: $grisulado-100;
         }
   
         .th-subtitle {
-          display: inline-block;
           @extend .text-sm;
           font-family: $font-family-sans-serif;
           font-weight: $font-weight-normal;
@@ -147,6 +150,7 @@ $table-head-bg: $grisulado-100;
 
   &.table-bordered {
     border-radius: $border-radius-lg;
+
     thead th {
       border: none;
     }

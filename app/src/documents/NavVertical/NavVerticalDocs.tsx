@@ -1,18 +1,24 @@
-import CodeBox from "@/components/CodeBox";
+import CodeBox from '@/components/CodeBox';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
-import { NAV_VERTICAL_SIMPLE, NAV_VERTICAL_ICON, NAV_VERTICAL_TWO_LEVEL_ICON, NAV_VERTICAL_TWO_LEVEL, NAV_VERTICAL_THREE_LEVEL, NAV_VERTICAL_THREE_LEVEL_ICON } from './code-views';
+import {
+  NAV_VERTICAL_SIMPLE,
+  NAV_VERTICAL_ICON,
+  NAV_VERTICAL_TWO_LEVEL_ICON,
+  NAV_VERTICAL_TWO_LEVEL,
+  NAV_VERTICAL_THREE_LEVEL,
+  NAV_VERTICAL_THREE_LEVEL_ICON,
+} from './code-views';
 
 const NavVerticalDocs: React.FC = () => {
-
   const sections = [
     {
       title: 'Navegación Vertical',
       h1: true,
       content: (
         <MainDescription description="La navegación vertical debe usarse cuando el espacio horizontal es más amplio y cuando la lista de secciones es mayor de lo que se puede presentar al usuario en un formato horizontal. También se pueden usar como anclas dentro del contenido en una sola página." />
-      )
+      ),
     },
     {
       id: 'section-1',
@@ -24,21 +30,22 @@ const NavVerticalDocs: React.FC = () => {
               <nav>
                 <ul className="nav flex-column nav-pills">
                   <li className="nav-item">
-                    <a className="nav-link" href="#"><span>Link</span></a>
+                    <a className="nav-link" href="#">
+                      <span>Link</span>
+                    </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link active" href="#"><span>Activo</span></a>
+                    <a className="nav-link active" href="#">
+                      <span>Activo</span>
+                    </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#"><span>Link</span></a>
+                    <a className="nav-link" href="#">
+                      <span>Link</span>
+                    </a>
                   </li>
                   <li className="nav-item">
-                    <a
-                      className="nav-link disabled"
-                      href="#"
-                      aria-disabled="true"
-                      tabIndex={-1}
-                    >
+                    <a className="nav-link disabled" href="#" aria-disabled="true" tabIndex={-1}>
                       <span>Deshabilitado</span>
                     </a>
                   </li>
@@ -47,7 +54,7 @@ const NavVerticalDocs: React.FC = () => {
             </div>
           </CodeBox>
         </>
-      )
+      ),
     },
     {
       id: 'section-2',
@@ -83,12 +90,7 @@ const NavVerticalDocs: React.FC = () => {
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a
-                      className="nav-link disabled"
-                      href="#"
-                      aria-disabled="true"
-                      tabIndex={-1}
-                    >
+                    <a className="nav-link disabled" href="#" aria-disabled="true" tabIndex={-1}>
                       <div className="nav-icon">
                         <i className="bx bxs-user-circle"></i>
                         <span>Deshabilitado</span>
@@ -100,7 +102,7 @@ const NavVerticalDocs: React.FC = () => {
             </div>
           </CodeBox>
         </>
-      )
+      ),
     },
     {
       id: 'section-3',
@@ -112,7 +114,9 @@ const NavVerticalDocs: React.FC = () => {
               <nav>
                 <ul className="nav flex-column nav-pills nav-lg">
                   <li className="nav-item">
-                    <a className="nav-link" href="#"><span>Categorías</span></a>
+                    <a className="nav-link" href="#">
+                      <span>Categorías</span>
+                    </a>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link active-child" href="#">
@@ -121,10 +125,7 @@ const NavVerticalDocs: React.FC = () => {
                     <ul className="nav flex-column nav-pills">
                       <li className="nav-item">
                         <a className="nav-link" href="#">
-                          <span>
-                            Local Indumentaria y calzado. (Actividades comerciales de
-                            venta).
-                          </span>
+                          <span>Local Indumentaria y calzado. (Actividades comerciales de venta).</span>
                         </a>
                       </li>
                       <li className="nav-item">
@@ -133,22 +134,26 @@ const NavVerticalDocs: React.FC = () => {
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#"><span>Locales de óptica</span></a>
+                        <a className="nav-link" href="#">
+                          <span>Locales de óptica</span>
+                        </a>
                       </li>
                       <li className="nav-item">
                         <a className="nav-link" href="#">
-                          <span>
-                            Comercial minorista (excluyendo indumentaria y calzado)
-                          </span>
+                          <span>Comercial minorista (excluyendo indumentaria y calzado)</span>
                         </a>
                       </li>
                     </ul>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#"><span>Actividades jurídicas</span></a>
+                    <a className="nav-link" href="#">
+                      <span>Actividades jurídicas</span>
+                    </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#"><span>Otras actividades</span></a>
+                    <a className="nav-link" href="#">
+                      <span>Otras actividades</span>
+                    </a>
                   </li>
                 </ul>
               </nav>
@@ -177,10 +182,7 @@ const NavVerticalDocs: React.FC = () => {
                     <ul className="nav flex-column nav-pills">
                       <li className="nav-item">
                         <a className="nav-link" href="#">
-                          <span>
-                            Local Indumentaria y calzado. (Actividades comerciales de
-                            venta).
-                          </span>
+                          <span>Local Indumentaria y calzado. (Actividades comerciales de venta).</span>
                         </a>
                       </li>
                       <li className="nav-item">
@@ -189,13 +191,13 @@ const NavVerticalDocs: React.FC = () => {
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#"><span>Locales de óptica</span></a>
+                        <a className="nav-link" href="#">
+                          <span>Locales de óptica</span>
+                        </a>
                       </li>
                       <li className="nav-item">
                         <a className="nav-link" href="#">
-                          <span>
-                            Comercial minorista (excluyendo indumentaria y calzado)
-                          </span>
+                          <span>Comercial minorista (excluyendo indumentaria y calzado)</span>
                         </a>
                       </li>
                     </ul>
@@ -221,7 +223,7 @@ const NavVerticalDocs: React.FC = () => {
             </div>
           </CodeBox>
         </>
-      )
+      ),
     },
     {
       id: 'section-4',
@@ -233,7 +235,9 @@ const NavVerticalDocs: React.FC = () => {
               <nav>
                 <ul className="nav flex-column nav-pills nav-lg">
                   <li className="nav-item">
-                    <a className="nav-link" href="#"><span>Categorías</span></a>
+                    <a className="nav-link" href="#">
+                      <span>Categorías</span>
+                    </a>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link active-child" href="#">
@@ -242,10 +246,7 @@ const NavVerticalDocs: React.FC = () => {
                     <ul className="nav flex-column nav-pills">
                       <li className="nav-item">
                         <a className="nav-link" href="#">
-                          <span>
-                            Local Indumentaria y calzado. (Actividades comerciales de
-                            venta).
-                          </span>
+                          <span>Local Indumentaria y calzado. (Actividades comerciales de venta).</span>
                         </a>
                       </li>
                       <li className="nav-item">
@@ -259,27 +260,33 @@ const NavVerticalDocs: React.FC = () => {
                             </a>
                           </li>
                           <li className="nav-item">
-                            <a className="nav-link active" href="#"><span>Food trucks</span></a>
+                            <a className="nav-link active" href="#">
+                              <span>Food trucks</span>
+                            </a>
                           </li>
                         </ul>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#"><span>Locales de óptica</span></a>
+                        <a className="nav-link" href="#">
+                          <span>Locales de óptica</span>
+                        </a>
                       </li>
                       <li className="nav-item">
                         <a className="nav-link" href="#">
-                          <span>
-                            Comercial minorista (excluyendo indumentaria y calzado)
-                          </span>
+                          <span>Comercial minorista (excluyendo indumentaria y calzado)</span>
                         </a>
                       </li>
                     </ul>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#"><span>Actividades jurídicas</span></a>
+                    <a className="nav-link" href="#">
+                      <span>Actividades jurídicas</span>
+                    </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#"><span>Otras actividades</span></a>
+                    <a className="nav-link" href="#">
+                      <span>Otras actividades</span>
+                    </a>
                   </li>
                 </ul>
               </nav>
@@ -308,10 +315,7 @@ const NavVerticalDocs: React.FC = () => {
                     <ul className="nav flex-column nav-pills">
                       <li className="nav-item">
                         <a className="nav-link" href="#">
-                          <span>
-                            Local Indumentaria y calzado. (Actividades comerciales de
-                            venta).
-                          </span>
+                          <span>Local Indumentaria y calzado. (Actividades comerciales de venta).</span>
                         </a>
                       </li>
                       <li className="nav-item">
@@ -325,18 +329,20 @@ const NavVerticalDocs: React.FC = () => {
                             </a>
                           </li>
                           <li className="nav-item">
-                            <a className="nav-link active" href="#"><span>Food trucks</span></a>
+                            <a className="nav-link active" href="#">
+                              <span>Food trucks</span>
+                            </a>
                           </li>
                         </ul>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#"><span>Locales de óptica</span></a>
+                        <a className="nav-link" href="#">
+                          <span>Locales de óptica</span>
+                        </a>
                       </li>
                       <li className="nav-item">
                         <a className="nav-link" href="#">
-                          <span>
-                            Comercial minorista (excluyendo indumentaria y calzado)
-                          </span>
+                          <span>Comercial minorista (excluyendo indumentaria y calzado)</span>
                         </a>
                       </li>
                     </ul>
@@ -361,17 +367,14 @@ const NavVerticalDocs: React.FC = () => {
               </nav>
             </div>
           </CodeBox>
-          <br /><br />
+          <br />
+          <br />
         </>
-      )
-    }
+      ),
+    },
   ];
 
-  return (
-    <DocumentationTemplate
-      sections={sections}
-    />
-  );
+  return <DocumentationTemplate sections={sections} />;
 };
 
 export default NavVerticalDocs;

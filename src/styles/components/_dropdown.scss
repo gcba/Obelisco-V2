@@ -22,12 +22,14 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
     min-height: 2rem;
     padding: $dropdown-item-padding-sm;
   }
+
   .form-checkbox .form-checkbox-label,
   .form-radio.reverse .form-radio-label {
     padding-top: .25rem;
     padding-bottom: .25rem;
     min-height: 2rem;
   }
+
   .form-checkbox .form-checkbox-input,
   .form-radio.reverse .form-radio-input {
     top: 0.25rem;
@@ -39,12 +41,14 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
     min-height: 3rem;
     padding: $dropdown-item-padding-lg;
   }
+
   .form-checkbox .form-checkbox-label, 
   .form-radio.reverse .form-radio-label {
     padding-top: .75rem;
     padding-bottom: .75rem;
     min-height: 3rem;
   }
+
   .form-checkbox .form-checkbox-input,
   .form-radio.reverse .form-radio-input  {
     top: 0.75rem;
@@ -62,7 +66,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
   @include media-breakpoint-down(md) {
     #{$val}-width: 328px;
   }
-  @media screen and (max-width: 359.98px) {
+  @media screen and (width <= 359.98px) {
     #{$val}-width: 248px;
   }
 }
@@ -131,6 +135,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
       outline: $outline-transparent;
       color: $white;
       background: $active-color;
+
       // Animación icono
       .btn-dropdown-icon {
         transform: rotate(-180deg);
@@ -141,6 +146,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
     &:not(.show) {
       &.selected{
         color: $active-color;
+
         .btn-dropdown-icon {
           color: $body-color;
         }
@@ -228,6 +234,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
           box-shadow: $focus-box-shadow-danger;
           outline: $outline-transparent;
           color: $danger;
+
           &:hover {
             .item-text {
               text-decoration: underline;
@@ -255,6 +262,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
     // Desplegable radio y checkbox
     .form-checkbox, .form-radio.reverse {
       width: 100%;
+
       &:not(:last-child) {
         margin-bottom: 0.25rem;
       }
@@ -263,6 +271,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
         .form-checkbox-label, .form-radio-label {
           outline: .125rem solid $hover-color;
         }
+
         .form-checkbox-input:checked, .form-checkbox-input:disabled,
         .form-radio-input:checked, .form-radio-input:disabled {
           ~.form-checkbox-label,  ~.form-radio-label {
@@ -305,6 +314,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
         padding-right: 3rem; //48px
         padding-left: .75rem; //12px
       }
+
       .form-radio-input {
         margin: 0 .875rem; //2px 14px
         border-width: 0;
@@ -325,9 +335,11 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
         }
       }
     }
+
     // Desplegable en cascada
     .dropdown.sub-dropdown {
       width: 100%;
+
       &:not(:last-child) {
         margin-bottom: 0.25rem;
       }
@@ -363,6 +375,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
         box-shadow: none;
         outline-color: transparent;
         margin: 0.25rem 0 !important;
+
         .dropdown-item {
           @include media-breakpoint-down(lg) {
             padding-left: 2rem;
@@ -371,7 +384,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
         @include media-breakpoint-up(lg) {
           outline: .125rem solid $grisulado-100;
           position: absolute !important;
-          inset: 0px auto auto 348px !important;
+          inset: 0 auto auto 348px !important;
           margin: 0 0 0 0.5rem !important;
         }
       }
@@ -379,8 +392,9 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
 
     // Disposición de dropdown-menu a la derecha
     &.dropdown-menu-end {
-      inset: 0px 0px auto auto !important;
-      transform: translate3d(0.5px, 50px, 0px) !important;
+      inset: 0 0 auto auto !important;
+      transform: translate3d(0.5px, 50px, 0) !important;
+
       .dropdown-item .item-text,
       .sub-dropdown .btn-dropdown .btn-dropdown-text {
         text-align: right;
@@ -394,20 +408,23 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
             }
           }
         }
+
         .dropdown-menu {
           @include media-breakpoint-up(lg) {
-            inset: 0px auto auto -356px !important;
+            inset: 0 auto auto -356px !important;
             margin: 0 0.5rem 0 0 !important;
           }
         }
       }
     }
   }
+
   // Tamaños de dropdown
   &-sm {
-    @include dropdown-sm();
+    @include dropdown-sm;
   }
+
   &-lg {
-    @include dropdown-lg();
+    @include dropdown-lg;
   }
 }

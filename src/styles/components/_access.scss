@@ -2,6 +2,7 @@
 $list-link-color: #007BC7;
 
 $list-group-color: $body-color;
+
 // #007bc7: $hover;
 $list-group-border: 8px;
 $list-group-padding: 1.5rem;
@@ -38,9 +39,9 @@ $margin-clearfix: -2px 0 0.5rem;
 $color-clearfix: $grisulado-50;
 $height-clearfix: 0.125rem;
 
-$list-group-padding-x: spaceUnits(4);
+$list-group-padding-x: space-units(4);
 
-$list-group-category-margin: spaceUnits(2);
+$list-group-category-margin: space-units(2);
 
 $list-group-icon-arrow: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><g clip-path="url(%23clip0_1497_1475)"><path d="M9.83547 15.88L13.7155 12L9.83547 8.11998C9.44547 7.72998 9.44547 7.09998 9.83547 6.70998C10.2255 6.31998 10.8555 6.31998 11.2455 6.70998L15.8355 11.3C16.2255 11.69 16.2255 12.32 15.8355 12.71L11.2455 17.3C10.8555 17.69 10.2255 17.69 9.83547 17.3C9.45547 16.91 9.44547 16.27 9.83547 15.88Z" fill="%23101E37"/></g><defs><clipPath id="clip0_1497_1475"><rect width="24" height="24" fill="white" transform="translate(0.54541)"/></clipPath></defs></svg>');
 $list-group-icon-arrow-hover: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><g clip-path="url(%23clip0_1497_853)"><path d="M9.83547 15.88L13.7155 12L9.83547 8.11998C9.44547 7.72998 9.44547 7.09998 9.83547 6.70998C10.2255 6.31998 10.8555 6.31998 11.2455 6.70998L15.8355 11.3C16.2255 11.69 16.2255 12.32 15.8355 12.71L11.2455 17.3C10.8555 17.69 10.2255 17.69 9.83547 17.3C9.45547 16.91 9.44547 16.27 9.83547 15.88Z" fill="%23274986"/></g><defs><clipPath id="clip0_1497_853"><rect width="24" height="24" fill="white" transform="translate(0.54541)"/></clipPath></defs></svg>');
@@ -80,8 +81,7 @@ a.list-group-item {
   //   padding: $list-group-padding-mobile;
   // }
 
-  i,
-  .material-icons-round {
+  .o-icon {
     font-size: 1.5rem;
     align-self: center;
     margin-right: 0.75rem;
@@ -121,7 +121,7 @@ a.list-group-item {
   }
 
   &:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     border-radius: $list-group-border; // $list-group-border
 
     &:is(.card-item) {
@@ -149,7 +149,7 @@ a.list-group-item {
       color: $hover-color; // $list-group-color-hover - $blue
     }
 
-    &:after {
+    &::after {
       @include access-icon($list-group-icon-arrow-hover);
     }
   }
@@ -169,12 +169,12 @@ a.list-group-item {
         color: $danger;
         box-shadow: $box-shadow-access-focus;
 
-        &:after {
+        &::after {
           @include access-icon($list-group-icon-logout);
         }
       }
 
-      &:after {
+      &::after {
         float: right;
         @include access-icon($list-group-icon-arrow);
       }
@@ -226,7 +226,7 @@ a.list-group-item {
       box-shadow: $box-shadow-access-hover-danger;
     }
 
-    &:after {
+    &::after {
       fill: white;
       @include access-icon($list-group-icon-arrow-active); // icono blanco
     }
@@ -237,7 +237,7 @@ a.list-group-item {
     }
   }
 
-  &:after {
+  &::after {
     float: right;
     @include access-icon($list-group-icon-arrow);
     margin-left: 0.25rem;
@@ -255,7 +255,7 @@ a.list-group-item {
       color: $danger;
     }
 
-    &:after {
+    &::after {
       @include access-icon($list-group-icon-logout);
     }
 
@@ -326,6 +326,7 @@ a.list-group-item {
         &:has(~ .container-access) {
           ~ .card-item {
             box-shadow: none;
+
             &:hover {
               // box-shadow: $box-shadow-access-hover;
             }
@@ -421,11 +422,14 @@ a.list-group-item {
           margin-bottom: 0.5rem;
         }
       }
+
       & + .clearfix {
         margin-top: 0;
         margin-bottom: 6px;
+
         & + .card-item {
           border-radius: 0.5rem;
+
           // &:focus {
           //   box-shadow: $box-shadow-access-focus;
           // }

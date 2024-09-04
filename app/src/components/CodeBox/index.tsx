@@ -1,13 +1,13 @@
-"use client";
-import React, { useEffect, useRef, useState } from "react";
+'use client';
+import React, { useEffect, useRef, useState } from 'react';
 import { useId } from 'react';
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { Toaster, toast } from 'sonner';
 
 import styles from './CodeBox.module.scss';
 
-const CodeBox = ({ codeHTML, children, codeJS }: { codeHTML: string, children?: React.ReactNode, codeJS?: string }) => {
+const CodeBox = ({ codeHTML, children, codeJS }: { codeHTML: string; children?: React.ReactNode; codeJS?: string }) => {
   const [showButtonHTML, setShowButtonHTML] = useState(false);
   const [isExpandedHTML, setIsExpandedHTML] = useState(false);
   const [isHigherHTML, setIsHigherHTML] = useState(false);
@@ -73,7 +73,7 @@ const CodeBox = ({ codeHTML, children, codeJS }: { codeHTML: string, children?: 
     if (codeElementRef.current) {
       const codeToCopy = codeElementRef.current.innerText;
       navigator.clipboard.writeText(codeToCopy);
-  
+
       toast.success('Copiado', {
         duration: 1000,
         className: 'custom-toast',
@@ -156,8 +156,10 @@ const CodeBox = ({ codeHTML, children, codeJS }: { codeHTML: string, children?: 
           role="tabpanel"
           aria-labelledby={`tab-bg-2-${id}`}
         >
-          <div className={`${styles.codeBoxDisplay} ${!isExpandedHTML ? styles.expanded : ''} ${isHigherHTML ? styles.codeMargin : ''}`}
-            style={{ maxHeight: isExpandedHTML ? 'none' : '300px' }}>
+          <div
+            className={`${styles.codeBoxDisplay} ${!isExpandedHTML ? styles.expanded : ''} ${isHigherHTML ? styles.codeMargin : ''}`}
+            style={{ maxHeight: isExpandedHTML ? 'none' : '300px' }}
+          >
             <div className={styles.boxCode} ref={codeHTMLRef}>
               <div className={isHigherHTML && !isExpandedHTML ? styles.faded : ''}></div>
               <SyntaxHighlighter
@@ -177,39 +179,39 @@ const CodeBox = ({ codeHTML, children, codeJS }: { codeHTML: string, children?: 
             </button>
           </div>
           {showButtonHTML && (
-              <button
-                className={`btn btn-primary btn-sm ${styles.codeBoxButton}`}
-                onClick={toggleExpandHTML}
+            <button className={`btn btn-primary btn-sm ${styles.codeBoxButton}`} onClick={toggleExpandHTML}>
+              {isExpandedHTML ? 'Ver menos' : 'Ver más'}
+              <span
+                className={`material-symbols-rounded ${styles.codeBoxButtonIcon} ${isExpandedHTML ? styles.expanded : ''}`}
               >
-                {isExpandedHTML ? 'Ver menos' : 'Ver más'}
-                <span className={`material-symbols-rounded ${styles.codeBoxButtonIcon} ${isExpandedHTML ? styles.expanded : ''}`}>
-                  keyboard_arrow_down
-                </span>
-              </button>
-            )}
+                keyboard_arrow_down
+              </span>
+            </button>
+          )}
           <Toaster position="bottom-right" expand={false} />
         </div>
-        {codeJS && 
+        {codeJS && (
           <div
             className="tab-pane fade p-2 position-relative"
             id={`panel-bg-content-3-${id}`}
             role="tabpanel"
             aria-labelledby={`tab-bg-3-${id}`}
           >
-            <div className={`${styles.codeBoxDisplay} ${!isExpandedJS ? styles.expanded : ''} ${isHigherJS ? styles.codeMargin : ''}`}
-              style={{ maxHeight: isExpandedJS ? 'none' : '300px' }}>
+            <div
+              className={`${styles.codeBoxDisplay} ${!isExpandedJS ? styles.expanded : ''} ${isHigherJS ? styles.codeMargin : ''}`}
+              style={{ maxHeight: isExpandedJS ? 'none' : '300px' }}
+            >
               <div className={styles.boxCode} ref={codeJSRef}>
                 <div className={isHigherJS && !isExpandedJS ? styles.faded : ''}></div>
                 <SyntaxHighlighter
                   language="tsx"
                   style={dracula}
-                  customStyle={{ cursor: "pointer", margin: 0 }}
+                  customStyle={{ cursor: 'pointer', margin: 0 }}
                   codeTagProps={{ ref: codeRef }}
                   wrapLongLines
                 >
                   {codeJS}
                 </SyntaxHighlighter>
-                
               </div>
               <button className={`btn btn-xs ${styles.btnCopy}`} onClick={() => copyCode(codeJSRef)}>
                 <span className="material-symbols-rounded" aria-hidden="true">
@@ -218,19 +220,18 @@ const CodeBox = ({ codeHTML, children, codeJS }: { codeHTML: string, children?: 
               </button>
             </div>
             {showButtonJS && (
-                <button
-                  className={`btn btn-primary btn-sm ${styles.codeBoxButton}`}
-                  onClick={toggleExpandJS}
+              <button className={`btn btn-primary btn-sm ${styles.codeBoxButton}`} onClick={toggleExpandJS}>
+                {isExpandedJS ? 'Ver menos' : 'Ver más'}
+                <span
+                  className={`material-symbols-rounded ${styles.codeBoxButtonIcon} ${isExpandedJS ? styles.expanded : ''}`}
                 >
-                  {isExpandedJS ? 'Ver menos' : 'Ver más'}
-                  <span className={`material-symbols-rounded ${styles.codeBoxButtonIcon} ${isExpandedJS ? styles.expanded : ''}`}>
-                    keyboard_arrow_down
-                  </span>
-                </button>
-              )}
+                  keyboard_arrow_down
+                </span>
+              </button>
+            )}
             <Toaster position="bottom-right" expand={false} />
           </div>
-        }
+        )}
       </div>
     </>
   );

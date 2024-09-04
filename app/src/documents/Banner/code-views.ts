@@ -1,5 +1,4 @@
-export const BANNER_SIMPLE =
-  `
+export const BANNER_SIMPLE = `
   <div class="banner">
     <div class="banner-content">
       <p class="banner-text">
@@ -12,8 +11,7 @@ export const BANNER_SIMPLE =
     </div>
   </div>
 `;
-export const BANNER_SIMPLE_DARK =
-  `
+export const BANNER_SIMPLE_DARK = `
   <div class="banner banner-dark">
     <div class="banner-content">
       <p class="banner-text">
@@ -26,8 +24,7 @@ export const BANNER_SIMPLE_DARK =
     </div>
   </div>
 `;
-export const BANNER_BUTTON =
-  `
+export const BANNER_BUTTON = `
   <div class="banner">
     <div class="banner-content">
       <span class="material-symbols-rounded o-icon">
@@ -51,8 +48,7 @@ export const BANNER_BUTTON =
     </div>
   </div>
 `;
-export const BANNER_BUTTON_DARK =
-  `
+export const BANNER_BUTTON_DARK = `
   <div class="banner banner-dark">
     <div class="banner-content">
       <span class="material-symbols-rounded o-icon">
@@ -76,8 +72,7 @@ export const BANNER_BUTTON_DARK =
     </div>
   </div>
 `;
-export const BANNER_BUTTONS =
-  `
+export const BANNER_BUTTONS = `
   <div class="banner">
     <div class="banner-content">
       <span class="material-symbols-rounded o-icon">
@@ -109,8 +104,7 @@ export const BANNER_BUTTONS =
     </div>
   </div>
 `;
-export const BANNER_BUTTONS_DARK =
-  `
+export const BANNER_BUTTONS_DARK = `
   <div class="banner banner-dark">
     <div class="banner-content">
       <span class="material-symbols-rounded o-icon">

@@ -538,7 +538,7 @@ const TabsDocs: React.FC = () => {
               <nav className="tabs-box" aria-label="Navegación por pestañas">
                 <div className="tabs-controls">
                   <button className="prev" id="prev">
-                    <span className="material-symbols-rounded" aria-hidden="true">chevron_left</span>
+                    <span className="material-symbols-rounded o-icon" aria-hidden="true">chevron_left</span>
                   </button>
                 </div>
                 <ul className="nav nav-pills tabs" id="tab-set-1" role="tablist">
@@ -715,7 +715,7 @@ const TabsDocs: React.FC = () => {
                 </ul>
                 <div className="tabs-controls">
                   <button className="next" id="next">
-                    <span className="material-symbols-rounded" aria-hidden="true">chevron_right</span>
+                    <span className="material-symbols-rounded o-icon" aria-hidden="true">chevron_right</span>
                   </button>
                 </div>
               </nav>
@@ -766,7 +766,7 @@ const TabsDocs: React.FC = () => {
               <nav className="tabs-box" aria-label="Navegación por pestañas">
                 <div className="tabs-controls">
                   <button className="prev" id="prev-tab">
-                    <span className="material-symbols-rounded" aria-hidden="true">chevron_left</span>
+                    <span className="material-symbols-rounded o-icon" aria-hidden="true">chevron_left</span>
                   </button>
                 </div>
                 <ul className="nav nav-pills tabs nav-box" id="tab-set-2" role="tablist">
@@ -943,7 +943,7 @@ const TabsDocs: React.FC = () => {
                 </ul>
                 <div className="tabs-controls">
                   <button className="next" id="next-tab">
-                    <span className="material-symbols-rounded" aria-hidden="true">chevron_right</span>
+                    <span className="material-symbols-rounded o-icon" aria-hidden="true">chevron_right</span>
                   </button>
                 </div>
               </nav>

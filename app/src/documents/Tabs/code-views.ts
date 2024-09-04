@@ -363,7 +363,7 @@ export const TABS_SLIDER = `
   <nav class="tabs-box" aria-label="Navegación por pestañas">
     <div class="tabs-controls">
       <button class="prev" id="prev">
-        <span class="material-symbols-rounded" aria-hidden="true">chevron_left</span>
+        <span class="material-symbols-rounded o-icon" aria-hidden="true">chevron_left</span>
       </button>
     </div>
     <ul class="nav nav-pills tabs" id="tab-set-1" role="tablist">
@@ -540,7 +540,7 @@ export const TABS_SLIDER = `
     </ul>
     <div class="tabs-controls">
       <button class="next" id="next">
-        <span class="material-symbols-rounded" aria-hidden="true">chevron_right</span>
+        <span class="material-symbols-rounded o-icon" aria-hidden="true">chevron_right</span>
       </button>
     </div>
   </nav>
@@ -581,7 +581,7 @@ export const TABS_SLIDER_CONTAINER = `
   <nav class="tabs-box" aria-label="Navegación por pestañas">
     <div class="tabs-controls">
       <button class="prev" id="prev-tab">
-        <span class="material-symbols-rounded" aria-hidden="true">chevron_left</span>
+        <span class="material-symbols-rounded o-icon" aria-hidden="true">chevron_left</span>
       </button>
     </div>
     <ul class="nav nav-pills tabs nav-box" id="tab-set-2" role="tablist">
@@ -758,7 +758,7 @@ export const TABS_SLIDER_CONTAINER = `
     </ul>
     <div class="tabs-controls">
       <button class="next" id="next-tab">
-        <span class="material-symbols-rounded" aria-hidden="true">chevron_right</span>
+        <span class="material-symbols-rounded o-icon" aria-hidden="true">chevron_right</span>
       </button>
     </div>
   </nav>

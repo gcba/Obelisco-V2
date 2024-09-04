@@ -130,7 +130,7 @@ const AccessDocs: React.FC = () => {
                 <div className="access-items-1">
                   <div className="col">
                     <a href="#" className="list-group-item item-sm">
-                      <span className="material-symbols-rounded o-icon">info</span>
+                      <span className="material-symbols-rounded o-icon" aria-hidden="true">info</span>
                       <div className="access-content">
                         <span className="access-title">Acceso</span>
                         <p className="access-text">Descripción (Opcional)</p>
@@ -139,7 +139,7 @@ const AccessDocs: React.FC = () => {
                   </div>
                   <div className="col">
                     <a href="#" className="list-group-item item-sm hover">
-                      <span className="material-symbols-rounded o-icon">info</span>
+                      <span className="material-symbols-rounded o-icon" aria-hidden="true">info</span>
                       <div className="access-content">
                         <span className="access-title">Acceso</span>
                         <p className="access-text">Descripción (Opcional)</p>
@@ -148,7 +148,7 @@ const AccessDocs: React.FC = () => {
                   </div>
                   <div className="col">
                     <a href="#" className="list-group-item item-sm focus">
-                      <span className="material-symbols-rounded o-icon">info</span>
+                      <span className="material-symbols-rounded o-icon" aria-hidden="true">info</span>
                       <div className="access-content">
                         <span className="access-title">Acceso</span>
                         <p className="access-text">Descripción (Opcional)</p>
@@ -157,7 +157,7 @@ const AccessDocs: React.FC = () => {
                   </div>
                   <div className="col">
                     <a href="#" className="list-group-item item-sm active">
-                      <span className="material-symbols-rounded o-icon">info</span>
+                      <span className="material-symbols-rounded o-icon" aria-hidden="true">info</span>
                       <div className="access-content">
                         <span className="access-title">Acceso</span>
                         <p className="access-text">Descripción (Opcional)</p>
@@ -182,7 +182,7 @@ const AccessDocs: React.FC = () => {
                 <div className="access-items-1">
                   <div className="col">
                     <a href="#" className="list-group-item item-sm">
-                      <span className="material-symbols-rounded o-icon">info</span>
+                      <span className="material-symbols-rounded o-icon" aria-hidden="true">info</span>
                       <div className="access-content">
                         <span className="access-title">Acceso</span>
                         <p className="access-text">Descripción (Opcional)</p>
@@ -191,7 +191,7 @@ const AccessDocs: React.FC = () => {
                   </div>
                   <div className="col">
                     <a href="#" className="list-group-item">
-                      <span className="material-symbols-rounded o-icon">info</span>
+                      <span className="material-symbols-rounded o-icon" aria-hidden="true">info</span>
                       <div className="access-content">
                         <span className="access-title">Acceso</span>
                         <p className="access-text">Descripción (Opcional)</p>

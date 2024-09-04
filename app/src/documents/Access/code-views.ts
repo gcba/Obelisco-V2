@@ -86,7 +86,7 @@ export const ICON_ACCESS = `
     <div class="access-items-1">
       <div class="col">
         <a href="#" class="list-group-item item-sm">
-          <span class="material-symbols-rounded o-icon">info</span>
+          <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>
           <div class="access-content">
             <span class="access-title">Acceso</span>
             <p class="access-text">Descripción (Opcional)</p>
@@ -95,7 +95,7 @@ export const ICON_ACCESS = `
       </div>
       <div class="col">
         <a href="#" class="list-group-item item-sm hover">
-          <span class="material-symbols-rounded o-icon">info</span>
+          <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>
           <div class="access-content">
             <span class="access-title">Acceso</span>
             <p class="access-text">Descripción (Opcional)</p>
@@ -104,7 +104,7 @@ export const ICON_ACCESS = `
       </div>
       <div class="col">
         <a href="#" class="list-group-item item-sm focus">
-          <span class="material-symbols-rounded o-icon">info</span>
+          <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>
           <div class="access-content">
             <span class="access-title">Acceso</span>
             <p class="access-text">Descripción (Opcional)</p>
@@ -113,7 +113,7 @@ export const ICON_ACCESS = `
       </div>
       <div class="col">
         <a href="#" class="list-group-item item-sm active">
-          <span class="material-symbols-rounded o-icon">info</span>
+          <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>
           <div class="access-content">
             <span class="access-title">Acceso</span>
             <p class="access-text">Descripción (Opcional)</p>
@@ -132,7 +132,7 @@ export const SIZES_ACCESS = `
     <div class="access-items-1">
       <div class="col">
         <a href="#" class="list-group-item item-sm">
-          <span class="material-symbols-rounded o-icon">info</span>
+          <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>
           <div class="access-content">
             <span class="access-title">Acceso</span>
             <p class="access-text">Descripción (Opcional)</p>
@@ -141,7 +141,7 @@ export const SIZES_ACCESS = `
       </div>
       <div class="col">
         <a href="#" class="list-group-item">
-          <span class="material-symbols-rounded o-icon">info</span>
+          <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>
           <div class="access-content">
             <span class="access-title">Acceso</span>
             <p class="access-text">Descripción (Opcional)</p>

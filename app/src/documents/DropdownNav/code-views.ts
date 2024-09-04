@@ -8,7 +8,7 @@ export const DROPDOWN = `
     >
       <span class="btn-dropdown-text ellipsis-1">Desplegable</span>
       <span
-        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        class="material-symbols-rounded btn-dropdown-icon"
         aria-label="hidden"
       >
         expand_more
@@ -37,7 +37,7 @@ export const DROPDOWN = `
         <i class="bx bxs-info-circle o-icon"></i>
       </a>
       <a class="dropdown-item item-danger" href="#">
-        <span class="material-symbols-rounded">
+        <span class="material-symbols-rounded o-icon" aria-hidden="true">
           logout
         </span>
         <span class="item-text">Cerrar sesión</span>
@@ -140,7 +140,7 @@ export const DROPDOWN_MENU_RIGHT = `
       aria-expanded="false"
     >
       <span
-        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        class="material-symbols-rounded btn-dropdown-icon"
         aria-label="hidden"
       >
         expand_more
@@ -186,7 +186,7 @@ export const DROPDOWN_CASCADE = `
     >
       <span class="btn-dropdown-text ellipsis-1">Desplegable</span>
       <span
-        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        class="material-symbols-rounded btn-dropdown-icon"
         aria-label="hidden"
       >
         expand_more
@@ -205,7 +205,7 @@ export const DROPDOWN_CASCADE = `
             Opción en cascada
           </span>
           <span
-            class="material-symbols-rounded o-icon btn-dropdown-icon"
+            class="material-symbols-rounded btn-dropdown-icon"
             aria-label="hidden"
           >
             expand_more
@@ -262,7 +262,7 @@ export const DROPDOWN_CASCADE_RIGHT = `
       data-bs-auto-close="outside"
     >
       <span
-        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        class="material-symbols-rounded btn-dropdown-icon"
         aria-label="hidden"
       >
         expand_more
@@ -278,7 +278,7 @@ export const DROPDOWN_CASCADE_RIGHT = `
           aria-expanded="false"
         >
           <span
-            class="material-symbols-rounded o-icon btn-dropdown-icon"
+            class="material-symbols-rounded btn-dropdown-icon"
             aria-label="hidden"
           >
             expand_more

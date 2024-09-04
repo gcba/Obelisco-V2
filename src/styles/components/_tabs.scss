@@ -31,7 +31,7 @@ $border-radius-tabs: 0.5rem 0.5rem 0 0;
 
     /* Esta seccion define los tamaños disponibles para tabs */
     &.tabs {
-      gap: 0;
+      gap: .0625rem; // 1px
       flex-flow: row nowrap;
       text-align: center;
       padding-bottom: 0.25rem;
@@ -42,6 +42,10 @@ $border-radius-tabs: 0.5rem 0.5rem 0 0;
         .nav-link {
           background: transparent;
           transition: font-weight 0.4s ease-in-out;
+
+          &:hover {
+            outline-color: transparent;
+          }
 
           &:focus {
             box-shadow: inset $focus-box-shadow;

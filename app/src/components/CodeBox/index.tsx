@@ -75,7 +75,7 @@ const CodeBox = ({ codeHTML, children, codeJS }: { codeHTML: string; children?: 
       navigator.clipboard.writeText(codeToCopy);
 
       toast.success('Copiado', {
-        duration: 1000,
+        duration: 1500,
         className: 'custom-toast',
         description: 'Se copió correctamente',
       });
@@ -188,7 +188,6 @@ const CodeBox = ({ codeHTML, children, codeJS }: { codeHTML: string; children?: 
               </span>
             </button>
           )}
-          <Toaster position="bottom-right" expand={false} />
         </div>
         {codeJS && (
           <div
@@ -229,10 +228,10 @@ const CodeBox = ({ codeHTML, children, codeJS }: { codeHTML: string; children?: 
                 </span>
               </button>
             )}
-            <Toaster position="bottom-right" expand={false} />
           </div>
         )}
       </div>
+      <Toaster position="bottom-right" expand={false} />
     </>
   );
 };

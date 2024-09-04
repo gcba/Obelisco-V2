@@ -7,14 +7,16 @@ import { componentsPages, formsPages, organismsPages, stylesPages } from '@/comp
 export default function ComponentsPage() {
   return (
     <>
-      <h1 className='visually-hidden'>Secciones de la libreria de componentes Obelisco v2</h1>
+      <h1 className="visually-hidden">Secciones de la libreria de componentes Obelisco v2</h1>
       <div className="mb-5 bg-light p-3 rounded-4">
         <p className="headline-lg fw-bold">Estilos</p>
         <div className="access-items-3">
           {stylesPages.map(({ text, url, id }) => (
             <div className="col" key={id}>
               <Link href={url} className="list-group-item item-sm">
-                <span className="material-symbols-rounded o-icon" aria-hidden="true">palette</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  palette
+                </span>
                 <div className="access-content">
                   <span className="access-title">{text}</span>
                   <p className="access-text">Estilos</p>
@@ -30,7 +32,9 @@ export default function ComponentsPage() {
           {componentsPages.map(({ text, url, id }) => (
             <div className="col" key={id}>
               <Link href={url} className="list-group-item item-sm">
-                <span className="material-symbols-rounded o-icon" aria-hidden="true">code_blocks</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  code_blocks
+                </span>
                 <div className="access-content">
                   <span className="access-title">{text}</span>
                   <p className="access-text">Componente</p>
@@ -46,7 +50,9 @@ export default function ComponentsPage() {
           {formsPages.map(({ text, url, id }) => (
             <div className="col" key={id}>
               <Link href={url} className="list-group-item item-sm">
-                <span className="material-symbols-rounded o-icon" aria-hidden="true">view_list</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  view_list
+                </span>
                 <div className="access-content">
                   <span className="access-title">{text}</span>
                   <p className="access-text">Formulario</p>
@@ -63,7 +69,9 @@ export default function ComponentsPage() {
           {organismsPages.map(({ text, url, id }) => (
             <div className="col" key={id}>
               <Link href={url} className="list-group-item item-sm">
-                <span className="material-symbols-rounded o-icon" aria-hidden="true">cards</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  cards
+                </span>
                 <div className="access-content">
                   <span className="access-title">{text}</span>
                   <p className="access-text">Organismo</p>

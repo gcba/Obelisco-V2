@@ -182,7 +182,7 @@ const CodeBox = ({ codeHTML, children, codeJS }: { codeHTML: string; children?: 
             <button className={`btn btn-primary btn-sm ${styles.codeBoxButton}`} onClick={toggleExpandHTML}>
               {isExpandedHTML ? 'Ver menos' : 'Ver más'}
               <span
-                className={`material-symbols-rounded ${styles.codeBoxButtonIcon} ${isExpandedHTML ? styles.expanded : ''}`} 
+                className={`material-symbols-rounded ${styles.codeBoxButtonIcon} ${isExpandedHTML ? styles.expanded : ''}`}
                 aria-hidden="true"
               >
                 keyboard_arrow_down
@@ -223,7 +223,7 @@ const CodeBox = ({ codeHTML, children, codeJS }: { codeHTML: string; children?: 
               <button className={`btn btn-primary btn-sm ${styles.codeBoxButton}`} onClick={toggleExpandJS}>
                 {isExpandedJS ? 'Ver menos' : 'Ver más'}
                 <span
-                  className={`material-symbols-rounded ${styles.codeBoxButtonIcon} ${isExpandedJS ? styles.expanded : ''}`} 
+                  className={`material-symbols-rounded ${styles.codeBoxButtonIcon} ${isExpandedJS ? styles.expanded : ''}`}
                   aria-hidden="true"
                 >
                   keyboard_arrow_down

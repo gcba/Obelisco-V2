@@ -1,4 +1,3 @@
-
 // Simple
 export const SIMPLE_ACCESS = `
   <a href="#" class="list-group-item item-sm">
@@ -314,4 +313,3 @@ export const ONE_COLUMN_ACCESS = `
     </div>
   </div>
 `;
-

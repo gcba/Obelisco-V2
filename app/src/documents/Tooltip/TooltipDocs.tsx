@@ -26,14 +26,18 @@ const TooltipDocs: React.FC = () => {
                 tabIndex={0}
               >
                 <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
-                  <span className="material-symbols-rounded o-icon" aria-hidden="true">subdirectory_arrow_right</span>
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                    subdirectory_arrow_right
+                  </span>
                 </button>
               </span>
             </div>
             <div className="col-auto">
               <span data-direction="bottom" data-tooltip='Esta es la descripción de un tooltip "abajo".' tabIndex={0}>
                 <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
-                  <span className="material-symbols-rounded o-icon" aria-hidden="true">arrow_downward</span>
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                    arrow_downward
+                  </span>
                 </button>
               </span>
             </div>
@@ -44,7 +48,9 @@ const TooltipDocs: React.FC = () => {
                 tabIndex={0}
               >
                 <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
-                  <span className="material-symbols-rounded o-icon" aria-hidden="true">subdirectory_arrow_left</span>
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                    subdirectory_arrow_left
+                  </span>
                 </button>
               </span>
             </div>
@@ -58,7 +64,9 @@ const TooltipDocs: React.FC = () => {
                 tabIndex={0}
               >
                 <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
-                  <span className="material-symbols-rounded o-icon" aria-hidden="true">south_east</span>
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                    south_east
+                  </span>
                 </button>
               </span>
               <span
@@ -68,7 +76,9 @@ const TooltipDocs: React.FC = () => {
                 tabIndex={0}
               >
                 <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
-                  <span className="material-symbols-rounded o-icon" aria-hidden="true">arrow_forward</span>
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                    arrow_forward
+                  </span>
                 </button>
               </span>
               <span
@@ -77,7 +87,9 @@ const TooltipDocs: React.FC = () => {
                 tabIndex={0}
               >
                 <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
-                  <span className="material-symbols-rounded o-icon" aria-hidden="true">north_east</span>
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                    north_east
+                  </span>
                 </button>
               </span>
             </div>
@@ -89,7 +101,9 @@ const TooltipDocs: React.FC = () => {
                 tabIndex={0}
               >
                 <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
-                  <span className="material-symbols-rounded o-icon" aria-hidden="true">south_west</span>
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                    south_west
+                  </span>
                 </button>
               </span>
               <span
@@ -99,7 +113,9 @@ const TooltipDocs: React.FC = () => {
                 tabIndex={0}
               >
                 <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
-                  <span className="material-symbols-rounded o-icon" aria-hidden="true">keyboard_backspace</span>
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                    keyboard_backspace
+                  </span>
                 </button>
               </span>
               <span
@@ -108,7 +124,9 @@ const TooltipDocs: React.FC = () => {
                 tabIndex={0}
               >
                 <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
-                  <span className="material-symbols-rounded o-icon" aria-hidden="true">north_west</span>
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                    north_west
+                  </span>
                 </button>
               </span>
             </div>
@@ -121,14 +139,18 @@ const TooltipDocs: React.FC = () => {
                 tabIndex={0}
               >
                 <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
-                  <span className="material-symbols-rounded o-icon" aria-hidden="true">turn_right</span>
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                    turn_right
+                  </span>
                 </button>
               </span>
             </div>
             <div className="col-auto">
               <span data-direction="top" data-tooltip='Esta es la descripción de un tooltip "arriba".' tabIndex={0}>
                 <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
-                  <span className="material-symbols-rounded o-icon" aria-hidden="true">arrow_upward</span>
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                    arrow_upward
+                  </span>
                 </button>
               </span>
             </div>
@@ -139,7 +161,9 @@ const TooltipDocs: React.FC = () => {
                 tabIndex={0}
               >
                 <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
-                  <span className="material-symbols-rounded o-icon" aria-hidden="true">turn_left</span>
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                    turn_left
+                  </span>
                 </button>
               </span>
             </div>
@@ -160,7 +184,9 @@ const TooltipDocs: React.FC = () => {
                 className="icon-box bg-light"
                 tabIndex={0}
               >
-                <span className="material-symbols-rounded o-icon" aria-hidden="true">help</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  help
+                </span>
               </span>
             </div>
             <div className="col-auto">
@@ -170,7 +196,9 @@ const TooltipDocs: React.FC = () => {
                 className="icon-box bg-light"
                 tabIndex={0}
               >
-                <span className="material-symbols-rounded o-icon" aria-hidden="true">help</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  help
+                </span>
               </span>
             </div>
             <div className="col-auto">
@@ -180,7 +208,9 @@ const TooltipDocs: React.FC = () => {
                 className="icon-box bg-light"
                 tabIndex={0}
               >
-                <span className="material-symbols-rounded o-icon" aria-hidden="true">help</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  help
+                </span>
               </span>
             </div>
           </div>
@@ -192,7 +222,9 @@ const TooltipDocs: React.FC = () => {
                 className="icon-box bg-light mb-4"
                 tabIndex={0}
               >
-                <span className="material-symbols-rounded o-icon" aria-hidden="true">help</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  help
+                </span>
               </span>
               <span
                 data-direction="right"
@@ -200,7 +232,9 @@ const TooltipDocs: React.FC = () => {
                 className="icon-box bg-light mb-4"
                 tabIndex={0}
               >
-                <span className="material-symbols-rounded o-icon" aria-hidden="true">help</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  help
+                </span>
               </span>
               <span
                 data-direction="right-top"
@@ -208,7 +242,9 @@ const TooltipDocs: React.FC = () => {
                 className="icon-box bg-light"
                 tabIndex={0}
               >
-                <span className="material-symbols-rounded o-icon" aria-hidden="true">help</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  help
+                </span>
               </span>
             </div>
             <div className="d-flex flex-column align-items-end px-lg-5 mx-lg-5">
@@ -218,7 +254,9 @@ const TooltipDocs: React.FC = () => {
                 className="icon-box bg-light mb-4"
                 tabIndex={0}
               >
-                <span className="material-symbols-rounded o-icon" aria-hidden="true">help</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  help
+                </span>
               </span>
               <span
                 data-direction="left"
@@ -226,7 +264,9 @@ const TooltipDocs: React.FC = () => {
                 className="icon-box bg-light mb-4"
                 tabIndex={0}
               >
-                <span className="material-symbols-rounded o-icon" aria-hidden="true">help</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  help
+                </span>
               </span>
               <span
                 data-direction="left-top"
@@ -234,7 +274,9 @@ const TooltipDocs: React.FC = () => {
                 className="icon-box bg-light"
                 tabIndex={0}
               >
-                <span className="material-symbols-rounded o-icon" aria-hidden="true">help</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  help
+                </span>
               </span>
             </div>
           </div>
@@ -246,7 +288,9 @@ const TooltipDocs: React.FC = () => {
                 className="icon-box bg-light"
                 tabIndex={0}
               >
-                <span className="material-symbols-rounded o-icon" aria-hidden="true">help</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  help
+                </span>
               </span>
             </div>
             <div className="col-auto">
@@ -256,7 +300,9 @@ const TooltipDocs: React.FC = () => {
                 className="icon-box bg-light"
                 tabIndex={0}
               >
-                <span className="material-symbols-rounded o-icon" aria-hidden="true">help</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  help
+                </span>
               </span>
             </div>
             <div className="col-auto">
@@ -266,7 +312,9 @@ const TooltipDocs: React.FC = () => {
                 className="icon-box bg-light"
                 tabIndex={0}
               >
-                <span className="material-symbols-rounded o-icon" aria-hidden="true">help</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  help
+                </span>
               </span>
             </div>
           </div>

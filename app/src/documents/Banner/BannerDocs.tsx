@@ -64,7 +64,7 @@ const BannerDocs: React.FC = () => {
           <CodeBox codeHTML={BANNER_BUTTON}>
             <div className="banner">
               <div className="banner-content">
-                <span className="material-symbols-rounded o-icon">terminal</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">terminal</span>
                 <p className="banner-text">
                   Este banner tiene un solo botón y <strong>puede tener énfasis</strong>. Se truncan los textos que
                   superen más de una línea de texto.
@@ -81,7 +81,7 @@ const BannerDocs: React.FC = () => {
           <CodeBox codeHTML={BANNER_BUTTON_DARK}>
             <div className="banner banner-dark">
               <div className="banner-content">
-                <span className="material-symbols-rounded o-icon">terminal</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">terminal</span>
                 <p className="banner-text">
                   Este banner tiene un solo botón y <strong>puede tener énfasis</strong>. Se truncan los textos que
                   superen más de una línea de texto.
@@ -105,7 +105,7 @@ const BannerDocs: React.FC = () => {
           <CodeBox codeHTML={BANNER_BUTTONS}>
             <div className="banner">
               <div className="banner-content">
-                <span className="material-symbols-rounded o-icon">terminal</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">terminal</span>
                 <p className="banner-text">
                   Este banner tiene dos botones y<strong>puede tener énfasis</strong>. Se truncan los textos que superen
                   más de una línea de texto.
@@ -125,7 +125,7 @@ const BannerDocs: React.FC = () => {
           <CodeBox codeHTML={BANNER_BUTTONS_DARK}>
             <div className="banner banner-dark">
               <div className="banner-content">
-                <span className="material-symbols-rounded o-icon">terminal</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">terminal</span>
                 <p className="banner-text">
                   Este banner tiene dos botones y<strong>puede tener énfasis</strong>. Se truncan los textos que superen
                   más de una línea de texto.

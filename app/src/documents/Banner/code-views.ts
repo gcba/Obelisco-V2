@@ -27,7 +27,7 @@ export const BANNER_SIMPLE_DARK = `
 export const BANNER_BUTTON = `
   <div class="banner">
     <div class="banner-content">
-      <span class="material-symbols-rounded o-icon">
+      <span class="material-symbols-rounded o-icon" aria-hidden="true">
         terminal
       </span>
       <p class="banner-text">
@@ -51,7 +51,7 @@ export const BANNER_BUTTON = `
 export const BANNER_BUTTON_DARK = `
   <div class="banner banner-dark">
     <div class="banner-content">
-      <span class="material-symbols-rounded o-icon">
+      <span class="material-symbols-rounded o-icon" aria-hidden="true">
         terminal
       </span>
       <p class="banner-text">
@@ -75,7 +75,7 @@ export const BANNER_BUTTON_DARK = `
 export const BANNER_BUTTONS = `
   <div class="banner">
     <div class="banner-content">
-      <span class="material-symbols-rounded o-icon">
+      <span class="material-symbols-rounded o-icon" aria-hidden="true">
         terminal
       </span>
       <p class="banner-text">
@@ -107,7 +107,7 @@ export const BANNER_BUTTONS = `
 export const BANNER_BUTTONS_DARK = `
   <div class="banner banner-dark">
     <div class="banner-content">
-      <span class="material-symbols-rounded o-icon">
+      <span class="material-symbols-rounded o-icon" aria-hidden="true">
         terminal
       </span>
       <p class="banner-text">

@@ -5,7 +5,7 @@ export const TOOLTIP_BUTTONS = `//SUPERIOR
   tabindex="0"
 >
   <button type="button" class="btn btn-primary btn-icon" aria-label="Botón">
-    <span class="material-symbols-rounded o-icon">turn_right</span>
+    <span class="material-symbols-rounded o-icon" aria-hidden="true">turn_right</span>
   </button>
 </span>
 <span
@@ -14,7 +14,7 @@ export const TOOLTIP_BUTTONS = `//SUPERIOR
   tabindex="0"
 >
   <button type="button" class="btn btn-primary btn-icon" aria-label="Botón">
-    <span class="material-symbols-rounded o-icon">arrow_upward</span>
+    <span class="material-symbols-rounded o-icon" aria-hidden="true">arrow_upward</span>
   </button>
 </span>
 <span
@@ -23,7 +23,7 @@ export const TOOLTIP_BUTTONS = `//SUPERIOR
   tabindex="0"
 >
   <button type="button" class="btn btn-primary btn-icon" aria-label="Botón">
-    <span class="material-symbols-rounded o-icon">turn_left</span>
+    <span class="material-symbols-rounded o-icon" aria-hidden="true">turn_left</span>
   </button>
 </span>
 
@@ -38,7 +38,7 @@ export const TOOLTIP_BUTTONS = `//SUPERIOR
     class="btn btn-primary btn-icon"
     aria-label="Botón"
   >
-    <span class="material-symbols-rounded o-icon">south_east</span>
+    <span class="material-symbols-rounded o-icon" aria-hidden="true">south_east</span>
   </button>
 </span>
 <span
@@ -51,7 +51,7 @@ export const TOOLTIP_BUTTONS = `//SUPERIOR
     class="btn btn-primary btn-icon"
     aria-label="Botón"
   >
-    <span class="material-symbols-rounded o-icon">arrow_forward</span>
+    <span class="material-symbols-rounded o-icon" aria-hidden="true">arrow_forward</span>
   </button>
 </span>
 <span
@@ -64,7 +64,7 @@ export const TOOLTIP_BUTTONS = `//SUPERIOR
     class="btn btn-primary btn-icon"
     aria-label="Botón"
   >
-    <span class="material-symbols-rounded o-icon">north_east</span>
+    <span class="material-symbols-rounded o-icon" aria-hidden="true">north_east</span>
   </button>
 </span>
 
@@ -80,7 +80,7 @@ export const TOOLTIP_BUTTONS = `//SUPERIOR
     class="btn btn-primary btn-icon"
     aria-label="Botón"
   >
-    <span class="material-symbols-rounded o-icon">south_west</span>
+    <span class="material-symbols-rounded o-icon" aria-hidden="true">south_west</span>
   </button>
 </span>
 <span
@@ -93,7 +93,7 @@ export const TOOLTIP_BUTTONS = `//SUPERIOR
     class="btn btn-primary btn-icon"
     aria-label="Botón"
   >
-    <span class="material-symbols-rounded o-icon">keyboard_backspace</span>
+    <span class="material-symbols-rounded o-icon" aria-hidden="true">keyboard_backspace</span>
   </button>
 </span>
 <span
@@ -106,7 +106,7 @@ export const TOOLTIP_BUTTONS = `//SUPERIOR
     class="btn btn-primary btn-icon"
     aria-label="Botón"
   >
-    <span class="material-symbols-rounded o-icon">north_west</span>
+    <span class="material-symbols-rounded o-icon" aria-hidden="true">north_west</span>
   </button>
 </span>
 
@@ -118,7 +118,7 @@ export const TOOLTIP_BUTTONS = `//SUPERIOR
   tabindex="0"
 >
   <button type="button" class="btn btn-primary btn-icon" aria-label="Botón">
-    <span class="material-symbols-rounded o-icon">subdirectory_arrow_right</span>
+    <span class="material-symbols-rounded o-icon" aria-hidden="true">subdirectory_arrow_right</span>
   </button>
 </span>
 <span
@@ -127,7 +127,7 @@ export const TOOLTIP_BUTTONS = `//SUPERIOR
   tabindex="0"
 >
   <button type="button" class="btn btn-primary btn-icon" aria-label="Botón">
-    <span class="material-symbols-rounded o-icon">arrow_downward</span>
+    <span class="material-symbols-rounded o-icon" aria-hidden="true">arrow_downward</span>
   </button>
 </span>
 <span
@@ -136,7 +136,7 @@ export const TOOLTIP_BUTTONS = `//SUPERIOR
   tabindex="0"
 >
   <button type="button" class="btn btn-primary btn-icon" aria-label="Botón">
-    <span class="material-symbols-rounded o-icon">subdirectory_arrow_left</span>
+    <span class="material-symbols-rounded o-icon" aria-hidden="true">subdirectory_arrow_left</span>
   </button>
 </span>`;
 
@@ -147,7 +147,7 @@ export const TOOLTIP_ICONS = `//SUPERIOR
   class="icon-box bg-light"
   tabindex="0"
 >
-  <span class="material-symbols-rounded o-icon">help</span>
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">help</span>
 </span>
 <span
   data-direction="top"
@@ -155,7 +155,7 @@ export const TOOLTIP_ICONS = `//SUPERIOR
   class="icon-box bg-light"
   tabindex="0"
 >
-  <span class="material-symbols-rounded o-icon">help</span>
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">help</span>
 </span>
 <span
   data-direction="top-left"
@@ -163,7 +163,7 @@ export const TOOLTIP_ICONS = `//SUPERIOR
   class="icon-box bg-light"
   tabindex="0"
 >
-  <span class="material-symbols-rounded o-icon">help</span>
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">help</span>
 </span>
 
 //DERECHA
@@ -173,7 +173,7 @@ export const TOOLTIP_ICONS = `//SUPERIOR
   class="icon-box bg-light"
   tabindex="0"
 >
-  <span class="material-symbols-rounded o-icon">help</span>
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">help</span>
 </span>
 <span
   data-direction="right"
@@ -181,7 +181,7 @@ export const TOOLTIP_ICONS = `//SUPERIOR
   class="icon-box bg-light"
   tabindex="0"
 >
-  <span class="material-symbols-rounded o-icon">help</span>
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">help</span>
 </span>
 <span
   data-direction="right-top"
@@ -189,7 +189,7 @@ export const TOOLTIP_ICONS = `//SUPERIOR
   class="icon-box bg-light"
   tabindex="0"
 >
-  <span class="material-symbols-rounded o-icon">help</span>
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">help</span>
 </span>
 
 //IZQUIERDA
@@ -199,7 +199,7 @@ export const TOOLTIP_ICONS = `//SUPERIOR
   class="icon-box bg-light"
   tabindex="0"
 >
-  <span class="material-symbols-rounded o-icon">help</span>
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">help</span>
 </span>
 <span
   data-direction="left"
@@ -207,7 +207,7 @@ export const TOOLTIP_ICONS = `//SUPERIOR
   class="icon-box bg-light"
   tabindex="0"
 >
-  <span class="material-symbols-rounded o-icon">help</span>
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">help</span>
 </span>
 <span
   data-direction="left-top"
@@ -215,7 +215,7 @@ export const TOOLTIP_ICONS = `//SUPERIOR
   class="icon-box bg-light"
   tabindex="0"
 >
-  <span class="material-symbols-rounded o-icon">help</span>
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">help</span>
 </span>
 
 //INFERIOR
@@ -225,7 +225,7 @@ export const TOOLTIP_ICONS = `//SUPERIOR
   class="icon-box bg-light"
   tabindex="0"
 >
-  <span class="material-symbols-rounded o-icon">help</span>
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">help</span>
 </span>
 <span
   data-direction="bottom"
@@ -233,7 +233,7 @@ export const TOOLTIP_ICONS = `//SUPERIOR
   class="icon-box bg-light"
   tabindex="0"
 >
-  <span class="material-symbols-rounded o-icon">help</span>
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">help</span>
 </span>
 <span
   data-direction="bottom-left"
@@ -241,5 +241,5 @@ export const TOOLTIP_ICONS = `//SUPERIOR
   class="icon-box bg-light"
   tabindex="0"
 >
-  <span class="material-symbols-rounded o-icon">help</span>
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">help</span>
 </span>`;

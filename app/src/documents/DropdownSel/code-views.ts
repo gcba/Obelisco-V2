@@ -15,7 +15,7 @@ export const DROPDOWN_CHECKBOX = `
     </span>
     <span class="btn-dropdown-text">Desplegable</span>
     <span
-      class="material-symbols-rounded o-icon btn-dropdown-icon"
+      class="material-symbols-rounded btn-dropdown-icon"
       aria-label="hidden"
     >
       expand_more
@@ -79,7 +79,7 @@ export const DROPDOWN_RADIO = `
       </span>
       <span class="btn-dropdown-text">Desplegable</span>
       <span
-        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        class="material-symbols-rounded btn-dropdown-icon"
         aria-label="hidden"
       >
         expand_more
@@ -143,7 +143,7 @@ export const DROPDOWN_RADIO_SIZES = `
       </span>
       <span class="btn-dropdown-text">Desplegable</span>
       <span
-        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        class="material-symbols-rounded btn-dropdown-icon"
         aria-label="hidden"
       >
         expand_more
@@ -206,7 +206,7 @@ export const DROPDOWN_RADIO_SIZES = `
       </span>
       <span class="btn-dropdown-text">Desplegable</span>
       <span
-        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        class="material-symbols-rounded btn-dropdown-icon"
         aria-label="hidden"
       >
         expand_more
@@ -269,7 +269,7 @@ export const DROPDOWN_RADIO_SIZES = `
       </span>
       <span class="btn-dropdown-text">Desplegable</span>
       <span
-        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        class="material-symbols-rounded btn-dropdown-icon"
         aria-label="hidden"
       >
         expand_more
@@ -333,7 +333,7 @@ export const DROPDOWN_RADIO_SIZES_MD = `
       </span>
       <span class="btn-dropdown-text">Desplegable</span>
       <span
-        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        class="material-symbols-rounded btn-dropdown-icon"
         aria-label="hidden"
       >
         expand_more
@@ -397,7 +397,7 @@ export const DROPDOWN_RADIO_SIZES_LG = `
       </span>
       <span class="btn-dropdown-text">Desplegable</span>
       <span
-        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        class="material-symbols-rounded btn-dropdown-icon"
         aria-label="hidden"
       >
         expand_more
@@ -461,7 +461,7 @@ export const DROPDOWN_RADIO_SIZES_SM = `
       </span>
       <span class="btn-dropdown-text">Desplegable</span>
       <span
-        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        class="material-symbols-rounded btn-dropdown-icon"
         aria-label="hidden"
       >
         expand_more
@@ -525,7 +525,7 @@ export const DROPDOWN_CHECKBOX_SIZES_MD = `
       </span>
       <span class="btn-dropdown-text">Desplegable</span>
       <span
-        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        class="material-symbols-rounded btn-dropdown-icon"
         aria-label="hidden"
       >
         expand_more
@@ -589,7 +589,7 @@ export const DROPDOWN_CHECKBOX_SIZES_SM = `
       </span>
       <span class="btn-dropdown-text">Desplegable</span>
       <span
-        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        class="material-symbols-rounded btn-dropdown-icon"
         aria-label="hidden"
       >
         expand_more
@@ -653,7 +653,7 @@ export const DROPDOWN_CHECKBOX_SIZES_LG = `
       </span>
       <span class="btn-dropdown-text">Desplegable</span>
       <span
-        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        class="material-symbols-rounded btn-dropdown-icon"
         aria-label="hidden"
       >
         expand_more
@@ -718,7 +718,7 @@ export const DROPDOWN_RADIO_HTML = `
       </span>
       <span class="btn-dropdown-text ellipsis-1" id="btnDropdownRadioTextJs">Desplegable</span>
       <span
-        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        class="material-symbols-rounded btn-dropdown-icon"
         aria-label="hidden"
       >
         expand_more
@@ -786,7 +786,7 @@ export const DROPDOWN_CHECKBOX_HTML = `
       </span>
       
       <span
-        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        class="material-symbols-rounded btn-dropdown-icon"
         aria-label="hidden"
       >
         expand_more

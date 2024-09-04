@@ -1,290 +1,242 @@
 @use 'sass:math';
-/* === Variable and mixins overides === */
-$nav-link-simple-active-font-weight: $font-weight-bold;
-$nav-link-active-font-weight: $font-weight-normal;
-$nav-link-line-heght: 1.378;
-
-$nav-link-lg-font-weight: $font-weight-normal;
-$nav-link-lg-font-size: 1.125rem;
+/* === Variables === */
 
 $nav-icon-font-size: 1.25rem;
 
-$nav-link-padding-sm-y: 0.25rem;
-$nav-link-padding-sm-x: 0.5rem;
+$nav-link-padding-sm: 0.25rem 0.5rem;
+$nav-link-padding: 0.5rem 0.75rem;
+$nav-link-padding-lg: 0.75rem;
+
 $nav-link-vertical-padding-x: 1.125rem;
-$nav-link-padding-x: 0.75rem;
-$nav-link-padding-y: 0.5rem;
-$nav-link-padding-lg-y: 0.75rem;
-$nav-mobile-inner-padding-y: 0.75rem;
-$nav-mobile-bg: $grisulado-50;
-
-$nav-link-disabled-color: $disabled-text;
-$nav-link-hover-bg: $grisulado-50;
-
-$nav-pills-link-active-bg: $active-color;
-$nav-link-hover-color: $hover-color;
-$nav-link-border-active: $active-color;
-
-$nav-focus-width: 0.25rem;
-$input-btn-focus-box-shadow: 0 0 0 $nav-focus-width $focus-color;
-$input-btn-hover-box-shadow: 0 0 0 math.div($nav-focus-width, 2) $hover-color;
-
-$icon-expand: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAEKADAAQAAAABAAAAEAAAAAAXnVPIAAAAPElEQVQ4EWNkwAEsPGL+I0ud2LGEEZkPYzPBGOTSowYwMDCihzapgTkMAhFr6gKFA3rYjKZE3KmD4nQAADIcCfkjs4flAAAAAElFTkSuQmCC');
-$icon-collapse: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAECAYAAACHtL/sAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAEKADAAQAAAABAAAABAAAAACC/WKKAAAAGElEQVQYGWO08Ij5z0ABYKJAL1jrwBsAAOG3AePub4ocAAAAAElFTkSuQmCC');
-$icon-user: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(56, 72, 92);transform: ;msFilter:;"><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path></svg>');
-$icon-user-active: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path></svg>');
-$icon-user-hover: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 123, 199);transform: ;msFilter:;"><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path></svg>');
-/* === Custom variables and mixins === */
 
 /* === Custom styles === */
-.nav {
-  &:not(.tabs) {
+
+nav {
+  .nav-pills {
     gap: 0.625rem;
-  }
-
-  /* Esta seccion define los tamaños disponible en navegacion horizontal */
-  .nav-item {
-    .nav-link {
-      min-height: 40px;
-      padding: $nav-link-padding-y $nav-link-padding-x;
-
-      &-lg {
-        min-height: 48px;
-        padding: $nav-link-padding-lg-y $nav-link-padding-x;
-      }
-
-      &-sm {
-        min-height: 30px;
-        padding: $nav-link-padding-sm-y $nav-link-padding-sm-x;
-        @extend .text-md;
-
-        .nav-icon {
-          .o-icon {
-            font-size: $nav-icon-font-size;
-          }
-        }
-      }
-
-      &.disabled {
-        color: $nav-link-disabled-color;
-      }
-    }
-  }
-
-  /* Navegacion Vertical */
-  &.flex-column {
-    gap: 0.25rem;
-    margin-top: 0.188rem;
-    background-color: $white;
-    border-radius: $border-radius * 2;
-
-    &:first-child {
-      margin-top: 0;
-
-      >.nav-item>.nav-link {
-        padding: 0.75rem 1rem;
-      }
-    }
-
-    .nav-item>.nav-link {
-      max-height: fit-content;
-    }
-
-    .nav .nav-item .nav-link .nav-icon {
-      .o-icon {
-        display: none;
-      }
-    }
-  }
-}
-
-.nav-pills {
-  .nav-item {
-    .nav-link {
-      text-decoration: none;
-      background-color: $white;
-      outline: 0.125rem solid transparent;
-      @include border-radius($border-radius * 2);
-
-    &.active,
-    &:active {
-      color: $white;
-      background-color: $nav-pills-link-active-bg;
-      outline: 0.25rem solid transparent;
-      outline-offset: -2px;
-
-      &:hover,
-      &:focus {
-        color: $white;
-        background-color: $nav-pills-link-active-bg;
+    .nav-item {
+      .nav-link {
+        color: $body-color;
+        @extend .headline-md;
+        font-weight: $font-weight-normal;
+        border-radius: $border-radius-lg;
         text-decoration: none;
-        box-shadow: none;
+        background-color: $white;
+        outline: 0.125rem solid transparent;
+        outline-offset: -0.125rem;
+        min-height: 40px;
+        padding: $nav-link-padding;
 
-        span {
-          text-decoration: none;
+        &-lg {
+          min-height: 48px;
+          padding: $nav-link-padding-lg;
         }
 
-        .nav-icon {
-          .o-icon {
-            text-decoration: none;
+        &-sm {
+          min-height: 32px;
+          padding: $nav-link-padding-sm;
+          @extend .text-md;
+
+          .nav-icon {
+            .o-icon {
+              font-size: $nav-icon-font-size;
+            }
+          }
+        }
+
+        &.disabled,
+        &:disabled {
+          color: $disabled-text;
+        }
+
+        &:visited {
+          color: $body-color;
+          &.disabled,
+          &:disabled {
+            color: $disabled-text;
+          }
+        }
+
+        &.border-link {
+          outline-color: $grisulado-100;
+        }
+
+        .o-icon {
+          vertical-align: middle;
+        }
+
+        &:hover {
+          outline-color: $hover-color;
+          color: $hover-color;
+
+          &:visited {
+            color: $hover-color;
           }
 
+          span:not(.o-icon) {
+            @extend .underline-1;
+            text-decoration-color: transparent;
+          }
+          .nav-icon {
+            text-decoration: none;
+            span:not(.o-icon) {
+              @extend .underline-1;
+              text-decoration-color: transparent;
+            }
+          }
+        }
+
+        &:focus {
+          outline: 0.25rem solid transparent;
+          outline-offset: 0;
+          box-shadow: $focus-box-shadow;
+          color: $body-color;
+          text-decoration: none;
+
+          .nav-icon {
+            .o-icon {
+              text-decoration: none;
+            }
+
+            span {
+              text-decoration: none;
+            }
+          }
           span {
             text-decoration: none;
           }
+
+          &:hover {
+            color: $body-color;
+          }
         }
-      }
 
-      &.active-child {
-        color: $blue;
-        text-decoration: none;
-        font-weight: $nav-link-active-font-weight;
-        box-shadow: none;
-        background-color: $white;
-      }
+        &.active,
+        &:active {
+          color: $white;
+          background-color: $active-color;
+          outline: 0.25rem solid transparent;
+          box-shadow: none;
 
-      .nav-icon {
-        span {
-          text-decoration: none;
+          &:hover,
+          &:focus {
+            color: $white;
+            background-color: $active-color;
+            text-decoration: none;
+
+            span {
+              text-decoration: none;
+            }
+
+            .nav-icon {
+              .o-icon {
+                text-decoration: none;
+              }
+
+              span {
+                text-decoration: none;
+              }
+            }
+          }
+
+          &.active-child {
+            color: $active-color;
+            text-decoration: none;
+            font-weight: $font-weight-normal;
+            box-shadow: none;
+            background-color: $white;
+          }
+
+          .nav-icon {
+            span {
+              text-decoration: none;
+            }
+          }
+        }
+
+        &.active-child {
+          outline: 0.25rem solid transparent;
+          outline-offset: -0.125rem;
+          color: $active-color;
+          font-weight: $font-weight-normal;
+
+          &:hover,
+          &:focus {
+            color: $active-color;
+            font-weight: $font-weight-normal;
+            box-shadow: none;
+
+            span {
+              text-decoration: none !important;
+            }
+
+            .nav-icon {
+              .o-icon {
+                text-decoration: none;
+              }
+
+              span {
+                text-decoration: none;
+              }
+            }
+          }
+
+          &:focus,
+          &.focus {
+            outline-offset: 0;
+          }
+        }
+
+        .nav-icon {
+          display: flex;
+          align-items: center;
+          gap: 0.25rem; //Este gap define el espaciado en navegación vertical y horizontal
+
+          .o-icon {
+            font-size: $nav-icon-font-size;
+            display: inline;
+          }
         }
       }
     }
 
-      &:hover {
-        span {
-          @extend .underline-1;
-          text-decoration-color: transparent;
-        }
+    // Navegacion Vertical
+    &.flex-column {
+      margin-top: 0.188rem;
+      background-color: $white;
+      border-radius: $border-radius-lg;
+
+      &:first-child {
+        margin-top: 0;
       }
 
-      &:focus {
-        outline: 0.25rem solid transparent;
-        outline-offset: 0;
-
-        span {
-          text-decoration: none;
-        }
+      .nav-item > .nav-link {
+        max-height: fit-content;
       }
 
-      &.active-child {
-        outline: 0.25rem solid transparent;
-        outline-offset: -2px;
-
-        &:focus,
-        &.focus {
-          outline-offset: 0;
-        }
-      }
-
-      .nav-icon {
-        display: flex;
-        align-items: center;
-        gap: 0.25rem; //Este gap define el espaciado en navegación vertical y horizontal
-
+      .nav .nav-item .nav-link .nav-icon {
         .o-icon {
-          font-size: $nav-icon-font-size;
-          display: inline;
+          display: none;
         }
       }
-    }
-  }
-}
 
-.nav-link {
-  color: $body-color;
-  @extend .headline-md;
-  font-weight: $font-weight-normal;
-
-  @include border-radius($border-radius * 2);
-
-  &:visited {
-    color: $body-color;
-  }
-
-  &.border-link {
-    box-shadow: 0 0 0 2px $grisulado-100;
-  }
-
-  .o-icon {
-    vertical-align: middle;
-  }
-
-  &:hover {
-    box-shadow: $input-btn-hover-box-shadow;
-    color: $nav-link-hover-color;
-    @extend .underline-1;
-    text-decoration-color: transparent;
-
-    &:visited {
-      color: $nav-link-hover-color;
-    }
-
-    .nav-icon {
-      .o-icon {
-        text-decoration: none;
-      }
-    }
-  }
-
-  &:focus,
-  &.focus {
-    outline: 0;
-    box-shadow: $input-btn-focus-box-shadow;
-    color: $body-color;
-    text-decoration: none;
-
-    .nav-icon {
-      .o-icon {
-        text-decoration: none;
-      }
-
-      span {
-        text-decoration: none;
-      }
-    }
-  }
-
-  &.active-child {
-    color: $active-color;
-    font-weight: $nav-link-active-font-weight;
-
-    &:hover,
-    &:focus {
-      color: $active-color;
-      font-weight: $nav-link-active-font-weight;
-      box-shadow: none;
-
-      span {
-        text-decoration: none !important;
-      }
-
-      .nav-icon {
-        .o-icon {
-          text-decoration: none;
+      // Espaciado nav vertical 2do nivel
+      .nav {
+        .nav-link {
+          padding-left: $nav-link-vertical-padding-x * 2.4444;
         }
-
-        span {
-          text-decoration: none;
+        // Espaciado nav vertical 3er nivel
+        .nav {
+          .nav-link {
+            padding-left: $nav-link-vertical-padding-x * 4;
+          }
+          // Espaciado nav vertical 4to nivel
+          .nav {
+            .nav-link {
+              padding-left: $nav-link-vertical-padding-x * 4.5;
+            }
+          }
         }
-      }
-    }
-  }
-}
-
-/* Espaciados para navegacion vertical con 1, 2 y 3 niveles */
-.nav .nav {
-  .nav-link {
-    padding-left: $nav-link-vertical-padding-x * 2.4444;
-  }
-
-  .nav {
-    .nav-link {
-      padding-left: $nav-link-vertical-padding-x * 4;
-    }
-
-    .nav {
-      .nav-link {
-        padding-left: $nav-link-vertical-padding-x * 4.5;
       }
     }
   }

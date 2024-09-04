@@ -48,7 +48,7 @@ const sections = [
                 </span>
                 <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
 
-                <span className="material-symbols-rounded o-icon btn-dropdown-icon" aria-label="hidden">
+                <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
                   expand_more
                 </span>
               </button>
@@ -119,7 +119,7 @@ const sections = [
                 <span className="btn-dropdown-text ellipsis-1" id="btnDropdownRadioText">
                   Desplegable
                 </span>
-                <span className="material-symbols-rounded o-icon btn-dropdown-icon" aria-label="hidden">
+                <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
                   expand_more
                 </span>
               </button>
@@ -187,7 +187,7 @@ const sections = [
                   person
                 </span>
                 <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
-                <span className="material-symbols-rounded o-icon btn-dropdown-icon" aria-label="hidden">
+                <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
                   expand_more
                 </span>
               </button>
@@ -248,7 +248,7 @@ const sections = [
                   person
                 </span>
                 <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
-                <span className="material-symbols-rounded o-icon btn-dropdown-icon" aria-label="hidden">
+                <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
                   expand_more
                 </span>
               </button>
@@ -309,7 +309,7 @@ const sections = [
                   person
                 </span>
                 <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
-                <span className="material-symbols-rounded o-icon btn-dropdown-icon" aria-label="hidden">
+                <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
                   expand_more
                 </span>
               </button>
@@ -377,7 +377,7 @@ const sections = [
                   person
                 </span>
                 <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
-                <span className="material-symbols-rounded o-icon btn-dropdown-icon" aria-label="hidden">
+                <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
                   expand_more
                 </span>
               </button>
@@ -438,7 +438,7 @@ const sections = [
                   person
                 </span>
                 <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
-                <span className="material-symbols-rounded o-icon btn-dropdown-icon" aria-label="hidden">
+                <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
                   expand_more
                 </span>
               </button>
@@ -499,7 +499,7 @@ const sections = [
                   person
                 </span>
                 <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
-                <span className="material-symbols-rounded o-icon btn-dropdown-icon" aria-label="hidden">
+                <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
                   expand_more
                 </span>
               </button>
@@ -581,7 +581,7 @@ const sections = [
                   <span id="counterDropdownCheckboxJs"></span>
                 </span>
 
-                <span className="material-symbols-rounded o-icon btn-dropdown-icon" aria-label="hidden">
+                <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
                   expand_more
                 </span>
               </button>
@@ -647,7 +647,7 @@ const sections = [
                 <span className="btn-dropdown-text ellipsis-1" id="btnDropdownRadioTextJs">
                   Desplegable
                 </span>
-                <span className="material-symbols-rounded o-icon btn-dropdown-icon" aria-label="hidden">
+                <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
                   expand_more
                 </span>
               </button>

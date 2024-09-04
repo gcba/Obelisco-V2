@@ -95,7 +95,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
 
     // Botón con borde
     &.btn-dropdown-border {
-      outline: .125rem solid $grisulado-100;
+      outline: $outline-border;
     }
 
     .o-icon,
@@ -159,7 +159,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
     border-radius: $border-radius-lg;
     padding: 0;
     margin-top: 0.5rem !important;
-    outline: .125rem solid $grisulado-100;
+    outline: $outline-border;
     @include dropdown-size('min');
     max-width: 348px;
 
@@ -269,7 +269,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
 
       &:hover {
         .form-checkbox-label, .form-radio-label {
-          outline: .125rem solid $hover-color;
+          outline: $hover-outline;
         }
 
         .form-checkbox-input:checked, .form-checkbox-input:disabled,
@@ -351,6 +351,14 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
         white-space: normal;
         font-size: $md-body-fs;
         font-family: $font-family-sans-serif;
+        outline: none;
+
+        &:hover {
+          outline: $hover-outline;
+        }
+        &:focus {
+          outline: $outline-transparent;
+        }
 
         .btn-dropdown-text {
           flex-grow: 1;
@@ -382,7 +390,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
           }
         }
         @include media-breakpoint-up(lg) {
-          outline: .125rem solid $grisulado-100;
+          outline: $outline-border;
           position: absolute !important;
           inset: 0 auto auto 348px !important;
           margin: 0 0 0 0.5rem !important;

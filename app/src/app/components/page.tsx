@@ -14,7 +14,7 @@ export default function ComponentsPage() {
           {stylesPages.map(({ text, url, id }) => (
             <div className="col" key={id}>
               <Link href={url} className="list-group-item item-sm">
-                <span className="material-symbols-rounded o-icon">palette</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">palette</span>
                 <div className="access-content">
                   <span className="access-title">{text}</span>
                   <p className="access-text">Estilos</p>
@@ -30,7 +30,7 @@ export default function ComponentsPage() {
           {componentsPages.map(({ text, url, id }) => (
             <div className="col" key={id}>
               <Link href={url} className="list-group-item item-sm">
-                <span className="material-symbols-rounded o-icon">code_blocks</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">code_blocks</span>
                 <div className="access-content">
                   <span className="access-title">{text}</span>
                   <p className="access-text">Componente</p>
@@ -46,7 +46,7 @@ export default function ComponentsPage() {
           {formsPages.map(({ text, url, id }) => (
             <div className="col" key={id}>
               <Link href={url} className="list-group-item item-sm">
-                <span className="material-symbols-rounded o-icon">view_list</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">view_list</span>
                 <div className="access-content">
                   <span className="access-title">{text}</span>
                   <p className="access-text">Formulario</p>
@@ -56,13 +56,14 @@ export default function ComponentsPage() {
           ))}
         </div>
       </div>
-      <div className="mb-5 bg-light p-3 rounded-4">
+      {/* Eliminar clase d-none al agregar organismos en la segunda entrega */}
+      <div className="mb-5 bg-light p-3 rounded-4 d-none">
         <p className="headline-lg fw-bold">Organismos</p>
         <div className="access-items-3">
           {organismsPages.map(({ text, url, id }) => (
             <div className="col" key={id}>
               <Link href={url} className="list-group-item item-sm">
-                <span className="material-symbols-rounded o-icon">cards</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">cards</span>
                 <div className="access-content">
                   <span className="access-title">{text}</span>
                   <p className="access-text">Organismo</p>

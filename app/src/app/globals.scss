@@ -112,7 +112,20 @@ hr {
 
 // Toast Styles
 .custom-toast {
-  box-shadow: 0 4px 12px #00000002;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.075);
+  font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: .875rem;
+  color: #101e37;
+  background-color: #F3F6F9;
+  right: 0;
+  
+  div[data-title] {
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  div[data-icon] {
+    color: #26874A;
+  }
 }
 
 // End Toast Styles

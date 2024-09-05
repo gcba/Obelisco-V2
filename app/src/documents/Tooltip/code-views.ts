@@ -1,11 +1,11 @@
-export const TooltipWithButtons = `//SUPERIOR
+export const TOOLTIP_BUTTONS = `//SUPERIOR
 <span
   data-direction="top-right"
   data-tooltip='Esta es la descripción de un tooltip "arriba-derecha".'
   tabindex="0"
 >
   <button type="button" class="btn btn-primary btn-icon" aria-label="Botón">
-    <span class="material-symbols-rounded">turn_right</span>
+    <span class="material-symbols-rounded o-icon" aria-hidden="true">turn_right</span>
   </button>
 </span>
 <span
@@ -14,7 +14,7 @@ export const TooltipWithButtons = `//SUPERIOR
   tabindex="0"
 >
   <button type="button" class="btn btn-primary btn-icon" aria-label="Botón">
-    <span class="material-symbols-rounded">arrow_upward</span>
+    <span class="material-symbols-rounded o-icon" aria-hidden="true">arrow_upward</span>
   </button>
 </span>
 <span
@@ -23,7 +23,7 @@ export const TooltipWithButtons = `//SUPERIOR
   tabindex="0"
 >
   <button type="button" class="btn btn-primary btn-icon" aria-label="Botón">
-    <span class="material-symbols-rounded">turn_left</span>
+    <span class="material-symbols-rounded o-icon" aria-hidden="true">turn_left</span>
   </button>
 </span>
 
@@ -38,7 +38,7 @@ export const TooltipWithButtons = `//SUPERIOR
     class="btn btn-primary btn-icon"
     aria-label="Botón"
   >
-    <span class="material-symbols-rounded">south_east</span>
+    <span class="material-symbols-rounded o-icon" aria-hidden="true">south_east</span>
   </button>
 </span>
 <span
@@ -51,7 +51,7 @@ export const TooltipWithButtons = `//SUPERIOR
     class="btn btn-primary btn-icon"
     aria-label="Botón"
   >
-    <span class="material-symbols-rounded">arrow_forward</span>
+    <span class="material-symbols-rounded o-icon" aria-hidden="true">arrow_forward</span>
   </button>
 </span>
 <span
@@ -64,7 +64,7 @@ export const TooltipWithButtons = `//SUPERIOR
     class="btn btn-primary btn-icon"
     aria-label="Botón"
   >
-    <span class="material-symbols-rounded">north_east</span>
+    <span class="material-symbols-rounded o-icon" aria-hidden="true">north_east</span>
   </button>
 </span>
 
@@ -80,7 +80,7 @@ export const TooltipWithButtons = `//SUPERIOR
     class="btn btn-primary btn-icon"
     aria-label="Botón"
   >
-    <span class="material-symbols-rounded">south_west</span>
+    <span class="material-symbols-rounded o-icon" aria-hidden="true">south_west</span>
   </button>
 </span>
 <span
@@ -93,7 +93,7 @@ export const TooltipWithButtons = `//SUPERIOR
     class="btn btn-primary btn-icon"
     aria-label="Botón"
   >
-    <span class="material-symbols-rounded">keyboard_backspace</span>
+    <span class="material-symbols-rounded o-icon" aria-hidden="true">keyboard_backspace</span>
   </button>
 </span>
 <span
@@ -106,7 +106,7 @@ export const TooltipWithButtons = `//SUPERIOR
     class="btn btn-primary btn-icon"
     aria-label="Botón"
   >
-    <span class="material-symbols-rounded">north_west</span>
+    <span class="material-symbols-rounded o-icon" aria-hidden="true">north_west</span>
   </button>
 </span>
 
@@ -118,7 +118,7 @@ export const TooltipWithButtons = `//SUPERIOR
   tabindex="0"
 >
   <button type="button" class="btn btn-primary btn-icon" aria-label="Botón">
-    <span class="material-symbols-rounded">subdirectory_arrow_right</span>
+    <span class="material-symbols-rounded o-icon" aria-hidden="true">subdirectory_arrow_right</span>
   </button>
 </span>
 <span
@@ -127,7 +127,7 @@ export const TooltipWithButtons = `//SUPERIOR
   tabindex="0"
 >
   <button type="button" class="btn btn-primary btn-icon" aria-label="Botón">
-    <span class="material-symbols-rounded">arrow_downward</span>
+    <span class="material-symbols-rounded o-icon" aria-hidden="true">arrow_downward</span>
   </button>
 </span>
 <span
@@ -136,19 +136,18 @@ export const TooltipWithButtons = `//SUPERIOR
   tabindex="0"
 >
   <button type="button" class="btn btn-primary btn-icon" aria-label="Botón">
-    <span class="material-symbols-rounded">subdirectory_arrow_left</span>
+    <span class="material-symbols-rounded o-icon" aria-hidden="true">subdirectory_arrow_left</span>
   </button>
-</span>
-`;
+</span>`;
 
-export const TooltipWithIcons = `//SUPERIOR
+export const TOOLTIP_ICONS = `//SUPERIOR
 <span
   data-direction="top-right"
   data-tooltip='Esta es la descripción de un tooltip "arriba-derecha".'
   class="icon-box bg-light"
   tabindex="0"
 >
-  <span class="material-symbols-rounded">help</span>
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">help</span>
 </span>
 <span
   data-direction="top"
@@ -156,7 +155,7 @@ export const TooltipWithIcons = `//SUPERIOR
   class="icon-box bg-light"
   tabindex="0"
 >
-  <span class="material-symbols-rounded">help</span>
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">help</span>
 </span>
 <span
   data-direction="top-left"
@@ -164,7 +163,7 @@ export const TooltipWithIcons = `//SUPERIOR
   class="icon-box bg-light"
   tabindex="0"
 >
-  <span class="material-symbols-rounded">help</span>
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">help</span>
 </span>
 
 //DERECHA
@@ -174,7 +173,7 @@ export const TooltipWithIcons = `//SUPERIOR
   class="icon-box bg-light"
   tabindex="0"
 >
-  <span class="material-symbols-rounded">help</span>
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">help</span>
 </span>
 <span
   data-direction="right"
@@ -182,7 +181,7 @@ export const TooltipWithIcons = `//SUPERIOR
   class="icon-box bg-light"
   tabindex="0"
 >
-  <span class="material-symbols-rounded">help</span>
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">help</span>
 </span>
 <span
   data-direction="right-top"
@@ -190,7 +189,7 @@ export const TooltipWithIcons = `//SUPERIOR
   class="icon-box bg-light"
   tabindex="0"
 >
-  <span class="material-symbols-rounded">help</span>
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">help</span>
 </span>
 
 //IZQUIERDA
@@ -200,7 +199,7 @@ export const TooltipWithIcons = `//SUPERIOR
   class="icon-box bg-light"
   tabindex="0"
 >
-  <span class="material-symbols-rounded">help</span>
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">help</span>
 </span>
 <span
   data-direction="left"
@@ -208,7 +207,7 @@ export const TooltipWithIcons = `//SUPERIOR
   class="icon-box bg-light"
   tabindex="0"
 >
-  <span class="material-symbols-rounded">help</span>
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">help</span>
 </span>
 <span
   data-direction="left-top"
@@ -216,7 +215,7 @@ export const TooltipWithIcons = `//SUPERIOR
   class="icon-box bg-light"
   tabindex="0"
 >
-  <span class="material-symbols-rounded">help</span>
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">help</span>
 </span>
 
 //INFERIOR
@@ -226,7 +225,7 @@ export const TooltipWithIcons = `//SUPERIOR
   class="icon-box bg-light"
   tabindex="0"
 >
-  <span class="material-symbols-rounded">help</span>
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">help</span>
 </span>
 <span
   data-direction="bottom"
@@ -234,7 +233,7 @@ export const TooltipWithIcons = `//SUPERIOR
   class="icon-box bg-light"
   tabindex="0"
 >
-  <span class="material-symbols-rounded">help</span>
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">help</span>
 </span>
 <span
   data-direction="bottom-left"
@@ -242,6 +241,5 @@ export const TooltipWithIcons = `//SUPERIOR
   class="icon-box bg-light"
   tabindex="0"
 >
-  <span class="material-symbols-rounded">help</span>
-</span>
-`;
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">help</span>
+</span>`;

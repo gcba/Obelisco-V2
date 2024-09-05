@@ -1,5 +1,4 @@
-export const EGcodeSimpleNavVertical =
-  `
+export const NAV_VERTICAL_SIMPLE = `
   <nav>
     <ul class="nav flex-column nav-pills">
       <li class="nav-item">
@@ -24,9 +23,7 @@ export const EGcodeSimpleNavVertical =
     </ul>
   </nav>
 `;
-
-export const EGcodeWithIconVertical =
-  `
+export const NAV_VERTICAL_ICON = `
   <nav>
     <ul class="nav flex-column nav-pills">
       <li class="nav-item">
@@ -68,10 +65,8 @@ export const EGcodeWithIconVertical =
       </li>
     </ul>
   </nav>
-
-`
-
-export const EGcodeTwoLevelVertical = `
+`;
+export const NAV_VERTICAL_TWO_LEVEL = `
   <nav>
     <ul class="nav flex-column nav-pills nav-lg">
       <li class="nav-item">
@@ -116,16 +111,23 @@ export const EGcodeTwoLevelVertical = `
     </ul>
   </nav>
 `;
-
-export const EGcodeTwoLevelWithIconVertical = `
+export const NAV_VERTICAL_TWO_LEVEL_ICON = `
   <nav>
     <ul class="nav flex-column nav-pills nav-lg">
       <li class="nav-item">
-        <a class="nav-link" href="#"><span>Categorías</span></a>
+        <a class="nav-link" href="#">
+          <div class="nav-icon">
+            <i class="bx bxs-user-circle"></i>
+            <span>Categorías</span>
+          </div>
+        </a>
       </li>
       <li class="nav-item">
         <a class="nav-link active-child" href="#">
-          <span>Locales y comercios</span>
+          <div class="nav-icon">
+            <i class="bx bxs-user-circle"></i>
+            <span>Locales y comercios</span>
+          </div>
         </a>
         <ul class="nav flex-column nav-pills">
           <li class="nav-item">
@@ -154,16 +156,25 @@ export const EGcodeTwoLevelWithIconVertical = `
         </ul>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><span>Actividades jurídicas</span></a>
+        <a class="nav-link" href="#">
+          <div class="nav-icon">
+            <i class="bx bxs-user-circle"></i>
+            <span>Actividades jurídicas</span>
+          </div>
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><span>Otras actividades</span></a>
+        <a class="nav-link" href="#">
+          <div class="nav-icon">
+            <i class="bx bxs-user-circle"></i>
+            <span>Otras actividades</span>
+          </div>
+        </a>
       </li>
     </ul>
   </nav>
 `;
-
-export const EGcodeThreeLevelVertical = `
+export const NAV_VERTICAL_THREE_LEVEL = `
   <nav>
     <ul class="nav flex-column nav-pills nav-lg">
       <li class="nav-item">
@@ -218,8 +229,7 @@ export const EGcodeThreeLevelVertical = `
     </ul>
   </nav>
 `;
-
-export const EGcodeThreeLevelWithIconVertical = `
+export const NAV_VERTICAL_THREE_LEVEL_ICON = `
   <nav>
     <ul class="nav flex-column nav-pills nav-lg">
       <li class="nav-item">

@@ -1,30 +1,31 @@
 'use client';
 
-import React, { useRef, useEffect, useState } from 'react';
-import { Scrollspy } from "@makotot/ghostui";
-import HeadingTemplate from '@/components/Template/HeadingTemplate';
+import { Scrollspy } from '@makotot/ghostui';
+import React, { useEffect, useState, useMemo, useCallback } from 'react';
+
 import Divisor from '@/components/Template/Divisor';
-import MainDescription from './MainDescription';
+import HeadingTemplate from '@/components/Template/HeadingTemplate';
+
 import SimpleText from './SimpleText';
 
 interface Section {
-  id: string;
+  id?: string;
   title: string;
-  content: React.ReactNode;
+  content?: React.ReactNode;
   description?: string;
+  h1?: boolean;
+  defaultTitle?: boolean;
 }
 
 interface DocumentationTemplateProps {
   sections: Section[];
-  title: string;
-  description: string;
 }
 
-const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections, title, description }) => {
-  const sectionRefs = sections.map(() => useRef<HTMLDivElement>(null));
+const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections }) => {
+  const sectionRefs = useMemo(() => sections.map(() => React.createRef<HTMLDivElement>()), [sections]);
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     sectionRefs.forEach((ref, index) => {
       const element = ref.current;
       if (element) {
@@ -34,38 +35,27 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
         }
       }
     });
-  };
+  }, [sectionRefs]);
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [handleScroll]);
+
+  const defaultTitle = sections.some((section) => section.defaultTitle) ? 'Obelisco' : 'Variantes';
 
   return (
     <Scrollspy sectionRefs={sectionRefs} offset={84}>
       {() => (
-        <div className='box-scrollspy'>
+        <div className="box-scrollspy">
           <article className="box-content">
             <div data-cy="section-wrapper">
-              <section>
-                <HeadingTemplate className='pt-0'>
-                  <h1>{title}</h1>
-                </HeadingTemplate>
-                <MainDescription description={description} />
-              </section>
-
-              <Divisor />
-
               {sections.map((section, index) => (
-                <section
-                  key={section.id}
-                  id={section.id}
-                  ref={sectionRefs[index]}
-                >
-                  <HeadingTemplate className='pt-5'>
-                    <h2 className="mb-4">{section.title}</h2>
+                <section key={section.id} id={section.id || undefined} ref={sectionRefs[index]}>
+                  <HeadingTemplate className="pt-2">
+                    {section.h1 ? <h1 className="mb-4">{section.title}</h1> : <h2 className="mb-4">{section.title}</h2>}
                   </HeadingTemplate>
                   {section.description && <SimpleText description={section.description} />}
                   {section.content}
@@ -75,14 +65,19 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
             </div>
           </article>
 
-          <div className='nav-scrollspy d-none d-lg-block flex-grow-1'>
-            <ul className='scrollspy' data-cy="nav-wrapper">
-              <p className='headline-md fw-bold mb-1'>On this page</p>
-              {sections.map((section, index) => (
-                <li key={section.id} className={activeIndex === index ? "active" : ""}>
-                  <a href={`#${section.id}`} className='text-sm'>{section.title}</a>
-                </li>
-              ))}
+          <div className="nav-scrollspy d-none d-lg-block flex-grow-1">
+            <ul className="scrollspy" data-cy="nav-wrapper">
+              <p className="headline-md fw-bold mb-1">{defaultTitle}</p>
+              {sections.map(
+                (section, index) =>
+                  section.id && (
+                    <li key={section.id} className={activeIndex === index ? 'active' : ''}>
+                      <a href={`#${section.id}`} className="text-sm">
+                        {section.title}
+                      </a>
+                    </li>
+                  ),
+              )}
             </ul>
           </div>
         </div>

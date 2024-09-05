@@ -1,0 +1,409 @@
+/* === Variables and mixins === */
+
+$access-padding: 1rem;
+$access-padding-desktop: 1.5rem;
+
+// Acceso chico
+$access-padding-sm: 0.5rem 1rem;
+$access-padding-sm-desktop: 0.75rem 1.5rem;
+
+// Accesos organismos
+$padding-card-access-body: 1.5rem;
+
+$padding-title-option: 0.75rem 1.5rem;
+$padding-title-option-first-child: 0.75rem 1.5rem 0;
+$font-size-icon-card: 2rem;
+$card-size: 64px;
+
+$box-shadow-access: 0 0 0 2px $grisulado-50;
+$box-shadow-access-hover: 0 0 0 2px #274986;
+$box-shadow-access-hover-danger: 0 0 0 2px $red;
+$border-radius-card-item: 0 0 8px 8px;
+
+$box-shadow-access-focus: 0 0 0 4px $focus-color; // $focus-box-shadow
+
+$no-text-decoration: none;
+
+$margin-clearfix: -2px 0 0.5rem;
+$color-clearfix: $grisulado-50;
+$height-clearfix: 0.125rem;
+
+$list-group-padding-x: space-units(4);
+
+$list-group-category-margin: space-units(2);
+
+// Icono flexha de Accesos
+$access-arrow: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><g clip-path="url(%23clip0_1497_1475)"><path d="M9.83547 15.88L13.7155 12L9.83547 8.11998C9.44547 7.72998 9.44547 7.09998 9.83547 6.70998C10.2255 6.31998 10.8555 6.31998 11.2455 6.70998L15.8355 11.3C16.2255 11.69 16.2255 12.32 15.8355 12.71L11.2455 17.3C10.8555 17.69 10.2255 17.69 9.83547 17.3C9.45547 16.91 9.44547 16.27 9.83547 15.88Z" fill="%23101E37"/></g><defs><clipPath id="clip0_1497_1475"><rect width="24" height="24" fill="white" transform="translate(0.54541)"/></clipPath></defs></svg>');
+$access-arrow-hover: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><g clip-path="url(%23clip0_2222_853)"><path d="M9.83547 15.88L13.7155 12L9.83547 8.11998C9.44547 7.72998 9.44547 7.09998 9.83547 6.70998C10.2255 6.31998 10.8555 6.31998 11.2455 6.70998L15.8355 11.3C16.2255 11.69 16.2255 12.32 15.8355 12.71L11.2455 17.3C10.8555 17.69 10.2255 17.69 9.83547 17.3C9.45547 16.91 9.44547 16.27 9.83547 15.88Z" fill="%23274986"/></g><defs><clipPath id="clip0_2222_853"><rect width="24" height="24" fill="white" transform="translate(0.54541)"/></clipPath></defs></svg>');
+$access-icon-logout: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" style="fill: rgba(201, 59, 59, 1);msFilter:;"><g><path d="M0,0h24v24H0V0z" fill="none"/></g><g><g><path d="M5,5h6c0.55,0,1-0.45,1-1v0c0-0.55-0.45-1-1-1H5C3.9,3,3,3.9,3,5v14c0,1.1,0.9,2,2,2h6c0.55,0,1-0.45,1-1v0 c0-0.55-0.45-1-1-1H5V5z"/><path d="M20.65,11.65l-2.79-2.79C17.54,8.54,17,8.76,17,9.21V11h-7c-0.55,0-1,0.45-1,1v0c0,0.55,0.45,1,1,1h7v1.79 c0,0.45,0.54,0.67,0.85,0.35l2.79-2.79C20.84,12.16,20.84,11.84,20.65,11.65z"/></g></g></svg>');
+$access-arrow-active: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none"><g clip-path="url(%23clip0_1996_10920)"><path d="M9.29 16.547L13.17 12.667L9.29 8.78697C8.9 8.39697 8.9 7.76697 9.29 7.37697C9.68 6.98697 10.31 6.98697 10.7 7.37697L15.29 11.967C15.68 12.357 15.68 12.987 15.29 13.377L10.7 17.967C10.31 18.357 9.68 18.357 9.29 17.967C8.91 17.577 8.9 16.937 9.29 16.547Z" fill="white"/></g><defs><clipPath id="clip0_1996_10920"><rect width="24" height="24" fill="white" transform="translate(0 0.666992)"/></clipPath></defs></svg>');
+
+@mixin display-flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin access-icon($icon) {
+  content: '';
+  height: 1.5rem;
+  width: 1.5rem;
+  min-width: 1.5rem;
+  background: transparent #{$icon} no-repeat center center;
+}
+
+/* === Bootstrap Import === */
+
+/* === Custom styles === */
+
+a.list-group-item {
+  text-decoration: $no-text-decoration;
+  color: $body-color;
+  border: none;
+  outline: $outline-border;
+  border-radius: $border-radius-lg;
+  padding: $access-padding;
+  display: flex;
+  height: auto;
+  background-color: $white;
+
+  @include media-breakpoint-up(xl) {
+    padding: $access-padding-desktop;
+  }
+
+  .o-icon {
+    font-size: 1.5rem;
+    align-self: center;
+    margin-right: 0.75rem;
+    vertical-align: middle;
+  }
+
+  .access-title {
+    @extend .text-md;
+    font-weight: $font-weight-normal;
+    display: inline-block;
+  }
+
+  &:not(.access-content) {
+    > .access-title {
+      width: 100%;
+    }
+  }
+
+  .access-content {
+    width: 100%;
+
+    .access-text {
+      @extend .text-sm;
+      font-weight: $font-weight-normal;
+      margin: 0.125rem 0 0;
+      color: $grisulado-900; //#425266;
+    }
+  }
+
+  &:visited {
+    color: $body-color;
+  }
+
+  &:first-child {
+    border-radius: $border-radius-lg;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+    border-radius: $border-radius-lg;
+
+    &:is(.card-item) {
+      border-radius: 0 0 8px 8px; // $border-radius-card-item
+    }
+  }
+
+  &:hover,
+  &.hover {
+    outline: $hover-outline;
+    color: $hover-color;
+    text-decoration: $no-text-decoration;
+
+    &.list-group-item-logout {
+      box-shadow: $box-shadow-access-hover-danger;
+    }
+
+    .access-title {
+      @extend .underline-2;
+      text-decoration-color: transparent;
+    }
+
+    .access-text {
+      color: $hover-color;
+    }
+
+    &::after {
+      @include access-icon($access-arrow-hover);
+    }
+  }
+
+  &:focus,
+  &.focus {
+    box-shadow: $box-shadow-access-focus;
+    outline: $outline-transparent;
+    background: $white;
+
+    &:hover:not(:active),
+    &:hover:not(.active) {
+      box-shadow: $box-shadow-access-focus;
+      outline: $outline-transparent;
+      color: $body-color;
+
+      .access-text {
+        color: $grisulado-900;
+      }
+
+      &.list-group-item-logout {
+        color: $danger;
+        box-shadow: $box-shadow-access-focus;
+
+        &::after {
+          @include access-icon($access-icon-logout);
+        }
+      }
+
+      &::after {
+        float: right;
+        @include access-icon($access-arrow);
+      }
+
+      .access-title {
+        text-decoration: $no-text-decoration;
+      }
+    }
+  }
+
+  // &:focus-visible {
+  //   outline: 0.25rem solid transparent;
+  // }
+
+  &:active,
+  &.active {
+    outline: 0.25rem solid $active-color;
+    outline-offset: -0.25rem;
+    background-color: $active-color;
+    color: $white;
+
+    &:focus,
+    &.focus {
+      box-shadow: none;
+      background-color: $active-color;
+      color: $white;
+    }
+
+    &:hover,
+    &.hover {
+      outline: 0.25rem solid $active-color;
+      box-shadow: none;
+      background-color: $active-color;
+      color: $white;
+    }
+
+    .access-title {
+      text-decoration-color: transparent;
+    }
+
+    &.list-group-item-logout {
+      box-shadow: $box-shadow-access-hover-danger;
+    }
+
+    &::after {
+      @include access-icon($access-arrow-active); // icono blanco
+    }
+
+    .access-text {
+      color: $white;
+    }
+  }
+
+  &::after {
+    float: right;
+    @include access-icon($access-arrow);
+    margin-left: 0.25rem;
+  }
+
+  &.item-sm {
+    padding: $access-padding-sm;
+    @include media-breakpoint-up(xl) {
+      padding: $access-padding-sm-desktop;
+    }
+  }
+
+  &.list-group-item-logout {
+    box-shadow: $box-shadow-access-hover-danger;
+    color: $danger;
+
+    &:visited {
+      color: $danger;
+    }
+
+    &::after {
+      @include access-icon($access-icon-logout);
+    }
+
+    &:hover {
+      // box-shadow: $box-shadow-access-hover-danger;
+      color: $danger;
+    }
+
+    &.logout-sm {
+      padding: 0.525rem 0.75rem;
+      line-height: 1.45;
+    }
+  }
+}
+
+.group-access {
+  display: grid;
+  margin-bottom: 1rem;
+  background-color: $white;
+
+  .card-access {
+    display: grid;
+    width: 100%;
+    box-shadow: $box-shadow-access;
+    outline: 0.125rem solid transparent;
+    border-radius: 8px; // $border-radius-lg
+    padding-bottom: 0;
+
+    .clearfix {
+      margin: $margin-clearfix;
+      border: none;
+      height: $height-clearfix;
+      min-height: $height-clearfix;
+      background-color: $color-clearfix;
+    }
+
+    .card-access-body {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: $padding-card-access-body;
+
+      &:not(.p-list) {
+        &:has(~ .container-access) {
+          ~ .card-item {
+            box-shadow: none;
+
+            &:hover {
+              // box-shadow: $box-shadow-access-hover;
+            }
+
+            &:focus {
+              // box-shadow: $box-shadow-access-focus;
+            }
+          }
+        }
+      }
+
+      h4 {
+        @extend .headline-lg;
+        font-weight: $font-weight-bold;
+        margin-bottom: 0.25rem;
+      }
+
+      &:not(.reverse) {
+        justify-content: space-between;
+      }
+
+      .card-access-title {
+        @extend .h4;
+        margin-bottom: 0.25rem;
+      }
+
+      .card-access-text {
+        margin: 0;
+      }
+
+      .card-access-icon {
+        font-size: $font-size-icon-card;
+        background-color: #f3f6f9;
+        flex: 0 0 $card-size;
+        height: $card-size;
+        border-radius: $border-radius-lg; // $border-radius-lg
+        text-align: center;
+        line-height: $card-size;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &.descriptive {
+          color: $blue;
+          font-weight: 600;
+          font-size: 1.806rem;
+          font-family: $font-family-headings;
+        }
+      }
+
+      &.reverse {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+      }
+
+      @include media-breakpoint-down(xs) {
+        // padding: 1rem;
+      }
+    }
+
+    .container-access {
+      .access-option {
+        padding: 0;
+
+        .list-group-item:last-child {
+          margin-bottom: 0;
+        }
+
+        .item-sm {
+          box-shadow: none;
+          margin-bottom: 0.5rem;
+
+          // &:active,
+          // &.active {
+          //   // box-shadow: $box-shadow-access-focus;
+          // }
+
+          // &:hover,
+          // &.hover {
+          //   // box-shadow: $box-shadow-access-hover;
+          // }
+
+          // &:focus,
+          // &.focus {
+          //   // box-shadow: $box-shadow-access-focus;
+          // }
+        }
+
+        .title-option {
+          padding: $padding-title-option;
+          @extend .headline-md;
+          font-weight: $font-weight-semibold;
+          margin-bottom: 0.5rem;
+        }
+      }
+
+      & + .clearfix {
+        margin-top: 0;
+        margin-bottom: 6px;
+
+        & + .card-item {
+          border-radius: 0.5rem;
+
+          // &:focus {
+          //   box-shadow: $box-shadow-access-focus;
+          // }
+        }
+      }
+    }
+  }
+
+  .card-item {
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+    @include display-flex-between;
+  }
+}

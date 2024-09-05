@@ -4,43 +4,53 @@
   "description": "",
   "private": false,
   "main": "dist/styles.css",
+  "files": [
+    "dist/",
+    "static/"
+  ],
   "scripts": {
+    "i-app": "cd app && npm install",
     "start": "concurrently \"npm run watch-css\" \"cd app && npm run dev\"",
     "watch-css": "nodemon --watch src/styles --ext scss --exec \"npm run build-css\"",
     "build-css": "sass src/styles/main.scss dist/styles.css",
     "build": "npm run build-css",
-    "i-app": "cd app && npm install"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "build-versioned": "node build-css-versioned.js",
+    "prettier:check-library": "prettier --check \"src/**/*.scss\"",
+    "prettier:library": "prettier --write \"src/**/*.scss\"",
+    "lint:library": "stylelint \"src/**/*.scss\"",
+    "lint-fix:library": "stylelint \"src/**/*.scss\" --fix",
+    "release": "npx semantic-release",
+    "lint:app": "cd app && npm run lint",
+    "lint-fix:app": "cd app && npm run lint:format",
+    "prettier-check:app": "cd app && npm run prettier:check",
+    "prettier:app": "cd app && npm run prettier:format"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.3.3",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "sass": "^1.77.8",
-    "typescript": "^4.9.5"
+    "bootstrap": "^5.3.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.25.2",
-    "@babel/preset-env": "^7.25.3",
-    "@babel/preset-react": "^7.24.7",
+    "sass": "^1.77.8",
+    "prettier": "^3.3.3",
+    "stylelint": "^16.8.2",
+    "stylelint-config-prettier-scss": "^1.0.0",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-config-standard-scss": "^13.1.0",
+    "semantic-release": "^24.0.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^10.1.3",
-    "babel-loader": "^9.1.3",
-    "concurrently": "^8.2.2",
-    "html-webpack-plugin": "^5.6.0",
     "nodemon": "^3.1.4",
-    "semantic-release": "^24.0.0",
-    "webpack": "^5.93.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.0.4"
+    "concurrently": "^8.2.2"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gcba/Obelisco-v2.git"
   }
 }

@@ -1,42 +1,45 @@
-'use client'
-
-import React, { useRef } from 'react';
-import { Scrollspy } from "@makotot/ghostui";
-import CodeCopy from "@/components/CodeBox";
-import BoxTemplate from '@/components/Template/Box';
-import HeadingTemplate from '@/components/Template/HeadingTemplate';
+import CodeBox from '@/components/CodeBox';
+import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
-import Divisor from '@/components/Template/Divisor';
-import { EGcodeSimpleNavHorizontal, EGcodeWithIconHorizontal, EGcodeSizesHorizontal } from './code-views';
-import DocumentationTemplate from '@/components/Template/DocumentationTemplate'; // Importa el componente
+
+import {
+  NAV_HORIZONTAL_SIMPLE,
+  NAV_HORIZONTAL_ICON,
+  NAV_HORIZONTAL_ICON_RIGHT,
+  NAV_HORIZONTAL_SIZES,
+  NAV_HORIZONTAL_BORDER,
+} from './code-views';
 
 const sections = [
   {
-    id: 'section-1',
-    title: 'Navegación horizontal',
+    title: 'Navegación Horizontal',
+    h1: true,
     content: (
-      <>
-        <MainDescription description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the." />
-      </>
+      <MainDescription description="Permite a las personas usuarias a navegar por las vistas sin salir de la página. Siempre contienen al menos dos elementos y una esta activa a la vez. Generalmente se utilizan en encabezados o secciones grandes." />
     ),
-    description: undefined
   },
   {
-    id: 'section-2',
+    id: 'section-1',
     title: 'Simple',
     content: (
-      <>
+      <CodeBox codeHTML={NAV_HORIZONTAL_SIMPLE}>
         <div className="col-12 col-lg-8 mx-auto pb-2">
           <nav>
             <ul className="nav flex-row nav-pills">
               <li className="nav-item">
-                <a className="nav-link" href="#"><span>Link</span></a>
+                <a className="nav-link" href="#">
+                  <span>Link</span>
+                </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="#"><span>Activo</span></a>
+                <a className="nav-link active" href="#">
+                  <span>Activo</span>
+                </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#"><span>Link</span></a>
+                <a className="nav-link" href="#">
+                  <span>Link</span>
+                </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link disabled" href="#" aria-disabled="true" tabIndex={-1}>
@@ -46,175 +49,183 @@ const sections = [
             </ul>
           </nav>
         </div>
-        <CodeCopy code={EGcodeSimpleNavHorizontal} />
-      </>
-    )
+      </CodeBox>
+    ),
   },
   {
-    id: 'section-3',
+    id: 'section-2',
     title: 'Simple con icono',
     content: (
       <>
-        <div className="col-12 col-lg-8 mx-auto pb-2">
-          <nav>
-            <ul className="nav flex-row nav-pills">
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  <div className="nav-icon">
-                    <i className="bx bxs-user-circle"></i>
-                    <span>Link</span>
-                  </div>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active" href="#">
-                  <div className="nav-icon">
-                    <i className="bx bxs-user-circle"></i>
-                    <span>Activo</span>
-                  </div>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  <div className="nav-icon">
-                    <i className="bx bxs-user-circle"></i>
-                    <span>Link</span>
-                  </div>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link disabled" href="#" aria-disabled="true" tabIndex={-1}>
-                  <div className="nav-icon">
-                    <i className="bx bxs-user-circle"></i>
-                    <span>Deshabilitado</span>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <br />
-          <nav>
-            <ul className="nav flex-row nav-pills">
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  <div className="nav-icon">
-                    <span>Link</span>
-                    <i className="bx bxs-user-circle"></i>
-                  </div>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active" href="#">
-                  <div className="nav-icon">
-                    <span>Activo</span>
-                    <i className="bx bxs-user-circle"></i>
-                  </div>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  <div className="nav-icon">
-                    <span>Link</span>
-                    <i className="bx bxs-user-circle"></i>
-                  </div>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link disabled" href="#" aria-disabled="true" tabIndex={-1}>
-                  <div className="nav-icon">
-                    <span>Deshabilitado</span>
-                    <i className="bx bxs-user-circle"></i>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <CodeCopy code={EGcodeWithIconHorizontal} />
+        <CodeBox codeHTML={NAV_HORIZONTAL_ICON}>
+          <div className="col-12 col-lg-8 mx-auto pb-2">
+            <nav>
+              <ul className="nav flex-row nav-pills">
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    <div className="nav-icon">
+                      <i className="bx bxs-user-circle"></i>
+                      <span>Link</span>
+                    </div>
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link active" href="#">
+                    <div className="nav-icon">
+                      <i className="bx bxs-user-circle"></i>
+                      <span>Activo</span>
+                    </div>
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    <div className="nav-icon">
+                      <i className="bx bxs-user-circle"></i>
+                      <span>Link</span>
+                    </div>
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link disabled" href="#" aria-disabled="true" tabIndex={-1}>
+                    <div className="nav-icon">
+                      <i className="bx bxs-user-circle"></i>
+                      <span>Deshabilitado</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </CodeBox>
+        <br />
+        <CodeBox codeHTML={NAV_HORIZONTAL_ICON_RIGHT}>
+          <div className="col-12 col-lg-8 mx-auto pb-2">
+            <nav>
+              <ul className="nav flex-row nav-pills">
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    <div className="nav-icon">
+                      <span>Link</span>
+                      <i className="bx bxs-user-circle"></i>
+                    </div>
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link active" href="#">
+                    <div className="nav-icon">
+                      <span>Activo</span>
+                      <i className="bx bxs-user-circle"></i>
+                    </div>
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    <div className="nav-icon">
+                      <span>Link</span>
+                      <i className="bx bxs-user-circle"></i>
+                    </div>
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link disabled" href="#" aria-disabled="true" tabIndex={-1}>
+                    <div className="nav-icon">
+                      <span>Deshabilitado</span>
+                      <i className="bx bxs-user-circle"></i>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </CodeBox>
       </>
-    )
+    ),
   },
   {
-    id: 'section-4',
+    id: 'section-3',
     title: 'Tamaños',
     content: (
       <>
-        <div className="col-12 col-lg-8 mx-auto pb-2">
-          <nav>
-            <ul className="nav flex-row nav-pills">
-              <li className="nav-item">
-                <a className="nav-link nav-link-lg border-link" href="#"><span>Link</span></a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link border-link" href="#"><span>Link</span></a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link nav-link-sm border-link" href="#"><span>Link</span></a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <CodeCopy code={EGcodeSizesHorizontal} />
+        <CodeBox codeHTML={NAV_HORIZONTAL_SIZES}>
+          <div className="col-12 col-lg-8 mx-auto pb-2">
+            <nav>
+              <ul className="nav flex-row nav-pills">
+                <li className="nav-item">
+                  <a className="nav-link nav-link-lg border-link" href="#">
+                    <span>Link</span>
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link border-link" href="#">
+                    <span>Link</span>
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link nav-link-sm border-link" href="#">
+                    <span>Link</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </CodeBox>
       </>
-    )
+    ),
   },
   {
-    id: 'section-5',
+    id: 'section-4',
     title: 'Con borde',
     content: (
       <>
-        <div className="col-12 col-lg-8 mx-auto pb-2">
-          <nav>
-            <ul className="nav flex-row nav-pills">
-              <li className="nav-item">
-                <a className="nav-link border-link" href="#">
-                  <div className="nav-icon">
-                    <i className="bx bxs-user-circle"></i>
-                    <span>Link</span>
-                  </div>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link border-link active" href="#">
-                  <div className="nav-icon">
-                    <i className="bx bxs-user-circle"></i>
-                    <span>Activo</span>
-                  </div>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link border-link" href="#">
-                  <div className="nav-icon">
-                    <i className="bx bxs-user-circle"></i>
-                    <span>Link</span>
-                  </div>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link border-link disabled" href="#" aria-disabled="true" tabIndex={-1}>
-                  <div className="nav-icon">
-                    <i className="bx bxs-user-circle"></i>
-                    <span>Deshabilitado</span>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <CodeCopy code={EGcodeSizesHorizontal} />
+        <CodeBox codeHTML={NAV_HORIZONTAL_BORDER}>
+          <div className="col-12 col-lg-8 mx-auto pb-2">
+            <nav>
+              <ul className="nav flex-row nav-pills">
+                <li className="nav-item">
+                  <a className="nav-link border-link" href="#">
+                    <div className="nav-icon">
+                      <i className="bx bxs-user-circle"></i>
+                      <span>Link</span>
+                    </div>
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link border-link active" href="#">
+                    <div className="nav-icon">
+                      <i className="bx bxs-user-circle"></i>
+                      <span>Activo</span>
+                    </div>
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link border-link" href="#">
+                    <div className="nav-icon">
+                      <i className="bx bxs-user-circle"></i>
+                      <span>Link</span>
+                    </div>
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link border-link disabled" href="#" aria-disabled="true" tabIndex={-1}>
+                    <div className="nav-icon">
+                      <i className="bx bxs-user-circle"></i>
+                      <span>Deshabilitado</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </CodeBox>
+        <br />
+        <br />
       </>
-    )
-  }
+    ),
+  },
 ];
 
 const NavHorizontalDocs: React.FC = () => {
-  return (
-    <DocumentationTemplate
-      sections={sections}
-      title="Navegación horizontal"
-      description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the."
-    />
-  );
+  return <DocumentationTemplate sections={sections} />;
 };
 
 export default NavHorizontalDocs;

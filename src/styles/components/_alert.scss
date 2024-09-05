@@ -1,35 +1,34 @@
-/* === Variable and mixins overides === */
+/* === Variables  === */
 
-$alert-padding-y: 1rem;
-$alert-padding-x: 1.5rem;
-$alert-padding-x-mobile: 1rem;
-$alert-padding-left: 3.75rem;
-$alert-padding-left-mobile: 3.25rem;
+$alert-padding: 1rem 1.5rem 1rem 3.75rem;
+$alert-padding-mobile: 1rem 1rem 1rem 3.25rem;
 
-$alert-border-width: 2px;
-
-$alert-border-level: 0;
+$alert-dismissible-padding-right: 3.75rem;
+$alert-dismissible-padding-right-mobile: 3.25rem;
 
 $alert-icon-size: 1.5rem;
-$alert-icon-position-top: 1rem;
-$alert-icon-position-left: 1.5rem;
-$alert-icon-position-left-mobile: 1rem;
-$alert-close-btn-width: 5.5rem;
+$alert-icon-position: 1rem 0 0 1.5rem;
+$alert-icon-position-mobile: 1rem 0 0 1rem;
+
 $alert-text-distance: 0.5rem;
 
-// Íconos para cada tipo de alerta
+/* === Íconos para cada tipo de alerta === */
 
-$close-icon: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' height='24' width='24' viewBox='0 0 24 24' style='fill: rgba(0, 0, 0, 1)'><path d='m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z'></path></svg>");
+$close-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18.2997 5.70997C17.9097 5.31997 17.2797 5.31997 16.8897 5.70997L11.9997 10.59L7.10973 5.69997C6.71973 5.30997 6.08973 5.30997 5.69973 5.69997C5.30973 6.08997 5.30973 6.71997 5.69973 7.10997L10.5897 12L5.69973 16.89C5.30973 17.28 5.30973 17.91 5.69973 18.3C6.08973 18.69 6.71973 18.69 7.10973 18.3L11.9997 13.41L16.8897 18.3C17.2797 18.69 17.9097 18.69 18.2997 18.3C18.6897 17.91 18.6897 17.28 18.2997 16.89L13.4097 12L18.2997 7.10997C18.6797 6.72997 18.6797 6.08997 18.2997 5.70997Z" fill="%23002733"/></svg>');
+$close-icon-size: 1.5rem;
+$close-icon-margin: 1rem 1.5rem 0 0;
+$close-icon-margin-mobile: 1rem 1rem 0 0;
 
 $alert-icons: (
-  'success': url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(38, 135, 74, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"></path></svg>'),
-  'danger': url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(201, 59, 59, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm4.207 12.793-1.414 1.414L12 13.414l-2.793 2.793-1.414-1.414L10.586 12 7.793 9.207l1.414-1.414L12 10.586l2.793-2.793 1.414 1.414L13.414 12l2.793 2.793z"></path></svg>'),
-  'warning': url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 168, 46, 1);transform: ;msFilter:;"><path d="M12.884 2.532c-.346-.654-1.422-.654-1.768 0l-9 17A.999.999 0 0 0 3 21h18a.998.998 0 0 0 .883-1.467L12.884 2.532zM13 18h-2v-2h2v2zm-2-4V9h2l.001 5H11z"></path></svg>'),
-  'primary': url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(51, 106, 204, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>'),
-  'info': url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 133, 173, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>')
+  'success':
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM9.29 16.29L5.7 12.7C5.60742 12.6074 5.53398 12.4975 5.48387 12.3765C5.43377 12.2556 5.40798 12.1259 5.40798 11.995C5.40798 11.8641 5.43377 11.7344 5.48387 11.6135C5.53398 11.4925 5.60742 11.3826 5.7 11.29C5.79258 11.1974 5.90249 11.124 6.02346 11.0739C6.14442 11.0238 6.27407 10.998 6.405 10.998C6.53593 10.998 6.66558 11.0238 6.78654 11.0739C6.90751 11.124 7.01742 11.1974 7.11 11.29L10 14.17L16.88 7.29C17.067 7.10302 17.3206 6.99798 17.585 6.99798C17.8494 6.99798 18.103 7.10302 18.29 7.29C18.477 7.47698 18.582 7.73057 18.582 7.995C18.582 8.25943 18.477 8.51302 18.29 8.7L10.7 16.29C10.6075 16.3827 10.4976 16.4563 10.3766 16.5064C10.2557 16.5566 10.126 16.5824 9.995 16.5824C9.86403 16.5824 9.73435 16.5566 9.61338 16.5064C9.4924 16.4563 9.38251 16.3827 9.29 16.29Z" fill="%2326874A"/></svg>'),
+  'danger':
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.47 2 2 6.47 2 12C2 17.53 6.47 22 12 22C17.53 22 22 17.53 22 12C22 6.47 17.53 2 12 2ZM16.3 16.3C16.2075 16.3927 16.0976 16.4663 15.9766 16.5164C15.8557 16.5666 15.726 16.5924 15.595 16.5924C15.464 16.5924 15.3343 16.5666 15.2134 16.5164C15.0924 16.4663 14.9825 16.3927 14.89 16.3L12 13.41L9.11 16.3C8.92302 16.487 8.66943 16.592 8.405 16.592C8.14057 16.592 7.88698 16.487 7.7 16.3C7.51302 16.113 7.40798 15.8594 7.40798 15.595C7.40798 15.4641 7.43377 15.3344 7.48387 15.2135C7.53398 15.0925 7.60742 14.9826 7.7 14.89L10.59 12L7.7 9.11C7.51302 8.92302 7.40798 8.66943 7.40798 8.405C7.40798 8.14057 7.51302 7.88698 7.7 7.7C7.88698 7.51302 8.14057 7.40798 8.405 7.40798C8.66943 7.40798 8.92302 7.51302 9.11 7.7L12 10.59L14.89 7.7C14.9826 7.60742 15.0925 7.53398 15.2135 7.48387C15.3344 7.43377 15.4641 7.40798 15.595 7.40798C15.7259 7.40798 15.8556 7.43377 15.9765 7.48387C16.0975 7.53398 16.2074 7.60742 16.3 7.7C16.3926 7.79258 16.466 7.90249 16.5161 8.02346C16.5662 8.14442 16.592 8.27407 16.592 8.405C16.592 8.53593 16.5662 8.66558 16.5161 8.78654C16.466 8.90751 16.3926 9.01742 16.3 9.11L13.41 12L16.3 14.89C16.68 15.27 16.68 15.91 16.3 16.3Z" fill="%23CC3333"/></svg>'),
+  'warning':
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4.47012 21H19.5301C21.0701 21 22.0301 19.33 21.2601 18L13.7301 4.98999C12.9601 3.65999 11.0401 3.65999 10.2701 4.98999L2.74012 18C1.97012 19.33 2.93012 21 4.47012 21ZM12.0001 14C11.4501 14 11.0001 13.55 11.0001 13V11C11.0001 10.45 11.4501 9.99999 12.0001 9.99999C12.5501 9.99999 13.0001 10.45 13.0001 11V13C13.0001 13.55 12.5501 14 12.0001 14ZM13.0001 18H11.0001V16H13.0001V18Z" fill="%23FF9500"/></svg>'),
+  'info':
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 17C11.45 17 11 16.55 11 16V12C11 11.45 11.45 11 12 11C12.55 11 13 11.45 13 12V16C13 16.55 12.55 17 12 17ZM13 9H11V7H13V9Z" fill="%230086AD"/></svg>'),
 );
-
-/* === Custom variables and mixins === */
 
 @mixin alert-icon($type) {
   &::before {
@@ -38,21 +37,23 @@ $alert-icons: (
 }
 
 @mixin alert-types($type) {
-  background-color: map-get($theme-color-light-bg, $type);
+  background-color: map-get($semantic-colors-light-bg, $type);
   border: none;
-  outline: 2px solid map-get($theme-colors, $type);
-  outline-offset: -2px;
-  border-radius: 0.5rem;
+  outline: 0.125rem solid map-get($theme-colors, $type);
+  outline-offset: -0.125rem;
+  border-radius: $border-radius-lg;
 }
-
 
 /* === Custom styles === */
 
 .alert {
   counter-reset: section;
-  padding-left: $alert-padding-left;
+  padding: $alert-padding-mobile;
   word-break: break-word;
   margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 
   &::before {
     content: '';
@@ -61,9 +62,8 @@ $alert-icons: (
     background-size: contain;
     width: $alert-icon-size;
     height: $alert-icon-size;
-    inset: $alert-icon-position-top 0 0 $alert-icon-position-left;
+    inset: $alert-icon-position-mobile;
   }
-
 
   @each $name, $color in $theme-colors {
     &.alert-#{$name} {
@@ -73,23 +73,22 @@ $alert-icons: (
     }
   }
 
-  p,
-  ol {
-    margin-bottom: $alert-text-distance;
+  &.alert-primary,
+  &.alert-secondary,
+  &.alert-light,
+  &.alert-dark {
+    outline: none;
+    background-color: transparent;
+  }
+
+  * {
+    margin-bottom: 0;
   }
 
   ol {
     color: $body-color;
     padding-left: 0;
     list-style: none;
-
-    &.list-links {
-      color: $blue;
-
-      span {
-        text-decoration: underline;
-      }
-    }
 
     li {
       margin-bottom: $alert-text-distance;
@@ -98,52 +97,44 @@ $alert-icons: (
         counter-increment: section;
         content: counter(section) '. ';
       }
-    }
-  }
 
-  *:last-child {
-    margin-bottom: 0;
-  }
-
-  a:not(.btn) {
-    color: $blue;
-
-    &:visited {
-      color: $blue;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 
   &.alert-dismissible {
-    padding-right: 3.75rem;
+    padding-right: $alert-dismissible-padding-right-mobile;
 
-    p {
-      margin-bottom: 0;
-    }
-
-    .close {
-      color: $body-color;
+    .btn-close {
       opacity: 1;
+      background-image: $close-icon;
+      background-size: cover;
+      height: $close-icon-size;
+      width: $close-icon-size;
+      border-radius: $border-radius-sm;
+      margin: $close-icon-margin-mobile;
       padding: 0;
-      margin: $alert-padding-y $alert-padding-x 0 0;
-      height: 1.5rem;
+
+      &:focus {
+        box-shadow: $focus-box-shadow;
+      }
     }
   }
-}
 
-@include media-breakpoint-down(sm) {
-  .alert {
-    padding-left: $alert-padding-left-mobile;
-    padding-right: $alert-padding-x-mobile;
+  @include media-breakpoint-up(xl) {
+    padding: $alert-padding;
 
     &::before {
-      left: $alert-icon-position-left-mobile;
+      inset: $alert-icon-position;
     }
 
     &.alert-dismissible {
-      padding-right: 3.25rem;
+      padding-right: $alert-dismissible-padding-right;
 
-      .close {
-        margin-right: $alert-padding-x-mobile;
+      .btn-close {
+        margin: $close-icon-margin;
       }
     }
   }

@@ -1,0 +1,51 @@
+$breadcrumb-divider: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="chevron_right"><path id="Vector" d="M8.99953 6.71051C8.60953 7.10051 8.60953 7.73051 8.99953 8.12051L12.8795 12.0005L8.99953 15.8805C8.60953 16.2705 8.60953 16.9005 8.99953 17.2905C9.38953 17.6805 10.0195 17.6805 10.4095 17.2905L14.9995 12.7005C15.3895 12.3105 15.3895 11.6805 14.9995 11.2905L10.4095 6.70051C10.0295 6.32051 9.38953 6.32051 8.99953 6.71051Z" fill="%23101E37"/></g></svg>');
+$breadcrumb-divider-width: 1.5rem;
+$breadcrumb-divider-height: 1.5rem;
+$breadcrumb-divider-margin-right: 0.25rem;
+$breadcrumb-divider-padding-right: 0;
+$breadcrumb-bg: transparent;
+$breadcrumb-item-padding-right: 0.5rem;
+$breadcrumb-padding-x: 0;
+
+.breadcrumb .breadcrumb-item {
+  &:not(:last-child) {
+    padding-right: $breadcrumb-item-padding-right;
+  }
+
+  a {
+    max-width: 16rem;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &::before {
+    width: $breadcrumb-divider-width;
+    min-width: $breadcrumb-divider-width;
+    height: $breadcrumb-divider-height;
+    margin-right: $breadcrumb-divider-margin-right;
+    padding-right: $breadcrumb-divider-padding-right;
+  }
+
+  & + .breadcrumb-item {
+    padding-left: 0;
+
+    &::before {
+      content: '';
+      background: transparent $breadcrumb-divider no-repeat center center;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .breadcrumb {
+    .breadcrumb-item:last-child::before {
+      transform: rotate(0.5turn);
+    }
+
+    .breadcrumb-item:not(:last-child) {
+      display: none;
+    }
+  }
+}

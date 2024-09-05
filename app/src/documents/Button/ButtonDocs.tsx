@@ -1,176 +1,295 @@
-'use client'
+'use client';
 
-import React, { useRef } from 'react';
-import { Scrollspy } from "@makotot/ghostui";
-import CodeCopy from "@/components/CodeBox";
-import BoxTemplate from '@/components/Template/Box';
-import HeadingTemplate from '@/components/Template/HeadingTemplate';
+import React from 'react';
+
+import CodeBox from '@/components/CodeBox';
+import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
-import Divisor from '@/components/Template/Divisor';
-import SimpleText from '@/components/Template/SimpleText';
-import { EGcodeWithStrong, EGcodeSimpleAlert, EGcodeCloseAlert } from './code-views';
+
+import {
+  BUTTON_SOLID,
+  BUTTON_OUTLINE,
+  BUTTON_SIZES,
+  BUTTON_DISABLED,
+  BUTTON_ICON,
+  BUTTON_BLOCK,
+  BUTTON_ANCHOR,
+  BUTTON_SPINNER,
+  BUTTON_OUTLINE_SPINNER,
+  BUTTON_ICON_XS,
+} from './code-views';
 
 const ButtonDocs: React.FC = () => {
-
-  const section1Ref = useRef<HTMLDivElement>(null);
-  const section2Ref = useRef<HTMLDivElement>(null);
-  const section3Ref = useRef<HTMLDivElement>(null);
-  const section4Ref = useRef<HTMLDivElement>(null);
-  const section5Ref = useRef<HTMLDivElement>(null);
-
-  return (
-    <BoxTemplate>
-      <div
-        className="col-12"
-      >
-        <Scrollspy sectionRefs={[
-          section1Ref,
-          section2Ref,
-          section3Ref,
-          section4Ref,
-        ]}>
-          {({ currentElementIndexInViewport }) => (
-            <div className='box-scrollspy'>
-              <div className='nav-scrollspy d-none d-lg-block'>
-                <ul
-                  className='scrollspy'
-                  data-cy="nav-wrapper"
-                >
-                  <p className='font-weight-bold mb-1'> On this page
-                  </p>
-                  <li className={currentElementIndexInViewport === 0 ? "active" : ""}><a href="#section-1">Introducción</a></li>
-                  <li className={currentElementIndexInViewport === 1 ? "active" : ""}><a href="#section-2">Simple</a></li>
-                  <li className={currentElementIndexInViewport === 2 ? "active" : ""}><a href="#section-3">Con cierre</a></li>
-                  <li className={currentElementIndexInViewport === 3 ? "active" : ""}><a href="#section-4">Con Lista</a></li>
-                </ul>
-              </div>
-
-              <article className="box-content col-12 col-lg-8">
-                <div data-cy="section-wrapper">
-                  <section id="section-1" ref={section1Ref}>
-                    <HeadingTemplate>
-                      <h1>Botones</h1>
-                    </HeadingTemplate>
-                    <MainDescription description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the." />
-                  </section>
-
-                  <Divisor />
-
-                  <section id="section-2" ref={section2Ref}>
-                    <HeadingTemplate>
-                      <h2 className="mb-4">Simple</h2>
-                    </HeadingTemplate>
-
-                    <div className="col-12 col-lg-8 mx-auto">
-                      <div className="alert alert-info" role="alert">
-                        <p>Esta es la descripción de una alerta de información.</p>
-                      </div>
-                      <br />
-                      <div className="alert alert-primary" role="alert">
-                        <p>Esta es la descripción de una alerta de advertencia.</p>
-                      </div>
-                      <br />
-                      <div className="alert alert-success" role="alert">
-                        <p>Esta es la descripción de una alerta de éxito.</p>
-                      </div>
-                      <br />
-                      <div className="alert alert-danger" role="alert">
-                        <p>Esta es la descripción de una alerta de error.</p>
-                      </div>
-                      <br />
-                    </div>
-                    <CodeCopy code={EGcodeSimpleAlert} />
-                  </section>
-
-                  <Divisor />
-
-                  <section id="section-3" ref={section3Ref}>
-                    <HeadingTemplate>
-                      <h2 className="mb-4">Con cierre</h2>
-                    </HeadingTemplate>
-
-                    <div className="w-50 d-flex flex-column gap-2 mb-3">
-                      <div
-                        className="alert alert-warning alert-dismissible show fade"
-                        role="alert"
-                      >
-                        <p>Esta es la descripción de una alerta de error.</p>
-                        <button
-                          type="button"
-                          className="close"
-                          data-dismiss="alert"
-                          aria-label="Cerrar"
-                        >
-                          <span className="material-icons-round">close</span>
-                        </button>
-                      </div>
-
-                      <p>Nuevo html de B5</p>
-
-                      <div
-                        className="alert alert-warning alert-dismissible fade show"
-                        role="alert"
-                      >
-                        <strong>Holy guacamole!</strong> You should check in on some of those
-                        fields below.
-                        <button
-                          type="button"
-                          className="btn-close"
-                          data-bs-dismiss="alert"
-                          aria-label="Cerrar"
-                        ></button>
-                      </div>
-                    </div>
-
-                    <CodeCopy code={EGcodeCloseAlert} />
-                  </section>
-
-                  <Divisor />
-
-                  <section id="section-4" ref={section4Ref}>
-                    <HeadingTemplate>
-                      <h3 className="mb-4">Con lista</h3>
-                    </HeadingTemplate>
-
-                    <div className="w-50 d-flex flex-column gap-2 mb-3 mx-auto">
-                      <div className="alert alert-danger" role="alert">
-                        <p>
-                          <strong>Este es un destacado de una alerta de error.</strong>
-                          Esta es la descripción de una alerta de error que continua al texto
-                          destacado.
-                        </p>
-                        <ol className="list-links">
-                          <li>
-                            <a href="#">Ancla al error 1</a>
-                          </li>
-                          <li>
-                            <a href="#">Ancla al error 2</a>
-                          </li>
-                          <li>
-                            <a href="#">Ancla al error 3</a>
-                          </li>
-                          <li>
-                            <a href="#">Ancla al error 4</a>
-                          </li>
-                          <li>
-                            <a href="#">Ancla al error 5</a>
-                          </li>
-                        </ol>
-                      </div>
-                    </div>
-
-                    <br />
-
-                    <CodeCopy code={EGcodeWithStrong} />
-                  </section>
-                </div>
-              </article>
+  const sections = [
+    {
+      title: 'Botones',
+      content: (
+        <MainDescription description="Los botones permiten iniciar acciones o navegar a otras páginas. Las etiquetas de los botones expresan qué acción ocurrirá cuando la persona usuaria interactúe con él." />
+      ),
+      h1: true,
+    },
+    {
+      id: 'section-1',
+      title: 'Tipos',
+      content: (
+        <>
+          <CodeBox codeHTML={BUTTON_SOLID}>
+            <div className="d-flex gap-3 justify-content-center flex-wrap">
+              <button type="button" className="btn btn-primary">
+                Primario
+              </button>
+              <button type="button" className="btn btn-secondary">
+                Secundario
+              </button>
+              <button type="button" className="btn btn-success">
+                Éxito
+              </button>
+              <button type="button" className="btn btn-danger">
+                Error
+              </button>
+              <button type="button" className="btn btn-link">
+                Link
+              </button>
             </div>
-          )}
-        </Scrollspy>
-      </div>
-    </BoxTemplate >
-  );
+          </CodeBox>
+          <br />
+          <CodeBox codeHTML={BUTTON_OUTLINE}>
+            <div className="d-flex gap-3 justify-content-center flex-wrap">
+              <button type="button" className="btn btn-outline-primary">
+                Primario
+              </button>
+              <button type="button" className="btn btn-outline-secondary">
+                Secundario
+              </button>
+              <button type="button" className="btn btn-outline-success">
+                Éxito
+              </button>
+              <button type="button" className="btn btn-outline-danger">
+                Error
+              </button>
+              <button type="button" className="btn btn-outline-link">
+                Link
+              </button>
+            </div>
+          </CodeBox>
+          <br />
+          <p>
+            En caso de requerir que un elemento <code>anchor</code> adopte el estilo de un botón, simplemente pueden
+            utilizarse las clases correspondientes de botones.
+          </p>
+          <CodeBox codeHTML={BUTTON_ANCHOR}>
+            <div className="d-flex gap-3 justify-content-center flex-wrap">
+              <a className="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer">
+                Enlace
+              </a>
+              <a className="btn btn-outline-primary" href="#" target="_blank" rel="noopener noreferrer">
+                Enlace
+              </a>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+    {
+      id: 'section-2',
+      title: 'Tamaños',
+      content: (
+        <>
+          <CodeBox codeHTML={BUTTON_SIZES}>
+            <div className="d-flex gap-3 flex-wrap justify-content-center align-items-center">
+              <div>
+                <button type="button" className="btn btn-primary btn-sm">
+                  Chico
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-primary">
+                  Mediano
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-primary btn-lg">
+                  Grande
+                </button>
+              </div>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+    {
+      id: 'section-3',
+      title: 'Estado Deshabilitado',
+      content: (
+        <>
+          <CodeBox codeHTML={BUTTON_DISABLED}>
+            <div className="d-flex gap-3 flex-wrap justify-content-center align-items-center">
+              <div>
+                <button type="button" className="btn btn-primary btn-sm" disabled>
+                  Chico
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-primary" disabled>
+                  Mediano
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-primary btn-lg" disabled>
+                  Grande
+                </button>
+              </div>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+    {
+      id: 'section-4',
+      title: 'Expandible',
+      content: (
+        <>
+          <CodeBox codeHTML={BUTTON_BLOCK}>
+            <div className="col-12 col-lg-6 mx-auto">
+              <button type="button" className="btn btn-primary btn-block">
+                Botón Expandible
+              </button>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+    {
+      id: 'section-5',
+      title: 'Con icono',
+      content: (
+        <>
+          <CodeBox codeHTML={BUTTON_ICON}>
+            <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center">
+              <button type="button" className="btn btn-primary">
+                <i className="bx bxs-info-circle o-icon"></i>
+                Botón
+              </button>
+              <button type="button" className="btn btn-primary" aria-label="Botón">
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  info
+                </span>
+              </button>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+    {
+      id: 'section-6',
+      title: 'Con spinner',
+      content: (
+        <>
+          <CodeBox codeHTML={BUTTON_SPINNER}>
+            <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center">
+              <button type="button" className="btn btn-primary">
+                <div className="spinner-border text-light spinner-border-sm" role="status">
+                  <span className="sr-only">Cargando...</span>
+                </div>
+                Botón
+              </button>
+              <button type="button" className="btn btn-secondary">
+                <div className="spinner-border text-light spinner-border-sm" role="status">
+                  <span className="sr-only">Cargando...</span>
+                </div>
+                Botón
+              </button>
+              <button type="button" className="btn btn-success">
+                <div className="spinner-border text-light spinner-border-sm" role="status">
+                  <span className="sr-only">Cargando...</span>
+                </div>
+                Botón
+              </button>
+              <button type="button" className="btn btn-danger">
+                <div className="spinner-border text-light spinner-border-sm" role="status">
+                  <span className="sr-only">Cargando...</span>
+                </div>
+                Botón
+              </button>
+              <button type="button" className="btn btn-link">
+                <div className="spinner-border text-info spinner-border-sm" role="status">
+                  <span className="sr-only">Cargando...</span>
+                </div>
+                Botón
+              </button>
+            </div>
+          </CodeBox>
+          <br />
+          <CodeBox codeHTML={BUTTON_OUTLINE_SPINNER}>
+            <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center">
+              <button type="button" className="btn btn-outline-primary">
+                <div className="spinner-border text-primary spinner-border-sm" role="status">
+                  <span className="sr-only">Cargando...</span>
+                </div>
+                Botón
+              </button>
+              <button type="button" className="btn btn-outline-secondary">
+                <div className="spinner-border text-secondary spinner-border-sm" role="status">
+                  <span className="sr-only">Cargando...</span>
+                </div>
+                Botón
+              </button>
+              <button type="button" className="btn btn-outline-success">
+                <div className="spinner-border text-success spinner-border-sm" role="status">
+                  <span className="sr-only">Cargando...</span>
+                </div>
+                Botón
+              </button>
+              <button type="button" className="btn btn-outline-danger">
+                <div className="spinner-border text-danger spinner-border-sm" role="status">
+                  <span className="sr-only">Cargando...</span>
+                </div>
+                Botón
+              </button>
+              <button type="button" className="btn btn-outline-link">
+                <div className="spinner-border text-info spinner-border-sm" role="status">
+                  <span className="sr-only">Cargando...</span>
+                </div>
+                Botón
+              </button>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+    {
+      id: 'section-7',
+      title: 'Botón XS - Icono',
+      content: (
+        <>
+          <CodeBox codeHTML={BUTTON_ICON_XS}>
+            <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center">
+              <button type="button" className="btn btn-xs" aria-label="Editar">
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  edit
+                </span>
+              </button>
+              <button type="button" className="btn btn-xs" aria-label="Editar">
+                <i className="bx bxs-trash-alt o-icon"></i>
+              </button>
+              <a href="#" className="btn btn-xs" aria-label="Editar" tabIndex={0}>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  visibility
+                </span>
+              </a>
+              <a href="#" className="btn btn-xs" aria-label="Editar" tabIndex={0}>
+                <i className="bx bxs-download o-icon"></i>
+              </a>
+            </div>
+          </CodeBox>
+          <br />
+          <br />
+        </>
+      ),
+    },
+  ];
+
+  return <DocumentationTemplate sections={sections} />;
 };
 
 export default ButtonDocs;

@@ -1,6 +1,6 @@
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import React from "react";
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import React from 'react';
 
 interface NavItem {
   text: string;
@@ -19,20 +19,16 @@ const NavLayout = ({ items, className }: NavProps) => {
 
   return (
     <nav className={className}>
-      <ul className="nav flex-column nav-pills">
+      <ul className="nav flex-column nav-pills hola">
         {items.map((item, index) => {
-          const isActive = pathname.startsWith(item.url || "#");
+          const isActive = pathname.startsWith(item.url || '#');
 
           return (
             <li className="nav-item" key={index}>
               {item.isDisabled ? (
                 <span className="nav-link disabled">{item.text}</span>
               ) : (
-                <Link
-                  href={item.url || "#"}
-                  className={`nav-link w-100 text-left ${isActive ? "active" : ""
-                    }`}
-                >
+                <Link href={item.url || '#'} className={`nav-link w-100 text-left ${isActive ? 'active' : ''}`}>
                   {item.text}
                 </Link>
               )}

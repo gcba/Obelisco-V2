@@ -1,26 +1,30 @@
 $form-icons: (
-  'search': url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(56, 72, 92, 1);transform: ;msFilter:;"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>'),
-  'valid': url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" style="fill: rgba(38, 135, 74, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"></path></svg>'),
-  'invalid': url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" style="fill: rgba(201, 59, 59, 1);transform: ;msFilter:;"><path d="M11.953 2C6.465 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.493 2 11.953 2zM13 17h-2v-2h2v2zm0-4h-2V7h2v6z"></path></svg>')
+  'search':
+    url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(56, 72, 92, 1);transform: ;msFilter:;"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>'),
+  'valid':
+    url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" style="fill: rgba(38, 135, 74, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"></path></svg>'),
+  'invalid':
+    url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" style="fill: rgba(201, 59, 59, 1);transform: ;msFilter:;"><path d="M11.953 2C6.465 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.493 2 11.953 2zM13 17h-2v-2h2v2zm0-4h-2V7h2v6z"></path></svg>'),
 );
 
 /* === Variable and mixins overides === */
 
-$navbar-padding-y: spaceUnits(3);
-$navbar-padding-y-desktop: spaceUnits(4.5);
+$navbar-padding-y: space-units(3);
+$navbar-padding-y-desktop: space-units(4.5);
 $navbar-brand-padding-y: 0;
 
 /* === Custom variables and mixins === */
 
-$navbar-height-desktop: spaceUnits(21);
-$navbar-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+$navbar-height-desktop: space-units(21);
+$navbar-box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
 
-$navbar-logo-height: spaceUnits(9.5);
-$navbar-logo-width: spaceUnits(18);
-$navbar-logo-sm: spaceUnits(8.5);
+$navbar-logo-height: space-units(9.5);
+$navbar-logo-width: space-units(18);
+$navbar-logo-sm: space-units(8.5);
 
-$navbar-search-with: spaceUnits(84);
-$navbar-search-closed-padding: spaceUnits(2.752) spaceUnits(18) spaceUnits(2.752) spaceUnits(3.752);
+$navbar-search-with: space-units(84);
+$navbar-search-closed-padding: space-units(2.752) space-units(18)
+  space-units(2.752) space-units(3.752);
 
 $navbar-btn-icon-width: 48px;
 $navbar-btn-icon-height: 40px;
@@ -82,7 +86,6 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
           -webkit-text-stroke: 0.25px $white;
           font-weight: 400;
         }
-
         font-weight: 700;
       }
 
@@ -206,8 +209,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
     }
 
     @include media-breakpoint-up(lg) {
-      column-gap: 1.25rem;
-      row-gap: 1rem;
+      gap: 1rem 1.25rem;
     }
 
     @include media-breakpoint-down(md) {
@@ -284,7 +286,6 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
   }
 
   &:has(.navbar-toggler.btn-icon[aria-expanded='true']) {
-
     .navbar-brand.multi-collapse.collapsing,
     .multi-collapse.collapsing:has(.navbar-toggler),
     .bx.bx-search.multi-collapse.collapsing {
@@ -332,7 +333,6 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
     }
 
     @include media-breakpoint-down(sm) {
-
       &:has(> .multi-collapse.collapse.show),
       &:has(> .multi-collapse.collapsing) {
         width: 100%;
@@ -367,9 +367,9 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
         top: 3px;
       }
 
-      @media (max-width: 420px) {
+      @media (width <= 420px) {
         width: 100%;
-        margin-top: 0rem;
+        margin-top: 0;
       }
     }
 
@@ -401,7 +401,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
     box-shadow: 0 0 0 2px $grisulado-50;
     color: $grisulado-900;
     border-radius: 8px;
-    padding: 0px;
+    padding: 0;
     height: $navbar-btn-icon-height;
     margin-right: 10px !important;
     width: $navbar-btn-icon-width;
@@ -488,7 +488,6 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
     &.d-responsive {
       display: block;
     }
-
     margin-left: 10px !important;
   }
 
@@ -557,17 +556,17 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
   }
 
   &.navbar-lg {
-    @media screen and (max-width: 1160px) {
+    @media screen and (width <= 1160px) {
       @include responsive;
     }
   }
 
   &.navbar-md {
-    @media screen and (max-width: 976px) {
+    @media screen and (width <= 976px) {
       @include responsive;
     }
 
-    @media screen and (max-width: 997px) {
+    @media screen and (width <= 997px) {
       .navbar-search {
         &:is(.active-search) {
           width: 100%;
@@ -601,7 +600,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
   }
 
   &:has(.list-group-content):has(.navbar-search) {
-    @media (max-width: 477px) {
+    @media (width <= 477px) {
       .list-group-content.d-responsive {
         order: 4;
         margin-top: 0.625rem;
@@ -615,7 +614,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
       }
     }
 
-    @media (max-width: 477px) {
+    @media (width <= 477px) {
       .navbar-toggler {
         margin-left: auto !important;
       }
@@ -661,7 +660,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
     @include media-breakpoint-up(md) {
       display: flex;
       align-items: center;
-      gap: spaceUnits(2);
+      gap: space-units(2);
 
       &.d-responsive {
         display: none;
@@ -671,7 +670,6 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
     .input-search {
       width: $navbar-search-with;
     }
-
     margin-bottom: 2px;
     margin-top: 2px;
   }
@@ -762,7 +760,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
   .logout {
     height: $navbar-btn-icon-width;
     max-height: $navbar-btn-icon-width;
-    padding: 12px 12px;
+    padding: 12px;
     color: #dc3545;
     text-decoration: none;
     display: none;
@@ -770,7 +768,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
     font-weight: 400;
     line-height: 1.378;
     text-align: end;
-    font-family: 'Nunito', sans-serif;
+    font-family: Nunito, sans-serif;
 
     &:active,
     &:focus {
@@ -784,10 +782,9 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
   .collapse.multi-collapse:has(.navbar-toggler) {
     @include media-breakpoint-up(md) {
       .navbar-toggler {
-        margin-right: 0px !important;
+        margin-right: 0 !important;
         margin-left: 10px !important;
       }
-
       display: block;
     }
   }
@@ -843,7 +840,6 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
       height: 1px;
       overflow: hidden;
 
-
       &:not(:focus) {
         clip: rect(0 0 0 0);
       }
@@ -885,7 +881,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
       padding-right: $navbar-container-padding-x;
     }
 
-    @media(min-width: 1366px) {
+    @media (width >= 1366px) {
       max-width: 100%;
       margin: 0;
     }
@@ -944,7 +940,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
     .navbar-login-mobile {
       margin-right: 1rem;
 
-      @media (max-width: 290px) {
+      @media (width <= 290px) {
         margin-right: 0.25rem;
       }
 
@@ -971,7 +967,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
           padding: 0 1rem 0.25rem;
           position: absolute;
           top: 72px;
-          left: 0px;
+          left: 0;
           z-index: 1050;
           background-color: $white;
           width: 100%;
@@ -998,8 +994,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
         justify-content: flex-end;
         align-items: flex-start;
         flex-wrap: nowrap;
-        column-gap: 1.5rem;
-        row-gap: 0;
+        gap: 0 1.5rem;
         width: 100%;
 
         @include media-breakpoint-down(md) {
@@ -1043,13 +1038,13 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
                   background-color: $grisulado-50;
                 }
 
-                &[type='search']~.reset[type='reset'] {
+                &[type='search'] ~ .reset[type='reset'] {
                   right: 48px;
                   width: 48px;
                   height: 48px;
                   border-radius: 0.5rem;
 
-                  &:after {
+                  &::after {
                     left: 23px;
                   }
                 }
@@ -1065,7 +1060,8 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
                 padding: 0;
                 border: none;
                 border-radius: 0.5rem;
-                background: transparent map-get($form-icons, 'search') no-repeat center center;
+                background: transparent map-get($form-icons, 'search') no-repeat
+                  center center;
                 outline: 0.125rem solid transparent;
                 outline-offset: -2px;
 
@@ -1141,7 +1137,6 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
         @include media-breakpoint-up(lg) {
           display: none;
         }
-
         width: 100%;
         margin-bottom: 1rem;
         border-top: 1px solid $grisulado-50;

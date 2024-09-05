@@ -1,0 +1,17 @@
+{
+  "extends": [
+      "stylelint-config-standard-scss",
+      "stylelint-config-prettier-scss"
+  ],
+  "rules": {
+    "scss/dollar-variable-empty-line-before": null,
+    "declaration-empty-line-before": "never" ,
+    "comment-empty-line-before": null,
+    "scss/double-slash-comment-whitespace-inside": null,
+    "color-hex-length": null,
+    "scss/at-extend-no-missing-placeholder": null,
+    "no-descending-specificity": null,
+    "scss/no-global-function-names": null
+  },
+  "ignoreFiles": ["**/node_modules/**", "**/dist/**", "**/app/**"]
+}

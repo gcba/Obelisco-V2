@@ -1,0 +1,163 @@
+/* === Variable and mixins  === */
+$checkbox-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" style="&%2310;"><rect x="1" y="1" width="22" height="22" rx="2" fill="" stroke="" stroke-width="2" style="&%2310;"/><path d="M9.1725 16.1625L5.7025 12.6925C5.3125 12.3025 4.6825 12.3025 4.2925 12.6925C3.9025 13.0825 3.9025 13.7125 4.2925 14.1025L8.4725 18.2825C8.8625 18.6725 9.4925 18.6725 9.8825 18.2825L20.4625 7.7025C20.8525 7.3125 20.8525 6.6825 20.4625 6.2925C20.0725 5.9025 19.4425 5.9025 19.0525 6.2925L9.1725 16.1625Z" fill="white"/></svg>');
+
+// Mixin para radio y checkbox
+@mixin form-check($type) {
+  @extend .form-check;
+  position: relative;
+  display: block;
+  width: fit-content;
+  padding: 0;
+  margin-bottom: 0;
+
+  &:hover {
+    color: $hover-color;
+    cursor: pointer;
+    .form-#{$type}-label,
+    .form-#{$type}-input {
+      cursor: pointer;
+    }
+    .form-#{$type}-label {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+    }
+    .form-#{$type}-input {
+      border-color: $hover-color;
+
+      &:checked {
+        background-color: $disabled-text;
+      }
+
+      &.is-invalid {
+        border-color: $hover-color;
+      }
+    }
+  }
+
+  .form-#{$type}-input {
+    @extend .form-check-input;
+    float: unset;
+    height: 1.25rem; //20px
+    width: 1.25rem; //20px
+    max-width: 1.25rem; //20px
+    border: 0.125rem solid $body-color;
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+    margin: 0.125rem 0.625rem; //2px 10px
+    background-color: transparent;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      border-color: $body-color;
+
+      ~ .form-#{$type}-label {
+        padding-right: 0.25rem;
+        box-shadow: $focus-box-shadow;
+        outline: $outline-transparent;
+
+        &[aria-label] {
+          padding-right: 0;
+        }
+      }
+    }
+
+    &:checked:not(:disabled) {
+      border-color: $active-color;
+      background-color: $active-color;
+    }
+
+    &:disabled,
+    &.disabled {
+      border-color: $disabled-text;
+      opacity: 1;
+      cursor: not-allowed;
+
+      &:checked {
+        background-color: $disabled-text;
+      }
+
+      ~ .form-#{$type}-label {
+        color: $disabled-text;
+        text-decoration: none;
+        cursor: not-allowed;
+      }
+    }
+
+    &:active {
+      background-color: unset;
+      filter: brightness(100%);
+    }
+
+    &.is-invalid {
+      border-color: $danger;
+
+      &:checked {
+        border-color: $active-color;
+        background-color: $active-color;
+      }
+
+      &:focus,
+      &:focus-visible {
+        box-shadow: none;
+      }
+    }
+  }
+
+  .form-#{$type}-label {
+    padding: 0.5rem 0;
+    padding-left: 2.5rem; //40px
+    border-radius: $border-radius-lg;
+    min-height: 2.5rem;
+  }
+
+  &.reverse {
+    .form-#{$type}-input {
+      left: unset;
+      right: 0;
+
+      &:focus {
+        ~ .form-#{$type}-label {
+          padding-right: 2.5rem; //40px
+          box-shadow: $focus-box-shadow;
+        }
+      }
+    }
+
+    .form-#{$type}-label {
+      padding-right: 2.5rem; //40px
+      padding-left: 0.25rem;
+    }
+  }
+}
+
+// Radio
+.form-radio {
+  @include form-check('radio');
+
+  .form-radio-input {
+    &:checked {
+      background-image: none;
+      box-shadow: inset 0 0 0 3.4px $white;
+      outline: 0.25rem solid transparent;
+      outline-offset: -0.625rem;
+    }
+
+    &.is-invalid:checked {
+      box-shadow: inset 0 0 0 3.4px $white;
+    }
+  }
+}
+
+// Checkbox
+.form-checkbox {
+  @include form-check('checkbox');
+
+  .form-checkbox-input {
+    &:checked {
+      background-image: $checkbox-image;
+      box-shadow: none;
+    }
+  }
+}

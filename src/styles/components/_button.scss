@@ -1,7 +1,262 @@
 /* ------ Boton link ------ */
+$btn-link-color: $sky-700;
 $btn-link-bg: $white;
-$btn-link-bg-hover: $sky-50;
 $btn-link-bg-active: $sky-100;
-/* $ghost: $white;
-$ghost-hover: $sky-50;
-$ghost-active: $sky-100; */
+
+/* === Custom variables and mixins === */
+$btn-padding-sm: 0.25rem 0.5rem;
+$btn-padding-md: 0.5rem 1rem;
+$btn-padding-lg: 0.75rem 1.25rem;
+
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    'link': $btn-link-color,
+  )
+);
+
+$theme-color-btn-bg-hover: (
+  primary: $blue-600,
+  secondary: $blue-950,
+  danger: $red-600,
+  success: $green-700,
+  link: $sky-50,
+);
+
+/* === Custom styles === */
+@mixin btn-disabled {
+  &.disabled,
+  &:disabled {
+    background-color: $disabled-bg;
+    outline-color: $disabled-bg;
+    color: $disabled-text;
+    pointer-events: none;
+    opacity: 1;
+  }
+}
+
+@mixin btn-without-styles {
+  color: $body-color;
+  background-color: $white;
+  outline-color: $white;
+
+  &:hover,
+  &.hover,
+  &:visited,
+  &:focus,
+  &.focus,
+  &:not(:disabled, .disabled):active,
+  &:not(:disabled, .disabled).active {
+    color: $body-color;
+    background-color: $white;
+    outline-color: $white;
+    box-shadow: none;
+  }
+}
+
+.btn {
+  @extend .headline-md; // Nunito, 18px, 24px
+  font-weight: $font-weight-bold; // 700
+  padding: $btn-padding-md;
+  border-radius: $border-radius-lg; // 0.5rem
+  min-height: 2.5rem; // 40px
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+
+  // Estilos para icono en botón
+  .o-icon {
+    font-size: 1rem;
+  }
+
+  // Button Sizes
+  &-sm {
+    min-height: 2rem; // 32px
+    padding: $btn-padding-sm;
+  }
+
+  &-lg {
+    min-height: 3rem; // 48px
+    padding: $btn-padding-lg;
+
+    // Estilos para icono en botón grande
+    .o-icon {
+      font-size: 1.25rem;
+    }
+  }
+
+  //Boton xs solo con icono, para tabla
+  &-xs {
+    min-height: 1.75rem; // 48px
+    padding: 0.125rem; //2px
+    width: 1.75rem;
+    max-width: 1.75rem;
+    height: 1.75rem;
+    border-radius: $border-radius-sm; //.25rem
+    border: none;
+    outline: $outline-transparent-subtle;
+
+    // Estilos para icono en botón grande
+    .o-icon {
+      font-size: 1.5rem;
+      width: 1.5rem;
+      max-width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    &:hover,
+    &.hover {
+      background-color: $grisulado-100;
+    }
+
+    &:focus,
+    &.focus {
+      box-shadow: $focus-box-shadow;
+      border-radius: $border-radius-sm; //.25rem
+      text-decoration: none;
+      outline: $outline-transparent;
+    }
+
+    &:active,
+    &.active {
+      box-shadow: none;
+    }
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color},
+  .btn-outline-#{$color} {
+    color: $white;
+    text-decoration: none;
+    border: none;
+    outline: 0.125rem solid map-get($theme-colors, $color);
+    outline-offset: -0.125rem;
+    transition: all ease-in-out 50ms;
+
+    &:hover,
+    &.hover {
+      outline-color: transparent;
+      background-color: map-get($theme-color-btn-bg-hover, $color);
+    }
+
+    &:visited {
+      color: $white;
+    }
+
+    &:focus,
+    &.focus,
+    &:focus-visible {
+      color: $white;
+      outline: $outline-transparent;
+      box-shadow: $focus-box-shadow;
+      text-decoration: none;
+      background-color: map-get($theme-color-btn-bg-hover, $color);
+      @if $color == 'danger' {
+        box-shadow: $focus-box-shadow-danger;
+      }
+    }
+
+    &:not(:disabled, .disabled):active,
+    &:not(:disabled, .disabled).active {
+      outline: $outline-transparent-subtle;
+      background-color: map-get($theme-color-btn-bg-hover, $color);
+      box-shadow: none;
+
+      &:focus,
+      &.focus {
+        box-shadow: $focus-box-shadow;
+        text-decoration: none;
+        @if $color == 'danger' {
+          box-shadow: $focus-box-shadow-danger;
+        }
+      }
+    }
+
+    @include btn-disabled;
+
+    @if $color == 'link' {
+      color: $btn-link-color;
+      background-color: $white;
+      outline-color: $white;
+
+      &:hover,
+      &.hover,
+      &:visited,
+      &:focus,
+      &.focus {
+        color: $btn-link-color;
+      }
+
+      &:not(:disabled, .disabled):active,
+      &:not(:disabled, .disabled).active {
+        background-color: $btn-link-bg-active;
+        color: $btn-link-color;
+      }
+    }
+    @if $color == 'warning' or $color == 'dark' or $color == 'light' {
+      @include btn-without-styles;
+    }
+  }
+
+  .btn-outline-#{$color} {
+    color: map-get($theme-colors, $color);
+    @if $color == 'link' {
+      color: $btn-link-color;
+      outline-color: $btn-link-color;
+    }
+
+    &:visited {
+      color: map-get($theme-colors, $color);
+      @if $color == 'link' {
+        color: $btn-link-color;
+      }
+    }
+
+    &:hover,
+    &.hover,
+    &:focus,
+    &.focus {
+      color: $white;
+      @if $color == 'link' {
+        color: $btn-link-color;
+      }
+    }
+
+    @if $color == 'warning' or $color == 'dark' or $color == 'light' {
+      @include btn-without-styles;
+    }
+  }
+}
+
+a.btn {
+  text-decoration: none;
+}
+
+//Botón expandible
+.btn-block {
+  width: 100%;
+}
+
+//Botón con spinner
+/* .btn-icon {
+  //Botón con spinner
+  &:focus,
+  &.focus,
+  &:hover,
+  &.hover,
+  &:active,
+  &.active {
+    &:is(.btn-outline-secondary, .btn-outline-success, .btn-outline-danger) {
+      .spinner-border {
+        border-color: $white;
+        border-right-color: $grisulado-300;
+      }
+    }
+    .spinner-border:not(.text-dark) {
+      border-color: $white;
+      border-right-color: $grisulado-300;
+    }
+  }
+} */

@@ -1,3 +1,5 @@
+// Importa todos los documentos que contienen la explicación de cada componente.
+// Estos documentos serán renderizados dinámicamente dependiendo del componente que se seleccione.
 import AccessDocs from '@/documents/Access/AccessDocs';
 import AlertDocs from '@/documents/Alert/AlertDocs';
 import BadgeDocs from '@/documents/Badge/BadgeDocs';
@@ -10,7 +12,7 @@ import CardDocs from '@/documents/Card/CardDocs';
 import CollapseDocs from '@/documents/Collapse/CollapseDocs';
 import ColorsDocs from '@/documents/Colors/ColorsDocs';
 import DropdownNavDocs from '@/documents/DropdownNav/DropdownNavDocs';
-import DropdownSelDocs from '@/documents/DropdownSel/DropdownSelDocs';
+import DropdownSelDocs from '@/documents/DropdownSel/DropdownSelDocs';  
 import FooterDocs from '@/documents/Footer/FooterDocs';
 import FormTextDocs from '@/documents/Form-text/FormText';
 import FormSearchDocs from '@/documents/FormSearch/FormSearch';
@@ -40,6 +42,9 @@ import TypographyDocs from '@/documents/Typography/TypographyDocs';
 import { notFound } from 'next/navigation';
 import React from 'react';
 
+// Un mapa que asocia un nombre de componente con el componente JSX correspondiente.
+// Cuando se reciba el nombre de un componente, se utilizará este mapa para obtener
+// y renderizar la documentación adecuada para ese componente.
 const componentMap: Record<string, JSX.Element | null> = {
   alert: <AlertDocs />,
   access: <AccessDocs />,
@@ -82,7 +87,11 @@ const componentMap: Record<string, JSX.Element | null> = {
   'steps-form': <StepsFormDocs />,
 };
 
+// Esta función genera un conjunto de parámetros estáticos para las rutas dinámicas.
+// Retorna una lista de nombres de componentes que serán usados para generar las páginas de documentación
+// correspondientes de forma estática (es decir, pre-renderizadas en tiempo de construcción).
 export async function generateStaticParams(): Promise<Array<{ componentName: string }>> {
+  // Lista de nombres de componentes que tienen documentación asociada
   const componentNames: string[] = [
     'alert',
     'access',
@@ -116,19 +125,25 @@ export async function generateStaticParams(): Promise<Array<{ componentName: str
     'table',
   ];
 
+  // Devuelve un array de objetos donde cada uno tiene el nombre de un componente,
+  // que será utilizado como parámetro para generar rutas dinámicas para cada componente.
   return componentNames.map((name) => ({
     componentName: name,
   }));
 }
 
+// Componente que representa una página dinámica que renderiza la documentación
+// de un componente basado en el parámetro de la URL (el nombre del componente).
 export default function ComponentPage({ params }: { params: { componentName: string } }) {
-  const { componentName } = params;
+  const { componentName } = params; // Extrae el nombre del componente de los parámetros
 
-  const component = componentMap[componentName];
+  const component = componentMap[componentName]; // Busca la documentación correspondiente en el mapa
 
+  // Si el componente no existe en el mapa, muestra una página de error 404
   if (!component) {
     return notFound();
   }
 
+  // Si el componente se encuentra, lo renderiza
   return <>{component}</>;
 }

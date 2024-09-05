@@ -440,8 +440,7 @@ const AccessDocs: React.FC = () => {
                 <div className="col-12 col-xl-8">
                   <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias quo repellendus earum dolorem,
-                    eos ex reprehenderit labore consequuntur, nemo velit quod adipisci laborum saepe officiis culpa
-                    doloremque nulla obcaecati sapiente.
+                    eos ex reprehenderit labore consequuntur, nemo velit quod adipisci laborum saepe officiis culpa.
                   </p>
                   <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias quo repellendus earum dolorem,

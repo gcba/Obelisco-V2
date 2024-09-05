@@ -1,20 +1,19 @@
 /* === Variable and mixins overides === */
-$modal-header-padding-x: space-units(6);
-$modal-header-padding-y: space-units(6);
+$modal-header-padding-x: 0.25rem * 6;
+$modal-header-padding-y: 0.25rem * 6;
 $modal-header-padding: $modal-header-padding-y $modal-header-padding-x;
-$modal-inner-padding-x: space-units(6);
-$modal-inner-padding-y: space-units(4);
+$modal-inner-padding-x: 0.25rem * 6;
+$modal-inner-padding-y: 0.25rem * 4;
 $modal-inner-padding: $modal-inner-padding-y $modal-inner-padding-x;
 $modal-inner-padding-bottom: 1.125rem;
-$modal-footer-margin-between: space-units(3);
-$modal-content-border-radius: space-units(2);
+$modal-footer-margin-between: 0.25rem * 3;
+$modal-content-border-radius: 0.25rem * 2;
 $modal-sm: 340px;
 $modal-mobile: 328px;
 $modal-dialog-margin-y-sm-up: 3rem;
 
 /* === Custom variables and mixins === */
 .modal {
-  //?new
   .modal-sm {
     min-width: 340px;
   }
@@ -40,8 +39,6 @@ $modal-dialog-margin-y-sm-up: 3rem;
       padding: 0 0 0.5rem;
       display: flex;
       flex-direction: column;
-
-      //?new
       align-items: flex-start;
       box-shadow: 0 1px 0 0 $grisulado-50;
 

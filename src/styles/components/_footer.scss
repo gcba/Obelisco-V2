@@ -1,19 +1,19 @@
 /* === Custom variables and mixins === */
 
-$footer-padding-y: spaceUnits(10);
-$footer-legal-margin-bottom: spaceUnits(10);
+$footer-padding-y: 0.25rem * 10;
+$footer-legal-margin-bottom: 0.25rem * 10;
 
-$footer-padding-y-sm: spaceUnits(8);
-$footer-legal-margin-bottom-sm: spaceUnits(6);
+$footer-padding-y-sm: 0.25rem * 8;
+$footer-legal-margin-bottom-sm: 0.25rem * 6;
 
-$footer-border-width: spaceUnits(1);
+$footer-border-width: 0.25rem * 1;
 $footer-border-color: $blue;
 
-$footer-link-separation: spaceUnits(4);
-$footer-link-separation-phone: spaceUnits(4);
-$footer-link-separation-redes: spaceUnits(4);
-$footer-icon-separation: spaceUnits(1);
-$footer-icon-size: spaceUnits(6);
+$footer-link-separation: 0.25rem * 4;
+$footer-link-separation-phone: 0.25rem * 4;
+$footer-link-separation-redes: 0.25rem * 4;
+$footer-icon-separation: 0.25rem * 1;
+$footer-icon-size: 0.25rem * 6;
 
 $divider-margin: 2.5rem 0 2.5rem;
 $divider-border: 0.125rem solid $grisulado-700;
@@ -41,10 +41,10 @@ $footer-info-gap-mobile: 1rem;
     font-size: 1.125rem;
     line-height: 1.5rem;
     font-weight: $font-weight-bold;
-    margin-bottom: spaceUnits(2);
+    margin-bottom: 0.25rem * 2;
 
     @include media-breakpoint-down(sm) {
-      margin-bottom: spaceUnits(4);
+      margin-bottom: 0.25rem * 4;
     }
   }
 
@@ -124,7 +124,7 @@ $footer-info-gap-mobile: 1rem;
 
     @include media-breakpoint-down(sm) {
       display: block;
-      margin-bottom: spaceUnits(4);
+      margin-bottom: 0.25rem * 4;
       &.phone-items,
       &.redes-items {
         margin-right: 0;

@@ -38,11 +38,11 @@ npm update @gcba/obelisco-v2
 
 ```sh
 
-<link href="https://gcba.github.io/Obelisco/obelisco.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gcba/Obelisco-v2@main/dist/styles.css">
 
 ```
 
-## importación
+## Importación
 
 Importar los estilos en el archivo principal del proyecto:
 

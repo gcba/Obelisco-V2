@@ -103,7 +103,8 @@ hr {
       }
     }
   }
-  .box-content section:last-child {
+
+  .box-content .box-section:last-child {
     min-height: calc(100vh - 83px);
   }
 }
@@ -137,6 +138,7 @@ hr {
     font-weight: 700;
     font-size: 1rem;
   }
+
   div[data-icon] {
     color: #26874a;
   }
@@ -186,6 +188,7 @@ hr {
     margin-bottom: 1.5rem;
   }
 }
+
 .box-content {
   width: 100%;
 }

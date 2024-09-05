@@ -20,7 +20,7 @@ const FooterDocs: React.FC = () => {
       title: 'Completo',
       content: (
         <CodeBox codeHTML={FOOTER}>
-          <div className="storybook__container-footer">
+          <div className="px-4">
             <h2 className="sr-only">Navegación de pie de página</h2>
             <footer className="main-footer">
               <div className="container">
@@ -180,7 +180,7 @@ const FooterDocs: React.FC = () => {
       title: 'Solo legales',
       content: (
         <CodeBox codeHTML={FOOTER}>
-          <div className="storybook__container-footer">
+          <div className="px-4">
             <h2 className="sr-only">Navegación de pie de página</h2>
             <footer className="main-footer">
               <div className="container">
@@ -262,7 +262,7 @@ const FooterDocs: React.FC = () => {
       title: 'Con indicador',
       content: (
         <CodeBox codeHTML={FOOTER}>
-          <div className="storybook__container-footer">
+          <div className="px-4">
             <h2 className="sr-only">Navegación de pie de página</h2>
             <div className="footer-info">
               <div className="container">

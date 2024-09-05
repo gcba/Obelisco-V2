@@ -43,8 +43,8 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections 
       window.removeEventListener('scroll', handleScroll);
     };
   }, [handleScroll]);
-  
-  const defaultTitle = sections.some(section => section.defaultTitle) ? 'Obelisco' : 'Variantes';
+
+  const defaultTitle = sections.some((section) => section.defaultTitle) ? 'Obelisco' : 'Variantes';
 
   return (
     <Scrollspy sectionRefs={sectionRefs} offset={84}>

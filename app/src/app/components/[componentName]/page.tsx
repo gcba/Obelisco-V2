@@ -38,9 +38,9 @@ import TabsDocs from '@/documents/Tabs/TabsDocs';
 import TooltipDocs from '@/documents/Tooltip/TooltipDocs';
 import TypographyDocs from '@/documents/Typography/TypographyDocs';
 import { notFound } from 'next/navigation';
+import React from 'react';
 
-// davis: se mapean las url con componentes
-const componentMap: { [key: string]: React.ReactNode } = {
+const componentMap: Record<string, JSX.Element | null> = {
   alert: <AlertDocs />,
   access: <AccessDocs />,
   badge: <BadgeDocs />,
@@ -82,24 +82,53 @@ const componentMap: { [key: string]: React.ReactNode } = {
   'steps-form': <StepsFormDocs />,
 };
 
+export async function generateStaticParams(): Promise<Array<{ componentName: string }>> {
+  const componentNames: string[] = [
+    'alert',
+    'access',
+    'badge',
+    'banner',
+    'block',
+    'button',
+    'cards',
+    'collapse',
+    'colors',
+    'link',
+    'modal',
+    'nav-horizontal',
+    'nav-vertical',
+    'status-message',
+    'switch',
+    'tabs',
+    'tooltip',
+    'typography',
+    'dropdown-nav',
+    'grid',
+    'spinner',
+    'map',
+    'highlighted',
+    'breadcrumb',
+    'form-text',
+    'form-selection',
+    'gallery',
+    'pagination',
+    'progress-bar',
+    'table',
+  ];
+
+  return componentNames.map((name) => ({
+    componentName: name,
+  }));
+}
+
 export default function ComponentPage({ params }: { params: { componentName: string } }) {
   const { componentName } = params;
 
   const component = componentMap[componentName];
 
   if (!component) {
-    notFound(); // davis: reemplazar estio por componente notfound
+    return notFound();
   }
 
-  return (
-    <div>
-      {/* <h1>{componentName} Component</h1> */}
-      {component}
-    </div>
-  );
+  return <>{component}</>;
 }
-
-/*  
-  davis: esta page hace uso de componentMap, el cual asigna a cada ruta generada y pre renderizada de "generateStaticParams.ts" un componentDocuments, 
-  de manera que cada ruta tendra su documentacion de componente asignada correctamente.
-*/

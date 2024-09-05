@@ -1,5 +1,7 @@
 export default function Templates() {
   return (
-    <><h1>Documentacion</h1></>
+    <>
+      <h1>Documentacion</h1>
+    </>
   );
 }

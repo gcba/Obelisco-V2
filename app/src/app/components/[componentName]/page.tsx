@@ -87,9 +87,9 @@ const componentMap: Record<string, JSX.Element | null> = {
   'steps-form': <StepsFormDocs />,
 };
 
-// Esta función genera un conjunto de parámetros estáticos para las rutas dinámicas.
-// Retorna una lista de nombres de componentes que serán usados para generar las páginas de documentación
-// correspondientes de forma estática (es decir, pre-renderizadas en tiempo de construcción).
+// La función generateStaticParams es propia de Next.js y se utiliza en rutas dinámicas con generación estática.
+// Esta función genera todos los parámetros necesarios para pre-renderizar páginas dinámicas en tiempo de construcción (build).
+// En este caso, está generando los parámetros necesarios para las rutas de los componentes de documentación.
 export async function generateStaticParams(): Promise<Array<{ componentName: string }>> {
   // Lista de nombres de componentes que tienen documentación asociada
   const componentNames: string[] = [
@@ -127,6 +127,7 @@ export async function generateStaticParams(): Promise<Array<{ componentName: str
 
   // Devuelve un array de objetos donde cada uno tiene el nombre de un componente,
   // que será utilizado como parámetro para generar rutas dinámicas para cada componente.
+  // Cada componente tendrá una página de documentación estática pre-generada.
   return componentNames.map((name) => ({
     componentName: name,
   }));

@@ -12,13 +12,16 @@ const componentMap: { [key: string]: React.ReactNode } = {
 };
 
 // Esta función genera los parámetros estáticos para las rutas dinámicas de la sección "Getting Started".
-// Retorna un array de nombres de secciones que serán utilizados para pre-renderizar las páginas.
+// En Next.js, `generateStaticParams` se usa para crear rutas estáticas en el momento de la compilación
+// para las rutas dinámicas. En este caso, se está utilizando para pre-generar las páginas de cada sección.
 export async function generateStaticParams() {
   // Lista de nombres de secciones disponibles en "Getting Started"
   const gettingStartedNames = ['imports', 'installation'];
 
   // Mapea cada nombre de la lista y lo convierte en un objeto que contiene el nombre de la sección
   // Este objeto será utilizado como parámetro para generar rutas dinámicas.
+  // En tiempo de construcción, Next.js usará estos parámetros para pre-renderizar las páginas
+  // correspondientes a 'imports' e 'installation'.
   return gettingStartedNames.map((name) => ({
     gettingStartedName: name,
   }));

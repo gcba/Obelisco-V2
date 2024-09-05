@@ -14,9 +14,6 @@ export default function ComponentsPage() {
           {stylesPages.map(({ text, url, id }) => (
             <div className="col" key={id}>
               <Link href={url} className="list-group-item item-sm">
-                <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                  palette
-                </span>
                 <div className="access-content">
                   <span className="access-title">{text}</span>
                   <p className="access-text">Estilos</p>
@@ -32,9 +29,6 @@ export default function ComponentsPage() {
           {componentsPages.map(({ text, url, id }) => (
             <div className="col" key={id}>
               <Link href={url} className="list-group-item item-sm">
-                <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                  code_blocks
-                </span>
                 <div className="access-content">
                   <span className="access-title">{text}</span>
                   <p className="access-text">Componente</p>
@@ -50,9 +44,6 @@ export default function ComponentsPage() {
           {formsPages.map(({ text, url, id }) => (
             <div className="col" key={id}>
               <Link href={url} className="list-group-item item-sm">
-                <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                  view_list
-                </span>
                 <div className="access-content">
                   <span className="access-title">{text}</span>
                   <p className="access-text">Formulario</p>
@@ -69,9 +60,6 @@ export default function ComponentsPage() {
           {organismsPages.map(({ text, url, id }) => (
             <div className="col" key={id}>
               <Link href={url} className="list-group-item item-sm">
-                <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                  cards
-                </span>
                 <div className="access-content">
                   <span className="access-title">{text}</span>
                   <p className="access-text">Organismo</p>

@@ -2,7 +2,7 @@
 export const NPM_CODE = `npm i @gcba/obelisco-v2`;
 export const YARN_CODE = `yarn add @gcba/obelisco-v2`;
 export const PNPM_CODE = `pnpm i @gcba/obelisco-v2`;
-export const CDN_CODE = `<link href="" rel="stylesheet" />`;
+export const CDN_CODE = `<link href="https://cdn.jsdelivr.net/gh/gcba/Obelisco-v2@main/dist/styles.css" rel="stylesheet" />`;
 // Section imports
 export const OPENSANS_CODE = `<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />`;
 export const STYLES_CODE = `<link rel="stylesheet" href="ruta/al/proyecto/dist/styles.css">`;

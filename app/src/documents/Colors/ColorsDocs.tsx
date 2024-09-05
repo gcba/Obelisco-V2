@@ -71,7 +71,6 @@ const ColorsDocs: React.FC = () => {
                 <div className="text-white bg-dark">white</div>
                 <div className="text-black">black</div>
                 <div className="text-body-secondary">text-body-secondary</div>
-                <div className="text-body-tertiary">text-body-tertiary</div>
               </div>
             </div>
           </CodeBox>

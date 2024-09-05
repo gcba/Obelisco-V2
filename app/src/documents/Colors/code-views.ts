@@ -8,7 +8,6 @@ export const BG_THEME_COLORS = `
   <div class="bg-light"> light</div>
   <div class="bg-dark text-white"> dark</div>
   <div class="text-body-secondary">text-body-secondary</div>
-  <div class="text-body-tertiary">text-body-tertiary</div>
 `;
 export const TEXT_THEME_COLORS = `
   <p class="text-body-secondary">text-body-secondary</p>

@@ -87,7 +87,11 @@ $progress-bg: $grisulado-100;
     }
 
     &:not(:last-child)::after {
-      background: linear-gradient(0deg, $progression-default-color 50%, $body-color 50%);
+      background: linear-gradient(
+        0deg,
+        $progression-default-color 50%,
+        $body-color 50%
+      );
     }
   }
 

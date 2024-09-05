@@ -12,7 +12,7 @@ $link-download-link-sm: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http:/
 /* === Custom styles === */
 
 @mixin link-icon-variant($icon-link, $icon-margin-left, $icon-margin-right) {
-  content: "";
+  content: '';
   display: inline-block;
   vertical-align: middle;
   height: 1.25rem;
@@ -37,7 +37,14 @@ a {
   text-decoration-thickness: 1px;
   backface-visibility: hidden;
 
-  &:not(.btn, .nav-link, .list-group-item, .calendar-link, .dropdown-item, .badge):visited {
+  &:not(
+      .btn,
+      .nav-link,
+      .list-group-item,
+      .calendar-link,
+      .dropdown-item,
+      .badge
+    ):visited {
     color: $visited-color;
   }
 
@@ -102,7 +109,7 @@ a {
     color: $white;
 
     &::before {
-      content: "";
+      content: '';
       background: transparent $link-download-link-sm no-repeat center center;
       display: inline-block;
       vertical-align: middle;

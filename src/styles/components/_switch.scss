@@ -120,7 +120,7 @@ $switch-focus-shadow: 0 0 0 2px $focus-color;
 
     &::before {
       position: absolute;
-      content: "";
+      content: '';
       height: $switch-indicator-height;
       width: $switch-indicator-width;
       left: 2px;

@@ -92,10 +92,12 @@ $alert-icons: (
 
     li {
       margin-bottom: $alert-text-distance;
+
       &::before {
         counter-increment: section;
         content: counter(section) '. ';
       }
+
       &:last-child {
         margin-bottom: 0;
       }
@@ -123,11 +125,14 @@ $alert-icons: (
 
   @include media-breakpoint-up(xl) {
     padding: $alert-padding;
+
     &::before {
       inset: $alert-icon-position;
     }
+
     &.alert-dismissible {
       padding-right: $alert-dismissible-padding-right;
+
       .btn-close {
         margin: $close-icon-margin;
       }

@@ -1,6 +1,6 @@
 {
   "name": "@gcba/obelisco-v2",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "private": false,
   "main": "dist/styles.css",
@@ -15,10 +15,15 @@
     "build-css": "sass src/styles/main.scss dist/styles.css",
     "build": "npm run build-css",
     "build-versioned": "node build-css-versioned.js",
-    "format": "prettier --write \"src/**/*.scss\"",
-    "lint": "stylelint \"src/**/*.scss\"",
-    "lint:fix": "stylelint \"src/**/*.scss\" --fix",
-    "release": "npx semantic-release"
+    "prettier:check-library": "prettier --check \"src/**/*.scss\"",
+    "prettier:library": "prettier --write \"src/**/*.scss\"",
+    "lint:library": "stylelint \"src/**/*.scss\"",
+    "lint-fix:library": "stylelint \"src/**/*.scss\" --fix",
+    "release": "npx semantic-release",
+    "lint:app": "cd app && npm run lint",
+    "lint-fix:app": "cd app && npm run lint:format",
+    "prettier-check:app": "cd app && npm run prettier:check",
+    "prettier:app": "cd app && npm run prettier:format"
   },
   "keywords": [],
   "author": "",

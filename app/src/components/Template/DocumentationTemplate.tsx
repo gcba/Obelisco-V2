@@ -14,6 +14,7 @@ interface Section {
   content?: React.ReactNode;
   description?: string;
   h1?: boolean;
+  defaultTitle?: boolean;
 }
 
 interface DocumentationTemplateProps {
@@ -43,6 +44,8 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections 
     };
   }, [handleScroll]);
 
+  const defaultTitle = sections.some((section) => section.defaultTitle) ? 'Obelisco' : 'Variantes';
+
   return (
     <Scrollspy sectionRefs={sectionRefs} offset={84}>
       {() => (
@@ -64,7 +67,7 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections 
 
           <div className="nav-scrollspy d-none d-lg-block flex-grow-1">
             <ul className="scrollspy" data-cy="nav-wrapper">
-              <p className="headline-md fw-bold mb-1">Variantes</p>
+              <p className="headline-md fw-bold mb-1">{defaultTitle}</p>
               {sections.map(
                 (section, index) =>
                   section.id && (

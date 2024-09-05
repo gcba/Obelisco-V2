@@ -18,15 +18,16 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
 
 //Mixin tamaños de dropdown
 @mixin dropdown-sm() {
-  .btn-dropdown, .dropdown-item {
+  .btn-dropdown,
+  .dropdown-item {
     min-height: 2rem;
     padding: $dropdown-item-padding-sm;
   }
 
   .form-checkbox .form-checkbox-label,
   .form-radio.reverse .form-radio-label {
-    padding-top: .25rem;
-    padding-bottom: .25rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
     min-height: 2rem;
   }
 
@@ -37,20 +38,21 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
 }
 
 @mixin dropdown-lg() {
-  .btn-dropdown, .dropdown-item {
+  .btn-dropdown,
+  .dropdown-item {
     min-height: 3rem;
     padding: $dropdown-item-padding-lg;
   }
 
-  .form-checkbox .form-checkbox-label, 
+  .form-checkbox .form-checkbox-label,
   .form-radio.reverse .form-radio-label {
-    padding-top: .75rem;
-    padding-bottom: .75rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
     min-height: 3rem;
   }
 
   .form-checkbox .form-checkbox-input,
-  .form-radio.reverse .form-radio-input  {
+  .form-radio.reverse .form-radio-input {
     top: 0.75rem;
   }
 }
@@ -74,7 +76,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
 // Desplegable de navegación
 .dropdown {
   width: fit-content;
- 
+
   .btn-dropdown {
     color: $body-color;
     background: $white;
@@ -144,7 +146,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
     }
 
     &:not(.show) {
-      &.selected{
+      &.selected {
         color: $active-color;
 
         .btn-dropdown-icon {
@@ -260,7 +262,8 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
 
     // Desplegable de selección
     // Desplegable radio y checkbox
-    .form-checkbox, .form-radio.reverse {
+    .form-checkbox,
+    .form-radio.reverse {
       width: 100%;
 
       &:not(:last-child) {
@@ -268,39 +271,47 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
       }
 
       &:hover {
-        .form-checkbox-label, .form-radio-label {
+        .form-checkbox-label,
+        .form-radio-label {
           outline: $hover-outline;
         }
 
-        .form-checkbox-input:checked, .form-checkbox-input:disabled,
-        .form-radio-input:checked, .form-radio-input:disabled {
-          ~.form-checkbox-label,  ~.form-radio-label {
+        .form-checkbox-input:checked,
+        .form-checkbox-input:disabled,
+        .form-radio-input:checked,
+        .form-radio-input:disabled {
+          ~ .form-checkbox-label,
+          ~ .form-radio-label {
             outline-color: transparent;
           }
         }
       }
 
-      .form-checkbox-label, .form-radio-label {
+      .form-checkbox-label,
+      .form-radio-label {
         width: 100%;
         padding-left: 3rem; //48px
-        padding-right: .75rem; //12px
+        padding-right: 0.75rem; //12px
       }
 
-      .form-checkbox-input, .form-radio-input {
-        margin: .125rem .875rem; //2px 14px
+      .form-checkbox-input,
+      .form-radio-input {
+        margin: 0.125rem 0.875rem; //2px 14px
         &:checked {
           background-color: $white;
           background-image: $checkbox-image-dropdown;
 
-          ~.form-checkbox-label, ~.form-radio-label {
+          ~ .form-checkbox-label,
+          ~ .form-radio-label {
             background-color: $active-color;
             color: $white;
           }
         }
 
         &:focus {
-          ~.form-checkbox-label, ~.form-radio-label {
-            padding-right: .75rem; //12px
+          ~ .form-checkbox-label,
+          ~ .form-radio-label {
+            padding-right: 0.75rem; //12px
             box-shadow: 0 0 0 0.25rem $active-border-color;
             outline: $outline-transparent;
           }
@@ -310,13 +321,14 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
 
     //Desplegable Radio
     .form-radio.reverse {
-      .form-checkbox-label, .form-radio-label {
+      .form-checkbox-label,
+      .form-radio-label {
         padding-right: 3rem; //48px
-        padding-left: .75rem; //12px
+        padding-left: 0.75rem; //12px
       }
 
       .form-radio-input {
-        margin: 0 .875rem; //2px 14px
+        margin: 0 0.875rem; //2px 14px
         border-width: 0;
         height: 1.5rem; //24px
         width: 1.5rem; //24px
@@ -329,7 +341,8 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
         }
 
         &:focus {
-          ~.form-checkbox-label, ~.form-radio-label {
+          ~ .form-checkbox-label,
+          ~ .form-radio-label {
             padding-right: 3rem; //48px
           }
         }
@@ -356,6 +369,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
         &:hover {
           outline: $hover-outline;
         }
+
         &:focus {
           outline: $outline-transparent;
         }

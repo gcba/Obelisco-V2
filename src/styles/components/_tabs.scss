@@ -31,7 +31,7 @@ $border-radius-tabs: 0.5rem 0.5rem 0 0;
 
     /* Esta seccion define los tamaños disponibles para tabs */
     &.tabs {
-      gap: .0625rem; // 1px
+      gap: 0.0625rem; // 1px
       flex-flow: row nowrap;
       text-align: center;
       padding-bottom: 0.25rem;
@@ -99,6 +99,7 @@ $border-radius-tabs: 0.5rem 0.5rem 0 0;
             background-color: $grisulado-100;
             border-radius: $border-radius-tabs;
             border: none;
+
             &:focus {
               border-radius: $border-radius-lg;
             }
@@ -153,15 +154,17 @@ $border-radius-tabs: 0.5rem 0.5rem 0 0;
     justify-content: center;
     cursor: pointer;
     border: none;
-    padding: .75rem;
+    padding: 0.75rem;
 
     > span {
       font-size: 1.5rem;
     }
   }
+
   .prev {
     left: 0;
   }
+
   .next {
     right: 0;
   }

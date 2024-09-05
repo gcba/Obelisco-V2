@@ -23,6 +23,7 @@ const IntroductionModule: React.FC = () => {
         </>
       ),
       h1: true,
+      defaultTitle: true,
     },
     {
       id: 'section-2',

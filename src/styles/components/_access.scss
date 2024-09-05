@@ -7,7 +7,6 @@ $access-padding-desktop: 1.5rem;
 $access-padding-sm: 0.5rem 1rem;
 $access-padding-sm-desktop: 0.75rem 1.5rem;
 
-
 // Accesos organismos
 $padding-card-access-body: 1.5rem;
 
@@ -45,7 +44,7 @@ $access-arrow-active: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000
 }
 
 @mixin access-icon($icon) {
-  content: "";
+  content: '';
   height: 1.5rem;
   width: 1.5rem;
   min-width: 1.5rem;
@@ -70,7 +69,7 @@ a.list-group-item {
   @include media-breakpoint-up(xl) {
     padding: $access-padding-desktop;
   }
-  
+
   .o-icon {
     font-size: 1.5rem;
     align-self: center;
@@ -185,7 +184,7 @@ a.list-group-item {
   &:active,
   &.active {
     outline: 0.25rem solid $active-color;
-    outline-offset: -.25rem;
+    outline-offset: -0.25rem;
     background-color: $active-color;
     color: $white;
 

@@ -56,7 +56,7 @@ $badge-bg-theme-color: (
   text-overflow: ellipsis;
   margin-right: $badge-separation;
   border-radius: $border-radius-lg; //8px
-  padding: .125rem .25rem; //2px 4px
+  padding: 0.125rem 0.25rem; //2px 4px
 }
 
 @each $color, $value in $badge-theme-color {

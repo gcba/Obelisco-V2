@@ -15,7 +15,15 @@ const sections = [
     title: 'Navegación Horizontal',
     h1: true,
     content: (
-      <MainDescription description="Permite a las personas usuarias a navegar por las vistas sin salir de la página. Siempre contienen al menos dos elementos y una esta activa a la vez. Generalmente se utilizan en encabezados o secciones grandes." />
+      <>
+        <MainDescription description="Permite a las personas usuarias a navegar por las vistas sin salir de la página. Siempre contienen al menos dos elementos y una esta activa a la vez. Generalmente se utilizan en encabezados o secciones grandes." />
+        <p className='lead mb-4'>
+          Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
+          <a href="https://gcba.github.io/estandares/componentes/navegacion/" target="_blank" rel="noopener noreferrer">
+            enlace.
+          </a>
+        </p>
+      </>
     ),
   },
   {

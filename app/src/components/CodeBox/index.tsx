@@ -141,7 +141,7 @@ const CodeBox = ({ codeHTML, children, codeJS }: { codeHTML: string; children?: 
           )}
         </ul>
       </nav>
-      <div className={`tab-content ${styles.tabCodeBox}`} id={`icon-myTabContent-${id}`}>
+      <div className={`tab-content overflow-hidden ${styles.tabCodeBox}`} id={`icon-myTabContent-${id}`}>
         <div
           className="tab-pane fade show active"
           id={`panel-bg-content-1-${id}`}

@@ -13510,7 +13510,7 @@ a.list-group-item:hover, a.list-group-item.hover {
   text-decoration: none;
 }
 a.list-group-item:hover.list-group-item-logout, a.list-group-item.hover.list-group-item-logout {
-  box-shadow: 0 0 0 8px #cc3333;
+  box-shadow: 0 0 0 2px #cc3333;
 }
 a.list-group-item:hover .access-title, a.list-group-item.hover .access-title {
   text-decoration-color: transparent;
@@ -13581,7 +13581,7 @@ a.list-group-item:active .access-title, a.list-group-item.active .access-title {
   text-decoration-color: transparent;
 }
 a.list-group-item:active.list-group-item-logout, a.list-group-item.active.list-group-item-logout {
-  box-shadow: 0 0 0 8px #cc3333;
+  box-shadow: 0 0 0 2px #cc3333;
 }
 a.list-group-item:active::after, a.list-group-item.active::after {
   content: "";
@@ -13611,7 +13611,7 @@ a.list-group-item.item-sm {
   }
 }
 a.list-group-item.list-group-item-logout {
-  box-shadow: 0 0 0 8px #cc3333;
+  box-shadow: 0 0 0 2px #cc3333;
   color: #cc3333;
 }
 a.list-group-item.list-group-item-logout:visited {
@@ -16460,4 +16460,4 @@ a.badge-danger:focus, a.badge-danger.focus {
   outline: none;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=styles.css.map */

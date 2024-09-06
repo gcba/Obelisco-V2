@@ -1,8 +1,8 @@
 export const DROPDOWN = `
-  <div class="dropdown">
+  <div class="dropdown dropdown-lg">
     <button
       type="button"
-      class="btn btn-dropdown btn-dropdown-lg btn-dropdown-border"
+      class="btn btn-dropdown btn-dropdown-border"
       data-bs-toggle="dropdown"
       aria-expanded="false"
     >
@@ -46,10 +46,10 @@ export const DROPDOWN = `
   </div>
 `;
 export const DROPDOWN_MENU_ICON = `
-  <div class="dropdown">
+  <div class="dropdown dropdown-lg">
     <button
       type="button"
-      class="btn btn-dropdown btn-dropdown-lg btn-dropdown-border"
+      class="btn btn-dropdown btn-dropdown-border"
       data-bs-toggle="dropdown"
       aria-expanded="false"
     >
@@ -89,10 +89,10 @@ export const DROPDOWN_MENU_ICON = `
   </div>
 `;
 export const DROPDOWN_MENU_ICON_ONLY = `
-  <div class="dropdown">
+  <div class="dropdown dropdown-lg">
     <button
       type="button"
-      class="btn btn-dropdown btn-dropdown-lg btn-dropdown-border"
+      class="btn btn-dropdown btn-dropdown-border"
       data-bs-toggle="dropdown"
       aria-expanded="false"
       aria-label="Menu"
@@ -132,10 +132,10 @@ export const DROPDOWN_MENU_ICON_ONLY = `
   </div>
 `;
 export const DROPDOWN_MENU_RIGHT = `
-  <div class="dropdown">
+  <div class="dropdown dropdown-lg">
     <button
       type="button"
-      class="btn btn-dropdown btn-dropdown-lg btn-dropdown-border"
+      class="btn btn-dropdown btn-dropdown-border"
       data-bs-toggle="dropdown"
       aria-expanded="false"
     >
@@ -176,10 +176,10 @@ export const DROPDOWN_MENU_RIGHT = `
   </div>
 `;
 export const DROPDOWN_CASCADE = `
-  <div class="dropdown">
+  <div class="dropdown dropdown-lg">
     <button
       type="button"
-      class="btn btn-dropdown btn-dropdown-lg btn-dropdown-border"
+      class="btn btn-dropdown btn-dropdown-border"
       data-bs-toggle="dropdown"
       aria-expanded="false"
       data-bs-auto-close="outside"
@@ -196,7 +196,7 @@ export const DROPDOWN_CASCADE = `
       <div class="dropdown sub-dropdown">
         <button
           type="button"
-          class="btn btn-dropdown btn-dropdown-lg"
+          class="btn btn-dropdown"
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
@@ -253,10 +253,10 @@ export const DROPDOWN_CASCADE = `
   </div>
 `;
 export const DROPDOWN_CASCADE_RIGHT = `
-  <div class="dropdown">
+  <div class="dropdown dropdown-lg">
     <button
       type="button"
-      class="btn btn-dropdown btn-dropdown-lg btn-dropdown-border"
+      class="btn btn-dropdown btn-dropdown-border"
       data-bs-toggle="dropdown"
       aria-expanded="false"
       data-bs-auto-close="outside"
@@ -273,7 +273,7 @@ export const DROPDOWN_CASCADE_RIGHT = `
       <div class="dropdown sub-dropdown">
         <button
           type="button"
-          class="btn btn-dropdown btn-dropdown-lg"
+          class="btn btn-dropdown"
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >

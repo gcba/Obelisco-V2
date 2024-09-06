@@ -101,7 +101,7 @@ $status-icons: map-merge(
     }
   }
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     > .btn {
       width: 100%;
     }
@@ -110,7 +110,7 @@ $status-icons: map-merge(
   > .btn + .btn {
     margin-left: 1rem;
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       margin-left: 0;
       margin-top: 1rem;
       width: 100%;

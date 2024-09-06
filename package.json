@@ -5,8 +5,7 @@
   "private": false,
   "main": "dist/styles.css",
   "files": [
-    "dist/",
-    "static/"
+    "dist/"
   ],
   "scripts": {
     "i-app": "cd app && npm install",

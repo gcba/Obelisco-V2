@@ -55,7 +55,11 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections 
               {sections.map((section, index) => (
                 <section key={section.id} id={section.id || undefined} ref={sectionRefs[index]}>
                   <HeadingTemplate className="pt-2">
-                    {section.h1 ? <h1 className="mb-4">{section.title}</h1> : <h2 className="headline-lg mb-4">{section.title}</h2>}
+                    {section.h1 ? (
+                      <h1 className="mb-4">{section.title}</h1>
+                    ) : (
+                      <h2 className="headline-lg mb-4">{section.title}</h2>
+                    )}
                   </HeadingTemplate>
                   {section.description && <SimpleText description={section.description} />}
                   {section.content}

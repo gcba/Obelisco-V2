@@ -17,11 +17,15 @@ const sections = [
     content: (
       <>
         <MainDescription description="Este tipo de desplegables permite acceder a opciones de navegación y funcionalidades adicionales de manera organizada, desplegándolas de forma vertical u horizontal." />
-        <p className='lead mb-4'>
-            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-            <a href="https://gcba.github.io/estandares/componentes/desplegables/desplegables_navegacion/" target="_blank" rel="noopener noreferrer">
-              enlace.
-            </a>
+        <p className="lead mb-4">
+          Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
+          <a
+            href="https://gcba.github.io/estandares/componentes/desplegables/desplegables_navegacion/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            enlace.
+          </a>
         </p>
       </>
     ),
@@ -207,12 +211,7 @@ const sections = [
               </button>
               <div className="dropdown-menu">
                 <div className="dropdown sub-dropdown">
-                  <button
-                    type="button"
-                    className="btn btn-dropdown"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" className="btn btn-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
                     <i className="bx bxs-info-circle o-icon"></i>
                     <span className="btn-dropdown-text ellipsis-1">Opción en cascada</span>
                     <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
@@ -268,12 +267,7 @@ const sections = [
               </button>
               <div className="dropdown-menu dropdown-menu-end">
                 <div className="dropdown sub-dropdown">
-                  <button
-                    type="button"
-                    className="btn btn-dropdown"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" className="btn btn-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
                     <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
                       expand_more
                     </span>

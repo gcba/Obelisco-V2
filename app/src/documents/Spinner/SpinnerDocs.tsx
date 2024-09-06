@@ -16,7 +16,7 @@ const SpinnerDocs: React.FC = () => {
       content: (
         <>
           <MainDescription description="Un spinner es un indicador visual que ayuda a notificar a las personas usuarias que la carga de contenido o la recuperación de datos está en curso." />
-          <p className='lead mb-4'>
+          <p className="lead mb-4">
             Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
             <a href="https://gcba.github.io/estandares/componentes/spinner/" target="_blank" rel="noopener noreferrer">
               enlace.

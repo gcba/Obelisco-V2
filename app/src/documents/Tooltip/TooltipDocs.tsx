@@ -12,7 +12,7 @@ const TooltipDocs: React.FC = () => {
       content: (
         <>
           <MainDescription description="Los tooltip muestran ayuda contextual o información sobre componentes específicos cuando un usuario se desplaza o se enfoca en ellos." />
-          <p className='lead mb-4'>
+          <p className="lead mb-4">
             Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
             <a href="https://gcba.github.io/estandares/componentes/tooltip//" target="_blank" rel="noopener noreferrer">
               enlace.

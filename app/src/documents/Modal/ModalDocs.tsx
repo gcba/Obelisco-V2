@@ -12,7 +12,7 @@ const ModalDocs: React.FC = () => {
       content: (
         <>
           <MainDescription description="Los modales muestran información importante que las personas usuarias deben reconocer. Aparecen en forma de ventana sobre la interfaz y bloquean el flujo de trabajo hasta que se selecciona una acción." />
-          <p className='lead mb-4'>
+          <p className="lead mb-4">
             Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
             <a href="https://gcba.github.io/estandares/componentes/modals/" target="_blank" rel="noopener noreferrer">
               enlace.

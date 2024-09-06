@@ -11,9 +11,13 @@ const BadgeDocs: React.FC = () => {
       content: (
         <>
           <MainDescription description="Las etiquetas se utilizan para identificar y categorizar la información dentro de una página proporcionando más detalles a los usuarios sobre el contenido que necesitan." />
-          <p className='lead mb-4'>
+          <p className="lead mb-4">
             Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-            <a href="https://gcba.github.io/estandares/componentes/etiquetas/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://gcba.github.io/estandares/componentes/etiquetas/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               enlace.
             </a>
           </p>

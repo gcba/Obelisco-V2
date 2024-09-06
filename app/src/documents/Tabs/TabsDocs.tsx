@@ -23,9 +23,13 @@ const TabsDocs: React.FC = () => {
       content: (
         <>
           <MainDescription description="Las pestañas se utilizan para organizar el contenido relacionado. Permiten a la persona usuaria navegar entre grupos de información que aparecen dentro de un mismo contexto, mostrando una sección por vez." />
-          <p className='lead mb-4'>
+          <p className="lead mb-4">
             Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-            <a href="https://gcba.github.io/estandares/componentes/navegacion/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://gcba.github.io/estandares/componentes/navegacion/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               enlace.
             </a>
           </p>

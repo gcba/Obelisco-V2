@@ -7,7 +7,7 @@ import { notFound } from 'next/navigation';
 // Un mapa que asocia el nombre de la sección de "Getting Started" con el componente correspondiente.
 // Este mapa se utiliza para renderizar dinámicamente el contenido correcto según el parámetro recibido.
 const componentMap: { [key: string]: React.ReactNode } = {
-  imports: <ImportsModule />,      // Renderiza el componente de importaciones
+  imports: <ImportsModule />, // Renderiza el componente de importaciones
   installation: <InstallationModule />, // Renderiza el componente de instalación
 };
 
@@ -37,7 +37,7 @@ export default function GettingStartedNamePage({ params }: { params: { gettingSt
 
   // Si no se encuentra el componente en el mapa, muestra una página de error 404.
   if (!component) {
-    return notFound(); 
+    return notFound();
   }
 
   // Si se encuentra el componente, lo renderiza dentro de un contenedor div.

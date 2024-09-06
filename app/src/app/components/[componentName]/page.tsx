@@ -12,7 +12,7 @@ import CardDocs from '@/documents/Card/CardDocs';
 import CollapseDocs from '@/documents/Collapse/CollapseDocs';
 import ColorsDocs from '@/documents/Colors/ColorsDocs';
 import DropdownNavDocs from '@/documents/DropdownNav/DropdownNavDocs';
-import DropdownSelDocs from '@/documents/DropdownSel/DropdownSelDocs';  
+import DropdownSelDocs from '@/documents/DropdownSel/DropdownSelDocs';
 import FooterDocs from '@/documents/Footer/FooterDocs';
 import FormTextDocs from '@/documents/Form-text/FormText';
 import FormSearchDocs from '@/documents/FormSearch/FormSearch';

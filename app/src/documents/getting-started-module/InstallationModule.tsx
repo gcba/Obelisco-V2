@@ -23,7 +23,7 @@ const InstallationModule: React.FC = () => {
       description:
         'Para instalar la librería de componentes Obelisco V2 en tu proyecto, puedes utilizar cualquiera de los siguientes gestores de paquetes:',
       content: (
-        <div className='col-12'>
+        <div className="col-12">
           <h3 className="headline-lg">npm:</h3>
           <SyntaxHighlighter language="bash" style={dracula}>
             {NPM_CODE}
@@ -51,7 +51,7 @@ const InstallationModule: React.FC = () => {
       description:
         'Si prefieres no instalar nada localmente, puedes incluir los estilos directamente desde nuestra CDN:',
       content: (
-        <div className='col-12'>        
+        <div className="col-12">
           <SyntaxHighlighter language="html" style={dracula}>
             {CDN_CODE}
           </SyntaxHighlighter>

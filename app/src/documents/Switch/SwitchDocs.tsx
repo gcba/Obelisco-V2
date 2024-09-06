@@ -19,7 +19,7 @@ const SwitchDocs: React.FC = () => {
       content: (
         <>
           <MainDescription description="Los switchs permiten que las personas usuarias alternen entre dos estados posibles, como “prendido” y “apagado”." />
-          <p className='lead mb-4'>
+          <p className="lead mb-4">
             Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
             <a href="https://gcba.github.io/estandares/componentes/switch/" target="_blank" rel="noopener noreferrer">
               enlace.

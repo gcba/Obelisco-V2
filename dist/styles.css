@@ -13452,7 +13452,14 @@ a.link-white:focus {
 }
 
 /* === Variables and mixins === */
-/* === Bootstrap Import === */
+a.list-group-item:active:focus, a.list-group-item:active.focus, a.list-group-item.active:focus, a.list-group-item.active.focus, a.list-group-item:active:hover, a.list-group-item:active.hover, a.list-group-item.active:hover, a.list-group-item.active.hover, a.list-group-item:active, a.list-group-item.active {
+  outline: 0.25rem solid transparent;
+  outline-offset: -0.25rem;
+  background-color: #274986;
+  color: #ffffff;
+  box-shadow: none;
+}
+
 /* === Custom styles === */
 a.list-group-item {
   text-decoration: none;
@@ -13493,6 +13500,9 @@ a.list-group-item .access-content .access-text {
 }
 a.list-group-item:visited {
   color: #101e37;
+}
+a.list-group-item:visited .access-text {
+  color: #425266;
 }
 a.list-group-item:first-child {
   border-radius: 0.5rem;
@@ -13560,29 +13570,6 @@ a.list-group-item:focus:hover:not(:active)::after, a.list-group-item:focus:hover
 a.list-group-item:focus:hover:not(:active) .access-title, a.list-group-item:focus:hover:not(.active) .access-title, a.list-group-item.focus:hover:not(:active) .access-title, a.list-group-item.focus:hover:not(.active) .access-title {
   text-decoration: none;
 }
-a.list-group-item:active, a.list-group-item.active {
-  outline: 0.25rem solid #274986;
-  outline-offset: -0.25rem;
-  background-color: #274986;
-  color: #ffffff;
-}
-a.list-group-item:active:focus, a.list-group-item:active.focus, a.list-group-item.active:focus, a.list-group-item.active.focus {
-  box-shadow: none;
-  background-color: #274986;
-  color: #ffffff;
-}
-a.list-group-item:active:hover, a.list-group-item:active.hover, a.list-group-item.active:hover, a.list-group-item.active.hover {
-  outline: 0.25rem solid #274986;
-  box-shadow: none;
-  background-color: #274986;
-  color: #ffffff;
-}
-a.list-group-item:active .access-title, a.list-group-item.active .access-title {
-  text-decoration-color: transparent;
-}
-a.list-group-item:active.list-group-item-logout, a.list-group-item.active.list-group-item-logout {
-  box-shadow: 0 0 0 2px #cc3333;
-}
 a.list-group-item:active::after, a.list-group-item.active::after {
   content: "";
   height: 1.5rem;
@@ -13590,8 +13577,31 @@ a.list-group-item:active::after, a.list-group-item.active::after {
   min-width: 1.5rem;
   background: transparent url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none"><g clip-path="url(%23clip0_1996_10920)"><path d="M9.29 16.547L13.17 12.667L9.29 8.78697C8.9 8.39697 8.9 7.76697 9.29 7.37697C9.68 6.98697 10.31 6.98697 10.7 7.37697L15.29 11.967C15.68 12.357 15.68 12.987 15.29 13.377L10.7 17.967C10.31 18.357 9.68 18.357 9.29 17.967C8.91 17.577 8.9 16.937 9.29 16.547Z" fill="white"/></g><defs><clipPath id="clip0_1996_10920"><rect width="24" height="24" fill="white" transform="translate(0 0.666992)"/></clipPath></defs></svg>') no-repeat center center;
 }
+a.list-group-item:active:focus:hover, a.list-group-item:active:focus.hover, a.list-group-item:active.focus:hover, a.list-group-item:active.focus.hover, a.list-group-item.active:focus:hover, a.list-group-item.active:focus.hover, a.list-group-item.active.focus:hover, a.list-group-item.active.focus.hover {
+  color: #ffffff;
+  box-shadow: none;
+}
+a.list-group-item:active:focus:hover .access-text, a.list-group-item:active:focus.hover .access-text, a.list-group-item:active.focus:hover .access-text, a.list-group-item:active.focus.hover .access-text, a.list-group-item.active:focus:hover .access-text, a.list-group-item.active:focus.hover .access-text, a.list-group-item.active.focus:hover .access-text, a.list-group-item.active.focus.hover .access-text {
+  color: #ffffff;
+}
+a.list-group-item:active:focus:hover::after, a.list-group-item:active:focus.hover::after, a.list-group-item:active.focus:hover::after, a.list-group-item:active.focus.hover::after, a.list-group-item.active:focus:hover::after, a.list-group-item.active:focus.hover::after, a.list-group-item.active.focus:hover::after, a.list-group-item.active.focus.hover::after {
+  content: "";
+  height: 1.5rem;
+  width: 1.5rem;
+  min-width: 1.5rem;
+  background: transparent url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none"><g clip-path="url(%23clip0_1996_10920)"><path d="M9.29 16.547L13.17 12.667L9.29 8.78697C8.9 8.39697 8.9 7.76697 9.29 7.37697C9.68 6.98697 10.31 6.98697 10.7 7.37697L15.29 11.967C15.68 12.357 15.68 12.987 15.29 13.377L10.7 17.967C10.31 18.357 9.68 18.357 9.29 17.967C8.91 17.577 8.9 16.937 9.29 16.547Z" fill="white"/></g><defs><clipPath id="clip0_1996_10920"><rect width="24" height="24" fill="white" transform="translate(0 0.666992)"/></clipPath></defs></svg>') no-repeat center center;
+}
+a.list-group-item:active:visited, a.list-group-item.active:visited {
+  color: #ffffff;
+}
+a.list-group-item:active .access-title, a.list-group-item.active .access-title {
+  text-decoration-color: transparent;
+}
 a.list-group-item:active .access-text, a.list-group-item.active .access-text {
   color: #ffffff;
+}
+a.list-group-item:active.list-group-item-logout, a.list-group-item.active.list-group-item-logout {
+  box-shadow: 0 0 0 2px #cc3333;
 }
 a.list-group-item::after {
   float: right;
@@ -14442,7 +14452,7 @@ input[type=search]::-moz-search-clear-button {
   margin-bottom: 1rem;
   color: #101e37;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .status > .btn, .status > .progression-link {
     width: 100%;
   }
@@ -14450,7 +14460,7 @@ input[type=search]::-moz-search-clear-button {
 .status > .btn + .btn, .status > .progression-link + .btn, .status > .btn + .progression-link, .status > .progression-link + .progression-link {
   margin-left: 1rem;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .status > .btn + .btn, .status > .progression-link + .btn, .status > .btn + .progression-link, .status > .progression-link + .progression-link {
     margin-left: 0;
     margin-top: 1rem;

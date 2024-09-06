@@ -213,7 +213,7 @@ a.list-group-item {
         .access-text {
           color: $white;
         }
-        
+
         &::after {
           @include access-icon($access-arrow-active); // icono blanco
         }

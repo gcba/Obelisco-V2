@@ -9,7 +9,7 @@ import HeaderMobile from '../Mobile';
 export default function HeaderDesktop() {
   const gettingPages = [
     { text: 'Inicio', url: '/getting-started', id: 1 },
-    { text: 'Elementos UI/UX', url: '/components', id: 2 },
+    { text: 'Elementos', url: '/components', id: 2 },
     { text: 'Documentación', url: '/templates', id: 3 },
   ];
 

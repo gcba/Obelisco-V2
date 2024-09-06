@@ -1,0 +1,86 @@
+# Sample workflow for building and deploying a Next.js site to GitHub Pages
+#
+# To get started with Next.js see: https://nextjs.org/docs/getting-started
+#
+name: Deploy Next.js site to Pages
+
+on:
+  push:
+    branches: ['main']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Detect package manager
+        id: detect-package-manager
+        run: |
+          if [ -f "${{ github.workspace }}/app/yarn.lock" ]; then
+            echo "manager=yarn" >> $GITHUB_OUTPUT
+            echo "command=install" >> $GITHUB_OUTPUT
+            echo "runner=yarn" >> $GITHUB_OUTPUT
+            exit 0
+          elif [ -f "${{ github.workspace }}/app/package.json" ]; then
+            echo "manager=npm" >> $GITHUB_OUTPUT
+            echo "command=ci" >> $GITHUB_OUTPUT
+            echo "runner=npx --no-install" >> $GITHUB_OUTPUT
+            exit 0
+          else
+            echo "Unable to determine package manager"
+            exit 1
+          fi
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+          cache: ${{ steps.detect-package-manager.outputs.manager }}
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Restore cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            app/.next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/app/package-lock.json', '**/app/yarn.lock') }}-${{ hashFiles('app/**/*.js', 'app/**/*.jsx', 'app/**/*.ts', 'app/**/*.tsx') }}
+          restore-keys: |
+            ${{ runner.os }}-nextjs-${{ hashFiles('**/app/package-lock.json', '**/app/yarn.lock') }}-
+
+      - name: Install dependencies
+        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+        working-directory: ./app
+
+      - name: Build with Next.js
+        run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        working-directory: ./app
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./app/out
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

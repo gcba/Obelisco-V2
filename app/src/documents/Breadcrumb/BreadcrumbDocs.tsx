@@ -9,7 +9,15 @@ const BreadcrumbDocs: React.FC = () => {
     {
       title: 'Migas de pan',
       content: (
-        <MainDescription description="El componente de migas de pan ayuda a los usuarios a comprender dónde se encuentran dentro de la estructura de un sitio web y moverse entre niveles." />
+        <>
+          <MainDescription description="El componente de migas de pan ayuda a los usuarios a comprender dónde se encuentran dentro de la estructura de un sitio web y moverse entre niveles." />
+          <p className='lead mb-4'>
+            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
+            <a href="https://gcba.github.io/estandares/componentes/miga-de-pan/" target="_blank" rel="noopener noreferrer">
+              enlace.
+            </a>
+          </p>
+        </>
       ),
       h1: true,
     },
@@ -43,7 +51,7 @@ const BreadcrumbDocs: React.FC = () => {
     },
   ];
 
-  return <DocumentationTemplate sections={sections} />;
+  return <DocumentationTemplate sections={sections}/>;
 };
 
 export default BreadcrumbDocs;

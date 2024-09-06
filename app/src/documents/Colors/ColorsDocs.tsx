@@ -103,9 +103,7 @@ const ColorsDocs: React.FC = () => {
                 </div>
                 <div className="color-box bg-musket">
                   <span className="headline-md fw-bold">musket</span>
-                  <span className="text-xs">
-                    <div id="FF99E8"></div>
-                  </span>
+                  <span className="text-xs">#FF99E8</span>
                 </div>
                 <div className="color-box bg-strawberry">
                   <span className="headline-md fw-bold">strawberry</span>

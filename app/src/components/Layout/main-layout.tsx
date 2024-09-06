@@ -57,7 +57,7 @@ export const componentsPages = [
 ];
 
 export const gettingPages = [
-  { text: 'Instalacción', url: '/getting-started/installation', id: 2 },
+  { text: 'Instalación', url: '/getting-started/installation', id: 2 },
   { text: 'Importaciones', url: '/getting-started/imports', id: 3 },
 ];
 

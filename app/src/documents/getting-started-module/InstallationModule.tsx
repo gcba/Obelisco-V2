@@ -9,7 +9,6 @@ import { CDN_CODE, NPM_CODE, PNPM_CODE, YARN_CODE } from './code-views';
 const InstallationModule: React.FC = () => {
   const sections = [
     {
-      id: 'section-1',
       title: 'Instalación',
       content: (
         <MainDescription description="En esta sección, aprenderás cómo instalar y comenzar a utilizar la librería de estilos de componentes Obelisco V2 en tus proyectos. Siguiendo unos sencillos pasos, podrás integrar nuestros componentes estilizados en cualquier aplicación web, ya sea que trabajes con React, Angular, o cualquier otra tecnología." />
@@ -18,7 +17,7 @@ const InstallationModule: React.FC = () => {
       defaultTitle: true,
     },
     {
-      id: 'section-2',
+      id: 'section-1',
       title: 'Instalación con npm',
       description:
         'Para instalar la librería de componentes Obelisco V2 en tu proyecto, puedes utilizar cualquiera de los siguientes gestores de paquetes:',
@@ -46,7 +45,7 @@ const InstallationModule: React.FC = () => {
       ),
     },
     {
-      id: 'section-3',
+      id: 'section-2',
       title: 'Uso con CDN',
       description:
         'Si prefieres no instalar nada localmente, puedes incluir los estilos directamente desde nuestra CDN:',

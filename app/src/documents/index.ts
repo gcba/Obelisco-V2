@@ -3,7 +3,7 @@ export * from './Access/AccessDocs';
 export * from './Banner/BannerDocs';
 export * from './Button/ButtonDocs';
 export * from './Collapse/CollapseDocs';
-export * from './Docs/Docs'
+export * from './Docs/docs'
 export * from './NavHorizontal/NavHorizontalDocs';
 export * from './NavVertical/NavVerticalDocs';
 export * from './getting-started-module/ImportsModule';

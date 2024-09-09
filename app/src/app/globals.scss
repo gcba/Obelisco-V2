@@ -50,6 +50,7 @@ hr {
   .nav-scrollspy {
     position: relative;
     min-width: 150px;
+    width: 150px;
 
     .scrollspy {
       list-style: none;
@@ -179,7 +180,7 @@ hr {
   position: sticky;
   top: 132px;
   overflow-y: scroll;
-  height: 75dvh;
+  height: 76dvh;
 
   nav {
     padding: 0.3rem;
@@ -188,4 +189,5 @@ hr {
 }
 .box-content {
   width: 100%;
+  overflow-x: hidden;
 }

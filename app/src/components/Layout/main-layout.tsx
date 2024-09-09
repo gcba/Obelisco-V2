@@ -109,7 +109,7 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             )}
 
             {pathname.includes('/getting-started') && (
-              <div className="nav-left position-sticky">
+              <div className="nav-left sticky-nav h-auto">
                 <div className="nav-left-box-title">
                   <p className="headline-lg fw-bold">Comenzando</p>
                 </div>

@@ -186,6 +186,10 @@ hr {
     padding: 0.3rem;
     margin-bottom: 1.5rem;
   }
+
+  &.h-auto {
+    overflow-y: unset;
+  }
 }
 .box-content {
   width: 100%;

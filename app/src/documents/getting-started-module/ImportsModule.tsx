@@ -28,7 +28,7 @@ const ImportsModule: React.FC = () => {
     {
       id: 'section-2',
       title: 'Estilos',
-      description: 'Se deben importar los estilos provenientes del paquete de obelisco v2.',
+      description: 'Se deben importar los estilos provenientes del paquete de Obelisco v2.',
       content: (
         <div className="col-12">
           <SyntaxHighlighter language="html" style={dracula} wrapLongLines>

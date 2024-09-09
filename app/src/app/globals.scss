@@ -189,3 +189,13 @@ hr {
 .box-content {
   width: 100%;
 }
+//Listas en documentacion
+.docs-list {
+  li:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+  code {
+    font-size: 1rem;
+  }
+}
+

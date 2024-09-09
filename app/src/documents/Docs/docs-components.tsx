@@ -1,17 +1,8 @@
 
 import Link from 'next/link';
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
-
-import {
-  BEFORE_ALERT,
-  AFTER_ALERT,
-  BEFORE_STATUSMESSAGE,
-  AFTER_STATUSMESSAGE,
-} from './code-views';
 
 const UpdateComponents: React.FC = () => {
   const sections = [
@@ -27,36 +18,19 @@ const UpdateComponents: React.FC = () => {
     },
     {
       id: 'section-1',
-      title: 'Acceso',
+      title: 'Accesos',
       content: (
-        //   <div className="container d-flex flex-column gap-3">
-        //     <div className="alert alert-info" role="alert">
-        //       Esta es la descripción de una alerta de información.
-        //     </div>
-
-        //     <div className="alert alert-success" role="alert">
-        //       Esta es la descripción de una alerta de éxito.
-        //     </div>
-
-        //     <div className="alert alert-warning" role="alert">
-        //       Esta es la descripción de una alerta de advertencia.
-        //     </div>
-
-        //     <div className="alert alert-danger" role="alert">
-        //       Esta es la descripción de una alerta de error.
-        //     </div>
-        //   </div>
-        <ul>
-          <li>Se elimina “lista ancho por acceso”.</li>
-          <li>La lista de accesos por ancho completo, que utilizaba las clases access-deck max-cards-*, queda deprecada. </li>
+        <ul className='docs-list'>
+          <li>En el caso de que el acceso tengo solo texto, la estructura HTML se mantiene como en el caso de acceso con icono o con descripción.</li>
+          <li>La lista de accesos por ancho completo, que utilizaba las clases <code>access-deck max-cards-*</code>, queda deprecada. </li>
+          <li>Respecto a la lista de accesos con ancho por accesos, que utilizaba las clases <code>access-deck access-column max-cards-*</code> queda deprecada y se reemplazan por las clases: </li>
           <ul className='mt-2'>
-            <li>Respecto a la lista de accesos con ancho por accesos, que utilizaba las clases access-deck access-column max-cards-* queda deprecada y se reemplazan por las clases: </li>
-            <li>.access-items-1:  para accesos en 1 sola columna con un aside</li>
-            <li>.access-items-3:  para accesos en 3 columnas en desktop, 2 columnas en tablet, y 1 columna en mobile. </li>
-            <li>.access-items-3 row-cols-md-1:  para accesos en 3 columnas en desktop, 1 columna en tablet, y 1 columna en mobile. </li>
-            <li>.access-items-4:  para accesos en 4 columnas en desktop, 2 columnas en tablet, y 1 columna en mobile. </li>
-            <li>.access-items-4 row-cols-md-1:  para accesos en 4 columnas en desktop, 1 columna en tablet, y 1 columna en mobile. </li>
-            <li>Se debe tener en cuenta que, para la disposición de accesos, cada acceso se debe encontrar dentro de una etiqueta div con clase col, los cuales estarán dentro de etiqueta div con las clases mencionadas. </li>
+            <li><code>access-items-1</code>: para accesos en 1 sola columna.</li>
+            <li><code>access-items-3</code>: para accesos en 3 columnas en desktop, 2 columnas en tablet, y 1 columna en mobile.</li>
+            <li><code>access-items-3 row-cols-md-1</code>: para accesos en 3 columnas en desktop, 1 columna en tablet, y 1 columna en mobile.</li>
+            <li><code>access-items-4</code>: para accesos en 4 columnas en desktop, 2 columnas en tablet, y 1 columna en mobile.</li>
+            <li><code>access-items-4</code>: para accesos en 4 columnas en desktop, 1 columna en tablet, y 1 columna en mobile.</li>
+            <li>Se debe tener en cuenta que, para la disposición de accesos, cada acceso se debe encontrar dentro de una etiqueta <code>div</code> con clase <code>col</code>, los cuales estarán dentro de etiqueta <code>div</code> con las clases mencionadas. </li>
           </ul>
         </ul>
       ),
@@ -66,35 +40,21 @@ const UpdateComponents: React.FC = () => {
       title: 'Alerta',
       content: (
         <>
-          <ul>
-            <li>La clase alert-primary queda deprecada y es remplazada por alert-warning.</li>
-            <li>La clase alert-info tiene un nuevo color.</li>
+          <ul className='docs-list'>
+            <li>La clase <code>alert-primary</code> queda deprecada y es remplazada por <code>alert-warning</code>.</li>
             <li>En el caso de alerta con cierre, en la etiqueta <code>button</code> se reemplaza el atributo <code>data-dismiss=&quot;alert&quot;</code> por <code>data-bs-dismiss=&quot;alert&quot;</code>, y la clase <code>.close</code> se reemplaza por <code>.btn-close</code>.</li>
           </ul>
-
-          <p><strong>Antes:</strong></p>       
-          
-          <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
-            {BEFORE_ALERT}
-          </SyntaxHighlighter>
-
-          <p><strong>Ahora:</strong></p>
-
-          <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
-            {AFTER_ALERT}
-          </SyntaxHighlighter> 
         </>
       ),
     },
     {
       id: 'section-3',
-      title: 'Botón',
+      title: 'Botones',
       content: (
-        <ul>
-          <li>Se elimina la clase <code>.btn-icon</code>, no es necesaria colocarla al utilizar iconos o spinner en botón. </li>
-          <li>Se crea la clase <code>.sr-only</code> que extiende de la clase visually-hidden (accesibilidad). </li>
-          <li>Se agrega la clase <code>.o-icon</code> a los iconos de Boxicons y Material Icons Rounded. </li>
-          <li>Se crea la clase <code>.btn-xs</code> para los botones que son utilizados dentro de tablas. </li>
+        <ul className='docs-list'>
+          <li>Se elimina la clase <code>btn-icon</code>, no es necesaria colocarla al utilizar iconos o spinner en botón. </li>
+          <li>Se agrega la clase <code>o-icon</code> a los iconos de Boxicons y Material Icons Rounded. </li>
+          <li>Se crea la clase <code>btn-xs</code> para los botones que son utilizados dentro de tablas. </li>
           <li>Los botones primary y secondary han cambiado de color.</li>
         </ul>
       ),
@@ -117,7 +77,6 @@ const UpdateComponents: React.FC = () => {
               <p>bg-info</p>
               <p>bg-light</p>
               <p>bg-dark</p>
-              <p>text-body-secondary</p>
             </div>
             {/*Segunda columna*/}
             <div className="col">
@@ -131,7 +90,6 @@ const UpdateComponents: React.FC = () => {
               <p>#0086AD</p>
               <p>#F3F6F9</p>
               <p>#002733</p>
-              <p>#505E70</p>
             </div>
             {/*Tercera columna*/}
             <div className="col">
@@ -145,7 +103,6 @@ const UpdateComponents: React.FC = () => {
               <p>#007BC7</p>
               <p>#F3F6F9</p>
               <p>#38485C</p>
-              <p>-</p>
             </div>
           </div>
         </div>
@@ -156,36 +113,26 @@ const UpdateComponents: React.FC = () => {
       title: 'Desplegables de navegación y selección',
       content: (
         <>
-          <ul>
-            <li>Se elimina de la etiqueta <code>button</code> de dropdown el atributo 
-              <code>aria-haspopup=&quot;true&quot;</code> y se reemplaza <code>data-toggle=&quot;dropdown&quot;</code> por 
-              <code>data-bs-toggle=&quot;dropdown&quot;</code>.
+          <ul className='docs-list'>
+            <li>Se elimina de la etiqueta <code>button</code> de dropdown el atributo <code>aria-haspopup=&quot;true&quot;</code> y se reemplaza <code>data-toggle=&quot;dropdown&quot;</code> por <code>data-bs-toggle=&quot;dropdown&quot;</code>.
             </li>
-            <li>Se elimina la clase <code>.dropdown-toggle</code> de la etiqueta <code>button</code> de dropdown.</li>
-            <li>Al <code>span</code> con clase <code>.btn-dropdown-text</code> (que se encuentra dentro de la etiqueta 
-              <code>button</code> del dropdown), se agrega la clase <code>.ellipsis-1</code>.
+            <li>Se elimina la clase <code>dropdown-toggle</code> de la etiqueta <code>button</code> de dropdown.</li>
+            <li>Al <code>span</code> con clase <code>btn-dropdown-text</code> (que se encuentra dentro de la etiqueta <code>button</code> del dropdown), se agrega la clase <code>ellipsis-1</code>.
             </li>
-            <li>En el caso de los items del desplegable con texto alineado hacia la derecha, se reemplazan las clases 
-              <code>.text-right</code> por <code>.text-end</code>.
+            <li>En el caso de los items del desplegable con texto alineado hacia la derecha, se reemplazan las clases <code>text-right</code> por <code>text-end</code>.
             </li>
-            <li>En el caso de desplegable con disposición a la derecha, se reemplaza la clase 
-              <code>.dropdown-menu-right</code> por <code>.dropdown-menu-end</code>.
+            <li>En el caso de desplegable con disposición a la derecha, se reemplaza la clase <code>dropdown-menu-right</code> por <code>dropdown-menu-end</code>.
             </li>
-            <li>Se agrega la clase <code>.o-icon</code> a los iconos de Boxicons y Material Icons Rounded.</li>
-            <li>Se modifica la estructura HTML de &apos;Desplegable con cascada&apos;, se utiliza la variante &quot;Click outside&quot; de Bootstrap 5. 
+            <li>Se agrega la clase <code>o-icon</code> a los iconos de Boxicons y Material Icons Rounded.</li>
+            <li>Se modifica la estructura HTML de <strong>&apos;Desplegable con cascada&apos;</strong>, se utiliza la variante &quot;Click outside&quot; de Bootstrap 5. 
               Se agrega a la etiqueta <code>button</code> del desplegable el atributo <code>data-bs-auto-close=&quot;outside&quot;</code>. 
               El dropdown en cascada (el que se encuentra dentro de dropdown) tiene la misma estructura HTML que dropdown, con la diferencia de que 
               al <code>div</code> con clase <code>dropdown</code> se le agrega la clase <code>sub-dropdown</code>.
             </li>
-            <li>Respecto a los tamaños de desplegables, se crean las clases <code>dropdown-lg</code> y <code>dropdown-sm</code>, las cuales 
-              se utilizan en la etiqueta <code>div</code> con clase <code>dropdown</code>, y se eliminan las clases <code>btn-dropdown-lg</code> 
-              y <code>btn-dropdown-sm</code> de la etiqueta <code>button</code> del desplegable.
+            <li>Respecto a los tamaños de desplegables, se crean las clases <code>dropdown-lg</code> y <code>dropdown-sm</code>, las cuales se utilizan en la etiqueta <code>div</code> con clase <code>dropdown</code>, y se eliminan las clases  <code>btn-dropdown-lg</code> y <code>btn-dropdown-sm</code> de la etiqueta <code>button</code> del desplegable.
             </li>
-            <li>Se modifica la estructura HTML de &apos;Desplegable de selección&apos;, se utiliza la variante &quot;Click outside&quot; de Bootstrap 5. 
-              Se eliminan de la etiqueta <code>button</code> del desplegable los atributos <code>data-toggle=&quot;collapse&quot;</code>, 
-              <code>data-target</code> y <code>aria-controls</code>, y se reemplazan por <code>data-bs-toggle=&quot;dropdown&quot;</code> y 
-              <code>data-bs-auto-close=&quot;outside&quot;</code>. Se elimina la clase <code>dropdown-form</code>. Se modifica la estructura HTML 
-              de los inputs de selección.
+            <li>Se modifica la estructura HTML de <strong>&apos;Desplegable de selección&apos;</strong>, se utiliza la variante &quot;Click outside&quot; de Bootstrap 5. 
+              Se eliminan de la etiqueta <code>button</code> del desplegable los atributos <code>data-toggle=&quot;collapse&quot;</code>, <code>data-target</code> y <code>aria-controls</code>, y se reemplazan por <code>data-bs-toggle=&quot;dropdown&quot;</code> y <code>data-bs-auto-close=&quot;outside&quot;</code>. Se elimina la clase <code>dropdown-form</code>. Se modifica la estructura HTML de los inputs de selección.
             </li>
           </ul>
         </>
@@ -195,7 +142,7 @@ const UpdateComponents: React.FC = () => {
       id: 'section-6',
       title: 'Enlace',
       content: (
-        <ul>
+        <ul className='docs-list'>
           <li>Se agrega en los enlaces el atributo <code>rel=&quot;noopener noreferrer&quot;</code>.</li>
         </ul>
       ),
@@ -204,29 +151,29 @@ const UpdateComponents: React.FC = () => {
       id: 'section-7',
       title: 'Etiquetas',
       content: (
-        <ul>
-          <li>Se crean las clases <code>.badge-default</code> y <code>.badge-warning</code>. </li>
-          <li>Las clases <code>.badge-primary</code>  y <code>.badge-secondary</code> quedan deprecadas. </li>
+        <ul className='docs-list'>
+          <li>Se crean las clases <code>badge-default</code> y <code>badge-warning</code>. </li>
+          <li>Las clases <code>badge-primary</code>  y <code>badge-secondary</code> quedan deprecadas. </li>
         </ul>
       ),
     },
     {
       id: 'section-8',
-      title: 'Formulario – Casillas de selección (Radio y Checkbox)',
+      title: 'Formulario - Casillas de selección (Radio y Checkbox)',
       content: (
-        <ul>
+        <ul className='docs-list'>
           <li>En el caso de checkbox:</li>
 
-          <ul>
-            <li>Las clases <code> custom-control</code>, <code>custom-checkbox</code> se reemplazan por <code>form-checkbox</code>  </li>
-            <li>La clase <code> custom-control-input</code> se reemplaza por <code>form-checkbox-input</code> </li>
-            <li>La clase <code> custom-control-label</code> se reemplaza por <code>form-checkbox-label</code> </li>
+          <ul className='mb-3'>
+            <li>Las clases <code> custom-control</code>, <code>custom-checkbox</code> se reemplazan por <code>form-checkbox</code>. </li>
+            <li>La clase <code> custom-control-input</code> se reemplaza por <code>form-checkbox-input</code>. </li>
+            <li>La clase <code> custom-control-label</code> se reemplaza por <code>form-checkbox-label</code>. </li>
           </ul>
           <li>En el caso de radio: </li>
           <ul>
-            <li>Las clases <code>custom-control</code> <code>custom-radio</code> se reemplazan por <code> form-radio</code> </li>
-            <li>La clase <code>custom-control-input</code> se reemplaza por <code> form-radio-input</code> </li>
-            <li>La clase <code>custom-control-label</code> se reemplaza por <code> form-radio-label</code> </li>
+            <li>Las clases <code>custom-control</code> <code>custom-radio</code> se reemplazan por <code> form-radio</code>. </li>
+            <li>La clase <code>custom-control-input</code> se reemplaza por <code> form-radio-input</code>. </li>
+            <li>La clase <code>custom-control-label</code> se reemplaza por <code> form-radio-label</code>. </li>
           </ul>
         </ul>
       ),
@@ -293,22 +240,10 @@ const UpdateComponents: React.FC = () => {
       title: 'Mensaje de estados',
       content: (
         <>        
-          <ul>
-            <li>Se crea la clase <code>&quot;status-warning&quot;</code> (NUEVA).</li>
-            <li>Se cambia <code>&apos;data-target&apos;</code> a <code>&apos;data-bs-target&apos;</code>.</li>
+          <ul className='docs-list'>
+            <li>La clase <code>status-primary</code> queda deprecada y es remplazada por <code>status-warning</code>.</li>
+            <li>Se reemplaza el atributo <code>&apos;data-target&apos;</code> por <code>&apos;data-bs-target&apos;</code>.</li>
           </ul>
-
-          <p>antes</p>
-          
-          <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
-            {BEFORE_STATUSMESSAGE}
-          </SyntaxHighlighter>
-
-          <p>despues</p>
-
-          <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
-            {AFTER_STATUSMESSAGE}
-          </SyntaxHighlighter>
         </>
       ),
     },
@@ -316,10 +251,10 @@ const UpdateComponents: React.FC = () => {
       id: 'section-11',
       title: 'Modal',
       content: (
-        <ul>
-          <li>Se modifica <code>&apos;data-toggle&apos;</code> a <code>&apos;data-bs-toggle&apos;</code></li>
-          <li>Se modifica <code>&apos;data-target&apos;</code> a <code>&apos;data-bs-target&apos;</code></li>
-          <li>Se modifica <code>&apos;data-dismiss&apos;</code> a <code>&apos;data-bs-dismiss&apos;</code></li>
+        <ul className='docs-list'>
+          <li>Se reemplaza el atributo <code>&apos;data-toggle&apos;</code> por <code>&apos;data-bs-toggle&apos;</code></li>
+          <li>Se reemplaza el atributo <code>&apos;data-target&apos;</code> por <code>&apos;data-bs-target&apos;</code></li>
+          <li>Se reemplaza el atributo <code>&apos;data-dismiss&apos;</code> por <code>&apos;data-bs-dismiss&apos;</code></li>
           <li>Eliminación del <code>&apos;role=&quot;dialog&quot;&apos;</code> y <code>&apos;role=&quot;document&quot;&apos;</code> ya que Bootstrap 5 lo maneja automáticamente</li>
         </ul>
       ),
@@ -328,7 +263,7 @@ const UpdateComponents: React.FC = () => {
       id: 'section-12',
       title: 'Pestaña',
       content: (
-        <ul>
+        <ul className='docs-list'>
           <li>Se modifica la clase <code>&apos;tabs-slider&apos;</code> por <code>&apos;tabs-box&apos;</code>.</li>
           <li>Se modifica la clase <code>&apos;fixedwith&apos;</code> por <code>&apos;fixed-width&apos;</code>.</li>
           <li>Se modifica la clase <code>&apos;icons-container&apos;</code> por <code>&apos;tabs-controls&apos;</code>.</li>
@@ -340,15 +275,15 @@ const UpdateComponents: React.FC = () => {
     },
     {
       id: 'section-13',
-      title: 'Tipografia',
+      title: 'Tipografía',
       content: (
-        <ul>
-          <li>Se crean las siguientes clases para el Cuerpo: .text-xl, .text-lg, .text-md, .text-sm las cuales corresponden a los tamaños Cuerpo XL, Cuerpo L, Cuerpo M, y Cuerpo SM, respectivamente. La clase text-xs se utiliza para Cuerpo XS. </li>
-          <li>Respecto a la categoría Titulares, se crearon las clases .headline-lg, .headline-md, y .headline-sm que corresponden a Titulares L, Titulares M y Titulares S. </li>
-          <li>Las clases .font-weight-* se renombraron a .fw-*. Las clases .fw-bold, .fw-semibold, y .fw-normal, se utilizan para los valores de font-weight de 700,600 y 400 respectivamente. </li>
-          <li>La clase .font-italic se renombro a .fst-italic. </li>
-          <li>Se crearon las clases .underline-1 y .underline-2 las cuales dan un subrayado al elemento. En el primer caso, el grosor del subrayado es 1px y en el segundo caso es 2px. </li>
-          <li>Respecto a las citas, se reemplaza la etiqueta small (utilizada para la información del autor) por etiqueta p con clase .author. </li>
+        <ul className='docs-list'>
+          <li>Se crean las siguientes clases para el Cuerpo: <code>text-xl</code>, <code>text-lg</code>, <code>text-md</code> y <code>text-sm</code>, las cuales corresponden a los tamaños Cuerpo XL, Cuerpo L, Cuerpo M, y Cuerpo SM, respectivamente. La clase <code>text-xs</code> se utiliza para Cuerpo XS. </li>
+          <li>Respecto a la categoría Titulares, se crearon las clases <code>headline-lg</code>, <code>headline-md</code> y <code>headline-sm</code>, que corresponden a Titulares L, Titulares M y Titulares S. </li>
+          <li>Las clases <code>font-weight-*</code>, se renombraron a <code>fw-*</code>. Las clases <code>fw-bold</code>, <code>fw-semibold</code> y <code>fw-normal</code>, se utilizan para los valores de font-weight de <code>700</code>, <code>600</code> y <code>400</code> respectivamente. </li>
+          <li>La clase <code>font-italic</code> se renombro a <code>fst-italic</code>. </li>
+          <li>Se crearon las clases <code>underline-1</code> y <code>underline-2</code> las cuales dan un subrayado al elemento. En el primer caso, el grosor del subrayado es 1px y en el segundo caso es 2px. </li>
+          <li>Respecto a las citas, se reemplaza la etiqueta <code>small</code> (utilizada para la información del autor) por etiqueta <code>p</code> con clase <code>author</code>. </li>
         </ul>
       ),
     },
@@ -356,12 +291,21 @@ const UpdateComponents: React.FC = () => {
       id: 'section-14',
       title: 'Iconos',
       content: (
-        <ul>
+        <ul className='docs-list'>
           <li>Se crea la clase <code>o-icon</code>. Todo componente de Obelisco que lleve un ícono de Boxicons o Material Symbols requiere que se le añada la clase <code>o-icon</code> para que aplique los estilos correspondientes a su componente.</li>
         </ul>
       ),
     },
-    {id: 'section-15',
+    {
+      id: 'section-15',
+      title: 'Accesibilidad',
+      content: (
+        <ul className='docs-list'>
+          <li>Se crea la clase <code>sr-only</code> que extiende de la clase <code>visually-hidden</code>. </li>
+        </ul>
+      ),
+    },
+    {id: 'section-16',
       title: 'Comenzar a usar componentes',
       content: (
         <>

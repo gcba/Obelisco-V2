@@ -7,9 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
-    "eslint:format": "eslint src --fix .",
-    "prettier:format": "prettier --write .",
-    "prettier:check": "prettier --check ."
+    "lint:format": "eslint src --fix .",
+    "prettier:check": "prettier --check .",
+    "prettier:format": "prettier --write ."
   },
   "dependencies": {
     "@makotot/ghostui": "^2.0.0",

@@ -71,7 +71,6 @@ const ColorsDocs: React.FC = () => {
                 <div className="text-white bg-dark">white</div>
                 <div className="text-black">black</div>
                 <div className="text-body-secondary">text-body-secondary</div>
-                <div className="text-body-tertiary">text-body-tertiary</div>
               </div>
             </div>
           </CodeBox>
@@ -104,9 +103,7 @@ const ColorsDocs: React.FC = () => {
                 </div>
                 <div className="color-box bg-musket">
                   <span className="headline-md fw-bold">musket</span>
-                  <span className="text-xs">
-                    <div id="FF99E8"></div>
-                  </span>
+                  <span className="text-xs">#FF99E8</span>
                 </div>
                 <div className="color-box bg-strawberry">
                   <span className="headline-md fw-bold">strawberry</span>

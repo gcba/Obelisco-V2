@@ -3,7 +3,8 @@ import Docs from "@/documents/Docs/Docs";
 export default function Documentacion() {
   return (
    <>
-   <Docs/>
-   </>
+     <Docs/>
+     <h1>Documentacion</h1>
+    </>
   );
 }

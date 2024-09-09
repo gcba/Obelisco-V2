@@ -2,7 +2,7 @@
 // @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded');
 @import url('../../node_modules/boxicons/css/boxicons.min.css');
-@import '../../../dist/styles.css';
+@import '../../styles/main.css';
 
 // Generic Styles
 html {
@@ -112,7 +112,34 @@ hr {
 
 // Toast Styles
 .custom-toast {
-  box-shadow: 0 4px 12px #00000002;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.075);
+  font-family:
+    'Nunito',
+    'Open Sans',
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    roboto,
+    'Helvetica Neue',
+    arial,
+    'Noto Sans',
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    'Noto Color Emoji';
+  font-size: 0.875rem;
+  color: #101e37;
+  background-color: #f3f6f9;
+  right: 0;
+
+  div[data-title] {
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  div[data-icon] {
+    color: #26874a;
+  }
 }
 
 // End Toast Styles
@@ -136,7 +163,7 @@ hr {
 }
 
 .color-box {
-  width: 192px;
+  width: 250px;
   height: 72px;
   border-radius: 0.5rem;
   text-align: center;

@@ -7,7 +7,7 @@ import NavLayout from './Navigation/nav';
 
 export const stylesPages = [
   { text: 'Colores', url: '/components/colors', id: 1 },
-  { text: 'Espaciado', url: '/components/grid', id: 2 },
+  { text: 'Grilla', url: '/components/grid', id: 2 },
   { text: 'Tipografia', url: '/components/typography', id: 3 },
 ];
 export const formsPages = [
@@ -57,7 +57,7 @@ export const componentsPages = [
 ];
 
 export const gettingPages = [
-  { text: 'Instalacción', url: '/getting-started/installation', id: 2 },
+  { text: 'Instalación', url: '/getting-started/installation', id: 2 },
   { text: 'Importaciones', url: '/getting-started/imports', id: 3 },
 ];
 

@@ -1,3 +1,5 @@
+// Importa todos los documentos que contienen la explicación de cada componente.
+// Estos documentos serán renderizados dinámicamente dependiendo del componente que se seleccione.
 import AccessDocs from '@/documents/Access/AccessDocs';
 import AlertDocs from '@/documents/Alert/AlertDocs';
 import BadgeDocs from '@/documents/Badge/BadgeDocs';
@@ -39,9 +41,12 @@ import TabsDocs from '@/documents/Tabs/TabsDocs';
 import TooltipDocs from '@/documents/Tooltip/TooltipDocs';
 import TypographyDocs from '@/documents/Typography/TypographyDocs';
 import { notFound } from 'next/navigation';
+import React from 'react';
 
-// davis: se mapean las url con componentes
-const componentMap: { [key: string]: React.ReactNode } = {
+// Un mapa que asocia un nombre de componente con el componente JSX correspondiente.
+// Cuando se reciba el nombre de un componente, se utilizará este mapa para obtener
+// y renderizar la documentación adecuada para ese componente.
+const componentMap: Record<string, JSX.Element | null> = {
   alert: <AlertDocs />,
   access: <AccessDocs />,
   badge: <BadgeDocs />,
@@ -83,24 +88,66 @@ const componentMap: { [key: string]: React.ReactNode } = {
   'steps-form': <StepsFormDocs />,
 };
 
-export default function ComponentPage({ params }: { params: { componentName: string } }) {
-  const { componentName } = params;
+// La función generateStaticParams es propia de Next.js y se utiliza en rutas dinámicas con generación estática.
+// Esta función genera todos los parámetros necesarios para pre-renderizar páginas dinámicas en tiempo de construcción (build).
+// En este caso, está generando los parámetros necesarios para las rutas de los componentes de documentación.
+export async function generateStaticParams(): Promise<Array<{ componentName: string }>> {
+  // Lista de nombres de componentes que tienen documentación asociada
+  const componentNames: string[] = [
+    'alert',
+    'access',
+    'badge',
+    'banner',
+    'block',
+    'button',
+    'cards',
+    'collapse',
+    'colors',
+    'link',
+    'modal',
+    'nav-horizontal',
+    'nav-vertical',
+    'status-message',
+    'switch',
+    'tabs',
+    'tooltip',
+    'typography',
+    'dropdown-sel',
+    'dropdown-nav',
+    'grid',
+    'spinner',
+    'map',
+    'highlighted',
+    'breadcrumb',
+    'form-text',
+    'form-selection',
+    'form-search',
+    'gallery',
+    'pagination',
+    'progress-bar',
+    'table',
+  ];
 
-  const component = componentMap[componentName];
-
-  if (!component) {
-    notFound(); // davis: reemplazar estio por componente notfound
-  }
-
-  return (
-    <div>
-      {/* <h1>{componentName} Component</h1> */}
-      {component}
-    </div>
-  );
+  // Devuelve un array de objetos donde cada uno tiene el nombre de un componente,
+  // que será utilizado como parámetro para generar rutas dinámicas para cada componente.
+  // Cada componente tendrá una página de documentación estática pre-generada.
+  return componentNames.map((name) => ({
+    componentName: name,
+  }));
 }
 
-/*  
-  davis: esta page hace uso de componentMap, el cual asigna a cada ruta generada y pre renderizada de "generateStaticParams.ts" un componentDocuments, 
-  de manera que cada ruta tendra su documentacion de componente asignada correctamente.
-*/
+// Componente que representa una página dinámica que renderiza la documentación
+// de un componente basado en el parámetro de la URL (el nombre del componente).
+export default function ComponentPage({ params }: { params: { componentName: string } }) {
+  const { componentName } = params; // Extrae el nombre del componente de los parámetros
+
+  const component = componentMap[componentName]; // Busca la documentación correspondiente en el mapa
+
+  // Si el componente no existe en el mapa, muestra una página de error 404
+  if (!component) {
+    return notFound();
+  }
+
+  // Si el componente se encuentra, lo renderiza
+  return <>{component}</>;
+}

@@ -1,14 +1,14 @@
 export const DROPDOWN = `
-  <div class="dropdown">
+  <div class="dropdown dropdown-lg">
     <button
       type="button"
-      class="btn btn-dropdown btn-dropdown-lg btn-dropdown-border"
+      class="btn btn-dropdown btn-dropdown-border"
       data-bs-toggle="dropdown"
       aria-expanded="false"
     >
       <span class="btn-dropdown-text ellipsis-1">Desplegable</span>
       <span
-        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        class="material-symbols-rounded btn-dropdown-icon"
         aria-label="hidden"
       >
         expand_more
@@ -37,7 +37,7 @@ export const DROPDOWN = `
         <i class="bx bxs-info-circle o-icon"></i>
       </a>
       <a class="dropdown-item item-danger" href="#">
-        <span class="material-symbols-rounded">
+        <span class="material-symbols-rounded o-icon" aria-hidden="true">
           logout
         </span>
         <span class="item-text">Cerrar sesión</span>
@@ -46,10 +46,10 @@ export const DROPDOWN = `
   </div>
 `;
 export const DROPDOWN_MENU_ICON = `
-  <div class="dropdown">
+  <div class="dropdown dropdown-lg">
     <button
       type="button"
-      class="btn btn-dropdown btn-dropdown-lg btn-dropdown-border"
+      class="btn btn-dropdown btn-dropdown-border"
       data-bs-toggle="dropdown"
       aria-expanded="false"
     >
@@ -89,10 +89,10 @@ export const DROPDOWN_MENU_ICON = `
   </div>
 `;
 export const DROPDOWN_MENU_ICON_ONLY = `
-  <div class="dropdown">
+  <div class="dropdown dropdown-lg">
     <button
       type="button"
-      class="btn btn-dropdown btn-dropdown-lg btn-dropdown-border"
+      class="btn btn-dropdown btn-dropdown-border"
       data-bs-toggle="dropdown"
       aria-expanded="false"
       aria-label="Menu"
@@ -132,15 +132,15 @@ export const DROPDOWN_MENU_ICON_ONLY = `
   </div>
 `;
 export const DROPDOWN_MENU_RIGHT = `
-  <div class="dropdown">
+  <div class="dropdown dropdown-lg">
     <button
       type="button"
-      class="btn btn-dropdown btn-dropdown-lg btn-dropdown-border"
+      class="btn btn-dropdown btn-dropdown-border"
       data-bs-toggle="dropdown"
       aria-expanded="false"
     >
       <span
-        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        class="material-symbols-rounded btn-dropdown-icon"
         aria-label="hidden"
       >
         expand_more
@@ -176,17 +176,17 @@ export const DROPDOWN_MENU_RIGHT = `
   </div>
 `;
 export const DROPDOWN_CASCADE = `
-  <div class="dropdown">
+  <div class="dropdown dropdown-lg">
     <button
       type="button"
-      class="btn btn-dropdown btn-dropdown-lg btn-dropdown-border"
+      class="btn btn-dropdown btn-dropdown-border"
       data-bs-toggle="dropdown"
       aria-expanded="false"
       data-bs-auto-close="outside"
     >
       <span class="btn-dropdown-text ellipsis-1">Desplegable</span>
       <span
-        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        class="material-symbols-rounded btn-dropdown-icon"
         aria-label="hidden"
       >
         expand_more
@@ -196,7 +196,7 @@ export const DROPDOWN_CASCADE = `
       <div class="dropdown sub-dropdown">
         <button
           type="button"
-          class="btn btn-dropdown btn-dropdown-lg"
+          class="btn btn-dropdown"
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
@@ -205,7 +205,7 @@ export const DROPDOWN_CASCADE = `
             Opción en cascada
           </span>
           <span
-            class="material-symbols-rounded o-icon btn-dropdown-icon"
+            class="material-symbols-rounded btn-dropdown-icon"
             aria-label="hidden"
           >
             expand_more
@@ -253,16 +253,16 @@ export const DROPDOWN_CASCADE = `
   </div>
 `;
 export const DROPDOWN_CASCADE_RIGHT = `
-  <div class="dropdown">
+  <div class="dropdown dropdown-lg">
     <button
       type="button"
-      class="btn btn-dropdown btn-dropdown-lg btn-dropdown-border"
+      class="btn btn-dropdown btn-dropdown-border"
       data-bs-toggle="dropdown"
       aria-expanded="false"
       data-bs-auto-close="outside"
     >
       <span
-        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        class="material-symbols-rounded btn-dropdown-icon"
         aria-label="hidden"
       >
         expand_more
@@ -273,12 +273,12 @@ export const DROPDOWN_CASCADE_RIGHT = `
       <div class="dropdown sub-dropdown">
         <button
           type="button"
-          class="btn btn-dropdown btn-dropdown-lg"
+          class="btn btn-dropdown"
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
           <span
-            class="material-symbols-rounded o-icon btn-dropdown-icon"
+            class="material-symbols-rounded btn-dropdown-icon"
             aria-label="hidden"
           >
             expand_more

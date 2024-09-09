@@ -17,7 +17,19 @@ const NavVerticalDocs: React.FC = () => {
       title: 'Navegación Vertical',
       h1: true,
       content: (
-        <MainDescription description="La navegación vertical debe usarse cuando el espacio horizontal es más amplio y cuando la lista de secciones es mayor de lo que se puede presentar al usuario en un formato horizontal. También se pueden usar como anclas dentro del contenido en una sola página." />
+        <>
+          <MainDescription description="La navegación vertical debe usarse cuando el espacio horizontal es más amplio y cuando la lista de secciones es mayor de lo que se puede presentar al usuario en un formato horizontal. También se pueden usar como anclas dentro del contenido en una sola página." />
+          <p className="lead mb-4">
+            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
+            <a
+              href="https://gcba.github.io/estandares/componentes/navegacion/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              enlace.
+            </a>
+          </p>
+        </>
       ),
     },
     {

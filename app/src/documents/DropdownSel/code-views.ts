@@ -13,9 +13,9 @@ export const DROPDOWN_CHECKBOX = `
     >
       person
     </span>
-    <span class="btn-dropdown-text">Desplegable</span>
+    <span class="btn-dropdown-text ellipsis-1">Desplegable</span>
     <span
-      class="material-symbols-rounded o-icon btn-dropdown-icon"
+      class="material-symbols-rounded btn-dropdown-icon"
       aria-label="hidden"
     >
       expand_more
@@ -77,9 +77,9 @@ export const DROPDOWN_RADIO = `
       >
         person
       </span>
-      <span class="btn-dropdown-text">Desplegable</span>
+      <span class="btn-dropdown-text ellipsis-1">Desplegable</span>
       <span
-        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        class="material-symbols-rounded btn-dropdown-icon"
         aria-label="hidden"
       >
         expand_more
@@ -141,9 +141,9 @@ export const DROPDOWN_RADIO_SIZES = `
       >
         person
       </span>
-      <span class="btn-dropdown-text">Desplegable</span>
+      <span class="btn-dropdown-text ellipsis-1">Desplegable</span>
       <span
-        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        class="material-symbols-rounded btn-dropdown-icon"
         aria-label="hidden"
       >
         expand_more
@@ -204,9 +204,9 @@ export const DROPDOWN_RADIO_SIZES = `
       >
         person
       </span>
-      <span class="btn-dropdown-text">Desplegable</span>
+      <span class="btn-dropdown-text ellipsis-1">Desplegable</span>
       <span
-        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        class="material-symbols-rounded btn-dropdown-icon"
         aria-label="hidden"
       >
         expand_more
@@ -267,9 +267,9 @@ export const DROPDOWN_RADIO_SIZES = `
       >
         person
       </span>
-      <span class="btn-dropdown-text">Desplegable</span>
+      <span class="btn-dropdown-text ellipsis-1">Desplegable</span>
       <span
-        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        class="material-symbols-rounded btn-dropdown-icon"
         aria-label="hidden"
       >
         expand_more
@@ -331,9 +331,9 @@ export const DROPDOWN_RADIO_SIZES_MD = `
       >
         person
       </span>
-      <span class="btn-dropdown-text">Desplegable</span>
+      <span class="btn-dropdown-text ellipsis-1">Desplegable</span>
       <span
-        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        class="material-symbols-rounded btn-dropdown-icon"
         aria-label="hidden"
       >
         expand_more
@@ -395,9 +395,9 @@ export const DROPDOWN_RADIO_SIZES_LG = `
       >
         person
       </span>
-      <span class="btn-dropdown-text">Desplegable</span>
+      <span class="btn-dropdown-text ellipsis-1">Desplegable</span>
       <span
-        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        class="material-symbols-rounded btn-dropdown-icon"
         aria-label="hidden"
       >
         expand_more
@@ -459,9 +459,9 @@ export const DROPDOWN_RADIO_SIZES_SM = `
       >
         person
       </span>
-      <span class="btn-dropdown-text">Desplegable</span>
+      <span class="btn-dropdown-text ellipsis-1">Desplegable</span>
       <span
-        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        class="material-symbols-rounded btn-dropdown-icon"
         aria-label="hidden"
       >
         expand_more
@@ -523,9 +523,9 @@ export const DROPDOWN_CHECKBOX_SIZES_MD = `
       >
         person
       </span>
-      <span class="btn-dropdown-text">Desplegable</span>
+      <span class="btn-dropdown-text ellipsis-1">Desplegable</span>
       <span
-        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        class="material-symbols-rounded btn-dropdown-icon"
         aria-label="hidden"
       >
         expand_more
@@ -587,9 +587,9 @@ export const DROPDOWN_CHECKBOX_SIZES_SM = `
       >
         person
       </span>
-      <span class="btn-dropdown-text">Desplegable</span>
+      <span class="btn-dropdown-text ellipsis-1">Desplegable</span>
       <span
-        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        class="material-symbols-rounded btn-dropdown-icon"
         aria-label="hidden"
       >
         expand_more
@@ -651,9 +651,9 @@ export const DROPDOWN_CHECKBOX_SIZES_LG = `
       >
         person
       </span>
-      <span class="btn-dropdown-text">Desplegable</span>
+      <span class="btn-dropdown-text ellipsis-1">Desplegable</span>
       <span
-        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        class="material-symbols-rounded btn-dropdown-icon"
         aria-label="hidden"
       >
         expand_more
@@ -718,7 +718,7 @@ export const DROPDOWN_RADIO_HTML = `
       </span>
       <span class="btn-dropdown-text ellipsis-1" id="btnDropdownRadioTextJs">Desplegable</span>
       <span
-        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        class="material-symbols-rounded btn-dropdown-icon"
         aria-label="hidden"
       >
         expand_more
@@ -786,7 +786,7 @@ export const DROPDOWN_CHECKBOX_HTML = `
       </span>
       
       <span
-        class="material-symbols-rounded o-icon btn-dropdown-icon"
+        class="material-symbols-rounded btn-dropdown-icon"
         aria-label="hidden"
       >
         expand_more

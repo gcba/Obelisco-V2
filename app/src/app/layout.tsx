@@ -15,6 +15,11 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
+        <title>Obelisco V2</title>
+        <meta
+          name="description"
+          content="Obelisco v2 es un Sistema de diseño basado en componentes para productos digitales de la Ciudad de Buenos Aires."
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
           rel="stylesheet"

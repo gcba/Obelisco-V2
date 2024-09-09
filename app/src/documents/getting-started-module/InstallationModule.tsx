@@ -15,6 +15,7 @@ const InstallationModule: React.FC = () => {
         <MainDescription description="En esta sección, aprenderás cómo instalar y comenzar a utilizar la librería de estilos de componentes Obelisco V2 en tus proyectos. Siguiendo unos sencillos pasos, podrás integrar nuestros componentes estilizados en cualquier aplicación web, ya sea que trabajes con React, Angular, o cualquier otra tecnología." />
       ),
       h1: true,
+      defaultTitle: true,
     },
     {
       id: 'section-2',
@@ -22,7 +23,7 @@ const InstallationModule: React.FC = () => {
       description:
         'Para instalar la librería de componentes Obelisco V2 en tu proyecto, puedes utilizar cualquiera de los siguientes gestores de paquetes:',
       content: (
-        <>
+        <div className="col-12">
           <h3 className="headline-lg">npm:</h3>
           <SyntaxHighlighter language="bash" style={dracula}>
             {NPM_CODE}
@@ -41,7 +42,7 @@ const InstallationModule: React.FC = () => {
           <SyntaxHighlighter language="bash" style={dracula}>
             {PNPM_CODE}
           </SyntaxHighlighter>
-        </>
+        </div>
       ),
     },
     {
@@ -50,9 +51,11 @@ const InstallationModule: React.FC = () => {
       description:
         'Si prefieres no instalar nada localmente, puedes incluir los estilos directamente desde nuestra CDN:',
       content: (
-        <SyntaxHighlighter language="html" style={dracula}>
-          {CDN_CODE}
-        </SyntaxHighlighter>
+        <div className="col-12">
+          <SyntaxHighlighter language="html" style={dracula}>
+            {CDN_CODE}
+          </SyntaxHighlighter>
+        </div>
       ),
     },
   ];

@@ -75,7 +75,7 @@ const CodeBox = ({ codeHTML, children, codeJS }: { codeHTML: string; children?: 
       navigator.clipboard.writeText(codeToCopy);
 
       toast.success('Copiado', {
-        duration: 1000,
+        duration: 1500,
         className: 'custom-toast',
         description: 'Se copió correctamente',
       });
@@ -141,7 +141,7 @@ const CodeBox = ({ codeHTML, children, codeJS }: { codeHTML: string; children?: 
           )}
         </ul>
       </nav>
-      <div className={`tab-content ${styles.tabCodeBox}`} id={`icon-myTabContent-${id}`}>
+      <div className={`tab-content overflow-hidden ${styles.tabCodeBox}`} id={`icon-myTabContent-${id}`}>
         <div
           className="tab-pane fade show active"
           id={`panel-bg-content-1-${id}`}
@@ -151,7 +151,7 @@ const CodeBox = ({ codeHTML, children, codeJS }: { codeHTML: string; children?: 
           <div className="py-5">{children}</div>
         </div>
         <div
-          className="tab-pane fade p-2 position-relative"
+          className="tab-pane fade p-3 position-relative"
           id={`panel-bg-content-2-${id}`}
           role="tabpanel"
           aria-labelledby={`tab-bg-2-${id}`}
@@ -179,16 +179,16 @@ const CodeBox = ({ codeHTML, children, codeJS }: { codeHTML: string; children?: 
             </button>
           </div>
           {showButtonHTML && (
-            <button className={`btn btn-primary btn-sm ${styles.codeBoxButton}`} onClick={toggleExpandHTML}>
+            <button className={`btn btn-outline-link btn-sm my-2 ${styles.codeBoxButton}`} onClick={toggleExpandHTML}>
               {isExpandedHTML ? 'Ver menos' : 'Ver más'}
               <span
                 className={`material-symbols-rounded ${styles.codeBoxButtonIcon} ${isExpandedHTML ? styles.expanded : ''}`}
+                aria-hidden="true"
               >
                 keyboard_arrow_down
               </span>
             </button>
           )}
-          <Toaster position="bottom-right" expand={false} />
         </div>
         {codeJS && (
           <div
@@ -224,15 +224,16 @@ const CodeBox = ({ codeHTML, children, codeJS }: { codeHTML: string; children?: 
                 {isExpandedJS ? 'Ver menos' : 'Ver más'}
                 <span
                   className={`material-symbols-rounded ${styles.codeBoxButtonIcon} ${isExpandedJS ? styles.expanded : ''}`}
+                  aria-hidden="true"
                 >
                   keyboard_arrow_down
                 </span>
               </button>
             )}
-            <Toaster position="bottom-right" expand={false} />
           </div>
         )}
       </div>
+      <Toaster position="bottom-right" expand={false} />
     </>
   );
 };

@@ -16,7 +16,15 @@ const BannerDocs: React.FC = () => {
     {
       title: 'Banner',
       content: (
-        <MainDescription description="Los banners muestran mensajes importantes y breves, a modo de aviso general, para informar a los usuarios sobre temas de diverso interés. Se muestran al ancho completo." />
+        <>
+          <MainDescription description="Los banners muestran mensajes importantes y breves, a modo de aviso general, para informar a los usuarios sobre temas de diverso interés. Se muestran al ancho completo." />
+          <p className="lead mb-4">
+            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
+            <a href="https://gcba.github.io/estandares/componentes/banner/" target="_blank" rel="noopener noreferrer">
+              enlace.
+            </a>
+          </p>
+        </>
       ),
       h1: true,
     },
@@ -64,7 +72,9 @@ const BannerDocs: React.FC = () => {
           <CodeBox codeHTML={BANNER_BUTTON}>
             <div className="banner">
               <div className="banner-content">
-                <span className="material-symbols-rounded o-icon">terminal</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  terminal
+                </span>
                 <p className="banner-text">
                   Este banner tiene un solo botón y <strong>puede tener énfasis</strong>. Se truncan los textos que
                   superen más de una línea de texto.
@@ -81,7 +91,9 @@ const BannerDocs: React.FC = () => {
           <CodeBox codeHTML={BANNER_BUTTON_DARK}>
             <div className="banner banner-dark">
               <div className="banner-content">
-                <span className="material-symbols-rounded o-icon">terminal</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  terminal
+                </span>
                 <p className="banner-text">
                   Este banner tiene un solo botón y <strong>puede tener énfasis</strong>. Se truncan los textos que
                   superen más de una línea de texto.
@@ -105,7 +117,9 @@ const BannerDocs: React.FC = () => {
           <CodeBox codeHTML={BANNER_BUTTONS}>
             <div className="banner">
               <div className="banner-content">
-                <span className="material-symbols-rounded o-icon">terminal</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  terminal
+                </span>
                 <p className="banner-text">
                   Este banner tiene dos botones y<strong>puede tener énfasis</strong>. Se truncan los textos que superen
                   más de una línea de texto.
@@ -125,7 +139,9 @@ const BannerDocs: React.FC = () => {
           <CodeBox codeHTML={BANNER_BUTTONS_DARK}>
             <div className="banner banner-dark">
               <div className="banner-content">
-                <span className="material-symbols-rounded o-icon">terminal</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  terminal
+                </span>
                 <p className="banner-text">
                   Este banner tiene dos botones y<strong>puede tener énfasis</strong>. Se truncan los textos que superen
                   más de una línea de texto.

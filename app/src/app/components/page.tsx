@@ -7,17 +7,20 @@ import { componentsPages, formsPages, organismsPages, stylesPages } from '@/comp
 export default function ComponentsPage() {
   return (
     <>
-      <h1 className='visually-hidden'>Secciones de la libreria de componentes Obelisco v2</h1>
+      <h1 className="visually-hidden">Secciones de la libreria de componentes Obelisco v2</h1>
       <div className="mb-5 bg-light p-3 rounded-4">
-        <p className="headline-lg fw-bold">Estilos</p>
+        <p className="headline-lg fw-bold d-flex">
+          <span className="material-symbols-rounded o-icon me-2" aria-hidden="true">
+            palette
+          </span>
+          Estilos
+        </p>
         <div className="access-items-3">
           {stylesPages.map(({ text, url, id }) => (
             <div className="col" key={id}>
               <Link href={url} className="list-group-item item-sm">
-                <span className="material-symbols-rounded o-icon">palette</span>
                 <div className="access-content">
                   <span className="access-title">{text}</span>
-                  <p className="access-text">Estilos</p>
                 </div>
               </Link>
             </div>
@@ -25,15 +28,18 @@ export default function ComponentsPage() {
         </div>
       </div>
       <div className="mb-5 bg-light p-3 rounded-4">
-        <p className="headline-lg fw-bold">Componentes</p>
+        <p className="headline-lg fw-bold d-flex">
+          <span className="material-symbols-rounded o-icon me-2" aria-hidden="true">
+            code_blocks
+          </span>
+          Componentes
+        </p>
         <div className="access-items-3">
           {componentsPages.map(({ text, url, id }) => (
             <div className="col" key={id}>
               <Link href={url} className="list-group-item item-sm">
-                <span className="material-symbols-rounded o-icon">code_blocks</span>
                 <div className="access-content">
                   <span className="access-title">{text}</span>
-                  <p className="access-text">Componente</p>
                 </div>
               </Link>
             </div>
@@ -41,28 +47,31 @@ export default function ComponentsPage() {
         </div>
       </div>
       <div className="mb-5 bg-light p-3 rounded-4">
-        <p className="headline-lg fw-bold">Formularios</p>
+        <p className="headline-lg fw-bold d-flex">
+          <span className="material-symbols-rounded o-icon me-2" aria-hidden="true">
+            view_list
+          </span>
+          Formularios
+        </p>
         <div className="access-items-3">
           {formsPages.map(({ text, url, id }) => (
             <div className="col" key={id}>
               <Link href={url} className="list-group-item item-sm">
-                <span className="material-symbols-rounded o-icon">view_list</span>
                 <div className="access-content">
                   <span className="access-title">{text}</span>
-                  <p className="access-text">Formulario</p>
                 </div>
               </Link>
             </div>
           ))}
         </div>
       </div>
-      <div className="mb-5 bg-light p-3 rounded-4">
+      {/* Eliminar clase d-none al agregar organismos en la segunda entrega */}
+      <div className="mb-5 bg-light p-3 rounded-4 d-none">
         <p className="headline-lg fw-bold">Organismos</p>
         <div className="access-items-3">
           {organismsPages.map(({ text, url, id }) => (
             <div className="col" key={id}>
               <Link href={url} className="list-group-item item-sm">
-                <span className="material-symbols-rounded o-icon">cards</span>
                 <div className="access-content">
                   <span className="access-title">{text}</span>
                   <p className="access-text">Organismo</p>

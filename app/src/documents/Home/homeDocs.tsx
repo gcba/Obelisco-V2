@@ -15,7 +15,7 @@ const HomeDocs = () => (
         </p>
       </div>
       <div className="d-flex flex-wrap gap-2">
-        <Link href="https://github.com/davisLjr/obelisco-v2" className="btn btn-primary btn-lg btn-icon">
+        <Link href="https://github.com/gcba/Obelisco-V2" className="btn btn-primary btn-lg btn-icon">
           <i className="bx bxl-github"></i>
           Github
         </Link>

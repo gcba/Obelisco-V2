@@ -25,12 +25,12 @@ const UpdateComponents: React.FC = () => {
             icono o con descripción.
           </li>
           <li>
-            La lista de accesos por ancho completo, que utilizaba las clases <code>.access-deck max-cards-*</code>,
+            La lista de accesos por ancho completo, que utilizaba las clases <code>.access-deck .max-cards-*</code>,
             queda deprecada.{' '}
           </li>
           <li>
             Respecto a la lista de accesos con ancho por accesos, que utilizaba las clases{' '}
-            <code>.access-deck access-column max-cards-*</code> queda deprecada y se reemplazan por las clases:{' '}
+            <code>.access-deck .access-column .max-cards-*</code> queda deprecada y se reemplazan por las clases:{' '}
           </li>
           <ul className="mt-2">
             <li>

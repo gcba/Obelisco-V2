@@ -12,6 +12,7 @@ import {
   OPENSANS_CODE,
   POPPER_CODE,
   STYLES_CODE,
+  STYLES_CODE_CSS,
 } from './code-views';
 
 const ImportsModule: React.FC = () => {
@@ -32,6 +33,13 @@ const ImportsModule: React.FC = () => {
         <div className="col-12">
           <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
             {STYLES_CODE}
+          </SyntaxHighlighter>
+          
+          <br />
+          <p>O puedes importarlo en tu hoja de estilos global.</p>
+          
+          <SyntaxHighlighter language="scss" style={dracula} wrapLongLines>
+            {STYLES_CODE_CSS}
           </SyntaxHighlighter>
         </div>
       ),

@@ -1,10 +1,8 @@
-import Image from 'next/image';
-
 import CodeBox from '@/components/CodeBox';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
-import { FOOTER } from './code-views';
+import { FOOTER, FOOTER_INDICATOR, FOOTER_LEGALS } from './code-views';
 
 const FooterDocs: React.FC = () => {
   const sections = [
@@ -19,7 +17,7 @@ const FooterDocs: React.FC = () => {
       id: 'section-1',
       title: 'Completo',
       content: (
-        <CodeBox codeHTML={FOOTER}>
+        <CodeBox codeHTML={FOOTER_LEGALS}>
           <div className="px-4">
             <h2 className="sr-only">Navegación de pie de página</h2>
             <footer className="main-footer">
@@ -106,26 +104,22 @@ const FooterDocs: React.FC = () => {
                   <h3 className="sr-only">Información gubernamental</h3>
                   <div className="row align-items-center">
                     <div className="col-12 col-md-5 col-xl-4 footer-content-img">
-                      <Image
+                      <img
                         className="d-lg-none"
                         src="https://gcba.github.io/Obelisco/footer/ciudad-ba-sm.svg"
                         alt="Logo de Ciudad de Buenos Aires"
                         height="48"
-                        width="100"
                       />
-                      <Image
+                      <img
                         className="d-none d-lg-inline"
-                        src="https://gcba.github.io/Obelisco/footer/ciudad-ba-sm.svg"
+                        src="https://gcba.github.io/Obelisco/footer/ciudad-ba.svg"
                         alt="Logo de Ciudad de Buenos Aires"
                         height="40"
-                        width="120"
                       />
-                      <Image
+                      <img
                         className="img-vamos-ba"
                         src="https://gcba.github.io/Obelisco/footer/vamos-ba.svg"
                         alt="Logo de Vamos Buenos Aires"
-                        height="40"
-                        width="100"
                       />
                     </div>
                     <div className="col-12">
@@ -179,7 +173,7 @@ const FooterDocs: React.FC = () => {
       id: 'section-2',
       title: 'Solo legales',
       content: (
-        <CodeBox codeHTML={FOOTER}>
+        <CodeBox codeHTML={FOOTER_INDICATOR}>
           <div className="px-4">
             <h2 className="sr-only">Navegación de pie de página</h2>
             <footer className="main-footer">
@@ -188,26 +182,22 @@ const FooterDocs: React.FC = () => {
                   <h3 className="sr-only">Información gubernamental</h3>
                   <div className="row align-items-center">
                     <div className="col-12 col-md-5 col-xl-4 footer-content-img">
-                      <Image
+                      <img
                         className="d-lg-none"
                         src="https://gcba.github.io/Obelisco/footer/ciudad-ba-sm.svg"
                         alt="Logo de Ciudad de Buenos Aires"
                         height="48"
-                        width="100"
                       />
-                      <Image
+                      <img
                         className="d-none d-lg-inline"
-                        src="https://gcba.github.io/Obelisco/footer/ciudad-ba-sm.svg"
+                        src="https://gcba.github.io/Obelisco/footer/ciudad-ba.svg"
                         alt="Logo de Ciudad de Buenos Aires"
                         height="40"
-                        width="120"
                       />
-                      <Image
+                      <img
                         className="img-vamos-ba"
                         src="https://gcba.github.io/Obelisco/footer/vamos-ba.svg"
                         alt="Logo de Vamos Buenos Aires"
-                        height="40"
-                        width="100"
                       />
                     </div>
                     <div className="col-12">
@@ -357,26 +347,22 @@ const FooterDocs: React.FC = () => {
                   <h3 className="sr-only">Información gubernamental</h3>
                   <div className="row align-items-center">
                     <div className="col-12 col-md-5 col-xl-4 footer-content-img">
-                      <Image
+                      <img
                         className="d-lg-none"
                         src="https://gcba.github.io/Obelisco/footer/ciudad-ba-sm.svg"
                         alt="Logo de Ciudad de Buenos Aires"
                         height="48"
-                        width="100"
                       />
-                      <Image
+                      <img
                         className="d-none d-lg-inline"
-                        src="https://gcba.github.io/Obelisco/footer/ciudad-ba-sm.svg"
+                        src="https://gcba.github.io/Obelisco/footer/ciudad-ba.svg"
                         alt="Logo de Ciudad de Buenos Aires"
                         height="40"
-                        width="120"
                       />
-                      <Image
+                      <img
                         className="img-vamos-ba"
                         src="https://gcba.github.io/Obelisco/footer/vamos-ba.svg"
                         alt="Logo de Vamos Buenos Aires"
-                        height="40"
-                        width="100"
                       />
                     </div>
                     <div className="col-12">

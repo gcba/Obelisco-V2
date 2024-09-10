@@ -1,36 +1,29 @@
-import Image from 'next/image';
-import React from 'react';
-
 export default function Footer() {
   return (
     <>
       <h2 className="sr-only">Navegación de pie de página</h2>
-      <footer className="main-footer mt-5">
+      <footer className="main-footer">
         <div className="container">
           <section className="footer-legal-section">
             <h3 className="sr-only">Información gubernamental</h3>
             <div className="row align-items-center">
               <div className="col-12 col-md-5 col-xl-4 footer-content-img">
-                <Image
+                <img
                   className="d-lg-none"
                   src="https://gcba.github.io/Obelisco/footer/ciudad-ba-sm.svg"
                   alt="Logo de Ciudad de Buenos Aires"
                   height="48"
-                  width="100"
                 />
-                <Image
+                <img
                   className="d-none d-lg-inline"
-                  src="https://gcba.github.io/Obelisco/footer/ciudad-ba-sm.svg"
+                  src="https://gcba.github.io/Obelisco/footer/ciudad-ba.svg"
                   alt="Logo de Ciudad de Buenos Aires"
                   height="40"
-                  width="120"
                 />
-                <Image
+                <img
                   className="img-vamos-ba"
                   src="https://gcba.github.io/Obelisco/footer/vamos-ba.svg"
                   alt="Logo de Vamos Buenos Aires"
-                  height="40"
-                  width="100"
                 />
               </div>
               <div className="col-12">

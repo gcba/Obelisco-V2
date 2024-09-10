@@ -14,7 +14,7 @@ import ColorsDocs from '@/documents/Colors/ColorsDocs';
 // import Docs from '@/documents/Docs/Docs';
 import DropdownNavDocs from '@/documents/DropdownNav/DropdownNavDocs';
 import DropdownSelDocs from '@/documents/DropdownSel/DropdownSelDocs';
-// import FooterDocs from '@/documents/Footer/FooterDocs';
+import FooterDocs from '@/documents/Footer/FooterDocs';
 import FormTextDocs from '@/documents/Form-text/FormText';
 import FormSearchDocs from '@/documents/FormSearch/FormSearch';
 import FormSelectionDocs from '@/documents/FormSelection/FormSelectionDocs';
@@ -84,7 +84,7 @@ const componentMap: Record<string, JSX.Element | null> = {
   // 'progress-bar': <ProgressBarDocs />,
   // highlighted: <HighlightedDocs />,
   // table: <TableDocs />,
-  // footer: <FooterDocs />,
+  footer: <FooterDocs />,
   // 'steps-form': <StepsFormDocs />,
 };
 
@@ -126,6 +126,7 @@ export async function generateStaticParams(): Promise<Array<{ componentName: str
     // 'pagination',
     // 'progress-bar',
     // 'table',
+    'footer',
   ];
 
   // Devuelve un array de objetos donde cada uno tiene el nombre de un componente,

@@ -6,11 +6,10 @@ const HomeDocs = () => (
   <div className="row box-home">
     <div className="col col-lg-7">
       <div className="">
-        <h1>
-          Conocé Obelisco, el sistema de diseño del Gobierno de la Ciudad de Buenos Aires.
-        </h1>
+        <h1>Conocé Obelisco, el sistema de diseño del Gobierno de la Ciudad de Buenos Aires.</h1>
         <p>
-          Simplificá tu proyecto con nuestra librería de componentes y guía de estilos, para una implementación ágil y sencilla.
+          Simplificá tu proyecto con nuestra librería de componentes y guía de estilos, para una implementación ágil y
+          sencilla.
         </p>
       </div>
       <div className="d-flex flex-wrap gap-2">

@@ -6,3 +6,5 @@ package-lock.json
 .eslintrc.json.prettierrc.json
 next.config.mjs
 package.json
+out
+styles/

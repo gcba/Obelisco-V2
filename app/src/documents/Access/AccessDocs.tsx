@@ -230,7 +230,7 @@ const AccessDocs: React.FC = () => {
       title: 'Disposición',
       content: (
         <>
-          <h3 className='headline-lg'>Cuatro columnas</h3>
+          <h3 className="headline-lg">Cuatro columnas</h3>
           <CodeBox codeHTML={FOUR_COLUMNS_ACCESS}>
             <div className="container">
               <div className="row">
@@ -320,7 +320,7 @@ const AccessDocs: React.FC = () => {
             </div>
           </CodeBox>
           <br />
-          <h3 className='headline-lg'>Tres columnas</h3>
+          <h3 className="headline-lg">Tres columnas</h3>
           <CodeBox codeHTML={THREE_COLUMNS_ACCESS}>
             <div className="container">
               <div className="row">
@@ -410,7 +410,7 @@ const AccessDocs: React.FC = () => {
             </div>
           </CodeBox>
           <br />
-          <h3 className='headline-lg'>Una columna en aside</h3>
+          <h3 className="headline-lg">Una columna en aside</h3>
           <CodeBox codeHTML={ONE_COLUMN_ACCESS}>
             <div className="container">
               <div className="row">

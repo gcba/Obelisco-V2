@@ -39,11 +39,19 @@ const ModalDocs: React.FC = () => {
               </button>
             </div>
 
-            <div className="modal fade" tabIndex={-1} id="exampleModal1" aria-labelledby="exampleModal1Label" aria-hidden="true">
+            <div
+              className="modal fade"
+              tabIndex={-1}
+              id="exampleModal1"
+              aria-labelledby="exampleModal1Label"
+              aria-hidden="true"
+            >
               <div className="modal-dialog modal-dialog-centered modal-sm">
                 <div className="modal-content">
                   <div className="modal-header">
-                    <h4 className="modal-title" id="exampleModal1Label">¡Importante!</h4>
+                    <h4 className="modal-title" id="exampleModal1Label">
+                      ¡Importante!
+                    </h4>
                   </div>
                   <div className="modal-body">
                     <p>
@@ -70,11 +78,19 @@ const ModalDocs: React.FC = () => {
                 Modal de peligro
               </button>
             </div>
-            <div className="modal fade" tabIndex={-1} id="exampleModal2" aria-labelledby="exampleModal2Label" aria-hidden="true">
+            <div
+              className="modal fade"
+              tabIndex={-1}
+              id="exampleModal2"
+              aria-labelledby="exampleModal2Label"
+              aria-hidden="true"
+            >
               <div className="modal-dialog modal-dialog-centered modal-sm">
                 <div className="modal-content">
                   <div className="modal-header">
-                    <h4 className="modal-title" id="exampleModal2Label">Eliminar documento</h4>
+                    <h4 className="modal-title" id="exampleModal2Label">
+                      Eliminar documento
+                    </h4>
                   </div>
                   <div className="modal-body">
                     <p>El documento que seleccionaste será eliminado.</p>
@@ -98,12 +114,20 @@ const ModalDocs: React.FC = () => {
                 Modal de reconocimiento
               </button>
             </div>
-            <div className="modal fade" tabIndex={-1} id="exampleModal3" aria-labelledby="exampleModal3Label" aria-hidden="true">
+            <div
+              className="modal fade"
+              tabIndex={-1}
+              id="exampleModal3"
+              aria-labelledby="exampleModal3Label"
+              aria-hidden="true"
+            >
               <div className="modal-dialog modal-dialog-centered modal-sm">
                 <div className="modal-content">
                   <div className="modal-header unbordered">
                     <small>CARGA EXITOSA</small>
-                    <h4 className="modal-title" id="exampleModal3Label">Los archivos se cargaron correctamente</h4>
+                    <h4 className="modal-title" id="exampleModal3Label">
+                      Los archivos se cargaron correctamente
+                    </h4>
                   </div>
                   <div className="modal-footer">
                     <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">

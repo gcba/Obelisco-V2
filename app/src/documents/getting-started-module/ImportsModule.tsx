@@ -34,10 +34,10 @@ const ImportsModule: React.FC = () => {
           <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
             {STYLES_CODE}
           </SyntaxHighlighter>
-          
+
           <br />
           <p>O puedes importarlo en tu hoja de estilos global.</p>
-          
+
           <SyntaxHighlighter language="scss" style={dracula} wrapLongLines>
             {STYLES_CODE_CSS}
           </SyntaxHighlighter>

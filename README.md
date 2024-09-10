@@ -47,7 +47,7 @@ npm update @gcba/obelisco-v2
 Importar los estilos en el archivo principal del proyecto:
 
 ```sh
-import 'obelisco-v2/dist/styles.css';
+@import "@gcba/obelisco-v2/dist/styles.css";
 o
 <link rel="stylesheet" href="ruta/al/proyecto/dist/styles.css">
 ```
@@ -76,7 +76,7 @@ Material Symbols con npm o CDN:
 
 ```sh
 npm install material-symbols@latest
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0"/>
 ```
 
 ### Javascript

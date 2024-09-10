@@ -24,7 +24,19 @@ const sections = [
   {
     title: 'Desplegable de selección',
     content: (
-      <MainDescription description="Los desplegables muestran una lista de opciones permitiendo que una persona usuaria pueda seleccionar una o varias en simultáneo. Una opción seleccionada puede usarse como una acción para filtrar u ordenar el contenido existente." />
+      <>
+        <MainDescription description="Los desplegables muestran una lista de opciones permitiendo que una persona usuaria pueda seleccionar una o varias en simultáneo. Una opción seleccionada puede usarse como una acción para filtrar u ordenar el contenido existente." />
+        <p className="lead mb-4">
+          Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
+          <a
+            href="https://gcba.github.io/estandares/componentes/desplegables/desplegables_seleccion/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            enlace.
+          </a>
+        </p>
+      </>
     ),
     h1: true,
   },

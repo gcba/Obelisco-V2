@@ -6,8 +6,8 @@ import { usePathname } from 'next/navigation';
 import NavLayout from './Navigation/nav';
 
 export const stylesPages = [
-  { text: 'Colores', url: '/components/colors', id: 1 },
-  { text: 'Espaciado', url: '/components/grid', id: 2 },
+  { text: 'Grilla', url: '/components/grid', id: 1 },
+  { text: 'Paleta de colores', url: '/components/colors', id: 2 },
   { text: 'Tipografia', url: '/components/typography', id: 3 },
 ];
 export const formsPages = [
@@ -57,8 +57,12 @@ export const componentsPages = [
 ];
 
 export const gettingPages = [
-  { text: 'Instalacción', url: '/getting-started/installation', id: 2 },
+  { text: 'Instalación', url: '/getting-started/installation', id: 2 },
   { text: 'Importaciones', url: '/getting-started/imports', id: 3 },
+];
+
+export const documentationPages = [
+  { text: 'Cambios en componentes', url: '/documentation/update-component', id: 2 },
 ];
 
 const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -109,12 +113,22 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             )}
 
             {pathname.includes('/getting-started') && (
-              <div className="nav-left position-sticky">
+              <div className="nav-left sticky-nav h-auto">
                 <div className="nav-left-box-title">
                   <p className="headline-lg fw-bold">Comenzando</p>
                 </div>
                 <hr />
                 <NavLayout items={gettingPages} />
+              </div>
+            )}
+            
+            {pathname.includes('/documentation') && (
+              <div className="nav-left sticky-nav h-auto">
+                <div className="nav-left-box-title">
+                  <p className="headline-lg fw-bold">Documentación</p>
+                </div>
+                <hr />
+                <NavLayout items={documentationPages} />
               </div>
             )}
           </div>

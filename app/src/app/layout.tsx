@@ -15,6 +15,11 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
+        <title>Obelisco V2</title>
+        <meta
+          name="description"
+          content="Obelisco v2 es un Sistema de diseño basado en componentes para productos digitales de la Ciudad de Buenos Aires."
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
           rel="stylesheet"
@@ -23,7 +28,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap"
           rel="stylesheet"
         />
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0"/>
       </head>
       <body>
         <HeaderDesktop />

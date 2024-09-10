@@ -22,7 +22,7 @@ export default function HeaderDesktop() {
         <Link href="/" className="navbar-brand">
           <Image
             className="header-logo"
-            src="https://gcba.github.io/Obelisco/header/logotipo_ba.svg"
+            src="./BA.svg"
             alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
             width={76}
             height={41}

@@ -23,8 +23,17 @@ const AccessDocs: React.FC = () => {
     {
       title: 'Accesos',
       content: (
-        <MainDescription description="Los accesos funcionan como puntos de ingreso a diferentes secciones y pueden agruparse cuando hay una similitud en su contenido." />
+        <>
+          <MainDescription description="Los accesos funcionan como puntos de ingreso a diferentes secciones y pueden agruparse cuando hay una similitud en su contenido." />
+          <p className="lead mb-4">
+            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
+            <a href="https://gcba.github.io/estandares/componentes/acceso/" target="_blank" rel="noopener noreferrer">
+              enlace.
+            </a>
+          </p>
+        </>
       ),
+      h1: true,
     },
     {
       id: 'section-1',
@@ -221,7 +230,7 @@ const AccessDocs: React.FC = () => {
       title: 'Disposición',
       content: (
         <>
-          <h3>Cuatro columnas</h3>
+          <h3 className="headline-lg">Cuatro columnas</h3>
           <CodeBox codeHTML={FOUR_COLUMNS_ACCESS}>
             <div className="container">
               <div className="row">
@@ -311,7 +320,7 @@ const AccessDocs: React.FC = () => {
             </div>
           </CodeBox>
           <br />
-          <h3>Tres columnas</h3>
+          <h3 className="headline-lg">Tres columnas</h3>
           <CodeBox codeHTML={THREE_COLUMNS_ACCESS}>
             <div className="container">
               <div className="row">
@@ -401,7 +410,7 @@ const AccessDocs: React.FC = () => {
             </div>
           </CodeBox>
           <br />
-          <h3>Una columna en aside</h3>
+          <h3 className="headline-lg">Una columna en aside</h3>
           <CodeBox codeHTML={ONE_COLUMN_ACCESS}>
             <div className="container">
               <div className="row">

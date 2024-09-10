@@ -53,9 +53,13 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections 
           <article className="box-content">
             <div data-cy="section-wrapper">
               {sections.map((section, index) => (
-                <section key={section.id} id={section.id || undefined} ref={sectionRefs[index]}>
+                <section key={`${section.id}-${index}`} id={section.id || undefined} ref={sectionRefs[index]}>
                   <HeadingTemplate className="pt-2">
-                    {section.h1 ? <h1 className="mb-4">{section.title}</h1> : <h2 className="mb-4">{section.title}</h2>}
+                    {section.h1 ? (
+                      <h1 className="mb-4">{section.title}</h1>
+                    ) : (
+                      <h2 className="headline-lg mb-4">{section.title}</h2>
+                    )}
                   </HeadingTemplate>
                   {section.description && <SimpleText description={section.description} />}
                   {section.content}
@@ -71,7 +75,7 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections 
               {sections.map(
                 (section, index) =>
                   section.id && (
-                    <li key={section.id} className={activeIndex === index ? 'active' : ''}>
+                    <li key={`${section.id}-${index}`} className={activeIndex === index ? 'active' : ''}>
                       <a href={`#${section.id}`} className="text-sm">
                         {section.title}
                       </a>

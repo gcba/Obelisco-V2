@@ -15,7 +15,19 @@ const sections = [
   {
     title: 'Desplegable de navegación',
     content: (
-      <MainDescription description="Este tipo de desplegables permite acceder a opciones de navegación y funcionalidades adicionales de manera organizada, desplegándolas de forma vertical u horizontal." />
+      <>
+        <MainDescription description="Este tipo de desplegables permite acceder a opciones de navegación y funcionalidades adicionales de manera organizada, desplegándolas de forma vertical u horizontal." />
+        <p className="lead mb-4">
+          Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
+          <a
+            href="https://gcba.github.io/estandares/componentes/desplegables/desplegables_navegacion/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            enlace.
+          </a>
+        </p>
+      </>
     ),
     h1: true,
   },
@@ -26,10 +38,10 @@ const sections = [
       <>
         <CodeBox codeHTML={DROPDOWN}>
           <div className="container">
-            <div className="dropdown">
+            <div className="dropdown dropdown-lg">
               <button
                 type="button"
-                className="btn btn-dropdown btn-dropdown-lg btn-dropdown-border"
+                className="btn btn-dropdown btn-dropdown-border"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
@@ -67,10 +79,10 @@ const sections = [
         <br />
         <CodeBox codeHTML={DROPDOWN_MENU_ICON}>
           <div className="container">
-            <div className="dropdown">
+            <div className="dropdown dropdown-lg">
               <button
                 type="button"
-                className="btn btn-dropdown btn-dropdown-lg btn-dropdown-border"
+                className="btn btn-dropdown btn-dropdown-border"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
@@ -101,10 +113,10 @@ const sections = [
         <br />
         <CodeBox codeHTML={DROPDOWN_MENU_ICON_ONLY}>
           <div className="container">
-            <div className="dropdown">
+            <div className="dropdown dropdown-lg">
               <button
                 type="button"
-                className="btn btn-dropdown btn-dropdown-lg btn-dropdown-border"
+                className="btn btn-dropdown btn-dropdown-border"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
                 aria-label="Menu"
@@ -142,10 +154,10 @@ const sections = [
       <>
         <CodeBox codeHTML={DROPDOWN_MENU_RIGHT}>
           <div className="container">
-            <div className="dropdown ms-auto">
+            <div className="dropdown dropdown-lg ms-auto">
               <button
                 type="button"
-                className="btn btn-dropdown btn-dropdown-lg btn-dropdown-border"
+                className="btn btn-dropdown btn-dropdown-border"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
@@ -184,10 +196,10 @@ const sections = [
       <>
         <CodeBox codeHTML={DROPDOWN_CASCADE}>
           <div className="container">
-            <div className="dropdown">
+            <div className="dropdown dropdown-lg">
               <button
                 type="button"
-                className="btn btn-dropdown btn-dropdown-lg btn-dropdown-border"
+                className="btn btn-dropdown btn-dropdown-border"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
                 data-bs-auto-close="outside"
@@ -199,12 +211,7 @@ const sections = [
               </button>
               <div className="dropdown-menu">
                 <div className="dropdown sub-dropdown">
-                  <button
-                    type="button"
-                    className="btn btn-dropdown btn-dropdown-lg"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" className="btn btn-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
                     <i className="bx bxs-info-circle o-icon"></i>
                     <span className="btn-dropdown-text ellipsis-1">Opción en cascada</span>
                     <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
@@ -245,10 +252,10 @@ const sections = [
         <br />
         <CodeBox codeHTML={DROPDOWN_CASCADE_RIGHT}>
           <div className="container">
-            <div className="dropdown ms-auto">
+            <div className="dropdown dropdown-lg ms-auto">
               <button
                 type="button"
-                className="btn btn-dropdown btn-dropdown-lg btn-dropdown-border"
+                className="btn btn-dropdown btn-dropdown-border"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
                 data-bs-auto-close="outside"
@@ -260,12 +267,7 @@ const sections = [
               </button>
               <div className="dropdown-menu dropdown-menu-end">
                 <div className="dropdown sub-dropdown">
-                  <button
-                    type="button"
-                    className="btn btn-dropdown btn-dropdown-lg"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <button type="button" className="btn btn-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
                     <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
                       expand_more
                     </span>

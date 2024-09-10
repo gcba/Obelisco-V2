@@ -8,7 +8,19 @@ const sections = [
   {
     title: 'Mensaje de estado',
     content: (
-      <MainDescription description="Los mensajes de estado son comunicaciones que ayudan a las personas usuarias a tomar decisiones premeditadas. Informan que algo ha ocurrido o va a ocurrir y tal vez requieran de su acción. También, sirven para reducir la incertidumbre y evitar que los usuarios cometan errores." />
+      <>
+        <MainDescription description="Los mensajes de estado son comunicaciones que ayudan a las personas usuarias a tomar decisiones premeditadas. Informan que algo ha ocurrido o va a ocurrir y tal vez requieran de su acción. También, sirven para reducir la incertidumbre y evitar que los usuarios cometan errores." />
+        <p className="lead mb-4">
+          Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
+          <a
+            href="https://gcba.github.io/estandares/componentes/mensajes-de-estado/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            enlace.
+          </a>
+        </p>
+      </>
     ),
     h1: true,
   },

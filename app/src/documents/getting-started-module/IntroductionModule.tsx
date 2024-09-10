@@ -3,7 +3,6 @@ import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 const IntroductionModule: React.FC = () => {
   const sections = [
     {
-      id: 'section-1',
       title: 'Introducción',
       content: (
         <>
@@ -26,7 +25,7 @@ const IntroductionModule: React.FC = () => {
       defaultTitle: true,
     },
     {
-      id: 'section-2',
+      id: 'section-1',
       title: '¿Qué es Obelisco v2?',
       description: `
         Obelisco v2 es una librería de estilos que facilita la creación de interfaces web mediante componentes que mantienen una coherencia estética y funcional. 
@@ -35,7 +34,7 @@ const IntroductionModule: React.FC = () => {
       `,
     },
     {
-      id: 'section-3',
+      id: 'section-2',
       title: 'Características Principales',
       content: (
         <div className="col-12">
@@ -67,7 +66,7 @@ const IntroductionModule: React.FC = () => {
       ),
     },
     {
-      id: 'section-4',
+      id: 'section-3',
       title: 'Accesibilidad',
       description: `
         La accesibilidad es una prioridad en Obelisco v2. Cada componente está diseñado para garantizar que todos los usuarios, independientemente de sus habilidades, puedan interactuar con las interfaces de manera efectiva. 

@@ -51,7 +51,14 @@ $access-arrow-active: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000
   background: transparent #{$icon} no-repeat center center;
 }
 
-/* === Bootstrap Import === */
+// Estilos para estado active de acceso
+%access-active {
+  outline: 0.25rem solid transparent;
+  outline-offset: -0.25rem;
+  background-color: $active-color;
+  color: $white;
+  box-shadow: none;
+}
 
 /* === Custom styles === */
 
@@ -102,6 +109,10 @@ a.list-group-item {
 
   &:visited {
     color: $body-color;
+
+    .access-text {
+      color: $grisulado-900; //#425266;
+    }
   }
 
   &:first-child {
@@ -177,29 +188,39 @@ a.list-group-item {
     }
   }
 
-  // &:focus-visible {
-  //   outline: 0.25rem solid transparent;
-  // }
-
   &:active,
   &.active {
-    outline: 0.25rem solid $active-color;
-    outline-offset: -0.25rem;
-    background-color: $active-color;
-    color: $white;
+    @extend %access-active;
 
-    &:focus,
-    &.focus {
-      box-shadow: none;
-      background-color: $active-color;
-      color: $white;
+    &::after {
+      @include access-icon($access-arrow-active); // icono blanco
     }
 
     &:hover,
     &.hover {
-      outline: 0.25rem solid $active-color;
-      box-shadow: none;
-      background-color: $active-color;
+      @extend %access-active;
+    }
+
+    &:focus,
+    &.focus {
+      @extend %access-active;
+
+      &:hover,
+      &.hover {
+        color: $white;
+        box-shadow: none;
+
+        .access-text {
+          color: $white;
+        }
+
+        &::after {
+          @include access-icon($access-arrow-active); // icono blanco
+        }
+      }
+    }
+
+    &:visited {
       color: $white;
     }
 
@@ -207,16 +228,12 @@ a.list-group-item {
       text-decoration-color: transparent;
     }
 
-    &.list-group-item-logout {
-      box-shadow: $box-shadow-access-hover-danger;
-    }
-
-    &::after {
-      @include access-icon($access-arrow-active); // icono blanco
-    }
-
     .access-text {
       color: $white;
+    }
+
+    &.list-group-item-logout {
+      box-shadow: $box-shadow-access-hover-danger;
     }
   }
 

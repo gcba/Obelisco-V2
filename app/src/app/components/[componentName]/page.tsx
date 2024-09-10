@@ -3,40 +3,40 @@
 import AccessDocs from '@/documents/Access/AccessDocs';
 import AlertDocs from '@/documents/Alert/AlertDocs';
 import BadgeDocs from '@/documents/Badge/BadgeDocs';
-import BannerDocs from '@/documents/Banner/BannerDocs';
-import BlockDocs from '@/documents/Block/BlockDocs';
+// import BannerDocs from '@/documents/Banner/BannerDocs';
+// import BlockDocs from '@/documents/Block/BlockDocs';
 import BreadcrumbDocs from '@/documents/Breadcrumb/BreadcrumbDocs';
 import ButtonDocs from '@/documents/Button/ButtonDocs';
-import CalendarDocs from '@/documents/Calendar/CalendarDocs';
-import CardDocs from '@/documents/Card/CardDocs';
-import CollapseDocs from '@/documents/Collapse/CollapseDocs';
+// import CalendarDocs from '@/documents/Calendar/CalendarDocs';
+// import CardDocs from '@/documents/Card/CardDocs';
+// import CollapseDocs from '@/documents/Collapse/CollapseDocs';
 import ColorsDocs from '@/documents/Colors/ColorsDocs';
 // import Docs from '@/documents/Docs/Docs';
 import DropdownNavDocs from '@/documents/DropdownNav/DropdownNavDocs';
 import DropdownSelDocs from '@/documents/DropdownSel/DropdownSelDocs';
-import FooterDocs from '@/documents/Footer/FooterDocs';
+// import FooterDocs from '@/documents/Footer/FooterDocs';
 import FormTextDocs from '@/documents/Form-text/FormText';
 import FormSearchDocs from '@/documents/FormSearch/FormSearch';
 import FormSelectionDocs from '@/documents/FormSelection/FormSelectionDocs';
-import GalleryDocs from '@/documents/Gallery/GalleryDocs';
+// import GalleryDocs from '@/documents/Gallery/GalleryDocs';
 import GridDocs from '@/documents/Grid/GridDocs';
-import HeaderDocs from '@/documents/Header/HeaderDocs';
-import HighlightedDocs from '@/documents/Highlighted/HighlightedDocs';
+// import HeaderDocs from '@/documents/Header/HeaderDocs';
+// import HighlightedDocs from '@/documents/Highlighted/HighlightedDocs';
 import LinkDocs from '@/documents/Link/LinkDocs';
-import ListInformativeDocs from '@/documents/ListInformative/ListInformativeDocs';
-import ListLinkDocs from '@/documents/ListLink/ListLinkDocs';
-import ListStepDocs from '@/documents/ListStep/ListStepDocs';
-import MapDocs from '@/documents/Map/MapDocs';
+// import ListInformativeDocs from '@/documents/ListInformative/ListInformativeDocs';
+// import ListLinkDocs from '@/documents/ListLink/ListLinkDocs';
+// import ListStepDocs from '@/documents/ListStep/ListStepDocs';
+// import MapDocs from '@/documents/Map/MapDocs';
 import ModalDocs from '@/documents/Modal/ModalDocs';
 import NavHorizontalDocs from '@/documents/NavHorizontal/NavHorizontalDocs';
 import NavVerticalDocs from '@/documents/NavVertical/NavVerticalDocs';
-import PaginationDocs from '@/documents/Pagination/PaginationDocs';
-import ProgressBarDocs from '@/documents/ProgressBar/ProgressBarDocs';
+// import PaginationDocs from '@/documents/Pagination/PaginationDocs';
+// import ProgressBarDocs from '@/documents/ProgressBar/ProgressBarDocs';
 import SpinnerDocs from '@/documents/Spinner/SpinnerDocs';
 import StatusMessageDocs from '@/documents/StatusMessage/StatusMessageDocs';
-import StepsFormDocs from '@/documents/StepsForm/StepsFormDocs';
+// import StepsFormDocs from '@/documents/StepsForm/StepsFormDocs';
 import SwitchDocs from '@/documents/Switch/SwitchDocs';
-import TableDocs from '@/documents/Table/TableDocs';
+// import TableDocs from '@/documents/Table/TableDocs';
 import TabsDocs from '@/documents/Tabs/TabsDocs';
 import TooltipDocs from '@/documents/Tooltip/TooltipDocs';
 import TypographyDocs from '@/documents/Typography/TypographyDocs';
@@ -50,20 +50,20 @@ const componentMap: Record<string, JSX.Element | null> = {
   alert: <AlertDocs />,
   access: <AccessDocs />,
   badge: <BadgeDocs />,
-  banner: <BannerDocs />,
-  block: <BlockDocs />,
+  // banner: <BannerDocs />,
+  // block: <BlockDocs />,
   breadcrumb: <BreadcrumbDocs />,
   button: <ButtonDocs />,
-  calendar: <CalendarDocs />,
-  cards: <CardDocs />,
-  collapse: <CollapseDocs />,
+  // calendar: <CalendarDocs />,
+  // cards: <CardDocs />,
+  // collapse: <CollapseDocs />,
   colors: <ColorsDocs />,
   link: <LinkDocs />,
   modal: <ModalDocs />,
-  header: <HeaderDocs />,
-  'list-step': <ListStepDocs />,
-  'list-link': <ListLinkDocs />,
-  'list-informative': <ListInformativeDocs />,
+  // header: <HeaderDocs />,
+  // 'list-step': <ListStepDocs />,
+  // 'list-link': <ListLinkDocs />,
+  // 'list-informative': <ListInformativeDocs />,
   'nav-horizontal': <NavHorizontalDocs />,
   'nav-vertical': <NavVerticalDocs />,
   'status-message': <StatusMessageDocs />,
@@ -78,14 +78,14 @@ const componentMap: Record<string, JSX.Element | null> = {
   'form-text': <FormTextDocs />,
   'form-selection': <FormSelectionDocs />,
   'form-search': <FormSearchDocs />,
-  map: <MapDocs />,
-  gallery: <GalleryDocs />,
-  pagination: <PaginationDocs />,
-  'progress-bar': <ProgressBarDocs />,
-  highlighted: <HighlightedDocs />,
-  table: <TableDocs />,
-  footer: <FooterDocs />,
-  'steps-form': <StepsFormDocs />,
+  // map: <MapDocs />,
+  // gallery: <GalleryDocs />,
+  // pagination: <PaginationDocs />,
+  // 'progress-bar': <ProgressBarDocs />,
+  // highlighted: <HighlightedDocs />,
+  // table: <TableDocs />,
+  // footer: <FooterDocs />,
+  // 'steps-form': <StepsFormDocs />,
 };
 
 // La función generateStaticParams es propia de Next.js y se utiliza en rutas dinámicas con generación estática.
@@ -97,11 +97,11 @@ export async function generateStaticParams(): Promise<Array<{ componentName: str
     'alert',
     'access',
     'badge',
-    'banner',
-    'block',
+    // 'banner',
+    // 'block',
     'button',
-    'cards',
-    'collapse',
+    // 'cards',
+    // 'collapse',
     'colors',
     'link',
     'modal',
@@ -116,16 +116,16 @@ export async function generateStaticParams(): Promise<Array<{ componentName: str
     'dropdown-nav',
     'grid',
     'spinner',
-    'map',
-    'highlighted',
+    // 'map',
+    // 'highlighted',
     'breadcrumb',
     'form-text',
     'form-selection',
     'form-search',
-    'gallery',
-    'pagination',
-    'progress-bar',
-    'table',
+    // 'gallery',
+    // 'pagination',
+    // 'progress-bar',
+    // 'table',
   ];
 
   // Devuelve un array de objetos donde cada uno tiene el nombre de un componente,

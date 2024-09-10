@@ -27,7 +27,7 @@ export default function HeaderDesktop() {
             width={76}
             height={41}
           />
-          <Image className="obelisco-logo" src="/obelisco-logo.png" width={76} height={41} alt="Logo React obelisco" />
+          <Image className="obelisco-logo" src="./obelisco-logo.png" width={76} height={41} alt="Logo React obelisco" />
         </Link>
         <HeaderMobile />
         <div className="collapse navbar-collapse justify-content-end" id="navbarContent">

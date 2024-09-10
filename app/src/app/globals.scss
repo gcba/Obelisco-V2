@@ -57,11 +57,14 @@ hr {
       top: 140px;
       right: 0;
       background-color: transparent;
-      padding: 0 0 0 2rem;
+      padding: 0 5px 5px 1rem;
       position: sticky;
       display: flex;
       flex-direction: column;
       gap: 0.3rem;
+      max-height: 70dvh;
+      overflow-y: auto;
+      scrollbar-width: thin;
 
       li a {
         font-weight: 600;
@@ -181,6 +184,7 @@ hr {
   top: 132px;
   overflow-y: scroll;
   height: 76dvh;
+  scrollbar-width: thin;
 
   nav {
     padding: 0.3rem;

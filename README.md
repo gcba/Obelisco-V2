@@ -98,6 +98,6 @@ En la wiki del repositorio está toda la información necesaria para entender c�
 
 El mantenimiento y desarrollo de Obelisco lo hace el equipo de la Dirección General de Canales Digitales, pero lo utilizan tanto equipos de gobierno como proveedores externos.
 
-Para agilizar y hacer más transparente el proceso, cualquier persona puede contribuir de varias formas.
+Para agilizar y hacer más transparente el proceso, cualquier persona puede contribuir de varias formas o contactar al equipo Obelisco.
 
 Mail de contacto: equipoobelisco@buenosaires.gob.ar

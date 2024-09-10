@@ -6,8 +6,8 @@ import { usePathname } from 'next/navigation';
 import NavLayout from './Navigation/nav';
 
 export const stylesPages = [
-  { text: 'Colores', url: '/components/colors', id: 1 },
-  { text: 'Grilla', url: '/components/grid', id: 2 },
+  { text: 'Grilla', url: '/components/grid', id: 1 },
+  { text: 'Paleta de colores', url: '/components/colors', id: 2 },
   { text: 'Tipografia', url: '/components/typography', id: 3 },
 ];
 export const formsPages = [
@@ -123,7 +123,7 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             )}
             
             {pathname.includes('/documentation') && (
-              <div className="nav-left position-sticky">
+              <div className="nav-left sticky-nav h-auto">
                 <div className="nav-left-box-title">
                   <p className="headline-lg fw-bold">Documentación</p>
                 </div>

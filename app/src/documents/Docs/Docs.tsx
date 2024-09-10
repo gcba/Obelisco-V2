@@ -66,7 +66,7 @@ const sections = [
     content: (
       <>
         <li><strong>Proceso de Compilación y Distribución</strong>: &quot;Obelisco V2&quot; incluye un proceso de buildeo que compila los archivos SCSS a CSS. El resultado es un paquete optimizado de estilos CSS que puede ser fácilmente integrado en cualquier proyecto.</li>
-        <div className='col-12 col-lg-7 mt-4'>            
+        <div className='col-12 col-lg-7 mt-4 ms-1'>       
           <Link href="/documentation/update-component" className="list-group-item item-sm">
             <span className="material-symbols-rounded o-icon">
               import_contacts

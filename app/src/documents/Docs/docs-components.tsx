@@ -253,6 +253,7 @@ const UpdateComponents: React.FC = () => {
           <li>Se reemplaza el atributo <code>&apos;data-toggle&apos;</code> por <code>&apos;data-bs-toggle&apos;</code></li>
           <li>Se reemplaza el atributo <code>&apos;data-target&apos;</code> por <code>&apos;data-bs-target&apos;</code></li>
           <li>Se reemplaza el atributo <code>&apos;data-dismiss&apos;</code> por <code>&apos;data-bs-dismiss&apos;</code></li>
+          <li>Se agrega el atributo <code>&apos;aria-labelledby&apos;</code> en el div con clase <code>.modal</code> y el atributo <code>&apos;id&apos;</code> en el título del modal.</li>
           <li>Eliminación del <code>&apos;role=&quot;dialog&quot;&apos;</code> y <code>&apos;role=&quot;document&quot;&apos;</code> ya que Bootstrap 5 lo maneja automáticamente</li>
         </ul>
       ),
@@ -308,7 +309,7 @@ const UpdateComponents: React.FC = () => {
       content: (
         <>
           <p>¿Quieres comenzar a utilizar nuestros componentes? Puedes copiar el HTML disponible en la siguiente sección:</p>
-          <div className='col-12 col-lg-7'>            
+          <div className='col-12 col-lg-7 ms-1'>            
             <Link href="/components" className="list-group-item item-sm">
               <span className="material-symbols-rounded o-icon">
                 web_traffic

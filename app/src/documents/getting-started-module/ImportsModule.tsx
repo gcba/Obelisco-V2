@@ -18,7 +18,7 @@ import {
 const ImportsModule: React.FC = () => {
   const sections = [
     {
-      title: 'Importaciones Necesarias',
+      title: 'Importaciones necesarias',
       content: (
         <MainDescription description="Después de instalar Obelisco V2 o hacer el llamado a través de la CDN, es necesario importar ciertos complementos esenciales para asegurar el correcto funcionamiento y el estilo de los componentes de Obelisco V2. A continuación, se detallan los recursos que debes incluir en tu proyecto:" />
       ),

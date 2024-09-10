@@ -1,7 +1,7 @@
 /* === Custom variables and mixins === */
 
 $footer-padding-y: 0.25rem * 10;
-$footer-legal-margin-bottom: 0.25rem * 10;
+$footer-legal-margin-bottom: 1.625rem;
 
 $footer-padding-y-sm: 0.25rem * 8;
 $footer-legal-margin-bottom-sm: 0.25rem * 6;
@@ -15,7 +15,7 @@ $footer-link-separation-redes: 0.25rem * 4;
 $footer-icon-separation: 0.25rem * 1;
 $footer-icon-size: 0.25rem * 6;
 
-$divider-margin: 2.5rem 0 2.5rem;
+$divider-margin: 1.625rem 0 2.5rem 0;
 $divider-border: 0.125rem solid $grisulado-700;
 
 $divider-margin-mobile: 2rem 0 2rem;
@@ -108,6 +108,7 @@ $footer-info-gap-mobile: 1rem;
 
   .list-inline .list-inline-item {
     margin-right: $footer-link-separation;
+    margin-bottom: 16px;
 
     &.phone-items {
       margin-right: $footer-link-separation-phone;
@@ -143,6 +144,10 @@ $footer-info-gap-mobile: 1rem;
     @include media-breakpoint-down(sm) {
       margin: $divider-margin-mobile;
     }
+  }
+
+  ul.list-inline {
+    margin-bottom: 0px;
   }
 }
 

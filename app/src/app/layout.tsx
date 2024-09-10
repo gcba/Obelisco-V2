@@ -35,6 +35,17 @@ export default function RootLayout({
       </head>
       <body>
         <HeaderDesktop />
+        <div className="banner banner-dark">
+          <div className="banner-content">
+            <p className="banner-text">
+              Obelisco V2 se encuentra en desarrollo. Para más información puedes{' '}
+              <a href="mailto:equipoobelisco@buenosaires.gob.ar" className="link-white" rel="noopener noreferrer">
+                contactarnos vía mail
+              </a>
+              .
+            </p>
+          </div>
+        </div>
         <div className="layout">
           <main>
             <MainLayout>{children}</MainLayout>

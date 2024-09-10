@@ -61,9 +61,7 @@ export const gettingPages = [
   { text: 'Importaciones', url: '/getting-started/imports', id: 3 },
 ];
 
-export const documentationPages = [
-  { text: 'Cambios en componentes', url: '/documentation/update-component', id: 2 },
-];
+export const documentationPages = [{ text: 'Cambios en componentes', url: '/documentation/update-component', id: 2 }];
 
 const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const pathname = usePathname();
@@ -121,7 +119,7 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                 <NavLayout items={gettingPages} />
               </div>
             )}
-            
+
             {pathname.includes('/documentation') && (
               <div className="nav-left sticky-nav h-auto">
                 <div className="nav-left-box-title">

@@ -1,7 +1,14 @@
 import React, { useEffect, useState } from 'react';
 
 import Drawer from '../../../Drawer/index';
-import { componentsPages, documentationPages, formsPages, gettingPages, organismsPages, stylesPages } from '../../main-layout';
+import {
+  componentsPages,
+  documentationPages,
+  formsPages,
+  gettingPages,
+  organismsPages,
+  stylesPages,
+} from '../../main-layout';
 import NavLayout from '../../Navigation/nav';
 
 export default function HeaderMobile() {

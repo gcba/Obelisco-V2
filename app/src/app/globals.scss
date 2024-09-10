@@ -2,7 +2,7 @@
 // @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded');
 @import url('../../node_modules/boxicons/css/boxicons.min.css');
-@import '../../styles/main.css';
+@import '../../styles/styles.css';
 
 // Generic Styles
 html {
@@ -50,6 +50,7 @@ hr {
   .nav-scrollspy {
     position: relative;
     min-width: 150px;
+    width: 150px;
 
     .scrollspy {
       list-style: none;
@@ -179,15 +180,20 @@ hr {
   position: sticky;
   top: 132px;
   overflow-y: scroll;
-  height: 75dvh;
+  height: 76dvh;
 
   nav {
     padding: 0.3rem;
     margin-bottom: 1.5rem;
   }
+
+  &.h-auto {
+    overflow-y: unset;
+  }
 }
 .box-content {
   width: 100%;
+  overflow-x: hidden;
 }
 //Listas en documentacion
 .docs-list {

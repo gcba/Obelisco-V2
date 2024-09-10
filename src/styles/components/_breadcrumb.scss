@@ -38,7 +38,7 @@ $breadcrumb-padding-x: 0;
   }
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(xl) {
   .breadcrumb {
     .breadcrumb-item:last-child::before {
       transform: rotate(0.5turn);

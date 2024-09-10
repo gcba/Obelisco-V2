@@ -9,7 +9,7 @@ interface HeadingTemplateProps {
 
 const HeadingTemplate = ({ id, children, className, ref }: HeadingTemplateProps) => {
   return (
-    <div className={`mb-4 heading-top uwu ${className}`} id={id} ref={ref}>
+    <div className={`mb-4 ${className}`} id={id} ref={ref}>
       {children}
     </div>
   );

@@ -25,8 +25,8 @@
   &:hover {
     color: #101e37;
   }
-  &:focus:not(:hover) {
-    color: white;
+  &:focus:not(:hover), &:active {
+    color: white !important;
   }
 }
 .codeBoxButton {

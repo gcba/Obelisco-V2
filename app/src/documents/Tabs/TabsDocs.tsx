@@ -30,8 +30,9 @@ const TabsDocs: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              enlace.
+              enlace
             </a>
+            .
           </p>
         </>
       ),
@@ -40,7 +41,7 @@ const TabsDocs: React.FC = () => {
       id: 'section-1',
       title: 'Simple',
       content: (
-        <div className="col-12 max-720">
+        <>
           <CodeBox codeHTML={TABS_SIMPLE}>
             <div className="container">
               <nav className="tabs-box" aria-label="Navegación por pestañas">
@@ -121,14 +122,14 @@ const TabsDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-        </div>
+        </>
       ),
     },
     {
       id: 'section-2',
       title: 'Con icono',
       content: (
-        <div className="col-12 max-720">
+        <>
           <CodeBox codeHTML={TABS_SIMPLE_ICON}>
             <div className="container">
               <nav className="tabs-box" aria-label="Navegación por pestañas">
@@ -233,14 +234,14 @@ const TabsDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-        </div>
+        </>
       ),
     },
     {
       id: 'section-3',
       title: 'Ancho fijo',
       content: (
-        <div className="col-12 max-720">
+        <>
           <CodeBox codeHTML={TABS_FIXED_WIDTH}>
             <div className="container">
               <nav className="tabs-box" aria-label="Navegación por pestañas">
@@ -345,14 +346,14 @@ const TabsDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-        </div>
+        </>
       ),
     },
     {
       id: 'section-4',
       title: 'Con contenedor',
       content: (
-        <div className="col-12 max-720">
+        <>
           <CodeBox codeHTML={TABS_CONTAINER}>
             <div className="container">
               <nav className="tabs-box" aria-label="Navegación por pestañas">
@@ -457,14 +458,14 @@ const TabsDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-        </div>
+        </>
       ),
     },
     {
       id: 'section-5',
       title: 'Con color de fondo',
       content: (
-        <div className="col-12 max-720">
+        <>
           <CodeBox codeHTML={TABS_WITH_BOX}>
             <div className="container bg-light py-4">
               <nav className="tabs-box" aria-label="Navegación por pestañas">
@@ -569,14 +570,14 @@ const TabsDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-        </div>
+        </>
       ),
     },
     {
       id: 'section-6',
       title: 'Desplazable',
       content: (
-        <div className="col-12 max-720">
+        <>
           <CodeBox codeHTML={TABS_SLIDER}>
             <div className="container">
               <nav className="tabs-box" aria-label="Navegación por pestañas">
@@ -821,14 +822,14 @@ const TabsDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-        </div>
+        </>
       ),
     },
     {
       id: 'section-7',
       title: 'Desplazable con contenedor',
       content: (
-        <div className="col-12 max-720">
+        <>
           <CodeBox codeHTML={TABS_SLIDER_CONTAINER}>
             <div className="container">
               <nav className="tabs-box" aria-label="Navegación por pestañas">
@@ -1073,7 +1074,7 @@ const TabsDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-        </div>
+        </>
       ),
     },
     {

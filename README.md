@@ -69,6 +69,12 @@ Boxicons con npm o CDN:
 
 ```sh
 npm install boxicons
+
+// Es importante que incluyas el import a boxicons en tu hoja de estilos si lo usas via NPM
+@import "boxicons/css/boxicons.min.css";
+```
+
+```sh
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
 ```
 
@@ -76,6 +82,12 @@ Material Symbols con npm o CDN:
 
 ```sh
 npm install material-symbols@latest
+
+// Es importante que incluyas el import a boxicons en tu hoja de estilos si lo usas via NPM
+@import "material-symbols/index.css";
+```
+
+```sh
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0"/>
 ```
 

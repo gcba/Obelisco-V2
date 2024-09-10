@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import Drawer from '../../../Drawer/index';
-import { componentsPages, formsPages, gettingPages, organismsPages, stylesPages } from '../../main-layout';
+import { componentsPages, documentationPages, formsPages, gettingPages, organismsPages, stylesPages } from '../../main-layout';
 import NavLayout from '../../Navigation/nav';
 
 export default function HeaderMobile() {
@@ -33,6 +33,9 @@ export default function HeaderMobile() {
           <p className="headline-lg fw-bold">Secciones</p>
           <hr className="my-4" />
           <NavLayout items={gettingPages} />
+          <p className="headline-lg fw-bold mt-4">Documentación</p>
+          <hr className="my-4" />
+          <NavLayout items={documentationPages} />
           <p className="headline-lg fw-bold mt-4">Estilos</p>
           <hr className="my-4" />
           <NavLayout items={stylesPages} />

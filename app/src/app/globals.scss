@@ -104,7 +104,7 @@ hr {
     }
   }
   .box-content section:last-child {
-    min-height: calc(100vh - 83px);
+    min-height: calc(70vh - 83px);
   }
 }
 
@@ -189,3 +189,13 @@ hr {
 .box-content {
   width: 100%;
 }
+//Listas en documentacion
+.docs-list {
+  li:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+  code {
+    font-size: 1rem;
+  }
+}
+

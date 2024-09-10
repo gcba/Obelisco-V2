@@ -61,6 +61,10 @@ export const gettingPages = [
   { text: 'Importaciones', url: '/getting-started/imports', id: 3 },
 ];
 
+export const documentationPages = [
+  { text: 'Cambios en componentes', url: '/documentation/update-component', id: 2 },
+];
+
 const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const pathname = usePathname();
   const isHome = pathname === '/';
@@ -115,6 +119,16 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                 </div>
                 <hr />
                 <NavLayout items={gettingPages} />
+              </div>
+            )}
+            
+            {pathname.includes('/documentation') && (
+              <div className="nav-left position-sticky">
+                <div className="nav-left-box-title">
+                  <p className="headline-lg fw-bold">Documentación</p>
+                </div>
+                <hr />
+                <NavLayout items={documentationPages} />
               </div>
             )}
           </div>

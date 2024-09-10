@@ -10,7 +10,7 @@ export default function HeaderDesktop() {
   const gettingPages = [
     { text: 'Inicio', url: '/getting-started', id: 1 },
     { text: 'Elementos', url: '/components', id: 2 },
-    { text: 'Documentación', url: '/templates', id: 3 },
+    { text: 'Documentación', url: '/documentation', id: 3 },
   ];
 
   return (

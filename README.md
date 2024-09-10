@@ -47,7 +47,7 @@ npm update @gcba/obelisco-v2
 Importar los estilos en el archivo principal del proyecto:
 
 ```sh
-import 'obelisco-v2/dist/styles.css';
+@import "@gcba/obelisco-v2/dist/styles.css";
 o
 <link rel="stylesheet" href="ruta/al/proyecto/dist/styles.css">
 ```

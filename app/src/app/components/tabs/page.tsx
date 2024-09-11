@@ -1,7 +1,5 @@
-import TabsDocs from "@/documents/Tabs/TabsDocs";
+import TabsDocs from '@/documents/Tabs/TabsDocs';
 
 export default function TabsPage() {
-  return (
-    <TabsDocs/>
-  );
+  return <TabsDocs />;
 }

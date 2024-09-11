@@ -1,7 +1,5 @@
-import DropdownNavDocs from "@/documents/DropdownNav/DropdownNavDocs";
+import DropdownNavDocs from '@/documents/DropdownNav/DropdownNavDocs';
 
 export default function DropdownNavPage() {
-  return (
-    <DropdownNavDocs/>
-  );
+  return <DropdownNavDocs />;
 }

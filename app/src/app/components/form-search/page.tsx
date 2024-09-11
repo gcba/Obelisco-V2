@@ -1,7 +1,5 @@
-import FormSearchDocs from "@/documents/FormSearch/FormSearch";
+import FormSearchDocs from '@/documents/FormSearch/FormSearch';
 
 export default function FormSearchPage() {
-  return (
-    <FormSearchDocs/>
-  );
+  return <FormSearchDocs />;
 }

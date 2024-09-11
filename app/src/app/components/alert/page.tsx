@@ -1,7 +1,5 @@
-import AlertDocs from "@/documents/Alert/AlertDocs";
+import AlertDocs from '@/documents/Alert/AlertDocs';
 
 export default function AlertPage() {
-  return (
-    <AlertDocs/>
-  );
+  return <AlertDocs />;
 }

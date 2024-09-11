@@ -1,7 +1,5 @@
-import SwitchDocs from "@/documents/Switch/SwitchDocs";
+import SwitchDocs from '@/documents/Switch/SwitchDocs';
 
 export default function SwitchPage() {
-  return (
-    <SwitchDocs/>
-  );
+  return <SwitchDocs />;
 }

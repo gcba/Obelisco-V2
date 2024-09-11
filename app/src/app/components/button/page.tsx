@@ -1,7 +1,5 @@
-import ButtonDocs from "@/documents/Button/ButtonDocs";
+import ButtonDocs from '@/documents/Button/ButtonDocs';
 
 export default function ButtonPage() {
-  return (
-    <ButtonDocs/>
-  );
+  return <ButtonDocs />;
 }

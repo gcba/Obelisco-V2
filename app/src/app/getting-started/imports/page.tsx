@@ -1,7 +1,5 @@
-import ImportsModule from "@/documents/getting-started-module/ImportsModule";
+import ImportsModule from '@/documents/getting-started-module/ImportsModule';
 
 export default function ImportPage() {
-  return (
-    <ImportsModule/>
-  );
+  return <ImportsModule />;
 }

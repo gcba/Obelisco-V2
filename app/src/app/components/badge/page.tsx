@@ -1,7 +1,5 @@
-import BadgeDocs from "@/documents/Badge/BadgeDocs";
+import BadgeDocs from '@/documents/Badge/BadgeDocs';
 
 export default function BadgePage() {
-  return (
-    <BadgeDocs />
-  );
+  return <BadgeDocs />;
 }

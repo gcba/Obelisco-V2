@@ -1,7 +1,5 @@
-import BreadcrumbDocs from "@/documents/Breadcrumb/BreadcrumbDocs";
+import BreadcrumbDocs from '@/documents/Breadcrumb/BreadcrumbDocs';
 
 export default function BreadCrumbPage() {
-  return (
-    <BreadcrumbDocs/>
-  );
+  return <BreadcrumbDocs />;
 }

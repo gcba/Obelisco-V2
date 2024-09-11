@@ -1,7 +1,5 @@
-import TypographyDocs from "@/documents/Typography/TypographyDocs";
+import TypographyDocs from '@/documents/Typography/TypographyDocs';
 
 export default function TypographyPage() {
-  return (
-    <TypographyDocs/>
-  );
+  return <TypographyDocs />;
 }

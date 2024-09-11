@@ -1,35 +1,33 @@
+/* === Custom variables === */
 $accordion-margin: 0.75rem;
 $accordion-button-padding: 1rem 4rem 1rem 1.5rem;
 
-$accordion-icon-collapsed: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><g clip-path="url(%23clip0_1505_2440)"><path d="M18.5454 13H13.5454V18C13.5454 18.55 13.0954 19 12.5454 19C11.9954 19 11.5454 18.55 11.5454 18V13H6.54541C5.99541 13 5.54541 12.55 5.54541 12C5.54541 11.45 5.99541 11 6.54541 11H11.5454V6C11.5454 5.45 11.9954 5 12.5454 5C13.0954 5 13.5454 5.45 13.5454 6V11H18.5454C19.0954 11 19.5454 11.45 19.5454 12C19.5454 12.55 19.0954 13 18.5454 13Z" fill="%23101E37"/></g><defs><clipPath id="clip0_1505_2440"><rect width="24" height="24" fill="white" transform="translate(0.54541)"/></clipPath></defs></svg>');
-$accordion-icon-expanded: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><g clip-path="url(%23clip0_1505_307)"><path d="M18.5454 13H6.54541C5.99541 13 5.54541 12.55 5.54541 12C5.54541 11.45 5.99541 11 6.54541 11H18.5454C19.0954 11 19.5454 11.45 19.5454 12C19.5454 12.55 19.0954 13 18.5454 13Z" fill="white"/></g><defs><clipPath id="clip0_1505_307"><rect width="24" height="24" fill="white" transform="translate(0.54541)"/></clipPath></defs></svg>');
-
-$accordion-icon-collapsed-white: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"></path></svg>');
-$accordion-icon-expanded-white: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M5 11h14v2H5z"></path></svg>');
-
-$accordion-icon-collapsed-blue: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><g clip-path="url(%23clip0_1505_2918)"><path d="M18.5454 13H13.5454V18C13.5454 18.55 13.0954 19 12.5454 19C11.9954 19 11.5454 18.55 11.5454 18V13H6.54541C5.99541 13 5.54541 12.55 5.54541 12C5.54541 11.45 5.99541 11 6.54541 11H11.5454V6C11.5454 5.45 11.9954 5 12.5454 5C13.0954 5 13.5454 5.45 13.5454 6V11H18.5454C19.0954 11 19.5454 11.45 19.5454 12C19.5454 12.55 19.0954 13 18.5454 13Z" fill="%23274986"/></g><defs><clipPath id="clip0_1505_2918"><rect width="24" height="24" fill="white" transform="translate(0.54541)"/></clipPath></defs></svg>');
-$accordion-icon-expanded-blue: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><g clip-path="url(%23clip0_1505_307)"><path d="M18.5454 13H6.54541C5.99541 13 5.54541 12.55 5.54541 12C5.54541 11.45 5.99541 11 6.54541 11H18.5454C19.0954 11 19.5454 11.45 19.5454 12C19.5454 12.55 19.0954 13 18.5454 13Z" fill="white"/></g><defs><clipPath id="clip0_1505_307"><rect width="24" height="24" fill="white" transform="translate(0.54541)"/></clipPath></defs></svg>');
-
-$accordion-icon-user: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(56, 72, 92);transform: ;msFilter:;"><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path></svg>');
-$accordion-icon-user-white: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path></svg>');
-$accordion-icon-user-blue: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 123, 199);transform: ;msFilter:;"><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path></svg>');
-
-$accordion-bg-white: $white;
-
+//Icono de colapsable
 $accordion-button-expanded-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><g clip-path="url(%23clip0_2332_21628)"><path d="M18.5454 13H6.54541C5.99541 13 5.54541 12.55 5.54541 12C5.54541 11.45 5.99541 11 6.54541 11H18.5454C19.0954 11 19.5454 11.45 19.5454 12C19.5454 12.55 19.0954 13 18.5454 13Z" fill="white"/></g><defs><clipPath id="clip0_2332_21628"><rect width="24" height="24" fill="white" transform="translate(0.54541)"/></clipPath></defs></svg>');
 $accordion-button-collapsed-icon-hover: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><g clip-path="url(%23clip0_2332_22353)"><path d="M18.5454 13H13.5454V18C13.5454 18.55 13.0954 19 12.5454 19C11.9954 19 11.5454 18.55 11.5454 18V13H6.54541C5.99541 13 5.54541 12.55 5.54541 12C5.54541 11.45 5.99541 11 6.54541 11H11.5454V6C11.5454 5.45 11.9954 5 12.5454 5C13.0954 5 13.5454 5.45 13.5454 6V11H18.5454C19.0954 11 19.5454 11.45 19.5454 12C19.5454 12.55 19.0954 13 18.5454 13Z" fill="%23274986"/></g><defs><clipPath id="clip0_2332_22353"><rect width="24" height="24" fill="white" transform="translate(0.54541)"/></clipPath></defs></svg>');
 $accordion-button-collapsed-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><g clip-path="url(%23clip0_2332_21850)"><path d="M18.5454 13H13.5454V18C13.5454 18.55 13.0954 19 12.5454 19C11.9954 19 11.5454 18.55 11.5454 18V13H6.54541C5.99541 13 5.54541 12.55 5.54541 12C5.54541 11.45 5.99541 11 6.54541 11H11.5454V6C11.5454 5.45 11.9954 5 12.5454 5C13.0954 5 13.5454 5.45 13.5454 6V11H18.5454C19.0954 11 19.5454 11.45 19.5454 12C19.5454 12.55 19.0954 13 18.5454 13Z" fill="%23101E37"/></g><defs><clipPath id="clip0_2332_21850"><rect width="24" height="24" fill="white" transform="translate(0.54541)"/></clipPath></defs></svg>');
 
+/* === Custom mixins === */
 @mixin accordion-icon($accordion-icon) {
   background: transparent #{$accordion-icon} no-repeat center center;
 }
 
-// COLAPSABLE
+/* === Custom styles === */
+
 .accordion {
   .accordion-item:not(:last-of-type) {
     margin-bottom: $accordion-margin;
   }
+
+  &.accordion-white {
+    .accordion-item {
+      .accordion-button.collapsed {
+        background: $white;
+      }
+    }
+  }
 }
+
 .accordion-item {
   overflow: visible;
   border: none;
@@ -76,8 +74,6 @@ $accordion-button-collapsed-icon: url('data:image/svg+xml,<svg xmlns="http://www
       transform: translateY(-50%);
       margin-left: auto;
       @include accordion-icon($accordion-button-expanded-icon);
-      /* float: right;
-      @include accordion-icon($accordion-icon-expanded-white); */
     }
 
     i,
@@ -139,9 +135,6 @@ $accordion-button-collapsed-icon: url('data:image/svg+xml,<svg xmlns="http://www
         color: $hover-color;
         outline: $hover-outline;
 
-        + * > .card-body {
-          /* border-color: $card-header-bg; */
-        }
         &:focus {
           box-shadow: none;
         }
@@ -166,8 +159,6 @@ $accordion-button-collapsed-icon: url('data:image/svg+xml,<svg xmlns="http://www
     .accordion-form {
       .form-radio {
         width: 100%;
-
-        
 
         .form-radio-input {
           top: 50%;
@@ -206,13 +197,13 @@ $accordion-button-collapsed-icon: url('data:image/svg+xml,<svg xmlns="http://www
             .label-subtitle {
               grid-area: form-subtitle;
               @extend .text-sm;
-              margin-top: .125rem;
+              margin-top: 0.125rem;
             }
 
             .label-top {
               grid-area: form-label;
               @extend .text-sm;
-              margin-bottom: .125rem;
+              margin-bottom: 0.125rem;
             }
 
             .label-icon {
@@ -228,16 +219,10 @@ $accordion-button-collapsed-icon: url('data:image/svg+xml,<svg xmlns="http://www
       }
     }
   }
-}
 
-/* &.accordion-white {
-      .card {
-        border-radius: $card-border-radius;
-  
-        .card-header {
-          &.collapsed {
-            background: $accordion-bg-white;
-          }
-        }
-      }
-    } */
+  &.item-white {
+    .accordion-button.collapsed {
+      background: $white;
+    }
+  }
+}

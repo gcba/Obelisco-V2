@@ -6,6 +6,8 @@ import '../../layout.scss';
 import NavLayout from '../../Navigation/nav';
 import HeaderMobile from '../Mobile';
 
+const basePath = '/Obelisco-V2';
+
 export default function HeaderDesktop() {
   const gettingPages = [
     { text: 'Inicio', url: '/getting-started', id: 1 },
@@ -22,12 +24,12 @@ export default function HeaderDesktop() {
         <Link href="/" className="navbar-brand">
           <Image
             className="header-logo"
-            src="./BA.svg"
+            src={`${basePath}/images/BA.svg`}
             alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
             width={76}
             height={41}
           />
-          <Image className="obelisco-logo" src="./obelisco-logo.png" width={76} height={41} alt="Logo React obelisco" />
+          <Image className="obelisco-logo" src={`${basePath}/images/obelisco-logo.png`} width={76} height={41} alt="Logo React obelisco" />
         </Link>
         <HeaderMobile />
         <div className="collapse navbar-collapse justify-content-end" id="navbarContent">

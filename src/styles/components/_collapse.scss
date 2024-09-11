@@ -57,7 +57,7 @@ $accordion-button-collapsed-icon: url('data:image/svg+xml,<svg xmlns="http://www
       'icon title'
       'icon subtitle';
     grid-template-columns: auto 1fr;
-    grid-gap: 0;;
+    grid-gap: 0;
     align-items: center;
     word-break: break-word;
     @extend .headline-lg; //Nunito 20px, IL 24px, fw 700

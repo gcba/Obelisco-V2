@@ -1,0 +1,243 @@
+$accordion-margin: 0.75rem;
+$accordion-button-padding: 1rem 4rem 1rem 1.5rem;
+
+$accordion-icon-collapsed: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><g clip-path="url(%23clip0_1505_2440)"><path d="M18.5454 13H13.5454V18C13.5454 18.55 13.0954 19 12.5454 19C11.9954 19 11.5454 18.55 11.5454 18V13H6.54541C5.99541 13 5.54541 12.55 5.54541 12C5.54541 11.45 5.99541 11 6.54541 11H11.5454V6C11.5454 5.45 11.9954 5 12.5454 5C13.0954 5 13.5454 5.45 13.5454 6V11H18.5454C19.0954 11 19.5454 11.45 19.5454 12C19.5454 12.55 19.0954 13 18.5454 13Z" fill="%23101E37"/></g><defs><clipPath id="clip0_1505_2440"><rect width="24" height="24" fill="white" transform="translate(0.54541)"/></clipPath></defs></svg>');
+$accordion-icon-expanded: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><g clip-path="url(%23clip0_1505_307)"><path d="M18.5454 13H6.54541C5.99541 13 5.54541 12.55 5.54541 12C5.54541 11.45 5.99541 11 6.54541 11H18.5454C19.0954 11 19.5454 11.45 19.5454 12C19.5454 12.55 19.0954 13 18.5454 13Z" fill="white"/></g><defs><clipPath id="clip0_1505_307"><rect width="24" height="24" fill="white" transform="translate(0.54541)"/></clipPath></defs></svg>');
+
+$accordion-icon-collapsed-white: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"></path></svg>');
+$accordion-icon-expanded-white: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M5 11h14v2H5z"></path></svg>');
+
+$accordion-icon-collapsed-blue: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><g clip-path="url(%23clip0_1505_2918)"><path d="M18.5454 13H13.5454V18C13.5454 18.55 13.0954 19 12.5454 19C11.9954 19 11.5454 18.55 11.5454 18V13H6.54541C5.99541 13 5.54541 12.55 5.54541 12C5.54541 11.45 5.99541 11 6.54541 11H11.5454V6C11.5454 5.45 11.9954 5 12.5454 5C13.0954 5 13.5454 5.45 13.5454 6V11H18.5454C19.0954 11 19.5454 11.45 19.5454 12C19.5454 12.55 19.0954 13 18.5454 13Z" fill="%23274986"/></g><defs><clipPath id="clip0_1505_2918"><rect width="24" height="24" fill="white" transform="translate(0.54541)"/></clipPath></defs></svg>');
+$accordion-icon-expanded-blue: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><g clip-path="url(%23clip0_1505_307)"><path d="M18.5454 13H6.54541C5.99541 13 5.54541 12.55 5.54541 12C5.54541 11.45 5.99541 11 6.54541 11H18.5454C19.0954 11 19.5454 11.45 19.5454 12C19.5454 12.55 19.0954 13 18.5454 13Z" fill="white"/></g><defs><clipPath id="clip0_1505_307"><rect width="24" height="24" fill="white" transform="translate(0.54541)"/></clipPath></defs></svg>');
+
+$accordion-icon-user: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(56, 72, 92);transform: ;msFilter:;"><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path></svg>');
+$accordion-icon-user-white: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path></svg>');
+$accordion-icon-user-blue: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: rgba(0, 123, 199);transform: ;msFilter:;"><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path></svg>');
+
+$accordion-bg-white: $white;
+
+$accordion-button-expanded-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><g clip-path="url(%23clip0_2332_21628)"><path d="M18.5454 13H6.54541C5.99541 13 5.54541 12.55 5.54541 12C5.54541 11.45 5.99541 11 6.54541 11H18.5454C19.0954 11 19.5454 11.45 19.5454 12C19.5454 12.55 19.0954 13 18.5454 13Z" fill="white"/></g><defs><clipPath id="clip0_2332_21628"><rect width="24" height="24" fill="white" transform="translate(0.54541)"/></clipPath></defs></svg>');
+$accordion-button-collapsed-icon-hover: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><g clip-path="url(%23clip0_2332_22353)"><path d="M18.5454 13H13.5454V18C13.5454 18.55 13.0954 19 12.5454 19C11.9954 19 11.5454 18.55 11.5454 18V13H6.54541C5.99541 13 5.54541 12.55 5.54541 12C5.54541 11.45 5.99541 11 6.54541 11H11.5454V6C11.5454 5.45 11.9954 5 12.5454 5C13.0954 5 13.5454 5.45 13.5454 6V11H18.5454C19.0954 11 19.5454 11.45 19.5454 12C19.5454 12.55 19.0954 13 18.5454 13Z" fill="%23274986"/></g><defs><clipPath id="clip0_2332_22353"><rect width="24" height="24" fill="white" transform="translate(0.54541)"/></clipPath></defs></svg>');
+$accordion-button-collapsed-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><g clip-path="url(%23clip0_2332_21850)"><path d="M18.5454 13H13.5454V18C13.5454 18.55 13.0954 19 12.5454 19C11.9954 19 11.5454 18.55 11.5454 18V13H6.54541C5.99541 13 5.54541 12.55 5.54541 12C5.54541 11.45 5.99541 11 6.54541 11H11.5454V6C11.5454 5.45 11.9954 5 12.5454 5C13.0954 5 13.5454 5.45 13.5454 6V11H18.5454C19.0954 11 19.5454 11.45 19.5454 12C19.5454 12.55 19.0954 13 18.5454 13Z" fill="%23101E37"/></g><defs><clipPath id="clip0_2332_21850"><rect width="24" height="24" fill="white" transform="translate(0.54541)"/></clipPath></defs></svg>');
+
+@mixin accordion-icon($accordion-icon) {
+  background: transparent #{$accordion-icon} no-repeat center center;
+}
+
+// COLAPSABLE
+.accordion {
+  .accordion-item:not(:last-of-type) {
+    margin-bottom: $accordion-margin;
+  }
+}
+.accordion-item {
+  overflow: visible;
+  border: none;
+  outline: $outline-border;
+  border-radius: $border-radius-lg;
+
+  &:first-of-type,
+  &:last-of-type {
+    border-radius: $border-radius-lg;
+  }
+
+  .accordion-button {
+    outline: 0.125rem solid transparent;
+    background-color: $active-color;
+    border-width: 0;
+    text-align: left;
+    padding: $accordion-button-padding;
+    transition: background-color 0.2s;
+    border-radius: $border-radius-lg $border-radius-lg 0 0;
+    position: relative;
+    z-index: 1;
+    color: $white;
+    min-height: 48px;
+    display: grid;
+    grid-template-areas:
+      'icon label'
+      'icon title'
+      'icon subtitle';
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    align-items: center;
+    word-break: break-word;
+    @extend .headline-lg; //Nunito 20px, IL 24px, fw 700
+
+    &:after {
+      content: '';
+      height: 1.75rem;
+      width: 1.75rem;
+      min-width: 1.75rem;
+      position: absolute;
+      right: 24px;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-left: auto;
+      @include accordion-icon($accordion-button-expanded-icon);
+      /* float: right;
+      @include accordion-icon($accordion-icon-expanded-white); */
+    }
+
+    i,
+    .material-icons-round,
+    .o-icon {
+      grid-area: icon;
+      display: inline-block;
+      font-size: 1.75rem;
+      width: 1.75rem;
+      min-width: 1.75rem;
+      height: 1.75rem;
+      margin-right: 0.75rem;
+    }
+
+    .collapse-label {
+      grid-area: label;
+      @extend .text-sm; //Open sans, 14px, IL 20px, fw 400
+      margin-bottom: 0.25rem;
+      word-break: break-word;
+    }
+
+    .collapse-title {
+      grid-area: title;
+      @extend .headline-lg; //Nunito 20px, IL 24px, fw 700
+      margin-bottom: 0;
+      word-break: break-word;
+    }
+
+    .collapse-subtitle {
+      grid-area: subtitle;
+      @extend .text-md; //Open sans, 16px, IL 24px, fw 400
+      margin-top: 0.25rem;
+      word-break: break-word;
+    }
+
+    &:focus,
+    &.focus {
+      box-shadow: $focus-box-shadow;
+      border-radius: $border-radius-lg;
+      outline: 0.25rem solid transparent;
+    }
+
+    &.collapsed {
+      border-radius: $border-radius-lg;
+      background-color: $grisulado-50;
+      color: $body-color;
+      position: relative;
+      backface-visibility: hidden;
+
+      &:after {
+        display: inline-block;
+        vertical-align: middle;
+        @include accordion-icon($accordion-button-collapsed-icon);
+      }
+
+      &:hover,
+      &.hover {
+        background-color: $grisulado-50;
+        color: $hover-color;
+        outline: $hover-outline;
+
+        + * > .card-body {
+          /* border-color: $card-header-bg; */
+        }
+        &:focus {
+          box-shadow: none;
+        }
+
+        &:after {
+          display: inline-block;
+          vertical-align: middle;
+          @include accordion-icon($accordion-button-collapsed-icon-hover);
+        }
+      }
+    }
+  }
+
+  .accordion-body {
+    padding: 1rem 1.5rem;
+    border: none;
+
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+
+    .accordion-form {
+      .form-radio {
+        width: 100%;
+
+        
+
+        .form-radio-input {
+          top: 50%;
+          transform: translate(0, -50%);
+          margin: 0;
+
+          &:hover {
+            ~ .form-radio-label {
+              text-decoration: none;
+            }
+          }
+        }
+
+        .form-radio-label {
+          width: 100%;
+
+          &:hover {
+            text-decoration: none;
+          }
+
+          .label-content {
+            width: fit-content;
+            display: grid;
+            grid-template-areas:
+              'form-icon form-label'
+              'form-icon form-title'
+              'form-icon form-subtitle';
+            column-gap: 0.5rem;
+
+            .label-title {
+              grid-area: form-title;
+              @extend .headline-md;
+              font-weight: $font-weight-semibold;
+            }
+
+            .label-subtitle {
+              grid-area: form-subtitle;
+              @extend .text-sm;
+              margin-top: .125rem;
+            }
+
+            .label-top {
+              grid-area: form-label;
+              @extend .text-sm;
+              margin-bottom: .125rem;
+            }
+
+            .label-icon {
+              grid-area: form-icon;
+              margin: auto 0;
+              font-size: 1.5rem;
+              width: 1.5rem;
+              max-width: 1.5rem;
+              height: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* &.accordion-white {
+      .card {
+        border-radius: $card-border-radius;
+  
+        .card-header {
+          &.collapsed {
+            background: $accordion-bg-white;
+          }
+        }
+      }
+    } */

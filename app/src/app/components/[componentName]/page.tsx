@@ -7,9 +7,9 @@ import BadgeDocs from '@/documents/Badge/BadgeDocs';
 // import BlockDocs from '@/documents/Block/BlockDocs';
 import BreadcrumbDocs from '@/documents/Breadcrumb/BreadcrumbDocs';
 import ButtonDocs from '@/documents/Button/ButtonDocs';
+import CollapseDocs from '@/documents/Collapse/CollapseDocs';
 // import CalendarDocs from '@/documents/Calendar/CalendarDocs';
 // import CardDocs from '@/documents/Card/CardDocs';
-// import CollapseDocs from '@/documents/Collapse/CollapseDocs';
 import ColorsDocs from '@/documents/Colors/ColorsDocs';
 // import Docs from '@/documents/Docs/Docs';
 import DropdownNavDocs from '@/documents/DropdownNav/DropdownNavDocs';
@@ -56,7 +56,7 @@ const componentMap: Record<string, JSX.Element | null> = {
   button: <ButtonDocs />,
   // calendar: <CalendarDocs />,
   // cards: <CardDocs />,
-  // collapse: <CollapseDocs />,
+  collapse: <CollapseDocs />,
   colors: <ColorsDocs />,
   link: <LinkDocs />,
   modal: <ModalDocs />,
@@ -101,7 +101,7 @@ export async function generateStaticParams(): Promise<Array<{ componentName: str
     // 'block',
     'button',
     // 'cards',
-    // 'collapse',
+    'collapse',
     'colors',
     'link',
     'modal',

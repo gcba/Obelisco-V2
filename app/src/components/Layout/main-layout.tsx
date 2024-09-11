@@ -31,7 +31,7 @@ export const componentsPages = [
   // { text: "Bloque de trámite", url: "/components/block", id: 6 },
   { text: 'Botones', url: '/components/button', id: 7 },
   // { text: "Calendario", url: "/components/calendar", id: 8 },
-  { text: "Colapsable", url: "/components/collapse", id: 9 },
+  { text: 'Colapsable', url: '/components/collapse', id: 9 },
   { text: 'Desplegable de navegación', url: '/components/dropdown-nav', id: 10 },
   { text: 'Desplegable de selección', url: '/components/dropdown-sel', id: 11 },
   // { text: "Destacado", url: "/components/highlighted", id: 12 },

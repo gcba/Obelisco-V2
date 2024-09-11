@@ -48,13 +48,11 @@ jobs:
         working-directory: ./app
 
       - name: Build with Next.js
-        run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        run: ${{ steps.detect-package-manager.outputs.runner }} next build && next export
         working-directory: ./app
 
-      - name: Prepare for Deployment
-        run: |
-          mkdir -p ./app/out
-          cp -r ./app/.next/* ./app/out/
+      - name: List files in out directory
+        run: ls -R ./app/out
         working-directory: ./app
 
       - name: Check if deploy would succeed

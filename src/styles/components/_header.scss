@@ -1,30 +1,20 @@
-$form-icons: (
-  'search':
-    url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(56, 72, 92, 1);transform: ;msFilter:;"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>'),
-  'valid':
-    url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" style="fill: rgba(38, 135, 74, 1);transform: ;msFilter:;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.999 14.413-3.713-3.705L7.7 11.292l2.299 2.295 5.294-5.294 1.414 1.414-6.706 6.706z"></path></svg>'),
-  'invalid':
-    url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" style="fill: rgba(201, 59, 59, 1);transform: ;msFilter:;"><path d="M11.953 2C6.465 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.493 2 11.953 2zM13 17h-2v-2h2v2zm0-4h-2V7h2v6z"></path></svg>'),
-);
-
 /* === Variable and mixins overides === */
 
-$navbar-padding-y: space-units(3);
-$navbar-padding-y-desktop: space-units(4.5);
+$navbar-padding-y: spaceUnits(3);
+$navbar-padding-y-desktop: spaceUnits(4.5);
 $navbar-brand-padding-y: 0;
 
 /* === Custom variables and mixins === */
 
-$navbar-height-desktop: space-units(21);
-$navbar-box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+$navbar-height-desktop: spaceUnits(21);
+$navbar-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 
-$navbar-logo-height: space-units(9.5);
-$navbar-logo-width: space-units(18);
-$navbar-logo-sm: space-units(8.5);
+$navbar-logo-height: spaceUnits(9.5);
+$navbar-logo-width: spaceUnits(18);
+$navbar-logo-sm: spaceUnits(8.5);
 
-$navbar-search-with: space-units(84);
-$navbar-search-closed-padding: space-units(2.752) space-units(18)
-  space-units(2.752) space-units(3.752);
+$navbar-search-with: spaceUnits(84);
+$navbar-search-closed-padding: spaceUnits(2.752) spaceUnits(18) spaceUnits(2.752) spaceUnits(3.752);
 
 $navbar-btn-icon-width: 48px;
 $navbar-btn-icon-height: 40px;
@@ -34,7 +24,7 @@ $navbar-container-padding-x: 60px;
 $navbar-container-padding-x-mobile: 1rem;
 $navbar-header-logo-width: 76px;
 $navbar-header-logo-width-mobile: 57px;
-$navbar-header-logo-height: 41px;
+$navbar-header-logo-height: 48px;
 $navbar-header-logo-height-mobile: 31px;
 $navbar-button-box-shadow: 0 0 0 2px $grisulado-50;
 $navbar-items-color-focus: #005387;
@@ -56,21 +46,20 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
 @mixin dropdown-states {
   .btn-dropdown {
     &:focus {
-      color: $navbar-items-color-focus;
-
+      color: $hover-color;
       .btn-dropdown-text {
         text-decoration: underline;
         text-decoration-thickness: 1px;
       }
-
       &:active {
         color: $white;
+        background-color: $active-color;
+        box-shadow: none;
       }
     }
 
     &:hover:not(:focus) {
       box-shadow: none;
-
       .btn-dropdown-text {
         text-decoration: underline;
         text-decoration-thickness: 1px;
@@ -80,9 +69,8 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
     &[aria-expanded='true'],
     &:active {
       color: $white;
-
       .btn-dropdown-text {
-        @include media-breakpoint-up(lg) {
+        @include media-breakpoint-up(xl) {
           -webkit-text-stroke: 0.25px $white;
           font-weight: 400;
         }
@@ -96,11 +84,9 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
       }
     }
   }
-
   .dropdown-menu {
-    font-size: 1.125rem;
-    line-height: 24px;
-    font-family: $font-family-headings;
+    @extend .headline-md;
+    font-weight: $font-weight-normal;
 
     .dropdown-item {
       &:hover:not(:focus) {
@@ -113,11 +99,10 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
         }
       }
 
-      &:focus:not(:active) {
+      &:focus:not(:active), &:focus:not(.active) {
         &:not(.item-danger) {
-          color: $navbar-items-color-focus;
+          color: $hover-color;
         }
-
         .item-text {
           text-decoration: underline;
           text-decoration-thickness: 1px;
@@ -145,18 +130,15 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
 }
 
 %section-mobile-titles {
-  font-size: $headline-lg;
-  line-height: $height-headline;
+  @extend .headline-lg;
   font-weight: $font-weight-semibold;
-  font-family: $font-family-headings;
   margin-bottom: 0.5rem;
   padding-left: 1rem;
 }
 
 @mixin nav-link-states {
-  &:focus:not(:active) {
-    color: $navbar-items-color-focus;
-
+  &:focus:not(:active), &:focus:not(.active) {
+    color: $active-color;
     span:not(.material-icons-round) {
       text-decoration: underline;
       text-decoration-thickness: 1px;
@@ -166,11 +148,13 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
   &:hover:not(:focus) {
     box-shadow: none;
     text-decoration: none;
-
     span:not(.material-icons-round) {
       text-decoration: underline;
       text-decoration-thickness: 1px;
     }
+  }
+  &.active:focus, &:active:focus {
+    color: $white;
   }
 }
 
@@ -178,7 +162,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
   .navbar-sections-title {
     @extend %section-mobile-titles;
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
       display: none;
     }
   }
@@ -195,32 +179,29 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
       display: flex;
       align-items: center;
       column-gap: 0.25rem;
-
       span {
         font-size: 1.125rem;
       }
-
-      .material-icons-round,
-      .bx {
+      .material-icons-round, .bx {
         font-size: 1.5rem;
       }
-
       @include nav-link-states;
     }
 
-    @include media-breakpoint-up(lg) {
-      gap: 1rem 1.25rem;
+    @include media-breakpoint-up(xl) {
+      column-gap: 1.25rem;
+      row-gap: 1rem;
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(xl) {
       flex-direction: column;
       row-gap: 0.5rem;
 
       .dropdown {
         width: 100%;
-
         .btn-dropdown {
           width: 100%;
+          max-width: 100%;
           justify-content: space-between;
           font-size: 1rem;
           padding-left: 1rem;
@@ -229,11 +210,10 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
         .dropdown-menu {
           min-width: 100%;
           position: static;
-          box-shadow: none !important;
-          border-bottom: 2px solid $grisulado-50;
+          outline: none;
+          border-bottom: .125rem solid $grisulado-50;
           border-radius: 0;
           padding-bottom: 0.25rem;
-
           .dropdown-item {
             padding-left: 2rem;
             font-size: 1rem;
@@ -249,14 +229,12 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
 
       .nav-item {
         width: 100%;
-
         &:first-child {
           margin-top: 0;
         }
 
         .nav-link {
           padding-left: 1rem;
-
           span {
             font-size: 1rem;
           }
@@ -266,7 +244,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
   }
 }
 
-@mixin responsive {
+/* @mixin responsive {
   height: auto;
   justify-content: flex-end;
 
@@ -323,7 +301,6 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
     height: 100%;
 
     .form-search {
-      height: 40px;
 
       .form-control.input-search {
         margin-bottom: 0;
@@ -367,9 +344,9 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
         top: 3px;
       }
 
-      @media (width <= 420px) {
+      @media (max-width: 420px) {
         width: 100%;
-        margin-top: 0;
+        margin-top: 0rem;
       }
     }
 
@@ -401,7 +378,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
     box-shadow: 0 0 0 2px $grisulado-50;
     color: $grisulado-900;
     border-radius: 8px;
-    padding: 0;
+    padding: 0px;
     height: $navbar-btn-icon-height;
     margin-right: 10px !important;
     width: $navbar-btn-icon-width;
@@ -488,6 +465,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
     &.d-responsive {
       display: block;
     }
+
     margin-left: 10px !important;
   }
 
@@ -498,12 +476,28 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
     transition: height 0.35s linear;
     display: block;
   }
-}
+} */
+
 
 /* === Custom styles === */
+//Notificaciones - HEADER
+.notification {
+  position: relative;
 
+  &[aria-expanded=false]:before {
+    content: "" !important;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background-color: $danger;
+    border-radius: 50%;
+  }
+}
 .navbar {
-  .container {
+  /* .container {
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -556,17 +550,17 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
   }
 
   &.navbar-lg {
-    @media screen and (width <= 1160px) {
+    @media screen and (max-width: 1160px) {
       @include responsive;
     }
   }
 
   &.navbar-md {
-    @media screen and (width <= 976px) {
+    @media screen and (max-width: 976px) {
       @include responsive;
     }
 
-    @media screen and (width <= 997px) {
+    @media screen and (max-width: 997px) {
       .navbar-search {
         &:is(.active-search) {
           width: 100%;
@@ -600,7 +594,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
   }
 
   &:has(.list-group-content):has(.navbar-search) {
-    @media (width <= 477px) {
+    @media (max-width: 477px) {
       .list-group-content.d-responsive {
         order: 4;
         margin-top: 0.625rem;
@@ -614,7 +608,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
       }
     }
 
-    @media (width <= 477px) {
+    @media (max-width: 477px) {
       .navbar-toggler {
         margin-left: auto !important;
       }
@@ -660,7 +654,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
     @include media-breakpoint-up(md) {
       display: flex;
       align-items: center;
-      gap: space-units(2);
+      gap: spaceUnits(2);
 
       &.d-responsive {
         display: none;
@@ -670,6 +664,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
     .input-search {
       width: $navbar-search-with;
     }
+
     margin-bottom: 2px;
     margin-top: 2px;
   }
@@ -760,7 +755,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
   .logout {
     height: $navbar-btn-icon-width;
     max-height: $navbar-btn-icon-width;
-    padding: 12px;
+    padding: 12px 12px;
     color: #dc3545;
     text-decoration: none;
     display: none;
@@ -768,7 +763,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
     font-weight: 400;
     line-height: 1.378;
     text-align: end;
-    font-family: Nunito, sans-serif;
+    font-family: 'Nunito', sans-serif;
 
     &:active,
     &:focus {
@@ -782,9 +777,10 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
   .collapse.multi-collapse:has(.navbar-toggler) {
     @include media-breakpoint-up(md) {
       .navbar-toggler {
-        margin-right: 0 !important;
+        margin-right: 0px !important;
         margin-left: 10px !important;
       }
+
       display: block;
     }
   }
@@ -797,23 +793,47 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
 
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(56, 72, 92, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-  }
+  } */
 
   /* HEADER V3 */
-  &.navbar-expand-lg {
+  &.o-header {
     border-bottom: 0.25rem solid $blue;
-    height: unset;
+    /* height: unset; */
     padding: 0.75rem 1rem;
 
-    @include media-breakpoint-up(lg) {
-      padding: 0.875rem 0;
+    @include media-breakpoint-up(xl) {
+      padding: 1rem 0 .75rem;
+      flex-wrap: nowrap;
+    justify-content: flex-start;
+      // estilos derivan de .navbar-expand-xl
+      .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+      }
+      /* .navbar-nav {
+        flex-direction: row;
+      }
+      .navbar-nav .dropdown-menu {
+        position: absolute;
+      }
+      .navbar-nav .nav-link {
+        padding-right: var(--bs-navbar-nav-link-padding-x);
+        padding-left: var(--bs-navbar-nav-link-padding-x);
+      }
+      .navbar-nav-scroll {
+        overflow: visible;
+      }
+      .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+      } */
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(xl) {
       &:has(.navbar-collapse.show, .navbar-collapse.collapsing) {
         border-bottom: none;
         padding: 0;
-
+        
         .header-container {
           padding: 0.75rem 1rem;
           z-index: 1050;
@@ -839,22 +859,23 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
       width: 1px;
       height: 1px;
       overflow: hidden;
+      
 
-      &:not(:focus) {
+      &:not(:focus){
         clip: rect(0 0 0 0);
       }
 
       &:focus {
-        top: 0;
+        top: .25rem;
         left: 50%;
         transform: translateX(-50%);
         width: auto;
         height: auto;
         overflow: visible;
-        box-shadow: 0 0 0 0.25rem #00568b;
+        box-shadow: $focus-box-shadow;
         padding: 0.0625rem 0.5rem 0.125rem;
         text-decoration: none;
-        background-color: $gray-700;
+        background-color: $dark;
         color: $white;
         text-align: center;
         z-index: 1050;
@@ -865,13 +886,13 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
   .header-container {
     align-items: flex-start;
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(xl) {
       padding: 0;
       max-width: 100%;
       align-items: center;
     }
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
       column-gap: 1.5rem;
     }
 
@@ -881,7 +902,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
       padding-right: $navbar-container-padding-x;
     }
 
-    @media (width >= 1366px) {
+    @media(min-width: 1366px) {
       max-width: 100%;
       margin: 0;
     }
@@ -889,17 +910,17 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
     .navbar-brand {
       margin-right: auto;
       width: fit-content;
-
-      @include media-breakpoint-up(lg) {
+      padding: 0;
+      /* @include media-breakpoint-up(lg) {
         margin-top: 3.5px;
-      }
+      } */
 
       .header-logo {
         margin-right: 0;
         width: $navbar-header-logo-width-mobile;
         height: $navbar-header-logo-height-mobile;
 
-        @include media-breakpoint-up(lg) {
+        @include media-breakpoint-up(xl) {
           width: $navbar-header-logo-width;
           height: $navbar-header-logo-height;
         }
@@ -911,63 +932,64 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
       width: 48px;
       border: none;
       border-radius: 0.5rem;
-      box-shadow: $navbar-button-box-shadow;
-      outline: 0.125rem solid transparent;
-      color: $grisulado-900;
+      outline: $outline-border;
+      color: $body-color;
       background: transparent $navbar-toggle-menu no-repeat center center;
+      margin-left: 1rem;
+      display: none;
 
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(xl) {
         display: inline-block;
+      }
+      @media (max-width: 290px) {
+        margin-left: 0.25rem;
       }
 
       &:focus,
       &:focus-visible {
         outline: 0.25rem solid transparent;
+        box-shadow: $focus-box-shadow;
       }
 
       &[aria-expanded='true'] {
-        background: $active $navbar-toggle-close no-repeat center center;
+        background: $active-color $navbar-toggle-close no-repeat center center;
         box-shadow: none;
         outline: 0.125rem solid transparent;
-
-        &:focus,
-        &.focus {
+        &:focus, &.focus {
           outline: 0.25rem solid transparent;
         }
       }
     }
 
     .navbar-login-mobile {
-      margin-right: 1rem;
+      /* margin-right: 1rem; */
 
-      @media (width <= 290px) {
+      /* @media (max-width: 290px) {
         margin-right: 0.25rem;
-      }
-
-      @include media-breakpoint-up(lg) {
+      } */
+      @include media-breakpoint-up(xl) {
         display: none;
       }
     }
 
-    &:not(:has(.navbar-toggler)) {
+    /* &:not(:has(.navbar-toggler)) {
       .navbar-login-mobile {
         margin-right: 0;
       }
-    }
+    } */
 
     .navbar-collapse {
       flex-wrap: wrap;
 
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(xl) {
         display: none;
-
         &.show,
         &.collapsing {
           display: block;
           padding: 0 1rem 0.25rem;
           position: absolute;
           top: 72px;
-          left: 0;
+          left: 0px;
           z-index: 1050;
           background-color: $white;
           width: 100%;
@@ -976,13 +998,13 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
         }
       }
 
-      @include media-breakpoint-up(lg) {
+      /* @include media-breakpoint-up(xl) {
         &:not(:has(.navbar-content)) {
           margin-top: 48px;
         }
-      }
+      } */
 
-      &:not(:has(.navbar-search, .navbar-sections, .navbar-content-extended)) {
+      &:not(:has(.navbar-search,.navbar-sections,.navbar-content-extended)) {
         .navbar-user-mobile {
           border-top: none;
           padding-top: 0;
@@ -994,111 +1016,44 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
         justify-content: flex-end;
         align-items: flex-start;
         flex-wrap: nowrap;
-        gap: 0 1.5rem;
+        column-gap: 1.5rem;
+        row-gap: 0;
         width: 100%;
 
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(xl) {
           flex-direction: column-reverse;
         }
 
         .navbar-search {
-          max-width: 340px;
+          max-width: 348px;
           width: 100%;
           margin-top: 0;
           margin-bottom: 0;
 
-          @include media-breakpoint-down(md) {
+          @include media-breakpoint-down(xl) {
             max-width: 100%;
-            padding: 0 2px;
+            padding: 0;
             margin-top: 0.25rem;
             margin-bottom: 1.5rem;
-          }
-
-          .form-search {
-            height: 48px;
-            width: 100%;
-
-            .form-group {
-              display: flex;
-              flex-wrap: nowrap;
-              margin: 0;
-              position: relative;
-
-              .input-search {
-                margin: 0;
-                display: inline-block;
-                height: 48px;
-                width: 100%;
-                background-image: none;
-                padding: 0.75rem 5.2rem 0.75rem 1rem;
-                overflow: hidden;
-                text-overflow: ellipsis;
-
-                @include media-breakpoint-down(sm) {
-                  background-color: $grisulado-50;
-                }
-
-                &[type='search'] ~ .reset[type='reset'] {
-                  right: 48px;
-                  width: 48px;
-                  height: 48px;
-                  border-radius: 0.5rem;
-
-                  &::after {
-                    left: 23px;
-                  }
-                }
-              }
-
-              .submit-search {
-                position: absolute;
-                top: 50%;
-                right: 0;
-                transform: translateY(-50%);
-                width: 48px;
-                height: 48px;
-                padding: 0;
-                border: none;
-                border-radius: 0.5rem;
-                background: transparent map-get($form-icons, 'search') no-repeat
-                  center center;
-                outline: 0.125rem solid transparent;
-                outline-offset: -2px;
-
-                &:focus,
-                &:focus-visible {
-                  box-shadow: 0 0 0 0.25rem $navbar-items-box-shadow-color-focus;
-                  outline: 0.25rem solid transparent;
-                }
-              }
-            }
           }
         }
 
         .navbar-user {
-          @include media-breakpoint-down(md) {
+          @include media-breakpoint-down(xl) {
             display: none;
           }
 
           .dropdown {
             @include dropdown-states;
-
             .btn-dropdown {
-              &:focus {
-                color: $grisulado-900;
-
-                .btn-dropdown-text {
-                  text-decoration: none;
-                }
-              }
+              
 
               &[aria-expanded='true'] {
                 color: $white;
               }
-
+      
               &:hover:not(:focus) {
                 box-shadow: 0 0 0 2px $blue;
-
                 .btn-dropdown-text {
                   text-decoration: none;
                 }
@@ -1111,8 +1066,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
           a {
             word-break: normal;
           }
-
-          @include media-breakpoint-down(md) {
+          @include media-breakpoint-down(xl) {
             display: none;
           }
         }
@@ -1123,7 +1077,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
           margin-bottom: 1rem;
           @include nav-sections-styles;
 
-          @include media-breakpoint-up(lg) {
+          @include media-breakpoint-up(xl) {
             margin-right: auto;
             min-width: 451px;
             max-width: 990px;
@@ -1134,12 +1088,13 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
       }
 
       .navbar-user-mobile {
-        @include media-breakpoint-up(lg) {
+        @include media-breakpoint-up(xl) {
           display: none;
         }
+
         width: 100%;
         margin-bottom: 1rem;
-        border-top: 1px solid $grisulado-50;
+        border-top: 1px solid $grisulado-100;
         padding-top: 1rem;
 
         &.unbordered {
@@ -1157,7 +1112,6 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
 
           .nav-item {
             width: 100%;
-
             &:first-child {
               margin-top: 0;
             }
@@ -1168,16 +1122,14 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
               display: flex;
               align-items: center;
               column-gap: 0.25rem;
-
+              
               span {
                 font-size: 1.125rem;
-
-                @include media-breakpoint-down(md) {
+                @include media-breakpoint-down(xl) {
                   font-size: 1rem;
                 }
 
-                &.material-icons-round,
-                &.bx {
+                &.material-icons-round, &.bx {
                   font-size: 1.5rem;
                 }
               }
@@ -1218,7 +1170,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
         width: 100%;
         @include nav-sections-styles;
 
-        @include media-breakpoint-up(lg) {
+        @include media-breakpoint-up(xl) {
           width: 100%;
           max-width: 1113px;
           margin-top: 2rem;

@@ -52,12 +52,9 @@ export default function HeaderMobile() {
           <p className="headline-lg fw-bold mt-4">Formularios</p>
           <hr className="my-4" />
           <NavLayout items={formsPages} />
-          {/* Al crear organismos, eliminar el div con clase d-none que envuelve al titulo y nav */}
-          <div className="d-none">
-            <p className="headline-lg fw-bold mt-4">Organismos</p>
-            <hr className="my-4" />
-            <NavLayout items={organismsPages} />
-          </div>
+          <p className="headline-lg fw-bold mt-4">Organismos</p>
+          <hr className="my-4" />
+          <NavLayout items={organismsPages} />
         </div>
       </Drawer>
     </div>

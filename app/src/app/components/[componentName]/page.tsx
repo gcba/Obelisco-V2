@@ -20,7 +20,7 @@ import FormSearchDocs from '@/documents/FormSearch/FormSearch';
 import FormSelectionDocs from '@/documents/FormSelection/FormSelectionDocs';
 // import GalleryDocs from '@/documents/Gallery/GalleryDocs';
 import GridDocs from '@/documents/Grid/GridDocs';
-// import HeaderDocs from '@/documents/Header/HeaderDocs';
+import HeaderDocs from '@/documents/Header/HeaderDocs';
 // import HighlightedDocs from '@/documents/Highlighted/HighlightedDocs';
 import LinkDocs from '@/documents/Link/LinkDocs';
 // import ListInformativeDocs from '@/documents/ListInformative/ListInformativeDocs';
@@ -60,7 +60,7 @@ const componentMap: Record<string, JSX.Element | null> = {
   colors: <ColorsDocs />,
   link: <LinkDocs />,
   modal: <ModalDocs />,
-  // header: <HeaderDocs />,
+  header: <HeaderDocs />,
   // 'list-step': <ListStepDocs />,
   // 'list-link': <ListLinkDocs />,
   // 'list-informative': <ListInformativeDocs />,
@@ -126,6 +126,7 @@ export async function generateStaticParams(): Promise<Array<{ componentName: str
     // 'pagination',
     // 'progress-bar',
     // 'table',
+    'header'
   ];
 
   // Devuelve un array de objetos donde cada uno tiene el nombre de un componente,

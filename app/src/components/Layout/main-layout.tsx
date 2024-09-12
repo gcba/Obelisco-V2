@@ -19,7 +19,7 @@ export const formsPages = [
 export const organismsPages = [
   // { text: "Accesos (organismo)", url: "/components/access", id: 1 },
   // { text: "Footer (organismo)", url: "/components/footer", id: 2 },
-  // { text: "Header (organismo)", url: "/components/header", id: 3 },
+  { text: 'Header (encabezado)', url: "/components/header", id: 3 },
   // { text: "Tablas (organismo)", url:"/components/table", id: 4 },
 ];
 export const componentsPages = [
@@ -97,16 +97,13 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                   </div>
                 </div>
                 <NavLayout items={formsPages} />
-                {/* Al crear organismos, eliminar el div con clase d-none que envuelve al titulo y nav */}
-                <div className="d-none">
-                  <div className="nav-left-box-title">
-                    <div className="pe-2">
-                      <p className="headline-lg fw-bold mb-1">Organismos</p>
-                      <hr className="my-2" />
-                    </div>
+                <div className="nav-left-box-title">
+                  <div className="pe-2">
+                    <p className="headline-lg fw-bold mb-1">Organismos</p>
+                    <hr className="my-2" />
                   </div>
-                  <NavLayout items={organismsPages} />
                 </div>
+                <NavLayout items={organismsPages} />
               </div>
             )}
 

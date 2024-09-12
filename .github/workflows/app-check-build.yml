@@ -1,0 +1,26 @@
+# .github/workflows/app-check-build.yml
+name: Check and Build App
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  app-check-build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./app
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Prettier check
+        run: npm run prettier:check
+
+      - name: Build the project
+        run: npm run build

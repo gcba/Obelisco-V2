@@ -1,5 +1,5 @@
-export const MapLateral = `<div class="card card-map">
-    <div class="card-body">
+export const MAP_LATERAL = `<div class="card card-map">
+  <div class="card-body">
     <h2 class="card-title">Ubicación</h2>
     <p class="card-text">Av. Uspallata 3160</p>
     <div class="card-iframe">
@@ -29,16 +29,16 @@ export const MapLateral = `<div class="card card-map">
         mp;dir=Uspallata+3160"
         class="btn btn-primary btn-lg btn-block"
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
         tabindex="0"
     >
         Cómo llego
     </a>
-    </div>
-</div>
-`;
-export const MapInstitution = `<div class="card card-map">
-    <div class="card-body">
+  </div>
+</div>`;
+
+export const MAP_INSTITUTION = `<div class="card card-map">
+  <div class="card-body">
     <h3 class="card-title">Ubicación</h3>
     <p class="card-text">Av. Uspallata 3160</p>
     <div class="card-iframe">
@@ -65,11 +65,10 @@ export const MapInstitution = `<div class="card card-map">
         lng=-58.407032&amp;zl=15&amp;modo=transporte&amp;dir=Uspallata+3160"
         class="btn btn-primary btn-lg btn-block"
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
         tabindex="0"
     >
         Cómo llego
     </a>
-    </div>
-</div>
-`;
+  </div>
+</div>`;

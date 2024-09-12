@@ -1,24 +1,23 @@
-import { TooltipWithButtons, TooltipWithIcons } from "./code-views";
-import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
-import CodeCopy from "@/components/CodeBox";
-import MainDescription from "@/components/Template/MainDescription";
+import CodeBox from '@/components/CodeBox';
+import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
+import MainDescription from '@/components/Template/MainDescription';
+
+import { TOOLTIP_BUTTONS, TOOLTIP_ICONS } from './code-views';
 
 const TooltipDocs: React.FC = () => {
   const sections = [
     {
-      id: "section-1",
-      title: "Tooltip",
+      title: 'Tooltip',
       h1: true,
       content: (
-        <MainDescription description="Pequeña ventana emergente que proporciona información contextual
-          adicional sobre un elemento al pasar el cursor sobre él." />
+        <MainDescription description="Los tooltip muestran ayuda contextual o información sobre componentes específicos cuando un usuario se desplaza o se enfoca en ellos." />
       ),
     },
     {
-      id: "section-2",
-      title: "Con botones",
+      id: 'section-1',
+      title: 'Con botones',
       content: (
-        <>
+        <CodeBox codeHTML={TOOLTIP_BUTTONS}>
           <div className="row mb-4 justify-content-center">
             <div className="col-auto">
               <span
@@ -26,29 +25,17 @@ const TooltipDocs: React.FC = () => {
                 data-tooltip='Esta es la descripción de un tooltip "abajo-derecha".'
                 tabIndex={0}
               >
-                <button
-                  type="button"
-                  className="btn btn-primary btn-icon"
-                  aria-label="Botón"
-                >
-                  <span className="material-symbols-rounded o-icon">
+                <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
                     subdirectory_arrow_right
                   </span>
                 </button>
               </span>
             </div>
             <div className="col-auto">
-              <span
-                data-direction="bottom"
-                data-tooltip='Esta es la descripción de un tooltip "abajo".'
-                tabIndex={0}
-              >
-                <button
-                  type="button"
-                  className="btn btn-primary btn-icon"
-                  aria-label="Botón"
-                >
-                  <span className="material-symbols-rounded o-icon">
+              <span data-direction="bottom" data-tooltip='Esta es la descripción de un tooltip "abajo".' tabIndex={0}>
+                <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
                     arrow_downward
                   </span>
                 </button>
@@ -60,19 +47,15 @@ const TooltipDocs: React.FC = () => {
                 data-tooltip='Esta es la descripción de un tooltip "abajo-izquierda".'
                 tabIndex={0}
               >
-                <button
-                  type="button"
-                  className="btn btn-primary btn-icon"
-                  aria-label="Botón"
-                >
-                  <span className="material-symbols-rounded o-icon">
+                <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
                     subdirectory_arrow_left
                   </span>
                 </button>
               </span>
             </div>
           </div>
-          <div className="d-flex flex-wrap justify-content-between mb-4 px-lg-5 mx-lg-5">
+          <div className="d-flex flex-wrap justify-content-between mb-4 px-xl-5 mx-xl-5">
             <div className="d-flex flex-column align-items-start px-lg-5 mx-lg-5">
               <span
                 className="mb-4"
@@ -80,12 +63,10 @@ const TooltipDocs: React.FC = () => {
                 data-tooltip='Esta es la descripción de un tooltip "derecha-abajo".'
                 tabIndex={0}
               >
-                <button
-                  type="button"
-                  className="btn btn-primary btn-icon"
-                  aria-label="Botón"
-                >
-                  <span className="material-symbols-rounded o-icon">south_east</span>
+                <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                    south_east
+                  </span>
                 </button>
               </span>
               <span
@@ -94,12 +75,8 @@ const TooltipDocs: React.FC = () => {
                 data-tooltip='Esta es la descripción de un tooltip "derecha".'
                 tabIndex={0}
               >
-                <button
-                  type="button"
-                  className="btn btn-primary btn-icon"
-                  aria-label="Botón"
-                >
-                  <span className="material-symbols-rounded o-icon">
+                <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
                     arrow_forward
                   </span>
                 </button>
@@ -109,12 +86,10 @@ const TooltipDocs: React.FC = () => {
                 data-tooltip='Esta es la descripción de un tooltip "derecha-arriba".'
                 tabIndex={0}
               >
-                <button
-                  type="button"
-                  className="btn btn-primary btn-icon"
-                  aria-label="Botón"
-                >
-                  <span className="material-symbols-rounded o-icon">north_east</span>
+                <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                    north_east
+                  </span>
                 </button>
               </span>
             </div>
@@ -125,12 +100,10 @@ const TooltipDocs: React.FC = () => {
                 data-tooltip='Esta es la descripción de un tooltip "izquierda-abajo".'
                 tabIndex={0}
               >
-                <button
-                  type="button"
-                  className="btn btn-primary btn-icon"
-                  aria-label="Botón"
-                >
-                  <span className="material-symbols-rounded o-icon">south_west</span>
+                <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                    south_west
+                  </span>
                 </button>
               </span>
               <span
@@ -139,12 +112,8 @@ const TooltipDocs: React.FC = () => {
                 data-tooltip='Esta es la descripción de un tooltip "izquierda".'
                 tabIndex={0}
               >
-                <button
-                  type="button"
-                  className="btn btn-primary btn-icon"
-                  aria-label="Botón"
-                >
-                  <span className="material-symbols-rounded o-icon">
+                <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
                     keyboard_backspace
                   </span>
                 </button>
@@ -154,12 +123,10 @@ const TooltipDocs: React.FC = () => {
                 data-tooltip='Esta es la descripción de un tooltip "izquierda-arriba".'
                 tabIndex={0}
               >
-                <button
-                  type="button"
-                  className="btn btn-primary btn-icon"
-                  aria-label="Botón"
-                >
-                  <span className="material-symbols-rounded o-icon">north_west</span>
+                <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                    north_west
+                  </span>
                 </button>
               </span>
             </div>
@@ -171,27 +138,17 @@ const TooltipDocs: React.FC = () => {
                 data-tooltip='Esta es la descripción de un tooltip "arriba-derecha".'
                 tabIndex={0}
               >
-                <button
-                  type="button"
-                  className="btn btn-primary btn-icon"
-                  aria-label="Botón"
-                >
-                  <span className="material-symbols-rounded o-icon">turn_right</span>
+                <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                    turn_right
+                  </span>
                 </button>
               </span>
             </div>
             <div className="col-auto">
-              <span
-                data-direction="top"
-                data-tooltip='Esta es la descripción de un tooltip "arriba".'
-                tabIndex={0}
-              >
-                <button
-                  type="button"
-                  className="btn btn-primary btn-icon"
-                  aria-label="Botón"
-                >
-                  <span className="material-symbols-rounded o-icon">
+              <span data-direction="top" data-tooltip='Esta es la descripción de un tooltip "arriba".' tabIndex={0}>
+                <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
                     arrow_upward
                   </span>
                 </button>
@@ -203,26 +160,22 @@ const TooltipDocs: React.FC = () => {
                 data-tooltip='Esta es la descripción de un tooltip "arriba-izquierda".'
                 tabIndex={0}
               >
-                <button
-                  type="button"
-                  className="btn btn-primary btn-icon"
-                  aria-label="Botón"
-                >
-                  <span className="material-symbols-rounded o-icon">turn_left</span>
+                <button type="button" className="btn btn-primary btn-icon" aria-label="Botón">
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                    turn_left
+                  </span>
                 </button>
               </span>
             </div>
           </div>
-          <br />
-          <CodeCopy code={TooltipWithButtons} />
-        </>
+        </CodeBox>
       ),
     },
     {
-      id: "section-3",
-      title: "Con iconos",
+      id: 'section-2',
+      title: 'Con iconos',
       content: (
-        <>
+        <CodeBox codeHTML={TOOLTIP_ICONS}>
           <div className="row mb-4 justify-content-center">
             <div className="col-auto">
               <span
@@ -231,7 +184,9 @@ const TooltipDocs: React.FC = () => {
                 className="icon-box bg-light"
                 tabIndex={0}
               >
-                <span className="material-symbols-rounded">help</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  help
+                </span>
               </span>
             </div>
             <div className="col-auto">
@@ -241,7 +196,9 @@ const TooltipDocs: React.FC = () => {
                 className="icon-box bg-light"
                 tabIndex={0}
               >
-                <span className="material-symbols-rounded">help</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  help
+                </span>
               </span>
             </div>
             <div className="col-auto">
@@ -251,12 +208,13 @@ const TooltipDocs: React.FC = () => {
                 className="icon-box bg-light"
                 tabIndex={0}
               >
-                <span className="material-symbols-rounded">help</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  help
+                </span>
               </span>
             </div>
           </div>
-
-          <div className="d-flex flex-wrap justify-content-between mb-4 px-lg-5 mx-lg-5">
+          <div className="d-flex flex-wrap justify-content-between mb-4 px-xl-5 mx-xl-5">
             <div className="d-flex flex-column align-items-start px-lg-5 mx-lg-5">
               <span
                 data-direction="right-bottom"
@@ -264,7 +222,9 @@ const TooltipDocs: React.FC = () => {
                 className="icon-box bg-light mb-4"
                 tabIndex={0}
               >
-                <span className="material-symbols-rounded">help</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  help
+                </span>
               </span>
               <span
                 data-direction="right"
@@ -272,7 +232,9 @@ const TooltipDocs: React.FC = () => {
                 className="icon-box bg-light mb-4"
                 tabIndex={0}
               >
-                <span className="material-symbols-rounded">help</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  help
+                </span>
               </span>
               <span
                 data-direction="right-top"
@@ -280,7 +242,9 @@ const TooltipDocs: React.FC = () => {
                 className="icon-box bg-light"
                 tabIndex={0}
               >
-                <span className="material-symbols-rounded">help</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  help
+                </span>
               </span>
             </div>
             <div className="d-flex flex-column align-items-end px-lg-5 mx-lg-5">
@@ -290,7 +254,9 @@ const TooltipDocs: React.FC = () => {
                 className="icon-box bg-light mb-4"
                 tabIndex={0}
               >
-                <span className="material-symbols-rounded">help</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  help
+                </span>
               </span>
               <span
                 data-direction="left"
@@ -298,7 +264,9 @@ const TooltipDocs: React.FC = () => {
                 className="icon-box bg-light mb-4"
                 tabIndex={0}
               >
-                <span className="material-symbols-rounded">help</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  help
+                </span>
               </span>
               <span
                 data-direction="left-top"
@@ -306,7 +274,9 @@ const TooltipDocs: React.FC = () => {
                 className="icon-box bg-light"
                 tabIndex={0}
               >
-                <span className="material-symbols-rounded">help</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  help
+                </span>
               </span>
             </div>
           </div>
@@ -318,7 +288,9 @@ const TooltipDocs: React.FC = () => {
                 className="icon-box bg-light"
                 tabIndex={0}
               >
-                <span className="material-symbols-rounded">help</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  help
+                </span>
               </span>
             </div>
             <div className="col-auto">
@@ -328,7 +300,9 @@ const TooltipDocs: React.FC = () => {
                 className="icon-box bg-light"
                 tabIndex={0}
               >
-                <span className="material-symbols-rounded">help</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  help
+                </span>
               </span>
             </div>
             <div className="col-auto">
@@ -338,13 +312,13 @@ const TooltipDocs: React.FC = () => {
                 className="icon-box bg-light"
                 tabIndex={0}
               >
-                <span className="material-symbols-rounded">help</span>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  help
+                </span>
               </span>
             </div>
           </div>
-          <br />
-          <CodeCopy code={TooltipWithIcons} />
-        </>
+        </CodeBox>
       ),
     },
   ];

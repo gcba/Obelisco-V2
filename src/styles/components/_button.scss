@@ -11,7 +11,7 @@ $btn-padding-lg: 0.75rem 1.25rem;
 $theme-colors: map-merge(
   $theme-colors,
   (
-    "link": $btn-link-color,
+    'link': $btn-link-color,
   )
 );
 
@@ -39,19 +39,21 @@ $theme-color-btn-bg-hover: (
   color: $body-color;
   background-color: $white;
   outline-color: $white;
+
   &:hover,
   &.hover,
   &:visited,
   &:focus,
   &.focus,
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active {
+  &:not(:disabled, .disabled):active,
+  &:not(:disabled, .disabled).active {
     color: $body-color;
     background-color: $white;
     outline-color: $white;
     box-shadow: none;
   }
 }
+
 .btn {
   @extend .headline-md; // Nunito, 18px, 24px
   font-weight: $font-weight-bold; // 700
@@ -115,7 +117,7 @@ $theme-color-btn-bg-hover: (
       text-decoration: none;
       outline: $outline-transparent;
     }
-    
+
     &:active,
     &.active {
       box-shadow: none;
@@ -138,6 +140,7 @@ $theme-color-btn-bg-hover: (
       outline-color: transparent;
       background-color: map-get($theme-color-btn-bg-hover, $color);
     }
+
     &:visited {
       color: $white;
     }
@@ -150,13 +153,13 @@ $theme-color-btn-bg-hover: (
       box-shadow: $focus-box-shadow;
       text-decoration: none;
       background-color: map-get($theme-color-btn-bg-hover, $color);
-      @if $color == "danger" {
+      @if $color == 'danger' {
         box-shadow: $focus-box-shadow-danger;
       }
     }
 
-    &:not(:disabled):not(.disabled):active,
-    &:not(:disabled):not(.disabled).active {
+    &:not(:disabled, .disabled):active,
+    &:not(:disabled, .disabled).active {
       outline: $outline-transparent-subtle;
       background-color: map-get($theme-color-btn-bg-hover, $color);
       box-shadow: none;
@@ -165,7 +168,7 @@ $theme-color-btn-bg-hover: (
       &.focus {
         box-shadow: $focus-box-shadow;
         text-decoration: none;
-        @if $color == "danger" {
+        @if $color == 'danger' {
           box-shadow: $focus-box-shadow-danger;
         }
       }
@@ -173,7 +176,7 @@ $theme-color-btn-bg-hover: (
 
     @include btn-disabled;
 
-    @if $color == "link" {
+    @if $color == 'link' {
       color: $btn-link-color;
       background-color: $white;
       outline-color: $white;
@@ -186,27 +189,27 @@ $theme-color-btn-bg-hover: (
         color: $btn-link-color;
       }
 
-      &:not(:disabled):not(.disabled):active,
-      &:not(:disabled):not(.disabled).active {
+      &:not(:disabled, .disabled):active,
+      &:not(:disabled, .disabled).active {
         background-color: $btn-link-bg-active;
         color: $btn-link-color;
       }
     }
-    @if ($color == "warning" or $color == "dark" or $color == "light") {
+    @if $color == 'warning' or $color == 'dark' or $color == 'light' {
       @include btn-without-styles;
     }
   }
 
   .btn-outline-#{$color} {
     color: map-get($theme-colors, $color);
-    @if $color == "link" {
+    @if $color == 'link' {
       color: $btn-link-color;
       outline-color: $btn-link-color;
     }
 
     &:visited {
       color: map-get($theme-colors, $color);
-      @if $color == "link" {
+      @if $color == 'link' {
         color: $btn-link-color;
       }
     }
@@ -216,12 +219,12 @@ $theme-color-btn-bg-hover: (
     &:focus,
     &.focus {
       color: $white;
-      @if $color == "link" {
+      @if $color == 'link' {
         color: $btn-link-color;
       }
     }
 
-    @if ($color == "warning" or $color == "dark" or $color == "light") {
+    @if $color == 'warning' or $color == 'dark' or $color == 'light' {
       @include btn-without-styles;
     }
   }

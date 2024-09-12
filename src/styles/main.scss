@@ -4,8 +4,9 @@
 @import 'variables/colors';
 @import 'variables/fonts';
 @import 'variables/breakpoints';
+
 // Import Bootstrap
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../node_modules/bootstrap/scss/bootstrap';
 
 // Import custom variables and mixins
 @import 'variables/typography';
@@ -32,3 +33,31 @@
 @import "components/spinner";
 @import "components/button";
 @import "components/cards";
+@import 'components/typography';
+@import 'components/colors';
+@import 'components/nav';
+@import 'components/tabs';
+@import 'components/button';
+@import 'components/link';
+@import 'components/access';
+@import 'components/form-text';
+
+// @import "components/card";
+
+@import 'components/tooltip';
+@import 'components/switch';
+@import 'components/modal';
+@import 'components/status-message';
+@import 'components/dropdown';
+@import 'components/badge';
+@import 'components/banner';
+@import 'components/spinner';
+@import 'components/breadcrumb';
+@import 'components/map';
+@import 'components/form-radio';
+@import 'components/progress-bar';
+@import 'components/gallery';
+@import 'components/pagination';
+@import 'components/calendar';
+@import 'components/alert';
+@import 'components/table';

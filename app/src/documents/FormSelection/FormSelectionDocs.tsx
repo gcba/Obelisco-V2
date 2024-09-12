@@ -1,33 +1,34 @@
-import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
-import CodeCopy from "@/components/CodeBox";
+import CodeBox from '@/components/CodeBox';
+import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
+import MainDescription from '@/components/Template/MainDescription';
+
 import {
   CHECKBOX,
   CHECKBOX_DISABLED,
   CHECKBOX_NO_TEXT,
+  CHECKBOX_RADIO_POSITION,
   CHECKBOX_TERMS,
   RADIO,
   RADIO_DISABLED,
-} from "./code-views";
-import MainDescription from "@/components/Template/MainDescription";
+} from './code-views';
 
 const FormSelectionDocs: React.FC = () => {
   const sections = [
     {
-      id: "section-1",
-      title: "Casillas de selección (Radio y Checkbox)",
+      title: 'Casillas de selección (Radio y Checkbox)',
       h1: true,
       content: (
         <MainDescription description="Las casillas de selección permiten a los usuarios elegir entre opciones únicas o múltiples. Radio se usa para seleccionar solo una opción dentro de un grupo, mientras que Checkbox permite seleccionar varias opciones a la vez." />
       ),
     },
     {
-      id: "section-2",
-      title: "Casilla única (Radio)",
+      id: 'section-1',
+      title: 'Casilla de selección única (Radio)',
       content: (
-        <div className="">
-          <p className="headline-md">Seleccioná una opción *</p>
-          <div className="form-radio">
-            <label className="form-radio-label" htmlFor="profession-radio-designer">
+        <CodeBox codeHTML={RADIO}>
+          <div className="container">
+            <p className="headline-md">Seleccioná una opción *</p>
+            <div className="form-radio">
               <input
                 className="form-radio-input"
                 type="radio"
@@ -36,11 +37,11 @@ const FormSelectionDocs: React.FC = () => {
                 value="diseñador"
                 defaultChecked={true}
               />
-              <span className="form-radio-text">Diseñador</span>
-            </label>
-          </div>
-          <div className="form-radio">
-            <label className="form-radio-label" htmlFor="profession-radio-developer">
+              <label className="form-radio-label" htmlFor="profession-radio-designer">
+                Diseñador
+              </label>
+            </div>
+            <div className="form-radio">
               <input
                 className="form-radio-input"
                 type="radio"
@@ -48,24 +49,23 @@ const FormSelectionDocs: React.FC = () => {
                 id="profession-radio-developer"
                 value="desarrollador"
               />
-              <span className="form-radio-text">Desarrollador</span>
-            </label>
-          </div>
-          <div className="form-radio">
-            <label className="form-radio-label" htmlFor="profession-radio-content">
+              <label className="form-radio-label" htmlFor="profession-radio-developer">
+                Desarrollador
+              </label>
+            </div>
+            <div className="form-radio">
               <input
                 className="form-radio-input"
                 type="radio"
                 name="professionRadio"
                 id="profession-radio-content"
                 value="redactor"
-    
               />
-              <span className="form-radio-text">Redactor de contenidos</span>
-            </label>
-          </div>
-          <div className="form-radio">
-            <label className="form-radio-label" htmlFor="profession-radio-validation">
+              <label className="form-radio-label" htmlFor="profession-radio-content">
+                Redactor de contenidos
+              </label>
+            </div>
+            <div className="form-radio">
               <input
                 className="form-radio-input is-invalid"
                 type="radio"
@@ -73,21 +73,21 @@ const FormSelectionDocs: React.FC = () => {
                 id="profession-radio-validation"
                 value="validacion"
               />
-              <span className="form-radio-text">Validación</span>
-            </label>
+              <label className="form-radio-label" htmlFor="profession-radio-validation">
+                Validación
+              </label>
+            </div>
           </div>
-          <br />
-          <CodeCopy code={RADIO} />
-        </div>
+        </CodeBox>
       ),
     },
     {
-      id: "section-3",
-      title: "Casilla única Deshabilitada",
+      id: 'section-2',
+      title: 'Casilla de selección única deshabilitada',
       content: (
-        <>
-          <div className="form-radio">
-            <label className="form-radio-label" htmlFor="radio-disabled" aria-disabled="true">
+        <CodeBox codeHTML={RADIO_DISABLED}>
+          <div className="container">
+            <div className="form-radio">
               <input
                 className="form-radio-input"
                 type="radio"
@@ -96,11 +96,11 @@ const FormSelectionDocs: React.FC = () => {
                 value="validacion"
                 disabled
               />
-              <span className="form-radio-text">Deshabilitado</span>
-            </label>
-          </div>
-          <div className="form-radio">
-            <label className="form-radio-label" htmlFor="radio-disabled-checked" aria-disabled="true">
+              <label className="form-radio-label" htmlFor="radio-disabled" aria-disabled="true">
+                Deshabilitado
+              </label>
+            </div>
+            <div className="form-radio">
               <input
                 className="form-radio-input"
                 type="radio"
@@ -110,22 +110,22 @@ const FormSelectionDocs: React.FC = () => {
                 disabled
                 checked
               />
-              <span className="form-radio-text">Deshabilitado</span>
-            </label>
+              <label className="form-radio-label" htmlFor="radio-disabled-checked" aria-disabled="true">
+                Deshabilitado
+              </label>
+            </div>
           </div>
-          <br />
-          <CodeCopy code={RADIO_DISABLED} />
-        </>
+        </CodeBox>
       ),
     },
     {
-      id: "section-4",
-      title: "Casilla de selección múltiple (Checkbox)",
+      id: 'section-3',
+      title: 'Casilla de selección múltiple (Checkbox)',
       content: (
-        <div>
-          <p className="headline-md">Seleccioná una o varias opciones *</p>
-          <div className="form-checkbox">
-            <label className="form-checkbox-label" htmlFor="profession-checkbox-designer">
+        <CodeBox codeHTML={CHECKBOX}>
+          <div className="container">
+            <p className="headline-md">Seleccioná una o varias opciones *</p>
+            <div className="form-checkbox">
               <input
                 className="form-checkbox-input"
                 type="checkbox"
@@ -134,11 +134,11 @@ const FormSelectionDocs: React.FC = () => {
                 value="diseñador"
                 defaultChecked={true}
               />
-              <span className="form-checkbox-text">Diseñador</span>
-            </label>
-          </div>
-          <div className="form-checkbox">
-            <label className="form-checkbox-label" htmlFor="profession-checkbox-developer">
+              <label className="form-checkbox-label" htmlFor="profession-checkbox-designer">
+                Diseñador
+              </label>
+            </div>
+            <div className="form-checkbox">
               <input
                 className="form-checkbox-input"
                 type="checkbox"
@@ -146,11 +146,11 @@ const FormSelectionDocs: React.FC = () => {
                 id="profession-checkbox-developer"
                 value="desarrollador"
               />
-              <span className="form-checkbox-text">Desarrollador</span>
-            </label>
-          </div>
-          <div className="form-checkbox">
-            <label className="form-checkbox-label" htmlFor="profession-checkbox-content">
+              <label className="form-checkbox-label" htmlFor="profession-checkbox-developer">
+                Desarrollador
+              </label>
+            </div>
+            <div className="form-checkbox">
               <input
                 className="form-checkbox-input"
                 type="checkbox"
@@ -158,11 +158,11 @@ const FormSelectionDocs: React.FC = () => {
                 id="profession-checkbox-content"
                 value="redactor"
               />
-              <span className="form-checkbox-text">Redactor de contenidos</span>
-            </label>
-          </div>
-          <div className="form-checkbox">
-            <label className="form-checkbox-label" htmlFor="profession-checkbox-validation">
+              <label className="form-checkbox-label" htmlFor="profession-checkbox-content">
+                Redactor de contenidos
+              </label>
+            </div>
+            <div className="form-checkbox">
               <input
                 className="form-checkbox-input is-invalid"
                 type="checkbox"
@@ -170,21 +170,21 @@ const FormSelectionDocs: React.FC = () => {
                 id="profession-checkbox-validation"
                 value="invalido"
               />
-              <span className="form-checkbox-text">Inválido</span>
-            </label>
+              <label className="form-checkbox-label" htmlFor="profession-checkbox-validation">
+                Inválido
+              </label>
+            </div>
           </div>
-          <br />
-          <CodeCopy code={CHECKBOX} />
-        </div>
+        </CodeBox>
       ),
     },
     {
-      id: "section-5",
-      title: "Casilla de selección múltiple sin texto",
+      id: 'section-4',
+      title: 'Casilla de selección múltiple sin texto',
       content: (
-        <>
-        <div className="form-checkbox">
-            <label className="form-checkbox-label" htmlFor="checkbox-no-text" aria-label="Casilla múltiple sin texto">
+        <CodeBox codeHTML={CHECKBOX_NO_TEXT}>
+          <div className="container">
+            <div className="form-checkbox">
               <input
                 className="form-checkbox-input"
                 type="checkbox"
@@ -192,20 +192,23 @@ const FormSelectionDocs: React.FC = () => {
                 id="checkbox-no-text"
                 value="Sin texto"
               />
-            </label>
+              <label
+                className="form-checkbox-label"
+                htmlFor="checkbox-no-text"
+                aria-label="Casilla múltiple sin texto"
+              ></label>
+            </div>
           </div>
-          <br />
-          <CodeCopy code={CHECKBOX_NO_TEXT} />
-        </>
+        </CodeBox>
       ),
     },
     {
-      id: "section-6",
+      id: 'section-5',
       title: "Casilla 'Términos y condiciones'",
       content: (
-        <>
-          <div className="form-checkbox">
-            <label className="form-checkbox-label" htmlFor="checkbox-terms" aria-label="Casilla múltiple sin texto">
+        <CodeBox codeHTML={CHECKBOX_TERMS}>
+          <div className="container">
+            <div className="form-checkbox">
               <input
                 className="form-checkbox-input"
                 type="checkbox"
@@ -213,21 +216,21 @@ const FormSelectionDocs: React.FC = () => {
                 id="checkbox-terms"
                 value="copywrite"
               />
-              <span className="form-checkbox-text">Acepto los <a href="#">términos y condiciones</a></span>
-            </label>
+              <label className="form-checkbox-label" htmlFor="checkbox-terms">
+                Acepto los <a href="#">términos y condiciones</a>
+              </label>
+            </div>
           </div>
-          <br />
-          <CodeCopy code={CHECKBOX_TERMS} />
-        </>
+        </CodeBox>
       ),
     },
     {
-      id: "section-7",
-      title: "Casilla de selección múltiple deshabilitada",
+      id: 'section-6',
+      title: 'Casilla de selección múltiple deshabilitada',
       content: (
-        <>
-          <div className="form-checkbox" >
-            <label className="form-checkbox-label" htmlFor="disabled-checkbox" aria-disabled="true">
+        <CodeBox codeHTML={CHECKBOX_DISABLED}>
+          <div className="container">
+            <div className="form-checkbox">
               <input
                 className="form-checkbox-input"
                 type="checkbox"
@@ -236,11 +239,11 @@ const FormSelectionDocs: React.FC = () => {
                 value="disabled"
                 disabled
               />
-              <span className="form-checkbox-text">Deshabilitado</span>
-            </label>
-          </div>
-          <div className="form-checkbox" >
-            <label className="form-checkbox-label" htmlFor="disabled-checkbox-checked" aria-checked="true">
+              <label className="form-checkbox-label" htmlFor="disabled-checkbox" aria-disabled="true">
+                Deshabilitado
+              </label>
+            </div>
+            <div className="form-checkbox">
               <input
                 className="form-checkbox-input"
                 type="checkbox"
@@ -250,12 +253,46 @@ const FormSelectionDocs: React.FC = () => {
                 disabled
                 checked
               />
-              <span className="form-checkbox-text">Deshabilitado</span>
-            </label>
+              <label className="form-checkbox-label" htmlFor="disabled-checkbox-checked" aria-checked="true">
+                Deshabilitado
+              </label>
+            </div>
           </div>
-          <br />
-          <CodeCopy code={CHECKBOX_DISABLED} />
-        </>
+        </CodeBox>
+      ),
+    },
+    {
+      id: 'section-7',
+      title: 'Posicionamiento',
+      content: (
+        <CodeBox codeHTML={CHECKBOX_RADIO_POSITION}>
+          <div className="container">
+            <div className="form-checkbox reverse">
+              <input
+                className="form-checkbox-input"
+                type="checkbox"
+                name="checkboxPosition"
+                id="checkbox-position"
+                value="redactor"
+              />
+              <label className="form-checkbox-label" htmlFor="checkbox-position">
+                Checkbox posicionado a la derecha
+              </label>
+            </div>
+            <div className="form-radio reverse">
+              <input
+                className="form-radio-input"
+                type="radio"
+                name="radioPosition"
+                id="radio-position"
+                value="redactor"
+              />
+              <label className="form-radio-label" htmlFor="radio-position">
+                Radio posicionado a la derecha
+              </label>
+            </div>
+          </div>
+        </CodeBox>
       ),
     },
   ];

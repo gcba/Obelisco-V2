@@ -1,0 +1,219 @@
+/* === Variable and mixins overides === */
+
+$table-padding-y: 0.75rem;
+$table-padding-x: 1.25rem;
+$table-cell-padding: $table-padding-y $table-padding-x;
+$table-color: $body-color;
+$table-border-width: $border-width;
+$table-head-bg: $grisulado-100;
+
+/* === Custom variables and mixins === */
+
+/* === Custom styles === */
+
+.table {
+  border: 1px solid $border-color;
+  border-radius: $border-radius-lg;
+  border-collapse: initial;
+  border-spacing: initial;
+  margin: 0;
+
+  td,
+  th {
+    @extend .align-middle;
+  }
+
+  thead {
+    outline: 0.125rem solid transparent;
+
+    tr {
+      background-color: $table-head-bg;
+
+      th {
+        background: none;
+        border: none;
+        padding: 12px 20px;
+        @extend .headline-sm;
+        font-weight: $font-weight-bold;
+
+        &.tb-text {
+          min-width: 252px;
+        }
+
+        &.tb-link {
+          min-width: 204px;
+        }
+
+        &.tb-button {
+          min-width: 152px;
+        }
+
+        &.tb-check {
+          min-width: 136px;
+          opacity: 0;
+        }
+
+        &.tb-tag {
+          min-width: 140px;
+        }
+
+        &.tb-number {
+          min-width: 136px;
+        }
+
+        &:first-of-type {
+          border-top-left-radius: $border-radius-lg;
+        }
+
+        &:last-of-type {
+          border-top-right-radius: $border-radius-lg;
+        }
+
+        .th-title {
+          display: inline-block;
+        }
+
+        .th-subtitle {
+          @extend .text-sm;
+          font-family: $font-family-sans-serif;
+          font-weight: $font-weight-normal;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          line-clamp: 2;
+          margin-top: 0.25rem;
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        padding: 12px 20px;
+        border-color: $grisulado-50;
+
+        .actions-table {
+          display: flex;
+          flex-wrap: nowrap;
+          gap: 0.5rem;
+
+          .button-actions-table {
+            background: none;
+            border: none;
+            padding: 0.125rem;
+            border-radius: 0.25rem;
+
+            &:hover {
+              background-color: $grisulado-50;
+            }
+
+            &:focus,
+            &.focus {
+              box-shadow: $focus-box-shadow;
+              outline: $outline-transparent;
+              text-decoration: $link-decoration;
+            }
+
+            .material-icons-round,
+            .bx {
+              color: $grisulado-900;
+              vertical-align: middle;
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+      }
+
+      &:first-of-type td {
+        border-top: none;
+      }
+
+      &:last-of-type {
+        td:first-of-type {
+          border-bottom-left-radius: $border-radius-lg;
+        }
+
+        td:last-of-type {
+          border-bottom-right-radius: $border-radius-lg;
+        }
+
+        td {
+          border: none;
+        }
+      }
+    }
+  }
+
+  &.table-bordered {
+    border-radius: $border-radius-lg;
+
+    thead th {
+      border: none;
+    }
+
+    tr {
+      td {
+        border-left: none;
+        border-bottom: none;
+
+        &:last-of-type {
+          border-right: none;
+        }
+      }
+    }
+  }
+
+  &.table-selectable {
+    @extend .table-hover;
+
+    tbody tr td {
+      cursor: pointer;
+    }
+  }
+
+  $table-alignments: 'baseline', 'top', 'middle', 'bottom', 'text-bottom',
+    'text-top';
+
+  @each $alignment in $table-alignments {
+    &.table-align-#{$alignment} {
+      td,
+      th {
+        @extend .align-#{$alignment};
+      }
+    }
+  }
+
+  &.table-striped tbody tr:nth-of-type(odd) td {
+    --bs-table-bg-type: white;
+    background-color: white !important;
+  }
+
+  &.table-striped tbody tr:nth-of-type(even) td {
+    --bs-table-bg-type: $grisulado-50;
+    background-color: $grisulado-50 !important;
+  }
+}
+
+.table-responsive,
+.table-responsive-sm,
+.table-responsive-md,
+.table-responsive-lg,
+.table-responsive-xl {
+  //Se le saca el extend de responsive-scroll de manera que esta queda deprecada.
+  border: 1px solid $border-color;
+  border-radius: $border-radius-lg;
+
+  > .table-bordered {
+    border: none;
+  }
+
+  &:focus,
+  &:focus-visible {
+    box-shadow: $focus-box-shadow;
+    outline: none;
+  }
+}

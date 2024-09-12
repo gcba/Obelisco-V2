@@ -11,15 +11,17 @@
     transition: all 0.3s ease;
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       bottom: 0;
       height: 100%;
       width: 100%;
-      background-image: linear-gradient(to bottom,
-          transparent 10%,
-          rgba(210, 210, 210, 0.05) 50%,
-          rgba(200, 200, 200, 0.062) 95%);
+      background-image: linear-gradient(
+        to bottom,
+        transparent 10%,
+        rgba(210, 210, 210, 0.05) 50%,
+        rgba(200, 200, 200, 0.062) 95%
+      );
       opacity: 0;
       transition: all 0.3s ease;
     }
@@ -55,7 +57,7 @@
   }
 
   // Transition for nav-link
-  .navbar-collapse>.navbar-content>.navbar-sections>.custom-nav>.nav>.nav-item>.nav-link {
+  .navbar-collapse > .navbar-content > .navbar-sections > .custom-nav > .nav > .nav-item > .nav-link {
     transition: 0.15s ease-in-out;
   }
 

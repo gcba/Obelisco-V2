@@ -1,19 +1,27 @@
-"use client";
+'use client';
 
-import React from "react";
-import DocumentationTemplate from "@/components/Template/DocumentationTemplate";
-import CodeCopy from "@/components/CodeBox";
-import { SPINNER_BLOCK, SPINNER_SIZES, SPINNER_TYPES } from "./code-views";
+import React from 'react';
+
+import CodeBox from '@/components/CodeBox';
+import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
+import MainDescription from '@/components/Template/MainDescription';
+
+import { SPINNER_BLOCK, SPINNER_SIZES, SPINNER_TYPES } from './code-views';
 
 const SpinnerDocs: React.FC = () => {
   const sections = [
     {
-      id: "section-1",
-      description: "lorem ipsum dolor sit amet, lorem ipsum dolor sit amet v lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
       h1: true,
-      title: "Tipos",
+      title: 'Spinner',
       content: (
-        <>
+        <MainDescription description="Un spinner es un indicador visual que ayuda a notificar a las personas usuarias que la carga de contenido o la recuperación de datos está en curso." />
+      ),
+    },
+    {
+      id: 'section-1',
+      title: 'Tipos',
+      content: (
+        <CodeBox codeHTML={SPINNER_TYPES}>
           <div className="d-flex gap-3 align-items-center justify-content-center">
             <div className="spinner-border text-primary" role="status">
               <span className="sr-only">Cargando...</span>
@@ -37,60 +45,48 @@ const SpinnerDocs: React.FC = () => {
               <span className="sr-only">Cargando...</span>
             </div>
           </div>
-          <br />
-          <CodeCopy code={SPINNER_TYPES} />
-        </>
+        </CodeBox>
       ),
     },
     {
-      id: "section-2",
-      title: "Tamaños",
+      id: 'section-2',
+      title: 'Tamaños',
       content: (
-        <>
+        <CodeBox codeHTML={SPINNER_SIZES}>
           <div className="d-flex gap-4 align-items-center justify-content-center">
-            <div
-              className="spinner-border text-primary spinner-border-sm"
-              role="status"
-            >
+            <div className="spinner-border text-primary spinner-border-sm" role="status">
               <span className="sr-only">Cargando...</span>
             </div>
             <div className="spinner-border text-primary" role="status">
               <span className="sr-only">Cargando...</span>
             </div>
-            <div
-              className="spinner-border text-primary spinner-border-lg"
-              role="status"
-            >
+            <div className="spinner-border text-primary spinner-border-lg" role="status">
               <span className="sr-only">Cargando...</span>
             </div>
           </div>
-          <br />
-          <CodeCopy code={SPINNER_SIZES} />
-        </>
+        </CodeBox>
       ),
     },
     {
-      id: "section-3",
-      title: "Expandible",
+      id: 'section-3',
+      title: 'Expandible',
       content: (
         <>
-          <div className="col-4 col-md-2 mx-auto">
-            <div className="spinner-block text-primary" role="status">
-              <span className="sr-only">Cargando...</span>
+          <CodeBox codeHTML={SPINNER_BLOCK}>
+            <div className="col-4 col-md-2 mx-auto">
+              <div className="spinner-block text-primary" role="status">
+                <span className="sr-only">Cargando...</span>
+              </div>
             </div>
-          </div>
+          </CodeBox>
           <br />
-          <CodeCopy code={SPINNER_BLOCK} />
+          <br />
         </>
       ),
     },
   ];
 
-  return (
-    <DocumentationTemplate
-      sections={sections}
-    />
-  );
+  return <DocumentationTemplate sections={sections} />;
 };
 
 export default SpinnerDocs;

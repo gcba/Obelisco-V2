@@ -1,44 +1,32 @@
+import CodeBox from '@/components/CodeBox';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
+
+import { COLLAPSE } from './code-views';
 
 const CollapseDocs: React.FC = () => {
   const sections = [
     {
-      id: 'section-1',
-      title: 'Colapsable',
+      title: 'Colapsables',
+      h1: true,
       content: (
         <div>
-          <MainDescription description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the." />
+          <MainDescription description="Los colapsables sirven para mostrar y ocultar secciones de contenido relacionado en una página, lo que mejora la experiencia de las personas usuarias." />
         </div>
       ),
-      h1: true,
     },
     {
-      id: 'section-2',
-      title: 'Simple',
+      id: 'section-1',
+      title: 'Slección única',
       content: (
-        <p>ejemplo</p>
-      ),
-    },
-    {
-      id: 'section-3',
-      title: 'Con cierre',
-      content: (
-        <p>ejemplo</p>
-      ),
-    },
-    {
-      id: 'section-4',
-      title: 'Con lista',
-      content: (
-        <p>ejemplo</p>
+        <CodeBox codeHTML={COLLAPSE}>
+          <div className="container">lorem</div>
+        </CodeBox>
       ),
     },
   ];
 
-  return (
-    <DocumentationTemplate sections={sections} />
-  );
+  return <DocumentationTemplate sections={sections} />;
 };
 
 export default CollapseDocs;

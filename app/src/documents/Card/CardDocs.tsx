@@ -4,16 +4,19 @@ import MainDescription from "@/components/Template/MainDescription";
 const CardDocs: React.FC = () => {
   const sections = [
     {
+      title: 'Tarjetas',
+      h1: true,
       id: "section-1",
       title: "Tarjetas",
       content: (
         <div>
-          <MainDescription description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the." />
+          <MainDescription description="Las tarjetas son componentes accionables que se utilizan en grupo para comunicar información que requiere de cierto tipo de categorización y jerarquización visual. Se visualizan en contenedores flexibles y actúan como punto de entrada a un tema en particular." />
         </div>
       ),
-      h1: true,
     },
     {
+      id: 'section-1',
+      title: 'Horizontal',
       id: "section-2",
       title: "Horizontal",
       content: (

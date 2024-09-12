@@ -1,0 +1,55 @@
+.tabCodeBox {
+  outline: 0.125rem solid #e6ebf0;
+  outline-offset: -0.125rem;
+  border-radius: 0 0.75rem 0.75rem 0.75rem;
+}
+.codeBoxDisplay {
+  border-radius: 0.3em;
+  overflow-y: hidden;
+  position: relative;
+}
+.codeMargin {
+  margin-top: 2.5rem;
+}
+.boxCode {
+  width: 100%;
+  position: relative;
+}
+.btnCopy {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+  z-index: 10;
+  cursor: pointer;
+  color: white;
+  &:hover {
+    color: #101e37;
+  }
+  &:focus:not(:hover) {
+    color: white;
+  }
+}
+.codeBoxButton {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  min-width: 140px;
+}
+.codeBoxButtonIcon {
+  transform: rotate(0deg);
+  transition: transform 0.2s ease-in-out;
+  &.expanded {
+    transform: rotate(180deg);
+    transition: transform 0.2s ease-in-out;
+  }
+}
+.faded {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border-radius: 0.3em;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9));
+  max-height: 300px;
+}

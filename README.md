@@ -70,7 +70,7 @@ Boxicons con npm o CDN:
 ```sh
 npm install boxicons
 
-// Es importante que incluyas el import a boxicons en tu hoja de estilos si lo usas via NPM
+// Es importante que incluyas el import a Boxicons en tu hoja de estilos si lo usas via NPM
 @import "boxicons/css/boxicons.min.css";
 ```
 
@@ -83,7 +83,7 @@ Material Symbols con npm o CDN:
 ```sh
 npm install material-symbols@latest
 
-// Es importante que incluyas el import a boxicons en tu hoja de estilos si lo usas via NPM
+// Es importante que incluyas el import a Material Symbols en tu hoja de estilos si lo usas via NPM
 @import "material-symbols/index.css";
 ```
 

@@ -5,6 +5,8 @@ import Link from 'next/link';
 import '../../layout.scss';
 import NavLayout from '../../Navigation/nav';
 import HeaderMobile from '../Mobile';
+
+const basePath = '/Obelisco-V2';
 import { usePathname } from "next/navigation";
 
 export default function HeaderDesktop() {
@@ -17,6 +19,40 @@ export default function HeaderDesktop() {
 
   return (
     <>
+    <header className="navbar navbar-light navbar-expand-lg shadow-sm p-3 mb-0 bg-body rounded" role="banner">
+      <Link href="#main" className="skip-to-main-content-link visually-hidden">
+        Saltar al contenido principal
+      </Link>
+      <div className="container header-container">
+        <Link href="/" className="navbar-brand">
+          <Image
+            className="header-logo"
+            src={`${basePath}/images/BA.svg`}
+            alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+            width={76}
+            height={41}
+          />
+          <Image
+            className="obelisco-logo"
+            src={`${basePath}/images/obelisco-logo.png`}
+            width={76}
+            height={41}
+            alt="Logo React obelisco"
+          />
+        </Link>
+        <HeaderMobile />
+        <div className="collapse navbar-collapse justify-content-end" id="navbarContent">
+          <div className="navbar-content">
+            <div className="navbar-sections m-0">
+              {/* <h3 className="navbar-sections-title">Secciones</h3> */}
+              <NavLayout items={gettingPages} className="custom-nav" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="header-backdrop"></div>
+    </header>
+
       {/* <header className="navbar navbar-light navbar-expand-lg shadow-sm p-3 mb-0 bg-body rounded" role="banner">
         <Link href="#main" className="skip-to-main-content-link visually-hidden">
           Saltar al contenido principal

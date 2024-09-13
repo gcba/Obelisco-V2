@@ -208,3 +208,12 @@ hr {
     font-size: 1rem;
   }
 }
+
+//Contenedor para mostrar variantes de componente header
+.header-box-sizing {
+  transform: scale(0.5);
+  .navbar {
+    width: 202%;
+    left: -53%;
+  }
+}

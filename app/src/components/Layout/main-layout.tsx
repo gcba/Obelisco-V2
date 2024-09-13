@@ -40,7 +40,7 @@ export const componentsPages = [
   // { text: "Galería", url: "/components/gallery", id: 15 },
   { text: "Lista de enlaces", url: "/components/list-link", id: 16 },
   // { text: "Lista de pasos", url: "/components/list-step", id: 17 },
-  // { text: "Lista informativa ", url: "/components/list-informative", id: 18 },
+  { text: "Lista informativa ", url: "/components/list-informative", id: 18 },
   // { text: "Mapa", url: "/components/map", id: 19 },
   { text: 'Mensaje de estado', url: '/components/status-message', id: 20 },
   { text: 'Migas de pan', url: '/components/breadcrumb', id: 21 },

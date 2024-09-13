@@ -3,11 +3,11 @@ export const SIMPLE_ALERT = `
     Esta es la descripción de una alerta de información.
   </div>
 
-  <div class="alert alert-primary" role="alert">
+  <div class="alert alert-success" role="alert">
     Esta es la descripción de una alerta de advertencia.
   </div>
 
-  <div class="alert alert-success" role="alert">
+  <div class="alert alert-warning" role="alert">
     Esta es la descripción de una alerta de éxito.
   </div>
   

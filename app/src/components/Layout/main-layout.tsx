@@ -52,7 +52,7 @@ export const componentsPages = [
   // { text: "Pasos de un formulario", url: "/components/steps-form", id: 27 },
   { text: 'Spinner', url: '/components/spinner', id: 28 },
   { text: 'Switch', url: '/components/switch', id: 29 },
-  // { text: "Tarjetas", url: "/components/cards", id: 30 },
+  { text: "Tarjetas", url: "/components/cards", id: 30 },
   { text: 'Tooltip', url: '/components/tooltip', id: 31 },
 ];
 

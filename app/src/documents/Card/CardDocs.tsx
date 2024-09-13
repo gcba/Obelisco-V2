@@ -7,7 +7,6 @@ const CardDocs: React.FC = () => {
       title: 'Tarjetas',
       h1: true,
       id: "section-1",
-      title: "Tarjetas",
       content: (
         <div>
           <MainDescription description="Las tarjetas son componentes accionables que se utilizan en grupo para comunicar información que requiere de cierto tipo de categorización y jerarquización visual. Se visualizan en contenedores flexibles y actúan como punto de entrada a un tema en particular." />
@@ -15,8 +14,6 @@ const CardDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-1',
-      title: 'Horizontal',
       id: "section-2",
       title: "Horizontal",
       content: (
@@ -39,7 +36,7 @@ const CardDocs: React.FC = () => {
           <i className="bx bxs-info-circle card-icon-left"></i>
           <div className="card-body">
               <h5 className="card-title">
-                <a href="#" className="card-title-link">
+                <a href="#">
                   Título de la tarjeta con más de una línea
                 </a>
               </h5>
@@ -64,7 +61,7 @@ const CardDocs: React.FC = () => {
           <img src="https://gcba.github.io/Obelisco/cards/img-left.jpg" className="card-img-left" alt="Img GCBA" />
           <div className="card-body">
               <h5 className="card-title">
-                <a href="#" className="card-title-link">
+                <a href="#">
                   Título de la tarjeta con más de una línea
                 </a>
               </h5>
@@ -87,7 +84,7 @@ const CardDocs: React.FC = () => {
           <div className="card card-horizontal unbordered">
           <div className="card-body">
               <h5 className="card-title">
-                <a href="#" className="card-title-link">
+                <a href="#">
                   Título de la tarjeta con más de una línea
                 </a>
               </h5>
@@ -100,7 +97,7 @@ const CardDocs: React.FC = () => {
             <img className="card-img-left" src="https://gcba.github.io/Obelisco/cards/home.svg" alt="Imagen Tematica" />
           <div className="card-body">
               <h5 className="card-title">
-                <a href="#" className="card-title-link">
+                <a href="#">
                   Título de la tarjeta con más de una línea
                 </a>
               </h5>
@@ -203,15 +200,109 @@ const CardDocs: React.FC = () => {
       title: "Disposición",
       content: (
         <>
-          <h3>Tres Columnas</h3>
-          <p>ejemplo</p>
+        <h3>Tres Columnas</h3>
+        <div className="max-items-3">
+          <div className="col">
+            <div className="card card-horizontal">
+              <i className="bx bxs-info-circle card-icon-left"></i>
+              <div className="card-body">
+                <h5 className="card-title">
+                  <a href="#" className="card-title-link">
+                    Título de la tarjeta con más de una línea
+                  </a>
+                </h5>
+                <p className="card-text">Descripción de la tarjeta</p>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card card-horizontal">
+              <i className="bx bxs-info-circle card-icon-left"></i>
+              <div className="card-body">
+                <h5 className="card-title">
+                  <a href="#" className="card-title-link">
+                    Título de la tarjeta con más de una línea
+                  </a>
+                </h5>
+                <p className="card-text">Descripción de la tarjeta</p>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card card-horizontal">
+              <i className="bx bxs-info-circle card-icon-left"></i>
+              <div className="card-body">
+                <h5 className="card-title">
+                  <a href="#" className="card-title-link">
+                    Título de la tarjeta con más de una línea
+                  </a>
+                </h5>
+                <p className="card-text">Descripción de la tarjeta</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-          <h3>Dos Columnas</h3>
-          <p>ejemplo</p>
 
-          <h3>Desplazable</h3>
-          <p>ejemplo</p>
-        </>
+        <h3>Dos Columnas</h3>
+        <div className="max-items-2">
+          <div className="col">
+            <div className="card card-horizontal">
+              <i className="bx bxs-info-circle card-icon-left"></i>
+              <div className="card-body">
+                <h5 className="card-title">
+                  <a href="#" className="card-title-link">
+                    Título de la tarjeta con más de una línea
+                  </a>
+                </h5>
+                <p className="card-text">Descripción de la tarjeta</p>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card card-horizontal">
+              <i className="bx bxs-info-circle card-icon-left"></i>
+              <div className="card-body">
+                <h5 className="card-title">
+                  <a href="#" className="card-title-link">
+                    Título de la tarjeta con más de una línea
+                  </a>
+                </h5>
+                <p className="card-text">Descripción de la tarjeta</p>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card card-horizontal">
+              <i className="bx bxs-info-circle card-icon-left"></i>
+              <div className="card-body">
+                <h5 className="card-title">
+                  <a href="#" className="card-title-link">
+                    Título de la tarjeta con más de una línea
+                  </a>
+                </h5>
+                <p className="card-text">Descripción de la tarjeta</p>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card card-horizontal">
+              <i className="bx bxs-info-circle card-icon-left"></i>
+              <div className="card-body">
+                <h5 className="card-title">
+                  <a href="#" className="card-title-link">
+                    Título de la tarjeta con más de una línea
+                  </a>
+                </h5>
+                <p className="card-text">Descripción de la tarjeta</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3>Desplazable</h3>
+        <p>ejemplo</p>
+      </>
       ),
     },
   ];

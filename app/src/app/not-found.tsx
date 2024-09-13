@@ -2,6 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
+const basePath = '/Obelisco-V2';
+
 export default function NotFound() {
   return (
     <div className="container d-flex align-items-center h-100">
@@ -15,7 +17,7 @@ export default function NotFound() {
           </Link>
         </div>
         <div className="d-none d-lg-block">
-          <Image src="/images/404.svg" width={300} height={200} alt="404 Not Found" className="mb-4" />
+          <Image src={`${basePath}/images/404.svg`} width={300} height={200} alt="404 Not Found" className="mb-4" />
         </div>
       </div>
     </div>

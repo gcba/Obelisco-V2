@@ -54,7 +54,7 @@ hr {
 
     .scrollspy {
       list-style: none;
-      top: 140px;
+      top: 16px;
       right: 0;
       background-color: transparent;
       padding: 0 5px 5px 1rem;
@@ -181,9 +181,9 @@ hr {
 /* estilos navegacion vertical izquierdo */
 .sticky-nav {
   position: sticky;
-  top: 132px;
+  top: 16px;
   overflow-y: scroll;
-  height: 76dvh;
+  height: 95dvh;
   scrollbar-width: thin;
 
   nav {

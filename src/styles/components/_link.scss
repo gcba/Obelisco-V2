@@ -65,7 +65,7 @@ a {
   &:active {
     color: $hover-color;
     border-radius: $border-radius-lg;
-    box-shadow: 0 0 0 0.125rem $active-border-color;
+    box-shadow: $focus-box-shadow-subtle;
   }
 
   &.list-group-item,

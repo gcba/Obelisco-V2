@@ -34,7 +34,7 @@ export const componentsPages = [
   // { text: "Colapsable", url: "/components/collapse", id: 9 },
   { text: 'Desplegable de navegación', url: '/components/dropdown-nav', id: 10 },
   { text: 'Desplegable de selección', url: '/components/dropdown-sel', id: 11 },
-  // { text: "Destacado", url: "/components/highlighted", id: 12 },
+  { text: 'Destacado', url: '/components/highlighted', id: 12 },
   { text: 'Enlace', url: '/components/link', id: 13 },
   { text: 'Etiquetas', url: '/components/badge', id: 14 },
   // { text: "Galería", url: "/components/gallery", id: 15 },

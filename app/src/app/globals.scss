@@ -208,3 +208,18 @@ hr {
     font-size: 1rem;
   }
 }
+
+.highlighted-box-sizing {
+  transform: scale(0.6);
+  transform-origin: top;
+  max-height: 360px;
+  @media screen and (min-width: 1200px) {
+    max-height: 240px;
+  }
+  
+  > * {
+    width: 160%;
+    position: relative;
+    left: -30%;
+  }
+}

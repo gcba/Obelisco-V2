@@ -69,7 +69,7 @@ a {
   }
 
   &.list-group-item,
-  &.btn,
+  &.btn:not(.btn-block),
   &.badge,
   &.modal-carousel-close,
   &.gallery-grid-item,
@@ -136,6 +136,10 @@ a {
     &:focus {
       border-radius: $border-radius-lg;
       box-shadow: 0 0 0 0.125rem white;
+    }
+    
+    &:visited {
+      color: $visited-bg-dark;
     }
   }
 }

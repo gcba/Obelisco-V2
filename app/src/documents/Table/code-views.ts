@@ -1,5 +1,4 @@
-export const WITHOUT_DIVIDERS = 
-`
+export const WITHOUT_DIVIDERS = `
 <div class="responsive-scroll" tabIndex="0">
     <table class="table table-borderless">
         <thead>
@@ -125,8 +124,7 @@ export const WITHOUT_DIVIDERS =
     </table>
 </div>
 `;
-export const WITH_DIVIDERS = 
-`
+export const WITH_DIVIDERS = `
 <div class="responsive-scroll" tabIndex="0">
     <table class="table">
         <thead>
@@ -252,8 +250,7 @@ export const WITH_DIVIDERS =
     </table>
 </div>
 `;
-export const WITH_ZEBRA = 
-`
+export const WITH_ZEBRA = `
 <div class="responsive-scroll" tabIndex="0">
     <table class="table table-striped">
         <thead>
@@ -379,8 +376,7 @@ export const WITH_ZEBRA =
     </table>
 </div>
 `;
-export const WITH_CHECKBOX = 
-`
+export const WITH_CHECKBOX = `
 <div class="responsive-scroll" tabIndex="0">
     <table class="table">
         <thead>
@@ -473,8 +469,7 @@ export const WITH_CHECKBOX =
     </table>
 </div>
 `;
-export const TABLE_TEXT = 
-`
+export const TABLE_TEXT = `
 <div class="responsive-scroll" tabIndex="0">
     <table class="table">
         <thead>
@@ -509,8 +504,7 @@ export const TABLE_TEXT =
     </table>
 </div>
 `;
-export const TABLE_NUMBER = 
-`
+export const TABLE_NUMBER = `
 <div class="responsive-scroll" tabIndex="0">
     <table class="table">
         <thead>
@@ -558,8 +552,7 @@ export const TABLE_NUMBER =
     </table>
 </div>
 `;
-export const TABLE_LINK = 
-`
+export const TABLE_LINK = `
 <div class="responsive-scroll" tabIndex="0">
     <table class="table">
         <thead>
@@ -623,8 +616,7 @@ export const TABLE_LINK =
     </table>
 </div>
 `;
-export const TABLE_TAG = 
-`
+export const TABLE_TAG = `
 <div class="responsive-scroll" tabIndex="0">
     <table class="table">
         <thead>
@@ -672,8 +664,7 @@ export const TABLE_TAG =
     </table>
 </div>
 `;
-export const TABLE_BUTTON = 
-`
+export const TABLE_BUTTON = `
 <div class="responsive-scroll" tabIndex="0">
     <table class="table">
         <thead>
@@ -729,8 +720,7 @@ export const TABLE_BUTTON =
     </table>
 </div>
 `;
-export const TABLE_BUTTON_ICON = 
-`
+export const TABLE_BUTTON_ICON = `
 <div class="responsive-scroll" tabIndex="0">
     <table class="table">
         <thead>
@@ -833,4 +823,3 @@ export const TABLE_BUTTON_ICON =
     </table>
 </div>
 `;
-

@@ -35,45 +35,42 @@ $table-head-bg: $grisulado-100;
         padding: 12px 20px;
         @extend .headline-sm;
         font-weight: $font-weight-bold;
-
+  
         &.tb-text {
           min-width: 252px;
         }
-
+  
         &.tb-link {
           min-width: 204px;
         }
-
         &.tb-button {
           min-width: 152px;
         }
-
         &.tb-check {
           min-width: 136px;
           opacity: 0;
         }
-
         &.tb-tag {
           min-width: 140px;
         }
-
         &.tb-number {
           min-width: 136px;
         }
-
+  
         &:first-of-type {
           border-top-left-radius: $border-radius-lg;
         }
-
+  
         &:last-of-type {
           border-top-right-radius: $border-radius-lg;
         }
-
+        
         .th-title {
           display: inline-block;
         }
-
+  
         .th-subtitle {
+          display: inline-block;
           @extend .text-sm;
           font-family: $font-family-sans-serif;
           font-weight: $font-weight-normal;
@@ -99,32 +96,6 @@ $table-head-bg: $grisulado-100;
           display: flex;
           flex-wrap: nowrap;
           gap: 0.5rem;
-
-          .button-actions-table {
-            background: none;
-            border: none;
-            padding: 0.125rem;
-            border-radius: 0.25rem;
-
-            &:hover {
-              background-color: $grisulado-50;
-            }
-
-            &:focus,
-            &.focus {
-              box-shadow: $focus-box-shadow;
-              outline: $outline-transparent;
-              text-decoration: $link-decoration;
-            }
-
-            .material-icons-round,
-            .bx {
-              color: $grisulado-900;
-              vertical-align: middle;
-              width: 24px;
-              height: 24px;
-            }
-          }
         }
       }
 
@@ -140,7 +111,7 @@ $table-head-bg: $grisulado-100;
         td:last-of-type {
           border-bottom-right-radius: $border-radius-lg;
         }
-
+        
         td {
           border: none;
         }
@@ -150,7 +121,6 @@ $table-head-bg: $grisulado-100;
 
   &.table-bordered {
     border-radius: $border-radius-lg;
-
     thead th {
       border: none;
     }
@@ -175,8 +145,7 @@ $table-head-bg: $grisulado-100;
     }
   }
 
-  $table-alignments: 'baseline', 'top', 'middle', 'bottom', 'text-bottom',
-    'text-top';
+  $table-alignments: 'baseline', 'top', 'middle', 'bottom', 'text-bottom', 'text-top';
 
   @each $alignment in $table-alignments {
     &.table-align-#{$alignment} {
@@ -186,12 +155,12 @@ $table-head-bg: $grisulado-100;
       }
     }
   }
-
+  
   &.table-striped tbody tr:nth-of-type(odd) td {
     --bs-table-bg-type: white;
-    background-color: white !important;
+    background-color: white !important; 
   }
-
+  
   &.table-striped tbody tr:nth-of-type(even) td {
     --bs-table-bg-type: $grisulado-50;
     background-color: $grisulado-50 !important;

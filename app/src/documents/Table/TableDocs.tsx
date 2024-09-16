@@ -2,44 +2,43 @@ import CodeBox from '@/components/CodeBox';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
-import { TABLE } from './code-views';
+import { TABLE_BUTTON, TABLE_BUTTON_ICON, TABLE_LINK, TABLE_NUMBER, TABLE_TAG, TABLE_TEXT, WITH_CHECKBOX, WITH_DIVIDERS, WITH_ZEBRA, WITHOUT_DIVIDERS } from './code-views';
+
 
 const TableDocs: React.FC = () => {
   const sections = [
     {
       title: 'Tablas',
+      h1: true,
       content: (
-        <MainDescription description="La tabla muestra datos organizados y estructurados en filas y columnas. Se utiliza para categorizar y comparar contenido relacionado. Este componente permite escanear más fácilmente información compleja." />
+        <>
+          <MainDescription description="La tabla muestra datos organizados y estructurados en filas y columnas. Se utiliza para categorizar y comparar contenido relacionado. Este componente permite escanear más fácilmente información compleja." />
+          <p className="lead mb-4">
+            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
+            <a href="https://gcba.github.io/estandares/componentes/tabla/" target="_blank" rel="noopener noreferrer">
+              enlace.
+            </a>
+          </p>
+        </>
       ),
     },
     {
       id: 'section-1',
       title: 'Sin separadores',
       content: (
-        <CodeBox codeHTML={TABLE}>
-          <div className="max-600">
+        <>
+          <CodeBox codeHTML={WITHOUT_DIVIDERS}>
+          <div className='max-600 p-2'>          
             <div className="responsive-scroll" tabIndex={0}>
               <table className="table table-borderless">
                 <thead>
                   <tr>
-                    <th scope="col" className="tb-number">
-                      Número
-                    </th>
-                    <th scope="col" className="tb-text">
-                      Texto
-                    </th>
-                    <th scope="col" className="tb-link">
-                      Enlace
-                    </th>
-                    <th scope="col" className="tb-button">
-                      Botón
-                    </th>
-                    <th scope="col" className="tb-check">
-                      Checkbox
-                    </th>
-                    <th scope="col" className="tb-tag">
-                      Etiqueta
-                    </th>
+                    <th scope="col" className="tb-number">Número</th>
+                    <th scope="col" className="tb-text">Texto</th>
+                    <th scope="col" className="tb-link">Enlace</th>
+                    <th scope="col" className="tb-button">Botón</th>
+                    <th scope="col" className="tb-check">Checkbox</th>
+                    <th scope="col" className="tb-tag">Etiqueta</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -58,22 +57,20 @@ const TableDocs: React.FC = () => {
                       </button>
                     </td>
                     <td>
-                      <div className="form-checkbox">
-                        <label className="form-checkbox-label" htmlFor="option-one">
-                          <input
-                            className="form-checkbox-input"
-                            type="checkbox"
-                            name="optionOne"
-                            id="option-one"
-                            value="option one"
-                          />
-                          <span className="form-checkbox-text">checkbox</span>
-                        </label>
-                      </div>
+                    <div className="form-checkbox">
+                      <input
+                        className="form-checkbox-input"
+                        type="checkbox"
+                        name="professionCheckbox"
+                        id="profession-checkbox-designer"
+                        value="diseñador"
+                        />
+                      <label className="form-checkbox-label" htmlFor="profession-checkbox-designer">
+                        Checkbox
+                      </label>
+                    </div>
                     </td>
-                    <td>
-                      <span className="badge badge-default">Predeterminada</span>
-                    </td>
+                    <td><span className="badge badge-default">Predeterminada</span></td>
                   </tr>
                   <tr>
                     <td className="text-right">2</td>
@@ -90,22 +87,20 @@ const TableDocs: React.FC = () => {
                       </button>
                     </td>
                     <td>
-                      <div className="form-checkbox">
-                        <label className="form-checkbox-label" htmlFor="option-two">
-                          <input
-                            className="form-checkbox-input"
-                            type="checkbox"
-                            name="optionTwo"
-                            id="option-two"
-                            value="option two"
-                          />
-                          <span className="form-checkbox-text">checkbox</span>
-                        </label>
-                      </div>
+                    <div className="form-checkbox">
+                      <input
+                        className="form-checkbox-input"
+                        type="checkbox"
+                        name="professionCheckbox"
+                        id="profession-checkbox-developer"
+                        value="desarrollador"
+                        />
+                      <label className="form-checkbox-label" htmlFor="profession-checkbox-developer">
+                        Checkbox
+                      </label>
+                    </div>
                     </td>
-                    <td>
-                      <span className="badge badge-default">Predeterminada</span>
-                    </td>
+                    <td><span className="badge badge-danger">Predeterminada</span></td>
                   </tr>
                   <tr>
                     <td className="text-right">3</td>
@@ -122,22 +117,20 @@ const TableDocs: React.FC = () => {
                       </button>
                     </td>
                     <td>
-                      <div className="form-checkbox">
-                        <label className="form-checkbox-label" htmlFor="option-three">
-                          <input
-                            className="form-checkbox-input"
-                            type="checkbox"
-                            name="optionThree"
-                            id="option-three"
-                            value="option three"
-                          />
-                          <span className="form-checkbox-text">checkbox</span>
-                        </label>
-                      </div>
+                    <div className="form-checkbox">
+                      <input
+                        className="form-checkbox-input"
+                        type="checkbox"
+                        name="professionCheckbox"
+                        id="profession-checkbox-content-1"
+                        value="redactor"
+                        />
+                      <label className="form-checkbox-label" htmlFor="profession-checkbox-content-1">
+                        Checkbox
+                      </label>
+                    </div>
                     </td>
-                    <td>
-                      <span className="badge badge-default">Predeterminada</span>
-                    </td>
+                    <td><span className="badge badge-info">Predeterminada</span></td>
                   </tr>
                   <tr>
                     <td className="text-right">4</td>
@@ -155,57 +148,44 @@ const TableDocs: React.FC = () => {
                     </td>
                     <td>
                       <div className="form-checkbox">
-                        <label className="form-checkbox-label" htmlFor="option-four">
-                          <input
-                            className="form-checkbox-input"
-                            type="checkbox"
-                            name="optionFour"
-                            id="option-four"
-                            value="option four"
+                        <input
+                          className="form-checkbox-input"
+                          type="checkbox"
+                          name="professionCheckbox"
+                          id="profession-checkbox-content-2"
+                          value="redactor"
                           />
-                          <span className="form-checkbox-text">checkbox</span>
+                        <label className="form-checkbox-label" htmlFor="profession-checkbox-content-2">
+                          Checkbox
                         </label>
                       </div>
                     </td>
-                    <td>
-                      <span className="badge badge-default">Predeterminada</span>
-                    </td>
+                    <td><span className="badge badge-warning">Predeterminada</span></td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
-        </CodeBox>
+          </CodeBox>
+        </>
       ),
     },
     {
       id: 'section-2',
       title: 'Con separadores',
       content: (
-        <CodeBox codeHTML={TABLE}>
-          <div className="max-600">
+        <CodeBox codeHTML={WITH_DIVIDERS}>
+          <div className='max-600 p-2'>     
             <div className="responsive-scroll" tabIndex={0}>
               <table className="table">
                 <thead>
                   <tr>
-                    <th scope="col" className="tb-number">
-                      Número
-                    </th>
-                    <th scope="col" className="tb-text">
-                      Texto
-                    </th>
-                    <th scope="col" className="tb-link">
-                      Enlace
-                    </th>
-                    <th scope="col" className="tb-button">
-                      Botón
-                    </th>
-                    <th scope="col" className="tb-check">
-                      Checkbox
-                    </th>
-                    <th scope="col" className="tb-tag">
-                      Etiqueta
-                    </th>
+                    <th scope="col" className="tb-number">Número</th>
+                    <th scope="col" className="tb-text">Texto</th>
+                    <th scope="col" className="tb-link">Enlace</th>
+                    <th scope="col" className="tb-button">Botón</th>
+                    <th scope="col" className="tb-check">Checkbox</th>
+                    <th scope="col" className="tb-tag">Etiqueta</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -225,21 +205,19 @@ const TableDocs: React.FC = () => {
                     </td>
                     <td>
                       <div className="form-checkbox">
-                        <label className="form-checkbox-label" htmlFor="option-five">
-                          <input
-                            className="form-checkbox-input"
-                            type="checkbox"
-                            name="optionFive"
-                            id="option-five"
-                            value="option five"
+                        <input
+                          className="form-checkbox-input"
+                          type="checkbox"
+                          name="professionCheckbox"
+                          id="profession-checkbox-content-5"
+                          value="redactor"
                           />
-                          <span className="form-checkbox-text">checkbox</span>
+                        <label className="form-checkbox-label" htmlFor="profession-checkbox-content-5">
+                          Checkbox
                         </label>
                       </div>
                     </td>
-                    <td>
-                      <span className="badge badge-default">Predeterminada</span>
-                    </td>
+                    <td><span className="badge badge-default">Predeterminada</span></td>
                   </tr>
                   <tr>
                     <td className="text-right">2</td>
@@ -257,21 +235,19 @@ const TableDocs: React.FC = () => {
                     </td>
                     <td>
                       <div className="form-checkbox">
-                        <label className="form-checkbox-label" htmlFor="option-six">
-                          <input
-                            className="form-checkbox-input"
-                            type="checkbox"
-                            name="optionSix"
-                            id="option-six"
-                            value="option six"
+                        <input
+                          className="form-checkbox-input"
+                          type="checkbox"
+                          name="professionCheckbox"
+                          id="profession-checkbox-content-6"
+                          value="redactor"
                           />
-                          <span className="form-checkbox-text">checkbox</span>
+                        <label className="form-checkbox-label" htmlFor="profession-checkbox-content-6">
+                          Checkbox
                         </label>
                       </div>
                     </td>
-                    <td>
-                      <span className="badge badge-default">Predeterminada</span>
-                    </td>
+                    <td><span className="badge badge-success">Predeterminada</span></td>
                   </tr>
                   <tr>
                     <td className="text-right">3</td>
@@ -289,21 +265,19 @@ const TableDocs: React.FC = () => {
                     </td>
                     <td>
                       <div className="form-checkbox">
-                        <label className="form-checkbox-label" htmlFor="option-seven">
-                          <input
-                            className="form-checkbox-input"
-                            type="checkbox"
-                            name="optionSeven"
-                            id="option-seven"
-                            value="option seven"
+                        <input
+                          className="form-checkbox-input"
+                          type="checkbox"
+                          name="professionCheckbox"
+                          id="profession-checkbox-content-7"
+                          value="redactor"
                           />
-                          <span className="form-checkbox-text">checkbox</span>
+                        <label className="form-checkbox-label" htmlFor="profession-checkbox-content-7">
+                          Checkbox
                         </label>
                       </div>
                     </td>
-                    <td>
-                      <span className="badge badge-default">Predeterminada</span>
-                    </td>
+                    <td><span className="badge badge-info">Predeterminada</span></td>
                   </tr>
                   <tr>
                     <td className="text-right">4</td>
@@ -321,21 +295,19 @@ const TableDocs: React.FC = () => {
                     </td>
                     <td>
                       <div className="form-checkbox">
-                        <label className="form-checkbox-label" htmlFor="option-eight">
-                          <input
-                            className="form-checkbox-input"
-                            type="checkbox"
-                            name="optionEight"
-                            id="option-eight"
-                            value="option eight"
+                        <input
+                          className="form-checkbox-input"
+                          type="checkbox"
+                          name="professionCheckbox"
+                          id="profession-checkbox-content-8"
+                          value="redactor"
                           />
-                          <span className="form-checkbox-text">checkbox</span>
+                        <label className="form-checkbox-label" htmlFor="profession-checkbox-content-8">
+                          Checkbox
                         </label>
                       </div>
                     </td>
-                    <td>
-                      <span className="badge badge-default">Predeterminada</span>
-                    </td>
+                    <td><span className="badge badge-warning">Predeterminada</span></td>
                   </tr>
                 </tbody>
               </table>
@@ -348,30 +320,18 @@ const TableDocs: React.FC = () => {
       id: 'section-3',
       title: 'Con patrón cebra',
       content: (
-        <CodeBox codeHTML={TABLE}>
-          <div className="max-600">
+        <CodeBox codeHTML={WITH_ZEBRA}>          
+          <div className='max-600 p-2'>      
             <div className="responsive-scroll" tabIndex={0}>
               <table className="table table-striped">
                 <thead>
                   <tr>
-                    <th scope="col" className="tb-number">
-                      Número
-                    </th>
-                    <th scope="col" className="tb-text">
-                      Texto
-                    </th>
-                    <th scope="col" className="tb-link">
-                      Enlace
-                    </th>
-                    <th scope="col" className="tb-button">
-                      Botón
-                    </th>
-                    <th scope="col" className="tb-check">
-                      Checkbox
-                    </th>
-                    <th scope="col" className="tb-tag">
-                      Etiqueta
-                    </th>
+                    <th scope="col" className="tb-number">Número</th>
+                    <th scope="col" className="tb-text">Texto</th>
+                    <th scope="col" className="tb-link">Enlace</th>
+                    <th scope="col" className="tb-button">Botón</th>
+                    <th scope="col" className="tb-check">Checkbox</th>
+                    <th scope="col" className="tb-tag">Etiqueta</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -391,21 +351,19 @@ const TableDocs: React.FC = () => {
                     </td>
                     <td>
                       <div className="form-checkbox">
-                        <label className="form-checkbox-label" htmlFor="option-nine">
-                          <input
-                            className="form-checkbox-input"
-                            type="checkbox"
-                            name="optionNine"
-                            id="option-nine"
-                            value="option nine"
+                        <input
+                          className="form-checkbox-input"
+                          type="checkbox"
+                          name="professionCheckbox"
+                          id="profession-checkbox-content-18"
+                          value="redactor"
                           />
-                          <span className="form-checkbox-text">checkbox</span>
+                        <label className="form-checkbox-label" htmlFor="profession-checkbox-content-18">
+                          Checkbox
                         </label>
                       </div>
                     </td>
-                    <td>
-                      <span className="badge badge-default">Predeterminada</span>
-                    </td>
+                    <td><span className="badge badge-default">Predeterminada</span></td>
                   </tr>
                   <tr>
                     <td className="text-right">2</td>
@@ -423,21 +381,19 @@ const TableDocs: React.FC = () => {
                     </td>
                     <td>
                       <div className="form-checkbox">
-                        <label className="form-checkbox-label" htmlFor="option-ten">
-                          <input
-                            className="form-checkbox-input"
-                            type="checkbox"
-                            name="optionTen"
-                            id="option-ten"
-                            value="option ten"
+                        <input
+                          className="form-checkbox-input"
+                          type="checkbox"
+                          name="professionCheckbox"
+                          id="profession-checkbox-content-19"
+                          value="redactor"
                           />
-                          <span className="form-checkbox-text">checkbox</span>
+                        <label className="form-checkbox-label" htmlFor="profession-checkbox-content-19">
+                          Checkbox
                         </label>
                       </div>
                     </td>
-                    <td>
-                      <span className="badge badge-default">Predeterminada</span>
-                    </td>
+                    <td><span className="badge badge-warning">Predeterminada</span></td>
                   </tr>
                   <tr>
                     <td className="text-right">3</td>
@@ -455,21 +411,19 @@ const TableDocs: React.FC = () => {
                     </td>
                     <td>
                       <div className="form-checkbox">
-                        <label className="form-checkbox-label" htmlFor="option-eleven">
-                          <input
-                            className="form-checkbox-input"
-                            type="checkbox"
-                            name="optionEleven"
-                            id="option-eleven"
-                            value="option eleven"
+                        <input
+                          className="form-checkbox-input"
+                          type="checkbox"
+                          name="professionCheckbox"
+                          id="profession-checkbox-content-20"
+                          value="redactor"
                           />
-                          <span className="form-checkbox-text">checkbox</span>
+                        <label className="form-checkbox-label" htmlFor="profession-checkbox-content-20">
+                          Checkbox
                         </label>
                       </div>
                     </td>
-                    <td>
-                      <span className="badge badge-default">Predeterminada</span>
-                    </td>
+                    <td><span className="badge badge-info">Predeterminada</span></td>
                   </tr>
                   <tr>
                     <td className="text-right">4</td>
@@ -487,21 +441,19 @@ const TableDocs: React.FC = () => {
                     </td>
                     <td>
                       <div className="form-checkbox">
-                        <label className="form-checkbox-label" htmlFor="option-twelve">
-                          <input
-                            className="form-checkbox-input"
-                            type="checkbox"
-                            name="optionTwelve"
-                            id="option-twelve"
-                            value="option twelve"
+                        <input
+                          className="form-checkbox-input"
+                          type="checkbox"
+                          name="professionCheckbox"
+                          id="profession-checkbox-content-21"
+                          value="redactor"
                           />
-                          <span className="form-checkbox-text">checkbox</span>
+                        <label className="form-checkbox-label" htmlFor="profession-checkbox-content-21">
+                          Checkbox
                         </label>
                       </div>
                     </td>
-                    <td>
-                      <span className="badge badge-default">Predeterminada</span>
-                    </td>
+                    <td><span className="badge badge-danger">Predeterminada</span></td>
                   </tr>
                 </tbody>
               </table>
@@ -514,226 +466,245 @@ const TableDocs: React.FC = () => {
       id: 'section-4',
       title: 'Con checkbox',
       content: (
-        <CodeBox codeHTML={TABLE}>
-          <div className="max-600">
+        <CodeBox codeHTML={WITH_CHECKBOX}>          
+          <div className='max-600 p-2'>   
             <div className="responsive-scroll" tabIndex={0}>
-              <table className="table">
-                <thead>
-                  <tr>
-                    <th scope="col" className="tb-check">
-                      Checkbox
-                    </th>
-                    <th scope="col" className="tb-number">
-                      Número
-                    </th>
-                    <th scope="col" className="tb-text">
-                      Texto
-                    </th>
-                    <th scope="col" className="tb-text">
-                      Texto
-                    </th>
-                    <th scope="col" className="tb-text">
-                      Texto
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <div className="form-checkbox">
-                        <label className="form-checkbox-label" htmlFor="option-thirteen">
-                          <input
-                            className="form-checkbox-input"
-                            type="checkbox"
-                            name="optionThirteen"
-                            id="option-thirteen"
-                            value="option thirteen"
-                          />
-                          {/* <span className="form-checkbox-text">Checkbox</span> */}
-                        </label>
-                      </div>
-                    </td>
-                    <td className="text-right">$100,00</td>
-                    <td>Texto predeterminado</td>
-                    <td>Texto predeterminado</td>
-                    <td>Texto predeterminado</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div className="form-checkbox">
-                        <label className="form-checkbox-label" htmlFor="option-fourteen">
-                          <input
-                            className="form-checkbox-input"
-                            type="checkbox"
-                            name="optionFourteen"
-                            id="option-fourteen"
-                            value="option fourteen"
-                          />
-                          {/* <span className="form-checkbox-text">Checkbox</span> */}
-                        </label>
-                      </div>
-                    </td>
-                    <td className="text-right">$100,00</td>
-                    <td>Texto predeterminado</td>
-                    <td>Texto predeterminado</td>
-                    <td>Texto predeterminado</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div className="form-checkbox">
-                        <label className="form-checkbox-label" htmlFor="option-fifteen">
-                          <input
-                            className="form-checkbox-input"
-                            type="checkbox"
-                            name="optionFifteen"
-                            id="option-fifteen"
-                            value="option fifteen"
-                          />
-                          {/* <span className="form-checkbox-text">Checkbox</span> */}
-                        </label>
-                      </div>
-                    </td>
-                    <td className="text-right">$100,00</td>
-                    <td>Texto predeterminado</td>
-                    <td>Texto predeterminado</td>
-                    <td>Texto predeterminado</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div className="form-checkbox">
-                        <label className="form-checkbox-label" htmlFor="option-sixteen">
-                          <input
-                            className="form-checkbox-input"
-                            type="checkbox"
-                            name="optionSixteen"
-                            id="option-sixteen"
-                            value="option sixteen"
-                          />
-                          {/* <span className="form-checkbox-text">Checkbox</span> */}
-                        </label>
-                      </div>
-                    </td>
-                    <td className="text-right">$100,00</td>
-                    <td>Texto predeterminado</td>
-                    <td>Texto predeterminado</td>
-                    <td>Texto predeterminado</td>
-                  </tr>
-                </tbody>
-              </table>
+            <table className="table">
+              <thead>
+                <tr>
+                  <th scope="col" className="tb-check">Checkbox</th>
+                  <th scope="col" className="tb-number">Número</th>
+                  <th scope="col" className="tb-text">Texto</th>
+                  <th scope="col" className="tb-text">Texto</th>
+                  <th scope="col" className="tb-text">Texto</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                  <div className="form-checkbox">
+                    <input
+                      className="form-checkbox-input"
+                      type="checkbox"
+                      name="checkboxNoText"
+                      id="checkbox-no-text"
+                      value="Sin texto"
+                    />
+                    <label className="form-checkbox-label" htmlFor="checkbox-no-text" aria-label="Casilla múltiple sin texto">
+                    </label>
+                  </div>
+                  </td>
+                  <td className="text-right">$100,00</td>
+                  <td>Texto predeterminado</td>
+                  <td>Texto predeterminado</td>
+                  <td>Texto predeterminado</td>
+                </tr>
+                <tr>
+                  <td>
+                  <div className="form-checkbox">
+                    <input
+                      className="form-checkbox-input"
+                      type="checkbox"
+                      name="checkboxNoText-1"
+                      id="checkbox-no-text-1"
+                      value="Sin texto"
+                    />
+                    <label className="form-checkbox-label" htmlFor="checkbox-no-text-1" aria-label="Casilla múltiple sin texto">
+                    </label>
+                  </div>
+                  </td>
+                  <td className="text-right">$100,00</td>
+                  <td>Texto predeterminado</td>
+                  <td>Texto predeterminado</td>
+                  <td>Texto predeterminado</td>
+                </tr>
+                <tr>
+                  <td>
+                  <div className="form-checkbox">
+                    <input
+                      className="form-checkbox-input"
+                      type="checkbox"
+                      name="checkboxNoText-2"
+                      id="checkbox-no-text-2"
+                      value="Sin texto"
+                    />
+                    <label className="form-checkbox-label" htmlFor="checkbox-no-text-2" aria-label="Casilla múltiple sin texto">
+                    </label>
+                  </div>
+                  </td>
+                  <td className="text-right">$100,00</td>
+                  <td>Texto predeterminado</td>
+                  <td>Texto predeterminado</td>
+                  <td>Texto predeterminado</td>
+                </tr>
+                <tr>
+                  <td>
+                  <div className="form-checkbox">
+                    <input
+                      className="form-checkbox-input"
+                      type="checkbox"
+                      name="checkboxNoText-3"
+                      id="checkbox-no-text-3"
+                      value="Sin texto"
+                    />
+                    <label className="form-checkbox-label" htmlFor="checkbox-no-text-3" aria-label="Casilla múltiple sin texto">
+                    </label>
+                  </div>
+                  </td>
+                  <td className="text-right">$100,00</td>
+                  <td>Texto predeterminado</td>
+                  <td>Texto predeterminado</td>
+                  <td>Texto predeterminado</td>
+                </tr>
+              </tbody>
+            </table>
             </div>
           </div>
         </CodeBox>
       ),
     },
-    {
-      id: 'section-5',
-      title: 'Tipos de celda',
-      content: <CodeBox codeHTML={TABLE}></CodeBox>,
-    },
+    // {
+    //   id: 'section-5',
+    //   title: 'Con checkbox',
+    //   content: (
+    //     <CodeBox codeHTML={SWITCH_WITHOUT_LABEL}>          
+    //       <div className='max-600 p-2'>   
+    //         <div className="responsive-scroll" tabIndex={0}>
+    //         <table className="table">
+    //           <thead>
+    //             <tr>
+    //               <th scope="col" className="tb-check">Checkbox</th>
+    //               <th scope="col" className="tb-number">Número</th>
+    //               <th scope="col" className="tb-text">Texto</th>
+    //               <th scope="col" className="tb-text">Texto</th>
+    //               <th scope="col" className="tb-text">Texto</th>
+    //             </tr>
+    //           </thead>
+    //           <tbody>
+    //             <tr>
+    //               <td>
+    //               <div className="form-checkbox">
+    //                 <label className="form-checkbox-label" htmlFor="option-thirteen">
+    //                   <input
+    //                     className="form-checkbox-input"
+    //                     type="checkbox"
+    //                     name="optionThirteen"
+    //                     id="option-thirteen"
+    //                     value="option thirteen"
+                        
+    //                   />
+    //                   {/* <span className="form-checkbox-text">Checkbox</span> */}
+    //                 </label>
+    //               </div>
+    //               </td>
+    //               <td className="text-right">$100,00</td>
+    //               <td>Texto predeterminado</td>
+    //               <td>Texto predeterminado</td>
+    //               <td>Texto predeterminado</td>
+    //             </tr>
+    //             <tr>
+    //               <td>
+    //                 <div className="form-checkbox">
+    //                   <label className="form-checkbox-label" htmlFor="option-fourteen">
+    //                     <input
+    //                       className="form-checkbox-input"
+    //                       type="checkbox"
+    //                       name="optionFourteen"
+    //                       id="option-fourteen"
+    //                       value="option fourteen"
+    //                     />
+    //                     {/* <span className="form-checkbox-text">Checkbox</span> */}
+    //                   </label>
+    //                 </div>
+    //               </td>
+    //               <td className="text-right">$100,00</td>
+    //               <td>Texto predeterminado</td>
+    //               <td>Texto predeterminado</td>
+    //               <td>Texto predeterminado</td>
+    //             </tr>
+    //             <tr>
+    //               <td>
+    //                 <div className="form-checkbox">
+    //                   <label className="form-checkbox-label" htmlFor="option-fifteen">
+    //                     <input
+    //                       className="form-checkbox-input"
+    //                       type="checkbox"
+    //                       name="optionFifteen"
+    //                       id="option-fifteen"
+    //                       value="option fifteen"
+    //                     />
+    //                     {/* <span className="form-checkbox-text">Checkbox</span> */}
+    //                   </label>
+    //                 </div>
+    //               </td>
+    //               <td className="text-right">$100,00</td>
+    //               <td>Texto predeterminado</td>
+    //               <td>Texto predeterminado</td>
+    //               <td>Texto predeterminado</td>
+    //             </tr>
+    //             <tr>
+    //               <td>
+    //                 <div className="form-checkbox">
+    //                   <label className="form-checkbox-label" htmlFor="option-sixteen">
+    //                     <input
+    //                       className="form-checkbox-input"
+    //                       type="checkbox"
+    //                       name="optionSixteen"
+    //                       id="option-sixteen"
+    //                       value="option sixteen"
+    //                     />
+    //                     {/* <span className="form-checkbox-text">Checkbox</span> */}
+    //                   </label>
+    //                 </div>
+    //               </td>
+    //               <td className="text-right">$100,00</td>
+    //               <td>Texto predeterminado</td>
+    //               <td>Texto predeterminado</td>
+    //               <td>Texto predeterminado</td>
+    //             </tr>
+    //           </tbody>
+    //         </table>
+    //         </div>
+    //       </div>
+    //     </CodeBox>
+    //   ),
+    // },
     {
       id: 'section-6',
-      title: 'De texto',
-      content: (
-        <CodeBox codeHTML={TABLE}>
-          <div className="max-600">
-            <div className="responsive-scroll" tabIndex={0}>
-              <table className="table">
-                <thead>
-                  <tr>
-                    <th scope="col" className="tb-text">
-                      Texto
-                    </th>
-                    <th scope="col" className="tb-text">
-                      Texto
-                    </th>
-                    <th scope="col" className="tb-text">
-                      Texto
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Texto predeterminado</td>
-                    <td>Texto predeterminado</td>
-                    <td>Texto predeterminado</td>
-                  </tr>
-                  <tr>
-                    <td>Texto predeterminado</td>
-                    <td>Texto predeterminado</td>
-                    <td>Texto predeterminado</td>
-                  </tr>
-                  <tr>
-                    <td>Texto predeterminado</td>
-                    <td>Texto predeterminado</td>
-                    <td>Texto predeterminado</td>
-                  </tr>
-                  <tr>
-                    <td>Texto predeterminado</td>
-                    <td>Texto predeterminado</td>
-                    <td>Texto predeterminado</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </CodeBox>
-      ),
+      title: 'Tipos de celda',
     },
     {
       id: 'section-7',
-      title: 'De número',
+      title: 'De texto',
       content: (
-        <CodeBox codeHTML={TABLE}>
-          <div className="max-600">
+        <CodeBox codeHTML={TABLE_TEXT}>          
+          <div className='max-600 p-2'>          
             <div className="responsive-scroll" tabIndex={0}>
               <table className="table">
                 <thead>
                   <tr>
-                    <th scope="col" className="tb-text">
-                      Texto
-                    </th>
-                    <th scope="col" className="tb-number">
-                      Número
-                    </th>
-                    <th scope="col" className="tb-text">
-                      Texto
-                    </th>
-                    <th scope="col" className="tb-text">
-                      Texto
-                    </th>
-                    <th scope="col" className="tb-text">
-                      Texto
-                    </th>
+                    <th scope="col" className="tb-text">Texto</th>
+                    <th scope="col" className="tb-text">Texto</th>
+                    <th scope="col" className="tb-text">Texto</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>
-                      Este un texto de prueba para registrar el alto máximo de la celda y la cantidad de caracteres
-                      permitidos.
-                    </td>
-                    <td className="text-right">$100,00</td>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                   </tr>
                   <tr>
                     <td>Texto predeterminado</td>
-                    <td className="text-right">$100,00</td>
-                    <td>Texto predeterminado</td>
-                    <td>Texto predeterminado</td>
-                    <td>Texto predeterminado</td>
-                  </tr>
-                  <tr>
-                    <td>Texto predeterminado</td>
-                    <td className="text-right">$100,00</td>
-                    <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                   </tr>
                   <tr>
                     <td>Texto predeterminado</td>
-                    <td className="text-right">$100,00</td>
+                    <td>Texto predeterminado</td>
+                    <td>Texto predeterminado</td>
+                  </tr>
+                  <tr>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
@@ -747,76 +718,50 @@ const TableDocs: React.FC = () => {
     },
     {
       id: 'section-8',
-      title: 'De enlace',
+      title: 'De número',
       content: (
-        <CodeBox codeHTML={TABLE}>
-          <div className="max-600">
+        <CodeBox codeHTML={TABLE_NUMBER}>          
+          <div className='max-600 p-2'>          
             <div className="responsive-scroll" tabIndex={0}>
               <table className="table">
                 <thead>
                   <tr>
-                    <th scope="col" className="tb-text">
-                      Texto
-                    </th>
-                    <th scope="col" className="tb-text">
-                      Texto
-                    </th>
-                    <th scope="col" className="tb-link">
-                      Enlace
-                    </th>
-                    <th scope="col" className="tb-text">
-                      Texto
-                    </th>
-                    <th scope="col" className="tb-text">
-                      Texto
-                    </th>
+                    <th scope="col" className="tb-text">Texto</th>
+                    <th scope="col" className="tb-number">Número</th>
+                    <th scope="col" className="tb-text">Texto</th>
+                    <th scope="col" className="tb-text">Texto</th>
+                    <th scope="col" className="tb-text">Texto</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>
-                      Este un texto de prueba para registrar el alto máximo de la celda y la cantidad de caracteres
-                      permitidos.
+                      Este un texto de prueba para registrar el alto máximo de la celda y
+                      la cantidad de caracteres permitidos.
                     </td>
+                    <td className="text-right">$100,00</td>
                     <td>Texto predeterminado</td>
-                    <td>
-                      <a href="#" target="_blank" rel="noreferrer">
-                        Enlace predeterminado
-                      </a>
-                    </td>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                   </tr>
                   <tr>
                     <td>Texto predeterminado</td>
+                    <td className="text-right">$100,00</td>
                     <td>Texto predeterminado</td>
-                    <td>
-                      <a href="#" target="_blank" rel="noreferrer">
-                        Enlace predeterminado
-                      </a>
-                    </td>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                   </tr>
                   <tr>
                     <td>Texto predeterminado</td>
+                    <td className="text-right">$100,00</td>
                     <td>Texto predeterminado</td>
-                    <td>
-                      <a href="#" target="_blank" rel="noreferrer">
-                        Enlace predeterminado
-                      </a>
-                    </td>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                   </tr>
                   <tr>
                     <td>Texto predeterminado</td>
+                    <td className="text-right">$100,00</td>
                     <td>Texto predeterminado</td>
-                    <td>
-                      <a href="#" target="_blank" rel="noreferrer">
-                        Enlace predeterminado
-                      </a>
-                    </td>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                   </tr>
@@ -829,70 +774,68 @@ const TableDocs: React.FC = () => {
     },
     {
       id: 'section-9',
-      title: 'De etiqueta',
+      title: 'De enlace',
       content: (
-        <CodeBox codeHTML={TABLE}>
-          <div className="max-600">
+        <CodeBox codeHTML={TABLE_LINK}>          
+          <div className='max-600 p-2'>          
             <div className="responsive-scroll" tabIndex={0}>
               <table className="table">
                 <thead>
                   <tr>
-                    <th scope="col" className="tb-text">
-                      Texto
-                    </th>
-                    <th scope="col" className="tb-text">
-                      Texto
-                    </th>
-                    <th scope="col" className="tb-text">
-                      Texto
-                    </th>
-                    <th scope="col" className="tb-text">
-                      Texto
-                    </th>
-                    <th scope="col" className="tb-tag">
-                      Etiqueta
-                    </th>
+                    <th scope="col" className="tb-text">Texto</th>
+                    <th scope="col" className="tb-text">Texto</th>
+                    <th scope="col" className="tb-link">Enlace</th>
+                    <th scope="col" className="tb-text">Texto</th>
+                    <th scope="col" className="tb-text">Texto</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>
-                      Este un texto de prueba para registrar el alto máximo de la celda y la cantidad de caracteres
-                      permitidos.
+                      Este un texto de prueba para registrar el alto máximo de la celda y
+                      la cantidad de caracteres permitidos.
                     </td>
-                    <td>Texto predeterminado</td>
-                    <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                     <td>
-                      <span className="badge badge-default">Predeterminada</span>
+                      <a href="#" target="_blank" rel="noreferrer">
+                        Enlace predeterminado
+                      </a>
                     </td>
+                    <td>Texto predeterminado</td>
+                    <td>Texto predeterminado</td>
                   </tr>
                   <tr>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
-                    <td>Texto predeterminado</td>
-                    <td>Texto predeterminado</td>
                     <td>
-                      <span className="badge badge-default">Predeterminada</span>
+                      <a href="#" target="_blank" rel="noreferrer">
+                        Enlace predeterminado
+                      </a>
                     </td>
+                    <td>Texto predeterminado</td>
+                    <td>Texto predeterminado</td>
                   </tr>
                   <tr>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
-                    <td>Texto predeterminado</td>
-                    <td>Texto predeterminado</td>
                     <td>
-                      <span className="badge badge-default">Predeterminada</span>
+                      <a href="#" target="_blank" rel="noreferrer">
+                        Enlace predeterminado
+                      </a>
                     </td>
+                    <td>Texto predeterminado</td>
+                    <td>Texto predeterminado</td>
                   </tr>
                   <tr>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
-                    <td>Texto predeterminado</td>
-                    <td>Texto predeterminado</td>
                     <td>
-                      <span className="badge badge-default">Predeterminada</span>
+                      <a href="#" target="_blank" rel="noreferrer">
+                        Enlace predeterminado
+                      </a>
                     </td>
+                    <td>Texto predeterminado</td>
+                    <td>Texto predeterminado</td>
                   </tr>
                 </tbody>
               </table>
@@ -903,82 +846,52 @@ const TableDocs: React.FC = () => {
     },
     {
       id: 'section-10',
-      title: 'De botón',
+      title: 'De etiqueta',
       content: (
-        <CodeBox codeHTML={TABLE}>
-          <div className="max-600">
+        <CodeBox codeHTML={TABLE_TAG}>        
+          <div className='max-600 p-2'>          
             <div className="responsive-scroll" tabIndex={0}>
               <table className="table">
                 <thead>
                   <tr>
-                    <th scope="col" className="tb-text">
-                      Texto
-                    </th>
-                    <th scope="col" className="tb-text">
-                      Texto
-                    </th>
-                    <th scope="col" className="tb-button">
-                      Botón
-                    </th>
-                    <th scope="col" className="tb-text">
-                      Texto
-                    </th>
-                    <th scope="col" className="tb-text">
-                      Texto
-                    </th>
+                    <th scope="col" className="tb-text">Texto</th>
+                    <th scope="col" className="tb-text">Texto</th>
+                    <th scope="col" className="tb-text">Texto</th>
+                    <th scope="col" className="tb-text">Texto</th>
+                    <th scope="col" className="tb-tag">Etiqueta</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>
-                      Este un texto de prueba para registrar el alto máximo de la celda y la cantidad de caracteres
-                      permitidos.
-                    </td>
-                    <td>Texto predeterminado</td>
-                    <td>
-                      <button type="button" className="btn btn-primary btn-icon">
-                        <i className="bx bxs-info-circle"></i>
-                        botón
-                      </button>
+                      Este un texto de prueba para registrar el alto máximo de la celda y
+                      la cantidad de caracteres permitidos.
                     </td>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
+                    <td>Texto predeterminado</td>
+                    <td><span className="badge badge-default">Predeterminada</span></td>
                   </tr>
                   <tr>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
-                    <td>
-                      <button type="button" className="btn btn-primary btn-icon">
-                        <i className="bx bxs-info-circle"></i>
-                        botón
-                      </button>
-                    </td>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
+                    <td><span className="badge badge-default">Predeterminada</span></td>
                   </tr>
                   <tr>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
-                    <td>
-                      <button type="button" className="btn btn-primary btn-icon">
-                        <i className="bx bxs-info-circle"></i>
-                        botón
-                      </button>
-                    </td>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
+                    <td><span className="badge badge-default">Predeterminada</span></td>
                   </tr>
                   <tr>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
-                    <td>
-                      <button type="button" className="btn btn-primary btn-icon">
-                        <i className="bx bxs-info-circle"></i>
-                        botón
-                      </button>
-                    </td>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
+                    <td><span className="badge badge-default">Predeterminada</span></td>
                   </tr>
                 </tbody>
               </table>
@@ -989,50 +902,114 @@ const TableDocs: React.FC = () => {
     },
     {
       id: 'section-11',
-      title: 'De botón de ícono',
+      title: 'De botón',
       content: (
-        <CodeBox codeHTML={TABLE}>
-          <div className="max-600">
+        <CodeBox codeHTML={TABLE_BUTTON}>          
+          <div className='max-600 p-2'>          
             <div className="responsive-scroll" tabIndex={0}>
               <table className="table">
                 <thead>
                   <tr>
-                    <th scope="col" className="tb-text">
-                      Texto
-                    </th>
-                    <th scope="col" className="tb-text">
-                      Texto
-                    </th>
-                    <th scope="col" className="tb-text">
-                      Texto
-                    </th>
-                    <th scope="col" className="tb-button">
-                      Botón de ícono
-                    </th>
+                    <th scope="col" className="tb-text">Texto</th>
+                    <th scope="col" className="tb-text">Texto</th>
+                    <th scope="col" className="tb-button">Botón</th>
+                    <th scope="col" className="tb-text">Texto</th>
+                    <th scope="col" className="tb-text">Texto</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>
-                      Este un texto de prueba para registrar el alto máximo de la celda y la cantidad de caracteres
-                      permitidos.
+                      Este un texto de prueba para registrar el alto máximo de la celda y
+                      la cantidad de caracteres permitidos.
+                    </td>
+                    <td>Texto predeterminado</td>
+                    <td>
+                      <button type="button" className="btn btn-primary btn-icon">
+                        <i className="bx bxs-info-circle"></i>
+                        botón
+                      </button>
+                    </td>
+                    <td>Texto predeterminado</td>
+                    <td>Texto predeterminado</td>
+                  </tr>
+                  <tr>
+                    <td>Texto predeterminado</td>
+                    <td>Texto predeterminado</td>
+                    <td>
+                      <button type="button" className="btn btn-primary btn-icon">
+                        <i className="bx bxs-info-circle"></i>
+                        botón
+                      </button>
+                    </td>
+                    <td>Texto predeterminado</td>
+                    <td>Texto predeterminado</td>
+                  </tr>
+                  <tr>
+                    <td>Texto predeterminado</td>
+                    <td>Texto predeterminado</td>
+                    <td>
+                      <button type="button" className="btn btn-primary btn-icon">
+                        <i className="bx bxs-info-circle"></i>
+                        botón
+                      </button>
+                    </td>
+                    <td>Texto predeterminado</td>
+                    <td>Texto predeterminado</td>
+                  </tr>
+                  <tr>
+                    <td>Texto predeterminado</td>
+                    <td>Texto predeterminado</td>
+                    <td>
+                      <button type="button" className="btn btn-primary btn-icon">
+                        <i className="bx bxs-info-circle"></i>
+                        botón
+                      </button>
+                    </td>
+                    <td>Texto predeterminado</td>
+                    <td>Texto predeterminado</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </CodeBox>
+      ),
+    },
+    {
+      id: 'section-12',
+      title: 'De botón con ícono',
+      content: (
+        <CodeBox codeHTML={TABLE_BUTTON_ICON}>          
+          <div className='max-600 p-2'>          
+            <div className="responsive-scroll" tabIndex={0}>
+              <table className="table">
+                <thead>
+                  <tr>
+                    <th scope="col" className="tb-text">Texto</th>
+                    <th scope="col" className="tb-text">Texto</th>
+                    <th scope="col" className="tb-text">Texto</th>
+                    <th scope="col" className="tb-button">Botón de ícono</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      Este un texto de prueba para registrar el alto máximo de la celda y
+                      la cantidad de caracteres permitidos.
                     </td>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                     <td>
                       <div className="actions-table">
                         <button type="button" className="btn btn-xs">
-                          <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                            edit
-                          </span>
+                          <span className="material-symbols-rounded o-icon" aria-hidden="true">edit</span>
                         </button>
                         <button type="button" className="btn btn-xs">
                           <i className="bx bxs-trash-alt o-icon"></i>
                         </button>
                         <button type="button" className="btn btn-xs">
-                          <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                            visibility
-                          </span>
+                          <span className="material-symbols-rounded o-icon" aria-hidden="true">visibility</span>
                         </button>
                         <button type="button" className="btn btn-xs">
                           <i className="bx bxs-download o-icon"></i>
@@ -1047,17 +1024,13 @@ const TableDocs: React.FC = () => {
                     <td>
                       <div className="actions-table">
                         <button type="button" className="btn btn-xs">
-                          <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                            edit
-                          </span>
+                          <span className="material-symbols-rounded o-icon" aria-hidden="true">edit</span>
                         </button>
                         <button type="button" className="btn btn-xs">
                           <i className="bx bxs-trash-alt o-icon"></i>
                         </button>
                         <button type="button" className="btn btn-xs">
-                          <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                            visibility
-                          </span>
+                          <span className="material-symbols-rounded o-icon" aria-hidden="true">visibility</span>
                         </button>
                         <button type="button" className="btn btn-xs">
                           <i className="bx bxs-download o-icon"></i>
@@ -1072,17 +1045,13 @@ const TableDocs: React.FC = () => {
                     <td>
                       <div className="actions-table">
                         <button type="button" className="btn btn-xs">
-                          <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                            edit
-                          </span>
+                          <span className="material-symbols-rounded o-icon" aria-hidden="true">edit</span>
                         </button>
                         <button type="button" className="btn btn-xs">
                           <i className="bx bxs-trash-alt o-icon"></i>
                         </button>
                         <button type="button" className="btn btn-xs">
-                          <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                            visibility
-                          </span>
+                          <span className="material-symbols-rounded o-icon" aria-hidden="true">visibility</span>
                         </button>
                         <button type="button" className="btn btn-xs">
                           <i className="bx bxs-download o-icon"></i>
@@ -1097,17 +1066,13 @@ const TableDocs: React.FC = () => {
                     <td>
                       <div className="actions-table">
                         <button type="button" className="btn btn-xs">
-                          <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                            edit
-                          </span>
+                          <span className="material-symbols-rounded o-icon" aria-hidden="true">edit</span>
                         </button>
                         <button type="button" className="btn btn-xs">
                           <i className="bx bxs-trash-alt o-icon"></i>
                         </button>
                         <button type="button" className="btn btn-xs">
-                          <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                            visibility
-                          </span>
+                          <span className="material-symbols-rounded o-icon" aria-hidden="true">visibility</span>
                         </button>
                         <button type="button" className="btn btn-xs">
                           <i className="bx bxs-download o-icon"></i>
@@ -1120,8 +1085,8 @@ const TableDocs: React.FC = () => {
             </div>
           </div>
         </CodeBox>
-      ),
-    },
+      )
+    }
   ];
 
   return <DocumentationTemplate sections={sections} />;

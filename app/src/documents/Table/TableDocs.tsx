@@ -51,10 +51,7 @@ const TableDocs: React.FC = () => {
                       </a>
                     </td>
                     <td>
-                      <button type="button" className="btn btn-primary btn-icon">
-                        <i className="bx bxs-info-circle"></i>
-                        botón
-                      </button>
+                      <button type="button" className="btn btn-primary">Botón</button>
                     </td>
                     <td>
                     <div className="form-checkbox">
@@ -70,7 +67,7 @@ const TableDocs: React.FC = () => {
                       </label>
                     </div>
                     </td>
-                    <td><span className="badge badge-default">Predeterminada</span></td>
+                    <td><span className="badge badge-default">Texto predeterminado</span></td>
                   </tr>
                   <tr>
                     <td className="text-right">2</td>
@@ -81,10 +78,7 @@ const TableDocs: React.FC = () => {
                       </a>
                     </td>
                     <td>
-                      <button type="button" className="btn btn-primary btn-icon">
-                        <i className="bx bxs-info-circle"></i>
-                        botón
-                      </button>
+                      <button type="button" className="btn btn-primary">Botón</button>
                     </td>
                     <td>
                     <div className="form-checkbox">
@@ -100,7 +94,7 @@ const TableDocs: React.FC = () => {
                       </label>
                     </div>
                     </td>
-                    <td><span className="badge badge-danger">Predeterminada</span></td>
+                    <td><span className="badge badge-danger">Texto predeterminado</span></td>
                   </tr>
                   <tr>
                     <td className="text-right">3</td>
@@ -111,10 +105,7 @@ const TableDocs: React.FC = () => {
                       </a>
                     </td>
                     <td>
-                      <button type="button" className="btn btn-primary btn-icon">
-                        <i className="bx bxs-info-circle"></i>
-                        botón
-                      </button>
+                      <button type="button" className="btn btn-primary">Botón</button>
                     </td>
                     <td>
                     <div className="form-checkbox">
@@ -130,7 +121,7 @@ const TableDocs: React.FC = () => {
                       </label>
                     </div>
                     </td>
-                    <td><span className="badge badge-info">Predeterminada</span></td>
+                    <td><span className="badge badge-info">Texto predeterminado</span></td>
                   </tr>
                   <tr>
                     <td className="text-right">4</td>
@@ -141,10 +132,7 @@ const TableDocs: React.FC = () => {
                       </a>
                     </td>
                     <td>
-                      <button type="button" className="btn btn-primary btn-icon">
-                        <i className="bx bxs-info-circle"></i>
-                        botón
-                      </button>
+                      <button type="button" className="btn btn-primary">Botón</button>
                     </td>
                     <td>
                       <div className="form-checkbox">
@@ -160,7 +148,7 @@ const TableDocs: React.FC = () => {
                         </label>
                       </div>
                     </td>
-                    <td><span className="badge badge-warning">Predeterminada</span></td>
+                    <td><span className="badge badge-warning">Texto predeterminado</span></td>
                   </tr>
                 </tbody>
               </table>
@@ -198,10 +186,7 @@ const TableDocs: React.FC = () => {
                       </a>
                     </td>
                     <td>
-                      <button type="button" className="btn btn-primary btn-icon">
-                        <i className="bx bxs-info-circle"></i>
-                        botón
-                      </button>
+                      <button type="button" className="btn btn-primary">Botón</button>
                     </td>
                     <td>
                       <div className="form-checkbox">
@@ -217,7 +202,7 @@ const TableDocs: React.FC = () => {
                         </label>
                       </div>
                     </td>
-                    <td><span className="badge badge-default">Predeterminada</span></td>
+                    <td><span className="badge badge-default">Texto predeterminado</span></td>
                   </tr>
                   <tr>
                     <td className="text-right">2</td>
@@ -228,10 +213,7 @@ const TableDocs: React.FC = () => {
                       </a>
                     </td>
                     <td>
-                      <button type="button" className="btn btn-primary btn-icon">
-                        <i className="bx bxs-info-circle"></i>
-                        botón
-                      </button>
+                      <button type="button" className="btn btn-primary">Botón</button>
                     </td>
                     <td>
                       <div className="form-checkbox">
@@ -247,7 +229,7 @@ const TableDocs: React.FC = () => {
                         </label>
                       </div>
                     </td>
-                    <td><span className="badge badge-success">Predeterminada</span></td>
+                    <td><span className="badge badge-success">Texto predeterminado</span></td>
                   </tr>
                   <tr>
                     <td className="text-right">3</td>
@@ -258,10 +240,7 @@ const TableDocs: React.FC = () => {
                       </a>
                     </td>
                     <td>
-                      <button type="button" className="btn btn-primary btn-icon">
-                        <i className="bx bxs-info-circle"></i>
-                        botón
-                      </button>
+                      <button type="button" className="btn btn-primary">Botón</button>
                     </td>
                     <td>
                       <div className="form-checkbox">
@@ -277,7 +256,7 @@ const TableDocs: React.FC = () => {
                         </label>
                       </div>
                     </td>
-                    <td><span className="badge badge-info">Predeterminada</span></td>
+                    <td><span className="badge badge-info">Texto predeterminado</span></td>
                   </tr>
                   <tr>
                     <td className="text-right">4</td>
@@ -288,10 +267,7 @@ const TableDocs: React.FC = () => {
                       </a>
                     </td>
                     <td>
-                      <button type="button" className="btn btn-primary btn-icon">
-                        <i className="bx bxs-info-circle"></i>
-                        botón
-                      </button>
+                      <button type="button" className="btn btn-primary">Botón</button>
                     </td>
                     <td>
                       <div className="form-checkbox">
@@ -307,7 +283,7 @@ const TableDocs: React.FC = () => {
                         </label>
                       </div>
                     </td>
-                    <td><span className="badge badge-warning">Predeterminada</span></td>
+                    <td><span className="badge badge-warning">Texto predeterminado</span></td>
                   </tr>
                 </tbody>
               </table>
@@ -344,10 +320,7 @@ const TableDocs: React.FC = () => {
                       </a>
                     </td>
                     <td>
-                      <button type="button" className="btn btn-primary btn-icon">
-                        <i className="bx bxs-info-circle"></i>
-                        botón
-                      </button>
+                      <button type="button" className="btn btn-primary">Botón</button>
                     </td>
                     <td>
                       <div className="form-checkbox">
@@ -363,7 +336,7 @@ const TableDocs: React.FC = () => {
                         </label>
                       </div>
                     </td>
-                    <td><span className="badge badge-default">Predeterminada</span></td>
+                    <td><span className="badge badge-default">Texto predeterminado</span></td>
                   </tr>
                   <tr>
                     <td className="text-right">2</td>
@@ -374,10 +347,7 @@ const TableDocs: React.FC = () => {
                       </a>
                     </td>
                     <td>
-                      <button type="button" className="btn btn-primary btn-icon">
-                        <i className="bx bxs-info-circle"></i>
-                        botón
-                      </button>
+                      <button type="button" className="btn btn-primary">Botón</button>
                     </td>
                     <td>
                       <div className="form-checkbox">
@@ -393,7 +363,7 @@ const TableDocs: React.FC = () => {
                         </label>
                       </div>
                     </td>
-                    <td><span className="badge badge-warning">Predeterminada</span></td>
+                    <td><span className="badge badge-warning">Texto predeterminado</span></td>
                   </tr>
                   <tr>
                     <td className="text-right">3</td>
@@ -404,10 +374,7 @@ const TableDocs: React.FC = () => {
                       </a>
                     </td>
                     <td>
-                      <button type="button" className="btn btn-primary btn-icon">
-                        <i className="bx bxs-info-circle"></i>
-                        botón
-                      </button>
+                      <button type="button" className="btn btn-primary">Botón</button>
                     </td>
                     <td>
                       <div className="form-checkbox">
@@ -423,7 +390,7 @@ const TableDocs: React.FC = () => {
                         </label>
                       </div>
                     </td>
-                    <td><span className="badge badge-info">Predeterminada</span></td>
+                    <td><span className="badge badge-info">Texto predeterminado</span></td>
                   </tr>
                   <tr>
                     <td className="text-right">4</td>
@@ -434,10 +401,7 @@ const TableDocs: React.FC = () => {
                       </a>
                     </td>
                     <td>
-                      <button type="button" className="btn btn-primary btn-icon">
-                        <i className="bx bxs-info-circle"></i>
-                        botón
-                      </button>
+                      <button type="button" className="btn btn-primary">Botón</button>
                     </td>
                     <td>
                       <div className="form-checkbox">
@@ -453,7 +417,7 @@ const TableDocs: React.FC = () => {
                         </label>
                       </div>
                     </td>
-                    <td><span className="badge badge-danger">Predeterminada</span></td>
+                    <td><span className="badge badge-danger">Texto predeterminado</span></td>
                   </tr>
                 </tbody>
               </table>
@@ -563,112 +527,6 @@ const TableDocs: React.FC = () => {
         </CodeBox>
       ),
     },
-    // {
-    //   id: 'section-5',
-    //   title: 'Con checkbox',
-    //   content: (
-    //     <CodeBox codeHTML={SWITCH_WITHOUT_LABEL}>          
-    //       <div className='max-600 p-2'>   
-    //         <div className="responsive-scroll" tabIndex={0}>
-    //         <table className="table">
-    //           <thead>
-    //             <tr>
-    //               <th scope="col" className="tb-check">Checkbox</th>
-    //               <th scope="col" className="tb-number">Número</th>
-    //               <th scope="col" className="tb-text">Texto</th>
-    //               <th scope="col" className="tb-text">Texto</th>
-    //               <th scope="col" className="tb-text">Texto</th>
-    //             </tr>
-    //           </thead>
-    //           <tbody>
-    //             <tr>
-    //               <td>
-    //               <div className="form-checkbox">
-    //                 <label className="form-checkbox-label" htmlFor="option-thirteen">
-    //                   <input
-    //                     className="form-checkbox-input"
-    //                     type="checkbox"
-    //                     name="optionThirteen"
-    //                     id="option-thirteen"
-    //                     value="option thirteen"
-                        
-    //                   />
-    //                   {/* <span className="form-checkbox-text">Checkbox</span> */}
-    //                 </label>
-    //               </div>
-    //               </td>
-    //               <td className="text-right">$100,00</td>
-    //               <td>Texto predeterminado</td>
-    //               <td>Texto predeterminado</td>
-    //               <td>Texto predeterminado</td>
-    //             </tr>
-    //             <tr>
-    //               <td>
-    //                 <div className="form-checkbox">
-    //                   <label className="form-checkbox-label" htmlFor="option-fourteen">
-    //                     <input
-    //                       className="form-checkbox-input"
-    //                       type="checkbox"
-    //                       name="optionFourteen"
-    //                       id="option-fourteen"
-    //                       value="option fourteen"
-    //                     />
-    //                     {/* <span className="form-checkbox-text">Checkbox</span> */}
-    //                   </label>
-    //                 </div>
-    //               </td>
-    //               <td className="text-right">$100,00</td>
-    //               <td>Texto predeterminado</td>
-    //               <td>Texto predeterminado</td>
-    //               <td>Texto predeterminado</td>
-    //             </tr>
-    //             <tr>
-    //               <td>
-    //                 <div className="form-checkbox">
-    //                   <label className="form-checkbox-label" htmlFor="option-fifteen">
-    //                     <input
-    //                       className="form-checkbox-input"
-    //                       type="checkbox"
-    //                       name="optionFifteen"
-    //                       id="option-fifteen"
-    //                       value="option fifteen"
-    //                     />
-    //                     {/* <span className="form-checkbox-text">Checkbox</span> */}
-    //                   </label>
-    //                 </div>
-    //               </td>
-    //               <td className="text-right">$100,00</td>
-    //               <td>Texto predeterminado</td>
-    //               <td>Texto predeterminado</td>
-    //               <td>Texto predeterminado</td>
-    //             </tr>
-    //             <tr>
-    //               <td>
-    //                 <div className="form-checkbox">
-    //                   <label className="form-checkbox-label" htmlFor="option-sixteen">
-    //                     <input
-    //                       className="form-checkbox-input"
-    //                       type="checkbox"
-    //                       name="optionSixteen"
-    //                       id="option-sixteen"
-    //                       value="option sixteen"
-    //                     />
-    //                     {/* <span className="form-checkbox-text">Checkbox</span> */}
-    //                   </label>
-    //                 </div>
-    //               </td>
-    //               <td className="text-right">$100,00</td>
-    //               <td>Texto predeterminado</td>
-    //               <td>Texto predeterminado</td>
-    //               <td>Texto predeterminado</td>
-    //             </tr>
-    //           </tbody>
-    //         </table>
-    //         </div>
-    //       </div>
-    //     </CodeBox>
-    //   ),
-    // },
     {
       id: 'section-6',
       title: 'Tipos de celda',
@@ -870,28 +728,28 @@ const TableDocs: React.FC = () => {
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
-                    <td><span className="badge badge-default">Predeterminada</span></td>
+                    <td><span className="badge badge-default">Texto predeterminado</span></td>
                   </tr>
                   <tr>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
-                    <td><span className="badge badge-default">Predeterminada</span></td>
+                    <td><span className="badge badge-danger">Texto predeterminado</span></td>
                   </tr>
                   <tr>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
-                    <td><span className="badge badge-default">Predeterminada</span></td>
+                    <td><span className="badge badge-info">Texto predeterminado</span></td>
                   </tr>
                   <tr>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
-                    <td><span className="badge badge-default">Predeterminada</span></td>
+                    <td><span className="badge badge-success">Texto predeterminado</span></td>
                   </tr>
                 </tbody>
               </table>
@@ -925,10 +783,7 @@ const TableDocs: React.FC = () => {
                     </td>
                     <td>Texto predeterminado</td>
                     <td>
-                      <button type="button" className="btn btn-primary btn-icon">
-                        <i className="bx bxs-info-circle"></i>
-                        botón
-                      </button>
+                      <button type="button" className="btn btn-primary">Botón</button>
                     </td>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
@@ -937,10 +792,7 @@ const TableDocs: React.FC = () => {
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                     <td>
-                      <button type="button" className="btn btn-primary btn-icon">
-                        <i className="bx bxs-info-circle"></i>
-                        botón
-                      </button>
+                      <button type="button" className="btn btn-primary">Botón</button>
                     </td>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
@@ -949,10 +801,7 @@ const TableDocs: React.FC = () => {
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                     <td>
-                      <button type="button" className="btn btn-primary btn-icon">
-                        <i className="bx bxs-info-circle"></i>
-                        botón
-                      </button>
+                      <button type="button" className="btn btn-primary">Botón</button>
                     </td>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
@@ -961,10 +810,7 @@ const TableDocs: React.FC = () => {
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                     <td>
-                      <button type="button" className="btn btn-primary btn-icon">
-                        <i className="bx bxs-info-circle"></i>
-                        botón
-                      </button>
+                      <button type="button" className="btn btn-primary">Botón</button>
                     </td>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>

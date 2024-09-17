@@ -18,7 +18,7 @@ export const formsPages = [
 
 export const organismsPages = [
   // { text: "Accesos (organismo)", url: "/components/access", id: 1 },
-  // { text: "Footer (organismo)", url: "/components/footer", id: 2 },
+  { text: "Footer (organismo)", url: "/components/footer", id: 2 },
   // { text: "Header (organismo)", url: "/components/header", id: 3 },
   // { text: "Tablas (organismo)", url:"/components/table", id: 4 },
 ];
@@ -54,7 +54,6 @@ export const componentsPages = [
   { text: 'Switch', url: '/components/switch', id: 29 },
   // { text: "Tarjetas", url: "/components/cards", id: 30 },
   { text: 'Tooltip', url: '/components/tooltip', id: 31 },
-  { text: 'Footer', url: '/components/footer', id: 32 },
 ];
 
 export const gettingPages = [

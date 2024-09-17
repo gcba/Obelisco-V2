@@ -220,7 +220,7 @@ hr {
   @media screen and (min-width: 1200px) {
     max-height: 240px;
   }
-  
+
   > * {
     width: 160%;
     position: relative;
@@ -239,14 +239,12 @@ hr {
       @media screen and (min-width: 1200px) {
         max-height: 310px;
       }
-     
     }
     &.max-h-640 {
       max-height: 640px;
       @media screen and (min-width: 1200px) {
         max-height: 280px;
       }
-     
     }
   }
 }

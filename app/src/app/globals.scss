@@ -209,10 +209,14 @@ hr {
   }
 }
 
+//Visualizacion de Destacado en codebox
 .highlighted-box-sizing {
   transform: scale(0.6);
   transform-origin: top;
   max-height: 360px;
+  @media screen and (min-width: 768px) {
+    max-height: 450px;
+  }
   @media screen and (min-width: 1200px) {
     max-height: 240px;
   }
@@ -221,5 +225,28 @@ hr {
     width: 160%;
     position: relative;
     left: -30%;
+  }
+
+  &-vertical {
+    @extend .highlighted-box-sizing;
+    max-height: 1600px;
+    @media screen and (min-width: 1200px) {
+      max-height: 640px;
+    }
+
+    &.max-h-800 {
+      max-height: 800px;
+      @media screen and (min-width: 1200px) {
+        max-height: 310px;
+      }
+     
+    }
+    &.max-h-640 {
+      max-height: 640px;
+      @media screen and (min-width: 1200px) {
+        max-height: 280px;
+      }
+     
+    }
   }
 }

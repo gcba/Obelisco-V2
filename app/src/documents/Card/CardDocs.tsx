@@ -115,8 +115,8 @@ const CardDocs: React.FC = () => {
 
           <h3>Con ícono</h3>
           <div className="card">
-          <i className="bx bxs-info-circle card-icon-left"></i>
           <div className="card-body">
+          <i className="bx bxs-info-circle card-icon"></i>
               <h5 className="card-title">
                 <a href="#" className="card-title-link">
                   Título de la tarjeta

@@ -1,5 +1,6 @@
 $focus: #218274;
 $hover: #274986;
+$color-text: #101e37;
 $text-sm: 16px; // En Obelisco es 81.25%
 $height-text-sm: 16px;
 $headline-lg: 1.1875rem;
@@ -128,7 +129,7 @@ $accordion-bg-white: $white;
           box-shadow: none;
           outline: none;
           border: none;
-          color: $focus;
+          color: $color-text;
           text-decoration: underline;
           text-decoration-thickness: 1px;
           &:after {
@@ -146,8 +147,9 @@ $accordion-bg-white: $white;
 // @import 'node_modules/bootstrap/scss/card';
 
 /* === Custom styles === */
-.max-items-3, .max-items-2{
-  .card{
+.max-items-3,
+.max-items-2 {
+  .card {
     width: 100%;
   }
 }
@@ -346,7 +348,7 @@ $accordion-bg-white: $white;
     &:focus-within {
       .card-title {
         a:focus {
-          color: $focus;
+          color: $color-text;
           outline: 2px solid $focus;
         }
       }
@@ -355,7 +357,7 @@ $accordion-bg-white: $white;
     &:visited {
       .card-title {
         a:visited {
-          color: #101e37;
+          color: $color-text;
         }
       }
     }
@@ -363,6 +365,8 @@ $accordion-bg-white: $white;
 
   &.card-horizontal {
     flex-direction: row;
+    max-width: 538px;
+    width: 100%;
 
     .card-img-left {
       width: $card-picture-size;
@@ -466,11 +470,11 @@ $accordion-bg-white: $white;
   @extend %divCardStyles;
 }
 
-.card.unbordered {
-  box-shadow: none !important;
-  outline: none !important;
-  background: transparent !important;
-}
+// .card.unbordered {
+//   box-shadow: none !important;
+//   outline: none !important;
+//   background: transparent !important;
+// }
 
 // .card-deck {
 //   .group-access {

@@ -5,15 +5,15 @@ $text-sm: 16px; // En Obelisco es 81.25%
 $height-text-sm: 16px;
 $headline-lg: 1.1875rem;
 $height-headline: 1.2;
-$grisulado-10: #f3f6f9; //grisulado-10
-$grisulado-50: #e6ebf0; //grisulado-10
+// $grisulado-50: #f3f6f9; //grisulado-50
+// $grisulado-500: #e6ebf0; //grisulado-100
 $grid-gutter-width: 30px;
 $active: #218274;
 $text-md: 1rem;
 $height-text-md: 1.5rem;
-$card-header-bg: $grisulado-10;
+$card-header-bg: $grisulado-50;
 $headline-md: 1.125rem;
-$cyan-800: #218274;
+// $cyan-800: #218274;
 $focus: $cyan-800;
 $progression-circle-size: 0.5rem;
 
@@ -33,12 +33,12 @@ $card-subtitle-font-weight: 400;
 $card-cap-color: $text-muted;
 $card-cap-bg: inherit;
 $card-active-color: $white;
-// $card-header-bg: $grisulado-10;
+// $card-header-bg: $grisulado-50;
 $card-header-padding: 0.75rem 1.813rem 0.75rem 1.5rem;
 $card-bg-info: #005387;
 
 $card-border-width: 0;
-$card-shadow-color: $grisulado-10;
+$card-shadow-color: $grisulado-50;
 $card-shadow-collapsable-color: $grisulado-50;
 $card-box-shadow: 0 0 0 2px $card-shadow-color;
 $card-box-shadow-collapsable: 0 0 0 2px $card-shadow-collapsable-color;
@@ -50,7 +50,7 @@ $card-picture-size-lg-mobile: 4.5rem;
 
 $card-icon-size: 2rem;
 $card-icon-background-size: $card-picture-size;
-$card-icon-bg: $grisulado-10;
+$card-icon-bg: $grisulado-50;
 
 $card-footer-icon-size: 1rem;
 
@@ -319,25 +319,32 @@ $accordion-bg-white: $white;
     }
   }
 
-  &.card-simple {
-    border: none;
-    box-shadow: none;
-    outline: none;
-    background: transparent;
-  }
-
   .unbordered {
     box-shadow: none !important;
     outline: none !important;
     background: transparent !important;
-  }
+    border: none !important;
 
-  &.unbordered {
-    box-shadow: none;
-    outline: none;
-    background: transparent;
+    &.card-simple {
+      box-shadow: none !important;
+      outline: none !important;
+      background: transparent !important;
+      border: none !important;
+  
+      &:hover {
+        box-shadow: none !important;
+        outline: none !important;
+        background: transparent !important;
+        border: none !important;
+      }
+    }
 
     &:hover {
+      box-shadow: none !important;
+      outline: none !important;
+      background: transparent !important;
+      border: none !important;
+      
       .card-title {
         a:visited {
           color: $hover;
@@ -346,6 +353,65 @@ $accordion-bg-white: $white;
     }
 
     &:focus-within {
+      box-shadow: none;
+      outline: none;
+      background: transparent;
+      border: none;
+      .card-title {
+        a:focus {
+          color: $color-text;
+          outline: 2px solid $focus;
+        }
+      }
+    }
+
+    &:visited {
+      .card-title {
+        a:visited {
+          color: $color-text;
+        }
+      }
+    }
+  }
+
+  &.unbordered {
+    box-shadow: none !important;
+    outline: none !important;
+    background: transparent !important;
+    border: none !important;
+
+    &.card-simple {
+      box-shadow: none !important;
+      outline: none !important;
+      background: transparent !important;
+      border: none !important;
+  
+      &:hover {
+        box-shadow: none !important;
+        outline: none !important;
+        background: transparent !important;
+        border: none !important;
+      }
+    }
+
+    &:hover {
+      box-shadow: none !important;
+      outline: none !important;
+      background: transparent !important;
+      border: none !important;
+
+      .card-title {
+        a:visited {
+          color: $hover;
+        }
+      }
+    }
+
+    &:focus-within {
+      box-shadow: none;
+      outline: none;
+      background: transparent;
+      border: none;
       .card-title {
         a:focus {
           color: $color-text;
@@ -470,11 +536,16 @@ $accordion-bg-white: $white;
   @extend %divCardStyles;
 }
 
-// .card.unbordered {
-//   box-shadow: none !important;
-//   outline: none !important;
-//   background: transparent !important;
-// }
+.card.unbordered,
+.card.unbordered:focus,
+.card.unbordered:hover,
+.card.unbordered:active,
+.card.unbordered:focus-within {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 
 // .card-deck {
 //   .group-access {
@@ -751,7 +822,7 @@ button.card {
 
           &:hover,
           &.hover {
-            // background-color: $grisulado-10;
+            // background-color: $grisulado-50;
             color: $hover;
             box-shadow: $card-box-hover-shadow;
             backface-visibility: visible;

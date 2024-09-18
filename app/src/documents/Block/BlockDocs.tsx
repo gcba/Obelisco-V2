@@ -14,9 +14,14 @@ const BlockDocs: React.FC = () => {
           <MainDescription description="Este componente se utiliza dentro de una página informativa de trámite e indica el estado del mismo. Desde él, la persona usuaria puede iniciar el trámite o ver en qué instancia se encuentra." />
           <p className="lead mb-4">
             Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-            <a href="https://gcba.github.io/estandares/componentes/bloque-de-tramite/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://gcba.github.io/estandares/componentes/bloque-de-tramite/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               enlace
-            </a>.
+            </a>
+            .
           </p>
         </>
       ),
@@ -31,12 +36,7 @@ const BlockDocs: React.FC = () => {
               <div className="card-block position-sticky" style={{ top: '48px' }}>
                 <div className="card-body">
                   <h2 className="block-title">Iniciá el trámite y completá todos los pasos</h2>
-                  <a
-                    href="#"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-lg btn-primary btn-block"
-                  >
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-lg btn-primary btn-block">
                     Iniciar trámite
                   </a>
                 </div>
@@ -56,9 +56,7 @@ const BlockDocs: React.FC = () => {
               <div className="card-block position-sticky" style={{ top: '48px' }}>
                 <div className="card-body">
                   <h2 className="block-title">Iniciá el trámite y completá todos los pasos</h2>
-                  <p className="block-text">
-                    Si tenés un trámite iniciado podés continuarlo desde acá.
-                  </p>
+                  <p className="block-text">Si tenés un trámite iniciado podés continuarlo desde acá.</p>
                   <button type="button" className="btn btn-lg btn-primary btn-block">
                     Iniciar trámite
                   </button>
@@ -78,25 +76,20 @@ const BlockDocs: React.FC = () => {
             <div className="col-12 col-xl-6">
               <div className="card-block position-sticky" style={{ top: '48px' }}>
                 <div className="card-body">
-                <h2 className="block-title">Este es tu progreso en el trámite</h2>
-                <div className="progress">
-                  <div
-                    className="progress-bar bg-success"
-                    role="progressbar"
-                    aria-valuenow={25}
-                    aria-valuemin={0}
-                    aria-valuemax={100}
-                    style={{ width: '25%' }}
-                  ></div>
-                </div>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-lg btn-primary btn-block"
-                >
-                  Continuar trámite
-                </a>
+                  <h2 className="block-title">Este es tu progreso en el trámite</h2>
+                  <div className="progress">
+                    <div
+                      className="progress-bar bg-success"
+                      role="progressbar"
+                      aria-valuenow={25}
+                      aria-valuemin={0}
+                      aria-valuemax={100}
+                      style={{ width: '25%' }}
+                    ></div>
+                  </div>
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-lg btn-primary btn-block">
+                    Continuar trámite
+                  </a>
                 </div>
               </div>
             </div>
@@ -114,9 +107,7 @@ const BlockDocs: React.FC = () => {
               <div className="card-block position-sticky bg-light" style={{ top: '48px' }}>
                 <div className="card-body">
                   <h2 className="block-title">Iniciá el trámite y completá todos los pasos</h2>
-                  <p className="block-text">
-                    Si tenés un trámite iniciado podés continuarlo desde acá.
-                  </p>
+                  <p className="block-text">Si tenés un trámite iniciado podés continuarlo desde acá.</p>
                   <button type="button" className="btn btn-lg btn-primary btn-block">
                     Iniciar trámite
                   </button>

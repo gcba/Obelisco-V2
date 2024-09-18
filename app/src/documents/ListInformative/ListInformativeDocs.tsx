@@ -14,9 +14,14 @@ const ListInformativeDocs: React.FC = () => {
           <MainDescription description="Las listas informativas organizan piezas simples de información en forma vertical. Se utilizan cuando sus elementos no transmiten un orden secuencial específico." />
           <p className="lead mb-4">
             Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-            <a href="https://gcba.github.io/estandares/componentes/listas/lista-informativa/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://gcba.github.io/estandares/componentes/listas/lista-informativa/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               enlace
-            </a>.
+            </a>
+            .
           </p>
         </>
       ),
@@ -28,9 +33,7 @@ const ListInformativeDocs: React.FC = () => {
         <CodeBox codeHTML={LIST_INFORMATIVE_BULLET}>
           <div className="container">
             <div className="list-informative">
-              <h3 className="list-informative-subtitle">
-                Este es el subtítulo de una lista general
-              </h3>
+              <h3 className="list-informative-subtitle">Este es el subtítulo de una lista general</h3>
               <ul className="list-informative-bullet">
                 <li>Este es el contenido de un ítem de una lista general.</li>
                 <li>Este es el contenido de un ítem de una lista general.</li>
@@ -52,9 +55,7 @@ const ListInformativeDocs: React.FC = () => {
         <CodeBox codeHTML={LIST_INFORMATIVE_CHECK}>
           <div className="container">
             <div className="list-informative">
-              <h3 className="list-informative-subtitle">
-                Este es el subtítulo de una lista de requisitos
-              </h3>
+              <h3 className="list-informative-subtitle">Este es el subtítulo de una lista de requisitos</h3>
               <ul className="list-informative-check">
                 <li>Este es el contenido de un ítem de una lista de requisitos.</li>
                 <li>Este es el contenido de un ítem de una lista de requisitos.</li>

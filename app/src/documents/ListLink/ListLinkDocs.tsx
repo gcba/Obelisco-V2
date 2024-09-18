@@ -14,9 +14,14 @@ const ListLinkDocs: React.FC = () => {
           <MainDescription description="La lista de enlaces organiza y orienta a la persona usuaria a través de diferentes secciones y recursos disponibles en un sitio web. Al funcionar como un bloque coherente, permite encontrar información deseada rápidamente." />
           <p className="lead mb-4">
             Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-            <a href="https://gcba.github.io/estandares/componentes/listas/lista-de-enlaces/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://gcba.github.io/estandares/componentes/listas/lista-de-enlaces/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               enlace
-            </a>.
+            </a>
+            .
           </p>
         </>
       ),
@@ -29,11 +34,21 @@ const ListLinkDocs: React.FC = () => {
           <div className="container">
             <div className="list-link">
               <h3 className="list-link-title">Este es el título de una lista de enlaces</h3>
-              <a href="#" target="_blank" rel="noopener noreferrer">Enlace predeterminado</a>
-              <a href="#" target="_blank" rel="noopener noreferrer">Enlace predeterminado</a>
-              <a href="#" target="_blank" rel="noopener noreferrer">Enlace predeterminado</a>
-              <a href="#" target="_blank" rel="noopener noreferrer">Enlace predeterminado</a>
-              <a href="#" target="_blank" rel="noopener noreferrer">Enlace predeterminado</a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                Enlace predeterminado
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                Enlace predeterminado
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                Enlace predeterminado
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                Enlace predeterminado
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                Enlace predeterminado
+              </a>
             </div>
           </div>
         </CodeBox>

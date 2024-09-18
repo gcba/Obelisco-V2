@@ -2,7 +2,16 @@ import CodeBox from '@/components/CodeBox';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
-import { LIST_STEP_LARGE, LIST_STEP_LARGE_BORDER, LIST_STEP_MEDIUM, LIST_STEP_MEDIUM_BORDER, LIST_STEP_MEDIUM_NUMBER, LIST_STEP_MEDIUM_NUMBER_BORDER, LIST_STEP_SMALL, LIST_STEP_SMALL_BORDER } from './code-views';
+import {
+  LIST_STEP_LARGE,
+  LIST_STEP_LARGE_BORDER,
+  LIST_STEP_MEDIUM,
+  LIST_STEP_MEDIUM_BORDER,
+  LIST_STEP_MEDIUM_NUMBER,
+  LIST_STEP_MEDIUM_NUMBER_BORDER,
+  LIST_STEP_SMALL,
+  LIST_STEP_SMALL_BORDER,
+} from './code-views';
 
 const ListStepDocs: React.FC = () => {
   const sections = [
@@ -14,9 +23,14 @@ const ListStepDocs: React.FC = () => {
           <MainDescription description="Las listas se utilizan para agrupar una serie de elementos relacionados. Para listas que presentan un orden secuencial de pasos, utilizamos la Lista de pasos." />
           <p className="lead mb-4">
             Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-            <a href="https://gcba.github.io/estandares/componentes/listas/listas-de-pasos/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://gcba.github.io/estandares/componentes/listas/listas-de-pasos/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               enlace
-            </a>.
+            </a>
+            .
           </p>
         </>
       ),
@@ -33,28 +47,25 @@ const ListStepDocs: React.FC = () => {
                 <li className="list-steps-item">
                   <h3 className="list-steps-item-title">Instrucción 1</h3>
                   <p>
-                    En esta descripción de la instrucción 1 se muestran los detalles
-                    principales de las acciones que deberá tomar el usuario luego. En esta
-                    descripción de la instrucción 1 se muestran los detalles principales de
-                    las acciones que deberá tomar el usuario luego.
+                    En esta descripción de la instrucción 1 se muestran los detalles principales de las acciones que
+                    deberá tomar el usuario luego. En esta descripción de la instrucción 1 se muestran los detalles
+                    principales de las acciones que deberá tomar el usuario luego.
                   </p>
                 </li>
                 <li className="list-steps-item">
                   <h3 className="list-steps-item-title">Instrucción 2</h3>
                   <p>
-                    En esta descripción de la instrucción 2 se muestran los detalles
-                    principales de las acciones que deberá tomar el usuario luego. En esta
-                    descripción de la instrucción 2 se muestran los detalles principales de
-                    las acciones que deberá tomar el usuario luego.
+                    En esta descripción de la instrucción 2 se muestran los detalles principales de las acciones que
+                    deberá tomar el usuario luego. En esta descripción de la instrucción 2 se muestran los detalles
+                    principales de las acciones que deberá tomar el usuario luego.
                   </p>
                 </li>
                 <li className="list-steps-item">
                   <h3 className="list-steps-item-title">Instrucción 3</h3>
                   <p>
-                    En esta descripción de la instrucción 3 se muestran los detalles
-                    principales de las acciones que deberá tomar el usuario luego. En esta
-                    descripción de la instrucción 3 se muestran los detalles principales de
-                    las acciones que deberá tomar el usuario luego.
+                    En esta descripción de la instrucción 3 se muestran los detalles principales de las acciones que
+                    deberá tomar el usuario luego. En esta descripción de la instrucción 3 se muestran los detalles
+                    principales de las acciones que deberá tomar el usuario luego.
                   </p>
                 </li>
               </ul>
@@ -69,22 +80,22 @@ const ListStepDocs: React.FC = () => {
                 <li className="list-steps-item">
                   <h3 className="list-steps-item-title">Instrucción 1</h3>
                   <p>
-                    En esta descripción de la instrucción 1 se muestran los detalles
-                    principales de las acciones que deberá tomar el usuario luego.
+                    En esta descripción de la instrucción 1 se muestran los detalles principales de las acciones que
+                    deberá tomar el usuario luego.
                   </p>
                 </li>
                 <li className="list-steps-item">
                   <h3 className="list-steps-item-title">Instrucción 2</h3>
                   <p>
-                    En esta descripción de la instrucción 2 se muestran los detalles
-                    principales de las acciones que deberá tomar el usuario luego.
+                    En esta descripción de la instrucción 2 se muestran los detalles principales de las acciones que
+                    deberá tomar el usuario luego.
                   </p>
                 </li>
                 <li className="list-steps-item">
                   <h3 className="list-steps-item-title">Instrucción 3</h3>
                   <p>
-                    En esta descripción de la instrucción 3 se muestran los detalles
-                    principales de las acciones que deberá tomar el usuario luego.
+                    En esta descripción de la instrucción 3 se muestran los detalles principales de las acciones que
+                    deberá tomar el usuario luego.
                   </p>
                 </li>
               </ul>
@@ -99,22 +110,22 @@ const ListStepDocs: React.FC = () => {
                 <li className="list-steps-item">
                   <h3 className="list-steps-item-title">Instrucción 1</h3>
                   <p>
-                    En esta descripción de la instrucción 1 se muestran los detalles
-                    principales de las acciones que deberá tomar el usuario luego.
+                    En esta descripción de la instrucción 1 se muestran los detalles principales de las acciones que
+                    deberá tomar el usuario luego.
                   </p>
                 </li>
                 <li className="list-steps-item">
                   <h3 className="list-steps-item-title">Instrucción 2</h3>
                   <p>
-                    En esta descripción de la instrucción 2 se muestran los detalles
-                    principales de las acciones que deberá tomar el usuario luego.
+                    En esta descripción de la instrucción 2 se muestran los detalles principales de las acciones que
+                    deberá tomar el usuario luego.
                   </p>
                 </li>
                 <li className="list-steps-item">
                   <h3 className="list-steps-item-title">Instrucción 3</h3>
                   <p>
-                    En esta descripción de la instrucción 3 se muestran los detalles
-                    principales de las acciones que deberá tomar el usuario luego.
+                    En esta descripción de la instrucción 3 se muestran los detalles principales de las acciones que
+                    deberá tomar el usuario luego.
                   </p>
                 </li>
               </ul>
@@ -135,28 +146,25 @@ const ListStepDocs: React.FC = () => {
                 <li className="list-steps-item">
                   <h3 className="list-steps-item-title">Instrucción 1</h3>
                   <p>
-                    En esta descripción de la instrucción 1 se muestran los detalles
-                    principales de las acciones que deberá tomar el usuario luego. En esta
-                    descripción de la instrucción 1 se muestran los detalles principales de
-                    las acciones que deberá tomar el usuario luego.
+                    En esta descripción de la instrucción 1 se muestran los detalles principales de las acciones que
+                    deberá tomar el usuario luego. En esta descripción de la instrucción 1 se muestran los detalles
+                    principales de las acciones que deberá tomar el usuario luego.
                   </p>
                 </li>
                 <li className="list-steps-item">
                   <h3 className="list-steps-item-title">Instrucción 2</h3>
                   <p>
-                    En esta descripción de la instrucción 2 se muestran los detalles
-                    principales de las acciones que deberá tomar el usuario luego. En esta
-                    descripción de la instrucción 2 se muestran los detalles principales de
-                    las acciones que deberá tomar el usuario luego.
+                    En esta descripción de la instrucción 2 se muestran los detalles principales de las acciones que
+                    deberá tomar el usuario luego. En esta descripción de la instrucción 2 se muestran los detalles
+                    principales de las acciones que deberá tomar el usuario luego.
                   </p>
                 </li>
                 <li className="list-steps-item">
                   <h3 className="list-steps-item-title">Instrucción 3</h3>
                   <p>
-                    En esta descripción de la instrucción 3 se muestran los detalles
-                    principales de las acciones que deberá tomar el usuario luego. En esta
-                    descripción de la instrucción 3 se muestran los detalles principales de
-                    las acciones que deberá tomar el usuario luego.
+                    En esta descripción de la instrucción 3 se muestran los detalles principales de las acciones que
+                    deberá tomar el usuario luego. En esta descripción de la instrucción 3 se muestran los detalles
+                    principales de las acciones que deberá tomar el usuario luego.
                   </p>
                 </li>
               </ul>
@@ -171,22 +179,22 @@ const ListStepDocs: React.FC = () => {
                 <li className="list-steps-item">
                   <h3 className="list-steps-item-title">Instrucción 1</h3>
                   <p>
-                    En esta descripción de la instrucción 1 se muestran los detalles
-                    principales de las acciones que deberá tomar el usuario luego.
+                    En esta descripción de la instrucción 1 se muestran los detalles principales de las acciones que
+                    deberá tomar el usuario luego.
                   </p>
                 </li>
                 <li className="list-steps-item">
                   <h3 className="list-steps-item-title">Instrucción 2</h3>
                   <p>
-                    En esta descripción de la instrucción 2 se muestran los detalles
-                    principales de las acciones que deberá tomar el usuario luego.
+                    En esta descripción de la instrucción 2 se muestran los detalles principales de las acciones que
+                    deberá tomar el usuario luego.
                   </p>
                 </li>
                 <li className="list-steps-item">
                   <h3 className="list-steps-item-title">Instrucción 3</h3>
                   <p>
-                    En esta descripción de la instrucción 3 se muestran los detalles
-                    principales de las acciones que deberá tomar el usuario luego.
+                    En esta descripción de la instrucción 3 se muestran los detalles principales de las acciones que
+                    deberá tomar el usuario luego.
                   </p>
                 </li>
               </ul>
@@ -201,22 +209,22 @@ const ListStepDocs: React.FC = () => {
                 <li className="list-steps-item">
                   <h3 className="list-steps-item-title">Instrucción 1</h3>
                   <p>
-                    En esta descripción de la instrucción 1 se muestran los detalles
-                    principales de las acciones que deberá tomar el usuario luego.
+                    En esta descripción de la instrucción 1 se muestran los detalles principales de las acciones que
+                    deberá tomar el usuario luego.
                   </p>
                 </li>
                 <li className="list-steps-item">
                   <h3 className="list-steps-item-title">Instrucción 2</h3>
                   <p>
-                    En esta descripción de la instrucción 2 se muestran los detalles
-                    principales de las acciones que deberá tomar el usuario luego.
+                    En esta descripción de la instrucción 2 se muestran los detalles principales de las acciones que
+                    deberá tomar el usuario luego.
                   </p>
                 </li>
                 <li className="list-steps-item">
                   <h3 className="list-steps-item-title">Instrucción 3</h3>
                   <p>
-                    En esta descripción de la instrucción 3 se muestran los detalles
-                    principales de las acciones que deberá tomar el usuario luego.
+                    En esta descripción de la instrucción 3 se muestran los detalles principales de las acciones que
+                    deberá tomar el usuario luego.
                   </p>
                 </li>
               </ul>
@@ -236,22 +244,22 @@ const ListStepDocs: React.FC = () => {
                 <li className="list-steps-item">
                   <h3 className="list-steps-item-title">Instrucción 1</h3>
                   <p>
-                    En esta descripción de la instrucción 1 se muestran los detalles
-                    principales de las acciones que deberá tomar el usuario luego.
+                    En esta descripción de la instrucción 1 se muestran los detalles principales de las acciones que
+                    deberá tomar el usuario luego.
                   </p>
                 </li>
                 <li className="list-steps-item">
                   <h3 className="list-steps-item-title">Instrucción 2</h3>
                   <p>
-                    En esta descripción de la instrucción 2 se muestran los detalles
-                    principales de las acciones que deberá tomar el usuario luego.
+                    En esta descripción de la instrucción 2 se muestran los detalles principales de las acciones que
+                    deberá tomar el usuario luego.
                   </p>
                 </li>
                 <li className="list-steps-item">
                   <h3 className="list-steps-item-title">Instrucción 3</h3>
                   <p>
-                    En esta descripción de la instrucción 3 se muestran los detalles
-                    principales de las acciones que deberá tomar el usuario luego.
+                    En esta descripción de la instrucción 3 se muestran los detalles principales de las acciones que
+                    deberá tomar el usuario luego.
                   </p>
                 </li>
               </ul>
@@ -266,22 +274,22 @@ const ListStepDocs: React.FC = () => {
                 <li className="list-steps-item">
                   <h3 className="list-steps-item-title">Instrucción 1</h3>
                   <p>
-                    En esta descripción de la instrucción 1 se muestran los detalles
-                    principales de las acciones que deberá tomar el usuario luego.
+                    En esta descripción de la instrucción 1 se muestran los detalles principales de las acciones que
+                    deberá tomar el usuario luego.
                   </p>
                 </li>
                 <li className="list-steps-item">
                   <h3 className="list-steps-item-title">Instrucción 2</h3>
                   <p>
-                    En esta descripción de la instrucción 2 se muestran los detalles
-                    principales de las acciones que deberá tomar el usuario luego.
+                    En esta descripción de la instrucción 2 se muestran los detalles principales de las acciones que
+                    deberá tomar el usuario luego.
                   </p>
                 </li>
                 <li className="list-steps-item">
                   <h3 className="list-steps-item-title">Instrucción 3</h3>
                   <p>
-                    En esta descripción de la instrucción 3 se muestran los detalles
-                    principales de las acciones que deberá tomar el usuario luego.
+                    En esta descripción de la instrucción 3 se muestran los detalles principales de las acciones que
+                    deberá tomar el usuario luego.
                   </p>
                 </li>
               </ul>

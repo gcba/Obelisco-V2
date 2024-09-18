@@ -216,4 +216,10 @@ hr {
     width: 202%;
     left: -53%;
   }
+
+  &:has(.navbar-collapse.collapse.show),
+  &:has(.navbar-collapse.collapsing) {
+    z-index: 9999;
+    position: relative;
+  }
 }

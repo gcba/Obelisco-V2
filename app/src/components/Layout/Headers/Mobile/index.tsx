@@ -64,7 +64,7 @@ export default function HeaderMobile() {
             <NavLayout items={organismsPages} />
           </div>
         </Drawer>
-    </div>
+      </div>
     </>
   );
 }

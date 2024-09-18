@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { usePathname } from "next/navigation";
+import { usePathname } from 'next/navigation';
 
 import '../../layout.scss';
 
@@ -26,13 +26,13 @@ export default function HeaderDesktop() {
         </a>
         <div className="container header-container">
           <a href="/" className="navbar-brand">
-            <Image 
-              className="header-logo" 
-              src={`${basePath}/images/BA.svg`} 
-              alt="Gobierno de la Ciudad de Buenos Aires - Inicio" 
+            <Image
+              className="header-logo"
+              src={`${basePath}/images/BA.svg`}
+              alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
               width={76}
-              height={48}>
-            </Image>
+              height={48}
+            ></Image>
           </a>
           <HeaderMobile />
           <div className="collapse navbar-collapse" id="navbarContent">
@@ -41,14 +41,17 @@ export default function HeaderDesktop() {
                 <div className="navbar-sections">
                   <nav>
                     <p className="navbar-sections-title">Secciones</p>
-                      <ul className="nav nav-pills nav-sections">
-                        {gettingPages.map(page => (
-                          <li className="nav-item" key={page.id}>
-                          <Link className={`nav-link nav-link-lg ${pathname.startsWith(page.url) ? 'active' : ''}`} href={page.url}>
+                    <ul className="nav nav-pills nav-sections">
+                      {gettingPages.map((page) => (
+                        <li className="nav-item" key={page.id}>
+                          <Link
+                            className={`nav-link nav-link-lg ${pathname.startsWith(page.url) ? 'active' : ''}`}
+                            href={page.url}
+                          >
                             <span>{page.text}</span>
                           </Link>
                         </li>
-                        ))}
+                      ))}
                     </ul>
                   </nav>
                 </div>

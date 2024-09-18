@@ -4,7 +4,20 @@ import CodeBox from '@/components/CodeBox';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
-import { HEADER_LOGIN_ONE_LINE, HEADER_LOGIN_ONE_LINE_SEARCH, HEADER_LOGIN_TWO_LINES, HEADER_LOGIN_TWO_LINES_SEARCH, HEADER_NO_LOGIN, HEADER_NO_LOGIN_SEARCH, HEADER_ONE_LINE_SEARCH, HEADER_ONLY_LOGIN, HEADER_ONLY_LOGO, HEADER_ONLY_SEARCH, HEADER_TWO_LINES, HEADER_TWO_LINES_SEARCH } from './code-views';
+import {
+  HEADER_LOGIN_ONE_LINE,
+  HEADER_LOGIN_ONE_LINE_SEARCH,
+  HEADER_LOGIN_TWO_LINES,
+  HEADER_LOGIN_TWO_LINES_SEARCH,
+  HEADER_NO_LOGIN,
+  HEADER_NO_LOGIN_SEARCH,
+  HEADER_ONE_LINE_SEARCH,
+  HEADER_ONLY_LOGIN,
+  HEADER_ONLY_LOGO,
+  HEADER_ONLY_SEARCH,
+  HEADER_TWO_LINES,
+  HEADER_TWO_LINES_SEARCH,
+} from './code-views';
 
 const basePath = '/Obelisco-V2';
 
@@ -18,9 +31,14 @@ const HeaderDocs: React.FC = () => {
           <MainDescription description="El header es una sección ubicada en la parte superior de la página que contiene elementos y componentes relacionados a la navegación. Su función es permitir que la persona usuaria pueda navegar y acceder intuitivamente a las diferentes secciones de un sitio." />
           <p className="lead mb-4">
             Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-            <a href="https://gcba.github.io/estandares/componentes/encabezado/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://gcba.github.io/estandares/componentes/encabezado/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               enlace
-            </a>.
+            </a>
+            .
           </p>
         </>
       ),
@@ -39,21 +57,19 @@ const HeaderDocs: React.FC = () => {
                   </a>
                   <div className="container header-container">
                     <a href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image 
-                        className="header-logo" 
-                        src={`${basePath}/images/BA.svg`} 
-                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio" 
+                      <Image
+                        className="header-logo"
+                        src={`${basePath}/images/BA.svg`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
                         width={76}
-                        height={48}>
-                      </Image>
+                        height={48}
+                      ></Image>
                     </a>
                     <div className="navbar-login-mobile">
-                      <a
-                        className="btn btn-lg btn-icon btn-outline-link"
-                        href="#"
-                        target="_blank"
-                      >
-                        <span className="material-symbols-rounded" aria-hidden="true">person</span>
+                      <a className="btn btn-lg btn-icon btn-outline-link" href="#" target="_blank">
+                        <span className="material-symbols-rounded" aria-hidden="true">
+                          person
+                        </span>
                         <span className="btn-text">Ingresar</span>
                       </a>
                     </div>
@@ -105,7 +121,9 @@ const HeaderDocs: React.FC = () => {
                                   </a>
                                   <a className="dropdown-item item-link" href="#">
                                     <span className="item-text">Navegación</span>
-                                    <span className="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                                    <span className="material-symbols-rounded" aria-hidden="true">
+                                      arrow_forward
+                                    </span>
                                   </a>
                                 </div>
                               </li>
@@ -147,7 +165,9 @@ const HeaderDocs: React.FC = () => {
                                   </a>
                                   <a className="dropdown-item item-link" href="#">
                                     <span className="item-text">Navegación</span>
-                                    <span className="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                                    <span className="material-symbols-rounded" aria-hidden="true">
+                                      arrow_forward
+                                    </span>
                                   </a>
                                 </div>
                               </li>
@@ -156,21 +176,26 @@ const HeaderDocs: React.FC = () => {
                         </div>
                         <div className="navbar-search">
                           <form className="form-search">
-                            <label htmlFor="header-search" className="form-label sr-only">Buscador</label>
-                            <div className='search-container'>
-                              <input type="search" className="form-control input-search input-search-with-button" id="header-search" placeholder="Buscador" />
+                            <label htmlFor="header-search" className="form-label sr-only">
+                              Buscador
+                            </label>
+                            <div className="search-container">
+                              <input
+                                type="search"
+                                className="form-control input-search input-search-with-button"
+                                id="header-search"
+                                placeholder="Buscador"
+                              />
                               <button className="reset" type="reset" aria-label="Borrar"></button>
                               <button className="button-search" type="submit" aria-label="Buscar"></button>
                             </div>
                           </form>
                         </div>
                         <div className="navbar-login">
-                          <a
-                            className="btn btn-lg btn-outline-link"
-                            href="#"
-                            target="_blank"
-                          >
-                            <span className="material-symbols-rounded" aria-hidden="true">person</span>
+                          <a className="btn btn-lg btn-outline-link" href="#" target="_blank">
+                            <span className="material-symbols-rounded" aria-hidden="true">
+                              person
+                            </span>
                             <span className="btn-text">Ingresar</span>
                           </a>
                         </div>
@@ -192,21 +217,19 @@ const HeaderDocs: React.FC = () => {
                   </a>
                   <div className="container header-container">
                     <a href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image 
-                        className="header-logo" 
-                        src={`${basePath}/images/BA.svg`} 
-                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio" 
+                      <Image
+                        className="header-logo"
+                        src={`${basePath}/images/BA.svg`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
                         width={76}
-                        height={48}>
-                      </Image>
+                        height={48}
+                      ></Image>
                     </a>
                     <div className="navbar-login-mobile">
-                      <a
-                        className="btn btn-lg btn-icon btn-outline-link"
-                        href="#"
-                        target="_blank"
-                      >
-                        <span className="material-symbols-rounded" aria-hidden="true">person</span>
+                      <a className="btn btn-lg btn-icon btn-outline-link" href="#" target="_blank">
+                        <span className="material-symbols-rounded" aria-hidden="true">
+                          person
+                        </span>
                         <span className="btn-text">Ingresar</span>
                       </a>
                     </div>
@@ -258,7 +281,9 @@ const HeaderDocs: React.FC = () => {
                                   </a>
                                   <a className="dropdown-item item-link" href="#">
                                     <span className="item-text">Navegación</span>
-                                    <span className="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                                    <span className="material-symbols-rounded" aria-hidden="true">
+                                      arrow_forward
+                                    </span>
                                   </a>
                                 </div>
                               </li>
@@ -300,7 +325,9 @@ const HeaderDocs: React.FC = () => {
                                   </a>
                                   <a className="dropdown-item item-link" href="#">
                                     <span className="item-text">Navegación</span>
-                                    <span className="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                                    <span className="material-symbols-rounded" aria-hidden="true">
+                                      arrow_forward
+                                    </span>
                                   </a>
                                 </div>
                               </li>
@@ -308,12 +335,10 @@ const HeaderDocs: React.FC = () => {
                           </nav>
                         </div>
                         <div className="navbar-login">
-                          <a
-                            className="btn btn-lg btn-outline-link"
-                            href="#"
-                            target="_blank"
-                          >
-                            <span className="material-symbols-rounded" aria-hidden="true">person</span>
+                          <a className="btn btn-lg btn-outline-link" href="#" target="_blank">
+                            <span className="material-symbols-rounded" aria-hidden="true">
+                              person
+                            </span>
                             <span className="btn-text">Ingresar</span>
                           </a>
                         </div>
@@ -342,21 +367,19 @@ const HeaderDocs: React.FC = () => {
                   </a>
                   <div className="container header-container">
                     <a href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image 
-                        className="header-logo" 
-                        src={`${basePath}/images/BA.svg`} 
-                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio" 
+                      <Image
+                        className="header-logo"
+                        src={`${basePath}/images/BA.svg`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
                         width={76}
-                        height={48}>
-                      </Image>
+                        height={48}
+                      ></Image>
                     </a>
                     <div className="navbar-login-mobile">
-                      <a
-                        className="btn btn-lg btn-icon btn-outline-link"
-                        href="#"
-                        target="_blank"
-                      >
-                        <span className="material-symbols-rounded" aria-hidden="true">person</span>
+                      <a className="btn btn-lg btn-icon btn-outline-link" href="#" target="_blank">
+                        <span className="material-symbols-rounded" aria-hidden="true">
+                          person
+                        </span>
                         <span className="btn-text">Ingresar</span>
                       </a>
                     </div>
@@ -373,21 +396,26 @@ const HeaderDocs: React.FC = () => {
                       <div className="navbar-content">
                         <div className="navbar-search">
                           <form className="form-search">
-                            <label htmlFor="header-search" className="form-label sr-only">Buscador</label>
-                            <div className='search-container'>
-                              <input type="search" className="form-control input-search input-search-with-button" id="header-search" placeholder="Buscador" />
+                            <label htmlFor="header-search" className="form-label sr-only">
+                              Buscador
+                            </label>
+                            <div className="search-container">
+                              <input
+                                type="search"
+                                className="form-control input-search input-search-with-button"
+                                id="header-search"
+                                placeholder="Buscador"
+                              />
                               <button className="reset" type="reset" aria-label="Borrar"></button>
                               <button className="button-search" type="submit" aria-label="Buscar"></button>
                             </div>
                           </form>
                         </div>
                         <div className="navbar-login">
-                          <a
-                            className="btn btn-lg btn-outline-link"
-                            href="#"
-                            target="_blank"
-                          >
-                            <span className="material-symbols-rounded" aria-hidden="true">person</span>
+                          <a className="btn btn-lg btn-outline-link" href="#" target="_blank">
+                            <span className="material-symbols-rounded" aria-hidden="true">
+                              person
+                            </span>
                             <span className="btn-text">Ingresar</span>
                           </a>
                         </div>
@@ -429,7 +457,9 @@ const HeaderDocs: React.FC = () => {
                                 </a>
                                 <a className="dropdown-item item-link" href="#">
                                   <span className="item-text">Navegación</span>
-                                  <span className="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                                  <span className="material-symbols-rounded" aria-hidden="true">
+                                    arrow_forward
+                                  </span>
                                 </a>
                               </div>
                             </li>
@@ -471,7 +501,9 @@ const HeaderDocs: React.FC = () => {
                                 </a>
                                 <a className="dropdown-item item-link" href="#">
                                   <span className="item-text">Navegación</span>
-                                  <span className="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                                  <span className="material-symbols-rounded" aria-hidden="true">
+                                    arrow_forward
+                                  </span>
                                 </a>
                               </div>
                             </li>
@@ -515,21 +547,19 @@ const HeaderDocs: React.FC = () => {
                   </a>
                   <div className="container header-container">
                     <a href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image 
-                        className="header-logo" 
-                        src={`${basePath}/images/BA.svg`} 
-                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio" 
+                      <Image
+                        className="header-logo"
+                        src={`${basePath}/images/BA.svg`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
                         width={76}
-                        height={48}>
-                      </Image>
+                        height={48}
+                      ></Image>
                     </a>
                     <div className="navbar-login-mobile">
-                      <a
-                        className="btn btn-lg btn-icon btn-outline-link"
-                        href="#"
-                        target="_blank"
-                      >
-                        <span className="material-symbols-rounded" aria-hidden="true">person</span>
+                      <a className="btn btn-lg btn-icon btn-outline-link" href="#" target="_blank">
+                        <span className="material-symbols-rounded" aria-hidden="true">
+                          person
+                        </span>
                         <span className="btn-text">Ingresar</span>
                       </a>
                     </div>
@@ -545,12 +575,10 @@ const HeaderDocs: React.FC = () => {
                     <div className="collapse navbar-collapse" id="navbarContent6">
                       <div className="navbar-content">
                         <div className="navbar-login">
-                          <a
-                            className="btn btn-lg btn-outline-link"
-                            href="#"
-                            target="_blank"
-                          >
-                            <span className="material-symbols-rounded" aria-hidden="true">person</span>
+                          <a className="btn btn-lg btn-outline-link" href="#" target="_blank">
+                            <span className="material-symbols-rounded" aria-hidden="true">
+                              person
+                            </span>
                             <span className="btn-text">Ingresar</span>
                           </a>
                         </div>
@@ -592,7 +620,9 @@ const HeaderDocs: React.FC = () => {
                                 </a>
                                 <a className="dropdown-item item-link" href="#">
                                   <span className="item-text">Navegación</span>
-                                  <span className="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                                  <span className="material-symbols-rounded" aria-hidden="true">
+                                    arrow_forward
+                                  </span>
                                 </a>
                               </div>
                             </li>
@@ -634,7 +664,9 @@ const HeaderDocs: React.FC = () => {
                                 </a>
                                 <a className="dropdown-item item-link" href="#">
                                   <span className="item-text">Navegación</span>
-                                  <span className="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                                  <span className="material-symbols-rounded" aria-hidden="true">
+                                    arrow_forward
+                                  </span>
                                 </a>
                               </div>
                             </li>
@@ -685,13 +717,13 @@ const HeaderDocs: React.FC = () => {
                   </a>
                   <div className="container header-container">
                     <a href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image 
-                        className="header-logo" 
-                        src={`${basePath}/images/BA.svg`} 
-                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio" 
+                      <Image
+                        className="header-logo"
+                        src={`${basePath}/images/BA.svg`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
                         width={76}
-                        height={48}>
-                      </Image>
+                        height={48}
+                      ></Image>
                     </a>
                     <button
                       className="navbar-toggler"
@@ -741,7 +773,9 @@ const HeaderDocs: React.FC = () => {
                                   </a>
                                   <a className="dropdown-item item-link" href="#">
                                     <span className="item-text">Navegación</span>
-                                    <span className="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                                    <span className="material-symbols-rounded" aria-hidden="true">
+                                      arrow_forward
+                                    </span>
                                   </a>
                                 </div>
                               </li>
@@ -783,7 +817,9 @@ const HeaderDocs: React.FC = () => {
                                   </a>
                                   <a className="dropdown-item item-link" href="#">
                                     <span className="item-text">Navegación</span>
-                                    <span className="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                                    <span className="material-symbols-rounded" aria-hidden="true">
+                                      arrow_forward
+                                    </span>
                                   </a>
                                 </div>
                               </li>
@@ -792,9 +828,16 @@ const HeaderDocs: React.FC = () => {
                         </div>
                         <div className="navbar-search">
                           <form className="form-search">
-                            <label htmlFor="header-search" className="form-label sr-only">Buscador</label>
-                            <div className='search-container'>
-                              <input type="search" className="form-control input-search input-search-with-button" id="header-search" placeholder="Buscador" />
+                            <label htmlFor="header-search" className="form-label sr-only">
+                              Buscador
+                            </label>
+                            <div className="search-container">
+                              <input
+                                type="search"
+                                className="form-control input-search input-search-with-button"
+                                id="header-search"
+                                placeholder="Buscador"
+                              />
                               <button className="reset" type="reset" aria-label="Borrar"></button>
                               <button className="button-search" type="submit" aria-label="Buscar"></button>
                             </div>
@@ -802,21 +845,36 @@ const HeaderDocs: React.FC = () => {
                         </div>
                         <div className="navbar-user">
                           <div className="dropdown dropdown-lg">
-                            <button type="button" className="btn btn-dropdown btn-dropdown-border notification" data-bs-toggle="dropdown"  aria-expanded="false">
-                              <span className="material-symbols-rounded" aria-hidden="true">person</span>
+                            <button
+                              type="button"
+                              className="btn btn-dropdown btn-dropdown-border notification"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span className="material-symbols-rounded" aria-hidden="true">
+                                person
+                              </span>
                               <span className="btn-dropdown-text ellipsis-1">Perfil</span>
                             </button>
                             <div className="dropdown-menu dropdown-menu-end">
-                              <a className="dropdown-item" href="#"><span className="item-text">Navegación 1</span></a>
-                              <a className="dropdown-item" href="#"><span className="item-text">Navegación 2</span></a>
-                              <a className="dropdown-item" href="#"><span className="item-text">Navegación 3</span></a>
+                              <a className="dropdown-item" href="#">
+                                <span className="item-text">Navegación 1</span>
+                              </a>
+                              <a className="dropdown-item" href="#">
+                                <span className="item-text">Navegación 2</span>
+                              </a>
+                              <a className="dropdown-item" href="#">
+                                <span className="item-text">Navegación 3</span>
+                              </a>
                               <a className="dropdown-item" href="#">
                                 <span className="item-text">Notificaciones</span>
                                 <span className="item-notifications"></span>
                               </a>
                               <a className="dropdown-item item-danger" href="#">
                                 <span className="item-text">Cerrar sesión</span>
-                                <span className="material-symbols-rounded" aria-hidden="true">logout</span>
+                                <span className="material-symbols-rounded" aria-hidden="true">
+                                  logout
+                                </span>
                               </a>
                             </div>
                           </div>
@@ -826,18 +884,36 @@ const HeaderDocs: React.FC = () => {
                         <nav>
                           <p className="navbar-user-mobile-title">Perfil</p>
                           <ul className="nav flex-column nav-pills nav-user">
-                            <li className="nav-item"><a className="nav-link nav-link-lg" href="#"><span>Navegación 1</span></a></li>
-                            <li className="nav-item"><a className="nav-link nav-link-lg" href="#"><span>Navegación 2</span></a></li>
-                            <li className="nav-item"><a className="nav-link nav-link-lg" href="#"><span>Navegación 3</span></a></li>
-                            <li className="nav-item"><a className="nav-link nav-link-lg" href="#">
-                              <span>Notificaciones</span>
-                              <span className="item-notifications"></span></a>
+                            <li className="nav-item">
+                              <a className="nav-link nav-link-lg" href="#">
+                                <span>Navegación 1</span>
+                              </a>
                             </li>
-                            <li className="nav-item"><a className="nav-link nav-link-danger nav-link-lg" href="#">
-                              <div className="nav-icon">
-                                <span className="material-symbols-rounded" aria-hidden="true">logout</span>
-                                <span>Cerrar sesión</span>
-                              </div></a>
+                            <li className="nav-item">
+                              <a className="nav-link nav-link-lg" href="#">
+                                <span>Navegación 2</span>
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a className="nav-link nav-link-lg" href="#">
+                                <span>Navegación 3</span>
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a className="nav-link nav-link-lg" href="#">
+                                <span>Notificaciones</span>
+                                <span className="item-notifications"></span>
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a className="nav-link nav-link-danger nav-link-lg" href="#">
+                                <div className="nav-icon">
+                                  <span className="material-symbols-rounded" aria-hidden="true">
+                                    logout
+                                  </span>
+                                  <span>Cerrar sesión</span>
+                                </div>
+                              </a>
                             </li>
                           </ul>
                         </nav>
@@ -859,13 +935,13 @@ const HeaderDocs: React.FC = () => {
                   </a>
                   <div className="container header-container">
                     <a href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image 
-                        className="header-logo" 
-                        src={`${basePath}/images/BA.svg`} 
-                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio" 
+                      <Image
+                        className="header-logo"
+                        src={`${basePath}/images/BA.svg`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
                         width={76}
-                        height={48}>
-                      </Image>
+                        height={48}
+                      ></Image>
                     </a>
                     <button
                       className="navbar-toggler"
@@ -915,7 +991,9 @@ const HeaderDocs: React.FC = () => {
                                   </a>
                                   <a className="dropdown-item item-link" href="#">
                                     <span className="item-text">Navegación</span>
-                                    <span className="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                                    <span className="material-symbols-rounded" aria-hidden="true">
+                                      arrow_forward
+                                    </span>
                                   </a>
                                 </div>
                               </li>
@@ -957,7 +1035,9 @@ const HeaderDocs: React.FC = () => {
                                   </a>
                                   <a className="dropdown-item item-link" href="#">
                                     <span className="item-text">Navegación</span>
-                                    <span className="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                                    <span className="material-symbols-rounded" aria-hidden="true">
+                                      arrow_forward
+                                    </span>
                                   </a>
                                 </div>
                               </li>
@@ -966,21 +1046,36 @@ const HeaderDocs: React.FC = () => {
                         </div>
                         <div className="navbar-user">
                           <div className="dropdown dropdown-lg">
-                            <button type="button" className="btn btn-dropdown btn-dropdown-border notification" data-bs-toggle="dropdown"  aria-expanded="false">
-                              <span className="material-symbols-rounded" aria-hidden="true">person</span>
+                            <button
+                              type="button"
+                              className="btn btn-dropdown btn-dropdown-border notification"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span className="material-symbols-rounded" aria-hidden="true">
+                                person
+                              </span>
                               <span className="btn-dropdown-text ellipsis-1">Perfil</span>
                             </button>
                             <div className="dropdown-menu dropdown-menu-end">
-                              <a className="dropdown-item" href="#"><span className="item-text">Navegación 1</span></a>
-                              <a className="dropdown-item" href="#"><span className="item-text">Navegación 2</span></a>
-                              <a className="dropdown-item" href="#"><span className="item-text">Navegación 3</span></a>
+                              <a className="dropdown-item" href="#">
+                                <span className="item-text">Navegación 1</span>
+                              </a>
+                              <a className="dropdown-item" href="#">
+                                <span className="item-text">Navegación 2</span>
+                              </a>
+                              <a className="dropdown-item" href="#">
+                                <span className="item-text">Navegación 3</span>
+                              </a>
                               <a className="dropdown-item" href="#">
                                 <span className="item-text">Notificaciones</span>
                                 <span className="item-notifications"></span>
                               </a>
                               <a className="dropdown-item item-danger" href="#">
                                 <span className="item-text">Cerrar sesión</span>
-                                <span className="material-symbols-rounded" aria-hidden="true">logout</span>
+                                <span className="material-symbols-rounded" aria-hidden="true">
+                                  logout
+                                </span>
                               </a>
                             </div>
                           </div>
@@ -990,18 +1085,36 @@ const HeaderDocs: React.FC = () => {
                         <nav>
                           <p className="navbar-user-mobile-title">Perfil</p>
                           <ul className="nav flex-column nav-pills nav-user">
-                            <li className="nav-item"><a className="nav-link nav-link-lg" href="#"><span>Navegación 1</span></a></li>
-                            <li className="nav-item"><a className="nav-link nav-link-lg" href="#"><span>Navegación 2</span></a></li>
-                            <li className="nav-item"><a className="nav-link nav-link-lg" href="#"><span>Navegación 3</span></a></li>
-                            <li className="nav-item"><a className="nav-link nav-link-lg" href="#">
-                              <span>Notificaciones</span>
-                              <span className="item-notifications"></span></a>
+                            <li className="nav-item">
+                              <a className="nav-link nav-link-lg" href="#">
+                                <span>Navegación 1</span>
+                              </a>
                             </li>
-                            <li className="nav-item"><a className="nav-link nav-link-danger nav-link-lg" href="#">
-                              <div className="nav-icon">
-                                <span className="material-symbols-rounded" aria-hidden="true">logout</span>
-                                <span>Cerrar sesión</span>
-                              </div></a>
+                            <li className="nav-item">
+                              <a className="nav-link nav-link-lg" href="#">
+                                <span>Navegación 2</span>
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a className="nav-link nav-link-lg" href="#">
+                                <span>Navegación 3</span>
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a className="nav-link nav-link-lg" href="#">
+                                <span>Notificaciones</span>
+                                <span className="item-notifications"></span>
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a className="nav-link nav-link-danger nav-link-lg" href="#">
+                                <div className="nav-icon">
+                                  <span className="material-symbols-rounded" aria-hidden="true">
+                                    logout
+                                  </span>
+                                  <span>Cerrar sesión</span>
+                                </div>
+                              </a>
                             </li>
                           </ul>
                         </nav>
@@ -1030,13 +1143,13 @@ const HeaderDocs: React.FC = () => {
                   </a>
                   <div className="container header-container">
                     <a href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image 
-                        className="header-logo" 
-                        src={`${basePath}/images/BA.svg`} 
-                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio" 
+                      <Image
+                        className="header-logo"
+                        src={`${basePath}/images/BA.svg`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
                         width={76}
-                        height={48}>
-                      </Image>
+                        height={48}
+                      ></Image>
                     </a>
                     <button
                       className="navbar-toggler"
@@ -1051,9 +1164,16 @@ const HeaderDocs: React.FC = () => {
                       <div className="navbar-content">
                         <div className="navbar-search">
                           <form className="form-search">
-                            <label htmlFor="header-search" className="form-label sr-only">Buscador</label>
-                            <div className='search-container'>
-                              <input type="search" className="form-control input-search input-search-with-button" id="header-search" placeholder="Buscador" />
+                            <label htmlFor="header-search" className="form-label sr-only">
+                              Buscador
+                            </label>
+                            <div className="search-container">
+                              <input
+                                type="search"
+                                className="form-control input-search input-search-with-button"
+                                id="header-search"
+                                placeholder="Buscador"
+                              />
                               <button className="reset" type="reset" aria-label="Borrar"></button>
                               <button className="button-search" type="submit" aria-label="Buscar"></button>
                             </div>
@@ -1061,21 +1181,36 @@ const HeaderDocs: React.FC = () => {
                         </div>
                         <div className="navbar-user">
                           <div className="dropdown dropdown-lg">
-                            <button type="button" className="btn btn-dropdown btn-dropdown-border notification" data-bs-toggle="dropdown"  aria-expanded="false">
-                              <span className="material-symbols-rounded" aria-hidden="true">person</span>
+                            <button
+                              type="button"
+                              className="btn btn-dropdown btn-dropdown-border notification"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span className="material-symbols-rounded" aria-hidden="true">
+                                person
+                              </span>
                               <span className="btn-dropdown-text ellipsis-1">Perfil</span>
                             </button>
                             <div className="dropdown-menu dropdown-menu-end">
-                              <a className="dropdown-item" href="#"><span className="item-text">Navegación 1</span></a>
-                              <a className="dropdown-item" href="#"><span className="item-text">Navegación 2</span></a>
-                              <a className="dropdown-item" href="#"><span className="item-text">Navegación 3</span></a>
+                              <a className="dropdown-item" href="#">
+                                <span className="item-text">Navegación 1</span>
+                              </a>
+                              <a className="dropdown-item" href="#">
+                                <span className="item-text">Navegación 2</span>
+                              </a>
+                              <a className="dropdown-item" href="#">
+                                <span className="item-text">Navegación 3</span>
+                              </a>
                               <a className="dropdown-item" href="#">
                                 <span className="item-text">Notificaciones</span>
                                 <span className="item-notifications"></span>
                               </a>
                               <a className="dropdown-item item-danger" href="#">
                                 <span className="item-text">Cerrar sesión</span>
-                                <span className="material-symbols-rounded" aria-hidden="true">logout</span>
+                                <span className="material-symbols-rounded" aria-hidden="true">
+                                  logout
+                                </span>
                               </a>
                             </div>
                           </div>
@@ -1118,7 +1253,9 @@ const HeaderDocs: React.FC = () => {
                                 </a>
                                 <a className="dropdown-item item-link" href="#">
                                   <span className="item-text">Navegación</span>
-                                  <span className="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                                  <span className="material-symbols-rounded" aria-hidden="true">
+                                    arrow_forward
+                                  </span>
                                 </a>
                               </div>
                             </li>
@@ -1160,7 +1297,9 @@ const HeaderDocs: React.FC = () => {
                                 </a>
                                 <a className="dropdown-item item-link" href="#">
                                   <span className="item-text">Navegación</span>
-                                  <span className="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                                  <span className="material-symbols-rounded" aria-hidden="true">
+                                    arrow_forward
+                                  </span>
                                 </a>
                               </div>
                             </li>
@@ -1191,18 +1330,36 @@ const HeaderDocs: React.FC = () => {
                         <nav>
                           <p className="navbar-user-mobile-title">Perfil</p>
                           <ul className="nav flex-column nav-pills nav-user">
-                            <li className="nav-item"><a className="nav-link nav-link-lg" href="#"><span>Navegación 1</span></a></li>
-                            <li className="nav-item"><a className="nav-link nav-link-lg" href="#"><span>Navegación 2</span></a></li>
-                            <li className="nav-item"><a className="nav-link nav-link-lg" href="#"><span>Navegación 3</span></a></li>
-                            <li className="nav-item"><a className="nav-link nav-link-lg" href="#">
-                              <span>Notificaciones</span>
-                              <span className="item-notifications"></span></a>
+                            <li className="nav-item">
+                              <a className="nav-link nav-link-lg" href="#">
+                                <span>Navegación 1</span>
+                              </a>
                             </li>
-                            <li className="nav-item"><a className="nav-link nav-link-danger nav-link-lg" href="#">
-                              <div className="nav-icon">
-                                <span className="material-symbols-rounded" aria-hidden="true">logout</span>
-                                <span>Cerrar sesión</span>
-                              </div></a>
+                            <li className="nav-item">
+                              <a className="nav-link nav-link-lg" href="#">
+                                <span>Navegación 2</span>
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a className="nav-link nav-link-lg" href="#">
+                                <span>Navegación 3</span>
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a className="nav-link nav-link-lg" href="#">
+                                <span>Notificaciones</span>
+                                <span className="item-notifications"></span>
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a className="nav-link nav-link-danger nav-link-lg" href="#">
+                                <div className="nav-icon">
+                                  <span className="material-symbols-rounded" aria-hidden="true">
+                                    logout
+                                  </span>
+                                  <span>Cerrar sesión</span>
+                                </div>
+                              </a>
                             </li>
                           </ul>
                         </nav>
@@ -1224,13 +1381,13 @@ const HeaderDocs: React.FC = () => {
                   </a>
                   <div className="container header-container">
                     <a href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image 
-                        className="header-logo" 
-                        src={`${basePath}/images/BA.svg`} 
-                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio" 
+                      <Image
+                        className="header-logo"
+                        src={`${basePath}/images/BA.svg`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
                         width={76}
-                        height={48}>
-                      </Image>
+                        height={48}
+                      ></Image>
                     </a>
                     <button
                       className="navbar-toggler"
@@ -1245,21 +1402,36 @@ const HeaderDocs: React.FC = () => {
                       <div className="navbar-content">
                         <div className="navbar-user">
                           <div className="dropdown dropdown-lg">
-                            <button type="button" className="btn btn-dropdown btn-dropdown-border notification" data-bs-toggle="dropdown"  aria-expanded="false">
-                              <span className="material-symbols-rounded" aria-hidden="true">person</span>
+                            <button
+                              type="button"
+                              className="btn btn-dropdown btn-dropdown-border notification"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span className="material-symbols-rounded" aria-hidden="true">
+                                person
+                              </span>
                               <span className="btn-dropdown-text ellipsis-1">Perfil</span>
                             </button>
                             <div className="dropdown-menu dropdown-menu-end">
-                              <a className="dropdown-item" href="#"><span className="item-text">Navegación 1</span></a>
-                              <a className="dropdown-item" href="#"><span className="item-text">Navegación 2</span></a>
-                              <a className="dropdown-item" href="#"><span className="item-text">Navegación 3</span></a>
+                              <a className="dropdown-item" href="#">
+                                <span className="item-text">Navegación 1</span>
+                              </a>
+                              <a className="dropdown-item" href="#">
+                                <span className="item-text">Navegación 2</span>
+                              </a>
+                              <a className="dropdown-item" href="#">
+                                <span className="item-text">Navegación 3</span>
+                              </a>
                               <a className="dropdown-item" href="#">
                                 <span className="item-text">Notificaciones</span>
                                 <span className="item-notifications"></span>
                               </a>
                               <a className="dropdown-item item-danger" href="#">
                                 <span className="item-text">Cerrar sesión</span>
-                                <span className="material-symbols-rounded" aria-hidden="true">logout</span>
+                                <span className="material-symbols-rounded" aria-hidden="true">
+                                  logout
+                                </span>
                               </a>
                             </div>
                           </div>
@@ -1302,7 +1474,9 @@ const HeaderDocs: React.FC = () => {
                                 </a>
                                 <a className="dropdown-item item-link" href="#">
                                   <span className="item-text">Navegación</span>
-                                  <span className="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                                  <span className="material-symbols-rounded" aria-hidden="true">
+                                    arrow_forward
+                                  </span>
                                 </a>
                               </div>
                             </li>
@@ -1344,7 +1518,9 @@ const HeaderDocs: React.FC = () => {
                                 </a>
                                 <a className="dropdown-item item-link" href="#">
                                   <span className="item-text">Navegación</span>
-                                  <span className="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                                  <span className="material-symbols-rounded" aria-hidden="true">
+                                    arrow_forward
+                                  </span>
                                 </a>
                               </div>
                             </li>
@@ -1375,18 +1551,36 @@ const HeaderDocs: React.FC = () => {
                         <nav>
                           <p className="navbar-user-mobile-title">Perfil</p>
                           <ul className="nav flex-column nav-pills nav-user">
-                            <li className="nav-item"><a className="nav-link nav-link-lg" href="#"><span>Navegación 1</span></a></li>
-                            <li className="nav-item"><a className="nav-link nav-link-lg" href="#"><span>Navegación 2</span></a></li>
-                            <li className="nav-item"><a className="nav-link nav-link-lg" href="#"><span>Navegación 3</span></a></li>
-                            <li className="nav-item"><a className="nav-link nav-link-lg" href="#">
-                              <span>Notificaciones</span>
-                              <span className="item-notifications"></span></a>
+                            <li className="nav-item">
+                              <a className="nav-link nav-link-lg" href="#">
+                                <span>Navegación 1</span>
+                              </a>
                             </li>
-                            <li className="nav-item"><a className="nav-link nav-link-danger nav-link-lg" href="#">
-                              <div className="nav-icon">
-                                <span className="material-symbols-rounded" aria-hidden="true">logout</span>
-                                <span>Cerrar sesión</span>
-                              </div></a>
+                            <li className="nav-item">
+                              <a className="nav-link nav-link-lg" href="#">
+                                <span>Navegación 2</span>
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a className="nav-link nav-link-lg" href="#">
+                                <span>Navegación 3</span>
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a className="nav-link nav-link-lg" href="#">
+                                <span>Notificaciones</span>
+                                <span className="item-notifications"></span>
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <a className="nav-link nav-link-danger nav-link-lg" href="#">
+                                <div className="nav-icon">
+                                  <span className="material-symbols-rounded" aria-hidden="true">
+                                    logout
+                                  </span>
+                                  <span>Cerrar sesión</span>
+                                </div>
+                              </a>
                             </li>
                           </ul>
                         </nav>
@@ -1415,13 +1609,13 @@ const HeaderDocs: React.FC = () => {
                   </a>
                   <div className="container header-container">
                     <a href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image 
-                        className="header-logo" 
-                        src={`${basePath}/images/BA.svg`} 
-                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio" 
+                      <Image
+                        className="header-logo"
+                        src={`${basePath}/images/BA.svg`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
                         width={76}
-                        height={48}>
-                      </Image>
+                        height={48}
+                      ></Image>
                     </a>
                     <button
                       className="navbar-toggler"
@@ -1471,7 +1665,9 @@ const HeaderDocs: React.FC = () => {
                                   </a>
                                   <a className="dropdown-item item-link" href="#">
                                     <span className="item-text">Navegación</span>
-                                    <span className="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                                    <span className="material-symbols-rounded" aria-hidden="true">
+                                      arrow_forward
+                                    </span>
                                   </a>
                                 </div>
                               </li>
@@ -1513,7 +1709,9 @@ const HeaderDocs: React.FC = () => {
                                   </a>
                                   <a className="dropdown-item item-link" href="#">
                                     <span className="item-text">Navegación</span>
-                                    <span className="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                                    <span className="material-symbols-rounded" aria-hidden="true">
+                                      arrow_forward
+                                    </span>
                                   </a>
                                 </div>
                               </li>
@@ -1522,9 +1720,16 @@ const HeaderDocs: React.FC = () => {
                         </div>
                         <div className="navbar-search">
                           <form className="form-search">
-                            <label htmlFor="header-search" className="form-label sr-only">Buscador</label>
-                            <div className='search-container'>
-                              <input type="search" className="form-control input-search input-search-with-button" id="header-search" placeholder="Buscador" />
+                            <label htmlFor="header-search" className="form-label sr-only">
+                              Buscador
+                            </label>
+                            <div className="search-container">
+                              <input
+                                type="search"
+                                className="form-control input-search input-search-with-button"
+                                id="header-search"
+                                placeholder="Buscador"
+                              />
                               <button className="reset" type="reset" aria-label="Borrar"></button>
                               <button className="button-search" type="submit" aria-label="Buscar"></button>
                             </div>
@@ -1548,13 +1753,13 @@ const HeaderDocs: React.FC = () => {
                   </a>
                   <div className="container header-container">
                     <a href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image 
-                        className="header-logo" 
-                        src={`${basePath}/images/BA.svg`} 
-                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio" 
+                      <Image
+                        className="header-logo"
+                        src={`${basePath}/images/BA.svg`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
                         width={76}
-                        height={48}>
-                      </Image>
+                        height={48}
+                      ></Image>
                     </a>
                     <button
                       className="navbar-toggler"
@@ -1604,7 +1809,9 @@ const HeaderDocs: React.FC = () => {
                                   </a>
                                   <a className="dropdown-item item-link" href="#">
                                     <span className="item-text">Navegación</span>
-                                    <span className="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                                    <span className="material-symbols-rounded" aria-hidden="true">
+                                      arrow_forward
+                                    </span>
                                   </a>
                                 </div>
                               </li>
@@ -1646,7 +1853,9 @@ const HeaderDocs: React.FC = () => {
                                   </a>
                                   <a className="dropdown-item item-link" href="#">
                                     <span className="item-text">Navegación</span>
-                                    <span className="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                                    <span className="material-symbols-rounded" aria-hidden="true">
+                                      arrow_forward
+                                    </span>
                                   </a>
                                 </div>
                               </li>
@@ -1678,33 +1887,29 @@ const HeaderDocs: React.FC = () => {
                   </a>
                   <div className="container header-container">
                     <a href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image 
-                        className="header-logo" 
-                        src={`${basePath}/images/BA.svg`} 
-                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio" 
+                      <Image
+                        className="header-logo"
+                        src={`${basePath}/images/BA.svg`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
                         width={76}
-                        height={48}>
-                      </Image>
+                        height={48}
+                      ></Image>
                     </a>
                     <div className="navbar-login-mobile">
-                      <a
-                        className="btn btn-lg btn-icon btn-outline-link"
-                        href="#"
-                        target="_blank"
-                      >
-                        <span className="material-symbols-rounded" aria-hidden="true">person</span>
+                      <a className="btn btn-lg btn-icon btn-outline-link" href="#" target="_blank">
+                        <span className="material-symbols-rounded" aria-hidden="true">
+                          person
+                        </span>
                         <span className="btn-text">Ingresar</span>
                       </a>
                     </div>
                     <div className="collapse navbar-collapse">
                       <div className="navbar-content">
                         <div className="navbar-login">
-                          <a
-                            className="btn btn-lg btn-outline-link"
-                            href="#"
-                            target="_blank"
-                          >
-                            <span className="material-symbols-rounded" aria-hidden="true">person</span>
+                          <a className="btn btn-lg btn-outline-link" href="#" target="_blank">
+                            <span className="material-symbols-rounded" aria-hidden="true">
+                              person
+                            </span>
                             <span className="btn-text">Ingresar</span>
                           </a>
                         </div>
@@ -1733,13 +1938,13 @@ const HeaderDocs: React.FC = () => {
                   </a>
                   <div className="container header-container">
                     <a href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image 
-                        className="header-logo" 
-                        src={`${basePath}/images/BA.svg`} 
-                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio" 
+                      <Image
+                        className="header-logo"
+                        src={`${basePath}/images/BA.svg`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
                         width={76}
-                        height={48}>
-                      </Image>
+                        height={48}
+                      ></Image>
                     </a>
                     <button
                       className="navbar-toggler"
@@ -1754,9 +1959,16 @@ const HeaderDocs: React.FC = () => {
                       <div className="navbar-content">
                         <div className="navbar-search">
                           <form className="form-search">
-                            <label htmlFor="header-search" className="form-label sr-only">Buscador</label>
-                            <div className='search-container'>
-                              <input type="search" className="form-control input-search input-search-with-button" id="header-search" placeholder="Buscador" />
+                            <label htmlFor="header-search" className="form-label sr-only">
+                              Buscador
+                            </label>
+                            <div className="search-container">
+                              <input
+                                type="search"
+                                className="form-control input-search input-search-with-button"
+                                id="header-search"
+                                placeholder="Buscador"
+                              />
                               <button className="reset" type="reset" aria-label="Borrar"></button>
                               <button className="button-search" type="submit" aria-label="Buscar"></button>
                             </div>
@@ -1787,13 +1999,13 @@ const HeaderDocs: React.FC = () => {
                   </a>
                   <div className="container header-container">
                     <a href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image 
-                        className="header-logo" 
-                        src={`${basePath}/images/BA.svg`} 
-                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio" 
+                      <Image
+                        className="header-logo"
+                        src={`${basePath}/images/BA.svg`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
                         width={76}
-                        height={48}>
-                      </Image>
+                        height={48}
+                      ></Image>
                     </a>
                   </div>
                   <div className="header-backdrop"></div>

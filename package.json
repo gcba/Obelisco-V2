@@ -1,18 +1,17 @@
 {
   "name": "@gcba/obelisco-v2",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "",
   "private": false,
   "main": "dist/styles.css",
   "files": [
-    "dist/",
-    "static/"
+    "dist/"
   ],
   "scripts": {
     "i-app": "cd app && npm install",
     "start": "concurrently \"npm run watch-css\" \"cd app && npm run dev\"",
     "watch-css": "nodemon --watch src/styles --ext scss --exec \"npm run build-css\"",
-    "build-css": "sass src/styles/main.scss dist/styles.css",
+    "build-css": "sass src/styles/main.scss dist/styles.css && sass src/styles/main.scss app/styles/styles.css",
     "build": "npm run build-css",
     "build-versioned": "node build-css-versioned.js",
     "prettier:check-library": "prettier --check \"src/**/*.scss\"",

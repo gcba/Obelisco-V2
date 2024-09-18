@@ -38,16 +38,16 @@ npm update @gcba/obelisco-v2
 
 ```sh
 
-<link href="https://gcba.github.io/Obelisco/obelisco.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gcba/Obelisco-v2@main/dist/styles.css">
 
 ```
 
-## importación
+## Importación
 
 Importar los estilos en el archivo principal del proyecto:
 
 ```sh
-import 'obelisco-v2/dist/styles.css';
+@import "@gcba/obelisco-v2/dist/styles.css";
 o
 <link rel="stylesheet" href="ruta/al/proyecto/dist/styles.css">
 ```
@@ -76,7 +76,7 @@ Material Symbols con npm o CDN:
 
 ```sh
 npm install material-symbols@latest
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0"/>
 ```
 
 ### Javascript
@@ -98,6 +98,6 @@ En la wiki del repositorio está toda la información necesaria para entender c�
 
 El mantenimiento y desarrollo de Obelisco lo hace el equipo de la Dirección General de Canales Digitales, pero lo utilizan tanto equipos de gobierno como proveedores externos.
 
-Para agilizar y hacer más transparente el proceso, cualquier persona puede contribuir de varias formas.
+Para agilizar y hacer más transparente el proceso, cualquier persona puede contribuir de varias formas o contactar al equipo Obelisco.
 
 Mail de contacto: equipoobelisco@buenosaires.gob.ar

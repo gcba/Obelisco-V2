@@ -2,7 +2,7 @@
 // @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded');
 @import url('../../node_modules/boxicons/css/boxicons.min.css');
-@import '../../../dist/styles.css';
+@import '../../styles/styles.css';
 
 // Generic Styles
 html {
@@ -50,17 +50,21 @@ hr {
   .nav-scrollspy {
     position: relative;
     min-width: 150px;
+    width: 150px;
 
     .scrollspy {
       list-style: none;
       top: 140px;
       right: 0;
       background-color: transparent;
-      padding: 0 0 0 2rem;
+      padding: 0 5px 5px 1rem;
       position: sticky;
       display: flex;
       flex-direction: column;
       gap: 0.3rem;
+      max-height: 70dvh;
+      overflow-y: auto;
+      scrollbar-width: thin;
 
       li a {
         font-weight: 600;
@@ -104,7 +108,7 @@ hr {
     }
   }
   .box-content section:last-child {
-    min-height: calc(100vh - 83px);
+    min-height: calc(70vh - 83px);
   }
 }
 
@@ -163,7 +167,7 @@ hr {
 }
 
 .color-box {
-  width: 192px;
+  width: 250px;
   height: 72px;
   border-radius: 0.5rem;
   text-align: center;
@@ -179,13 +183,28 @@ hr {
   position: sticky;
   top: 132px;
   overflow-y: scroll;
-  height: 75dvh;
+  height: 76dvh;
+  scrollbar-width: thin;
 
   nav {
     padding: 0.3rem;
     margin-bottom: 1.5rem;
   }
+
+  &.h-auto {
+    overflow-y: unset;
+  }
 }
 .box-content {
   width: 100%;
+  overflow-x: hidden;
+}
+//Listas en documentacion
+.docs-list {
+  li:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+  code {
+    font-size: 1rem;
+  }
 }

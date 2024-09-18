@@ -21,14 +21,27 @@ const TabsDocs: React.FC = () => {
       title: 'Pestañas',
       h1: true,
       content: (
-        <MainDescription description="Las pestañas se utilizan para organizar el contenido relacionado. Permiten a la persona usuaria navegar entre grupos de información que aparecen dentro de un mismo contexto, mostrando una sección por vez." />
+        <>
+          <MainDescription description="Las pestañas se utilizan para organizar el contenido relacionado. Permiten a la persona usuaria navegar entre grupos de información que aparecen dentro de un mismo contexto, mostrando una sección por vez." />
+          <p className="lead mb-4">
+            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
+            <a
+              href="https://gcba.github.io/estandares/componentes/navegacion/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              enlace
+            </a>
+            .
+          </p>
+        </>
       ),
     },
     {
       id: 'section-1',
       title: 'Simple',
       content: (
-        <div className="col-12 max-720">
+        <>
           <CodeBox codeHTML={TABS_SIMPLE}>
             <div className="container">
               <nav className="tabs-box" aria-label="Navegación por pestañas">
@@ -109,14 +122,14 @@ const TabsDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-        </div>
+        </>
       ),
     },
     {
       id: 'section-2',
       title: 'Con icono',
       content: (
-        <div className="col-12 max-720">
+        <>
           <CodeBox codeHTML={TABS_SIMPLE_ICON}>
             <div className="container">
               <nav className="tabs-box" aria-label="Navegación por pestañas">
@@ -221,14 +234,14 @@ const TabsDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-        </div>
+        </>
       ),
     },
     {
       id: 'section-3',
       title: 'Ancho fijo',
       content: (
-        <div className="col-12 max-720">
+        <>
           <CodeBox codeHTML={TABS_FIXED_WIDTH}>
             <div className="container">
               <nav className="tabs-box" aria-label="Navegación por pestañas">
@@ -333,14 +346,14 @@ const TabsDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-        </div>
+        </>
       ),
     },
     {
       id: 'section-4',
       title: 'Con contenedor',
       content: (
-        <div className="col-12 max-720">
+        <>
           <CodeBox codeHTML={TABS_CONTAINER}>
             <div className="container">
               <nav className="tabs-box" aria-label="Navegación por pestañas">
@@ -445,14 +458,14 @@ const TabsDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-        </div>
+        </>
       ),
     },
     {
       id: 'section-5',
       title: 'Con color de fondo',
       content: (
-        <div className="col-12 max-720">
+        <>
           <CodeBox codeHTML={TABS_WITH_BOX}>
             <div className="container bg-light py-4">
               <nav className="tabs-box" aria-label="Navegación por pestañas">
@@ -557,14 +570,14 @@ const TabsDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-        </div>
+        </>
       ),
     },
     {
       id: 'section-6',
       title: 'Desplazable',
       content: (
-        <div className="col-12 max-720">
+        <>
           <CodeBox codeHTML={TABS_SLIDER}>
             <div className="container">
               <nav className="tabs-box" aria-label="Navegación por pestañas">
@@ -809,14 +822,14 @@ const TabsDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-        </div>
+        </>
       ),
     },
     {
       id: 'section-7',
       title: 'Desplazable con contenedor',
       content: (
-        <div className="col-12 max-720">
+        <>
           <CodeBox codeHTML={TABS_SLIDER_CONTAINER}>
             <div className="container">
               <nav className="tabs-box" aria-label="Navegación por pestañas">
@@ -1061,7 +1074,7 @@ const TabsDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-        </div>
+        </>
       ),
     },
     {

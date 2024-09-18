@@ -10,7 +10,15 @@ const LinkDocs: React.FC = () => {
       title: 'Enlaces',
       h1: true,
       content: (
-        <MainDescription description="Los enlaces son hipervínculos que la persona usuaria utiliza para navegar contenidos en un sitio web. Pueden dirigir tanto a información y recursos dentro de una misma página o sitio web, como también a páginas externas." />
+        <>
+          <MainDescription description="Los enlaces son hipervínculos que la persona usuaria utiliza para navegar contenidos en un sitio web. Pueden dirigir tanto a información y recursos dentro de una misma página o sitio web, como también a páginas externas." />
+          <p className="lead mb-4">
+            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
+            <a href="https://gcba.github.io/estandares/componentes/enlaces/" target="_blank" rel="noopener noreferrer">
+              enlace.
+            </a>
+          </p>
+        </>
       ),
     },
 

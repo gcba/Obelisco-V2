@@ -208,6 +208,7 @@ const HeaderDocs: React.FC = () => {
             </div>
           </CodeBox>
           <br />
+          <p>También está disponible la variante sin buscador:</p>
           <CodeBox codeHTML={HEADER_LOGIN_ONE_LINE}>
             <div className="container">
               <div className="header-box-sizing">
@@ -538,6 +539,7 @@ const HeaderDocs: React.FC = () => {
             </div>
           </CodeBox>
           <br />
+          <p>También está disponible la variante sin buscador:</p>
           <CodeBox codeHTML={HEADER_LOGIN_TWO_LINES}>
             <div className="container">
               <div className="header-box-sizing">
@@ -926,6 +928,7 @@ const HeaderDocs: React.FC = () => {
             </div>
           </CodeBox>
           <br />
+          <p>También está disponible la variante sin buscador:</p>
           <CodeBox codeHTML={HEADER_LOGIN_TWO_LINES}>
             <div className="container">
               <div className="header-box-sizing">
@@ -1372,6 +1375,7 @@ const HeaderDocs: React.FC = () => {
             </div>
           </CodeBox>
           <br />
+          <p>También está disponible la variante sin buscador:</p>
           <CodeBox codeHTML={HEADER_TWO_LINES}>
             <div className="container">
               <div className="header-box-sizing">
@@ -1744,6 +1748,7 @@ const HeaderDocs: React.FC = () => {
             </div>
           </CodeBox>
           <br />
+          <p>También está disponible la variante sin buscador:</p>
           <CodeBox codeHTML={HEADER_NO_LOGIN}>
             <div className="container">
               <div className="header-box-sizing">

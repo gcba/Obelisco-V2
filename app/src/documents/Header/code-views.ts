@@ -1529,6 +1529,65 @@ export const HEADER_ONLY_LOGIN = `
     <div class="header-backdrop"></div>
 </header>
 `;
+export const HEADER_ONLY_LOGIN_SEARCH = `
+<header className="o-header navbar" role="banner">
+    <a href="#main" className="skip-to-main-content-link">
+    Saltar al contenido principal
+    </a>
+    <div className="container header-container">
+    <a href="https://buenosaires.gob.ar" className="navbar-brand">
+        <img class="header-logo" src="/Obelisco-V2/images/BA.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+    </a>
+    <div className="navbar-login-mobile">
+        <a className="btn btn-lg btn-icon btn-outline-link" href="#" target="_blank">
+        <span className="material-symbols-rounded" aria-hidden="true">
+            person
+        </span>
+        <span className="btn-text">Ingresar</span>
+        </a>
+    </div>
+    <button
+        className="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarContent12"
+        aria-controls="navbarContent12"
+        aria-expanded="false"
+        aria-label="Menú"
+    ></button>
+    <div className="collapse navbar-collapse" id="navbarContent12">
+        <div className="navbar-content">
+        <div className="navbar-search">
+            <form className="form-search">
+            <label htmlFor="header-search" className="form-label sr-only">
+                Buscador
+            </label>
+            <div className="search-container">
+                <input
+                type="search"
+                className="form-control input-search input-search-with-button"
+                id="header-search"
+                placeholder="Buscador"
+                />
+                <button className="reset" type="reset" aria-label="Borrar"></button>
+                <button className="button-search" type="submit" aria-label="Buscar"></button>
+            </div>
+            </form>
+        </div>
+        <div className="navbar-login">
+            <a className="btn btn-lg btn-outline-link" href="#" target="_blank">
+            <span className="material-symbols-rounded" aria-hidden="true">
+                person
+            </span>
+            <span className="btn-text">Ingresar</span>
+            </a>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div className="header-backdrop"></div>
+</header>
+`;
 export const HEADER_ONLY_SEARCH = `
 <header class="o-header navbar" role="banner">
     <a href="#main" class="skip-to-main-content-link">

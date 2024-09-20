@@ -277,17 +277,17 @@ const ButtonDocs: React.FC = () => {
                   edit
                 </span>
               </button>
-              <button type="button" className="btn btn-xs" aria-label="Editar">
+              <button type="button" className="btn btn-xs" aria-label="Eliminar">
                 <i className="bx bxs-trash-alt o-icon"></i>
               </button>
-              <a href="#" className="btn btn-xs" aria-label="Editar" tabIndex={0}>
+              <button type="button" className="btn btn-xs" aria-label="Visualizar">
                 <span className="material-symbols-rounded o-icon" aria-hidden="true">
                   visibility
                 </span>
-              </a>
-              <a href="#" className="btn btn-xs" aria-label="Editar" tabIndex={0}>
+              </button>
+              <button type="button" className="btn btn-xs" aria-label="Descargar">
                 <i className="bx bxs-download o-icon"></i>
-              </a>
+              </button>
             </div>
           </CodeBox>
           <br />

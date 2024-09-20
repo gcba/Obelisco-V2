@@ -194,7 +194,9 @@ const CollapseDocs: React.FC = () => {
                   aria-expanded="false"
                   aria-controls="collapseHeaderIcon"
                 >
-                  <i className="bx bxs-user-circle o-icon"></i>
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                    topic
+                  </span>
                   <span className="collapse-title">Título</span>
                 </button>
                 <div id="collapseHeaderIcon" className="accordion-collapse collapse">
@@ -224,7 +226,9 @@ const CollapseDocs: React.FC = () => {
                   aria-expanded="false"
                   aria-controls="collapseHeader"
                 >
-                  <i className="bx bxs-user-circle o-icon"></i>
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                    topic
+                  </span>
                   <span className="collapse-label">Volanta</span>
                   <span className="collapse-title">Título</span>
                   <span className="collapse-subtitle">Descripción</span>
@@ -257,7 +261,7 @@ const CollapseDocs: React.FC = () => {
                   aria-controls="collapseHeaderWhite"
                 >
                   <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                    account_circle
+                    topic
                   </span>
                   <span className="collapse-label">Volanta</span>
                   <span className="collapse-title">Título</span>

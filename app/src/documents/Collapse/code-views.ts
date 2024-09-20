@@ -125,7 +125,7 @@ export const COLLAPSE_ICON = `
             aria-expanded="false" 
             aria-controls="collapseHeaderIcon"
         >
-            <i class="bx bxs-user-circle o-icon"></i>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">topic</span>
             <span class="collapse-title">Título</span>
         </button>
         <div id="collapseHeaderIcon" class="accordion-collapse collapse">
@@ -147,7 +147,7 @@ export const COLLAPSE_ICON_LABEL = `
             aria-expanded="false" 
             aria-controls="collapseHeader"
         >
-            <i class="bx bxs-user-circle o-icon"></i>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">topic</span>
             <span class="collapse-label">Volanta</span>
             <span class="collapse-title">Título</span>
             <span class="collapse-subtitle">Descripción</span>
@@ -171,7 +171,7 @@ export const COLLAPSE_WHITE = `
             aria-expanded="false" 
             aria-controls="collapseHeaderWhite"
         >
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">account_circle</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">topic</span>
             <span class="collapse-label">Volanta</span>
             <span class="collapse-title">Título</span>
             <span class="collapse-subtitle">Descripción</span>

@@ -42,12 +42,15 @@ const ButtonDocs: React.FC = () => {
       content: (
         <>
           <CodeBox codeHTML={BUTTON_SOLID}>
-            <div className="d-flex gap-3 justify-content-center flex-wrap">
+            <div className="d-flex gap-3 justify-content-center flex-wrap px-2">
               <button type="button" className="btn btn-primary">
                 Primario
               </button>
               <button type="button" className="btn btn-secondary">
                 Secundario
+              </button>
+              <button type="button" className="btn btn-tertiary">
+                Terciario
               </button>
               <button type="button" className="btn btn-success">
                 Éxito
@@ -55,28 +58,25 @@ const ButtonDocs: React.FC = () => {
               <button type="button" className="btn btn-danger">
                 Error
               </button>
-              <button type="button" className="btn btn-link">
-                Link
-              </button>
             </div>
           </CodeBox>
           <br />
           <CodeBox codeHTML={BUTTON_OUTLINE}>
-            <div className="d-flex gap-3 justify-content-center flex-wrap">
+            <div className="d-flex gap-3 justify-content-center flex-wrap px-2">
               <button type="button" className="btn btn-outline-primary">
                 Primario
               </button>
               <button type="button" className="btn btn-outline-secondary">
                 Secundario
               </button>
+              <button type="button" className="btn btn-outline-tertiary">
+                Terciario
+              </button>
               <button type="button" className="btn btn-outline-success">
                 Éxito
               </button>
               <button type="button" className="btn btn-outline-danger">
                 Error
-              </button>
-              <button type="button" className="btn btn-outline-link">
-                Link
               </button>
             </div>
           </CodeBox>
@@ -86,7 +86,7 @@ const ButtonDocs: React.FC = () => {
             utilizarse las clases correspondientes de botones.
           </p>
           <CodeBox codeHTML={BUTTON_ANCHOR}>
-            <div className="d-flex gap-3 justify-content-center flex-wrap">
+            <div className="d-flex gap-3 justify-content-center flex-wrap px-2">
               <a className="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer">
                 Enlace
               </a>
@@ -104,7 +104,7 @@ const ButtonDocs: React.FC = () => {
       content: (
         <>
           <CodeBox codeHTML={BUTTON_SIZES}>
-            <div className="d-flex gap-3 flex-wrap justify-content-center align-items-center">
+            <div className="d-flex gap-3 flex-wrap justify-content-center align-items-center px-2">
               <div>
                 <button type="button" className="btn btn-primary btn-sm">
                   Chico
@@ -131,7 +131,7 @@ const ButtonDocs: React.FC = () => {
       content: (
         <>
           <CodeBox codeHTML={BUTTON_DISABLED}>
-            <div className="d-flex gap-3 flex-wrap justify-content-center align-items-center">
+            <div className="d-flex gap-3 flex-wrap justify-content-center align-items-center px-2">
               <div>
                 <button type="button" className="btn btn-primary btn-sm" disabled>
                   Chico
@@ -158,10 +158,14 @@ const ButtonDocs: React.FC = () => {
       content: (
         <>
           <CodeBox codeHTML={BUTTON_BLOCK}>
-            <div className="col-12 col-lg-6 mx-auto">
-              <button type="button" className="btn btn-primary btn-block">
-                Botón Expandible
-              </button>
+            <div className="container">
+              <div className="row">
+                <div className="col-12 col-lg-6 mx-auto">
+                  <button type="button" className="btn btn-primary btn-block">
+                    Botón Expandible
+                  </button>
+                </div>
+              </div>
             </div>
           </CodeBox>
         </>
@@ -173,7 +177,7 @@ const ButtonDocs: React.FC = () => {
       content: (
         <>
           <CodeBox codeHTML={BUTTON_ICON}>
-            <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center">
+            <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center px-2">
               <button type="button" className="btn btn-primary">
                 <i className="bx bxs-info-circle o-icon"></i>
                 Botón
@@ -194,7 +198,7 @@ const ButtonDocs: React.FC = () => {
       content: (
         <>
           <CodeBox codeHTML={BUTTON_SPINNER}>
-            <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center">
+            <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center px-2">
               <button type="button" className="btn btn-primary">
                 <div className="spinner-border text-light spinner-border-sm" role="status">
                   <span className="sr-only">Cargando...</span>
@@ -203,6 +207,12 @@ const ButtonDocs: React.FC = () => {
               </button>
               <button type="button" className="btn btn-secondary">
                 <div className="spinner-border text-light spinner-border-sm" role="status">
+                  <span className="sr-only">Cargando...</span>
+                </div>
+                Botón
+              </button>
+              <button type="button" className="btn btn-tertiary">
+                <div className="spinner-border text-info spinner-border-sm" role="status">
                   <span className="sr-only">Cargando...</span>
                 </div>
                 Botón
@@ -219,17 +229,11 @@ const ButtonDocs: React.FC = () => {
                 </div>
                 Botón
               </button>
-              <button type="button" className="btn btn-link">
-                <div className="spinner-border text-info spinner-border-sm" role="status">
-                  <span className="sr-only">Cargando...</span>
-                </div>
-                Botón
-              </button>
             </div>
           </CodeBox>
           <br />
           <CodeBox codeHTML={BUTTON_OUTLINE_SPINNER}>
-            <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center">
+            <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center px-2">
               <button type="button" className="btn btn-outline-primary">
                 <div className="spinner-border text-primary spinner-border-sm" role="status">
                   <span className="sr-only">Cargando...</span>
@@ -238,6 +242,12 @@ const ButtonDocs: React.FC = () => {
               </button>
               <button type="button" className="btn btn-outline-secondary">
                 <div className="spinner-border text-secondary spinner-border-sm" role="status">
+                  <span className="sr-only">Cargando...</span>
+                </div>
+                Botón
+              </button>
+              <button type="button" className="btn btn-outline-tertiary">
+                <div className="spinner-border text-info spinner-border-sm" role="status">
                   <span className="sr-only">Cargando...</span>
                 </div>
                 Botón
@@ -254,12 +264,6 @@ const ButtonDocs: React.FC = () => {
                 </div>
                 Botón
               </button>
-              <button type="button" className="btn btn-outline-link">
-                <div className="spinner-border text-info spinner-border-sm" role="status">
-                  <span className="sr-only">Cargando...</span>
-                </div>
-                Botón
-              </button>
             </div>
           </CodeBox>
         </>
@@ -271,7 +275,7 @@ const ButtonDocs: React.FC = () => {
       content: (
         <>
           <CodeBox codeHTML={BUTTON_ICON_XS}>
-            <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center">
+            <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center px-2">
               <button type="button" className="btn btn-xs" aria-label="Editar">
                 <span className="material-symbols-rounded o-icon" aria-hidden="true">
                   edit

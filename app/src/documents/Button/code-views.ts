@@ -1,16 +1,16 @@
 export const BUTTON_SOLID = `
 <button type="button" class="btn btn-primary">Primario</button>
 <button type="button" class="btn btn-secondary">Secundario</button>
+<button type="button" class="btn btn-tertiary">Terciario</button>
 <button type="button" class="btn btn-success">Éxito</button>
 <button type="button" class="btn btn-danger">Error</button>
-<button type="button" class="btn btn-link">Link</button>
 `;
 export const BUTTON_OUTLINE = `
 <button type="button" class="btn btn-outline-primary">Primario</button>
 <button type="button" class="btn btn-outline-secondary">Secundario</button>
+<button type="button" class="btn btn-outline-tertiary">Terciario</button>
 <button type="button" class="btn btn-outline-success">Éxito</button>
 <button type="button" class="btn btn-outline-danger">Error</button>
-<button type="button" class="btn btn-outline-link">Link</button>
 `;
 export const BUTTON_ANCHOR = `
 <a class="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer">
@@ -60,6 +60,12 @@ export const BUTTON_SPINNER = `
   </div>
   Botón
 </button>
+<button type="button" class="btn btn-tertiary">
+  <div class="spinner-border text-info spinner-border-sm" role="status">
+    <span class="sr-only">Cargando...</span>
+  </div>
+  Botón
+</button>
 <button type="button" class="btn btn-success">
   <div class="spinner-border text-light spinner-border-sm" role="status">
     <span class="sr-only">Cargando...</span>
@@ -68,12 +74,6 @@ export const BUTTON_SPINNER = `
 </button>
 <button type="button" class="btn btn-danger">
   <div class="spinner-border text-light spinner-border-sm" role="status">
-    <span class="sr-only">Cargando...</span>
-  </div>
-  Botón
-</button>
-<button type="button" class="btn btn-link">
-  <div class="spinner-border text-info spinner-border-sm" role="status">
     <span class="sr-only">Cargando...</span>
   </div>
   Botón
@@ -92,6 +92,12 @@ export const BUTTON_OUTLINE_SPINNER = `
   </div>
   Botón
 </button>
+<button type="button" class="btn btn-outline-tertiary">
+  <div class="spinner-border text-info spinner-border-sm" role="status">
+    <span class="sr-only">Cargando...</span>
+  </div>
+  Botón
+</button>
 <button type="button" class="btn btn-outline-success">
   <div class="spinner-border text-success spinner-border-sm" role="status">
     <span class="sr-only">Cargando...</span>
@@ -100,12 +106,6 @@ export const BUTTON_OUTLINE_SPINNER = `
 </button>
 <button type="button" class="btn btn-outline-danger">
   <div class="spinner-border text-danger spinner-border-sm" role="status">
-    <span class="sr-only">Cargando...</span>
-  </div>
-  Botón
-</button>
-<button type="button" class="btn btn-outline-link">
-  <div class="spinner-border text-info spinner-border-sm" role="status">
     <span class="sr-only">Cargando...</span>
   </div>
   Botón

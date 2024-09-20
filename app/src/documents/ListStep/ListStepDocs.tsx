@@ -4,13 +4,11 @@ import MainDescription from '@/components/Template/MainDescription';
 
 import {
   LIST_STEP_LARGE,
-  LIST_STEP_LARGE_BORDER,
   LIST_STEP_MEDIUM,
   LIST_STEP_MEDIUM_BORDER,
   LIST_STEP_MEDIUM_NUMBER,
   LIST_STEP_MEDIUM_NUMBER_BORDER,
   LIST_STEP_SMALL,
-  LIST_STEP_SMALL_BORDER,
 } from './code-views';
 
 const ListStepDocs: React.FC = () => {
@@ -38,264 +36,230 @@ const ListStepDocs: React.FC = () => {
     {
       id: 'section-1',
       title: 'Tamaños',
-      content: (
-        <>
-          <p className="headline-md">Grande</p>
-          <CodeBox codeHTML={LIST_STEP_LARGE}>
-            <div className="container">
-              <ul className="list-steps list-steps-lg">
-                <li className="list-steps-item">
-                  <h3 className="list-steps-item-title">Instrucción 1</h3>
-                  <p>
-                    En esta descripción de la instrucción 1 se muestran los detalles principales de las acciones que
-                    deberá tomar el usuario luego. En esta descripción de la instrucción 1 se muestran los detalles
-                    principales de las acciones que deberá tomar el usuario luego.
-                  </p>
-                </li>
-                <li className="list-steps-item">
-                  <h3 className="list-steps-item-title">Instrucción 2</h3>
-                  <p>
-                    En esta descripción de la instrucción 2 se muestran los detalles principales de las acciones que
-                    deberá tomar el usuario luego. En esta descripción de la instrucción 2 se muestran los detalles
-                    principales de las acciones que deberá tomar el usuario luego.
-                  </p>
-                </li>
-                <li className="list-steps-item">
-                  <h3 className="list-steps-item-title">Instrucción 3</h3>
-                  <p>
-                    En esta descripción de la instrucción 3 se muestran los detalles principales de las acciones que
-                    deberá tomar el usuario luego. En esta descripción de la instrucción 3 se muestran los detalles
-                    principales de las acciones que deberá tomar el usuario luego.
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </CodeBox>
-          <br />
-          <br />
-          <p className="headline-md">Mediano</p>
-          <CodeBox codeHTML={LIST_STEP_MEDIUM}>
-            <div className="container">
-              <ul className="list-steps">
-                <li className="list-steps-item">
-                  <h3 className="list-steps-item-title">Instrucción 1</h3>
-                  <p>
-                    En esta descripción de la instrucción 1 se muestran los detalles principales de las acciones que
-                    deberá tomar el usuario luego.
-                  </p>
-                </li>
-                <li className="list-steps-item">
-                  <h3 className="list-steps-item-title">Instrucción 2</h3>
-                  <p>
-                    En esta descripción de la instrucción 2 se muestran los detalles principales de las acciones que
-                    deberá tomar el usuario luego.
-                  </p>
-                </li>
-                <li className="list-steps-item">
-                  <h3 className="list-steps-item-title">Instrucción 3</h3>
-                  <p>
-                    En esta descripción de la instrucción 3 se muestran los detalles principales de las acciones que
-                    deberá tomar el usuario luego.
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </CodeBox>
-          <br />
-          <br />
-          <p className="headline-md">Chico</p>
-          <CodeBox codeHTML={LIST_STEP_SMALL}>
-            <div className="container">
-              <ul className="list-steps list-steps-sm">
-                <li className="list-steps-item">
-                  <h3 className="list-steps-item-title">Instrucción 1</h3>
-                  <p>
-                    En esta descripción de la instrucción 1 se muestran los detalles principales de las acciones que
-                    deberá tomar el usuario luego.
-                  </p>
-                </li>
-                <li className="list-steps-item">
-                  <h3 className="list-steps-item-title">Instrucción 2</h3>
-                  <p>
-                    En esta descripción de la instrucción 2 se muestran los detalles principales de las acciones que
-                    deberá tomar el usuario luego.
-                  </p>
-                </li>
-                <li className="list-steps-item">
-                  <h3 className="list-steps-item-title">Instrucción 3</h3>
-                  <p>
-                    En esta descripción de la instrucción 3 se muestran los detalles principales de las acciones que
-                    deberá tomar el usuario luego.
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </CodeBox>
-        </>
-      ),
     },
     {
       id: 'section-2',
-      title: 'Con borde',
+      title: (
+        <div className="d-flex gap-1 align-items-center">
+          <span className="material-symbols-rounded" style={{ fontSize: '14px' }} aria-hidden="true">
+            arrow_right_alt
+          </span>{' '}
+          Grande
+        </div>
+      ),
+      h3: true,
       content: (
-        <>
-          <p className="headline-md">Grande</p>
-          <CodeBox codeHTML={LIST_STEP_LARGE_BORDER}>
-            <div className="container">
-              <ul className="list-steps list-steps-lg list-steps-light">
-                <li className="list-steps-item">
-                  <h3 className="list-steps-item-title">Instrucción 1</h3>
-                  <p>
-                    En esta descripción de la instrucción 1 se muestran los detalles principales de las acciones que
-                    deberá tomar el usuario luego. En esta descripción de la instrucción 1 se muestran los detalles
-                    principales de las acciones que deberá tomar el usuario luego.
-                  </p>
-                </li>
-                <li className="list-steps-item">
-                  <h3 className="list-steps-item-title">Instrucción 2</h3>
-                  <p>
-                    En esta descripción de la instrucción 2 se muestran los detalles principales de las acciones que
-                    deberá tomar el usuario luego. En esta descripción de la instrucción 2 se muestran los detalles
-                    principales de las acciones que deberá tomar el usuario luego.
-                  </p>
-                </li>
-                <li className="list-steps-item">
-                  <h3 className="list-steps-item-title">Instrucción 3</h3>
-                  <p>
-                    En esta descripción de la instrucción 3 se muestran los detalles principales de las acciones que
-                    deberá tomar el usuario luego. En esta descripción de la instrucción 3 se muestran los detalles
-                    principales de las acciones que deberá tomar el usuario luego.
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </CodeBox>
-          <br />
-          <br />
-          <p className="headline-md">Mediano</p>
-          <CodeBox codeHTML={LIST_STEP_MEDIUM_BORDER}>
-            <div className="container">
-              <ul className="list-steps list-steps-light">
-                <li className="list-steps-item">
-                  <h3 className="list-steps-item-title">Instrucción 1</h3>
-                  <p>
-                    En esta descripción de la instrucción 1 se muestran los detalles principales de las acciones que
-                    deberá tomar el usuario luego.
-                  </p>
-                </li>
-                <li className="list-steps-item">
-                  <h3 className="list-steps-item-title">Instrucción 2</h3>
-                  <p>
-                    En esta descripción de la instrucción 2 se muestran los detalles principales de las acciones que
-                    deberá tomar el usuario luego.
-                  </p>
-                </li>
-                <li className="list-steps-item">
-                  <h3 className="list-steps-item-title">Instrucción 3</h3>
-                  <p>
-                    En esta descripción de la instrucción 3 se muestran los detalles principales de las acciones que
-                    deberá tomar el usuario luego.
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </CodeBox>
-          <br />
-          <br />
-          <p className="headline-md">Chico</p>
-          <CodeBox codeHTML={LIST_STEP_SMALL_BORDER}>
-            <div className="container">
-              <ul className="list-steps list-steps-sm list-steps-light">
-                <li className="list-steps-item">
-                  <h3 className="list-steps-item-title">Instrucción 1</h3>
-                  <p>
-                    En esta descripción de la instrucción 1 se muestran los detalles principales de las acciones que
-                    deberá tomar el usuario luego.
-                  </p>
-                </li>
-                <li className="list-steps-item">
-                  <h3 className="list-steps-item-title">Instrucción 2</h3>
-                  <p>
-                    En esta descripción de la instrucción 2 se muestran los detalles principales de las acciones que
-                    deberá tomar el usuario luego.
-                  </p>
-                </li>
-                <li className="list-steps-item">
-                  <h3 className="list-steps-item-title">Instrucción 3</h3>
-                  <p>
-                    En esta descripción de la instrucción 3 se muestran los detalles principales de las acciones que
-                    deberá tomar el usuario luego.
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </CodeBox>
-        </>
+        <CodeBox codeHTML={LIST_STEP_LARGE}>
+          <div className="container">
+            <ul className="list-steps list-steps-lg">
+              <li className="list-steps-item">
+                <h3 className="list-steps-item-title">Instrucción 1</h3>
+                <p>
+                  En esta descripción de la instrucción 1 se muestran los detalles principales de las acciones que
+                  deberá tomar el usuario luego. En esta descripción de la instrucción 1 se muestran los detalles
+                  principales de las acciones que deberá tomar el usuario luego.
+                </p>
+              </li>
+              <li className="list-steps-item">
+                <h3 className="list-steps-item-title">Instrucción 2</h3>
+                <p>
+                  En esta descripción de la instrucción 2 se muestran los detalles principales de las acciones que
+                  deberá tomar el usuario luego. En esta descripción de la instrucción 2 se muestran los detalles
+                  principales de las acciones que deberá tomar el usuario luego.
+                </p>
+              </li>
+              <li className="list-steps-item">
+                <h3 className="list-steps-item-title">Instrucción 3</h3>
+                <p>
+                  En esta descripción de la instrucción 3 se muestran los detalles principales de las acciones que
+                  deberá tomar el usuario luego. En esta descripción de la instrucción 3 se muestran los detalles
+                  principales de las acciones que deberá tomar el usuario luego.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </CodeBox>
       ),
     },
     {
       id: 'section-3',
+      title: (
+        <div className="d-flex gap-1 align-items-center">
+          <span className="material-symbols-rounded" style={{ fontSize: '14px' }} aria-hidden="true">
+            arrow_right_alt
+          </span>{' '}
+          Mediano
+        </div>
+      ),
+      h3: true,
+      content: (
+        <CodeBox codeHTML={LIST_STEP_MEDIUM}>
+          <div className="container">
+            <ul className="list-steps">
+              <li className="list-steps-item">
+                <h3 className="list-steps-item-title">Instrucción 1</h3>
+                <p>
+                  En esta descripción de la instrucción 1 se muestran los detalles principales de las acciones que
+                  deberá tomar el usuario luego.
+                </p>
+              </li>
+              <li className="list-steps-item">
+                <h3 className="list-steps-item-title">Instrucción 2</h3>
+                <p>
+                  En esta descripción de la instrucción 2 se muestran los detalles principales de las acciones que
+                  deberá tomar el usuario luego.
+                </p>
+              </li>
+              <li className="list-steps-item">
+                <h3 className="list-steps-item-title">Instrucción 3</h3>
+                <p>
+                  En esta descripción de la instrucción 3 se muestran los detalles principales de las acciones que
+                  deberá tomar el usuario luego.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </CodeBox>
+      ),
+    },
+    {
+      id: 'section-4',
+      title: (
+        <div className="d-flex gap-1 align-items-center">
+          <span className="material-symbols-rounded" style={{ fontSize: '14px' }} aria-hidden="true">
+            arrow_right_alt
+          </span>{' '}
+          Chico
+        </div>
+      ),
+      h3: true,
+      content: (
+        <CodeBox codeHTML={LIST_STEP_SMALL}>
+          <div className="container">
+            <ul className="list-steps list-steps-sm">
+              <li className="list-steps-item">
+                <h3 className="list-steps-item-title">Instrucción 1</h3>
+                <p>
+                  En esta descripción de la instrucción 1 se muestran los detalles principales de las acciones que
+                  deberá tomar el usuario luego.
+                </p>
+              </li>
+              <li className="list-steps-item">
+                <h3 className="list-steps-item-title">Instrucción 2</h3>
+                <p>
+                  En esta descripción de la instrucción 2 se muestran los detalles principales de las acciones que
+                  deberá tomar el usuario luego.
+                </p>
+              </li>
+              <li className="list-steps-item">
+                <h3 className="list-steps-item-title">Instrucción 3</h3>
+                <p>
+                  En esta descripción de la instrucción 3 se muestran los detalles principales de las acciones que
+                  deberá tomar el usuario luego.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </CodeBox>
+      ),
+    },
+    {
+      id: 'section-5',
+      title: 'Con borde',
+      content: (
+        <CodeBox codeHTML={LIST_STEP_MEDIUM_BORDER}>
+          <div className="container">
+            <ul className="list-steps list-steps-light">
+              <li className="list-steps-item">
+                <h3 className="list-steps-item-title">Instrucción 1</h3>
+                <p>
+                  En esta descripción de la instrucción 1 se muestran los detalles principales de las acciones que
+                  deberá tomar el usuario luego.
+                </p>
+              </li>
+              <li className="list-steps-item">
+                <h3 className="list-steps-item-title">Instrucción 2</h3>
+                <p>
+                  En esta descripción de la instrucción 2 se muestran los detalles principales de las acciones que
+                  deberá tomar el usuario luego.
+                </p>
+              </li>
+              <li className="list-steps-item">
+                <h3 className="list-steps-item-title">Instrucción 3</h3>
+                <p>
+                  En esta descripción de la instrucción 3 se muestran los detalles principales de las acciones que
+                  deberá tomar el usuario luego.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </CodeBox>
+      ),
+    },
+    {
+      id: 'section-6',
       title: 'Con número',
       content: (
-        <>
-          <CodeBox codeHTML={LIST_STEP_MEDIUM_NUMBER}>
-            <div className="container">
-              <ul className="list-steps list-steps-numbers">
-                <li className="list-steps-item">
-                  <h3 className="list-steps-item-title">Instrucción 1</h3>
-                  <p>
-                    En esta descripción de la instrucción 1 se muestran los detalles principales de las acciones que
-                    deberá tomar el usuario luego.
-                  </p>
-                </li>
-                <li className="list-steps-item">
-                  <h3 className="list-steps-item-title">Instrucción 2</h3>
-                  <p>
-                    En esta descripción de la instrucción 2 se muestran los detalles principales de las acciones que
-                    deberá tomar el usuario luego.
-                  </p>
-                </li>
-                <li className="list-steps-item">
-                  <h3 className="list-steps-item-title">Instrucción 3</h3>
-                  <p>
-                    En esta descripción de la instrucción 3 se muestran los detalles principales de las acciones que
-                    deberá tomar el usuario luego.
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </CodeBox>
-          <br />
-          <br />
-          <p className="headline-md">Con borde</p>
-          <CodeBox codeHTML={LIST_STEP_MEDIUM_NUMBER_BORDER}>
-            <div className="container">
-              <ul className="list-steps list-steps-numbers list-steps-light">
-                <li className="list-steps-item">
-                  <h3 className="list-steps-item-title">Instrucción 1</h3>
-                  <p>
-                    En esta descripción de la instrucción 1 se muestran los detalles principales de las acciones que
-                    deberá tomar el usuario luego.
-                  </p>
-                </li>
-                <li className="list-steps-item">
-                  <h3 className="list-steps-item-title">Instrucción 2</h3>
-                  <p>
-                    En esta descripción de la instrucción 2 se muestran los detalles principales de las acciones que
-                    deberá tomar el usuario luego.
-                  </p>
-                </li>
-                <li className="list-steps-item">
-                  <h3 className="list-steps-item-title">Instrucción 3</h3>
-                  <p>
-                    En esta descripción de la instrucción 3 se muestran los detalles principales de las acciones que
-                    deberá tomar el usuario luego.
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </CodeBox>
-        </>
+        <CodeBox codeHTML={LIST_STEP_MEDIUM_NUMBER}>
+          <div className="container">
+            <ul className="list-steps list-steps-numbers">
+              <li className="list-steps-item">
+                <h3 className="list-steps-item-title">Instrucción 1</h3>
+                <p>
+                  En esta descripción de la instrucción 1 se muestran los detalles principales de las acciones que
+                  deberá tomar el usuario luego.
+                </p>
+              </li>
+              <li className="list-steps-item">
+                <h3 className="list-steps-item-title">Instrucción 2</h3>
+                <p>
+                  En esta descripción de la instrucción 2 se muestran los detalles principales de las acciones que
+                  deberá tomar el usuario luego.
+                </p>
+              </li>
+              <li className="list-steps-item">
+                <h3 className="list-steps-item-title">Instrucción 3</h3>
+                <p>
+                  En esta descripción de la instrucción 3 se muestran los detalles principales de las acciones que
+                  deberá tomar el usuario luego.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </CodeBox>
+      ),
+    },
+    {
+      id: 'section-7',
+      title: 'Con número y borde',
+      content: (
+        <CodeBox codeHTML={LIST_STEP_MEDIUM_NUMBER_BORDER}>
+          <div className="container">
+            <ul className="list-steps list-steps-numbers list-steps-light">
+              <li className="list-steps-item">
+                <h3 className="list-steps-item-title">Instrucción 1</h3>
+                <p>
+                  En esta descripción de la instrucción 1 se muestran los detalles principales de las acciones que
+                  deberá tomar el usuario luego.
+                </p>
+              </li>
+              <li className="list-steps-item">
+                <h3 className="list-steps-item-title">Instrucción 2</h3>
+                <p>
+                  En esta descripción de la instrucción 2 se muestran los detalles principales de las acciones que
+                  deberá tomar el usuario luego.
+                </p>
+              </li>
+              <li className="list-steps-item">
+                <h3 className="list-steps-item-title">Instrucción 3</h3>
+                <p>
+                  En esta descripción de la instrucción 3 se muestran los detalles principales de las acciones que
+                  deberá tomar el usuario luego.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </CodeBox>
       ),
     },
   ];

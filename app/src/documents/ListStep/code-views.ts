@@ -79,64 +79,8 @@ export const LIST_STEP_SMALL = `
   </li>
 </ul>
 `;
-export const LIST_STEP_LARGE_BORDER = `
-<ul class="list-steps list-steps-lg list-steps-light">
-  <li class="list-steps-item">
-    <h3 class="list-steps-item-title">Instrucción 1</h3>
-    <p>
-    En esta descripción de la instrucción 1 se muestran los detalles
-    principales de las acciones que deberá tomar el usuario luego. En esta
-    descripción de la instrucción 1 se muestran los detalles principales de
-    las acciones que deberá tomar el usuario luego.
-    </p>
-  </li>
-  <li class="list-steps-item">
-    <h3 class="list-steps-item-title">Instrucción 2</h3>
-    <p>
-    En esta descripción de la instrucción 2 se muestran los detalles
-    principales de las acciones que deberá tomar el usuario luego. En esta
-    descripción de la instrucción 2 se muestran los detalles principales de
-    las acciones que deberá tomar el usuario luego.
-    </p>
-  </li>
-  <li class="list-steps-item">
-    <h3 class="list-steps-item-title">Instrucción 3</h3>
-    <p>
-    En esta descripción de la instrucción 3 se muestran los detalles
-    principales de las acciones que deberá tomar el usuario luego. En esta
-    descripción de la instrucción 3 se muestran los detalles principales de
-    las acciones que deberá tomar el usuario luego.
-    </p>
-  </li>
-</ul>
-`;
 export const LIST_STEP_MEDIUM_BORDER = `
 <ul class="list-steps list-steps-light">
-  <li class="list-steps-item">
-    <h3 class="list-steps-item-title">Instrucción 1</h3>
-    <p>
-    En esta descripción de la instrucción 1 se muestran los detalles
-    principales de las acciones que deberá tomar el usuario luego.
-    </p>
-  </li>
-  <li class="list-steps-item">
-    <h3 class="list-steps-item-title">Instrucción 2</h3>
-    <p>
-    En esta descripción de la instrucción 2 se muestran los detalles
-    principales de las acciones que deberá tomar el usuario luego.
-    </p>
-  </li>
-  <li class="list-steps-item">
-    <h3 class="list-steps-item-title">Instrucción 3</h3>
-    <p>
-    En esta descripción de la instrucción 3 se muestran los detalles
-    principales de las acciones que deberá tomar el usuario luego.
-    </p>
-  </li>
-</ul>
-`;
-export const LIST_STEP_SMALL_BORDER = `
-<ul class="list-steps list-steps-sm list-steps-light">
   <li class="list-steps-item">
     <h3 class="list-steps-item-title">Instrucción 1</h3>
     <p>

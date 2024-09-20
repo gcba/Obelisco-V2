@@ -218,7 +218,8 @@ hr {
   }
 
   &:has(.navbar-collapse.collapse.show),
-  &:has(.navbar-collapse.collapsing) {
+  &:has(.navbar-collapse.collapsing),
+  &:has(.dropdown .btn-dropdown[aria-expanded=true]) {
     z-index: 9999;
     position: relative;
   }

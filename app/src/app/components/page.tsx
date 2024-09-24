@@ -65,8 +65,7 @@ export default function ComponentsPage() {
           ))}
         </div>
       </div>
-      {/* Eliminar clase d-none al agregar organismos en la segunda entrega */}
-      <div className="mb-5 bg-light p-3 rounded-4 d-none">
+      <div className="mb-5 bg-light p-3 rounded-4">
         <p className="headline-lg fw-bold">Organismos</p>
         <div className="access-items-3">
           {organismsPages.map(({ text, url, id }) => (

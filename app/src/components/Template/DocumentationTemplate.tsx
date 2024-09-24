@@ -10,10 +10,11 @@ import SimpleText from './SimpleText';
 
 interface Section {
   id?: string;
-  title: string;
+  title: string | React.ReactNode;
   content?: React.ReactNode;
   description?: string;
   h1?: boolean;
+  h3?: boolean;
   defaultTitle?: boolean;
 }
 
@@ -53,10 +54,17 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections 
           <article className="box-content">
             <div data-cy="section-wrapper">
               {sections.map((section, index) => (
-                <section key={`${section.id}-${index}`} id={section.id || undefined} ref={sectionRefs[index]}>
+                <section
+                  className="box-section"
+                  key={`${section.id}-${index}`}
+                  id={section.id || undefined}
+                  ref={sectionRefs[index]}
+                >
                   <HeadingTemplate className="pt-2">
                     {section.h1 ? (
                       <h1 className="mb-4">{section.title}</h1>
+                    ) : section.h3 ? (
+                      <h3 className="headline-md mb-4">{section.title}</h3>
                     ) : (
                       <h2 className="headline-lg mb-4">{section.title}</h2>
                     )}

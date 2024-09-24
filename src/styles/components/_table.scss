@@ -25,11 +25,11 @@ $table-head-bg: $grisulado-100;
         padding: 12px 20px;
         @extend .headline-sm;
         font-weight: $font-weight-bold;
-  
+
         &.tb-text {
           min-width: 252px;
         }
-  
+
         &.tb-link {
           min-width: 204px;
         }
@@ -50,19 +50,19 @@ $table-head-bg: $grisulado-100;
         &.tb-number {
           min-width: 136px;
         }
-  
+
         &:first-of-type {
           border-top-left-radius: $border-radius-lg;
         }
-  
+
         &:last-of-type {
           border-top-right-radius: $border-radius-lg;
         }
-        
+
         .th-title {
           display: inline-block;
         }
-  
+
         .th-subtitle {
           @extend .text-sm;
           font-family: $font-family-sans-serif;
@@ -104,7 +104,7 @@ $table-head-bg: $grisulado-100;
         td:last-of-type {
           border-bottom-right-radius: $border-radius-lg;
         }
-        
+
         td {
           border: none;
         }
@@ -139,7 +139,8 @@ $table-head-bg: $grisulado-100;
     }
   }
 
-  $table-alignments: 'baseline', 'top', 'middle', 'bottom', 'text-bottom', 'text-top';
+  $table-alignments: 'baseline', 'top', 'middle', 'bottom', 'text-bottom',
+    'text-top';
 
   @each $alignment in $table-alignments {
     &.table-align-#{$alignment} {
@@ -149,12 +150,12 @@ $table-head-bg: $grisulado-100;
       }
     }
   }
-  
+
   &.table-striped tbody tr:nth-of-type(odd) td {
     --bs-table-bg-type: white;
-    background-color: white !important; 
+    background-color: white !important;
   }
-  
+
   &.table-striped tbody tr:nth-of-type(even) td {
     --bs-table-bg-type: $grisulado-50;
     background-color: $grisulado-50 !important;

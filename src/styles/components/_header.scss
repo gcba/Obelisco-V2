@@ -80,7 +80,8 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
         }
       }
 
-      &:focus:not(:active), &:focus:not(.active) {
+      &:focus:not(:active),
+      &:focus:not(.active) {
         &:not(.item-danger) {
           color: $hover-color;
         }
@@ -119,7 +120,8 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
 }
 
 @mixin nav-link-states {
-  &:focus:not(:active), &:focus:not(.active) {
+  &:focus:not(:active),
+  &:focus:not(.active) {
     color: $active-color;
 
     span:not(.material-icons-round) {
@@ -138,7 +140,8 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
     }
   }
 
-  &.active:focus, &:active:focus {
+  &.active:focus,
+  &:active:focus {
     color: $white;
 
     span:not(.material-icons-round) {
@@ -173,7 +176,8 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
         font-size: 1.125rem;
       }
 
-      .material-icons-round, .bx {
+      .material-icons-round,
+      .bx {
         font-size: 1.5rem;
       }
       @include nav-link-states;
@@ -202,7 +206,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
           min-width: 100%;
           position: static;
           outline: none;
-          border-bottom: .125rem solid $grisulado-50;
+          border-bottom: 0.125rem solid $grisulado-50;
           border-radius: 0;
           padding-bottom: 0.25rem;
 
@@ -244,8 +248,8 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
 .notification {
   position: relative;
 
-  &[aria-expanded="false"]::before {
-    content: "" !important;
+  &[aria-expanded='false']::before {
+    content: '' !important;
     position: absolute;
     top: 8px;
     right: 8px;
@@ -259,10 +263,10 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
 
 .navbar.o-header {
   border-bottom: 0.25rem solid $blue;
-  padding: 0.875rem 1rem .625rem; //14px 16px 10px
+  padding: 0.875rem 1rem 0.625rem; //14px 16px 10px
 
   @include media-breakpoint-up(xl) {
-    padding: 1rem 0 .75rem;
+    padding: 1rem 0 0.75rem;
     flex-wrap: nowrap;
     justify-content: flex-start;
 
@@ -276,7 +280,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
     &:has(.navbar-collapse.show, .navbar-collapse.collapsing) {
       border-bottom: none;
       padding: 0;
-      
+
       .header-container {
         padding: 0.75rem 1rem;
         z-index: 1050;
@@ -302,14 +306,13 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
     width: 1px;
     height: 1px;
     overflow: hidden;
-    
 
-    &:not(:focus){
+    &:not(:focus) {
       clip: rect(0 0 0 0);
     }
 
     &:focus {
-      top: .25rem;
+      top: 0.25rem;
       left: 50%;
       transform: translateX(-50%);
       width: auto;
@@ -345,7 +348,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
       padding-right: $navbar-container-padding-x;
     }
 
-    @media(width >= 1366px) {
+    @media (width >= 1366px) {
       max-width: 100%;
       margin: 0;
     }
@@ -396,7 +399,8 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
         box-shadow: none;
         outline: 0.125rem solid transparent;
 
-        &:focus, &.focus {
+        &:focus,
+        &.focus {
           outline: 0.25rem solid transparent;
         }
       }
@@ -429,7 +433,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
         }
       }
 
-      &:not(:has(.navbar-search,.navbar-sections,.navbar-content-extended)) {
+      &:not(:has(.navbar-search, .navbar-sections, .navbar-content-extended)) {
         .navbar-user-mobile {
           border-top: none;
           padding-top: 0;
@@ -474,7 +478,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
               &[aria-expanded='true'] {
                 color: $white;
               }
-      
+
               &:hover:not(:focus) {
                 box-shadow: 0 0 0 2px $blue;
 
@@ -546,14 +550,15 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
               display: flex;
               align-items: center;
               column-gap: 0.25rem;
-              
+
               span {
                 font-size: 1.125rem;
                 @include media-breakpoint-down(xl) {
                   font-size: 1rem;
                 }
 
-                &.material-icons-round, &.bx {
+                &.material-icons-round,
+                &.bx {
                   font-size: 1.5rem;
                 }
               }

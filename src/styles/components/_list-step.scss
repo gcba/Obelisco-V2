@@ -29,9 +29,10 @@ $list-steps-numbers: 9;
       padding-bottom: 0;
     }
 
-    h3, .list-steps-item-title {
+    h3,
+    .list-steps-item-title {
       @extend .h6;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
     }
 
     p {
@@ -88,7 +89,8 @@ $list-steps-numbers: 9;
         padding-bottom: 0;
       }
 
-      h3, .list-steps-item-title {
+      h3,
+      .list-steps-item-title {
         @extend .h4; //28px|36px|600|nunito
       }
 
@@ -118,7 +120,8 @@ $list-steps-numbers: 9;
 
   &.list-steps-sm {
     .list-steps-item {
-      h3, .list-steps-item-title {
+      h3,
+      .list-steps-item-title {
         @extend .headline-md;
       }
 
@@ -185,7 +188,8 @@ $list-steps-numbers: 9;
     &.list-steps-lg {
       .list-steps-item {
         &::before {
-          box-shadow: 0 0 0 $list-steps-line-width-lg $list-steps-font-color inset;
+          box-shadow: 0 0 0 $list-steps-line-width-lg $list-steps-font-color
+            inset;
         }
 
         @include media-breakpoint-down(md) {

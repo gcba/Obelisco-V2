@@ -44,9 +44,7 @@ const FooterDocs: React.FC = () => {
                       <a href="tel:147">147 - Atención ciudadana</a>
                     </li>
                   </ul>
-                  <a href="https://buenosaires.gob.ar/inicio/telefonos">
-                    Ver todos los teléfonos
-                  </a>
+                  <a href="https://buenosaires.gob.ar/inicio/telefonos">Ver todos los teléfonos</a>
                 </section>
                 <section>
                   <h3>Redes de la ciudad</h3>
@@ -76,9 +74,7 @@ const FooterDocs: React.FC = () => {
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
-                      <a
-                        href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires"
-                      >
+                      <a href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires">
                         <i className="bx bxl-linkedin-square"></i>
                         LinkedIn
                       </a>
@@ -125,33 +121,21 @@ const FooterDocs: React.FC = () => {
                     <div className="col-12">
                       <ul className="list-inline">
                         <li className="list-inline-item">
-                          <a href="https://boletinoficial.buenosaires.gob.ar">
-                            Boletín oficial
-                          </a>
+                          <a href="https://boletinoficial.buenosaires.gob.ar">Boletín oficial</a>
                         </li>
                         <li className="list-inline-item">
-                          <a
-                            href="https://buenosaires.gob.ar/inicio/terminos-y-condiciones"
-                          >
-                            Términos y condiciones
-                          </a>
+                          <a href="https://buenosaires.gob.ar/inicio/terminos-y-condiciones">Términos y condiciones</a>
                         </li>
                         <li className="list-inline-item">
-                          <a href="https://buenosaires.gob.ar/inicio/privacidad">
-                            Política de privacidad
-                          </a>
+                          <a href="https://buenosaires.gob.ar/inicio/privacidad">Política de privacidad</a>
                         </li>
                         <li className="list-inline-item">
-                          <a
-                            href="https://buenosaires.gob.ar/jefedegobierno/legalytecnica/normativa/boletin-oficial-y-registro/oficios-judiciales"
-                          >
+                          <a href="https://buenosaires.gob.ar/jefedegobierno/legalytecnica/normativa/boletin-oficial-y-registro/oficios-judiciales">
                             Oficios judiciales
                           </a>
                         </li>
                         <li className="list-inline-item">
-                          <a href="https://www.buenosaires.gob.ar/gobierno/transparencia">
-                            Transparencia
-                          </a>
+                          <a href="https://www.buenosaires.gob.ar/gobierno/transparencia">Transparencia</a>
                         </li>
                       </ul>
                     </div>
@@ -159,8 +143,8 @@ const FooterDocs: React.FC = () => {
                 </section>
                 <section>
                   <div className="footer-license-text">
-                    Los contenidos de buenosaires.gob.ar están licenciados bajo Creative
-                    Commons Reconocimiento 2.5 Argentina License.
+                    Los contenidos de buenosaires.gob.ar están licenciados bajo Creative Commons Reconocimiento 2.5
+                    Argentina License.
                   </div>
                 </section>
               </div>
@@ -203,33 +187,21 @@ const FooterDocs: React.FC = () => {
                     <div className="col-12">
                       <ul className="list-inline">
                         <li className="list-inline-item">
-                          <a href="https://boletinoficial.buenosaires.gob.ar">
-                            Boletín oficial
-                          </a>
+                          <a href="https://boletinoficial.buenosaires.gob.ar">Boletín oficial</a>
                         </li>
                         <li className="list-inline-item">
-                          <a
-                            href="https://buenosaires.gob.ar/inicio/terminos-y-condiciones"
-                          >
-                            Términos y condiciones
-                          </a>
+                          <a href="https://buenosaires.gob.ar/inicio/terminos-y-condiciones">Términos y condiciones</a>
                         </li>
                         <li className="list-inline-item">
-                          <a href="https://buenosaires.gob.ar/inicio/privacidad">
-                            Política de privacidad
-                          </a>
+                          <a href="https://buenosaires.gob.ar/inicio/privacidad">Política de privacidad</a>
                         </li>
                         <li className="list-inline-item">
-                          <a
-                            href="https://buenosaires.gob.ar/jefedegobierno/legalytecnica/normativa/boletin-oficial-y-registro/oficios-judiciales"
-                          >
+                          <a href="https://buenosaires.gob.ar/jefedegobierno/legalytecnica/normativa/boletin-oficial-y-registro/oficios-judiciales">
                             Oficios judiciales
                           </a>
                         </li>
                         <li className="list-inline-item">
-                          <a href="https://www.buenosaires.gob.ar/gobierno/transparencia">
-                            Transparencia
-                          </a>
+                          <a href="https://www.buenosaires.gob.ar/gobierno/transparencia">Transparencia</a>
                         </li>
                       </ul>
                     </div>
@@ -237,8 +209,8 @@ const FooterDocs: React.FC = () => {
                 </section>
                 <section>
                   <div className="footer-license-text">
-                    Los contenidos de buenosaires.gob.ar están licenciados bajo Creative
-                    Commons Reconocimiento 2.5 Argentina License.
+                    Los contenidos de buenosaires.gob.ar están licenciados bajo Creative Commons Reconocimiento 2.5
+                    Argentina License.
                   </div>
                 </section>
               </div>
@@ -287,9 +259,7 @@ const FooterDocs: React.FC = () => {
                       <a href="tel:147">147 - Atención ciudadana</a>
                     </li>
                   </ul>
-                  <a href="https://buenosaires.gob.ar/inicio/telefonos">
-                    Ver todos los teléfonos
-                  </a>
+                  <a href="https://buenosaires.gob.ar/inicio/telefonos">Ver todos los teléfonos</a>
                 </section>
                 <section>
                   <h3>Redes de la ciudad</h3>
@@ -319,9 +289,7 @@ const FooterDocs: React.FC = () => {
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
-                      <a
-                        href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires"
-                      >
+                      <a href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires">
                         <i className="bx bxl-linkedin-square"></i>
                         LinkedIn
                       </a>
@@ -368,33 +336,21 @@ const FooterDocs: React.FC = () => {
                     <div className="col-12">
                       <ul className="list-inline">
                         <li className="list-inline-item">
-                          <a href="https://boletinoficial.buenosaires.gob.ar">
-                            Boletín oficial
-                          </a>
+                          <a href="https://boletinoficial.buenosaires.gob.ar">Boletín oficial</a>
                         </li>
                         <li className="list-inline-item">
-                          <a
-                            href="https://buenosaires.gob.ar/inicio/terminos-y-condiciones"
-                          >
-                            Términos y condiciones
-                          </a>
+                          <a href="https://buenosaires.gob.ar/inicio/terminos-y-condiciones">Términos y condiciones</a>
                         </li>
                         <li className="list-inline-item">
-                          <a href="https://buenosaires.gob.ar/inicio/privacidad">
-                            Política de privacidad
-                          </a>
+                          <a href="https://buenosaires.gob.ar/inicio/privacidad">Política de privacidad</a>
                         </li>
                         <li className="list-inline-item">
-                          <a
-                            href="https://buenosaires.gob.ar/jefedegobierno/legalytecnica/normativa/boletin-oficial-y-registro/oficios-judiciales"
-                          >
+                          <a href="https://buenosaires.gob.ar/jefedegobierno/legalytecnica/normativa/boletin-oficial-y-registro/oficios-judiciales">
                             Oficios judiciales
                           </a>
                         </li>
                         <li className="list-inline-item">
-                          <a href="https://www.buenosaires.gob.ar/gobierno/transparencia">
-                            Transparencia
-                          </a>
+                          <a href="https://www.buenosaires.gob.ar/gobierno/transparencia">Transparencia</a>
                         </li>
                       </ul>
                     </div>
@@ -402,8 +358,8 @@ const FooterDocs: React.FC = () => {
                 </section>
                 <section>
                   <div className="footer-license-text">
-                    Los contenidos de buenosaires.gob.ar están licenciados bajo Creative
-                    Commons Reconocimiento 2.5 Argentina License.
+                    Los contenidos de buenosaires.gob.ar están licenciados bajo Creative Commons Reconocimiento 2.5
+                    Argentina License.
                   </div>
                 </section>
               </div>

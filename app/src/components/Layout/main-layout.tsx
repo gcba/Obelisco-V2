@@ -77,21 +77,21 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             {pathname.includes('/components') && (
               <div className="nav-left sticky-nav">
                 <div className="nav-left-box-title">
-                  <div className="pe-2">
+                  <div className="pe-2 pt-1">
                     <p className="headline-lg fw-bold mb-1">Estilos</p>
                     <hr className="my-2" />
                   </div>
                 </div>
                 <NavLayout items={stylesPages} />
                 <div className="nav-left-box-title">
-                  <div className="pe-2">
+                  <div className="pe-2 pt-1">
                     <p className="headline-lg fw-bold mb-1">Componentes</p>
                     <hr className="my-2" />
                   </div>
                 </div>
                 <NavLayout items={componentsPages} />
                 <div className="nav-left-box-title">
-                  <div className="pe-2">
+                  <div className="pe-2 pt-1">
                     <p className="headline-lg fw-bold mb-1">Formularios</p>
                     <hr className="my-2" />
                   </div>
@@ -100,7 +100,7 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                 {/* Al crear organismos, eliminar el div con clase d-none que envuelve al titulo y nav */}
                 <div className="d-none">
                   <div className="nav-left-box-title">
-                    <div className="pe-2">
+                    <div className="pe-2 pt-1">
                       <p className="headline-lg fw-bold mb-1">Organismos</p>
                       <hr className="my-2" />
                     </div>

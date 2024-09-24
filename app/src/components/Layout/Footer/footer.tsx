@@ -31,33 +31,21 @@ export default function Footer() {
               <div className="col-12">
                 <ul className="list-inline">
                   <li className="list-inline-item">
-                    <a href="https://boletinoficial.buenosaires.gob.ar">
-                      Boletín oficial
-                    </a>
+                    <a href="https://boletinoficial.buenosaires.gob.ar">Boletín oficial</a>
                   </li>
                   <li className="list-inline-item">
-                    <a
-                      href="https://buenosaires.gob.ar/inicio/terminos-y-condiciones"
-                    >
-                      Términos y condiciones
-                    </a>
+                    <a href="https://buenosaires.gob.ar/inicio/terminos-y-condiciones">Términos y condiciones</a>
                   </li>
                   <li className="list-inline-item">
-                    <a href="https://buenosaires.gob.ar/inicio/privacidad">
-                      Política de privacidad
-                    </a>
+                    <a href="https://buenosaires.gob.ar/inicio/privacidad">Política de privacidad</a>
                   </li>
                   <li className="list-inline-item">
-                    <a
-                      href="https://buenosaires.gob.ar/jefedegobierno/legalytecnica/normativa/boletin-oficial-y-registro/oficios-judiciales"
-                    >
+                    <a href="https://buenosaires.gob.ar/jefedegobierno/legalytecnica/normativa/boletin-oficial-y-registro/oficios-judiciales">
                       Oficios judiciales
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a href="https://www.buenosaires.gob.ar/gobierno/transparencia">
-                      Transparencia
-                    </a>
+                    <a href="https://www.buenosaires.gob.ar/gobierno/transparencia">Transparencia</a>
                   </li>
                 </ul>
               </div>
@@ -65,8 +53,8 @@ export default function Footer() {
           </section>
           <section>
             <div className="footer-license-text">
-              Los contenidos de buenosaires.gob.ar están licenciados bajo Creative
-              Commons Reconocimiento 2.5 Argentina License.
+              Los contenidos de buenosaires.gob.ar están licenciados bajo Creative Commons Reconocimiento 2.5 Argentina
+              License.
             </div>
           </section>
         </div>

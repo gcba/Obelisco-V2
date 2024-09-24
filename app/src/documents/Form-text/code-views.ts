@@ -61,6 +61,18 @@ export const INPUT_DISABLED = `
       <label for="example-one" class="form-label">Ejemplo TextArea</label>
       <textarea class="form-control" id="example-one" disabled />
     </div>
+    
+    <div class="col-12 col-lg-6">    
+      <label htmlFor="example-disabled-select" class='form-label'>
+        Ejemplo campo de selección.
+      </label>
+      <select class="form-control form-select" aria-label="Default select example" disabled>
+        <option selected>Campo de selección</option>
+        <option value="1">Opción</option>
+        <option value="2">Opción</option>
+        <option value="3">Opción</option>
+      </select>
+    </div>
 `;
 export const INPUT_VALIDATION_TEXT = `
     <form class="col-12 col-lg-6">
@@ -141,4 +153,16 @@ export const INPUT_VALIDATION_TEXTAREA = `
       </p>
     </div>
   </form>
+`;
+export const INPUT_SELECT = `
+<div className='container'>
+  <div className='col-12 col-lg-6'>
+  <select className="form-select" aria-label="Default select example">
+    <option selected>Open this select menu</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+  </div>
+</div>
 `;

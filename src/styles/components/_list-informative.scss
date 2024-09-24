@@ -25,7 +25,7 @@ $list-icon-check: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg
     position: relative;
     padding-left: $list-informative-li-padding-left;
 
-    &:before {
+    &::before {
       content: '';
       display: inline-block;
       height: $list-informative-li-icon-size;
@@ -45,7 +45,7 @@ $list-icon-check: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg
 .list-informative-check {
   @extend .list-informative-bullet;
 
-  li:before {
+  li::before {
     background: transparent $list-icon-check no-repeat center center;
   }
 }

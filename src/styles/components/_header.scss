@@ -23,10 +23,12 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
   .btn-dropdown {
     &:focus {
       color: $hover-color;
+
       .btn-dropdown-text {
         text-decoration: underline;
         text-decoration-thickness: 1px;
       }
+
       &:active {
         color: $white;
         background-color: $active-color;
@@ -36,6 +38,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
 
     &:hover:not(:focus) {
       outline-color: transparent;
+
       .btn-dropdown-text {
         text-decoration: underline;
         text-decoration-thickness: 1px;
@@ -45,6 +48,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
     &[aria-expanded='true'],
     &:active {
       color: $white;
+
       .btn-dropdown-text {
         @include media-breakpoint-up(xl) {
           -webkit-text-stroke: 0.25px $white;
@@ -60,6 +64,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
       }
     }
   }
+
   .dropdown-menu {
     @extend .headline-md;
     font-weight: $font-weight-normal;
@@ -79,6 +84,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
         &:not(.item-danger) {
           color: $hover-color;
         }
+
         .item-text {
           text-decoration: underline;
           text-decoration-thickness: 1px;
@@ -115,6 +121,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
 @mixin nav-link-states {
   &:focus:not(:active), &:focus:not(.active) {
     color: $active-color;
+
     span:not(.material-icons-round) {
       text-decoration: underline;
       text-decoration-thickness: 1px;
@@ -124,13 +131,16 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
   &:hover:not(:focus) {
     outline-color: transparent;
     text-decoration: none;
+
     span:not(.material-icons-round) {
       text-decoration: underline;
       text-decoration-thickness: 1px;
     }
   }
+
   &.active:focus, &:active:focus {
     color: $white;
+
     span:not(.material-icons-round) {
       text-decoration: none;
     }
@@ -158,9 +168,11 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
       display: flex;
       align-items: center;
       column-gap: 0.25rem;
+
       span {
         font-size: 1.125rem;
       }
+
       .material-icons-round, .bx {
         font-size: 1.5rem;
       }
@@ -168,8 +180,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
     }
 
     @include media-breakpoint-up(xl) {
-      column-gap: 1.25rem;
-      row-gap: 1rem;
+      gap: 1rem 1.25rem;
     }
 
     @include media-breakpoint-down(xl) {
@@ -178,6 +189,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
 
       .dropdown {
         width: 100%;
+
         .btn-dropdown {
           width: 100%;
           max-width: 100%;
@@ -193,6 +205,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
           border-bottom: .125rem solid $grisulado-50;
           border-radius: 0;
           padding-bottom: 0.25rem;
+
           .dropdown-item {
             padding-left: 2rem;
             font-size: 1rem;
@@ -208,12 +221,14 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
 
       .nav-item {
         width: 100%;
+
         &:first-child {
           margin-top: 0;
         }
 
         .nav-link {
           padding-left: 1rem;
+
           span {
             font-size: 1rem;
           }
@@ -229,7 +244,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
 .notification {
   position: relative;
 
-  &[aria-expanded=false]:before {
+  &[aria-expanded="false"]::before {
     content: "" !important;
     position: absolute;
     top: 8px;
@@ -241,6 +256,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
     border-radius: 50%;
   }
 }
+
 .navbar.o-header {
   border-bottom: 0.25rem solid $blue;
   padding: 0.875rem 1rem .625rem; //14px 16px 10px
@@ -329,7 +345,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
       padding-right: $navbar-container-padding-x;
     }
 
-    @media(min-width: 1366px) {
+    @media(width >= 1366px) {
       max-width: 100%;
       margin: 0;
     }
@@ -365,7 +381,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
       @include media-breakpoint-down(xl) {
         display: inline-block;
       }
-      @media (max-width: 290px) {
+      @media (width <= 290px) {
         margin-left: 0.25rem;
       }
 
@@ -379,6 +395,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
         background: $active-color $navbar-toggle-close no-repeat center center;
         box-shadow: none;
         outline: 0.125rem solid transparent;
+
         &:focus, &.focus {
           outline: 0.25rem solid transparent;
         }
@@ -396,13 +413,14 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
 
       @include media-breakpoint-down(xl) {
         display: none;
+
         &.show,
         &.collapsing {
           display: block;
           padding: 0 1rem 0.25rem;
           position: absolute;
           top: 72px;
-          left: 0px;
+          left: 0;
           z-index: 1050;
           background-color: $white;
           width: 100%;
@@ -423,8 +441,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
         justify-content: flex-end;
         align-items: flex-start;
         flex-wrap: nowrap;
-        column-gap: 1.5rem;
-        row-gap: 0;
+        gap: 0 1.5rem;
         width: 100%;
 
         @include media-breakpoint-down(xl) {
@@ -452,15 +469,15 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
 
           .dropdown {
             @include dropdown-states;
-            .btn-dropdown {
-              
 
+            .btn-dropdown {
               &[aria-expanded='true'] {
                 color: $white;
               }
       
               &:hover:not(:focus) {
                 box-shadow: 0 0 0 2px $blue;
+
                 .btn-dropdown-text {
                   text-decoration: none;
                 }
@@ -498,7 +515,6 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
         @include media-breakpoint-up(xl) {
           display: none;
         }
-
         width: 100%;
         margin-bottom: 1rem;
         border-top: 1px solid $grisulado-100;
@@ -519,6 +535,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
 
           .nav-item {
             width: 100%;
+
             &:first-child {
               margin-top: 0;
             }

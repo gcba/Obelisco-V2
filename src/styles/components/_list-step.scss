@@ -38,7 +38,7 @@ $list-steps-numbers: 9;
       margin-bottom: 0;
     }
 
-    &:before {
+    &::before {
       content: '';
       color: $white;
       background-color: $list-steps-font-color;
@@ -57,7 +57,7 @@ $list-steps-numbers: 9;
       font-weight: $font-weight-bold;
     }
 
-    &:not(:last-child):after {
+    &:not(:last-child)::after {
       content: '';
       position: absolute;
       background-color: $list-steps-font-color;
@@ -70,7 +70,7 @@ $list-steps-numbers: 9;
     }
 
     &.list-steps-item-light {
-      &:before {
+      &::before {
         background-color: $white;
         color: $list-steps-font-color;
       }
@@ -92,7 +92,7 @@ $list-steps-numbers: 9;
         @extend .h4; //28px|36px|600|nunito
       }
 
-      &:before {
+      &::before {
         width: $list-steps-circle-size-lg;
         height: $list-steps-circle-size-lg;
         box-shadow: 0 0 0 $list-steps-line-width-lg $list-steps-font-color inset;
@@ -102,7 +102,7 @@ $list-steps-numbers: 9;
         }
       }
 
-      &:not(:last-child):after {
+      &:not(:last-child)::after {
         width: $list-steps-line-width-lg;
         left: 1.12rem;
         top: $list-steps-circle-size-lg;
@@ -122,7 +122,7 @@ $list-steps-numbers: 9;
         @extend .headline-md;
       }
 
-      &:before {
+      &::before {
         @extend .headline-sm;
         font-weight: $font-weight-bold;
       }
@@ -131,7 +131,7 @@ $list-steps-numbers: 9;
 
   &.list-steps-light {
     .list-steps-item {
-      &:before {
+      &::before {
         background-color: $white;
         color: $list-steps-font-color;
       }
@@ -142,7 +142,7 @@ $list-steps-numbers: 9;
     .list-steps-item {
       @for $i from 1 through $list-steps-numbers {
         &:nth-child(#{$i}) {
-          &:before {
+          &::before {
             content: '#{$i}';
             box-shadow: 0 0 0 1px $list-steps-font-color;
             padding-top: 1px;
@@ -153,7 +153,7 @@ $list-steps-numbers: 9;
       &:nth-child(3),
       &:nth-child(5),
       &:nth-child(7) {
-        &:before {
+        &::before {
           padding-top: 2px;
           padding-left: 0.5px;
         }
@@ -161,20 +161,20 @@ $list-steps-numbers: 9;
 
       &:nth-child(4),
       &:nth-child(6) {
-        &:before {
+        &::before {
           padding-right: 1px;
         }
       }
 
       &:nth-child(9) {
-        &:before {
+        &::before {
           padding-top: 2px;
           padding-left: 1px;
         }
       }
 
       &.list-steps-item-light {
-        &:before {
+        &::before {
           background-color: $white;
           color: $list-steps-font-color;
           box-shadow: 0 0 0 $list-steps-line-width $list-steps-font-color;
@@ -184,20 +184,20 @@ $list-steps-numbers: 9;
 
     &.list-steps-lg {
       .list-steps-item {
-        &:before {
+        &::before {
           box-shadow: 0 0 0 $list-steps-line-width-lg $list-steps-font-color inset;
         }
 
         @include media-breakpoint-down(md) {
           &:nth-child(5) {
-            &:before {
+            &::before {
               padding-left: 1px;
             }
           }
         }
 
         &:is(.list-steps-item-light) {
-          &:before {
+          &::before {
             box-shadow: 0 0 0 $list-steps-line-width-lg $list-steps-font-color;
           }
         }
@@ -206,12 +206,12 @@ $list-steps-numbers: 9;
 
     &.list-steps-light {
       .list-steps-item {
-        &:before {
+        &::before {
           box-shadow: 0 0 0 $list-steps-line-width $list-steps-font-color;
         }
 
         &:nth-child(5) {
-          &:before {
+          &::before {
             padding-right: 0;
             padding-left: 0.5px;
           }
@@ -219,7 +219,7 @@ $list-steps-numbers: 9;
 
         &:nth-child(6),
         &:nth-child(8) {
-          &:before {
+          &::before {
             padding-top: 2px;
           }
         }
@@ -227,7 +227,7 @@ $list-steps-numbers: 9;
 
       &.list-steps-lg {
         .list-steps-item {
-          &:before {
+          &::before {
             box-shadow: 0 0 0 $list-steps-line-width-lg $list-steps-font-color;
           }
 
@@ -236,7 +236,7 @@ $list-steps-numbers: 9;
           &:nth-child(6),
           &:nth-child(8),
           &:nth-child(9) {
-            &:before {
+            &::before {
               padding-top: 1px;
             }
           }

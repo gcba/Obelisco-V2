@@ -69,13 +69,16 @@
     gap: 1.25rem; //20px
     padding: 1.5rem .75rem;
     margin: 0 auto;
+
     .card-img,
     video {
       max-width: 100%;
       height: 392px;
     }
+
     .card-body {
       max-width: 100%;
+
       .panel-footer {
         flex-direction: row;
         margin-top: 1.25rem; //20px
@@ -88,6 +91,7 @@
   }
   @include media-breakpoint-down(md) {
     padding: 1.5rem 1rem;
+
     .card-img,
     video {
       height: 296px;
@@ -102,6 +106,7 @@
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: $white;
+
   .panel-horizontal {
     @extend .container;
     align-items: center;

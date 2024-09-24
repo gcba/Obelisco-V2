@@ -54,7 +54,12 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections 
           <article className="box-content">
             <div data-cy="section-wrapper">
               {sections.map((section, index) => (
-                <section key={`${section.id}-${index}`} id={section.id || undefined} ref={sectionRefs[index]}>
+                <section
+                  className="box-section"
+                  key={`${section.id}-${index}`}
+                  id={section.id || undefined}
+                  ref={sectionRefs[index]}
+                >
                   <HeadingTemplate className="pt-2">
                     {section.h1 ? (
                       <h1 className="mb-4">{section.title}</h1>

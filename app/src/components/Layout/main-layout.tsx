@@ -47,7 +47,7 @@ export const componentsPages = [
   { text: 'Modal', url: '/components/modal', id: 22 },
   { text: 'Navegación horizontal', url: '/components/nav-horizontal', id: 23 },
   { text: 'Navegación vertical', url: '/components/nav-vertical', id: 24 },
-  // { text: "Paginado", url: "/components/pagination", id: 25 },
+  { text: 'Paginado', url: '/components/pagination', id: 25 },
   { text: 'Pestañas', url: '/components/tabs', id: 26 },
   // { text: "Pasos de un formulario", url: "/components/steps-form", id: 27 },
   { text: 'Spinner', url: '/components/spinner', id: 28 },

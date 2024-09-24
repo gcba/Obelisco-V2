@@ -243,10 +243,11 @@ const FormTextDocs: React.FC = () => {
               <br />
 
               <div className="col-12 col-lg-6">
-                <label htmlFor="example-disabled-select" className="form-label">
-                  Ejemplo campo de selección.
+                <label htmlFor="select-example" className="form-label">
+                  Ejemplo campo de selección deshabilitado.
                 </label>
                 <select
+                  id="select-example"
                   className="form-control form-select"
                   aria-label="Default select example"
                   disabled

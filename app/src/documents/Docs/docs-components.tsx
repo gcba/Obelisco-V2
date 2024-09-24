@@ -6,7 +6,7 @@ import MainDescription from '@/components/Template/MainDescription';
 const UpdateComponents: React.FC = () => {
   const sections = [
     {
-      title: 'Obelisco V2',
+      title: 'Cambios en componentes',
       content: (
         <>
           <MainDescription description="En esta sección encontraremos la documentación sobre los cambios que se hicieron sobre los componentes en la nueva versión de Obelisco." />
@@ -463,7 +463,18 @@ const UpdateComponents: React.FC = () => {
     },
   ];
 
-  return <DocumentationTemplate sections={sections} />;
+  return  (
+    <>    
+      <nav aria-label="Navegación secundaria">
+        <ol className="breadcrumb">
+          <li className="breadcrumb-item">
+            <Link href="/documentation">Documentación</Link>
+          </li>
+        </ol>
+      </nav>
+      <DocumentationTemplate sections={sections} />
+    </>
+  )
 };
 
 export default UpdateComponents;

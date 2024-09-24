@@ -857,7 +857,9 @@ const CalendarDocs: React.FC = () => {
                         aria-expanded="false"
                         aria-controls="collapseHeaderIcon"
                       >
-                        <span className="material-symbols-rounded o-icon" aria-hidden="true">calendar_month</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                          calendar_month
+                        </span>
                         <span className="collapse-title">Referencia</span>
                       </button>
                       <div id="collapseHeaderIcon" className="accordion-collapse collapse">
@@ -1117,7 +1119,9 @@ const CalendarDocs: React.FC = () => {
                         aria-expanded="false"
                         aria-controls="collapseHeaderIcon"
                       >
-                        <span className="material-symbols-rounded o-icon" aria-hidden="true">calendar_month</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                          calendar_month
+                        </span>
                         <span className="collapse-title">Referencia</span>
                       </button>
                       <div id="collapseHeaderIcon" className="accordion-collapse collapse">
@@ -1176,7 +1180,6 @@ const CalendarDocs: React.FC = () => {
                                 <strong>13. </strong>
                                 Nombre del evento.
                               </li>
-
                             </ul>
                           </div>
                         </div>
@@ -1392,7 +1395,7 @@ const CalendarDocs: React.FC = () => {
                   </ul>
                 </div>
               </div>
-              
+
               <div className="calendar">
                 <div className="calendar-header">
                   <h2 className="calendar-title">Febrero</h2>

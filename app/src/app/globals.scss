@@ -224,9 +224,11 @@ hr {
 
   &:has(.navbar-collapse.collapse.show),
   &:has(.navbar-collapse.collapsing),
-  &:has(.dropdown .btn-dropdown[aria-expanded=true]) {
+  &:has(.dropdown .btn-dropdown[aria-expanded='true']) {
     z-index: 9999;
     position: relative;
+  }
+}
 //Visualizacion de Destacado en codebox
 .highlighted-box-sizing {
   transform: scale(0.6);

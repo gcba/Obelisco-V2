@@ -74,7 +74,7 @@ const ImportsModule: React.FC = () => {
         <div className="col-12">
           <h3 className="headline-lg">Boxicons: </h3>
           <SyntaxHighlighter language="bash" style={dracula} wrapLongLines>
-          {`npm install boxicons
+            {`npm install boxicons
  
 // Es importante que incluyas el import a Boxicons en tu hoja de estilos si lo usas via NPM
 @import "material-symbols/index.css";

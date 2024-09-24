@@ -336,151 +336,244 @@ export const CALENDAR_WITH_REFERENCES = `<div class="calendar">
     </div>
 </div>`;
 
-export const CALENDAR_COLLAPSE = `<div class="calendar">
-    <div class="calendar-header">
-        <h2 class="calendar-title">Enero</h2>
-        <span class="calendar-year">2024</span>
+export const CALENDAR_COLLAPSE = `
+ <div className="calendar">
+    <div className="calendar-header">
+        <h2 className="calendar-title">Enero</h2>
+        <span className="calendar-year">2024</span>
     </div>
-    <div class="calendar-body">
+    <div className="calendar-body">
         <table>
         <thead>
-            <tr class="calendar-week-header">
-            <th><span>D</span></th>
-            <th><span>L</span></th>
-            <th><span>M</span></th>
-            <th><span>M</span></th>
-            <th><span>J</span></th>
-            <th><span>V</span></th>
-            <th><span>S</span></th>
+            <tr className="calendar-week-header">
+            <th>
+                <span>D</span>
+            </th>
+            <th>
+                <span>L</span>
+            </th>
+            <th>
+                <span>M</span>
+            </th>
+            <th>
+                <span>M</span>
+            </th>
+            <th>
+                <span>J</span>
+            </th>
+            <th>
+                <span>V</span>
+            </th>
+            <th>
+                <span>S</span>
+            </th>
             </tr>
         </thead>
         <tbody>
-            <tr class="calendar-week">
-            <td></td>
-            <td>
-                <span title="Nombre del evento.">
-                <span class="active">1</span>
-                </span>
-            </td>
-            <td><span>2</span></td>
-            <td><span>3</span></td>
-            <td><span>4</span></td>
-            <td><span>5</span></td>
-            <td><span>6</span></td>
+            <tr className="calendar-week">
+                <td></td>
+                <td>
+                    <span title="Nombre del evento.">
+                    <span className="active">1</span>
+                    </span>
+                </td>
+                <td>
+                    <span>2</span>
+                </td>
+                <td>
+                    <span>3</span>
+                </td>
+                <td>
+                    <span>4</span>
+                </td>
+                <td>
+                    <span>5</span>
+                </td>
+                <td>
+                    <span>6</span>
+                </td>
             </tr>
-            <tr class="calendar-week">
-            <td><span>7</span></td>
-            <td><span>8</span></td>
-            <td><span>9</span></td>
-            <td>
-                <span title="Nombre del evento.">
-                <span class="active">10</span>
-                </span>
-            </td>
-            <td><span>11</span></td>
-            <td>
-                <span title="Nombre del evento.">
-                <span class="active">12</span>
-                </span>
-            </td>
-            <td><span>13</span></td>
+            <tr className="calendar-week">
+                <td>
+                    <span>7</span>
+                </td>
+                <td>
+                    <span>8</span>
+                </td>
+                <td>
+                    <span>9</span>
+                </td>
+                <td>
+                    <span title="Nombre del evento.">
+                        <span className="active">10</span>
+                    </span>
+                </td>
+                <td>
+                    <span>11</span>
+                </td>
+                <td>
+                    <span title="Nombre del evento.">
+                        <span className="active">12</span>
+                    </span>
+                </td>
+                <td>
+                    <span>13</span>
+                </td>
             </tr>
-            <tr class="calendar-week">
-            <td><span>14</span></td>
-            <td>
-                <span title="Nombre del evento.">
-                <span class="active">15</span>
-                </span>
-            </td>
-            <td><span>16</span></td>
-            <td><span>17</span></td>
-            <td><span>18</span></td>
-            <td><span>19</span></td>
-            <td><span>20</span></td>
+            <tr className="calendar-week">
+                <td>
+                    <span>14</span>
+                </td>
+                <td>
+                    <span title="Nombre del evento.">
+                        <span className="active">15</span>
+                    </span>
+                </td>
+                <td>
+                    <span>16</span>
+                </td>
+                <td>
+                    <span>17</span>
+                </td>
+                <td>
+                    <span>18</span>
+                </td>
+                <td>
+                    <span>19</span>
+                </td>
+                <td>
+                    <span>20</span>
+                </td>
+                </tr>
+                <tr className="calendar-week">
+                <td>
+                    <span>21</span>
+                </td>
+                <td>
+                    <span>22</span>
+                </td>
+                <td>
+                    <span title="Nombre del evento.">
+                        <span className="active">23</span>
+                    </span>
+                </td>
+                <td>
+                    <span>24</span>
+                </td>
+                <td>
+                    <span>25</span>
+                </td>
+                <td>
+                    <span>26</span>
+                </td>
+                <td>
+                    <span title="Nombre del evento.">
+                        <span className="active">27</span>
+                    </span>
+                </td>
             </tr>
-            <tr class="calendar-week">
-            <td><span>21</span></td>
-            <td><span>22</span></td>
-            <td>
-                <span title="Nombre del evento.">
-                <span class="active">23</span>
-                </span>
-            </td>
-            <td><span>24</span></td>
-            <td><span>25</span></td>
-            <td><span>26</span></td>
-            <td>
-                <span title="Nombre del evento.">
-                <span class="active">27</span>
-                </span>
-            </td>
+            <tr className="calendar-week">
+                <td>
+                    <span>28</span>
+                </td>
+                <td>
+                    <span>29</span>
+                </td>
+                <td>
+                    <span>30</span>
+                </td>
+                <td>
+                    <span>31</span>
+                </td>
+                <td>
+                    <span></span>
+                </td>
+                <td>
+                    <span></span>
+                </td>
+                <td>
+                    <span></span>
+                </td>
             </tr>
-            <tr class="calendar-week">
-            <td><span>28</span></td>
-            <td><span>29</span></td>
-            <td><span>30</span></td>
-            <td><span>31</span></td>
-            <td><span></span></td>
-            <td><span></span></td>
-            <td><span></span></td>
-            </tr>
-            <tr class="calendar-week">
-            <td><span></span></td>
-            <td><span></span></td>
-            <td><span></span></td>
-            <td><span></span></td>
-            <td><span></span></td>
-            <td><span></span></td>
-            <td><span></span></td>
+            <tr className="calendar-week">
+                <td>
+                    <span></span>
+                </td>
+                <td>
+                    <span></span>
+                </td>
+                <td>
+                    <span></span>
+                </td>
+                <td>
+                    <span></span>
+                </td>
+                <td>
+                    <span></span>
+                </td>
+                <td>
+                    <span></span>
+                </td>
+                <td>
+                    <span></span>
+                </td>
             </tr>
         </tbody>
         </table>
     </div>
-    <div class="calendar-footer">
-        <div class="accordion">
-        <div class="card">
-            <button
-            class="card-header collapsed"
-            data-toggle="collapse"
-            data-target="#collapseEnero"
-            >
-            <i class="bx bx-calendar"></i>
-            <span class="collapse-title">Referencias</span>
-            </button>
-            <div id="collapseEnero" class="collapse">
-            <div class="card-body">
-                <ul class="calendar-footer-list">
-                <li>
-                    <strong>1. </strong>
-                    Nombre del evento.
-                </li>
-                <li>
-                    <strong>10. </strong>
-                    Nombre del evento.
-                </li>
-                <li>
-                    <strong>12. </strong>
-                    Nombre del evento.
-                </li>
-                <li>
-                    <strong>15. </strong>
-                    Nombre del evento.
-                </li>
-                <li>
-                    <strong>23. </strong>
-                    Nombre del evento.
-                </li>
-                <li>
-                    <strong>27. </strong>
-                    Nombre del evento.
-                </li>
-                </ul>
+
+    <div className="calendar-footer">
+        <div className="accordion">
+            <div className="accordion-item">
+                <button
+                    className="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseHeaderIcon"
+                    aria-expanded="false"
+                    aria-controls="collapseHeaderIcon"
+                >
+                    <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                        calendar_month
+                    </span>
+                    <span className="collapse-title">Referencia</span>
+                </button>
+                <div id="collapseHeaderIcon" className="accordion-collapse collapse">
+                    <div className="accordion-body">
+                        <div className="card-body">
+                            <ul className="calendar-footer-list">
+                                <li>
+                                    <strong>1. </strong>
+                                    Nombre del evento.
+                                </li>
+                                <li>
+                                    <strong>10. </strong>
+                                    Nombre del evento.
+                                </li>
+                                <li>
+                                    <strong>12. </strong>
+                                    Nombre del evento.
+                                </li>
+                                <li>
+                                    <strong>15. </strong>
+                                    Nombre del evento.
+                                </li>
+                                <li>
+                                <strong>23. </strong>
+                                    Nombre del evento.
+                                </li>
+                                <li>
+                                <strong>27. </strong>
+                                    Nombre del evento.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            </div>
-        </div>
         </div>
     </div>
-</div>`;
+ </div>`;
 
 export const CALENDAR_CHROMATIC = `<div class="calendar">
     <div class="calendar-header">
@@ -610,76 +703,83 @@ export const CALENDAR_CHROMATIC = `<div class="calendar">
         </tbody>
         </table>
     </div>
-    <div class="calendar-footer">
-        <div class="accordion">
-        <div class="card">
-            <button
-            class="card-header collapsed"
-            data-toggle="collapse"
-            data-target="#collapseEnero"
-            >
-            <i class="bx bx-calendar"></i>
-            <span class="collapse-title">Referencias</span>
-            </button>
-            <div id="collapseEnero" class="collapse">
-            <div class="card-body">
-                <ul class="calendar-footer-list">
-                <li>
-                    <strong>1. </strong>
-                    Nombre del evento.
-                </li>
-                <li>
-                    <strong>2. </strong>
-                    Nombre del evento.
-                </li>
-                <li>
-                    <strong>3. </strong>
-                    Nombre del evento.
-                </li>
-                <li>
-                    <strong>4. </strong>
-                    Nombre del evento.
-                </li>
-                <li>
-                    <strong>5. </strong>
-                    Nombre del evento.
-                </li>
-                <li>
-                    <strong>6. </strong>
-                    Nombre del evento.
-                </li>
-                <li>
-                    <strong>7. </strong>
-                    Nombre del evento.
-                </li>
-                <li>
-                    <strong>8. </strong>
-                    Nombre del evento.
-                </li>
-                <li>
-                    <strong>9. </strong>
-                    Nombre del evento.
-                </li>
-                <li>
-                    <strong>10. </strong>
-                    Nombre del evento.
-                </li>
-                <li>
-                    <strong>11. </strong>
-                    Nombre del evento.
-                </li>
-                <li>
-                    <strong>12. </strong>
-                    Nombre del evento.
-                </li>
-                <li>
-                    <strong>13. </strong>
-                    Nombre del evento.
-                </li>
-                </ul>
+    <div className="calendar-footer">
+        <div className="accordion">
+            <div className="accordion-item">
+                <button
+                    className="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseHeaderIcon"
+                    aria-expanded="false"
+                    aria-controls="collapseHeaderIcon"
+                >
+                    <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                        calendar_month
+                    </span>
+                    <span className="collapse-title">Referencia</span>
+                </button>
+                <div id="collapseHeaderIcon" className="accordion-collapse collapse">
+                    <div className="accordion-body">
+                        <div className="card-body">
+                            <ul className="calendar-footer-list">
+                                <li>
+                                    <strong>1. </strong>
+                                    Nombre del evento.
+                                </li>
+                                <li>
+                                    <strong>2. </strong>
+                                    Nombre del evento.
+                                </li>
+                                <li>
+                                    <strong>3. </strong>
+                                    Nombre del evento.
+                                </li>
+                                <li>
+                                    <strong>4. </strong>
+                                    Nombre del evento.
+                                </li>
+                                <li>
+                                <strong>5. </strong>
+                                    Nombre del evento.
+                                </li>
+                                <li>
+                                <strong>6. </strong>
+                                    Nombre del evento.
+                                </li>
+                                <li>
+                                    <strong>7. </strong>
+                                    Nombre del evento.
+                                </li>
+                                <li>
+                                    <strong>8. </strong>
+                                    Nombre del evento.
+                                </li>
+                                <li>
+                                    <strong>9. </strong>
+                                    Nombre del evento.
+                                </li>
+                                <li>
+                                    <strong>10. </strong>
+                                    Nombre del evento.
+                                </li>
+                                <li>
+                                <strong>11. </strong>
+                                    Nombre del evento.
+                                </li>
+                                <li>
+                                <strong>12. </strong>
+                                    Nombre del evento.
+                                </li>
+                                <li>
+                                <strong>13. </strong>
+                                    Nombre del evento.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            </div>
-        </div>
         </div>
     </div>
 </div>`;

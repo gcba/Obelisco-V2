@@ -43,6 +43,7 @@ $validation-icons: (
   &.is-valid,
   &.is-invalid {
     background-image: none;
+    outline: transparent;
 
     &:focus {
       @include focus-style;

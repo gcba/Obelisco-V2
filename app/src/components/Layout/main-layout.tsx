@@ -1,5 +1,5 @@
 // app/components/MainLayout.tsx
-'use client'; // Indica que este componente debe ser renderizado en el cliente
+'use client';
 
 import { usePathname } from 'next/navigation';
 
@@ -54,7 +54,6 @@ export const componentsPages = [
   { text: 'Switch', url: '/components/switch', id: 29 },
   // { text: "Tarjetas", url: "/components/cards", id: 30 },
   { text: 'Tooltip', url: '/components/tooltip', id: 31 },
-  { text: 'Tablas', url: '/components/table', id: 32 },
 ];
 
 export const gettingPages = [

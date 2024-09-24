@@ -25,7 +25,7 @@ export default function HeaderDesktop() {
           Saltar al contenido principal
         </a>
         <div className="container header-container">
-          <a href="/" className="navbar-brand">
+          <Link href="/" className="navbar-brand">
             <Image
               className="header-logo"
               src={`${basePath}/images/BA.svg`}
@@ -33,7 +33,7 @@ export default function HeaderDesktop() {
               width={76}
               height={48}
             ></Image>
-          </a>
+          </Link>
           <HeaderMobile />
           <div className="collapse navbar-collapse" id="navbarContent">
             <div className="d-none d-xl-block">

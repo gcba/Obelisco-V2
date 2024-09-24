@@ -845,41 +845,51 @@ const CalendarDocs: React.FC = () => {
                     </tbody>
                   </table>
                 </div>
+
                 <div className="calendar-footer">
                   <div className="accordion">
-                    <div className="card">
-                      <button className="card-header collapsed" data-toggle="collapse" data-target="#collapseEnero">
-                        <i className="bx bx-calendar"></i>
-                        <span className="collapse-title">Referencias</span>
+                    <div className="accordion-item">
+                      <button
+                        className="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseHeaderIcon"
+                        aria-expanded="false"
+                        aria-controls="collapseHeaderIcon"
+                      >
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">calendar_month</span>
+                        <span className="collapse-title">Referencia</span>
                       </button>
-                      <div id="collapseEnero" className="collapse">
-                        <div className="card-body">
-                          <ul className="calendar-footer-list">
-                            <li>
-                              <strong>1. </strong>
-                              Nombre del evento.
-                            </li>
-                            <li>
-                              <strong>10. </strong>
-                              Nombre del evento.
-                            </li>
-                            <li>
-                              <strong>12. </strong>
-                              Nombre del evento.
-                            </li>
-                            <li>
-                              <strong>15. </strong>
-                              Nombre del evento.
-                            </li>
-                            <li>
-                              <strong>23. </strong>
-                              Nombre del evento.
-                            </li>
-                            <li>
-                              <strong>27. </strong>
-                              Nombre del evento.
-                            </li>
-                          </ul>
+                      <div id="collapseHeaderIcon" className="accordion-collapse collapse">
+                        <div className="accordion-body">
+                          <div className="card-body">
+                            <ul className="calendar-footer-list">
+                              <li>
+                                <strong>1. </strong>
+                                Nombre del evento.
+                              </li>
+                              <li>
+                                <strong>10. </strong>
+                                Nombre del evento.
+                              </li>
+                              <li>
+                                <strong>12. </strong>
+                                Nombre del evento.
+                              </li>
+                              <li>
+                                <strong>15. </strong>
+                                Nombre del evento.
+                              </li>
+                              <li>
+                                <strong>23. </strong>
+                                Nombre del evento.
+                              </li>
+                              <li>
+                                <strong>27. </strong>
+                                Nombre del evento.
+                              </li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -893,7 +903,7 @@ const CalendarDocs: React.FC = () => {
     },
     {
       id: 'section-6',
-      title: 'Con referencia cromaticas',
+      title: 'Con referencias cromaticas',
       content: (
         <CodeBox codeHTML={CALENDAR_CHROMATIC}>
           <div className="row justify-content-center">
@@ -1098,67 +1108,77 @@ const CalendarDocs: React.FC = () => {
                 </div>
                 <div className="calendar-footer">
                   <div className="accordion">
-                    <div className="card">
-                      <button className="card-header collapsed" data-toggle="collapse" data-target="#collapseEnero">
-                        <i className="bx bx-calendar"></i>
-                        <span className="collapse-title">Referencias</span>
+                    <div className="accordion-item">
+                      <button
+                        className="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseHeaderIcon"
+                        aria-expanded="false"
+                        aria-controls="collapseHeaderIcon"
+                      >
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">calendar_month</span>
+                        <span className="collapse-title">Referencia</span>
                       </button>
-                      <div id="collapseEnero" className="collapse">
-                        <div className="card-body">
-                          <ul className="calendar-footer-list">
-                            <li>
-                              <strong>1. </strong>
-                              Nombre del evento.
-                            </li>
-                            <li>
-                              <strong>2. </strong>
-                              Nombre del evento.
-                            </li>
-                            <li>
-                              <strong>3. </strong>
-                              Nombre del evento.
-                            </li>
-                            <li>
-                              <strong>4. </strong>
-                              Nombre del evento.
-                            </li>
-                            <li>
-                              <strong>5. </strong>
-                              Nombre del evento.
-                            </li>
-                            <li>
-                              <strong>6. </strong>
-                              Nombre del evento.
-                            </li>
-                            <li>
-                              <strong>7. </strong>
-                              Nombre del evento.
-                            </li>
-                            <li>
-                              <strong>8. </strong>
-                              Nombre del evento.
-                            </li>
-                            <li>
-                              <strong>9. </strong>
-                              Nombre del evento.
-                            </li>
-                            <li>
-                              <strong>10. </strong>
-                              Nombre del evento.
-                            </li>
-                            <li>
-                              <strong>11. </strong>
-                              Nombre del evento.
-                            </li>
-                            <li>
-                              <strong>12. </strong>
-                              Nombre del evento.
-                            </li>
-                            <li>
-                              <strong>13. </strong>
-                              Nombre del evento.
-                            </li>
-                          </ul>
+                      <div id="collapseHeaderIcon" className="accordion-collapse collapse">
+                        <div className="accordion-body">
+                          <div className="card-body">
+                            <ul className="calendar-footer-list">
+                              <li>
+                                <strong>1. </strong>
+                                Nombre del evento.
+                              </li>
+                              <li>
+                                <strong>2. </strong>
+                                Nombre del evento.
+                              </li>
+                              <li>
+                                <strong>3. </strong>
+                                Nombre del evento.
+                              </li>
+                              <li>
+                                <strong>4. </strong>
+                                Nombre del evento.
+                              </li>
+                              <li>
+                                <strong>5. </strong>
+                                Nombre del evento.
+                              </li>
+                              <li>
+                                <strong>6. </strong>
+                                Nombre del evento.
+                              </li>
+                              <li>
+                                <strong>7. </strong>
+                                Nombre del evento.
+                              </li>
+                              <li>
+                                <strong>8. </strong>
+                                Nombre del evento.
+                              </li>
+                              <li>
+                                <strong>9. </strong>
+                                Nombre del evento.
+                              </li>
+                              <li>
+                                <strong>10. </strong>
+                                Nombre del evento.
+                              </li>
+                              <li>
+                                <strong>11. </strong>
+                                Nombre del evento.
+                              </li>
+                              <li>
+                                <strong>12. </strong>
+                                Nombre del evento.
+                              </li>
+                              <li>
+                                <strong>13. </strong>
+                                Nombre del evento.
+                              </li>
+
+                            </ul>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1372,6 +1392,7 @@ const CalendarDocs: React.FC = () => {
                   </ul>
                 </div>
               </div>
+              
               <div className="calendar">
                 <div className="calendar-header">
                   <h2 className="calendar-title">Febrero</h2>

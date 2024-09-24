@@ -463,8 +463,8 @@ const UpdateComponents: React.FC = () => {
     },
   ];
 
-  return  (
-    <>    
+  return (
+    <>
       <nav aria-label="Navegación secundaria">
         <ol className="breadcrumb">
           <li className="breadcrumb-item">
@@ -474,7 +474,7 @@ const UpdateComponents: React.FC = () => {
       </nav>
       <DocumentationTemplate sections={sections} />
     </>
-  )
+  );
 };
 
 export default UpdateComponents;

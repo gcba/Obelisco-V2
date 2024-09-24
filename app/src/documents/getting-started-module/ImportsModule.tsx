@@ -117,7 +117,7 @@ const ImportsModule: React.FC = () => {
   ];
 
   return (
-    <>    
+    <>
       <nav aria-label="Navegación secundaria">
         <ol className="breadcrumb">
           <li className="breadcrumb-item">
@@ -127,7 +127,7 @@ const ImportsModule: React.FC = () => {
       </nav>
       <DocumentationTemplate sections={sections} />;
     </>
-  )
+  );
 };
 
 export default ImportsModule;

@@ -60,9 +60,8 @@ const InstallationModule: React.FC = () => {
     },
   ];
 
-  
   return (
-    <>    
+    <>
       <nav aria-label="Navegación secundaria">
         <ol className="breadcrumb">
           <li className="breadcrumb-item">

@@ -38,10 +38,10 @@ const sections = [
       <>
         <CodeBox codeHTML={DROPDOWN}>
           <div className="container">
-            <div className="dropdown dropdown-lg">
+            <div className="dropdown">
               <button
                 type="button"
-                className="btn btn-dropdown btn-dropdown-border"
+                className="btn btn-dropdown btn-dropdown-border btn-lg"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
@@ -79,10 +79,10 @@ const sections = [
         <br />
         <CodeBox codeHTML={DROPDOWN_MENU_ICON}>
           <div className="container">
-            <div className="dropdown dropdown-lg">
+            <div className="dropdown">
               <button
                 type="button"
-                className="btn btn-dropdown btn-dropdown-border"
+                className="btn btn-dropdown btn-dropdown-border btn-lg"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
@@ -113,10 +113,10 @@ const sections = [
         <br />
         <CodeBox codeHTML={DROPDOWN_MENU_ICON_ONLY}>
           <div className="container">
-            <div className="dropdown dropdown-lg">
+            <div className="dropdown">
               <button
                 type="button"
-                className="btn btn-dropdown btn-dropdown-border"
+                className="btn btn-dropdown btn-dropdown-border btn-lg"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
                 aria-label="Menu"
@@ -154,10 +154,10 @@ const sections = [
       <>
         <CodeBox codeHTML={DROPDOWN_MENU_RIGHT}>
           <div className="container">
-            <div className="dropdown dropdown-lg ms-auto">
+            <div className="dropdown ms-auto">
               <button
                 type="button"
-                className="btn btn-dropdown btn-dropdown-border"
+                className="btn btn-dropdown btn-dropdown-border btn-lg"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
@@ -196,10 +196,10 @@ const sections = [
       <>
         <CodeBox codeHTML={DROPDOWN_CASCADE}>
           <div className="container">
-            <div className="dropdown dropdown-lg">
+            <div className="dropdown">
               <button
                 type="button"
-                className="btn btn-dropdown btn-dropdown-border"
+                className="btn btn-dropdown btn-dropdown-border btn-lg"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
                 data-bs-auto-close="outside"
@@ -252,10 +252,10 @@ const sections = [
         <br />
         <CodeBox codeHTML={DROPDOWN_CASCADE_RIGHT}>
           <div className="container">
-            <div className="dropdown dropdown-lg ms-auto">
+            <div className="dropdown ms-auto">
               <button
                 type="button"
-                className="btn btn-dropdown btn-dropdown-border"
+                className="btn btn-dropdown btn-dropdown-border btn-lg"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
                 data-bs-auto-close="outside"

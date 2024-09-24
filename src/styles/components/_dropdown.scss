@@ -18,42 +18,50 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
 
 //Mixin tamaños de dropdown
 @mixin dropdown-sm() {
-  .btn-dropdown,
-  .dropdown-item {
-    min-height: 2rem;
-    padding: $dropdown-item-padding-sm;
-  }
+  min-height: 2rem;
+  padding: $dropdown-item-padding-sm;
 
-  .form-checkbox .form-checkbox-label,
-  .form-radio.reverse .form-radio-label {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-    min-height: 2rem;
-  }
-
-  .form-checkbox .form-checkbox-input,
-  .form-radio.reverse .form-radio-input {
-    top: 0.25rem;
+  +.dropdown-menu {
+    .dropdown-item {
+      min-height: 2rem;
+      padding: $dropdown-item-padding-sm;
+    }
+  
+    .form-checkbox .form-checkbox-label,
+    .form-radio.reverse .form-radio-label {
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
+      min-height: 2rem;
+    }
+  
+    .form-checkbox .form-checkbox-input,
+    .form-radio.reverse .form-radio-input {
+      top: 0.25rem;
+    }
   }
 }
 
 @mixin dropdown-lg() {
-  .btn-dropdown,
-  .dropdown-item {
-    min-height: 3rem;
-    padding: $dropdown-item-padding-lg;
-  }
+  min-height: 3rem;
+  padding: $dropdown-item-padding-lg;
 
-  .form-checkbox .form-checkbox-label,
-  .form-radio.reverse .form-radio-label {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    min-height: 3rem;
-  }
+  +.dropdown-menu {
+    .dropdown-item {
+      min-height: 3rem;
+      padding: $dropdown-item-padding-lg;
+    }
 
-  .form-checkbox .form-checkbox-input,
-  .form-radio.reverse .form-radio-input {
-    top: 0.75rem;
+    .form-checkbox .form-checkbox-label,
+    .form-radio.reverse .form-radio-label {
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+      min-height: 3rem;
+    }
+
+    .form-checkbox .form-checkbox-input,
+    .form-radio.reverse .form-radio-input {
+      top: 0.75rem;
+    }
   }
 }
 
@@ -154,13 +162,23 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
         }
       }
     }
+    
+    // Tamaños de dropdown
+    &.btn-sm {
+      @include dropdown-sm;
+    }
+
+    &.btn-lg {
+      @include dropdown-lg;
+    }
   }
 
   .dropdown-menu {
     border: 0;
     border-radius: $border-radius-lg;
     padding: 0;
-    margin-top: 0.5rem !important;
+    margin-top: 0.25rem !important;
+    margin-bottom: 0.25rem !important;
     outline: $outline-border;
     @include dropdown-size('min');
     max-width: 348px;
@@ -414,14 +432,11 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
 
     // Disposición de dropdown-menu a la derecha
     &.dropdown-menu-end {
-      inset: 0 0 auto auto !important;
-      transform: translate3d(0.5px, 50px, 0) !important;
-
       .dropdown-item .item-text,
       .sub-dropdown .btn-dropdown .btn-dropdown-text {
         text-align: right;
       }
-
+      // Desplegable en cascada
       .dropdown.sub-dropdown {
         .btn-dropdown {
           .btn-dropdown-icon {
@@ -439,14 +454,5 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
         }
       }
     }
-  }
-
-  // Tamaños de dropdown
-  &-sm {
-    @include dropdown-sm;
-  }
-
-  &-lg {
-    @include dropdown-lg;
   }
 }

@@ -13,7 +13,7 @@ export const stylesPages = [
 export const formsPages = [
   { text: 'Buscador', url: '/components/form-search', id: 1 },
   { text: 'Casillas de selección', url: '/components/form-selection', id: 2 },
-  // { text: "Formulario de Textos", url: "/components/form-text", id: 3 },
+  { text: 'Formulario de Textos', url: '/components/form-text', id: 3 },
 ];
 
 export const organismsPages = [
@@ -25,13 +25,13 @@ export const organismsPages = [
 export const componentsPages = [
   { text: 'Accesos', url: '/components/access', id: 1 },
   { text: 'Alertas', url: '/components/alert', id: 2 },
-  // { text: "Banner", url: "/components/banner", id: 3 },
+  { text: 'Banner', url: '/components/banner', id: 3 },
   // { text: "Barra de desplazamiento", url: "/components/scrollbar", id: 4 },
   // { text: "Barra de progreso", url: "/components/progress-bar", id: 5 },
   // { text: "Bloque de trámite", url: "/components/block", id: 6 },
   { text: 'Botones', url: '/components/button', id: 7 },
-  // { text: "Calendario", url: "/components/calendar", id: 8 },
-  // { text: "Colapsable", url: "/components/collapse", id: 9 },
+  { text: "Calendario", url: "/components/calendar", id: 8 },
+  { text: 'Colapsables', url: '/components/collapse', id: 9 },
   { text: 'Desplegable de navegación', url: '/components/dropdown-nav', id: 10 },
   { text: 'Desplegable de selección', url: '/components/dropdown-sel', id: 11 },
   { text: 'Destacado', url: '/components/highlighted', id: 12 },
@@ -41,7 +41,7 @@ export const componentsPages = [
   // { text: "Lista de enlaces", url: "/components/list-link", id: 16 },
   // { text: "Lista de pasos", url: "/components/list-step", id: 17 },
   // { text: "Lista informativa ", url: "/components/list-informative", id: 18 },
-  // { text: "Mapa", url: "/components/map", id: 19 },
+  { text: 'Mapa', url: '/components/map', id: 19 },
   { text: 'Mensaje de estado', url: '/components/status-message', id: 20 },
   { text: 'Migas de pan', url: '/components/breadcrumb', id: 21 },
   { text: 'Modal', url: '/components/modal', id: 22 },

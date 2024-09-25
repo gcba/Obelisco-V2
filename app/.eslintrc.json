@@ -13,7 +13,6 @@
   },
   "ignorePatterns": ["/*.config.*", "package.json", "out/", "styles/", "public/"],
   "rules": {
-    "quotes": [2, "single", { "avoidEscape": true }],
     "space-before-function-paren": [
       "error",
       {

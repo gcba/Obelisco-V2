@@ -49,11 +49,9 @@ $card-icon-bg: $grisulado-50;
 $card-footer-icon-size: 1rem;
 
 $card-event-img-border-radius: $border-radius-lg * 1.5;
-$card-event-name-bg-gradient: linear-gradient(
-  0deg,
-  rgba($grisulado-900, 0.75) 25%,
-  rgba($grisulado-900, 0) 100%
-);
+$card-event-name-bg-gradient: linear-gradient(0deg,
+    rgba($grisulado-900, 0.75) 25%,
+    rgba($grisulado-900, 0) 100%);
 $card-event-name-text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
 $card-event-thumb-bracket: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="24" viewBox="0 0 12 24"> <circle fill="%236F6F6F" cx="6" cy="18" r="6"/> <path fill="%23E6EBF0" d="M6,0L6,0C3.8,0,2,1.8,2,4v14c0,2.2,1.8,4,4,4h0c2.2,0,4-1.8,4-4V4C10,1.8,8.2,0,6,0z"/> <path fill="%23FFFFFF" d="M6,0L6,0C3.8,0,2,1.8,2,4v6c0,2.2,1.8,4,4,4h0c2.2,0,4-1.8,4-4V4C10,1.8,8.2,0,6,0z"/> </svg>');
 
@@ -80,6 +78,7 @@ $collapse-info-subtitle-size: 1rem;
       .card-title-link {
         text-decoration: none;
         color: $body-color;
+
         &:after {
           content: '';
           border-radius: 0.5rem;
@@ -94,6 +93,7 @@ $collapse-info-subtitle-size: 1rem;
           color: $hover-color; // $color-hover
           text-decoration: underline;
           text-decoration-thickness: 1px;
+
           &:after {
             box-shadow: 0 0 0 2px $hover-color;
           }
@@ -106,6 +106,7 @@ $collapse-info-subtitle-size: 1rem;
           color: $color-text;
           text-decoration: underline;
           text-decoration-thickness: 1px;
+
           &:after {
             outline: $card-focus-box-shadow;
             outline: 0.25rem solid transparent;
@@ -245,229 +246,232 @@ $collapse-info-subtitle-size: 1rem;
       right: 0;
       bottom: 0;
       margin: 0;
-      padding: ($card-spacer * 3) $card-spacer-lg $card-spacer
-        ($card-spacer-lg + $card-picture-size-lg + $card-spacer-sm);
-      background: $card-event-name-bg-gradient;
-      text-shadow: $card-event-name-text-shadow;
-      color: $white;
-      z-index: 2;
-    }
+      padding: ($card-spacer * 3) $card-spacer-lg $card-spacer (
+        $card-spacer-lg + $card-picture-size-lg + $card-spacer-sm
+      );
+    background: $card-event-name-bg-gradient;
+    text-shadow: $card-event-name-text-shadow;
+    color: $white;
+    z-index: 2;
   }
+}
 
-  .unbordered {
+.unbordered {
+  box-shadow: none;
+  outline: none;
+  background: transparent;
+  border: none;
+
+  &.card-simple {
     box-shadow: none;
     outline: none;
     background: transparent;
     border: none;
 
-    &.card-simple {
-      box-shadow: none;
-      outline: none;
-      background: transparent;
-      border: none;
-
-      &:hover {
-        box-shadow: none;
-        outline: none;
-        background: transparent;
-        border: none;
-      }
-    }
-
     &:hover {
       box-shadow: none;
       outline: none;
       background: transparent;
       border: none;
-
-      .card-title {
-        a:visited {
-          color: $hover-color;
-        }
-      }
     }
+  }
 
-    &:focus-within {
-      box-shadow: none;
-      outline: none;
-      background: transparent;
-      border: none;
-      .card-title {
-        a:focus {
-          color: $color-text;
-          outline: 2px solid $focus-color;
-        }
-      }
-    }
+  &:hover {
+    box-shadow: none;
+    outline: none;
+    background: transparent;
+    border: none;
 
-    &:visited {
-      .card-title {
-        a:visited {
-          color: $color-text;
-        }
+    .card-title {
+      a:visited {
+        color: $hover-color;
       }
     }
   }
 
-  &.unbordered {
+  &:focus-within {
+    box-shadow: none;
+    outline: none;
+    background: transparent;
+    border: none;
+
+    .card-title {
+      a:focus {
+        color: $color-text;
+        outline: 2px solid $focus-color;
+      }
+    }
+  }
+
+  &:visited {
+    .card-title {
+      a:visited {
+        color: $color-text;
+      }
+    }
+  }
+}
+
+&.unbordered {
+  box-shadow: none !important;
+  outline: none !important;
+  background: transparent !important;
+  border: none !important;
+
+  &.card-simple {
     box-shadow: none !important;
     outline: none !important;
     background: transparent !important;
     border: none !important;
 
-    &.card-simple {
-      box-shadow: none !important;
-      outline: none !important;
-      background: transparent !important;
-      border: none !important;
-
-      &:hover {
-        box-shadow: none !important;
-        outline: none !important;
-        background: transparent !important;
-        border: none !important;
-      }
-    }
-
     &:hover {
       box-shadow: none !important;
       outline: none !important;
       background: transparent !important;
       border: none !important;
-
-      .card-title {
-        a:visited {
-          color: $hover-color;
-        }
-      }
     }
+  }
 
-    &:focus-within {
-      box-shadow: none;
-      outline: none;
-      background: transparent;
-      border: none;
-      .card-title {
-        a:focus {
-          color: $color-text;
-          outline: 2px solid $focus-color;
-        }
-      }
-    }
+  &:hover {
+    box-shadow: none !important;
+    outline: none !important;
+    background: transparent !important;
+    border: none !important;
 
-    &:visited {
-      .card-title {
-        a:visited {
-          color: $color-text;
-        }
+    .card-title {
+      a:visited {
+        color: $hover-color;
       }
     }
   }
 
-  &.card-horizontal {
-    flex-direction: row;
-    width: 100%;
+  &:focus-within {
+    box-shadow: none;
+    outline: none;
+    background: transparent;
+    border: none;
 
-    .card-img-left {
-      width: $card-picture-size;
-      height: $card-picture-size;
-      aspect-ratio: 1 / 1;
-      margin: $card-spacer;
-      margin-right: 0;
-      border-radius: $card-border-radius;
-      object-fit: cover;
-      object-position: center;
-      flex-shrink: 0;
-
-      + .card-body {
-        padding-right: 2rem;
+    .card-title {
+      a:focus {
+        color: $color-text;
+        outline: 2px solid $focus-color;
       }
     }
+  }
 
-    .card-icon-left {
-      @extend .card-icon;
-      @extend .card-img-left;
+  &:visited {
+    .card-title {
+      a:visited {
+        color: $color-text;
+      }
     }
+  }
+}
 
-    .card-body {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      padding: 1.5rem 1rem;
+&.card-horizontal {
+  flex-direction: row;
+  width: 100%;
+
+  .card-img-left {
+    width: $card-picture-size;
+    height: $card-picture-size;
+    aspect-ratio: 1 / 1;
+    margin: $card-spacer;
+    margin-right: 0;
+    border-radius: $card-border-radius;
+    object-fit: cover;
+    object-position: center;
+    flex-shrink: 0;
+
+    +.card-body {
+      padding-right: 2rem;
     }
+  }
 
-    &.card-lg {
+  .card-icon-left {
+    @extend .card-icon;
+    @extend .card-img-left;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1.5rem 1rem;
+  }
+
+  &.card-lg {
+    .card-img-left {
+      width: $card-picture-size-lg;
+      height: $card-picture-size-lg;
+    }
+  }
+
+  &.card-simple.card-horizontal {
+    flex-direction: column;
+
+    .card-img-left {
+      width: $card-picture-size-lg-mobile;
+      height: $card-picture-size-lg-mobile;
+      margin: 0;
+      border-radius: 0;
+
+      +.card-body {
+        padding-left: 0;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    &.card-simple.card-horizontal {
+      flex-direction: row;
+
       .card-img-left {
         width: $card-picture-size-lg;
         height: $card-picture-size-lg;
-      }
-    }
+        margin: $card-spacer;
 
-    &.card-simple.card-horizontal {
-      flex-direction: column;
-
-      .card-img-left {
-        width: $card-picture-size-lg-mobile;
-        height: $card-picture-size-lg-mobile;
-        margin: 0;
-        border-radius: 0;
-
-        + .card-body {
-          padding-left: 0;
-        }
-      }
-    }
-
-    @include media-breakpoint-up(md) {
-      &.card-simple.card-horizontal {
-        flex-direction: row;
-
-        .card-img-left {
-          width: $card-picture-size-lg;
-          height: $card-picture-size-lg;
-          margin: $card-spacer;
-
-          + .card-body {
-            padding: 1.5rem 1rem;
-            padding-left: 0.5rem;
-          }
-        }
-      }
-    }
-
-    //Estilos para tarjeta horizontal temática
-    &.card-simple.card-lg {
-      flex-direction: column;
-
-      .card-img-left {
-        width: 6rem;
-        height: 6rem;
-        aspect-ratio: 1/1;
-        margin: 0;
-
-        + .card-body {
-          padding-left: 0;
-        }
-      }
-
-      .card-body {
-        padding: 1.5rem 1rem;
-        padding-left: 0;
-      }
-
-      @include media-breakpoint-up(md) {
-        flex-direction: row;
-        gap: 1.5rem;
-
-        .card-img-left {
-          width: 8rem;
-          height: 8rem;
+        +.card-body {
+          padding: 1.5rem 1rem;
+          padding-left: 0.5rem;
         }
       }
     }
   }
 
-  @extend %divCardStyles;
+  //Estilos para tarjeta horizontal temática
+  &.card-simple.card-lg {
+    flex-direction: column;
+
+    .card-img-left {
+      width: 6rem;
+      height: 6rem;
+      aspect-ratio: 1/1;
+      margin: 0;
+
+      +.card-body {
+        padding-left: 0;
+      }
+    }
+
+    .card-body {
+      padding: 1.5rem 1rem;
+      padding-left: 0;
+    }
+
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+      gap: 1.5rem;
+
+      .card-img-left {
+        width: 8rem;
+        height: 8rem;
+      }
+    }
+  }
+}
+
+@extend %divCardStyles;
 }
 
 .card.unbordered,
@@ -491,28 +495,25 @@ button.card {
   text-decoration: $card-text-decoration;
 
 
-  //Estilos para lista de tarjetas verticales desplazable
-  .responsive-scroll {
-    &.vertical-cards-container {
-      max-width: fit-content;
-      border-radius: 0.5rem;
-      gap: 1rem;
-      padding: 0.25rem 0.25rem 0.75rem;
 
-      .card {
-        min-width: 348px !important;
-        margin: 0.125rem;
-
-        @media (max-width: 400px) {
-          min-width: 80vw;
-        }
-
-      }
-    }
-  }
 }
 
-.responsive-scroll.vertical-cards-container .card {
-  min-width: 348px !important;
-  margin: 0.125rem;
+//Estilos para lista de tarjetas verticales desplazable
+.responsive-scroll {
+  &.vertical-cards-container {
+    max-width: fit-content;
+    border-radius: 0.5rem;
+    gap: 1rem;
+    padding: 0.25rem 0.25rem 0.75rem;
+
+    .card {
+      min-width: 348px !important;
+      margin: 0.125rem;
+
+      @media (max-width: 400px) {
+        min-width: 80vw;
+      }
+
+    }
+  }
 }

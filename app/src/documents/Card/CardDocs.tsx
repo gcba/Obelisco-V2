@@ -24,6 +24,12 @@ const CardDocs: React.FC = () => {
       content: (
         <div>
           <MainDescription description="Las tarjetas son componentes accionables que se utilizan en grupo para comunicar información que requiere de cierto tipo de categorización y jerarquización visual. Se visualizan en contenedores flexibles y actúan como punto de entrada a un tema en particular." />
+          <p className="lead mb-4">
+            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
+            <a href="https://gcba.github.io/estandares/componentes/acceso/" target="_blank" rel="noopener noreferrer">
+              enlace.
+            </a>
+          </p>
         </div>
       ),
     },
@@ -37,7 +43,7 @@ const CardDocs: React.FC = () => {
 
           <CodeBox codeHTML={HORIZONTAL_ICON}>
             <div className="container">
-              <div className="col-6">
+              <div className="col-xl-6 col-lg-6 col-md-6 col-sm-8 col-xs-12  col-sm-12 ">
                 <div className="card card-horizontal">
                   <i className="bx bxs-info-circle card-icon-left"></i>
                   <div className="card-body">
@@ -69,7 +75,7 @@ const CardDocs: React.FC = () => {
 
           <CodeBox codeHTML={HORIZONTAL_IMG}>
             <div className="container">
-              <div className="col-6">
+              <div className="col-xl-6 col-lg-6 col-md-6 col-sm-8 col-xs-12 ">
                 <div className="card card-horizontal">
                   <img src="https://gcba.github.io/Obelisco/cards/img-left.jpg" className="card-img-left" alt="Img GCBA" />
                   <div className="card-body">
@@ -101,7 +107,7 @@ const CardDocs: React.FC = () => {
 
           <CodeBox codeHTML={HORIZONTAL_TEXT}>
             <div className="container">
-              <div className="col-6">
+              <div className="col-xl-6 col-lg-6 col-md-6 col-sm-8 col-xs-12 ">
                 <div className="card card-horizontal">
                   <div className="card-body">
                     <h5 className="card-title">
@@ -130,7 +136,7 @@ const CardDocs: React.FC = () => {
           <h3 className="mt-5" >Temática</h3>
           <CodeBox codeHTML={HORIZONTAL_THEME}>
             <div className="container">
-              <div className="col-6">
+              <div className="col-xl-6 col-lg-6 col-md-6 col-sm-8 col-xs-12 ">
                 <div className="card card-horizontal unbordered">
                   <img className="card-img-left" src="https://gcba.github.io/Obelisco/cards/home.svg" alt="Imagen Tematica" />
                   <div className="card-body">
@@ -158,7 +164,7 @@ const CardDocs: React.FC = () => {
           <h3>Con ícono</h3>
           <CodeBox codeHTML={VERTICAL_ICON}>
             <div className="container">
-              <div className="col-6">
+              <div className="col-xl-6 col-lg-6 col-md-6 col-sm-8 col-xs-12 ">
                 <div className="card">
                   <div className="card-body">
                     <i className="bx bxs-info-circle card-icon"></i>
@@ -189,7 +195,7 @@ const CardDocs: React.FC = () => {
           <h3 className="mt-5" >Con imagen</h3>
           <CodeBox codeHTML={VERTICAL_IMG}>
             <div className="container">
-              <div className="col-6">
+              <div className="col-xl-6 col-lg-6 col-md-6 col-sm-8 col-xs-12 ">
                 <div className="card">
                   <img className="card-img-top" src="https://gcba.github.io/Obelisco/cards/img-top.jpg" alt="Imagen Tarjeta Noticia" />
                   <div className="card-body">
@@ -208,7 +214,7 @@ const CardDocs: React.FC = () => {
           <h3 className="mt-5" >Noticia</h3>
           <CodeBox codeHTML={VERTICAL_NOTICE}>
             <div className="container">
-              <div className="col-6">
+              <div className="col-xl-6 col-lg-6 col-md-6 col-sm-8 col-xs-12 ">
                 <div className="card">
                   <img className="card-img-top" src="https://gcba.github.io/Obelisco/cards/img-top.jpg" alt="Imagen Tarjeta Noticia" />
                   <div className="card-body">
@@ -238,7 +244,7 @@ const CardDocs: React.FC = () => {
           <h3 className="mt-5" >Agenda</h3>
           <CodeBox codeHTML={VERTICAL_AGENDA}>
             <div className="container">
-              <div className="col-6">
+              <div className="col-xl-6 col-lg-6 col-md-6 col-sm-8 col-xs-12 ">
                 <div className="card">
                   <img className="card-img-top" src="https://gcba.github.io/Obelisco/cards/img-top.jpg" alt="Imagen Tarjeta Noticia" />
                   <div className="card-body">

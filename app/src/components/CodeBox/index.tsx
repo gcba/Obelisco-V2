@@ -179,7 +179,10 @@ const CodeBox = ({ codeHTML, children, codeJS }: { codeHTML: string; children?: 
             </button>
           </div>
           {showButtonHTML && (
-            <button className={`btn btn-outline-link btn-sm my-2 ${styles.codeBoxButton}`} onClick={toggleExpandHTML}>
+            <button
+              className={`btn btn-outline-tertiary btn-sm my-2 ${styles.codeBoxButton}`}
+              onClick={toggleExpandHTML}
+            >
               {isExpandedHTML ? 'Ver menos' : 'Ver más'}
               <span
                 className={`material-symbols-rounded ${styles.codeBoxButtonIcon} ${isExpandedHTML ? styles.expanded : ''}`}

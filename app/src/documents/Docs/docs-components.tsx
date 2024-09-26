@@ -6,7 +6,7 @@ import MainDescription from '@/components/Template/MainDescription';
 const UpdateComponents: React.FC = () => {
   const sections = [
     {
-      title: 'Obelisco V2',
+      title: 'Cambios en componentes',
       content: (
         <>
           <MainDescription description="En esta sección encontraremos la documentación sobre los cambios que se hicieron sobre los componentes en la nueva versión de Obelisco." />
@@ -81,6 +81,17 @@ const UpdateComponents: React.FC = () => {
     },
     {
       id: 'section-3',
+      title: 'Bloque de trámite',
+      content: (
+        <ul className="docs-list">
+          <li>
+            Se elimina la clase <code>.card</code>.
+          </li>
+        </ul>
+      ),
+    },
+    {
+      id: 'section-4',
       title: 'Botones',
       content: (
         <ul className="docs-list">
@@ -88,17 +99,66 @@ const UpdateComponents: React.FC = () => {
             Se elimina la clase <code>.btn-icon</code>, no es necesaria colocarla al utilizar iconos o spinner en botón.{' '}
           </li>
           <li>
-            Se agrega la clase <code>.o-icon</code> a los iconos de Boxicons y Material Icons Rounded.{' '}
+            Se agrega la clase <code>.o-icon</code> a los iconos de Boxicons y Material Symbols Rounded.{' '}
           </li>
           <li>
             Se crea la clase <code>.btn-xs</code> para los botones que son utilizados dentro de tablas.{' '}
+          </li>
+          <li>
+            Se crea la clase <code>.btn-tertiary</code>.{' '}
           </li>
           <li>Los botones primary y secondary han cambiado de color.</li>
         </ul>
       ),
     },
     {
-      id: 'section-4',
+      id: 'section-5',
+      title: 'Banner',
+      content: (
+        <ul className="docs-list">
+          <li>
+            Se agrega la clase <code>.o-icon</code> al ícono del componente <strong>banner</strong> con ícono.
+          </li>
+        </ul>
+      )
+    },
+    {
+      id: 'section-6',
+      title: 'Calendario',
+      content: (
+        <ul className="docs-list">
+          <li>
+            Se modifica la estructura HTML del colapsable en la variante &apos;Con colapsable&apos; acorde a
+            actualización del componente Colapsable.
+          </li>
+        </ul>
+      ),
+    },
+    {
+      id: 'section-7',
+      title: 'Colapsables',
+      content: (
+        <ul className="docs-list">
+          <li>
+            Se modifica estructura HTML del componente, acorde a Bootstrap 5. Se reemplazan las clases{' '}
+            <code>.card</code>, <code>.card-header</code>, y <code>.card-body</code> por <code>.accordion-item</code>,{' '}
+            <code>.accordion-button</code> y<code>.accordion-body</code>, respectivamente.
+          </li>
+          <li>
+            Se reemplazan los atributos <code>&apos;data-toggle&apos;</code> y <code>&apos;data-target&apos;</code> por{' '}
+            <code>&apos;data-bs-toggle&apos;</code> y <code>&apos;data-bs-target&apos;</code>, respectivamente. Se
+            agregan los atributos <code>&apos;aria-expanded&apos;</code> y <code>&apos;aria-controls&apos;</code>.
+          </li>
+          <li>
+            La variante de colapsable con encabezado con fondo blanco utiliza la clase <code>.item-white</code>{' '}
+            acompañando a la clase <code>.accordion-item</code>.
+          </li>
+          <li>Se reemplaza la estructura HTML de la lista e información dentro de colapsable</li>
+        </ul>
+      ),
+    },
+    {
+      id: 'section-8',
       title: 'Colores',
       content: (
         <div id="colores" className="container">
@@ -147,7 +207,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-5',
+      id: 'section-9',
       title: 'Desplegables de navegación y selección',
       content: (
         <>
@@ -173,7 +233,11 @@ const UpdateComponents: React.FC = () => {
               <code>.dropdown-menu-right</code> por <code>.dropdown-menu-end</code>.
             </li>
             <li>
-              Se agrega la clase <code>.o-icon</code> a los iconos de Boxicons y Material Icons Rounded.
+              Se agrega la clase <code>.o-icon</code> a los iconos de Boxicons y Material Symbols Rounded.
+            </li>
+            <li>
+              Respecto a los tamaños de desplegables, se reemplazan las clases <code>.btn-dropdown-lg</code> y{' '}
+              <code>.btn-dropdown-sm</code> por <code>.btn-lg</code> y <code>.btn-sm</code>, respectivamente.
             </li>
             <li>
               Se modifica la estructura HTML de <strong>&apos;Desplegable con cascada&apos;</strong>, se utiliza la
@@ -181,12 +245,6 @@ const UpdateComponents: React.FC = () => {
               desplegable el atributo <code>data-bs-auto-close=&quot;outside&quot;</code>. El dropdown en cascada (el
               que se encuentra dentro de dropdown) tiene la misma estructura HTML que dropdown, con la diferencia de que
               al <code>div</code> con clase <code>.dropdown</code> se le agrega la clase <code>.sub-dropdown</code>.
-            </li>
-            <li>
-              Respecto a los tamaños de desplegables, se crean las clases <code>.dropdown-lg</code> y{' '}
-              <code>.dropdown-sm</code>, las cuales se utilizan en la etiqueta <code>div</code> con clase{' '}
-              <code>.dropdown</code>, y se eliminan las clases <code>.btn-dropdown-lg</code> y{' '}
-              <code>.btn-dropdown-sm</code> de la etiqueta <code>button</code> del desplegable.
             </li>
             <li>
               Se modifica la estructura HTML de <strong>&apos;Desplegable de selección&apos;</strong>, se utiliza la
@@ -201,7 +259,22 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-6',
+      id: 'section-10',
+      title: 'Destacado',
+      content: (
+        <ul className="docs-list">
+          <li>
+            Se eliminan las clases <code>.card</code> y <code>.card-simple</code>.
+          </li>
+          <li>
+            Para la disposición de Destacado conjunto, las clases <code>.card-deck</code> y <code>.max-cards-2</code>{' '}
+            quedan deprecadas, se reemplazan por <code>.highlighted-max-2</code>.
+          </li>
+        </ul>
+      ),
+    },
+    {
+      id: 'section-11',
       title: 'Enlace',
       content: (
         <ul className="docs-list">
@@ -212,7 +285,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-7',
+      id: 'section-12',
       title: 'Etiquetas',
       content: (
         <ul className="docs-list">
@@ -226,7 +299,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-8',
+      id: 'section-13',
       title: 'Formulario - Casillas de selección (Radio y Checkbox)',
       content: (
         <ul className="docs-list">
@@ -261,7 +334,30 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-9',
+      id: 'section-14',
+      title: 'Formularios de texto',
+      content: (
+        <ul className="docs-list">
+          <li>
+            Se elimina la clase <code>.form-group</code>.
+          </li>
+          <li>
+            Se crea la clase <code>.form-label</code>, la cual se asigna al <code>label</code> del campo.
+          </li>
+          <li>
+            Se elimina la clase <code>.form-search</code> que se le asignaba anteriormente al <code>form</code>.
+          </li>
+          <li>
+            Se crea la clase <code>.search-container</code>, que se asigna a un <code>div</code> contenedor del input de búsqueda y su botón.
+          </li>
+          <li>
+            Se crea la clase <code>.input-search-with-button</code>, asignada al input de búsqueda, permitiendo que el botón con el icono funcione como botón de búsqueda.
+          </li>
+        </ul>
+      )
+    },
+    {
+      id: 'section-15',
       title: 'Grilla',
       content: (
         <div id="grilla" className="container">
@@ -315,7 +411,57 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-10',
+      id: 'section-16',
+      title: 'Header (encabezado)',
+      content: (
+        <ul className="docs-list">
+          <li>
+            Se remplazan clases <code>.navbar-light</code> y <code>.navbar-expand-lg</code> por <code>.o-header</code>.
+          </li>
+          <li>
+            La estructura de los componentes desplegables y buscador, se ha modificado por lo que deben ser modificados
+            en el header también.
+          </li>
+        </ul>
+      ),
+    },
+    {
+      id: 'section-17',
+      title: 'Iconos',
+      content: (
+        <ul className="docs-list">
+          <li>
+            Se crea la clase <code>.o-icon</code>. Todo componente de Obelisco que lleve un ícono de Boxicons o Material
+            Symbols requiere que se le añada la clase <code>.o-icon</code> para que aplique los estilos correspondientes
+            a su componente.
+          </li>
+        </ul>
+      ),
+    },
+    {
+      id: 'section-18',
+      title: 'Lista de pasos',
+      content: (
+        <ul className="docs-list">
+          <li>
+            Se agrega la clase <code>.list-steps-item-title</code> a los títulos de los ítems de la lista de pasos.
+          </li>
+        </ul>
+      ),
+    },
+    {
+      id: 'section-19',
+      title: 'Mapa',
+      content: (
+        <ul className="docs-list">
+          <li>
+            Se elimina la clase <code>.card</code>.
+          </li>
+        </ul>
+      ),
+    },
+    {
+      id: 'section-20',
       title: 'Mensaje de estados',
       content: (
         <>
@@ -331,7 +477,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-11',
+      id: 'section-21',
       title: 'Modal',
       content: (
         <ul className="docs-list">
@@ -356,7 +502,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-12',
+      id: 'section-22',
       title: 'Pestaña',
       content: (
         <ul className="docs-list">
@@ -384,7 +530,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-13',
+      id: 'section-23',
       title: 'Tipografía',
       content: (
         <ul className="docs-list">
@@ -418,20 +564,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-14',
-      title: 'Iconos',
-      content: (
-        <ul className="docs-list">
-          <li>
-            Se crea la clase <code>.o-icon</code>. Todo componente de Obelisco que lleve un ícono de Boxicons o Material
-            Symbols requiere que se le añada la clase <code>.o-icon</code> para que aplique los estilos correspondientes
-            a su componente.
-          </li>
-        </ul>
-      ),
-    },
-    {
-      id: 'section-15',
+      id: 'section-24',
       title: 'Accesibilidad',
       content: (
         <ul className="docs-list">
@@ -442,7 +575,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-16',
+      id: 'section-25',
       title: 'Comenzar a usar componentes',
       content: (
         <>
@@ -463,7 +596,18 @@ const UpdateComponents: React.FC = () => {
     },
   ];
 
-  return <DocumentationTemplate sections={sections} />;
+  return (
+    <>
+      <nav aria-label="Navegación secundaria">
+        <ol className="breadcrumb">
+          <li className="breadcrumb-item">
+            <Link href="/documentation">Documentación</Link>
+          </li>
+        </ol>
+      </nav>
+      <DocumentationTemplate sections={sections} />
+    </>
+  );
 };
 
 export default UpdateComponents;

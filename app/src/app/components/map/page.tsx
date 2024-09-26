@@ -1,5 +1,5 @@
 import MapDocs from '@/documents/Map/MapDocs';
 
-export default function LinkPage() {
+export default function MapPage() {
   return <MapDocs />;
 }

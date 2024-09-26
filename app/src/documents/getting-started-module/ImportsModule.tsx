@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
@@ -123,7 +124,18 @@ const ImportsModule: React.FC = () => {
     },
   ];
 
-  return <DocumentationTemplate sections={sections} />;
+  return (
+    <>
+      <nav aria-label="Navegación secundaria">
+        <ol className="breadcrumb">
+          <li className="breadcrumb-item">
+            <Link href="/getting-started">Inicio</Link>
+          </li>
+        </ol>
+      </nav>
+      <DocumentationTemplate sections={sections} />;
+    </>
+  );
 };
 
 export default ImportsModule;

@@ -18,17 +18,17 @@ body {
   box-sizing: border-box;
 }
 
-// ::-webkit-scrollbar {
-//   width: 8px;
-// }
+::-webkit-scrollbar {
+  width: 8px;
+}
 
-// ::-webkit-scrollbar-thumb {
-//   background-color: #38485c;
-// }
+::-webkit-scrollbar-thumb {
+  background-color: #38485c;
+}
 
-// ::-webkit-scrollbar-track {
-//   background-color: #f0f0f0;
-// }
+::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
 
 // End Generic Styles
 
@@ -107,9 +107,10 @@ hr {
       }
     }
   }
-
-  .box-content .box-section:last-child {
-    min-height: calc(70vh - 83px);
+  .box-content section:last-child {
+    @media screen and (min-width: 992px) {
+      min-height: calc(100vh - 80px);
+    }
   }
 }
 

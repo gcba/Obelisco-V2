@@ -3,11 +3,11 @@ export const SIMPLE_ALERT = `
     Esta es la descripción de una alerta de información.
   </div>
 
-  <div class="alert alert-primary" role="alert">
+  <div class="alert alert-success" role="alert">
     Esta es la descripción de una alerta de advertencia.
   </div>
 
-  <div class="alert alert-success" role="alert">
+  <div class="alert alert-warning" role="alert">
     Esta es la descripción de una alerta de éxito.
   </div>
   
@@ -67,28 +67,28 @@ export const HIGHLIGTHED_ALERT = `
 `;
 
 export const HYPERLINK_ALERT = `
-  <div className="alert alert-info" role="alert">
+  <div class="alert alert-info" role="alert">
     <p>
       <strong>Este es un destacado de una alerta de información. </strong>
       Esta es la descripción de una alerta de información que continua al texto destacado, incluso <a href="#">con enlaces</a>.
     </p>
   </div>
 
-  <div className="alert alert-success" role="alert">
+  <div class="alert alert-success" role="alert">
     <p>
       <strong>Este es un destacado de una alerta de éxito. </strong>
       Esta es la descripción de una alerta de éxito que continua al texto destacado, incluso <a href="#">con enlaces</a>.
     </p>
   </div>
 
-  <div className="alert alert-warning" role="alert">
+  <div class="alert alert-warning" role="alert">
     <p>
       <strong>Este es un destacado de una alerta de advertencia. </strong>
       Esta es la descripción de una alerta de advertencia que continua al texto destacado, incluso <a href="#">con enlaces</a>.
     </p>
   </div>
 
-  <div className="alert alert-danger" role="alert">
+  <div class="alert alert-danger" role="alert">
     <p>
       <strong>Este es un destacado de una alerta de error. </strong>
       Esta es la descripción de una alerta de error que continua al texto destacado, incluso <a href="#">con enlaces</a>.

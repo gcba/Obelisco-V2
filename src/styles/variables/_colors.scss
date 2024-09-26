@@ -158,6 +158,7 @@ $aqua: #99ffe2;
 /* === Variables del Theme-color === */
 $primary: $blue; //blue-500
 $secondary: $blue-900;
+$tertiary: $sky-700;
 $success: $green; //$green-600
 $danger: $red; //$red-500;
 $warning: $orange; //orange-500
@@ -170,6 +171,7 @@ $theme-colors: (
   'primary': $primary,
   'secondary': $secondary,
   'success': $success,
+  'tertiary': $tertiary,
   'info': $info,
   'warning': $warning,
   'danger': $danger,

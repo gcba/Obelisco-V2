@@ -8,7 +8,7 @@ import NavLayout from './Navigation/nav';
 export const stylesPages = [
   { text: 'Grilla', url: '/components/grid', id: 1 },
   { text: 'Paleta de colores', url: '/components/colors', id: 2 },
-  { text: 'Tipografia', url: '/components/typography', id: 3 },
+  { text: 'Tipografía', url: '/components/typography', id: 3 },
 ];
 export const formsPages = [
   { text: 'Buscador', url: '/components/form-search', id: 1 },
@@ -45,9 +45,9 @@ export const componentsPages = [
   { text: 'Mensaje de estado', url: '/components/status-message', id: 20 },
   { text: 'Migas de pan', url: '/components/breadcrumb', id: 21 },
   { text: 'Modal', url: '/components/modal', id: 22 },
-  { text: 'Navegacion horizontal', url: '/components/nav-horizontal', id: 23 },
-  { text: 'Navegacion vertical', url: '/components/nav-vertical', id: 24 },
-  // { text: "Paginado", url: "/components/pagination", id: 25 },
+  { text: 'Navegación horizontal', url: '/components/nav-horizontal', id: 23 },
+  { text: 'Navegación vertical', url: '/components/nav-vertical', id: 24 },
+  { text: 'Paginado', url: '/components/pagination', id: 25 },
   { text: 'Pestañas', url: '/components/tabs', id: 26 },
   // { text: "Pasos de un formulario", url: "/components/steps-form", id: 27 },
   { text: 'Spinner', url: '/components/spinner', id: 28 },

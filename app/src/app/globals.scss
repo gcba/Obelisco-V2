@@ -268,3 +268,17 @@ hr {
     }
   }
 }
+
+//Visualizacion de tarjetas
+.card-box-sizing {
+  max-width: 328px;
+  @media screen and (min-width: 1200px) {
+    max-width: 538px;
+  }
+}
+.card-vertical-box-sizing {
+  max-width: 328px;
+  @media screen and (min-width: 1200px) {
+    max-width: 348px;
+  }
+}

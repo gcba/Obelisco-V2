@@ -1,17 +1,30 @@
-/* ------ Boton link ------ */
-$btn-link-color: $sky-700;
-$btn-link-bg: $white;
-$btn-link-bg-active: $sky-100;
-
 /* === Custom variables and mixins === */
 $btn-padding-sm: 0.25rem 0.5rem;
 $btn-padding-md: 0.5rem 1rem;
 $btn-padding-lg: 0.75rem 1.25rem;
 
+/*  Button Tertiary | Button Link  */
+$btn-colors-specific: (
+  tertiary: (
+    color: $tertiary,
+    bg: $white,
+    bg-active: $sky-50,
+  ),
+  link: (
+    color: $blue-900,
+    bg: $white,
+    bg-active: $grisulado-100,
+  ),
+);
+
+/*  Button Disabled  */
+$btn-disabled-text: $grisulado-400; // #9EAAB8
+$btn-disabled-bg: $grisulado-100; // #E6EBF0
+
 $theme-colors: map-merge(
   $theme-colors,
   (
-    'link': $btn-link-color,
+    'link': $blue-900,
   )
 );
 
@@ -20,16 +33,16 @@ $theme-color-btn-bg-hover: (
   secondary: $blue-950,
   danger: $red-600,
   success: $green-700,
-  link: $sky-50,
+  tertiary: $sky-50,
+  link: $grisulado-100,
 );
 
-/* === Custom styles === */
 @mixin btn-disabled {
   &.disabled,
   &:disabled {
-    background-color: $disabled-bg;
-    outline-color: $disabled-bg;
-    color: $disabled-text;
+    background-color: $btn-disabled-bg;
+    outline-color: $btn-disabled-bg;
+    color: $btn-disabled-text;
     pointer-events: none;
     opacity: 1;
   }
@@ -44,7 +57,9 @@ $theme-color-btn-bg-hover: (
   &.hover,
   &:visited,
   &:focus,
+  &:focus-visible,
   &.focus,
+  &:focus:not(:focus-visible),
   &:not(:disabled, .disabled):active,
   &:not(:disabled, .disabled).active {
     color: $body-color;
@@ -54,6 +69,48 @@ $theme-color-btn-bg-hover: (
   }
 }
 
+@mixin btn-specific-types($color, $type) {
+  @if $color == $type {
+    color: map-get(map-get($btn-colors-specific, $type), color);
+    background-color: map-get(map-get($btn-colors-specific, $type), bg);
+    outline-color: map-get(map-get($btn-colors-specific, $type), bg);
+
+    &:hover,
+    &.hover,
+    &:visited,
+    &:focus,
+    &.focus,
+    &:focus-visible,
+    &:focus:not(:focus-visible) {
+      color: map-get(map-get($btn-colors-specific, $type), color);
+    }
+
+    &:not(:disabled, .disabled):active,
+    &:not(:disabled, .disabled).active {
+      background-color: map-get(
+        map-get($btn-colors-specific, $type),
+        bg-active
+      );
+      color: map-get(map-get($btn-colors-specific, $type), color);
+    }
+  }
+}
+
+@mixin btn-outline-specific-types($color, $type) {
+  @if $color == $type {
+    color: map-get(map-get($btn-colors-specific, $type), color);
+    outline-color: map-get(map-get($btn-colors-specific, $type), color);
+    background-color: transparent;
+  }
+}
+
+@mixin btn-specific-color($color, $type) {
+  @if $color == $type {
+    color: map-get(map-get($btn-colors-specific, $type), color);
+  }
+}
+
+/* === Custom styles === */
 .btn {
   @extend .headline-md; // Nunito, 18px, 24px
   font-weight: $font-weight-bold; // 700
@@ -111,17 +168,18 @@ $theme-color-btn-bg-hover: (
     }
 
     &:focus,
-    &.focus {
+    &.focus,
+    &:focus:not(:focus-visible) {
       box-shadow: $focus-box-shadow;
       border-radius: $border-radius-sm; //.25rem
       text-decoration: none;
       outline: $outline-transparent;
     }
 
-    &:active,
-    &.active {
-      box-shadow: none;
-    }
+    // &:active,
+    // &.active {
+    //   box-shadow: none;
+    // }
   }
 }
 
@@ -147,7 +205,8 @@ $theme-color-btn-bg-hover: (
 
     &:focus,
     &.focus,
-    &:focus-visible {
+    &:focus-visible,
+    &:focus:not(:focus-visible) {
       color: $white;
       outline: $outline-transparent;
       box-shadow: $focus-box-shadow;
@@ -165,7 +224,8 @@ $theme-color-btn-bg-hover: (
       box-shadow: none;
 
       &:focus,
-      &.focus {
+      &.focus,
+      &:focus:not(:focus-visible) {
         box-shadow: $focus-box-shadow;
         text-decoration: none;
         @if $color == 'danger' {
@@ -176,25 +236,13 @@ $theme-color-btn-bg-hover: (
 
     @include btn-disabled;
 
-    @if $color == 'link' {
-      color: $btn-link-color;
-      background-color: $white;
-      outline-color: $white;
+    //Estilos para tertiary
+    @include btn-specific-types($color, 'tertiary');
 
-      &:hover,
-      &.hover,
-      &:visited,
-      &:focus,
-      &.focus {
-        color: $btn-link-color;
-      }
+    //Estilos para link
+    @include btn-specific-types($color, 'link');
 
-      &:not(:disabled, .disabled):active,
-      &:not(:disabled, .disabled).active {
-        background-color: $btn-link-bg-active;
-        color: $btn-link-color;
-      }
-    }
+    //Estilos para warning, dark y light
     @if $color == 'warning' or $color == 'dark' or $color == 'light' {
       @include btn-without-styles;
     }
@@ -202,28 +250,30 @@ $theme-color-btn-bg-hover: (
 
   .btn-outline-#{$color} {
     color: map-get($theme-colors, $color);
-    @if $color == 'link' {
-      color: $btn-link-color;
-      outline-color: $btn-link-color;
-    }
+
+    //Estilos para tertiary outline
+    @include btn-outline-specific-types($color, 'tertiary');
+
+    //Estilos para link outline
+    @include btn-outline-specific-types($color, 'link');
 
     &:visited {
       color: map-get($theme-colors, $color);
-      @if $color == 'link' {
-        color: $btn-link-color;
-      }
+      @include btn-specific-color($color, 'tertiary');
+      @include btn-specific-color($color, 'link');
     }
 
     &:hover,
     &.hover,
     &:focus,
-    &.focus {
+    &.focus,
+    &:focus:not(:focus-visible) {
       color: $white;
-      @if $color == 'link' {
-        color: $btn-link-color;
-      }
+      @include btn-specific-color($color, 'tertiary');
+      @include btn-specific-color($color, 'link');
     }
 
+    //Estilos para warning, dark y light outline
     @if $color == 'warning' or $color == 'dark' or $color == 'light' {
       @include btn-without-styles;
     }
@@ -260,3 +310,4 @@ a.btn {
     }
   }
 } */
+$theme-colors: map-remove($theme-colors, 'link');

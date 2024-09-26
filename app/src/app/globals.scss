@@ -18,17 +18,17 @@ body {
   box-sizing: border-box;
 }
 
-// ::-webkit-scrollbar {
-//   width: 8px;
-// }
+::-webkit-scrollbar {
+  width: 8px;
+}
 
-// ::-webkit-scrollbar-thumb {
-//   background-color: #38485c;
-// }
+::-webkit-scrollbar-thumb {
+  background-color: #38485c;
+}
 
-// ::-webkit-scrollbar-track {
-//   background-color: #f0f0f0;
-// }
+::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
 
 // End Generic Styles
 
@@ -54,7 +54,7 @@ hr {
 
     .scrollspy {
       list-style: none;
-      top: 140px;
+      top: 16px;
       right: 0;
       background-color: transparent;
       padding: 0 5px 5px 1rem;
@@ -108,7 +108,9 @@ hr {
     }
   }
   .box-content section:last-child {
-    min-height: calc(70vh - 83px);
+    @media screen and (min-width: 992px) {
+      min-height: calc(100vh - 80px);
+    }
   }
 }
 
@@ -141,6 +143,7 @@ hr {
     font-weight: 700;
     font-size: 1rem;
   }
+
   div[data-icon] {
     color: #26874a;
   }
@@ -181,9 +184,9 @@ hr {
 /* estilos navegacion vertical izquierdo */
 .sticky-nav {
   position: sticky;
-  top: 132px;
+  top: 16px;
   overflow-y: scroll;
-  height: 76dvh;
+  height: 95dvh;
   scrollbar-width: thin;
 
   nav {
@@ -195,16 +198,88 @@ hr {
     overflow-y: unset;
   }
 }
+
 .box-content {
   width: 100%;
   overflow-x: hidden;
 }
+
 //Listas en documentacion
 .docs-list {
   li:not(:last-child) {
     margin-bottom: 0.5rem;
   }
+
   code {
     font-size: 1rem;
+  }
+}
+
+//Contenedor para mostrar variantes de componente header
+.header-box-sizing {
+  transform: scale(0.5);
+  .navbar {
+    width: 202%;
+    left: -53%;
+  }
+
+  &:has(.navbar-collapse.collapse.show),
+  &:has(.navbar-collapse.collapsing),
+  &:has(.dropdown .btn-dropdown[aria-expanded='true']) {
+    z-index: 9999;
+    position: relative;
+  }
+}
+//Visualizacion de Destacado en codebox
+.highlighted-box-sizing {
+  transform: scale(0.6);
+  transform-origin: top;
+  max-height: 360px;
+  @media screen and (min-width: 768px) {
+    max-height: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-height: 240px;
+  }
+
+  > * {
+    width: 160%;
+    position: relative;
+    left: -30%;
+  }
+
+  &-vertical {
+    @extend .highlighted-box-sizing;
+    max-height: 1600px;
+    @media screen and (min-width: 1200px) {
+      max-height: 640px;
+    }
+
+    &.max-h-800 {
+      max-height: 800px;
+      @media screen and (min-width: 1200px) {
+        max-height: 310px;
+      }
+    }
+    &.max-h-640 {
+      max-height: 640px;
+      @media screen and (min-width: 1200px) {
+        max-height: 280px;
+      }
+    }
+  }
+}
+
+//Visualizacion de tarjetas
+.card-box-sizing {
+  max-width: 328px;
+  @media screen and (min-width: 1200px) {
+    max-width: 538px;
+  }
+}
+.card-vertical-box-sizing {
+  max-width: 328px;
+  @media screen and (min-width: 1200px) {
+    max-width: 348px;
   }
 }

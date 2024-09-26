@@ -1,6 +1,7 @@
 export const BG_THEME_COLORS = `
   <div class="bg-primary"> primary</div>
   <div class="bg-secondary text-white"> secondary</div>
+  <div class="bg-tertiary text-white"> tertiary</div>
   <div class="bg-danger"> danger</div>
   <div class="bg-success"> success</div>
   <div class="bg-warning"> warning</div>
@@ -14,6 +15,7 @@ export const TEXT_THEME_COLORS = `
   <p class="text-body-tertiary">text-body-tertiary</p>
   <div class="text-primary"> primary</div>
   <div class="text-secondary"> secondary</div>
+  <div class="text-tertiary"> tertiary</div>
   <div class="text-danger"> danger</div>
   <div class="text-success"> success</div>
   <div class="text-warning"> warning</div>

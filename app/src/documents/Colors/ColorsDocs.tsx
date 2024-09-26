@@ -29,6 +29,10 @@ const ColorsDocs: React.FC = () => {
                   <span className="headline-md fw-bold">secondary</span>
                   <span className="text-xs">#101E37</span>
                 </div>
+                <div className="color-box bg-tertiary">
+                  <span className="headline-md fw-bold">tertiary</span>
+                  <span className="text-xs">#005E7A</span>
+                </div>
                 <div className="color-box bg-danger">
                   <span className="headline-md fw-bold">danger</span>
                   <span className="text-xs">#CC3333</span>
@@ -62,6 +66,7 @@ const ColorsDocs: React.FC = () => {
               <div className="d-flex flex-column gap-2 mb-3">
                 <div className="text-primary">primary</div>
                 <div className="text-secondary">secondary</div>
+                <div className="text-tertiary">tertiary</div>
                 <div className="text-danger">danger</div>
                 <div className="text-success">success</div>
                 <div className="text-warning">warning</div>

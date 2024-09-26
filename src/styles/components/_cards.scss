@@ -1,0 +1,225 @@
+/* stylelint-disable scss/percent-placeholder-pattern */
+
+/* === Custom variables and mixins === */
+
+$card-spacing-desktop: 1.5rem;
+$card-icon-size: 2rem;
+$card-media-size: 4rem;
+$card-icon-bg: $grisulado-50;
+$card-info-icon-size: 1rem;
+
+// Estilos de estados de tarjetas
+%card_states_styles {
+  .card-body {
+    .card-title {
+      .card-title-link {
+        text-decoration: none;
+        color: $body-color;
+
+        &::after {
+          content: '';
+          border-radius: 0.5rem;
+          position: absolute;
+          inset: 0;
+        }
+
+        &:hover {
+          color: $hover-color;
+          text-decoration: underline;
+          text-decoration-thickness: 1px;
+
+          &::after {
+            outline: $hover-outline;
+          }
+        }
+
+        &:focus {
+          box-shadow: none;
+          outline: none;
+          text-decoration: underline;
+          text-decoration-thickness: 1px;
+          color: $body-color;
+
+          &::after {
+            box-shadow: $focus-box-shadow;
+            outline: 0.25rem solid transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* === Custom styles === */
+.card {
+  border: none;
+  outline: $outline-border;
+  width: 100%;
+
+  .card-body {
+    padding: $card-spacing-desktop;
+  }
+
+  .card-headline {
+    @extend .text-sm;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  .card-title {
+    @extend .headline-lg;
+    margin-bottom: 0;
+  }
+
+  .card-text {
+    @extend .text-md;
+    margin-top: 0.25rem;
+    margin-bottom: 0;
+  }
+
+  .card-badges {
+    margin-bottom: 9.6px; //Debido a que badge tiene display: inline-block; y overflow: hidden; se genera un espaciado en el div contenedor siendo su altura 30.4px en vez de 24px, por lo que se modifica el margin-bottom para respetar espaciado de 16px entre etiqueta y titulo.
+  }
+
+  .badge {
+    margin-right: 0.75rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .card-info {
+    margin-top: 0.5rem;
+
+    small {
+      //   display: block;
+      display: flex;
+      align-items: center;
+
+      .o-icon {
+        font-size: $card-info-icon-size;
+        vertical-align: sub;
+        margin-right: 0.25rem;
+      }
+
+      &:not(:first-child) {
+        margin-top: 0.5rem;
+      }
+    }
+  }
+
+  .card-icon {
+    margin: $card-spacing-desktop $card-spacing-desktop 0;
+    font-size: $card-icon-size;
+    background-color: $card-icon-bg;
+    width: $card-media-size;
+    height: $card-media-size;
+    border-radius: $border-radius-lg;
+    text-align: center;
+    line-height: $card-media-size;
+  }
+
+  .card-img {
+    border-radius: $border-radius-lg $border-radius-lg 0 0;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+    height: 196px;
+  }
+
+  &.unbordered {
+    box-shadow: none;
+    outline-color: transparent;
+    background: transparent;
+  }
+
+  &.card-horizontal {
+    flex-direction: row;
+
+    .card-img {
+      width: $card-media-size;
+      height: $card-media-size;
+      aspect-ratio: 1 / 1;
+      margin: 1rem;
+      margin-right: 0;
+      border-radius: $border-radius-lg;
+      object-fit: cover;
+      object-position: center;
+      flex-shrink: 0;
+
+      + .card-body {
+        padding-right: 2rem;
+      }
+    }
+
+    .card-icon {
+      @extend .card-img;
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 1.5rem 1rem;
+    }
+  }
+
+  // Estilos para estados hover, focus
+  @extend %card_states_styles;
+
+  //Estilos para tarjeta horizontal temática
+  &.thematic {
+    flex-direction: column;
+    @extend .unbordered;
+
+    .card-img {
+      width: 6rem;
+      height: 6rem;
+      aspect-ratio: 1/1;
+      margin: 0;
+
+      + .card-body {
+        padding-left: 0;
+      }
+    }
+
+    .card-body {
+      padding: 1.5rem 1rem;
+      padding-left: 0;
+    }
+
+    @include media-breakpoint-up(xl) {
+      flex-direction: row;
+      gap: 1.5rem;
+
+      .card-img {
+        width: 8rem;
+        height: 8rem;
+      }
+    }
+  }
+}
+
+//Estilos para lista de tarjetas verticales desplazable
+.responsive-scroll {
+  &.vertical-cards-container {
+    max-width: fit-content;
+    border-radius: 0.5rem;
+    gap: 1rem;
+    padding: 0.25rem 0.25rem 0.75rem;
+
+    .card {
+      width: 348px;
+      min-width: 348px;
+
+      @include media-breakpoint-down(xs) {
+        min-width: 328px;
+      }
+
+      @media (width <= 400px) {
+        min-width: 80vw;
+      }
+    }
+  }
+}

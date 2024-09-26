@@ -21,8 +21,9 @@ const BannerDocs: React.FC = () => {
           <p className="lead mb-4">
             Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
             <a href="https://gcba.github.io/estandares/componentes/banner/" target="_blank" rel="noopener noreferrer">
-              enlace.
+              enlace
             </a>
+            .
           </p>
         </>
       ),
@@ -73,14 +74,14 @@ const BannerDocs: React.FC = () => {
             <div className="banner">
               <div className="banner-content">
                 <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                  terminal
+                  cookie
                 </span>
                 <p className="banner-text">
                   Este banner tiene un solo botón y <strong>puede tener énfasis</strong>. Se truncan los textos que
                   superen más de una línea de texto.
                 </p>
                 <div className="banner-actions">
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-secondary">
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary">
                     Botón
                   </a>
                 </div>
@@ -92,14 +93,14 @@ const BannerDocs: React.FC = () => {
             <div className="banner banner-dark">
               <div className="banner-content">
                 <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                  terminal
+                  cookie
                 </span>
                 <p className="banner-text">
                   Este banner tiene un solo botón y <strong>puede tener énfasis</strong>. Se truncan los textos que
                   superen más de una línea de texto.
                 </p>
                 <div className="banner-actions">
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-secondary">
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary">
                     Botón
                   </a>
                 </div>
@@ -118,17 +119,17 @@ const BannerDocs: React.FC = () => {
             <div className="banner">
               <div className="banner-content">
                 <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                  terminal
+                  cookie
                 </span>
                 <p className="banner-text">
-                  Este banner tiene dos botones y<strong>puede tener énfasis</strong>. Se truncan los textos que superen
-                  más de una línea de texto.
+                  Este banner tiene dos botones y <strong>puede tener énfasis</strong>. Se truncan los textos que
+                  superen más de una línea de texto.
                 </p>
                 <div className="banner-actions">
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-secondary">
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary">
                     Botón
                   </a>
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary">
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-secondary">
                     Botón
                   </a>
                 </div>
@@ -140,17 +141,17 @@ const BannerDocs: React.FC = () => {
             <div className="banner banner-dark">
               <div className="banner-content">
                 <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                  terminal
+                  cookie
                 </span>
                 <p className="banner-text">
-                  Este banner tiene dos botones y<strong>puede tener énfasis</strong>. Se truncan los textos que superen
-                  más de una línea de texto.
+                  Este banner tiene dos botones y <strong>puede tener énfasis</strong>. Se truncan los textos que
+                  superen más de una línea de texto.
                 </p>
                 <div className="banner-actions">
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-secondary">
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary">
                     Botón
                   </a>
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary">
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-tertiary">
                     Botón
                   </a>
                 </div>

@@ -10,7 +10,16 @@ const MapDocs: React.FC = () => {
       title: 'Mapa',
       h1: true,
       content: (
-        <MainDescription description="El mapa brinda contexto sobre una ubicación geográfica y redirige a la persona usuaria al mapa interactivo de Buenos Aires. A su vez, permite a las personas usuarias anticipar y planificar sus acciones." />
+        <>
+          <MainDescription description="El mapa brinda contexto sobre una ubicación geográfica y redirige a la persona usuaria al mapa interactivo de Buenos Aires. A su vez, permite a las personas usuarias anticipar y planificar sus acciones." />
+          <p className="lead mb-4">
+            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
+            <a href="https://gcba.github.io/estandares/componentes/mapa/" target="_blank" rel="noopener noreferrer">
+              enlace
+            </a>
+            .
+          </p>
+        </>
       ),
     },
     {
@@ -20,8 +29,8 @@ const MapDocs: React.FC = () => {
         <CodeBox codeHTML={MAP_LATERAL}>
           <div className="container">
             <div className="row">
-              <div className="col-sm-12 col-md-6">
-                <div className="card card-map">
+              <div className="col-12 col-md-6">
+                <div className="card-map">
                   <div className="card-body">
                     <h2 className="card-title">Ubicación</h2>
                     <p className="card-text">Av. Uspallata 3160</p>
@@ -62,8 +71,8 @@ const MapDocs: React.FC = () => {
         <CodeBox codeHTML={MAP_INSTITUTION}>
           <div className="container">
             <div className="row">
-              <div className="col-sm-12 col-md-8">
-                <div className="card card-map">
+              <div className="col-12 col-md-8">
+                <div className="card-map">
                   <div className="card-body">
                     <h3 className="card-title">Ubicación</h3>
                     <p className="card-text">Av. Uspallata 3160</p>

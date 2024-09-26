@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
@@ -72,9 +73,13 @@ const ImportsModule: React.FC = () => {
         'Obelisco V2 hace uso de la iconografía provista por Material Symbols y Boxicons. A continuación se detallan los recursos necesarios:',
       content: (
         <div className="col-12">
-          <h3 className="headline-lg">Boxicons:</h3>
+          <h3 className="headline-lg">Boxicons: </h3>
           <SyntaxHighlighter language="bash" style={dracula} wrapLongLines>
-            {`npm install boxicons`}
+            {`npm install boxicons
+ 
+// Es importante que incluyas el import a Boxicons en tu hoja de estilos si lo usas via NPM
+@import "material-symbols/index.css";
+`}
           </SyntaxHighlighter>
 
           <br />
@@ -88,7 +93,11 @@ const ImportsModule: React.FC = () => {
 
           <h3 className="headline-lg">Material Symbols:</h3>
           <SyntaxHighlighter language="bash" style={dracula} wrapLongLines>
-            {`npm install material-symbols@latest`}
+            {`npm install material-symbols@latest
+ 
+// Es importante que incluyas el import a Material Symbols en tu hoja de estilos si lo usas via NPM
+@import "material-symbols/index.css";
+`}
           </SyntaxHighlighter>
 
           <br />
@@ -115,7 +124,18 @@ const ImportsModule: React.FC = () => {
     },
   ];
 
-  return <DocumentationTemplate sections={sections} />;
+  return (
+    <>
+      <nav aria-label="Navegación secundaria">
+        <ol className="breadcrumb">
+          <li className="breadcrumb-item">
+            <Link href="/getting-started">Inicio</Link>
+          </li>
+        </ol>
+      </nav>
+      <DocumentationTemplate sections={sections} />;
+    </>
+  );
 };
 
 export default ImportsModule;

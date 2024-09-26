@@ -229,14 +229,10 @@ export const INPUT_VALIDATION_TEXTAREA = `
   </form>
 `;
 export const INPUT_SELECT = `
-<div className='container'>
-  <div className='col-12 col-lg-6'>
-  <select className="form-select" aria-label="Default select example">
-    <option selected>Open this select menu</option>
-    <option value="1">One</option>
-    <option value="2">Two</option>
-    <option value="3">Three</option>
-  </select>
-  </div>
-</div>
+<select class="form-control form-select" aria-label="Default select example" defaultValue="2">
+    <option value="0">Campo de selección</option>
+    <option value="1">Opción</option>
+    <option value="2">Opción</option>
+    <option value="3">Opción</option>
+</select>
 `;

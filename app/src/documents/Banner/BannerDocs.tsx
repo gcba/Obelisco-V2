@@ -22,7 +22,8 @@ const BannerDocs: React.FC = () => {
             Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
             <a href="https://gcba.github.io/estandares/componentes/banner/" target="_blank" rel="noopener noreferrer">
               enlace
-            </a>.
+            </a>
+            .
           </p>
         </>
       ),
@@ -121,8 +122,8 @@ const BannerDocs: React.FC = () => {
                   cookie
                 </span>
                 <p className="banner-text">
-                  Este banner tiene dos botones y <strong>puede tener énfasis</strong>. Se truncan los textos que superen
-                  más de una línea de texto.
+                  Este banner tiene dos botones y <strong>puede tener énfasis</strong>. Se truncan los textos que
+                  superen más de una línea de texto.
                 </p>
                 <div className="banner-actions">
                   <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary">
@@ -143,8 +144,8 @@ const BannerDocs: React.FC = () => {
                   cookie
                 </span>
                 <p className="banner-text">
-                  Este banner tiene dos botones y <strong>puede tener énfasis</strong>. Se truncan los textos que superen
-                  más de una línea de texto.
+                  Este banner tiene dos botones y <strong>puede tener énfasis</strong>. Se truncan los textos que
+                  superen más de una línea de texto.
                 </p>
                 <div className="banner-actions">
                   <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary">

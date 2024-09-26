@@ -275,7 +275,11 @@ const CalendarDocs: React.FC = () => {
                   <tbody>
                     <tr className="calendar-week">
                       <td></td>
-                      <td><a href="#" className="calendar-link" title="Nombre del evento."><span className="active active-secondary">1</span></a></td>
+                      <td>
+                        <a href="#" className="calendar-link" title="Nombre del evento.">
+                          <span className="active active-secondary">1</span>
+                        </a>
+                      </td>
                       <td>
                         <span>2</span>
                       </td>
@@ -302,7 +306,11 @@ const CalendarDocs: React.FC = () => {
                       <td>
                         <span>9</span>
                       </td>
-                      <td><a href="#" className="calendar-link" title="Nombre del evento."><span className="active">10</span></a></td>
+                      <td>
+                        <a href="#" className="calendar-link" title="Nombre del evento.">
+                          <span className="active">10</span>
+                        </a>
+                      </td>
                       <td>
                         <span>11</span>
                       </td>
@@ -349,7 +357,11 @@ const CalendarDocs: React.FC = () => {
                       <td>
                         <span>24</span>
                       </td>
-                      <td><a href="#" className="calendar-link" title="Nombre del evento."><span className="active">25</span></a></td>
+                      <td>
+                        <a href="#" className="calendar-link" title="Nombre del evento.">
+                          <span className="active">25</span>
+                        </a>
+                      </td>
                       <td>
                         <span>26</span>
                       </td>

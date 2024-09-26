@@ -80,6 +80,17 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
+      id: 'section-block',
+      title: 'Bloque de trámite',
+      content: (
+        <ul className="docs-list">
+          <li>
+            Se elimina la clase <code>.card</code>.
+          </li>
+        </ul>
+      ),
+    },
+    {
       id: 'section-3',
       title: 'Botones',
       content: (
@@ -88,12 +99,50 @@ const UpdateComponents: React.FC = () => {
             Se elimina la clase <code>.btn-icon</code>, no es necesaria colocarla al utilizar iconos o spinner en botón.{' '}
           </li>
           <li>
-            Se agrega la clase <code>.o-icon</code> a los iconos de Boxicons y Material Icons Rounded.{' '}
+            Se agrega la clase <code>.o-icon</code> a los iconos de Boxicons y Material Symbols Rounded.{' '}
           </li>
           <li>
             Se crea la clase <code>.btn-xs</code> para los botones que son utilizados dentro de tablas.{' '}
           </li>
+          <li>
+            Se crea la clase <code>.btn-tertiary</code>.{' '}
+          </li>
           <li>Los botones primary y secondary han cambiado de color.</li>
+        </ul>
+      ),
+    },
+    {
+      id: 'section-calendar',
+      title: 'Calendario',
+      content: (
+        <ul className="docs-list">
+          <li>
+            Se modifica la estructura HTML del colapsable en la variante &apos;Con colapsable&apos; acorde a
+            actualización del componente Colapsable.
+          </li>
+        </ul>
+      ),
+    },
+    {
+      id: 'section-collapse',
+      title: 'Colapsables',
+      content: (
+        <ul className="docs-list">
+          <li>
+            Se modifica estructura HTML del componente, acorde a Bootstrap 5. Se reemplazan las clases{' '}
+            <code>.card</code>, <code>.card-header</code>, y <code>.card-body</code> por <code>.accordion-item</code>,{' '}
+            <code>.accordion-button</code> y<code>.accordion-body</code>, respectivamente.
+          </li>
+          <li>
+            Se reemplazan los atributos <code>&apos;data-toggle&apos;</code> y <code>&apos;data-target&apos;</code> por{' '}
+            <code>&apos;data-bs-toggle&apos;</code> y <code>&apos;data-bs-target&apos;</code>, respectivamente. Se
+            agregan los atributos <code>&apos;aria-expanded&apos;</code> y <code>&apos;aria-controls&apos;</code>.
+          </li>
+          <li>
+            La variante de colapsable con encabezado con fondo blanco utiliza la clase <code>.item-white</code>{' '}
+            acompañando a la clase <code>.accordion-item</code>.
+          </li>
+          <li>Se reemplaza la estructura HTML de la lista e información dentro de colapsable</li>
         </ul>
       ),
     },
@@ -173,7 +222,11 @@ const UpdateComponents: React.FC = () => {
               <code>.dropdown-menu-right</code> por <code>.dropdown-menu-end</code>.
             </li>
             <li>
-              Se agrega la clase <code>.o-icon</code> a los iconos de Boxicons y Material Icons Rounded.
+              Se agrega la clase <code>.o-icon</code> a los iconos de Boxicons y Material Symbols Rounded.
+            </li>
+            <li>
+              Respecto a los tamaños de desplegables, se reemplazan las clases <code>.btn-dropdown-lg</code> y{' '}
+              <code>.btn-dropdown-sm</code> por <code>.btn-lg</code> y <code>.btn-sm</code>, respectivamente.
             </li>
             <li>
               Se modifica la estructura HTML de <strong>&apos;Desplegable con cascada&apos;</strong>, se utiliza la
@@ -181,12 +234,6 @@ const UpdateComponents: React.FC = () => {
               desplegable el atributo <code>data-bs-auto-close=&quot;outside&quot;</code>. El dropdown en cascada (el
               que se encuentra dentro de dropdown) tiene la misma estructura HTML que dropdown, con la diferencia de que
               al <code>div</code> con clase <code>.dropdown</code> se le agrega la clase <code>.sub-dropdown</code>.
-            </li>
-            <li>
-              Respecto a los tamaños de desplegables, se crean las clases <code>.dropdown-lg</code> y{' '}
-              <code>.dropdown-sm</code>, las cuales se utilizan en la etiqueta <code>div</code> con clase{' '}
-              <code>.dropdown</code>, y se eliminan las clases <code>.btn-dropdown-lg</code> y{' '}
-              <code>.btn-dropdown-sm</code> de la etiqueta <code>button</code> del desplegable.
             </li>
             <li>
               Se modifica la estructura HTML de <strong>&apos;Desplegable de selección&apos;</strong>, se utiliza la
@@ -198,6 +245,21 @@ const UpdateComponents: React.FC = () => {
             </li>
           </ul>
         </>
+      ),
+    },
+    {
+      id: 'section-highlighted',
+      title: 'Destacado',
+      content: (
+        <ul className="docs-list">
+          <li>
+            Se eliminan las clases <code>.card</code> y <code>.card-simple</code>.
+          </li>
+          <li>
+            Para la disposición de Destacado conjunto, las clases <code>.card-deck</code> y <code>.max-cards-2</code>{' '}
+            quedan deprecadas, se reemplazan por <code>.highlighted-max-2</code>.
+          </li>
+        </ul>
       ),
     },
     {
@@ -312,6 +374,43 @@ const UpdateComponents: React.FC = () => {
             </div>
           </div>
         </div>
+      ),
+    },
+    {
+      id: 'section-header',
+      title: 'Header (encabezado)',
+      content: (
+        <ul className="docs-list">
+          <li>
+            Se remplazan clases <code>.navbar-light</code> y <code>.navbar-expand-lg</code> por <code>.o-header</code>.
+          </li>
+          <li>
+            La estructura de los componentes desplegables y buscador, se ha modificado por lo que deben ser modificados
+            en el header también.
+          </li>
+        </ul>
+      ),
+    },
+    {
+      id: 'section-list-steps',
+      title: 'Lista de pasos',
+      content: (
+        <ul className="docs-list">
+          <li>
+            Se agrega la clase <code>.list-steps-item-title</code> a los títulos de los ítems de la lista de pasos.
+          </li>
+        </ul>
+      ),
+    },
+    {
+      id: 'section-map',
+      title: 'Mapa',
+      content: (
+        <ul className="docs-list">
+          <li>
+            Se elimina la clase <code>.card</code>.
+          </li>
+        </ul>
       ),
     },
     {

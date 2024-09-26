@@ -11,6 +11,7 @@ import {
   INPUT_TEXT,
   INPUT_VALIDATION_DATE,
   INPUT_VALIDATION_MAIL,
+  INPUT_VALIDATION_NUMBER,
   INPUT_VALIDATION_TEXT,
   INPUT_VALIDATION_TEXTAREA,
 } from './code-views';
@@ -134,7 +135,7 @@ const FormTextDocs: React.FC = () => {
                 <label htmlFor="exampleFormControlTextarea1" className="form-label">
                   Ejemplo TextArea
                 </label>
-                <textarea className="form-control" id="exampleFormControlTextarea1" />
+                <textarea className="form-control" id="exampleFormControlTextarea1" ></textarea>
               </div>
             </div>
           </CodeBox>
@@ -208,7 +209,7 @@ const FormTextDocs: React.FC = () => {
                 <label htmlFor="example-one" className="form-label">
                   Ejemplo TextArea
                 </label>
-                <textarea className="form-control" id="example-one" disabled />
+                <textarea className="form-control" id="example-one" disabled ></textarea>
               </div>
             </div>
           </CodeBox>
@@ -244,7 +245,7 @@ const FormTextDocs: React.FC = () => {
             </div>
           </CodeBox>
           <br />
-          <CodeBox codeHTML={INPUT_VALIDATION_TEXT}>
+          <CodeBox codeHTML={INPUT_VALIDATION_NUMBER}>
             <div className="container">
               <form className="col-12 col-lg-6">
                 <label htmlFor="ejemplo-2" className="form-label">
@@ -322,7 +323,7 @@ const FormTextDocs: React.FC = () => {
                 <label htmlFor="ejemplo-5" className="form-label">
                   Ejemplo TextArea
                 </label>
-                <textarea className="form-control is-invalid" id="ejemplo-5" required />
+                <textarea className="form-control is-invalid" id="ejemplo-5" required ></textarea>
                 <div className="valid-feedback">
                   <p>El campo es válido.</p>
                 </div>
@@ -332,10 +333,6 @@ const FormTextDocs: React.FC = () => {
               </form>
             </div>
           </CodeBox>
-          <br />
-          <br />
-          <br />
-          <br />
         </>
       ),
     },

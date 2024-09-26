@@ -238,7 +238,7 @@ const FormTextDocs: React.FC = () => {
                 <label htmlFor="example-one-disabled" className="form-label">
                   Ejemplo TextArea
                 </label>
-                <textarea className="form-control" id="example-one" disabled ></textarea>
+                <textarea className="form-control" id="example-one-disabled" disabled ></textarea>
               </div>
 
               <br />

@@ -1,14 +1,4 @@
-/* === Variable and mixins overides === */
-
-$table-padding-y: 0.75rem;
-$table-padding-x: 1.25rem;
-$table-cell-padding: $table-padding-y $table-padding-x;
-$table-color: $body-color;
-$table-border-width: $border-width;
 $table-head-bg: $grisulado-100;
-
-/* === Custom variables and mixins === */
-
 /* === Custom styles === */
 
 .table {
@@ -99,32 +89,6 @@ $table-head-bg: $grisulado-100;
           display: flex;
           flex-wrap: nowrap;
           gap: 0.5rem;
-
-          .button-actions-table {
-            background: none;
-            border: none;
-            padding: 0.125rem;
-            border-radius: 0.25rem;
-
-            &:hover {
-              background-color: $grisulado-50;
-            }
-
-            &:focus,
-            &.focus {
-              box-shadow: $focus-box-shadow;
-              outline: $outline-transparent;
-              text-decoration: $link-decoration;
-            }
-
-            .material-icons-round,
-            .bx {
-              color: $grisulado-900;
-              vertical-align: middle;
-              width: 24px;
-              height: 24px;
-            }
-          }
         }
       }
 

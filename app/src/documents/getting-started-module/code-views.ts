@@ -9,7 +9,7 @@ rel="stylesheet"
 />`;
 // Section imports
 export const OPENSANS_CODE = `<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />`;
-export const STYLES_CODE = `<link rel="stylesheet" href="ruta/al/proyecto/dist/styles.css">`;
+export const STYLES_CODE = `<link rel="stylesheet" href="ruta/al/proyecto/dist/styles.css" />`;
 export const STYLES_CODE_CSS = `@import "@gcba/obelisco-v2/dist/styles.css";`;
 export const NUNITO_CODE = `<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet" />`;
 export const BOXICONS_CODE = `<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />`;

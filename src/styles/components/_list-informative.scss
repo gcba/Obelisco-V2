@@ -1,0 +1,51 @@
+/* === Custom variables and mixins === */
+$list-informative-subtitule-margin-bottom: 2rem;
+$list-informative-li-padding-left: 2rem;
+$list-informative-li-icon-size: 24px;
+$list-informative-li-margin-bottom: 1rem;
+
+$list-icon-bullet: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none"><g clip-path="url(%23clip0_2364_23748)"><path d="M12.5 16.333C14.7091 16.333 16.5 14.5421 16.5 12.333C16.5 10.1239 14.7091 8.33301 12.5 8.33301C10.2909 8.33301 8.5 10.1239 8.5 12.333C8.5 14.5421 10.2909 16.333 12.5 16.333Z" fill="%23101E37"/></g><defs><clipPath id="clip0_2364_23748"><rect width="24" height="24" fill="white" transform="translate(0.5 0.333008)"/></clipPath></defs></svg>');
+
+$list-icon-check: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none"><path d="M9.29555 16.2079L5.82555 12.7379C5.43555 12.3479 4.80555 12.3479 4.41555 12.7379C4.02555 13.1279 4.02555 13.7579 4.41555 14.1479L8.59555 18.3279C8.98555 18.7179 9.61555 18.7179 10.0055 18.3279L20.5855 7.74791C20.9755 7.35791 20.9755 6.72791 20.5855 6.33791C20.1955 5.94791 19.5655 5.94791 19.1755 6.33791L9.29555 16.2079Z" fill="%23101E37"/></svg>');
+
+/* === Custom styles === */
+
+.list-informative-subtitle {
+  @extend .h6;
+  margin-bottom: $list-informative-subtitule-margin-bottom;
+}
+
+.list-informative-bullet {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    line-height: $md-body-lh;
+    position: relative;
+    padding-left: $list-informative-li-padding-left;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      height: $list-informative-li-icon-size;
+      width: $list-informative-li-icon-size;
+      min-width: $list-informative-li-icon-size;
+      background: transparent $list-icon-bullet no-repeat center center;
+      position: absolute;
+      left: 0;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: $list-informative-li-margin-bottom;
+    }
+  }
+}
+
+.list-informative-check {
+  @extend .list-informative-bullet;
+
+  li::before {
+    background: transparent $list-icon-check no-repeat center center;
+  }
+}

@@ -120,7 +120,7 @@ const UpdateComponents: React.FC = () => {
             Se agrega la clase <code>.o-icon</code> al ícono del componente <strong>banner</strong> con ícono.
           </li>
         </ul>
-      )
+      ),
     },
     {
       id: 'section-6',
@@ -348,13 +348,15 @@ const UpdateComponents: React.FC = () => {
             Se elimina la clase <code>.form-search</code> que se le asignaba anteriormente al <code>form</code>.
           </li>
           <li>
-            Se crea la clase <code>.search-container</code>, que se asigna a un <code>div</code> contenedor del input de búsqueda y su botón.
+            Se crea la clase <code>.search-container</code>, que se asigna a un <code>div</code> contenedor del input de
+            búsqueda y su botón.
           </li>
           <li>
-            Se crea la clase <code>.input-search-with-button</code>, asignada al input de búsqueda, permitiendo que el botón con el icono funcione como botón de búsqueda.
+            Se crea la clase <code>.input-search-with-button</code>, asignada al input de búsqueda, permitiendo que el
+            botón con el icono funcione como botón de búsqueda.
           </li>
         </ul>
-      )
+      ),
     },
     {
       id: 'section-15',

@@ -1,3 +1,5 @@
+/* stylelint-disable scss/percent-placeholder-pattern */
+
 /* === Custom variables and mixins === */
 
 $card-spacing-desktop: 1.5rem;
@@ -13,31 +15,32 @@ $card-info-icon-size: 1rem;
       .card-title-link {
         text-decoration: none;
         color: $body-color;
-        &:after {
+
+        &::after {
           content: '';
           border-radius: 0.5rem;
           position: absolute;
-          left: 0;
-          right: 0;
-          top: 0;
-          bottom: 0;
+          inset: 0;
         }
 
         &:hover {
           color: $hover-color;
           text-decoration: underline;
           text-decoration-thickness: 1px;
-          &:after {
+
+          &::after {
             outline: $hover-outline;
           }
         }
+
         &:focus {
           box-shadow: none;
           outline: none;
           text-decoration: underline;
           text-decoration-thickness: 1px;
           color: $body-color;
-          &:after {
+
+          &::after {
             box-shadow: $focus-box-shadow;
             outline: 0.25rem solid transparent;
           }
@@ -214,7 +217,7 @@ $card-info-icon-size: 1rem;
         min-width: 328px;
       }
 
-      @media (max-width: 400px) {
+      @media (width <= 400px) {
         min-width: 80vw;
       }
     }

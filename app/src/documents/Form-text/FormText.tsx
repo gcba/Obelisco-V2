@@ -136,7 +136,7 @@ const FormTextDocs: React.FC = () => {
                 <label htmlFor="exampleFormControlTextarea1" className="form-label">
                   Ejemplo TextArea
                 </label>
-                <textarea className="form-control" id="exampleFormControlTextarea1" ></textarea>
+                <textarea className="form-control" id="exampleFormControlTextarea1"></textarea>
               </div>
             </div>
           </CodeBox>
@@ -238,7 +238,7 @@ const FormTextDocs: React.FC = () => {
                 <label htmlFor="example-one-disabled" className="form-label">
                   Ejemplo TextArea
                 </label>
-                <textarea className="form-control" id="example-one-disabled" disabled ></textarea>
+                <textarea className="form-control" id="example-one-disabled" disabled></textarea>
               </div>
 
               <br />
@@ -372,7 +372,7 @@ const FormTextDocs: React.FC = () => {
                 <label htmlFor="ejemplo-5" className="form-label">
                   Ejemplo TextArea
                 </label>
-                <textarea className="form-control is-invalid" id="ejemplo-5" required ></textarea>
+                <textarea className="form-control is-invalid" id="ejemplo-5" required></textarea>
                 <div className="valid-feedback">
                   <p>El campo es válido.</p>
                 </div>

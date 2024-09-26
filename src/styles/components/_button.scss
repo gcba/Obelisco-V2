@@ -1,4 +1,3 @@
-
 /* === Custom variables and mixins === */
 $btn-padding-sm: 0.25rem 0.5rem;
 $btn-padding-md: 0.5rem 1rem;
@@ -7,16 +6,15 @@ $btn-padding-lg: 0.75rem 1.25rem;
 /*  Button Tertiary | Button Link  */
 $btn-colors-specific: (
   tertiary: (
-    color:  $tertiary,
+    color: $tertiary,
     bg: $white,
-    bg-active: $sky-50
+    bg-active: $sky-50,
   ),
   link: (
     color: $blue-900,
     bg: $white,
-    bg-active: $grisulado-100
+    bg-active: $grisulado-100,
   ),
-
 );
 
 /*  Button Disabled  */
@@ -75,7 +73,7 @@ $theme-color-btn-bg-hover: (
   @if $color == $type {
     color: map-get(map-get($btn-colors-specific, $type), color);
     background-color: map-get(map-get($btn-colors-specific, $type), bg);
-    outline-color: map-get(map-get($btn-colors-specific, $type), bg);    
+    outline-color: map-get(map-get($btn-colors-specific, $type), bg);
 
     &:hover,
     &.hover,
@@ -89,7 +87,10 @@ $theme-color-btn-bg-hover: (
 
     &:not(:disabled, .disabled):active,
     &:not(:disabled, .disabled).active {
-      background-color: map-get(map-get($btn-colors-specific, $type), bg-active);
+      background-color: map-get(
+        map-get($btn-colors-specific, $type),
+        bg-active
+      );
       color: map-get(map-get($btn-colors-specific, $type), color);
     }
   }
@@ -234,10 +235,13 @@ $theme-color-btn-bg-hover: (
     }
 
     @include btn-disabled;
+
     //Estilos para tertiary
     @include btn-specific-types($color, 'tertiary');
+
     //Estilos para link
     @include btn-specific-types($color, 'link');
+
     //Estilos para warning, dark y light
     @if $color == 'warning' or $color == 'dark' or $color == 'light' {
       @include btn-without-styles;
@@ -246,11 +250,12 @@ $theme-color-btn-bg-hover: (
 
   .btn-outline-#{$color} {
     color: map-get($theme-colors, $color);
+
     //Estilos para tertiary outline
     @include btn-outline-specific-types($color, 'tertiary');
+
     //Estilos para link outline
     @include btn-outline-specific-types($color, 'link');
-
 
     &:visited {
       color: map-get($theme-colors, $color);
@@ -267,6 +272,7 @@ $theme-color-btn-bg-hover: (
       @include btn-specific-color($color, 'tertiary');
       @include btn-specific-color($color, 'link');
     }
+
     //Estilos para warning, dark y light outline
     @if $color == 'warning' or $color == 'dark' or $color == 'light' {
       @include btn-without-styles;

@@ -80,7 +80,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-block',
+      id: 'section-3',
       title: 'Bloque de trámite',
       content: (
         <ul className="docs-list">
@@ -91,7 +91,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-3',
+      id: 'section-4',
       title: 'Botones',
       content: (
         <ul className="docs-list">
@@ -112,7 +112,18 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-calendar',
+      id: 'section-5',
+      title: 'Banner',
+      content: (
+        <ul className="docs-list">
+          <li>
+            Se agrega la clase <code>.o-icon</code> al ícono del componente <strong>banner</strong> con ícono.
+          </li>
+        </ul>
+      )
+    },
+    {
+      id: 'section-6',
       title: 'Calendario',
       content: (
         <ul className="docs-list">
@@ -124,7 +135,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-collapse',
+      id: 'section-7',
       title: 'Colapsables',
       content: (
         <ul className="docs-list">
@@ -147,7 +158,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-4',
+      id: 'section-8',
       title: 'Colores',
       content: (
         <div id="colores" className="container">
@@ -196,7 +207,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-5',
+      id: 'section-9',
       title: 'Desplegables de navegación y selección',
       content: (
         <>
@@ -248,7 +259,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-highlighted',
+      id: 'section-10',
       title: 'Destacado',
       content: (
         <ul className="docs-list">
@@ -263,7 +274,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-6',
+      id: 'section-11',
       title: 'Enlace',
       content: (
         <ul className="docs-list">
@@ -274,7 +285,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-7',
+      id: 'section-12',
       title: 'Etiquetas',
       content: (
         <ul className="docs-list">
@@ -288,7 +299,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-8',
+      id: 'section-13',
       title: 'Formulario - Casillas de selección (Radio y Checkbox)',
       content: (
         <ul className="docs-list">
@@ -323,7 +334,30 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-9',
+      id: 'section-14',
+      title: 'Formularios de texto',
+      content: (
+        <ul className="docs-list">
+          <li>
+            Se elimina la clase <code>.form-group</code>.
+          </li>
+          <li>
+            Se crea la clase <code>.form-label</code>, la cual se asigna al <code>label</code> del campo.
+          </li>
+          <li>
+            Se elimina la clase <code>.form-search</code> que se le asignaba anteriormente al <code>form</code>.
+          </li>
+          <li>
+            Se crea la clase <code>.search-container</code>, que se asigna a un <code>div</code> contenedor del input de búsqueda y su botón.
+          </li>
+          <li>
+            Se crea la clase <code>.input-search-with-button</code>, asignada al input de búsqueda, permitiendo que el botón con el icono funcione como botón de búsqueda.
+          </li>
+        </ul>
+      )
+    },
+    {
+      id: 'section-15',
       title: 'Grilla',
       content: (
         <div id="grilla" className="container">
@@ -377,7 +411,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-header',
+      id: 'section-16',
       title: 'Header (encabezado)',
       content: (
         <ul className="docs-list">
@@ -392,7 +426,20 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-list-steps',
+      id: 'section-17',
+      title: 'Iconos',
+      content: (
+        <ul className="docs-list">
+          <li>
+            Se crea la clase <code>.o-icon</code>. Todo componente de Obelisco que lleve un ícono de Boxicons o Material
+            Symbols requiere que se le añada la clase <code>.o-icon</code> para que aplique los estilos correspondientes
+            a su componente.
+          </li>
+        </ul>
+      ),
+    },
+    {
+      id: 'section-18',
       title: 'Lista de pasos',
       content: (
         <ul className="docs-list">
@@ -403,7 +450,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-map',
+      id: 'section-19',
       title: 'Mapa',
       content: (
         <ul className="docs-list">
@@ -414,7 +461,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-10',
+      id: 'section-20',
       title: 'Mensaje de estados',
       content: (
         <>
@@ -430,7 +477,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-11',
+      id: 'section-21',
       title: 'Modal',
       content: (
         <ul className="docs-list">
@@ -455,7 +502,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-12',
+      id: 'section-22',
       title: 'Pestaña',
       content: (
         <ul className="docs-list">
@@ -483,7 +530,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-13',
+      id: 'section-23',
       title: 'Tipografía',
       content: (
         <ul className="docs-list">
@@ -517,20 +564,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-14',
-      title: 'Iconos',
-      content: (
-        <ul className="docs-list">
-          <li>
-            Se crea la clase <code>.o-icon</code>. Todo componente de Obelisco que lleve un ícono de Boxicons o Material
-            Symbols requiere que se le añada la clase <code>.o-icon</code> para que aplique los estilos correspondientes
-            a su componente.
-          </li>
-        </ul>
-      ),
-    },
-    {
-      id: 'section-15',
+      id: 'section-24',
       title: 'Accesibilidad',
       content: (
         <ul className="docs-list">
@@ -541,7 +575,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-16',
+      id: 'section-25',
       title: 'Comenzar a usar componentes',
       content: (
         <>

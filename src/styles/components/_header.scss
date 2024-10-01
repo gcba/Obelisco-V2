@@ -1,0 +1,616 @@
+/* stylelint-disable scss/percent-placeholder-pattern */
+
+/* === Custom variables and mixins === */
+$navbar-container-width: 1366px;
+$navbar-container-padding-x: 60px;
+$navbar-header-logo-width: 76px;
+$navbar-header-logo-width-mobile: 57px;
+$navbar-header-logo-height: 48px;
+$navbar-header-logo-height-mobile: 31px;
+
+$navbar-toggle-close: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="rgb(255, 255, 255)"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M18.3 5.71c-.39-.39-1.02-.39-1.41 0L12 10.59 7.11 5.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"/></svg>');
+$navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><g clip-path="url(%23clip0_15634_2285)"><path d="M4 18H20C20.55 18 21 17.55 21 17C21 16.45 20.55 16 20 16H4C3.45 16 3 16.45 3 17C3 17.55 3.45 18 4 18ZM4 13H20C20.55 13 21 12.55 21 12C21 11.45 20.55 11 20 11H4C3.45 11 3 11.45 3 12C3 12.55 3.45 13 4 13ZM3 7C3 7.55 3.45 8 4 8H20C20.55 8 21 7.55 21 7C21 6.45 20.55 6 20 6H4C3.45 6 3 6.45 3 7Z" fill="%2338485C"/></g><defs><clipPath id="clip0_15634_2285"><rect width="24" height="24" fill="white"/></clipPath></defs></svg>');
+
+@mixin item-notification($margin-left) {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: $danger;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+  margin-left: $margin-left;
+}
+
+@mixin dropdown-states {
+  .btn-dropdown {
+    &:focus {
+      color: $hover-color;
+
+      .btn-dropdown-text {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+      }
+
+      &:active {
+        color: $white;
+        background-color: $active-color;
+        box-shadow: none;
+      }
+    }
+
+    &:hover:not(:focus) {
+      outline-color: transparent;
+
+      .btn-dropdown-text {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+      }
+    }
+
+    &[aria-expanded='true'],
+    &:active {
+      color: $white;
+
+      .btn-dropdown-text {
+        @include media-breakpoint-up(xl) {
+          -webkit-text-stroke: 0.25px $white;
+          font-weight: 400;
+        }
+        font-weight: 700;
+      }
+
+      &:focus {
+        .btn-dropdown-text {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .dropdown-menu {
+    @extend .headline-md;
+    font-weight: $font-weight-normal;
+
+    .dropdown-item {
+      &:hover:not(:focus) {
+        outline-color: transparent;
+      }
+
+      &:hover {
+        .item-text {
+          text-decoration-color: $hover-color;
+        }
+      }
+
+      &:focus:not(:active),
+      &:focus:not(.active) {
+        &:not(.item-danger) {
+          color: $hover-color;
+        }
+
+        .item-text {
+          text-decoration: underline;
+          text-decoration-thickness: 1px;
+        }
+      }
+
+      .item-notifications {
+        @include item-notification(-0.5rem);
+      }
+
+      &.item-link {
+        color: $blue;
+        gap: 0.5rem;
+
+        .item-text {
+          flex-grow: 0;
+        }
+
+        &:active {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+%section-mobile-titles {
+  @extend .headline-lg;
+  font-weight: $font-weight-semibold;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+}
+
+@mixin nav-link-states {
+  &:focus:not(:active),
+  &:focus:not(.active) {
+    color: $active-color;
+
+    span:not(.material-icons-round) {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+    }
+  }
+
+  &:hover:not(:focus) {
+    outline-color: transparent;
+    text-decoration: none;
+
+    span:not(.material-icons-round) {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+    }
+  }
+
+  &.active:focus,
+  &:active:focus {
+    color: $white;
+
+    span:not(.material-icons-round) {
+      text-decoration: none;
+    }
+  }
+}
+
+@mixin nav-sections-styles {
+  .navbar-sections-title {
+    @extend %section-mobile-titles;
+
+    @include media-breakpoint-up(xl) {
+      display: none;
+    }
+  }
+
+  .nav-sections {
+    justify-content: flex-start;
+
+    .dropdown {
+      @include dropdown-states;
+    }
+
+    .nav-link {
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      column-gap: 0.25rem;
+
+      span {
+        font-size: 1.125rem;
+      }
+
+      .material-icons-round,
+      .bx {
+        font-size: 1.5rem;
+      }
+      @include nav-link-states;
+    }
+
+    @include media-breakpoint-up(xl) {
+      gap: 1rem 1.25rem;
+    }
+
+    @include media-breakpoint-down(xl) {
+      flex-direction: column;
+      row-gap: 0.5rem;
+
+      .dropdown {
+        width: 100%;
+
+        .btn-dropdown {
+          width: 100%;
+          max-width: 100%;
+          justify-content: space-between;
+          font-size: 1rem;
+          padding-left: 1rem;
+        }
+
+        .dropdown-menu {
+          min-width: 100%;
+          position: static;
+          outline: none;
+          border-bottom: 0.125rem solid $grisulado-50;
+          border-radius: 0;
+          padding-bottom: 0.25rem;
+
+          .dropdown-item {
+            padding-left: 2rem;
+            font-size: 1rem;
+          }
+        }
+
+        &:last-child {
+          .dropdown-menu {
+            border-bottom: none;
+          }
+        }
+      }
+
+      .nav-item {
+        width: 100%;
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        .nav-link {
+          padding-left: 1rem;
+
+          span {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* === Custom styles === */
+
+//Notificaciones - HEADER
+.notification {
+  position: relative;
+
+  &[aria-expanded='false']::before {
+    content: '' !important;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background-color: $danger;
+    border-radius: 50%;
+  }
+}
+
+.navbar.o-header {
+  border-bottom: 0.25rem solid $blue;
+  padding: 0.875rem 1rem 0.625rem; //14px 16px 10px
+
+  @include media-breakpoint-up(xl) {
+    padding: 1rem 0 0.75rem;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+    .navbar-collapse {
+      display: flex !important;
+      flex-basis: auto;
+    }
+  }
+
+  @include media-breakpoint-down(xl) {
+    &:has(.navbar-collapse.show, .navbar-collapse.collapsing) {
+      border-bottom: none;
+      padding: 0;
+
+      .header-container {
+        padding: 0.75rem 1rem;
+        z-index: 1050;
+        background-color: $white;
+        border-bottom: 0.25rem solid $white;
+      }
+
+      .header-backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1040;
+        width: 100%;
+        height: 100%;
+        background-color: $black;
+        opacity: 0.25;
+      }
+    }
+  }
+
+  .skip-to-main-content-link {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+
+    &:not(:focus) {
+      clip: rect(0 0 0 0);
+    }
+
+    &:focus {
+      top: 0.25rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: auto;
+      height: auto;
+      overflow: visible;
+      box-shadow: $focus-box-shadow;
+      padding: 0.0625rem 0.5rem 0.125rem;
+      text-decoration: none;
+      background-color: $dark;
+      color: $white;
+      text-align: center;
+      z-index: 1050;
+    }
+  }
+
+  .header-container {
+    align-items: flex-start;
+
+    @include media-breakpoint-down(xl) {
+      padding: 0;
+      max-width: 100%;
+      align-items: center;
+      min-height: 48px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      column-gap: 1.5rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+      max-width: $navbar-container-width;
+      padding-left: $navbar-container-padding-x;
+      padding-right: $navbar-container-padding-x;
+    }
+
+    @media (width >= 1366px) {
+      max-width: 100%;
+      margin: 0;
+    }
+
+    .navbar-brand {
+      margin-right: auto;
+      width: fit-content;
+      padding: 0;
+
+      .header-logo {
+        margin-right: 0;
+        width: $navbar-header-logo-width-mobile;
+        height: $navbar-header-logo-height-mobile;
+
+        @include media-breakpoint-up(xl) {
+          width: $navbar-header-logo-width;
+          height: $navbar-header-logo-height;
+        }
+      }
+    }
+
+    .navbar-toggler {
+      height: 48px;
+      width: 48px;
+      border: none;
+      border-radius: 0.5rem;
+      outline: $outline-border;
+      color: $body-color;
+      background: transparent $navbar-toggle-menu no-repeat center center;
+      margin-left: 1rem;
+      display: none;
+
+      @include media-breakpoint-down(xl) {
+        display: inline-block;
+      }
+      @media (width <= 290px) {
+        margin-left: 0.25rem;
+      }
+
+      &:focus,
+      &:focus-visible {
+        outline: 0.25rem solid transparent;
+        box-shadow: $focus-box-shadow;
+      }
+
+      &[aria-expanded='true'] {
+        background: $active-color $navbar-toggle-close no-repeat center center;
+        box-shadow: none;
+        outline: 0.125rem solid transparent;
+
+        &:focus,
+        &.focus {
+          outline: 0.25rem solid transparent;
+        }
+      }
+    }
+
+    .navbar-login-mobile {
+      @include media-breakpoint-up(xl) {
+        display: none;
+      }
+    }
+
+    .navbar-collapse {
+      flex-wrap: wrap;
+
+      @include media-breakpoint-down(xl) {
+        display: none;
+
+        &.show,
+        &.collapsing {
+          display: block;
+          padding: 0 1rem 0.25rem;
+          position: absolute;
+          top: 72px;
+          left: 0;
+          z-index: 1050;
+          background-color: $white;
+          width: 100%;
+          border-bottom: 0.25rem solid $blue;
+          border-top: 0.25rem solid $white;
+        }
+      }
+
+      &:not(:has(.navbar-search, .navbar-sections, .navbar-content-extended)) {
+        .navbar-user-mobile {
+          border-top: none;
+          padding-top: 0;
+        }
+      }
+
+      .navbar-content {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        gap: 0 1.5rem;
+        width: 100%;
+
+        @include media-breakpoint-down(xl) {
+          flex-direction: column-reverse;
+        }
+
+        .navbar-search {
+          max-width: 348px;
+          width: 100%;
+          margin-top: 0;
+          margin-bottom: 0;
+
+          @include media-breakpoint-down(xl) {
+            max-width: 100%;
+            padding: 0;
+            margin-top: 0.25rem;
+            margin-bottom: 1.5rem;
+          }
+        }
+
+        .navbar-user {
+          @include media-breakpoint-down(xl) {
+            display: none;
+          }
+
+          .dropdown {
+            @include dropdown-states;
+
+            .btn-dropdown {
+              &[aria-expanded='true'] {
+                color: $white;
+              }
+
+              &:hover:not(:focus) {
+                box-shadow: 0 0 0 2px $blue;
+
+                .btn-dropdown-text {
+                  text-decoration: none;
+                }
+              }
+            }
+          }
+        }
+
+        .navbar-login {
+          a {
+            word-break: normal;
+          }
+          @include media-breakpoint-down(xl) {
+            display: none;
+          }
+        }
+
+        .navbar-sections {
+          width: 100%;
+          margin-top: 0.25rem;
+          margin-bottom: 1rem;
+          @include nav-sections-styles;
+
+          @include media-breakpoint-up(xl) {
+            margin-right: auto;
+            min-width: 451px;
+            max-width: 990px;
+            margin-top: 0;
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      .navbar-user-mobile {
+        @include media-breakpoint-up(xl) {
+          display: none;
+        }
+        width: 100%;
+        margin-bottom: 1rem;
+        border-top: 1px solid $grisulado-100;
+        padding-top: 1rem;
+
+        &.unbordered {
+          border-top: none;
+          padding-top: 0;
+        }
+
+        .navbar-user-mobile-title {
+          @extend %section-mobile-titles;
+        }
+
+        .nav-user {
+          margin-top: 0;
+          row-gap: 0.5rem;
+
+          .nav-item {
+            width: 100%;
+
+            &:first-child {
+              margin-top: 0;
+            }
+
+            .nav-link {
+              line-height: 24px;
+              padding-left: 1rem;
+              display: flex;
+              align-items: center;
+              column-gap: 0.25rem;
+
+              span {
+                font-size: 1.125rem;
+                @include media-breakpoint-down(xl) {
+                  font-size: 1rem;
+                }
+
+                &.material-icons-round,
+                &.bx {
+                  font-size: 1.5rem;
+                }
+              }
+
+              .item-notifications {
+                @include item-notification(0.25rem);
+              }
+
+              @include nav-link-states;
+
+              &.nav-link-danger {
+                color: $danger;
+
+                &:hover {
+                  .material-icons-round {
+                    text-decoration: none;
+                  }
+                }
+
+                &:focus {
+                  color: $danger;
+                }
+
+                &:active {
+                  background-color: $danger;
+                  color: $white;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .navbar-content-extended {
+        margin-right: 0;
+        margin-top: 0.25rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        @include nav-sections-styles;
+
+        @include media-breakpoint-up(xl) {
+          width: 100%;
+          max-width: 1113px;
+          margin-top: 2rem;
+          margin-bottom: 0;
+          position: relative;
+          left: -100px;
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}

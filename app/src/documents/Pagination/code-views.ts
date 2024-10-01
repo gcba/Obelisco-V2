@@ -1,4 +1,4 @@
-export const PAGINATION_DESCRIPTION = `<div className="pagination">
+export const PAGINATION_DESCRIPTION = `<div class="pagination">
   <div class="page-navigation">
     <div class="page-item">
       <a class="btn page-link" href="#">

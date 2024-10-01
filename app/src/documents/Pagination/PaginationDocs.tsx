@@ -26,15 +26,23 @@ const PaginationDocs: React.FC = () => {
 
   const sections = [
     {
-      id: 'section-1',
       title: 'Paginado',
       h1: true,
       content: (
-        <MainDescription description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur expedita autem in quae culpa illum sed, eveniet perferendis ratione soluta, est assumenda ducimus corporis. Deleniti dolore quaerat consequuntur dolorem sequi." />
+        <>
+          <MainDescription description="El paginado se utiliza para dividir contenido o datos en varias páginas, con un control para navegar a la página siguiente o anterior." />
+          <p className="lead mb-4">
+            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
+            <a href="https://gcba.github.io/estandares/componentes/paginado/" target="_blank" rel="noopener noreferrer">
+              enlace
+            </a>
+            .
+          </p>
+        </>
       ),
     },
     {
-      id: 'section-2',
+      id: 'section-1',
       title: 'Numerado',
       content: (
         <CodeBox codeHTML={getCodeExample()}>
@@ -228,7 +236,7 @@ const PaginationDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-3',
+      id: 'section-2',
       title: 'Descriptivo',
       content: (
         <CodeCopy codeHTML={PAGINATION_DESCRIPTION}>

@@ -11,7 +11,8 @@
     "color-hex-length": null,
     "scss/at-extend-no-missing-placeholder": null,
     "no-descending-specificity": null,
-    "scss/no-global-function-names": null
+    "scss/no-global-function-names": null,
+    "scss/percent-placeholder-pattern": "off"
   },
   "ignoreFiles": ["**/node_modules/**", "**/dist/**", "**/app/**"]
 }

@@ -3,7 +3,7 @@ import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 const IntroductionModule: React.FC = () => {
   const sections = [
     {
-      title: 'Introducción',
+      title: 'Inicio',
       content: (
         <>
           <p className="lead">

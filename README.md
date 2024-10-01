@@ -38,7 +38,7 @@ npm update @gcba/obelisco-v2
 
 ```sh
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gcba/Obelisco-v2@main/dist/styles.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gcba/Obelisco-v2@main/dist/styles.css" />
 
 ```
 
@@ -49,7 +49,7 @@ Importar los estilos en el archivo principal del proyecto:
 ```sh
 @import "@gcba/obelisco-v2/dist/styles.css";
 o
-<link rel="stylesheet" href="ruta/al/proyecto/dist/styles.css">
+<link rel="stylesheet" href="ruta/al/proyecto/dist/styles.css" />
 ```
 
 ### Tipografías
@@ -58,7 +58,7 @@ Obelisco requiere las tipografías **Nunito** y **Open sans** disponibles en goo
 
 ```sh
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet"></link>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet" />
 ```
 
 ### Iconografía
@@ -69,13 +69,25 @@ Boxicons con npm o CDN:
 
 ```sh
 npm install boxicons
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
+
+// Es importante que incluyas el import a Boxicons en tu hoja de estilos si lo usas via NPM
+@import "boxicons/css/boxicons.min.css";
+```
+
+```sh
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
 ```
 
 Material Symbols con npm o CDN:
 
 ```sh
 npm install material-symbols@latest
+
+// Es importante que incluyas el import a Material Symbols en tu hoja de estilos si lo usas via NPM
+@import "material-symbols/index.css";
+```
+
+```sh
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0"/>
 ```
 

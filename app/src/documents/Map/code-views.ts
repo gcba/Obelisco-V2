@@ -1,4 +1,4 @@
-export const MAP_LATERAL = `<div class="card card-map">
+export const MAP_LATERAL = `<div class="card-map">
   <div class="card-body">
     <h2 class="card-title">Ubicación</h2>
     <p class="card-text">Av. Uspallata 3160</p>
@@ -37,7 +37,7 @@ export const MAP_LATERAL = `<div class="card card-map">
   </div>
 </div>`;
 
-export const MAP_INSTITUTION = `<div class="card card-map">
+export const MAP_INSTITUTION = `<div class="card-map">
   <div class="card-body">
     <h3 class="card-title">Ubicación</h3>
     <p class="card-text">Av. Uspallata 3160</p>

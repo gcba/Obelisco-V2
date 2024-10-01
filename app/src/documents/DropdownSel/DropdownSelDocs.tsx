@@ -6,13 +6,11 @@ import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
 import {
-  DROPDOWN_CHECKBOX,
   DROPDOWN_CHECKBOX_HTML,
   DROPDOWN_CHECKBOX_JS,
   DROPDOWN_CHECKBOX_SIZES_LG,
   DROPDOWN_CHECKBOX_SIZES_MD,
   DROPDOWN_CHECKBOX_SIZES_SM,
-  DROPDOWN_RADIO,
   DROPDOWN_RADIO_HTML,
   DROPDOWN_RADIO_JS,
   DROPDOWN_RADIO_SIZES_LG,
@@ -43,525 +41,451 @@ const sections = [
   {
     id: 'section-1',
     title: 'Con selección múltiple',
-    content: (
-      <>
-        <CodeBox codeHTML={DROPDOWN_CHECKBOX}>
-          <div className="container">
-            <div className="dropdown">
-              <button
-                type="button"
-                className="btn btn-dropdown btn-dropdown-border"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                data-bs-auto-close="outside"
-              >
-                <span className="material-symbols-rounded o-icon" aria-label="hidden">
-                  person
-                </span>
-                <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
-
-                <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
-                  expand_more
-                </span>
-              </button>
-              <div className="dropdown-menu">
-                <div className="form-checkbox">
-                  <input
-                    className="form-checkbox-input"
-                    type="checkbox"
-                    name="dropdownCheckbox"
-                    id="option-1"
-                    value="option-1"
-                  />
-                  <label className="form-checkbox-label" htmlFor="option-1">
-                    Opción de selección múltiple 1
-                  </label>
-                </div>
-                <div className="form-checkbox">
-                  <input
-                    className="form-checkbox-input"
-                    type="checkbox"
-                    name="dropdownCheckbox"
-                    id="option-2"
-                    value="option-2"
-                  />
-                  <label className="form-checkbox-label" htmlFor="option-2">
-                    Opción de selección múltiple 2
-                  </label>
-                </div>
-                <div className="form-checkbox">
-                  <input
-                    className="form-checkbox-input"
-                    type="checkbox"
-                    name="dropdownCheckbox"
-                    id="option-3"
-                    value="option-3"
-                    disabled
-                  />
-                  <label className="form-checkbox-label" htmlFor="option-3">
-                    Opción de selección múltiple 3
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-        </CodeBox>
-      </>
-    ),
   },
   {
     id: 'section-2',
-    title: 'Con selección única',
+    title: (
+      <div className="d-flex gap-1 align-items-center">
+        <span className="material-symbols-rounded" style={{ fontSize: '14px' }} aria-hidden="true">
+          arrow_right_alt
+        </span>{' '}
+        Grande
+      </div>
+    ),
     content: (
-      <>
-        <CodeBox codeHTML={DROPDOWN_RADIO}>
-          <div className="container">
-            <div className="dropdown">
-              <button
-                type="button"
-                className="btn btn-dropdown btn-dropdown-border"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                data-bs-auto-close="outside"
-                id="btnDropdownRadio"
-              >
-                <span className="material-symbols-rounded o-icon" aria-label="hidden">
-                  person
-                </span>
-                <span className="btn-dropdown-text ellipsis-1" id="btnDropdownRadioText">
-                  Desplegable
-                </span>
-                <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
-                  expand_more
-                </span>
-              </button>
-              <div className="dropdown-menu">
-                <div className="form-radio reverse">
-                  <input
-                    className="form-radio-input"
-                    type="radio"
-                    name="dropdownRadio"
-                    id="option-radio-1"
-                    value="option-1"
-                  />
-                  <label className="form-radio-label" htmlFor="option-radio-1">
-                    Opción de selección única 1
-                  </label>
-                </div>
-                <div className="form-radio reverse">
-                  <input
-                    className="form-radio-input"
-                    type="radio"
-                    name="dropdownRadio"
-                    id="option-radio-2"
-                    value="option-2"
-                  />
-                  <label className="form-radio-label" htmlFor="option-radio-2">
-                    Opción de selección única 2
-                  </label>
-                </div>
-                <div className="form-radio reverse">
-                  <input
-                    className="form-radio-input"
-                    type="radio"
-                    name="dropdownRadio"
-                    id="option-radio-3"
-                    value="option-3"
-                    disabled
-                  />
-                  <label className="form-radio-label" htmlFor="option-radio-3">
-                    Opción de selección única 3
-                  </label>
-                </div>
+      <CodeBox codeHTML={DROPDOWN_CHECKBOX_SIZES_LG}>
+        <div className="container">
+          <div className="dropdown">
+            <button
+              type="button"
+              className="btn btn-dropdown btn-dropdown-border btn-lg"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              data-bs-auto-close="outside"
+            >
+              <span className="material-symbols-rounded o-icon" aria-label="hidden">
+                person
+              </span>
+              <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
+              <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                expand_more
+              </span>
+            </button>
+            <div className="dropdown-menu">
+              <div className="form-checkbox">
+                <input
+                  className="form-checkbox-input"
+                  type="checkbox"
+                  name="dropdownCheckboxLg"
+                  id="option-checkbox-lg-1"
+                  value="option-1"
+                />
+                <label className="form-checkbox-label" htmlFor="option-checkbox-lg-1">
+                  Opción de selección múltiple 1
+                </label>
+              </div>
+              <div className="form-checkbox">
+                <input
+                  className="form-checkbox-input"
+                  type="checkbox"
+                  name="dropdownCheckboxLg"
+                  id="option-checkbox-lg-2"
+                  value="option-2"
+                />
+                <label className="form-checkbox-label" htmlFor="option-checkbox-lg-2">
+                  Opción de selección múltiple 2
+                </label>
+              </div>
+              <div className="form-checkbox">
+                <input
+                  className="form-checkbox-input"
+                  type="checkbox"
+                  name="dropdownCheckboxLg"
+                  id="option-checkbox-lg-3"
+                  value="option-3"
+                  disabled
+                />
+                <label className="form-checkbox-label" htmlFor="option-checkbox-lg-3">
+                  Opción de selección múltiple 3
+                </label>
               </div>
             </div>
           </div>
-        </CodeBox>
-      </>
+        </div>
+      </CodeBox>
     ),
   },
   {
     id: 'section-3',
-    title: 'Tamaños - selección múltiple',
+    title: (
+      <div className="d-flex gap-1 align-items-center">
+        <span className="material-symbols-rounded" style={{ fontSize: '14px' }} aria-hidden="true">
+          arrow_right_alt
+        </span>{' '}
+        Mediano
+      </div>
+    ),
     content: (
-      <>
-        <CodeBox codeHTML={DROPDOWN_CHECKBOX_SIZES_LG}>
-          <div className="container">
-            <div className="dropdown dropdown-lg">
-              <button
-                type="button"
-                className="btn btn-dropdown btn-dropdown-border"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                data-bs-auto-close="outside"
-              >
-                <span className="material-symbols-rounded o-icon" aria-label="hidden">
-                  person
-                </span>
-                <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
-                <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
-                  expand_more
-                </span>
-              </button>
-              <div className="dropdown-menu">
-                <div className="form-checkbox">
-                  <input
-                    className="form-checkbox-input"
-                    type="checkbox"
-                    name="dropdownCheckboxLg"
-                    id="option-checkbox-lg-1"
-                    value="option-1"
-                  />
-                  <label className="form-checkbox-label" htmlFor="option-checkbox-lg-1">
-                    Opción de selección múltiple 1
-                  </label>
-                </div>
-                <div className="form-checkbox">
-                  <input
-                    className="form-checkbox-input"
-                    type="checkbox"
-                    name="dropdownCheckboxLg"
-                    id="option-checkbox-lg-2"
-                    value="option-2"
-                  />
-                  <label className="form-checkbox-label" htmlFor="option-checkbox-lg-2">
-                    Opción de selección múltiple 2
-                  </label>
-                </div>
-                <div className="form-checkbox">
-                  <input
-                    className="form-checkbox-input"
-                    type="checkbox"
-                    name="dropdownCheckboxLg"
-                    id="option-checkbox-lg-3"
-                    value="option-3"
-                    disabled
-                  />
-                  <label className="form-checkbox-label" htmlFor="option-checkbox-lg-3">
-                    Opción de selección múltiple 3
-                  </label>
-                </div>
+      <CodeBox codeHTML={DROPDOWN_CHECKBOX_SIZES_MD}>
+        <div className="container">
+          <div className="dropdown">
+            <button
+              type="button"
+              className="btn btn-dropdown btn-dropdown-border"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              data-bs-auto-close="outside"
+            >
+              <span className="material-symbols-rounded o-icon" aria-label="hidden">
+                person
+              </span>
+              <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
+              <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                expand_more
+              </span>
+            </button>
+            <div className="dropdown-menu">
+              <div className="form-checkbox">
+                <input
+                  className="form-checkbox-input"
+                  type="checkbox"
+                  name="dropdownCheckboxMd"
+                  id="option-checkbox-1"
+                  value="option-1"
+                />
+                <label className="form-checkbox-label" htmlFor="option-checkbox-1">
+                  Opción de selección múltiple 1
+                </label>
+              </div>
+              <div className="form-checkbox">
+                <input
+                  className="form-checkbox-input"
+                  type="checkbox"
+                  name="dropdownCheckboxMd"
+                  id="option-checkbox-2"
+                  value="option-2"
+                />
+                <label className="form-checkbox-label" htmlFor="option-checkbox-2">
+                  Opción de selección múltiple 2
+                </label>
+              </div>
+              <div className="form-checkbox">
+                <input
+                  className="form-checkbox-input"
+                  type="checkbox"
+                  name="dropdownCheckboxMd"
+                  id="option-checkbox-3"
+                  value="option-3"
+                  disabled
+                />
+                <label className="form-checkbox-label" htmlFor="option-checkbox-3">
+                  Opción de selección múltiple 3
+                </label>
               </div>
             </div>
           </div>
-        </CodeBox>
-        <br />
-        <CodeBox codeHTML={DROPDOWN_CHECKBOX_SIZES_MD}>
-          <div className="container">
-            <div className="dropdown">
-              <button
-                type="button"
-                className="btn btn-dropdown btn-dropdown-border"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                data-bs-auto-close="outside"
-              >
-                <span className="material-symbols-rounded o-icon" aria-label="hidden">
-                  person
-                </span>
-                <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
-                <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
-                  expand_more
-                </span>
-              </button>
-              <div className="dropdown-menu">
-                <div className="form-checkbox">
-                  <input
-                    className="form-checkbox-input"
-                    type="checkbox"
-                    name="dropdownCheckboxMd"
-                    id="option-checkbox-1"
-                    value="option-1"
-                  />
-                  <label className="form-checkbox-label" htmlFor="option-checkbox-1">
-                    Opción de selección múltiple 1
-                  </label>
-                </div>
-                <div className="form-checkbox">
-                  <input
-                    className="form-checkbox-input"
-                    type="checkbox"
-                    name="dropdownCheckboxMd"
-                    id="option-checkbox-2"
-                    value="option-2"
-                  />
-                  <label className="form-checkbox-label" htmlFor="option-checkbox-2">
-                    Opción de selección múltiple 2
-                  </label>
-                </div>
-                <div className="form-checkbox">
-                  <input
-                    className="form-checkbox-input"
-                    type="checkbox"
-                    name="dropdownCheckboxMd"
-                    id="option-checkbox-3"
-                    value="option-3"
-                    disabled
-                  />
-                  <label className="form-checkbox-label" htmlFor="option-checkbox-3">
-                    Opción de selección múltiple 3
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-        </CodeBox>
-        <br />
-        <CodeBox codeHTML={DROPDOWN_CHECKBOX_SIZES_SM}>
-          <div className="container">
-            <div className="dropdown dropdown-sm">
-              <button
-                type="button"
-                className="btn btn-dropdown btn-dropdown-border"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                data-bs-auto-close="outside"
-              >
-                <span className="material-symbols-rounded o-icon" aria-label="hidden">
-                  person
-                </span>
-                <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
-                <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
-                  expand_more
-                </span>
-              </button>
-              <div className="dropdown-menu">
-                <div className="form-checkbox">
-                  <input
-                    className="form-checkbox-input"
-                    type="checkbox"
-                    name="dropdownCheckboxSm"
-                    id="option-checkbox-sm-1"
-                    value="option-1"
-                  />
-                  <label className="form-checkbox-label" htmlFor="option-checkbox-sm-1">
-                    Opción de selección múltiple 1
-                  </label>
-                </div>
-                <div className="form-checkbox">
-                  <input
-                    className="form-checkbox-input"
-                    type="checkbox"
-                    name="dropdownCheckboxSm"
-                    id="option-checkbox-sm-2"
-                    value="option-2"
-                  />
-                  <label className="form-checkbox-label" htmlFor="option-checkbox-sm-2">
-                    Opción de selección múltiple 2
-                  </label>
-                </div>
-                <div className="form-checkbox">
-                  <input
-                    className="form-checkbox-input"
-                    type="checkbox"
-                    name="dropdownCheckboxSm"
-                    id="option-checkbox-sm-3"
-                    value="option-3"
-                    disabled
-                  />
-                  <label className="form-checkbox-label" htmlFor="option-checkbox-sm-3">
-                    Opción de selección múltiple 3
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-        </CodeBox>
-      </>
+        </div>
+      </CodeBox>
     ),
   },
   {
     id: 'section-4',
-    title: 'Tamaños - selección única',
+    title: (
+      <div className="d-flex gap-1 align-items-center">
+        <span className="material-symbols-rounded" style={{ fontSize: '14px' }} aria-hidden="true">
+          arrow_right_alt
+        </span>{' '}
+        Chico
+      </div>
+    ),
     content: (
-      <>
-        <CodeBox codeHTML={DROPDOWN_RADIO_SIZES_LG}>
-          <div className="container">
-            <div className="dropdown dropdown-lg">
-              <button
-                type="button"
-                className="btn btn-dropdown btn-dropdown-border"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                data-bs-auto-close="outside"
-              >
-                <span className="material-symbols-rounded o-icon" aria-label="hidden">
-                  person
-                </span>
-                <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
-                <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
-                  expand_more
-                </span>
-              </button>
-              <div className="dropdown-menu">
-                <div className="form-radio reverse">
-                  <input
-                    className="form-radio-input"
-                    type="radio"
-                    name="dropdownRadioLg"
-                    id="option-radio-lg-1"
-                    value="option-1"
-                  />
-                  <label className="form-radio-label" htmlFor="option-radio-lg-1">
-                    Opción de selección única 1
-                  </label>
-                </div>
-                <div className="form-radio reverse">
-                  <input
-                    className="form-radio-input"
-                    type="radio"
-                    name="dropdownRadioLg"
-                    id="option-radio-lg-2"
-                    value="option-2"
-                  />
-                  <label className="form-radio-label" htmlFor="option-radio-lg-2">
-                    Opción de selección única 2
-                  </label>
-                </div>
-                <div className="form-radio reverse">
-                  <input
-                    className="form-radio-input"
-                    type="radio"
-                    name="dropdownRadioLg"
-                    id="option-radio-lg-3"
-                    value="option-3"
-                    disabled
-                  />
-                  <label className="form-radio-label" htmlFor="option-radio-lg-3">
-                    Opción de selección única 3
-                  </label>
-                </div>
+      <CodeBox codeHTML={DROPDOWN_CHECKBOX_SIZES_SM}>
+        <div className="container">
+          <div className="dropdown">
+            <button
+              type="button"
+              className="btn btn-dropdown btn-dropdown-border btn-sm"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              data-bs-auto-close="outside"
+            >
+              <span className="material-symbols-rounded o-icon" aria-label="hidden">
+                person
+              </span>
+              <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
+              <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                expand_more
+              </span>
+            </button>
+            <div className="dropdown-menu">
+              <div className="form-checkbox">
+                <input
+                  className="form-checkbox-input"
+                  type="checkbox"
+                  name="dropdownCheckboxSm"
+                  id="option-checkbox-sm-1"
+                  value="option-1"
+                />
+                <label className="form-checkbox-label" htmlFor="option-checkbox-sm-1">
+                  Opción de selección múltiple 1
+                </label>
+              </div>
+              <div className="form-checkbox">
+                <input
+                  className="form-checkbox-input"
+                  type="checkbox"
+                  name="dropdownCheckboxSm"
+                  id="option-checkbox-sm-2"
+                  value="option-2"
+                />
+                <label className="form-checkbox-label" htmlFor="option-checkbox-sm-2">
+                  Opción de selección múltiple 2
+                </label>
+              </div>
+              <div className="form-checkbox">
+                <input
+                  className="form-checkbox-input"
+                  type="checkbox"
+                  name="dropdownCheckboxSm"
+                  id="option-checkbox-sm-3"
+                  value="option-3"
+                  disabled
+                />
+                <label className="form-checkbox-label" htmlFor="option-checkbox-sm-3">
+                  Opción de selección múltiple 3
+                </label>
               </div>
             </div>
           </div>
-        </CodeBox>
-        <br />
-        <CodeBox codeHTML={DROPDOWN_RADIO_SIZES_MD}>
-          <div className="container">
-            <div className="dropdown">
-              <button
-                type="button"
-                className="btn btn-dropdown btn-dropdown-border"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                data-bs-auto-close="outside"
-              >
-                <span className="material-symbols-rounded o-icon" aria-label="hidden">
-                  person
-                </span>
-                <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
-                <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
-                  expand_more
-                </span>
-              </button>
-              <div className="dropdown-menu">
-                <div className="form-radio reverse">
-                  <input
-                    className="form-radio-input"
-                    type="radio"
-                    name="dropdownRadioMd"
-                    id="option-radio-md-1"
-                    value="option-1"
-                  />
-                  <label className="form-radio-label" htmlFor="option-radio-md-1">
-                    Opción de selección única 1
-                  </label>
-                </div>
-                <div className="form-radio reverse">
-                  <input
-                    className="form-radio-input"
-                    type="radio"
-                    name="dropdownRadioMd"
-                    id="option-radio-md-2"
-                    value="option-2"
-                  />
-                  <label className="form-radio-label" htmlFor="option-radio-md-2">
-                    Opción de selección única 2
-                  </label>
-                </div>
-                <div className="form-radio reverse">
-                  <input
-                    className="form-radio-input"
-                    type="radio"
-                    name="dropdownRadioMd"
-                    id="option-radio-md-3"
-                    value="option-3"
-                    disabled
-                  />
-                  <label className="form-radio-label" htmlFor="option-radio-md-3">
-                    Opción de selección única 3
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-        </CodeBox>
-        <br />
-        <CodeBox codeHTML={DROPDOWN_RADIO_SIZES_SM}>
-          <div className="container">
-            <div className="dropdown dropdown-sm">
-              <button
-                type="button"
-                className="btn btn-dropdown btn-dropdown-border"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                data-bs-auto-close="outside"
-              >
-                <span className="material-symbols-rounded o-icon" aria-label="hidden">
-                  person
-                </span>
-                <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
-                <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
-                  expand_more
-                </span>
-              </button>
-              <div className="dropdown-menu">
-                <div className="form-radio reverse">
-                  <input
-                    className="form-radio-input"
-                    type="radio"
-                    name="dropdownRadioSm"
-                    id="option-radio-sm-1"
-                    value="option-1"
-                  />
-                  <label className="form-radio-label" htmlFor="option-radio-sm-1">
-                    Opción de selección única 1
-                  </label>
-                </div>
-                <div className="form-radio reverse">
-                  <input
-                    className="form-radio-input"
-                    type="radio"
-                    name="dropdownRadioSm"
-                    id="option-radio-sm-2"
-                    value="option-2"
-                  />
-                  <label className="form-radio-label" htmlFor="option-radio-sm-2">
-                    Opción de selección única 2
-                  </label>
-                </div>
-                <div className="form-radio reverse">
-                  <input
-                    className="form-radio-input"
-                    type="radio"
-                    name="dropdownRadioSm"
-                    id="option-radio-sm-3"
-                    value="option-3"
-                    disabled
-                  />
-                  <label className="form-radio-label" htmlFor="option-radio-3">
-                    Opción de selección única 3
-                  </label>
-                </div>
-              </div>
-            </div>
-          </div>
-        </CodeBox>
-      </>
+        </div>
+      </CodeBox>
     ),
   },
   {
     id: 'section-5',
+    title: 'Con selección única',
+  },
+  {
+    id: 'section-6',
+    title: (
+      <div className="d-flex gap-1 align-items-center">
+        <span className="material-symbols-rounded" style={{ fontSize: '14px' }} aria-hidden="true">
+          arrow_right_alt
+        </span>{' '}
+        Grande
+      </div>
+    ),
+    content: (
+      <CodeBox codeHTML={DROPDOWN_RADIO_SIZES_LG}>
+        <div className="container">
+          <div className="dropdown">
+            <button
+              type="button"
+              className="btn btn-dropdown btn-dropdown-border btn-lg"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              data-bs-auto-close="outside"
+            >
+              <span className="material-symbols-rounded o-icon" aria-label="hidden">
+                person
+              </span>
+              <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
+              <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                expand_more
+              </span>
+            </button>
+            <div className="dropdown-menu">
+              <div className="form-radio reverse">
+                <input
+                  className="form-radio-input"
+                  type="radio"
+                  name="dropdownRadioLg"
+                  id="option-radio-lg-1"
+                  value="option-1"
+                />
+                <label className="form-radio-label" htmlFor="option-radio-lg-1">
+                  Opción de selección única 1
+                </label>
+              </div>
+              <div className="form-radio reverse">
+                <input
+                  className="form-radio-input"
+                  type="radio"
+                  name="dropdownRadioLg"
+                  id="option-radio-lg-2"
+                  value="option-2"
+                />
+                <label className="form-radio-label" htmlFor="option-radio-lg-2">
+                  Opción de selección única 2
+                </label>
+              </div>
+              <div className="form-radio reverse">
+                <input
+                  className="form-radio-input"
+                  type="radio"
+                  name="dropdownRadioLg"
+                  id="option-radio-lg-3"
+                  value="option-3"
+                  disabled
+                />
+                <label className="form-radio-label" htmlFor="option-radio-lg-3">
+                  Opción de selección única 3
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </CodeBox>
+    ),
+  },
+  {
+    id: 'section-7',
+    title: (
+      <div className="d-flex gap-1 align-items-center">
+        <span className="material-symbols-rounded" style={{ fontSize: '14px' }} aria-hidden="true">
+          arrow_right_alt
+        </span>{' '}
+        Mediano
+      </div>
+    ),
+    content: (
+      <CodeBox codeHTML={DROPDOWN_RADIO_SIZES_MD}>
+        <div className="container">
+          <div className="dropdown">
+            <button
+              type="button"
+              className="btn btn-dropdown btn-dropdown-border"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              data-bs-auto-close="outside"
+            >
+              <span className="material-symbols-rounded o-icon" aria-label="hidden">
+                person
+              </span>
+              <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
+              <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                expand_more
+              </span>
+            </button>
+            <div className="dropdown-menu">
+              <div className="form-radio reverse">
+                <input
+                  className="form-radio-input"
+                  type="radio"
+                  name="dropdownRadioMd"
+                  id="option-radio-md-1"
+                  value="option-1"
+                />
+                <label className="form-radio-label" htmlFor="option-radio-md-1">
+                  Opción de selección única 1
+                </label>
+              </div>
+              <div className="form-radio reverse">
+                <input
+                  className="form-radio-input"
+                  type="radio"
+                  name="dropdownRadioMd"
+                  id="option-radio-md-2"
+                  value="option-2"
+                />
+                <label className="form-radio-label" htmlFor="option-radio-md-2">
+                  Opción de selección única 2
+                </label>
+              </div>
+              <div className="form-radio reverse">
+                <input
+                  className="form-radio-input"
+                  type="radio"
+                  name="dropdownRadioMd"
+                  id="option-radio-md-3"
+                  value="option-3"
+                  disabled
+                />
+                <label className="form-radio-label" htmlFor="option-radio-md-3">
+                  Opción de selección única 3
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </CodeBox>
+    ),
+  },
+  {
+    id: 'section-8',
+    title: (
+      <div className="d-flex gap-1 align-items-center">
+        <span className="material-symbols-rounded" style={{ fontSize: '14px' }} aria-hidden="true">
+          arrow_right_alt
+        </span>{' '}
+        Chico
+      </div>
+    ),
+    content: (
+      <CodeBox codeHTML={DROPDOWN_RADIO_SIZES_SM}>
+        <div className="container">
+          <div className="dropdown">
+            <button
+              type="button"
+              className="btn btn-dropdown btn-dropdown-border btn-sm"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              data-bs-auto-close="outside"
+            >
+              <span className="material-symbols-rounded o-icon" aria-label="hidden">
+                person
+              </span>
+              <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
+              <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                expand_more
+              </span>
+            </button>
+            <div className="dropdown-menu">
+              <div className="form-radio reverse">
+                <input
+                  className="form-radio-input"
+                  type="radio"
+                  name="dropdownRadioSm"
+                  id="option-radio-sm-1"
+                  value="option-1"
+                />
+                <label className="form-radio-label" htmlFor="option-radio-sm-1">
+                  Opción de selección única 1
+                </label>
+              </div>
+              <div className="form-radio reverse">
+                <input
+                  className="form-radio-input"
+                  type="radio"
+                  name="dropdownRadioSm"
+                  id="option-radio-sm-2"
+                  value="option-2"
+                />
+                <label className="form-radio-label" htmlFor="option-radio-sm-2">
+                  Opción de selección única 2
+                </label>
+              </div>
+              <div className="form-radio reverse">
+                <input
+                  className="form-radio-input"
+                  type="radio"
+                  name="dropdownRadioSm"
+                  id="option-radio-sm-3"
+                  value="option-3"
+                  disabled
+                />
+                <label className="form-radio-label" htmlFor="option-radio-3">
+                  Opción de selección única 3
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </CodeBox>
+    ),
+  },
+  {
+    id: 'section-9',
     title: 'Implementación',
     content: (
       <>

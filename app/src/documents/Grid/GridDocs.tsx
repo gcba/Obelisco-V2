@@ -1,9 +1,11 @@
 import Image from 'next/image';
 
 import CodeBox from '@/components/CodeBox';
+import Tabs from '@/components/Tabs';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 
 import { FOUR_COLUMNS, LAYOUTS, ONE_COLUMN, THREE_COLUMNS, TWO_COLUMNS } from './code-views';
+
 
 const basePath = '/Obelisco-V2';
 
@@ -545,54 +547,11 @@ const GridDocs: React.FC = () => {
         producto digital y distribuir los elementos internos asegurando la legibilidad, la usabilidad y la accesibilidad
         del contenido.
       </p>
-
-      <nav className="tabs-box" aria-label="Navegación por pestañas">
-        <ul className="nav nav-pills tabs fixed-width p-0" id="simple-myTab" role="tablist">
-          <li className="nav-item" role="presentation">
-            <button
-              className="nav-link active"
-              data-bs-toggle="tab"
-              data-bs-target="#panel-content-1"
-              type="button"
-              role="tab"
-              aria-controls="panel-content-1"
-              id="tab-ux"
-            >
-              <div className="nav-icon">
-                <span>Uso</span>
-                <span className="material-symbols-rounded o-icon">subject</span>
-              </div>
-            </button>
-          </li>
-          <li className="nav-item" role="presentation">
-            <button
-              className="nav-link"
-              data-bs-toggle="tab"
-              data-bs-target="#panel-content-2"
-              type="button"
-              role="tab"
-              aria-controls="panel-content-2"
-              id="tab-dev"
-            >
-              <div className="nav-icon">
-                <span>Codigo</span>
-                <span className="material-symbols-rounded o-icon">code</span>
-              </div>
-            </button>
-          </li>
-        </ul>
-      </nav>
-
-      <hr className="my-0" />
-
-      <div className="tab-content" id="simple-myTabContent">
-        <div className="tab-pane fade show active pt-4" id="panel-content-1" role="tabpanelUx" aria-labelledby="tab-ux">
-          <DocumentationTemplate sections={SECTION_UX} />
-        </div>
-        <div className="tab-pane fade pt-4" id="panel-content-2" role="tabpanelDev" aria-labelledby="tab-dev">
-          <DocumentationTemplate sections={SECTION_DEV} />
-        </div>
-      </div>
+      
+      <Tabs>
+        <DocumentationTemplate sections={SECTION_UX} />
+        <DocumentationTemplate sections={SECTION_DEV} />
+      </Tabs>
     </>
   );
 };

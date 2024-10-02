@@ -533,6 +533,36 @@ const UpdateComponents: React.FC = () => {
     },
     {
       id: 'section-23',
+      title: 'Tarjetas',
+      content: (
+        <ul className="docs-list">
+          <li>
+            Quedan deprecadas las clases <code>.card-simple</code> y <code>.card-lg</code>.
+          </li>
+          <li>
+            En el caso de tarjeta Temática, las clases <code>.card-horizonal</code>, <code>.card-simple</code> y{' '}
+            <code>.card-lg</code> se reemplazan por la clase <code>.thematic</code>.
+          </li>
+          <li>
+            Las clases <code>.card-img-left</code> y <code>.card-img-top</code> se reemplazan por la clase{' '}
+            <code>.card-img</code>.
+          </li>
+          <li>
+            La clase <code>.card-icon-left</code> se reemplazan por <code>.card-icon</code>.
+          </li>
+          <li>
+            Las clases <code>.card-deck</code>, <code>.max-cards-3</code> y <code>.card-column</code> quedan deprecadas
+            y se reemplazan por <code>.max-items-3</code>.
+          </li>
+          <li>
+            Las clases <code>.card-deck</code>, <code>.max-cards-2</code> y <code>.card-column</code> quedan deprecadas
+            y se reemplazan por <code>.max-items-2</code>.
+          </li>
+        </ul>
+      ),
+    },
+    {
+      id: 'section-24',
       title: 'Tipografía',
       content: (
         <ul className="docs-list">
@@ -566,7 +596,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-24',
+      id: 'section-25',
       title: 'Accesibilidad',
       content: (
         <ul className="docs-list">
@@ -577,7 +607,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-25',
+      id: 'section-26',
       title: 'Comenzar a usar componentes',
       content: (
         <>

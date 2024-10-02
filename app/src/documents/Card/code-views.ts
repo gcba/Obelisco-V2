@@ -298,7 +298,7 @@ export const DISPOSITION_2 = `
 </div>
 `;
 export const DISPOSITION_SCROLL = `
-<div class="responsive-scroll vertical-cards-container" tabIndex={0}>
+<div class="responsive-scroll vertical-cards-container" tabindex="0">
   <div class="card">
     <img class="card-img" src="https://gcba.github.io/Obelisco/cards/img-top.jpg" alt="descripción de imagen" />
     <div class="card-body">

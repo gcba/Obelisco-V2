@@ -110,7 +110,6 @@ const MapDocs: React.FC = () => {
       id: 'section-2',
       title: 'Institucional',
       content: (
-
         <div className="card-map">
           <div className="card-body">
             <h3 className="card-title">Ubicación</h3>
@@ -139,7 +138,6 @@ const MapDocs: React.FC = () => {
             </a>
           </div>
         </div>
-
       ),
     },
   ];

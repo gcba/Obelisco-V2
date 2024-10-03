@@ -1,4 +1,5 @@
 import CodeBox from '@/components/CodeBox';
+import LinkClient from '@/components/LinkClient';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
@@ -34,21 +35,21 @@ const ListLinkDocs: React.FC = () => {
           <div className="container">
             <div className="list-link">
               <h3 className="list-link-title">Este es el título de una lista de enlaces</h3>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <LinkClient>
                 Enlace predeterminado
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              </LinkClient>
+              <LinkClient>
                 Enlace predeterminado
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              </LinkClient>
+              <LinkClient>
                 Enlace predeterminado
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              </LinkClient>
+              <LinkClient>
                 Enlace predeterminado
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              </LinkClient>
+              <LinkClient>
                 Enlace predeterminado
-              </a>
+              </LinkClient>
             </div>
           </div>
         </CodeBox>

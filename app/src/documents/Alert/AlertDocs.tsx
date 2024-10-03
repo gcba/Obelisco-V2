@@ -1,4 +1,5 @@
 import CodeBox from '@/components/CodeBox';
+import LinkClient from '@/components/LinkClient';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
@@ -10,6 +11,7 @@ import {
   LIST_LINK_ALERT,
   WITH_DESCRIPTION_ALERT,
 } from './code-views';
+
 
 const AlertDocs: React.FC = () => {
   const sections = [
@@ -129,7 +131,7 @@ const AlertDocs: React.FC = () => {
               <p>
                 <strong>Este es un destacado de una alerta de información. </strong>
                 Esta es la descripción de una alerta de información que continua al texto destacado, incluso{' '}
-                <a href="#">con enlaces</a>.
+                <LinkClient >con enlaces</LinkClient>.
               </p>
             </div>
 
@@ -137,7 +139,7 @@ const AlertDocs: React.FC = () => {
               <p>
                 <strong>Este es un destacado de una alerta de éxito. </strong>
                 Esta es la descripción de una alerta de éxito que continua al texto destacado, incluso{' '}
-                <a href="#">con enlaces</a>.
+                <LinkClient >con enlaces</LinkClient>.
               </p>
             </div>
 
@@ -145,7 +147,7 @@ const AlertDocs: React.FC = () => {
               <p>
                 <strong>Este es un destacado de una alerta de advertencia. </strong>
                 Esta es la descripción de una alerta de advertencia que continua al texto destacado, incluso{' '}
-                <a href="#">con enlaces</a>.
+                <LinkClient >con enlaces</LinkClient>.
               </p>
             </div>
 
@@ -153,7 +155,7 @@ const AlertDocs: React.FC = () => {
               <p>
                 <strong>Este es un destacado de una alerta de error. </strong>
                 Esta es la descripción de una alerta de error que continua al texto destacado, incluso{' '}
-                <a href="#">con enlaces</a>.
+                <LinkClient >con enlaces</LinkClient>.
               </p>
             </div>
           </div>
@@ -173,20 +175,21 @@ const AlertDocs: React.FC = () => {
               </p>
               <ol>
                 <li>
-                  <a href="#">Ancla al error 1</a>
+                  <LinkClient >Ancla al error 1</LinkClient>
                 </li>
                 <li>
-                  <a href="#">Ancla al error 2</a>
+                  <LinkClient >Ancla al error 2</LinkClient>
                 </li>
                 <li>
-                  <a href="#">Ancla al error 3</a>
+                  <LinkClient >Ancla al error 3</LinkClient>
                 </li>
                 <li>
-                  <a href="#">Ancla al error 4</a>
+                  <LinkClient >Ancla al error 4</LinkClient>
                 </li>
                 <li>
-                  <a href="#">Ancla al error 5</a>
+                  <LinkClient >Ancla al error 5</LinkClient>
                 </li>
+
               </ol>
             </div>
           </div>

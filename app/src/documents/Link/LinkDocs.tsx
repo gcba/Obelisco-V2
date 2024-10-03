@@ -1,8 +1,10 @@
 import CodeBox from '@/components/CodeBox';
+import LinkClient from '@/components/LinkClient';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
 import { LINK_DEFAULT, LINK_EXTERNAL, LINK_DOWNLOAD, LINK_ACCESS } from './code-views';
+
 
 const LinkDocs: React.FC = () => {
   const sections = [
@@ -14,7 +16,7 @@ const LinkDocs: React.FC = () => {
           <MainDescription description="Los enlaces son hipervínculos que la persona usuaria utiliza para navegar contenidos en un sitio web. Pueden dirigir tanto a información y recursos dentro de una misma página o sitio web, como también a páginas externas." />
           <p className="lead mb-4">
             Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-            <a href="https://gcba.github.io/estandares/componentes/enlaces/" target="_blank" rel="noopener noreferrer">
+            <a href="https://gcba.github.io/estandares/componentes/enlaces/">
               enlace.
             </a>
           </p>
@@ -30,28 +32,28 @@ const LinkDocs: React.FC = () => {
           <CodeBox codeHTML={LINK_DEFAULT}>
             <div className="container">
               <p>
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <LinkClient>
                   enlace en párrafo
-                </a>
+                </LinkClient>
               </p>
               <p>
                 <small>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <LinkClient>
                     enlaces en párrafo
-                  </a>
+                  </LinkClient>
                 </small>
               </p>
               <div className="bg-dark p-2">
                 <p>
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="link-white">
+                  <LinkClient className="link-white">
                     enlace en párrafo
-                  </a>{' '}
+                  </LinkClient>{' '}
                 </p>
                 <p className="mb-0">
                   <small>
-                    <a href="#" target="_blank" rel="noopener noreferrer" className="link-white">
+                    <LinkClient className="link-white">
                       enlaces en párrafo
-                    </a>
+                    </LinkClient>
                   </small>
                 </p>
               </div>
@@ -69,16 +71,16 @@ const LinkDocs: React.FC = () => {
             <div className="container">
               <div className="p-2">
                 <p>
-                  <a className="external" href="#" target="_blank" rel="noopener noreferrer">
+                  <LinkClient className="external">
                     enlace externo
-                  </a>
+                  </LinkClient>
                 </p>
               </div>
               <div className="bg-dark p-2">
                 <p className="mb-0">
-                  <a className="external link-white" href="#" target="_blank" rel="noopener noreferrer">
+                  <LinkClient className="external link-white">
                     enlace externo
-                  </a>
+                  </LinkClient>
                 </p>
               </div>
             </div>
@@ -95,28 +97,25 @@ const LinkDocs: React.FC = () => {
             <div className="container">
               <div className="p-2">
                 <p>
-                  <a className="download" href="#" target="_blank" rel="noopener noreferrer" download="">
+                  <LinkClient className="download" download="">
                     enlace de descarga
-                  </a>
+                  </LinkClient>
                 </p>
               </div>
 
               <div className="bg-dark p-2">
                 <p className="mb-0">
-                  <a className="download link-white" href="#" target="_blank" rel="noopener noreferrer" download="">
+                  <LinkClient className="download link-white" download="">
                     enlace de descarga
-                  </a>
+                  </LinkClient>
                 </p>
               </div>
-              <a
+              <LinkClient
                 className="btn btn-secondary btn-sm download-link my-3"
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
                 download=""
               >
                 Descargar
-              </a>
+              </LinkClient>
             </div>
           </CodeBox>
         </>
@@ -131,17 +130,17 @@ const LinkDocs: React.FC = () => {
             <div className="container">
               <div className="p-2">
                 <p>
-                  <a className="access" href="#" target="_blank" rel="noopener noreferrer">
+                  <LinkClient className="access">
                     enlace de acceso
-                  </a>
+                  </LinkClient>
                 </p>
               </div>
 
               <div className="bg-dark p-2">
                 <p className="mb-0">
-                  <a className="access link-white" href="#" target="_blank" rel="noopener noreferrer">
+                  <LinkClient className="access link-white">
                     enlace de acceso
-                  </a>
+                  </LinkClient>
                 </p>
               </div>
             </div>

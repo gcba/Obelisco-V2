@@ -1,8 +1,10 @@
 import CodeBox from '@/components/CodeBox';
+import LinkClient from '@/components/LinkClient';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
 import { SM_INFO, SM_SUCCESS, SM_WARNING, SM_DANGER, SM_INSTITUTIONAL } from './code-views';
+
 
 const sections = [
   {
@@ -63,7 +65,7 @@ const sections = [
             </p>
             <ul className="status-list">
               <li>
-                Éste es un ítem dentro de una lista que puede contener un <a href="#">enlace</a>.
+                Éste es un ítem dentro de una lista que puede contener un <LinkClient href="#">enlace</LinkClient>.
               </li>
               <li>Los ítems pueden contener o no enlaces. Este es un ejemplo para un detalle que no lleva enlace.</li>
               <li>Éste es otro ítem dentro de una lista.</li>
@@ -91,7 +93,7 @@ const sections = [
             </p>
             <ul className="status-list">
               <li>
-                Contar con Clave Ciudad de <a href="#">AGIP</a>
+                Contar con Clave Ciudad de <LinkClient href="#">AGIP</LinkClient>
               </li>
               <li>Cargar en el Sistema de Tramitación a Distancia (TAD) la siguiente documentación obligatoria:</li>
               <li>Anexo II Formulario de Presentación de Programa de Capacitación</li>
@@ -123,7 +125,7 @@ const sections = [
             </p>
             <ul className="status-list">
               <li>
-                Contar con Clave Ciudad de <a href="#">AGIP</a>
+                Contar con Clave Ciudad de <LinkClient href="#">AGIP</LinkClient>
               </li>
               <li>Cargar en el Sistema de Tramitación a Distancia (TAD) la siguiente documentación obligatoria:</li>
               <li>Anexo II Formulario de Presentación de Programa de Capacitación</li>
@@ -151,7 +153,7 @@ const sections = [
             <h2 className="status-title">Este es un mensaje institucional del Gobierno de la Ciudad de Buenos Aires</h2>
             <p className="status-text">
               En el cuerpo de este componente pueden ir enlaces o botones:
-              <a href="#">https://ejemplo.buenosaires.gob.ar</a>
+              <LinkClient href="#">https://ejemplo.buenosaires.gob.ar</LinkClient>
             </p>
             <button type="button" className="btn btn-primary">
               <i className="bx bxs-info-circle o-icon"></i>

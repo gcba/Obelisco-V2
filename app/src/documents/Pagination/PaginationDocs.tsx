@@ -85,27 +85,27 @@ const PaginationDocs: React.FC = () => {
                       </span>
                     </li>
                     <li className="page-item active">
-                      <a className="page-link" href="#">
+                      <a className="page-link" >
                         1
                       </a>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
+                      <a className="page-link" >
                         2
                       </a>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
+                      <a className="page-link" >
                         3
                       </a>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
+                      <a className="page-link" >
                         4
                       </a>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
+                      <a className="page-link" >
                         5
                       </a>
                     </li>
@@ -113,12 +113,12 @@ const PaginationDocs: React.FC = () => {
                       <span className="page-link">...</span>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
+                      <a className="page-link" >
                         10
                       </a>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
+                      <a className="page-link" >
                         <span className="page-next-text">Siguiente</span>
                         <span className="page-next-icon" aria-hidden="true"></span>
                       </a>
@@ -132,13 +132,13 @@ const PaginationDocs: React.FC = () => {
                 <nav aria-label="Ejemplo de paginado numerado central">
                   <ul className="pagination">
                     <li className="page-item">
-                      <a className="page-link" href="#">
+                      <a className="page-link" >
                         <span className="page-previous-icon" aria-hidden="true"></span>
                         <span className="page-previous-text">Anterior</span>
                       </a>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
+                      <a className="page-link" >
                         1
                       </a>
                     </li>
@@ -146,17 +146,17 @@ const PaginationDocs: React.FC = () => {
                       <span className="page-link">...</span>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
+                      <a className="page-link" >
                         4
                       </a>
                     </li>
                     <li className="page-item active">
-                      <a className="page-link" href="#">
+                      <a className="page-link" >
                         5
                       </a>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
+                      <a className="page-link" >
                         6
                       </a>
                     </li>
@@ -164,12 +164,12 @@ const PaginationDocs: React.FC = () => {
                       <span className="page-link">...</span>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
+                      <a className="page-link" >
                         10
                       </a>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
+                      <a className="page-link" >
                         <span className="page-next-text">Siguiente</span>
                         <span className="page-next-icon" aria-hidden="true"></span>
                       </a>
@@ -183,13 +183,13 @@ const PaginationDocs: React.FC = () => {
                 <nav aria-label="Ejemplo de paginado numerado final">
                   <ul className="pagination">
                     <li className="page-item">
-                      <a className="page-link" href="#">
+                      <a className="page-link" >
                         <span className="page-previous-icon" aria-hidden="true"></span>
                         <span className="page-previous-text">Anterior</span>
                       </a>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
+                      <a className="page-link" >
                         1
                       </a>
                     </li>
@@ -197,27 +197,27 @@ const PaginationDocs: React.FC = () => {
                       <span className="page-link">...</span>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
+                      <a className="page-link" >
                         6
                       </a>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
+                      <a className="page-link" >
                         7
                       </a>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
+                      <a className="page-link" >
                         8
                       </a>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
+                      <a className="page-link" >
                         9
                       </a>
                     </li>
                     <li className="page-item active">
-                      <a className="page-link" href="#">
+                      <a className="page-link" >
                         10
                       </a>
                     </li>
@@ -244,13 +244,13 @@ const PaginationDocs: React.FC = () => {
             <div className="pagination">
               <div className="page-navigation">
                 <div className="page-item">
-                  <a className="btn page-link" href="#">
+                  <a className="btn page-link" >
                     <span className="page-previous-icon" aria-hidden="true"></span>
                     <span className="page-next-text">Anterior</span>
                   </a>
                 </div>
                 <div className="page-item">
-                  <a className="btn page-link" href="#">
+                  <a className="btn page-link" >
                     <span className="page-next-text">Siguiente</span>
                     <span className="page-next-icon" aria-hidden="true"></span>
                   </a>

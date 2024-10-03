@@ -1,8 +1,10 @@
 import CodeBox from '@/components/CodeBox';
+import LinkClient from '@/components/LinkClient';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
 import { BADGE_COLORS, BADGE_TYPES } from './code-views';
+
 
 const BadgeDocs: React.FC = () => {
   const sections = [
@@ -52,15 +54,15 @@ const BadgeDocs: React.FC = () => {
           <div className="row justify-content-center">
             <div className="col-auto">
               <div className="grid gap-5">
-                <a href="#" className="badge badge-default">
+                <LinkClient className="badge badge-default">
                   Etiqueta
-                </a>
-                <a href="#" className="badge hover badge-default">
+                </LinkClient>
+                <LinkClient className="badge hover badge-default">
                   Etiqueta
-                </a>
-                <a href="#" className="badge focus badge-default">
+                </LinkClient>
+                <LinkClient className="badge focus badge-default">
                   Etiqueta
-                </a>
+                </LinkClient>
               </div>
             </div>
           </div>

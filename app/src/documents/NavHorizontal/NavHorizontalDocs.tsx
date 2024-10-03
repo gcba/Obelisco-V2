@@ -1,4 +1,5 @@
 import CodeBox from '@/components/CodeBox';
+import LinkClient from '@/components/LinkClient';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
@@ -9,6 +10,7 @@ import {
   NAV_HORIZONTAL_SIZES,
   NAV_HORIZONTAL_BORDER,
 } from './code-views';
+
 
 const sections = [
   {
@@ -35,22 +37,22 @@ const sections = [
           <nav>
             <ul className="nav flex-row nav-pills">
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <LinkClient className="nav-link">
                   <span>Link</span>
-                </a>
+                </LinkClient>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="#">
+                <a className="nav-link active">
                   <span>Activo</span>
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <LinkClient className="nav-link">
                   <span>Link</span>
-                </a>
+                </LinkClient>
               </li>
               <li className="nav-item">
-                <a className="nav-link disabled" href="#" aria-disabled="true" tabIndex={-1}>
+                <a className="nav-link disabled" aria-disabled="true" tabIndex={-1}>
                   <span>Deshabilitado</span>
                 </a>
               </li>
@@ -70,15 +72,15 @@ const sections = [
             <nav>
               <ul className="nav flex-row nav-pills">
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <LinkClient className="nav-link">
                     <div className="nav-icon">
                       <i className="bx bxs-user-circle"></i>
                       <span>Link</span>
                     </div>
-                  </a>
+                  </LinkClient>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="#">
+                  <a className="nav-link active">
                     <div className="nav-icon">
                       <i className="bx bxs-user-circle"></i>
                       <span>Activo</span>
@@ -86,15 +88,15 @@ const sections = [
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <LinkClient className="nav-link">
                     <div className="nav-icon">
                       <i className="bx bxs-user-circle"></i>
                       <span>Link</span>
                     </div>
-                  </a>
+                  </LinkClient>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link disabled" href="#" aria-disabled="true" tabIndex={-1}>
+                  <a className="nav-link disabled" aria-disabled="true" tabIndex={-1}>
                     <div className="nav-icon">
                       <i className="bx bxs-user-circle"></i>
                       <span>Deshabilitado</span>
@@ -111,15 +113,15 @@ const sections = [
             <nav>
               <ul className="nav flex-row nav-pills">
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <LinkClient className="nav-link">
                     <div className="nav-icon">
                       <span>Link</span>
                       <i className="bx bxs-user-circle"></i>
                     </div>
-                  </a>
+                  </LinkClient>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="#">
+                  <a className="nav-link active">
                     <div className="nav-icon">
                       <span>Activo</span>
                       <i className="bx bxs-user-circle"></i>
@@ -127,15 +129,15 @@ const sections = [
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <LinkClient className="nav-link">
                     <div className="nav-icon">
                       <span>Link</span>
                       <i className="bx bxs-user-circle"></i>
                     </div>
-                  </a>
+                  </LinkClient>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link disabled" href="#" aria-disabled="true" tabIndex={-1}>
+                  <a className="nav-link disabled" aria-disabled="true" tabIndex={-1}>
                     <div className="nav-icon">
                       <span>Deshabilitado</span>
                       <i className="bx bxs-user-circle"></i>
@@ -159,17 +161,17 @@ const sections = [
             <nav>
               <ul className="nav flex-row nav-pills">
                 <li className="nav-item">
-                  <a className="nav-link nav-link-lg border-link" href="#">
+                  <a className="nav-link nav-link-lg border-link">
                     <span>Link</span>
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link border-link" href="#">
+                  <a className="nav-link border-link">
                     <span>Link</span>
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link nav-link-sm border-link" href="#">
+                  <a className="nav-link nav-link-sm border-link">
                     <span>Link</span>
                   </a>
                 </li>
@@ -190,7 +192,7 @@ const sections = [
             <nav>
               <ul className="nav flex-row nav-pills">
                 <li className="nav-item">
-                  <a className="nav-link border-link" href="#">
+                  <a className="nav-link border-link">
                     <div className="nav-icon">
                       <i className="bx bxs-user-circle"></i>
                       <span>Link</span>
@@ -198,7 +200,7 @@ const sections = [
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link border-link active" href="#">
+                  <a className="nav-link border-link active">
                     <div className="nav-icon">
                       <i className="bx bxs-user-circle"></i>
                       <span>Activo</span>
@@ -206,7 +208,7 @@ const sections = [
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link border-link" href="#">
+                  <a className="nav-link border-link">
                     <div className="nav-icon">
                       <i className="bx bxs-user-circle"></i>
                       <span>Link</span>
@@ -214,7 +216,7 @@ const sections = [
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link border-link disabled" href="#" aria-disabled="true" tabIndex={-1}>
+                  <a className="nav-link border-link disabled" aria-disabled="true" tabIndex={-1}>
                     <div className="nav-icon">
                       <i className="bx bxs-user-circle"></i>
                       <span>Deshabilitado</span>

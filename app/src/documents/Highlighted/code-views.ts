@@ -222,7 +222,7 @@ export const HIGHLIGHTED_BANNER_BUTTONS_VIDEO_YT = `
 </div>
 `;
 export const HIGHLIGHTED_JOIN_IMAGE = `
-<div class="highlighted-max-2">
+<div class="highlighted-items-2">
   <div class="col">
     <div class="panel-vertical">
       <img src="/destacado.jpg" alt="descripción de imagen" class="card-img" />
@@ -283,7 +283,7 @@ export const HIGHLIGHTED_JOIN_IMAGE = `
 </div>
 `;
 export const HIGHLIGHTED_JOIN_VIDEO = `
-<div class="highlighted-max-2">
+<div class="highlighted-items-2">
   <div class="col">
     <div class="panel-vertical">
       <p class="sr-only">Buenos Aires se escribe en plural</p>

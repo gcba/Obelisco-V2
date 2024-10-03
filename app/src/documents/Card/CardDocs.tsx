@@ -374,7 +374,7 @@ const CardDocs: React.FC = () => {
       content: (
         <CodeBox codeHTML={DISPOSITION_3}>
           <div className="container">
-            <div className="max-items-3">
+            <div className="card-items-3">
               <div className="col">
                 <div className="card">
                   <i className="bx bxs-info-circle card-icon"></i>
@@ -451,7 +451,7 @@ const CardDocs: React.FC = () => {
       content: (
         <CodeBox codeHTML={DISPOSITION_2}>
           <div className="container">
-            <div className="max-items-2">
+            <div className="card-items-2">
               <div className="col">
                 <div className="card card-horizontal">
                   <i className="bx bxs-info-circle card-icon"></i>

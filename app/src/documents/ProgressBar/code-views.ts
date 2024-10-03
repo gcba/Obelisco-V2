@@ -1,132 +1,136 @@
 export const PROGRESSBAR_TYPES_INFO = `
+<div class="container">
     <div class="progress">
         <div
             class="progress-bar bg-info"
             role="progressbar"
-            aria-valuenow="25"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            style="width: 25%;"
+            aria-valuenow={25}
+            aria-valuemin={0}
+            aria-valuemax={100}
+            style={{ width: '25%' }}
         ></div>
     </div>
-    
-    <br/>
-    
+    <br />
     <div class="progress">
         <div
             class="progress-bar bg-info"
             role="progressbar"
-            aria-valuenow="50"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            style="width: 50%;"
+            aria-valuenow={50}
+            aria-valuemin={0}
+            aria-valuemax={100}
+            style={{ width: '50%' }}
         ></div>
     </div>
-    
-    <br />        
-    
+    <br />
     <div class="progress">
         <div
             class="progress-bar bg-info"
             role="progressbar"
-            aria-valuenow="100"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            style="width: 100%;"
+            aria-valuenow={100}
+            aria-valuemin={0}
+            aria-valuemax={100}
+            style={{ width: '100%' }}
         ></div>
     </div>
+</div>
 `;
 
 export const PROGRESSBAR_TYPES_SUCCESS = `
+<div class="container">
     <div class="progress">
         <div
             class="progress-bar bg-success"
             role="progressbar"
-            aria-valuenow="25"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            style="width: 25%;"
+            aria-valuenow={25}
+            aria-valuemin={0}
+            aria-valuemax={100}
+            style={{ width: '25%' }}
         ></div>
     </div>
-    
+
     <br />
 
     <div class="progress">
         <div
             class="progress-bar bg-success"
             role="progressbar"
-            aria-valuenow="50"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            style="width: 50%;"
+            aria-valuenow={50}
+            aria-valuemin={0}
+            aria-valuemax={100}
+            style={{ width: '50%' }}
         ></div>
     </div>
 
     <br />
-    
+
     <div class="progress">
         <div
             class="progress-bar bg-success"
             role="progressbar"
-            aria-valuenow="100"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            style="width: 100%;"
+            aria-valuenow={100}
+            aria-valuemin={0}
+            aria-valuemax={100}
+            style={{ width: '100%' }}
         ></div>
     </div>
+</div>
 `;
 
 export const PROGRESSBAR_DESCRIPTION_INFO = `
+<div class="container">
     <p class="steps">Descripción</p>
     <div class="progress">
         <div
             class="progress-bar bg-info"
             role="progressbar"
-            aria-valuenow="50"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            style="width: 50%;"
+            aria-valuenow={50}
+            aria-valuemin={0}
+            aria-valuemax={100}
+            style={{ width: '50%' }}
         ></div>
     </div>
-    
-    <br/>
-    
+
+    <br />
+
     <p class="steps">Descripción</p>
     <div class="progress">
         <div
             class="progress-bar bg-info"
             role="progressbar"
-            aria-valuenow="100"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            style="width: 100%;"
+            aria-valuenow={100}
+            aria-valuemin={0}
+            aria-valuemax={100}
+            style={{ width: '100%' }}
         ></div>
     </div>
+</div>
 `;
 export const PROGRESSBAR_DESCRIPTION_SUCCESS = `
+<div class="container">
     <p class="steps">Descripción</p>
     <div class="progress">
         <div
             class="progress-bar bg-success"
             role="progressbar"
-            aria-valuenow="50"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            style="width: 50%;"
+            aria-valuenow={50}
+            aria-valuemin={0}
+            aria-valuemax={100}
+            style={{ width: '50%' }}
         ></div>
     </div>
-    
-    <br/>
-    
+
+    <br />
+
     <p class="steps">Descripción</p>
     <div class="progress">
         <div
             class="progress-bar bg-success"
             role="progressbar"
-            aria-valuenow="50"
-            aria-valuemin="0"
-            aria-valuemax="100"
-            style="width: 50%;"
+            aria-valuenow={100}
+            aria-valuemin={0}
+            aria-valuemax={100}
+            style={{ width: '100%' }}
         ></div>
     </div>
+</div>
 `;

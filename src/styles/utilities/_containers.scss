@@ -86,9 +86,11 @@
 .card-items-3 {
   @extend .max-items-3;
 }
-.card-items-2, .card-items-3 {
+
+.card-items-2,
+.card-items-3 {
   .col .card {
-    height: 100%
+    height: 100%;
   }
 }
 
@@ -105,4 +107,3 @@
     }
   }
 }
-

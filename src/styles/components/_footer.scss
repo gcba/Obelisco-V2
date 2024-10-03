@@ -62,7 +62,8 @@ $footer-info-gap-mobile: 1rem;
       @extend .text-white;
     }
 
-    .bx, .o-icon {
+    .bx,
+    .o-icon {
       font-size: $footer-icon-size;
       vertical-align: top;
       margin-right: $footer-icon-separation;

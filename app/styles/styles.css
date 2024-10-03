@@ -12041,7 +12041,8 @@ textarea.form-control-lg {
 }
 /* ------- Disposición de Accesos ------- */
 /* ------- Disposición de Tarjetas ------- */
-.card-items-2 .col .card, .card-items-3 .col .card {
+.card-items-2 .col .card,
+.card-items-3 .col .card {
   height: 100%;
 }
 
@@ -15446,13 +15447,13 @@ a.badge-danger:focus, a.badge-danger.focus {
 .card-map .card-body .btn, .card-map .card-body .progression-link {
   width: 100%;
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (width >= 768px) and (width <= 1200px) {
   .card-map {
     width: 100%;
     height: 420px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (width <= 768px) {
   .card-map {
     width: 100%;
     height: 326px;
@@ -16776,7 +16777,8 @@ a.badge-danger:focus, a.badge-danger.focus {
 .main-footer a:focus, .main-footer a.focus {
   box-shadow: 0 0 0 2px white;
 }
-.main-footer a .bx, .main-footer a .o-icon {
+.main-footer a .bx,
+.main-footer a .o-icon {
   font-size: 1.5rem;
   vertical-align: top;
   margin-right: 0.25rem;

@@ -20,7 +20,6 @@ import {
 const FormTextDocs: React.FC = () => {
   const sections = [
     {
-      id: 'section-1',
       title: 'Formularios de texto',
       content: (
         <>
@@ -30,7 +29,7 @@ const FormTextDocs: React.FC = () => {
       h1: true,
     },
     {
-      id: 'section-2',
+      id: 'section-1',
       title: 'Texto',
       content: (
         <>
@@ -54,7 +53,7 @@ const FormTextDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-3',
+      id: 'section-2',
       title: 'Número',
       content: (
         <>
@@ -78,7 +77,7 @@ const FormTextDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-4',
+      id: 'section-3',
       title: 'Correo electrónico',
       content: (
         <>
@@ -102,7 +101,7 @@ const FormTextDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-5',
+      id: 'section-4',
       title: 'Fecha',
       content: (
         <>
@@ -126,7 +125,7 @@ const FormTextDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-6',
+      id: 'section-5',
       title: 'Bloque de texto',
       content: (
         <>
@@ -144,7 +143,7 @@ const FormTextDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-7',
+      id: 'section-6',
       title: 'De selección',
       content: (
         <>
@@ -164,7 +163,7 @@ const FormTextDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-8',
+      id: 'section-7',
       title: 'Deshabilitado',
       content: (
         <>
@@ -266,7 +265,7 @@ const FormTextDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-9',
+      id: 'section-8',
       title: 'Validación',
       content: (
         <>

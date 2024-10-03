@@ -268,7 +268,7 @@ const UpdateComponents: React.FC = () => {
           </li>
           <li>
             Para la disposición de Destacado conjunto, las clases <code>.card-deck</code> y <code>.max-cards-2</code>{' '}
-            quedan deprecadas, se reemplazan por <code>.highlighted-max-2</code>.
+            quedan deprecadas, se reemplazan por <code>.highlighted-items-2</code>.
           </li>
         </ul>
       ),
@@ -552,11 +552,11 @@ const UpdateComponents: React.FC = () => {
           </li>
           <li>
             Las clases <code>.card-deck</code>, <code>.max-cards-3</code> y <code>.card-column</code> quedan deprecadas
-            y se reemplazan por <code>.max-items-3</code>.
+            y se reemplazan por <code>.card-items-3</code>.
           </li>
           <li>
             Las clases <code>.card-deck</code>, <code>.max-cards-2</code> y <code>.card-column</code> quedan deprecadas
-            y se reemplazan por <code>.max-items-2</code>.
+            y se reemplazan por <code>.card-items-2</code>.
           </li>
         </ul>
       ),

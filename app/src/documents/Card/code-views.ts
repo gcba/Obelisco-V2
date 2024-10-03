@@ -179,7 +179,7 @@ export const VERTICAL_AGENDA = `
 `;
 
 export const DISPOSITION_3 = `
-<div class="max-items-3">
+<div class="card-items-3">
   <div class="col">
     <div class="card">
       <i class="bx bxs-info-circle card-icon"></i>
@@ -239,7 +239,7 @@ export const DISPOSITION_3 = `
 `;
 
 export const DISPOSITION_2 = `
-<div class="max-items-2">
+<div class="card-items-2">
   <div class="col">
     <div class="card card-horizontal">
       <i class="bx bxs-info-circle card-icon"></i>

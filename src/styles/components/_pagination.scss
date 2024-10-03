@@ -1,13 +1,8 @@
-/* === Variable and mixins overides === */
+/* === Custom variables and mixins === */
 $pagination-bg: $white;
-
-$pagination-color: $body-color;
 $pagination-active-color: $white;
 $pagination-hover-color: $blue-700;
-
-$pagination-box-shadow: 0 0 0 0.125rem $grisulado-50;
-$pagination-focus-box-shadow: 0 0 0 0.25rem $cyan-800;
-$pagination-hover-box-shadow: 0 0 0 0.125rem $blue-700;
+$pagination-active-bg: $blue-700;
 
 $pagination-padding-y: 0.5rem;
 $pagination-padding-x: 0.25rem * 3;
@@ -15,9 +10,6 @@ $pagination-border-width: 0;
 
 $pagination-disabled-bg: transparent;
 
-$pagination-active-bg: $blue-700;
-
-/* === Custom variables and mixins === */
 $pagination-size: 40px;
 $pagination-icon-padding-x-sm: 0.25rem;
 $pagination-icon-padding-x: 0.5rem;
@@ -84,9 +76,9 @@ $pagination-icon-left-active: url('data:image/svg+xml;utf8,<svg xmlns="http://ww
       display: flex;
       justify-content: center;
       align-items: center;
-      border-radius: 8px;
-      box-shadow: $pagination-box-shadow;
-      outline: 0.125rem solid transparent;
+      border-radius: $border-radius-lg;
+      border: none;
+      outline: $outline-border;
       height: $pagination-size;
       min-width: 35px;
       gap: 0.25rem;
@@ -125,16 +117,16 @@ $pagination-icon-left-active: url('data:image/svg+xml;utf8,<svg xmlns="http://ww
       }
 
       &:visited {
-        color: $pagination-color;
+        color: $body-color;
       }
 
       &:focus,
       &.focus {
         @include pagination-states(
           none,
-          $pagination-focus-box-shadow,
+          $focus-box-shadow,
           $pagination-bg,
-          $pagination-color,
+          $body-color,
           $pagination-icon-left,
           $pagination-icon-right
         );
@@ -145,13 +137,14 @@ $pagination-icon-left-active: url('data:image/svg+xml;utf8,<svg xmlns="http://ww
       &.hover {
         @include pagination-states(
           underline,
-          $pagination-hover-box-shadow,
+          none,
           $pagination-bg,
           $pagination-hover-color,
           $pagination-icon-left-hover,
           $pagination-icon-right-hover
         );
         text-decoration: none;
+        outline: $hover-outline;
       }
     }
 
@@ -161,31 +154,26 @@ $pagination-icon-left-active: url('data:image/svg+xml;utf8,<svg xmlns="http://ww
       .page-link:visited {
         @include pagination-states(
           none,
-          $pagination-box-shadow,
+          none,
           $pagination-active-bg,
           $pagination-active-color,
           $pagination-icon-left-active,
           $pagination-icon-right-active
         );
         z-index: 0;
-        outline: 0.25rem solid transparent;
-        outline-offset: -2px;
+        outline: 0.25rem solid $blue-700;
+        outline-offset: -3px;
 
         &:hover,
         &.hover {
           @include pagination-states(
             none,
-            $pagination-box-shadow,
+            none,
             $pagination-active-bg,
             $pagination-active-color,
             $pagination-icon-left-active,
             $pagination-icon-right-active
           );
-        }
-
-        &:focus,
-        &.focus {
-          outline-offset: 0;
         }
       }
     }

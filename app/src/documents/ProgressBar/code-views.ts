@@ -78,7 +78,7 @@ export const PROGRESSBAR_TYPES_SUCCESS = `
 
 export const PROGRESSBAR_DESCRIPTION_INFO = `
 <div class="container">
-    <p class="steps">Descripción</p>
+    <p class="progress-description">Descripción</p>
     <div class="progress">
         <div
             class="progress-bar bg-info"
@@ -92,7 +92,7 @@ export const PROGRESSBAR_DESCRIPTION_INFO = `
 
     <br />
 
-    <p class="steps">Descripción</p>
+    <p class="progress-description">Descripción</p>
     <div class="progress">
         <div
             class="progress-bar bg-info"
@@ -107,7 +107,7 @@ export const PROGRESSBAR_DESCRIPTION_INFO = `
 `;
 export const PROGRESSBAR_DESCRIPTION_SUCCESS = `
 <div class="container">
-    <p class="steps">Descripción</p>
+    <p class="progress-description">Descripción</p>
     <div class="progress">
         <div
             class="progress-bar bg-success"
@@ -121,7 +121,7 @@ export const PROGRESSBAR_DESCRIPTION_SUCCESS = `
 
     <br />
 
-    <p class="steps">Descripción</p>
+    <p class="progress-description">Descripción</p>
     <div class="progress">
         <div
             class="progress-bar bg-success"

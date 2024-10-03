@@ -113,7 +113,7 @@ const ProgressBarDocs: React.FC = () => {
         <>
           <CodeBox codeHTML={PROGRESSBAR_DESCRIPTION_INFO}>
             <div className="container">
-              <p className="steps">Descripción</p>
+              <p className="progress-description">Descripción</p>
               <div className="progress">
                 <div
                   className="progress-bar bg-info"
@@ -127,7 +127,7 @@ const ProgressBarDocs: React.FC = () => {
 
               <br />
 
-              <p className="steps">Descripción</p>
+              <p className="progress-description">Descripción</p>
               <div className="progress">
                 <div
                   className="progress-bar bg-info"
@@ -143,7 +143,7 @@ const ProgressBarDocs: React.FC = () => {
           <br />
           <CodeBox codeHTML={PROGRESSBAR_DESCRIPTION_SUCCESS}>
             <div className="container">
-              <p className="steps">Descripción</p>
+              <p className="progress-description">Descripción</p>
               <div className="progress">
                 <div
                   className="progress-bar bg-success"
@@ -157,7 +157,7 @@ const ProgressBarDocs: React.FC = () => {
 
               <br />
 
-              <p className="steps">Descripción</p>
+              <p className="progress-description">Descripción</p>
               <div className="progress">
                 <div
                   className="progress-bar bg-success"

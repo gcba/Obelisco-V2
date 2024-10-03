@@ -808,7 +808,7 @@ progress {
   --bs-breakpoint-xxl: 1400px;
 }
 
-.row, .highlighted-max-2, .max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .max-items-3, .max-items-4 {
+.row, .highlighted-items-2, .max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .card-items-2, .max-items-3, .card-items-3, .max-items-4 {
   --bs-gutter-x: 2rem;
   --bs-gutter-y: 0;
   display: flex;
@@ -817,7 +817,7 @@ progress {
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
-.row > *, .highlighted-max-2 > *, .max-items-1 > *, .access-items-1 > *, .access-items-3 > *, .access-items-4 > *, .max-items-2 > *, .max-items-3 > *, .max-items-4 > * {
+.row > *, .highlighted-items-2 > *, .max-items-1 > *, .access-items-1 > *, .access-items-3 > *, .access-items-4 > *, .max-items-2 > *, .card-items-2 > *, .max-items-3 > *, .card-items-3 > *, .max-items-4 > * {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
@@ -835,7 +835,7 @@ progress {
   width: auto;
 }
 
-.row-cols-1 > *, .highlighted-max-2 > *, .max-items-1 > *, .access-items-1 > *, .access-items-3 > *, .access-items-4 > *, .max-items-2 > *, .max-items-3 > *, .max-items-4 > * {
+.row-cols-1 > *, .highlighted-items-2 > *, .max-items-1 > *, .access-items-1 > *, .access-items-3 > *, .access-items-4 > *, .max-items-2 > *, .card-items-2 > *, .max-items-3 > *, .card-items-3 > *, .max-items-4 > * {
   flex: 0 0 auto;
   width: 100%;
 }
@@ -1215,7 +1215,7 @@ progress {
     flex: 0 0 auto;
     width: 100%;
   }
-  .row-cols-md-2 > *, .access-items-3 > *, .access-items-4 > *, .max-items-2 > *, .max-items-3 > *, .max-items-4 > * {
+  .row-cols-md-2 > *, .access-items-3 > *, .access-items-4 > *, .max-items-2 > *, .card-items-2 > *, .max-items-3 > *, .card-items-3 > *, .max-items-4 > * {
     flex: 0 0 auto;
     width: 50%;
   }
@@ -1553,11 +1553,11 @@ progress {
     flex: 0 0 auto;
     width: 100%;
   }
-  .row-cols-xl-2 > *, .highlighted-max-2 > * {
+  .row-cols-xl-2 > *, .highlighted-items-2 > * {
     flex: 0 0 auto;
     width: 50%;
   }
-  .row-cols-xl-3 > *, .access-items-3.row-cols-md-1 > *, .row-cols-md-1.access-items-4 > *, .access-items-3 > *, .access-items-4 > *, .max-items-3 > *, .max-items-4 > * {
+  .row-cols-xl-3 > *, .access-items-3.row-cols-md-1 > *, .row-cols-md-1.access-items-4 > *, .access-items-3 > *, .access-items-4 > *, .max-items-3 > *, .card-items-3 > *, .max-items-4 > * {
     flex: 0 0 auto;
     width: 33.33333333%;
   }
@@ -12008,16 +12008,16 @@ textarea.form-control-lg {
 /* line-height Cuerpo */
 /* font-weight Cuerpo */
 /* === Body - variables de Bootstrap === */
-.max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .max-items-3, .max-items-4 {
+.max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .card-items-2, .max-items-3, .card-items-3, .max-items-4 {
   row-gap: 2rem;
 }
 @media screen and (width < 768px) {
-  .max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .max-items-3, .max-items-4 {
+  .max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .card-items-2, .max-items-3, .card-items-3, .max-items-4 {
     row-gap: 1rem;
   }
 }
 @media screen and (width >= 768px) and (width <= 1199px) {
-  .max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .max-items-3, .max-items-4 {
+  .max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .card-items-2, .max-items-3, .card-items-3, .max-items-4 {
     row-gap: 1.5rem;
   }
 }
@@ -12030,15 +12030,31 @@ textarea.form-control-lg {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
-  .row, .highlighted-max-2, .max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .max-items-3, .max-items-4 {
+  .row, .highlighted-items-2, .max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .card-items-2, .max-items-3, .card-items-3, .max-items-4 {
     margin-left: -0.75rem;
     margin-right: -0.75rem;
   }
-  .row > *, .highlighted-max-2 > *, .max-items-1 > *, .access-items-1 > *, .access-items-3 > *, .access-items-4 > *, .max-items-2 > *, .max-items-3 > *, .max-items-4 > * {
+  .row > *, .highlighted-items-2 > *, .max-items-1 > *, .access-items-1 > *, .access-items-3 > *, .access-items-4 > *, .max-items-2 > *, .card-items-2 > *, .max-items-3 > *, .card-items-3 > *, .max-items-4 > * {
     padding-right: 0.75rem;
     padding-left: 0.75rem;
   }
 }
+/* ------- Disposición de Accesos ------- */
+/* ------- Disposición de Tarjetas ------- */
+.card-items-2 .col .card, .card-items-3 .col .card {
+  height: 100%;
+}
+
+/* ------- Disposición de Destacado Conjunto ------- */
+.highlighted-items-2 {
+  row-gap: 2rem;
+}
+@media (max-width: 1199.98px) {
+  .highlighted-items-2 .col {
+    padding: 0;
+  }
+}
+
 .responsive-scroll {
   padding: 0.5rem;
   border: none;
@@ -15430,6 +15446,18 @@ a.badge-danger:focus, a.badge-danger.focus {
 .card-map .card-body .btn, .card-map .card-body .progression-link {
   width: 100%;
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .card-map {
+    width: 100%;
+    height: 420px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card-map {
+    width: 100%;
+    height: 326px;
+  }
+}
 
 /* === Variable and mixins  === */
 .form-radio {
@@ -15938,7 +15966,6 @@ a.badge-danger:focus, a.badge-danger.focus {
   }
 }
 
-/* === Variable and mixins overides === */
 /* === Custom variables and mixins === */
 .pagination {
   gap: 0.5rem;
@@ -15964,9 +15991,9 @@ a.badge-danger:focus, a.badge-danger.focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
-  box-shadow: 0 0 0 0.125rem #f3f6f9;
-  outline: 0.125rem solid transparent;
+  border-radius: 0.5rem;
+  border: none;
+  outline: 0.125rem solid #e6ebf0;
   height: 40px;
   min-width: 35px;
   gap: 0.25rem;
@@ -16018,10 +16045,11 @@ a.badge-danger:focus, a.badge-danger.focus {
 }
 .pagination .page-item .page-link:hover, .pagination .page-item .page-link.hover {
   text-decoration: none;
-  box-shadow: 0 0 0 0.125rem #274986;
+  box-shadow: none;
   background-color: #ffffff;
   color: #274986;
   text-decoration: none;
+  outline: 0.125rem solid #274986;
 }
 .pagination .page-item .page-link:hover .page-previous-icon, .pagination .page-item .page-link.hover .page-previous-icon {
   content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgb(39,73,134);transform:;-ms-filter:"><path d="M14.71 6.71c-.39-.39-1.02-.39-1.41 0L8.71 11.3c-.39.39-.39 1.02 0 1.41l4.59 4.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L10.83 12l3.88-3.88c.39-.39.38-1.03 0-1.41z"></path></svg>');
@@ -16038,12 +16066,12 @@ a.badge-danger:focus, a.badge-danger.focus {
 .pagination .page-item:active .page-link:visited, .pagination .page-item.active .page-link,
 .pagination .page-item.active .page-link:visited {
   text-decoration: none;
-  box-shadow: 0 0 0 0.125rem #f3f6f9;
+  box-shadow: none;
   background-color: #274986;
   color: #ffffff;
   z-index: 0;
-  outline: 0.25rem solid transparent;
-  outline-offset: -2px;
+  outline: 0.25rem solid #274986;
+  outline-offset: -3px;
 }
 .pagination .page-item:active .page-link .page-previous-icon,
 .pagination .page-item:active .page-link:visited .page-previous-icon, .pagination .page-item.active .page-link .page-previous-icon,
@@ -16070,7 +16098,7 @@ a.badge-danger:focus, a.badge-danger.focus {
 .pagination .page-item.active .page-link:visited:hover,
 .pagination .page-item.active .page-link:visited.hover {
   text-decoration: none;
-  box-shadow: 0 0 0 0.125rem #f3f6f9;
+  box-shadow: none;
   background-color: #274986;
   color: #ffffff;
 }
@@ -16102,13 +16130,6 @@ a.badge-danger:focus, a.badge-danger.focus {
 .pagination .page-item.active .page-link:visited.hover .page-previous-text,
 .pagination .page-item.active .page-link:visited.hover .page-next-text {
   color: #ffffff;
-}
-.pagination .page-item:active .page-link:focus, .pagination .page-item:active .page-link.focus,
-.pagination .page-item:active .page-link:visited:focus,
-.pagination .page-item:active .page-link:visited.focus, .pagination .page-item.active .page-link:focus, .pagination .page-item.active .page-link.focus,
-.pagination .page-item.active .page-link:visited:focus,
-.pagination .page-item.active .page-link:visited.focus {
-  outline-offset: 0;
 }
 .pagination .page-item:is(.disabled) {
   pointer-events: none;
@@ -16755,7 +16776,7 @@ a.badge-danger:focus, a.badge-danger.focus {
 .main-footer a:focus, .main-footer a.focus {
   box-shadow: 0 0 0 2px white;
 }
-.main-footer a .bx {
+.main-footer a .bx, .main-footer a .o-icon {
   font-size: 1.5rem;
   vertical-align: top;
   margin-right: 0.25rem;
@@ -18069,15 +18090,6 @@ a.badge-danger:focus, a.badge-danger.focus {
 }
 .panel-vertical .card-body .panel-footer {
   margin-top: 1.25rem;
-}
-
-.highlighted-max-2 {
-  row-gap: 2rem;
-}
-@media (max-width: 1199.98px) {
-  .highlighted-max-2 .col {
-    padding: 0;
-  }
 }
 
 .panel-lateral {

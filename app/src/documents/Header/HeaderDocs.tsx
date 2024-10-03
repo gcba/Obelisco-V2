@@ -67,7 +67,7 @@ const HeaderDocs: React.FC = () => {
                       ></Image>
                     </a>
                     <div className="navbar-login-mobile">
-                      <a className="btn btn-lg btn-icon btn-outline-link" href="#" target="_blank">
+                      <a className="btn btn-lg btn-icon btn-outline-tertiary" href="#" target="_blank">
                         <span className="material-symbols-rounded" aria-hidden="true">
                           person
                         </span>
@@ -89,10 +89,10 @@ const HeaderDocs: React.FC = () => {
                           <nav>
                             <p className="navbar-sections-title">Secciones</p>
                             <ul className="nav nav-pills nav-sections">
-                              <li className="dropdown dropdown-lg">
+                              <li className="dropdown">
                                 <button
                                   type="button"
-                                  className="btn btn-dropdown"
+                                  className="btn btn-dropdown btn-lg"
                                   data-bs-toggle="dropdown"
                                   aria-expanded="false"
                                 >
@@ -133,10 +133,10 @@ const HeaderDocs: React.FC = () => {
                                   <span>Navegación</span>
                                 </a>
                               </li>
-                              <li className="dropdown dropdown-lg">
+                              <li className="dropdown">
                                 <button
                                   type="button"
-                                  className="btn btn-dropdown"
+                                  className="btn btn-dropdown btn-lg"
                                   data-bs-toggle="dropdown"
                                   aria-expanded="false"
                                 >
@@ -193,7 +193,7 @@ const HeaderDocs: React.FC = () => {
                           </form>
                         </div>
                         <div className="navbar-login">
-                          <a className="btn btn-lg btn-outline-link" href="#" target="_blank">
+                          <a className="btn btn-lg btn-outline-tertiary" href="#" target="_blank">
                             <span className="material-symbols-rounded" aria-hidden="true">
                               person
                             </span>
@@ -228,7 +228,7 @@ const HeaderDocs: React.FC = () => {
                       ></Image>
                     </a>
                     <div className="navbar-login-mobile">
-                      <a className="btn btn-lg btn-icon btn-outline-link" href="#" target="_blank">
+                      <a className="btn btn-lg btn-icon btn-outline-tertiary" href="#" target="_blank">
                         <span className="material-symbols-rounded" aria-hidden="true">
                           person
                         </span>
@@ -250,10 +250,10 @@ const HeaderDocs: React.FC = () => {
                           <nav>
                             <p className="navbar-sections-title">Secciones</p>
                             <ul className="nav nav-pills nav-sections">
-                              <li className="dropdown dropdown-lg">
+                              <li className="dropdown">
                                 <button
                                   type="button"
-                                  className="btn btn-dropdown"
+                                  className="btn btn-dropdown btn-lg"
                                   data-bs-toggle="dropdown"
                                   aria-expanded="false"
                                 >
@@ -294,10 +294,10 @@ const HeaderDocs: React.FC = () => {
                                   <span>Navegación</span>
                                 </a>
                               </li>
-                              <li className="dropdown dropdown-lg">
+                              <li className="dropdown">
                                 <button
                                   type="button"
-                                  className="btn btn-dropdown"
+                                  className="btn btn-dropdown btn-lg"
                                   data-bs-toggle="dropdown"
                                   aria-expanded="false"
                                 >
@@ -337,7 +337,7 @@ const HeaderDocs: React.FC = () => {
                           </nav>
                         </div>
                         <div className="navbar-login">
-                          <a className="btn btn-lg btn-outline-link" href="#" target="_blank">
+                          <a className="btn btn-lg btn-outline-tertiary" href="#" target="_blank">
                             <span className="material-symbols-rounded" aria-hidden="true">
                               person
                             </span>
@@ -378,7 +378,7 @@ const HeaderDocs: React.FC = () => {
                       ></Image>
                     </a>
                     <div className="navbar-login-mobile">
-                      <a className="btn btn-lg btn-icon btn-outline-link" href="#" target="_blank">
+                      <a className="btn btn-lg btn-icon btn-outline-tertiary" href="#" target="_blank">
                         <span className="material-symbols-rounded" aria-hidden="true">
                           person
                         </span>
@@ -414,7 +414,7 @@ const HeaderDocs: React.FC = () => {
                           </form>
                         </div>
                         <div className="navbar-login">
-                          <a className="btn btn-lg btn-outline-link" href="#" target="_blank">
+                          <a className="btn btn-lg btn-outline-tertiary" href="#" target="_blank">
                             <span className="material-symbols-rounded" aria-hidden="true">
                               person
                             </span>
@@ -426,10 +426,10 @@ const HeaderDocs: React.FC = () => {
                         <nav>
                           <p className="navbar-sections-title">Secciones</p>
                           <ul className="nav nav-pills nav-sections">
-                            <li className="dropdown dropdown-lg">
+                            <li className="dropdown">
                               <button
                                 type="button"
-                                className="btn btn-dropdown"
+                                className="btn btn-dropdown btn-lg"
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
                               >
@@ -470,10 +470,10 @@ const HeaderDocs: React.FC = () => {
                                 <span>Navegación</span>
                               </a>
                             </li>
-                            <li className="dropdown dropdown-lg">
+                            <li className="dropdown">
                               <button
                                 type="button"
-                                className="btn btn-dropdown"
+                                className="btn btn-dropdown btn-lg"
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
                               >
@@ -559,7 +559,7 @@ const HeaderDocs: React.FC = () => {
                       ></Image>
                     </a>
                     <div className="navbar-login-mobile">
-                      <a className="btn btn-lg btn-icon btn-outline-link" href="#" target="_blank">
+                      <a className="btn btn-lg btn-icon btn-outline-tertiary" href="#" target="_blank">
                         <span className="material-symbols-rounded" aria-hidden="true">
                           person
                         </span>
@@ -578,7 +578,7 @@ const HeaderDocs: React.FC = () => {
                     <div className="collapse navbar-collapse" id="navbarContent6">
                       <div className="navbar-content">
                         <div className="navbar-login">
-                          <a className="btn btn-lg btn-outline-link" href="#" target="_blank">
+                          <a className="btn btn-lg btn-outline-tertiary" href="#" target="_blank">
                             <span className="material-symbols-rounded" aria-hidden="true">
                               person
                             </span>
@@ -590,10 +590,10 @@ const HeaderDocs: React.FC = () => {
                         <nav>
                           <p className="navbar-sections-title">Secciones</p>
                           <ul className="nav nav-pills nav-sections">
-                            <li className="dropdown dropdown-lg">
+                            <li className="dropdown">
                               <button
                                 type="button"
-                                className="btn btn-dropdown"
+                                className="btn btn-dropdown btn-lg"
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
                               >
@@ -634,10 +634,10 @@ const HeaderDocs: React.FC = () => {
                                 <span>Navegación</span>
                               </a>
                             </li>
-                            <li className="dropdown dropdown-lg">
+                            <li className="dropdown">
                               <button
                                 type="button"
-                                className="btn btn-dropdown"
+                                className="btn btn-dropdown btn-lg"
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
                               >
@@ -743,10 +743,10 @@ const HeaderDocs: React.FC = () => {
                           <nav>
                             <p className="navbar-sections-title">Secciones</p>
                             <ul className="nav nav-pills nav-sections">
-                              <li className="dropdown dropdown-lg">
+                              <li className="dropdown">
                                 <button
                                   type="button"
-                                  className="btn btn-dropdown"
+                                  className="btn btn-dropdown btn-lg"
                                   data-bs-toggle="dropdown"
                                   aria-expanded="false"
                                 >
@@ -787,10 +787,10 @@ const HeaderDocs: React.FC = () => {
                                   <span>Navegación</span>
                                 </a>
                               </li>
-                              <li className="dropdown dropdown-lg">
+                              <li className="dropdown">
                                 <button
                                   type="button"
-                                  className="btn btn-dropdown"
+                                  className="btn btn-dropdown btn-lg"
                                   data-bs-toggle="dropdown"
                                   aria-expanded="false"
                                 >
@@ -847,10 +847,10 @@ const HeaderDocs: React.FC = () => {
                           </form>
                         </div>
                         <div className="navbar-user">
-                          <div className="dropdown dropdown-lg">
+                          <div className="dropdown">
                             <button
                               type="button"
-                              className="btn btn-dropdown btn-dropdown-border notification"
+                              className="btn btn-dropdown btn-lg btn-dropdown-border notification"
                               data-bs-toggle="dropdown"
                               aria-expanded="false"
                             >
@@ -962,10 +962,10 @@ const HeaderDocs: React.FC = () => {
                           <nav>
                             <p className="navbar-sections-title">Secciones</p>
                             <ul className="nav nav-pills nav-sections">
-                              <li className="dropdown dropdown-lg">
+                              <li className="dropdown">
                                 <button
                                   type="button"
-                                  className="btn btn-dropdown"
+                                  className="btn btn-dropdown btn-lg"
                                   data-bs-toggle="dropdown"
                                   aria-expanded="false"
                                 >
@@ -1006,10 +1006,10 @@ const HeaderDocs: React.FC = () => {
                                   <span>Navegación</span>
                                 </a>
                               </li>
-                              <li className="dropdown dropdown-lg">
+                              <li className="dropdown">
                                 <button
                                   type="button"
-                                  className="btn btn-dropdown"
+                                  className="btn btn-dropdown btn-lg"
                                   data-bs-toggle="dropdown"
                                   aria-expanded="false"
                                 >
@@ -1049,10 +1049,10 @@ const HeaderDocs: React.FC = () => {
                           </nav>
                         </div>
                         <div className="navbar-user">
-                          <div className="dropdown dropdown-lg">
+                          <div className="dropdown">
                             <button
                               type="button"
-                              className="btn btn-dropdown btn-dropdown-border notification"
+                              className="btn btn-dropdown btn-lg btn-dropdown-border notification"
                               data-bs-toggle="dropdown"
                               aria-expanded="false"
                             >
@@ -1184,10 +1184,10 @@ const HeaderDocs: React.FC = () => {
                           </form>
                         </div>
                         <div className="navbar-user">
-                          <div className="dropdown dropdown-lg">
+                          <div className="dropdown">
                             <button
                               type="button"
-                              className="btn btn-dropdown btn-dropdown-border notification"
+                              className="btn btn-dropdown btn-lg btn-dropdown-border notification"
                               data-bs-toggle="dropdown"
                               aria-expanded="false"
                             >
@@ -1224,10 +1224,10 @@ const HeaderDocs: React.FC = () => {
                         <nav>
                           <p className="navbar-sections-title">Secciones</p>
                           <ul className="nav nav-pills nav-sections">
-                            <li className="dropdown dropdown-lg">
+                            <li className="dropdown">
                               <button
                                 type="button"
-                                className="btn btn-dropdown"
+                                className="btn btn-dropdown btn-lg"
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
                               >
@@ -1268,10 +1268,10 @@ const HeaderDocs: React.FC = () => {
                                 <span>Navegación</span>
                               </a>
                             </li>
-                            <li className="dropdown dropdown-lg">
+                            <li className="dropdown">
                               <button
                                 type="button"
-                                className="btn btn-dropdown"
+                                className="btn btn-dropdown btn-lg"
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
                               >
@@ -1406,10 +1406,10 @@ const HeaderDocs: React.FC = () => {
                     <div className="collapse navbar-collapse" id="navbarContent8">
                       <div className="navbar-content">
                         <div className="navbar-user">
-                          <div className="dropdown dropdown-lg">
+                          <div className="dropdown">
                             <button
                               type="button"
-                              className="btn btn-dropdown btn-dropdown-border notification"
+                              className="btn btn-dropdown btn-lg btn-dropdown-border notification"
                               data-bs-toggle="dropdown"
                               aria-expanded="false"
                             >
@@ -1446,10 +1446,10 @@ const HeaderDocs: React.FC = () => {
                         <nav>
                           <p className="navbar-sections-title">Secciones</p>
                           <ul className="nav nav-pills nav-sections">
-                            <li className="dropdown dropdown-lg">
+                            <li className="dropdown">
                               <button
                                 type="button"
-                                className="btn btn-dropdown"
+                                className="btn btn-dropdown btn-lg"
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
                               >
@@ -1490,10 +1490,10 @@ const HeaderDocs: React.FC = () => {
                                 <span>Navegación</span>
                               </a>
                             </li>
-                            <li className="dropdown dropdown-lg">
+                            <li className="dropdown">
                               <button
                                 type="button"
-                                className="btn btn-dropdown"
+                                className="btn btn-dropdown btn-lg"
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
                               >
@@ -1637,10 +1637,10 @@ const HeaderDocs: React.FC = () => {
                           <nav>
                             <p className="navbar-sections-title">Secciones</p>
                             <ul className="nav nav-pills nav-sections">
-                              <li className="dropdown dropdown-lg">
+                              <li className="dropdown">
                                 <button
                                   type="button"
-                                  className="btn btn-dropdown"
+                                  className="btn btn-dropdown btn-lg"
                                   data-bs-toggle="dropdown"
                                   aria-expanded="false"
                                 >
@@ -1681,10 +1681,10 @@ const HeaderDocs: React.FC = () => {
                                   <span>Navegación</span>
                                 </a>
                               </li>
-                              <li className="dropdown dropdown-lg">
+                              <li className="dropdown">
                                 <button
                                   type="button"
-                                  className="btn btn-dropdown"
+                                  className="btn btn-dropdown btn-lg"
                                   data-bs-toggle="dropdown"
                                   aria-expanded="false"
                                 >
@@ -1782,10 +1782,10 @@ const HeaderDocs: React.FC = () => {
                           <nav>
                             <p className="navbar-sections-title">Secciones</p>
                             <ul className="nav nav-pills nav-sections">
-                              <li className="dropdown dropdown-lg">
+                              <li className="dropdown">
                                 <button
                                   type="button"
-                                  className="btn btn-dropdown"
+                                  className="btn btn-dropdown btn-lg"
                                   data-bs-toggle="dropdown"
                                   aria-expanded="false"
                                 >
@@ -1826,10 +1826,10 @@ const HeaderDocs: React.FC = () => {
                                   <span>Navegación</span>
                                 </a>
                               </li>
-                              <li className="dropdown dropdown-lg">
+                              <li className="dropdown">
                                 <button
                                   type="button"
-                                  className="btn btn-dropdown"
+                                  className="btn btn-dropdown btn-lg"
                                   data-bs-toggle="dropdown"
                                   aria-expanded="false"
                                 >
@@ -1902,7 +1902,7 @@ const HeaderDocs: React.FC = () => {
                       ></Image>
                     </a>
                     <div className="navbar-login-mobile">
-                      <a className="btn btn-lg btn-icon btn-outline-link" href="#" target="_blank">
+                      <a className="btn btn-lg btn-icon btn-outline-tertiary" href="#" target="_blank">
                         <span className="material-symbols-rounded" aria-hidden="true">
                           person
                         </span>
@@ -1938,7 +1938,7 @@ const HeaderDocs: React.FC = () => {
                           </form>
                         </div>
                         <div className="navbar-login">
-                          <a className="btn btn-lg btn-outline-link" href="#" target="_blank">
+                          <a className="btn btn-lg btn-outline-tertiary" href="#" target="_blank">
                             <span className="material-symbols-rounded" aria-hidden="true">
                               person
                             </span>
@@ -1973,7 +1973,7 @@ const HeaderDocs: React.FC = () => {
                       ></Image>
                     </a>
                     <div className="navbar-login-mobile">
-                      <a className="btn btn-lg btn-icon btn-outline-link" href="#" target="_blank">
+                      <a className="btn btn-lg btn-icon btn-outline-tertiary" href="#" target="_blank">
                         <span className="material-symbols-rounded" aria-hidden="true">
                           person
                         </span>
@@ -1983,7 +1983,7 @@ const HeaderDocs: React.FC = () => {
                     <div className="collapse navbar-collapse">
                       <div className="navbar-content">
                         <div className="navbar-login">
-                          <a className="btn btn-lg btn-outline-link" href="#" target="_blank">
+                          <a className="btn btn-lg btn-outline-tertiary" href="#" target="_blank">
                             <span className="material-symbols-rounded" aria-hidden="true">
                               person
                             </span>

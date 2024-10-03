@@ -393,7 +393,7 @@ const HighlightedDocs: React.FC = () => {
         <CodeBox codeHTML={HIGHLIGHTED_JOIN_IMAGE}>
           <div className="highlighted-box-sizing-vertical">
             <div className="container">
-              <div className="highlighted-max-2">
+              <div className="highlighted-items-2">
                 <div className="col">
                   <div className="panel-vertical">
                     <Image
@@ -514,7 +514,7 @@ const HighlightedDocs: React.FC = () => {
         <CodeBox codeHTML={HIGHLIGHTED_JOIN_VIDEO}>
           <div className="highlighted-box-sizing-vertical max-h-800">
             <div className="container">
-              <div className="highlighted-max-2">
+              <div className="highlighted-items-2">
                 <div className="col">
                   <div className="panel-vertical">
                     <p className="sr-only">Buenos Aires se escribe en plural</p>
@@ -585,7 +585,7 @@ const HighlightedDocs: React.FC = () => {
         <CodeBox codeHTML={HIGHLIGHTED_JOIN_IMAGE}>
           <div className="highlighted-box-sizing-vertical max-h-640">
             <div className="container">
-              <div className="highlighted-max-2">
+              <div className="highlighted-items-2">
                 <div className="col">
                   <div className="panel-vertical">
                     <div className="card-body">

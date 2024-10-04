@@ -2,6 +2,7 @@
 export const NPM_CODE = `npm i @gcba/obelisco-v2`;
 export const YARN_CODE = `yarn add @gcba/obelisco-v2`;
 export const PNPM_CODE = `pnpm i @gcba/obelisco-v2`;
+export const NPM_UPDATE_CODE = `npm update @gcba/obelisco-v2`;
 export const CDN_CODE = `
 <link href="
 https://cdn.jsdelivr.net/gh/gcba/Obelisco-v2@main/dist/styles.css" 

@@ -505,6 +505,24 @@ const UpdateComponents: React.FC = () => {
     },
     {
       id: 'section-22',
+      title: 'Pasos de un formulario',
+      content: (
+        <ul className="docs-list">
+          <li>Se modifica la estructura HTML del componente.</li>
+          <li>
+            Las clases <code>.step-next</code>, <code>.step-text</code>, <code>.steps</code>, <code>.step</code> se
+            reemplazan por <code>.step-subtitle</code>, <code>.steps-detail</code>, <code>.steps-items</code>,{' '}
+            <code>.step-item</code>, respectivamente.
+          </li>
+          <li>
+            Se agrega etiqueta div con clase <code>.steps</code>, el cual envuelve el div con clase{' '}
+            <code>.steps-items</code> y el span con clase <code>.steps-detail</code>.
+          </li>
+        </ul>
+      ),
+    },
+    {
+      id: 'section-23',
       title: 'Pestaña',
       content: (
         <ul className="docs-list">
@@ -532,7 +550,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-23',
+      id: 'section-24',
       title: 'Tarjetas',
       content: (
         <ul className="docs-list">
@@ -562,7 +580,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-24',
+      id: 'section-25',
       title: 'Tipografía',
       content: (
         <ul className="docs-list">
@@ -596,7 +614,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-25',
+      id: 'section-26',
       title: 'Accesibilidad',
       content: (
         <ul className="docs-list">
@@ -607,7 +625,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-26',
+      id: 'section-27',
       title: 'Comenzar a usar componentes',
       content: (
         <>

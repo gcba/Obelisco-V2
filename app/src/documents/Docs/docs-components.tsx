@@ -1,8 +1,8 @@
 import Link from 'next/link';
-
+ 
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
-
+ 
 const UpdateComponents: React.FC = () => {
   const sections = [
     {
@@ -304,7 +304,7 @@ const UpdateComponents: React.FC = () => {
       content: (
         <ul className="docs-list">
           <li>En el caso de checkbox:</li>
-
+ 
           <ul className="mb-3">
             <li>
               Las clases <code>.custom-control</code>, <code>.custom-checkbox</code> se reemplazan por{' '}
@@ -596,8 +596,29 @@ const UpdateComponents: React.FC = () => {
         </>
       ),
     },
+    {
+      id: 'section-26',
+      title: 'Galería',
+      content: (
+        <>
+          <p>
+            Galería
+          </p>
+          <div className="col-12 col-lg-7 ms-1">
+            <li>Se cambia <code> data-toggle</code> a <code> data-bs-toggle</code> </li>
+            <li>Se cambia <code> data-target</code> a <code> data-bs-target</code> </li>
+            <li>Se cambia <code> data-backdrop</code> a <code> data-bs-backdrop</code> </li>
+            <li>Añadido <code> slide para la transición</code> </li>
+            <li>Se cambia <code> data-ride</code> a <code> data-bs-ride</code> </li>
+            <li>Se cambia <code> data-interval</code> a <code> data-bs-interval</code> </li>
+            <li>Se cambia <code> sr-only</code> a <code> visually-hidden</code> </li>
+            <li>Se cambia <code> data-slide</code> a <code> data-bs-slide</code> </li>
+          </div>
+        </>
+      ),
+    },
   ];
-
+ 
   return (
     <>
       <nav aria-label="Navegación secundaria">
@@ -611,5 +632,5 @@ const UpdateComponents: React.FC = () => {
     </>
   );
 };
-
+ 
 export default UpdateComponents;

@@ -17,10 +17,10 @@ export const formsPages = [
 ];
 
 export const organismsPages = [
-  // { text: "Accesos (organismo)", url: "/components/access", id: 1 },
+  { text: 'Accesos (organismo)', url: '/components/access-organism', id: 1 },
   { text: 'Footer (pie de página)', url: '/components/footer', id: 2 },
   { text: 'Header (encabezado)', url: '/components/header', id: 3 },
-  { text: 'Tablas (organismo)', url: '/components/table', id: 4 },
+  { text: 'Tablas', url: '/components/table', id: 4 },
 ];
 export const componentsPages = [
   { text: 'Accesos', url: '/components/access', id: 1 },

@@ -1,4 +1,5 @@
 import CodeBox from '@/components/CodeBox';
+import LinkClient from '@/components/LinkClient';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
@@ -20,10 +21,7 @@ const BannerDocs: React.FC = () => {
           <MainDescription description="Los banners muestran mensajes importantes y breves, a modo de aviso general, para informar a los usuarios sobre temas de diverso interés. Se muestran al ancho completo." />
           <p className="lead mb-4">
             Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-            <a href="https://gcba.github.io/estandares/componentes/banner/" target="_blank" rel="noopener noreferrer">
-              enlace
-            </a>
-            .
+            <LinkClient>enlace</LinkClient>.
           </p>
         </>
       ),
@@ -38,11 +36,7 @@ const BannerDocs: React.FC = () => {
             <div className="banner">
               <div className="banner-content">
                 <p className="banner-text">
-                  Esta descripción de banner <strong>puede tener énfasis</strong> y{' '}
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    enlace
-                  </a>
-                  .
+                  Esta descripción de banner <strong>puede tener énfasis</strong> y <LinkClient>enlace</LinkClient>.
                 </p>
               </div>
             </div>
@@ -52,12 +46,7 @@ const BannerDocs: React.FC = () => {
             <div className="banner banner-dark">
               <div className="banner-content">
                 <p className="banner-text">
-                  Esta descripción de banner <strong>puede tener énfasis</strong> y{' '}
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    {' '}
-                    enlace
-                  </a>
-                  .
+                  Esta descripción de banner <strong>puede tener énfasis</strong> y <LinkClient>enlace</LinkClient>.
                 </p>
               </div>
             </div>
@@ -81,9 +70,7 @@ const BannerDocs: React.FC = () => {
                   superen más de una línea de texto.
                 </p>
                 <div className="banner-actions">
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary">
-                    Botón
-                  </a>
+                  <LinkClient className="btn btn-sm btn-primary">Botón</LinkClient>
                 </div>
               </div>
             </div>
@@ -100,9 +87,7 @@ const BannerDocs: React.FC = () => {
                   superen más de una línea de texto.
                 </p>
                 <div className="banner-actions">
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary">
-                    Botón
-                  </a>
+                  <LinkClient className="btn btn-sm btn-primary">Botón</LinkClient>
                 </div>
               </div>
             </div>
@@ -126,12 +111,8 @@ const BannerDocs: React.FC = () => {
                   superen más de una línea de texto.
                 </p>
                 <div className="banner-actions">
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary">
-                    Botón
-                  </a>
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-secondary">
-                    Botón
-                  </a>
+                  <LinkClient className="btn btn-sm btn-primary">Botón</LinkClient>
+                  <LinkClient className="btn btn-sm btn-secondary">Botón</LinkClient>
                 </div>
               </div>
             </div>
@@ -148,12 +129,8 @@ const BannerDocs: React.FC = () => {
                   superen más de una línea de texto.
                 </p>
                 <div className="banner-actions">
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary">
-                    Botón
-                  </a>
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-tertiary">
-                    Botón
-                  </a>
+                  <LinkClient className="btn btn-sm btn-primary">Botón</LinkClient>
+                  <LinkClient className="btn btn-sm btn-tertiary">Botón</LinkClient>
                 </div>
               </div>
             </div>

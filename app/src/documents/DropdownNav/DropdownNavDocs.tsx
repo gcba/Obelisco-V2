@@ -1,4 +1,5 @@
 import CodeBox from '@/components/CodeBox';
+import LinkClient from '@/components/LinkClient';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
@@ -51,22 +52,22 @@ const sections = [
                 </span>
               </button>
               <div className="dropdown-menu">
-                <a className="dropdown-item" href="#">
+                <LinkClient className="dropdown-item">
                   <i className="bx bxs-info-circle o-icon"></i>
                   <span className="item-text">Opción de navegación</span>
                   <i className="bx bxs-info-circle o-icon"></i>
-                </a>
-                <a className="dropdown-item" href="#">
+                </LinkClient>
+                <LinkClient className="dropdown-item">
+                  <i className="bx bxs-info-circle o-icon"></i>
+                  <span className="item-text text-end">Opción de navegación</span>
+                  <i className="bx bxs-info-circle o-icon"></i>
+                </LinkClient>
+                <a className="dropdown-item disabled">
                   <i className="bx bxs-info-circle o-icon"></i>
                   <span className="item-text text-end">Opción de navegación</span>
                   <i className="bx bxs-info-circle o-icon"></i>
                 </a>
-                <a className="dropdown-item disabled" href="#">
-                  <i className="bx bxs-info-circle o-icon"></i>
-                  <span className="item-text text-end">Opción de navegación</span>
-                  <i className="bx bxs-info-circle o-icon"></i>
-                </a>
-                <a className="dropdown-item item-danger" href="#">
+                <a className="dropdown-item item-danger">
                   <span className="material-symbols-rounded o-icon" aria-label="hidden">
                     logout
                   </span>
@@ -92,15 +93,15 @@ const sections = [
                 <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
               </button>
               <div className="dropdown-menu">
-                <a className="dropdown-item" href="#">
+                <LinkClient className="dropdown-item">
                   <i className="bx bxs-info-circle o-icon"></i>
                   <span className="item-text">Opción de navegación</span>
-                </a>
-                <a className="dropdown-item" href="#">
+                </LinkClient>
+                <LinkClient className="dropdown-item">
                   <span className="item-text text-end">Opción de navegación</span>
                   <i className="bx bxs-info-circle o-icon"></i>
-                </a>
-                <a className="dropdown-item item-danger" href="#">
+                </LinkClient>
+                <a className="dropdown-item item-danger">
                   <span className="item-text text-end">Cerrar sesión</span>
                   <span className="material-symbols-rounded o-icon" aria-label="hidden">
                     logout
@@ -126,15 +127,15 @@ const sections = [
                 </span>
               </button>
               <div className="dropdown-menu">
-                <a className="dropdown-item" href="#">
+                <LinkClient className="dropdown-item">
                   <i className="bx bxs-info-circle o-icon"></i>
                   <span className="item-text">Opción de navegación</span>
-                </a>
-                <a className="dropdown-item" href="#">
+                </LinkClient>
+                <LinkClient className="dropdown-item">
                   <span className="item-text text-end">Opción de navegación</span>
                   <i className="bx bxs-info-circle o-icon"></i>
-                </a>
-                <a className="dropdown-item item-danger" href="#">
+                </LinkClient>
+                <a className="dropdown-item item-danger">
                   <span className="item-text text-end">Cerrar sesión</span>
                   <span className="material-symbols-rounded o-icon" aria-label="hidden">
                     logout
@@ -167,16 +168,16 @@ const sections = [
                 <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
               </button>
               <div className="dropdown-menu dropdown-menu-end">
-                <a className="dropdown-item" href="#">
+                <LinkClient className="dropdown-item">
                   <span className="item-text">Opción de navegación</span>
-                </a>
-                <a className="dropdown-item" href="#">
+                </LinkClient>
+                <LinkClient className="dropdown-item">
                   <span className="item-text">Opción de navegación</span>
-                </a>
-                <a className="dropdown-item" href="#">
+                </LinkClient>
+                <LinkClient className="dropdown-item">
                   <span className="item-text">Opción de navegación</span>
-                </a>
-                <a className="dropdown-item item-danger" href="#">
+                </LinkClient>
+                <a className="dropdown-item item-danger">
                   <span className="item-text">Cerrar sesión</span>
                   <span className="material-symbols-rounded o-icon" aria-label="hidden">
                     logout
@@ -219,27 +220,27 @@ const sections = [
                     </span>
                   </button>
                   <div className="dropdown-menu">
-                    <a className="dropdown-item" href="#">
+                    <LinkClient className="dropdown-item">
                       <span className="item-text">Opción de navegación</span>
-                    </a>
-                    <a className="dropdown-item" href="#">
+                    </LinkClient>
+                    <LinkClient className="dropdown-item">
                       <span className="item-text">Opción de navegación</span>
-                    </a>
-                    <a className="dropdown-item" href="#">
+                    </LinkClient>
+                    <LinkClient className="dropdown-item">
                       <span className="item-text">Opción de navegación</span>
-                    </a>
+                    </LinkClient>
                   </div>
                 </div>
-                <a className="dropdown-item" href="#">
+                <LinkClient className="dropdown-item">
                   <span className="item-text">Opción de navegación</span>
-                </a>
-                <a className="dropdown-item" href="#">
+                </LinkClient>
+                <LinkClient className="dropdown-item">
                   <span className="item-text">Opción de navegación</span>
-                </a>
-                <a className="dropdown-item" href="#">
+                </LinkClient>
+                <LinkClient className="dropdown-item">
                   <span className="item-text">Opción de navegación</span>
-                </a>
-                <a className="dropdown-item item-danger" href="#">
+                </LinkClient>
+                <a className="dropdown-item item-danger">
                   <span className="material-symbols-rounded o-icon" aria-label="hidden">
                     logout
                   </span>
@@ -276,27 +277,27 @@ const sections = [
                     <i className="bx bxs-info-circle o-icon"></i>
                   </button>
                   <div className="dropdown-menu">
-                    <a className="dropdown-item" href="#">
+                    <LinkClient className="dropdown-item">
                       <span className="item-text">Opción de navegación</span>
-                    </a>
-                    <a className="dropdown-item" href="#">
+                    </LinkClient>
+                    <LinkClient className="dropdown-item">
                       <span className="item-text">Opción de navegación</span>
-                    </a>
-                    <a className="dropdown-item" href="#">
+                    </LinkClient>
+                    <LinkClient className="dropdown-item">
                       <span className="item-text">Opción de navegación</span>
-                    </a>
+                    </LinkClient>
                   </div>
                 </div>
-                <a className="dropdown-item" href="#">
+                <LinkClient className="dropdown-item">
                   <span className="item-text">Opción de navegación</span>
-                </a>
-                <a className="dropdown-item" href="#">
+                </LinkClient>
+                <LinkClient className="dropdown-item">
                   <span className="item-text">Opción de navegación</span>
-                </a>
-                <a className="dropdown-item" href="#">
+                </LinkClient>
+                <LinkClient className="dropdown-item">
                   <span className="item-text">Opción de navegación</span>
-                </a>
-                <a className="dropdown-item item-danger" href="#">
+                </LinkClient>
+                <a className="dropdown-item item-danger">
                   <span className="item-text">Cerrar sesión</span>
                   <span className="material-symbols-rounded o-icon" aria-label="hidden">
                     logout

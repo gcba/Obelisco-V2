@@ -1,4 +1,5 @@
 import CodeBox from '@/components/CodeBox';
+import LinkClient from '@/components/LinkClient';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
@@ -42,22 +43,22 @@ const NavVerticalDocs: React.FC = () => {
               <nav>
                 <ul className="nav flex-column nav-pills">
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <LinkClient className="nav-link">
                       <span>Link</span>
-                    </a>
+                    </LinkClient>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link active" href="#">
+                    <a className="nav-link active">
                       <span>Activo</span>
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <LinkClient className="nav-link">
                       <span>Link</span>
-                    </a>
+                    </LinkClient>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link disabled" href="#" aria-disabled="true" tabIndex={-1}>
+                    <a className="nav-link disabled" aria-disabled="true" tabIndex={-1}>
                       <span>Deshabilitado</span>
                     </a>
                   </li>
@@ -78,15 +79,15 @@ const NavVerticalDocs: React.FC = () => {
               <nav>
                 <ul className="nav flex-column nav-pills">
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <LinkClient className="nav-link">
                       <div className="nav-icon">
                         <i className="bx bxs-user-circle"></i>
                         <span>Link</span>
                       </div>
-                    </a>
+                    </LinkClient>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link active" href="#">
+                    <a className="nav-link active">
                       <div className="nav-icon">
                         <i className="bx bxs-user-circle"></i>
                         <span>Activo</span>
@@ -94,15 +95,15 @@ const NavVerticalDocs: React.FC = () => {
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <LinkClient className="nav-link">
                       <div className="nav-icon">
                         <i className="bx bxs-user-circle"></i>
                         <span>Link</span>
                       </div>
-                    </a>
+                    </LinkClient>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link disabled" href="#" aria-disabled="true" tabIndex={-1}>
+                    <a className="nav-link disabled" aria-disabled="true" tabIndex={-1}>
                       <div className="nav-icon">
                         <i className="bx bxs-user-circle"></i>
                         <span>Deshabilitado</span>
@@ -126,46 +127,46 @@ const NavVerticalDocs: React.FC = () => {
               <nav>
                 <ul className="nav flex-column nav-pills nav-lg">
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <LinkClient className="nav-link">
                       <span>Categorías</span>
-                    </a>
+                    </LinkClient>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link active-child" href="#">
+                    <a className="nav-link active-child">
                       <span>Locales y comercios</span>
                     </a>
                     <ul className="nav flex-column nav-pills">
                       <li className="nav-item">
-                        <a className="nav-link" href="#">
+                        <LinkClient className="nav-link">
                           <span>Local Indumentaria y calzado. (Actividades comerciales de venta).</span>
-                        </a>
+                        </LinkClient>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link active" href="#">
+                        <a className="nav-link active">
                           <span>Locales gastronómicos: “para llevar/takeaway”</span>
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#">
+                        <LinkClient className="nav-link">
                           <span>Locales de óptica</span>
-                        </a>
+                        </LinkClient>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#">
+                        <LinkClient className="nav-link">
                           <span>Comercial minorista (excluyendo indumentaria y calzado)</span>
-                        </a>
+                        </LinkClient>
                       </li>
                     </ul>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <LinkClient className="nav-link">
                       <span>Actividades jurídicas</span>
-                    </a>
+                    </LinkClient>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <LinkClient className="nav-link">
                       <span>Otras actividades</span>
-                    </a>
+                    </LinkClient>
                   </li>
                 </ul>
               </nav>
@@ -177,15 +178,15 @@ const NavVerticalDocs: React.FC = () => {
               <nav>
                 <ul className="nav flex-column nav-pills nav-lg">
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <LinkClient className="nav-link">
                       <div className="nav-icon">
                         <i className="bx bxs-user-circle"></i>
                         <span>Categorías</span>
                       </div>
-                    </a>
+                    </LinkClient>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link active-child" href="#">
+                    <a className="nav-link active-child">
                       <div className="nav-icon">
                         <i className="bx bxs-user-circle"></i>
                         <span>Locales y comercios</span>
@@ -193,42 +194,42 @@ const NavVerticalDocs: React.FC = () => {
                     </a>
                     <ul className="nav flex-column nav-pills">
                       <li className="nav-item">
-                        <a className="nav-link" href="#">
+                        <LinkClient className="nav-link">
                           <span>Local Indumentaria y calzado. (Actividades comerciales de venta).</span>
-                        </a>
+                        </LinkClient>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link active" href="#">
+                        <a className="nav-link active">
                           <span>Locales gastronómicos: “para llevar/takeaway”</span>
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#">
+                        <LinkClient className="nav-link">
                           <span>Locales de óptica</span>
-                        </a>
+                        </LinkClient>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#">
+                        <LinkClient className="nav-link">
                           <span>Comercial minorista (excluyendo indumentaria y calzado)</span>
-                        </a>
+                        </LinkClient>
                       </li>
                     </ul>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <LinkClient className="nav-link">
                       <div className="nav-icon">
                         <i className="bx bxs-user-circle"></i>
                         <span>Actividades jurídicas</span>
                       </div>
-                    </a>
+                    </LinkClient>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <LinkClient className="nav-link">
                       <div className="nav-icon">
                         <i className="bx bxs-user-circle"></i>
                         <span>Otras actividades</span>
                       </div>
-                    </a>
+                    </LinkClient>
                   </li>
                 </ul>
               </nav>
@@ -247,58 +248,58 @@ const NavVerticalDocs: React.FC = () => {
               <nav>
                 <ul className="nav flex-column nav-pills nav-lg">
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <LinkClient className="nav-link">
                       <span>Categorías</span>
-                    </a>
+                    </LinkClient>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link active-child" href="#">
+                    <a className="nav-link active-child">
                       <span>Locales y comercios</span>
                     </a>
                     <ul className="nav flex-column nav-pills">
                       <li className="nav-item">
-                        <a className="nav-link" href="#">
+                        <LinkClient className="nav-link">
                           <span>Local Indumentaria y calzado. (Actividades comerciales de venta).</span>
-                        </a>
+                        </LinkClient>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link active-child" href="#">
+                        <a className="nav-link active-child">
                           <span>Locales gastronómicos: “para llevar/takeaway”</span>
                         </a>
                         <ul className="nav flex-column nav-pills">
                           <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <LinkClient className="nav-link">
                               <span>Con local a la calle</span>
-                            </a>
+                            </LinkClient>
                           </li>
                           <li className="nav-item">
-                            <a className="nav-link active" href="#">
+                            <a className="nav-link active">
                               <span>Food trucks</span>
                             </a>
                           </li>
                         </ul>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#">
+                        <LinkClient className="nav-link">
                           <span>Locales de óptica</span>
-                        </a>
+                        </LinkClient>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#">
+                        <LinkClient className="nav-link">
                           <span>Comercial minorista (excluyendo indumentaria y calzado)</span>
-                        </a>
+                        </LinkClient>
                       </li>
                     </ul>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <LinkClient className="nav-link">
                       <span>Actividades jurídicas</span>
-                    </a>
+                    </LinkClient>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <LinkClient className="nav-link">
                       <span>Otras actividades</span>
-                    </a>
+                    </LinkClient>
                   </li>
                 </ul>
               </nav>
@@ -310,15 +311,15 @@ const NavVerticalDocs: React.FC = () => {
               <nav>
                 <ul className="nav flex-column nav-pills nav-lg">
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <LinkClient className="nav-link">
                       <div className="nav-icon">
                         <i className="bx bxs-user-circle"></i>
                         <span>Categorías</span>
                       </div>
-                    </a>
+                    </LinkClient>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link active-child" href="#">
+                    <a className="nav-link active-child">
                       <div className="nav-icon">
                         <i className="bx bxs-user-circle"></i>
                         <span>Locales y comercios</span>
@@ -326,54 +327,54 @@ const NavVerticalDocs: React.FC = () => {
                     </a>
                     <ul className="nav flex-column nav-pills">
                       <li className="nav-item">
-                        <a className="nav-link" href="#">
+                        <LinkClient className="nav-link">
                           <span>Local Indumentaria y calzado. (Actividades comerciales de venta).</span>
-                        </a>
+                        </LinkClient>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link active-child" href="#">
+                        <a className="nav-link active-child">
                           <span>Locales gastronómicos: “para llevar/takeaway”</span>
                         </a>
                         <ul className="nav flex-column nav-pills">
                           <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <LinkClient className="nav-link">
                               <span>Con local a la calle</span>
-                            </a>
+                            </LinkClient>
                           </li>
                           <li className="nav-item">
-                            <a className="nav-link active" href="#">
+                            <a className="nav-link active">
                               <span>Food trucks</span>
                             </a>
                           </li>
                         </ul>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#">
+                        <LinkClient className="nav-link">
                           <span>Locales de óptica</span>
-                        </a>
+                        </LinkClient>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#">
+                        <LinkClient className="nav-link">
                           <span>Comercial minorista (excluyendo indumentaria y calzado)</span>
-                        </a>
+                        </LinkClient>
                       </li>
                     </ul>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <LinkClient className="nav-link">
                       <div className="nav-icon">
                         <i className="bx bxs-user-circle"></i>
                         <span>Actividades jurídicas</span>
                       </div>
-                    </a>
+                    </LinkClient>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <LinkClient className="nav-link">
                       <div className="nav-icon">
                         <i className="bx bxs-user-circle"></i>
                         <span>Otras actividades</span>
                       </div>
-                    </a>
+                    </LinkClient>
                   </li>
                 </ul>
               </nav>

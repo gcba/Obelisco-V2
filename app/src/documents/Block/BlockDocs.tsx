@@ -37,9 +37,7 @@ const BlockDocs: React.FC = () => {
               <div className="card-block position-sticky" style={{ top: '48px' }}>
                 <div className="card-body">
                   <h2 className="block-title">Iniciá el trámite y completá todos los pasos</h2>
-                  <LinkClient className="btn btn-lg btn-primary btn-block">
-                    Iniciar trámite
-                  </LinkClient>
+                  <LinkClient className="btn btn-lg btn-primary btn-block">Iniciar trámite</LinkClient>
                 </div>
               </div>
             </div>
@@ -88,9 +86,7 @@ const BlockDocs: React.FC = () => {
                       style={{ width: '25%' }}
                     ></div>
                   </div>
-                  <LinkClient className="btn btn-lg btn-primary btn-block">
-                    Continuar trámite
-                  </LinkClient>
+                  <LinkClient className="btn btn-lg btn-primary btn-block">Continuar trámite</LinkClient>
                 </div>
               </div>
             </div>

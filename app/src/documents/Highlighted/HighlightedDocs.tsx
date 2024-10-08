@@ -22,7 +22,6 @@ import {
   HIGHLIGHTED_LATERAL_LINK,
 } from './code-views';
 
-
 const basePath = '/Obelisco-V2';
 
 const HighlightedDocs: React.FC = () => {

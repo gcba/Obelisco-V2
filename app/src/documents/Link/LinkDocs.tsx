@@ -5,7 +5,6 @@ import MainDescription from '@/components/Template/MainDescription';
 
 import { LINK_DEFAULT, LINK_EXTERNAL, LINK_DOWNLOAD, LINK_ACCESS } from './code-views';
 
-
 const LinkDocs: React.FC = () => {
   const sections = [
     {
@@ -16,9 +15,7 @@ const LinkDocs: React.FC = () => {
           <MainDescription description="Los enlaces son hipervínculos que la persona usuaria utiliza para navegar contenidos en un sitio web. Pueden dirigir tanto a información y recursos dentro de una misma página o sitio web, como también a páginas externas." />
           <p className="lead mb-4">
             Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-            <a href="https://gcba.github.io/estandares/componentes/enlaces/">
-              enlace.
-            </a>
+            <a href="https://gcba.github.io/estandares/componentes/enlaces/">enlace.</a>
           </p>
         </>
       ),
@@ -32,28 +29,20 @@ const LinkDocs: React.FC = () => {
           <CodeBox codeHTML={LINK_DEFAULT}>
             <div className="container">
               <p>
-                <LinkClient>
-                  enlace en párrafo
-                </LinkClient>
+                <LinkClient>enlace en párrafo</LinkClient>
               </p>
               <p>
                 <small>
-                  <LinkClient>
-                    enlaces en párrafo
-                  </LinkClient>
+                  <LinkClient>enlaces en párrafo</LinkClient>
                 </small>
               </p>
               <div className="bg-dark p-2">
                 <p>
-                  <LinkClient className="link-white">
-                    enlace en párrafo
-                  </LinkClient>{' '}
+                  <LinkClient className="link-white">enlace en párrafo</LinkClient>{' '}
                 </p>
                 <p className="mb-0">
                   <small>
-                    <LinkClient className="link-white">
-                      enlaces en párrafo
-                    </LinkClient>
+                    <LinkClient className="link-white">enlaces en párrafo</LinkClient>
                   </small>
                 </p>
               </div>
@@ -71,16 +60,12 @@ const LinkDocs: React.FC = () => {
             <div className="container">
               <div className="p-2">
                 <p>
-                  <LinkClient className="external">
-                    enlace externo
-                  </LinkClient>
+                  <LinkClient className="external">enlace externo</LinkClient>
                 </p>
               </div>
               <div className="bg-dark p-2">
                 <p className="mb-0">
-                  <LinkClient className="external link-white">
-                    enlace externo
-                  </LinkClient>
+                  <LinkClient className="external link-white">enlace externo</LinkClient>
                 </p>
               </div>
             </div>
@@ -110,10 +95,7 @@ const LinkDocs: React.FC = () => {
                   </LinkClient>
                 </p>
               </div>
-              <LinkClient
-                className="btn btn-secondary btn-sm download-link my-3"
-                download=""
-              >
+              <LinkClient className="btn btn-secondary btn-sm download-link my-3" download="">
                 Descargar
               </LinkClient>
             </div>
@@ -130,17 +112,13 @@ const LinkDocs: React.FC = () => {
             <div className="container">
               <div className="p-2">
                 <p>
-                  <LinkClient className="access">
-                    enlace de acceso
-                  </LinkClient>
+                  <LinkClient className="access">enlace de acceso</LinkClient>
                 </p>
               </div>
 
               <div className="bg-dark p-2">
                 <p className="mb-0">
-                  <LinkClient className="access link-white">
-                    enlace de acceso
-                  </LinkClient>
+                  <LinkClient className="access link-white">enlace de acceso</LinkClient>
                 </p>
               </div>
             </div>

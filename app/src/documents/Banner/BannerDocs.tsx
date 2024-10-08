@@ -36,8 +36,7 @@ const BannerDocs: React.FC = () => {
             <div className="banner">
               <div className="banner-content">
                 <p className="banner-text">
-                  Esta descripción de banner <strong>puede tener énfasis</strong> y{' '}
-                  <LinkClient>enlace</LinkClient>.
+                  Esta descripción de banner <strong>puede tener énfasis</strong> y <LinkClient>enlace</LinkClient>.
                 </p>
               </div>
             </div>
@@ -47,8 +46,7 @@ const BannerDocs: React.FC = () => {
             <div className="banner banner-dark">
               <div className="banner-content">
                 <p className="banner-text">
-                  Esta descripción de banner <strong>puede tener énfasis</strong> y{' '}
-                  <LinkClient>enlace</LinkClient>.
+                  Esta descripción de banner <strong>puede tener énfasis</strong> y <LinkClient>enlace</LinkClient>.
                 </p>
               </div>
             </div>

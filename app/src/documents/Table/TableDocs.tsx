@@ -16,7 +16,6 @@ import {
   WITHOUT_DIVIDERS,
 } from './code-views';
 
-
 const TableDocs: React.FC = () => {
   const sections = [
     {
@@ -70,9 +69,7 @@ const TableDocs: React.FC = () => {
                       <td className="text-right">1</td>
                       <td>Juan</td>
                       <td>
-                        <LinkClient>
-                          Enlace predeterminado
-                        </LinkClient>
+                        <LinkClient>Enlace predeterminado</LinkClient>
                       </td>
                       <td>
                         <button type="button" className="btn btn-primary">
@@ -101,9 +98,7 @@ const TableDocs: React.FC = () => {
                       <td className="text-right">2</td>
                       <td>María</td>
                       <td>
-                        <LinkClient>
-                          Enlace predeterminado
-                        </LinkClient>
+                        <LinkClient>Enlace predeterminado</LinkClient>
                       </td>
                       <td>
                         <button type="button" className="btn btn-primary">
@@ -132,9 +127,7 @@ const TableDocs: React.FC = () => {
                       <td className="text-right">3</td>
                       <td>Esther</td>
                       <td>
-                        <LinkClient>
-                          Enlace predeterminado
-                        </LinkClient>
+                        <LinkClient>Enlace predeterminado</LinkClient>
                       </td>
                       <td>
                         <button type="button" className="btn btn-primary">
@@ -163,9 +156,7 @@ const TableDocs: React.FC = () => {
                       <td className="text-right">4</td>
                       <td>José</td>
                       <td>
-                        <LinkClient>
-                          Enlace predeterminado
-                        </LinkClient>
+                        <LinkClient>Enlace predeterminado</LinkClient>
                       </td>
                       <td>
                         <button type="button" className="btn btn-primary">
@@ -233,9 +224,7 @@ const TableDocs: React.FC = () => {
                     <td className="text-right">1</td>
                     <td>Juan</td>
                     <td>
-                      <LinkClient>
-                        Enlace predeterminado
-                      </LinkClient>
+                      <LinkClient>Enlace predeterminado</LinkClient>
                     </td>
                     <td>
                       <button type="button" className="btn btn-primary">
@@ -264,9 +253,7 @@ const TableDocs: React.FC = () => {
                     <td className="text-right">2</td>
                     <td>María</td>
                     <td>
-                      <LinkClient>
-                        Enlace predeterminado
-                      </LinkClient>
+                      <LinkClient>Enlace predeterminado</LinkClient>
                     </td>
                     <td>
                       <button type="button" className="btn btn-primary">
@@ -295,9 +282,7 @@ const TableDocs: React.FC = () => {
                     <td className="text-right">3</td>
                     <td>Esther</td>
                     <td>
-                      <LinkClient>
-                        Enlace predeterminado
-                      </LinkClient>
+                      <LinkClient>Enlace predeterminado</LinkClient>
                     </td>
                     <td>
                       <button type="button" className="btn btn-primary">
@@ -326,9 +311,7 @@ const TableDocs: React.FC = () => {
                     <td className="text-right">4</td>
                     <td>José</td>
                     <td>
-                      <LinkClient>
-                        Enlace predeterminado
-                      </LinkClient>
+                      <LinkClient>Enlace predeterminado</LinkClient>
                     </td>
                     <td>
                       <button type="button" className="btn btn-primary">
@@ -395,9 +378,7 @@ const TableDocs: React.FC = () => {
                     <td className="text-right">1</td>
                     <td>Juan</td>
                     <td>
-                      <LinkClient>
-                        Enlace predeterminado
-                      </LinkClient>
+                      <LinkClient>Enlace predeterminado</LinkClient>
                     </td>
                     <td>
                       <button type="button" className="btn btn-primary">
@@ -426,9 +407,7 @@ const TableDocs: React.FC = () => {
                     <td className="text-right">2</td>
                     <td>María</td>
                     <td>
-                      <LinkClient>
-                        Enlace predeterminado
-                      </LinkClient>
+                      <LinkClient>Enlace predeterminado</LinkClient>
                     </td>
                     <td>
                       <button type="button" className="btn btn-primary">
@@ -457,9 +436,7 @@ const TableDocs: React.FC = () => {
                     <td className="text-right">3</td>
                     <td>Esther</td>
                     <td>
-                      <LinkClient>
-                        Enlace predeterminado
-                      </LinkClient>
+                      <LinkClient>Enlace predeterminado</LinkClient>
                     </td>
                     <td>
                       <button type="button" className="btn btn-primary">
@@ -488,9 +465,7 @@ const TableDocs: React.FC = () => {
                     <td className="text-right">4</td>
                     <td>José</td>
                     <td>
-                      <LinkClient>
-                        Enlace predeterminado
-                      </LinkClient>
+                      <LinkClient>Enlace predeterminado</LinkClient>
                     </td>
                     <td>
                       <button type="button" className="btn btn-primary">
@@ -799,9 +774,7 @@ const TableDocs: React.FC = () => {
                     </td>
                     <td>Texto predeterminado</td>
                     <td>
-                      <LinkClient>
-                        Enlace predeterminado
-                      </LinkClient>
+                      <LinkClient>Enlace predeterminado</LinkClient>
                     </td>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
@@ -810,9 +783,7 @@ const TableDocs: React.FC = () => {
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                     <td>
-                      <LinkClient>
-                        Enlace predeterminado
-                      </LinkClient>
+                      <LinkClient>Enlace predeterminado</LinkClient>
                     </td>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
@@ -821,9 +792,7 @@ const TableDocs: React.FC = () => {
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                     <td>
-                      <LinkClient>
-                        Enlace predeterminado
-                      </LinkClient>
+                      <LinkClient>Enlace predeterminado</LinkClient>
                     </td>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
@@ -832,9 +801,7 @@ const TableDocs: React.FC = () => {
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                     <td>
-                      <LinkClient>
-                        Enlace predeterminado
-                      </LinkClient>
+                      <LinkClient>Enlace predeterminado</LinkClient>
                     </td>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>

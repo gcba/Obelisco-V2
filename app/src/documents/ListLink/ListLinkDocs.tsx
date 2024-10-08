@@ -35,21 +35,11 @@ const ListLinkDocs: React.FC = () => {
           <div className="container">
             <div className="list-link">
               <h3 className="list-link-title">Este es el título de una lista de enlaces</h3>
-              <LinkClient>
-                Enlace predeterminado
-              </LinkClient>
-              <LinkClient>
-                Enlace predeterminado
-              </LinkClient>
-              <LinkClient>
-                Enlace predeterminado
-              </LinkClient>
-              <LinkClient>
-                Enlace predeterminado
-              </LinkClient>
-              <LinkClient>
-                Enlace predeterminado
-              </LinkClient>
+              <LinkClient>Enlace predeterminado</LinkClient>
+              <LinkClient>Enlace predeterminado</LinkClient>
+              <LinkClient>Enlace predeterminado</LinkClient>
+              <LinkClient>Enlace predeterminado</LinkClient>
+              <LinkClient>Enlace predeterminado</LinkClient>
             </div>
           </div>
         </CodeBox>

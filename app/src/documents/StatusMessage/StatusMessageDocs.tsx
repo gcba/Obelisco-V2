@@ -5,7 +5,6 @@ import MainDescription from '@/components/Template/MainDescription';
 
 import { SM_INFO, SM_SUCCESS, SM_WARNING, SM_DANGER, SM_INSTITUTIONAL } from './code-views';
 
-
 const sections = [
   {
     title: 'Mensaje de estado',

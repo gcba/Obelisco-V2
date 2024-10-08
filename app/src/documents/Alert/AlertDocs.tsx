@@ -12,7 +12,6 @@ import {
   WITH_DESCRIPTION_ALERT,
 } from './code-views';
 
-
 const AlertDocs: React.FC = () => {
   const sections = [
     {
@@ -131,7 +130,7 @@ const AlertDocs: React.FC = () => {
               <p>
                 <strong>Este es un destacado de una alerta de información. </strong>
                 Esta es la descripción de una alerta de información que continua al texto destacado, incluso{' '}
-                <LinkClient >con enlaces</LinkClient>.
+                <LinkClient>con enlaces</LinkClient>.
               </p>
             </div>
 
@@ -139,7 +138,7 @@ const AlertDocs: React.FC = () => {
               <p>
                 <strong>Este es un destacado de una alerta de éxito. </strong>
                 Esta es la descripción de una alerta de éxito que continua al texto destacado, incluso{' '}
-                <LinkClient >con enlaces</LinkClient>.
+                <LinkClient>con enlaces</LinkClient>.
               </p>
             </div>
 
@@ -147,7 +146,7 @@ const AlertDocs: React.FC = () => {
               <p>
                 <strong>Este es un destacado de una alerta de advertencia. </strong>
                 Esta es la descripción de una alerta de advertencia que continua al texto destacado, incluso{' '}
-                <LinkClient >con enlaces</LinkClient>.
+                <LinkClient>con enlaces</LinkClient>.
               </p>
             </div>
 
@@ -155,7 +154,7 @@ const AlertDocs: React.FC = () => {
               <p>
                 <strong>Este es un destacado de una alerta de error. </strong>
                 Esta es la descripción de una alerta de error que continua al texto destacado, incluso{' '}
-                <LinkClient >con enlaces</LinkClient>.
+                <LinkClient>con enlaces</LinkClient>.
               </p>
             </div>
           </div>
@@ -175,21 +174,20 @@ const AlertDocs: React.FC = () => {
               </p>
               <ol>
                 <li>
-                  <LinkClient >Ancla al error 1</LinkClient>
+                  <LinkClient>Ancla al error 1</LinkClient>
                 </li>
                 <li>
-                  <LinkClient >Ancla al error 2</LinkClient>
+                  <LinkClient>Ancla al error 2</LinkClient>
                 </li>
                 <li>
-                  <LinkClient >Ancla al error 3</LinkClient>
+                  <LinkClient>Ancla al error 3</LinkClient>
                 </li>
                 <li>
-                  <LinkClient >Ancla al error 4</LinkClient>
+                  <LinkClient>Ancla al error 4</LinkClient>
                 </li>
                 <li>
-                  <LinkClient >Ancla al error 5</LinkClient>
+                  <LinkClient>Ancla al error 5</LinkClient>
                 </li>
-
               </ol>
             </div>
           </div>

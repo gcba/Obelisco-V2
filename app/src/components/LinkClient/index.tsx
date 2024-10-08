@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import React from 'react';
 
@@ -7,7 +7,7 @@ interface LinkClientProps {
   children: React.ReactNode;
   className?: string;
   title?: string;
-  download?: string; 
+  download?: string;
 }
 
 const LinkClient: React.FC<LinkClientProps> = ({ href = '#', children, className = '', title, download }) => {
@@ -20,7 +20,7 @@ const LinkClient: React.FC<LinkClientProps> = ({ href = '#', children, className
       href={href}
       className={className}
       title={title}
-      download={download} 
+      download={download}
       onClick={handleClick}
       target="_blank"
       rel="noopener noreferrer"

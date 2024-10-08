@@ -86,12 +86,8 @@ const ButtonDocs: React.FC = () => {
           </p>
           <CodeBox codeHTML={BUTTON_ANCHOR}>
             <div className="d-flex gap-3 justify-content-center flex-wrap px-2">
-              <LinkClient className='btn btn-primary'>
-                Enlace
-              </LinkClient>
-              <LinkClient className='btn btn-outline-primary'>
-                Enlace
-              </LinkClient>
+              <LinkClient className="btn btn-primary">Enlace</LinkClient>
+              <LinkClient className="btn btn-outline-primary">Enlace</LinkClient>
             </div>
           </CodeBox>
         </>

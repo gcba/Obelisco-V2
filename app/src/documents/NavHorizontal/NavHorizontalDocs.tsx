@@ -11,7 +11,6 @@ import {
   NAV_HORIZONTAL_BORDER,
 } from './code-views';
 
-
 const sections = [
   {
     title: 'Navegación Horizontal',

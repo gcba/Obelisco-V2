@@ -13,7 +13,6 @@ import {
   CALENDAR_WITH_REFERENCES,
 } from './code-views';
 
-
 const CalendarDocs: React.FC = () => {
   const sections = [
     {
@@ -309,7 +308,7 @@ const CalendarDocs: React.FC = () => {
                         <span>9</span>
                       </td>
                       <td>
-                        <LinkClient className="calendar-link" title="Nombre del evento." >
+                        <LinkClient className="calendar-link" title="Nombre del evento.">
                           <span className="active">10</span>
                         </LinkClient>
                       </td>
@@ -360,7 +359,7 @@ const CalendarDocs: React.FC = () => {
                         <span>24</span>
                       </td>
                       <td>
-                        <LinkClient className="calendar-link" title="Nombre del evento." >
+                        <LinkClient className="calendar-link" title="Nombre del evento.">
                           <span className="active">25</span>
                         </LinkClient>
                       </td>

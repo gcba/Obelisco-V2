@@ -2,7 +2,7 @@ import CodeBox from '@/components/CodeBox';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
-import { MAP_INSTITUTION, MAP_LATERAL } from './code-views';
+import { SCROLLBAR_HORIZONTAL, SCROLLBAR_VERTICAL } from './code-views';
 
 const MapDocs: React.FC = () => {
   const sections = [
@@ -27,7 +27,7 @@ const MapDocs: React.FC = () => {
       id: 'section-1',
       title: 'Lateral',
       content: (
-        <CodeBox codeHTML={MAP_LATERAL}>
+        <CodeBox codeHTML={SCROLLBAR_HORIZONTAL}>
           {/* <div className="container"> */}
           <div className="responsive-scroll" tabIndex={0}>
             <div className="horizontal-example">
@@ -58,9 +58,9 @@ const MapDocs: React.FC = () => {
     },
     {
       id: 'section-2',
-      title: 'Institucional',
+      title: 'Vertical',
       content: (
-        <CodeBox codeHTML={MAP_INSTITUTION}>
+        <CodeBox codeHTML={SCROLLBAR_VERTICAL}>
           <div className="container">
             <div className="responsive-scroll" tabIndex={0}>
               <div className="vertical-example">

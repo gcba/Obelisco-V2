@@ -96,7 +96,7 @@ export const BANNER_BUTTONS = `
           href="#"
           target="_blank"
           rel="noopener noreferrer"
-          class="btn btn-sm btn-secondary"
+          class="btn btn-sm btn-outline-primary"
         >
           Botón
         </a>
@@ -128,7 +128,7 @@ export const BANNER_BUTTONS_DARK = `
           href="#"
           target="_blank"
           rel="noopener noreferrer"
-          class="btn btn-sm btn-tertiary"
+          class="btn btn-sm btn-outline-light"
         >
           Botón
         </a>

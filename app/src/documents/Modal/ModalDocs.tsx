@@ -63,7 +63,7 @@ const ModalDocs: React.FC = () => {
                     <button type="button" className="btn btn-outline-primary" data-bs-dismiss="modal">
                       Volver atrás
                     </button>
-                    <button type="button" className="btn btn-secondary">
+                    <button type="button" className="btn btn-primary">
                       Continuar
                     </button>
                   </div>
@@ -130,7 +130,7 @@ const ModalDocs: React.FC = () => {
                     </h4>
                   </div>
                   <div className="modal-footer">
-                    <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">
+                    <button type="button" className="btn btn-primary" data-bs-dismiss="modal">
                       Aceptar
                     </button>
                   </div>

@@ -42,42 +42,72 @@ const ButtonDocs: React.FC = () => {
       content: (
         <>
           <CodeBox codeHTML={BUTTON_SOLID}>
-            <div className="d-flex gap-3 justify-content-center flex-wrap px-2">
-              <button type="button" className="btn btn-primary">
-                Primario
-              </button>
-              <button type="button" className="btn btn-secondary">
-                Secundario
-              </button>
-              <button type="button" className="btn btn-tertiary">
-                Terciario
-              </button>
-              <button type="button" className="btn btn-success">
-                Éxito
-              </button>
-              <button type="button" className="btn btn-danger">
-                Error
-              </button>
+            <div className="d-flex gap-3 justify-content-center align-items-center flex-wrap px-2">
+              <div>
+                <button type="button" className="btn btn-primary">
+                  Primario
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-secondary">
+                  Secundario
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-tertiary">
+                  Terciario
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-success">
+                  Éxito
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-danger">
+                  Error
+                </button>
+              </div>
+              <div className="p-2 bg-dark">
+                <button type="button" className="btn btn-light">
+                  Light
+                </button>
+              </div>
             </div>
           </CodeBox>
           <br />
           <CodeBox codeHTML={BUTTON_OUTLINE}>
-            <div className="d-flex gap-3 justify-content-center flex-wrap px-2">
-              <button type="button" className="btn btn-outline-primary">
-                Primario
-              </button>
-              <button type="button" className="btn btn-outline-secondary">
-                Secundario
-              </button>
-              <button type="button" className="btn btn-outline-tertiary">
-                Terciario
-              </button>
-              <button type="button" className="btn btn-outline-success">
-                Éxito
-              </button>
-              <button type="button" className="btn btn-outline-danger">
-                Error
-              </button>
+            <div className="d-flex gap-3 justify-content-center align-items-center flex-wrap px-2">
+              <div>
+                <button type="button" className="btn btn-outline-primary">
+                  Primario
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-outline-secondary">
+                  Secundario
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-outline-tertiary">
+                  Terciario
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-outline-success">
+                  Éxito
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-outline-danger">
+                  Error
+                </button>
+              </div>
+              <div className="p-2 bg-dark">
+                <button type="button" className="btn btn-outline-light">
+                  Light
+                </button>
+              </div>
             </div>
           </CodeBox>
           <br />
@@ -212,7 +242,7 @@ const ButtonDocs: React.FC = () => {
                 Botón
               </button>
               <button type="button" className="btn btn-tertiary">
-                <div className="spinner-border text-info spinner-border-sm" role="status">
+                <div className="spinner-border text-light spinner-border-sm" role="status">
                   <span className="sr-only">Cargando...</span>
                 </div>
                 Botón
@@ -229,6 +259,14 @@ const ButtonDocs: React.FC = () => {
                 </div>
                 Botón
               </button>
+              <div className="bg-dark p-2">
+                <button type="button" className="btn btn-light">
+                  <div className="spinner-border text-secondary spinner-border-sm" role="status">
+                    <span className="sr-only">Cargando...</span>
+                  </div>
+                  Botón
+                </button>
+              </div>
             </div>
           </CodeBox>
           <br />
@@ -264,6 +302,14 @@ const ButtonDocs: React.FC = () => {
                 </div>
                 Botón
               </button>
+              <div className="bg-dark p-2">
+                <button type="button" className="btn btn-light">
+                  <div className="spinner-border text-secondary spinner-border-sm" role="status">
+                    <span className="sr-only">Cargando...</span>
+                  </div>
+                  Botón
+                </button>
+              </div>
             </div>
           </CodeBox>
         </>

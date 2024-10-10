@@ -34,9 +34,11 @@
         outline: none;
         border-radius: $border-radius-lg;
  
-        @media screen and (width >=768px) and (width <=1200px) {
-          max-height: 240px;
-          height: 240px;
+        @include media-breakpoint-up(md) {
+          @include media-breakpoint-down(lg) {
+            max-height: 240px;
+            height: 240px;
+          }
         }
       }
     }
@@ -46,14 +48,4 @@
     }
   }
  
-  @media screen and (width >=768px) and (width <=1200px) {
-    .card-iframe {
-      max-height: 240px;
- 
-      iframe,
-      div {
-        max-height: 240px;
-      }
-    }
-  }
 }

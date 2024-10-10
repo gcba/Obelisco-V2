@@ -75,7 +75,7 @@ const HighlightedDocs: React.FC = () => {
                         </span>
                         Botón
                       </a>
-                      <a className="btn btn-secondary btn-lg" href="#" rel="noopener noreferrer">
+                      <a className="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
                           info
                         </span>
@@ -249,7 +249,7 @@ const HighlightedDocs: React.FC = () => {
                         </span>
                         Botón
                       </a>
-                      <a className="btn btn-secondary btn-lg" href="#" rel="noopener noreferrer">
+                      <a className="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
                           info
                         </span>
@@ -288,7 +288,7 @@ const HighlightedDocs: React.FC = () => {
                         </span>
                         Botón
                       </a>
-                      <a className="btn btn-secondary btn-lg" href="#" rel="noopener noreferrer">
+                      <a className="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
                           info
                         </span>
@@ -326,7 +326,7 @@ const HighlightedDocs: React.FC = () => {
                         </span>
                         Botón
                       </a>
-                      <a className="btn btn-secondary btn-lg" href="#" rel="noopener noreferrer">
+                      <a className="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
                           info
                         </span>
@@ -371,7 +371,7 @@ const HighlightedDocs: React.FC = () => {
                         </span>
                         Botón
                       </a>
-                      <a className="btn btn-secondary btn-lg" href="#" rel="noopener noreferrer">
+                      <a className="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
                           info
                         </span>

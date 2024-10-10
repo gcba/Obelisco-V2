@@ -37,7 +37,7 @@ export const componentsPages = [
   { text: 'Destacado', url: '/components/highlighted', id: 12 },
   { text: 'Enlace', url: '/components/link', id: 13 },
   { text: 'Etiquetas', url: '/components/badge', id: 14 },
-  // { text: "Galería", url: "/components/gallery", id: 15 },
+  { text: 'Galería', url: '/components/gallery', id: 15 },
   { text: 'Lista de enlaces', url: '/components/list-link', id: 16 },
   { text: 'Lista de pasos', url: '/components/list-step', id: 17 },
   { text: 'Lista informativa', url: '/components/list-informative', id: 18 },

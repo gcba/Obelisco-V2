@@ -1,8 +1,8 @@
-export const SCROLLBAR_HORIZONTAL = `<div className="responsive-scroll" tabIndex={0}>
+export const SCROLLBAR_HORIZONTAL = `<div class="responsive-scroll" tabindex="0">
     <h1>Esto es un título de ejemplo</h1>
-    <div className="horizontal-example">
+    <div class="horizontal-example">
       Esto es un párrafo de ejemplo para probar el funcionamiento de la barra
-      <p className="lead">
+      <p class="lead">
         muestra. El ancho del texto es para probar el desplazamiento horizontal,
         de desplazamiento. No tiene ningún fin específico, solo sirve de
         probar el desplazamiento vertical.
@@ -22,11 +22,11 @@ export const SCROLLBAR_HORIZONTAL = `<div className="responsive-scroll" tabIndex
     </div>
 </div>`;
 
-export const SCROLLBAR_VERTICAL = `<div className="responsive-scroll" tabIndex={0}>
+export const SCROLLBAR_VERTICAL = `<div class="responsive-scroll" tabindex="0">
     <h1>Esto es un título de ejemplo</h1>
-    <div className="vertical-example">
+    <div class="vertical-example">
       Esto es un párrafo de ejemplo para probar el funcionamiento de la barra
-      <p className="lead">
+      <p class="lead">
         muestra. El ancho del texto es para probar el desplazamiento horizontal,
         de desplazamiento. No tiene ningún fin específico, solo sirve de
         probar el desplazamiento vertical.
@@ -45,4 +45,3 @@ export const SCROLLBAR_VERTICAL = `<div className="responsive-scroll" tabIndex={
       probar el desplazamiento vertical.
     </div>
 </div>`;
-

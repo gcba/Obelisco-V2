@@ -1,13 +1,59 @@
+/* === Custom Variable and mixins === */
+$scroll-border-radius: 100px;
+
+/* === Custom styles === */
 .responsive-scroll {
-    .horizontal-example {
-        min-width: 1200px;
-    }
+  padding: 0.5rem;
+  border: none;
+  display: flex;
+  overflow: auto;
+  border-radius: $border-radius-lg;
+  scrollbar-color: auto;
 
-    .vertical-example {
-        height: 300px;
+  &:has(> .table) {
+    padding: 0;
+    border: 1px solid $border-color;
 
-        @media screen and (max-width: 768px) {
-            height: 500px;
-        }
+    .table {
+      border: none;
     }
+  }
+
+  &::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+    background-color: $grisulado-50;
+    border-radius: $scroll-border-radius;
+    outline: 0.125rem solid transparent;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $grisulado-50;
+    border-radius: $scroll-border-radius;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $grisulado-600;
+    border-radius: 20px !important;
+  }
+
+  &:focus-visible {
+    box-shadow: $focus-box-shadow;
+    outline: none;
+  }
 }
+
+//Por accesibilidad en Modo Alto Contraste, se agrega color de fondo blanco a la barra de desplazamiento
+@media (forced-colors: active) {
+  .responsive-scroll {
+    &:focus {
+      outline: 0.25rem solid transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      forced-color-adjust: none;
+      background-color: white;
+    }
+  }
+}
+
+//Esta clase es independiente de .table-responsive, de manera que si en drupal no se usa, se puede eliminar la clase .table-responsive

@@ -237,6 +237,7 @@ input[type='search']::-moz-search-clear-button {
   p {
     @extend .text-sm;
     margin-bottom: 0;
+    color: $body-color;
   }
 }
 

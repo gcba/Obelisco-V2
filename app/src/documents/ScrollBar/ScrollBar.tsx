@@ -3,7 +3,7 @@ import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 
 import { SCROLLBAR_HORIZONTAL, SCROLLBAR_VERTICAL } from './code-views';
 
-const MapDocs: React.FC = () => {
+const ScrollBarDocs: React.FC = () => {
   const sections = [
     {
       title: 'Barra de desplazamiento',
@@ -95,4 +95,4 @@ const MapDocs: React.FC = () => {
   return <DocumentationTemplate sections={sections} />;
 };
 
-export default MapDocs;
+export default ScrollBarDocs;

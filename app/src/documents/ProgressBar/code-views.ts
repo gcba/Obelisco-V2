@@ -1,8 +1,8 @@
-export const PROGRESSBAR_TYPES_INFO = `
+export const PROGRESSBAR_TYPES_PRIMARY = `
 <div class="container">
     <div class="progress">
         <div
-            class="progress-bar bg-info"
+            class="progress-bar bg-primary"
             role="progressbar"
             aria-valuenow={25}
             aria-valuemin={0}
@@ -13,7 +13,7 @@ export const PROGRESSBAR_TYPES_INFO = `
     <br />
     <div class="progress">
         <div
-            class="progress-bar bg-info"
+            class="progress-bar bg-primary"
             role="progressbar"
             aria-valuenow={50}
             aria-valuemin={0}
@@ -24,7 +24,7 @@ export const PROGRESSBAR_TYPES_INFO = `
     <br />
     <div class="progress">
         <div
-            class="progress-bar bg-info"
+            class="progress-bar bg-primary"
             role="progressbar"
             aria-valuenow={100}
             aria-valuemin={0}
@@ -76,12 +76,12 @@ export const PROGRESSBAR_TYPES_SUCCESS = `
 </div>
 `;
 
-export const PROGRESSBAR_DESCRIPTION_INFO = `
+export const PROGRESSBAR_DESCRIPTION_PRIMARY = `
 <div class="container">
     <p class="progress-description">Descripción</p>
     <div class="progress">
         <div
-            class="progress-bar bg-info"
+            class="progress-bar bg-primary"
             role="progressbar"
             aria-valuenow={50}
             aria-valuemin={0}
@@ -95,7 +95,7 @@ export const PROGRESSBAR_DESCRIPTION_INFO = `
     <p class="progress-description">Descripción</p>
     <div class="progress">
         <div
-            class="progress-bar bg-info"
+            class="progress-bar bg-primary"
             role="progressbar"
             aria-valuenow={100}
             aria-valuemin={0}

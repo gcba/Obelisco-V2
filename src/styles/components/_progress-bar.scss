@@ -13,13 +13,14 @@ $progression-circle-active-size: 1rem;
 $progression-font-color: $grisulado-300;
 $progression-default-color: $grisulado-50;
 
-$progress-height: 0.25rem;
-$progress-bg: $grisulado-100;
+$progress-height: 0.5rem;
+$progress-bg: $grisulado-200;
 
 /* === Custom styles === */
 .progress {
   outline: 0.125rem solid transparent;
   height: $progress-height;
+  background-color: $progress-bg;
 }
 
 .progress-bar {

@@ -33,7 +33,7 @@ $theme-color-btn-bg-hover: (
   link: $grisulado-100,
 );
 
-@mixin btn-disabled {
+@mixin btn-disabled ($color) {
   &.disabled,
   &:disabled {
     background-color: $btn-disabled-bg;
@@ -41,6 +41,14 @@ $theme-color-btn-bg-hover: (
     color: $btn-disabled-text;
     pointer-events: none;
     opacity: 1;
+  }
+
+  @if $color == 'light' {
+    &.disabled,
+    &:disabled {
+      background-color: $disabled-on-dark;
+      outline-color: $disabled-on-dark;
+    }
   }
 }
 
@@ -234,7 +242,7 @@ $theme-color-btn-bg-hover: (
       }
     }
 
-    @include btn-disabled;
+    @include btn-disabled($color);
 
     //Estilos para link
     @include btn-specific-types($color, 'link');

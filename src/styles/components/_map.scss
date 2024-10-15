@@ -3,28 +3,28 @@
 .card-map {
   outline: $outline-border;
   border-radius: $border-radius-lg;
- 
+
   .card-body {
     padding: 1.5rem;
- 
+
     .card-title {
       @extend .headline-lg;
       margin-bottom: 0;
     }
- 
+
     .card-text {
       margin-top: 0.25rem;
     }
- 
+
     .card-iframe {
       max-height: 146px;
       margin: 1rem 0;
- 
+
       @media screen and (width >=768px) and (width <=1200px) {
         max-height: 240px;
         height: 240px;
       }
- 
+
       iframe,
       div {
         width: 100%;
@@ -33,19 +33,17 @@
         object-fit: cover;
         outline: none;
         border-radius: $border-radius-lg;
- 
-        @include media-breakpoint-up(md) {
-          @include media-breakpoint-down(lg) {
-            max-height: 240px;
-            height: 240px;
-          }
+
+        @include media-breakpoint-between(md, xl) {
+          max-height: 240px;
+          height: 240px;
         }
       }
     }
- 
+
     .btn {
       width: 100%;
     }
   }
- 
+
 }

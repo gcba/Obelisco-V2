@@ -7,7 +7,7 @@ interface NavItem {
   isDisabled?: boolean;
   url?: string;
   id?: string | number;
-  imgSrc?: string | 'https://gcba.github.io/img/card/homev1.svg';
+  imgSrc?: string;
   description?: string;
 }
 

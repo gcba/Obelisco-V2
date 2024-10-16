@@ -49,6 +49,7 @@ $scroll-border-radius: 100px;
     &:focus {
       outline: 0.25rem solid transparent;
     }
+
     &::-webkit-scrollbar-thumb {
       forced-color-adjust: none;
       background-color: white;

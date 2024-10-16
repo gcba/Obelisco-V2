@@ -9,7 +9,7 @@ $padding-card-access-body: 1.5rem;
 $padding-title-option: 0.75rem 1.5rem;
 $font-size-icon-card: 2rem;
 $card-size: 4rem; //64px;
-$border-radius-card-item: 0 0 .5rem .5rem;
+$border-radius-card-item: 0 0 0.5rem 0.5rem;
 $no-text-decoration: none;
 $margin-clearfix: 0 0 0.5rem; //0 0 8px
 $color-clearfix: $grisulado-100;
@@ -40,7 +40,7 @@ $access-icon-logout: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://ww
 }
 
 // Estilos para estado active de acceso
-%access-active {
+@mixin access-active {
   outline: 0.25rem solid transparent;
   outline-offset: -0.25rem;
   background-color: $active-color;
@@ -174,7 +174,7 @@ a.list-group-item {
 
   &:active,
   &.active {
-    @extend %access-active;
+    @include access-active;
 
     &::after {
       @include access-icon($access-arrow-active); // icono blanco
@@ -182,12 +182,12 @@ a.list-group-item {
 
     &:hover,
     &.hover {
-      @extend %access-active;
+      @include access-active;
     }
 
     &:focus,
     &.focus {
-      @extend %access-active;
+      @include access-active;
 
       &:hover,
       &.hover {
@@ -258,7 +258,6 @@ a.list-group-item {
   }
 }
 
-
 // Accesos organismos
 .group-access {
   display: grid;
@@ -268,7 +267,7 @@ a.list-group-item {
   .card-access {
     display: grid;
     width: 100%;
-    outline: .125rem solid $grisulado-100;
+    outline: 0.125rem solid $grisulado-100;
     border-radius: $border-radius-lg;
     padding-bottom: 0;
 
@@ -355,6 +354,7 @@ a.list-group-item {
             margin-bottom: 0;
           }
           margin-bottom: 0.5rem;
+
           &:not(:hover) {
             outline-color: transparent;
           }
@@ -370,6 +370,7 @@ a.list-group-item {
         & + .clearfix {
           & + .card-item {
             border-radius: 0.5rem;
+
             &:not(:hover) {
               outline-color: transparent;
             }

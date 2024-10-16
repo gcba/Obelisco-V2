@@ -21,6 +21,7 @@ $stepper-active-color: $body-color;
       @extend .h4;
       margin-bottom: 0.25rem;
     }
+
     .step-subtitle {
       @extend .text-md;
       margin-bottom: 0.75rem;
@@ -30,9 +31,11 @@ $stepper-active-color: $body-color;
       display: flex;
       align-items: center;
       gap: 0.5rem;
+
       .steps-items {
         display: inline-block;
         line-height: $stepper-circle-size;
+
         .steps-item {
           width: $stepper-circle-size;
           height: $stepper-circle-size;

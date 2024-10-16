@@ -33,7 +33,7 @@ $theme-color-btn-bg-hover: (
   link: $grisulado-100,
 );
 
-@mixin btn-disabled ($color) {
+@mixin btn-disabled($color) {
   &.disabled,
   &:disabled {
     background-color: $btn-disabled-bg;
@@ -114,7 +114,7 @@ $theme-color-btn-bg-hover: (
   }
 }
 
-@mixin color-light ($color) {
+@mixin color-light($color) {
   @if $color == 'light' {
     color: $gray-950;
   }
@@ -246,8 +246,8 @@ $theme-color-btn-bg-hover: (
 
     //Estilos para link
     @include btn-specific-types($color, 'link');
-    
-    //Estilos para light 
+
+    //Estilos para light
     @include color-light($color);
 
     //Estilos para warning y dark
@@ -264,9 +264,11 @@ $theme-color-btn-bg-hover: (
 
     &:visited {
       color: map-get($theme-colors, $color);
+
       //Estilos para link
       @include btn-specific-color($color, 'link');
-      //Estilos para light 
+
+      //Estilos para light
       @include color-light($color);
     }
 
@@ -276,9 +278,11 @@ $theme-color-btn-bg-hover: (
     &.focus,
     &:focus:not(:focus-visible) {
       color: $white;
+
       //Estilos para link
       @include btn-specific-color($color, 'link');
-      //Estilos para light 
+
+      //Estilos para light
       @include color-light($color);
     }
 

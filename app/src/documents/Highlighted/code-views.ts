@@ -14,7 +14,7 @@ export const HIGHLIGHTED_BANNER_BUTTONS = `
         <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
           <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>Botón
         </a>
-        <a class="btn btn-secondary btn-lg" href="#" rel="noopener noreferrer">
+        <a class="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
           <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>Botón
         </a>
       </div>
@@ -122,7 +122,7 @@ export const HIGHLIGHTED_BANNER_NO_MEDIA = `
         <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
           <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>Botón
         </a>
-        <a class="btn btn-secondary btn-lg" href="#" rel="noopener noreferrer">
+        <a class="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
           <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>Botón
         </a>
       </div>
@@ -146,7 +146,7 @@ export const HIGHLIGHTED_BANNER_BUTTONS_BG = `
         <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
           <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>Botón
         </a>
-        <a class="btn btn-secondary btn-lg" href="#" rel="noopener noreferrer">
+        <a class="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
           <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>Botón
         </a>
       </div>
@@ -182,7 +182,7 @@ export const HIGHLIGHTED_BANNER_BUTTONS_VIDEO_MP4 = `
         <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
           <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>Botón
         </a>
-        <a class="btn btn-secondary btn-lg" href="#" rel="noopener noreferrer">
+        <a class="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
           <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>Botón
         </a>
       </div>
@@ -213,7 +213,7 @@ export const HIGHLIGHTED_BANNER_BUTTONS_VIDEO_YT = `
         <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
           <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>Botón
         </a>
-        <a class="btn btn-secondary btn-lg" href="#" rel="noopener noreferrer">
+        <a class="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
           <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>Botón
         </a>
       </div>

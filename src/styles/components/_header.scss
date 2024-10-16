@@ -83,7 +83,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
       }
 
       &:focus:not(:active),
-      &:focus:not(.active) {
+      &:focus:not(.active, :active) {
         &:not(.item-danger) {
           color: $hover-color;
         }

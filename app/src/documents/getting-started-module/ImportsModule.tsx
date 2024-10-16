@@ -8,12 +8,15 @@ import MainDescription from '@/components/Template/MainDescription';
 import {
   BOOTSTRAP_CODE,
   BOXICONS_CODE,
+  BOXICONS_CODE_NPM,
+  MATERIAL_S_CODE_NPM,
   MATERIAL_SYMBOLS_CODE,
   NUNITO_CODE,
   OPENSANS_CODE,
   POPPER_CODE,
   STYLES_CODE,
   STYLES_CODE_CSS,
+  STYLES_CODE_CSS_WEBPACK4,
 } from './code-views';
 
 const ImportsModule: React.FC = () => {
@@ -41,6 +44,15 @@ const ImportsModule: React.FC = () => {
 
           <SyntaxHighlighter language="scss" style={dracula} wrapLongLines>
             {STYLES_CODE_CSS}
+          </SyntaxHighlighter>
+
+          <br />
+          <p>
+            Si estas utilizando versiones anteriores de webpack, (Webpack 4 o inferiores), el prefijo ~ es necesario:
+          </p>
+
+          <SyntaxHighlighter language="scss" style={dracula} wrapLongLines>
+            {STYLES_CODE_CSS_WEBPACK4}
           </SyntaxHighlighter>
         </div>
       ),
@@ -75,15 +87,17 @@ const ImportsModule: React.FC = () => {
         <div className="col-12">
           <h3 className="headline-lg">Boxicons: </h3>
           <SyntaxHighlighter language="bash" style={dracula} wrapLongLines>
-            {`npm install boxicons
- 
-// Es importante que incluyas el import a Boxicons en tu hoja de estilos si lo usas via NPM
-@import "material-symbols/index.css";
-`}
+            {BOXICONS_CODE_NPM}
           </SyntaxHighlighter>
 
           <br />
+          <p>Es importante que incluyas el import a Boxicons en tu hoja de estilos si lo usas via NPM</p>
 
+          <SyntaxHighlighter language="scss" style={dracula} wrapLongLines>
+            {`@import "boxicons/css/boxicons.min.css";`}
+          </SyntaxHighlighter>
+
+          <br />
           <h3 className="headline-lg">O puedes utilizar la CDN:</h3>
           <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
             {BOXICONS_CODE}
@@ -93,11 +107,14 @@ const ImportsModule: React.FC = () => {
 
           <h3 className="headline-lg">Material Symbols:</h3>
           <SyntaxHighlighter language="bash" style={dracula} wrapLongLines>
-            {`npm install material-symbols@latest
- 
-// Es importante que incluyas el import a Material Symbols en tu hoja de estilos si lo usas via NPM
-@import "material-symbols/index.css";
-`}
+            {MATERIAL_S_CODE_NPM}
+          </SyntaxHighlighter>
+
+          <br />
+          <p>Es importante que incluyas el import a Material Symbols en tu hoja de estilos si lo usas via NPM</p>
+
+          <SyntaxHighlighter language="scss" style={dracula} wrapLongLines>
+            {`@import "material-symbols/index.css";`}
           </SyntaxHighlighter>
 
           <br />

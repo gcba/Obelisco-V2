@@ -9,7 +9,7 @@ export const HEADER_LOGIN_ONE_LINE_SEARCH = `
         </a>
         <div class="navbar-login-mobile">
         <a
-            class="btn btn-lg btn-icon btn-outline-tertiary"
+            class="btn btn-lg btn-icon btn-outline-primary"
             href="#"
             target="_blank"
         >
@@ -126,7 +126,7 @@ export const HEADER_LOGIN_ONE_LINE_SEARCH = `
             </div>
             <div class="navbar-login">
             <a
-                class="btn btn-lg btn-outline-tertiary"
+                class="btn btn-lg btn-outline-primary"
                 href="#"
                 target="_blank"
             >
@@ -151,7 +151,7 @@ export const HEADER_LOGIN_ONE_LINE = `
     </a>
     <div class="navbar-login-mobile">
         <a
-        class="btn btn-lg btn-icon btn-outline-tertiary"
+        class="btn btn-lg btn-icon btn-outline-primary"
         href="#"
         target="_blank"
         >
@@ -258,7 +258,7 @@ export const HEADER_LOGIN_ONE_LINE = `
         </div>
         <div class="navbar-login">
             <a
-            class="btn btn-lg btn-outline-tertiary"
+            class="btn btn-lg btn-outline-primary"
             href="#"
             target="_blank"
             >
@@ -283,7 +283,7 @@ export const HEADER_LOGIN_TWO_LINES_SEARCH = `
         </a>
         <div class="navbar-login-mobile">
         <a
-            class="btn btn-lg btn-icon btn-outline-tertiary"
+            class="btn btn-lg btn-icon btn-outline-primary"
             href="#"
             target="_blank"
         >
@@ -314,7 +314,7 @@ export const HEADER_LOGIN_TWO_LINES_SEARCH = `
             </div>
             <div class="navbar-login">
             <a
-                class="btn btn-lg btn-outline-tertiary"
+                class="btn btn-lg btn-outline-primary"
                 href="#"
                 target="_blank"
             >
@@ -445,7 +445,7 @@ export const HEADER_LOGIN_TWO_LINES = `
     </a>
     <div class="navbar-login-mobile">
         <a
-        class="btn btn-lg btn-icon btn-outline-tertiary"
+        class="btn btn-lg btn-icon btn-outline-primary"
         href="#"
         target="_blank"
         >
@@ -466,7 +466,7 @@ export const HEADER_LOGIN_TWO_LINES = `
         <div class="navbar-content">
         <div class="navbar-login">
             <a
-            class="btn btn-lg btn-outline-tertiary"
+            class="btn btn-lg btn-outline-primary"
             href="#"
             target="_blank"
             >
@@ -1503,7 +1503,7 @@ export const HEADER_ONLY_LOGIN = `
     </a>
     <div class="navbar-login-mobile">
         <a
-        class="btn btn-lg btn-icon btn-outline-tertiary"
+        class="btn btn-lg btn-icon btn-outline-primary"
         href="#"
         target="_blank"
         >
@@ -1515,7 +1515,7 @@ export const HEADER_ONLY_LOGIN = `
         <div class="navbar-content">
         <div class="navbar-login">
             <a
-            class="btn btn-lg btn-outline-tertiary"
+            class="btn btn-lg btn-outline-primary"
             href="#"
             target="_blank"
             >
@@ -1539,7 +1539,7 @@ export const HEADER_ONLY_LOGIN_SEARCH = `
         <img class="header-logo" src="/Obelisco-V2/images/BA.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
     </a>
     <div className="navbar-login-mobile">
-        <a className="btn btn-lg btn-icon btn-outline-tertiary" href="#" target="_blank">
+        <a className="btn btn-lg btn-icon btn-outline-primary" href="#" target="_blank">
         <span className="material-symbols-rounded" aria-hidden="true">
             person
         </span>
@@ -1575,7 +1575,7 @@ export const HEADER_ONLY_LOGIN_SEARCH = `
             </form>
         </div>
         <div className="navbar-login">
-            <a className="btn btn-lg btn-outline-tertiary" href="#" target="_blank">
+            <a className="btn btn-lg btn-outline-primary" href="#" target="_blank">
             <span className="material-symbols-rounded" aria-hidden="true">
                 person
             </span>

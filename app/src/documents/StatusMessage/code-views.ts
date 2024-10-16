@@ -12,8 +12,11 @@ export const SM_INFO = `<div class="status status-info">
     con la finalidad de guiar y ayudar a las personas
     usuarias a finalizar un proceso o iniciar uno nuevo.
   </p>
-  <button type="button" class="btn btn-secondary">
-  <i class="bx bxs-info-circle o-icon"></i> 
+  <button type="button" class="btn btn-primary">
+    <i class="bx bxs-info-circle o-icon"></i> 
+    Botón
+  </button>
+  <button type="button" class="btn btn-outline-primary">
     Botón
   </button>
 </div>`;
@@ -38,8 +41,11 @@ export const SM_SUCCESS = `<div class="status status-success">
     </li>
     <li>Éste es otro ítem dentro de una lista.</li>
   </ul>
-  <button type="button" class="btn btn-secondary">
-  <i class="bx bxs-info-circle o-icon"></i> 
+  <button type="button" class="btn btn-primary">
+    <i class="bx bxs-info-circle o-icon"></i> 
+    Botón
+  </button>
+  <button type="button" class="btn btn-outline-primary">
     Botón
   </button>
 </div>`;
@@ -67,15 +73,11 @@ export const SM_WARNING = `<div class="status status-warning">
       Capacitación
     </li>
   </ul>
-  <button type="button" class="btn btn-secondary">
-  <i class="bx bxs-info-circle o-icon"></i> 
+  <button type="button" class="btn btn-primary">
+    <i class="bx bxs-info-circle o-icon"></i> 
     Botón
   </button>
-  <button
-    type="button"
-    class="btn btn-outline-secondary"
-  >
-  <i class="bx bxs-info-circle o-icon"></i> 
+  <button type="button" class="btn btn-outline-primary">
     Botón
   </button>
 </div>`;
@@ -103,15 +105,11 @@ export const SM_DANGER = `<div class="status status-danger">
       Capacitación
     </li>
   </ul>
-  <button type="button" class="btn btn-secondary">
-  <i class="bx bxs-info-circle o-icon"></i> 
+  <button type="button" class="btn btn-primary">
+    <i class="bx bxs-info-circle o-icon"></i> 
     Botón
   </button>
-  <button
-    type="button"
-    class="btn btn-outline-secondary"
-  >
-  <i class="bx bxs-info-circle o-icon"></i> 
+  <button type="button" class="btn btn-outline-primary">
     Botón
   </button>
 </div>`;
@@ -127,7 +125,10 @@ export const SM_INSTITUTIONAL = `<div class="status status-institutional">
     <a href="#">https://ejemplo.buenosaires.gob.ar</a>
   </p>
   <button type="button" class="btn btn-primary">
-  <i class="bx bxs-info-circle o-icon"></i> 
-    Ir al sitio web
+    <i class="bx bxs-info-circle o-icon"></i> 
+    Botón
+  </button>
+  <button type="button" class="btn btn-outline-primary">
+    Botón
   </button>
 </div>`;

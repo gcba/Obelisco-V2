@@ -19,8 +19,9 @@ const BadgeDocs: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              enlace.
+              enlace
             </a>
+            .
           </p>
         </>
       ),

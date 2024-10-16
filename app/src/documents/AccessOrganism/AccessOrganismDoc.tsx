@@ -3,6 +3,7 @@
 import React from 'react';
 
 import CodeBox from '@/components/CodeBox';
+import LinkClient from '@/components/LinkClient';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
@@ -18,8 +19,9 @@ const AccessOrganismDocs: React.FC = () => {
           <p className="lead mb-4">
             Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
             <a href="https://gcba.github.io/estandares/componentes/acceso/" target="_blank" rel="noopener noreferrer">
-              enlace.
+              enlace
             </a>
+            .
           </p>
         </>
       ),
@@ -47,7 +49,7 @@ const AccessOrganismDocs: React.FC = () => {
                               info
                             </span>
                           </div>
-                          <a href="#" className="list-group-item card-item">
+                          <LinkClient className="list-group-item card-item">
                             <span className="material-symbols-rounded o-icon" aria-hidden="true">
                               info
                             </span>
@@ -55,7 +57,7 @@ const AccessOrganismDocs: React.FC = () => {
                               <span className="access-title">Acceso</span>
                               <p className="access-text">Descripción (Opcional)</p>
                             </div>
-                          </a>
+                          </LinkClient>
                         </div>
                       </div>
                     </div>
@@ -90,7 +92,7 @@ const AccessOrganismDocs: React.FC = () => {
                           <hr className="clearfix" />
                           <div className="container-access">
                             <div className="access-option">
-                              <a href="#" className="list-group-item item-sm">
+                              <LinkClient className="list-group-item item-sm">
                                 <span className="material-symbols-rounded o-icon" aria-hidden="true">
                                   info
                                 </span>
@@ -98,8 +100,8 @@ const AccessOrganismDocs: React.FC = () => {
                                   <span className="access-title">Acceso</span>
                                   <p className="access-text">Descripción (Opcional)</p>
                                 </div>
-                              </a>
-                              <a href="#" className="list-group-item item-sm">
+                              </LinkClient>
+                              <LinkClient className="list-group-item item-sm">
                                 <span className="material-symbols-rounded o-icon" aria-hidden="true">
                                   info
                                 </span>
@@ -107,8 +109,8 @@ const AccessOrganismDocs: React.FC = () => {
                                   <span className="access-title">Acceso</span>
                                   <p className="access-text">Descripción (Opcional)</p>
                                 </div>
-                              </a>
-                              <a href="#" className="list-group-item item-sm">
+                              </LinkClient>
+                              <LinkClient className="list-group-item item-sm">
                                 <span className="material-symbols-rounded o-icon" aria-hidden="true">
                                   info
                                 </span>
@@ -116,18 +118,18 @@ const AccessOrganismDocs: React.FC = () => {
                                   <span className="access-title">Acceso</span>
                                   <p className="access-text">Descripción (Opcional)</p>
                                 </div>
-                              </a>
+                              </LinkClient>
                             </div>
                           </div>
                           <hr className="clearfix" />
-                          <a href="#" className="list-group-item card-item">
+                          <LinkClient className="list-group-item card-item">
                             <span className="material-symbols-rounded o-icon" aria-hidden="true">
                               info
                             </span>
                             <div className="access-content">
                               <span className="access-title">Acceso grande</span>
                             </div>
-                          </a>
+                          </LinkClient>
                         </div>
                       </div>
                     </div>
@@ -163,46 +165,46 @@ const AccessOrganismDocs: React.FC = () => {
                           <div className="container-access">
                             <div className="access-option">
                               <h5 className="title-option">Categoría 1</h5>
-                              <a href="#" className="list-group-item item-sm">
+                              <LinkClient className="list-group-item item-sm">
                                 <span className="material-symbols-rounded o-icon" aria-hidden="true">
                                   info
                                 </span>
                                 <div className="access-content">
                                   <span className="access-title">Acceso chico</span>
                                 </div>
-                              </a>
-                              <a href="#" className="list-group-item item-sm">
+                              </LinkClient>
+                              <LinkClient className="list-group-item item-sm">
                                 <span className="material-symbols-rounded o-icon" aria-hidden="true">
                                   info
                                 </span>
                                 <div className="access-content">
                                   <span className="access-title">Acceso chico</span>
                                 </div>
-                              </a>
+                              </LinkClient>
                               <h5 className="title-option">Categoría 2</h5>
-                              <a href="#" className="list-group-item item-sm">
+                              <LinkClient className="list-group-item item-sm">
                                 <i className="bx bxs-info-circle o-icon"></i>
                                 <div className="access-content">
                                   <span className="access-title">Acceso chico</span>
                                 </div>
-                              </a>
-                              <a href="#" className="list-group-item item-sm">
+                              </LinkClient>
+                              <LinkClient className="list-group-item item-sm">
                                 <i className="bx bxs-info-circle o-icon"></i>
                                 <div className="access-content">
                                   <span className="access-title">Acceso chico</span>
                                 </div>
-                              </a>
+                              </LinkClient>
                             </div>
                           </div>
                           <hr className="clearfix" />
-                          <a href="#" className="list-group-item card-item">
+                          <LinkClient className="list-group-item card-item">
                             <span className="material-symbols-rounded o-icon" aria-hidden="true">
                               info
                             </span>
                             <div className="access-content">
                               <span className="access-title">Acceso grande</span>
                             </div>
-                          </a>
+                          </LinkClient>
                         </div>
                       </div>
                     </div>

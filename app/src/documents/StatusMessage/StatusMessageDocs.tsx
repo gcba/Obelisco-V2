@@ -19,7 +19,8 @@ const sections = [
             rel="noopener noreferrer"
           >
             enlace
-          </a>.
+          </a>
+          .
         </p>
       </>
     ),

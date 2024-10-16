@@ -21,7 +21,10 @@ const BannerDocs: React.FC = () => {
           <MainDescription description="Los banners muestran mensajes importantes y breves, a modo de aviso general, para informar a los usuarios sobre temas de diverso interés. Se muestran al ancho completo." />
           <p className="lead mb-4">
             Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-            <LinkClient>enlace</LinkClient>.
+            <a href="https://gcba.github.io/estandares/componentes/banner/" target="_blank" rel="noopener noreferrer">
+              enlace
+            </a>
+            .
           </p>
         </>
       ),
@@ -111,12 +114,8 @@ const BannerDocs: React.FC = () => {
                   superen más de una línea de texto.
                 </p>
                 <div className="banner-actions">
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary">
-                    Botón
-                  </a>
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-outline-primary">
-                    Botón
-                  </a>
+                  <LinkClient className="btn btn-sm btn-primary">Botón</LinkClient>
+                  <LinkClient className="btn btn-sm btn-outline-primary">Botón</LinkClient>
                 </div>
               </div>
             </div>
@@ -133,12 +132,8 @@ const BannerDocs: React.FC = () => {
                   superen más de una línea de texto.
                 </p>
                 <div className="banner-actions">
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary">
-                    Botón
-                  </a>
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-outline-light">
-                    Botón
-                  </a>
+                  <LinkClient className="btn btn-sm btn-primary">Botón</LinkClient>
+                  <LinkClient className="btn btn-sm btn-outline-light">Botón</LinkClient>
                 </div>
               </div>
             </div>

@@ -568,9 +568,7 @@ const UpdateComponents: React.FC = () => {
           <li>
             Se agrega la variante tertiary en spinner (<code>.text-tertiary</code>).
           </li>
-          <li>
-            La variante info no forma parte de las variantes de spinner de Obelisco.
-          </li>
+          <li>La variante info no forma parte de las variantes de spinner de Obelisco.</li>
         </ul>
       ),
     },

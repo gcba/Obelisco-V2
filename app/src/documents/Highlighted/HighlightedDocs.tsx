@@ -70,18 +70,18 @@ const HighlightedDocs: React.FC = () => {
                       No puede contener negritas ni enlaces
                     </p>
                     <div className="panel-footer">
-                      <a className="btn btn-primary btn-lg">
+                      <LinkClient className="btn btn-primary btn-lg">
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                          info
+                        </span>
+                        BotónNNNN
+                      </LinkClient>
+                      <LinkClient className="btn btn-outline-primary btn-lg">
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
                           info
                         </span>
                         Botón
-                      </a>
-                      <a className="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
-                        <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          info
-                        </span>
-                        Botón
-                      </a>
+                      </LinkClient>
                     </div>
                   </div>
                 </div>
@@ -172,9 +172,7 @@ const HighlightedDocs: React.FC = () => {
                       No puede contener negritas ni enlaces
                     </p>
                     <div className="panel-footer">
-                      <a className="external" rel="noopener noreferrer">
-                        Enlace externo
-                      </a>
+                      <LinkClient className="external">Enlace externo</LinkClient>
                     </div>
                   </div>
                 </div>
@@ -201,14 +199,14 @@ const HighlightedDocs: React.FC = () => {
                       No puede contener negritas ni enlaces
                     </p>
                     <div className="panel-footer">
-                      <a href="#" className="list-group-item item-sm">
+                      <LinkClient className="list-group-item item-sm">
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
                           info
                         </span>
                         <div className="access-content">
                           <span className="access-title">Acceso</span>
                         </div>
-                      </a>
+                      </LinkClient>
                     </div>
                   </div>
                 </div>
@@ -244,18 +242,18 @@ const HighlightedDocs: React.FC = () => {
                       No puede contener negritas ni enlaces
                     </p>
                     <div className="panel-footer">
-                      <a className="btn btn-primary btn-lg">
+                      <LinkClient className="btn btn-primary btn-lg">
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
                           info
                         </span>
                         Botón
-                      </a>
-                      <a className="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
+                      </LinkClient>
+                      <LinkClient className="btn btn-outline-primary btn-lg">
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
                           info
                         </span>
                         Botón
-                      </a>
+                      </LinkClient>
                     </div>
                   </div>
                 </div>
@@ -283,18 +281,18 @@ const HighlightedDocs: React.FC = () => {
                       No puede contener negritas ni enlaces
                     </p>
                     <div className="panel-footer">
-                      <a className="btn btn-primary btn-lg">
+                      <LinkClient className="btn btn-primary btn-lg">
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
                           info
                         </span>
                         Botón
-                      </a>
-                      <a className="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
+                      </LinkClient>
+                      <LinkClient className="btn btn-outline-primary btn-lg">
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
                           info
                         </span>
                         Botón
-                      </a>
+                      </LinkClient>
                     </div>
                   </div>
                 </div>
@@ -321,18 +319,18 @@ const HighlightedDocs: React.FC = () => {
                       No puede contener negritas ni enlaces
                     </p>
                     <div className="panel-footer">
-                      <a className="btn btn-primary btn-lg">
+                      <LinkClient className="btn btn-primary btn-lg">
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
                           info
                         </span>
                         Botón
-                      </a>
-                      <a className="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
+                      </LinkClient>
+                      <LinkClient className="btn btn-outline-primary btn-lg">
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
                           info
                         </span>
                         Botón
-                      </a>
+                      </LinkClient>
                     </div>
                   </div>
                 </div>
@@ -366,18 +364,18 @@ const HighlightedDocs: React.FC = () => {
                       No puede contener negritas ni enlaces
                     </p>
                     <div className="panel-footer">
-                      <a className="btn btn-primary btn-lg">
+                      <LinkClient className="btn btn-primary btn-lg">
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
                           info
                         </span>
                         Botón
-                      </a>
-                      <a className="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
+                      </LinkClient>
+                      <LinkClient className="btn btn-outline-primary btn-lg">
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
                           info
                         </span>
                         Botón
-                      </a>
+                      </LinkClient>
                     </div>
                   </div>
                 </div>
@@ -466,9 +464,7 @@ const HighlightedDocs: React.FC = () => {
                         líneas. No puede contener negritas ni enlaces
                       </p>
                       <div className="panel-footer">
-                        <a className="external" rel="noopener noreferrer">
-                          Enlace externo
-                        </a>
+                        <LinkClient className="external">Enlace externo</LinkClient>
                       </div>
                     </div>
                   </div>
@@ -490,14 +486,14 @@ const HighlightedDocs: React.FC = () => {
                         líneas. No puede contener negritas ni enlaces
                       </p>
                       <div className="panel-footer">
-                        <a href="#" className="list-group-item item-sm">
+                        <LinkClient className="list-group-item item-sm">
                           <span className="material-symbols-rounded o-icon" aria-hidden="true">
                             info
                           </span>
                           <div className="access-content">
                             <span className="access-title">Acceso</span>
                           </div>
-                        </a>
+                        </LinkClient>
                       </div>
                     </div>
                   </div>
@@ -637,9 +633,7 @@ const HighlightedDocs: React.FC = () => {
                         líneas. No puede contener negritas ni enlaces
                       </p>
                       <div className="panel-footer">
-                        <a className="external" rel="noopener noreferrer">
-                          Enlace externo
-                        </a>
+                        <LinkClient className="external">Enlace externo</LinkClient>
                       </div>
                     </div>
                   </div>
@@ -654,14 +648,14 @@ const HighlightedDocs: React.FC = () => {
                         líneas. No puede contener negritas ni enlaces
                       </p>
                       <div className="panel-footer">
-                        <a href="#" className="list-group-item item-sm">
+                        <LinkClient className="list-group-item item-sm">
                           <span className="material-symbols-rounded o-icon" aria-hidden="true">
                             info
                           </span>
                           <div className="access-content">
                             <span className="access-title">Acceso</span>
                           </div>
-                        </a>
+                        </LinkClient>
                       </div>
                     </div>
                   </div>
@@ -736,9 +730,7 @@ const HighlightedDocs: React.FC = () => {
                       negritas ni enlaces.
                     </p>
                     <div className="panel-footer">
-                      <a className="external" rel="noopener noreferrer">
-                        Enlace externo
-                      </a>
+                      <LinkClient className="external">Enlace externo</LinkClient>
                     </div>
                   </div>
                 </div>
@@ -757,14 +749,14 @@ const HighlightedDocs: React.FC = () => {
                       negritas ni enlaces.
                     </p>
                     <div className="panel-footer">
-                      <a href="#" className="list-group-item item-sm">
+                      <LinkClient className="list-group-item item-sm">
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
                           info
                         </span>
                         <div className="access-content">
                           <span className="access-title">Acceso</span>
                         </div>
-                      </a>
+                      </LinkClient>
                     </div>
                   </div>
                 </div>

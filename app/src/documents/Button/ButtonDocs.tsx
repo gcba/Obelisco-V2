@@ -161,20 +161,35 @@ const ButtonDocs: React.FC = () => {
       content: (
         <>
           <CodeBox codeHTML={BUTTON_DISABLED}>
-            <div className="d-flex gap-3 flex-wrap justify-content-center align-items-center px-2">
-              <div>
-                <button type="button" className="btn btn-primary btn-sm" disabled>
-                  Chico
-                </button>
-              </div>
+            <div className="d-flex gap-3 justify-content-center align-items-center flex-wrap px-2">
               <div>
                 <button type="button" className="btn btn-primary" disabled>
-                  Mediano
+                  Primario
                 </button>
               </div>
               <div>
-                <button type="button" className="btn btn-primary btn-lg" disabled>
-                  Grande
+                <button type="button" className="btn btn-secondary" disabled>
+                  Secundario
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-tertiary" disabled>
+                  Terciario
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-success" disabled>
+                  Éxito
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-danger" disabled>
+                  Error
+                </button>
+              </div>
+              <div className="p-2 bg-dark">
+                <button type="button" className="btn btn-light" disabled>
+                  Light
                 </button>
               </div>
             </div>

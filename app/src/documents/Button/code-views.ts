@@ -30,9 +30,12 @@ export const BUTTON_SIZES = `
 <button type="button" class="btn btn-primary btn-lg">Grande</button>
 `;
 export const BUTTON_DISABLED = `
-<button type="button" class="btn btn-primary btn-sm" disabled>Chico</button>
-<button type="button" class="btn btn-primary" disabled>Mediano</button>
-<button type="button" class="btn btn-primary btn-lg" disabled>Grande</button>
+<button type="button" class="btn btn-primary" disabled>Primario</button>
+<button type="button" class="btn btn-secondary" disabled>Secundario</button>
+<button type="button" class="btn btn-tertiary" disabled>Terciario</button>
+<button type="button" class="btn btn-success" disabled>Éxito</button>
+<button type="button" class="btn btn-danger" disabled>Error</button>
+<button type="button" class="btn btn-light" disabled>Light</button>
 `;
 export const BUTTON_BLOCK = `
 <button type="button" class="btn btn-primary btn-block">

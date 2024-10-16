@@ -1,0 +1,66 @@
+/* === Custom variables and mixins === */
+$stepper-circle-size: 0.625rem; // 10px
+$stepper-active-color: $body-color;
+
+/* === Custom styles === */
+
+.stepper-content {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: $light;
+
+  @include media-breakpoint-up(md) {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .stepper {
+    @extend .container;
+
+    .step-title {
+      @extend .h4;
+      margin-bottom: 0.25rem;
+    }
+
+    .step-subtitle {
+      @extend .text-md;
+      margin-bottom: 0.75rem;
+    }
+
+    .steps {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      .steps-items {
+        display: inline-block;
+        line-height: $stepper-circle-size;
+
+        .steps-item {
+          width: $stepper-circle-size;
+          height: $stepper-circle-size;
+          border-radius: 50%;
+          outline: 1px solid $stepper-active-color;
+          outline-offset: -1px;
+          display: inline-block;
+          vertical-align: middle;
+
+          &:not(:last-child) {
+            margin-right: 0.25rem;
+          }
+
+          &.active {
+            background-color: $stepper-active-color;
+            outline: 6px solid transparent;
+            outline-offset: -5px;
+          }
+        }
+      }
+
+      .steps-detail {
+        @extend .text-md;
+        display: inline-block;
+      }
+    }
+  }
+}

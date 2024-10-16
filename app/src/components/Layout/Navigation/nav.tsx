@@ -7,6 +7,8 @@ interface NavItem {
   isDisabled?: boolean;
   url?: string;
   id?: string | number;
+  imgSrc?: string;
+  description?: string;
 }
 
 interface NavProps {

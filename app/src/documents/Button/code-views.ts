@@ -54,37 +54,37 @@ export const BUTTON_SPINNER = `
   <div class="spinner-border text-primary spinner-border-sm" role="status">
     <span class="sr-only">Cargando...</span>
   </div>
-  Botón
+  Cargando
 </button>
 <button type="button" class="btn btn-secondary" disabled>
   <div class="spinner-border text-secondary spinner-border-sm" role="status">
     <span class="sr-only">Cargando...</span>
   </div>
-  Botón
+  Cargando
 </button>
 <button type="button" class="btn btn-tertiary" disabled>
   <div class="spinner-border text-tertiary spinner-border-sm" role="status">
     <span class="sr-only">Cargando...</span>
   </div>
-  Botón
+  Cargando
 </button>
 <button type="button" class="btn btn-success" disabled>
   <div class="spinner-border text-success spinner-border-sm" role="status">
     <span class="sr-only">Cargando...</span>
   </div>
-  Botón
+  Cargando
 </button>
 <button type="button" class="btn btn-danger" disabled>
   <div class="spinner-border text-danger spinner-border-sm" role="status">
     <span class="sr-only">Cargando...</span>
   </div>
-  Botón
+  Cargando
 </button>
 <button type="button" class="btn btn-light" disabled>
   <div class="spinner-border text-light spinner-border-sm" role="status">
     <span class="sr-only">Cargando...</span>
   </div>
-  Botón
+  Cargando
 </button>
 `;
 export const BUTTON_OUTLINE_SPINNER = `
@@ -92,37 +92,37 @@ export const BUTTON_OUTLINE_SPINNER = `
   <div class="spinner-border text-primary spinner-border-sm" role="status">
     <span class="sr-only">Cargando...</span>
   </div>
-  Botón
+  Cargando
 </button>
 <button type="button" class="btn btn-outline-secondary" disabled>
   <div class="spinner-border text-secondary spinner-border-sm" role="status">
     <span class="sr-only">Cargando...</span>
   </div>
-  Botón
+  Cargando
 </button>
 <button type="button" class="btn btn-outline-tertiary" disabled>
   <div class="spinner-border text-tertiary spinner-border-sm" role="status">
     <span class="sr-only">Cargando...</span>
   </div>
-  Botón
+  Cargando
 </button>
 <button type="button" class="btn btn-outline-success" disabled>
   <div class="spinner-border text-success spinner-border-sm" role="status">
     <span class="sr-only">Cargando...</span>
   </div>
-  Botón
+  Cargando
 </button>
 <button type="button" class="btn btn-outline-danger" disabled>
   <div class="spinner-border text-danger spinner-border-sm" role="status">
     <span class="sr-only">Cargando...</span>
   </div>
-  Botón
+  Cargando
 </button>
 <button type="button" class="btn btn-outline-light" disabled>
   <div class="spinner-border text-secondary spinner-border-sm" role="status">
     <span class="sr-only">Cargando...</span>
   </div>
-  Botón
+  Cargando
 </button>
 `;
 export const BUTTON_ICON_XS = `

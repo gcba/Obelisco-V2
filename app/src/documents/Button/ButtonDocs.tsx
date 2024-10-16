@@ -233,38 +233,38 @@ const ButtonDocs: React.FC = () => {
                 <div className="spinner-border text-primary spinner-border-sm" role="status">
                   <span className="sr-only">Cargando...</span>
                 </div>
-                Botón
+                Cargando
               </button>
               <button type="button" className="btn btn-secondary" disabled>
                 <div className="spinner-border text-secondary spinner-border-sm" role="status">
                   <span className="sr-only">Cargando...</span>
                 </div>
-                Botón
+                Cargando
               </button>
               <button type="button" className="btn btn-tertiary" disabled>
                 <div className="spinner-border text-tertiary spinner-border-sm" role="status">
                   <span className="sr-only">Cargando...</span>
                 </div>
-                Botón
+                Cargando
               </button>
               <button type="button" className="btn btn-success" disabled>
                 <div className="spinner-border text-success spinner-border-sm" role="status">
                   <span className="sr-only">Cargando...</span>
                 </div>
-                Botón
+                Cargando
               </button>
               <button type="button" className="btn btn-danger" disabled>
                 <div className="spinner-border text-danger spinner-border-sm" role="status">
                   <span className="sr-only">Cargando...</span>
                 </div>
-                Botón
+                Cargando
               </button>
               <div className="bg-dark p-2">
                 <button type="button" className="btn btn-light" disabled>
                   <div className="spinner-border text-light spinner-border-sm" role="status">
                     <span className="sr-only">Cargando...</span>
                   </div>
-                  Botón
+                  Cargando
                 </button>
               </div>
             </div>
@@ -277,38 +277,38 @@ const ButtonDocs: React.FC = () => {
                 <div className="spinner-border text-primary spinner-border-sm" role="status">
                   <span className="sr-only">Cargando...</span>
                 </div>
-                Botón
+                Cargando
               </button>
               <button type="button" className="btn btn-outline-secondary" disabled>
                 <div className="spinner-border text-secondary spinner-border-sm" role="status">
                   <span className="sr-only">Cargando...</span>
                 </div>
-                Botón
+                Cargando
               </button>
               <button type="button" className="btn btn-outline-tertiary" disabled>
                 <div className="spinner-border text-tertiary spinner-border-sm" role="status">
                   <span className="sr-only">Cargando...</span>
                 </div>
-                Botón
+                Cargando
               </button>
               <button type="button" className="btn btn-outline-success" disabled>
                 <div className="spinner-border text-success spinner-border-sm" role="status">
                   <span className="sr-only">Cargando...</span>
                 </div>
-                Botón
+                Cargando
               </button>
               <button type="button" className="btn btn-outline-danger" disabled>
                 <div className="spinner-border text-danger spinner-border-sm" role="status">
                   <span className="sr-only">Cargando...</span>
                 </div>
-                Botón
+                Cargando
               </button>
               <div className="bg-dark p-2">
                 <button type="button" className="btn btn-light" disabled>
                   <div className="spinner-border text-light spinner-border-sm" role="status">
                     <span className="sr-only">Cargando...</span>
                   </div>
-                  Botón
+                  Cargando
                 </button>
               </div>
             </div>

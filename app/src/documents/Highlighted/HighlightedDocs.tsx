@@ -70,7 +70,7 @@ const HighlightedDocs: React.FC = () => {
                       No puede contener negritas ni enlaces
                     </p>
                     <div className="panel-footer">
-                      <LinkClient className="btn btn-primary btn-lg">
+                      <a className="btn btn-primary btn-lg">
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
                           info
                         </span>
@@ -81,7 +81,7 @@ const HighlightedDocs: React.FC = () => {
                           info
                         </span>
                         Botón
-                      </LinkClient>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -244,7 +244,7 @@ const HighlightedDocs: React.FC = () => {
                       No puede contener negritas ni enlaces
                     </p>
                     <div className="panel-footer">
-                      <LinkClient className="btn btn-primary btn-lg">
+                      <a className="btn btn-primary btn-lg">
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
                           info
                         </span>
@@ -255,7 +255,7 @@ const HighlightedDocs: React.FC = () => {
                           info
                         </span>
                         Botón
-                      </LinkClient>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -283,7 +283,7 @@ const HighlightedDocs: React.FC = () => {
                       No puede contener negritas ni enlaces
                     </p>
                     <div className="panel-footer">
-                      <LinkClient className="btn btn-primary btn-lg">
+                      <a className="btn btn-primary btn-lg">
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
                           info
                         </span>
@@ -294,7 +294,7 @@ const HighlightedDocs: React.FC = () => {
                           info
                         </span>
                         Botón
-                      </LinkClient>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -321,7 +321,7 @@ const HighlightedDocs: React.FC = () => {
                       No puede contener negritas ni enlaces
                     </p>
                     <div className="panel-footer">
-                      <LinkClient className="btn btn-primary btn-lg">
+                      <a className="btn btn-primary btn-lg">
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
                           info
                         </span>
@@ -332,7 +332,7 @@ const HighlightedDocs: React.FC = () => {
                           info
                         </span>
                         Botón
-                      </LinkClient>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -366,7 +366,7 @@ const HighlightedDocs: React.FC = () => {
                       No puede contener negritas ni enlaces
                     </p>
                     <div className="panel-footer">
-                      <LinkClient className="btn btn-primary btn-lg">
+                      <a className="btn btn-primary btn-lg">
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
                           info
                         </span>
@@ -377,7 +377,7 @@ const HighlightedDocs: React.FC = () => {
                           info
                         </span>
                         Botón
-                      </LinkClient>
+                      </a>
                     </div>
                   </div>
                 </div>

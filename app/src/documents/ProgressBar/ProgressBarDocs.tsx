@@ -21,9 +21,14 @@ const ProgressBarDocs: React.FC = () => {
           <MainDescription description="Las barras de progreso muestran visualmente el avance de un proceso de varios pasos a partir de la interacción de la persona usuaria." />
           <p className="lead mb-4">
             Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-            <a href="https://gcba.github.io/estandares/componentes/barra-de-progreso/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://gcba.github.io/estandares/componentes/barra-de-progreso/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               enlace
-            </a>.
+            </a>
+            .
           </p>
         </>
       ),

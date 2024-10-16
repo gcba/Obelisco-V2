@@ -1,4 +1,5 @@
 import CodeBox from '@/components/CodeBox';
+import LinkClient from '@/components/LinkClient';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
@@ -35,16 +36,16 @@ const BreadcrumbDocs: React.FC = () => {
               <nav aria-label="Navegación secundaria">
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
-                    <a href="#">Inicio</a>
+                    <LinkClient>Inicio</LinkClient>
                   </li>
                   <li className="breadcrumb-item">
-                    <a href="#">Página intermedia con mucho mucho texto</a>
+                    <LinkClient>Página intermedia con mucho mucho texto</LinkClient>
                   </li>
                   <li className="breadcrumb-item">
-                    <a href="#">Intermedia</a>
+                    <LinkClient>Intermedia</LinkClient>
                   </li>
                   <li className="breadcrumb-item">
-                    <a href="#">Página anterior</a>
+                    <LinkClient>Página anterior</LinkClient>
                   </li>
                 </ol>
               </nav>

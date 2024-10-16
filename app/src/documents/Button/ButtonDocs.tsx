@@ -1,11 +1,10 @@
-'use client';
-
 import React from 'react';
 
 import CodeBox from '@/components/CodeBox';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
+import LinkClient from '../../components/LinkClient/index';
 import {
   BUTTON_SOLID,
   BUTTON_OUTLINE,
@@ -117,12 +116,8 @@ const ButtonDocs: React.FC = () => {
           </p>
           <CodeBox codeHTML={BUTTON_ANCHOR}>
             <div className="d-flex gap-3 justify-content-center flex-wrap px-2">
-              <a className="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer">
-                Enlace
-              </a>
-              <a className="btn btn-outline-primary" href="#" target="_blank" rel="noopener noreferrer">
-                Enlace
-              </a>
+              <LinkClient className="btn btn-primary">Enlace</LinkClient>
+              <LinkClient className="btn btn-outline-primary">Enlace</LinkClient>
             </div>
           </CodeBox>
         </>

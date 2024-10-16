@@ -1,4 +1,5 @@
 import CodeBox from '@/components/CodeBox';
+import LinkClient from '@/components/LinkClient';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
@@ -276,9 +277,9 @@ const CalendarDocs: React.FC = () => {
                     <tr className="calendar-week">
                       <td></td>
                       <td>
-                        <a href="#" className="calendar-link" title="Nombre del evento.">
+                        <LinkClient className="calendar-link" title="Nombre del evento.">
                           <span className="active active-secondary">1</span>
-                        </a>
+                        </LinkClient>
                       </td>
                       <td>
                         <span>2</span>
@@ -307,9 +308,9 @@ const CalendarDocs: React.FC = () => {
                         <span>9</span>
                       </td>
                       <td>
-                        <a href="#" className="calendar-link" title="Nombre del evento.">
+                        <LinkClient className="calendar-link" title="Nombre del evento.">
                           <span className="active">10</span>
-                        </a>
+                        </LinkClient>
                       </td>
                       <td>
                         <span>11</span>
@@ -358,9 +359,9 @@ const CalendarDocs: React.FC = () => {
                         <span>24</span>
                       </td>
                       <td>
-                        <a href="#" className="calendar-link" title="Nombre del evento.">
+                        <LinkClient className="calendar-link" title="Nombre del evento.">
                           <span className="active">25</span>
-                        </a>
+                        </LinkClient>
                       </td>
                       <td>
                         <span>26</span>

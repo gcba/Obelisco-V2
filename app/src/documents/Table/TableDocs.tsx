@@ -72,7 +72,7 @@ const TableDocs: React.FC = () => {
                         <LinkClient>Enlace predeterminado</LinkClient>
                       </td>
                       <td>
-                        <button type="button" className="btn btn-primary">
+                        <button type="button" className="btn btn-outline-tertiary">
                           Botón
                         </button>
                       </td>
@@ -101,7 +101,7 @@ const TableDocs: React.FC = () => {
                         <LinkClient>Enlace predeterminado</LinkClient>
                       </td>
                       <td>
-                        <button type="button" className="btn btn-primary">
+                        <button type="button" className="btn btn-outline-tertiary">
                           Botón
                         </button>
                       </td>
@@ -130,7 +130,7 @@ const TableDocs: React.FC = () => {
                         <LinkClient>Enlace predeterminado</LinkClient>
                       </td>
                       <td>
-                        <button type="button" className="btn btn-primary">
+                        <button type="button" className="btn btn-outline-tertiary">
                           Botón
                         </button>
                       </td>
@@ -159,7 +159,7 @@ const TableDocs: React.FC = () => {
                         <LinkClient>Enlace predeterminado</LinkClient>
                       </td>
                       <td>
-                        <button type="button" className="btn btn-primary">
+                        <button type="button" className="btn btn-outline-tertiary">
                           Botón
                         </button>
                       </td>
@@ -227,7 +227,7 @@ const TableDocs: React.FC = () => {
                       <LinkClient>Enlace predeterminado</LinkClient>
                     </td>
                     <td>
-                      <button type="button" className="btn btn-primary">
+                      <button type="button" className="btn btn-outline-tertiary">
                         Botón
                       </button>
                     </td>
@@ -256,7 +256,7 @@ const TableDocs: React.FC = () => {
                       <LinkClient>Enlace predeterminado</LinkClient>
                     </td>
                     <td>
-                      <button type="button" className="btn btn-primary">
+                      <button type="button" className="btn btn-outline-tertiary">
                         Botón
                       </button>
                     </td>
@@ -285,7 +285,7 @@ const TableDocs: React.FC = () => {
                       <LinkClient>Enlace predeterminado</LinkClient>
                     </td>
                     <td>
-                      <button type="button" className="btn btn-primary">
+                      <button type="button" className="btn btn-outline-tertiary">
                         Botón
                       </button>
                     </td>
@@ -314,7 +314,7 @@ const TableDocs: React.FC = () => {
                       <LinkClient>Enlace predeterminado</LinkClient>
                     </td>
                     <td>
-                      <button type="button" className="btn btn-primary">
+                      <button type="button" className="btn btn-outline-tertiary">
                         Botón
                       </button>
                     </td>
@@ -381,7 +381,7 @@ const TableDocs: React.FC = () => {
                       <LinkClient>Enlace predeterminado</LinkClient>
                     </td>
                     <td>
-                      <button type="button" className="btn btn-primary">
+                      <button type="button" className="btn btn-outline-tertiary">
                         Botón
                       </button>
                     </td>
@@ -410,7 +410,7 @@ const TableDocs: React.FC = () => {
                       <LinkClient>Enlace predeterminado</LinkClient>
                     </td>
                     <td>
-                      <button type="button" className="btn btn-primary">
+                      <button type="button" className="btn btn-outline-tertiary">
                         Botón
                       </button>
                     </td>
@@ -439,7 +439,7 @@ const TableDocs: React.FC = () => {
                       <LinkClient>Enlace predeterminado</LinkClient>
                     </td>
                     <td>
-                      <button type="button" className="btn btn-primary">
+                      <button type="button" className="btn btn-outline-tertiary">
                         Botón
                       </button>
                     </td>
@@ -468,7 +468,7 @@ const TableDocs: React.FC = () => {
                       <LinkClient>Enlace predeterminado</LinkClient>
                     </td>
                     <td>
-                      <button type="button" className="btn btn-primary">
+                      <button type="button" className="btn btn-outline-tertiary">
                         Botón
                       </button>
                     </td>
@@ -922,7 +922,7 @@ const TableDocs: React.FC = () => {
                     </td>
                     <td>Texto predeterminado</td>
                     <td>
-                      <button type="button" className="btn btn-primary">
+                      <button type="button" className="btn btn-outline-tertiary">
                         Botón
                       </button>
                     </td>
@@ -933,7 +933,7 @@ const TableDocs: React.FC = () => {
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                     <td>
-                      <button type="button" className="btn btn-primary">
+                      <button type="button" className="btn btn-outline-tertiary">
                         Botón
                       </button>
                     </td>
@@ -944,7 +944,7 @@ const TableDocs: React.FC = () => {
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                     <td>
-                      <button type="button" className="btn btn-primary">
+                      <button type="button" className="btn btn-outline-tertiary">
                         Botón
                       </button>
                     </td>
@@ -955,7 +955,7 @@ const TableDocs: React.FC = () => {
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                     <td>
-                      <button type="button" className="btn btn-primary">
+                      <button type="button" className="btn btn-outline-tertiary">
                         Botón
                       </button>
                     </td>

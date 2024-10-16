@@ -52,6 +52,13 @@ o
 <link rel="stylesheet" href="ruta/al/proyecto/dist/styles.css" />
 ```
 
+Si estas utilizando versiones anteriores de webpack, (Webpack 4 o inferiores), el prefijo ~ es necesario:
+
+```sh
+@import "~@gcba/obelisco-v2/dist/styles.css";
+
+```
+
 ### Tipografías
 
 Obelisco requiere las tipografías **Nunito** y **Open sans** disponibles en google fonts, para utilizarlas con su CDN podemos hacerlo de la siguiente forma:

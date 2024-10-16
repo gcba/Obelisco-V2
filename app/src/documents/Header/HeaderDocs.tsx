@@ -67,7 +67,7 @@ const HeaderDocs: React.FC = () => {
                       ></Image>
                     </a>
                     <div className="navbar-login-mobile">
-                      <a className="btn btn-lg btn-icon btn-outline-tertiary" href="#" target="_blank">
+                      <a className="btn btn-lg btn-icon btn-outline-primary" href="#" target="_blank">
                         <span className="material-symbols-rounded" aria-hidden="true">
                           person
                         </span>
@@ -193,7 +193,7 @@ const HeaderDocs: React.FC = () => {
                           </form>
                         </div>
                         <div className="navbar-login">
-                          <a className="btn btn-lg btn-outline-tertiary" href="#" target="_blank">
+                          <a className="btn btn-lg btn-outline-primary" href="#" target="_blank">
                             <span className="material-symbols-rounded" aria-hidden="true">
                               person
                             </span>
@@ -228,7 +228,7 @@ const HeaderDocs: React.FC = () => {
                       ></Image>
                     </a>
                     <div className="navbar-login-mobile">
-                      <a className="btn btn-lg btn-icon btn-outline-tertiary" href="#" target="_blank">
+                      <a className="btn btn-lg btn-icon btn-outline-primary" href="#" target="_blank">
                         <span className="material-symbols-rounded" aria-hidden="true">
                           person
                         </span>
@@ -337,7 +337,7 @@ const HeaderDocs: React.FC = () => {
                           </nav>
                         </div>
                         <div className="navbar-login">
-                          <a className="btn btn-lg btn-outline-tertiary" href="#" target="_blank">
+                          <a className="btn btn-lg btn-outline-primary" href="#" target="_blank">
                             <span className="material-symbols-rounded" aria-hidden="true">
                               person
                             </span>
@@ -378,7 +378,7 @@ const HeaderDocs: React.FC = () => {
                       ></Image>
                     </a>
                     <div className="navbar-login-mobile">
-                      <a className="btn btn-lg btn-icon btn-outline-tertiary" href="#" target="_blank">
+                      <a className="btn btn-lg btn-icon btn-outline-primary" href="#" target="_blank">
                         <span className="material-symbols-rounded" aria-hidden="true">
                           person
                         </span>
@@ -414,7 +414,7 @@ const HeaderDocs: React.FC = () => {
                           </form>
                         </div>
                         <div className="navbar-login">
-                          <a className="btn btn-lg btn-outline-tertiary" href="#" target="_blank">
+                          <a className="btn btn-lg btn-outline-primary" href="#" target="_blank">
                             <span className="material-symbols-rounded" aria-hidden="true">
                               person
                             </span>
@@ -559,7 +559,7 @@ const HeaderDocs: React.FC = () => {
                       ></Image>
                     </a>
                     <div className="navbar-login-mobile">
-                      <a className="btn btn-lg btn-icon btn-outline-tertiary" href="#" target="_blank">
+                      <a className="btn btn-lg btn-icon btn-outline-primary" href="#" target="_blank">
                         <span className="material-symbols-rounded" aria-hidden="true">
                           person
                         </span>
@@ -578,7 +578,7 @@ const HeaderDocs: React.FC = () => {
                     <div className="collapse navbar-collapse" id="navbarContent6">
                       <div className="navbar-content">
                         <div className="navbar-login">
-                          <a className="btn btn-lg btn-outline-tertiary" href="#" target="_blank">
+                          <a className="btn btn-lg btn-outline-primary" href="#" target="_blank">
                             <span className="material-symbols-rounded" aria-hidden="true">
                               person
                             </span>
@@ -1902,7 +1902,7 @@ const HeaderDocs: React.FC = () => {
                       ></Image>
                     </a>
                     <div className="navbar-login-mobile">
-                      <a className="btn btn-lg btn-icon btn-outline-tertiary" href="#" target="_blank">
+                      <a className="btn btn-lg btn-icon btn-outline-primary" href="#" target="_blank">
                         <span className="material-symbols-rounded" aria-hidden="true">
                           person
                         </span>
@@ -1938,7 +1938,7 @@ const HeaderDocs: React.FC = () => {
                           </form>
                         </div>
                         <div className="navbar-login">
-                          <a className="btn btn-lg btn-outline-tertiary" href="#" target="_blank">
+                          <a className="btn btn-lg btn-outline-primary" href="#" target="_blank">
                             <span className="material-symbols-rounded" aria-hidden="true">
                               person
                             </span>
@@ -1973,7 +1973,7 @@ const HeaderDocs: React.FC = () => {
                       ></Image>
                     </a>
                     <div className="navbar-login-mobile">
-                      <a className="btn btn-lg btn-icon btn-outline-tertiary" href="#" target="_blank">
+                      <a className="btn btn-lg btn-icon btn-outline-primary" href="#" target="_blank">
                         <span className="material-symbols-rounded" aria-hidden="true">
                           person
                         </span>
@@ -1983,7 +1983,7 @@ const HeaderDocs: React.FC = () => {
                     <div className="collapse navbar-collapse">
                       <div className="navbar-content">
                         <div className="navbar-login">
-                          <a className="btn btn-lg btn-outline-tertiary" href="#" target="_blank">
+                          <a className="btn btn-lg btn-outline-primary" href="#" target="_blank">
                             <span className="material-symbols-rounded" aria-hidden="true">
                               person
                             </span>

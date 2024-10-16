@@ -18,16 +18,16 @@ export const formsPages = [
 ];
 
 export const organismsPages = [
-  // { text: "Accesos (organismo)", url: "/components/access", id: 1 },
+  { text: 'Accesos (organismo)', url: '/components/access-organism', id: 1 },
   { text: 'Footer (pie de página)', url: '/components/footer', id: 2 },
   { text: 'Header (encabezado)', url: '/components/header', id: 3 },
-  { text: 'Tablas (organismo)', url: '/components/table', id: 4 },
+  { text: 'Tablas', url: '/components/table', id: 4 },
 ];
 export const componentsPages = [
   { text: 'Accesos', url: '/components/access', id: 1 },
   { text: 'Alertas', url: '/components/alert', id: 2 },
   { text: 'Banner', url: '/components/banner', id: 3 },
-  // { text: "Barra de desplazamiento", url: "/components/scrollbar", id: 4 },
+  { text: 'Barra de desplazamiento', url: '/components/scrollbar', id: 4 },
   // { text: "Barra de progreso", url: "/components/progress-bar", id: 5 },
   { text: 'Bloque de trámite', url: '/components/block', id: 6 },
   { text: 'Botones', url: '/components/button', id: 7 },

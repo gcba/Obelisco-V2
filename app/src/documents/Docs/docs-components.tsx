@@ -562,6 +562,20 @@ const UpdateComponents: React.FC = () => {
     },
     {
       id: 'section-24',
+      title: 'Spinner',
+      content: (
+        <ul className="docs-list">
+          <li>
+            Se agrega la variante tertiary en spinner (<code>.text-tertiary</code>).
+          </li>
+          <li>
+            La variante info no forma parte de las variantes de spinner de Obelisco.
+          </li>
+        </ul>
+      ),
+    },
+    {
+      id: 'section-25',
       title: 'Tarjetas',
       content: (
         <ul className="docs-list">
@@ -591,7 +605,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-25',
+      id: 'section-26',
       title: 'Tipografía',
       content: (
         <ul className="docs-list">
@@ -625,7 +639,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-26',
+      id: 'section-27',
       title: 'Accesibilidad',
       content: (
         <ul className="docs-list">
@@ -636,7 +650,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-27',
+      id: 'section-28',
       title: 'Comenzar a usar componentes',
       content: (
         <>

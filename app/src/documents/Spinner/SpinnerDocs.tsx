@@ -6,7 +6,7 @@ import CodeBox from '@/components/CodeBox';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
-import { SPINNER_BLOCK, SPINNER_SIZES, SPINNER_TYPES } from './code-views';
+import { SPINNER_BLOCK, SPINNER_DESCRIPTION, SPINNER_SIZES, SPINNER_TYPES } from './code-views';
 
 const SpinnerDocs: React.FC = () => {
   const sections = [
@@ -44,9 +44,6 @@ const SpinnerDocs: React.FC = () => {
               <span className="sr-only">Cargando...</span>
             </div>
             <div className="spinner-border text-danger" role="status">
-              <span className="sr-only">Cargando...</span>
-            </div>
-            <div className="spinner-border text-info" role="status">
               <span className="sr-only">Cargando...</span>
             </div>
             <div className="px-2 py-1 bg-dark">
@@ -92,8 +89,22 @@ const SpinnerDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-          <br />
-          <br />
+        </>
+      ),
+    },
+    {
+      id: 'section-4',
+      title: 'Con descripción',
+      content: (
+        <>
+          <CodeBox codeHTML={SPINNER_DESCRIPTION}>
+            <div className="text-center">
+              <div className="spinner-border text-primary spinner-border-lg" role="status">
+                <span className="sr-only">Cargando...</span>
+              </div>
+              <p className="spinner-description">Cargando...</p>
+            </div>
+          </CodeBox>
         </>
       ),
     },

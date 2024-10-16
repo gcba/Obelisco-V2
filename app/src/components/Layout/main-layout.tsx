@@ -14,6 +14,7 @@ export const formsPages = [
   { text: 'Buscador', url: '/components/form-search', id: 1 },
   { text: 'Casillas de selección', url: '/components/form-selection', id: 2 },
   { text: 'Formulario de Textos', url: '/components/form-text', id: 3 },
+  { text: 'Pasos de un formulario', url: '/components/steps-form', id: 4 },
 ];
 
 export const organismsPages = [
@@ -49,11 +50,10 @@ export const componentsPages = [
   { text: 'Navegación vertical', url: '/components/nav-vertical', id: 24 },
   { text: 'Paginado', url: '/components/pagination', id: 25 },
   { text: 'Pestañas', url: '/components/tabs', id: 26 },
-  // { text: "Pasos de un formulario", url: "/components/steps-form", id: 27 },
-  { text: 'Spinner', url: '/components/spinner', id: 28 },
-  { text: 'Switch', url: '/components/switch', id: 29 },
-  { text: 'Tarjetas', url: '/components/cards', id: 30 },
-  { text: 'Tooltip', url: '/components/tooltip', id: 31 },
+  { text: 'Spinner', url: '/components/spinner', id: 27 },
+  { text: 'Switch', url: '/components/switch', id: 28 },
+  { text: 'Tarjetas', url: '/components/cards', id: 29 },
+  { text: 'Tooltip', url: '/components/tooltip', id: 30 },
 ];
 
 export const gettingPages = [

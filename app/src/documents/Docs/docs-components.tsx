@@ -116,9 +116,12 @@ const UpdateComponents: React.FC = () => {
             Se crea la clase <code>.btn-xs</code> para los botones que son utilizados dentro de tablas.{' '}
           </li>
           <li>
-            Se crea la clase <code>.btn-tertiary</code>.{' '}
+            Se crea la clase <code>.btn-tertiary</code> y <code>.btn-light</code>.{' '}
           </li>
-          <li>Los botones primary y secondary han cambiado de color.</li>
+          <li>
+            A los botones con spinner se les agrega el atributo <code>disabled</code> y se modifica la variante de
+            spinner.{' '}
+          </li>
         </ul>
       ),
     },

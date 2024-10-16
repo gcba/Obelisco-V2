@@ -37,6 +37,9 @@ const SpinnerDocs: React.FC = () => {
             <div className="spinner-border text-secondary" role="status">
               <span className="sr-only">Cargando...</span>
             </div>
+            <div className="spinner-border text-tertiary" role="status">
+              <span className="sr-only">Cargando...</span>
+            </div>
             <div className="spinner-border text-success" role="status">
               <span className="sr-only">Cargando...</span>
             </div>
@@ -46,8 +49,10 @@ const SpinnerDocs: React.FC = () => {
             <div className="spinner-border text-info" role="status">
               <span className="sr-only">Cargando...</span>
             </div>
-            <div className="spinner-border text-light" role="status">
-              <span className="sr-only">Cargando...</span>
+            <div className="px-2 py-1 bg-dark">
+              <div className="spinner-border text-light d-block" role="status">
+                <span className="sr-only">Cargando...</span>
+              </div>
             </div>
             <div className="spinner-border text-dark" role="status">
               <span className="sr-only">Cargando...</span>

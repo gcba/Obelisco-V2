@@ -223,6 +223,7 @@ $active-color: $blue-700;
 $active-border-color: $blue-800; //#1C345F
 $active-border: 0 0 0 0.125rem $active-color;
 $active-color-danger: $red-600;
+$active-outline: 0.125rem solid $blue-700;
 
 /*  Visited  */
 $visited-color: $purple-700; // #6D0099
@@ -231,6 +232,7 @@ $visited-bg-dark: $purple-200; // #E299FF
 /*  Disabled  */
 $disabled-text: $grisulado-600; // #69788A
 $disabled-bg: $grisulado-400; // #9EAAB8
+$disabled-on-dark: $grisulado-700; // #5C6A7A
 
 /* === Enlace || Style anchor elements. === */
 $link-color: $body-color;

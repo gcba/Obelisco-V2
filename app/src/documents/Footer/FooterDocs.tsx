@@ -51,43 +51,43 @@ const FooterDocs: React.FC = () => {
                   <ul className="list-inline">
                     <li className="list-inline-item redes-items">
                       <a href="https://www.facebook.com/GCBA">
-                        <i className="bx bxl-facebook-circle"></i>
+                        <i className="o-icon bx bxl-facebook-circle"></i>
                         Facebook
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://www.instagram.com/gcba/">
-                        <i className="bx bxl-instagram-alt"></i>
+                        <i className="o-icon bx bxl-instagram-alt"></i>
                         Instagram
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://x.com/gcba">
-                        <i className="bx bxl-twitter"></i>
+                        <i className="o-icon bx bxl-twitter"></i>
                         Twitter
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://www.youtube.com/user/GCBA">
-                        <i className="bx bxl-youtube"></i>
+                        <i className="o-icon bx bxl-youtube"></i>
                         YouTube
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires">
-                        <i className="bx bxl-linkedin-square"></i>
+                        <i className="o-icon bx bxl-linkedin-square"></i>
                         LinkedIn
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://www.tiktok.com/@buenosaires">
-                        <i className="bx bxl-tiktok"></i>
+                        <i className="o-icon bx bxl-tiktok"></i>
                         TikTok
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://www.pinterest.es/buenosaires/">
-                        <i className="bx bxl-pinterest"></i>
+                        <i className="o-icon bx bxl-pinterest"></i>
                         Pinterest
                       </a>
                     </li>
@@ -230,8 +230,8 @@ const FooterDocs: React.FC = () => {
               <div className="container">
                 <h3 className="footer-info-text">¿Te fue útil esta página?</h3>
                 <div className="footer-info-actions">
-                  <button className="btn btn-primary">Sí, me fue útil</button>
-                  <button className="btn btn-secondary">No me sirvió</button>
+                  <button className="btn btn-outline-secondary">Sí, me fue útil</button>
+                  <button className="btn btn-outline-secondary">No me sirvió</button>
                 </div>
               </div>
             </div>
@@ -266,43 +266,43 @@ const FooterDocs: React.FC = () => {
                   <ul className="list-inline">
                     <li className="list-inline-item redes-items">
                       <a href="https://www.facebook.com/GCBA">
-                        <i className="bx bxl-facebook-circle"></i>
+                        <i className="o-icon bx bxl-facebook-circle"></i>
                         Facebook
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://www.instagram.com/gcba/">
-                        <i className="bx bxl-instagram-alt"></i>
+                        <i className="o-icon bx bxl-instagram-alt"></i>
                         Instagram
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://x.com/gcba">
-                        <i className="bx bxl-twitter"></i>
+                        <i className="o-icon bx bxl-twitter"></i>
                         Twitter
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://www.youtube.com/user/GCBA">
-                        <i className="bx bxl-youtube"></i>
+                        <i className="o-icon bx bxl-youtube"></i>
                         YouTube
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires">
-                        <i className="bx bxl-linkedin-square"></i>
+                        <i className="o-icon bx bxl-linkedin-square"></i>
                         LinkedIn
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://www.tiktok.com/@buenosaires">
-                        <i className="bx bxl-tiktok"></i>
+                        <i className="o-icon bx bxl-tiktok"></i>
                         TikTok
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://www.pinterest.es/buenosaires/">
-                        <i className="bx bxl-pinterest"></i>
+                        <i className="o-icon bx bxl-pinterest"></i>
                         Pinterest
                       </a>
                     </li>

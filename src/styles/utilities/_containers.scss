@@ -45,7 +45,7 @@
   }
 }
 
-// Disposición de accesos
+/* ------- Disposición de Accesos ------- */
 
 // 1 Columna
 .access-items-1 {
@@ -72,5 +72,38 @@
   &.row-cols-md-1 {
     @extend .row-cols-md-1;
     @extend .row-cols-xl-4;
+  }
+}
+
+/* ------- Disposición de Tarjetas ------- */
+
+// 2 Columnas
+.card-items-2 {
+  @extend .max-items-2;
+}
+
+// 3 Columnas
+.card-items-3 {
+  @extend .max-items-3;
+}
+
+.card-items-2,
+.card-items-3 {
+  .col .card {
+    height: 100%;
+  }
+}
+
+/* ------- Disposición de Destacado Conjunto ------- */
+
+.highlighted-items-2 {
+  @extend .row;
+  @extend .row-cols-1;
+  @extend .row-cols-xl-2;
+  row-gap: 2rem;
+  @include media-breakpoint-down(xl) {
+    .col {
+      padding: 0;
+    }
   }
 }

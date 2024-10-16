@@ -9,7 +9,7 @@ export const HEADER_LOGIN_ONE_LINE_SEARCH = `
         </a>
         <div class="navbar-login-mobile">
         <a
-            class="btn btn-lg btn-icon btn-outline-link"
+            class="btn btn-lg btn-icon btn-outline-primary"
             href="#"
             target="_blank"
         >
@@ -32,10 +32,10 @@ export const HEADER_LOGIN_ONE_LINE_SEARCH = `
             <nav>
                 <p class="navbar-sections-title">Secciones</p>
                 <ul class="nav nav-pills nav-sections">
-                <li class="dropdown dropdown-lg">
+                <li class="dropdown">
                     <button
                     type="button"
-                    class="btn btn-dropdown"
+                    class="btn btn-dropdown btn-lg"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                     >
@@ -74,10 +74,10 @@ export const HEADER_LOGIN_ONE_LINE_SEARCH = `
                     <span>Navegación</span>
                     </a>
                 </li>
-                <li class="dropdown dropdown-lg">
+                <li class="dropdown">
                     <button
                     type="button"
-                    class="btn btn-dropdown"
+                    class="btn btn-dropdown btn-lg"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                     >
@@ -126,7 +126,7 @@ export const HEADER_LOGIN_ONE_LINE_SEARCH = `
             </div>
             <div class="navbar-login">
             <a
-                class="btn btn-lg btn-outline-link"
+                class="btn btn-lg btn-outline-primary"
                 href="#"
                 target="_blank"
             >
@@ -151,7 +151,7 @@ export const HEADER_LOGIN_ONE_LINE = `
     </a>
     <div class="navbar-login-mobile">
         <a
-        class="btn btn-lg btn-icon btn-outline-link"
+        class="btn btn-lg btn-icon btn-outline-primary"
         href="#"
         target="_blank"
         >
@@ -174,10 +174,10 @@ export const HEADER_LOGIN_ONE_LINE = `
             <nav>
             <p class="navbar-sections-title">Secciones</p>
             <ul class="nav nav-pills nav-sections">
-                <li class="dropdown dropdown-lg">
+                <li class="dropdown">
                 <button
                     type="button"
-                    class="btn btn-dropdown"
+                    class="btn btn-dropdown btn-lg"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                 >
@@ -216,10 +216,10 @@ export const HEADER_LOGIN_ONE_LINE = `
                     <span>Navegación</span>
                 </a>
                 </li>
-                <li class="dropdown dropdown-lg">
+                <li class="dropdown">
                 <button
                     type="button"
-                    class="btn btn-dropdown"
+                    class="btn btn-dropdown btn-lg"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                 >
@@ -258,7 +258,7 @@ export const HEADER_LOGIN_ONE_LINE = `
         </div>
         <div class="navbar-login">
             <a
-            class="btn btn-lg btn-outline-link"
+            class="btn btn-lg btn-outline-primary"
             href="#"
             target="_blank"
             >
@@ -283,7 +283,7 @@ export const HEADER_LOGIN_TWO_LINES_SEARCH = `
         </a>
         <div class="navbar-login-mobile">
         <a
-            class="btn btn-lg btn-icon btn-outline-link"
+            class="btn btn-lg btn-icon btn-outline-primary"
             href="#"
             target="_blank"
         >
@@ -314,7 +314,7 @@ export const HEADER_LOGIN_TWO_LINES_SEARCH = `
             </div>
             <div class="navbar-login">
             <a
-                class="btn btn-lg btn-outline-link"
+                class="btn btn-lg btn-outline-primary"
                 href="#"
                 target="_blank"
             >
@@ -327,10 +327,10 @@ export const HEADER_LOGIN_TWO_LINES_SEARCH = `
             <nav>
             <p class="navbar-sections-title">Secciones</p>
             <ul class="nav nav-pills nav-sections">
-                <li class="dropdown dropdown-lg">
+                <li class="dropdown">
                 <button
                     type="button"
-                    class="btn btn-dropdown"
+                    class="btn btn-dropdown btn-lg"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                 >
@@ -369,10 +369,10 @@ export const HEADER_LOGIN_TWO_LINES_SEARCH = `
                     <span>Navegación</span>
                 </a>
                 </li>
-                <li class="dropdown dropdown-lg">
+                <li class="dropdown">
                 <button
                     type="button"
-                    class="btn btn-dropdown"
+                    class="btn btn-dropdown btn-lg"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                 >
@@ -445,7 +445,7 @@ export const HEADER_LOGIN_TWO_LINES = `
     </a>
     <div class="navbar-login-mobile">
         <a
-        class="btn btn-lg btn-icon btn-outline-link"
+        class="btn btn-lg btn-icon btn-outline-primary"
         href="#"
         target="_blank"
         >
@@ -466,7 +466,7 @@ export const HEADER_LOGIN_TWO_LINES = `
         <div class="navbar-content">
         <div class="navbar-login">
             <a
-            class="btn btn-lg btn-outline-link"
+            class="btn btn-lg btn-outline-primary"
             href="#"
             target="_blank"
             >
@@ -479,10 +479,10 @@ export const HEADER_LOGIN_TWO_LINES = `
         <nav>
             <p class="navbar-sections-title">Secciones</p>
             <ul class="nav nav-pills nav-sections">
-            <li class="dropdown dropdown-lg">
+            <li class="dropdown">
                 <button
                 type="button"
-                class="btn btn-dropdown"
+                class="btn btn-dropdown btn-lg"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
                 >
@@ -521,10 +521,10 @@ export const HEADER_LOGIN_TWO_LINES = `
                 <span>Navegación</span>
                 </a>
             </li>
-            <li class="dropdown dropdown-lg">
+            <li class="dropdown">
                 <button
                 type="button"
-                class="btn btn-dropdown"
+                class="btn btn-dropdown btn-lg"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
                 >
@@ -610,10 +610,10 @@ export const HEADER_ONE_LINE_SEARCH = `
             <nav>
                 <p class="navbar-sections-title">Secciones</p>
                 <ul class="nav nav-pills nav-sections">
-                <li class="dropdown dropdown-lg">
+                <li class="dropdown">
                     <button
                     type="button"
-                    class="btn btn-dropdown"
+                    class="btn btn-dropdown btn-lg"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                     >
@@ -652,10 +652,10 @@ export const HEADER_ONE_LINE_SEARCH = `
                     <span>Navegación</span>
                     </a>
                 </li>
-                <li class="dropdown dropdown-lg">
+                <li class="dropdown">
                     <button
                     type="button"
-                    class="btn btn-dropdown"
+                    class="btn btn-dropdown btn-lg"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                     >
@@ -703,8 +703,8 @@ export const HEADER_ONE_LINE_SEARCH = `
             </form>
             </div>
             <div class="navbar-user">
-            <div class="dropdown dropdown-lg">
-                <button type="button" class="btn btn-dropdown btn-dropdown-border notification" data-bs-toggle="dropdown"  aria-expanded="false">
+            <div class="dropdown">
+                <button type="button" class="btn btn-dropdown btn-lg btn-dropdown-border notification" data-bs-toggle="dropdown"  aria-expanded="false">
                 <span class="material-symbols-rounded" aria-hidden="true">person</span>
                 <span class="btn-dropdown-text ellipsis-1">Perfil</span>
                 </button>
@@ -773,10 +773,10 @@ export const HEADER_ONE_LINE = `
             <nav>
                 <p class="navbar-sections-title">Secciones</p>
                 <ul class="nav nav-pills nav-sections">
-                <li class="dropdown dropdown-lg">
+                <li class="dropdown">
                     <button
                     type="button"
-                    class="btn btn-dropdown"
+                    class="btn btn-dropdown btn-lg"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                     >
@@ -815,10 +815,10 @@ export const HEADER_ONE_LINE = `
                     <span>Navegación</span>
                     </a>
                 </li>
-                <li class="dropdown dropdown-lg">
+                <li class="dropdown">
                     <button
                     type="button"
-                    class="btn btn-dropdown"
+                    class="btn btn-dropdown btn-lg"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                     >
@@ -856,8 +856,8 @@ export const HEADER_ONE_LINE = `
             </nav>
             </div>
             <div class="navbar-user">
-            <div class="dropdown dropdown-lg">
-                <button type="button" class="btn btn-dropdown btn-dropdown-border notification" data-bs-toggle="dropdown"  aria-expanded="false">
+            <div class="dropdown">
+                <button type="button" class="btn btn-dropdown btn-lg btn-dropdown-border notification" data-bs-toggle="dropdown"  aria-expanded="false">
                 <span class="material-symbols-rounded" aria-hidden="true">person</span>
                 <span class="btn-dropdown-text ellipsis-1">Perfil</span>
                 </button>
@@ -933,8 +933,8 @@ export const HEADER_TWO_LINES_SEARCH = `
             </form>
             </div>
             <div class="navbar-user">
-            <div class="dropdown dropdown-lg">
-                <button type="button" class="btn btn-dropdown btn-dropdown-border notification" data-bs-toggle="dropdown"  aria-expanded="false">
+            <div class="dropdown">
+                <button type="button" class="btn btn-dropdown btn-lg btn-dropdown-border notification" data-bs-toggle="dropdown"  aria-expanded="false">
                 <span class="material-symbols-rounded" aria-hidden="true">person</span>
                 <span class="btn-dropdown-text ellipsis-1">Perfil</span>
                 </button>
@@ -958,10 +958,10 @@ export const HEADER_TWO_LINES_SEARCH = `
             <nav>
             <p class="navbar-sections-title">Secciones</p>
             <ul class="nav nav-pills nav-sections">
-                <li class="dropdown dropdown-lg">
+                <li class="dropdown">
                 <button
                     type="button"
-                    class="btn btn-dropdown"
+                    class="btn btn-dropdown btn-lg"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                 >
@@ -1000,10 +1000,10 @@ export const HEADER_TWO_LINES_SEARCH = `
                     <span>Navegación</span>
                 </a>
                 </li>
-                <li class="dropdown dropdown-lg">
+                <li class="dropdown">
                 <button
                     type="button"
-                    class="btn btn-dropdown"
+                    class="btn btn-dropdown btn-lg"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                 >
@@ -1106,8 +1106,8 @@ export const HEADER_TWO_LINES = `
     <div class="collapse navbar-collapse" id="navbarContent8">
         <div class="navbar-content">
         <div class="navbar-user">
-            <div class="dropdown dropdown-lg">
-            <button type="button" class="btn btn-dropdown btn-dropdown-border notification" data-bs-toggle="dropdown"  aria-expanded="false">
+            <div class="dropdown">
+            <button type="button" class="btn btn-dropdown btn-lg btn-dropdown-border notification" data-bs-toggle="dropdown"  aria-expanded="false">
                 <span class="material-symbols-rounded" aria-hidden="true">person</span>
                 <span class="btn-dropdown-text ellipsis-1">Perfil</span>
             </button>
@@ -1131,10 +1131,10 @@ export const HEADER_TWO_LINES = `
         <nav>
             <p class="navbar-sections-title">Secciones</p>
             <ul class="nav nav-pills nav-sections">
-            <li class="dropdown dropdown-lg">
+            <li class="dropdown">
                 <button
                 type="button"
-                class="btn btn-dropdown"
+                class="btn btn-dropdown btn-lg"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
                 >
@@ -1173,10 +1173,10 @@ export const HEADER_TWO_LINES = `
                 <span>Navegación</span>
                 </a>
             </li>
-            <li class="dropdown dropdown-lg">
+            <li class="dropdown">
                 <button
                 type="button"
-                class="btn btn-dropdown"
+                class="btn btn-dropdown btn-lg"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
                 >
@@ -1282,10 +1282,10 @@ export const HEADER_NO_LOGIN_SEARCH = `
             <nav>
             <p class="navbar-sections-title">Secciones</p>
             <ul class="nav nav-pills nav-sections">
-                <li class="dropdown dropdown-lg">
+                <li class="dropdown">
                 <button
                     type="button"
-                    class="btn btn-dropdown"
+                    class="btn btn-dropdown btn-lg"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                 >
@@ -1324,10 +1324,10 @@ export const HEADER_NO_LOGIN_SEARCH = `
                     <span>Navegación</span>
                 </a>
                 </li>
-                <li class="dropdown dropdown-lg">
+                <li class="dropdown">
                 <button
                     type="button"
-                    class="btn btn-dropdown"
+                    class="btn btn-dropdown btn-lg"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                 >
@@ -1404,10 +1404,10 @@ export const HEADER_NO_LOGIN = `
             <nav>
             <p class="navbar-sections-title">Secciones</p>
             <ul class="nav nav-pills nav-sections">
-                <li class="dropdown dropdown-lg">
+                <li class="dropdown">
                 <button
                     type="button"
-                    class="btn btn-dropdown"
+                    class="btn btn-dropdown btn-lg"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                 >
@@ -1446,10 +1446,10 @@ export const HEADER_NO_LOGIN = `
                     <span>Navegación</span>
                 </a>
                 </li>
-                <li class="dropdown dropdown-lg">
+                <li class="dropdown">
                 <button
                     type="button"
-                    class="btn btn-dropdown"
+                    class="btn btn-dropdown btn-lg"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                 >
@@ -1503,7 +1503,7 @@ export const HEADER_ONLY_LOGIN = `
     </a>
     <div class="navbar-login-mobile">
         <a
-        class="btn btn-lg btn-icon btn-outline-link"
+        class="btn btn-lg btn-icon btn-outline-primary"
         href="#"
         target="_blank"
         >
@@ -1515,7 +1515,7 @@ export const HEADER_ONLY_LOGIN = `
         <div class="navbar-content">
         <div class="navbar-login">
             <a
-            class="btn btn-lg btn-outline-link"
+            class="btn btn-lg btn-outline-primary"
             href="#"
             target="_blank"
             >
@@ -1539,7 +1539,7 @@ export const HEADER_ONLY_LOGIN_SEARCH = `
         <img class="header-logo" src="/Obelisco-V2/images/BA.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
     </a>
     <div className="navbar-login-mobile">
-        <a className="btn btn-lg btn-icon btn-outline-link" href="#" target="_blank">
+        <a className="btn btn-lg btn-icon btn-outline-primary" href="#" target="_blank">
         <span className="material-symbols-rounded" aria-hidden="true">
             person
         </span>
@@ -1575,7 +1575,7 @@ export const HEADER_ONLY_LOGIN_SEARCH = `
             </form>
         </div>
         <div className="navbar-login">
-            <a className="btn btn-lg btn-outline-link" href="#" target="_blank">
+            <a className="btn btn-lg btn-outline-primary" href="#" target="_blank">
             <span className="material-symbols-rounded" aria-hidden="true">
                 person
             </span>

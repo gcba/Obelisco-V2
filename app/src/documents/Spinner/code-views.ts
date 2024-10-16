@@ -5,6 +5,9 @@ export const SPINNER_TYPES = `
     <div class="spinner-border text-secondary" role="status">
         <span class="sr-only">Cargando...</span>
     </div>
+    <div class="spinner-border text-tertiary" role="status">
+        <span class="sr-only">Cargando...</span>
+    </div>
     <div class="spinner-border text-success" role="status">
         <span class="sr-only">Cargando...</span>
     </div>

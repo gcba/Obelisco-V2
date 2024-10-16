@@ -1,4 +1,6 @@
-/* === Variable and mixins overides === */
+@use 'sass:math';
+
+/* === Variable and mixins overrides === */
 
 $progression-text-spacing: 0.5rem;
 $progression-subtitle-size: 0.813rem;
@@ -11,13 +13,14 @@ $progression-circle-active-size: 1rem;
 $progression-font-color: $grisulado-300;
 $progression-default-color: $grisulado-50;
 
-$progress-height: 0.25rem;
-$progress-bg: $grisulado-100;
+$progress-height: 0.5rem;
+$progress-bg: $grisulado-200;
 
 /* === Custom styles === */
 .progress {
   outline: 0.125rem solid transparent;
   height: $progress-height;
+  background-color: $progress-bg;
 }
 
 .progress-bar {
@@ -25,7 +28,7 @@ $progress-bg: $grisulado-100;
   outline: 0.25rem solid transparent;
   outline-offset: -2px;
 
-  //Por accesibilidad en Modo Alto Contraste, se agrega color de fondo blanco a la barra de progreso
+  // Por accesibilidad en Modo Alto Contraste, se agrega color de fondo blanco a la barra de progreso
   @media (forced-colors: active) {
     forced-color-adjust: none;
     background-color: white !important; // se agrega !important para sobrescribir los estilos de bg-info y bg-success que tienen !important
@@ -52,8 +55,8 @@ $progress-bg: $grisulado-100;
       width: $progression-circle-size;
       height: $progression-circle-size;
       border-radius: 50%;
-      left: $progression-circle-size / 2;
-      top: $font-size-base / 2;
+      left: math.div($progression-circle-size, 2);
+      top: math.div($font-size-base, 2);
     }
 
     &:not(:last-child)::after {
@@ -63,8 +66,11 @@ $progress-bg: $grisulado-100;
       z-index: -1;
       width: $progression-line-width;
       height: 100%;
-      left: $progression-circle-active-size / 2 - $progression-line-width / 2;
-      top: $progression-circle-size / 2 + $font-size-base / 2;
+      left: math.div($progression-circle-active-size, 2) - math.div(
+          $progression-line-width,
+          2
+        );
+      top: math.div($progression-circle-size, 2) + math.div($font-size-base, 2);
     }
   }
 
@@ -80,7 +86,7 @@ $progress-bg: $grisulado-100;
     }
 
     &::before {
-      top: $line-height-base / 2 - $font-size-base / 2;
+      top: math.div($line-height-base, 2) - math.div($font-size-base, 2);
       width: $progression-circle-active-size;
       height: $progression-circle-active-size;
       left: 0;
@@ -120,13 +126,16 @@ $progress-bg: $grisulado-100;
   }
 
   &-link {
-    margin-left: $progression-padding-left - $btn-padding-x;
+    margin-left: math.div($progression-padding-left - $btn-padding-x, 1);
     @extend .btn, .btn-link;
   }
 }
 
-//ESTAS LINEAS SOBREESCRIBEN A PASOS DE UN FORMULARIO. REVISAR CUANDO SE TOME BARRA DE PROGRESO
-/* .steps {
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-} */
+
+.progress-description {
+  //ESTAS LINEAS SOBREESCRIBEN A PASOS DE UN FORMULARIO. REVISAR CUANDO SE TOME BARRA DE PROGRESO
+  /* .steps {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  } */
+}

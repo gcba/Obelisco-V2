@@ -28,7 +28,7 @@ export const componentsPages = [
   { text: 'Alertas', url: '/components/alert', id: 2 },
   { text: 'Banner', url: '/components/banner', id: 3 },
   { text: 'Barra de desplazamiento', url: '/components/scrollbar', id: 4 },
-  // { text: "Barra de progreso", url: "/components/progress-bar", id: 5 },
+  { text: 'Barra de progreso', url: '/components/progress-bar', id: 5 },
   { text: 'Bloque de trámite', url: '/components/block', id: 6 },
   { text: 'Botones', url: '/components/button', id: 7 },
   { text: 'Calendario', url: '/components/calendar', id: 8 },

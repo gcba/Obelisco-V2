@@ -41,84 +41,84 @@ export const BUTTON_BLOCK = `
 `;
 export const BUTTON_ICON = `
 <button type="button" class="btn btn-primary">
-  <i class="bx bxs-info-circle o-icon"></i> 
+  <i class="bx bx-plus-circle o-icon"></i> 
   Botón
 </button>
 
 <button type="button" class="btn btn-primary" aria-label="Botón">
-  <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">control_point</span>
 </button>
 `;
 export const BUTTON_SPINNER = `
-<button type="button" class="btn btn-primary">
-  <div class="spinner-border text-light spinner-border-sm" role="status">
+<button type="button" class="btn btn-primary" disabled>
+  <div class="spinner-border text-primary spinner-border-sm" role="status">
     <span class="sr-only">Cargando...</span>
   </div>
   Botón
 </button>
-<button type="button" class="btn btn-secondary">
-  <div class="spinner-border text-light spinner-border-sm" role="status">
-    <span class="sr-only">Cargando...</span>
-  </div>
-  Botón
-</button>
-<button type="button" class="btn btn-tertiary">
-  <div class="spinner-border text-info spinner-border-sm" role="status">
-    <span class="sr-only">Cargando...</span>
-  </div>
-  Botón
-</button>
-<button type="button" class="btn btn-success">
-  <div class="spinner-border text-light spinner-border-sm" role="status">
-    <span class="sr-only">Cargando...</span>
-  </div>
-  Botón
-</button>
-<button type="button" class="btn btn-danger">
-  <div class="spinner-border text-light spinner-border-sm" role="status">
-    <span class="sr-only">Cargando...</span>
-  </div>
-  Botón
-</button>
-<button type="button" class="btn btn-light">
+<button type="button" class="btn btn-secondary" disabled>
   <div class="spinner-border text-secondary spinner-border-sm" role="status">
+    <span class="sr-only">Cargando...</span>
+  </div>
+  Botón
+</button>
+<button type="button" class="btn btn-tertiary" disabled>
+  <div class="spinner-border text-tertiary spinner-border-sm" role="status">
+    <span class="sr-only">Cargando...</span>
+  </div>
+  Botón
+</button>
+<button type="button" class="btn btn-success" disabled>
+  <div class="spinner-border text-success spinner-border-sm" role="status">
+    <span class="sr-only">Cargando...</span>
+  </div>
+  Botón
+</button>
+<button type="button" class="btn btn-danger" disabled>
+  <div class="spinner-border text-danger spinner-border-sm" role="status">
+    <span class="sr-only">Cargando...</span>
+  </div>
+  Botón
+</button>
+<button type="button" class="btn btn-light" disabled>
+  <div class="spinner-border text-light spinner-border-sm" role="status">
     <span class="sr-only">Cargando...</span>
   </div>
   Botón
 </button>
 `;
 export const BUTTON_OUTLINE_SPINNER = `
-<button type="button" class="btn btn-outline-primary">
+<button type="button" class="btn btn-outline-primary" disabled>
   <div class="spinner-border text-primary spinner-border-sm" role="status">
     <span class="sr-only">Cargando...</span>
   </div>
   Botón
 </button>
-<button type="button" class="btn btn-outline-secondary">
+<button type="button" class="btn btn-outline-secondary" disabled>
   <div class="spinner-border text-secondary spinner-border-sm" role="status">
     <span class="sr-only">Cargando...</span>
   </div>
   Botón
 </button>
-<button type="button" class="btn btn-outline-tertiary">
-  <div class="spinner-border text-info spinner-border-sm" role="status">
+<button type="button" class="btn btn-outline-tertiary" disabled>
+  <div class="spinner-border text-tertiary spinner-border-sm" role="status">
     <span class="sr-only">Cargando...</span>
   </div>
   Botón
 </button>
-<button type="button" class="btn btn-outline-success">
+<button type="button" class="btn btn-outline-success" disabled>
   <div class="spinner-border text-success spinner-border-sm" role="status">
     <span class="sr-only">Cargando...</span>
   </div>
   Botón
 </button>
-<button type="button" class="btn btn-outline-danger">
+<button type="button" class="btn btn-outline-danger" disabled>
   <div class="spinner-border text-danger spinner-border-sm" role="status">
     <span class="sr-only">Cargando...</span>
   </div>
   Botón
 </button>
-<button type="button" class="btn btn-outline-light">
+<button type="button" class="btn btn-outline-light" disabled>
   <div class="spinner-border text-secondary spinner-border-sm" role="status">
     <span class="sr-only">Cargando...</span>
   </div>

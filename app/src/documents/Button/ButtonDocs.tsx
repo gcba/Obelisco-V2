@@ -209,12 +209,12 @@ const ButtonDocs: React.FC = () => {
           <CodeBox codeHTML={BUTTON_ICON}>
             <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center px-2">
               <button type="button" className="btn btn-primary">
-                <i className="bx bxs-info-circle o-icon"></i>
+                <i className="bx bx-plus-circle o-icon"></i>
                 Botón
               </button>
               <button type="button" className="btn btn-primary" aria-label="Botón">
                 <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                  info
+                  control_point
                 </span>
               </button>
             </div>
@@ -229,39 +229,39 @@ const ButtonDocs: React.FC = () => {
         <>
           <CodeBox codeHTML={BUTTON_SPINNER}>
             <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center px-2">
-              <button type="button" className="btn btn-primary">
-                <div className="spinner-border text-light spinner-border-sm" role="status">
+              <button type="button" className="btn btn-primary" disabled>
+                <div className="spinner-border text-primary spinner-border-sm" role="status">
                   <span className="sr-only">Cargando...</span>
                 </div>
                 Botón
               </button>
-              <button type="button" className="btn btn-secondary">
-                <div className="spinner-border text-light spinner-border-sm" role="status">
+              <button type="button" className="btn btn-secondary" disabled>
+                <div className="spinner-border text-secondary spinner-border-sm" role="status">
                   <span className="sr-only">Cargando...</span>
                 </div>
                 Botón
               </button>
-              <button type="button" className="btn btn-tertiary">
-                <div className="spinner-border text-light spinner-border-sm" role="status">
+              <button type="button" className="btn btn-tertiary" disabled>
+                <div className="spinner-border text-tertiary spinner-border-sm" role="status">
                   <span className="sr-only">Cargando...</span>
                 </div>
                 Botón
               </button>
-              <button type="button" className="btn btn-success">
-                <div className="spinner-border text-light spinner-border-sm" role="status">
+              <button type="button" className="btn btn-success" disabled>
+                <div className="spinner-border text-success spinner-border-sm" role="status">
                   <span className="sr-only">Cargando...</span>
                 </div>
                 Botón
               </button>
-              <button type="button" className="btn btn-danger">
-                <div className="spinner-border text-light spinner-border-sm" role="status">
+              <button type="button" className="btn btn-danger" disabled>
+                <div className="spinner-border text-danger spinner-border-sm" role="status">
                   <span className="sr-only">Cargando...</span>
                 </div>
                 Botón
               </button>
               <div className="bg-dark p-2">
-                <button type="button" className="btn btn-light">
-                  <div className="spinner-border text-secondary spinner-border-sm" role="status">
+                <button type="button" className="btn btn-light" disabled>
+                  <div className="spinner-border text-light spinner-border-sm" role="status">
                     <span className="sr-only">Cargando...</span>
                   </div>
                   Botón
@@ -270,41 +270,42 @@ const ButtonDocs: React.FC = () => {
             </div>
           </CodeBox>
           <br />
+          <p className="headline-md mb-4">Botón con borde y spinner</p>
           <CodeBox codeHTML={BUTTON_OUTLINE_SPINNER}>
             <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center px-2">
-              <button type="button" className="btn btn-outline-primary">
+              <button type="button" className="btn btn-outline-primary" disabled>
                 <div className="spinner-border text-primary spinner-border-sm" role="status">
                   <span className="sr-only">Cargando...</span>
                 </div>
                 Botón
               </button>
-              <button type="button" className="btn btn-outline-secondary">
+              <button type="button" className="btn btn-outline-secondary" disabled>
                 <div className="spinner-border text-secondary spinner-border-sm" role="status">
                   <span className="sr-only">Cargando...</span>
                 </div>
                 Botón
               </button>
-              <button type="button" className="btn btn-outline-tertiary">
-                <div className="spinner-border text-info spinner-border-sm" role="status">
+              <button type="button" className="btn btn-outline-tertiary" disabled>
+                <div className="spinner-border text-tertiary spinner-border-sm" role="status">
                   <span className="sr-only">Cargando...</span>
                 </div>
                 Botón
               </button>
-              <button type="button" className="btn btn-outline-success">
+              <button type="button" className="btn btn-outline-success" disabled>
                 <div className="spinner-border text-success spinner-border-sm" role="status">
                   <span className="sr-only">Cargando...</span>
                 </div>
                 Botón
               </button>
-              <button type="button" className="btn btn-outline-danger">
+              <button type="button" className="btn btn-outline-danger" disabled>
                 <div className="spinner-border text-danger spinner-border-sm" role="status">
                   <span className="sr-only">Cargando...</span>
                 </div>
                 Botón
               </button>
               <div className="bg-dark p-2">
-                <button type="button" className="btn btn-light">
-                  <div className="spinner-border text-secondary spinner-border-sm" role="status">
+                <button type="button" className="btn btn-light" disabled>
+                  <div className="spinner-border text-light spinner-border-sm" role="status">
                     <span className="sr-only">Cargando...</span>
                   </div>
                   Botón

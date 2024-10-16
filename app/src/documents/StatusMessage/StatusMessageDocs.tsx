@@ -18,8 +18,8 @@ const sections = [
             target="_blank"
             rel="noopener noreferrer"
           >
-            enlace.
-          </a>
+            enlace
+          </a>.
         </p>
       </>
     ),
@@ -43,6 +43,9 @@ const sections = [
             </p>
             <button type="button" className="btn btn-primary">
               <i className="bx bxs-info-circle o-icon"></i>
+              Botón
+            </button>
+            <button type="button" className="btn btn-outline-primary">
               Botón
             </button>
           </div>
@@ -71,6 +74,9 @@ const sections = [
             </ul>
             <button type="button" className="btn btn-primary">
               <i className="bx bxs-info-circle o-icon"></i>
+              Botón
+            </button>
+            <button type="button" className="btn btn-outline-primary">
               Botón
             </button>
           </div>
@@ -102,7 +108,6 @@ const sections = [
               Botón
             </button>
             <button type="button" className="btn btn-outline-primary">
-              <i className="bx bxs-info-circle o-icon"></i>
               Botón
             </button>
           </div>
@@ -134,7 +139,6 @@ const sections = [
               Botón
             </button>
             <button type="button" className="btn btn-outline-primary">
-              <i className="bx bxs-info-circle o-icon"></i>
               Botón
             </button>
           </div>
@@ -156,7 +160,10 @@ const sections = [
             </p>
             <button type="button" className="btn btn-primary">
               <i className="bx bxs-info-circle o-icon"></i>
-              Ir al sitio web
+              Botón
+            </button>
+            <button type="button" className="btn btn-outline-primary">
+              Botón
             </button>
           </div>
         </div>

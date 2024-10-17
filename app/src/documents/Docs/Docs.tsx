@@ -107,6 +107,26 @@ const sections = [
       </>
     ),
   },
+  {
+    id: 'section-8',
+    title: 'Documentación de clases',
+    content: (
+      <>
+        <li>
+          <strong>Documentación de clases</strong>: 
+        </li>
+        <div className="col-12 col-lg-7 mt-4 ms-1">
+          <Link href="/documentation/class-documentation" className="list-group-item item-sm">
+            <span className="material-symbols-rounded o-icon">import_contacts</span>
+            <div className="access-content">
+              <span className="access-title">Documentación de clases</span>
+              <p className="access-text">Documentación de clases</p>
+            </div>
+          </Link>
+        </div>
+      </>
+    ),
+  },
 ];
 
 const Docs: React.FC = () => {

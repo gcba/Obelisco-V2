@@ -22,8 +22,8 @@ const SwitchDocs: React.FC = () => {
           <p className="lead mb-4">
             Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
             <a href="https://gcba.github.io/estandares/componentes/switch/" target="_blank" rel="noopener noreferrer">
-              enlace.
-            </a>
+              enlace
+            </a>.
           </p>
         </>
       ),

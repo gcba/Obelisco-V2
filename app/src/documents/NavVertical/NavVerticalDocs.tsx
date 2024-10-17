@@ -27,8 +27,8 @@ const NavVerticalDocs: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              enlace.
-            </a>
+              enlace
+            </a>.
           </p>
         </>
       ),
@@ -56,11 +56,6 @@ const NavVerticalDocs: React.FC = () => {
                     <LinkClient className="nav-link">
                       <span>Link</span>
                     </LinkClient>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link disabled" aria-disabled="true" tabIndex={-1}>
-                      <span>Deshabilitado</span>
-                    </a>
                   </li>
                 </ul>
               </nav>
@@ -101,14 +96,6 @@ const NavVerticalDocs: React.FC = () => {
                         <span>Link</span>
                       </div>
                     </LinkClient>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link disabled" aria-disabled="true" tabIndex={-1}>
-                      <div className="nav-icon">
-                        <i className="bx bxs-user-circle"></i>
-                        <span>Deshabilitado</span>
-                      </div>
-                    </a>
                   </li>
                 </ul>
               </nav>

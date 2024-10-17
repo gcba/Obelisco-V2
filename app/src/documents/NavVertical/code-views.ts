@@ -10,16 +10,6 @@ export const NAV_VERTICAL_SIMPLE = `
       <li class="nav-item">
         <a class="nav-link" href="#"><span>Link</span></a>
       </li>
-      <li class="nav-item">
-        <a
-          class="nav-link disabled"
-          href="#"
-          aria-disabled="true"
-          tabindex="-1"
-        >
-          <span>Deshabilitado</span>
-        </a>
-      </li>
     </ul>
   </nav>
 `;
@@ -47,19 +37,6 @@ export const NAV_VERTICAL_ICON = `
           <div class="nav-icon">
             <i class="bx bxs-user-circle o-icon"></i>
             <span>Link</span>
-          </div>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link disabled"
-          href="#"
-          aria-disabled="true"
-          tabindex="-1"
-        >
-          <div class="nav-icon">
-            <i class="bx bxs-user-circle o-icon"></i>
-            <span>Deshabilitado</span>
           </div>
         </a>
       </li>

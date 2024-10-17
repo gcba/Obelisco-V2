@@ -21,8 +21,8 @@ const sections = [
         <p className="lead mb-4">
           Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
           <a href="https://gcba.github.io/estandares/componentes/navegacion/" target="_blank" rel="noopener noreferrer">
-            enlace.
-          </a>
+            enlace
+          </a>.
         </p>
       </>
     ),
@@ -49,11 +49,6 @@ const sections = [
                 <LinkClient className="nav-link">
                   <span>Link</span>
                 </LinkClient>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link disabled" aria-disabled="true" tabIndex={-1}>
-                  <span>Deshabilitado</span>
-                </a>
               </li>
             </ul>
           </nav>
@@ -94,14 +89,6 @@ const sections = [
                     </div>
                   </LinkClient>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link disabled" aria-disabled="true" tabIndex={-1}>
-                    <div className="nav-icon">
-                      <i className="bx bxs-user-circle"></i>
-                      <span>Deshabilitado</span>
-                    </div>
-                  </a>
-                </li>
               </ul>
             </nav>
           </div>
@@ -134,14 +121,6 @@ const sections = [
                       <i className="bx bxs-user-circle"></i>
                     </div>
                   </LinkClient>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link disabled" aria-disabled="true" tabIndex={-1}>
-                    <div className="nav-icon">
-                      <span>Deshabilitado</span>
-                      <i className="bx bxs-user-circle"></i>
-                    </div>
-                  </a>
                 </li>
               </ul>
             </nav>
@@ -211,14 +190,6 @@ const sections = [
                     <div className="nav-icon">
                       <i className="bx bxs-user-circle"></i>
                       <span>Link</span>
-                    </div>
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link border-link disabled" aria-disabled="true" tabIndex={-1}>
-                    <div className="nav-icon">
-                      <i className="bx bxs-user-circle"></i>
-                      <span>Deshabilitado</span>
                     </div>
                   </a>
                 </li>

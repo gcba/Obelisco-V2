@@ -96,11 +96,11 @@ $switch-focus-shadow: 0 0 0 2px $focus-color;
     }
 
     &:disabled + .slider {
-      background-color: $grisulado-400;
+      background-color: $disabled-bg;
       cursor: not-allowed;
 
       &::before {
-        background-color: $grisulado-600;
+        background-color: $disabled-text;
       }
     }
   }

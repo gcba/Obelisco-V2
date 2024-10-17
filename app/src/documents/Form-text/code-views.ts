@@ -55,7 +55,7 @@ export const INPUT_BLOCK = `
 export const INPUT_DISABLED = `
   <div class="container">
     <div class="col-12 col-lg-6">
-      <label htmlFor="example-five" class="form-label">
+      <label htmlFor="example-five" class="form-label disabled">
         Ejemplo campo de texto
       </label>
       <input
@@ -69,7 +69,7 @@ export const INPUT_DISABLED = `
     </div>
 
     <div class="col-12 col-lg-6">
-      <label htmlFor="example-four" class="form-label">
+      <label htmlFor="example-four" class="form-label disabled">
         Ejemplo campo de numero
       </label>
       <input
@@ -83,7 +83,7 @@ export const INPUT_DISABLED = `
     </div>
 
     <div class="col-12 col-lg-6">
-      <label htmlFor="example-three" class="form-label">
+      <label htmlFor="example-three" class="form-label disabled">
         Ejemplo campo de mail
       </label>
       <input
@@ -97,7 +97,7 @@ export const INPUT_DISABLED = `
     </div>
 
     <div class="col-12 col-lg-6">
-      <label htmlFor="example-two" class="form-label">
+      <label htmlFor="example-two" class="form-label disabled">
         Ejemplo campo de fecha
       </label>
       <input
@@ -111,14 +111,14 @@ export const INPUT_DISABLED = `
     </div>
 
     <div class="col-12 col-lg-6">
-      <label htmlFor="example-one" class="form-label">
+      <label htmlFor="example-one" class="form-label disabled">
         Ejemplo TextArea
       </label>
       <textarea class="form-control" id="example-one" disabled ></textarea>
     </div>
 
     <div class="col-12 col-lg-6">    
-      <label htmlFor="example-disabled-select" class='form-label'>
+      <label htmlFor="example-disabled-select" class='form-label disabled'>
         Ejemplo campo de selección.
       </label>
       <select class="form-control form-select" aria-label="Default select example" disabled>

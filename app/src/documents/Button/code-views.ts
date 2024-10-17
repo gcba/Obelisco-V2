@@ -49,7 +49,7 @@ export const BUTTON_ICON = `
 </button>
 
 <button type="button" class="btn btn-primary" aria-label="Botón">
-  <span class="material-symbols-rounded o-icon" aria-hidden="true">control_point</span>
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">add_circle</span>
 </button>
 `;
 export const BUTTON_SPINNER = `

@@ -21,8 +21,8 @@ const sections = [
         <p className="lead mb-4">
           Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
           <a href="https://gcba.github.io/estandares/componentes/navegacion/" target="_blank" rel="noopener noreferrer">
-            enlace.
-          </a>
+            enlace
+          </a>.
         </p>
       </>
     ),
@@ -50,11 +50,6 @@ const sections = [
                   <span>Link</span>
                 </LinkClient>
               </li>
-              <li className="nav-item">
-                <a className="nav-link disabled" aria-disabled="true" tabIndex={-1}>
-                  <span>Deshabilitado</span>
-                </a>
-              </li>
             </ul>
           </nav>
         </div>
@@ -73,7 +68,7 @@ const sections = [
                 <li className="nav-item">
                   <LinkClient className="nav-link">
                     <div className="nav-icon">
-                      <i className="bx bxs-user-circle"></i>
+                      <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
                       <span>Link</span>
                     </div>
                   </LinkClient>
@@ -81,7 +76,7 @@ const sections = [
                 <li className="nav-item">
                   <a className="nav-link active">
                     <div className="nav-icon">
-                      <i className="bx bxs-user-circle"></i>
+                      <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
                       <span>Activo</span>
                     </div>
                   </a>
@@ -89,18 +84,10 @@ const sections = [
                 <li className="nav-item">
                   <LinkClient className="nav-link">
                     <div className="nav-icon">
-                      <i className="bx bxs-user-circle"></i>
+                      <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
                       <span>Link</span>
                     </div>
                   </LinkClient>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link disabled" aria-disabled="true" tabIndex={-1}>
-                    <div className="nav-icon">
-                      <i className="bx bxs-user-circle"></i>
-                      <span>Deshabilitado</span>
-                    </div>
-                  </a>
                 </li>
               </ul>
             </nav>
@@ -115,7 +102,7 @@ const sections = [
                   <LinkClient className="nav-link">
                     <div className="nav-icon">
                       <span>Link</span>
-                      <i className="bx bxs-user-circle"></i>
+                      <span className="material-symbols-rounded o-icon" aria-label="hidden">arrow_forward</span>
                     </div>
                   </LinkClient>
                 </li>
@@ -123,7 +110,7 @@ const sections = [
                   <a className="nav-link active">
                     <div className="nav-icon">
                       <span>Activo</span>
-                      <i className="bx bxs-user-circle"></i>
+                      <span className="material-symbols-rounded o-icon" aria-label="hidden">arrow_forward</span>
                     </div>
                   </a>
                 </li>
@@ -131,17 +118,9 @@ const sections = [
                   <LinkClient className="nav-link">
                     <div className="nav-icon">
                       <span>Link</span>
-                      <i className="bx bxs-user-circle"></i>
+                      <span className="material-symbols-rounded o-icon" aria-label="hidden">arrow_forward</span>
                     </div>
                   </LinkClient>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link disabled" aria-disabled="true" tabIndex={-1}>
-                    <div className="nav-icon">
-                      <span>Deshabilitado</span>
-                      <i className="bx bxs-user-circle"></i>
-                    </div>
-                  </a>
                 </li>
               </ul>
             </nav>
@@ -193,7 +172,7 @@ const sections = [
                 <li className="nav-item">
                   <a className="nav-link border-link">
                     <div className="nav-icon">
-                      <i className="bx bxs-user-circle"></i>
+                      <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
                       <span>Link</span>
                     </div>
                   </a>
@@ -201,7 +180,7 @@ const sections = [
                 <li className="nav-item">
                   <a className="nav-link border-link active">
                     <div className="nav-icon">
-                      <i className="bx bxs-user-circle"></i>
+                      <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
                       <span>Activo</span>
                     </div>
                   </a>
@@ -209,16 +188,8 @@ const sections = [
                 <li className="nav-item">
                   <a className="nav-link border-link">
                     <div className="nav-icon">
-                      <i className="bx bxs-user-circle"></i>
+                      <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
                       <span>Link</span>
-                    </div>
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link border-link disabled" aria-disabled="true" tabIndex={-1}>
-                    <div className="nav-icon">
-                      <i className="bx bxs-user-circle"></i>
-                      <span>Deshabilitado</span>
                     </div>
                   </a>
                 </li>

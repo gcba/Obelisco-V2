@@ -48,6 +48,8 @@ nav {
         &.disabled,
         &:disabled {
           color: $disabled-text;
+          background-color: $disabled-bg;
+          outline-color: $disabled-bg;
         }
 
         &:visited {

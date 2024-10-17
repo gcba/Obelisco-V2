@@ -43,22 +43,6 @@ export const TABS_SIMPLE = `
           Pestaña 3
         </button>
       </li>
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link disabled"
-          disabled
-          tabIndex={-1}
-          data-bs-toggle="tab"
-          data-bs-target="#panel-content-4"
-          type="button"
-          role="tab"
-          aria-controls="panel-content-4"
-          aria-selected="false"
-          id="tab-4"
-        >
-          Pestaña 4
-        </button>
-      </li>
     </ul>
   </nav>
   <div class="tab-content" id="simple-myTabContent">
@@ -70,9 +54,6 @@ export const TABS_SIMPLE = `
     </div>
     <div class="tab-pane fade show active" id="panel-content-3" role="tabpanel" aria-labelledby="tab-3">
       Contenido Pestaña 3
-    </div>
-    <div class="tab-pane fade" id="panel-content-4" role="tabpanel" aria-labelledby="tab-4">
-      Contenido Pestaña 4
     </div>
   </div>
 `;
@@ -123,27 +104,9 @@ export const TABS_SIMPLE_ICON = `
           aria-controls="panel-icon-content-3"
           aria-selected="false"
           id="tab-icon-3"
-          disabled
         >
           <div class="nav-icon">
             <span>Pestaña 3</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
-          </div>
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link"
-          data-bs-toggle="tab"
-          data-bs-target="#panel-icon-content-4"
-          type="button"
-          role="tab"
-          aria-controls="panel-icon-content-4"
-          aria-selected="false"
-          id="tab-icon-4"
-        >
-          <div class="nav-icon">
-            <span>Pestaña 4</span>
             <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
           </div>
         </button>
@@ -164,9 +127,6 @@ export const TABS_SIMPLE_ICON = `
     </div>
     <div class="tab-pane fade" id="panel-icon-content-3" role="tabpanel" aria-labelledby="tab-icon-3">
       Contenido Pestaña 3
-    </div>
-    <div class="tab-pane fade" id="panel-icon-content-4" role="tabpanel" aria-labelledby="tab-icon-4">
-      Contenido Pestaña 4
     </div>
   </div>
 `;
@@ -217,27 +177,9 @@ export const TABS_FIXED_WIDTH = `
           aria-controls="panel-width-content-3"
           aria-selected="false"
           id="tab-width-3"
-          disabled
         >
           <div class="nav-icon">
             <span>Pestaña 3</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
-          </div>
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link"
-          data-bs-toggle="tab"
-          data-bs-target="#panel-width-content-4"
-          type="button"
-          role="tab"
-          aria-controls="panel-width-content-4"
-          aria-selected="false"
-          id="tab-width-4"
-        >
-          <div class="nav-icon">
-            <span>Pestaña 4</span>
             <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
           </div>
         </button>
@@ -258,9 +200,6 @@ export const TABS_FIXED_WIDTH = `
     </div>
     <div class="tab-pane fade" id="panel-width-content-3" role="tabpanel" aria-labelledby="tab-width-3">
       Contenido Pestaña 3
-    </div>
-    <div class="tab-pane fade" id="panel-width-content-4" role="tabpanel" aria-labelledby="tab-width-4">
-      Contenido Pestaña 4
     </div>
   </div>
 `;
@@ -311,27 +250,9 @@ export const TABS_CONTAINER = `
           aria-controls="panel-bg-content-3"
           aria-selected="false"
           id="tab-bg-3"
-          disabled
         >
           <div class="nav-icon">
-              <span>Pestaña 3</span>
-              <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
-          </div>
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link"
-          data-bs-toggle="tab"
-          data-bs-target="#panel-bg-content-4"
-          type="button"
-          role="tab"
-          aria-controls="panel-bg-content-4"
-          aria-selected="false"
-          id="tab-bg-4"
-        >
-          <div class="nav-icon">
-            <span>Pestaña 4</span>
+            <span>Pestaña 3</span>
             <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
           </div>
         </button>
@@ -352,9 +273,6 @@ export const TABS_CONTAINER = `
     </div>
     <div class="tab-pane fade" id="panel-bg-content-3" role="tabpanel" aria-labelledby="tab-bg-3">
       Contenido Pestaña 3
-    </div>
-    <div class="tab-pane fade" id="panel-bg-content-4" role="tabpanel" aria-labelledby="tab-bg-4">
-      Contenido Pestaña 4
     </div>
   </div>
 `;
@@ -844,27 +762,9 @@ export const TABS_WITH_BOX = `
           aria-controls="unique-content-3"
           aria-selected="false"
           id="unique-tab-3"
-          disabled
         >
           <div class="nav-icon">
             <span>Pestaña 3</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
-          </div>
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button
-          class="nav-link"
-          data-bs-toggle="tab"
-          data-bs-target="#unique-content-4"
-          type="button"
-          role="tab"
-          aria-controls="unique-content-4"
-          aria-selected="false"
-          id="unique-tab-4"
-        >
-          <div class="nav-icon">
-            <span>Pestaña 4</span>
             <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
           </div>
         </button>
@@ -885,9 +785,6 @@ export const TABS_WITH_BOX = `
     </div>
     <div class="tab-pane fade" id="unique-content-3" role="tabpanel" aria-labelledby="unique-tab-3">
       Contenido Pestaña 3
-    </div>
-    <div class="tab-pane fade" id="unique-content-4" role="tabpanel" aria-labelledby="unique-tab-4">
-      Contenido Pestaña 4
     </div>
   </div>
 </div>
@@ -1012,7 +909,7 @@ export const TABS_MEDIUM = `
         id="tab-medium-1"
       >
         <div class="nav-icon">
-          <span>Pestaña grande 1</span>
+          <span>Pestaña mediana 1</span>
           <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
         </div>
       </button>
@@ -1029,7 +926,7 @@ export const TABS_MEDIUM = `
         id="tab-medium-2"
       >
         <div class="nav-icon">
-          <span>Pestaña grande 2</span>
+          <span>Pestaña mediana 2</span>
           <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
         </div>
       </button>
@@ -1064,7 +961,7 @@ export const TABS_MEDIUM = `
         id="tab-medium-cont-1"
       >
         <div class="nav-icon">
-          <span>Pestaña grande 1</span>
+          <span>Pestaña mediana 1</span>
           <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
         </div>
       </button>
@@ -1081,7 +978,7 @@ export const TABS_MEDIUM = `
         id="tab-medium-cont-2"
       >
         <div class="nav-icon">
-          <span>Pestaña grande 2</span>
+          <span>Pestaña mediana 2</span>
           <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
         </div>
       </button>
@@ -1117,7 +1014,7 @@ export const TABS_SMALL = `
         id="tab-small-1"
       >
         <div class="nav-icon">
-          <span>Pestaña grande 1</span>
+          <span>Pestaña chica 1</span>
           <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
         </div>
       </button>
@@ -1134,7 +1031,7 @@ export const TABS_SMALL = `
         id="tab-small-2"
       >
         <div class="nav-icon">
-          <span>Pestaña grande 2</span>
+          <span>Pestaña chica 2</span>
           <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
         </div>
       </button>
@@ -1169,7 +1066,7 @@ export const TABS_SMALL = `
         id="tab-small-cont-1"
       >
         <div class="nav-icon">
-          <span>Pestaña grande 1</span>
+          <span>Pestaña chica 1</span>
           <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
         </div>
       </button>
@@ -1186,7 +1083,7 @@ export const TABS_SMALL = `
         id="tab-small-cont-2"
       >
         <div class="nav-icon">
-          <span>Pestaña grande 2</span>
+          <span>Pestaña chica 2</span>
           <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
         </div>
       </button>

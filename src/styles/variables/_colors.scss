@@ -227,11 +227,11 @@ $active-outline: 0.125rem solid $blue-700;
 
 /*  Visited  */
 $visited-color: $purple-700; // #6D0099
-$visited-bg-dark: $purple-200; // #E299FF
+$visited-ondark: $purple-200; // #E299FF
 
 /*  Disabled  */
-$disabled-text: $grisulado-600; // #69788A
-$disabled-bg: $grisulado-400; // #9EAAB8
+$disabled-text: $grisulado-400; // #9EAAB8
+$disabled-bg: $grisulado-100; // #e6ebf0;
 $disabled-on-dark: $grisulado-700; // #5C6A7A
 
 /* === Enlace || Style anchor elements. === */

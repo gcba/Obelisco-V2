@@ -224,7 +224,7 @@ const ButtonDocs: React.FC = () => {
               </button>
               <button type="button" className="btn btn-primary" aria-label="Botón">
                 <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                  control_point
+                add_circle
                 </span>
               </button>
             </div>

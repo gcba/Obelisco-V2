@@ -73,7 +73,7 @@ export const TABS_SIMPLE_ICON = `
         >
           <div class="nav-icon">
             <span>Pestaña 1</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
           </div>
         </button>
       </li>
@@ -90,7 +90,7 @@ export const TABS_SIMPLE_ICON = `
         >
           <div class="nav-icon">
             <span>Pestaña 2</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
           </div>
         </button>
       </li>
@@ -107,7 +107,7 @@ export const TABS_SIMPLE_ICON = `
         >
           <div class="nav-icon">
             <span>Pestaña 3</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
           </div>
         </button>
       </li>
@@ -130,6 +130,79 @@ export const TABS_SIMPLE_ICON = `
     </div>
   </div>
 `;
+export const TABS_SIMPLE_ICON_LEFT = `
+  <nav class="tabs-box" aria-label="Navegación por pestañas">
+    <ul class="nav nav-pills tabs" id="icon-myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link active"
+          data-bs-toggle="tab"
+          data-bs-target="#panel-icon-left-content-1"
+          type="button"
+          role="tab"
+          aria-controls="panel-icon-left-content-1"
+          aria-selected="true"
+          id="tab-icon-left-1"
+        >
+          <div class="nav-icon">
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">insert_drive_file</span>
+            <span>Pestaña 1</span>
+          </div>
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          data-bs-toggle="tab"
+          data-bs-target="#panel-icon-left-content-2"
+          type="button"
+          role="tab"
+          aria-controls="panel-icon-left-content-2"
+          aria-selected="false"
+          id="tab-icon-left-2"
+        >
+          <div class="nav-icon">
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">insert_drive_file</span>
+            <span>Pestaña 2</span>
+          </div>
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          data-bs-toggle="tab"
+          data-bs-target="#panel-icon-left-content-3"
+          type="button"
+          role="tab"
+          aria-controls="panel-icon-left-content-3"
+          aria-selected="false"
+          id="tab-icon-left-3"
+        >
+          <div class="nav-icon">
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">insert_drive_file</span>
+            <span>Pestaña 3</span>
+          </div>
+        </button>
+      </li>
+    </ul>
+  </nav>
+  <div class="tab-content" id="icon-myTabContent">
+    <div
+      class="tab-pane fade show active"
+      id="panel-icon-left-content-1"
+      role="tabpanel"
+      aria-labelledby="tab-icon-left-1"
+    >
+      Contenido Pestaña 1
+    </div>
+    <div class="tab-pane fade" id="panel-icon-left-content-2" role="tabpanel" aria-labelledby="tab-icon-left-2">
+      Contenido Pestaña 2
+    </div>
+    <div class="tab-pane fade" id="panel-icon-left-content-3" role="tabpanel" aria-labelledby="tab-icon-left-3">
+      Contenido Pestaña 3
+    </div>
+  </div>
+`;
 export const TABS_FIXED_WIDTH = `
   <nav class="tabs-box" aria-label="Navegación por pestañas">
     <ul class="nav nav-pills tabs fixed-width" id="icon-myTab" role="tablist">
@@ -146,7 +219,7 @@ export const TABS_FIXED_WIDTH = `
         >
           <div class="nav-icon">
             <span>Pestaña 1</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
           </div>
         </button>
       </li>
@@ -163,7 +236,7 @@ export const TABS_FIXED_WIDTH = `
         >
           <div class="nav-icon">
             <span>Pestaña 2</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
           </div>
         </button>
       </li>
@@ -180,7 +253,7 @@ export const TABS_FIXED_WIDTH = `
         >
           <div class="nav-icon">
             <span>Pestaña 3</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
           </div>
         </button>
       </li>
@@ -219,7 +292,7 @@ export const TABS_CONTAINER = `
         >
           <div class="nav-icon">
             <span>Pestaña 1</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
           </div>
         </button>
       </li>
@@ -236,7 +309,7 @@ export const TABS_CONTAINER = `
         >
           <div class="nav-icon">
             <span>Pestaña 2</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
           </div>
         </button>
       </li>
@@ -253,7 +326,7 @@ export const TABS_CONTAINER = `
         >
           <div class="nav-icon">
             <span>Pestaña 3</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
           </div>
         </button>
       </li>
@@ -298,7 +371,7 @@ export const TABS_SLIDER = `
         >
           <div class="nav-icon">
             <span>Pestaña 1</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
           </div>
         </button>
       </li>
@@ -315,7 +388,7 @@ export const TABS_SLIDER = `
         >
           <div class="nav-icon">
             <span>Pestaña 2</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
           </div>
         </button>
       </li>
@@ -332,7 +405,7 @@ export const TABS_SLIDER = `
         >
           <div class="nav-icon">
             <span>Pestaña 3</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
           </div>
         </button>
       </li>
@@ -349,7 +422,7 @@ export const TABS_SLIDER = `
         >
           <div class="nav-icon">
             <span>Pestaña 4</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
           </div>
         </button>
       </li>
@@ -366,7 +439,7 @@ export const TABS_SLIDER = `
         >
           <div class="nav-icon">
             <span>Pestaña 5</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
           </div>
         </button>
       </li>
@@ -383,7 +456,7 @@ export const TABS_SLIDER = `
         >
           <div class="nav-icon">
             <span>Pestaña 6</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
           </div>
         </button>
       </li>
@@ -400,7 +473,7 @@ export const TABS_SLIDER = `
         >
           <div class="nav-icon">
             <span>Pestaña 7</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
           </div>
         </button>
       </li>
@@ -417,7 +490,7 @@ export const TABS_SLIDER = `
         >
           <div class="nav-icon">
             <span>Pestaña 8</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
           </div>
         </button>
       </li>
@@ -434,7 +507,7 @@ export const TABS_SLIDER = `
         >
           <div class="nav-icon">
             <span>Pestaña 9</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
           </div>
         </button>
       </li>
@@ -451,7 +524,7 @@ export const TABS_SLIDER = `
         >
           <div class="nav-icon">
             <span>Pestaña 10</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
           </div>
         </button>
       </li>
@@ -516,7 +589,7 @@ export const TABS_SLIDER_CONTAINER = `
         >
           <div class="nav-icon">
             <span>Pestaña 1</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
           </div>
         </button>
       </li>
@@ -533,7 +606,7 @@ export const TABS_SLIDER_CONTAINER = `
         >
           <div class="nav-icon">
             <span>Pestaña 2</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
           </div>
         </button>
       </li>
@@ -550,7 +623,7 @@ export const TABS_SLIDER_CONTAINER = `
         >
           <div class="nav-icon">
             <span>Pestaña 3</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
           </div>
         </button>
       </li>
@@ -567,7 +640,7 @@ export const TABS_SLIDER_CONTAINER = `
         >
           <div class="nav-icon">
             <span>Pestaña 4</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
           </div>
         </button>
       </li>
@@ -584,7 +657,7 @@ export const TABS_SLIDER_CONTAINER = `
         >
           <div class="nav-icon">
             <span>Pestaña 5</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
           </div>
         </button>
       </li>
@@ -601,7 +674,7 @@ export const TABS_SLIDER_CONTAINER = `
         >
           <div class="nav-icon">
             <span>Pestaña 6</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
           </div>
         </button>
       </li>
@@ -618,7 +691,7 @@ export const TABS_SLIDER_CONTAINER = `
         >
           <div class="nav-icon">
             <span>Pestaña 7</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
           </div>
         </button>
       </li>
@@ -635,7 +708,7 @@ export const TABS_SLIDER_CONTAINER = `
         >
           <div class="nav-icon">
             <span>Pestaña 8</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
           </div>
         </button>
       </li>
@@ -652,7 +725,7 @@ export const TABS_SLIDER_CONTAINER = `
         >
           <div class="nav-icon">
             <span>Pestaña 9</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
           </div>
         </button>
       </li>
@@ -669,7 +742,7 @@ export const TABS_SLIDER_CONTAINER = `
         >
           <div class="nav-icon">
             <span>Pestaña 10</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
           </div>
         </button>
       </li>
@@ -731,7 +804,7 @@ export const TABS_WITH_BOX = `
         >
           <div class="nav-icon">
             <span>Pestaña 1</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
           </div>
         </button>
       </li>
@@ -748,7 +821,7 @@ export const TABS_WITH_BOX = `
         >
           <div class="nav-icon">
             <span>Pestaña 2</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
           </div>
         </button>
       </li>
@@ -765,7 +838,7 @@ export const TABS_WITH_BOX = `
         >
           <div class="nav-icon">
             <span>Pestaña 3</span>
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+            <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
           </div>
         </button>
       </li>
@@ -805,7 +878,7 @@ export const TABS_LARGE = `
       >
         <div class="nav-icon">
           <span>Pestaña grande 1</span>
-          <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+          <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
         </div>
       </button>
     </li>
@@ -822,7 +895,7 @@ export const TABS_LARGE = `
       >
         <div class="nav-icon">
           <span>Pestaña grande 2</span>
-          <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+          <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
         </div>
       </button>
     </li>
@@ -857,7 +930,7 @@ export const TABS_LARGE = `
       >
         <div class="nav-icon">
           <span>Pestaña grande 1</span>
-          <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+          <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
         </div>
       </button>
     </li>
@@ -874,7 +947,7 @@ export const TABS_LARGE = `
       >
         <div class="nav-icon">
           <span>Pestaña grande 2</span>
-          <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+          <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
         </div>
       </button>
     </li>
@@ -910,7 +983,7 @@ export const TABS_MEDIUM = `
       >
         <div class="nav-icon">
           <span>Pestaña mediana 1</span>
-          <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+          <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
         </div>
       </button>
     </li>
@@ -927,7 +1000,7 @@ export const TABS_MEDIUM = `
       >
         <div class="nav-icon">
           <span>Pestaña mediana 2</span>
-          <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+          <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
         </div>
       </button>
     </li>
@@ -962,7 +1035,7 @@ export const TABS_MEDIUM = `
       >
         <div class="nav-icon">
           <span>Pestaña mediana 1</span>
-          <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+          <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
         </div>
       </button>
     </li>
@@ -979,7 +1052,7 @@ export const TABS_MEDIUM = `
       >
         <div class="nav-icon">
           <span>Pestaña mediana 2</span>
-          <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+          <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
         </div>
       </button>
     </li>
@@ -1015,7 +1088,7 @@ export const TABS_SMALL = `
       >
         <div class="nav-icon">
           <span>Pestaña chica 1</span>
-          <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+          <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
         </div>
       </button>
     </li>
@@ -1032,7 +1105,7 @@ export const TABS_SMALL = `
       >
         <div class="nav-icon">
           <span>Pestaña chica 2</span>
-          <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+          <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
         </div>
       </button>
     </li>
@@ -1067,7 +1140,7 @@ export const TABS_SMALL = `
       >
         <div class="nav-icon">
           <span>Pestaña chica 1</span>
-          <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+          <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
         </div>
       </button>
     </li>
@@ -1084,7 +1157,7 @@ export const TABS_SMALL = `
       >
         <div class="nav-icon">
           <span>Pestaña chica 2</span>
-          <span class="material-symbols-rounded o-icon" aria-hidden="true">home</span>
+          <span class="material-symbols-rounded o-icon" aria-hidden="true">description</span>
         </div>
       </button>
     </li>

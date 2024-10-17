@@ -31,8 +31,8 @@ const sections = [
             target="_blank"
             rel="noopener noreferrer"
           >
-            enlace.
-          </a>
+            enlace
+          </a>.
         </p>
       </>
     ),
@@ -63,9 +63,7 @@ const sections = [
               aria-expanded="false"
               data-bs-auto-close="outside"
             >
-              <span className="material-symbols-rounded o-icon" aria-label="hidden">
-                person
-              </span>
+              <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
               <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
               <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
                 expand_more
@@ -136,9 +134,7 @@ const sections = [
               aria-expanded="false"
               data-bs-auto-close="outside"
             >
-              <span className="material-symbols-rounded o-icon" aria-label="hidden">
-                person
-              </span>
+              <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
               <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
               <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
                 expand_more
@@ -209,9 +205,7 @@ const sections = [
               aria-expanded="false"
               data-bs-auto-close="outside"
             >
-              <span className="material-symbols-rounded o-icon" aria-label="hidden">
-                person
-              </span>
+              <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
               <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
               <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
                 expand_more
@@ -286,9 +280,7 @@ const sections = [
               aria-expanded="false"
               data-bs-auto-close="outside"
             >
-              <span className="material-symbols-rounded o-icon" aria-label="hidden">
-                person
-              </span>
+              <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
               <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
               <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
                 expand_more
@@ -359,9 +351,7 @@ const sections = [
               aria-expanded="false"
               data-bs-auto-close="outside"
             >
-              <span className="material-symbols-rounded o-icon" aria-label="hidden">
-                person
-              </span>
+              <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
               <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
               <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
                 expand_more
@@ -432,9 +422,7 @@ const sections = [
               aria-expanded="false"
               data-bs-auto-close="outside"
             >
-              <span className="material-symbols-rounded o-icon" aria-label="hidden">
-                person
-              </span>
+              <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
               <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
               <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
                 expand_more
@@ -509,9 +497,7 @@ const sections = [
                 data-bs-auto-close="outside"
                 id="btnDropdownCheckboxJs"
               >
-                <span className="material-symbols-rounded o-icon" aria-label="hidden">
-                  person
-                </span>
+                <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
                 <span className="btn-dropdown-text ellipsis-1">
                   Desplegable
                   <span id="counterDropdownCheckboxJs"></span>
@@ -577,9 +563,7 @@ const sections = [
                 data-bs-auto-close="outside"
                 id="btnDropdownRadioJs"
               >
-                <span className="material-symbols-rounded o-icon" aria-label="hidden">
-                  person
-                </span>
+                <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
                 <span className="btn-dropdown-text ellipsis-1" id="btnDropdownRadioTextJs">
                   Desplegable
                 </span>

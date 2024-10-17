@@ -13,6 +13,7 @@ import {
   TABS_LARGE,
   TABS_MEDIUM,
   TABS_SMALL,
+  TABS_SIMPLE_ICON_LEFT,
 } from './code-views';
 
 const TabsDocs: React.FC = () => {
@@ -129,7 +130,7 @@ const TabsDocs: React.FC = () => {
                       <div className="nav-icon">
                         <span>Pestaña 1</span>
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          home
+                          description
                         </span>
                       </div>
                     </button>
@@ -148,7 +149,7 @@ const TabsDocs: React.FC = () => {
                       <div className="nav-icon">
                         <span>Pestaña 2</span>
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          home
+                          description
                         </span>
                       </div>
                     </button>
@@ -167,7 +168,7 @@ const TabsDocs: React.FC = () => {
                       <div className="nav-icon">
                         <span>Pestaña 3</span>
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          home
+                          description
                         </span>
                       </div>
                     </button>
@@ -187,6 +188,83 @@ const TabsDocs: React.FC = () => {
                   Contenido Pestaña 2
                 </div>
                 <div className="tab-pane fade" id="panel-icon-content-3" role="tabpanel" aria-labelledby="tab-icon-3">
+                  Contenido Pestaña 3
+                </div>
+              </div>
+            </div>
+          </CodeBox>
+          <br />
+          <br />
+          <CodeBox codeHTML={TABS_SIMPLE_ICON_LEFT}>
+            <div className="container">
+              <nav className="tabs-box" aria-label="Navegación por pestañas">
+                <ul className="nav nav-pills tabs" id="icon-myTab" role="tablist">
+                  <li className="nav-item" role="presentation">
+                    <button
+                      className="nav-link active"
+                      data-bs-toggle="tab"
+                      data-bs-target="#panel-icon-left-content-1"
+                      type="button"
+                      role="tab"
+                      aria-controls="panel-icon-left-content-1"
+                      aria-selected="true"
+                      id="tab-icon-left-1"
+                    >
+                      <div className="nav-icon">
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">insert_drive_file</span>
+                        <span>Pestaña 1</span>
+                      </div>
+                    </button>
+                  </li>
+                  <li className="nav-item" role="presentation">
+                    <button
+                      className="nav-link"
+                      data-bs-toggle="tab"
+                      data-bs-target="#panel-icon-left-content-2"
+                      type="button"
+                      role="tab"
+                      aria-controls="panel-icon-left-content-2"
+                      aria-selected="false"
+                      id="tab-icon-left-2"
+                    >
+                      <div className="nav-icon">
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">insert_drive_file</span>
+                        <span>Pestaña 2</span>
+                      </div>
+                    </button>
+                  </li>
+                  <li className="nav-item" role="presentation">
+                    <button
+                      className="nav-link"
+                      data-bs-toggle="tab"
+                      data-bs-target="#panel-icon-left-content-3"
+                      type="button"
+                      role="tab"
+                      aria-controls="panel-icon-left-content-3"
+                      aria-selected="false"
+                      id="tab-icon-left-3"
+                    >
+                      <div className="nav-icon">
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">insert_drive_file</span>
+                        <span>Pestaña 3</span>
+                      </div>
+                    </button>
+                  </li>
+                </ul>
+              </nav>
+              <div className="tab-content" id="icon-myTabContent">
+                <div
+                  className="tab-pane fade show active"
+                  id="panel-icon-left-content-1"
+                  role="tabpanel"
+                  aria-labelledby="tab-icon-left-1"
+                >
+                  Contenido Pestaña 1
+                </div>
+                <div className="tab-pane fade" id="panel-icon-left-content-2" role="tabpanel" aria-labelledby="tab-icon-left-2">
+                  Contenido Pestaña 2
+                </div>
+                <div className="tab-pane fade" id="panel-icon-left-content-3" role="tabpanel" aria-labelledby="tab-icon-left-3">
                   Contenido Pestaña 3
                 </div>
               </div>
@@ -218,7 +296,7 @@ const TabsDocs: React.FC = () => {
                       <div className="nav-icon">
                         <span>Pestaña 1</span>
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          home
+                          description
                         </span>
                       </div>
                     </button>
@@ -237,7 +315,7 @@ const TabsDocs: React.FC = () => {
                       <div className="nav-icon">
                         <span>Pestaña 2</span>
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          home
+                          description
                         </span>
                       </div>
                     </button>
@@ -256,7 +334,7 @@ const TabsDocs: React.FC = () => {
                       <div className="nav-icon">
                         <span>Pestaña 3</span>
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          home
+                          description
                         </span>
                       </div>
                     </button>
@@ -307,7 +385,7 @@ const TabsDocs: React.FC = () => {
                       <div className="nav-icon">
                         <span>Pestaña 1</span>
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          home
+                          description
                         </span>
                       </div>
                     </button>
@@ -326,7 +404,7 @@ const TabsDocs: React.FC = () => {
                       <div className="nav-icon">
                         <span>Pestaña 2</span>
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          home
+                          description
                         </span>
                       </div>
                     </button>
@@ -345,7 +423,7 @@ const TabsDocs: React.FC = () => {
                       <div className="nav-icon">
                         <span>Pestaña 3</span>
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          home
+                          description
                         </span>
                       </div>
                     </button>
@@ -396,7 +474,7 @@ const TabsDocs: React.FC = () => {
                       <div className="nav-icon">
                         <span>Pestaña 1</span>
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          home
+                          description
                         </span>
                       </div>
                     </button>
@@ -415,7 +493,7 @@ const TabsDocs: React.FC = () => {
                       <div className="nav-icon">
                         <span>Pestaña 2</span>
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          home
+                          description
                         </span>
                       </div>
                     </button>
@@ -434,7 +512,7 @@ const TabsDocs: React.FC = () => {
                       <div className="nav-icon">
                         <span>Pestaña 3</span>
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          home
+                          description
                         </span>
                       </div>
                     </button>
@@ -492,7 +570,7 @@ const TabsDocs: React.FC = () => {
                       <div className="nav-icon">
                         <span>Pestaña 1</span>
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          home
+                          description
                         </span>
                       </div>
                     </button>
@@ -511,7 +589,7 @@ const TabsDocs: React.FC = () => {
                       <div className="nav-icon">
                         <span>Pestaña 2</span>
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          home
+                          description
                         </span>
                       </div>
                     </button>
@@ -530,7 +608,7 @@ const TabsDocs: React.FC = () => {
                       <div className="nav-icon">
                         <span>Pestaña 3</span>
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          home
+                          description
                         </span>
                       </div>
                     </button>
@@ -549,7 +627,7 @@ const TabsDocs: React.FC = () => {
                       <div className="nav-icon">
                         <span>Pestaña 4</span>
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          home
+                          description
                         </span>
                       </div>
                     </button>
@@ -568,7 +646,7 @@ const TabsDocs: React.FC = () => {
                       <div className="nav-icon">
                         <span>Pestaña 5</span>
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          home
+                          description
                         </span>
                       </div>
                     </button>
@@ -587,7 +665,7 @@ const TabsDocs: React.FC = () => {
                       <div className="nav-icon">
                         <span>Pestaña 6</span>
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          home
+                          description
                         </span>
                       </div>
                     </button>
@@ -606,7 +684,7 @@ const TabsDocs: React.FC = () => {
                       <div className="nav-icon">
                         <span>Pestaña 7</span>
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          home
+                          description
                         </span>
                       </div>
                     </button>
@@ -625,7 +703,7 @@ const TabsDocs: React.FC = () => {
                       <div className="nav-icon">
                         <span>Pestaña 8</span>
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          home
+                          description
                         </span>
                       </div>
                     </button>
@@ -644,7 +722,7 @@ const TabsDocs: React.FC = () => {
                       <div className="nav-icon">
                         <span>Pestaña 9</span>
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          home
+                          description
                         </span>
                       </div>
                     </button>
@@ -663,7 +741,7 @@ const TabsDocs: React.FC = () => {
                       <div className="nav-icon">
                         <span>Pestaña 10</span>
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          home
+                          description
                         </span>
                       </div>
                     </button>
@@ -744,7 +822,7 @@ const TabsDocs: React.FC = () => {
                       <div className="nav-icon">
                         <span>Pestaña 1</span>
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          home
+                          description
                         </span>
                       </div>
                     </button>
@@ -763,7 +841,7 @@ const TabsDocs: React.FC = () => {
                       <div className="nav-icon">
                         <span>Pestaña 2</span>
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          home
+                          description
                         </span>
                       </div>
                     </button>
@@ -782,7 +860,7 @@ const TabsDocs: React.FC = () => {
                       <div className="nav-icon">
                         <span>Pestaña 3</span>
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          home
+                          description
                         </span>
                       </div>
                     </button>
@@ -801,7 +879,7 @@ const TabsDocs: React.FC = () => {
                       <div className="nav-icon">
                         <span>Pestaña 4</span>
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          home
+                          description
                         </span>
                       </div>
                     </button>
@@ -820,7 +898,7 @@ const TabsDocs: React.FC = () => {
                       <div className="nav-icon">
                         <span>Pestaña 5</span>
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          home
+                          description
                         </span>
                       </div>
                     </button>
@@ -839,7 +917,7 @@ const TabsDocs: React.FC = () => {
                       <div className="nav-icon">
                         <span>Pestaña 6</span>
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          home
+                          description
                         </span>
                       </div>
                     </button>
@@ -858,7 +936,7 @@ const TabsDocs: React.FC = () => {
                       <div className="nav-icon">
                         <span>Pestaña 7</span>
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          home
+                          description
                         </span>
                       </div>
                     </button>
@@ -877,7 +955,7 @@ const TabsDocs: React.FC = () => {
                       <div className="nav-icon">
                         <span>Pestaña 8</span>
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          home
+                          description
                         </span>
                       </div>
                     </button>
@@ -896,7 +974,7 @@ const TabsDocs: React.FC = () => {
                       <div className="nav-icon">
                         <span>Pestaña 9</span>
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          home
+                          description
                         </span>
                       </div>
                     </button>
@@ -915,7 +993,7 @@ const TabsDocs: React.FC = () => {
                       <div className="nav-icon">
                         <span>Pestaña 10</span>
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          home
+                          description
                         </span>
                       </div>
                     </button>
@@ -999,7 +1077,7 @@ const TabsDocs: React.FC = () => {
                     <div className="nav-icon">
                       <span>Pestaña grande 1</span>
                       <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                        home
+                        description
                       </span>
                     </div>
                   </button>
@@ -1018,7 +1096,7 @@ const TabsDocs: React.FC = () => {
                     <div className="nav-icon">
                       <span>Pestaña grande 2</span>
                       <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                        home
+                        description
                       </span>
                     </div>
                   </button>
@@ -1056,7 +1134,7 @@ const TabsDocs: React.FC = () => {
                     <div className="nav-icon">
                       <span>Pestaña grande 1</span>
                       <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                        home
+                        description
                       </span>
                     </div>
                   </button>
@@ -1075,7 +1153,7 @@ const TabsDocs: React.FC = () => {
                     <div className="nav-icon">
                       <span>Pestaña grande 2</span>
                       <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                        home
+                        description
                       </span>
                     </div>
                   </button>
@@ -1133,7 +1211,7 @@ const TabsDocs: React.FC = () => {
                     <div className="nav-icon">
                       <span>Pestaña mediana 1</span>
                       <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                        home
+                        description
                       </span>
                     </div>
                   </button>
@@ -1152,7 +1230,7 @@ const TabsDocs: React.FC = () => {
                     <div className="nav-icon">
                       <span>Pestaña mediana 2</span>
                       <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                        home
+                        description
                       </span>
                     </div>
                   </button>
@@ -1195,7 +1273,7 @@ const TabsDocs: React.FC = () => {
                     <div className="nav-icon">
                       <span>Pestaña mediana 1</span>
                       <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                        home
+                        description
                       </span>
                     </div>
                   </button>
@@ -1214,7 +1292,7 @@ const TabsDocs: React.FC = () => {
                     <div className="nav-icon">
                       <span>Pestaña mediana 2</span>
                       <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                        home
+                        description
                       </span>
                     </div>
                   </button>
@@ -1272,7 +1350,7 @@ const TabsDocs: React.FC = () => {
                     <div className="nav-icon">
                       <span>Pestaña chica 1</span>
                       <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                        home
+                        description
                       </span>
                     </div>
                   </button>
@@ -1291,7 +1369,7 @@ const TabsDocs: React.FC = () => {
                     <div className="nav-icon">
                       <span>Pestaña chica 2</span>
                       <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                        home
+                        description
                       </span>
                     </div>
                   </button>
@@ -1329,7 +1407,7 @@ const TabsDocs: React.FC = () => {
                     <div className="nav-icon">
                       <span>Pestaña chica 1</span>
                       <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                        home
+                        description
                       </span>
                     </div>
                   </button>
@@ -1348,7 +1426,7 @@ const TabsDocs: React.FC = () => {
                     <div className="nav-icon">
                       <span>Pestaña chica 2</span>
                       <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                        home
+                        description
                       </span>
                     </div>
                   </button>

@@ -19,7 +19,7 @@ export const NAV_VERTICAL_ICON = `
       <li class="nav-item">
         <a class="nav-link" href="#">
           <div class="nav-icon">
-            <i class="bx bxs-user-circle o-icon"></i>
+            <span class="material-symbols-rounded o-icon" aria-label="hidden">add</span>
             <span>Link</span>
           </div>
         </a>
@@ -27,7 +27,7 @@ export const NAV_VERTICAL_ICON = `
       <li class="nav-item">
         <a class="nav-link active" href="#">
           <div class="nav-icon">
-            <i class="bx bxs-user-circle o-icon"></i>
+            <span class="material-symbols-rounded o-icon" aria-label="hidden">add</span>
             <span>Activo</span>
           </div>
         </a>
@@ -35,7 +35,7 @@ export const NAV_VERTICAL_ICON = `
       <li class="nav-item">
         <a class="nav-link" href="#">
           <div class="nav-icon">
-            <i class="bx bxs-user-circle o-icon"></i>
+            <span class="material-symbols-rounded o-icon" aria-label="hidden">add</span>
             <span>Link</span>
           </div>
         </a>
@@ -94,7 +94,7 @@ export const NAV_VERTICAL_TWO_LEVEL_ICON = `
       <li class="nav-item">
         <a class="nav-link" href="#">
           <div class="nav-icon">
-            <i class="bx bxs-user-circle"></i>
+            <span class="material-symbols-rounded o-icon" aria-label="hidden">add</span>
             <span>Categorías</span>
           </div>
         </a>
@@ -102,7 +102,7 @@ export const NAV_VERTICAL_TWO_LEVEL_ICON = `
       <li class="nav-item">
         <a class="nav-link active-child" href="#">
           <div class="nav-icon">
-            <i class="bx bxs-user-circle"></i>
+            <span class="material-symbols-rounded o-icon" aria-label="hidden">add</span>
             <span>Locales y comercios</span>
           </div>
         </a>
@@ -135,7 +135,7 @@ export const NAV_VERTICAL_TWO_LEVEL_ICON = `
       <li class="nav-item">
         <a class="nav-link" href="#">
           <div class="nav-icon">
-            <i class="bx bxs-user-circle"></i>
+            <span class="material-symbols-rounded o-icon" aria-label="hidden">add</span>
             <span>Actividades jurídicas</span>
           </div>
         </a>
@@ -143,7 +143,7 @@ export const NAV_VERTICAL_TWO_LEVEL_ICON = `
       <li class="nav-item">
         <a class="nav-link" href="#">
           <div class="nav-icon">
-            <i class="bx bxs-user-circle"></i>
+            <span class="material-symbols-rounded o-icon" aria-label="hidden">add</span>
             <span>Otras actividades</span>
           </div>
         </a>
@@ -212,7 +212,7 @@ export const NAV_VERTICAL_THREE_LEVEL_ICON = `
       <li class="nav-item">
         <a class="nav-link" href="#">
           <div class="nav-icon">
-            <i class="bx bxs-user-circle o-icon"></i>
+            <span class="material-symbols-rounded o-icon" aria-label="hidden">add</span>
             <span>Categorías</span>
           </div>
         </a>
@@ -220,7 +220,7 @@ export const NAV_VERTICAL_THREE_LEVEL_ICON = `
       <li class="nav-item">
         <a class="nav-link active-child" href="#">
           <div class="nav-icon">
-            <i class="bx bxs-user-circle o-icon"></i>
+            <span class="material-symbols-rounded o-icon" aria-label="hidden">add</span>
             <span>Locales y comercios</span>
           </div>
         </a>
@@ -263,7 +263,7 @@ export const NAV_VERTICAL_THREE_LEVEL_ICON = `
       <li class="nav-item">
         <a class="nav-link" href="#">
           <div class="nav-icon">
-            <i class="bx bxs-user-circle o-icon"></i>
+            <span class="material-symbols-rounded o-icon" aria-label="hidden">add</span>
             <span>Actividades jurídicas</span>
           </div>
         </a>
@@ -271,7 +271,7 @@ export const NAV_VERTICAL_THREE_LEVEL_ICON = `
       <li class="nav-item">
         <a class="nav-link" href="#">
           <div class="nav-icon">
-            <i class="bx bxs-user-circle o-icon"></i>
+            <span class="material-symbols-rounded o-icon" aria-label="hidden">add</span>
             <span>Otras actividades</span>
           </div>
         </a>

@@ -66,7 +66,7 @@ const BannerDocs: React.FC = () => {
             <div className="banner">
               <div className="banner-content">
                 <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                  cookie
+                  departure_board
                 </span>
                 <p className="banner-text">
                   Este banner tiene un solo botón y <strong>puede tener énfasis</strong>. Se truncan los textos que
@@ -83,7 +83,7 @@ const BannerDocs: React.FC = () => {
             <div className="banner banner-dark">
               <div className="banner-content">
                 <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                  cookie
+                  departure_board
                 </span>
                 <p className="banner-text">
                   Este banner tiene un solo botón y <strong>puede tener énfasis</strong>. Se truncan los textos que

@@ -68,7 +68,7 @@ const sections = [
                 <li className="nav-item">
                   <LinkClient className="nav-link">
                     <div className="nav-icon">
-                      <i className="bx bxs-user-circle"></i>
+                      <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
                       <span>Link</span>
                     </div>
                   </LinkClient>
@@ -76,7 +76,7 @@ const sections = [
                 <li className="nav-item">
                   <a className="nav-link active">
                     <div className="nav-icon">
-                      <i className="bx bxs-user-circle"></i>
+                      <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
                       <span>Activo</span>
                     </div>
                   </a>
@@ -84,7 +84,7 @@ const sections = [
                 <li className="nav-item">
                   <LinkClient className="nav-link">
                     <div className="nav-icon">
-                      <i className="bx bxs-user-circle"></i>
+                      <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
                       <span>Link</span>
                     </div>
                   </LinkClient>
@@ -102,7 +102,7 @@ const sections = [
                   <LinkClient className="nav-link">
                     <div className="nav-icon">
                       <span>Link</span>
-                      <i className="bx bxs-user-circle"></i>
+                      <span className="material-symbols-rounded o-icon" aria-label="hidden">arrow_forward</span>
                     </div>
                   </LinkClient>
                 </li>
@@ -110,7 +110,7 @@ const sections = [
                   <a className="nav-link active">
                     <div className="nav-icon">
                       <span>Activo</span>
-                      <i className="bx bxs-user-circle"></i>
+                      <span className="material-symbols-rounded o-icon" aria-label="hidden">arrow_forward</span>
                     </div>
                   </a>
                 </li>
@@ -118,7 +118,7 @@ const sections = [
                   <LinkClient className="nav-link">
                     <div className="nav-icon">
                       <span>Link</span>
-                      <i className="bx bxs-user-circle"></i>
+                      <span className="material-symbols-rounded o-icon" aria-label="hidden">arrow_forward</span>
                     </div>
                   </LinkClient>
                 </li>
@@ -172,7 +172,7 @@ const sections = [
                 <li className="nav-item">
                   <a className="nav-link border-link">
                     <div className="nav-icon">
-                      <i className="bx bxs-user-circle"></i>
+                      <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
                       <span>Link</span>
                     </div>
                   </a>
@@ -180,7 +180,7 @@ const sections = [
                 <li className="nav-item">
                   <a className="nav-link border-link active">
                     <div className="nav-icon">
-                      <i className="bx bxs-user-circle"></i>
+                      <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
                       <span>Activo</span>
                     </div>
                   </a>
@@ -188,7 +188,7 @@ const sections = [
                 <li className="nav-item">
                   <a className="nav-link border-link">
                     <div className="nav-icon">
-                      <i className="bx bxs-user-circle"></i>
+                      <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
                       <span>Link</span>
                     </div>
                   </a>

@@ -28,7 +28,7 @@ export default function HeaderDesktop() {
           <Link href="/" className="navbar-brand">
             <Image
               className="header-logo"
-              src={`${basePath}/images/BA.svg`}
+              src={`${basePath}/images/Obelisco-logo.svg`}
               alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
               width={76}
               height={48}

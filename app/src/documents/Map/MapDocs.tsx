@@ -1,4 +1,5 @@
 import CodeBox from '@/components/CodeBox';
+import LinkClient from '@/components/LinkClient';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
@@ -47,15 +48,12 @@ const MapDocs: React.FC = () => {
                         style={{ border: '0px' }}
                       ></iframe>
                     </div>
-                    <a
+                    <LinkClient
                       href="https://mapa.buenosaires.gob.ar/comollego/?lat=-34.640340&amp;lng=-58.407032&amp;zl=15&amp;modo=transporte&amp;dir=Uspallata+3160"
                       className="btn btn-primary btn-lg btn-block"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      tabIndex={0}
                     >
                       Cómo llego
-                    </a>
+                    </LinkClient>
                   </div>
                 </div>
               </div>
@@ -89,15 +87,12 @@ const MapDocs: React.FC = () => {
                         style={{ border: '0px' }}
                       ></iframe>
                     </div>
-                    <a
+                    <LinkClient
                       href="https://mapa.buenosaires.gob.ar/comollego/?lat=-34.640340&amp;lng=-58.407032&amp;zl=15&amp;modo=transporte&amp;dir=Uspallata+3160"
                       className="btn btn-primary btn-lg btn-block"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      tabIndex={0}
                     >
                       Cómo llego
-                    </a>
+                    </LinkClient>
                   </div>
                 </div>
               </div>

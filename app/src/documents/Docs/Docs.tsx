@@ -109,18 +109,18 @@ const sections = [
   },
   {
     id: 'section-8',
-    title: 'Documentación de clases',
+    title: 'Clases disponibles',
     content: (
       <>
         <li>
-          <strong>Documentación de clases</strong>: 
+          <strong>Clases disponibles</strong>: 
         </li>
         <div className="col-12 col-lg-7 mt-4 ms-1">
           <Link href="/documentation/class-documentation" className="list-group-item item-sm">
             <span className="material-symbols-rounded o-icon">import_contacts</span>
             <div className="access-content">
-              <span className="access-title">Documentación de clases</span>
-              <p className="access-text">Documentación de clases</p>
+              <span className="access-title">Clases disponibles</span>
+              <p className="access-text">Clases disponibles</p>
             </div>
           </Link>
         </div>

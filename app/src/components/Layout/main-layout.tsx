@@ -57,13 +57,13 @@ export const componentsPages = [
 ];
 
 export const gettingPages = [
-  { text: 'Instalación', url: '/getting-started/installation', id: 2 },
-  { text: 'Importaciones', url: '/getting-started/imports', id: 3 },
+  { text: 'Instalación', url: '/getting-started/installation', id: 1 },
+  { text: 'Importaciones', url: '/getting-started/imports', id: 2 },
 ];
 
 export const documentationPages = [
-  { text: 'Cambios en componentes', url: '/documentation/update-component', id: 2 },
-  { text: 'Documentación de clases', url: '/documentation/class-documentation', id: 3 }
+  { text: 'Cambios en componentes', url: '/documentation/update-component', id: 1 },
+  { text: 'Clases disponibles', url: '/documentation/class-documentation', id: 2 }
 ];
 
 const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {

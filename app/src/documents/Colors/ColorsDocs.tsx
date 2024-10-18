@@ -60,25 +60,6 @@ const ColorsDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-          <br />
-          <CodeBox codeHTML={TEXT_THEME_COLORS}>
-            <div className="container">
-              <div className="d-flex flex-column gap-2 mb-3">
-                <div className="text-primary">primary</div>
-                <div className="text-secondary">secondary</div>
-                <div className="text-tertiary">tertiary</div>
-                <div className="text-danger">danger</div>
-                <div className="text-success">success</div>
-                <div className="text-warning">warning</div>
-                <div className="text-info">info</div>
-                <div className="text-light bg-dark">light</div>
-                <div className="text-dark">dark</div>
-                <div className="text-white bg-dark">white</div>
-                <div className="text-black">black</div>
-                <div className="text-body-secondary">text-body-secondary</div>
-              </div>
-            </div>
-          </CodeBox>
         </>
       ),
     },
@@ -141,6 +122,32 @@ const ColorsDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
+        </>
+      ),
+    },
+    {
+      id: 'section-3',
+      title: 'Colores tipográficos ',
+      content: (
+        <>
+          <CodeBox codeHTML={TEXT_THEME_COLORS}>
+            <div className="container">
+              <div className="d-flex flex-column gap-2 mb-3">
+                <div className="text-primary">primary</div>
+                <div className="text-secondary">secondary</div>
+                <div className="text-tertiary">tertiary</div>
+                <div className="text-danger">danger</div>
+                <div className="text-success">success</div>
+                <div className="text-warning">warning</div>
+                <div className="text-info">info</div>
+                <div className="text-light bg-dark">light</div>
+                <div className="text-dark">dark</div>
+                <div className="text-white bg-dark">white</div>
+                <div className="text-black">black</div>
+                <div className="text-body-secondary">text-body-secondary</div>
+              </div>
+            </div>
+          </CodeBox>
           <br />
           <CodeBox codeHTML={TEXT_THEME_COLORS_PASTEL}>
             <div className="container bg-dark py-3">
@@ -160,8 +167,6 @@ const ColorsDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-          <br />
-          <br />
         </>
       ),
     },

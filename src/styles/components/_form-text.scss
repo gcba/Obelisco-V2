@@ -280,3 +280,14 @@ input[type='search']::-moz-search-clear-button {
 .invalid-feedback::before {
   content: map-get($validation-icons, 'invalid');
 }
+
+//Input con fondo
+.form-bg-light {
+  background-color: $light;
+  .form-control,
+  .custom-select {
+    &:not(:disabled) {
+      background-color: $white;
+    }
+  }
+}

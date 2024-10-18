@@ -71,15 +71,9 @@ const HighlightedDocs: React.FC = () => {
                     </p>
                     <div className="panel-footer">
                       <LinkClient className="btn btn-primary btn-lg">
-                        <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          info
-                        </span>
-                        BotónNNNN
+                        Botón
                       </LinkClient>
                       <LinkClient className="btn btn-outline-primary btn-lg">
-                        <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          info
-                        </span>
                         Botón
                       </LinkClient>
                     </div>
@@ -109,9 +103,6 @@ const HighlightedDocs: React.FC = () => {
                     </p>
                     <div className="panel-footer">
                       <LinkClient className="btn btn-primary btn-lg">
-                        <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          info
-                        </span>
                         Botón
                       </LinkClient>
                     </div>
@@ -243,15 +234,9 @@ const HighlightedDocs: React.FC = () => {
                     </p>
                     <div className="panel-footer">
                       <LinkClient className="btn btn-primary btn-lg">
-                        <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          info
-                        </span>
                         Botón
                       </LinkClient>
                       <LinkClient className="btn btn-outline-primary btn-lg">
-                        <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          info
-                        </span>
                         Botón
                       </LinkClient>
                     </div>
@@ -282,15 +267,9 @@ const HighlightedDocs: React.FC = () => {
                     </p>
                     <div className="panel-footer">
                       <LinkClient className="btn btn-primary btn-lg">
-                        <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          info
-                        </span>
                         Botón
                       </LinkClient>
                       <LinkClient className="btn btn-outline-primary btn-lg">
-                        <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          info
-                        </span>
                         Botón
                       </LinkClient>
                     </div>
@@ -320,15 +299,9 @@ const HighlightedDocs: React.FC = () => {
                     </p>
                     <div className="panel-footer">
                       <LinkClient className="btn btn-primary btn-lg">
-                        <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          info
-                        </span>
                         Botón
                       </LinkClient>
                       <LinkClient className="btn btn-outline-primary btn-lg">
-                        <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          info
-                        </span>
                         Botón
                       </LinkClient>
                     </div>
@@ -365,15 +338,9 @@ const HighlightedDocs: React.FC = () => {
                     </p>
                     <div className="panel-footer">
                       <LinkClient className="btn btn-primary btn-lg">
-                        <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          info
-                        </span>
                         Botón
                       </LinkClient>
                       <LinkClient className="btn btn-outline-primary btn-lg">
-                        <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          info
-                        </span>
                         Botón
                       </LinkClient>
                     </div>
@@ -411,9 +378,6 @@ const HighlightedDocs: React.FC = () => {
                       </p>
                       <div className="panel-footer">
                         <LinkClient className="btn btn-primary btn-lg">
-                          <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                            info
-                          </span>
                           Botón
                         </LinkClient>
                       </div>
@@ -532,9 +496,6 @@ const HighlightedDocs: React.FC = () => {
                       </p>
                       <div className="panel-footer">
                         <LinkClient className="btn btn-primary btn-lg">
-                          <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                            info
-                          </span>
                           Botón
                         </LinkClient>
                       </div>
@@ -560,9 +521,6 @@ const HighlightedDocs: React.FC = () => {
                       </p>
                       <div className="panel-footer">
                         <LinkClient className="btn btn-primary btn-lg">
-                          <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                            info
-                          </span>
                           Botón
                         </LinkClient>
                       </div>
@@ -594,9 +552,6 @@ const HighlightedDocs: React.FC = () => {
                       </p>
                       <div className="panel-footer">
                         <LinkClient className="btn btn-primary btn-lg">
-                          <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                            info
-                          </span>
                           Botón
                         </LinkClient>
                       </div>
@@ -683,9 +638,6 @@ const HighlightedDocs: React.FC = () => {
                     </p>
                     <div className="panel-footer">
                       <LinkClient className="btn btn-primary btn-lg btn-block">
-                        <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          info
-                        </span>
                         Botón
                       </LinkClient>
                     </div>

@@ -25,8 +25,8 @@ const sections = [
             target="_blank"
             rel="noopener noreferrer"
           >
-            enlace.
-          </a>
+            enlace
+          </a>.
         </p>
       </>
     ),
@@ -53,19 +53,19 @@ const sections = [
               </button>
               <div className="dropdown-menu">
                 <LinkClient className="dropdown-item">
-                  <i className="bx bxs-info-circle o-icon"></i>
+                  <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
                   <span className="item-text">Opción de navegación</span>
-                  <i className="bx bxs-info-circle o-icon"></i>
+                  <span className="material-symbols-rounded o-icon" aria-label="hidden">arrow_forward</span>
                 </LinkClient>
                 <LinkClient className="dropdown-item">
-                  <i className="bx bxs-info-circle o-icon"></i>
+                <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
                   <span className="item-text text-end">Opción de navegación</span>
-                  <i className="bx bxs-info-circle o-icon"></i>
+                  <span className="material-symbols-rounded o-icon" aria-label="hidden">arrow_forward</span>
                 </LinkClient>
                 <a className="dropdown-item disabled">
-                  <i className="bx bxs-info-circle o-icon"></i>
+                <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
                   <span className="item-text text-end">Opción de navegación</span>
-                  <i className="bx bxs-info-circle o-icon"></i>
+                  <span className="material-symbols-rounded o-icon" aria-label="hidden">arrow_forward</span>
                 </a>
                 <a className="dropdown-item item-danger">
                   <span className="material-symbols-rounded o-icon" aria-label="hidden">
@@ -88,18 +88,18 @@ const sections = [
                 aria-expanded="false"
               >
                 <span className="material-symbols-rounded o-icon" aria-label="hidden">
-                  menu
+                  add
                 </span>
                 <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
               </button>
               <div className="dropdown-menu">
                 <LinkClient className="dropdown-item">
-                  <i className="bx bxs-info-circle o-icon"></i>
+                  <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
                   <span className="item-text">Opción de navegación</span>
                 </LinkClient>
                 <LinkClient className="dropdown-item">
                   <span className="item-text text-end">Opción de navegación</span>
-                  <i className="bx bxs-info-circle o-icon"></i>
+                  <span className="material-symbols-rounded o-icon" aria-label="hidden">arrow_forward</span>
                 </LinkClient>
                 <a className="dropdown-item item-danger">
                   <span className="item-text text-end">Cerrar sesión</span>
@@ -128,12 +128,12 @@ const sections = [
               </button>
               <div className="dropdown-menu">
                 <LinkClient className="dropdown-item">
-                  <i className="bx bxs-info-circle o-icon"></i>
+                <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
                   <span className="item-text">Opción de navegación</span>
                 </LinkClient>
                 <LinkClient className="dropdown-item">
                   <span className="item-text text-end">Opción de navegación</span>
-                  <i className="bx bxs-info-circle o-icon"></i>
+                  <span className="material-symbols-rounded o-icon" aria-label="hidden">arrow_forward</span>
                 </LinkClient>
                 <a className="dropdown-item item-danger">
                   <span className="item-text text-end">Cerrar sesión</span>
@@ -213,7 +213,7 @@ const sections = [
               <div className="dropdown-menu">
                 <div className="dropdown sub-dropdown">
                   <button type="button" className="btn btn-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i className="bx bxs-info-circle o-icon"></i>
+                    <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
                     <span className="btn-dropdown-text ellipsis-1">Opción en cascada</span>
                     <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
                       expand_more
@@ -272,9 +272,8 @@ const sections = [
                     <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
                       expand_more
                     </span>
-
                     <span className="btn-dropdown-text ellipsis-1">Opción en cascada</span>
-                    <i className="bx bxs-info-circle o-icon"></i>
+                    <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
                   </button>
                   <div className="dropdown-menu">
                     <LinkClient className="dropdown-item">

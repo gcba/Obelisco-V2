@@ -264,7 +264,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
 }
 
 .navbar.o-header {
-  border-bottom: 0.25rem solid $blue;
+  border-bottom: 0.25rem solid $yellow-500;
   padding: 0.875rem 1rem 0.625rem; //14px 16px 10px
 
   @include media-breakpoint-up(xl) {

@@ -28,7 +28,7 @@ export const BANNER_BUTTON = `
   <div class="banner">
     <div class="banner-content">
       <span class="material-symbols-rounded o-icon" aria-hidden="true">
-        cookie
+        departure_board
       </span>
       <p class="banner-text">
         Este banner tiene un solo botón y
@@ -52,7 +52,7 @@ export const BANNER_BUTTON_DARK = `
   <div class="banner banner-dark">
     <div class="banner-content">
       <span class="material-symbols-rounded o-icon" aria-hidden="true">
-        cookie
+        departure_board
       </span>
       <p class="banner-text">
         Este banner tiene un solo botón y

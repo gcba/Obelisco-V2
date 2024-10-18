@@ -490,54 +490,150 @@ const UpdateComponents: React.FC = () => {
     },
     {
       id: 'section-7',
-      title: 'Link',
+      title: 'Opacity',
       content: (
         <>
-
+          <h4>Opacity</h4>
+          <ul className="docs-list">
+            <li><code>opacity-100</code></li>
+            <li><code>opacity-75</code></li>
+            <li><code>opacity-50</code></li>
+            <li><code>opacity-25</code></li>
+            <li><code>opacity-0</code></li>
+          </ul>
         </>
       ),
     },
     {
       id: 'section-8',
-      title: '',
+      title: 'Overflow',
       content: (
         <>
+          <h4>Overflow</h4>
+          <ul className="docs-list">
+            <li><code>overflow-auto</code></li>
+            <li><code>overflow-hidden</code></li>
+            <li><code>overflow-visible</code></li>
+            <li><code>overflow-scroll</code></li>
+          </ul>
 
+          <p>Donde <code>{`{direction}`}</code> Toma <code>x</code> o <code>y</code> cómo valores, se puede indicar que sólo funcione horizontal o verticalmente</p>
+
+          <ul className="docs-list">
+            <li><code>{`overflow-{direction}-auto`}</code></li>
+            <li><code>{`overflow-{direction}-hidden`}</code></li>
+            <li><code>{`overflow-{direction}-visible`}</code></li>
+            <li><code>{`overflow-{direction}-scroll`}</code></li>
+          </ul>
         </>
       ),
     },
     {
       id: 'section-9',
-      title: '',
+      title: 'Position',
       content: (
         <>
+          <h4>Position</h4>
+
+          <p>La forma de usarlo es <code>{`{property}-{position}`}</code></p>
+          <p>Donde <code>{`{property}`}</code> es uno de: </p>
+
+          <ul className="docs-list">
+            <li><code>{`top`}</code></li>
+            <li><code>{`start`}</code></li>
+            <li><code>{`bottom`}</code></li>
+            <li><code>{`end`}</code></li>
+          </ul>
+
+          <p>Donde <code>{`{position}`}</code> es uno de:  </p>
+
+          <ul className="docs-list">
+            <li><code>{`0`}</code></li>
+            <li><code>{`50`}</code></li>
+            <li><code>{`100`}</code></li>
+          </ul>
 
         </>
       ),
     },
     {
       id: 'section-10',
-      title: '',
+      title: 'Shadows',
       content: (
         <>
+          <h4>Shadows</h4>
 
+          <ul className="docs-list">
+            <li><code>{`shadow-none`}</code></li>
+            <li><code>{`shadow-sm`}</code></li>
+            <li><code>{`shadow`}</code></li>
+            <li><code>{`shadow-lg`}</code></li>
+          </ul>
         </>
       ),
     },
     {
       id: 'section-11',
-      title: '',
+      title: 'Sizing',
       content: (
         <>
+          <h4>Ancho y alto</h4>
+          <p>Estas clases, funcionan de manera relativa al contenedor padre. </p>
+          <p>Donde <code>{`{quantity}`}</code> es uno de: <code>25, 50, 75, 100, auto</code> </p>
+
+          <ul className="docs-list">
+            <li><code>{`w-{quantity}`}</code></li>
+            <li><code>{`h-{quantity}`}</code></li>
+          </ul>
+
+          <p>Ancho y alto máximo 100%. </p>
+
+          <ul className="docs-list">
+            <li><code>{`max-height`}</code></li>
+            <li><code>{`max-width`}</code></li>
+          </ul>
+
+          <p>Ancho y alto relativo el viewport. </p>
+
+          <ul className="docs-list">
+            <li><code>{`min-vw-100`}</code></li>
+            <li><code>{`min-vh-100`}</code></li>
+            <li><code>{`vw-100`}</code></li>
+            <li><code>{`vh-100`}</code></li>
+          </ul>
 
         </>
       ),
     },
     {
       id: 'section-12',
-      title: '',
+      title: 'Espaciados',
       content: (
         <>
+          <p>Para <code>{`xs`}</code> <br /> <code>{`{propiedad}-{lado}--{tamaño} `}</code> </p>
+
+          <p>Para <code>{`sm, md, lg, xl y xxl`}</code> <br /> <code>{`{propiedad}-{lado}-{breakpoint}--{tamaño} `}</code> </p>
+
+          <p>Donde <code>{`{propiedad}`}</code> es uno de:</p>
+          <ul className="docs-list">
+            <li><code>{`m`}</code> - para margin</li>
+            <li><code>{`p`}</code> - para padding</li>
+          </ul>
+
+          <p>Donde <code>{`{lado}`}</code> es uno de:</p>
+          <ul className="docs-list">
+            <li><code>{`t`}</code> - para <code>margin</code> o <code>padding</code> <code>top</code></li>
+            <li><code>{`b`}</code> - para <code>margin</code> o <code>padding</code> <code>bottom</code></li>
+            <li><code>{`s`}</code> - para <code>margin</code> o <code>padding</code> <code>left</code></li>
+            <li><code>{`s`}</code> - para <code>margin</code> o <code>padding</code> <code>right</code></li>
+            <li><code>{`x`}</code> - para <code>margin</code> o <code>padding</code> | <code>left</code> y <code>right</code></li>
+            <li><code>{`y`}</code> - para <code>margin</code> o <code>padding</code> | <code>top</code> y <code>bottom</code></li>
+            <li><code>{`nada`}</code> - para que aplique a los 4 lados del elemento</li>
+          </ul>
+
+
+
+
 
         </>
       ),

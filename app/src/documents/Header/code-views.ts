@@ -5,8 +5,8 @@ export const HEADER_LOGIN_ONE_LINE_SEARCH = `
     </a>
     <div class="container header-container">
         <a href="https://buenosaires.gob.ar" class="navbar-brand">
-          <img class="d-none d-xl-block" src="/Obelisco-V2/images/BA.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
-          <img class="d-xl-none" src="/Obelisco-V2/images/ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+          <img class="d-none d-xl-block" src="/Obelisco-V2/images/logo_ba.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+          <img class="d-xl-none" src="/Obelisco-V2/images/logo_ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
         </a>
         <div class="navbar-login-mobile">
         <a
@@ -148,8 +148,8 @@ export const HEADER_LOGIN_ONE_LINE = `
     </a>
     <div class="container header-container">
     <a href="https://buenosaires.gob.ar" class="navbar-brand">
-        <img class="d-none d-xl-block" src="/Obelisco-V2/images/BA.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
-        <img class="d-xl-none" src="/Obelisco-V2/images/ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+        <img class="d-none d-xl-block" src="/Obelisco-V2/images/logo_ba.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+        <img class="d-xl-none" src="/Obelisco-V2/images/logo_ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
     </a>
     <div class="navbar-login-mobile">
         <a
@@ -281,8 +281,8 @@ export const HEADER_LOGIN_TWO_LINES_SEARCH = `
     </a>
     <div class="container header-container">
         <a href="https://buenosaires.gob.ar" class="navbar-brand">
-          <img class="d-none d-xl-block" src="/Obelisco-V2/images/BA.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
-          <img class="d-xl-none" src="/Obelisco-V2/images/ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+          <img class="d-none d-xl-block" src="/Obelisco-V2/images/logo_ba.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+          <img class="d-xl-none" src="/Obelisco-V2/images/logo_ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
         </a>
         <div class="navbar-login-mobile">
         <a
@@ -444,8 +444,8 @@ export const HEADER_LOGIN_TWO_LINES = `
     </a>
     <div class="container header-container">
     <a href="https://buenosaires.gob.ar" class="navbar-brand">
-        <img class="d-none d-xl-block" src="/Obelisco-V2/images/BA.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
-        <img class="d-xl-none" src="/Obelisco-V2/images/ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+        <img class="d-none d-xl-block" src="/Obelisco-V2/images/logo_ba.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+        <img class="d-xl-none" src="/Obelisco-V2/images/logo_ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
     </a>
     <div class="navbar-login-mobile">
         <a
@@ -597,8 +597,8 @@ export const HEADER_ONE_LINE_SEARCH = `
     </a>
     <div class="container header-container">
         <a href="https://buenosaires.gob.ar" class="navbar-brand">
-          <img class="d-none d-xl-block" src="/Obelisco-V2/images/BA.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
-          <img class="d-xl-none" src="/Obelisco-V2/images/ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+          <img class="d-none d-xl-block" src="/Obelisco-V2/images/logo_ba.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+          <img class="d-xl-none" src="/Obelisco-V2/images/logo_ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
         </a>
         <button
         class="navbar-toggler"
@@ -761,8 +761,8 @@ export const HEADER_ONE_LINE = `
     </a>
     <div class="container header-container">
         <a href="https://buenosaires.gob.ar" class="navbar-brand">
-          <img class="d-none d-xl-block" src="/Obelisco-V2/images/BA.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
-          <img class="d-xl-none" src="/Obelisco-V2/images/ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+          <img class="d-none d-xl-block" src="/Obelisco-V2/images/logo_ba.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+          <img class="d-xl-none" src="/Obelisco-V2/images/logo_ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
         </a>
         <button
         class="navbar-toggler"
@@ -915,8 +915,8 @@ export const HEADER_TWO_LINES_SEARCH = `
     </a>
     <div class="container header-container">
         <a href="https://buenosaires.gob.ar" class="navbar-brand">
-          <img class="d-none d-xl-block" src="/Obelisco-V2/images/BA.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
-          <img class="d-xl-none" src="/Obelisco-V2/images/ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+          <img class="d-none d-xl-block" src="/Obelisco-V2/images/logo_ba.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+          <img class="d-xl-none" src="/Obelisco-V2/images/logo_ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
         </a>
         <button
         class="navbar-toggler"
@@ -1099,8 +1099,8 @@ export const HEADER_TWO_LINES = `
     </a>
     <div class="container header-container">
     <a href="https://buenosaires.gob.ar" class="navbar-brand">
-        <img class="d-none d-xl-block" src="/Obelisco-V2/images/BA.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
-        <img class="d-xl-none" src="/Obelisco-V2/images/ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+        <img class="d-none d-xl-block" src="/Obelisco-V2/images/logo_ba.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+        <img class="d-xl-none" src="/Obelisco-V2/images/logo_ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
     </a>
     <button
         class="navbar-toggler"
@@ -1273,8 +1273,8 @@ export const HEADER_NO_LOGIN_SEARCH = `
     </a>
     <div class="container header-container">
     <a href="https://buenosaires.gob.ar" class="navbar-brand">
-        <img class="d-none d-xl-block" src="/Obelisco-V2/images/BA.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
-        <img class="d-xl-none" src="/Obelisco-V2/images/ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+        <img class="d-none d-xl-block" src="/Obelisco-V2/images/logo_ba.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+        <img class="d-xl-none" src="/Obelisco-V2/images/logo_ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
     </a>
     <button
         class="navbar-toggler"
@@ -1396,8 +1396,8 @@ export const HEADER_NO_LOGIN = `
     </a>
     <div class="container header-container">
     <a href="https://buenosaires.gob.ar" class="navbar-brand">
-        <img class="d-none d-xl-block" src="/Obelisco-V2/images/BA.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
-        <img class="d-xl-none" src="/Obelisco-V2/images/ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+        <img class="d-none d-xl-block" src="/Obelisco-V2/images/logo_ba.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+        <img class="d-xl-none" src="/Obelisco-V2/images/logo_ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
     </a>
     <button
         class="navbar-toggler"
@@ -1509,8 +1509,8 @@ export const HEADER_ONLY_LOGIN = `
     </a>
     <div class="container header-container">
     <a href="https://buenosaires.gob.ar" class="navbar-brand">
-        <img class="d-none d-xl-block" src="/Obelisco-V2/images/BA.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
-        <img class="d-xl-none" src="/Obelisco-V2/images/ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+        <img class="d-none d-xl-block" src="/Obelisco-V2/images/logo_ba.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+        <img class="d-xl-none" src="/Obelisco-V2/images/logo_ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
     </a>
     <div class="navbar-login-mobile">
         <a
@@ -1547,8 +1547,8 @@ export const HEADER_ONLY_LOGIN_SEARCH = `
     </a>
     <div className="container header-container">
     <a href="https://buenosaires.gob.ar" className="navbar-brand">
-        <img class="d-none d-xl-block" src="/Obelisco-V2/images/BA.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
-        <img class="d-xl-none" src="/Obelisco-V2/images/ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+        <img class="d-none d-xl-block" src="/Obelisco-V2/images/logo_ba.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+        <img class="d-xl-none" src="/Obelisco-V2/images/logo_ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
     </a>
     <div className="navbar-login-mobile">
         <a className="btn btn-lg btn-icon btn-outline-primary" href="#" target="_blank">
@@ -1607,8 +1607,8 @@ export const HEADER_ONLY_SEARCH = `
     </a>
     <div class="container header-container">
     <a href="https://buenosaires.gob.ar" class="navbar-brand">
-        <img class="d-none d-xl-block" src="/Obelisco-V2/images/BA.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
-        <img class="d-xl-none" src="/Obelisco-V2/images/ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+        <img class="d-none d-xl-block" src="/Obelisco-V2/images/logo_ba.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+        <img class="d-xl-none" src="/Obelisco-V2/images/logo_ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
     </a>
     <button
         class="navbar-toggler"
@@ -1644,8 +1644,8 @@ export const HEADER_ONLY_LOGO = `
     </a>
     <div class="container header-container">
     <a href="https://buenosaires.gob.ar" class="navbar-brand">
-        <img class="d-none d-xl-block" src="/Obelisco-V2/images/BA.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
-        <img class="d-xl-none" src="/Obelisco-V2/images/ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+        <img class="d-none d-xl-block" src="/Obelisco-V2/images/logo_ba.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+        <img class="d-xl-none" src="/Obelisco-V2/images/logo_ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
     </a>
     </div>
     <div class="header-backdrop"></div>

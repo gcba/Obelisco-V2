@@ -21,9 +21,9 @@ import {
 
 const basePath = '/Obelisco-V2';
 
-const logo = '/images/BA.svg';
+const logo = '/images/logo_ba.svg';
 
-const logo_mobile = '/images/ba_mobile.svg';
+const logo_mobile = '/images/logo_ba_mobile.svg';
 
 const HeaderDocs: React.FC = () => {
   const sections = [

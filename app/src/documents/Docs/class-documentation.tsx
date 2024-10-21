@@ -634,7 +634,7 @@ const UpdateComponents: React.FC = () => {
       <nav aria-label="Navegación secundaria">
         <ol className="breadcrumb">
           <li className="breadcrumb-item">
-            <Link href="/documentation">Documentacion de Clases</Link>
+            <Link href="/documentation">Documentación</Link>
           </li>
         </ol>
       </nav>

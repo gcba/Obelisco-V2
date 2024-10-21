@@ -17,7 +17,7 @@ const UpdateComponents: React.FC = () => {
     },
     {
       id: 'section-1',
-      title: 'Background',
+      title: 'Opacity',
       content: (
         <>
           <h4>Opacity</h4>
@@ -50,11 +50,13 @@ const UpdateComponents: React.FC = () => {
     {
       id: 'section-2',
       title: 'Bordes',
+    },
+    {
+      id: 'section-3',
+      title: '- Aditivo',
       content: (
         <>
-
           {/* Aditivo */}
-          <h4>Aditivo</h4>
           <ul className="docs-list">
             <li>
               <code>
@@ -83,9 +85,15 @@ const UpdateComponents: React.FC = () => {
             </li>
           </ul>
           {/* Aditivo */}
-
+        </>
+      ),
+    },
+    {
+      id: 'section-4',
+      title: '- Sustractivo',
+      content: (
+        <>
           {/* Sustractivo */}
-          <h4>Sustractivo</h4>
           <ul className="docs-list">
             <li>
               <code>
@@ -114,69 +122,15 @@ const UpdateComponents: React.FC = () => {
             </li>
           </ul>
           {/* Sustractivo */}
-
-          {/* Colores del borde */}
-          <h4>Colores del borde</h4>
-          <ul className="docs-list">
-            <li>
-              <code>border border-primary</code>
-            </li>
-            <li>
-              <code>border border-primary-subtle</code>
-            </li>
-            <li>
-              <code>border border-secondary</code>
-            </li>
-            <li>
-              <code>border border-secondary-subtle</code>
-            </li>
-            <li>
-              <code>border border-success</code>
-            </li>
-            <li>
-              <code>border border-success-subtle</code>
-            </li>
-            <li>
-              <code>border border-danger</code>
-            </li>
-            <li>
-              <code>border border-danger-subtle</code>
-            </li>
-            <li>
-              <code>border border-warning</code>
-            </li>
-            <li>
-              <code>border border-warning-subtle</code>
-            </li>
-            <li>
-              <code>border border-info</code>
-            </li>
-            <li>
-              <code>border border-info-subtle</code>
-            </li>
-            <li>
-              <code>border border-light</code>
-            </li>
-            <li>
-              <code>border border-light-subtle</code>
-            </li>
-            <li>
-              <code>border border-dark</code>
-            </li>
-            <li>
-              <code>border border-dark-subtle</code>
-            </li>
-            <li>
-              <code>border border-black</code>
-            </li>
-            <li>
-              <code>border border-white</code>
-            </li>
-          </ul>
-          {/* Colores del borde */}
-
+        </>
+      ),
+    },
+    {
+      id: 'section-5',
+      title: '- Opacidad',
+      content: (
+        <>
           {/* Opacidad */}
-          <h4>Opacidad</h4>
           <ul className="docs-list">
             <li>
               <code>border border-success</code>
@@ -195,9 +149,15 @@ const UpdateComponents: React.FC = () => {
             </li>
           </ul>
           {/* Opacidad */}
-
+        </>
+      ),
+    },
+    {
+      id: 'section-6',
+      title: '- Width',
+      content: (
+        <>
           {/* Width */}
-          <h4>Width</h4>
           <ul className="docs-list">
             <li>
               <code>border border-1</code>
@@ -216,9 +176,15 @@ const UpdateComponents: React.FC = () => {
             </li>
           </ul>
           {/* Width */}
-
+        </>
+      ),
+    },
+    {
+      id: 'section-7',
+      title: '- Redondeado',
+      content: (
+        <>
           {/* Redondeado */}
-          <h4>Redondeado</h4>
           <ul className="docs-list">
             <li>
               <code>rounded</code>
@@ -244,9 +210,15 @@ const UpdateComponents: React.FC = () => {
 
           </ul>
           {/* Redondeado */}
-
+        </>
+      ),
+    },
+    {
+      id: 'section-8',
+      title: '- Tamaños',
+      content: (
+        <>
           {/* Tamaños */}
-          <h4>Tamaños</h4>
           <ul className="docs-list">
             <li>
               <code>rounded-0</code>
@@ -272,7 +244,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-3',
+      id: 'section-9',
       title: 'Texto',
       content: (
         <>
@@ -295,7 +267,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-4',
+      id: 'section-10',
       title: 'Display',
       content: (
         <>
@@ -330,7 +302,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-5',
+      id: 'section-11',
       title: 'Flex',
       content: (
         <>
@@ -353,9 +325,15 @@ const UpdateComponents: React.FC = () => {
             <li><code>xxl</code></li>
           </ul>
           {/* Flex */}
-
+        </>
+      ),
+    },
+    {
+      id: 'section-12',
+      title: '- Dirección',
+      content: (
+        <>
           {/* Dirección */}
-          <h4>Dirección</h4>
           <ul className="docs-list">
             <li><code>.d-flex flex-row </code></li>
             <li><code>.d-flex flex-column </code></li>
@@ -371,9 +349,15 @@ const UpdateComponents: React.FC = () => {
             <li><code>{`.flex-{breakpoint}-column-reverse`}</code></li>
           </ul>
           {/* Dirección */}
-
+        </>
+      ),
+    },
+    {
+      id: 'section-13',
+      title: '- Justify content ',
+      content: (
+        <>
           {/* Justify content */}
-          <h4>Justify content</h4>
           <ul className="docs-list">
             <li><code>{`.justify-content-start`}</code></li>
             <li><code>{`.justify-content-end`}</code></li>
@@ -393,9 +377,15 @@ const UpdateComponents: React.FC = () => {
             <li><code>{`.justify-content-{breakpoint}-evenly`}</code></li>
           </ul>
           {/* Justify content */}
-
+        </>
+      ),
+    },
+    {
+      id: 'section-14',
+      title: '- Align items',
+      content: (
+        <>
           {/* Align items */}
-          <h4>Align items</h4>
           <ul className="docs-list">
             <li><code>{`.align-items-start`}</code></li>
             <li><code>{`.align-items-end`}</code></li>
@@ -415,9 +405,15 @@ const UpdateComponents: React.FC = () => {
             <li><code>{`.align-items-{breakpoint}-evenly`}</code></li>
           </ul>
           {/* Align items */}
-
+        </>
+      ),
+    },
+    {
+      id: 'section-15',
+      title: '- Align self',
+      content: (
+        <>
           {/* Align self */}
-          <h4>Align self</h4>
           <ul className="docs-list">
             <li><code>{`.align-self-start`}</code></li>
             <li><code>{`.align-self-end`}</code></li>
@@ -435,9 +431,15 @@ const UpdateComponents: React.FC = () => {
             <li><code>{`.align-self-{breakpoint}-stretch`}</code></li>
           </ul>
           {/* Align self */}
-
+        </>
+      ),
+    },
+    {
+      id: 'section-16',
+      title: '- Order',
+      content: (
+        <>
           {/* Order */}
-          <h4>Order</h4>
           <ul className="docs-list">
             <li><code>{`.order-0`}</code></li>
             <li><code>{`.order-1`}</code></li>
@@ -461,21 +463,26 @@ const UpdateComponents: React.FC = () => {
             <li><code>{`.order-{breakpoint}-last`}</code></li>
           </ul>
           {/* Order */}
-
+        </>
+      ),
+    },
+    {
+      id: 'section-17',
+      title: '- Align content',
+      content: (
+        <>
           {/* Align content */}
-          <h4>Align content</h4>
           <p><code>{`{alignment}`}</code> es uno de: <code>start, end, center, between, around, stretch </code></p>
 
           {/* esto chequear */}
           <p className='mt-4'>Clases para flexbox con breakpoints, donde <code>{`{breakpoint}`} es uno de: sm, md, lg, xl, xxl</code>:</p>
           <p><code>d-flex align-content-{`{breakpoint}`}-{`{alignment}`} flex-wrap</code> </p>
           {/* Align content */}
-
         </>
       ),
     },
     {
-      id: 'section-6',
+      id: 'section-12',
       title: 'Interacciones',
       content: (
         <>
@@ -489,7 +496,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-7',
+      id: 'section-13',
       title: 'Opacity',
       content: (
         <>
@@ -505,7 +512,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-8',
+      id: 'section-14',
       title: 'Overflow',
       content: (
         <>
@@ -529,7 +536,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-9',
+      id: 'section-15',
       title: 'Position',
       content: (
         <>
@@ -557,7 +564,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-10',
+      id: 'section-16',
       title: 'Shadows',
       content: (
         <>
@@ -573,7 +580,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-11',
+      id: 'section-17',
       title: 'Sizing',
       content: (
         <>
@@ -606,7 +613,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-12',
+      id: 'section-18',
       title: 'Espaciados',
       content: (
         <>
@@ -630,32 +637,9 @@ const UpdateComponents: React.FC = () => {
             <li><code>{`y`}</code> - para <code>margin</code> o <code>padding</code> | <code>top</code> y <code>bottom</code></li>
             <li><code>{`nada`}</code> - para que aplique a los 4 lados del elemento</li>
           </ul>
-
-
-
-
-
         </>
       ),
-    },
-    {
-      id: 'section-13',
-      title: '',
-      content: (
-        <>
-
-        </>
-      ),
-    },
-    {
-      id: 'section-14',
-      title: '',
-      content: (
-        <>
-
-        </>
-      ),
-    },
+    }
   ];
 
   return (

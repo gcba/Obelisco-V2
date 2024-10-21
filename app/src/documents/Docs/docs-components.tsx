@@ -438,6 +438,9 @@ const UpdateComponents: React.FC = () => {
             La estructura de los componentes desplegables y buscador, se ha modificado por lo que deben ser modificados
             en el header también.
           </li>
+          <li>
+            La clase <code>.header-logo</code> queda deprecada.
+          </li>
         </ul>
       ),
     },

@@ -23,7 +23,8 @@ const SwitchDocs: React.FC = () => {
             Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
             <a href="https://gcba.github.io/estandares/componentes/switch/" target="_blank" rel="noopener noreferrer">
               enlace
-            </a>.
+            </a>
+            .
           </p>
         </>
       ),

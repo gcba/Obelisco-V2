@@ -8,7 +8,13 @@ import LinkClient from '@/components/LinkClient';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
-import { PAGINATION_CENTRAL, PAGINATION_FINAL, PAGINATION_INITIAL, PAGINATION_DESCRIPTION, PAGINATION_DISABLED } from './code-views';
+import {
+  PAGINATION_CENTRAL,
+  PAGINATION_FINAL,
+  PAGINATION_INITIAL,
+  PAGINATION_DESCRIPTION,
+  PAGINATION_DISABLED,
+} from './code-views';
 
 const PaginationDocs: React.FC = () => {
   const [selectedExample, setSelectedExample] = useState<'inicial' | 'central' | 'final'>('inicial');

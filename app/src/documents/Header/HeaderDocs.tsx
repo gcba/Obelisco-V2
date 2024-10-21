@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
@@ -22,6 +20,10 @@ import {
 } from './code-views';
 
 const basePath = '/Obelisco-V2';
+
+const logo = '/images/BA.svg';
+
+const logo_mobile = '/images/ba_mobile.svg';
 
 const HeaderDocs: React.FC = () => {
   const sections = [
@@ -59,13 +61,16 @@ const HeaderDocs: React.FC = () => {
                   </LinkClient>
                   <div className="container header-container">
                     <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image
-                        className="header-logo"
-                        src={`${basePath}/images/BA.svg`}
+                      <img
+                        className="d-none d-xl-block"
+                        src={`${basePath}${logo}`}
                         alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
-                        width={76}
-                        height={48}
-                      ></Image>
+                      />
+                      <img
+                        className="d-xl-none"
+                        src={`${basePath}${logo_mobile}`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                      />
                     </LinkClient>
                     <div className="navbar-login-mobile">
                       <LinkClient className="btn btn-lg btn-icon btn-outline-primary">
@@ -220,13 +225,16 @@ const HeaderDocs: React.FC = () => {
                   </LinkClient>
                   <div className="container header-container">
                     <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image
-                        className="header-logo"
-                        src={`${basePath}/images/BA.svg`}
+                      <img
+                        className="d-none d-xl-block"
+                        src={`${basePath}${logo}`}
                         alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
-                        width={76}
-                        height={48}
-                      ></Image>
+                      />
+                      <img
+                        className="d-xl-none"
+                        src={`${basePath}${logo_mobile}`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                      />
                     </LinkClient>
                     <div className="navbar-login-mobile">
                       <LinkClient className="btn btn-lg btn-icon btn-outline-primary">
@@ -370,13 +378,16 @@ const HeaderDocs: React.FC = () => {
                   </LinkClient>
                   <div className="container header-container">
                     <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image
-                        className="header-logo"
-                        src={`${basePath}/images/BA.svg`}
+                      <img
+                        className="d-none d-xl-block"
+                        src={`${basePath}${logo}`}
                         alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
-                        width={76}
-                        height={48}
-                      ></Image>
+                      />
+                      <img
+                        className="d-xl-none"
+                        src={`${basePath}${logo_mobile}`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                      />
                     </LinkClient>
                     <div className="navbar-login-mobile">
                       <LinkClient className="btn btn-lg btn-icon btn-outline-primary">
@@ -551,13 +562,16 @@ const HeaderDocs: React.FC = () => {
                   </LinkClient>
                   <div className="container header-container">
                     <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image
-                        className="header-logo"
-                        src={`${basePath}/images/BA.svg`}
+                      <img
+                        className="d-none d-xl-block"
+                        src={`${basePath}${logo}`}
                         alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
-                        width={76}
-                        height={48}
-                      ></Image>
+                      />
+                      <img
+                        className="d-xl-none"
+                        src={`${basePath}${logo_mobile}`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                      />
                     </LinkClient>
                     <div className="navbar-login-mobile">
                       <LinkClient className="btn btn-lg btn-icon btn-outline-primary">
@@ -721,13 +735,16 @@ const HeaderDocs: React.FC = () => {
                   </LinkClient>
                   <div className="container header-container">
                     <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image
-                        className="header-logo"
-                        src={`${basePath}/images/BA.svg`}
+                      <img
+                        className="d-none d-xl-block"
+                        src={`${basePath}${logo}`}
                         alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
-                        width={76}
-                        height={48}
-                      ></Image>
+                      />
+                      <img
+                        className="d-xl-none"
+                        src={`${basePath}${logo_mobile}`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                      />
                     </LinkClient>
                     <button
                       className="navbar-toggler"
@@ -940,13 +957,16 @@ const HeaderDocs: React.FC = () => {
                   </LinkClient>
                   <div className="container header-container">
                     <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image
-                        className="header-logo"
-                        src={`${basePath}/images/BA.svg`}
+                      <img
+                        className="d-none d-xl-block"
+                        src={`${basePath}${logo}`}
                         alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
-                        width={76}
-                        height={48}
-                      ></Image>
+                      />
+                      <img
+                        className="d-xl-none"
+                        src={`${basePath}${logo_mobile}`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                      />
                     </LinkClient>
                     <button
                       className="navbar-toggler"
@@ -1148,13 +1168,16 @@ const HeaderDocs: React.FC = () => {
                   </LinkClient>
                   <div className="container header-container">
                     <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image
-                        className="header-logo"
-                        src={`${basePath}/images/BA.svg`}
+                      <img
+                        className="d-none d-xl-block"
+                        src={`${basePath}${logo}`}
                         alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
-                        width={76}
-                        height={48}
-                      ></Image>
+                      />
+                      <img
+                        className="d-xl-none"
+                        src={`${basePath}${logo_mobile}`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                      />
                     </LinkClient>
                     <button
                       className="navbar-toggler"
@@ -1387,13 +1410,16 @@ const HeaderDocs: React.FC = () => {
                   </LinkClient>
                   <div className="container header-container">
                     <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image
-                        className="header-logo"
-                        src={`${basePath}/images/BA.svg`}
+                      <img
+                        className="d-none d-xl-block"
+                        src={`${basePath}${logo}`}
                         alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
-                        width={76}
-                        height={48}
-                      ></Image>
+                      />
+                      <img
+                        className="d-xl-none"
+                        src={`${basePath}${logo_mobile}`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                      />
                     </LinkClient>
                     <button
                       className="navbar-toggler"
@@ -1615,13 +1641,16 @@ const HeaderDocs: React.FC = () => {
                   </LinkClient>
                   <div className="container header-container">
                     <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image
-                        className="header-logo"
-                        src={`${basePath}/images/BA.svg`}
+                      <img
+                        className="d-none d-xl-block"
+                        src={`${basePath}${logo}`}
                         alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
-                        width={76}
-                        height={48}
-                      ></Image>
+                      />
+                      <img
+                        className="d-xl-none"
+                        src={`${basePath}${logo_mobile}`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                      />
                     </LinkClient>
                     <button
                       className="navbar-toggler"
@@ -1760,13 +1789,16 @@ const HeaderDocs: React.FC = () => {
                   </LinkClient>
                   <div className="container header-container">
                     <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image
-                        className="header-logo"
-                        src={`${basePath}/images/BA.svg`}
+                      <img
+                        className="d-none d-xl-block"
+                        src={`${basePath}${logo}`}
                         alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
-                        width={76}
-                        height={48}
-                      ></Image>
+                      />
+                      <img
+                        className="d-xl-none"
+                        src={`${basePath}${logo_mobile}`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                      />
                     </LinkClient>
                     <button
                       className="navbar-toggler"
@@ -1894,13 +1926,16 @@ const HeaderDocs: React.FC = () => {
                   </LinkClient>
                   <div className="container header-container">
                     <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image
-                        className="header-logo"
-                        src={`${basePath}/images/BA.svg`}
+                      <img
+                        className="d-none d-xl-block"
+                        src={`${basePath}${logo}`}
                         alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
-                        width={76}
-                        height={48}
-                      ></Image>
+                      />
+                      <img
+                        className="d-xl-none"
+                        src={`${basePath}${logo_mobile}`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                      />
                     </LinkClient>
                     <div className="navbar-login-mobile">
                       <LinkClient className="btn btn-lg btn-icon btn-outline-primary">
@@ -1965,13 +2000,16 @@ const HeaderDocs: React.FC = () => {
                   </LinkClient>
                   <div className="container header-container">
                     <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image
-                        className="header-logo"
-                        src={`${basePath}/images/BA.svg`}
+                      <img
+                        className="d-none d-xl-block"
+                        src={`${basePath}${logo}`}
                         alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
-                        width={76}
-                        height={48}
-                      ></Image>
+                      />
+                      <img
+                        className="d-xl-none"
+                        src={`${basePath}${logo_mobile}`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                      />
                     </LinkClient>
                     <div className="navbar-login-mobile">
                       <LinkClient className="btn btn-lg btn-icon btn-outline-primary">
@@ -2016,13 +2054,16 @@ const HeaderDocs: React.FC = () => {
                   </LinkClient>
                   <div className="container header-container">
                     <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image
-                        className="header-logo"
-                        src={`${basePath}/images/BA.svg`}
+                      <img
+                        className="d-none d-xl-block"
+                        src={`${basePath}${logo}`}
                         alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
-                        width={76}
-                        height={48}
-                      ></Image>
+                      />
+                      <img
+                        className="d-xl-none"
+                        src={`${basePath}${logo_mobile}`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                      />
                     </LinkClient>
                     <button
                       className="navbar-toggler"
@@ -2077,13 +2118,16 @@ const HeaderDocs: React.FC = () => {
                   </LinkClient>
                   <div className="container header-container">
                     <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image
-                        className="header-logo"
-                        src={`${basePath}/images/BA.svg`}
+                      <img
+                        className="d-none d-xl-block"
+                        src={`${basePath}${logo}`}
                         alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
-                        width={76}
-                        height={48}
-                      ></Image>
+                      />
+                      <img
+                        className="d-xl-none"
+                        src={`${basePath}${logo_mobile}`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                      />
                     </LinkClient>
                   </div>
                   <div className="header-backdrop"></div>

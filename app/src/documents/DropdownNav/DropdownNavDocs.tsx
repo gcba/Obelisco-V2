@@ -26,7 +26,8 @@ const sections = [
             rel="noopener noreferrer"
           >
             enlace
-          </a>.
+          </a>
+          .
         </p>
       </>
     ),
@@ -53,19 +54,31 @@ const sections = [
               </button>
               <div className="dropdown-menu">
                 <LinkClient className="dropdown-item">
-                  <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
+                  <span className="material-symbols-rounded o-icon" aria-label="hidden">
+                    add
+                  </span>
                   <span className="item-text">Opción de navegación</span>
-                  <span className="material-symbols-rounded o-icon" aria-label="hidden">arrow_forward</span>
+                  <span className="material-symbols-rounded o-icon" aria-label="hidden">
+                    arrow_forward
+                  </span>
                 </LinkClient>
                 <LinkClient className="dropdown-item">
-                <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
+                  <span className="material-symbols-rounded o-icon" aria-label="hidden">
+                    add
+                  </span>
                   <span className="item-text text-end">Opción de navegación</span>
-                  <span className="material-symbols-rounded o-icon" aria-label="hidden">arrow_forward</span>
+                  <span className="material-symbols-rounded o-icon" aria-label="hidden">
+                    arrow_forward
+                  </span>
                 </LinkClient>
                 <a className="dropdown-item disabled">
-                <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
+                  <span className="material-symbols-rounded o-icon" aria-label="hidden">
+                    add
+                  </span>
                   <span className="item-text text-end">Opción de navegación</span>
-                  <span className="material-symbols-rounded o-icon" aria-label="hidden">arrow_forward</span>
+                  <span className="material-symbols-rounded o-icon" aria-label="hidden">
+                    arrow_forward
+                  </span>
                 </a>
                 <a className="dropdown-item item-danger">
                   <span className="material-symbols-rounded o-icon" aria-label="hidden">
@@ -94,12 +107,16 @@ const sections = [
               </button>
               <div className="dropdown-menu">
                 <LinkClient className="dropdown-item">
-                  <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
+                  <span className="material-symbols-rounded o-icon" aria-label="hidden">
+                    add
+                  </span>
                   <span className="item-text">Opción de navegación</span>
                 </LinkClient>
                 <LinkClient className="dropdown-item">
                   <span className="item-text text-end">Opción de navegación</span>
-                  <span className="material-symbols-rounded o-icon" aria-label="hidden">arrow_forward</span>
+                  <span className="material-symbols-rounded o-icon" aria-label="hidden">
+                    arrow_forward
+                  </span>
                 </LinkClient>
                 <a className="dropdown-item item-danger">
                   <span className="item-text text-end">Cerrar sesión</span>
@@ -128,12 +145,16 @@ const sections = [
               </button>
               <div className="dropdown-menu">
                 <LinkClient className="dropdown-item">
-                <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
+                  <span className="material-symbols-rounded o-icon" aria-label="hidden">
+                    add
+                  </span>
                   <span className="item-text">Opción de navegación</span>
                 </LinkClient>
                 <LinkClient className="dropdown-item">
                   <span className="item-text text-end">Opción de navegación</span>
-                  <span className="material-symbols-rounded o-icon" aria-label="hidden">arrow_forward</span>
+                  <span className="material-symbols-rounded o-icon" aria-label="hidden">
+                    arrow_forward
+                  </span>
                 </LinkClient>
                 <a className="dropdown-item item-danger">
                   <span className="item-text text-end">Cerrar sesión</span>
@@ -213,7 +234,9 @@ const sections = [
               <div className="dropdown-menu">
                 <div className="dropdown sub-dropdown">
                   <button type="button" className="btn btn-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
+                    <span className="material-symbols-rounded o-icon" aria-label="hidden">
+                      add
+                    </span>
                     <span className="btn-dropdown-text ellipsis-1">Opción en cascada</span>
                     <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
                       expand_more
@@ -273,7 +296,9 @@ const sections = [
                       expand_more
                     </span>
                     <span className="btn-dropdown-text ellipsis-1">Opción en cascada</span>
-                    <span className="material-symbols-rounded o-icon" aria-label="hidden">add</span>
+                    <span className="material-symbols-rounded o-icon" aria-label="hidden">
+                      add
+                    </span>
                   </button>
                   <div className="dropdown-menu">
                     <LinkClient className="dropdown-item">

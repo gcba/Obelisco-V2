@@ -201,6 +201,7 @@ $pagination-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>'
         cursor: none;
         pointer-events: none;
       }
+
       .page-previous-icon {
         content: $pagination-icon-left-disabled;
       }

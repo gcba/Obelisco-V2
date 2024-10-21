@@ -211,7 +211,9 @@ const TabsDocs: React.FC = () => {
                       id="tab-icon-left-1"
                     >
                       <div className="nav-icon">
-                        <span className="material-symbols-rounded o-icon" aria-hidden="true">insert_drive_file</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                          insert_drive_file
+                        </span>
                         <span>Pestaña 1</span>
                       </div>
                     </button>
@@ -228,7 +230,9 @@ const TabsDocs: React.FC = () => {
                       id="tab-icon-left-2"
                     >
                       <div className="nav-icon">
-                        <span className="material-symbols-rounded o-icon" aria-hidden="true">insert_drive_file</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                          insert_drive_file
+                        </span>
                         <span>Pestaña 2</span>
                       </div>
                     </button>
@@ -245,7 +249,9 @@ const TabsDocs: React.FC = () => {
                       id="tab-icon-left-3"
                     >
                       <div className="nav-icon">
-                        <span className="material-symbols-rounded o-icon" aria-hidden="true">insert_drive_file</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                          insert_drive_file
+                        </span>
                         <span>Pestaña 3</span>
                       </div>
                     </button>
@@ -261,10 +267,20 @@ const TabsDocs: React.FC = () => {
                 >
                   Contenido Pestaña 1
                 </div>
-                <div className="tab-pane fade" id="panel-icon-left-content-2" role="tabpanel" aria-labelledby="tab-icon-left-2">
+                <div
+                  className="tab-pane fade"
+                  id="panel-icon-left-content-2"
+                  role="tabpanel"
+                  aria-labelledby="tab-icon-left-2"
+                >
                   Contenido Pestaña 2
                 </div>
-                <div className="tab-pane fade" id="panel-icon-left-content-3" role="tabpanel" aria-labelledby="tab-icon-left-3">
+                <div
+                  className="tab-pane fade"
+                  id="panel-icon-left-content-3"
+                  role="tabpanel"
+                  aria-labelledby="tab-icon-left-3"
+                >
                   Contenido Pestaña 3
                 </div>
               </div>
@@ -1246,12 +1262,7 @@ const TabsDocs: React.FC = () => {
               >
                 Contenido Pestaña 1
               </div>
-              <div
-                className="tab-pane fade"
-                id="panel-medium-content-2"
-                role="tabpanel"
-                aria-labelledby="tab-medium-2"
-              >
+              <div className="tab-pane fade" id="panel-medium-content-2" role="tabpanel" aria-labelledby="tab-medium-2">
                 Contenido Pestaña 2
               </div>
             </div>

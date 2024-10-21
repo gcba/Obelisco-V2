@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -26,13 +25,8 @@ export default function HeaderDesktop() {
         </a>
         <div className="container header-container">
           <Link href="/" className="navbar-brand">
-            <Image
-              className="header-logo"
-              src={`${basePath}/images/Obelisco-logo.svg`}
-              alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
-              width={76}
-              height={48}
-            ></Image>
+            <img className="d-none d-xl-block" src={`${basePath}/images/logo_obelisco.svg`} alt="Obelisco" />
+            <img className="d-xl-none" src={`${basePath}/images/logo_obelisco_mobile.svg`} alt="Obelisco" />
           </Link>
           <HeaderMobile />
           <div className="collapse navbar-collapse" id="navbarContent">

@@ -170,11 +170,13 @@ input[type='date'] {
         padding-left: 1rem;
         padding-right: 5.5rem;
       }
+
       &[type='search'] ~ .reset[type='reset'] {
         border: none;
         border-radius: 0.5rem;
         position: absolute;
-        background: transparent $form-search-button-reset no-repeat center center;
+        background: transparent $form-search-button-reset no-repeat center
+          center;
         right: 60px;
         top: 50%;
         transform: translate(0, -50%);
@@ -284,6 +286,7 @@ input[type='search']::-moz-search-clear-button {
 //Input con fondo
 .form-bg-light {
   background-color: $light;
+
   .form-control,
   .custom-select {
     &:not(:disabled) {

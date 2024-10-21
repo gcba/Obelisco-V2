@@ -477,7 +477,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-12',
+      id: 'section-18',
       title: 'Interacciones',
       content: (
         <>
@@ -490,7 +490,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-13',
+      id: 'section-19',
       title: 'Opacity',
       content: (
         <>
@@ -505,7 +505,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-14',
+      id: 'section-20',
       title: 'Overflow',
       content: (
         <>
@@ -528,7 +528,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-15',
+      id: 'section-21',
       title: 'Position',
       content: (
         <>
@@ -554,7 +554,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-16',
+      id: 'section-22',
       title: 'Shadows',
       content: (
         <>
@@ -568,7 +568,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-17',
+      id: 'section-23',
       title: 'Sizing',
       content: (
         <>
@@ -600,7 +600,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-18',
+      id: 'section-24',
       title: 'Espaciados',
       content: (
         <>

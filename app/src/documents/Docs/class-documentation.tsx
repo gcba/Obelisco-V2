@@ -20,8 +20,6 @@ const UpdateComponents: React.FC = () => {
       title: 'Opacity',
       content: (
         <>
-          <h4>Opacity</h4>
-
           <ul className="docs-list">
             <li>
               <code>
@@ -250,7 +248,6 @@ const UpdateComponents: React.FC = () => {
         <>
 
           {/* Texto - Opacidad */}
-          <h4>Texto - Opacidad</h4>
           <ul className="docs-list">
             <li>
               <code>text-primary text-opacity-75</code>
@@ -273,14 +270,13 @@ const UpdateComponents: React.FC = () => {
         <>
 
           {/* Display */}
-          <h4>Display</h4>
           <div>
             <p>Las clases se nombran utilizando el formato:</p>
 
             <p className='mt-3'>Para xs:</p>
             <code>{`.d-{value}`}</code>
 
-            <p className='mt-3'>Para sm y md, lg y xl:</p>
+            <p className='mt-3'>Para sm y md, lg, xl y xxl:</p>
             <code>{`.d-{breakpoint}-{value}`}</code>
 
             <p className='mt-3' >Donde <code>{`{value}`}</code> es uno de:</p>
@@ -307,7 +303,6 @@ const UpdateComponents: React.FC = () => {
       content: (
         <>
           {/* Flex */}
-          <h4>Flex</h4>
 
           <p className='mt-4'>Clase base para flexbox:</p>
           <code>.d-flex</code>
@@ -486,7 +481,6 @@ const UpdateComponents: React.FC = () => {
       title: 'Interacciones',
       content: (
         <>
-          <h4>Interacciones</h4>
           <ul className="docs-list">
             <li><code>.user-select-all</code></li>
             <li><code>.user-select-auto</code></li>
@@ -500,7 +494,6 @@ const UpdateComponents: React.FC = () => {
       title: 'Opacity',
       content: (
         <>
-          <h4>Opacity</h4>
           <ul className="docs-list">
             <li><code>opacity-100</code></li>
             <li><code>opacity-75</code></li>
@@ -516,7 +509,6 @@ const UpdateComponents: React.FC = () => {
       title: 'Overflow',
       content: (
         <>
-          <h4>Overflow</h4>
           <ul className="docs-list">
             <li><code>overflow-auto</code></li>
             <li><code>overflow-hidden</code></li>
@@ -540,8 +532,6 @@ const UpdateComponents: React.FC = () => {
       title: 'Position',
       content: (
         <>
-          <h4>Position</h4>
-
           <p>La forma de usarlo es <code>{`{property}-{position}`}</code></p>
           <p>Donde <code>{`{property}`}</code> es uno de: </p>
 
@@ -568,8 +558,6 @@ const UpdateComponents: React.FC = () => {
       title: 'Shadows',
       content: (
         <>
-          <h4>Shadows</h4>
-
           <ul className="docs-list">
             <li><code>{`shadow-none`}</code></li>
             <li><code>{`shadow-sm`}</code></li>
@@ -584,7 +572,6 @@ const UpdateComponents: React.FC = () => {
       title: 'Sizing',
       content: (
         <>
-          <h4>Ancho y alto</h4>
           <p>Estas clases, funcionan de manera relativa al contenedor padre. </p>
           <p>Donde <code>{`{quantity}`}</code> es uno de: <code>25, 50, 75, 100, auto</code> </p>
 
@@ -647,7 +634,7 @@ const UpdateComponents: React.FC = () => {
       <nav aria-label="Navegación secundaria">
         <ol className="breadcrumb">
           <li className="breadcrumb-item">
-            <Link href="/class-documentation">Documentacion de Clases</Link>
+            <Link href="/documentation">Documentacion de Clases</Link>
           </li>
         </ol>
       </nav>

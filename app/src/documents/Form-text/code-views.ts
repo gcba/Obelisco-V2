@@ -237,7 +237,7 @@ export const INPUT_SELECT = `
 </select>
 `;
 export const INPUT_BACKGROUND = `
-<div class="col-12 col-lg-6 form-bg-light p-4">
+<div class="p-4 form-bg-light">
   <label for="exampleInputTextoBg" class="form-label">
     Ejemplo campo de texto con fondo
   </label>

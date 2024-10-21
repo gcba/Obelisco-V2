@@ -3,6 +3,7 @@ import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
 import {
+  INPUT_BACKGROUND,
   INPUT_BLOCK,
   INPUT_DATE,
   INPUT_DISABLED,
@@ -390,19 +391,21 @@ const FormTextDocs: React.FC = () => {
       content: (
         <>
           <p className="headline-md">Con fondo light</p>
-          <CodeBox codeHTML={INPUT_TEXT}>
+          <CodeBox codeHTML={INPUT_BACKGROUND}>
             <div className="container">
-              <div className="col-12 col-lg-6 form-bg-light p-4">
-                <label htmlFor="exampleInputTextoBg" className="form-label">
-                  Ejemplo campo de texto con fondo
-                </label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="exampleInputTextoBg"
-                  aria-describedby="Texto"
-                  placeholder="Textos"
-                />
+              <div className="col-12 col-lg-6">
+                <div className="p-4 form-bg-light">
+                  <label htmlFor="exampleInputTextoBg" className="form-label">
+                    Ejemplo campo de texto con fondo
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="exampleInputTextoBg"
+                    aria-describedby="Texto"
+                    placeholder="Textos"
+                  />
+                </div>
               </div>
             </div>
           </CodeBox>

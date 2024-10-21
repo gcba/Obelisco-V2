@@ -369,6 +369,9 @@ const UpdateComponents: React.FC = () => {
             Se crea la clase <code>.input-search-with-button</code>, asignada al input de búsqueda, permitiendo que el
             botón con el icono funcione como botón de búsqueda.
           </li>
+          <li>
+            Para los inputs con fondo light, se reemplaza la clase <code>.bg-light</code> de la etiqueta div padre de los inputs, por <code>.form-bg-light</code>.
+          </li>
         </ul>
       ),
     },

@@ -17,40 +17,10 @@ const UpdateComponents: React.FC = () => {
     },
     {
       id: 'section-1',
-      title: 'Opacity',
-      content: (
-        <>
-          <ul className="docs-list">
-            <li>
-              <code>
-                bg-success  bg-opacity-75
-              </code>
-            </li>
-            <li>
-              <code>
-                bg-success  bg-opacity-50
-              </code>
-            </li>
-            <li>
-              <code>
-                bg-success  bg-opacity-25
-              </code>
-            </li>
-            <li>
-              <code>
-                bg-success  bg-opacity-10
-              </code>
-            </li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      id: 'section-2',
       title: 'Bordes',
     },
     {
-      id: 'section-3',
+      id: 'section-2',
       title: '- Aditivo',
       content: (
         <>
@@ -87,7 +57,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-4',
+      id: 'section-3',
       title: '- Sustractivo',
       content: (
         <>
@@ -124,7 +94,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-5',
+      id: 'section-4',
       title: '- Opacidad',
       content: (
         <>
@@ -151,7 +121,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-6',
+      id: 'section-5',
       title: '- Width',
       content: (
         <>
@@ -178,7 +148,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-7',
+      id: 'section-6',
       title: '- Redondeado',
       content: (
         <>
@@ -212,7 +182,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-8',
+      id: 'section-7',
       title: '- Tamaños',
       content: (
         <>
@@ -242,29 +212,54 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-9',
+      id: 'section-8',
       title: 'Texto',
+    },
+    {
+      id: 'section-9',
+      title: ' - Alineamiento de Texto',
       content: (
         <>
 
-          {/* Texto - Opacidad */}
+          {/* Texto - Alineamiento de Texto */}
           <ul className="docs-list">
-            <li>
-              <code>text-primary text-opacity-75</code>
-            </li>
-            <li>
-              <code>text-primary text-opacity-50</code>
-            </li>
-            <li>
-              <code>text-primary text-opacity-25</code>
-            </li>
+            <li><code>text-start</code></li>
+            <li><code>text-center</code></li>
+            <li><code>text-end</code></li>
+            <li><code>text-sm-end</code></li>
+            <li><code>text-md-end</code></li>
+            <li><code>text-lg-end</code></li>
+            <li><code>text-xl-end</code></li>
+            <li><code>text-xxl-end</code></li>
           </ul>
-          {/* Texto - Opacidad */}
+          {/* Texto - Alineamiento de Texto */}
         </>
       ),
     },
     {
       id: 'section-10',
+      title: ' - Peso e Itálica',
+      content: (
+        <>
+
+          {/* Texto - Peso e Itálica */}
+          <ul className="docs-list">
+            <li><code>fw-bold</code></li>
+            <li><code>fw-bolder</code></li>
+            <li><code>fw-semibold</code></li>
+            <li><code>fw-medium</code></li>
+            <li><code>fw-normal</code></li>
+            <li><code>fw-light</code></li>
+            <li><code>fw-lighter</code></li>
+            <li><code>fst-italic</code></li>
+            <li><code>fst-normal</code></li>
+          </ul>
+          {/* Texto - Peso e Itálica */}
+        </>
+      ),
+    },
+    {
+      id: 'section-11',
       title: 'Display',
       content: (
         <>
@@ -298,7 +293,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-11',
+      id: 'section-12',
       title: 'Flex',
       content: (
         <>
@@ -309,7 +304,6 @@ const UpdateComponents: React.FC = () => {
 
           <p className='mt-4'>Clases para flexbox con breakpoints:</p>
           <code>{`.d-{breakpoint}-flex`}</code><br></br>
-          <code>{`.d-{breakpoint}-inline-flex`}</code>
 
           <p>Donde <code>{`{breakpoint}`}</code> puede ser uno de los siguientes valores:</p>
           <ul className="docs-list">
@@ -324,7 +318,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-12',
+      id: 'section-13',
       title: '- Dirección',
       content: (
         <>
@@ -348,7 +342,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-13',
+      id: 'section-14',
       title: '- Justify content ',
       content: (
         <>
@@ -376,7 +370,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-14',
+      id: 'section-15',
       title: '- Align items',
       content: (
         <>
@@ -404,7 +398,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-15',
+      id: 'section-16',
       title: '- Align self',
       content: (
         <>
@@ -430,7 +424,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-16',
+      id: 'section-17',
       title: '- Order',
       content: (
         <>
@@ -462,7 +456,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-17',
+      id: 'section-18',
       title: '- Align content',
       content: (
         <>
@@ -477,7 +471,35 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-18',
+      id: 'section-19',
+      title: 'Grillas',
+      content: (
+        <>
+          <h4>Desplazamientos</h4>
+          {/* Grillas - Desplazamientos */}
+          <div className="container text-center ">
+            <div className="row">
+              <div className="border p-3 bg-light col-md-8">.col-md-8</div>
+              <div className="border p-3 bg-light col-6 col-md-4">.col-6 .col-md-4</div>
+            </div>
+
+            <div className="row">
+              <div className="border p-3 bg-light col-6 col-md-4">.col-6 .col-md-4</div>
+              <div className="border p-3 bg-light col-6 col-md-4">.col-6 .col-md-4</div>
+              <div className="border p-3 bg-light col-6 col-md-4">.col-6 .col-md-4</div>
+            </div>
+
+            <div className="row">
+              <div className="border p-3 bg-light col-6">.col-6</div>
+              <div className="border p-3 bg-light col-6">.col-6</div>
+            </div>
+          </div>
+          {/* Grillas - Desplazamientos */}
+        </>
+      ),
+    },
+    {
+      id: 'section-20',
       title: 'Interacciones',
       content: (
         <>
@@ -490,22 +512,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-19',
-      title: 'Opacity',
-      content: (
-        <>
-          <ul className="docs-list">
-            <li><code>opacity-100</code></li>
-            <li><code>opacity-75</code></li>
-            <li><code>opacity-50</code></li>
-            <li><code>opacity-25</code></li>
-            <li><code>opacity-0</code></li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      id: 'section-20',
+      id: 'section-21',
       title: 'Overflow',
       content: (
         <>
@@ -528,7 +535,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-21',
+      id: 'section-22',
       title: 'Position',
       content: (
         <>
@@ -554,7 +561,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-22',
+      id: 'section-23',
       title: 'Shadows',
       content: (
         <>
@@ -568,7 +575,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-23',
+      id: 'section-24',
       title: 'Sizing',
       content: (
         <>
@@ -600,7 +607,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-24',
+      id: 'section-25',
       title: 'Espaciados',
       content: (
         <>

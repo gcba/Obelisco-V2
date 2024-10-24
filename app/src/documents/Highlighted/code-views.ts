@@ -12,10 +12,10 @@ export const HIGHLIGHTED_BANNER_BUTTONS = `
       </p>
       <div class="panel-footer">
         <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
-          <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>Botón
+          Botón
         </a>
-        <a class="btn btn-secondary btn-lg" href="#" rel="noopener noreferrer">
-          <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>Botón
+        <a class="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
+          Botón
         </a>
       </div>
     </div>
@@ -36,7 +36,7 @@ export const HIGHLIGHTED_BANNER_BUTTON = `
       </p>
       <div class="panel-footer">
         <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
-          <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>Botón
+          Botón
         </a>
       </div>
     </div>
@@ -120,10 +120,10 @@ export const HIGHLIGHTED_BANNER_NO_MEDIA = `
       </p>
       <div class="panel-footer">
         <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
-          <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>Botón
+          Botón
         </a>
-        <a class="btn btn-secondary btn-lg" href="#" rel="noopener noreferrer">
-          <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>Botón
+        <a class="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
+          Botón
         </a>
       </div>
     </div>
@@ -144,10 +144,10 @@ export const HIGHLIGHTED_BANNER_BUTTONS_BG = `
       </p>
       <div class="panel-footer">
         <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
-          <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>Botón
+          Botón
         </a>
-        <a class="btn btn-secondary btn-lg" href="#" rel="noopener noreferrer">
-          <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>Botón
+        <a class="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
+          Botón
         </a>
       </div>
     </div>
@@ -180,10 +180,10 @@ export const HIGHLIGHTED_BANNER_BUTTONS_VIDEO_MP4 = `
       </p>
       <div class="panel-footer">
         <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
-          <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>Botón
+          Botón
         </a>
-        <a class="btn btn-secondary btn-lg" href="#" rel="noopener noreferrer">
-          <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>Botón
+        <a class="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
+          Botón
         </a>
       </div>
     </div>
@@ -211,10 +211,10 @@ export const HIGHLIGHTED_BANNER_BUTTONS_VIDEO_YT = `
       </p>
       <div class="panel-footer">
         <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
-          <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>Botón
+          Botón
         </a>
-        <a class="btn btn-secondary btn-lg" href="#" rel="noopener noreferrer">
-          <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>Botón
+        <a class="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
+          Botón
         </a>
       </div>
     </div>
@@ -231,7 +231,7 @@ export const HIGHLIGHTED_JOIN_IMAGE = `
         <p class="card-text">Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces</p>
         <div class="panel-footer">
           <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>Botón
+            Botón
           </a>
         </div>
       </div>
@@ -304,7 +304,7 @@ export const HIGHLIGHTED_JOIN_VIDEO = `
         <p class="card-text">Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces</p>
         <div class="panel-footer">
           <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>Botón
+            Botón
           </a>
         </div>
       </div>
@@ -325,7 +325,7 @@ export const HIGHLIGHTED_JOIN_VIDEO = `
         <p class="card-text">Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces</p>
         <div class="panel-footer">
           <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
-            <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>Botón
+            Botón
           </a>
         </div>
       </div>
@@ -340,7 +340,7 @@ export const HIGHLIGHTED_LATERAL_BUTTON = `
     <p class="card-text">Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces.</p>
     <div class="panel-footer">
       <a class="btn btn-primary btn-lg btn-block" href="#" rel="noopener noreferrer">
-        <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>Botón
+        Botón
       </a>
     </div>
   </div>

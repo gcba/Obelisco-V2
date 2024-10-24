@@ -219,8 +219,8 @@ export const FOOTER_INDICATOR = `<h2 class="sr-only">Navegación de pie de pági
   <div class="container">
     <h3 class="footer-info-text">¿Te fue útil esta página?</h3>
     <div class="footer-info-actions">
-      <button class="btn btn-primary">Sí, me fue útil</button>
-      <button class="btn btn-secondary">No me sirvió</button>
+      <button class="btn btn-outline-secondary">Sí, me fue útil</button>
+      <button class="btn btn-outline-secondary">No me sirvió</button>
     </div>
   </div>
 </div>

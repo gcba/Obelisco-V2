@@ -5,32 +5,44 @@ import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
 import {
-  PROGRESSBAR_DESCRIPTION_INFO,
+  PROGRESSBAR_DESCRIPTION_PRIMARY,
   PROGRESSBAR_DESCRIPTION_SUCCESS,
-  PROGRESSBAR_TYPES_INFO,
+  PROGRESSBAR_TYPES_PRIMARY,
   PROGRESSBAR_TYPES_SUCCESS,
 } from './code-views';
 
 const ProgressBarDocs: React.FC = () => {
   const sections = [
     {
-      id: 'section-1',
       title: 'Barra de progreso',
       h1: true,
       content: (
-        <MainDescription description="Las barras de progreso muestran visualmente el avance de un proceso de varios pasos a partir de la interacción de la persona usuaria." />
+        <>
+          <MainDescription description="Las barras de progreso muestran visualmente el avance de un proceso de varios pasos a partir de la interacción de la persona usuaria." />
+          <p className="lead mb-4">
+            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
+            <a
+              href="https://gcba.github.io/estandares/componentes/barra-de-progreso/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              enlace
+            </a>
+            .
+          </p>
+        </>
       ),
     },
     {
-      id: 'section-2',
+      id: 'section-1',
       title: 'Simple',
       content: (
         <>
-          <CodeBox codeHTML={PROGRESSBAR_TYPES_INFO}>
+          <CodeBox codeHTML={PROGRESSBAR_TYPES_PRIMARY}>
             <div className="container">
               <div className="progress">
                 <div
-                  className="progress-bar bg-info"
+                  className="progress-bar bg-primary"
                   role="progressbar"
                   aria-valuenow={25}
                   aria-valuemin={0}
@@ -41,7 +53,7 @@ const ProgressBarDocs: React.FC = () => {
               <br />
               <div className="progress">
                 <div
-                  className="progress-bar bg-info"
+                  className="progress-bar bg-primary"
                   role="progressbar"
                   aria-valuenow={50}
                   aria-valuemin={0}
@@ -52,7 +64,7 @@ const ProgressBarDocs: React.FC = () => {
               <br />
               <div className="progress">
                 <div
-                  className="progress-bar bg-info"
+                  className="progress-bar bg-primary"
                   role="progressbar"
                   aria-valuenow={100}
                   aria-valuemin={0}
@@ -107,16 +119,16 @@ const ProgressBarDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-3',
+      id: 'section-2',
       title: 'Con descripción',
       content: (
         <>
-          <CodeBox codeHTML={PROGRESSBAR_DESCRIPTION_INFO}>
+          <CodeBox codeHTML={PROGRESSBAR_DESCRIPTION_PRIMARY}>
             <div className="container">
-              <p className="steps">Descripción</p>
+              <p className="progress-description">Descripción</p>
               <div className="progress">
                 <div
-                  className="progress-bar bg-info"
+                  className="progress-bar bg-primary"
                   role="progressbar"
                   aria-valuenow={50}
                   aria-valuemin={0}
@@ -127,10 +139,10 @@ const ProgressBarDocs: React.FC = () => {
 
               <br />
 
-              <p className="steps">Descripción</p>
+              <p className="progress-description">Descripción</p>
               <div className="progress">
                 <div
-                  className="progress-bar bg-info"
+                  className="progress-bar bg-primary"
                   role="progressbar"
                   aria-valuenow={100}
                   aria-valuemin={0}
@@ -143,7 +155,7 @@ const ProgressBarDocs: React.FC = () => {
           <br />
           <CodeBox codeHTML={PROGRESSBAR_DESCRIPTION_SUCCESS}>
             <div className="container">
-              <p className="steps">Descripción</p>
+              <p className="progress-description">Descripción</p>
               <div className="progress">
                 <div
                   className="progress-bar bg-success"
@@ -157,7 +169,7 @@ const ProgressBarDocs: React.FC = () => {
 
               <br />
 
-              <p className="steps">Descripción</p>
+              <p className="progress-description">Descripción</p>
               <div className="progress">
                 <div
                   className="progress-bar bg-success"
@@ -170,10 +182,6 @@ const ProgressBarDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-          <br />
-          <br />
-          <br />
-          <br />
         </>
       ),
     },

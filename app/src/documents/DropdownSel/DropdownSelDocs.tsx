@@ -31,8 +31,9 @@ const sections = [
             target="_blank"
             rel="noopener noreferrer"
           >
-            enlace.
+            enlace
           </a>
+          .
         </p>
       </>
     ),
@@ -64,7 +65,7 @@ const sections = [
               data-bs-auto-close="outside"
             >
               <span className="material-symbols-rounded o-icon" aria-label="hidden">
-                person
+                add
               </span>
               <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
               <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
@@ -137,7 +138,7 @@ const sections = [
               data-bs-auto-close="outside"
             >
               <span className="material-symbols-rounded o-icon" aria-label="hidden">
-                person
+                add
               </span>
               <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
               <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
@@ -210,7 +211,7 @@ const sections = [
               data-bs-auto-close="outside"
             >
               <span className="material-symbols-rounded o-icon" aria-label="hidden">
-                person
+                add
               </span>
               <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
               <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
@@ -287,7 +288,7 @@ const sections = [
               data-bs-auto-close="outside"
             >
               <span className="material-symbols-rounded o-icon" aria-label="hidden">
-                person
+                add
               </span>
               <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
               <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
@@ -360,7 +361,7 @@ const sections = [
               data-bs-auto-close="outside"
             >
               <span className="material-symbols-rounded o-icon" aria-label="hidden">
-                person
+                add
               </span>
               <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
               <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
@@ -433,7 +434,7 @@ const sections = [
               data-bs-auto-close="outside"
             >
               <span className="material-symbols-rounded o-icon" aria-label="hidden">
-                person
+                add
               </span>
               <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
               <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
@@ -510,7 +511,7 @@ const sections = [
                 id="btnDropdownCheckboxJs"
               >
                 <span className="material-symbols-rounded o-icon" aria-label="hidden">
-                  person
+                  add
                 </span>
                 <span className="btn-dropdown-text ellipsis-1">
                   Desplegable
@@ -578,7 +579,7 @@ const sections = [
                 id="btnDropdownRadioJs"
               >
                 <span className="material-symbols-rounded o-icon" aria-label="hidden">
-                  person
+                  add
                 </span>
                 <span className="btn-dropdown-text ellipsis-1" id="btnDropdownRadioTextJs">
                   Desplegable

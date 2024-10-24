@@ -105,6 +105,10 @@
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: $white;
+  @include media-breakpoint-down(xl) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 
   .panel-horizontal {
     @extend .container;

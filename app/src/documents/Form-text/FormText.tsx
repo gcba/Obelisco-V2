@@ -3,6 +3,7 @@ import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
 import {
+  INPUT_BACKGROUND,
   INPUT_BLOCK,
   INPUT_DATE,
   INPUT_DISABLED,
@@ -170,7 +171,7 @@ const FormTextDocs: React.FC = () => {
           <CodeBox codeHTML={INPUT_DISABLED}>
             <div className="container">
               <div className="col-12 col-lg-6">
-                <label htmlFor="example-five-disabled" className="form-label">
+                <label htmlFor="example-five-disabled" className="form-label disabled">
                   Ejemplo campo de texto
                 </label>
                 <input
@@ -186,7 +187,7 @@ const FormTextDocs: React.FC = () => {
               <br />
 
               <div className="col-12 col-lg-6">
-                <label htmlFor="example-four-disabled" className="form-label">
+                <label htmlFor="example-four-disabled" className="form-label disabled">
                   Ejemplo campo de numero
                 </label>
                 <input
@@ -202,7 +203,7 @@ const FormTextDocs: React.FC = () => {
               <br />
 
               <div className="col-12 col-lg-6">
-                <label htmlFor="example-three-disabled" className="form-label">
+                <label htmlFor="example-three-disabled" className="form-label disabled">
                   Ejemplo campo de mail
                 </label>
                 <input
@@ -218,7 +219,7 @@ const FormTextDocs: React.FC = () => {
               <br />
 
               <div className="col-12 col-lg-6">
-                <label htmlFor="example-two-disabled" className="form-label">
+                <label htmlFor="example-two-disabled" className="form-label disabled">
                   Ejemplo campo de fecha
                 </label>
                 <input
@@ -234,7 +235,7 @@ const FormTextDocs: React.FC = () => {
               <br />
 
               <div className="col-12 col-lg-6">
-                <label htmlFor="example-one-disabled" className="form-label">
+                <label htmlFor="example-one-disabled" className="form-label disabled">
                   Ejemplo TextArea
                 </label>
                 <textarea className="form-control" id="example-one-disabled" disabled></textarea>
@@ -243,7 +244,7 @@ const FormTextDocs: React.FC = () => {
               <br />
 
               <div className="col-12 col-lg-6">
-                <label htmlFor="select-example" className="form-label">
+                <label htmlFor="select-example" className="form-label disabled">
                   Ejemplo campo de selección deshabilitado.
                 </label>
                 <select
@@ -379,6 +380,33 @@ const FormTextDocs: React.FC = () => {
                   <p>El campo es invalido</p>
                 </div>
               </form>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+    {
+      id: 'section-9',
+      title: 'Con fondo',
+      content: (
+        <>
+          <p className="headline-md">Con fondo light</p>
+          <CodeBox codeHTML={INPUT_BACKGROUND}>
+            <div className="container">
+              <div className="col-12 col-lg-6">
+                <div className="p-4 form-bg-light">
+                  <label htmlFor="exampleInputTextoBg" className="form-label">
+                    Ejemplo campo de texto con fondo
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="exampleInputTextoBg"
+                    aria-describedby="Texto"
+                    placeholder="Textos"
+                  />
+                </div>
+              </div>
             </div>
           </CodeBox>
         </>

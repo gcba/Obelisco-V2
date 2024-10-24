@@ -9,7 +9,7 @@ const UpdateComponents: React.FC = () => {
       title: 'Clases disponibles',
       content: (
         <>
-          <MainDescription description="En la siguiente sección podemos encontrar las clases heredadas de Bootstrap 5, disponibles en Obelisco las cúales te permiten facilitar el uso y el armado del sistema de diseño." />
+          <MainDescription description="En la siguiente sección podemos encontrar las clases heredadas de Bootstrap 5 disponibles en Obelisco, las cúales te permiten facilitar el uso y el armado del sistema de diseño." />
         </>
       ),
       h1: true,

@@ -370,7 +370,8 @@ const UpdateComponents: React.FC = () => {
             botón con el icono funcione como botón de búsqueda.
           </li>
           <li>
-            Para los inputs con fondo light, se reemplaza la clase <code>.bg-light</code> de la etiqueta div padre de los inputs, por <code>.form-bg-light</code>.
+            Para los inputs con fondo light, se reemplaza la clase <code>.bg-light</code> de la etiqueta div padre de
+            los inputs, por <code>.form-bg-light</code>.
           </li>
         </ul>
       ),

@@ -27,8 +27,9 @@ const NavVerticalDocs: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              enlace.
+              enlace
             </a>
+            .
           </p>
         </>
       ),
@@ -57,11 +58,6 @@ const NavVerticalDocs: React.FC = () => {
                       <span>Link</span>
                     </LinkClient>
                   </li>
-                  <li className="nav-item">
-                    <a className="nav-link disabled" aria-disabled="true" tabIndex={-1}>
-                      <span>Deshabilitado</span>
-                    </a>
-                  </li>
                 </ul>
               </nav>
             </div>
@@ -81,7 +77,9 @@ const NavVerticalDocs: React.FC = () => {
                   <li className="nav-item">
                     <LinkClient className="nav-link">
                       <div className="nav-icon">
-                        <i className="bx bxs-user-circle"></i>
+                        <span className="material-symbols-rounded o-icon" aria-label="hidden">
+                          add
+                        </span>
                         <span>Link</span>
                       </div>
                     </LinkClient>
@@ -89,7 +87,9 @@ const NavVerticalDocs: React.FC = () => {
                   <li className="nav-item">
                     <a className="nav-link active">
                       <div className="nav-icon">
-                        <i className="bx bxs-user-circle"></i>
+                        <span className="material-symbols-rounded o-icon" aria-label="hidden">
+                          add
+                        </span>
                         <span>Activo</span>
                       </div>
                     </a>
@@ -97,18 +97,12 @@ const NavVerticalDocs: React.FC = () => {
                   <li className="nav-item">
                     <LinkClient className="nav-link">
                       <div className="nav-icon">
-                        <i className="bx bxs-user-circle"></i>
+                        <span className="material-symbols-rounded o-icon" aria-label="hidden">
+                          add
+                        </span>
                         <span>Link</span>
                       </div>
                     </LinkClient>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link disabled" aria-disabled="true" tabIndex={-1}>
-                      <div className="nav-icon">
-                        <i className="bx bxs-user-circle"></i>
-                        <span>Deshabilitado</span>
-                      </div>
-                    </a>
                   </li>
                 </ul>
               </nav>
@@ -180,7 +174,9 @@ const NavVerticalDocs: React.FC = () => {
                   <li className="nav-item">
                     <LinkClient className="nav-link">
                       <div className="nav-icon">
-                        <i className="bx bxs-user-circle"></i>
+                        <span className="material-symbols-rounded o-icon" aria-label="hidden">
+                          add
+                        </span>
                         <span>Categorías</span>
                       </div>
                     </LinkClient>
@@ -188,7 +184,9 @@ const NavVerticalDocs: React.FC = () => {
                   <li className="nav-item">
                     <a className="nav-link active-child">
                       <div className="nav-icon">
-                        <i className="bx bxs-user-circle"></i>
+                        <span className="material-symbols-rounded o-icon" aria-label="hidden">
+                          add
+                        </span>
                         <span>Locales y comercios</span>
                       </div>
                     </a>
@@ -218,7 +216,9 @@ const NavVerticalDocs: React.FC = () => {
                   <li className="nav-item">
                     <LinkClient className="nav-link">
                       <div className="nav-icon">
-                        <i className="bx bxs-user-circle"></i>
+                        <span className="material-symbols-rounded o-icon" aria-label="hidden">
+                          add
+                        </span>
                         <span>Actividades jurídicas</span>
                       </div>
                     </LinkClient>
@@ -226,7 +226,9 @@ const NavVerticalDocs: React.FC = () => {
                   <li className="nav-item">
                     <LinkClient className="nav-link">
                       <div className="nav-icon">
-                        <i className="bx bxs-user-circle"></i>
+                        <span className="material-symbols-rounded o-icon" aria-label="hidden">
+                          add
+                        </span>
                         <span>Otras actividades</span>
                       </div>
                     </LinkClient>
@@ -313,7 +315,9 @@ const NavVerticalDocs: React.FC = () => {
                   <li className="nav-item">
                     <LinkClient className="nav-link">
                       <div className="nav-icon">
-                        <i className="bx bxs-user-circle"></i>
+                        <span className="material-symbols-rounded o-icon" aria-label="hidden">
+                          add
+                        </span>
                         <span>Categorías</span>
                       </div>
                     </LinkClient>
@@ -321,7 +325,9 @@ const NavVerticalDocs: React.FC = () => {
                   <li className="nav-item">
                     <a className="nav-link active-child">
                       <div className="nav-icon">
-                        <i className="bx bxs-user-circle"></i>
+                        <span className="material-symbols-rounded o-icon" aria-label="hidden">
+                          add
+                        </span>
                         <span>Locales y comercios</span>
                       </div>
                     </a>
@@ -363,7 +369,9 @@ const NavVerticalDocs: React.FC = () => {
                   <li className="nav-item">
                     <LinkClient className="nav-link">
                       <div className="nav-icon">
-                        <i className="bx bxs-user-circle"></i>
+                        <span className="material-symbols-rounded o-icon" aria-label="hidden">
+                          add
+                        </span>
                         <span>Actividades jurídicas</span>
                       </div>
                     </LinkClient>
@@ -371,7 +379,9 @@ const NavVerticalDocs: React.FC = () => {
                   <li className="nav-item">
                     <LinkClient className="nav-link">
                       <div className="nav-icon">
-                        <i className="bx bxs-user-circle"></i>
+                        <span className="material-symbols-rounded o-icon" aria-label="hidden">
+                          add
+                        </span>
                         <span>Otras actividades</span>
                       </div>
                     </LinkClient>

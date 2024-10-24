@@ -1,5 +1,5 @@
 export const INPUT_TEXT = `
-  <label htmlFor="exampleInputTexto" class="form-label">
+  <label for="exampleInputTexto" class="form-label">
     Ejemplo campo de texto
   </label>
   <input
@@ -11,7 +11,7 @@ export const INPUT_TEXT = `
   />
 `;
 export const INPUT_NUMBER = `
-  <label htmlFor="exampleInputNumber" class="form-label">
+  <label for="exampleInputNumber" class="form-label">
     Ejemplo campo de numero
   </label>
   <input
@@ -23,7 +23,7 @@ export const INPUT_NUMBER = `
   />
 `;
 export const INPUT_MAIL = `
-  <label htmlFor="exampleInputEmail" class="form-label">
+  <label for="exampleInputEmail" class="form-label">
     Ejemplo campo de mail
   </label>
   <input
@@ -35,7 +35,7 @@ export const INPUT_MAIL = `
   />
 `;
 export const INPUT_DATE = `
-  <label htmlFor="exampleInputDate" class="form-label">
+  <label for="exampleInputDate" class="form-label">
     Fecha
   </label>
   <input
@@ -47,7 +47,7 @@ export const INPUT_DATE = `
   />
 `;
 export const INPUT_BLOCK = `
-  <label htmlFor="exampleFormControlTextarea1" class="form-label">
+  <label for="exampleFormControlTextarea1" class="form-label">
     Ejemplo TextArea
   </label>
   <textarea class="form-control" id="exampleFormControlTextarea1" ></textarea>
@@ -55,7 +55,7 @@ export const INPUT_BLOCK = `
 export const INPUT_DISABLED = `
   <div class="container">
     <div class="col-12 col-lg-6">
-      <label htmlFor="example-five" class="form-label">
+      <label for="example-five" class="form-label disabled">
         Ejemplo campo de texto
       </label>
       <input
@@ -69,7 +69,7 @@ export const INPUT_DISABLED = `
     </div>
 
     <div class="col-12 col-lg-6">
-      <label htmlFor="example-four" class="form-label">
+      <label for="example-four" class="form-label disabled">
         Ejemplo campo de numero
       </label>
       <input
@@ -83,7 +83,7 @@ export const INPUT_DISABLED = `
     </div>
 
     <div class="col-12 col-lg-6">
-      <label htmlFor="example-three" class="form-label">
+      <label for="example-three" class="form-label disabled">
         Ejemplo campo de mail
       </label>
       <input
@@ -97,7 +97,7 @@ export const INPUT_DISABLED = `
     </div>
 
     <div class="col-12 col-lg-6">
-      <label htmlFor="example-two" class="form-label">
+      <label for="example-two" class="form-label disabled">
         Ejemplo campo de fecha
       </label>
       <input
@@ -111,14 +111,14 @@ export const INPUT_DISABLED = `
     </div>
 
     <div class="col-12 col-lg-6">
-      <label htmlFor="example-one" class="form-label">
+      <label for="example-one" class="form-label disabled">
         Ejemplo TextArea
       </label>
       <textarea class="form-control" id="example-one" disabled ></textarea>
     </div>
 
     <div class="col-12 col-lg-6">    
-      <label htmlFor="example-disabled-select" class='form-label'>
+      <label for="example-disabled-select" class='form-label disabled'>
         Ejemplo campo de selección.
       </label>
       <select class="form-control form-select" aria-label="Default select example" disabled>
@@ -132,7 +132,7 @@ export const INPUT_DISABLED = `
 `;
 export const INPUT_VALIDATION_TEXT = `
   <form class="col-12 col-lg-6">
-    <label htmlFor="ejemplo-1" class="form-label">
+    <label for="ejemplo-1" class="form-label">
       Ejemplo campo de texto
     </label>
     <input
@@ -153,7 +153,7 @@ export const INPUT_VALIDATION_TEXT = `
 `;
 export const INPUT_VALIDATION_NUMBER = `
   <form class="col-12 col-lg-6">
-    <label htmlFor="ejemplo-2" class="form-label">
+    <label for="ejemplo-2" class="form-label">
       Ejemplo campo de numero
     </label>
     <input
@@ -174,7 +174,7 @@ export const INPUT_VALIDATION_NUMBER = `
 `;
 export const INPUT_VALIDATION_MAIL = `
   <form class="col-12 col-lg-6">
-    <label htmlFor="ejemplo-3-1" class="form-label">
+    <label for="ejemplo-3-1" class="form-label">
       Ejemplo campo de mail
     </label>
     <input
@@ -195,7 +195,7 @@ export const INPUT_VALIDATION_MAIL = `
 `;
 export const INPUT_VALIDATION_DATE = `
   <form class="col-12 col-lg-6">
-    <label htmlFor="ejemplo-4" class="form-label">
+    <label for="ejemplo-4" class="form-label">
       Ejemplo campo de fecha
     </label>
     <input
@@ -216,7 +216,7 @@ export const INPUT_VALIDATION_DATE = `
 `;
 export const INPUT_VALIDATION_TEXTAREA = `
   <form class="col-12 col-lg-6">
-    <label htmlFor="ejemplo-5" class="form-label">
+    <label for="ejemplo-5" class="form-label">
       Ejemplo TextArea
     </label>
     <textarea class="form-control is-invalid" id="ejemplo-5" required ></textarea>
@@ -235,4 +235,18 @@ export const INPUT_SELECT = `
     <option value="2">Opción</option>
     <option value="3">Opción</option>
 </select>
+`;
+export const INPUT_BACKGROUND = `
+<div class="p-4 form-bg-light">
+  <label for="exampleInputTextoBg" class="form-label">
+    Ejemplo campo de texto con fondo
+  </label>
+  <input
+    type="text"
+    class="form-control"
+    id="exampleInputTextoBg"
+    aria-describedby="Texto"
+    placeholder="Textos"
+  />
+</div>
 `;

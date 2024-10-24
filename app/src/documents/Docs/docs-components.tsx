@@ -369,6 +369,10 @@ const UpdateComponents: React.FC = () => {
             Se crea la clase <code>.input-search-with-button</code>, asignada al input de búsqueda, permitiendo que el
             botón con el icono funcione como botón de búsqueda.
           </li>
+          <li>
+            Para los inputs con fondo light, se reemplaza la clase <code>.bg-light</code> de la etiqueta div padre de
+            los inputs, por <code>.form-bg-light</code>.
+          </li>
         </ul>
       ),
     },
@@ -437,6 +441,9 @@ const UpdateComponents: React.FC = () => {
           <li>
             La estructura de los componentes desplegables y buscador, se ha modificado por lo que deben ser modificados
             en el header también.
+          </li>
+          <li>
+            La clase <code>.header-logo</code> queda deprecada.
           </li>
         </ul>
       ),

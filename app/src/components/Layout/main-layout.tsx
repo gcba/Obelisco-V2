@@ -13,7 +13,7 @@ export const stylesPages = [
 export const formsPages = [
   { text: 'Buscador', url: '/components/form-search', id: 1 },
   { text: 'Casillas de selección', url: '/components/form-selection', id: 2 },
-  { text: 'Formulario de Textos', url: '/components/form-text', id: 3 },
+  { text: 'Formulario de textos', url: '/components/form-text', id: 3 },
   { text: 'Pasos de un formulario', url: '/components/steps-form', id: 4 },
 ];
 

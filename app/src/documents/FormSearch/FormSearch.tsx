@@ -25,7 +25,7 @@ const FormSearchDocs: React.FC = () => {
                   Ejemplo Buscador
                 </label>
                 <div className="search-container">
-                  <input type="search" className="form-control input-search" id="search" placeholder="Buscador" />
+                  <input type="search" className="form-control input-search" id="search" placeholder="Buscar..." />
                   <button className="reset" type="reset" aria-label="Borrar"></button>
                 </div>
               </form>
@@ -50,7 +50,7 @@ const FormSearchDocs: React.FC = () => {
                     type="search"
                     className="form-control input-search input-search-with-button"
                     id="search-btn"
-                    placeholder="Buscador"
+                    placeholder="Buscar..."
                   />
                   <button className="reset" type="reset" aria-label="Borrar"></button>
                   <button className="button-search" type="submit" aria-label="Buscar"></button>
@@ -69,7 +69,7 @@ const FormSearchDocs: React.FC = () => {
           <div className="container">
             <div className="col-12 col-lg-6">
               <form>
-                <label htmlFor="search-btn" className="form-label">
+                <label htmlFor="search-btn" className="form-label disabled">
                   Ejemplo buscador deshabilitado
                 </label>
                 <div className="search-container">
@@ -77,7 +77,7 @@ const FormSearchDocs: React.FC = () => {
                     type="search"
                     className="form-control input-search input-search-with-button"
                     id="search-btn"
-                    placeholder="Buscador"
+                    placeholder="Buscar..."
                     disabled
                   />
                   <button className="reset" type="reset" aria-label="Borrar"></button>

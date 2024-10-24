@@ -9,7 +9,7 @@ const UpdateComponents: React.FC = () => {
       title: 'Clases disponibles',
       content: (
         <>
-          <MainDescription description="(Texto a modificar) Si tu proyecto es del GCBA/Gubernamental, deberías usar los componentes de Obelisco, basados en nuestro Sistema de Diseño. El cúal cumple los estándares de accesibilidad, y tienen continuo soporte.  " />
+          <MainDescription description="En la siguiente sección podemos encontrar las clases heredadas de Bootstrap 5, disponibles en Obelisco las cúales te permiten facilitar el uso y el armado del sistema de diseño." />
         </>
       ),
       h1: true,
@@ -95,33 +95,6 @@ const UpdateComponents: React.FC = () => {
     },
     {
       id: 'section-4',
-      title: '- Opacidad',
-      content: (
-        <>
-          {/* Opacidad */}
-          <ul className="docs-list">
-            <li>
-              <code>border border-success</code>
-            </li>
-            <li>
-              <code>border border-success border-opacity-75</code>
-            </li>
-            <li>
-              <code>border border-success border-opacity-50</code>
-            </li>
-            <li>
-              <code>border border-success border-opacity-25</code>
-            </li>
-            <li>
-              <code>border border-success border-opacity-10</code>
-            </li>
-          </ul>
-          {/* Opacidad */}
-        </>
-      ),
-    },
-    {
-      id: 'section-5',
       title: '- Width',
       content: (
         <>
@@ -148,7 +121,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-6',
+      id: 'section-5',
       title: '- Redondeado',
       content: (
         <>
@@ -182,7 +155,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-7',
+      id: 'section-6',
       title: '- Tamaños',
       content: (
         <>
@@ -212,11 +185,11 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-8',
+      id: 'section-7',
       title: 'Texto',
     },
     {
-      id: 'section-9',
+      id: 'section-8',
       title: ' - Alineamiento de Texto',
       content: (
         <>
@@ -237,7 +210,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-10',
+      id: 'section-9',
       title: ' - Peso e Itálica',
       content: (
         <>
@@ -259,7 +232,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-11',
+      id: 'section-10',
       title: 'Display',
       content: (
         <>
@@ -293,7 +266,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-12',
+      id: 'section-11',
       title: 'Flex',
       content: (
         <>
@@ -318,7 +291,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-13',
+      id: 'section-12',
       title: '- Dirección',
       content: (
         <>
@@ -342,7 +315,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-14',
+      id: 'section-13',
       title: '- Justify content ',
       content: (
         <>
@@ -370,7 +343,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-15',
+      id: 'section-14',
       title: '- Align items',
       content: (
         <>
@@ -398,7 +371,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-16',
+      id: 'section-15',
       title: '- Align self',
       content: (
         <>
@@ -424,7 +397,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-17',
+      id: 'section-16',
       title: '- Order',
       content: (
         <>
@@ -456,7 +429,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-18',
+      id: 'section-17',
       title: '- Align content',
       content: (
         <>
@@ -471,48 +444,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-19',
-      title: 'Grillas',
-      content: (
-        <>
-          <h4>Desplazamientos</h4>
-          {/* Grillas - Desplazamientos */}
-          <div className="container text-center ">
-            <div className="row">
-              <div className="border p-3 bg-light col-md-8">.col-md-8</div>
-              <div className="border p-3 bg-light col-6 col-md-4">.col-6 .col-md-4</div>
-            </div>
-
-            <div className="row">
-              <div className="border p-3 bg-light col-6 col-md-4">.col-6 .col-md-4</div>
-              <div className="border p-3 bg-light col-6 col-md-4">.col-6 .col-md-4</div>
-              <div className="border p-3 bg-light col-6 col-md-4">.col-6 .col-md-4</div>
-            </div>
-
-            <div className="row">
-              <div className="border p-3 bg-light col-6">.col-6</div>
-              <div className="border p-3 bg-light col-6">.col-6</div>
-            </div>
-          </div>
-          {/* Grillas - Desplazamientos */}
-        </>
-      ),
-    },
-    {
-      id: 'section-20',
-      title: 'Interacciones',
-      content: (
-        <>
-          <ul className="docs-list">
-            <li><code>.user-select-all</code></li>
-            <li><code>.user-select-auto</code></li>
-            <li><code>.user-select-none</code></li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      id: 'section-21',
+      id: 'section-18',
       title: 'Overflow',
       content: (
         <>
@@ -535,7 +467,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-22',
+      id: 'section-19',
       title: 'Position',
       content: (
         <>
@@ -561,7 +493,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-23',
+      id: 'section-20',
       title: 'Shadows',
       content: (
         <>
@@ -575,7 +507,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-24',
+      id: 'section-21',
       title: 'Sizing',
       content: (
         <>
@@ -607,7 +539,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-25',
+      id: 'section-22',
       title: 'Espaciados',
       content: (
         <>

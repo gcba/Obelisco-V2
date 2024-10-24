@@ -79,7 +79,7 @@ $green-900: #1c4b2d;
 $green-950: #0a2915;
 
 /* === Red === */
-$red-50: #faebeb;
+$red-50: #fbefef;
 $red-100: #f5d6d6;
 $red-200: #ebadad;
 $red-300: #e08585;
@@ -227,11 +227,11 @@ $active-outline: 0.125rem solid $blue-700;
 
 /*  Visited  */
 $visited-color: $purple-700; // #6D0099
-$visited-bg-dark: $purple-200; // #E299FF
+$visited-ondark: $purple-200; // #E299FF
 
 /*  Disabled  */
-$disabled-text: $grisulado-600; // #69788A
-$disabled-bg: $grisulado-400; // #9EAAB8
+$disabled-text: $grisulado-400; // #9EAAB8
+$disabled-bg: $grisulado-100; // #e6ebf0;
 $disabled-on-dark: $grisulado-700; // #5C6A7A
 
 /* === Enlace || Style anchor elements. === */
@@ -249,3 +249,6 @@ $outline-border: 0.125rem solid $grisulado-100;
 
 $outline-transparent: 0.25rem solid transparent;
 $outline-transparent-subtle: 0.125rem solid transparent;
+
+/* === Inputs === */
+$placeholder-color: $grisulado-700;

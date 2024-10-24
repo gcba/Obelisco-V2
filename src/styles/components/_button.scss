@@ -12,10 +12,6 @@ $btn-colors-specific: (
   ),
 );
 
-/*  Button Disabled  */
-$btn-disabled-text: $grisulado-400; // #9EAAB8
-$btn-disabled-bg: $grisulado-100; // #E6EBF0
-
 $theme-colors: map-merge(
   $theme-colors,
   (
@@ -36,9 +32,9 @@ $theme-color-btn-bg-hover: (
 @mixin btn-disabled($color) {
   &.disabled,
   &:disabled {
-    background-color: $btn-disabled-bg;
-    outline-color: $btn-disabled-bg;
-    color: $btn-disabled-text;
+    background-color: $disabled-bg;
+    outline-color: $disabled-bg;
+    color: $disabled-text;
     pointer-events: none;
     opacity: 1;
   }

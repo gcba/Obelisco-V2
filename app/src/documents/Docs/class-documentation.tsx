@@ -17,10 +17,52 @@ const UpdateComponents: React.FC = () => {
     },
     {
       id: 'section-1',
-      title: 'Bordes',
+      title: 'Accesos',
+      content: (
+        <>
+          <h6>Disposición de <a href="https://gcba.github.io/Obelisco-V2/components/access#section-5" target="_blank" >Accesos</a>.</h6>
+
+          <ul className="docs-list">
+            <li><code>access-items-4</code></li>
+            <li><code>access-items-4 row-cols-md-1</code></li>
+            <li><code>access-items-3</code></li>
+            <li><code>access-items-3 row-cols-md-1</code></li>
+            <li><code>access-items-1</code></li>
+          </ul>
+        </>
+      )
     },
     {
       id: 'section-2',
+      title: 'Background',
+      content: (
+        <>
+          <p>Estas son las clases de nuestra paleta de colores <a target="_blank" href="https://gcba.github.io/Obelisco-V2/components/colors"> theme-colors</a>.</p>
+          <ul className="docs-list" >
+            <li><code>bg-primary</code></li>
+            <li><code>bg-secondary</code></li>
+            <li><code>bg-success</code></li>
+            <li><code>bg-danger</code></li>
+            <li><code>bg-warning</code></li>
+            <li><code>bg-info</code></li>
+            <li><code>bg-tertiary</code></li>
+            <li><code>bg-body</code></li>
+            <li><code>bg-light</code></li>
+            <li><code>bg-dark</code></li>
+            <li><code>bg-berries</code></li>
+            <li><code>bg-sky</code></li>
+            <li><code>form-bg-light</code></li>
+          </ul>
+
+        </>
+      )
+    },
+    {
+      id: 'section-3',
+      title: 'Bordes',
+    },
+    {
+      id: 'section-4',
       title: '- Aditivo',
       content: (
         <>
@@ -57,7 +99,84 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-3',
+      id: 'section-5',
+      title: ' - Alineamiento de Texto',
+      content: (
+        <>
+
+          {/* Texto - Alineamiento de Texto */}
+          <ul className="docs-list">
+            <li><code>text-start</code></li>
+            <li><code>text-center</code></li>
+            <li><code>text-end</code></li>
+            <li><code>text-sm-end</code></li>
+            <li><code>text-md-end</code></li>
+            <li><code>text-lg-end</code></li>
+            <li><code>text-xl-end</code></li>
+            <li><code>text-xxl-end</code></li>
+          </ul>
+          {/* Texto - Alineamiento de Texto */}
+        </>
+      ),
+    },
+    {
+      id: 'section-6',
+      title: ' - Peso e Itálica',
+      content: (
+        <>
+
+          {/* Texto - Peso e Itálica */}
+          <ul className="docs-list">
+            <li><code>fw-bold</code></li>
+            <li><code>fw-bolder</code></li>
+            <li><code>fw-semibold</code></li>
+            <li><code>fw-medium</code></li>
+            <li><code>fw-normal</code></li>
+            <li><code>fw-light</code></li>
+            <li><code>fw-lighter</code></li>
+            <li><code>fst-italic</code></li>
+            <li><code>fst-normal</code></li>
+          </ul>
+          {/* Texto - Peso e Itálica */}
+        </>
+      ),
+    },
+    {
+      id: 'section-7',
+      title: '- Redondeado',
+      content: (
+        <>
+          {/* Redondeado */}
+          <ul className="docs-list">
+            <li>
+              <code>rounded</code>
+            </li>
+            <li>
+              <code>rounded-top</code>
+            </li>
+            <li>
+              <code>rounded-end</code>
+            </li>
+            <li>
+              <code>rounded-bottom</code>
+            </li>
+            <li>
+              <code>rounded-start</code>
+            </li>
+            <li>
+              <code>rounded-circle</code>
+            </li>
+            <li>
+              <code>rounded-pill</code>
+            </li>
+
+          </ul>
+          {/* Redondeado */}
+        </>
+      ),
+    },
+    {
+      id: 'section-8',
       title: '- Sustractivo',
       content: (
         <>
@@ -94,68 +213,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-4',
-      title: '- Width',
-      content: (
-        <>
-          {/* Width */}
-          <ul className="docs-list">
-            <li>
-              <code>border border-1</code>
-            </li>
-            <li>
-              <code>border border-2</code>
-            </li>
-            <li>
-              <code>border border-3</code>
-            </li>
-            <li>
-              <code>border border-4</code>
-            </li>
-            <li>
-              <code>border border-5</code>
-            </li>
-          </ul>
-          {/* Width */}
-        </>
-      ),
-    },
-    {
-      id: 'section-5',
-      title: '- Redondeado',
-      content: (
-        <>
-          {/* Redondeado */}
-          <ul className="docs-list">
-            <li>
-              <code>rounded</code>
-            </li>
-            <li>
-              <code>rounded-top</code>
-            </li>
-            <li>
-              <code>rounded-end</code>
-            </li>
-            <li>
-              <code>rounded-bottom</code>
-            </li>
-            <li>
-              <code>rounded-start</code>
-            </li>
-            <li>
-              <code>rounded-circle</code>
-            </li>
-            <li>
-              <code>rounded-pill</code>
-            </li>
-
-          </ul>
-          {/* Redondeado */}
-        </>
-      ),
-    },
-    {
-      id: 'section-6',
+      id: 'section-9',
       title: '- Tamaños',
       content: (
         <>
@@ -185,54 +243,63 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-7',
-      title: 'Texto',
-    },
-    {
-      id: 'section-8',
-      title: ' - Alineamiento de Texto',
-      content: (
-        <>
-
-          {/* Texto - Alineamiento de Texto */}
-          <ul className="docs-list">
-            <li><code>text-start</code></li>
-            <li><code>text-center</code></li>
-            <li><code>text-end</code></li>
-            <li><code>text-sm-end</code></li>
-            <li><code>text-md-end</code></li>
-            <li><code>text-lg-end</code></li>
-            <li><code>text-xl-end</code></li>
-            <li><code>text-xxl-end</code></li>
-          </ul>
-          {/* Texto - Alineamiento de Texto */}
-        </>
-      ),
-    },
-    {
-      id: 'section-9',
-      title: ' - Peso e Itálica',
-      content: (
-        <>
-
-          {/* Texto - Peso e Itálica */}
-          <ul className="docs-list">
-            <li><code>fw-bold</code></li>
-            <li><code>fw-bolder</code></li>
-            <li><code>fw-semibold</code></li>
-            <li><code>fw-medium</code></li>
-            <li><code>fw-normal</code></li>
-            <li><code>fw-light</code></li>
-            <li><code>fw-lighter</code></li>
-            <li><code>fst-italic</code></li>
-            <li><code>fst-normal</code></li>
-          </ul>
-          {/* Texto - Peso e Itálica */}
-        </>
-      ),
-    },
-    {
       id: 'section-10',
+      title: '- Width',
+      content: (
+        <>
+          {/* Width */}
+          <ul className="docs-list">
+            <li>
+              <code>border border-1</code>
+            </li>
+            <li>
+              <code>border border-2</code>
+            </li>
+            <li>
+              <code>border border-3</code>
+            </li>
+            <li>
+              <code>border border-4</code>
+            </li>
+            <li>
+              <code>border border-5</code>
+            </li>
+          </ul>
+          {/* Width */}
+        </>
+      ),
+    },
+    {
+      id: 'section-11',
+      title: 'Calendario',
+      content: (
+        <>
+          {/* Calendario */}
+          <h6>Disposición de <a href="https://gcba.github.io/Obelisco-V2/components/calendar#section-8" target="_blank" >Calendario</a></h6>
+          <ul className='docs-list' >
+            <li><code>calendar-deck</code></li>
+          </ul>
+          {/* Calendario */}
+        </>
+      ),
+    },
+    {
+      id: 'section-12',
+      title: 'Destacado',
+      content: (
+        <>
+          {/* Destacado */}
+          <h6>Disposición de 2 en <a href="https://gcba.github.io/Obelisco-V2/components/highlighted#section-5">Destacado Conjunto</a>.</h6>
+
+          <ul className="docs-list">
+            <li><code>highlighted-items-2</code></li>
+          </ul>
+          {/* Destacado */}
+        </>
+      ),
+    },
+    {
+      id: 'section-13',
       title: 'Display',
       content: (
         <>
@@ -241,12 +308,17 @@ const UpdateComponents: React.FC = () => {
           <div>
             <p>Las clases se nombran utilizando el formato:</p>
 
-            <p className='mt-3'>Para xs:</p>
-            <code>{`.d-{value}`}</code>
-
+            <p className='mt-3'>Para <code>xs</code>:</p>
+            <ul className="docs-list">
+              <li><code>{`.d-{value}`}</code></li>
+            </ul>
             <p className='mt-3'>Para sm y md, lg, xl y xxl:</p>
-            <code>{`.d-{breakpoint}-{value}`}</code>
-
+            <p className='mt-3'>Para <code>xs</code>:</p>
+            <ul className="docs-list">
+              <li>
+                <code>{`.d-{breakpoint}-{value}`}</code>
+              </li>
+            </ul>
             <p className='mt-3' >Donde <code>{`{value}`}</code> es uno de:</p>
 
             <ul className="docs-list">
@@ -266,7 +338,45 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-11',
+      id: 'section-14',
+      title: 'Espaciados',
+      content: (
+        <>
+          <p>Para <code>xs</code>: <br /></p>
+          <ul className="docs-list">
+            <li>
+              <code>{`{propiedad}-{lado}--{tamaño} `}</code>
+            </li>
+          </ul>
+
+          <p>Para <code>sm, md, lg, xl</code> y <code> xxl</code> : <br /> </p>
+          <ul className="docs-list">
+            <li>
+              <code>{`{propiedad}-{lado}-{breakpoint}--{tamaño} `}</code>
+            </li>
+          </ul>
+
+          <p>Donde <strong><code>{`{propiedad}`}</code></strong> es uno de:</p>
+          <ul className="docs-list">
+            <li><code>{`m`}</code> - para margin</li>
+            <li><code>{`p`}</code> - para padding</li>
+          </ul>
+
+          <p>Donde <strong><code>{`{lado}`}</code></strong> es uno de:</p>
+          <ul className="docs-list">
+            <li><code>{`t`}</code> - para <code>margin</code> o <code>padding</code> <code>top</code></li>
+            <li><code>{`b`}</code> - para <code>margin</code> o <code>padding</code> <code>bottom</code></li>
+            <li><code>{`s`}</code> - para <code>margin</code> o <code>padding</code> <code>left</code></li>
+            <li><code>{`s`}</code> - para <code>margin</code> o <code>padding</code> <code>right</code></li>
+            <li><code>{`x`}</code> - para <code>margin</code> o <code>padding</code> | <code>left</code> y <code>right</code></li>
+            <li><code>{`y`}</code> - para <code>margin</code> o <code>padding</code> | <code>top</code> y <code>bottom</code></li>
+            <li><code>{`nada`}</code> - para que aplique a los 4 lados del elemento</li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      id: 'section-15',
       title: 'Flex',
       content: (
         <>
@@ -291,7 +401,70 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-12',
+      id: 'section-16',
+      title: '- Align content',
+      content: (
+        <>
+          {/* Align content */}
+          <p>Donde <code>{`{alignment}`}</code> es uno de: <code>start, end, center, between, around, stretch</code>. </p>
+          <ul className='docs-list' >
+            <li><code>.align-content-{`{alignment}`}</code></li>
+          </ul>
+
+          <p className='mt-4'>Donde <code>{`{breakpoint}`}</code> es uno de: <code> sm, md, lg, xl, xxl</code>:</p>
+
+          <ul className='docs-list' >
+            <li><code>{`.align-content-{breakpoint}-{alignment}`}</code></li>
+          </ul>
+
+          {/* Align content */}
+        </>
+      ),
+    },
+    {
+      id: 'section-17',
+      title: '- Align items',
+      content: (
+        <>
+          {/* Align items */}
+
+          <p>Donde <code>{`{alignment}`}</code> es uno de: <code>start, end, center, between, around, stretch</code>. </p>
+          <ul className='docs-list' >
+            <li><code>.align-items-{`{alignment}`}</code></li>
+          </ul>
+
+          <p className='mt-4'>Donde <code>{`{breakpoint}`}</code> es uno de: <code> sm, md, lg, xl, xxl</code>:</p>
+
+          <ul className='docs-list' >
+            <li><code>{`.align-items-{breakpoint}-{alignment}`}</code></li>
+          </ul>
+          {/* Align items */}
+        </>
+      ),
+    },
+    {
+      id: 'section-18',
+      title: '- Align self',
+      content: (
+        <>
+          {/* Align self */}
+
+          <p>Donde <code>{`{alignment}`}</code> es uno de: <code>start, end, center, between, around, stretch</code>. </p>
+          <ul className='docs-list' >
+            <li><code>.align-self-{`{alignment}`}</code></li>
+          </ul>
+
+          <p className='mt-4'>Donde <code>{`{breakpoint}`}</code> es uno de: <code> sm, md, lg, xl, xxl</code>:</p>
+
+          <ul className='docs-list' >
+            <li><code>{`.align-self-{breakpoint}-{alignment}`}</code></li>
+          </ul>
+          {/* Align self */}
+        </>
+      ),
+    },
+    {
+      id: 'section-19',
       title: '- Dirección',
       content: (
         <>
@@ -303,7 +476,7 @@ const UpdateComponents: React.FC = () => {
             <li><code>.d-flex flex-column-reverse </code></li>
           </ul>
 
-          <p className='mt-4'>Clases para flexbox con breakpoints, donde <code>{`{breakpoint}`}</code> es uno de: sm, md, lg, xl, xxl:</p>
+          <p className='mt-4'>Clases para flexbox con breakpoints, donde <code>{`{breakpoint}`}</code> es uno de: <code> sm, md, lg, xl, xxl</code>:</p>
           <ul className="docs-list">
             <li><code>{`.flex-{breakpoint}-row`}</code></li>
             <li><code>{`.flex-{breakpoint}-row-reverse`}</code></li>
@@ -315,112 +488,44 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-13',
+      id: 'section-20',
       title: '- Justify content ',
       content: (
         <>
           {/* Justify content */}
-          <ul className="docs-list">
-            <li><code>{`.justify-content-start`}</code></li>
-            <li><code>{`.justify-content-end`}</code></li>
-            <li><code>{`.justify-content-center`}</code></li>
-            <li><code>{`.justify-content-between`}</code></li>
-            <li><code>{`.justify-content-around`}</code></li>
-            <li><code>{`.justify-content-evenly`}</code></li>
+
+          <p>Donde <code>{`{alignment}`}</code> es uno de: <code>start, end, center, between, around, evenly</code>. </p>
+          <ul className='docs-list' >
+            <li><code>.justify-content-{`{alignment}`}</code></li>
           </ul>
 
-          <p className='mt-4'>Clases para flexbox con breakpoints, donde <code>{`{breakpoint}`}</code> es uno de: sm, md, lg, xl, xxl:</p>
-          <ul className="docs-list">
-            <li><code>{`.justify-content-{breakpoint}-start`}</code></li>
-            <li><code>{`.justify-content-{breakpoint}-end`}</code></li>
-            <li><code>{`.justify-content-{breakpoint}-center`}</code></li>
-            <li><code>{`.justify-content-{breakpoint}-between`}</code></li>
-            <li><code>{`.justify-content-{breakpoint}-around`}</code></li>
-            <li><code>{`.justify-content-{breakpoint}-evenly`}</code></li>
+          <p className='mt-4'>Donde <code>{`{breakpoint}`}</code> es uno de: <code> sm, md, lg, xl, xxl</code>:</p>
+
+          <ul className='docs-list' >
+            <li><code>{`.justify-content-{breakpoint}-{alignment}`}</code></li>
           </ul>
           {/* Justify content */}
         </>
       ),
     },
     {
-      id: 'section-14',
-      title: '- Align items',
-      content: (
-        <>
-          {/* Align items */}
-          <ul className="docs-list">
-            <li><code>{`.align-items-start`}</code></li>
-            <li><code>{`.align-items-end`}</code></li>
-            <li><code>{`.align-items-center`}</code></li>
-            <li><code>{`.align-items-between`}</code></li>
-            <li><code>{`.align-items-around`}</code></li>
-            <li><code>{`.align-items-evenly`}</code></li>
-          </ul>
-
-          <p className='mt-4'>Clases para flexbox con breakpoints, donde <code>{`{breakpoint}`}</code> es uno de: sm, md, lg, xl, xxl:</p>
-          <ul className="docs-list">
-            <li><code>{`.align-items-{breakpoint}-start`}</code></li>
-            <li><code>{`.align-items-{breakpoint}-end`}</code></li>
-            <li><code>{`.align-items-{breakpoint}-center`}</code></li>
-            <li><code>{`.align-items-{breakpoint}-between`}</code></li>
-            <li><code>{`.align-items-{breakpoint}-around`}</code></li>
-            <li><code>{`.align-items-{breakpoint}-evenly`}</code></li>
-          </ul>
-          {/* Align items */}
-        </>
-      ),
-    },
-    {
-      id: 'section-15',
-      title: '- Align self',
-      content: (
-        <>
-          {/* Align self */}
-          <ul className="docs-list">
-            <li><code>{`.align-self-start`}</code></li>
-            <li><code>{`.align-self-end`}</code></li>
-            <li><code>{`.align-self-center`}</code></li>
-            <li><code>{`.align-self-baseline`}</code></li>
-            <li><code>{`.align-self-stretch`}</code></li>
-          </ul>
-
-          <p className='mt-4'>Clases para flexbox con breakpoints, donde <code>{`{breakpoint}`}</code> es uno de: sm, md, lg, xl, xxl:</p>
-          <ul className="docs-list">
-            <li><code>{`.align-self-{breakpoint}-start`}</code></li>
-            <li><code>{`.align-self-{breakpoint}-end`}</code></li>
-            <li><code>{`.align-self-{breakpoint}-center`}</code></li>
-            <li><code>{`.align-self-{breakpoint}-baseline`}</code></li>
-            <li><code>{`.align-self-{breakpoint}-stretch`}</code></li>
-          </ul>
-          {/* Align self */}
-        </>
-      ),
-    },
-    {
-      id: 'section-16',
+      id: 'section-21',
       title: '- Order',
       content: (
         <>
           {/* Order */}
+
+          <p>Donde <code>{`{level}`}</code> es uno de: <code>0, 1, 2, 3, 4, 5</code>. </p>
+
           <ul className="docs-list">
-            <li><code>{`.order-0`}</code></li>
-            <li><code>{`.order-1`}</code></li>
-            <li><code>{`.order-2`}</code></li>
-            <li><code>{`.order-3`}</code></li>
-            <li><code>{`.order-4`}</code></li>
-            <li><code>{`.order-5`}</code></li>
-            <li><code>{`.order-first`}</code></li>
-            <li><code>{`.order-last`}</code></li>
+            <li><code>.order-{`{level}`}</code></li>
+            <li><code>.order-first</code></li>
+            <li><code>.order-last</code></li>
           </ul>
 
-          <p className='mt-4'>Clases para flexbox con breakpoints, donde <code>{`{breakpoint}`}</code> es uno de: sm, md, lg, xl, xxl:</p>
+          <p className='mt-4'>Clases para flexbox con breakpoints, donde <code>{`{breakpoint}`}</code> es uno de: <code> sm, md, lg, xl, xxl</code>:</p>
           <ul className="docs-list">
-            <li><code>{`.order-{breakpoint}-0`}</code></li>
-            <li><code>{`.order-{breakpoint}-1`}</code></li>
-            <li><code>{`.order-{breakpoint}-2`}</code></li>
-            <li><code>{`.order-{breakpoint}-3`}</code></li>
-            <li><code>{`.order-{breakpoint}-4`}</code></li>
-            <li><code>{`.order-{breakpoint}-5`}</code></li>
+            <li><code>{`.order-{breakpoint}-{level}`}</code></li>
             <li><code>{`.order-{breakpoint}-first`}</code></li>
             <li><code>{`.order-{breakpoint}-last`}</code></li>
           </ul>
@@ -429,49 +534,34 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-17',
-      title: '- Align content',
-      content: (
-        <>
-          {/* Align content */}
-          <p><code>{`{alignment}`}</code> es uno de: <code>start, end, center, between, around, stretch </code></p>
-
-          {/* esto chequear */}
-          <p className='mt-4'>Clases para flexbox con breakpoints, donde <code>{`{breakpoint}`} es uno de: sm, md, lg, xl, xxl</code>:</p>
-          <p><code>d-flex align-content-{`{breakpoint}`}-{`{alignment}`} flex-wrap</code> </p>
-          {/* Align content */}
-        </>
-      ),
-    },
-    {
-      id: 'section-18',
+      id: 'section-22',
       title: 'Overflow',
       content: (
         <>
           <ul className="docs-list">
-            <li><code>overflow-auto</code></li>
-            <li><code>overflow-hidden</code></li>
-            <li><code>overflow-visible</code></li>
-            <li><code>overflow-scroll</code></li>
+            <li><code>.overflow-auto</code></li>
+            <li><code>.overflow-hidden</code></li>
+            <li><code>.overflow-visible</code></li>
+            <li><code>.overflow-scroll</code></li>
           </ul>
 
           <p>Donde <code>{`{direction}`}</code> Toma <code>x</code> o <code>y</code> cómo valores, se puede indicar que sólo funcione horizontal o verticalmente</p>
 
           <ul className="docs-list">
-            <li><code>{`overflow-{direction}-auto`}</code></li>
-            <li><code>{`overflow-{direction}-hidden`}</code></li>
-            <li><code>{`overflow-{direction}-visible`}</code></li>
-            <li><code>{`overflow-{direction}-scroll`}</code></li>
+            <li><code>{`.overflow-{direction}-auto`}</code></li>
+            <li><code>{`.overflow-{direction}-hidden`}</code></li>
+            <li><code>{`.overflow-{direction}-visible`}</code></li>
+            <li><code>{`.overflow-{direction}-scroll`}</code></li>
           </ul>
         </>
       ),
     },
     {
-      id: 'section-19',
+      id: 'section-23',
       title: 'Position',
       content: (
         <>
-          <p>La forma de usarlo es <code>{`{property}-{position}`}</code></p>
+          <p>Modo de uso: <code>{`{property}-{position}`}</code></p>
           <p>Donde <code>{`{property}`}</code> es uno de: </p>
 
           <ul className="docs-list">
@@ -493,8 +583,19 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-20',
-      title: 'Shadows',
+      id: 'section-24',
+      title: 'Responsive Scroll',
+      content: (
+        <>
+          <ul className="docs-list">
+            <li><code>responsive-scroll</code></li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      id: 'section-25',
+      title: 'Sombras',
       content: (
         <>
           <ul className="docs-list">
@@ -507,8 +608,8 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-21',
-      title: 'Sizing',
+      id: 'section-26',
+      title: 'Tamaños',
       content: (
         <>
           <p>Estas clases, funcionan de manera relativa al contenedor padre. </p>
@@ -539,33 +640,39 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-22',
-      title: 'Espaciados',
+      id: 'section-27',
+      title: 'Tarjetas',
       content: (
         <>
-          <p>Para <code>{`xs`}</code> <br /> <code>{`{propiedad}-{lado}--{tamaño} `}</code> </p>
+          <h6>Disposición de <a href="https://gcba.github.io/Obelisco-V2/components/cards#section-11" target='_blank'>Tarjetas</a> </h6>
 
-          <p>Para <code>{`sm, md, lg, xl y xxl`}</code> <br /> <code>{`{propiedad}-{lado}-{breakpoint}--{tamaño} `}</code> </p>
-
-          <p>Donde <code>{`{propiedad}`}</code> es uno de:</p>
           <ul className="docs-list">
-            <li><code>{`m`}</code> - para margin</li>
-            <li><code>{`p`}</code> - para padding</li>
-          </ul>
-
-          <p>Donde <code>{`{lado}`}</code> es uno de:</p>
-          <ul className="docs-list">
-            <li><code>{`t`}</code> - para <code>margin</code> o <code>padding</code> <code>top</code></li>
-            <li><code>{`b`}</code> - para <code>margin</code> o <code>padding</code> <code>bottom</code></li>
-            <li><code>{`s`}</code> - para <code>margin</code> o <code>padding</code> <code>left</code></li>
-            <li><code>{`s`}</code> - para <code>margin</code> o <code>padding</code> <code>right</code></li>
-            <li><code>{`x`}</code> - para <code>margin</code> o <code>padding</code> | <code>left</code> y <code>right</code></li>
-            <li><code>{`y`}</code> - para <code>margin</code> o <code>padding</code> | <code>top</code> y <code>bottom</code></li>
-            <li><code>{`nada`}</code> - para que aplique a los 4 lados del elemento</li>
+            <li><code>card-items-3</code></li>
+            <li><code>card-items-2</code></li>
+            <li><code>vertical-cards-container</code></li>
           </ul>
         </>
       ),
-    }
+    },
+    {
+      id: 'section-28',
+      title: 'Texto',
+      content: (
+        <>
+          <h6>Truncado de Texto</h6>
+          <p>Estas clases truncan el texto a 1, 2, 3 y 4 lineas.</p>
+          <ul className="docs-list" >
+            <li><code>ellipsis-1</code></li>
+            <li><code>ellipsis-2</code></li>
+            <li><code>ellipsis-3</code></li>
+            <li><code>ellipsis-4</code></li>
+            <li><code>text-truncate</code></li>
+          </ul>
+        </>
+      )
+    },
+
+
   ];
 
   return (

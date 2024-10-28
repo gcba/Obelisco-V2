@@ -84,9 +84,6 @@ const UpdateComponents: React.FC = () => {
               <code>bg-tertiary</code>
             </li>
             <li>
-              <code>bg-body</code>
-            </li>
-            <li>
               <code>bg-light</code>
             </li>
             <li>
@@ -442,7 +439,7 @@ const UpdateComponents: React.FC = () => {
           </p>
           <ul className="docs-list">
             <li>
-              <code>{`{propiedad}-{lado}--{tamaño} `}</code>
+              <code>{`{propiedad}-{lado}-{tamaño} `}</code>
             </li>
           </ul>
 
@@ -451,7 +448,7 @@ const UpdateComponents: React.FC = () => {
           </p>
           <ul className="docs-list">
             <li>
-              <code>{`{propiedad}-{lado}-{breakpoint}--{tamaño} `}</code>
+              <code>{`{propiedad}-{lado}-{breakpoint}-{tamaño} `}</code>
             </li>
           </ul>
 

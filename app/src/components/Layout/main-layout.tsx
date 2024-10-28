@@ -63,7 +63,7 @@ export const gettingPages = [
 
 export const documentationPages = [
   { text: 'Cambios en componentes', url: '/documentation/update-component', id: 1 },
-  { text: 'Clases disponibles', url: '/documentation/class-documentation', id: 2 }
+  { text: 'Clases disponibles', url: '/documentation/class-documentation', id: 2 },
 ];
 
 const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {

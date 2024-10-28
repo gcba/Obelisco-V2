@@ -25,6 +25,9 @@ const UpdateComponents: React.FC = () => {
             icono o con descripción.
           </li>
           <li>
+            La clase <code>.list-group-item-logout</code> queda deprecada.
+          </li>
+          <li>
             La lista de accesos por ancho completo, que utilizaba las clases <code>.access-deck .max-cards-*</code>,
             queda deprecada.{' '}
           </li>

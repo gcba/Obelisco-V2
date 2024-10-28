@@ -277,7 +277,7 @@ const AccessDocs: React.FC = () => {
           </CodeBox>
           <br />
           <br />
-          <h3 className="headline-lg fw-semibold">Cuatro columnas en desktop y una columna en tablet y mobile</h3>
+          <h3 className="headline-lg fw-semibold">Cuatro columnas en desktop, y una columna en tablet y mobile</h3>
           <CodeBox codeHTML={FOUR_COLUMNS_ACCESS_SECOND}>
             <div className="container">
               <div className="row">
@@ -371,7 +371,7 @@ const AccessDocs: React.FC = () => {
           </CodeBox>
           <br />
           <br />
-          <h3 className="headline-lg fw-semibold">Tres columnas en desktop y una columna en tablet y mobile</h3>
+          <h3 className="headline-lg fw-semibold">Tres columnas en desktop, y una columna en tablet y mobile</h3>
           <CodeBox codeHTML={THREE_COLUMNS_ACCESS_SECOND}>
             <div className="container">
               <div className="row">

@@ -77,7 +77,7 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections 
             </div>
           </article>
 
-          <div className="nav-scrollspy d-none d-lg-block flex-grow-1">
+          <div className="nav-scrollspy d-none d-xl-block flex-grow-1">
             <ul className="scrollspy" data-cy="nav-wrapper">
               <p className="headline-md fw-bold mb-1">{defaultTitle}</p>
               {sections.map(

@@ -76,7 +76,7 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         children
       ) : (
         <div className="row v-height-100 pt-5">
-          <div className="col-3 d-none d-lg-block ">
+          <div className="col-3 d-none d-xl-block ">
             {pathname.includes('/components') && (
               <div className="nav-left sticky-nav">
                 <div className="nav-left-box-title">
@@ -131,7 +131,7 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             )}
           </div>
 
-          <div className="col-12 col-lg-9">{children}</div>
+          <div className="col-12 col-xl-9">{children}</div>
         </div>
       )}
     </div>

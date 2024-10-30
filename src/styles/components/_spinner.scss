@@ -15,8 +15,8 @@ $spinner-border-width-lg: 0.375rem;
     border-width: $spinner-border-width;
 
     &:is(.text-light) {
-      border-color: $grisulado-50;
-      border-right-color: $grisulado-400;
+      border-color: $grisulado-50; // #f3f6f9
+      border-right-color: $grisulado-400; // #9eaab8
     }
 
     &-lg {

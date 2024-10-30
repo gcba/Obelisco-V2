@@ -146,3 +146,7 @@ $body-styles: (
 /* === Body - variables de Bootstrap === */
 $font-size-base: $md-body-fs; // Se sobreescribe variable de Bootstrap
 $line-height-base: $md-body-lh; // Se sobreescribe variable de Bootstrap
+
+blockquote {
+  border-left: 0.25rem solid #101E37 !important;
+}

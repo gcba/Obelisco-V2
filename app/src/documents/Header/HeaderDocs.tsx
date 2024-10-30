@@ -1,6 +1,5 @@
-import Image from 'next/image';
-
 import CodeBox from '@/components/CodeBox';
+import LinkClient from '@/components/LinkClient';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
@@ -21,6 +20,10 @@ import {
 } from './code-views';
 
 const basePath = '/Obelisco-V2';
+
+const logo = '/images/logo_ba.svg';
+
+const logo_mobile = '/images/logo_ba_mobile.svg';
 
 const HeaderDocs: React.FC = () => {
   const sections = [
@@ -53,26 +56,29 @@ const HeaderDocs: React.FC = () => {
             <div className="container">
               <div className="header-box-sizing">
                 <header className="o-header navbar" role="banner">
-                  <a href="#main" className="skip-to-main-content-link">
+                  <LinkClient href="#main" className="skip-to-main-content-link">
                     Saltar al contenido principal
-                  </a>
+                  </LinkClient>
                   <div className="container header-container">
-                    <a href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image
-                        className="header-logo"
-                        src={`${basePath}/images/BA.svg`}
+                    <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
+                      <img
+                        className="d-none d-xl-block"
+                        src={`${basePath}${logo}`}
                         alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
-                        width={76}
-                        height={48}
-                      ></Image>
-                    </a>
+                      />
+                      <img
+                        className="d-xl-none"
+                        src={`${basePath}${logo_mobile}`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                      />
+                    </LinkClient>
                     <div className="navbar-login-mobile">
-                      <a className="btn btn-lg btn-icon btn-outline-tertiary" href="#" target="_blank">
+                      <LinkClient className="btn btn-lg btn-icon btn-outline-primary">
                         <span className="material-symbols-rounded" aria-hidden="true">
                           person
                         </span>
                         <span className="btn-text">Ingresar</span>
-                      </a>
+                      </LinkClient>
                     </div>
                     <button
                       className="navbar-toggler"
@@ -102,36 +108,36 @@ const HeaderDocs: React.FC = () => {
                                   </span>
                                 </button>
                                 <div className="dropdown-menu">
-                                  <a className="dropdown-item" href="#">
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item item-link" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item item-link">
                                     <span className="item-text">Navegación</span>
                                     <span className="material-symbols-rounded" aria-hidden="true">
                                       arrow_forward
                                     </span>
-                                  </a>
+                                  </LinkClient>
                                 </div>
                               </li>
                               <li className="nav-item">
-                                <a className="nav-link nav-link-lg" href="#">
+                                <LinkClient className="nav-link nav-link-lg">
                                   <span>Navegación</span>
-                                </a>
+                                </LinkClient>
                               </li>
                               <li className="dropdown">
                                 <button
@@ -146,30 +152,30 @@ const HeaderDocs: React.FC = () => {
                                   </span>
                                 </button>
                                 <div className="dropdown-menu">
-                                  <a className="dropdown-item" href="#">
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item item-link" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item item-link">
                                     <span className="item-text">Navegación</span>
                                     <span className="material-symbols-rounded" aria-hidden="true">
                                       arrow_forward
                                     </span>
-                                  </a>
+                                  </LinkClient>
                                 </div>
                               </li>
                             </ul>
@@ -193,12 +199,12 @@ const HeaderDocs: React.FC = () => {
                           </form>
                         </div>
                         <div className="navbar-login">
-                          <a className="btn btn-lg btn-outline-tertiary" href="#" target="_blank">
+                          <LinkClient className="btn btn-lg btn-outline-primary">
                             <span className="material-symbols-rounded" aria-hidden="true">
                               person
                             </span>
                             <span className="btn-text">Ingresar</span>
-                          </a>
+                          </LinkClient>
                         </div>
                       </div>
                     </div>
@@ -214,26 +220,29 @@ const HeaderDocs: React.FC = () => {
             <div className="container">
               <div className="header-box-sizing">
                 <header className="o-header navbar" role="banner">
-                  <a href="#main" className="skip-to-main-content-link">
+                  <LinkClient href="#main" className="skip-to-main-content-link">
                     Saltar al contenido principal
-                  </a>
+                  </LinkClient>
                   <div className="container header-container">
-                    <a href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image
-                        className="header-logo"
-                        src={`${basePath}/images/BA.svg`}
+                    <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
+                      <img
+                        className="d-none d-xl-block"
+                        src={`${basePath}${logo}`}
                         alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
-                        width={76}
-                        height={48}
-                      ></Image>
-                    </a>
+                      />
+                      <img
+                        className="d-xl-none"
+                        src={`${basePath}${logo_mobile}`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                      />
+                    </LinkClient>
                     <div className="navbar-login-mobile">
-                      <a className="btn btn-lg btn-icon btn-outline-tertiary" href="#" target="_blank">
+                      <LinkClient className="btn btn-lg btn-icon btn-outline-primary">
                         <span className="material-symbols-rounded" aria-hidden="true">
                           person
                         </span>
                         <span className="btn-text">Ingresar</span>
-                      </a>
+                      </LinkClient>
                     </div>
                     <button
                       className="navbar-toggler"
@@ -263,36 +272,36 @@ const HeaderDocs: React.FC = () => {
                                   </span>
                                 </button>
                                 <div className="dropdown-menu">
-                                  <a className="dropdown-item" href="#">
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item item-link" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item item-link">
                                     <span className="item-text">Navegación</span>
                                     <span className="material-symbols-rounded" aria-hidden="true">
                                       arrow_forward
                                     </span>
-                                  </a>
+                                  </LinkClient>
                                 </div>
                               </li>
                               <li className="nav-item">
-                                <a className="nav-link nav-link-lg" href="#">
+                                <LinkClient className="nav-link nav-link-lg">
                                   <span>Navegación</span>
-                                </a>
+                                </LinkClient>
                               </li>
                               <li className="dropdown">
                                 <button
@@ -307,42 +316,42 @@ const HeaderDocs: React.FC = () => {
                                   </span>
                                 </button>
                                 <div className="dropdown-menu">
-                                  <a className="dropdown-item" href="#">
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item item-link" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item item-link">
                                     <span className="item-text">Navegación</span>
                                     <span className="material-symbols-rounded" aria-hidden="true">
                                       arrow_forward
                                     </span>
-                                  </a>
+                                  </LinkClient>
                                 </div>
                               </li>
                             </ul>
                           </nav>
                         </div>
                         <div className="navbar-login">
-                          <a className="btn btn-lg btn-outline-tertiary" href="#" target="_blank">
+                          <LinkClient className="btn btn-lg btn-outline-primary">
                             <span className="material-symbols-rounded" aria-hidden="true">
                               person
                             </span>
                             <span className="btn-text">Ingresar</span>
-                          </a>
+                          </LinkClient>
                         </div>
                       </div>
                     </div>
@@ -364,26 +373,29 @@ const HeaderDocs: React.FC = () => {
             <div className="container">
               <div className="header-box-sizing">
                 <header className="o-header navbar" role="banner">
-                  <a href="#main" className="skip-to-main-content-link">
+                  <LinkClient href="#main" className="skip-to-main-content-link">
                     Saltar al contenido principal
-                  </a>
+                  </LinkClient>
                   <div className="container header-container">
-                    <a href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image
-                        className="header-logo"
-                        src={`${basePath}/images/BA.svg`}
+                    <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
+                      <img
+                        className="d-none d-xl-block"
+                        src={`${basePath}${logo}`}
                         alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
-                        width={76}
-                        height={48}
-                      ></Image>
-                    </a>
+                      />
+                      <img
+                        className="d-xl-none"
+                        src={`${basePath}${logo_mobile}`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                      />
+                    </LinkClient>
                     <div className="navbar-login-mobile">
-                      <a className="btn btn-lg btn-icon btn-outline-tertiary" href="#" target="_blank">
+                      <LinkClient className="btn btn-lg btn-icon btn-outline-primary">
                         <span className="material-symbols-rounded" aria-hidden="true">
                           person
                         </span>
                         <span className="btn-text">Ingresar</span>
-                      </a>
+                      </LinkClient>
                     </div>
                     <button
                       className="navbar-toggler"
@@ -414,12 +426,12 @@ const HeaderDocs: React.FC = () => {
                           </form>
                         </div>
                         <div className="navbar-login">
-                          <a className="btn btn-lg btn-outline-tertiary" href="#" target="_blank">
+                          <LinkClient className="btn btn-lg btn-outline-primary">
                             <span className="material-symbols-rounded" aria-hidden="true">
                               person
                             </span>
                             <span className="btn-text">Ingresar</span>
-                          </a>
+                          </LinkClient>
                         </div>
                       </div>
                       <div className="navbar-content-extended">
@@ -439,36 +451,36 @@ const HeaderDocs: React.FC = () => {
                                 </span>
                               </button>
                               <div className="dropdown-menu">
-                                <a className="dropdown-item" href="#">
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item item-link" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item item-link">
                                   <span className="item-text">Navegación</span>
                                   <span className="material-symbols-rounded" aria-hidden="true">
                                     arrow_forward
                                   </span>
-                                </a>
+                                </LinkClient>
                               </div>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Navegación</span>
-                              </a>
+                              </LinkClient>
                             </li>
                             <li className="dropdown">
                               <button
@@ -483,51 +495,51 @@ const HeaderDocs: React.FC = () => {
                                 </span>
                               </button>
                               <div className="dropdown-menu">
-                                <a className="dropdown-item" href="#">
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item item-link" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item item-link">
                                   <span className="item-text">Navegación</span>
                                   <span className="material-symbols-rounded" aria-hidden="true">
                                     arrow_forward
                                   </span>
-                                </a>
+                                </LinkClient>
                               </div>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Navegación</span>
-                              </a>
+                              </LinkClient>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Navegación</span>
-                              </a>
+                              </LinkClient>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Navegación</span>
-                              </a>
+                              </LinkClient>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Navegación</span>
-                              </a>
+                              </LinkClient>
                             </li>
                           </ul>
                         </nav>
@@ -545,26 +557,29 @@ const HeaderDocs: React.FC = () => {
             <div className="container">
               <div className="header-box-sizing">
                 <header className="o-header navbar" role="banner">
-                  <a href="#main" className="skip-to-main-content-link">
+                  <LinkClient href="#main" className="skip-to-main-content-link">
                     Saltar al contenido principal
-                  </a>
+                  </LinkClient>
                   <div className="container header-container">
-                    <a href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image
-                        className="header-logo"
-                        src={`${basePath}/images/BA.svg`}
+                    <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
+                      <img
+                        className="d-none d-xl-block"
+                        src={`${basePath}${logo}`}
                         alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
-                        width={76}
-                        height={48}
-                      ></Image>
-                    </a>
+                      />
+                      <img
+                        className="d-xl-none"
+                        src={`${basePath}${logo_mobile}`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                      />
+                    </LinkClient>
                     <div className="navbar-login-mobile">
-                      <a className="btn btn-lg btn-icon btn-outline-tertiary" href="#" target="_blank">
+                      <LinkClient className="btn btn-lg btn-icon btn-outline-primary">
                         <span className="material-symbols-rounded" aria-hidden="true">
                           person
                         </span>
                         <span className="btn-text">Ingresar</span>
-                      </a>
+                      </LinkClient>
                     </div>
                     <button
                       className="navbar-toggler"
@@ -578,12 +593,12 @@ const HeaderDocs: React.FC = () => {
                     <div className="collapse navbar-collapse" id="navbarContent6">
                       <div className="navbar-content">
                         <div className="navbar-login">
-                          <a className="btn btn-lg btn-outline-tertiary" href="#" target="_blank">
+                          <LinkClient className="btn btn-lg btn-outline-primary">
                             <span className="material-symbols-rounded" aria-hidden="true">
                               person
                             </span>
                             <span className="btn-text">Ingresar</span>
-                          </a>
+                          </LinkClient>
                         </div>
                       </div>
                       <div className="navbar-content-extended">
@@ -603,36 +618,36 @@ const HeaderDocs: React.FC = () => {
                                 </span>
                               </button>
                               <div className="dropdown-menu">
-                                <a className="dropdown-item" href="#">
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item item-link" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item item-link">
                                   <span className="item-text">Navegación</span>
                                   <span className="material-symbols-rounded" aria-hidden="true">
                                     arrow_forward
                                   </span>
-                                </a>
+                                </LinkClient>
                               </div>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Navegación</span>
-                              </a>
+                              </LinkClient>
                             </li>
                             <li className="dropdown">
                               <button
@@ -647,51 +662,51 @@ const HeaderDocs: React.FC = () => {
                                 </span>
                               </button>
                               <div className="dropdown-menu">
-                                <a className="dropdown-item" href="#">
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item item-link" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item item-link">
                                   <span className="item-text">Navegación</span>
                                   <span className="material-symbols-rounded" aria-hidden="true">
                                     arrow_forward
                                   </span>
-                                </a>
+                                </LinkClient>
                               </div>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Navegación</span>
-                              </a>
+                              </LinkClient>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Navegación</span>
-                              </a>
+                              </LinkClient>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Navegación</span>
-                              </a>
+                              </LinkClient>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Navegación</span>
-                              </a>
+                              </LinkClient>
                             </li>
                           </ul>
                         </nav>
@@ -715,19 +730,22 @@ const HeaderDocs: React.FC = () => {
             <div className="container">
               <div className="header-box-sizing">
                 <header className="o-header navbar" role="banner">
-                  <a href="#main" className="skip-to-main-content-link">
+                  <LinkClient href="#main" className="skip-to-main-content-link">
                     Saltar al contenido principal
-                  </a>
+                  </LinkClient>
                   <div className="container header-container">
-                    <a href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image
-                        className="header-logo"
-                        src={`${basePath}/images/BA.svg`}
+                    <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
+                      <img
+                        className="d-none d-xl-block"
+                        src={`${basePath}${logo}`}
                         alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
-                        width={76}
-                        height={48}
-                      ></Image>
-                    </a>
+                      />
+                      <img
+                        className="d-xl-none"
+                        src={`${basePath}${logo_mobile}`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                      />
+                    </LinkClient>
                     <button
                       className="navbar-toggler"
                       type="button"
@@ -756,36 +774,36 @@ const HeaderDocs: React.FC = () => {
                                   </span>
                                 </button>
                                 <div className="dropdown-menu">
-                                  <a className="dropdown-item" href="#">
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item item-link" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item item-link">
                                     <span className="item-text">Navegación</span>
                                     <span className="material-symbols-rounded" aria-hidden="true">
                                       arrow_forward
                                     </span>
-                                  </a>
+                                  </LinkClient>
                                 </div>
                               </li>
                               <li className="nav-item">
-                                <a className="nav-link nav-link-lg" href="#">
+                                <LinkClient className="nav-link nav-link-lg">
                                   <span>Navegación</span>
-                                </a>
+                                </LinkClient>
                               </li>
                               <li className="dropdown">
                                 <button
@@ -800,30 +818,30 @@ const HeaderDocs: React.FC = () => {
                                   </span>
                                 </button>
                                 <div className="dropdown-menu">
-                                  <a className="dropdown-item" href="#">
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item item-link" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item item-link">
                                     <span className="item-text">Navegación</span>
                                     <span className="material-symbols-rounded" aria-hidden="true">
                                       arrow_forward
                                     </span>
-                                  </a>
+                                  </LinkClient>
                                 </div>
                               </li>
                             </ul>
@@ -860,25 +878,25 @@ const HeaderDocs: React.FC = () => {
                               <span className="btn-dropdown-text ellipsis-1">Perfil</span>
                             </button>
                             <div className="dropdown-menu dropdown-menu-end">
-                              <a className="dropdown-item" href="#">
+                              <LinkClient className="dropdown-item">
                                 <span className="item-text">Navegación 1</span>
-                              </a>
-                              <a className="dropdown-item" href="#">
+                              </LinkClient>
+                              <LinkClient className="dropdown-item">
                                 <span className="item-text">Navegación 2</span>
-                              </a>
-                              <a className="dropdown-item" href="#">
+                              </LinkClient>
+                              <LinkClient className="dropdown-item">
                                 <span className="item-text">Navegación 3</span>
-                              </a>
-                              <a className="dropdown-item" href="#">
+                              </LinkClient>
+                              <LinkClient className="dropdown-item">
                                 <span className="item-text">Notificaciones</span>
                                 <span className="item-notifications"></span>
-                              </a>
-                              <a className="dropdown-item item-danger" href="#">
+                              </LinkClient>
+                              <LinkClient className="dropdown-item item-danger">
                                 <span className="item-text">Cerrar sesión</span>
                                 <span className="material-symbols-rounded" aria-hidden="true">
                                   logout
                                 </span>
-                              </a>
+                              </LinkClient>
                             </div>
                           </div>
                         </div>
@@ -888,35 +906,35 @@ const HeaderDocs: React.FC = () => {
                           <p className="navbar-user-mobile-title">Perfil</p>
                           <ul className="nav flex-column nav-pills nav-user">
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Navegación 1</span>
-                              </a>
+                              </LinkClient>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Navegación 2</span>
-                              </a>
+                              </LinkClient>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Navegación 3</span>
-                              </a>
+                              </LinkClient>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Notificaciones</span>
                                 <span className="item-notifications"></span>
-                              </a>
+                              </LinkClient>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-danger nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-danger nav-link-lg">
                                 <div className="nav-icon">
                                   <span className="material-symbols-rounded" aria-hidden="true">
                                     logout
                                   </span>
                                   <span>Cerrar sesión</span>
                                 </div>
-                              </a>
+                              </LinkClient>
                             </li>
                           </ul>
                         </nav>
@@ -934,19 +952,22 @@ const HeaderDocs: React.FC = () => {
             <div className="container">
               <div className="header-box-sizing">
                 <header className="o-header navbar" role="banner">
-                  <a href="#main" className="skip-to-main-content-link">
+                  <LinkClient href="#main" className="skip-to-main-content-link">
                     Saltar al contenido principal
-                  </a>
+                  </LinkClient>
                   <div className="container header-container">
-                    <a href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image
-                        className="header-logo"
-                        src={`${basePath}/images/BA.svg`}
+                    <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
+                      <img
+                        className="d-none d-xl-block"
+                        src={`${basePath}${logo}`}
                         alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
-                        width={76}
-                        height={48}
-                      ></Image>
-                    </a>
+                      />
+                      <img
+                        className="d-xl-none"
+                        src={`${basePath}${logo_mobile}`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                      />
+                    </LinkClient>
                     <button
                       className="navbar-toggler"
                       type="button"
@@ -975,36 +996,36 @@ const HeaderDocs: React.FC = () => {
                                   </span>
                                 </button>
                                 <div className="dropdown-menu">
-                                  <a className="dropdown-item" href="#">
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item item-link" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item item-link">
                                     <span className="item-text">Navegación</span>
                                     <span className="material-symbols-rounded" aria-hidden="true">
                                       arrow_forward
                                     </span>
-                                  </a>
+                                  </LinkClient>
                                 </div>
                               </li>
                               <li className="nav-item">
-                                <a className="nav-link nav-link-lg" href="#">
+                                <LinkClient className="nav-link nav-link-lg">
                                   <span>Navegación</span>
-                                </a>
+                                </LinkClient>
                               </li>
                               <li className="dropdown">
                                 <button
@@ -1019,30 +1040,30 @@ const HeaderDocs: React.FC = () => {
                                   </span>
                                 </button>
                                 <div className="dropdown-menu">
-                                  <a className="dropdown-item" href="#">
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item item-link" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item item-link">
                                     <span className="item-text">Navegación</span>
                                     <span className="material-symbols-rounded" aria-hidden="true">
                                       arrow_forward
                                     </span>
-                                  </a>
+                                  </LinkClient>
                                 </div>
                               </li>
                             </ul>
@@ -1062,25 +1083,25 @@ const HeaderDocs: React.FC = () => {
                               <span className="btn-dropdown-text ellipsis-1">Perfil</span>
                             </button>
                             <div className="dropdown-menu dropdown-menu-end">
-                              <a className="dropdown-item" href="#">
+                              <LinkClient className="dropdown-item">
                                 <span className="item-text">Navegación 1</span>
-                              </a>
-                              <a className="dropdown-item" href="#">
+                              </LinkClient>
+                              <LinkClient className="dropdown-item">
                                 <span className="item-text">Navegación 2</span>
-                              </a>
-                              <a className="dropdown-item" href="#">
+                              </LinkClient>
+                              <LinkClient className="dropdown-item">
                                 <span className="item-text">Navegación 3</span>
-                              </a>
-                              <a className="dropdown-item" href="#">
+                              </LinkClient>
+                              <LinkClient className="dropdown-item">
                                 <span className="item-text">Notificaciones</span>
                                 <span className="item-notifications"></span>
-                              </a>
-                              <a className="dropdown-item item-danger" href="#">
+                              </LinkClient>
+                              <LinkClient className="dropdown-item item-danger">
                                 <span className="item-text">Cerrar sesión</span>
                                 <span className="material-symbols-rounded" aria-hidden="true">
                                   logout
                                 </span>
-                              </a>
+                              </LinkClient>
                             </div>
                           </div>
                         </div>
@@ -1090,35 +1111,35 @@ const HeaderDocs: React.FC = () => {
                           <p className="navbar-user-mobile-title">Perfil</p>
                           <ul className="nav flex-column nav-pills nav-user">
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Navegación 1</span>
-                              </a>
+                              </LinkClient>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Navegación 2</span>
-                              </a>
+                              </LinkClient>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Navegación 3</span>
-                              </a>
+                              </LinkClient>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Notificaciones</span>
                                 <span className="item-notifications"></span>
-                              </a>
+                              </LinkClient>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-danger nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-danger nav-link-lg" href="#">
                                 <div className="nav-icon">
                                   <span className="material-symbols-rounded" aria-hidden="true">
                                     logout
                                   </span>
                                   <span>Cerrar sesión</span>
                                 </div>
-                              </a>
+                              </LinkClient>
                             </li>
                           </ul>
                         </nav>
@@ -1142,19 +1163,22 @@ const HeaderDocs: React.FC = () => {
             <div className="container">
               <div className="header-box-sizing">
                 <header className="o-header navbar" role="banner">
-                  <a href="#main" className="skip-to-main-content-link">
+                  <LinkClient href="#main" className="skip-to-main-content-link">
                     Saltar al contenido principal
-                  </a>
+                  </LinkClient>
                   <div className="container header-container">
-                    <a href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image
-                        className="header-logo"
-                        src={`${basePath}/images/BA.svg`}
+                    <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
+                      <img
+                        className="d-none d-xl-block"
+                        src={`${basePath}${logo}`}
                         alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
-                        width={76}
-                        height={48}
-                      ></Image>
-                    </a>
+                      />
+                      <img
+                        className="d-xl-none"
+                        src={`${basePath}${logo_mobile}`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                      />
+                    </LinkClient>
                     <button
                       className="navbar-toggler"
                       type="button"
@@ -1197,25 +1221,25 @@ const HeaderDocs: React.FC = () => {
                               <span className="btn-dropdown-text ellipsis-1">Perfil</span>
                             </button>
                             <div className="dropdown-menu dropdown-menu-end">
-                              <a className="dropdown-item" href="#">
+                              <LinkClient className="dropdown-item">
                                 <span className="item-text">Navegación 1</span>
-                              </a>
-                              <a className="dropdown-item" href="#">
+                              </LinkClient>
+                              <LinkClient className="dropdown-item">
                                 <span className="item-text">Navegación 2</span>
-                              </a>
-                              <a className="dropdown-item" href="#">
+                              </LinkClient>
+                              <LinkClient className="dropdown-item">
                                 <span className="item-text">Navegación 3</span>
-                              </a>
-                              <a className="dropdown-item" href="#">
+                              </LinkClient>
+                              <LinkClient className="dropdown-item">
                                 <span className="item-text">Notificaciones</span>
                                 <span className="item-notifications"></span>
-                              </a>
-                              <a className="dropdown-item item-danger" href="#">
+                              </LinkClient>
+                              <LinkClient className="dropdown-item item-danger">
                                 <span className="item-text">Cerrar sesión</span>
                                 <span className="material-symbols-rounded" aria-hidden="true">
                                   logout
                                 </span>
-                              </a>
+                              </LinkClient>
                             </div>
                           </div>
                         </div>
@@ -1237,36 +1261,36 @@ const HeaderDocs: React.FC = () => {
                                 </span>
                               </button>
                               <div className="dropdown-menu">
-                                <a className="dropdown-item" href="#">
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item item-link" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item item-link">
                                   <span className="item-text">Navegación</span>
                                   <span className="material-symbols-rounded" aria-hidden="true">
                                     arrow_forward
                                   </span>
-                                </a>
+                                </LinkClient>
                               </div>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Navegación</span>
-                              </a>
+                              </LinkClient>
                             </li>
                             <li className="dropdown">
                               <button
@@ -1281,51 +1305,51 @@ const HeaderDocs: React.FC = () => {
                                 </span>
                               </button>
                               <div className="dropdown-menu">
-                                <a className="dropdown-item" href="#">
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item item-link" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item item-link">
                                   <span className="item-text">Navegación</span>
                                   <span className="material-symbols-rounded" aria-hidden="true">
                                     arrow_forward
                                   </span>
-                                </a>
+                                </LinkClient>
                               </div>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Navegación</span>
-                              </a>
+                              </LinkClient>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Navegación</span>
-                              </a>
+                              </LinkClient>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Navegación</span>
-                              </a>
+                              </LinkClient>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Navegación</span>
-                              </a>
+                              </LinkClient>
                             </li>
                           </ul>
                         </nav>
@@ -1335,35 +1359,35 @@ const HeaderDocs: React.FC = () => {
                           <p className="navbar-user-mobile-title">Perfil</p>
                           <ul className="nav flex-column nav-pills nav-user">
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Navegación 1</span>
-                              </a>
+                              </LinkClient>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Navegación 2</span>
-                              </a>
+                              </LinkClient>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Navegación 3</span>
-                              </a>
+                              </LinkClient>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Notificaciones</span>
                                 <span className="item-notifications"></span>
-                              </a>
+                              </LinkClient>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-danger nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-danger nav-link-lg">
                                 <div className="nav-icon">
                                   <span className="material-symbols-rounded" aria-hidden="true">
                                     logout
                                   </span>
                                   <span>Cerrar sesión</span>
                                 </div>
-                              </a>
+                              </LinkClient>
                             </li>
                           </ul>
                         </nav>
@@ -1381,19 +1405,22 @@ const HeaderDocs: React.FC = () => {
             <div className="container">
               <div className="header-box-sizing">
                 <header className="o-header navbar" role="banner">
-                  <a href="#main" className="skip-to-main-content-link">
+                  <LinkClient href="#main" className="skip-to-main-content-link">
                     Saltar al contenido principal
-                  </a>
+                  </LinkClient>
                   <div className="container header-container">
-                    <a href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image
-                        className="header-logo"
-                        src={`${basePath}/images/BA.svg`}
+                    <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
+                      <img
+                        className="d-none d-xl-block"
+                        src={`${basePath}${logo}`}
                         alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
-                        width={76}
-                        height={48}
-                      ></Image>
-                    </a>
+                      />
+                      <img
+                        className="d-xl-none"
+                        src={`${basePath}${logo_mobile}`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                      />
+                    </LinkClient>
                     <button
                       className="navbar-toggler"
                       type="button"
@@ -1419,25 +1446,25 @@ const HeaderDocs: React.FC = () => {
                               <span className="btn-dropdown-text ellipsis-1">Perfil</span>
                             </button>
                             <div className="dropdown-menu dropdown-menu-end">
-                              <a className="dropdown-item" href="#">
+                              <LinkClient className="dropdown-item">
                                 <span className="item-text">Navegación 1</span>
-                              </a>
-                              <a className="dropdown-item" href="#">
+                              </LinkClient>
+                              <LinkClient className="dropdown-item">
                                 <span className="item-text">Navegación 2</span>
-                              </a>
-                              <a className="dropdown-item" href="#">
+                              </LinkClient>
+                              <LinkClient className="dropdown-item">
                                 <span className="item-text">Navegación 3</span>
-                              </a>
-                              <a className="dropdown-item" href="#">
+                              </LinkClient>
+                              <LinkClient className="dropdown-item">
                                 <span className="item-text">Notificaciones</span>
                                 <span className="item-notifications"></span>
-                              </a>
-                              <a className="dropdown-item item-danger" href="#">
+                              </LinkClient>
+                              <LinkClient className="dropdown-item item-danger">
                                 <span className="item-text">Cerrar sesión</span>
                                 <span className="material-symbols-rounded" aria-hidden="true">
                                   logout
                                 </span>
-                              </a>
+                              </LinkClient>
                             </div>
                           </div>
                         </div>
@@ -1459,36 +1486,36 @@ const HeaderDocs: React.FC = () => {
                                 </span>
                               </button>
                               <div className="dropdown-menu">
-                                <a className="dropdown-item" href="#">
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item item-link" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item item-link">
                                   <span className="item-text">Navegación</span>
                                   <span className="material-symbols-rounded" aria-hidden="true">
                                     arrow_forward
                                   </span>
-                                </a>
+                                </LinkClient>
                               </div>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Navegación</span>
-                              </a>
+                              </LinkClient>
                             </li>
                             <li className="dropdown">
                               <button
@@ -1503,51 +1530,51 @@ const HeaderDocs: React.FC = () => {
                                 </span>
                               </button>
                               <div className="dropdown-menu">
-                                <a className="dropdown-item" href="#">
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
                                   <span className="item-text">Navegación</span>
-                                </a>
-                                <a className="dropdown-item item-link" href="#">
+                                </LinkClient>
+                                <LinkClient className="dropdown-item item-link">
                                   <span className="item-text">Navegación</span>
                                   <span className="material-symbols-rounded" aria-hidden="true">
                                     arrow_forward
                                   </span>
-                                </a>
+                                </LinkClient>
                               </div>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Navegación</span>
-                              </a>
+                              </LinkClient>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Navegación</span>
-                              </a>
+                              </LinkClient>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Navegación</span>
-                              </a>
+                              </LinkClient>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Navegación</span>
-                              </a>
+                              </LinkClient>
                             </li>
                           </ul>
                         </nav>
@@ -1557,35 +1584,35 @@ const HeaderDocs: React.FC = () => {
                           <p className="navbar-user-mobile-title">Perfil</p>
                           <ul className="nav flex-column nav-pills nav-user">
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Navegación 1</span>
-                              </a>
+                              </LinkClient>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Navegación 2</span>
-                              </a>
+                              </LinkClient>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Navegación 3</span>
-                              </a>
+                              </LinkClient>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-lg">
                                 <span>Notificaciones</span>
                                 <span className="item-notifications"></span>
-                              </a>
+                              </LinkClient>
                             </li>
                             <li className="nav-item">
-                              <a className="nav-link nav-link-danger nav-link-lg" href="#">
+                              <LinkClient className="nav-link nav-link-danger nav-link-lg">
                                 <div className="nav-icon">
                                   <span className="material-symbols-rounded" aria-hidden="true">
                                     logout
                                   </span>
                                   <span>Cerrar sesión</span>
                                 </div>
-                              </a>
+                              </LinkClient>
                             </li>
                           </ul>
                         </nav>
@@ -1609,19 +1636,22 @@ const HeaderDocs: React.FC = () => {
             <div className="container">
               <div className="header-box-sizing">
                 <header className="o-header navbar" role="banner">
-                  <a href="#main" className="skip-to-main-content-link">
+                  <LinkClient href="#main" className="skip-to-main-content-link">
                     Saltar al contenido principal
-                  </a>
+                  </LinkClient>
                   <div className="container header-container">
-                    <a href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image
-                        className="header-logo"
-                        src={`${basePath}/images/BA.svg`}
+                    <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
+                      <img
+                        className="d-none d-xl-block"
+                        src={`${basePath}${logo}`}
                         alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
-                        width={76}
-                        height={48}
-                      ></Image>
-                    </a>
+                      />
+                      <img
+                        className="d-xl-none"
+                        src={`${basePath}${logo_mobile}`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                      />
+                    </LinkClient>
                     <button
                       className="navbar-toggler"
                       type="button"
@@ -1650,36 +1680,36 @@ const HeaderDocs: React.FC = () => {
                                   </span>
                                 </button>
                                 <div className="dropdown-menu">
-                                  <a className="dropdown-item" href="#">
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item item-link" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item item-link">
                                     <span className="item-text">Navegación</span>
                                     <span className="material-symbols-rounded" aria-hidden="true">
                                       arrow_forward
                                     </span>
-                                  </a>
+                                  </LinkClient>
                                 </div>
                               </li>
                               <li className="nav-item">
-                                <a className="nav-link nav-link-lg" href="#">
+                                <LinkClient className="nav-link nav-link-lg">
                                   <span>Navegación</span>
-                                </a>
+                                </LinkClient>
                               </li>
                               <li className="dropdown">
                                 <button
@@ -1694,30 +1724,30 @@ const HeaderDocs: React.FC = () => {
                                   </span>
                                 </button>
                                 <div className="dropdown-menu">
-                                  <a className="dropdown-item" href="#">
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item item-link" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item item-link">
                                     <span className="item-text">Navegación</span>
                                     <span className="material-symbols-rounded" aria-hidden="true">
                                       arrow_forward
                                     </span>
-                                  </a>
+                                  </LinkClient>
                                 </div>
                               </li>
                             </ul>
@@ -1754,19 +1784,22 @@ const HeaderDocs: React.FC = () => {
             <div className="container">
               <div className="header-box-sizing">
                 <header className="o-header navbar" role="banner">
-                  <a href="#main" className="skip-to-main-content-link">
+                  <LinkClient href="#main" className="skip-to-main-content-link">
                     Saltar al contenido principal
-                  </a>
+                  </LinkClient>
                   <div className="container header-container">
-                    <a href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image
-                        className="header-logo"
-                        src={`${basePath}/images/BA.svg`}
+                    <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
+                      <img
+                        className="d-none d-xl-block"
+                        src={`${basePath}${logo}`}
                         alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
-                        width={76}
-                        height={48}
-                      ></Image>
-                    </a>
+                      />
+                      <img
+                        className="d-xl-none"
+                        src={`${basePath}${logo_mobile}`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                      />
+                    </LinkClient>
                     <button
                       className="navbar-toggler"
                       type="button"
@@ -1795,36 +1828,36 @@ const HeaderDocs: React.FC = () => {
                                   </span>
                                 </button>
                                 <div className="dropdown-menu">
-                                  <a className="dropdown-item" href="#">
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item item-link" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item item-link">
                                     <span className="item-text">Navegación</span>
                                     <span className="material-symbols-rounded" aria-hidden="true">
                                       arrow_forward
                                     </span>
-                                  </a>
+                                  </LinkClient>
                                 </div>
                               </li>
                               <li className="nav-item">
-                                <a className="nav-link nav-link-lg" href="#">
+                                <LinkClient className="nav-link nav-link-lg">
                                   <span>Navegación</span>
-                                </a>
+                                </LinkClient>
                               </li>
                               <li className="dropdown">
                                 <button
@@ -1839,30 +1872,30 @@ const HeaderDocs: React.FC = () => {
                                   </span>
                                 </button>
                                 <div className="dropdown-menu">
-                                  <a className="dropdown-item" href="#">
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
                                     <span className="item-text">Navegación</span>
-                                  </a>
-                                  <a className="dropdown-item item-link" href="#">
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item item-link">
                                     <span className="item-text">Navegación</span>
                                     <span className="material-symbols-rounded" aria-hidden="true">
                                       arrow_forward
                                     </span>
-                                  </a>
+                                  </LinkClient>
                                 </div>
                               </li>
                             </ul>
@@ -1888,26 +1921,29 @@ const HeaderDocs: React.FC = () => {
             <div className="container">
               <div className="header-box-sizing">
                 <header className="o-header navbar" role="banner">
-                  <a href="#main" className="skip-to-main-content-link">
+                  <LinkClient href="#main" className="skip-to-main-content-link">
                     Saltar al contenido principal
-                  </a>
+                  </LinkClient>
                   <div className="container header-container">
-                    <a href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image
-                        className="header-logo"
-                        src={`${basePath}/images/BA.svg`}
+                    <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
+                      <img
+                        className="d-none d-xl-block"
+                        src={`${basePath}${logo}`}
                         alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
-                        width={76}
-                        height={48}
-                      ></Image>
-                    </a>
+                      />
+                      <img
+                        className="d-xl-none"
+                        src={`${basePath}${logo_mobile}`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                      />
+                    </LinkClient>
                     <div className="navbar-login-mobile">
-                      <a className="btn btn-lg btn-icon btn-outline-tertiary" href="#" target="_blank">
+                      <LinkClient className="btn btn-lg btn-icon btn-outline-primary">
                         <span className="material-symbols-rounded" aria-hidden="true">
                           person
                         </span>
                         <span className="btn-text">Ingresar</span>
-                      </a>
+                      </LinkClient>
                     </div>
                     <button
                       className="navbar-toggler"
@@ -1938,12 +1974,12 @@ const HeaderDocs: React.FC = () => {
                           </form>
                         </div>
                         <div className="navbar-login">
-                          <a className="btn btn-lg btn-outline-tertiary" href="#" target="_blank">
+                          <LinkClient className="btn btn-lg btn-outline-primary">
                             <span className="material-symbols-rounded" aria-hidden="true">
                               person
                             </span>
                             <span className="btn-text">Ingresar</span>
-                          </a>
+                          </LinkClient>
                         </div>
                       </div>
                     </div>
@@ -1959,36 +1995,39 @@ const HeaderDocs: React.FC = () => {
             <div className="container">
               <div className="header-box-sizing">
                 <header className="o-header navbar" role="banner">
-                  <a href="#main" className="skip-to-main-content-link">
+                  <LinkClient href="#main" className="skip-to-main-content-link">
                     Saltar al contenido principal
-                  </a>
+                  </LinkClient>
                   <div className="container header-container">
-                    <a href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image
-                        className="header-logo"
-                        src={`${basePath}/images/BA.svg`}
+                    <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
+                      <img
+                        className="d-none d-xl-block"
+                        src={`${basePath}${logo}`}
                         alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
-                        width={76}
-                        height={48}
-                      ></Image>
-                    </a>
+                      />
+                      <img
+                        className="d-xl-none"
+                        src={`${basePath}${logo_mobile}`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                      />
+                    </LinkClient>
                     <div className="navbar-login-mobile">
-                      <a className="btn btn-lg btn-icon btn-outline-tertiary" href="#" target="_blank">
+                      <LinkClient className="btn btn-lg btn-icon btn-outline-primary">
                         <span className="material-symbols-rounded" aria-hidden="true">
                           person
                         </span>
                         <span className="btn-text">Ingresar</span>
-                      </a>
+                      </LinkClient>
                     </div>
                     <div className="collapse navbar-collapse">
                       <div className="navbar-content">
                         <div className="navbar-login">
-                          <a className="btn btn-lg btn-outline-tertiary" href="#" target="_blank">
+                          <LinkClient className="btn btn-lg btn-outline-primary">
                             <span className="material-symbols-rounded" aria-hidden="true">
                               person
                             </span>
                             <span className="btn-text">Ingresar</span>
-                          </a>
+                          </LinkClient>
                         </div>
                       </div>
                     </div>
@@ -2010,19 +2049,22 @@ const HeaderDocs: React.FC = () => {
             <div className="container">
               <div className="header-box-sizing">
                 <header className="o-header navbar" role="banner">
-                  <a href="#main" className="skip-to-main-content-link">
+                  <LinkClient href="#main" className="skip-to-main-content-link">
                     Saltar al contenido principal
-                  </a>
+                  </LinkClient>
                   <div className="container header-container">
-                    <a href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image
-                        className="header-logo"
-                        src={`${basePath}/images/BA.svg`}
+                    <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
+                      <img
+                        className="d-none d-xl-block"
+                        src={`${basePath}${logo}`}
                         alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
-                        width={76}
-                        height={48}
-                      ></Image>
-                    </a>
+                      />
+                      <img
+                        className="d-xl-none"
+                        src={`${basePath}${logo_mobile}`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                      />
+                    </LinkClient>
                     <button
                       className="navbar-toggler"
                       type="button"
@@ -2071,19 +2113,22 @@ const HeaderDocs: React.FC = () => {
             <div className="container">
               <div className="header-box-sizing">
                 <header className="o-header navbar" role="banner">
-                  <a href="#main" className="skip-to-main-content-link">
+                  <LinkClient href="#main" className="skip-to-main-content-link">
                     Saltar al contenido principal
-                  </a>
+                  </LinkClient>
                   <div className="container header-container">
-                    <a href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <Image
-                        className="header-logo"
-                        src={`${basePath}/images/BA.svg`}
+                    <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
+                      <img
+                        className="d-none d-xl-block"
+                        src={`${basePath}${logo}`}
                         alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
-                        width={76}
-                        height={48}
-                      ></Image>
-                    </a>
+                      />
+                      <img
+                        className="d-xl-none"
+                        src={`${basePath}${logo_mobile}`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                      />
+                    </LinkClient>
                   </div>
                   <div className="header-backdrop"></div>
                 </header>

@@ -29,13 +29,15 @@ $link-download-link-sm: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http:/
 
 a {
   outline: none;
-  color: $body-color;
+  color: $primary;
   cursor: pointer;
   word-break: break-word;
   display: inline-block;
   width: fit-content;
-  text-decoration-thickness: 1px;
   backface-visibility: hidden;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.1578rem; //2.52px
+  text-decoration-skip-ink: none;
 
   &:not(
       .btn,
@@ -50,8 +52,8 @@ a {
 
   &:hover,
   &.hover {
-    color: $hover-color;
-    text-decoration-thickness: 1px;
+    // color: $hover-color;
+    text-decoration-thickness: 3px;
   }
 
   &:focus,
@@ -60,12 +62,6 @@ a {
     border-radius: $border-radius-lg;
     box-shadow: $focus-box-shadow-subtle;
     outline: 0.125rem solid transparent;
-  }
-
-  &:active {
-    color: $hover-color;
-    border-radius: $border-radius-lg;
-    box-shadow: $focus-box-shadow-subtle;
   }
 
   &.list-group-item,
@@ -139,7 +135,7 @@ a {
     }
 
     &:visited {
-      color: $visited-bg-dark;
+      color: $visited-ondark;
     }
   }
 }

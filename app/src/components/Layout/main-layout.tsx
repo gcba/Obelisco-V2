@@ -13,21 +13,22 @@ export const stylesPages = [
 export const formsPages = [
   { text: 'Buscador', url: '/components/form-search', id: 1 },
   { text: 'Casillas de selección', url: '/components/form-selection', id: 2 },
-  { text: 'Formulario de Textos', url: '/components/form-text', id: 3 },
+  { text: 'Formulario de textos', url: '/components/form-text', id: 3 },
+  { text: 'Pasos de un formulario', url: '/components/steps-form', id: 4 },
 ];
 
 export const organismsPages = [
-  // { text: "Accesos (organismo)", url: "/components/access", id: 1 },
+  { text: 'Accesos (organismo)', url: '/components/access-organism', id: 1 },
   { text: 'Footer (pie de página)', url: '/components/footer', id: 2 },
   { text: 'Header (encabezado)', url: '/components/header', id: 3 },
-  { text: 'Tablas (organismo)', url: '/components/table', id: 4 },
+  { text: 'Tablas', url: '/components/table', id: 4 },
 ];
 export const componentsPages = [
   { text: 'Accesos', url: '/components/access', id: 1 },
   { text: 'Alertas', url: '/components/alert', id: 2 },
   { text: 'Banner', url: '/components/banner', id: 3 },
-  // { text: "Barra de desplazamiento", url: "/components/scrollbar", id: 4 },
-  // { text: "Barra de progreso", url: "/components/progress-bar", id: 5 },
+  { text: 'Barra de desplazamiento', url: '/components/scrollbar', id: 4 },
+  { text: 'Barra de progreso', url: '/components/progress-bar', id: 5 },
   { text: 'Bloque de trámite', url: '/components/block', id: 6 },
   { text: 'Botones', url: '/components/button', id: 7 },
   { text: 'Calendario', url: '/components/calendar', id: 8 },
@@ -49,19 +50,21 @@ export const componentsPages = [
   { text: 'Navegación vertical', url: '/components/nav-vertical', id: 24 },
   { text: 'Paginado', url: '/components/pagination', id: 25 },
   { text: 'Pestañas', url: '/components/tabs', id: 26 },
-  // { text: "Pasos de un formulario", url: "/components/steps-form", id: 27 },
-  { text: 'Spinner', url: '/components/spinner', id: 28 },
-  { text: 'Switch', url: '/components/switch', id: 29 },
-  { text: 'Tarjetas', url: '/components/cards', id: 30 },
-  { text: 'Tooltip', url: '/components/tooltip', id: 31 },
+  { text: 'Spinner', url: '/components/spinner', id: 27 },
+  { text: 'Switch', url: '/components/switch', id: 28 },
+  { text: 'Tarjetas', url: '/components/cards', id: 29 },
+  { text: 'Tooltip', url: '/components/tooltip', id: 30 },
 ];
 
 export const gettingPages = [
-  { text: 'Instalación', url: '/getting-started/installation', id: 2 },
-  { text: 'Importaciones', url: '/getting-started/imports', id: 3 },
+  { text: 'Instalación', url: '/getting-started/installation', id: 1 },
+  { text: 'Importaciones', url: '/getting-started/imports', id: 2 },
 ];
 
-export const documentationPages = [{ text: 'Cambios en componentes', url: '/documentation/update-component', id: 2 }];
+export const documentationPages = [
+  { text: 'Cambios en componentes', url: '/documentation/update-component', id: 1 },
+  { text: 'Clases disponibles', url: '/documentation/class-documentation', id: 2 },
+];
 
 const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const pathname = usePathname();
@@ -73,7 +76,7 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         children
       ) : (
         <div className="row v-height-100 pt-5">
-          <div className="col-3 d-none d-lg-block ">
+          <div className="col-3 d-none d-xl-block ">
             {pathname.includes('/components') && (
               <div className="nav-left sticky-nav">
                 <div className="nav-left-box-title">
@@ -128,7 +131,7 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             )}
           </div>
 
-          <div className="col-12 col-lg-9">{children}</div>
+          <div className="col-12 col-xl-9">{children}</div>
         </div>
       )}
     </div>

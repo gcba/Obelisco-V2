@@ -14,14 +14,22 @@ $pagination-size: 40px;
 $pagination-icon-padding-x-sm: 0.25rem;
 $pagination-icon-padding-x: 0.5rem;
 
-$pagination-icon-left-hover: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgb(39,73,134);transform:;-ms-filter:"><path d="M14.71 6.71c-.39-.39-1.02-.39-1.41 0L8.71 11.3c-.39.39-.39 1.02 0 1.41l4.59 4.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L10.83 12l3.88-3.88c.39-.39.38-1.03 0-1.41z"></path></svg>');
-$pagination-icon-right-hover: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgb(39,73,134);transform:;-ms-filter:"><path d="M9.29 6.71c-.39.39-.39 1.02 0 1.41L13.17 12l-3.88 3.88c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z"></path></svg>');
+// Icons
+$svg-base-left: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 6.70498C14.61 6.31498 13.98 6.31498 13.59 6.70498L9.00002 11.295C8.61002 11.685 8.61002 12.315 9.00002 12.705L13.59 17.295C13.98 17.685 14.61 17.685 15 17.295C15.39 16.905 15.39 16.275 15 15.885L11.12 11.995L15 8.11498C15.39 7.72498 15.38 7.08498 15 6.70498Z" fill="%23';
+$svg-base-right: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9.00002 6.71063C8.61002 7.10063 8.61002 7.73063 9.00002 8.12063L12.88 12.0006L9.00002 15.8806C8.61002 16.2706 8.61002 16.9006 9.00002 17.2906C9.39002 17.6806 10.02 17.6806 10.41 17.2906L15 12.7006C15.39 12.3106 15.39 11.6806 15 11.2906L10.41 6.70063C10.03 6.32063 9.39002 6.32063 9.00002 6.71063Z" fill="%23';
+$color-default: '101E37';
+$color-hover: '274986';
+$color-disabled: '9EAAB8';
+$color-active: 'FFFFFF';
 
-$pagination-icon-left: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgb(56, 72, 92);transform:;-ms-filter:"><path d="M14.71 6.71c-.39-.39-1.02-.39-1.41 0L8.71 11.3c-.39.39-.39 1.02 0 1.41l4.59 4.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L10.83 12l3.88-3.88c.39-.39.38-1.03 0-1.41z"></path></svg>');
-$pagination-icon-right: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgb(56, 72, 92);transform:;-ms-filter:"><path d="M9.29 6.71c-.39.39-.39 1.02 0 1.41L13.17 12l-3.88 3.88c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z"></path></svg>');
-
-$pagination-icon-right-active: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgb(255,255,255);transform:;-ms-filter:"><path d="M9.29 6.71c-.39.39-.39 1.02 0 1.41L13.17 12l-3.88 3.88c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z"></path></svg>');
-$pagination-icon-left-active: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgb(255,255,255);transform:;-ms-filter:"><path d="M14.71 6.71c-.39-.39-1.02-.39-1.41 0L8.71 11.3c-.39.39-.39 1.02 0 1.41l4.59 4.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L10.83 12l3.88-3.88c.39-.39.38-1.03 0-1.41z"></path></svg>');
+$pagination-icon-left: url('#{$svg-base-left}#{$color-default}"/></svg>');
+$pagination-icon-right: url('#{$svg-base-right}#{$color-default}"/></svg>');
+$pagination-icon-left-hover: url('#{$svg-base-left}#{$color-hover}"/></svg>');
+$pagination-icon-right-hover: url('#{$svg-base-right}#{$color-hover}"/></svg>');
+$pagination-icon-left-disabled: url('#{$svg-base-left}#{$color-disabled}"/></svg>');
+$pagination-icon-right-disabled: url('#{$svg-base-right}#{$color-disabled}"/></svg>');
+$pagination-icon-left-active: url('#{$svg-base-left}#{$color-active}"/></svg>');
+$pagination-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
 
 @mixin pagination-states(
   $text-decoration,
@@ -49,6 +57,8 @@ $pagination-icon-left-active: url('data:image/svg+xml;utf8,<svg xmlns="http://ww
     color: $color;
   }
 }
+
+/* === Custom styles === */
 
 .pagination {
   gap: 0.5rem;
@@ -183,12 +193,21 @@ $pagination-icon-left-active: url('data:image/svg+xml;utf8,<svg xmlns="http://ww
     }
 
     &.disabled {
+      .page-link {
+        background-color: $disabled-bg;
+        outline-color: $disabled-bg;
+        color: $disabled-text;
+        opacity: 1;
+        cursor: none;
+        pointer-events: none;
+      }
+
       .page-previous-icon {
-        content: $pagination-icon-left-hover;
+        content: $pagination-icon-left-disabled;
       }
 
       .page-next-icon {
-        content: $pagination-icon-right-hover;
+        content: $pagination-icon-right-disabled;
       }
     }
   }

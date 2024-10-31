@@ -138,6 +138,7 @@ $accordion-button-collapsed-icon: url('data:image/svg+xml,<svg xmlns="http://www
           box-shadow: $focus-box-shadow;
           color: $body-color;
           outline-color: transparent;
+
           &::after {
             display: inline-block;
             vertical-align: middle;

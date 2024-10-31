@@ -14,6 +14,7 @@ $no-text-decoration: none;
 $margin-clearfix: 0 0 0.5rem; //0 0 8px
 $color-clearfix: $grisulado-100;
 $height-clearfix: 0.125rem;
+
 // Icono flecha de Accesos
 $access-arrow: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><g clip-path="url(%23clip0_1497_1475)"><path d="M9.83547 15.88L13.7155 12L9.83547 8.11998C9.44547 7.72998 9.44547 7.09998 9.83547 6.70998C10.2255 6.31998 10.8555 6.31998 11.2455 6.70998L15.8355 11.3C16.2255 11.69 16.2255 12.32 15.8355 12.71L11.2455 17.3C10.8555 17.69 10.2255 17.69 9.83547 17.3C9.45547 16.91 9.44547 16.27 9.83547 15.88Z" fill="%23101E37"/></g><defs><clipPath id="clip0_1497_1475"><rect width="24" height="24" fill="white" transform="translate(0.54541)"/></clipPath></defs></svg>');
 $access-arrow-blue: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><g clip-path="url(%23clip0_2222_853)"><path d="M9.83547 15.88L13.7155 12L9.83547 8.11998C9.44547 7.72998 9.44547 7.09998 9.83547 6.70998C10.2255 6.31998 10.8555 6.31998 11.2455 6.70998L15.8355 11.3C16.2255 11.69 16.2255 12.32 15.8355 12.71L11.2455 17.3C10.8555 17.69 10.2255 17.69 9.83547 17.3C9.45547 16.91 9.44547 16.27 9.83547 15.88Z" fill="%23274986"/></g><defs><clipPath id="clip0_2222_853"><rect width="24" height="24" fill="white" transform="translate(0.54541)"/></clipPath></defs></svg>');
@@ -36,6 +37,7 @@ $access-arrow-blue: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/s
   outline: 0.25rem solid transparent;
   color: $active-color;
   box-shadow: $focus-box-shadow;
+
   .access-text {
     color: $active-color;
   }
@@ -130,8 +132,10 @@ a.list-group-item {
     outline: $outline-transparent;
     background: $white;
 
-    &:hover:not(:active), &.hover:not(:active),
-    &:hover:not(.active), &.hover:not(.active) {
+    &:hover:not(:active),
+    &.hover:not(:active),
+    &:hover:not(.active),
+    &.hover:not(.active) {
       box-shadow: $focus-box-shadow;
       outline: $outline-transparent;
       color: $body-color;
@@ -161,13 +165,15 @@ a.list-group-item {
     }
 
     &:hover,
-    &.hover, 
+    &.hover,
     &:focus,
     &.focus {
       @include access-active;
+
       &:hover,
       &.hover {
         @include access-active;
+
         &::after {
           @include access-icon($access-arrow-blue); // icono azul
         }

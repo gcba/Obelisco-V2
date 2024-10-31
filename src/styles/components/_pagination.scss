@@ -6,8 +6,8 @@ $pagination-active-bg: $blue-700;
 $pagination-size: 2.75rem; //44px
 $pagination-size-mobile: 2rem; //32px
 $pagination-icon-padding-x: 0.5rem;
-$padding-icon-previous: .5rem .75rem .5rem .25rem;
-$padding-icon-next: .5rem .25rem .5rem .75rem;
+$padding-icon-previous: 0.5rem 0.75rem 0.5rem 0.25rem;
+$padding-icon-next: 0.5rem 0.25rem 0.5rem 0.75rem;
 
 // Icons
 $svg-base-left: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 6.70498C14.61 6.31498 13.98 6.31498 13.59 6.70498L9.00002 11.295C8.61002 11.685 8.61002 12.315 9.00002 12.705L13.59 17.295C13.98 17.685 14.61 17.685 15 17.295C15.39 16.905 15.39 16.275 15 15.885L11.12 11.995L15 8.11498C15.39 7.72498 15.38 7.08498 15 6.70498Z" fill="%23';
@@ -90,7 +90,7 @@ $pagination-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>'
       @extend .headline-md;
       font-weight: $font-weight-normal;
       word-break: normal;
-      padding: .5rem .25rem;
+      padding: 0.5rem 0.25rem;
 
       .page-previous-icon,
       .page-next-icon {
@@ -187,7 +187,7 @@ $pagination-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>'
           text-decoration: underline;
           text-decoration-color: transparent;
         }
-        
+
         &:focus,
         &.focus {
           outline: 0.25rem solid transparent;
@@ -234,6 +234,7 @@ $pagination-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>'
   .pagination {
     .page-item {
       height: $pagination-size-mobile;
+
       .page-link {
         min-width: 2rem;
         height: $pagination-size-mobile;
@@ -260,6 +261,7 @@ $pagination-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>'
       }
     }
   }
+
   .page-navigation {
     .page-link {
       min-height: 2rem;

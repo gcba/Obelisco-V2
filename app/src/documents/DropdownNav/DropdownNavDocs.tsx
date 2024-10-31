@@ -54,6 +54,35 @@ const sections = [
               </button>
               <div className="dropdown-menu">
                 <LinkClient className="dropdown-item">
+                  <span className="item-text">Opción de navegación</span>
+                </LinkClient>
+                <LinkClient className="dropdown-item">
+                  <span className="item-text">Opción de navegación</span>
+                </LinkClient>
+                <LinkClient className="dropdown-item">
+                  <span className="item-text">Opción de navegación</span>
+                </LinkClient>
+              </div>
+            </div>
+          </div>
+        </CodeBox>
+        <br />
+        <CodeBox codeHTML={DROPDOWN_MENU_ICON}>
+          <div className="container">
+            <div className="dropdown">
+              <button
+                type="button"
+                className="btn btn-dropdown btn-dropdown-border btn-lg"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span className="material-symbols-rounded o-icon" aria-label="hidden">
+                  add
+                </span>
+                <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
+              </button>
+              <div className="dropdown-menu">
+                <LinkClient className="dropdown-item">
                   <span className="material-symbols-rounded o-icon" aria-label="hidden">
                     add
                   </span>
@@ -80,50 +109,12 @@ const sections = [
                     arrow_forward
                   </span>
                 </a>
-                <a className="dropdown-item item-danger">
+                <LinkClient className="dropdown-item item-danger">
                   <span className="material-symbols-rounded o-icon" aria-label="hidden">
                     logout
                   </span>
                   <span className="item-text">Cerrar sesión</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </CodeBox>
-        <br />
-        <CodeBox codeHTML={DROPDOWN_MENU_ICON}>
-          <div className="container">
-            <div className="dropdown">
-              <button
-                type="button"
-                className="btn btn-dropdown btn-dropdown-border btn-lg"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <span className="material-symbols-rounded o-icon" aria-label="hidden">
-                  add
-                </span>
-                <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
-              </button>
-              <div className="dropdown-menu">
-                <LinkClient className="dropdown-item">
-                  <span className="material-symbols-rounded o-icon" aria-label="hidden">
-                    add
-                  </span>
-                  <span className="item-text">Opción de navegación</span>
                 </LinkClient>
-                <LinkClient className="dropdown-item">
-                  <span className="item-text text-end">Opción de navegación</span>
-                  <span className="material-symbols-rounded o-icon" aria-label="hidden">
-                    arrow_forward
-                  </span>
-                </LinkClient>
-                <a className="dropdown-item item-danger">
-                  <span className="item-text text-end">Cerrar sesión</span>
-                  <span className="material-symbols-rounded o-icon" aria-label="hidden">
-                    logout
-                  </span>
-                </a>
               </div>
             </div>
           </div>
@@ -156,12 +147,12 @@ const sections = [
                     arrow_forward
                   </span>
                 </LinkClient>
-                <a className="dropdown-item item-danger">
+                <LinkClient className="dropdown-item item-danger">
                   <span className="item-text text-end">Cerrar sesión</span>
                   <span className="material-symbols-rounded o-icon" aria-label="hidden">
                     logout
                   </span>
-                </a>
+                </LinkClient>
               </div>
             </div>
           </div>
@@ -198,12 +189,12 @@ const sections = [
                 <LinkClient className="dropdown-item">
                   <span className="item-text">Opción de navegación</span>
                 </LinkClient>
-                <a className="dropdown-item item-danger">
+                <LinkClient className="dropdown-item item-danger">
                   <span className="item-text">Cerrar sesión</span>
                   <span className="material-symbols-rounded o-icon" aria-label="hidden">
                     logout
                   </span>
-                </a>
+                </LinkClient>
               </div>
             </div>
           </div>
@@ -263,12 +254,12 @@ const sections = [
                 <LinkClient className="dropdown-item">
                   <span className="item-text">Opción de navegación</span>
                 </LinkClient>
-                <a className="dropdown-item item-danger">
+                <LinkClient className="dropdown-item item-danger">
                   <span className="material-symbols-rounded o-icon" aria-label="hidden">
                     logout
                   </span>
                   <span className="item-text">Cerrar sesión</span>
-                </a>
+                </LinkClient>
               </div>
             </div>
           </div>
@@ -321,12 +312,12 @@ const sections = [
                 <LinkClient className="dropdown-item">
                   <span className="item-text">Opción de navegación</span>
                 </LinkClient>
-                <a className="dropdown-item item-danger">
+                <LinkClient className="dropdown-item item-danger">
                   <span className="item-text">Cerrar sesión</span>
                   <span className="material-symbols-rounded o-icon" aria-label="hidden">
                     logout
                   </span>
-                </a>
+                </LinkClient>
               </div>
             </div>
           </div>

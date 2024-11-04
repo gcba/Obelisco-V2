@@ -6,15 +6,16 @@ import React, { useEffect, useState, useMemo, useCallback } from 'react';
 import Divisor from '@/components/Template/Divisor';
 import HeadingTemplate from '@/components/Template/HeadingTemplate';
 
+import ScrollspySubtitle from '../ScrollspyTitle';
 import SimpleText from './SimpleText';
 
 interface Section {
   id?: string;
-  title: string | React.ReactNode;
+  title?: string | React.ReactNode;
+  subtitle?: string;
   content?: React.ReactNode;
   description?: string;
   h1?: boolean;
-  h3?: boolean;
   defaultTitle?: boolean;
 }
 
@@ -60,18 +61,25 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections 
                   id={section.id || undefined}
                   ref={sectionRefs[index]}
                 >
-                  <HeadingTemplate className="pt-2">
-                    {section.h1 ? (
-                      <h1 className="mb-4">{section.title}</h1>
-                    ) : section.h3 ? (
-                      <h3 className="headline-md mb-4">{section.title}</h3>
-                    ) : (
-                      <h2 className="headline-lg mb-4">{section.title}</h2>
-                    )}
-                  </HeadingTemplate>
+                  {section.title && 
+                    <HeadingTemplate className="pt-2">
+                      {section.h1 ? (
+                        <h1 className="mb-4">{section.title}</h1>
+                      ) : (
+                        <h2 className="headline-lg mb-4">{section.title}</h2>
+                      )}
+                    </HeadingTemplate>
+                  }
+                  {section.subtitle && (
+                    <HeadingTemplate className="pt-2">
+                      <h3 className="headline-md fw-bold mb-4">
+                        <ScrollspySubtitle text={section.subtitle} />
+                      </h3>
+                    </HeadingTemplate>
+                  )}
                   {section.description && <SimpleText description={section.description} />}
                   {section.content}
-                  {index < sections.length - 1 && <Divisor />}
+                  {section.content && index < sections.length - 1 && <Divisor />}
                 </section>
               ))}
             </div>
@@ -85,7 +93,8 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections 
                   section.id && (
                     <li key={`${section.id}-${index}`} className={activeIndex === index ? 'active' : ''}>
                       <a href={`#${section.id}`} className="text-sm">
-                        {section.title}
+                        {section.title && section.title}
+                        {section.subtitle && <ScrollspySubtitle text={section.subtitle} ScrollspyComponent={true} />}
                       </a>
                     </li>
                   ),

@@ -1,13 +1,9 @@
-/* stylelint-disable scss/percent-placeholder-pattern */
-
-/* === Custom variables and mixins === */
-
+// Custom variables and mixins 
 $card-spacing-desktop: 1.5rem;
 $card-icon-size: 2rem;
 $card-media-size: 4rem;
 $card-icon-bg: $grisulado-50;
 $card-info-icon-size: 1rem;
-
 // Estilos de estados de tarjetas
 %card_states_styles {
   .card-body {
@@ -49,8 +45,7 @@ $card-info-icon-size: 1rem;
     }
   }
 }
-
-/* === Custom styles === */
+// Custom styles
 .card {
   border: none;
   outline: $outline-border;
@@ -78,7 +73,7 @@ $card-info-icon-size: 1rem;
   }
 
   .card-badges {
-    margin-bottom: 9.6px; //Debido a que badge tiene display: inline-block; y overflow: hidden; se genera un espaciado en el div contenedor siendo su altura 30.4px en vez de 24px, por lo que se modifica el margin-bottom para respetar espaciado de 16px entre etiqueta y titulo.
+    padding-bottom: 9.6px; //Debido a que badge tiene display: inline-block; y overflow: hidden; se genera un espaciado en el div contenedor siendo su altura 30.4px en vez de 24px, por lo que se modifica el margin-bottom para respetar espaciado de 16px entre etiqueta y titulo.
   }
 
   .badge {
@@ -200,7 +195,6 @@ $card-info-icon-size: 1rem;
     }
   }
 }
-
 //Estilos para lista de tarjetas verticales desplazable
 .responsive-scroll {
   &.vertical-cards-container {

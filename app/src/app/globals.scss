@@ -93,6 +93,9 @@ hr {
       a {
         text-decoration: none;
         color: #101e37;
+        &:hover {
+          color: #274986;
+        }
       }
 
       .active {
@@ -246,6 +249,9 @@ hr {
     width: 160%;
     position: relative;
     left: -30%;
+    @media screen and (min-width: 576px) and (max-width: 1199.98px) {
+      left: 0;
+    }
   }
 
   &-vertical {
@@ -281,6 +287,32 @@ hr {
   max-width: 328px;
   @media screen and (min-width: 1200px) {
     max-width: 348px;
+  }
+}
+.card-box-sizing-columns {
+  transform: scale(0.6);
+  transform-origin: top;
+  max-height: 600px;
+  @media screen and (min-width: 768px) {
+    max-height: 380px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-height: 260px;
+  }
+  > * {
+    width: 160%;
+    position: relative;
+    left: -30%;
+    @media screen and (min-width: 576px) and (max-width: 1199.98px) {
+      left: 0;
+    }
+  }
+  &-2 {
+    @extend .card-box-sizing-columns;
+    max-height: 340px;
+    @media screen and (min-width: 768px) {
+      max-height: 220px;
+    }
   }
 }
 

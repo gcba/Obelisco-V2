@@ -23,7 +23,7 @@ export const HORIZONTAL_ICON = `
 
 export const HORIZONTAL_IMG = `
 <div class="card card-horizontal">
-  <img src="https://gcba.github.io/Obelisco/cards/img-left.jpg" class="card-img" alt="descripción de imagen" />
+  <img src="/card-img-left.jpg" class="card-img" alt="descripción de imagen" />
   <div class="card-body">
     <h3 class="card-title">
       <a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -33,7 +33,7 @@ export const HORIZONTAL_IMG = `
 </div>
 
 <div class="card card-horizontal unbordered">
-  <img src="https://gcba.github.io/Obelisco/cards/img-left.jpg" class="card-img" alt="descripción de imagen" />
+  <img src="/card-img-left.jpg" class="card-img" alt="descripción de imagen" />
   <div class="card-body">
     <h3 class="card-title">
       <a href="#">Título de la tarjeta</a>
@@ -65,7 +65,7 @@ export const HORIZONTAL_TEXT = `
 
 export const HORIZONTAL_THEME = `
 <div class="card thematic">
-  <img class="card-img" src="https://gcba.github.io/Obelisco/cards/home.svg" alt="descripción de imagen" />
+  <img class="card-img" src="/card-illustration.svg" alt="descripción de imagen" />
   <div class="card-body">
     <h3 class="card-title">
       <a href="#">Título de la tarjeta con más de una línea</a>
@@ -100,7 +100,7 @@ export const VERTICAL_ICON = `
 
 export const VERTICAL_IMG = `
 <div class="card">
-  <img class="card-img" src="https://gcba.github.io/Obelisco/cards/img-top.jpg" alt="descripción de imagen" />
+  <img class="card-img" src="/card-img-top.jpg" alt="descripción de imagen" />
   <div class="card-body">
     <h3 class="card-title">
       <a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -112,7 +112,7 @@ export const VERTICAL_IMG = `
 
 export const VERTICAL_NOTICE = `
 <div class="card">
-  <img class="card-img" src="https://gcba.github.io/Obelisco/cards/img-top.jpg" alt="descripción de imagen" />
+  <img class="card-img" src="/card-img-top.jpg" alt="descripción de imagen" />
   <div class="card-body">
     <div class="card-badges">
         <span class="badge badge-default">etiqueta 1</span>
@@ -132,7 +132,7 @@ export const VERTICAL_NOTICE = `
 `;
 export const VERTICAL_NOTICE_TRUNCATE = `
 <div class="card">
-  <img class="card-img" src="https://gcba.github.io/Obelisco/cards/img-top.jpg" alt="descripción de imagen" />
+  <img class="card-img" src="/card-img-top.jpg" alt="descripción de imagen" />
   <div class="card-body">
     <div class="card-badges">
         <span class="badge badge-default">etiqueta 1</span>
@@ -155,7 +155,7 @@ export const VERTICAL_NOTICE_TRUNCATE = `
 
 export const VERTICAL_AGENDA = `
 <div class="card">
-  <img class="card-img" src="https://gcba.github.io/Obelisco/cards/img-top.jpg" alt="descripcion de imagen" />
+  <img class="card-img" src="/card-img-top.jpg" alt="descripcion de imagen" />
   <div class="card-body">
     <p class="card-headline">sobrelinea</p>
     <h3 class="card-title">
@@ -300,7 +300,7 @@ export const DISPOSITION_2 = `
 export const DISPOSITION_SCROLL = `
 <div class="responsive-scroll vertical-cards-container" tabindex="0">
   <div class="card">
-    <img class="card-img" src="https://gcba.github.io/Obelisco/cards/img-top.jpg" alt="descripción de imagen" />
+    <img class="card-img" src="/card-img-top.jpg" alt="descripción de imagen" />
     <div class="card-body">
       <div class="card-badges">
         <span class="badge badge-default">etiqueta 1</span>
@@ -320,7 +320,7 @@ export const DISPOSITION_SCROLL = `
     </div>
   </div>
   <div class="card">
-    <img class="card-img" src="https://gcba.github.io/Obelisco/cards/img-top.jpg" alt="descripción de imagen" />
+    <img class="card-img" src="/card-img-top.jpg" alt="descripción de imagen" />
     <div class="card-body">
       <div class="card-badges">
         <span class="badge badge-default">etiqueta 1</span>
@@ -340,7 +340,7 @@ export const DISPOSITION_SCROLL = `
     </div>
   </div>
   <div class="card">
-    <img class="card-img" src="https://gcba.github.io/Obelisco/cards/img-top.jpg" alt="descripción de imagen" />
+    <img class="card-img" src="/card-img-top.jpg" alt="descripción de imagen" />
     <div class="card-body">
       <div class="card-badges">
         <span class="badge badge-default">etiqueta 1</span>

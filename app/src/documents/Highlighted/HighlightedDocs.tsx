@@ -48,7 +48,11 @@ const HighlightedDocs: React.FC = () => {
     },
     {
       id: 'section-1',
-      title: 'Banner con imagen',
+      title: 'Banner',
+    },
+    {
+      id: 'section-2',
+      subtitle: 'Con imagen',
       content: (
         <>
           <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTONS}>
@@ -202,8 +206,8 @@ const HighlightedDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-2',
-      title: 'Banner con video',
+      id: 'section-3',
+      subtitle: 'Con video',
       content: (
         <>
           <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTONS_VIDEO_MP4}>
@@ -268,8 +272,8 @@ const HighlightedDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-3',
-      title: 'Banner sin multimedia',
+      id: 'section-4',
+      subtitle: 'Sin multimedia',
       content: (
         <>
           <CodeBox codeHTML={HIGHLIGHTED_BANNER_NO_MEDIA}>
@@ -296,8 +300,8 @@ const HighlightedDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-4',
-      title: 'Banner con fondo',
+      id: 'section-5',
+      subtitle: 'Con fondo',
       content: (
         <>
           <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTONS_BG}>
@@ -331,8 +335,12 @@ const HighlightedDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-5',
-      title: 'Conjunto con imagen',
+      id: 'section-6',
+      title: 'Conjunto',
+    },
+    {
+      id: 'section-7',
+      subtitle: 'Con imagen',
       content: (
         <CodeBox codeHTML={HIGHLIGHTED_JOIN_IMAGE}>
           <div className="highlighted-box-sizing-vertical">
@@ -445,8 +453,8 @@ const HighlightedDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-6',
-      title: 'Conjunto con video',
+      id: 'section-8',
+      subtitle: 'Con video',
       content: (
         <CodeBox codeHTML={HIGHLIGHTED_JOIN_VIDEO}>
           <div className="highlighted-box-sizing-vertical max-h-800">
@@ -506,8 +514,8 @@ const HighlightedDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-7',
-      title: 'Conjunto sin multimedia',
+      id: 'section-9',
+      subtitle: 'Sin multimedia',
       content: (
         <CodeBox codeHTML={HIGHLIGHTED_JOIN_IMAGE}>
           <div className="highlighted-box-sizing-vertical max-h-640">
@@ -592,7 +600,7 @@ const HighlightedDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-8',
+      id: 'section-10',
       title: 'Lateral',
       content: (
         <>

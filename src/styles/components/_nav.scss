@@ -1,16 +1,11 @@
 @use 'sass:math';
-/* === Variables === */
-
+// Variables
 $nav-icon-font-size: 1.25rem;
-
 $nav-link-padding-sm: 0.25rem 0.5rem;
 $nav-link-padding: 0.5rem 0.75rem;
 $nav-link-padding-lg: 0.75rem;
-
 $nav-link-vertical-padding-x: 1.125rem;
-
-/* === Custom styles === */
-
+// Custom styles
 nav {
   .nav-pills {
     gap: 0.625rem;
@@ -24,7 +19,7 @@ nav {
         text-decoration: none;
         background-color: $white;
         outline: 0.125rem solid transparent;
-        outline-offset: -0.125rem;
+        outline-offset: 0;
         min-height: 40px;
         padding: $nav-link-padding;
 
@@ -36,7 +31,8 @@ nav {
         &-sm {
           min-height: 32px;
           padding: $nav-link-padding-sm;
-          @extend .text-md;
+          @extend .headline-sm;
+          line-height: 1.5rem;
 
           .nav-icon {
             .o-icon {
@@ -230,13 +226,13 @@ nav {
       // Espaciado nav vertical 2do nivel
       .nav {
         .nav-link {
-          padding-left: $nav-link-vertical-padding-x * 2.4444;
+          padding-left: $nav-link-vertical-padding-x * 2.4444; //44px
         }
 
         // Espaciado nav vertical 3er nivel
         .nav {
           .nav-link {
-            padding-left: $nav-link-vertical-padding-x * 4;
+            padding-left: $nav-link-vertical-padding-x * 4; //72px
           }
 
           // Espaciado nav vertical 4to nivel

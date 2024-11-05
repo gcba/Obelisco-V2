@@ -22,7 +22,7 @@ $card-info-icon-size: 1rem;
         &:hover {
           color: $hover-color;
           text-decoration: underline;
-          text-decoration-thickness: 1px;
+          text-decoration-thickness: 3px;
 
           &::after {
             outline: $hover-outline;
@@ -33,8 +33,8 @@ $card-info-icon-size: 1rem;
           box-shadow: none;
           outline: none;
           text-decoration: underline;
-          text-decoration-thickness: 1px;
-          color: $body-color;
+          text-decoration-thickness: 2px;
+          color: $primary;
 
           &::after {
             box-shadow: $focus-box-shadow;
@@ -166,7 +166,7 @@ $card-info-icon-size: 1rem;
   //Estilos para tarjeta horizontal temática
   &.thematic {
     flex-direction: column;
-    @extend .unbordered;
+    padding: 16px;
 
     .card-img {
       width: 6rem;
@@ -187,6 +187,8 @@ $card-info-icon-size: 1rem;
     @include media-breakpoint-up(xl) {
       flex-direction: row;
       gap: 1.5rem;
+      align-items: center;
+      padding: 0;
 
       .card-img {
         width: 8rem;

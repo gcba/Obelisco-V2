@@ -164,7 +164,7 @@ const CardDocs: React.FC = () => {
                 ></Image>
                 <div className="card-body">
                   <h3 className="card-title">
-                    <LinkClient>Título de la tarjeta con más de una línea</LinkClient>
+                    <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
                   </h3>
                   <p className="card-text">Descripción de la tarjeta</p>
                 </div>

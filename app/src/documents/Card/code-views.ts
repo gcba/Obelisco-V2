@@ -20,7 +20,6 @@ export const HORIZONTAL_ICON = `
   </div>
 </div>
 `;
-
 export const HORIZONTAL_IMG = `
 <div class="card card-horizontal">
   <img src="/card-img-left.jpg" class="card-img" alt="descripción de imagen" />
@@ -42,7 +41,6 @@ export const HORIZONTAL_IMG = `
   </div>
 </div>
 `;
-
 export const HORIZONTAL_TEXT = `
 <div class="card card-horizontal">
   <div class="card-body">
@@ -62,13 +60,12 @@ export const HORIZONTAL_TEXT = `
   </div>
 </div>
 `;
-
 export const HORIZONTAL_THEME = `
 <div class="card thematic">
   <img class="card-img" src="/card-illustration.svg" alt="descripción de imagen" />
   <div class="card-body">
     <h3 class="card-title">
-      <a href="#">Título de la tarjeta con más de una línea</a>
+      <a href="#" class="card-title-link">Título de la tarjeta</a>
     </h3>
     <p class="card-text">Descripción de la tarjeta</p>
   </div>
@@ -97,7 +94,6 @@ export const VERTICAL_ICON = `
   </div>
 </div>
 `;
-
 export const VERTICAL_IMG = `
 <div class="card">
   <img class="card-img" src="/card-img-top.jpg" alt="descripción de imagen" />
@@ -109,7 +105,6 @@ export const VERTICAL_IMG = `
   </div>
 </div>
 `;
-
 export const VERTICAL_NOTICE = `
 <div class="card">
   <img class="card-img" src="/card-img-top.jpg" alt="descripción de imagen" />
@@ -152,7 +147,6 @@ export const VERTICAL_NOTICE_TRUNCATE = `
   </div>
 </div>
 `;
-
 export const VERTICAL_AGENDA = `
 <div class="card">
   <img class="card-img" src="/card-img-top.jpg" alt="descripcion de imagen" />
@@ -177,7 +171,6 @@ export const VERTICAL_AGENDA = `
   </div>
 </div>
 `;
-
 export const DISPOSITION_3 = `
 <div class="card-items-3">
   <div class="col">
@@ -237,7 +230,6 @@ export const DISPOSITION_3 = `
   </div>
 </div>
 `;
-
 export const DISPOSITION_2 = `
 <div class="card-items-2">
   <div class="col">

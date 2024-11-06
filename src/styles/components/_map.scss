@@ -1,21 +1,21 @@
 // Custom styles
-.card-map {
+.map {
   outline: $outline-border;
   border-radius: $border-radius-lg;
 
-  .card-body {
+  .map-body {
     padding: 1.5rem;
 
-    .card-title {
+    .map-title {
       @extend .headline-lg;
       margin-bottom: 0;
     }
 
-    .card-text {
+    .map-text {
       margin-top: 0.25rem;
     }
 
-    .card-iframe {
+    .map-iframe {
       max-height: 146px;
       margin: 1rem 0;
 

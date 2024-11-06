@@ -484,7 +484,10 @@ const UpdateComponents: React.FC = () => {
       content: (
         <ul className="docs-list">
           <li>
-            Se elimina la clase <code>.card</code>.
+            Se reemplazan las clases <code>.card</code> y <code>.card-map</code> por <code>.map</code>.
+          </li>
+          <li>
+            Las  clases <code>.card-iframe</code>, <code>.card-body</code>, <code>.card-title</code> y <code>.card-text</code> se reemplazan por <code>.map-iframe</code>, <code>.map-body</code>, <code>.map-title</code> y <code>.map-text</code>, respectivamente.
           </li>
         </ul>
       ),

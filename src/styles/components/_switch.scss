@@ -108,7 +108,7 @@ $switch-focus-shadow: 0 0 0 2px $focus-color;
   .slider {
     position: relative;
     cursor: pointer;
-    background-color: $grisulado-200;
+    background-color: $slate-200;
     transition: 0.4s;
     border-radius: 50px;
     width: $switch-width;
@@ -143,7 +143,7 @@ $switch-focus-shadow: 0 0 0 2px $focus-color;
     }
 
     &.disabled {
-      color: $grisulado-600;
+      color: $slate-600;
     }
   }
 }

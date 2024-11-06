@@ -8,7 +8,7 @@ $border-radius-tabs: 0.5rem 0.5rem 0 0;
   position: relative;
   padding: 0;
 
-  /* tabs-controls es el contenedor de los botones prev y next */
+  // tabs-controls es el contenedor de los botones prev y next
   &:has(.tabs-controls) {
     padding: 0 3rem;
   }
@@ -17,7 +17,7 @@ $border-radius-tabs: 0.5rem 0.5rem 0 0;
     width: fit-content;
     overflow-x: hidden;
 
-    /* Esta clase "fixed-width" genera la variante ancho completo de tabs */
+    //Esta clase "fixed-width" genera la variante ancho completo de tabs
     &.fixed-width {
       .nav-item > .nav-link {
         width: auto;
@@ -29,7 +29,7 @@ $border-radius-tabs: 0.5rem 0.5rem 0 0;
       }
     }
 
-    /* Esta seccion define los tamaños disponibles para tabs */
+    //Esta seccion define los tamaños disponibles para tabs
     &.tabs {
       gap: 0.0625rem; // 1px
       flex-flow: row nowrap;
@@ -89,14 +89,14 @@ $border-radius-tabs: 0.5rem 0.5rem 0 0;
         }
       }
 
-      /* Estilos para pestañas con fondo, son dos variables de fondo, nav-box y nav-box-bg  */
+      // Estilos para pestañas con fondo, son dos variables de fondo, nav-box y nav-box-bg
       &.nav-box {
         border: none;
         padding: 0;
 
         .nav-item {
           .nav-link {
-            background-color: $grisulado-100;
+            background-color: $slate-100;
             border-radius: $border-radius-tabs;
             border: none;
 
@@ -106,9 +106,9 @@ $border-radius-tabs: 0.5rem 0.5rem 0 0;
 
             &.active,
             &:active {
-              background-color: $grisulado-50;
+              background-color: $slate-50;
               border-radius: $border-radius-tabs;
-              color: $active-color;
+              color: $body-color;
               box-shadow: none;
 
               &:focus-visible {
@@ -141,7 +141,7 @@ $border-radius-tabs: 0.5rem 0.5rem 0 0;
     }
   }
 
-  /* Estilos para botones prev y next de el slider de la pestaña */
+  // Estilos para botones prev y next de el slider de la pestaña
   .prev,
   .next {
     width: 3rem;

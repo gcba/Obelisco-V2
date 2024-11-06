@@ -33,12 +33,12 @@ const sections = [
     title: 'Simple',
     content: (
       <CodeBox codeHTML={NAV_HORIZONTAL_SIMPLE}>
-        <div className="col-12 col-lg-8 mx-auto pb-2">
-          <nav>
+        <div className="container w-fit">
+          <nav aria-label="Navegación horizontal">
             <ul className="nav flex-row nav-pills">
               <li className="nav-item">
                 <LinkClient className="nav-link">
-                  <span>Link</span>
+                  <span>Navegación</span>
                 </LinkClient>
               </li>
               <li className="nav-item">
@@ -48,7 +48,7 @@ const sections = [
               </li>
               <li className="nav-item">
                 <LinkClient className="nav-link">
-                  <span>Link</span>
+                  <span>Navegación</span>
                 </LinkClient>
               </li>
             </ul>
@@ -63,8 +63,8 @@ const sections = [
     content: (
       <>
         <CodeBox codeHTML={NAV_HORIZONTAL_ICON}>
-          <div className="col-12 col-lg-8 mx-auto pb-2">
-            <nav>
+          <div className="container w-fit">
+            <nav aria-label="Navegación horizontal">
               <ul className="nav flex-row nav-pills">
                 <li className="nav-item">
                   <LinkClient className="nav-link">
@@ -72,7 +72,7 @@ const sections = [
                       <span className="material-symbols-rounded o-icon" aria-label="hidden">
                         add
                       </span>
-                      <span>Link</span>
+                      <span>Navegación</span>
                     </div>
                   </LinkClient>
                 </li>
@@ -102,13 +102,13 @@ const sections = [
         </CodeBox>
         <br />
         <CodeBox codeHTML={NAV_HORIZONTAL_ICON_RIGHT}>
-          <div className="col-12 col-lg-8 mx-auto pb-2">
-            <nav>
+          <div className="container w-fit">
+            <nav aria-label="Navegación horizontal">
               <ul className="nav flex-row nav-pills">
                 <li className="nav-item">
                   <LinkClient className="nav-link">
                     <div className="nav-icon">
-                      <span>Link</span>
+                      <span>Navegación</span>
                       <span className="material-symbols-rounded o-icon" aria-label="hidden">
                         arrow_forward
                       </span>
@@ -128,7 +128,7 @@ const sections = [
                 <li className="nav-item">
                   <LinkClient className="nav-link">
                     <div className="nav-icon">
-                      <span>Link</span>
+                      <span>Navegación</span>
                       <span className="material-symbols-rounded o-icon" aria-label="hidden">
                         arrow_forward
                       </span>
@@ -148,22 +148,22 @@ const sections = [
     content: (
       <>
         <CodeBox codeHTML={NAV_HORIZONTAL_SIZES}>
-          <div className="col-12 col-lg-8 mx-auto pb-2">
-            <nav>
+          <div className="container w-fit">
+            <nav aria-label="Navegación horizontal">
               <ul className="nav flex-row nav-pills">
                 <li className="nav-item">
                   <a className="nav-link nav-link-lg border-link">
-                    <span>Link</span>
+                    <span>Navegación</span>
                   </a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link border-link">
-                    <span>Link</span>
+                    <span>Navegación</span>
                   </a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link nav-link-sm border-link">
-                    <span>Link</span>
+                    <span>Navegación</span>
                   </a>
                 </li>
               </ul>
@@ -179,8 +179,8 @@ const sections = [
     content: (
       <>
         <CodeBox codeHTML={NAV_HORIZONTAL_BORDER}>
-          <div className="col-12 col-lg-8 mx-auto pb-2">
-            <nav>
+          <div className="container w-fit">
+            <nav aria-label="Navegación horizontal">
               <ul className="nav flex-row nav-pills">
                 <li className="nav-item">
                   <a className="nav-link border-link">
@@ -188,7 +188,7 @@ const sections = [
                       <span className="material-symbols-rounded o-icon" aria-label="hidden">
                         add
                       </span>
-                      <span>Link</span>
+                      <span>Navegación</span>
                     </div>
                   </a>
                 </li>
@@ -208,7 +208,7 @@ const sections = [
                       <span className="material-symbols-rounded o-icon" aria-label="hidden">
                         add
                       </span>
-                      <span>Link</span>
+                      <span>Navegación</span>
                     </div>
                   </a>
                 </li>

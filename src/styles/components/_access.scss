@@ -1,9 +1,9 @@
-/* === Variables and mixins === */
+// Variables and mixins
 $access-padding: 1rem;
 $access-padding-desktop: 1.5rem;
 $access-padding-sm: 0.5rem 1rem;
 $access-padding-sm-desktop: 0.75rem 1.5rem;
-
+$access-text-color: $slate-950; //#38485C
 // Accesos organismos
 $padding-card-access-body: 1.5rem;
 $padding-title-option: 0.75rem 1.5rem;
@@ -12,19 +12,12 @@ $card-size: 4rem; //64px;
 $border-radius-card-item: 0 0 0.5rem 0.5rem;
 $no-text-decoration: none;
 $margin-clearfix: 0 0 0.5rem; //0 0 8px
-$color-clearfix: $grisulado-100;
+$color-clearfix: $slate-100;
 $height-clearfix: 0.125rem;
-
-// VARIABLES USADAS EN LOGOUT ACCESS
-$box-shadow-access: 0 0 0 2px $grisulado-50;
-$box-shadow-access-hover: 0 0 0 2px #274986;
-$box-shadow-access-hover-danger: 0 0 0 2px $red;
 
 // Icono flecha de Accesos
 $access-arrow: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><g clip-path="url(%23clip0_1497_1475)"><path d="M9.83547 15.88L13.7155 12L9.83547 8.11998C9.44547 7.72998 9.44547 7.09998 9.83547 6.70998C10.2255 6.31998 10.8555 6.31998 11.2455 6.70998L15.8355 11.3C16.2255 11.69 16.2255 12.32 15.8355 12.71L11.2455 17.3C10.8555 17.69 10.2255 17.69 9.83547 17.3C9.45547 16.91 9.44547 16.27 9.83547 15.88Z" fill="%23101E37"/></g><defs><clipPath id="clip0_1497_1475"><rect width="24" height="24" fill="white" transform="translate(0.54541)"/></clipPath></defs></svg>');
-$access-arrow-hover: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><g clip-path="url(%23clip0_2222_853)"><path d="M9.83547 15.88L13.7155 12L9.83547 8.11998C9.44547 7.72998 9.44547 7.09998 9.83547 6.70998C10.2255 6.31998 10.8555 6.31998 11.2455 6.70998L15.8355 11.3C16.2255 11.69 16.2255 12.32 15.8355 12.71L11.2455 17.3C10.8555 17.69 10.2255 17.69 9.83547 17.3C9.45547 16.91 9.44547 16.27 9.83547 15.88Z" fill="%23274986"/></g><defs><clipPath id="clip0_2222_853"><rect width="24" height="24" fill="white" transform="translate(0.54541)"/></clipPath></defs></svg>');
-$access-arrow-active: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none"><g clip-path="url(%23clip0_1996_10920)"><path d="M9.29 16.547L13.17 12.667L9.29 8.78697C8.9 8.39697 8.9 7.76697 9.29 7.37697C9.68 6.98697 10.31 6.98697 10.7 7.37697L15.29 11.967C15.68 12.357 15.68 12.987 15.29 13.377L10.7 17.967C10.31 18.357 9.68 18.357 9.29 17.967C8.91 17.577 8.9 16.937 9.29 16.547Z" fill="white"/></g><defs><clipPath id="clip0_1996_10920"><rect width="24" height="24" fill="white" transform="translate(0 0.666992)"/></clipPath></defs></svg>');
-$access-icon-logout: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" style="fill: rgba(201, 59, 59, 1);msFilter:;"><g><path d="M0,0h24v24H0V0z" fill="none"/></g><g><g><path d="M5,5h6c0.55,0,1-0.45,1-1v0c0-0.55-0.45-1-1-1H5C3.9,3,3,3.9,3,5v14c0,1.1,0.9,2,2,2h6c0.55,0,1-0.45,1-1v0 c0-0.55-0.45-1-1-1H5V5z"/><path d="M20.65,11.65l-2.79-2.79C17.54,8.54,17,8.76,17,9.21V11h-7c-0.55,0-1,0.45-1,1v0c0,0.55,0.45,1,1,1h7v1.79 c0,0.45,0.54,0.67,0.85,0.35l2.79-2.79C20.84,12.16,20.84,11.84,20.65,11.65z"/></g></g></svg>');
+$access-arrow-blue: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><g clip-path="url(%23clip0_2222_853)"><path d="M9.83547 15.88L13.7155 12L9.83547 8.11998C9.44547 7.72998 9.44547 7.09998 9.83547 6.70998C10.2255 6.31998 10.8555 6.31998 11.2455 6.70998L15.8355 11.3C16.2255 11.69 16.2255 12.32 15.8355 12.71L11.2455 17.3C10.8555 17.69 10.2255 17.69 9.83547 17.3C9.45547 16.91 9.44547 16.27 9.83547 15.88Z" fill="%23274986"/></g><defs><clipPath id="clip0_2222_853"><rect width="24" height="24" fill="white" transform="translate(0.54541)"/></clipPath></defs></svg>');
 
 @mixin display-flex-between {
   display: flex;
@@ -42,14 +35,15 @@ $access-icon-logout: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://ww
 // Estilos para estado active de acceso
 @mixin access-active {
   outline: 0.25rem solid transparent;
-  outline-offset: -0.25rem;
-  background-color: $active-color;
-  color: $white;
-  box-shadow: none;
+  color: $active-color;
+  box-shadow: $focus-box-shadow;
+
+  .access-text {
+    color: $active-color;
+  }
 }
 
-/* === Custom styles === */
-
+// Custom styles
 a.list-group-item {
   text-decoration: $no-text-decoration;
   color: $body-color;
@@ -91,7 +85,7 @@ a.list-group-item {
       @extend .text-sm;
       font-weight: $font-weight-normal;
       margin: 0.125rem 0 0;
-      color: $grisulado-900; //#425266;
+      color: $access-text-color;
     }
   }
 
@@ -99,7 +93,7 @@ a.list-group-item {
     color: $body-color;
 
     .access-text {
-      color: $grisulado-900; //#425266;
+      color: $access-text-color;
     }
   }
 
@@ -118,10 +112,6 @@ a.list-group-item {
     color: $hover-color;
     text-decoration: $no-text-decoration;
 
-    &.list-group-item-logout {
-      box-shadow: $box-shadow-access-hover-danger;
-    }
-
     .access-title {
       @extend .underline-2;
       text-decoration-color: transparent;
@@ -132,7 +122,7 @@ a.list-group-item {
     }
 
     &::after {
-      @include access-icon($access-arrow-hover);
+      @include access-icon($access-arrow-blue);
     }
   }
 
@@ -143,31 +133,25 @@ a.list-group-item {
     background: $white;
 
     &:hover:not(:active),
-    &:hover:not(.active) {
+    &.hover:not(:active),
+    &:hover:not(.active),
+    &.hover:not(.active) {
       box-shadow: $focus-box-shadow;
       outline: $outline-transparent;
       color: $body-color;
 
-      .access-text {
-        color: $grisulado-900;
+      .access-title {
+        @extend .underline-2;
+        text-decoration-color: transparent;
       }
 
-      &.list-group-item-logout {
-        color: $danger;
-        box-shadow: $focus-box-shadow;
-
-        &::after {
-          @include access-icon($access-icon-logout);
-        }
+      .access-text {
+        color: $access-text-color;
       }
 
       &::after {
         float: right;
         @include access-icon($access-arrow);
-      }
-
-      .access-title {
-        text-decoration: $no-text-decoration;
       }
     }
   }
@@ -177,47 +161,31 @@ a.list-group-item {
     @include access-active;
 
     &::after {
-      @include access-icon($access-arrow-active); // icono blanco
+      @include access-icon($access-arrow-blue); // icono azul
     }
 
     &:hover,
-    &.hover {
-      @include access-active;
-    }
-
+    &.hover,
     &:focus,
     &.focus {
       @include access-active;
 
       &:hover,
       &.hover {
-        color: $white;
-        box-shadow: none;
-
-        .access-text {
-          color: $white;
-        }
+        @include access-active;
 
         &::after {
-          @include access-icon($access-arrow-active); // icono blanco
+          @include access-icon($access-arrow-blue); // icono azul
         }
       }
     }
 
     &:visited {
-      color: $white;
+      color: $active-color;
     }
 
     .access-title {
       text-decoration-color: transparent;
-    }
-
-    .access-text {
-      color: $white;
-    }
-
-    &.list-group-item-logout {
-      box-shadow: $box-shadow-access-hover-danger;
     }
   }
 
@@ -233,29 +201,6 @@ a.list-group-item {
       padding: $access-padding-sm-desktop;
     }
   }
-
-  &.list-group-item-logout {
-    box-shadow: $box-shadow-access-hover-danger;
-    color: $danger;
-
-    &:visited {
-      color: $danger;
-    }
-
-    &::after {
-      @include access-icon($access-icon-logout);
-    }
-
-    &:hover {
-      // box-shadow: $box-shadow-access-hover-danger;
-      color: $danger;
-    }
-
-    &.logout-sm {
-      padding: 0.525rem 0.75rem;
-      line-height: 1.45;
-    }
-  }
 }
 
 // Accesos organismos
@@ -267,7 +212,7 @@ a.list-group-item {
   .card-access {
     display: grid;
     width: 100%;
-    outline: 0.125rem solid $grisulado-100;
+    outline: 0.125rem solid $slate-100;
     border-radius: $border-radius-lg;
     padding-bottom: 0;
 
@@ -317,7 +262,7 @@ a.list-group-item {
 
       .card-access-icon {
         font-size: $font-size-icon-card;
-        background-color: $grisulado-50;
+        background-color: $slate-50;
         flex: 0 0 $card-size;
         height: $card-size;
         border-radius: $border-radius-lg;
@@ -328,7 +273,7 @@ a.list-group-item {
         align-items: center;
 
         &.descriptive {
-          color: $blue;
+          color: $blue-500;
           font-weight: $font-weight-bold;
           font-size: 2rem;
           font-family: $font-family-headings;

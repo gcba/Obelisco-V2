@@ -16,23 +16,13 @@ export const DROPDOWN = `
     </button>
     <div class="dropdown-menu">
       <a class="dropdown-item" href="#">
-        <span class="material-symbols-rounded o-icon" aria-label="hidden">add</span>
         <span class="item-text">Opción de navegación</span>
-        <span class="material-symbols-rounded o-icon" aria-label="hidden">arrow_forward</span>
       </a>
       <a class="dropdown-item" href="#">
-        <span class="material-symbols-rounded o-icon" aria-label="hidden">add</span>
         <span class="item-text">Opción de navegación</span>
-        <span class="material-symbols-rounded o-icon" aria-label="hidden">arrow_forward</span>
       </a>
-      <a class="dropdown-item disabled" href="#">
-        <span class="material-symbols-rounded o-icon" aria-label="hidden">add</span>
+      <a class="dropdown-item" href="#">
         <span class="item-text">Opción de navegación</span>
-        <span class="material-symbols-rounded o-icon" aria-label="hidden">arrow_forward</span>
-      </a>
-      <a class="dropdown-item item-danger" href="#">
-        <span class="material-symbols-rounded o-icon" aria-hidden="true">logout</span>
-        <span class="item-text">Cerrar sesión</span>
       </a>
     </div>
   </div>
@@ -56,26 +46,22 @@ export const DROPDOWN_MENU_ICON = `
     <div class="dropdown-menu">
       <a class="dropdown-item" href="#">
         <span class="material-symbols-rounded o-icon" aria-label="hidden">add</span>
-        <span class="item-text">
-          Opción de navegación
-        </span>
+        <span class="item-text">Opción de navegación</span>
+        <span class="material-symbols-rounded o-icon" aria-label="hidden">arrow_forward</span>
       </a>
       <a class="dropdown-item" href="#">
-        <span class="item-text text-end">
-          Opción de navegación
-        </span>
+        <span class="material-symbols-rounded o-icon" aria-label="hidden">add</span>
+        <span class="item-text">Opción de navegación</span>
+        <span class="material-symbols-rounded o-icon" aria-label="hidden">arrow_forward</span>
+      </a>
+      <a class="dropdown-item disabled" href="#">
+        <span class="material-symbols-rounded o-icon" aria-label="hidden">add</span>
+        <span class="item-text">Opción de navegación</span>
         <span class="material-symbols-rounded o-icon" aria-label="hidden">arrow_forward</span>
       </a>
       <a class="dropdown-item item-danger" href="#">
-        <span class="item-text text-end">
-          Cerrar sesión
-        </span>
-        <span
-          class="material-symbols-rounded o-icon"
-          aria-label="hidden"
-        >
-          logout
-        </span>
+        <span class="material-symbols-rounded o-icon" aria-hidden="true">logout</span>
+        <span class="item-text">Cerrar sesión</span>
       </a>
     </div>
   </div>

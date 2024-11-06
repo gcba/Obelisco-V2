@@ -61,10 +61,21 @@ const InstallationModule: React.FC = () => {
     {
       id: 'section-4',
       title: 'Uso con CDN',
-      description:
-        'Si prefieres no instalar nada localmente, puedes incluir los estilos directamente desde nuestra CDN:',
       content: (
         <div className="col-12">
+          <p className="mb-4">
+            Si no instalás Obelisco de forma local, podés incluir los estilos directamente desde nuestra CDN. Sólo tenés
+            que reemplazar la sección de la url en la que figura &quot;<code>X.X.X</code>&quot; por el número de la
+            versión que desees utilizar. Te recomendamos usar la{' '}
+            <Link
+              href="https://www.jsdelivr.com/package/npm/@gcba/obelisco-v2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              versión más reciente
+            </Link>
+            .
+          </p>
           <SyntaxHighlighter language="html" style={dracula}>
             {CDN_CODE}
           </SyntaxHighlighter>

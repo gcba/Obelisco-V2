@@ -4,9 +4,9 @@ export const YARN_CODE = `yarn add @gcba/obelisco-v2`;
 export const PNPM_CODE = `pnpm i @gcba/obelisco-v2`;
 export const NPM_UPDATE_CODE = `npm update @gcba/obelisco-v2`;
 export const CDN_CODE = `
-<link href="
-https://cdn.jsdelivr.net/gh/gcba/Obelisco-v2@main/dist/styles.css" 
-rel="stylesheet" 
+<link 
+  href="https://cdn.jsdelivr.net/npm/@gcba/obelisco-v2@X.X.X/dist/styles.min.css" 
+  rel="stylesheet" 
 />`;
 // Section imports
 export const OPENSANS_CODE = `<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />`;

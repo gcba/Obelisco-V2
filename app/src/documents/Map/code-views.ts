@@ -1,8 +1,8 @@
-export const MAP_LATERAL = `<div class="card-map">
-  <div class="card-body">
-    <h2 class="card-title">Ubicación</h2>
-    <p class="card-text">Av. Uspallata 3160</p>
-    <div class="card-iframe">
+export const MAP_LATERAL = `<div class="map">
+  <div class="map-body">
+    <h2 class="map-title">Ubicación</h2>
+    <p class="map-text">Av. Uspallata 3160</p>
+    <div class="map-iframe">
         <iframe
         src="https://www.google.com/maps/embed?
         pb=!1m18!1m12!1m3!1d3282.561313314447!2
@@ -37,11 +37,11 @@ export const MAP_LATERAL = `<div class="card-map">
   </div>
 </div>`;
 
-export const MAP_INSTITUTION = `<div class="card-map">
-  <div class="card-body">
-    <h3 class="card-title">Ubicación</h3>
-    <p class="card-text">Av. Uspallata 3160</p>
-    <div class="card-iframe">
+export const MAP_INSTITUTION = `<div class="map">
+  <div class="map-body">
+    <h3 class="map-title">Ubicación</h3>
+    <p class="map-text">Av. Uspallata 3160</p>
+    <div class="map-iframe">
         <iframe
         src="https://www.google.com/maps/embed?pb=
         !1m18!1m12!1m3!1d3282.561313314447!2d-58.4

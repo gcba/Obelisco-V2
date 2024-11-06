@@ -1,8 +1,19 @@
-import CodeBox from '@/components/CodeBox';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
-import { BG_THEME_COLORS, TEXT_THEME_COLORS, BG_THEME_COLORS_PASTEL, TEXT_THEME_COLORS_PASTEL } from './code-views';
+import {
+  blueArray,
+  cyanArray,
+  grayArray,
+  greenArray,
+  orangeArray,
+  purpleArray,
+  redArray,
+  skyArray,
+  slateArray,
+  themeColors,
+  yellowArray,
+} from './constants';
 
 const ColorsDocs: React.FC = () => {
   const sections = [
@@ -15,158 +26,345 @@ const ColorsDocs: React.FC = () => {
     },
     {
       id: 'section-1',
-      title: 'Theme-colors',
-      content: (
-        <>
-          <CodeBox codeHTML={BG_THEME_COLORS}>
-            <div className="container">
-              <div className="d-flex gap-2 mb-3 flex-wrap text-white mx-auto">
-                <div className="color-box bg-primary">
-                  <span className="headline-md fw-bold">primary</span>
-                  <span className="text-xs">#336ACC</span>
-                </div>
-                <div className="color-box bg-secondary">
-                  <span className="headline-md fw-bold">secondary</span>
-                  <span className="text-xs">#101E37</span>
-                </div>
-                <div className="color-box bg-tertiary">
-                  <span className="headline-md fw-bold">tertiary</span>
-                  <span className="text-xs">#005E7A</span>
-                </div>
-                <div className="color-box bg-danger">
-                  <span className="headline-md fw-bold">danger</span>
-                  <span className="text-xs">#CC3333</span>
-                </div>
-                <div className="color-box bg-success">
-                  <span className="headline-md fw-bold">success</span>
-                  <span className="text-xs">#26874A</span>
-                </div>
-                <div className="color-box bg-warning">
-                  <span className="headline-md fw-bold">warning</span>
-                  <span className="text-xs">#FF9500</span>
-                </div>
-                <div className="color-box bg-info">
-                  <span className="headline-md fw-bold">info</span>
-                  <span className="text-xs">#0086AD</span>
-                </div>
-                <div className="color-box bg-light text-dark">
-                  <span className="headline-md fw-bold">light</span>
-                  <span className="text-xs">#F3F6F9</span>
-                </div>
-                <div className="color-box bg-dark">
-                  <span className="headline-md fw-bold">dark</span>
-                  <span className="text-xs">#002733</span>
-                </div>
-              </div>
-            </div>
-          </CodeBox>
-        </>
-      ),
+      title: 'Colores primitivos',
     },
     {
       id: 'section-2',
-      title: 'Detalles cromáticos',
+      subtitle: 'Amarillo (Yellow)',
       content: (
-        <>
-          <CodeBox codeHTML={BG_THEME_COLORS_PASTEL}>
-            <div className="container">
-              <div className="d-flex gap-2 mb-3 flex-wrap">
-                <div className="color-box bg-sky">
-                  <span className="headline-md fw-bold">sky</span>
-                  <span className="text-xs">#99E8FF</span>
-                </div>
-                <div className="color-box bg-lavender">
-                  <span className="headline-md fw-bold">lavender</span>
-                  <span className="text-xs">#99B5FF</span>
-                </div>
-                <div className="color-box bg-blackberry">
-                  <span className="headline-md fw-bold">blackberry</span>
-                  <span className="text-xs">#AF99FF</span>
-                </div>
-                <div className="color-box bg-berries">
-                  <span className="headline-md fw-bold">berries</span>
-                  <span className="text-xs">#E299FF</span>
-                </div>
-                <div className="color-box bg-musket">
-                  <span className="headline-md fw-bold">musket</span>
-                  <span className="text-xs">#FF99E8</span>
-                </div>
-                <div className="color-box bg-strawberry">
-                  <span className="headline-md fw-bold">strawberry</span>
-                  <span className="text-xs">#FF99E5</span>
-                </div>
-                <div className="color-box bg-coral">
-                  <span className="headline-md fw-bold">coral</span>
-                  <span className="text-xs">#FFAF99</span>
-                </div>
-                <div className="color-box bg-citrus">
-                  <span className="headline-md fw-bold">citrus</span>
-                  <span className="text-xs">#FFE299</span>
-                </div>
-                <div className="color-box bg-lime">
-                  <span className="headline-md fw-bold">lime</span>
-                  <span className="text-xs">#E8FF99</span>
-                </div>
-                <div className="color-box bg-avocado">
-                  <span className="headline-md fw-bold">avocado</span>
-                  <span className="text-xs">#B5FF99</span>
-                </div>
-                <div className="color-box bg-pistachio">
-                  <span className="headline-md fw-bold">pistachio</span>
-                  <span className="text-xs">#99FFAF</span>
-                </div>
-                <div className="color-box bg-aqua">
-                  <span className="headline-md fw-bold">aqua</span>
-                  <span className="text-xs">#99FFE2</span>
-                </div>
+        <div className="container">
+          <div className="d-flex mb-3 flex-wrap">
+            {yellowArray.map(({ name, hex, accessibility, textWhite }) => (
+              <div
+                className={`color-box-ramp ${textWhite ? 'text-white' : ''}`}
+                key={hex}
+                style={{ backgroundColor: hex }}
+              >
+                <span
+                  className="badge badge-default"
+                  style={{
+                    backgroundColor: 'transparent',
+                    outlineColor: `${textWhite ? 'white' : '#101e37'}`,
+                    color: textWhite ? 'white' : '#101e37',
+                  }}
+                >
+                  {accessibility}
+                </span>
+                <span className="headline-lg fw-bold">{name}</span>
+                <span className="">{hex}</span>
               </div>
-            </div>
-          </CodeBox>
-        </>
+            ))}
+          </div>
+        </div>
       ),
     },
     {
       id: 'section-3',
-      title: 'Colores tipográficos ',
+      subtitle: 'Azul (Blue)',
+      content: (
+        <div className="container">
+          <div className="d-flex mb-3 flex-wrap">
+            {blueArray.map(({ name, hex, accessibility, textWhite }) => (
+              <div
+                className={`color-box-ramp ${textWhite ? 'text-white' : ''}`}
+                key={hex}
+                style={{ backgroundColor: hex }}
+              >
+                <span
+                  className="badge badge-default"
+                  style={{
+                    backgroundColor: 'transparent',
+                    outlineColor: `${textWhite ? 'white' : '#101e37'}`,
+                    color: textWhite ? 'white' : '#101e37',
+                  }}
+                >
+                  {accessibility}
+                </span>
+                <span className="headline-lg fw-bold">{name}</span>
+                <span className="">{hex}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: 'section-4',
+      subtitle: 'Cian (Cyan)',
+      content: (
+        <div className="container">
+          <div className="d-flex mb-3 flex-wrap">
+            {cyanArray.map(({ name, hex, accessibility, textWhite }) => (
+              <div
+                className={`color-box-ramp ${textWhite ? 'text-white' : ''}`}
+                key={hex}
+                style={{ backgroundColor: hex }}
+              >
+                <span
+                  className="badge badge-default"
+                  style={{
+                    backgroundColor: 'transparent',
+                    outlineColor: `${textWhite ? 'white' : '#101e37'}`,
+                    color: textWhite ? 'white' : '#101e37',
+                  }}
+                >
+                  {accessibility}
+                </span>
+                <span className="headline-lg fw-bold">{name}</span>
+                <span className="">{hex}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: 'section-5',
+      subtitle: 'Cielo (Sky)',
+      content: (
+        <div className="container">
+          <div className="d-flex mb-3 flex-wrap">
+            {skyArray.map(({ name, hex, accessibility, textWhite }) => (
+              <div
+                className={`color-box-ramp ${textWhite ? 'text-white' : ''}`}
+                key={hex}
+                style={{ backgroundColor: hex }}
+              >
+                <span
+                  className="badge badge-default"
+                  style={{
+                    backgroundColor: 'transparent',
+                    outlineColor: `${textWhite ? 'white' : '#101e37'}`,
+                    color: textWhite ? 'white' : '#101e37',
+                  }}
+                >
+                  {accessibility}
+                </span>
+                <span className="headline-lg fw-bold">{name}</span>
+                <span className="">{hex}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: 'section-6',
+      subtitle: 'Verde (Green)',
+      content: (
+        <div className="container">
+          <div className="d-flex mb-3 flex-wrap">
+            {greenArray.map(({ name, hex, accessibility, textWhite }) => (
+              <div
+                className={`color-box-ramp ${textWhite ? 'text-white' : ''}`}
+                key={hex}
+                style={{ backgroundColor: hex }}
+              >
+                <span
+                  className="badge badge-default"
+                  style={{
+                    backgroundColor: 'transparent',
+                    outlineColor: `${textWhite ? 'white' : '#101e37'}`,
+                    color: textWhite ? 'white' : '#101e37',
+                  }}
+                >
+                  {accessibility}
+                </span>
+                <span className="headline-lg fw-bold">{name}</span>
+                <span className="">{hex}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: 'section-7',
+      subtitle: 'Naranja (Orange)',
+      content: (
+        <div className="container">
+          <div className="d-flex mb-3 flex-wrap">
+            {orangeArray.map(({ name, hex, accessibility, textWhite }) => (
+              <div
+                className={`color-box-ramp ${textWhite ? 'text-white' : ''}`}
+                key={hex}
+                style={{ backgroundColor: hex }}
+              >
+                <span
+                  className="badge badge-default"
+                  style={{
+                    backgroundColor: 'transparent',
+                    outlineColor: `${textWhite ? 'white' : '#101e37'}`,
+                    color: textWhite ? 'white' : '#101e37',
+                  }}
+                >
+                  {accessibility}
+                </span>
+                <span className="headline-lg fw-bold">{name}</span>
+                <span className="">{hex}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: 'section-8',
+      subtitle: 'Rojo (Red)',
+      content: (
+        <div className="container">
+          <div className="d-flex mb-3 flex-wrap">
+            {redArray.map(({ name, hex, accessibility, textWhite }) => (
+              <div
+                className={`color-box-ramp ${textWhite ? 'text-white' : ''}`}
+                key={hex}
+                style={{ backgroundColor: hex }}
+              >
+                <span
+                  className="badge badge-default"
+                  style={{
+                    backgroundColor: 'transparent',
+                    outlineColor: `${textWhite ? 'white' : '#101e37'}`,
+                    color: textWhite ? 'white' : '#101e37',
+                  }}
+                >
+                  {accessibility}
+                </span>
+                <span className="headline-lg fw-bold">{name}</span>
+                <span className="">{hex}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: 'section-9',
+      subtitle: 'Púrpura (Purple)',
+      content: (
+        <div className="container">
+          <div className="d-flex mb-3 flex-wrap">
+            {purpleArray.map(({ name, hex, accessibility, textWhite }) => (
+              <div
+                className={`color-box-ramp ${textWhite ? 'text-white' : ''}`}
+                key={hex}
+                style={{ backgroundColor: hex }}
+              >
+                <span
+                  className="badge badge-default"
+                  style={{
+                    backgroundColor: 'transparent',
+                    outlineColor: `${textWhite ? 'white' : '#101e37'}`,
+                    color: textWhite ? 'white' : '#101e37',
+                  }}
+                >
+                  {accessibility}
+                </span>
+                <span className="headline-lg fw-bold">{name}</span>
+                <span className="">{hex}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: 'section-10',
+      subtitle: 'Grisulado (Slate)',
+      content: (
+        <div className="container">
+          <div className="d-flex mb-3 flex-wrap">
+            {slateArray.map(({ name, hex, accessibility, textWhite }) => (
+              <div
+                className={`color-box-ramp ${textWhite ? 'text-white' : ''}`}
+                key={hex}
+                style={{ backgroundColor: hex }}
+              >
+                <span
+                  className="badge badge-default"
+                  style={{
+                    backgroundColor: 'transparent',
+                    outlineColor: `${textWhite ? 'white' : '#101e37'}`,
+                    color: textWhite ? 'white' : '#101e37',
+                  }}
+                >
+                  {accessibility}
+                </span>
+                <span className="headline-lg fw-bold">{name}</span>
+                <span className="">{hex}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: 'section-11',
+      subtitle: 'Escala de grises (Grayscale)',
+      content: (
+        <div className="container">
+          <div className="d-flex mb-3 flex-wrap">
+            {grayArray.map(({ name, hex, accessibility, textWhite }) => (
+              <div
+                className={`color-box-ramp ${textWhite ? 'text-white' : ''}`}
+                key={hex}
+                style={{ backgroundColor: hex }}
+              >
+                <span
+                  className="badge badge-default"
+                  style={{
+                    backgroundColor: 'transparent',
+                    outlineColor: `${textWhite ? 'white' : '#101e37'}`,
+                    color: textWhite ? 'white' : '#101e37',
+                  }}
+                >
+                  {accessibility}
+                </span>
+                <span className="headline-lg fw-bold">{name}</span>
+                <span className="">{hex}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: 'section-12',
+      title: 'Colores principales',
+      content: (
+        <div className="container">
+          <div className="d-flex gap-4 justify-content-center mb-3 flex-wrap text-white mx-auto">
+            {themeColors.map(({ name, hex, textDark }) => (
+              <div className={`color-box ${textDark ? 'text-dark' : ''}`} style={{ backgroundColor: hex }} key={name}>
+                <span className="headline-md fw-bold">{name}</span>
+                <span className="text-xs">{hex}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      ),
+    },
+    {
+      id: 'section-13',
+      title: 'Fondos',
       content: (
         <>
-          <CodeBox codeHTML={TEXT_THEME_COLORS}>
-            <div className="container">
-              <div className="d-flex flex-column gap-2 mb-3">
-                <div className="text-primary">primary</div>
-                <div className="text-secondary">secondary</div>
-                <div className="text-tertiary">tertiary</div>
-                <div className="text-danger">danger</div>
-                <div className="text-success">success</div>
-                <div className="text-warning">warning</div>
-                <div className="text-info">info</div>
-                <div className="text-light bg-dark">light</div>
-                <div className="text-dark">dark</div>
-                <div className="text-white bg-dark">white</div>
-                <div className="text-black">black</div>
-                <div className="text-body-secondary">text-body-secondary</div>
+          <div className="container">
+            <div className="d-flex gap-4 justify-content-center mb-3 flex-wrap text-white mx-auto">
+              <div className="color-box bg-white text-dark">
+                <span className="headline-md fw-bold">bg-white</span>
+                <span className="text-xs">#ffffff</span>
+              </div>
+              <div className="color-box bg-light text-dark">
+                <span className="headline-md fw-bold">bg-light</span>
+                <span className="text-xs">#f3f6f9</span>
+              </div>
+              <div className="color-box bg-dark text-white">
+                <span className="headline-md fw-bold">bg-dark</span>
+                <span className="text-xs">#002733</span>
               </div>
             </div>
-          </CodeBox>
-          <br />
-          <CodeBox codeHTML={TEXT_THEME_COLORS_PASTEL}>
-            <div className="container bg-dark py-3">
-              <div className="d-flex flex-column gap-2 mb-3 flex-wrap">
-                <div className="text-sky bg-dark">sky</div>
-                <div className="text-lavender bg-dark">lavender</div>
-                <div className="text-blackberry bg-dark">blackberry</div>
-                <div className="text-berries bg-dark">berries</div>
-                <div className="text-musket bg-dark">musket</div>
-                <div className="text-strawberry bg-dark">strawberry</div>
-                <div className="text-coral bg-dark">coral</div>
-                <div className="text-citrus bg-dark">citrus</div>
-                <div className="text-lime bg-dark">lime</div>
-                <div className="text-avocado bg-dark">avocado</div>
-                <div className="text-pistachio bg-dark">pistachio</div>
-                <div className="text-aqua bg-dark">aqua</div>
-              </div>
-            </div>
-          </CodeBox>
+          </div>
         </>
       ),
     },

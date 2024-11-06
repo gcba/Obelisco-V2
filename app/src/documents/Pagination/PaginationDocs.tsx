@@ -80,9 +80,9 @@ const PaginationDocs: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="row mt-5 justify-content-center text-center">
+          <div className="my-4 text-center">
             {selectedExample === 'inicial' && (
-              <div className="col-auto mb-4">
+              <div className="container">
                 <nav aria-label="Ejemplo de paginado numerado inicial">
                   <ul className="pagination">
                     <li className="page-item" style={{ opacity: 0 }}>
@@ -123,7 +123,7 @@ const PaginationDocs: React.FC = () => {
               </div>
             )}
             {selectedExample === 'central' && (
-              <div className="col-auto mb-4">
+              <div className="container">
                 <nav aria-label="Ejemplo de paginado numerado central">
                   <ul className="pagination">
                     <li className="page-item">
@@ -164,7 +164,7 @@ const PaginationDocs: React.FC = () => {
               </div>
             )}
             {selectedExample === 'final' && (
-              <div className="col-auto mb-4">
+              <div className="container">
                 <nav aria-label="Ejemplo de paginado numerado final">
                   <ul className="pagination">
                     <li className="page-item">

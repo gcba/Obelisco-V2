@@ -96,7 +96,7 @@ $border-radius-tabs: 0.5rem 0.5rem 0 0;
 
         .nav-item {
           .nav-link {
-            background-color: $grisulado-100;
+            background-color: $slate-100;
             border-radius: $border-radius-tabs;
             border: none;
 
@@ -106,7 +106,7 @@ $border-radius-tabs: 0.5rem 0.5rem 0 0;
 
             &.active,
             &:active {
-              background-color: $grisulado-50;
+              background-color: $slate-50;
               border-radius: $border-radius-tabs;
               color: $body-color;
               box-shadow: none;

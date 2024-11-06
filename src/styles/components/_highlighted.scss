@@ -132,7 +132,7 @@
 .panel-lateral {
   @include panel-content(column, xl);
   padding: 2rem 1.5rem;
-  background-color: $grisulado-50;
+  background-color: $slate-50;
   border-radius: 0.5rem;
   @include media-breakpoint-down(xl) {
     padding: 1.5rem 1rem;

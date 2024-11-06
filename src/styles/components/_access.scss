@@ -3,7 +3,7 @@ $access-padding: 1rem;
 $access-padding-desktop: 1.5rem;
 $access-padding-sm: 0.5rem 1rem;
 $access-padding-sm-desktop: 0.75rem 1.5rem;
-$access-text-color: $grisulado-950; //#38485C
+$access-text-color: $slate-950; //#38485C
 // Accesos organismos
 $padding-card-access-body: 1.5rem;
 $padding-title-option: 0.75rem 1.5rem;
@@ -12,7 +12,7 @@ $card-size: 4rem; //64px;
 $border-radius-card-item: 0 0 0.5rem 0.5rem;
 $no-text-decoration: none;
 $margin-clearfix: 0 0 0.5rem; //0 0 8px
-$color-clearfix: $grisulado-100;
+$color-clearfix: $slate-100;
 $height-clearfix: 0.125rem;
 
 // Icono flecha de Accesos
@@ -212,7 +212,7 @@ a.list-group-item {
   .card-access {
     display: grid;
     width: 100%;
-    outline: 0.125rem solid $grisulado-100;
+    outline: 0.125rem solid $slate-100;
     border-radius: $border-radius-lg;
     padding-bottom: 0;
 
@@ -262,7 +262,7 @@ a.list-group-item {
 
       .card-access-icon {
         font-size: $font-size-icon-card;
-        background-color: $grisulado-50;
+        background-color: $slate-50;
         flex: 0 0 $card-size;
         height: $card-size;
         border-radius: $border-radius-lg;

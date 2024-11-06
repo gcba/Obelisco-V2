@@ -116,7 +116,7 @@ $accordion-button-collapsed-icon: url('data:image/svg+xml,<svg xmlns="http://www
 
     &.collapsed {
       border-radius: $border-radius-lg;
-      background-color: $grisulado-50;
+      background-color: $slate-50;
       color: $body-color;
       position: relative;
       backface-visibility: hidden;
@@ -129,7 +129,7 @@ $accordion-button-collapsed-icon: url('data:image/svg+xml,<svg xmlns="http://www
 
       &:hover,
       &.hover {
-        background-color: $grisulado-50;
+        background-color: $slate-50;
         color: $hover-color;
         outline: $hover-outline;
 

@@ -1,6 +1,6 @@
-// Color system
-
-/* === Gray scale === */
+// Colores Primitivos
+// Grayscale
+$gray-0: #ffffff;
 $gray-50: #f2f2f2;
 $gray-100: #e5e5e5;
 $gray-200: #cccccc;
@@ -12,21 +12,19 @@ $gray-700: #4c4c4c;
 $gray-800: #333333;
 $gray-900: #191919;
 $gray-950: #000000;
-
-/* === Grisulado === */
-$grisulado-50: #f3f6f9;
-$grisulado-100: #e6ebf0;
-$grisulado-200: #d1d8e0;
-$grisulado-300: #b8c1cc;
-$grisulado-400: #9eaab8;
-$grisulado-500: #8a97a8;
-$grisulado-600: #69788a;
-$grisulado-700: #5c6a7a;
-$grisulado-800: #505e70;
-$grisulado-900: #425266;
-$grisulado-950: #38485c;
-
-/* === Blue === */
+// Slate (antes grisulado)
+$slate-50: #f3f6f9;
+$slate-100: #e6ebf0;
+$slate-200: #d1d8e0;
+$slate-300: #b8c1cc;
+$slate-400: #9eaab8;
+$slate-500: #8a97a8;
+$slate-600: #69788a;
+$slate-700: #5c6a7a;
+$slate-800: #505e70;
+$slate-900: #425266;
+$slate-950: #38485c;
+// Blue
 $blue-50: #ecf0f9;
 $blue-100: #d9e2f2;
 $blue-200: #adc3eb;
@@ -38,8 +36,7 @@ $blue-700: #274986;
 $blue-800: #1c345f;
 $blue-900: #101e37;
 $blue-950: #080f1c;
-
-/* === Yellow === */
+// Yellow
 $yellow-50: #fffae5;
 $yellow-100: #fff5cc;
 $yellow-200: #ffeb99;
@@ -51,8 +48,7 @@ $yellow-700: #997a00;
 $yellow-800: #665200;
 $yellow-900: #332900;
 $yellow-950: #1a1500;
-
-/* === Orange === */
+// Orange
 $orange-50: #fff4e5;
 $orange-100: #ffeacc;
 $orange-200: #ffd599;
@@ -64,8 +60,7 @@ $orange-700: #995900;
 $orange-800: #663c00;
 $orange-900: #331e00;
 $orange-950: #1a0f00;
-
-/* === Green === */
+// Green
 $green-50: #f2fbf5;
 $green-100: #e0f8e9;
 $green-200: #c3efd3;
@@ -77,8 +72,7 @@ $green-700: #237240;
 $green-800: #205b36;
 $green-900: #1c4b2d;
 $green-950: #0a2915;
-
-/* === Red === */
+// Red
 $red-50: #fbefef;
 $red-100: #f5d6d6;
 $red-200: #ebadad;
@@ -90,8 +84,7 @@ $red-700: #7a1f1f;
 $red-800: #521414;
 $red-900: #290a0a;
 $red-950: #140505;
-
-/* === Purple === */
+// Purple
 $purple-50: #f7e5ff;
 $purple-100: #f0ccff;
 $purple-200: #e299ff;
@@ -103,8 +96,7 @@ $purple-700: #6d0099;
 $purple-800: #490066;
 $purple-900: #240033;
 $purple-950: #12001a;
-
-/* === Cyan === */
+// Cyan
 $cyan-50: #f3fcfb;
 $cyan-100: #e2f8f5;
 $cyan-200: #caf2ec;
@@ -116,11 +108,10 @@ $cyan-700: #2bab98;
 $cyan-800: #218274;
 $cyan-900: #10413a;
 $cyan-950: #08211d;
-
-/* === Sky === */
+// Sky
 $sky-50: #e5f9ff;
 $sky-100: #ccf3ff;
-$sky-200: #99e8ff; //color cromatico sky
+$sky-200: #99e8ff;
 $sky-300: #66dcff;
 $sky-400: #33d1ff;
 $sky-500: #00c5ff;
@@ -130,43 +121,32 @@ $sky-800: #004357;
 $sky-900: #002733;
 $sky-950: #001419;
 
-/* === Colors palette === */
-$blue: $blue-500;
-$red: $red-500;
-$orange: $orange-500;
-$yellow: $yellow-500;
-$green: $green-600;
-$teal: #18b596;
-$cyan: $cyan-400;
-$purple: $purple-200;
-$white: #ffffff;
-$black: #000000;
-/*  Colors pastel  */
-$sky: #99e8ff;
-$lavender: #99b5ff;
-$blackberry: #af99ff;
-$berries: #e299ff;
-$musket: #ff99e8;
-$strawberry: #ff99e5;
-$coral: #ffaf99;
-$citrus: #ffe299;
-$lime: #e8ff99;
-$avocado: #b5ff99;
-$pistachio: #99ffaf;
-$aqua: #99ffe2;
+// Colores Primitivos
+// $yellow: $yellow-500;
+// $blue: $blue-500;
+// $cyan: $cyan-400;
+// $slate: $slate-50;
+// $sky: $sky-600;
+// $purple: $purple-200;
+// $green: $green-600;
+// $orange: $orange-500;
+// $red: $red-500;
+// $gray: $gray-600;
+// $white: $gray-0;
+// $black: $gray-950;
 
-/* === Variables del Theme-color === */
-$primary: $blue; //blue-500
+// Variables del Theme-color
+$primary: $blue-500;
 $secondary: $blue-900;
 $tertiary: $sky-700;
-$success: $green; //$green-600
-$danger: $red; //$red-500;
-$warning: $orange; //orange-500
 $info: $sky-600;
-$light: $grisulado-50;
+$warning: $orange-500;
+$success: $green-600;
+$danger: $red-500;
+$light: $slate-50;
 $dark: $sky-900;
 
-/* === Theme-color === */
+// Theme-color
 $theme-colors: (
   'primary': $primary,
   'secondary': $secondary,
@@ -184,71 +164,47 @@ $semantic-colors-light-bg: (
   'warning': $orange-50,
   'info': $sky-50,
 );
-$theme-colors-pastel: (
-  'sky': $sky,
-  'lavender': $lavender,
-  'blackberry': $blackberry,
-  'berries': $berries,
-  'musket': $musket,
-  'strawberry': $strawberry,
-  'coral': $coral,
-  'citrus': $citrus,
-  'lime': $lime,
-  'avocado': $avocado,
-  'pistachio': $pistachio,
-  'aqua': $aqua,
-);
 
-/* === Body === */
+// Body
 $body-color: $blue-900;
-$body-secondary-color: $grisulado-800 !default;
+$body-secondary-color: $slate-800 !default;
 
-/* === Estados === */
-/*  Hover  */
+// Estados
+//Hover
 $hover-color: $blue-700;
-$hover-box-shadow: 0 0 0 0.125rem $hover-color;
 $hover-color-danger: $red-600;
-$hover-box-shadow-danger: 0 0 0 0.125rem $hover-color-danger;
 $hover-outline: 0.125rem solid $hover-color;
 $hover-outline-danger: 0.125rem solid $hover-color-danger;
 
-/*  Focus  */
+// Focus
 $focus-color: $cyan-800;
 $focus-box-shadow: 0 0 0 0.25rem $focus-color;
 $focus-box-shadow-subtle: 0 0 0 0.125rem $focus-color;
 $focus-box-shadow-danger: 0 0 0 0.25rem $red-800;
 
-/*  Active  */
+// Active
 $active-color: $blue-700;
-$active-border-color: $blue-800; //#1C345F
-$active-border: 0 0 0 0.125rem $active-color;
 $active-color-danger: $red-600;
-$active-outline: 0.125rem solid $blue-700;
 
-/*  Visited  */
+// Visited
 $visited-color: $purple-700; // #6D0099
 $visited-ondark: $purple-200; // #E299FF
 
-/*  Disabled  */
-$disabled-text: $grisulado-400; // #9EAAB8
-$disabled-bg: $grisulado-100; // #e6ebf0;
-$disabled-on-dark: $grisulado-700; // #5C6A7A
+// Disabled
+$disabled-text: $slate-400; // #9EAAB8
+$disabled-bg: $slate-100; // #e6ebf0;
+$disabled-on-dark: $slate-700; // #5C6A7A
 
-/* === Enlace || Style anchor elements. === */
-$link-color: $body-color;
-$link-hover-color: $hover-color;
+// Enlace || Style anchor elements.
+$link-color: $blue-500;
+$link-hover-color: $blue-500;
 
-/* === Border, Box-shadow, Outline === */
-$border-color: $grisulado-100;
-$border-color-subtle: $grisulado-100;
-
-$box-shadow: 0 0 0 0.125rem $grisulado-100;
-$box-shadow-subtle: 0 0 0 0.125rem $grisulado-50;
-
-$outline-border: 0.125rem solid $grisulado-100;
-
+// Border, Box-shadow, Outline
+$border-color: $slate-100;
+$box-shadow: 0 0 0 0.125rem $slate-100;
+$outline-border: 0.125rem solid $slate-100;
 $outline-transparent: 0.25rem solid transparent;
 $outline-transparent-subtle: 0.125rem solid transparent;
 
-/* === Inputs === */
-$placeholder-color: $grisulado-700;
+// Inputs
+$placeholder-color: $slate-700;

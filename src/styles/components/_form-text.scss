@@ -13,7 +13,7 @@ $validation-icons: (
 );
 
 @mixin focus-style {
-  background-color: $grisulado-50;
+  background-color: $slate-50;
   box-shadow: $focus-box-shadow;
   outline: $outline-transparent;
 }
@@ -50,13 +50,13 @@ $validation-icons: (
   grid-area: label;
 
   &.disabled {
-    color: $grisulado-400;
+    color: $slate-400;
   }
 }
 
 // Estilos generales del Input
 .form-control {
-  background-color: $grisulado-50;
+  background-color: $slate-50;
   padding: 0.75rem 1rem;
   color: $body-color;
   font-size: $md-body-fs;
@@ -93,7 +93,7 @@ $validation-icons: (
   }
 
   &:disabled {
-    background-color: $grisulado-50;
+    background-color: $slate-50;
     color: $disabled-text;
 
     &:hover {

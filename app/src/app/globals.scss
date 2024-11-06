@@ -262,9 +262,6 @@ hr {
     width: 160%;
     position: relative;
     left: -30%;
-    @media screen and (min-width: 576px) and (max-width: 1199.98px) {
-      left: 0;
-    }
   }
 
   &-vertical {
@@ -284,6 +281,11 @@ hr {
       max-height: 640px;
       @media screen and (min-width: 1200px) {
         max-height: 280px;
+      }
+    }
+    > * {
+      @media screen and (min-width: 576px) and (max-width: 1199.98px) {
+        left: 0;
       }
     }
   }

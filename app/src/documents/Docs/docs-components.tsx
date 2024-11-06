@@ -284,6 +284,9 @@ const UpdateComponents: React.FC = () => {
             Se eliminan las clases <code>.card</code> y <code>.card-simple</code>.
           </li>
           <li>
+            Las  clases <code>.card-img</code>, <code>.card-body</code>, <code>.card-title</code> y <code>.card-text</code> se reemplazan por <code>.panel-img</code>, <code>.panel-body</code>, <code>.panel-title</code> y <code>.panel-text</code>, respectivamente.
+          </li>
+          <li>
             Para la disposición de Destacado conjunto, las clases <code>.card-deck</code> y <code>.max-cards-2</code>{' '}
             quedan deprecadas, se reemplazan por <code>.highlighted-items-2</code>.
           </li>

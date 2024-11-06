@@ -21,9 +21,11 @@ const FormSearchDocs: React.FC = () => {
           <div className="container">
             <div className="col-12 col-lg-6">
               <form>
-                <label htmlFor="search" className="form-label">
-                  Ejemplo Buscador
-                </label>
+                <div className="form-label-container">
+                  <label htmlFor="search" className="form-label">
+                    Ejemplo Buscador
+                  </label>
+                </div>
                 <div className="search-container">
                   <input type="search" className="form-control input-search" id="search" placeholder="Buscar..." />
                   <button className="reset" type="reset" aria-label="Borrar"></button>
@@ -42,9 +44,11 @@ const FormSearchDocs: React.FC = () => {
           <div className="container">
             <div className="col-12 col-lg-6">
               <form>
-                <label htmlFor="search-btn" className="form-label">
-                  Ejemplo Buscador con botón
-                </label>
+                <div className="form-label-container">
+                  <label htmlFor="search-btn" className="form-label">
+                    Ejemplo Buscador con botón
+                  </label>
+                </div>
                 <div className="search-container">
                   <input
                     type="search"
@@ -69,9 +73,11 @@ const FormSearchDocs: React.FC = () => {
           <div className="container">
             <div className="col-12 col-lg-6">
               <form>
-                <label htmlFor="search-btn" className="form-label disabled">
-                  Ejemplo buscador deshabilitado
-                </label>
+                <div className="form-label-container">
+                  <label htmlFor="search-btn" className="form-label disabled">
+                    Ejemplo buscador deshabilitado
+                  </label>
+                </div>
                 <div className="search-container">
                   <input
                     type="search"

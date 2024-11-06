@@ -1,58 +1,58 @@
 export const RADIO = `
   <p class="headline-md">Seleccioná una opción *</p>
-    <div class="form-radio">
-      <input
-        class="form-radio-input"
-        type="radio"
-        name="professionRadio"
-        id="profession-radio-designer"
-        value="diseñador"
-        checked
-        />
-      <label class="form-radio-label" for="profession-radio-designer">
-        Diseñador
-      </label>
-    </div>
-    <div class="form-radio">
-      <input
-        class="form-radio-input"
-        type="radio"
-        name="professionRadio"
-        id="profession-radio-developer"
-        value="desarrollador"
-        />
-      <label class="form-radio-label" for="profession-radio-developer">
-        Desarrollador
-      </label>
-    </div>
-    <div class="form-radio">
-      <input
-        class="form-radio-input"
-        type="radio"
-        name="professionRadio"
-        id="profession-radio-content"
-        value="redactor"
-        />
-      <label class="form-radio-label" for="profession-radio-content">
-        Redactor de contenidos
-      </label>
-    </div>
-    <div class="form-radio">
-      <input
-        class="form-radio-input is-invalid"
-        type="radio"
-        name="professionRadio"
-        id="profession-radio-validation"
-        value="validacion"
-        />
-      <label class="form-radio-label" for="profession-radio-validation">
-        Validación
-      </label>
-    </div>
+  <div class="form-radio">
+    <input
+      class="form-radio-input"
+      type="radio"
+      name="professionRadio"
+      id="profession-radio-designer"
+      value="diseñador"
+      checked
+      />
+    <label class="form-radio-label" for="profession-radio-designer">
+      Diseñador
+    </label>
+  </div>
+  <div class="form-radio">
+    <input
+      class="form-radio-input"
+      type="radio"
+      name="professionRadio"
+      id="profession-radio-developer"
+      value="desarrollador"
+      />
+    <label class="form-radio-label" for="profession-radio-developer">
+      Desarrollador
+    </label>
+  </div>
+  <div class="form-radio">
+    <input
+      class="form-radio-input"
+      type="radio"
+      name="professionRadio"
+      id="profession-radio-content"
+      value="redactor"
+      />
+    <label class="form-radio-label" for="profession-radio-content">
+      Redactor de contenidos
+    </label>
+  </div>
+  <div class="form-radio">
+    <input
+      class="form-radio-input is-invalid"
+      type="radio"
+      name="professionRadio"
+      id="profession-radio-validation"
+      value="validacion"
+      />
+    <label class="form-radio-label" for="profession-radio-validation">
+      Validación
+    </label>
+  </div>
 `;
 
 export const RADIO_DISABLED = `
-  <<div class="form-radio">
+  <div class="form-radio">
     <input
         class="form-radio-input"
         type="radio"
@@ -80,7 +80,22 @@ export const RADIO_DISABLED = `
     </label>
   </div>
 `;
-
+export const RADIO_NO_TEXT = `
+  <div class="form-radio">
+    <input
+      class="form-radio-input"
+      type="radio"
+      name="radioNoText"
+      id="radio-no-text"
+      value="Sin texto"
+    />
+    <label
+      class="form-radio-label"
+      htmlFor="radio-no-text"
+      aria-label="Casilla múltiple sin texto"
+    ></label>
+  </div>
+`;
 export const CHECKBOX = `
   <p class="headline-md">Seleccioná una o varias opciones *</p>
   <div class="form-checkbox">

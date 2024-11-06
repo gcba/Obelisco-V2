@@ -1,26 +1,26 @@
 export const NAV_VERTICAL_SIMPLE = `
-  <nav>
+  <nav aria-label="Navegación vertical">
     <ul class="nav flex-column nav-pills">
       <li class="nav-item">
-        <a class="nav-link" href="#"><span>Link</span></a>
+        <a class="nav-link" href="#"><span>Navegación</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link active" href="#"><span>Activo</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><span>Link</span></a>
+        <a class="nav-link" href="#"><span>Navegación</span></a>
       </li>
     </ul>
   </nav>
 `;
 export const NAV_VERTICAL_ICON = `
-  <nav>
+  <nav aria-label="Navegación vertical">
     <ul class="nav flex-column nav-pills">
       <li class="nav-item">
         <a class="nav-link" href="#">
           <div class="nav-icon">
             <span class="material-symbols-rounded o-icon" aria-label="hidden">add</span>
-            <span>Link</span>
+            <span>Navegación</span>
           </div>
         </a>
       </li>
@@ -36,7 +36,7 @@ export const NAV_VERTICAL_ICON = `
         <a class="nav-link" href="#">
           <div class="nav-icon">
             <span class="material-symbols-rounded o-icon" aria-label="hidden">add</span>
-            <span>Link</span>
+            <span>Navegación</span>
           </div>
         </a>
       </li>
@@ -44,7 +44,7 @@ export const NAV_VERTICAL_ICON = `
   </nav>
 `;
 export const NAV_VERTICAL_TWO_LEVEL = `
-  <nav>
+  <nav aria-label="Navegación vertical"
     <ul class="nav flex-column nav-pills nav-lg">
       <li class="nav-item">
         <a class="nav-link" href="#"><span>Categorías</span></a>
@@ -89,7 +89,7 @@ export const NAV_VERTICAL_TWO_LEVEL = `
   </nav>
 `;
 export const NAV_VERTICAL_TWO_LEVEL_ICON = `
-  <nav>
+  <nav  aria-label="Navegación vertical">
     <ul class="nav flex-column nav-pills nav-lg">
       <li class="nav-item">
         <a class="nav-link" href="#">
@@ -152,7 +152,7 @@ export const NAV_VERTICAL_TWO_LEVEL_ICON = `
   </nav>
 `;
 export const NAV_VERTICAL_THREE_LEVEL = `
-  <nav>
+  <nav  aria-label="Navegación vertical">
     <ul class="nav flex-column nav-pills nav-lg">
       <li class="nav-item">
         <a class="nav-link" href="#"><span>Categorías</span></a>
@@ -207,7 +207,7 @@ export const NAV_VERTICAL_THREE_LEVEL = `
   </nav>
 `;
 export const NAV_VERTICAL_THREE_LEVEL_ICON = `
-  <nav>
+  <nav  aria-label="Navegación vertical">
     <ul class="nav flex-column nav-pills nav-lg">
       <li class="nav-item">
         <a class="nav-link" href="#">

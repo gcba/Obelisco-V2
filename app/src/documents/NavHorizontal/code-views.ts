@@ -1,26 +1,26 @@
 export const NAV_HORIZONTAL_SIMPLE = `
-  <nav>
+  <nav aria-label="Navegación horizontal" aria-label='Navegación horizontal'>
     <ul class="nav flex-row nav-pills">
       <li class="nav-item">
-        <a class="nav-link" href="#"><span>Link</span></a>
+        <a class="nav-link" href="#"><span>Navegación</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link active" href="#"><span>Activo</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><span>Link</span></a>
+        <a class="nav-link" href="#"><span>Navegación</span></a>
       </li>
     </ul>
   </nav>
 `;
 export const NAV_HORIZONTAL_ICON = `
-  <nav>
+  <nav aria-label="Navegación horizontal">
     <ul class="nav flex-row nav-pills">
       <li class="nav-item">
         <a class="nav-link" href="#">
           <div class="nav-icon">
             <span class="material-symbols-rounded o-icon" aria-label="hidden">add</span>
-            <span>Link</span>
+            <span>Navegación</span>
           </div>
         </a>
       </li>
@@ -36,7 +36,7 @@ export const NAV_HORIZONTAL_ICON = `
         <a class="nav-link" href="#">
           <div class="nav-icon">
             <span class="material-symbols-rounded o-icon" aria-label="hidden">add</span>
-            <span>Link</span>
+            <span>Navegación</span>
           </div>
         </a>
       </li>
@@ -44,12 +44,12 @@ export const NAV_HORIZONTAL_ICON = `
   </nav>
 `;
 export const NAV_HORIZONTAL_ICON_RIGHT = `
-  <nav>
+  <nav aria-label="Navegación horizontal">
     <ul class="nav flex-row nav-pills">
       <li class="nav-item">
         <a class="nav-link" href="#">
           <div class="nav-icon">
-            <span>Link</span>
+            <span>Navegación</span>
             <span class="material-symbols-rounded o-icon" aria-label="hidden">arrow_forward</span>
           </div>
         </a>
@@ -65,7 +65,7 @@ export const NAV_HORIZONTAL_ICON_RIGHT = `
       <li class="nav-item">
         <a class="nav-link" href="#">
           <div class="nav-icon">
-            <span>Link</span>
+            <span>Navegación</span>
             <span class="material-symbols-rounded o-icon" aria-label="hidden">arrow_forward</span>
           </div>
         </a>
@@ -73,30 +73,29 @@ export const NAV_HORIZONTAL_ICON_RIGHT = `
     </ul>
   </nav>
 `;
-
 export const NAV_HORIZONTAL_SIZES = `
-  <nav>
+  <nav aria-label="Navegación horizontal">
     <ul class="nav flex-row nav-pills">
       <li class="nav-item">
-        <a class="nav-link nav-link-lg border-link" href="#"><span>Link</span></a>
+        <a class="nav-link nav-link-lg border-link" href="#"><span>Navegación</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link border-link" href="#"><span>Link</span></a>
+        <a class="nav-link border-link" href="#"><span>Navegación</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link nav-link-sm border-link" href="#"><span>Link</span></a>
+        <a class="nav-link nav-link-sm border-link" href="#"><span>Navegación</span></a>
       </li>
     </ul>
   </nav>
 `;
 export const NAV_HORIZONTAL_BORDER = `
-  <nav>
+  <nav aria-label="Navegación horizontal">
     <ul class="nav flex-row nav-pills">
       <li class="nav-item">
         <a class="nav-link border-link" href="#">
           <div class="nav-icon">
             <span class="material-symbols-rounded o-icon" aria-label="hidden">add</span>
-            <span>Link</span>
+            <span>Navegación</span>
           </div>
         </a>
       </li>
@@ -112,7 +111,7 @@ export const NAV_HORIZONTAL_BORDER = `
         <a class="nav-link border-link" href="#">
           <div class="nav-icon">
             <span class="material-symbols-rounded o-icon" aria-label="hidden">add</span>
-            <span>Link</span>
+            <span>Navegación</span>
           </div>
         </a>
       </li>

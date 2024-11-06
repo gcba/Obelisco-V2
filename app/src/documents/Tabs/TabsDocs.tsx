@@ -1066,14 +1066,7 @@ const TabsDocs: React.FC = () => {
     },
     {
       id: 'section-9',
-      title: (
-        <div className="d-flex gap-1 align-items-center">
-          <span className="material-symbols-rounded" style={{ fontSize: '14px' }} aria-hidden="true">
-            arrow_right_alt
-          </span>{' '}
-          Grande
-        </div>
-      ),
+      subtitle: 'Grande',
       content: (
         <CodeBox codeHTML={TABS_LARGE}>
           <div className="container">
@@ -1200,14 +1193,7 @@ const TabsDocs: React.FC = () => {
     },
     {
       id: 'section-10',
-      title: (
-        <div className="d-flex gap-1 align-items-center">
-          <span className="material-symbols-rounded" style={{ fontSize: '14px' }} aria-hidden="true">
-            arrow_right_alt
-          </span>{' '}
-          Mediano
-        </div>
-      ),
+      subtitle: 'Mediano',
       content: (
         <CodeBox codeHTML={TABS_MEDIUM}>
           <div className="container">
@@ -1334,14 +1320,7 @@ const TabsDocs: React.FC = () => {
     },
     {
       id: 'section-11',
-      title: (
-        <div className="d-flex gap-1 align-items-center">
-          <span className="material-symbols-rounded" style={{ fontSize: '14px' }} aria-hidden="true">
-            arrow_right_alt
-          </span>{' '}
-          Chico
-        </div>
-      ),
+      subtitle: 'Chico',
       content: (
         <CodeBox codeHTML={TABS_SMALL}>
           <div className="container">

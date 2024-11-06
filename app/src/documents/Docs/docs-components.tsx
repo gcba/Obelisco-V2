@@ -25,6 +25,9 @@ const UpdateComponents: React.FC = () => {
             icono o con descripción.
           </li>
           <li>
+            La clase <code>.list-group-item-logout</code> queda deprecada.
+          </li>
+          <li>
             La lista de accesos por ancho completo, que utilizaba las clases <code>.access-deck .max-cards-*</code>,
             queda deprecada.{' '}
           </li>
@@ -281,6 +284,9 @@ const UpdateComponents: React.FC = () => {
             Se eliminan las clases <code>.card</code> y <code>.card-simple</code>.
           </li>
           <li>
+            Las  clases <code>.card-img</code>, <code>.card-body</code>, <code>.card-title</code> y <code>.card-text</code> se reemplazan por <code>.panel-img</code>, <code>.panel-body</code>, <code>.panel-title</code> y <code>.panel-text</code>, respectivamente.
+          </li>
+          <li>
             Para la disposición de Destacado conjunto, las clases <code>.card-deck</code> y <code>.max-cards-2</code>{' '}
             quedan deprecadas, se reemplazan por <code>.highlighted-items-2</code>.
           </li>
@@ -478,7 +484,10 @@ const UpdateComponents: React.FC = () => {
       content: (
         <ul className="docs-list">
           <li>
-            Se elimina la clase <code>.card</code>.
+            Se reemplazan las clases <code>.card</code> y <code>.card-map</code> por <code>.map</code>.
+          </li>
+          <li>
+            Las  clases <code>.card-iframe</code>, <code>.card-body</code>, <code>.card-title</code> y <code>.card-text</code> se reemplazan por <code>.map-iframe</code>, <code>.map-body</code>, <code>.map-title</code> y <code>.map-text</code>, respectivamente.
           </li>
         </ul>
       ),
@@ -592,7 +601,8 @@ const UpdateComponents: React.FC = () => {
           </li>
           <li>
             En el caso de tarjeta Temática, las clases <code>.card-horizonal</code>, <code>.card-simple</code> y{' '}
-            <code>.card-lg</code> se reemplazan por la clase <code>.thematic</code>.
+            <code>.card-lg</code> se reemplazan por la clase <code>.thematic</code>. Se agrega al enlace de la tarjeta
+            la clase <code>.card-title-link</code>.
           </li>
           <li>
             Las clases <code>.card-img-left</code> y <code>.card-img-top</code> se reemplazan por la clase{' '}

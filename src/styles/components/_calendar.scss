@@ -3,21 +3,21 @@ $calendar-spacing: 0.5rem 0.25rem;
 $calendar-footer-spacing: 1rem 0.5rem 0;
 $calendar-td-span-size: 2.25rem;
 
-$chromatic-colors: (
-  bg-sky: $sky,
-  bg-lavender: $lavender,
-  bg-coral: $coral,
-  bg-avocado: $avocado,
-  bg-citrus: $citrus,
-  bg-lime: $lime,
-  bg-pistachio: $pistachio,
-  bg-berries: $berries,
-  bg-musket: $musket,
-  bg-aqua: $aqua,
-  bg-strawberry: $strawberry,
-  bg-blackberry: $blackberry,
-  bg-gray: $gray-100,
-);
+// $chromatic-colors: (
+//   bg-sky: $sky,
+//   bg-lavender: $lavender,
+//   bg-coral: $coral,
+//   bg-avocado: $avocado,
+//   bg-citrus: $citrus,
+//   bg-lime: $lime,
+//   bg-pistachio: $pistachio,
+//   bg-berries: $berries,
+//   bg-musket: $musket,
+//   bg-aqua: $aqua,
+//   bg-strawberry: $strawberry,
+//   bg-blackberry: $blackberry,
+//   bg-gray: $gray-100,
+// );
 
 /* === Custom styles === */
 .calendar {
@@ -46,7 +46,7 @@ $chromatic-colors: (
 
   .calendar-body {
     padding: 1rem 0 0;
-    color: $grisulado-700;
+    color: $slate-700;
     margin-bottom: 0;
 
     table {
@@ -73,7 +73,7 @@ $chromatic-colors: (
           font-family: Nunito, sans-serif;
           height: 48px;
           background-color: $cyan-50;
-          color: $grisulado-900;
+          color: $slate-900;
         }
       }
 
@@ -115,12 +115,12 @@ $chromatic-colors: (
                 background-color: $blue-950;
               }
 
-              @each $clase, $color in $chromatic-colors {
-                .#{$clase} {
-                  background-color: darken($color, 10%) !important;
-                  color: darken($grisulado-900, 10%);
-                }
-              }
+              // @each $clase, $color in $chromatic-colors {
+              //   .#{$clase} {
+              //     background-color: darken($color, 10%) !important;
+              //     color: darken($slate-900, 10%);
+              //   }
+              // }
             }
 
             &:focus {
@@ -168,7 +168,7 @@ $chromatic-colors: (
             }
 
             &.disabled {
-              color: $grisulado-300;
+              color: $slate-300;
             }
 
             &.active,
@@ -185,11 +185,11 @@ $chromatic-colors: (
                 background-color: $gray-100;
               }
 
-              @each $clase, $color in $chromatic-colors {
-                &.#{$clase} {
-                  color: $grisulado-900;
-                }
-              }
+              // @each $clase, $color in $chromatic-colors {
+              //   &.#{$clase} {
+              //     color: $slate-900;
+              //   }
+              // }
             }
 
             &.active-secondary {
@@ -204,7 +204,7 @@ $chromatic-colors: (
   .calendar-footer {
     .calendar-footer-list {
       margin-top: 1rem;
-      box-shadow: 0 -1px 0 0 $grisulado-50;
+      box-shadow: 0 -1px 0 0 $slate-50;
       padding: $calendar-footer-spacing;
       margin-bottom: 0;
 

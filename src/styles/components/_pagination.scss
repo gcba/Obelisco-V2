@@ -1,18 +1,13 @@
-/* === Custom variables and mixins === */
+// Custom variables and mixins
 $pagination-bg: $white;
 $pagination-active-color: $white;
 $pagination-hover-color: $blue-700;
 $pagination-active-bg: $blue-700;
-
-$pagination-padding-y: 0.5rem;
-$pagination-padding-x: 0.25rem * 3;
-$pagination-border-width: 0;
-
-$pagination-disabled-bg: transparent;
-
-$pagination-size: 40px;
-$pagination-icon-padding-x-sm: 0.25rem;
+$pagination-size: 2.75rem; //44px
+$pagination-size-mobile: 2rem; //32px
 $pagination-icon-padding-x: 0.5rem;
+$padding-icon-previous: 0.5rem 0.75rem 0.5rem 0.25rem;
+$padding-icon-next: 0.5rem 0.25rem 0.5rem 0.75rem;
 
 // Icons
 $svg-base-left: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 6.70498C14.61 6.31498 13.98 6.31498 13.59 6.70498L9.00002 11.295C8.61002 11.685 8.61002 12.315 9.00002 12.705L13.59 17.295C13.98 17.685 14.61 17.685 15 17.295C15.39 16.905 15.39 16.275 15 15.885L11.12 11.995L15 8.11498C15.39 7.72498 15.38 7.08498 15 6.70498Z" fill="%23';
@@ -58,14 +53,14 @@ $pagination-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>'
   }
 }
 
-/* === Custom styles === */
-
+// Custom styles
 .pagination {
+  justify-content: center;
   gap: 0.5rem;
 
   .page-item {
     display: inline-block;
-    height: 40px;
+    height: $pagination-size;
 
     &.no-events {
       pointer-events: none;
@@ -90,12 +85,14 @@ $pagination-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>'
       border: none;
       outline: $outline-border;
       height: $pagination-size;
-      min-width: 35px;
+      min-width: 48px;
       gap: 0.25rem;
       text-decoration: none;
       @extend .headline-md;
       font-weight: $font-weight-normal;
       word-break: normal;
+      padding: 0.5rem 0.25rem;
+      color: $body-color;
 
       .page-previous-icon,
       .page-next-icon {
@@ -112,11 +109,11 @@ $pagination-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>'
       }
 
       &:has(.page-previous-icon) {
-        padding-left: $pagination-icon-padding-x-sm;
+        padding: $padding-icon-previous;
       }
 
       &:has(.page-next-icon) {
-        padding-right: $pagination-icon-padding-x-sm;
+        padding: $padding-icon-next;
       }
 
       &:has(.page-previous-icon, .page-next-icon):not(
@@ -153,8 +150,9 @@ $pagination-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>'
           $pagination-icon-left-hover,
           $pagination-icon-right-hover
         );
-        text-decoration: none;
         outline: $hover-outline;
+        text-decoration: underline;
+        text-decoration-color: transparent;
       }
     }
 
@@ -171,8 +169,9 @@ $pagination-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>'
           $pagination-icon-right-active
         );
         z-index: 0;
-        outline: 0.25rem solid $blue-700;
-        outline-offset: -3px;
+        outline: 0.25rem solid transparent;
+        outline-offset: -2px;
+        box-shadow: 0 0 0 0.125rem $slate-100;
 
         &:hover,
         &.hover {
@@ -184,6 +183,18 @@ $pagination-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>'
             $pagination-icon-left-active,
             $pagination-icon-right-active
           );
+          outline: 2px solid transparent;
+          outline-offset: 0;
+          box-shadow: 0 0 0 0.125rem $blue-700;
+          text-decoration: underline;
+          text-decoration-color: transparent;
+        }
+
+        &:focus,
+        &.focus {
+          outline: 0.25rem solid transparent;
+          outline-offset: 0;
+          box-shadow: $focus-box-shadow;
         }
       }
     }
@@ -223,31 +234,12 @@ $pagination-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>'
 
 @include media-breakpoint-down(md) {
   .pagination {
+    justify-content: space-between;
+    width: 100%;
+
     .page-item {
-      .page-link {
-        min-width: 2rem;
-        height: 2rem;
-        padding: 0.1875rem;
-
-        .page-previous-text,
-        .page-next-text {
-          @include visually-hidden;
-        }
-
-        &:has(.page-previous-icon, .page-next-icon) {
-          padding-left: $pagination-icon-padding-x-sm;
-          padding-right: $pagination-icon-padding-x-sm;
-        }
-      }
-
-      &.no-events {
-        width: 32px;
-        height: 32px;
-
-        .page-link {
-          padding: 0;
-          min-width: unset;
-        }
+      &:not(:first-child, :last-child) {
+        display: none;
       }
     }
   }

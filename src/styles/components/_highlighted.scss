@@ -8,28 +8,28 @@
   border-radius: 0;
   border: none;
 
-  .card-img,
+  .panel-img,
   video {
     width: 100%;
     max-width: 538px;
     height: 304px;
-    border-radius: $card-border-radius;
+    border-radius: $border-radius-lg;
     object-fit: cover;
     object-position: center;
     aspect-ratio: 16/9;
   }
 
-  .card-body {
+  .panel-body {
     padding: 0;
     width: 100%;
     max-width: 728px;
 
-    .card-title {
+    .panel-title {
       @extend .h4;
       margin: 0;
     }
 
-    .card-text {
+    .panel-text {
       margin: 0.5rem 0 0;
     }
 
@@ -38,10 +38,6 @@
       flex-wrap: wrap;
       gap: 1rem;
       margin-top: 2rem;
-
-      .card-link {
-        margin-left: 0;
-      }
 
       .list-group-item {
         width: 100%;
@@ -69,19 +65,18 @@
     padding: 1.5rem 0.75rem;
     margin: 0 auto;
 
-    .card-img,
+    .panel-img,
     video {
       max-width: 100%;
       height: 392px;
     }
 
-    .card-body {
+    .panel-body {
       max-width: 100%;
 
       .panel-footer {
         flex-direction: row;
         margin-top: 1.25rem; //20px
-        .card-link,
         .download-link {
           width: fit-content;
         }
@@ -91,14 +86,14 @@
   @include media-breakpoint-down(md) {
     padding: 1.5rem 1rem;
 
-    .card-img,
+    .panel-img,
     video {
       height: 296px;
     }
   }
 }
 
-/* === Custom styles === */
+// Custom styles
 //Estilos para Destacado Banner (antes Panel Grande Horizontal)
 .panel-horizontal-content {
   width: 100%;
@@ -121,7 +116,7 @@
 .panel-vertical {
   @include panel-content(column, xl);
   gap: 1.25rem; //20px
-  .card-body {
+  .panel-body {
     .panel-footer {
       margin-top: 1.25rem; //20px
     }
@@ -132,9 +127,9 @@
 .panel-lateral {
   @include panel-content(column, xl);
   padding: 2rem 1.5rem;
-  background-color: $grisulado-50;
+  background-color: $slate-50;
   border-radius: 0.5rem;
   @include media-breakpoint-down(xl) {
-    padding: 2rem 1.5rem;
+    padding: 1.5rem 1rem;
   }
 }

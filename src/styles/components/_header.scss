@@ -204,7 +204,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
           min-width: 100%;
           position: static;
           outline: none;
-          border-bottom: 0.125rem solid $grisulado-50;
+          border-bottom: 0.125rem solid $slate-50;
           border-radius: 0;
           padding-bottom: 0.25rem;
 
@@ -512,7 +512,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
         }
         width: 100%;
         margin-bottom: 1rem;
-        border-top: 1px solid $grisulado-100;
+        border-top: 1px solid $slate-100;
         padding-top: 1rem;
 
         &.unbordered {

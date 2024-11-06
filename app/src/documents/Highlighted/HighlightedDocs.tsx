@@ -6,6 +6,7 @@ import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
 import {
+  HIGHLIGHTED_BANNER_ACCESS,
   HIGHLIGHTED_BANNER_BUTTON,
   HIGHLIGHTED_BANNER_BUTTONS,
   HIGHLIGHTED_BANNER_BUTTONS_BG,
@@ -15,6 +16,7 @@ import {
   HIGHLIGHTED_BANNER_LINK,
   HIGHLIGHTED_BANNER_NO_MEDIA,
   HIGHLIGHTED_JOIN_IMAGE,
+  HIGHLIGHTED_JOIN_NO_IMAGE,
   HIGHLIGHTED_JOIN_VIDEO,
   HIGHLIGHTED_LATERAL_ACCESS,
   HIGHLIGHTED_LATERAL_BUTTON,
@@ -48,7 +50,11 @@ const HighlightedDocs: React.FC = () => {
     },
     {
       id: 'section-1',
-      title: 'Banner con imagen',
+      title: 'Banner',
+    },
+    {
+      id: 'section-2',
+      subtitle: 'Con imagen',
       content: (
         <>
           <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTONS}>
@@ -58,13 +64,13 @@ const HighlightedDocs: React.FC = () => {
                   <Image
                     src={`${basePath}/images/destacado.jpg`}
                     alt="descripción de imagen"
-                    className="card-img"
+                    className="panel-img"
                     width={538}
                     height={304}
                   ></Image>
-                  <div className="card-body">
-                    <h2 className="card-title">Título del destacado</h2>
-                    <p className="card-text">
+                  <div className="panel-body">
+                    <h2 className="panel-title">Título del destacado</h2>
+                    <p className="panel-text">
                       Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
                       negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas.
                       No puede contener negritas ni enlaces
@@ -86,13 +92,13 @@ const HighlightedDocs: React.FC = () => {
                   <Image
                     src={`${basePath}/images/destacado.jpg`}
                     alt="descripción de imagen"
-                    className="card-img"
+                    className="panel-img"
                     width={538}
                     height={304}
                   ></Image>
-                  <div className="card-body">
-                    <h2 className="card-title">Título del destacado</h2>
-                    <p className="card-text">
+                  <div className="panel-body">
+                    <h2 className="panel-title">Título del destacado</h2>
+                    <p className="panel-text">
                       Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
                       negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas.
                       No puede contener negritas ni enlaces
@@ -113,13 +119,13 @@ const HighlightedDocs: React.FC = () => {
                   <Image
                     src={`${basePath}/images/destacado.jpg`}
                     alt="descripción de imagen"
-                    className="card-img"
+                    className="panel-img"
                     width={538}
                     height={304}
                   ></Image>
-                  <div className="card-body">
-                    <h2 className="card-title">Título del destacado</h2>
-                    <p className="card-text">
+                  <div className="panel-body">
+                    <h2 className="panel-title">Título del destacado</h2>
+                    <p className="panel-text">
                       Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
                       negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas.
                       No puede contener negritas ni enlaces
@@ -145,13 +151,13 @@ const HighlightedDocs: React.FC = () => {
                   <Image
                     src={`${basePath}/images/destacado.jpg`}
                     alt="descripción de imagen"
-                    className="card-img"
+                    className="panel-img"
                     width={538}
                     height={304}
                   ></Image>
-                  <div className="card-body">
-                    <h2 className="card-title">Título del destacado</h2>
-                    <p className="card-text">
+                  <div className="panel-body">
+                    <h2 className="panel-title">Título del destacado</h2>
+                    <p className="panel-text">
                       Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
                       negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas.
                       No puede contener negritas ni enlaces
@@ -165,20 +171,20 @@ const HighlightedDocs: React.FC = () => {
             </div>
           </CodeBox>
           <br />
-          <CodeBox codeHTML={HIGHLIGHTED_BANNER_LINK}>
+          <CodeBox codeHTML={HIGHLIGHTED_BANNER_ACCESS}>
             <div className="highlighted-box-sizing">
               <div className="panel-horizontal-content">
                 <div className="panel-horizontal">
                   <Image
                     src={`${basePath}/images/destacado.jpg`}
                     alt="descripción de imagen"
-                    className="card-img"
+                    className="panel-img"
                     width={538}
                     height={304}
                   ></Image>
-                  <div className="card-body">
-                    <h2 className="card-title">Título del destacado</h2>
-                    <p className="card-text">
+                  <div className="panel-body">
+                    <h2 className="panel-title">Título del destacado</h2>
+                    <p className="panel-text">
                       Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
                       negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas.
                       No puede contener negritas ni enlaces
@@ -202,8 +208,8 @@ const HighlightedDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-2',
-      title: 'Banner con video',
+      id: 'section-3',
+      subtitle: 'Con video',
       content: (
         <>
           <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTONS_VIDEO_MP4}>
@@ -211,7 +217,7 @@ const HighlightedDocs: React.FC = () => {
               <div className="panel-horizontal-content">
                 <div className="panel-horizontal">
                   <p className="sr-only">Buenos Aires se escribe en plural</p>
-                  <video className="card-img" controls>
+                  <video className="panel-img" controls>
                     <source src={`${basePath}/images/videoBuenosAires.mp4`} type="video/mp4" />
                     <track src={`${basePath}/images/videoBuenosAires.vtt`} default kind="captions" srcLang="es" />
                     <p>
@@ -219,9 +225,9 @@ const HighlightedDocs: React.FC = () => {
                       <a href={`${basePath}/images/videoBuenosAires.mp4`}>este enlace</a>.
                     </p>
                   </video>
-                  <div className="card-body">
-                    <h2 className="card-title">Título del destacado</h2>
-                    <p className="card-text">
+                  <div className="panel-body">
+                    <h2 className="panel-title">Título del destacado</h2>
+                    <p className="panel-text">
                       Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
                       negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas.
                       No puede contener negritas ni enlaces
@@ -241,44 +247,16 @@ const HighlightedDocs: React.FC = () => {
               <div className="panel-horizontal-content">
                 <div className="panel-horizontal">
                   <iframe
-                    className="card-img"
+                    className="panel-img"
                     src="https://www.youtube.com/embed/sXE613Oaxvc?si=iWSX1erqQxXOLojw"
                     title="Buenos Aires se escribe en plural"
                     frameBorder={0}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
                   ></iframe>
-                  <div className="card-body">
-                    <h2 className="card-title">Título del destacado</h2>
-                    <p className="card-text">
-                      Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
-                      negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas.
-                      No puede contener negritas ni enlaces
-                    </p>
-                    <div className="panel-footer">
-                      <LinkClient className="btn btn-primary btn-lg">Botón</LinkClient>
-                      <LinkClient className="btn btn-outline-primary btn-lg">Botón</LinkClient>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </CodeBox>
-        </>
-      ),
-    },
-    {
-      id: 'section-3',
-      title: 'Banner sin multimedia',
-      content: (
-        <>
-          <CodeBox codeHTML={HIGHLIGHTED_BANNER_NO_MEDIA}>
-            <div className="highlighted-box-sizing">
-              <div className="panel-horizontal-content">
-                <div className="panel-horizontal">
-                  <div className="card-body">
-                    <h2 className="card-title">Título del destacado</h2>
-                    <p className="card-text">
+                  <div className="panel-body">
+                    <h2 className="panel-title">Título del destacado</h2>
+                    <p className="panel-text">
                       Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
                       negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas.
                       No puede contener negritas ni enlaces
@@ -297,23 +275,16 @@ const HighlightedDocs: React.FC = () => {
     },
     {
       id: 'section-4',
-      title: 'Banner con fondo',
+      subtitle: 'Sin multimedia',
       content: (
         <>
-          <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTONS_BG}>
+          <CodeBox codeHTML={HIGHLIGHTED_BANNER_NO_MEDIA}>
             <div className="highlighted-box-sizing">
-              <div className="panel-horizontal-content bg-light">
+              <div className="panel-horizontal-content">
                 <div className="panel-horizontal">
-                  <Image
-                    src={`${basePath}/images/destacado.jpg`}
-                    alt="descripción de imagen"
-                    className="card-img"
-                    width={538}
-                    height={304}
-                  ></Image>
-                  <div className="card-body">
-                    <h2 className="card-title">Título del destacado</h2>
-                    <p className="card-text">
+                  <div className="panel-body">
+                    <h2 className="panel-title">Título del destacado</h2>
+                    <p className="panel-text">
                       Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
                       negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas.
                       No puede contener negritas ni enlaces
@@ -332,7 +303,46 @@ const HighlightedDocs: React.FC = () => {
     },
     {
       id: 'section-5',
-      title: 'Conjunto con imagen',
+      subtitle: 'Con fondo',
+      content: (
+        <>
+          <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTONS_BG}>
+            <div className="highlighted-box-sizing">
+              <div className="panel-horizontal-content bg-light">
+                <div className="panel-horizontal">
+                  <Image
+                    src={`${basePath}/images/destacado.jpg`}
+                    alt="descripción de imagen"
+                    className="panel-img"
+                    width={538}
+                    height={304}
+                  ></Image>
+                  <div className="panel-body">
+                    <h2 className="panel-title">Título del destacado</h2>
+                    <p className="panel-text">
+                      Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
+                      negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas.
+                      No puede contener negritas ni enlaces
+                    </p>
+                    <div className="panel-footer">
+                      <LinkClient className="btn btn-primary btn-lg">Botón</LinkClient>
+                      <LinkClient className="btn btn-outline-primary btn-lg">Botón</LinkClient>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+    {
+      id: 'section-6',
+      title: 'Conjunto',
+    },
+    {
+      id: 'section-7',
+      subtitle: 'Con imagen',
       content: (
         <CodeBox codeHTML={HIGHLIGHTED_JOIN_IMAGE}>
           <div className="highlighted-box-sizing-vertical">
@@ -343,13 +353,13 @@ const HighlightedDocs: React.FC = () => {
                     <Image
                       src={`${basePath}/images/destacado.jpg`}
                       alt="descripción de imagen"
-                      className="card-img"
+                      className="panel-img"
                       width={538}
                       height={304}
                     ></Image>
-                    <div className="card-body">
-                      <h2 className="card-title">Título del destacado</h2>
-                      <p className="card-text">
+                    <div className="panel-body">
+                      <h2 className="panel-title">Título del destacado</h2>
+                      <p className="panel-text">
                         Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
                         negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
                         líneas. No puede contener negritas ni enlaces
@@ -365,13 +375,13 @@ const HighlightedDocs: React.FC = () => {
                     <Image
                       src={`${basePath}/images/destacado.jpg`}
                       alt="descripción de imagen"
-                      className="card-img"
+                      className="panel-img"
                       width={538}
                       height={304}
                     ></Image>
-                    <div className="card-body">
-                      <h2 className="card-title">Título del destacado</h2>
-                      <p className="card-text">
+                    <div className="panel-body">
+                      <h2 className="panel-title">Título del destacado</h2>
+                      <p className="panel-text">
                         Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
                         negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
                         líneas. No puede contener negritas ni enlaces
@@ -392,13 +402,13 @@ const HighlightedDocs: React.FC = () => {
                     <Image
                       src={`${basePath}/images/destacado.jpg`}
                       alt="descripción de imagen"
-                      className="card-img"
+                      className="panel-img"
                       width={538}
                       height={304}
                     ></Image>
-                    <div className="card-body">
-                      <h2 className="card-title">Título del destacado</h2>
-                      <p className="card-text">
+                    <div className="panel-body">
+                      <h2 className="panel-title">Título del destacado</h2>
+                      <p className="panel-text">
                         Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
                         negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
                         líneas. No puede contener negritas ni enlaces
@@ -414,160 +424,13 @@ const HighlightedDocs: React.FC = () => {
                     <Image
                       src={`${basePath}/images/destacado.jpg`}
                       alt="descripción de imagen"
-                      className="card-img"
+                      className="panel-img"
                       width={538}
                       height={304}
                     ></Image>
-                    <div className="card-body">
-                      <h2 className="card-title">Título del destacado</h2>
-                      <p className="card-text">
-                        Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
-                        negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
-                        líneas. No puede contener negritas ni enlaces
-                      </p>
-                      <div className="panel-footer">
-                        <LinkClient className="list-group-item item-sm">
-                          <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                            info
-                          </span>
-                          <div className="access-content">
-                            <span className="access-title">Acceso</span>
-                          </div>
-                        </LinkClient>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </CodeBox>
-      ),
-    },
-    {
-      id: 'section-6',
-      title: 'Conjunto con video',
-      content: (
-        <CodeBox codeHTML={HIGHLIGHTED_JOIN_VIDEO}>
-          <div className="highlighted-box-sizing-vertical max-h-800">
-            <div className="container">
-              <div className="highlighted-items-2">
-                <div className="col">
-                  <div className="panel-vertical">
-                    <p className="sr-only">Buenos Aires se escribe en plural</p>
-                    <video className="card-img" controls>
-                      <source src={`${basePath}/images/videoBuenosAires.mp4`} type="video/mp4" />
-                      <track src={`${basePath}/images/videoBuenosAires.vtt`} default kind="captions" srcLang="es" />
-                      <p>
-                        Su navegador no soporta vídeos HTML5. Puedes ver el video haciendo clic en
-                        <a href={`${basePath}/images/videoBuenosAires.mp4`}>este enlace</a>.
-                      </p>
-                    </video>
-                    <div className="card-body">
-                      <h2 className="card-title">Título del destacado</h2>
-                      <p className="card-text">
-                        Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
-                        negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
-                        líneas. No puede contener negritas ni enlaces
-                      </p>
-                      <div className="panel-footer">
-                        <LinkClient className="btn btn-primary btn-lg">Botón</LinkClient>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col">
-                  <div className="panel-vertical">
-                    <iframe
-                      className="card-img"
-                      src="https://www.youtube.com/embed/sXE613Oaxvc?si=iWSX1erqQxXOLojw"
-                      title="Buenos Aires se escribe en plural"
-                      frameBorder={0}
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowFullScreen
-                    ></iframe>
-                    <div className="card-body">
-                      <h2 className="card-title">Título del destacado</h2>
-                      <p className="card-text">
-                        Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
-                        negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
-                        líneas. No puede contener negritas ni enlaces
-                      </p>
-                      <div className="panel-footer">
-                        <LinkClient className="btn btn-primary btn-lg">Botón</LinkClient>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </CodeBox>
-      ),
-    },
-    {
-      id: 'section-7',
-      title: 'Conjunto sin multimedia',
-      content: (
-        <CodeBox codeHTML={HIGHLIGHTED_JOIN_IMAGE}>
-          <div className="highlighted-box-sizing-vertical max-h-640">
-            <div className="container">
-              <div className="highlighted-items-2">
-                <div className="col">
-                  <div className="panel-vertical">
-                    <div className="card-body">
-                      <h2 className="card-title">Título del destacado</h2>
-                      <p className="card-text">
-                        Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
-                        negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
-                        líneas. No puede contener negritas ni enlaces
-                      </p>
-                      <div className="panel-footer">
-                        <LinkClient className="btn btn-primary btn-lg">Botón</LinkClient>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col">
-                  <div className="panel-vertical">
-                    <div className="card-body">
-                      <h2 className="card-title">Título del destacado</h2>
-                      <p className="card-text">
-                        Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
-                        negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
-                        líneas. No puede contener negritas ni enlaces
-                      </p>
-                      <div className="panel-footer">
-                        <LinkClient className="btn btn-secondary btn-lg" download="">
-                          <span className="material-symbols-rounded" aria-hidden="true">
-                            file_download
-                          </span>
-                          Descargar
-                        </LinkClient>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col">
-                  <div className="panel-vertical">
-                    <div className="card-body">
-                      <h2 className="card-title">Título del destacado</h2>
-                      <p className="card-text">
-                        Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
-                        negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
-                        líneas. No puede contener negritas ni enlaces
-                      </p>
-                      <div className="panel-footer">
-                        <LinkClient className="external">Enlace externo</LinkClient>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col">
-                  <div className="panel-vertical">
-                    <div className="card-body">
-                      <h2 className="card-title">Título del destacado</h2>
-                      <p className="card-text">
+                    <div className="panel-body">
+                      <h2 className="panel-title">Título del destacado</h2>
+                      <p className="panel-text">
                         Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
                         negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
                         líneas. No puede contener negritas ni enlaces
@@ -593,6 +456,153 @@ const HighlightedDocs: React.FC = () => {
     },
     {
       id: 'section-8',
+      subtitle: 'Con video',
+      content: (
+        <CodeBox codeHTML={HIGHLIGHTED_JOIN_VIDEO}>
+          <div className="highlighted-box-sizing-vertical max-h-800">
+            <div className="container">
+              <div className="highlighted-items-2">
+                <div className="col">
+                  <div className="panel-vertical">
+                    <p className="sr-only">Buenos Aires se escribe en plural</p>
+                    <video className="panel-img" controls>
+                      <source src={`${basePath}/images/videoBuenosAires.mp4`} type="video/mp4" />
+                      <track src={`${basePath}/images/videoBuenosAires.vtt`} default kind="captions" srcLang="es" />
+                      <p>
+                        Su navegador no soporta vídeos HTML5. Puedes ver el video haciendo clic en
+                        <a href={`${basePath}/images/videoBuenosAires.mp4`}>este enlace</a>.
+                      </p>
+                    </video>
+                    <div className="panel-body">
+                      <h2 className="panel-title">Título del destacado</h2>
+                      <p className="panel-text">
+                        Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
+                        negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
+                        líneas. No puede contener negritas ni enlaces
+                      </p>
+                      <div className="panel-footer">
+                        <LinkClient className="btn btn-primary btn-lg">Botón</LinkClient>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="panel-vertical">
+                    <iframe
+                      className="panel-img"
+                      src="https://www.youtube.com/embed/sXE613Oaxvc?si=iWSX1erqQxXOLojw"
+                      title="Buenos Aires se escribe en plural"
+                      frameBorder={0}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                    ></iframe>
+                    <div className="panel-body">
+                      <h2 className="panel-title">Título del destacado</h2>
+                      <p className="panel-text">
+                        Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
+                        negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
+                        líneas. No puede contener negritas ni enlaces
+                      </p>
+                      <div className="panel-footer">
+                        <LinkClient className="btn btn-primary btn-lg">Botón</LinkClient>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </CodeBox>
+      ),
+    },
+    {
+      id: 'section-9',
+      subtitle: 'Sin multimedia',
+      content: (
+        <CodeBox codeHTML={HIGHLIGHTED_JOIN_NO_IMAGE}>
+          <div className="highlighted-box-sizing-vertical max-h-640">
+            <div className="container">
+              <div className="highlighted-items-2">
+                <div className="col">
+                  <div className="panel-vertical">
+                    <div className="panel-body">
+                      <h2 className="panel-title">Título del destacado</h2>
+                      <p className="panel-text">
+                        Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
+                        negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
+                        líneas. No puede contener negritas ni enlaces
+                      </p>
+                      <div className="panel-footer">
+                        <LinkClient className="btn btn-primary btn-lg">Botón</LinkClient>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="panel-vertical">
+                    <div className="panel-body">
+                      <h2 className="panel-title">Título del destacado</h2>
+                      <p className="panel-text">
+                        Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
+                        negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
+                        líneas. No puede contener negritas ni enlaces
+                      </p>
+                      <div className="panel-footer">
+                        <LinkClient className="btn btn-secondary btn-lg" download="">
+                          <span className="material-symbols-rounded" aria-hidden="true">
+                            file_download
+                          </span>
+                          Descargar
+                        </LinkClient>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="panel-vertical">
+                    <div className="panel-body">
+                      <h2 className="panel-title">Título del destacado</h2>
+                      <p className="panel-text">
+                        Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
+                        negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
+                        líneas. No puede contener negritas ni enlaces
+                      </p>
+                      <div className="panel-footer">
+                        <LinkClient className="external">Enlace externo</LinkClient>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="panel-vertical">
+                    <div className="panel-body">
+                      <h2 className="panel-title">Título del destacado</h2>
+                      <p className="panel-text">
+                        Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
+                        negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
+                        líneas. No puede contener negritas ni enlaces
+                      </p>
+                      <div className="panel-footer">
+                        <LinkClient className="list-group-item item-sm">
+                          <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                            info
+                          </span>
+                          <div className="access-content">
+                            <span className="access-title">Acceso</span>
+                          </div>
+                        </LinkClient>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </CodeBox>
+      ),
+    },
+    {
+      id: 'section-10',
       title: 'Lateral',
       content: (
         <>
@@ -600,9 +610,9 @@ const HighlightedDocs: React.FC = () => {
             <div className="container">
               <div className="col-12 col-xl-6">
                 <div className="panel-lateral">
-                  <div className="card-body">
-                    <h2 className="card-title">Título del destacado</h2>
-                    <p className="card-text">
+                  <div className="panel-body">
+                    <h2 className="panel-title">Título del destacado</h2>
+                    <p className="panel-text">
                       Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
                       negritas ni enlaces.
                     </p>
@@ -619,9 +629,9 @@ const HighlightedDocs: React.FC = () => {
             <div className="container">
               <div className="col-12 col-xl-6">
                 <div className="panel-lateral">
-                  <div className="card-body">
-                    <h2 className="card-title">Título del destacado</h2>
-                    <p className="card-text">
+                  <div className="panel-body">
+                    <h2 className="panel-title">Título del destacado</h2>
+                    <p className="panel-text">
                       Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
                       negritas ni enlaces.
                     </p>
@@ -643,9 +653,9 @@ const HighlightedDocs: React.FC = () => {
             <div className="container">
               <div className="col-12 col-xl-6">
                 <div className="panel-lateral">
-                  <div className="card-body">
-                    <h2 className="card-title">Título del destacado</h2>
-                    <p className="card-text">
+                  <div className="panel-body">
+                    <h2 className="panel-title">Título del destacado</h2>
+                    <p className="panel-text">
                       Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
                       negritas ni enlaces.
                     </p>
@@ -662,9 +672,9 @@ const HighlightedDocs: React.FC = () => {
             <div className="container">
               <div className="col-12 col-xl-6">
                 <div className="panel-lateral">
-                  <div className="card-body">
-                    <h2 className="card-title">Título del destacado</h2>
-                    <p className="card-text">
+                  <div className="panel-body">
+                    <h2 className="panel-title">Título del destacado</h2>
+                    <p className="panel-text">
                       Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
                       negritas ni enlaces.
                     </p>

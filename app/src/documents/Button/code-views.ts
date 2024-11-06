@@ -42,13 +42,32 @@ export const BUTTON_BLOCK = `
   Botón expandible
 </button>
 `;
-export const BUTTON_ICON = `
+export const BUTTON_ICON = `// Icono y texto
+<button type="button" class="btn btn-primary btn-sm">
+  <i class="bx bx-plus-circle o-icon"></i> 
+  Botón
+</button>
+
 <button type="button" class="btn btn-primary">
   <i class="bx bx-plus-circle o-icon"></i> 
   Botón
 </button>
 
+<button type="button" class="btn btn-primary btn-lg">
+  <i class="bx bx-plus-circle o-icon"></i> 
+  Botón
+</button>
+
+// Icono
+<button type="button" class="btn btn-primary btn-sm" aria-label="Botón">
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">add_circle</span>
+</button>
+
 <button type="button" class="btn btn-primary" aria-label="Botón">
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">add_circle</span>
+</button>
+
+<button type="button" class="btn btn-primary btn-lg" aria-label="Botón">
   <span class="material-symbols-rounded o-icon" aria-hidden="true">add_circle</span>
 </button>
 `;

@@ -37,7 +37,7 @@ $switch-focus-shadow: 0 0 0 2px $focus-color;
 
   &.switch-dark {
     input:checked + .slider {
-      background-color: $blue-900;
+      background-color: $sky-900;
     }
   }
 
@@ -108,7 +108,7 @@ $switch-focus-shadow: 0 0 0 2px $focus-color;
   .slider {
     position: relative;
     cursor: pointer;
-    background-color: $slate-400;
+    background-color: $slate-200;
     transition: 0.4s;
     border-radius: 50px;
     width: $switch-width;

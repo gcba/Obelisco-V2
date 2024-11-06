@@ -43,7 +43,7 @@ $badge-bg-theme-color: (
   }
 }
 
-/* === Custom styles === */
+// === Custom styles === 
 .badge {
   @extend .text-sm; //fs 14px, lh 20px, fw 400
   color: $badge-color;

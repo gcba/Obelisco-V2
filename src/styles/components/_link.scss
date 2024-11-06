@@ -58,7 +58,7 @@ a {
 
   &:focus,
   &.focus {
-    color: $body-color;
+    color: $primary;
     border-radius: $border-radius-lg;
     box-shadow: $focus-box-shadow-subtle;
     outline: 0.125rem solid transparent;

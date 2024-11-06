@@ -1,11 +1,12 @@
-// Custom variables and mixins 
+// Custom variables and mixins
 $card-spacing-desktop: 1.5rem;
 $card-icon-size: 2rem;
 $card-media-size: 4rem;
 $card-icon-bg: $slate-50;
 $card-info-icon-size: 1rem;
+
 // Estilos de estados de tarjetas
-%card_states_styles {
+@mixin card-states-styles {
   .card-body {
     .card-title {
       .card-title-link {
@@ -45,6 +46,7 @@ $card-info-icon-size: 1rem;
     }
   }
 }
+
 // Custom styles
 .card {
   border: none;
@@ -161,7 +163,7 @@ $card-info-icon-size: 1rem;
   }
 
   // Estilos para estados hover, focus
-  @extend %card_states_styles;
+  @include card-states-styles;
 
   //Estilos para tarjeta horizontal temática
   &.thematic {
@@ -197,6 +199,7 @@ $card-info-icon-size: 1rem;
     }
   }
 }
+
 //Estilos para lista de tarjetas verticales desplazable
 .responsive-scroll {
   &.vertical-cards-container {

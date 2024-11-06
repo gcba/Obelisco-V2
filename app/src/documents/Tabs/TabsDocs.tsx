@@ -1066,7 +1066,7 @@ const TabsDocs: React.FC = () => {
     },
     {
       id: 'section-9',
-      subtitle: "Grande",
+      subtitle: 'Grande',
       content: (
         <CodeBox codeHTML={TABS_LARGE}>
           <div className="container">
@@ -1193,7 +1193,7 @@ const TabsDocs: React.FC = () => {
     },
     {
       id: 'section-10',
-      subtitle: "Mediano",
+      subtitle: 'Mediano',
       content: (
         <CodeBox codeHTML={TABS_MEDIUM}>
           <div className="container">
@@ -1320,7 +1320,7 @@ const TabsDocs: React.FC = () => {
     },
     {
       id: 'section-11',
-      subtitle: "Chico",
+      subtitle: 'Chico',
       content: (
         <CodeBox codeHTML={TABS_SMALL}>
           <div className="container">

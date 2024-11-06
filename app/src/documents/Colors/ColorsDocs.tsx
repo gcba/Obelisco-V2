@@ -1,8 +1,19 @@
-
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
-import { blueArray, cyanArray, grayArray, greenArray, orangeArray, purpleArray, redArray, skyArray, slateArray, themeColors, yellowArray } from './constants';
+import {
+  blueArray,
+  cyanArray,
+  grayArray,
+  greenArray,
+  orangeArray,
+  purpleArray,
+  redArray,
+  skyArray,
+  slateArray,
+  themeColors,
+  yellowArray,
+} from './constants';
 
 const ColorsDocs: React.FC = () => {
   const sections = [
@@ -24,8 +35,21 @@ const ColorsDocs: React.FC = () => {
         <div className="container">
           <div className="d-flex mb-3 flex-wrap">
             {yellowArray.map(({ name, hex, accessibility, textWhite }) => (
-              <div className={`color-box-ramp ${textWhite ? "text-white" : ""}`} key={hex}  style={{backgroundColor: hex}}>
-                <span className="badge badge-default" style={{ backgroundColor: 'transparent', outlineColor: `${textWhite ? 'white' : '#101e37'}`, color: textWhite ? 'white' : '#101e37'}}>{accessibility}</span>
+              <div
+                className={`color-box-ramp ${textWhite ? 'text-white' : ''}`}
+                key={hex}
+                style={{ backgroundColor: hex }}
+              >
+                <span
+                  className="badge badge-default"
+                  style={{
+                    backgroundColor: 'transparent',
+                    outlineColor: `${textWhite ? 'white' : '#101e37'}`,
+                    color: textWhite ? 'white' : '#101e37',
+                  }}
+                >
+                  {accessibility}
+                </span>
                 <span className="headline-lg fw-bold">{name}</span>
                 <span className="">{hex}</span>
               </div>
@@ -41,8 +65,21 @@ const ColorsDocs: React.FC = () => {
         <div className="container">
           <div className="d-flex mb-3 flex-wrap">
             {blueArray.map(({ name, hex, accessibility, textWhite }) => (
-              <div className={`color-box-ramp ${textWhite ? "text-white" : ""}`} key={hex}  style={{backgroundColor: hex}}>
-                <span className="badge badge-default" style={{ backgroundColor: 'transparent', outlineColor: `${textWhite ? 'white' : '#101e37'}`, color: textWhite ? 'white' : '#101e37'}}>{accessibility}</span>
+              <div
+                className={`color-box-ramp ${textWhite ? 'text-white' : ''}`}
+                key={hex}
+                style={{ backgroundColor: hex }}
+              >
+                <span
+                  className="badge badge-default"
+                  style={{
+                    backgroundColor: 'transparent',
+                    outlineColor: `${textWhite ? 'white' : '#101e37'}`,
+                    color: textWhite ? 'white' : '#101e37',
+                  }}
+                >
+                  {accessibility}
+                </span>
                 <span className="headline-lg fw-bold">{name}</span>
                 <span className="">{hex}</span>
               </div>
@@ -58,8 +95,21 @@ const ColorsDocs: React.FC = () => {
         <div className="container">
           <div className="d-flex mb-3 flex-wrap">
             {cyanArray.map(({ name, hex, accessibility, textWhite }) => (
-              <div className={`color-box-ramp ${textWhite ? "text-white" : ""}`} key={hex}  style={{backgroundColor: hex}}>
-                <span className="badge badge-default" style={{ backgroundColor: 'transparent', outlineColor: `${textWhite ? 'white' : '#101e37'}`, color: textWhite ? 'white' : '#101e37'}}>{accessibility}</span>
+              <div
+                className={`color-box-ramp ${textWhite ? 'text-white' : ''}`}
+                key={hex}
+                style={{ backgroundColor: hex }}
+              >
+                <span
+                  className="badge badge-default"
+                  style={{
+                    backgroundColor: 'transparent',
+                    outlineColor: `${textWhite ? 'white' : '#101e37'}`,
+                    color: textWhite ? 'white' : '#101e37',
+                  }}
+                >
+                  {accessibility}
+                </span>
                 <span className="headline-lg fw-bold">{name}</span>
                 <span className="">{hex}</span>
               </div>
@@ -75,8 +125,21 @@ const ColorsDocs: React.FC = () => {
         <div className="container">
           <div className="d-flex mb-3 flex-wrap">
             {skyArray.map(({ name, hex, accessibility, textWhite }) => (
-              <div className={`color-box-ramp ${textWhite ? "text-white" : ""}`} key={hex}  style={{backgroundColor: hex}}>
-                <span className="badge badge-default" style={{ backgroundColor: 'transparent', outlineColor: `${textWhite ? 'white' : '#101e37'}`, color: textWhite ? 'white' : '#101e37'}}>{accessibility}</span>
+              <div
+                className={`color-box-ramp ${textWhite ? 'text-white' : ''}`}
+                key={hex}
+                style={{ backgroundColor: hex }}
+              >
+                <span
+                  className="badge badge-default"
+                  style={{
+                    backgroundColor: 'transparent',
+                    outlineColor: `${textWhite ? 'white' : '#101e37'}`,
+                    color: textWhite ? 'white' : '#101e37',
+                  }}
+                >
+                  {accessibility}
+                </span>
                 <span className="headline-lg fw-bold">{name}</span>
                 <span className="">{hex}</span>
               </div>
@@ -92,8 +155,21 @@ const ColorsDocs: React.FC = () => {
         <div className="container">
           <div className="d-flex mb-3 flex-wrap">
             {greenArray.map(({ name, hex, accessibility, textWhite }) => (
-              <div className={`color-box-ramp ${textWhite ? "text-white" : ""}`} key={hex}  style={{backgroundColor: hex}}>
-                <span className="badge badge-default" style={{ backgroundColor: 'transparent', outlineColor: `${textWhite ? 'white' : '#101e37'}`, color: textWhite ? 'white' : '#101e37'}}>{accessibility}</span>
+              <div
+                className={`color-box-ramp ${textWhite ? 'text-white' : ''}`}
+                key={hex}
+                style={{ backgroundColor: hex }}
+              >
+                <span
+                  className="badge badge-default"
+                  style={{
+                    backgroundColor: 'transparent',
+                    outlineColor: `${textWhite ? 'white' : '#101e37'}`,
+                    color: textWhite ? 'white' : '#101e37',
+                  }}
+                >
+                  {accessibility}
+                </span>
                 <span className="headline-lg fw-bold">{name}</span>
                 <span className="">{hex}</span>
               </div>
@@ -109,8 +185,21 @@ const ColorsDocs: React.FC = () => {
         <div className="container">
           <div className="d-flex mb-3 flex-wrap">
             {orangeArray.map(({ name, hex, accessibility, textWhite }) => (
-              <div className={`color-box-ramp ${textWhite ? "text-white" : ""}`} key={hex}  style={{backgroundColor: hex}}>
-                <span className="badge badge-default" style={{ backgroundColor: 'transparent', outlineColor: `${textWhite ? 'white' : '#101e37'}`, color: textWhite ? 'white' : '#101e37'}}>{accessibility}</span>
+              <div
+                className={`color-box-ramp ${textWhite ? 'text-white' : ''}`}
+                key={hex}
+                style={{ backgroundColor: hex }}
+              >
+                <span
+                  className="badge badge-default"
+                  style={{
+                    backgroundColor: 'transparent',
+                    outlineColor: `${textWhite ? 'white' : '#101e37'}`,
+                    color: textWhite ? 'white' : '#101e37',
+                  }}
+                >
+                  {accessibility}
+                </span>
                 <span className="headline-lg fw-bold">{name}</span>
                 <span className="">{hex}</span>
               </div>
@@ -126,8 +215,21 @@ const ColorsDocs: React.FC = () => {
         <div className="container">
           <div className="d-flex mb-3 flex-wrap">
             {redArray.map(({ name, hex, accessibility, textWhite }) => (
-              <div className={`color-box-ramp ${textWhite ? "text-white" : ""}`} key={hex}  style={{backgroundColor: hex}}>
-                <span className="badge badge-default" style={{ backgroundColor: 'transparent', outlineColor: `${textWhite ? 'white' : '#101e37'}`, color: textWhite ? 'white' : '#101e37'}}>{accessibility}</span>
+              <div
+                className={`color-box-ramp ${textWhite ? 'text-white' : ''}`}
+                key={hex}
+                style={{ backgroundColor: hex }}
+              >
+                <span
+                  className="badge badge-default"
+                  style={{
+                    backgroundColor: 'transparent',
+                    outlineColor: `${textWhite ? 'white' : '#101e37'}`,
+                    color: textWhite ? 'white' : '#101e37',
+                  }}
+                >
+                  {accessibility}
+                </span>
                 <span className="headline-lg fw-bold">{name}</span>
                 <span className="">{hex}</span>
               </div>
@@ -143,8 +245,21 @@ const ColorsDocs: React.FC = () => {
         <div className="container">
           <div className="d-flex mb-3 flex-wrap">
             {purpleArray.map(({ name, hex, accessibility, textWhite }) => (
-              <div className={`color-box-ramp ${textWhite ? "text-white" : ""}`} key={hex}  style={{backgroundColor: hex}}>
-                <span className="badge badge-default" style={{ backgroundColor: 'transparent', outlineColor: `${textWhite ? 'white' : '#101e37'}`, color: textWhite ? 'white' : '#101e37'}}>{accessibility}</span>
+              <div
+                className={`color-box-ramp ${textWhite ? 'text-white' : ''}`}
+                key={hex}
+                style={{ backgroundColor: hex }}
+              >
+                <span
+                  className="badge badge-default"
+                  style={{
+                    backgroundColor: 'transparent',
+                    outlineColor: `${textWhite ? 'white' : '#101e37'}`,
+                    color: textWhite ? 'white' : '#101e37',
+                  }}
+                >
+                  {accessibility}
+                </span>
                 <span className="headline-lg fw-bold">{name}</span>
                 <span className="">{hex}</span>
               </div>
@@ -160,8 +275,21 @@ const ColorsDocs: React.FC = () => {
         <div className="container">
           <div className="d-flex mb-3 flex-wrap">
             {slateArray.map(({ name, hex, accessibility, textWhite }) => (
-              <div className={`color-box-ramp ${textWhite ? "text-white" : ""}`} key={hex}  style={{backgroundColor: hex}}>
-                <span className="badge badge-default" style={{ backgroundColor: 'transparent', outlineColor: `${textWhite ? 'white' : '#101e37'}`, color: textWhite ? 'white' : '#101e37'}}>{accessibility}</span>
+              <div
+                className={`color-box-ramp ${textWhite ? 'text-white' : ''}`}
+                key={hex}
+                style={{ backgroundColor: hex }}
+              >
+                <span
+                  className="badge badge-default"
+                  style={{
+                    backgroundColor: 'transparent',
+                    outlineColor: `${textWhite ? 'white' : '#101e37'}`,
+                    color: textWhite ? 'white' : '#101e37',
+                  }}
+                >
+                  {accessibility}
+                </span>
                 <span className="headline-lg fw-bold">{name}</span>
                 <span className="">{hex}</span>
               </div>
@@ -177,8 +305,21 @@ const ColorsDocs: React.FC = () => {
         <div className="container">
           <div className="d-flex mb-3 flex-wrap">
             {grayArray.map(({ name, hex, accessibility, textWhite }) => (
-              <div className={`color-box-ramp ${textWhite ? "text-white" : ""}`} key={hex}  style={{backgroundColor: hex}}>
-                <span className="badge badge-default" style={{ backgroundColor: 'transparent', outlineColor: `${textWhite ? 'white' : '#101e37'}`, color: textWhite ? 'white' : '#101e37'}}>{accessibility}</span>
+              <div
+                className={`color-box-ramp ${textWhite ? 'text-white' : ''}`}
+                key={hex}
+                style={{ backgroundColor: hex }}
+              >
+                <span
+                  className="badge badge-default"
+                  style={{
+                    backgroundColor: 'transparent',
+                    outlineColor: `${textWhite ? 'white' : '#101e37'}`,
+                    color: textWhite ? 'white' : '#101e37',
+                  }}
+                >
+                  {accessibility}
+                </span>
                 <span className="headline-lg fw-bold">{name}</span>
                 <span className="">{hex}</span>
               </div>
@@ -208,22 +349,22 @@ const ColorsDocs: React.FC = () => {
       title: 'Fondos',
       content: (
         <>
-        <div className="container">
-          <div className="d-flex gap-4 justify-content-center mb-3 flex-wrap text-white mx-auto">
-            <div className="color-box bg-white text-dark">
-              <span className="headline-md fw-bold">bg-white</span>
-              <span className="text-xs">#ffffff</span>
-            </div>
-            <div className="color-box bg-light text-dark">
-              <span className="headline-md fw-bold">bg-light</span>
-              <span className="text-xs">#f3f6f9</span>
-            </div>
-            <div className="color-box bg-dark text-white">
-              <span className="headline-md fw-bold">bg-dark</span>
-              <span className="text-xs">#002733</span>
+          <div className="container">
+            <div className="d-flex gap-4 justify-content-center mb-3 flex-wrap text-white mx-auto">
+              <div className="color-box bg-white text-dark">
+                <span className="headline-md fw-bold">bg-white</span>
+                <span className="text-xs">#ffffff</span>
+              </div>
+              <div className="color-box bg-light text-dark">
+                <span className="headline-md fw-bold">bg-light</span>
+                <span className="text-xs">#f3f6f9</span>
+              </div>
+              <div className="color-box bg-dark text-white">
+                <span className="headline-md fw-bold">bg-dark</span>
+                <span className="text-xs">#002733</span>
+              </div>
             </div>
           </div>
-        </div>
         </>
       ),
     },

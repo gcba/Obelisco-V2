@@ -46,7 +46,7 @@ const CardDocs: React.FC = () => {
     },
     {
       id: 'section-2',
-      subtitle: "Con icono",
+      subtitle: 'Con icono',
       content: (
         <CodeBox codeHTML={HORIZONTAL_ICON}>
           <div className="container">
@@ -77,7 +77,7 @@ const CardDocs: React.FC = () => {
     },
     {
       id: 'section-3',
-      subtitle: "Con imagen",
+      subtitle: 'Con imagen',
       content: (
         <CodeBox codeHTML={HORIZONTAL_IMG}>
           <div className="container">
@@ -120,7 +120,7 @@ const CardDocs: React.FC = () => {
     },
     {
       id: 'section-4',
-      subtitle: "Solo texto",
+      subtitle: 'Solo texto',
       content: (
         <CodeBox codeHTML={HORIZONTAL_TEXT}>
           <div className="container">
@@ -149,7 +149,7 @@ const CardDocs: React.FC = () => {
     },
     {
       id: 'section-5',
-      subtitle: "Temática",
+      subtitle: 'Temática',
       content: (
         <CodeBox codeHTML={HORIZONTAL_THEME}>
           <div className="container">
@@ -180,7 +180,7 @@ const CardDocs: React.FC = () => {
     },
     {
       id: 'section-7',
-      subtitle: "Con icono",
+      subtitle: 'Con icono',
       content: (
         <CodeBox codeHTML={VERTICAL_ICON}>
           <div className="container">
@@ -211,7 +211,7 @@ const CardDocs: React.FC = () => {
     },
     {
       id: 'section-8',
-      subtitle: "Con imagen",
+      subtitle: 'Con imagen',
       content: (
         <CodeBox codeHTML={VERTICAL_IMG}>
           <div className="container">
@@ -238,7 +238,7 @@ const CardDocs: React.FC = () => {
     },
     {
       id: 'section-9',
-      subtitle: "Noticia",
+      subtitle: 'Noticia',
       content: (
         <>
           <CodeBox codeHTML={VERTICAL_NOTICE}>
@@ -315,7 +315,7 @@ const CardDocs: React.FC = () => {
     },
     {
       id: 'section-10',
-      subtitle: "Agenda",
+      subtitle: 'Agenda',
       content: (
         <CodeBox codeHTML={VERTICAL_AGENDA}>
           <div className="container">

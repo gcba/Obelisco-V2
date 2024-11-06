@@ -117,7 +117,7 @@ const NavVerticalDocs: React.FC = () => {
       content: (
         <CodeBox codeHTML={NAV_VERTICAL_TWO_LEVEL}>
           <div className="col-12 col-lg-8 mx-auto pb-2">
-            <nav  aria-label="Navegación vertical">
+            <nav aria-label="Navegación vertical">
               <ul className="nav flex-column nav-pills nav-lg">
                 <li className="nav-item">
                   <LinkClient className="nav-link">
@@ -173,7 +173,7 @@ const NavVerticalDocs: React.FC = () => {
       content: (
         <CodeBox codeHTML={NAV_VERTICAL_TWO_LEVEL_ICON}>
           <div className="col-12 col-lg-8 mx-auto pb-2">
-            <nav  aria-label="Navegación vertical">
+            <nav aria-label="Navegación vertical">
               <ul className="nav flex-column nav-pills nav-lg">
                 <li className="nav-item">
                   <LinkClient className="nav-link">
@@ -253,7 +253,7 @@ const NavVerticalDocs: React.FC = () => {
       content: (
         <CodeBox codeHTML={NAV_VERTICAL_THREE_LEVEL}>
           <div className="col-12 col-lg-8 mx-auto pb-2">
-            <nav  aria-label="Navegación vertical">
+            <nav aria-label="Navegación vertical">
               <ul className="nav flex-column nav-pills nav-lg">
                 <li className="nav-item">
                   <LinkClient className="nav-link">
@@ -314,14 +314,14 @@ const NavVerticalDocs: React.FC = () => {
           </div>
         </CodeBox>
       ),
-    }, 
+    },
     {
       id: 'section-8',
       subtitle: 'Con icono',
       content: (
         <CodeBox codeHTML={NAV_VERTICAL_THREE_LEVEL_ICON}>
           <div className="col-12 col-lg-8 mx-auto pb-2">
-            <nav  aria-label="Navegación vertical">
+            <nav aria-label="Navegación vertical">
               <ul className="nav flex-column nav-pills nav-lg">
                 <li className="nav-item">
                   <LinkClient className="nav-link">

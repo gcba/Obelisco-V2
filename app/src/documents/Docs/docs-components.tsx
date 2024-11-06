@@ -595,7 +595,8 @@ const UpdateComponents: React.FC = () => {
           </li>
           <li>
             En el caso de tarjeta Temática, las clases <code>.card-horizonal</code>, <code>.card-simple</code> y{' '}
-            <code>.card-lg</code> se reemplazan por la clase <code>.thematic</code>. Se agrega al enlace de la tarjeta la clase <code>.card-title-link</code>.
+            <code>.card-lg</code> se reemplazan por la clase <code>.thematic</code>. Se agrega al enlace de la tarjeta
+            la clase <code>.card-title-link</code>.
           </li>
           <li>
             Las clases <code>.card-img-left</code> y <code>.card-img-top</code> se reemplazan por la clase{' '}

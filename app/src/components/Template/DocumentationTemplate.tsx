@@ -61,7 +61,7 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections 
                   id={section.id || undefined}
                   ref={sectionRefs[index]}
                 >
-                  {section.title && 
+                  {section.title && (
                     <HeadingTemplate className="pt-2">
                       {section.h1 ? (
                         <h1 className="mb-4">{section.title}</h1>
@@ -69,7 +69,7 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections 
                         <h2 className="headline-lg mb-4">{section.title}</h2>
                       )}
                     </HeadingTemplate>
-                  }
+                  )}
                   {section.subtitle && (
                     <HeadingTemplate className="pt-2">
                       <h3 className="headline-md fw-bold mb-4">

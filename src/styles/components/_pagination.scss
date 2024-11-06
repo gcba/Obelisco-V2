@@ -92,6 +92,7 @@ $pagination-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>'
       font-weight: $font-weight-normal;
       word-break: normal;
       padding: 0.5rem 0.25rem;
+      color: $body-color;
 
       .page-previous-icon,
       .page-next-icon {
@@ -235,8 +236,9 @@ $pagination-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>'
   .pagination {
     justify-content: space-between;
     width: 100%;
+
     .page-item {
-      &:not(:first-child):not(:last-child) {
+      &:not(:first-child, :last-child) {
         display: none;
       }
     }

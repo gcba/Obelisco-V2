@@ -1,10 +1,12 @@
 @use 'sass:math';
+
 // Variables
 $nav-icon-font-size: 1.25rem;
 $nav-link-padding-sm: 0.25rem 0.5rem;
 $nav-link-padding: 0.5rem 0.75rem;
 $nav-link-padding-lg: 0.75rem;
 $nav-link-vertical-padding-x: 1.125rem;
+
 // Custom styles
 nav {
   .nav-pills {

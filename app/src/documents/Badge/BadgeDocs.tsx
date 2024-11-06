@@ -82,8 +82,6 @@ const BadgeDocs: React.FC = () => {
                 <LinkClient className="badge hover badge-warning">Etiqueta</LinkClient>
                 <LinkClient className="badge focus badge-warning">Etiqueta</LinkClient>
               </div>
-
-
             </div>
           </div>
         </CodeBox>

@@ -1,10 +1,10 @@
-// === Custom styles === 
+// === Custom styles ===
 
 .list-link {
   display: flex;
   flex-direction: column;
   gap: 1rem !important;
-  
+
   @include media-breakpoint-down(sm) {
     gap: 1.25rem !important;
   }

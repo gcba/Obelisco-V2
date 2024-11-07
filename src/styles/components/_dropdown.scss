@@ -218,7 +218,8 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
         }
       }
 
-      &:focus, &:active {
+      &:focus,
+      &:active {
         box-shadow: $focus-box-shadow;
         outline: $outline-transparent;
         background: $white;
@@ -239,7 +240,8 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
           }
         }
 
-        &:focus, &:active {
+        &:focus,
+        &:active {
           box-shadow: $focus-box-shadow-danger;
           outline: $outline-transparent;
           color: $danger;

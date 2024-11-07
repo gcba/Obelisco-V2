@@ -454,7 +454,8 @@ const UpdateComponents: React.FC = () => {
             La clase <code>.header-logo</code> queda deprecada.
           </li>
           <li>
-            La clase <code>.btn-outline-link</code> del botón &quot;Ingresar&quot; se reemplaza por <code>.btn-outline-tertiary</code>.
+            La clase <code>.btn-outline-link</code> del botón &quot;Ingresar&quot; se reemplaza por{' '}
+            <code>.btn-outline-tertiary</code>.
           </li>
         </ul>
       ),

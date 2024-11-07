@@ -20,7 +20,7 @@
       th {
         background: none;
         border: none;
-        padding: .75rem 1rem;
+        padding: 0.75rem 1rem;
         @extend .headline-sm;
         font-weight: $font-weight-bold;
 
@@ -71,7 +71,6 @@
         }
 
         .th-subtitle {
-          display: inline-block;
           @extend .text-sm;
           font-family: $font-family-sans-serif;
           font-weight: $font-weight-normal;
@@ -90,7 +89,7 @@
   tbody {
     tr {
       td {
-        padding: .75rem 1rem;
+        padding: 0.75rem 1rem;
         border-color: $slate-50;
 
         .actions-table {

@@ -80,7 +80,10 @@ a {
       outline: $outline-transparent;
     }
 
-    &.btn-warning, &.btn-dark, &.btn-outline-warning, &.btn-outline-dark {
+    &.btn-warning,
+    &.btn-dark,
+    &.btn-outline-warning,
+    &.btn-outline-dark {
       &:focus {
         box-shadow: none;
       }

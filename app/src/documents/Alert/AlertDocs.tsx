@@ -1,4 +1,3 @@
-"use client"
 import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
@@ -78,7 +77,7 @@ const AlertDocs: React.FC = () => {
 
             <div className="alert alert-danger alert-dismissible fade show" role="alert">
               <p>Esta es la descripción de una alerta de error.</p>
-              <button type="button" className="btn-close" aria-label="Cerrar" ></button>
+              <button type="button" className="btn-close" aria-label="Cerrar"></button>
             </div>
           </div>
         </CodeBox>

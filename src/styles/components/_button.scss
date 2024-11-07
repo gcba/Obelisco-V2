@@ -260,8 +260,10 @@ $theme-color-btn-bg-hover: (
 
     &:visited {
       color: map-get($theme-colors, $color);
+
       //Estilos para outline-link visited
       @include btn-specific-color($color, 'link');
+
       //Estilos para outline-light visited
       @if $color == 'light' {
         color: $slate-50;

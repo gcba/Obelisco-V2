@@ -49,7 +49,9 @@ const TableDocs: React.FC = () => {
                       </th>
                       <th scope="col" className="tb-text">
                         <span className="th-title">Título de la celda</span>
-                        <span className="th-subtitle">Subtítulo de hasta 2 líneas donde se puede sumar contenido de soporte</span>
+                        <span className="th-subtitle">
+                          Subtítulo de hasta 2 líneas donde se puede sumar contenido de soporte
+                        </span>
                       </th>
                       <th scope="col" className="tb-link">
                         Enlace

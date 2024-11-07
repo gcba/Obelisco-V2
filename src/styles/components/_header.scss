@@ -41,10 +41,12 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
 
       &:focus {
         box-shadow: none;
+
         .btn-dropdown-text {
           text-decoration: none;
         }
       }
+
       &:focus-visible {
         box-shadow: $focus-box-shadow;
       }
@@ -59,7 +61,6 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
       &:hover:not(:focus) {
         outline-offset: -2px;
       }
-
 
       .item-notifications {
         @include item-notification(-0.5rem);
@@ -505,15 +506,18 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
 
                 &:hover {
                   outline-color: $danger;
+
                   .material-icons-round {
                     text-decoration: none;
                   }
                 }
 
-                &:focus, &:active {
+                &:focus,
+                &:active {
                   color: $danger;
                   box-shadow: $focus-box-shadow-danger;
                   background-color: $white;
+
                   &:hover {
                     outline-color: transparent;
                   }

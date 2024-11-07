@@ -1,4 +1,4 @@
-/* === Variable and mixins overides === */
+// === Variable and mixins overides === 
 
 //BOX
 $tooltip-font-size: 1rem;
@@ -35,7 +35,7 @@ $calc-left-and-right-y: calc(50% - 8px);
 $calc-left-x: calc(100% + 16px);
 $calc-right-x: calc(0% - 30px);
 
-/* === Custom variables and mixins === */
+// === Custom variables and mixins === 
 
 @mixin tooltip-y(
   $positionX,
@@ -92,7 +92,7 @@ $calc-right-x: calc(0% - 30px);
   }
 }
 
-/* === Custom styles === */
+// === Custom styles === 
 
 //ICON BOX
 .icon-box {

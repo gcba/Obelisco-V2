@@ -76,7 +76,6 @@ const TypographyDocs: React.FC = () => {
               <p className="fw-semibold">Texto con font-weight semibold (600)</p>
               <p className="fw-bold">Texto con font-weight bold (700)</p>
               <p className="fst-italic">Texto en itálica</p>
-              <p className="underline-1">Texto subrayado con grosor de 1px</p>
               <p className="underline-2">Texto subrayado con grosor de 2px</p>
             </div>
           </CodeBox>

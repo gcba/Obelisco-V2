@@ -53,7 +53,7 @@ const CardDocs: React.FC = () => {
             <div className="card-box-sizing">
               <div className="card card-horizontal">
                 <i className="bx bxs-info-circle card-icon"></i>
-                <div className="card-body">
+                <div className="block-body">
                   <h3 className="card-title">
                     <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
                   </h3>
@@ -63,7 +63,7 @@ const CardDocs: React.FC = () => {
               <br />
               <div className="card card-horizontal unbordered">
                 <i className="bx bxs-info-circle card-icon"></i>
-                <div className="card-body">
+                <div className="block-body">
                   <h3 className="card-title">
                     <LinkClient>Título de la tarjeta</LinkClient>
                   </h3>
@@ -90,7 +90,7 @@ const CardDocs: React.FC = () => {
                   width={64}
                   height={64}
                 ></Image>
-                <div className="card-body">
+                <div className="block-body">
                   <h3 className="card-title">
                     <LinkClient className="card-title-link">Título de la tarjeta con más de una línea</LinkClient>
                   </h3>
@@ -106,7 +106,7 @@ const CardDocs: React.FC = () => {
                   width={64}
                   height={64}
                 ></Image>
-                <div className="card-body">
+                <div className="block-body">
                   <h3 className="card-title">
                     <LinkClient>Título de la tarjeta con más de una línea</LinkClient>
                   </h3>
@@ -126,7 +126,7 @@ const CardDocs: React.FC = () => {
           <div className="container">
             <div className="col-12 col-xl-8">
               <div className="card card-horizontal">
-                <div className="card-body">
+                <div className="block-body">
                   <h3 className="card-title">
                     <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
                   </h3>
@@ -135,7 +135,7 @@ const CardDocs: React.FC = () => {
               </div>
               <br />
               <div className="card card-horizontal unbordered">
-                <div className="card-body">
+                <div className="block-body">
                   <h3 className="card-title">
                     <LinkClient>Título de la tarjeta</LinkClient>
                   </h3>
@@ -162,7 +162,7 @@ const CardDocs: React.FC = () => {
                   width={128}
                   height={128}
                 ></Image>
-                <div className="card-body">
+                <div className="block-body">
                   <h3 className="card-title">
                     <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
                   </h3>
@@ -187,7 +187,7 @@ const CardDocs: React.FC = () => {
             <div className="card-vertical-box-sizing">
               <div className="card">
                 <i className="bx bxs-info-circle card-icon"></i>
-                <div className="card-body">
+                <div className="block-body">
                   <h3 className="card-title">
                     <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
                   </h3>
@@ -197,7 +197,7 @@ const CardDocs: React.FC = () => {
               <br />
               <div className="card unbordered">
                 <i className="bx bxs-info-circle card-icon"></i>
-                <div className="card-body">
+                <div className="block-body">
                   <h3 className="card-title">
                     <LinkClient>Título de la tarjeta</LinkClient>
                   </h3>
@@ -224,7 +224,7 @@ const CardDocs: React.FC = () => {
                   width={348}
                   height={196}
                 ></Image>
-                <div className="card-body">
+                <div className="block-body">
                   <h3 className="card-title">
                     <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
                   </h3>
@@ -252,7 +252,7 @@ const CardDocs: React.FC = () => {
                     width={348}
                     height={196}
                   ></Image>
-                  <div className="card-body">
+                  <div className="block-body">
                     <div className="card-badges">
                       <span className="badge badge-default">etiqueta 1</span>
                       <span className="badge badge-default">etiqueta 2</span>
@@ -286,7 +286,7 @@ const CardDocs: React.FC = () => {
                     width={348}
                     height={196}
                   ></Image>
-                  <div className="card-body">
+                  <div className="block-body">
                     <div className="card-badges">
                       <span className="badge badge-default">etiqueta 1</span>
                       <span className="badge badge-default">etiqueta 2</span>
@@ -328,7 +328,7 @@ const CardDocs: React.FC = () => {
                   width={348}
                   height={196}
                 ></Image>
-                <div className="card-body">
+                <div className="block-body">
                   <p className="card-headline">sobrelinea</p>
                   <h3 className="card-title">
                     <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
@@ -368,7 +368,7 @@ const CardDocs: React.FC = () => {
                 <div className="col">
                   <div className="card">
                     <i className="bx bxs-info-circle card-icon"></i>
-                    <div className="card-body">
+                    <div className="block-body">
                       <h3 className="card-title">
                         <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
                       </h3>
@@ -379,7 +379,7 @@ const CardDocs: React.FC = () => {
                 <div className="col">
                   <div className="card">
                     <i className="bx bxs-info-circle card-icon"></i>
-                    <div className="card-body">
+                    <div className="block-body">
                       <h3 className="card-title">
                         <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
                       </h3>
@@ -390,7 +390,7 @@ const CardDocs: React.FC = () => {
                 <div className="col">
                   <div className="card">
                     <i className="bx bxs-info-circle card-icon"></i>
-                    <div className="card-body">
+                    <div className="block-body">
                       <h3 className="card-title">
                         <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
                       </h3>
@@ -401,7 +401,7 @@ const CardDocs: React.FC = () => {
                 <div className="col">
                   <div className="card">
                     <i className="bx bxs-info-circle card-icon"></i>
-                    <div className="card-body">
+                    <div className="block-body">
                       <h3 className="card-title">
                         <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
                       </h3>
@@ -412,7 +412,7 @@ const CardDocs: React.FC = () => {
                 <div className="col">
                   <div className="card">
                     <i className="bx bxs-info-circle card-icon"></i>
-                    <div className="card-body">
+                    <div className="block-body">
                       <h3 className="card-title">
                         <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
                       </h3>
@@ -437,7 +437,7 @@ const CardDocs: React.FC = () => {
                 <div className="col">
                   <div className="card card-horizontal">
                     <i className="bx bxs-info-circle card-icon"></i>
-                    <div className="card-body">
+                    <div className="block-body">
                       <h3 className="card-title">
                         <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
                       </h3>
@@ -448,7 +448,7 @@ const CardDocs: React.FC = () => {
                 <div className="col">
                   <div className="card card-horizontal">
                     <i className="bx bxs-info-circle card-icon"></i>
-                    <div className="card-body">
+                    <div className="block-body">
                       <h3 className="card-title">
                         <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
                       </h3>
@@ -459,7 +459,7 @@ const CardDocs: React.FC = () => {
                 <div className="col">
                   <div className="card card-horizontal">
                     <i className="bx bxs-info-circle card-icon"></i>
-                    <div className="card-body">
+                    <div className="block-body">
                       <h3 className="card-title">
                         <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
                       </h3>
@@ -470,7 +470,7 @@ const CardDocs: React.FC = () => {
                 <div className="col">
                   <div className="card card-horizontal">
                     <i className="bx bxs-info-circle card-icon"></i>
-                    <div className="card-body">
+                    <div className="block-body">
                       <h3 className="card-title">
                         <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
                       </h3>
@@ -481,7 +481,7 @@ const CardDocs: React.FC = () => {
                 <div className="col">
                   <div className="card card-horizontal">
                     <i className="bx bxs-info-circle card-icon"></i>
-                    <div className="card-body">
+                    <div className="block-body">
                       <h3 className="card-title">
                         <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
                       </h3>
@@ -510,7 +510,7 @@ const CardDocs: React.FC = () => {
                   width={348}
                   height={196}
                 ></Image>
-                <div className="card-body">
+                <div className="block-body">
                   <div className="card-badges">
                     <span className="badge badge-default">etiqueta 1</span>
                     <span className="badge badge-default">etiqueta 2</span>
@@ -536,7 +536,7 @@ const CardDocs: React.FC = () => {
                   width={348}
                   height={196}
                 ></Image>
-                <div className="card-body">
+                <div className="block-body">
                   <div className="card-badges">
                     <span className="badge badge-default">etiqueta 1</span>
                     <span className="badge badge-default">etiqueta 2</span>
@@ -562,7 +562,7 @@ const CardDocs: React.FC = () => {
                   width={348}
                   height={196}
                 ></Image>
-                <div className="card-body">
+                <div className="block-body">
                   <div className="card-badges">
                     <span className="badge badge-default">etiqueta 1</span>
                     <span className="badge badge-default">etiqueta 2</span>

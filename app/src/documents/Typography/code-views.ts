@@ -25,7 +25,6 @@ export const OTHER_STYLES = `
   <p class="fw-semibold">Texto con font-weight semibold (600)</p>
   <p class="fw-bold">Texto con font-weight bold (700)</p>
   <p class="fst-italic">Texto en itálica</p>
-  <p class="underline-1">Texto subrayado con grosor de 1px</p>
   <p class="underline-2">Texto subrayado con grosor de 2px</p> 
 `;
 

@@ -1,11 +1,11 @@
-/* === Custom styles === */
+// === Custom styles === 
 
-.card-block {
+.block {
   outline: $outline-border;
   border-radius: $border-radius-lg;
   border: none;
 
-  .card-body {
+  .block-body {
     padding: 1.5rem;
     @include media-breakpoint-down(md) {
       padding: 1rem;

@@ -7,7 +7,7 @@ $card-info-icon-size: 1rem;
 
 // Estilos de estados de tarjetas
 @mixin card-states-styles {
-  .card-body {
+  .block-body {
     .card-title {
       .card-title-link {
         text-decoration: none;
@@ -53,7 +53,7 @@ $card-info-icon-size: 1rem;
   outline: $outline-border;
   width: 100%;
 
-  .card-body {
+  .block-body {
     padding: $card-spacing-desktop;
   }
 
@@ -145,7 +145,7 @@ $card-info-icon-size: 1rem;
       object-position: center;
       flex-shrink: 0;
 
-      + .card-body {
+      + .block-body {
         padding-right: 2rem;
       }
     }
@@ -154,7 +154,7 @@ $card-info-icon-size: 1rem;
       @extend .card-img;
     }
 
-    .card-body {
+    .block-body {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -176,12 +176,12 @@ $card-info-icon-size: 1rem;
       aspect-ratio: 1/1;
       margin: 0;
 
-      + .card-body {
+      + .block-body {
         padding-left: 0;
       }
     }
 
-    .card-body {
+    .block-body {
       padding: 1.5rem 1rem;
       padding-left: 0;
     }

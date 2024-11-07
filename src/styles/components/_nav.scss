@@ -76,7 +76,7 @@ nav {
           }
 
           span:not(.o-icon) {
-            @extend .underline-1;
+            // @extend .underline-1; // Ya no existe
             text-decoration-color: transparent;
           }
 
@@ -84,7 +84,7 @@ nav {
             text-decoration: none;
 
             span:not(.o-icon) {
-              @extend .underline-1;
+              // @extend .underline-1; // Ya no existe
               text-decoration-color: transparent;
             }
           }

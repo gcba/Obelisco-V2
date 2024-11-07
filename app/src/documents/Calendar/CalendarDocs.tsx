@@ -863,7 +863,7 @@ const CalendarDocs: React.FC = () => {
                   </button>
                   <div id="collapseCalendar1" className="accordion-collapse collapse">
                     <div className="accordion-body">
-                      <div className="card-body">
+                      <div className="block-body">
                         <ul className="calendar-footer-list">
                           <li>
                             <strong>1. </strong>

@@ -1,3 +1,4 @@
+"use client"
 import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
@@ -62,22 +63,22 @@ const AlertDocs: React.FC = () => {
           <div className="container d-flex flex-column gap-3">
             <div className="alert alert-info alert-dismissible fade show" role="alert">
               <p>Esta es la descripción de una alerta de información.</p>
-              <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+              <button type="button" className="btn-close" aria-label="Cerrar"></button>
             </div>
 
             <div className="alert alert-success alert-dismissible fade show" role="alert">
               <p>Esta es la descripción de una alerta de éxito.</p>
-              <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+              <button type="button" className="btn-close" aria-label="Cerrar"></button>
             </div>
 
             <div className="alert alert-warning alert-dismissible fade show" role="alert">
               <p>Esta es la descripción de una alerta de advertencia.</p>
-              <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+              <button type="button" className="btn-close" aria-label="Cerrar"></button>
             </div>
 
             <div className="alert alert-danger alert-dismissible fade show" role="alert">
               <p>Esta es la descripción de una alerta de error.</p>
-              <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+              <button type="button" className="btn-close" aria-label="Cerrar" ></button>
             </div>
           </div>
         </CodeBox>

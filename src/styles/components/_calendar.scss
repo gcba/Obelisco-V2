@@ -40,13 +40,13 @@ $calendar-td-span-size: 2.25rem;
       font-weight: 600;
       font-family: $font-family-headings;
       margin-bottom: 0;
-      color: $blue-800;
+      color: $blue-900;
     }
   }
 
   .calendar-body {
     padding: 1rem 0 0;
-    color: $slate-700;
+    color: $slate-950;
     margin-bottom: 0;
 
     table {
@@ -73,7 +73,7 @@ $calendar-td-span-size: 2.25rem;
           font-family: Nunito, sans-serif;
           height: 48px;
           background-color: $cyan-50;
-          color: $slate-900;
+          color: $slate-950;
         }
       }
 

@@ -28,7 +28,7 @@ const logo_mobile = '/images/logo_ba_mobile.svg';
 const HeaderDocs: React.FC = () => {
   const sections = [
     {
-      title: 'Header (encabezado)',
+      title: 'Encabezado (header)',
       h1: true,
       content: (
         <>
@@ -49,7 +49,11 @@ const HeaderDocs: React.FC = () => {
     },
     {
       id: 'section-1',
-      title: 'Deslogueado en una línea',
+      title: 'Deslogueado',
+    },
+    {
+      id: 'section-2',
+      subtitle: 'En una línea',
       content: (
         <>
           <CodeBox codeHTML={HEADER_LOGIN_ONE_LINE_SEARCH}>
@@ -73,7 +77,7 @@ const HeaderDocs: React.FC = () => {
                       />
                     </LinkClient>
                     <div className="navbar-login-mobile">
-                      <LinkClient className="btn btn-lg btn-icon btn-outline-primary">
+                      <LinkClient className="btn btn-lg btn-icon btn-outline-tertiary">
                         <span className="material-symbols-rounded" aria-hidden="true">
                           person
                         </span>
@@ -127,7 +131,7 @@ const HeaderDocs: React.FC = () => {
                                     <span className="item-text">Navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item item-link">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Ver más</span>
                                     <span className="material-symbols-rounded" aria-hidden="true">
                                       arrow_forward
                                     </span>
@@ -171,7 +175,7 @@ const HeaderDocs: React.FC = () => {
                                     <span className="item-text">Navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item item-link">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Ver más</span>
                                     <span className="material-symbols-rounded" aria-hidden="true">
                                       arrow_forward
                                     </span>
@@ -199,7 +203,7 @@ const HeaderDocs: React.FC = () => {
                           </form>
                         </div>
                         <div className="navbar-login">
-                          <LinkClient className="btn btn-lg btn-outline-primary">
+                          <LinkClient className="btn btn-lg btn-outline-tertiary">
                             <span className="material-symbols-rounded" aria-hidden="true">
                               person
                             </span>
@@ -237,7 +241,7 @@ const HeaderDocs: React.FC = () => {
                       />
                     </LinkClient>
                     <div className="navbar-login-mobile">
-                      <LinkClient className="btn btn-lg btn-icon btn-outline-primary">
+                      <LinkClient className="btn btn-lg btn-icon btn-outline-tertiary">
                         <span className="material-symbols-rounded" aria-hidden="true">
                           person
                         </span>
@@ -291,7 +295,7 @@ const HeaderDocs: React.FC = () => {
                                     <span className="item-text">Navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item item-link">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Ver más</span>
                                     <span className="material-symbols-rounded" aria-hidden="true">
                                       arrow_forward
                                     </span>
@@ -335,7 +339,7 @@ const HeaderDocs: React.FC = () => {
                                     <span className="item-text">Navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item item-link">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Ver más</span>
                                     <span className="material-symbols-rounded" aria-hidden="true">
                                       arrow_forward
                                     </span>
@@ -346,7 +350,7 @@ const HeaderDocs: React.FC = () => {
                           </nav>
                         </div>
                         <div className="navbar-login">
-                          <LinkClient className="btn btn-lg btn-outline-primary">
+                          <LinkClient className="btn btn-lg btn-outline-tertiary">
                             <span className="material-symbols-rounded" aria-hidden="true">
                               person
                             </span>
@@ -365,8 +369,8 @@ const HeaderDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-2',
-      title: 'Deslogueado en dos líneas',
+      id: 'section-3',
+      subtitle: 'En dos líneas',
       content: (
         <>
           <CodeBox codeHTML={HEADER_LOGIN_TWO_LINES_SEARCH}>
@@ -390,7 +394,7 @@ const HeaderDocs: React.FC = () => {
                       />
                     </LinkClient>
                     <div className="navbar-login-mobile">
-                      <LinkClient className="btn btn-lg btn-icon btn-outline-primary">
+                      <LinkClient className="btn btn-lg btn-icon btn-outline-tertiary">
                         <span className="material-symbols-rounded" aria-hidden="true">
                           person
                         </span>
@@ -426,7 +430,7 @@ const HeaderDocs: React.FC = () => {
                           </form>
                         </div>
                         <div className="navbar-login">
-                          <LinkClient className="btn btn-lg btn-outline-primary">
+                          <LinkClient className="btn btn-lg btn-outline-tertiary">
                             <span className="material-symbols-rounded" aria-hidden="true">
                               person
                             </span>
@@ -470,7 +474,7 @@ const HeaderDocs: React.FC = () => {
                                   <span className="item-text">Navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item item-link">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Ver más</span>
                                   <span className="material-symbols-rounded" aria-hidden="true">
                                     arrow_forward
                                   </span>
@@ -514,7 +518,7 @@ const HeaderDocs: React.FC = () => {
                                   <span className="item-text">Navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item item-link">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Ver más</span>
                                   <span className="material-symbols-rounded" aria-hidden="true">
                                     arrow_forward
                                   </span>
@@ -574,7 +578,7 @@ const HeaderDocs: React.FC = () => {
                       />
                     </LinkClient>
                     <div className="navbar-login-mobile">
-                      <LinkClient className="btn btn-lg btn-icon btn-outline-primary">
+                      <LinkClient className="btn btn-lg btn-icon btn-outline-tertiary">
                         <span className="material-symbols-rounded" aria-hidden="true">
                           person
                         </span>
@@ -593,7 +597,7 @@ const HeaderDocs: React.FC = () => {
                     <div className="collapse navbar-collapse" id="navbarContent6">
                       <div className="navbar-content">
                         <div className="navbar-login">
-                          <LinkClient className="btn btn-lg btn-outline-primary">
+                          <LinkClient className="btn btn-lg btn-outline-tertiary">
                             <span className="material-symbols-rounded" aria-hidden="true">
                               person
                             </span>
@@ -637,7 +641,7 @@ const HeaderDocs: React.FC = () => {
                                   <span className="item-text">Navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item item-link">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Ver más</span>
                                   <span className="material-symbols-rounded" aria-hidden="true">
                                     arrow_forward
                                   </span>
@@ -681,7 +685,7 @@ const HeaderDocs: React.FC = () => {
                                   <span className="item-text">Navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item item-link">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Ver más</span>
                                   <span className="material-symbols-rounded" aria-hidden="true">
                                     arrow_forward
                                   </span>
@@ -722,8 +726,12 @@ const HeaderDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-3',
-      title: 'Logueado en una línea',
+      id: 'section-4',
+      title: 'Logueado',
+    },
+    {
+      id: 'section-5',
+      subtitle: 'En una línea',
       content: (
         <>
           <CodeBox codeHTML={HEADER_ONE_LINE_SEARCH}>
@@ -793,7 +801,7 @@ const HeaderDocs: React.FC = () => {
                                     <span className="item-text">Navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item item-link">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Ver más</span>
                                     <span className="material-symbols-rounded" aria-hidden="true">
                                       arrow_forward
                                     </span>
@@ -837,7 +845,7 @@ const HeaderDocs: React.FC = () => {
                                     <span className="item-text">Navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item item-link">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Ver más</span>
                                     <span className="material-symbols-rounded" aria-hidden="true">
                                       arrow_forward
                                     </span>
@@ -1015,7 +1023,7 @@ const HeaderDocs: React.FC = () => {
                                     <span className="item-text">Navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item item-link">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Ver más</span>
                                     <span className="material-symbols-rounded" aria-hidden="true">
                                       arrow_forward
                                     </span>
@@ -1059,7 +1067,7 @@ const HeaderDocs: React.FC = () => {
                                     <span className="item-text">Navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item item-link">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Ver más</span>
                                     <span className="material-symbols-rounded" aria-hidden="true">
                                       arrow_forward
                                     </span>
@@ -1155,8 +1163,8 @@ const HeaderDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-4',
-      title: 'Logueado en dos líneas',
+      id: 'section-6',
+      subtitle: 'En dos líneas',
       content: (
         <>
           <CodeBox codeHTML={HEADER_TWO_LINES_SEARCH}>
@@ -1280,7 +1288,7 @@ const HeaderDocs: React.FC = () => {
                                   <span className="item-text">Navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item item-link">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Ver más</span>
                                   <span className="material-symbols-rounded" aria-hidden="true">
                                     arrow_forward
                                   </span>
@@ -1324,7 +1332,7 @@ const HeaderDocs: React.FC = () => {
                                   <span className="item-text">Navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item item-link">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Ver más</span>
                                   <span className="material-symbols-rounded" aria-hidden="true">
                                     arrow_forward
                                   </span>
@@ -1505,7 +1513,7 @@ const HeaderDocs: React.FC = () => {
                                   <span className="item-text">Navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item item-link">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Ver más</span>
                                   <span className="material-symbols-rounded" aria-hidden="true">
                                     arrow_forward
                                   </span>
@@ -1549,7 +1557,7 @@ const HeaderDocs: React.FC = () => {
                                   <span className="item-text">Navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item item-link">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Ver más</span>
                                   <span className="material-symbols-rounded" aria-hidden="true">
                                     arrow_forward
                                   </span>
@@ -1628,7 +1636,7 @@ const HeaderDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-5',
+      id: 'section-7',
       title: 'Sin logueo',
       content: (
         <>
@@ -1699,7 +1707,7 @@ const HeaderDocs: React.FC = () => {
                                     <span className="item-text">Navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item item-link">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Ver más</span>
                                     <span className="material-symbols-rounded" aria-hidden="true">
                                       arrow_forward
                                     </span>
@@ -1743,7 +1751,7 @@ const HeaderDocs: React.FC = () => {
                                     <span className="item-text">Navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item item-link">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Ver más</span>
                                     <span className="material-symbols-rounded" aria-hidden="true">
                                       arrow_forward
                                     </span>
@@ -1847,7 +1855,7 @@ const HeaderDocs: React.FC = () => {
                                     <span className="item-text">Navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item item-link">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Ver más</span>
                                     <span className="material-symbols-rounded" aria-hidden="true">
                                       arrow_forward
                                     </span>
@@ -1891,7 +1899,7 @@ const HeaderDocs: React.FC = () => {
                                     <span className="item-text">Navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item item-link">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Ver más</span>
                                     <span className="material-symbols-rounded" aria-hidden="true">
                                       arrow_forward
                                     </span>
@@ -1913,7 +1921,7 @@ const HeaderDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-6',
+      id: 'section-8',
       title: 'Sólo login',
       content: (
         <>
@@ -1938,7 +1946,7 @@ const HeaderDocs: React.FC = () => {
                       />
                     </LinkClient>
                     <div className="navbar-login-mobile">
-                      <LinkClient className="btn btn-lg btn-icon btn-outline-primary">
+                      <LinkClient className="btn btn-lg btn-icon btn-outline-tertiary">
                         <span className="material-symbols-rounded" aria-hidden="true">
                           person
                         </span>
@@ -1974,7 +1982,7 @@ const HeaderDocs: React.FC = () => {
                           </form>
                         </div>
                         <div className="navbar-login">
-                          <LinkClient className="btn btn-lg btn-outline-primary">
+                          <LinkClient className="btn btn-lg btn-outline-tertiary">
                             <span className="material-symbols-rounded" aria-hidden="true">
                               person
                             </span>
@@ -2012,7 +2020,7 @@ const HeaderDocs: React.FC = () => {
                       />
                     </LinkClient>
                     <div className="navbar-login-mobile">
-                      <LinkClient className="btn btn-lg btn-icon btn-outline-primary">
+                      <LinkClient className="btn btn-lg btn-icon btn-outline-tertiary">
                         <span className="material-symbols-rounded" aria-hidden="true">
                           person
                         </span>
@@ -2022,7 +2030,7 @@ const HeaderDocs: React.FC = () => {
                     <div className="collapse navbar-collapse">
                       <div className="navbar-content">
                         <div className="navbar-login">
-                          <LinkClient className="btn btn-lg btn-outline-primary">
+                          <LinkClient className="btn btn-lg btn-outline-tertiary">
                             <span className="material-symbols-rounded" aria-hidden="true">
                               person
                             </span>
@@ -2041,7 +2049,7 @@ const HeaderDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-7',
+      id: 'section-9',
       title: 'Sólo buscador',
       content: (
         <>
@@ -2105,7 +2113,7 @@ const HeaderDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-8',
+      id: 'section-10',
       title: 'Sólo logo',
       content: (
         <>

@@ -1,6 +1,4 @@
-$table-head-bg: $slate-100;
-// === Custom styles === 
-
+// Custom styles
 .table {
   border: 1px solid $border-color;
   border-radius: $border-radius-lg;
@@ -17,14 +15,20 @@ $table-head-bg: $slate-100;
     outline: 0.125rem solid transparent;
 
     tr {
-      background-color: $table-head-bg;
+      background-color: $slate-100;
 
       th {
         background: none;
         border: none;
-        padding: 12px 20px;
+        padding: 0.75rem 1rem;
         @extend .headline-sm;
         font-weight: $font-weight-bold;
+
+        &:first-child.tb-check {
+          min-width: 64px;
+          max-width: 64px;
+          opacity: 0;
+        }
 
         &.tb-text {
           min-width: 252px;
@@ -60,7 +64,10 @@ $table-head-bg: $slate-100;
         }
 
         .th-title {
+          @extend .headline-sm;
+          font-weight: $font-weight-bold;
           display: inline-block;
+          margin: 0;
         }
 
         .th-subtitle {
@@ -73,7 +80,7 @@ $table-head-bg: $slate-100;
           -webkit-box-orient: vertical;
           -webkit-line-clamp: 2;
           line-clamp: 2;
-          margin-top: 0.25rem;
+          margin: 0.25rem 0 0;
         }
       }
     }
@@ -82,7 +89,7 @@ $table-head-bg: $slate-100;
   tbody {
     tr {
       td {
-        padding: 12px 20px;
+        padding: 0.75rem 1rem;
         border-color: $slate-50;
 
         .actions-table {

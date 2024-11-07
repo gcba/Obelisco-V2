@@ -1,6 +1,4 @@
-/* stylelint-disable scss/percent-placeholder-pattern */
-
-/* === Custom variables and mixins === */
+// Custom variables and mixins
 $navbar-container-width: 1366px;
 $navbar-container-padding-x: 60px;
 
@@ -20,32 +18,18 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
 @mixin dropdown-states {
   .btn-dropdown {
     &:focus {
-      color: $hover-color;
-
-      .btn-dropdown-text {
-        text-decoration: underline;
-        text-decoration-thickness: 1px;
-      }
+      color: $body-color;
 
       &:active {
         color: $white;
         background-color: $active-color;
-        box-shadow: none;
-      }
-    }
-
-    &:hover:not(:focus) {
-      outline-color: transparent;
-
-      .btn-dropdown-text {
-        text-decoration: underline;
-        text-decoration-thickness: 1px;
       }
     }
 
     &[aria-expanded='true'],
     &:active {
       color: $white;
+      background-color: $active-color;
 
       .btn-dropdown-text {
         @include media-breakpoint-up(xl) {
@@ -56,9 +40,13 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
       }
 
       &:focus {
+        box-shadow: none;
         .btn-dropdown-text {
           text-decoration: none;
         }
+      }
+      &:focus-visible {
+        box-shadow: $focus-box-shadow;
       }
     }
   }
@@ -69,88 +57,47 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
 
     .dropdown-item {
       &:hover:not(:focus) {
-        outline-color: transparent;
+        outline-offset: -2px;
       }
 
-      &:hover {
-        .item-text {
-          text-decoration-color: $hover-color;
-        }
-      }
-
-      &:focus:not(:active),
-      &:focus:not(.active, :active) {
-        &:not(.item-danger) {
-          color: $hover-color;
-        }
-
-        .item-text {
-          text-decoration: underline;
-          text-decoration-thickness: 1px;
-        }
-      }
 
       .item-notifications {
         @include item-notification(-0.5rem);
       }
 
       &.item-link {
-        color: $blue;
-        gap: 0.5rem;
+        color: $link-color;
+        gap: 0.25rem;
 
         .item-text {
           flex-grow: 0;
+          text-decoration: underline;
+          text-decoration-thickness: 2px;
+          text-underline-offset: 0.1578rem; //2.52px
+          text-decoration-skip-ink: none;
         }
 
-        &:active {
-          color: $white;
+        &:hover {
+          .item-text {
+            color: $link-hover-color;
+            text-decoration-thickness: 3px;
+          }
         }
       }
     }
   }
 }
 
-%section-mobile-titles {
+@mixin section-mobile-titles {
   @extend .headline-lg;
   font-weight: $font-weight-semibold;
   margin-bottom: 0.5rem;
   padding-left: 1rem;
 }
 
-@mixin nav-link-states {
-  &:focus:not(:active),
-  &:focus:not(.active) {
-    color: $active-color;
-
-    span:not(.material-icons-round) {
-      text-decoration: underline;
-      text-decoration-thickness: 1px;
-    }
-  }
-
-  &:hover:not(:focus) {
-    outline-color: transparent;
-    text-decoration: none;
-
-    span:not(.material-icons-round) {
-      text-decoration: underline;
-      text-decoration-thickness: 1px;
-    }
-  }
-
-  &.active:focus,
-  &:active:focus {
-    color: $white;
-
-    span:not(.material-icons-round) {
-      text-decoration: none;
-    }
-  }
-}
-
 @mixin nav-sections-styles {
   .navbar-sections-title {
-    @extend %section-mobile-titles;
+    @include section-mobile-titles;
 
     @include media-breakpoint-up(xl) {
       display: none;
@@ -178,7 +125,6 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
       .bx {
         font-size: 1.5rem;
       }
-      @include nav-link-states;
     }
 
     @include media-breakpoint-up(xl) {
@@ -240,8 +186,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
   }
 }
 
-/* === Custom styles === */
-
+// Custom styles
 //Notificaciones - HEADER
 .notification {
   position: relative;
@@ -280,10 +225,9 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
       padding: 0;
 
       .header-container {
-        padding: 0.75rem 1rem;
+        padding: 0.875rem 1rem;
         z-index: 1050;
         background-color: $white;
-        border-bottom: 0.25rem solid $white;
       }
 
       .header-backdrop {
@@ -419,7 +363,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
           z-index: 1050;
           background-color: $white;
           width: 100%;
-          border-bottom: 0.25rem solid $blue;
+          border-bottom: 0.25rem solid $yellow-500;
           border-top: 0.25rem solid $white;
         }
       }
@@ -436,7 +380,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
         justify-content: flex-end;
         align-items: flex-start;
         flex-wrap: nowrap;
-        gap: 0 1.5rem;
+        gap: 0 1rem;
         width: 100%;
 
         @include media-breakpoint-down(xl) {
@@ -453,7 +397,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
             max-width: 100%;
             padding: 0;
             margin-top: 0.25rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
           }
         }
 
@@ -468,14 +412,6 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
             .btn-dropdown {
               &[aria-expanded='true'] {
                 color: $white;
-              }
-
-              &:hover:not(:focus) {
-                box-shadow: 0 0 0 2px $blue;
-
-                .btn-dropdown-text {
-                  text-decoration: none;
-                }
               }
             }
           }
@@ -521,7 +457,7 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
         }
 
         .navbar-user-mobile-title {
-          @extend %section-mobile-titles;
+          @include section-mobile-titles;
         }
 
         .nav-user {
@@ -558,24 +494,29 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
                 @include item-notification(0.25rem);
               }
 
-              @include nav-link-states;
+              &:active {
+                background-color: $white;
+                box-shadow: $focus-box-shadow;
+                color: $body-color;
+              }
 
               &.nav-link-danger {
                 color: $danger;
 
                 &:hover {
+                  outline-color: $danger;
                   .material-icons-round {
                     text-decoration: none;
                   }
                 }
 
-                &:focus {
+                &:focus, &:active {
                   color: $danger;
-                }
-
-                &:active {
-                  background-color: $danger;
-                  color: $white;
+                  box-shadow: $focus-box-shadow-danger;
+                  background-color: $white;
+                  &:hover {
+                    outline-color: transparent;
+                  }
                 }
               }
             }

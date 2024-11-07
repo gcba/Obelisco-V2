@@ -1,25 +1,9 @@
-// === Custom variables and mixins === 
+// Custom variables and mixins
 $calendar-spacing: 0.5rem 0.25rem;
 $calendar-footer-spacing: 1rem 0.5rem 0;
 $calendar-td-span-size: 2.25rem;
 
-// $chromatic-colors: (
-//   bg-sky: $sky,
-//   bg-lavender: $lavender,
-//   bg-coral: $coral,
-//   bg-avocado: $avocado,
-//   bg-citrus: $citrus,
-//   bg-lime: $lime,
-//   bg-pistachio: $pistachio,
-//   bg-berries: $berries,
-//   bg-musket: $musket,
-//   bg-aqua: $aqua,
-//   bg-strawberry: $strawberry,
-//   bg-blackberry: $blackberry,
-//   bg-gray: $gray-100,
-// );
-
-// === Custom styles === 
+// Custom styles
 .calendar {
   width: 100%;
   max-width: 328px;
@@ -114,13 +98,6 @@ $calendar-td-span-size: 2.25rem;
               .active-secondary {
                 background-color: $blue-950;
               }
-
-              // @each $clase, $color in $chromatic-colors {
-              //   .#{$clase} {
-              //     background-color: darken($color, 10%) !important;
-              //     color: darken($slate-900, 10%);
-              //   }
-              // }
             }
 
             &:focus {
@@ -180,16 +157,6 @@ $calendar-td-span-size: 2.25rem;
               margin: 0;
               outline: 0.125rem solid transparent;
               cursor: pointer;
-
-              &.bg-gray {
-                background-color: $gray-100;
-              }
-
-              // @each $clase, $color in $chromatic-colors {
-              //   &.#{$clase} {
-              //     color: $slate-900;
-              //   }
-              // }
             }
 
             &.active-secondary {

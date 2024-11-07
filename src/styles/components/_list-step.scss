@@ -1,4 +1,4 @@
-/* === Custom variables and mixins === */
+// === Custom variables and mixins === 
 
 $list-steps-padding: 0 0 1.5rem 2.5rem;
 $list-steps-font-color: $body-color;
@@ -13,7 +13,7 @@ $list-steps-line-width-lg: 0.25rem;
 
 $list-steps-numbers: 9;
 
-/* === Custom styles === */
+// === Custom styles === 
 
 .list-steps {
   @extend .list-unstyled, .flex-column;

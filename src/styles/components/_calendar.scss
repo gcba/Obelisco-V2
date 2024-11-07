@@ -1,4 +1,4 @@
-/* === Custom variables and mixins === */
+// === Custom variables and mixins === 
 $calendar-spacing: 0.5rem 0.25rem;
 $calendar-footer-spacing: 1rem 0.5rem 0;
 $calendar-td-span-size: 2.25rem;
@@ -19,7 +19,7 @@ $calendar-td-span-size: 2.25rem;
 //   bg-gray: $gray-100,
 // );
 
-/* === Custom styles === */
+// === Custom styles === 
 .calendar {
   width: 100%;
   max-width: 328px;

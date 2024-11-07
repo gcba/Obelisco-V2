@@ -1,4 +1,4 @@
-/* === Titulos | Headings === */
+// === Titulos | Headings === 
 /* font-size Titulos */
 $h1-font-size: 2.5rem;
 $h2-font-size: 2.25rem;
@@ -62,7 +62,7 @@ $heading-sizes-mobile: (
   3: $h3-font-size-mobile,
 );
 
-/* === Titulares === */
+// === Titulares === 
 /* font-size Titulares */
 $lg-headline-fs: 1.25rem;
 $md-headline-fs: 1.125rem;
@@ -94,7 +94,7 @@ $headline-styles: (
   ),
 );
 
-/* === Cuerpo === */
+// === Cuerpo === 
 /* font-size Cuerpo */
 $xl-body-fs: 1.25rem;
 $lg-body-fs: 1.125rem;
@@ -143,7 +143,7 @@ $body-styles: (
   ),
 );
 
-/* === Body - variables de Bootstrap === */
+// === Body - variables de Bootstrap === 
 $font-size-base: $md-body-fs; // Se sobreescribe variable de Bootstrap
 $line-height-base: $md-body-lh; // Se sobreescribe variable de Bootstrap
 

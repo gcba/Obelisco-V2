@@ -1,9 +1,9 @@
-// === Custom variables and mixins
+// Custom variables and mixins
 $btn-padding-sm: 0.25rem 0.5rem;
 $btn-padding-md: 0.5rem 1rem;
 $btn-padding-lg: 0.75rem 1.25rem;
 
-/*  Button Link  */
+// Button Link
 $btn-colors-specific: (
   link: (
     color: $blue-900,
@@ -50,8 +50,8 @@ $theme-color-btn-bg-hover: (
 
 @mixin btn-without-styles {
   color: $body-color;
-  background-color: $white;
-  outline-color: $white;
+  background-color: transparent;
+  outline-color: transparent;
 
   &:hover,
   &.hover,
@@ -63,8 +63,8 @@ $theme-color-btn-bg-hover: (
   &:not(:disabled, .disabled):active,
   &:not(:disabled, .disabled).active {
     color: $body-color;
-    background-color: $white;
-    outline-color: $white;
+    background-color: transparent;
+    outline-color: transparent;
     box-shadow: none;
   }
 }
@@ -116,7 +116,7 @@ $theme-color-btn-bg-hover: (
   }
 }
 
-/* === Custom styles === */
+// Custom styles
 .btn {
   @extend .headline-md; // Nunito, 18px, 24px
   font-weight: $font-weight-bold; // 700
@@ -255,17 +255,19 @@ $theme-color-btn-bg-hover: (
   .btn-outline-#{$color} {
     color: map-get($theme-colors, $color);
 
-    //Estilos para link outline
+    //Estilos para outline-link
     @include btn-outline-specific-types($color, 'link');
 
     &:visited {
       color: map-get($theme-colors, $color);
 
-      //Estilos para link
+      //Estilos para outline-link visited
       @include btn-specific-color($color, 'link');
 
-      //Estilos para light
-      @include color-light($color);
+      //Estilos para outline-light visited
+      @if $color == 'light' {
+        color: $slate-50;
+      }
     }
 
     &:hover,
@@ -298,25 +300,4 @@ a.btn {
   width: 100%;
 }
 
-//Botón con spinner
-/* .btn-icon {
-  //Botón con spinner
-  &:focus,
-  &.focus,
-  &:hover,
-  &.hover,
-  &:active,
-  &.active {
-    &:is(.btn-outline-secondary, .btn-outline-success, .btn-outline-danger) {
-      .spinner-border {
-        border-color: $white;
-        border-right-color: $slate-300;
-      }
-    }
-    .spinner-border:not(.text-dark) {
-      border-color: $white;
-      border-right-color: $slate-300;
-    }
-  }
-} */
 $theme-colors: map-remove($theme-colors, 'link');

@@ -130,20 +130,6 @@ $sky-800: #004357;
 $sky-900: #002733;
 $sky-950: #001419;
 
-// Colores Primitivos
-// $yellow: $yellow-500;
-// $blue: $blue-500;
-// $cyan: $cyan-400;
-// $slate: $slate-50;
-// $sky: $sky-600;
-// $purple: $purple-200;
-// $green: $green-600;
-// $orange: $orange-500;
-// $red: $red-500;
-// $gray: $gray-600;
-// $white: $gray-0;
-// $black: $gray-950;
-
 // Variables del Theme-color
 $primary: $blue-500;
 $secondary: $blue-900;
@@ -181,7 +167,7 @@ $body-secondary-color: $slate-800 !default;
 // Estados
 //Hover
 $hover-color: $blue-700;
-$hover-color-danger: $red-600;
+$hover-color-danger: $red-500;
 $hover-outline: 0.125rem solid $hover-color;
 $hover-outline-danger: 0.125rem solid $hover-color-danger;
 

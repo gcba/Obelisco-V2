@@ -603,7 +603,7 @@ const UpdateComponents: React.FC = () => {
         <ul className="docs-list">
           <li>
             Se modifica la clase <code>d-lg-inline</code> por{' '}
-            <code>d-md-inline, para que realice el cambio de imagen en 768px</code>.
+            <code>d-md-inline</code>, para que realice el cambio de imagen en 768px.
           </li>
         </ul>
       ),

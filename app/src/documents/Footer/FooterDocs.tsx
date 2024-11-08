@@ -102,19 +102,19 @@ const FooterDocs: React.FC = () => {
                     <div className="col-12 col-md-5 col-xl-4 footer-content-img">
                       <img
                         className="d-lg-none"
-                        src="https://gcba.github.io/Obelisco/footer/ciudad-ba-sm.svg"
+                        src="../images/Logo BA Mobile.svg"
                         alt="Logo de Ciudad de Buenos Aires"
                         height="48"
                       />
                       <img
                         className="d-none d-lg-inline"
-                        src="https://gcba.github.io/Obelisco/footer/ciudad-ba.svg"
+                        src="../images/Logo escudo vertical.svg"
                         alt="Logo de Ciudad de Buenos Aires"
                         height="40"
                       />
                       <img
                         className="img-vamos-ba"
-                        src="https://gcba.github.io/Obelisco/footer/vamos-ba.svg"
+                        src="../images/LogoBA2.svg"
                         alt="Logo de Vamos Buenos Aires"
                       />
                     </div>
@@ -168,19 +168,19 @@ const FooterDocs: React.FC = () => {
                     <div className="col-12 col-md-5 col-xl-4 footer-content-img">
                       <img
                         className="d-lg-none"
-                        src="https://gcba.github.io/Obelisco/footer/ciudad-ba-sm.svg"
+                        src="../images/Logo BA Mobile.svg"
                         alt="Logo de Ciudad de Buenos Aires"
                         height="48"
                       />
                       <img
                         className="d-none d-lg-inline"
-                        src="https://gcba.github.io/Obelisco/footer/ciudad-ba.svg"
+                        src="../images/Logo escudo vertical.svg"
                         alt="Logo de Ciudad de Buenos Aires"
                         height="40"
                       />
                       <img
                         className="img-vamos-ba"
-                        src="https://gcba.github.io/Obelisco/footer/vamos-ba.svg"
+                        src="../images/LogoBA2.svg"
                         alt="Logo de Vamos Buenos Aires"
                       />
                     </div>
@@ -317,19 +317,19 @@ const FooterDocs: React.FC = () => {
                     <div className="col-12 col-md-5 col-xl-4 footer-content-img">
                       <img
                         className="d-lg-none"
-                        src="https://gcba.github.io/Obelisco/footer/ciudad-ba-sm.svg"
+                        src="../images/Logo BA Mobile.svg"
                         alt="Logo de Ciudad de Buenos Aires"
                         height="48"
                       />
                       <img
                         className="d-none d-lg-inline"
-                        src="https://gcba.github.io/Obelisco/footer/ciudad-ba.svg"
+                        src="../images/Logo escudo vertical.svg"
                         alt="Logo de Ciudad de Buenos Aires"
                         height="40"
                       />
                       <img
                         className="img-vamos-ba"
-                        src="https://gcba.github.io/Obelisco/footer/vamos-ba.svg"
+                        src="../images/LogoBA2.svg"
                         alt="Logo de Vamos Buenos Aires"
                       />
                     </div>

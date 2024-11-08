@@ -1,4 +1,4 @@
-// === Variable and mixins overides === 
+// Variable and mixins overides
 
 $carousel-control-padding: 0.25rem * 3;
 $carousel-control-icon-size: 0.25rem * 6;
@@ -18,7 +18,7 @@ $carousel-control-next-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.o
 $carousel-close-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" style="fill: rgba(56,72,92,0.9999);transform: ;msFilter:;"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"/></svg>');
 $carousel-margin-bottom: 0.25rem * 4;
 
-// === Custom variables and mixins === 
+// Custom variables and mixins
 
 @mixin make-grid($images) {
   @if $images == 1 {
@@ -148,7 +148,7 @@ $carousel-margin-bottom: 0.25rem * 4;
   }
 }
 
-// === Custom styles === 
+// Custom styles
 
 .carousel-control-prev,
 .carousel-control-next {

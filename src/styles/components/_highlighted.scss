@@ -1,4 +1,4 @@
-// Estilos para Destacado, panel horizontal, panel vertical
+// Custom variables and mixins
 @mixin panel-content($flex-direction, $media-query) {
   display: flex;
   flex-direction: #{$flex-direction};

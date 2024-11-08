@@ -1,6 +1,6 @@
 @use 'sass:math';
 
-// === Variable and mixins overrides === 
+// Variable and mixins overrides
 
 $progression-text-spacing: 0.5rem;
 $progression-subtitle-size: 0.813rem;
@@ -16,7 +16,7 @@ $progression-default-color: $slate-50;
 $progress-height: 0.5rem;
 $progress-bg: $slate-200;
 
-// === Custom styles === 
+// Custom styles
 .progress {
   outline: 0.125rem solid transparent;
   height: $progress-height;

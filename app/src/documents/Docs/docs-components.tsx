@@ -148,20 +148,12 @@ const UpdateComponents: React.FC = () => {
             Se modifica la estructura HTML del colapsable en la variante &apos;Con colapsable&apos; acorde a
             actualización del componente Colapsable.
           </li>
-        </ul>
-      ),
-    },
-    {
-      id: 'section-8',
-      title: 'Calendario',
-      content: (
-        <ul className="docs-list">
           <li>La variante con referencias cromáticas queda deprecada.</li>
         </ul>
       ),
     },
     {
-      id: 'section-9',
+      id: 'section-8',
       title: 'Colapsables',
       content: (
         <ul className="docs-list">
@@ -184,7 +176,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-10',
+      id: 'section-9',
       title: 'Colores',
       content: (
         <div id="colores" className="container">
@@ -233,7 +225,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-11',
+      id: 'section-10',
       title: 'Desplegables de navegación y selección',
       content: (
         <>
@@ -285,7 +277,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-12',
+      id: 'section-11',
       title: 'Destacado',
       content: (
         <ul className="docs-list">
@@ -305,7 +297,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-13',
+      id: 'section-14',
       title: 'Enlace',
       content: (
         <ul className="docs-list">
@@ -316,7 +308,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-14',
+      id: 'section-15',
       title: 'Etiquetas',
       content: (
         <ul className="docs-list">
@@ -330,7 +322,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-15',
+      id: 'section-16',
       title: 'Formulario - Casillas de selección (Radio y Checkbox)',
       content: (
         <ul className="docs-list">
@@ -365,7 +357,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-16',
+      id: 'section-17',
       title: 'Formularios de texto',
       content: (
         <ul className="docs-list">
@@ -394,7 +386,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-17',
+      id: 'section-18',
       title: 'Grilla',
       content: (
         <div id="grilla" className="container">
@@ -448,7 +440,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-18',
+      id: 'section-19',
       title: 'Header (encabezado)',
       content: (
         <ul className="docs-list">
@@ -470,7 +462,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-19',
+      id: 'section-20',
       title: 'Iconos',
       content: (
         <ul className="docs-list">
@@ -483,7 +475,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-20',
+      id: 'section-21',
       title: 'Lista de pasos',
       content: (
         <ul className="docs-list">
@@ -494,7 +486,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-21',
+      id: 'section-22',
       title: 'Mapa',
       content: (
         <ul className="docs-list">
@@ -510,7 +502,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-22',
+      id: 'section-23',
       title: 'Mensaje de estados',
       content: (
         <>
@@ -526,7 +518,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-23',
+      id: 'section-24',
       title: 'Modal',
       content: (
         <ul className="docs-list">
@@ -551,7 +543,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-24',
+      id: 'section-25',
       title: 'Pasos de un formulario',
       content: (
         <ul className="docs-list">
@@ -569,7 +561,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-25',
+      id: 'section-26',
       title: 'Pestaña',
       content: (
         <ul className="docs-list">
@@ -597,19 +589,19 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-26',
+      id: 'section-27',
       title: 'Pie de Página (Footer)',
       content: (
         <ul className="docs-list">
           <li>
-            Se modifica la clase <code>d-lg-inline</code> por{' '}
-            <code>d-md-inline</code>, para que realice el cambio de imagen en 768px.
+            Se modifica la clase <code>d-lg-inline</code> por <code>d-md-inline</code>, para que realice el cambio de
+            imagen en 768px.
           </li>
         </ul>
       ),
     },
     {
-      id: 'section-27',
+      id: 'section-28',
       title: 'Spinner',
       content: (
         <ul className="docs-list">
@@ -621,7 +613,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-28',
+      id: 'section-29',
       title: 'Tarjetas',
       content: (
         <ul className="docs-list">
@@ -652,7 +644,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-29',
+      id: 'section-30',
       title: 'Tipografía',
       content: (
         <ul className="docs-list">
@@ -686,7 +678,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-30',
+      id: 'section-31',
       title: 'Accesibilidad',
       content: (
         <ul className="docs-list">
@@ -697,7 +689,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-31',
+      id: 'section-32',
       title: 'Comenzar a usar componentes',
       content: (
         <>

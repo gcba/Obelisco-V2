@@ -70,10 +70,10 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const isHome = pathname === '/';
 
   return (
-    <div className="container">
-      {isHome ? (
-        children
-      ) : (
+    isHome ? (
+      children
+    ) : (
+      <div className="container-fluid">
         <div className="row v-height-100 pt-5">
           <div className="col-3 d-none d-xl-block ">
             {pathname.includes('/components') && (
@@ -98,14 +98,11 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                     <hr className="my-2" />
                   </div>
                 </div>
-                <NavLayout items={formsPages} />
-                {/* Al crear organismos, eliminar el div con clase d-none que envuelve al titulo y nav */}
-                <div className="d-none">
-                  <div className="nav-left-box-title">
-                    <div className="pe-2 pt-1">
-                      <p className="headline-lg fw-bold mb-1">Organismos</p>
-                      <hr className="my-2" />
-                    </div>
+                <NavLayout items={formsPages} />                
+                <div className="nav-left-box-title">
+                  <div className="pe-2 pt-1">
+                    <p className="headline-lg fw-bold mb-1">Organismos</p>
+                    <hr className="my-2" />
                   </div>
                 </div>
                 <NavLayout items={organismsPages} />
@@ -135,8 +132,8 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
           <div className="col-12 col-xl-9">{children}</div>
         </div>
-      )}
-    </div>
+      </div>
+    )
   );
 };
 

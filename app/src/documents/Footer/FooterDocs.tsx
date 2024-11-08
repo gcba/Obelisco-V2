@@ -4,6 +4,8 @@ import MainDescription from '@/components/Template/MainDescription';
 
 import { FOOTER, FOOTER_INDICATOR, FOOTER_LEGALS } from './code-views';
 
+const basePath = '/Obelisco-V2';
+
 const FooterDocs: React.FC = () => {
   const sections = [
     {
@@ -102,19 +104,19 @@ const FooterDocs: React.FC = () => {
                     <div className="col-12 col-md-5 col-xl-4 footer-content-img">
                       <img
                         className="d-lg-none"
-                        src="../images/Logo BA Mobile.svg"
+                        src={`${basePath}/images/LogoBAMobile.svg`}
                         alt="Logo de Ciudad de Buenos Aires"
                         height="48"
                       />
                       <img
                         className="d-none d-lg-inline"
-                        src="../images/Logo escudo vertical.svg"
+                        src={`${basePath}/images/Logo-escudo-vertical.svg`}
                         alt="Logo de Ciudad de Buenos Aires"
                         height="40"
                       />
                       <img
                         className="img-vamos-ba"
-                        src="../images/LogoBA2.svg"
+                        src={`${basePath}/images/LogoBA2.svg`}
                         alt="Logo de Vamos Buenos Aires"
                       />
                     </div>
@@ -168,19 +170,19 @@ const FooterDocs: React.FC = () => {
                     <div className="col-12 col-md-5 col-xl-4 footer-content-img">
                       <img
                         className="d-lg-none"
-                        src="../images/Logo BA Mobile.svg"
+                        src={`${basePath}/images/LogoBAMobile.svg`}
                         alt="Logo de Ciudad de Buenos Aires"
                         height="48"
                       />
                       <img
                         className="d-none d-lg-inline"
-                        src="../images/Logo escudo vertical.svg"
+                        src={`${basePath}/images/Logo-escudo-vertical.svg`}
                         alt="Logo de Ciudad de Buenos Aires"
                         height="40"
                       />
                       <img
                         className="img-vamos-ba"
-                        src="../images/LogoBA2.svg"
+                        src={`${basePath}/images/LogoBA2.svg`}
                         alt="Logo de Vamos Buenos Aires"
                       />
                     </div>
@@ -317,19 +319,19 @@ const FooterDocs: React.FC = () => {
                     <div className="col-12 col-md-5 col-xl-4 footer-content-img">
                       <img
                         className="d-lg-none"
-                        src="../images/Logo BA Mobile.svg"
+                        src={`${basePath}/images/LogoBAMobile.svg`}
                         alt="Logo de Ciudad de Buenos Aires"
                         height="48"
                       />
                       <img
                         className="d-none d-lg-inline"
-                        src="../images/Logo escudo vertical.svg"
+                        src={`${basePath}/images/Logo-escudo-vertical.svg`}
                         alt="Logo de Ciudad de Buenos Aires"
                         height="40"
                       />
                       <img
                         className="img-vamos-ba"
-                        src="../images/LogoBA2.svg"
+                        src={`${basePath}/images/LogoBA2.svg`}
                         alt="Logo de Vamos Buenos Aires"
                       />
                     </div>

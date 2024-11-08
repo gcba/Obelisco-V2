@@ -9,7 +9,7 @@ const basePath = '/Obelisco-V2';
 const FooterDocs: React.FC = () => {
   const sections = [
     {
-      title: 'Footer (pie de página)',
+      title: 'Pie de Página (Footer)',
       h1: true,
       content: (
         <MainDescription description="El pie de página (o footer en Inglés) se sitúa en la parte inferior de todos los activos digitales de Gobierno. Contiene información institucional o de acceso rápido que permite a los usuarios encontrar de forma sencilla la información que necesitan." />

@@ -598,11 +598,12 @@ const UpdateComponents: React.FC = () => {
     },
     {
       id: 'section-26',
-      title: 'Pie de Pagina (Footer)',
+      title: 'Pie de Página (Footer)',
       content: (
         <ul className="docs-list">
           <li>
-            Se modifica la clase <code>d-lg-inline</code> por <code>d-md-inline, para que realice el cambio de imagen en 768px.</code>.
+            Se modifica la clase <code>d-lg-inline</code> por{' '}
+            <code>d-md-inline, para que realice el cambio de imagen en 768px</code>.
           </li>
         </ul>
       ),

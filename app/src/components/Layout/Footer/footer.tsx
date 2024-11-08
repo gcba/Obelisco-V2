@@ -2,7 +2,6 @@ import React from 'react';
 
 const basePath = '/Obelisco-V2';
 
-
 export default function Footer() {
   return (
     <>
@@ -25,11 +24,7 @@ export default function Footer() {
                   alt="Logo de Ciudad de Buenos Aires"
                   height="40"
                 />
-                <img
-                  className="img-vamos-ba"
-                  src={`${basePath}/images/LogoBA2.svg`}
-                  alt="Logo de Vamos Buenos Aires"
-                />
+                <img className="img-vamos-ba" src={`${basePath}/images/LogoBA2.svg`} alt="Logo de Vamos Buenos Aires" />
               </div>
               <div className="col-12">
                 <ul className="list-inline">

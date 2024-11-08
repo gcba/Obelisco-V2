@@ -1,4 +1,5 @@
 import CodeBox from '@/components/CodeBox';
+import LinkClient from '@/components/LinkClient';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
@@ -47,7 +48,10 @@ const TableDocs: React.FC = () => {
                         Número
                       </th>
                       <th scope="col" className="tb-text">
-                        Texto
+                        <span className="th-title">Título de la celda</span>
+                        <span className="th-subtitle">
+                          Subtítulo de hasta 2 líneas donde se puede sumar contenido de soporte
+                        </span>
                       </th>
                       <th scope="col" className="tb-link">
                         Enlace
@@ -68,12 +72,10 @@ const TableDocs: React.FC = () => {
                       <td className="text-right">1</td>
                       <td>Juan</td>
                       <td>
-                        <a href="#" target="_blank" rel="noreferrer">
-                          Enlace predeterminado
-                        </a>
+                        <LinkClient>Enlace predeterminado</LinkClient>
                       </td>
                       <td>
-                        <button type="button" className="btn btn-primary">
+                        <button type="button" className="btn btn-outline-tertiary">
                           Botón
                         </button>
                       </td>
@@ -99,12 +101,10 @@ const TableDocs: React.FC = () => {
                       <td className="text-right">2</td>
                       <td>María</td>
                       <td>
-                        <a href="#" target="_blank" rel="noreferrer">
-                          Enlace predeterminado
-                        </a>
+                        <LinkClient>Enlace predeterminado</LinkClient>
                       </td>
                       <td>
-                        <button type="button" className="btn btn-primary">
+                        <button type="button" className="btn btn-outline-tertiary">
                           Botón
                         </button>
                       </td>
@@ -130,12 +130,10 @@ const TableDocs: React.FC = () => {
                       <td className="text-right">3</td>
                       <td>Esther</td>
                       <td>
-                        <a href="#" target="_blank" rel="noreferrer">
-                          Enlace predeterminado
-                        </a>
+                        <LinkClient>Enlace predeterminado</LinkClient>
                       </td>
                       <td>
-                        <button type="button" className="btn btn-primary">
+                        <button type="button" className="btn btn-outline-tertiary">
                           Botón
                         </button>
                       </td>
@@ -161,12 +159,10 @@ const TableDocs: React.FC = () => {
                       <td className="text-right">4</td>
                       <td>José</td>
                       <td>
-                        <a href="#" target="_blank" rel="noreferrer">
-                          Enlace predeterminado
-                        </a>
+                        <LinkClient>Enlace predeterminado</LinkClient>
                       </td>
                       <td>
-                        <button type="button" className="btn btn-primary">
+                        <button type="button" className="btn btn-outline-tertiary">
                           Botón
                         </button>
                       </td>
@@ -231,12 +227,10 @@ const TableDocs: React.FC = () => {
                     <td className="text-right">1</td>
                     <td>Juan</td>
                     <td>
-                      <a href="#" target="_blank" rel="noreferrer">
-                        Enlace predeterminado
-                      </a>
+                      <LinkClient>Enlace predeterminado</LinkClient>
                     </td>
                     <td>
-                      <button type="button" className="btn btn-primary">
+                      <button type="button" className="btn btn-outline-tertiary">
                         Botón
                       </button>
                     </td>
@@ -262,12 +256,10 @@ const TableDocs: React.FC = () => {
                     <td className="text-right">2</td>
                     <td>María</td>
                     <td>
-                      <a href="#" target="_blank" rel="noreferrer">
-                        Enlace predeterminado
-                      </a>
+                      <LinkClient>Enlace predeterminado</LinkClient>
                     </td>
                     <td>
-                      <button type="button" className="btn btn-primary">
+                      <button type="button" className="btn btn-outline-tertiary">
                         Botón
                       </button>
                     </td>
@@ -293,12 +285,10 @@ const TableDocs: React.FC = () => {
                     <td className="text-right">3</td>
                     <td>Esther</td>
                     <td>
-                      <a href="#" target="_blank" rel="noreferrer">
-                        Enlace predeterminado
-                      </a>
+                      <LinkClient>Enlace predeterminado</LinkClient>
                     </td>
                     <td>
-                      <button type="button" className="btn btn-primary">
+                      <button type="button" className="btn btn-outline-tertiary">
                         Botón
                       </button>
                     </td>
@@ -324,12 +314,10 @@ const TableDocs: React.FC = () => {
                     <td className="text-right">4</td>
                     <td>José</td>
                     <td>
-                      <a href="#" target="_blank" rel="noreferrer">
-                        Enlace predeterminado
-                      </a>
+                      <LinkClient>Enlace predeterminado</LinkClient>
                     </td>
                     <td>
-                      <button type="button" className="btn btn-primary">
+                      <button type="button" className="btn btn-outline-tertiary">
                         Botón
                       </button>
                     </td>
@@ -393,12 +381,10 @@ const TableDocs: React.FC = () => {
                     <td className="text-right">1</td>
                     <td>Juan</td>
                     <td>
-                      <a href="#" target="_blank" rel="noreferrer">
-                        Enlace predeterminado
-                      </a>
+                      <LinkClient>Enlace predeterminado</LinkClient>
                     </td>
                     <td>
-                      <button type="button" className="btn btn-primary">
+                      <button type="button" className="btn btn-outline-tertiary">
                         Botón
                       </button>
                     </td>
@@ -424,12 +410,10 @@ const TableDocs: React.FC = () => {
                     <td className="text-right">2</td>
                     <td>María</td>
                     <td>
-                      <a href="#" target="_blank" rel="noreferrer">
-                        Enlace predeterminado
-                      </a>
+                      <LinkClient>Enlace predeterminado</LinkClient>
                     </td>
                     <td>
-                      <button type="button" className="btn btn-primary">
+                      <button type="button" className="btn btn-outline-tertiary">
                         Botón
                       </button>
                     </td>
@@ -455,12 +439,10 @@ const TableDocs: React.FC = () => {
                     <td className="text-right">3</td>
                     <td>Esther</td>
                     <td>
-                      <a href="#" target="_blank" rel="noreferrer">
-                        Enlace predeterminado
-                      </a>
+                      <LinkClient>Enlace predeterminado</LinkClient>
                     </td>
                     <td>
-                      <button type="button" className="btn btn-primary">
+                      <button type="button" className="btn btn-outline-tertiary">
                         Botón
                       </button>
                     </td>
@@ -486,12 +468,10 @@ const TableDocs: React.FC = () => {
                     <td className="text-right">4</td>
                     <td>José</td>
                     <td>
-                      <a href="#" target="_blank" rel="noreferrer">
-                        Enlace predeterminado
-                      </a>
+                      <LinkClient>Enlace predeterminado</LinkClient>
                     </td>
                     <td>
-                      <button type="button" className="btn btn-primary">
+                      <button type="button" className="btn btn-outline-tertiary">
                         Botón
                       </button>
                     </td>
@@ -649,7 +629,7 @@ const TableDocs: React.FC = () => {
     },
     {
       id: 'section-7',
-      title: 'De texto',
+      subtitle: 'De texto',
       content: (
         <CodeBox codeHTML={TABLE_TEXT}>
           <div className="max-600 p-2">
@@ -698,7 +678,7 @@ const TableDocs: React.FC = () => {
     },
     {
       id: 'section-8',
-      title: 'De número',
+      subtitle: 'De número',
       content: (
         <CodeBox codeHTML={TABLE_NUMBER}>
           <div className="max-600 p-2">
@@ -764,7 +744,7 @@ const TableDocs: React.FC = () => {
     },
     {
       id: 'section-9',
-      title: 'De enlace',
+      subtitle: 'De enlace',
       content: (
         <CodeBox codeHTML={TABLE_LINK}>
           <div className="max-600 p-2">
@@ -797,9 +777,7 @@ const TableDocs: React.FC = () => {
                     </td>
                     <td>Texto predeterminado</td>
                     <td>
-                      <a href="#" target="_blank" rel="noreferrer">
-                        Enlace predeterminado
-                      </a>
+                      <LinkClient>Enlace predeterminado</LinkClient>
                     </td>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
@@ -808,9 +786,7 @@ const TableDocs: React.FC = () => {
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                     <td>
-                      <a href="#" target="_blank" rel="noreferrer">
-                        Enlace predeterminado
-                      </a>
+                      <LinkClient>Enlace predeterminado</LinkClient>
                     </td>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
@@ -819,9 +795,7 @@ const TableDocs: React.FC = () => {
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                     <td>
-                      <a href="#" target="_blank" rel="noreferrer">
-                        Enlace predeterminado
-                      </a>
+                      <LinkClient>Enlace predeterminado</LinkClient>
                     </td>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
@@ -830,9 +804,7 @@ const TableDocs: React.FC = () => {
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                     <td>
-                      <a href="#" target="_blank" rel="noreferrer">
-                        Enlace predeterminado
-                      </a>
+                      <LinkClient>Enlace predeterminado</LinkClient>
                     </td>
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
@@ -846,7 +818,7 @@ const TableDocs: React.FC = () => {
     },
     {
       id: 'section-10',
-      title: 'De etiqueta',
+      subtitle: 'De etiqueta',
       content: (
         <CodeBox codeHTML={TABLE_TAG}>
           <div className="max-600 p-2">
@@ -920,7 +892,7 @@ const TableDocs: React.FC = () => {
     },
     {
       id: 'section-11',
-      title: 'De botón',
+      subtitle: 'De botón',
       content: (
         <CodeBox codeHTML={TABLE_BUTTON}>
           <div className="max-600 p-2">
@@ -953,7 +925,7 @@ const TableDocs: React.FC = () => {
                     </td>
                     <td>Texto predeterminado</td>
                     <td>
-                      <button type="button" className="btn btn-primary">
+                      <button type="button" className="btn btn-outline-tertiary">
                         Botón
                       </button>
                     </td>
@@ -964,7 +936,7 @@ const TableDocs: React.FC = () => {
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                     <td>
-                      <button type="button" className="btn btn-primary">
+                      <button type="button" className="btn btn-outline-tertiary">
                         Botón
                       </button>
                     </td>
@@ -975,7 +947,7 @@ const TableDocs: React.FC = () => {
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                     <td>
-                      <button type="button" className="btn btn-primary">
+                      <button type="button" className="btn btn-outline-tertiary">
                         Botón
                       </button>
                     </td>
@@ -986,7 +958,7 @@ const TableDocs: React.FC = () => {
                     <td>Texto predeterminado</td>
                     <td>Texto predeterminado</td>
                     <td>
-                      <button type="button" className="btn btn-primary">
+                      <button type="button" className="btn btn-outline-tertiary">
                         Botón
                       </button>
                     </td>
@@ -1002,7 +974,7 @@ const TableDocs: React.FC = () => {
     },
     {
       id: 'section-12',
-      title: 'De botón con ícono',
+      subtitle: 'De botón con ícono',
       content: (
         <CodeBox codeHTML={TABLE_BUTTON_ICON}>
           <div className="max-600 p-2">

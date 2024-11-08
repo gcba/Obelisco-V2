@@ -1,4 +1,4 @@
-/* === Custom variables and mixins === */
+// Custom variables and mixins
 
 $footer-padding-y: 2.5rem;
 $footer-legal-margin-bottom: 1.625rem;
@@ -16,7 +16,7 @@ $footer-icon-separation: 0.25rem;
 $footer-icon-size: 1.5rem;
 
 $divider-margin: 1.625rem 0 2.5rem 0;
-$divider-border: 0.125rem solid $grisulado-700;
+$divider-border: 0.125rem solid $slate-700;
 
 $divider-margin-mobile: 2rem 0 2rem;
 
@@ -24,7 +24,7 @@ $footer-info-padding: 1.5rem 0;
 $footer-info-gap: 2rem;
 $footer-info-gap-mobile: 1rem;
 
-/* === Custom styles === */
+// Custom styles
 
 .main-footer {
   @extend .text-white;
@@ -62,7 +62,8 @@ $footer-info-gap-mobile: 1rem;
       @extend .text-white;
     }
 
-    .bx {
+    .bx,
+    .o-icon {
       font-size: $footer-icon-size;
       vertical-align: top;
       margin-right: $footer-icon-separation;
@@ -155,7 +156,7 @@ $footer-info-gap-mobile: 1rem;
 }
 
 .footer-info {
-  background-color: $grisulado-50;
+  background-color: $slate-50;
   padding: $footer-info-padding;
   word-break: break-word;
   border-top: $footer-border-width solid $footer-border-color;

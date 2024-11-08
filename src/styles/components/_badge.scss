@@ -1,4 +1,4 @@
-/* === Variable and mixins overides === */
+// Variable and mixins overides
 $badge-color: $body-color;
 $badge-separation: 0.5rem;
 
@@ -11,14 +11,14 @@ $badge-theme-color: (
 );
 
 $badge-bg-theme-color: (
-  default: $grisulado-50,
+  default: $slate-50,
   success: $green-50,
   danger: $red-50,
   warning: $orange-50,
   info: $sky-50,
 );
 
-/* === Custom variables and mixins === */
+// Custom variables and mixins
 @mixin badge-variant-custom($color, $value) {
   color: $badge-color;
   background-color: map-get($badge-bg-theme-color, $color);
@@ -43,7 +43,7 @@ $badge-bg-theme-color: (
   }
 }
 
-/* === Custom styles === */
+// Custom styles
 .badge {
   @extend .text-sm; //fs 14px, lh 20px, fw 400
   color: $badge-color;

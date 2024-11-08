@@ -4,10 +4,12 @@ import MainDescription from '@/components/Template/MainDescription';
 
 import { FOOTER, FOOTER_INDICATOR, FOOTER_LEGALS } from './code-views';
 
+const basePath = '/Obelisco-V2';
+
 const FooterDocs: React.FC = () => {
   const sections = [
     {
-      title: 'Footer (pie de página)',
+      title: 'Pie de Página (Footer)',
       h1: true,
       content: (
         <MainDescription description="El pie de página (o footer en Inglés) se sitúa en la parte inferior de todos los activos digitales de Gobierno. Contiene información institucional o de acceso rápido que permite a los usuarios encontrar de forma sencilla la información que necesitan." />
@@ -51,43 +53,43 @@ const FooterDocs: React.FC = () => {
                   <ul className="list-inline">
                     <li className="list-inline-item redes-items">
                       <a href="https://www.facebook.com/GCBA">
-                        <i className="bx bxl-facebook-circle"></i>
+                        <i className="o-icon bx bxl-facebook-circle"></i>
                         Facebook
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://www.instagram.com/gcba/">
-                        <i className="bx bxl-instagram-alt"></i>
+                        <i className="o-icon bx bxl-instagram-alt"></i>
                         Instagram
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://x.com/gcba">
-                        <i className="bx bxl-twitter"></i>
+                        <i className="o-icon bx bxl-twitter"></i>
                         Twitter
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://www.youtube.com/user/GCBA">
-                        <i className="bx bxl-youtube"></i>
+                        <i className="o-icon bx bxl-youtube"></i>
                         YouTube
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires">
-                        <i className="bx bxl-linkedin-square"></i>
+                        <i className="o-icon bx bxl-linkedin-square"></i>
                         LinkedIn
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://www.tiktok.com/@buenosaires">
-                        <i className="bx bxl-tiktok"></i>
+                        <i className="o-icon bx bxl-tiktok"></i>
                         TikTok
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://www.pinterest.es/buenosaires/">
-                        <i className="bx bxl-pinterest"></i>
+                        <i className="o-icon bx bxl-pinterest"></i>
                         Pinterest
                       </a>
                     </li>
@@ -101,20 +103,20 @@ const FooterDocs: React.FC = () => {
                   <div className="row align-items-center">
                     <div className="col-12 col-md-5 col-xl-4 footer-content-img">
                       <img
-                        className="d-lg-none"
-                        src="https://gcba.github.io/Obelisco/footer/ciudad-ba-sm.svg"
+                        className="d-md-none"
+                        src={`${basePath}/images/LogoBAMobile.svg`}
                         alt="Logo de Ciudad de Buenos Aires"
                         height="48"
                       />
                       <img
-                        className="d-none d-lg-inline"
-                        src="https://gcba.github.io/Obelisco/footer/ciudad-ba.svg"
+                        className="d-none d-md-inline"
+                        src={`${basePath}/images/Logo-escudo-vertical.svg`}
                         alt="Logo de Ciudad de Buenos Aires"
                         height="40"
                       />
                       <img
                         className="img-vamos-ba"
-                        src="https://gcba.github.io/Obelisco/footer/vamos-ba.svg"
+                        src={`${basePath}/images/LogoBA2.svg`}
                         alt="Logo de Vamos Buenos Aires"
                       />
                     </div>
@@ -167,20 +169,20 @@ const FooterDocs: React.FC = () => {
                   <div className="row align-items-center">
                     <div className="col-12 col-md-5 col-xl-4 footer-content-img">
                       <img
-                        className="d-lg-none"
-                        src="https://gcba.github.io/Obelisco/footer/ciudad-ba-sm.svg"
+                        className="d-md-none"
+                        src={`${basePath}/images/LogoBAMobile.svg`}
                         alt="Logo de Ciudad de Buenos Aires"
                         height="48"
                       />
                       <img
-                        className="d-none d-lg-inline"
-                        src="https://gcba.github.io/Obelisco/footer/ciudad-ba.svg"
+                        className="d-none d-md-inline"
+                        src={`${basePath}/images/Logo-escudo-vertical.svg`}
                         alt="Logo de Ciudad de Buenos Aires"
                         height="40"
                       />
                       <img
                         className="img-vamos-ba"
-                        src="https://gcba.github.io/Obelisco/footer/vamos-ba.svg"
+                        src={`${basePath}/images/LogoBA2.svg`}
                         alt="Logo de Vamos Buenos Aires"
                       />
                     </div>
@@ -230,8 +232,8 @@ const FooterDocs: React.FC = () => {
               <div className="container">
                 <h3 className="footer-info-text">¿Te fue útil esta página?</h3>
                 <div className="footer-info-actions">
-                  <button className="btn btn-primary">Sí, me fue útil</button>
-                  <button className="btn btn-secondary">No me sirvió</button>
+                  <button className="btn btn-outline-secondary">Sí, me fue útil</button>
+                  <button className="btn btn-outline-secondary">No me sirvió</button>
                 </div>
               </div>
             </div>
@@ -266,43 +268,43 @@ const FooterDocs: React.FC = () => {
                   <ul className="list-inline">
                     <li className="list-inline-item redes-items">
                       <a href="https://www.facebook.com/GCBA">
-                        <i className="bx bxl-facebook-circle"></i>
+                        <i className="o-icon bx bxl-facebook-circle"></i>
                         Facebook
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://www.instagram.com/gcba/">
-                        <i className="bx bxl-instagram-alt"></i>
+                        <i className="o-icon bx bxl-instagram-alt"></i>
                         Instagram
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://x.com/gcba">
-                        <i className="bx bxl-twitter"></i>
+                        <i className="o-icon bx bxl-twitter"></i>
                         Twitter
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://www.youtube.com/user/GCBA">
-                        <i className="bx bxl-youtube"></i>
+                        <i className="o-icon bx bxl-youtube"></i>
                         YouTube
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires">
-                        <i className="bx bxl-linkedin-square"></i>
+                        <i className="o-icon bx bxl-linkedin-square"></i>
                         LinkedIn
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://www.tiktok.com/@buenosaires">
-                        <i className="bx bxl-tiktok"></i>
+                        <i className="o-icon bx bxl-tiktok"></i>
                         TikTok
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://www.pinterest.es/buenosaires/">
-                        <i className="bx bxl-pinterest"></i>
+                        <i className="o-icon bx bxl-pinterest"></i>
                         Pinterest
                       </a>
                     </li>
@@ -316,20 +318,20 @@ const FooterDocs: React.FC = () => {
                   <div className="row align-items-center">
                     <div className="col-12 col-md-5 col-xl-4 footer-content-img">
                       <img
-                        className="d-lg-none"
-                        src="https://gcba.github.io/Obelisco/footer/ciudad-ba-sm.svg"
+                        className="d-md-none"
+                        src={`${basePath}/images/LogoBAMobile.svg`}
                         alt="Logo de Ciudad de Buenos Aires"
                         height="48"
                       />
                       <img
-                        className="d-none d-lg-inline"
-                        src="https://gcba.github.io/Obelisco/footer/ciudad-ba.svg"
+                        className="d-none d-md-inline"
+                        src={`${basePath}/images/Logo-escudo-vertical.svg`}
                         alt="Logo de Ciudad de Buenos Aires"
                         height="40"
                       />
                       <img
                         className="img-vamos-ba"
-                        src="https://gcba.github.io/Obelisco/footer/vamos-ba.svg"
+                        src={`${basePath}/images/LogoBA2.svg`}
                         alt="Logo de Vamos Buenos Aires"
                       />
                     </div>

@@ -1,4 +1,4 @@
-/* === Variable and mixins overides === */
+// Variable and mixins overides
 
 $banner-padding: 1rem;
 $banner-width: 100%;
@@ -8,17 +8,13 @@ $banner-actions-gap: 0.75rem;
 $banner-icon-size: 1.5rem;
 $banner-padding-mobile: 0.25rem;
 
-/* === Custom styles === */
+// Custom styles
 .banner {
   padding: $banner-padding;
-  background-color: $grisulado-50;
+  background-color: $slate-100;
   outline: 0.125rem solid transparent;
   word-break: break-word;
   width: $banner-width;
-
-  a:not(.btn) {
-    color: $body-color;
-  }
 
   &.banner-dark {
     background-color: $dark;

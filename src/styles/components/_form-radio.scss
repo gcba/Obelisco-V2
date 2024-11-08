@@ -1,4 +1,4 @@
-/* === Variable and mixins  === */
+// Variable and mixins
 $checkbox-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" style="&%2310;"><rect x="1" y="1" width="22" height="22" rx="2" fill="" stroke="" stroke-width="2" style="&%2310;"/><path d="M9.1725 16.1625L5.7025 12.6925C5.3125 12.3025 4.6825 12.3025 4.2925 12.6925C3.9025 13.0825 3.9025 13.7125 4.2925 14.1025L8.4725 18.2825C8.8625 18.6725 9.4925 18.6725 9.8825 18.2825L20.4625 7.7025C20.8525 7.3125 20.8525 6.6825 20.4625 6.2925C20.0725 5.9025 19.4425 5.9025 19.0525 6.2925L9.1725 16.1625Z" fill="white"/></svg>');
 
 // Mixin para radio y checkbox
@@ -19,7 +19,7 @@ $checkbox-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"
     }
     .form-#{$type}-label {
       text-decoration: underline;
-      text-decoration-thickness: 1px;
+      text-decoration-color: transparent;
     }
     .form-#{$type}-input {
       border-color: $hover-color;
@@ -30,6 +30,12 @@ $checkbox-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"
 
       &.is-invalid {
         border-color: $hover-color;
+      }
+
+      &:focus {
+        ~ .form-#{$type}-label {
+          color: $body-color;
+        }
       }
     }
   }

@@ -28,7 +28,7 @@ export const BANNER_BUTTON = `
   <div class="banner">
     <div class="banner-content">
       <span class="material-symbols-rounded o-icon" aria-hidden="true">
-        cookie
+        departure_board
       </span>
       <p class="banner-text">
         Este banner tiene un solo botón y
@@ -52,7 +52,7 @@ export const BANNER_BUTTON_DARK = `
   <div class="banner banner-dark">
     <div class="banner-content">
       <span class="material-symbols-rounded o-icon" aria-hidden="true">
-        cookie
+        departure_board
       </span>
       <p class="banner-text">
         Este banner tiene un solo botón y
@@ -96,7 +96,7 @@ export const BANNER_BUTTONS = `
           href="#"
           target="_blank"
           rel="noopener noreferrer"
-          class="btn btn-sm btn-secondary"
+          class="btn btn-sm btn-outline-primary"
         >
           Botón
         </a>
@@ -128,7 +128,7 @@ export const BANNER_BUTTONS_DARK = `
           href="#"
           target="_blank"
           rel="noopener noreferrer"
-          class="btn btn-sm btn-tertiary"
+          class="btn btn-sm btn-outline-light"
         >
           Botón
         </a>

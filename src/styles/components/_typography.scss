@@ -1,4 +1,4 @@
-/* === Estilos de headings de h1 a h6 ====  */
+// Estilos de headings de h1 a h6
 @each $i, $styles in $heading-styles {
   .h#{$i},
   h#{$i} {
@@ -17,7 +17,7 @@
   }
 }
 
-/* === Estilos de headline (Titulares)  ====  */
+// Estilos de headline (Titulares)
 @each $i, $styles in $headline-styles {
   .headline-#{$i} {
     font-family: $font-family-headings;
@@ -27,7 +27,7 @@
   }
 }
 
-/* === Estilos de Cuerpo  ====  */
+// Estilos de Cuerpo
 @each $i, $styles in $body-styles {
   .text-#{$i} {
     font-family: $font-family-sans-serif;
@@ -45,20 +45,17 @@ small,
 .small {
   @extend .text-sm;
 }
-/* === Estilos de Subrayado  ====  */
-.underline-1 {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-}
 
+// Estilos de Subrayado
 .underline-2 {
   text-decoration: underline;
 }
-/* === Estilos de Citas  ====  */
+
+// Estilos de Citas
 blockquote {
   padding: 1.5rem 2rem;
   margin: 0;
-  border-left: 0.25rem solid $grisulado-700;
+  border-left: 0.25rem solid $body-color;
   font-style: italic;
 
   p {
@@ -73,8 +70,9 @@ blockquote {
     font-style: normal;
   }
 }
-/* === Estilos Truncamiento de texto  ====  */
-/* Clases 'ellipsis-' de 1 linea a 4 lineas (ellipsis-1, ellipsis-2, ..) */
+
+// Estilos Truncamiento de texto
+// Clases 'ellipsis-' de 1 linea a 4 lineas (ellipsis-1, ellipsis-2, ..)
 @for $i from 1 through 4 {
   .ellipsis-#{$i} {
     overflow: hidden;

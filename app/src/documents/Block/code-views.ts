@@ -1,6 +1,6 @@
 export const BLOCK = `
-<div class="card-block position-sticky" style="top: 48px;">
-  <div class="card-body">
+<div class="block position-sticky" style="top: 48px;">
+  <div class="block-body">
     <h2 class="block-title">Iniciá el trámite y completá todos los pasos</h2>
     <a
       href="#"
@@ -14,8 +14,8 @@ export const BLOCK = `
 </div>
 `;
 export const BLOCK_DESCRIPTION = `
-<div class="card-block position-sticky" style="top: 48px;">
-  <div class="card-body">
+<div class="block position-sticky" style="top: 48px;">
+  <div class="block-body">
     <h2 class="block-title">Iniciá el trámite y completá todos los pasos</h2>
     <p class="block-text">
       Si tenés un trámite iniciado podés continuarlo desde acá.
@@ -27,8 +27,8 @@ export const BLOCK_DESCRIPTION = `
 </div>
 `;
 export const BLOCK_PROGRESS = `
-<div class="card-block position-sticky" style="top: 48px;">
-  <div class="card-body">
+<div class="block position-sticky" style="top: 48px;">
+  <div class="block-body">
     <h2 class="block-title">Este es tu progreso en el trámite</h2>
     <div class="progress">
       <div
@@ -52,8 +52,8 @@ export const BLOCK_PROGRESS = `
 </div>
 `;
 export const BLOCK_BG = `
-<div className="card-block position-sticky bg-light" style="top: 48px;">
-  <div className="card-body">
+<div className="block position-sticky bg-light" style="top: 48px;">
+  <div className="block-body">
     <h2 className="block-title">Iniciá el trámite y completá todos los pasos</h2>
     <p className="block-text">
       Si tenés un trámite iniciado podés continuarlo desde acá.

@@ -25,6 +25,9 @@ const UpdateComponents: React.FC = () => {
             icono o con descripción.
           </li>
           <li>
+            La clase <code>.list-group-item-logout</code> queda deprecada.
+          </li>
+          <li>
             La lista de accesos por ancho completo, que utilizaba las clases <code>.access-deck .max-cards-*</code>,
             queda deprecada.{' '}
           </li>
@@ -81,6 +84,17 @@ const UpdateComponents: React.FC = () => {
     },
     {
       id: 'section-3',
+      title: 'Barra de progreso',
+      content: (
+        <ul className="docs-list">
+          <li>
+            La clase <code>.bg-info</code> se reemplaza por <code>.bg-primary</code>.
+          </li>
+        </ul>
+      ),
+    },
+    {
+      id: 'section-4',
       title: 'Bloque de trámite',
       content: (
         <ul className="docs-list">
@@ -91,7 +105,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-4',
+      id: 'section-5',
       title: 'Botones',
       content: (
         <ul className="docs-list">
@@ -105,14 +119,17 @@ const UpdateComponents: React.FC = () => {
             Se crea la clase <code>.btn-xs</code> para los botones que son utilizados dentro de tablas.{' '}
           </li>
           <li>
-            Se crea la clase <code>.btn-tertiary</code>.{' '}
+            Se crea la clase <code>.btn-tertiary</code> y <code>.btn-light</code>.{' '}
           </li>
-          <li>Los botones primary y secondary han cambiado de color.</li>
+          <li>
+            A los botones con spinner se les agrega el atributo <code>disabled</code> y se modifica la variante de
+            spinner.{' '}
+          </li>
         </ul>
       ),
     },
     {
-      id: 'section-5',
+      id: 'section-6',
       title: 'Banner',
       content: (
         <ul className="docs-list">
@@ -123,7 +140,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-6',
+      id: 'section-7',
       title: 'Calendario',
       content: (
         <ul className="docs-list">
@@ -131,17 +148,18 @@ const UpdateComponents: React.FC = () => {
             Se modifica la estructura HTML del colapsable en la variante &apos;Con colapsable&apos; acorde a
             actualización del componente Colapsable.
           </li>
+          <li>La variante con referencias cromáticas queda deprecada.</li>
         </ul>
       ),
     },
     {
-      id: 'section-7',
+      id: 'section-8',
       title: 'Colapsables',
       content: (
         <ul className="docs-list">
           <li>
             Se modifica estructura HTML del componente, acorde a Bootstrap 5. Se reemplazan las clases{' '}
-            <code>.card</code>, <code>.card-header</code>, y <code>.card-body</code> por <code>.accordion-item</code>,{' '}
+            <code>.card</code>, <code>.card-header</code>, y <code>.block-body</code> por <code>.accordion-item</code>,{' '}
             <code>.accordion-button</code> y<code>.accordion-body</code>, respectivamente.
           </li>
           <li>
@@ -158,7 +176,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-8',
+      id: 'section-9',
       title: 'Colores',
       content: (
         <div id="colores" className="container">
@@ -207,7 +225,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-9',
+      id: 'section-10',
       title: 'Desplegables de navegación y selección',
       content: (
         <>
@@ -259,7 +277,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-10',
+      id: 'section-11',
       title: 'Destacado',
       content: (
         <ul className="docs-list">
@@ -267,14 +285,19 @@ const UpdateComponents: React.FC = () => {
             Se eliminan las clases <code>.card</code> y <code>.card-simple</code>.
           </li>
           <li>
+            Las clases <code>.card-img</code>, <code>.block-body</code>, <code>.card-title</code> y{' '}
+            <code>.card-text</code> se reemplazan por <code>.panel-img</code>, <code>.panel-body</code>,{' '}
+            <code>.panel-title</code> y <code>.panel-text</code>, respectivamente.
+          </li>
+          <li>
             Para la disposición de Destacado conjunto, las clases <code>.card-deck</code> y <code>.max-cards-2</code>{' '}
-            quedan deprecadas, se reemplazan por <code>.highlighted-max-2</code>.
+            quedan deprecadas, se reemplazan por <code>.highlighted-items-2</code>.
           </li>
         </ul>
       ),
     },
     {
-      id: 'section-11',
+      id: 'section-12',
       title: 'Enlace',
       content: (
         <ul className="docs-list">
@@ -285,7 +308,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-12',
+      id: 'section-13',
       title: 'Etiquetas',
       content: (
         <ul className="docs-list">
@@ -299,7 +322,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-13',
+      id: 'section-14',
       title: 'Formulario - Casillas de selección (Radio y Checkbox)',
       content: (
         <ul className="docs-list">
@@ -334,7 +357,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-14',
+      id: 'section-15',
       title: 'Formularios de texto',
       content: (
         <ul className="docs-list">
@@ -355,11 +378,15 @@ const UpdateComponents: React.FC = () => {
             Se crea la clase <code>.input-search-with-button</code>, asignada al input de búsqueda, permitiendo que el
             botón con el icono funcione como botón de búsqueda.
           </li>
+          <li>
+            Para los inputs con fondo light, se reemplaza la clase <code>.bg-light</code> de la etiqueta div padre de
+            los inputs, por <code>.form-bg-light</code>.
+          </li>
         </ul>
       ),
     },
     {
-      id: 'section-15',
+      id: 'section-16',
       title: 'Grilla',
       content: (
         <div id="grilla" className="container">
@@ -413,7 +440,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-16',
+      id: 'section-17',
       title: 'Header (encabezado)',
       content: (
         <ul className="docs-list">
@@ -424,11 +451,18 @@ const UpdateComponents: React.FC = () => {
             La estructura de los componentes desplegables y buscador, se ha modificado por lo que deben ser modificados
             en el header también.
           </li>
+          <li>
+            La clase <code>.header-logo</code> queda deprecada.
+          </li>
+          <li>
+            La clase <code>.btn-outline-link</code> del botón &quot;Ingresar&quot; se reemplaza por{' '}
+            <code>.btn-outline-tertiary</code>.
+          </li>
         </ul>
       ),
     },
     {
-      id: 'section-17',
+      id: 'section-18',
       title: 'Iconos',
       content: (
         <ul className="docs-list">
@@ -441,7 +475,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-18',
+      id: 'section-19',
       title: 'Lista de pasos',
       content: (
         <ul className="docs-list">
@@ -452,18 +486,23 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-19',
+      id: 'section-20',
       title: 'Mapa',
       content: (
         <ul className="docs-list">
           <li>
-            Se elimina la clase <code>.card</code>.
+            Se reemplazan las clases <code>.card</code> y <code>.card-map</code> por <code>.map</code>.
+          </li>
+          <li>
+            Las clases <code>.card-iframe</code>, <code>.block-body</code>, <code>.card-title</code> y{' '}
+            <code>.card-text</code> se reemplazan por <code>.map-iframe</code>, <code>.map-body</code>,{' '}
+            <code>.map-title</code> y <code>.map-text</code>, respectivamente.
           </li>
         </ul>
       ),
     },
     {
-      id: 'section-20',
+      id: 'section-21',
       title: 'Mensaje de estados',
       content: (
         <>
@@ -479,7 +518,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-21',
+      id: 'section-22',
       title: 'Modal',
       content: (
         <ul className="docs-list">
@@ -504,7 +543,25 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-22',
+      id: 'section-23',
+      title: 'Pasos de un formulario',
+      content: (
+        <ul className="docs-list">
+          <li>Se modifica la estructura HTML del componente.</li>
+          <li>
+            Las clases <code>.step-next</code>, <code>.step-text</code>, <code>.steps</code>, <code>.step</code> se
+            reemplazan por <code>.step-subtitle</code>, <code>.steps-detail</code>, <code>.steps-items</code>,{' '}
+            <code>.step-item</code>, respectivamente.
+          </li>
+          <li>
+            Se agrega etiqueta div con clase <code>.steps</code>, el cual envuelve el div con clase{' '}
+            <code>.steps-items</code> y el span con clase <code>.steps-detail</code>.
+          </li>
+        </ul>
+      ),
+    },
+    {
+      id: 'section-24',
       title: 'Pestaña',
       content: (
         <ul className="docs-list">
@@ -532,7 +589,62 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-23',
+      id: 'section-25',
+      title: 'Pie de Página (Footer)',
+      content: (
+        <ul className="docs-list">
+          <li>
+            Se modifica la clase <code>d-lg-inline</code> por <code>d-md-inline</code>, para que realice el cambio de
+            imagen en 768px.
+          </li>
+        </ul>
+      ),
+    },
+    {
+      id: 'section-26',
+      title: 'Spinner',
+      content: (
+        <ul className="docs-list">
+          <li>
+            Se agrega la variante tertiary en spinner (<code>.text-tertiary</code>).
+          </li>
+          <li>La variante info no forma parte de las variantes de spinner de Obelisco.</li>
+        </ul>
+      ),
+    },
+    {
+      id: 'section-27',
+      title: 'Tarjetas',
+      content: (
+        <ul className="docs-list">
+          <li>
+            Quedan deprecadas las clases <code>.card-simple</code> y <code>.card-lg</code>.
+          </li>
+          <li>
+            En el caso de tarjeta Temática, las clases <code>.card-horizonal</code>, <code>.card-simple</code> y{' '}
+            <code>.card-lg</code> se reemplazan por la clase <code>.thematic</code>. Se agrega al enlace de la tarjeta
+            la clase <code>.card-title-link</code>.
+          </li>
+          <li>
+            Las clases <code>.card-img-left</code> y <code>.card-img-top</code> se reemplazan por la clase{' '}
+            <code>.card-img</code>.
+          </li>
+          <li>
+            La clase <code>.card-icon-left</code> se reemplazan por <code>.card-icon</code>.
+          </li>
+          <li>
+            Las clases <code>.card-deck</code>, <code>.max-cards-3</code> y <code>.card-column</code> quedan deprecadas
+            y se reemplazan por <code>.card-items-3</code>.
+          </li>
+          <li>
+            Las clases <code>.card-deck</code>, <code>.max-cards-2</code> y <code>.card-column</code> quedan deprecadas
+            y se reemplazan por <code>.card-items-2</code>.
+          </li>
+        </ul>
+      ),
+    },
+    {
+      id: 'section-28',
       title: 'Tipografía',
       content: (
         <ul className="docs-list">
@@ -555,8 +667,8 @@ const UpdateComponents: React.FC = () => {
             La clase <code>.font-italic</code> se renombro a <code>.fst-italic</code>.{' '}
           </li>
           <li>
-            Se crearon las clases <code>.underline-1</code> y <code>.underline-2</code> las cuales dan un subrayado al
-            elemento. En el primer caso, el grosor del subrayado es 1px y en el segundo caso es 2px.{' '}
+            Se creó la clase <code>.underline-2</code> la cuál da un subrayado al elemento. El grosor del subrayado es
+            2px.{' '}
           </li>
           <li>
             Respecto a las citas, se reemplaza la etiqueta <code>small</code> (utilizada para la información del autor)
@@ -566,7 +678,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-24',
+      id: 'section-29',
       title: 'Accesibilidad',
       content: (
         <ul className="docs-list">
@@ -577,7 +689,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-25',
+      id: 'section-30',
       title: 'Comenzar a usar componentes',
       content: (
         <>

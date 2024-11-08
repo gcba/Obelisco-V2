@@ -4,7 +4,10 @@ export const WITHOUT_DIVIDERS = `
         <thead>
             <tr>
             <th scope="col" class="tb-number">Número</th>
-            <th scope="col" class="tb-text">Texto</th>
+            <th scope="col" class="tb-text">
+              <span class="th-title">Título de la celda</span>
+              <span class="th-subtitle">Subtítulo de hasta 2 líneas donde se puede sumar contenido de soporte</span>
+            </th>
             <th scope="col" class="tb-link">Enlace</th>
             <th scope="col" class="tb-button">Botón</th>
             <th scope="col" class="tb-check">Checkbox</th>
@@ -21,7 +24,7 @@ export const WITHOUT_DIVIDERS = `
                 </a>
             </td>
             <td>
-                <button type="button" class="btn btn-primary">Botón</button>
+                <button type="button" class="btn btn-outline-tertiary">Botón</button>
             </td>
             <td>
                 <div class="form-checkbox">
@@ -48,7 +51,7 @@ export const WITHOUT_DIVIDERS = `
                 </a>
             </td>
             <td>
-                <button type="button" class="btn btn-primary">Botón</button>
+                <button type="button" class="btn btn-outline-tertiary">Botón</button>
             </td>
             <td>
                 <div class="form-checkbox">
@@ -75,7 +78,7 @@ export const WITHOUT_DIVIDERS = `
                 </a>
             </td>
             <td>
-                <button type="button" class="btn btn-primary">Botón</button>
+                <button type="button" class="btn btn-outline-tertiary">Botón</button>
             </td>
             <td>
                 <div class="form-checkbox">
@@ -102,7 +105,7 @@ export const WITHOUT_DIVIDERS = `
                 </a>
             </td>
             <td>
-                <button type="button" class="btn btn-primary">Botón</button>
+                <button type="button" class="btn btn-outline-tertiary">Botón</button>
             </td>
             <td>
                 <div class="form-checkbox">
@@ -147,7 +150,7 @@ export const WITH_DIVIDERS = `
                 </a>
             </td>
             <td>
-                <button type="button" class="btn btn-primary">Botón</button>
+                <button type="button" class="btn btn-outline-tertiary">Botón</button>
             </td>
             <td>
                 <div class="form-checkbox">
@@ -174,7 +177,7 @@ export const WITH_DIVIDERS = `
                 </a>
             </td>
             <td>
-                <button type="button" class="btn btn-primary">Botón</button>
+                <button type="button" class="btn btn-outline-tertiary">Botón</button>
             </td>
             <td>
                 <div class="form-checkbox">
@@ -201,7 +204,7 @@ export const WITH_DIVIDERS = `
                 </a>
             </td>
             <td>
-                <button type="button" class="btn btn-primary">Botón</button>
+                <button type="button" class="btn btn-outline-tertiary">Botón</button>
             </td>
             <td>
                 <div class="form-checkbox">
@@ -228,7 +231,7 @@ export const WITH_DIVIDERS = `
                 </a>
             </td>
             <td>
-                <button type="button" class="btn btn-primary">Botón</button>
+                <button type="button" class="btn btn-outline-tertiary">Botón</button>
             </td>
             <td>
                 <div class="form-checkbox">
@@ -273,7 +276,7 @@ export const WITH_ZEBRA = `
                 </a>
             </td>
             <td>
-                <button type="button" class="btn btn-primary">Botón</button>
+                <button type="button" class="btn btn-outline-tertiary">Botón</button>
             </td>
             <td>
                 <div class="form-checkbox">
@@ -300,7 +303,7 @@ export const WITH_ZEBRA = `
                 </a>
             </td>
             <td>
-                <button type="button" class="btn btn-primary">Botón</button>
+                <button type="button" class="btn btn-outline-tertiary">Botón</button>
             </td>
             <td>
                 <div class="form-checkbox">
@@ -327,7 +330,7 @@ export const WITH_ZEBRA = `
                 </a>
             </td>
             <td>
-                <button type="button" class="btn btn-primary">Botón</button>
+                <button type="button" class="btn btn-outline-tertiary">Botón</button>
             </td>
             <td>
                 <div class="form-checkbox">
@@ -354,7 +357,7 @@ export const WITH_ZEBRA = `
                 </a>
             </td>
             <td>
-                <button type="button" class="btn btn-primary">Botón</button>
+                <button type="button" class="btn btn-outline-tertiary">Botón</button>
             </td>
             <td>
                 <div class="form-checkbox">
@@ -684,7 +687,7 @@ export const TABLE_BUTTON = `
                 </td>
                 <td>Texto predeterminado</td>
                 <td>
-                    <button type="button" class="btn btn-primary">Botón</button>
+                    <button type="button" class="btn btn-outline-tertiary">Botón</button>
                 </td>
                 <td>Texto predeterminado</td>
                 <td>Texto predeterminado</td>
@@ -693,7 +696,7 @@ export const TABLE_BUTTON = `
                 <td>Texto predeterminado</td>
                 <td>Texto predeterminado</td>
                 <td>
-                    <button type="button" class="btn btn-primary">Botón</button>
+                    <button type="button" class="btn btn-outline-tertiary">Botón</button>
                 </td>
                 <td>Texto predeterminado</td>
                 <td>Texto predeterminado</td>
@@ -702,7 +705,7 @@ export const TABLE_BUTTON = `
                 <td>Texto predeterminado</td>
                 <td>Texto predeterminado</td>
                 <td>
-                    <button type="button" class="btn btn-primary">Botón</button>
+                    <button type="button" class="btn btn-outline-tertiary">Botón</button>
                 </td>
                 <td>Texto predeterminado</td>
                 <td>Texto predeterminado</td>
@@ -711,7 +714,7 @@ export const TABLE_BUTTON = `
                 <td>Texto predeterminado</td>
                 <td>Texto predeterminado</td>
                 <td>
-                    <button type="button" class="btn btn-primary">Botón</button>
+                    <button type="button" class="btn btn-outline-tertiary">Botón</button>
                 </td>
                 <td>Texto predeterminado</td>
                 <td>Texto predeterminado</td>

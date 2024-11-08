@@ -1,10 +1,10 @@
 .max-items-1 {
   @extend .row;
-  @media screen and (width < 768px) {
+  @include media-breakpoint-down(md) {
     row-gap: 1rem;
   }
   @extend .row-cols-1;
-  @media screen and (width >= 768px) and (width <= 1199px) {
+  @include media-breakpoint-between(md, xl) {
     row-gap: 1.5rem;
   }
   row-gap: 2rem;
@@ -26,7 +26,7 @@
 }
 
 // Entre 768px y 1199px (tablet) el gap entre elementos es de 24px, por lo que se modifica el padding y margins, manteniendo el area diseñable en 696px (entre 768px y 991px) y 936px (entre 992px y 1199px)
-@media (width >= 768px) and (width <= 1199px) {
+@include media-breakpoint-between(md, xl) {
   .container-md,
   .container-sm,
   .container {
@@ -45,7 +45,7 @@
   }
 }
 
-// Disposición de accesos
+// Disposición de Accesos
 
 // 1 Columna
 .access-items-1 {
@@ -72,5 +72,44 @@
   &.row-cols-md-1 {
     @extend .row-cols-md-1;
     @extend .row-cols-xl-4;
+  }
+}
+
+// Disposición de Tarjetas
+
+// 2 Columnas
+.card-items-2 {
+  @extend .max-items-2;
+}
+
+// 3 Columnas
+.card-items-3 {
+  @extend .max-items-3;
+}
+
+.card-items-2,
+.card-items-3 {
+  .col .card {
+    height: 100%;
+  }
+}
+
+// Disposición de Destacado Conjunto
+
+.highlighted-items-2 {
+  @extend .row;
+  @extend .row-cols-1;
+  @extend .row-cols-xl-2;
+  @include media-breakpoint-down(md) {
+    row-gap: 1rem;
+  }
+  @include media-breakpoint-between(md, xl) {
+    row-gap: 1.5rem;
+  }
+  row-gap: 2rem;
+  @include media-breakpoint-down(xl) {
+    .col {
+      padding: 0;
+    }
   }
 }

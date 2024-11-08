@@ -38,9 +38,11 @@ npm update @gcba/obelisco-v2
 
 ```sh
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gcba/Obelisco-v2@main/dist/styles.css" />
+<link href="https://cdn.jsdelivr.net/npm/@gcba/obelisco-v2@X.X.X/dist/styles.min.css" rel="stylesheet" />
 
 ```
+
+Si no instalás Obelisco de forma local, podés incluir los estilos directamente desde nuestra CDN. Sólo tenés que reemplazar la sección de la url en la que figura &quot;<code>X.X.X</code>&quot; por el número de la versión que desees utilizar. Te recomendamos usar la <a href="https://www.jsdelivr.com/package/npm/@gcba/obelisco-v2" target="_blank" rel="noopener noreferrer">versión más reciente</a>.
 
 ## Importación
 
@@ -50,6 +52,13 @@ Importar los estilos en el archivo principal del proyecto:
 @import "@gcba/obelisco-v2/dist/styles.css";
 o
 <link rel="stylesheet" href="ruta/al/proyecto/dist/styles.css" />
+```
+
+Si estas utilizando versiones anteriores de webpack, (Webpack 4 o inferiores), el prefijo ~ es necesario:
+
+```sh
+@import "~@gcba/obelisco-v2/dist/styles.css";
+
 ```
 
 ### Tipografías

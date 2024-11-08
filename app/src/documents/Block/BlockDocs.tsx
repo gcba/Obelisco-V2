@@ -1,4 +1,5 @@
 import CodeBox from '@/components/CodeBox';
+import LinkClient from '@/components/LinkClient';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
@@ -33,12 +34,10 @@ const BlockDocs: React.FC = () => {
         <CodeBox codeHTML={BLOCK}>
           <div className="container">
             <div className="col-12 col-xl-6">
-              <div className="card-block position-sticky" style={{ top: '48px' }}>
-                <div className="card-body">
+              <div className="block position-sticky" style={{ top: '48px' }}>
+                <div className="block-body">
                   <h2 className="block-title">Iniciá el trámite y completá todos los pasos</h2>
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-lg btn-primary btn-block">
-                    Iniciar trámite
-                  </a>
+                  <LinkClient className="btn btn-lg btn-primary btn-block">Iniciar trámite</LinkClient>
                 </div>
               </div>
             </div>
@@ -53,8 +52,8 @@ const BlockDocs: React.FC = () => {
         <CodeBox codeHTML={BLOCK_DESCRIPTION}>
           <div className="container">
             <div className="col-12 col-xl-6">
-              <div className="card-block position-sticky" style={{ top: '48px' }}>
-                <div className="card-body">
+              <div className="block position-sticky" style={{ top: '48px' }}>
+                <div className="block-body">
                   <h2 className="block-title">Iniciá el trámite y completá todos los pasos</h2>
                   <p className="block-text">Si tenés un trámite iniciado podés continuarlo desde acá.</p>
                   <button type="button" className="btn btn-lg btn-primary btn-block">
@@ -74,8 +73,8 @@ const BlockDocs: React.FC = () => {
         <CodeBox codeHTML={BLOCK_PROGRESS}>
           <div className="container">
             <div className="col-12 col-xl-6">
-              <div className="card-block position-sticky" style={{ top: '48px' }}>
-                <div className="card-body">
+              <div className="block position-sticky" style={{ top: '48px' }}>
+                <div className="block-body">
                   <h2 className="block-title">Este es tu progreso en el trámite</h2>
                   <div className="progress">
                     <div
@@ -87,9 +86,7 @@ const BlockDocs: React.FC = () => {
                       style={{ width: '25%' }}
                     ></div>
                   </div>
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-lg btn-primary btn-block">
-                    Continuar trámite
-                  </a>
+                  <LinkClient className="btn btn-lg btn-primary btn-block">Continuar trámite</LinkClient>
                 </div>
               </div>
             </div>
@@ -104,8 +101,8 @@ const BlockDocs: React.FC = () => {
         <CodeBox codeHTML={BLOCK_BG}>
           <div className="container">
             <div className="col-12 col-xl-6">
-              <div className="card-block position-sticky bg-light" style={{ top: '48px' }}>
-                <div className="card-body">
+              <div className="block position-sticky bg-light" style={{ top: '48px' }}>
+                <div className="block-body">
                   <h2 className="block-title">Iniciá el trámite y completá todos los pasos</h2>
                   <p className="block-text">Si tenés un trámite iniciado podés continuarlo desde acá.</p>
                   <button type="button" className="btn btn-lg btn-primary btn-block">

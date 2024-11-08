@@ -1,321 +1,3 @@
-export const DROPDOWN_CHECKBOX = `
-<div class="dropdown">
-  <button
-    type="button"
-    class="btn btn-dropdown btn-dropdown-border"
-    data-bs-toggle="dropdown"
-    aria-expanded="false"
-    data-bs-auto-close="outside"
-  >
-    <span
-      class="material-symbols-rounded o-icon"
-      aria-label="hidden"
-    >
-      person
-    </span>
-    <span class="btn-dropdown-text ellipsis-1">Desplegable</span>
-    <span
-      class="material-symbols-rounded btn-dropdown-icon"
-      aria-label="hidden"
-    >
-      expand_more
-    </span>
-  </button>
-  <div class="dropdown-menu">
-    <div class="form-checkbox">
-      <input
-        class="form-checkbox-input"
-        type="checkbox"
-        name="dropdownCheckbox"
-        id="option-1"
-        value="option-1"
-        />
-      <label class="form-checkbox-label" for="option-1">
-        Opción de selección múltiple 1
-      </label>
-    </div>
-    <div class="form-checkbox">
-      <input
-        class="form-checkbox-input"
-        type="checkbox"
-        name="dropdownCheckbox"
-        id="option-2"
-        value="option-2"
-        />
-      <label class="form-checkbox-label" for="option-2">
-        Opción de selección múltiple 2
-      </label>
-    </div>
-    <div class="form-checkbox">
-      <input
-        class="form-checkbox-input"
-        type="checkbox"
-        name="dropdownCheckbox"
-        id="option-3"
-        value="option-3"
-        disabled
-        />
-      <label class="form-checkbox-label" for="option-3">
-        Opción de selección múltiple 3
-      </label>
-    </div>
-  </div>
-</div>
-`;
-export const DROPDOWN_RADIO = `
-  <div class="dropdown">
-    <button
-      type="button"
-      class="btn btn-dropdown btn-dropdown-border"
-      data-bs-toggle="dropdown"
-      aria-expanded="false"
-      data-bs-auto-close="outside"
-    >
-      <span
-        class="material-symbols-rounded o-icon"
-        aria-label="hidden"
-      >
-        person
-      </span>
-      <span class="btn-dropdown-text ellipsis-1">Desplegable</span>
-      <span
-        class="material-symbols-rounded btn-dropdown-icon"
-        aria-label="hidden"
-      >
-        expand_more
-      </span>
-    </button>
-    <div class="dropdown-menu">
-      <div class="form-radio reverse">
-        <input
-          class="form-radio-input"
-          type="radio"
-          name="dropdownRadio"
-          id="option-radio-1"
-          value="option-1"
-          />
-        <label class="form-radio-label" for="option-radio-1">
-          Opción de selección única 1
-        </label>
-      </div>
-      <div class="form-radio reverse">
-        <input
-          class="form-radio-input"
-          type="radio"
-          name="dropdownRadio"
-          id="option-radio-2"
-          value="option-2"
-          />
-        <label class="form-radio-label" for="option-radio-2">
-          Opción de selección única 2
-        </label>
-      </div>
-      <div class="form-radio reverse">
-        <input
-          class="form-radio-input"
-          type="radio"
-          name="dropdownRadio"
-          id="option-radio-3"
-          value="option-3"
-          disabled
-          />
-        <label class="form-radio-label" for="option-radio-3">
-          Opción de selección única 3
-        </label>
-      </div>
-    </div>
-  </div>
-`;
-export const DROPDOWN_RADIO_SIZES = `
-  <div class="dropdown dropdown-lg">
-    <button
-      type="button"
-      class="btn btn-dropdown btn-dropdown-border"
-      data-bs-toggle="dropdown"
-      aria-expanded="false"
-      data-bs-auto-close="outside"
-    >
-      <span
-        class="material-symbols-rounded o-icon"
-        aria-label="hidden"
-      >
-        person
-      </span>
-      <span class="btn-dropdown-text ellipsis-1">Desplegable</span>
-      <span
-        class="material-symbols-rounded btn-dropdown-icon"
-        aria-label="hidden"
-      >
-        expand_more
-      </span>
-    </button>
-    <div class="dropdown-menu">
-      <div class="form-radio reverse">
-        <input
-          class="form-radio-input"
-          type="radio"
-          name="dropdownRadioLg"
-          id="option-radio-lg-1"
-          value="option-1"
-          />
-        <label class="form-radio-label" for="option-radio-lg-1">
-          Opción de selección única 1
-        </label>
-      </div>
-      <div class="form-radio reverse">
-        <input
-          class="form-radio-input"
-          type="radio"
-          name="dropdownRadioLg"
-          id="option-radio-lg-2"
-          value="option-2"
-          />
-        <label class="form-radio-label" for="option-radio-lg-2">
-          Opción de selección única 2
-        </label>
-      </div>
-      <div class="form-radio reverse">
-        <input
-          class="form-radio-input"
-          type="radio"
-          name="dropdownRadioLg"
-          id="option-radio-lg-3"
-          value="option-3"
-          disabled
-          />
-        <label class="form-radio-label" for="option-radio-lg-3">
-          Opción de selección única 3
-        </label>
-      </div>
-    </div>
-  </div>
-  <br />
-  <div class="dropdown">
-    <button
-      type="button"
-      class="btn btn-dropdown btn-dropdown-border"
-      data-bs-toggle="dropdown"
-      aria-expanded="false"
-      data-bs-auto-close="outside"
-    >
-      <span
-        class="material-symbols-rounded o-icon"
-        aria-label="hidden"
-      >
-        person
-      </span>
-      <span class="btn-dropdown-text ellipsis-1">Desplegable</span>
-      <span
-        class="material-symbols-rounded btn-dropdown-icon"
-        aria-label="hidden"
-      >
-        expand_more
-      </span>
-    </button>
-    <div class="dropdown-menu">
-      <div class="form-radio reverse">
-        <input
-          class="form-radio-input"
-          type="radio"
-          name="dropdownRadioMd"
-          id="option-radio-md-1"
-          value="option-1"
-          />
-        <label class="form-radio-label" for="option-radio-md-1">
-          Opción de selección única 1
-        </label>
-      </div>
-      <div class="form-radio reverse">
-        <input
-          class="form-radio-input"
-          type="radio"
-          name="dropdownRadioMd"
-          id="option-radio-md-2"
-          value="option-2"
-          />
-        <label class="form-radio-label" for="option-radio-md-2">
-          Opción de selección única 2
-        </label>
-      </div>
-      <div class="form-radio reverse">
-        <input
-          class="form-radio-input"
-          type="radio"
-          name="dropdownRadioMd"
-          id="option-radio-md-3"
-          value="option-3"
-          disabled
-          />
-        <label class="form-radio-label" for="option-radio-md-3">
-          Opción de selección única 3
-        </label>
-      </div>
-    </div>
-  </div>
-  <br />
-  <div class="dropdown dropdown-sm">
-    <button
-      type="button"
-      class="btn btn-dropdown btn-dropdown-border"
-      data-bs-toggle="dropdown"
-      aria-expanded="false"
-      data-bs-auto-close="outside"
-    >
-      <span
-        class="material-symbols-rounded o-icon"
-        aria-label="hidden"
-      >
-        person
-      </span>
-      <span class="btn-dropdown-text ellipsis-1">Desplegable</span>
-      <span
-        class="material-symbols-rounded btn-dropdown-icon"
-        aria-label="hidden"
-      >
-        expand_more
-      </span>
-    </button>
-    <div class="dropdown-menu">
-      <div class="form-radio reverse">
-        <input
-          class="form-radio-input"
-          type="radio"
-          name="dropdownRadioSm"
-          id="option-radio-sm-1"
-          value="option-1"
-          />
-        <label class="form-radio-label" for="option-radio-sm-1">
-          Opción de selección única 1
-        </label>
-      </div>
-      <div class="form-radio reverse">
-        <input
-          class="form-radio-input"
-          type="radio"
-          name="dropdownRadioSm"
-          id="option-radio-sm-2"
-          value="option-2"
-          />
-        <label class="form-radio-label" for="option-radio-sm-2">
-          Opción de selección única 2
-        </label>
-      </div>
-      <div class="form-radio reverse">
-        <input
-          class="form-radio-input"
-          type="radio"
-          name="dropdownRadioSm"
-          id="option-radio-sm-3"
-          value="option-3"
-          disabled
-          />
-        <label class="form-radio-label" for="option-radio-3">
-          Opción de selección única 3
-        </label>
-      </div>
-    </div>
-  </div>
-`;
 export const DROPDOWN_RADIO_SIZES_MD = `
   <div class="dropdown">
     <button
@@ -325,19 +7,9 @@ export const DROPDOWN_RADIO_SIZES_MD = `
       aria-expanded="false"
       data-bs-auto-close="outside"
     >
-      <span
-        class="material-symbols-rounded o-icon"
-        aria-label="hidden"
-      >
-        person
-      </span>
+      <span class="material-symbols-rounded o-icon" aria-label="hidden">add</span>
       <span class="btn-dropdown-text ellipsis-1">Desplegable</span>
-      <span
-        class="material-symbols-rounded btn-dropdown-icon"
-        aria-label="hidden"
-      >
-        expand_more
-      </span>
+      <span class="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">expand_more</span>
     </button>
     <div class="dropdown-menu">
       <div class="form-radio reverse">
@@ -381,27 +53,17 @@ export const DROPDOWN_RADIO_SIZES_MD = `
   </div>
 `;
 export const DROPDOWN_RADIO_SIZES_LG = `
-  <div class="dropdown dropdown-lg">
+  <div class="dropdown">
     <button
       type="button"
-      class="btn btn-dropdown btn-dropdown-border"
+      class="btn btn-dropdown btn-dropdown-border btn-lg"
       data-bs-toggle="dropdown"
       aria-expanded="false"
       data-bs-auto-close="outside"
     >
-      <span
-        class="material-symbols-rounded o-icon"
-        aria-label="hidden"
-      >
-        person
-      </span>
+      <span class="material-symbols-rounded o-icon" aria-label="hidden">add</span>
       <span class="btn-dropdown-text ellipsis-1">Desplegable</span>
-      <span
-        class="material-symbols-rounded btn-dropdown-icon"
-        aria-label="hidden"
-      >
-        expand_more
-      </span>
+      <span class="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">expand_more</span>
     </button>
     <div class="dropdown-menu">
       <div class="form-radio reverse">
@@ -445,27 +107,17 @@ export const DROPDOWN_RADIO_SIZES_LG = `
   </div>
 `;
 export const DROPDOWN_RADIO_SIZES_SM = `
-  <div class="dropdown dropdown-sm">
+  <div class="dropdown">
     <button
       type="button"
-      class="btn btn-dropdown btn-dropdown-border"
+      class="btn btn-dropdown btn-dropdown-border btn-sm"
       data-bs-toggle="dropdown"
       aria-expanded="false"
       data-bs-auto-close="outside"
     >
-      <span
-        class="material-symbols-rounded o-icon"
-        aria-label="hidden"
-      >
-        person
-      </span>
+      <span class="material-symbols-rounded o-icon" aria-label="hidden">add</span>
       <span class="btn-dropdown-text ellipsis-1">Desplegable</span>
-      <span
-        class="material-symbols-rounded btn-dropdown-icon"
-        aria-label="hidden"
-      >
-        expand_more
-      </span>
+      <span class="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">expand_more</span>
     </button>
     <div class="dropdown-menu">
       <div class="form-radio reverse">
@@ -517,19 +169,9 @@ export const DROPDOWN_CHECKBOX_SIZES_MD = `
       aria-expanded="false"
       data-bs-auto-close="outside"
     >
-      <span
-        class="material-symbols-rounded o-icon"
-        aria-label="hidden"
-      >
-        person
-      </span>
+      <span class="material-symbols-rounded o-icon" aria-label="hidden">add</span>
       <span class="btn-dropdown-text ellipsis-1">Desplegable</span>
-      <span
-        class="material-symbols-rounded btn-dropdown-icon"
-        aria-label="hidden"
-      >
-        expand_more
-      </span>
+      <span class="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">expand_more</span>
     </button>
     <div class="dropdown-menu">
       <div class="form-checkbox">
@@ -573,27 +215,17 @@ export const DROPDOWN_CHECKBOX_SIZES_MD = `
   </div>
 `;
 export const DROPDOWN_CHECKBOX_SIZES_SM = `
-  <div class="dropdown dropdown-sm">
+  <div class="dropdown">
     <button
       type="button"
-      class="btn btn-dropdown btn-dropdown-border"
+      class="btn btn-dropdown btn-dropdown-border btn-sm"
       data-bs-toggle="dropdown"
       aria-expanded="false"
       data-bs-auto-close="outside"
     >
-      <span
-        class="material-symbols-rounded o-icon"
-        aria-label="hidden"
-      >
-        person
-      </span>
+      <span class="material-symbols-rounded o-icon" aria-label="hidden">add</span>
       <span class="btn-dropdown-text ellipsis-1">Desplegable</span>
-      <span
-        class="material-symbols-rounded btn-dropdown-icon"
-        aria-label="hidden"
-      >
-        expand_more
-      </span>
+      <span class="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">expand_more</span>
     </button>
     <div class="dropdown-menu">
       <div class="form-checkbox">
@@ -637,27 +269,17 @@ export const DROPDOWN_CHECKBOX_SIZES_SM = `
   </div> 
 `;
 export const DROPDOWN_CHECKBOX_SIZES_LG = `
-  <div class="dropdown dropdown-lg">
+  <div class="dropdown">
     <button
       type="button"
-      class="btn btn-dropdown btn-dropdown-border"
+      class="btn btn-dropdown btn-dropdown-border btn-lg"
       data-bs-toggle="dropdown"
       aria-expanded="false"
       data-bs-auto-close="outside"
     >
-      <span
-        class="material-symbols-rounded o-icon"
-        aria-label="hidden"
-      >
-        person
-      </span>
+      <span class="material-symbols-rounded o-icon" aria-label="hidden">add</span>
       <span class="btn-dropdown-text ellipsis-1">Desplegable</span>
-      <span
-        class="material-symbols-rounded btn-dropdown-icon"
-        aria-label="hidden"
-      >
-        expand_more
-      </span>
+      <span class="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">expand_more</span>
     </button>
     <div class="dropdown-menu">
       <div class="form-checkbox">
@@ -710,19 +332,9 @@ export const DROPDOWN_RADIO_HTML = `
       data-bs-auto-close="outside"
       id="btnDropdownRadioJs"
     >
-      <span
-        class="material-symbols-rounded o-icon"
-        aria-label="hidden"
-      >
-        person
-      </span>
+      <span class="material-symbols-rounded o-icon" aria-label="hidden">add</span>
       <span class="btn-dropdown-text ellipsis-1" id="btnDropdownRadioTextJs">Desplegable</span>
-      <span
-        class="material-symbols-rounded btn-dropdown-icon"
-        aria-label="hidden"
-      >
-        expand_more
-      </span>
+      <span class="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">expand_more</span>
     </button>
     <div class="dropdown-menu">
       <div class="form-radio reverse">
@@ -775,22 +387,12 @@ export const DROPDOWN_CHECKBOX_HTML = `
       data-bs-auto-close="outside"
       id="btnDropdownCheckboxJs"
     >
-      <span
-        class="material-symbols-rounded o-icon"
-        aria-label="hidden"
-      >
-        person
-      </span>
+      <span class="material-symbols-rounded o-icon" aria-label="hidden">add</span>
       <span class="btn-dropdown-text ellipsis-1">Desplegable
         <span id="counterDropdownCheckboxJs"></span>
       </span>
       
-      <span
-        class="material-symbols-rounded btn-dropdown-icon"
-        aria-label="hidden"
-      >
-        expand_more
-      </span>
+      <span class="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">expand_more</span>
     </button>
     <div class="dropdown-menu">
       <div class="form-checkbox">

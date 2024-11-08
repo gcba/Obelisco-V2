@@ -14,6 +14,22 @@ export const PAGINATION_DESCRIPTION = `<div class="pagination">
     </div>
   </div>
 </div>`;
+export const PAGINATION_DISABLED = `<div class="pagination">
+  <div class="page-navigation">
+    <div class="page-item disabled">
+      <a class="btn page-link" href="#">
+        <span class="page-previous-icon" aria-hidden="true"></span>
+        <span class="page-next-text">Anterior</span>
+      </a>
+    </div>
+    <div class="page-item disabled">
+      <a class="btn page-link" href="#">
+        <span class="page-next-text">Siguiente</span>
+        <span class="page-next-icon" aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>
+</div>`;
 
 export const PAGINATION_INITIAL = `<nav aria-label="Ejemplo de paginado numerado inicial">
   <ul class="pagination">

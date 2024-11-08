@@ -1,4 +1,5 @@
 import CodeBox from '@/components/CodeBox';
+import LinkClient from '@/components/LinkClient';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
@@ -38,11 +39,7 @@ const BannerDocs: React.FC = () => {
             <div className="banner">
               <div className="banner-content">
                 <p className="banner-text">
-                  Esta descripción de banner <strong>puede tener énfasis</strong> y{' '}
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    enlace
-                  </a>
-                  .
+                  Esta descripción de banner <strong>puede tener énfasis</strong> y <LinkClient>enlace</LinkClient>.
                 </p>
               </div>
             </div>
@@ -52,12 +49,7 @@ const BannerDocs: React.FC = () => {
             <div className="banner banner-dark">
               <div className="banner-content">
                 <p className="banner-text">
-                  Esta descripción de banner <strong>puede tener énfasis</strong> y{' '}
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    {' '}
-                    enlace
-                  </a>
-                  .
+                  Esta descripción de banner <strong>puede tener énfasis</strong> y <LinkClient>enlace</LinkClient>.
                 </p>
               </div>
             </div>
@@ -74,16 +66,14 @@ const BannerDocs: React.FC = () => {
             <div className="banner">
               <div className="banner-content">
                 <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                  cookie
+                  departure_board
                 </span>
                 <p className="banner-text">
                   Este banner tiene un solo botón y <strong>puede tener énfasis</strong>. Se truncan los textos que
                   superen más de una línea de texto.
                 </p>
                 <div className="banner-actions">
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary">
-                    Botón
-                  </a>
+                  <LinkClient className="btn btn-sm btn-primary">Botón</LinkClient>
                 </div>
               </div>
             </div>
@@ -93,16 +83,14 @@ const BannerDocs: React.FC = () => {
             <div className="banner banner-dark">
               <div className="banner-content">
                 <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                  cookie
+                  departure_board
                 </span>
                 <p className="banner-text">
                   Este banner tiene un solo botón y <strong>puede tener énfasis</strong>. Se truncan los textos que
                   superen más de una línea de texto.
                 </p>
                 <div className="banner-actions">
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary">
-                    Botón
-                  </a>
+                  <LinkClient className="btn btn-sm btn-primary">Botón</LinkClient>
                 </div>
               </div>
             </div>
@@ -126,12 +114,8 @@ const BannerDocs: React.FC = () => {
                   superen más de una línea de texto.
                 </p>
                 <div className="banner-actions">
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary">
-                    Botón
-                  </a>
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-secondary">
-                    Botón
-                  </a>
+                  <LinkClient className="btn btn-sm btn-primary">Botón</LinkClient>
+                  <LinkClient className="btn btn-sm btn-outline-primary">Botón</LinkClient>
                 </div>
               </div>
             </div>
@@ -148,12 +132,8 @@ const BannerDocs: React.FC = () => {
                   superen más de una línea de texto.
                 </p>
                 <div className="banner-actions">
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-primary">
-                    Botón
-                  </a>
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-tertiary">
-                    Botón
-                  </a>
+                  <LinkClient className="btn btn-sm btn-primary">Botón</LinkClient>
+                  <LinkClient className="btn btn-sm btn-outline-light">Botón</LinkClient>
                 </div>
               </div>
             </div>

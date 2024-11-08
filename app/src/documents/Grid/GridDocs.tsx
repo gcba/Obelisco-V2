@@ -434,15 +434,45 @@ const GridDocs: React.FC = () => {
             <br />
             <div className="container text-white text-center">
               <div className="row">
-                <div className="col-12 col-lg-8">
-                  <div className="bg-primary py-2">col-12 col-lg-8</div>
+                <div className="col-12 col-xl-8">
+                  <div className="bg-primary py-2">col-12 col-xl-8</div>
                 </div>
-                <div className="col-12 col-lg-4">
-                  <div className="bg-primary py-2">col-12 col-lg-4</div>
+                <div className="col-12 col-xl-4">
+                  <div className="bg-primary py-2">col-12 col-xl-4</div>
                 </div>
               </div>
             </div>
           </CodeBox>
+        </>
+      ),
+      h1: false,
+    },
+    {
+      id: 'section-1',
+      title: 'Columnas',
+      content: (
+        <>
+          <p>
+            Donde <code>{`{breakpoint}`}</code> es uno de: <code>sm, md, lg, xl, xxl</code>. <br />Y{' '}
+            <code>{`{quantity}`}</code> es uno de: <code>1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12</code>.
+          </p>
+
+          <p className="mt-3">
+            Para <code>xs</code>:
+          </p>
+          <ul className="docs-list">
+            <li>
+              <code>{`col-{breakpoint}`}</code>
+            </li>
+          </ul>
+          <p className="mt-3">
+            Para<code> sm, md, lg, xl y xxl</code>:
+          </p>
+          <ul className="docs-list">
+            <li>
+              <code>{`col-{breakpoint}-{quantity}`}</code>
+            </li>
+          </ul>
         </>
       ),
       h1: false,

@@ -1,5 +1,5 @@
-/* === Titulos | Headings === */
-/* font-size Titulos */
+// Titulos | Headings
+// font-size Titulos
 $h1-font-size: 2.5rem;
 $h2-font-size: 2.25rem;
 $h3-font-size: 2rem;
@@ -9,14 +9,16 @@ $h6-font-size: 1.25rem;
 $h1-font-size-mobile: 2.375rem;
 $h2-font-size-mobile: 2.125rem;
 $h3-font-size-mobile: 1.875rem;
-/* line-height Titulos */
+
+// line-height Titulos
 $h1-line-height: 3rem;
 $h2-line-height: 2.75rem;
 $h3-line-height: 2.75rem;
 $h4-line-height: 2.25rem;
 $h5-line-height: 2rem;
 $h6-line-height: 1.75rem;
-/* font-weight Titulos */
+
+// font-weight Titulos
 $h1-font-weight: $font-weight-bold;
 $h2-font-weight: $font-weight-semibold;
 $h3-font-weight: $font-weight-semibold;
@@ -62,16 +64,18 @@ $heading-sizes-mobile: (
   3: $h3-font-size-mobile,
 );
 
-/* === Titulares === */
-/* font-size Titulares */
+// === Titulares ===
+// font-size Titulares
 $lg-headline-fs: 1.25rem;
 $md-headline-fs: 1.125rem;
 $sm-headline-fs: 1rem;
-/* line-height Titulares */
+
+// line-height Titulares
 $lg-headline-lh: 1.5rem;
 $md-headline-lh: 1.5rem;
 $sm-headline-lh: 1.25rem;
-/* font-weight Titulares */
+
+// font-weight Titulares
 $lg-headline-fw: $font-weight-bold;
 $md-headline-fw: $font-weight-semibold;
 $sm-headline-fw: $font-weight-semibold;
@@ -94,21 +98,23 @@ $headline-styles: (
   ),
 );
 
-/* === Cuerpo === */
-/* font-size Cuerpo */
+// Cuerpo
+// font-size Cuerpo
 $xl-body-fs: 1.25rem;
 $lg-body-fs: 1.125rem;
 $font-size-base: 1rem; //Se sobreescribe variable de Bootstrap5
 $md-body-fs: 1rem;
 $sm-body-fs: 0.875rem;
 $xs-body-fs: 0.75rem;
-/* line-height Cuerpo */
+
+// line-height Cuerpo
 $xl-body-lh: 1.75rem;
 $lg-body-lh: 1.75rem;
 $md-body-lh: 1.5rem;
 $sm-body-lh: 1.25rem;
 $xs-body-lh: 1rem;
-/* font-weight Cuerpo */
+
+// font-weight Cuerpo
 $xl-body-fw: $font-weight-normal;
 $lg-body-fw: $font-weight-normal;
 $md-body-fw: $font-weight-normal;
@@ -143,6 +149,6 @@ $body-styles: (
   ),
 );
 
-/* === Body - variables de Bootstrap === */
+// Body - variables de Bootstrap
 $font-size-base: $md-body-fs; // Se sobreescribe variable de Bootstrap
 $line-height-base: $md-body-lh; // Se sobreescribe variable de Bootstrap

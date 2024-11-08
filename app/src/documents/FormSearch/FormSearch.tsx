@@ -21,11 +21,13 @@ const FormSearchDocs: React.FC = () => {
           <div className="container">
             <div className="col-12 col-lg-6">
               <form>
-                <label htmlFor="search" className="form-label">
-                  Ejemplo Buscador
-                </label>
+                <div className="form-label-container">
+                  <label htmlFor="search" className="form-label">
+                    Ejemplo Buscador
+                  </label>
+                </div>
                 <div className="search-container">
-                  <input type="search" className="form-control input-search" id="search" placeholder="Buscador" />
+                  <input type="search" className="form-control input-search" id="search" placeholder="Buscar..." />
                   <button className="reset" type="reset" aria-label="Borrar"></button>
                 </div>
               </form>
@@ -42,15 +44,17 @@ const FormSearchDocs: React.FC = () => {
           <div className="container">
             <div className="col-12 col-lg-6">
               <form>
-                <label htmlFor="search-btn" className="form-label">
-                  Ejemplo Buscador con botón
-                </label>
+                <div className="form-label-container">
+                  <label htmlFor="search-btn" className="form-label">
+                    Ejemplo Buscador con botón
+                  </label>
+                </div>
                 <div className="search-container">
                   <input
                     type="search"
                     className="form-control input-search input-search-with-button"
                     id="search-btn"
-                    placeholder="Buscador"
+                    placeholder="Buscar..."
                   />
                   <button className="reset" type="reset" aria-label="Borrar"></button>
                   <button className="button-search" type="submit" aria-label="Buscar"></button>
@@ -69,15 +73,17 @@ const FormSearchDocs: React.FC = () => {
           <div className="container">
             <div className="col-12 col-lg-6">
               <form>
-                <label htmlFor="search-btn" className="form-label">
-                  Ejemplo buscador deshabilitado
-                </label>
+                <div className="form-label-container">
+                  <label htmlFor="search-btn" className="form-label disabled">
+                    Ejemplo buscador deshabilitado
+                  </label>
+                </div>
                 <div className="search-container">
                   <input
                     type="search"
                     className="form-control input-search input-search-with-button"
                     id="search-btn"
-                    placeholder="Buscador"
+                    placeholder="Buscar..."
                     disabled
                   />
                   <button className="reset" type="reset" aria-label="Borrar"></button>

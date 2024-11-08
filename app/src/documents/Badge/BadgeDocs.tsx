@@ -1,4 +1,5 @@
 import CodeBox from '@/components/CodeBox';
+import LinkClient from '@/components/LinkClient';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
@@ -18,8 +19,9 @@ const BadgeDocs: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              enlace.
+              enlace
             </a>
+            .
           </p>
         </>
       ),
@@ -52,15 +54,33 @@ const BadgeDocs: React.FC = () => {
           <div className="row justify-content-center">
             <div className="col-auto">
               <div className="grid gap-5">
-                <a href="#" className="badge badge-default">
-                  Etiqueta
-                </a>
-                <a href="#" className="badge hover badge-default">
-                  Etiqueta
-                </a>
-                <a href="#" className="badge focus badge-default">
-                  Etiqueta
-                </a>
+                <LinkClient className="badge badge-default">Etiqueta</LinkClient>
+                <LinkClient className="badge hover badge-default">Etiqueta</LinkClient>
+                <LinkClient className="badge focus badge-default">Etiqueta</LinkClient>
+              </div>
+
+              <div className="grid gap-5 mt-3">
+                <LinkClient className="badge badge-danger">Etiqueta</LinkClient>
+                <LinkClient className="badge hover badge-danger">Etiqueta</LinkClient>
+                <LinkClient className="badge focus badge-danger">Etiqueta</LinkClient>
+              </div>
+
+              <div className="grid gap-5 mt-3">
+                <LinkClient className="badge badge-info">Etiqueta</LinkClient>
+                <LinkClient className="badge hover badge-info">Etiqueta</LinkClient>
+                <LinkClient className="badge focus badge-info">Etiqueta</LinkClient>
+              </div>
+
+              <div className="grid gap-5 mt-3">
+                <LinkClient className="badge badge-success">Etiqueta</LinkClient>
+                <LinkClient className="badge hover badge-success">Etiqueta</LinkClient>
+                <LinkClient className="badge focus badge-success">Etiqueta</LinkClient>
+              </div>
+
+              <div className="grid gap-5 mt-3">
+                <LinkClient className="badge badge-warning">Etiqueta</LinkClient>
+                <LinkClient className="badge hover badge-warning">Etiqueta</LinkClient>
+                <LinkClient className="badge focus badge-warning">Etiqueta</LinkClient>
               </div>
             </div>
           </div>

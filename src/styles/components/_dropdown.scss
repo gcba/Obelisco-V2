@@ -1,28 +1,24 @@
-/* === Custom variables === */
-
+// Custom variables
 $dropdown-btn-gap: 0.25rem;
-
 $dropdown-item-padding: 0.5rem 0.75rem;
 $dropdown-item-padding-sm: 0.25rem 0.75rem;
 $dropdown-item-padding-lg: 0.75rem;
 $dropdown-item-btn-gap: 0.75rem;
-
 $dropdown-item-padding-left-checkbox: 3rem;
-$custom-checkbox-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13" fill="none"><path d="M5.1725 10.1625L1.7025 6.6925C1.3125 6.3025 0.6825 6.3025 0.2925 6.6925C-0.0975 7.0825 -0.0975 7.7125 0.2925 8.1025L4.4725 12.2825C4.8625 12.6725 5.4925 12.6725 5.8825 12.2825L16.4625 1.7025C16.8525 1.3125 16.8525 0.6825 16.4625 0.2925C16.0725 -0.0975 15.4425 -0.0975 15.0525 0.2925L5.1725 10.1625Z" fill="%23007bc7"/></svg>');
 $animation-toggle: transform 0.2s ease-in-out;
-
+$custom-checkbox-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13" fill="none"><path d="M5.1725 10.1625L1.7025 6.6925C1.3125 6.3025 0.6825 6.3025 0.2925 6.6925C-0.0975 7.0825 -0.0975 7.7125 0.2925 8.1025L4.4725 12.2825C4.8625 12.6725 5.4925 12.6725 5.8825 12.2825L16.4625 1.7025C16.8525 1.3125 16.8525 0.6825 16.4625 0.2925C16.0725 -0.0975 15.4425 -0.0975 15.0525 0.2925L5.1725 10.1625Z" fill="%23007bc7"/></svg>');
 $checkbox-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" style="&%2310;"><rect x="1" y="1" width="22" height="22" rx="2" fill="" stroke="" stroke-width="2" style="&%2310;"/><path d="M9.1725 16.1625L5.7025 12.6925C5.3125 12.3025 4.6825 12.3025 4.2925 12.6925C3.9025 13.0825 3.9025 13.7125 4.2925 14.1025L8.4725 18.2825C8.8625 18.6725 9.4925 18.6725 9.8825 18.2825L20.4625 7.7025C20.8525 7.3125 20.8525 6.6825 20.4625 6.2925C20.0725 5.9025 19.4425 5.9025 19.0525 6.2925L9.1725 16.1625Z" fill="%23274986"/></svg>');
 $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none"><g clip-path="url(%23clip0_2058_8076)"><path d="M9.00012 16.8663L5.50012 13.3663C5.11012 12.9763 4.49012 12.9763 4.10012 13.3663C3.71012 13.7563 3.71012 14.3763 4.10012 14.7663L8.29012 18.9563C8.68012 19.3463 9.31012 19.3463 9.70012 18.9563L20.3001 8.36633C20.6901 7.97633 20.6901 7.35633 20.3001 6.96633C19.9101 6.57633 19.2901 6.57633 18.9001 6.96633L9.00012 16.8663Z" fill="white"/></g><defs><clipPath id="clip0_2058_8076"><rect width="24" height="24" fill="white" transform="translate(0 0.666504)"/></clipPath></defs></svg>');
 
-/* === Custom styles === */
-
+// Custom styles
 //Mixin tamaños de dropdown
 @mixin dropdown-sm() {
   min-height: 2rem;
   padding: $dropdown-item-padding-sm;
 
   + .dropdown-menu {
-    .dropdown-item {
+    .dropdown-item,
+    .sub-dropdown .btn-dropdown {
       min-height: 2rem;
       padding: $dropdown-item-padding-sm;
     }
@@ -46,7 +42,8 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
   padding: $dropdown-item-padding-lg;
 
   + .dropdown-menu {
-    .dropdown-item {
+    .dropdown-item,
+    .sub-dropdown .btn-dropdown {
       min-height: 3rem;
       padding: $dropdown-item-padding-lg;
     }
@@ -177,8 +174,8 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
     border: 0;
     border-radius: $border-radius-lg;
     padding: 0;
-    margin-top: 0.25rem !important;
-    margin-bottom: 0.25rem !important;
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
     outline: $outline-border;
     @include dropdown-size('min');
     max-width: 348px;
@@ -221,19 +218,12 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
         }
       }
 
-      &:focus {
+      &:focus,
+      &:active {
         box-shadow: $focus-box-shadow;
         outline: $outline-transparent;
         background: $white;
         color: $body-color;
-      }
-
-      &.active,
-      &:active {
-        color: $white;
-        background: $active-color;
-        text-decoration: none;
-        box-shadow: none;
       }
 
       // dropdown-item de Cerrar sesión
@@ -250,7 +240,8 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
           }
         }
 
-        &:focus {
+        &:focus,
+        &:active {
           box-shadow: $focus-box-shadow-danger;
           outline: $outline-transparent;
           color: $danger;
@@ -261,13 +252,6 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
               text-decoration-color: transparent;
             }
           }
-        }
-
-        &:active {
-          color: $white;
-          background-color: $active-color-danger;
-          box-shadow: none;
-          outline-color: transparent;
         }
 
         &.disabled,
@@ -285,7 +269,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
       width: 100%;
 
       &:not(:last-child) {
-        margin-bottom: 0.25rem;
+        margin-bottom: 0.5rem;
       }
 
       &:hover {
@@ -330,7 +314,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
           ~ .form-checkbox-label,
           ~ .form-radio-label {
             padding-right: 0.75rem; //12px
-            box-shadow: 0 0 0 0.25rem $active-border-color;
+            box-shadow: $focus-box-shadow;
             outline: $outline-transparent;
           }
         }
@@ -346,7 +330,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
       }
 
       .form-radio-input {
-        margin: 0 0.875rem; //2px 14px
+        margin: 0 0.875rem;
         border-width: 0;
         height: 1.5rem; //24px
         width: 1.5rem; //24px
@@ -397,14 +381,14 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
           text-align: left;
         }
 
-        @include media-breakpoint-up(lg) {
+        @include media-breakpoint-up(xl) {
           .btn-dropdown-icon {
             transform: rotate(-90deg);
           }
         }
 
         &.show {
-          background-color: $grisulado-50;
+          background-color: $slate-50;
           color: $body-color;
         }
       }
@@ -417,11 +401,14 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
         margin: 0.25rem 0 !important;
 
         .dropdown-item {
-          @include media-breakpoint-down(lg) {
+          &:not(:last-child) {
+            margin-bottom: 0.5rem;
+          }
+          @include media-breakpoint-down(xl) {
             padding-left: 2rem;
           }
         }
-        @include media-breakpoint-up(lg) {
+        @include media-breakpoint-up(xl) {
           outline: $outline-border;
           position: absolute !important;
           inset: 0 auto auto 348px !important;
@@ -441,14 +428,14 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
       .dropdown.sub-dropdown {
         .btn-dropdown {
           .btn-dropdown-icon {
-            @include media-breakpoint-up(lg) {
+            @include media-breakpoint-up(xl) {
               transform: rotate(90deg);
             }
           }
         }
 
         .dropdown-menu {
-          @include media-breakpoint-up(lg) {
+          @include media-breakpoint-up(xl) {
             inset: 0 auto auto -356px !important;
             margin: 0 0.5rem 0 0 !important;
           }

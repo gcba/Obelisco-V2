@@ -1,4 +1,4 @@
-/* === Variable and mixins overides === */
+// Variable and mixins overides
 $switch-width: 48px;
 $switch-height: 24px;
 $switch-sm-width: 32px;
@@ -11,7 +11,7 @@ $switch-sm-indicator-height: 10px;
 
 $switch-focus-shadow: 0 0 0 2px $focus-color;
 
-/* === Custom styles === */
+// Custom styles
 .switch-label {
   display: inline-block;
   cursor: pointer;
@@ -37,7 +37,7 @@ $switch-focus-shadow: 0 0 0 2px $focus-color;
 
   &.switch-dark {
     input:checked + .slider {
-      background-color: $blue-900;
+      background-color: $sky-900;
     }
   }
 
@@ -96,11 +96,11 @@ $switch-focus-shadow: 0 0 0 2px $focus-color;
     }
 
     &:disabled + .slider {
-      background-color: $grisulado-400;
+      background-color: $disabled-bg;
       cursor: not-allowed;
 
       &::before {
-        background-color: $grisulado-600;
+        background-color: $disabled-text;
       }
     }
   }
@@ -108,7 +108,7 @@ $switch-focus-shadow: 0 0 0 2px $focus-color;
   .slider {
     position: relative;
     cursor: pointer;
-    background-color: $grisulado-400;
+    background-color: $slate-200;
     transition: 0.4s;
     border-radius: 50px;
     width: $switch-width;
@@ -143,7 +143,7 @@ $switch-focus-shadow: 0 0 0 2px $focus-color;
     }
 
     &.disabled {
-      color: $grisulado-600;
+      color: $slate-600;
     }
   }
 }

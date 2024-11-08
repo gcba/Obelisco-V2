@@ -5,7 +5,7 @@ import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
-import { CDN_CODE, NPM_CODE, PNPM_CODE, YARN_CODE } from './code-views';
+import { CDN_CODE, NPM_CODE, NPM_UPDATE_CODE, PNPM_CODE, YARN_CODE } from './code-views';
 
 const InstallationModule: React.FC = () => {
   const sections = [
@@ -46,12 +46,36 @@ const InstallationModule: React.FC = () => {
       ),
     },
     {
-      id: 'section-2',
-      title: 'Uso con CDN',
+      id: 'section-3',
+      title: 'Actualización',
       description:
-        'Si prefieres no instalar nada localmente, puedes incluir los estilos directamente desde nuestra CDN:',
+        'Si Obelisco V2 ya está instalado en el proyecto y necesitás actualizarlo a la última versión, en el directorio del proyecto hay que ejecutar:',
       content: (
         <div className="col-12">
+          <SyntaxHighlighter language="bash" style={dracula}>
+            {NPM_UPDATE_CODE}
+          </SyntaxHighlighter>
+        </div>
+      ),
+    },
+    {
+      id: 'section-4',
+      title: 'Uso con CDN',
+      content: (
+        <div className="col-12">
+          <p className="mb-4">
+            Si no instalás Obelisco de forma local, podés incluir los estilos directamente desde nuestra CDN. Sólo tenés
+            que reemplazar la sección de la url en la que figura &quot;<code>X.X.X</code>&quot; por el número de la
+            versión que desees utilizar. Te recomendamos usar la{' '}
+            <Link
+              href="https://www.jsdelivr.com/package/npm/@gcba/obelisco-v2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              versión más reciente
+            </Link>
+            .
+          </p>
           <SyntaxHighlighter language="html" style={dracula}>
             {CDN_CODE}
           </SyntaxHighlighter>

@@ -1,16 +1,13 @@
-/* stylelint-disable scss/percent-placeholder-pattern */
-
-/* === Custom variables and mixins === */
-
+// Custom variables and mixins
 $card-spacing-desktop: 1.5rem;
 $card-icon-size: 2rem;
 $card-media-size: 4rem;
-$card-icon-bg: $grisulado-50;
+$card-icon-bg: $slate-50;
 $card-info-icon-size: 1rem;
 
 // Estilos de estados de tarjetas
-%card_states_styles {
-  .card-body {
+@mixin card-states-styles {
+  .block-body {
     .card-title {
       .card-title-link {
         text-decoration: none;
@@ -26,7 +23,7 @@ $card-info-icon-size: 1rem;
         &:hover {
           color: $hover-color;
           text-decoration: underline;
-          text-decoration-thickness: 1px;
+          text-decoration-thickness: 3px;
 
           &::after {
             outline: $hover-outline;
@@ -37,8 +34,8 @@ $card-info-icon-size: 1rem;
           box-shadow: none;
           outline: none;
           text-decoration: underline;
-          text-decoration-thickness: 1px;
-          color: $body-color;
+          text-decoration-thickness: 2px;
+          color: $primary;
 
           &::after {
             box-shadow: $focus-box-shadow;
@@ -50,13 +47,13 @@ $card-info-icon-size: 1rem;
   }
 }
 
-/* === Custom styles === */
+// Custom styles
 .card {
   border: none;
   outline: $outline-border;
   width: 100%;
 
-  .card-body {
+  .block-body {
     padding: $card-spacing-desktop;
   }
 
@@ -78,7 +75,7 @@ $card-info-icon-size: 1rem;
   }
 
   .card-badges {
-    margin-bottom: 9.6px; //Debido a que badge tiene display: inline-block; y overflow: hidden; se genera un espaciado en el div contenedor siendo su altura 30.4px en vez de 24px, por lo que se modifica el margin-bottom para respetar espaciado de 16px entre etiqueta y titulo.
+    padding-bottom: 9.6px; //Debido a que badge tiene display: inline-block; y overflow: hidden; se genera un espaciado en el div contenedor siendo su altura 30.4px en vez de 24px, por lo que se modifica el margin-bottom para respetar espaciado de 16px entre etiqueta y titulo.
   }
 
   .badge {
@@ -148,7 +145,7 @@ $card-info-icon-size: 1rem;
       object-position: center;
       flex-shrink: 0;
 
-      + .card-body {
+      + .block-body {
         padding-right: 2rem;
       }
     }
@@ -157,7 +154,7 @@ $card-info-icon-size: 1rem;
       @extend .card-img;
     }
 
-    .card-body {
+    .block-body {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -166,12 +163,12 @@ $card-info-icon-size: 1rem;
   }
 
   // Estilos para estados hover, focus
-  @extend %card_states_styles;
+  @include card-states-styles;
 
   //Estilos para tarjeta horizontal temática
   &.thematic {
     flex-direction: column;
-    @extend .unbordered;
+    padding: 16px;
 
     .card-img {
       width: 6rem;
@@ -179,12 +176,12 @@ $card-info-icon-size: 1rem;
       aspect-ratio: 1/1;
       margin: 0;
 
-      + .card-body {
+      + .block-body {
         padding-left: 0;
       }
     }
 
-    .card-body {
+    .block-body {
       padding: 1.5rem 1rem;
       padding-left: 0;
     }
@@ -192,6 +189,8 @@ $card-info-icon-size: 1rem;
     @include media-breakpoint-up(xl) {
       flex-direction: row;
       gap: 1.5rem;
+      align-items: center;
+      padding: 0;
 
       .card-img {
         width: 8rem;

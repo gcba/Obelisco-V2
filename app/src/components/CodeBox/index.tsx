@@ -184,12 +184,6 @@ const CodeBox = ({ codeHTML, children, codeJS }: { codeHTML: string; children?: 
               onClick={toggleExpandHTML}
             >
               {isExpandedHTML ? 'Ver menos' : 'Ver más'}
-              <span
-                className={`material-symbols-rounded ${styles.codeBoxButtonIcon} ${isExpandedHTML ? styles.expanded : ''}`}
-                aria-hidden="true"
-              >
-                keyboard_arrow_down
-              </span>
             </button>
           )}
         </div>
@@ -223,14 +217,8 @@ const CodeBox = ({ codeHTML, children, codeJS }: { codeHTML: string; children?: 
               </button>
             </div>
             {showButtonJS && (
-              <button className={`btn btn-primary btn-sm ${styles.codeBoxButton}`} onClick={toggleExpandJS}>
+              <button className={`btn btn-outline-tertiary btn-sm ${styles.codeBoxButton}`} onClick={toggleExpandJS}>
                 {isExpandedJS ? 'Ver menos' : 'Ver más'}
-                <span
-                  className={`material-symbols-rounded ${styles.codeBoxButtonIcon} ${isExpandedJS ? styles.expanded : ''}`}
-                  aria-hidden="true"
-                >
-                  keyboard_arrow_down
-                </span>
               </button>
             )}
           </div>

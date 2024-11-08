@@ -10,6 +10,7 @@ import {
   CHECKBOX_TERMS,
   RADIO,
   RADIO_DISABLED,
+  RADIO_NO_TEXT,
 } from './code-views';
 
 const FormSelectionDocs: React.FC = () => {
@@ -120,6 +121,30 @@ const FormSelectionDocs: React.FC = () => {
     },
     {
       id: 'section-3',
+      title: 'Casilla de selección única sin texto',
+      content: (
+        <CodeBox codeHTML={RADIO_NO_TEXT}>
+          <div className="container">
+            <div className="form-radio">
+              <input
+                className="form-radio-input"
+                type="radio"
+                name="radioNoText"
+                id="radio-no-text"
+                value="Sin texto"
+              />
+              <label
+                className="form-radio-label"
+                htmlFor="radio-no-text"
+                aria-label="Casilla múltiple sin texto"
+              ></label>
+            </div>
+          </div>
+        </CodeBox>
+      ),
+    },
+    {
+      id: 'section-4',
       title: 'Casilla de selección múltiple (Checkbox)',
       content: (
         <CodeBox codeHTML={CHECKBOX}>
@@ -179,7 +204,7 @@ const FormSelectionDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-4',
+      id: 'section-5',
       title: 'Casilla de selección múltiple sin texto',
       content: (
         <CodeBox codeHTML={CHECKBOX_NO_TEXT}>
@@ -203,7 +228,7 @@ const FormSelectionDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-5',
+      id: 'section-6',
       title: "Casilla 'Términos y condiciones'",
       content: (
         <CodeBox codeHTML={CHECKBOX_TERMS}>
@@ -225,7 +250,7 @@ const FormSelectionDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-6',
+      id: 'section-7',
       title: 'Casilla de selección múltiple deshabilitada',
       content: (
         <CodeBox codeHTML={CHECKBOX_DISABLED}>
@@ -262,7 +287,7 @@ const FormSelectionDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-7',
+      id: 'section-8',
       title: 'Posicionamiento',
       content: (
         <CodeBox codeHTML={CHECKBOX_RADIO_POSITION}>

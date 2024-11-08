@@ -31,6 +31,15 @@ const ColorsDocs: React.FC = () => {
     {
       id: 'section-2',
       subtitle: 'Amarillo (Yellow)',
+      subtitleScrollspy: (
+        <div className="px-3">
+          <div
+            className="custom-scrollspy-color"
+            style={{ backgroundColor: '#ffcc00' }}
+            title="Amarillo (Yellow)"
+          ></div>
+        </div>
+      ),
       content: (
         <div className="container">
           <div className="d-flex mb-3 flex-wrap">
@@ -61,6 +70,11 @@ const ColorsDocs: React.FC = () => {
     {
       id: 'section-3',
       subtitle: 'Azul (Blue)',
+      subtitleScrollspy: (
+        <div className="px-3">
+          <div className="custom-scrollspy-color" style={{ backgroundColor: '#336acc' }} title="Azul (Blue)"></div>
+        </div>
+      ),
       content: (
         <div className="container">
           <div className="d-flex mb-3 flex-wrap">
@@ -91,6 +105,11 @@ const ColorsDocs: React.FC = () => {
     {
       id: 'section-4',
       subtitle: 'Cian (Cyan)',
+      subtitleScrollspy: (
+        <div className="px-3">
+          <div className="custom-scrollspy-color" style={{ backgroundColor: '#64d8c8' }} title="Cian (Cyan)"></div>
+        </div>
+      ),
       content: (
         <div className="container">
           <div className="d-flex mb-3 flex-wrap">
@@ -121,6 +140,11 @@ const ColorsDocs: React.FC = () => {
     {
       id: 'section-5',
       subtitle: 'Cielo (Sky)',
+      subtitleScrollspy: (
+        <div className="px-3">
+          <div className="custom-scrollspy-color" style={{ backgroundColor: '#00c5ff' }} title="Cielo (Sky)"></div>
+        </div>
+      ),
       content: (
         <div className="container">
           <div className="d-flex mb-3 flex-wrap">
@@ -151,6 +175,11 @@ const ColorsDocs: React.FC = () => {
     {
       id: 'section-6',
       subtitle: 'Verde (Green)',
+      subtitleScrollspy: (
+        <div className="px-3">
+          <div className="custom-scrollspy-color" style={{ backgroundColor: '#38af64' }} title="Verde (Green)"></div>
+        </div>
+      ),
       content: (
         <div className="container">
           <div className="d-flex mb-3 flex-wrap">
@@ -181,6 +210,11 @@ const ColorsDocs: React.FC = () => {
     {
       id: 'section-7',
       subtitle: 'Naranja (Orange)',
+      subtitleScrollspy: (
+        <div className="px-3">
+          <div className="custom-scrollspy-color" style={{ backgroundColor: '#ff9500' }} title="Naranja (Orange)"></div>
+        </div>
+      ),
       content: (
         <div className="container">
           <div className="d-flex mb-3 flex-wrap">
@@ -211,6 +245,11 @@ const ColorsDocs: React.FC = () => {
     {
       id: 'section-8',
       subtitle: 'Rojo (Red)',
+      subtitleScrollspy: (
+        <div className="px-3">
+          <div className="custom-scrollspy-color" style={{ backgroundColor: '#cc3333' }} title="Rojo (Red)"></div>
+        </div>
+      ),
       content: (
         <div className="container">
           <div className="d-flex mb-3 flex-wrap">
@@ -241,6 +280,11 @@ const ColorsDocs: React.FC = () => {
     {
       id: 'section-9',
       subtitle: 'Púrpura (Purple)',
+      subtitleScrollspy: (
+        <div className="px-3">
+          <div className="custom-scrollspy-color" style={{ backgroundColor: '#b600ff' }} title="Púrpura (Purple)"></div>
+        </div>
+      ),
       content: (
         <div className="container">
           <div className="d-flex mb-3 flex-wrap">
@@ -271,6 +315,15 @@ const ColorsDocs: React.FC = () => {
     {
       id: 'section-10',
       subtitle: 'Grisulado (Slate)',
+      subtitleScrollspy: (
+        <div className="px-3">
+          <div
+            className="custom-scrollspy-color"
+            style={{ backgroundColor: '#8a97a8' }}
+            title="Grisulado (Slate)"
+          ></div>
+        </div>
+      ),
       content: (
         <div className="container">
           <div className="d-flex mb-3 flex-wrap">
@@ -301,6 +354,15 @@ const ColorsDocs: React.FC = () => {
     {
       id: 'section-11',
       subtitle: 'Escala de grises (Grayscale)',
+      subtitleScrollspy: (
+        <div className="px-3">
+          <div
+            className="custom-scrollspy-color"
+            style={{ backgroundColor: '#666666' }}
+            title="Escala de grises (Grayscale)"
+          ></div>
+        </div>
+      ),
       content: (
         <div className="container">
           <div className="d-flex mb-3 flex-wrap">

@@ -274,7 +274,7 @@ const GridDocs: React.FC = () => {
                 <tr>
                   <td>Extra extra large</td>
                   <td>&ge;1400px</td>
-                  <td>1320px</td>
+                  <td>1140px</td>
                 </tr>
               </tbody>
             </table>

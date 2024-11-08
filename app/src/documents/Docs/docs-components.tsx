@@ -155,7 +155,9 @@ const UpdateComponents: React.FC = () => {
       id: 'section-8',
       title: 'Calendario',
       content: (
-        <p>La variante con referencias cromáticas queda deprecada.</p>
+        <ul className="docs-list">
+          <li>La variante con referencias cromáticas queda deprecada.</li>
+        </ul>
       ),
     },
     {
@@ -596,6 +598,17 @@ const UpdateComponents: React.FC = () => {
     },
     {
       id: 'section-26',
+      title: 'Pie de Pagina (Footer)',
+      content: (
+        <ul className="docs-list">
+          <li>
+            Se modifica la clase <code>d-lg-inline</code> por <code>d-md-inline, para que realice el cambio de imagen en 768px.</code>.
+          </li>
+        </ul>
+      ),
+    },
+    {
+      id: 'section-27',
       title: 'Spinner',
       content: (
         <ul className="docs-list">
@@ -607,7 +620,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-27',
+      id: 'section-28',
       title: 'Tarjetas',
       content: (
         <ul className="docs-list">
@@ -638,7 +651,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-28',
+      id: 'section-29',
       title: 'Tipografía',
       content: (
         <ul className="docs-list">
@@ -672,7 +685,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-29',
+      id: 'section-30',
       title: 'Accesibilidad',
       content: (
         <ul className="docs-list">
@@ -683,7 +696,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-30',
+      id: 'section-31',
       title: 'Comenzar a usar componentes',
       content: (
         <>

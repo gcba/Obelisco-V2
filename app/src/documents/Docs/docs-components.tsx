@@ -297,7 +297,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-14',
+      id: 'section-12',
       title: 'Enlace',
       content: (
         <ul className="docs-list">
@@ -308,7 +308,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-15',
+      id: 'section-13',
       title: 'Etiquetas',
       content: (
         <ul className="docs-list">
@@ -322,7 +322,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-16',
+      id: 'section-14',
       title: 'Formulario - Casillas de selección (Radio y Checkbox)',
       content: (
         <ul className="docs-list">
@@ -357,7 +357,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-17',
+      id: 'section-15',
       title: 'Formularios de texto',
       content: (
         <ul className="docs-list">
@@ -386,7 +386,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-18',
+      id: 'section-16',
       title: 'Grilla',
       content: (
         <div id="grilla" className="container">
@@ -440,7 +440,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-19',
+      id: 'section-17',
       title: 'Header (encabezado)',
       content: (
         <ul className="docs-list">
@@ -462,7 +462,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-20',
+      id: 'section-18',
       title: 'Iconos',
       content: (
         <ul className="docs-list">
@@ -475,7 +475,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-21',
+      id: 'section-19',
       title: 'Lista de pasos',
       content: (
         <ul className="docs-list">
@@ -486,7 +486,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-22',
+      id: 'section-20',
       title: 'Mapa',
       content: (
         <ul className="docs-list">
@@ -502,7 +502,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-23',
+      id: 'section-21',
       title: 'Mensaje de estados',
       content: (
         <>
@@ -518,7 +518,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-24',
+      id: 'section-22',
       title: 'Modal',
       content: (
         <ul className="docs-list">
@@ -543,7 +543,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-25',
+      id: 'section-23',
       title: 'Pasos de un formulario',
       content: (
         <ul className="docs-list">
@@ -561,7 +561,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-26',
+      id: 'section-24',
       title: 'Pestaña',
       content: (
         <ul className="docs-list">
@@ -589,7 +589,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-27',
+      id: 'section-25',
       title: 'Pie de Página (Footer)',
       content: (
         <ul className="docs-list">
@@ -601,7 +601,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-28',
+      id: 'section-26',
       title: 'Spinner',
       content: (
         <ul className="docs-list">
@@ -613,7 +613,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-29',
+      id: 'section-27',
       title: 'Tarjetas',
       content: (
         <ul className="docs-list">
@@ -644,7 +644,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-30',
+      id: 'section-28',
       title: 'Tipografía',
       content: (
         <ul className="docs-list">
@@ -678,7 +678,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-31',
+      id: 'section-29',
       title: 'Accesibilidad',
       content: (
         <ul className="docs-list">
@@ -689,7 +689,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-32',
+      id: 'section-30',
       title: 'Comenzar a usar componentes',
       content: (
         <>

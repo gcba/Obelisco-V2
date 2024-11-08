@@ -318,13 +318,13 @@ const FooterDocs: React.FC = () => {
                   <div className="row align-items-center">
                     <div className="col-12 col-md-5 col-xl-4 footer-content-img">
                       <img
-                        className="d-lg-none"
+                        className="d-md-none"
                         src={`${basePath}/images/LogoBAMobile.svg`}
                         alt="Logo de Ciudad de Buenos Aires"
                         height="48"
                       />
                       <img
-                        className="d-none d-lg-inline"
+                        className="d-none d-md-inline"
                         src={`${basePath}/images/Logo-escudo-vertical.svg`}
                         alt="Logo de Ciudad de Buenos Aires"
                         height="40"

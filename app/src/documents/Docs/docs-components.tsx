@@ -148,6 +148,7 @@ const UpdateComponents: React.FC = () => {
             Se modifica la estructura HTML del colapsable en la variante &apos;Con colapsable&apos; acorde a
             actualización del componente Colapsable.
           </li>
+          <li>La variante con referencias cromáticas queda deprecada.</li>
         </ul>
       ),
     },
@@ -542,7 +543,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-22',
+      id: 'section-23',
       title: 'Pasos de un formulario',
       content: (
         <ul className="docs-list">
@@ -560,7 +561,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-23',
+      id: 'section-24',
       title: 'Pestaña',
       content: (
         <ul className="docs-list">
@@ -588,7 +589,19 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-24',
+      id: 'section-25',
+      title: 'Pie de Página (Footer)',
+      content: (
+        <ul className="docs-list">
+          <li>
+            Se modifica la clase <code>d-lg-inline</code> por <code>d-md-inline</code>, para que realice el cambio de
+            imagen en 768px.
+          </li>
+        </ul>
+      ),
+    },
+    {
+      id: 'section-26',
       title: 'Spinner',
       content: (
         <ul className="docs-list">
@@ -600,7 +613,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-25',
+      id: 'section-27',
       title: 'Tarjetas',
       content: (
         <ul className="docs-list">
@@ -631,7 +644,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-26',
+      id: 'section-28',
       title: 'Tipografía',
       content: (
         <ul className="docs-list">
@@ -665,7 +678,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-27',
+      id: 'section-29',
       title: 'Accesibilidad',
       content: (
         <ul className="docs-list">
@@ -676,7 +689,7 @@ const UpdateComponents: React.FC = () => {
       ),
     },
     {
-      id: 'section-28',
+      id: 'section-30',
       title: 'Comenzar a usar componentes',
       content: (
         <>

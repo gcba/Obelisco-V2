@@ -1,5 +1,7 @@
 import React from 'react';
 
+const basePath = '/Obelisco-V2';
+
 export default function Footer() {
   return (
     <>
@@ -11,22 +13,18 @@ export default function Footer() {
             <div className="row align-items-center">
               <div className="col-12 col-md-5 col-xl-4 footer-content-img">
                 <img
-                  className="d-lg-none"
-                  src="https://gcba.github.io/Obelisco/footer/ciudad-ba-sm.svg"
+                  className="d-md-none"
+                  src={`${basePath}/images/LogoBAMobile.svg`}
                   alt="Logo de Ciudad de Buenos Aires"
                   height="48"
                 />
                 <img
-                  className="d-none d-lg-inline"
-                  src="https://gcba.github.io/Obelisco/footer/ciudad-ba.svg"
+                  className="d-none d-md-inline"
+                  src={`${basePath}/images/Logo-escudo-vertical.svg`}
                   alt="Logo de Ciudad de Buenos Aires"
                   height="40"
                 />
-                <img
-                  className="img-vamos-ba"
-                  src="https://gcba.github.io/Obelisco/footer/vamos-ba.svg"
-                  alt="Logo de Vamos Buenos Aires"
-                />
+                <img className="img-vamos-ba" src={`${basePath}/images/LogoBA2.svg`} alt="Logo de Vamos Buenos Aires" />
               </div>
               <div className="col-12">
                 <ul className="list-inline">

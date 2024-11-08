@@ -86,7 +86,7 @@ $status-icons: map-merge(
 
     &:not(:has(+ .status-text)),
     + .status-text {
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
     }
   }
 

@@ -365,7 +365,7 @@ const UpdateComponents: React.FC = () => {
             Se elimina la clase <code>.form-group</code>.
           </li>
           <li>
-            Se crea la clase <code>.form-label</code>, la cual se asigna al <code>label</code> del campo.
+            Se crean las clases <code>.form-label</code>, <code>.form-label-container</code>, <code>.form-label-number</code>, y <code>.form-label-description</code>, referidas al <code>label</code> del campo.
           </li>
           <li>
             Se elimina la clase <code>.form-search</code> que se le asignaba anteriormente al <code>form</code>.

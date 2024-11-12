@@ -863,34 +863,32 @@ const CalendarDocs: React.FC = () => {
                   </button>
                   <div id="collapseCalendar1" className="accordion-collapse collapse">
                     <div className="accordion-body">
-                      <div className="block-body">
-                        <ul className="calendar-footer-list">
-                          <li>
-                            <strong>1. </strong>
-                            Nombre del evento.
-                          </li>
-                          <li>
-                            <strong>10. </strong>
-                            Nombre del evento.
-                          </li>
-                          <li>
-                            <strong>12. </strong>
-                            Nombre del evento.
-                          </li>
-                          <li>
-                            <strong>15. </strong>
-                            Nombre del evento.
-                          </li>
-                          <li>
-                            <strong>23. </strong>
-                            Nombre del evento.
-                          </li>
-                          <li>
-                            <strong>27. </strong>
-                            Nombre del evento.
-                          </li>
-                        </ul>
-                      </div>
+                      <ul className="calendar-footer-list">
+                        <li>
+                          <strong>1. </strong>
+                          Nombre del evento.
+                        </li>
+                        <li>
+                          <strong>10. </strong>
+                          Nombre del evento.
+                        </li>
+                        <li>
+                          <strong>12. </strong>
+                          Nombre del evento.
+                        </li>
+                        <li>
+                          <strong>15. </strong>
+                          Nombre del evento.
+                        </li>
+                        <li>
+                          <strong>23. </strong>
+                          Nombre del evento.
+                        </li>
+                        <li>
+                          <strong>27. </strong>
+                          Nombre del evento.
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>

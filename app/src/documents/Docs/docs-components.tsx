@@ -159,7 +159,7 @@ const UpdateComponents: React.FC = () => {
         <ul className="docs-list">
           <li>
             Se modifica estructura HTML del componente, acorde a Bootstrap 5. Se reemplazan las clases{' '}
-            <code>.card</code>, <code>.card-header</code>, y <code>.block-body</code> por <code>.accordion-item</code>,{' '}
+            <code>.card</code>, <code>.card-header</code>, y <code>.card-body</code> por <code>.accordion-item</code>,{' '}
             <code>.accordion-button</code> y<code>.accordion-body</code>, respectivamente.
           </li>
           <li>
@@ -285,7 +285,7 @@ const UpdateComponents: React.FC = () => {
             Se eliminan las clases <code>.card</code> y <code>.card-simple</code>.
           </li>
           <li>
-            Las clases <code>.card-img</code>, <code>.block-body</code>, <code>.card-title</code> y{' '}
+            Las clases <code>.card-img</code>, <code>.card-body</code>, <code>.card-title</code> y{' '}
             <code>.card-text</code> se reemplazan por <code>.panel-img</code>, <code>.panel-body</code>,{' '}
             <code>.panel-title</code> y <code>.panel-text</code>, respectivamente.
           </li>
@@ -365,7 +365,9 @@ const UpdateComponents: React.FC = () => {
             Se elimina la clase <code>.form-group</code>.
           </li>
           <li>
-            Se crea la clase <code>.form-label</code>, la cual se asigna al <code>label</code> del campo.
+            Se crean las clases <code>.form-label</code>, <code>.form-label-container</code>,{' '}
+            <code>.form-label-number</code>, y <code>.form-label-description</code>, referidas al <code>label</code> del
+            campo.
           </li>
           <li>
             Se elimina la clase <code>.form-search</code> que se le asignaba anteriormente al <code>form</code>.
@@ -494,7 +496,7 @@ const UpdateComponents: React.FC = () => {
             Se reemplazan las clases <code>.card</code> y <code>.card-map</code> por <code>.map</code>.
           </li>
           <li>
-            Las clases <code>.card-iframe</code>, <code>.block-body</code>, <code>.card-title</code> y{' '}
+            Las clases <code>.card-iframe</code>, <code>.card-body</code>, <code>.card-title</code> y{' '}
             <code>.card-text</code> se reemplazan por <code>.map-iframe</code>, <code>.map-body</code>,{' '}
             <code>.map-title</code> y <code>.map-text</code>, respectivamente.
           </li>

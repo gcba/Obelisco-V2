@@ -13,6 +13,7 @@ interface Section {
   id?: string;
   title?: string | React.ReactNode;
   subtitle?: string;
+  subtitleScrollspy?: string | React.ReactNode;
   content?: React.ReactNode;
   description?: string;
   h1?: boolean;
@@ -94,7 +95,10 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections 
                     <li key={`${section.id}-${index}`} className={activeIndex === index ? 'active' : ''}>
                       <a href={`#${section.id}`} className="text-sm">
                         {section.title && section.title}
-                        {section.subtitle && <ScrollspySubtitle text={section.subtitle} ScrollspyComponent={true} />}
+                        {section.subtitle && !section.subtitleScrollspy && (
+                          <ScrollspySubtitle text={section.subtitle} ScrollspyComponent={true} />
+                        )}
+                        {section.subtitleScrollspy && section.subtitleScrollspy}
                       </a>
                     </li>
                   ),

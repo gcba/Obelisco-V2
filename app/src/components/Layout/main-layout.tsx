@@ -13,7 +13,7 @@ export const stylesPages = [
 export const formsPages = [
   { text: 'Buscador', url: '/components/form-search', id: 1 },
   { text: 'Casillas de selección', url: '/components/form-selection', id: 2 },
-  { text: 'Formulario de textos', url: '/components/form-text', id: 3 },
+  { text: 'Formularios de texto', url: '/components/form-text', id: 3 },
 ];
 export const organismsPages = [
   { text: 'Accesos (organismo)', url: '/components/access-organism', id: 1 },

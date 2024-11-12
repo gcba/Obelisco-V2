@@ -1,4 +1,5 @@
 import CodeBox from '@/components/CodeBox';
+import LinkClient from '@/components/LinkClient';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
@@ -9,7 +10,20 @@ const BadgeDocs: React.FC = () => {
     {
       title: 'Etiquetas',
       content: (
-        <MainDescription description="Las etiquetas se utilizan para identificar y categorizar la información dentro de una página proporcionando más detalles a los usuarios sobre el contenido que necesitan." />
+        <>
+          <MainDescription description="Las etiquetas se utilizan para identificar y categorizar la información dentro de una página proporcionando más detalles a los usuarios sobre el contenido que necesitan." />
+          <p className="lead mb-4">
+            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
+            <a
+              href="https://gcba.github.io/estandares/componentes/etiquetas/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              enlace
+            </a>
+            .
+          </p>
+        </>
       ),
       h1: true,
     },
@@ -40,15 +54,33 @@ const BadgeDocs: React.FC = () => {
           <div className="row justify-content-center">
             <div className="col-auto">
               <div className="grid gap-5">
-                <a href="#" className="badge badge-default">
-                  Etiqueta
-                </a>
-                <a href="#" className="badge hover badge-default">
-                  Etiqueta
-                </a>
-                <a href="#" className="badge focus badge-default">
-                  Etiqueta
-                </a>
+                <LinkClient className="badge badge-default">Etiqueta</LinkClient>
+                <LinkClient className="badge hover badge-default">Etiqueta</LinkClient>
+                <LinkClient className="badge focus badge-default">Etiqueta</LinkClient>
+              </div>
+
+              <div className="grid gap-5 mt-3">
+                <LinkClient className="badge badge-danger">Etiqueta</LinkClient>
+                <LinkClient className="badge hover badge-danger">Etiqueta</LinkClient>
+                <LinkClient className="badge focus badge-danger">Etiqueta</LinkClient>
+              </div>
+
+              <div className="grid gap-5 mt-3">
+                <LinkClient className="badge badge-info">Etiqueta</LinkClient>
+                <LinkClient className="badge hover badge-info">Etiqueta</LinkClient>
+                <LinkClient className="badge focus badge-info">Etiqueta</LinkClient>
+              </div>
+
+              <div className="grid gap-5 mt-3">
+                <LinkClient className="badge badge-success">Etiqueta</LinkClient>
+                <LinkClient className="badge hover badge-success">Etiqueta</LinkClient>
+                <LinkClient className="badge focus badge-success">Etiqueta</LinkClient>
+              </div>
+
+              <div className="grid gap-5 mt-3">
+                <LinkClient className="badge badge-warning">Etiqueta</LinkClient>
+                <LinkClient className="badge hover badge-warning">Etiqueta</LinkClient>
+                <LinkClient className="badge focus badge-warning">Etiqueta</LinkClient>
               </div>
             </div>
           </div>

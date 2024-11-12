@@ -1,4 +1,5 @@
 import CodeBox from '@/components/CodeBox';
+import LinkClient from '@/components/LinkClient';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
@@ -8,7 +9,20 @@ const sections = [
   {
     title: 'Mensaje de estado',
     content: (
-      <MainDescription description="Los mensajes de estado son comunicaciones que ayudan a las personas usuarias a tomar decisiones premeditadas. Informan que algo ha ocurrido o va a ocurrir y tal vez requieran de su acción. También, sirven para reducir la incertidumbre y evitar que los usuarios cometan errores." />
+      <>
+        <MainDescription description="Los mensajes de estado son comunicaciones que ayudan a las personas usuarias a tomar decisiones premeditadas. Informan que algo ha ocurrido o va a ocurrir y tal vez requieran de su acción. También, sirven para reducir la incertidumbre y evitar que los usuarios cometan errores." />
+        <p className="lead mb-4">
+          Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
+          <a
+            href="https://gcba.github.io/estandares/componentes/mensajes-de-estado/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            enlace
+          </a>
+          .
+        </p>
+      </>
     ),
     h1: true,
   },
@@ -28,8 +42,11 @@ const sections = [
               Este es un párrafo que brinda información necesaria con la finalidad de guiar y ayudar a las personas
               usuarias a finalizar un proceso o iniciar uno nuevo.
             </p>
-            <button type="button" className="btn btn-secondary">
+            <button type="button" className="btn btn-primary">
               <i className="bx bxs-info-circle o-icon"></i>
+              Botón
+            </button>
+            <button type="button" className="btn btn-outline-primary">
               Botón
             </button>
           </div>
@@ -51,13 +68,16 @@ const sections = [
             </p>
             <ul className="status-list">
               <li>
-                Éste es un ítem dentro de una lista que puede contener un <a href="#">enlace</a>.
+                Éste es un ítem dentro de una lista que puede contener un <LinkClient href="#">enlace</LinkClient>.
               </li>
               <li>Los ítems pueden contener o no enlaces. Este es un ejemplo para un detalle que no lleva enlace.</li>
               <li>Éste es otro ítem dentro de una lista.</li>
             </ul>
-            <button type="button" className="btn btn-secondary">
+            <button type="button" className="btn btn-primary">
               <i className="bx bxs-info-circle o-icon"></i>
+              Botón
+            </button>
+            <button type="button" className="btn btn-outline-primary">
               Botón
             </button>
           </div>
@@ -79,17 +99,16 @@ const sections = [
             </p>
             <ul className="status-list">
               <li>
-                Contar con Clave Ciudad de <a href="#">AGIP</a>
+                Contar con Clave Ciudad de <LinkClient href="#">AGIP</LinkClient>
               </li>
               <li>Cargar en el Sistema de Tramitación a Distancia (TAD) la siguiente documentación obligatoria:</li>
               <li>Anexo II Formulario de Presentación de Programa de Capacitación</li>
             </ul>
-            <button type="button" className="btn btn-secondary">
+            <button type="button" className="btn btn-primary">
               <i className="bx bxs-info-circle o-icon"></i>
               Botón
             </button>
-            <button type="button" className="btn btn-outline-secondary">
-              <i className="bx bxs-info-circle o-icon"></i>
+            <button type="button" className="btn btn-outline-primary">
               Botón
             </button>
           </div>
@@ -111,17 +130,16 @@ const sections = [
             </p>
             <ul className="status-list">
               <li>
-                Contar con Clave Ciudad de <a href="#">AGIP</a>
+                Contar con Clave Ciudad de <LinkClient href="#">AGIP</LinkClient>
               </li>
               <li>Cargar en el Sistema de Tramitación a Distancia (TAD) la siguiente documentación obligatoria:</li>
               <li>Anexo II Formulario de Presentación de Programa de Capacitación</li>
             </ul>
-            <button type="button" className="btn btn-secondary">
+            <button type="button" className="btn btn-primary">
               <i className="bx bxs-info-circle o-icon"></i>
               Botón
             </button>
-            <button type="button" className="btn btn-outline-secondary">
-              <i className="bx bxs-info-circle o-icon"></i>
+            <button type="button" className="btn btn-outline-primary">
               Botón
             </button>
           </div>
@@ -139,11 +157,14 @@ const sections = [
             <h2 className="status-title">Este es un mensaje institucional del Gobierno de la Ciudad de Buenos Aires</h2>
             <p className="status-text">
               En el cuerpo de este componente pueden ir enlaces o botones:
-              <a href="#">https://ejemplo.buenosaires.gob.ar</a>
+              <LinkClient href="#">https://ejemplo.buenosaires.gob.ar</LinkClient>
             </p>
             <button type="button" className="btn btn-primary">
               <i className="bx bxs-info-circle o-icon"></i>
-              Ir al sitio web
+              Botón
+            </button>
+            <button type="button" className="btn btn-outline-primary">
+              Botón
             </button>
           </div>
         </div>

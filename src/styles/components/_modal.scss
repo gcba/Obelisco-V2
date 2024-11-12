@@ -1,22 +1,29 @@
-/* === Variable and mixins overides === */
-$modal-header-padding-x: space-units(6);
-$modal-header-padding-y: space-units(6);
-$modal-header-padding: $modal-header-padding-y $modal-header-padding-x;
-$modal-inner-padding-x: space-units(6);
-$modal-inner-padding-y: space-units(4);
-$modal-inner-padding: $modal-inner-padding-y $modal-inner-padding-x;
-$modal-inner-padding-bottom: 1.125rem;
-$modal-footer-margin-between: space-units(3);
-$modal-content-border-radius: space-units(2);
-$modal-sm: 340px;
+// Custom variables
+$modal-sm: 348px;
+$modal-tablet: 336px;
 $modal-mobile: 328px;
-$modal-dialog-margin-y-sm-up: 3rem;
 
-/* === Custom variables and mixins === */
+// Custom styles
 .modal {
   //?new
   .modal-sm {
-    min-width: 340px;
+    max-width: $modal-mobile;
+
+    .modal-content {
+      @media screen and (width <= 360px) {
+        margin: 0 0.5rem;
+      }
+    }
+    @include media-breakpoint-up(md) {
+      max-width: $modal-tablet;
+    }
+    @include media-breakpoint-up(xl) {
+      max-width: $modal-sm;
+    }
+    @include media-breakpoint-down(sm) {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   .form-group {
@@ -32,7 +39,7 @@ $modal-dialog-margin-y-sm-up: 3rem;
 
   .modal-content {
     border: none;
-    padding: 1.5rem;
+    padding: 1rem;
     outline: 0.125rem solid transparent;
 
     .modal-header {
@@ -43,7 +50,7 @@ $modal-dialog-margin-y-sm-up: 3rem;
 
       //?new
       align-items: flex-start;
-      box-shadow: 0 1px 0 0 $grisulado-50;
+      box-shadow: 0 1px 0 0 $slate-50;
 
       &.unbordered {
         box-shadow: none;
@@ -83,10 +90,8 @@ $modal-dialog-margin-y-sm-up: 3rem;
       }
     }
 
-    @include media-breakpoint-down(sm) {
-      width: $modal-mobile;
-      margin: auto;
-      padding: 1rem;
+    @include media-breakpoint-up(xl) {
+      padding: 1.5rem;
     }
   }
 }

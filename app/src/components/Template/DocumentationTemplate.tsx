@@ -6,11 +6,14 @@ import React, { useEffect, useState, useMemo, useCallback } from 'react';
 import Divisor from '@/components/Template/Divisor';
 import HeadingTemplate from '@/components/Template/HeadingTemplate';
 
+import ScrollspySubtitle from '../ScrollspyTitle';
 import SimpleText from './SimpleText';
 
 interface Section {
   id?: string;
-  title: string;
+  title?: string | React.ReactNode;
+  subtitle?: string;
+  subtitleScrollspy?: string | React.ReactNode;
   content?: React.ReactNode;
   description?: string;
   h1?: boolean;
@@ -53,27 +56,49 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections 
           <article className="box-content">
             <div data-cy="section-wrapper">
               {sections.map((section, index) => (
-                <section key={section.id} id={section.id || undefined} ref={sectionRefs[index]}>
-                  <HeadingTemplate className="pt-2">
-                    {section.h1 ? <h1 className="mb-4">{section.title}</h1> : <h2 className="mb-4">{section.title}</h2>}
-                  </HeadingTemplate>
+                <section
+                  className="box-section"
+                  key={`${section.id}-${index}`}
+                  id={section.id || undefined}
+                  ref={sectionRefs[index]}
+                >
+                  {section.title && (
+                    <HeadingTemplate className="pt-2">
+                      {section.h1 ? (
+                        <h1 className="mb-4">{section.title}</h1>
+                      ) : (
+                        <h2 className="headline-lg mb-4">{section.title}</h2>
+                      )}
+                    </HeadingTemplate>
+                  )}
+                  {section.subtitle && (
+                    <HeadingTemplate className="pt-2">
+                      <h3 className="headline-md fw-bold mb-4">
+                        <ScrollspySubtitle text={section.subtitle} />
+                      </h3>
+                    </HeadingTemplate>
+                  )}
                   {section.description && <SimpleText description={section.description} />}
                   {section.content}
-                  {index < sections.length - 1 && <Divisor />}
+                  {section.content && index < sections.length - 1 && <Divisor />}
                 </section>
               ))}
             </div>
           </article>
 
-          <div className="nav-scrollspy d-none d-lg-block flex-grow-1">
+          <div className="nav-scrollspy d-none d-xl-block flex-grow-1">
             <ul className="scrollspy" data-cy="nav-wrapper">
               <p className="headline-md fw-bold mb-1">{defaultTitle}</p>
               {sections.map(
                 (section, index) =>
                   section.id && (
-                    <li key={section.id} className={activeIndex === index ? 'active' : ''}>
+                    <li key={`${section.id}-${index}`} className={activeIndex === index ? 'active' : ''}>
                       <a href={`#${section.id}`} className="text-sm">
-                        {section.title}
+                        {section.title && section.title}
+                        {section.subtitle && !section.subtitleScrollspy && (
+                          <ScrollspySubtitle text={section.subtitle} ScrollspyComponent={true} />
+                        )}
+                        {section.subtitleScrollspy && section.subtitleScrollspy}
                       </a>
                     </li>
                   ),

@@ -1,23 +1,29 @@
-.card-map {
-  .card-body {
-    padding: 24px;
+// Custom styles
+.map {
+  outline: $outline-border;
+  border-radius: $border-radius-lg;
+  background-color: $white;
 
-    .card-title {
-      font-size: 1.25rem;
+  .map-body {
+    padding: 1.5rem;
+
+    .map-title {
+      @extend .headline-lg;
       margin-bottom: 0;
-      font-weight: 700;
-      line-height: 24px;
-      color: $blue-900;
     }
 
-    .card-text {
+    .map-text {
       margin-top: 0.25rem;
-      color: $blue-900;
     }
 
-    .card-iframe {
+    .map-iframe {
       max-height: 146px;
       margin: 1rem 0;
+
+      @include media-breakpoint-between(md, xl) {
+        max-height: 240px;
+        height: 240px;
+      }
 
       iframe,
       div {
@@ -26,7 +32,12 @@
         aspect-ratio: 16 / 9;
         object-fit: cover;
         outline: none;
-        border-radius: 8px;
+        border-radius: $border-radius-lg;
+
+        @include media-breakpoint-between(md, xl) {
+          max-height: 240px;
+          height: 240px;
+        }
       }
     }
 

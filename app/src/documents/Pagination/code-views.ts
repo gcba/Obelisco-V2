@@ -1,4 +1,4 @@
-export const PAGINATION_DESCRIPTION = `<div className="pagination">
+export const PAGINATION_DESCRIPTION = `<div class="pagination">
   <div class="page-navigation">
     <div class="page-item">
       <a class="btn page-link" href="#">
@@ -7,6 +7,22 @@ export const PAGINATION_DESCRIPTION = `<div className="pagination">
       </a>
     </div>
     <div class="page-item">
+      <a class="btn page-link" href="#">
+        <span class="page-next-text">Siguiente</span>
+        <span class="page-next-icon" aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>
+</div>`;
+export const PAGINATION_DISABLED = `<div class="pagination">
+  <div class="page-navigation">
+    <div class="page-item disabled">
+      <a class="btn page-link" href="#">
+        <span class="page-previous-icon" aria-hidden="true"></span>
+        <span class="page-next-text">Anterior</span>
+      </a>
+    </div>
+    <div class="page-item disabled">
       <a class="btn page-link" href="#">
         <span class="page-next-text">Siguiente</span>
         <span class="page-next-icon" aria-hidden="true"></span>

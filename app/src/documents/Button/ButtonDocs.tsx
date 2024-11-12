@@ -1,11 +1,10 @@
-'use client';
-
 import React from 'react';
 
 import CodeBox from '@/components/CodeBox';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
+import LinkClient from '../../components/LinkClient/index';
 import {
   BUTTON_SOLID,
   BUTTON_OUTLINE,
@@ -24,7 +23,15 @@ const ButtonDocs: React.FC = () => {
     {
       title: 'Botones',
       content: (
-        <MainDescription description="Los botones permiten iniciar acciones o navegar a otras páginas. Las etiquetas de los botones expresan qué acción ocurrirá cuando la persona usuaria interactúe con él." />
+        <>
+          <MainDescription description="Los botones permiten iniciar acciones o navegar a otras páginas. Las etiquetas de los botones expresan qué acción ocurrirá cuando la persona usuaria interactúe con él." />
+          <p className="lead mb-4">
+            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
+            <a href="https://gcba.github.io/estandares/componentes/boton/" target="_blank" rel="noopener noreferrer">
+              enlace.
+            </a>
+          </p>
+        </>
       ),
       h1: true,
     },
@@ -34,42 +41,72 @@ const ButtonDocs: React.FC = () => {
       content: (
         <>
           <CodeBox codeHTML={BUTTON_SOLID}>
-            <div className="d-flex gap-3 justify-content-center flex-wrap">
-              <button type="button" className="btn btn-primary">
-                Primario
-              </button>
-              <button type="button" className="btn btn-secondary">
-                Secundario
-              </button>
-              <button type="button" className="btn btn-success">
-                Éxito
-              </button>
-              <button type="button" className="btn btn-danger">
-                Error
-              </button>
-              <button type="button" className="btn btn-link">
-                Link
-              </button>
+            <div className="d-flex gap-3 justify-content-center align-items-center flex-wrap px-2">
+              <div>
+                <button type="button" className="btn btn-primary">
+                  Primario
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-secondary">
+                  Secundario
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-tertiary">
+                  Terciario
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-success">
+                  Éxito
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-danger">
+                  Error
+                </button>
+              </div>
+              <div className="p-2 bg-dark">
+                <button type="button" className="btn btn-light">
+                  Light
+                </button>
+              </div>
             </div>
           </CodeBox>
           <br />
           <CodeBox codeHTML={BUTTON_OUTLINE}>
-            <div className="d-flex gap-3 justify-content-center flex-wrap">
-              <button type="button" className="btn btn-outline-primary">
-                Primario
-              </button>
-              <button type="button" className="btn btn-outline-secondary">
-                Secundario
-              </button>
-              <button type="button" className="btn btn-outline-success">
-                Éxito
-              </button>
-              <button type="button" className="btn btn-outline-danger">
-                Error
-              </button>
-              <button type="button" className="btn btn-outline-link">
-                Link
-              </button>
+            <div className="d-flex gap-3 justify-content-center align-items-center flex-wrap px-2">
+              <div>
+                <button type="button" className="btn btn-outline-primary">
+                  Primario
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-outline-secondary">
+                  Secundario
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-outline-tertiary">
+                  Terciario
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-outline-success">
+                  Éxito
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-outline-danger">
+                  Error
+                </button>
+              </div>
+              <div className="p-2 bg-dark">
+                <button type="button" className="btn btn-outline-light">
+                  Light
+                </button>
+              </div>
             </div>
           </CodeBox>
           <br />
@@ -78,13 +115,9 @@ const ButtonDocs: React.FC = () => {
             utilizarse las clases correspondientes de botones.
           </p>
           <CodeBox codeHTML={BUTTON_ANCHOR}>
-            <div className="d-flex gap-3 justify-content-center flex-wrap">
-              <a className="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer">
-                Enlace
-              </a>
-              <a className="btn btn-outline-primary" href="#" target="_blank" rel="noopener noreferrer">
-                Enlace
-              </a>
+            <div className="d-flex gap-3 justify-content-center flex-wrap px-2">
+              <LinkClient className="btn btn-primary">Enlace</LinkClient>
+              <LinkClient className="btn btn-outline-primary">Enlace</LinkClient>
             </div>
           </CodeBox>
         </>
@@ -96,7 +129,7 @@ const ButtonDocs: React.FC = () => {
       content: (
         <>
           <CodeBox codeHTML={BUTTON_SIZES}>
-            <div className="d-flex gap-3 flex-wrap justify-content-center align-items-center">
+            <div className="d-flex gap-3 flex-wrap justify-content-center align-items-center px-2">
               <div>
                 <button type="button" className="btn btn-primary btn-sm">
                   Chico
@@ -123,20 +156,35 @@ const ButtonDocs: React.FC = () => {
       content: (
         <>
           <CodeBox codeHTML={BUTTON_DISABLED}>
-            <div className="d-flex gap-3 flex-wrap justify-content-center align-items-center">
-              <div>
-                <button type="button" className="btn btn-primary btn-sm" disabled>
-                  Chico
-                </button>
-              </div>
+            <div className="d-flex gap-3 justify-content-center align-items-center flex-wrap px-2">
               <div>
                 <button type="button" className="btn btn-primary" disabled>
-                  Mediano
+                  Primario
                 </button>
               </div>
               <div>
-                <button type="button" className="btn btn-primary btn-lg" disabled>
-                  Grande
+                <button type="button" className="btn btn-secondary" disabled>
+                  Secundario
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-tertiary" disabled>
+                  Terciario
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-success" disabled>
+                  Éxito
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-danger" disabled>
+                  Error
+                </button>
+              </div>
+              <div className="p-2 bg-dark">
+                <button type="button" className="btn btn-light" disabled>
+                  Light
                 </button>
               </div>
             </div>
@@ -150,10 +198,14 @@ const ButtonDocs: React.FC = () => {
       content: (
         <>
           <CodeBox codeHTML={BUTTON_BLOCK}>
-            <div className="col-12 col-lg-6 mx-auto">
-              <button type="button" className="btn btn-primary btn-block">
-                Botón Expandible
-              </button>
+            <div className="container">
+              <div className="row">
+                <div className="col-12 col-lg-6 mx-auto">
+                  <button type="button" className="btn btn-primary btn-block">
+                    Botón Expandible
+                  </button>
+                </div>
+              </div>
             </div>
           </CodeBox>
         </>
@@ -165,14 +217,41 @@ const ButtonDocs: React.FC = () => {
       content: (
         <>
           <CodeBox codeHTML={BUTTON_ICON}>
-            <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center">
-              <button type="button" className="btn btn-primary">
-                <i className="bx bxs-info-circle o-icon"></i>
+            <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center px-2">
+              {/* Icono y Texto */}
+              <button type="button" className="btn btn-primary btn-sm">
+                <i className="bx bx-plus-circle o-icon"></i>
                 Botón
               </button>
+
+              <button type="button" className="btn btn-primary">
+                <i className="bx bx-plus-circle o-icon"></i>
+                Botón
+              </button>
+
+              <button type="button" className="btn btn-primary btn-lg">
+                <i className="bx bx-plus-circle o-icon"></i>
+                Botón
+              </button>
+              {/* Fin Icono y Texto */}
+
+              <div className="w-100"></div>
+              {/* Icono  */}
+              <button type="button" className="btn btn-primary btn-sm" aria-label="Botón">
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  add_circle
+                </span>
+              </button>
+
               <button type="button" className="btn btn-primary" aria-label="Botón">
                 <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                  info
+                  add_circle
+                </span>
+              </button>
+
+              <button type="button" className="btn btn-primary btn-lg" aria-label="Botón">
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  add_circle
                 </span>
               </button>
             </div>
@@ -186,72 +265,89 @@ const ButtonDocs: React.FC = () => {
       content: (
         <>
           <CodeBox codeHTML={BUTTON_SPINNER}>
-            <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center">
-              <button type="button" className="btn btn-primary">
-                <div className="spinner-border text-light spinner-border-sm" role="status">
-                  <span className="sr-only">Cargando...</span>
-                </div>
-                Botón
-              </button>
-              <button type="button" className="btn btn-secondary">
-                <div className="spinner-border text-light spinner-border-sm" role="status">
-                  <span className="sr-only">Cargando...</span>
-                </div>
-                Botón
-              </button>
-              <button type="button" className="btn btn-success">
-                <div className="spinner-border text-light spinner-border-sm" role="status">
-                  <span className="sr-only">Cargando...</span>
-                </div>
-                Botón
-              </button>
-              <button type="button" className="btn btn-danger">
-                <div className="spinner-border text-light spinner-border-sm" role="status">
-                  <span className="sr-only">Cargando...</span>
-                </div>
-                Botón
-              </button>
-              <button type="button" className="btn btn-link">
-                <div className="spinner-border text-info spinner-border-sm" role="status">
-                  <span className="sr-only">Cargando...</span>
-                </div>
-                Botón
-              </button>
-            </div>
-          </CodeBox>
-          <br />
-          <CodeBox codeHTML={BUTTON_OUTLINE_SPINNER}>
-            <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center">
-              <button type="button" className="btn btn-outline-primary">
+            <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center px-2">
+              <button type="button" className="btn btn-primary" disabled>
                 <div className="spinner-border text-primary spinner-border-sm" role="status">
                   <span className="sr-only">Cargando...</span>
                 </div>
-                Botón
+                Cargando
               </button>
-              <button type="button" className="btn btn-outline-secondary">
+              <button type="button" className="btn btn-secondary" disabled>
                 <div className="spinner-border text-secondary spinner-border-sm" role="status">
                   <span className="sr-only">Cargando...</span>
                 </div>
-                Botón
+                Cargando
               </button>
-              <button type="button" className="btn btn-outline-success">
+              <button type="button" className="btn btn-tertiary" disabled>
+                <div className="spinner-border text-tertiary spinner-border-sm" role="status">
+                  <span className="sr-only">Cargando...</span>
+                </div>
+                Cargando
+              </button>
+              <button type="button" className="btn btn-success" disabled>
                 <div className="spinner-border text-success spinner-border-sm" role="status">
                   <span className="sr-only">Cargando...</span>
                 </div>
-                Botón
+                Cargando
               </button>
-              <button type="button" className="btn btn-outline-danger">
+              <button type="button" className="btn btn-danger" disabled>
                 <div className="spinner-border text-danger spinner-border-sm" role="status">
                   <span className="sr-only">Cargando...</span>
                 </div>
-                Botón
+                Cargando
               </button>
-              <button type="button" className="btn btn-outline-link">
-                <div className="spinner-border text-info spinner-border-sm" role="status">
+              <div className="bg-dark p-2">
+                <button type="button" className="btn btn-light" disabled>
+                  <div className="spinner-border text-light spinner-border-sm" role="status">
+                    <span className="sr-only">Cargando...</span>
+                  </div>
+                  Cargando
+                </button>
+              </div>
+            </div>
+          </CodeBox>
+          <br />
+          <p className="headline-md mb-4">Botón con borde y spinner</p>
+          <CodeBox codeHTML={BUTTON_OUTLINE_SPINNER}>
+            <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center px-2">
+              <button type="button" className="btn btn-outline-primary" disabled>
+                <div className="spinner-border text-primary spinner-border-sm" role="status">
                   <span className="sr-only">Cargando...</span>
                 </div>
-                Botón
+                Cargando
               </button>
+              <button type="button" className="btn btn-outline-secondary" disabled>
+                <div className="spinner-border text-secondary spinner-border-sm" role="status">
+                  <span className="sr-only">Cargando...</span>
+                </div>
+                Cargando
+              </button>
+              <button type="button" className="btn btn-outline-tertiary" disabled>
+                <div className="spinner-border text-tertiary spinner-border-sm" role="status">
+                  <span className="sr-only">Cargando...</span>
+                </div>
+                Cargando
+              </button>
+              <button type="button" className="btn btn-outline-success" disabled>
+                <div className="spinner-border text-success spinner-border-sm" role="status">
+                  <span className="sr-only">Cargando...</span>
+                </div>
+                Cargando
+              </button>
+              <button type="button" className="btn btn-outline-danger" disabled>
+                <div className="spinner-border text-danger spinner-border-sm" role="status">
+                  <span className="sr-only">Cargando...</span>
+                </div>
+                Cargando
+              </button>
+              <div className="bg-dark p-2">
+                <button type="button" className="btn btn-light" disabled>
+                  <div className="spinner-border text-light spinner-border-sm" role="status">
+                    <span className="sr-only">Cargando...</span>
+                  </div>
+                  Cargando
+                </button>
+              </div>
             </div>
           </CodeBox>
         </>
@@ -263,23 +359,23 @@ const ButtonDocs: React.FC = () => {
       content: (
         <>
           <CodeBox codeHTML={BUTTON_ICON_XS}>
-            <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center">
+            <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center px-2">
               <button type="button" className="btn btn-xs" aria-label="Editar">
                 <span className="material-symbols-rounded o-icon" aria-hidden="true">
                   edit
                 </span>
               </button>
-              <button type="button" className="btn btn-xs" aria-label="Editar">
+              <button type="button" className="btn btn-xs" aria-label="Eliminar">
                 <i className="bx bxs-trash-alt o-icon"></i>
               </button>
-              <a href="#" className="btn btn-xs" aria-label="Editar" tabIndex={0}>
+              <button type="button" className="btn btn-xs" aria-label="Visualizar">
                 <span className="material-symbols-rounded o-icon" aria-hidden="true">
                   visibility
                 </span>
-              </a>
-              <a href="#" className="btn btn-xs" aria-label="Editar" tabIndex={0}>
+              </button>
+              <button type="button" className="btn btn-xs" aria-label="Descargar">
                 <i className="bx bxs-download o-icon"></i>
-              </a>
+              </button>
             </div>
           </CodeBox>
           <br />

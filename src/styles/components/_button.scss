@@ -1,30 +1,35 @@
-/* ------ Boton link ------ */
-$btn-link-color: $sky-700;
-$btn-link-bg: $white;
-$btn-link-bg-active: $sky-100;
-
-/* === Custom variables and mixins === */
+// Custom variables and mixins
 $btn-padding-sm: 0.25rem 0.5rem;
 $btn-padding-md: 0.5rem 1rem;
 $btn-padding-lg: 0.75rem 1.25rem;
 
+// Button Link
+$btn-colors-specific: (
+  link: (
+    color: $blue-900,
+    bg: $white,
+    bg-active: $slate-100,
+  ),
+);
+
 $theme-colors: map-merge(
   $theme-colors,
   (
-    'link': $btn-link-color,
+    'link': $blue-900,
   )
 );
 
 $theme-color-btn-bg-hover: (
   primary: $blue-600,
   secondary: $blue-950,
+  tertiary: $sky-800,
+  light: $slate-200,
   danger: $red-600,
   success: $green-700,
-  link: $sky-50,
+  link: $slate-100,
 );
 
-/* === Custom styles === */
-@mixin btn-disabled {
+@mixin btn-disabled($color) {
   &.disabled,
   &:disabled {
     background-color: $disabled-bg;
@@ -33,27 +38,85 @@ $theme-color-btn-bg-hover: (
     pointer-events: none;
     opacity: 1;
   }
+
+  @if $color == 'light' {
+    &.disabled,
+    &:disabled {
+      background-color: $disabled-on-dark;
+      outline-color: $disabled-on-dark;
+    }
+  }
 }
 
 @mixin btn-without-styles {
   color: $body-color;
-  background-color: $white;
-  outline-color: $white;
+  background-color: transparent;
+  outline-color: transparent;
 
   &:hover,
   &.hover,
   &:visited,
   &:focus,
+  &:focus-visible,
   &.focus,
+  &:focus:not(:focus-visible),
   &:not(:disabled, .disabled):active,
   &:not(:disabled, .disabled).active {
     color: $body-color;
-    background-color: $white;
-    outline-color: $white;
+    background-color: transparent;
+    outline-color: transparent;
     box-shadow: none;
   }
 }
 
+@mixin btn-specific-types($color, $type) {
+  @if $color == $type {
+    color: map-get(map-get($btn-colors-specific, $type), color);
+    background-color: map-get(map-get($btn-colors-specific, $type), bg);
+    outline-color: map-get(map-get($btn-colors-specific, $type), bg);
+
+    &:hover,
+    &.hover,
+    &:visited,
+    &:focus,
+    &.focus,
+    &:focus-visible,
+    &:focus:not(:focus-visible) {
+      color: map-get(map-get($btn-colors-specific, $type), color);
+    }
+
+    &:not(:disabled, .disabled):active,
+    &:not(:disabled, .disabled).active {
+      background-color: map-get(
+        map-get($btn-colors-specific, $type),
+        bg-active
+      );
+      color: map-get(map-get($btn-colors-specific, $type), color);
+    }
+  }
+}
+
+@mixin btn-outline-specific-types($color, $type) {
+  @if $color == $type {
+    color: map-get(map-get($btn-colors-specific, $type), color);
+    outline-color: map-get(map-get($btn-colors-specific, $type), color);
+    background-color: transparent;
+  }
+}
+
+@mixin btn-specific-color($color, $type) {
+  @if $color == $type {
+    color: map-get(map-get($btn-colors-specific, $type), color);
+  }
+}
+
+@mixin color-light($color) {
+  @if $color == 'light' {
+    color: $gray-950;
+  }
+}
+
+// Custom styles
 .btn {
   @extend .headline-md; // Nunito, 18px, 24px
   font-weight: $font-weight-bold; // 700
@@ -107,20 +170,16 @@ $theme-color-btn-bg-hover: (
 
     &:hover,
     &.hover {
-      background-color: $grisulado-100;
+      background-color: $slate-100;
     }
 
     &:focus,
-    &.focus {
+    &.focus,
+    &:focus:not(:focus-visible) {
       box-shadow: $focus-box-shadow;
       border-radius: $border-radius-sm; //.25rem
       text-decoration: none;
       outline: $outline-transparent;
-    }
-
-    &:active,
-    &.active {
-      box-shadow: none;
     }
   }
 }
@@ -143,11 +202,14 @@ $theme-color-btn-bg-hover: (
 
     &:visited {
       color: $white;
+      @include btn-specific-color($color, 'link');
+      @include color-light($color);
     }
 
     &:focus,
     &.focus,
-    &:focus-visible {
+    &:focus-visible,
+    &:focus:not(:focus-visible) {
       color: $white;
       outline: $outline-transparent;
       box-shadow: $focus-box-shadow;
@@ -156,6 +218,7 @@ $theme-color-btn-bg-hover: (
       @if $color == 'danger' {
         box-shadow: $focus-box-shadow-danger;
       }
+      @include color-light($color);
     }
 
     &:not(:disabled, .disabled):active,
@@ -165,7 +228,8 @@ $theme-color-btn-bg-hover: (
       box-shadow: none;
 
       &:focus,
-      &.focus {
+      &.focus,
+      &:focus:not(:focus-visible) {
         box-shadow: $focus-box-shadow;
         text-decoration: none;
         @if $color == 'danger' {
@@ -174,57 +238,54 @@ $theme-color-btn-bg-hover: (
       }
     }
 
-    @include btn-disabled;
+    @include btn-disabled($color);
 
-    @if $color == 'link' {
-      color: $btn-link-color;
-      background-color: $white;
-      outline-color: $white;
+    //Estilos para link
+    @include btn-specific-types($color, 'link');
 
-      &:hover,
-      &.hover,
-      &:visited,
-      &:focus,
-      &.focus {
-        color: $btn-link-color;
-      }
+    //Estilos para light
+    @include color-light($color);
 
-      &:not(:disabled, .disabled):active,
-      &:not(:disabled, .disabled).active {
-        background-color: $btn-link-bg-active;
-        color: $btn-link-color;
-      }
-    }
-    @if $color == 'warning' or $color == 'dark' or $color == 'light' {
+    //Estilos para warning y dark
+    @if $color == 'warning' or $color == 'dark' {
       @include btn-without-styles;
     }
   }
 
   .btn-outline-#{$color} {
     color: map-get($theme-colors, $color);
-    @if $color == 'link' {
-      color: $btn-link-color;
-      outline-color: $btn-link-color;
-    }
+
+    //Estilos para outline-link
+    @include btn-outline-specific-types($color, 'link');
 
     &:visited {
       color: map-get($theme-colors, $color);
-      @if $color == 'link' {
-        color: $btn-link-color;
+
+      //Estilos para outline-link visited
+      @include btn-specific-color($color, 'link');
+
+      //Estilos para outline-light visited
+      @if $color == 'light' {
+        color: $slate-50;
       }
     }
 
     &:hover,
     &.hover,
     &:focus,
-    &.focus {
+    &.focus,
+    &:focus:not(:focus-visible) {
       color: $white;
-      @if $color == 'link' {
-        color: $btn-link-color;
-      }
+
+      //Estilos para link
+      @include btn-specific-color($color, 'link');
+
+      //Estilos para light
+      @include color-light($color);
     }
 
-    @if $color == 'warning' or $color == 'dark' or $color == 'light' {
+    //Estilos para warning y dark outline
+    @if $color == 'warning' or $color == 'dark' {
       @include btn-without-styles;
     }
   }
@@ -239,24 +300,4 @@ a.btn {
   width: 100%;
 }
 
-//Botón con spinner
-/* .btn-icon {
-  //Botón con spinner
-  &:focus,
-  &.focus,
-  &:hover,
-  &.hover,
-  &:active,
-  &.active {
-    &:is(.btn-outline-secondary, .btn-outline-success, .btn-outline-danger) {
-      .spinner-border {
-        border-color: $white;
-        border-right-color: $grisulado-300;
-      }
-    }
-    .spinner-border:not(.text-dark) {
-      border-color: $white;
-      border-right-color: $grisulado-300;
-    }
-  }
-} */
+$theme-colors: map-remove($theme-colors, 'link');

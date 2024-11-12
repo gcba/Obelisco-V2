@@ -4,10 +4,17 @@ import React, { useState } from 'react';
 
 import CodeCopy from '@/components/CodeBox';
 import CodeBox from '@/components/CodeBox';
+import LinkClient from '@/components/LinkClient';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
-import { PAGINATION_CENTRAL, PAGINATION_FINAL, PAGINATION_INITIAL, PAGINATION_DESCRIPTION } from './code-views';
+import {
+  PAGINATION_CENTRAL,
+  PAGINATION_FINAL,
+  PAGINATION_INITIAL,
+  PAGINATION_DESCRIPTION,
+  PAGINATION_DISABLED,
+} from './code-views';
 
 const PaginationDocs: React.FC = () => {
   const [selectedExample, setSelectedExample] = useState<'inicial' | 'central' | 'final'>('inicial');
@@ -26,15 +33,23 @@ const PaginationDocs: React.FC = () => {
 
   const sections = [
     {
-      id: 'section-1',
       title: 'Paginado',
       h1: true,
       content: (
-        <MainDescription description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur expedita autem in quae culpa illum sed, eveniet perferendis ratione soluta, est assumenda ducimus corporis. Deleniti dolore quaerat consequuntur dolorem sequi." />
+        <>
+          <MainDescription description="El paginado se utiliza para dividir contenido o datos en varias páginas, con un control para navegar a la página siguiente o anterior." />
+          <p className="lead mb-4">
+            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
+            <a href="https://gcba.github.io/estandares/componentes/paginado/" target="_blank" rel="noopener noreferrer">
+              enlace
+            </a>
+            .
+          </p>
+        </>
       ),
     },
     {
-      id: 'section-2',
+      id: 'section-1',
       title: 'Numerado',
       content: (
         <CodeBox codeHTML={getCodeExample()}>
@@ -65,9 +80,9 @@ const PaginationDocs: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="row mt-5 justify-content-center text-center">
+          <div className="my-4 text-center">
             {selectedExample === 'inicial' && (
-              <div className="col-auto mb-4">
+              <div className="container">
                 <nav aria-label="Ejemplo de paginado numerado inicial">
                   <ul className="pagination">
                     <li className="page-item" style={{ opacity: 0 }}>
@@ -77,141 +92,107 @@ const PaginationDocs: React.FC = () => {
                       </span>
                     </li>
                     <li className="page-item active">
-                      <a className="page-link" href="#">
-                        1
-                      </a>
+                      <LinkClient className="page-link">1</LinkClient>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
-                        2
-                      </a>
+                      <LinkClient className="page-link">2</LinkClient>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
-                        3
-                      </a>
+                      <LinkClient className="page-link">3</LinkClient>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
-                        4
-                      </a>
+                      <LinkClient className="page-link">4</LinkClient>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
-                        5
-                      </a>
+                      <LinkClient className="page-link">5</LinkClient>
                     </li>
                     <li className="page-item no-events">
                       <span className="page-link">...</span>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
-                        10
-                      </a>
+                      <LinkClient className="page-link">10</LinkClient>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
+                      <LinkClient className="page-link">
                         <span className="page-next-text">Siguiente</span>
                         <span className="page-next-icon" aria-hidden="true"></span>
-                      </a>
+                      </LinkClient>
                     </li>
                   </ul>
                 </nav>
               </div>
             )}
             {selectedExample === 'central' && (
-              <div className="col-auto mb-4">
+              <div className="container">
                 <nav aria-label="Ejemplo de paginado numerado central">
                   <ul className="pagination">
                     <li className="page-item">
-                      <a className="page-link" href="#">
+                      <LinkClient className="page-link">
                         <span className="page-previous-icon" aria-hidden="true"></span>
                         <span className="page-previous-text">Anterior</span>
-                      </a>
+                      </LinkClient>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
-                        1
-                      </a>
+                      <LinkClient className="page-link">1</LinkClient>
                     </li>
                     <li className="page-item no-events">
                       <span className="page-link">...</span>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
-                        4
-                      </a>
+                      <LinkClient className="page-link">4</LinkClient>
                     </li>
                     <li className="page-item active">
-                      <a className="page-link" href="#">
-                        5
-                      </a>
+                      <LinkClient className="page-link">5</LinkClient>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
-                        6
-                      </a>
+                      <LinkClient className="page-link">6</LinkClient>
                     </li>
                     <li className="page-item no-events">
                       <span className="page-link">...</span>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
-                        10
-                      </a>
+                      <LinkClient className="page-link">10</LinkClient>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
+                      <LinkClient className="page-link">
                         <span className="page-next-text">Siguiente</span>
                         <span className="page-next-icon" aria-hidden="true"></span>
-                      </a>
+                      </LinkClient>
                     </li>
                   </ul>
                 </nav>
               </div>
             )}
             {selectedExample === 'final' && (
-              <div className="col-auto mb-4">
+              <div className="container">
                 <nav aria-label="Ejemplo de paginado numerado final">
                   <ul className="pagination">
                     <li className="page-item">
-                      <a className="page-link" href="#">
+                      <LinkClient className="page-link">
                         <span className="page-previous-icon" aria-hidden="true"></span>
                         <span className="page-previous-text">Anterior</span>
-                      </a>
+                      </LinkClient>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
-                        1
-                      </a>
+                      <LinkClient className="page-link">1</LinkClient>
                     </li>
                     <li className="page-item no-events">
                       <span className="page-link">...</span>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
-                        6
-                      </a>
+                      <LinkClient className="page-link">6</LinkClient>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
-                        7
-                      </a>
+                      <LinkClient className="page-link">7</LinkClient>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
-                        8
-                      </a>
+                      <LinkClient className="page-link">8</LinkClient>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">
-                        9
-                      </a>
+                      <LinkClient className="page-link">9</LinkClient>
                     </li>
                     <li className="page-item active">
-                      <a className="page-link" href="#">
-                        10
-                      </a>
+                      <LinkClient className="page-link">10</LinkClient>
                     </li>
                     <li className="page-item" style={{ opacity: 0 }}>
                       <span className="page-link">
@@ -228,7 +209,7 @@ const PaginationDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-3',
+      id: 'section-2',
       title: 'Descriptivo',
       content: (
         <CodeCopy codeHTML={PAGINATION_DESCRIPTION}>
@@ -236,16 +217,42 @@ const PaginationDocs: React.FC = () => {
             <div className="pagination">
               <div className="page-navigation">
                 <div className="page-item">
-                  <a className="btn page-link" href="#">
+                  <LinkClient className="btn page-link">
                     <span className="page-previous-icon" aria-hidden="true"></span>
                     <span className="page-next-text">Anterior</span>
-                  </a>
+                  </LinkClient>
                 </div>
                 <div className="page-item">
-                  <a className="btn page-link" href="#">
+                  <LinkClient className="btn page-link">
                     <span className="page-next-text">Siguiente</span>
                     <span className="page-next-icon" aria-hidden="true"></span>
-                  </a>
+                  </LinkClient>
+                </div>
+              </div>
+            </div>
+          </div>
+        </CodeCopy>
+      ),
+    },
+    {
+      id: 'section-2',
+      title: 'Estado deshabilitado',
+      content: (
+        <CodeCopy codeHTML={PAGINATION_DISABLED}>
+          <div className="container">
+            <div className="pagination">
+              <div className="page-navigation">
+                <div className="page-item disabled">
+                  <LinkClient className="btn page-link">
+                    <span className="page-previous-icon" aria-hidden="true"></span>
+                    <span className="page-next-text">Anterior</span>
+                  </LinkClient>
+                </div>
+                <div className="page-item disabled">
+                  <LinkClient className="btn page-link">
+                    <span className="page-next-text">Siguiente</span>
+                    <span className="page-next-icon" aria-hidden="true"></span>
+                  </LinkClient>
                 </div>
               </div>
             </div>

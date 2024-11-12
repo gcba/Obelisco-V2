@@ -1,0 +1,1054 @@
+2:I[25156,["7161","static/chunks/7161-3042676fb1706ac0.js","4547","static/chunks/4547-dc6b0788e770ff99.js","5327","static/chunks/app/components/calendar/page-7ed6cf52bc0b6ade.js"],"default"]
+3:I[11321,["7161","static/chunks/7161-3042676fb1706ac0.js","4547","static/chunks/4547-dc6b0788e770ff99.js","5327","static/chunks/app/components/calendar/page-7ed6cf52bc0b6ade.js"],"default"]
+b:I[39275,[],""]
+c:I[61343,[],""]
+d:I[81897,["231","static/chunks/231-a2647ece73ebe7b0.js","8173","static/chunks/8173-d6222149e039357c.js","3185","static/chunks/app/layout-c05b7d16a1575ab9.js"],"default"]
+e:I[28567,["231","static/chunks/231-a2647ece73ebe7b0.js","8173","static/chunks/8173-d6222149e039357c.js","3185","static/chunks/app/layout-c05b7d16a1575ab9.js"],"default"]
+f:I[231,["231","static/chunks/231-a2647ece73ebe7b0.js","1931","static/chunks/app/page-931a1daea0fd21bf.js"],""]
+10:I[38173,["231","static/chunks/231-a2647ece73ebe7b0.js","8173","static/chunks/8173-d6222149e039357c.js","9160","static/chunks/app/not-found-7e871aaa8ff9b5df.js"],"Image"]
+4:Tc8b,<div class="calendar">
+    <div class="calendar-header">
+        <h2 class="calendar-title">Enero</h2>
+        <span class="calendar-year">2024</span>
+    </div>
+    <div class="calendar-body">
+        <table>
+        <thead>
+            <tr class="calendar-week-header">
+            <th><span>D</span></th>
+            <th><span>L</span></th>
+            <th><span>M</span></th>
+            <th><span>M</span></th>
+            <th><span>J</span></th>
+            <th><span>V</span></th>
+            <th><span>S</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="calendar-week">
+            <td></td>
+            <td>
+                <span title="Nombre del evento.">
+                <span class="active">1</span>
+                </span>
+            </td>
+            <td><span>2</span></td>
+            <td><span>3</span></td>
+            <td><span>4</span></td>
+            <td><span>5</span></td>
+            <td><span>6</span></td>
+            </tr>
+            <tr class="calendar-week">
+            <td><span>7</span></td>
+            <td><span>8</span></td>
+            <td><span>9</span></td>
+            <td>
+                <span title="Nombre del evento.">
+                <span class="active">10</span>
+                </span>
+            </td>
+            <td><span>11</span></td>
+            <td><span>12</span></td>
+            <td><span>13</span></td>
+            </tr>
+            <tr class="calendar-week">
+            <td><span>14</span></td>
+            <td><span>15</span></td>
+            <td><span>16</span></td>
+            <td><span>17</span></td>
+            <td><span>18</span></td>
+            <td><span>19</span></td>
+            <td><span>20</span></td>
+            </tr>
+            <tr class="calendar-week">
+            <td><span>21</span></td>
+            <td><span>22</span></td>
+            <td><span>23</span></td>
+            <td><span>24</span></td>
+            <td>
+                <span title="Nombre del evento.">
+                <span class="active">25</span>
+                </span>
+            </td>
+            <td><span>26</span></td>
+            <td><span>27</span></td>
+            </tr>
+            <tr class="calendar-week">
+            <td><span>28</span></td>
+            <td><span>29</span></td>
+            <td><span>30</span></td>
+            <td><span>31</span></td>
+            <td><span></span></td>
+            <td><span></span></td>
+            <td><span></span></td>
+            </tr>
+            <tr class="calendar-week">
+            <td><span></span></td>
+            <td><span></span></td>
+            <td><span></span></td>
+            <td><span></span></td>
+            <td><span></span></td>
+            <td><span></span></td>
+            <td><span></span></td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+    <div class="calendar-footer">
+        <ul class="calendar-footer-list">
+        <li>
+            <strong>1. </strong>
+            Nombre del evento.
+        </li>
+        <li>
+            <strong>10. </strong>
+            Nombre del evento.
+        </li>
+        <li>
+            <strong>25. </strong>
+            Nombre del evento.
+        </li>
+        </ul>
+    </div>
+</div>5:Tcca,<div class="calendar">
+    <div class="calendar-header">
+        <h2 class="calendar-title">Enero</h2>
+        <span class="calendar-year">2024</span>
+    </div>
+    <div class="calendar-body">
+        <table>
+        <thead>
+            <tr class="calendar-week-header">
+            <th><span>D</span></th>
+            <th><span>L</span></th>
+            <th><span>M</span></th>
+            <th><span>M</span></th>
+            <th><span>J</span></th>
+            <th><span>V</span></th>
+            <th><span>S</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="calendar-week">
+            <td></td>
+            <td>
+              <a href="#" class="calendar-link" title="Nombre del evento.">
+                <span class="active">1</span>
+              </a>
+            </td>
+            <td><span>2</span></td>
+            <td><span>3</span></td>
+            <td><span>4</span></td>
+            <td><span>5</span></td>
+            <td><span>6</span></td>
+            </tr>
+            <tr class="calendar-week">
+            <td><span>7</span></td>
+            <td><span>8</span></td>
+            <td><span>9</span></td>
+            <td>
+              <a href="#" class="calendar-link" title="Nombre del evento.">
+                <span class="active">10</span>
+              </a>
+            </td>
+            <td><span>11</span></td>
+            <td><span>12</span></td>
+            <td><span>13</span></td>
+            </tr>
+            <tr class="calendar-week">
+            <td><span>14</span></td>
+            <td><span>15</span></td>
+            <td><span>16</span></td>
+            <td><span>17</span></td>
+            <td><span>18</span></td>
+            <td><span>19</span></td>
+            <td><span>20</span></td>
+            </tr>
+            <tr class="calendar-week">
+            <td><span>21</span></td>
+            <td><span>22</span></td>
+            <td><span>23</span></td>
+            <td><span>24</span></td>
+            <td>
+              <a href="#" class="calendar-link" title="Nombre del evento.">
+                <span class="active">25</span>
+              </a>
+            </td>
+            <td><span>26</span></td>
+            <td><span>27</span></td>
+            </tr>
+            <tr class="calendar-week">
+            <td><span>28</span></td>
+            <td><span>29</span></td>
+            <td><span>30</span></td>
+            <td><span>31</span></td>
+            <td><span></span></td>
+            <td><span></span></td>
+            <td><span></span></td>
+            </tr>
+            <tr class="calendar-week">
+            <td><span></span></td>
+            <td><span></span></td>
+            <td><span></span></td>
+            <td><span></span></td>
+            <td><span></span></td>
+            <td><span></span></td>
+            <td><span></span></td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+    <div class="calendar-footer">
+        <ul class="calendar-footer-list">
+        <li>
+            <strong>1. </strong>
+            Nombre del evento.
+        </li>
+        <li>
+            <strong>10. </strong>
+            Nombre del evento.
+        </li>
+        <li>
+            <strong>25. </strong>
+            Nombre del evento.
+        </li>
+        </ul>
+    </div>
+</div>6:Teea,<div class="calendar">
+    <div class="calendar-header">
+        <h2 class="calendar-title">Enero</h2>
+        <span class="calendar-year">2024</span>
+    </div>
+    <div class="calendar-body">
+        <table>
+        <thead>
+            <tr class="calendar-week-header">
+            <th><span>D</span></th>
+            <th><span>L</span></th>
+            <th><span>M</span></th>
+            <th><span>M</span></th>
+            <th><span>J</span></th>
+            <th><span>V</span></th>
+            <th><span>S</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="calendar-week">
+            <td></td>
+            <td>
+                <span title="Nombre del evento.">
+                <span class="active-secondary">1</span>
+                </span>
+            </td>
+            <td><span>2</span></td>
+            <td><span>3</span></td>
+            <td><span>4</span></td>
+            <td><span>5</span></td>
+            <td><span>6</span></td>
+            </tr>
+            <tr class="calendar-week">
+            <td><span>7</span></td>
+            <td><span>8</span></td>
+            <td>
+                <span title="Nombre del evento.">
+                <span class="active">9</span>
+                </span>
+            </td>
+            <td><span>10</span></td>
+            <td><span>11</span></td>
+            <td>
+                <span title="Nombre del evento.">
+                <span class="active-secondary">12</span>
+                </span>
+            </td>
+            <td>
+                <span title="Nombre del evento.">
+                <span class="active-secondary">13</span>
+                </span>
+            </td>
+            </tr>
+            <tr class="calendar-week">
+            <td><span>14</span></td>
+            <td><span>15</span></td>
+            <td><span>16</span></td>
+            <td><span>17</span></td>
+            <td><span>18</span></td>
+            <td><span>19</span></td>
+            <td><span>20</span></td>
+            </tr>
+            <tr class="calendar-week">
+            <td><span>21</span></td>
+            <td><span>22</span></td>
+            <td><span>23</span></td>
+            <td><span>24</span></td>
+            <td>
+                <span title="Nombre del evento.">
+                <span class="active">25</span>
+                </span>
+            </td>
+            <td>
+                <span title="Nombre del evento.">
+                <span class="active">26</span>
+                </span>
+            </td>
+            <td>
+                <span title="Nombre del evento.">
+                <span class="active">27</span>
+                </span>
+            </td>
+            </tr>
+            <tr class="calendar-week">
+            <td><span>28</span></td>
+            <td><span>29</span></td>
+            <td><span>30</span></td>
+            <td><span>31</span></td>
+            <td><span></span></td>
+            <td><span></span></td>
+            <td><span></span></td>
+            </tr>
+            <tr class="calendar-week">
+            <td><span></span></td>
+            <td><span></span></td>
+            <td><span></span></td>
+            <td><span></span></td>
+            <td><span></span></td>
+            <td><span></span></td>
+            <td><span></span></td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+    <div class="calendar-footer">
+        <ul class="calendar-footer-list">
+        <li>
+            <strong>1. </strong>
+            Nombre del evento.
+        </li>
+        <li>
+            <strong>9. </strong>
+            Nombre del evento.
+        </li>
+        <li>
+            <strong>12, 13. </strong>
+            Nombre del evento.
+        </li>
+        <li>
+            <strong>25 al 27. </strong>
+            Nombre del evento.
+        </li>
+        </ul>
+    </div>
+</div>7:T1bbe,
+ <div className="calendar">
+    <div className="calendar-header">
+        <h2 className="calendar-title">Enero</h2>
+        <span className="calendar-year">2024</span>
+    </div>
+    <div className="calendar-body">
+        <table>
+        <thead>
+            <tr className="calendar-week-header">
+            <th>
+                <span>D</span>
+            </th>
+            <th>
+                <span>L</span>
+            </th>
+            <th>
+                <span>M</span>
+            </th>
+            <th>
+                <span>M</span>
+            </th>
+            <th>
+                <span>J</span>
+            </th>
+            <th>
+                <span>V</span>
+            </th>
+            <th>
+                <span>S</span>
+            </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr className="calendar-week">
+                <td></td>
+                <td>
+                    <span title="Nombre del evento.">
+                    <span className="active">1</span>
+                    </span>
+                </td>
+                <td>
+                    <span>2</span>
+                </td>
+                <td>
+                    <span>3</span>
+                </td>
+                <td>
+                    <span>4</span>
+                </td>
+                <td>
+                    <span>5</span>
+                </td>
+                <td>
+                    <span>6</span>
+                </td>
+            </tr>
+            <tr className="calendar-week">
+                <td>
+                    <span>7</span>
+                </td>
+                <td>
+                    <span>8</span>
+                </td>
+                <td>
+                    <span>9</span>
+                </td>
+                <td>
+                    <span title="Nombre del evento.">
+                        <span className="active">10</span>
+                    </span>
+                </td>
+                <td>
+                    <span>11</span>
+                </td>
+                <td>
+                    <span title="Nombre del evento.">
+                        <span className="active">12</span>
+                    </span>
+                </td>
+                <td>
+                    <span>13</span>
+                </td>
+            </tr>
+            <tr className="calendar-week">
+                <td>
+                    <span>14</span>
+                </td>
+                <td>
+                    <span title="Nombre del evento.">
+                        <span className="active">15</span>
+                    </span>
+                </td>
+                <td>
+                    <span>16</span>
+                </td>
+                <td>
+                    <span>17</span>
+                </td>
+                <td>
+                    <span>18</span>
+                </td>
+                <td>
+                    <span>19</span>
+                </td>
+                <td>
+                    <span>20</span>
+                </td>
+                </tr>
+                <tr className="calendar-week">
+                <td>
+                    <span>21</span>
+                </td>
+                <td>
+                    <span>22</span>
+                </td>
+                <td>
+                    <span title="Nombre del evento.">
+                        <span className="active">23</span>
+                    </span>
+                </td>
+                <td>
+                    <span>24</span>
+                </td>
+                <td>
+                    <span>25</span>
+                </td>
+                <td>
+                    <span>26</span>
+                </td>
+                <td>
+                    <span title="Nombre del evento.">
+                        <span className="active">27</span>
+                    </span>
+                </td>
+            </tr>
+            <tr className="calendar-week">
+                <td>
+                    <span>28</span>
+                </td>
+                <td>
+                    <span>29</span>
+                </td>
+                <td>
+                    <span>30</span>
+                </td>
+                <td>
+                    <span>31</span>
+                </td>
+                <td>
+                    <span></span>
+                </td>
+                <td>
+                    <span></span>
+                </td>
+                <td>
+                    <span></span>
+                </td>
+            </tr>
+            <tr className="calendar-week">
+                <td>
+                    <span></span>
+                </td>
+                <td>
+                    <span></span>
+                </td>
+                <td>
+                    <span></span>
+                </td>
+                <td>
+                    <span></span>
+                </td>
+                <td>
+                    <span></span>
+                </td>
+                <td>
+                    <span></span>
+                </td>
+                <td>
+                    <span></span>
+                </td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+
+    <div className="calendar-footer">
+        <div className="accordion-item">
+            <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseCalendar1"
+                aria-expanded="false"
+                aria-controls="collapseCalendar1"
+            >
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                    calendar_month
+                </span>
+                <span className="collapse-title">Referencia</span>
+            </button>
+            <div id="collapseCalendar1" className="accordion-collapse collapse">
+                <div className="accordion-body">
+                    <div className="card-body">
+                        <ul className="calendar-footer-list">
+                            <li>
+                                <strong>1. </strong>
+                                Nombre del evento.
+                            </li>
+                            <li>
+                                <strong>10. </strong>
+                                Nombre del evento.
+                            </li>
+                            <li>
+                                <strong>12. </strong>
+                                Nombre del evento.
+                            </li>
+                            <li>
+                                <strong>15. </strong>
+                                Nombre del evento.
+                            </li>
+                            <li>
+                            <strong>23. </strong>
+                                Nombre del evento.
+                            </li>
+                            <li>
+                            <strong>27. </strong>
+                                Nombre del evento.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>8:T1cb2,<div class="calendar">
+    <div class="calendar-header">
+        <h2 class="calendar-title">Enero</h2>
+        <span class="calendar-year">2024</span>
+    </div>
+    <div class="calendar-body">
+        <table>
+        <thead>
+            <tr class="calendar-week-header">
+            <th><span>D</span></th>
+            <th><span>L</span></th>
+            <th><span>M</span></th>
+            <th><span>M</span></th>
+            <th><span>J</span></th>
+            <th><span>V</span></th>
+            <th><span>S</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="calendar-week">
+            <td></td>
+            <td>
+                <span title="Nombre del evento.">
+                <span class="active bg-coral">1</span>
+                </span>
+            </td>
+            <td>
+                <span title="Nombre del evento.">
+                <span class="active bg-musket">2</span>
+                </span>
+            </td>
+            <td>
+                <span title="Nombre del evento.">
+                <span class="active bg-citrus">3</span>
+                </span>
+            </td>
+            <td>
+                <span title="Nombre del evento.">
+                <span class="active bg-lime">4</span>
+                </span>
+            </td>
+            <td>
+                <span title="Nombre del evento.">
+                <span class="active bg-sky">5</span>
+                </span>
+            </td>
+            <td>
+                <span title="Nombre del evento.">
+                <span class="active bg-pistachio">6</span>
+                </span>
+            </td>
+            </tr>
+            <tr class="calendar-week">
+            <td>
+                <span title="Nombre del evento.">
+                <span class="active bg-berries">7</span>
+                </span>
+            </td>
+            <td>
+                <span title="Nombre del evento.">
+                <span class="active bg-lavender">8</span>
+                </span>
+            </td>
+            <td>
+                <span title="Nombre del evento.">
+                <span class="active bg-aqua">9</span>
+                </span>
+            </td>
+            <td>
+                <span title="Nombre del evento.">
+                <span class="active bg-avocado">10</span>
+                </span>
+            </td>
+            <td>
+                <span title="Nombre del evento.">
+                <span class="active bg-strawberry">11</span>
+                </span>
+            </td>
+            <td>
+                <span title="Nombre del evento.">
+                <span class="active bg-blackberry">12</span>
+                </span>
+            </td>
+            <td>
+                <span title="Nombre del evento.">
+                <span class="active bg-gray">13</span>
+                </span>
+            </td>
+            </tr>
+            <tr class="calendar-week">
+            <td><span>14</span></td>
+            <td><span>15</span></td>
+            <td><span>16</span></td>
+            <td><span>17</span></td>
+            <td><span>18</span></td>
+            <td><span>19</span></td>
+            <td><span>20</span></td>
+            </tr>
+            <tr class="calendar-week">
+            <td><span>21</span></td>
+            <td><span>22</span></td>
+            <td><span>23</span></td>
+            <td><span>24</span></td>
+            <td><span>25</span></td>
+            <td><span>26</span></td>
+            <td><span>27</span></td>
+            </tr>
+            <tr class="calendar-week">
+            <td><span>28</span></td>
+            <td><span>29</span></td>
+            <td><span>30</span></td>
+            <td><span>31</span></td>
+            <td><span></span></td>
+            <td><span></span></td>
+            <td><span></span></td>
+            </tr>
+            <tr class="calendar-week">
+            <td><span></span></td>
+            <td><span></span></td>
+            <td><span></span></td>
+            <td><span></span></td>
+            <td><span></span></td>
+            <td><span></span></td>
+            <td><span></span></td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+    <div className="calendar-footer">
+        <div className="accordion-item">
+            <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseCalendar2"
+                aria-expanded="false"
+                aria-controls="collapseCalendar2"
+            >
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                    calendar_month
+                </span>
+                <span className="collapse-title">Referencia</span>
+            </button>
+            <div id="collapseCalendar2" className="accordion-collapse collapse">
+                <div className="accordion-body">
+                    <div className="card-body">
+                        <ul className="calendar-footer-list">
+                            <li>
+                                <strong>1. </strong>
+                                Nombre del evento.
+                            </li>
+                            <li>
+                                <strong>2. </strong>
+                                Nombre del evento.
+                            </li>
+                            <li>
+                                <strong>3. </strong>
+                                Nombre del evento.
+                            </li>
+                            <li>
+                                <strong>4. </strong>
+                                Nombre del evento.
+                            </li>
+                            <li>
+                            <strong>5. </strong>
+                                Nombre del evento.
+                            </li>
+                            <li>
+                            <strong>6. </strong>
+                                Nombre del evento.
+                            </li>
+                            <li>
+                                <strong>7. </strong>
+                                Nombre del evento.
+                            </li>
+                            <li>
+                                <strong>8. </strong>
+                                Nombre del evento.
+                            </li>
+                            <li>
+                                <strong>9. </strong>
+                                Nombre del evento.
+                            </li>
+                            <li>
+                                <strong>10. </strong>
+                                Nombre del evento.
+                            </li>
+                            <li>
+                            <strong>11. </strong>
+                                Nombre del evento.
+                            </li>
+                            <li>
+                            <strong>12. </strong>
+                                Nombre del evento.
+                            </li>
+                            <li>
+                            <strong>13. </strong>
+                                Nombre del evento.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>9:Tb82,<div class="calendar">
+    <div class="calendar-header">
+        <h2 class="calendar-title">Enero</h2>
+        <span class="calendar-year">2024</span>
+    </div>
+    <div class="calendar-body">
+        <table>
+            <thead>
+                <tr class="calendar-week-header">
+                    <th><span>D</span></th>
+                    <th><span>L</span></th>
+                    <th><span>M</span></th>
+                    <th><span>M</span></th>
+                    <th><span>J</span></th>
+                    <th><span>V</span></th>
+                    <th><span>S</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="calendar-week">
+                    <td></td>
+                    <td><span>1</span></td>
+                    <td><span>2</span></td>
+                    <td><span>3</span></td>
+                    <td><span>4</span></td>
+                    <td><span>5</span></td>
+                    <td><span>6</span></td>
+                </tr>
+                <tr class="calendar-week">
+                    <td><span>7</span></td>
+                    <td><span>8</span></td>
+                    <td><span>9</span></td>
+                    <td><span>10</span></td>
+                    <td><span>11</span></td>
+                    <td><span>12</span></td>
+                    <td><span>13</span></td>
+                </tr>
+                    <tr class="calendar-week">
+                    <td><span>14</span></td>
+                    <td><span>15</span></td>
+                    <td><span>16</span></td>
+                    <td><span>17</span></td>
+                    <td><span>18</span></td>
+                    <td><span>19</span></td>
+                    <td><span>20</span></td>
+                </tr>
+                <tr class="calendar-week">
+                    <td><span>21</span></td>
+                    <td><span>22</span></td>
+                    <td><span>23</span></td>
+                    <td><span>24</span></td>
+                    <td><span>25</span></td>
+                    <td><span>26</span></td>
+                    <td><span>27</span></td>
+                </tr>
+                <tr class="calendar-week">
+                    <td><span>28</span></td>
+                    <td><span>29</span></td>
+                    <td><span>30</span></td>
+                    <td><span>31</span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                </tr>
+                <tr class="calendar-week">
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                    <td><span></span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>a:T1a74,<div class="calendar-deck">
+    <div class="calendar">
+        <div class="calendar-header">
+            <h2 class="calendar-title">Enero</h2>
+            <span class="calendar-year">2024</span>
+        </div>
+        <div class="calendar-body">
+            <table>
+            <thead>
+                <tr class="calendar-week-header">
+                <th><span>D</span></th>
+                <th><span>L</span></th>
+                <th><span>M</span></th>
+                <th><span>M</span></th>
+                <th><span>J</span></th>
+                <th><span>V</span></th>
+                <th><span>S</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="calendar-week">
+                <td></td>
+                <td><span>1</span></td>
+                <td><span>2</span></td>
+                <td><span>3</span></td>
+                <td><span>4</span></td>
+                <td><span>5</span></td>
+                <td><span>6</span></td>
+                </tr>
+                <tr class="calendar-week">
+                <td><span>7</span></td>
+                <td><span>8</span></td>
+                <td><span>9</span></td>
+                <td>
+                    <span title="Nombre del evento.">
+                    <span class="active">10</span>
+                    </span>
+                </td>
+                <td><span>11</span></td>
+                <td><span>12</span></td>
+                <td><span>13</span></td>
+                </tr>
+                <tr class="calendar-week">
+                <td><span>14</span></td>
+                <td><span>15</span></td>
+                <td><span>16</span></td>
+                <td><span>17</span></td>
+                <td><span>18</span></td>
+                <td><span>19</span></td>
+                <td><span>20</span></td>
+                </tr>
+                <tr class="calendar-week">
+                <td><span>21</span></td>
+                <td><span>22</span></td>
+                <td><span>23</span></td>
+                <td><span>24</span></td>
+                <td><span>25</span></td>
+                <td>
+                    <span title="Nombre del evento.">
+                    <span class="active">26</span>
+                    </span>
+                </td>
+                <td><span>27</span></td>
+                </tr>
+                <tr class="calendar-week">
+                <td>
+                    <span title="Nombre del evento.">
+                    <span class="active">28</span>
+                    </span>
+                </td>
+                <td><span>29</span></td>
+                <td><span>30</span></td>
+                <td><span>31</span></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                </tr>
+                <tr class="calendar-week">
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <div class="calendar-footer">
+            <ul class="calendar-footer-list">
+            <li>
+                <strong>10. </strong>
+                Nombre del evento.
+            </li>
+            <li>
+                <strong>26. </strong>
+                Nombre del evento.
+            </li>
+            <li>
+                <strong>28. </strong>
+                Nombre del evento.
+            </li>
+            </ul>
+        </div>
+    </div>
+    <div class="calendar">
+        <div class="calendar-header">
+            <h2 class="calendar-title">Febrero</h2>
+            <span class="calendar-year">2024</span>
+        </div>
+        <div class="calendar-body">
+            <table>
+            <thead>
+                <tr class="calendar-week-header">
+                <th><span>D</span></th>
+                <th><span>L</span></th>
+                <th><span>M</span></th>
+                <th><span>M</span></th>
+                <th><span>J</span></th>
+                <th><span>V</span></th>
+                <th><span>S</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="calendar-week">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <span title="Nombre del evento.">
+                    <span class="active">1</span>
+                    </span>
+                </td>
+                <td><span>2</span></td>
+                <td><span>3</span></td>
+                </tr>
+                <tr class="calendar-week">
+                <td><span>4</span></td>
+                <td><span>5</span></td>
+                <td><span>6</span></td>
+                <td><span>7</span></td>
+                <td><span>8</span></td>
+                <td><span>9</span></td>
+                <td><span>10</span></td>
+                </tr>
+                <tr class="calendar-week">
+                <td><span>11</span></td>
+                <td><span>12</span></td>
+                <td><span>13</span></td>
+                <td><span>14</span></td>
+                <td><span>15</span></td>
+                <td><span>16</span></td>
+                <td><span>17</span></td>
+                </tr>
+                <tr class="calendar-week">
+                <td><span>18</span></td>
+                <td><span>19</span></td>
+                <td><span>20</span></td>
+                <td><span>21</span></td>
+                <td><span>22</span></td>
+                <td><span>23</span></td>
+                <td><span>24</span></td>
+                </tr>
+                <tr class="calendar-week">
+                <td><span>25</span></td>
+                <td><span>26</span></td>
+                <td><span>27</span></td>
+                <td><span>28</span></td>
+                <td><span>29</span></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                </tr>
+                <tr class="calendar-week">
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                <td><span></span></td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <div class="calendar-footer">
+            <ul class="calendar-footer-list">
+            <li>
+                <strong>1. </strong>
+                Nombre del evento.
+            </li>
+            </ul>
+        </div>
+    </div>
+</div>0:["YnmS_vHbNeC8CfzcmIFDc",[[["",{"children":["components",{"children":["calendar",{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",{"children":["components",{"children":["calendar",{"children":["__PAGE__",{},[["$L1",["$","$L2",null,{"sections":[{"title":"Calendario","content":[["$","div",null,{"children":["$","p",null,{"className":"lead","children":"El calendario es una representación visual en forma de tabla que exhibe eventos y fechas importantes correspondientes a los días de la semana de un mes determinado."}]}],["$","p",null,{"className":"lead mb-4","children":["Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente ",["$","a",null,{"href":"https://gcba.github.io/estandares/componentes/calendar/","target":"_blank","rel":"noopener noreferrer","children":"enlace."}]]}]],"h1":true},{"id":"section-1","title":"Predeterminado","content":["$","$L3",null,{"codeHTML":"$4","children":["$","div",null,{"className":"row justify-content-center","children":["$","div",null,{"className":"calendar","children":[["$","div",null,{"className":"calendar-header","children":[["$","h2",null,{"className":"calendar-title","children":"Enero"}],["$","span",null,{"className":"calendar-year","children":"2024"}]]}],["$","div",null,{"className":"calendar-body","children":["$","table",null,{"children":[["$","thead",null,{"children":["$","tr",null,{"className":"calendar-week-header","children":[["$","th",null,{"children":["$","span",null,{"children":"D"}]}],["$","th",null,{"children":["$","span",null,{"children":"L"}]}],["$","th",null,{"children":["$","span",null,{"children":"M"}]}],["$","th",null,{"children":["$","span",null,{"children":"M"}]}],["$","th",null,{"children":["$","span",null,{"children":"J"}]}],["$","th",null,{"children":["$","span",null,{"children":"V"}]}],["$","th",null,{"children":["$","span",null,{"children":"S"}]}]]}]}],["$","tbody",null,{"children":[["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{}],["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active","children":"1"}]}]}],["$","td",null,{"children":["$","span",null,{"children":"2"}]}],["$","td",null,{"children":["$","span",null,{"children":"3"}]}],["$","td",null,{"children":["$","span",null,{"children":"4"}]}],["$","td",null,{"children":["$","span",null,{"children":"5"}]}],["$","td",null,{"children":["$","span",null,{"children":"6"}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{"children":"7"}]}],["$","td",null,{"children":["$","span",null,{"children":"8"}]}],["$","td",null,{"children":["$","span",null,{"children":"9"}]}],["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active","children":"10"}]}]}],["$","td",null,{"children":["$","span",null,{"children":"11"}]}],["$","td",null,{"children":["$","span",null,{"children":"12"}]}],["$","td",null,{"children":["$","span",null,{"children":"13"}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{"children":"14"}]}],["$","td",null,{"children":["$","span",null,{"children":"15"}]}],["$","td",null,{"children":["$","span",null,{"children":"16"}]}],["$","td",null,{"children":["$","span",null,{"children":"17"}]}],["$","td",null,{"children":["$","span",null,{"children":"18"}]}],["$","td",null,{"children":["$","span",null,{"children":"19"}]}],["$","td",null,{"children":["$","span",null,{"children":"20"}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{"children":"21"}]}],["$","td",null,{"children":["$","span",null,{"children":"22"}]}],["$","td",null,{"children":["$","span",null,{"children":"23"}]}],["$","td",null,{"children":["$","span",null,{"children":"24"}]}],["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active","children":"25"}]}]}],["$","td",null,{"children":["$","span",null,{"children":"26"}]}],["$","td",null,{"children":["$","span",null,{"children":"27"}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{"children":"28"}]}],["$","td",null,{"children":["$","span",null,{"children":"29"}]}],["$","td",null,{"children":["$","span",null,{"children":"30"}]}],["$","td",null,{"children":["$","span",null,{"children":"31"}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}]]}]]}]]}]}],["$","div",null,{"className":"calendar-footer","children":["$","ul",null,{"className":"calendar-footer-list","children":[["$","li",null,{"children":[["$","strong",null,{"children":"1. "}],"Nombre del evento."]}],["$","li",null,{"children":[["$","strong",null,{"children":"10. "}],"Nombre del evento."]}],["$","li",null,{"children":[["$","strong",null,{"children":"25. "}],"Nombre del evento."]}]]}]}]]}]}]}]},{"id":"section-2","title":"Con enlaces","content":["$","$L3",null,{"codeHTML":"$5","children":["$","div",null,{"className":"row justify-content-center","children":["$","div",null,{"className":"calendar","children":[["$","div",null,{"className":"calendar-header","children":[["$","h2",null,{"className":"calendar-title","children":"Enero"}],["$","span",null,{"className":"calendar-year","children":"2024"}]]}],["$","div",null,{"className":"calendar-body","children":["$","table",null,{"children":[["$","thead",null,{"children":["$","tr",null,{"className":"calendar-week-header","children":[["$","th",null,{"children":["$","span",null,{"children":"D"}]}],["$","th",null,{"children":["$","span",null,{"children":"L"}]}],["$","th",null,{"children":["$","span",null,{"children":"M"}]}],["$","th",null,{"children":["$","span",null,{"children":"M"}]}],["$","th",null,{"children":["$","span",null,{"children":"J"}]}],["$","th",null,{"children":["$","span",null,{"children":"V"}]}],["$","th",null,{"children":["$","span",null,{"children":"S"}]}]]}]}],["$","tbody",null,{"children":[["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{}],["$","td",null,{"children":["$","a",null,{"href":"#","className":"calendar-link","title":"Nombre del evento.","children":["$","span",null,{"className":"active active-secondary","children":"1"}]}]}],["$","td",null,{"children":["$","span",null,{"children":"2"}]}],["$","td",null,{"children":["$","span",null,{"children":"3"}]}],["$","td",null,{"children":["$","span",null,{"children":"4"}]}],["$","td",null,{"children":["$","span",null,{"children":"5"}]}],["$","td",null,{"children":["$","span",null,{"children":"6"}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{"children":"7"}]}],["$","td",null,{"children":["$","span",null,{"children":"8"}]}],["$","td",null,{"children":["$","span",null,{"children":"9"}]}],["$","td",null,{"children":["$","a",null,{"href":"#","className":"calendar-link","title":"Nombre del evento.","children":["$","span",null,{"className":"active","children":"10"}]}]}],["$","td",null,{"children":["$","span",null,{"children":"11"}]}],["$","td",null,{"children":["$","span",null,{"children":"12"}]}],["$","td",null,{"children":["$","span",null,{"children":"13"}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{"children":"14"}]}],["$","td",null,{"children":["$","span",null,{"children":"15"}]}],["$","td",null,{"children":["$","span",null,{"children":"16"}]}],["$","td",null,{"children":["$","span",null,{"children":"17"}]}],["$","td",null,{"children":["$","span",null,{"children":"18"}]}],["$","td",null,{"children":["$","span",null,{"children":"19"}]}],["$","td",null,{"children":["$","span",null,{"children":"20"}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{"children":"21"}]}],["$","td",null,{"children":["$","span",null,{"children":"22"}]}],["$","td",null,{"children":["$","span",null,{"children":"23"}]}],["$","td",null,{"children":["$","span",null,{"children":"24"}]}],["$","td",null,{"children":["$","a",null,{"href":"#","className":"calendar-link","title":"Nombre del evento.","children":["$","span",null,{"className":"active","children":"25"}]}]}],["$","td",null,{"children":["$","span",null,{"children":"26"}]}],["$","td",null,{"children":["$","span",null,{"children":"27"}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{"children":"28"}]}],["$","td",null,{"children":["$","span",null,{"children":"29"}]}],["$","td",null,{"children":["$","span",null,{"children":"30"}]}],["$","td",null,{"children":["$","span",null,{"children":"31"}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}]]}]]}]]}]}],["$","div",null,{"className":"calendar-footer","children":["$","ul",null,{"className":"calendar-footer-list","children":[["$","li",null,{"children":[["$","strong",null,{"children":"1. "}],"Nombre del evento."]}],["$","li",null,{"children":[["$","strong",null,{"children":"10. "}],"Nombre del evento."]}],["$","li",null,{"children":[["$","strong",null,{"children":"25. "}],"Nombre del evento."]}]]}]}]]}]}]}]},{"id":"section-3","title":"Con dos referencias","content":["$","$L3",null,{"codeHTML":"$6","children":["$","div",null,{"className":"row justify-content-center","children":["$","div",null,{"className":"calendar","children":[["$","div",null,{"className":"calendar-header","children":[["$","h2",null,{"className":"calendar-title","children":"Enero"}],["$","span",null,{"className":"calendar-year","children":"2024"}]]}],["$","div",null,{"className":"calendar-body","children":["$","table",null,{"children":[["$","thead",null,{"children":["$","tr",null,{"className":"calendar-week-header","children":[["$","th",null,{"children":["$","span",null,{"children":"D"}]}],["$","th",null,{"children":["$","span",null,{"children":"L"}]}],["$","th",null,{"children":["$","span",null,{"children":"M"}]}],["$","th",null,{"children":["$","span",null,{"children":"M"}]}],["$","th",null,{"children":["$","span",null,{"children":"J"}]}],["$","th",null,{"children":["$","span",null,{"children":"V"}]}],["$","th",null,{"children":["$","span",null,{"children":"S"}]}]]}]}],["$","tbody",null,{"children":[["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{}],["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active-secondary","children":"1"}]}]}],["$","td",null,{"children":["$","span",null,{"children":"2"}]}],["$","td",null,{"children":["$","span",null,{"children":"3"}]}],["$","td",null,{"children":["$","span",null,{"children":"4"}]}],["$","td",null,{"children":["$","span",null,{"children":"5"}]}],["$","td",null,{"children":["$","span",null,{"children":"6"}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{"children":"7"}]}],["$","td",null,{"children":["$","span",null,{"children":"8"}]}],["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active","children":"9"}]}]}],["$","td",null,{"children":["$","span",null,{"children":"10"}]}],["$","td",null,{"children":["$","span",null,{"children":"11"}]}],["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active-secondary","children":"12"}]}]}],["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active-secondary","children":"13"}]}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{"children":"14"}]}],["$","td",null,{"children":["$","span",null,{"children":"15"}]}],["$","td",null,{"children":["$","span",null,{"children":"16"}]}],["$","td",null,{"children":["$","span",null,{"children":"17"}]}],["$","td",null,{"children":["$","span",null,{"children":"18"}]}],["$","td",null,{"children":["$","span",null,{"children":"19"}]}],["$","td",null,{"children":["$","span",null,{"children":"20"}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{"children":"21"}]}],["$","td",null,{"children":["$","span",null,{"children":"22"}]}],["$","td",null,{"children":["$","span",null,{"children":"23"}]}],["$","td",null,{"children":["$","span",null,{"children":"24"}]}],["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active","children":"25"}]}]}],["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active","children":"26"}]}]}],["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active","children":"27"}]}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{"children":"28"}]}],["$","td",null,{"children":["$","span",null,{"children":"29"}]}],["$","td",null,{"children":["$","span",null,{"children":"30"}]}],["$","td",null,{"children":["$","span",null,{"children":"31"}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}]]}]]}]]}]}],["$","div",null,{"className":"calendar-footer","children":["$","ul",null,{"className":"calendar-footer-list","children":[["$","li",null,{"children":[["$","strong",null,{"children":"1. "}],"Nombre del evento."]}],["$","li",null,{"children":[["$","strong",null,{"children":"9. "}],"Nombre del evento."]}],["$","li",null,{"children":[["$","strong",null,{"children":"12, 13. "}],"Nombre del evento."]}],["$","li",null,{"children":[["$","strong",null,{"children":"25 al 27. "}],"Nombre del evento."]}]]}]}]]}]}]}]},{"id":"section-4","title":"Con colapsable","content":["$","$L3",null,{"codeHTML":"$7","children":["$","div",null,{"className":"row justify-content-center","children":["$","div",null,{"className":"calendar","children":[["$","div",null,{"className":"calendar-header","children":[["$","h2",null,{"className":"calendar-title","children":"Enero"}],["$","span",null,{"className":"calendar-year","children":"2024"}]]}],["$","div",null,{"className":"calendar-body","children":["$","table",null,{"children":[["$","thead",null,{"children":["$","tr",null,{"className":"calendar-week-header","children":[["$","th",null,{"children":["$","span",null,{"children":"D"}]}],["$","th",null,{"children":["$","span",null,{"children":"L"}]}],["$","th",null,{"children":["$","span",null,{"children":"M"}]}],["$","th",null,{"children":["$","span",null,{"children":"M"}]}],["$","th",null,{"children":["$","span",null,{"children":"J"}]}],["$","th",null,{"children":["$","span",null,{"children":"V"}]}],["$","th",null,{"children":["$","span",null,{"children":"S"}]}]]}]}],["$","tbody",null,{"children":[["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{}],["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active","children":"1"}]}]}],["$","td",null,{"children":["$","span",null,{"children":"2"}]}],["$","td",null,{"children":["$","span",null,{"children":"3"}]}],["$","td",null,{"children":["$","span",null,{"children":"4"}]}],["$","td",null,{"children":["$","span",null,{"children":"5"}]}],["$","td",null,{"children":["$","span",null,{"children":"6"}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{"children":"7"}]}],["$","td",null,{"children":["$","span",null,{"children":"8"}]}],["$","td",null,{"children":["$","span",null,{"children":"9"}]}],["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active","children":"10"}]}]}],["$","td",null,{"children":["$","span",null,{"children":"11"}]}],["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active","children":"12"}]}]}],["$","td",null,{"children":["$","span",null,{"children":"13"}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{"children":"14"}]}],["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active","children":"15"}]}]}],["$","td",null,{"children":["$","span",null,{"children":"16"}]}],["$","td",null,{"children":["$","span",null,{"children":"17"}]}],["$","td",null,{"children":["$","span",null,{"children":"18"}]}],["$","td",null,{"children":["$","span",null,{"children":"19"}]}],["$","td",null,{"children":["$","span",null,{"children":"20"}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{"children":"21"}]}],["$","td",null,{"children":["$","span",null,{"children":"22"}]}],["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active","children":"23"}]}]}],["$","td",null,{"children":["$","span",null,{"children":"24"}]}],["$","td",null,{"children":["$","span",null,{"children":"25"}]}],["$","td",null,{"children":["$","span",null,{"children":"26"}]}],["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active","children":"27"}]}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{"children":"28"}]}],["$","td",null,{"children":["$","span",null,{"children":"29"}]}],["$","td",null,{"children":["$","span",null,{"children":"30"}]}],["$","td",null,{"children":["$","span",null,{"children":"31"}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}]]}]]}]]}]}],["$","div",null,{"className":"calendar-footer","children":["$","div",null,{"className":"accordion-item","children":[["$","button",null,{"className":"accordion-button collapsed","type":"button","data-bs-toggle":"collapse","data-bs-target":"#collapseCalendar1","aria-expanded":"false","aria-controls":"collapseCalendar1","children":[["$","span",null,{"className":"material-symbols-rounded o-icon","aria-hidden":"true","children":"calendar_month"}],["$","span",null,{"className":"collapse-title","children":"Referencia"}]]}],["$","div",null,{"id":"collapseCalendar1","className":"accordion-collapse collapse","children":["$","div",null,{"className":"accordion-body","children":["$","div",null,{"className":"card-body","children":["$","ul",null,{"className":"calendar-footer-list","children":[["$","li",null,{"children":[["$","strong",null,{"children":"1. "}],"Nombre del evento."]}],["$","li",null,{"children":[["$","strong",null,{"children":"10. "}],"Nombre del evento."]}],["$","li",null,{"children":[["$","strong",null,{"children":"12. "}],"Nombre del evento."]}],["$","li",null,{"children":[["$","strong",null,{"children":"15. "}],"Nombre del evento."]}],["$","li",null,{"children":[["$","strong",null,{"children":"23. "}],"Nombre del evento."]}],["$","li",null,{"children":[["$","strong",null,{"children":"27. "}],"Nombre del evento."]}]]}]}]}]}]]}]}]]}]}]}]},{"id":"section-6","title":"Con referencias cromaticas","content":["$","$L3",null,{"codeHTML":"$8","children":["$","div",null,{"className":"row justify-content-center","children":["$","div",null,{"className":"calendar","children":[["$","div",null,{"className":"calendar-header","children":[["$","h2",null,{"className":"calendar-title","children":"Enero"}],["$","span",null,{"className":"calendar-year","children":"2024"}]]}],["$","div",null,{"className":"calendar-body","children":["$","table",null,{"children":[["$","thead",null,{"children":["$","tr",null,{"className":"calendar-week-header","children":[["$","th",null,{"children":["$","span",null,{"children":"D"}]}],["$","th",null,{"children":["$","span",null,{"children":"L"}]}],["$","th",null,{"children":["$","span",null,{"children":"M"}]}],["$","th",null,{"children":["$","span",null,{"children":"M"}]}],["$","th",null,{"children":["$","span",null,{"children":"J"}]}],["$","th",null,{"children":["$","span",null,{"children":"V"}]}],["$","th",null,{"children":["$","span",null,{"children":"S"}]}]]}]}],["$","tbody",null,{"children":[["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{}],["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active bg-coral","children":"1"}]}]}],["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active bg-musket","children":"2"}]}]}],["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active bg-citrus","children":"3"}]}]}],["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active bg-lime","children":"4"}]}]}],["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active bg-sky","children":"5"}]}]}],["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active bg-pistachio","children":"6"}]}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active bg-berries","children":"7"}]}]}],["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active bg-lavender","children":"8"}]}]}],["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active bg-aqua","children":"9"}]}]}],["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active bg-avocado","children":"10"}]}]}],["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active bg-strawberry","children":"11"}]}]}],["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active bg-blackberry","children":"12"}]}]}],["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active bg-gray","children":"13"}]}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{"children":"14"}]}],["$","td",null,{"children":["$","span",null,{"children":"15"}]}],["$","td",null,{"children":["$","span",null,{"children":"16"}]}],["$","td",null,{"children":["$","span",null,{"children":"17"}]}],["$","td",null,{"children":["$","span",null,{"children":"18"}]}],["$","td",null,{"children":["$","span",null,{"children":"19"}]}],["$","td",null,{"children":["$","span",null,{"children":"20"}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{"children":"21"}]}],["$","td",null,{"children":["$","span",null,{"children":"22"}]}],["$","td",null,{"children":["$","span",null,{"children":"23"}]}],["$","td",null,{"children":["$","span",null,{"children":"24"}]}],["$","td",null,{"children":["$","span",null,{"children":"25"}]}],["$","td",null,{"children":["$","span",null,{"children":"26"}]}],["$","td",null,{"children":["$","span",null,{"children":"27"}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{"children":"28"}]}],["$","td",null,{"children":["$","span",null,{"children":"29"}]}],["$","td",null,{"children":["$","span",null,{"children":"30"}]}],["$","td",null,{"children":["$","span",null,{"children":"31"}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}]]}]]}]]}]}],["$","div",null,{"className":"calendar-footer","children":["$","div",null,{"className":"accordion-item","children":[["$","button",null,{"className":"accordion-button collapsed","type":"button","data-bs-toggle":"collapse","data-bs-target":"#collapseCalendar2","aria-expanded":"false","aria-controls":"collapseCalendar2","children":[["$","span",null,{"className":"material-symbols-rounded o-icon","aria-hidden":"true","children":"calendar_month"}],["$","span",null,{"className":"collapse-title","children":"Referencia"}]]}],["$","div",null,{"id":"collapseCalendar2","className":"accordion-collapse collapse","children":["$","div",null,{"className":"accordion-body","children":["$","div",null,{"className":"card-body","children":["$","ul",null,{"className":"calendar-footer-list","children":[["$","li",null,{"children":[["$","strong",null,{"children":"1. "}],"Nombre del evento."]}],["$","li",null,{"children":[["$","strong",null,{"children":"2. "}],"Nombre del evento."]}],["$","li",null,{"children":[["$","strong",null,{"children":"3. "}],"Nombre del evento."]}],["$","li",null,{"children":[["$","strong",null,{"children":"4. "}],"Nombre del evento."]}],["$","li",null,{"children":[["$","strong",null,{"children":"5. "}],"Nombre del evento."]}],["$","li",null,{"children":[["$","strong",null,{"children":"6. "}],"Nombre del evento."]}],["$","li",null,{"children":[["$","strong",null,{"children":"7. "}],"Nombre del evento."]}],["$","li",null,{"children":[["$","strong",null,{"children":"8. "}],"Nombre del evento."]}],["$","li",null,{"children":[["$","strong",null,{"children":"9. "}],"Nombre del evento."]}],["$","li",null,{"children":[["$","strong",null,{"children":"10. "}],"Nombre del evento."]}],["$","li",null,{"children":[["$","strong",null,{"children":"11. "}],"Nombre del evento."]}],["$","li",null,{"children":[["$","strong",null,{"children":"12. "}],"Nombre del evento."]}],["$","li",null,{"children":[["$","strong",null,{"children":"13. "}],"Nombre del evento."]}]]}]}]}]}]]}]}]]}]}]}]},{"id":"section-17","title":"Sin eventos","content":["$","$L3",null,{"codeHTML":"$9","children":["$","div",null,{"className":"row justify-content-center","children":["$","div",null,{"className":"calendar","children":[["$","div",null,{"className":"calendar-header","children":[["$","h2",null,{"className":"calendar-title","children":"Enero"}],["$","span",null,{"className":"calendar-year","children":"2024"}]]}],["$","div",null,{"className":"calendar-body","children":["$","table",null,{"children":[["$","thead",null,{"children":["$","tr",null,{"className":"calendar-week-header","children":[["$","th",null,{"children":["$","span",null,{"children":"D"}]}],["$","th",null,{"children":["$","span",null,{"children":"L"}]}],["$","th",null,{"children":["$","span",null,{"children":"M"}]}],["$","th",null,{"children":["$","span",null,{"children":"M"}]}],["$","th",null,{"children":["$","span",null,{"children":"J"}]}],["$","th",null,{"children":["$","span",null,{"children":"V"}]}],["$","th",null,{"children":["$","span",null,{"children":"S"}]}]]}]}],["$","tbody",null,{"children":[["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{}],["$","td",null,{"children":["$","span",null,{"children":"1"}]}],["$","td",null,{"children":["$","span",null,{"children":"2"}]}],["$","td",null,{"children":["$","span",null,{"children":"3"}]}],["$","td",null,{"children":["$","span",null,{"children":"4"}]}],["$","td",null,{"children":["$","span",null,{"children":"5"}]}],["$","td",null,{"children":["$","span",null,{"children":"6"}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{"children":"7"}]}],["$","td",null,{"children":["$","span",null,{"children":"8"}]}],["$","td",null,{"children":["$","span",null,{"children":"9"}]}],["$","td",null,{"children":["$","span",null,{"children":"10"}]}],["$","td",null,{"children":["$","span",null,{"children":"11"}]}],["$","td",null,{"children":["$","span",null,{"children":"12"}]}],["$","td",null,{"children":["$","span",null,{"children":"13"}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{"children":"14"}]}],["$","td",null,{"children":["$","span",null,{"children":"15"}]}],["$","td",null,{"children":["$","span",null,{"children":"16"}]}],["$","td",null,{"children":["$","span",null,{"children":"17"}]}],["$","td",null,{"children":["$","span",null,{"children":"18"}]}],["$","td",null,{"children":["$","span",null,{"children":"19"}]}],["$","td",null,{"children":["$","span",null,{"children":"20"}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{"children":"21"}]}],["$","td",null,{"children":["$","span",null,{"children":"22"}]}],["$","td",null,{"children":["$","span",null,{"children":"23"}]}],["$","td",null,{"children":["$","span",null,{"children":"24"}]}],["$","td",null,{"children":["$","span",null,{"children":"25"}]}],["$","td",null,{"children":["$","span",null,{"children":"26"}]}],["$","td",null,{"children":["$","span",null,{"children":"27"}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{"children":"28"}]}],["$","td",null,{"children":["$","span",null,{"children":"29"}]}],["$","td",null,{"children":["$","span",null,{"children":"30"}]}],["$","td",null,{"children":["$","span",null,{"children":"31"}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}]]}]]}]]}]}]]}]}]}]},{"id":"section-8","title":"Disposición","content":["$","$L3",null,{"codeHTML":"$a","children":["$","div",null,{"className":"container","children":["$","div",null,{"className":"calendar-deck","children":[["$","div",null,{"className":"calendar","children":[["$","div",null,{"className":"calendar-header","children":[["$","h2",null,{"className":"calendar-title","children":"Enero"}],["$","span",null,{"className":"calendar-year","children":"2024"}]]}],["$","div",null,{"className":"calendar-body","children":["$","table",null,{"children":[["$","thead",null,{"children":["$","tr",null,{"className":"calendar-week-header","children":[["$","th",null,{"children":["$","span",null,{"children":"D"}]}],["$","th",null,{"children":["$","span",null,{"children":"L"}]}],["$","th",null,{"children":["$","span",null,{"children":"M"}]}],["$","th",null,{"children":["$","span",null,{"children":"M"}]}],["$","th",null,{"children":["$","span",null,{"children":"J"}]}],["$","th",null,{"children":["$","span",null,{"children":"V"}]}],["$","th",null,{"children":["$","span",null,{"children":"S"}]}]]}]}],["$","tbody",null,{"children":[["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{}],["$","td",null,{"children":["$","span",null,{"children":"1"}]}],["$","td",null,{"children":["$","span",null,{"children":"2"}]}],["$","td",null,{"children":["$","span",null,{"children":"3"}]}],["$","td",null,{"children":["$","span",null,{"children":"4"}]}],["$","td",null,{"children":["$","span",null,{"children":"5"}]}],["$","td",null,{"children":["$","span",null,{"children":"6"}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{"children":"7"}]}],["$","td",null,{"children":["$","span",null,{"children":"8"}]}],["$","td",null,{"children":["$","span",null,{"children":"9"}]}],["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active","children":"10"}]}]}],["$","td",null,{"children":["$","span",null,{"children":"11"}]}],["$","td",null,{"children":["$","span",null,{"children":"12"}]}],["$","td",null,{"children":["$","span",null,{"children":"13"}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{"children":"14"}]}],["$","td",null,{"children":["$","span",null,{"children":"15"}]}],["$","td",null,{"children":["$","span",null,{"children":"16"}]}],["$","td",null,{"children":["$","span",null,{"children":"17"}]}],["$","td",null,{"children":["$","span",null,{"children":"18"}]}],["$","td",null,{"children":["$","span",null,{"children":"19"}]}],["$","td",null,{"children":["$","span",null,{"children":"20"}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{"children":"21"}]}],["$","td",null,{"children":["$","span",null,{"children":"22"}]}],["$","td",null,{"children":["$","span",null,{"children":"23"}]}],["$","td",null,{"children":["$","span",null,{"children":"24"}]}],["$","td",null,{"children":["$","span",null,{"children":"25"}]}],["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active","children":"26"}]}]}],["$","td",null,{"children":["$","span",null,{"children":"27"}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active","children":"28"}]}]}],["$","td",null,{"children":["$","span",null,{"children":"29"}]}],["$","td",null,{"children":["$","span",null,{"children":"30"}]}],["$","td",null,{"children":["$","span",null,{"children":"31"}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}]]}]]}]]}]}],["$","div",null,{"className":"calendar-footer","children":["$","ul",null,{"className":"calendar-footer-list","children":[["$","li",null,{"children":[["$","strong",null,{"children":"10. "}],"Nombre del evento."]}],["$","li",null,{"children":[["$","strong",null,{"children":"26. "}],"Nombre del evento."]}],["$","li",null,{"children":[["$","strong",null,{"children":"28. "}],"Nombre del evento."]}]]}]}]]}],["$","div",null,{"className":"calendar","children":[["$","div",null,{"className":"calendar-header","children":[["$","h2",null,{"className":"calendar-title","children":"Febrero"}],["$","span",null,{"className":"calendar-year","children":"2024"}]]}],["$","div",null,{"className":"calendar-body","children":["$","table",null,{"children":[["$","thead",null,{"children":["$","tr",null,{"className":"calendar-week-header","children":[["$","th",null,{"children":["$","span",null,{"children":"D"}]}],["$","th",null,{"children":["$","span",null,{"children":"L"}]}],["$","th",null,{"children":["$","span",null,{"children":"M"}]}],["$","th",null,{"children":["$","span",null,{"children":"M"}]}],["$","th",null,{"children":["$","span",null,{"children":"J"}]}],["$","th",null,{"children":["$","span",null,{"children":"V"}]}],["$","th",null,{"children":["$","span",null,{"children":"S"}]}]]}]}],["$","tbody",null,{"children":[["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{}],["$","td",null,{}],["$","td",null,{}],["$","td",null,{}],["$","td",null,{"children":["$","span",null,{"title":"Nombre del evento.","children":["$","span",null,{"className":"active","children":"1"}]}]}],["$","td",null,{"children":["$","span",null,{"children":"2"}]}],["$","td",null,{"children":["$","span",null,{"children":"3"}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{"children":"4"}]}],["$","td",null,{"children":["$","span",null,{"children":"5"}]}],["$","td",null,{"children":["$","span",null,{"children":"6"}]}],["$","td",null,{"children":["$","span",null,{"children":"7"}]}],["$","td",null,{"children":["$","span",null,{"children":"8"}]}],["$","td",null,{"children":["$","span",null,{"children":"9"}]}],["$","td",null,{"children":["$","span",null,{"children":"10"}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{"children":"11"}]}],["$","td",null,{"children":["$","span",null,{"children":"12"}]}],["$","td",null,{"children":["$","span",null,{"children":"13"}]}],["$","td",null,{"children":["$","span",null,{"children":"14"}]}],["$","td",null,{"children":["$","span",null,{"children":"15"}]}],["$","td",null,{"children":["$","span",null,{"children":"16"}]}],["$","td",null,{"children":["$","span",null,{"children":"17"}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{"children":"18"}]}],["$","td",null,{"children":["$","span",null,{"children":"19"}]}],["$","td",null,{"children":["$","span",null,{"children":"20"}]}],["$","td",null,{"children":["$","span",null,{"children":"21"}]}],["$","td",null,{"children":["$","span",null,{"children":"22"}]}],["$","td",null,{"children":["$","span",null,{"children":"23"}]}],["$","td",null,{"children":["$","span",null,{"children":"24"}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{"children":"25"}]}],["$","td",null,{"children":["$","span",null,{"children":"26"}]}],["$","td",null,{"children":["$","span",null,{"children":"27"}]}],["$","td",null,{"children":["$","span",null,{"children":"28"}]}],["$","td",null,{"children":["$","span",null,{"children":"29"}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}]]}],["$","tr",null,{"className":"calendar-week","children":[["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}],["$","td",null,{"children":["$","span",null,{}]}]]}]]}]]}]}],["$","div",null,{"className":"calendar-footer","children":["$","ul",null,{"className":"calendar-footer-list","children":["$","li",null,{"children":[["$","strong",null,{"children":"1. "}],"Nombre del evento."]}]}]}]]}]]}]}]}]}]}]],null],null]},["$","$Lb",null,{"parallelRouterKey":"children","segmentPath":["children","components","children","calendar","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lc",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":[["$","link","0",{"rel":"stylesheet","href":"/Obelisco-V2/_next/static/css/780d5df5222a4919.css","precedence":"next","crossOrigin":"$undefined"}]]}],null]},["$","$Lb",null,{"parallelRouterKey":"children","segmentPath":["children","components","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lc",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"es","children":[["$","head",null,{"children":[["$","title",null,{"children":"Obelisco V2"}],["$","meta",null,{"name":"description","content":"Obelisco v2 es un Sistema de diseño basado en componentes para productos digitales de la Ciudad de Buenos Aires."}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap","rel":"stylesheet"}],["$","link",null,{"href":"https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap","rel":"stylesheet"}],["$","link",null,{"rel":"stylesheet","href":"https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0"}]]}],["$","body",null,{"children":[["$","$Ld",null,{}],["$","div",null,{"className":"banner banner-dark","children":["$","div",null,{"className":"banner-content","children":["$","p",null,{"className":"banner-text","children":["Obelisco V2 se encuentra en desarrollo. Para más información puedes"," ",["$","a",null,{"href":"mailto:equipoobelisco@buenosaires.gob.ar","className":"link-white","rel":"noopener noreferrer","children":"contactarnos vía mail"}],"."]}]}]}],["$","div",null,{"className":"layout","children":[["$","main",null,{"children":["$","$Le",null,{"children":["$","$Lb",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lc",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","div",null,{"className":"container d-flex align-items-center h-100","children":["$","div",null,{"className":"d-flex","children":[["$","div",null,{"children":[["$","h1",null,{"className":"headline-lg","children":"¡Oops! No hemos podido encontrar la página que buscas."}],["$","p",null,{"className":"text-muted","children":"Código de error: 404"}],["$","p",null,{"children":"Te sugerimos volver a tu búsqueda inicial."}],["$","$Lf",null,{"href":"/","className":"btn btn-secondary","children":"Volver a la página principal"}]]}],["$","div",null,{"className":"d-none d-lg-block","children":["$","$L10",null,{"src":"/Obelisco-V2/images/404.svg","width":300,"height":200,"alt":"404 Not Found","className":"mb-4"}]}]]}]}],"notFoundStyles":[],"styles":null}]}]}],[["$","h2",null,{"className":"sr-only","children":"Navegación de pie de página"}],["$","footer",null,{"className":"main-footer mt-5","children":["$","div",null,{"className":"container","children":[["$","section",null,{"className":"footer-legal-section","children":[["$","h3",null,{"className":"sr-only","children":"Información gubernamental"}],["$","div",null,{"className":"row align-items-center","children":[["$","div",null,{"className":"col-12 col-md-5 col-xl-4 footer-content-img","children":[["$","img",null,{"className":"d-lg-none","src":"https://gcba.github.io/Obelisco/footer/ciudad-ba-sm.svg","alt":"Logo de Ciudad de Buenos Aires","height":"48"}],["$","img",null,{"className":"d-none d-lg-inline","src":"https://gcba.github.io/Obelisco/footer/ciudad-ba.svg","alt":"Logo de Ciudad de Buenos Aires","height":"40"}],["$","img",null,{"className":"img-vamos-ba","src":"https://gcba.github.io/Obelisco/footer/vamos-ba.svg","alt":"Logo de Vamos Buenos Aires"}]]}],["$","div",null,{"className":"col-12","children":["$","ul",null,{"className":"list-inline","children":[["$","li",null,{"className":"list-inline-item","children":["$","a",null,{"href":"https://boletinoficial.buenosaires.gob.ar","children":"Boletín oficial"}]}],["$","li",null,{"className":"list-inline-item","children":["$","a",null,{"href":"https://buenosaires.gob.ar/inicio/terminos-y-condiciones","children":"Términos y condiciones"}]}],["$","li",null,{"className":"list-inline-item","children":["$","a",null,{"href":"https://buenosaires.gob.ar/inicio/privacidad","children":"Política de privacidad"}]}],["$","li",null,{"className":"list-inline-item","children":["$","a",null,{"href":"https://buenosaires.gob.ar/jefedegobierno/legalytecnica/normativa/boletin-oficial-y-registro/oficios-judiciales","children":"Oficios judiciales"}]}],["$","li",null,{"className":"list-inline-item","children":["$","a",null,{"href":"https://www.buenosaires.gob.ar/gobierno/transparencia","children":"Transparencia"}]}]]}]}]]}]]}],["$","section",null,{"children":["$","div",null,{"className":"footer-license-text","children":"Los contenidos de buenosaires.gob.ar están licenciados bajo Creative Commons Reconocimiento 2.5 Argentina License."}]}]]}]}]]]}],["$","script",null,{"src":"https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js","integrity":"sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r","crossOrigin":"anonymous"}],["$","script",null,{"src":"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js","integrity":"sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy","crossOrigin":"anonymous"}]]}]]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/Obelisco-V2/_next/static/css/5e3b134260177799.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/Obelisco-V2/_next/static/css/b98925831a142bd6.css","precedence":"next","crossOrigin":"$undefined"}],["$","link","2",{"rel":"stylesheet","href":"/Obelisco-V2/_next/static/css/2de0f1ead68c1f3d.css","precedence":"next","crossOrigin":"$undefined"}]],[null,"$L11"]]]]]
+11:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","link","2",{"rel":"icon","href":"/Obelisco-V2/favicon.ico","type":"image/x-icon","sizes":"100x100"}]]
+1:null

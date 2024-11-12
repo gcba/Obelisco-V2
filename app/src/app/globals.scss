@@ -2,7 +2,7 @@
 // @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded');
 @import url('../../node_modules/boxicons/css/boxicons.min.css');
-@import '../../../dist/styles.css';
+@import '../../styles/styles.css';
 
 // Generic Styles
 html {
@@ -18,17 +18,17 @@ body {
   box-sizing: border-box;
 }
 
-// ::-webkit-scrollbar {
-//   width: 8px;
-// }
+::-webkit-scrollbar {
+  width: 8px;
+}
 
-// ::-webkit-scrollbar-thumb {
-//   background-color: #38485c;
-// }
+::-webkit-scrollbar-thumb {
+  background-color: #38485c;
+}
 
-// ::-webkit-scrollbar-track {
-//   background-color: #f0f0f0;
-// }
+::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
 
 // End Generic Styles
 
@@ -50,17 +50,21 @@ hr {
   .nav-scrollspy {
     position: relative;
     min-width: 150px;
+    width: 150px;
 
     .scrollspy {
       list-style: none;
-      top: 140px;
+      top: 16px;
       right: 0;
       background-color: transparent;
-      padding: 0 0 0 2rem;
+      padding: 0 5px 5px 1rem;
       position: sticky;
       display: flex;
       flex-direction: column;
       gap: 0.3rem;
+      max-height: 80dvh;
+      overflow-y: auto;
+      scrollbar-width: thin;
 
       li a {
         font-weight: 600;
@@ -89,6 +93,9 @@ hr {
       a {
         text-decoration: none;
         color: #101e37;
+        &:hover {
+          color: #274986;
+        }
       }
 
       .active {
@@ -99,15 +106,26 @@ hr {
           &:active {
             box-shadow: 0 0 0 0.125rem #218274;
           }
+          .custom-scrollspy-color {
+            outline: 2px solid #101e37;
+            outline-offset: 3px;
+          }
         }
       }
     }
   }
-  .box-content section:last-child {
-    min-height: calc(100vh - 83px);
+  .box-content .box-section:last-child {
+    @media screen and (min-width: 992px) {
+      min-height: calc(100vh - 80px);
+    }
   }
 }
-
+.custom-scrollspy-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0.25rem;
+}
 // End Styles for component Scrollspy
 
 // Toast Styles
@@ -137,11 +155,11 @@ hr {
     font-weight: 700;
     font-size: 1rem;
   }
+
   div[data-icon] {
     color: #26874a;
   }
 }
-
 // End Toast Styles
 
 // Class custom
@@ -149,7 +167,7 @@ hr {
   border: none;
 }
 
-// max-width 720px
+// max-width
 .max-720 {
   max-width: 720px;
 }
@@ -161,9 +179,12 @@ hr {
 .v-height-100 {
   min-height: calc(100dvh - 83px);
 }
+.w-fit {
+  width: fit-content;
+}
 
 .color-box {
-  width: 192px;
+  width: 150px;
   height: 72px;
   border-radius: 0.5rem;
   text-align: center;
@@ -173,19 +194,161 @@ hr {
   align-items: center;
   justify-content: center;
 }
+.color-box-ramp {
+  width: 140px;
+  height: 120px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  gap: 0.5rem;
+}
 
-/* estilos navegacion vertical izquierdo */
+// estilos navegacion vertical izquierdo
 .sticky-nav {
   position: sticky;
-  top: 132px;
+  top: 16px;
   overflow-y: scroll;
-  height: 75dvh;
+  height: 95dvh;
+  scrollbar-width: thin;
 
   nav {
     padding: 0.3rem;
     margin-bottom: 1.5rem;
   }
+
+  &.h-auto {
+    overflow-y: unset;
+  }
 }
+
 .box-content {
   width: 100%;
+  overflow-x: hidden;
+}
+
+//Listas en documentacion
+.docs-list {
+  li:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+
+  code {
+    font-size: 1rem;
+  }
+}
+
+//Contenedor para mostrar variantes de componente header
+.header-box-sizing {
+  transform: scale(0.5);
+  .navbar {
+    width: 202%;
+    left: -53%;
+  }
+
+  &:has(.navbar-collapse.collapse.show),
+  &:has(.navbar-collapse.collapsing),
+  &:has(.dropdown .btn-dropdown[aria-expanded='true']) {
+    z-index: 9999;
+    position: relative;
+  }
+}
+//Visualizacion de Destacado en codebox
+.highlighted-box-sizing {
+  transform: scale(0.6);
+  transform-origin: top;
+  max-height: 360px;
+  @media screen and (min-width: 768px) {
+    max-height: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-height: 240px;
+  }
+
+  > * {
+    width: 160%;
+    position: relative;
+    left: -30%;
+  }
+
+  &-vertical {
+    @extend .highlighted-box-sizing;
+    max-height: 1600px;
+    @media screen and (min-width: 1200px) {
+      max-height: 640px;
+    }
+
+    &.max-h-800 {
+      max-height: 800px;
+      @media screen and (min-width: 1200px) {
+        max-height: 310px;
+      }
+    }
+    &.max-h-640 {
+      max-height: 640px;
+      @media screen and (min-width: 1200px) {
+        max-height: 280px;
+      }
+    }
+    > * {
+      @media screen and (min-width: 576px) and (max-width: 1199.98px) {
+        left: 0;
+      }
+    }
+  }
+}
+
+//Visualizacion de tarjetas
+.card-box-sizing {
+  max-width: 328px;
+  @media screen and (min-width: 1200px) {
+    max-width: 538px;
+  }
+}
+.card-vertical-box-sizing {
+  max-width: 328px;
+  @media screen and (min-width: 1200px) {
+    max-width: 348px;
+  }
+}
+.card-box-sizing-columns {
+  transform: scale(0.6);
+  transform-origin: top;
+  max-height: 600px;
+  @media screen and (min-width: 768px) {
+    max-height: 380px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-height: 260px;
+  }
+  > * {
+    width: 160%;
+    position: relative;
+    left: -30%;
+    @media screen and (min-width: 576px) and (max-width: 1199.98px) {
+      left: 0;
+    }
+  }
+  &-2 {
+    @extend .card-box-sizing-columns;
+    max-height: 340px;
+    @media screen and (min-width: 768px) {
+      max-height: 220px;
+    }
+  }
+}
+
+//Contenedores para barra de desplazamiento
+.horizontal-example {
+  min-width: 1200px;
+}
+.vertical-example {
+  height: 300px;
+
+  @media screen and (max-width: 768px) {
+    height: 500px;
+  }
 }

@@ -38,18 +38,27 @@ npm update @gcba/obelisco-v2
 
 ```sh
 
-<link href="https://gcba.github.io/Obelisco/obelisco.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/@gcba/obelisco-v2@X.X.X/dist/styles.min.css" rel="stylesheet" />
 
 ```
 
-## importación
+Si no instalás Obelisco de forma local, podés incluir los estilos directamente desde nuestra CDN. Sólo tenés que reemplazar la sección de la url en la que figura &quot;<code>X.X.X</code>&quot; por el número de la versión que desees utilizar. Te recomendamos usar la <a href="https://www.jsdelivr.com/package/npm/@gcba/obelisco-v2" target="_blank" rel="noopener noreferrer">versión más reciente</a>.
+
+## Importación
 
 Importar los estilos en el archivo principal del proyecto:
 
 ```sh
-import 'obelisco-v2/dist/styles.css';
+@import "@gcba/obelisco-v2/dist/styles.css";
 o
-<link rel="stylesheet" href="ruta/al/proyecto/dist/styles.css">
+<link rel="stylesheet" href="ruta/al/proyecto/dist/styles.css" />
+```
+
+Si estas utilizando versiones anteriores de webpack, (Webpack 4 o inferiores), el prefijo ~ es necesario:
+
+```sh
+@import "~@gcba/obelisco-v2/dist/styles.css";
+
 ```
 
 ### Tipografías
@@ -58,7 +67,7 @@ Obelisco requiere las tipografías **Nunito** y **Open sans** disponibles en goo
 
 ```sh
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet"></link>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet" />
 ```
 
 ### Iconografía
@@ -69,14 +78,26 @@ Boxicons con npm o CDN:
 
 ```sh
 npm install boxicons
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
+
+// Es importante que incluyas el import a Boxicons en tu hoja de estilos si lo usas via NPM
+@import "boxicons/css/boxicons.min.css";
+```
+
+```sh
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
 ```
 
 Material Symbols con npm o CDN:
 
 ```sh
 npm install material-symbols@latest
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+// Es importante que incluyas el import a Material Symbols en tu hoja de estilos si lo usas via NPM
+@import "material-symbols/index.css";
+```
+
+```sh
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0"/>
 ```
 
 ### Javascript
@@ -98,6 +119,6 @@ En la wiki del repositorio está toda la información necesaria para entender c�
 
 El mantenimiento y desarrollo de Obelisco lo hace el equipo de la Dirección General de Canales Digitales, pero lo utilizan tanto equipos de gobierno como proveedores externos.
 
-Para agilizar y hacer más transparente el proceso, cualquier persona puede contribuir de varias formas.
+Para agilizar y hacer más transparente el proceso, cualquier persona puede contribuir de varias formas o contactar al equipo Obelisco.
 
 Mail de contacto: equipoobelisco@buenosaires.gob.ar

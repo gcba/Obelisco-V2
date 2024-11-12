@@ -5,11 +5,11 @@ export const LAYOUTS = `
 
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-8">
-        <div class="bg-primary">col-12 col-lg-8</div>
+      <div class="col-12 col-xl-8">
+        <div class="bg-primary">col-12 col-xl-8</div>
       </div>
-      <div class="col-12 col-lg-4">
-        <div class="bg-primary">col-12 col-lg-4</div>
+      <div class="col-12 col-xl-4">
+        <div class="bg-primary">col-12 col-xl-4</div>
       </div>
     </div>
   </div>

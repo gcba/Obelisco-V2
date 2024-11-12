@@ -1,4 +1,5 @@
 import CodeBox from '@/components/CodeBox';
+import LinkClient from '@/components/LinkClient';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
@@ -10,7 +11,20 @@ const ListLinkDocs: React.FC = () => {
       title: 'Lista de enlaces',
       h1: true,
       content: (
-        <MainDescription description="La lista de enlaces organiza y orienta a la persona usuaria a través de diferentes secciones y recursos disponibles en un sitio web. Al funcionar como un bloque coherente, permite encontrar información deseada rápidamente." />
+        <>
+          <MainDescription description="La lista de enlaces organiza y orienta a la persona usuaria a través de diferentes secciones y recursos disponibles en un sitio web. Al funcionar como un bloque coherente, permite encontrar información deseada rápidamente." />
+          <p className="lead mb-4">
+            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
+            <a
+              href="https://gcba.github.io/estandares/componentes/listas/lista-de-enlaces/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              enlace
+            </a>
+            .
+          </p>
+        </>
       ),
     },
     {
@@ -18,7 +32,16 @@ const ListLinkDocs: React.FC = () => {
       title: 'Lista de enlaces',
       content: (
         <CodeBox codeHTML={LIST_LINK}>
-          <div className="container">lorem</div>
+          <div className="container">
+            <div className="list-link">
+              <h3 className="list-link-title">Este es el título de una lista de enlaces</h3>
+              <LinkClient>Enlace predeterminado</LinkClient>
+              <LinkClient>Enlace predeterminado</LinkClient>
+              <LinkClient>Enlace predeterminado</LinkClient>
+              <LinkClient>Enlace predeterminado</LinkClient>
+              <LinkClient>Enlace predeterminado</LinkClient>
+            </div>
+          </div>
         </CodeBox>
       ),
     },

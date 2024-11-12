@@ -6,11 +6,11 @@ export const MODAL_CONFIRM = `<button
 >
   Modal de confirmación
 </button>
-<div class="modal fade" tabindex="-1" id="exampleModal1">
+<div class="modal fade" tabindex="-1" id="exampleModal1" aria-labelledby="exampleModal1Label" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-sm">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title">¡Importante!</h4>
+        <h4 class="modal-title" id="exampleModal1Label">¡Importante!</h4>
       </div>
       <div class="modal-body">
         <p>
@@ -36,11 +36,11 @@ export const MODAL_DANGER = `<button
 >
   Modal de peligro
 </button>
-<div class="modal fade" tabindex="-1" id="exampleModal2">
+<div class="modal fade" tabindex="-1" id="exampleModal2" aria-labelledby="exampleModal2Label" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-sm">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title">Eliminar documento</h4>
+        <h4 class="modal-title" id="exampleModal2Label">Eliminar documento</h4>
       </div>
       <div class="modal-body">
         <p>El documento que seleccionaste será eliminado.</p>
@@ -63,12 +63,12 @@ export const MODAL_RECOGNITION = `<button
 >
   Modal de reconocimiento
 </button>
-<div class="modal fade" tabindex="-1" id="exampleModal3">
+<div class="modal fade" tabindex="-1" id="exampleModal3" aria-labelledby="exampleModal3Label" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-sm">
     <div class="modal-content">
       <div class="modal-header unbordered">
         <small>CARGA EXITOSA</small>
-        <h4 class="modal-title">Los archivos se cargaron correctamente</h4>
+        <h4 class="modal-title" id="exampleModal3Label">Los archivos se cargaron correctamente</h4>
       </div>
       <div class="modal-footer">
         <button 

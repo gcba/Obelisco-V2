@@ -1,4 +1,5 @@
 import CodeBox from '@/components/CodeBox';
+import LinkClient from '@/components/LinkClient';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import MainDescription from '@/components/Template/MainDescription';
 
@@ -16,8 +17,17 @@ const AlertDocs: React.FC = () => {
     {
       title: 'Alertas',
       content: (
-        <MainDescription description="Las alertas son avisos que mantienen a los usuarios informados sobre el estado del sistema y pueden requerir o no que realicen una acción." />
+        <>
+          <MainDescription description="Las alertas son avisos que mantienen a los usuarios informados sobre el estado del sistema y pueden requerir o no que realicen una acción." />
+          <p className="lead mb-4">
+            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
+            <a href="https://gcba.github.io/estandares/componentes/alerta/" target="_blank" rel="noopener noreferrer">
+              enlace.
+            </a>
+          </p>
+        </>
       ),
+      h1: true,
     },
     {
       id: 'section-1',
@@ -52,22 +62,22 @@ const AlertDocs: React.FC = () => {
           <div className="container d-flex flex-column gap-3">
             <div className="alert alert-info alert-dismissible fade show" role="alert">
               <p>Esta es la descripción de una alerta de información.</p>
-              <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+              <button type="button" className="btn-close" aria-label="Cerrar"></button>
             </div>
 
             <div className="alert alert-success alert-dismissible fade show" role="alert">
               <p>Esta es la descripción de una alerta de éxito.</p>
-              <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+              <button type="button" className="btn-close" aria-label="Cerrar"></button>
             </div>
 
             <div className="alert alert-warning alert-dismissible fade show" role="alert">
               <p>Esta es la descripción de una alerta de advertencia.</p>
-              <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+              <button type="button" className="btn-close" aria-label="Cerrar"></button>
             </div>
 
             <div className="alert alert-danger alert-dismissible fade show" role="alert">
               <p>Esta es la descripción de una alerta de error.</p>
-              <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+              <button type="button" className="btn-close" aria-label="Cerrar"></button>
             </div>
           </div>
         </CodeBox>
@@ -120,7 +130,7 @@ const AlertDocs: React.FC = () => {
               <p>
                 <strong>Este es un destacado de una alerta de información. </strong>
                 Esta es la descripción de una alerta de información que continua al texto destacado, incluso{' '}
-                <a href="#">con enlaces</a>.
+                <LinkClient>con enlaces</LinkClient>.
               </p>
             </div>
 
@@ -128,7 +138,7 @@ const AlertDocs: React.FC = () => {
               <p>
                 <strong>Este es un destacado de una alerta de éxito. </strong>
                 Esta es la descripción de una alerta de éxito que continua al texto destacado, incluso{' '}
-                <a href="#">con enlaces</a>.
+                <LinkClient>con enlaces</LinkClient>.
               </p>
             </div>
 
@@ -136,7 +146,7 @@ const AlertDocs: React.FC = () => {
               <p>
                 <strong>Este es un destacado de una alerta de advertencia. </strong>
                 Esta es la descripción de una alerta de advertencia que continua al texto destacado, incluso{' '}
-                <a href="#">con enlaces</a>.
+                <LinkClient>con enlaces</LinkClient>.
               </p>
             </div>
 
@@ -144,7 +154,7 @@ const AlertDocs: React.FC = () => {
               <p>
                 <strong>Este es un destacado de una alerta de error. </strong>
                 Esta es la descripción de una alerta de error que continua al texto destacado, incluso{' '}
-                <a href="#">con enlaces</a>.
+                <LinkClient>con enlaces</LinkClient>.
               </p>
             </div>
           </div>
@@ -164,19 +174,19 @@ const AlertDocs: React.FC = () => {
               </p>
               <ol>
                 <li>
-                  <a href="#">Ancla al error 1</a>
+                  <LinkClient>Ancla al error 1</LinkClient>
                 </li>
                 <li>
-                  <a href="#">Ancla al error 2</a>
+                  <LinkClient>Ancla al error 2</LinkClient>
                 </li>
                 <li>
-                  <a href="#">Ancla al error 3</a>
+                  <LinkClient>Ancla al error 3</LinkClient>
                 </li>
                 <li>
-                  <a href="#">Ancla al error 4</a>
+                  <LinkClient>Ancla al error 4</LinkClient>
                 </li>
                 <li>
-                  <a href="#">Ancla al error 5</a>
+                  <LinkClient>Ancla al error 5</LinkClient>
                 </li>
               </ol>
             </div>

@@ -6,16 +6,14 @@ const HomeDocs = () => (
   <div className="row box-home">
     <div className="col col-lg-7">
       <div className="">
-        <h1>
-          Crea aplicaciones Web <strong>con velocidad</strong>
-        </h1>
+        <h1>Conocé Obelisco, el sistema de diseño del Gobierno de la Ciudad de Buenos Aires.</h1>
         <p>
-          Descubre Obelisco v2, la librería de estilos de componentes que impulsa la construcción rápida y elegante de
-          interfaces.
+          Simplificá tu proyecto con nuestra librería de componentes y guía de estilos, para una implementación ágil y
+          sencilla.
         </p>
       </div>
       <div className="d-flex flex-wrap gap-2">
-        <Link href="https://github.com/davisLjr/obelisco-v2" className="btn btn-primary btn-lg btn-icon">
+        <Link href="https://github.com/gcba/Obelisco-V2" className="btn btn-primary btn-lg btn-icon">
           <i className="bx bxl-github"></i>
           Github
         </Link>

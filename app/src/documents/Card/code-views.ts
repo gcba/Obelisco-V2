@@ -88,7 +88,7 @@ export const VERTICAL_ICON = `
   <i class="bx bxs-info-circle card-icon"></i>
   <div class="card-body">
     <h3 class="card-title">
-      <a href="#" class="card-title-link">Título de la tarjeta</a>
+      <a href="#">Título de la tarjeta</a>
     </h3>
     <p class="card-text">Descripción de la tarjeta</p>
   </div>

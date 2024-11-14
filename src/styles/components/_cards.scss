@@ -9,6 +9,13 @@ $card-info-icon-size: 1rem;
 @mixin card-states-styles {
   .card-body {
     .card-title {
+      a {
+        &:hover {
+          color: $hover-color;
+          text-decoration: underline;
+          text-decoration-thickness: 3px;
+        }
+      }
       .card-title-link {
         text-decoration: none;
         color: $body-color;

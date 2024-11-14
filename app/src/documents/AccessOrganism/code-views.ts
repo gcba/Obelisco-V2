@@ -3,8 +3,8 @@ export const SIMPLE_ACCESS_ORGANISM = `
   <div class="card-access">
     <div class="card-access-body reverse">
       <div>
-        <h4 class="mb-1">Título del acceso</h4>
-        <p class="mb-0">Descripción del acceso</p>
+        <h4 class="card-access-title">Título del acceso</h4>
+        <p class="card-access-text">Descripción del acceso</p>
       </div>
       <span class="card-access-icon material-symbols-rounded" aria-hidden="true">info</span>
     </div>
@@ -23,8 +23,8 @@ export const LIST_ACCESS_ORGANISM = `
   <div class="card-access">
     <div class="card-access-body">
       <div>
-        <h4 class="mb-1">Título del acceso</h4>
-        <p class="mb-0">Descripción del acceso</p>
+        <h4 class="card-access-title">Título del acceso</h4>
+        <p class="card-access-text">Descripción del acceso</p>
       </div>
       <span class="card-access-icon descriptive">N°</span>
     </div>
@@ -69,8 +69,8 @@ export const CATEGORIES_ACCESS_ORGANISM = `
   <div class="card-access">
     <div class="card-access-body">
       <div>
-        <h4 class="mb-1">Título del acceso</h4>
-        <p class="mb-0">Descripción del acceso</p>
+        <h4 class="card-access-title">Título del acceso</h4>
+        <p class="card-access-text">Descripción del acceso</p>
       </div>
       <span class="card-access-icon descriptive">N°</span>
     </div>

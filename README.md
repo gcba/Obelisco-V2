@@ -92,8 +92,11 @@ Material Symbols con npm o CDN:
 ```sh
 npm install material-symbols@latest
 
-// Es importante que incluyas el import a Material Symbols en tu hoja de estilos si lo usas via NPM
+// Es importante que incluyas el import a Material Symbols en tu hoja de estilos si lo usas via NPM, asi como también los estilos referidos al fill de los íconos.
 @import "material-symbols/index.css";
+.material-symbols-rounded {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
 ```
 
 ```sh

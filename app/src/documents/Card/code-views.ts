@@ -119,7 +119,9 @@ export const VERTICAL_NOTICE = `
     <p class="card-text">Descripción de la tarjeta</p>
     <div class="card-info">
       <div>
-        <small><span>Fecha de publicación</span></small>
+        <small>
+          <span>Fecha de publicación</span>
+        </small>
       </div>
     </div>
   </div>
@@ -141,7 +143,9 @@ export const VERTICAL_NOTICE_TRUNCATE = `
     <p class="card-text">Descripción de la tarjeta</p>
     <div class="card-info">
       <div>
-        <small><span>Fecha de publicación</span></small>
+        <small>
+          <span>Fecha de publicación</span>
+        </small>
       </div>
     </div>
   </div>

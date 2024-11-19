@@ -104,6 +104,9 @@ const UpdateComponents: React.FC = () => {
           <li>
             Se elimina la clase <code>.card</code>.
           </li>
+          <li>
+            Se reemplaza <code>.card-block</code> por <code>.block</code>, <code>.card-body</code> por <code>.block-body</code>.
+          </li>
         </ul>
       ),
     },

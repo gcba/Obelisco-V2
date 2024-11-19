@@ -1456,12 +1456,9 @@ const CalendarDocs: React.FC = () => {
         description={[
           'El calendario es una representación visual en forma de tabla que exhibe eventos y fechas importantes correspondientes a los días de la semana de un mes determinado.',
           <>
-            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;{' '}
-            <a href="https://gcba.github.io/estandares/componentes/calendar/" target="_blank" rel="noopener noreferrer">
-              {' '}
-              enlace
-            </a>
-            .
+            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del componente podés <a href="https://gcba.github.io/estandares/componentes/calendar/" target="_blank" rel="noopener noreferrer">
+            visitar la documentación en Obelisco v.1
+            </a>.
           </>,
         ]}
       />

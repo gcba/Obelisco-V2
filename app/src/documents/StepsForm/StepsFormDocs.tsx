@@ -38,16 +38,9 @@ const StepsFormDocs: React.FC = () => {
         description={[
           'Es un indicador de progreso que muestra visualmente los pasos de las acciones del usuario en un formulario. Los ayuda a comprender la progresión de los formularios largos y reduce la incertidumbre a medida que completan cada pantalla.',
           <>
-            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;{' '}
-            <a
-              href="https://gcba.github.io/estandares/componentes/paso-a-paso/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {' '}
-              enlace
-            </a>
-            .
+            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del componente podés <a href="https://gcba.github.io/estandares/componentes/paso-a-paso/" target="_blank" rel="noopener noreferrer">
+            visitar la documentación en Obelisco v.1
+            </a>.
           </>,
         ]}
       />

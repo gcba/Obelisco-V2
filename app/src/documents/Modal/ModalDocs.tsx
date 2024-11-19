@@ -142,12 +142,9 @@ const ModalDocs: React.FC = () => {
         description={[
           'Los modales muestran información importante que las personas usuarias deben reconocer. Aparecen en forma de ventana sobre la interfaz y bloquean el flujo de trabajo hasta que se selecciona una acción.',
           <>
-            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;{' '}
-            <a href="https://gcba.github.io/estandares/componentes/modals/" target="_blank" rel="noopener noreferrer">
-              {' '}
-              enlace
-            </a>
-            .
+            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del componente podés <a href="https://gcba.github.io/estandares/componentes/modals/" target="_blank" rel="noopener noreferrer">
+            visitar la documentación en Obelisco v.1
+            </a>.
           </>,
         ]}
       />

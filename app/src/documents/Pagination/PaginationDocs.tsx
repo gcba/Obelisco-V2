@@ -250,12 +250,9 @@ const PaginationDocs: React.FC = () => {
         description={[
           'El paginado se utiliza para dividir contenido o datos en varias páginas, con un control para navegar a la página siguiente o anterior.',
           <>
-            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;{' '}
-            <a href="https://gcba.github.io/estandares/componentes/paginado/" target="_blank" rel="noopener noreferrer">
-              {' '}
-              enlace
-            </a>
-            .
+            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del componente podés <a href="https://gcba.github.io/estandares/componentes/paginado/" target="_blank" rel="noopener noreferrer">
+            visitar la documentación en Obelisco v.1
+            </a>.
           </>,
         ]}
       />

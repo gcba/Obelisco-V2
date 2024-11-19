@@ -220,16 +220,9 @@ const ListStepDocs: React.FC = () => {
         description={[
           'Las listas se utilizan para agrupar una serie de elementos relacionados. Para listas que presentan un orden secuencial de pasos, utilizamos la Lista de pasos.',
           <>
-            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;{' '}
-            <a
-              href="https://gcba.github.io/estandares/componentes/listas/lista-de-pasos/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {' '}
-              enlace
-            </a>
-            .
+            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del componente podés <a href="https://gcba.github.io/estandares/componentes/listas/lista-de-pasos/" target="_blank" rel="noopener noreferrer">
+            visitar la documentación en Obelisco v.1
+            </a>.
           </>,
         ]}
       />

@@ -24,7 +24,7 @@ const TabItem: React.FC<TabItemProps> = ({ id, title, icon, activeTab, setActive
       >
         <div className="nav-icon">
           <span>{title}</span>
-          <span className="material-symbols-rounded o-icon">{icon}</span>
+          {icon && <span className="material-symbols-rounded o-icon">{icon}</span>}
         </div>
       </button>
     </li>

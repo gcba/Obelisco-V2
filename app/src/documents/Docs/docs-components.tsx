@@ -61,6 +61,9 @@ const UpdateComponents: React.FC = () => {
               <code>div</code> con las clases mencionadas.{' '}
             </li>
           </ul>
+          <li>
+            En el caso de Accesos (organismos) se agregan las clases <code>.card-access-title</code> y <code>.card-access-text</code> al título y descripción del organismo, respectivamente.
+          </li>
         </ul>
       ),
     },
@@ -100,6 +103,9 @@ const UpdateComponents: React.FC = () => {
         <ul className="docs-list">
           <li>
             Se elimina la clase <code>.card</code>.
+          </li>
+          <li>
+            Se reemplaza <code>.card-block</code> por <code>.block</code>, <code>.card-body</code> por <code>.block-body</code>.
           </li>
         </ul>
       ),

@@ -58,10 +58,6 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
     font-weight: $font-weight-normal;
 
     .dropdown-item {
-      &:hover:not(:focus) {
-        outline-offset: -2px;
-      }
-
       .item-notifications {
         @include item-notification(-0.5rem);
       }
@@ -498,6 +494,10 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
               &:active {
                 background-color: $white;
                 box-shadow: $focus-box-shadow;
+                color: $body-color;
+              }
+              &.active {
+                background-color: $white;
                 color: $body-color;
               }
 

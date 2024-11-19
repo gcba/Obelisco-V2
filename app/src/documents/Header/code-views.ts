@@ -47,22 +47,22 @@ export const HEADER_LOGIN_ONE_LINE_SEARCH = `
                     </button>
                     <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item item-link" href="#">
                         <span class="item-text">Ver más</span>
@@ -89,22 +89,22 @@ export const HEADER_LOGIN_ONE_LINE_SEARCH = `
                     </button>
                     <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item item-link" href="#">
                         <span class="item-text">Ver más</span>
@@ -190,22 +190,22 @@ export const HEADER_LOGIN_ONE_LINE = `
                 </button>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item item-link" href="#">
                     <span class="item-text">Ver más</span>
@@ -232,22 +232,22 @@ export const HEADER_LOGIN_ONE_LINE = `
                 </button>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item item-link" href="#">
                     <span class="item-text">Ver más</span>
@@ -344,22 +344,22 @@ export const HEADER_LOGIN_TWO_LINES_SEARCH = `
                 </button>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item item-link" href="#">
                     <span class="item-text">Ver más</span>
@@ -386,22 +386,22 @@ export const HEADER_LOGIN_TWO_LINES_SEARCH = `
                 </button>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item item-link" href="#">
                     <span class="item-text">Ver más</span>
@@ -497,22 +497,22 @@ export const HEADER_LOGIN_TWO_LINES = `
                 </button>
                 <div class="dropdown-menu">
                 <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                 </a>
                 <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                 </a>
                 <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                 </a>
                 <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                 </a>
                 <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                 </a>
                 <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                 </a>
                 <a class="dropdown-item item-link" href="#">
                     <span class="item-text">Ver más</span>
@@ -539,22 +539,22 @@ export const HEADER_LOGIN_TWO_LINES = `
                 </button>
                 <div class="dropdown-menu">
                 <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                 </a>
                 <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                 </a>
                 <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                 </a>
                 <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                 </a>
                 <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                 </a>
                 <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                 </a>
                 <a class="dropdown-item item-link" href="#">
                     <span class="item-text">Ver más</span>
@@ -629,22 +629,22 @@ export const HEADER_ONE_LINE_SEARCH = `
                     </button>
                     <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item item-link" href="#">
                         <span class="item-text">Ver más</span>
@@ -671,22 +671,22 @@ export const HEADER_ONE_LINE_SEARCH = `
                     </button>
                     <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item item-link" href="#">
                         <span class="item-text">Ver más</span>
@@ -714,9 +714,9 @@ export const HEADER_ONE_LINE_SEARCH = `
                 <span class="btn-dropdown-text ellipsis-1">Perfil</span>
                 </button>
                 <div class="dropdown-menu dropdown-menu-end">
-                <a class="dropdown-item" href="#"><span class="item-text">Navegación 1</span></a>
-                <a class="dropdown-item" href="#"><span class="item-text">Navegación 2</span></a>
-                <a class="dropdown-item" href="#"><span class="item-text">Navegación 3</span></a>
+                <a class="dropdown-item" href="#"><span class="item-text">Enlace de navegación</span></a>
+                <a class="dropdown-item" href="#"><span class="item-text">Enlace de navegación</span></a>
+                <a class="dropdown-item" href="#"><span class="item-text">Enlace de navegación</span></a>
                 <a class="dropdown-item" href="#">
                     <span class="item-text">Notificaciones</span>
                     <span class="item-notifications"></span>
@@ -733,9 +733,9 @@ export const HEADER_ONE_LINE_SEARCH = `
             <nav>
             <p class="navbar-user-mobile-title">Perfil</p>
             <ul class="nav flex-column nav-pills nav-user">
-                <li class="nav-item"><a class="nav-link nav-link-lg" href="#"><span>Navegación 1</span></a></li>
-                <li class="nav-item"><a class="nav-link nav-link-lg" href="#"><span>Navegación 2</span></a></li>
-                <li class="nav-item"><a class="nav-link nav-link-lg" href="#"><span>Navegación 3</span></a></li>
+                <li class="nav-item"><a class="nav-link nav-link-lg" href="#"><span>Enlace de navegación</span></a></li>
+                <li class="nav-item"><a class="nav-link nav-link-lg" href="#"><span>Enlace de navegación</span></a></li>
+                <li class="nav-item"><a class="nav-link nav-link-lg" href="#"><span>Enlace de navegación</span></a></li>
                 <li class="nav-item"><a class="nav-link nav-link-lg" href="#">
                 <span>Notificaciones</span>
                 <span class="item-notifications"></span></a>
@@ -793,22 +793,22 @@ export const HEADER_ONE_LINE = `
                     </button>
                     <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item item-link" href="#">
                         <span class="item-text">Ver más</span>
@@ -835,22 +835,22 @@ export const HEADER_ONE_LINE = `
                     </button>
                     <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                        <span class="item-text">Navegación</span>
+                        <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item item-link" href="#">
                         <span class="item-text">Ver más</span>
@@ -868,9 +868,9 @@ export const HEADER_ONE_LINE = `
                 <span class="btn-dropdown-text ellipsis-1">Perfil</span>
                 </button>
                 <div class="dropdown-menu dropdown-menu-end">
-                <a class="dropdown-item" href="#"><span class="item-text">Navegación 1</span></a>
-                <a class="dropdown-item" href="#"><span class="item-text">Navegación 2</span></a>
-                <a class="dropdown-item" href="#"><span class="item-text">Navegación 3</span></a>
+                <a class="dropdown-item" href="#"><span class="item-text">Enlace de navegación</span></a>
+                <a class="dropdown-item" href="#"><span class="item-text">Enlace de navegación</span></a>
+                <a class="dropdown-item" href="#"><span class="item-text">Enlace de navegación</span></a>
                 <a class="dropdown-item" href="#">
                     <span class="item-text">Notificaciones</span>
                     <span class="item-notifications"></span>
@@ -887,9 +887,9 @@ export const HEADER_ONE_LINE = `
             <nav>
             <p class="navbar-user-mobile-title">Perfil</p>
             <ul class="nav flex-column nav-pills nav-user">
-                <li class="nav-item"><a class="nav-link nav-link-lg" href="#"><span>Navegación 1</span></a></li>
-                <li class="nav-item"><a class="nav-link nav-link-lg" href="#"><span>Navegación 2</span></a></li>
-                <li class="nav-item"><a class="nav-link nav-link-lg" href="#"><span>Navegación 3</span></a></li>
+                <li class="nav-item"><a class="nav-link nav-link-lg" href="#"><span>Enlace de navegación</span></a></li>
+                <li class="nav-item"><a class="nav-link nav-link-lg" href="#"><span>Enlace de navegación</span></a></li>
+                <li class="nav-item"><a class="nav-link nav-link-lg" href="#"><span>Enlace de navegación</span></a></li>
                 <li class="nav-item"><a class="nav-link nav-link-lg" href="#">
                 <span>Notificaciones</span>
                 <span class="item-notifications"></span></a>
@@ -946,9 +946,9 @@ export const HEADER_TWO_LINES_SEARCH = `
                 <span class="btn-dropdown-text ellipsis-1">Perfil</span>
                 </button>
                 <div class="dropdown-menu dropdown-menu-end">
-                <a class="dropdown-item" href="#"><span class="item-text">Navegación 1</span></a>
-                <a class="dropdown-item" href="#"><span class="item-text">Navegación 2</span></a>
-                <a class="dropdown-item" href="#"><span class="item-text">Navegación 3</span></a>
+                <a class="dropdown-item" href="#"><span class="item-text">Enlace de navegación</span></a>
+                <a class="dropdown-item" href="#"><span class="item-text">Enlace de navegación</span></a>
+                <a class="dropdown-item" href="#"><span class="item-text">Enlace de navegación</span></a>
                 <a class="dropdown-item" href="#">
                     <span class="item-text">Notificaciones</span>
                     <span class="item-notifications"></span>
@@ -979,22 +979,22 @@ export const HEADER_TWO_LINES_SEARCH = `
                 </button>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item item-link" href="#">
                     <span class="item-text">Ver más</span>
@@ -1021,22 +1021,22 @@ export const HEADER_TWO_LINES_SEARCH = `
                 </button>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item item-link" href="#">
                     <span class="item-text">Ver más</span>
@@ -1071,9 +1071,9 @@ export const HEADER_TWO_LINES_SEARCH = `
             <nav>
             <p class="navbar-user-mobile-title">Perfil</p>
             <ul class="nav flex-column nav-pills nav-user">
-                <li class="nav-item"><a class="nav-link nav-link-lg" href="#"><span>Navegación 1</span></a></li>
-                <li class="nav-item"><a class="nav-link nav-link-lg" href="#"><span>Navegación 2</span></a></li>
-                <li class="nav-item"><a class="nav-link nav-link-lg" href="#"><span>Navegación 3</span></a></li>
+                <li class="nav-item"><a class="nav-link nav-link-lg" href="#"><span>Enlace de navegación</span></a></li>
+                <li class="nav-item"><a class="nav-link nav-link-lg" href="#"><span>Enlace de navegación</span></a></li>
+                <li class="nav-item"><a class="nav-link nav-link-lg" href="#"><span>Enlace de navegación</span></a></li>
                 <li class="nav-item"><a class="nav-link nav-link-lg" href="#">
                 <span>Notificaciones</span>
                 <span class="item-notifications"></span></a>
@@ -1120,9 +1120,9 @@ export const HEADER_TWO_LINES = `
                 <span class="btn-dropdown-text ellipsis-1">Perfil</span>
             </button>
             <div class="dropdown-menu dropdown-menu-end">
-                <a class="dropdown-item" href="#"><span class="item-text">Navegación 1</span></a>
-                <a class="dropdown-item" href="#"><span class="item-text">Navegación 2</span></a>
-                <a class="dropdown-item" href="#"><span class="item-text">Navegación 3</span></a>
+                <a class="dropdown-item" href="#"><span class="item-text">Enlace de navegación</span></a>
+                <a class="dropdown-item" href="#"><span class="item-text">Enlace de navegación</span></a>
+                <a class="dropdown-item" href="#"><span class="item-text">Enlace de navegación</span></a>
                 <a class="dropdown-item" href="#">
                 <span class="item-text">Notificaciones</span>
                 <span class="item-notifications"></span>
@@ -1153,22 +1153,22 @@ export const HEADER_TWO_LINES = `
                 </button>
                 <div class="dropdown-menu">
                 <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                 </a>
                 <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                 </a>
                 <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                 </a>
                 <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                 </a>
                 <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                 </a>
                 <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                 </a>
                 <a class="dropdown-item item-link" href="#">
                     <span class="item-text">Ver más</span>
@@ -1195,22 +1195,22 @@ export const HEADER_TWO_LINES = `
                 </button>
                 <div class="dropdown-menu">
                 <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                 </a>
                 <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                 </a>
                 <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                 </a>
                 <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                 </a>
                 <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                 </a>
                 <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                 </a>
                 <a class="dropdown-item item-link" href="#">
                     <span class="item-text">Ver más</span>
@@ -1245,9 +1245,9 @@ export const HEADER_TWO_LINES = `
         <nav>
             <p class="navbar-user-mobile-title">Perfil</p>
             <ul class="nav flex-column nav-pills nav-user">
-            <li class="nav-item"><a class="nav-link nav-link-lg" href="#"><span>Navegación 1</span></a></li>
-            <li class="nav-item"><a class="nav-link nav-link-lg" href="#"><span>Navegación 2</span></a></li>
-            <li class="nav-item"><a class="nav-link nav-link-lg" href="#"><span>Navegación 3</span></a></li>
+            <li class="nav-item"><a class="nav-link nav-link-lg" href="#"><span>Enlace de navegación</span></a></li>
+            <li class="nav-item"><a class="nav-link nav-link-lg" href="#"><span>Enlace de navegación</span></a></li>
+            <li class="nav-item"><a class="nav-link nav-link-lg" href="#"><span>Enlace de navegación</span></a></li>
             <li class="nav-item"><a class="nav-link nav-link-lg" href="#">
                 <span>Notificaciones</span>
                 <span class="item-notifications"></span></a>
@@ -1305,22 +1305,22 @@ export const HEADER_NO_LOGIN_SEARCH = `
                 </button>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item item-link" href="#">
                     <span class="item-text">Ver más</span>
@@ -1347,22 +1347,22 @@ export const HEADER_NO_LOGIN_SEARCH = `
                 </button>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item item-link" href="#">
                     <span class="item-text">Ver más</span>
@@ -1428,22 +1428,22 @@ export const HEADER_NO_LOGIN = `
                 </button>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item item-link" href="#">
                     <span class="item-text">Ver más</span>
@@ -1470,22 +1470,22 @@ export const HEADER_NO_LOGIN = `
                 </button>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item" href="#">
-                    <span class="item-text">Navegación</span>
+                    <span class="item-text">Enlace de navegación</span>
                     </a>
                     <a class="dropdown-item item-link" href="#">
                     <span class="item-text">Ver más</span>

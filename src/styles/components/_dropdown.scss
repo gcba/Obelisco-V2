@@ -226,6 +226,11 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
         color: $body-color;
       }
 
+      &.active {
+        color: $body-color;
+        background-color: $white;
+      }
+
       // dropdown-item de Cerrar sesión
       &.item-danger {
         color: $danger;

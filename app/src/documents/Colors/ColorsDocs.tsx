@@ -47,36 +47,36 @@ const ColorsDocs: React.FC = () => {
     {
       title: 'Colores principales',
       content: (
-        <div className="container">
-          <div className="d-flex gap-4 justify-content-center mb-3 flex-wrap text-white mx-auto">
+        <>
+          <p>Utilizamos un grupo seleccionado de colores para formar una paleta más compacta, que sirve para crear esquemas de color en los distintos componentes.</p>
+          <div className="d-flex gap-4 justify-content-center mb-3 flex-wrap text-white mx-auto mb-5">
             {themeColors.map(({ name, hex, textDark }) => (
               <div className={`color-box ${textDark ? 'text-dark' : ''}`} style={{ backgroundColor: hex }} key={name}>
                 <span className="headline-md fw-bold">{name}</span>
-                <span className="text-xs">{hex}</span>
+                <span className="text-xs">{hex.toUpperCase()}</span>
               </div>
             ))}
           </div>
-        </div>
+        </>
       ),
     },
     {
       title: 'Fondos',
       content: (
         <>
-          <div className="container">
-            <div className="d-flex gap-4 justify-content-center mb-3 flex-wrap text-white mx-auto">
-              <div className="color-box bg-white text-dark" style={{ border: '2px solid #e6ebf0' }}>
-                <span className="headline-md fw-bold">bg-white</span>
-                <span className="text-xs">#ffffff</span>
-              </div>
-              <div className="color-box bg-light text-dark">
-                <span className="headline-md fw-bold">bg-light</span>
-                <span className="text-xs">#f3f6f9</span>
-              </div>
-              <div className="color-box bg-dark text-white">
-                <span className="headline-md fw-bold">bg-dark</span>
-                <span className="text-xs">#002733</span>
-              </div>
+          <p>Para los fondos de los elementos, se encuentran disponibles las siguientes clases:</p>
+          <div className="d-flex gap-4 justify-content-center mb-3 flex-wrap text-white mx-auto">
+            <div className="color-box bg-white text-dark" style={{ border: '2px solid #e6ebf0' }}>
+              <span className="headline-md fw-bold">.bg-white</span>
+              <span className="text-xs">#FFFFFF</span>
+            </div>
+            <div className="color-box bg-light text-dark">
+              <span className="headline-md fw-bold">.bg-light</span>
+              <span className="text-xs">#F3F6F9</span>
+            </div>
+            <div className="color-box bg-dark text-white">
+              <span className="headline-md fw-bold">.bg-dark</span>
+              <span className="text-xs">#002733</span>
             </div>
           </div>
         </>
@@ -411,13 +411,13 @@ const ColorsDocs: React.FC = () => {
           </p>
           <p>Los criterios de éxito que tenemos en cuenta son:</p>
           <div className="list-link pb-3">
-            <a href="#" target="_blank" rel="noopener noreferrer" className="external text-sm">
+            <a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html" target="_blank" rel="noopener noreferrer" className="external text-sm">
               Success Criterion 1.4.11 Non-text Contrast
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="external text-sm">
+            <a href="https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html" target="_blank" rel="noopener noreferrer" className="external text-sm">
               Success Criterion 1.4.1 Use of Color
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer" className="external text-sm">
+            <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced.html" target="_blank" rel="noopener noreferrer" className="external text-sm">
               Success Criterion 1.4.6 Contrast (Enhanced)
             </a>
           </div>
@@ -490,10 +490,10 @@ const ColorsDocs: React.FC = () => {
       title: 'Recursos',
       content: (
         <div className="list-link pt-2 pb-3">
-          <a href="#" target="_blank" rel="noopener noreferrer" className="external text-sm">
+          <a href="https://webaim.org/resources/contrastchecker/" target="_blank" rel="noopener noreferrer" className="external text-sm">
             WebAIM Contrast Checker
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer" className="external text-sm">
+          <a href="https://www.figma.com/community/plugin/732603254453395948/stark-contrast-accessibility-checker" target="_blank" rel="noopener noreferrer" className="external text-sm">
             Stark - Contrast & Accessibility Checker (Figma Community)
           </a>
         </div>

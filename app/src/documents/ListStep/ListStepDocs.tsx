@@ -1,6 +1,6 @@
 import CodeBox from '@/components/CodeBox';
-import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
-import MainDescription from '@/components/Template/MainDescription';
+import Tabs from '@/components/Tabs';
+import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import {
   LIST_STEP_LARGE,
@@ -12,42 +12,12 @@ import {
 } from './code-views';
 
 const ListStepDocs: React.FC = () => {
-  const sections = [
+  const SECTIONS_DEV = [
     {
-      title: 'Lista de pasos',
-      h1: true,
-      content: (
-        <>
-          <MainDescription description="Las listas se utilizan para agrupar una serie de elementos relacionados. Para listas que presentan un orden secuencial de pasos, utilizamos la Lista de pasos." />
-          <p className="lead mb-4">
-            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-            <a
-              href="https://gcba.github.io/estandares/componentes/listas/listas-de-pasos/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              enlace
-            </a>
-            .
-          </p>
-        </>
-      ),
-    },
-    {
-      id: 'section-1',
       title: 'Tamaños',
     },
     {
-      id: 'section-2',
-      title: (
-        <div className="d-flex gap-1 align-items-center">
-          <span className="material-symbols-rounded" style={{ fontSize: '14px' }} aria-hidden="true">
-            arrow_right_alt
-          </span>{' '}
-          Grande
-        </div>
-      ),
-      h3: true,
+      subtitle: 'Grande',
       content: (
         <CodeBox codeHTML={LIST_STEP_LARGE}>
           <div className="container">
@@ -82,16 +52,7 @@ const ListStepDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-3',
-      title: (
-        <div className="d-flex gap-1 align-items-center">
-          <span className="material-symbols-rounded" style={{ fontSize: '14px' }} aria-hidden="true">
-            arrow_right_alt
-          </span>{' '}
-          Mediano
-        </div>
-      ),
-      h3: true,
+      subtitle: 'Mediano',
       content: (
         <CodeBox codeHTML={LIST_STEP_MEDIUM}>
           <div className="container">
@@ -123,16 +84,7 @@ const ListStepDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-4',
-      title: (
-        <div className="d-flex gap-1 align-items-center">
-          <span className="material-symbols-rounded" style={{ fontSize: '14px' }} aria-hidden="true">
-            arrow_right_alt
-          </span>{' '}
-          Chico
-        </div>
-      ),
-      h3: true,
+      subtitle: 'Chico',
       content: (
         <CodeBox codeHTML={LIST_STEP_SMALL}>
           <div className="container">
@@ -164,7 +116,6 @@ const ListStepDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-5',
       title: 'Con borde',
       content: (
         <CodeBox codeHTML={LIST_STEP_MEDIUM_BORDER}>
@@ -197,7 +148,6 @@ const ListStepDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-6',
       title: 'Con número',
       content: (
         <CodeBox codeHTML={LIST_STEP_MEDIUM_NUMBER}>
@@ -230,7 +180,6 @@ const ListStepDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-7',
       title: 'Con número y borde',
       content: (
         <CodeBox codeHTML={LIST_STEP_MEDIUM_NUMBER_BORDER}>
@@ -266,7 +215,25 @@ const ListStepDocs: React.FC = () => {
 
   return (
     <>
-      <DocumentationTemplate sections={sections} />
+      <ComponentHeader
+        title="Lista de pasos"
+        description={[
+          'Las listas se utilizan para agrupar una serie de elementos relacionados. Para listas que presentan un orden secuencial de pasos, utilizamos la Lista de pasos.',
+          <>
+            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;{' '}
+            <a
+              href="https://gcba.github.io/estandares/componentes/listas/lista-de-pasos/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {' '}
+              enlace
+            </a>
+            .
+          </>,
+        ]}
+      />
+      <Tabs sectionDev={SECTIONS_DEV} />
     </>
   );
 };

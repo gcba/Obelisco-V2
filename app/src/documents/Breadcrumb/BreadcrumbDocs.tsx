@@ -1,33 +1,13 @@
 import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
-import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
-import MainDescription from '@/components/Template/MainDescription';
+import Tabs from '@/components/Tabs';
+import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import { BREADCRUMB } from './code-views';
 
 const BreadcrumbDocs: React.FC = () => {
-  const sections = [
+  const SECTIONS_DEV = [
     {
-      title: 'Migas de pan',
-      content: (
-        <>
-          <MainDescription description="El componente de migas de pan ayuda a los usuarios a comprender dónde se encuentran dentro de la estructura de un sitio web y moverse entre niveles." />
-          <p className="lead mb-4">
-            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-            <a
-              href="https://gcba.github.io/estandares/componentes/miga-de-pan/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              enlace.
-            </a>
-          </p>
-        </>
-      ),
-      h1: true,
-    },
-    {
-      id: 'section-1',
       title: 'Simple',
       content: (
         <>
@@ -56,7 +36,29 @@ const BreadcrumbDocs: React.FC = () => {
     },
   ];
 
-  return <DocumentationTemplate sections={sections} />;
+  return (
+    <>
+      <ComponentHeader
+        title="Migas de pan"
+        description={[
+          'El componente de migas de pan ayuda a los usuarios a comprender dónde se encuentran dentro de la estructura de un sitio web y moverse entre niveles.',
+          <>
+            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;{' '}
+            <a
+              href="https://gcba.github.io/estandares/componentes/miga-de-pan/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {' '}
+              enlace
+            </a>
+            .
+          </>,
+        ]}
+      />
+      <Tabs sectionDev={SECTIONS_DEV} />
+    </>
+  );
 };
 
 export default BreadcrumbDocs;

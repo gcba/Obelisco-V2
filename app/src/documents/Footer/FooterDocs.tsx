@@ -1,22 +1,14 @@
 import CodeBox from '@/components/CodeBox';
-import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
-import MainDescription from '@/components/Template/MainDescription';
+import Tabs from '@/components/Tabs';
+import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import { FOOTER, FOOTER_INDICATOR, FOOTER_LEGALS } from './code-views';
 
 const basePath = '/Obelisco-V2';
 
 const FooterDocs: React.FC = () => {
-  const sections = [
+  const SECTIONS_DEV = [
     {
-      title: 'Pie de Página (Footer)',
-      h1: true,
-      content: (
-        <MainDescription description="El pie de página (o footer en Inglés) se sitúa en la parte inferior de todos los activos digitales de Gobierno. Contiene información institucional o de acceso rápido que permite a los usuarios encontrar de forma sencilla la información que necesitan." />
-      ),
-    },
-    {
-      id: 'section-1',
       title: 'Completo',
       content: (
         <CodeBox codeHTML={FOOTER}>
@@ -156,7 +148,6 @@ const FooterDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-2',
       title: 'Solo legales',
       content: (
         <CodeBox codeHTML={FOOTER_LEGALS}>
@@ -222,7 +213,6 @@ const FooterDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-3',
       title: 'Con indicador',
       content: (
         <CodeBox codeHTML={FOOTER_INDICATOR}>
@@ -374,7 +364,25 @@ const FooterDocs: React.FC = () => {
 
   return (
     <>
-      <DocumentationTemplate sections={sections} />
+      <ComponentHeader
+        title="Pie de Página (Footer)"
+        description={[
+          'El pie de página (o footer en Inglés) se sitúa en la parte inferior de todos los activos digitales de Gobierno. Contiene información institucional o de acceso rápido que permite a los usuarios encontrar de forma sencilla la información que necesitan.',
+          <>
+            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;{' '}
+            <a
+              href="https://gcba.github.io/estandares/componentes/pie-de-pagina/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {' '}
+              enlace
+            </a>
+            .
+          </>,
+        ]}
+      />
+      <Tabs sectionDev={SECTIONS_DEV} />
     </>
   );
 };

@@ -1,7 +1,7 @@
 import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
-import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
-import MainDescription from '@/components/Template/MainDescription';
+import Tabs from '@/components/Tabs';
+import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import {
   CALENDAR_COLLAPSE,
@@ -13,24 +13,8 @@ import {
 } from './code-views';
 
 const CalendarDocs: React.FC = () => {
-  const sections = [
+  const SECTIONS_DEV = [
     {
-      title: 'Calendario',
-      content: (
-        <>
-          <MainDescription description="El calendario es una representación visual en forma de tabla que exhibe eventos y fechas importantes correspondientes a los días de la semana de un mes determinado." />
-          <p className="lead mb-4">
-            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-            <a href="https://gcba.github.io/estandares/componentes/calendar/" target="_blank" rel="noopener noreferrer">
-              enlace.
-            </a>
-          </p>
-        </>
-      ),
-      h1: true,
-    },
-    {
-      id: 'section-1',
       title: 'Predeterminado',
       content: (
         <CodeBox codeHTML={CALENDAR_DEFAULT}>
@@ -235,7 +219,6 @@ const CalendarDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-2',
       title: 'Con enlaces',
       content: (
         <CodeBox codeHTML={CALENDAR_LINKS}>
@@ -440,7 +423,6 @@ const CalendarDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-3',
       title: 'Con dos referencias',
       content: (
         <CodeBox codeHTML={CALENDAR_WITH_REFERENCES}>
@@ -657,7 +639,6 @@ const CalendarDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-4',
       title: 'Con colapsable',
       content: (
         <CodeBox codeHTML={CALENDAR_COLLAPSE}>
@@ -901,7 +882,6 @@ const CalendarDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-5',
       title: 'Sin eventos',
       content: (
         <CodeBox codeHTML={CALENDAR_NO_EVENTS}>
@@ -1084,7 +1064,6 @@ const CalendarDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-6',
       title: 'Disposición',
       content: (
         <CodeBox codeHTML={CALENDAR_DECK}>
@@ -1470,7 +1449,25 @@ const CalendarDocs: React.FC = () => {
     },
   ];
 
-  return <DocumentationTemplate sections={sections} />;
+  return (
+    <>
+      <ComponentHeader
+        title="Calendario"
+        description={[
+          'El calendario es una representación visual en forma de tabla que exhibe eventos y fechas importantes correspondientes a los días de la semana de un mes determinado.',
+          <>
+            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;{' '}
+            <a href="https://gcba.github.io/estandares/componentes/calendar/" target="_blank" rel="noopener noreferrer">
+              {' '}
+              enlace
+            </a>
+            .
+          </>,
+        ]}
+      />
+      <Tabs sectionDev={SECTIONS_DEV} />
+    </>
+  );
 };
 
 export default CalendarDocs;

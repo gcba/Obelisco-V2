@@ -1,30 +1,13 @@
 import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
-import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
-import MainDescription from '@/components/Template/MainDescription';
+import Tabs from '@/components/Tabs';
+import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import { MAP_INSTITUTION, MAP_LATERAL } from './code-views';
 
 const MapDocs: React.FC = () => {
-  const sections = [
+  const SECTIONS_DEV = [
     {
-      title: 'Mapa',
-      h1: true,
-      content: (
-        <>
-          <MainDescription description="El mapa brinda contexto sobre una ubicación geográfica y redirige a la persona usuaria al mapa interactivo de Buenos Aires. A su vez, permite a las personas usuarias anticipar y planificar sus acciones." />
-          <p className="lead mb-4">
-            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-            <a href="https://gcba.github.io/estandares/componentes/mapa/" target="_blank" rel="noopener noreferrer">
-              enlace
-            </a>
-            .
-          </p>
-        </>
-      ),
-    },
-    {
-      id: 'section-1',
       title: 'Lateral',
       content: (
         <CodeBox codeHTML={MAP_LATERAL}>
@@ -63,7 +46,6 @@ const MapDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-2',
       title: 'Institucional',
       content: (
         <CodeBox codeHTML={MAP_INSTITUTION}>
@@ -103,7 +85,25 @@ const MapDocs: React.FC = () => {
     },
   ];
 
-  return <DocumentationTemplate sections={sections} />;
+  return (
+    <>
+      <ComponentHeader
+        title="Mapa"
+        description={[
+          'El mapa brinda contexto sobre una ubicación geográfica y redirige a la persona usuaria al mapa interactivo de Buenos Aires. A su vez, permite a las personas usuarias anticipar y planificar sus acciones.',
+          <>
+            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;{' '}
+            <a href="https://gcba.github.io/estandares/componentes/mapa/" target="_blank" rel="noopener noreferrer">
+              {' '}
+              enlace
+            </a>
+            .
+          </>,
+        ]}
+      />
+      <Tabs sectionDev={SECTIONS_DEV} />
+    </>
+  );
 };
 
 export default MapDocs;

@@ -1,7 +1,7 @@
 import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
-import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
-import MainDescription from '@/components/Template/MainDescription';
+import Tabs from '@/components/Tabs';
+import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import {
   SIMPLE_ALERT,
@@ -13,24 +13,8 @@ import {
 } from './code-views';
 
 const AlertDocs: React.FC = () => {
-  const sections = [
+  const SECTIONS_DEV = [
     {
-      title: 'Alertas',
-      content: (
-        <>
-          <MainDescription description="Las alertas son avisos que mantienen a los usuarios informados sobre el estado del sistema y pueden requerir o no que realicen una acción." />
-          <p className="lead mb-4">
-            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-            <a href="https://gcba.github.io/estandares/componentes/alerta/" target="_blank" rel="noopener noreferrer">
-              enlace.
-            </a>
-          </p>
-        </>
-      ),
-      h1: true,
-    },
-    {
-      id: 'section-1',
       title: 'Simple',
       content: (
         <CodeBox codeHTML={SIMPLE_ALERT}>
@@ -55,7 +39,6 @@ const AlertDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-2',
       title: 'Con cierre',
       content: (
         <CodeBox codeHTML={WITH_CLOSE_ALERT}>
@@ -84,7 +67,6 @@ const AlertDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-3',
       title: 'Con destacado',
       content: (
         <CodeBox codeHTML={HIGHLIGTHED_ALERT}>
@@ -121,7 +103,6 @@ const AlertDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-4',
       title: 'Con hipervinculo',
       content: (
         <CodeBox codeHTML={HYPERLINK_ALERT}>
@@ -162,7 +143,6 @@ const AlertDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-5',
       title: 'Con lista de enlaces',
       content: (
         <CodeBox codeHTML={LIST_LINK_ALERT}>
@@ -195,7 +175,6 @@ const AlertDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-6',
       title: 'Con lista de enlaces descriptiva',
       content: (
         <CodeBox codeHTML={WITH_DESCRIPTION_ALERT}>
@@ -229,7 +208,25 @@ const AlertDocs: React.FC = () => {
     },
   ];
 
-  return <DocumentationTemplate sections={sections} />;
+  return (
+    <>
+      <ComponentHeader
+        title="Alertas"
+        description={[
+          'Las alertas son avisos que mantienen a los usuarios informados sobre el estado del sistema y pueden requerir o no que realicen una acción.',
+          <>
+            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;{' '}
+            <a href="https://gcba.github.io/estandares/componentes/alerta/" target="_blank" rel="noopener noreferrer">
+              {' '}
+              enlace
+            </a>
+            .
+          </>,
+        ]}
+      />
+      <Tabs sectionDev={SECTIONS_DEV} />
+    </>
+  );
 };
 
 export default AlertDocs;

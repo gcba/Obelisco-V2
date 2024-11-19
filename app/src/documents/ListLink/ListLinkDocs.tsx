@@ -1,34 +1,13 @@
 import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
-import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
-import MainDescription from '@/components/Template/MainDescription';
+import Tabs from '@/components/Tabs';
+import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import { LIST_LINK } from './code-views';
 
 const ListLinkDocs: React.FC = () => {
-  const sections = [
+  const SECTIONS_DEV = [
     {
-      title: 'Lista de enlaces',
-      h1: true,
-      content: (
-        <>
-          <MainDescription description="La lista de enlaces organiza y orienta a la persona usuaria a través de diferentes secciones y recursos disponibles en un sitio web. Al funcionar como un bloque coherente, permite encontrar información deseada rápidamente." />
-          <p className="lead mb-4">
-            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-            <a
-              href="https://gcba.github.io/estandares/componentes/listas/lista-de-enlaces/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              enlace
-            </a>
-            .
-          </p>
-        </>
-      ),
-    },
-    {
-      id: 'section-1',
       title: 'Lista de enlaces',
       content: (
         <CodeBox codeHTML={LIST_LINK}>
@@ -49,7 +28,25 @@ const ListLinkDocs: React.FC = () => {
 
   return (
     <>
-      <DocumentationTemplate sections={sections} />
+      <ComponentHeader
+        title="Lista de enlaces"
+        description={[
+          'La lista de enlaces organiza y orienta a la persona usuaria a través de diferentes secciones y recursos disponibles en un sitio web. Al funcionar como un bloque coherente, permite encontrar información deseada rápidamente.',
+          <>
+            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;{' '}
+            <a
+              href="https://gcba.github.io/estandares/componentes/listas/lista-de-enlaces/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {' '}
+              enlace
+            </a>
+            .
+          </>,
+        ]}
+      />
+      <Tabs sectionDev={SECTIONS_DEV} />
     </>
   );
 };

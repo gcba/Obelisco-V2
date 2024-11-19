@@ -2,8 +2,8 @@ import Image from 'next/image';
 
 import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
-import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
-import MainDescription from '@/components/Template/MainDescription';
+import Tabs from '@/components/Tabs';
+import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import {
   HIGHLIGHTED_BANNER_ACCESS,
@@ -27,33 +27,11 @@ import {
 const basePath = '/Obelisco-V2';
 
 const HighlightedDocs: React.FC = () => {
-  const sections = [
+  const SECTIONS_DEV = [
     {
-      title: 'Destacado',
-      h1: true,
-      content: (
-        <>
-          <MainDescription description="Los destacados permiten resaltar contenido relevante que requiere un nivel jerárquico mayor al resto de la información. Se usa para captar la atención de la persona usuaria incorporando imágenes, accionables y otros elementos interactivos." />
-          <p className="lead mb-4">
-            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-            <a
-              href="https://gcba.github.io/estandares/componentes/destacado/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              enlace
-            </a>
-            .
-          </p>
-        </>
-      ),
-    },
-    {
-      id: 'section-1',
       title: 'Banner',
     },
     {
-      id: 'section-2',
       subtitle: 'Con imagen',
       content: (
         <>
@@ -208,7 +186,6 @@ const HighlightedDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-3',
       subtitle: 'Con video',
       content: (
         <>
@@ -274,7 +251,6 @@ const HighlightedDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-4',
       subtitle: 'Sin multimedia',
       content: (
         <>
@@ -302,7 +278,6 @@ const HighlightedDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-5',
       subtitle: 'Con fondo',
       content: (
         <>
@@ -337,11 +312,9 @@ const HighlightedDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-6',
       title: 'Conjunto',
     },
     {
-      id: 'section-7',
       subtitle: 'Con imagen',
       content: (
         <CodeBox codeHTML={HIGHLIGHTED_JOIN_IMAGE}>
@@ -455,7 +428,6 @@ const HighlightedDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-8',
       subtitle: 'Con video',
       content: (
         <CodeBox codeHTML={HIGHLIGHTED_JOIN_VIDEO}>
@@ -516,7 +488,6 @@ const HighlightedDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-9',
       subtitle: 'Sin multimedia',
       content: (
         <CodeBox codeHTML={HIGHLIGHTED_JOIN_NO_IMAGE}>
@@ -602,7 +573,6 @@ const HighlightedDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-10',
       title: 'Lateral',
       content: (
         <>
@@ -698,7 +668,29 @@ const HighlightedDocs: React.FC = () => {
     },
   ];
 
-  return <DocumentationTemplate sections={sections} />;
+  return (
+    <>
+      <ComponentHeader
+        title="Destacado"
+        description={[
+          'Los destacados permiten resaltar contenido relevante que requiere un nivel jerárquico mayor al resto de la información. Se usa para captar la atención de la persona usuaria incorporando imágenes, accionables y otros elementos interactivos.',
+          <>
+            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;{' '}
+            <a
+              href="https://gcba.github.io/estandares/componentes/destacado/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {' '}
+              enlace
+            </a>
+            .
+          </>,
+        ]}
+      />
+      <Tabs sectionDev={SECTIONS_DEV} />
+    </>
+  );
 };
 
 export default HighlightedDocs;

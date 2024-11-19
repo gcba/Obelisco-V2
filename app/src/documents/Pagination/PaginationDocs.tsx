@@ -5,8 +5,8 @@ import React, { useState } from 'react';
 import CodeCopy from '@/components/CodeBox';
 import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
-import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
-import MainDescription from '@/components/Template/MainDescription';
+import Tabs from '@/components/Tabs';
+import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import {
   PAGINATION_CENTRAL,
@@ -31,25 +31,8 @@ const PaginationDocs: React.FC = () => {
     }
   };
 
-  const sections = [
+  const SECTIONS_DEV = [
     {
-      title: 'Paginado',
-      h1: true,
-      content: (
-        <>
-          <MainDescription description="El paginado se utiliza para dividir contenido o datos en varias páginas, con un control para navegar a la página siguiente o anterior." />
-          <p className="lead mb-4">
-            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-            <a href="https://gcba.github.io/estandares/componentes/paginado/" target="_blank" rel="noopener noreferrer">
-              enlace
-            </a>
-            .
-          </p>
-        </>
-      ),
-    },
-    {
-      id: 'section-1',
       title: 'Numerado',
       content: (
         <CodeBox codeHTML={getCodeExample()}>
@@ -209,7 +192,6 @@ const PaginationDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-2',
       title: 'Descriptivo',
       content: (
         <CodeCopy codeHTML={PAGINATION_DESCRIPTION}>
@@ -235,7 +217,6 @@ const PaginationDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-2',
       title: 'Estado deshabilitado',
       content: (
         <CodeCopy codeHTML={PAGINATION_DISABLED}>
@@ -262,7 +243,25 @@ const PaginationDocs: React.FC = () => {
     },
   ];
 
-  return <DocumentationTemplate sections={sections} />;
+  return (
+    <>
+      <ComponentHeader
+        title="Paginado"
+        description={[
+          'El paginado se utiliza para dividir contenido o datos en varias páginas, con un control para navegar a la página siguiente o anterior.',
+          <>
+            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;{' '}
+            <a href="https://gcba.github.io/estandares/componentes/paginado/" target="_blank" rel="noopener noreferrer">
+              {' '}
+              enlace
+            </a>
+            .
+          </>,
+        ]}
+      />
+      <Tabs sectionDev={SECTIONS_DEV} />
+    </>
+  );
 };
 
 export default PaginationDocs;

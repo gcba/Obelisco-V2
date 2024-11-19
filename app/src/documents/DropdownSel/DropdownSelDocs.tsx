@@ -2,8 +2,8 @@
 import { useEffect } from 'react';
 
 import CodeBox from '@/components/CodeBox';
-import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
-import MainDescription from '@/components/Template/MainDescription';
+import Tabs from '@/components/Tabs';
+import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import {
   DROPDOWN_CHECKBOX_HTML,
@@ -18,41 +18,12 @@ import {
   DROPDOWN_RADIO_SIZES_SM,
 } from './code-views';
 
-const sections = [
+const SECTIONS_DEV = [
   {
-    title: 'Desplegable de selección',
-    content: (
-      <>
-        <MainDescription description="Los desplegables muestran una lista de opciones permitiendo que una persona usuaria pueda seleccionar una o varias en simultáneo. Una opción seleccionada puede usarse como una acción para filtrar u ordenar el contenido existente." />
-        <p className="lead mb-4">
-          Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-          <a
-            href="https://gcba.github.io/estandares/componentes/desplegables/desplegables_seleccion/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            enlace
-          </a>
-          .
-        </p>
-      </>
-    ),
-    h1: true,
-  },
-  {
-    id: 'section-1',
     title: 'Con selección múltiple',
   },
   {
-    id: 'section-2',
-    title: (
-      <div className="d-flex gap-1 align-items-center">
-        <span className="material-symbols-rounded" style={{ fontSize: '14px' }} aria-hidden="true">
-          arrow_right_alt
-        </span>{' '}
-        Grande
-      </div>
-    ),
+    subtitle: 'Grande',
     content: (
       <CodeBox codeHTML={DROPDOWN_CHECKBOX_SIZES_LG}>
         <div className="container">
@@ -117,15 +88,7 @@ const sections = [
     ),
   },
   {
-    id: 'section-3',
-    title: (
-      <div className="d-flex gap-1 align-items-center">
-        <span className="material-symbols-rounded" style={{ fontSize: '14px' }} aria-hidden="true">
-          arrow_right_alt
-        </span>{' '}
-        Mediano
-      </div>
-    ),
+    subtitle: 'Mediano',
     content: (
       <CodeBox codeHTML={DROPDOWN_CHECKBOX_SIZES_MD}>
         <div className="container">
@@ -190,15 +153,7 @@ const sections = [
     ),
   },
   {
-    id: 'section-4',
-    title: (
-      <div className="d-flex gap-1 align-items-center">
-        <span className="material-symbols-rounded" style={{ fontSize: '14px' }} aria-hidden="true">
-          arrow_right_alt
-        </span>{' '}
-        Chico
-      </div>
-    ),
+    subtitle: 'Chico',
     content: (
       <CodeBox codeHTML={DROPDOWN_CHECKBOX_SIZES_SM}>
         <div className="container">
@@ -263,19 +218,10 @@ const sections = [
     ),
   },
   {
-    id: 'section-5',
     title: 'Con selección única',
   },
   {
-    id: 'section-6',
-    title: (
-      <div className="d-flex gap-1 align-items-center">
-        <span className="material-symbols-rounded" style={{ fontSize: '14px' }} aria-hidden="true">
-          arrow_right_alt
-        </span>{' '}
-        Grande
-      </div>
-    ),
+    subtitle: 'Grande',
     content: (
       <CodeBox codeHTML={DROPDOWN_RADIO_SIZES_LG}>
         <div className="container">
@@ -340,15 +286,7 @@ const sections = [
     ),
   },
   {
-    id: 'section-7',
-    title: (
-      <div className="d-flex gap-1 align-items-center">
-        <span className="material-symbols-rounded" style={{ fontSize: '14px' }} aria-hidden="true">
-          arrow_right_alt
-        </span>{' '}
-        Mediano
-      </div>
-    ),
+    subtitle: 'Mediano',
     content: (
       <CodeBox codeHTML={DROPDOWN_RADIO_SIZES_MD}>
         <div className="container">
@@ -413,15 +351,7 @@ const sections = [
     ),
   },
   {
-    id: 'section-8',
-    title: (
-      <div className="d-flex gap-1 align-items-center">
-        <span className="material-symbols-rounded" style={{ fontSize: '14px' }} aria-hidden="true">
-          arrow_right_alt
-        </span>{' '}
-        Chico
-      </div>
-    ),
+    subtitle: 'Chico',
     content: (
       <CodeBox codeHTML={DROPDOWN_RADIO_SIZES_SM}>
         <div className="container">
@@ -486,7 +416,6 @@ const sections = [
     ),
   },
   {
-    id: 'section-9',
     title: 'Implementación',
     content: (
       <>
@@ -677,7 +606,30 @@ const DropdownSelDocs: React.FC = () => {
       });
     });
   }, []);
-  return <DocumentationTemplate sections={sections} />;
+
+  return (
+    <>
+      <ComponentHeader
+        title="Desplegable de selección"
+        description={[
+          'Los desplegables muestran una lista de opciones permitiendo que una persona usuaria pueda seleccionar una o varias en simultáneo. Una opción seleccionada puede usarse como una acción para filtrar u ordenar el contenido existente.',
+          <>
+            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;{' '}
+            <a
+              href="https://gcba.github.io/estandares/componentes/desplegables/desplegables_seleccion/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {' '}
+              enlace
+            </a>
+            .
+          </>,
+        ]}
+      />
+      <Tabs sectionDev={SECTIONS_DEV} />
+    </>
+  );
 };
 
 export default DropdownSelDocs;

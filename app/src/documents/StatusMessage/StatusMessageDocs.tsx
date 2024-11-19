@@ -1,33 +1,12 @@
 import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
-import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
-import MainDescription from '@/components/Template/MainDescription';
+import Tabs from '@/components/Tabs';
+import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import { SM_INFO, SM_SUCCESS, SM_WARNING, SM_DANGER, SM_INSTITUTIONAL } from './code-views';
 
-const sections = [
+const SECTIONS_DEV = [
   {
-    title: 'Mensaje de estado',
-    content: (
-      <>
-        <MainDescription description="Los mensajes de estado son comunicaciones que ayudan a las personas usuarias a tomar decisiones premeditadas. Informan que algo ha ocurrido o va a ocurrir y tal vez requieran de su acción. También, sirven para reducir la incertidumbre y evitar que los usuarios cometan errores." />
-        <p className="lead mb-4">
-          Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-          <a
-            href="https://gcba.github.io/estandares/componentes/mensajes-de-estado/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            enlace
-          </a>
-          .
-        </p>
-      </>
-    ),
-    h1: true,
-  },
-  {
-    id: 'section-1',
     title: 'Información',
     content: (
       <CodeBox codeHTML={SM_INFO}>
@@ -55,7 +34,6 @@ const sections = [
     ),
   },
   {
-    id: 'section-2',
     title: 'Éxito',
     content: (
       <CodeBox codeHTML={SM_SUCCESS}>
@@ -86,7 +64,6 @@ const sections = [
     ),
   },
   {
-    id: 'section-3',
     title: 'Advertencia',
     content: (
       <CodeBox codeHTML={SM_WARNING}>
@@ -117,7 +94,6 @@ const sections = [
     ),
   },
   {
-    id: 'section-4',
     title: 'Error',
     content: (
       <CodeBox codeHTML={SM_DANGER}>
@@ -148,7 +124,6 @@ const sections = [
     ),
   },
   {
-    id: 'section-5',
     title: 'Institucional',
     content: (
       <CodeBox codeHTML={SM_INSTITUTIONAL}>
@@ -174,7 +149,29 @@ const sections = [
 ];
 
 const StatusMessageDocs: React.FC = () => {
-  return <DocumentationTemplate sections={sections} />;
+  return (
+    <>
+      <ComponentHeader
+        title="Mensaje de estado"
+        description={[
+          'Los mensajes de estado son comunicaciones que ayudan a las personas usuarias a tomar decisiones premeditadas. Informan que algo ha ocurrido o va a ocurrir y tal vez requieran de su acción. También, sirven para reducir la incertidumbre y evitar que los usuarios cometan errores.',
+          <>
+            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;{' '}
+            <a
+              href="https://gcba.github.io/estandares/componentes/mensajes-de-estado/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {' '}
+              enlace
+            </a>
+            .
+          </>,
+        ]}
+      />
+      <Tabs sectionDev={SECTIONS_DEV} />
+    </>
+  );
 };
 
 export default StatusMessageDocs;

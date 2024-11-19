@@ -1,7 +1,7 @@
 import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
-import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
-import MainDescription from '@/components/Template/MainDescription';
+import Tabs from '@/components/Tabs';
+import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import {
   DROPDOWN,
@@ -12,29 +12,8 @@ import {
   DROPDOWN_MENU_RIGHT,
 } from './code-views';
 
-const sections = [
+const SECTIONS_DEV = [
   {
-    title: 'Desplegable de navegación',
-    content: (
-      <>
-        <MainDescription description="Este tipo de desplegables permite acceder a opciones de navegación y funcionalidades adicionales de manera organizada, desplegándolas de forma vertical u horizontal." />
-        <p className="lead mb-4">
-          Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-          <a
-            href="https://gcba.github.io/estandares/componentes/desplegables/desplegables_navegacion/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            enlace
-          </a>
-          .
-        </p>
-      </>
-    ),
-    h1: true,
-  },
-  {
-    id: 'section-1',
     title: 'Con icono',
     content: (
       <>
@@ -161,7 +140,6 @@ const sections = [
     ),
   },
   {
-    id: 'section-2',
     title: 'Disposición derecha',
     content: (
       <>
@@ -203,7 +181,6 @@ const sections = [
     ),
   },
   {
-    id: 'section-3',
     title: 'Con cascada',
     content: (
       <>
@@ -330,7 +307,29 @@ const sections = [
 ];
 
 const DropdownNavDocs: React.FC = () => {
-  return <DocumentationTemplate sections={sections} />;
+  return (
+    <>
+      <ComponentHeader
+        title="Desplegable de navegación"
+        description={[
+          'Este tipo de desplegables permite acceder a opciones de navegación y funcionalidades adicionales de manera organizada, desplegándolas de forma vertical u horizontal.',
+          <>
+            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;{' '}
+            <a
+              href="https://gcba.github.io/estandares/componentes/desplegables/desplegables_navegacion/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {' '}
+              enlace
+            </a>
+            .
+          </>,
+        ]}
+      />
+      <Tabs sectionDev={SECTIONS_DEV} />
+    </>
+  );
 };
 
 export default DropdownNavDocs;

@@ -26,9 +26,9 @@ const NavLayout = ({ items, className }: NavProps) => {
           return (
             <li className="nav-item" key={index}>
               {item.isDisabled ? (
-                <span className="nav-link disabled">{item.text}</span>
+                <span className="nav-link nav-link-lg disabled">{item.text}</span>
               ) : (
-                <Link href={item.url || '#'} className={`nav-link ${isActive ? 'active' : ''}`}>
+                <Link href={item.url || '#'} className={`nav-link nav-link-lg ${isActive ? 'active' : ''}`}>
                   {item.text}
                 </Link>
               )}

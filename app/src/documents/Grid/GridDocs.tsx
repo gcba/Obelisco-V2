@@ -2,51 +2,44 @@ import Image from 'next/image';
 
 import CodeBox from '@/components/CodeBox';
 import Tabs from '@/components/Tabs';
-import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
+import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import { FOUR_COLUMNS, LAYOUTS, ONE_COLUMN, THREE_COLUMNS, TWO_COLUMNS } from './code-views';
-
 
 const basePath = '/Obelisco-V2';
 
 const GridDocs: React.FC = () => {
   const SECTION_UX = [
     {
-      id: 'section-1',
       title: '¿Por qué usar una grilla?',
       content: (
         <>
-          <div className="pt-2">
-            <div className="row">
-              <div className="col-md-6 mb-4">
-                <span className="material-symbols-rounded">dashboard</span>
-                <p className="fw-bold m-0">Coherencia visual</p>
-                <p>Estandariza la disposición y alineación de los elementos de una interfaz.</p>
-              </div>
-              <div className="col-md-6 mb-4">
-                <span className="material-symbols-rounded">devices</span>
-                <p className="fw-bold m-0">Escalabilidad</p>
-                <p>Facilita la adaptación de la interfaz en diferentes dispositivos y resoluciones.</p>
-              </div>
-              <div className="col-md-6 mb-4">
-                <span className="material-symbols-rounded">ads_click</span>
-                <p className="fw-bold m-0">Familiaridad</p>
-                <p>Proporciona caminos claros e intuitivos a la persona usuaria al interactuar con el producto.</p>
-              </div>
-              <div className="col-md-6 mb-4">
-                <span className="material-symbols-rounded">visibility</span>
-                <p className="fw-bold m-0">Legibilidad</p>
-                <p>Genera jerarquías para la percepción de los contenidos en grupos o módulos.</p>
-              </div>
-            </div>
+          <div className="list-informative pb-3">
+            <ul className="list-informative-bullet">
+              <li>
+                <span className="fw-semibold">Coherencia visual</span>: Estandariza la disposición y alineación de los
+                elementos de una interfaz.
+              </li>
+              <li>
+                <span className="fw-semibold">Escalabilidad</span>: Facilita la adaptación de la interfaz en diferentes
+                dispositivos y resoluciones.
+              </li>
+              <li>
+                <span className="fw-semibold">Familiaridad</span>: Proporciona caminos claros e intuitivos a la persona
+                usuaria al interactuar con el producto.
+              </li>
+              <li>
+                <span className="fw-semibold">Legibilidad</span>: Genera jerarquías para la percepción de los contenidos
+                en grupos o módulos.{' '}
+              </li>
+            </ul>
           </div>
         </>
       ),
       h1: false,
     },
     {
-      id: 'section-2',
-      title: 'Fundamentos constructivos',
+      title: 'Fundamentos UX',
       content: (
         <>
           <p>
@@ -74,48 +67,31 @@ const GridDocs: React.FC = () => {
             .
           </p>
 
-          <div className="pt-4 mt-1">
-            <div className="row">
-              <div className="col-md-6 mb-4">
-                <p className="fw-bold m-0">Ley de Fitts</p>
-                <hr className="m-1" />
-                <p>
-                  Refuerza la disposición de los elementos interactivos, optimizando su colocación para que sean más
-                  fáciles y rápidos de alcanzar.
-                </p>
-              </div>
-              <div className="col-md-6 mb-4">
-                <p className="fw-bold m-0">Ley de Miller</p>
-                <hr className="m-1" />
-                <p>
-                  Favorece la agrupación y estructura del contenido de forma modular, permitiendo que la persona usuaria
-                  procese la información en bloques más manejables.
-                </p>
-              </div>
-              <div className="col-md-6 mb-4">
-                <p className="fw-bold m-0">Ley de Hick</p>
-                <hr className="m-1" />
-                <p>
-                  Permite organizar los contenidos de forma más clara, lo que reduce la complejidad visual y facilita
-                  las decisiones de la persona usuaria.
-                </p>
-              </div>
-              <div className="col-md-6 mb-4">
-                <p className="fw-bold m-0">Ley de Proximidad</p>
-                <hr className="m-1" />
-                <p>
-                  Facilita el control del espaciado entre elementos de manera coherente, reforzando las relaciones
-                  visuales y jerárquicas entre los componentes de la interfaz.
-                </p>
-              </div>
-            </div>
+          <div className="list-informative pb-3">
+            <ul className="list-informative-bullet">
+              <li>
+                <span className="fw-semibold">Ley de Fitts</span>: Estandariza la disposición y alineación de los
+                elementos de una interfaz.
+              </li>
+              <li>
+                <span className="fw-semibold">Ley de Miller</span>: Facilita la adaptación de la interfaz en diferentes
+                dispositivos y resoluciones.
+              </li>
+              <li>
+                <span className="fw-semibold">Ley de Hick</span>: Proporciona caminos claros e intuitivos a la persona
+                usuaria al interactuar con el producto.
+              </li>
+              <li>
+                <span className="fw-semibold">Ley de Proximidad</span>: Genera jerarquías para la percepción de los
+                contenidos en grupos o módulos.{' '}
+              </li>
+            </ul>
           </div>
         </>
       ),
       h1: false,
     },
     {
-      id: 'section-3',
       title: 'Anatomía',
       content: (
         <>
@@ -123,14 +99,16 @@ const GridDocs: React.FC = () => {
             Obelisco utiliza una grilla de columnas para las interfaces de sus productos digitales. La grilla se compone
             de:
           </p>
-          <ul>
+          <ul className="list-informative-bullet">
             <li>
               <strong>Columnas</strong>: es la unidad vertical de la grilla donde se colocan y organizan los contenidos.
             </li>
             <li>
-              <strong>Calles (Gutters en Inglés)</strong>: es el espacio que sirve para separar las columnas entre sí, y
-              por lo tanto, modulan el contenido de forma horizontal. En Obelisco, el ancho de las calles está definido
-              según cada <i>breakpoint</i>.
+              <strong>
+                Calles (<i>Gutters</i> en Inglés)
+              </strong>
+              : es el espacio que sirve para separar las columnas entre sí, y por lo tanto, modulan el contenido de
+              forma horizontal. En Obelisco, el ancho de las calles está definido según cada <i>breakpoint</i>.
             </li>
             <li>
               <strong>Márgenes</strong>: mantienen centrado el contenedor visible y evitan que elementos clave estén
@@ -151,7 +129,6 @@ const GridDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-4',
       title: 'Usos',
       content: (
         <>
@@ -220,7 +197,6 @@ const GridDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-5',
       title: 'Breakpoints',
       content: (
         <>
@@ -264,7 +240,7 @@ const GridDocs: React.FC = () => {
                 <tr>
                   <td>Large</td>
                   <td>&ge;992px</td>
-                  <td>960px</td>
+                  <td>720px</td>
                 </tr>
                 <tr>
                   <td>Extra large</td>
@@ -283,7 +259,6 @@ const GridDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-6',
       title: 'Dispositivos',
       content: (
         <>
@@ -292,7 +267,7 @@ const GridDocs: React.FC = () => {
             proceso de diseño e implementación.
           </p>
 
-          <ul>
+          <ul className="list-informative-bullet">
             <li>
               <strong>Desktop (1366&nbsp;x&nbsp;1024 px):</strong> 12 columnas
             </li>
@@ -317,7 +292,6 @@ const GridDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-7',
       title: 'Comportamiento',
       content: (
         <p>
@@ -328,8 +302,7 @@ const GridDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-8',
-      title: 'Páginas de ancho completo',
+      subtitle: 'Páginas de ancho completo',
       content: (
         <>
           <p>
@@ -349,8 +322,7 @@ const GridDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-9',
-      title: 'Páginas con una sección lateral',
+      subtitle: 'Páginas con una sección lateral',
       content: (
         <>
           <p>
@@ -384,8 +356,7 @@ const GridDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-10',
-      title: 'Páginas en dispositivos móviles',
+      subtitle: 'Páginas en dispositivos móviles',
       content: (
         <>
           <p>
@@ -406,7 +377,6 @@ const GridDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-11',
       title: 'Accesibilidad',
       content: (
         <p>
@@ -423,7 +393,6 @@ const GridDocs: React.FC = () => {
 
   const SECTION_DEV = [
     {
-      id: 'section-1',
       title: 'Layouts',
       content: (
         <>
@@ -448,7 +417,6 @@ const GridDocs: React.FC = () => {
       h1: false,
     },
     {
-      id: 'section-1',
       title: 'Columnas',
       content: (
         <>
@@ -478,7 +446,6 @@ const GridDocs: React.FC = () => {
       h1: false,
     },
     {
-      id: 'section-2',
       title: 'Disposiciones',
       content: (
         <>
@@ -571,17 +538,11 @@ const GridDocs: React.FC = () => {
 
   return (
     <>
-      <h1 className="mb-4">Grilla</h1>
-      <p className="lead">
-        La grilla es una estructura base que organiza elementos en una interfaz. Sirve para definir las secciones de un
-        producto digital y distribuir los elementos internos asegurando la legibilidad, la usabilidad y la accesibilidad
-        del contenido.
-      </p>
-      
-      <Tabs>
-        <DocumentationTemplate sections={SECTION_UX} />
-        <DocumentationTemplate sections={SECTION_DEV} />
-      </Tabs>
+      <ComponentHeader
+        title="Grilla"
+        description="La grilla es una estructura base que organiza elementos en una interfaz. Sirve para definir las secciones de un producto digital y distribuir los elementos internos asegurando la legibilidad, la usabilidad y la accesibilidad del contenido."
+      />
+      <Tabs sectionUx={SECTION_UX} sectionDev={SECTION_DEV} />
     </>
   );
 };

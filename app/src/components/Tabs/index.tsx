@@ -1,11 +1,13 @@
-"use client";
+'use client';
 
 import React, { useState } from 'react';
+
+import DocumentationTemplate, { Section } from '../Template/DocumentationTemplate';
 
 interface TabItemProps {
   id: string;
   title: string;
-  icon: string;
+  icon?: string;
   activeTab: string;
   setActiveTab: (id: string) => void;
 }
@@ -37,36 +39,70 @@ interface TabPanelProps {
 
 const TabPanel: React.FC<TabPanelProps> = ({ id, children, activeTab }) => {
   return (
-    <div className={`tab-pane fade ${activeTab === id ? 'show active' : ''}`} id={id} role="tabpanel" aria-labelledby={id}>
+    <div
+      className={`tab-pane fade ${activeTab === id ? 'show active' : ''}`}
+      id={id}
+      role="tabpanel"
+      aria-labelledby={id}
+    >
       {children}
     </div>
   );
 };
 
+interface CustomSectionProps {
+  sectionContent?: Section[];
+  id: string;
+  title: string;
+}
 interface TabsProps {
-  children: React.ReactNode[];
+  sectionUx?: Section[];
+  sectionDev?: Section[];
+  customSection?: CustomSectionProps;
 }
 
-const Tabs: React.FC<TabsProps> = ({ children }) => {
-  const [activeTab, setActiveTab] = useState("panel-content-1");
+const Tabs: React.FC<TabsProps> = ({ sectionUx, sectionDev, customSection }) => {
+  const [activeTab, setActiveTab] = useState(sectionUx ? 'panel-content-ux' : 'panel-content-dev');
 
   return (
     <div>
       <nav className="tabs-box" aria-label="Navegación por pestañas">
-        <ul className="nav nav-pills tabs fixed-width p-0" role="tablist">
-          <TabItem id="panel-content-1" title="Uso" icon="subject" activeTab={activeTab} setActiveTab={setActiveTab} />
-          <TabItem id="panel-content-2" title="Código" icon="code" activeTab={activeTab} setActiveTab={setActiveTab} />
+        <ul className="nav nav-pills tabs p-0" role="tablist">
+          {sectionUx && (
+            <TabItem id="panel-content-ux" title="Guía de uso" activeTab={activeTab} setActiveTab={setActiveTab} />
+          )}
+          {sectionDev && (
+            <TabItem id="panel-content-dev" title="Código" activeTab={activeTab} setActiveTab={setActiveTab} />
+          )}
+          {customSection && (
+            <TabItem
+              id={`panel-content-${customSection.id}`}
+              title={customSection.title}
+              activeTab={activeTab}
+              setActiveTab={setActiveTab}
+            />
+          )}
         </ul>
       </nav>
 
-      <hr className="my-0" />
+      <hr className="mt-0 mb-4" />
 
-      <div className="tab-content pt-4">
-        {children.map((child, index) => (
-          <TabPanel key={index} id={`panel-content-${index + 1}`} activeTab={activeTab}>
-            {child}
+      <div className="tab-content" style={{ paddingTop: '32px' }}>
+        {sectionUx && (
+          <TabPanel id={`panel-content-ux`} activeTab={activeTab}>
+            <DocumentationTemplate sections={sectionUx} type="ux" />
           </TabPanel>
-        ))}
+        )}
+        {sectionDev && (
+          <TabPanel id={`panel-content-dev`} activeTab={activeTab}>
+            <DocumentationTemplate sections={sectionDev} type="dev" />
+          </TabPanel>
+        )}
+        {customSection && customSection.sectionContent && (
+          <TabPanel id={`panel-content-${customSection.id}`} activeTab={activeTab}>
+            <DocumentationTemplate sections={customSection.sectionContent} type={customSection.title.toLowerCase()} />
+          </TabPanel>
+        )}
       </div>
     </div>
   );

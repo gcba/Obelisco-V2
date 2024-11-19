@@ -1,8 +1,8 @@
 import React from 'react';
 
 import CodeBox from '@/components/CodeBox';
-import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
-import MainDescription from '@/components/Template/MainDescription';
+import Tabs from '@/components/Tabs';
+import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import LinkClient from '../../components/LinkClient/index';
 import {
@@ -19,24 +19,8 @@ import {
 } from './code-views';
 
 const ButtonDocs: React.FC = () => {
-  const sections = [
+  const SECTIONS_DEV = [
     {
-      title: 'Botones',
-      content: (
-        <>
-          <MainDescription description="Los botones permiten iniciar acciones o navegar a otras páginas. Las etiquetas de los botones expresan qué acción ocurrirá cuando la persona usuaria interactúe con él." />
-          <p className="lead mb-4">
-            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-            <a href="https://gcba.github.io/estandares/componentes/boton/" target="_blank" rel="noopener noreferrer">
-              enlace.
-            </a>
-          </p>
-        </>
-      ),
-      h1: true,
-    },
-    {
-      id: 'section-1',
       title: 'Tipos',
       content: (
         <>
@@ -124,7 +108,6 @@ const ButtonDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-2',
       title: 'Tamaños',
       content: (
         <>
@@ -151,7 +134,6 @@ const ButtonDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-3',
       title: 'Estado Deshabilitado',
       content: (
         <>
@@ -193,7 +175,6 @@ const ButtonDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-4',
       title: 'Expandible',
       content: (
         <>
@@ -212,7 +193,6 @@ const ButtonDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-5',
       title: 'Con icono',
       content: (
         <>
@@ -260,7 +240,6 @@ const ButtonDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-6',
       title: 'Con spinner',
       content: (
         <>
@@ -354,7 +333,6 @@ const ButtonDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-7',
       title: 'Botón XS - Icono',
       content: (
         <>
@@ -385,7 +363,25 @@ const ButtonDocs: React.FC = () => {
     },
   ];
 
-  return <DocumentationTemplate sections={sections} />;
+  return (
+    <>
+      <ComponentHeader
+        title="Botones"
+        description={[
+          'Los botones permiten iniciar acciones o navegar a otras páginas. Las etiquetas de los botones expresan qué acción ocurrirá cuando la persona usuaria interactúe con él.',
+          <>
+            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;{' '}
+            <a href="https://gcba.github.io/estandares/componentes/boton/" target="_blank" rel="noopener noreferrer">
+              {' '}
+              enlace
+            </a>
+            .
+          </>,
+        ]}
+      />
+      <Tabs sectionDev={SECTIONS_DEV} />
+    </>
+  );
 };
 
 export default ButtonDocs;

@@ -1,34 +1,13 @@
 import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
-import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
-import MainDescription from '@/components/Template/MainDescription';
+import Tabs from '@/components/Tabs';
+import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import { BLOCK, BLOCK_BG, BLOCK_DESCRIPTION, BLOCK_PROGRESS } from './code-views';
 
 const BlockDocs: React.FC = () => {
-  const sections = [
+  const SECTIONS_DEV = [
     {
-      title: 'Bloque de trámite',
-      h1: true,
-      content: (
-        <>
-          <MainDescription description="Este componente se utiliza dentro de una página informativa de trámite e indica el estado del mismo. Desde él, la persona usuaria puede iniciar el trámite o ver en qué instancia se encuentra." />
-          <p className="lead mb-4">
-            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-            <a
-              href="https://gcba.github.io/estandares/componentes/bloque-de-tramite/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              enlace
-            </a>
-            .
-          </p>
-        </>
-      ),
-    },
-    {
-      id: 'section-1',
       title: 'Predeterminado',
       content: (
         <CodeBox codeHTML={BLOCK}>
@@ -46,7 +25,6 @@ const BlockDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-2',
       title: 'Con descripción',
       content: (
         <CodeBox codeHTML={BLOCK_DESCRIPTION}>
@@ -67,7 +45,6 @@ const BlockDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-3',
       title: 'Con barra de progreso',
       content: (
         <CodeBox codeHTML={BLOCK_PROGRESS}>
@@ -95,7 +72,6 @@ const BlockDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-4',
       title: 'Con fondo',
       content: (
         <CodeBox codeHTML={BLOCK_BG}>
@@ -119,7 +95,25 @@ const BlockDocs: React.FC = () => {
 
   return (
     <>
-      <DocumentationTemplate sections={sections} />
+      <ComponentHeader
+        title="Bloque de trámite"
+        description={[
+          'Este componente se utiliza dentro de una página informativa de trámite e indica el estado del mismo. Desde él, la persona usuaria puede iniciar el trámite o ver en qué instancia se encuentra.',
+          <>
+            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;{' '}
+            <a
+              href="https://gcba.github.io/estandares/componentes/bloque-de-tramite/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {' '}
+              enlace
+            </a>
+            .
+          </>,
+        ]}
+      />
+      <Tabs sectionDev={SECTIONS_DEV} />
     </>
   );
 };

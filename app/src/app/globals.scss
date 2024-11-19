@@ -271,6 +271,14 @@ hr {
   }
 }
 
+code {
+  font-size: 1rem;
+  color: #9100CC;
+}
+pre {
+  background: #002733 !important;
+}
+
 //Contenedor para mostrar variantes de componente header
 .header-box-sizing {
   transform: scale(0.5);

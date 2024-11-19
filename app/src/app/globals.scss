@@ -210,6 +210,10 @@ hr {
   align-items: center;
   border-bottom: 2px solid #e6ebf0;
 
+  &:last-of-type {
+    border-bottom: none;
+  }
+
   .box-color-rectangle {
     width: 3rem;
     height: 3rem;
@@ -218,6 +222,10 @@ hr {
   .box-color-title,
   .box-color-hex {
     margin-bottom: 0;
+    &.fixed {
+      width: 90px;
+      min-width: 90px;
+    }
   }
 }
 

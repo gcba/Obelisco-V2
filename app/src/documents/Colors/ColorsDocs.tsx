@@ -101,7 +101,7 @@ const ColorsDocs: React.FC = () => {
             </span>
             <span>No podés acceder a estos colores, sólo están como referencia.</span>
           </p>
-          <div className="d-flex gap-5 flex-wrap pb-5">
+          <div className="d-flex flex-wrap pb-5" style={{columnGap: '32px', rowGap: '48px'}}>
             <PalletteColor arrayColor={yellowArray} title="Amarillo (Yellow)" titleName="yellow" />
             <PalletteColor arrayColor={orangeArray} title="Naranja (Orange)" titleName="orange" />
             <PalletteColor arrayColor={redArray} title="Rojo (Red)" titleName="red" />
@@ -324,26 +324,19 @@ const ColorsDocs: React.FC = () => {
         <div className="list-informative pb-3">
           <ul className="list-informative-bullet">
             <li>
-              <span className="fw-semibold">Accesibilidad</span>: todas las combinaciones de color definidas deben pasar
-              los requerimientos de contraste mínimos de accesibilidad especificados por WCAG 2.2.{' '}
+              <span className="fw-semibold">Accesibilidad</span>: todas las combinaciones de color definidas deben pasar los requerimientos de contraste mínimos de accesibilidad especificados por WCAG 2.2.{' '}
             </li>
             <li>
-              <span className="fw-semibold">Coherencia</span>: se deben mantener los significados estipulados para cada
-              color. Por ejemplo, el color rojo se relaciona con peligro, y el verde con éxito.{' '}
+              <span className="fw-semibold">Coherencia</span>: se deben mantener los significados estipulados para cada color. Por ejemplo, el color rojo se relaciona con peligro, y el verde con éxito.{' '}
             </li>
             <li>
-              <span className="fw-semibold">Funcionalidad</span>: nuestro sistema propone que los colores estén atados a
-              un propósito y significado específico. No deben utilizarse de forma arbitraria y no tienen un objetivo
-              decorativo.{' '}
+              <span className="fw-semibold">Funcionalidad</span>: nuestro sistema propone que los colores estén atados a un propósito y significado específico. No deben utilizarse de forma arbitraria y no tienen un objetivo decorativo. {' '}
             </li>
             <li>
-              <span className="fw-semibold">Moderación</span>: el uso excesivo de color en una interfaz puede reducir la
-              claridad de la comunicación y distraer a las personas usuarias. Recomendamos dosificar el color sólo para
-              resaltar información o acciones clave.{' '}
+              <span className="fw-semibold">Moderación</span>: el uso excesivo de color en una interfaz puede reducir la claridad de la comunicación y distraer a las personas usuarias. Recomendamos dosificar el color sólo para resaltar información o acciones clave.{' '}
             </li>
             <li>
-              <span className="fw-semibold">Flexibilidad</span>: trabajamos con variables para poder generar un sistema
-              robusto y escalable.{' '}
+              <span className="fw-semibold">Flexibilidad</span>: trabajamos con variables para poder generar un sistema robusto y escalable. {' '}
             </li>
           </ul>
         </div>
@@ -354,9 +347,7 @@ const ColorsDocs: React.FC = () => {
       content: (
         <>
           <p>
-            Los colores de nuestra paleta de color fueron seleccionados y testeados para poder cumplir con los
-            requerimientos de accesibilidad de WCAG 2.2 en contraste y uso del color. Evitá usar colores por fuera de
-            esta paleta, ya que puede generar experiencias inaccesibles para algunas personas usuarias.{' '}
+            Los colores de nuestra paleta fueron seleccionados y testeados para poder cumplir con los requerimientos de accesibilidad de WCAG 2.2 en contraste y uso del color. Evitá usar colores por fuera de esta paleta, ya que puede generar experiencias inaccesibles para algunas personas usuarias.{' '}
           </p>
         </>
       ),
@@ -366,10 +357,7 @@ const ColorsDocs: React.FC = () => {
       content: (
         <div>
           <p>
-            En la sección de paleta vas a encontrar muestras de cada color con una etiqueta del nivel de conformidad que
-            pasa la combinación de texto y fondo. Recomendamos siempre utilizar combinaciones AAA para garantizar el
-            máximo contraste posible. Si encontrás muestras que no tienen ni la etiqueta AA o AAA, es porque esa
-            combinación no pasa accesibilidad y por lo tanto debe evitarse su uso.
+            En la sección de paleta vas a encontrar muestras de cada color con una etiqueta del nivel de conformidad que pasa la combinación de texto y fondo. Recomendamos siempre utilizar combinaciones AAA para garantizar el máximo contraste posible. Si encontrás muestras que no tienen ni la etiqueta AA o AAA, es porque esa combinación no pasa accesibilidad y, por lo tanto, debe evitarse su uso.
           </p>
           <img src={`${basePath}/images/colors/color_1.svg`} className="w-100" alt="Combinaciones de texto y fondo" />
         </div>
@@ -380,10 +368,7 @@ const ColorsDocs: React.FC = () => {
       content: (
         <div>
           <p>
-            El color no debe usarse como el único medio para transmitir información, indicar una acción, generar una
-            respuesta o distinguir un elemento visual. Dado que muchas personas usuarias tienen dificultades para
-            percibir el color, es importante reforzar el mensaje añadiendo otros elementos. Un ejemplo puede ser agregar
-            texto de soporte en un campo de formulario con error, además de cambiar el color de su borde por el rojo.{' '}
+            El color no debe usarse como el único medio para transmitir información, indicar una acción, generar una respuesta o distinguir un elemento visual. Dado que muchas personas usuarias tienen dificultades para percibir el color, es importante reforzar el mensaje añadiendo otros elementos. Un ejemplo puede ser agregar texto de soporte en un campo de formulario con error, además de cambiar el color de su borde por el rojo. {' '}
           </p>
         </div>
       ),
@@ -393,10 +378,7 @@ const ColorsDocs: React.FC = () => {
       content: (
         <div>
           <p>
-            Un nivel de contraste AAA implica que la presentación de texto e imágenes de texto tiene un ratio de
-            contraste de por lo menos 7:1, con excepción de textos grandes que deben tener un ratio de 4.5:1. También se
-            encuentran exentos los textos o imágenes que sean incidentales (es decir, que son parte de componentes
-            inactivos de la interfaz), los puramente decorativos y los logotipos.{' '}
+            Un nivel de contraste AAA implica que la presentación de texto e imágenes de texto tiene un ratio de contraste de por lo menos 7:1, con excepción de textos grandes que deben tener un ratio de 4.5:1. También se encuentran exentos los textos o imágenes que sean incidentales (es decir, que son parte de componentes inactivos de la interfaz), los puramente decorativos y los logotipos.{' '}
           </p>
         </div>
       ),
@@ -406,8 +388,7 @@ const ColorsDocs: React.FC = () => {
       content: (
         <div>
           <p>
-            Los componentes de una interfaz, sus estados, y los objetos gráficos deben tener como mínimo un ratio de
-            contraste de 3:1 con respecto a los colores adyacentes.{' '}
+          Los componentes de una interfaz, sus estados, y los objetos gráficos deben tener como mínimo un ratio de contraste de 3:1 con respecto a los colores adyacentes.{' '}
           </p>
           <p>Los criterios de éxito que tenemos en cuenta son:</p>
           <div className="list-link pb-3">
@@ -432,9 +413,7 @@ const ColorsDocs: React.FC = () => {
       content: (
         <div>
           <p>
-            Incluye 10 colores, cada uno con 11 tonalidades. Nuestra paleta se compone de colores de marca relacionados
-            a la Ciudad de Buenos Aires y de colores que cumplen un rol específico dentro de la interfaz a nivel
-            comunicacional.{' '}
+            Incluye 10 colores, cada uno con 11 tonalidades. Nuestra paleta se compone de colores de marca relacionados a la Ciudad de Buenos Aires y de colores que cumplen un rol específico dentro de la interfaz a nivel comunicacional.{' '}
           </p>
         </div>
       ),
@@ -449,27 +428,21 @@ const ColorsDocs: React.FC = () => {
           <div className="list-informative">
             <ul className="list-informative-bullet">
               <li>
-                <span className="fw-semibold">Color base</span>: es el código hexadecimal puro y no se toma aún dentro
-                de la arquitectura como una capa formal.
+                <span className="fw-semibold">Color base</span>: es el código hexadecimal puro y no se toma aún dentro de la arquitectura como una capa formal.
               </li>
               <li>
-                <span className="fw-semibold">Capa primitiva</span>: contiene todos los códigos hexadecimales de la
-                paleta y los clasifica por nombre y tonalidad del color. Esta capa se encuentra oculta. Los colores
-                primitivos sólo pueden utilizarse directamente en el diseño de ilustraciones decorativas.
+                <span className="fw-semibold">Capa primitiva</span>: contiene todos los códigos hexadecimales de la paleta y los clasifica por nombre y tonalidad del color. Esta capa se encuentra oculta. Los colores primitivos sólo pueden utilizarse directamente en el diseño de ilustraciones decorativas.
               </li>
               <li>
-                <span className="fw-semibold">Capa semánticos</span>: asigna roles a los colores para textos, fondos,
-                bordes y estados globales.
+                <span className="fw-semibold">Capa semánticos</span>: asigna roles a los colores para textos, fondos, bordes y estados globales.
               </li>
               <li>
-                <span className="fw-semibold">Capa funcional</span>: asigna variables a roles dentro de componentes
-                específicos, como por ejemplo el fondo de un botón o el borde de una alerta.
+                <span className="fw-semibold">Capa funcional</span>: asigna variables a roles dentro de componentes específicos, como por ejemplo el fondo de un botón o el borde de una alerta.
               </li>
             </ul>
           </div>
           <p className="mt-4">
-            De esta forma generamos un sistema con una estructura intuitiva y fácil de utilizar en los diseños,
-            permitiendo conocer el rol o la función del color ya desde su nomenclatura.{' '}
+            De esta forma generamos un sistema con una estructura intuitiva y fácil de utilizar en los diseños, permitiendo conocer el rol o la función del color ya desde su nomenclatura.{' '}
           </p>
         </div>
       ),
@@ -479,8 +452,7 @@ const ColorsDocs: React.FC = () => {
       content: (
         <div>
           <p>
-            La paleta de color está disponible en Figma en forma de variables. El uso de variables facilita el
-            mantenimiento y permite trabajar en un sistema escalable y robusto.
+            La paleta de color está disponible en Figma en forma de variables. El uso de variables facilita el mantenimiento y permite trabajar en un sistema escalable y robusto. 
           </p>
           <img src={`${basePath}/images/colors/color_2.svg`} className="w-100" alt="Variables en Figma" />
         </div>

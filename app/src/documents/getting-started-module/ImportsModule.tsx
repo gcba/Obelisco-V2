@@ -102,10 +102,16 @@ const sections = [
         </SyntaxHighlighter>
 
         <br />
-        <p>Es importante que incluyas el import a Material Symbols en tu hoja de estilos si lo usas via NPM</p>
+        <p>Es importante que incluyas el import a Material Symbols en tu hoja de estilos si lo usas via NPM, asi como también los estilos referidos al fill de los íconos.</p>
 
         <SyntaxHighlighter language="scss" style={dracula} wrapLongLines>
-          {`@import "material-symbols/index.css";`}
+        {`
+@import "material-symbols/index.css";
+
+.material-symbols-rounded {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+            `}
         </SyntaxHighlighter>
 
         <br />

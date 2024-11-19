@@ -44,8 +44,8 @@ export const FOOTER = `<h2 class="sr-only">Navegación de pie de página</h2>
         </li>
         <li class="list-inline-item redes-items">
           <a href="https://x.com/gcba">
-            <i class="o-icon bx bxl-twitter"></i>
-            Twitter
+            <img src="rrss_x.svg" class="o-icon" alt="x" />
+            X
           </a>
         </li>
         <li class="list-inline-item redes-items">
@@ -269,8 +269,8 @@ export const FOOTER_INDICATOR = `<h2 class="sr-only">Navegación de pie de pági
         </li>
         <li class="list-inline-item redes-items">
           <a href="https://x.com/gcba">
-            <i class="o-icon bx bxl-twitter"></i>
-            Twitter
+            <img src="rrss_x.svg" class="o-icon" alt="x" />
+            X
           </a>
         </li>
         <li class="list-inline-item redes-items">

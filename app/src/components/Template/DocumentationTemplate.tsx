@@ -10,6 +10,7 @@ export interface Section {
   id?: string;
   title?: string | React.ReactNode;
   subtitle?: string;
+  subtitleScrollspy?: string | React.ReactNode;
   content?: React.ReactNode;
   description?: string;
   h1?: boolean;

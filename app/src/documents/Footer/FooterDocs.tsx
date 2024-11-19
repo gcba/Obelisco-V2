@@ -57,8 +57,8 @@ const FooterDocs: React.FC = () => {
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://x.com/gcba">
-                        <i className="o-icon bx bxl-twitter"></i>
-                        Twitter
+                      <img src={`${basePath}/images/rrss_x.svg`} className="o-icon" alt="x" />
+                        X
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
@@ -270,8 +270,8 @@ const FooterDocs: React.FC = () => {
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://x.com/gcba">
-                        <i className="o-icon bx bxl-twitter"></i>
-                        Twitter
+                      <img src={`${basePath}/images/rrss_x.svg`} className="o-icon" alt="x" />
+                        X
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">

@@ -6,7 +6,7 @@ $padding-icon-institutional: 4.05rem;
 $width-icon-institutional: 7.553rem;
 $height-icon-institutional: 4rem;
 $status-size: 4rem;
-$status-padding-top: 3.55rem;
+$status-padding-top: 4rem;
 $status-title-padding: 1rem;
 $status-margin-bottom: 1rem;
 $status-list-margin-bottom: 3rem;
@@ -99,6 +99,9 @@ $status-icons: map-merge(
       margin-bottom: $status-list-item-margin-bottom;
       color: $blue-900;
     }
+  }
+  .status-list.list-informative {
+    padding-left: 0;
   }
 
   @include media-breakpoint-down(md) {

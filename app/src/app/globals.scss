@@ -102,6 +102,10 @@ hr {
               }
             }
           }
+          .custom-scrollspy-color {
+            outline: 2px solid #101e37;
+            outline-offset: 3px;
+          }
         }
       }
     }
@@ -111,6 +115,12 @@ hr {
       min-height: calc(100vh - 80px);
     }
   }
+}
+.custom-scrollspy-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0.25rem;
 }
 // End Styles for component Scrollspy
 

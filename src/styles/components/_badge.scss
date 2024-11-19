@@ -31,14 +31,16 @@ $badge-bg-theme-color: (
       outline: 0.125rem solid $blue-700;
       background-color: map-get($badge-bg-theme-color, $color);
       text-decoration: underline;
-      text-decoration-thickness: 1px;
+      text-decoration-thickness: 2px;
     }
 
     &:focus,
     &.focus {
-      background-color: $light;
+      background-color: map-get($badge-bg-theme-color, $color);
       box-shadow: $focus-box-shadow;
       outline: $outline-transparent;
+      color: $body-color;
+      text-decoration: none;
     }
   }
 }

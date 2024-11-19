@@ -1,5 +1,5 @@
 // Custom variables
-$accordion-margin: 0.75rem;
+$accordion-margin: 1rem;
 $accordion-button-padding: 1rem 4rem 1rem 1.5rem;
 
 //Icono de colapsable
@@ -159,7 +159,8 @@ $accordion-button-collapsed-icon: url('data:image/svg+xml,<svg xmlns="http://www
     padding: 1rem 1.5rem;
     border: none;
 
-    p:last-of-type {
+    p:last-child,
+    ul:last-child {
       margin-bottom: 0;
     }
 

@@ -9,11 +9,7 @@ const sections = [
     content: (
       <>
         <p>
-          Disposición de{' '}
-          <a href="https://gcba.github.io/Obelisco-V2/components/access#section-5" target="_blank">
-            Accesos
-          </a>
-          .
+          Disposición de <Link href="/components/access#section-5">Accesos</Link>.
         </p>
 
         <ul className="docs-list">
@@ -41,12 +37,7 @@ const sections = [
     content: (
       <>
         <p>
-          Estas son las clases de nuestra paleta de colores{' '}
-          <a target="_blank" href="https://gcba.github.io/Obelisco-V2/components/colors">
-            {' '}
-            theme-colors
-          </a>
-          .
+          Estas son las clases de nuestra paleta de <Link href="/components/colors"> colores principales</Link>.
         </p>
         <ul className="docs-list">
           <li>
@@ -237,10 +228,7 @@ const sections = [
       <>
         {/* Calendario */}
         <p>
-          Disposición de{' '}
-          <a href="https://gcba.github.io/Obelisco-V2/components/calendar#section-8" target="_blank">
-            Calendario
-          </a>
+          Disposición de <Link href="/components/calendar#section-8">Calendario</Link>
         </p>
         <ul className="docs-list">
           <li>
@@ -257,8 +245,7 @@ const sections = [
       <>
         {/* Destacado */}
         <p>
-          Disposición de{' '}
-          <a href="https://gcba.github.io/Obelisco-V2/components/highlighted#section-5">Destacado Conjunto</a>.
+          Disposición de <Link href="/components/highlighted#section-5">Destacado Conjunto</Link>.
         </p>
 
         <ul className="docs-list">
@@ -808,10 +795,7 @@ const sections = [
     content: (
       <>
         <p>
-          Disposición de{' '}
-          <a href="https://gcba.github.io/Obelisco-V2/components/cards#section-11" target="_blank">
-            Tarjetas
-          </a>{' '}
+          Disposición de <Link href="/components/cards#section-11">Tarjetas</Link>{' '}
         </p>
 
         <ul className="docs-list">

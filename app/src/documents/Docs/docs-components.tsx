@@ -5,6 +5,16 @@ import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 
 const sections = [
   {
+    title: 'Accesibilidad',
+    content: (
+      <ul className="docs-list">
+        <li>
+          Se crea la clase <code>.sr-only</code> que extiende de la clase <code>.visually-hidden</code>.{' '}
+        </li>
+      </ul>
+    ),
+  },
+  {
     title: 'Accesos',
     content: (
       <ul className="docs-list">
@@ -159,48 +169,123 @@ const sections = [
   {
     title: 'Colores',
     content: (
-      <div id="colores" className="container">
-        <div className="row">
-          {/*Primera columna*/}
-          <div className="col">
-            <h3 className="headline-md">Clase:</h3>
-            <hr />
-            <p>bg-primary</p>
-            <p>bg-secondary</p>
-            <p>bg-danger</p>
-            <p>bg-success</p>
-            <p>bg-warning</p>
-            <p>bg-info</p>
-            <p>bg-light</p>
-            <p>bg-dark</p>
-          </div>
-          {/*Segunda columna*/}
-          <div className="col">
-            <h3 className="headline-md">Nuevo valor:</h3>
-            <hr />
-            <p>#336ACC</p>
-            <p>#101E37</p>
-            <p>#CC3333</p>
-            <p>#26874A</p>
-            <p>#FF9500</p>
-            <p>#0086AD</p>
-            <p>#F3F6F9</p>
-            <p>#002733</p>
-          </div>
-          {/*Tercera columna*/}
-          <div className="col">
-            <h3 className="headline-md">Antiguo valor:</h3>
-            <hr />
-            <p>#FFA82E</p>
-            <p>#5C6A7A</p>
-            <p>#C93B3B</p>
-            <p>#26874A</p>
-            <p>#FFA82E</p>
-            <p>#007BC7</p>
-            <p>#F3F6F9</p>
-            <p>#38485C</p>
-          </div>
-        </div>
+      <div className="responsive-scroll mt-4 mb-5" tabIndex={0}>
+        <table className="table">
+          <thead>
+            <tr>
+              <th scope="col" className="tb-text">
+                <span className="th-title">Clase</span>
+              </th>
+              <th scope="col" className="tb-text">
+                <span className="th-title">Nuevo valor</span>
+              </th>
+              <th scope="col" className="tb-text">
+                <span className="th-title">Antiguo valor</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span>bg-primary</span>
+              </td>
+              <td>
+                <span>#336ACC</span>
+              </td>
+              <td>
+                <span>#FFA82E</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>bg-secondary</span>
+              </td>
+              <td>
+                <span>#101E37</span>
+              </td>
+              <td>
+                <span>#5C6A7A</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>bg-tertiary</span>
+              </td>
+              <td>
+                <span>#005E7A</span>
+              </td>
+              <td>
+                <span>-</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>bg-danger</span>
+              </td>
+              <td>
+                <span>#CC3333</span>
+              </td>
+              <td>
+                <span>#C93B3B</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>bg-success</span>
+              </td>
+              <td>
+                <span>#26874A</span>
+              </td>
+              <td>
+                <span>#26874A</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>bg-warning</span>
+              </td>
+              <td>
+                <span>#FF9500</span>
+              </td>
+              <td>
+                <span>#FFA82E</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>bg-info</span>
+              </td>
+              <td>
+                <span>#0086AD</span>
+              </td>
+              <td>
+                <span>#007BC7</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>bg-light</span>
+              </td>
+              <td>
+                <span>#F3F6F9</span>
+              </td>
+              <td>
+                <span>#F3F6F9</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>bg-dark</span>
+              </td>
+              <td>
+                <span>#002733</span>
+              </td>
+              <td>
+                <span>#38485C</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     ),
   },
@@ -362,53 +447,84 @@ const sections = [
   {
     title: 'Grilla',
     content: (
-      <div id="grilla" className="container">
-        <div className="row">
-          {/*Primera columna*/}
-          <div className="col col-auto">
-            <h3 className="headline-md">viewport</h3>
-            <hr />
-            <p>Menos de 576px</p>
-            <p>Entre 576px y 767px</p>
-            <p>Entre 768px y 991px</p>
-            <p>Entre 992px y 1199px</p>
-            <p>Entre 1200px y 1399px</p>
-            <p>Mayor a 1400px</p>
-          </div>
-          {/*Segunda columna*/}
-          <div className="col col-auto">
-            <h3 className="headline-md">max-width</h3>
-            <hr />
-            <p>100%</p>
-            <p>540px</p>
-            <p>720px</p>
-            <p>960px</p>
-            <p>1140px</p>
-            <p>1320px</p>
-          </div>
-          {/* Tercera columna*/}
-          <div className="col col-auto">
-            <h3 className="headline-md">gap</h3>
-            <hr />
-            <p>32px</p>
-            <p>32px</p>
-            <p>24px</p>
-            <p>24px</p>
-            <p>32px</p>
-            <p>32px</p>
-          </div>
-          {/* Cuarta columna*/}
-          <div className="col col-auto">
-            <h3 className="headline-md">área diseñable</h3>
-            <hr />
-            <p>100%</p>
-            <p>508px</p>
-            <p>696px</p>
-            <p>936px</p>
-            <p>1108px</p>
-            <p>1288px</p>
-          </div>
-        </div>
+      <div className="responsive-scroll mt-4 mb-5" tabIndex={0}>
+        <table className="table">
+          <thead>
+            <tr>
+              <th scope="col" className="tb-text">
+                Breakpoint
+              </th>
+              <th scope="col" className="tb-text">
+                Viewport
+              </th>
+              <th scope="col" className="tb-text">
+                Ancho máximo
+              </th>
+              <th scope="col" className="tb-text">
+                Espaciado
+              </th>
+              <th scope="col" className="tb-text">
+                Área diseñable
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Extra small <code>(xs)</code>
+              </td>
+              <td>&lt;576px</td>
+              <td>100%</td>
+              <td>16px</td>
+              <td>100%</td>
+            </tr>
+            <tr>
+              <td>
+                Small <code>(sm)</code>
+              </td>
+              <td>&ge;576px</td>
+              <td>540px</td>
+              <td>16px</td>
+              <td>508px</td>
+            </tr>
+            <tr>
+              <td>
+                Medium <code>(md)</code>
+              </td>
+              <td>&ge;768px</td>
+              <td>720px</td>
+              <td>24px</td>
+              <td>696px</td>
+            </tr>
+            <tr>
+              <td>
+                Large <code>(lg)</code>
+              </td>
+              <td>&ge;992px</td>
+              <td>720px</td>
+              <td>24px</td>
+              <td>696px</td>
+            </tr>
+            <tr>
+              <td>
+                Extra large <code>(xl)</code>
+              </td>
+              <td>&ge;1200px</td>
+              <td>1140px</td>
+              <td>32px</td>
+              <td>1108px</td>
+            </tr>
+            <tr>
+              <td>
+                Extra extra large <code>(xxl)</code>
+              </td>
+              <td>&ge;1400px</td>
+              <td>1140px</td>
+              <td>32px</td>
+              <td>1108px</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     ),
   },
@@ -637,35 +753,6 @@ const sections = [
       </ul>
     ),
   },
-  {
-    title: 'Accesibilidad',
-    content: (
-      <ul className="docs-list">
-        <li>
-          Se crea la clase <code>.sr-only</code> que extiende de la clase <code>.visually-hidden</code>.{' '}
-        </li>
-      </ul>
-    ),
-  },
-  {
-    title: 'Comenzar a usar componentes',
-    content: (
-      <>
-        <p>
-          ¿Quieres comenzar a utilizar nuestros componentes? Puedes copiar el HTML disponible en la siguiente sección:
-        </p>
-        <div className="col-12 col-lg-7 ms-1">
-          <Link href="/components" className="list-group-item item-sm">
-            <span className="material-symbols-rounded o-icon">web_traffic</span>
-            <div className="access-content">
-              <span className="access-title">Componentes</span>
-              <p className="access-text">HTML disponible</p>
-            </div>
-          </Link>
-        </div>
-      </>
-    ),
-  },
 ];
 
 const UpdateComponents: React.FC = () => {
@@ -681,7 +768,13 @@ const UpdateComponents: React.FC = () => {
       <ComponentHeader
         title="Cambios en componentes"
         description={[
-          'En esta sección encontraremos la documentación sobre los cambios que se hicieron sobre los componentes en la nueva versión de Obelisco.',
+          'En esta sección se encuentra la documentación de los cambios que se hicieron sobre los componentes en la nueva versión de Obelisco.',
+          <>
+            <p>
+              Si querés comenzar a utilizar nuestros componentes, puedes copiar el HTML disponible en la sección{' '}
+              <Link href="/components">Elementos</Link>.
+            </p>
+          </>,
         ]}
         divider={true}
       />

@@ -771,7 +771,7 @@ const UpdateComponents: React.FC = () => {
           'En esta sección se encuentra la documentación de los cambios que se hicieron sobre los componentes en la nueva versión de Obelisco.',
           <>
             <p>
-              Si querés comenzar a utilizar nuestros componentes, puedes copiar el HTML disponible en la sección{' '}
+              Si querés comenzar a utilizar nuestros componentes, puedes visualizar el HTML disponible en la sección{' '}
               <Link href="/components">Elementos</Link>.
             </p>
           </>,

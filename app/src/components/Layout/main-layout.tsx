@@ -76,7 +76,7 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       <div className="row v-height-100" style={{ paddingTop: '32px' }}>
         <div className="col-3 d-none d-xl-block pe-0">
           {pathname.includes('/components') && (
-            <div className="nav-left sticky-nav py-1">
+            <div className="nav-left sticky-nav pb-1">
               <div className="nav-left-box-title">
                 <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Estilos</p>
               </div>

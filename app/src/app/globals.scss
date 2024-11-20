@@ -110,9 +110,9 @@ hr {
       }
     }
   }
-  .box-content .box-section:last-child {
+  .box-content .box-section:last-of-type {
     @media screen and (min-width: 992px) {
-      min-height: calc(100vh - 80px);
+      min-height: 40vh;
     }
   }
 }

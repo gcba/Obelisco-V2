@@ -35,13 +35,6 @@ import {
 
 const basePath = '/Obelisco-V2';
 
-const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth',
-  });
-};
-
 const ColorsDocs: React.FC = () => {
   const SECTION_DEV = [
     {
@@ -308,14 +301,6 @@ const ColorsDocs: React.FC = () => {
         <div>
           <p>Estos colores se utilizan únicamente dentro del componente Pie de página (footer).</p>
           <PalletteTable arrayTableColors={FOOTER_COLORS} />
-          <div className="text-end me-1">
-            <button className="btn btn-outline-tertiary btn-lg" type="button" onClick={scrollToTop}>
-              <span className="material-symbols-rounded" aria-hidden="true">
-                arrow_upward
-              </span>
-              Volver arriba
-            </button>
-          </div>
         </div>
       ),
     },

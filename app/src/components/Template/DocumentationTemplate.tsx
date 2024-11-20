@@ -4,6 +4,7 @@ import { Scrollspy } from '@makotot/ghostui';
 import React, { useEffect, useState, useMemo, useCallback } from 'react';
 
 import ScrollspySubtitle from '../ScrollspyTitle';
+import ScrollTopButton from './ScrollTopButton';
 import SimpleText from './SimpleText';
 
 export interface Section {
@@ -76,6 +77,9 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
                   {section.content && <div style={{ marginBottom: '32px' }}>{section.content}</div>}
                 </section>
               ))}
+              <div className='pt-5' style={{paddingBottom: '32px'}}>
+                <ScrollTopButton />
+              </div>
             </div>
           </article>
 

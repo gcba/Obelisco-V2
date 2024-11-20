@@ -254,7 +254,7 @@ const SECTIONS_UX = [
         <p className="mb-4">
           Utilizamos diferentes formatos de texto para añadir claridad o enfatizar un mensaje. Para más información
           sobre usos y convenciones, podés consultar nuestra{' '}
-          <a href="" target="_blank">
+          <a href="https://gcba.github.io/estandares/contenido/comunicar-con-claridad/" target="_blank">
             guía de contenidos
           </a>
           .{' '}

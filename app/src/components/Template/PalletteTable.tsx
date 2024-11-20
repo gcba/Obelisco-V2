@@ -18,13 +18,13 @@ const PalletteTable: React.FC<PalletteTableProps> = ({ arrayTableColors }) => {
       <table className="table">
         <thead>
           <tr>
-            <th scope="col" style={{ width: '25%' }} className="tb-number">
+            <th scope="col" style={{ width: '24%', minWidth: "fit-content" }} className="tb-text">
               <span className="th-title">Base</span>
             </th>
-            <th scope="col" style={{ width: '30%' }} className="tb-number">
+            <th scope="col" style={{ width: '29%', minWidth: "fit-content" }} className="tb-text">
               <span className="th-title">Variable</span>
             </th>
-            <th scope="col" style={{ width: '45%' }} className="tb-text">
+            <th scope="col" style={{ width: '47%', minWidth: "fit-content" }} className="tb-text">
               <span className="th-title">Uso</span>
             </th>
           </tr>
@@ -33,12 +33,12 @@ const PalletteTable: React.FC<PalletteTableProps> = ({ arrayTableColors }) => {
           {arrayTableColors.map(({ base, hex, variable, use, customBorder }) => (
             <tr key={variable}>
               <td className="text-right">
-                <span className="bg-light p-2 rounded-3 ">
+                <div className="bg-light p-2 rounded-3 d-inline-block">
                   <span>{base}</span>
-                </span>
+                </div>
               </td>
               <td>
-                <div className="d-flex gap-2 align-items-center pe-3">
+                <div className="d-flex gap-2 align-items-center">
                   <span
                     className="rounded-1"
                     style={{

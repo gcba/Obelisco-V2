@@ -41,7 +41,7 @@ const GridDocs: React.FC = () => {
       title: 'Fundamentos UX',
       content: (
         <>
-          <p>
+          <p className='pb-3'>
             Creamos una grilla que sigue{' '}
             <a
               href="https://gcba.github.io/estandares/creamos_experiencias/dise%C3%B1o/"
@@ -97,7 +97,7 @@ const GridDocs: React.FC = () => {
             Obelisco utiliza una grilla de columnas para las interfaces de sus productos digitales. La grilla se compone
             de:
           </p>
-          <ul className="list-informative-bullet">
+          <ul className="list-informative-bullet mb-3">
             <li>
               <strong>Columnas</strong>: es la unidad vertical de la grilla donde se colocan y organizan los contenidos.
             </li>
@@ -114,15 +114,13 @@ const GridDocs: React.FC = () => {
             </li>
           </ul>
 
-          <div className="container">
-            <Image
-              src={`${basePath}/images/grilla/anatomia-grilla.svg`}
-              alt="Referencia visual de la anatomia de grillas"
-              width="800"
-              height="200"
-              layout="responsive"
-            />
-          </div>
+          <Image
+            src={`${basePath}/images/grilla/anatomia-grilla.svg`}
+            alt="Referencia visual de la anatomia de grillas"
+            width="800"
+            height="200"
+            layout="responsive"
+          />
         </>
       ),
     },
@@ -135,7 +133,7 @@ const GridDocs: React.FC = () => {
             columnas.
           </p>
 
-          <div className="container pt-4 mt-1">
+          <div className="pt-4 mt-1">
             <div className="row">
               <div className="col-md-6 mb-4">
                 <Image
@@ -199,12 +197,10 @@ const GridDocs: React.FC = () => {
       content: (
         <>
           <p>
-            Un <i>breakpoint</i> es un punto específico en el que el diseño de una página cambia para adaptarse a
-            diferentes tamaños de pantalla (<i>viewports</i>). Esto permite que el contenido se ajuste de manera
-            adecuada a dispositivos grandes y pequeños, asegurando que la experiencia del usuario sea siempre óptima.
+            Un <i>breakpoint</i> es un punto específico en el que el diseño de una página cambia para adaptarse a diferentes tamaños de pantalla (<i>viewports</i>). Esto permite que el contenido se ajuste de manera adecuada a dispositivos grandes y pequeños, asegurando que la experiencia del usuario sea siempre óptima.
           </p>
 
-          <div className="responsive-scroll mt-4" tabIndex={0}>
+          <div className="responsive-scroll mt-4 mb-5" tabIndex={0}>
             <table className="table">
               <thead>
                 <tr>
@@ -295,7 +291,7 @@ const GridDocs: React.FC = () => {
             </li>
           </ul>
 
-          <div className="container pt-4">
+          <div className="pt-4">
             <Image
               src={`${basePath}/images/grilla/dispositivos.svg`}
               alt="Referencia visual de uso de grillas en diferentes dispositivos."
@@ -311,9 +307,7 @@ const GridDocs: React.FC = () => {
       title: 'Comportamiento',
       content: (
         <p>
-          La grilla de Obelisco tiene un comportamiento responsivo basado en porcentajes, donde existen secciones
-          definidas que ocupan siempre el mismo espacio, y otras secciones que van cambiando según el tamaño de la
-          ventana, asegurando la distribución del contenido.
+          La grilla de Obelisco tiene un comportamiento responsivo basado en porcentajes, donde existen secciones definidas que ocupan siempre el mismo espacio, y otras secciones que van cambiando según el tamaño de la ventana, asegurando la distribución del contenido.
         </p>
       ),
     },
@@ -322,10 +316,9 @@ const GridDocs: React.FC = () => {
       content: (
         <>
           <p>
-            En esta distribución, el contenido de una página utilizando la grilla de Obelisco ocupa el 100 % del ancho
-            del contenedor.
+            En esta distribución, el contenido de una página utilizando la grilla de Obelisco ocupa el 100 % del ancho del contenedor.
           </p>
-          <div className="container pt-4">
+          <div className="pt-2">
             <Image
               src={`${basePath}/images/grilla/ancho-completo.svg`}
               alt="Referencia visual de uso de grillas en pantalla ancho completo"
@@ -342,13 +335,11 @@ const GridDocs: React.FC = () => {
       content: (
         <>
           <p>
-            En esta distribución, el contenido de una página utilizando la grilla de Obelisco está dividido en 2
-            secciones: una columna lateral que ocupa un tercio (<sup>1</sup>/<sub>3</sub>) de la página, y el cuerpo de
-            la página que ocupa dos tercios (<sup>2</sup>/<sub>3</sub>).
+            En esta distribución, el contenido de una página utilizando la grilla de Obelisco está dividido en 2 secciones: una columna lateral que ocupa un tercio (1/3) de la página, y el cuerpo de la página que ocupa dos tercios (2/3).
           </p>
-          <div className="container pt-4 mt-1">
-            <div className="row">
-              <div className="col-md-6 mb-4">
+          <div className="pt-2 mt-1">
+            <div className="max-items-2">
+              <div className="col">
                 <Image
                   src={`${basePath}/images/grilla/lateral-1.svg`}
                   alt="Referencia visual reglas de uso de grillas en disposicion lateral."
@@ -357,7 +348,7 @@ const GridDocs: React.FC = () => {
                   layout="responsive"
                 />
               </div>
-              <div className="col-md-6 mb-4">
+              <div className="col">
                 <Image
                   src={`${basePath}/images/grilla/lateral-2.svg`}
                   alt="Referencia visual reglas de uso de grillas en disposicion lateral."
@@ -376,11 +367,9 @@ const GridDocs: React.FC = () => {
       content: (
         <>
           <p>
-            En dispositivos móviles, el contenido de una página se organiza con otra estructura para asegurar el
-            entendimiento de la información. En pantallas de tamaños <i>tablet</i> o <i>mobile</i>, las secciones se
-            colocan una debajo de la otra y no existen secciones laterales.
+            En dispositivos móviles, el contenido de una página se organiza con otra estructura para asegurar el entendimiento de la información. En pantallas de tamaños <i>tablet</i> o <i>mobile</i>, las secciones se colocan una debajo de la otra y no existen secciones laterales.
           </p>
-          <div className="container pt-4">
+          <div className="pt-2 mb-3">
             <Image
               src={`${basePath}/images/grilla/mobile.svg`}
               alt="Referencia visual de uso de grillas en pantallas de dispositivos mobiles"
@@ -400,8 +389,7 @@ const GridDocs: React.FC = () => {
           <a href="https://www.w3.org/WAI/WCAG21/Understanding/reflow.html" target="_blank" rel="noopener noreferrer">
             Criterio de Éxito 1.4.10 Reflow
           </a>
-          , es requisito que las grillas responsivas respondan al tamaño de la ventana del navegador sin perder
-          información o funcionalidad.
+          , es requisito que las grillas responsivas respondan al tamaño de la ventana del navegador sin perder información o funcionalidad.
         </p>
       ),
     },
@@ -412,7 +400,7 @@ const GridDocs: React.FC = () => {
       title: 'Contenedores de la página',
       content: (
         <>
-          <p>La grilla de Obelisco cuenta con distintos anchos posibles para los contenedores de las páginas. Para cada ancho, hay que considerar cuál es el mejor para consumir e interactuar con los elementos de la página.</p>
+          <p className='pb-3'>La grilla de Obelisco cuenta con distintos anchos posibles para los contenedores de las páginas. Para cada ancho, hay que considerar cuál es el mejor para consumir e interactuar con los elementos de la página.</p>
           
           <CodeBox codeHTML={LAYOUTS}>
             <div className="bg-light py-5 px-md-4 rounded-3 mx-md-3" style={{outline: "2px solid #E6EBF0", outlineOffset: "-2px"}}>
@@ -432,7 +420,7 @@ const GridDocs: React.FC = () => {
             </div>
           </CodeBox>
 
-          <div className="list-informative mt-5">
+          <div className="list-informative" style={{marginTop: "32px"}}>
             <ul className="list-informative-bullet">
               <li>
                 <span className="fw-semibold">Ancho completo (100%)</span>: Excepción para páginas donde la interacción se beneficia de más espacio en pantalla, como gráficos y otras visualizaciones de datos o tableros.
@@ -474,7 +462,7 @@ const GridDocs: React.FC = () => {
       subtitle: 'Disposición en 4 columnas',
       content: (
         <>
-          <p>La disposición de los elementos es responsive, es decir que, en mobile se visualiza 1 columna, en tablet 2 columnas, a partir del viewport de 1200px 3 columnas y a partir del viewport de 1400px 4 columnas.</p>
+          <p className='mb-4'>La disposición de los elementos es responsive, es decir que, en mobile se visualiza 1 columna, en tablet 2 columnas, a partir del viewport de 1200px 3 columnas y a partir del viewport de 1400px 4 columnas.</p>
           <CodeBox codeHTML={FOUR_COLUMNS}>
             <div className="bg-light py-5 px-md-0 rounded-3 mx-md-2" style={{outline: "2px solid #E6EBF0", outlineOffset: "-2px"}}>
               <div className="container text-center">
@@ -505,7 +493,7 @@ const GridDocs: React.FC = () => {
       subtitle: 'Disposición en 3 columnas',
       content: (
         <>
-          <p>La disposición de los elementos es responsive, es decir que, en mobile se visualiza 1 columna, en tablet 2 columnas, y en desktop 3 columnas.</p>
+          <p className='mb-4'>La disposición de los elementos es responsive, es decir que, en mobile se visualiza 1 columna, en tablet 2 columnas, y en desktop 3 columnas.</p>
           <CodeBox codeHTML={THREE_COLUMNS}>
             <div className="bg-light py-5 px-md-0 rounded-3 mx-md-2" style={{outline: "2px solid #E6EBF0", outlineOffset: "-2px"}}>
               <div className="container">
@@ -536,7 +524,7 @@ const GridDocs: React.FC = () => {
       subtitle: 'Disposición en 2 columnas',
       content: (
         <>
-          <p>La disposición de los elementos es responsive, es decir que, en mobile se visualiza 1 columna, y en tablet y desktop 2 columnas.</p>
+          <p className='mb-4'>La disposición de los elementos es responsive, es decir que, en mobile se visualiza 1 columna, y en tablet y desktop 2 columnas.</p>
           <CodeBox codeHTML={TWO_COLUMNS}>
             <div className="bg-light py-5 px-md-0 rounded-3 mx-md-2" style={{outline: "2px solid #E6EBF0", outlineOffset: "-2px"}}>
               <div className="container">
@@ -561,7 +549,7 @@ const GridDocs: React.FC = () => {
       subtitle: 'Disposición en 1 columna',
       content: (
         <>
-          <p>En mobile, tablet y desktop se visualiza 1 columna.</p>
+          <p className='mb-4'>En mobile, tablet y desktop se visualiza 1 columna.</p>
           <CodeBox codeHTML={ONE_COLUMN}>
             <div className="bg-light py-5 px-md-0 rounded-3 mx-md-2" style={{outline: "2px solid #E6EBF0", outlineOffset: "-2px"}}>
               <div className="container">

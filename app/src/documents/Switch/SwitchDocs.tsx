@@ -186,9 +186,12 @@ const SwitchDocs: React.FC = () => {
         description={[
           'Los switchs permiten que las personas usuarias alternen entre dos estados posibles, como “prendido” y “apagado”.',
           <>
-            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del componente podés <a href="https://gcba.github.io/estandares/componentes/switch/" target="_blank" rel="noopener noreferrer">
-            visitar la documentación en Obelisco v.1
-            </a>.
+            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del
+            componente podés{' '}
+            <a href="https://gcba.github.io/estandares/componentes/switch/" target="_blank" rel="noopener noreferrer">
+              visitar la documentación en Obelisco v.1
+            </a>
+            .
           </>,
         ]}
       />

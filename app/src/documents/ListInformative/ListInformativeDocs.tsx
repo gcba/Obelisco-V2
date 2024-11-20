@@ -57,9 +57,16 @@ const ListInformativeDocs: React.FC = () => {
         description={[
           'Las listas informativas organizan piezas simples de información en forma vertical. Se utilizan cuando sus elementos no transmiten un orden secuencial específico.',
           <>
-            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del componente podés <a href="https://gcba.github.io/estandares/componentes/listas/lista-informativa/" target="_blank" rel="noopener noreferrer">
-            visitar la documentación en Obelisco v.1
-            </a>.
+            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del
+            componente podés{' '}
+            <a
+              href="https://gcba.github.io/estandares/componentes/listas/lista-informativa/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              visitar la documentación en Obelisco v.1
+            </a>
+            .
           </>,
         ]}
       />

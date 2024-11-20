@@ -74,9 +74,16 @@ const BadgeDocs: React.FC = () => {
         description={[
           'Las etiquetas se utilizan para identificar y categorizar la información dentro de una página proporcionando más detalles a los usuarios sobre el contenido que necesitan.',
           <>
-            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del componente podés <a href="https://gcba.github.io/estandares/componentes/etiquetas/" target="_blank" rel="noopener noreferrer">
-            visitar la documentación en Obelisco v.1
-            </a>.
+            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del
+            componente podés{' '}
+            <a
+              href="https://gcba.github.io/estandares/componentes/etiquetas/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              visitar la documentación en Obelisco v.1
+            </a>
+            .
           </>,
         ]}
       />

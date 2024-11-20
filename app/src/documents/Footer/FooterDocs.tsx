@@ -57,8 +57,7 @@ const FooterDocs: React.FC = () => {
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://x.com/gcba">
-                      <img src={`${basePath}/images/rrss_x.svg`} className="o-icon" alt="x" />
-                        X
+                        <img src={`${basePath}/images/rrss_x.svg`} className="o-icon" alt="x" />X
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
@@ -270,8 +269,7 @@ const FooterDocs: React.FC = () => {
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://x.com/gcba">
-                      <img src={`${basePath}/images/rrss_x.svg`} className="o-icon" alt="x" />
-                        X
+                        <img src={`${basePath}/images/rrss_x.svg`} className="o-icon" alt="x" />X
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
@@ -369,9 +367,16 @@ const FooterDocs: React.FC = () => {
         description={[
           'El pie de página (o footer en Inglés) se sitúa en la parte inferior de todos los activos digitales de Gobierno. Contiene información institucional o de acceso rápido que permite a los usuarios encontrar de forma sencilla la información que necesitan.',
           <>
-            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del componente podés <a href="https://gcba.github.io/estandares/componentes/pie-de-pagina/" target="_blank" rel="noopener noreferrer">
-            visitar la documentación en Obelisco v.1
-            </a>.
+            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del
+            componente podés{' '}
+            <a
+              href="https://gcba.github.io/estandares/componentes/pie-de-pagina/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              visitar la documentación en Obelisco v.1
+            </a>
+            .
           </>,
         ]}
       />

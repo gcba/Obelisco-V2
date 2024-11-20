@@ -370,9 +370,12 @@ const ButtonDocs: React.FC = () => {
         description={[
           'Los botones permiten iniciar acciones o navegar a otras páginas. Las etiquetas de los botones expresan qué acción ocurrirá cuando la persona usuaria interactúe con él.',
           <>
-            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del componente podés <a href="https://gcba.github.io/estandares/componentes/boton/" target="_blank" rel="noopener noreferrer">
-            visitar la documentación en Obelisco v.1
-            </a>.
+            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del
+            componente podés{' '}
+            <a href="https://gcba.github.io/estandares/componentes/boton/" target="_blank" rel="noopener noreferrer">
+              visitar la documentación en Obelisco v.1
+            </a>
+            .
           </>,
         ]}
       />

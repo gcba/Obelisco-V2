@@ -43,9 +43,16 @@ const BreadcrumbDocs: React.FC = () => {
         description={[
           'El componente de migas de pan ayuda a los usuarios a comprender dónde se encuentran dentro de la estructura de un sitio web y moverse entre niveles.',
           <>
-            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del componente podés <a href="https://gcba.github.io/estandares/componentes/miga-de-pan/" target="_blank" rel="noopener noreferrer">
-            visitar la documentación en Obelisco v.1
-            </a>.
+            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del
+            componente podés{' '}
+            <a
+              href="https://gcba.github.io/estandares/componentes/miga-de-pan/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              visitar la documentación en Obelisco v.1
+            </a>
+            .
           </>,
         ]}
       />

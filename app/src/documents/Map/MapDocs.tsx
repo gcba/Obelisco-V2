@@ -92,9 +92,12 @@ const MapDocs: React.FC = () => {
         description={[
           'El mapa brinda contexto sobre una ubicación geográfica y redirige a la persona usuaria al mapa interactivo de Buenos Aires. A su vez, permite a las personas usuarias anticipar y planificar sus acciones.',
           <>
-            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del componente podés <a href="https://gcba.github.io/estandares/componentes/mapa/" target="_blank" rel="noopener noreferrer">
-            visitar la documentación en Obelisco v.1
-            </a>.
+            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del
+            componente podés{' '}
+            <a href="https://gcba.github.io/estandares/componentes/mapa/" target="_blank" rel="noopener noreferrer">
+              visitar la documentación en Obelisco v.1
+            </a>
+            .
           </>,
         ]}
       />

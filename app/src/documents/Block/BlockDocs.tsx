@@ -100,9 +100,16 @@ const BlockDocs: React.FC = () => {
         description={[
           'Este componente se utiliza dentro de una página informativa de trámite e indica el estado del mismo. Desde él, la persona usuaria puede iniciar el trámite o ver en qué instancia se encuentra.',
           <>
-            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del componente podés <a href="https://gcba.github.io/estandares/componentes/bloque-de-tramite/" target="_blank" rel="noopener noreferrer">
-            visitar la documentación en Obelisco v.1
-            </a>.
+            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del
+            componente podés{' '}
+            <a
+              href="https://gcba.github.io/estandares/componentes/bloque-de-tramite/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              visitar la documentación en Obelisco v.1
+            </a>
+            .
           </>,
         ]}
       />

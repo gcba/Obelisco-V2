@@ -1090,9 +1090,12 @@ const TableDocs: React.FC = () => {
         description={[
           'La tabla muestra datos organizados y estructurados en filas y columnas. Se utiliza para categorizar y comparar contenido relacionado. Este componente permite escanear más fácilmente información compleja.',
           <>
-            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del componente podés <a href="https://gcba.github.io/estandares/componentes/tabla/" target="_blank" rel="noopener noreferrer">
-            visitar la documentación en Obelisco v.1
-            </a>.
+            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del
+            componente podés{' '}
+            <a href="https://gcba.github.io/estandares/componentes/tabla/" target="_blank" rel="noopener noreferrer">
+              visitar la documentación en Obelisco v.1
+            </a>
+            .
           </>,
         ]}
       />

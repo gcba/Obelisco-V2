@@ -18,13 +18,13 @@ const PalletteTable: React.FC<PalletteTableProps> = ({ arrayTableColors }) => {
       <table className="table">
         <thead>
           <tr>
-            <th scope="col" style={{ width: '24%', minWidth: "fit-content" }} className="tb-text">
+            <th scope="col" style={{ width: '24%', minWidth: 'fit-content' }} className="tb-text">
               <span className="th-title">Base</span>
             </th>
-            <th scope="col" style={{ width: '29%', minWidth: "fit-content" }} className="tb-text">
+            <th scope="col" style={{ width: '29%', minWidth: 'fit-content' }} className="tb-text">
               <span className="th-title">Variable</span>
             </th>
-            <th scope="col" style={{ width: '47%', minWidth: "fit-content" }} className="tb-text">
+            <th scope="col" style={{ width: '47%', minWidth: 'fit-content' }} className="tb-text">
               <span className="th-title">Uso</span>
             </th>
           </tr>

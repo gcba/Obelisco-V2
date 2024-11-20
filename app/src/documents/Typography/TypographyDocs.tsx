@@ -78,7 +78,7 @@ const SECTIONS_UX = [
     ),
   },
   {
-    subtitle: 'Encabezados (Headings)',
+    subtitle: (<>Encabezados <i>(Headings)</i></>),
     content: (
       <p>
         Los encabezados organizan y jerarquizan el contenido. Su tamaño y peso establecen un contraste que ayuda a las
@@ -87,13 +87,13 @@ const SECTIONS_UX = [
     ),
   },
   {
-    subtitle: 'Titulares (Titles)',
+    subtitle: (<>Titulares <i>(Titles)</i></>),
     content: (
       <p>Son textos descriptivos y breves que se utilizan dentro de los componentes a modo de etiqueta o título. </p>
     ),
   },
   {
-    subtitle: 'Cuerpo (Body)',
+    subtitle: (<>Cuerpo <i>(Body)</i></>),
     content: (
       <>
         <p className="mb-4">
@@ -453,7 +453,7 @@ const SECTIONS_SCALE = [
     ),
   },
   {
-    subtitle: 'Encabezados (Headings)',
+    subtitle: (<>Encabezados <i>(Headings)</i></>),
     content: (
       <>
         <div className="responsive-scroll mt-4" tabIndex={0}>
@@ -572,7 +572,7 @@ const SECTIONS_SCALE = [
     ),
   },
   {
-    subtitle: 'Titulares (Titles)',
+    subtitle: (<>Titulares <i>(Titles)</i></>),
     content: (
       <>
         <div className="responsive-scroll mt-4" tabIndex={0}>
@@ -643,7 +643,7 @@ const SECTIONS_SCALE = [
     ),
   },
   {
-    subtitle: 'Cuerpo (Body)',
+    subtitle: (<>Cuerpo <i>(Body)</i></>),
     content: (
       <>
         <div className="responsive-scroll mt-4" tabIndex={0}>

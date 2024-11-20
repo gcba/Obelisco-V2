@@ -10,7 +10,7 @@ import SimpleText from './SimpleText';
 export interface Section {
   id?: string;
   title?: string | React.ReactNode;
-  subtitle?: string;
+  subtitle?: string | React.ReactNode;
   subtitleScrollspy?: string | React.ReactNode;
   content?: React.ReactNode;
   description?: string;
@@ -58,7 +58,7 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
                   key={`${section.id}-${index}`}
                   id={
                     section.id ||
-                    `section-${section.title ? section.title?.toString().toLowerCase().replace(/\s+/g, '-') : section.subtitle?.toLowerCase().replace(/\s+/g, '-')}-${type}-${index + 1}`
+                    `section-${type}-${index + 1}`
                   }
                   ref={sectionRefs[index]}
                 >
@@ -92,7 +92,7 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
                 {sections.map((section, index) => (
                   <li key={`${section.id}-${index}`} className={activeIndex === index ? 'active' : ''}>
                     <a
-                      href={`#${section.id || `section-${section.title ? section.title?.toString().toLowerCase().replace(/\s+/g, '-') : section.subtitle?.toLowerCase().replace(/\s+/g, '-')}-${type}-${index + 1}`}`}
+                      href={`#${section.id || `section-${type}-${index + 1}`}`}
                       className="text-sm"
                     >
                       {section.title && section.title}

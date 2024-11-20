@@ -1,28 +1,13 @@
 import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
-import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
-import MainDescription from '@/components/Template/MainDescription';
+import Tabs from '@/components/Tabs';
+import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import { LINK_DEFAULT, LINK_EXTERNAL, LINK_DOWNLOAD, LINK_ACCESS } from './code-views';
 
 const LinkDocs: React.FC = () => {
-  const sections = [
+  const SECTIONS_DEV = [
     {
-      title: 'Enlaces',
-      h1: true,
-      content: (
-        <>
-          <MainDescription description="Los enlaces son hipervínculos que la persona usuaria utiliza para navegar contenidos en un sitio web. Pueden dirigir tanto a información y recursos dentro de una misma página o sitio web, como también a páginas externas." />
-          <p className="lead mb-4">
-            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-            <a href="https://gcba.github.io/estandares/componentes/enlaces/">enlace</a>.
-          </p>
-        </>
-      ),
-    },
-
-    {
-      id: 'section-1',
       title: 'Predeterminado',
       content: (
         <>
@@ -52,7 +37,6 @@ const LinkDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-2',
       title: 'Externo',
       content: (
         <>
@@ -74,7 +58,6 @@ const LinkDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-3',
       title: 'Descarga',
       content: (
         <>
@@ -104,7 +87,6 @@ const LinkDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-4',
       title: 'Acceso',
       content: (
         <>
@@ -130,7 +112,25 @@ const LinkDocs: React.FC = () => {
     },
   ];
 
-  return <DocumentationTemplate sections={sections} />;
+  return (
+    <>
+      <ComponentHeader
+        title="Enlaces"
+        description={[
+          'Los enlaces son hipervínculos que la persona usuaria utiliza para navegar contenidos en un sitio web. Pueden dirigir tanto a información y recursos dentro de una misma página o sitio web, como también a páginas externas.',
+          <>
+            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del
+            componente podés{' '}
+            <a href="https://gcba.github.io/estandares/componentes/enlaces/" target="_blank" rel="noopener noreferrer">
+              visitar la documentación en Obelisco v.1
+            </a>
+            .
+          </>,
+        ]}
+      />
+      <Tabs sectionDev={SECTIONS_DEV} />
+    </>
+  );
 };
 
 export default LinkDocs;

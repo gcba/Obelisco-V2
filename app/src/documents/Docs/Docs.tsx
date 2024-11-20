@@ -1,22 +1,10 @@
 import Link from 'next/link';
 
+import ComponentHeader from '@/components/Template/ComponentHeader';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
-import MainDescription from '@/components/Template/MainDescription';
 
 const sections = [
   {
-    title: 'Migración a V2',
-    content: (
-      <MainDescription
-        description="Esta nueva versión es una evolución de la versión anterior, 'Obelisco V1', y busca mejorar y actualizar los componentes y estilos ofrecidos,
-        alineándose con las últimas tendencias y estándares del desarrollo web."
-      />
-    ),
-    h1: true,
-    defaultTitle: true,
-  },
-  {
-    id: 'section-1',
     title: 'Detalle',
     content: (
       <>
@@ -31,7 +19,6 @@ const sections = [
     ),
   },
   {
-    id: 'section-2',
     title: 'Actualización a Bootstrap 5',
     content: (
       <ul>
@@ -44,7 +31,6 @@ const sections = [
     ),
   },
   {
-    id: 'section-3',
     title: 'Optimización de Código SCSS',
     content: (
       <li>
@@ -55,7 +41,6 @@ const sections = [
     ),
   },
   {
-    id: 'section-4',
     title: 'Eliminación de Componentes Deprecados',
     content: (
       <li>
@@ -65,7 +50,6 @@ const sections = [
     ),
   },
   {
-    id: 'section-5',
     title: 'Incorporación de Nuevas Clases',
     content: (
       <li>
@@ -75,7 +59,6 @@ const sections = [
     ),
   },
   {
-    id: 'section-6',
     title: 'Refactorización de componentes',
     content: (
       <li>
@@ -86,7 +69,6 @@ const sections = [
     ),
   },
   {
-    id: 'section-7',
     title: 'Proceso de Compilación y Distribución',
     content: (
       <>
@@ -108,7 +90,6 @@ const sections = [
     ),
   },
   {
-    id: 'section-8',
     title: 'Clases disponibles',
     content: (
       <>
@@ -130,7 +111,18 @@ const sections = [
 ];
 
 const Docs: React.FC = () => {
-  return <DocumentationTemplate sections={sections} />;
+  return (
+    <>
+      <ComponentHeader
+        title="Migración a V2"
+        description={[
+          'Esta nueva versión es una evolución de la versión anterior, "Obelisco V1", y busca mejorar y actualizar los componentes y estilos ofrecidos, alineándose con las últimas tendencias y estándares del desarrollo web.',
+        ]}
+        divider={true}
+      />
+      <DocumentationTemplate sections={sections} type="docs" />
+    </>
+  );
 };
 
 export default Docs;

@@ -3,13 +3,10 @@
 import { Scrollspy } from '@makotot/ghostui';
 import React, { useEffect, useState, useMemo, useCallback } from 'react';
 
-import Divisor from '@/components/Template/Divisor';
-import HeadingTemplate from '@/components/Template/HeadingTemplate';
-
 import ScrollspySubtitle from '../ScrollspyTitle';
 import SimpleText from './SimpleText';
 
-interface Section {
+export interface Section {
   id?: string;
   title?: string | React.ReactNode;
   subtitle?: string;
@@ -22,9 +19,10 @@ interface Section {
 
 interface DocumentationTemplateProps {
   sections: Section[];
+  type?: string;
 }
 
-const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections }) => {
+const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections, type }) => {
   const sectionRefs = useMemo(() => sections.map(() => React.createRef<HTMLDivElement>()), [sections]);
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
@@ -47,8 +45,6 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections 
     };
   }, [handleScroll]);
 
-  const defaultTitle = sections.some((section) => section.defaultTitle) ? 'Obelisco' : 'Variantes';
-
   return (
     <Scrollspy sectionRefs={sectionRefs} offset={84}>
       {() => (
@@ -59,51 +55,49 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections 
                 <section
                   className="box-section"
                   key={`${section.id}-${index}`}
-                  id={section.id || undefined}
+                  id={
+                    section.id ||
+                    `section-${section.title ? section.title?.toString().toLowerCase().replace(/\s+/g, '-') : section.subtitle?.toLowerCase().replace(/\s+/g, '-')}-${type}-${index + 1}`
+                  }
                   ref={sectionRefs[index]}
                 >
-                  {section.title && (
-                    <HeadingTemplate className="pt-2">
-                      {section.h1 ? (
-                        <h1 className="mb-4">{section.title}</h1>
-                      ) : (
-                        <h2 className="headline-lg mb-4">{section.title}</h2>
-                      )}
-                    </HeadingTemplate>
-                  )}
+                  {section.title &&
+                    (section.h1 ? (
+                      <h1 className="mb-4">{section.title}</h1>
+                    ) : (
+                      <h2 className="h4 mb-3">{section.title}</h2>
+                    ))}
                   {section.subtitle && (
-                    <HeadingTemplate className="pt-2">
-                      <h3 className="headline-md fw-bold mb-4">
-                        <ScrollspySubtitle text={section.subtitle} />
-                      </h3>
-                    </HeadingTemplate>
+                    <h3 className="text-xl text-body-secondary mb-2">
+                      <ScrollspySubtitle text={section.subtitle} />
+                    </h3>
                   )}
                   {section.description && <SimpleText description={section.description} />}
-                  {section.content}
-                  {section.content && index < sections.length - 1 && <Divisor />}
+                  {section.content && <div style={{ marginBottom: '32px' }}>{section.content}</div>}
                 </section>
               ))}
             </div>
           </article>
 
           <div className="nav-scrollspy d-none d-xl-block flex-grow-1">
-            <ul className="scrollspy" data-cy="nav-wrapper">
-              <p className="headline-md fw-bold mb-1">{defaultTitle}</p>
-              {sections.map(
-                (section, index) =>
-                  section.id && (
-                    <li key={`${section.id}-${index}`} className={activeIndex === index ? 'active' : ''}>
-                      <a href={`#${section.id}`} className="text-sm">
-                        {section.title && section.title}
-                        {section.subtitle && !section.subtitleScrollspy && (
-                          <ScrollspySubtitle text={section.subtitle} ScrollspyComponent={true} />
-                        )}
-                        {section.subtitleScrollspy && section.subtitleScrollspy}
-                      </a>
-                    </li>
-                  ),
-              )}
-            </ul>
+            <div className="nav-scrollspy-position">
+              <p className="text-sm fw-bold text-body-secondary mb-3">
+                {type == 'dev' ? 'Variantes' : 'Contenido en esta página'}
+              </p>
+              <ul className="scrollspy" data-cy="nav-wrapper">
+                {sections.map((section, index) => (
+                  <li key={`${section.id}-${index}`} className={activeIndex === index ? 'active' : ''}>
+                    <a
+                      href={`#${section.id || `section-${section.title ? section.title?.toString().toLowerCase().replace(/\s+/g, '-') : section.subtitle?.toLowerCase().replace(/\s+/g, '-')}-${type}-${index + 1}`}`}
+                      className="text-sm"
+                    >
+                      {section.title && section.title}
+                      {section.subtitle && <ScrollspySubtitle text={section.subtitle} ScrollspyComponent={true} />}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       )}

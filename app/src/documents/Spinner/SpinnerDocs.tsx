@@ -3,30 +3,14 @@
 import React from 'react';
 
 import CodeBox from '@/components/CodeBox';
-import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
-import MainDescription from '@/components/Template/MainDescription';
+import Tabs from '@/components/Tabs';
+import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import { SPINNER_BLOCK, SPINNER_DESCRIPTION, SPINNER_SIZES, SPINNER_TYPES } from './code-views';
 
 const SpinnerDocs: React.FC = () => {
-  const sections = [
+  const SECTIONS_DEV = [
     {
-      h1: true,
-      title: 'Spinner',
-      content: (
-        <>
-          <MainDescription description="Un spinner es un indicador visual que ayuda a notificar a las personas usuarias que la carga de contenido o la recuperación de datos está en curso." />
-          <p className="lead mb-4">
-            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-            <a href="https://gcba.github.io/estandares/componentes/spinner/" target="_blank" rel="noopener noreferrer">
-              enlace.
-            </a>
-          </p>
-        </>
-      ),
-    },
-    {
-      id: 'section-1',
       title: 'Tipos',
       content: (
         <CodeBox codeHTML={SPINNER_TYPES}>
@@ -59,7 +43,6 @@ const SpinnerDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-2',
       title: 'Tamaños',
       content: (
         <CodeBox codeHTML={SPINNER_SIZES}>
@@ -78,7 +61,6 @@ const SpinnerDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-3',
       title: 'Expandible',
       content: (
         <>
@@ -93,7 +75,6 @@ const SpinnerDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-4',
       title: 'Con descripción',
       content: (
         <>
@@ -110,7 +91,25 @@ const SpinnerDocs: React.FC = () => {
     },
   ];
 
-  return <DocumentationTemplate sections={sections} />;
+  return (
+    <>
+      <ComponentHeader
+        title="Spinner"
+        description={[
+          'Un spinner es un indicador visual que ayuda a notificar a las personas usuarias que la carga de contenido o la recuperación de datos está en curso.',
+          <>
+            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del
+            componente podés{' '}
+            <a href="https://gcba.github.io/estandares/componentes/spinner/" target="_blank" rel="noopener noreferrer">
+              visitar la documentación en Obelisco v.1
+            </a>
+            .
+          </>,
+        ]}
+      />
+      <Tabs sectionDev={SECTIONS_DEV} />
+    </>
+  );
 };
 
 export default SpinnerDocs;

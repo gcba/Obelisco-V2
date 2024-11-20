@@ -4,31 +4,14 @@ import React from 'react';
 
 import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
-import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
-import MainDescription from '@/components/Template/MainDescription';
+import Tabs from '@/components/Tabs';
+import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import { CATEGORIES_ACCESS_ORGANISM, LIST_ACCESS_ORGANISM, SIMPLE_ACCESS_ORGANISM } from './code-views';
 
 const AccessOrganismDocs: React.FC = () => {
-  const sections = [
+  const SECTIONS_DEV = [
     {
-      title: 'Accesos - Organismo',
-      content: (
-        <>
-          <MainDescription description="Los accesos funcionan como puntos de ingreso a diferentes secciones y pueden agruparse cuando hay una similitud en su contenido." />
-          <p className="lead mb-4">
-            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-            <a href="https://gcba.github.io/estandares/componentes/acceso/" target="_blank" rel="noopener noreferrer">
-              enlace
-            </a>
-            .
-          </p>
-        </>
-      ),
-      h1: true,
-    },
-    {
-      id: 'section-2',
       title: 'Simple',
       content: (
         <>
@@ -70,7 +53,6 @@ const AccessOrganismDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-3',
       title: 'Con lista de accesos',
       content: (
         <>
@@ -142,7 +124,6 @@ const AccessOrganismDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-4',
       title: 'Con categorías',
       content: (
         <>
@@ -218,7 +199,25 @@ const AccessOrganismDocs: React.FC = () => {
     },
   ];
 
-  return <DocumentationTemplate sections={sections} />;
+  return (
+    <>
+      <ComponentHeader
+        title="Accesos - Organismo"
+        description={[
+          'Los accesos funcionan como puntos de ingreso a diferentes secciones y pueden agruparse cuando hay una similitud en su contenido.',
+          <>
+            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del
+            componente podés{' '}
+            <a href="https://gcba.github.io/estandares/componentes/acceso/" target="_blank" rel="noopener noreferrer">
+              visitar la documentación en Obelisco v.1
+            </a>
+            .
+          </>,
+        ]}
+      />
+      <Tabs sectionDev={SECTIONS_DEV} />
+    </>
+  );
 };
 
 export default AccessOrganismDocs;

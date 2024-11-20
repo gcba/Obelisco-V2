@@ -1,6 +1,6 @@
 import CodeBox from '@/components/CodeBox';
-import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
-import MainDescription from '@/components/Template/MainDescription';
+import Tabs from '@/components/Tabs';
+import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import {
   COLLAPSE,
@@ -13,29 +13,8 @@ import {
 } from './code-views';
 
 const CollapseDocs: React.FC = () => {
-  const sections = [
+  const SECTIONS_DEV = [
     {
-      title: 'Colapsables',
-      h1: true,
-      content: (
-        <div>
-          <MainDescription description="Los colapsables sirven para mostrar y ocultar secciones de contenido relacionado en una página, lo que mejora la experiencia de las personas usuarias." />
-          <p className="lead mb-4">
-            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-            <a
-              href="https://gcba.github.io/estandares/componentes/colapsable/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              enlace
-            </a>
-            .
-          </p>
-        </div>
-      ),
-    },
-    {
-      id: 'section-1',
       title: 'Selección única',
       content: (
         <CodeBox codeHTML={COLLAPSE}>
@@ -113,7 +92,6 @@ const CollapseDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-2',
       title: 'Selección múltiple',
       content: (
         <CodeBox codeHTML={COLLAPSE_MULTIPLE}>
@@ -179,8 +157,10 @@ const CollapseDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-3',
-      title: 'Encabezado con icono',
+      title: 'Encabezado',
+    },
+    {
+      subtitle: 'Con icono',
       content: (
         <CodeBox codeHTML={COLLAPSE_ICON}>
           <div className="container">
@@ -211,8 +191,7 @@ const CollapseDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-4',
-      title: 'Encabezado con volanta, descripción e icono',
+      subtitle: 'Con volanta, descripción e icono',
       content: (
         <CodeBox codeHTML={COLLAPSE_ICON_LABEL}>
           <div className="container">
@@ -245,8 +224,7 @@ const CollapseDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-5',
-      title: 'Encabezado con fondo blanco',
+      subtitle: 'Con fondo blanco',
       content: (
         <CodeBox codeHTML={COLLAPSE_WHITE}>
           <div className="container">
@@ -279,8 +257,10 @@ const CollapseDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-6',
-      title: 'Contenido con lista seleccionable',
+      title: 'Contenido',
+    },
+    {
+      subtitle: 'Con lista seleccionable',
       content: (
         <CodeBox codeHTML={COLLAPSE_LIST}>
           <div className="container">
@@ -333,8 +313,7 @@ const CollapseDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-7',
-      title: 'Contenido con información',
+      subtitle: 'Con información',
       content: (
         <CodeBox codeHTML={COLLAPSE_INFO}>
           <div className="container">
@@ -370,7 +349,29 @@ const CollapseDocs: React.FC = () => {
     },
   ];
 
-  return <DocumentationTemplate sections={sections} />;
+  return (
+    <>
+      <ComponentHeader
+        title="Colapsables"
+        description={[
+          'Los colapsables sirven para mostrar y ocultar secciones de contenido relacionado en una página, lo que mejora la experiencia de las personas usuarias.',
+          <>
+            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del
+            componente podés{' '}
+            <a
+              href="https://gcba.github.io/estandares/componentes/colapsable/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              visitar la documentación en Obelisco v.1
+            </a>
+            .
+          </>,
+        ]}
+      />
+      <Tabs sectionDev={SECTIONS_DEV} />
+    </>
+  );
 };
 
 export default CollapseDocs;

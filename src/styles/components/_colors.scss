@@ -4,7 +4,8 @@
     background-color: $value !important;
   }
 }
- // Backgrounds colors de la rampa de colores
+
+// Backgrounds colors de la rampa de colores
 @each $key, $value in $color-ramp {
   .bg-#{$key} {
     background-color: $value !important;

@@ -53,10 +53,7 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
                 <section
                   className="box-section"
                   key={`${section.id}-${index}`}
-                  id={
-                    section.id ||
-                    `section-${type}-${index + 1}`
-                  }
+                  id={section.id || `section-${type}-${index + 1}`}
                   ref={sectionRefs[index]}
                 >
                   {section.title && <h2 className="h4 mb-3">{section.title}</h2>}
@@ -69,7 +66,7 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
                   {section.content && <div style={{ marginBottom: '32px' }}>{section.content}</div>}
                 </section>
               ))}
-              <div className='pt-5' style={{paddingBottom: '32px'}}>
+              <div className="pt-5" style={{ paddingBottom: '32px' }}>
                 <ScrollTopButton />
               </div>
             </div>
@@ -83,10 +80,7 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
               <ul className="scrollspy" data-cy="nav-wrapper">
                 {sections.map((section, index) => (
                   <li key={`${section.id}-${index}`} className={activeIndex === index ? 'active' : ''}>
-                    <a
-                      href={`#${section.id || `section-${type}-${index + 1}`}`}
-                      className="text-sm"
-                    >
+                    <a href={`#${section.id || `section-${type}-${index + 1}`}`} className="text-sm">
                       {section.title && section.title}
                       {section.subtitle && <ScrollspySubtitle text={section.subtitle} ScrollspyComponent={true} />}
                     </a>

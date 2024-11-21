@@ -100,7 +100,7 @@ const Tabs: React.FC<TabsProps> = ({ sectionUx, sectionDev, customSection }) => 
         )}
         {customSection && customSection.sectionContent && (
           <TabPanel id={`panel-content-${customSection.id}`} activeTab={activeTab}>
-            <DocumentationTemplate sections={customSection.sectionContent} type={customSection.title.toLowerCase()} />
+            <DocumentationTemplate sections={customSection.sectionContent} type={customSection.id.toLowerCase()} />
           </TabPanel>
         )}
       </div>

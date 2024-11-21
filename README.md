@@ -1,4 +1,4 @@
-# Obelisco v2
+# Obelisco v2 
 
 Obelisco v2 es un Sistema de diseño basado en componentes para productos digitales de la Ciudad de Buenos Aires, diseñado para continuar la evolución de Obelisco en su segunda versión.
 

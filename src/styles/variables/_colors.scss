@@ -217,3 +217,138 @@ $outline-transparent-subtle: 0.125rem solid transparent;
 
 // Inputs
 $placeholder-color: $slate-700;
+
+//Rampa de colores
+$color-ramp: (
+  // Gray
+  'gray-0': #ffffff,
+  'gray-50': #f2f2f2,
+  'gray-100': #e5e5e5,
+  'gray-200': #cccccc,
+  'gray-300': #b2b2b2,
+  'gray-400': #999999,
+  'gray-500': #7f7f7f,
+  'gray-600': #666666,
+  'gray-700': #4c4c4c,
+  'gray-800': #333333,
+  'gray-900': #191919,
+  'gray-950': #000000,
+ 
+  // Slate
+  'slate-50': #f3f6f9,
+  'slate-100': #e6ebf0,
+  'slate-200': #d1d8e0,
+  'slate-300': #b8c1cc,
+  'slate-400': #9eaab8,
+  'slate-500': #8a97a8,
+  'slate-600': #69788a,
+  'slate-700': #5c6a7a,
+  'slate-800': #505e70,
+  'slate-900': #425266,
+  'slate-950': #38485c,
+ 
+  // Blue
+  'blue-50': #ecf0f9,
+  'blue-100': #d9e2f2,
+  'blue-200': #adc3eb,
+  'blue-300': #85a5e0,
+  'blue-400': #5c88d6,
+  'blue-500': #336acc,
+  'blue-600': #2e569e,
+  'blue-700': #274986,
+  'blue-800': #1c345f,
+  'blue-900': #101e37,
+  'blue-950': #080f1c,
+ 
+  // Yellow
+  'yellow-50': #fffae5,
+  'yellow-100': #fff5cc,
+  'yellow-200': #ffeb99,
+  'yellow-300': #ffe066,
+  'yellow-400': #ffd633,
+  'yellow-500': #ffcc00,
+  'yellow-600': #cca300,
+  'yellow-700': #997a00,
+  'yellow-800': #665200,
+  'yellow-900': #332900,
+  'yellow-950': #1a1500,
+ 
+  // Orange
+  'orange-50': #fff4e5,
+  'orange-100': #ffeacc,
+  'orange-200': #ffd599,
+  'orange-300': #ffbf66,
+  'orange-400': #ffaa33,
+  'orange-500': #ff9500,
+  'orange-600': #cc7700,
+  'orange-700': #995900,
+  'orange-800': #663c00,
+  'orange-900': #331e00,
+  'orange-950': #1a0f00,
+ 
+  // Green
+  'green-50': #f2fbf5,
+  'green-100': #e0f8e9,
+  'green-200': #c3efd3,
+  'green-300': #94e1b0,
+  'green-400': #5eca85,
+  'green-500': #38af64,
+  'green-600': #26874a,
+  'green-700': #237240,
+  'green-800': #205b36,
+  'green-900': #1c4b2d,
+  'green-950': #0a2915,
+ 
+  // Red
+  'red-50': #fbefef,
+  'red-100': #f5d6d6,
+  'red-200': #ebadad,
+  'red-300': #e08585,
+  'red-400': #d65c5c,
+  'red-500': #cc3333,
+  'red-600': #a32929,
+  'red-700': #7a1f1f,
+  'red-800': #521414,
+  'red-900': #290a0a,
+  'red-950': #140505,
+ 
+  // Purple
+  'purple-50': #f7e5ff,
+  'purple-100': #f0ccff,
+  'purple-200': #e299ff,
+  'purple-300': #d366ff,
+  'purple-400': #c433ff,
+  'purple-500': #b600ff,
+  'purple-600': #9100cc,
+  'purple-700': #6d0099,
+  'purple-800': #490066,
+  'purple-900': #240033,
+  'purple-950': #12001a,
+ 
+  // Cyan
+  'cyan-50': #f3fcfb,
+  'cyan-100': #e2f8f5,
+  'cyan-200': #caf2ec,
+  'cyan-300': #adebe2,
+  'cyan-400': #8de2d6,
+  'cyan-500': #64d8c8,
+  'cyan-600': #3cceb8,
+  'cyan-700': #2bab98,
+  'cyan-800': #218274,
+  'cyan-900': #10413a,
+  'cyan-950': #08211d,
+ 
+  // Sky
+  'sky-50': #e5f9ff,
+  'sky-100': #ccf3ff,
+  'sky-200': #99e8ff,
+  'sky-300': #66dcff,
+  'sky-400': #33d1ff,
+  'sky-500': #00c5ff,
+  'sky-600': #0086ad,
+  'sky-700': #005e7a,
+  'sky-800': #004357,
+  'sky-900': #002733,
+  'sky-950': #001419
+);
+ 

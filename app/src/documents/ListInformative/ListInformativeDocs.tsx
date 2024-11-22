@@ -1,33 +1,12 @@
 import CodeBox from '@/components/CodeBox';
-import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
-import MainDescription from '@/components/Template/MainDescription';
+import Tabs from '@/components/Tabs';
+import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import { LIST_INFORMATIVE_BULLET, LIST_INFORMATIVE_CHECK } from './code-views';
 
 const ListInformativeDocs: React.FC = () => {
-  const sections = [
+  const SECTIONS_DEV = [
     {
-      title: 'Lista informativa',
-      h1: true,
-      content: (
-        <>
-          <MainDescription description="Las listas informativas organizan piezas simples de información en forma vertical. Se utilizan cuando sus elementos no transmiten un orden secuencial específico." />
-          <p className="lead mb-4">
-            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-            <a
-              href="https://gcba.github.io/estandares/componentes/listas/lista-informativa/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              enlace
-            </a>
-            .
-          </p>
-        </>
-      ),
-    },
-    {
-      id: 'section-1',
       title: 'Con viñeta',
       content: (
         <CodeBox codeHTML={LIST_INFORMATIVE_BULLET}>
@@ -49,7 +28,6 @@ const ListInformativeDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-2',
       title: 'Con check',
       content: (
         <CodeBox codeHTML={LIST_INFORMATIVE_CHECK}>
@@ -74,7 +52,25 @@ const ListInformativeDocs: React.FC = () => {
 
   return (
     <>
-      <DocumentationTemplate sections={sections} />
+      <ComponentHeader
+        title="Lista informativa"
+        description={[
+          'Las listas informativas organizan piezas simples de información en forma vertical. Se utilizan cuando sus elementos no transmiten un orden secuencial específico.',
+          <>
+            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del
+            componente podés{' '}
+            <a
+              href="https://gcba.github.io/estandares/componentes/listas/lista-informativa/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              visitar la documentación en Obelisco v.1
+            </a>
+            .
+          </>,
+        ]}
+      />
+      <Tabs sectionDev={SECTIONS_DEV} />
     </>
   );
 };

@@ -1,7 +1,7 @@
 import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
-import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
-import MainDescription from '@/components/Template/MainDescription';
+import Tabs from '@/components/Tabs';
+import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import {
   HEADER_LOGIN_ONE_LINE,
@@ -26,33 +26,11 @@ const logo = '/images/logo_ba.svg';
 const logo_mobile = '/images/logo_ba_mobile.svg';
 
 const HeaderDocs: React.FC = () => {
-  const sections = [
+  const SECTIONS_DEV = [
     {
-      title: 'Encabezado (header)',
-      h1: true,
-      content: (
-        <>
-          <MainDescription description="El header es una sección ubicada en la parte superior de la página que contiene elementos y componentes relacionados a la navegación. Su función es permitir que la persona usuaria pueda navegar y acceder intuitivamente a las diferentes secciones de un sitio." />
-          <p className="lead mb-4">
-            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-            <a
-              href="https://gcba.github.io/estandares/componentes/encabezado/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              enlace
-            </a>
-            .
-          </p>
-        </>
-      ),
-    },
-    {
-      id: 'section-1',
       title: 'Deslogueado',
     },
     {
-      id: 'section-2',
       subtitle: 'En una línea',
       content: (
         <>
@@ -113,22 +91,22 @@ const HeaderDocs: React.FC = () => {
                                 </button>
                                 <div className="dropdown-menu">
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item item-link">
                                     <span className="item-text">Ver más</span>
@@ -157,22 +135,22 @@ const HeaderDocs: React.FC = () => {
                                 </button>
                                 <div className="dropdown-menu">
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item item-link">
                                     <span className="item-text">Ver más</span>
@@ -277,22 +255,22 @@ const HeaderDocs: React.FC = () => {
                                 </button>
                                 <div className="dropdown-menu">
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item item-link">
                                     <span className="item-text">Ver más</span>
@@ -321,22 +299,22 @@ const HeaderDocs: React.FC = () => {
                                 </button>
                                 <div className="dropdown-menu">
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item item-link">
                                     <span className="item-text">Ver más</span>
@@ -369,7 +347,6 @@ const HeaderDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-3',
       subtitle: 'En dos líneas',
       content: (
         <>
@@ -456,22 +433,22 @@ const HeaderDocs: React.FC = () => {
                               </button>
                               <div className="dropdown-menu">
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item item-link">
                                   <span className="item-text">Ver más</span>
@@ -500,22 +477,22 @@ const HeaderDocs: React.FC = () => {
                               </button>
                               <div className="dropdown-menu">
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item item-link">
                                   <span className="item-text">Ver más</span>
@@ -623,22 +600,22 @@ const HeaderDocs: React.FC = () => {
                               </button>
                               <div className="dropdown-menu">
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item item-link">
                                   <span className="item-text">Ver más</span>
@@ -667,22 +644,22 @@ const HeaderDocs: React.FC = () => {
                               </button>
                               <div className="dropdown-menu">
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item item-link">
                                   <span className="item-text">Ver más</span>
@@ -726,11 +703,9 @@ const HeaderDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-4',
       title: 'Logueado',
     },
     {
-      id: 'section-5',
       subtitle: 'En una línea',
       content: (
         <>
@@ -783,22 +758,22 @@ const HeaderDocs: React.FC = () => {
                                 </button>
                                 <div className="dropdown-menu">
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item item-link">
                                     <span className="item-text">Ver más</span>
@@ -827,22 +802,22 @@ const HeaderDocs: React.FC = () => {
                                 </button>
                                 <div className="dropdown-menu">
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item item-link">
                                     <span className="item-text">Ver más</span>
@@ -887,13 +862,13 @@ const HeaderDocs: React.FC = () => {
                             </button>
                             <div className="dropdown-menu dropdown-menu-end">
                               <LinkClient className="dropdown-item">
-                                <span className="item-text">Navegación 1</span>
+                                <span className="item-text">Enlace de navegación</span>
                               </LinkClient>
                               <LinkClient className="dropdown-item">
-                                <span className="item-text">Navegación 2</span>
+                                <span className="item-text">Enlace de navegación</span>
                               </LinkClient>
                               <LinkClient className="dropdown-item">
-                                <span className="item-text">Navegación 3</span>
+                                <span className="item-text">Enlace de navegación</span>
                               </LinkClient>
                               <LinkClient className="dropdown-item">
                                 <span className="item-text">Notificaciones</span>
@@ -915,17 +890,17 @@ const HeaderDocs: React.FC = () => {
                           <ul className="nav flex-column nav-pills nav-user">
                             <li className="nav-item">
                               <LinkClient className="nav-link nav-link-lg">
-                                <span>Navegación 1</span>
+                                <span>Enlace de navegación</span>
                               </LinkClient>
                             </li>
                             <li className="nav-item">
                               <LinkClient className="nav-link nav-link-lg">
-                                <span>Navegación 2</span>
+                                <span>Enlace de navegación</span>
                               </LinkClient>
                             </li>
                             <li className="nav-item">
                               <LinkClient className="nav-link nav-link-lg">
-                                <span>Navegación 3</span>
+                                <span>Enlace de navegación</span>
                               </LinkClient>
                             </li>
                             <li className="nav-item">
@@ -1005,22 +980,22 @@ const HeaderDocs: React.FC = () => {
                                 </button>
                                 <div className="dropdown-menu">
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item item-link">
                                     <span className="item-text">Ver más</span>
@@ -1049,22 +1024,22 @@ const HeaderDocs: React.FC = () => {
                                 </button>
                                 <div className="dropdown-menu">
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item item-link">
                                     <span className="item-text">Ver más</span>
@@ -1092,13 +1067,13 @@ const HeaderDocs: React.FC = () => {
                             </button>
                             <div className="dropdown-menu dropdown-menu-end">
                               <LinkClient className="dropdown-item">
-                                <span className="item-text">Navegación 1</span>
+                                <span className="item-text">Enlace de navegación</span>
                               </LinkClient>
                               <LinkClient className="dropdown-item">
-                                <span className="item-text">Navegación 2</span>
+                                <span className="item-text">Enlace de navegación</span>
                               </LinkClient>
                               <LinkClient className="dropdown-item">
-                                <span className="item-text">Navegación 3</span>
+                                <span className="item-text">Enlace de navegación</span>
                               </LinkClient>
                               <LinkClient className="dropdown-item">
                                 <span className="item-text">Notificaciones</span>
@@ -1120,17 +1095,17 @@ const HeaderDocs: React.FC = () => {
                           <ul className="nav flex-column nav-pills nav-user">
                             <li className="nav-item">
                               <LinkClient className="nav-link nav-link-lg">
-                                <span>Navegación 1</span>
+                                <span>Enlace de navegación</span>
                               </LinkClient>
                             </li>
                             <li className="nav-item">
                               <LinkClient className="nav-link nav-link-lg">
-                                <span>Navegación 2</span>
+                                <span>Enlace de navegación</span>
                               </LinkClient>
                             </li>
                             <li className="nav-item">
                               <LinkClient className="nav-link nav-link-lg">
-                                <span>Navegación 3</span>
+                                <span>Enlace de navegación</span>
                               </LinkClient>
                             </li>
                             <li className="nav-item">
@@ -1163,7 +1138,6 @@ const HeaderDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-6',
       subtitle: 'En dos líneas',
       content: (
         <>
@@ -1230,13 +1204,13 @@ const HeaderDocs: React.FC = () => {
                             </button>
                             <div className="dropdown-menu dropdown-menu-end">
                               <LinkClient className="dropdown-item">
-                                <span className="item-text">Navegación 1</span>
+                                <span className="item-text">Enlace de navegación</span>
                               </LinkClient>
                               <LinkClient className="dropdown-item">
-                                <span className="item-text">Navegación 2</span>
+                                <span className="item-text">Enlace de navegación</span>
                               </LinkClient>
                               <LinkClient className="dropdown-item">
-                                <span className="item-text">Navegación 3</span>
+                                <span className="item-text">Enlace de navegación</span>
                               </LinkClient>
                               <LinkClient className="dropdown-item">
                                 <span className="item-text">Notificaciones</span>
@@ -1270,22 +1244,22 @@ const HeaderDocs: React.FC = () => {
                               </button>
                               <div className="dropdown-menu">
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item item-link">
                                   <span className="item-text">Ver más</span>
@@ -1314,22 +1288,22 @@ const HeaderDocs: React.FC = () => {
                               </button>
                               <div className="dropdown-menu">
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item item-link">
                                   <span className="item-text">Ver más</span>
@@ -1368,17 +1342,17 @@ const HeaderDocs: React.FC = () => {
                           <ul className="nav flex-column nav-pills nav-user">
                             <li className="nav-item">
                               <LinkClient className="nav-link nav-link-lg">
-                                <span>Navegación 1</span>
+                                <span>Enlace de navegación</span>
                               </LinkClient>
                             </li>
                             <li className="nav-item">
                               <LinkClient className="nav-link nav-link-lg">
-                                <span>Navegación 2</span>
+                                <span>Enlace de navegación</span>
                               </LinkClient>
                             </li>
                             <li className="nav-item">
                               <LinkClient className="nav-link nav-link-lg">
-                                <span>Navegación 3</span>
+                                <span>Enlace de navegación</span>
                               </LinkClient>
                             </li>
                             <li className="nav-item">
@@ -1455,13 +1429,13 @@ const HeaderDocs: React.FC = () => {
                             </button>
                             <div className="dropdown-menu dropdown-menu-end">
                               <LinkClient className="dropdown-item">
-                                <span className="item-text">Navegación 1</span>
+                                <span className="item-text">Enlace de navegación</span>
                               </LinkClient>
                               <LinkClient className="dropdown-item">
-                                <span className="item-text">Navegación 2</span>
+                                <span className="item-text">Enlace de navegación</span>
                               </LinkClient>
                               <LinkClient className="dropdown-item">
-                                <span className="item-text">Navegación 3</span>
+                                <span className="item-text">Enlace de navegación</span>
                               </LinkClient>
                               <LinkClient className="dropdown-item">
                                 <span className="item-text">Notificaciones</span>
@@ -1495,22 +1469,22 @@ const HeaderDocs: React.FC = () => {
                               </button>
                               <div className="dropdown-menu">
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item item-link">
                                   <span className="item-text">Ver más</span>
@@ -1539,22 +1513,22 @@ const HeaderDocs: React.FC = () => {
                               </button>
                               <div className="dropdown-menu">
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item">
-                                  <span className="item-text">Navegación</span>
+                                  <span className="item-text">Enlace de navegación</span>
                                 </LinkClient>
                                 <LinkClient className="dropdown-item item-link">
                                   <span className="item-text">Ver más</span>
@@ -1593,17 +1567,17 @@ const HeaderDocs: React.FC = () => {
                           <ul className="nav flex-column nav-pills nav-user">
                             <li className="nav-item">
                               <LinkClient className="nav-link nav-link-lg">
-                                <span>Navegación 1</span>
+                                <span>Enlace de navegación</span>
                               </LinkClient>
                             </li>
                             <li className="nav-item">
                               <LinkClient className="nav-link nav-link-lg">
-                                <span>Navegación 2</span>
+                                <span>Enlace de navegación</span>
                               </LinkClient>
                             </li>
                             <li className="nav-item">
                               <LinkClient className="nav-link nav-link-lg">
-                                <span>Navegación 3</span>
+                                <span>Enlace de navegación</span>
                               </LinkClient>
                             </li>
                             <li className="nav-item">
@@ -1636,7 +1610,6 @@ const HeaderDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-7',
       title: 'Sin logueo',
       content: (
         <>
@@ -1689,22 +1662,22 @@ const HeaderDocs: React.FC = () => {
                                 </button>
                                 <div className="dropdown-menu">
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item item-link">
                                     <span className="item-text">Ver más</span>
@@ -1733,22 +1706,22 @@ const HeaderDocs: React.FC = () => {
                                 </button>
                                 <div className="dropdown-menu">
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item item-link">
                                     <span className="item-text">Ver más</span>
@@ -1837,22 +1810,22 @@ const HeaderDocs: React.FC = () => {
                                 </button>
                                 <div className="dropdown-menu">
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item item-link">
                                     <span className="item-text">Ver más</span>
@@ -1881,22 +1854,22 @@ const HeaderDocs: React.FC = () => {
                                 </button>
                                 <div className="dropdown-menu">
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item">
-                                    <span className="item-text">Navegación</span>
+                                    <span className="item-text">Enlace de navegación</span>
                                   </LinkClient>
                                   <LinkClient className="dropdown-item item-link">
                                     <span className="item-text">Ver más</span>
@@ -1921,7 +1894,6 @@ const HeaderDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-8',
       title: 'Sólo login',
       content: (
         <>
@@ -2049,7 +2021,6 @@ const HeaderDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-9',
       title: 'Sólo buscador',
       content: (
         <>
@@ -2113,7 +2084,6 @@ const HeaderDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-10',
       title: 'Sólo logo',
       content: (
         <>
@@ -2150,7 +2120,25 @@ const HeaderDocs: React.FC = () => {
 
   return (
     <>
-      <DocumentationTemplate sections={sections} />
+      <ComponentHeader
+        title="Encabezado (header)"
+        description={[
+          'El header es una sección ubicada en la parte superior de la página que contiene elementos y componentes relacionados a la navegación. Su función es permitir que la persona usuaria pueda navegar y acceder intuitivamente a las diferentes secciones de un sitio.',
+          <>
+            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del
+            componente podés{' '}
+            <a
+              href="https://gcba.github.io/estandares/componentes/encabezado/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              visitar la documentación en Obelisco v.1
+            </a>
+            .
+          </>,
+        ]}
+      />
+      <Tabs sectionDev={SECTIONS_DEV} />
     </>
   );
 };

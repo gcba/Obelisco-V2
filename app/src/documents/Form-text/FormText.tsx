@@ -1,6 +1,6 @@
 import CodeBox from '@/components/CodeBox';
-import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
-import MainDescription from '@/components/Template/MainDescription';
+import Tabs from '@/components/Tabs';
+import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import {
   INPUT_BACKGROUND,
@@ -19,18 +19,8 @@ import {
 } from './code-views';
 
 const FormTextDocs: React.FC = () => {
-  const sections = [
+  const SECTIONS_DEV = [
     {
-      title: 'Formularios de texto',
-      content: (
-        <>
-          <MainDescription description="Ejemplos y pautas de uso para estilos de control de formulario, opciones de diseño y componentes personalizados para crear una amplia variedad de formularios." />
-        </>
-      ),
-      h1: true,
-    },
-    {
-      id: 'section-1',
       title: 'Texto',
       content: (
         <>
@@ -57,7 +47,6 @@ const FormTextDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-2',
       title: 'Número',
       content: (
         <>
@@ -84,7 +73,6 @@ const FormTextDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-3',
       title: 'Correo electrónico',
       content: (
         <>
@@ -111,7 +99,6 @@ const FormTextDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-4',
       title: 'Fecha',
       content: (
         <>
@@ -137,7 +124,6 @@ const FormTextDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-5',
       title: 'Bloque de texto',
       content: (
         <>
@@ -162,7 +148,6 @@ const FormTextDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-6',
       title: 'De selección',
       content: (
         <>
@@ -188,7 +173,6 @@ const FormTextDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-7',
       title: 'Deshabilitado',
       content: (
         <>
@@ -302,7 +286,6 @@ const FormTextDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-8',
       title: 'Validación',
       content: (
         <>
@@ -432,7 +415,6 @@ const FormTextDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-9',
       title: 'Con fondo',
       content: (
         <>
@@ -462,7 +444,17 @@ const FormTextDocs: React.FC = () => {
     },
   ];
 
-  return <DocumentationTemplate sections={sections} />;
+  return (
+    <>
+      <ComponentHeader
+        title="Formularios de texto"
+        description={[
+          'Ejemplos y pautas de uso para estilos de control de formulario, opciones de diseño y componentes personalizados para crear una amplia variedad de formularios.',
+        ]}
+      />
+      <Tabs sectionDev={SECTIONS_DEV} />
+    </>
+  );
 };
 
 export default FormTextDocs;

@@ -7,7 +7,7 @@
 // Generic Styles
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px;
+  scroll-padding-top: 32px;
 }
 
 body {
@@ -49,62 +49,58 @@ hr {
 
   .nav-scrollspy {
     position: relative;
-    min-width: 150px;
-    width: 150px;
+    min-width: 319px;
+    width: 319px;
+    padding: 0 0 2rem 2rem;
 
-    .scrollspy {
-      list-style: none;
+    .nav-scrollspy-position {
+      position: sticky;
       top: 16px;
       right: 0;
-      background-color: transparent;
-      padding: 0 5px 5px 1rem;
-      position: sticky;
-      display: flex;
-      flex-direction: column;
-      gap: 0.3rem;
-      max-height: 80dvh;
-      overflow-y: auto;
-      scrollbar-width: thin;
 
-      li a {
-        font-weight: 600;
-        font-family:
-          'Nunito',
-          'Open Sans',
-          system-ui,
-          -apple-system,
-          'Segoe UI',
-          Roboto,
-          'Helvetica Neue',
-          Arial,
-          'Noto Sans',
-          sans-serif,
-          'Apple Color Emoji',
-          'Segoe UI Emoji',
-          'Segoe UI Symbol',
-          'Noto Color Emoji';
-      }
+      .scrollspy {
+        list-style: none;
 
-      li:active a {
-        box-shadow: 0 0 0 0.125rem #218274;
-        border-radius: 0.5rem;
-      }
+        background-color: transparent;
+        padding: 0 5px 5px 1rem;
 
-      a {
-        text-decoration: none;
-        color: #101e37;
-        &:hover {
-          color: #274986;
-        }
-      }
+        display: flex;
+        flex-direction: column;
+        max-height: 90dvh;
+        overflow-y: auto;
+        scrollbar-width: thin;
+        padding: 0;
+        margin: 0;
 
-      .active {
-        a {
-          color: #336acc;
+        li {
+          position: relative;
+          a {
+            color: #38485c;
+            text-decoration: none;
+            padding: 10px 0 10px 16px;
+            min-height: 40px;
+            &:after {
+              content: '';
+              background-color: #e6ebf0;
+              position: absolute;
+              width: 2px;
+              height: 100%;
+              left: 0;
+              top: 0;
+            }
 
-          &:focus,
-          &:active {
-            box-shadow: 0 0 0 0.125rem #218274;
+            &:focus {
+              box-shadow: none;
+            }
+          }
+
+          &.active {
+            a {
+              color: #274986;
+              &:after {
+                background-color: #274986;
+              }
+            }
           }
           .custom-scrollspy-color {
             outline: 2px solid #101e37;
@@ -114,9 +110,9 @@ hr {
       }
     }
   }
-  .box-content .box-section:last-child {
+  .box-content .box-section:last-of-type {
     @media screen and (min-width: 992px) {
-      min-height: calc(100vh - 80px);
+      min-height: 40vh;
     }
   }
 }
@@ -184,8 +180,8 @@ hr {
 }
 
 .color-box {
-  width: 150px;
-  height: 72px;
+  width: 200px;
+  height: 96px;
   border-radius: 0.5rem;
   text-align: center;
   display: flex;
@@ -207,18 +203,55 @@ hr {
   gap: 0.5rem;
 }
 
+.box-color {
+  padding: 0.75rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  border-bottom: 2px solid #e6ebf0;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+
+  .box-color-rectangle {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+  }
+  .box-color-title,
+  .box-color-hex {
+    margin-bottom: 0;
+    &.fixed {
+      width: 90px;
+      min-width: 90px;
+    }
+  }
+}
+
 // estilos navegacion vertical izquierdo
+.nav-divider {
+  background: #e6ebf0;
+  margin-bottom: 2rem;
+}
+.custom-layout-container {
+  @media screen and (min-width: 1200px) {
+    max-width: 100%;
+  }
+}
+.custom-col-9-desktop {
+  @media screen and (min-width: 1200px) {
+    padding-left: 2rem;
+    padding-right: 1.5rem;
+  }
+}
 .sticky-nav {
   position: sticky;
   top: 16px;
   overflow-y: scroll;
   height: 95dvh;
   scrollbar-width: thin;
-
-  nav {
-    padding: 0.3rem;
-    margin-bottom: 1.5rem;
-  }
+  padding: 0 1.5rem 0 0.5rem;
 
   &.h-auto {
     overflow-y: unset;
@@ -228,6 +261,21 @@ hr {
 .box-content {
   width: 100%;
   overflow-x: hidden;
+}
+.component-header {
+  @media screen and (min-width: 1200px) {
+    margin-top: 2rem;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  p {
+    margin-bottom: 20px;
+    color: #38485c;
+    max-width: 728px;
+  }
 }
 
 //Listas en documentacion
@@ -239,6 +287,14 @@ hr {
   code {
     font-size: 1rem;
   }
+}
+
+code {
+  font-size: 1rem;
+  color: #9100cc;
+}
+pre {
+  background: #002733 !important;
 }
 
 //Contenedor para mostrar variantes de componente header

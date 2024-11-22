@@ -88,7 +88,7 @@ export const VERTICAL_ICON = `
   <i class="bx bxs-info-circle card-icon"></i>
   <div class="card-body">
     <h3 class="card-title">
-      <a href="#" class="card-title-link">Título de la tarjeta</a>
+      <a href="#">Título de la tarjeta</a>
     </h3>
     <p class="card-text">Descripción de la tarjeta</p>
   </div>
@@ -119,7 +119,9 @@ export const VERTICAL_NOTICE = `
     <p class="card-text">Descripción de la tarjeta</p>
     <div class="card-info">
       <div>
-        <small><span>Fecha de publicación</span></small>
+        <small>
+          <span>Fecha de publicación</span>
+        </small>
       </div>
     </div>
   </div>
@@ -141,7 +143,9 @@ export const VERTICAL_NOTICE_TRUNCATE = `
     <p class="card-text">Descripción de la tarjeta</p>
     <div class="card-info">
       <div>
-        <small><span>Fecha de publicación</span></small>
+        <small>
+          <span>Fecha de publicación</span>
+        </small>
       </div>
     </div>
   </div>

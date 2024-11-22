@@ -66,7 +66,12 @@ export default function ComponentsPage() {
         </div>
       </div>
       <div className="mb-5 bg-light p-3 rounded-4">
-        <p className="headline-lg fw-bold">Organismos</p>
+        <p className="headline-lg fw-bold d-flex">
+          <span className="material-symbols-rounded o-icon me-2" aria-hidden="true">
+            widget_small
+          </span>
+          Organismos
+        </p>
         <div className="access-items-3">
           {organismsPages.map(({ text, url, id }) => (
             <div className="col" key={id}>

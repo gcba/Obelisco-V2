@@ -63,7 +63,6 @@ const GalleryDocs: React.FC = () => {
           content: (
             <MainDescription description="Descubre nuestra galería de imágenes. Navega a través de una cuadrícula de fotos interactivas y de una vista ampliada con nuestro carrusel." />
           ),
-          h1: true,
         },
         {
           id: 'section-1',

@@ -1,14 +1,11 @@
 import CodeBox from '@/components/CodeBox';
-import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
+import Tabs from '@/components/Tabs';
+import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import { SCROLLBAR_HORIZONTAL, SCROLLBAR_VERTICAL } from './code-views';
 
 const ScrollBarDocs: React.FC = () => {
-  const sections = [
-    {
-      title: 'Barra de desplazamiento',
-      h1: true,
-    },
+  const SECTIONS_DEV = [
     {
       id: 'section-1',
       title: 'Horizontal',
@@ -92,7 +89,12 @@ const ScrollBarDocs: React.FC = () => {
     },
   ];
 
-  return <DocumentationTemplate sections={sections} />;
+  return (
+    <>
+      <ComponentHeader title="Barra de desplazamiento" />
+      <Tabs sectionDev={SECTIONS_DEV} />
+    </>
+  );
 };
 
 export default ScrollBarDocs;

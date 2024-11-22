@@ -1,34 +1,13 @@
 import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
-import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
-import MainDescription from '@/components/Template/MainDescription';
+import Tabs from '@/components/Tabs';
+import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import { BADGE_COLORS, BADGE_TYPES } from './code-views';
 
 const BadgeDocs: React.FC = () => {
-  const sections = [
+  const SECTIONS_DEV = [
     {
-      title: 'Etiquetas',
-      content: (
-        <>
-          <MainDescription description="Las etiquetas se utilizan para identificar y categorizar la información dentro de una página proporcionando más detalles a los usuarios sobre el contenido que necesitan." />
-          <p className="lead mb-4">
-            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-            <a
-              href="https://gcba.github.io/estandares/componentes/etiquetas/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              enlace
-            </a>
-            .
-          </p>
-        </>
-      ),
-      h1: true,
-    },
-    {
-      id: 'section-1',
       title: 'Colores',
       content: (
         <CodeBox codeHTML={BADGE_COLORS}>
@@ -47,7 +26,6 @@ const BadgeDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-2',
       title: 'Enlace',
       content: (
         <CodeBox codeHTML={BADGE_TYPES}>
@@ -89,7 +67,29 @@ const BadgeDocs: React.FC = () => {
     },
   ];
 
-  return <DocumentationTemplate sections={sections} />;
+  return (
+    <>
+      <ComponentHeader
+        title="Etiquetas"
+        description={[
+          'Las etiquetas se utilizan para identificar y categorizar la información dentro de una página proporcionando más detalles a los usuarios sobre el contenido que necesitan.',
+          <>
+            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del
+            componente podés{' '}
+            <a
+              href="https://gcba.github.io/estandares/componentes/etiquetas/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              visitar la documentación en Obelisco v.1
+            </a>
+            .
+          </>,
+        ]}
+      />
+      <Tabs sectionDev={SECTIONS_DEV} />
+    </>
+  );
 };
 
 export default BadgeDocs;

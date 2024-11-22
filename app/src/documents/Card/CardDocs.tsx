@@ -2,8 +2,8 @@ import Image from 'next/image';
 
 import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
-import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
-import MainDescription from '@/components/Template/MainDescription';
+import Tabs from '@/components/Tabs';
+import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import {
   DISPOSITION_2,
@@ -23,29 +23,11 @@ import {
 const basePath = '/Obelisco-V2';
 
 const CardDocs: React.FC = () => {
-  const sections = [
+  const SECTIONS_DEV = [
     {
-      title: 'Tarjetas',
-      h1: true,
-      content: (
-        <div>
-          <MainDescription description="Las tarjetas son componentes accionables que se utilizan en grupo para comunicar información que requiere de cierto tipo de categorización y jerarquización visual. Se visualizan en contenedores flexibles y actúan como punto de entrada a un tema en particular." />
-          <p className="lead mb-4">
-            Si quieres conocer las buenas prácticas de uso del componente, puedes visitar el siguiente&nbsp;
-            <a href="https://gcba.github.io/estandares/componentes/tarjetas/" target="_blank" rel="noopener noreferrer">
-              enlace
-            </a>
-            .
-          </p>
-        </div>
-      ),
-    },
-    {
-      id: 'section-1',
       title: 'Horizontal',
     },
     {
-      id: 'section-2',
       subtitle: 'Con icono',
       content: (
         <CodeBox codeHTML={HORIZONTAL_ICON}>
@@ -76,7 +58,6 @@ const CardDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-3',
       subtitle: 'Con imagen',
       content: (
         <CodeBox codeHTML={HORIZONTAL_IMG}>
@@ -119,7 +100,6 @@ const CardDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-4',
       subtitle: 'Solo texto',
       content: (
         <CodeBox codeHTML={HORIZONTAL_TEXT}>
@@ -148,7 +128,6 @@ const CardDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-5',
       subtitle: 'Temática',
       content: (
         <CodeBox codeHTML={HORIZONTAL_THEME}>
@@ -175,11 +154,9 @@ const CardDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-6',
       title: 'Vertical',
     },
     {
-      id: 'section-7',
       subtitle: 'Con icono',
       content: (
         <CodeBox codeHTML={VERTICAL_ICON}>
@@ -210,7 +187,6 @@ const CardDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-8',
       subtitle: 'Con imagen',
       content: (
         <CodeBox codeHTML={VERTICAL_IMG}>
@@ -237,7 +213,6 @@ const CardDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-9',
       subtitle: 'Noticia',
       content: (
         <>
@@ -314,7 +289,6 @@ const CardDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-10',
       subtitle: 'Agenda',
       content: (
         <CodeBox codeHTML={VERTICAL_AGENDA}>
@@ -354,11 +328,9 @@ const CardDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-11',
       title: 'Disposición',
     },
     {
-      id: 'section-12',
       subtitle: 'Tres columnas',
       content: (
         <CodeBox codeHTML={DISPOSITION_3}>
@@ -427,7 +399,6 @@ const CardDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-13',
       subtitle: 'Dos columnas',
       content: (
         <CodeBox codeHTML={DISPOSITION_2}>
@@ -496,7 +467,6 @@ const CardDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-14',
       subtitle: 'Desplazable',
       content: (
         <CodeBox codeHTML={DISPOSITION_SCROLL}>
@@ -587,7 +557,25 @@ const CardDocs: React.FC = () => {
     },
   ];
 
-  return <DocumentationTemplate sections={sections} />;
+  return (
+    <>
+      <ComponentHeader
+        title="Tarjetas"
+        description={[
+          'Las tarjetas son componentes accionables que se utilizan en grupo para comunicar información que requiere de cierto tipo de categorización y jerarquización visual. Se visualizan en contenedores flexibles y actúan como punto de entrada a un tema en particular.',
+          <>
+            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del
+            componente podés{' '}
+            <a href="https://gcba.github.io/estandares/componentes/tarjetas/" target="_blank" rel="noopener noreferrer">
+              visitar la documentación en Obelisco v.1
+            </a>
+            .
+          </>,
+        ]}
+      />
+      <Tabs sectionDev={SECTIONS_DEV} />
+    </>
+  );
 };
 
 export default CardDocs;

@@ -1,6 +1,6 @@
 import CodeBox from '@/components/CodeBox';
-import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
-import MainDescription from '@/components/Template/MainDescription';
+import Tabs from '@/components/Tabs';
+import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import {
   CHECKBOX,
@@ -14,17 +14,12 @@ import {
 } from './code-views';
 
 const FormSelectionDocs: React.FC = () => {
-  const sections = [
+  const SECTIONS_DEV = [
     {
-      title: 'Casillas de selección (Radio y Checkbox)',
-      h1: true,
-      content: (
-        <MainDescription description="Las casillas de selección permiten a los usuarios elegir entre opciones únicas o múltiples. Radio se usa para seleccionar solo una opción dentro de un grupo, mientras que Checkbox permite seleccionar varias opciones a la vez." />
-      ),
+      title: 'Casilla de selección única (Radio)',
     },
     {
-      id: 'section-1',
-      title: 'Casilla de selección única (Radio)',
+      subtitle: 'Predeterminada',
       content: (
         <CodeBox codeHTML={RADIO}>
           <div className="container">
@@ -83,8 +78,7 @@ const FormSelectionDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-2',
-      title: 'Casilla de selección única deshabilitada',
+      subtitle: 'Deshabilitada',
       content: (
         <CodeBox codeHTML={RADIO_DISABLED}>
           <div className="container">
@@ -120,8 +114,7 @@ const FormSelectionDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-3',
-      title: 'Casilla de selección única sin texto',
+      subtitle: 'Sin texto',
       content: (
         <CodeBox codeHTML={RADIO_NO_TEXT}>
           <div className="container">
@@ -144,8 +137,10 @@ const FormSelectionDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-4',
       title: 'Casilla de selección múltiple (Checkbox)',
+    },
+    {
+      subtitle: 'Predeterminada',
       content: (
         <CodeBox codeHTML={CHECKBOX}>
           <div className="container">
@@ -204,54 +199,7 @@ const FormSelectionDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-5',
-      title: 'Casilla de selección múltiple sin texto',
-      content: (
-        <CodeBox codeHTML={CHECKBOX_NO_TEXT}>
-          <div className="container">
-            <div className="form-checkbox">
-              <input
-                className="form-checkbox-input"
-                type="checkbox"
-                name="checkboxNoText"
-                id="checkbox-no-text"
-                value="Sin texto"
-              />
-              <label
-                className="form-checkbox-label"
-                htmlFor="checkbox-no-text"
-                aria-label="Casilla múltiple sin texto"
-              ></label>
-            </div>
-          </div>
-        </CodeBox>
-      ),
-    },
-    {
-      id: 'section-6',
-      title: "Casilla 'Términos y condiciones'",
-      content: (
-        <CodeBox codeHTML={CHECKBOX_TERMS}>
-          <div className="container">
-            <div className="form-checkbox">
-              <input
-                className="form-checkbox-input"
-                type="checkbox"
-                name="checkboxTerms"
-                id="checkbox-terms"
-                value="copywrite"
-              />
-              <label className="form-checkbox-label" htmlFor="checkbox-terms">
-                Acepto los <a href="#">términos y condiciones</a>
-              </label>
-            </div>
-          </div>
-        </CodeBox>
-      ),
-    },
-    {
-      id: 'section-7',
-      title: 'Casilla de selección múltiple deshabilitada',
+      subtitle: 'Deshabilitada',
       content: (
         <CodeBox codeHTML={CHECKBOX_DISABLED}>
           <div className="container">
@@ -287,7 +235,50 @@ const FormSelectionDocs: React.FC = () => {
       ),
     },
     {
-      id: 'section-8',
+      subtitle: 'Sin texto',
+      content: (
+        <CodeBox codeHTML={CHECKBOX_NO_TEXT}>
+          <div className="container">
+            <div className="form-checkbox">
+              <input
+                className="form-checkbox-input"
+                type="checkbox"
+                name="checkboxNoText"
+                id="checkbox-no-text"
+                value="Sin texto"
+              />
+              <label
+                className="form-checkbox-label"
+                htmlFor="checkbox-no-text"
+                aria-label="Casilla múltiple sin texto"
+              ></label>
+            </div>
+          </div>
+        </CodeBox>
+      ),
+    },
+    {
+      subtitle: "Casilla 'Términos y condiciones'",
+      content: (
+        <CodeBox codeHTML={CHECKBOX_TERMS}>
+          <div className="container">
+            <div className="form-checkbox">
+              <input
+                className="form-checkbox-input"
+                type="checkbox"
+                name="checkboxTerms"
+                id="checkbox-terms"
+                value="copywrite"
+              />
+              <label className="form-checkbox-label" htmlFor="checkbox-terms">
+                Acepto los <a href="#">términos y condiciones</a>
+              </label>
+            </div>
+          </div>
+        </CodeBox>
+      ),
+    },
+    {
       title: 'Posicionamiento',
       content: (
         <CodeBox codeHTML={CHECKBOX_RADIO_POSITION}>
@@ -322,7 +313,17 @@ const FormSelectionDocs: React.FC = () => {
     },
   ];
 
-  return <DocumentationTemplate sections={sections} />;
+  return (
+    <>
+      <ComponentHeader
+        title="Casillas de selección (Radio y Checkbox)"
+        description={[
+          'Las casillas de selección permiten a los usuarios elegir entre opciones únicas o múltiples. Radio se usa para seleccionar solo una opción dentro de un grupo, mientras que Checkbox permite seleccionar varias opciones a la vez.',
+        ]}
+      />
+      <Tabs sectionDev={SECTIONS_DEV} />
+    </>
+  );
 };
 
 export default FormSelectionDocs;

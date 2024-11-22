@@ -41,7 +41,7 @@ const ColorsDocs: React.FC = () => {
       title: 'Colores principales',
       content: (
         <>
-          <p>
+          <p className="mb-4">
             Utilizamos un grupo seleccionado de colores para formar una paleta más compacta, que sirve para crear
             esquemas de color en los distintos componentes.
           </p>
@@ -60,21 +60,42 @@ const ColorsDocs: React.FC = () => {
       title: 'Fondos',
       content: (
         <>
-          <p>Para los fondos de los elementos, se encuentran disponibles las siguientes clases:</p>
-          <div className="d-flex gap-4 justify-content-center mb-3 flex-wrap text-white mx-auto">
+          <p className="mb-4">Para los fondos de los elementos, se encuentran disponibles las siguientes clases:</p>
+          <div className="d-flex gap-4 justify-content-center mb-5 flex-wrap text-white mx-auto">
             <div className="color-box bg-white text-dark" style={{ border: '2px solid #e6ebf0' }}>
               <span className="headline-md fw-bold">.bg-white</span>
               <span className="text-xs">#FFFFFF</span>
-            </div>
-            <div className="color-box bg-light text-dark">
-              <span className="headline-md fw-bold">.bg-light</span>
-              <span className="text-xs">#F3F6F9</span>
             </div>
             <div className="color-box bg-dark text-white">
               <span className="headline-md fw-bold">.bg-dark</span>
               <span className="text-xs">#002733</span>
             </div>
+            <div className="color-box bg-light text-dark">
+              <span className="headline-md fw-bold">.bg-light</span>
+              <span className="text-xs">#F3F6F9</span>
+            </div>
+            <div className="color-box bg-neutral text-dark">
+              <span className="headline-md fw-bold">.bg-neutral</span>
+              <span className="text-xs">#E6EBF0</span>
+            </div>
+            <div className="color-box bg-muted text-dark">
+              <span className="headline-md fw-bold">.bg-muted</span>
+              <span className="text-xs">#D1D8E0</span>
+            </div>
           </div>
+          <p className="mb-4">
+            Existen clases disponibles para aplicar un determinado color de fondo a un elemento (
+            <code>background-color</code>) basado en los colores de los{' '}
+            <span className="fw-semibold">Colores primitivos</span> en la pestaña de Paleta.
+          </p>
+          <p className="mb-4">
+            Estas clases deben utilizarse con atención a las consideraciones de accesibilidad, especialmente en lo que
+            respecta al contraste adecuado. Para ello, puedes consultar la sección de{' '}
+            <span className="fw-semibold">Accesibilidad</span> en la pestaña de Guía de uso.
+          </p>
+          <p>
+            La nomenclatura de las clases sigue la estructura <code>.bg-&#123;nombre-del-color-primitivo&#125;</code>.
+          </p>
         </>
       ),
     },
@@ -88,10 +109,7 @@ const ColorsDocs: React.FC = () => {
             Son los colores de la primera capa de la arquitectura de la paleta de color. No se utilizan directamente,
             sino que sirven como referencia para crear variables más específicas en las capas semántica y funcional.
           </p>
-          <p
-            className="text-body-secondary d-flex text-sm align-items-center gap-1 mb-0"
-            style={{ paddingBottom: '44px' }}
-          >
+          <p className="text-body-secondary d-flex text-sm align-items-center gap-1 mb-0 pb-5">
             <span className="material-symbols-rounded" aria-hidden="true" style={{ color: '#CC7700' }}>
               lock
             </span>
@@ -127,7 +145,7 @@ const ColorsDocs: React.FC = () => {
             <span className="material-symbols-rounded" aria-hidden="true" style={{ color: '#0086AD' }}>
               info
             </span>
-            <span>Estas variables están disponibles sólo en Figma. No están disponibles en el código. </span>
+            <span>Estas variables están disponibles sólo en Figma. No están disponibles en el código.</span>
           </p>
         </div>
       ),
@@ -150,8 +168,8 @@ const ColorsDocs: React.FC = () => {
         <div>
           <p>
             Existen variables de color de texto para cada color principal. Sin embargo, las que utilizamos por defecto
-            para activos digitales del GCBA son <strong>$body-primary</strong> y <strong>$body-secondary</strong>, que
-            aseguran un buen contraste y legibilidad.
+            para activos digitales del GCBA son <span className="fw-semibold">$body-primary</span> y{' '}
+            <span className="fw-semibold">$body-secondary</span>, que aseguran un buen contraste y legibilidad.
           </p>
           <PalletteTable arrayTableColors={TEXT_COLORS} />
         </div>
@@ -181,7 +199,7 @@ const ColorsDocs: React.FC = () => {
     {
       subtitle: 'Colores de fondos',
       content: (
-        <div>
+        <div className="pb-1">
           <p>
             Son los colores que utilizamos para los fondos de componentes y páginas construidas para activos digitales
             del GCBA. El color de fondo predeterminado para cualquier elemento y plantillas de Obelisco es $bg-white.
@@ -312,25 +330,25 @@ const ColorsDocs: React.FC = () => {
         <div className="list-informative pb-3">
           <ul className="list-informative-bullet">
             <li>
-              <span className="fw-semibold">Accesibilidad</span>: todas las combinaciones de color definidas deben pasar
-              los requerimientos de contraste mínimos de accesibilidad especificados por WCAG 2.2.{' '}
+              <span className="fw-semibold">Accesible</span>: todas las combinaciones de color definidas deben pasar los
+              requerimientos de contraste mínimos de accesibilidad especificados por WCAG 2.2.{' '}
             </li>
             <li>
-              <span className="fw-semibold">Coherencia</span>: se deben mantener los significados estipulados para cada
+              <span className="fw-semibold">Coherente</span>: se deben mantener los significados estipulados para cada
               color. Por ejemplo, el color rojo se relaciona con peligro, y el verde con éxito.{' '}
             </li>
             <li>
-              <span className="fw-semibold">Funcionalidad</span>: nuestro sistema propone que los colores estén atados a
-              un propósito y significado específico. No deben utilizarse de forma arbitraria y no tienen un objetivo
+              <span className="fw-semibold">Funcional</span>: nuestro sistema propone que los colores estén atados a un
+              propósito y significado específico. No deben utilizarse de forma arbitraria y no tienen un objetivo
               decorativo.{' '}
             </li>
             <li>
-              <span className="fw-semibold">Moderación</span>: el uso excesivo de color en una interfaz puede reducir la
+              <span className="fw-semibold">Moderada</span>: el uso excesivo de color en una interfaz puede reducir la
               claridad de la comunicación y distraer a las personas usuarias. Recomendamos dosificar el color sólo para
               resaltar información o acciones clave.{' '}
             </li>
             <li>
-              <span className="fw-semibold">Flexibilidad</span>: trabajamos con variables para poder generar un sistema
+              <span className="fw-semibold">Flexible</span>: trabajamos con variables para poder generar un sistema
               robusto y escalable.{' '}
             </li>
           </ul>
@@ -340,40 +358,24 @@ const ColorsDocs: React.FC = () => {
     {
       title: 'Accesibilidad',
       content: (
-        <>
-          <p>
-            Los colores de nuestra paleta fueron seleccionados y testeados para poder cumplir con los requerimientos de
-            accesibilidad de WCAG 2.2 en contraste y uso del color. Evitá usar colores por fuera de esta paleta, ya que
-            puede generar experiencias inaccesibles para algunas personas usuarias.{' '}
-          </p>
-        </>
-      ),
-    },
-    {
-      subtitle: 'Combinaciones de texto y fondo',
-      content: (
-        <div>
-          <p>
-            En la sección de paleta vas a encontrar muestras de cada color con una etiqueta del nivel de conformidad que
-            pasa la combinación de texto y fondo. Recomendamos siempre utilizar combinaciones AAA para garantizar el
-            máximo contraste posible. Si encontrás muestras que no tienen ni la etiqueta AA o AAA, es porque esa
-            combinación no pasa accesibilidad y, por lo tanto, debe evitarse su uso.
-          </p>
-          <img src={`${basePath}/images/colors/color_1.svg`} className="w-100" alt="Combinaciones de texto y fondo" />
-        </div>
+        <p>
+          Los colores de nuestra paleta fueron seleccionados y testeados para poder cumplir con los requerimientos de
+          accesibilidad de WCAG 2.2 en contraste y uso del color. Evitá usar colores por fuera de esta paleta, ya que
+          puede generar experiencias inaccesibles para algunas personas usuarias.{' '}
+        </p>
       ),
     },
     {
       subtitle: 'Uso del color',
       content: (
-        <div>
-          <p>
+        <>
+          <p className="mb-4">
             El color no debe usarse como el único medio para transmitir información, indicar una acción, generar una
             respuesta o distinguir un elemento visual. Dado que muchas personas usuarias tienen dificultades para
-            percibir el color, es importante reforzar el mensaje añadiendo otros elementos. Un ejemplo puede ser agregar
-            texto de soporte en un campo de formulario con error, además de cambiar el color de su borde por el rojo.{' '}
+            percibir el color, es importante reforzar el mensaje añadiendo otros elementos.{' '}
           </p>
-        </div>
+          <img src={`${basePath}/images/colors/color_1.svg`} className="w-100" alt="Uso del color" />
+        </>
       ),
     },
     {
@@ -390,12 +392,27 @@ const ColorsDocs: React.FC = () => {
       ),
     },
     {
+      subtitle: 'Combinaciones de texto y fondo',
+      content: (
+        <div>
+          <p className="mb-4">
+            En la sección de paleta vas a encontrar muestras de cada color con una etiqueta del nivel de conformidad que
+            pasa la combinación de texto y fondo. Recomendamos siempre utilizar combinaciones AAA para garantizar el
+            máximo contraste posible. Si encontrás muestras que no tienen ni la etiqueta AA o AAA, es porque esa
+            combinación no pasa accesibilidad y, por lo tanto, debe evitarse su uso.
+          </p>
+          <img src={`${basePath}/images/colors/color_2.svg`} className="w-100" alt="Combinaciones de texto y fondo" />
+        </div>
+      ),
+    },
+
+    {
       subtitle: 'Contraste para elementos que no son de texto',
       content: (
         <div>
           <p>
             Los componentes de una interfaz, sus estados, y los objetos gráficos deben tener como mínimo un ratio de
-            contraste de 3:1 con respecto a los colores adyacentes.{' '}
+            contraste de 3:1 con respecto a los colores más cercanos (adyacentes).{' '}
           </p>
           <p>Los criterios de éxito que tenemos en cuenta son:</p>
           <div className="list-link pb-3">
@@ -485,7 +502,7 @@ const ColorsDocs: React.FC = () => {
             La paleta de color está disponible en Figma en forma de variables. El uso de variables facilita el
             mantenimiento y permite trabajar en un sistema escalable y robusto.
           </p>
-          <img src={`${basePath}/images/colors/color_2.svg`} className="w-100" alt="Variables en Figma" />
+          <img src={`${basePath}/images/colors/color_3.svg`} className="w-100" alt="Variables en Figma" />
         </div>
       ),
     },

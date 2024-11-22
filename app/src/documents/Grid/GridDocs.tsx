@@ -17,19 +17,19 @@ const GridDocs: React.FC = () => {
           <div className="list-informative pb-3">
             <ul className="list-informative-bullet">
               <li>
-                <span className="fw-semibold">Coherencia visual</span>: Estandariza la disposición y alineación de los
+                <span className="fw-semibold">Coherencia visual</span>: estandariza la disposición y alineación de los
                 elementos de una interfaz.
               </li>
               <li>
-                <span className="fw-semibold">Escalabilidad</span>: Facilita la adaptación de la interfaz en diferentes
+                <span className="fw-semibold">Escalabilidad</span>: facilita la adaptación de la interfaz en diferentes
                 dispositivos y resoluciones.
               </li>
               <li>
-                <span className="fw-semibold">Familiaridad</span>: Proporciona caminos claros e intuitivos a la persona
+                <span className="fw-semibold">Familiaridad</span>: proporciona caminos claros e intuitivos a la persona
                 usuaria al interactuar con el producto.
               </li>
               <li>
-                <span className="fw-semibold">Legibilidad</span>: Genera jerarquías para la percepción de los contenidos
+                <span className="fw-semibold">Legibilidad</span>: genera jerarquías para la percepción de los contenidos
                 en grupos o módulos.{' '}
               </li>
             </ul>
@@ -43,24 +43,16 @@ const GridDocs: React.FC = () => {
         <>
           <p className="pb-3">
             Creamos una grilla que sigue{' '}
-            <a
-              href="https://gcba.github.io/estandares/creamos_experiencias/dise%C3%B1o/"
-              target="_blank"
-              aria-label="Más información sobre principios de diseño centrados en el usuario"
-            >
+            <a href="https://gcba.github.io/estandares/creamos_experiencias/dise%C3%B1o/" target="_blank">
               principios de diseño centrados en el usuario
             </a>
-            , utilizando patrones conocidos y validados que aseguren que la información sea comprensible. Al idear
+            , utilizando patrones conocidos y validados que aseguran que la información sea comprensible. Al idear
             nuestros estilos, nos apoyamos en{' '}
-            <a href="https://lawsofux.com/es/" target="_blank" aria-label="Más información sobre leyes UX">
+            <a href="https://lawsofux.com/es/" target="_blank">
               leyes UX
             </a>{' '}
             y en{' '}
-            <a
-              href="https://gcba.github.io/estandares/creamos_experiencias/dise%C3%B1o/gestalt/"
-              target="_blank"
-              aria-label="Más información sobre principios de la Gestalt"
-            >
+            <a href="https://gcba.github.io/estandares/creamos_experiencias/dise%C3%B1o/gestalt/" target="_blank">
               principios de la Gestalt
             </a>
             .
@@ -94,8 +86,7 @@ const GridDocs: React.FC = () => {
       content: (
         <>
           <p>
-            Obelisco utiliza una grilla de columnas para las interfaces de sus productos digitales. La grilla se compone
-            de:
+            Utilizamos una grilla de columnas para las interfaces de sus productos digitales. La grilla se compone de:
           </p>
           <ul className="list-informative-bullet mb-3">
             <li>
@@ -133,9 +124,9 @@ const GridDocs: React.FC = () => {
             columnas.
           </p>
 
-          <div className="pt-4 mt-1">
-            <div className="row">
-              <div className="col-md-6 mb-4">
+          <div className="py-4">
+            <div className="max-items-2">
+              <div className="col">
                 <Image
                   src={`${basePath}/images/grilla/uso-1.svg`}
                   alt="Referencia visual reglas de uso de grillas"
@@ -145,10 +136,10 @@ const GridDocs: React.FC = () => {
                 />
                 <div className="d-flex pt-3">
                   <span className="material-symbols-rounded text-success">check</span>
-                  <p>Colocar los componentes sobre las columnas.</p>
+                  <p className="mb-0">Colocar los componentes sobre las columnas.</p>
                 </div>
               </div>
-              <div className="col-md-6 mb-4">
+              <div className="col">
                 <Image
                   src={`${basePath}/images/grilla/uso-2.svg`}
                   alt="Referencia visual reglas de uso de grillas"
@@ -158,10 +149,10 @@ const GridDocs: React.FC = () => {
                 />
                 <div className="d-flex pt-3">
                   <span className="material-symbols-rounded text-danger">close</span>
-                  <p>No colocar componentes sobre las calles. </p>
+                  <p className="mb-0">No colocar componentes sobre las calles. </p>
                 </div>
               </div>
-              <div className="col-md-6 mb-4">
+              <div className="col">
                 <Image
                   src={`${basePath}/images/grilla/uso-3.svg`}
                   alt="Referencia visual reglas de uso de grillas"
@@ -171,10 +162,10 @@ const GridDocs: React.FC = () => {
                 />
                 <div className="d-flex pt-3">
                   <span className="material-symbols-rounded text-success">check</span>
-                  <p>Ubicar los componentes dentro del área de columnas</p>
+                  <p className="mb-0">Ubicar los componentes dentro del área de columnas</p>
                 </div>
               </div>
-              <div className="col-md-6 mb-4">
+              <div className="col">
                 <Image
                   src={`${basePath}/images/grilla/uso-4.svg`}
                   alt="Referencia visual reglas de uso de grillas"
@@ -184,7 +175,7 @@ const GridDocs: React.FC = () => {
                 />
                 <div className="d-flex pt-3">
                   <span className="material-symbols-rounded text-danger">close</span>
-                  <p>No colocar componentes sobre los márgenes. </p>
+                  <p className="mb-0">No colocar componentes sobre los márgenes. </p>
                 </div>
               </div>
             </div>
@@ -285,7 +276,7 @@ const GridDocs: React.FC = () => {
       ),
     },
     {
-      title: 'Dispositivos',
+      subtitle: 'Dispositivos',
       content: (
         <>
           <p>
@@ -305,7 +296,7 @@ const GridDocs: React.FC = () => {
             </li>
           </ul>
 
-          <div className="pt-4">
+          <div className="py-4">
             <Image
               src={`${basePath}/images/grilla/dispositivos.svg`}
               alt="Referencia visual de uso de grillas en diferentes dispositivos."
@@ -390,7 +381,7 @@ const GridDocs: React.FC = () => {
             entendimiento de la información. En pantallas de tamaños <i>tablet</i> o <i>mobile</i>, las secciones se
             colocan una debajo de la otra y no existen secciones laterales.
           </p>
-          <div className="pt-2 mb-3">
+          <div className="pt-2 mb-5">
             <Image
               src={`${basePath}/images/grilla/mobile.svg`}
               alt="Referencia visual de uso de grillas en pantallas de dispositivos mobiles"

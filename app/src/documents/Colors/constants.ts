@@ -187,7 +187,7 @@ export const PRINCIPALS_COLORS: ColorTableArray[] = [
     use: 'Comunica mensajes informativos y se utiliza en alertas, etiquetas y mensajes de estado.',
   },
   { base: '$slate/50', hex: '#F3F6F9', variable: '$light', use: 'Genera contraste con fondos oscuros.' },
-  { base: '$sky/900', hex: '#002733', variable: '$danger', use: 'Genera contraste con fondos claros.' },
+  { base: '$sky/900', hex: '#002733', variable: '$dark', use: 'Genera contraste con fondos claros.' },
 ];
 export const TEXT_COLORS: ColorTableArray[] = [
   {
@@ -331,19 +331,19 @@ export const BACKGROUND_COLORS: ColorTableArray[] = [
   {
     base: '$light',
     hex: '#F3F6F9',
-    variable: '$bg-lightest',
+    variable: '$bg-light',
     use: 'Se utiliza para el fondo de los encabezados de página y para generar contraste con fondos claros en algunos componentes.',
   },
   {
     base: '$slate/100',
     hex: '#E6EBF0',
-    variable: '$bg-lighter',
+    variable: '$bg-neutral',
     use: 'Se utiliza como fondo del banner claro y de pestañas. ',
   },
   {
     base: '$slate/200',
     hex: '#D1D8E0',
-    variable: '$bg-light',
+    variable: '$bg-muted',
     use: 'Se utiliza como fondo de la barra de progreso y del switch. ',
   },
 ];

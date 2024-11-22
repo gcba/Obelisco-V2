@@ -1,7 +1,13 @@
 'use client';
 import React from 'react';
 
-const ScrollspySubtitle = ({ text, ScrollspyComponent = false }: { text: string | React.ReactNode; ScrollspyComponent?: boolean }) => {
+const ScrollspySubtitle = ({
+  text,
+  ScrollspyComponent = false,
+}: {
+  text: string | React.ReactNode;
+  ScrollspyComponent?: boolean;
+}) => {
   return (
     <div
       className={`d-flex align-items-center ${ScrollspyComponent ? 'ps-3' : ''}`.trim()}

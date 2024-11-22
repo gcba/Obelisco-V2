@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const ScrollTopButton = () => {
   const scrollToTop = () => {
@@ -7,7 +7,7 @@ const ScrollTopButton = () => {
       behavior: 'smooth',
     });
   };
-  
+
   return (
     <div className="text-end me-1">
       <button className="btn btn-outline-tertiary btn-lg" type="button" onClick={scrollToTop}>
@@ -17,7 +17,7 @@ const ScrollTopButton = () => {
         Volver arriba
       </button>
     </div>
-  )
-}
+  );
+};
 
-export default ScrollTopButton
+export default ScrollTopButton;

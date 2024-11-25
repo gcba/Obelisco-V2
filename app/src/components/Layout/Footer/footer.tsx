@@ -14,17 +14,17 @@ export default function Footer() {
               <div className="col-12 col-md-5 col-xl-4 footer-content-img">
                 <img
                   className="d-md-none"
-                  src={`${basePath}/images/LogoBAMobile.svg`}
+                  src={`${basePath}/images/logo-footer-mobile.svg`}
                   alt="Logo de Ciudad de Buenos Aires"
                   height="48"
                 />
                 <img
                   className="d-none d-md-inline"
-                  src={`${basePath}/images/Logo-escudo-vertical.svg`}
+                  src={`${basePath}/images/logo-footer.svg`}
                   alt="Logo de Ciudad de Buenos Aires"
                   height="40"
                 />
-                <img className="img-vamos-ba" src={`${basePath}/images/LogoBA2.svg`} alt="Logo de Vamos Buenos Aires" />
+                <img className="img-vamos-ba" src={`${basePath}/images/logo-footer-ba.svg`} alt="Logo de Vamos Buenos Aires" />
               </div>
               <div className="col-12">
                 <ul className="list-inline">

@@ -38,11 +38,7 @@ export default function RootLayout({
         <div className="banner banner-dark">
           <div className="banner-content">
             <p className="banner-text">
-              Obelisco V2 se encuentra en desarrollo. Para más información puedes{' '}
-              <a href="mailto:equipoobelisco@buenosaires.gob.ar" className="link-white" rel="noopener noreferrer">
-                contactarnos vía mail
-              </a>
-              .
+              Obelisco V2 se encuentra disponible. Estaremos trabajando en las fichas de uso de los componentes.
             </p>
           </div>
         </div>

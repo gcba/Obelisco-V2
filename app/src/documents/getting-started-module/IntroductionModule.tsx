@@ -55,7 +55,7 @@ const IntroductionModule: React.FC = () => {
   return (
     <>
       <ComponentHeader
-        title="Inicio"
+        title="Empezar con Obelisco"
         description={[
           'Obelisco v2 es un Sistema de diseño basado en componentes para productos digitales de la Ciudad de Buenos Aires, diseñado para continuar la evolución de Obelisco en su segunda versión.',
           'Este sistema brinda una mejor experiencia de usuario y simplifica el desarrollo de interfaces web al mantener una armonía digital enfocada en la experiencia de los usuarios, proporcionada por el Gobierno de la Ciudad de Buenos Aires (GCBA).',

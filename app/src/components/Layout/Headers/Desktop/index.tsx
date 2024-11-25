@@ -11,8 +11,8 @@ const basePath = '/Obelisco-V2';
 
 export default function HeaderDesktop() {
   const gettingPages = [
-    { text: 'Inicio', url: '/getting-started', id: 1 },
-    { text: 'Elementos', url: '/components', id: 2 },
+    { text: 'Empezar con Obelisco', url: '/getting-started', id: 1 },
+    { text: 'Librería', url: '/components', id: 2 },
     { text: 'Documentación', url: '/documentation', id: 3 },
   ];
   const pathname = usePathname();
@@ -24,7 +24,7 @@ export default function HeaderDesktop() {
           Saltar al contenido principal
         </a>
         <div className="container header-container">
-          <Link href="/" className="navbar-brand">
+          <Link href="https://gcba.github.io/" className="navbar-brand">
             <img className="d-none d-xl-block" src={`${basePath}/images/logo_obelisco.svg`} alt="Obelisco" />
             <img className="d-xl-none" src={`${basePath}/images/logo_obelisco_mobile.svg`} alt="Obelisco" />
           </Link>

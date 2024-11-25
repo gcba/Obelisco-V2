@@ -102,7 +102,7 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           {pathname.includes('/getting-started') && (
             <div className="nav-left sticky-nav h-auto">
               <div className="nav-left-box-title">
-                <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Inicio</p>
+                <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Empezar con Obelisco</p>
               </div>
               <NavLayout items={gettingPages} />
             </div>

@@ -74,7 +74,7 @@ const InstallationModule: React.FC = () => {
       <nav aria-label="Navegación secundaria">
         <ol className="breadcrumb">
           <li className="breadcrumb-item">
-            <Link href="/getting-started">Inicio</Link>
+            <Link href="/getting-started">Empezar con Obelisco</Link>
           </li>
         </ol>
       </nav>

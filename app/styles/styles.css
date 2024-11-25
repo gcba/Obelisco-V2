@@ -16469,13 +16469,18 @@ a.badge-danger:focus, a.badge-danger.focus {
 .calendar-deck {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
   justify-content: center;
+}
+@media (min-width: 768px) {
+  .calendar-deck {
+    gap: 1.5rem;
+  }
 }
 @media (min-width: 1200px) {
   .calendar-deck {
     justify-content: space-between;
-    column-gap: 19px;
+    gap: 2rem 19px;
   }
 }
 

@@ -1065,379 +1065,2240 @@ const CalendarDocs: React.FC = () => {
       title: 'Disposición',
       content: (
         <CodeBox codeHTML={CALENDAR_DECK}>
-          <div className="container">
-            <div className="calendar-deck">
-              <div className="calendar">
-                <div className="calendar-header">
-                  <h2 className="calendar-title">Enero</h2>
-                  <span className="calendar-year">2024</span>
+          <div className="calendar-box-sizing">
+            <div className="container">
+              <div className="calendar-deck">
+                <div className="calendar">
+                  <div className="calendar-header">
+                    <h2 className="calendar-title">Enero</h2>
+                    <span className="calendar-year">2024</span>
+                  </div>
+                  <div className="calendar-body">
+                    <table>
+                      <thead>
+                        <tr className="calendar-week-header">
+                          <th>
+                            <span>D</span>
+                          </th>
+                          <th>
+                            <span>L</span>
+                          </th>
+                          <th>
+                            <span>M</span>
+                          </th>
+                          <th>
+                            <span>M</span>
+                          </th>
+                          <th>
+                            <span>J</span>
+                          </th>
+                          <th>
+                            <span>V</span>
+                          </th>
+                          <th>
+                            <span>S</span>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="calendar-week">
+                          <td></td>
+                          <td>
+                            <span>1</span>
+                          </td>
+                          <td>
+                            <span>2</span>
+                          </td>
+                          <td>
+                            <span>3</span>
+                          </td>
+                          <td>
+                            <span>4</span>
+                          </td>
+                          <td>
+                            <span>5</span>
+                          </td>
+                          <td>
+                            <span>6</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>7</span>
+                          </td>
+                          <td>
+                            <span>8</span>
+                          </td>
+                          <td>
+                            <span>9</span>
+                          </td>
+                          <td>
+                            <span title="Nombre del evento.">
+                              <span className="active">10</span>
+                            </span>
+                          </td>
+                          <td>
+                            <span>11</span>
+                          </td>
+                          <td>
+                            <span>12</span>
+                          </td>
+                          <td>
+                            <span>13</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>14</span>
+                          </td>
+                          <td>
+                            <span>15</span>
+                          </td>
+                          <td>
+                            <span>16</span>
+                          </td>
+                          <td>
+                            <span>17</span>
+                          </td>
+                          <td>
+                            <span>18</span>
+                          </td>
+                          <td>
+                            <span>19</span>
+                          </td>
+                          <td>
+                            <span>20</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>21</span>
+                          </td>
+                          <td>
+                            <span>22</span>
+                          </td>
+                          <td>
+                            <span>23</span>
+                          </td>
+                          <td>
+                            <span>24</span>
+                          </td>
+                          <td>
+                            <span>25</span>
+                          </td>
+                          <td>
+                            <span title="Nombre del evento.">
+                              <span className="active">26</span>
+                            </span>
+                          </td>
+                          <td>
+                            <span>27</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span title="Nombre del evento.">
+                              <span className="active">28</span>
+                            </span>
+                          </td>
+                          <td>
+                            <span>29</span>
+                          </td>
+                          <td>
+                            <span>30</span>
+                          </td>
+                          <td>
+                            <span>31</span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div className="calendar-footer">
+                    <ul className="calendar-footer-list">
+                      <li>
+                        <strong>10.</strong>
+                        Nombre del evento.
+                      </li>
+                      <li>
+                        <strong>26.</strong>
+                        Nombre del evento.
+                      </li>
+                      <li>
+                        <strong>28.</strong>
+                        Nombre del evento.
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div className="calendar-body">
-                  <table>
-                    <thead>
-                      <tr className="calendar-week-header">
-                        <th>
-                          <span>D</span>
-                        </th>
-                        <th>
-                          <span>L</span>
-                        </th>
-                        <th>
-                          <span>M</span>
-                        </th>
-                        <th>
-                          <span>M</span>
-                        </th>
-                        <th>
-                          <span>J</span>
-                        </th>
-                        <th>
-                          <span>V</span>
-                        </th>
-                        <th>
-                          <span>S</span>
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr className="calendar-week">
-                        <td></td>
-                        <td>
-                          <span>1</span>
-                        </td>
-                        <td>
-                          <span>2</span>
-                        </td>
-                        <td>
-                          <span>3</span>
-                        </td>
-                        <td>
-                          <span>4</span>
-                        </td>
-                        <td>
-                          <span>5</span>
-                        </td>
-                        <td>
-                          <span>6</span>
-                        </td>
-                      </tr>
-                      <tr className="calendar-week">
-                        <td>
-                          <span>7</span>
-                        </td>
-                        <td>
-                          <span>8</span>
-                        </td>
-                        <td>
-                          <span>9</span>
-                        </td>
-                        <td>
-                          <span title="Nombre del evento.">
-                            <span className="active">10</span>
-                          </span>
-                        </td>
-                        <td>
-                          <span>11</span>
-                        </td>
-                        <td>
-                          <span>12</span>
-                        </td>
-                        <td>
-                          <span>13</span>
-                        </td>
-                      </tr>
-                      <tr className="calendar-week">
-                        <td>
-                          <span>14</span>
-                        </td>
-                        <td>
-                          <span>15</span>
-                        </td>
-                        <td>
-                          <span>16</span>
-                        </td>
-                        <td>
-                          <span>17</span>
-                        </td>
-                        <td>
-                          <span>18</span>
-                        </td>
-                        <td>
-                          <span>19</span>
-                        </td>
-                        <td>
-                          <span>20</span>
-                        </td>
-                      </tr>
-                      <tr className="calendar-week">
-                        <td>
-                          <span>21</span>
-                        </td>
-                        <td>
-                          <span>22</span>
-                        </td>
-                        <td>
-                          <span>23</span>
-                        </td>
-                        <td>
-                          <span>24</span>
-                        </td>
-                        <td>
-                          <span>25</span>
-                        </td>
-                        <td>
-                          <span title="Nombre del evento.">
-                            <span className="active">26</span>
-                          </span>
-                        </td>
-                        <td>
-                          <span>27</span>
-                        </td>
-                      </tr>
-                      <tr className="calendar-week">
-                        <td>
-                          <span title="Nombre del evento.">
-                            <span className="active">28</span>
-                          </span>
-                        </td>
-                        <td>
-                          <span>29</span>
-                        </td>
-                        <td>
-                          <span>30</span>
-                        </td>
-                        <td>
-                          <span>31</span>
-                        </td>
-                        <td>
-                          <span></span>
-                        </td>
-                        <td>
-                          <span></span>
-                        </td>
-                        <td>
-                          <span></span>
-                        </td>
-                      </tr>
-                      <tr className="calendar-week">
-                        <td>
-                          <span></span>
-                        </td>
-                        <td>
-                          <span></span>
-                        </td>
-                        <td>
-                          <span></span>
-                        </td>
-                        <td>
-                          <span></span>
-                        </td>
-                        <td>
-                          <span></span>
-                        </td>
-                        <td>
-                          <span></span>
-                        </td>
-                        <td>
-                          <span></span>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <div className="calendar">
+                  <div className="calendar-header">
+                    <h2 className="calendar-title">Febrero</h2>
+                    <span className="calendar-year">2024</span>
+                  </div>
+                  <div className="calendar-body">
+                    <table>
+                      <thead>
+                        <tr className="calendar-week-header">
+                          <th>
+                            <span>D</span>
+                          </th>
+                          <th>
+                            <span>L</span>
+                          </th>
+                          <th>
+                            <span>M</span>
+                          </th>
+                          <th>
+                            <span>M</span>
+                          </th>
+                          <th>
+                            <span>J</span>
+                          </th>
+                          <th>
+                            <span>V</span>
+                          </th>
+                          <th>
+                            <span>S</span>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="calendar-week">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <span title="Nombre del evento.">
+                              <span className="active">1</span>
+                            </span>
+                          </td>
+                          <td>
+                            <span>2</span>
+                          </td>
+                          <td>
+                            <span>3</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>4</span>
+                          </td>
+                          <td>
+                            <span>5</span>
+                          </td>
+                          <td>
+                            <span>6</span>
+                          </td>
+                          <td>
+                            <span>7</span>
+                          </td>
+                          <td>
+                            <span>8</span>
+                          </td>
+                          <td>
+                            <span>9</span>
+                          </td>
+                          <td>
+                            <span>10</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>11</span>
+                          </td>
+                          <td>
+                            <span>12</span>
+                          </td>
+                          <td>
+                            <span>13</span>
+                          </td>
+                          <td>
+                            <span>14</span>
+                          </td>
+                          <td>
+                            <span>15</span>
+                          </td>
+                          <td>
+                            <span>16</span>
+                          </td>
+                          <td>
+                            <span>17</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>18</span>
+                          </td>
+                          <td>
+                            <span>19</span>
+                          </td>
+                          <td>
+                            <span>20</span>
+                          </td>
+                          <td>
+                            <span>21</span>
+                          </td>
+                          <td>
+                            <span>22</span>
+                          </td>
+                          <td>
+                            <span>23</span>
+                          </td>
+                          <td>
+                            <span>24</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>25</span>
+                          </td>
+                          <td>
+                            <span>26</span>
+                          </td>
+                          <td>
+                            <span>27</span>
+                          </td>
+                          <td>
+                            <span>28</span>
+                          </td>
+                          <td>
+                            <span>29</span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div className="calendar-footer">
+                    <ul className="calendar-footer-list">
+                      <li>
+                        <strong>1.</strong>
+                        Nombre del evento.
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div className="calendar-footer">
-                  <ul className="calendar-footer-list">
-                    <li>
-                      <strong>10. </strong>
-                      Nombre del evento.
-                    </li>
-                    <li>
-                      <strong>26. </strong>
-                      Nombre del evento.
-                    </li>
-                    <li>
-                      <strong>28. </strong>
-                      Nombre del evento.
-                    </li>
-                  </ul>
+                <div className="calendar">
+                  <div className="calendar-header">
+                    <h2 className="calendar-title">Marzo</h2>
+                    <span className="calendar-year">2024</span>
+                  </div>
+                  <div className="calendar-body">
+                    <table>
+                      <thead>
+                        <tr className="calendar-week-header">
+                          <th>
+                            <span>D</span>
+                          </th>
+                          <th>
+                            <span>L</span>
+                          </th>
+                          <th>
+                            <span>M</span>
+                          </th>
+                          <th>
+                            <span>M</span>
+                          </th>
+                          <th>
+                            <span>J</span>
+                          </th>
+                          <th>
+                            <span>V</span>
+                          </th>
+                          <th>
+                            <span>S</span>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="calendar-week">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <span>1</span>
+                          </td>
+                          <td>
+                            <span>2</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span title="Nombre del evento.">
+                              <span className="active">3</span>
+                            </span>
+                          </td>
+                          <td>
+                            <span>4</span>
+                          </td>
+                          <td>
+                            <span title="Nombre del evento.">
+                              <span className="active">5</span>
+                            </span>
+                          </td>
+                          <td>
+                            <span>6</span>
+                          </td>
+                          <td>
+                            <span>7</span>
+                          </td>
+                          <td>
+                            <span>8</span>
+                          </td>
+                          <td>
+                            <span>9</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>10</span>
+                          </td>
+                          <td>
+                            <span>11</span>
+                          </td>
+                          <td>
+                            <span>12</span>
+                          </td>
+                          <td>
+                            <span>13</span>
+                          </td>
+                          <td>
+                            <span>14</span>
+                          </td>
+                          <td>
+                            <span title="Nombre del evento.">
+                              <span className="active">15</span>
+                            </span>
+                          </td>
+                          <td>
+                            <span>16</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>17</span>
+                          </td>
+                          <td>
+                            <span>18</span>
+                          </td>
+                          <td>
+                            <span>19</span>
+                          </td>
+                          <td>
+                            <span>20</span>
+                          </td>
+                          <td>
+                            <span>21</span>
+                          </td>
+                          <td>
+                            <span title="Nombre del evento.">
+                              <span className="active">22</span>
+                            </span>
+                          </td>
+                          <td>
+                            <span>23</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>24</span>
+                          </td>
+                          <td>
+                            <span>25</span>
+                          </td>
+                          <td>
+                            <span title="Nombre del evento.">
+                              <span className="active">26</span>
+                            </span>
+                          </td>
+                          <td>
+                            <span>27</span>
+                          </td>
+                          <td>
+                            <span>28</span>
+                          </td>
+                          <td>
+                            <span>29</span>
+                          </td>
+                          <td>
+                            <span>30</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>31</span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div className="calendar-footer">
+                    <ul className="calendar-footer-list">
+                      <li>
+                        <strong>3.</strong>
+                        Nombre del evento.
+                      </li>
+                      <li>
+                        <strong>5.</strong>
+                        Nombre del evento.
+                      </li>
+                      <li>
+                        <strong>15.</strong>
+                        Nombre del evento.
+                      </li>
+                      <li>
+                        <strong>22.</strong>
+                        Nombre del evento.
+                      </li>
+                      <li>
+                        <strong>26.</strong>
+                        Nombre del evento.
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-
-              <div className="calendar">
-                <div className="calendar-header">
-                  <h2 className="calendar-title">Febrero</h2>
-                  <span className="calendar-year">2024</span>
+                <div className="calendar">
+                  <div className="calendar-header">
+                    <h2 className="calendar-title">Abril</h2>
+                    <span className="calendar-year">2024</span>
+                  </div>
+                  <div className="calendar-body">
+                    <table>
+                      <thead>
+                        <tr className="calendar-week-header">
+                          <th>
+                            <span>D</span>
+                          </th>
+                          <th>
+                            <span>L</span>
+                          </th>
+                          <th>
+                            <span>M</span>
+                          </th>
+                          <th>
+                            <span>M</span>
+                          </th>
+                          <th>
+                            <span>J</span>
+                          </th>
+                          <th>
+                            <span>V</span>
+                          </th>
+                          <th>
+                            <span>S</span>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="calendar-week">
+                          <td></td>
+                          <td>
+                            <span>1</span>
+                          </td>
+                          <td>
+                            <span>2</span>
+                          </td>
+                          <td>
+                            <span>3</span>
+                          </td>
+                          <td>
+                            <span>4</span>
+                          </td>
+                          <td>
+                            <span>5</span>
+                          </td>
+                          <td>
+                            <span>6</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>7</span>
+                          </td>
+                          <td>
+                            <span>8</span>
+                          </td>
+                          <td>
+                            <span>9</span>
+                          </td>
+                          <td>
+                            <span>10</span>
+                          </td>
+                          <td>
+                            <span>11</span>
+                          </td>
+                          <td>
+                            <span>12</span>
+                          </td>
+                          <td>
+                            <span title="Nombre del evento.">
+                              <span className="active">13</span>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>14</span>
+                          </td>
+                          <td>
+                            <span>15</span>
+                          </td>
+                          <td>
+                            <span>16</span>
+                          </td>
+                          <td>
+                            <span>17</span>
+                          </td>
+                          <td>
+                            <span>18</span>
+                          </td>
+                          <td>
+                            <span>19</span>
+                          </td>
+                          <td>
+                            <span>20</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>21</span>
+                          </td>
+                          <td>
+                            <span>22</span>
+                          </td>
+                          <td>
+                            <span>23</span>
+                          </td>
+                          <td>
+                            <span>24</span>
+                          </td>
+                          <td>
+                            <span>25</span>
+                          </td>
+                          <td>
+                            <span>26</span>
+                          </td>
+                          <td>
+                            <span>27</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>28</span>
+                          </td>
+                          <td>
+                            <span>29</span>
+                          </td>
+                          <td>
+                            <span>30</span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div className="calendar-footer">
+                    <ul className="calendar-footer-list">
+                      <li>
+                        <strong>13.</strong>
+                        Nombre del evento.
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div className="calendar-body">
-                  <table>
-                    <thead>
-                      <tr className="calendar-week-header">
-                        <th>
-                          <span>D</span>
-                        </th>
-                        <th>
-                          <span>L</span>
-                        </th>
-                        <th>
-                          <span>M</span>
-                        </th>
-                        <th>
-                          <span>M</span>
-                        </th>
-                        <th>
-                          <span>J</span>
-                        </th>
-                        <th>
-                          <span>V</span>
-                        </th>
-                        <th>
-                          <span>S</span>
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr className="calendar-week">
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>
-                          <span title="Nombre del evento.">
-                            <span className="active">1</span>
-                          </span>
-                        </td>
-                        <td>
-                          <span>2</span>
-                        </td>
-                        <td>
-                          <span>3</span>
-                        </td>
-                      </tr>
-                      <tr className="calendar-week">
-                        <td>
-                          <span>4</span>
-                        </td>
-                        <td>
-                          <span>5</span>
-                        </td>
-                        <td>
-                          <span>6</span>
-                        </td>
-                        <td>
-                          <span>7</span>
-                        </td>
-                        <td>
-                          <span>8</span>
-                        </td>
-                        <td>
-                          <span>9</span>
-                        </td>
-                        <td>
-                          <span>10</span>
-                        </td>
-                      </tr>
-                      <tr className="calendar-week">
-                        <td>
-                          <span>11</span>
-                        </td>
-                        <td>
-                          <span>12</span>
-                        </td>
-                        <td>
-                          <span>13</span>
-                        </td>
-                        <td>
-                          <span>14</span>
-                        </td>
-                        <td>
-                          <span>15</span>
-                        </td>
-                        <td>
-                          <span>16</span>
-                        </td>
-                        <td>
-                          <span>17</span>
-                        </td>
-                      </tr>
-                      <tr className="calendar-week">
-                        <td>
-                          <span>18</span>
-                        </td>
-                        <td>
-                          <span>19</span>
-                        </td>
-                        <td>
-                          <span>20</span>
-                        </td>
-                        <td>
-                          <span>21</span>
-                        </td>
-                        <td>
-                          <span>22</span>
-                        </td>
-                        <td>
-                          <span>23</span>
-                        </td>
-                        <td>
-                          <span>24</span>
-                        </td>
-                      </tr>
-                      <tr className="calendar-week">
-                        <td>
-                          <span>25</span>
-                        </td>
-                        <td>
-                          <span>26</span>
-                        </td>
-                        <td>
-                          <span>27</span>
-                        </td>
-                        <td>
-                          <span>28</span>
-                        </td>
-                        <td>
-                          <span>29</span>
-                        </td>
-                        <td>
-                          <span></span>
-                        </td>
-                        <td>
-                          <span></span>
-                        </td>
-                      </tr>
-                      <tr className="calendar-week">
-                        <td>
-                          <span></span>
-                        </td>
-                        <td>
-                          <span></span>
-                        </td>
-                        <td>
-                          <span></span>
-                        </td>
-                        <td>
-                          <span></span>
-                        </td>
-                        <td>
-                          <span></span>
-                        </td>
-                        <td>
-                          <span></span>
-                        </td>
-                        <td>
-                          <span></span>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <div className="calendar">
+                  <div className="calendar-header">
+                    <h2 className="calendar-title">Mayo</h2>
+                    <span className="calendar-year">2024</span>
+                  </div>
+                  <div className="calendar-body">
+                    <table>
+                      <thead>
+                        <tr className="calendar-week-header">
+                          <th>
+                            <span>D</span>
+                          </th>
+                          <th>
+                            <span>L</span>
+                          </th>
+                          <th>
+                            <span>M</span>
+                          </th>
+                          <th>
+                            <span>M</span>
+                          </th>
+                          <th>
+                            <span>J</span>
+                          </th>
+                          <th>
+                            <span>V</span>
+                          </th>
+                          <th>
+                            <span>S</span>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="calendar-week">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <span>1</span>
+                          </td>
+                          <td>
+                            <span>2</span>
+                          </td>
+                          <td>
+                            <span>3</span>
+                          </td>
+                          <td>
+                            <span>4</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>5</span>
+                          </td>
+                          <td>
+                            <span>6</span>
+                          </td>
+                          <td>
+                            <span>7</span>
+                          </td>
+                          <td>
+                            <span>8</span>
+                          </td>
+                          <td>
+                            <span title="Nombre del evento.">
+                              <span className="active">9</span>
+                            </span>
+                          </td>
+                          <td>
+                            <span title="Nombre del evento.">
+                              <span className="active">10</span>
+                            </span>
+                          </td>
+                          <td>
+                            <span>11</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>12</span>
+                          </td>
+                          <td>
+                            <span>13</span>
+                          </td>
+                          <td>
+                            <span>14</span>
+                          </td>
+                          <td>
+                            <span>15</span>
+                          </td>
+                          <td>
+                            <span>16</span>
+                          </td>
+                          <td>
+                            <span title="Nombre del evento.">
+                              <span className="active">17</span>
+                            </span>
+                          </td>
+                          <td>
+                            <span>18</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>19</span>
+                          </td>
+                          <td>
+                            <span>20</span>
+                          </td>
+                          <td>
+                            <span>21</span>
+                          </td>
+                          <td>
+                            <span>22</span>
+                          </td>
+                          <td>
+                            <span>23</span>
+                          </td>
+                          <td>
+                            <span>24</span>
+                          </td>
+                          <td>
+                            <span>25</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>26</span>
+                          </td>
+                          <td>
+                            <span>27</span>
+                          </td>
+                          <td>
+                            <span>28</span>
+                          </td>
+                          <td>
+                            <span>29</span>
+                          </td>
+                          <td>
+                            <span>30</span>
+                          </td>
+                          <td>
+                            <span>31</span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div className="calendar-footer">
+                    <ul className="calendar-footer-list">
+                      <li>
+                        <strong>9, 10.</strong>
+                        Nombre del evento.
+                      </li>
+                      <li>
+                        <strong>17.</strong>
+                        Nombre del evento.
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div className="calendar-footer">
-                  <ul className="calendar-footer-list">
-                    <li>
-                      <strong>1. </strong>
-                      Nombre del evento.
-                    </li>
-                  </ul>
+                <div className="calendar">
+                  <div className="calendar-header">
+                    <h2 className="calendar-title">Junio</h2>
+                    <span className="calendar-year">2024</span>
+                  </div>
+                  <div className="calendar-body">
+                    <table>
+                      <thead>
+                        <tr className="calendar-week-header">
+                          <th>
+                            <span>D</span>
+                          </th>
+                          <th>
+                            <span>L</span>
+                          </th>
+                          <th>
+                            <span>M</span>
+                          </th>
+                          <th>
+                            <span>M</span>
+                          </th>
+                          <th>
+                            <span>J</span>
+                          </th>
+                          <th>
+                            <span>V</span>
+                          </th>
+                          <th>
+                            <span>S</span>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="calendar-week">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <span>1</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>2</span>
+                          </td>
+                          <td>
+                            <span>3</span>
+                          </td>
+                          <td>
+                            <span>4</span>
+                          </td>
+                          <td>
+                            <span>5</span>
+                          </td>
+                          <td>
+                            <span>6</span>
+                          </td>
+                          <td>
+                            <span>7</span>
+                          </td>
+                          <td>
+                            <span>8</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>9</span>
+                          </td>
+                          <td>
+                            <span>10</span>
+                          </td>
+                          <td>
+                            <span>11</span>
+                          </td>
+                          <td>
+                            <span>12</span>
+                          </td>
+                          <td>
+                            <span>13</span>
+                          </td>
+                          <td>
+                            <span>14</span>
+                          </td>
+                          <td>
+                            <span>15</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span title="Nombre del evento.">
+                              <span className="active">16</span>
+                            </span>
+                          </td>
+                          <td>
+                            <span>17</span>
+                          </td>
+                          <td>
+                            <span>18</span>
+                          </td>
+                          <td>
+                            <span>19</span>
+                          </td>
+                          <td>
+                            <span>20</span>
+                          </td>
+                          <td>
+                            <span>21</span>
+                          </td>
+                          <td>
+                            <span>22</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>23</span>
+                          </td>
+                          <td>
+                            <span>24</span>
+                          </td>
+                          <td>
+                            <span>25</span>
+                          </td>
+                          <td>
+                            <span>26</span>
+                          </td>
+                          <td>
+                            <span>27</span>
+                          </td>
+                          <td>
+                            <span>28</span>
+                          </td>
+                          <td>
+                            <span>29</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>30</span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div className="calendar-footer">
+                    <ul className="calendar-footer-list">
+                      <li>
+                        <strong>16.</strong>
+                        Nombre del evento.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="calendar">
+                  <div className="calendar-header">
+                    <h2 className="calendar-title">Julio</h2>
+                    <span className="calendar-year">2024</span>
+                  </div>
+                  <div className="calendar-body">
+                    <table>
+                      <thead>
+                        <tr className="calendar-week-header">
+                          <th>
+                            <span>D</span>
+                          </th>
+                          <th>
+                            <span>L</span>
+                          </th>
+                          <th>
+                            <span>M</span>
+                          </th>
+                          <th>
+                            <span>M</span>
+                          </th>
+                          <th>
+                            <span>J</span>
+                          </th>
+                          <th>
+                            <span>V</span>
+                          </th>
+                          <th>
+                            <span>S</span>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="calendar-week">
+                          <td></td>
+                          <td>
+                            <span>1</span>
+                          </td>
+                          <td>
+                            <span>2</span>
+                          </td>
+                          <td>
+                            <span>3</span>
+                          </td>
+                          <td>
+                            <span>4</span>
+                          </td>
+                          <td>
+                            <span>5</span>
+                          </td>
+                          <td>
+                            <span>6</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>7</span>
+                          </td>
+                          <td>
+                            <span>8</span>
+                          </td>
+                          <td>
+                            <span>9</span>
+                          </td>
+                          <td>
+                            <span>10</span>
+                          </td>
+                          <td>
+                            <span>11</span>
+                          </td>
+                          <td>
+                            <span>12</span>
+                          </td>
+                          <td>
+                            <span>13</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>14</span>
+                          </td>
+                          <td>
+                            <span>15</span>
+                          </td>
+                          <td>
+                            <span>16</span>
+                          </td>
+                          <td>
+                            <span>17</span>
+                          </td>
+                          <td>
+                            <span>18</span>
+                          </td>
+                          <td>
+                            <span>19</span>
+                          </td>
+                          <td>
+                            <span>20</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>21</span>
+                          </td>
+                          <td>
+                            <span>22</span>
+                          </td>
+                          <td>
+                            <span>23</span>
+                          </td>
+                          <td>
+                            <span>24</span>
+                          </td>
+                          <td>
+                            <span>25</span>
+                          </td>
+                          <td>
+                            <span>26</span>
+                          </td>
+                          <td>
+                            <span>27</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>28</span>
+                          </td>
+                          <td>
+                            <span>29</span>
+                          </td>
+                          <td>
+                            <span>30</span>
+                          </td>
+                          <td>
+                            <span>31</span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div className="calendar">
+                  <div className="calendar-header">
+                    <h2 className="calendar-title">Agosto</h2>
+                    <span className="calendar-year">2024</span>
+                  </div>
+                  <div className="calendar-body">
+                    <table>
+                      <thead>
+                        <tr className="calendar-week-header">
+                          <th>
+                            <span>D</span>
+                          </th>
+                          <th>
+                            <span>L</span>
+                          </th>
+                          <th>
+                            <span>M</span>
+                          </th>
+                          <th>
+                            <span>M</span>
+                          </th>
+                          <th>
+                            <span>J</span>
+                          </th>
+                          <th>
+                            <span>V</span>
+                          </th>
+                          <th>
+                            <span>S</span>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="calendar-week">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <span title="Nombre del evento.">
+                              <span className="active">1</span>
+                            </span>
+                          </td>
+                          <td>
+                            <span>2</span>
+                          </td>
+                          <td>
+                            <span>3</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>4</span>
+                          </td>
+                          <td>
+                            <span>5</span>
+                          </td>
+                          <td>
+                            <span>6</span>
+                          </td>
+                          <td>
+                            <span>7</span>
+                          </td>
+                          <td>
+                            <span>8</span>
+                          </td>
+                          <td>
+                            <span title="Nombre del evento.">
+                              <span className="active">9</span>
+                            </span>
+                          </td>
+                          <td>
+                            <span>10</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>11</span>
+                          </td>
+                          <td>
+                            <span>12</span>
+                          </td>
+                          <td>
+                            <span>13</span>
+                          </td>
+                          <td>
+                            <span>14</span>
+                          </td>
+                          <td>
+                            <span>15</span>
+                          </td>
+                          <td>
+                            <span>16</span>
+                          </td>
+                          <td>
+                            <span>17</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span title="Nombre del evento.">
+                              <span className="active">18</span>
+                            </span>
+                          </td>
+                          <td>
+                            <span>19</span>
+                          </td>
+                          <td>
+                            <span>20</span>
+                          </td>
+                          <td>
+                            <span>21</span>
+                          </td>
+                          <td>
+                            <span>22</span>
+                          </td>
+                          <td>
+                            <span>23</span>
+                          </td>
+                          <td>
+                            <span>24</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>25</span>
+                          </td>
+                          <td>
+                            <span>26</span>
+                          </td>
+                          <td>
+                            <span>27</span>
+                          </td>
+                          <td>
+                            <span>28</span>
+                          </td>
+                          <td>
+                            <span>29</span>
+                          </td>
+                          <td>
+                            <span>30</span>
+                          </td>
+                          <td>
+                            <span>31</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div className="calendar-footer">
+                    <ul className="calendar-footer-list">
+                      <li>
+                        <strong>1.</strong>
+                        Nombre del evento.
+                      </li>
+                      <li>
+                        <strong>9.</strong>
+                        Nombre del evento.
+                      </li>
+                      <li>
+                        <strong>18.</strong>
+                        Nombre del evento.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="calendar">
+                  <div className="calendar-header">
+                    <h2 className="calendar-title">Septiembre</h2>
+                    <span className="calendar-year">2024</span>
+                  </div>
+                  <div className="calendar-body">
+                    <table>
+                      <thead>
+                        <tr className="calendar-week-header">
+                          <th>
+                            <span>D</span>
+                          </th>
+                          <th>
+                            <span>L</span>
+                          </th>
+                          <th>
+                            <span>M</span>
+                          </th>
+                          <th>
+                            <span>M</span>
+                          </th>
+                          <th>
+                            <span>J</span>
+                          </th>
+                          <th>
+                            <span>V</span>
+                          </th>
+                          <th>
+                            <span>S</span>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>1</span>
+                          </td>
+                          <td>
+                            <span>2</span>
+                          </td>
+                          <td>
+                            <span>3</span>
+                          </td>
+                          <td>
+                            <span>4</span>
+                          </td>
+                          <td>
+                            <span>5</span>
+                          </td>
+                          <td>
+                            <span>6</span>
+                          </td>
+                          <td>
+                            <span>7</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>8</span>
+                          </td>
+                          <td>
+                            <span>9</span>
+                          </td>
+                          <td>
+                            <span>10</span>
+                          </td>
+                          <td>
+                            <span>11</span>
+                          </td>
+                          <td>
+                            <span>12</span>
+                          </td>
+                          <td>
+                            <span>13</span>
+                          </td>
+                          <td>
+                            <span>14</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>15</span>
+                          </td>
+                          <td>
+                            <span>16</span>
+                          </td>
+                          <td>
+                            <span>17</span>
+                          </td>
+                          <td>
+                            <span>18</span>
+                          </td>
+                          <td>
+                            <span>19</span>
+                          </td>
+                          <td>
+                            <span title="Nombre del evento.">
+                              <span className="active">20</span>
+                            </span>
+                          </td>
+                          <td>
+                            <span>21</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>22</span>
+                          </td>
+                          <td>
+                            <span>23</span>
+                          </td>
+                          <td>
+                            <span>24</span>
+                          </td>
+                          <td>
+                            <span>25</span>
+                          </td>
+                          <td>
+                            <span>26</span>
+                          </td>
+                          <td>
+                            <span>27</span>
+                          </td>
+                          <td>
+                            <span>28</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>29</span>
+                          </td>
+                          <td>
+                            <span>30</span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div className="calendar-footer">
+                    <ul className="calendar-footer-list">
+                      <li>
+                        <strong>20.</strong>
+                        Nombre del evento.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="calendar">
+                  <div className="calendar-header">
+                    <h2 className="calendar-title">Octubre</h2>
+                    <span className="calendar-year">2024</span>
+                  </div>
+                  <div className="calendar-body">
+                    <table>
+                      <thead>
+                        <tr className="calendar-week-header">
+                          <th>
+                            <span>D</span>
+                          </th>
+                          <th>
+                            <span>L</span>
+                          </th>
+                          <th>
+                            <span>M</span>
+                          </th>
+                          <th>
+                            <span>M</span>
+                          </th>
+                          <th>
+                            <span>J</span>
+                          </th>
+                          <th>
+                            <span>V</span>
+                          </th>
+                          <th>
+                            <span>S</span>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="calendar-week">
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <span>1</span>
+                          </td>
+                          <td>
+                            <span>2</span>
+                          </td>
+                          <td>
+                            <span>3</span>
+                          </td>
+                          <td>
+                            <span>4</span>
+                          </td>
+                          <td>
+                            <span title="Nombre del evento.">
+                              <span className="active">5</span>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>6</span>
+                          </td>
+                          <td>
+                            <span>7</span>
+                          </td>
+                          <td>
+                            <span>8</span>
+                          </td>
+                          <td>
+                            <span title="Nombre del evento.">
+                              <span className="active">9</span>
+                            </span>
+                          </td>
+                          <td>
+                            <span>10</span>
+                          </td>
+                          <td>
+                            <span>11</span>
+                          </td>
+                          <td>
+                            <span>12</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>13</span>
+                          </td>
+                          <td>
+                            <span>14</span>
+                          </td>
+                          <td>
+                            <span>15</span>
+                          </td>
+                          <td>
+                            <span>16</span>
+                          </td>
+                          <td>
+                            <span>17</span>
+                          </td>
+                          <td>
+                            <span title="Nombre del evento.">
+                              <span className="active">18</span>
+                            </span>
+                          </td>
+                          <td>
+                            <span>19</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>20</span>
+                          </td>
+                          <td>
+                            <span>21</span>
+                          </td>
+                          <td>
+                            <span>22</span>
+                          </td>
+                          <td>
+                            <span>23</span>
+                          </td>
+                          <td>
+                            <span>24</span>
+                          </td>
+                          <td>
+                            <span>25</span>
+                          </td>
+                          <td>
+                            <span>26</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>27</span>
+                          </td>
+                          <td>
+                            <span>28</span>
+                          </td>
+                          <td>
+                            <span>29</span>
+                          </td>
+                          <td>
+                            <span>30</span>
+                          </td>
+                          <td>
+                            <span>31</span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div className="calendar-footer">
+                    <ul className="calendar-footer-list">
+                      <li>
+                        <strong>5.</strong>
+                        Nombre del evento.
+                      </li>
+                      <li>
+                        <strong>9.</strong>
+                        Nombre del evento.
+                      </li>
+                      <li>
+                        <strong>18.</strong>
+                        Nombre del evento.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="calendar">
+                  <div className="calendar-header">
+                    <h2 className="calendar-title">Noviembre</h2>
+                    <span className="calendar-year">2024</span>
+                  </div>
+                  <div className="calendar-body">
+                    <table>
+                      <thead>
+                        <tr className="calendar-week-header">
+                          <th>
+                            <span>D</span>
+                          </th>
+                          <th>
+                            <span>L</span>
+                          </th>
+                          <th>
+                            <span>M</span>
+                          </th>
+                          <th>
+                            <span>M</span>
+                          </th>
+                          <th>
+                            <span>J</span>
+                          </th>
+                          <th>
+                            <span>V</span>
+                          </th>
+                          <th>
+                            <span>S</span>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="calendar-week">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <span title="Nombre del evento.">
+                              <span className="active">1</span>
+                            </span>
+                          </td>
+                          <td>
+                            <span>2</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>3</span>
+                          </td>
+                          <td>
+                            <span>4</span>
+                          </td>
+                          <td>
+                            <span>5</span>
+                          </td>
+                          <td>
+                            <span title="Nombre del evento.">
+                              <span className="active">6</span>
+                            </span>
+                          </td>
+                          <td>
+                            <span>7</span>
+                          </td>
+                          <td>
+                            <span>8</span>
+                          </td>
+                          <td>
+                            <span>9</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>10</span>
+                          </td>
+                          <td>
+                            <span>11</span>
+                          </td>
+                          <td>
+                            <span>12</span>
+                          </td>
+                          <td>
+                            <span>13</span>
+                          </td>
+                          <td>
+                            <span>14</span>
+                          </td>
+                          <td>
+                            <span>15</span>
+                          </td>
+                          <td>
+                            <span title="Nombre del evento.">
+                              <span className="active">16</span>
+                            </span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>17</span>
+                          </td>
+                          <td>
+                            <span>18</span>
+                          </td>
+                          <td>
+                            <span>19</span>
+                          </td>
+                          <td>
+                            <span>20</span>
+                          </td>
+                          <td>
+                            <span>21</span>
+                          </td>
+                          <td>
+                            <span title="Nombre del evento.">
+                              <span className="active">22</span>
+                            </span>
+                          </td>
+                          <td>
+                            <span>23</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>24</span>
+                          </td>
+                          <td>
+                            <span>25</span>
+                          </td>
+                          <td>
+                            <span>26</span>
+                          </td>
+                          <td>
+                            <span>27</span>
+                          </td>
+                          <td>
+                            <span>28</span>
+                          </td>
+                          <td>
+                            <span>29</span>
+                          </td>
+                          <td>
+                            <span>30</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div className="calendar-footer">
+                    <ul className="calendar-footer-list">
+                      <li>
+                        <strong>1.</strong>
+                        Nombre del evento.
+                      </li>
+                      <li>
+                        <strong>6.</strong>
+                        Nombre del evento.
+                      </li>
+                      <li>
+                        <strong>16.</strong>
+                        Nombre del evento.
+                      </li>
+                      <li>
+                        <strong>22.</strong>
+                        Nombre del evento.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="calendar">
+                  <div className="calendar-header">
+                    <h2 className="calendar-title">Diciembre</h2>
+                    <span className="calendar-year">2024</span>
+                  </div>
+                  <div className="calendar-body">
+                    <table>
+                      <thead>
+                        <tr className="calendar-week-header">
+                          <th>
+                            <span>D</span>
+                          </th>
+                          <th>
+                            <span>L</span>
+                          </th>
+                          <th>
+                            <span>M</span>
+                          </th>
+                          <th>
+                            <span>M</span>
+                          </th>
+                          <th>
+                            <span>J</span>
+                          </th>
+                          <th>
+                            <span>V</span>
+                          </th>
+                          <th>
+                            <span>S</span>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="calendar-week">
+                          <td>
+                            <span title="Nombre del evento.">
+                              <span className="active">1</span>
+                            </span>
+                          </td>
+                          <td>
+                            <span>2</span>
+                          </td>
+                          <td>
+                            <span>3</span>
+                          </td>
+                          <td>
+                            <span>4</span>
+                          </td>
+                          <td>
+                            <span>5</span>
+                          </td>
+                          <td>
+                            <span>6</span>
+                          </td>
+                          <td>
+                            <span>7</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>8</span>
+                          </td>
+                          <td>
+                            <span>9</span>
+                          </td>
+                          <td>
+                            <span>10</span>
+                          </td>
+                          <td>
+                            <span>11</span>
+                          </td>
+                          <td>
+                            <span>12</span>
+                          </td>
+                          <td>
+                            <span>13</span>
+                          </td>
+                          <td>
+                            <span>14</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>15</span>
+                          </td>
+                          <td>
+                            <span>16</span>
+                          </td>
+                          <td>
+                            <span>17</span>
+                          </td>
+                          <td>
+                            <span>18</span>
+                          </td>
+                          <td>
+                            <span>19</span>
+                          </td>
+                          <td>
+                            <span>20</span>
+                          </td>
+                          <td>
+                            <span>21</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>22</span>
+                          </td>
+                          <td>
+                            <span>23</span>
+                          </td>
+                          <td>
+                            <span>24</span>
+                          </td>
+                          <td>
+                            <span>25</span>
+                          </td>
+                          <td>
+                            <span>26</span>
+                          </td>
+                          <td>
+                            <span>27</span>
+                          </td>
+                          <td>
+                            <span>28</span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span>29</span>
+                          </td>
+                          <td>
+                            <span>30</span>
+                          </td>
+                          <td>
+                            <span>31</span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                        </tr>
+                        <tr className="calendar-week">
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                          <td>
+                            <span></span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div className="calendar-footer">
+                    <ul className="calendar-footer-list">
+                      <li>
+                        <strong>1.</strong>
+                        Nombre del evento.
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>

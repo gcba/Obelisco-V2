@@ -13,19 +13,19 @@ const SECTIONS_UX = [
       <div className="list-informative pb-3">
         <ul className="list-informative-bullet">
           <li>
-            <span className="fw-semibold">Legibilidad</span>: utilizamos fuentes tipográficas con formas y signos
-            fáciles de reconocer.{' '}
+            <span className="fw-semibold">Legible</span>: utilizamos fuentes tipográficas con formas y signos fáciles de
+            reconocer.{' '}
           </li>
           <li>
-            <span className="fw-semibold">Navegabilidad</span>: la tipografía cuenta con una estructura jerárquica que
+            <span className="fw-semibold">Navegable</span>: la tipografía cuenta con una estructura jerárquica que
             respeta la semántica HTML, permitiendo una comprensión intuitiva del contenido y su organización.
           </li>
           <li>
-            <span className="fw-semibold">Consistencia</span>: mantenemos un uso coherente de familias tipográficas para
+            <span className="fw-semibold">Consistente</span>: mantenemos un uso coherente de familias tipográficas para
             crear un lenguaje visual predecible que facilita la comunicación.
           </li>
           <li>
-            <span className="fw-semibold">Minimalismo</span>: utilizamos pesos y tamaños tipográficos de manera
+            <span className="fw-semibold">Minimalista</span>: utilizamos pesos y tamaños tipográficos de manera
             mesurada, optimizando el ritmo de lectura y centrando la atención en el contenido esencial.
           </li>
         </ul>
@@ -33,7 +33,7 @@ const SECTIONS_UX = [
     ),
   },
   {
-    title: 'Familias',
+    title: 'Familias tipográficas',
     content: (
       <>
         <p>
@@ -97,7 +97,7 @@ const SECTIONS_UX = [
       </>
     ),
     content: (
-      <p>Son textos descriptivos y breves que se utilizan dentro de los componentes a modo de etiqueta o título. </p>
+      <p>Son textos descriptivos y breves que se utilizan dentro de los componentes a modo de etiqueta o título.</p>
     ),
   },
   {
@@ -139,8 +139,8 @@ const SECTIONS_UX = [
         <p className="mb-4">
           El tamaño mínimo y por defecto para los textos es de 16px.{' '}
           <span className="fw-semibold">(Cuerpo/M/Regular)</span>, lo que asegura un nivel de legibilidad alto para
-          dispositivos <i>desktop</i> y dispositivos <i>mobile</i>. No recomendamos el uso de tamaños menores a esta
-          medida para textos corridos porque dificulta la lectura del contenido.
+          dispositivos desktop y dispositivos mobile. No recomendamos el uso de tamaños menores a esta medida para
+          textos corridos porque dificulta la lectura del contenido.
         </p>
         <p className="mb-4">
           La tipografía debe ser escalable y no perder su propiedad responsiva cuando la persona usuaria utiliza
@@ -179,7 +179,7 @@ const SECTIONS_UX = [
           </a>
           ).
         </p>
-        <p className="mb-4">No recomendamos utilizar textos sobre imágenes, porque dificultan la legibilidad. </p>
+        <p className="mb-4">No recomendamos utilizar textos sobre imágenes, porque dificultan la legibilidad.</p>
         <img src={`${basePath}/images/typography/typography_4.svg`} className="w-100" alt="Contraste de color" />
       </>
     ),
@@ -191,17 +191,17 @@ const SECTIONS_UX = [
         <p className="mb-4">
           Utilizamos los estilos tipográficos para encabezados, subtítulos y cuerpos de texto con una clara progresión
           visual. Esto ayuda a mejorar la estructura visual y la comprensión del contenido en todos los niveles,
-          priorizando el{' '}
+          priorizando el
           <a href="https://www.w3.org/TR/WCAG22/#section-headings" target="_blank">
             Success Criterion 2.4.10 Section Headings
           </a>
           .
         </p>
-        <p className="pb-2">
+        <p className="pb-4 mb-0">
           Para asegurar el uso correcto de la tipografía con una experiencia accesible, identificamos los encabezados
           utilizando la escala de <i>H&apos;s</i>, de H1 a H6. No deben saltarse niveles al trabajar con la escala
-          progresiva de jerarquías; si tenemos un H1, el siguiente H debe ser H2 y no un H3, H4 o cualquier otra
-          etiqueta que no siga el orden semántico.
+          progresiva de jerarquías; si tenemos un H1, el siguiente <i>H</i> debe ser H2 y no un H3, H4 o cualquier otra
+          etiqueta que no siga el orden semántico. Solamente se puede utilizar un H1 por página.
         </p>
       </>
     ),
@@ -442,24 +442,19 @@ const SECTIONS_DEV = [
             </blockquote>
           </div>
         </CodeBox>
-        <br />
-        <br />
       </>
     ),
   },
 ];
 const SECTIONS_SCALE = [
   {
-    title: 'Escala tipográfica',
-  },
-  {
-    subtitle: '¿Por qué una escala?',
+    title: '¿Por qué una escala?',
     content: (
       <>
         <p>
-          Basamos nuestra escala tipográfica en la Tercera Menor <i>(Minor Third)</i>, adaptándola estratégicamente para
-          crear una jerarquía visual armoniosa. El objetivo fue generar una escala tipográfica que equilibre
-          legibilidad, consistencia y accesibilidad, permitiendo transiciones sutiles entre tamaños de texto.
+          Basamos nuestra escala tipográfica en la Tercera Menor (Minor Third), adaptándola estratégicamente para crear
+          una jerarquía visual armoniosa. El objetivo fue generar una escala tipográfica que equilibre legibilidad,
+          consistencia y accesibilidad, permitiendo transiciones sutiles entre tamaños de texto.
         </p>
       </>
     ),
@@ -578,7 +573,7 @@ const SECTIONS_SCALE = [
                   </ul>
                 </td>
                 <td>
-                  <span>Normalmente, se utiliza como subtítulo dentro de secciones de contenido de una página.</span>
+                  <span>Es el encabezado de menor jerarquía de la escala tipográfica.</span>
                 </td>
               </tr>
             </tbody>

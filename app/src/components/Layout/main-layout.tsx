@@ -6,8 +6,8 @@ import { usePathname } from 'next/navigation';
 import NavLayout from './Navigation/nav';
 
 export const stylesPages = [
-  { text: 'Grilla', url: '/components/grid', id: 1 },
-  { text: 'Colores', url: '/components/colors', id: 2 },
+  { text: 'Colores', url: '/components/colors', id: 1 },
+  { text: 'Grilla', url: '/components/grid', id: 2 },
   { text: 'Tipografía', url: '/components/typography', id: 3 },
 ];
 export const formsPages = [

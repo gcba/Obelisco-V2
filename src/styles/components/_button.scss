@@ -130,13 +130,18 @@ $theme-color-btn-bg-hover: (
 
   // Estilos para icono en botón
   .o-icon {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 
   // Button Sizes
   &-sm {
     min-height: 2rem; // 32px
     padding: $btn-padding-sm;
+
+    // Estilos para icono en botón chico
+    .o-icon {
+      font-size: 1rem;
+    }
   }
 
   &-lg {

@@ -42,33 +42,46 @@ export const BUTTON_BLOCK = `
   Botón expandible
 </button>
 `;
-export const BUTTON_ICON = `// Icono y texto
+export const BUTTON_ICON = `// Botón con texto e icono a la izquierda
 <button type="button" class="btn btn-primary btn-sm">
-  <i class="bx bx-plus-circle o-icon"></i> 
-  Botón
+  <i class="bx bx-plus o-icon"></i> Botón
 </button>
 
 <button type="button" class="btn btn-primary">
-  <i class="bx bx-plus-circle o-icon"></i> 
-  Botón
+  <i class="bx bx-plus o-icon"></i> Botón
 </button>
 
 <button type="button" class="btn btn-primary btn-lg">
-  <i class="bx bx-plus-circle o-icon"></i> 
-  Botón
+  <i class="bx bx-plus o-icon"></i> Botón
 </button>
 
-// Icono
+// Botón con texto e icono a la derecha
+<button type="button" class="btn btn-primary btn-sm">
+  Botón
+  <span class="material-symbols-rounded o-icon" aria-hidden="true"> arrow_forward </span>
+</button>
+
+<button type="button" class="btn btn-primary">
+  Botón
+  <span class="material-symbols-rounded o-icon" aria-hidden="true"> arrow_forward </span>
+</button>
+
+<button type="button" class="btn btn-primary btn-lg">
+  Botón
+  <span class="material-symbols-rounded o-icon" aria-hidden="true"> arrow_forward </span>
+</button>
+
+// Botón sin texto, con icono
 <button type="button" class="btn btn-primary btn-sm" aria-label="Botón">
-  <span class="material-symbols-rounded o-icon" aria-hidden="true">add_circle</span>
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">add</span>
 </button>
 
 <button type="button" class="btn btn-primary" aria-label="Botón">
-  <span class="material-symbols-rounded o-icon" aria-hidden="true">add_circle</span>
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">add</span>
 </button>
 
 <button type="button" class="btn btn-primary btn-lg" aria-label="Botón">
-  <span class="material-symbols-rounded o-icon" aria-hidden="true">add_circle</span>
+  <span class="material-symbols-rounded o-icon" aria-hidden="true">add</span>
 </button>
 `;
 export const BUTTON_SPINNER = `

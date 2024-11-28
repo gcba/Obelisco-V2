@@ -490,7 +490,12 @@ const SECTIONS_SCALE = [
                 <td>
                   <ul className="my-1 ps-0">
                     <li className="pb-3">Fuente: Nunito.</li>
-                    <li className="pb-3">Tamaño: 40 px.</li>
+                    <li className="pb-3">
+                      Tamaño <i>desktop</i>: 40px.
+                    </li>
+                    <li className="pb-3">
+                      Tamaño <i>mobile</i>: 38px.
+                    </li>
                     <li>Interlineado: 48 px.</li>
                   </ul>
                 </td>
@@ -508,7 +513,12 @@ const SECTIONS_SCALE = [
                 <td>
                   <ul className="my-1 ps-0">
                     <li className="pb-3">Fuente: Nunito.</li>
-                    <li className="pb-3">Tamaño: 36 px.</li>
+                    <li className="pb-3">
+                      Tamaño <i>desktop</i>: 36px.
+                    </li>
+                    <li className="pb-3">
+                      Tamaño <i>mobile</i>: 34px.
+                    </li>
                     <li>Interlineado: 44 px.</li>
                   </ul>
                 </td>
@@ -523,7 +533,12 @@ const SECTIONS_SCALE = [
                 <td>
                   <ul className="my-1 ps-0">
                     <li className="pb-3">Fuente: Nunito.</li>
-                    <li className="pb-3">Tamaño: 32 px.</li>
+                    <li className="pb-3">
+                      Tamaño <i>desktop</i>: 32px.
+                    </li>
+                    <li className="pb-3">
+                      Tamaño <i>mobile</i>: 30px.
+                    </li>
                     <li>Interlineado: 44 px.</li>
                   </ul>
                 </td>

@@ -114,9 +114,9 @@ const Docs: React.FC = () => {
   return (
     <>
       <ComponentHeader
-        title="Migración a V2"
+        title="Documentación"
         description={[
-          'Esta nueva versión es una evolución de la versión anterior, "Obelisco V1", y busca mejorar y actualizar los componentes y estilos ofrecidos, alineándose con las últimas tendencias y estándares del desarrollo web.',
+          'Esta nueva versión es una evolución de la versión anterior, "Obelisco V1", que busca mejorar y actualizar los componentes y estilos ofrecidos, alineándose con las últimas tendencias y estándares del desarrollo web.',
         ]}
         divider={true}
       />

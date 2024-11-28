@@ -212,11 +212,15 @@ $calendar-td-span-size: 2.25rem;
 .calendar-deck {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
   justify-content: center;
+
+  @include media-breakpoint-up(md) {
+    gap: 1.5rem;
+  }
 
   @include media-breakpoint-up(xl) {
     justify-content: space-between;
-    column-gap: 19px;
+    gap: 2rem 19px;
   }
 }

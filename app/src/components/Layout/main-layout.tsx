@@ -6,8 +6,8 @@ import { usePathname } from 'next/navigation';
 import NavLayout from './Navigation/nav';
 
 export const stylesPages = [
-  { text: 'Grilla', url: '/components/grid', id: 1 },
-  { text: 'Colores', url: '/components/colors', id: 2 },
+  { text: 'Colores', url: '/components/colors', id: 1 },
+  { text: 'Grilla', url: '/components/grid', id: 2 },
   { text: 'Tipografía', url: '/components/typography', id: 3 },
 ];
 export const formsPages = [
@@ -56,13 +56,22 @@ export const componentsPages = [
 ];
 
 export const gettingPages = [
-  { text: 'Instalación', url: '/getting-started/installation', id: 1 },
-  { text: 'Importaciones', url: '/getting-started/imports', id: 2 },
+  { text: 'Sobre Obelisco', url: '/getting-started', id: 1 },
+  { text: 'Instalación', url: '/getting-started/installation', id: 2 },
+  { text: 'Importaciones', url: '/getting-started/imports', id: 3 },
+  { text: 'Editor de código', url: '/getting-started/editor', id: 4 },
 ];
 
 export const documentationPages = [
   { text: 'Cambios en componentes', url: '/documentation/update-component', id: 1 },
   { text: 'Clases disponibles', url: '/documentation/class-documentation', id: 2 },
+];
+
+export const templates = [{ text: 'Plantillas', url: 'https://gcba.github.io/obelisco-demo/index.html', id: 1 }];
+
+export const versions = [
+  { text: 'Obelisco v.2', url: '/documentation', id: 1 },
+  { text: 'Obelisco v.1 (deprecado)', url: 'https://gcba.github.io/obelisco-v1', id: 2 },
 ];
 
 const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -102,7 +111,7 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           {pathname.includes('/getting-started') && (
             <div className="nav-left sticky-nav h-auto">
               <div className="nav-left-box-title">
-                <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Inicio</p>
+                <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Empezar con Obelisco</p>
               </div>
               <NavLayout items={gettingPages} />
             </div>

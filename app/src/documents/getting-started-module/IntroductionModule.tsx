@@ -14,30 +14,32 @@ const sections = [
     title: 'Características Principales',
     content: (
       <div className="col-12">
-        <ul>
-          <li>
-            <strong>Integración con Bootstrap:</strong> Construido sobre la base de Bootstrap 5.3, Obelisco v2 hereda un
-            sistema de diseño robusto, facilitando la creación de interfaces consistentes y atractivas.
-          </li>
-          <li>
-            <strong>Paleta de Colores Predefinida:</strong> Ofrece una paleta de colores cuidadosamente seleccionada, lo
-            que simplifica la toma de decisiones de diseño y garantiza coherencia visual en toda la aplicación.
-          </li>
-          <li>
-            <strong>Accesibilidad Garantizada:</strong> Con un enfoque prioritario en la accesibilidad, cada componente
-            de Obelisco v2 está diseñado para cumplir con las mejores prácticas, asegurando una experiencia inclusiva
-            para todos los usuarios.
-          </li>
-          <li>
-            <strong>Amplia Variedad de Componentes:</strong> Con más de 20 componentes disponibles y más de 30
-            variantes, Obelisco v2 proporciona flexibilidad y versatilidad para adaptarse a diversas necesidades de
-            diseño y funcionalidad.
-          </li>
-          <li>
-            <strong>Tipografía Predefinida:</strong> Incluye tipografías predefinidas que complementan la estética
-            general, facilitando la consistencia en la presentación del texto en toda la aplicación.
-          </li>
-        </ul>
+        <div className="list-informative">
+          <ul className="list-informative-bullet">
+            <li>
+              <strong>Integración con Bootstrap:</strong> Construido sobre la base de Bootstrap 5.3, Obelisco v2 hereda
+              un sistema de diseño robusto, facilitando la creación de interfaces consistentes y atractivas.
+            </li>
+            <li>
+              <strong>Paleta de Colores Predefinida:</strong> Ofrece una paleta de colores cuidadosamente seleccionada,
+              lo que simplifica la toma de decisiones de diseño y garantiza coherencia visual en toda la aplicación.
+            </li>
+            <li>
+              <strong>Accesibilidad Garantizada:</strong> Con un enfoque prioritario en la accesibilidad, cada
+              componente de Obelisco v2 está diseñado para cumplir con las mejores prácticas, asegurando una experiencia
+              inclusiva para todos los usuarios.
+            </li>
+            <li>
+              <strong>Amplia Variedad de Componentes:</strong> Con más de 20 componentes disponibles y más de 30
+              variantes, Obelisco v2 proporciona flexibilidad y versatilidad para adaptarse a diversas necesidades de
+              diseño y funcionalidad.
+            </li>
+            <li>
+              <strong>Tipografía Predefinida:</strong> Incluye tipografías predefinidas que complementan la estética
+              general, facilitando la consistencia en la presentación del texto en toda la aplicación.
+            </li>
+          </ul>
+        </div>
       </div>
     ),
   },
@@ -55,7 +57,7 @@ const IntroductionModule: React.FC = () => {
   return (
     <>
       <ComponentHeader
-        title="Inicio"
+        title="Sobre Obelisco"
         description={[
           'Obelisco v2 es un Sistema de diseño basado en componentes para productos digitales de la Ciudad de Buenos Aires, diseñado para continuar la evolución de Obelisco en su segunda versión.',
           'Este sistema brinda una mejor experiencia de usuario y simplifica el desarrollo de interfaces web al mantener una armonía digital enfocada en la experiencia de los usuarios, proporcionada por el Gobierno de la Ciudad de Buenos Aires (GCBA).',

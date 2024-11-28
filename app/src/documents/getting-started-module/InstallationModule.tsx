@@ -71,13 +71,6 @@ const sections = [
 const InstallationModule: React.FC = () => {
   return (
     <>
-      <nav aria-label="Navegación secundaria">
-        <ol className="breadcrumb">
-          <li className="breadcrumb-item">
-            <Link href="/getting-started">Inicio</Link>
-          </li>
-        </ol>
-      </nav>
       <ComponentHeader
         title="Instalación"
         description={[

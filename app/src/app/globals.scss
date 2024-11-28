@@ -356,6 +356,37 @@ pre {
     }
   }
 }
+//Visualizacion de Calendario en codebox
+.calendar-box-sizing {
+  transform: scale(0.6);
+  transform-origin: top;
+  max-height: 3800px;
+  @media screen and (min-width: 768px) {
+    max-height: 2100px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-height: 2100px;
+  }
+  @media screen and (min-width: 1400px) {
+    max-height: 1400px;
+  }
+
+  > * {
+    width: 160%;
+    position: relative;
+    left: -30%;
+
+    @media screen and (max-width: 768px) {
+      max-width: 400px;
+    }
+    @media screen and (min-width: 768px) {
+      left: 0;
+    }
+    @media screen and (min-width: 1200px) {
+      left: -30%;
+    }
+  }
+}
 
 //Visualizacion de tarjetas
 .card-box-sizing {

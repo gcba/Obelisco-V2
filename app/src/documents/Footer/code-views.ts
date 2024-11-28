@@ -85,19 +85,19 @@ export const FOOTER = `<h2 class="sr-only">Navegación de pie de página</h2>
         <div class="col-12 col-md-5 col-xl-4 footer-content-img">
           <img
             class="d-md-none"
-            src="footer/ciudad-ba-sm.svg"
+            src="footer/logo-footer-mobile.svg"
             alt="Logo de Ciudad de Buenos Aires"
             height="48"
           />
           <img
             class="d-none d-md-inline"
-            src="footer/ciudad-ba.svg"
+            src="footer/logo-footer.svg"
             alt="Logo de Ciudad de Buenos Aires"
             height="40"
           />
           <img
             class="img-vamos-ba"
-            src="footer/vamos-ba.svg"
+            src="footer/logo-footer-ba.svg"
             alt="Logo de Vamos Buenos Aires"
           />
         </div>
@@ -154,19 +154,19 @@ export const FOOTER_LEGALS = `<h2 class="sr-only">Navegación de pie de página<
         <div class="col-12 col-md-5 col-xl-4 footer-content-img">
           <img
             class="d-md-none"
-            src="footer/ciudad-ba-sm.svg"
+            src="footer/logo-footer-mobile.svg"
             alt="Logo de Ciudad de Buenos Aires"
             height="48"
           />
           <img
             class="d-none d-md-inline"
-            src="footer/ciudad-ba.svg"
+            src="footer/logo-footer.svg"
             alt="Logo de Ciudad de Buenos Aires"
             height="40"
           />
           <img
             class="img-vamos-ba"
-            src="footer/vamos-ba.svg"
+            src="footer/logo-footer-ba.svg"
             alt="Logo de Vamos Buenos Aires"
           />
         </div>
@@ -310,19 +310,19 @@ export const FOOTER_INDICATOR = `<h2 class="sr-only">Navegación de pie de pági
         <div class="col-12 col-md-5 col-xl-4 footer-content-img">
           <img
             class="d-md-none"
-            src="footer/ciudad-ba-sm.svg"
+            src="footer/logo-footer-mobile.svg"
             alt="Logo de Ciudad de Buenos Aires"
             height="48"
           />
           <img
             class="d-none d-md-inline"
-            src="footer/ciudad-ba.svg"
+            src="footer/logo-footer.svg"
             alt="Logo de Ciudad de Buenos Aires"
             height="40"
           />
           <img
             class="img-vamos-ba"
-            src="footer/vamos-ba.svg"
+            src="footer/logo-footer-ba.svg"
             alt="Logo de Vamos Buenos Aires"
           />
         </div>

@@ -25,7 +25,12 @@ const sections = [
             </p>
           </li>
         </ul>
-        <a className="btn btn-primary btn-lg" href="#" target="_blank" rel="noopener noreferrer">
+        <a
+          className="btn btn-primary btn-lg"
+          href="https://gcba.github.io/obelisco-editor/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Abrir el editor
           <span className="material-symbols-rounded o-icon" aria-label="hidden">
             open_in_new

@@ -67,6 +67,13 @@ export const documentationPages = [
   { text: 'Clases disponibles', url: '/documentation/class-documentation', id: 2 },
 ];
 
+export const templates = [{ text: 'Plantillas', url: 'https://gcba.github.io/obelisco-demo/index.html', id: 1 }];
+
+export const versions = [
+  { text: 'Obelisco v.2', url: '/documentation', id: 1 },
+  { text: 'Obelisco v.1 (deprecado)', url: 'https://gcba.github.io/obelisco-v1', id: 2 },
+];
+
 const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const pathname = usePathname();
   const isHome = pathname === '/';

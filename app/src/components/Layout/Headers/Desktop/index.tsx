@@ -13,7 +13,6 @@ export default function HeaderDesktop() {
   const gettingPages = [
     { text: 'Empezar con Obelisco', url: '/getting-started', id: 1 },
     { text: 'Librería', url: '/components', id: 2 },
-    { text: 'Documentación', url: '/documentation', id: 3 },
   ];
   const pathname = usePathname();
 
@@ -46,6 +45,35 @@ export default function HeaderDesktop() {
                           </Link>
                         </li>
                       ))}
+                      <li className="nav-item">
+                        <a className={`nav-link nav-link-lg`} href="https://gcba.github.io/obelisco-demo/index.html">
+                          <span>Plantillas</span>
+                        </a>
+                      </li>
+                      <li className="dropdown">
+                        <button
+                          type="button"
+                          className="btn btn-dropdown btn-lg"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span className="btn-dropdown-text ellipsis-1">Versiones</span>
+                          <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                            expand_more
+                          </span>
+                        </button>
+                        <div className="dropdown-menu">
+                          <Link className="dropdown-item" href="/documentation">
+                            <span className="item-text">Obelisco v.2</span>
+                          </Link>
+                          <a className="dropdown-item" href="https://gcba.github.io/obelisco-v1">
+                            <span className="item-text">
+                              Obelisco v.1
+                              <span className="fst-italic">(deprecado)</span>
+                            </span>
+                          </a>
+                        </div>
+                      </li>
                     </ul>
                   </nav>
                 </div>

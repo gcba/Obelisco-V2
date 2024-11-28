@@ -8,6 +8,8 @@ import {
   gettingPages,
   organismsPages,
   stylesPages,
+  templates,
+  versions,
 } from '../../main-layout';
 import NavLayout from '../../Navigation/nav';
 
@@ -44,11 +46,14 @@ export default function HeaderMobile() {
       <div className="d-block d-xl-none">
         <Drawer open={isOpen} onClose={toggleDrawer} direction="left" size={isMobile ? 250 : isTablet ? 500 : 300}>
           <div className="px-4 pb-5">
-            <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Inicio</p>
+            <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Empezar con Obelisco</p>
             <NavLayout items={gettingPages} />
             <hr className="nav-divider" />
             <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Documentación</p>
             <NavLayout items={documentationPages} />
+            <hr className="nav-divider" />
+            <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Plantillas</p>
+            <NavLayout items={templates} />
             <hr className="nav-divider" />
             <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Estilos</p>
             <NavLayout items={stylesPages} />
@@ -61,6 +66,9 @@ export default function HeaderMobile() {
             <hr className="nav-divider" />
             <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Organismos</p>
             <NavLayout items={organismsPages} />
+            <hr className="nav-divider" />
+            <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Versiones</p>
+            <NavLayout items={versions} />
           </div>
         </Drawer>
       </div>

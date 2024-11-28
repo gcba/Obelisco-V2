@@ -26,10 +26,10 @@ const sections = [
           </li>
         </ul>
         <a className="btn btn-primary btn-lg" href="#" target="_blank" rel="noopener noreferrer">
+          Abrir el editor
           <span className="material-symbols-rounded o-icon" aria-label="hidden">
             open_in_new
           </span>
-          Abrir el editor
         </a>
       </div>
     ),
@@ -46,7 +46,7 @@ const EditorModule: React.FC = () => {
         ]}
         divider={true}
       />
-      <DocumentationTemplate sections={sections} type="editor" />
+      <DocumentationTemplate sections={sections} type="editor" noScrollButton={true} />
     </>
   );
 };

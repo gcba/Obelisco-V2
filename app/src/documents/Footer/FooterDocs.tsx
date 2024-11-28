@@ -55,10 +55,8 @@ const FooterDocs: React.FC = () => {
                         Instagram
                       </a>
                     </li>
-                    <li className="list-inline-item redes-items">
-                      <a href="https://x.com/gcba">
-                        <img src={`${basePath}/images/rrss_x.svg`} className="o-icon" alt="x" />X
-                      </a>
+                    <li className="list-inline-item redes-items social-x">
+                      <a href="https://x.com/gcba">X</a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://www.youtube.com/user/GCBA">
@@ -267,10 +265,8 @@ const FooterDocs: React.FC = () => {
                         Instagram
                       </a>
                     </li>
-                    <li className="list-inline-item redes-items">
-                      <a href="https://x.com/gcba">
-                        <img src={`${basePath}/images/rrss_x.svg`} className="o-icon" alt="x" />X
-                      </a>
+                    <li className="list-inline-item redes-items social-x">
+                      <a href="https://x.com/gcba">X</a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://www.youtube.com/user/GCBA">

@@ -56,13 +56,22 @@ export const componentsPages = [
 ];
 
 export const gettingPages = [
-  { text: 'Instalación', url: '/getting-started/installation', id: 1 },
-  { text: 'Importaciones', url: '/getting-started/imports', id: 2 },
+  { text: 'Sobre Obelisco', url: '/getting-started', id: 1 },
+  { text: 'Instalación', url: '/getting-started/installation', id: 2 },
+  { text: 'Importaciones', url: '/getting-started/imports', id: 3 },
+  { text: 'Editor de código', url: '/getting-started/editor', id: 4 },
 ];
 
 export const documentationPages = [
   { text: 'Cambios en componentes', url: '/documentation/update-component', id: 1 },
   { text: 'Clases disponibles', url: '/documentation/class-documentation', id: 2 },
+];
+
+export const templates = [{ text: 'Plantillas', url: 'https://gcba.github.io/obelisco-demo/index.html', id: 1 }];
+
+export const versions = [
+  { text: 'Obelisco v.2', url: '/documentation', id: 1 },
+  { text: 'Obelisco v.1 (deprecado)', url: 'https://gcba.github.io/obelisco-v1', id: 2 },
 ];
 
 const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {

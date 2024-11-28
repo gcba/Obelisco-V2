@@ -18,9 +18,10 @@ export interface Section {
 interface DocumentationTemplateProps {
   sections: Section[];
   type?: string;
+  noScrollButton?: boolean;
 }
 
-const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections, type }) => {
+const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections, type, noScrollButton }) => {
   const sectionRefs = useMemo(() => sections.map(() => React.createRef<HTMLDivElement>()), [sections]);
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
@@ -66,9 +67,11 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
                   {section.content && <div style={{ marginBottom: '32px' }}>{section.content}</div>}
                 </section>
               ))}
-              <div className="pt-5" style={{ paddingBottom: '32px' }}>
-                <ScrollTopButton />
-              </div>
+              {!noScrollButton && (
+                <div className="pt-5" style={{ paddingBottom: '32px' }}>
+                  <ScrollTopButton />
+                </div>
+              )}
             </div>
           </article>
 

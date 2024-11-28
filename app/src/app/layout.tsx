@@ -35,13 +35,6 @@ export default function RootLayout({
       </head>
       <body>
         <HeaderDesktop />
-        <div className="banner banner-dark">
-          <div className="banner-content">
-            <p className="banner-text">
-              Obelisco V2 se encuentra disponible. Estaremos trabajando en las fichas de uso de los componentes.
-            </p>
-          </div>
-        </div>
         <div className="layout">
           <main>
             <MainLayout>{children}</MainLayout>

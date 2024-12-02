@@ -51,7 +51,7 @@ const SECTIONS_UX = [
           </div>
           <div className="col">
             <img
-              src={`${basePath}/images/typography/typography_1.svg`}
+              src={`${basePath}/images/typography/typography_open_sans.svg`}
               className="w-100 pb-4"
               alt="Familia Open Sans"
             />

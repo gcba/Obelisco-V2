@@ -42,11 +42,8 @@ export const FOOTER = `<h2 class="sr-only">Navegación de pie de página</h2>
             Instagram
           </a>
         </li>
-        <li class="list-inline-item redes-items">
-          <a href="https://x.com/gcba">
-            <img src="rrss_x.svg" class="o-icon" alt="x" />
-            X
-          </a>
+        <li class="list-inline-item redes-items social-x">
+          <a href="https://x.com/gcba">X</a>
         </li>
         <li class="list-inline-item redes-items">
           <a href="https://www.youtube.com/user/GCBA">
@@ -267,11 +264,8 @@ export const FOOTER_INDICATOR = `<h2 class="sr-only">Navegación de pie de pági
             Instagram
           </a>
         </li>
-        <li class="list-inline-item redes-items">
-          <a href="https://x.com/gcba">
-            <img src="rrss_x.svg" class="o-icon" alt="x" />
-            X
-          </a>
+        <li class="list-inline-item redes-items social-x">
+          <a href="https://x.com/gcba">X</a>
         </li>
         <li class="list-inline-item redes-items">
           <a href="https://www.youtube.com/user/GCBA">

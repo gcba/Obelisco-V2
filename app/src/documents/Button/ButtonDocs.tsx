@@ -200,18 +200,42 @@ const ButtonDocs: React.FC = () => {
             <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center px-2">
               {/* Icono y Texto */}
               <button type="button" className="btn btn-primary btn-sm">
-                <i className="bx bx-plus-circle o-icon"></i>
+                <i className="bx bx-plus o-icon"></i>
                 Botón
               </button>
 
               <button type="button" className="btn btn-primary">
-                <i className="bx bx-plus-circle o-icon"></i>
+                <i className="bx bx-plus o-icon"></i>
                 Botón
               </button>
 
               <button type="button" className="btn btn-primary btn-lg">
-                <i className="bx bx-plus-circle o-icon"></i>
+                <i className="bx bx-plus o-icon"></i>
                 Botón
+              </button>
+              {/* Fin Icono y Texto */}
+
+              <div className="w-100"></div>
+              {/* Icono y Texto */}
+              <button type="button" className="btn btn-primary btn-sm">
+                Botón
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  arrow_forward
+                </span>
+              </button>
+
+              <button type="button" className="btn btn-primary">
+                Botón
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  arrow_forward
+                </span>
+              </button>
+
+              <button type="button" className="btn btn-primary btn-lg">
+                Botón
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  arrow_forward
+                </span>
               </button>
               {/* Fin Icono y Texto */}
 
@@ -219,19 +243,19 @@ const ButtonDocs: React.FC = () => {
               {/* Icono  */}
               <button type="button" className="btn btn-primary btn-sm" aria-label="Botón">
                 <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                  add_circle
+                  add
                 </span>
               </button>
 
               <button type="button" className="btn btn-primary" aria-label="Botón">
                 <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                  add_circle
+                  add
                 </span>
               </button>
 
               <button type="button" className="btn btn-primary btn-lg" aria-label="Botón">
                 <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                  add_circle
+                  add
                 </span>
               </button>
             </div>

@@ -171,7 +171,7 @@ $accordion-button-collapsed-icon: url('data:image/svg+xml,<svg xmlns="http://www
         .form-radio-input {
           top: 50%;
           transform: translate(0, -50%);
-          margin: 0.125rem; //2px
+          margin: 0 0.125rem; //0 2px
 
           &:hover {
             ~ .form-radio-label {
@@ -183,6 +183,9 @@ $accordion-button-collapsed-icon: url('data:image/svg+xml,<svg xmlns="http://www
         .form-radio-label {
           width: 100%;
           padding: 0 2rem 0 0; // 0 32px 0 0
+          display: flex;
+          align-items: center;
+
           &:hover {
             text-decoration: none;
           }

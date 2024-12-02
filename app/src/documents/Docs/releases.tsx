@@ -24,6 +24,29 @@ const ReleasesComponents: React.FC = () => {
 
 const sections = [
   {
+    title: 'Versión 1.5.1',
+    content: (      
+      <ul className="docs-list">
+        <p>La versión 1.5.1 contiene los siguientes fixes: </p>
+        <li> Se modifica el máximo de líneas en título (2) y descripción (3) del  <span className="fst-italic">organismo Accesos.</span></li>
+        <li> Se ajusta el alineado vertical del componente radio que se encuentra dentro del componente  <span className="fst-italic">Colapsable con lista seleccionable.</span> </li>
+        <li> Se modifica el tamaño del ícono en botón mediano a 18px. </li>
+        <li> En el organismo Pie de página <span className="fst-italic">(Footer)</span>, se coloca el ícono de la red social "X", por medio de la clase <code>.social-x </code> antes utilizada en una etiqueta <code>img</code>.</li>
+      </ul>
+    ),
+  },
+  {
+    title: 'Versión 1.5.0',
+    content: (      
+      <ul className="docs-list">
+        <p>La versión 1.5.0 contiene: </p>
+        <li>
+          Un nuevo editor para poder probar los componentes de obelisco. En ella se podrá copiar el html y manipular el código en tiempo real.
+        </li>
+      </ul>
+    ),
+  },
+  {
     title: 'Versión 1.4.2',
     content: (      
       <ul className="docs-list">

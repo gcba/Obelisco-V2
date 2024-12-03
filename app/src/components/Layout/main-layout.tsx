@@ -65,6 +65,7 @@ export const gettingPages = [
 export const documentationPages = [
   { text: 'Cambios en componentes', url: '/documentation/update-component', id: 1 },
   { text: 'Clases disponibles', url: '/documentation/class-documentation', id: 2 },
+  { text: 'Versionados', url: '/documentation/releases', id: 3 },
 ];
 
 export const templates = [{ text: 'Plantillas', url: 'https://gcba.github.io/obelisco-demo/index.html', id: 1 }];

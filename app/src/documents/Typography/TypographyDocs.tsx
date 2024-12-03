@@ -51,7 +51,7 @@ const SECTIONS_UX = [
           </div>
           <div className="col">
             <img
-              src={`${basePath}/images/typography/typography_1.svg`}
+              src={`${basePath}/images/typography/typography_open_sans.svg`}
               className="w-100 pb-4"
               alt="Familia Open Sans"
             />
@@ -191,7 +191,7 @@ const SECTIONS_UX = [
         <p className="mb-4">
           Utilizamos los estilos tipográficos para encabezados, subtítulos y cuerpos de texto con una clara progresión
           visual. Esto ayuda a mejorar la estructura visual y la comprensión del contenido en todos los niveles,
-          priorizando el
+          priorizando el{' '}
           <a href="https://www.w3.org/TR/WCAG22/#section-headings" target="_blank">
             Success Criterion 2.4.10 Section Headings
           </a>

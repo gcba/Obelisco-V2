@@ -37,7 +37,8 @@ const ReleasesComponents: React.FC = () => {
           <li>
             {' '}
             En el organismo Pie de página <span className="fst-italic">(Footer)</span>, se coloca el ícono de la red
-            social "X", por medio de la clase <code>.social-x </code> antes utilizada en una etiqueta <code>img</code>.
+            social &quot;X&quot;, por medio de la clase <code>.social-x </code> antes utilizada en una etiqueta{' '}
+            <code>img</code>.
           </li>
         </ul>
       ),

@@ -31,29 +31,29 @@ const sections = [
     ),
   },
   {
-    title: 'Optimización de Código SCSS',
+    title: 'Optimización de código SCSS',
     content: (
       <li>
-        <strong>Optimización de Código SCSS</strong>: Se han corregido variables y funciones presentes en el código SCSS
+        <strong>Optimización de código SCSS</strong>: Se han corregido variables y funciones presentes en el código SCSS
         de &quot;Obelisco V1&quot;, mejorando así la calidad y la mantenibilidad del código. Además, se ha realizado una
         limpieza de código para eliminar redundancias y optimizar la estructura de los estilos.
       </li>
     ),
   },
   {
-    title: 'Eliminación de Componentes Deprecados',
+    title: 'Eliminación de componentes deprecados',
     content: (
       <li>
-        <strong>Eliminación de Componentes Deprecados</strong>: En esta nueva versión, se han eliminado los componentes
+        <strong>Eliminación de componentes deprecados</strong>: En esta nueva versión, se han eliminado los componentes
         que estaban deprecados o ya no eran necesarios, reduciendo así el peso y la complejidad de la librería.
       </li>
     ),
   },
   {
-    title: 'Incorporación de Nuevas Clases',
+    title: 'Incorporación de nuevas clases',
     content: (
       <li>
-        <strong>Incorporación de Nuevas Clases</strong>: Se han añadido nuevas clases, adaptadas a las nuevas
+        <strong>Incorporación de nuevas clases</strong>: Se han añadido nuevas clases, adaptadas a las nuevas
         funcionalidades y estilos de Bootstrap 5.
       </li>
     ),
@@ -69,11 +69,11 @@ const sections = [
     ),
   },
   {
-    title: 'Proceso de Compilación y Distribución',
+    title: 'Proceso de compilación y distribución',
     content: (
       <>
         <li>
-          <strong>Proceso de Compilación y Distribución</strong>: &quot;Obelisco V2&quot; incluye un proceso de buildeo
+          <strong>Proceso de compilación y distribución</strong>: &quot;Obelisco V2&quot; incluye un proceso de buildeo
           que compila los archivos SCSS a CSS. El resultado es un paquete optimizado de estilos CSS que puede ser
           fácilmente integrado en cualquier proyecto.
         </li>

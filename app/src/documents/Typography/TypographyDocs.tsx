@@ -214,14 +214,18 @@ const SECTIONS_UX = [
     content: (
       <>
         <p className="mb-4">
-          Utilizamos diferentes pesos para jerarquizar y enfatizar contenido, generando un orden de lectura basado en
-          títulos, subtítulos y párrafos de texto; además, los pesos tipográficos se pueden utilizar dentro de párrafos
-          de texto para destacar contenido de interés.
+          Utilizamos diferentes pesos para jerarquizar y enfatizar contenido, generando un orden de lectura basado en títulos, subtítulos y párrafos de texto; además, los pesos tipográficos se pueden utilizar dentro de párrafos de texto para destacar contenido de interés.
         </p>
         <p className="mb-4">
           Dentro de nuestra escala tipográfica utilizamos <i>regular</i>, <i>semibold</i> y <i>bold</i> como los únicos
-          pesos con los que pueden trabajar dentro de Obelisco.
+          pesos con los que pueden trabajar dentro de Obelisco. <strong>Cada uno de los tamaños de la escala tiene un peso predeterminado:</strong>
         </p>
+
+        <ul>
+          <li>Los tamaños de Cuerpo <i>(Body)</i> utilizan <i>regular</i> como peso predeterminado.</li>
+          <li>Los tamaños de Titulares <i>(Titles)</i>, Titulares/M y Titulares/S, utilizan <i>semibold</i> como peso predeterminado, mientras que los Titulares/L utilizan <i>bold</i> como peso predeterminado.</li>
+          <li>Todos los <i>H’s</i> utilizan <i>semibold</i> como peso predeterminado, excepto por los H1, que utilizan <i>bold</i> como peso predeterminado.</li>
+        </ul>
 
         <div className="d-flex flex-column flex-md-row align-items-center mb-4" style={{ gap: '32px' }}>
           <img src={`${basePath}/images/typography/typography_5.svg`} alt="Texto en negrita" />

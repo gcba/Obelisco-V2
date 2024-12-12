@@ -511,14 +511,16 @@ export const BUTTON_COLORS: ColorTableArray[] = [
 ];
 export const CALENDAR_COLORS: ColorTableArray[] = [
   {
-    base: '$bg-default',
-    hex: '#336ACC',
-    variable: 'bg-default',
+    base: '$bg-white',
+    hex: '#FFFFFF',
+    variable: '$bg-default',
     use: 'Es el color de fondo del calendario y las filas del calendario por defecto.',
+    customBorder: true,
+    // border: '1px solid #E6EBF0'
   },
   {
     base: '$bg-secondary',
-    hex: '#2E569E',
+    hex: '#ECF0F9',
     variable: '$bg-secondary',
     use: 'Es el color de fondo secundario de las filas del calendario.',
   },

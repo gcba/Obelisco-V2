@@ -1,9 +1,9 @@
 import React from 'react';
-
+ 
 import CodeBox from '@/components/CodeBox';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
-
+ 
 import LinkClient from '../../components/LinkClient/index';
 import {
   BUTTON_SOLID,
@@ -17,9 +17,9 @@ import {
   BUTTON_OUTLINE_SPINNER,
   BUTTON_ICON_XS,
 } from './code-views';
-
+ 
 const ButtonDocs: React.FC = () => {
-
+ 
   const SECTIONS_DEV = [
     {
       title: 'Tipos',
@@ -204,18 +204,18 @@ const ButtonDocs: React.FC = () => {
                 <i className="bx bx-plus o-icon"></i>
                 Botón
               </button>
-
+ 
               <button type="button" className="btn btn-primary">
                 <i className="bx bx-plus o-icon"></i>
                 Botón
               </button>
-
+ 
               <button type="button" className="btn btn-primary btn-lg">
                 <i className="bx bx-plus o-icon"></i>
                 Botón
               </button>
               {/* Fin Icono y Texto */}
-
+ 
               <div className="w-100"></div>
               {/* Icono y Texto */}
               <button type="button" className="btn btn-primary btn-sm">
@@ -224,14 +224,14 @@ const ButtonDocs: React.FC = () => {
                   arrow_forward
                 </span>
               </button>
-
+ 
               <button type="button" className="btn btn-primary">
                 Botón
                 <span className="material-symbols-rounded o-icon" aria-hidden="true">
                   arrow_forward
                 </span>
               </button>
-
+ 
               <button type="button" className="btn btn-primary btn-lg">
                 Botón
                 <span className="material-symbols-rounded o-icon" aria-hidden="true">
@@ -239,7 +239,7 @@ const ButtonDocs: React.FC = () => {
                 </span>
               </button>
               {/* Fin Icono y Texto */}
-
+ 
               <div className="w-100"></div>
               {/* Icono  */}
               <button type="button" className="btn btn-primary btn-sm" aria-label="Botón">
@@ -247,13 +247,13 @@ const ButtonDocs: React.FC = () => {
                   add
                 </span>
               </button>
-
+ 
               <button type="button" className="btn btn-primary" aria-label="Botón">
                 <span className="material-symbols-rounded o-icon" aria-hidden="true">
                   add
                 </span>
               </button>
-
+ 
               <button type="button" className="btn btn-primary btn-lg" aria-label="Botón">
                 <span className="material-symbols-rounded o-icon" aria-hidden="true">
                   add
@@ -387,7 +387,7 @@ const ButtonDocs: React.FC = () => {
       ),
     },
   ];
-
+ 
   const SECTIONS_GUIDE_USE_BUTTON = [
     {
       title: 'Tipos',
@@ -477,7 +477,7 @@ const ButtonDocs: React.FC = () => {
       ),
     }
   ];
-
+ 
   return (
     <>
       <ComponentHeader
@@ -495,14 +495,32 @@ const ButtonDocs: React.FC = () => {
         ]}
       />
       <Tabs sectionDev={SECTIONS_DEV}
-        customSection={{
-          title: "Guía de uso",
-          id: "guide-use",
-          sectionContent: SECTIONS_GUIDE_USE_BUTTON
-        }}
+        customSections={
+          [
+            {
+              title: "Guía de uso",
+              id: "guide-use",
+              sectionContent: SECTIONS_GUIDE_USE_BUTTON
+            }, {
+              title: "Compatibilidad",
+              id: "guide-usee",
+              sectionContent: SECTIONS_GUIDE_USE_BUTTON
+            }, {
+              title: "Accesibilidad",
+              id: "guide-useee",
+              sectionContent: SECTIONS_GUIDE_USE_BUTTON
+            }
+            , {
+              title: "Guía de uso",
+              id: "guide-useeee",
+              sectionContent: SECTIONS_GUIDE_USE_BUTTON
+            }
+          ]
+        }
       />
     </>
   );
 };
-
+ 
 export default ButtonDocs;
+ 

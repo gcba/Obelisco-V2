@@ -2461,11 +2461,11 @@ const HeaderDocs: React.FC = () => {
         ]}
       />
       <Tabs sectionDev={SECTIONS_DEV}
-        customSection={{
+        customSections={[{
           title: "Guía de uso",
           id: "guide-use",
           sectionContent: SECTIONS_GUIDE_USE_HEADER
-        }}
+        }]}
       />
     </>
   );

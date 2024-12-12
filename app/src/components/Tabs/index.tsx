@@ -1,9 +1,9 @@
 'use client';
-
+ 
 import React, { useState } from 'react';
-
+ 
 import DocumentationTemplate, { Section } from '../Template/DocumentationTemplate';
-
+ 
 interface TabItemProps {
   id: string;
   title: string;
@@ -11,7 +11,7 @@ interface TabItemProps {
   activeTab: string;
   setActiveTab: (id: string) => void;
 }
-
+ 
 const TabItem: React.FC<TabItemProps> = ({ id, title, icon, activeTab, setActiveTab }) => {
   return (
     <li className="nav-item" role="presentation">
@@ -30,13 +30,13 @@ const TabItem: React.FC<TabItemProps> = ({ id, title, icon, activeTab, setActive
     </li>
   );
 };
-
+ 
 interface TabPanelProps {
   id: string;
   children: React.ReactNode;
   activeTab: string;
 }
-
+ 
 const TabPanel: React.FC<TabPanelProps> = ({ id, children, activeTab }) => {
   return (
     <div
@@ -49,7 +49,7 @@ const TabPanel: React.FC<TabPanelProps> = ({ id, children, activeTab }) => {
     </div>
   );
 };
-
+ 
 interface CustomSectionProps {
   sectionContent?: Section[];
   id: string;
@@ -58,12 +58,12 @@ interface CustomSectionProps {
 interface TabsProps {
   sectionUx?: Section[];
   sectionDev?: Section[];
-  customSection?: CustomSectionProps;
+  customSections?: CustomSectionProps[];
 }
-
-const Tabs: React.FC<TabsProps> = ({ sectionUx, sectionDev, customSection }) => {
+ 
+const Tabs: React.FC<TabsProps> = ({ sectionUx, sectionDev, customSections }) => {
   const [activeTab, setActiveTab] = useState(sectionUx ? 'panel-content-ux' : 'panel-content-dev');
-
+ 
   return (
     <div>
       <nav className="tabs-box" aria-label="Navegación por pestañas">
@@ -74,19 +74,22 @@ const Tabs: React.FC<TabsProps> = ({ sectionUx, sectionDev, customSection }) => 
           {sectionDev && (
             <TabItem id="panel-content-dev" title="Código" activeTab={activeTab} setActiveTab={setActiveTab} />
           )}
-          {customSection && (
-            <TabItem
-              id={`panel-content-${customSection.id}`}
-              title={customSection.title}
-              activeTab={activeTab}
-              setActiveTab={setActiveTab}
-            />
-          )}
+          {customSections &&
+            customSections.map((section) => (
+              <TabItem
+                key={section.id}
+                id={`panel-content-${section.id}`}
+                title={section.title}
+                activeTab={activeTab}
+                setActiveTab={setActiveTab}
+              />
+            ))
+          }
         </ul>
       </nav>
-
+ 
       <hr className="mt-0 mb-4" />
-
+ 
       <div className="tab-content" style={{ paddingTop: '32px' }}>
         {sectionUx && (
           <TabPanel id={`panel-content-ux`} activeTab={activeTab}>
@@ -98,14 +101,24 @@ const Tabs: React.FC<TabsProps> = ({ sectionUx, sectionDev, customSection }) => 
             <DocumentationTemplate sections={sectionDev} type="dev" />
           </TabPanel>
         )}
-        {customSection && customSection.sectionContent && (
-          <TabPanel id={`panel-content-${customSection.id}`} activeTab={activeTab}>
-            <DocumentationTemplate sections={customSection.sectionContent} type={customSection.id.toLowerCase()} />
-          </TabPanel>
-        )}
+        {customSections &&
+          customSections.map((section) => (
+            section.sectionContent && (
+              <TabPanel
+                key={section.id} // Clave única requerida por React
+                id={`panel-content-${section.id}`}
+                activeTab={activeTab}
+              >
+                <DocumentationTemplate
+                  sections={section.sectionContent}
+                  type={section.id.toLowerCase()}
+                />
+              </TabPanel>
+            )
+          ))}
       </div>
     </div>
   );
 };
-
+ 
 export default Tabs;

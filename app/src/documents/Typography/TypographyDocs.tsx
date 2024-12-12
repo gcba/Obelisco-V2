@@ -224,7 +224,7 @@ const SECTIONS_UX = [
           <strong>Cada uno de los tamaños de la escala tiene un peso predeterminado:</strong>
         </p>
 
-        <ul>
+        <ul className='list-informative-bullet' >
           <li>
             Los tamaños de Cuerpo <i>(Body)</i> utilizan <i>regular</i> como peso predeterminado.
           </li>

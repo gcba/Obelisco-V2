@@ -387,6 +387,96 @@ const ButtonDocs: React.FC = () => {
     },
   ];
 
+  const SECTIONS_GUIDE_USE_BUTTON = [
+    {
+      title: 'Tipos',
+      content: (
+        <>
+          <CodeBox codeHTML={BUTTON_SOLID}>
+            <div className="d-flex gap-3 justify-content-center align-items-center flex-wrap px-2">
+              <div>
+                <button type="button" className="btn btn-primary">
+                  Primario
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-secondary">
+                  Secundario
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-tertiary">
+                  Terciario
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-success">
+                  Éxito
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-danger">
+                  Error
+                </button>
+              </div>
+              <div className="p-2 bg-dark">
+                <button type="button" className="btn btn-light">
+                  Light
+                </button>
+              </div>
+            </div>
+          </CodeBox>
+          <br />
+          <CodeBox codeHTML={BUTTON_OUTLINE}>
+            <div className="d-flex gap-3 justify-content-center align-items-center flex-wrap px-2">
+              <div>
+                <button type="button" className="btn btn-outline-primary">
+                  Primario
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-outline-secondary">
+                  Secundario
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-outline-tertiary">
+                  Terciario
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-outline-success">
+                  Éxito
+                </button>
+              </div>
+              <div>
+                <button type="button" className="btn btn-outline-danger">
+                  Error
+                </button>
+              </div>
+              <div className="p-2 bg-dark">
+                <button type="button" className="btn btn-outline-light">
+                  Light
+                </button>
+              </div>
+            </div>
+          </CodeBox>
+          <br />
+          <p>
+            En caso de requerir que un elemento <code>anchor</code> adopte el estilo de un botón, simplemente pueden
+            utilizarse las clases correspondientes de botones.
+          </p>
+          <CodeBox codeHTML={BUTTON_ANCHOR}>
+            <div className="d-flex gap-3 justify-content-center flex-wrap px-2">
+              <LinkClient className="btn btn-primary">Enlace</LinkClient>
+              <LinkClient className="btn btn-outline-primary">Enlace</LinkClient>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+  ];
+
   return (
     <>
       <ComponentHeader
@@ -403,7 +493,31 @@ const ButtonDocs: React.FC = () => {
           </>,
         ]}
       />
-      <Tabs sectionDev={SECTIONS_DEV} />
+      <Tabs
+        sectionDev={SECTIONS_DEV}
+        customSections={[
+          {
+            title: 'Guía de uso',
+            id: 'guide-use',
+            sectionContent: SECTIONS_GUIDE_USE_BUTTON,
+          },
+          {
+            title: 'Compatibilidad',
+            id: 'guide-usee',
+            sectionContent: SECTIONS_GUIDE_USE_BUTTON,
+          },
+          {
+            title: 'Accesibilidad',
+            id: 'guide-useee',
+            sectionContent: SECTIONS_GUIDE_USE_BUTTON,
+          },
+          {
+            title: 'Guía de uso',
+            id: 'guide-useeee',
+            sectionContent: SECTIONS_GUIDE_USE_BUTTON,
+          },
+        ]}
+      />
     </>
   );
 };

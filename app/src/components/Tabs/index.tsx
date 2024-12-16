@@ -58,10 +58,10 @@ interface CustomSectionProps {
 interface TabsProps {
   sectionUx?: Section[];
   sectionDev?: Section[];
-  customSection?: CustomSectionProps;
+  customSections?: CustomSectionProps[];
 }
 
-const Tabs: React.FC<TabsProps> = ({ sectionUx, sectionDev, customSection }) => {
+const Tabs: React.FC<TabsProps> = ({ sectionUx, sectionDev, customSections }) => {
   const [activeTab, setActiveTab] = useState(sectionUx ? 'panel-content-ux' : 'panel-content-dev');
 
   return (
@@ -74,14 +74,16 @@ const Tabs: React.FC<TabsProps> = ({ sectionUx, sectionDev, customSection }) => 
           {sectionDev && (
             <TabItem id="panel-content-dev" title="Código" activeTab={activeTab} setActiveTab={setActiveTab} />
           )}
-          {customSection && (
-            <TabItem
-              id={`panel-content-${customSection.id}`}
-              title={customSection.title}
-              activeTab={activeTab}
-              setActiveTab={setActiveTab}
-            />
-          )}
+          {customSections &&
+            customSections.map((section) => (
+              <TabItem
+                key={section.id}
+                id={`panel-content-${section.id}`}
+                title={section.title}
+                activeTab={activeTab}
+                setActiveTab={setActiveTab}
+              />
+            ))}
         </ul>
       </nav>
 
@@ -98,11 +100,19 @@ const Tabs: React.FC<TabsProps> = ({ sectionUx, sectionDev, customSection }) => 
             <DocumentationTemplate sections={sectionDev} type="dev" />
           </TabPanel>
         )}
-        {customSection && customSection.sectionContent && (
-          <TabPanel id={`panel-content-${customSection.id}`} activeTab={activeTab}>
-            <DocumentationTemplate sections={customSection.sectionContent} type={customSection.id.toLowerCase()} />
-          </TabPanel>
-        )}
+        {customSections &&
+          customSections.map(
+            (section) =>
+              section.sectionContent && (
+                <TabPanel
+                  key={section.id} // Clave única requerida por React
+                  id={`panel-content-${section.id}`}
+                  activeTab={activeTab}
+                >
+                  <DocumentationTemplate sections={section.sectionContent} type={section.id.toLowerCase()} />
+                </TabPanel>
+              ),
+          )}
       </div>
     </div>
   );

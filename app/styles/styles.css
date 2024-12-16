@@ -12980,11 +12980,14 @@ nav .nav-pills.flex-column .nav .nav .nav .nav-link, nav .nav-pills.list-steps .
   gap: 0.25rem;
 }
 .btn .o-icon {
-  font-size: 1rem;
+  font-size: 1.125rem;
 }
 .btn-sm, .btn-group-sm > .btn {
   min-height: 2rem;
   padding: 0.25rem 0.5rem;
+}
+.btn-sm .o-icon, .btn-group-sm > .btn .o-icon {
+  font-size: 1rem;
 }
 .btn-lg, .btn-group-lg > .btn {
   min-height: 3rem;
@@ -14071,7 +14074,6 @@ a.list-group-item.item-sm {
 }
 .group-access .card-access .card-access-body {
   display: flex;
-  align-items: center;
   gap: 0.75rem;
   padding: 1.5rem;
 }
@@ -14089,9 +14091,21 @@ a.list-group-item.item-sm {
 }
 .group-access .card-access .card-access-body .card-access-title {
   margin-bottom: 0.25rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
 }
 .group-access .card-access .card-access-body .card-access-text {
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
 }
 .group-access .card-access .card-access-body .card-access-icon {
   font-size: 2rem;
@@ -16858,6 +16872,15 @@ a.badge-danger:focus, a.badge-danger.focus {
 .main-footer .list-inline .list-inline-item.redes-items {
   margin-right: 1rem;
 }
+.main-footer .list-inline .list-inline-item.redes-items.social-x::before {
+  content: "";
+  background: transparent url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(%23clip0_26017_3657)"><path d="M17.7511 2.96094H20.8178L14.1179 10.6187L22 21.039H15.8282L10.9946 14.719L5.46363 21.039H2.39488L9.56109 12.8483L2 2.96094H8.32809L12.6975 8.7375L17.7511 2.96094ZM16.6747 19.2033H18.3741L7.4048 4.70027H5.58137L16.6747 19.2033Z" fill="white"/></g><defs><clipPath id="clip0_26017_3657"><rect width="24" height="24" fill="white"/></clipPath></defs></svg>') no-repeat center center;
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.25rem;
+  vertical-align: bottom;
+}
 .main-footer .list-inline .list-inline-item:last-of-type {
   margin-right: 0;
 }
@@ -18241,7 +18264,7 @@ a.badge-danger:focus, a.badge-danger.focus {
 .accordion-item .accordion-body .accordion-form .form-radio .form-radio-input {
   top: 50%;
   transform: translate(0, -50%);
-  margin: 0.125rem;
+  margin: 0 0.125rem;
 }
 .accordion-item .accordion-body .accordion-form .form-radio .form-radio-input:hover ~ .form-radio-label {
   text-decoration: none;
@@ -18249,6 +18272,8 @@ a.badge-danger:focus, a.badge-danger.focus {
 .accordion-item .accordion-body .accordion-form .form-radio .form-radio-label {
   width: 100%;
   padding: 0 2rem 0 0;
+  display: flex;
+  align-items: center;
 }
 .accordion-item .accordion-body .accordion-form .form-radio .form-radio-label:hover {
   text-decoration: none;

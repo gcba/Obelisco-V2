@@ -54,6 +54,8 @@ interface CustomSectionProps {
   sectionContent?: Section[];
   id: string;
   title: string;
+  subtitle?: string;
+  content?: React.ReactNode;
 }
 interface TabsProps {
   sectionUx?: Section[];

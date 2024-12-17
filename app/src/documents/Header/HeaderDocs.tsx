@@ -2118,7 +2118,7 @@ const HeaderDocs: React.FC = () => {
     },
   ];
 
-  const GUIDE_OF_USE = [
+  const SECTION_UX = [
     {
       title: 'Uso',
     },
@@ -2299,7 +2299,7 @@ const HeaderDocs: React.FC = () => {
           <p className="text-md mt-2 mb-4">El encabezado <i>(header)</i> en su versión mobile pasa a ser un menú desplegable con la reorganización de los elementos que lo componen.</p>
           <div className="container">
             <img
-              src="/Obelisco-V2/images/header/header_mobile"
+              src="/Obelisco-V2/images/header/header_mobile.svg"
               alt="Cómo no usar el header"
               className="img-fluid" />
           </div>
@@ -2307,6 +2307,114 @@ const HeaderDocs: React.FC = () => {
       ),
     }
   ];
+
+  const SPECS = [
+    {
+      title: 'Anatomía',
+      content: (
+        <>
+          <div className="container">
+            <img
+              src="/Obelisco-V2/images/header/header_specs_anatomia.svg"
+              alt="Header anatomía"
+              className="img-fluid" />
+          </div>
+
+          <div className="container mt-4">
+            <div className="responsive-scroll" tabIndex={0}>
+              <table className="table">
+                <thead>
+                  <tr>
+                    <th scope="col" className="tb-text">Elemento</th>
+                    <th scope="col" className="tb-text">Texto</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Logo</td>
+                    <td>Obligatorio.</td>
+                  </tr>
+                  <tr>
+                    <td>Navegación principal</td>
+                    <td>Opcional, pero recomendado.</td>
+                  </tr>
+                  <tr>
+                    <td>Buscador</td>
+                    <td>Opcional.</td>
+                  </tr>
+                  <tr>
+                    <td>Desplegable de perfil</td>
+                    <td>Opcional.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </>
+      )
+    },
+    {
+      title: 'Variantes',
+      content: (
+        <>
+          <p className="text-md mt-2 mb-4">
+            El encabezado <i>(header)</i> puede adaptarse a las necesidades del producto digital para ofrecer una estructura basada en la arquitectura de información del sitio. El único elemento inamovible e imprescindible del organismo es el logo de la Ciudad.
+          </p>
+        </>
+      ),
+    },
+    {
+      subtitle: 'Sin buscador',
+      content: (
+        <>
+          <p className="text-md mt-2 mb-4">
+            El encabezado <i>(header)</i> puede prescindir del buscador de no ser necesario o si ya hay un buscador general dentro del cuerpo de la página. En caso de no haber un buscador, se pueden utilizar hasta 6 navegaciones manteniendo 1 sola línea para el organismo.
+          </p>
+          <div className="container">
+            <img
+              src="/Obelisco-V2/images/header/header_specs_variantes.svg"
+              alt="Header variante sin buscador"
+              className="img-fluid" />
+          </div>
+        </>
+      ),
+    },
+    {
+      subtitle: 'Sin botón/sección de perfil',
+      content: (
+        <>
+          <p className="text-md mt-2 mb-4">
+            El encabezado <i>(header)</i> puede prescindir de la sección de perfil de no ser necesaria. En caso de no haber un botón de perfil o un desplegable de perfil, se pueden utilizar hasta 6 navegaciones manteniendo 1 sola línea para el organismo.
+          </p>
+          <div className="container">
+            <img
+              src="/Obelisco-V2/images/header/header_specs_sin_boton.svg"
+              alt="Header variante sin boton/seccion de perfil"
+              className="img-fluid" />
+          </div>
+        </>
+      ),
+    },
+    {
+      subtitle: 'Sin navegaciones',
+      content: (
+        <>
+          <>
+            <p className="text-md mt-2 mb-4">
+              El encabezado <i>(header)</i> puede prescindir de la sección de perfil de no ser necesaria. En caso de no haber un botón de perfil o un desplegable de perfil, se pueden utilizar hasta 6 navegaciones manteniendo 1 sola línea para el organismo.
+            </p>
+            <div className="container">
+              <img
+                src="/Obelisco-V2/images/header/header_specs_sin_navegacion.svg"
+                alt="Header variante sin navegaciones"
+                className="img-fluid" />
+            </div>
+          </>
+        </>
+      ),
+    }
+  ];
+
 
   return (
     <>
@@ -2328,9 +2436,23 @@ const HeaderDocs: React.FC = () => {
           </>,
         ]}
       />
-      <Tabs
-        sectionUx={GUIDE_OF_USE}
+      {/* <Tabs
+        sectionUx={SECTION_UX}
         sectionDev={SECTIONS_DEV}
+        customSections={
+          [
+            { title: 'Especificaciones', id: 'section_ux', sectionContent: SPECS }
+          ]
+        }
+      /> */}
+      <Tabs
+        sectionDev={SECTIONS_DEV}
+        sectionUx={SECTION_UX}
+        customSections={
+          [
+            { title: 'Especificaciones', id: 'section-specs', sectionContent: SPECS }
+          ]
+        }
       />
 
     </>

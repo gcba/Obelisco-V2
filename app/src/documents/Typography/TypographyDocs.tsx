@@ -446,6 +446,7 @@ const SECTIONS_DEV = [
     ),
   },
 ];
+
 const SECTIONS_SCALE = [
   {
     title: '¿Por qué una escala?',

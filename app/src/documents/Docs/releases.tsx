@@ -19,6 +19,31 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: `${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
+      title: 'Versión de prueba ',
+      content: (
+        <ul className="docs-list">
+          <p>La versión de prueba contiene los siguientes fixes: Ademas es para probar los archivos que modifica el PR </p>
+          <li>
+            {' '}
+            Se modifica el máximo de líneas en título (2) y descripción (3) del{' '}
+            <span className="fst-italic">organismo Accesos.</span>
+          </li>
+          <li>
+            {' '}
+            Se ajusta el alineado vertical del componente radio que se encuentra dentro del componente{' '}
+            <span className="fst-italic">Colapsable con lista seleccionable.</span>{' '}
+          </li>
+          <li> Se modifica el tamaño del ícono en botón mediano a 18px. </li>
+          <li>
+            {' '}
+            En el organismo Pie de página <span className="fst-italic">(Footer)</span>, se coloca el ícono de la red
+            social &quot;X&quot;, por medio de la clase <code>.social-x </code> antes utilizada en una etiqueta{' '}
+            <code>img</code>.
+          </li>
+        </ul>
+      ),
+    },    
+    {
       title: 'Versión 1.5.1',
       content: (
         <ul className="docs-list">

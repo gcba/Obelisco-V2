@@ -19,10 +19,10 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: `${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
-      title: 'Versión 1.5.1',
+      title: 'Versión 2',
       content: (
         <ul className="docs-list">
-          <p>La versión 1.5.1 contiene los siguientes fixes: </p>
+          <p>La versión 2 contiene los siguientes fixes y las pruebas de una nueva branch: </p>
           <li>
             {' '}
             Se modifica el máximo de líneas en título (2) y descripción (3) del{' '}

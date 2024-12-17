@@ -17,6 +17,8 @@ import {
   HEADER_ONLY_SEARCH,
   HEADER_TWO_LINES,
   HEADER_TWO_LINES_SEARCH,
+  HEADER,
+  HEADER_2
 } from './code-views';
 
 const basePath = '/Obelisco-V2';
@@ -2415,6 +2417,57 @@ const HeaderDocs: React.FC = () => {
     }
   ];
 
+  const ACCESSIBILITY = [
+    {
+      title: 'Navegación alternativa',
+      content: (
+        <>
+          <p className="text-md">
+            Todos los elementos del encabezado <i>(header)</i> pueden recorrerse utilizando la navegación por teclado u otras herramientas de asistencia como lectores por voz.
+          </p>
+        </>
+      )
+    },
+    {
+      subtitle: "Enlace 'Saltar al contenido principal'",
+      content: (
+        <>
+          <p className="text-md">
+            Con la clase {'skip-to-main-content-link'}, la persona usuaria puede saltar el encabezado <i>(header)</i> y continuar directamente en el cuerpo de la página, sin la necesidad de navegar a través de los elementos del organismo.
+          </p>
+          <CodeBox codeHTML={HEADER}>
+            <header className="navbar navbar-light navbar-expand-lg" role='banner'>
+              <a href="#main" className="skip-to-main-content-link">Ir al contenido principal</a>
+              ...
+            </header>
+            <main id="main">...</main>
+          </CodeBox>
+        </>
+      ),
+    },
+    {
+      subtitle: 'Texto alternativo para el logo',
+      content: (
+        <>
+          <p className="text-md">
+            El logo dentro del encabezado <i>(header)</i> funciona como enlace de redirección a la página de inicio del sitio web. Por eso, dentro del atributo alt es necesario incluir la palabra “Inicio”, como forma de identificar y brindar mayor contexto sobre la acción.
+          </p>
+          <CodeBox codeHTML={HEADER_2}>
+            <header className="navbar navbar-light navbar-expand-lg" role='banner'>
+              ...
+              <div className="container header-container">
+                <a href="https://buenosaires.gob.ar" className="navbar-brand">
+                  <img className="d-none d-xl-block" src="/Obelisco-V2/images/logo_ba.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+                  <img className="d-xl-none" src="/Obelisco-V2/images/logo_ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+                </a>
+                ...
+              </div>
+            </header>
+          </CodeBox>
+        </>
+      ),
+    }
+  ];
 
   return (
     <>
@@ -2450,7 +2503,9 @@ const HeaderDocs: React.FC = () => {
         sectionUx={SECTION_UX}
         customSections={
           [
-            { title: 'Especificaciones', id: 'section-specs', sectionContent: SPECS }
+            { title: 'Especificaciones', id: 'section-specs', sectionContent: SPECS },
+            { title: 'Accesibilidad', id: 'section-accessibility', sectionContent: ACCESSIBILITY }
+
           ]
         }
       />

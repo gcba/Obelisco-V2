@@ -1,3 +1,7 @@
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
+
+
 import React from 'react';
 
 import CodeBox from '@/components/CodeBox';
@@ -60,6 +64,7 @@ const ButtonDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
+
           <br />
           <CodeBox codeHTML={BUTTON_OUTLINE}>
             <div className="d-flex gap-3 justify-content-center align-items-center flex-wrap px-2">
@@ -1007,13 +1012,9 @@ const ButtonDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md">En caso de utilizar un botón solo con ícono y sin etiqueta, se debe colocar una etiqueta semántica <i>(aria-label)</i> en el código con el texto descriptivo de la acción.</p>
-          <CodeBox codeHTML={BUTTON_ACCESSIBILTY}>
-            <button type="button" className="btn btn-xs" aria-label="Editar">
-              <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                edit
-              </span>
-            </button>
-          </CodeBox>
+          <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
+            {BUTTON_ACCESSIBILTY}
+          </SyntaxHighlighter>
         </>
       ),
     },

@@ -418,12 +418,10 @@ const ButtonDocs: React.FC = () => {
           <p className="text md">
             Existen 3 tamaños de botones: grandes, medianos y chicos; el botón grande es el tamaño de botón predeterminado.
           </p>
-          <div className="container">
-            <img
-              src="/Obelisco-V2/images/button/botones_tamaños.svg"
-              alt="Cómo no usar el header"
-              className="img-fluid" />
-          </div>
+          <img
+            src="/Obelisco-V2/images/button/botones_tamaños.svg"
+            alt="Cómo no usar el header"
+            className="img-fluid" />
         </>
       ),
     },
@@ -444,12 +442,10 @@ const ButtonDocs: React.FC = () => {
                   Se recomienda utilizar un único botón primario por página.</p>
               </div>
               <div className="col-6">
-                <div className="container">
-                  <img
-                    src="/Obelisco-V2/images/button/boton_tipos_primario.svg"
-                    alt="Cómo no usar el header"
-                    className="img-fluid" />
-                </div>
+                <img
+                  src="/Obelisco-V2/images/button/boton_tipos_primario.svg"
+                  alt="Cómo no usar el header"
+                  className="img-fluid" />
               </div>
             </div>
 
@@ -459,12 +455,10 @@ const ButtonDocs: React.FC = () => {
                 <p className="text-md">Es el botón de segunda mayor jerarquía, y se utiliza para acciones complementarias/secundarias en un flujo.</p>
               </div>
               <div className="col-6">
-                <div className="container">
-                  <img
-                    src="/Obelisco-V2/images/button/boton_tipos_secundario.svg"
-                    alt="Cómo no usar el header"
-                    className="img-fluid" />
-                </div>
+                <img
+                  src="/Obelisco-V2/images/button/boton_tipos_secundario.svg"
+                  alt="Cómo no usar el header"
+                  className="img-fluid" />
               </div>
             </div>
 
@@ -474,12 +468,10 @@ const ButtonDocs: React.FC = () => {
                 <p className="text-md">Es el botón con menor jerarquía, y se utiliza para acciones repetitivas y/o acciones que no están relacionadas al flujo principal.</p>
               </div>
               <div className="col-6">
-                <div className="container">
-                  <img
-                    src="/Obelisco-V2/images/button/boton_tipos_terciario.svg"
-                    alt="Cómo no usar el header"
-                    className="img-fluid" />
-                </div>
+                <img
+                  src="/Obelisco-V2/images/button/boton_tipos_terciario.svg"
+                  alt="Cómo no usar el header"
+                  className="img-fluid" />
               </div>
             </div>
 
@@ -489,12 +481,10 @@ const ButtonDocs: React.FC = () => {
                 <p className="text-md">Se utiliza como botón de confirmación en flujos con pasos o instancias definitivas, como una acción con consecuencia positiva.</p>
               </div>
               <div className="col-6">
-                <div className="container">
-                  <img
-                    src="/Obelisco-V2/images/button/boton_tipos_exito.svg"
-                    alt="Cómo no usar el header"
-                    className="img-fluid" />
-                </div>
+                <img
+                  src="/Obelisco-V2/images/button/boton_tipos_exito.svg"
+                  alt="Cómo no usar el header"
+                  className="img-fluid" />
               </div>
             </div>
 
@@ -504,12 +494,10 @@ const ButtonDocs: React.FC = () => {
                 <p className="text-md">Se utiliza para acciones que podrían tener efectos destructivos o acciones que no pueden deshacerse (por ejemplo, eliminar o quitar).</p>
               </div>
               <div className="col-6">
-                <div className="container">
-                  <img
-                    src="/Obelisco-V2/images/button/boton_tipos_peligro.svg"
-                    alt="Cómo no usar el header"
-                    className="img-fluid" />
-                </div>
+                <img
+                  src="/Obelisco-V2/images/button/boton_tipos_peligro.svg"
+                  alt="Cómo no usar el header"
+                  className="img-fluid" />
               </div>
             </div>
 
@@ -517,23 +505,19 @@ const ButtonDocs: React.FC = () => {
               <p className="text-xl">Botones con borde <i>(outlined)</i></p>
               <p className="text-md">A diferencia del resto de los botones, éstos están delineados, lo que les otorga menos jerarquía visual que los botones rellenos. Son utilizados para acciones de menor énfasis, y pueden combinarse con otros estilos de botones.</p>
 
-              <div className="container">
-                <img
-                  src="/Obelisco-V2/images/button/boton_tipos_outlined.svg"
-                  alt="Cómo no usar el header"
-                  className="img-fluid" />
-              </div>
+              <img
+                src="/Obelisco-V2/images/button/boton_tipos_outlined.svg"
+                alt="Cómo no usar el header"
+                className="img-fluid" />
             </div>
 
             <div className="row mt-4 mb-2">
               <p className="text-xl">Botón de acción para tabla</p>
               <p className="headline-sm">Se utiliza dentro de la celda de una <a href="https://gcba.github.io/Obelisco-V2/components/table">Tabla</a>, economizando el espacio disponible. No cuenta con relleno ni borde. </p>
-              <div className="container">
-                <img
-                  src="/Obelisco-V2/images/button/boton_tipos_accion_para_tabla.svg"
-                  alt="Cómo no usar el header"
-                  className="img-fluid" />
-              </div>
+              <img
+                src="/Obelisco-V2/images/button/boton_tipos_accion_para_tabla.svg"
+                alt="Cómo no usar el header"
+                className="img-fluid" />
             </div>
 
           </div>
@@ -545,43 +529,44 @@ const ButtonDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md">El botón puede incluir un ícono para reforzar la acción pretendida. También es posible utilizar un botón sólo con ícono. </p>
-          <div className="container">
-            <img
-              src="/Obelisco-V2/images/button/uso_icono.svg"
-              alt="Cómo no usar el header"
-              className="img-fluid" />
-          </div>
+          <img
+            src="/Obelisco-V2/images/button/uso_icono.svg"
+            alt="Cómo no usar el header"
+            className="img-fluid" />
 
-          <p className="text-xl">Ejemplos de uso</p>
-          <div className="container">
-            <div className="row">
-              <div className="col-6">
+          <p className="text-xl mt-4">Ejemplos de uso</p>
+
+          {/*  */}
+          <div className="py-4">
+            <div className="max-items-2">
+              <div className="col">
                 <img
                   src="/Obelisco-V2/images/button/uso_icono_si.svg"
                   alt="Cómo usar el header"
                   className="img-fluid" />
-                <p className="text-sm">
-                  <span className="material-symbols-rounded o-check-icon" aria-hidden="true">
-                    check
-                  </span>
-                  Utilizar librerías que estén integradas a Obelisco, como Material Symbols o Boxicons.
-                </p>
+
+                <div className="d-flex pt-3">
+                  <span className="material-symbols-rounded text-success">check</span>
+                  <p className="mb-0">Utilizar librerías que estén integradas a Obelisco, como Material Symbols o Boxicons.</p>
+                </div>
 
               </div>
-              <div className="col-6">
+              <div className="col">
                 <img
                   src="/Obelisco-V2/images/button/uso_icono_no.svg"
                   alt="Cómo no usar el header"
                   className="img-fluid" />
-                <p className="text-sm">
-                  <span className="material-symbols-rounded o-close-icon" aria-hidden="true">
-                    close
-                  </span>
-                  No utilizar íconos de librerías que no estén en Obelisco.
-                </p>
+
+                <div className="d-flex pt-3">
+                  <span className="material-symbols-rounded text-danger">check</span>
+                  <p className="mb-0">No utilizar íconos de librerías que no estén en Obelisco.
+                  </p>
+                </div>
+
               </div>
             </div>
           </div>
+          {/*  */}
 
           <p className="text-lg">Posición</p>
           <ul className="list-informative">
@@ -589,36 +574,37 @@ const ButtonDocs: React.FC = () => {
             <li><strong>Ícono final</strong> <i>(trailing icon)</i>: se posiciona luego de la etiqueta, y se utiliza en botones con acciones que denotan continuidad. En este caso, es recomendable usar un ícono de flecha o de chevrón.</li>
           </ul>
 
-          <p className="text-xl">Ejemplos de uso</p>
-          <div className="container">
-            <div className="row">
-              <div className="col-6">
+          <p className="text-xl mt-4">Ejemplos de uso</p>
+
+          <div className="py-4">
+            <div className="max-items-2">
+              <div className="col">
                 <img
                   src="/Obelisco-V2/images/button/uso_icono_2_si.svg"
                   alt="Cómo usar el header"
                   className="img-fluid" />
-                <p className="text-sm">
-                  <span className="material-symbols-rounded o-check-icon" aria-hidden="true">
-                    check
-                  </span>
-                  Utilizar solo 1 ícono de soporte, como ícono inicial o como ícono final.
-                </p>
+
+                <div className="d-flex pt-3">
+                  <span className="material-symbols-rounded text-success">check</span>
+                  <p className="mb-0">Utilizar solo 1 ícono de soporte, como ícono inicial o como ícono final.</p>
+                </div>
 
               </div>
-              <div className="col-6">
+              <div className="col">
                 <img
                   src="/Obelisco-V2/images/button/uso_icono_2_no.svg"
                   alt="Cómo no usar el header"
                   className="img-fluid" />
-                <p className="text-sm">
-                  <span className="material-symbols-rounded o-close-icon" aria-hidden="true">
-                    close
-                  </span>
-                  No utilizar 2 íconos de soporte al mismo tiempo.
-                </p>
+
+                <div className="d-flex pt-3">
+                  <span className="material-symbols-rounded text-danger">check</span>
+                  <p className="mb-0">No utilizar 2 íconos de soporte al mismo tiempo.</p>
+                </div>
+
               </div>
             </div>
           </div>
+
         </>
       ),
     },
@@ -779,94 +765,87 @@ const ButtonDocs: React.FC = () => {
           <p className="text-md mb-2">El texto de la etiqueta debe ser corto, conciso y descriptivo. Utilizar etiquetas como <i>{`"`}Hacé click acá{`"`}</i> o <i>{`"`}Más info{`"`}</i> no visibiliza lo que sucederá al interactuar con el botón. La etiqueta del botón siempre debe comenzar con un verbo que refleje la acción consecuente, por ejemplo, <i>{`"`}Adjuntar archivo{`"`}</i>.</p>
 
           <p className="text-xl mt-4">Ejemplos de uso</p>
-          <div className="container">
 
-
-            <div className="row mt-4 mb-2">
-              <div className="col-6">
+          {/*  */}
+          <div className="py-4">
+            <div className="max-items-2">
+              {/* 1 */}
+              <div className="col">
                 <img
                   src="/Obelisco-V2/images/button/contenido_info_si_usar.svg"
                   alt="Cómo usar el header"
                   className="img-fluid" />
-                <p className="text-sm">
-                  <span className="material-symbols-rounded o-check-icon" aria-hidden="true">
-                    check
-                  </span>
-                  Utilizar hasta 3 palabras como etiqueta dentro de un botón.
-                </p>
-
+                <div className="d-flex pt-3">
+                  <span className="material-symbols-rounded text-success">check</span>
+                  <p className="mb-0">Utilizar hasta 3 palabras como etiqueta dentro de un botón.
+                  </p>
+                </div>
               </div>
-              <div className="col-6">
+              {/* 2 */}
+              <div className="col">
                 <img
                   src="/Obelisco-V2/images/button/contenido_info_no_usar.svg"
                   alt="Cómo no usar el header"
                   className="img-fluid" />
-                <p className="text-sm">
-                  <span className="material-symbols-rounded o-close-icon" aria-hidden="true">
-                    close
-                  </span>
-                  No utilizar más de 3 palabras como etiqueta dentro de un botón.
-                </p>
-              </div>
-            </div>
+                <div className="d-flex pt-3">
+                  <span className="material-symbols-rounded text-danger">close</span>
+                  <p className="mb-0">No utilizar más de 3 palabras como etiqueta dentro de un botón.
 
-            <div className="row mt-4 mb-2">
-              <div className="col-6">
+                  </p>
+                </div>
+              </div>
+              {/* 3 */}
+              <div className="col">
                 <img
                   src="/Obelisco-V2/images/button/contenido_peligro_si_usar.svg"
                   alt="Cómo usar el header"
                   className="img-fluid" />
-                <p className="text-sm">
-                  <span className="material-symbols-rounded o-check-icon" aria-hidden="true">
-                    check
-                  </span>
-                  Identificar una única acción por botón.
-                </p>
+                <div className="d-flex pt-3">
+                  <span className="material-symbols-rounded text-success">check</span>
+                  <p className="mb-0">Identificar una única acción por botón.
 
+                  </p>
+                </div>
               </div>
-              <div className="col-6">
+              {/* 4 */}
+              <div className="col">
                 <img
                   src="/Obelisco-V2/images/button/contenido_peligro_no_usar.svg"
                   alt="Cómo no usar el header"
                   className="img-fluid" />
-                <p className="text-sm">
-                  <span className="material-symbols-rounded o-close-icon" aria-hidden="true">
-                    close
-                  </span>
-                  No identificar más de 2 acciones en un mismo botón.
-                </p>
+                <div className="d-flex pt-3">
+                  <span className="material-symbols-rounded text-danger">close</span>
+                  <p className="mb-0">No identificar más de 2 acciones en un mismo botón.
+                  </p>
+                </div>
               </div>
-            </div>
-
-            <div className="row mt-4 mb-2">
-              <div className="col-6">
+              {/* 5 */}
+              <div className="col">
                 <img
                   src="/Obelisco-V2/images/button/contenido_exito_si_usar.svg"
                   alt="Cómo usar el header"
                   className="img-fluid" />
-                <p className="text-sm">
-                  <span className="material-symbols-rounded o-check-icon" aria-hidden="true">
-                    check
-                  </span>
-                  Respetar el uso de mayúsculas al comienzo de la etiqueta.
-                </p>
-
+                <div className="d-flex pt-3">
+                  <span className="material-symbols-rounded text-success">check</span>
+                  <p className="mb-0">Respetar el uso de mayúsculas al comienzo de la etiqueta.
+                  </p>
+                </div>
               </div>
-              <div className="col-6">
+              {/* 6 */}
+              <div className="col">
                 <img
                   src="/Obelisco-V2/images/button/contenido_exito_no_usar.svg"
                   alt="Cómo no usar el header"
                   className="img-fluid" />
-                <p className="text-sm text-sm">
-                  <span className="material-symbols-rounded o-close-icon" aria-hidden="true">
-                    close
-                  </span>
-                  No escribir la etiqueta utilizando mayúsculas sostenidas o solo minúsculas.
-                </p>
+                <div className="d-flex pt-3">
+                  <span className="material-symbols-rounded text-danger">close</span>
+                  <p className="mb-0">No escribir la etiqueta utilizando mayúsculas sostenidas o solo minúsculas.
+                  </p>
+                </div>
               </div>
             </div>
-
           </div>
+          {/*  */}
 
         </>
       ),
@@ -879,12 +858,10 @@ const ButtonDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md">El botón se compone de 4 elementos.</p>
-          <div className="container  mt-4">
-            <img
-              src="/Obelisco-V2/images/button/boton_anatomia.svg  "
-              alt="Anatomia del botón"
-              className="img-fluid" />
-          </div>
+          <img
+            src="/Obelisco-V2/images/button/boton_anatomia.svg  "
+            alt="Anatomia del botón"
+            className="img-fluid" />
 
           <div className="responsive-scroll mt-4" tabIndex={0}>
             <table className="table">
@@ -932,12 +909,10 @@ const ButtonDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md mb-4">Estado predeterminado de los botones en una interfaz.</p>
-          <div className="container">
-            <img
-              src="/Obelisco-V2/images/button/boton_estado_predeterminado.svg  "
-              alt="Estado predeterminado del boton"
-              className="img-fluid" />
-          </div>
+          <img
+            src="/Obelisco-V2/images/button/boton_estado_predeterminado.svg  "
+            alt="Estado predeterminado del boton"
+            className="img-fluid" />
         </>
       ),
     },
@@ -948,12 +923,10 @@ const ButtonDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md mb-4">Estado que adopta el botón cuando un cursor pasa sobre él, cambiando su apariencia para indicar su interactividad a la persona usuaria. En este caso tanto los botones rellenos como los de borde se ven idénticos. </p>
-          <div className="container">
-            <img
-              src="/Obelisco-V2/images/button/boton_estado_sobre.svg  "
-              alt="Estado sobre del boton"
-              className="img-fluid" />
-          </div>
+          <img
+            src="/Obelisco-V2/images/button/boton_estado_sobre.svg  "
+            alt="Estado sobre del boton"
+            className="img-fluid" />
         </>
       ),
     },
@@ -964,12 +937,10 @@ const ButtonDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md mb-4">Es un principio de accesibilidad que asegura que cualquier elemento interactivo en una interfaz sea claramente visible cuando recibe la atención del usuario, especialmente al ser navegado con el teclado. En Obelisco se utiliza un borde o anillo <i>(focus ring)</i> por fuera del componente en un color distintivo. En este caso tanto los botones rellenos como los de borde se ven idénticos. </p>
-          <div className="container">
-            <img
-              src="/Obelisco-V2/images/button/boton_estado_en_foco.svg  "
-              alt="Estado en foco del boton"
-              className="img-fluid" />
-          </div>
+          <img
+            src="/Obelisco-V2/images/button/boton_estado_en_foco.svg  "
+            alt="Estado en foco del boton"
+            className="img-fluid" />
         </>
       ),
     },
@@ -980,12 +951,10 @@ const ButtonDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md mb-4">Estado que indica que el botón no está disponible para la interacción, lo que significa que no puede activarse ni recibir foco. Es recomendable minimizar este tipo de botón porque presenta problemas de accesibilidad. </p>
-          <div className="container">
-            <img
-              src="/Obelisco-V2/images/button/boton_estado_deshabilitado.svg  "
-              alt="Estado deshabilitado del boton"
-              className="img-fluid" />
-          </div>
+          <img
+            src="/Obelisco-V2/images/button/boton_estado_deshabilitado.svg  "
+            alt="Estado deshabilitado del boton"
+            className="img-fluid" />
         </>
       ),
     },
@@ -996,12 +965,10 @@ const ButtonDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md mb-4">Estado que indica que una acción está en progreso y aún no ha finalizado. Se representa visualmente con un <a href="https://gcba.github.io/Obelisco-V2/components/spinner">Spinner</a>, deshabilitando temporalmente el botón para evitar interacciones adicionales mientras se completa el proceso. Para reforzar el significado de la acción se puede configurar la variante de spinner correspondiente con la de cada botón. </p>
-          <div className="container">
-            <img
-              src="/Obelisco-V2/images/button/boton_estado_cargando.svg  "
-              alt="Estado cargando del boton"
-              className="img-fluid" />
-          </div>
+          <img
+            src="/Obelisco-V2/images/button/boton_estado_cargando.svg  "
+            alt="Estado cargando del boton"
+            className="img-fluid" />
         </>
       ),
     },
@@ -1010,12 +977,10 @@ const ButtonDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md">El espacio recomendado entre botones para cada tamaño garantiza un espacio clickeable/tappeable óptimo. </p>
-          <div className="container">
-            <img
-              src="/Obelisco-V2/images/button/boton_espaciado.svg  "
-              alt="Espaciado del boton"
-              className="img-fluid" />
-          </div>
+          <img
+            src="/Obelisco-V2/images/button/boton_espaciado.svg  "
+            alt="Espaciado del boton"
+            className="img-fluid" />
         </>
       ),
     }
@@ -1030,12 +995,10 @@ const ButtonDocs: React.FC = () => {
           <span className="badge badge-default">TAB</span>
           <span className="badge badge-default">ENTER</span>
           <p className="text-md">Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Además, con el <i>enter</i>, puede accionar los elementos sobre los que esté posicionada como botones, enlaces, entre otros.</p>
-          <div className="container  mt-4">
-            <img
-              src="/Obelisco-V2/images/button/boton_navegacion_alternativa.svg  "
-              alt="Navegacion alternativa del botón"
-              className="img-fluid" />
-          </div>
+          <img
+            src="/Obelisco-V2/images/button/boton_navegacion_alternativa.svg  "
+            alt="Navegacion alternativa del botón"
+            className="img-fluid" />
         </>
       ),
     },

@@ -16,6 +16,7 @@ import {
   BUTTON_SPINNER,
   BUTTON_OUTLINE_SPINNER,
   BUTTON_ICON_XS,
+  BUTTON_ACCESSIBILTY
 } from './code-views';
 
 const ButtonDocs: React.FC = () => {
@@ -925,7 +926,9 @@ const ButtonDocs: React.FC = () => {
       ),
     },
     {
-      subtitle: 'Predeterminado (default)',
+      subtitle: <>
+        Predeterminado <i>(default)</i>
+      </>,
       content: (
         <>
           <p className="text-md mb-4">Estado predeterminado de los botones en una interfaz.</p>
@@ -939,7 +942,9 @@ const ButtonDocs: React.FC = () => {
       ),
     },
     {
-      subtitle: 'Sobre (hover)',
+      subtitle: <>
+        Sobre <i>(hover)</i>
+      </>,
       content: (
         <>
           <p className="text-md mb-4">Estado que adopta el botón cuando un cursor pasa sobre él, cambiando su apariencia para indicar su interactividad a la persona usuaria. En este caso tanto los botones rellenos como los de borde se ven idénticos. </p>
@@ -953,7 +958,9 @@ const ButtonDocs: React.FC = () => {
       ),
     },
     {
-      subtitle: 'En Foco (focus)',
+      subtitle: <>
+        En Foco <i>(focus)</i>
+      </>,
       content: (
         <>
           <p className="text-md mb-4">Es un principio de accesibilidad que asegura que cualquier elemento interactivo en una interfaz sea claramente visible cuando recibe la atención del usuario, especialmente al ser navegado con el teclado. En Obelisco se utiliza un borde o anillo <i>(focus ring)</i> por fuera del componente en un color distintivo. En este caso tanto los botones rellenos como los de borde se ven idénticos. </p>
@@ -967,7 +974,9 @@ const ButtonDocs: React.FC = () => {
       ),
     },
     {
-      subtitle: 'Deshabilitado (disabled)',
+      subtitle: <>
+        Deshabilitado <i>(disabled)</i>
+      </>,
       content: (
         <>
           <p className="text-md mb-4">Estado que indica que el botón no está disponible para la interacción, lo que significa que no puede activarse ni recibir foco. Es recomendable minimizar este tipo de botón porque presenta problemas de accesibilidad. </p>
@@ -981,7 +990,9 @@ const ButtonDocs: React.FC = () => {
       ),
     },
     {
-      subtitle: 'Cargando (loading)',
+      subtitle: <>
+        Cargando <i>(loading)</i>
+      </>,
       content: (
         <>
           <p className="text-md mb-4">Estado que indica que una acción está en progreso y aún no ha finalizado. Se representa visualmente con un <a href="https://gcba.github.io/Obelisco-V2/components/spinner">Spinner</a>, deshabilitando temporalmente el botón para evitar interacciones adicionales mientras se completa el proceso. Para reforzar el significado de la acción se puede configurar la variante de spinner correspondiente con la de cada botón. </p>
@@ -1005,6 +1016,66 @@ const ButtonDocs: React.FC = () => {
               alt="Espaciado del boton"
               className="img-fluid" />
           </div>
+        </>
+      ),
+    }
+  ];
+
+  const ACCESSIBILITY = [
+    {
+      title: 'Navegación alternativa',
+      content: (
+        <>
+          <p className="text-md">El componente de botón está construido para ser reconocido por herramientas de asistencia como la navegación por teclado o lectores por voz.</p>
+          <span className="badge badge-default">TAB</span>
+          <span className="badge badge-default">ENTER</span>
+          <p className="text-md">Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Además, con el <i>enter</i>, puede accionar los elementos sobre los que esté posicionada como botones, enlaces, entre otros.</p>
+          <div className="container  mt-4">
+            <img
+              src="/Obelisco-V2/images/button/boton_navegacion_alternativa.svg  "
+              alt="Navegacion alternativa del botón"
+              className="img-fluid" />
+          </div>
+        </>
+      ),
+    },
+    {
+      title: 'Etiquetado descriptivo',
+      content: (
+        <>
+          <p className="text-md">En caso de utilizar un botón solo con ícono y sin etiqueta, se debe colocar una etiqueta semántica <i>(aria-label)</i> en el código con el texto descriptivo de la acción.</p>
+          <CodeBox codeHTML={BUTTON_ACCESSIBILTY}>
+            <button type="button" className="btn btn-xs" aria-label="Editar">
+              <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                edit
+              </span>
+            </button>
+          </CodeBox>
+        </>
+      ),
+    },
+    {
+      title: 'Criterios WCAG aplicados',
+      content: (
+        <>
+          <a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html" target="_blank" rel="noopener noreferrer">Success Criterion 1.1.1 Non-text Content (Level A)</a>
+          <p>Todo el contenido no textual que se presenta al usuario tiene una alternativa de texto que sirve para el propósito equivalente. Esto es válido para botones que sólo tienen un ícono.</p>
+
+          <a href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html" target="_blank" rel="noopener noreferrer">Success Criterion 1.3.1 Info and Relationships (Level A)</a>
+          <p>La información, la estructura y las relaciones transmitidas a través de la presentación pueden determinarse mediante programación o están disponibles en el texto.</p>
+
+          <a href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html" target="_blank" rel="noopener noreferrer">Success Criterion 1.4.3 Contrast (Minimum) (Level AA)</a>
+          <p>La presentación visual de texto y de imágenes de texto tiene una relación de contraste de por lo menos 4.5:1, excepto textos grandes e imágenes de texto grande que tienen un contraste de por lo menos 3:1, textos o imágenes que son parte de un componente inactivo de interfaz de usuario o son pura decoración, o logotipos. </p>
+
+          <a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast" target="_blank" rel="noopener noreferrer">Success Criterion 1.4.11 Non-Text Contrast (Level AA)</a>
+          <p>La presentación visual de elementos de la interfaz de usuario y objetos gráficos tiene por lo menos una relación de contraste de 3:1 con respecto a los colores adyacentes. </p>
+
+          <a href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html" target="_blank" rel="noopener noreferrer">Success Criterion 2.4.7 Focus Visible (Level AA)</a>
+          <p>Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque del teclado es visible.
+          </p>
+
+          <a href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html" target="_blank" rel="noopener noreferrer">Success Criterion 2.5.8 Target Size (Minimum) (Level AA) </a>
+          <p>El tamaño del objetivo para entradas mediante puntero es de al menos 24 por 24 píxeles CSS.</p>
         </>
       ),
     }
@@ -1035,6 +1106,11 @@ const ButtonDocs: React.FC = () => {
               title: 'Especificaciones',
               id: 'section-specs',
               sectionContent: SPECS,
+            },
+            {
+              title: 'Accesibilidad',
+              id: 'section-accessibility',
+              sectionContent: ACCESSIBILITY,
             }
           ]
         }

@@ -2,6 +2,8 @@ import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import {
   HEADER_LOGIN_ONE_LINE,
@@ -2428,13 +2430,9 @@ const HeaderDocs: React.FC = () => {
           <p className="text-md">
             Con la clase {'skip-to-main-content-link'}, la persona usuaria puede saltar el encabezado <i>(header)</i> y continuar directamente en el cuerpo de la página, sin la necesidad de navegar a través de los elementos del organismo.
           </p>
-          <CodeBox codeHTML={HEADER}>
-            <header className="navbar navbar-light navbar-expand-lg" role='banner'>
-              <a href="#main" className="skip-to-main-content-link">Ir al contenido principal</a>
-              ...
-            </header>
-            <main id="main">...</main>
-          </CodeBox>
+          <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
+            {HEADER}
+          </SyntaxHighlighter>
         </>
       ),
     },
@@ -2445,18 +2443,9 @@ const HeaderDocs: React.FC = () => {
           <p className="text-md">
             El logo dentro del encabezado <i>(header)</i> funciona como enlace de redirección a la página de inicio del sitio web. Por eso, dentro del atributo alt es necesario incluir la palabra “Inicio”, como forma de identificar y brindar mayor contexto sobre la acción.
           </p>
-          <CodeBox codeHTML={HEADER_2}>
-            <header className="navbar navbar-light navbar-expand-lg" role='banner'>
-              ...
-              <div className="container header-container">
-                <a href="https://buenosaires.gob.ar" className="navbar-brand">
-                  <img className="d-none d-xl-block" src="/Obelisco-V2/images/logo_ba.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
-                  <img className="d-xl-none" src="/Obelisco-V2/images/logo_ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
-                </a>
-                ...
-              </div>
-            </header>
-          </CodeBox>
+          <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
+            {HEADER_2}
+          </SyntaxHighlighter>
         </>
       ),
     }

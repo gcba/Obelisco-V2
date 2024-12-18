@@ -2123,18 +2123,17 @@ const HeaderDocs: React.FC = () => {
   const SECTION_UX = [
     {
       title: 'Uso',
+      content: (<></>)
     },
     {
       subtitle: 'Cuándo usar',
       content: (
         <>
-          <div className="container">
-            <p className='text-xl' ></p>
-            <ul className='list-informative' >
-              <li>Debe estar presente en todas las páginas de forma consistente, para facilitar la navegación de la persona usuaria a través del sitio web.</li>
-              <li>Para mantener las navegaciones principales y la presencia de la marca en un primer nivel.</li>
-            </ul>
-          </div>
+          <p className='text-xl' ></p>
+          <ul className='list-informative' >
+            <li>Debe estar presente en todas las páginas de forma consistente, para facilitar la navegación de la persona usuaria a través del sitio web.</li>
+            <li>Para mantener las navegaciones principales y la presencia de la marca en un primer nivel.</li>
+          </ul>
         </>
       ),
     },
@@ -2142,17 +2141,15 @@ const HeaderDocs: React.FC = () => {
       subtitle: 'Cuándo no usar',
       content: (
         <>
-          <div className="container">
-            <p className='text-xl' ></p>
-            <ul className='list-informative' >
-              <li>Para categorías internas o filtrado dentro de una página, utilizar <a href="https://gcba.github.io/Obelisco-V2/components/tabs">Pestañas</a> en su lugar.</li>
-              <li>Para mantener las navegaciones principales y la presencia de la marca en un primer nivel.</li>
-              <li>
-                <strong>
-                  Para navegaciones de 2do nivel o subsecciones de contenido, considerar la </strong> <a href="https://gcba.github.io/Obelisco-V2/components/nav-horizontal">Navegación horizontal</a> <strong>o la </strong><a href="https://gcba.github.io/Obelisco-V2/components/nav-vertical">Navegación vertical</a> <strong>dependiendo del tipo de página</strong>.
-              </li>
-            </ul>
-          </div>
+          <p className='text-xl' ></p>
+          <ul className='list-informative' >
+            <li>Para categorías internas o filtrado dentro de una página, utilizar <a href="https://gcba.github.io/Obelisco-V2/components/tabs">Pestañas</a> en su lugar.</li>
+            <li>Para mantener las navegaciones principales y la presencia de la marca en un primer nivel.</li>
+            <li>
+              <strong>
+                Para navegaciones de 2do nivel o subsecciones de contenido, considerar la </strong> <a href="https://gcba.github.io/Obelisco-V2/components/nav-horizontal">Navegación horizontal</a> <strong>o la </strong><a href="https://gcba.github.io/Obelisco-V2/components/nav-vertical">Navegación vertical</a> <strong>dependiendo del tipo de página</strong>.
+            </li>
+          </ul>
         </>
       ),
     },

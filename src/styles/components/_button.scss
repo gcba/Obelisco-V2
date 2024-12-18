@@ -306,3 +306,17 @@ a.btn {
 }
 
 $theme-colors: map-remove($theme-colors, 'link');
+
+span.o-close-icon {
+  color: $red-500;
+  font-size: 1.25rem;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+span.o-check-icon {
+  color: $green-600;
+  font-size: 1.25rem;
+  vertical-align: middle;
+  margin-right: 4px;
+}

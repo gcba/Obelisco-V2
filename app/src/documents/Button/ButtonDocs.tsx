@@ -872,6 +872,143 @@ const ButtonDocs: React.FC = () => {
     },
   ];
 
+  const SPECS = [
+    {
+      title: 'Anatomía',
+      content: (
+        <>
+          <p className="text-md">El botón se compone de 4 elementos.</p>
+          <div className="container  mt-4">
+            <img
+              src="/Obelisco-V2/images/button/boton_anatomia.svg  "
+              alt="Anatomia del botón"
+              className="img-fluid" />
+          </div>
+
+          <div className="responsive-scroll mt-4" tabIndex={0}>
+            <table className="table">
+              <thead>
+                <tr>
+                  <th scope="col" className="tb-text">Elemento</th>
+                  <th scope="col" className="tb-text">Carácter</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Contenedor</td>
+                  <td>Obligatorio. Puede ser relleno o con borde.</td>
+                </tr>
+                <tr>
+                  <td>Ícono inicial <i>(leading icon)</i></td>
+                  <td>Opcional, siempre y cuando haya una etiqueta.</td>
+                </tr>
+                <tr>
+                  <td>Ícono final <i>(trailing icon)</i></td>
+                  <td>Opcional, siempre y cuando haya una etiqueta.</td>
+                </tr>
+                <tr>
+                  <td>Etiqueta</td>
+                  <td>Opcional, siempre y cuando haya un ícono.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </>
+      ),
+    },
+    {
+      title: 'Estados',
+      content: (
+        <>
+        </>
+      ),
+    },
+    {
+      subtitle: 'Predeterminado (default)',
+      content: (
+        <>
+          <p className="text-md mb-4">Estado predeterminado de los botones en una interfaz.</p>
+          <div className="container">
+            <img
+              src="/Obelisco-V2/images/button/boton_estado_predeterminado.svg  "
+              alt="Estado predeterminado del boton"
+              className="img-fluid" />
+          </div>
+        </>
+      ),
+    },
+    {
+      subtitle: 'Sobre (hover)',
+      content: (
+        <>
+          <p className="text-md mb-4">Estado que adopta el botón cuando un cursor pasa sobre él, cambiando su apariencia para indicar su interactividad a la persona usuaria. En este caso tanto los botones rellenos como los de borde se ven idénticos. </p>
+          <div className="container">
+            <img
+              src="/Obelisco-V2/images/button/boton_estado_sobre.svg  "
+              alt="Estado sobre del boton"
+              className="img-fluid" />
+          </div>
+        </>
+      ),
+    },
+    {
+      subtitle: 'En Foco (focus)',
+      content: (
+        <>
+          <p className="text-md mb-4">Es un principio de accesibilidad que asegura que cualquier elemento interactivo en una interfaz sea claramente visible cuando recibe la atención del usuario, especialmente al ser navegado con el teclado. En Obelisco se utiliza un borde o anillo <i>(focus ring)</i> por fuera del componente en un color distintivo. En este caso tanto los botones rellenos como los de borde se ven idénticos. </p>
+          <div className="container">
+            <img
+              src="/Obelisco-V2/images/button/boton_estado_en_foco.svg  "
+              alt="Estado en foco del boton"
+              className="img-fluid" />
+          </div>
+        </>
+      ),
+    },
+    {
+      subtitle: 'Deshabilitado (disabled)',
+      content: (
+        <>
+          <p className="text-md mb-4">Estado que indica que el botón no está disponible para la interacción, lo que significa que no puede activarse ni recibir foco. Es recomendable minimizar este tipo de botón porque presenta problemas de accesibilidad. </p>
+          <div className="container">
+            <img
+              src="/Obelisco-V2/images/button/boton_estado_deshabilitado.svg  "
+              alt="Estado deshabilitado del boton"
+              className="img-fluid" />
+          </div>
+        </>
+      ),
+    },
+    {
+      subtitle: 'Cargando (loading)',
+      content: (
+        <>
+          <p className="text-md mb-4">Estado que indica que una acción está en progreso y aún no ha finalizado. Se representa visualmente con un <a href="https://gcba.github.io/Obelisco-V2/components/spinner">Spinner</a>, deshabilitando temporalmente el botón para evitar interacciones adicionales mientras se completa el proceso. Para reforzar el significado de la acción se puede configurar la variante de spinner correspondiente con la de cada botón. </p>
+          <div className="container">
+            <img
+              src="/Obelisco-V2/images/button/boton_estado_cargando.svg  "
+              alt="Estado cargando del boton"
+              className="img-fluid" />
+          </div>
+        </>
+      ),
+    },
+    {
+      title: 'Espaciado',
+      content: (
+        <>
+          <p className="text-md">El espacio recomendado entre botones para cada tamaño garantiza un espacio clickeable/tappeable óptimo. </p>
+          <div className="container">
+            <img
+              src="/Obelisco-V2/images/button/boton_espaciado.svg  "
+              alt="Espaciado del boton"
+              className="img-fluid" />
+          </div>
+        </>
+      ),
+    }
+  ];
 
   return (
     <>
@@ -892,6 +1029,15 @@ const ButtonDocs: React.FC = () => {
       <Tabs
         sectionUx={SECTION_UX}
         sectionDev={SECTIONS_DEV}
+        customSections={
+          [
+            {
+              title: 'Especificaciones',
+              id: 'section-specs',
+              sectionContent: SPECS,
+            }
+          ]
+        }
       />
     </>
   );

@@ -540,11 +540,13 @@ const ColorsDocs: React.FC = () => {
       <Tabs
         sectionDev={SECTION_DEV}
         sectionUx={SECTION_UX}
-        customSection={{
-          title: 'Paleta',
-          id: 'pallette',
-          sectionContent: SECTION_PALLETTE,
-        }}
+        customSections={[
+          {
+            title: 'Paleta',
+            id: 'pallette',
+            sectionContent: SECTION_PALLETTE,
+          },
+        ]}
       />
     </>
   );

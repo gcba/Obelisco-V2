@@ -446,6 +446,7 @@ const SECTIONS_DEV = [
     ),
   },
 ];
+
 const SECTIONS_SCALE = [
   {
     title: '¿Por qué una escala?',
@@ -795,7 +796,7 @@ const TypographyDocs: React.FC = () => {
       <Tabs
         sectionDev={SECTIONS_DEV}
         sectionUx={SECTIONS_UX}
-        customSection={{ title: 'Escala', id: 'scale', sectionContent: SECTIONS_SCALE }}
+        customSections={[{ title: 'Escala', id: 'scale', sectionContent: SECTIONS_SCALE }]}
       />
     </>
   );

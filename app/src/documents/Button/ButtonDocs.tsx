@@ -602,7 +602,7 @@ const ButtonDocs: React.FC = () => {
                   />
                   <div className="d-flex pt-3">
                     <span className="material-symbols-rounded text-success">check</span>
-                    <p className="mb-0">Utilizar librerías que estén integradas a Obelisco, como Material Symbols o Boxicons.</p>
+                    <p className="mb-0 text-sm">Utilizar librerías que estén integradas a Obelisco, como Material Symbols o Boxicons.</p>
                   </div>
 
                 </div>
@@ -616,7 +616,7 @@ const ButtonDocs: React.FC = () => {
                   />
                   <div className="d-flex pt-3">
                     <span className="material-symbols-rounded text-danger">check</span>
-                    <p className="mb-0">No utilizar íconos de librerías que no estén en Obelisco.
+                    <p className="mb-0 text-sm">No utilizar íconos de librerías que no estén en Obelisco.
                     </p>
                   </div>
 
@@ -644,7 +644,7 @@ const ButtonDocs: React.FC = () => {
                   />
                   <div className="d-flex pt-3">
                     <span className="material-symbols-rounded text-success">check</span>
-                    <p className="mb-0">Utilizar solo 1 ícono de soporte, como ícono inicial o como ícono final.</p>
+                    <p className="mb-0 text-sm">Utilizar solo 1 ícono de soporte, como ícono inicial o como ícono final.</p>
                   </div>
 
                 </div>
@@ -658,7 +658,7 @@ const ButtonDocs: React.FC = () => {
                   />
                   <div className="d-flex pt-3">
                     <span className="material-symbols-rounded text-danger">check</span>
-                    <p className="mb-0">No utilizar 2 íconos de soporte al mismo tiempo.</p>
+                    <p className="mb-0 text-sm">No utilizar 2 íconos de soporte al mismo tiempo.</p>
                   </div>
 
                 </div>
@@ -863,7 +863,7 @@ const ButtonDocs: React.FC = () => {
                   />
                   <div className="d-flex pt-3">
                     <span className="material-symbols-rounded text-success">check</span>
-                    <p className="mb-0">Utilizar hasta 3 palabras como etiqueta dentro de un botón.
+                    <p className="mb-0 text-sm">Utilizar hasta 3 palabras como etiqueta dentro de un botón.
                     </p>
                   </div>
                 </div>
@@ -878,7 +878,7 @@ const ButtonDocs: React.FC = () => {
                   />
                   <div className="d-flex pt-3">
                     <span className="material-symbols-rounded text-danger">close</span>
-                    <p className="mb-0">No utilizar más de 3 palabras como etiqueta dentro de un botón.
+                    <p className="mb-0 text-sm">No utilizar más de 3 palabras como etiqueta dentro de un botón.
                     </p>
                   </div>
                 </div>
@@ -893,7 +893,7 @@ const ButtonDocs: React.FC = () => {
                   />
                   <div className="d-flex pt-3">
                     <span className="material-symbols-rounded text-success">check</span>
-                    <p className="mb-0">Identificar una única acción por botón.
+                    <p className="mb-0 text-sm">Identificar una única acción por botón.
                     </p>
                   </div>
                 </div>
@@ -908,7 +908,7 @@ const ButtonDocs: React.FC = () => {
                   />
                   <div className="d-flex pt-3">
                     <span className="material-symbols-rounded text-danger">close</span>
-                    <p className="mb-0">No identificar más de 2 acciones en un mismo botón.
+                    <p className="mb-0 text-sm">No identificar más de 2 acciones en un mismo botón.
                     </p>
                   </div>
                 </div>
@@ -938,7 +938,7 @@ const ButtonDocs: React.FC = () => {
                   />
                   <div className="d-flex pt-3">
                     <span className="material-symbols-rounded text-danger">close</span>
-                    <p className="mb-0">No escribir la etiqueta utilizando mayúsculas sostenidas o solo minúsculas.
+                    <p className="mb-0 text-sm">No escribir la etiqueta utilizando mayúsculas sostenidas o solo minúsculas.
                     </p>
                   </div>
                 </div>

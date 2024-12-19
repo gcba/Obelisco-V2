@@ -189,4 +189,4 @@ export const BUTTON_ACCESSIBILTY = `<button type="button" class="btn btn-xs" ari
     edit
   </span>
 </button>
-`
+`;

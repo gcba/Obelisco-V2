@@ -796,11 +796,7 @@ const TypographyDocs: React.FC = () => {
       <Tabs
         sectionDev={SECTIONS_DEV}
         sectionUx={SECTIONS_UX}
-        customSections={
-          [
-            { title: 'Escala', id: 'scale', sectionContent: SECTIONS_SCALE }
-          ]
-        }
+        customSections={[{ title: 'Escala', id: 'scale', sectionContent: SECTIONS_SCALE }]}
       />
     </>
   );

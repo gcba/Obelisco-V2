@@ -1657,7 +1657,7 @@ export const HEADER = `<header className="navbar navbar-light navbar-expand-lg" 
     ...
 </header>
 <main id="main">...</main>
-`
+`;
 
 export const HEADER_2 = `<header className="navbar navbar-light navbar-expand-lg" role='banner'>
     ...
@@ -1669,4 +1669,4 @@ export const HEADER_2 = `<header className="navbar navbar-light navbar-expand-lg
     ...
     </div>
 </header>
-`
+`;

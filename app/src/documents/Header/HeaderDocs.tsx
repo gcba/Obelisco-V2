@@ -2129,15 +2129,18 @@ const HeaderDocs: React.FC = () => {
       title: 'Uso',
       content: (
         <>
-          <div className="container">
-            <p className='text-xl'></p>
-            <ul className='list-informative'>
+          
+          <div className="list-informative pb-3">
+            <p className="text-xl">Cuándo usar</p>
+            <ul className='list-informative-bullet'>
               <li>Debe estar presente en todas las páginas de forma consistente, para facilitar la navegación de la persona usuaria a través del sitio web.</li>
               <li>Para mantener las navegaciones principales y la presencia de la marca en un primer nivel.</li>
             </ul>
+          </div>
 
-            <p className='text-xl' ></p>
-            <ul className='list-informative' >
+          <div className="list-informative pb-3">
+            <p className='text-xl'>Cuándo no usar</p>
+            <ul className='list-informative-bullet' >
               <li>Para categorías internas o filtrado dentro de una página, utilizar <a href="https://gcba.github.io/Obelisco-V2/components/tabs">Pestañas</a> en su lugar.</li>
               <li>Para mantener las navegaciones principales y la presencia de la marca en un primer nivel.</li>
               <li>
@@ -2164,7 +2167,7 @@ const HeaderDocs: React.FC = () => {
                 <Image
                   src={`${basePath}/images/header/header_Columnas_si_usar.svg`}
                   alt="Cómo usar la navegacion principal de header"
-                  width="348"
+                  width="800"
                   height="352"
                   className="img-fluid"
                 />
@@ -2178,7 +2181,7 @@ const HeaderDocs: React.FC = () => {
                 <Image
                   src={`${basePath}/images/header/header_Columnas_no_usar.svg`}
                   alt="Cómo usar la navegacion principal de header"
-                  width="348"
+                  width="800"
                   height="352"
                   className="img-fluid"
                 />
@@ -2208,7 +2211,7 @@ const HeaderDocs: React.FC = () => {
                 <Image
                   src={`${basePath}/images/header/header_opciones_de_navegacion_si.svg`}
                   alt="Cómo sí usar las opciones de navegación del header"
-                  width="348"
+                  width="800"
                   height="352"
                   className="img-fluid"
                 />
@@ -2222,7 +2225,7 @@ const HeaderDocs: React.FC = () => {
                 <Image
                   src={`${basePath}/images/header/header_opciones_de_navegacion_no.svg`}
                   alt="Cómo no usar las opciones de navegación del header"
-                  width="348"
+                  width="800"
                   height="352"
                   className="img-fluid"
                 />
@@ -2259,7 +2262,7 @@ const HeaderDocs: React.FC = () => {
           <Image
             src={`${basePath}/images/header/header_desktop_deslogueado_1_linea.svg`}
             alt="Desktop deslogueado en 1 línea"
-            width="728"
+            width="800"
             height="35"
             className="img-fluid"
           />
@@ -2276,7 +2279,7 @@ const HeaderDocs: React.FC = () => {
           <Image
             src={`${basePath}/images/header/header_desktop_logueado_1_linea.svg`}
             alt="Desktop logueado en 1 línea"
-            width="728"
+            width="800"
             height="35"
             className="img-fluid"
           />
@@ -2293,7 +2296,7 @@ const HeaderDocs: React.FC = () => {
           <Image
             src={`${basePath}/images/header/header_desktop_deslogueado_2_lineas.svg`}
             alt="Desktop logueado en 2 líneas"
-            width="728"
+            width="800"
             height="35"
             className="img-fluid"
           />
@@ -2310,7 +2313,7 @@ const HeaderDocs: React.FC = () => {
           <Image
             src={`${basePath}/images/header/header_desktop_logueado_2_lineas.svg`}
             alt="Desktop deslogueado en 2 líneas"
-            width="728"
+            width="800"
             height="35"
             className="img-fluid"
           />
@@ -2327,7 +2330,7 @@ const HeaderDocs: React.FC = () => {
           <Image
             src={`${basePath}/images/header/header_mobile.svg`}
             alt="Mobile"
-            width="728"
+            width="800"
             height="389"
             className="img-fluid"
           />
@@ -2345,11 +2348,11 @@ const HeaderDocs: React.FC = () => {
           <Image
             src={`${basePath}/images/header/header_specs_anatomia.svg`}
             alt="Header anatomía"
-            width="750"
+            width="800"
             height="242"
             className="img-fluid"
           />
-          <div className="container mt-4">
+          <div className="mt-4">
             <div className="responsive-scroll" tabIndex={0}>
               <table className="table">
                 <thead>
@@ -2402,7 +2405,7 @@ const HeaderDocs: React.FC = () => {
           <Image
             src={`${basePath}/images/header/header_specs_variantes.svg`}
             alt="Variante del header - Sin buscador"
-            width="728"
+            width="800"
             height="35"
             className="img-fluid"
           />
@@ -2419,7 +2422,7 @@ const HeaderDocs: React.FC = () => {
           <Image
             src={`${basePath}/images/header/header_specs_sin_boton.svg`}
             alt="Header variante sin boton/seccion de perfil"
-            width="728"
+            width="800"
             height="35"
             className="img-fluid"
           />
@@ -2437,7 +2440,7 @@ const HeaderDocs: React.FC = () => {
             <Image
               src={`${basePath}/images/header/header_specs_sin_navegacion.svg`}
               alt="Header variante sin boton/seccion de perfil"
-              width="728"
+              width="800"
               height="35"
               className="img-fluid"
             />

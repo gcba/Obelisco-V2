@@ -1651,3 +1651,22 @@ export const HEADER_ONLY_LOGO = `
     <div class="header-backdrop"></div>
 </header>
 `;
+
+export const HEADER = `<header className="navbar navbar-light navbar-expand-lg" role='banner'>
+    <a href="#main" className="skip-to-main-content-link">Ir al contenido principal</a>
+    ...
+</header>
+<main id="main">...</main>
+`
+
+export const HEADER_2 = `<header className="navbar navbar-light navbar-expand-lg" role='banner'>
+    ...
+    <div className="container header-container">
+    <a href="https://buenosaires.gob.ar" className="navbar-brand">
+        <img className="d-none d-xl-block" src="/Obelisco-V2/images/logo_ba.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+        <img className="d-xl-none" src="/Obelisco-V2/images/logo_ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+    </a>
+    ...
+    </div>
+</header>
+`

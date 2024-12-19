@@ -1,7 +1,12 @@
+import Image from 'next/image';
+const basePath = '/Obelisco-V2';
+
 import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import {
   HEADER_LOGIN_ONE_LINE,
@@ -21,7 +26,6 @@ import {
   HEADER_2
 } from './code-views';
 
-const basePath = '/Obelisco-V2';
 
 const logo = '/images/logo_ba.svg';
 
@@ -2123,35 +2127,27 @@ const HeaderDocs: React.FC = () => {
   const SECTION_UX = [
     {
       title: 'Uso',
-      content: (<></>)
-    },
-    {
-      subtitle: 'Cuándo usar',
       content: (
         <>
-          <p className='text-xl' ></p>
-          <ul className='list-informative' >
-            <li>Debe estar presente en todas las páginas de forma consistente, para facilitar la navegación de la persona usuaria a través del sitio web.</li>
-            <li>Para mantener las navegaciones principales y la presencia de la marca en un primer nivel.</li>
-          </ul>
+          <div className="container">
+            <p className='text-xl'></p>
+            <ul className='list-informative'>
+              <li>Debe estar presente en todas las páginas de forma consistente, para facilitar la navegación de la persona usuaria a través del sitio web.</li>
+              <li>Para mantener las navegaciones principales y la presencia de la marca en un primer nivel.</li>
+            </ul>
+
+            <p className='text-xl' ></p>
+            <ul className='list-informative' >
+              <li>Para categorías internas o filtrado dentro de una página, utilizar <a href="https://gcba.github.io/Obelisco-V2/components/tabs">Pestañas</a> en su lugar.</li>
+              <li>Para mantener las navegaciones principales y la presencia de la marca en un primer nivel.</li>
+              <li>
+                <strong>
+                  Para navegaciones de 2do nivel o subsecciones de contenido, considerar la </strong> <a href="https://gcba.github.io/Obelisco-V2/components/nav-horizontal">Navegación horizontal</a> <strong>o la </strong><a href="https://gcba.github.io/Obelisco-V2/components/nav-vertical">Navegación vertical</a> <strong>dependiendo del tipo de página</strong>.
+              </li>
+            </ul>
+          </div>
         </>
-      ),
-    },
-    {
-      subtitle: 'Cuándo no usar',
-      content: (
-        <>
-          <p className='text-xl' ></p>
-          <ul className='list-informative' >
-            <li>Para categorías internas o filtrado dentro de una página, utilizar <a href="https://gcba.github.io/Obelisco-V2/components/tabs">Pestañas</a> en su lugar.</li>
-            <li>Para mantener las navegaciones principales y la presencia de la marca en un primer nivel.</li>
-            <li>
-              <strong>
-                Para navegaciones de 2do nivel o subsecciones de contenido, considerar la </strong> <a href="https://gcba.github.io/Obelisco-V2/components/nav-horizontal">Navegación horizontal</a> <strong>o la </strong><a href="https://gcba.github.io/Obelisco-V2/components/nav-vertical">Navegación vertical</a> <strong>dependiendo del tipo de página</strong>.
-            </li>
-          </ul>
-        </>
-      ),
+      )
     },
     {
       title: 'Ejemplos de uso',
@@ -2160,30 +2156,41 @@ const HeaderDocs: React.FC = () => {
       subtitle: 'Navegación principal',
       content: (
         <>
-          <p className='text-md' >Los enlaces de navegación redirigen a las secciones y/o páginas principales de la arquitectura de información del sitio web.</p>
-          <div className="container">
-            <div className="row">
-              <div className="col-6">
-                <img
-                  src="/Obelisco-V2/images/header/header_Columnas_si_usar.svg"
-                  alt="Cómo usar el header"
-                  className="img-fluid" />
-                <p className="text-sm">
-                  ✅ Utilizar una opción de navegación con link de acceso cuando hay más de 6 opciones.
-                </p>
+          <p className='text-md'>Los enlaces de navegación redirigen a las secciones y/o páginas principales de la arquitectura de información del sitio web.</p>
+
+          <div className="py-4">
+            <div className="max-items-2">
+              <div className="col">
+                <Image
+                  src={`${basePath}/images/header/header_Columnas_si_usar.svg`}
+                  alt="Cómo usar la navegacion principal de header"
+                  width="348"
+                  height="352"
+                  className="img-fluid"
+                />
+                <div className="d-flex pt-3">
+                  <span className="material-symbols-rounded text-success">check</span>
+                  <p className="mb-0">Utilizar hasta 7 enlaces de navegación, dependiendo del tipo de encabezado (header).</p>
+                </div>
 
               </div>
-              <div className="col-6">
-                <img
-                  src="/Obelisco-V2/images/header/header_Columnas_no_usar.svg"
-                  alt="Cómo no usar el header"
-                  className="img-fluid" />
-                <p className="text-sm">
-                  ❌ No utilizar una opción link si las subsecciones no superan las 6 opciones.
-                </p>
+              <div className="col">
+                <Image
+                  src={`${basePath}/images/header/header_Columnas_no_usar.svg`}
+                  alt="Cómo usar la navegacion principal de header"
+                  width="348"
+                  height="352"
+                  className="img-fluid"
+                />
+                <div className="d-flex pt-3">
+                  <span className="material-symbols-rounded text-danger">close</span>
+                  <p className="mb-0">No utilizar más de 7 enlaces de navegación, o más de las navegaciones disponibles para cada tipo de encabezado (header) y sus variantes.</p>
+                </div>
+
               </div>
             </div>
           </div>
+
         </>
       ),
     },
@@ -2194,26 +2201,36 @@ const HeaderDocs: React.FC = () => {
           <p className="text-md">
             Las opciones de navegación se utilizan como subsecciones dentro de un desplegable de navegación del encabezado <i>(header)</i>.
           </p>
-          <div className="container">
-            <div className="row">
-              <div className="col-6">
-                <img
-                  src="/Obelisco-V2/images/header/header_opciones_de_navegacion_si.svg"
-                  alt="Cómo usar el header"
-                  className="img-fluid" />
-                <p className="text-sm">
-                  ✅Utilizar hasta 7 enlaces de navegación, dependiendo del tipo de encabezado <i>(header)</i>.
-                </p>
+
+          <div className="py-4">
+            <div className="max-items-2">
+              <div className="col">
+                <Image
+                  src={`${basePath}/images/header/header_opciones_de_navegacion_si.svg`}
+                  alt="Cómo sí usar las opciones de navegación del header"
+                  width="348"
+                  height="352"
+                  className="img-fluid"
+                />
+                <div className="d-flex pt-3">
+                  <span className="material-symbols-rounded text-success">check</span>
+                  <p className="mb-0">Utilizar una opción de navegación con link de acceso cuando hay más de 6 opciones.</p>
+                </div>
 
               </div>
-              <div className="col-6">
-                <img
-                  src="/Obelisco-V2/images/header/header_opciones_de_navegacion_no.svg"
-                  alt="Cómo no usar el header"
-                  className="img-fluid" />
-                <p className="text-sm">
-                  ❌ No utilizar más de 7 enlaces de navegación, o más de las navegaciones disponibles para cada tipo de encabezado <i>(header)</i> y sus variantes.
-                </p>
+              <div className="col">
+                <Image
+                  src={`${basePath}/images/header/header_opciones_de_navegacion_no.svg`}
+                  alt="Cómo no usar las opciones de navegación del header"
+                  width="348"
+                  height="352"
+                  className="img-fluid"
+                />
+                <div className="d-flex pt-3">
+                  <span className="material-symbols-rounded text-danger">close</span>
+                  <p className="mb-0">No utilizar una opción link si las subsecciones no superan las 6 opciones.</p>
+                </div>
+
               </div>
             </div>
           </div>
@@ -2221,90 +2238,103 @@ const HeaderDocs: React.FC = () => {
       ),
     },
     {
-      title: 'Tipos de encabezado (header)',
+      title: <>
+        Tipos de encabezado <i>(header)</i>
+      </>,
       content: (
         <>
           <p className="text-md">
             Existen 2 tipos de header según la cantidad de navegaciones y el estado de la cuenta de la persona usuaria (con sesión iniciada y sin iniciar sesión).
           </p>
-
-
         </>
       ),
     },
     {
-      subtitle: 'Desktop deslogueado | En 1 línea',
+      subtitle: <>
+        <i>Desktop deslogueado</i> | En 1 línea
+      </>,
       content: (
         <>
           <p className="text-md mt-2 mb-4">El encabezado <i>(header)</i> de 1 línea es el tipo de encabezado que se utiliza por defecto.</p>
-          <div className="container">
-            <img
-              src="/Obelisco-V2/images/header/header_desktop_deslogueado_1_linea.svg"
-              alt="Cómo no usar el header"
-              className="img-fluid" />
-          </div>
+          <Image
+            src={`${basePath}/images/header/header_desktop_deslogueado_1_linea.svg`}
+            alt="Desktop deslogueado en 1 línea"
+            width="728"
+            height="35"
+            className="img-fluid"
+          />
         </>
       ),
     },
     {
-      subtitle: 'Desktop logueado | En 1 línea',
+      subtitle: <>
+        <i>Desktop logueado</i> | En 1 línea
+      </>,
       content: (
         <>
           <p className="text-md mt-2 mb-4">El encabezado <i>(header)</i> de 1 línea es el tipo de encabezado que se utiliza por defecto.</p>
-          <div className="container">
-            <img
-              src="/Obelisco-V2/images/header/header_desktop_logueado_2_lineas.svg"
-              alt="Cómo no usar el header"
-              className="img-fluid" />
-          </div>
-
+          <Image
+            src={`${basePath}/images/header/header_desktop_logueado_1_linea.svg`}
+            alt="Desktop logueado en 1 línea"
+            width="728"
+            height="35"
+            className="img-fluid"
+          />
         </>
       ),
     },
     {
-      subtitle: 'Desktop deslogueado | En 2 líneas',
+      subtitle: <>
+        <i>Desktop deslogueado</i> | En 2 líneas
+      </>,
       content: (
         <>
           <p className="text-md mt-2 mb-4">El encabezado <i>(header)</i> de 2 líneas se utiliza cuando la cantidad de navegaciones excede al espacio disponible en 1 línea.</p>
-          <div className="container">
-            <img
-              src="/Obelisco-V2/images/header/header_desktop_logueado_2_lineas.svg"
-              alt="Cómo no usar el header"
-              className="img-fluid" />
-          </div>
+          <Image
+            src={`${basePath}/images/header/header_desktop_deslogueado_2_lineas.svg`}
+            alt="Desktop logueado en 2 líneas"
+            width="728"
+            height="35"
+            className="img-fluid"
+          />
         </>
       ),
     },
-    ,
     {
-      subtitle: 'Desktop logueado | En 2 líneas',
+      subtitle: <>
+        <i>Desktop logueado</i> | En 2 líneas
+      </>,
       content: (
         <>
           <p className="text-md mt-2 mb-4">El encabezado <i>(header)</i> de 2 líneas se utiliza cuando la cantidad de navegaciones excede al espacio disponible en 1 línea.</p>
-          <div className="container">
-            <img
-              src="/Obelisco-V2/images/header/header_desktop_logueado_2_lineas.svg"
-              alt="Cómo no usar el header"
-              className="img-fluid" />
-          </div>
+          <Image
+            src={`${basePath}/images/header/header_desktop_logueado_2_lineas.svg`}
+            alt="Desktop deslogueado en 2 líneas"
+            width="728"
+            height="35"
+            className="img-fluid"
+          />
         </>
       ),
-    }
-    ,
+    },
     {
-      subtitle: 'Mobile',
+      subtitle: <>
+        <i>Mobile</i>
+      </>,
       content: (
         <>
           <p className="text-md mt-2 mb-4">El encabezado <i>(header)</i> en su versión mobile pasa a ser un menú desplegable con la reorganización de los elementos que lo componen.</p>
-          <div className="container">
-            <img
-              src="/Obelisco-V2/images/header/header_mobile.svg"
-              alt="Cómo no usar el header"
-              className="img-fluid" />
-          </div>
+          <Image
+            src={`${basePath}/images/header/header_mobile.svg`}
+            alt="Mobile"
+            width="728"
+            height="389"
+            className="img-fluid"
+          />
         </>
+
       ),
-    }
+    },
   ];
 
   const SPECS = [
@@ -2312,13 +2342,13 @@ const HeaderDocs: React.FC = () => {
       title: 'Anatomía',
       content: (
         <>
-          <div className="container">
-            <img
-              src="/Obelisco-V2/images/header/header_specs_anatomia.svg"
-              alt="Header anatomía"
-              className="img-fluid" />
-          </div>
-
+          <Image
+            src={`${basePath}/images/header/header_specs_anatomia.svg`}
+            alt="Header anatomía"
+            width="750"
+            height="242"
+            className="img-fluid"
+          />
           <div className="container mt-4">
             <div className="responsive-scroll" tabIndex={0}>
               <table className="table">
@@ -2369,12 +2399,13 @@ const HeaderDocs: React.FC = () => {
           <p className="text-md mt-2 mb-4">
             El encabezado <i>(header)</i> puede prescindir del buscador de no ser necesario o si ya hay un buscador general dentro del cuerpo de la página. En caso de no haber un buscador, se pueden utilizar hasta 6 navegaciones manteniendo 1 sola línea para el organismo.
           </p>
-          <div className="container">
-            <img
-              src="/Obelisco-V2/images/header/header_specs_variantes.svg"
-              alt="Header variante sin buscador"
-              className="img-fluid" />
-          </div>
+          <Image
+            src={`${basePath}/images/header/header_specs_variantes.svg`}
+            alt="Variante del header - Sin buscador"
+            width="728"
+            height="35"
+            className="img-fluid"
+          />
         </>
       ),
     },
@@ -2385,12 +2416,13 @@ const HeaderDocs: React.FC = () => {
           <p className="text-md mt-2 mb-4">
             El encabezado <i>(header)</i> puede prescindir de la sección de perfil de no ser necesaria. En caso de no haber un botón de perfil o un desplegable de perfil, se pueden utilizar hasta 6 navegaciones manteniendo 1 sola línea para el organismo.
           </p>
-          <div className="container">
-            <img
-              src="/Obelisco-V2/images/header/header_specs_sin_boton.svg"
-              alt="Header variante sin boton/seccion de perfil"
-              className="img-fluid" />
-          </div>
+          <Image
+            src={`${basePath}/images/header/header_specs_sin_boton.svg`}
+            alt="Header variante sin boton/seccion de perfil"
+            width="728"
+            height="35"
+            className="img-fluid"
+          />
         </>
       ),
     },
@@ -2402,12 +2434,13 @@ const HeaderDocs: React.FC = () => {
             <p className="text-md mt-2 mb-4">
               El encabezado <i>(header)</i> puede prescindir de la sección de perfil de no ser necesaria. En caso de no haber un botón de perfil o un desplegable de perfil, se pueden utilizar hasta 6 navegaciones manteniendo 1 sola línea para el organismo.
             </p>
-            <div className="container">
-              <img
-                src="/Obelisco-V2/images/header/header_specs_sin_navegacion.svg"
-                alt="Header variante sin navegaciones"
-                className="img-fluid" />
-            </div>
+            <Image
+              src={`${basePath}/images/header/header_specs_sin_navegacion.svg`}
+              alt="Header variante sin boton/seccion de perfil"
+              width="728"
+              height="35"
+              className="img-fluid"
+            />
           </>
         </>
       ),
@@ -2432,13 +2465,9 @@ const HeaderDocs: React.FC = () => {
           <p className="text-md">
             Con la clase {'skip-to-main-content-link'}, la persona usuaria puede saltar el encabezado <i>(header)</i> y continuar directamente en el cuerpo de la página, sin la necesidad de navegar a través de los elementos del organismo.
           </p>
-          <CodeBox codeHTML={HEADER}>
-            <header className="navbar navbar-light navbar-expand-lg" role='banner'>
-              <a href="#main" className="skip-to-main-content-link">Ir al contenido principal</a>
-              ...
-            </header>
-            <main id="main">...</main>
-          </CodeBox>
+          <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
+            {HEADER}
+          </SyntaxHighlighter>
         </>
       ),
     },
@@ -2449,18 +2478,9 @@ const HeaderDocs: React.FC = () => {
           <p className="text-md">
             El logo dentro del encabezado <i>(header)</i> funciona como enlace de redirección a la página de inicio del sitio web. Por eso, dentro del atributo alt es necesario incluir la palabra “Inicio”, como forma de identificar y brindar mayor contexto sobre la acción.
           </p>
-          <CodeBox codeHTML={HEADER_2}>
-            <header className="navbar navbar-light navbar-expand-lg" role='banner'>
-              ...
-              <div className="container header-container">
-                <a href="https://buenosaires.gob.ar" className="navbar-brand">
-                  <img className="d-none d-xl-block" src="/Obelisco-V2/images/logo_ba.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
-                  <img className="d-xl-none" src="/Obelisco-V2/images/logo_ba_mobile.svg" alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
-                </a>
-                ...
-              </div>
-            </header>
-          </CodeBox>
+          <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
+            {HEADER_2}
+          </SyntaxHighlighter>
         </>
       ),
     }

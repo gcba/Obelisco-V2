@@ -6,7 +6,7 @@ import DocumentationTemplate, { Section } from '../Template/DocumentationTemplat
 
 interface TabItemProps {
   id: string;
-  title: string;
+  title?: string;
   icon?: string;
   activeTab: string;
   setActiveTab: (id: string) => void;

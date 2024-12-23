@@ -2176,7 +2176,7 @@ const HeaderDocs: React.FC = () => {
             <div className="max-items-2">
               <div className="col">
                 <Image
-                  src={`${basePath}/images/header/header_Columnas_si_usar.svg`}
+                  src={`${basePath}/images/header/header_columnas_si_usar.svg`}
                   alt="Cómo usar la navegacion principal de header"
                   width="800"
                   height="352"
@@ -2191,7 +2191,7 @@ const HeaderDocs: React.FC = () => {
               </div>
               <div className="col">
                 <Image
-                  src={`${basePath}/images/header/header_Columnas_no_usar.svg`}
+                  src={`${basePath}/images/header/header_columnas_no_usar.svg`}
                   alt="Cómo usar la navegacion principal de header"
                   width="800"
                   height="352"

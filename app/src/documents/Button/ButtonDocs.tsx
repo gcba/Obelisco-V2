@@ -753,7 +753,7 @@ const ButtonDocs: React.FC = () => {
             <p className="text-md">
               Para contextos con acciones primarias y/o acciones principales. Normalmente, existe una única sección o
               agrupación de botones primarios por página. Por ejemplo, en el último paso de un formulario, antes de
-              enviar los datos, pueden haber 2 acciones: una para ver al detalle toda la información cargada, y una para
+              enviar los datos, puede haber 2 acciones: una para ver al detalle toda la información cargada, y una para
               enviar la información de manera definitiva; estas 2 acciones comparten el mismo nivel jerárquico, pero una
               tiene prioridad dentro de este nivel.
             </p>

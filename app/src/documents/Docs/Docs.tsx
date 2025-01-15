@@ -9,7 +9,8 @@ const sections = [
     content: (
       <>
         <p className="mt-3">
-          Obelisco v2 mejora y actualiza los componentes y estilos ofrecidos en la versión anterior para diseñar interfaces consistentes, intuitivas y confiables en todos los productos digitales.
+          Obelisco v2 mejora y actualiza los componentes y estilos ofrecidos en la versión anterior para diseñar
+          interfaces consistentes, intuitivas y confiables en todos los productos digitales.
         </p>
       </>
     ),
@@ -19,7 +20,8 @@ const sections = [
     content: (
       <ul>
         <li>
-          Con la nueva versión del framework dentro de Obelisco V2, mejora el rendimiento y la simplificación del código lo que permite aprovechar nuevas funcionalidades.
+          Con la nueva versión del framework dentro de Obelisco V2, mejora el rendimiento y la simplificación del código
+          lo que permite aprovechar nuevas funcionalidades.
         </li>
       </ul>
     ),
@@ -28,7 +30,8 @@ const sections = [
     title: 'Optimización de código SCSS',
     content: (
       <li>
-        Se han corregido variables y funciones presentes en el código de Obelisco v1 mejorando la calidad y la minimización de errores, eliminando redundancias y optimizando la estructura de estilos.
+        Se han corregido variables y funciones presentes en el código de Obelisco v1 mejorando la calidad y la
+        minimización de errores, eliminando redundancias y optimizando la estructura de estilos.
       </li>
     ),
   },
@@ -36,7 +39,8 @@ const sections = [
     title: 'Eliminación de componentes deprecados',
     content: (
       <li>
-        En la nueva versión se han eliminado los componentes que ya no eran necesarios para así reducir el peso y complejidad de la librería.
+        En la nueva versión se han eliminado los componentes que ya no eran necesarios para así reducir el peso y
+        complejidad de la librería.
       </li>
     ),
   },
@@ -45,7 +49,9 @@ const sections = [
     content: (
       <>
         <li>
-          Acorde a las nuevas funcionalidades y estilos de Bootstrap 5 y Obelisco, se añadieron nuevas clases dentro de la librería. Además, Se refactorizaron componentes, permitiendo aprovechar al máximo la nueva actualización de versión.
+          Acorde a las nuevas funcionalidades y estilos de Bootstrap 5 y Obelisco, se añadieron nuevas clases dentro de
+          la librería. Además, Se refactorizaron componentes, permitiendo aprovechar al máximo la nueva actualización de
+          versión.
         </li>
       </>
     ),
@@ -55,7 +61,8 @@ const sections = [
     content: (
       <>
         <li>
-          Obelisco V2 incluye un proceso que compila archivos SCSS y da como resultado un paquete optimizado de estilos CSS que puede ser fácilmente integrado a cualquier proyecto.
+          Obelisco V2 incluye un proceso que compila archivos SCSS y da como resultado un paquete optimizado de estilos
+          CSS que puede ser fácilmente integrado a cualquier proyecto.
         </li>
         <div className="col-12 col-lg-7 mt-4 ms-1">
           <Link href="/documentation/update-component" className="list-group-item item-sm">

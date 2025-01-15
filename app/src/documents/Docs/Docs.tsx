@@ -9,11 +9,7 @@ const sections = [
     content: (
       <>
         <p className="mt-3">
-          Obelisco V2 se distingue de su predecesor por varias mejoras clave que optimizan tanto la funcionalidad
-          proporcionada por Bootstrap 5 como el rendimiento general del sistema. En esta nueva versión, hemos
-          implementado una serie de actualizaciones y refinamientos para ofrecer una experiencia de usuario superior y
-          una integración más eficiente. A continuación, se detallan algunas de las principales mejoras que diferencian
-          a Obelisco V2 de Obelisco V1:{' '}
+          Obelisco v2 mejora y actualiza los componentes y estilos ofrecidos en la versión anterior para diseñar interfaces consistentes, intuitivas y confiables en todos los productos digitales.
         </p>
       </>
     ),
@@ -23,9 +19,7 @@ const sections = [
     content: (
       <ul>
         <li>
-          <strong>Actualización a Bootstrap 5</strong>: A diferencia de &quot;Obelisco V1&quot;, que utilizaba Bootstrap
-          4, &quot;Obelisco V2&quot; ha migrado a Bootstrap 5. Esto permite aprovechar las nuevas funcionalidades,
-          mejoras de rendimiento y simplificaciones de código que vienen con la última versión de Bootstrap.
+          Con la nueva versión del framework dentro de Obelisco V2, mejora el rendimiento y la simplificación del código lo que permite aprovechar nuevas funcionalidades.
         </li>
       </ul>
     ),
@@ -34,9 +28,7 @@ const sections = [
     title: 'Optimización de código SCSS',
     content: (
       <li>
-        <strong>Optimización de código SCSS</strong>: Se han corregido variables y funciones presentes en el código SCSS
-        de &quot;Obelisco V1&quot;, mejorando así la calidad y la mantenibilidad del código. Además, se ha realizado una
-        limpieza de código para eliminar redundancias y optimizar la estructura de los estilos.
+        Se han corregido variables y funciones presentes en el código de Obelisco v1 mejorando la calidad y la minimización de errores, eliminando redundancias y optimizando la estructura de estilos.
       </li>
     ),
   },
@@ -44,28 +36,18 @@ const sections = [
     title: 'Eliminación de componentes deprecados',
     content: (
       <li>
-        <strong>Eliminación de componentes deprecados</strong>: En esta nueva versión, se han eliminado los componentes
-        que estaban deprecados o ya no eran necesarios, reduciendo así el peso y la complejidad de la librería.
+        En la nueva versión se han eliminado los componentes que ya no eran necesarios para así reducir el peso y complejidad de la librería.
       </li>
     ),
   },
   {
-    title: 'Incorporación de nuevas clases',
+    title: 'Integración de clases y refactorización de componentes',
     content: (
-      <li>
-        <strong>Incorporación de nuevas clases</strong>: Se han añadido nuevas clases, adaptadas a las nuevas
-        funcionalidades y estilos de Bootstrap 5.
-      </li>
-    ),
-  },
-  {
-    title: 'Refactorización de componentes',
-    content: (
-      <li>
-        <strong>Refactorización de componentes</strong>: Se han refactorizado componentes acorde a las nuevas
-        funcionalidades y estilos de Bootstrap 5, lo que permite a los desarrolladores aprovechar al máximo las nuevas
-        posibilidades que ofrece esta versión.
-      </li>
+      <>
+        <li>
+          Acorde a las nuevas funcionalidades y estilos de Bootstrap 5 y Obelisco, se añadieron nuevas clases dentro de la librería. Además, Se refactorizaron componentes, permitiendo aprovechar al máximo la nueva actualización de versión.
+        </li>
+      </>
     ),
   },
   {
@@ -73,9 +55,7 @@ const sections = [
     content: (
       <>
         <li>
-          <strong>Proceso de compilación y distribución</strong>: &quot;Obelisco V2&quot; incluye un proceso de buildeo
-          que compila los archivos SCSS a CSS. El resultado es un paquete optimizado de estilos CSS que puede ser
-          fácilmente integrado en cualquier proyecto.
+          Obelisco V2 incluye un proceso que compila archivos SCSS y da como resultado un paquete optimizado de estilos CSS que puede ser fácilmente integrado a cualquier proyecto.
         </li>
         <div className="col-12 col-lg-7 mt-4 ms-1">
           <Link href="/documentation/update-component" className="list-group-item item-sm">
@@ -116,7 +96,7 @@ const Docs: React.FC = () => {
       <ComponentHeader
         title="Documentación"
         description={[
-          'Esta nueva versión es una evolución de la versión anterior, "Obelisco V1", que busca mejorar y actualizar los componentes y estilos ofrecidos, alineándose con las últimas tendencias y estándares del desarrollo web.',
+          'Obelisco v2 mejora y actualiza los componentes y estilos ofrecidos en la versión anterior para diseñar interfaces consistentes, intuitivas y confiables en todos los productos digitales.',
         ]}
         divider={true}
       />

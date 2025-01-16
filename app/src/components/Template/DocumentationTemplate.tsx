@@ -92,6 +92,8 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
                     <a href={`#${section.id || `section-${type}-${index + 1}`}`} className="text-sm">
                       {section.title && section.title}
                       {section.subtitle && <ScrollspySubtitle text={section.subtitle} ScrollspyComponent={true} />}
+                      {section.third_level && <ScrollspyThirdLevel text={section.third_level} ScrollspyComponent={true} />}
+
                     </a>
                   </li>
                 ))}

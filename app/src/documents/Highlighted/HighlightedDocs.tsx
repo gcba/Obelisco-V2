@@ -33,6 +33,9 @@ const HighlightedDocs: React.FC = () => {
     },
     {
       subtitle: 'Con imagen',
+    },
+    {
+      third_level: '2 botones',
       content: (
         <>
           <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTONS}>
@@ -62,7 +65,13 @@ const HighlightedDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-          <br />
+        </>
+      ),
+    },
+    {
+      third_level: '1 boton',
+      content: (
+        <>
           <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTON}>
             <div className="highlighted-box-sizing">
               <div className="panel-horizontal-content">
@@ -89,7 +98,13 @@ const HighlightedDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-          <br />
+        </>
+      ),
+    },
+    {
+      third_level: 'Botón de descarga',
+      content: (
+        <>
           <CodeBox codeHTML={HIGHLIGHTED_BANNER_DOWNLOAD}>
             <div className="highlighted-box-sizing">
               <div className="panel-horizontal-content">
@@ -121,7 +136,13 @@ const HighlightedDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-          <br />
+        </>
+      ),
+    },
+    {
+      third_level: 'Enlace externo',
+      content: (
+        <>
           <CodeBox codeHTML={HIGHLIGHTED_BANNER_LINK}>
             <div className="highlighted-box-sizing">
               <div className="panel-horizontal-content">
@@ -148,7 +169,13 @@ const HighlightedDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-          <br />
+        </>
+      ),
+    },
+    {
+      third_level: 'Acceso',
+      content: (
+        <>
           <CodeBox codeHTML={HIGHLIGHTED_BANNER_ACCESS}>
             <div className="highlighted-box-sizing">
               <div className="panel-horizontal-content">
@@ -187,6 +214,9 @@ const HighlightedDocs: React.FC = () => {
     },
     {
       subtitle: 'Con video',
+    },
+    {
+      subtitle: '- 2 botones. MP4',
       content: (
         <>
           <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTONS_VIDEO_MP4}>
@@ -218,7 +248,13 @@ const HighlightedDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-          <br />
+        </>
+      ),
+    },
+    {
+      subtitle: '- 2 botones. Video de Youtube',
+      content: (
+        <>
           <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTONS_VIDEO_YT}>
             <div className="highlighted-box-sizing">
               <div className="panel-horizontal-content">
@@ -315,7 +351,7 @@ const HighlightedDocs: React.FC = () => {
       title: 'Conjunto',
     },
     {
-      third_level: 'Con imagen',
+      subtitle: 'Con imagen',
       content: (
         <CodeBox codeHTML={HIGHLIGHTED_JOIN_IMAGE}>
           <div className="highlighted-box-sizing-vertical">
@@ -667,6 +703,8 @@ const HighlightedDocs: React.FC = () => {
       ),
     },
   ];
+  
+
 
   return (
     <>

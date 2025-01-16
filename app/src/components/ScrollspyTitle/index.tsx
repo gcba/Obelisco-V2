@@ -27,7 +27,7 @@ export const ScrollspyThirdLevel = ({
 }) => {
   return (
     <div
-      className={`d-flex align-items-center ${ScrollspyComponent ? 'ps-5' : ''}`.trim()}
+      className={`d-flex align-items-center ${ScrollspyComponent ? 'ps-4' : ''}`.trim()}
       style={{ gap: ScrollspyComponent ? '0.125rem' : '.25rem' }}
     >
       {text}

@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 
-const ScrollspySubtitle = ({
+export const ScrollspySubtitle = ({
   text,
   ScrollspyComponent = false,
 }: {
@@ -18,4 +18,20 @@ const ScrollspySubtitle = ({
   );
 };
 
-export default ScrollspySubtitle;
+export const ScrollspyThirdLevel = ({
+  text,
+  ScrollspyComponent = false,
+}: {
+  text: string | React.ReactNode;
+  ScrollspyComponent?: boolean;
+}) => {
+  return (
+    <div
+      className={`d-flex align-items-center ${ScrollspyComponent ? 'ps-5' : ''}`.trim()}
+      style={{ gap: ScrollspyComponent ? '0.125rem' : '.25rem' }}
+    >
+      {text}
+    </div>
+  );
+};
+

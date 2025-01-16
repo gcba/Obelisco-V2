@@ -315,7 +315,7 @@ const HighlightedDocs: React.FC = () => {
       title: 'Conjunto',
     },
     {
-      subtitle: 'Con imagen',
+      third_level: 'Con imagen',
       content: (
         <CodeBox codeHTML={HIGHLIGHTED_JOIN_IMAGE}>
           <div className="highlighted-box-sizing-vertical">

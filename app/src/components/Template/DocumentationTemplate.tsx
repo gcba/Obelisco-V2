@@ -3,7 +3,7 @@
 import { Scrollspy } from '@makotot/ghostui';
 import React, { useEffect, useState, useMemo, useCallback } from 'react';
 
-import ScrollspySubtitle from '../ScrollspyTitle';
+import {ScrollspySubtitle, ScrollspyThirdLevel} from '../ScrollspyTitle';
 import ScrollTopButton from './ScrollTopButton';
 import SimpleText from './SimpleText';
 
@@ -11,6 +11,7 @@ export interface Section {
   id?: string;
   title?: string | React.ReactNode;
   subtitle?: string | React.ReactNode;
+  third_level?: string | React.ReactNode;
   content?: React.ReactNode;
   description?: string;
 }
@@ -62,6 +63,11 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
                     <h3 className="text-xl text-body-secondary mb-2">
                       <ScrollspySubtitle text={section.subtitle} />
                     </h3>
+                  )}
+                  {section.third_level && (
+                    <h4 className="text-xl text-body-secondary mb-2">
+                      <ScrollspyThirdLevel text={section.third_level} />
+                    </h4>
                   )}
                   {section.description && <SimpleText description={section.description} />}
                   {section.content && <div style={{ marginBottom: '32px' }}>{section.content}</div>}

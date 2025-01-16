@@ -310,9 +310,9 @@ const HighlightedDocs: React.FC = () => {
                       <div className="panel-body">
                         <h2 className="panel-title">Título del destacado</h2>
                         <p className="panel-text">
-                          Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
-                          negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
-                          líneas. No puede contener negritas ni enlaces
+                          Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
+                          contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de
+                          pocas líneas. No puede contener negritas ni enlaces
                         </p>
                         <div className="panel-footer">
                           <LinkClient className="btn btn-primary btn-lg">Botón</LinkClient>
@@ -332,9 +332,9 @@ const HighlightedDocs: React.FC = () => {
                       <div className="panel-body">
                         <h2 className="panel-title">Título del destacado</h2>
                         <p className="panel-text">
-                          Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
-                          negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
-                          líneas. No puede contener negritas ni enlaces
+                          Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
+                          contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de
+                          pocas líneas. No puede contener negritas ni enlaces
                         </p>
                         <div className="panel-footer">
                           <LinkClient className="btn btn-secondary btn-lg" download="">
@@ -359,9 +359,9 @@ const HighlightedDocs: React.FC = () => {
                       <div className="panel-body">
                         <h2 className="panel-title">Título del destacado</h2>
                         <p className="panel-text">
-                          Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
-                          negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
-                          líneas. No puede contener negritas ni enlaces
+                          Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
+                          contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de
+                          pocas líneas. No puede contener negritas ni enlaces
                         </p>
                         <div className="panel-footer">
                           <LinkClient className="external">Enlace externo</LinkClient>
@@ -381,9 +381,9 @@ const HighlightedDocs: React.FC = () => {
                       <div className="panel-body">
                         <h2 className="panel-title">Título del destacado</h2>
                         <p className="panel-text">
-                          Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
-                          negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
-                          líneas. No puede contener negritas ni enlaces
+                          Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
+                          contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de
+                          pocas líneas. No puede contener negritas ni enlaces
                         </p>
                         <div className="panel-footer">
                           <LinkClient className="list-group-item item-sm">
@@ -421,9 +421,9 @@ const HighlightedDocs: React.FC = () => {
                       <div className="panel-body">
                         <h2 className="panel-title">Título del destacado</h2>
                         <p className="panel-text">
-                          Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
-                          negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
-                          líneas. No puede contener negritas ni enlaces
+                          Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
+                          contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de
+                          pocas líneas. No puede contener negritas ni enlaces
                         </p>
                         <div className="panel-footer">
                           <LinkClient className="btn btn-primary btn-lg">Botón</LinkClient>
@@ -444,9 +444,9 @@ const HighlightedDocs: React.FC = () => {
                       <div className="panel-body">
                         <h2 className="panel-title">Título del destacado</h2>
                         <p className="panel-text">
-                          Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
-                          negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
-                          líneas. No puede contener negritas ni enlaces
+                          Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
+                          contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de
+                          pocas líneas. No puede contener negritas ni enlaces
                         </p>
                         <div className="panel-footer">
                           <LinkClient className="btn btn-primary btn-lg">Botón</LinkClient>
@@ -468,9 +468,9 @@ const HighlightedDocs: React.FC = () => {
                       <div className="panel-body">
                         <h2 className="panel-title">Título del destacado</h2>
                         <p className="panel-text">
-                          Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
-                          negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
-                          líneas. No puede contener negritas ni enlaces
+                          Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
+                          contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de
+                          pocas líneas. No puede contener negritas ni enlaces
                         </p>
                         <div className="panel-footer">
                           <LinkClient className="btn btn-primary btn-lg">Botón</LinkClient>
@@ -483,9 +483,9 @@ const HighlightedDocs: React.FC = () => {
                       <div className="panel-body">
                         <h2 className="panel-title">Título del destacado</h2>
                         <p className="panel-text">
-                          Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
-                          negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
-                          líneas. No puede contener negritas ni enlaces
+                          Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
+                          contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de
+                          pocas líneas. No puede contener negritas ni enlaces
                         </p>
                         <div className="panel-footer">
                           <LinkClient className="btn btn-secondary btn-lg" download="">
@@ -503,9 +503,9 @@ const HighlightedDocs: React.FC = () => {
                       <div className="panel-body">
                         <h2 className="panel-title">Título del destacado</h2>
                         <p className="panel-text">
-                          Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
-                          negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
-                          líneas. No puede contener negritas ni enlaces
+                          Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
+                          contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de
+                          pocas líneas. No puede contener negritas ni enlaces
                         </p>
                         <div className="panel-footer">
                           <LinkClient className="external">Enlace externo</LinkClient>
@@ -518,9 +518,9 @@ const HighlightedDocs: React.FC = () => {
                       <div className="panel-body">
                         <h2 className="panel-title">Título del destacado</h2>
                         <p className="panel-text">
-                          Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
-                          negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
-                          líneas. No puede contener negritas ni enlaces
+                          Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
+                          contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de
+                          pocas líneas. No puede contener negritas ni enlaces
                         </p>
                         <div className="panel-footer">
                           <LinkClient className="list-group-item item-sm">
@@ -540,7 +540,7 @@ const HighlightedDocs: React.FC = () => {
             </div>
           </CodeBox>
         </>
-      )
+      ),
     },
     {
       title: 'Destacado lateral',

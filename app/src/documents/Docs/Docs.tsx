@@ -9,8 +9,7 @@ const sections = [
     content: (
       <>
         <p className="mt-3">
-          Obelisco v2 mejora y actualiza los componentes y estilos ofrecidos en la versión anterior para diseñar
-          interfaces consistentes, intuitivas y confiables en todos los productos digitales.
+          Obelisco no es solo un sistema de diseño, es una <strong>herramienta estratégica y eficiente</strong>, que facilita la incorporación de nuevas tecnologías, entregando valor en ciclos más cortos mejorando la interacción con las personas usuarias.
         </p>
       </>
     ),
@@ -20,8 +19,8 @@ const sections = [
     content: (
       <ul>
         <li>
-          Con la nueva versión del framework dentro de Obelisco V2, mejora el rendimiento y la simplificación del código
-          lo que permite aprovechar nuevas funcionalidades.
+          Con la nueva versión del framework en Obelisco V2 mejora el rendimiento y la simplificación del código,
+          lo que permite aprovechar <strong>nuevas funcionalidades</strong>.
         </li>
       </ul>
     ),
@@ -50,7 +49,7 @@ const sections = [
       <>
         <li>
           Acorde a las nuevas funcionalidades y estilos de Bootstrap 5 y Obelisco, se añadieron nuevas clases dentro de
-          la librería. Además, Se refactorizaron componentes, permitiendo aprovechar al máximo la nueva actualización de
+          la librería. Además, Se refactorizaron componentes, permitiendo aprovechar al máximo la nueva actualización de la nueva 
           versión.
         </li>
       </>

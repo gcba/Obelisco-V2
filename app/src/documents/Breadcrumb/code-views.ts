@@ -16,4 +16,4 @@ export const BREADCRUMB_ACCESSIBILTY = `    <nav aria-label="Navegación secunda
         ...
       </ol>
     </nav>
-`
+`;

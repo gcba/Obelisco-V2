@@ -11,7 +11,6 @@ const basePath = '/Obelisco-V2';
 import { BREADCRUMB, BREADCRUMB_ACCESSIBILTY } from './code-views';
 
 const BreadcrumbDocs: React.FC = () => {
-
   const SECTIONS_DEV = [
     {
       title: 'Simple',
@@ -51,21 +50,27 @@ const BreadcrumbDocs: React.FC = () => {
             <p className="text-xl">Cuándo usar</p>
             <ul className="list-informative-bullet">
               <li>
-                Para mostrar la jerarquía de navegación, de más de dos niveles, y los pasos que siguió el usuario para llegar a la página actual.
+                Para mostrar la jerarquía de navegación, de más de dos niveles, y los pasos que siguió el usuario para
+                llegar a la página actual.
               </li>
             </ul>
           </div>
           <div className="list-informative pb-3">
             <p className="text-xl">Cuándo no usar</p>
             <ul className="list-informative-bullet">
+              <li>Como enlaces a contenido que se ubique por fuera del encabezado de la página.</li>
               <li>
-                Como enlaces a contenido que se ubique por fuera del encabezado de la página.
+                Dentro de un bloque de texto, considerá utilizar el componente{' '}
+                <a href="https://gcba.github.io/Obelisco-V2/components/link">Enlace</a>.
               </li>
               <li>
-                Dentro de un bloque de texto, considerá utilizar el componente <a href="https://gcba.github.io/Obelisco-V2/components/link">Enlace</a>.
+                Para guiar a los usuarios a través de un proceso de varios pasos, utilizá el componente{' '}
+                <a href="https://gcba.github.io/Obelisco-V2/components/steps-form">Pasos de un formulario</a>.
               </li>
-              <li>Para guiar a los usuarios a través de un proceso de varios pasos, utilizá el componente <a href="https://gcba.github.io/Obelisco-V2/components/steps-form">Pasos de un formulario</a>.</li>
-              <li>Cuando se utiliza la navegación horizontal en combinación con la navegación principal, puede resultar redundante incluir migas de pan.</li>
+              <li>
+                Cuando se utiliza la navegación horizontal en combinación con la navegación principal, puede resultar
+                redundante incluir migas de pan.
+              </li>
               <li>En las páginas de inicio omita incluir el componente migas de pan.</li>
             </ul>
           </div>
@@ -76,8 +81,9 @@ const BreadcrumbDocs: React.FC = () => {
       title: 'Disposición',
       content: (
         <>
-          <p className='text-md' >
-            Se ubican en la parte superior izquierda de la página, generalmente, dentro del encabezado de página, por encima del título H1.
+          <p className="text-md">
+            Se ubican en la parte superior izquierda de la página, generalmente, dentro del encabezado de página, por
+            encima del título H1.
           </p>
           <Image
             src={`${basePath}/images/migasDePan/migasDePan_disposicion.svg`}
@@ -94,9 +100,12 @@ const BreadcrumbDocs: React.FC = () => {
     },
     {
       subtitle: 'Basado en el ancho',
-      content:
+      content: (
         <>
-          <p className="text-md">Cuando el nombre de un enlace de ancla excede los 32 caracteres (incluyendo espacios), el texto se trunca y agrega tres puntos (…) al final para visualizar que hay más texto en ese nivel.</p>
+          <p className="text-md">
+            Cuando el nombre de un enlace de ancla excede los 32 caracteres (incluyendo espacios), el texto se trunca y
+            agrega tres puntos (…) al final para visualizar que hay más texto en ese nivel.
+          </p>
           <Image
             src={`${basePath}/images/migasDePan/migasDePan_contenido.svg`}
             alt="Migas de pan basado en el ancho"
@@ -105,6 +114,7 @@ const BreadcrumbDocs: React.FC = () => {
             className="img-fluid"
           />
         </>
+      ),
     },
   ];
 
@@ -151,17 +161,27 @@ const BreadcrumbDocs: React.FC = () => {
     },
     {
       title: 'Variantes',
-      content: <>
-        <p className="text-md">
-          Existen 2 variantes de migas de pan, que se utilizan según el dispositivo desde el que navega la persona usuaria.
-        </p>
-      </>,
-    },
-    {
-      subtitle: (<> <i>desktop</i> </>),
       content: (
         <>
-          <p className="text-md mb-4">Puede estar compuesta por hasta 4 enlaces de ancla, que representan el camino de la persona usuaria. </p>
+          <p className="text-md">
+            Existen 2 variantes de migas de pan, que se utilizan según el dispositivo desde el que navega la persona
+            usuaria.
+          </p>
+        </>
+      ),
+    },
+    {
+      subtitle: (
+        <>
+          {' '}
+          <i>desktop</i>{' '}
+        </>
+      ),
+      content: (
+        <>
+          <p className="text-md mb-4">
+            Puede estar compuesta por hasta 4 enlaces de ancla, que representan el camino de la persona usuaria.{' '}
+          </p>
           <Image
             src={`${basePath}/images/migasDePan/migasDePan_variantes_desktop.svg`}
             alt="Migas de Pan variante desktop"
@@ -173,11 +193,17 @@ const BreadcrumbDocs: React.FC = () => {
       ),
     },
     {
-      subtitle: (<> Dispositivos móviles <i>(tables y mobile)</i> </>),
+      subtitle: (
+        <>
+          {' '}
+          Dispositivos móviles <i>(tables y mobile)</i>{' '}
+        </>
+      ),
       content: (
         <>
           <p className="text-md mb-4">
-            En dispositivos móviles, solo se ve un enlace de ancla, que hace referencia a la página anterior a la que se encuentra la persona usuaria, y sirve para volver un paso hacia atrás.
+            En dispositivos móviles, solo se ve un enlace de ancla, que hace referencia a la página anterior a la que se
+            encuentra la persona usuaria, y sirve para volver un paso hacia atrás.
           </p>
           <Image
             src={`${basePath}/images/migasDePan/migasDePan_variantes_mobile.svg`}
@@ -188,7 +214,7 @@ const BreadcrumbDocs: React.FC = () => {
           />
         </>
       ),
-    }
+    },
   ];
 
   const ACCESSIBILITY = [
@@ -197,7 +223,8 @@ const BreadcrumbDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md">
-            El componente de migas de pan está construido para ser reconocido por herramientas de asistencia como la navegación por teclado o lectores por voz.
+            El componente de migas de pan está construido para ser reconocido por herramientas de asistencia como la
+            navegación por teclado o lectores por voz.
           </p>
           <span className="badge badge-default ms-1">TAB</span>
           <span className="badge badge-default">ENTER</span>
@@ -222,7 +249,10 @@ const BreadcrumbDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md">
-            Las migas de pan son otra forma de navegar el sitio, por lo que utilizan una etiqueta semántica (<i>{`<nav>`}</i>), y están identificadas como una navegación secundaria a través del atributo <i>aria-label</i>. Esto permite diferenciar las migas de pan de otro elementos de navegación, y ser reconocidas independientemente de la forma en que la persona usuaria recorra la página.
+            Las migas de pan son otra forma de navegar el sitio, por lo que utilizan una etiqueta semántica (
+            <i>{`<nav>`}</i>), y están identificadas como una navegación secundaria a través del atributo{' '}
+            <i>aria-label</i>. Esto permite diferenciar las migas de pan de otro elementos de navegación, y ser
+            reconocidas independientemente de la forma en que la persona usuaria recorra la página.
           </p>
           <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
             {BREADCRUMB_ACCESSIBILTY}
@@ -242,7 +272,8 @@ const BreadcrumbDocs: React.FC = () => {
             Success Criterion 1.4.11 Non-Text Contrast (Level AA)
           </a>
           <p>
-            La presentación visual de elementos de la interfaz de usuario y objetos gráficos tiene por lo menos una relación de contraste de 3:1 con respecto a los colores adyacentes.
+            La presentación visual de elementos de la interfaz de usuario y objetos gráficos tiene por lo menos una
+            relación de contraste de 3:1 con respecto a los colores adyacentes.
           </p>
 
           <a
@@ -253,19 +284,16 @@ const BreadcrumbDocs: React.FC = () => {
             Success Criterion 1.4.3 Contrast (Minimum) (Level AA)
           </a>
           <p>
-            La presentación visual de texto y de imágenes de texto tiene una relación de contraste de por lo menos 4.5:1, excepto textos grandes e imágenes de texto grande que tienen un contraste de por lo menos 3:1, textos o imágenes que son parte de un componente inactivo de interfaz de usuario o son pura decoración, o logotipos.
+            La presentación visual de texto y de imágenes de texto tiene una relación de contraste de por lo menos
+            4.5:1, excepto textos grandes e imágenes de texto grande que tienen un contraste de por lo menos 3:1, textos
+            o imágenes que son parte de un componente inactivo de interfaz de usuario o son pura decoración, o
+            logotipos.
           </p>
 
-          <a
-            href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html" target="_blank" rel="noopener noreferrer">
             Success Criterion 2.1.1 Keyboard (Level A)
           </a>
-          <p>
-            Todas las funcionalidades del contenido se puede operar a través de una interfaz de teclado.
-          </p>
+          <p>Todas las funcionalidades del contenido se puede operar a través de una interfaz de teclado.</p>
 
           <a
             href="https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html"
@@ -275,7 +303,8 @@ const BreadcrumbDocs: React.FC = () => {
             Success Criterion 2.4.3 Focus Order (Level A)
           </a>
           <p>
-            Al navegar por las migas de pan con el teclado, el foco en los enlaces permanece en orden lógico en relación con los demás enlaces en la ruta de navegación.
+            Al navegar por las migas de pan con el teclado, el foco en los enlaces permanece en orden lógico en relación
+            con los demás enlaces en la ruta de navegación.
           </p>
 
           <a
@@ -286,8 +315,9 @@ const BreadcrumbDocs: React.FC = () => {
             Success Criterion 2.4.7 Focus Visible (Level AA)
           </a>
           <p>
-            Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque del teclado es visible.
-            Cuando utiliza un teclado para navegar por las migas de pan, los enlaces tienen un subrayado visible y un recuadro outline que indica que los enlaces son interactivos.
+            Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque
+            del teclado es visible. Cuando utiliza un teclado para navegar por las migas de pan, los enlaces tienen un
+            subrayado visible y un recuadro outline que indica que los enlaces son interactivos.
           </p>
 
           <a
@@ -297,17 +327,15 @@ const BreadcrumbDocs: React.FC = () => {
           >
             Success Criterion 3.2.3 Consistent Navigation (Level AA)
           </a>
-          <p>Cuando navega por diferentes páginas del sitio web, los enlaces de las migas de pan siempre están en el mismo orden y en el mismo lugar.</p>
+          <p>
+            Cuando navega por diferentes páginas del sitio web, los enlaces de las migas de pan siempre están en el
+            mismo orden y en el mismo lugar.
+          </p>
 
-          <a
-            href="https://www.w3.org/WAI/WCAG22/Understanding/location.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://www.w3.org/WAI/WCAG22/Understanding/location.html" target="_blank" rel="noopener noreferrer">
             Success Criterion 2.4.8. Location (Level AAA)
           </a>
           <p>Los usuarios saben dónde se encuentran en un conjunto de páginas.</p>
-
         </>
       ),
     },
@@ -334,7 +362,8 @@ const BreadcrumbDocs: React.FC = () => {
         ]}
       />
       <Tabs
-        sectionDev={SECTIONS_DEV} sectionUx={SECTION_UX}
+        sectionDev={SECTIONS_DEV}
+        sectionUx={SECTION_UX}
         customSections={[
           {
             title: 'Especificaciones',

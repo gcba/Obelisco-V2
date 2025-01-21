@@ -10,3 +10,10 @@ export const BREADCRUMB = `
       </ol>
     </nav>
 `;
+
+export const BREADCRUMB_ACCESSIBILTY = `    <nav aria-label="Navegación secundaria">
+      <ol class="breadcrumb">
+        ...
+      </ol>
+    </nav>
+`

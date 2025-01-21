@@ -1,6 +1,6 @@
 import Image from 'next/image';
-// import SyntaxHighlighter from 'react-syntax-highlighter';
-// import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
@@ -8,10 +8,7 @@ import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 const basePath = '/Obelisco-V2';
 
-import { BREADCRUMB } from './code-views';
-
-
-
+import { BREADCRUMB, BREADCRUMB_ACCESSIBILTY } from './code-views';
 
 const BreadcrumbDocs: React.FC = () => {
 
@@ -200,8 +197,7 @@ const BreadcrumbDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md">
-            El componente de botón está construido para ser reconocido por herramientas de asistencia como la navegación
-            por teclado o lectores por voz.
+            El componente de migas de pan está construido para ser reconocido por herramientas de asistencia como la navegación por teclado o lectores por voz.
           </p>
           <span className="badge badge-default ms-1">TAB</span>
           <span className="badge badge-default">ENTER</span>
@@ -212,8 +208,8 @@ const BreadcrumbDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/button/boton_navegacion_alternativa.svg`}
-            alt="Navegacion alternativa del botón"
+            src={`${basePath}/images/migasDePan/migasDePan_accesibilidad.svg`}
+            alt="Navegacion alternativa de las migas de pan"
             width="738"
             height="400"
             className="img-fluid"
@@ -226,12 +222,11 @@ const BreadcrumbDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md">
-            En caso de utilizar un botón solo con ícono y sin etiqueta, se debe colocar una etiqueta semántica{' '}
-            <i>(aria-label)</i> en el código con el texto descriptivo de la acción.
+            Las migas de pan son otra forma de navegar el sitio, por lo que utilizan una etiqueta semántica (<i>{`<nav>`}</i>), y están identificadas como una navegación secundaria a través del atributo <i>aria-label</i>. Esto permite diferenciar las migas de pan de otro elementos de navegación, y ser reconocidas independientemente de la forma en que la persona usuaria recorra la página.
           </p>
-          {/* <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
-            {BUTTON_ACCESSIBILTY}
-          </SyntaxHighlighter> */}
+          <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
+            {BREADCRUMB_ACCESSIBILTY}
+          </SyntaxHighlighter>
         </>
       ),
     },
@@ -240,27 +235,14 @@ const BreadcrumbDocs: React.FC = () => {
       content: (
         <>
           <a
-            href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html"
+            href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Success Criterion 1.1.1 Non-text Content (Level A)
+            Success Criterion 1.4.11 Non-Text Contrast (Level AA)
           </a>
           <p>
-            Todo el contenido no textual que se presenta al usuario tiene una alternativa de texto que sirve para el
-            propósito equivalente. Esto es válido para botones que sólo tienen un ícono.
-          </p>
-
-          <a
-            href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.3.1 Info and Relationships (Level A)
-          </a>
-          <p>
-            La información, la estructura y las relaciones transmitidas a través de la presentación pueden determinarse
-            mediante programación o están disponibles en el texto.
+            La presentación visual de elementos de la interfaz de usuario y objetos gráficos tiene por lo menos una relación de contraste de 3:1 con respecto a los colores adyacentes.
           </p>
 
           <a
@@ -271,22 +253,29 @@ const BreadcrumbDocs: React.FC = () => {
             Success Criterion 1.4.3 Contrast (Minimum) (Level AA)
           </a>
           <p>
-            La presentación visual de texto y de imágenes de texto tiene una relación de contraste de por lo menos
-            4.5:1, excepto textos grandes e imágenes de texto grande que tienen un contraste de por lo menos 3:1, textos
-            o imágenes que son parte de un componente inactivo de interfaz de usuario o son pura decoración, o
-            logotipos.{' '}
+            La presentación visual de texto y de imágenes de texto tiene una relación de contraste de por lo menos 4.5:1, excepto textos grandes e imágenes de texto grande que tienen un contraste de por lo menos 3:1, textos o imágenes que son parte de un componente inactivo de interfaz de usuario o son pura decoración, o logotipos.
           </p>
 
           <a
-            href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast"
+            href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Success Criterion 1.4.11 Non-Text Contrast (Level AA)
+            Success Criterion 2.1.1 Keyboard (Level A)
           </a>
           <p>
-            La presentación visual de elementos de la interfaz de usuario y objetos gráficos tiene por lo menos una
-            relación de contraste de 3:1 con respecto a los colores adyacentes.{' '}
+            Todas las funcionalidades del contenido se puede operar a través de una interfaz de teclado.
+          </p>
+
+          <a
+            href="https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Success Criterion 2.4.3 Focus Order (Level A)
+          </a>
+          <p>
+            Al navegar por las migas de pan con el teclado, el foco en los enlaces permanece en orden lógico en relación con los demás enlaces en la ruta de navegación.
           </p>
 
           <a
@@ -297,18 +286,28 @@ const BreadcrumbDocs: React.FC = () => {
             Success Criterion 2.4.7 Focus Visible (Level AA)
           </a>
           <p>
-            Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque
-            del teclado es visible.
+            Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque del teclado es visible.
+            Cuando utiliza un teclado para navegar por las migas de pan, los enlaces tienen un subrayado visible y un recuadro outline que indica que los enlaces son interactivos.
           </p>
 
           <a
-            href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html"
+            href="https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation.html"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Success Criterion 2.5.8 Target Size (Minimum) (Level AA){' '}
+            Success Criterion 3.2.3 Consistent Navigation (Level AA)
           </a>
-          <p>El tamaño del objetivo para entradas mediante puntero es de al menos 24 por 24 píxeles CSS.</p>
+          <p>Cuando navega por diferentes páginas del sitio web, los enlaces de las migas de pan siempre están en el mismo orden y en el mismo lugar.</p>
+
+          <a
+            href="https://www.w3.org/WAI/WCAG22/Understanding/location.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Success Criterion 2.4.8. Location (Level AAA)
+          </a>
+          <p>Los usuarios saben dónde se encuentran en un conjunto de páginas.</p>
+
         </>
       ),
     },

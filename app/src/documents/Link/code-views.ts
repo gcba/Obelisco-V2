@@ -34,3 +34,8 @@ export const LINK_ACCESS = `
     <a class="access link-white" href="#" target="_blank" rel="noopener noreferrer">enlace de acceso</a>
   </div>
 `;
+
+export const LINK_ACCESSIBILTY = `<a href="https://facebook.com/GCBA" aria-label="Ir a la página de Facebook del Gobierno de la Ciudad de Buenos Aires" target="_blank" rel="noopener noreferrer">
+  Facebook
+</a>
+`

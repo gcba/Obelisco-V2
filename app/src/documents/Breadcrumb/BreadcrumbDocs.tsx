@@ -265,6 +265,7 @@ const BreadcrumbDocs: React.FC = () => {
       content: (
         <>
           <a
+            className="external"
             href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast"
             target="_blank"
             rel="noopener noreferrer"
@@ -277,6 +278,7 @@ const BreadcrumbDocs: React.FC = () => {
           </p>
 
           <a
+            className="external"
             href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html"
             target="_blank"
             rel="noopener noreferrer"
@@ -290,12 +292,18 @@ const BreadcrumbDocs: React.FC = () => {
             logotipos.
           </p>
 
-          <a href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html" target="_blank" rel="noopener noreferrer">
+          <a
+            className="external"
+            href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Success Criterion 2.1.1 Keyboard (Level A)
           </a>
           <p>Todas las funcionalidades del contenido se puede operar a través de una interfaz de teclado.</p>
 
           <a
+            className="external"
             href="https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html"
             target="_blank"
             rel="noopener noreferrer"
@@ -308,6 +316,7 @@ const BreadcrumbDocs: React.FC = () => {
           </p>
 
           <a
+            className="external"
             href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html"
             target="_blank"
             rel="noopener noreferrer"
@@ -321,6 +330,7 @@ const BreadcrumbDocs: React.FC = () => {
           </p>
 
           <a
+            className="external"
             href="https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation.html"
             target="_blank"
             rel="noopener noreferrer"
@@ -332,7 +342,12 @@ const BreadcrumbDocs: React.FC = () => {
             mismo orden y en el mismo lugar.
           </p>
 
-          <a href="https://www.w3.org/WAI/WCAG22/Understanding/location.html" target="_blank" rel="noopener noreferrer">
+          <a
+            className="external"
+            href="https://www.w3.org/WAI/WCAG22/Understanding/location.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Success Criterion 2.4.8. Location (Level AAA)
           </a>
           <p>Los usuarios saben dónde se encuentran en un conjunto de páginas.</p>

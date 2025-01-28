@@ -5,17 +5,17 @@ import React from 'react';
 
 const basePath = '/Obelisco-V2';
 
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+
 import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import { LINK_DEFAULT, LINK_EXTERNAL, LINK_DOWNLOAD, LINK_ACCESS, LINK_ACCESSIBILTY } from './code-views';
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 const LinkDocs: React.FC = () => {
-
   const SECTIONS_DEV = [
     {
       title: 'Predeterminado',
@@ -138,7 +138,9 @@ const LinkDocs: React.FC = () => {
           <div className="list-informative pb-3">
             <p className="text-xl">Cuándo no usar</p>
             <ul className="bullet-list-informative">
-              <li>Para realizar una acción, como enviar un formulario, guardar o editar, utilizar el componente <a href="https://gcba.github.io/Obelisco-V2/components/button">Botón</a>.
+              <li>
+                Para realizar una acción, como enviar un formulario, guardar o editar, utilizar el componente{' '}
+                <a href="https://gcba.github.io/Obelisco-V2/components/button">Botón</a>.
               </li>
             </ul>
           </div>
@@ -150,16 +152,16 @@ const LinkDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md">
-            Cada tipo de enlace sugiere una acción concreta y guía a la persona usuaria hacia adelante en la navegación del sitio web.
+            Cada tipo de enlace sugiere una acción concreta y guía a la persona usuaria hacia adelante en la navegación
+            del sitio web.
           </p>
 
           <div className="max-items-2 mt-4 mb-2">
             <div className="col">
-              <p className="text-xl">
-                Enlace predeterminado
-              </p>
+              <p className="text-xl">Enlace predeterminado</p>
               <p className="text-md">
-                Se utiliza para navegar dentro de una misma página como ancla, o para correos electrónicos y direcciones.
+                Se utiliza para navegar dentro de una misma página como ancla, o para correos electrónicos y
+                direcciones.
               </p>
             </div>
             <div className="col">
@@ -175,11 +177,10 @@ const LinkDocs: React.FC = () => {
 
           <div className="max-items-2 mt-4 mb-2">
             <div className="col">
-              <p className="text-xl">
-                Enlace de acceso
-              </p>
+              <p className="text-xl">Enlace de acceso</p>
               <p className="text-md">
-                Se utiliza para ver más información de una sección, redirigiéndote a una nueva página del mismo sitio web. Por ejemplo: &quot;Ver más noticias&quot;.
+                Se utiliza para ver más información de una sección, redirigiéndote a una nueva página del mismo sitio
+                web. Por ejemplo: &quot;Ver más noticias&quot;.
               </p>
             </div>
             <div className="col">
@@ -195,12 +196,11 @@ const LinkDocs: React.FC = () => {
 
           <div className="max-items-2 mt-4 mb-2">
             <div className="col">
-              <p className="text-xl">
-                Enlace de descarga
-              </p>
+              <p className="text-xl">Enlace de descarga</p>
               <p className="text-md">
-                Se utiliza para indicar la descarga de un recurso.
-                El nombre del enlace debe ser descriptivo, para darle contexto a la persona usuaria de lo que está descargando, y evitar etiquetado genérico como &quot;Descargar archivo&quot;.
+                Se utiliza para indicar la descarga de un recurso. El nombre del enlace debe ser descriptivo, para darle
+                contexto a la persona usuaria de lo que está descargando, y evitar etiquetado genérico como
+                &quot;Descargar archivo&quot;.
               </p>
             </div>
             <div className="col">
@@ -216,11 +216,10 @@ const LinkDocs: React.FC = () => {
 
           <div className="max-items-2 mt-4 mb-2">
             <div className="col">
-              <p className="text-xl">
-                Enlace externo
-              </p>
+              <p className="text-xl">Enlace externo</p>
               <p className="text-md">
-                Se utiliza para enlazar contenido a un sitio web externo, por fuera del dominio actual. Indica la redirección en una nueva pestaña, para no comprometer la navegación actual de la persona usuaria.
+                Se utiliza para enlazar contenido a un sitio web externo, por fuera del dominio actual. Indica la
+                redirección en una nueva pestaña, para no comprometer la navegación actual de la persona usuaria.
               </p>
             </div>
             <div className="col">
@@ -256,19 +255,21 @@ const LinkDocs: React.FC = () => {
 
     {
       title: 'Disposición',
-      content: (
-        <></>
-      ),
+      content: <></>,
     },
     // ScrollSpy revisar
     {
-      subtitle: <>
-        Enlaces independientes <br /> <i>(Standalone links)</i>
-      </>,
+      subtitle: (
+        <>
+          Enlaces independientes <br /> <i>(Standalone links)</i>
+        </>
+      ),
       content: (
         <>
           <p className="text-md">
-            Se utilizan solos o después de un bloque de contenido. Se puede usar cualquier tipo de enlace (predeterminado, de acceso, externo o de descarga), para brindar mayor contexto sobre la acción a la que hace referencia, o para redirigir a otro punto por dentro o fuera del sitio web.
+            Se utilizan solos o después de un bloque de contenido. Se puede usar cualquier tipo de enlace
+            (predeterminado, de acceso, externo o de descarga), para brindar mayor contexto sobre la acción a la que
+            hace referencia, o para redirigir a otro punto por dentro o fuera del sitio web.
           </p>
           <Image
             src={`${basePath}/images/enlace/enlace_disposicion.svg`}
@@ -277,26 +278,37 @@ const LinkDocs: React.FC = () => {
             height="200"
             className="img-fluid"
           />
-
         </>
       ),
     },
     {
-      subtitle: <>
-        Enlaces de anclaje <br /> <i>(Anchor links)</i>
-      </>,
+      subtitle: (
+        <>
+          Enlaces de anclaje <br /> <i>(Anchor links)</i>
+        </>
+      ),
       content: (
         <>
-          <p className="text-md">Los enlaces predeterminados se pueden utilizar como anclas al contenido en el cuerpo de una página. Esta disposición solo es útil si el contenido de la página es extenso ya que facilita el scroll directo a las secciones de información.</p>
-          <p className="text-md">Al trabajar con anclas, es recomendable que los enlaces aparezcan al comienzo del cuerpo del contenido. Deben estar jerarquizados y organizados dentro de una lista de enlaces, bajo un título claro, como &quot;Contenido en esta página&quot;, para que las personas usuarias identifiquen su función.</p>
+          <p className="text-md">
+            Los enlaces predeterminados se pueden utilizar como anclas al contenido en el cuerpo de una página. Esta
+            disposición solo es útil si el contenido de la página es extenso ya que facilita el scroll directo a las
+            secciones de información.
+          </p>
+          <p className="text-md">
+            Al trabajar con anclas, es recomendable que los enlaces aparezcan al comienzo del cuerpo del contenido.
+            Deben estar jerarquizados y organizados dentro de una lista de enlaces, bajo un título claro, como
+            &quot;Contenido en esta página&quot;, para que las personas usuarias identifiquen su función.
+          </p>
         </>
-      )
+      ),
     },
     // ScrollSpy revisar
     {
-      subtitle: <>
-        Enlaces en bloques de texto <br /> <i>(Inline links)</i>
-      </>,
+      subtitle: (
+        <>
+          Enlaces en bloques de texto <br /> <i>(Inline links)</i>
+        </>
+      ),
       content: (
         <>
           <p className="text-md">
@@ -312,19 +324,32 @@ const LinkDocs: React.FC = () => {
           />
 
           <p className="text-md fw-semibold mt-4">
-            <span className="material-symbols-rounded o-icon_link" aria-hidden="true">info</span>
+            <span className="material-symbols-rounded o-icon-link" aria-hidden="true">
+              info
+            </span>
             Uso del componente en Figma
           </p>
 
           <p className="text-md">
-            Para los diseñadores en Figma, no existe un componente correspondiente al Enlace dentro de un bloque de texto, pero es posible replicar el estilo del componente siguiendo los siguientes pasos:
+            Para los diseñadores en Figma, no existe un componente correspondiente al Enlace dentro de un bloque de
+            texto, pero es posible replicar el estilo del componente siguiendo los siguientes pasos:
           </p>
 
           <ol className="list-informative-ordered">
             <li>Seleccioná el concepto, palabra o frase que quieras que sea un enlace en un bloque de texto.</li>
-            <li>Aplicá el color <strong><i>text-link</i></strong> que se encuentra en las <a href="https://gcba.github.io/Obelisco-V2/components/colors#section-pallette-3">variables de color</a>.</li>
+            <li>
+              Aplicá el color{' '}
+              <strong>
+                <i>text-link</i>
+              </strong>{' '}
+              que se encuentra en las{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/components/colors#section-pallette-3">variables de color</a>.
+            </li>
             <li>Cambiá el estilo del texto por la variante correspondiente a &quot;Enlace&quot;.</li>
-            <li>Si necesitas reforzar la acción del enlace con un ícono, especificá en la entrega al equipo de desarrollo y maquetación si se trata de un enlace externo, de acceso o de descarga.</li>
+            <li>
+              Si necesitas reforzar la acción del enlace con un ícono, especificá en la entrega al equipo de desarrollo
+              y maquetación si se trata de un enlace externo, de acceso o de descarga.
+            </li>
           </ol>
 
           <p className="text-xl mt-4">Ejemplos de uso</p>
@@ -342,7 +367,10 @@ const LinkDocs: React.FC = () => {
                 />
                 <div className="d-flex pt-3">
                   <span className="material-symbols-rounded text-danger">close</span>
-                  <p className="mb-0">El texto del enlace es demasiado largo y aumenta la carga cognitiva de las personas usuarias, dificultando el escaneo de los contenidos clave de la página. </p>
+                  <p className="mb-0">
+                    El texto del enlace es demasiado largo y aumenta la carga cognitiva de las personas usuarias,
+                    dificultando el escaneo de los contenidos clave de la página.{' '}
+                  </p>
                 </div>
               </div>
               {/* 2 */}
@@ -356,12 +384,14 @@ const LinkDocs: React.FC = () => {
                 />
                 <div className="d-flex pt-3">
                   <span className="material-symbols-rounded text-success">check</span>
-                  <p className="mb-0">Enlazar sobre una parte representativa del texto, que sea suficiente para entender la acción o redirección a la que hace referencia.</p>
+                  <p className="mb-0">
+                    Enlazar sobre una parte representativa del texto, que sea suficiente para entender la acción o
+                    redirección a la que hace referencia.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-
         </>
       ),
     },
@@ -370,15 +400,35 @@ const LinkDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md">
-            El texto de los enlaces debe estar cuidadosamente pensado, para guiar a las personas usuarias de manera clara y eficiente hacia el contenido o la acción que buscan. Se recomienda que los enlaces sean:
+            El texto de los enlaces debe estar cuidadosamente pensado, para guiar a las personas usuarias de manera
+            clara y eficiente hacia el contenido o la acción que buscan. Se recomienda que los enlaces sean:
           </p>
 
           <ul>
-            <li><strong>Específicos</strong>: describen con precisión lo que se encontrará al clickearlos, evitando textos ambiguos y genéricos.</li>
-            <li><strong>Sustanciales</strong>: las personas usuarias escanean los contenido de texto, y focalizan su atención en los elementos que destacan por tener un estilo diferente. En la mayoría de casos, se leen solo los enlaces y no el texto circundante, por lo que el texto del enlace debe entenderse de forma independiente y aislada, aún cuando haya información alrededor que sirva de contexto.</li>
-            <li><strong>Sinceros</strong>: el texto de los enlaces informa claramente sobre lo que sucederá al hacer click, y cumple lo más rápido posible con la acción para no perder la confianza de la persona usuaria.</li>
-            <li><strong>Concisos</strong>: redactar el texto de los enlaces de forma clara y concisa, priorizando que las primeras palabras transmitan el propósito del enlace rápida y claramente.</li>
-            <li><strong>Distinguibles</strong>: un cuerpo de texto puede tener varios enlaces en una misma oración, siempre que sean relevantes y sumen al contexto. Sobrecargar un párrafo u oración con diferentes enlaces, sin un objetivo claro o con fines comerciales, aumenta la carga cognitiva y empeora la experiencia de la persona usuaria.</li>
+            <li>
+              <strong>Específicos</strong>: describen con precisión lo que se encontrará al clickearlos, evitando textos
+              ambiguos y genéricos.
+            </li>
+            <li>
+              <strong>Sustanciales</strong>: las personas usuarias escanean los contenido de texto, y focalizan su
+              atención en los elementos que destacan por tener un estilo diferente. En la mayoría de casos, se leen solo
+              los enlaces y no el texto circundante, por lo que el texto del enlace debe entenderse de forma
+              independiente y aislada, aún cuando haya información alrededor que sirva de contexto.
+            </li>
+            <li>
+              <strong>Sinceros</strong>: el texto de los enlaces informa claramente sobre lo que sucederá al hacer
+              click, y cumple lo más rápido posible con la acción para no perder la confianza de la persona usuaria.
+            </li>
+            <li>
+              <strong>Concisos</strong>: redactar el texto de los enlaces de forma clara y concisa, priorizando que las
+              primeras palabras transmitan el propósito del enlace rápida y claramente.
+            </li>
+            <li>
+              <strong>Distinguibles</strong>: un cuerpo de texto puede tener varios enlaces en una misma oración,
+              siempre que sean relevantes y sumen al contexto. Sobrecargar un párrafo u oración con diferentes enlaces,
+              sin un objetivo claro o con fines comerciales, aumenta la carga cognitiva y empeora la experiencia de la
+              persona usuaria.
+            </li>
           </ul>
 
           <p className="text-xl mt-4">Ejemplos de uso</p>
@@ -396,7 +446,10 @@ const LinkDocs: React.FC = () => {
                 />
                 <div className="d-flex pt-3">
                   <span className="material-symbols-rounded text-danger">close</span>
-                  <p className="mb-0">El texto del enlace es demasiado largo y aumenta la carga cognitiva de las personas usuarias, dificultando el escaneo de los contenidos clave de la página. </p>
+                  <p className="mb-0">
+                    El texto del enlace es demasiado largo y aumenta la carga cognitiva de las personas usuarias,
+                    dificultando el escaneo de los contenidos clave de la página.{' '}
+                  </p>
                 </div>
               </div>
               {/* 2 */}
@@ -410,7 +463,10 @@ const LinkDocs: React.FC = () => {
                 />
                 <div className="d-flex pt-3">
                   <span className="material-symbols-rounded text-success">check</span>
-                  <p className="mb-0">Enlazar sobre una parte representativa del texto, que sea suficiente para entender la acción o redirección a la que hace referencia.</p>
+                  <p className="mb-0">
+                    Enlazar sobre una parte representativa del texto, que sea suficiente para entender la acción o
+                    redirección a la que hace referencia.
+                  </p>
                 </div>
               </div>
               {/* 3 */}
@@ -424,7 +480,10 @@ const LinkDocs: React.FC = () => {
                 />
                 <div className="d-flex pt-3">
                   <span className="material-symbols-rounded text-danger">close</span>
-                  <p className="mb-0">Los enlaces agregan carga cognitiva y afectan la lectura. No utilizar demasiados enlaces dentro de un párrafo.</p>
+                  <p className="mb-0">
+                    Los enlaces agregan carga cognitiva y afectan la lectura. No utilizar demasiados enlaces dentro de
+                    un párrafo.
+                  </p>
                 </div>
               </div>
               {/* 4 */}
@@ -438,18 +497,23 @@ const LinkDocs: React.FC = () => {
                 />
                 <div className="d-flex pt-3">
                   <span className="material-symbols-rounded text-success">check</span>
-                  <p className="mb-0">Optimizar el uso de enlaces según lo que aportan al contexto. Antes de dividir y redirigir a la persona usuaria desde diferentes puntos, enlazar la información afín.</p>
+                  <p className="mb-0">
+                    Optimizar el uso de enlaces según lo que aportan al contexto. Antes de dividir y redirigir a la
+                    persona usuaria desde diferentes puntos, enlazar la información afín.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
 
-          <p className="text-xl">
-            Sobre los textos de enlaces genéricos
-          </p>
+          <p className="text-xl">Sobre los textos de enlaces genéricos</p>
 
           <p className="text-md">
-            A la hora de redactar el texto de un enlace, se desaconsejan frases genéricas como &quot;Ver más&quot;, &quot;Aprender más&quot; o &quot;Más información&quot;, salvo que el texto que precede al enlace clarifique el contexto. Las personas usuarias que utilizan medios alternativos para recorrer el sitio, como lectores de pantalla, no pueden volver rápidamente al texto del párrafo anterior para comprender a qué se refería el enlace.
+            A la hora de redactar el texto de un enlace, se desaconsejan frases genéricas como &quot;Ver más&quot;,
+            &quot;Aprender más&quot; o &quot;Más información&quot;, salvo que el texto que precede al enlace clarifique
+            el contexto. Las personas usuarias que utilizan medios alternativos para recorrer el sitio, como lectores de
+            pantalla, no pueden volver rápidamente al texto del párrafo anterior para comprender a qué se refería el
+            enlace.
           </p>
 
           <p className="text-xl mt-4">Ejemplos de uso</p>
@@ -467,7 +531,10 @@ const LinkDocs: React.FC = () => {
                 />
                 <div className="d-flex pt-3">
                   <span className="material-symbols-rounded text-danger">close</span>
-                  <p className="mb-0">El texto del enlace no describe a dónde se dirigirá la persona usuaria, ni qué se espera encontrar al ingresar, generando desconfianza. </p>
+                  <p className="mb-0">
+                    El texto del enlace no describe a dónde se dirigirá la persona usuaria, ni qué se espera encontrar
+                    al ingresar, generando desconfianza.{' '}
+                  </p>
                 </div>
               </div>
               {/* 2 */}
@@ -481,13 +548,14 @@ const LinkDocs: React.FC = () => {
                 />
                 <div className="d-flex pt-3">
                   <span className="material-symbols-rounded text-success">check</span>
-                  <p className="mb-0">Se recomienda tratarlos como llamados a la acción con frases verbales concisas para aumentar la compresión de la persona usuaria.</p>
+                  <p className="mb-0">
+                    Se recomienda tratarlos como llamados a la acción con frases verbales concisas para aumentar la
+                    compresión de la persona usuaria.
+                  </p>
                 </div>
               </div>
-
             </div>
           </div>
-
         </>
       ),
     },
@@ -574,7 +642,9 @@ const LinkDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md mb-4">
-            Este es el estado que adopta el enlace cuando un cursor pasa sobre él, cambiando su apariencia para indicar su interactividad a la persona usuaria. Para asegurar una experiencia accesible, los enlaces cambian el grosor de trazo, sin cambiar el color.
+            Este es el estado que adopta el enlace cuando un cursor pasa sobre él, cambiando su apariencia para indicar
+            su interactividad a la persona usuaria. Para asegurar una experiencia accesible, los enlaces cambian el
+            grosor de trazo, sin cambiar el color.
           </p>
           <Image
             src={`${basePath}/images/enlace/enlace_estado_sobre.svg`}
@@ -595,7 +665,9 @@ const LinkDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md mb-4">
-            Es un principio de accesibilidad que asegura que cualquier elemento interactivo en una interfaz sea claramente visible cuando recibe la atención del usuario, especialmente al ser navegado con el teclado. En Obelisco se utiliza un borde o anillo (focus ring) por fuera del componente en un color distintivo.
+            Es un principio de accesibilidad que asegura que cualquier elemento interactivo en una interfaz sea
+            claramente visible cuando recibe la atención del usuario, especialmente al ser navegado con el teclado. En
+            Obelisco se utiliza un borde o anillo (focus ring) por fuera del componente en un color distintivo.
           </p>
           <Image
             src={`${basePath}/images/enlace/enlace_estado_en_foco.svg`}
@@ -616,7 +688,8 @@ const LinkDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md mb-4">
-            Este es el estado que adopta el enlace cuando la persona usuaria ya hizo click en él anteriormente. Esto permite a la persona usuaria identificar qué enlaces ya navegó o visitó en interacciones previas.
+            Este es el estado que adopta el enlace cuando la persona usuaria ya hizo click en él anteriormente. Esto
+            permite a la persona usuaria identificar qué enlaces ya navegó o visitó en interacciones previas.
           </p>
           <Image
             src={`${basePath}/images/enlace/enlace_estado_visitado.svg`}
@@ -633,7 +706,8 @@ const LinkDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md">
-            Al utilizarse con ícono (enlace de acceso, externo y/o de descarga), los enlaces tienen un espacio entre el texto y el ícono, para evitar que el ícono colapse con el texto y mantenga relación al mismo tiempo.
+            Al utilizarse con ícono (enlace de acceso, externo y/o de descarga), los enlaces tienen un espacio entre el
+            texto y el ícono, para evitar que el ícono colapse con el texto y mantenga relación al mismo tiempo.
           </p>
           <Image
             src={`${basePath}/images/enlace/enlace_espaciado.svg`}
@@ -653,7 +727,8 @@ const LinkDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md">
-            El componente de enlace está construido para ser reconocido por herramientas de asistencia como la navegación por teclado o lectores por voz.
+            El componente de enlace está construido para ser reconocido por herramientas de asistencia como la
+            navegación por teclado o lectores por voz.
           </p>
           <span className="badge badge-default ms-1">TAB</span>
           <span className="badge badge-default">ENTER</span>
@@ -700,7 +775,8 @@ const LinkDocs: React.FC = () => {
             Success Criterion 1.4.11 Non-Text Contrast (Level AA)
           </a>
           <p>
-            La presentación visual de elementos de la interfaz de usuario y objetos gráficos tiene por lo menos una relación de contraste de 3:1 con respecto a los colores adyacentes.
+            La presentación visual de elementos de la interfaz de usuario y objetos gráficos tiene por lo menos una
+            relación de contraste de 3:1 con respecto a los colores adyacentes.
           </p>
 
           <a
@@ -712,7 +788,10 @@ const LinkDocs: React.FC = () => {
             Success Criterion 1.4.3 Contrast (Minimum) (Level AA)
           </a>
           <p>
-            La presentación visual de texto y de imágenes de texto tiene una relación de contraste de por lo menos 4.5:1, excepto textos grandes e imágenes de texto grande que tienen un contraste de por lo menos 3:1, textos o imágenes que son parte de un componente inactivo de interfaz de usuario o son pura decoración, o logotipos.
+            La presentación visual de texto y de imágenes de texto tiene una relación de contraste de por lo menos
+            4.5:1, excepto textos grandes e imágenes de texto grande que tienen un contraste de por lo menos 3:1, textos
+            o imágenes que son parte de un componente inactivo de interfaz de usuario o son pura decoración, o
+            logotipos.
           </p>
 
           <a
@@ -723,9 +802,7 @@ const LinkDocs: React.FC = () => {
           >
             Success Criterion 2.1.1 Keyboard (Level A)
           </a>
-          <p>
-            Todas las funcionalidades del contenido se puede operar a través de una interfaz de teclado.
-          </p>
+          <p>Todas las funcionalidades del contenido se puede operar a través de una interfaz de teclado.</p>
 
           <a
             className="external"
@@ -736,7 +813,9 @@ const LinkDocs: React.FC = () => {
             Success Criterion 2.4.4 Link Purpose (In Context) (Level A)
           </a>
           <p>
-            El propósito de cada enlace debe ser determinado solo con el texto del enlace o con el texto del enlace junto con su contexto determinado de forma programática, excepto en los casos en los que el propósito del enlace sea ambiguo para los usuarios en general.
+            El propósito de cada enlace debe ser determinado solo con el texto del enlace o con el texto del enlace
+            junto con su contexto determinado de forma programática, excepto en los casos en los que el propósito del
+            enlace sea ambiguo para los usuarios en general.
           </p>
 
           <a
@@ -748,7 +827,8 @@ const LinkDocs: React.FC = () => {
             Success Criterion 2.4.7 Focus Visible (Level AA)
           </a>
           <p>
-            Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque del teclado es visible.
+            Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque
+            del teclado es visible.
           </p>
 
           <a
@@ -760,10 +840,12 @@ const LinkDocs: React.FC = () => {
             Success Criterion 3.2.4 Consistent Identification (Level AA)
           </a>
           <p>
-            Los componentes que tienen la misma funcionalidad dentro de un conjunto de páginas web se identifican de manera consistente. Los enlaces que dirigen a un mismo lugar deben tener la misma identificación para no generar confusiones. Un ejemplo de inconsistencia podría ser un enlace que diga &quot;Ingresá al Portal de Pagos&quot;, y otro que lleve al mismo sitio pero diga &quot;Ingresá a la Plataforma de Pagos de la Ciudad&quot;.
+            Los componentes que tienen la misma funcionalidad dentro de un conjunto de páginas web se identifican de
+            manera consistente. Los enlaces que dirigen a un mismo lugar deben tener la misma identificación para no
+            generar confusiones. Un ejemplo de inconsistencia podría ser un enlace que diga &quot;Ingresá al Portal de
+            Pagos&quot;, y otro que lleve al mismo sitio pero diga &quot;Ingresá a la Plataforma de Pagos de la
+            Ciudad&quot;.
           </p>
-
-
         </>
       ),
     },

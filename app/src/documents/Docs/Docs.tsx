@@ -103,9 +103,11 @@ const Docs: React.FC = () => {
     <>
       <ComponentHeader
         title="Documentación"
-        description={[
-          'Obelisco v2 mejora y actualiza los componentes y estilos ofrecidos en la versión anterior para diseñar interfaces consistentes, intuitivas y confiables en todos los productos digitales.',
-        ]}
+        description={
+          <>
+            Obelisco v2 mejora y actualiza los componentes y estilos ofrecidos en la versión anterior para diseñar <strong>interfaces consistentes, intuitivas y confiables</strong> en todos los productos digitales.
+          </>
+        }
         divider={true}
       />
       <DocumentationTemplate sections={sections} type="docs" />

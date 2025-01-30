@@ -105,7 +105,8 @@ const Docs: React.FC = () => {
         title="Documentación"
         description={
           <>
-            Obelisco v2 mejora y actualiza los componentes y estilos ofrecidos en la versión anterior para diseñar <strong>interfaces consistentes, intuitivas y confiables</strong> en todos los productos digitales.
+            Obelisco v2 mejora y actualiza los componentes y estilos ofrecidos en la versión anterior para diseñar{' '}
+            <strong>interfaces consistentes, intuitivas y confiables</strong> en todos los productos digitales.
           </>
         }
         divider={true}

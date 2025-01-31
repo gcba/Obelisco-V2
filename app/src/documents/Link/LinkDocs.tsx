@@ -29,7 +29,7 @@ const LinkDocs: React.FC = () => {
               </p>
               <div className="bg-dark p-2">
                 <p>
-                  <LinkClient className="link-white">enlace en párrafo</LinkClient>{' '}
+                  <LinkClient className="link-white">enlace en párrafo</LinkClient>
                 </p>
                 <p className="mb-0">
                   <small>
@@ -125,7 +125,7 @@ const LinkDocs: React.FC = () => {
         <>
           <div className="list-informative pb-3">
             <p className="text-xl">Cuándo usar</p>
-            <ul className="bullet-list-informative">
+            <ul className="list-informative-bullet">
               <li>Para navegar a un nuevo destino, ya sea interno o externo.</li>
               <li>Para saltar o desplazarse a un nuevo lugar en la página (anclas).</li>
               <li>Enlaces a correos electrónicos o números telefónicos (pueden iniciar una aplicación).</li>
@@ -133,9 +133,9 @@ const LinkDocs: React.FC = () => {
           </div>
           <div className="list-informative pb-3">
             <p className="text-xl">Cuándo no usar</p>
-            <ul className="bullet-list-informative">
+            <ul className="list-informative">
               <li>
-                Para realizar una acción, como enviar un formulario, guardar o editar, utilizar el componente{' '}
+                Para realizar una acción, como enviar un formulario, guardar o editar, utilizar el componente
                 <a href="https://gcba.github.io/Obelisco-V2/components/button">Botón</a>.
               </li>
             </ul>
@@ -319,8 +319,8 @@ const LinkDocs: React.FC = () => {
             className="img-fluid"
           />
 
-          <p className="text-md fw-semibold mt-4">
-            <span className="material-symbols-rounded o-icon-link" aria-hidden="true">
+          <p className="d-flex text-md fw-semibold mt-4">
+            <span className="pe-1 material-symbols-rounded" aria-hidden="true">
               info
             </span>
             Uso del componente en Figma
@@ -331,18 +331,20 @@ const LinkDocs: React.FC = () => {
             texto, pero es posible replicar el estilo del componente siguiendo los siguientes pasos:
           </p>
 
-          <ol className="list-informative-ordered">
-            <li>Seleccioná el concepto, palabra o frase que quieras que sea un enlace en un bloque de texto.</li>
-            <li>
-              Aplicá el color{' '}
+          <ol>
+            <li className="mb-2">
+              Seleccioná el concepto, palabra o frase que quieras que sea un enlace en un bloque de texto.
+            </li>
+            <li className="mb-2">
+              Aplicá el color
               <strong>
                 <i>text-link</i>
-              </strong>{' '}
-              que se encuentra en las{' '}
+              </strong>
+              que se encuentra en las
               <a href="https://gcba.github.io/Obelisco-V2/components/colors#section-pallette-3">variables de color</a>.
             </li>
-            <li>Cambiá el estilo del texto por la variante correspondiente a &quot;Enlace&quot;.</li>
-            <li>
+            <li className="mb-2">Cambiá el estilo del texto por la variante correspondiente a &quot;Enlace&quot;.</li>
+            <li className="mb-2">
               Si necesitas reforzar la acción del enlace con un ícono, especificá en la entrega al equipo de desarrollo
               y maquetación si se trata de un enlace externo, de acceso o de descarga.
             </li>
@@ -365,7 +367,7 @@ const LinkDocs: React.FC = () => {
                   <span className="material-symbols-rounded text-danger">close</span>
                   <p className="mb-0">
                     El texto del enlace es demasiado largo y aumenta la carga cognitiva de las personas usuarias,
-                    dificultando el escaneo de los contenidos clave de la página.{' '}
+                    dificultando el escaneo de los contenidos clave de la página.
                   </p>
                 </div>
               </div>
@@ -444,7 +446,7 @@ const LinkDocs: React.FC = () => {
                   <span className="material-symbols-rounded text-danger">close</span>
                   <p className="mb-0">
                     El texto del enlace es demasiado largo y aumenta la carga cognitiva de las personas usuarias,
-                    dificultando el escaneo de los contenidos clave de la página.{' '}
+                    dificultando el escaneo de los contenidos clave de la página.
                   </p>
                 </div>
               </div>
@@ -529,7 +531,7 @@ const LinkDocs: React.FC = () => {
                   <span className="material-symbols-rounded text-danger">close</span>
                   <p className="mb-0">
                     El texto del enlace no describe a dónde se dirigirá la persona usuaria, ni qué se espera encontrar
-                    al ingresar, generando desconfianza.{' '}
+                    al ingresar, generando desconfianza.
                   </p>
                 </div>
               </div>
@@ -749,7 +751,7 @@ const LinkDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md">
-            En caso de utilizar un botón solo con ícono y sin etiqueta, se debe colocar una etiqueta semántica{' '}
+            En caso de utilizar un botón solo con ícono y sin etiqueta, se debe colocar una etiqueta semántica
             <i>(aria-label)</i> en el código con el texto descriptivo de la acción.
           </p>
           <SyntaxHighlighter language="html" style={dracula} wrapLongLines>

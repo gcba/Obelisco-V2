@@ -16,42 +16,6 @@ $list-icon-check: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg
   margin-bottom: $list-informative-subtitule-margin-bottom;
 }
 
-ol {
-  margin: 0;
-  padding: 0;
-  list-style: decimal !important;
-  list-style-type: decimal !important;
-}
-
-ol.list-informative-ordered {
-  margin: 0;
-  list-style: decimal !important;
-  list-style-type: decimal !important;
-  padding: 0;
-
-  li {
-    line-height: $md-body-lh;
-    position: relative;
-    padding-left: $list-informative-decimal-li-padding-left;
-    font-size: 1rem;
-
-    &::before {
-      content: counter(item) '.';
-      counter-increment: item;
-      font-size: 1rem !important;
-      display: inline-block;
-      min-width: $list-informative-li-icon-size;
-      position: absolute;
-      left: 0;
-    }
-
-    &:not(:last-child) {
-      margin-bottom: $list-informative-li-margin-bottom;
-    }
-  }
-  counter-reset: item;
-}
-
 .list-informative-bullet {
   margin: 0;
   list-style-type: none;

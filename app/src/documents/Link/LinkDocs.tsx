@@ -133,9 +133,9 @@ const LinkDocs: React.FC = () => {
           </div>
           <div className="list-informative pb-3">
             <p className="text-xl">Cuándo no usar</p>
-            <ul className="list-informative">
+            <ul className="list-informative-bullet">
               <li>
-                Para realizar una acción, como enviar un formulario, guardar o editar, utilizar el componente
+                Para realizar una acción, como enviar un formulario, guardar o editar, utilizar el componente &nbsp;
                 <a href="https://gcba.github.io/Obelisco-V2/components/button">Botón</a>.
               </li>
             </ul>
@@ -337,10 +337,10 @@ const LinkDocs: React.FC = () => {
             </li>
             <li className="mb-2">
               Aplicá el color
-              <strong>
+              &nbsp; <strong>
                 <i>text-link</i>
-              </strong>
-              que se encuentra en las
+              </strong>&nbsp; 
+              que se encuentra en las&nbsp; 
               <a href="https://gcba.github.io/Obelisco-V2/components/colors#section-pallette-3">variables de color</a>.
             </li>
             <li className="mb-2">Cambiá el estilo del texto por la variante correspondiente a &quot;Enlace&quot;.</li>
@@ -402,7 +402,7 @@ const LinkDocs: React.FC = () => {
             clara y eficiente hacia el contenido o la acción que buscan. Se recomienda que los enlaces sean:
           </p>
 
-          <ul>
+          <ul className='list-informative-bullet'>
             <li>
               <strong>Específicos</strong>: describen con precisión lo que se encontrará al clickearlos, evitando textos
               ambiguos y genéricos.

@@ -2551,18 +2551,6 @@ const HeaderDocs: React.FC = () => {
         title="Encabezado (header)"
         description={[
           'El header es una sección ubicada en la parte superior de la página que contiene elementos y componentes relacionados a la navegación. Su función es permitir que la persona usuaria pueda navegar y acceder intuitivamente a las diferentes secciones de un sitio.',
-          <>
-            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del
-            componente podés{' '}
-            <a
-              href="https://gcba.github.io/estandares/componentes/encabezado/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              visitar la documentación en Obelisco v.1
-            </a>
-            .
-          </>,
         ]}
       />
       {/* <Tabs

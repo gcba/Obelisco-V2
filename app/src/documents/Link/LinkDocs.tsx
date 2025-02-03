@@ -135,7 +135,7 @@ const LinkDocs: React.FC = () => {
             <p className="text-xl">Cuándo no usar</p>
             <ul className="list-informative-bullet">
               <li>
-                Para realizar una acción, como enviar un formulario, guardar o editar, utilizar el componente &nbsp;
+                Para realizar una acción, como enviar un formulario, guardar o editar, utilizar el componente {' '}
                 <a href="https://gcba.github.io/Obelisco-V2/components/button">Botón</a>.
               </li>
             </ul>
@@ -337,10 +337,10 @@ const LinkDocs: React.FC = () => {
             </li>
             <li className="mb-2">
               Aplicá el color
-              &nbsp; <strong>
+              {' '} <strong>
                 <i>text-link</i>
-              </strong>&nbsp; 
-              que se encuentra en las&nbsp; 
+              </strong> {' '}
+              que se encuentra en las {' '} 
               <a href="https://gcba.github.io/Obelisco-V2/components/colors#section-pallette-3">variables de color</a>.
             </li>
             <li className="mb-2">Cambiá el estilo del texto por la variante correspondiente a &quot;Enlace&quot;.</li>

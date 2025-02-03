@@ -10,7 +10,8 @@ const ScrollspySubtitle = ({
 }) => {
   return (
     <div
-      className={`d-flex align-items-center ${ScrollspyComponent ? 'ps-3' : ''}`.trim()}
+      // className={`d-flex align-items-center ${ScrollspyComponent ? 'ps-3' : ''}`.trim()}
+      className={`align-items-center ${ScrollspyComponent ? 'ps-3' : ''}`.trim()}
       style={{ gap: ScrollspyComponent ? '0.125rem' : '.25rem' }}
     >
       {text}

@@ -3,6 +3,7 @@ $list-informative-subtitule-margin-bottom: 2rem;
 $list-informative-li-padding-left: 2rem;
 $list-informative-li-icon-size: 24px;
 $list-informative-li-margin-bottom: 1rem;
+$list-informative-decimal-li-padding-left: 1.5rem;
 
 $list-icon-bullet: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none"><g clip-path="url(%23clip0_2364_23748)"><path d="M12.5 16.333C14.7091 16.333 16.5 14.5421 16.5 12.333C16.5 10.1239 14.7091 8.33301 12.5 8.33301C10.2909 8.33301 8.5 10.1239 8.5 12.333C8.5 14.5421 10.2909 16.333 12.5 16.333Z" fill="%23101E37"/></g><defs><clipPath id="clip0_2364_23748"><rect width="24" height="24" fill="white" transform="translate(0.5 0.333008)"/></clipPath></defs></svg>');
 
@@ -43,7 +44,7 @@ $list-icon-check: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg
 }
 
 .list-informative-check {
-  @extend .list-informative-bullet;
+  @extend .list-informative-bullet !optional;
 
   li::before {
     background: transparent $list-icon-check no-repeat center center;

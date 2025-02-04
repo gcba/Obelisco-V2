@@ -363,3 +363,15 @@ export const FOOTER_INDICATOR = `<h2 class="sr-only">Navegación de pie de pági
     </section>
   </div>
 </footer>`;
+
+export const FOOTER_ACCESSIBILTY = `<h2 class="sr-only">Navegación de pie de página</h2>
+<footer class="main-footer">  
+          ...  
+  <hr class="divider" />  
+  <div class="container">    
+    <section class="footer-legal-section">      
+      <h3 class="sr-only">Información gubernamental</h3>     
+           ...
+    </section>
+  </div>
+</footer>`;

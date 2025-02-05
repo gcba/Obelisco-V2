@@ -815,10 +815,10 @@ const CardDocs: React.FC = () => {
       title: 'Anatomía',
       content: (
         <>
-          <p className="text-md">El botón se compone de 4 elementos.</p>
+          <p className="text-md">Las tarjetas tienen una composición diferente dependiendo de la variante.</p>
           <Image
-            src={`${basePath}/images/tarjetas/boton_anatomia.svg`}
-            alt="Anatomia del botón"
+            src={`${basePath}/images/tarjetas/tarjetas_anatomia.svg`}
+            alt="Anatomia de las tarjetas"
             width="800"
             height="280"
             className="img-fluid"
@@ -838,24 +838,36 @@ const CardDocs: React.FC = () => {
               </thead>
               <tbody>
                 <tr>
-                  <td>Contenedor</td>
-                  <td>Obligatorio. Puede ser relleno o con borde.</td>
+                  <td>1. Imagen</td>
+                  <td>Opcional, puede contener una imagen, un ícono o ninguna.</td>
                 </tr>
                 <tr>
-                  <td>
-                    Ícono inicial <i>(leading icon)</i>
-                  </td>
-                  <td>Opcional, siempre y cuando haya una etiqueta.</td>
+                  <td>2. Etiquetas</td>
+                  <td>Opcional, solo está disponible en tarjetas de noticias.</td>
                 </tr>
                 <tr>
-                  <td>
-                    Ícono final <i>(trailing icon)</i>
-                  </td>
-                  <td>Opcional, siempre y cuando haya una etiqueta.</td>
+                  <td>3. Sobrelínea</td>
+                  <td>Opcional, solo está disponible en tarjetas de eventos.</td>
                 </tr>
                 <tr>
-                  <td>Etiqueta</td>
-                  <td>Opcional, siempre y cuando haya un ícono.</td>
+                  <td>4. Título</td>
+                  <td>Obligatorio, todas las tarjetas deben tener título.</td>
+                </tr>
+                <tr>
+                  <td>5. Descripción</td>
+                  <td>Obligatorio, todas las tarjetas deben tener descripción.</td>
+                </tr>
+                <tr>
+                  <td>6. Fecha de publicación</td>
+                  <td>Opcional, solo está disponible en tarjetas de noticias.</td>
+                </tr>
+                <tr>
+                  <td>7. Fecha en el calendario</td>
+                  <td>Opcional, solo está disponible en tarjetas de eventos.</td>
+                </tr>
+                <tr>
+                  <td>8. Horario</td>
+                  <td>Opcional, solo está disponible en tarjetas de eventos.</td>
                 </tr>
               </tbody>
             </table>
@@ -864,117 +876,123 @@ const CardDocs: React.FC = () => {
       ),
     },
     {
+      title: 'Variantes',
+    },
+    {
+      subtitle: 'Con imágenes',
+      content: (
+        <>
+          <p className="text-md mb-4">La imagen de la tarjeta vertical debe tener una proporción 16:9, con un tamaño recomendado de 340x190 px. La imagen de la tarjeta horizontal debe tener una proporción 1:1, con un tamaño recomendado de 64x64 px.</p>
+          <Image
+            src={`${basePath}/images/tarjetas/variante_img.svg`}
+            alt="Variante de tarjeta con imagen"
+            width="800"
+            height="464"
+            className="img-fluid"
+          />
+        </>
+      ),
+    },
+    {
+      subtitle: 'Con ícono en caja',
+      content: (
+        <>
+          <p className="text-md mb-4">
+            Los íconos en caja tienen un tamaño de 64x64 px. Deben mantener el color predeterminado y estar relacionados al contenido de la tarjeta.
+          </p>
+          <Image
+            src={`${basePath}/images/tarjetas/variante_icono_caja.svg`}
+            alt="Variante de tarjeta con ícono en caja"
+            width="800"
+            height="464"
+            className="img-fluid"
+          />
+        </>
+      ),
+    },
+    {
+      subtitle: 'Sin borde',
+      content: (
+        <>
+          <p className="text-md mb-4">
+            En este caso, la parte accionable de la tarjeta es el título. Si bien no cuenta con el contenedor que delimita el componente, al modular la tarjeta dentro de un grupo respeta el mismo espacio individual.
+          </p>
+          <Image
+            src={`${basePath}/images/tarjetas/variante_sin_borde.svg`}
+            alt="Variante de tarjeta sin borde"
+            width="800"
+            height="464"
+            className="img-fluid"
+          />
+        </>
+      ),
+    },
+    {
+      subtitle: 'Tarjeta horizontal sin media',
+      content: (
+        <>
+          <p className="text-md mb-4">
+            Entre los tipos de tarjetas, las únicas tarjetas que pueden prescindir del contenido media son las tarjetas horizontales.
+          </p>
+          <Image
+            src={`${basePath}/images/tarjetas/variante_sin_media.svg`}
+            alt="Variante de tarjeta sin media"
+            width="800"
+            height="464"
+            className="img-fluid"
+          />
+        </>
+      ),
+    },
+    {
       title: 'Estados',
-      content: <></>,
     },
     {
-      subtitle: (
-        <>
-          Predeterminado <i>(default)</i>
-        </>
-      ),
+      subtitle: (<>Predeterminada <i>(default)</i></>),
       content: (
         <>
-          <p className="text-md mb-4">Estado predeterminado de los botones en una interfaz.</p>
+          <p className="text-md">
+            Estado predeterminado de las tarjetas en una interfaz.
+          </p>
           <Image
-            src={`${basePath}/images/tarjetas/boton_estado_predeterminado.svg`}
-            alt="Estado predeterminado del boton"
+            src={`${basePath}/images/tarjetas/estados_predeterminado.svg`}
+            alt="Estado de tarjeta predeterminada"
             width="800"
-            height="464"
+            height="285"
             className="img-fluid"
           />
         </>
       ),
     },
     {
-      subtitle: (
-        <>
-          Sobre <i>(hover)</i>
-        </>
-      ),
+      subtitle: (<>Sobre <i>(hover)</i></>),
       content: (
         <>
-          <p className="text-md mb-4">
-            Estado que adopta el botón cuando un cursor pasa sobre él, cambiando su apariencia para indicar su
-            interactividad a la persona usuaria. En este caso tanto los botones rellenos como los de borde se ven
-            idénticos.{' '}
+          <p className="text-md">
+            Estado que adopta la tarjeta cuando un cursor pasa sobre el elemento, cambiando su apariencia para indicar su interactividad a la persona usuaria.
           </p>
           <Image
-            src={`${basePath}/images/tarjetas/boton_estado_sobre.svg`}
-            alt="Estado sobre del boton"
+            src={`${basePath}/images/tarjetas/estados_sobre.svg`}
+            alt="Estado de tarjeta sobre (hover)"
             width="800"
-            height="464"
+            height="285"
             className="img-fluid"
           />
         </>
       ),
     },
     {
-      subtitle: (
-        <>
-          En Foco <i>(focus)</i>
-        </>
-      ),
+      subtitle: (<>En foco <i>(focus)</i></>),
       content: (
         <>
-          <p className="text-md mb-4">
-            Es un principio de accesibilidad que asegura que cualquier elemento interactivo en una interfaz sea
-            claramente visible cuando recibe la atención del usuario, especialmente al ser navegado con el teclado. En
-            Obelisco se utiliza un borde o anillo <i>(focus ring)</i> por fuera del componente en un color distintivo.
-            En este caso tanto los botones rellenos como los de borde se ven idénticos.{' '}
+          <p className="text-md">
+            Es un principio de accesibilidad que asegura que cualquier elemento interactivo en una interfaz sea claramente visible cuando recibe la atención del usuario, especialmente al ser navegado con el teclado. En Obelisco se utiliza un borde o anillo (focus ring) por fuera del componente en un color distintivo.
           </p>
           <Image
-            src={`${basePath}/images/tarjetas/boton_estado_en_foco.svg`}
-            alt="Estado en foco del boton"
+            src={`${basePath}/images/tarjetas/estados_foco.svg`}
+            alt="Estado de tarjeta en foco (focus)"
             width="800"
-            height="464"
-            className="img-fluid"
-          />
-        </>
-      ),
-    },
-    {
-      subtitle: (
-        <>
-          Deshabilitado <i>(disabled)</i>
-        </>
-      ),
-      content: (
-        <>
-          <p className="text-md mb-4">
-            Estado que indica que el botón no está disponible para la interacción, lo que significa que no puede
-            activarse ni recibir foco. Es recomendable minimizar este tipo de botón porque presenta problemas de
-            accesibilidad.{' '}
-          </p>
-          <Image
-            src={`${basePath}/images/tarjetas/boton_estado_deshabilitado.svg`}
-            alt="Estado deshabilitado del boton"
-            width="800"
-            height="464"
-            className="img-fluid"
-          />
-        </>
-      ),
-    },
-    {
-      subtitle: (
-        <>
-          Cargando <i>(loading)</i>
-        </>
-      ),
-      content: (
-        <>
-          <p className="text-md mb-4">
-            Estado que indica que una acción está en progreso y aún no ha finalizado. Se representa visualmente con un{' '}
-            <a href="https://gcba.github.io/Obelisco-V2/components/spinner">Spinner</a>, deshabilitando temporalmente el
-            botón para evitar interacciones adicionales mientras se completa el proceso. Para reforzar el significado de
-            la acción se puede configurar la variante de spinner correspondiente con la de cada botón.{' '}
-          </p>
-          <Image
-            src={`${basePath}/images/tarjetas/boton_estado_cargando.svg`}
-            alt="Estado cargando del boton"
-            width="800"
-            height="464"
+            height="285"
             className="img-fluid"
           />
         </>
@@ -985,7 +1003,7 @@ const CardDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md">
-            El espacio recomendado entre botones para cada tamaño garantiza un espacio clickeable/tappeable óptimo.{' '}
+            El espaciado recomendado para las tarjetas en dispositivos <i>desktop</i> es de 32 px. en sentido horizontal, y 32 px. en sentido vertical.
           </p>
           <Image
             src={`${basePath}/images/tarjetas/boton_espaciado.svg`}
@@ -999,131 +1017,7 @@ const CardDocs: React.FC = () => {
     },
   ];
 
-  const ACCESSIBILITY = [
-    {
-      title: 'Navegación alternativa',
-      content: (
-        <>
-          <p className="text-md">
-            El componente de botón está construido para ser reconocido por herramientas de asistencia como la navegación
-            por teclado o lectores por voz.
-          </p>
-          <span className="badge badge-default ms-1">TAB</span>
-          <span className="badge badge-default">ENTER</span>
-          <p className="text-md">
-            Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Además, con
-            el <i>enter</i>, puede accionar los elementos sobre los que esté posicionada como botones, enlaces, entre
-            otros.
-          </p>
-
-          <Image
-            src={`${basePath}/images/tarjetas/boton_navegacion_alternativa.svg`}
-            alt="Navegacion alternativa del botón"
-            width="738"
-            height="400"
-            className="img-fluid"
-          />
-        </>
-      ),
-    },
-    {
-      title: 'Etiquetado descriptivo',
-      content: (
-        <>
-          <p className="text-md">
-            En caso de utilizar un botón solo con ícono y sin etiqueta, se debe colocar una etiqueta semántica{' '}
-            <i>(aria-label)</i> en el código con el texto descriptivo de la acción.
-          </p>
-          {/* <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
-            {tarjetas_ACCESSIBILTY}
-          </SyntaxHighlighter> */}
-        </>
-      ),
-    },
-    {
-      title: 'Criterios WCAG aplicados',
-      content: (
-        <>
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.1.1 Non-text Content (Level A)
-          </a>
-          <p>
-            Todo el contenido no textual que se presenta al usuario tiene una alternativa de texto que sirve para el
-            propósito equivalente. Esto es válido para botones que sólo tienen un ícono.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.3.1 Info and Relationships (Level A)
-          </a>
-          <p>
-            La información, la estructura y las relaciones transmitidas a través de la presentación pueden determinarse
-            mediante programación o están disponibles en el texto.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.4.3 Contrast (Minimum) (Level AA)
-          </a>
-          <p>
-            La presentación visual de texto y de imágenes de texto tiene una relación de contraste de por lo menos
-            4.5:1, excepto textos grandes e imágenes de texto grande que tienen un contraste de por lo menos 3:1, textos
-            o imágenes que son parte de un componente inactivo de interfaz de usuario o son pura decoración, o
-            logotipos.{' '}
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.4.11 Non-Text Contrast (Level AA)
-          </a>
-          <p>
-            La presentación visual de elementos de la interfaz de usuario y objetos gráficos tiene por lo menos una
-            relación de contraste de 3:1 con respecto a los colores adyacentes.{' '}
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.4.7 Focus Visible (Level AA)
-          </a>
-          <p>
-            Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque
-            del teclado es visible.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.5.8 Target Size (Minimum) (Level AA){' '}
-          </a>
-          <p>El tamaño del objetivo para entradas mediante puntero es de al menos 24 por 24 píxeles CSS.</p>
-        </>
-      ),
-    },
-  ];
+  
 
   return (
     <>
@@ -1150,11 +1044,11 @@ const CardDocs: React.FC = () => {
             id: 'section-specs',
             sectionContent: SPECS,
           },
-          {
-            title: 'Accesibilidad',
-            id: 'accessibility',
-            sectionContent: ACCESSIBILITY,
-          },
+          // {
+          //   title: 'Accesibilidad',
+          //   id: 'accessibility',
+          //   sectionContent: ACCESSIBILITY,
+          // },
         ]}
       />
     </>

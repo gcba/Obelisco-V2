@@ -298,7 +298,6 @@ const LinkDocs: React.FC = () => {
         </>
       ),
     },
-    // ScrollSpy revisar
     {
       subtitle: (
         <>

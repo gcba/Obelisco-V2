@@ -1,13 +1,15 @@
+import Image from 'next/image';
+import React from 'react';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
+
+const basePath = '/Obelisco-V2';
+
 import CodeBox from '@/components/CodeBox';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
-import Image from 'next/image';
 
 import { FOOTER, FOOTER_ACCESSIBILTY, FOOTER_INDICATOR, FOOTER_LEGALS } from './code-views';
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-
-const basePath = '/Obelisco-V2';
 
 const FooterDocs: React.FC = () => {
   const SECTIONS_DEV = [
@@ -367,7 +369,10 @@ const FooterDocs: React.FC = () => {
           <div className="list-informative pb-3">
             <p className="text-xl">Cuándo usar</p>
             <ul className="list-informative-bullet">
-              <li>Debe estar presente obligatoriamente en todas las páginas del producto digital, utilizando el tipo de pie de página (footer) correspondiente.</li>
+              <li>
+                Debe estar presente obligatoriamente en todas las páginas del producto digital, utilizando el tipo de
+                pie de página <i>(footer)</i> correspondiente.
+              </li>
             </ul>
           </div>
         </>
@@ -392,8 +397,8 @@ const FooterDocs: React.FC = () => {
             <div className="col">
               <p className="text-xl">Legales (predeterminado)</p>
               <p className="text-md">
-                Se utiliza en los procesos destinados a trámites, consultas, servicios, transacciones y perfil ciudadano,
-                donde se requiere un enfoque en el contenido y una navegación lineal.
+                Se utiliza en los procesos destinados a trámites, consultas, servicios, transacciones y perfil
+                ciudadano, donde se requiere un enfoque en el contenido y una navegación lineal.
               </p>
             </div>
           </div>
@@ -410,7 +415,8 @@ const FooterDocs: React.FC = () => {
             <div className="col">
               <p className="text-xl">Con información útil</p>
               <p className="text-md">
-                Se utiliza en páginas orientadas a la asistencia al ciudadano, ofreciéndole canales de contacto y asistencia.
+                Se utiliza en páginas orientadas a la asistencia al ciudadano, ofreciéndole canales de contacto y
+                asistencia.
               </p>
             </div>
           </div>
@@ -427,7 +433,8 @@ const FooterDocs: React.FC = () => {
             <div className="col">
               <p className="text-xl">Con indicador de utilidad</p>
               <p className="text-md">
-                Permite que las personas usuarias puedan dar feedback sobre la utilidad de los contenidos del sitio. Solo se utiliza en páginas informativas.
+                Permite que las personas usuarias puedan dar feedback sobre la utilidad de los contenidos del sitio.
+                Solo se utiliza en páginas informativas.
               </p>
             </div>
           </div>
@@ -477,7 +484,7 @@ const FooterDocs: React.FC = () => {
                 </tr>
                 <tr>
                   <td>Información útil</td>
-                  <td>OOpcional, se requiere según el contenido de la página</td>
+                  <td>Opcional, se requiere según el contenido de la página</td>
                 </tr>
                 <tr>
                   <td>Legales</td>
@@ -491,21 +498,23 @@ const FooterDocs: React.FC = () => {
     },
     {
       title: 'Variantes',
-      content: <>
-        <p className="text-md mb-4">El pie de página (footer) tiene 3 variantes/bloques: legales, con información útil,
-          y con indicador de utilidad. La variante de legales es obligatoria y debe incluirse en todas las pantallas.
-          Las demás pueden incluirse según la necesidad. </p>
-      </>
-    },
-    {
-      subtitle: (
-        <>
-          Legales
-        </>
-      ),
       content: (
         <>
-          <p className="text-md mb-4">Contiene el logo y el escudo de la Ciudad de Buenos Aires, e información legal.</p>
+          <p className="text-md mb-4">
+            El pie de página <i>(footer)</i> tiene 3 variantes/bloques: legales, con información útil, y con indicador
+            de utilidad. <strong>La variante de legales es obligatoria y debe incluirse en todas las pantallas</strong>.
+            Las demás pueden incluirse según la necesidad.{' '}
+          </p>
+        </>
+      ),
+    },
+    {
+      subtitle: <>Legales</>,
+      content: (
+        <>
+          <p className="text-md mb-4">
+            Contiene el logo y el escudo de la Ciudad de Buenos Aires, e información legal.
+          </p>
           <Image
             src={`${basePath}/images/footer/footer_especificaciones_legales.svg`}
             alt="Footer especifiaciones legales"
@@ -517,16 +526,10 @@ const FooterDocs: React.FC = () => {
       ),
     },
     {
-      subtitle: (
-        <>
-         Información útil
-        </>
-      ),
+      subtitle: <>Información útil</>,
       content: (
         <>
-          <p className="text-md mb-4">
-            Contiene teléfonos útiles y redes sociales de la Ciudad.
-          </p>
+          <p className="text-md mb-4">Contiene teléfonos útiles y redes sociales de la Ciudad.</p>
           <Image
             src={`${basePath}/images/footer/footer_especificaciones_informacion_util.svg`}
             alt="Footer Información útil"
@@ -538,16 +541,10 @@ const FooterDocs: React.FC = () => {
       ),
     },
     {
-      subtitle: (
-        <>
-          Indicador de utilidad
-        </>
-      ),
+      subtitle: <>Indicador de utilidad</>,
       content: (
         <>
-          <p className="text-md mb-4">
-            Está compuesto de una pregunta y dos acciones posibles de la misma jerarquía. 
-          </p>
+          <p className="text-md mb-4">Está compuesto de una pregunta y dos acciones posibles de la misma jerarquía.</p>
           <Image
             src={`${basePath}/images/footer/footer_especificaciones_indicador.svg`}
             alt="Indicador de utilidad"
@@ -559,7 +556,11 @@ const FooterDocs: React.FC = () => {
       ),
     },
     {
-      title: 'Dispositivos tablet',
+      title: (
+        <>
+          Dispositivos <i>tablet</i>
+        </>
+      ),
       content: (
         <>
           <Image
@@ -573,7 +574,12 @@ const FooterDocs: React.FC = () => {
       ),
     },
     {
-      title: 'Dispositivos mobile',
+      title: (
+        <>
+          {' '}
+          Dispositivos <i>mobile</i>
+        </>
+      ),
       content: (
         <>
           <Image
@@ -585,146 +591,149 @@ const FooterDocs: React.FC = () => {
           />
         </>
       ),
-    }
+    },
   ];
 
+  const ACCESSIBILITY = [
+    {
+      title: 'Navegación alternativa',
+      content: (
+        <>
+          <p className="text-md">
+            Todos los elementos del pie de página <i>(footer)</i> pueden recorrerse utilizando la navegación por teclado
+            u otras herramientas de asistencia como lectores por voz.
+          </p>
+          <span className="badge badge-default ms-1">TAB</span>
+          <span className="badge badge-default">ENTER</span>
+          <p className="text-md">
+            Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Además, con
+            el <i>enter</i>, puede accionar los elementos sobre los que esté posicionada como botones, enlaces, entre
+            otros.
+          </p>
 
-   const ACCESSIBILITY = [
-      {
-        title: 'Navegación alternativa',
-        content: (
-          <>
-            <p className="text-md">
-              Todos los elementos del pie de página (footer) pueden recorrerse utilizando la navegación por teclado u otras herramientas de asistencia como lectores por voz.
-            </p>
-            <span className="badge badge-default ms-1">TAB</span>
-            <span className="badge badge-default">ENTER</span>
-            <p className="text-md">
-              Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Además, con
-              el <i>enter</i>, puede accionar los elementos sobre los que esté posicionada como botones, enlaces, entre
-              otros.
-            </p>
-  
-            <Image
-              src={`${basePath}/images/footer/footer_ilustracion.svg`}
-              alt="Navegacion alternativa del footer"
-              width="800"
-              height="285"
-              className="img-fluid"
-            />
-          </>
-        ),
-      },
-      {
-        title: 'Encabezados ocultos para navegación',
-        content: (
-          <>
-            <p className="text-md">
-              Se crearon encabezados ocultos con la clase sr-only para facilitar la navegación de los distintos bloques del pie de página.
-            </p>
-            <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
-              {FOOTER_ACCESSIBILTY}
-            </SyntaxHighlighter>
-          </>
-        ),
-      },
-      {
-        title: 'Criterios WCAG aplicados',
-        content: (
-          <>
-            <a
-              className="external"
-              href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Success Criterion 1.4.11 Non-Text Contrast (Level AA)
-            </a>
-            <p>
-              La presentación visual de elementos de la interfaz de usuario y objetos gráficos tiene por lo menos una
-              relación de contraste de 3:1 con respecto a los colores adyacentes.
-            </p>
-  
-            <a
-              className="external"
-              href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Success Criterion 1.3.1 Info and Relationships (Level A)
-            </a>
-            <p>
-              La información, la estructura y las relaciones transmitidas a través de la presentación pueden determinarse mediante programación o están disponibles en el texto.
-            </p>
-  
-            <a
-              className="external"
-              href="https://www.w3.org/WAI/WCAG21/Understanding/reflow.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Success Criterion 1.4.10 Reflow (Level AA)
-            </a>
-            <p>El contenido puede presentarse sin pérdida de información o funcionalidad y sin necesidad de desplazarse en dos dimensiones, 
-              siempre que el desplazamiento vertical se ajuste a un ancho equivalente a 320 píxeles CSS y el desplazamiento horizontal 
-              a una altura equivalente a 256 píxeles CSS, excepto en aquellas partes del contenido que requieran un diseño bidimensional para su uso o significado.
-            </p>
-  
-            <a
-              className="external"
-              href="https://www.w3.org/WAI/WCAG21/Understanding/resize-text"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Success Criterion 1.4.4 Resize Text (Level AA)
-            </a>
-            <p>
-            Excepto por los subtítulos e imágenes de texto, el texto puede redimensionarse hasta un 200 % sin tecnología de asistencia, 
-            sin pérdida de contenido ni funcionalidad.
-            </p>
-  
-            <a
-              className="external"
-              href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Success Criterion 2.1.1 Keyboard (Level A)
-            </a>
-            <p>
-              Todas las funcionalidades del contenido se puede operar a través de una interfaz de teclado.
-            </p>
-  
-            <a
-              className="external"
-              href="https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Success Criterion 2.1.2 No Keyboard Trap (Level A)
-            </a>
-            <p>
-              Si el foco del teclado puede moverse a un componente de la página utilizando una interfaz de teclado, 
-              también debe ser posible mover el foco fuera de ese componente usando únicamente la misma interfaz de teclado. 
-              Si se requiere algo más que las teclas de flecha, tabulador u otros métodos estándar para salir, 
-              se debe informar al usuario sobre el método necesario para mover el foco.
-            </p>
+          <Image
+            src={`${basePath}/images/footer/footer_ilustracion.svg`}
+            alt="Navegacion alternativa del footer"
+            width="800"
+            height="285"
+            className="img-fluid"
+          />
+        </>
+      ),
+    },
+    {
+      title: 'Encabezados ocultos para navegación',
+      content: (
+        <>
+          <p className="text-md">
+            Se crearon encabezados ocultos con la clase <i>sr-only</i> para facilitar la navegación de los distintos
+            bloques del pie de página.
+          </p>
+          <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
+            {FOOTER_ACCESSIBILTY}
+          </SyntaxHighlighter>
+        </>
+      ),
+    },
+    {
+      title: 'Criterios WCAG aplicados',
+      content: (
+        <>
+          <a
+            className="external"
+            href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Success Criterion 1.4.11 Non-Text Contrast (Level AA)
+          </a>
+          <p>
+            La presentación visual de elementos de la interfaz de usuario y objetos gráficos tiene por lo menos una
+            relación de contraste de 3:1 con respecto a los colores adyacentes.
+          </p>
 
-            <a 
-              className="external"
-              href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html"
-              target="_blank"
-              rel="nooper noreferrer"
-            >
-              Success Criterion 2.4.7 Focus Visible (Level AA)
-            </a>
-            <p>
-              Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque del teclado es visible.
-            </p>
-          </>
-        ),
-      }
-   ];
+          <a
+            className="external"
+            href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Success Criterion 1.3.1 Info and Relationships (Level A)
+          </a>
+          <p>
+            La información, la estructura y las relaciones transmitidas a través de la presentación pueden determinarse
+            mediante programación o están disponibles en el texto.
+          </p>
+
+          <a
+            className="external"
+            href="https://www.w3.org/WAI/WCAG21/Understanding/reflow.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Success Criterion 1.4.10 Reflow (Level AA)
+          </a>
+          <p>
+            El contenido puede presentarse sin pérdida de información o funcionalidad y sin necesidad de desplazarse en
+            dos dimensiones, siempre que el desplazamiento vertical se ajuste a un ancho equivalente a 320 píxeles CSS y
+            el desplazamiento horizontal a una altura equivalente a 256 píxeles CSS, excepto en aquellas partes del
+            contenido que requieran un diseño bidimensional para su uso o significado.
+          </p>
+
+          <a
+            className="external"
+            href="https://www.w3.org/WAI/WCAG21/Understanding/resize-text"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Success Criterion 1.4.4 Resize Text (Level AA)
+          </a>
+          <p>
+            Excepto por los subtítulos e imágenes de texto, el texto puede redimensionarse hasta un 200 % sin tecnología
+            de asistencia, sin pérdida de contenido ni funcionalidad.
+          </p>
+
+          <a
+            className="external"
+            href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Success Criterion 2.1.1 Keyboard (Level A)
+          </a>
+          <p>Todas las funcionalidades del contenido se puede operar a través de una interfaz de teclado.</p>
+
+          <a
+            className="external"
+            href="https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Success Criterion 2.1.2 No Keyboard Trap (Level A)
+          </a>
+          <p>
+            Si el foco del teclado puede moverse a un componente de la página utilizando una interfaz de teclado,
+            también debe ser posible mover el foco fuera de ese componente usando únicamente la misma interfaz de
+            teclado. Si se requiere algo más que las teclas de flecha, tabulador u otros métodos estándar para salir, se
+            debe informar al usuario sobre el método necesario para mover el foco.
+          </p>
+
+          <a
+            className="external"
+            href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html"
+            target="_blank"
+            rel="nooper noreferrer"
+          >
+            Success Criterion 2.4.7 Focus Visible (Level AA)
+          </a>
+          <p>
+            Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque
+            del teclado es visible.
+          </p>
+        </>
+      ),
+    },
+  ];
 
   return (
     <>
@@ -734,7 +743,8 @@ const FooterDocs: React.FC = () => {
           'El pie de página (o footer en Inglés) se sitúa en la parte inferior de todos los activos digitales de Gobierno. Contiene información institucional o de acceso rápido que permite a los usuarios encontrar de forma sencilla la información que necesitan.',
         ]}
       />
-      <Tabs sectionUx={SECTION_UX}
+      <Tabs
+        sectionUx={SECTION_UX}
         sectionDev={SECTIONS_DEV}
         customSections={[
           {

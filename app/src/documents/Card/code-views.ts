@@ -357,3 +357,29 @@ export const DISPOSITION_SCROLL = `
   </div>
 </div>
 `;
+
+export const TARJETAS_ACCESSIBILTY = `
+<h2 class="sr-only">Encabezado de grupo de tarjetas</h2>
+<div class="container">
+  <div class="card-deck max-cards-3 card-column">
+    <div class="card card-horizontal">
+    ...
+    <div class="card card-horizontal">
+    ...
+    </div>
+  </div>
+</div>
+`;
+
+export const TARJETAS_ACCESSIBILTY_2 = `
+<h2 class="sr-only">Encabezado de grupo de tarjetas</h2>
+<div class="container">
+  <div class="card-deck max-cards-3 card-column">
+    <div class="card card-horizontal">
+    ...
+    <div class="card card-horizontal">
+    ...
+    </div>
+  </div>
+</div>
+`;

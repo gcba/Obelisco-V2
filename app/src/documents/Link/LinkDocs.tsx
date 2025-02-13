@@ -111,7 +111,7 @@ const LinkDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-          <br />
+
           <br />
         </>
       ),
@@ -253,11 +253,10 @@ const LinkDocs: React.FC = () => {
       title: 'Disposición',
       content: <></>,
     },
-    // ScrollSpy revisar
     {
       subtitle: (
         <>
-          Enlaces independientes <br /> <i>(Standalone links)</i>
+          Enlaces independientes <i>(Standalone links)</i>
         </>
       ),
       content: (
@@ -280,7 +279,7 @@ const LinkDocs: React.FC = () => {
     {
       subtitle: (
         <>
-          Enlaces de anclaje <br /> <i>(Anchor links)</i>
+          Enlaces de anclaje <i>(Anchor links)</i>
         </>
       ),
       content: (
@@ -295,14 +294,20 @@ const LinkDocs: React.FC = () => {
             Deben estar jerarquizados y organizados dentro de una lista de enlaces, bajo un título claro, como
             &quot;Contenido en esta página&quot;, para que las personas usuarias identifiquen su función.
           </p>
+          <Image
+            src={`${basePath}/images/enlace/enlace_bloque_de_texto.svg`}
+            alt="Enlaces en bloques de texto"
+            width="800"
+            height="200"
+            className="img-fluid"
+          />
         </>
       ),
     },
-    // ScrollSpy revisar
     {
       subtitle: (
         <>
-          Enlaces en bloques de texto <br /> <i>(Inline links)</i>
+          Enlaces en bloques de texto <i>(Inline links)</i>
         </>
       ),
       content: (
@@ -312,7 +317,7 @@ const LinkDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/enlace/enlace_deAnclaje.svg`}
+            src={`${basePath}/images/enlace/enlace_de_anclaje.svg`}
             alt="Enlaces en bloques de texto"
             width="800"
             height="200"
@@ -737,7 +742,7 @@ const LinkDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/button/boton_navegacion_alternativa.svg`}
+            src={`${basePath}/images/boton/boton_navegacion_alternativa.svg`}
             alt="Navegacion alternativa del botón"
             width="738"
             height="400"

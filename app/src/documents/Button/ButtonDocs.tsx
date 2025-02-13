@@ -439,7 +439,7 @@ const ButtonDocs: React.FC = () => {
             predeterminado.
           </p>
           <Image
-            src={`${basePath}/images/button/botones_tamaños.svg`}
+            src={`${basePath}/images/boton/boton_botones_tamaños.svg`}
             alt="Tamaños de botones"
             width="800"
             height="200"
@@ -469,7 +469,7 @@ const ButtonDocs: React.FC = () => {
             </div>
             <div className="col">
               <Image
-                src={`${basePath}/images/button/boton_tipos_primario.svg`}
+                src={`${basePath}/images/boton/boton_tipos_primario.svg`}
                 alt="Botón primario"
                 width="800"
                 height="200"
@@ -490,7 +490,7 @@ const ButtonDocs: React.FC = () => {
             </div>
             <div className="col">
               <Image
-                src={`${basePath}/images/button/boton_tipos_secundario.svg`}
+                src={`${basePath}/images/boton/boton_tipos_secundario.svg`}
                 alt="Botón secundario"
                 width="800"
                 height="200"
@@ -511,7 +511,7 @@ const ButtonDocs: React.FC = () => {
             </div>
             <div className="col">
               <Image
-                src={`${basePath}/images/button/boton_tipos_terciario.svg`}
+                src={`${basePath}/images/boton/boton_tipos_terciario.svg`}
                 alt="Botón terciario"
                 width="800"
                 height="200"
@@ -532,7 +532,7 @@ const ButtonDocs: React.FC = () => {
             </div>
             <div className="col">
               <Image
-                src={`${basePath}/images/button/boton_tipos_exito.svg`}
+                src={`${basePath}/images/boton/boton_tipos_exito.svg`}
                 alt="Botón de exito"
                 width="800"
                 height="200"
@@ -553,7 +553,7 @@ const ButtonDocs: React.FC = () => {
             </div>
             <div className="col">
               <Image
-                src={`${basePath}/images/button/boton_tipos_peligro.svg`}
+                src={`${basePath}/images/boton/boton_tipos_peligro.svg`}
                 alt="Botón de peligro"
                 width="800"
                 height="200"
@@ -574,7 +574,7 @@ const ButtonDocs: React.FC = () => {
             </div>
             <div className="col">
               <Image
-                src={`${basePath}/images/button/boton_tipos_claro.svg`}
+                src={`${basePath}/images/boton/boton_tipos_claro.svg`}
                 alt="Botón claro"
                 width="800"
                 height="200"
@@ -593,7 +593,7 @@ const ButtonDocs: React.FC = () => {
               estilos de botones.
             </p>
             <Image
-              src={`${basePath}/images/button/boton_tipos_outlined.svg`}
+              src={`${basePath}/images/boton/boton_tipos_outlined.svg`}
               alt="Botón outlined"
               width="800"
               height="200"
@@ -609,7 +609,7 @@ const ButtonDocs: React.FC = () => {
               disponible. No cuenta con relleno ni borde.{' '}
             </p>
             <Image
-              src={`${basePath}/images/button/boton_tipos_accion_para_tabla.svg`}
+              src={`${basePath}/images/boton/boton_tipos_accion_para_tabla.svg`}
               alt="Botón de acción para tabla"
               width="800"
               height="200"
@@ -628,7 +628,7 @@ const ButtonDocs: React.FC = () => {
             sólo con ícono.{' '}
           </p>
           <Image
-            src={`${basePath}/images/button/uso_icono.svg`}
+            src={`${basePath}/images/boton/boton_uso_icono.svg`}
             alt="Cómo usar los íconos"
             width="800"
             height="200"
@@ -641,7 +641,7 @@ const ButtonDocs: React.FC = () => {
             <div className="max-items-2">
               <div className="col">
                 <Image
-                  src={`${basePath}/images/button/uso_icono_si.svg`}
+                  src={`${basePath}/images/boton/boton_uso_icono_si.svg`}
                   alt="Cómo sí usar los íconos"
                   width="800"
                   height="200"
@@ -656,7 +656,7 @@ const ButtonDocs: React.FC = () => {
               </div>
               <div className="col">
                 <Image
-                  src={`${basePath}/images/button/uso_icono_no.svg`}
+                  src={`${basePath}/images/boton/boton_uso_icono_no.svg`}
                   alt="Cómo no usar los íconos"
                   width="800"
                   height="200"
@@ -691,7 +691,7 @@ const ButtonDocs: React.FC = () => {
             <div className="max-items-2">
               <div className="col">
                 <Image
-                  src={`${basePath}/images/button/uso_icono_2_si.svg`}
+                  src={`${basePath}/images/boton/boton_uso_icono_2_si.svg`}
                   alt="Ejemplo de uso de cómo sí usar los íconos"
                   width="800"
                   height="200"
@@ -704,7 +704,7 @@ const ButtonDocs: React.FC = () => {
               </div>
               <div className="col">
                 <Image
-                  src={`${basePath}/images/button/uso_icono_2_no.svg`}
+                  src={`${basePath}/images/boton/boton_uso_icono_2_no.svg`}
                   alt="Ejemplo de uso de cómo no usar los íconos"
                   width="800"
                   height="200"
@@ -759,7 +759,7 @@ const ButtonDocs: React.FC = () => {
             </p>
           </div>
           <Image
-            src={`${basePath}/images/button/grupo_para_acciones_primarias.svg`}
+            src={`${basePath}/images/boton/boton_grupo_para_acciones_primarias.svg`}
             alt="Grupo para acciones primarias"
             width="800"
             height="350"
@@ -787,7 +787,7 @@ const ButtonDocs: React.FC = () => {
             </p>
           </div>
           <Image
-            src={`${basePath}/images/button/grupo_para_acciones_secundarias.svg`}
+            src={`${basePath}/images/boton/boton_grupo_para_acciones_secundarias.svg`}
             alt="Grupo para acciones secundarias"
             width="800"
             height="280"
@@ -803,7 +803,7 @@ const ButtonDocs: React.FC = () => {
             </p>
           </div>
           <Image
-            src={`${basePath}/images/button/grupo_con_botones_de_peligro.svg`}
+            src={`${basePath}/images/boton/boton_grupo_con_botones_de_peligro.svg`}
             alt="Grupo con botones de peligro"
             width="800"
             height="232"
@@ -820,7 +820,7 @@ const ButtonDocs: React.FC = () => {
             </p>
           </div>
           <Image
-            src={`${basePath}/images/button/grupo_para_acciones_terciarias.svg`}
+            src={`${basePath}/images/boton/boton_grupo_para_acciones_terciarias.svg`}
             alt="Grupo para acciones terciarias"
             width="800"
             height="363"
@@ -836,7 +836,7 @@ const ButtonDocs: React.FC = () => {
             </p>
           </div>
           <Image
-            src={`${basePath}/images/button/grupo_para_fondos_oscuros.svg`}
+            src={`${basePath}/images/boton/boton_grupo_para_fondos_oscuros.svg`}
             alt="Grupo para fondos oscuros"
             width="800"
             height="295"
@@ -878,7 +878,7 @@ const ButtonDocs: React.FC = () => {
             </div>
             <div className="col">
               <Image
-                src={`${basePath}/images/button/alineacion_a_la_izquierda.svg`}
+                src={`${basePath}/images/boton/boton_alineacion_a_la_izquierda.svg`}
                 alt="Alineación a la izquierda"
                 width="800"
                 height="295"
@@ -899,7 +899,7 @@ const ButtonDocs: React.FC = () => {
             </div>
             <div className="col">
               <Image
-                src={`${basePath}/images/button/alineacion_a_la_derecha.svg`}
+                src={`${basePath}/images/boton/boton_alineacion_a_la_derecha.svg`}
                 alt="Alineación a la derecha"
                 width="800"
                 height="295"
@@ -920,7 +920,7 @@ const ButtonDocs: React.FC = () => {
             </div>
             <div className="col">
               <Image
-                src={`${basePath}/images/button/alineacion_a_la_derecha_2.svg`}
+                src={`${basePath}/images/boton/boton_alineacion_a_la_derecha_2.svg`}
                 alt="Alineación a la derecha parte 2"
                 width="800"
                 height="295"
@@ -959,7 +959,7 @@ const ButtonDocs: React.FC = () => {
 
             <div className="col">
               <Image
-                src={`${basePath}/images/button/alineacion_mobile.svg`}
+                src={`${basePath}/images/boton/boton_alineacion_mobile.svg`}
                 alt="Alineación mobile"
                 width="800"
                 height="295"
@@ -998,7 +998,7 @@ const ButtonDocs: React.FC = () => {
               {/* 1 */}
               <div className="col">
                 <Image
-                  src={`${basePath}/images/button/contenido_info_si_usar.svg`}
+                  src={`${basePath}/images/boton/boton_contenido_info_si_usar.svg`}
                   alt="Buena práctica en botones ejemplo 1"
                   width="800"
                   height="242"
@@ -1012,7 +1012,7 @@ const ButtonDocs: React.FC = () => {
               {/* 2 */}
               <div className="col">
                 <Image
-                  src={`${basePath}/images/button/contenido_info_no_usar.svg`}
+                  src={`${basePath}/images/boton/boton_contenido_info_no_usar.svg`}
                   alt="Mala práctica en botones ejemplo 1"
                   width="800"
                   height="242"
@@ -1026,7 +1026,7 @@ const ButtonDocs: React.FC = () => {
               {/* 3 */}
               <div className="col">
                 <Image
-                  src={`${basePath}/images/button/contenido_peligro_si_usar.svg`}
+                  src={`${basePath}/images/boton/boton_contenido_peligro_si_usar.svg`}
                   alt="Buena práctica en botones ejemplo 2"
                   width="800"
                   height="242"
@@ -1040,7 +1040,7 @@ const ButtonDocs: React.FC = () => {
               {/* 4 */}
               <div className="col">
                 <Image
-                  src={`${basePath}/images/button/contenido_peligro_no_usar.svg`}
+                  src={`${basePath}/images/boton/boton_contenido_peligro_no_usar.svg`}
                   alt="Mala práctica en botones ejemplo 2"
                   width="800"
                   height="242"
@@ -1054,7 +1054,7 @@ const ButtonDocs: React.FC = () => {
               {/* 5 */}
               <div className="col">
                 <Image
-                  src={`${basePath}/images/button/contenido_exito_si_usar.svg`}
+                  src={`${basePath}/images/boton/boton_contenido_exito_si_usar.svg`}
                   alt="Buena práctica en botones ejemplo 3"
                   width="800"
                   height="242"
@@ -1068,7 +1068,7 @@ const ButtonDocs: React.FC = () => {
               {/* 6 */}
               <div className="col">
                 <Image
-                  src={`${basePath}/images/button/contenido_exito_no_usar.svg`}
+                  src={`${basePath}/images/boton/boton_contenido_exito_no_usar.svg`}
                   alt="Mala práctica en botones ejemplo 3"
                   width="800"
                   height="242"
@@ -1093,7 +1093,7 @@ const ButtonDocs: React.FC = () => {
         <>
           <p className="text-md">El botón se compone de 4 elementos.</p>
           <Image
-            src={`${basePath}/images/button/boton_anatomia.svg`}
+            src={`${basePath}/images/boton/boton_anatomia.svg`}
             alt="Anatomia del botón"
             width="800"
             height="280"
@@ -1153,7 +1153,7 @@ const ButtonDocs: React.FC = () => {
         <>
           <p className="text-md mb-4">Estado predeterminado de los botones en una interfaz.</p>
           <Image
-            src={`${basePath}/images/button/boton_estado_predeterminado.svg`}
+            src={`${basePath}/images/boton/boton_estado_predeterminado.svg`}
             alt="Estado predeterminado del boton"
             width="800"
             height="464"
@@ -1176,7 +1176,7 @@ const ButtonDocs: React.FC = () => {
             idénticos.{' '}
           </p>
           <Image
-            src={`${basePath}/images/button/boton_estado_sobre.svg`}
+            src={`${basePath}/images/boton/boton_estado_sobre.svg`}
             alt="Estado sobre del boton"
             width="800"
             height="464"
@@ -1200,7 +1200,7 @@ const ButtonDocs: React.FC = () => {
             En este caso tanto los botones rellenos como los de borde se ven idénticos.{' '}
           </p>
           <Image
-            src={`${basePath}/images/button/boton_estado_en_foco.svg`}
+            src={`${basePath}/images/boton/boton_estado_en_foco.svg`}
             alt="Estado en foco del boton"
             width="800"
             height="464"
@@ -1223,7 +1223,7 @@ const ButtonDocs: React.FC = () => {
             accesibilidad.{' '}
           </p>
           <Image
-            src={`${basePath}/images/button/boton_estado_deshabilitado.svg`}
+            src={`${basePath}/images/boton/boton_estado_deshabilitado.svg`}
             alt="Estado deshabilitado del boton"
             width="800"
             height="464"
@@ -1247,7 +1247,7 @@ const ButtonDocs: React.FC = () => {
             la acción se puede configurar la variante de spinner correspondiente con la de cada botón.{' '}
           </p>
           <Image
-            src={`${basePath}/images/button/boton_estado_cargando.svg`}
+            src={`${basePath}/images/boton/boton_estado_cargando.svg`}
             alt="Estado cargando del boton"
             width="800"
             height="464"
@@ -1264,7 +1264,7 @@ const ButtonDocs: React.FC = () => {
             El espacio recomendado entre botones para cada tamaño garantiza un espacio clickeable/tappeable óptimo.{' '}
           </p>
           <Image
-            src={`${basePath}/images/button/boton_espaciado.svg`}
+            src={`${basePath}/images/boton/boton_espaciado.svg`}
             alt="Espaciado del boton"
             width="800"
             height="285"
@@ -1293,7 +1293,7 @@ const ButtonDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/button/boton_navegacion_alternativa.svg`}
+            src={`${basePath}/images/boton/boton_navegacion_alternativa.svg`}
             alt="Navegacion alternativa del botón"
             width="738"
             height="400"

@@ -295,7 +295,7 @@ const LinkDocs: React.FC = () => {
             &quot;Contenido en esta página&quot;, para que las personas usuarias identifiquen su función.
           </p>
           <Image
-            src={`${basePath}/images/enlace/enlace_bloqueDeTexto.svg`}
+            src={`${basePath}/images/enlace/enlace_bloque_de_texto.svg`}
             alt="Enlaces en bloques de texto"
             width="800"
             height="200"
@@ -317,7 +317,7 @@ const LinkDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/enlace/enlace_deAnclaje.svg`}
+            src={`${basePath}/images/enlace/enlace_de_anclaje.svg`}
             alt="Enlaces en bloques de texto"
             width="800"
             height="200"
@@ -742,7 +742,7 @@ const LinkDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/button/boton_navegacion_alternativa.svg`}
+            src={`${basePath}/images/boton/boton_navegacion_alternativa.svg`}
             alt="Navegacion alternativa del botón"
             width="738"
             height="400"

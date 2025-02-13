@@ -42,7 +42,7 @@ const SECTIONS_UX = [
         </p>
         <div className="max-items-2">
           <div className="col">
-            <img src={`${basePath}/images/typography/typography_1.svg`} className="w-100 pb-4" alt="Familia Nunito" />
+            <img src={`${basePath}/images/tipografia/tipografia_1.svg`} className="w-100 pb-4" alt="Familia Nunito" />
             <p className="text-xl mb-2">Nunito</p>
             <p>
               Es una tipografía <i>sans-serif</i> geométrica con formas redondeadas, diseñada para interfaces digitales
@@ -51,7 +51,7 @@ const SECTIONS_UX = [
           </div>
           <div className="col">
             <img
-              src={`${basePath}/images/typography/typography_open_sans.svg`}
+              src={`${basePath}/images/tipografia/tipografia_open_sans.svg`}
               className="w-100 pb-4"
               alt="Familia Open Sans"
             />
@@ -73,7 +73,7 @@ const SECTIONS_UX = [
           Para generar una jerarquía clara y minimizar las inconsistencias, asignamos a cada estilo un rol que describe
           su función.
         </p>
-        <img src={`${basePath}/images/typography/typography_3.svg`} className="w-100" alt="Roles" />
+        <img src={`${basePath}/images/tipografia/tipografia_3.svg`} className="w-100" alt="Roles" />
       </>
     ),
   },
@@ -180,7 +180,7 @@ const SECTIONS_UX = [
           ).
         </p>
         <p className="mb-4">No recomendamos utilizar textos sobre imágenes, porque dificultan la legibilidad.</p>
-        <img src={`${basePath}/images/typography/typography_4.svg`} className="w-100" alt="Contraste de color" />
+        <img src={`${basePath}/images/tipografia/tipografia_4.svg`} className="w-100" alt="Contraste de color" />
       </>
     ),
   },
@@ -239,7 +239,7 @@ const SECTIONS_UX = [
         </ul>
 
         <div className="d-flex flex-column flex-md-row align-items-center mb-4" style={{ gap: '32px' }}>
-          <img src={`${basePath}/images/typography/typography_5.svg`} alt="Texto en negrita" />
+          <img src={`${basePath}/images/tipografia/tipografia_5.svg`} alt="Texto en negrita" />
           <div>
             <p className="mb-0 fw-semibold">
               Negrita <i>(Bold)</i>
@@ -251,7 +251,7 @@ const SECTIONS_UX = [
           </div>
         </div>
         <div className="d-flex flex-column flex-md-row align-items-center mb-4" style={{ gap: '32px' }}>
-          <img src={`${basePath}/images/typography/typography_6.svg`} alt="Texto en Semi-negrita" />
+          <img src={`${basePath}/images/tipografia/tipografia_6.svg`} alt="Texto en Semi-negrita" />
           <div>
             <p className="mb-0 fw-semibold">
               Semi-negrita <i>(Semibold)</i>
@@ -263,7 +263,7 @@ const SECTIONS_UX = [
           </div>
         </div>
         <div className="d-flex flex-column flex-md-row align-items-center mb-4" style={{ gap: '32px' }}>
-          <img src={`${basePath}/images/typography/typography_7.svg`} alt="Texto en Regular" />
+          <img src={`${basePath}/images/tipografia/tipografia_7.svg`} alt="Texto en Regular" />
           <div>
             <p className="mb-0 fw-semibold">
               Regular <i>(Regular)</i>
@@ -288,7 +288,7 @@ const SECTIONS_UX = [
         </p>
 
         <div className="d-flex flex-column flex-md-row align-items-center mb-4" style={{ gap: '32px' }}>
-          <img src={`${basePath}/images/typography/typography_8.svg`} alt="Texto en Cursiva" />
+          <img src={`${basePath}/images/tipografia/tipografia_8.svg`} alt="Texto en Cursiva" />
           <div>
             <p className="mb-0 fw-semibold">
               Cursiva <i>(Italic)</i>
@@ -300,7 +300,7 @@ const SECTIONS_UX = [
           </div>
         </div>
         <div className="d-flex flex-column flex-md-row align-items-center mb-4" style={{ gap: '32px' }}>
-          <img src={`${basePath}/images/typography/typography_9.svg`} alt="Texto Subrayado" />
+          <img src={`${basePath}/images/tipografia/tipografia_9.svg`} alt="Texto Subrayado" />
           <div>
             <p className="mb-0 fw-semibold">
               Subrayado <i>(Underline)</i>
@@ -343,7 +343,7 @@ const SECTIONS_UX = [
           <i>tablet</i> y <i>mobile</i> el bloque debe ocupar el 100 % del contenedor disponible.
         </p>
         <img
-          src={`${basePath}/images/typography/typography_10.svg`}
+          src={`${basePath}/images/tipografia/tipografia_10.svg`}
           className="w-100"
           alt="Ancho máximo de párrafo por línea"
         />

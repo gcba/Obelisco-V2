@@ -716,7 +716,7 @@ const CardDocs: React.FC = () => {
             mismo sitio web.
           </p>
           <Image
-            src={`${basePath}/images/tarjetas/agrupacion_si_usar_1.svg`}
+            src={`${basePath}/images/tarjetas/tarjetas_agrupacion_si_usar_1.svg`}
             alt="Tarjeta horizontal tematica"
             width="800"
             height="200"
@@ -734,7 +734,7 @@ const CardDocs: React.FC = () => {
             mismo sitio web.
           </p> */}
           <Image
-            src={`${basePath}/images/tarjetas/agrupacion_no_usar_1.svg`}
+            src={`${basePath}/images/tarjetas/tarjetas_agrupacion_no_usar_1.svg`}
             alt="Tarjeta horizontal tematica"
             width="800"
             height="200"
@@ -813,7 +813,6 @@ const CardDocs: React.FC = () => {
             className="img-fluid"
             style={{ marginTop: '1rem !important' }}
           />
-
         </>
       ),
     },
@@ -822,7 +821,7 @@ const CardDocs: React.FC = () => {
       content: (
         <>
           <Image
-            src={`${basePath}/images/tarjetas/modulacion_si_usar.svg`}
+            src={`${basePath}/images/tarjetas/tarjetas_modulacion_si_usar.svg`}
             alt="Tarjeta horizontal tematica"
             width="800"
             height="200"
@@ -838,7 +837,7 @@ const CardDocs: React.FC = () => {
           </div>
 
           <Image
-            src={`${basePath}/images/tarjetas/modulacion_si_usar.svg`}
+            src={`${basePath}/images/tarjetas/tarjetas_modulacion_si_usar.svg`}
             alt="Tarjeta horizontal tematica"
             width="800"
             height="200"
@@ -934,7 +933,7 @@ const CardDocs: React.FC = () => {
             imagen de la tarjeta horizontal debe tener una proporción 1:1, con un tamaño recomendado de 64x64 px.
           </p>
           <Image
-            src={`${basePath}/images/tarjetas/variante_img.svg`}
+            src={`${basePath}/images/tarjetas/tarjetas_variante_img.svg`}
             alt="Variante de tarjeta con imagen"
             width="800"
             height="464"
@@ -952,7 +951,7 @@ const CardDocs: React.FC = () => {
             al contenido de la tarjeta.
           </p>
           <Image
-            src={`${basePath}/images/tarjetas/variante_icono_caja.svg`}
+            src={`${basePath}/images/tarjetas/tarjetas_variante_icono_caja.svg`}
             alt="Variante de tarjeta con ícono en caja"
             width="800"
             height="464"
@@ -970,7 +969,7 @@ const CardDocs: React.FC = () => {
             delimita el componente, al modular la tarjeta dentro de un grupo respeta el mismo espacio individual.
           </p>
           <Image
-            src={`${basePath}/images/tarjetas/variante_sin_borde.svg`}
+            src={`${basePath}/images/tarjetas/tarjetas_variante_sin_borde.svg`}
             alt="Variante de tarjeta sin borde"
             width="800"
             height="464"
@@ -988,7 +987,7 @@ const CardDocs: React.FC = () => {
             horizontales.
           </p>
           <Image
-            src={`${basePath}/images/tarjetas/variante_sin_media.svg`}
+            src={`${basePath}/images/tarjetas/tarjetas_variante_sin_media.svg`}
             alt="Variante de tarjeta sin media"
             width="800"
             height="464"
@@ -1010,7 +1009,7 @@ const CardDocs: React.FC = () => {
         <>
           <p className="text-md">Estado predeterminado de las tarjetas en una interfaz.</p>
           <Image
-            src={`${basePath}/images/tarjetas/estados_predeterminado.svg`}
+            src={`${basePath}/images/tarjetas/tarjetas_estados_predeterminado.svg`}
             alt="Estado de tarjeta predeterminada"
             width="800"
             height="285"
@@ -1032,7 +1031,7 @@ const CardDocs: React.FC = () => {
             su interactividad a la persona usuaria.
           </p>
           <Image
-            src={`${basePath}/images/tarjetas/estados_sobre.svg`}
+            src={`${basePath}/images/tarjetas/tarjetas_estados_sobre.svg`}
             alt="Estado de tarjeta sobre (hover)"
             width="800"
             height="285"
@@ -1055,7 +1054,7 @@ const CardDocs: React.FC = () => {
             Obelisco se utiliza un borde o anillo (focus ring) por fuera del componente en un color distintivo.
           </p>
           <Image
-            src={`${basePath}/images/tarjetas/estados_foco.svg`}
+            src={`${basePath}/images/tarjetas/tarjetas_estados_foco.svg`}
             alt="Estado de tarjeta en foco (focus)"
             width="800"
             height="285"
@@ -1080,10 +1079,11 @@ const CardDocs: React.FC = () => {
             className="img-fluid"
           />
           <p className="text-md pt-4">
-            En dispositivos móviles, todas las tarjetas van una debajo de la otra, ocupando el ancho total de la grilla del dispositivo. 
-            En dispositivos tablet tienen una separación de 24 px., y en dispositivos mobile tienen una separación de 16 px.
+            En dispositivos móviles, todas las tarjetas van una debajo de la otra, ocupando el ancho total de la grilla
+            del dispositivo. En dispositivos tablet tienen una separación de 24 px., y en dispositivos mobile tienen una
+            separación de 16 px.
           </p>
-          <Image 
+          <Image
             src={`${basePath}/images/tarjetas/tarjetas_espaciados_mobile.svg`}
             alt="Espaciado de tarjetas en mobile"
             width="800"

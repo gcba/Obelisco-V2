@@ -12,9 +12,11 @@ const ScrollspySubtitle = ({
   const textoString = typeof text === 'string' ? text : '';
   const primeraParte = textoString.split('<i>')[0].trim();
 
-  const textosAplicarSaltoDeLinea = ['Enlaces independientes', 'Enlaces de anclaje', 'Enlaces en bloques de texto'].includes(
-    primeraParte,
-  );
+  const textosAplicarSaltoDeLinea = [
+    'Enlaces independientes',
+    'Enlaces de anclaje',
+    'Enlaces en bloques de texto',
+  ].includes(primeraParte);
 
   return (
     <div

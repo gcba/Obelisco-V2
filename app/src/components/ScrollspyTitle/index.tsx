@@ -10,9 +10,12 @@ const ScrollspySubtitle = ({
 }) => {
   return (
     <div
-      // className={`d-flex align-items-center ${ScrollspyComponent ? 'ps-3' : ''}`.trim()}
-      className={`align-items-center ${ScrollspyComponent ? 'ps-3' : ''}`.trim()}
-      style={{ gap: ScrollspyComponent ? '0.125rem' : '.25rem' }}
+      className={`${ScrollspyComponent ? 'd-flex flex-column' : ''} ${ScrollspyComponent ? 'ps-3' : ''}`.trim()}
+      style={{
+        gap: ScrollspyComponent ? '0.125rem' : '.25rem',
+        // Alinear a la izquierda en modo Scrollspy
+        alignItems: ScrollspyComponent ? 'flex-start' : 'center',
+      }}
     >
       {text}
     </div>

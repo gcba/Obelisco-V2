@@ -111,7 +111,7 @@ const LinkDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-          <br />
+
           <br />
         </>
       ),
@@ -253,11 +253,10 @@ const LinkDocs: React.FC = () => {
       title: 'Disposición',
       content: <></>,
     },
-    // ScrollSpy revisar
     {
       subtitle: (
         <>
-          Enlaces independientes <br /> <i>(Standalone links)</i>
+          Enlaces independientes <i>(Standalone links)</i>
         </>
       ),
       content: (
@@ -280,7 +279,7 @@ const LinkDocs: React.FC = () => {
     {
       subtitle: (
         <>
-          Enlaces de anclaje <br /> <i>(Anchor links)</i>
+          Enlaces de anclaje <i>(Anchor links)</i>
         </>
       ),
       content: (
@@ -308,7 +307,7 @@ const LinkDocs: React.FC = () => {
     {
       subtitle: (
         <>
-          Enlaces en bloques de texto <br /> <i>(Inline links)</i>
+          Enlaces en bloques de texto <i>(Inline links)</i>
         </>
       ),
       content: (

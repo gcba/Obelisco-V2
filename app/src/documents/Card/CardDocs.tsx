@@ -693,7 +693,7 @@ const CardDocs: React.FC = () => {
             className="img-fluid"
           />
 
-          <p className="text-xl">Temática</p>
+          <p className="text-xl mt-4">Temática</p>
           <p className="text-md">
             Se utiliza en la página de inicio de Buenos Aires para redirigir a los principales trámites y servicios.
           </p>
@@ -722,19 +722,19 @@ const CardDocs: React.FC = () => {
             height="200"
             className="img-fluid"
           />
-          <div className="d-flex pt-3">
+          <div className="d-flex pt-3 mb-4">
             <span className="material-symbols-rounded text-success">check</span>
             <p className="mb-0">
               Utilizar tarjetas con la misma disposición y del mismo tipo dentro de un mismo grupo.
             </p>
           </div>
 
-          <p className="text-md">
+          {/* <p className="text-md">
             Las tarjetas se utilizan en grupo para organizar la navegación y redirección a contenidos relacionados de un
             mismo sitio web.
-          </p>
+          </p> */}
           <Image
-            src={`${basePath}/images/tarjetas/agrupacion_si_usar_1.svg`}
+            src={`${basePath}/images/tarjetas/agrupacion_no_usar_1.svg`}
             alt="Tarjeta horizontal tematica"
             width="800"
             height="200"
@@ -765,7 +765,7 @@ const CardDocs: React.FC = () => {
             className="img-fluid"
           />
 
-          <p className="text-md" style={{ marginTop: '1.5rem !important' }}>
+          <p className="text-md mt-3">
             En <i>desktop</i>, las tarjetas horizontales de 4 columnas pueden agruparse hasta un máximo de 3 por línea,
             mientras que las de 6 columnas pueden hasta un máximo de 2 por línea.
           </p>
@@ -779,7 +779,7 @@ const CardDocs: React.FC = () => {
           />
 
           <Image
-            src={`${basePath}/images/tarjetas/tarjetas_modulacion_4.svg`}
+            src={`${basePath}/images/tarjetas/tarjetas_modulacion_3.svg`}
             alt="Tarjetas modulacion ej 4"
             width="800"
             height="200"
@@ -791,6 +791,29 @@ const CardDocs: React.FC = () => {
             En <i>mobile</i>, todas las tarjetas van una debajo de la otra y ocupan el ancho total de la grilla del
             dispositivo.
           </p>
+
+          <Image
+            src={`${basePath}/images/tarjetas/tarjetas_modulacion_4.svg`}
+            alt="Tarjetas modulacion ej 4"
+            width="800"
+            height="200"
+            className="img-fluid"
+            style={{ marginTop: '1rem !important' }}
+          />
+
+          <p className="text-md mt-4">
+            En mobile, las tarjetas de noticias forman un carrusel horizontal para facilitar su visualización.
+          </p>
+
+          <Image
+            src={`${basePath}/images/tarjetas/tarjetas_modulacion_5.svg`}
+            alt="Tarjetas modulacion ej 4"
+            width="800"
+            height="200"
+            className="img-fluid"
+            style={{ marginTop: '1rem !important' }}
+          />
+
         </>
       ),
     },
@@ -798,16 +821,13 @@ const CardDocs: React.FC = () => {
       subtitle: 'Ejemplos de uso',
       content: (
         <>
-          <p className="text-md">
-            Las tarjetas se utilizan en grupo para organizar la navegación y redirección a contenidos relacionados de un
-            mismo sitio web.
-          </p>
           <Image
             src={`${basePath}/images/tarjetas/modulacion_si_usar.svg`}
             alt="Tarjeta horizontal tematica"
             width="800"
             height="200"
             className="img-fluid"
+            style={{ marginTop: '1rem !important' }}
           />
           <div className="d-flex pt-3">
             <span className="material-symbols-rounded text-success">check</span>
@@ -1053,8 +1073,19 @@ const CardDocs: React.FC = () => {
             horizontal, y 32 px. en sentido vertical.
           </p>
           <Image
-            src={`${basePath}/images/tarjetas/boton_espaciado.svg`}
-            alt="Espaciado del boton"
+            src={`${basePath}/images/tarjetas/tarjetas_espaciados.svg`}
+            alt="Espaciado de tarjetas"
+            width="800"
+            height="285"
+            className="img-fluid"
+          />
+          <p className="text-md pt-4">
+            En dispositivos móviles, todas las tarjetas van una debajo de la otra, ocupando el ancho total de la grilla del dispositivo. 
+            En dispositivos tablet tienen una separación de 24 px., y en dispositivos mobile tienen una separación de 16 px.
+          </p>
+          <Image 
+            src={`${basePath}/images/tarjetas/tarjetas_espaciados_mobile.svg`}
+            alt="Espaciado de tarjetas en mobile"
             width="800"
             height="285"
             className="img-fluid"
@@ -1066,7 +1097,7 @@ const CardDocs: React.FC = () => {
 
   const ACCESSIBILITY = [
     {
-      title: 'Navegación alternativa',
+      title: 'Navegación por teclado',
       content: (
         <>
           <p className="text-md">
@@ -1214,15 +1245,7 @@ const CardDocs: React.FC = () => {
       <ComponentHeader
         title="Tarjetas"
         description={[
-          'Las tarjetas son componentes accionables que se utilizan en grupo para comunicar información que requiere de cierto tipo de categorización y jerarquización visual. Se visualizan en contenedores flexibles y actúan como punto de entrada a un tema en particular.',
-          <>
-            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del
-            componente podés{' '}
-            <a href="https://gcba.github.io/estandares/componentes/tarjetas/" target="_blank" rel="noopener noreferrer">
-              visitar la documentación en Obelisco v.1
-            </a>
-            .
-          </>,
+          'Las tarjetas son componentes accionables que se agrupan para comunicar información relacionada, y actúan como punto de entrada vinculado a los detalles del contenido.',
         ]}
       />
       <Tabs

@@ -372,14 +372,13 @@ export const TARJETAS_ACCESSIBILTY = `
 `;
 
 export const TARJETAS_ACCESSIBILTY_2 = `
-<h2 class="sr-only">Encabezado de grupo de tarjetas</h2>
-<div class="container">
-  <div class="card-deck max-cards-3 card-column">
-    <div class="card card-horizontal">
-    ...
-    <div class="card card-horizontal">
-    ...
-    </div>
+<div class="card">
+  <img class="card-img" src="/card-img-top.jpg" alt="Este es el texto descriptivo de la imagen." />
+  <div class="card-body">
+    <h3 class="card-title">
+      <a href="#" class="card-title-link">Título de la tarjeta</a>
+    </h3>
+    <p class="card-text">Descripción de la tarjeta</p>
   </div>
 </div>
 `;

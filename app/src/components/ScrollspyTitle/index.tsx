@@ -8,14 +8,28 @@ const ScrollspySubtitle = ({
   text: string | React.ReactNode;
   ScrollspyComponent?: boolean;
 }) => {
+  // Convertir a string si es un ReactNode y extraer la primera parte del texto
+  const textoString = typeof text === 'string' ? text : '';
+  const primeraParte = textoString.split('<i>')[0].trim();
+
+  const textosAplicarSaltoDeLinea = ['Enlaces independientes', 'Enlaces de anclaje', 'Enlaces en bloques de texto'].includes(
+    primeraParte,
+  );
+
   return (
     <div
-      className={`${ScrollspyComponent ? 'd-flex flex-column' : ''} ${ScrollspyComponent ? 'ps-3' : ''}`.trim()}
-      style={{
-        gap: ScrollspyComponent ? '0.125rem' : '.25rem',
-        // Alinear a la izquierda en modo Scrollspy
-        alignItems: ScrollspyComponent ? 'flex-start' : 'center',
-      }}
+      className={`${textosAplicarSaltoDeLinea && ScrollspyComponent ? 'd-flex flex-column ps-3' : ''}`.trim()}
+      style={
+        textosAplicarSaltoDeLinea && ScrollspyComponent
+          ? {
+              gap: '0.125rem',
+              alignItems: 'flex-start',
+            }
+          : {
+              gap: '.25rem',
+              alignItems: 'center',
+            }
+      }
     >
       {text}
     </div>

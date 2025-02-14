@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
 const basePath = '/Obelisco-V2';
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';

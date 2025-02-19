@@ -41,11 +41,24 @@ export const SPINNER_BLOCK = `
   </div>
 </div>
 `;
+
 export const SPINNER_DESCRIPTION = `
 <div class="text-center">
   <div class="spinner-border text-primary spinner-border-lg" role="status">
     <span class="sr-only">Cargando...</span>
   </div>
   <p class="spinner-description">Cargando...</p>
+</div>
+`;
+
+export const SPINNER_ACCESSIBILTY = `
+<div class="spinner-border text-primary spinner-border-sm" role="status" aria-live="assertive">
+  <span class="sr-only">Cargando...</span>
+</div>
+`;
+
+export const SPINNER_ACCESSIBILTY2 = `
+<div class="spinner-border text-primary spinner-border-sm" role="status">
+  <span class="sr-only">Cargando...</span>
 </div>
 `;

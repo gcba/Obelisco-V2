@@ -15,6 +15,7 @@ const FooterDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Completo',
+      firstTitle: true, 
       content: (
         <CodeBox codeHTML={FOOTER}>
           <div className="px-4">
@@ -364,6 +365,7 @@ const FooterDocs: React.FC = () => {
   const SECTION_UX = [
     {
       title: 'Uso',
+      firstTitle: true, 
       content: (
         <>
           <div className="list-informative">
@@ -460,6 +462,7 @@ const FooterDocs: React.FC = () => {
   const SPECS = [
     {
       title: 'Anatomía',
+      firstTitle: true, 
       content: (
         <>
           <Image
@@ -604,6 +607,7 @@ const FooterDocs: React.FC = () => {
   const ACCESSIBILITY = [
     {
       title: 'Navegación alternativa',
+      firstTitle: true, 
       content: (
         <>
           <p className="text-md" style={{marginBottom: '32px'}} >

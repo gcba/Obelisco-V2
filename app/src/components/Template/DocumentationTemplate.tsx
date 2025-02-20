@@ -13,6 +13,7 @@ export interface Section {
   subtitle?: string | React.ReactNode;
   content?: React.ReactNode;
   description?: string;
+  firstTitle?: boolean;
 }
 
 interface DocumentationTemplateProps {
@@ -57,7 +58,11 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
                   id={section.id || `section-${type}-${index + 1}`}
                   ref={sectionRefs[index]}
                 >
-                  {section.title && <h2 className="h4 mb-3" >{section.title}</h2>}
+                  {/* {section.title && <h2 className="h4 mb-3 mt-5" style={{ marginTop: '32px !important' }} >{section.title}</h2>} */}
+                  {section.title && <h2 className="h4 mb-3" style={{ marginTop: section.firstTitle ? `0px` : '48px'}}>
+                    {section.title}
+                  </h2>}
+
                   {section.subtitle && (
                     <h3 className="text-xl mb-2" style={{ marginLeft: '-16px', marginBottom: '8px !important' }}>
                       <ScrollspySubtitle text={section.subtitle} />
@@ -65,6 +70,7 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
                   )}
                   {section.description && <SimpleText description={section.description} />}
                   {section.content && <div style={{ marginBottom: '32px' }}>{section.content}</div>}
+                  {/* <div style={{ marginBottom: `${section.contentMarginBottom || 32}px` }}>{section.content}</div> */}
                 </section>
               ))}
               {!noScrollButton && (

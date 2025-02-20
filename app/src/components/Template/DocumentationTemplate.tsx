@@ -59,7 +59,7 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
                 >
                   {section.title && <h2 className="h4 mb-3 mt-5">{section.title}</h2>}
                   {section.subtitle && (
-                    <h3 className="text-xl mb-2" style={{ marginLeft: '-16px'  }}>
+                    <h3 className="text-xl mb-2" style={{ marginLeft: '-16px' }}>
                       <ScrollspySubtitle text={section.subtitle} />
                     </h3>
                   )}

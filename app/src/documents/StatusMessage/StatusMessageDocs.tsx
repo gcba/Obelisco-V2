@@ -1,14 +1,14 @@
+import Image from 'next/image';
 import React from 'react';
+
 const basePath = '/Obelisco-V2';
+
 import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
-import Image from 'next/image';
 
-import { SM_INFO, SM_SUCCESS, SM_WARNING, SM_DANGER, SM_INSTITUTIONAL, } from './code-views';
-import { title } from 'process';
-
+import { SM_INFO, SM_SUCCESS, SM_WARNING, SM_DANGER, SM_INSTITUTIONAL } from './code-views';
 
 const SECTION_UX = [
   {
@@ -26,14 +26,17 @@ const SECTION_UX = [
           <p className="text-xl">Cuándo no usar</p>
           <ul className="list-informative-bullet">
             <li>
-              Para informar el estado actual del sistema al procesar una tarea, utilizar <a href="https://gcba.github.io/Obelisco-V2/components/alert">Alertas</a>. 
-              Por ejemplo: una alerta de error por un campo de formulario incompleto.              
+              Para informar el estado actual del sistema al procesar una tarea, utilizar{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/components/alert">Alertas</a>. Por ejemplo: una alerta de
+              error por un campo de formulario incompleto.
             </li>
             <li>
-              Para informar estados de carga temporales, utilizar el <a href="https://gcba.github.io/Obelisco-V2/components/spinner">Spinner</a>.
+              Para informar estados de carga temporales, utilizar el{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/components/spinner">Spinner</a>.
             </li>
             <li>
-            Para destacar contenido dentro del cuerpo de una página a modo de banner, utilizar el componente <a href="https://gcba.github.io/Obelisco-V2/components/highlighted">Destacado</a>.
+              Para destacar contenido dentro del cuerpo de una página a modo de banner, utilizar el componente{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/components/highlighted">Destacado</a>.
             </li>
           </ul>
         </div>
@@ -42,117 +45,126 @@ const SECTION_UX = [
   },
   {
     title: 'Tipos',
-    content: 
+    content: (
       <>
         <p className="text-xl mb-2">Mensaje institutional</p>
-        <p className="text-md mb-4">Se utiliza para brindar información institucional, por ejemplo, 
-          el redireccionamiento a otros sitios externos al Gobierno de la Ciudad de Buenos Aires.
+        <p className="text-md mb-4">
+          Se utiliza para brindar información institucional, por ejemplo, el redireccionamiento a otros sitios externos
+          al Gobierno de la Ciudad de Buenos Aires.
         </p>
-        <Image 
-            src={`${basePath}/images/mensaje_de_estado/mensaje_institucional.svg`}
-            alt="Mensaje de estado institucional"
-            width="800"
-            height="280"
-            className="img-fluid">
-        </Image>
+        <Image
+          src={`${basePath}/images/mensaje_de_estado/mensaje_institucional.svg`}
+          alt="Mensaje de estado institucional"
+          width="800"
+          height="280"
+          className="img-fluid"
+        ></Image>
 
         <p className="text-xl mt-3 pt-3 mb-2">Mensaje de información</p>
-        <p className="text-md mb-4">Se utiliza para brindar información relevante para las personas usuarias sobre el proceso
-           que están realizando. Por ejemplo: cuando no hay contenido para mostrar en una página o búsqueda, a modo de empty state. 
+        <p className="text-md mb-4">
+          Se utiliza para brindar información relevante para las personas usuarias sobre el proceso que están
+          realizando. Por ejemplo: cuando no hay contenido para mostrar en una página o búsqueda, a modo de <i>empty</i>{' '}
+          state.
         </p>
-        <Image 
-            src={`${basePath}/images/mensaje_de_estado/mensaje_informacion.svg`}
-            alt="Mensaje de estado información"
-            width="800"
-            height="280"
-            className="img-fluid">
-        </Image>
+        <Image
+          src={`${basePath}/images/mensaje_de_estado/mensaje_informacion.svg`}
+          alt="Mensaje de estado información"
+          width="800"
+          height="280"
+          className="img-fluid"
+        ></Image>
 
         <p className="text-xl mt-3 pt-3 mb-2">Mensaje de éxito</p>
-        <p className="text-md mb-4">Se utiliza para confirmar a la persona usuaria que una acción se ha realizado correctamente, 
-          brindándole seguridad y cierre sobre el proceso. 
+        <p className="text-md mb-4">
+          Se utiliza para confirmar a la persona usuaria que una acción se ha realizado correctamente, brindándole
+          seguridad y cierre sobre el proceso.
         </p>
-        <Image 
-            src={`${basePath}/images/mensaje_de_estado/mensaje_exito.svg`}
-            alt="Mensaje de estado información"
-            width="800"
-            height="280"
-            className="img-fluid">
-        </Image>
+        <Image
+          src={`${basePath}/images/mensaje_de_estado/mensaje_exito.svg`}
+          alt="Mensaje de estado información"
+          width="800"
+          height="280"
+          className="img-fluid"
+        ></Image>
 
         <p className="text-xl mt-3 pt-3 mb-2">Mensaje de advertencia</p>
-        <p className="text-md mb-4">Se utiliza para captar la atención de las personas usuarias, ya sea como advertencia previa 
-          o como consecuencia de una acción clave dentro del flujo. 
+        <p className="text-md mb-4">
+          Se utiliza para captar la atención de las personas usuarias, ya sea como advertencia previa o como
+          consecuencia de una acción clave dentro del flujo.
         </p>
-        <Image 
-            src={`${basePath}/images/mensaje_de_estado/mensaje_advertencia.svg`}
-            alt="Mensaje de estado advertencia"
-            width="800"
-            height="280"
-            className="img-fluid">
-        </Image>
+        <Image
+          src={`${basePath}/images/mensaje_de_estado/mensaje_advertencia.svg`}
+          alt="Mensaje de estado advertencia"
+          width="800"
+          height="280"
+          className="img-fluid"
+        ></Image>
 
         <p className="text-xl mt-3 pt-3 mb-2">Mensaje de error</p>
-        <p className="text-md mb-4">Se utiliza para comunicar que el proceso no se pudo completar, e indica los pasos a seguir para solucionarlo. 
+        <p className="text-md mb-4">
+          Se utiliza para comunicar que el proceso no se pudo completar, e indica los pasos a seguir para solucionarlo.
         </p>
-        <Image 
-            src={`${basePath}/images/mensaje_de_estado/mensaje_error.svg`}
-            alt="Mensaje de estado error"
-            width="800"
-            height="280"
-            className="img-fluid">
-        </Image>
-
-      </>,
+        <Image
+          src={`${basePath}/images/mensaje_de_estado/mensaje_error.svg`}
+          alt="Mensaje de estado error"
+          width="800"
+          height="280"
+          className="img-fluid"
+        ></Image>
+      </>
+    ),
   },
   {
     title: 'Disposición',
-    content:
+    content: (
       <>
-        <p className="text-md mb-4">La información textual de los mensajes de estado debe brindar un contexto claro y entendible, 
-          para que la persona usuaria determine cómo continuar.
+        <p className="text-md mb-4">
+          El mensaje de estado debe ser el único elemento del cuerpo de la página, para hacer foco en el contenido y
+          evitar sobrecargar a la persona usuaria con información.
         </p>
-        <Image 
-            src={`${basePath}/images/mensaje_de_estado/disposicion.svg`}
-            alt="Disposición"
-            width="800"
-            height="280"
-            className="img-fluid">
-        </Image>
+        <Image
+          src={`${basePath}/images/mensaje_de_estado/disposicion.svg`}
+          alt="Disposición"
+          width="800"
+          height="280"
+          className="img-fluid"
+        ></Image>
       </>
+    ),
   },
   {
     title: 'Contenido',
-    content:
+    content: (
       <>
-        <p className="text-md mb-4">La información textual de los mensajes de estado debe brindar un contexto claro y entendible, 
-          para que la persona usuaria determine cómo continuar.
+        <p className="text-md mb-4">
+          La información textual de los mensajes de estado debe brindar un contexto claro y entendible, para que la
+          persona usuaria determine cómo continuar.
         </p>
         <div className="col">
-          <Image 
-              src={`${basePath}/images/mensaje_de_estado/contenido_correcto.svg`}
-              alt="Buena práctica de contenido"
-              width="800"
-              height="280"
-              className="img-fluid">
-          </Image>
+          <Image
+            src={`${basePath}/images/mensaje_de_estado/contenido_correcto.svg`}
+            alt="Buena práctica de contenido"
+            width="800"
+            height="280"
+            className="img-fluid"
+          ></Image>
           <div className="d-flex pt-3">
             <span className="material-symbols-rounded text-success">check</span>
             <p className="mb-0">
-            Los encabezados y las descripciones deben agregar información útil para ayudar a la persona usuaria a entender 
-            los diferentes estados de un proceso.
+              Los encabezados y las descripciones deben agregar información útil para ayudar a la persona usuaria a
+              entender los diferentes estados de un proceso.
             </p>
           </div>
         </div>
         <div className="col">
-          <Image 
-              src={`${basePath}/images/mensaje_de_estado/contenido_incorrecto.svg`}
-              alt="Mala práctica de contenido"
-              width="800"
-              height="280"
-              className="img-fluid"
-              style={{ marginTop: '2rem !important' }}>
-          </Image>
+          <Image
+            src={`${basePath}/images/mensaje_de_estado/contenido_incorrecto.svg`}
+            alt="Mala práctica de contenido"
+            width="800"
+            height="280"
+            className="img-fluid"
+            style={{ marginTop: '2rem !important' }}
+          ></Image>
           <div className="d-flex pt-3">
             <span className="material-symbols-rounded text-danger">close</span>
             <p className="mb-0">
@@ -162,83 +174,112 @@ const SECTION_UX = [
         </div>
 
         <p className="text-xl mt-3 pt-3 mb-3">Uso de accionables</p>
-        <p className="text-md mb-3">Los mensajes de estado deben incluir accionables claros que permitan a la persona usuaria 
-          tomar decisiones útiles frente a una situación específica. Estos accionables facilitan continuar navegando 
-          por el sitio o acceder rápidamente a ayuda en caso de necesitarlo, mejorando la experiencia y reduciendo 
-          posibles frustraciones.
+        <p className="text-md mb-3">
+          Los mensajes de estado deben incluir accionables claros que permitan a la persona usuaria tomar decisiones
+          útiles frente a una situación específica. Estos accionables facilitan continuar navegando por el sitio o
+          acceder rápidamente a ayuda en caso de necesitarlo, mejorando la experiencia y reduciendo posibles
+          frustraciones.
         </p>
         <ul className="list-informative-bullet">
-            <li>Las etiquetas de los botones deben ser breves, claras y descriptivas. 
-              Se recomienda usar verbos en indicativo que describan la acción que se realizará, como “Adjuntar archivo”.
-            </li>
-            <li>Representan una oportunidad para incentivar a las personas usuarias a seguir navegando e interactuando con la página.</li>
+          <li>
+            Las etiquetas de los botones deben ser breves, claras y descriptivas. Se recomienda usar verbos en
+            indicativo que describan la acción que se realizará, como “Adjuntar archivo”.
+          </li>
+          <li>
+            Representan una oportunidad para incentivar a las personas usuarias a seguir navegando e interactuando con
+            la página.
+          </li>
         </ul>
         <div className="col">
-          <Image 
-              src={`${basePath}/images/mensaje_de_estado/accionable_correcto.svg`}
-              alt="Buena práctica de accionable"
-              width="800"
-              height="280"
-              className="img-fluid"
-              style={{ marginTop: '1.5rem !important' }}>
-          </Image>
+          <Image
+            src={`${basePath}/images/mensaje_de_estado/accionable_correcto.svg`}
+            alt="Buena práctica de accionable"
+            width="800"
+            height="280"
+            className="img-fluid"
+            style={{ marginTop: '1.5rem !important' }}
+          ></Image>
           <div className="d-flex pt-2">
             <span className="material-symbols-rounded text-success">check</span>
-            <p className="mb-0">
-              Utilizar los mensajes de estado como una oportunidad para reponerse de los errores.
-            </p>
+            <p className="mb-0">Utilizar los mensajes de estado como una oportunidad para reponerse de los errores.</p>
           </div>
         </div>
         <div className="col">
-          <Image 
-              src={`${basePath}/images/mensaje_de_estado/accionable_incorrecto.svg`}
-              alt="Mala práctica de accionable"
-              width="800"
-              height="280"
-              className="img-fluid"
-              style={{ marginTop: '2rem !important' }}>
-          </Image>
+          <Image
+            src={`${basePath}/images/mensaje_de_estado/accionable_incorrecto.svg`}
+            alt="Mala práctica de accionable"
+            width="800"
+            height="280"
+            className="img-fluid"
+            style={{ marginTop: '2rem !important' }}
+          ></Image>
           <div className="d-flex pt-2">
             <span className="material-symbols-rounded text-danger">close</span>
             <p className="mb-0">
-              No brindar las acciones pertinentes al mensaje de estado puede generar que la persona usuaria cierre la página o abandone la navegación.
+              No brindar las acciones pertinentes al mensaje de estado puede generar que la persona usuaria cierre la
+              página o abandone la navegación.
+            </p>
+          </div>
+        </div>
+
+        <p className="text-xl mt-3 pt-3 mb-3">Colores semánticos y uso de íconos</p>
+        <p className="text-md mb-3">
+          El ícono de un mensaje de estado sirve como refuerzo visual y semántico para ayudar a la persona usuaria a
+          identificar el tipo de <i>feedback</i> que recibe. Más allá de la ayuda que representa, no se debe depender de
+          la iconografía para comunicar el estado, por lo que el título y la descripción del mensaje deben ser claros y
+          explicativos.
+        </p>
+        <div className="col">
+          <Image
+            src={`${basePath}/images/mensaje_de_estado/colores_semanticos_iconos.svg`}
+            alt="Mala práctica de colores semanticos"
+            width="800"
+            height="280"
+            className="img-fluid"
+            style={{ marginTop: '2rem !important' }}
+          ></Image>
+          <div className="d-flex pt-2">
+            <span className="material-symbols-rounded text-danger">close</span>
+            <p className="mb-0">
+              No modificar el uso de la paleta cromática en la iconografía. El color semántico debe ser congruente con
+              el contenido del mensaje.
             </p>
           </div>
         </div>
       </>
+    ),
   },
   {
     title: 'Patrones de uso',
-    content:
+    content: (
       <>
-        <p className="text-md">El mensaje de estado aparece posterior a procesos de carga y no suplanta otros componentes 
-          que se utilizan para guiar la espera. Por ejemplo, dentro de un pago o trámite, se utiliza para detallar y confirmar 
-          la actualidad del proceso e indicar los siguientes pasos.
+        <p className="text-md">
+          El mensaje de estado aparece posterior a procesos de carga y no suplanta otros componentes que se utilizan
+          para guiar la espera. Por ejemplo, dentro de un pago o trámite, se utiliza para detallar y confirmar la
+          actualidad del proceso e indicar los siguientes pasos.
         </p>
         <div className="col">
-          <Image 
-              src={`${basePath}/images/mensaje_de_estado/patron_de_uso_1.svg`}
-              alt="Patrón de uso paso 1"
-              width="800"
-              height="280"
-              className="img-fluid"
-              style={{ marginTop: '2rem !important' }}>
-          </Image>
+          <Image
+            src={`${basePath}/images/mensaje_de_estado/patron_de_uso_1.svg`}
+            alt="Patrón de uso paso 1"
+            width="800"
+            height="280"
+            className="img-fluid"
+            style={{ marginTop: '2rem !important' }}
+          ></Image>
           <div className="d-flex pt-2">
-            <p className="mb-0">
-              1. La persona usuaria confirma el proceso.
-            </p>
+            <p className="mb-0">1. La persona usuaria confirma el proceso.</p>
           </div>
         </div>
         <div className="col">
-          <Image 
-              src={`${basePath}/images/mensaje_de_estado/patron_de_uso_2.svg`}
-              alt="Patrón de uso paso 2"
-              width="800"
-              height="280"
-              className="img-fluid"
-              style={{ marginTop: '2rem !important' }}>
-          </Image>
+          <Image
+            src={`${basePath}/images/mensaje_de_estado/patron_de_uso_2.svg`}
+            alt="Patrón de uso paso 2"
+            width="800"
+            height="280"
+            className="img-fluid"
+            style={{ marginTop: '2rem !important' }}
+          ></Image>
           <div className="d-flex pt-2">
             <p className="mb-0">
               2. El sistema valida la información mediante la retroalimentación del indicador de carga.
@@ -246,24 +287,24 @@ const SECTION_UX = [
           </div>
         </div>
         <div className="col">
-          <Image 
-              src={`${basePath}/images/mensaje_de_estado/patron_de_uso_3.svg`}
-              alt="Patrón de uso paso 3"
-              width="800"
-              height="280"
-              className="img-fluid"
-              style={{ marginTop: '2rem !important' }}>
-          </Image>
+          <Image
+            src={`${basePath}/images/mensaje_de_estado/patron_de_uso_3.svg`}
+            alt="Patrón de uso paso 3"
+            width="800"
+            height="280"
+            className="img-fluid"
+            style={{ marginTop: '2rem !important' }}
+          ></Image>
           <div className="d-flex pt-2">
             <p className="mb-0">
-              3. El mensaje de estado brinda visibilidad sobre la confirmación o rechazo de la solicitud, 
-              y las acciones pertinentes para que la persona usuaria continúe la navegación.
+              3. El mensaje de estado brinda visibilidad sobre la confirmación o rechazo de la solicitud, y las acciones
+              pertinentes para que la persona usuaria continúe la navegación.
             </p>
           </div>
         </div>
       </>
-  }
-
+    ),
+  },
 ];
 
 const SECTIONS_DEV = [
@@ -460,152 +501,155 @@ const SECTIONS_DEV = [
 ];
 
 const SPECS = [
-    {
-      title: 'Anatomía',
-      content: (
-        <>
-          <Image
-            src={`${basePath}/images/mensaje_de_estado/anatomia.svg`}
-            alt="Anatomia del mensaje de estado"
-            width="800"
-            height="280"
-            className="img-fluid"
-          />
-
-          <div className="responsive-scroll mt-4" tabIndex={0}>
-            <table className="table">
-              <thead>
-                <tr>
-                  <th scope="col" className="tb-text">
-                    Elemento
-                  </th>
-                  <th scope="col" className="tb-text">
-                    Carácter
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Ícono o ilustración</td>
-                  <td>Obligatorio.</td>
-                </tr>
-                <tr>
-                  <td>Título</td>
-                  <td>Obligatorio.</td>
-                </tr>
-                <tr>
-                  <td>Descripción</td>
-                  <td>Obligatoria.</td>
-                </tr>
-                <tr>
-                  <td>Lista informativa</td>
-                  <td>Opcional, solo si es necesario listar información.</td>
-                </tr>
-                <tr>
-                  <td>Accionables</td>
-                  <td>Obligatorio. Puede llevar hasta 2 accionables.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </>
-      ),
-    },
-    {
-      title: 'Variantes',
-      content: <></>,
-    },
-    {        
-      subtitle: (
-        <>
-          <i>Desktop</i>
-        </>
-      ),
-      content: (
-        <>
-          <p className="text-md mb-4">En la versión desktop, los mensajes de estado siguen el patrón de lectura en F y un orden de lectura de izquierda a derecha.</p>
-          <Image
-            src={`${basePath}/images/mensaje_de_estado/variante_desktop.svg`}
-            alt="Variante desktop de mensaje de estado"
-            width="800"
-            height="280"
-            className="img-fluid"
-          />
-        </>
-      )
-    },
-    {        
-      subtitle: (
-        <>
-          <i>Mobile</i>
-        </>
-      ),
-      content: (
-        <>
-          <p className="text-md mb-4">En dispositivos móviles, los mensajes de estado siguen la estructura de columna, 
-            acomodando los elementos que conforman el componente uno debajo del otro. 
-            Por tratarse de acciones principales y para asegurar la usabilidad de los accionables, 
-            los botones siguen la alineación en columna y de ancho completo.
-          </p>
-          <Image
-            src={`${basePath}/images/mensaje_de_estado/variante_mobile.svg`}
-            alt="Variante mobile de mensaje de estado"
-            width="800"
-            height="280"
-            className="img-fluid"
-          />
-        </>
-      )
-    },
-
-
-    {
-      title: 'Espaciado',
-      content: (
+  {
+    title: 'Anatomía',
+    content: (
       <>
-        <p className="text-md">El mensaje de estado se divide en dos bloques. El primer bloque incluye el ícono, el título, la bajada y la lista, 
-          con un espaciado de 16px entre cada elemento. El segundo, contiene los accionables y tiene un espaciado de 48px 
-          respecto al primer bloque.
+        <Image
+          src={`${basePath}/images/mensaje_de_estado/anatomia.svg`}
+          alt="Anatomia del mensaje de estado"
+          width="800"
+          height="280"
+          className="img-fluid"
+        />
+
+        <div className="responsive-scroll mt-4" tabIndex={0}>
+          <table className="table">
+            <thead>
+              <tr>
+                <th scope="col" className="tb-text">
+                  Elemento
+                </th>
+                <th scope="col" className="tb-text">
+                  Carácter
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ícono o ilustración</td>
+                <td>Obligatorio.</td>
+              </tr>
+              <tr>
+                <td>Título</td>
+                <td>Obligatorio.</td>
+              </tr>
+              <tr>
+                <td>Descripción</td>
+                <td>Obligatoria.</td>
+              </tr>
+              <tr>
+                <td>Lista informativa</td>
+                <td>Opcional, solo si es necesario listar información.</td>
+              </tr>
+              <tr>
+                <td>Accionables</td>
+                <td>Obligatorio. Puede llevar hasta 2 accionables.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </>
+    ),
+  },
+  {
+    title: 'Variantes',
+    content: <></>,
+  },
+  {
+    subtitle: (
+      <>
+        <i>Desktop</i>
+      </>
+    ),
+    content: (
+      <>
+        <p className="text-md mb-4">
+          En la versión <i>desktop</i>, los mensajes de estado siguen el patrón de lectura en F y un orden de lectura de
+          izquierda a derecha.
+        </p>
+        <Image
+          src={`${basePath}/images/mensaje_de_estado/variante_desktop.svg`}
+          alt="Variante desktop de mensaje de estado"
+          width="800"
+          height="280"
+          className="img-fluid"
+        />
+      </>
+    ),
+  },
+  {
+    subtitle: (
+      <>
+        <i>Mobile</i>
+      </>
+    ),
+    content: (
+      <>
+        <p className="text-md mb-4">
+          En dispositivos móviles, los mensajes de estado siguen la estructura de columna, acomodando los elementos que
+          conforman el componente uno debajo del otro. Por tratarse de acciones principales y para asegurar la
+          usabilidad de los accionables, los botones siguen la alineación en columna y de ancho completo.
+        </p>
+        <Image
+          src={`${basePath}/images/mensaje_de_estado/variante_mobile.svg`}
+          alt="Variante mobile de mensaje de estado"
+          width="800"
+          height="280"
+          className="img-fluid"
+        />
+      </>
+    ),
+  },
+
+  {
+    title: 'Espaciado',
+    content: (
+      <>
+        <p className="text-md">
+          El mensaje de estado se divide en dos bloques. El primer bloque incluye el ícono, el título, la bajada y la
+          lista, con un espaciado de 16px entre cada elemento. El segundo, contiene los accionables y tiene un espaciado
+          de 48px respecto al primer bloque.
         </p>
       </>
     ),
-    },
-    {        
-      subtitle: (
-        <>
-          <i>Desktop</i>
-        </>
-      ),
-      content: (
-        <>          
-          <Image
-            src={`${basePath}/images/mensaje_de_estado/espaciado_desktop.svg`}
-            alt="Espaciado desktop de mensaje de estado"
-            width="800"
-            height="280"
-            className="img-fluid"
-          />
-        </>
-      )
-    },
-    {        
-      subtitle: (
-        <>
-          <i>Mobile</i>
-        </>
-      ),
-      content: (
-        <>       
-          <Image
-            src={`${basePath}/images/mensaje_de_estado/espaciado_mobile.svg`}
-            alt="Espaciado mobile de mensaje de estado"
-            width="800"
-            height="280"
-            className="img-fluid"
-          />
-        </>
-      )
-    },
+  },
+  {
+    subtitle: (
+      <>
+        <i>Desktop</i>
+      </>
+    ),
+    content: (
+      <>
+        <Image
+          src={`${basePath}/images/mensaje_de_estado/espaciado_desktop.svg`}
+          alt="Espaciado desktop de mensaje de estado"
+          width="800"
+          height="280"
+          className="img-fluid"
+        />
+      </>
+    ),
+  },
+  {
+    subtitle: (
+      <>
+        <i>Mobile</i>
+      </>
+    ),
+    content: (
+      <>
+        <Image
+          src={`${basePath}/images/mensaje_de_estado/espaciado_mobile.svg`}
+          alt="Espaciado mobile de mensaje de estado"
+          width="800"
+          height="280"
+          className="img-fluid"
+        />
+      </>
+    ),
+  },
 ];
 
 const ACCESSIBILITY = [
@@ -614,15 +658,14 @@ const ACCESSIBILITY = [
     content: (
       <>
         <p className="text-md">
-          Todos los elementos del mensaje de estado pueden recorrerse utilizando la navegación por teclado u otras herramientas
-          de asistencia como lectores por voz.
+          Todos los elementos del mensaje de estado pueden recorrerse utilizando la navegación por teclado u otras
+          herramientas de asistencia como lectores por voz.
         </p>
         <span className="badge badge-default ms-1">TAB</span>
         <span className="badge badge-default">ENTER</span>
         <p className="text-md">
-          Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Además, con
-          el <i>enter</i>, puede accionar los elementos sobre los que esté posicionada como botones, enlaces, entre
-          otros.
+          Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Además, con el{' '}
+          <i>enter</i>, puede accionar los elementos sobre los que esté posicionada como botones, enlaces, entre otros.
         </p>
 
         <Image
@@ -661,10 +704,9 @@ const ACCESSIBILITY = [
           Success Criterion 1.4.3 Contrast (Minimum) (Level AA)
         </a>
         <p>
-          La presentación visual de texto y de imágenes de texto tiene una relación de contraste de por lo menos
-          4.5:1, excepto textos grandes e imágenes de texto grande que tienen un contraste de por lo menos 3:1, textos
-          o imágenes que son parte de un componente inactivo de interfaz de usuario o son pura decoración, o
-          logotipos.
+          La presentación visual de texto y de imágenes de texto tiene una relación de contraste de por lo menos 4.5:1,
+          excepto textos grandes e imágenes de texto grande que tienen un contraste de por lo menos 3:1, textos o
+          imágenes que son parte de un componente inactivo de interfaz de usuario o son pura decoración, o logotipos.
         </p>
 
         <a
@@ -685,13 +727,14 @@ const ACCESSIBILITY = [
         >
           Success Criterion 2.1.2 No Keyboard Trap (Level A)
         </a>
-        <p>Si el foco del teclado puede moverse a un componente de la página utilizando una interfaz de teclado,
-          también debe ser posible mover el foco fuera de ese componente usando únicamente la misma interfaz de teclado.
-          Si se requiere algo más que las teclas de flecha, tabulador u otros métodos estándar para salir,
-          se debe informar al usuario sobre el método necesario para mover el foco.
+        <p>
+          Si el foco del teclado puede moverse a un componente de la página utilizando una interfaz de teclado, también
+          debe ser posible mover el foco fuera de ese componente usando únicamente la misma interfaz de teclado. Si se
+          requiere algo más que las teclas de flecha, tabulador u otros métodos estándar para salir, se debe informar al
+          usuario sobre el método necesario para mover el foco.
         </p>
 
-        <a 
+        <a
           className="external mb-2"
           href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html"
           target="_blank"
@@ -699,7 +742,9 @@ const ACCESSIBILITY = [
         >
           Success Criterion 2.4.7 Focus Visible (Level AA)
         </a>
-        <p>Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque del teclado es visible.
+        <p>
+          Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque
+          del teclado es visible.
         </p>
 
         <a
@@ -710,21 +755,24 @@ const ACCESSIBILITY = [
         >
           Success Criterion 2.4.3 Focus Order (Level A)
         </a>
-        <p>Si una página web puede navegarse de forma secuencial y las secuencias de navegación afectan el significado o la operación, 
-          los componentes enfocables reciben el foco en un orden que preserve el significado y la operabilidad.
+        <p>
+          Si una página web puede navegarse de forma secuencial y las secuencias de navegación afectan el significado o
+          la operación, los componentes enfocables reciben el foco en un orden que preserve el significado y la
+          operabilidad.
         </p>
 
-        <a 
-          className="external mb-2" 
+        <a
+          className="external mb-2"
           href="https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html#dfn-link-purpose"
-          target="_blank" 
+          target="_blank"
           rel="noopener noreferrer"
         >
           Success Criterion 2.4.4 Link Purpose (In Context) (Level A)
         </a>
-        <p>El propósito de cada enlace debe ser determinado solo con el texto del enlace o con el texto del enlace junto 
-          con su contexto determinado de forma programática, excepto en los casos en los que el propósito del enlace 
-          sea ambiguo para los usuarios en general.
+        <p>
+          El propósito de cada enlace debe ser determinado solo con el texto del enlace o con el texto del enlace junto
+          con su contexto determinado de forma programática, excepto en los casos en los que el propósito del enlace sea
+          ambiguo para los usuarios en general.
         </p>
       </>
     ),
@@ -740,7 +788,7 @@ const StatusMessageDocs: React.FC = () => {
           'Los mensajes de estado son elementos que informan y brindan contexto a las personas usuarias dentro de un flujo, acompañando su experiencia con retroalimentación relevante.',
         ]}
       />
-      <Tabs 
+      <Tabs
         sectionUx={SECTION_UX}
         sectionDev={SECTIONS_DEV}
         customSections={[

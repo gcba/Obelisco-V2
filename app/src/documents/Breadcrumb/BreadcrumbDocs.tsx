@@ -14,7 +14,7 @@ const BreadcrumbDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Simple',
-      firstTitle: true, 
+      firstTitle: true,
       content: (
         <>
           <CodeBox codeHTML={BREADCRUMB}>
@@ -45,7 +45,7 @@ const BreadcrumbDocs: React.FC = () => {
   const SECTION_UX = [
     {
       title: 'Uso',
-      firstTitle: true, 
+      firstTitle: true,
       content: (
         <>
           <div className="list-informative">
@@ -83,7 +83,7 @@ const BreadcrumbDocs: React.FC = () => {
       title: 'Disposición',
       content: (
         <>
-          <p className="text-md mb-4">
+          <p className="text-md" style={{ marginTop: '32px' }}>
             Se ubican en la parte superior izquierda de la página, generalmente, dentro del encabezado de página, por
             encima del título H1.
           </p>
@@ -123,7 +123,7 @@ const BreadcrumbDocs: React.FC = () => {
   const SPECS = [
     {
       title: 'Anatomía',
-      firstTitle: true, 
+      firstTitle: true,
       content: (
         <>
           <p className="text-md mb-4">Las migas de pan tienen una composición diferente dependiendo de la variante.</p>
@@ -223,7 +223,7 @@ const BreadcrumbDocs: React.FC = () => {
   const ACCESSIBILITY = [
     {
       title: 'Navegación alternativa',
-      firstTitle: true, 
+      firstTitle: true,
       content: (
         <>
           <p className="text-md">

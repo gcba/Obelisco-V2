@@ -16,6 +16,7 @@ const CalendarDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Predeterminado',
+      firstTitle: true,
       content: (
         <CodeBox codeHTML={CALENDAR_DEFAULT}>
           <div className="row justify-content-center">

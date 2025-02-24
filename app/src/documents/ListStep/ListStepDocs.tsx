@@ -15,6 +15,7 @@ const ListStepDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Tamaños',
+      firstTitle: true,
     },
     {
       subtitle: 'Grande',

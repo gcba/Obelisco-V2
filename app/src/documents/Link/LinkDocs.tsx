@@ -15,6 +15,7 @@ const LinkDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Predeterminado',
+      firstTitle: true,
       content: (
         <>
           <CodeBox codeHTML={LINK_DEFAULT}>
@@ -121,6 +122,7 @@ const LinkDocs: React.FC = () => {
   const SECTION_UX = [
     {
       title: 'Uso',
+      firstTitle: true,
       content: (
         <>
           <div className="list-informative pb-3">
@@ -567,6 +569,7 @@ const LinkDocs: React.FC = () => {
   const SPECS = [
     {
       title: 'Anatomía',
+      firstTitle: true,
       content: (
         <>
           <p className="text-md">El enlace puede tener hasta 3 elementos dependiendo del tipo.</p>
@@ -727,6 +730,7 @@ const LinkDocs: React.FC = () => {
   const ACCESSIBILITY = [
     {
       title: 'Navegación alternativa',
+      firstTitle: true,
       content: (
         <>
           <p className="text-md">

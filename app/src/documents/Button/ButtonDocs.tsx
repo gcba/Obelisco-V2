@@ -28,6 +28,7 @@ const ButtonDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Tipos',
+      firstTitle: true,
       content: (
         <>
           <CodeBox codeHTML={BUTTON_SOLID}>
@@ -397,6 +398,7 @@ const ButtonDocs: React.FC = () => {
   const SECTION_UX = [
     {
       title: 'Uso',
+      firstTitle: true,
       content: (
         <>
           <div className="list-informative pb-3">
@@ -1089,6 +1091,7 @@ const ButtonDocs: React.FC = () => {
   const SPECS = [
     {
       title: 'Anatomía',
+      firstTitle: true,
       content: (
         <>
           <p className="text-md">El botón se compone de 4 elementos.</p>
@@ -1278,6 +1281,7 @@ const ButtonDocs: React.FC = () => {
   const ACCESSIBILITY = [
     {
       title: 'Navegación alternativa',
+      firstTitle: true,
       content: (
         <>
           <p className="text-md">

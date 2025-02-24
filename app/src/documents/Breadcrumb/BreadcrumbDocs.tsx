@@ -57,7 +57,7 @@ const BreadcrumbDocs: React.FC = () => {
               </li>
             </ul>
           </div>
-          <div className="list-informative" style={{ marginTop: '32px' }} >
+          <div className="list-informative" style={{ marginTop: '32px' }}>
             <p className="text-xl">Cuándo no usar</p>
             <ul className="list-informative-bullet">
               <li>Como enlaces a contenido que se ubique por fuera del encabezado de la página.</li>

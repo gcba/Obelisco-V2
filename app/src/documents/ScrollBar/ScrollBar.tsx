@@ -9,6 +9,7 @@ const ScrollBarDocs: React.FC = () => {
     {
       id: 'section-1',
       title: 'Horizontal',
+      firstTitle: true,
       content: (
         <CodeBox codeHTML={SCROLLBAR_HORIZONTAL}>
           <div className="container">

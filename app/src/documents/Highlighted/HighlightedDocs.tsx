@@ -30,6 +30,7 @@ const HighlightedDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Destacado banner',
+      firstTitle: true,
       content: (
         <>
           <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTONS}>

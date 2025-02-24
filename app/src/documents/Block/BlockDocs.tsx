@@ -9,6 +9,7 @@ const BlockDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Predeterminado',
+      firstTitle: true,
       content: (
         <CodeBox codeHTML={BLOCK}>
           <div className="container">

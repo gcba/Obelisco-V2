@@ -14,6 +14,7 @@ import {
 const SECTIONS_DEV = [
   {
     title: 'Simple',
+    firstTitle: true,
     content: (
       <CodeBox codeHTML={NAV_HORIZONTAL_SIMPLE}>
         <div className="container w-fit">

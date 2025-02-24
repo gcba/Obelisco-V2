@@ -15,7 +15,7 @@ const FooterDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Completo',
-      firstTitle: true, 
+      firstTitle: true,
       content: (
         <CodeBox codeHTML={FOOTER}>
           <div className="px-4">
@@ -365,7 +365,7 @@ const FooterDocs: React.FC = () => {
   const SECTION_UX = [
     {
       title: 'Uso',
-      firstTitle: true, 
+      firstTitle: true,
       content: (
         <>
           <div className="list-informative">
@@ -421,7 +421,8 @@ const FooterDocs: React.FC = () => {
                 Con información útil
               </p>
               <p className="text-md mb-3">
-                Se utiliza en páginas orientadas a la asistencia al ciudadano, ofreciéndole canales de contacto y asistencia.
+                Se utiliza en páginas orientadas a la asistencia al ciudadano, ofreciéndole canales de contacto y
+                asistencia.
               </p>
             </div>
           </div>
@@ -462,7 +463,7 @@ const FooterDocs: React.FC = () => {
   const SPECS = [
     {
       title: 'Anatomía',
-      firstTitle: true, 
+      firstTitle: true,
       content: (
         <>
           <Image
@@ -537,9 +538,7 @@ const FooterDocs: React.FC = () => {
       subtitle: <>Información útil</>,
       content: (
         <>
-          <p className="text-md mb-4">
-            Contiene teléfonos útiles y redes sociales de la Ciudad.
-          </p>
+          <p className="text-md mb-4">Contiene teléfonos útiles y redes sociales de la Ciudad.</p>
           <Image
             src={`${basePath}/images/footer/footer_especificaciones_informacion_util.svg`}
             alt="Footer Información útil"
@@ -607,10 +606,10 @@ const FooterDocs: React.FC = () => {
   const ACCESSIBILITY = [
     {
       title: 'Navegación alternativa',
-      firstTitle: true, 
+      firstTitle: true,
       content: (
         <>
-          <p className="text-md" style={{marginBottom: '32px'}} >
+          <p className="text-md" style={{ marginBottom: '32px' }}>
             Todos los elementos del pie de página <i>(footer)</i> pueden recorrerse utilizando la navegación por teclado
             u otras herramientas de asistencia como lectores por voz.
           </p>
@@ -618,7 +617,8 @@ const FooterDocs: React.FC = () => {
           <span className="badge badge-default">ENTER</span>
           <p className="text-md mb-4">
             Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Además, con
-            el <i>enter</i>, puede accionar los elementos sobre los que esté posicionada como botones, enlaces, entre otros.
+            el <i>enter</i>, puede accionar los elementos sobre los que esté posicionada como botones, enlaces, entre
+            otros.
           </p>
 
           <Image

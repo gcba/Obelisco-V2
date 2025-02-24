@@ -9,6 +9,7 @@ const BadgeDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Colores',
+      firstTitle: true,
       content: (
         <CodeBox codeHTML={BADGE_COLORS}>
           <div className="row justify-content-center">

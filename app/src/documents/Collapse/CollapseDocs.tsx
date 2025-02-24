@@ -16,6 +16,7 @@ const CollapseDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Selección única',
+      firstTitle: true,
       content: (
         <CodeBox codeHTML={COLLAPSE}>
           <div className="container">

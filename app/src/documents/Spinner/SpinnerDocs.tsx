@@ -22,6 +22,7 @@ const SpinnerDocs: React.FC = () => {
   const SECTION_UX = [
     {
       title: 'Uso',
+      firstTitle: true,
       content: (
         <>
           <div className="list-informative pb-3">

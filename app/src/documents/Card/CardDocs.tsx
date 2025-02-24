@@ -30,7 +30,7 @@ const CardDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Horizontal',
-      firstTitle: true
+      firstTitle: true,
     },
     {
       subtitle: 'Con icono',
@@ -580,7 +580,7 @@ const CardDocs: React.FC = () => {
               </li>
             </ul>
           </div>
-          <div className="list-informative" style={{ marginTop: '32px' }} >
+          <div className="list-informative" style={{ marginTop: '32px' }}>
             <p className="text-xl">Cuándo no usar</p>
             <ul className="list-informative-bullet">
               <li>
@@ -605,7 +605,7 @@ const CardDocs: React.FC = () => {
       title: 'Disposición',
       content: (
         <>
-          <p style={{ marginTop: '32px' }} >
+          <p style={{ marginTop: '32px' }}>
             En Obelisco existen 2 disposiciones posibles: vertical y horizontal. La disposición del componente sirve
             para generar diferentes niveles de jerarquía según el tipo de tarjeta.
           </p>
@@ -695,7 +695,9 @@ const CardDocs: React.FC = () => {
             className="img-fluid"
           />
 
-          <p className="text-xl mb-4" style={{ marginTop: '32px' }} >Temática</p>
+          <p className="text-xl mb-4" style={{ marginTop: '32px' }}>
+            Temática
+          </p>
           <p className="text-md">
             Se utiliza en la página de inicio de Buenos Aires para redirigir a los principales trámites y servicios.
           </p>
@@ -724,7 +726,7 @@ const CardDocs: React.FC = () => {
             height="200"
             className="img-fluid"
           />
-          <div className="d-flex pt-2" style={{ marginTop: '32px' }} >
+          <div className="d-flex pt-2" style={{ marginTop: '32px' }}>
             <span className="material-symbols-rounded text-success">check</span>
             <p className="mb-0">
               Utilizar tarjetas con la misma disposición y del mismo tipo dentro de un mismo grupo.

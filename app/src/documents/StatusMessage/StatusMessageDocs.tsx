@@ -13,6 +13,7 @@ import { SM_INFO, SM_SUCCESS, SM_WARNING, SM_DANGER, SM_INSTITUTIONAL } from './
 const SECTION_UX = [
   {
     title: 'Uso',
+    firstTitle: true,
     content: (
       <>
         <div className="list-informative pb-3">

@@ -7,6 +7,7 @@ import { TOOLTIP_BUTTONS, TOOLTIP_ICONS } from './code-views';
 const SECTIONS_DEV = [
   {
     title: 'Con botones',
+    firstTitle: true,
     content: (
       <CodeBox codeHTML={TOOLTIP_BUTTONS}>
         <div className="row mb-4 justify-content-center">

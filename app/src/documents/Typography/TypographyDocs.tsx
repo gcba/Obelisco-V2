@@ -9,6 +9,7 @@ const basePath = '/Obelisco-V2';
 const SECTIONS_UX = [
   {
     title: 'Principios',
+    firstTitle: true,
     content: (
       <div className="list-informative pb-3">
         <ul className="list-informative-bullet">

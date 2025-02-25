@@ -135,7 +135,7 @@ const sections = [
           uso.
         </p>
 
-        <a href="https://gcba.github.io/Obelisco-V2/components" className="external">
+        <a href="https://gcba.github.io/Obelisco-V2/components" className="access">
           Librería de Obelisco
         </a>
       </>

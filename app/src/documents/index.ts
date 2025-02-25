@@ -10,6 +10,7 @@ export * from './NavHorizontal/NavHorizontalDocs';
 export * from './NavVertical/NavVerticalDocs';
 export * from './getting-started-module/ImportsModule';
 export * from './getting-started-module/InstallationModule';
+export * from './getting-started-module/AccessibilityModule';
 export * from './getting-started-module/IntroductionModule';
 export * from './Typography/TypographyDocs';
 export * from './Link/LinkDocs';

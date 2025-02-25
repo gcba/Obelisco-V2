@@ -25,7 +25,7 @@ const SpinnerDocs: React.FC = () => {
       firstTitle: true,
       content: (
         <>
-          <div className="list-informative pb-3">
+          <div className="list-informative">
             <p className="text-xl">Cuándo usar</p>
             <ul className="list-informative-bullet">
               <li>
@@ -33,7 +33,7 @@ const SpinnerDocs: React.FC = () => {
               </li>
             </ul>
           </div>
-          <div className="list-informative pb-3">
+          <div className="list-informative pb-3" style={{ marginTop: '32px' }}>
             <p className="text-xl">Cuándo no usar</p>
             <ul className="list-informative-bullet">
               <li>
@@ -69,11 +69,12 @@ const SpinnerDocs: React.FC = () => {
     },
     {
       title: 'Tamaños',
+      firstTitle: true,
       content: (
         <>
           <p className="text-md mb-4">
-            Hay tres tamaños de spinner: grande, mediano y chico, tanto para dispositivos <i>desktop, tablet</i> y{' '}
-            <i>mobile</i>, y su uso depende del espacio disponible en la interfaz.
+            Hay tres tamaños de <i>spinner</i>: grande, mediano y chico, tanto para dispositivos <i>desktop, tablet</i>{' '}
+            y <i>mobile</i>, y su uso depende del espacio disponible en la interfaz.
           </p>
 
           <Image
@@ -101,14 +102,14 @@ const SpinnerDocs: React.FC = () => {
       ),
     },
     {
+      firstTitle: true,
       title: 'Patrones de uso',
-      content: <></>,
     },
     {
       subtitle: <>En el componente Botón</>,
       content: (
         <>
-          <p className="text-md">
+          <p className="text-md mb-4">
             Utilizá la variante <i>Loading</i> del componente{' '}
             <a href="https://gcba.github.io/Obelisco-V2/components/button">Botón</a> para indicar que una acción está en
             progreso y aún no ha finalizado. Para reforzar el significado de la acción se puede configurar la variante
@@ -129,7 +130,7 @@ const SpinnerDocs: React.FC = () => {
       subtitle: <>En línea con otros componentes</>,
       content: (
         <>
-          <p className="text-md">
+          <p className="text-md mb-4">
             El <i>spinner</i> también puede utilizarse por fuera del botón, por ejemplo para indicar que se está
             subiendo un archivo.
           </p>
@@ -158,7 +159,7 @@ const SpinnerDocs: React.FC = () => {
             <strong>grayscale-950 </strong>con 35 % de opacidad), ocupando el cuerpo de la página, sin incluir el
             encabezado (<i>header</i>) del sitio.
           </p>
-          <p className="text-md">
+          <p className="text-md mb-4">
             Dado que este comportamiento interrumpe la navegación de la persona usuaria, se recomienda minimizar su uso.
           </p>
           <div className="col">
@@ -168,7 +169,6 @@ const SpinnerDocs: React.FC = () => {
               width="800"
               height="280"
               className="img-fluid"
-              style={{ marginTop: '2rem !important' }}
             ></Image>
             <div className="d-flex pt-2">
               <span className="material-symbols-rounded text-success">check</span>
@@ -203,6 +203,7 @@ const SpinnerDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Tipos',
+      firstTitle: true,
       content: (
         <CodeBox codeHTML={SPINNER_TYPES}>
           <div className="d-flex gap-3 align-items-center justify-content-center">
@@ -285,6 +286,7 @@ const SpinnerDocs: React.FC = () => {
   const SPECS = [
     {
       title: 'Anatomía',
+      firstTitle: true,
       content: (
         <>
           <Image
@@ -332,7 +334,7 @@ const SpinnerDocs: React.FC = () => {
       title: 'Variantes',
       content: (
         <>
-          <p className="text-md">
+          <p className="text-md mb-4">
             Únicamente el tamaño de <i>spinner</i> <strong>grande</strong> admite dos variantes, con etiqueta o sin
             etiqueta, y se ubica por debajo del indicador.
           </p>
@@ -350,10 +352,10 @@ const SpinnerDocs: React.FC = () => {
       title: 'Medidas',
       content: (
         <>
-          <p className="text-md">
+          <p className="text-md mb-4">
             Todos los tamaños de <i>spinner</i> se ajustan proporcionalmente para no perder calidad, el <i>spinner</i>{' '}
-            <strong>chico</strong>
-            tiene 16px de diámetro, el <strong>mediano</strong> 32px y el <strong>grande</strong> 48px.
+            <strong>chico</strong> tiene 16px de diámetro, el <strong>mediano</strong> 32px y el <strong>grande</strong>{' '}
+            48px.
           </p>
           <Image
             src={`${basePath}/images/spinner/medidas.svg`}
@@ -369,7 +371,7 @@ const SpinnerDocs: React.FC = () => {
       title: 'Espaciados',
       content: (
         <>
-          <p className="text-md">
+          <p className="text-md mb-4">
             En la variante de tamaño grande, el espaciado entre la etiqueta y el indicador es de 8px.
           </p>
           <Image
@@ -387,6 +389,7 @@ const SpinnerDocs: React.FC = () => {
   const ACCESSIBILITY = [
     {
       title: 'Navegación alternativa',
+      firstTitle: true,
       content: (
         <>
           <p className="text-md">
@@ -401,7 +404,7 @@ const SpinnerDocs: React.FC = () => {
       subtitle: 'Interactividad limitada',
       content: (
         <>
-          <p className="text-md">
+          <p className="text-md mb-4">
             Para indicarle a la persona usuaria que comenzó un proceso de carga y debe esperar a que responda el
             contenido, debe agregarse el atributo <i>“aria-live=assertive”</i>. Con este atributo ARIA, medios
             alternativos para navegar un sitio web, como lectores de voz, anunciarán que se ha interrumpido el recorrido
@@ -423,7 +426,7 @@ const SpinnerDocs: React.FC = () => {
             aparición de un proceso de carga con spinner, como lectores de pantalla, debe agregarse la clase sr-only en
             una etiqueta <i>span</i> con el texto de <i>“Cargando...”</i>.
           </p>
-          <p className="text-md">
+          <p className="text-md mb-4">
             Adicionalmente, el spinner debe llevar el atributo de “role=status”, dentro del contenedor de la etiqueta{' '}
             <i>div</i>, para indicar el estado de carga que especifica la etiqueta <i>span</i>.
           </p>

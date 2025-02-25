@@ -16,14 +16,14 @@ const SECTION_UX = [
     firstTitle: true,
     content: (
       <>
-        <div className="list-informative pb-3">
+        <div className="list-informative">
           <p className="text-xl">Cuándo usar</p>
           <ul className="list-informative-bullet">
             <li>Cuando no hay contenido para mostrar en una pantalla, o cuando una búsqueda no arroja resultados.</li>
             <li>Para comunicar sobre un error, advertencia, información o éxito de un proceso.</li>
           </ul>
         </div>
-        <div className="list-informative pb-3">
+        <div className="list-informative" style={{ marginTop: '32px' }}>
           <p className="text-xl">Cuándo no usar</p>
           <ul className="list-informative-bullet">
             <li>
@@ -61,7 +61,9 @@ const SECTION_UX = [
           className="img-fluid"
         ></Image>
 
-        <p className="text-xl mt-3 pt-3 mb-2">Mensaje de información</p>
+        <p className="text-xl mb-2" style={{ marginTop: '32px' }}>
+          Mensaje de información
+        </p>
         <p className="text-md mb-4">
           Se utiliza para brindar información relevante para las personas usuarias sobre el proceso que están
           realizando. Por ejemplo: cuando no hay contenido para mostrar en una página o búsqueda, a modo de <i>empty</i>{' '}
@@ -75,7 +77,9 @@ const SECTION_UX = [
           className="img-fluid"
         ></Image>
 
-        <p className="text-xl mt-3 pt-3 mb-2">Mensaje de éxito</p>
+        <p className="text-xl mb-2" style={{ marginTop: '32px' }}>
+          Mensaje de éxito
+        </p>
         <p className="text-md mb-4">
           Se utiliza para confirmar a la persona usuaria que una acción se ha realizado correctamente, brindándole
           seguridad y cierre sobre el proceso.
@@ -88,7 +92,9 @@ const SECTION_UX = [
           className="img-fluid"
         ></Image>
 
-        <p className="text-xl mt-3 pt-3 mb-2">Mensaje de advertencia</p>
+        <p className="text-xl mb-2" style={{ marginTop: '32px' }}>
+          Mensaje de advertencia
+        </p>
         <p className="text-md mb-4">
           Se utiliza para captar la atención de las personas usuarias, ya sea como advertencia previa o como
           consecuencia de una acción clave dentro del flujo.
@@ -101,7 +107,9 @@ const SECTION_UX = [
           className="img-fluid"
         ></Image>
 
-        <p className="text-xl mt-3 pt-3 mb-2">Mensaje de error</p>
+        <p className="text-xl mb-2" style={{ marginTop: '32px' }}>
+          Mensaje de error
+        </p>
         <p className="text-md mb-4">
           Se utiliza para comunicar que el proceso no se pudo completar, e indica los pasos a seguir para solucionarlo.
         </p>
@@ -254,7 +262,7 @@ const SECTION_UX = [
     title: 'Patrones de uso',
     content: (
       <>
-        <p className="text-md">
+        <p className="text-md" style={{ marginBottom: '32px' }}>
           El mensaje de estado aparece posterior a procesos de carga y no suplanta otros componentes que se utilizan
           para guiar la espera. Por ejemplo, dentro de un pago o trámite, se utiliza para detallar y confirmar la
           actualidad del proceso e indicar los siguientes pasos.
@@ -266,7 +274,6 @@ const SECTION_UX = [
             width="800"
             height="280"
             className="img-fluid"
-            style={{ marginTop: '2rem !important' }}
           ></Image>
           <div className="d-flex pt-2">
             <p className="mb-0">1. La persona usuaria confirma el proceso.</p>
@@ -279,7 +286,7 @@ const SECTION_UX = [
             width="800"
             height="280"
             className="img-fluid"
-            style={{ marginTop: '2rem !important' }}
+            style={{ marginTop: '2rem' }}
           ></Image>
           <div className="d-flex pt-2">
             <p className="mb-0">
@@ -311,6 +318,7 @@ const SECTION_UX = [
 const SECTIONS_DEV = [
   {
     title: 'Información',
+    firstTitle: true,
     content: (
       <CodeBox codeHTML={SM_INFO}>
         <div className="px-3">
@@ -504,6 +512,7 @@ const SECTIONS_DEV = [
 const SPECS = [
   {
     title: 'Anatomía',
+    firstTitle: true,
     content: (
       <>
         <Image
@@ -664,7 +673,7 @@ const ACCESSIBILITY = [
         </p>
         <span className="badge badge-default ms-1">TAB</span>
         <span className="badge badge-default">ENTER</span>
-        <p className="text-md">
+        <p className="text-md mb-4">
           Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Además, con el{' '}
           <i>enter</i>, puede accionar los elementos sobre los que esté posicionada como botones, enlaces, entre otros.
         </p>

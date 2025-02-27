@@ -14,6 +14,7 @@ import {
 const SECTIONS_DEV = [
   {
     title: 'Tipos',
+    firstTitle: true,
     content: (
       <>
         <CodeBox codeHTML={SWITCH_DEFAULT}>

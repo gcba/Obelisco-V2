@@ -12,6 +12,7 @@ const GridDocs: React.FC = () => {
   const SECTION_UX = [
     {
       title: '¿Por qué usar una grilla?',
+      firstTitle: true,
       content: (
         <>
           <div className="list-informative pb-3">

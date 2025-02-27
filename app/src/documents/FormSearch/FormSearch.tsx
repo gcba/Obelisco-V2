@@ -8,6 +8,7 @@ const FormSearchDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Buscador',
+      firstTitle: true,
       content: (
         <CodeBox codeHTML={SEARCH}>
           <div className="container">

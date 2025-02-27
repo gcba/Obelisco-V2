@@ -21,6 +21,7 @@ import {
 const SECTIONS_DEV = [
   {
     title: 'Con selección múltiple',
+    firstTitle: true,
   },
   {
     subtitle: 'Grande',

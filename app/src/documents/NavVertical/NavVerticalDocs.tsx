@@ -16,6 +16,7 @@ const NavVerticalDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Simple',
+      firstTitle: true,
       content: (
         <CodeBox codeHTML={NAV_VERTICAL_SIMPLE}>
           <div className="col-12 col-lg-8 mx-auto pb-2">

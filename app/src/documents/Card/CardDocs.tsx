@@ -30,6 +30,7 @@ const CardDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Horizontal',
+      firstTitle: true,
     },
     {
       subtitle: 'Con icono',
@@ -564,9 +565,10 @@ const CardDocs: React.FC = () => {
   const SECTION_UX = [
     {
       title: 'Uso',
+      firstTitle: true,
       content: (
         <>
-          <div className="list-informative pb-3">
+          <div className="list-informative">
             <p className="text-xl">Cuándo usar</p>
             <ul className="list-informative-bullet">
               <li>
@@ -578,7 +580,7 @@ const CardDocs: React.FC = () => {
               </li>
             </ul>
           </div>
-          <div className="list-informative pb-3">
+          <div className="list-informative" style={{ marginTop: '32px' }}>
             <p className="text-xl">Cuándo no usar</p>
             <ul className="list-informative-bullet">
               <li>
@@ -603,7 +605,7 @@ const CardDocs: React.FC = () => {
       title: 'Disposición',
       content: (
         <>
-          <p>
+          <p style={{ marginTop: '32px' }}>
             En Obelisco existen 2 disposiciones posibles: vertical y horizontal. La disposición del componente sirve
             para generar diferentes niveles de jerarquía según el tipo de tarjeta.
           </p>
@@ -621,9 +623,9 @@ const CardDocs: React.FC = () => {
       title: 'Tipos de tarjeta vertical',
       content: (
         <>
-          <div className="max-items-2 mt-4 mb-2">
+          <div className="max-items-2">
             <div className="col">
-              <p className="text-xl">Predeterminada</p>
+              <p className="text-xl mt-2">Predeterminada</p>
               <p className="text-md">
                 Se utiliza para mostrar información de mayor peso visual en la página, y lleva una imagen descriptiva
                 del contenido.
@@ -681,7 +683,7 @@ const CardDocs: React.FC = () => {
       content: (
         <>
           <p className="text-xl">Predeterminada</p>
-          <p className="text-md">
+          <p className="text-md mb-4">
             Contiene información que no precisa de imágenes descriptivas. Dentro del entorno de Buenos Aires se utiliza,
             por ejemplo, para agrupar programas o servicios de un área.
           </p>
@@ -693,7 +695,9 @@ const CardDocs: React.FC = () => {
             className="img-fluid"
           />
 
-          <p className="text-xl mt-4">Temática</p>
+          <p className="text-xl mb-4" style={{ marginTop: '32px' }}>
+            Temática
+          </p>
           <p className="text-md">
             Se utiliza en la página de inicio de Buenos Aires para redirigir a los principales trámites y servicios.
           </p>
@@ -711,7 +715,7 @@ const CardDocs: React.FC = () => {
       title: 'Agrupación',
       content: (
         <>
-          <p className="text-md">
+          <p className="text-md mb-4">
             Las tarjetas se utilizan en grupo para organizar la navegación y redirección a contenidos relacionados de un
             mismo sitio web.
           </p>
@@ -722,7 +726,7 @@ const CardDocs: React.FC = () => {
             height="200"
             className="img-fluid"
           />
-          <div className="d-flex pt-3 mb-4">
+          <div className="d-flex pt-2" style={{ marginTop: '32px' }}>
             <span className="material-symbols-rounded text-success">check</span>
             <p className="mb-0">
               Utilizar tarjetas con la misma disposición y del mismo tipo dentro de un mismo grupo.
@@ -859,6 +863,7 @@ const CardDocs: React.FC = () => {
   const SPECS = [
     {
       title: 'Anatomía',
+      firstTitle: true,
       content: (
         <>
           <p className="text-md">Las tarjetas tienen una composición diferente dependiendo de la variante.</p>
@@ -1098,6 +1103,7 @@ const CardDocs: React.FC = () => {
   const ACCESSIBILITY = [
     {
       title: 'Navegación por teclado',
+      firstTitle: true,
       content: (
         <>
           <p className="text-md">

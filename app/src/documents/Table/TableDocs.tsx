@@ -19,6 +19,7 @@ import {
 const SECTIONS_DEV = [
   {
     title: 'Sin separadores',
+    firstTitle: true,
     content: (
       <>
         <CodeBox codeHTML={WITHOUT_DIVIDERS}>

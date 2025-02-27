@@ -15,6 +15,7 @@ import {
 const SECTIONS_DEV = [
   {
     title: 'Con icono',
+    firstTitle: true,
     content: (
       <>
         <CodeBox codeHTML={DROPDOWN}>

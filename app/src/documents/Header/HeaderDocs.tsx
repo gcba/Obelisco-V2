@@ -35,6 +35,7 @@ const HeaderDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Deslogueado',
+      firstTitle: true,
     },
     {
       subtitle: 'En una línea',

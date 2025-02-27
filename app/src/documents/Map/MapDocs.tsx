@@ -9,6 +9,7 @@ const MapDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Lateral',
+      firstTitle: true,
       content: (
         <CodeBox codeHTML={MAP_LATERAL}>
           <div className="container">

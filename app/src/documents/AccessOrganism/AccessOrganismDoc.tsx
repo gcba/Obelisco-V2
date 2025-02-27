@@ -13,6 +13,7 @@ const AccessOrganismDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Simple',
+      firstTitle: true,
       content: (
         <>
           <CodeBox codeHTML={SIMPLE_ACCESS_ORGANISM}>

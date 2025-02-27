@@ -28,6 +28,7 @@ const ButtonDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Tipos',
+      firstTitle: true,
       content: (
         <>
           <CodeBox codeHTML={BUTTON_SOLID}>
@@ -397,9 +398,10 @@ const ButtonDocs: React.FC = () => {
   const SECTION_UX = [
     {
       title: 'Uso',
+      firstTitle: true,
       content: (
         <>
-          <div className="list-informative pb-3">
+          <div className="list-informative">
             <p className="text-xl">Cuándo usar</p>
             <ul className="list-informative-bullet">
               <li>
@@ -413,7 +415,7 @@ const ButtonDocs: React.FC = () => {
               </li>
             </ul>
           </div>
-          <div className="list-informative pb-3">
+          <div className="list-informative" style={{ marginTop: '32px' }}>
             <p className="text-xl">Cuándo no usar</p>
             <ul className="list-informative-bullet">
               <li>
@@ -434,7 +436,7 @@ const ButtonDocs: React.FC = () => {
       title: 'Tamaños',
       content: (
         <>
-          <p>
+          <p className="mb-4">
             Existen 3 tamaños de botones: grandes, medianos y chicos; el botón grande es el tamaño de botón
             predeterminado.
           </p>
@@ -457,8 +459,8 @@ const ButtonDocs: React.FC = () => {
             del color y el relleno.
           </p>
 
-          <div className="max-items-2 mt-4 mb-2">
-            <div className="col">
+          <div className="max-items-2 mb-2" style={{ marginTop: '32px' }}>
+            <div className="col pe-3">
               <p className="text-xl">
                 Botón primario <i>(primary)</i>{' '}
               </p>
@@ -467,7 +469,7 @@ const ButtonDocs: React.FC = () => {
                 único botón primario por página.
               </p>
             </div>
-            <div className="col">
+            <div className="col ps-3">
               <Image
                 src={`${basePath}/images/boton/boton_tipos_primario.svg`}
                 alt="Botón primario"
@@ -478,8 +480,8 @@ const ButtonDocs: React.FC = () => {
             </div>
           </div>
 
-          <div className="max-items-2 mt-4 mb-2">
-            <div className="col">
+          <div className="max-items-2 mb-2" style={{ marginTop: '32px' }}>
+            <div className="col pe-3">
               <p className="text-xl">
                 Botón secundario <i>(secondary)</i>
               </p>
@@ -488,7 +490,7 @@ const ButtonDocs: React.FC = () => {
                 flujo.
               </p>
             </div>
-            <div className="col">
+            <div className="col ps-3">
               <Image
                 src={`${basePath}/images/boton/boton_tipos_secundario.svg`}
                 alt="Botón secundario"
@@ -499,8 +501,8 @@ const ButtonDocs: React.FC = () => {
             </div>
           </div>
 
-          <div className="max-items-2 mt-4 mb-2">
-            <div className="col">
+          <div className="max-items-2 mb-2" style={{ marginTop: '32px' }}>
+            <div className="col pe-3">
               <p className="text-xl">
                 Botón terciario <i>(tertiary)</i>
               </p>
@@ -509,7 +511,7 @@ const ButtonDocs: React.FC = () => {
                 relacionadas al flujo principal.
               </p>
             </div>
-            <div className="col">
+            <div className="col ps-3">
               <Image
                 src={`${basePath}/images/boton/boton_tipos_terciario.svg`}
                 alt="Botón terciario"
@@ -520,8 +522,8 @@ const ButtonDocs: React.FC = () => {
             </div>
           </div>
 
-          <div className="max-items-2 mt-4 mb-2">
-            <div className="col">
+          <div className="max-items-2 mb-2" style={{ marginTop: '32px' }}>
+            <div className="col pe-3">
               <p className="text-xl">
                 Botón de éxito <i>(success)</i>
               </p>
@@ -530,7 +532,7 @@ const ButtonDocs: React.FC = () => {
                 consecuencia positiva.
               </p>
             </div>
-            <div className="col">
+            <div className="col ps-3">
               <Image
                 src={`${basePath}/images/boton/boton_tipos_exito.svg`}
                 alt="Botón de exito"
@@ -541,8 +543,8 @@ const ButtonDocs: React.FC = () => {
             </div>
           </div>
 
-          <div className="max-items-2 mt-4 mb-2">
-            <div className="col">
+          <div className="max-items-2 mb-2" style={{ marginTop: '32px' }}>
+            <div className="col pe-3">
               <p className="text-xl">
                 Botón de peligro <i>(danger)</i>
               </p>
@@ -551,7 +553,7 @@ const ButtonDocs: React.FC = () => {
                 ejemplo, eliminar o quitar).
               </p>
             </div>
-            <div className="col">
+            <div className="col ps-3">
               <Image
                 src={`${basePath}/images/boton/boton_tipos_peligro.svg`}
                 alt="Botón de peligro"
@@ -562,8 +564,8 @@ const ButtonDocs: React.FC = () => {
             </div>
           </div>
 
-          <div className="max-items-2 mt-4 mb-2">
-            <div className="col">
+          <div className="max-items-2 mb-2" style={{ marginTop: '32px' }}>
+            <div className="col pe-3">
               <p className="text-xl">
                 Botón claro <i>(light)</i>
               </p>
@@ -572,7 +574,7 @@ const ButtonDocs: React.FC = () => {
                 oscuros.
               </p>
             </div>
-            <div className="col">
+            <div className="col ps-3">
               <Image
                 src={`${basePath}/images/boton/boton_tipos_claro.svg`}
                 alt="Botón claro"
@@ -583,11 +585,11 @@ const ButtonDocs: React.FC = () => {
             </div>
           </div>
 
-          <div className="mt-4">
+          <div style={{ marginTop: '32px' }}>
             <p className="text-xl">
               Botones con borde <i>(outlined)</i>
             </p>
-            <p className="text-md">
+            <p className="text-md mb-4">
               A diferencia del resto de los botones, éstos están delineados, lo que les otorga menos jerarquía visual
               que los botones rellenos. Son utilizados para acciones de menor énfasis, y pueden combinarse con otros
               estilos de botones.
@@ -601,9 +603,9 @@ const ButtonDocs: React.FC = () => {
             />
           </div>
 
-          <div className="mt-4">
+          <div style={{ marginTop: '32px' }}>
             <p className="text-xl">Botón de acción para tabla</p>
-            <p className="text-md">
+            <p className="text-md mb-4">
               Se utiliza dentro de la celda de una{' '}
               <a href="https://gcba.github.io/Obelisco-V2/components/table">Tabla</a>, economizando el espacio
               disponible. No cuenta con relleno ni borde.{' '}
@@ -623,7 +625,7 @@ const ButtonDocs: React.FC = () => {
       title: 'Uso de íconos',
       content: (
         <>
-          <p className="text-md">
+          <p className="text-md  mb-4">
             El botón puede incluir un ícono para reforzar la acción pretendida. También es posible utilizar un botón
             sólo con ícono.{' '}
           </p>
@@ -635,11 +637,13 @@ const ButtonDocs: React.FC = () => {
             className="img-fluid"
           />
 
-          <p className="text-xl mt-4">Ejemplos de uso</p>
+          <p className="text-xl mb-4" style={{ marginTop: '32px' }}>
+            Ejemplos de uso
+          </p>
 
-          <div className="py-4">
+          <div>
             <div className="max-items-2">
-              <div className="col">
+              <div className="col pe-3">
                 <Image
                   src={`${basePath}/images/boton/boton_uso_icono_si.svg`}
                   alt="Cómo sí usar los íconos"
@@ -654,7 +658,7 @@ const ButtonDocs: React.FC = () => {
                   </p>
                 </div>
               </div>
-              <div className="col">
+              <div className="col ps-3">
                 <Image
                   src={`${basePath}/images/boton/boton_uso_icono_no.svg`}
                   alt="Cómo no usar los íconos"
@@ -685,11 +689,13 @@ const ButtonDocs: React.FC = () => {
             </ul>
           </div>
 
-          <p className="text-xl mt-4">Ejemplos de uso</p>
+          <p className="text-xl mb-4" style={{ marginTop: '32px' }}>
+            Ejemplos de uso
+          </p>
 
-          <div className="py-4">
+          <div>
             <div className="max-items-2">
-              <div className="col">
+              <div className="col pe-3">
                 <Image
                   src={`${basePath}/images/boton/boton_uso_icono_2_si.svg`}
                   alt="Ejemplo de uso de cómo sí usar los íconos"
@@ -702,7 +708,7 @@ const ButtonDocs: React.FC = () => {
                   <p className="mb-0">Utilizar solo 1 ícono de soporte, como ícono inicial o como ícono final.</p>
                 </div>
               </div>
-              <div className="col">
+              <div className="col ps-3">
                 <Image
                   src={`${basePath}/images/boton/boton_uso_icono_2_no.svg`}
                   alt="Ejemplo de uso de cómo no usar los íconos"
@@ -736,7 +742,7 @@ const ButtonDocs: React.FC = () => {
           </p>
 
           {/* Niveles de jerarquía */}
-          <div className="mt-4 mb-2">
+          <div style={{ marginTop: '32px' }}>
             <p className="text-xl">Niveles de jerarquía</p>
             <p className="text-md">
               Los niveles de jerarquía como <i>primary</i>, <i>secondary</i> y <i>tertiary</i> se asignan según el
@@ -748,9 +754,9 @@ const ButtonDocs: React.FC = () => {
           </div>
 
           {/* Grupo para acciones primarias */}
-          <div className="mt-4 mb-2">
+          <div style={{ marginTop: '32px' }}>
             <p className="text-xl">Grupo para acciones primarias</p>
-            <p className="text-md">
+            <p className="text-md mb-4">
               Para contextos con acciones primarias y/o acciones principales. Normalmente, existe una única sección o
               agrupación de botones primarios por página. Por ejemplo, en el último paso de un formulario, antes de
               enviar los datos, puede haber 2 acciones: una para ver al detalle toda la información cargada, y una para
@@ -767,23 +773,13 @@ const ButtonDocs: React.FC = () => {
           />
 
           {/* Grupo para acciones secundarias */}
-          <div className="mt-4 mb-2">
-            <p className="text-xl">Grupo para acciones secundarias</p>
-            <p className="text-md">
+          <div style={{ marginTop: '32px' }}>
+            <p className="text-xl mb-2">Grupo para acciones secundarias</p>
+            <p className="text-md" style={{ marginBottom: '32px' }}>
               Recomendado para contextos con acciones secundarias como el patrón de navegación por pasos como{' '}
-              <i>
-                {`"`}Continuar{`"`}
-              </i>{' '}
-              y{' '}
-              <i>
-                {`"`}Volver{`"`}
-              </i>
-              . En caso de que sea una acción de finalización del proceso, como{' '}
-              <i>
-                {`"`}Confirmar inscripción{`"`}
-              </i>
-              , se reemplaza el botón secundario relleno (<i>secondary filled</i>) por el botón primario relleno (
-              <i>primary filled</i>).
+              <i>&quot;Continuar&quot;</i> y <i>&quot;Volver&quot;</i>. En caso de que sea una acción de finalización
+              del proceso, como <i>&quot;Confirmar inscripción&quot;</i>, se reemplaza el botón secundario relleno (
+              <i>secondary filled</i>) por el botón primario relleno (<i>primary filled</i>).
             </p>
           </div>
           <Image
@@ -795,9 +791,9 @@ const ButtonDocs: React.FC = () => {
           />
 
           {/* Grupo con botones de peligro */}
-          <div className="mt-4 mb-2">
-            <p className="text-xl">Grupo con botones de peligro</p>
-            <p className="text-md">
+          <div style={{ marginTop: '32px' }}>
+            <p className="text-xl mb-2">Grupo con botones de peligro</p>
+            <p className="text-md mb-4">
               Se usan en contextos de acciones destructivas o modales de peligro. Dentro de este grupo, se debe utilizar
               el estilo relleno (<i>filled</i>) del botón de peligro.
             </p>
@@ -811,9 +807,9 @@ const ButtonDocs: React.FC = () => {
           />
 
           {/* Grupo para acciones terciarias */}
-          <div className="mt-4 mb-2">
-            <p className="text-xl">Grupo para acciones terciarias</p>
-            <p className="text-md">
+          <div style={{ marginTop: '32px' }}>
+            <p className="text-xl mb-2">Grupo para acciones terciarias</p>
+            <p className="text-md mb-4">
               Para contextos de acciones terciarias. Por ejemplo, en un formulario se puede utilizar el{' '}
               <i>tertiary filled</i> para editar una sub-sección, y botones <i>outlined</i> dentro de la subsección para
               adjuntar documentación o editar un campo específico.
@@ -828,9 +824,9 @@ const ButtonDocs: React.FC = () => {
           />
 
           {/* Grupo para fondos oscuros */}
-          <div className="mt-4 mb-2">
-            <p className="text-xl">Grupo para fondos oscuros</p>
-            <p className="text-md">
+          <div style={{ marginTop: '32px' }}>
+            <p className="text-xl mb-2">Grupo para fondos oscuros</p>
+            <p className="text-md mb-4">
               Para contextos de acciones primarias en fondos oscuros. Se utiliza el <i>light outlined</i> en vez del{' '}
               <i>primary outlined</i>, ya que, este último tiene bajo contraste en fondos oscuros.{' '}
             </p>
@@ -865,8 +861,8 @@ const ButtonDocs: React.FC = () => {
             parte de una subsección, normalmente adoptan la alineación en fila y alineados a la izquierda.
           </p>
 
-          <div className="max-items-2 mt-4 mb-2">
-            <div className="col">
+          <div className="max-items-2" style={{ marginTop: '32px' }}>
+            <div className="col pe-3">
               <p className="text-md">
                 <strong>Alineación a la izquierda</strong>
               </p>
@@ -876,7 +872,7 @@ const ButtonDocs: React.FC = () => {
                 flujo de lectura y el orden de enfoque.
               </p>
             </div>
-            <div className="col">
+            <div className="col ps-3">
               <Image
                 src={`${basePath}/images/boton/boton_alineacion_a_la_izquierda.svg`}
                 alt="Alineación a la izquierda"
@@ -888,7 +884,7 @@ const ButtonDocs: React.FC = () => {
           </div>
 
           <div className="max-items-2 mt-4 mb-2">
-            <div className="col">
+            <div className="col pe-3">
               <p className="text-md">
                 <strong>Alineación a la derecha</strong>
               </p>
@@ -897,7 +893,7 @@ const ButtonDocs: React.FC = () => {
                 los botones primarios siempre aparecen a la derecha.
               </p>
             </div>
-            <div className="col">
+            <div className="col ps-3">
               <Image
                 src={`${basePath}/images/boton/boton_alineacion_a_la_derecha.svg`}
                 alt="Alineación a la derecha"
@@ -909,7 +905,7 @@ const ButtonDocs: React.FC = () => {
           </div>
 
           <div className="max-items-2 mt-4 mb-2">
-            <div className="col">
+            <div className="col pe-3">
               <p className="text-md">
                 <strong>Alineación a la derecha</strong>
               </p>
@@ -918,7 +914,7 @@ const ButtonDocs: React.FC = () => {
                 utilizar un botón terciario alineado al título de la sección.
               </p>
             </div>
-            <div className="col">
+            <div className="col ps-3">
               <Image
                 src={`${basePath}/images/boton/boton_alineacion_a_la_derecha_2.svg`}
                 alt="Alineación a la derecha parte 2"
@@ -929,9 +925,9 @@ const ButtonDocs: React.FC = () => {
             </div>
           </div>
 
-          <div className="max-items-1">
+          <div className="max-items-1" style={{ marginTop: '32px' }}>
             <div className="col">
-              <p className="text-md mt-4">
+              <p className="text-md">
                 <strong>Alineación para dispositivos mobile</strong>
               </p>
               <p className="text-md">
@@ -976,27 +972,19 @@ const ButtonDocs: React.FC = () => {
         <>
           <p className="text-md mb-2">
             El texto de la etiqueta debe ser corto, conciso y descriptivo. Utilizar etiquetas como{' '}
-            <i>
-              {`"`}Hacé click acá{`"`}
-            </i>{' '}
-            o{' '}
-            <i>
-              {`"`}Más info{`"`}
-            </i>{' '}
-            no visibiliza lo que sucederá al interactuar con el botón. La etiqueta del botón siempre debe comenzar con
-            un verbo que refleje la acción consecuente, por ejemplo,{' '}
-            <i>
-              {`"`}Adjuntar archivo{`"`}
-            </i>
-            .
+            <i>&quot;Hacé click acá&quot;</i> o <i>&quot;Más info&quot;</i> no visibiliza lo que sucederá al interactuar
+            con el botón. La etiqueta del botón siempre debe comenzar con un verbo que refleje la acción consecuente,
+            por ejemplo,<i>&quot;Adjuntar archivo&quot;</i>.
           </p>
 
-          <p className="text-xl mt-4">Ejemplos de uso</p>
+          <p className="text-xl" style={{ marginTop: '32px' }}>
+            Ejemplos de uso
+          </p>
 
-          <div className="py-4">
+          <div>
             <div className="max-items-2">
               {/* 1 */}
-              <div className="col">
+              <div className="col pe-3">
                 <Image
                   src={`${basePath}/images/boton/boton_contenido_info_si_usar.svg`}
                   alt="Buena práctica en botones ejemplo 1"
@@ -1010,7 +998,7 @@ const ButtonDocs: React.FC = () => {
                 </div>
               </div>
               {/* 2 */}
-              <div className="col">
+              <div className="col ps-3">
                 <Image
                   src={`${basePath}/images/boton/boton_contenido_info_no_usar.svg`}
                   alt="Mala práctica en botones ejemplo 1"
@@ -1024,7 +1012,7 @@ const ButtonDocs: React.FC = () => {
                 </div>
               </div>
               {/* 3 */}
-              <div className="col">
+              <div className="col pe-3">
                 <Image
                   src={`${basePath}/images/boton/boton_contenido_peligro_si_usar.svg`}
                   alt="Buena práctica en botones ejemplo 2"
@@ -1038,7 +1026,7 @@ const ButtonDocs: React.FC = () => {
                 </div>
               </div>
               {/* 4 */}
-              <div className="col">
+              <div className="col ps-3">
                 <Image
                   src={`${basePath}/images/boton/boton_contenido_peligro_no_usar.svg`}
                   alt="Mala práctica en botones ejemplo 2"
@@ -1052,7 +1040,7 @@ const ButtonDocs: React.FC = () => {
                 </div>
               </div>
               {/* 5 */}
-              <div className="col">
+              <div className="col pe-3">
                 <Image
                   src={`${basePath}/images/boton/boton_contenido_exito_si_usar.svg`}
                   alt="Buena práctica en botones ejemplo 3"
@@ -1066,7 +1054,7 @@ const ButtonDocs: React.FC = () => {
                 </div>
               </div>
               {/* 6 */}
-              <div className="col">
+              <div className="col ps-3">
                 <Image
                   src={`${basePath}/images/boton/boton_contenido_exito_no_usar.svg`}
                   alt="Mala práctica en botones ejemplo 3"
@@ -1089,9 +1077,10 @@ const ButtonDocs: React.FC = () => {
   const SPECS = [
     {
       title: 'Anatomía',
+      firstTitle: true,
       content: (
         <>
-          <p className="text-md">El botón se compone de 4 elementos.</p>
+          <p className="text-md mb-4">El botón se compone de 4 elementos.</p>
           <Image
             src={`${basePath}/images/boton/boton_anatomia.svg`}
             alt="Anatomia del botón"
@@ -1278,15 +1267,16 @@ const ButtonDocs: React.FC = () => {
   const ACCESSIBILITY = [
     {
       title: 'Navegación alternativa',
+      firstTitle: true,
       content: (
         <>
-          <p className="text-md">
+          <p className="text-md" style={{ marginBottom: '32px' }}>
             El componente de botón está construido para ser reconocido por herramientas de asistencia como la navegación
             por teclado o lectores por voz.
           </p>
           <span className="badge badge-default ms-1">TAB</span>
           <span className="badge badge-default">ENTER</span>
-          <p className="text-md">
+          <p className="text-md mb-4">
             Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Además, con
             el <i>enter</i>, puede accionar los elementos sobre los que esté posicionada como botones, enlaces, entre
             otros.

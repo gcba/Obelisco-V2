@@ -30,6 +30,7 @@ const ScrollspySubtitle = ({
           : {
               gap: '.25rem',
               alignItems: 'center',
+              marginLeft: '16px',
             }
       }
     >

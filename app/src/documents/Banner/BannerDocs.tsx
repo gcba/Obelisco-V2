@@ -16,6 +16,7 @@ const BannerDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Simple',
+      firstTitle: true,
       content: (
         <>
           <CodeBox codeHTML={BANNER_SIMPLE}>

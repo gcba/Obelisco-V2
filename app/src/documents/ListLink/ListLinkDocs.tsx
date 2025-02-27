@@ -9,6 +9,7 @@ const ListLinkDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Lista de enlaces',
+      firstTitle: true,
       content: (
         <CodeBox codeHTML={LIST_LINK}>
           <div className="container">

@@ -31,7 +31,7 @@ const sections = [
           <strong>facilitar el acceso a los contenidos a todas las personas</strong> en igualdad de oportunidades.
         </p>
         <a
-          href="https://servicios.infoleg.gob.ar/infolegInternet/anexos/175000-179999/175694/norma.htm"
+          href="https://gcba.github.io/assets/resolucion/ck_PE-RES-MJGGC-SECITD-94-23-6626.pdf"
           className="external"
         >
           Conocer la resolución

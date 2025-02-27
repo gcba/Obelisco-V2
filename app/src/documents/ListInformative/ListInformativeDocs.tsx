@@ -8,6 +8,7 @@ const ListInformativeDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Con viñeta',
+      firstTitle: true,
       content: (
         <CodeBox codeHTML={LIST_INFORMATIVE_BULLET}>
           <div className="container">

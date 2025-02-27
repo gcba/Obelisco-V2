@@ -16,6 +16,7 @@ const AlertDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Simple',
+      firstTitle: true,
       content: (
         <CodeBox codeHTML={SIMPLE_ALERT}>
           <div className="container d-flex flex-column gap-3">

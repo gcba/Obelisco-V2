@@ -39,6 +39,7 @@ const ColorsDocs: React.FC = () => {
   const SECTION_DEV = [
     {
       title: 'Colores principales',
+      firstTitle: true,
       content: (
         <>
           <p className="mb-4">
@@ -100,9 +101,11 @@ const ColorsDocs: React.FC = () => {
       ),
     },
   ];
+
   const SECTION_PALLETTE = [
     {
       title: 'Colores primitivos',
+      firstTitle: true,
       content: (
         <>
           <p>
@@ -323,9 +326,11 @@ const ColorsDocs: React.FC = () => {
       ),
     },
   ];
+
   const SECTION_UX = [
     {
       title: 'Principios',
+      firstTitle: true,
       content: (
         <div className="list-informative pb-3">
           <ul className="list-informative-bullet">

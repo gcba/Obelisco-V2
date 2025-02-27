@@ -14,6 +14,7 @@ const BreadcrumbDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Simple',
+      firstTitle: true,
       content: (
         <>
           <CodeBox codeHTML={BREADCRUMB}>
@@ -44,9 +45,10 @@ const BreadcrumbDocs: React.FC = () => {
   const SECTION_UX = [
     {
       title: 'Uso',
+      firstTitle: true,
       content: (
         <>
-          <div className="list-informative pb-3">
+          <div className="list-informative">
             <p className="text-xl">Cuándo usar</p>
             <ul className="list-informative-bullet">
               <li>
@@ -55,7 +57,7 @@ const BreadcrumbDocs: React.FC = () => {
               </li>
             </ul>
           </div>
-          <div className="list-informative pb-3">
+          <div className="list-informative" style={{ marginTop: '32px' }}>
             <p className="text-xl">Cuándo no usar</p>
             <ul className="list-informative-bullet">
               <li>Como enlaces a contenido que se ubique por fuera del encabezado de la página.</li>
@@ -81,7 +83,7 @@ const BreadcrumbDocs: React.FC = () => {
       title: 'Disposición',
       content: (
         <>
-          <p className="text-md">
+          <p className="text-md" style={{ marginTop: '32px' }}>
             Se ubican en la parte superior izquierda de la página, generalmente, dentro del encabezado de página, por
             encima del título H1.
           </p>
@@ -102,7 +104,7 @@ const BreadcrumbDocs: React.FC = () => {
       subtitle: 'Basado en el ancho',
       content: (
         <>
-          <p className="text-md">
+          <p className="text-md mb-4">
             Cuando el nombre de un enlace de ancla excede los 32 caracteres (incluyendo espacios), el texto se trunca y
             agrega tres puntos (…) al final para visualizar que hay más texto en ese nivel.
           </p>
@@ -121,9 +123,10 @@ const BreadcrumbDocs: React.FC = () => {
   const SPECS = [
     {
       title: 'Anatomía',
+      firstTitle: true,
       content: (
         <>
-          <p className="text-md">Las migas de pan tienen una composición diferente dependiendo de la variante.</p>
+          <p className="text-md mb-4">Las migas de pan tienen una composición diferente dependiendo de la variante.</p>
           <Image
             src={`${basePath}/images/migas_de_pan/migas_de_pan_anatomia.svg`}
             alt="Anatomia del botón"
@@ -161,6 +164,7 @@ const BreadcrumbDocs: React.FC = () => {
     },
     {
       title: 'Variantes',
+      // contentMarginBottom: 32,
       content: (
         <>
           <p className="text-md">
@@ -173,8 +177,7 @@ const BreadcrumbDocs: React.FC = () => {
     {
       subtitle: (
         <>
-          {' '}
-          <i>desktop</i>{' '}
+          <i>Desktop</i>
         </>
       ),
       content: (
@@ -220,6 +223,7 @@ const BreadcrumbDocs: React.FC = () => {
   const ACCESSIBILITY = [
     {
       title: 'Navegación alternativa',
+      firstTitle: true,
       content: (
         <>
           <p className="text-md">

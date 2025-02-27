@@ -8,6 +8,7 @@ const ModalDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Tipos',
+      firstTitle: true,
     },
     {
       subtitle: 'Modal de confirmación',

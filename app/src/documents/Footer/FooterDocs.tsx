@@ -15,6 +15,7 @@ const FooterDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Completo',
+      firstTitle: true,
       content: (
         <CodeBox codeHTML={FOOTER}>
           <div className="px-4">
@@ -364,9 +365,10 @@ const FooterDocs: React.FC = () => {
   const SECTION_UX = [
     {
       title: 'Uso',
+      firstTitle: true,
       content: (
         <>
-          <div className="list-informative pb-3">
+          <div className="list-informative">
             <p className="text-xl">Cuándo usar</p>
             <ul className="list-informative-bullet">
               <li>
@@ -382,7 +384,7 @@ const FooterDocs: React.FC = () => {
       title: 'Contextos de uso',
       content: (
         <>
-          <div className="list-informative pb-3">
+          <div className="list-informative">
             <p className="">El componente puede contener los siguientes elementos: </p>
             <ul className="list-informative-bullet">
               <li>Enlaces de utilidad (teléfonos de emergencias, atención ciudadana, entre otros). </li>
@@ -395,8 +397,10 @@ const FooterDocs: React.FC = () => {
 
           <div className="mt-4 mb-2">
             <div className="col">
-              <p className="text-xl">Legales (predeterminado)</p>
-              <p className="text-md">
+              <p className="text-xl mb-2" style={{ marginTop: '2rem !important' }}>
+                Legales (predeterminado)
+              </p>
+              <p className="text-md mb-3">
                 Se utiliza en los procesos destinados a trámites, consultas, servicios, transacciones y perfil
                 ciudadano, donde se requiere un enfoque en el contenido y una navegación lineal.
               </p>
@@ -413,8 +417,10 @@ const FooterDocs: React.FC = () => {
           </div>
           <div className="mt-4 mb-2">
             <div className="col">
-              <p className="text-xl">Con información útil</p>
-              <p className="text-md">
+              <p className="text-xl mb-2" style={{ marginTop: '2rem !important' }}>
+                Con información útil
+              </p>
+              <p className="text-md mb-3">
                 Se utiliza en páginas orientadas a la asistencia al ciudadano, ofreciéndole canales de contacto y
                 asistencia.
               </p>
@@ -431,8 +437,10 @@ const FooterDocs: React.FC = () => {
           </div>
           <div className="mt-4 mb-2">
             <div className="col">
-              <p className="text-xl">Con indicador de utilidad</p>
-              <p className="text-md">
+              <p className="text-xl mb-2" style={{ marginTop: '2rem !important' }}>
+                Con indicador de utilidad
+              </p>
+              <p className="text-md mb-3">
                 Permite que las personas usuarias puedan dar feedback sobre la utilidad de los contenidos del sitio.
                 Solo se utiliza en páginas informativas.
               </p>
@@ -455,6 +463,7 @@ const FooterDocs: React.FC = () => {
   const SPECS = [
     {
       title: 'Anatomía',
+      firstTitle: true,
       content: (
         <>
           <Image
@@ -464,8 +473,7 @@ const FooterDocs: React.FC = () => {
             height="280"
             className="img-fluid"
           />
-
-          <div className="responsive-scroll mt-4" tabIndex={0}>
+          <div className="responsive-scroll mt-4 mb-5" tabIndex={0}>
             <table className="table">
               <thead>
                 <tr>
@@ -597,15 +605,16 @@ const FooterDocs: React.FC = () => {
   const ACCESSIBILITY = [
     {
       title: 'Navegación alternativa',
+      firstTitle: true,
       content: (
         <>
-          <p className="text-md">
+          <p className="text-md" style={{ marginBottom: '32px' }}>
             Todos los elementos del pie de página <i>(footer)</i> pueden recorrerse utilizando la navegación por teclado
             u otras herramientas de asistencia como lectores por voz.
           </p>
           <span className="badge badge-default ms-1">TAB</span>
           <span className="badge badge-default">ENTER</span>
-          <p className="text-md">
+          <p className="text-md mb-4">
             Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Además, con
             el <i>enter</i>, puede accionar los elementos sobre los que esté posicionada como botones, enlaces, entre
             otros.
@@ -616,7 +625,7 @@ const FooterDocs: React.FC = () => {
             alt="Navegacion alternativa del footer"
             width="800"
             height="285"
-            className="img-fluid"
+            className="img-fluid mb-3"
           />
         </>
       ),
@@ -625,11 +634,11 @@ const FooterDocs: React.FC = () => {
       title: 'Encabezados ocultos para navegación',
       content: (
         <>
-          <p className="text-md">
+          <p className="text-md mb-4">
             Se crearon encabezados ocultos con la clase <i>sr-only</i> para facilitar la navegación de los distintos
             bloques del pie de página.
           </p>
-          <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
+          <SyntaxHighlighter language="html" style={dracula} wrapLongLines className="mb-3">
             {FOOTER_ACCESSIBILTY}
           </SyntaxHighlighter>
         </>

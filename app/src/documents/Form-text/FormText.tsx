@@ -22,6 +22,7 @@ const FormTextDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Texto',
+      firstTitle: true,
       content: (
         <>
           <CodeBox codeHTML={INPUT_TEXT}>

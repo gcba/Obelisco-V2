@@ -30,10 +30,7 @@ const sections = [
           El objetivo de la resolución N°94/SECITD/23 es{' '}
           <strong>facilitar el acceso a los contenidos a todas las personas</strong> en igualdad de oportunidades.
         </p>
-        <a
-          href="https://servicios.infoleg.gob.ar/infolegInternet/anexos/175000-179999/175694/norma.htm"
-          className="external"
-        >
+        <a href="https://gcba.github.io/assets/resolucion/ck_PE-RES-MJGGC-SECITD-94-23-6626.pdf" className="external">
           Conocer la resolución
         </a>
       </>

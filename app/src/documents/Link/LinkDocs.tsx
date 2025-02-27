@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
 const basePath = '/Obelisco-V2';
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
@@ -15,6 +15,7 @@ const LinkDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Predeterminado',
+      firstTitle: true,
       content: (
         <>
           <CodeBox codeHTML={LINK_DEFAULT}>
@@ -121,6 +122,7 @@ const LinkDocs: React.FC = () => {
   const SECTION_UX = [
     {
       title: 'Uso',
+      firstTitle: true,
       content: (
         <>
           <div className="list-informative pb-3">
@@ -131,7 +133,7 @@ const LinkDocs: React.FC = () => {
               <li>Enlaces a correos electrónicos o números telefónicos (pueden iniciar una aplicación).</li>
             </ul>
           </div>
-          <div className="list-informative pb-3">
+          <div className="list-informative" style={{ marginTop: '32px' }}>
             <p className="text-xl">Cuándo no usar</p>
             <ul className="list-informative-bullet">
               <li>
@@ -152,15 +154,15 @@ const LinkDocs: React.FC = () => {
             del sitio web.
           </p>
 
-          <div className="max-items-2 mt-4 mb-2">
-            <div className="col">
+          <div className="max-items-2" style={{ marginTop: '32px' }}>
+            <div className="col pe-3">
               <p className="text-xl">Enlace predeterminado</p>
               <p className="text-md">
                 Se utiliza para navegar dentro de una misma página como ancla, o para correos electrónicos y
                 direcciones.
               </p>
             </div>
-            <div className="col">
+            <div className="col ps-3">
               <Image
                 src={`${basePath}/images/enlace/enlaces_tipos_predeterminado.svg`}
                 alt="Enlace tipo predeterminado"
@@ -171,15 +173,15 @@ const LinkDocs: React.FC = () => {
             </div>
           </div>
 
-          <div className="max-items-2 mt-4 mb-2">
-            <div className="col">
+          <div className="max-items-2" style={{ marginTop: '32px' }}>
+            <div className="col pe-3">
               <p className="text-xl">Enlace de acceso</p>
               <p className="text-md">
                 Se utiliza para ver más información de una sección, redirigiéndote a una nueva página del mismo sitio
                 web. Por ejemplo: &quot;Ver más noticias&quot;.
               </p>
             </div>
-            <div className="col">
+            <div className="col ps-3">
               <Image
                 src={`${basePath}/images/enlace/enlaces_tipos_acceso.svg`}
                 alt="Enlace tipo acceso"
@@ -190,8 +192,8 @@ const LinkDocs: React.FC = () => {
             </div>
           </div>
 
-          <div className="max-items-2 mt-4 mb-2">
-            <div className="col">
+          <div className="max-items-2" style={{ marginTop: '32px' }}>
+            <div className="col pe-3">
               <p className="text-xl">Enlace de descarga</p>
               <p className="text-md">
                 Se utiliza para indicar la descarga de un recurso. El nombre del enlace debe ser descriptivo, para darle
@@ -199,7 +201,7 @@ const LinkDocs: React.FC = () => {
                 &quot;Descargar archivo&quot;.
               </p>
             </div>
-            <div className="col">
+            <div className="col ps-3">
               <Image
                 src={`${basePath}/images/enlace/enlaces_tipos_descarga.svg`}
                 alt="Enlace tipo descarga"
@@ -210,15 +212,15 @@ const LinkDocs: React.FC = () => {
             </div>
           </div>
 
-          <div className="max-items-2 mt-4 mb-2">
-            <div className="col">
+          <div className="max-items-2" style={{ marginTop: '32px' }}>
+            <div className="col pe-3">
               <p className="text-xl">Enlace externo</p>
               <p className="text-md">
                 Se utiliza para enlazar contenido a un sitio web externo, por fuera del dominio actual. Indica la
                 redirección en una nueva pestaña, para no comprometer la navegación actual de la persona usuaria.
               </p>
             </div>
-            <div className="col">
+            <div className="col ps-3">
               <Image
                 src={`${basePath}/images/enlace/enlaces_tipos_externo.svg`}
                 alt="Botón de exito"
@@ -235,7 +237,7 @@ const LinkDocs: React.FC = () => {
       title: 'Tamaños',
       content: (
         <>
-          <p>
+          <p className="mb-4">
             Hay dos tamaños de enlaces: grande y chico, tanto para dispositivos <i>desktop, tablet y mobile</i>.
           </p>
           <Image
@@ -261,7 +263,7 @@ const LinkDocs: React.FC = () => {
       ),
       content: (
         <>
-          <p className="text-md">
+          <p className="text-md mb-4">
             Se utilizan solos o después de un bloque de contenido. Se puede usar cualquier tipo de enlace
             (predeterminado, de acceso, externo o de descarga), para brindar mayor contexto sobre la acción a la que
             hace referencia, o para redirigir a otro punto por dentro o fuera del sitio web.
@@ -312,7 +314,7 @@ const LinkDocs: React.FC = () => {
       ),
       content: (
         <>
-          <p className="text-md">
+          <p className="text-md mb-4">
             Se utilizan para enlazar un concepto, frase o palabras dentro de un bloque de texto.
           </p>
 
@@ -343,7 +345,8 @@ const LinkDocs: React.FC = () => {
             <li className="mb-2">
               Aplicá el color{' '}
               <strong>
-                <i>text-link</i>
+                {' '}
+                <i>text-link</i>{' '}
               </strong>{' '}
               que se encuentra en las{' '}
               <a href="https://gcba.github.io/Obelisco-V2/components/colors#section-pallette-3">variables de color</a>.
@@ -355,14 +358,16 @@ const LinkDocs: React.FC = () => {
             </li>
           </ol>
 
-          <p className="text-xl mt-4">Ejemplos de uso</p>
+          <p className="text-xl" style={{ marginTop: '32px' }}>
+            Ejemplos de uso
+          </p>
 
-          <div className="py-4">
+          <div>
             <div className="max-items-2">
               {/* 1 */}
               <div className="col">
                 <Image
-                  src={`${basePath}/images/enlace/enlace_no_usar_2.svg`}
+                  src={`${basePath}/images/enlace/enlace_inline_usar.svg`}
                   alt="Mala práctica en enlaces ejemplo 2"
                   width="800"
                   height="242"
@@ -371,15 +376,15 @@ const LinkDocs: React.FC = () => {
                 <div className="d-flex pt-3">
                   <span className="material-symbols-rounded text-danger">close</span>
                   <p className="mb-0">
-                    El texto del enlace es demasiado largo y aumenta la carga cognitiva de las personas usuarias,
-                    dificultando el escaneo de los contenidos clave de la página.
+                    El color no debe ser el único medio visual para transmitir información, indicar una acción o
+                    responder a una interacción
                   </p>
                 </div>
               </div>
               {/* 2 */}
               <div className="col">
                 <Image
-                  src={`${basePath}/images/enlace/enlace_usar_2.svg`}
+                  src={`${basePath}/images/enlace/enlace_inline_no_usar.svg`}
                   alt="Buena práctica en enlaces ejemplo 2"
                   width="800"
                   height="242"
@@ -388,8 +393,7 @@ const LinkDocs: React.FC = () => {
                 <div className="d-flex pt-3">
                   <span className="material-symbols-rounded text-success">check</span>
                   <p className="mb-0">
-                    Enlazar sobre una parte representativa del texto, que sea suficiente para entender la acción o
-                    redirección a la que hace referencia.
+                    Utilizar la variante de texto “Enlace” para diferenciar el componente del resto del texto
                   </p>
                 </div>
               </div>
@@ -434,12 +438,14 @@ const LinkDocs: React.FC = () => {
             </li>
           </ul>
 
-          <p className="text-xl mt-4">Ejemplos de uso</p>
+          <p className="text-xl" style={{ marginTop: '32px' }}>
+            Ejemplos de uso
+          </p>
 
-          <div className="py-4">
+          <div>
             <div className="max-items-2">
               {/* 1 */}
-              <div className="col">
+              <div className="col pe-3">
                 <Image
                   src={`${basePath}/images/enlace/enlace_no_usar_2.svg`}
                   alt="Mala práctica en enlaces ejemplo 2"
@@ -456,7 +462,7 @@ const LinkDocs: React.FC = () => {
                 </div>
               </div>
               {/* 2 */}
-              <div className="col">
+              <div className="col ps-3">
                 <Image
                   src={`${basePath}/images/enlace/enlace_usar_2.svg`}
                   alt="Buena práctica en enlaces ejemplo 2"
@@ -473,7 +479,7 @@ const LinkDocs: React.FC = () => {
                 </div>
               </div>
               {/* 3 */}
-              <div className="col">
+              <div className="col pe-3">
                 <Image
                   src={`${basePath}/images/enlace/enlace_no_usar_3.svg`}
                   alt="Mala práctica en enlaces ejemplo 3"
@@ -490,7 +496,7 @@ const LinkDocs: React.FC = () => {
                 </div>
               </div>
               {/* 4 */}
-              <div className="col">
+              <div className="col ps-3">
                 <Image
                   src={`${basePath}/images/enlace/enlace_usar_3.svg`}
                   alt="Buena práctica en enlaces ejemplo 3"
@@ -509,7 +515,9 @@ const LinkDocs: React.FC = () => {
             </div>
           </div>
 
-          <p className="text-xl">Sobre los textos de enlaces genéricos</p>
+          <p className="text-xl" style={{ marginTop: '32px' }}>
+            Sobre los textos de enlaces genéricos
+          </p>
 
           <p className="text-md">
             A la hora de redactar el texto de un enlace, se desaconsejan frases genéricas como &quot;Ver más&quot;,
@@ -519,12 +527,14 @@ const LinkDocs: React.FC = () => {
             enlace.
           </p>
 
-          <p className="text-xl mt-4">Ejemplos de uso</p>
+          <p className="text-xl" style={{ marginTop: '32px' }}>
+            Ejemplos de uso
+          </p>
 
-          <div className="py-4">
+          <div>
             <div className="max-items-2">
               {/* 1 */}
-              <div className="col">
+              <div className="col pe-3">
                 <Image
                   src={`${basePath}/images/enlace/enlace_no_usar_4.svg`}
                   alt="Mala práctica en enlaces ejemplo 4"
@@ -541,7 +551,7 @@ const LinkDocs: React.FC = () => {
                 </div>
               </div>
               {/* 2 */}
-              <div className="col">
+              <div className="col ps-3">
                 <Image
                   src={`${basePath}/images/enlace/enlace_usar_4.svg`}
                   alt="Buena práctica en enlaces ejemplo 4"
@@ -567,9 +577,10 @@ const LinkDocs: React.FC = () => {
   const SPECS = [
     {
       title: 'Anatomía',
+      firstTitle: true,
       content: (
         <>
-          <p className="text-md">El enlace puede tener hasta 3 elementos dependiendo del tipo.</p>
+          <p className="text-md mb-4">El enlace puede tener hasta 3 elementos dependiendo del tipo.</p>
           <Image
             src={`${basePath}/images/enlace/enlace_anatomia.svg`}
             alt="Anatomia del botón"
@@ -708,7 +719,7 @@ const LinkDocs: React.FC = () => {
       title: 'Espaciado',
       content: (
         <>
-          <p className="text-md">
+          <p className="text-md mb-4">
             Al utilizarse con ícono (enlace de acceso, externo y/o de descarga), los enlaces tienen un espacio entre el
             texto y el ícono, para evitar que el ícono colapse con el texto y mantenga relación al mismo tiempo.
           </p>
@@ -727,15 +738,16 @@ const LinkDocs: React.FC = () => {
   const ACCESSIBILITY = [
     {
       title: 'Navegación alternativa',
+      firstTitle: true,
       content: (
         <>
-          <p className="text-md">
+          <p className="text-md" style={{ marginBottom: '32px' }}>
             El componente de enlace está construido para ser reconocido por herramientas de asistencia como la
             navegación por teclado o lectores por voz.
           </p>
           <span className="badge badge-default ms-1">TAB</span>
           <span className="badge badge-default">ENTER</span>
-          <p className="text-md">
+          <p className="text-md mb-4">
             Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Además, con
             el <i>enter</i>, puede accionar los elementos sobre los que esté posicionada como botones, enlaces, entre
             otros.
@@ -756,8 +768,9 @@ const LinkDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md">
-            En caso de utilizar un botón solo con ícono y sin etiqueta, se debe colocar una etiqueta semántica
-            <i>(aria-label)</i> en el código con el texto descriptivo de la acción.
+            Para asegurar una navegación integral, los enlaces deben tener el atributo <i>aria-label</i> con una
+            descripción explicativa del tipo de enlace y el contenido al que redirige, dándole mayor contexto a la
+            persona usuaria sobre adónde va y la acción que desencadena.
           </p>
           <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
             {LINK_ACCESSIBILTY}

@@ -20,6 +20,7 @@ import {
 const SECTIONS_DEV = [
   {
     title: 'Simple',
+    firstTitle: true,
     content: (
       <CodeBox codeHTML={SIMPLE_ACCESS}>
         <div className="container">

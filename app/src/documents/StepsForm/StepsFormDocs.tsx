@@ -7,6 +7,7 @@ import { STEPS_FORM } from './code-views';
 const SECTIONS_DEV = [
   {
     title: 'Pasos de un formulario',
+    firstTitle: true,
     content: (
       <CodeBox codeHTML={STEPS_FORM}>
         <div className="stepper-content">

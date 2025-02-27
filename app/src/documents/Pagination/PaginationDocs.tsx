@@ -34,6 +34,7 @@ const PaginationDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Numerado',
+      firstTitle: true,
       content: (
         <CodeBox codeHTML={getCodeExample()}>
           <div className="row justify-content-center mt-4">

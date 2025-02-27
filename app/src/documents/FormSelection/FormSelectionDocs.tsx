@@ -17,6 +17,7 @@ const FormSelectionDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Casilla de selección única (Radio)',
+      firstTitle: true,
     },
     {
       subtitle: 'Predeterminada',

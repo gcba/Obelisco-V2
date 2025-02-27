@@ -6,6 +6,7 @@ import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 const sections = [
   {
     title: 'Detalle',
+    firstTitle: true,
     content: (
       <>
         <p className="mt-3">

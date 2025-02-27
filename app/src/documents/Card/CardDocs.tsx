@@ -694,7 +694,6 @@ const CardDocs: React.FC = () => {
             height="200"
             className="img-fluid"
           />
-
           <p className="text-xl mb-4" style={{ marginTop: '32px' }}>
             Temática
           </p>

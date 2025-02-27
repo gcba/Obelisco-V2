@@ -59,7 +59,8 @@ export const gettingPages = [
   { text: 'Sobre Obelisco', url: '/getting-started', id: 1 },
   { text: 'Instalación', url: '/getting-started/installation', id: 2 },
   { text: 'Importaciones', url: '/getting-started/imports', id: 3 },
-  { text: 'Editor de código', url: '/getting-started/editor', id: 4 },
+  { text: 'Accesibilidad', url: '/getting-started/accessibility', id: 4 },
+  { text: 'Editor de código', url: '/getting-started/editor', id: 5 },
 ];
 
 export const documentationPages = [

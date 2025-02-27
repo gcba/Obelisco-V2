@@ -473,7 +473,6 @@ const FooterDocs: React.FC = () => {
             height="280"
             className="img-fluid"
           />
-
           <div className="responsive-scroll mt-4 mb-5" tabIndex={0}>
             <table className="table">
               <thead>

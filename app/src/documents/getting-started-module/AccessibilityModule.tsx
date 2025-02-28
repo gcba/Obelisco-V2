@@ -122,10 +122,13 @@ const sections = [
             <p>Documentación y toma de decisiones.</p>
           </li>
         </ul>
-
-        <p className="text-xl" style={{ marginTop: '32px' }}>
-          Documentación específica sobre accesibilidad
-        </p>
+      </>
+    ),
+  },
+  {
+    subtitle: 'Documentación específica sobre accesibilidad',
+    content: (
+      <>
         <p className="text-md">
           En Obelisco, cada uno de los elementos que conforman la librería, las guías de estilo y los componentes,
           cuenta con una pestaña de accesibilidad donde se detallan las consideraciones específicas según su contexto de
@@ -146,10 +149,13 @@ const sections = [
           Para evaluar la correcta implementación del sistema de diseño y asegurar una experiencia digital inclusiva, es
           recomendable utilizar, principalmente, los mismos recursos que se utilizan dentro de los procesos de Obelisco.
         </p>
-        <p className="text-xl" style={{ marginTop: '32px' }}>
-          Herramientas de evaluación <i>online</i>
-        </p>
-
+      </>
+    ),
+  },
+  {
+    subtitle: 'Herramientas de evaluación online',
+    content: (
+      <>
         <div className="list-link">
           <a href="https://www.figma.com/exit?url=https%3A%2F%2Fwave.webaim.org" className="external">
             WAVE Web Accessibility Evaluation Tools
@@ -161,11 +167,13 @@ const sections = [
             WAVE Link Contrast Checker
           </a>
         </div>
-
-        <p className="text-xl" style={{ marginTop: '32px' }}>
-          Extensiones de evaluación web para navegadores
-        </p>
-
+      </>
+    ),
+  },
+  {
+    subtitle: 'Extensiones de evaluación web para navegadores',
+    content: (
+      <>
         <div className="list-link">
           <a
             href="https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh?utm_source=item-share-cp&pli=1"
@@ -183,10 +191,13 @@ const sections = [
             axe DevTools - Web Accessibility Testing (Chrome extension)
           </a>
         </div>
-
-        <p className="text-xl" style={{ marginTop: '32px' }}>
-          Herramientas de evaluación por voz
-        </p>
+      </>
+    ),
+  },
+  {
+    subtitle: 'Herramientas de evaluación por voz',
+    content: (
+      <>
         <div className="list-link">
           <a href="https://www.nvaccess.org/download/" className="external">
             NVDA Screen Reader

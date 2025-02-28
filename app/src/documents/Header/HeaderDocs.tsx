@@ -2128,6 +2128,7 @@ const HeaderDocs: React.FC = () => {
   const SECTION_UX = [
     {
       title: 'Uso',
+      firstTitle: true,
       content: (
         <>
           <div className="list-informative pb-3">
@@ -2383,6 +2384,7 @@ const HeaderDocs: React.FC = () => {
   const SPECS = [
     {
       title: 'Anatomía',
+      firstTitle: true,
       content: (
         <>
           <Image

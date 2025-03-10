@@ -111,7 +111,7 @@ const sections = [
               code
             </span>
             <div className="access-content">
-              <span className="access-title">Página de primer nivel</span>
+              <span className="access-title">Documentación</span>
               <p className="access-text">Cambios de componentes, versionados y clases disponibles.</p>
             </div>
           </a>

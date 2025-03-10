@@ -1,42 +1,40 @@
+import Image from 'next/image';
+const basePath = '/Obelisco-V2';
+
 import ComponentHeader from '@/components/Template/ComponentHeader';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 
 const sections = [
   {
-    title: '¿Qué es Obelisco v2?',
-    description: `
-      Obelisco v2 es una librería de estilos que facilita la creación de interfaces web mediante componentes que mantienen una coherencia estética y funcional. 
-      Este sistema es ideal para desarrollar productos digitales con un diseño armonioso y enfocado en la experiencia del usuario. 
-      Proporcionada por el GCBA, Obelisco v2 ofrece una integración sencilla de recursos esenciales que permiten un desarrollo eficiente y estandarizado.
-    `,
-  },
-  {
     title: 'Características principales',
+    firstTitle: true,
     content: (
       <div className="col-12">
         <div className="list-informative">
           <ul className="list-informative-bullet">
             <li>
-              <strong>Integración con Bootstrap:</strong> Construido sobre la base de Bootstrap 5.3, Obelisco v2 hereda
-              un sistema de diseño robusto, facilitando la creación de interfaces consistentes y atractivas.
+              <strong>Diseño atómico y modular:</strong> pensar y mantener un sistema atómico permite generar bloques de
+              contenido intercambiables, dentro de una grilla que sigue el tamaño de la ventana y muestra la información
+              de la forma más amigable a la persona usuaria.
             </li>
             <li>
-              <strong>Paleta de colores predefinida:</strong> Ofrece una paleta de colores cuidadosamente seleccionada,
-              lo que simplifica la toma de decisiones de diseño y garantiza coherencia visual en toda la aplicación.
+              <strong>Librería de componentes responsivos:</strong> Obelisco cuenta con una librería de más de 30
+              componentes construidos con los más altos estándares de accesibilidad (AA-AAA), y propiedades
+              configurables para cada contexto de uso.
             </li>
             <li>
-              <strong>Accesibilidad garantizada:</strong> Con un enfoque prioritario en la accesibilidad, cada
-              componente de Obelisco v2 está diseñado para cumplir con las mejores prácticas, asegurando una experiencia
-              inclusiva para todos los usuarios.
+              <strong>
+                Guías de estilos o <i>foundations</i> robustas:
+              </strong>{' '}
+              el sistema de diseño cuenta con guías de estilo escalables, adaptables a cualquier activo digital, y
+              basadas en principios y fundamentos que optimizan la experiencia de la persona usuaria.
             </li>
             <li>
-              <strong>Amplia variedad de componentes:</strong> Con más de 20 componentes disponibles y más de 30
-              variantes, Obelisco v2 proporciona flexibilidad y versatilidad para adaptarse a diversas necesidades de
-              diseño y funcionalidad.
-            </li>
-            <li>
-              <strong>Tipografía predefinida:</strong> Incluye tipografías predefinidas que complementan la estética
-              general, facilitando la consistencia en la presentación del texto en toda la aplicación.
+              <strong>
+                Transparencia y fiabilidad del modelo <i>open source</i>:
+              </strong>{' '}
+              como sistema de diseño <i>open source</i>, toda la documentación e información sobre el uso e
+              implementación de Obelisco en activos digitales está disponible desde cada una de sus capas.
             </li>
           </ul>
         </div>
@@ -44,13 +42,97 @@ const sections = [
     ),
   },
   {
-    title: 'Accesibilidad',
-    description: `
-      La accesibilidad es una prioridad en Obelisco v2. Cada componente está diseñado para garantizar que todos los usuarios, independientemente de sus habilidades, puedan interactuar con las interfaces de manera efectiva. 
-      Se incluyen etiquetas semánticas, compatibilidad con lectores de pantalla, y controles de teclado, asegurando el cumplimiento de estándares estrictos. 
-      Además, se cuida el contraste de colores y se proporcionan descripciones adecuadas para elementos interactivos, garantizando una experiencia equitativa para todos los usuarios. 
-      En Obelisco v2, la accesibilidad no es solo una característica, sino un compromiso integral que garantiza interfaces web inclusivas y accesibles para un público diverso.
-    `,
+    title: '¿Cómo utilizar Obelisco?',
+    content: (
+      <div>
+        <p>
+          Es posible instalar e implementar Obelisco sobre un activo digital nuevo o existente, con una adopción
+          inmediata o gradual del sistema de diseño.
+        </p>
+        <p>
+          {' '}
+          Para tener mayor contexto sobre cómo sería el proceso de trabajo conjunto con Obelisco, mirá el siguiente{' '}
+          <i>roadmap:</i>
+        </p>
+        <a
+          href={`${basePath}/docs/Workflow-Flujo_de_adopcion.pdf`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="m-1"
+        >
+          <Image
+            src={`${basePath}/images/flujo_adopcion.svg`}
+            alt="Acceder a pdf"
+            width="800"
+            height="242"
+            className="img-fluid"
+          />
+        </a>
+      </div>
+    ),
+  },
+  {
+    title: 'Guía de adopción',
+    content: (
+      <div>
+        <p>
+          El modelo de adopción sirve como guía para la correcta instalación e implementación de Obelisco en activos
+          digitales, nuevos o existentes. El sistema de diseño ofrece información específica para diseñadores y para
+          desarrolladores, como una forma de agilizar los procesos de adopción para cada una de las áreas involucradas.
+        </p>
+        <a
+          href={`${basePath}/docs/Guia_de_adopcion_Obelisco.pdf`}
+          download={`${basePath}/docs/Guia_de_adopcion_Obelisco.pdf`}
+          className="download"
+        >
+          Guía de adopción de Obelisco v2
+        </a>
+      </div>
+    ),
+  },
+  {
+    title: 'Conocé Obelisco',
+    content: (
+      <div className="card-items-2 p-1">
+        <div className="col">
+          <a href="https://gcba.github.io/Obelisco-V2/components" className="list-group-item">
+            <span className="material-symbols-rounded o-icon" aria-hidden="true">
+              menu_book
+            </span>
+            <div className="access-content">
+              <span className="access-title">Librería</span>
+              <p className="access-text">Lineamientos de uso para los estilos y componentes del sistema.</p>
+            </div>
+          </a>
+        </div>
+        <div className="col">
+          <a href="https://gcba.github.io/Obelisco-V2/documentation" className="list-group-item">
+            <span className="material-symbols-rounded o-icon" aria-hidden="true">
+              code
+            </span>
+            <div className="access-content">
+              <span className="access-title">Página de primer nivel</span>
+              <p className="access-text">Cambios de componentes, versionados y clases disponibles.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    ),
+  },
+  {
+    title: 'Soporte',
+    content: (
+      <div>
+        <p>
+          Obelisco es un sistema de diseño que se alimenta del feedback constante que recibe de todas las partes que lo
+          utilizan. Si necesitás reportar algún problema o resolver una duda, podés{' '}
+          <a href="https://github.com/gcba/Obelisco-V2/issues" target="_blank" rel="noopener noreferrer">
+            abrir un issue en GitHub{' '}
+          </a>
+          .
+        </p>
+      </div>
+    ),
   },
 ];
 const IntroductionModule: React.FC = () => {
@@ -59,9 +141,7 @@ const IntroductionModule: React.FC = () => {
       <ComponentHeader
         title="Sobre Obelisco"
         description={[
-          'Obelisco v2 es un Sistema de diseño basado en componentes para productos digitales de la Ciudad de Buenos Aires, diseñado para continuar la evolución de Obelisco en su segunda versión.',
-          'Este sistema brinda una mejor experiencia de usuario y simplifica el desarrollo de interfaces web al mantener una armonía digital enfocada en la experiencia de los usuarios, proporcionada por el Gobierno de la Ciudad de Buenos Aires (GCBA).',
-          'Con una amplia variedad de componentes, Obelisco v2 acelera la creación de aplicaciones elegantes y funcionales.',
+          'Obelisco es el sistema de diseño del Gobierno de la Ciudad de Buenos Aires, construido con foco en la accesibilidad y los estándares más altos de usabilidad. Obelisco facilita la construcción de productos digitales que ofrezcan una experiencia integral y positiva para la ciudadanía.',
         ]}
         divider={true}
       />

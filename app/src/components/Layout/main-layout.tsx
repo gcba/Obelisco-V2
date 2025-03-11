@@ -76,6 +76,12 @@ export const versions = [
   { text: 'Obelisco v.1 (deprecado)', url: 'https://gcba.github.io/obelisco-v1', id: 2 },
 ];
 
+export const programmersDocumentationPages = [
+  { text: 'Documentación programadores', url: '/programmers-documentation', id: 1 },
+  { text: 'Creación de componentes', url: '/programmers-documentation/component-creation', id: 2 },
+]
+
+
 const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const pathname = usePathname();
   const isHome = pathname === '/';
@@ -125,6 +131,14 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                 <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Documentación</p>
               </div>
               <NavLayout items={documentationPages} />
+            </div>
+          )}
+          {pathname.includes('/programmers') && (
+            <div className="nav-left sticky-nav h-auto">
+              <div className="nav-left-box-title">
+                <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Documentación</p>
+              </div>
+              <NavLayout items={programmersDocumentationPages} />
             </div>
           )}
         </div>

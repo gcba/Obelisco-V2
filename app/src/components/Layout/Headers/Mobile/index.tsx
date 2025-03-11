@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import Drawer from '../../../Drawer/index';
 import {
@@ -7,9 +7,10 @@ import {
   formsPages,
   gettingPages,
   organismsPages,
+  programmersDocumentationPages,
   stylesPages,
   templates,
-  versions,
+  versions
 } from '../../main-layout';
 import NavLayout from '../../Navigation/nav';
 
@@ -51,6 +52,9 @@ export default function HeaderMobile() {
             <hr className="nav-divider" />
             <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Documentación</p>
             <NavLayout items={documentationPages} />
+            <hr className="nav-divider" />
+            <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Programadores</p>
+            <NavLayout items={programmersDocumentationPages} />
             <hr className="nav-divider" />
             <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Plantillas</p>
             <NavLayout items={templates} />

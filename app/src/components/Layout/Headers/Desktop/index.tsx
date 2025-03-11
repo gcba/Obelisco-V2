@@ -13,6 +13,7 @@ export default function HeaderDesktop() {
   const gettingPages = [
     { text: 'Empezar con Obelisco', url: '/getting-started', id: 1 },
     { text: 'Librería', url: '/components', id: 2 },
+    { text: 'Programadores', url: '/programmers-documentation', id: 3 },
   ];
   const pathname = usePathname();
 

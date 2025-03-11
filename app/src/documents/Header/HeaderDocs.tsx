@@ -1,4 +1,5 @@
 import Image from 'next/image';
+
 const basePath = '/Obelisco-V2';
 
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
@@ -8,6 +9,8 @@ import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
+
+import "./Header.scss";
 
 import {
   HEADER_LOGIN_ONE_LINE,
@@ -28,11 +31,208 @@ import {
 } from './code-views';
 
 const logo = '/images/logo_ba.svg';
+const logo_ba_logo_area = '/images/header/logo_idecaba.svg';
 
 const logo_mobile = '/images/logo_ba_mobile.svg';
 
 const HeaderDocs: React.FC = () => {
   const SECTIONS_DEV = [
+    {
+      title: 'Logo BA + Logo del área',
+      content: (
+        <>
+          <CodeBox codeHTML={HEADER_LOGIN_ONE_LINE_SEARCH}>
+            <div className="container">
+              {/* <div className="header-box-sizing"> */}
+              <header className="o-header navbar" role="banner">
+                <LinkClient href="#main" className="skip-to-main-content-link">
+                  Saltar al contenido principal
+                </LinkClient>
+                {/* Variante con 2 logos */}
+                <div className="container header-container">
+                  <div className="header-container_logos">
+                    <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand ">
+                      <Image
+                        className="d-none d-xl-block"
+                        src={`${basePath}${logo}`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                        width={74}
+                        height={40}
+                      />
+                      {/* <div className='logos_separator'></div> */}
+                      <Image
+                        className="d-xl-none"
+                        src={`${basePath}${logo_mobile}`}
+                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                        width={74}
+                        height={40}
+                      />
+                    </LinkClient>
+                    <div className='logos_separator'></div>
+                    <LinkClient href="https://www.estadisticaciudad.gob.ar/eyc/" className="navbar-brand">
+                      <Image
+                        className="d-none d-xl-block"
+                        src={`${basePath}${logo_ba_logo_area}`}
+                        alt="IDECBA"
+                        width={74}
+                        height={40}
+                      />
+                      {/* <div className='logos_separator'></div> */}
+                      <Image
+                        className="d-xl-none"
+                        src={`${basePath}${logo_ba_logo_area}`}
+                        alt="IDECBA"
+                        width={74}
+                        height={40}
+                      />
+                    </LinkClient>
+                  </div>
+                  {/* Variante con 2 logos */}
+                  <div className="navbar-login-mobile">
+                    <LinkClient className="btn btn-lg btn-icon btn-outline-tertiary">
+                      <span className="material-symbols-rounded" aria-hidden="true">
+                        person
+                      </span>
+                      <span className="btn-text">Ingresar</span>
+                    </LinkClient>
+                  </div>
+                  <button
+                    className="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent1"
+                    aria-controls="navbarContent1"
+                    aria-expanded="false"
+                    aria-label="Menú"
+                  ></button>
+                  <div className="collapse navbar-collapse" id="navbarContent1">
+                    <div className="navbar-content">
+                      {/* <div className="navbar-sections">
+                          <nav>
+                            <p className="navbar-sections-title">Secciones</p>
+                            <ul className="nav nav-pills nav-sections">
+                              <li className="dropdown">
+                              <button
+                                type="button"
+                                className="btn btn-dropdown btn-lg"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <span className="btn-dropdown-text ellipsis-1"> </span>
+                                <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                                  expand_more
+                                </span>
+                              </button>
+                              <div className="dropdown-menu">
+                                <LinkClient className="dropdown-item">
+                                  <span className="item-text">Enlace de navegación</span>
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
+                                  <span className="item-text">Enlace de navegación</span>
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
+                                  <span className="item-text">Enlace de navegación</span>
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
+                                  <span className="item-text">Enlace de navegación</span>
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
+                                  <span className="item-text">Enlace de navegación</span>
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
+                                  <span className="item-text">Enlace de navegación</span>
+                                </LinkClient>
+                                <LinkClient className="dropdown-item item-link">
+                                  <span className="item-text">Ver más</span>
+                                  <span className="material-symbols-rounded" aria-hidden="true">
+                                    arrow_forward
+                                  </span>
+                                </LinkClient>
+                              </div>
+                            </li>
+                              <li className="nav-item">
+                              <LinkClient className="nav-link nav-link-lg">
+                                <span>Navegación</span>
+                              </LinkClient>
+                            </li>
+                            <li className="dropdown">
+                              <button
+                                type="button"
+                                className="btn btn-dropdown btn-lg"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <span className="btn-dropdown-text ellipsis-1">Navegación</span>
+                                <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                                  expand_more
+                                </span>
+                              </button>
+                              <div className="dropdown-menu">
+                                <LinkClient className="dropdown-item">
+                                  <span className="item-text">Enlace de navegación</span>
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
+                                  <span className="item-text">Enlace de navegación</span>
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
+                                  <span className="item-text">Enlace de navegación</span>
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
+                                  <span className="item-text">Enlace de navegación</span>
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
+                                  <span className="item-text">Enlace de navegación</span>
+                                </LinkClient>
+                                <LinkClient className="dropdown-item">
+                                  <span className="item-text">Enlace de navegación</span>
+                                </LinkClient>
+                                <LinkClient className="dropdown-item item-link">
+                                  <span className="item-text">Ver más</span>
+                                  <span className="material-symbols-rounded" aria-hidden="true">
+                                    arrow_forward
+                                  </span>
+                                </LinkClient>
+                              </div>
+                            </li>
+                            </ul>
+                          </nav>
+                        </div> */}
+                      <div className="navbar-search">
+                        <form className="form-search">
+                          <label htmlFor="header-search" className="form-label sr-only">
+                            Buscador
+                          </label>
+                          <div className="search-container">
+                            <input
+                              type="search"
+                              className="form-control input-search input-search-with-button"
+                              id="header-search"
+                              placeholder="Buscador"
+                            />
+                            <button className="reset" type="reset" aria-label="Borrar"></button>
+                            <button className="button-search" type="submit" aria-label="Buscar"></button>
+                          </div>
+                        </form>
+                      </div>
+                      <div className="navbar-login">
+                        <LinkClient className="btn btn-lg btn-outline-tertiary">
+                          <span className="material-symbols-rounded" aria-hidden="true">
+                            person
+                          </span>
+                          <span className="btn-text">Ingresar</span>
+                        </LinkClient>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="header-backdrop"></div>
+              </header>
+              {/* </div> */}
+            </div>
+          </CodeBox>
+        </>
+      )
+    },
     {
       title: 'Deslogueado',
       firstTitle: true,

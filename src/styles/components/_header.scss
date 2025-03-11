@@ -292,6 +292,27 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
       margin: 0;
     }
 
+    // Header Variante Logos
+    & .header-container_logos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: auto;
+
+      // Header Variante Logos
+      & {
+        .logos_separator {
+          width: 2px;
+          background-color: #E6EBF0;
+          margin: 10px 20px;
+          height: 60px;
+        }
+      }
+      // Header Variante Logos
+    }
+
+    // Header Variante Logos
+
     .navbar-brand {
       margin-right: auto;
       width: fit-content;
@@ -300,6 +321,16 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
       display: flex;
       align-items: center;
       justify-content: flex-start;
+      // // Header Variante Logos
+      // & {
+      //   .logos_separator {
+      //     width: 2px;
+      //     background-color: #E6EBF0;
+      //     margin: 10px 20px;
+      //     height: 60px;
+      //   }
+      // }
+      // // Header Variante Logos
     }
 
     .navbar-toggler {

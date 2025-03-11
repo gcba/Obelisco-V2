@@ -1,0 +1,54 @@
+name: 💡 ODS – Nuevo feature
+title: "💡 ODS – Nuevo feature: [Nombre de tu requerimiento]"
+description: "Sugerí una mejora sobre un componente, el funcionamiento, el diseño o la personalización de un elemento del sistema de diseño."
+labels: (sumar tags acá)
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: "¿El issue está relacionado con algún problema? Describí brevemente tu experiencia"
+      description: "Escribí de forma clara y concreta el problema con el que se relaciona este issue."
+      placeholder: "Me siento frustrado cuando..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: "Escribí cuál sería tu solución"
+      description: "Describí brevemente lo que te gustaría o esperas que pase."
+    validations:
+      required: true
+  
+  - type: textarea
+    id: alternative_solution
+    attributes:
+      label: "¿Pensaste en alguna alternativa?"
+      description: "Escribí un breve párrafo, claro y conciso, de las alternativas que exploraste al encontrar esta necesidad."
+    validations:
+      required: true
+
+  - type: textarea
+    id: related_material
+    attributes:
+      label: "Material relacionado"
+      description: "Sumá links o archivos de cualquier exploración y/o alternativa de referencia."
+    validations:
+      required: false
+  
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: "Información adicional"
+      description: "Sumá cualquier información adicional que consideres necesaria para entender el error o punto de dolor."
+    validations:
+      required: false
+  
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: "¿Tenés algo adelantado o querés contribuir a la solución?"
+      description: "Si realizaste pruebas o exploraciones, o querés contribuir con la solución, marcá la opción."
+      options:
+        - label: "Sí, quiero y contribuiré a la solución del problema."
+          required: false

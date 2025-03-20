@@ -1,7 +1,7 @@
 import Image from 'next/image';
-const basePath = '/Obelisco-V2';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
+const basePath = '/Obelisco-V2';
 
 import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
@@ -9,6 +9,8 @@ import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import {
+  HEADER,
+  HEADER_2,
   HEADER_LOGIN_ONE_LINE,
   HEADER_LOGIN_ONE_LINE_SEARCH,
   HEADER_LOGIN_TWO_LINES,
@@ -22,8 +24,6 @@ import {
   HEADER_ONLY_SEARCH,
   HEADER_TWO_LINES,
   HEADER_TWO_LINES_SEARCH,
-  HEADER,
-  HEADER_2,
 } from './code-views';
 
 const logo = '/images/logo_ba.svg';
@@ -2568,12 +2568,12 @@ const HeaderDocs: React.FC = () => {
       title: <>Encabezado (header) con slots</>,
       content: (
         <>
-          <p className="text-md mt-2 mb-4">
+          <p className="text-md  mb-3">
             Un espacio reservado o <i>slot</i> es un componente local del sistema de diseño, que solo existe en Figma, y
             se utiliza para flexibilizar el uso de un componente del UI kit. Los <i>slots</i> permiten adoptar el
             sistema de diseño y utilizar componentes de la librería sin la necesidad de generar nuevas estructuras.
           </p>
-          <p className="text-md">
+          <p className="text-md mb-4">
             En el caso del encabezado (header), el <i>slot</i> cumple la función del logo. El diseñador en Figma puede
             replicar la flexibilidad de uso del código.
           </p>
@@ -2606,7 +2606,7 @@ const HeaderDocs: React.FC = () => {
               (80x80 px. en <i>desktop</i> y 60x60 px. en <i>mobile</i>), y para logotipos horizontales (115x80 px. en
               desktop y 115x60 px. en mobile).
             </li>
-            <li className="mb-3">
+            <li>
               Intercambiá el <i>slot</i>, utilizando la propiedad de <i>instance swap</i> del encabezado <i>(header)</i>
               , por el logo de la marca o el activo digital.
             </li>

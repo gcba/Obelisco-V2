@@ -412,6 +412,7 @@ const GridDocs: React.FC = () => {
   const SECTION_DEV = [
     {
       title: 'Contenedores de la página',
+      firstTitle: true,
       content: (
         <>
           <p className="pb-3">

@@ -355,6 +355,7 @@ const SECTIONS_UX = [
 const SECTIONS_DEV = [
   {
     title: 'Títulos',
+    firstTitle: true,
     content: (
       <>
         <CodeBox codeHTML={HEADINGS}>
@@ -466,6 +467,7 @@ const SECTIONS_DEV = [
 const SECTIONS_SCALE = [
   {
     title: '¿Por qué una escala?',
+    firstTitle: true,
     content: (
       <>
         <p>

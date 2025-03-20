@@ -1,4 +1,3 @@
-
 import Image from 'next/image';
 const basePath = '/Obelisco-V2';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
@@ -215,7 +214,7 @@ const HeaderDocs: React.FC = () => {
                 </header>
               </div>
             </div>
-          </CodeBox> 
+          </CodeBox>
         </>
       ),
     },
@@ -2565,14 +2564,21 @@ const HeaderDocs: React.FC = () => {
       ),
     },
     {
-      title: <>Encabezado <i>(header)</i> con slots</>,
+      title: (
+        <>
+          Encabezado <i>(header)</i> con slots
+        </>
+      ),
       content: (
         <>
           <p className="text-md mb-3">
-            Un espacio reservado o <i>slot</i> es un componente local del sistema de diseño, que solo existe en Figma, y se utiliza para flexibilizar el uso de un componente del UI kit. Los <i>slots</i> permiten adoptar el sistema de diseño y utilizar componentes de la librería sin la necesidad de generar nuevas estructuras.
+            Un espacio reservado o <i>slot</i> es un componente local del sistema de diseño, que solo existe en Figma, y
+            se utiliza para flexibilizar el uso de un componente del UI kit. Los <i>slots</i> permiten adoptar el
+            sistema de diseño y utilizar componentes de la librería sin la necesidad de generar nuevas estructuras.
           </p>
           <p className="text-md mb-4">
-            En el caso del encabezado (header), el <i>slot</i> cumple la función del logo. El diseñador en Figma puede replicar la flexibilidad de uso del código.
+            En el caso del encabezado (header), el <i>slot</i> cumple la función del logo. El diseñador en Figma puede
+            replicar la flexibilidad de uso del código.
           </p>
           <Image
             src={`${basePath}/images/header/header_slots.svg`}

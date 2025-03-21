@@ -81,8 +81,8 @@ const sections = [
           desarrolladores, como una forma de agilizar los procesos de adopción para cada una de las áreas involucradas.
         </p>
         <a
-          href={`${basePath}/docs/Guia_de_adopcion_Obelisco.pdf`}
-          download={`${basePath}/docs/Guia_de_adopcion_Obelisco.pdf`}
+          href={`${basePath}/docs/Guía_de_adopción_de_Obelisco_v2.pdf`}
+          download={`${basePath}/docs/Guía_de_adopción_de_Obelisco_v2.pdf`}
           className="download"
         >
           Guía de adopción de Obelisco v2

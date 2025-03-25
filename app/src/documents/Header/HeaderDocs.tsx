@@ -1,8 +1,7 @@
 import Image from 'next/image';
-const basePath = '/Obelisco-V2';
-
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
+const basePath = '/Obelisco-V2';
 
 import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
@@ -10,6 +9,9 @@ import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import {
+  HEADER,
+  HEADER_2,
+  HEADER_BANNER,
   HEADER_LOGIN_ONE_LINE,
   HEADER_LOGIN_ONE_LINE_SEARCH,
   HEADER_LOGIN_TWO_LINES,
@@ -23,19 +25,202 @@ import {
   HEADER_ONLY_SEARCH,
   HEADER_TWO_LINES,
   HEADER_TWO_LINES_SEARCH,
-  HEADER,
-  HEADER_2,
 } from './code-views';
 
 const logo = '/images/logo_ba.svg';
-
 const logo_mobile = '/images/logo_ba_mobile.svg';
+const logo_ba_logo_banner = '/images/header/logo_BA_banner.svg';
 
 const HeaderDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
-      title: 'Deslogueado',
+      title: 'Banner del GCBA',
       firstTitle: true,
+      content: (
+        <>
+          <CodeBox codeHTML={HEADER_BANNER}>
+            <div className="container-fluid">
+              <div className="header-box-sizing_banner">
+                {/* header banner */}
+                <div className="header-banner">
+                  <Image
+                    className="header-banner-img"
+                    src={`${basePath}${logo_ba_logo_banner}`}
+                    alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                    width={30}
+                    height={16}
+                  />
+                  <p className="text-sm">Gobierno de la Ciudad de Buenos Aires</p>
+                </div>
+                {/* header banner */}
+                <header className="o-header o-header_banner navbar" role="banner">
+                  <LinkClient href="#main" className="skip-to-main-content-link">
+                    Saltar al contenido principal
+                  </LinkClient>
+                  <div className="container header-container">
+                    <LinkClient href="https://www.estadisticaciudad.gob.ar/eyc/" className="navbar-brand">
+                      <Image
+                        className="d-none d-xl-block"
+                        src={`${basePath}${logo}`}
+                        alt="IDECBA"
+                        width={74}
+                        height={40}
+                      />
+                      <Image
+                        className="d-xl-none"
+                        src={`${basePath}${logo_mobile}`}
+                        alt="IDECBA"
+                        width={74}
+                        height={40}
+                      />
+                    </LinkClient>
+                    <div className="navbar-login-mobile">
+                      <LinkClient className="btn btn-lg btn-icon btn-outline-tertiary">
+                        <span className="material-symbols-rounded" aria-hidden="true">
+                          person
+                        </span>
+                        <span className="btn-text">Ingresar</span>
+                      </LinkClient>
+                    </div>
+                    <button
+                      className="navbar-toggler"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#navbarContent1"
+                      aria-controls="navbarContent1"
+                      aria-expanded="false"
+                      aria-label="Menú"
+                    ></button>
+                    <div className="collapse navbar-collapse" id="navbarContent1">
+                      <div className="navbar-content">
+                        <div className="navbar-sections">
+                          <nav>
+                            <p className="navbar-sections-title">Secciones</p>
+                            <ul className="nav nav-pills nav-sections">
+                              <li className="dropdown">
+                                <button
+                                  type="button"
+                                  className="btn btn-dropdown btn-lg"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <span className="btn-dropdown-text ellipsis-1">Navegación</span>
+                                  <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                                    expand_more
+                                  </span>
+                                </button>
+                                <div className="dropdown-menu">
+                                  <LinkClient className="dropdown-item">
+                                    <span className="item-text">Enlace de navegación</span>
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
+                                    <span className="item-text">Enlace de navegación</span>
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
+                                    <span className="item-text">Enlace de navegación</span>
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
+                                    <span className="item-text">Enlace de navegación</span>
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
+                                    <span className="item-text">Enlace de navegación</span>
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
+                                    <span className="item-text">Enlace de navegación</span>
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item item-link">
+                                    <span className="item-text">Ver más</span>
+                                    <span className="material-symbols-rounded" aria-hidden="true">
+                                      arrow_forward
+                                    </span>
+                                  </LinkClient>
+                                </div>
+                              </li>
+                              <li className="nav-item">
+                                <LinkClient className="nav-link nav-link-lg">
+                                  <span>Navegación</span>
+                                </LinkClient>
+                              </li>
+                              <li className="dropdown">
+                                <button
+                                  type="button"
+                                  className="btn btn-dropdown btn-lg"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <span className="btn-dropdown-text ellipsis-1">Navegación</span>
+                                  <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                                    expand_more
+                                  </span>
+                                </button>
+                                <div className="dropdown-menu">
+                                  <LinkClient className="dropdown-item">
+                                    <span className="item-text">Enlace de navegación</span>
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
+                                    <span className="item-text">Enlace de navegación</span>
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
+                                    <span className="item-text">Enlace de navegación</span>
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
+                                    <span className="item-text">Enlace de navegación</span>
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
+                                    <span className="item-text">Enlace de navegación</span>
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item">
+                                    <span className="item-text">Enlace de navegación</span>
+                                  </LinkClient>
+                                  <LinkClient className="dropdown-item item-link">
+                                    <span className="item-text">Ver más</span>
+                                    <span className="material-symbols-rounded" aria-hidden="true">
+                                      arrow_forward
+                                    </span>
+                                  </LinkClient>
+                                </div>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                        <div className="navbar-search">
+                          <form className="form-search">
+                            <label htmlFor="header-search" className="form-label sr-only">
+                              Buscador
+                            </label>
+                            <div className="search-container">
+                              <input
+                                type="search"
+                                className="form-control input-search input-search-with-button"
+                                id="header-search"
+                                placeholder="Buscador"
+                              />
+                              <button className="reset" type="reset" aria-label="Borrar"></button>
+                              <button className="button-search" type="submit" aria-label="Buscar"></button>
+                            </div>
+                          </form>
+                        </div>
+                        <div className="navbar-login">
+                          <LinkClient className="btn btn-lg btn-outline-tertiary">
+                            <span className="material-symbols-rounded" aria-hidden="true">
+                              person
+                            </span>
+                            <span className="btn-text">Ingresar</span>
+                          </LinkClient>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="header-backdrop"></div>
+                </header>
+              </div>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+    {
+      title: 'Deslogueado',
     },
     {
       subtitle: 'En una línea',
@@ -2379,6 +2564,60 @@ const HeaderDocs: React.FC = () => {
         </>
       ),
     },
+    {
+      title: (
+        <>
+          Encabezado <i>(header)</i> con slots
+        </>
+      ),
+      content: (
+        <>
+          <p className="text-md mb-3">
+            Un espacio reservado o <i>slot</i> es un componente local del sistema de diseño, que solo existe en Figma, y
+            se utiliza para flexibilizar el uso de un componente del UI kit. Los <i>slots</i> permiten adoptar el
+            sistema de diseño y utilizar componentes de la librería sin la necesidad de generar nuevas estructuras.
+          </p>
+          <p className="text-md mb-4">
+            En el caso del encabezado (header), el <i>slot</i> cumple la función del logo. El diseñador en Figma puede
+            replicar la flexibilidad de uso del código.
+          </p>
+          <Image
+            src={`${basePath}/images/header/header_slots.svg`}
+            alt="Header variante slots"
+            width="800"
+            height="389"
+            className="img-fluid"
+          />
+          <p className="d-flex text-md fw-semibold mt-4">
+            <span className="pe-1 material-symbols-rounded" aria-hidden="true">
+              info
+            </span>
+            Uso del componente en Figma
+          </p>
+
+          <p className="text-md">
+            Para evitar romper el vínculo del componente <i>(detachear)</i> en Figma, los diseñadores pueden
+            intercambiar la instancia del slot por el logo de marca y/o del activo digital, sin la necesidad de generar
+            nuevas estructuras.
+          </p>
+
+          <ol>
+            <li className="mb-3">
+              Componentizá el logo de la marca o el activo digital que adopta el sistema de diseño.
+            </li>
+            <li className="mb-3">
+              Seleccioná la variante de tamaño de <i>slot</i> que se adapte a tus necesidades. Existen 2 variantes: 1:1
+              (80x80 px. en <i>desktop</i> y 60x60 px. en <i>mobile</i>), y para logotipos horizontales (115x80 px. en
+              desktop y 115x60 px. en mobile).
+            </li>
+            <li>
+              Intercambiá el <i>slot</i>, utilizando la propiedad de <i>instance swap</i> del encabezado <i>(header)</i>
+              , por el logo de la marca o el activo digital.
+            </li>
+          </ol>
+        </>
+      ),
+    },
   ];
 
   const SPECS = [
@@ -2494,6 +2733,29 @@ const HeaderDocs: React.FC = () => {
             <Image
               src={`${basePath}/images/header/header_specs_sin_navegacion.svg`}
               alt="Header variante sin boton/seccion de perfil"
+              width="800"
+              height="35"
+              className="img-fluid"
+            />
+          </>
+        </>
+      ),
+    },
+    {
+      subtitle: 'Banner del GCBA',
+      content: (
+        <>
+          <>
+            <p className="text-md mt-2 mb-4">
+              Para productos digitales externos a la web de la Ciudad de Buenos Aires, existe una variante del
+              encabezado (header) que se utiliza al adoptar el sistema de diseño. Al ser un producto externo
+              perteneciente al GCBA, el encabezado (header) utiliza un banner con la marca de Gobierno en un primer
+              nivel; por otro lado, el lugar designado para el logo se utiliza para el logo de la marca o activo
+              digital.
+            </p>
+            <Image
+              src={`${basePath}/images/header/header_banner.svg`}
+              alt="Header variante banner"
               width="800"
               height="35"
               className="img-fluid"

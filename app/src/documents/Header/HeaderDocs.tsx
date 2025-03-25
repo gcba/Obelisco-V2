@@ -1,7 +1,7 @@
 import Image from 'next/image';
-const basePath = '/Obelisco-V2';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
+const basePath = '/Obelisco-V2';
 
 import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
@@ -9,6 +9,9 @@ import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import {
+  HEADER,
+  HEADER_2,
+  HEADER_BANNER,
   HEADER_LOGIN_ONE_LINE,
   HEADER_LOGIN_ONE_LINE_SEARCH,
   HEADER_LOGIN_TWO_LINES,
@@ -22,8 +25,6 @@ import {
   HEADER_ONLY_SEARCH,
   HEADER_TWO_LINES,
   HEADER_TWO_LINES_SEARCH,
-  HEADER,
-  HEADER_2,
 } from './code-views';
 
 const logo = '/images/logo_ba.svg';
@@ -37,7 +38,7 @@ const HeaderDocs: React.FC = () => {
       firstTitle: true,
       content: (
         <>
-          <CodeBox codeHTML={HEADER_LOGIN_ONE_LINE_SEARCH}>
+          <CodeBox codeHTML={HEADER_BANNER}>
             <div className="container-fluid">
               <div className="header-box-sizing_banner">
                 {/* header banner */}

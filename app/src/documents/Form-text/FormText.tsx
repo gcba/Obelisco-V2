@@ -22,20 +22,41 @@ const FormTextDocs: React.FC = () => {
   const SECTIONS_DEV = [
     // Todo esto se va a quitar luego, está ahora por desarrollo
     {
-      title: 'Nombre del campo y texto de asistencia ',
+      title: 'Campo del input',
       firstTitle: true,
       content: (
         <>
           <div className="container">
+            {/* Campo del input - Field Wrapper*/}
             <div className="col-12 col-lg-6">
+              <div className='field-wrapper' >
+                <div className="field-wrapper-prefix">
+                  <span className="material-symbols-rounded me-2">select_all</span>
+                  Prefix
+                </div>
+                <input
+                  type="text"
+                  className="form-control field-input"
+                  id="exampleInputTexto"
+                  aria-describedby="Texto"
+                  placeholder="Placeholder"
+                />
+                <div className="field-wrapper-suffix">
+                  Suffix
+                  <span className="material-symbols-rounded ms-2">select_all</span>
+                </div>
+              </div>
+            </div>
+            {/* Campo del input - Field Wrapper*/}
 
-              {/* Nombre del campo y texto de asistencia */}
+
+            {/* Nombre del campo y texto de asistencia */}
+            {/* <div className="col-12 col-lg-6">
               <div className="form-label-container-wrapper">
                 <div className="form-label-wrapper">
                   <label htmlFor="exampleInputTexto" className="form-label">
                     Label
                   </label>
-                  {/* <span className="badge-forms badge-optional-forms">Opcional</span> */}
                   <span className="badge-forms badge-required-forms">
                     Requerido
                   </span>
@@ -44,8 +65,8 @@ const FormTextDocs: React.FC = () => {
                   Este es un texto de ayuda que da más información sobre el Input. Es opcional, pero recomendado.
                 </p>
               </div>
-              {/* Nombre del campo y texto de asistencia */}
-            </div>
+            </div> */}
+            {/* Nombre del campo y texto de asistencia */}
 
             {/* Etiqueta para inputs (Input Tag) - ⚠️ (Esto es sólo para mostrar ahora, luego se quita) */}
             {/* <div className="col-12 col-lg-6">

@@ -21,6 +21,29 @@ import {
 const FormTextDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
+      title: 'Etiqueta para inputs (Input Tag)',
+      firstTitle: true,
+      content: (
+        <>
+          {/* <CodeBox codeHTML={INPUT_TEXT}> */}
+          <div className="container">
+            <div className="col-12 col-lg-6">
+              {/* Etiqueta para inputs (Input Tag) - ⚠️ (Esto es sólo para mostrar ahora, luego se quita) */}
+              <span className="badge-forms badge-required-forms">
+                Requerido
+              </span>
+              <span className="badge-forms badge-optional-forms">
+                Opcional
+              </span>
+              {/* Etiqueta para inputs (Input Tag) - ⚠️ (Esto es sólo para mostrar ahora, luego se quita) */}
+ 
+            </div>
+          </div>
+          {/* </CodeBox> */}
+        </>
+      ),
+    },
+    {
       title: 'Texto',
       firstTitle: true,
       content: (

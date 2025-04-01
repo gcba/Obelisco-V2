@@ -27,8 +27,20 @@ const FormTextDocs: React.FC = () => {
       content: (
         <>
           <div className="container">
-            {/* Campo del input - Field Wrapper*/}
+
+            {/* Mensaje de soporte */}
             <div className="col-12 col-lg-6">
+              <p className="feedback-message">
+                <span className="material-symbols-rounded feedback-message-icon">
+                  error
+                </span>
+                Los datos introducidos son inválidos.
+              </p>
+            </div>
+            {/* Mensaje de soporte */}
+
+            {/* Campo del input - Field Wrapper*/}
+            {/* <div className="col-12 col-lg-6">
               <div className='field-wrapper' >
                 <div className="field-wrapper-prefix">
                   <span className="material-symbols-rounded me-2">select_all</span>
@@ -46,7 +58,7 @@ const FormTextDocs: React.FC = () => {
                   <span className="material-symbols-rounded ms-2">select_all</span>
                 </div>
               </div>
-            </div>
+            </div> */}
             {/* Campo del input - Field Wrapper*/}
 
 

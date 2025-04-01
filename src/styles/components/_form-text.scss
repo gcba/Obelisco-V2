@@ -18,7 +18,7 @@ $validation-icons: (
   outline: $outline-transparent;
 }
 
-// Etiqueta para inputs (Input Tag) 
+// Etiqueta para inputs (Input Tag)
 $badge-separation: 0.5rem;
 $badge-color: $body-color;
 
@@ -66,9 +66,8 @@ $badge-color: $body-color;
   grid-template-areas:
     'label-wrapper'
     'description';
-  margin-bottom: 0.25rem;
-
-  &.form-label-description {
+  margin-bottom: 8px; // 0.25rem
+  & .form-label-description {
     margin-top: 8px;
   }
 }
@@ -119,7 +118,7 @@ $badge-color: $body-color;
   color: $body-color;
   font-size: $md-body-fs;
   font-weight: $md-body-fw;
-  border: none;
+  border: 2px solid $body-color;
   border-radius: $border-radius-lg;
   outline: $outline-border;
   outline-offset: 0;

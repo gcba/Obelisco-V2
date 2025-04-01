@@ -20,29 +20,48 @@ import {
 
 const FormTextDocs: React.FC = () => {
   const SECTIONS_DEV = [
+    // Todo esto se va a quitar luego, está ahora por desarrollo
     {
-      title: 'Etiqueta para inputs (Input Tag)',
+      title: 'Nombre del campo y texto de asistencia ',
       firstTitle: true,
       content: (
         <>
-          {/* <CodeBox codeHTML={INPUT_TEXT}> */}
           <div className="container">
             <div className="col-12 col-lg-6">
-              {/* Etiqueta para inputs (Input Tag) - ⚠️ (Esto es sólo para mostrar ahora, luego se quita) */}
+
+              {/* Nombre del campo y texto de asistencia */}
+              <div className="form-label-container-wrapper">
+                <div className="form-label-wrapper">
+                  <label htmlFor="exampleInputTexto" className="form-label">
+                    Label
+                  </label>
+                  {/* <span className="badge-forms badge-optional-forms">Opcional</span> */}
+                  <span className="badge-forms badge-required-forms">
+                    Requerido
+                  </span>
+                </div>
+                <p className="form-label-description">
+                  Este es un texto de ayuda que da más información sobre el Input. Es opcional, pero recomendado.
+                </p>
+              </div>
+              {/* Nombre del campo y texto de asistencia */}
+            </div>
+
+            {/* Etiqueta para inputs (Input Tag) - ⚠️ (Esto es sólo para mostrar ahora, luego se quita) */}
+            {/* <div className="col-12 col-lg-6">
               <span className="badge-forms badge-required-forms">
                 Requerido
               </span>
               <span className="badge-forms badge-optional-forms">
                 Opcional
               </span>
-              {/* Etiqueta para inputs (Input Tag) - ⚠️ (Esto es sólo para mostrar ahora, luego se quita) */}
- 
-            </div>
+            </div> */}
           </div>
-          {/* </CodeBox> */}
+          {/* Etiqueta para inputs (Input Tag) - ⚠️ (Esto es sólo para mostrar ahora, luego se quita) */}
         </>
       ),
     },
+    // Todo esto se va a quitar luego, está ahora por desarrollo
     {
       title: 'Texto',
       firstTitle: true,

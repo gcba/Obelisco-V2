@@ -18,30 +18,32 @@ $validation-icons: (
   outline: $outline-transparent;
 }
 
-// Etiqueta para inputs (Input Tag) - ‼️ revisar con Diseño la altura
+// Etiqueta para inputs (Input Tag) 
 $badge-separation: 0.5rem;
 $badge-color: $body-color;
- 
+
 .badge-forms {
   @extend .text-sm; //fs 14px, lh 20px, fw 400
   color: $badge-color;
   text-decoration: none;
-  min-height: 1.5rem;
+  min-height: 20px;
   max-width: 100%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   margin-right: $badge-separation;
   border-radius: 4px;
-  padding-right: 4px;
-  padding-left: 4px;
+  padding: 0 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
- 
+
 .badge-required-forms {
   color: $body-color;
   background-color: $purple-100;
 }
- 
+
 .badge-optional-forms {
   @extend .badge-required-forms;
   background-color: $cyan-100;
@@ -58,6 +60,32 @@ $badge-color: $body-color;
   margin-bottom: 0.25rem;
 }
 
+// Nombre del campo y texto de asistencia
+.form-label-container-wrapper {
+  display: grid;
+  grid-template-areas:
+    'label-wrapper'
+    'description';
+  margin-bottom: 0.25rem;
+
+  &.form-label-description {
+    margin-top: 8px;
+  }
+}
+
+.form-label-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  grid-area: label-wrapper;
+}
+
+.form-label {
+  font-weight: bold;
+  color: $body-color;
+}
+
+// Nombre del campo y texto de asistencia
 .form-label-number {
   @extend .text-sm;
   grid-area: number;

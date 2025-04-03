@@ -27,21 +27,20 @@ const FormTextDocs: React.FC = () => {
       content: (
         <>
           <div className="container">
-
-            {/* Mensaje de soporte */}
-            <div className="col-12 col-lg-6">
-              <p className="feedback-message">
-                <span className="material-symbols-rounded feedback-message-icon">
-                  error
+            {/* form-wrapper */}
+            <div className="form-wrapper">
+              <div className="form-label-badge">
+                <label htmlFor="exampleInputTexto" className="form-label">
+                  Label
+                </label>
+                <span className="badge-forms badge-required-forms">
+                  Requerido
                 </span>
-                Los datos introducidos son inválidos.
+              </div>
+              <p className="form-label-description">
+                Este es un texto de ayuda que da más información sobre el Input. Es opcional, pero recomendado.
               </p>
-            </div>
-            {/* Mensaje de soporte */}
-
-            {/* Campo del input - Field Wrapper*/}
-            {/* <div className="col-12 col-lg-6">
-              <div className='field-wrapper' >
+              <div className='field-wrapper'>
                 <div className="field-wrapper-prefix">
                   <span className="material-symbols-rounded me-2">select_all</span>
                   Prefix
@@ -58,39 +57,15 @@ const FormTextDocs: React.FC = () => {
                   <span className="material-symbols-rounded ms-2">select_all</span>
                 </div>
               </div>
-            </div> */}
-            {/* Campo del input - Field Wrapper*/}
-
-
-            {/* Nombre del campo y texto de asistencia */}
-            {/* <div className="col-12 col-lg-6">
-              <div className="form-label-container-wrapper">
-                <div className="form-label-wrapper">
-                  <label htmlFor="exampleInputTexto" className="form-label">
-                    Label
-                  </label>
-                  <span className="badge-forms badge-required-forms">
-                    Requerido
-                  </span>
-                </div>
-                <p className="form-label-description">
-                  Este es un texto de ayuda que da más información sobre el Input. Es opcional, pero recomendado.
-                </p>
-              </div>
-            </div> */}
-            {/* Nombre del campo y texto de asistencia */}
-
-            {/* Etiqueta para inputs (Input Tag) - ⚠️ (Esto es sólo para mostrar ahora, luego se quita) */}
-            {/* <div className="col-12 col-lg-6">
-              <span className="badge-forms badge-required-forms">
-                Requerido
-              </span>
-              <span className="badge-forms badge-optional-forms">
-                Opcional
-              </span>
-            </div> */}
+              <p className="feedback-message">
+                <span className="material-symbols-rounded feedback-message-icon">
+                  error
+                </span>
+                Los datos introducidos son inválidos.
+              </p>
+            </div>
+            {/* form-wrapper */}
           </div>
-          {/* Etiqueta para inputs (Input Tag) - ⚠️ (Esto es sólo para mostrar ahora, luego se quita) */}
         </>
       ),
     },

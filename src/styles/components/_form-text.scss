@@ -61,18 +61,22 @@ $badge-color: $body-color;
 }
 
 // Nombre del campo y texto de asistencia
-.form-label-container-wrapper {
+
+.form-wrapper {
+  // Envuelve el label, la etiqueta (badge-forms) y el texto de ayuda (form-label-description)
   display: grid;
   grid-template-areas:
     'label-wrapper'
     'description';
-  margin-bottom: 8px; // 0.25rem
+  margin-bottom: 8px;
+  max-width: 443px;
+
   & .form-label-description {
     margin-top: 8px;
   }
 }
 
-.form-label-wrapper {
+.form-label-badge {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -98,6 +102,7 @@ $badge-color: $body-color;
   align-items: center;
   max-width: 443px;
   min-height: 24px;
+  margin-top: 8px;
 
   .field-wrapper-prefix {
     display: flex;
@@ -129,9 +134,18 @@ $badge-color: $body-color;
     padding: 0;
     margin: 0;
     flex-grow: 1;
+    box-shadow: none;
+    outline-style: none;
+    outline-color: none;
+    outline-width: none;
 
     &:focus {
-      all: unset !important;
+      // all: unset !important;
+      background-color: transparent;
+      box-shadow: none;
+      outline-style: none;
+      outline-color: none;
+      outline-width: none;
     }
   }
 }
@@ -155,13 +169,36 @@ $badge-color: $body-color;
   max-width: 443px;
   border-radius: 8px;
   font-size: 14px;
-  
+  margin-top: 8px;
+
   .feedback-message-icon {
     color: #cc3333;
     margin-right: 8px;
   }
 }
 // Mensaje de soporte
+
+.time-picker {
+  position: relative;
+  display: inline-block;
+}
+
+.time-picker .icon {
+  position: absolute;
+  right: 10px; /* Lo coloca a la derecha */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  pointer-events: none; /* Evita que interfiera con los clics */
+  color: #555;
+}
+
+.time-picker input {
+  width: 150px;
+  height: 36px;
+  font-size: 16px;
+  padding-right: 30px; /* Deja espacio para el ícono */
+}
 
 // Campo del input
 

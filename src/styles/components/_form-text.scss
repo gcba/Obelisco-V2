@@ -216,6 +216,44 @@ $validation-icons: (
   }
 }
 
+// Input file
+input[type='file'] {
+
+  padding: 6px;
+  color: $placeholder-color;
+  font-family: Arial, sans-serif;
+  height: 48px;
+
+  // cuerpo/m/regular
+  font-family: 'Open Sans';
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+
+}
+
+// botón seleccionar archivo
+input[type='file']::-webkit-file-upload-button {
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background-color: #005e7a;
+  font-size: 18px;
+  height: 48px;
+
+  // titular/m/bold
+  font-family: 'Nunito', 'Open Sans';
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+input[type='file']::-webkit-file-upload-button:hover {
+  outline: none;
+  background-color: #005e7a !important;
+}
+// Input file
+
 // Estilos generales del Input
 .form-control {
   background-color: $slate-50;

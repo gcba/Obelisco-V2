@@ -27,10 +27,9 @@ const FormTextDocs: React.FC = () => {
       content: (
         <>
           <div className="container">
-            {/* form-wrapper */}
             <div className="form-wrapper">
               <div className="form-label-badge">
-                <label htmlFor="exampleInputTexto" className="form-label">
+                <label htmlFor="exampleInputFile" className="form-label">
                   Label
                 </label>
                 <span className="badge-forms badge-required-forms">
@@ -38,25 +37,14 @@ const FormTextDocs: React.FC = () => {
                 </span>
               </div>
               <p className="form-label-description">
-                Este es un texto de ayuda que da más información sobre el Input. Es opcional, pero recomendado.
+                Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de no más de 3 líneas.
               </p>
-              <div className='field-wrapper'>
-                <div className="field-wrapper-prefix">
-                  <span className="material-symbols-rounded me-2">select_all</span>
-                  Prefix
-                </div>
-                <input
-                  type="text"
-                  className="form-control field-input"
-                  id="exampleInputTexto"
-                  aria-describedby="Texto"
-                  placeholder="Placeholder"
-                />
-                <div className="field-wrapper-suffix">
-                  Suffix
-                  <span className="material-symbols-rounded ms-2">select_all</span>
-                </div>
-              </div>
+              <input
+                type="file"
+                className="form-control"
+                id="exampleInputFile"
+                accept="image/png, image/jpeg"
+              />
               <p className="feedback-message">
                 <span className="material-symbols-rounded feedback-message-icon">
                   error
@@ -64,6 +52,43 @@ const FormTextDocs: React.FC = () => {
                 Los datos introducidos son inválidos.
               </p>
             </div>
+            {/* form-wrapper */}
+            {/* <div className="form-wrapper">
+            <div className="form-label-badge">
+              <label htmlFor="exampleInputTexto" className="form-label">
+                Label
+              </label>
+              <span className="badge-forms badge-required-forms">
+                Requerido
+              </span>
+            </div>
+            <p className="form-label-description">
+              Este es un texto de ayuda que da más información sobre el Input. Es opcional, pero recomendado.
+            </p>
+            <div className='field-wrapper'>
+              <div className="field-wrapper-prefix">
+                <span className="material-symbols-rounded me-2">select_all</span>
+                Prefix
+              </div>
+              <input
+                type="text"
+                className="form-control field-input"
+                id="exampleInputTexto"
+                aria-describedby="Texto"
+                placeholder="Placeholder"
+              />
+              <div className="field-wrapper-suffix">
+                Suffix
+                <span className="material-symbols-rounded ms-2">select_all</span>
+              </div>
+            </div>
+            <p className="feedback-message">
+              <span className="material-symbols-rounded feedback-message-icon">
+                error
+              </span>
+              Los datos introducidos son inválidos.
+            </p>
+          </div> */}
             {/* form-wrapper */}
           </div>
         </>

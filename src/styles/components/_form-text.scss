@@ -28,7 +28,7 @@ $validation-icons: (
   max-width: 443px;
 
   & .form-label-description {
-    margin-top: 8px;
+    margin: 8px 0;
   }
 
   // Etiqueta para inputs: Required y optional
@@ -218,7 +218,6 @@ $validation-icons: (
 
 // Input file
 input[type='file'] {
-
   padding: 6px;
   color: $placeholder-color;
   font-family: Arial, sans-serif;
@@ -229,7 +228,6 @@ input[type='file'] {
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 400;
-
 }
 
 // botón seleccionar archivo
@@ -237,7 +235,7 @@ input[type='file']::-webkit-file-upload-button {
   color: white;
   padding: 12px 24px;
   border-radius: 8px;
-  background-color: #005e7a;
+  background-color: #005e7a !important;
   font-size: 18px;
   height: 48px;
 
@@ -248,16 +246,12 @@ input[type='file']::-webkit-file-upload-button {
   font-weight: 600;
 }
 
-input[type='file']::-webkit-file-upload-button:hover {
-  outline: none;
-  background-color: #005e7a !important;
-}
 // Input file
 
 // Estilos generales del Input
 .form-control {
   background-color: $slate-50;
-  padding: 0.75rem 1rem;
+  // padding: 0.75rem 1rem;
   color: $body-color;
   font-size: $md-body-fs;
   font-weight: $md-body-fw;
@@ -265,6 +259,7 @@ input[type='file']::-webkit-file-upload-button:hover {
   border-radius: $border-radius-lg;
   outline: $outline-border;
   outline-offset: 0;
+  box-sizing: border-box;
 
   &::placeholder {
     color: $placeholder-color;
@@ -274,9 +269,17 @@ input[type='file']::-webkit-file-upload-button:hover {
   &.is-invalid {
     background-image: none;
     outline: transparent;
+    border-color: transparent !important;
+
+    input[type='file']::-webkit-file-upload-button:hover {
+      border-color: transparent !important;
+    }
 
     &:focus {
       @include focus-style;
+      input[type='file']::-webkit-file-upload-button:hover {
+        border-color: transparent !important;
+      }
     }
   }
 

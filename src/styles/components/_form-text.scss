@@ -135,7 +135,6 @@ $validation-icons: (
     }
   }
   // Field Wrapper. Prefijo - input - sufijo
-
 }
 // form wrapper - contenedor del nuevo input
 
@@ -280,6 +279,7 @@ input[type='file']::-webkit-file-upload-button {
   &:disabled {
     background-color: $slate-50;
     color: $disabled-text;
+    outline-color: $slate-400;
 
     &:hover {
       cursor: not-allowed;
@@ -512,7 +512,6 @@ input[type='search']::-moz-search-clear-button {
   align-self: center;
   color: $red-500;
 }
-
 
 //Input con fondo
 .form-bg-light {

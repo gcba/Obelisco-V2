@@ -53,8 +53,8 @@ $radio-image-disabled-selected: url('data:image/svg+xml,<svg width="25" height="
   .form-#{$type}-input {
     @extend .form-check-input;
     float: unset;
-    height: 1.25rem; //24px
-    width: 1.25rem; //24px
+    height: 1.25rem;
+    width: 1.25rem;
     max-width: 1.25rem; //20px
     border: 0.125rem solid $body-color;
     position: absolute;

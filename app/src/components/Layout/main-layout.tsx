@@ -11,9 +11,12 @@ export const stylesPages = [
   { text: 'Tipografía', url: '/components/typography', id: 3 },
 ];
 export const formsPages = [
-  { text: 'Buscador', url: '/components/form-search', id: 1 },
-  { text: 'Casillas de selección', url: '/components/form-selection', id: 2 },
-  { text: 'Formularios de texto', url: '/components/form-text', id: 3 },
+  { text: 'Texto', url: '/components/form-text', id: 1 },
+  { text: 'Búsqueda', url: '/components/form-search', id: 2 },
+  { text: 'Selección', url: '/components/form-selection', id: 3 },
+  { text: 'Carga de archivo', url: '/components/form-file', id: 4 },
+  { text: 'Validación', url: '/components/form-validation', id: 5 },
+
 ];
 export const organismsPages = [
   { text: 'Accesos (organismo)', url: '/components/access-organism', id: 1 },

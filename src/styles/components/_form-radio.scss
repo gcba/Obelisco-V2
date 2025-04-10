@@ -162,10 +162,12 @@ $radio-image-disabled-selected: url('data:image/svg+xml,<svg width="25" height="
 
     &:checked:disabled {
       background-image: $radio-image-disabled-selected;
+      background-size: auto;
+      background-color: $slate-100;
+      box-shadow: none;
     }
     &:disabled {
-      background-image: $radio-image-disabled;
-      background-size: cover;
+      background-color: $slate-100;
     }
     &.is-invalid:checked {
       box-shadow: inset 0 0 0 3.4px $white;
@@ -183,11 +185,12 @@ $radio-image-disabled-selected: url('data:image/svg+xml,<svg width="25" height="
       box-shadow: none;
     }
     &:disabled {
-      background-image: $checkbox-image-disabled;
-      background-size: cover;
+      background-color: $slate-100;
     }
     &:checked:disabled {
+      background-color: transparent;
       background-image: $checkbox-image-disabled-selected;
+      border: none;
     }
   }
 }

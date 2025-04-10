@@ -197,7 +197,7 @@ $validation-icons: (
   }
 }
 
-// Input file
+// - Input file
 input[type='file'] {
   padding: 6px;
   color: $placeholder-color;
@@ -227,9 +227,29 @@ input[type='file']::-webkit-file-upload-button {
   font-weight: 600;
 }
 
-// Input file
+input[type='file']:disabled {
+  border: 2px solid $slate-400; 
+  border-radius: 8px;
+  background-color: $slate-100;
+  color: $slate-700;
+  display: flex;
+  align-items: center;
+  cursor: not-allowed;
+}
 
-// Estilos generales del Input
+input[type='file']:disabled::-webkit-file-upload-button {
+  color: $slate-400;
+  padding: 12px 24px;
+  background-color: $slate-100 !important;
+  cursor: not-allowed;
+  pointer-events: none;
+  border: none;
+}
+
+
+// Input file -
+
+// - Estilos generales del Input. form-control
 .form-control {
   background-color: $gray-0;
   padding: 0.75rem 1rem;
@@ -298,8 +318,9 @@ input[type='file']::-webkit-file-upload-button {
     }
   }
 }
+// Estilos generales del Input. form-control -
 
-// Estilos para input date
+// - Estilos para input date
 input[type='date'] {
   position: relative;
 
@@ -318,6 +339,7 @@ input[type='date'] {
     content: $form-date-icon-disabled;
   }
 }
+// Estilos para input date -
 
 // Para Opera, Chrome, Edge y Safari
 ::-webkit-calendar-picker-indicator {
@@ -325,7 +347,7 @@ input[type='date'] {
   cursor: pointer;
 }
 
-// Estilos para input Search
+// - Estilos para input Search
 .search-container {
   position: relative;
 
@@ -458,6 +480,7 @@ input[type='search']::-webkit-search-cancel-button {
 input[type='search']::-moz-search-clear-button {
   display: none;
 }
+// Estilos para input Search -
 
 // Estilos para validación
 .valid-feedback,
@@ -512,6 +535,7 @@ input[type='search']::-moz-search-clear-button {
   align-self: center;
   color: $red-500;
 }
+// Estilos para validación
 
 //Input con fondo
 .form-bg-light {
@@ -524,3 +548,4 @@ input[type='search']::-moz-search-clear-button {
     }
   }
 }
+//Input con fondo

@@ -27,6 +27,7 @@ const FormTextDocs: React.FC = () => {
       content: (
         <>
           <div className="container">
+            {/* form-wrapper */}
             <div className="form-wrapper">
               <div className="form-label-badge">
                 <label htmlFor="exampleInputFile" className="form-label">
@@ -41,9 +42,10 @@ const FormTextDocs: React.FC = () => {
               </p>
               <input
                 type="file"
-                className="form-control is-invalid"
+                className="form-control"
                 id="exampleInputFile"
                 accept="image/png, image/jpeg"
+                disabled
               />
               <p className="invalid-feedback">
                 Los datos introducidos son inválidos.

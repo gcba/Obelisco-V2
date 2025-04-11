@@ -164,7 +164,7 @@ const FormValidationDocs: React.FC = () => {
       <ComponentHeader
         title="Validación"
         description={[
-          'Las casillas de selección permiten a los usuarios elegir entre opciones únicas o múltiples. Radio se usa para seleccionar solo una opción dentro de un grupo, mientras que Checkbox permite seleccionar varias opciones a la vez.',
+          'La validación de formularios garantiza la integridad y calidad de los datos ingresados por las personas usuarias, mejorando la experiencia de uso y previniendo errores.',
         ]}
       />
       <Tabs sectionDev={SECTIONS_DEV} />

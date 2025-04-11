@@ -77,7 +77,7 @@ const FormFileDocs: React.FC = () => {
       <ComponentHeader
         title="Carga de archivo"
         description={[
-          'Las casillas de selección permiten a los usuarios elegir entre opciones únicas o múltiples. Radio se usa para seleccionar solo una opción dentro de un grupo, mientras que Checkbox permite seleccionar varias opciones a la vez.',
+          'Permite subir o adjuntar archivos desde el dispositivo.',
         ]}
       />
       <Tabs sectionDev={SECTIONS_DEV} />

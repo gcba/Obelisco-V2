@@ -14,6 +14,7 @@ const FormValidationDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Validación',
+      firstTitle: true,
       content: (
         <>
           <CodeBox codeHTML={INPUT_VALIDATION_TEXT}>

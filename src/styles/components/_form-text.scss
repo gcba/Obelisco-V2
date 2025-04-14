@@ -264,7 +264,7 @@ input[type='file']:disabled::-webkit-file-upload-button {
   font-weight: $md-body-fw;
   border: none;
   border-radius: $border-radius-lg;
-  outline: $outline-border;
+  outline: 0.125rem solid $body-color;
   outline-offset: 0;
   box-sizing: border-box;
 

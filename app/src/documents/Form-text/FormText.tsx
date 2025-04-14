@@ -25,7 +25,7 @@ const FormTextDocs: React.FC = () => {
               <div className="col-12 col-lg-6">
                 <div className="form-label-container">
                   <label htmlFor="exampleInputTexto" className="form-label">
-                    Campo de texto *
+                    Campo de texto
                   </label>
                   <p className="form-label-description">Texto de asistencia</p>
                 </div>
@@ -51,7 +51,7 @@ const FormTextDocs: React.FC = () => {
               <div className="col-12 col-lg-6">
                 <div className="form-label-container">
                   <label htmlFor="exampleInputNumber" className="form-label">
-                    Campo numérico *
+                    Campo numérico
                   </label>
                   <p className="form-label-description">Campo de asistencia</p>
                 </div>
@@ -77,7 +77,7 @@ const FormTextDocs: React.FC = () => {
               <div className="col-12 col-lg-6">
                 <div className="form-label-container">
                   <label htmlFor="exampleInputEmail" className="form-label">
-                    Campo de email *
+                    Campo de email
                   </label>
                   <p className="form-label-description">Campo de asistencia</p>
                 </div>
@@ -103,7 +103,7 @@ const FormTextDocs: React.FC = () => {
               <div className="col-12 col-lg-6">
                 <div className="form-label-container">
                   <label htmlFor="exampleInputDate" className="form-label">
-                    Nombre del campo *
+                    Nombre del campo
                   </label>
                 </div>
                 <input
@@ -128,7 +128,7 @@ const FormTextDocs: React.FC = () => {
               <div className="col-12 col-lg-6">
                 <div className="form-label-container">
                   <label htmlFor="exampleFormControlTextarea1" className="form-label">
-                    Nombre del campo *
+                    Nombre del campo
                   </label>
                   <span className="form-label-number">0/100</span>
                 </div>
@@ -152,7 +152,7 @@ const FormTextDocs: React.FC = () => {
               <div className="col-12 col-lg-6">
                 <div className="form-label-container">
                   <label htmlFor="exampleInputEmail" className="form-label">
-                    Nombre del selector *
+                    Nombre del selector
                   </label>
                   <p className="form-label-description">Campo de asistencia</p>
                 </div>

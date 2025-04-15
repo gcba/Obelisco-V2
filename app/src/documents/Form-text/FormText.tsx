@@ -22,13 +22,13 @@ const FormTextDocs: React.FC = () => {
         <>
           <CodeBox codeHTML={INPUT_TEXT}>
             <div className="container">
-              <div className="col-12 col-lg-6">
-                <div className="form-label-container">
+            <div className="form-wrapper">
+                <div className="form-label-badge">
                   <label htmlFor="exampleInputTexto" className="form-label">
                     Campo de texto
                   </label>
-                  <p className="form-label-description">Texto de asistencia</p>
                 </div>
+                  <p className="form-label-description">Texto de asistencia</p>
                 <input
                   type="text"
                   className="form-control"
@@ -48,13 +48,13 @@ const FormTextDocs: React.FC = () => {
         <>
           <CodeBox codeHTML={INPUT_NUMBER}>
             <div className="container">
-              <div className="col-12 col-lg-6">
-                <div className="form-label-container">
+            <div className="form-wrapper">
+            <div className="form-label-badge">
                   <label htmlFor="exampleInputNumber" className="form-label">
                     Campo numérico
                   </label>
-                  <p className="form-label-description">Campo de asistencia</p>
                 </div>
+                  <p className="form-label-description">Campo de asistencia</p>
                 <input
                   type="number"
                   className="form-control"
@@ -74,13 +74,13 @@ const FormTextDocs: React.FC = () => {
         <>
           <CodeBox codeHTML={INPUT_MAIL}>
             <div className="container">
-              <div className="col-12 col-lg-6">
-                <div className="form-label-container">
+            <div className="form-wrapper">
+            <div className="form-label-badge">
                   <label htmlFor="exampleInputEmail" className="form-label">
                     Campo de email
                   </label>
-                  <p className="form-label-description">Campo de asistencia</p>
                 </div>
+                  <p className="form-label-description">Campo de asistencia</p>
                 <input
                   type="email"
                   className="form-control"
@@ -100,8 +100,8 @@ const FormTextDocs: React.FC = () => {
         <>
           <CodeBox codeHTML={INPUT_DATE}>
             <div className="container">
-              <div className="col-12 col-lg-6">
-                <div className="form-label-container">
+            <div className="form-wrapper">
+            <div className="form-label-badge">
                   <label htmlFor="exampleInputDate" className="form-label">
                     Nombre del campo
                   </label>
@@ -125,8 +125,8 @@ const FormTextDocs: React.FC = () => {
         <>
           <CodeBox codeHTML={INPUT_BLOCK}>
             <div className="container">
-              <div className="col-12 col-lg-6">
-                <div className="form-label-container">
+            <div className="form-wrapper">
+            <div className="form-label-badge">
                   <label htmlFor="exampleFormControlTextarea1" className="form-label">
                     Nombre del campo
                   </label>
@@ -149,13 +149,13 @@ const FormTextDocs: React.FC = () => {
         <>
           <CodeBox codeHTML={INPUT_SELECT}>
             <div className="container">
-              <div className="col-12 col-lg-6">
-                <div className="form-label-container">
+            <div className="form-wrapper">
+            <div className="form-label-badge">
                   <label htmlFor="exampleInputEmail" className="form-label">
                     Nombre del selector
                   </label>
-                  <p className="form-label-description">Campo de asistencia</p>
                 </div>
+                  <p className="form-label-description">Campo de asistencia</p>
                 <select className="form-control form-select" aria-label="Default select example">
                   <option value="0">Seleccionar</option>
                   <option value="1">Opción</option>
@@ -174,8 +174,8 @@ const FormTextDocs: React.FC = () => {
         <>
           <CodeBox codeHTML={INPUT_DISABLED}>
             <div className="container">
-              <div className="col-12 col-lg-6">
-                <div className="form-label-container">
+            <div className="form-wrapper">
+            <div className="form-label-badge">
                   <label htmlFor="example-five-disabled" className="form-label disabled">
                     Ejemplo campo de texto
                   </label>
@@ -192,8 +192,8 @@ const FormTextDocs: React.FC = () => {
 
               <br />
 
-              <div className="col-12 col-lg-6">
-                <div className="form-label-container">
+              <div className="form-wrapper">
+              <div className="form-label-badge">
                   <label htmlFor="example-four-disabled" className="form-label disabled">
                     Ejemplo campo de numero
                   </label>
@@ -210,8 +210,8 @@ const FormTextDocs: React.FC = () => {
 
               <br />
 
-              <div className="col-12 col-lg-6">
-                <div className="form-label-container">
+              <div className="form-wrapper">
+              <div className="form-label-badge">
                   <label htmlFor="example-three-disabled" className="form-label disabled">
                     Ejemplo campo de email
                   </label>
@@ -228,8 +228,8 @@ const FormTextDocs: React.FC = () => {
 
               <br />
 
-              <div className="col-12 col-lg-6">
-                <div className="form-label-container">
+              <div className="form-wrapper">
+              <div className="form-label-badge">
                   <label htmlFor="example-two-disabled" className="form-label disabled">
                     Ejemplo campo de fecha
                   </label>
@@ -246,8 +246,8 @@ const FormTextDocs: React.FC = () => {
 
               <br />
 
-              <div className="col-12 col-lg-6">
-                <div className="form-label-container">
+              <div className="form-wrapper">
+              <div className="form-label-badge">
                   <label htmlFor="example-one-disabled" className="form-label disabled">
                     Ejemplo TextArea
                   </label>
@@ -257,8 +257,8 @@ const FormTextDocs: React.FC = () => {
 
               <br />
 
-              <div className="col-12 col-lg-6">
-                <div className="form-label-container">
+              <div className="form-wrapper">
+              <div className="form-label-badge">
                   <label htmlFor="select-example" className="form-label disabled">
                     Ejemplo campo de selección deshabilitado.
                   </label>
@@ -287,14 +287,13 @@ const FormTextDocs: React.FC = () => {
         <>
           <p className="headline-md">Con fondo light</p>
           <CodeBox codeHTML={INPUT_BACKGROUND}>
-            <div className="container">
-              <div className="col-12 col-lg-6">
-                <div className="p-4 form-bg-light">
-                  <div className="form-label-container">
+          <div className="form-wrapper">
+            < div className="p-4 form-bg-light">
+              <div className="form-label-badge">
                     <label htmlFor="exampleInputTextoBg" className="form-label">
                       Campo de texto con fondo
                     </label>
-                  </div>
+                </div>
                   <input
                     type="text"
                     className="form-control"
@@ -304,7 +303,6 @@ const FormTextDocs: React.FC = () => {
                   />
                 </div>
               </div>
-            </div>
           </CodeBox>
         </>
       ),

@@ -13,21 +13,21 @@ $validation-icons: (
 );
 @mixin focus-style {
   background-color: $slate-50;
-  box-shadow: $focus-box-shadow;
-  outline: $outline-transparent;
+  border: 0.25rem solid #218274 !important;
+  box-shadow: none !important ;
 }
 
 // form wrapper - contenedor del nuevo input
 .form-wrapper {
+  box-sizing: border-box;
   display: grid;
   grid-template-areas:
     'label-wrapper'
     'description';
-  margin-bottom: 8px;
   max-width: 443px;
 
   & .form-label-description {
-    margin: 4px 0;
+    margin-top: 4px;
   }
 
   // Etiqueta para inputs: Required y optional
@@ -152,7 +152,6 @@ $validation-icons: (
     'label number'
     'description description';
   grid-template-columns: 1fr auto;
-  margin-bottom: 0.25rem;
 }
 // Estilos generales del label común -
 
@@ -209,13 +208,17 @@ input[type='file'] {
   padding: 6px;
   color: $placeholder-color;
   font-family: Arial, sans-serif;
-  height: 48px;
+  height: 48px !important;
 
   // cuerpo/m/regular
   font-family: 'Open Sans';
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 400;
+}
+
+input[type='file']:focus {
+  padding-top: 2px;
 }
 
 // botón seleccionar archivo
@@ -262,11 +265,15 @@ input[type='file']:disabled::-webkit-file-upload-button {
   color: $body-color;
   font-size: $md-body-fs;
   font-weight: $md-body-fw;
-  border: none;
   border-radius: $border-radius-lg;
-  outline: 0.125rem solid $body-color;
-  outline-offset: 0;
+  border: 0.125rem solid $body-color;
   box-sizing: border-box;
+  margin: 8px 0px;
+  // outline: 0.25rem solid transparent;
+  outline: 0.125rem solid $gray-0;
+  outline-offset: 0;
+  transition: border 0.15s ease-in-out;
+  max-height: 48px;
 
   &::placeholder {
     color: $placeholder-color;
@@ -291,11 +298,13 @@ input[type='file']:disabled::-webkit-file-upload-button {
   }
 
   &.is-valid {
-    box-shadow: 0 0 0 2px $green-600;
+    border: 2px solid $green-600 !important;
+    // box-shadow: 0 0 0 2px $green-600;
   }
 
   &.is-invalid {
-    box-shadow: 0 0 0 2px $red-500;
+    border: 2px solid $red-500 !important;
+    // box-shadow: 0 0 0 2px $red-500;
   }
 
   &:focus {
@@ -305,7 +314,7 @@ input[type='file']:disabled::-webkit-file-upload-button {
   &:disabled {
     background-color: $slate-100;
     color: $disabled-text;
-    outline-color: $slate-400;
+    border-color: $slate-400;
 
     &:hover {
       cursor: not-allowed;
@@ -326,6 +335,11 @@ input[type='file']:disabled::-webkit-file-upload-button {
 }
 // Estilos generales del Input. form-control -
 
+// - Estilos para input date
+select.form-control,
+textarea.form-control {
+  max-height: none;
+}
 // - Estilos para input date
 input[type='date'] {
   position: relative;
@@ -465,9 +479,9 @@ input[type='date'] {
 
     &:focus,
     &:focus-visible {
-      box-shadow: $focus-box-shadow;
+      // box-shadow: $focus-box-shadow;
       border-radius: $border-radius-lg;
-      outline: 0.25rem solid transparent;
+      // outline: 0.25rem solid transparent;
 
       &::after {
         color: transparent;
@@ -492,6 +506,7 @@ input[type='search']::-moz-search-clear-button {
 .valid-feedback,
 .invalid-feedback {
   display: none;
+  margin: 0 !important;
 
   p {
     @extend .text-sm;
@@ -510,7 +525,6 @@ input[type='search']::-moz-search-clear-button {
   max-width: 443px;
   border-radius: 8px;
   font-size: 14px;
-  margin-top: 8px;
   color: $body-color;
   position: relative;
   padding-left: 44px; // Espacio para el ícono a la izq.
@@ -522,7 +536,6 @@ input[type='search']::-moz-search-clear-button {
 
 .is-invalid ~ .invalid-feedback {
   background-color: $red-50;
-  padding-left: 44px;
 }
 
 .valid-feedback::before,

@@ -1,8 +1,10 @@
 export const INPUT_TEXT = `
- <div class="form-label-container">
-    <label for="exampleInputTexto" class="form-label">
-      Campo de texto *
-    </label>
+    <div className="form-wrapper">
+      <div className="form-label-badge">
+        <label for="exampleInputTexto" class="form-label">
+          Campo de texto *
+        </label>
+      </div>
     <p class="form-label-description">Texto de asistencia</p>
   </div>
   <input
@@ -12,12 +14,15 @@ export const INPUT_TEXT = `
     aria-describedby="Texto"
     placeholder="Textos"
   />
+  </div>
 `;
 export const INPUT_NUMBER = `
-  <div class="form-label-container">
+     <div className="form-wrapper">
+            <div className="form-label-badge">
     <label for="exampleInputNumber" class="form-label">
       Campo numérico *
     </label>
+    </div>
     <p class="form-label-description">Campo de asistencia</p>
   </div>
   <input
@@ -27,12 +32,15 @@ export const INPUT_NUMBER = `
     aria-describedby="Number"
     placeholder="Números"
   />
+  </div>
 `;
 export const INPUT_MAIL = `
-  <div class="form-label-container">
+      <div className="form-wrapper">
+            <div className="form-label-badge">
     <label for="exampleInputEmail" class="form-label">
       Campo de email *
     </label>
+    </div>
     <p class="form-label-description">Campo de asistencia</p>
   </div>
   <input
@@ -42,12 +50,15 @@ export const INPUT_MAIL = `
     aria-describedby="Email"
     placeholder="Email@test.com"
   />
+  </div>
 `;
 export const INPUT_DATE = `
-  <div class="form-label-container">
+     <div className="form-wrapper">
+            <div className="form-label-badge">
     <label for="exampleInputDate" class="form-label">
       Nombre del campo *
     </label>
+    </div>
   </div>
   <input
     type="date"
@@ -56,34 +67,39 @@ export const INPUT_DATE = `
     aria-describedby="Date"
     placeholder="Selecciona la fecha"
   />
+  </div>
 `;
 export const INPUT_BLOCK = `
-  <div class="form-label-container">
+      <div className="form-wrapper">
+            <div className="form-label-badge">
     <label for="exampleFormControlTextarea1" class="form-label">
       Nombre del campo *
-    </label>
-    <span class="form-label-number">0/100</span>
-  </div>
-  <textarea class="form-control" id="exampleFormControlTextarea1" ></textarea>
+      </label>
+      <span class="form-label-number">0/100</span>
+    </div>
+    <textarea class="form-control" id="exampleFormControlTextarea1" ></textarea>
+    </div>
 `;
 export const INPUT_SELECT = `
-<div class="form-label-container">
-  <label for="exampleInputEmail" class="form-label">
-    Nombre del selector *
-  </label>
+  <div className="form-wrapper">
+    <div className="form-label-badge">
+      <label for="exampleInputEmail" class="form-label">
+        Nombre del selector *
+      </label>
+    </div>
   <p class="form-label-description">Campo de asistencia</p>
-</div>
-<select class="form-control form-select" aria-label="Default select example">
-    <option value="0">Seleccionar</option>
-    <option value="1">Opción</option>
-    <option value="2">Opción</option>
-    <option value="3">Opción</option>
-</select>
+  <select class="form-control form-select" aria-label="Default select example">
+  <option value="0">Seleccionar</option>
+  <option value="1">Opción</option>
+  <option value="2">Opción</option>
+  <option value="3">Opción</option>
+  </select>
+  </div>
 `;
 export const INPUT_DISABLED = `
   <div class="container">
-    <div class="col-12 col-lg-6">
-      <div class="form-label-container">
+        <div className="form-wrapper">
+            <div className="form-label-badge">
         <label for="example-five" class="form-label disabled">
           Ejemplo campo de texto
         </label>
@@ -98,8 +114,8 @@ export const INPUT_DISABLED = `
       />
     </div>
 
-    <div class="col-12 col-lg-6">
-      <div class="form-label-container">
+        <div className="form-wrapper">
+            <div className="form-label-badge">
         <label for="example-four" class="form-label disabled">
           Ejemplo campo de numero
         </label>
@@ -114,8 +130,8 @@ export const INPUT_DISABLED = `
       />
     </div>
 
-    <div class="col-12 col-lg-6">
-      <div class="form-label-container">
+        <div className="form-wrapper">
+            <div className="form-label-badge">
         <label for="example-three" class="form-label disabled">
           Ejemplo campo de mail
         </label>
@@ -130,8 +146,8 @@ export const INPUT_DISABLED = `
       />
     </div>
 
-    <div class="col-12 col-lg-6">
-      <div class="form-label-container">
+      <div className="form-wrapper">
+            <div className="form-label-badge">
         <label for="example-two" class="form-label disabled">
           Ejemplo campo de fecha
         </label>
@@ -146,8 +162,8 @@ export const INPUT_DISABLED = `
       />
     </div>
 
-    <div class="col-12 col-lg-6">
-      <div class="form-label-container">
+      <div className="form-wrapper">
+            <div className="form-label-badge">
         <label for="example-one" class="form-label disabled">
           Ejemplo TextArea
         </label>
@@ -155,8 +171,8 @@ export const INPUT_DISABLED = `
       <textarea class="form-control" id="example-one" disabled ></textarea>
     </div>
 
-    <div class="col-12 col-lg-6">
-      <div class="form-label-container">  
+        <div className="form-wrapper">
+            <div className="form-label-badge">
         <label for="example-disabled-select" class='form-label disabled'>
           Ejemplo campo de selección.
         </label>
@@ -173,8 +189,8 @@ export const INPUT_DISABLED = `
 
 
 export const INPUT_BACKGROUND = `
-<div class="p-4 form-bg-light">
-  <div class="form-label-container">
+    <div className="form-wrapper p-4 form-bg-light">
+            <div className="form-label-badge">
     <label for="exampleInputTextoBg" class="form-label">
       Ejemplo campo de texto con fondo
     </label>

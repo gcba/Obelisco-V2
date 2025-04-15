@@ -49,11 +49,13 @@ $validation-icons: (
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 8px; //agrego lauti
   }
 
   .badge-required-forms {
     color: $body-color;
     background-color: $purple-100;
+    display: inline-grid; //agrego lauti
   }
 
   .badge-optional-forms {
@@ -63,17 +65,17 @@ $validation-icons: (
   // Etiquetas para inputs: Required y optional
 
   // Contenedor del label + badge
-  .form-label-badge {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    grid-area: label-wrapper;
+  // .form-label-badge {
+  //   display: flex;
+  //   align-items: center;
+  //   gap: 8px;
+  //   grid-area: label-wrapper;
 
-    .form-label {
-      font-weight: bold;
-      color: $body-color;
-    }
-  }
+  //   .form-label {
+  //     font-weight: bold;
+  //     color: $body-color;
+  //   }
+  // }
   // Contenedor del label + badge
 
   // Field Wrapper. Prefijo - input - sufijo
@@ -147,12 +149,24 @@ $validation-icons: (
 
 // - Estilos generales del label común
 .form-label-container {
-  display: grid;
-  grid-template-areas:
-    'label number'
-    'description description';
-  grid-template-columns: 1fr auto;
-  margin-bottom: 0.25rem;
+  // display: grid;
+  // grid-template-areas:
+  //   'label number'
+  //   'description description';
+  // grid-template-columns: 1fr auto;
+  // margin-bottom: 0.25rem;
+  
+  
+  //display: flex;
+  align-items: center;
+  gap: 8px;
+  grid-area: label-wrapper;
+  margin-bottom: 0.5rem;
+
+  .form-label {
+    font-weight: bold;
+    color: $body-color;
+  }
 }
 // Estilos generales del label común -
 
@@ -188,8 +202,9 @@ $validation-icons: (
 
 .form-label-description {
   @extend .text-sm;
-  margin: 0.125rem 0 0;
+  margin: 0 0 0.5rem;
   grid-area: description;
+  display: grid;
 }
 
 .form-label {

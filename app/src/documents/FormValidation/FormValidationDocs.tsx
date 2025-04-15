@@ -20,7 +20,8 @@ const FormValidationDocs: React.FC = () => {
           <CodeBox codeHTML={INPUT_VALIDATION_TEXT}>
             <div className="container">
               <div className="form-wrapper">
-                <div className="form-label-badge">
+                {/* <div className="form-label-badge"> */}
+                <div className="form-label-container"> 
                   <label htmlFor="exampleInputText" className="form-label">
                     Label
                   </label>
@@ -38,9 +39,9 @@ const FormValidationDocs: React.FC = () => {
                   aria-describedby="invalid-feedback-texto"
                   placeholder="Texto"
                 />
-                <p id="invalid-feedback-texto" className="invalid-feedback ">
-                  Los datos introducidos son inválidos.
-                </p>
+                <div id="invalid-feedback-texto" className="invalid-feedback ">
+                  <p>Los datos introducidos son inválidos.</p>
+                </div>
               </div>
             </div>
           </CodeBox>
@@ -48,7 +49,7 @@ const FormValidationDocs: React.FC = () => {
           <CodeBox codeHTML={INPUT_VALIDATION_NUMBER}>
             <div className="container">
               <div className="form-wrapper">
-                <div className="form-label-badge">
+              <div className="form-label-container">
                   <label htmlFor="exampleInputNumber" className="form-label">
                     Label
                   </label>
@@ -66,9 +67,9 @@ const FormValidationDocs: React.FC = () => {
                   aria-describedby="valid-feedback-texto"
                   placeholder="Texto"
                 />
-                <p id="valid-feedback-texto" className="valid-feedback ">
-                  Los datos introducidos son válidos.
-                </p>
+                <div id="valid-feedback-texto" className="valid-feedback ">
+                  <p>Los datos introducidos son válidos.</p>
+                </div>
               </div>
             </div>
           </CodeBox>
@@ -77,7 +78,7 @@ const FormValidationDocs: React.FC = () => {
             <div className="container">
 
               <div className="form-wrapper">
-                <div className="form-label-badge">
+              <div className="form-label-container">
                   <label htmlFor="exampleInputText" className="form-label">
                     Label
                   </label>
@@ -96,9 +97,9 @@ const FormValidationDocs: React.FC = () => {
                   placeholder="Email@test.com"
                   required
                 />
-                <p id="invalid-feedback-texto" className="invalid-feedback ">
-                  Los datos introducidos son inválidos.
-                </p>
+                <div id="invalid-feedback-texto" className="invalid-feedback ">
+                  <p>Los datos introducidos son inválidos.</p>
+                </div>
               </div>
 
             </div>
@@ -107,7 +108,7 @@ const FormValidationDocs: React.FC = () => {
           <CodeBox codeHTML={INPUT_VALIDATION_DATE}>
             <div className="container">
               <div className="form-wrapper">
-                <div className="form-label-badge">
+                <div className="form-label-container">
                   <label htmlFor="ejemplo-4" className="form-label">
                     Ejemplo campo de fecha
                   </label>
@@ -126,7 +127,9 @@ const FormValidationDocs: React.FC = () => {
                   placeholder="selecciona tu fecha"
                   required
                 />
-                <p className="valid-feedback">El campo es válido.</p>
+                <div className="valid-feedback">
+                  <p>El campo es válido.</p>
+                </div>
               </div>
             </div>
           </CodeBox>
@@ -134,7 +137,7 @@ const FormValidationDocs: React.FC = () => {
           <CodeBox codeHTML={INPUT_VALIDATION_TEXTAREA}>
             <div className="container">
               <div className="form-wrapper">
-                <div className="form-label-badge">
+                <div className="form-label-container">
                   <label htmlFor="ejemplo-5" className="form-label">
                     Ejemplo TextArea
                   </label>
@@ -150,7 +153,9 @@ const FormValidationDocs: React.FC = () => {
                   id="ejemplo-5"
                   required
                 ></textarea>
-                <p className="invalid-feedback">El campo es inválido</p>
+                <div className="invalid-feedback">
+                  <p>El campo es inválido</p>
+                </div>
               </div>
             </div>
           </CodeBox>

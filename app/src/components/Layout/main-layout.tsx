@@ -4,6 +4,7 @@
 import { usePathname } from 'next/navigation';
 
 import NavLayout from './Navigation/nav';
+// import PatternsPage from '@/app/patterns/page';
 
 export const stylesPages = [
   { text: 'Colores', url: '/components/colors', id: 1 },
@@ -69,10 +70,12 @@ export const gettingPages = [
 export const documentationPages = [
   { text: 'Cambios en componentes', url: '/documentation/update-component', id: 1 },
   { text: 'Clases disponibles', url: '/documentation/class-documentation', id: 2 },
-  { text: 'Versionados', url: '/documentation/releases', id: 3 },
+  { text: 'Versionados', url: '/documentation/releases', id: 4 },
 ];
 
 export const templates = [{ text: 'Plantillas', url: 'https://gcba.github.io/obelisco-demo/index.html', id: 1 }];
+
+export const patterns = [{ text: 'Construir un formulario', url: '/patterns/', id: 1 }];
 
 export const versions = [
   { text: 'Obelisco v.2', url: '/documentation', id: 1 },
@@ -130,6 +133,7 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
               <NavLayout items={documentationPages} />
             </div>
           )}
+                  
         </div>
         <div className="col-12 col-xl-9 custom-col-9-desktop">{children}</div>
       </div>

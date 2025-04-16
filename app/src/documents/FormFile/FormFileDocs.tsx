@@ -18,7 +18,7 @@ const FormFileDocs: React.FC = () => {
       content: (
         <CodeBox codeHTML={FILE_DEFAULT}>
           <div className="container">
-            <div className="form-wrapper">
+            <div className="col-12 col-lg-6">
               <div className="form-label-container">
                 <label htmlFor="exampleInputFile" className="form-label">
                   Label
@@ -46,7 +46,7 @@ const FormFileDocs: React.FC = () => {
       content: (
         <CodeBox codeHTML={FILE_DISABLED}>
           <div className="container">
-            <div className="form-wrapper">
+            <div className="col-12 col-lg-6">
               <div className="form-label-container">
                 <label htmlFor="exampleInputFile" className="form-label">
                   Label

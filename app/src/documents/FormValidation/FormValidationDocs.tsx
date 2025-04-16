@@ -19,7 +19,7 @@ const FormValidationDocs: React.FC = () => {
         <>
           <CodeBox codeHTML={INPUT_VALIDATION_TEXT}>
             <div className="container">
-              <div className="form-wrapper">
+              <div className="col-12 col-lg-6">
                 {/* <div className="form-label-badge"> */}
                 <div className="form-label-container"> 
                   <label htmlFor="exampleInputText" className="form-label">
@@ -48,7 +48,7 @@ const FormValidationDocs: React.FC = () => {
           <br />
           <CodeBox codeHTML={INPUT_VALIDATION_NUMBER}>
             <div className="container">
-              <div className="form-wrapper">
+              <div className="col-12 col-lg-6">
               <div className="form-label-container">
                   <label htmlFor="exampleInputNumber" className="form-label">
                     Label
@@ -77,7 +77,7 @@ const FormValidationDocs: React.FC = () => {
           <CodeBox codeHTML={INPUT_VALIDATION_MAIL}>
             <div className="container">
 
-              <div className="form-wrapper">
+              <div className="col-12 col-lg-6">
               <div className="form-label-container">
                   <label htmlFor="exampleInputText" className="form-label">
                     Label
@@ -107,7 +107,7 @@ const FormValidationDocs: React.FC = () => {
           <br />
           <CodeBox codeHTML={INPUT_VALIDATION_DATE}>
             <div className="container">
-              <div className="form-wrapper">
+              <div className="col-12 col-lg-6">
                 <div className="form-label-container">
                   <label htmlFor="ejemplo-4" className="form-label">
                     Ejemplo campo de fecha
@@ -136,7 +136,7 @@ const FormValidationDocs: React.FC = () => {
           <br />
           <CodeBox codeHTML={INPUT_VALIDATION_TEXTAREA}>
             <div className="container">
-              <div className="form-wrapper">
+              <div className="col-12 col-lg-6">
                 <div className="form-label-container">
                   <label htmlFor="ejemplo-5" className="form-label">
                     Ejemplo TextArea

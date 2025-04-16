@@ -18,18 +18,18 @@ $validation-icons: (
 }
 
 // form wrapper - contenedor del nuevo input
-.form-wrapper {
-  display: grid;
-  grid-template-areas:
-    'label-wrapper'
-    'description';
-  margin-bottom: 8px;
-  max-width: 443px;
+// .form-wrapper {
+//   display: grid;
+//   grid-template-areas:
+//     'label-wrapper'
+//     'description';
+//   margin-bottom: 8px;
+//   max-width: 443px;
 
-  & .form-label-description {
-    margin-top: 4px;
-    margin-bottom: 0;
-  }
+//   & .form-label-description {
+//     margin-top: 4px;
+//     margin-bottom: 0;
+//   }
 
   // Contenedor del label + badge
   // .form-label-badge {
@@ -45,14 +45,14 @@ $validation-icons: (
   // }
   // Contenedor del label + badge
 
-  @include media-breakpoint-down(lg) {
-    max-width: 456px;
-  }
+//   @include media-breakpoint-down(lg) {
+//     max-width: 456px;
+//   }
 
-  @include media-breakpoint-down(sm) {
-    max-width: 328px;
-  }
-}
+//   @include media-breakpoint-down(sm) {
+//     max-width: 328px;
+//   }
+// }
 // form wrapper - contenedor del nuevo input
 
 // Etiqueta para inputs: Required y optional

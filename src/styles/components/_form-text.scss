@@ -27,42 +27,9 @@ $validation-icons: (
   max-width: 443px;
 
   & .form-label-description {
-    margin: 4px 0;
+    margin-top: 4px;
+    margin-bottom: 0;
   }
-
-  // Etiqueta para inputs: Required y optional
-  $badge-separation: 0.5rem;
-  $badge-color: $body-color;
-
-  .badge-forms {
-    @extend .text-sm;
-    color: $badge-color;
-    text-decoration: none;
-    min-height: 20px;
-    max-width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    margin-right: $badge-separation;
-    border-radius: 4px;
-    padding: 0 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 8px; //agrego lauti
-  }
-
-  .badge-required-forms {
-    color: $body-color;
-    background-color: $purple-100;
-    display: inline-grid; //agrego lauti
-  }
-
-  .badge-optional-forms {
-    @extend .badge-required-forms;
-    background-color: $cyan-100;
-  }
-  // Etiquetas para inputs: Required y optional
 
   // Contenedor del label + badge
   // .form-label-badge {
@@ -78,64 +45,6 @@ $validation-icons: (
   // }
   // Contenedor del label + badge
 
-  // Field Wrapper. Prefijo - input - sufijo
-  .field-wrapper {
-    border: 2px solid #101e37;
-    border-radius: 8px;
-    padding: 12px 16px;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
-    max-width: 443px;
-    min-height: 24px;
-    margin-top: 8px;
-
-    .field-wrapper-prefix {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-right: 0.5rem;
-      border-right: 2px solid black;
-      padding-right: 8px;
-    }
-
-    .field-wrapper-suffix {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-left: 0.5rem;
-      border-left: 2px solid black;
-      padding-left: 8px;
-    }
-
-    .field-input {
-      border: none;
-      background-color: transparent;
-      border-radius: 0;
-      width: auto;
-      outline: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0;
-      margin: 0;
-      flex-grow: 1;
-      box-shadow: none;
-      outline-style: none;
-      outline-color: none;
-      outline-width: none;
-
-      &:focus {
-        background-color: transparent;
-        box-shadow: none;
-        outline-style: none;
-        outline-color: none;
-        outline-width: none;
-      }
-    }
-  }
-
   @include media-breakpoint-down(lg) {
     max-width: 456px;
   }
@@ -143,9 +52,102 @@ $validation-icons: (
   @include media-breakpoint-down(sm) {
     max-width: 328px;
   }
-  // Field Wrapper. Prefijo - input - sufijo
 }
 // form wrapper - contenedor del nuevo input
+
+// Etiqueta para inputs: Required y optional
+$badge-separation: 0.5rem;
+$badge-color: $body-color;
+
+.badge-forms {
+  @extend .text-sm;
+  color: $badge-color;
+  text-decoration: none;
+  min-height: 20px;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-right: $badge-separation;
+  border-radius: 4px;
+  padding: 0 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 8px; //agrego lauti
+}
+
+.badge-required-forms {
+  color: $body-color;
+  background-color: $purple-100;
+  display: inline-grid; //agrego lauti
+}
+
+.badge-optional-forms {
+  @extend .badge-required-forms;
+  background-color: $cyan-100;
+}
+// Etiquetas para inputs: Required y optional
+
+// Field Wrapper. Prefijo - input - sufijo
+.field-wrapper {
+  border: 2px solid #101e37;
+  border-radius: 8px;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  max-width: 443px;
+  min-height: 24px;
+  margin-top: 8px;
+
+  .field-wrapper-prefix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+    border-right: 2px solid black;
+    padding-right: 8px;
+  }
+
+  .field-wrapper-suffix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5rem;
+    border-left: 2px solid black;
+    padding-left: 8px;
+  }
+
+  .field-input {
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+    width: auto;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    box-shadow: none;
+    outline-style: none;
+    outline-color: none;
+    outline-width: none;
+
+    &:focus {
+      background-color: transparent;
+      box-shadow: none;
+      outline-style: none;
+      outline-color: none;
+      outline-width: none;
+    }
+  }
+}
+
+// Field Wrapper. Prefijo - input - sufijo
 
 // - Estilos generales del label común
 .form-label-container {
@@ -155,13 +157,11 @@ $validation-icons: (
   //   'description description';
   // grid-template-columns: 1fr auto;
   // margin-bottom: 0.25rem;
-  
-  
+
   //display: flex;
   align-items: center;
   gap: 8px;
   grid-area: label-wrapper;
-  margin-bottom: 0.5rem;
 
   .form-label {
     font-weight: bold;
@@ -202,7 +202,8 @@ $validation-icons: (
 
 .form-label-description {
   @extend .text-sm;
-  margin: 0 0 0.5rem;
+  margin-top: 4px;
+  margin-bottom: 0;
   grid-area: description;
   display: grid;
 }
@@ -282,6 +283,7 @@ input[type='file']:disabled::-webkit-file-upload-button {
   outline: 0.125rem solid $body-color;
   outline-offset: 0;
   box-sizing: border-box;
+  margin: 8px 0;
 
   &::placeholder {
     color: $placeholder-color;
@@ -525,7 +527,6 @@ input[type='search']::-moz-search-clear-button {
   max-width: 443px;
   border-radius: 8px;
   font-size: 14px;
-  margin-top: 8px;
   color: $body-color;
   position: relative;
   padding-left: 44px; // Espacio para el ícono a la izq.

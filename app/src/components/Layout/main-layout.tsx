@@ -4,7 +4,6 @@
 import { usePathname } from 'next/navigation';
 
 import NavLayout from './Navigation/nav';
-// import PatternsPage from '@/app/patterns/page';
 
 export const stylesPages = [
   { text: 'Colores', url: '/components/colors', id: 1 },

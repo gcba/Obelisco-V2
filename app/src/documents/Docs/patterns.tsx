@@ -103,6 +103,7 @@ const PatternsComponents: React.FC = () => {
                         <div className="col ps-3">
                             <Image
                                 src={`${basePath}/images/patterns/patterns_ej_1_no_usar.svg`}
+
                                 alt="Mala práctica en patrones de formularios ejemplo 1"
                                 width="800"
                                 height="242"
@@ -117,6 +118,7 @@ const PatternsComponents: React.FC = () => {
                         <div className="col pe-3">
                             <Image
                                 src={`${basePath}/images/patterns/patterns_ej_1_si_usar.svg`}
+
                                 alt="Buena práctica en patrones de formularios ejemplo 1"
                                 width="800"
                                 height="242"
@@ -141,20 +143,6 @@ const PatternsComponents: React.FC = () => {
 
                     <div className="max-items-2">
                         {/* 1 */}
-                        <div className="col pe-3">
-                            <Image
-                                src={`${basePath}/images/patterns/patterns_ej_2_no_usar.svg`}
-                                alt="Mala práctica en patrones de formularios ejemplo 2"
-                                width="800"
-                                height="242"
-                                className="img-fluid"
-                            />
-                            <div className="d-flex pt-3">
-                                <span className="material-symbols-rounded text-success">check</span>
-                                <p className="mb-0">La bajada aporta contexto, requisitos y duración estimada, usando un lenguaje claro y cercano.</p>
-                            </div>
-                        </div>
-                        {/* 2 */}
                         <div className="col ps-3">
                             <Image
                                 src={`${basePath}/images/patterns/patterns_ej_2_si_usar.svg`}
@@ -166,6 +154,20 @@ const PatternsComponents: React.FC = () => {
                             <div className="d-flex pt-3">
                                 <span className="material-symbols-rounded text-danger">close</span>
                                 <p className="mb-0">La bajada no orienta, ni anticipa qué se necesita o cuánto tiempo tomará.</p>
+                            </div>
+                        </div>
+                        {/* 2 */}
+                        <div className="col pe-3">
+                            <Image
+                                src={`${basePath}/images/patterns/patterns_ej_2_no_usar.svg`}
+                                alt="Mala práctica en patrones de formularios ejemplo 2"
+                                width="800"
+                                height="242"
+                                className="img-fluid"
+                            />
+                            <div className="d-flex pt-3">
+                                <span className="material-symbols-rounded text-success">check</span>
+                                <p className="mb-0">La bajada aporta contexto, requisitos y duración estimada, usando un lenguaje claro y cercano.</p>
                             </div>
                         </div>
                     </div>

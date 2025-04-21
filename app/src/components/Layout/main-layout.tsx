@@ -74,7 +74,7 @@ export const documentationPages = [
 
 export const templates = [{ text: 'Plantillas', url: 'https://gcba.github.io/obelisco-demo/index.html', id: 1 }];
 
-export const patterns = [{ text: 'Construir un formulario', url: '/patterns/', id: 1 }];
+export const patterns = [{ text: 'Construir un formulario', url: '/patterns', id: 1 }];
 
 export const versions = [
   { text: 'Obelisco v.2', url: '/documentation', id: 1 },
@@ -121,6 +121,14 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                 <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Empezar con Obelisco</p>
               </div>
               <NavLayout items={gettingPages} />
+            </div>
+          )}
+          {pathname.includes('/patterns') && (
+            <div className="nav-left sticky-nav h-auto">
+              <div className="nav-left-box-title">
+                <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Patrones</p>
+              </div>
+              <NavLayout items={patterns} />
             </div>
           )}
 

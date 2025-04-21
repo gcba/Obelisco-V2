@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import React from 'react';
 
 interface NavItem {
   text: string;
@@ -22,7 +21,7 @@ const NavLayout = ({ items, className }: NavProps) => {
       <ul className="nav flex-column nav-pills">
         {items.map((item, index) => {
           const isActive = pathname === item.url;
-
+          
           return (
             <li className="nav-item" key={index}>
               {item.isDisabled ? (

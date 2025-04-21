@@ -20,7 +20,6 @@ const FormValidationDocs: React.FC = () => {
           <CodeBox codeHTML={INPUT_VALIDATION_TEXT}>
             <div className="container">
               <div className="col-12 col-lg-6">
-                {/* <div className="form-label-badge"> */}
                 <div className="form-label-container"> 
                   <label htmlFor="exampleInputText" className="form-label">
                     Label

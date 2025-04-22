@@ -63,8 +63,8 @@ $badge-color: $body-color;
 
   .field-wrapper-prefix,
   .field-wrapper-suffix {
-    flex: 0 0 auto; 
-    white-space: nowrap; 
+    flex: 0 0 auto;
+    white-space: nowrap;
     display: flex;
     align-items: center;
   }
@@ -143,7 +143,7 @@ $badge-color: $body-color;
   @extend .text-sm;
   grid-area: number;
   display: inline-block;
-  margin-left: 0.25rem;
+  margin-left: 8px;
   margin-top: 0.125rem;
 }
 

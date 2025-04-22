@@ -5,17 +5,25 @@ $stepper-active-color: $body-color;
 // Custom styles
 
 .stepper-content {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem;
   background-color: $light;
 
   @include media-breakpoint-up(md) {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding: 1.5rem 2.25rem;
+  }
+  @include media-breakpoint-up(lg) {
+    padding: 1.5rem 8.063rem;
   }
 
   .stepper {
     @extend .container;
+    padding: 0 !important;
+
+    .step-volanta {
+      @extend .text-sm;
+      margin-bottom: 0.25rem;
+      text-transform: uppercase;
+    }
 
     .step-title {
       @extend .h4;

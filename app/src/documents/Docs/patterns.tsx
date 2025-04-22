@@ -2,6 +2,7 @@
 
 // import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 import ComponentHeader from '@/components/Template/ComponentHeader';
@@ -189,7 +190,7 @@ const PatternsComponents: React.FC = () => {
             content: (
                 <>
                     <p className="text-md">
-                        Para conocer más sobre usos, especificaciones de código y accesibilidad, consultar la ficha de Inputs de texto.
+                        Para conocer más sobre usos, especificaciones de código y accesibilidad, consultar la ficha de <Link href='/components/form-text'>Inputs de texto</Link>.
                     </p>
 
                     {/* 1 */}
@@ -368,7 +369,7 @@ const PatternsComponents: React.FC = () => {
             content: (
                 <>
                     <p className="text-md">
-                        Para conocer más sobre usos, especificaciones de diseño y código, y accesibilidad, consultar la ficha de Search.
+                        Para conocer más sobre usos, especificaciones de diseño y código, y accesibilidad, consultar la ficha de <Link href='/components/form-search'> Search</Link>.
                     </p>
 
                     {/* 1 */}
@@ -400,7 +401,7 @@ const PatternsComponents: React.FC = () => {
             content: (
                 <>
                     <p className="text-md">
-                        Para conocer más sobre usos, especificaciones de diseño y código, y accesibilidad, consultar las fichas de Select, Radio y Checkbox.
+                        Para conocer más sobre usos, especificaciones de diseño y código, y accesibilidad, consultar las fichas de <Link href="/components/form-text#section-dev-6">Select</Link>, <Link href="/components/form-selection#section-dev-2">Radio</Link> y <Link href="/components/form-selection#section-dev-5">Checkbox</Link>.
                     </p>
 
                     {/* 1 */}
@@ -474,7 +475,7 @@ const PatternsComponents: React.FC = () => {
             content: (
                 <>
                     <p className="text-md">
-                        Para conocer más sobre usos, especificaciones de diseño y código, y accesibilidad, consultar la ficha de File.
+                        Para conocer más sobre usos, especificaciones de diseño y código, y accesibilidad, consultar la ficha de <Link href="/components/form-file">File</Link>.
                     </p>
 
                     {/* 1 */}
@@ -506,7 +507,7 @@ const PatternsComponents: React.FC = () => {
             content: (
                 <>
                     <p className="text-md">
-                        Se colocan al final del formulario y sirven para enviar la información ingresada, guardar, avanzar o retroceder. Para más lineamientos consultar la ficha de Botones.
+                        Se colocan al final del formulario y sirven para enviar la información ingresada, guardar, avanzar o retroceder. Para más lineamientos consultar la ficha de <Link href="/components/button">Botones</Link>.
                     </p>
 
                     <div className="max-items-2">

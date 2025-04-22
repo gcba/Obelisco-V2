@@ -12,6 +12,7 @@ const SECTIONS_DEV = [
       <CodeBox codeHTML={STEPS_FORM}>
         <div className="stepper-content">
           <div className="stepper">
+            <p className="step-volanta">Volanta con información adicional</p>
             <h2 className="step-title">Nombre del paso</h2>
             <p className="step-subtitle">Paso siguiente: Nombre del paso 3</p>
             <div className="steps">

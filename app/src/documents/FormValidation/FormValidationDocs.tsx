@@ -35,10 +35,10 @@ const FormValidationDocs: React.FC = () => {
                   type="text"
                   className="form-control is-invalid"
                   id="exampleInputTexto"
-                  aria-describedby="invalid-feedback-texto"
+                  aria-describedby="Text"
                   placeholder="Texto"
                 />
-                <div id="invalid-feedback-texto" className="invalid-feedback ">
+                <div className="invalid-feedback">
                   <p>Los datos introducidos son inválidos.</p>
                 </div>
               </div>
@@ -63,10 +63,10 @@ const FormValidationDocs: React.FC = () => {
                   type="text"
                   className="form-control is-valid"
                   id="exampleInputNumber"
-                  aria-describedby="valid-feedback-texto"
+                  aria-describedby="Text"
                   placeholder="Texto"
                 />
-                <div id="valid-feedback-texto" className="valid-feedback ">
+                <div className="valid-feedback ">
                   <p>Los datos introducidos son válidos.</p>
                 </div>
               </div>
@@ -75,7 +75,6 @@ const FormValidationDocs: React.FC = () => {
           <br />
           <CodeBox codeHTML={INPUT_VALIDATION_MAIL}>
             <div className="container">
-
               <div className="col-12 col-lg-6">
               <div className="form-label-container">
                   <label htmlFor="exampleInputText" className="form-label">
@@ -96,11 +95,10 @@ const FormValidationDocs: React.FC = () => {
                   placeholder="Email@test.com"
                   required
                 />
-                <div id="invalid-feedback-texto" className="invalid-feedback ">
+                <div className="invalid-feedback ">
                   <p>Los datos introducidos son inválidos.</p>
                 </div>
               </div>
-
             </div>
           </CodeBox>
           <br />
@@ -150,6 +148,7 @@ const FormValidationDocs: React.FC = () => {
                 <textarea
                   className="form-control is-invalid"
                   id="ejemplo-5"
+                  aria-describedby="TextArea" 
                   required
                 ></textarea>
                 <div className="invalid-feedback">

@@ -2,7 +2,7 @@ import CodeBox from '@/components/CodeBox';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
-import { STEPS_FORM } from './code-views';
+import { STEPS_FORM, STEPS_FORM_VOLANTA } from './code-views';
 
 const SECTIONS_DEV = [
   {
@@ -10,6 +10,29 @@ const SECTIONS_DEV = [
     firstTitle: true,
     content: (
       <CodeBox codeHTML={STEPS_FORM}>
+        <div className="stepper-content">
+          <div className="stepper">
+            <h2 className="step-title">Nombre del paso</h2>
+            <p className="step-subtitle">Paso siguiente: Nombre del paso 3</p>
+            <div className="steps">
+              <div className="steps-items">
+                <div className="steps-item active"></div>
+                <div className="steps-item active"></div>
+                <div className="steps-item"></div>
+                <div className="steps-item"></div>
+                <div className="steps-item"></div>
+              </div>
+              <span className="steps-detail">Paso 2 de 5</span>
+            </div>
+          </div>
+        </div>
+      </CodeBox>
+    ),
+  },
+  {
+    title: 'Con volanta',
+    content: (
+      <CodeBox codeHTML={STEPS_FORM_VOLANTA}>
         <div className="stepper-content">
           <div className="stepper">
             <p className="step-volanta">Volanta con información adicional</p>

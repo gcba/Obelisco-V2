@@ -1,5 +1,5 @@
 export const INPUT_TEXT = `
- <div class="form-label-container">
+  <div class="form-label-container">
     <label for="exampleInputTexto" class="form-label">
       Campo de texto *
     </label>

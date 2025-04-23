@@ -1,5 +1,4 @@
-export const INPUT_TEXT = `
-  <div class="form-label-container">
+export const INPUT_TEXT = `  <div class="form-label-container">
     <label for="exampleInputTexto" class="form-label">
       Campo de texto *
     </label>
@@ -13,8 +12,7 @@ export const INPUT_TEXT = `
     placeholder="Textos"
   />
 `;
-export const INPUT_NUMBER = `
-  <div class="form-label-container">
+export const INPUT_NUMBER = `  <div class="form-label-container">
     <label for="exampleInputNumber" class="form-label">
       Campo numérico *
     </label>
@@ -28,8 +26,7 @@ export const INPUT_NUMBER = `
     placeholder="Números"
   />
 `;
-export const INPUT_MAIL = `
-  <div class="form-label-container">
+export const INPUT_MAIL = `  <div class="form-label-container">
     <label for="exampleInputEmail" class="form-label">
       Campo de email *
     </label>
@@ -43,8 +40,7 @@ export const INPUT_MAIL = `
     placeholder="Email@test.com"
   />
 `;
-export const INPUT_DATE = `
-  <div class="form-label-container">
+export const INPUT_DATE = `  <div class="form-label-container">
     <label for="exampleInputDate" class="form-label">
       Nombre del campo *
     </label>
@@ -57,8 +53,7 @@ export const INPUT_DATE = `
     placeholder="Selecciona la fecha"
   />
 `;
-export const INPUT_BLOCK = `
-  <div class="form-label-container">
+export const INPUT_BLOCK = `  <div class="form-label-container">
     <label for="exampleFormControlTextarea1" class="form-label">
       Nombre del campo *
     </label>
@@ -80,8 +75,7 @@ export const INPUT_SELECT = `
     <option value="3">Opción</option>
 </select>
 `;
-export const INPUT_DISABLED = `
-  <div class="container">
+export const INPUT_DISABLED = `  <div class="container">
     <div class="col-12 col-lg-6">
       <div class="form-label-container">
         <label for="example-five" class="form-label disabled">

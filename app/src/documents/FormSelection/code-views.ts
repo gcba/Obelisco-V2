@@ -1,5 +1,4 @@
-export const RADIO = `
-  <p class="headline-md">Seleccioná una opción *</p>
+export const RADIO = `  <p class="headline-md">Seleccioná una opción *</p>
   <div class="form-radio">
     <input
       class="form-radio-input"
@@ -51,8 +50,7 @@ export const RADIO = `
   </div>
 `;
 
-export const RADIO_DISABLED = `
-  <div class="form-radio">
+export const RADIO_DISABLED = `  <div class="form-radio">
     <input
         class="form-radio-input"
         type="radio"
@@ -80,8 +78,7 @@ export const RADIO_DISABLED = `
     </label>
   </div>
 `;
-export const RADIO_NO_TEXT = `
-  <div class="form-radio">
+export const RADIO_NO_TEXT = `  <div class="form-radio">
     <input
       class="form-radio-input"
       type="radio"
@@ -96,8 +93,7 @@ export const RADIO_NO_TEXT = `
     ></label>
   </div>
 `;
-export const CHECKBOX = `
-  <p class="headline-md">Seleccioná una o varias opciones *</p>
+export const CHECKBOX = `  <p class="headline-md">Seleccioná una o varias opciones *</p>
   <div class="form-checkbox">
     <input
       class="form-checkbox-input"
@@ -148,8 +144,7 @@ export const CHECKBOX = `
     </label>
   </div>
 `;
-export const CHECKBOX_NO_TEXT = `
-  <div class="form-checkbox">
+export const CHECKBOX_NO_TEXT = `  <div class="form-checkbox">
     <input
       class="form-checkbox-input"
       type="checkbox"
@@ -161,8 +156,7 @@ export const CHECKBOX_NO_TEXT = `
     </label>
   </div>
 `;
-export const CHECKBOX_TERMS = `
-  <div class="form-checkbox">
+export const CHECKBOX_TERMS = `  <div class="form-checkbox">
     <input
       class="form-checkbox-input"
       type="checkbox"
@@ -175,8 +169,7 @@ export const CHECKBOX_TERMS = `
     </label>
   </div>
 `;
-export const CHECKBOX_DISABLED = `
-  <div class="form-checkbox" >
+export const CHECKBOX_DISABLED = `  <div class="form-checkbox" >
     <input
       class="form-checkbox-input"
       type="checkbox"
@@ -204,8 +197,7 @@ export const CHECKBOX_DISABLED = `
     </label>
   </div>
 `;
-export const CHECKBOX_RADIO_POSITION = `
-  <div class="form-checkbox reverse">
+export const CHECKBOX_RADIO_POSITION = `  <div class="form-checkbox reverse">
     <input
       class="form-checkbox-input"
       type="checkbox"

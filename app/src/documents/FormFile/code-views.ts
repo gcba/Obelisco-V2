@@ -1,5 +1,4 @@
-export const FILE_DEFAULT = `
-    <div class="form-label-container">
+export const FILE_DEFAULT = `    <div class="form-label-container">
       <label for="exampleInputFile" class="form-label">Label</label>
       <span class="badge-forms badge-required-forms">Requerido</span>
     </div>
@@ -15,8 +14,7 @@ export const FILE_DEFAULT = `
     />
 `;
 
-export const FILE_DISABLED = `
-    <div class="form-label-container">
+export const FILE_DISABLED = `    <div class="form-label-container">
       <label for="exampleInputFile" class="form-label">Label</label>
       <span class="badge-forms badge-required-forms">Requerido</span>
     </div>

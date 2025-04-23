@@ -1,5 +1,4 @@
-export const INPUT_VALIDATION_TEXT = `
-    <div class="form-label-container">
+export const INPUT_VALIDATION_TEXT = `    <div class="form-label-container">
       <label for="exampleInputTexto" class="form-label">Label</label>
       <span class="badge-forms badge-required-forms">Requerido</span>
     </div>
@@ -18,8 +17,7 @@ export const INPUT_VALIDATION_TEXT = `
     </div>
 `;
 
-export const INPUT_VALIDATION_NUMBER = `
-    <div class="form-label-container">
+export const INPUT_VALIDATION_NUMBER = `    <div class="form-label-container">
       <label for="exampleInputNumber" class="form-label">Label</label>
       <span class="badge-forms badge-required-forms">Requerido</span>
     </div>
@@ -38,8 +36,7 @@ export const INPUT_VALIDATION_NUMBER = `
     </div>
 `;
 
-export const INPUT_VALIDATION_MAIL = `
-    <div class="form-label-container">
+export const INPUT_VALIDATION_MAIL = `    <div class="form-label-container">
       <label for="exampleInputText" class="form-label">Label</label>
       <span class="badge-forms badge-required-forms">Requerido</span>
     </div>
@@ -59,8 +56,7 @@ export const INPUT_VALIDATION_MAIL = `
     </div>
 `;
 
-export const INPUT_VALIDATION_DATE = `
-    <div class="form-label-container">
+export const INPUT_VALIDATION_DATE = `    <div class="form-label-container">
       <label for="ejemplo-4" class="form-label">Ejemplo campo de fecha</label>
       <span class="badge-forms badge-required-forms">Requerido</span>
     </div>
@@ -80,8 +76,7 @@ export const INPUT_VALIDATION_DATE = `
     </div>
 `;
 
-export const INPUT_VALIDATION_TEXTAREA = `
-    <div class="form-label-container">
+export const INPUT_VALIDATION_TEXTAREA = `    <div class="form-label-container">
       <label for="ejemplo-5" class="form-label">Ejemplo TextArea</label>
       <span class="badge-forms badge-required-forms">Requerido</span>
     </div>

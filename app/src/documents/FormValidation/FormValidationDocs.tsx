@@ -20,16 +20,15 @@ const FormValidationDocs: React.FC = () => {
           <CodeBox codeHTML={INPUT_VALIDATION_TEXT}>
             <div className="container">
               <div className="col-12 col-lg-6">
-                <div className="form-label-container"> 
+                <div className="form-label-container">
                   <label htmlFor="exampleInputText" className="form-label">
                     Label
                   </label>
-                  <span className="badge-forms badge-required-forms">
-                    Requerido
-                  </span>
+                  <span className="badge-forms badge-required-forms">Requerido</span>
                 </div>
                 <p className="form-label-description">
-                  Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de no más de 3 líneas.
+                  Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de
+                  no más de 3 líneas.
                 </p>
                 <input
                   type="text"
@@ -48,16 +47,15 @@ const FormValidationDocs: React.FC = () => {
           <CodeBox codeHTML={INPUT_VALIDATION_NUMBER}>
             <div className="container">
               <div className="col-12 col-lg-6">
-              <div className="form-label-container">
+                <div className="form-label-container">
                   <label htmlFor="exampleInputNumber" className="form-label">
                     Label
                   </label>
-                  <span className="badge-forms badge-required-forms">
-                    Requerido
-                  </span>
+                  <span className="badge-forms badge-required-forms">Requerido</span>
                 </div>
                 <p className="form-label-description">
-                  Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de no más de 3 líneas.
+                  Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de
+                  no más de 3 líneas.
                 </p>
                 <input
                   type="text"
@@ -76,16 +74,15 @@ const FormValidationDocs: React.FC = () => {
           <CodeBox codeHTML={INPUT_VALIDATION_MAIL}>
             <div className="container">
               <div className="col-12 col-lg-6">
-              <div className="form-label-container">
+                <div className="form-label-container">
                   <label htmlFor="exampleInputText" className="form-label">
                     Label
                   </label>
-                  <span className="badge-forms badge-required-forms">
-                    Requerido
-                  </span>
+                  <span className="badge-forms badge-required-forms">Requerido</span>
                 </div>
                 <p className="form-label-description">
-                  Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de no más de 3 líneas.
+                  Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de
+                  no más de 3 líneas.
                 </p>
                 <input
                   type="email"
@@ -109,12 +106,11 @@ const FormValidationDocs: React.FC = () => {
                   <label htmlFor="ejemplo-4" className="form-label">
                     Ejemplo campo de fecha
                   </label>
-                  <span className="badge-forms badge-required-forms">
-                    Requerido
-                  </span>
+                  <span className="badge-forms badge-required-forms">Requerido</span>
                 </div>
                 <p className="form-label-description">
-                  Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de no más de 3 líneas.
+                  Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de
+                  no más de 3 líneas.
                 </p>
                 <input
                   type="date"
@@ -138,17 +134,16 @@ const FormValidationDocs: React.FC = () => {
                   <label htmlFor="ejemplo-5" className="form-label">
                     Ejemplo TextArea
                   </label>
-                  <span className="badge-forms badge-required-forms">
-                    Requerido
-                  </span>
+                  <span className="badge-forms badge-required-forms">Requerido</span>
                 </div>
                 <p className="form-label-description">
-                  Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de no más de 3 líneas.
+                  Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de
+                  no más de 3 líneas.
                 </p>
                 <textarea
                   className="form-control is-invalid"
                   id="ejemplo-5"
-                  aria-describedby="TextArea" 
+                  aria-describedby="TextArea"
                   required
                 ></textarea>
                 <div className="invalid-feedback">
@@ -161,7 +156,6 @@ const FormValidationDocs: React.FC = () => {
       ),
     },
   ];
-
 
   return (
     <>

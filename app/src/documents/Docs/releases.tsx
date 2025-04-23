@@ -26,7 +26,10 @@ const ReleasesComponents: React.FC = () => {
           <p>La versión 1.5.3 contiene lo siguiente: </p>
           <li>Creación del componente Input File (Carga de archivo).</li>
           <li>Creación de la etiqueta Badge Forms para identificar si un campo es requerido u opcional.</li>
-          <li>Se modifica visualmente la validación de los campos manteniendo la misma clase <code>invalid-feedback</code>; <code>valid-feedback</code></li>
+          <li>
+            Se modifica visualmente la validación de los campos manteniendo la misma clase <code>invalid-feedback</code>
+            ; <code>valid-feedback</code>
+          </li>
           <li>Se modifica el gap entre el subtítulo y los ítems en los componentes de Listas de 8px a 4px.</li>
           <li>Se incorporó una volanta descriptiva dentro del componente Pasos de un formulario</li>
         </ul>

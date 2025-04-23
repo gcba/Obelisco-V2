@@ -165,7 +165,6 @@ export const INPUT_DISABLED = `  <div class="container">
   </div>
 `;
 
-
 export const INPUT_BACKGROUND = `
 <div class="p-4 form-bg-light">
   <div class="form-label-container">

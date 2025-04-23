@@ -312,9 +312,7 @@ const ColorsDocs: React.FC = () => {
       subtitle: 'Componente: formularios',
       content: (
         <div>
-          <p>
-            Estos colores se utilizan únicamente dentro del componente de formulario.
-          </p>
+          <p>Estos colores se utilizan únicamente dentro del componente de formulario.</p>
           <PalletteTable arrayTableColors={FORM_COLORS} />
         </div>
       ),

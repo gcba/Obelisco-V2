@@ -16,7 +16,6 @@ export const formsPages = [
   { text: 'Selección', url: '/components/form-selection', id: 3 },
   { text: 'Carga de archivo', url: '/components/form-file', id: 4 },
   { text: 'Validación', url: '/components/form-validation', id: 5 },
-
 ];
 export const organismsPages = [
   { text: 'Accesos (organismo)', url: '/components/access-organism', id: 1 },
@@ -140,7 +139,6 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
               <NavLayout items={documentationPages} />
             </div>
           )}
-                  
         </div>
         <div className="col-12 col-xl-9 custom-col-9-desktop">{children}</div>
       </div>

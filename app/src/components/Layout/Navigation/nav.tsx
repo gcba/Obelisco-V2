@@ -21,7 +21,7 @@ const NavLayout = ({ items, className }: NavProps) => {
       <ul className="nav flex-column nav-pills">
         {items.map((item, index) => {
           const isActive = pathname === item.url;
-          
+
           return (
             <li className="nav-item" key={index}>
               {item.isDisabled ? (

@@ -16,8 +16,25 @@ const ReleasesComponents: React.FC = () => {
       .catch((error) => console.error('Error fetching version:', error));
   }, []);
 
-  const versionPages = { text: `${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
+  const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
+    {
+      title: 'Versión 1.5.3',
+      firstTitle: true,
+      content: (
+        <ul className="docs-list">
+          <p>La versión 1.5.3 contiene lo siguiente: </p>
+          <li>Creación del componente Input File (Carga de archivo).</li>
+          <li>Creación de la etiqueta Badge Forms para identificar si un campo es requerido u opcional.</li>
+          <li>
+            Se modifica visualmente la validación de los campos manteniendo la misma clase <code>invalid-feedback</code>
+            ; <code>valid-feedback</code>
+          </li>
+          <li>Se modifica el gap entre el subtítulo y los ítems en los componentes de Listas de 8px a 4px.</li>
+          <li>Se incorporó una volanta descriptiva dentro del componente Pasos de un formulario</li>
+        </ul>
+      ),
+    },
     {
       title: 'Versión 1.5.2',
       content: (
@@ -93,10 +110,10 @@ const ReleasesComponents: React.FC = () => {
       <ComponentHeader
         title="Versionados"
         description={[
-          'En esta sección se encuentran los versionados de la librearía y la documentación de los cambios que se hicieron sobre cada versión de Obelisco.',
+          'En esta sección se encuentran los versionados de la librería y la documentación de los cambios que se hicieron sobre cada versión de Obelisco.',
           <>
             <p>
-              Versión actual:
+              Versión actual:{' '}
               <Link href="https://github.com/gcba/Obelisco-V2/releases" target="blank">
                 {versionPages.text}
               </Link>

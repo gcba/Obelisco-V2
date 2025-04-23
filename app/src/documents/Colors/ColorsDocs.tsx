@@ -15,6 +15,7 @@ import {
   CALENDAR_COLORS,
   cyanArray,
   FOOTER_COLORS,
+  FORM_COLORS,
   grayArray,
   greenArray,
   LINK_COLORS,
@@ -304,6 +305,15 @@ const ColorsDocs: React.FC = () => {
             predeterminado lo toma de la variable <strong>$text-link</strong>.
           </p>
           <PalletteTable arrayTableColors={LINK_COLORS} />
+        </div>
+      ),
+    },
+    {
+      subtitle: 'Componente: formularios',
+      content: (
+        <div>
+          <p>Estos colores se utilizan únicamente dentro del componente de formulario.</p>
+          <PalletteTable arrayTableColors={FORM_COLORS} />
         </div>
       ),
     },

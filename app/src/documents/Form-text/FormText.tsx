@@ -11,11 +11,6 @@ import {
   INPUT_NUMBER,
   INPUT_SELECT,
   INPUT_TEXT,
-  INPUT_VALIDATION_DATE,
-  INPUT_VALIDATION_MAIL,
-  INPUT_VALIDATION_NUMBER,
-  INPUT_VALIDATION_TEXT,
-  INPUT_VALIDATION_TEXTAREA,
 } from './code-views';
 
 const FormTextDocs: React.FC = () => {
@@ -30,7 +25,7 @@ const FormTextDocs: React.FC = () => {
               <div className="col-12 col-lg-6">
                 <div className="form-label-container">
                   <label htmlFor="exampleInputTexto" className="form-label">
-                    Campo de texto *
+                    Campo de texto
                   </label>
                   <p className="form-label-description">Texto de asistencia</p>
                 </div>
@@ -56,7 +51,7 @@ const FormTextDocs: React.FC = () => {
               <div className="col-12 col-lg-6">
                 <div className="form-label-container">
                   <label htmlFor="exampleInputNumber" className="form-label">
-                    Campo numérico *
+                    Campo numérico
                   </label>
                   <p className="form-label-description">Campo de asistencia</p>
                 </div>
@@ -82,7 +77,7 @@ const FormTextDocs: React.FC = () => {
               <div className="col-12 col-lg-6">
                 <div className="form-label-container">
                   <label htmlFor="exampleInputEmail" className="form-label">
-                    Campo de email *
+                    Campo de email
                   </label>
                   <p className="form-label-description">Campo de asistencia</p>
                 </div>
@@ -108,7 +103,7 @@ const FormTextDocs: React.FC = () => {
               <div className="col-12 col-lg-6">
                 <div className="form-label-container">
                   <label htmlFor="exampleInputDate" className="form-label">
-                    Nombre del campo *
+                    Nombre del campo
                   </label>
                 </div>
                 <input
@@ -133,7 +128,7 @@ const FormTextDocs: React.FC = () => {
               <div className="col-12 col-lg-6">
                 <div className="form-label-container">
                   <label htmlFor="exampleFormControlTextarea1" className="form-label">
-                    Nombre del campo *
+                    Nombre del campo
                   </label>
                   <span className="form-label-number">0/100</span>
                 </div>
@@ -157,7 +152,7 @@ const FormTextDocs: React.FC = () => {
               <div className="col-12 col-lg-6">
                 <div className="form-label-container">
                   <label htmlFor="exampleInputEmail" className="form-label">
-                    Nombre del selector *
+                    Nombre del selector
                   </label>
                   <p className="form-label-description">Campo de asistencia</p>
                 </div>
@@ -281,135 +276,6 @@ const FormTextDocs: React.FC = () => {
                   <option value="3">Opción</option>
                 </select>
               </div>
-            </div>
-          </CodeBox>
-        </>
-      ),
-    },
-    {
-      title: 'Validación',
-      content: (
-        <>
-          <CodeBox codeHTML={INPUT_VALIDATION_TEXT}>
-            <div className="container">
-              <form className="col-12 col-lg-6">
-                <div className="form-label-container">
-                  <label htmlFor="exampleInputTexto" className="form-label">
-                    Ejemplo campo de texto
-                  </label>
-                </div>
-                <input
-                  type="text"
-                  className="form-control is-invalid"
-                  id="ejemplo-1"
-                  aria-describedby="Texto"
-                  placeholder="Textos"
-                  required
-                />
-                <div className="valid-feedback">
-                  <p>El campo es válido.</p>
-                </div>
-                <div id="exampleInputTexto" className="invalid-feedback">
-                  <p>El campo es invalido</p>
-                </div>
-              </form>
-            </div>
-          </CodeBox>
-          <br />
-          <CodeBox codeHTML={INPUT_VALIDATION_NUMBER}>
-            <div className="container">
-              <form className="col-12 col-lg-6">
-                <div className="form-label-container">
-                  <label htmlFor="ejemplo-2" className="form-label">
-                    Ejemplo campo de numero
-                  </label>
-                </div>
-                <input
-                  type="number"
-                  className="form-control is-valid"
-                  id="ejemplo-2"
-                  aria-describedby="Number"
-                  placeholder="Números"
-                  required
-                />
-                <div className="valid-feedback">
-                  <p>El campo es válido.</p>
-                </div>
-                <div id="exampleInputTexto" className="invalid-feedback">
-                  <p>El campo es invalido</p>
-                </div>
-              </form>
-            </div>
-          </CodeBox>
-          <br />
-          <CodeBox codeHTML={INPUT_VALIDATION_MAIL}>
-            <div className="container">
-              <form className="col-12 col-lg-6">
-                <div className="form-label-container">
-                  <label htmlFor="ejemplo-3-1" className="form-label">
-                    Ejemplo campo de mail
-                  </label>
-                </div>
-                <input
-                  type="email"
-                  className="form-control is-invalid"
-                  id="ejemplo-3-1"
-                  aria-describedby="Email"
-                  placeholder="Email@test.com"
-                  required
-                />
-                <div className="valid-feedback">
-                  <p>El campo es válido.</p>
-                </div>
-                <div id="exampleInputTexto" className="invalid-feedback">
-                  <p>El campo es invalido</p>
-                </div>
-              </form>
-            </div>
-          </CodeBox>
-          <br />
-          <CodeBox codeHTML={INPUT_VALIDATION_DATE}>
-            <div className="container">
-              <form className="col-12 col-lg-6">
-                <div className="form-label-container">
-                  <label htmlFor="ejemplo-4" className="form-label">
-                    Ejemplo campo de fecha
-                  </label>
-                </div>
-                <input
-                  type="date"
-                  className="form-control is-valid"
-                  id="ejemplo-4"
-                  aria-describedby="Date"
-                  placeholder="selecciona tu fecha"
-                  required
-                />
-                <div className="valid-feedback">
-                  <p>El campo es válido.</p>
-                </div>
-                <div id="exampleInputTexto" className="invalid-feedback">
-                  <p>El campo es invalido</p>
-                </div>
-              </form>
-            </div>
-          </CodeBox>
-          <br />
-          <CodeBox codeHTML={INPUT_VALIDATION_TEXTAREA}>
-            <div className="container">
-              <form className="col-12 col-lg-6">
-                <div className="form-label-container">
-                  <label htmlFor="ejemplo-5" className="form-label">
-                    Ejemplo TextArea
-                  </label>
-                </div>
-                <textarea className="form-control is-invalid" id="ejemplo-5" required></textarea>
-                <div className="valid-feedback">
-                  <p>El campo es válido.</p>
-                </div>
-                <div id="exampleInputTexto" className="invalid-feedback">
-                  <p>El campo es invalido</p>
-                </div>
-              </form>
             </div>
           </CodeBox>
         </>

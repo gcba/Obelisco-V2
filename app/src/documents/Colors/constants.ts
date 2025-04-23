@@ -637,6 +637,40 @@ export const LINK_COLORS: ColorTableArray[] = [
     use: 'Es el color del subrayado del estado visitado del enlace sobre fondos oscuros.',
   },
 ];
+export const FORM_COLORS: ColorTableArray[] = [
+  {
+    base: '$blue-900',
+    hex: '#101E37',
+    variable: '$border-default',
+    use: 'Es el color predeterminado del borde de todos los campos.',
+    customBorder: true,
+  },
+  {
+    base: '$danger',
+    hex: '#C33',
+    variable: '$border-error',
+    use: 'Es el color del borde del estado de peligro de todos los campos.',
+    customBorder: true,
+  },
+  {
+    base: '$slate-400',
+    hex: '#9EAAB8',
+    variable: '$border-disabled',
+    use: 'Es el color del borde del estado deshabilitado de todos los campos.',
+  },
+  {
+    base: '$purple-100',
+    hex: '#F0CCFF',
+    variable: '$tag-required',
+    use: 'Es el color del fondo de la variante requerida del tag de formularios. ',
+  },
+  {
+    base: '$cyan-100',
+    hex: '#E2F8F5',
+    variable: '$tag-optional',
+    use: 'Es el color del fondo de la variante opcional del tag de formularios. ',
+  },
+];
 export const SPINNER_COLORS: ColorTableArray[] = [
   {
     base: '$bg-light',

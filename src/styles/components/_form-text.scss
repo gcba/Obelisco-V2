@@ -9,37 +9,151 @@ $validation-icons: (
   'invalid':
     url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M7.99992 1.33337C4.31992 1.33337 1.33325 4.32004 1.33325 8.00004C1.33325 11.68 4.31992 14.6667 7.99992 14.6667C11.6799 14.6667 14.6666 11.68 14.6666 8.00004C14.6666 4.32004 11.6799 1.33337 7.99992 1.33337ZM7.99992 8.66671C7.63325 8.66671 7.33325 8.36671 7.33325 8.00004V5.33337C7.33325 4.96671 7.63325 4.66671 7.99992 4.66671C8.36659 4.66671 8.66659 4.96671 8.66659 5.33337V8.00004C8.66659 8.36671 8.36659 8.66671 7.99992 8.66671ZM8.66659 11.3334H7.33325V10H8.66659V11.3334Z" fill="%23CC3333"/></svg>'),
   'valid':
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M7.99992 1.33337C4.31992 1.33337 1.33325 4.32004 1.33325 8.00004C1.33325 11.68 4.31992 14.6667 7.99992 14.6667C11.6799 14.6667 14.6666 11.68 14.6666 8.00004C14.6666 4.32004 11.6799 1.33337 7.99992 1.33337ZM6.19325 10.86L3.79992 8.46671C3.53992 8.20671 3.53992 7.78671 3.79992 7.52671C4.05992 7.26671 4.47992 7.26671 4.73992 7.52671L6.66659 9.44671L11.2533 4.86004C11.5133 4.60004 11.9333 4.60004 12.1933 4.86004C12.4533 5.12004 12.4533 5.54004 12.1933 5.80004L7.13325 10.86C6.87992 11.12 6.45325 11.12 6.19325 10.86Z" fill="%2326874A"/></svg>'),
+    url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="check_circle"><path id="Vector" d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM9.29 16.29L5.7 12.7C5.31 12.31 5.31 11.68 5.7 11.29C6.09 10.9 6.72 10.9 7.11 11.29L10 14.17L16.88 7.29C17.27 6.9 17.9 6.9 18.29 7.29C18.68 7.68 18.68 8.31 18.29 8.7L10.7 16.29C10.32 16.68 9.68 16.68 9.29 16.29Z" fill="%2326874A"/></g></svg>'),
 );
-
 @mixin focus-style {
   background-color: $slate-50;
   box-shadow: $focus-box-shadow;
   outline: $outline-transparent;
 }
 
-// Estilos generales del label
+// Etiqueta para inputs: Required y optional
+$badge-separation: 0.5rem;
+$badge-color: $body-color;
+
+.badge-forms {
+  @extend .text-sm;
+  color: $badge-color;
+  text-decoration: none;
+  min-height: 20px;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-right: $badge-separation;
+  border-radius: 4px;
+  padding: 0 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 8px; //agrego lauti
+}
+
+.badge-required-forms {
+  color: $body-color;
+  background-color: $purple-100;
+  display: inline-grid; //agrego lauti
+}
+
+.badge-optional-forms {
+  @extend .badge-required-forms;
+  background-color: $cyan-100;
+}
+
+// Etiquetas para inputs: Required y optional
+
+// Field Wrapper. Prefijo - input - sufijo
+.field-wrapper {
+  border: 2px solid #101e37;
+  border-radius: 8px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  min-height: 24px;
+  margin-top: 8px;
+
+  .field-wrapper-prefix,
+  .field-wrapper-suffix {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+  }
+
+  .field-wrapper-prefix {
+    margin-right: 0.5rem;
+    border-right: 2px solid black;
+    padding-right: 8px;
+  }
+
+  .field-wrapper-suffix {
+    margin-left: 0.5rem;
+    border-left: 2px solid black;
+    padding-left: 8px;
+  }
+
+  .field-input {
+    flex: 1 1 auto;
+    min-width: 0;
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    display: block;
+
+    &:focus {
+      background-color: transparent;
+      box-shadow: none;
+      outline: none none none;
+    }
+  }
+}
+
+// Field Wrapper. Prefijo - input - sufijo
+
+// - Estilos generales del label común
 .form-label-container {
-  display: grid;
-  grid-template-areas:
-    'label number'
-    'description description';
-  grid-template-columns: 1fr auto;
-  margin-bottom: 0.25rem;
+  align-items: center;
+  gap: 8px;
+  grid-area: label-wrapper;
+
+  .form-label {
+    font-weight: bold;
+    color: $body-color;
+  }
+}
+
+// Estilos generales del label común -
+
+.time-picker {
+  position: relative;
+  display: inline-block;
+}
+
+.time-picker .icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  pointer-events: none;
+  color: #555;
+}
+
+.time-picker input {
+  width: 150px;
+  height: 36px;
+  font-size: 16px;
+  padding-right: 30px;
 }
 
 .form-label-number {
   @extend .text-sm;
   grid-area: number;
   display: inline-block;
-  margin-left: 0.25rem;
+  margin-left: 8px;
   margin-top: 0.125rem;
 }
 
 .form-label-description {
-  @extend .text-md;
-  margin: 0.125rem 0 0;
+  @extend .text-sm;
+  margin-top: 4px;
+  margin-bottom: 0;
   grid-area: description;
+  display: grid;
 }
 
 .form-label {
@@ -54,17 +168,66 @@ $validation-icons: (
   }
 }
 
-// Estilos generales del Input
+// - Input file
+input[type='file'] {
+  padding: 6px;
+  color: $placeholder-color;
+  font-family: Arial, sans-serif;
+  height: 48px;
+
+  // cuerpo/m/regular
+  // font-family: 'Open Sans';
+  // font-size: 1rem;
+  // line-height: 1.5rem;
+  // font-weight: 400;
+  @extend .text-md;
+}
+
+// botón seleccionar archivo
+input[type='file']::-webkit-file-upload-button {
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background-color: #005e7a !important;
+  height: 48px;
+
+  @extend .headline-md;
+}
+
+input[type='file']:disabled {
+  border: 2px solid $slate-400;
+  border-radius: 8px;
+  background-color: $slate-100;
+  color: $slate-700;
+  display: flex;
+  align-items: center;
+  cursor: not-allowed;
+}
+
+input[type='file']:disabled::-webkit-file-upload-button {
+  color: $slate-400;
+  padding: 12px 24px;
+  background-color: $slate-100 !important;
+  cursor: not-allowed;
+  pointer-events: none;
+  border: none;
+}
+
+// Input file -
+
+// - Estilos generales del Input. form-control
 .form-control {
-  background-color: $slate-50;
+  background-color: $gray-0;
   padding: 0.75rem 1rem;
   color: $body-color;
   font-size: $md-body-fs;
   font-weight: $md-body-fw;
   border: none;
   border-radius: $border-radius-lg;
-  outline: $outline-border;
+  outline: 0.125rem solid $body-color;
   outline-offset: 0;
+  box-sizing: border-box;
+  margin: 8px 0;
 
   &::placeholder {
     color: $placeholder-color;
@@ -74,9 +237,18 @@ $validation-icons: (
   &.is-invalid {
     background-image: none;
     outline: transparent;
+    border-color: transparent !important;
+
+    input[type='file']::-webkit-file-upload-button:hover {
+      border-color: transparent !important;
+    }
 
     &:focus {
       @include focus-style;
+
+      input[type='file']::-webkit-file-upload-button:hover {
+        border-color: transparent !important;
+      }
     }
   }
 
@@ -93,8 +265,9 @@ $validation-icons: (
   }
 
   &:disabled {
-    background-color: $slate-50;
+    background-color: $slate-100;
     color: $disabled-text;
+    outline-color: $slate-400;
 
     &:hover {
       cursor: not-allowed;
@@ -114,7 +287,9 @@ $validation-icons: (
   }
 }
 
-// Estilos para input date
+// Estilos generales del Input. form-control -
+
+// - Estilos para input date
 input[type='date'] {
   position: relative;
 
@@ -134,13 +309,15 @@ input[type='date'] {
   }
 }
 
+// Estilos para input date -
+
 // Para Opera, Chrome, Edge y Safari
 ::-webkit-calendar-picker-indicator {
   opacity: 0;
   cursor: pointer;
 }
 
-// Estilos para input Search
+// - Estilos para input Search
 .search-container {
   position: relative;
 
@@ -274,7 +451,9 @@ input[type='search']::-moz-search-clear-button {
   display: none;
 }
 
-// Estilos para validación
+// Estilos para input Search -
+
+// - Estilos para validación
 .valid-feedback,
 .invalid-feedback {
   display: none;
@@ -286,27 +465,51 @@ input[type='search']::-moz-search-clear-button {
   }
 }
 
+// Estilos visibles para validación
+.is-valid ~ .valid-feedback,
+.is-invalid ~ .invalid-feedback {
+  display: flex !important;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 12px;
+  max-width: 443px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: $body-color;
+  position: relative;
+  padding-left: 44px; // Espacio para el ícono a la izq.
+}
+
 .is-valid ~ .valid-feedback {
-  display: flex;
+  background-color: $green-50;
 }
 
 .is-invalid ~ .invalid-feedback {
-  display: flex;
+  background-color: $red-50;
+  padding-left: 44px;
 }
 
 .valid-feedback::before,
 .invalid-feedback::before {
-  padding-right: 0.188rem;
-  padding-top: 0.1rem;
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
 }
 
 .valid-feedback::before {
-  content: map-get($validation-icons, 'valid');
+  background-image: map-get($validation-icons, 'valid');
 }
 
 .invalid-feedback::before {
-  content: map-get($validation-icons, 'invalid');
+  background-image: map-get($validation-icons, 'invalid');
 }
+
+// Estilos para validación -
 
 //Input con fondo
 .form-bg-light {
@@ -319,3 +522,5 @@ input[type='search']::-moz-search-clear-button {
     }
   }
 }
+
+//Input con fondo

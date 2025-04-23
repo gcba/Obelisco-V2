@@ -1,5 +1,4 @@
-export const SEARCH = `
-  <form>
+export const SEARCH = `  <form>
     <div class="form-label-container">
       <label for="search" class="form-label">Ejemplo Buscador</label>
     </div>
@@ -9,8 +8,7 @@ export const SEARCH = `
     </div>
   </form>
 `;
-export const SEARCH_BUTTON = `
-  <form>
+export const SEARCH_BUTTON = `  <form>
     <div class="form-label-container">
       <label for="search-btn" class="form-label">Ejemplo Buscador con botón</label>
     </div>
@@ -21,8 +19,7 @@ export const SEARCH_BUTTON = `
     </div>
   </form>
 `;
-export const SEARCH_DISABLED = `
-  <form>
+export const SEARCH_DISABLED = `  <form>
     <div class="form-label-container">
       <label for="search-btn" class="form-label disabled">Ejemplo Buscador deshabilitado</label>
     </div>

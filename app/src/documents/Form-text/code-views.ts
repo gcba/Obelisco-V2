@@ -1,5 +1,4 @@
-export const INPUT_TEXT = `
- <div class="form-label-container">
+export const INPUT_TEXT = `  <div class="form-label-container">
     <label for="exampleInputTexto" class="form-label">
       Campo de texto *
     </label>
@@ -13,8 +12,7 @@ export const INPUT_TEXT = `
     placeholder="Textos"
   />
 `;
-export const INPUT_NUMBER = `
-  <div class="form-label-container">
+export const INPUT_NUMBER = `  <div class="form-label-container">
     <label for="exampleInputNumber" class="form-label">
       Campo numérico *
     </label>
@@ -28,8 +26,7 @@ export const INPUT_NUMBER = `
     placeholder="Números"
   />
 `;
-export const INPUT_MAIL = `
-  <div class="form-label-container">
+export const INPUT_MAIL = `  <div class="form-label-container">
     <label for="exampleInputEmail" class="form-label">
       Campo de email *
     </label>
@@ -43,8 +40,7 @@ export const INPUT_MAIL = `
     placeholder="Email@test.com"
   />
 `;
-export const INPUT_DATE = `
-  <div class="form-label-container">
+export const INPUT_DATE = `  <div class="form-label-container">
     <label for="exampleInputDate" class="form-label">
       Nombre del campo *
     </label>
@@ -57,8 +53,7 @@ export const INPUT_DATE = `
     placeholder="Selecciona la fecha"
   />
 `;
-export const INPUT_BLOCK = `
-  <div class="form-label-container">
+export const INPUT_BLOCK = `  <div class="form-label-container">
     <label for="exampleFormControlTextarea1" class="form-label">
       Nombre del campo *
     </label>
@@ -80,8 +75,7 @@ export const INPUT_SELECT = `
     <option value="3">Opción</option>
 </select>
 `;
-export const INPUT_DISABLED = `
-  <div class="container">
+export const INPUT_DISABLED = `  <div class="container">
     <div class="col-12 col-lg-6">
       <div class="form-label-container">
         <label for="example-five" class="form-label disabled">
@@ -169,114 +163,6 @@ export const INPUT_DISABLED = `
       </select>
     </div>
   </div>
-`;
-export const INPUT_VALIDATION_TEXT = `
-  <form class="col-12 col-lg-6">
-    <div class="form-label-container"> 
-      <label for="ejemplo-1" class="form-label">
-        Ejemplo campo de texto
-      </label>
-    </div>
-    <input
-      type="text"
-      class="form-control is-invalid"
-      id="ejemplo-1"
-      aria-describedby="Texto"
-      placeholder="Textos"
-      required
-    />
-    <div class="valid-feedback">
-      <p>El campo es válido.</p>
-    </div>
-    <div id="exampleInputTexto" class="invalid-feedback">
-      <p>El campo es invalido</p>
-    </div>
-  </form>
-`;
-export const INPUT_VALIDATION_NUMBER = `
-  <form class="col-12 col-lg-6">
-    <div class="form-label-container"> 
-      <label for="ejemplo-2" class="form-label">
-        Ejemplo campo de numero
-      </label>
-    </div>
-    <input
-      type="number"
-      class="form-control is-valid"
-      id="ejemplo-2"
-      aria-describedby="Number"
-      placeholder="Números"
-      required
-    />
-    <div class="valid-feedback">
-      <p>El campo es válido.</p>
-    </div>
-    <div id="exampleInputTexto" class="invalid-feedback">
-      <p>El campo es invalido</p>
-    </div>
-  </form>
-`;
-export const INPUT_VALIDATION_MAIL = `
-  <form class="col-12 col-lg-6">
-    <div class="form-label-container"> 
-      <label for="ejemplo-3-1" class="form-label">
-        Ejemplo campo de mail
-      </label>
-    </div>
-    <input
-      type="email"
-      class="form-control is-invalid"
-      id="ejemplo-3-1"
-      aria-describedby="Email"
-      placeholder="Email@test.com"
-      required
-    />
-    <div class="valid-feedback">
-      <p>El campo es válido.</p>
-    </div>
-    <div id="exampleInputTexto" class="invalid-feedback">
-      <p>El campo es invalido</p>
-    </div>
-  </form>
-`;
-export const INPUT_VALIDATION_DATE = `
-  <form class="col-12 col-lg-6">
-    <div class="form-label-container"> 
-      <label for="ejemplo-4" class="form-label">
-        Ejemplo campo de fecha
-      </label>
-    </div>
-    <input
-      type="date"
-      class="form-control is-valid"
-      id="ejemplo-4"
-      aria-describedby="Date"
-      placeholder="selecciona tu fecha"
-      required
-    />
-    <div class="valid-feedback">
-      <p>El campo es válido.</p>
-    </div>
-    <div id="exampleInputTexto" class="invalid-feedback">
-      <p>El campo es invalido</p>
-    </div>
-  </form>
-`;
-export const INPUT_VALIDATION_TEXTAREA = `
-  <form class="col-12 col-lg-6">
-    <div class="form-label-container"> 
-      <label for="ejemplo-5" class="form-label">
-        Ejemplo TextArea
-      </label>
-    </div>
-    <textarea class="form-control is-invalid" id="ejemplo-5" required ></textarea>
-    <div class="valid-feedback">
-      <p>El campo es válido.</p>
-    </div>
-    <div id="exampleInputTexto" class="invalid-feedback">
-      <p>El campo es invalido</p>
-    </div>
-  </form>
 `;
 
 export const INPUT_BACKGROUND = `

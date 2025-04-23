@@ -16,7 +16,7 @@ const PatternsComponents: React.FC = () => {
     const sections = [
         {
             title: 'Uso',
-            // firstTitle,
+            firstTitle: true,
             content: (
                 <>
                     <div className="list-informative">

@@ -104,8 +104,7 @@ const sections = [
     content: (
       <ul className="docs-list">
         <li>
-          Se elimina la clase <code>.btn-icon</code>, no es necesaria colocarla al utilizar iconos o spinner en
-          botón.{' '}
+          Se elimina la clase <code>.btn-icon</code>, no es necesaria colocarla al utilizar iconos o spinner en botón.{' '}
         </li>
         <li>
           Se agrega la clase <code>.o-icon</code> a los iconos de Boxicons y Material Symbols Rounded.{' '}

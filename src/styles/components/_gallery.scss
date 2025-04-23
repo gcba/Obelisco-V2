@@ -2,8 +2,8 @@
 
 $carousel-control-padding: 0.25rem * 3;
 $carousel-control-icon-size: 0.25rem * 6;
-$carousel-control-size: $carousel-control-icon-size +
-  $carousel-control-padding * 2;
+$carousel-control-size: $carousel-control-icon-size + $carousel-control-padding *
+  2;
 $carousel-control-border-radius: 100%;
 
 $carousel-control-space-x-mobile: $carousel-control-size * 0.25;

@@ -11,9 +11,11 @@ export const stylesPages = [
   { text: 'Tipografía', url: '/components/typography', id: 3 },
 ];
 export const formsPages = [
-  { text: 'Buscador', url: '/components/form-search', id: 1 },
-  { text: 'Casillas de selección', url: '/components/form-selection', id: 2 },
-  { text: 'Formularios de texto', url: '/components/form-text', id: 3 },
+  { text: 'Texto', url: '/components/form-text', id: 1 },
+  { text: 'Búsqueda', url: '/components/form-search', id: 2 },
+  { text: 'Selección', url: '/components/form-selection', id: 3 },
+  { text: 'Carga de archivo', url: '/components/form-file', id: 4 },
+  { text: 'Validación', url: '/components/form-validation', id: 5 },
 ];
 export const organismsPages = [
   { text: 'Accesos (organismo)', url: '/components/access-organism', id: 1 },
@@ -66,10 +68,12 @@ export const gettingPages = [
 export const documentationPages = [
   { text: 'Cambios en componentes', url: '/documentation/update-component', id: 1 },
   { text: 'Clases disponibles', url: '/documentation/class-documentation', id: 2 },
-  { text: 'Versionados', url: '/documentation/releases', id: 3 },
+  { text: 'Versionados', url: '/documentation/releases', id: 4 },
 ];
 
 export const templates = [{ text: 'Plantillas', url: 'https://gcba.github.io/obelisco-demo/index.html', id: 1 }];
+
+export const patterns = [{ text: 'Construir un formulario', url: '/patterns', id: 1 }];
 
 export const versions = [
   { text: 'Obelisco v.2', url: '/documentation', id: 1 },
@@ -116,6 +120,14 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                 <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Empezar con Obelisco</p>
               </div>
               <NavLayout items={gettingPages} />
+            </div>
+          )}
+          {pathname.includes('/patterns') && (
+            <div className="nav-left sticky-nav h-auto">
+              <div className="nav-left-box-title">
+                <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Patrones</p>
+              </div>
+              <NavLayout items={patterns} />
             </div>
           )}
 

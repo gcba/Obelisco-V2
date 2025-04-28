@@ -464,8 +464,8 @@ input[type='search']::-moz-search-clear-button {
 }
 
 // Estilos visibles para validación
-.is-valid ~ .valid-feedback,
-.is-invalid ~ .invalid-feedback {
+.valid-feedback,
+.invalid-feedback {
   display: flex !important;
   justify-content: start;
   align-items: center;
@@ -478,11 +478,11 @@ input[type='search']::-moz-search-clear-button {
   padding-left: 44px; // Espacio para el ícono a la izq.
 }
 
-.is-valid ~ .valid-feedback {
+.valid-feedback {
   background-color: $green-50;
 }
 
-.is-invalid ~ .invalid-feedback {
+.invalid-feedback {
   background-color: $red-50;
   padding-left: 44px;
 }

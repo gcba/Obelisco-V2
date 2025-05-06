@@ -92,53 +92,34 @@ export const RADIO_NO_TEXT = `  <div class="form-radio">
     ></label>
   </div>
 `;
-export const RADIO_GROUP = `  <div className="form-label-container">
-    <label htmlFor="exampleInputRadioGroup" className="form-label">
-      Ejemplo Radio Group
-    </label>
-    <span className="badge-forms badge-optional-forms">Opcional</span>
+export const RADIO_GROUP = ` <div className="form-input-group" role="radioGroup" aria-labelledby="group-label">            
+    <div className="form-label-container">
+      <span id="group-label" className="form-label">Ejemplo Radio Group</span>
+      <span className="badge-forms badge-optional-forms">Opcional</span>
     </div>
     <p className="form-label-description">
-    Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de
-    no más de 3 líneas.
+      Este es un texto de ayuda que da más información sobre el Input. Es opcional, pero recomendado, y de
+      no más de 3 líneas.
     </p>
     <div className="form-radio">
-      <input
-        className="form-radio-input"
-        type="radio"
-        name="exampleInputRadioGroup"
-        id="opcion_1"
-        value="etiqueta"
-      />
-      <label className="form-radio-label" htmlFor="opcion_1">
-        Etiqueta 1
+      <input type="radio" name="professionRadio" value="radio 1" className="form-radio-input" id="radio_1" />
+      <label className="form-radio-label" htmlFor="radio_1">
+        Leer
       </label>
     </div>
     <div className="form-radio">
-      <input
-        className="form-radio-input"
-        type="radio"
-        name="professionRadio"
-        id="opcion_2"
-        value="etiqueta"
-
-      />
-      <label className="form-radio-label" htmlFor="opcion_2">
-        Etiqueta 2
+      <input type="radio" name="professionRadio" value="radio 2" className="form-radio-input" id="radio_2" />
+      <label className="form-radio-label" htmlFor="radio_2">
+        Escuchar música
       </label>
     </div>
     <div className="form-radio">
-      <input
-        className="form-radio-input"
-        type="radio"
-        name="professionRadio"
-        id="opcion_3"
-        value="etiqueta"
-      />
-      <label className="form-radio-label" htmlFor="opcion_3">
-        Etiqueta 3
+      <input type="radio" name="professionRadio" value="radio 3" className="form-radio-input" id="radio_3" />
+      <label className="form-radio-label" htmlFor="radio_3">
+        Hacer deporte
       </label>
-    </div>`
+    </div>
+  </div>`
 
 export const CHECKBOX = `  <p class="headline-md">Seleccioná una o varias opciones *</p>
   <div class="form-checkbox">
@@ -269,50 +250,31 @@ export const CHECKBOX_RADIO_POSITION = `  <div class="form-checkbox reverse">
     </label>
   </div>
 `;
-export const CHECKBOX_GROUP = `   <div className="form-label-container">
-      <label htmlFor="exampleInputCheckboxGroup" className="form-label">
-        Ejemplo Checkbox Group
-      </label>
-      <span className="badge-forms badge-optional-forms">Opcional</span>
-    </div>
-    <p className="form-label-description">
-      Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de
-      no más de 3 líneas.
-    </p>
-    <div className="form-checkbox">
-      <input
-        className="form-checkbox-input"
-        type="checkbox"
-        name="exampleInputCheckboxGroup"
-        id="etiqueta_1"
-        value="etiqueta_1"
-        defaultChecked={true}
-      />
-      <label className="form-checkbox-label" htmlFor="etiqueta_1">
-        Etiqueta 1
-      </label>
-    </div>
-    <div className="form-checkbox">
-      <input
-        className="form-checkbox-input"
-        type="checkbox"
-        name="exampleInputCheckboxGroup"
-        id="etiqueta_2"
-        value="etiqueta_2"
-      />
-      <label className="form-checkbox-label" htmlFor="etiqueta_2">
-        Etiqueta 2
-      </label>
-    </div>
-    <div className="form-checkbox">
-      <input
-        className="form-checkbox-input"
-        type="checkbox"
-        name="exampleInputCheckboxGroup"
-        id="etiqueta_3"
-        value="etiqueta_3"
-      />
-      <label className="form-checkbox-label" htmlFor="etiqueta_3">
-        Etiqueta 3
-      </label>
+export const CHECKBOX_GROUP = `<div className="form-input-group" role="checkboxGroup" aria-labelledby="group-label">
+      <div className="form-label-container">
+        <span id="group-label" className="form-label">Selecciona tus hobbies:</span>
+        <span className="badge-forms badge-optional-forms">Opcional</span>
+      </div>
+      <p className="form-label-description">
+        Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de
+        no más de 3 líneas.
+      </p>
+      <div className="form-checkbox">
+        <input type="checkbox" name="hobbies" value="leer" className="form-checkbox-input" id="checkbox_1" />
+        <label className="form-checkbox-label" htmlFor="checkbox_1">
+          Leer
+        </label>
+      </div>
+      <div className="form-checkbox">
+        <input type="checkbox" name="hobbies" value="musica" className="form-checkbox-input" id="checkbox_2" />
+        <label className="form-checkbox-label" htmlFor="checkbox_2">
+          Escuchar música
+        </label>
+      </div>
+      <div className="form-checkbox">
+        <input type="checkbox" name="hobbies" value="deporte" className="form-checkbox-input" id="checkbox_3" />
+        <label className="form-checkbox-label" htmlFor="checkbox_3">
+          Hacer deporte
+        </label>
+      </div>
     </div>`

@@ -168,20 +168,20 @@ const FormValidationDocs: React.FC = () => {
                 no más de 3 líneas.
               </p>
               <div className="form-radio">
-                <input type="radio" name="professionRadio" value="etiqueta 1" className="form-radio-input is-invalid" id="radio_1" />
+                <input type="radio" name="hobbieRadio" value="etiqueta 1" className="form-radio-input is-invalid" id="radio_1" />
                 <label className="form-radio-label" htmlFor="radio_1">
                   Leer
                 </label>
               </div>
               <div className="form-radio">
-                <input type="radio" name="professionRadio" value="etiqueta 2" className="form-radio-input is-invalid" id="radio_2" />
+                <input type="radio" name="hobbieRadio" value="etiqueta 2" className="form-radio-input is-invalid" id="radio_2" />
                 <label className="form-radio-label" htmlFor="radio_2">
                   Escuchar música
                 </label>
               </div>
 
               <div className="form-radio">
-                <input type="radio" name="professionRadio" value="etiqueta 3" className="form-radio-input is-invalid" id="radio_3" />
+                <input type="radio" name="hobbieRadio" value="etiqueta 3" className="form-radio-input is-invalid" id="radio_3" />
                 <label className="form-radio-label" htmlFor="radio_3">
                   Hacer deporte
                 </label>
@@ -200,9 +200,7 @@ const FormValidationDocs: React.FC = () => {
           <div className="container">
             <div className="col-12 col-lg-6">
               <div className="form-label-container">
-                <label htmlFor="exampleInputCheckboxGroup" className="form-label">
-                  Ejemplo Checkbox Group
-                </label>
+              <span id="group-label" className="form-label">Ejemplo Checkbox Group</span>
                 <span className="badge-forms badge-optional-forms">Opcional</span>
               </div>
               <p className="form-label-description">

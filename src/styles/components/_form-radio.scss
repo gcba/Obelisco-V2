@@ -11,7 +11,6 @@ $radio-image-disabled: url('data:image/svg+xml,<svg width="25" height="24" viewB
 
 $radio-image-disabled-selected: url('data:image/svg+xml,<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1.5" y="1" width="22" height="22" rx="11" fill="%23E6EBF0"/><rect x="1.5" y="1" width="22" height="22" rx="11" stroke="%239EAAB8" stroke-width="2"/><rect x="6.5" y="6" width="12" height="12" rx="6" fill="%239EAAB8"/></svg>');
 
-
 // Estilos para grupo de Chek y radio
 .form-input-group {
   display: flex;
@@ -204,4 +203,8 @@ $radio-image-disabled-selected: url('data:image/svg+xml,<svg width="25" height="
       border: none;
     }
   }
+}
+
+span.form-label {
+  display: inline-block;
 }

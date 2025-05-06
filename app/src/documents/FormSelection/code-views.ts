@@ -87,35 +87,35 @@ export const RADIO_NO_TEXT = `  <div class="form-radio">
     />
     <label
       class="form-radio-label"
-      htmlFor="radio-no-text"
+      for="radio-no-text"
       aria-label="Casilla múltiple sin texto"
     ></label>
   </div>
 `;
-export const RADIO_GROUP = ` <div className="form-input-group" role="radioGroup" aria-labelledby="group-label">            
-    <div className="form-label-container">
-      <span id="group-label" className="form-label">Ejemplo Radio Group</span>
-      <span className="badge-forms badge-optional-forms">Opcional</span>
+export const RADIO_GROUP = ` <div class="form-input-group" role="radioGroup" aria-labelledby="group-label">            
+    <div class="form-label-container">
+      <span id="group-label" class="form-label">Ejemplo Radio Group</span>
+      <span class="badge-forms badge-optional-forms">Opcional</span>
     </div>
-    <p className="form-label-description">
+    <p class="form-label-description">
       Este es un texto de ayuda que da más información sobre el Input. Es opcional, pero recomendado, y de
       no más de 3 líneas.
     </p>
-    <div className="form-radio">
-      <input type="radio" name="professionRadio" value="radio 1" className="form-radio-input" id="radio_1" />
-      <label className="form-radio-label" htmlFor="radio_1">
+    <div class="form-radio">
+      <input type="radio" name="professionRadioGroup" value="radio 1" class="form-radio-input" id="radio_1" />
+      <label class="form-radio-label" for="radio_1">
         Leer
       </label>
     </div>
-    <div className="form-radio">
-      <input type="radio" name="professionRadio" value="radio 2" className="form-radio-input" id="radio_2" />
-      <label className="form-radio-label" htmlFor="radio_2">
+    <div class="form-radio">
+      <input type="radio" name="professionRadioGroup" value="radio 2" class="form-radio-input" id="radio_2" />
+      <label class="form-radio-label" for="radio_2">
         Escuchar música
       </label>
     </div>
-    <div className="form-radio">
-      <input type="radio" name="professionRadio" value="radio 3" className="form-radio-input" id="radio_3" />
-      <label className="form-radio-label" htmlFor="radio_3">
+    <div class="form-radio">
+      <input type="radio" name="professionRadioGroup" value="radio 3" class="form-radio-input" id="radio_3" />
+      <label class="form-radio-label" for="radio_3">
         Hacer deporte
       </label>
     </div>
@@ -250,30 +250,30 @@ export const CHECKBOX_RADIO_POSITION = `  <div class="form-checkbox reverse">
     </label>
   </div>
 `;
-export const CHECKBOX_GROUP = `<div className="form-input-group" role="checkboxGroup" aria-labelledby="group-label">
-      <div className="form-label-container">
-        <span id="group-label" className="form-label">Selecciona tus hobbies:</span>
-        <span className="badge-forms badge-optional-forms">Opcional</span>
+export const CHECKBOX_GROUP = `<div class="form-input-group" role="checkboxGroup" aria-labelledby="group-label">
+      <div class="form-label-container">
+        <span id="group-label" class="form-label">Seleccioná tus hobbies:</span>
+        <span class="badge-forms badge-optional-forms">Opcional</span>
       </div>
-      <p className="form-label-description">
+      <p class="form-label-description">
         Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de
         no más de 3 líneas.
       </p>
-      <div className="form-checkbox">
-        <input type="checkbox" name="hobbies" value="leer" className="form-checkbox-input" id="checkbox_1" />
-        <label className="form-checkbox-label" htmlFor="checkbox_1">
+      <div class="form-checkbox">
+        <input type="checkbox" name="hobbies" value="leer" class="form-checkbox-input" id="checkbox_1" />
+        <label class="form-checkbox-label" for="checkbox_1">
           Leer
         </label>
       </div>
-      <div className="form-checkbox">
-        <input type="checkbox" name="hobbies" value="musica" className="form-checkbox-input" id="checkbox_2" />
-        <label className="form-checkbox-label" htmlFor="checkbox_2">
+      <div class="form-checkbox">
+        <input type="checkbox" name="hobbies" value="musica" class="form-checkbox-input" id="checkbox_2" />
+        <label class="form-checkbox-label" for="checkbox_2">
           Escuchar música
         </label>
       </div>
-      <div className="form-checkbox">
-        <input type="checkbox" name="hobbies" value="deporte" className="form-checkbox-input" id="checkbox_3" />
-        <label className="form-checkbox-label" htmlFor="checkbox_3">
+      <div class="form-checkbox">
+        <input type="checkbox" name="hobbies" value="deporte" class="form-checkbox-input" id="checkbox_3" />
+        <label class="form-checkbox-label" for="checkbox_3">
           Hacer deporte
         </label>
       </div>

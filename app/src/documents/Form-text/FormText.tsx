@@ -130,13 +130,13 @@ const FormTextDocs: React.FC = () => {
                   <label htmlFor="exampleFormControlTextarea1" className="form-label">
                     Nombre del campo
                   </label>
-                  <span className="form-label-number">0/100</span>
                 </div>
                 <textarea
                   className="form-control"
                   id="exampleFormControlTextarea1"
                   placeholder="Texto de ejemplo"
                 ></textarea>
+                  <span className="form-label-number">0/100</span>
               </div>
             </div>
           </CodeBox>

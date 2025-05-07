@@ -143,9 +143,9 @@ $badge-color: $body-color;
 .form-label-number {
   @extend .text-sm;
   grid-area: number;
-  display: inline-block;
-  margin-left: 8px;
-  margin-top: 0.125rem;
+  display: block;
+  margin-top: 0.25rem;
+  text-align: right;
 }
 
 .form-label-description {
@@ -161,10 +161,6 @@ $badge-color: $body-color;
   margin-bottom: 0.5rem;
   position: relative;
   grid-area: label;
-
-  &.disabled {
-    color: $slate-400;
-  }
 }
 
 // - Input file
@@ -173,12 +169,6 @@ input[type='file'] {
   color: $placeholder-color;
   font-family: Arial, sans-serif;
   height: 48px;
-
-  // cuerpo/m/regular
-  // font-family: 'Open Sans';
-  // font-size: 1rem;
-  // line-height: 1.5rem;
-  // font-weight: 400;
   @extend .text-md;
 }
 

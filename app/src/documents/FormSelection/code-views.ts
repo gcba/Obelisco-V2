@@ -49,7 +49,6 @@ export const RADIO = `  <p class="headline-md">Seleccioná una opción *</p>
     </label>
   </div>
 `;
-
 export const RADIO_DISABLED = `  <div class="form-radio">
     <input
         class="form-radio-input"
@@ -88,11 +87,40 @@ export const RADIO_NO_TEXT = `  <div class="form-radio">
     />
     <label
       class="form-radio-label"
-      htmlFor="radio-no-text"
+      for="radio-no-text"
       aria-label="Casilla múltiple sin texto"
     ></label>
   </div>
 `;
+export const RADIO_GROUP = ` <div class="form-input-group" role="radioGroup" aria-labelledby="group-label">            
+    <div class="form-label-container">
+      <span id="group-label" class="form-label">Ejemplo Radio Group</span>
+      <span class="badge-forms badge-optional-forms">Opcional</span>
+    </div>
+    <p class="form-label-description">
+      Este es un texto de ayuda que da más información sobre el Input. Es opcional, pero recomendado, y de
+      no más de 3 líneas.
+    </p>
+    <div class="form-radio">
+      <input type="radio" name="professionRadioGroup" value="radio 1" class="form-radio-input" id="radio_1" />
+      <label class="form-radio-label" for="radio_1">
+        Leer
+      </label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="professionRadioGroup" value="radio 2" class="form-radio-input" id="radio_2" />
+      <label class="form-radio-label" for="radio_2">
+        Escuchar música
+      </label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="professionRadioGroup" value="radio 3" class="form-radio-input" id="radio_3" />
+      <label class="form-radio-label" for="radio_3">
+        Hacer deporte
+      </label>
+    </div>
+  </div>`;
+
 export const CHECKBOX = `  <p class="headline-md">Seleccioná una o varias opciones *</p>
   <div class="form-checkbox">
     <input
@@ -222,3 +250,31 @@ export const CHECKBOX_RADIO_POSITION = `  <div class="form-checkbox reverse">
     </label>
   </div>
 `;
+export const CHECKBOX_GROUP = `<div class="form-input-group" role="checkboxGroup" aria-labelledby="group-label">
+      <div class="form-label-container">
+        <span id="group-label" class="form-label">Seleccioná tus hobbies:</span>
+        <span class="badge-forms badge-optional-forms">Opcional</span>
+      </div>
+      <p class="form-label-description">
+        Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de
+        no más de 3 líneas.
+      </p>
+      <div class="form-checkbox">
+        <input type="checkbox" name="hobbies" value="leer" class="form-checkbox-input" id="checkbox_1" />
+        <label class="form-checkbox-label" for="checkbox_1">
+          Leer
+        </label>
+      </div>
+      <div class="form-checkbox">
+        <input type="checkbox" name="hobbies" value="musica" class="form-checkbox-input" id="checkbox_2" />
+        <label class="form-checkbox-label" for="checkbox_2">
+          Escuchar música
+        </label>
+      </div>
+      <div class="form-checkbox">
+        <input type="checkbox" name="hobbies" value="deporte" class="form-checkbox-input" id="checkbox_3" />
+        <label class="form-checkbox-label" for="checkbox_3">
+          Hacer deporte
+        </label>
+      </div>
+    </div>`;

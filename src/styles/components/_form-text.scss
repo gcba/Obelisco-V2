@@ -143,15 +143,14 @@ $badge-color: $body-color;
 .form-label-number {
   @extend .text-sm;
   grid-area: number;
-  display: inline-block;
-  margin-left: 8px;
-  margin-top: 0.125rem;
+  display: block;
+  margin-top: 0.25rem;
+  text-align: right;
 }
 
 .form-label-description {
   @extend .text-sm;
-  margin-top: 4px;
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
   grid-area: description;
   display: grid;
 }
@@ -159,13 +158,9 @@ $badge-color: $body-color;
 .form-label {
   @extend .headline-md;
   color: $blue-900;
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
   position: relative;
   grid-area: label;
-
-  &.disabled {
-    color: $slate-400;
-  }
 }
 
 // - Input file
@@ -174,12 +169,6 @@ input[type='file'] {
   color: $placeholder-color;
   font-family: Arial, sans-serif;
   height: 48px;
-
-  // cuerpo/m/regular
-  // font-family: 'Open Sans';
-  // font-size: 1rem;
-  // line-height: 1.5rem;
-  // font-weight: 400;
   @extend .text-md;
 }
 
@@ -227,7 +216,6 @@ input[type='file']:disabled::-webkit-file-upload-button {
   outline: 0.125rem solid $body-color;
   outline-offset: 0;
   box-sizing: border-box;
-  margin: 8px 0;
 
   &::placeholder {
     color: $placeholder-color;
@@ -451,24 +439,10 @@ input[type='search']::-moz-search-clear-button {
   display: none;
 }
 
-// Estilos para input Search -
-
-// - Estilos para validación
+// Estilos visibles para validación
 .valid-feedback,
 .invalid-feedback {
-  display: none;
-
-  p {
-    @extend .text-sm;
-    margin-bottom: 0;
-    color: $body-color;
-  }
-}
-
-// Estilos visibles para validación
-.is-valid ~ .valid-feedback,
-.is-invalid ~ .invalid-feedback {
-  display: flex !important;
+  display: flex;
   justify-content: start;
   align-items: center;
   padding: 8px 12px;
@@ -477,14 +451,21 @@ input[type='search']::-moz-search-clear-button {
   font-size: 14px;
   color: $body-color;
   position: relative;
-  padding-left: 44px; // Espacio para el ícono a la izq.
+  padding-left: 44px;
+  margin-top: 0.5rem;
+
+  p {
+    @extend .text-sm;
+    margin-bottom: 0;
+    color: $body-color;
+  }
 }
 
-.is-valid ~ .valid-feedback {
+.valid-feedback {
   background-color: $green-50;
 }
 
-.is-invalid ~ .invalid-feedback {
+.invalid-feedback {
   background-color: $red-50;
   padding-left: 44px;
 }
@@ -523,4 +504,4 @@ input[type='search']::-moz-search-clear-button {
   }
 }
 
-//Input con fondo
+//Input con fondo -

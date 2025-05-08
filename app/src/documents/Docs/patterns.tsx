@@ -193,7 +193,7 @@ const PatternsComponents: React.FC = () => {
       ),
     },
     {
-      subtitle: 'Inputs de texto',
+      subtitleBold: 'Inputs de texto',
       content: (
         <>
           <p className="text-md">
@@ -340,7 +340,7 @@ const PatternsComponents: React.FC = () => {
       ),
     },
     {
-      subtitle: 'Input de búsqueda',
+      subtitleBold: 'Input de búsqueda',
       content: (
         <>
           <p className="text-md">
@@ -368,7 +368,7 @@ const PatternsComponents: React.FC = () => {
       ),
     },
     {
-      subtitle: 'Inputs de selección',
+      subtitleBold: 'Inputs de selección',
       content: (
         <>
           <p className="text-md">
@@ -436,7 +436,7 @@ const PatternsComponents: React.FC = () => {
       ),
     },
     {
-      subtitle: 'Input de carga de archivo',
+      subtitleBold: 'Input de carga de archivo',
       content: (
         <>
           <p className="text-md">

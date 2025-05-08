@@ -136,7 +136,7 @@ const FormTextDocs: React.FC = () => {
                   id="exampleFormControlTextarea1"
                   placeholder="Texto de ejemplo"
                 ></textarea>
-                  <span className="form-label-number">0/100</span>
+                <span className="form-label-number">0/100</span>
               </div>
             </div>
           </CodeBox>

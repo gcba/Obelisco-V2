@@ -119,7 +119,7 @@ export const RADIO_GROUP = ` <div class="form-input-group" role="radioGroup" ari
         Hacer deporte
       </label>
     </div>
-  </div>`
+  </div>`;
 
 export const CHECKBOX = `  <p class="headline-md">Seleccioná una o varias opciones *</p>
   <div class="form-checkbox">
@@ -277,4 +277,4 @@ export const CHECKBOX_GROUP = `<div class="form-input-group" role="checkboxGroup
           Hacer deporte
         </label>
       </div>
-    </div>`
+    </div>`;

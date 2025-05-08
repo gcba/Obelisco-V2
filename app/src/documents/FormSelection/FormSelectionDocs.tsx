@@ -12,7 +12,7 @@ import {
   RADIO,
   RADIO_DISABLED,
   RADIO_GROUP,
-  RADIO_NO_TEXT
+  RADIO_NO_TEXT,
 } from './code-views';
 
 const FormSelectionDocs: React.FC = () => {
@@ -84,39 +84,59 @@ const FormSelectionDocs: React.FC = () => {
       subtitle: 'Radio Group',
       content: (
         <CodeBox codeHTML={RADIO_GROUP}>
-        <div className="container"> 
-          <div className="col-12 col-lg-6">
-            <div className="form-input-group" role="radioGroup" aria-labelledby="group-label">            
-              <div className="form-label-container">
-                <span id="group-label" className="form-label">Ejemplo Radio Group</span>
-                <span className="badge-forms badge-optional-forms">Opcional</span>
-              </div>
-              <p className="form-label-description">
-                Este es un texto de ayuda que da más información sobre el Input. Es opcional, pero recomendado, y de
-                no más de 3 líneas.
-              </p>
-              <div className="form-radio">
-                <input type="radio" name="professionRadioGroup" value="radio 1" className="form-radio-input" id="radio_1" />
-                <label className="form-radio-label" htmlFor="radio_1">
-                  Leer
-                </label>
-              </div>
-              <div className="form-radio">
-                <input type="radio" name="professionRadioGroup" value="radio 2" className="form-radio-input" id="radio_2" />
-                <label className="form-radio-label" htmlFor="radio_2">
-                  Escuchar música
-                </label>
-              </div>
-              <div className="form-radio">
-                <input type="radio" name="professionRadioGroup" value="radio 3" className="form-radio-input" id="radio_3" />
-                <label className="form-radio-label" htmlFor="radio_3">
-                  Hacer deporte
-                </label>
+          <div className="container">
+            <div className="col-12 col-lg-6">
+              <div className="form-input-group" role="radioGroup" aria-labelledby="group-label">
+                <div className="form-label-container">
+                  <span id="group-label" className="form-label">
+                    Ejemplo Radio Group
+                  </span>
+                  <span className="badge-forms badge-optional-forms">Opcional</span>
+                </div>
+                <p className="form-label-description">
+                  Este es un texto de ayuda que da más información sobre el Input. Es opcional, pero recomendado, y de
+                  no más de 3 líneas.
+                </p>
+                <div className="form-radio">
+                  <input
+                    type="radio"
+                    name="professionRadioGroup"
+                    value="radio 1"
+                    className="form-radio-input"
+                    id="radio_1"
+                  />
+                  <label className="form-radio-label" htmlFor="radio_1">
+                    Leer
+                  </label>
+                </div>
+                <div className="form-radio">
+                  <input
+                    type="radio"
+                    name="professionRadioGroup"
+                    value="radio 2"
+                    className="form-radio-input"
+                    id="radio_2"
+                  />
+                  <label className="form-radio-label" htmlFor="radio_2">
+                    Escuchar música
+                  </label>
+                </div>
+                <div className="form-radio">
+                  <input
+                    type="radio"
+                    name="professionRadioGroup"
+                    value="radio 3"
+                    className="form-radio-input"
+                    id="radio_3"
+                  />
+                  <label className="form-radio-label" htmlFor="radio_3">
+                    Hacer deporte
+                  </label>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </CodeBox>
+        </CodeBox>
       ),
     },
     {
@@ -248,7 +268,9 @@ const FormSelectionDocs: React.FC = () => {
             <div className="col-12 col-lg-6">
               <div className="form-input-group" role="checkboxGroup" aria-labelledby="group-label">
                 <div className="form-label-container">
-                  <span id="group-label" className="form-label">Seleccioná tus hobbies:</span>
+                  <span id="group-label" className="form-label">
+                    Seleccioná tus hobbies:
+                  </span>
                   <span className="badge-forms badge-optional-forms">Opcional</span>
                 </div>
                 <p className="form-label-description">
@@ -262,13 +284,25 @@ const FormSelectionDocs: React.FC = () => {
                   </label>
                 </div>
                 <div className="form-checkbox">
-                  <input type="checkbox" name="hobbies" value="musica" className="form-checkbox-input" id="checkbox_2" />
+                  <input
+                    type="checkbox"
+                    name="hobbies"
+                    value="musica"
+                    className="form-checkbox-input"
+                    id="checkbox_2"
+                  />
                   <label className="form-checkbox-label" htmlFor="checkbox_2">
                     Escuchar música
                   </label>
                 </div>
                 <div className="form-checkbox">
-                  <input type="checkbox" name="hobbies" value="deporte" className="form-checkbox-input" id="checkbox_3" />
+                  <input
+                    type="checkbox"
+                    name="hobbies"
+                    value="deporte"
+                    className="form-checkbox-input"
+                    id="checkbox_3"
+                  />
                   <label className="form-checkbox-label" htmlFor="checkbox_3">
                     Hacer deporte
                   </label>

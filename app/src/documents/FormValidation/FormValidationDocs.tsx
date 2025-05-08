@@ -156,100 +156,121 @@ const FormValidationDocs: React.FC = () => {
           </CodeBox>
           <br />
           <CodeBox codeHTML={INPUT_VALIDATION_RADIO_GROUP}>
-          <div className="container"> 
-          <div className="col-12 col-lg-6">
-            <div className="form-input-group" role="radioGroup" aria-labelledby="group-label">            
-              <div className="form-label-container">
-                <span id="group-label" className="form-label">Ejemplo Radio Group</span>
-                <span className="badge-forms badge-required-forms">Requerido</span>
-              </div>
-              <p className="form-label-description">
-                Este es un texto de ayuda que da más información sobre el Input. Es opcional, pero recomendado, y de
-                no más de 3 líneas.
-              </p>
-              <div className="form-radio">
-                <input type="radio" name="hobbieRadio" value="etiqueta 1" className="form-radio-input is-invalid" id="radio_1" />
-                <label className="form-radio-label" htmlFor="radio_1">
-                  Leer
-                </label>
-              </div>
-              <div className="form-radio">
-                <input type="radio" name="hobbieRadio" value="etiqueta 2" className="form-radio-input is-invalid" id="radio_2" />
-                <label className="form-radio-label" htmlFor="radio_2">
-                  Escuchar música
-                </label>
-              </div>
+            <div className="container">
+              <div className="col-12 col-lg-6">
+                <div className="form-input-group" role="radioGroup" aria-labelledby="group-label">
+                  <div className="form-label-container">
+                    <span id="group-label" className="form-label">
+                      Ejemplo Radio Group
+                    </span>
+                    <span className="badge-forms badge-required-forms">Requerido</span>
+                  </div>
+                  <p className="form-label-description">
+                    Este es un texto de ayuda que da más información sobre el Input. Es opcional, pero recomendado, y de
+                    no más de 3 líneas.
+                  </p>
+                  <div className="form-radio">
+                    <input
+                      type="radio"
+                      name="hobbieRadio"
+                      value="etiqueta 1"
+                      className="form-radio-input is-invalid"
+                      id="radio_1"
+                    />
+                    <label className="form-radio-label" htmlFor="radio_1">
+                      Leer
+                    </label>
+                  </div>
+                  <div className="form-radio">
+                    <input
+                      type="radio"
+                      name="hobbieRadio"
+                      value="etiqueta 2"
+                      className="form-radio-input is-invalid"
+                      id="radio_2"
+                    />
+                    <label className="form-radio-label" htmlFor="radio_2">
+                      Escuchar música
+                    </label>
+                  </div>
 
-              <div className="form-radio">
-                <input type="radio" name="hobbieRadio" value="etiqueta 3" className="form-radio-input is-invalid" id="radio_3" />
-                <label className="form-radio-label" htmlFor="radio_3">
-                  Hacer deporte
-                </label>
-              </div>
+                  <div className="form-radio">
+                    <input
+                      type="radio"
+                      name="hobbieRadio"
+                      value="etiqueta 3"
+                      className="form-radio-input is-invalid"
+                      id="radio_3"
+                    />
+                    <label className="form-radio-label" htmlFor="radio_3">
+                      Hacer deporte
+                    </label>
+                  </div>
 
-              <div className="invalid-feedback">
-                <p>Este es un mensaje de error para un campo inválido.</p>
+                  <div className="invalid-feedback">
+                    <p>Este es un mensaje de error para un campo inválido.</p>
+                  </div>
+                </div>
               </div>
-
             </div>
-          </div>
-        </div>
           </CodeBox>
           <br />
           <CodeBox codeHTML={INPUT_VALIDATION_CHECKBOX_GROUP}>
-          <div className="container">
-            <div className="col-12 col-lg-6">
-              <div className="form-label-container">
-              <span id="group-label" className="form-label">Ejemplo Checkbox Group</span>
-                <span className="badge-forms badge-optional-forms">Opcional</span>
+            <div className="container">
+              <div className="col-12 col-lg-6">
+                <div className="form-label-container">
+                  <span id="group-label" className="form-label">
+                    Ejemplo Checkbox Group
+                  </span>
+                  <span className="badge-forms badge-optional-forms">Opcional</span>
+                </div>
+                <p className="form-label-description">
+                  Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de
+                  no más de 3 líneas.
+                </p>
+                <div className="form-checkbox">
+                  <input
+                    className="form-checkbox-input is-invalid"
+                    type="checkbox"
+                    name="exampleInputCheckboxGroup"
+                    id="checkbox_1"
+                    value="checkbox_1"
+                    defaultChecked={false}
+                  />
+                  <label className="form-checkbox-label" htmlFor="checkbox_1">
+                    Etiqueta 1
+                  </label>
+                </div>
+                <div className="form-checkbox">
+                  <input
+                    className="form-checkbox-input is-invalid"
+                    type="checkbox"
+                    name="exampleInputCheckboxGroup"
+                    id="checkbox_2"
+                    value="checkbox_2"
+                  />
+                  <label className="form-checkbox-label" htmlFor="checkbox_2">
+                    Etiqueta 2
+                  </label>
+                </div>
+                <div className="form-checkbox">
+                  <input
+                    className="form-checkbox-input is-invalid"
+                    type="checkbox"
+                    name="exampleInputCheckboxGroup"
+                    id="checkbox_3"
+                    value="checkbox_3"
+                  />
+                  <label className="form-checkbox-label" htmlFor="checkbox_3">
+                    Etiqueta 3
+                  </label>
+                </div>
+                <div className="invalid-feedback">
+                  <p>Este es un mensaje de error para un campo inválido. </p>
+                </div>
               </div>
-              <p className="form-label-description">
-                Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de
-                no más de 3 líneas.
-              </p>
-              <div className="form-checkbox">
-                <input
-                  className="form-checkbox-input is-invalid"
-                  type="checkbox"
-                  name="exampleInputCheckboxGroup"
-                  id="checkbox_1"
-                  value="checkbox_1"
-                  defaultChecked={false}
-                />
-                <label className="form-checkbox-label" htmlFor="checkbox_1">
-                  Etiqueta 1
-                </label>
-              </div>
-              <div className="form-checkbox">
-                <input
-                  className="form-checkbox-input is-invalid"
-                  type="checkbox"
-                  name="exampleInputCheckboxGroup"
-                  id="checkbox_2"
-                  value="checkbox_2"
-                />
-                <label className="form-checkbox-label" htmlFor="checkbox_2">
-                  Etiqueta 2
-                </label>
-              </div>
-              <div className="form-checkbox">
-                <input
-                  className="form-checkbox-input is-invalid"
-                  type="checkbox"
-                  name="exampleInputCheckboxGroup"
-                  id="checkbox_3"
-                  value="checkbox_3"
-                />
-                <label className="form-checkbox-label" htmlFor="checkbox_3">
-                  Etiqueta 3
-                </label>
-              </div>
-              <div className="invalid-feedback">
-                <p>Este es un mensaje de error para un campo inválido. </p>
-              </div>
-          </div>
-        </div>
-        </CodeBox>
+            </div>
+          </CodeBox>
         </>
       ),
     },

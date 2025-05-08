@@ -73,7 +73,10 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
                   )}
 
                   {section.subtitleBold && (
-                    <h3 className="text-xl mb-2 fw-semibold" style={{ marginLeft: '-16px', marginBottom: '8px !important' }}>
+                    <h3
+                      className="text-xl mb-2 fw-semibold"
+                      style={{ marginLeft: '-16px', marginBottom: '8px !important' }}
+                    >
                       <ScrollspySubtitle text={section.subtitleBold} />
                     </h3>
                   )}
@@ -102,7 +105,9 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
                     <a href={`#${section.id || `section-${type}-${index + 1}`}`} className="text-sm">
                       {section.title && section.title}
                       {section.subtitle && <ScrollspySubtitle text={section.subtitle} ScrollspyComponent={true} />}
-                      {section.subtitleBold && <ScrollspySubtitle text={section.subtitleBold} ScrollspyComponent={true} />}
+                      {section.subtitleBold && (
+                        <ScrollspySubtitle text={section.subtitleBold} ScrollspyComponent={true} />
+                      )}
                     </a>
                   </li>
                 ))}

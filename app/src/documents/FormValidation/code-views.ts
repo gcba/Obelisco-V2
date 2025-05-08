@@ -173,4 +173,4 @@ export const INPUT_VALIDATION_CHECKBOX_GROUP = `     <div class="form-label-cont
               </div>
               <div class="invalid-feedback">
                 <p>Este es un mensaje de error para un campo inválido. </p>
-              </div>`
+              </div>`;

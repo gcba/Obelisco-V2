@@ -453,6 +453,7 @@ input[type='search']::-moz-search-clear-button {
   position: relative;
   padding-left: 44px;
   margin-top: 0.5rem;
+
   p {
     @extend .text-sm;
     margin-bottom: 0;
@@ -502,4 +503,5 @@ input[type='search']::-moz-search-clear-button {
     }
   }
 }
+
 //Input con fondo -

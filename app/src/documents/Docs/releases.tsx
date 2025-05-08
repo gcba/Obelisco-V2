@@ -19,6 +19,19 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
+      title: 'Versión 1.5.4',
+      firstTitle: true,
+      content: (
+        <ul className="docs-list">
+          <p>La versión 1.5.4 contiene lo siguiente: </p>
+          <li>
+            Se corrigen estilos de la clase <code>form-control</code>
+          </li>
+          <li>Se agrega la variante en formulario de selección de <i>radio-group</i> y <i>checkbox-group</i></li>
+        </ul>
+      ),
+    },
+    {
       title: 'Versión 1.5.3',
       firstTitle: true,
       content: (
@@ -65,7 +78,7 @@ const ReleasesComponents: React.FC = () => {
           <li>Se modifica el tamaño del ícono en botón mediano a 18px. </li>
           <li>
             En el organismo Pie de página <span className="fst-italic">(Footer)</span>, se coloca el ícono de la red
-            social &quot;X&quot;, por medio de la clase <code>.social-x </code> antes utilizada en una etiqueta
+            social &quot;X&quot;, por medio de la clase <code>.social-x </code> antes utilizada en una etiqueta{' '}
             <code>img</code>.
           </li>
         </ul>
@@ -113,7 +126,7 @@ const ReleasesComponents: React.FC = () => {
           'En esta sección se encuentran los versionados de la librería y la documentación de los cambios que se hicieron sobre cada versión de Obelisco.',
           <>
             <p>
-              Versión actual:
+              Versión actual: {' '}
               <Link href="https://github.com/gcba/Obelisco-V2/releases" target="blank">
                 {versionPages.text}
               </Link>

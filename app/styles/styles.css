@@ -14268,26 +14268,22 @@ a.list-group-item.item-sm {
 
 .form-label-number {
   grid-area: number;
-  display: inline-block;
-  margin-left: 8px;
-  margin-top: 0.125rem;
+  display: block;
+  margin-top: 0.25rem;
+  text-align: right;
 }
 
 .form-label-description {
-  margin-top: 4px;
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
   grid-area: description;
   display: grid;
 }
 
 .form-label {
   color: #101e37;
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
   position: relative;
   grid-area: label;
-}
-.form-label.disabled {
-  color: #9eaab8;
 }
 
 input[type=file] {
@@ -14335,7 +14331,6 @@ input[type=file]:disabled::-webkit-file-upload-button {
   outline: 0.125rem solid #101e37;
   outline-offset: 0;
   box-sizing: border-box;
-  margin: 8px 0;
 }
 .form-control::placeholder {
   color: #5c6a7a;
@@ -14519,17 +14514,7 @@ input[type=search]::-moz-search-clear-button {
 
 .valid-feedback,
 .invalid-feedback {
-  display: none;
-}
-.valid-feedback p,
-.invalid-feedback p {
-  margin-bottom: 0;
-  color: #101e37;
-}
-
-.is-valid ~ .valid-feedback,
-.is-invalid ~ .invalid-feedback {
-  display: flex !important;
+  display: flex;
   justify-content: start;
   align-items: center;
   padding: 8px 12px;
@@ -14539,13 +14524,19 @@ input[type=search]::-moz-search-clear-button {
   color: #101e37;
   position: relative;
   padding-left: 44px;
+  margin-top: 0.5rem;
+}
+.valid-feedback p,
+.invalid-feedback p {
+  margin-bottom: 0;
+  color: #101e37;
 }
 
-.is-valid ~ .valid-feedback {
+.valid-feedback {
   background-color: #f2fbf5;
 }
 
-.is-invalid ~ .invalid-feedback {
+.invalid-feedback {
   background-color: #fbefef;
   padding-left: 44px;
 }
@@ -15827,6 +15818,11 @@ a.badge-danger:focus, a.badge-danger.focus {
   width: 100%;
 }
 
+.form-input-group {
+  display: flex;
+  flex-direction: column;
+}
+
 .form-radio {
   position: relative;
   width: fit-content;
@@ -15869,6 +15865,7 @@ a.badge-danger:focus, a.badge-danger.focus {
   left: -2px;
   margin: 0.125rem 0.625rem;
   background-color: transparent;
+  background-size: auto;
 }
 .form-radio .form-radio-input:focus {
   outline: none;
@@ -15993,6 +15990,7 @@ a.badge-danger:focus, a.badge-danger.focus {
   left: -2px;
   margin: 0.125rem 0.625rem;
   background-color: transparent;
+  background-size: auto;
 }
 .form-checkbox .form-checkbox-input:focus {
   outline: none;
@@ -16067,6 +16065,10 @@ a.badge-danger:focus, a.badge-danger.focus {
   background-color: transparent;
   background-image: url('data:image/svg+xml,<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" width="24" height="24" rx="4" fill="%23E6EBF0"/><path d="M10.0962 14.9061L7.49367 12.3036C7.20117 12.0111 6.72867 12.0111 6.43617 12.3036C6.14367 12.5961 6.14367 13.0686 6.43617 13.3611L9.57117 16.4961C9.86367 16.7886 10.3362 16.7886 10.6287 16.4961L18.5637 8.56105C18.8562 8.26855 18.8562 7.79605 18.5637 7.50355C18.2712 7.21105 17.7987 7.21105 17.5062 7.50355L10.0962 14.9061Z" fill="%239EAAB8"/></svg>');
   border: none;
+}
+
+span.form-label {
+  display: inline-block;
 }
 
 .progress {

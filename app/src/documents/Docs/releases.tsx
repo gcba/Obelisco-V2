@@ -27,7 +27,9 @@ const ReleasesComponents: React.FC = () => {
           <li>
             Se corrigen estilos de la clase <code>form-control</code>
           </li>
-          <li>Se agrega la variante en formulario de selección de <i>radio-group</i> y <i>checkbox-group</i></li>
+          <li>
+            Se agrega la variante en formulario de selección de <i>radio-group</i> y <i>checkbox-group</i>
+          </li>
         </ul>
       ),
     },
@@ -126,7 +128,7 @@ const ReleasesComponents: React.FC = () => {
           'En esta sección se encuentran los versionados de la librería y la documentación de los cambios que se hicieron sobre cada versión de Obelisco.',
           <>
             <p>
-              Versión actual: {' '}
+              Versión actual:{' '}
               <Link href="https://github.com/gcba/Obelisco-V2/releases" target="blank">
                 {versionPages.text}
               </Link>

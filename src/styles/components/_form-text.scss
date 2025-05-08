@@ -439,24 +439,10 @@ input[type='search']::-moz-search-clear-button {
   display: none;
 }
 
-// Estilos para input Search -
-
-// - Estilos para validación
-.valid-feedback,
-.invalid-feedback {
-  display: none;
-  margin-top: 0.5rem;
-  p {
-    @extend .text-sm;
-    margin-bottom: 0;
-    color: $body-color;
-  }
-}
-
 // Estilos visibles para validación
 .valid-feedback,
 .invalid-feedback {
-  display: flex !important;
+  display: flex;
   justify-content: start;
   align-items: center;
   padding: 8px 12px;
@@ -465,7 +451,13 @@ input[type='search']::-moz-search-clear-button {
   font-size: 14px;
   color: $body-color;
   position: relative;
-  padding-left: 44px; // Espacio para el ícono a la izq.
+  padding-left: 44px;
+  margin-top: 0.5rem;
+  p {
+    @extend .text-sm;
+    margin-bottom: 0;
+    color: $body-color;
+  }
 }
 
 .valid-feedback {
@@ -510,5 +502,4 @@ input[type='search']::-moz-search-clear-button {
     }
   }
 }
-
-//Input con fondo
+//Input con fondo -

@@ -36,13 +36,13 @@ $badge-color: $body-color;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 8px; //agrego lauti
+  margin-left: 0.5rem;
 }
 
 .badge-required-forms {
   color: $body-color;
   background-color: $purple-100;
-  display: inline-grid; //agrego lauti
+  display: inline-grid;
 }
 
 .badge-optional-forms {
@@ -73,13 +73,13 @@ $badge-color: $body-color;
   .field-wrapper-prefix {
     margin-right: 0.5rem;
     border-right: 2px solid black;
-    padding-right: 8px;
+    padding-right: 0.5rem;
   }
 
   .field-wrapper-suffix {
     margin-left: 0.5rem;
     border-left: 2px solid black;
-    padding-left: 8px;
+    padding-left: 0.5rem;
   }
 
   .field-input {

@@ -14177,7 +14177,7 @@ a.list-group-item.item-sm {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 8px;
+  margin-left: 0.5rem;
 }
 
 .badge-required-forms, .badge-optional-forms {
@@ -14209,12 +14209,12 @@ a.list-group-item.item-sm {
 .field-wrapper .field-wrapper-prefix {
   margin-right: 0.5rem;
   border-right: 2px solid black;
-  padding-right: 8px;
+  padding-right: 0.5rem;
 }
 .field-wrapper .field-wrapper-suffix {
   margin-left: 0.5rem;
   border-left: 2px solid black;
-  padding-left: 8px;
+  padding-left: 0.5rem;
 }
 .field-wrapper .field-input {
   flex: 1 1 auto;

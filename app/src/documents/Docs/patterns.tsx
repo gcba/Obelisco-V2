@@ -28,7 +28,7 @@ const PatternsComponents: React.FC = () => {
                 <li>Para completar una transacción.</li>
                 <li>Para configurar o modificar preferencias y datos de perfil.</li>
                 <li>Para responder encuestas de feedback. </li>
-              </ul>              
+              </ul>
             </div>
           </div>
         </>
@@ -552,8 +552,8 @@ const PatternsComponents: React.FC = () => {
       content: (
         <>
           <p className="text-md">
-            La estructura principal del formulario se define a partir del contenedor <code>CLASE</code> para organizar todo lo que 
-            forma parte del formulario: campos, títulos y botones. Este contenedor se adapta al ancho máximo disponible para cada 
+            La estructura principal del formulario se define a partir del contenedor <code>CLASE</code> para organizar todo lo que
+            forma parte del formulario: campos, títulos y botones. Este contenedor se adapta al ancho máximo disponible para cada
             dispositivo:
           </p>
           <div className="list-informative">
@@ -572,13 +572,13 @@ const PatternsComponents: React.FC = () => {
       content: (
         <>
           <p className="text-md">
-            <strong className="fw-semibold">Organizar los campos en una sola columna, uno debajo del otro</strong>. Este orden respeta el flujo natural de lectura y hace 
+            <strong className="fw-semibold">Organizar los campos en una sola columna, uno debajo del otro</strong>. Este orden respeta el flujo natural de lectura y hace
             que el contenido sea más fácil de entender, y también ayuda a reducir la carga mental y a procesar la información paso a paso.
           </p>
           <p className="fw-bold">Ancho del campo</p> {/* VER CON EL EQUIPO */}
-            <p>El ancho de un campo debe ser suficiente para que la persona usuaria considere la extensión del contenido solicitado, 
-              brindándole una idea precisa de la longitud de caracteres y el tipo de contenido que acepta el campo. 
-            </p>
+          <p className='mb-4' >El ancho de un campo debe ser suficiente para que la persona usuaria considere la extensión del contenido solicitado,
+            brindándole una idea precisa de la longitud de caracteres y el tipo de contenido que acepta el campo.
+          </p>
           <div className="mb-3">
             <Image
               src={`${basePath}/images/patterns/diagrams/disposicion.svg`}
@@ -597,7 +597,7 @@ const PatternsComponents: React.FC = () => {
         <>
           <p className="text-md">
             Los campos del formulario que comparten un propósito común, como &quot;Ciudad&quot; y &quot;Código postal&quot;, pueden
-            <strong> agruparse de forma horizontal </strong>dentro de un contenedor <i className='text-lg'>fieldset</i> para mejorar la comprensión visual 
+            <strong> agruparse de forma horizontal </strong>dentro de un contenedor <i className='text-lg'>fieldset</i> para mejorar la comprensión visual
             y facilitar la navegación a las personas que utilizan tecnologías de asistencia.
           </p>
           {/* <Image
@@ -608,8 +608,8 @@ const PatternsComponents: React.FC = () => {
             className="img-fluid"
           /> */}
           <div className="pt-3">
-            <p className="text-xl">Ejemplos de uso</p>
-            <div style={{ marginTop: '32px' }}>
+            <p className="text-xl mb-4">Ejemplos de uso</p>
+            <div className='mb-4' >
               <Image
                 src={`${basePath}/images/patterns/diagrams/uso_incorrecto_1.svg`}
                 alt="Mala práctica de uso ejemplo 1"
@@ -622,7 +622,7 @@ const PatternsComponents: React.FC = () => {
                 <p className="mb-0">Evitar un conjunto de campos en dos columnas y otro conjunto en tres columnas.</p>
               </div>
             </div>
-            <div style={{ marginTop: '32px' }}>
+            <div className='mb-4'>
               <Image
                 src={`${basePath}/images/patterns/diagrams/uso_incorrecto_2.svg`}
                 alt="Mala práctica de uso ejemplo 2"
@@ -632,12 +632,12 @@ const PatternsComponents: React.FC = () => {
               />
               <div className="d-flex pt-2">
                 <span className="material-symbols-rounded text-danger">close</span>
-                <p className="mb-0">No exceder a más de tres campos en un conjunto horizontal. En la mayoría de los casos, 
+                <p className="mb-0">No exceder a más de tres campos en un conjunto horizontal. En la mayoría de los casos,
                   es recomendable limitar a dos el número de columnas de un formulario o sección.
                 </p>
               </div>
             </div>
-            <div style={{ marginTop: '32px' }}>
+            <div className='mb-4'>
               <Image
                 src={`${basePath}/images/patterns/diagrams/uso_correcto.svg`}
                 alt="Buena práctica de uso"
@@ -659,20 +659,20 @@ const PatternsComponents: React.FC = () => {
       content: (
         <>
           <p>
-            En formularios integrados en la página, donde no se requiere continuidad o navegación progresiva, 
-            las acciones principales se alinearan a la izquierda del cuerpo de la página y al final del formulario. 
+            En formularios integrados en la página, donde no se requiere continuidad o navegación progresiva,
+            las acciones principales se alinearan a la izquierda del cuerpo de la página y al final del formulario.
           </p>
-          <p>
-            Podés consultar la <a href="https://gcba.github.io/Obelisco-V2/components/button" target="_blank"> documentación de 
-            Botones </a> para conocer las combinaciones y alineaciones recomendadas en dispositivos desktop, tablet y mobile.
+          <p className='mb-4' >
+            Podés consultar la <a href="https://gcba.github.io/Obelisco-V2/components/button" target="_blank"> documentación de
+              Botones </a> para conocer las combinaciones y alineaciones recomendadas en dispositivos desktop, tablet y mobile.
           </p>
-           <Image
-              src={`${basePath}/images/patterns/diagrams/alineacion_botones.svg`}
-              alt="Mala práctica de uso ejemplo 2"
-              width="800"
-              height="242"
-              className="img-fluid"
-            />
+          <Image
+            src={`${basePath}/images/patterns/diagrams/alineacion_botones.svg`}
+            alt="Mala práctica de uso ejemplo 2"
+            width="800"
+            height="242"
+            className="img-fluid"
+          />
         </>
       )
     },
@@ -681,12 +681,12 @@ const PatternsComponents: React.FC = () => {
       content: (
         <>
           <p>
-            Para mantener una estructura clara, legible y alineada al sistema de grillas, recomendamos los siguientes espaciados 
+            Para mantener una estructura clara, legible y alineada al sistema de grillas, recomendamos los siguientes espaciados
             entre campos para dispositivos desktop:
           </p>
           <div className="list-informative pb-4">
             <ul className="list-informative-bullet">
-              <li> 
+              <li>
                 <strong>Espaciado vertical de 24px:</strong> Usado para separar campos dispuestos uno debajo del otro.
               </li>
               <li>
@@ -701,7 +701,7 @@ const PatternsComponents: React.FC = () => {
             height="242"
             className="img-fluid"
           />
-          <p className="mt-4">
+          <p className="mt-4" style={{ marginBottom: '12px' }} >
             Para dispositivos <i>mobile</i>, la disposición de los campos es uno debajo de otro, y el valor de la separación entre campos es de 12px.
           </p>
           <Image
@@ -724,7 +724,7 @@ const PatternsComponents: React.FC = () => {
           <div className="list-informative">
             <ul className="list-informative-bullet">
               <li>
-                <strong>Utilice el nivel de encabezado adecuado</strong>. Para los títulos de las secciones de un formulario utilizar 
+                <strong>Utilice el nivel de encabezado adecuado</strong>. Para los títulos de las secciones de un formulario utilizar
                 el estilo de texto Encabezado/ H5/ Semibold.
               </li>
               <li>
@@ -732,7 +732,7 @@ const PatternsComponents: React.FC = () => {
                 Por ejemplo, “Información personal” o “Información de pago”.
               </li>
               <li>
-                La separación entre secciones para dispositivos desktop es de 32px. para ayudar a las personas usuarias a comprender 
+                La separación entre secciones para dispositivos desktop es de 32px. para ayudar a las personas usuarias a comprender
                 y organizar la información de manera más rápida y eficiente. En mobile, la separación entre secciones es de 24px.
               </li>
             </ul>
@@ -742,7 +742,7 @@ const PatternsComponents: React.FC = () => {
             alt="Seccion por temas"
             width="800"
             height="242"
-            className="img-fluid"
+            className="img-fluid mt-4"
           />
         </>
       )
@@ -751,8 +751,8 @@ const PatternsComponents: React.FC = () => {
       title: 'Etiqueta de campo requerido y opcional',
       content: (
         <>
-          <p>
-            Es un indicador diseñado específicamente para los formularios que indica si un campo es opcional o requerido, 
+          <p className='mb-4' >
+            Es un indicador diseñado específicamente para los formularios que indica si un campo es opcional o requerido,
             y es el método más explícito y transparente para garantizar que las personas usuarias no tengan que hacer suposiciones.
           </p>
           <Image
@@ -788,8 +788,8 @@ const PatternsComponents: React.FC = () => {
               />
               <div className="d-flex pt-3">
                 <span className="material-symbols-rounded text-success">check</span>
-                <p className="mb-0">Indicá únicamente las excepciones: si la mayoría de los campos son obligatorios, marcá como 
-                  &quot;opcional&quot; aquellos que no lo son; si la mayoría son opcionales, marcá como &quot;requerido&quot; 
+                <p className="mb-0">Indicá únicamente las excepciones: si la mayoría de los campos son obligatorios, marcá como
+                  &quot;opcional&quot; aquellos que no lo son; si la mayoría son opcionales, marcá como &quot;requerido&quot;
                   solo los campos obligatorios.
                 </p>
               </div>

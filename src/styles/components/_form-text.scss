@@ -148,6 +148,10 @@ $badge-color: $body-color;
   float: right;
 }
 
+.form-label-container + .form-label-description {
+  margin-top: 0;
+}
+
 .form-label-description {
   @extend .text-sm;
   margin-bottom: 0.5rem;

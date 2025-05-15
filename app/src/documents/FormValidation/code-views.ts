@@ -2,9 +2,6 @@ export const INPUT_VALIDATION_TEXT = `    <div class="form-label-container">
       <label for="exampleInputTexto" class="form-label">Label</label>
       <span class="badge-forms badge-required-forms">Requerido</span>
     </div>
-    <p class="form-label-description">
-      Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de no más de 3 líneas.
-    </p>
     <input 
       type="text" 
       class="form-control is-invalid" 
@@ -12,6 +9,9 @@ export const INPUT_VALIDATION_TEXT = `    <div class="form-label-container">
       aria-describedby="Text" 
       placeholder="Texto" 
     />
+    <p class="form-label-description">
+      Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de no más de 3 líneas.
+    </p>
     <div class="invalid-feedback">
       <p>Los datos introducidos son inválidos.</p>
     </div>
@@ -21,9 +21,6 @@ export const INPUT_VALIDATION_NUMBER = `    <div class="form-label-container">
       <label for="exampleInputNumber" class="form-label">Label</label>
       <span class="badge-forms badge-required-forms">Requerido</span>
     </div>
-    <p class="form-label-description">
-      Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de no más de 3 líneas.
-    </p>
     <input 
       type="text" 
       class="form-control is-valid" 
@@ -31,6 +28,9 @@ export const INPUT_VALIDATION_NUMBER = `    <div class="form-label-container">
       aria-describedby="Text" 
       placeholder="Texto" 
     />
+    <p class="form-label-description">
+      Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de no más de 3 líneas.
+    </p>
     <div class="valid-feedback">
       <p>Los datos introducidos son válidos.</p>
     </div>
@@ -40,9 +40,6 @@ export const INPUT_VALIDATION_MAIL = `    <div class="form-label-container">
       <label for="exampleInputText" class="form-label">Label</label>
       <span class="badge-forms badge-required-forms">Requerido</span>
     </div>
-    <p class="form-label-description">
-      Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de no más de 3 líneas.
-    </p>
     <input 
       type="email" 
       class="form-control is-invalid" 
@@ -51,6 +48,9 @@ export const INPUT_VALIDATION_MAIL = `    <div class="form-label-container">
       placeholder="Email@test.com" 
       required 
     />
+    <p class="form-label-description">
+      Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de no más de 3 líneas.
+    </p>
     <div class="invalid-feedback">
       <p>Los datos introducidos son inválidos.</p>
     </div>
@@ -60,9 +60,6 @@ export const INPUT_VALIDATION_DATE = `    <div class="form-label-container">
       <label for="ejemplo-4" class="form-label">Ejemplo campo de fecha</label>
       <span class="badge-forms badge-required-forms">Requerido</span>
     </div>
-    <p class="form-label-description">
-      Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de no más de 3 líneas.
-    </p>
     <input 
       type="date" 
       class="form-control is-valid" 
@@ -71,6 +68,9 @@ export const INPUT_VALIDATION_DATE = `    <div class="form-label-container">
       placeholder="selecciona tu fecha" 
       required 
     />
+    <p class="form-label-description">
+      Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de no más de 3 líneas.
+    </p>
     <div class="valid-feedback"> 
       <p>El campo es válido.</p>
     </div>
@@ -79,16 +79,17 @@ export const INPUT_VALIDATION_DATE = `    <div class="form-label-container">
 export const INPUT_VALIDATION_TEXTAREA = `    <div class="form-label-container">
       <label for="ejemplo-5" class="form-label">Ejemplo TextArea</label>
       <span class="badge-forms badge-required-forms">Requerido</span>
+      <span className="form-label-number">0/100</span>
     </div>
-    <p class="form-label-description">
-      Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de no más de 3 líneas.
-    </p>
     <textarea 
       class="form-control is-invalid" 
       id="ejemplo-5" 
       aria-describedby="TextArea" 
       required
       ></textarea>
+    <p class="form-label-description">
+      Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de no más de 3 líneas.
+    </p>
     <div class="invalid-feedback">
       <p>Los datos introducidos son inválidos.</p>
     </div>

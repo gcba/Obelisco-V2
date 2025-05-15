@@ -22,11 +22,11 @@ const FormFileDocs: React.FC = () => {
                 </label>
                 <span className="badge-forms badge-required-forms">Requerido</span>
               </div>
+              <input type="file" className="form-control" id="exampleInputFile" accept="image/png, image/jpeg" />
               <p className="form-label-description">
                 Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de no
                 más de 3 líneas.
               </p>
-              <input type="file" className="form-control" id="exampleInputFile" accept="image/png, image/jpeg" />
             </div>
           </div>
         </CodeBox>
@@ -44,10 +44,6 @@ const FormFileDocs: React.FC = () => {
                 </label>
                 <span className="badge-forms badge-required-forms">Requerido</span>
               </div>
-              <p className="form-label-description">
-                Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de no
-                más de 3 líneas.
-              </p>
               <input
                 type="file"
                 className="form-control"
@@ -55,6 +51,10 @@ const FormFileDocs: React.FC = () => {
                 accept="image/png, image/jpeg"
                 disabled
               />
+              <p className="form-label-description">
+                Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de no
+                más de 3 líneas.
+              </p>
             </div>
           </div>
         </CodeBox>

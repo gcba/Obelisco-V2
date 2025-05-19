@@ -552,9 +552,8 @@ const PatternsComponents: React.FC = () => {
       content: (
         <>
           <p className="text-md">
-            La estructura principal del formulario se define a partir del contenedor <code>CLASE</code> para organizar todo lo que
-            forma parte del formulario: campos, títulos y botones. Este contenedor se adapta al ancho máximo disponible para cada
-            dispositivo:
+            La estructura principal del formulario se organiza a partir de un contenedor que agrupa todos los elementos del formulario: 
+            campos de entrada, títulos, subtítulos y botones. Este contenedor se adapta al ancho máximo disponible según el dispositivo:
           </p>
           <div className="list-informative">
             <ul className="list-informative-bullet">
@@ -562,8 +561,15 @@ const PatternsComponents: React.FC = () => {
               <li>En <i>tablet y mobile</i>, ocupa el 100% del ancho disponible.</li>
             </ul>
           </div>
-
-          {/* SUMAR IMAGEN ACTUALIZADA */}
+          <div className="mt-4 mb-3">
+            <Image
+              src={`${basePath}/images/patterns/diagrams/estructura.svg`}
+              alt="Estructura de un formulario"
+              width="800"
+              height="200"
+              className="img-fluid"
+            />
+          </div>
         </>
       ),
     },
@@ -572,12 +578,13 @@ const PatternsComponents: React.FC = () => {
       content: (
         <>
           <p className="text-md">
-            <strong className="fw-semibold">Organizar los campos en una sola columna, uno debajo del otro</strong>. Este orden respeta el flujo natural de lectura y hace
-            que el contenido sea más fácil de entender, y también ayuda a reducir la carga mental y a procesar la información paso a paso.
+            <strong className="fw-semibold">Organizá los campos en una sola columna, ubicándolos uno debajo del otro</strong>. 
+            Esta disposición respeta el flujo natural de lectura,  facilita la comprensión del contenido y reduce la carga mental 
+            al permitir que la información se procese de forma secuencial.
           </p>
-          <p className="fw-bold">Ancho del campo</p> {/* VER CON EL EQUIPO */}
-          <p className='mb-4' >El ancho de un campo debe ser suficiente para que la persona usuaria considere la extensión del contenido solicitado,
-            brindándole una idea precisa de la longitud de caracteres y el tipo de contenido que acepta el campo.
+          <p className='mb-4' >
+            <strong className="fw-semibold">El ancho de cada campo </strong>debe ser proporcional a la longitud del 
+            contenido esperado, ayudando a la persona usuaria a anticipar la cantidad y el tipo de información que debe ingresar.
           </p>
           <div className="mb-3">
             <Image
@@ -592,21 +599,21 @@ const PatternsComponents: React.FC = () => {
       )
     },
     {
-      subtitle: 'Agrupación de campos relacionados',
+      subtitle: 'Agrupación de campos',
       content: (
         <>
           <p className="text-md">
             Los campos del formulario que comparten un propósito común, como &quot;Ciudad&quot; y &quot;Código postal&quot;, pueden
-            <strong> agruparse de forma horizontal </strong>dentro de un contenedor <i className='text-lg'>fieldset</i> para mejorar la comprensión visual
+            <strong> agruparse de forma horizontal </strong>dentro de un contenedor para mejorar la comprensión visual
             y facilitar la navegación a las personas que utilizan tecnologías de asistencia.
           </p>
-          {/* <Image
-            src={`${basePath}/images/patterns/diagrams/`}
-            alt=""
+          <Image
+            src={`${basePath}/images/patterns/diagrams/agrupacion_campos.svg`}
+            alt="Agrupacion de campos"
             width="800"
             height="200"
             className="img-fluid"
-          /> */}
+          /> 
           <div className="pt-3">
             <p className="text-xl mb-4">Ejemplos de uso</p>
             <div className='mb-4' >
@@ -619,10 +626,13 @@ const PatternsComponents: React.FC = () => {
               />
               <div className="d-flex pt-2">
                 <span className="material-symbols-rounded text-danger">close</span>
-                <p className="mb-0">Evitar un conjunto de campos en dos columnas y otro conjunto en tres columnas.</p>
+                <p className="mb-0">
+                  <strong className="fw-semibold">Evitar agrupar más de tres campos en una misma línea</strong>. Un exceso de campos en 
+                  disposición horizontal dificulta la lectura, genera desalineaciones y puede afectar negativamente la accesibilidad.
+                </p>
               </div>
             </div>
-            <div className='mb-4'>
+            {/* <div className='mb-4'>
               <Image
                 src={`${basePath}/images/patterns/diagrams/uso_incorrecto_2.svg`}
                 alt="Mala práctica de uso ejemplo 2"
@@ -636,7 +646,7 @@ const PatternsComponents: React.FC = () => {
                   es recomendable limitar a dos el número de columnas de un formulario o sección.
                 </p>
               </div>
-            </div>
+            </div> */}
             <div className='mb-4'>
               <Image
                 src={`${basePath}/images/patterns/diagrams/uso_correcto.svg`}
@@ -647,7 +657,11 @@ const PatternsComponents: React.FC = () => {
               />
               <div className="d-flex pt-2">
                 <span className="material-symbols-rounded text-success">check</span>
-                <p className="mb-0">Utilizar un número consistente de columnas en todo el formulario.</p>
+                <p className="mb-0">
+                  <strong className="fw-semibold">Mantener un número consistente de columnas a lo largo del formulario</strong> favorece la 
+                  lectura y la previsibilidad visual. En la mayoría de los casos, se recomienda no superar los dos campos por fila para 
+                  mantener una estructura clara y legible.
+                </p>
               </div>
             </div>
           </div>
@@ -748,7 +762,7 @@ const PatternsComponents: React.FC = () => {
       )
     },
     {
-      title: 'Etiqueta de campo requerido y opcional',
+      title: 'Indicador de campo requerido y opcional',
       content: (
         <>
           <p className='mb-4' >

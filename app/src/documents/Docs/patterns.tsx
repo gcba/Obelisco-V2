@@ -5,9 +5,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
+import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
-import Tabs from '@/components/Tabs';
 
 const basePath = '/Obelisco-V2';
 
@@ -602,7 +602,7 @@ const PatternsComponents: React.FC = () => {
       subtitle: 'Agrupación de campos',
       content: (
         <>
-          <p className="text-md">
+          <p className="mb-4">
             Los campos del formulario que comparten un propósito común, como &quot;Ciudad&quot; y &quot;Código postal&quot;, pueden
             <strong> agruparse de forma horizontal </strong>dentro de un contenedor para mejorar la comprensión visual
             y facilitar la navegación a las personas que utilizan tecnologías de asistencia.
@@ -614,7 +614,7 @@ const PatternsComponents: React.FC = () => {
             height="200"
             className="img-fluid"
           /> 
-          <div className="pt-3">
+          <div style={{marginTop: "32px"}}>
             <p className="text-xl mb-4">Ejemplos de uso</p>
             <div className='mb-4' >
               <Image

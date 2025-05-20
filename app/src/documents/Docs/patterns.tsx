@@ -5,13 +5,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
+import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
-import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 
 const basePath = '/Obelisco-V2';
 
 const PatternsComponents: React.FC = () => {
-  const sections = [
+  const SECTION_UX = [
     {
       title: 'Uso',
       firstTitle: true,
@@ -19,14 +19,16 @@ const PatternsComponents: React.FC = () => {
         <>
           <div className="list-informative">
             <p className="text-xl">Cuándo usar</p>
-            <ul className="list-informative-bullet">
-              <li>Para crear una cuenta o iniciar sesión.</li>
-              <li>Para registrarse en un servicio, programa o beneficio.</li>
-              <li>Para solicitar turnos o inscribirse en actividades. </li>
-              <li>Para completar una transacción.</li>
-              <li>Para configurar o modificar preferencias y datos de perfil.</li>
-              <li>Para responder encuestas de feedback. </li>
-            </ul>
+            <div className="list-informative">
+              <ul className="list-informative-bullet">
+                <li>Para crear una cuenta o iniciar sesión.</li>
+                <li>Para registrarse en un servicio, programa o beneficio.</li>
+                <li>Para solicitar turnos o inscribirse en actividades. </li>
+                <li>Para completar una transacción.</li>
+                <li>Para configurar o modificar preferencias y datos de perfil.</li>
+                <li>Para responder encuestas de feedback. </li>
+              </ul>
+            </div>
           </div>
         </>
       ),
@@ -542,16 +544,316 @@ const PatternsComponents: React.FC = () => {
     },
   ];
 
+  const Diagramacion = [
+    {
+      title: 'Estructura',
+      firstTitle: true,
+      content: (
+        <>
+          <p className="text-md">
+            La estructura principal del formulario se organiza a partir de un contenedor que agrupa todos los elementos
+            del formulario: campos de entrada, títulos, subtítulos y botones. Este contenedor se adapta al ancho máximo
+            disponible según el dispositivo:
+          </p>
+          <div className="list-informative">
+            <ul className="list-informative-bullet">
+              <li>
+                En <i>desktop</i>, se ubica dentro de 8 columnas.
+              </li>
+              <li>
+                En <i>tablet y mobile</i>, ocupa el 100% del ancho disponible.
+              </li>
+            </ul>
+          </div>
+          <div className="mt-4 mb-3">
+            <Image
+              src={`${basePath}/images/patterns/diagrams/estructura.svg`}
+              alt="Estructura de un formulario"
+              width="800"
+              height="200"
+              className="img-fluid"
+            />
+          </div>
+        </>
+      ),
+    },
+    {
+      title: 'Disposición',
+      content: (
+        <>
+          <p className="text-md">
+            <strong className="fw-semibold">
+              Organizá los campos en una sola columna, ubicándolos uno debajo del otro
+            </strong>
+            . Esta disposición respeta el flujo natural de lectura, facilita la comprensión del contenido y reduce la
+            carga mental al permitir que la información se procese de forma secuencial.
+          </p>
+          <p className="mb-4">
+            <strong className="fw-semibold">El ancho de cada campo </strong>debe ser proporcional a la longitud del
+            contenido esperado, ayudando a la persona usuaria a anticipar la cantidad y el tipo de información que debe
+            ingresar.
+          </p>
+          <div className="mb-3">
+            <Image
+              src={`${basePath}/images/patterns/diagrams/disposicion.svg`}
+              alt="Disposición de Elementos que componen un formulario"
+              width="800"
+              height="200"
+              className="img-fluid"
+            />
+          </div>
+        </>
+      ),
+    },
+    {
+      subtitle: 'Agrupación de campos',
+      content: (
+        <>
+          <p className="mb-4">
+            Los campos del formulario que comparten un propósito común, como &quot;Ciudad&quot; y &quot;Código
+            postal&quot;, pueden
+            <strong> agruparse de forma horizontal </strong>dentro de un contenedor para mejorar la comprensión visual y
+            facilitar la navegación a las personas que utilizan tecnologías de asistencia.
+          </p>
+          <Image
+            src={`${basePath}/images/patterns/diagrams/agrupacion_campos.svg`}
+            alt="Agrupacion de campos"
+            width="800"
+            height="200"
+            className="img-fluid"
+          />
+          <div style={{ marginTop: '32px' }}>
+            <p className="text-xl mb-4">Ejemplos de uso</p>
+            <div className="mb-4">
+              <Image
+                src={`${basePath}/images/patterns/diagrams/uso_incorrecto_1.svg`}
+                alt="Mala práctica de uso ejemplo 1"
+                width="800"
+                height="242"
+                className="img-fluid"
+              />
+              <div className="d-flex pt-2">
+                <span className="material-symbols-rounded text-danger">close</span>
+                <p className="mb-0">
+                  <strong className="fw-semibold">Evitar agrupar más de tres campos en una misma línea</strong>. Un
+                  exceso de campos en disposición horizontal dificulta la lectura, genera desalineaciones y puede
+                  afectar negativamente la accesibilidad.
+                </p>
+              </div>
+            </div>
+            {/* <div className='mb-4'>
+              <Image
+                src={`${basePath}/images/patterns/diagrams/uso_incorrecto_2.svg`}
+                alt="Mala práctica de uso ejemplo 2"
+                width="800"
+                height="242"
+                className="img-fluid"
+              />
+              <div className="d-flex pt-2">
+                <span className="material-symbols-rounded text-danger">close</span>
+                <p className="mb-0">No exceder a más de tres campos en un conjunto horizontal. En la mayoría de los casos,
+                  es recomendable limitar a dos el número de columnas de un formulario o sección.
+                </p>
+              </div>
+            </div> */}
+            <div className="mb-4">
+              <Image
+                src={`${basePath}/images/patterns/diagrams/uso_correcto.svg`}
+                alt="Buena práctica de uso"
+                width="800"
+                height="242"
+                className="img-fluid"
+              />
+              <div className="d-flex pt-2">
+                <span className="material-symbols-rounded text-success">check</span>
+                <p className="mb-0">
+                  <strong className="fw-semibold">
+                    Mantener un número consistente de columnas a lo largo del formulario
+                  </strong>{' '}
+                  favorece la lectura y la previsibilidad visual. En la mayoría de los casos, se recomienda no superar
+                  los dos campos por fila para mantener una estructura clara y legible.
+                </p>
+              </div>
+            </div>
+          </div>
+        </>
+      ),
+    },
+    {
+      subtitle: 'Alineación con botones',
+      content: (
+        <>
+          <p>
+            En formularios integrados en la página, donde no se requiere continuidad o navegación progresiva, las
+            acciones principales se alinearan a la izquierda del cuerpo de la página y al final del formulario.
+          </p>
+          <p className="mb-4">
+            Podés consultar la{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/components/button" target="_blank">
+              {' '}
+              documentación de Botones{' '}
+            </a>{' '}
+            para conocer las combinaciones y alineaciones recomendadas en dispositivos desktop, tablet y mobile.
+          </p>
+          <Image
+            src={`${basePath}/images/patterns/diagrams/alineacion_botones.svg`}
+            alt="Mala práctica de uso ejemplo 2"
+            width="800"
+            height="242"
+            className="img-fluid"
+          />
+        </>
+      ),
+    },
+    {
+      title: 'Espaciados',
+      content: (
+        <>
+          <p>
+            Para mantener una estructura clara, legible y alineada al sistema de grillas, recomendamos los siguientes
+            espaciados entre campos para dispositivos desktop:
+          </p>
+          <div className="list-informative pb-4">
+            <ul className="list-informative-bullet">
+              <li>
+                <strong>Espaciado vertical de 24px:</strong> Usado para separar campos dispuestos uno debajo del otro.
+              </li>
+              <li>
+                <strong>Espaciado horizontal de 16px:</strong> Entre campos relacionados ubicados en una misma fila, por
+                ejemplo, un campo para seleccionar el tipo de documento y un campo de texto para escribir el número de
+                documento.
+              </li>
+            </ul>
+          </div>
+          <Image
+            src={`${basePath}/images/patterns/diagrams/espaciados.svg`}
+            alt="Espaciados ejemplo Desktop"
+            width="800"
+            height="242"
+            className="img-fluid"
+          />
+          <p className="mt-4" style={{ marginBottom: '12px' }}>
+            Para dispositivos <i>mobile</i>, la disposición de los campos es uno debajo de otro, y el valor de la
+            separación entre campos es de 12px.
+          </p>
+          <Image
+            src={`${basePath}/images/patterns/diagrams/espaciados_mobile.svg`}
+            alt="Espaciados de ejemplo mobile"
+            width="800"
+            height="242"
+            className="img-fluid"
+          />
+        </>
+      ),
+    },
+    {
+      title: 'Secciones por temas',
+      content: (
+        <>
+          <p>
+            Para reforzar la comprensión del formulario es recomendado agrupar los temas relacionados en secciones con
+            encabezados.
+          </p>
+          <div className="list-informative">
+            <ul className="list-informative-bullet">
+              <li>
+                <strong>Utilice el nivel de encabezado adecuado</strong>. Para los títulos de las secciones de un
+                formulario utilizar el estilo de texto Encabezado/ H5/ Semibold.
+              </li>
+              <li>
+                El encabezado de la sección debe describir cómo se relacionan los campos de entrada entre si, y en
+                relación al formulario en su totalidad. Por ejemplo, “Información personal” o “Información de pago”.
+              </li>
+              <li>
+                La separación entre secciones para dispositivos desktop es de 32px. para ayudar a las personas usuarias
+                a comprender y organizar la información de manera más rápida y eficiente. En mobile, la separación entre
+                secciones es de 24px.
+              </li>
+            </ul>
+          </div>
+          <Image
+            src={`${basePath}/images/patterns/diagrams/seccion_por_temas.svg`}
+            alt="Seccion por temas"
+            width="800"
+            height="242"
+            className="img-fluid mt-4"
+          />
+        </>
+      ),
+    },
+    {
+      title: 'Indicador de campo requerido y opcional',
+      content: (
+        <>
+          <p className="mb-4">
+            Es un indicador diseñado específicamente para los formularios que indica si un campo es opcional o
+            requerido, y es el método más explícito y transparente para garantizar que las personas usuarias no tengan
+            que hacer suposiciones.
+          </p>
+          <Image
+            src={`${basePath}/images/patterns/diagrams/etiquetas_campos.svg`}
+            alt="Etiquetas de campo requerido y opcional"
+            width="800"
+            height="242"
+            className="img-fluid"
+          />
+          <p className="text-xl pt-4 pb-2">Ejemplos de uso</p>
+
+          <div className="max-items-2">
+            <div className="col pe-3">
+              <Image
+                src={`${basePath}/images/patterns/diagrams/etiqueta_mal_uso.svg`}
+                alt="Mala práctica en etiquetas"
+                width="800"
+                height="242"
+                className="img-fluid"
+              />
+              <div className="d-flex pt-3">
+                <span className="material-symbols-rounded text-danger">close</span>
+                <p className="mb-0">Evitar mezclar etiquetas obligatorias y opcionales; utilice solo una.</p>
+              </div>
+            </div>
+            <div className="col pe-3">
+              <Image
+                src={`${basePath}/images/patterns/diagrams/etiqueta_buen_uso.svg`}
+                alt="Buena práctica en etiquetas"
+                width="800"
+                height="242"
+                className="img-fluid"
+              />
+              <div className="d-flex pt-3">
+                <span className="material-symbols-rounded text-success">check</span>
+                <p className="mb-0">
+                  Indicá únicamente las excepciones: si la mayoría de los campos son obligatorios, marcá como
+                  &quot;opcional&quot; aquellos que no lo son; si la mayoría son opcionales, marcá como
+                  &quot;requerido&quot; solo los campos obligatorios.
+                </p>
+              </div>
+            </div>
+          </div>
+        </>
+      ),
+    },
+  ];
+
   return (
     <>
       <ComponentHeader
         title="Construir un formulario"
-        description={
-          'Los formularios permiten a las personas interactuar con el sistema, ingresando, editando o confirmando información. Un diseño claro y ordenado facilita la comprensión de cada paso y ayuda a completar las tareas sin fricción.'
-        }
-        divider={true}
+        description={[
+          'Los formularios permiten a las personas interactuar con el sistema, ingresando, editando o confirmando información. Un diseño claro y ordenado facilita la comprensión de cada paso y ayuda a completar las tareas sin fricción.',
+        ]}
       />
-      <DocumentationTemplate sections={sections} type="change" />
+      <Tabs
+        sectionUx={SECTION_UX}
+        customSections={[
+          {
+            title: 'Diagramación',
+            id: 'accessibility',
+            sectionContent: Diagramacion,
+          },
+        ]}
+      />
     </>
   );
 };

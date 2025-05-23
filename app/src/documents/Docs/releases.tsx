@@ -19,6 +19,36 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
+      title: 'Versión 1.5.6',
+      firstTitle: true,
+      content: (
+        <ul className="docs-list">
+          <p>La versión 1.5.6 contiene lo siguiente: </p>
+          <li>
+            Se modifica el posicionamiento del texto de asistencia para tener una mejor alineación entre el input y label en formularios horizontales.
+          </li>
+          <li>
+            Se modifica el posicionamiento del contador de caracteres en validación del input textarea. 
+          </li>
+          <li>
+            Se agrega un espacio superior e inferior <i>(css)</i> en la clase <code>form-label-container</code>.
+          </li>
+          <li>
+            Se agrega la sección de diagramación en patrones <i>(documentación).</i>
+          </li>
+        </ul>
+      ),
+    },
+    {
+      title: 'Versión 1.5.5',
+      firstTitle: true,
+      content: (
+        <ul className="docs-list">
+          <p>La versión 1.5.5 contiene el fix de la versión anterior, agregando los archivos de estilos css compilados. </p>
+        </ul>
+      ),
+    },
+    {
       title: 'Versión 1.5.4',
       firstTitle: true,
       content: (

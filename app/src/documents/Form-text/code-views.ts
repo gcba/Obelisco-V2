@@ -2,7 +2,6 @@ export const INPUT_TEXT = `  <div class="form-label-container">
     <label for="exampleInputTexto" class="form-label">
       Campo de texto *
     </label>
-    <p class="form-label-description">Texto de asistencia</p>
   </div>
   <input
     type="text"
@@ -11,12 +10,12 @@ export const INPUT_TEXT = `  <div class="form-label-container">
     aria-describedby="Texto"
     placeholder="Textos"
   />
+  <p class="form-label-description">Texto de asistencia</p>
 `;
 export const INPUT_NUMBER = `  <div class="form-label-container">
     <label for="exampleInputNumber" class="form-label">
       Campo numérico *
     </label>
-    <p class="form-label-description">Campo de asistencia</p>
   </div>
   <input
     type="number"
@@ -25,12 +24,12 @@ export const INPUT_NUMBER = `  <div class="form-label-container">
     aria-describedby="Number"
     placeholder="Números"
   />
+  <p class="form-label-description">Campo de asistencia</p>
 `;
 export const INPUT_MAIL = `  <div class="form-label-container">
     <label for="exampleInputEmail" class="form-label">
       Campo de email *
     </label>
-    <p class="form-label-description">Campo de asistencia</p>
   </div>
   <input
     type="email"
@@ -39,6 +38,7 @@ export const INPUT_MAIL = `  <div class="form-label-container">
     aria-describedby="Email"
     placeholder="Email@test.com"
   />
+  <p class="form-label-description">Campo de asistencia</p>
 `;
 export const INPUT_DATE = `  <div class="form-label-container">
     <label for="exampleInputDate" class="form-label">
@@ -57,16 +57,15 @@ export const INPUT_BLOCK = `  <div class="form-label-container">
     <label for="exampleFormControlTextarea1" class="form-label">
       Nombre del campo *
     </label>
-    <span class="form-label-number">0/100</span>
   </div>
   <textarea class="form-control" id="exampleFormControlTextarea1" ></textarea>
+  <p class="form-label-description">Campo de asistencia</p>
 `;
 export const INPUT_SELECT = `
 <div class="form-label-container">
   <label for="exampleInputEmail" class="form-label">
     Nombre del selector *
   </label>
-  <p class="form-label-description">Campo de asistencia</p>
 </div>
 <select class="form-control form-select" aria-label="Default select example">
     <option value="0">Seleccionar</option>
@@ -74,6 +73,7 @@ export const INPUT_SELECT = `
     <option value="2">Opción</option>
     <option value="3">Opción</option>
 </select>
+<p class="form-label-description">Campo de asistencia</p>
 `;
 export const INPUT_DISABLED = `  <div class="container">
     <div class="col-12 col-lg-6">

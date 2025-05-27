@@ -14,6 +14,8 @@ export default function HeaderDesktop() {
     { text: 'Empezar con Obelisco', url: '/getting-started', id: 1 },
     { text: 'Librería', url: '/components', id: 2 },
     { text: 'Patrones', url: '/patterns', id: 3 },
+    // { text: 'o', url: '/patterns', id: 3 }, esto agrega despues de patrones
+
   ];
   const pathname = usePathname();
 
@@ -74,6 +76,11 @@ export default function HeaderDesktop() {
                             </span>
                           </a>
                         </div>
+                      </li>
+                     <li className="nav-item">
+                        <a className={`nav-link nav-link-lg`} href="/Obelisco-V2/api">
+                          <span>Obelisco api back front nose</span>
+                        </a>
                       </li>
                     </ul>
                   </nav>

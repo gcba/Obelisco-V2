@@ -1,36 +1,36 @@
 export const STEPS_FORM = `
-<div className="stepper-content">
-  <div className="stepper">
-    <h2 className="step-title">Nombre del paso</h2>
-    <p className="step-subtitle">Paso siguiente: Nombre del paso 3</p>
-    <div className="steps">
-      <div className="steps-items">
-        <div className="steps-item active"></div>
-        <div className="steps-item active"></div>
-        <div className="steps-item"></div>
-        <div className="steps-item"></div>
-        <div className="steps-item"></div>
+<div class="stepper-content">
+  <div class="stepper">
+    <h2 class="step-title">Nombre del paso</h2>
+    <p class="step-subtitle">Paso siguiente: Nombre del paso 3</p>
+    <div class="steps">
+      <div class="steps-items">
+        <div class="steps-item active"></div>
+        <div class="steps-item active"></div>
+        <div class="steps-item"></div>
+        <div class="steps-item"></div>
+        <div class="steps-item"></div>
       </div>
-      <span className="steps-detail">Paso 2 de 5</span>
+      <span class="steps-detail">Paso 2 de 5</span>
     </div>
   </div>
 </div>
 `;
 export const STEPS_FORM_VOLANTA = `
-<div className="stepper-content">
-  <div className="stepper">
-    <p className="step-volanta">Volanta con información adicional</p>
-    <h2 className="step-title">Nombre del paso</h2>
-    <p className="step-subtitle">Paso siguiente: Nombre del paso 3</p>
-    <div className="steps">
-      <div className="steps-items">
-        <div className="steps-item active"></div>
-        <div className="steps-item active"></div>
-        <div className="steps-item"></div>
-        <div className="steps-item"></div>
-        <div className="steps-item"></div>
+<div class="stepper-content">
+  <div class="stepper">
+    <p class="step-volanta">Volanta con información adicional</p>
+    <h2 class="step-title">Nombre del paso</h2>
+    <p class="step-subtitle">Paso siguiente: Nombre del paso 3</p>
+    <div class="steps">
+      <div class="steps-items">
+        <div class="steps-item active"></div>
+        <div class="steps-item active"></div>
+        <div class="steps-item"></div>
+        <div class="steps-item"></div>
+        <div class="steps-item"></div>
       </div>
-      <span className="steps-detail">Paso 2 de 5</span>
+      <span class="steps-detail">Paso 2 de 5</span>
     </div>
   </div>
 </div>

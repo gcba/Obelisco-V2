@@ -92,7 +92,7 @@ export const RADIO_NO_TEXT = `  <div class="form-radio">
     ></label>
   </div>
 `;
-export const RADIO_GROUP = ` <div class="form-input-group" role="radioGroup" aria-labelledby="group-label">            
+export const RADIO_GROUP = ` <div class="form-input-group" role="radiogroup" aria-labelledby="group-label">            
     <div class="form-label-container">
       <span id="group-label" class="form-label">Ejemplo Radio Group</span>
       <span class="badge-forms badge-optional-forms">Opcional</span>
@@ -250,7 +250,7 @@ export const CHECKBOX_RADIO_POSITION = `  <div class="form-checkbox reverse">
     </label>
   </div>
 `;
-export const CHECKBOX_GROUP = `<div class="form-input-group" role="checkboxGroup" aria-labelledby="group-label">
+export const CHECKBOX_GROUP = `<div class="form-input-group" role="checkboxgroup" aria-labelledby="group-label">
       <div class="form-label-container">
         <span id="group-label" class="form-label">Seleccioná tus hobbies:</span>
         <span class="badge-forms badge-optional-forms">Opcional</span>

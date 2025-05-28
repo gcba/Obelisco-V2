@@ -607,7 +607,9 @@ const sections = [
       <>
         <ul className="docs-list">
           <li>
-            Se cambia el aria-label de <code>&quot;Navegación secundaria&quot;</code> por <code>&quot;Ruta de navegación&quot;</code>.</li>
+            Se cambia el aria-label de <code>&quot;Navegación secundaria&quot;</code> por{' '}
+            <code>&quot;Ruta de navegación&quot;</code>.
+          </li>
         </ul>
       </>
     ),

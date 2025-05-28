@@ -13,13 +13,13 @@ import { BREADCRUMB, BREADCRUMB_ACCESSIBILTY } from './code-views';
 const BreadcrumbDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
-      title: "Simple",
+      title: 'Simple',
       firstTitle: true,
       content: (
         <>
           <CodeBox codeHTML={BREADCRUMB}>
             <div className="container">
-              <nav aria-label="Ruta de navegación" >
+              <nav aria-label="Ruta de navegación">
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
                     <LinkClient>Inicio</LinkClient>

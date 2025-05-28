@@ -551,13 +551,18 @@ const PatternsComponents: React.FC = () => {
       content: (
         <>
           <p className="text-md">
-            La estructura principal del formulario se organiza a partir de un contenedor que agrupa todos los elementos del formulario: 
-            campos de entrada, títulos, subtítulos y botones. Este contenedor se adapta al ancho máximo disponible según el dispositivo:
+            La estructura principal del formulario se organiza a partir de un contenedor que agrupa todos los elementos
+            del formulario: campos de entrada, títulos, subtítulos y botones. Este contenedor se adapta al ancho máximo
+            disponible según el dispositivo:
           </p>
           <div className="list-informative">
             <ul className="list-informative-bullet">
-              <li>En <i>desktop</i>, se ubica dentro de 8 columnas.</li>
-              <li>En <i>tablet y mobile</i>, ocupa el 100% del ancho disponible.</li>
+              <li>
+                En <i>desktop</i>, se ubica dentro de 8 columnas.
+              </li>
+              <li>
+                En <i>tablet y mobile</i>, ocupa el 100% del ancho disponible.
+              </li>
             </ul>
           </div>
           <div className="mt-4 mb-3">
@@ -577,13 +582,16 @@ const PatternsComponents: React.FC = () => {
       content: (
         <>
           <p className="text-md">
-            <strong className="fw-semibold">Organizá los campos en una sola columna, ubicándolos uno debajo del otro</strong>. 
-            Esta disposición respeta el flujo natural de lectura,  facilita la comprensión del contenido y reduce la carga mental 
-            al permitir que la información se procese de forma secuencial.
+            <strong className="fw-semibold">
+              Organizá los campos en una sola columna, ubicándolos uno debajo del otro
+            </strong>
+            . Esta disposición respeta el flujo natural de lectura, facilita la comprensión del contenido y reduce la
+            carga mental al permitir que la información se procese de forma secuencial.
           </p>
-          <p className='mb-4' >
-            <strong className="fw-semibold">El ancho de cada campo </strong>debe ser proporcional a la longitud del 
-            contenido esperado, ayudando a la persona usuaria a anticipar la cantidad y el tipo de información que debe ingresar.
+          <p className="mb-4">
+            <strong className="fw-semibold">El ancho de cada campo </strong>debe ser proporcional a la longitud del
+            contenido esperado, ayudando a la persona usuaria a anticipar la cantidad y el tipo de información que debe
+            ingresar.
           </p>
           <div className="mb-3">
             <Image
@@ -595,7 +603,7 @@ const PatternsComponents: React.FC = () => {
             />
           </div>
         </>
-      )
+      ),
     },
     {
       subtitle: 'Agrupación de campos',
@@ -627,8 +635,9 @@ const PatternsComponents: React.FC = () => {
               <div className="d-flex pt-2">
                 <span className="material-symbols-rounded text-danger">close</span>
                 <p className="mb-0">
-                  <strong className="fw-semibold">Evitar agrupar más de tres campos en una misma línea</strong>. Un exceso de campos en 
-                  disposición horizontal dificulta la lectura, genera desalineaciones y puede afectar negativamente la accesibilidad.
+                  <strong className="fw-semibold">Evitar agrupar más de tres campos en una misma línea</strong>. Un
+                  exceso de campos en disposición horizontal dificulta la lectura, genera desalineaciones y puede
+                  afectar negativamente la accesibilidad.
                 </p>
               </div>
             </div>
@@ -668,19 +677,23 @@ const PatternsComponents: React.FC = () => {
             </div>
           </div>
         </>
-      )
+      ),
     },
     {
       subtitle: 'Alineación con botones',
       content: (
         <>
           <p>
-            En formularios integrados en la página, donde no se requiere continuidad o navegación progresiva,
-            las acciones principales se alinearan a la izquierda del cuerpo de la página y al final del formulario.
+            En formularios integrados en la página, donde no se requiere continuidad o navegación progresiva, las
+            acciones principales se alinearan a la izquierda del cuerpo de la página y al final del formulario.
           </p>
-          <p className='mb-4' >
-            Podés consultar la <a href="https://gcba.github.io/Obelisco-V2/components/button" target="_blank"> documentación de
-              Botones </a> para conocer las combinaciones y alineaciones recomendadas en dispositivos desktop, tablet y mobile.
+          <p className="mb-4">
+            Podés consultar la{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/components/button" target="_blank">
+              {' '}
+              documentación de Botones{' '}
+            </a>{' '}
+            para conocer las combinaciones y alineaciones recomendadas en dispositivos desktop, tablet y mobile.
           </p>
           <Image
             src={`${basePath}/images/patterns/diagrams/alineacion_botones.svg`}
@@ -690,15 +703,15 @@ const PatternsComponents: React.FC = () => {
             className="img-fluid"
           />
         </>
-      )
+      ),
     },
     {
       title: 'Espaciados',
       content: (
         <>
           <p>
-            Para mantener una estructura clara, legible y alineada al sistema de grillas, recomendamos los siguientes espaciados
-            entre campos para dispositivos desktop:
+            Para mantener una estructura clara, legible y alineada al sistema de grillas, recomendamos los siguientes
+            espaciados entre campos para dispositivos desktop:
           </p>
           <div className="list-informative pb-4">
             <ul className="list-informative-bullet">
@@ -731,7 +744,7 @@ const PatternsComponents: React.FC = () => {
             className="img-fluid"
           />
         </>
-      )
+      ),
     },
     {
       title: 'Secciones por temas',
@@ -766,7 +779,7 @@ const PatternsComponents: React.FC = () => {
             className="img-fluid mt-4"
           />
         </>
-      )
+      ),
     },
     {
       title: 'Indicador de campo requerido y opcional',

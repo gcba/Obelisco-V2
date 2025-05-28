@@ -25,11 +25,10 @@ const ReleasesComponents: React.FC = () => {
         <ul className="docs-list">
           <p>La versión 1.5.6 contiene lo siguiente: </p>
           <li>
-            Se modifica el posicionamiento del texto de asistencia para tener una mejor alineación entre el input y label en formularios horizontales.
+            Se modifica el posicionamiento del texto de asistencia para tener una mejor alineación entre el input y
+            label en formularios horizontales.
           </li>
-          <li>
-            Se modifica el posicionamiento del contador de caracteres en validación del input textarea. 
-          </li>
+          <li>Se modifica el posicionamiento del contador de caracteres en validación del input textarea.</li>
           <li>
             Se agrega un espacio superior e inferior <i>(css)</i> en la clase <code>form-label-container</code>.
           </li>
@@ -44,7 +43,9 @@ const ReleasesComponents: React.FC = () => {
       firstTitle: true,
       content: (
         <ul className="docs-list">
-          <p>La versión 1.5.5 contiene el fix de la versión anterior, agregando los archivos de estilos css compilados. </p>
+          <p>
+            La versión 1.5.5 contiene el fix de la versión anterior, agregando los archivos de estilos css compilados.{' '}
+          </p>
         </ul>
       ),
     },

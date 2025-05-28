@@ -136,7 +136,7 @@ const FormTextDocs: React.FC = () => {
                   id="exampleFormControlTextarea1"
                   placeholder="Texto de ejemplo"
                 ></textarea>
-                 <p className="form-label-description">Campo de asistencia</p>
+                <p className="form-label-description">Campo de asistencia</p>
               </div>
             </div>
           </CodeBox>

@@ -8,7 +8,6 @@ import React from 'react';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
-
 const basePath = '/Obelisco-V2';
 
 const PatternsComponents: React.FC = () => {
@@ -603,9 +602,10 @@ const PatternsComponents: React.FC = () => {
       content: (
         <>
           <p className="mb-4">
-            Los campos del formulario que comparten un propósito común, como &quot;Ciudad&quot; y &quot;Código postal&quot;, pueden
-            <strong> agruparse de forma horizontal </strong>dentro de un contenedor para mejorar la comprensión visual
-            y facilitar la navegación a las personas que utilizan tecnologías de asistencia.
+            Los campos del formulario que comparten un propósito común, como &quot;Ciudad&quot; y &quot;Código
+            postal&quot;, pueden
+            <strong> agruparse de forma horizontal </strong>dentro de un contenedor para mejorar la comprensión visual y
+            facilitar la navegación a las personas que utilizan tecnologías de asistencia.
           </p>
           <Image
             src={`${basePath}/images/patterns/diagrams/agrupacion_campos.svg`}
@@ -613,10 +613,10 @@ const PatternsComponents: React.FC = () => {
             width="800"
             height="200"
             className="img-fluid"
-          /> 
-          <div style={{marginTop: "32px"}}>
+          />
+          <div style={{ marginTop: '32px' }}>
             <p className="text-xl mb-4">Ejemplos de uso</p>
-            <div className='mb-4' >
+            <div className="mb-4">
               <Image
                 src={`${basePath}/images/patterns/diagrams/uso_incorrecto_1.svg`}
                 alt="Mala práctica de uso ejemplo 1"
@@ -647,7 +647,7 @@ const PatternsComponents: React.FC = () => {
                 </p>
               </div>
             </div> */}
-            <div className='mb-4'>
+            <div className="mb-4">
               <Image
                 src={`${basePath}/images/patterns/diagrams/uso_correcto.svg`}
                 alt="Buena práctica de uso"
@@ -658,9 +658,11 @@ const PatternsComponents: React.FC = () => {
               <div className="d-flex pt-2">
                 <span className="material-symbols-rounded text-success">check</span>
                 <p className="mb-0">
-                  <strong className="fw-semibold">Mantener un número consistente de columnas a lo largo del formulario</strong> favorece la 
-                  lectura y la previsibilidad visual. En la mayoría de los casos, se recomienda no superar los dos campos por fila para 
-                  mantener una estructura clara y legible.
+                  <strong className="fw-semibold">
+                    Mantener un número consistente de columnas a lo largo del formulario
+                  </strong>{' '}
+                  favorece la lectura y la previsibilidad visual. En la mayoría de los casos, se recomienda no superar
+                  los dos campos por fila para mantener una estructura clara y legible.
                 </p>
               </div>
             </div>
@@ -704,7 +706,9 @@ const PatternsComponents: React.FC = () => {
                 <strong>Espaciado vertical de 24px:</strong> Usado para separar campos dispuestos uno debajo del otro.
               </li>
               <li>
-                <strong>Espaciado horizontal de 16px:</strong> Entre campos relacionados ubicados en una misma fila, por ejemplo, un campo para seleccionar el tipo de documento y un campo de texto para escribir el número de documento.
+                <strong>Espaciado horizontal de 16px:</strong> Entre campos relacionados ubicados en una misma fila, por
+                ejemplo, un campo para seleccionar el tipo de documento y un campo de texto para escribir el número de
+                documento.
               </li>
             </ul>
           </div>
@@ -715,8 +719,9 @@ const PatternsComponents: React.FC = () => {
             height="242"
             className="img-fluid"
           />
-          <p className="mt-4" style={{ marginBottom: '12px' }} >
-            Para dispositivos <i>mobile</i>, la disposición de los campos es uno debajo de otro, y el valor de la separación entre campos es de 12px.
+          <p className="mt-4" style={{ marginBottom: '12px' }}>
+            Para dispositivos <i>mobile</i>, la disposición de los campos es uno debajo de otro, y el valor de la
+            separación entre campos es de 12px.
           </p>
           <Image
             src={`${basePath}/images/patterns/diagrams/espaciados_mobile.svg`}
@@ -733,21 +738,23 @@ const PatternsComponents: React.FC = () => {
       content: (
         <>
           <p>
-            Para reforzar la comprensión del formulario es recomendado agrupar los temas relacionados en secciones con encabezados.
+            Para reforzar la comprensión del formulario es recomendado agrupar los temas relacionados en secciones con
+            encabezados.
           </p>
           <div className="list-informative">
             <ul className="list-informative-bullet">
               <li>
-                <strong>Utilice el nivel de encabezado adecuado</strong>. Para los títulos de las secciones de un formulario utilizar
-                el estilo de texto Encabezado/ H5/ Semibold.
+                <strong>Utilice el nivel de encabezado adecuado</strong>. Para los títulos de las secciones de un
+                formulario utilizar el estilo de texto Encabezado/ H5/ Semibold.
               </li>
               <li>
-                El encabezado de la sección debe describir cómo se relacionan los campos de entrada entre si, y en relación al formulario en su totalidad.
-                Por ejemplo, “Información personal” o “Información de pago”.
+                El encabezado de la sección debe describir cómo se relacionan los campos de entrada entre si, y en
+                relación al formulario en su totalidad. Por ejemplo, “Información personal” o “Información de pago”.
               </li>
               <li>
-                La separación entre secciones para dispositivos desktop es de 32px. para ayudar a las personas usuarias a comprender
-                y organizar la información de manera más rápida y eficiente. En mobile, la separación entre secciones es de 24px.
+                La separación entre secciones para dispositivos desktop es de 32px. para ayudar a las personas usuarias
+                a comprender y organizar la información de manera más rápida y eficiente. En mobile, la separación entre
+                secciones es de 24px.
               </li>
             </ul>
           </div>
@@ -765,9 +772,10 @@ const PatternsComponents: React.FC = () => {
       title: 'Indicador de campo requerido y opcional',
       content: (
         <>
-          <p className='mb-4' >
-            Es un indicador diseñado específicamente para los formularios que indica si un campo es opcional o requerido,
-            y es el método más explícito y transparente para garantizar que las personas usuarias no tengan que hacer suposiciones.
+          <p className="mb-4">
+            Es un indicador diseñado específicamente para los formularios que indica si un campo es opcional o
+            requerido, y es el método más explícito y transparente para garantizar que las personas usuarias no tengan
+            que hacer suposiciones.
           </p>
           <Image
             src={`${basePath}/images/patterns/diagrams/etiquetas_campos.svg`}
@@ -802,16 +810,17 @@ const PatternsComponents: React.FC = () => {
               />
               <div className="d-flex pt-3">
                 <span className="material-symbols-rounded text-success">check</span>
-                <p className="mb-0">Indicá únicamente las excepciones: si la mayoría de los campos son obligatorios, marcá como
-                  &quot;opcional&quot; aquellos que no lo son; si la mayoría son opcionales, marcá como &quot;requerido&quot;
-                  solo los campos obligatorios.
+                <p className="mb-0">
+                  Indicá únicamente las excepciones: si la mayoría de los campos son obligatorios, marcá como
+                  &quot;opcional&quot; aquellos que no lo son; si la mayoría son opcionales, marcá como
+                  &quot;requerido&quot; solo los campos obligatorios.
                 </p>
               </div>
             </div>
           </div>
         </>
-      )
-    }
+      ),
+    },
   ];
 
   return (
@@ -819,7 +828,7 @@ const PatternsComponents: React.FC = () => {
       <ComponentHeader
         title="Construir un formulario"
         description={[
-          'Los formularios permiten a las personas interactuar con el sistema, ingresando, editando o confirmando información. Un diseño claro y ordenado facilita la comprensión de cada paso y ayuda a completar las tareas sin fricción.'
+          'Los formularios permiten a las personas interactuar con el sistema, ingresando, editando o confirmando información. Un diseño claro y ordenado facilita la comprensión de cada paso y ayuda a completar las tareas sin fricción.',
         ]}
       />
       <Tabs

@@ -7,6 +7,7 @@ export const INPUT_VALIDATION_TEXT = `    <div class="form-label-container">
       class="form-control is-invalid" 
       id="exampleInputTexto" 
       aria-describedby="Text" 
+      aria-required="true"
       placeholder="Texto" 
     />
     <p class="form-label-description">
@@ -23,17 +24,15 @@ export const INPUT_VALIDATION_NUMBER = `    <div class="form-label-container">
     </div>
     <input 
       type="text" 
-      class="form-control is-valid" 
+      class="form-control" 
       id="exampleInputNumber" 
-      aria-describedby="Text" 
+      aria-describedby="Text"
+      aria-required="true"
       placeholder="Texto" 
     />
     <p class="form-label-description">
       Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de no más de 3 líneas.
     </p>
-    <div class="valid-feedback">
-      <p>Los datos introducidos son válidos.</p>
-    </div>
 `;
 
 export const INPUT_VALIDATION_MAIL = `    <div class="form-label-container">
@@ -44,9 +43,9 @@ export const INPUT_VALIDATION_MAIL = `    <div class="form-label-container">
       type="email" 
       class="form-control is-invalid" 
       id="ejemplo-3-1" 
-      aria-describedby="Email" 
-      placeholder="Email@test.com" 
-      required 
+      aria-describedby="Email"
+      aria-required="true"
+      placeholder="Email@test.com"
     />
     <p class="form-label-description">
       Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de no más de 3 líneas.
@@ -65,8 +64,8 @@ export const INPUT_VALIDATION_DATE = `    <div class="form-label-container">
       class="form-control is-valid" 
       id="ejemplo-4" 
       aria-describedby="Date" 
+      aria-required="true"
       placeholder="selecciona tu fecha" 
-      required 
     />
     <p class="form-label-description">
       Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de no más de 3 líneas.
@@ -84,8 +83,8 @@ export const INPUT_VALIDATION_TEXTAREA = `    <div class="form-label-container">
     <textarea 
       class="form-control is-invalid" 
       id="ejemplo-5" 
-      aria-describedby="TextArea" 
-      required
+      aria-describedby="TextArea"
+      aria-required="true"
       ></textarea>
     <p class="form-label-description">
       Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de no más de 3 líneas.
@@ -95,7 +94,7 @@ export const INPUT_VALIDATION_TEXTAREA = `    <div class="form-label-container">
     </div>
 `;
 
-export const INPUT_VALIDATION_RADIO_GROUP = `   <div class="form-input-group" role="radioGroup" aria-labelledby="group-label">            
+export const INPUT_VALIDATION_RADIO_GROUP = `   <div class="form-input-group" role="radiogroup" aria-labelledby="group-label">            
               <div class="form-label-container">
                 <span id="group-label" class="form-label">Ejemplo Radio Group</span>
                 <span class="badge-forms badge-required-forms">Requerido</span>
@@ -105,19 +104,19 @@ export const INPUT_VALIDATION_RADIO_GROUP = `   <div class="form-input-group" ro
                 no más de 3 líneas.
               </p>
               <div class="form-radio">
-                <input type="radio" name="hobbieRadio" value="etiqueta 1" class="form-radio-input is-invalid" id="radio_1" />
+                <input type="radio" name="hobbieRadio" value="etiqueta 1" class="form-radio-input is-invalid" id="radio_1" required />
                 <label class="form-radio-label" for="radio_1">
                   Leer
                 </label>
               </div>
               <div class="form-radio">
-                <input type="radio" name="hobbieRadio" value="etiqueta 2" class="form-radio-input is-invalid" id="radio_2" />
+                <input type="radio" name="hobbieRadio" value="etiqueta 2" class="form-radio-input is-invalid" id="radio_2" required />
                 <label class="form-radio-label" for="radio_2">
                   Escuchar música
                 </label>
               </div>
               <div class="form-radio">
-                <input type="radio" name="hobbieRadio" value="etiqueta 3" class="form-radio-input is-invalid" id="radio_3" />
+                <input type="radio" name="hobbieRadio" value="etiqueta 3" class="form-radio-input is-invalid" id="radio_3" required />
                 <label class="form-radio-label" for="radio_3">
                   Hacer deporte
                 </label>
@@ -127,9 +126,10 @@ export const INPUT_VALIDATION_RADIO_GROUP = `   <div class="form-input-group" ro
               </div>
             </div>`;
 
-export const INPUT_VALIDATION_CHECKBOX_GROUP = `     <div class="form-label-container">
+export const INPUT_VALIDATION_CHECKBOX_GROUP = `    <div className="form-input-group" role="checkboxgroup" aria-labelledby="group-label"> 
+              <div class="form-label-container">
                 <span id="group-label" className="form-label">Ejemplo Checkbox Group</span>
-                <span class="badge-forms badge-optional-forms">Opcional</span>
+                <span class="badge-forms badge-required-forms">Requerido</span>
               </div>
               <p class="form-label-description">
                 Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de
@@ -143,6 +143,7 @@ export const INPUT_VALIDATION_CHECKBOX_GROUP = `     <div class="form-label-cont
                   id="checkbox_1"
                   value="checkbox_1"
                   checked={false}
+                  required
                 />
                 <label class="form-checkbox-label" for="checkbox_1">
                   Etiqueta 1
@@ -155,6 +156,7 @@ export const INPUT_VALIDATION_CHECKBOX_GROUP = `     <div class="form-label-cont
                   name="exampleInputCheckboxGroup"
                   id="checkbox_2"
                   value="checkbox_2"
+                  required
                 />
                 <label class="form-checkbox-label" for="checkbox_2">
                   Etiqueta 2
@@ -167,6 +169,7 @@ export const INPUT_VALIDATION_CHECKBOX_GROUP = `     <div class="form-label-cont
                   name="exampleInputCheckboxGroup"
                   id="checkbox_3"
                   value="checkbox_3"
+                  required
                 />
                 <label class="form-checkbox-label" for="checkbox_3">
                   Etiqueta 3
@@ -174,4 +177,5 @@ export const INPUT_VALIDATION_CHECKBOX_GROUP = `     <div class="form-label-cont
               </div>
               <div class="invalid-feedback">
                 <p>Este es un mensaje de error para un campo inválido. </p>
-              </div>`;
+              </div>
+            </div>`;

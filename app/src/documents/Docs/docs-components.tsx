@@ -602,6 +602,17 @@ const sections = [
     ),
   },
   {
+    title: 'Migas de pan',
+    content: (
+      <>
+        <ul className="docs-list">
+          <li>
+            Se cambia el aria-label de <code>&quot;Navegación secundaria&quot;</code> por <code>&quot;Ruta de navegación&quot;</code>.</li>
+        </ul>
+      </>
+    ),
+  },
+  {
     title: 'Modal',
     content: (
       <ul className="docs-list">
@@ -770,10 +781,8 @@ const UpdateComponents: React.FC = () => {
         description={[
           'En esta sección se encuentra la documentación de los cambios que se hicieron sobre los componentes en la nueva versión de Obelisco.',
           <>
-            <p>
-              Si querés comenzar a utilizar nuestros componentes, puedes visualizar el HTML disponible en la sección{' '}
-              <Link href="/components">Elementos</Link>.
-            </p>
+            Si querés comenzar a utilizar nuestros componentes, puedes visualizar el HTML disponible en la sección{' '}
+            <Link href="/components">Elementos</Link>.
           </>,
         ]}
         divider={true}

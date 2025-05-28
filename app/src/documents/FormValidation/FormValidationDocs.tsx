@@ -33,6 +33,7 @@ const FormValidationDocs: React.FC = () => {
                   className="form-control is-invalid"
                   id="exampleInputTexto"
                   aria-describedby="Text"
+                  aria-required="true"
                   placeholder="Texto"
                 />
                 <p className="form-label-description">
@@ -53,22 +54,20 @@ const FormValidationDocs: React.FC = () => {
                   <label htmlFor="exampleInputNumber" className="form-label">
                     Label
                   </label>
-                  <span className="badge-forms badge-required-forms">Requerido</span>
+                  <span className="badge-forms badge-optional-forms">Opcional</span>
                 </div>
                 <input
                   type="text"
-                  className="form-control is-valid"
+                  className="form-control"
                   id="exampleInputNumber"
                   aria-describedby="Text"
+                  aria-required="true"
                   placeholder="Texto"
                 />
                 <p className="form-label-description">
                   Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de
                   no más de 3 líneas.
                 </p>
-                <div className="valid-feedback ">
-                  <p>Los datos introducidos son válidos.</p>
-                </div>
               </div>
             </div>
           </CodeBox>
@@ -87,8 +86,8 @@ const FormValidationDocs: React.FC = () => {
                   className="form-control is-invalid"
                   id="ejemplo-3-1"
                   aria-describedby="Email"
+                  aria-required="true"
                   placeholder="Email@test.com"
-                  required
                 />
                 <p className="form-label-description">
                   Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de
@@ -108,15 +107,15 @@ const FormValidationDocs: React.FC = () => {
                   <label htmlFor="ejemplo-4" className="form-label">
                     Ejemplo campo de fecha
                   </label>
-                  <span className="badge-forms badge-required-forms">Requerido</span>
+                  <span className="badge-forms badge-optional-forms">Opcional</span>
                 </div>
                 <input
                   type="date"
                   className="form-control is-valid"
                   id="ejemplo-4"
                   aria-describedby="Date"
+                  aria-required="true"
                   placeholder="selecciona tu fecha"
-                  required
                 />
                 <p className="form-label-description">
                   Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de
@@ -143,7 +142,7 @@ const FormValidationDocs: React.FC = () => {
                   className="form-control is-invalid"
                   id="ejemplo-5"
                   aria-describedby="TextArea"
-                  required
+                  aria-required="true"
                 ></textarea>
                 <p className="form-label-description">
                   Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de
@@ -159,7 +158,7 @@ const FormValidationDocs: React.FC = () => {
           <CodeBox codeHTML={INPUT_VALIDATION_RADIO_GROUP}>
             <div className="container">
               <div className="col-12 col-lg-6">
-                <div className="form-input-group" role="radioGroup" aria-labelledby="group-label">
+                <div className="form-input-group" role="radiogroup" aria-labelledby="group-label" aria-required="true">
                   <div className="form-label-container">
                     <span id="group-label" className="form-label">
                       Ejemplo Radio Group
@@ -177,6 +176,7 @@ const FormValidationDocs: React.FC = () => {
                       value="etiqueta 1"
                       className="form-radio-input is-invalid"
                       id="radio_1"
+                      required
                     />
                     <label className="form-radio-label" htmlFor="radio_1">
                       Leer
@@ -189,6 +189,7 @@ const FormValidationDocs: React.FC = () => {
                       value="etiqueta 2"
                       className="form-radio-input is-invalid"
                       id="radio_2"
+                      required
                     />
                     <label className="form-radio-label" htmlFor="radio_2">
                       Escuchar música
@@ -202,6 +203,7 @@ const FormValidationDocs: React.FC = () => {
                       value="etiqueta 3"
                       className="form-radio-input is-invalid"
                       id="radio_3"
+                      required
                     />
                     <label className="form-radio-label" htmlFor="radio_3">
                       Hacer deporte
@@ -219,55 +221,60 @@ const FormValidationDocs: React.FC = () => {
           <CodeBox codeHTML={INPUT_VALIDATION_CHECKBOX_GROUP}>
             <div className="container">
               <div className="col-12 col-lg-6">
-                <div className="form-label-container">
-                  <span id="group-label" className="form-label">
-                    Ejemplo Checkbox Group
-                  </span>
-                  <span className="badge-forms badge-optional-forms">Opcional</span>
-                </div>
-                <p className="form-label-description">
-                  Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de
-                  no más de 3 líneas.
-                </p>
-                <div className="form-checkbox">
-                  <input
-                    className="form-checkbox-input is-invalid"
-                    type="checkbox"
-                    name="exampleInputCheckboxGroup"
-                    id="checkbox_1"
-                    value="checkbox_1"
-                    defaultChecked={false}
-                  />
-                  <label className="form-checkbox-label" htmlFor="checkbox_1">
-                    Etiqueta 1
-                  </label>
-                </div>
-                <div className="form-checkbox">
-                  <input
-                    className="form-checkbox-input is-invalid"
-                    type="checkbox"
-                    name="exampleInputCheckboxGroup"
-                    id="checkbox_2"
-                    value="checkbox_2"
-                  />
-                  <label className="form-checkbox-label" htmlFor="checkbox_2">
-                    Etiqueta 2
-                  </label>
-                </div>
-                <div className="form-checkbox">
-                  <input
-                    className="form-checkbox-input is-invalid"
-                    type="checkbox"
-                    name="exampleInputCheckboxGroup"
-                    id="checkbox_3"
-                    value="checkbox_3"
-                  />
-                  <label className="form-checkbox-label" htmlFor="checkbox_3">
-                    Etiqueta 3
-                  </label>
-                </div>
-                <div className="invalid-feedback">
-                  <p>Este es un mensaje de error para un campo inválido. </p>
+                <div className="form-input-group" role="checkboxgroup" aria-labelledby="group-label">
+                  <div className="form-label-container">
+                    <span id="group-label" className="form-label">
+                      Ejemplo Checkbox Group
+                    </span>
+                    <span className="badge-forms badge-required-forms">Requerido</span>
+                  </div>
+                  <p className="form-label-description">
+                    Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de
+                    no más de 3 líneas.
+                  </p>
+                  <div className="form-checkbox">
+                    <input
+                      className="form-checkbox-input is-invalid"
+                      type="checkbox"
+                      name="exampleInputCheckboxGroup"
+                      id="checkbox_1"
+                      value="checkbox_1"
+                      defaultChecked={false}
+                      required
+                    />
+                    <label className="form-checkbox-label" htmlFor="checkbox_1">
+                      Etiqueta 1
+                    </label>
+                  </div>
+                  <div className="form-checkbox">
+                    <input
+                      className="form-checkbox-input is-invalid"
+                      type="checkbox"
+                      name="exampleInputCheckboxGroup"
+                      id="checkbox_2"
+                      value="checkbox_2"
+                      required
+                    />
+                    <label className="form-checkbox-label" htmlFor="checkbox_2">
+                      Etiqueta 2
+                    </label>
+                  </div>
+                  <div className="form-checkbox">
+                    <input
+                      className="form-checkbox-input is-invalid"
+                      type="checkbox"
+                      name="exampleInputCheckboxGroup"
+                      id="checkbox_3"
+                      value="checkbox_3"
+                      required
+                    />
+                    <label className="form-checkbox-label" htmlFor="checkbox_3">
+                      Etiqueta 3
+                    </label>
+                  </div>
+                  <div className="invalid-feedback">
+                    <p>Este es un mensaje de error para un campo inválido. </p>
+                  </div>
                 </div>
               </div>
             </div>

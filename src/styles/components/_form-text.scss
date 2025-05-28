@@ -145,12 +145,17 @@ $badge-color: $body-color;
   grid-area: number;
   display: block;
   margin-top: 0.25rem;
-  text-align: right;
+  float: right;
+}
+
+.form-label-container + .form-label-description {
+  margin-top: 0;
 }
 
 .form-label-description {
   @extend .text-sm;
   margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
   grid-area: description;
   display: grid;
 }

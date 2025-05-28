@@ -27,7 +27,6 @@ const FormTextDocs: React.FC = () => {
                   <label htmlFor="exampleInputTexto" className="form-label">
                     Campo de texto
                   </label>
-                  <p className="form-label-description">Texto de asistencia</p>
                 </div>
                 <input
                   type="text"
@@ -36,6 +35,7 @@ const FormTextDocs: React.FC = () => {
                   aria-describedby="Texto"
                   placeholder="Textos"
                 />
+                <p className="form-label-description">Texto de asistencia</p>
               </div>
             </div>
           </CodeBox>
@@ -53,7 +53,6 @@ const FormTextDocs: React.FC = () => {
                   <label htmlFor="exampleInputNumber" className="form-label">
                     Campo numérico
                   </label>
-                  <p className="form-label-description">Campo de asistencia</p>
                 </div>
                 <input
                   type="number"
@@ -62,6 +61,7 @@ const FormTextDocs: React.FC = () => {
                   aria-describedby="Number"
                   placeholder="Números"
                 />
+                <p className="form-label-description">Campo de asistencia</p>
               </div>
             </div>
           </CodeBox>
@@ -79,7 +79,6 @@ const FormTextDocs: React.FC = () => {
                   <label htmlFor="exampleInputEmail" className="form-label">
                     Campo de email
                   </label>
-                  <p className="form-label-description">Campo de asistencia</p>
                 </div>
                 <input
                   type="email"
@@ -88,6 +87,7 @@ const FormTextDocs: React.FC = () => {
                   aria-describedby="Email"
                   placeholder="Email@test.com"
                 />
+                <p className="form-label-description">Campo de asistencia</p>
               </div>
             </div>
           </CodeBox>
@@ -136,7 +136,7 @@ const FormTextDocs: React.FC = () => {
                   id="exampleFormControlTextarea1"
                   placeholder="Texto de ejemplo"
                 ></textarea>
-                <span className="form-label-number">0/100</span>
+                <p className="form-label-description">Campo de asistencia</p>
               </div>
             </div>
           </CodeBox>
@@ -154,7 +154,6 @@ const FormTextDocs: React.FC = () => {
                   <label htmlFor="exampleInputEmail" className="form-label">
                     Nombre del selector
                   </label>
-                  <p className="form-label-description">Campo de asistencia</p>
                 </div>
                 <select className="form-control form-select" aria-label="Default select example">
                   <option value="0">Seleccionar</option>
@@ -162,6 +161,7 @@ const FormTextDocs: React.FC = () => {
                   <option value="2">Opción</option>
                   <option value="3">Opción</option>
                 </select>
+                <p className="form-label-description">Campo de asistencia</p>
               </div>
             </div>
           </CodeBox>
@@ -252,7 +252,7 @@ const FormTextDocs: React.FC = () => {
                     Ejemplo TextArea
                   </label>
                 </div>
-                <textarea className="form-control" id="example-one-disabled" disabled></textarea>
+                <textarea className="form-control" id="example-one-disabled" maxLength={50} disabled></textarea>
               </div>
 
               <br />

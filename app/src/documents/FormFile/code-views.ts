@@ -2,9 +2,6 @@ export const FILE_DEFAULT = `    <div class="form-label-container">
       <label for="exampleInputFile" class="form-label">Label</label>
       <span class="badge-forms badge-required-forms">Requerido</span>
     </div>
-    <p class="form-label-description">
-      Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de no más de 3 líneas.
-    </p>
     <input 
       type="file" 
       class="form-control" 
@@ -12,15 +9,15 @@ export const FILE_DEFAULT = `    <div class="form-label-container">
       aria-describedby="File"
       accept="image/png, image/jpeg" 
     />
+    <p class="form-label-description">
+      Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de no más de 3 líneas.
+    </p>
 `;
 
 export const FILE_DISABLED = `    <div class="form-label-container">
       <label for="exampleInputFile" class="form-label">Label</label>
       <span class="badge-forms badge-required-forms">Requerido</span>
     </div>
-    <p class="form-label-description">
-      Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de no más de 3 líneas.
-    </p>
     <input 
       type="file" 
       class="form-control" 
@@ -29,4 +26,7 @@ export const FILE_DISABLED = `    <div class="form-label-container">
       aria-describedby="File"
       disabled 
     />
+    <p class="form-label-description">
+      Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de no más de 3 líneas.
+    </p>
 `;

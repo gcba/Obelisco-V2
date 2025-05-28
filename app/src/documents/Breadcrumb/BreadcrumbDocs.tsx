@@ -13,7 +13,7 @@ import { BREADCRUMB, BREADCRUMB_ACCESSIBILTY } from './code-views';
 const BreadcrumbDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
-      title: 'Simple',
+      title: "Simple",
       firstTitle: true,
       content: (
         <>

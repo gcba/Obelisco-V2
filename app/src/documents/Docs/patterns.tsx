@@ -9,6 +9,7 @@ import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
+
 import { PATTERNS_ACCESSIBILTY } from './code-views';
 
 
@@ -829,7 +830,7 @@ const PatternsComponents: React.FC = () => {
 
           <span className="badge badge-default ms-1">TAB</span>
           <span className="badge badge-default">ENTER</span>
-          <p className="text-md mb-4">
+          <p className="text-md mb-4 mt-2">
             Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Además, con
             el <i>enter</i>, puede accionar los elementos sobre los que esté posicionada como botones, enlaces, entre
             otros.
@@ -853,10 +854,10 @@ const PatternsComponents: React.FC = () => {
             Dependiendo del tipo de campo puede haber lineamientos adicionales.
           </p>
           <ul>
-            <li className='mb-2' >Los campos de formulario siempre deben contar con un Label identificador visible y legible por los lectores de pantalla.  </li>
-            <li className='mb-2' >Si la sesión expira, la persona usuaria debe poder re-autenticarse y seguir donde estaba sin perder datos. Es recomendable comunicar el tiempo de la sesión, y avisar unos minutos antes que expirará. </li>
-            <li className='mb-2' >Las personas deben poder revisar sus datos antes de enviar el formulario, especialmente en casos de formularios multi-página con información legal y/o transacciones irreversibles.</li>
-            <li className='mb-2' >Evitar que los campos de formulario cambien automáticamente el contexto (como navegar a otra página o enviar datos) sin que la persona usuaria lo confirme. </li>
+            <li className='mb-3' >Los campos de formulario siempre deben contar con un Label identificador visible y legible por los lectores de pantalla.</li>
+            <li className='mb-3' >Si la sesión expira, la persona usuaria debe poder reautenticarse y continuar desde donde estaba, sin pérdida de datos. Se recomienda mostrar el tiempo restante de la sesión y advertir con algunos minutos de anticipación antes de que expire.</li>
+            <li className='mb-3' >Las personas deben poder revisar sus datos antes de enviar el formulario, especialmente en casos de formularios multipágina con información legal y/o transacciones irreversibles.</li>
+            <li>Evitar que los campos de formulario cambien automáticamente el contexto (como navegar a otra página o enviar datos) sin que la persona usuaria lo confirme. </li>
           </ul>
         </>
       )
@@ -896,7 +897,7 @@ const PatternsComponents: React.FC = () => {
           >
             Success Criterion 1.3.1 Info and Relationships (Level A)
           </a>
-          <p>
+          <p className='mt-2'>
             La información, la estructura y las relaciones transmitidas a través de la presentación pueden determinarse mediante programación o están disponibles en el texto.
           </p>
 
@@ -908,7 +909,7 @@ const PatternsComponents: React.FC = () => {
           >
             Success Criterion 2.2.5 Re-authenticating (Level AAA)
           </a>
-          <p>
+          <p className='mt-2'>
             Cuando una sesión autenticada expira, la persona usuaria puede continuar la actividad sin pérdida de datos después de re-autenticarse.
           </p>
 
@@ -920,7 +921,7 @@ const PatternsComponents: React.FC = () => {
           >
             Success Criterion 2.4.6 Headings and Labels (Level AA)
           </a>
-          <p>
+          <p className='mt-2'>
             Los encabezados y las etiquetas describen el tema o el propósito.
           </p>
 
@@ -932,7 +933,7 @@ const PatternsComponents: React.FC = () => {
           >
             Success Criterion 3.2.2 On Input (Level A)
           </a>
-          <p>
+          <p className='mt-2'>
             El cambio de la configuración de cualquier componente de la interfaz no provoca automáticamente un cambio de contexto a menos que la persona usuaria haya sido informada del comportamiento antes de utilizar el componente.
           </p>
 
@@ -944,7 +945,7 @@ const PatternsComponents: React.FC = () => {
           >
             Success Criterion Labels or Instructions (Level A)
           </a>
-          <p>
+          <p className='mt-2'>
             Se proporcionan etiquetas o instrucciones cuando el contenido requiere la entrada de la persona usuaria.
           </p>
 
@@ -956,7 +957,7 @@ const PatternsComponents: React.FC = () => {
           >
             Success Criterion 4.1.2 Name, Role, Value (Level A)
           </a>
-          <p>
+          <p className='mt-2'>
             Para todos los componentes de la interfaz de usuario (incluidos, entre otros: elementos de formulario, enlaces y componentes generados por scripts), el nombre y la función se pueden determinar mediante programación; los estados, propiedades y valores que puede establecer el usuario se pueden configurar mediante programación; y la notificación de cambios en estos elementos está disponible para los agentes de usuario, incluidas las tecnologías de asistencia.
           </p>
 
@@ -968,8 +969,8 @@ const PatternsComponents: React.FC = () => {
           >
             G98: Proporcionar la posibilidad de revisar y corregir las respuestas antes de enviarlas
           </a>
-          <p>
-            Antes de que se produzca el paso final que compromete la transacción, se proporcionan instrucciones para solicitar que la persona usuaria revise los datos ingresados y confirme. Una vez que la persona confirma, la transacción se completa. 
+          <p className='mt-2'>
+            Antes de que se produzca el paso final que compromete la transacción, se proporcionan instrucciones para solicitar que la persona usuaria revise los datos ingresados y confirme. Una vez que la persona confirma, la transacción se completa.
           </p>
         </>
       ),

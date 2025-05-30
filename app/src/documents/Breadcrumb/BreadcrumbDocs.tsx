@@ -19,7 +19,7 @@ const BreadcrumbDocs: React.FC = () => {
         <>
           <CodeBox codeHTML={BREADCRUMB}>
             <div className="container">
-              <nav aria-label="Navegación secundaria">
+              <nav aria-label="Ruta de navegación">
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
                     <LinkClient>Inicio</LinkClient>

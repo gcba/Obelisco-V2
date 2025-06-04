@@ -12,7 +12,6 @@ import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import { PATTERNS_ACCESSIBILTY } from './code-views';
 
-
 const basePath = '/Obelisco-V2';
 
 const PatternsComponents: React.FC = () => {
@@ -600,16 +599,15 @@ const PatternsComponents: React.FC = () => {
             />
           </div>
         </>
-      )
-    },
     {
-      title: 'Agrupación de campos',
+      subtitle: 'Agrupación de campos',
       content: (
         <>
           <p className="mb-4">
-            Los campos del formulario que comparten un propósito común, como &quot;Ciudad&quot; y &quot;Código postal&quot;, pueden
-            <strong> agruparse de forma horizontal </strong>dentro de un contenedor para mejorar la comprensión visual
-            y facilitar la navegación a las personas que utilizan tecnologías de asistencia.
+            Los campos del formulario que comparten un propósito común, como &quot;Ciudad&quot; y &quot;Código
+            postal&quot;, pueden
+            <strong> agruparse de forma horizontal </strong>dentro de un contenedor para mejorar la comprensión visual y
+            facilitar la navegación a las personas que utilizan tecnologías de asistencia.
           </p>
           <Image
             src={`${basePath}/images/patterns/diagrams/agrupacion_campos.svg`}
@@ -636,21 +634,6 @@ const PatternsComponents: React.FC = () => {
                 </p>
               </div>
             </div>
-            {/* <div className='mb-4'>
-              <Image
-                src={`${basePath}/images/patterns/diagrams/uso_incorrecto_2.svg`}
-                alt="Mala práctica de uso ejemplo 2"
-                width="800"
-                height="242"
-                className="img-fluid"
-              />
-              <div className="d-flex pt-2">
-                <span className="material-symbols-rounded text-danger">close</span>
-                <p className="mb-0">No exceder a más de tres campos en un conjunto horizontal. En la mayoría de los casos,
-                  es recomendable limitar a dos el número de columnas de un formulario o sección.
-                </p>
-              </div>
-            </div> */}
             <div className='mb-4'>
               <Image
                 src={`${basePath}/images/patterns/diagrams/uso_correcto.svg`}
@@ -670,19 +653,24 @@ const PatternsComponents: React.FC = () => {
             </div>
           </div>
         </>
-      )
+      ),
     },
     {
-      title: 'Alineación con botones',
+      subtitle: 'Alineación de botones',
       content: (
         <>
           <p>
-            En formularios integrados en la página, donde no se requiere continuidad o navegación progresiva,
-            las acciones principales se alinearan a la izquierda del cuerpo de la página y al final del formulario.
+            En formularios integrados en la página, donde no se requiere continuidad o navegación progresiva, las
+            acciones principales se alinearan a la izquierda del cuerpo de la página y al final del formulario.
           </p>
-          <p className='mb-4' >
-            Podés consultar la <a href="https://gcba.github.io/Obelisco-V2/components/button" target="_blank"> documentación de
-              Botones </a> para conocer las combinaciones y alineaciones recomendadas en dispositivos desktop, tablet y mobile.
+          <p className="mb-4">
+            Podés consultar la{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/components/button" target="_blank">
+              {' '}
+              documentación de Botones{' '}
+            </a>{' '}
+            para conocer las combinaciones y alineaciones recomendadas en dispositivos desktop, tablet y mobile.
+
           </p>
           <Image
             src={`${basePath}/images/patterns/diagrams/alineacion_botones.svg`}
@@ -692,7 +680,7 @@ const PatternsComponents: React.FC = () => {
             className="img-fluid"
           />
         </>
-      )
+      ),
     },
     {
       title: 'Espaciados',
@@ -747,7 +735,7 @@ const PatternsComponents: React.FC = () => {
               </li>
               <li>
                 El encabezado de la sección debe describir cómo se relacionan los campos de entrada entre si, y en relación al formulario en su totalidad.
-                Por ejemplo, “Información personal” o “Información de pago”.
+                Por ejemplo, &quot;Información personal&quot; o &quot;Información de pago&quot;.
               </li>
               <li>
                 La separación entre secciones para dispositivos desktop es de 32px. para ayudar a las personas usuarias a comprender

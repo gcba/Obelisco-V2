@@ -86,7 +86,7 @@ const FormSelectionDocs: React.FC = () => {
         <CodeBox codeHTML={RADIO_GROUP}>
           <div className="container">
             <div className="col-12 col-lg-6">
-              <div className="form-input-group" role="radioGroup" aria-labelledby="group-label">
+              <div className="form-input-group" role="radiogroup" aria-labelledby="group-label">
                 <div className="form-label-container">
                   <span id="group-label" className="form-label">
                     Ejemplo Radio Group
@@ -266,7 +266,7 @@ const FormSelectionDocs: React.FC = () => {
         <CodeBox codeHTML={CHECKBOX_GROUP}>
           <div className="container">
             <div className="col-12 col-lg-6">
-              <div className="form-input-group" role="checkboxGroup" aria-labelledby="group-label">
+              <div className="form-input-group" role="checkboxgroup" aria-labelledby="group-label">
                 <div className="form-label-container">
                   <span id="group-label" className="form-label">
                     Seleccioná tus hobbies:

@@ -75,7 +75,7 @@ export const templates = [{ text: 'Plantillas', url: 'https://gcba.github.io/obe
 
 
 export const patterns = [{ text: 'Construir un formulario', url: '/patterns', id: 1 }];
-export const api = [{ text: 'api', url: '/api', id: 1 }];
+export const api = [{ text: 'Obelisco API', url: '/api', id: 1 }];
 
 export const versions = [
   { text: 'Obelisco v.2', url: '/documentation', id: 1 },
@@ -136,7 +136,7 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           {pathname.includes('/api') && (
             <div className="nav-left sticky-nav h-auto">
               <div className="nav-left-box-title">
-                <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Patrones</p>
+                <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Obelisco API</p>
               </div>
               <NavLayout items={api} />
             </div>

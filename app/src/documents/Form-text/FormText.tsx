@@ -155,7 +155,7 @@ const FormTextDocs: React.FC = () => {
                     Nombre del selector
                   </label>
                 </div>
-                <select className="form-control form-select" aria-label="Default select example">
+                <select className="form-control form-select" aria-label="Ejemplo de input de selección por defecto">
                   <option value="0">Seleccionar</option>
                   <option value="1">Opción</option>
                   <option value="2">Opción</option>
@@ -266,7 +266,7 @@ const FormTextDocs: React.FC = () => {
                 <select
                   id="select-example"
                   className="form-control form-select"
-                  aria-label="Default select example"
+                  aria-label="Ejemplo de input de selección por defecto"
                   disabled
                   defaultValue="1"
                 >

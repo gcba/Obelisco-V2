@@ -67,7 +67,7 @@ export const INPUT_SELECT = `
     Nombre del selector *
   </label>
 </div>
-<select class="form-control form-select" aria-label="Default select example">
+<select class="form-control form-select" aria-label="Ejemplo de input de selección por defecto">
     <option value="0">Seleccionar</option>
     <option value="1">Opción</option>
     <option value="2">Opción</option>
@@ -155,7 +155,7 @@ export const INPUT_DISABLED = `  <div class="container">
           Ejemplo campo de selección.
         </label>
       </div>
-      <select class="form-control form-select" aria-label="Default select example" disabled>
+      <select class="form-control form-select" aria-label="Ejemplo de input de selección por defecto" disabled>
         <option selected>Campo de selección</option>
         <option value="1">Opción</option>
         <option value="2">Opción</option>

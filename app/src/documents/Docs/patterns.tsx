@@ -555,13 +555,18 @@ const PatternsComponents: React.FC = () => {
       content: (
         <>
           <p className="text-md">
-            La estructura principal del formulario se organiza a partir de un contenedor que agrupa todos los elementos del formulario:
-            campos de entrada, títulos, subtítulos y botones. Este contenedor se adapta al ancho máximo disponible según el dispositivo:
+            La estructura principal del formulario se organiza a partir de un contenedor que agrupa todos los elementos
+            del formulario: campos de entrada, títulos, subtítulos y botones. Este contenedor se adapta al ancho máximo
+            disponible según el dispositivo:
           </p>
           <div className="list-informative">
             <ul className="list-informative-bullet">
-              <li>En <i>desktop</i>, se ubica dentro de 8 columnas.</li>
-              <li>En <i>tablet y mobile</i>, ocupa el 100% del ancho disponible.</li>
+              <li>
+                En <i>desktop</i>, se ubica dentro de 8 columnas.
+              </li>
+              <li>
+                En <i>tablet y mobile</i>, ocupa el 100% del ancho disponible.
+              </li>
             </ul>
           </div>
           <div className="mt-4 mb-3">
@@ -581,13 +586,16 @@ const PatternsComponents: React.FC = () => {
       content: (
         <>
           <p className="text-md">
-            <strong className="fw-semibold">Organizá los campos en una sola columna, ubicándolos uno debajo del otro</strong>.
-            Esta disposición respeta el flujo natural de lectura,  facilita la comprensión del contenido y reduce la carga mental
-            al permitir que la información se procese de forma secuencial.
+            <strong className="fw-semibold">
+              Organizá los campos en una sola columna, ubicándolos uno debajo del otro
+            </strong>
+            . Esta disposición respeta el flujo natural de lectura, facilita la comprensión del contenido y reduce la
+            carga mental al permitir que la información se procese de forma secuencial.
           </p>
-          <p className='mb-4' >
+          <p className="mb-4">
             <strong className="fw-semibold">El ancho de cada campo </strong>debe ser proporcional a la longitud del
-            contenido esperado, ayudando a la persona usuaria a anticipar la cantidad y el tipo de información que debe ingresar.
+            contenido esperado, ayudando a la persona usuaria a anticipar la cantidad y el tipo de información que debe
+            ingresar.
           </p>
           <div className="mb-3">
             <Image
@@ -599,6 +607,8 @@ const PatternsComponents: React.FC = () => {
             />
           </div>
         </>
+      ),
+    },
     {
       subtitle: 'Agrupación de campos',
       content: (
@@ -616,9 +626,9 @@ const PatternsComponents: React.FC = () => {
             height="200"
             className="img-fluid"
           />
-          <div style={{ marginTop: "32px" }}>
+          <div style={{ marginTop: '32px' }}>
             <p className="text-xl mb-4">Ejemplos de uso</p>
-            <div className='mb-4' >
+            <div className="mb-4">
               <Image
                 src={`${basePath}/images/patterns/diagrams/uso_incorrecto_1.svg`}
                 alt="Mala práctica de uso ejemplo 1"
@@ -629,12 +639,13 @@ const PatternsComponents: React.FC = () => {
               <div className="d-flex pt-2">
                 <span className="material-symbols-rounded text-danger">close</span>
                 <p className="mb-0">
-                  <strong className="fw-semibold">Evitar agrupar más de tres campos en una misma línea</strong>. Un exceso de campos en
-                  disposición horizontal dificulta la lectura, genera desalineaciones y puede afectar negativamente la accesibilidad.
+                  <strong className="fw-semibold">Evitar agrupar más de tres campos en una misma línea</strong>. Un
+                  exceso de campos en disposición horizontal dificulta la lectura, genera desalineaciones y puede
+                  afectar negativamente la accesibilidad.
                 </p>
               </div>
             </div>
-            <div className='mb-4'>
+            <div className="mb-4">
               <Image
                 src={`${basePath}/images/patterns/diagrams/uso_correcto.svg`}
                 alt="Buena práctica de uso"
@@ -645,9 +656,11 @@ const PatternsComponents: React.FC = () => {
               <div className="d-flex pt-2">
                 <span className="material-symbols-rounded text-success">check</span>
                 <p className="mb-0">
-                  <strong className="fw-semibold">Mantener un número consistente de columnas a lo largo del formulario</strong> favorece la
-                  lectura y la previsibilidad visual. En la mayoría de los casos, se recomienda no superar los dos campos por fila para
-                  mantener una estructura clara y legible.
+                  <strong className="fw-semibold">
+                    Mantener un número consistente de columnas a lo largo del formulario
+                  </strong>{' '}
+                  favorece la lectura y la previsibilidad visual. En la mayoría de los casos, se recomienda no superar
+                  los dos campos por fila para mantener una estructura clara y legible.
                 </p>
               </div>
             </div>
@@ -670,7 +683,6 @@ const PatternsComponents: React.FC = () => {
               documentación de Botones{' '}
             </a>{' '}
             para conocer las combinaciones y alineaciones recomendadas en dispositivos desktop, tablet y mobile.
-
           </p>
           <Image
             src={`${basePath}/images/patterns/diagrams/alineacion_botones.svg`}
@@ -687,8 +699,8 @@ const PatternsComponents: React.FC = () => {
       content: (
         <>
           <p>
-            Para mantener una estructura clara, legible y alineada al sistema de grillas, recomendamos los siguientes espaciados
-            entre campos para dispositivos desktop:
+            Para mantener una estructura clara, legible y alineada al sistema de grillas, recomendamos los siguientes
+            espaciados entre campos para dispositivos desktop:
           </p>
           <div className="list-informative pb-4">
             <ul className="list-informative-bullet">
@@ -696,7 +708,9 @@ const PatternsComponents: React.FC = () => {
                 <strong>Espaciado vertical de 24px:</strong> Usado para separar campos dispuestos uno debajo del otro.
               </li>
               <li>
-                <strong>Espaciado horizontal de 16px:</strong> Entre campos relacionados ubicados en una misma fila, por ejemplo, un campo para seleccionar el tipo de documento y un campo de texto para escribir el número de documento.
+                <strong>Espaciado horizontal de 16px:</strong> Entre campos relacionados ubicados en una misma fila, por
+                ejemplo, un campo para seleccionar el tipo de documento y un campo de texto para escribir el número de
+                documento.
               </li>
             </ul>
           </div>
@@ -707,8 +721,9 @@ const PatternsComponents: React.FC = () => {
             height="242"
             className="img-fluid"
           />
-          <p className="mt-4" style={{ marginBottom: '12px' }} >
-            Para dispositivos <i>mobile</i>, la disposición de los campos es uno debajo de otro, y el valor de la separación entre campos es de 12px.
+          <p className="mt-4" style={{ marginBottom: '12px' }}>
+            Para dispositivos <i>mobile</i>, la disposición de los campos es uno debajo de otro, y el valor de la
+            separación entre campos es de 12px.
           </p>
           <Image
             src={`${basePath}/images/patterns/diagrams/espaciados_mobile.svg`}
@@ -718,28 +733,31 @@ const PatternsComponents: React.FC = () => {
             className="img-fluid"
           />
         </>
-      )
+      ),
     },
     {
       title: 'Secciones por temas',
       content: (
         <>
           <p>
-            Para reforzar la comprensión del formulario es recomendado agrupar los temas relacionados en secciones con encabezados.
+            Para reforzar la comprensión del formulario es recomendado agrupar los temas relacionados en secciones con
+            encabezados.
           </p>
           <div className="list-informative">
             <ul className="list-informative-bullet">
               <li>
-                <strong>Utilice el nivel de encabezado adecuado</strong>. Para los títulos de las secciones de un formulario utilizar
-                el estilo de texto Encabezado/ H5/ Semibold.
+                <strong>Utilice el nivel de encabezado adecuado</strong>. Para los títulos de las secciones de un
+                formulario utilizar el estilo de texto Encabezado/ H5/ Semibold.
               </li>
               <li>
-                El encabezado de la sección debe describir cómo se relacionan los campos de entrada entre si, y en relación al formulario en su totalidad.
-                Por ejemplo, &quot;Información personal&quot; o &quot;Información de pago&quot;.
+                El encabezado de la sección debe describir cómo se relacionan los campos de entrada entre si, y en
+                relación al formulario en su totalidad. Por ejemplo, &quot;Información personal&quot; o
+                &quot;Información de pago&quot;.
               </li>
               <li>
-                La separación entre secciones para dispositivos desktop es de 32px. para ayudar a las personas usuarias a comprender
-                y organizar la información de manera más rápida y eficiente. En mobile, la separación entre secciones es de 24px.
+                La separación entre secciones para dispositivos desktop es de 32px. para ayudar a las personas usuarias
+                a comprender y organizar la información de manera más rápida y eficiente. En mobile, la separación entre
+                secciones es de 24px.
               </li>
             </ul>
           </div>
@@ -751,15 +769,16 @@ const PatternsComponents: React.FC = () => {
             className="img-fluid mt-4"
           />
         </>
-      )
+      ),
     },
     {
       title: 'Indicador de campo requerido y opcional',
       content: (
         <>
-          <p className='mb-4' >
-            Es un indicador diseñado específicamente para los formularios que indica si un campo es opcional o requerido,
-            y es el método más explícito y transparente para garantizar que las personas usuarias no tengan que hacer suposiciones.
+          <p className="mb-4">
+            Es un indicador diseñado específicamente para los formularios que indica si un campo es opcional o
+            requerido, y es el método más explícito y transparente para garantizar que las personas usuarias no tengan
+            que hacer suposiciones.
           </p>
           <Image
             src={`${basePath}/images/patterns/diagrams/etiquetas_campos.svg`}
@@ -794,16 +813,17 @@ const PatternsComponents: React.FC = () => {
               />
               <div className="d-flex pt-3">
                 <span className="material-symbols-rounded text-success">check</span>
-                <p className="mb-0">Indicá únicamente las excepciones: si la mayoría de los campos son obligatorios, marcá como
-                  &quot;opcional&quot; aquellos que no lo son; si la mayoría son opcionales, marcá como &quot;requerido&quot;
-                  solo los campos obligatorios.
+                <p className="mb-0">
+                  Indicá únicamente las excepciones: si la mayoría de los campos son obligatorios, marcá como
+                  &quot;opcional&quot; aquellos que no lo son; si la mayoría son opcionales, marcá como
+                  &quot;requerido&quot; solo los campos obligatorios.
                 </p>
               </div>
             </div>
           </div>
         </>
-      )
-    }
+      ),
+    },
   ];
 
   const ACCESSIBILITY = [
@@ -812,8 +832,9 @@ const PatternsComponents: React.FC = () => {
       firstTitle: true,
       content: (
         <>
-          <p className="text-md" style={{ marginBottom: "32px" }} >
-            El componente de enlace está construido para ser reconocido por herramientas de asistencia como la navegación por teclado o lectores por voz.
+          <p className="text-md" style={{ marginBottom: '32px' }}>
+            El componente de enlace está construido para ser reconocido por herramientas de asistencia como la
+            navegación por teclado o lectores por voz.
           </p>
 
           <span className="badge badge-default ms-1">TAB</span>
@@ -838,40 +859,57 @@ const PatternsComponents: React.FC = () => {
       title: 'Consideraciones globales de accesibilidad',
       content: (
         <>
-          <p className="text-md">
-            Dependiendo del tipo de campo puede haber lineamientos adicionales.
-          </p>
+          <p className="text-md">Dependiendo del tipo de campo puede haber lineamientos adicionales.</p>
           <ul>
-            <li className='mb-3' >Los campos de formulario siempre deben contar con un Label identificador visible y legible por los lectores de pantalla.</li>
-            <li className='mb-3' >Si la sesión expira, la persona usuaria debe poder reautenticarse y continuar desde donde estaba, sin pérdida de datos. Se recomienda mostrar el tiempo restante de la sesión y advertir con algunos minutos de anticipación antes de que expire.</li>
-            <li className='mb-3' >Las personas deben poder revisar sus datos antes de enviar el formulario, especialmente en casos de formularios multipágina con información legal y/o transacciones irreversibles.</li>
-            <li>Evitar que los campos de formulario cambien automáticamente el contexto (como navegar a otra página o enviar datos) sin que la persona usuaria lo confirme. </li>
+            <li className="mb-3">
+              Los campos de formulario siempre deben contar con un Label identificador visible y legible por los
+              lectores de pantalla.
+            </li>
+            <li className="mb-3">
+              Si la sesión expira, la persona usuaria debe poder reautenticarse y continuar desde donde estaba, sin
+              pérdida de datos. Se recomienda mostrar el tiempo restante de la sesión y advertir con algunos minutos de
+              anticipación antes de que expire.
+            </li>
+            <li className="mb-3">
+              Las personas deben poder revisar sus datos antes de enviar el formulario, especialmente en casos de
+              formularios multipágina con información legal y/o transacciones irreversibles.
+            </li>
+            <li>
+              Evitar que los campos de formulario cambien automáticamente el contexto (como navegar a otra página o
+              enviar datos) sin que la persona usuaria lo confirme.{' '}
+            </li>
           </ul>
         </>
-      )
+      ),
     },
     {
       title: 'Instrucciones del formulario',
       content: (
         <>
           <p>
-            Antes de comenzar un formulario, agregá <strong>instrucciones claras</strong> que ayuden a las personas a completarlo con éxito. Podés indicar qué campos son obligatorios, qué tipo de información se espera y cualquier otra indicación útil. Estas instrucciones deben ir <strong>antes del formulario</strong> para que cualquier persona, incluso quien usa lector de pantalla, pueda acceder a ellas desde el principio.
+            Antes de comenzar un formulario, agregá <strong>instrucciones claras</strong> que ayuden a las personas a
+            completarlo con éxito. Podés indicar qué campos son obligatorios, qué tipo de información se espera y
+            cualquier otra indicación útil. Estas instrucciones deben ir <strong>antes del formulario</strong> para que
+            cualquier persona, incluso quien usa lector de pantalla, pueda acceder a ellas desde el principio.
           </p>
         </>
-      )
+      ),
     },
     {
       title: 'Etiquetado descriptivo',
       content: (
         <>
-          <p className='mb-4' >
-            Para que el formulario funcione correctamente, todos los campos deben estar dentro de la etiqueta <code>{'<form>'}</code>. Esto permite que el sistema pueda enviar la información ingresada y ayudar a que las personas que usan lectores de pantalla entiendan mejor la estructura del formulario y puedan recorrerlo sin problemas.
+          <p className="mb-4">
+            Para que el formulario funcione correctamente, todos los campos deben estar dentro de la etiqueta{' '}
+            <code>{'<form>'}</code>. Esto permite que el sistema pueda enviar la información ingresada y ayudar a que
+            las personas que usan lectores de pantalla entiendan mejor la estructura del formulario y puedan recorrerlo
+            sin problemas.
           </p>
           <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
             {PATTERNS_ACCESSIBILTY}
           </SyntaxHighlighter>
         </>
-      )
+      ),
     },
     {
       title: 'Criterios WCAG aplicados',
@@ -885,8 +923,9 @@ const PatternsComponents: React.FC = () => {
           >
             Success Criterion 1.3.1 Info and Relationships (Level A)
           </a>
-          <p className='mt-2'>
-            La información, la estructura y las relaciones transmitidas a través de la presentación pueden determinarse mediante programación o están disponibles en el texto.
+          <p className="mt-2">
+            La información, la estructura y las relaciones transmitidas a través de la presentación pueden determinarse
+            mediante programación o están disponibles en el texto.
           </p>
 
           <a
@@ -897,8 +936,9 @@ const PatternsComponents: React.FC = () => {
           >
             Success Criterion 2.2.5 Re-authenticating (Level AAA)
           </a>
-          <p className='mt-2'>
-            Cuando una sesión autenticada expira, la persona usuaria puede continuar la actividad sin pérdida de datos después de re-autenticarse.
+          <p className="mt-2">
+            Cuando una sesión autenticada expira, la persona usuaria puede continuar la actividad sin pérdida de datos
+            después de re-autenticarse.
           </p>
 
           <a
@@ -909,9 +949,7 @@ const PatternsComponents: React.FC = () => {
           >
             Success Criterion 2.4.6 Headings and Labels (Level AA)
           </a>
-          <p className='mt-2'>
-            Los encabezados y las etiquetas describen el tema o el propósito.
-          </p>
+          <p className="mt-2">Los encabezados y las etiquetas describen el tema o el propósito.</p>
 
           <a
             className="external"
@@ -921,8 +959,10 @@ const PatternsComponents: React.FC = () => {
           >
             Success Criterion 3.2.2 On Input (Level A)
           </a>
-          <p className='mt-2'>
-            El cambio de la configuración de cualquier componente de la interfaz no provoca automáticamente un cambio de contexto a menos que la persona usuaria haya sido informada del comportamiento antes de utilizar el componente.
+          <p className="mt-2">
+            El cambio de la configuración de cualquier componente de la interfaz no provoca automáticamente un cambio de
+            contexto a menos que la persona usuaria haya sido informada del comportamiento antes de utilizar el
+            componente.
           </p>
 
           <a
@@ -933,7 +973,7 @@ const PatternsComponents: React.FC = () => {
           >
             Success Criterion Labels or Instructions (Level A)
           </a>
-          <p className='mt-2'>
+          <p className="mt-2">
             Se proporcionan etiquetas o instrucciones cuando el contenido requiere la entrada de la persona usuaria.
           </p>
 
@@ -945,8 +985,12 @@ const PatternsComponents: React.FC = () => {
           >
             Success Criterion 4.1.2 Name, Role, Value (Level A)
           </a>
-          <p className='mt-2'>
-            Para todos los componentes de la interfaz de usuario (incluidos, entre otros: elementos de formulario, enlaces y componentes generados por scripts), el nombre y la función se pueden determinar mediante programación; los estados, propiedades y valores que puede establecer el usuario se pueden configurar mediante programación; y la notificación de cambios en estos elementos está disponible para los agentes de usuario, incluidas las tecnologías de asistencia.
+          <p className="mt-2">
+            Para todos los componentes de la interfaz de usuario (incluidos, entre otros: elementos de formulario,
+            enlaces y componentes generados por scripts), el nombre y la función se pueden determinar mediante
+            programación; los estados, propiedades y valores que puede establecer el usuario se pueden configurar
+            mediante programación; y la notificación de cambios en estos elementos está disponible para los agentes de
+            usuario, incluidas las tecnologías de asistencia.
           </p>
 
           <a
@@ -957,8 +1001,10 @@ const PatternsComponents: React.FC = () => {
           >
             G98: Proporcionar la posibilidad de revisar y corregir las respuestas antes de enviarlas
           </a>
-          <p className='mt-2'>
-            Antes de que se produzca el paso final que compromete la transacción, se proporcionan instrucciones para solicitar que la persona usuaria revise los datos ingresados y confirme. Una vez que la persona confirma, la transacción se completa.
+          <p className="mt-2">
+            Antes de que se produzca el paso final que compromete la transacción, se proporcionan instrucciones para
+            solicitar que la persona usuaria revise los datos ingresados y confirme. Una vez que la persona confirma, la
+            transacción se completa.
           </p>
         </>
       ),
@@ -970,7 +1016,7 @@ const PatternsComponents: React.FC = () => {
       <ComponentHeader
         title="Construir un formulario"
         description={[
-          'Los formularios permiten a las personas interactuar con el sistema, ingresando, editando o confirmando información. Un diseño claro y ordenado facilita la comprensión de cada paso y ayuda a completar las tareas sin fricción.'
+          'Los formularios permiten a las personas interactuar con el sistema, ingresando, editando o confirmando información. Un diseño claro y ordenado facilita la comprensión de cada paso y ayuda a completar las tareas sin fricción.',
         ]}
       />
       <Tabs

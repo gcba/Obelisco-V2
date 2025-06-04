@@ -12,4 +12,4 @@ export const PATTERNS_ACCESSIBILTY = `    <form>
          id="fullname" name="fullname"/>    
       </div>
     </form>
-`
+`;

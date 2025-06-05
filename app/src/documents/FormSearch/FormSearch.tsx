@@ -20,7 +20,13 @@ const FormSearchDocs: React.FC = () => {
                   </label>
                 </div>
                 <div className="search-container">
-                  <input type="search" className="form-control input-search" id="search" placeholder="Buscar..." />
+                  <input type="search" 
+                  className="form-control input-search" 
+                  id="search" 
+                  placeholder="Buscar..." 
+                  name="search"
+                  aria-label="Campo de búsqueda"
+                  />
                   <button className="reset" type="reset" aria-label="Borrar"></button>
                 </div>
               </form>
@@ -47,6 +53,8 @@ const FormSearchDocs: React.FC = () => {
                     className="form-control input-search input-search-with-button"
                     id="search-btn"
                     placeholder="Buscar..."
+                    name="search"
+                    aria-label="Campo de búsqueda"
                   />
                   <button className="reset" type="reset" aria-label="Borrar"></button>
                   <button className="button-search" type="submit" aria-label="Buscar"></button>
@@ -75,6 +83,8 @@ const FormSearchDocs: React.FC = () => {
                     className="form-control input-search input-search-with-button"
                     id="search-btn"
                     placeholder="Buscar..."
+                    name="search"
+                    aria-label="Campo de búsqueda"
                     disabled
                   />
                   <button className="reset" type="reset" aria-label="Borrar"></button>

@@ -24,16 +24,17 @@ const FormTextDocs: React.FC = () => {
             <div className="container">
               <div className="col-12 col-lg-6">
                 <div className="form-label-container">
-                  <label htmlFor="exampleInputTexto" className="form-label">
+                  <label htmlFor="input_text" className="form-label">
                     Campo de texto
                   </label>
                 </div>
                 <input
                   type="text"
                   className="form-control"
-                  id="exampleInputTexto"
+                  id="input_text"
+                  name="campoTexto"
                   aria-describedby="Texto"
-                  placeholder="Textos"
+                  placeholder="Ingrese textos"
                 />
                 <p className="form-label-description">Texto de asistencia</p>
               </div>
@@ -50,16 +51,17 @@ const FormTextDocs: React.FC = () => {
             <div className="container">
               <div className="col-12 col-lg-6">
                 <div className="form-label-container">
-                  <label htmlFor="exampleInputNumber" className="form-label">
+                  <label htmlFor="input_number" className="form-label">
                     Campo numérico
                   </label>
                 </div>
                 <input
                   type="number"
                   className="form-control"
-                  id="exampleInputNumber"
+                  id="input_number"
+                  name="campoNumero"
                   aria-describedby="Number"
-                  placeholder="Números"
+                  placeholder="Ingrese números"
                 />
                 <p className="form-label-description">Campo de asistencia</p>
               </div>
@@ -76,16 +78,17 @@ const FormTextDocs: React.FC = () => {
             <div className="container">
               <div className="col-12 col-lg-6">
                 <div className="form-label-container">
-                  <label htmlFor="exampleInputEmail" className="form-label">
+                  <label htmlFor="input-email" className="form-label">
                     Campo de email
                   </label>
                 </div>
                 <input
                   type="email"
                   className="form-control"
-                  id="exampleInputEmail"
+                  id="input-email"
+                  name="campoEmail"
                   aria-describedby="Email"
-                  placeholder="Email@test.com"
+                  placeholder="email@test.com"
                 />
                 <p className="form-label-description">Campo de asistencia</p>
               </div>
@@ -102,14 +105,15 @@ const FormTextDocs: React.FC = () => {
             <div className="container">
               <div className="col-12 col-lg-6">
                 <div className="form-label-container">
-                  <label htmlFor="exampleInputDate" className="form-label">
+                  <label htmlFor="input-date" className="form-label">
                     Nombre del campo
                   </label>
                 </div>
                 <input
                   type="date"
                   className="form-control"
-                  id="exampleInputDate"
+                  id="input-date"
+                  name="campoFecha"
                   aria-describedby="Date"
                   placeholder="Selecciona la fecha"
                 />
@@ -127,13 +131,14 @@ const FormTextDocs: React.FC = () => {
             <div className="container">
               <div className="col-12 col-lg-6">
                 <div className="form-label-container">
-                  <label htmlFor="exampleFormControlTextarea1" className="form-label">
+                  <label htmlFor="input-textarea" className="form-label">
                     Nombre del campo
                   </label>
                 </div>
                 <textarea
                   className="form-control"
-                  id="exampleFormControlTextarea1"
+                  id="input-textarea"
+                  name="campoBloqueTexto"
                   placeholder="Texto de ejemplo"
                 ></textarea>
                 <p className="form-label-description">Campo de asistencia</p>
@@ -151,11 +156,11 @@ const FormTextDocs: React.FC = () => {
             <div className="container">
               <div className="col-12 col-lg-6">
                 <div className="form-label-container">
-                  <label htmlFor="exampleInputEmail" className="form-label">
+                  <label htmlFor="input-select" className="form-label">
                     Nombre del selector
                   </label>
                 </div>
-                <select className="form-control form-select" aria-label="Ejemplo de input de selección por defecto">
+                <select className="form-control form-select" aria-label="Ejemplo de selección por defecto">
                   <option value="0">Seleccionar</option>
                   <option value="1">Opción</option>
                   <option value="2">Opción</option>
@@ -202,7 +207,7 @@ const FormTextDocs: React.FC = () => {
                   type="number"
                   className="form-control"
                   id="example-four-disabled"
-                  aria-describedby="Number"
+                  aria-describedby="campo de número"
                   placeholder="Números"
                   disabled
                 />
@@ -291,14 +296,15 @@ const FormTextDocs: React.FC = () => {
               <div className="col-12 col-lg-6">
                 <div className="p-4 form-bg-light">
                   <div className="form-label-container">
-                    <label htmlFor="exampleInputTextoBg" className="form-label">
+                    <label htmlFor="input-text-bg" className="form-label">
                       Campo de texto con fondo
                     </label>
                   </div>
                   <input
                     type="text"
                     className="form-control"
-                    id="exampleInputTextoBg"
+                    id="input-text-bg"
+                    name="campoTextoBg"
                     aria-describedby="Texto"
                     placeholder="Textos"
                   />

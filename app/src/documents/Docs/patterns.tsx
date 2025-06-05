@@ -860,25 +860,27 @@ const PatternsComponents: React.FC = () => {
       content: (
         <>
           <p className="text-md">Dependiendo del tipo de campo puede haber lineamientos adicionales.</p>
-          <ul>
-            <li className="mb-3">
-              Los campos de formulario siempre deben contar con un Label identificador visible y legible por los
-              lectores de pantalla.
-            </li>
-            <li className="mb-3">
-              Si la sesión expira, la persona usuaria debe poder reautenticarse y continuar desde donde estaba, sin
-              pérdida de datos. Se recomienda mostrar el tiempo restante de la sesión y advertir con algunos minutos de
-              anticipación antes de que expire.
-            </li>
-            <li className="mb-3">
-              Las personas deben poder revisar sus datos antes de enviar el formulario, especialmente en casos de
-              formularios multipágina con información legal y/o transacciones irreversibles.
-            </li>
-            <li>
-              Evitar que los campos de formulario cambien automáticamente el contexto (como navegar a otra página o
-              enviar datos) sin que la persona usuaria lo confirme.{' '}
-            </li>
-          </ul>
+          <div className="list-informative">
+            <ul className="list-informative-bullet">
+              <li>
+                Los campos de formulario siempre deben contar con un Label identificador visible y legible por los
+                lectores de pantalla.
+              </li>
+              <li>
+                Si la sesión expira, la persona usuaria debe poder reautenticarse y continuar desde donde estaba, sin
+                pérdida de datos. Se recomienda mostrar el tiempo restante de la sesión y advertir con algunos minutos de
+                anticipación antes de que expire.
+              </li>
+              <li>
+                Las personas deben poder revisar sus datos antes de enviar el formulario, especialmente en casos de
+                formularios multipágina con información legal y/o transacciones irreversibles.
+              </li>
+              <li>
+                Evitar que los campos de formulario cambien automáticamente el contexto (como navegar a otra página o
+                enviar datos) sin que la persona usuaria lo confirme.{' '}
+              </li>
+            </ul>
+          </div>
         </>
       ),
     },

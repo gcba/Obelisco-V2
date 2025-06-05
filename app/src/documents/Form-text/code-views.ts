@@ -1,73 +1,77 @@
 export const INPUT_TEXT = `  <div class="form-label-container">
-    <label for="exampleInputTexto" class="form-label">
+    <label for="input-text" class="form-label">
       Campo de texto *
     </label>
   </div>
   <input
     type="text"
     class="form-control"
-    id="exampleInputTexto"
+    id="input-text"
+    name="campoTexto"
     aria-describedby="Texto"
-    placeholder="Textos"
+    placeholder="Ingrese Textos"
   />
   <p class="form-label-description">Texto de asistencia</p>
 `;
 export const INPUT_NUMBER = `  <div class="form-label-container">
-    <label for="exampleInputNumber" class="form-label">
+    <label for="input-number" class="form-label">
       Campo numérico *
     </label>
   </div>
   <input
     type="number"
     class="form-control"
-    id="exampleInputNumber"
+    id="input-number"
+    name="campoNumero"
     aria-describedby="Number"
-    placeholder="Números"
+    placeholder="Ingrese Números"
   />
   <p class="form-label-description">Campo de asistencia</p>
 `;
 export const INPUT_MAIL = `  <div class="form-label-container">
-    <label for="exampleInputEmail" class="form-label">
+    <label for="input-email" class="form-label">
       Campo de email *
     </label>
   </div>
   <input
     type="email"
     class="form-control"
-    id="exampleInputEmail"
+    id="input-email"
+    name="campoEmail"
     aria-describedby="Email"
-    placeholder="Email@test.com"
+    placeholder="email@test.com"
   />
   <p class="form-label-description">Campo de asistencia</p>
 `;
 export const INPUT_DATE = `  <div class="form-label-container">
-    <label for="exampleInputDate" class="form-label">
+    <label for="input-date" class="form-label">
       Nombre del campo *
     </label>
   </div>
   <input
     type="date"
     class="form-control"
-    id="exampleInputDate"
+    id="input-date"
+    name="campoFecha"
     aria-describedby="Date"
     placeholder="Selecciona la fecha"
   />
 `;
 export const INPUT_BLOCK = `  <div class="form-label-container">
-    <label for="exampleFormControlTextarea1" class="form-label">
+    <label for="input-textarea" class="form-label">
       Nombre del campo *
     </label>
   </div>
-  <textarea class="form-control" id="exampleFormControlTextarea1" ></textarea>
+  <textarea class="form-control" id="input-textarea" name="campoBloqueTexto" placeholder="Texto de ejemplo"></textarea>
   <p class="form-label-description">Campo de asistencia</p>
 `;
 export const INPUT_SELECT = `
 <div class="form-label-container">
-  <label for="exampleInputEmail" class="form-label">
+  <label for="input-select" class="form-label">
     Nombre del selector *
   </label>
 </div>
-<select class="form-control form-select" aria-label="Ejemplo de input de selección por defecto">
+<select class="form-control form-select" aria-label="Ejemplo de selección por defecto">
     <option value="0">Seleccionar</option>
     <option value="1">Opción</option>
     <option value="2">Opción</option>
@@ -86,7 +90,7 @@ export const INPUT_DISABLED = `  <div class="container">
         type="text"
         class="form-control"
         id="example-five"
-        aria-describedby="Texto"
+        aria-describedby="Campo de texto"
         placeholder="Textos"
         disabled
       />
@@ -102,7 +106,7 @@ export const INPUT_DISABLED = `  <div class="container">
         type="number"
         class="form-control"
         id="example-four"
-        aria-describedby="Number"
+        aria-describedby="campo de número"
         placeholder="Números"
         disabled
       />
@@ -168,14 +172,15 @@ export const INPUT_DISABLED = `  <div class="container">
 export const INPUT_BACKGROUND = `
 <div class="p-4 form-bg-light">
   <div class="form-label-container">
-    <label for="exampleInputTextoBg" class="form-label">
+    <label for="input-text-bg" class="form-label">
       Ejemplo campo de texto con fondo
     </label>
   </div>
   <input
     type="text"
     class="form-control"
-    id="exampleInputTextoBg"
+    id="input-text-bg"
+    name="campoTextoBg"
     aria-describedby="Texto"
     placeholder="Textos"
   />

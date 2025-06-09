@@ -32,6 +32,7 @@ const FormValidationDocs: React.FC = () => {
                   type="text"
                   className="form-control is-invalid"
                   id="exampleInputTexto"
+                  name="campoTexto"
                   aria-describedby="Text"
                   aria-required="true"
                   placeholder="Texto"
@@ -60,6 +61,7 @@ const FormValidationDocs: React.FC = () => {
                   type="text"
                   className="form-control"
                   id="exampleInputNumber"
+                  name="campoNumero"
                   aria-describedby="Text"
                   aria-required="true"
                   placeholder="Texto"
@@ -76,7 +78,7 @@ const FormValidationDocs: React.FC = () => {
             <div className="container">
               <div className="col-12 col-lg-6">
                 <div className="form-label-container">
-                  <label htmlFor="exampleInputText" className="form-label">
+                  <label htmlFor="exampleInputEmail" className="form-label">
                     Label
                   </label>
                   <span className="badge-forms badge-required-forms">Requerido</span>
@@ -84,7 +86,8 @@ const FormValidationDocs: React.FC = () => {
                 <input
                   type="email"
                   className="form-control is-invalid"
-                  id="ejemplo-3-1"
+                  id="exampleInputEmail"
+                  name="campoEmail"
                   aria-describedby="Email"
                   aria-required="true"
                   placeholder="Email@test.com"
@@ -104,7 +107,7 @@ const FormValidationDocs: React.FC = () => {
             <div className="container">
               <div className="col-12 col-lg-6">
                 <div className="form-label-container">
-                  <label htmlFor="ejemplo-4" className="form-label">
+                  <label htmlFor="exampleInputDate" className="form-label">
                     Ejemplo campo de fecha
                   </label>
                   <span className="badge-forms badge-optional-forms">Opcional</span>
@@ -112,7 +115,8 @@ const FormValidationDocs: React.FC = () => {
                 <input
                   type="date"
                   className="form-control is-valid"
-                  id="ejemplo-4"
+                  id="exampleInputDate"
+                  name="campoFecha"
                   aria-describedby="Date"
                   aria-required="true"
                   placeholder="selecciona tu fecha"
@@ -132,7 +136,7 @@ const FormValidationDocs: React.FC = () => {
             <div className="container">
               <div className="col-12 col-lg-6">
                 <div className="form-label-container">
-                  <label htmlFor="ejemplo-5" className="form-label">
+                  <label htmlFor="exampleInputTextarea" className="form-label">
                     Ejemplo TextArea
                   </label>
                   <span className="badge-forms badge-required-forms">Requerido</span>
@@ -140,7 +144,8 @@ const FormValidationDocs: React.FC = () => {
                 </div>
                 <textarea
                   className="form-control is-invalid"
-                  id="ejemplo-5"
+                  id="exampleInputTextarea"
+                  name="campoTextarea"
                   aria-describedby="TextArea"
                   aria-required="true"
                 ></textarea>

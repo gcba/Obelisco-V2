@@ -6,6 +6,7 @@ export const INPUT_VALIDATION_TEXT = `    <div class="form-label-container">
       type="text" 
       class="form-control is-invalid" 
       id="exampleInputTexto" 
+      name="campoTexto"
       aria-describedby="Text" 
       aria-required="true"
       placeholder="Texto" 
@@ -26,6 +27,7 @@ export const INPUT_VALIDATION_NUMBER = `    <div class="form-label-container">
       type="text" 
       class="form-control" 
       id="exampleInputNumber" 
+      name="campoNumero"
       aria-describedby="Text"
       aria-required="true"
       placeholder="Texto" 
@@ -36,13 +38,14 @@ export const INPUT_VALIDATION_NUMBER = `    <div class="form-label-container">
 `;
 
 export const INPUT_VALIDATION_MAIL = `    <div class="form-label-container">
-      <label for="exampleInputText" class="form-label">Label</label>
+      <label for="exampleInputEmail" class="form-label">Label</label>
       <span class="badge-forms badge-required-forms">Requerido</span>
     </div>
     <input 
       type="email" 
       class="form-control is-invalid" 
-      id="ejemplo-3-1" 
+      id="exampleInputEmail"
+      name="campoEmail"
       aria-describedby="Email"
       aria-required="true"
       placeholder="Email@test.com"
@@ -56,13 +59,14 @@ export const INPUT_VALIDATION_MAIL = `    <div class="form-label-container">
 `;
 
 export const INPUT_VALIDATION_DATE = `    <div class="form-label-container">
-      <label for="ejemplo-4" class="form-label">Ejemplo campo de fecha</label>
+      <label for="exampleInputDate" class="form-label">Ejemplo campo de fecha</label>
       <span class="badge-forms badge-required-forms">Requerido</span>
     </div>
     <input 
       type="date" 
       class="form-control is-valid" 
-      id="ejemplo-4" 
+      id="exampleInputDate"
+      name="campoFecha" 
       aria-describedby="Date" 
       aria-required="true"
       placeholder="selecciona tu fecha" 
@@ -76,13 +80,14 @@ export const INPUT_VALIDATION_DATE = `    <div class="form-label-container">
 `;
 
 export const INPUT_VALIDATION_TEXTAREA = `    <div class="form-label-container">
-      <label for="ejemplo-5" class="form-label">Ejemplo TextArea</label>
+      <label for="exampleInputTextarea" class="form-label">Ejemplo TextArea</label>
       <span class="badge-forms badge-required-forms">Requerido</span>
       <span className="form-label-number">0/100</span>
     </div>
     <textarea 
       class="form-control is-invalid" 
-      id="ejemplo-5" 
+      id="exampleInputTextarea"
+      name="campoTextarea" 
       aria-describedby="TextArea"
       aria-required="true"
       ></textarea>

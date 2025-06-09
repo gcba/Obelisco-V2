@@ -5,8 +5,9 @@ export const FILE_DEFAULT = `    <div class="form-label-container">
     <input 
       type="file" 
       class="form-control" 
-      id="exampleInputFile" 
-      aria-describedby="File"
+      id="exampleInputFile"
+      name="uploadedFile"
+      aria-describedby="carga de archivo"
       accept="image/png, image/jpeg" 
     />
     <p class="form-label-description">
@@ -21,9 +22,10 @@ export const FILE_DISABLED = `    <div class="form-label-container">
     <input 
       type="file" 
       class="form-control" 
-      id="exampleInputFile" 
+      id="exampleInputFile"
+      name="uploadedFile" 
       accept="image/png, image/jpeg"
-      aria-describedby="File"
+      aria-describedby="carga de archivo"
       disabled 
     />
     <p class="form-label-description">

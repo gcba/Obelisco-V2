@@ -4,9 +4,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
+
+import { PATTERNS_ACCESSIBILTY } from './code-views';
 
 const basePath = '/Obelisco-V2';
 
@@ -101,7 +105,7 @@ const PatternsComponents: React.FC = () => {
       content: <></>,
     },
     {
-      subtitle: 'Título del formulario',
+      title: 'Título del formulario',
       content: (
         <>
           <p className="text-md mb-4">Identifica al formulario y brinda información sobre la acción a realizar.</p>
@@ -140,7 +144,7 @@ const PatternsComponents: React.FC = () => {
       ),
     },
     {
-      subtitle: 'Bajada descriptiva',
+      title: 'Bajada descriptiva',
       content: (
         <>
           <p className="text-md mb-4">
@@ -195,7 +199,7 @@ const PatternsComponents: React.FC = () => {
       ),
     },
     {
-      subtitleBold: 'Inputs de texto',
+      titleBold: 'Inputs de texto',
       content: (
         <>
           <p className="text-md">
@@ -342,7 +346,7 @@ const PatternsComponents: React.FC = () => {
       ),
     },
     {
-      subtitleBold: 'Input de búsqueda',
+      titleBold: 'Input de búsqueda',
       content: (
         <>
           <p className="text-md">
@@ -370,7 +374,7 @@ const PatternsComponents: React.FC = () => {
       ),
     },
     {
-      subtitleBold: 'Inputs de selección',
+      titleBold: 'Inputs de selección',
       content: (
         <>
           <p className="text-md">
@@ -438,7 +442,7 @@ const PatternsComponents: React.FC = () => {
       ),
     },
     {
-      subtitleBold: 'Input de carga de archivo',
+      titleBold: 'Input de carga de archivo',
       content: (
         <>
           <p className="text-md">
@@ -544,7 +548,7 @@ const PatternsComponents: React.FC = () => {
     },
   ];
 
-  const Diagramacion = [
+  const DIAGRAMACION = [
     {
       title: 'Estructura',
       firstTitle: true,
@@ -641,21 +645,6 @@ const PatternsComponents: React.FC = () => {
                 </p>
               </div>
             </div>
-            {/* <div className='mb-4'>
-              <Image
-                src={`${basePath}/images/patterns/diagrams/uso_incorrecto_2.svg`}
-                alt="Mala práctica de uso ejemplo 2"
-                width="800"
-                height="242"
-                className="img-fluid"
-              />
-              <div className="d-flex pt-2">
-                <span className="material-symbols-rounded text-danger">close</span>
-                <p className="mb-0">No exceder a más de tres campos en un conjunto horizontal. En la mayoría de los casos,
-                  es recomendable limitar a dos el número de columnas de un formulario o sección.
-                </p>
-              </div>
-            </div> */}
             <div className="mb-4">
               <Image
                 src={`${basePath}/images/patterns/diagrams/uso_correcto.svg`}
@@ -680,7 +669,7 @@ const PatternsComponents: React.FC = () => {
       ),
     },
     {
-      subtitle: 'Alineación con botones',
+      subtitle: 'Alineación de botones',
       content: (
         <>
           <p>
@@ -762,7 +751,8 @@ const PatternsComponents: React.FC = () => {
               </li>
               <li>
                 El encabezado de la sección debe describir cómo se relacionan los campos de entrada entre si, y en
-                relación al formulario en su totalidad. Por ejemplo, “Información personal” o “Información de pago”.
+                relación al formulario en su totalidad. Por ejemplo, &quot;Información personal&quot; o
+                &quot;Información de pago&quot;.
               </li>
               <li>
                 La separación entre secciones para dispositivos desktop es de 32px. para ayudar a las personas usuarias
@@ -836,6 +826,193 @@ const PatternsComponents: React.FC = () => {
     },
   ];
 
+  const ACCESSIBILITY = [
+    {
+      title: 'Navegación alternativa',
+      firstTitle: true,
+      content: (
+        <>
+          <p className="text-md" style={{ marginBottom: '32px' }}>
+            El componente de enlace está construido para ser reconocido por herramientas de asistencia como la
+            navegación por teclado o lectores por voz.
+          </p>
+
+          <span className="badge badge-default ms-1">TAB</span>
+          <span className="badge badge-default">ENTER</span>
+          <p className="text-md mb-4 mt-2">
+            Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Además, con
+            el <i>enter</i>, puede accionar los elementos sobre los que esté posicionada como botones, enlaces, entre
+            otros.
+          </p>
+
+          <Image
+            src={`${basePath}/images/patterns/accessibility/accessibility_navegacion_alternativa.svg`}
+            alt="Accesibilidad en navegación alternativa por TAB"
+            width="800"
+            height="200"
+            className="img-fluid"
+          />
+        </>
+      ),
+    },
+    {
+      title: 'Consideraciones globales de accesibilidad',
+      content: (
+        <>
+          <p className="text-md">Dependiendo del tipo de campo puede haber lineamientos adicionales.</p>
+          <div className="list-informative">
+            <ul className="list-informative-bullet">
+              <li>
+                Los campos de formulario siempre deben contar con un Label identificador visible y legible por los
+                lectores de pantalla.
+              </li>
+              <li>
+                Si la sesión expira, la persona usuaria debe poder reautenticarse y continuar desde donde estaba, sin
+                pérdida de datos. Se recomienda mostrar el tiempo restante de la sesión y advertir con algunos minutos
+                de anticipación antes de que expire.
+              </li>
+              <li>
+                Las personas deben poder revisar sus datos antes de enviar el formulario, especialmente en casos de
+                formularios multipágina con información legal y/o transacciones irreversibles.
+              </li>
+              <li>
+                Evitar que los campos de formulario cambien automáticamente el contexto (como navegar a otra página o
+                enviar datos) sin que la persona usuaria lo confirme.{' '}
+              </li>
+            </ul>
+          </div>
+        </>
+      ),
+    },
+    {
+      title: 'Instrucciones del formulario',
+      content: (
+        <>
+          <p>
+            Antes de comenzar un formulario, agregá <strong>instrucciones claras</strong> que ayuden a las personas a
+            completarlo con éxito. Podés indicar qué campos son obligatorios, qué tipo de información se espera y
+            cualquier otra indicación útil. Estas instrucciones deben ir <strong>antes del formulario</strong> para que
+            cualquier persona, incluso quien usa lector de pantalla, pueda acceder a ellas desde el principio.
+          </p>
+        </>
+      ),
+    },
+    {
+      title: 'Etiquetado descriptivo',
+      content: (
+        <>
+          <p className="mb-4">
+            Para que el formulario funcione correctamente, todos los campos deben estar dentro de la etiqueta{' '}
+            <code>{'<form>'}</code>. Esto permite que el sistema pueda enviar la información ingresada y ayudar a que
+            las personas que usan lectores de pantalla entiendan mejor la estructura del formulario y puedan recorrerlo
+            sin problemas.
+          </p>
+          <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
+            {PATTERNS_ACCESSIBILTY}
+          </SyntaxHighlighter>
+        </>
+      ),
+    },
+    {
+      title: 'Criterios WCAG aplicados',
+      content: (
+        <>
+          <a
+            className="external"
+            href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Success Criterion 1.3.1 Info and Relationships (Level A)
+          </a>
+          <p className="mt-2">
+            La información, la estructura y las relaciones transmitidas a través de la presentación pueden determinarse
+            mediante programación o están disponibles en el texto.
+          </p>
+
+          <a
+            className="external"
+            href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Success Criterion 2.2.5 Re-authenticating (Level AAA)
+          </a>
+          <p className="mt-2">
+            Cuando una sesión autenticada expira, la persona usuaria puede continuar la actividad sin pérdida de datos
+            después de re-autenticarse.
+          </p>
+
+          <a
+            className="external"
+            href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Success Criterion 2.4.6 Headings and Labels (Level AA)
+          </a>
+          <p className="mt-2">Los encabezados y las etiquetas describen el tema o el propósito.</p>
+
+          <a
+            className="external"
+            href="https://www.w3.org/WAI/WCAG21/Understanding/resize-text"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Success Criterion 3.2.2 On Input (Level A)
+          </a>
+          <p className="mt-2">
+            El cambio de la configuración de cualquier componente de la interfaz no provoca automáticamente un cambio de
+            contexto a menos que la persona usuaria haya sido informada del comportamiento antes de utilizar el
+            componente.
+          </p>
+
+          <a
+            className="external"
+            href="https://www.w3.org/WAI/WCAG21/Understanding/reflow.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Success Criterion Labels or Instructions (Level A)
+          </a>
+          <p className="mt-2">
+            Se proporcionan etiquetas o instrucciones cuando el contenido requiere la entrada de la persona usuaria.
+          </p>
+
+          <a
+            className="external"
+            href="https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Success Criterion 4.1.2 Name, Role, Value (Level A)
+          </a>
+          <p className="mt-2">
+            Para todos los componentes de la interfaz de usuario (incluidos, entre otros: elementos de formulario,
+            enlaces y componentes generados por scripts), el nombre y la función se pueden determinar mediante
+            programación; los estados, propiedades y valores que puede establecer el usuario se pueden configurar
+            mediante programación; y la notificación de cambios en estos elementos está disponible para los agentes de
+            usuario, incluidas las tecnologías de asistencia.
+          </p>
+
+          <a
+            className="external"
+            href="https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            G98: Proporcionar la posibilidad de revisar y corregir las respuestas antes de enviarlas
+          </a>
+          <p className="mt-2">
+            Antes de que se produzca el paso final que compromete la transacción, se proporcionan instrucciones para
+            solicitar que la persona usuaria revise los datos ingresados y confirme. Una vez que la persona confirma, la
+            transacción se completa.
+          </p>
+        </>
+      ),
+    },
+  ];
+
   return (
     <>
       <ComponentHeader
@@ -849,8 +1026,13 @@ const PatternsComponents: React.FC = () => {
         customSections={[
           {
             title: 'Diagramación',
+            id: 'layout',
+            sectionContent: DIAGRAMACION,
+          },
+          {
+            title: 'Accesibilidad',
             id: 'accessibility',
-            sectionContent: Diagramacion,
+            sectionContent: ACCESSIBILITY,
           },
         ]}
       />

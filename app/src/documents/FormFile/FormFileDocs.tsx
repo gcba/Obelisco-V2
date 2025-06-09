@@ -22,7 +22,14 @@ const FormFileDocs: React.FC = () => {
                 </label>
                 <span className="badge-forms badge-required-forms">Requerido</span>
               </div>
-              <input type="file" className="form-control" id="exampleInputFile" name="uploadedFile" aria-describedby="carga de archivo" accept="image/png, image/jpeg" />
+              <input
+                type="file"
+                className="form-control"
+                id="exampleInputFile"
+                name="uploadedFile"
+                aria-describedby="carga de archivo"
+                accept="image/png, image/jpeg"
+              />
               <p className="form-label-description">
                 Este es un texto de ayuda que da mas información sobre el Input. Es opcional, pero recomendado, y de no
                 más de 3 líneas.

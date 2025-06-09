@@ -20,12 +20,13 @@ const FormSearchDocs: React.FC = () => {
                   </label>
                 </div>
                 <div className="search-container">
-                  <input type="search" 
-                  className="form-control input-search" 
-                  id="search" 
-                  placeholder="Buscar..." 
-                  name="search"
-                  aria-label="Campo de búsqueda"
+                  <input
+                    type="search"
+                    className="form-control input-search"
+                    id="search"
+                    placeholder="Buscar..."
+                    name="search"
+                    aria-label="Campo de búsqueda"
                   />
                   <button className="reset" type="reset" aria-label="Borrar"></button>
                 </div>

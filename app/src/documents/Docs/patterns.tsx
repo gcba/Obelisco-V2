@@ -868,8 +868,8 @@ const PatternsComponents: React.FC = () => {
               </li>
               <li>
                 Si la sesión expira, la persona usuaria debe poder reautenticarse y continuar desde donde estaba, sin
-                pérdida de datos. Se recomienda mostrar el tiempo restante de la sesión y advertir con algunos minutos de
-                anticipación antes de que expire.
+                pérdida de datos. Se recomienda mostrar el tiempo restante de la sesión y advertir con algunos minutos
+                de anticipación antes de que expire.
               </li>
               <li>
                 Las personas deben poder revisar sus datos antes de enviar el formulario, especialmente en casos de

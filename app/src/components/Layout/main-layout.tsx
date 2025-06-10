@@ -11,8 +11,10 @@ export const stylesPages = [
   { text: 'Tipografía', url: '/components/typography', id: 3 },
 ];
 export const formsPages = [
+  { text: 'Botón de radio', url: '/components/form-radio', id: 6 },
   { text: 'Texto', url: '/components/form-text', id: 1 },
   { text: 'Búsqueda', url: '/components/form-search', id: 2 },
+  { text: 'Casilla de verificación', url: '/components/form-check', id: 7 },
   { text: 'Selección', url: '/components/form-selection', id: 3 },
   { text: 'Carga de archivo', url: '/components/form-file', id: 4 },
   { text: 'Validación', url: '/components/form-validation', id: 5 },

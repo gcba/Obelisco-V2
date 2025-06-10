@@ -36,24 +36,15 @@ export default function Footer() {
           <h3>Redes de la ciudad</h3>
           <ul className="list-inline">
             {socialMedia?.map((sm) =>
-              sm.name === 'Twitter' ? (
                 <li
-                  className={'list-inline-item redes-items ' + (sm.icon)}
-                  key={sm.id}
-                >
-                  <a href={sm.url}>{sm.name}</a>
-                </li>
-              ) : (
-                <li
-                  className='list-inline-item redes-items'
+                  className={'list-inline-item redes-items  ' + (sm.name == 'X' ? sm.icon : '')}
                   key={sm.id}
                 >
                   <a href={sm.url}>
-                    <i className={sm.icon}></i>
+                    <i className={(sm.name !== 'X' ? sm.icon  : '')}></i>
                     {sm.name}
                   </a>
                 </li>
-              )
             )}
           </ul>
         </section>

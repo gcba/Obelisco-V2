@@ -11,7 +11,8 @@ import ComponentHeader from '@/components/Template/ComponentHeader';
 import {
   HEADER,
   HEADER_2,
-  HEADER_BANNER,
+  HEADER_GCBA,
+  HEADER_GCBA_BANNER,
   HEADER_LOGIN_ONE_LINE,
   HEADER_LOGIN_ONE_LINE_SEARCH,
   HEADER_LOGIN_TWO_LINES,
@@ -34,11 +35,14 @@ const logo_ba_logo_banner = '/images/header/logo_BA_banner.svg';
 const HeaderDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
-      title: 'Banner del GCBA',
+      title: 'Header GCBA',
       firstTitle: true,
+    },
+    {
+      subtitle: 'Con banner',
       content: (
         <>
-          <CodeBox codeHTML={HEADER_BANNER}>
+          <CodeBox codeHTML={HEADER_GCBA_BANNER}>
             <div className="container-fluid">
               <div className="header-box-sizing_banner">
                 {/* header banner */}
@@ -97,88 +101,141 @@ const HeaderDocs: React.FC = () => {
                           <nav>
                             <p className="navbar-sections-title">Secciones</p>
                             <ul className="nav nav-pills nav-sections">
-                              <li className="dropdown">
-                                <button
-                                  type="button"
-                                  className="btn btn-dropdown btn-lg"
-                                  data-bs-toggle="dropdown"
-                                  aria-expanded="false"
-                                >
-                                  <span className="btn-dropdown-text ellipsis-1">Navegación</span>
-                                  <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
-                                    expand_more
-                                  </span>
-                                </button>
-                                <div className="dropdown-menu">
-                                  <LinkClient className="dropdown-item">
-                                    <span className="item-text">Enlace de navegación</span>
-                                  </LinkClient>
-                                  <LinkClient className="dropdown-item">
-                                    <span className="item-text">Enlace de navegación</span>
-                                  </LinkClient>
-                                  <LinkClient className="dropdown-item">
-                                    <span className="item-text">Enlace de navegación</span>
-                                  </LinkClient>
-                                  <LinkClient className="dropdown-item">
-                                    <span className="item-text">Enlace de navegación</span>
-                                  </LinkClient>
-                                  <LinkClient className="dropdown-item">
-                                    <span className="item-text">Enlace de navegación</span>
-                                  </LinkClient>
-                                  <LinkClient className="dropdown-item">
-                                    <span className="item-text">Enlace de navegación</span>
-                                  </LinkClient>
-                                  <LinkClient className="dropdown-item item-link">
-                                    <span className="item-text">Ver más</span>
-                                    <span className="material-symbols-rounded" aria-hidden="true">
-                                      arrow_forward
-                                    </span>
-                                  </LinkClient>
-                                </div>
-                              </li>
                               <li className="nav-item">
-                                <LinkClient className="nav-link nav-link-lg">
-                                  <span>Navegación</span>
+                                <LinkClient
+                                  className="nav-link nav-link-lg"
+                                  href="https://buenosaires.gob.ar/areasdegobierno"
+                                >
+                                  <span>Áreas de gobierno</span>
                                 </LinkClient>
                               </li>
-                              <li className="dropdown">
-                                <button
-                                  type="button"
-                                  className="btn btn-dropdown btn-lg"
-                                  data-bs-toggle="dropdown"
-                                  aria-expanded="false"
+
+                              <li className="nav-item">
+                                <LinkClient
+                                  className="nav-link nav-link-lg"
+                                  href="https://buenosaires.gob.ar/vicejefatura/ba-discapacidad"
                                 >
-                                  <span className="btn-dropdown-text ellipsis-1">Navegación</span>
-                                  <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
-                                    expand_more
-                                  </span>
-                                </button>
-                                <div className="dropdown-menu">
-                                  <LinkClient className="dropdown-item">
-                                    <span className="item-text">Enlace de navegación</span>
-                                  </LinkClient>
-                                  <LinkClient className="dropdown-item">
-                                    <span className="item-text">Enlace de navegación</span>
-                                  </LinkClient>
-                                  <LinkClient className="dropdown-item">
-                                    <span className="item-text">Enlace de navegación</span>
-                                  </LinkClient>
-                                  <LinkClient className="dropdown-item">
-                                    <span className="item-text">Enlace de navegación</span>
-                                  </LinkClient>
-                                  <LinkClient className="dropdown-item">
-                                    <span className="item-text">Enlace de navegación</span>
-                                  </LinkClient>
-                                  <LinkClient className="dropdown-item">
-                                    <span className="item-text">Enlace de navegación</span>
-                                  </LinkClient>
-                                  <LinkClient className="dropdown-item item-link">
-                                    <span className="item-text">Ver más</span>
-                                    <span className="material-symbols-rounded" aria-hidden="true">
-                                      arrow_forward
-                                    </span>
-                                  </LinkClient>
-                                </div>
+                                  <span>BA Discapacidad</span>
+                                </LinkClient>
+                              </li>
+
+                              <li className="nav-item">
+                                <LinkClient className="nav-link nav-link-lg" href="#">
+                                  <span>Trámites y servicios</span>
+                                </LinkClient>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                        <div className="navbar-search">
+                          <form className="form-search">
+                            <label htmlFor="header-search" className="form-label sr-only">
+                              Buscador
+                            </label>
+                            <div className="search-container">
+                              <input
+                                type="search"
+                                className="form-control input-search input-search-with-button"
+                                id="header-search"
+                                placeholder="Buscador"
+                              />
+                              <button className="reset" type="reset" aria-label="Borrar"></button>
+                              <button className="button-search" type="submit" aria-label="Buscar"></button>
+                            </div>
+                          </form>
+                        </div>
+                        <div className="navbar-login">
+                          <LinkClient className="btn btn-lg btn-outline-tertiary">
+                            <span className="material-symbols-rounded" aria-hidden="true">
+                              person
+                            </span>
+                            <span className="btn-text">Ingresar</span>
+                          </LinkClient>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="header-backdrop"></div>
+                </header>
+              </div>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+    {
+      subtitle: 'Sin banner',
+      content: (
+        <>
+          <CodeBox codeHTML={HEADER_GCBA}>
+            <div className="container">
+              <div className="header-box-sizing">
+                <header className="o-header  navbar" role="banner">
+                  <LinkClient href="#main" className="skip-to-main-content-link">
+                    Saltar al contenido principal
+                  </LinkClient>
+                  <div className="container header-container">
+                    <LinkClient href="https://www.estadisticaciudad.gob.ar/eyc/" className="navbar-brand">
+                      <Image
+                        className="d-none d-xl-block"
+                        src={`${basePath}${logo}`}
+                        alt="IDECBA"
+                        width={74}
+                        height={40}
+                      />
+                      <Image
+                        className="d-xl-none"
+                        src={`${basePath}${logo_mobile}`}
+                        alt="IDECBA"
+                        width={74}
+                        height={40}
+                      />
+                    </LinkClient>
+                    <div className="navbar-login-mobile">
+                      <LinkClient className="btn btn-lg btn-icon btn-outline-tertiary">
+                        <span className="material-symbols-rounded" aria-hidden="true">
+                          person
+                        </span>
+                        <span className="btn-text">Ingresar</span>
+                      </LinkClient>
+                    </div>
+                    <button
+                      className="navbar-toggler"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#navbarContent1"
+                      aria-controls="navbarContent1"
+                      aria-expanded="false"
+                      aria-label="Menú"
+                    ></button>
+                    <div className="collapse navbar-collapse" id="navbarContent1">
+                      <div className="navbar-content">
+                        <div className="navbar-sections">
+                          <nav>
+                            <p className="navbar-sections-title">Secciones</p>
+                            <ul className="nav nav-pills nav-sections">
+                              <li className="nav-item">
+                                <LinkClient
+                                  className="nav-link nav-link-lg"
+                                  href="https://buenosaires.gob.ar/areasdegobierno"
+                                >
+                                  <span>Áreas de gobierno</span>
+                                </LinkClient>
+                              </li>
+
+                              <li className="nav-item">
+                                <LinkClient
+                                  className="nav-link nav-link-lg"
+                                  href="https://buenosaires.gob.ar/vicejefatura/ba-discapacidad"
+                                >
+                                  <span>BA Discapacidad</span>
+                                </LinkClient>
+                              </li>
+
+                              <li className="nav-item">
+                                <LinkClient className="nav-link nav-link-lg" href="#">
+                                  <span>Trámites y servicios</span>
+                                </LinkClient>
                               </li>
                             </ul>
                           </nav>

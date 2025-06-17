@@ -22,8 +22,14 @@ import {
 const basePath = '/Obelisco-V2';
 
 const CODE_INTERACTIVITY = `<div class="form-checkbox"> 
-  <input class="form-checkbox-input" type="checkbox" name="professionCheckbox"
-    id="profession-checkbox-designer" value="diseñador" checked /> 
+    <input 
+      class="form-checkbox-input" 
+      type="checkbox" 
+      name="professionCheckbox"
+      id="profession-checkbox-designer" 
+      value="diseñador" 
+      checked 
+    /> 
     <label class="form-checkbox-label" for="profession-checkbox-designer"> Diseñador </labeñ>
 </div>`;
 
@@ -270,11 +276,11 @@ const FormCheckDocs = () => {
               <ul className="list-informative-bullet">
                 <li>
                   Cuando se requiere una única respuesta dentro de un conjunto de opciones, en ese caso utilizar el
-                  componente <Link href={''}>botón de radio</Link>
+                  componente <Link href={'/components/form-radio'}>botón de radio</Link>
                 </li>
                 <li>
                   Cuando la acción debe ejecutarse de inmediato al seleccionar, en ese caso usar el componente{' '}
-                  <Link href={''}>botón</Link>
+                  <Link href={'/components/button'}>botón</Link>
                 </li>
               </ul>
             </div>
@@ -336,7 +342,8 @@ const FormCheckDocs = () => {
               <div className="d-flex pt-3">
                 <span className="material-symbols-rounded text-danger">close</span>
                 <p className="mb-0">
-                  La disposición horizontal puede ser útil cuando hay sólo dos opciones con etiquetas cortas.
+                  La disposición horizontal puede dificultar la lectura y comprender qué etiqueta corresponde a cada
+                  opción.
                 </p>
               </div>
             </div>
@@ -684,21 +691,21 @@ const FormCheckDocs = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Etiqueta (label)</td>
+                    <td>1. Label</td>
                     <td>
                       Obligatorio, texto que informa el tipo de información que la persona usuaria puede seleccionar.
                     </td>
                   </tr>
                   <tr>
-                    <td>Indicador de requerido</td>
+                    <td>2. Indicador de requerido</td>
                     <td>Opcional, indica si un campo es obligatorio u opcional.</td>
                   </tr>
                   <tr>
-                    <td>Texto descriptivo</td>
+                    <td>3. Texto descriptivo</td>
                     <td>Opcional, se utiliza para proporcionar ayuda o contexto adicional a la persona usuaria.</td>
                   </tr>
                   <tr>
-                    <td>Botón de radio</td>
+                    <td>4.Botón de radio</td>
                     <td>Obligatorio, describe la información que podes seleccionar.</td>
                   </tr>
                 </tbody>
@@ -820,8 +827,8 @@ const FormCheckDocs = () => {
               La separación vertical entre checkboxes es de 8px. tanto para dispositivos desktop como mobile.
             </p>
             <p style={{ marginBottom: '0px !important' }}>
-              Podes consultar la <Link href={''}>ficha de patrones de formulario </Link> para conocer la separación
-              entre secciones.
+              Podes consultar la <Link href={'/patterns'}>ficha de patrones de formulario </Link> para conocer la
+              separación entre secciones.
             </p>
             <Image
               src={`${basePath}/images/forms/check/spaced.svg`}
@@ -847,14 +854,14 @@ const FormCheckDocs = () => {
         sectionDev={SECTION_DEV}
         customSections={[
           {
-            title: 'Accesibilidad',
-            id: 'accessibility',
-            sectionContent: ACCESSIBILITY,
-          },
-          {
             title: 'Especificaciones',
             id: 'section-specs',
             sectionContent: SPECS,
+          },
+          {
+            title: 'Accesibilidad',
+            id: 'accessibility',
+            sectionContent: ACCESSIBILITY,
           },
         ]}
       />

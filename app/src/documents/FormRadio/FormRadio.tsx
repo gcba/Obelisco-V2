@@ -13,8 +13,14 @@ import { RADIO, RADIO_DISABLED, RADIO_GROUP, RADIO_NO_TEXT, RADIO_POSITION } fro
 const basePath = '/Obelisco-V2';
 
 const CODE_INTERACTIVITY = `<div class="form-radio">
-  <input class="form-radio-input" type="radio" name="professionRadio" id="profession-radio-designer" value="diseñador"
-    checked />
+  <input 
+    class="form-radio-input" 
+    type="radio" 
+    name="professionRadio" 
+    id="profession-radio-designer" 
+    value="diseñador"
+    checked 
+  />
   <label class="form-radio-label" for="profession-radio-designer"> Diseñador </label>
 </div>`;
 
@@ -242,7 +248,7 @@ const FormRadioDocs = () => {
               <ul className="list-informative-bullet">
                 <li>
                   Para seleccionar múltiples opciones, en ese caso utilizá el componente{' '}
-                  <Link href={''}>casillas de verificación</Link>
+                  <Link href={'/components/form-check'}>casillas de verificación</Link>
                 </li>
               </ul>
             </div>
@@ -339,7 +345,7 @@ const FormRadioDocs = () => {
             <p>
               Los botones de radio se usan en preguntas con respuestas binarias, como &ldquo;sí&rdquo; o
               &ldquo;no&rdquo;. Para opciones de encendido/apagado, es mejor usar el componente{' '}
-              <Link href={''}>switch</Link>
+              <Link href={'/components/switch'}>switch</Link>
             </p>
             <Image
               src={`${basePath}/images/forms/radio/useContext_2.svg`}
@@ -625,21 +631,21 @@ const FormRadioDocs = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Etiqueta (label)</td>
+                    <td>1. Label</td>
                     <td>
                       Obligatorio, texto que informa el tipo de contenido que la persona usuaria puede seleccionar.
                     </td>
                   </tr>
                   <tr>
-                    <td>Indicador de requerido</td>
+                    <td>2. Indicador de requerido</td>
                     <td>Opcional, indica si seleccionar una opción del grupo es obligatorio u opcional.</td>
                   </tr>
                   <tr>
-                    <td>Texto descriptivo</td>
+                    <td>2. Texto descriptivo</td>
                     <td>Opcional, se utiliza para proporcionar ayuda o contexto adicional a la persona usuaria.</td>
                   </tr>
                   <tr>
-                    <td>Botón de radio</td>
+                    <td>4. Botón de radio</td>
                     <td>Obligatorio, describe la información que podes seleccionar.</td>
                   </tr>
                 </tbody>
@@ -764,8 +770,8 @@ const FormRadioDocs = () => {
               La separación vertical entre botones de radio es de 8px. tanto para dispositivos desktop como mobile..
             </p>
             <p style={{ marginBottom: '0px !important' }}>
-              Podes consultar la <Link href={''}>ficha de patrones de formulario</Link> para conocer la separación entre
-              secciones.
+              Podes consultar la <Link href={'/patterns'}>ficha de patrones de formulario</Link> para conocer la
+              separación entre secciones.
             </p>
             <Image
               src={`${basePath}/images/forms/radio/spaced.svg`}
@@ -791,14 +797,14 @@ const FormRadioDocs = () => {
         sectionDev={SECTION_DEV}
         customSections={[
           {
-            title: 'Accesibilidad',
-            id: 'accessibility',
-            sectionContent: ACCESSIBILITY,
-          },
-          {
             title: 'Especificaciones',
             id: 'section-specs',
             sectionContent: SPECS,
+          },
+          {
+            title: 'Accesibilidad',
+            id: 'accessibility',
+            sectionContent: ACCESSIBILITY,
           },
         ]}
       />

@@ -15,7 +15,6 @@ export const formsPages = [
   { text: 'Campo de texto', url: '/components/form-text', id: 1 },
   { text: 'Campo de búsqueda', url: '/components/form-search', id: 2 },
   { text: 'Casilla de verificación', url: '/components/form-check', id: 7 },
-  { text: 'Selección', url: '/components/form-selection', id: 3 },
   { text: 'Carga de archivo', url: '/components/form-file', id: 4 },
   { text: 'Validación', url: '/components/form-validation', id: 5 },
 ];

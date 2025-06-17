@@ -376,9 +376,9 @@ const PatternsComponents: React.FC = () => {
           <p className="text-md">
             Para conocer más sobre usos, especificaciones de diseño y código, y accesibilidad, consultar las fichas de{' '}
             {/* # Rutas */}
-            <Link href="/components/form-text#section-dev-6">Selector</Link>,{' '}
-            <Link href="/components/form-selection#section-dev-2">Botón de radio</Link> y{' '}
-            <Link href="/components/form-selection#section-dev-5">Casilla de verificación</Link>.
+            <Link href="/components/form-text">Selector</Link>,{' '}
+            <Link href="/components/form-radio">Botón de radio</Link> y{' '}
+            <Link href="/components/form-check">Casilla de verificación</Link>.
           </p>
 
           {/* 1 */}

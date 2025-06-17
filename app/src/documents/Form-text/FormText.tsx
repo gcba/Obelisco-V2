@@ -19,6 +19,8 @@ import {
   INPUT_TEXT_ACCESSIBILITY,
 } from './code-views';
 
+import Link from 'next/link';
+
 const FormTextDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
@@ -335,11 +337,11 @@ const FormTextDocs: React.FC = () => {
               <li>
                 Para datos concisos que no requieran más de una línea, como el nombre de una persona, el correo
                 electrónico o número de teléfono utilizá el{' '}
-                <a href="https://gcba.github.io/Obelisco-V2/components/form-text">campo de texto</a>.
+                <Link href={'/components/form-text/#campo_de_texto'}>campo de texto</Link>.
               </li>
               <li>
                 Cuando se espera una respuesta larga, como una consulta, comentario o descripción, utilizá el campo de{' '}
-                <a href="http://"> área de texto</a>.
+                <Link href={'/components/form-text/#area_de_texto'}> área de texto</Link>.
               </li>
               <li>
                 Puede utilizarse para mostrar datos precargados que puedan requerir edición por parte de la persona
@@ -352,15 +354,15 @@ const FormTextDocs: React.FC = () => {
             <ul className="list-informative-bullet">
               <li>
                 Cuando haya opciones conocidas y definidas de antemano, por ejemplo: provincias, países, tipo de
-                documento, utilizá el componente <a href="http://">selector</a>.
+                documento, utilizá el componente <code>selector</code>.
               </li>
               <li>
                 Cuando la persona usuaria necesite seleccionar más de una opción, utilizá el componente{' '}
-                <a href="http://">casilla de verificación</a>.
+                <Link href={'/components/form-check'}>casilla de verificación</Link>.
               </li>
               <li>
                 Cuando la persona usuaria necesite seleccionar una única opción visible, utilizá el componente{' '}
-                <a href="http://">botón de radio</a>.
+                <Link href={'/components/form-radio'}>botón de radio</Link>.
               </li>
             </ul>
           </div>
@@ -371,7 +373,7 @@ const FormTextDocs: React.FC = () => {
       title: 'Campo de texto',
       content: (
         <>
-          <p className="text-md mt-2 mb-4">
+          <p className="text-md mt-2 mb-4" id="campo_de_texto">
             Se utiliza para ingresar datos breves, de una sola línea, como nombres, dirección de correo electrónico o
             números de teléfonos.
           </p>
@@ -524,7 +526,9 @@ const FormTextDocs: React.FC = () => {
             </div>
           </div>
 
-          <p className="text-xl">Ejemplos de uso de sufijos</p>
+          <p className="text-xl" style={{ marginTop: '32px' }}>
+            Ejemplos de uso de sufijos
+          </p>
           <div className="col mb-4">
             <Image
               src={`${basePath}/images/form_text/ejemplo_de_uso_de_sufijos_incorrecto.svg`}
@@ -657,7 +661,7 @@ const FormTextDocs: React.FC = () => {
       title: 'Área de texto',
       content: (
         <>
-          <p className="text-md mb-4">
+          <p className="text-md mb-4" id="area_de_texto">
             Se utiliza para permitir que las personas usuarias ingresen una cantidad de texto que sea más extensa de una
             sola línea. Se suele usar para comentarios o preguntas en formularios.
           </p>
@@ -905,6 +909,16 @@ const FormTextDocs: React.FC = () => {
             className="img-fluid mb-4"
           />
 
+          <p className="text-xl">Completado</p>
+          <p className="text-md">Indica que la persona usuaria ingresó información válida en el campo de texto.</p>
+          <Image
+            src={`${basePath}/images/form_text/estado_completado.svg`}
+            alt="Estado activo del input de texto"
+            width="800"
+            height="280"
+            className="img-fluid mb-4"
+          />
+
           <p className="text-xl">Error</p>
           <p className="text-md">
             Para garantizar la accesibilidad, el estado de error debe ser claramente perceptible. En los campos de
@@ -957,8 +971,8 @@ const FormTextDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/migas_de_pan/migas_de_pan_accesibilidad.svg`}
-            alt="Navegacion alternativa de las migas de pan"
+            src={`${basePath}/images/form_text/alternative_navigate.svg`}
+            alt="Navegacion alternativa del campo de texto"
             width="738"
             height="400"
             className="img-fluid"

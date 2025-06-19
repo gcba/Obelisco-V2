@@ -12,7 +12,7 @@ interface TabItemProps {
   setActiveTab: (id: string) => void;
 }
 
-const TabItem: React.FC<TabItemProps> = ({ id, title, icon, activeTab, setActiveTab }) => {
+export const TabItem: React.FC<TabItemProps> = ({ id, title, icon, activeTab, setActiveTab }) => {
   return (
     <li className="nav-item" role="presentation">
       <button
@@ -37,7 +37,7 @@ interface TabPanelProps {
   activeTab: string;
 }
 
-const TabPanel: React.FC<TabPanelProps> = ({ id, children, activeTab }) => {
+export const TabPanel: React.FC<TabPanelProps> = ({ id, children, activeTab }) => {
   return (
     <div
       className={`tab-pane fade ${activeTab === id ? 'show active' : ''}`}

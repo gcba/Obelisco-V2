@@ -244,7 +244,7 @@ const FormRadioDocs = () => {
               </ul>
             </div>
             <div className="list-informative">
-              <p className="text-xl">Cuándo NO usar</p>
+              <p className="text-xl">Cuándo no usar</p>
               <ul className="list-informative-bullet">
                 <li>
                   Para seleccionar múltiples opciones, en ese caso utilizá el componente{' '}

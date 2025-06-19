@@ -252,4 +252,5 @@ const GalleryDocs: React.FC = () => {
   );
 };
 
+
 export default GalleryDocs;

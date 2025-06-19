@@ -39,7 +39,7 @@ export const componentsPages = [
   { text: 'Destacado', url: '/components/highlighted', id: 11 },
   { text: 'Enlace', url: '/components/link', id: 12 },
   { text: 'Etiquetas', url: '/components/badge', id: 13 },
-  // { text: "Galería", url: "/components/gallery", id: 14 },
+  { text: "Galería", url: "/components/gallery", id: 14 },
   { text: 'Lista de enlaces', url: '/components/list-link', id: 15 },
   { text: 'Lista de pasos', url: '/components/list-step', id: 16 },
   { text: 'Lista informativa', url: '/components/list-informative', id: 17 },

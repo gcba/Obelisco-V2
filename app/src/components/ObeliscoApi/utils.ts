@@ -1,5 +1,6 @@
 
-export const basePathAPI = 'http://localhost:3000/api';
+// export const basePathAPI = 'http://localhost:3000/api';
+export const basePathAPI = 'https://obelisco-api.onrender.com/api';
 
 export interface Link {
   id: string | number;
@@ -31,7 +32,6 @@ export interface FooterData {
   phones: Phone[];
   images: Image[];
 }
-
 
 export const EXAMPLES_IMPLEMENTATION = {
   react: 'react',

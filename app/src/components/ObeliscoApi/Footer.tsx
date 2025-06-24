@@ -8,7 +8,7 @@ const Footer = () => {
   const { links, socialMedia, phones, images } = footer || {};
 
   useEffect(() => {
-    fetch('http://localhost:3000/api/footer/complete')
+    fetch('https://obelisco-api.onrender.com/api/footer/complete')
       .then((res) => res.json())
       .then((data) => setFooter(data))
       .catch((err) => console.log(err));

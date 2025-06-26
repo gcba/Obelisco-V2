@@ -445,6 +445,43 @@ const sections = [
     ),
   },
   {
+    title: 'Galeria',
+    content: (
+      <ul className="docs-list">
+        <li>
+          El atributo <code>data-toggle</code> se reemplazó por <code>data-bs-toggle</code>.
+        </li>
+        <li>
+          El atributo <code>data-target</code> se reemplazó por <code>data-bs-target</code>.
+        </li>
+        <li>
+          El atributo <code>data-backdrop</code> se reemplazó por <code>data-bs-backdrop</code>.
+        </li>
+        <li>
+          El atributo <code>data-dismiss</code> se reemplazó por <code>data-bs-dismiss</code>.
+        </li>
+        <li>
+          El atributo <code>data-ride</code> se reemplazó por <code>data-bs-ride</code>.
+        </li>
+        <li>
+          El atributo <code>data-interval</code> se reemplazó por <code>data-bs-interval</code>.
+        </li>
+        <li>
+          Donde sólo hay: <code>class=&quot;carousel&quot;</code> ahora va:{' '}
+          <code>class=&quot;carousel slide&quot;</code>.
+        </li>
+        <li>
+          Es posible usar hoy el atributo: <code>data-bs-interval=&quot;3000&quot;</code>, el cúal indica cada cuantos
+          segundos rotan las imagenes, expresado en milisegundos. Para que no roten las imagenes, indicar el atributo en
+          false: <code>data-bs-interval=&quot;false&quot;</code>, o no escribirlo.
+        </li>
+        <li>
+          El atributo <code>data-slide</code> se reemplazó por <code>data-bs-slide</code>.
+        </li>
+      </ul>
+    ),
+  },
+  {
     title: 'Grilla',
     content: (
       <div className="responsive-scroll mt-4 mb-5" tabIndex={0}>
@@ -793,5 +830,5 @@ const UpdateComponents: React.FC = () => {
     </>
   );
 };
- 
+
 export default UpdateComponents;

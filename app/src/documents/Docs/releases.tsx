@@ -57,7 +57,6 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.5.5',
-      firstTitle: true,
       content: (
         <ul className="docs-list">
           <p>
@@ -68,7 +67,6 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.5.4',
-      firstTitle: true,
       content: (
         <ul className="docs-list">
           <p>La versión 1.5.4 contiene lo siguiente: </p>
@@ -83,7 +81,6 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.5.3',
-      firstTitle: true,
       content: (
         <ul className="docs-list">
           <p>La versión 1.5.3 contiene lo siguiente: </p>

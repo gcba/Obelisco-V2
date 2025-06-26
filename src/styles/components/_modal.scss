@@ -2,18 +2,12 @@
 $modal-sm: 348px;
 $modal-tablet: 336px;
 $modal-mobile: 328px;
-
+ 
 // Custom styles
 .modal {
-  //?new
   .modal-sm {
     max-width: $modal-mobile;
-
-    .modal-content {
-      @media screen and (width <= 360px) {
-        margin: 0 0.5rem;
-      }
-    }
+ 
     @include media-breakpoint-up(md) {
       max-width: $modal-tablet;
     }
@@ -25,43 +19,44 @@ $modal-mobile: 328px;
       margin-right: auto;
     }
   }
-
+ 
   .form-group {
     input,
     textarea {
       margin-bottom: $modal-inner-padding;
-
+ 
       &:last-child {
         margin-bottom: 0;
       }
     }
   }
-
+ 
   .modal-content {
     border: none;
-    padding: 1rem;
+    padding-top: 10px;
+    // padding: 0 !important;
     outline: 0.125rem solid transparent;
-
+ 
     .modal-header {
       border-bottom: 0;
       padding: 0 0 0.5rem;
       display: flex;
       flex-direction: column;
-
+ 
       //?new
       align-items: flex-start;
       box-shadow: 0 1px 0 0 $slate-50;
-
+ 
       &.unbordered {
         box-shadow: none;
         background: none;
       }
-
+ 
       small {
         margin-bottom: 0.5rem;
         color: $blue-900;
       }
-
+ 
       .modal-title {
         font-size: 1.25rem;
         font-weight: 600;
@@ -69,29 +64,36 @@ $modal-mobile: 328px;
         line-height: 24px;
       }
     }
-
+ 
     .modal-body {
       padding: space-units(2) 0 0;
       color: $blue-900;
       line-height: 24px;
-
+ 
       > *:last-child {
         margin: 0;
       }
     }
-
+ 
     .modal-footer {
       border-top: 0;
       padding: 1rem 0 0;
       gap: 0.75rem;
-
+ 
       button.btn {
         margin: 0;
       }
     }
-
+ 
     @include media-breakpoint-up(xl) {
       padding: 1.5rem;
     }
   }
+ 
+  .modal-dialog {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    max-height: 100vh;
+  }
 }
+ 

@@ -11,6 +11,7 @@ import {
   DISPOSITION_2,
   DISPOSITION_3,
   DISPOSITION_SCROLL,
+  HORIZONTAL_BORDER_ICON,
   HORIZONTAL_ICON,
   HORIZONTAL_IMG,
   HORIZONTAL_TEXT,
@@ -18,6 +19,8 @@ import {
   TARJETAS_ACCESSIBILTY,
   TARJETAS_ACCESSIBILTY_2,
   VERTICAL_AGENDA,
+  VERTICAL_BORDER_ICON,
+  VERTICAL_BORDER_IMG,
   VERTICAL_ICON,
   VERTICAL_IMG,
   VERTICAL_NOTICE,
@@ -31,6 +34,30 @@ const CardDocs: React.FC = () => {
     {
       title: 'Horizontal',
       firstTitle: true,
+    },
+    {
+      subtitle: 'Con borde',
+      content: (
+        <>
+          <CodeBox codeHTML={HORIZONTAL_BORDER_ICON}>
+            <div className="container">
+              <div className="card-box-sizing">
+                <div className="card card-horizontal">
+                  <div className=" d-flex w-100 card-border-left-blue">
+                    <i className="bx bxs-info-circle card-icon"></i>
+                    <div className="card-body  ">
+                      <h3 className="card-title">
+                        <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                      </h3>
+                      <p className="card-text">Descripción de la tarjeta</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </CodeBox>
+        </>
+      ),
     },
     {
       subtitle: 'Con icono',
@@ -160,6 +187,57 @@ const CardDocs: React.FC = () => {
     },
     {
       title: 'Vertical',
+    },
+
+    {
+      subtitle: 'Con icono y borde',
+      content: (
+        <>
+          <CodeBox codeHTML={VERTICAL_BORDER_ICON}>
+            <div className="container">
+              <div className="card-vertical-box-sizing">
+                <div className="card">
+                  <i className="bx bxs-info-circle card-icon"></i>
+                  <div className="card-body card-border-bottom-blue">
+                    <h3 className="card-title">
+                      <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                    </h3>
+                    <p className="card-text">Descripción de la tarjeta</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+    {
+      subtitle: 'Con imagen y borde',
+      content: (
+        <>
+          <CodeBox codeHTML={VERTICAL_BORDER_IMG}>
+            <div className="container">
+              <div className="card-vertical-box-sizing">
+                <div className="card">
+                  <Image
+                    src={`${basePath}/images/card-img-top.jpg`}
+                    className="card-img"
+                    alt="descripción de imagen"
+                    width={348}
+                    height={196}
+                  ></Image>
+                  <div className="card-body card-border-bottom-blue">
+                    <h3 className="card-title">
+                      <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                    </h3>
+                    <p className="card-text">Descripción de la tarjeta</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </CodeBox>
+        </>
+      ),
     },
     {
       subtitle: 'Con icono',
@@ -334,6 +412,123 @@ const CardDocs: React.FC = () => {
     },
     {
       title: 'Disposición',
+    },
+    {
+      title: '',
+      content: (
+        <div className="card-box-sizing-columns" style={{ marginBottom: '200px' }}>
+          <div className="container">
+            <div className="card-items-3">
+              <div className="col">
+                <div className="card">
+                  <Image
+                    src={`${basePath}/images/card-img-top.jpg`}
+                    className="card-img"
+                    alt="descripción de imagen"
+                    width={348}
+                    height={196}
+                  ></Image>
+                  <div className="card-body card-border-bottom-purple">
+                    <h3 className="card-title">
+                      <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                    </h3>
+                    <p className="card-text">Descripción de la tarjeta</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col">
+                <div className="card">
+                  <Image
+                    src={`${basePath}/images/card-img-top.jpg`}
+                    className="card-img"
+                    alt="descripción de imagen"
+                    width={348}
+                    height={196}
+                  ></Image>
+                  <div className="card-body card-border-bottom-sky">
+                    <h3 className="card-title">
+                      <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                    </h3>
+                    <p className="card-text">Descripción de la tarjeta</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col">
+                <div className="card">
+                  <Image
+                    src={`${basePath}/images/card-img-top.jpg`}
+                    className="card-img"
+                    alt="descripción de imagen"
+                    width={348}
+                    height={196}
+                  ></Image>
+                  <div className="card-body card-border-bottom-yellow">
+                    <h3 className="card-title">
+                      <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                    </h3>
+                    <p className="card-text">Descripción de la tarjeta</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="card">
+                  <Image
+                    src={`${basePath}/images/card-img-top.jpg`}
+                    className="card-img"
+                    alt="descripción de imagen"
+                    width={348}
+                    height={196}
+                  ></Image>
+                  <div className="card-body card-border-bottom-blue">
+                    <h3 className="card-title">
+                      <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                    </h3>
+                    <p className="card-text">Descripción de la tarjeta</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col">
+                <div className="card">
+                  <Image
+                    src={`${basePath}/images/card-img-top.jpg`}
+                    className="card-img"
+                    alt="descripción de imagen"
+                    width={348}
+                    height={196}
+                  ></Image>
+                  <div className="card-body card-border-bottom-red">
+                    <h3 className="card-title">
+                      <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                    </h3>
+                    <p className="card-text">Descripción de la tarjeta</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col">
+                <div className="card">
+                  <Image
+                    src={`${basePath}/images/card-img-top.jpg`}
+                    className="card-img"
+                    alt="descripción de imagen"
+                    width={348}
+                    height={196}
+                  ></Image>
+                  <div className="card-body card-border-bottom-cyan">
+                    <h3 className="card-title">
+                      <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                    </h3>
+                    <p className="card-text">Descripción de la tarjeta</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ),
     },
     {
       subtitle: 'Tres columnas',

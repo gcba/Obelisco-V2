@@ -1,4 +1,17 @@
 // HORIZONTALES
+export const HORIZONTAL_BORDER_ICON = `
+<div class="card card-horizontal">
+  <div class="d-flex w-100 card-border-left-blue">
+    <i class="bx bxs-info-circle card-icon"></i>
+    <div class="card-body">
+      <h3 class="card-title">
+        <a href="#" class="card-title-link">Título de la tarjeta</a>
+      </h3>
+      <p class="card-text">Descripción de la tarjeta</p>
+    </div>
+  </div>
+</div> `;
+
 export const HORIZONTAL_ICON = `
 <div class="card card-horizontal">
   <i class="bx bxs-info-circle card-icon"></i>
@@ -73,6 +86,30 @@ export const HORIZONTAL_THEME = `
 `;
 
 // VERTICALES
+export const VERTICAL_BORDER_IMG = `
+<div class="card">
+  <img class="card-img" src="/card-img-top.jpg" alt="descripción de imagen" />
+  <div class="card-body card-border-bottom-blue">
+    <h3 class="card-title">
+      <a href="#" class="card-title-link">Título de la tarjeta</a>
+    </h3>
+    <p class="card-text">Descripción de la tarjeta</p>
+  </div>
+</div>
+`;
+
+export const VERTICAL_BORDER_ICON = `
+<div class="card">
+  <i class="bx bxs-info-circle card-icon"></i>
+  <div class="card-body card-border-bottom-blue">
+    <h3 class="card-title">
+      <a href="#" class="card-title-link">Título de la tarjeta</a>
+    </h3>
+    <p class="card-text">Descripción de la tarjeta</p>
+  </div>
+</div>
+`;
+
 export const VERTICAL_ICON = `
 <div class="card">
   <i class="bx bxs-info-circle card-icon"></i>

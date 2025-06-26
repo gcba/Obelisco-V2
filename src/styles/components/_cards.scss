@@ -230,3 +230,22 @@ $card-info-icon-size: 1rem;
     }
   }
 }
+
+$colors: (
+  'blue': $blue-400,
+  'sky': $sky-400,
+  'cyan': $cyan-400,
+  'red': $red-400,
+  'yellow': $yellow-400,
+  'purple': $purple-400,
+);
+
+$positions: ('left', 'right', 'top', 'bottom');
+
+@each $position in $positions {
+  @each $key, $color in $colors {
+    .card-border-#{$position}-#{$key} {
+      border-#{$position}: 8px solid $color;
+    }
+  }
+}

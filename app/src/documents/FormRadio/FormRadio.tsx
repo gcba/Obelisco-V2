@@ -648,7 +648,7 @@ const FormRadioDocs = () => {
                     <td>Opcional, indica si seleccionar una opción del grupo es obligatorio u opcional.</td>
                   </tr>
                   <tr>
-                    <td>2. Texto descriptivo</td>
+                    <td>3. Texto descriptivo</td>
                     <td>Opcional, se utiliza para proporcionar ayuda o contexto adicional a la persona usuaria.</td>
                   </tr>
                   <tr>

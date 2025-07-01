@@ -272,7 +272,7 @@ const FormCheckDocs = () => {
               </ul>
             </div>
             <div className="list-informative">
-              <p className="text-xl">Cuándo NO usar</p>
+              <p className="text-xl">Cuándo usar</p>
               <ul className="list-informative-bullet">
                 <li>
                   Cuando se requiere una única respuesta dentro de un conjunto de opciones, en ese caso utilizar el
@@ -293,8 +293,8 @@ const FormCheckDocs = () => {
       content: (
         <>
           <p className="mb-4">
-            Los checkboxes permiten seleccionar una o varias opciones dentro de un grupo. Cuando están seleccionados
-            muestran una marca dentro de la casilla, y cuando no lo están, queda vacía.
+            Los <i>checkboxes</i> permiten seleccionar una o varias opciones dentro de un grupo. Cuando están
+            seleccionados muestran una marca dentro de la casilla, y cuando no lo están, queda vacía.
           </p>
           <Image
             src={`${basePath}/images/forms/check/types.svg`}
@@ -311,8 +311,8 @@ const FormCheckDocs = () => {
       content: (
         <>
           <p className="mb-3">
-            Recomendamos una disposición vertical de los checkboxes, ya que facilita la lectura, mejora la accesibilidad
-            y evita que las opciones se pasen por alto.
+            Recomendamos una disposición vertical de los <i>checkboxes</i>, ya que facilita la lectura, mejora la
+            accesibilidad y evita que las opciones se pasen por alto.
           </p>
           <div className="max-items-2">
             <div className="col ps-3">
@@ -360,9 +360,9 @@ const FormCheckDocs = () => {
         <>
           <div className="d-flex flex-column  gap-3">
             <p>
-              Para ofrecer varias opciones dentro de una categoría, usá un grupo de checkboxes. Este grupo debe tener
-              una etiqueta que lo identifique, como un título. Si el grupo incluye más de cinco opciones, considerá usar
-              un componente de selección (select) para facilitar la lectura y la elección.
+              Para ofrecer varias opciones dentro de una categoría, usá un grupo de <i>checkboxes</i>. Este grupo debe
+              tener una etiqueta que lo identifique, como un título. Si el grupo incluye más de cinco opciones,
+              considerá usar un componente de selección <i>(select)</i> para facilitar la lectura y la elección.
             </p>
             <Image
               src={`${basePath}/images/forms/check/useContext_1.svg`}
@@ -381,8 +381,8 @@ const FormCheckDocs = () => {
         <>
           <div className="d-flex flex-column  gap-3">
             <p>
-              En filtros, los checkboxes permiten seleccionar varias opciones al mismo tiempo sin necesidad de confirmar
-              cada cambio, lo que da flexibilidad para ajustar los resultados según las preferencias.
+              En filtros, los <i>checkboxes</i> permiten seleccionar varias opciones al mismo tiempo sin necesidad de
+              confirmar cada cambio, lo que da flexibilidad para ajustar los resultados según las preferencias.
             </p>
             <Image
               src={`${basePath}/images/forms/check/useContext_2.svg`}
@@ -401,10 +401,10 @@ const FormCheckDocs = () => {
         <>
           <div className="d-flex flex-column  gap-3">
             <p>
-              Los checkboxes independientes se usan para confirmar acciones o aceptar condiciones. A diferencia de los
-              botones de radio, se pueden marcar o desmarcar antes de enviar. Suelen ir acompañados de un botón para
-              confirmar. Si se usan para aceptar términos, se recomienda escribir la frase en primera persona y mostrar
-              un enlace con más información.
+              Los <i>checkboxes</i> independientes se usan para confirmar acciones o aceptar condiciones. A diferencia
+              de los botones de radio, se pueden marcar o desmarcar antes de enviar. Suelen ir acompañados de un botón
+              para confirmar. Si se usan para aceptar términos, se recomienda escribir la frase en primera persona y
+              mostrar un enlace con más información.
             </p>
             <Image
               src={`${basePath}/images/forms/check/useContext_3.svg`}
@@ -436,9 +436,9 @@ const FormCheckDocs = () => {
                 Longitud del texto
               </h3>
               <p style={{ marginBottom: '0px !important' }}>
-                Las etiquetas deben ser legibles, consistentes y concisas. En checkboxes independientes se permite más
-                texto, pero en grupos conviene mantener las etiquetas cortas para no afectar la experiencia si se
-                extienden a una segunda línea.
+                Las etiquetas deben ser legibles, consistentes y concisas. En <i>checkboxes</i> independientes se
+                permite más texto, pero en grupos conviene mantener las etiquetas cortas para no afectar la experiencia
+                si se extienden a una segunda línea.
               </p>
             </div>
 
@@ -458,8 +458,8 @@ const FormCheckDocs = () => {
                 Organización
               </h3>
               <p style={{ marginBottom: '0px !important' }}>
-                Asegurate de que las opciones de los checkboxes estén organizadas de forma lógica y con sentido. Tené en
-                cuenta que, al listar elementos alfabéticamente, el orden puede cambiar al localizar el texto.
+                Asegurate de que las opciones de los <i>checkboxes</i> estén organizadas de forma lógica y con sentido.
+                Tené en cuenta que, al listar elementos alfabéticamente, el orden puede cambiar al localizar el texto.
               </p>
             </div>
             <div className="d-flex flex-column  gap-2">
@@ -484,8 +484,8 @@ const FormCheckDocs = () => {
       content: (
         <>
           <p className="mb-3">
-            El componente checkbox está construido para ser accesible mediante navegación por teclado y reconocible por
-            lectores de pantalla, comunicando su estado (seleccionado o deseleccionado) de forma clara.
+            El componente <i>checkbox</i> está construido para ser accesible mediante navegación por teclado y
+            reconocible por lectores de pantalla, comunicando su estado (seleccionado o deseleccionado) de forma clara.
           </p>
           <div className="flex flex-column gap-3">
             <div>
@@ -493,8 +493,10 @@ const FormCheckDocs = () => {
               <span className="badge badge-default">ENTER</span>
             </div>
             <p>
-              Utilizando el tab la persona usuaria puede navegar a través de elementos de la interfaz. Además, con el
-              enter, puede accionar los elementos sobre los que esté posicionada como botones, enlaces, entre otros.
+              Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Además,
+              con el
+              <i>tab</i>, puede accionar los elementos sobre los que esté posicionada como botones, enlaces, entre
+              otros.
             </p>
             <Image
               src={`${basePath}/images/forms/check/nav_alternative.svg`}
@@ -513,13 +515,13 @@ const FormCheckDocs = () => {
         <>
           <div className="mb-3 flex flex-column gap-3 pb-3">
             <p>
-              Un checkbox siempre debe ir acompañado de una etiqueta <code>label</code> clara y relacionada con la
-              acción u opción que representa.
+              Un checkbox siempre debe ir acompañado de una etiqueta {`<label>`} clara y relacionada con la acción u
+              opción que representa.
             </p>
             <p>
-              El atributo “for” asocia un <code>label</code> con un elemento de formulario como un{' '}
-              <code>input, select, textarea,</code> etc. haciendo coincidir su valor con el atributo “id” del elemento
-              correspondiente.
+              El atributo &quot;<i>for</i>&quot; asocia un {`<label>`} con un elemento de formulario como un {`<input>`}
+              , {`<select>`}, {`<textarea>`}, etc. haciendo coincidir su valor con el atributo &quot;<i>id</i>&quot; del
+              elemento correspondiente.
             </p>
           </div>
           <div className="d-flex flex-column gap-3">
@@ -528,9 +530,9 @@ const FormCheckDocs = () => {
                 Interactividad limitada
               </h3>
               <p style={{ marginBottom: '0px !important' }}>
-                Cuando un checkbox está deshabilitado temporalmente, es importante indicarlo correctamente mediante el
-                atributo “disabled”. Además, debe evitarse que el foco del teclado llegue al componente, y debe
-                comunicarse su estado a tecnologías de asistencia.
+                Cuando un <i>checkbox</i> está deshabilitado temporalmente, es importante indicarlo correctamente
+                mediante el atributo &quot;<i>disabled</i>&quot;. Además, debe evitarse que el foco del teclado llegue
+                al componente, y debe comunicarse su estado a tecnologías de asistencia.
               </p>
             </div>
             <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
@@ -691,7 +693,9 @@ const FormCheckDocs = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>1. Label</td>
+                    <td>
+                      1. <i>Label</i>
+                    </td>
                     <td>
                       Obligatorio, texto que informa el tipo de información que la persona usuaria puede seleccionar.
                     </td>
@@ -723,7 +727,7 @@ const FormCheckDocs = () => {
             <div className="d-flex flex-column gap-3">
               <div className="d-flex flex-column  gap-2">
                 <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
-                  Predeterminado (default)
+                  Predeterminado <i>(default)</i>
                 </h3>
                 <p style={{ marginBottom: '0px !important' }}>Estado predeterminado del checkbox en una interfaz.</p>
               </div>
@@ -739,7 +743,7 @@ const FormCheckDocs = () => {
             <div className="d-flex flex-column gap-3">
               <div className="d-flex flex-column  gap-2">
                 <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
-                  Sobre (hover)
+                  Sobre <i>(hover)</i>
                 </h3>
                 <p style={{ marginBottom: '0px !important' }}>
                   Estado que adopta el checkbox cuando un cursor pasa sobre él, cambiando su apariencia para indicar su
@@ -758,13 +762,13 @@ const FormCheckDocs = () => {
             <div className="d-flex flex-column gap-3">
               <div className="d-flex flex-column  gap-2">
                 <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
-                  En foco (focus)
+                  En foco <i>(focus)</i>
                 </h3>
                 <p style={{ marginBottom: '0px !important' }}>
                   Es un principio de accesibilidad que asegura que cualquier elemento interactivo en una interfaz sea
                   claramente visible cuando recibe la atención del usuario, especialmente al ser navegado con el
-                  teclado. En Obelisco se utiliza un borde o anillo (focus ring) por fuera del componente en un color
-                  distintivo.
+                  teclado. En Obelisco se utiliza un borde o anillo <i>(focus ring)</i> por fuera del componente en un
+                  color distintivo.
                 </p>
               </div>
               <Image
@@ -799,7 +803,7 @@ const FormCheckDocs = () => {
             <div className="d-flex flex-column gap-3">
               <div className="d-flex flex-column  gap-2">
                 <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
-                  Deshabilitado (disabled)
+                  Deshabilitado <i>(disabled)</i>
                 </h3>
                 <p style={{ marginBottom: '0px !important' }}>
                   Estado que indica que el botón no está disponible para la interacción, lo que significa que no puede
@@ -824,7 +828,7 @@ const FormCheckDocs = () => {
         <>
           <div className="d-flex flex-column gap-3">
             <p style={{ marginBottom: '0px !important' }}>
-              La separación vertical entre checkboxes es de 8px. tanto para dispositivos desktop como mobile.
+              La separación vertical entre <i>checkboxes</i> es de 8px. tanto para dispositivos desktop como mobile.
             </p>
             <p style={{ marginBottom: '0px !important' }}>
               Podes consultar la <Link href={'/patterns'}>ficha de patrones de formulario </Link> para conocer la

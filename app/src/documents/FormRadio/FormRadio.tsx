@@ -261,9 +261,9 @@ const FormRadioDocs = () => {
       content: (
         <>
           <p className="mb-4">
-            Los botones de radio permiten seleccionar solo una opción dentro de un grupo. Cuando uno está seleccionado,
-            se marca con un punto en el centro del círculo, y al elegir una nueva opción, la anterior se desmarca
-            automáticamente.
+            Los <i>botones de radio</i> permiten seleccionar solo una opción dentro de un grupo. Cuando uno está
+            seleccionado, se marca con un punto en el centro del círculo, y al elegir una nueva opción, la anterior se
+            desmarca automáticamente.
           </p>
           <Image
             src={`${basePath}/images/forms/radio/types.svg`}
@@ -304,7 +304,10 @@ const FormRadioDocs = () => {
                 className="img-fluid"
               />
               <div className="d-flex pt-3">
-                <span className="material-symbols-rounded text-info">info</span>
+                {/* <span className="material-symbols-rounded text-info" style={{ backgroundColor: 'none !important;' }}>
+                  info
+                </span> */}
+                <span className="material-symbols-outlined">info</span>
                 <p className="mb-0">
                   La disposición horizontal puede ser útil cuando hay sólo dos opciones con etiquetas cortas.
                 </p>
@@ -343,7 +346,7 @@ const FormRadioDocs = () => {
         <>
           <div className="d-flex flex-column  gap-3">
             <p>
-              Los botones de radio se usan en preguntas con respuestas binarias, como &ldquo;sí&rdquo; o
+              Los <i>botones de radio</i> se usan en preguntas con respuestas binarias, como &ldquo;sí&rdquo; o
               &ldquo;no&rdquo;. Para opciones de encendido/apagado, es mejor usar el componente{' '}
               <Link href={'/components/switch'}>switch</Link>
             </p>
@@ -368,8 +371,8 @@ const FormRadioDocs = () => {
                 Etiquetas de grupo
               </h3>
               <p style={{ marginBottom: '0px !important' }}>
-                Usá títulos solo si ayudan a entender mejor para qué sirven los botones de radio. No pongas títulos de
-                más si ya hay uno general.
+                Usá títulos solo si ayudan a entender mejor para qué sirven los <i>botones de radio</i>. No pongas
+                títulos de más si ya hay uno general.
               </p>
             </div>
 
@@ -378,7 +381,7 @@ const FormRadioDocs = () => {
                 Etiquetas de botones de radio
               </h3>
               <p style={{ marginBottom: '0px !important' }}>
-                Las etiquetas de los botones de radio deben ser siempre claras y concisas, y deben colocarse a la
+                Las etiquetas de los <i>botones de radio</i> deben ser siempre claras y concisas, y deben colocarse a la
                 derecha del botón para mantener una estructura visual coherente y fácil de leer.
               </p>
             </div>
@@ -433,8 +436,10 @@ const FormRadioDocs = () => {
               <span className="badge badge-default">ENTER</span>
             </div>
             <p>
-              Utilizando el tab la persona usuaria puede navegar a través de elementos de la interfaz. Además, con el
-              enter, puede accionar los elementos sobre los que esté posicionada como botones, enlaces, entre otros.
+              Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Además,
+              con el
+              <i>enter</i>, puede accionar los elementos sobre los que esté posicionada como botones, enlaces, entre
+              otros.
             </p>
             <Image
               src={`${basePath}/images/forms/radio/nav_alternative.svg`}
@@ -453,13 +458,13 @@ const FormRadioDocs = () => {
         <>
           <div className="mb-3 flex flex-column gap-3 pb-3">
             <p>
-              Un botón de radio siempre debe ir acompañado de una etiqueta <code>label</code> clara y relacionada con la
-              acción u opción que representa.
+              Un botón de radio siempre debe ir acompañado de una etiqueta {`<label>`} clara y relacionada con la acción
+              u opción que representa.
             </p>
             <p>
-              El atributo “for” asocia un <code>label</code> con un elemento de formulario como un{' '}
-              <code>input, select, textarea,</code> etc. haciendo coincidir su valor con el atributo “id” del elemento
-              correspondiente.
+              El atributo &quot;<i>for</i>&quot; asocia un {`<label>`} con un elemento de formulario como un {`<input>`}
+              , {`<select>`}, {`<textarea>`}, etc. haciendo coincidir su valor con el atributo &quot;<i>id</i>&quot; del
+              elemento correspondiente.
             </p>
           </div>
           <div className="d-flex flex-column gap-3">
@@ -469,8 +474,8 @@ const FormRadioDocs = () => {
               </h3>
               <p style={{ marginBottom: '0px !important' }}>
                 Cuando un botón de radio está deshabilitado temporalmente, es importante indicarlo correctamente
-                mediante el atributo “disabled”. Además, debe evitarse que el foco del teclado llegue al componente, y
-                debe comunicarse su estado a tecnologías de asistencia.
+                mediante el atributo &quot;<i>disabled</i>&quot;. Además, debe evitarse que el foco del teclado llegue
+                al componente, y debe comunicarse su estado a tecnologías de asistencia.
               </p>
             </div>
             <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
@@ -631,7 +636,9 @@ const FormRadioDocs = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>1. Label</td>
+                    <td>
+                      1. <i>Label</i>
+                    </td>
                     <td>
                       Obligatorio, texto que informa el tipo de contenido que la persona usuaria puede seleccionar.
                     </td>
@@ -663,7 +670,7 @@ const FormRadioDocs = () => {
             <div className="d-flex flex-column gap-3">
               <div className="d-flex flex-column  gap-2">
                 <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
-                  Predeterminado (default)
+                  Predeterminado <i>(default)</i>
                 </h3>
                 <p style={{ marginBottom: '0px !important' }}>
                   Estado predeterminado del botón de radio en una interfaz.
@@ -681,7 +688,7 @@ const FormRadioDocs = () => {
             <div className="d-flex flex-column gap-3">
               <div className="d-flex flex-column  gap-2">
                 <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
-                  Sobre (hover)
+                  Sobre <i>(hover)</i>
                 </h3>
                 <p style={{ marginBottom: '0px !important' }}>
                   Estado que adopta el botón de radio cuando un cursor pasa sobre él, cambiando su apariencia para
@@ -700,13 +707,13 @@ const FormRadioDocs = () => {
             <div className="d-flex flex-column gap-3">
               <div className="d-flex flex-column  gap-2">
                 <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
-                  En foco (focus)
+                  En foco <i>(focus)</i>
                 </h3>
                 <p style={{ marginBottom: '0px !important' }}>
                   Es un principio de accesibilidad que asegura que cualquier elemento interactivo en una interfaz sea
                   claramente visible cuando recibe la atención del usuario, especialmente al ser navegado con el
-                  teclado. En Obelisco se utiliza un borde o anillo (focus ring) por fuera del componente en un color
-                  distintivo.
+                  teclado. En Obelisco se utiliza un borde o anillo <i>(focus ring)</i> por fuera del componente en un
+                  color distintivo.
                 </p>
               </div>
               <Image
@@ -742,7 +749,7 @@ const FormRadioDocs = () => {
             <div className="d-flex flex-column gap-3">
               <div className="d-flex flex-column  gap-2">
                 <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
-                  Deshabilitado (disabled)
+                  Deshabilitado <i>(disabled)</i>
                 </h3>
                 <p style={{ marginBottom: '0px !important' }}>
                   Estado que indica que el botón no está disponible para la interacción, lo que significa que no puede
@@ -767,7 +774,8 @@ const FormRadioDocs = () => {
         <>
           <div className="d-flex flex-column gap-3">
             <p style={{ marginBottom: '0px !important' }}>
-              La separación vertical entre botones de radio es de 8px. tanto para dispositivos desktop como mobile..
+              La separación vertical entre <i>botones de radio</i> es de 8px. tanto para dispositivos desktop como
+              mobile..
             </p>
             <p style={{ marginBottom: '0px !important' }}>
               Podes consultar la <Link href={'/patterns'}>ficha de patrones de formulario</Link> para conocer la

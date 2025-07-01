@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
@@ -18,8 +19,6 @@ import {
   INPUT_TEXT,
   INPUT_TEXT_ACCESSIBILITY,
 } from './code-views';
-
-import Link from 'next/link';
 
 const FormTextDocs: React.FC = () => {
   const SECTIONS_DEV = [

@@ -10,6 +10,42 @@ $scroll-border-radius: 100px;
   border-radius: $border-radius-lg;
   scrollbar-color: auto;
 
+  &.has-card-items {
+    @include media-breakpoint-up(md) {
+      overflow: hidden;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    overflow-x: auto;
+    .card-items-3 {
+      display: flex;
+      flex-wrap: nowrap;
+      max-width: 410px;
+    }
+
+    .card-items-3 > .col {
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: auto;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    overflow-x: auto;
+    .card-items-3 {
+      display: flex;
+      flex-wrap: nowrap;
+      max-width: 410px;
+    }
+
+    .card-items-3 > .col {
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: auto;
+    }
+  }
+
   &:has(> .table) {
     padding: 0;
     border: 1px solid $border-color;

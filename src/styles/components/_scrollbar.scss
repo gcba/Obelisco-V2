@@ -18,6 +18,7 @@ $scroll-border-radius: 100px;
 
   @include media-breakpoint-down(md) {
     overflow-x: auto;
+
     .card-items-3 {
       display: flex;
       flex-wrap: nowrap;
@@ -25,14 +26,13 @@ $scroll-border-radius: 100px;
     }
 
     .card-items-3 > .col {
-      flex-grow: 0;
-      flex-shrink: 0;
-      flex-basis: auto;
+      flex: 0 0 auto;
     }
   }
 
   @include media-breakpoint-down(md) {
     overflow-x: auto;
+
     .card-items-3 {
       display: flex;
       flex-wrap: nowrap;
@@ -40,9 +40,7 @@ $scroll-border-radius: 100px;
     }
 
     .card-items-3 > .col {
-      flex-grow: 0;
-      flex-shrink: 0;
-      flex-basis: auto;
+      flex: 0 0 auto;
     }
   }
 

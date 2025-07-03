@@ -223,6 +223,107 @@ export default function FormSelect() {
         </>
       ),
     },
+    {
+      title: 'Criterios WCAG aplicables',
+      content: (
+        <>
+          <a
+            className="external"
+            href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Success Criterion 1.3.1 Info and Relationships (Level A)
+          </a>
+          <p className="mt-2">
+            La información, la estructura y las relaciones transmitidas a través de la presentación pueden determinarse
+            mediante programación o están disponibles en el texto.
+          </p>
+
+          <a
+            className="external"
+            href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Success Criterion 1.4.11 Non-Text Contrast (Level AA)
+          </a>
+          <p className="mt-2">
+            La presentación visual de elementos de la interfaz de usuario y objetos gráficos tiene por lo menos una
+            relación de contraste de 3:1 con respecto a los colores adyacentes.
+          </p>
+
+          <a
+            className="external"
+            href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Success Criterion 2.1.1 Keyboard (Level A)
+          </a>
+          <p className="mt-2">
+            Todas las funcionalidades del contenido se puede operar a través de una interfaz de teclado.
+          </p>
+
+          <a
+            className="external"
+            href="https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Success Criterion 2.4.6 Headings and Labels (Level AA)
+          </a>
+          <p className="mt-2">
+            Si se utilizan encabezados o etiquetas, deben describir con precisión el propósito o contenido al que se
+            refieren. Esto facilita la comprensión y navegación del contenido, especialmente para personas con
+            discapacidades cognitivas o que utilizan lectores de pantalla.
+          </p>
+
+          <a
+            className="external"
+            href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Success Criterion 2.4.7 Focus Visible (Level AA)
+          </a>
+          <p className="mt-2">
+            Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque
+            del teclado es visible. Cuando utiliza un teclado para navegar por los checkboxs, los enlaces tienen un
+            subrayado visible y un recuadro outline que indica que los enlaces son interactivos.
+          </p>
+
+          <a
+            className="external"
+            href="https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Success Criterion 3.3.2 Labels or Instructions (Level A)
+          </a>
+          <p className="mt-2">
+            Asegúrese de que todo el texto de ayuda y los mensajes de error proporcionen asistencia significativa para
+            ayudar a los usuarios a evitar o corregir errores.
+          </p>
+
+          <a
+            className="external"
+            href="https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Success Criterion 4.1.2 Name, Role, Value (Level A)
+          </a>
+          <p className="mt-2">
+            Para todos los componentes de la interfaz de usuario (incluidos, entre otros: elementos de formulario,
+            enlaces y componentes generados por scripts), el nombre y la función se pueden determinar mediante
+            programación; los estados, propiedades y valores que puede establecer el usuario se pueden configurar
+            mediante programación; y la notificación de cambios en estos elementos está disponible para los agentes de
+            usuario, incluidas las tecnologías de asistencia.
+          </p>
+        </>
+      ),
+    },
   ];
   const SPECS = [
     {
@@ -295,10 +396,10 @@ export default function FormSelect() {
           <section className="d-flex flex-column  gap-3 p-1">
             <div className="d-flex flex-column gap-3">
               <div className="d-flex flex-column  gap-2">
-                <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
+                <h3 className="text-xl" style={{ marginBottom: '0px !important;' }}>
                   Predeterminado <i>(default)</i>
                 </h3>
-                <p style={{ marginBottom: '0px !important' }}>
+                <p style={{ marginBottom: '0px !important;' }}>
                   Estado predeterminado del campo de selección en una interfaz.
                 </p>
               </div>
@@ -313,10 +414,10 @@ export default function FormSelect() {
 
             <div className="d-flex flex-column gap-3">
               <div className="d-flex flex-column  gap-2">
-                <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
+                <h3 className="text-xl" style={{ marginBottom: '0px !important;' }}>
                   En Foco (<i>focus</i>)
                 </h3>
-                <p style={{ marginBottom: '0px !important' }}>
+                <p style={{ marginBottom: '0px !important;' }}>
                   Es un principio de accesibilidad que asegura que cualquier elemento interactivo en una interfaz sea
                   claramente visible cuando recibe la atención del usuario, especialmente al ser navegado con el
                   teclado. En Obelisco se utiliza un borde o anillo (focus ring) por fuera del componente en un color
@@ -334,10 +435,10 @@ export default function FormSelect() {
 
             <div className="d-flex flex-column gap-3">
               <div className="d-flex flex-column  gap-2">
-                <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
+                <h3 className="text-xl" style={{ marginBottom: '0px !important;' }}>
                   Activo
                 </h3>
-                <p style={{ marginBottom: '0px !important' }}>Cuando un usuario está seleccionando una opción.</p>
+                <p style={{ marginBottom: '0px !important;' }}>Cuando un usuario está seleccionando una opción.</p>
               </div>
               <Image
                 src={`${basePath}/images/forms/select/state_active.svg`}
@@ -350,10 +451,10 @@ export default function FormSelect() {
 
             <div className="d-flex flex-column gap-3">
               <div className="d-flex flex-column  gap-2">
-                <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
+                <h3 className="text-xl" style={{ marginBottom: '0px !important;' }}>
                   Completado
                 </h3>
-                <p style={{ marginBottom: '0px !important' }}>
+                <p style={{ marginBottom: '0px !important;' }}>
                   Indica que la persona usuaria seleccionó una opción de la lista expandible.
                 </p>
               </div>
@@ -368,10 +469,10 @@ export default function FormSelect() {
 
             <div className="d-flex flex-column gap-3">
               <div className="d-flex flex-column  gap-2">
-                <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
+                <h3 className="text-xl" style={{ marginBottom: '0px !important;' }}>
                   Error
                 </h3>
-                <p style={{ marginBottom: '0px !important' }}>
+                <p style={{ marginBottom: '0px !important;' }}>
                   Para garantizar la accesibilidad, el estado de error debe ser claramente perceptible. En los campos de
                   texto, se utiliza un borde en color rojo con suficiente contraste. Esto asegura que todas las personas
                   puedan identificar y corregir errores fácilmente, cumpliendo con las pautas de accesibilidad (WCAG).
@@ -388,10 +489,10 @@ export default function FormSelect() {
 
             <div className="d-flex flex-column gap-3">
               <div className="d-flex flex-column  gap-2">
-                <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
+                <h3 className="text-xl" style={{ marginBottom: '0px !important;' }}>
                   Deshabilitado (<i>disabled</i>)
                 </h3>
-                <p style={{ marginBottom: '0px !important' }}>
+                <p style={{ marginBottom: '0px !important;' }}>
                   Estado que indica que el campo de selección no está disponible para la interacción, lo que significa
                   que no puede activarse.
                 </p>

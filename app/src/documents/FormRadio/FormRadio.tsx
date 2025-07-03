@@ -367,30 +367,30 @@ const FormRadioDocs = () => {
         <>
           <section className="d-flex flex-column  gap-3 p-1">
             <div className="d-flex flex-column  gap-2">
-              <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
+              <h3 className="text-xl" style={{ marginBottom: '0px !important;' }}>
                 Etiquetas de grupo
               </h3>
-              <p style={{ marginBottom: '0px !important' }}>
+              <p style={{ marginBottom: '0px !important;' }}>
                 Usá títulos solo si ayudan a entender mejor para qué sirven los <i>botones de radio</i>. No pongas
                 títulos de más si ya hay uno general.
               </p>
             </div>
 
             <div className="d-flex flex-column  gap-2">
-              <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
+              <h3 className="text-xl" style={{ marginBottom: '0px !important;' }}>
                 Etiquetas de botones de radio
               </h3>
-              <p style={{ marginBottom: '0px !important' }}>
+              <p style={{ marginBottom: '0px !important;' }}>
                 Las etiquetas de los <i>botones de radio</i> deben ser siempre claras y concisas, y deben colocarse a la
                 derecha del botón para mantener una estructura visual coherente y fácil de leer.
               </p>
             </div>
 
             <div className="d-flex flex-column  gap-2">
-              <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
+              <h3 className="text-xl" style={{ marginBottom: '0px !important;' }}>
                 Longitud de las etiquetas
               </h3>
-              <p style={{ marginBottom: '0px !important' }}>
+              <p style={{ marginBottom: '0px !important;' }}>
                 Si una etiqueta es muy larga, es mejor que se acomode en una segunda línea antes que recortarla. Lo
                 ideal es que tenga tres palabras o menos, y si no entra, conviene reformularla. Si se extiende, el texto
                 debe ir debajo del botón para mantener una buena alineación y legibilidad.
@@ -398,19 +398,19 @@ const FormRadioDocs = () => {
             </div>
 
             <div className="d-flex flex-column  gap-2">
-              <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
+              <h3 className="text-xl" style={{ marginBottom: '0px !important;' }}>
                 Organización
               </h3>
-              <p style={{ marginBottom: '0px !important' }}>
+              <p style={{ marginBottom: '0px !important;' }}>
                 Asegurate de que las opciones estén organizadas de forma lógica y con sentido. Tené en cuenta que, al
                 listar elementos alfabéticamente, el orden puede cambiar al localizar el texto.
               </p>
             </div>
             <div className="d-flex flex-column  gap-2">
-              <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
+              <h3 className="text-xl" style={{ marginBottom: '0px !important;' }}>
                 Puntuación
               </h3>
-              <p style={{ marginBottom: '0px !important' }}>
+              <p style={{ marginBottom: '0px !important;' }}>
                 Evita usar signos de puntuación en las etiquetas, excepto cuando la etiqueta sea una oración completa.
               </p>
             </div>
@@ -469,10 +469,10 @@ const FormRadioDocs = () => {
           </div>
           <div className="d-flex flex-column gap-3">
             <div className="d-flex flex-column  gap-2">
-              <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
+              <h3 className="text-xl" style={{ marginBottom: '0px !important;' }}>
                 Interactividad limitada
               </h3>
-              <p style={{ marginBottom: '0px !important' }}>
+              <p style={{ marginBottom: '0px !important;' }}>
                 Cuando un botón de radio está deshabilitado temporalmente, es importante indicarlo correctamente
                 mediante el atributo &quot;<i>disabled</i>&quot;. Además, debe evitarse que el foco del teclado llegue
                 al componente, y debe comunicarse su estado a tecnologías de asistencia.
@@ -669,10 +669,10 @@ const FormRadioDocs = () => {
           <section className="d-flex flex-column  gap-3 p-1">
             <div className="d-flex flex-column gap-3">
               <div className="d-flex flex-column  gap-2">
-                <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
+                <h3 className="text-xl" style={{ marginBottom: '0px !important;' }}>
                   Predeterminado <i>(default)</i>
                 </h3>
-                <p style={{ marginBottom: '0px !important' }}>
+                <p style={{ marginBottom: '0px !important;' }}>
                   Estado predeterminado del botón de radio en una interfaz.
                 </p>
               </div>
@@ -687,10 +687,10 @@ const FormRadioDocs = () => {
 
             <div className="d-flex flex-column gap-3">
               <div className="d-flex flex-column  gap-2">
-                <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
+                <h3 className="text-xl" style={{ marginBottom: '0px !important;' }}>
                   Sobre <i>(hover)</i>
                 </h3>
-                <p style={{ marginBottom: '0px !important' }}>
+                <p style={{ marginBottom: '0px !important;' }}>
                   Estado que adopta el botón de radio cuando un cursor pasa sobre él, cambiando su apariencia para
                   indicar su interactividad a la persona usuaria.
                 </p>
@@ -706,10 +706,10 @@ const FormRadioDocs = () => {
 
             <div className="d-flex flex-column gap-3">
               <div className="d-flex flex-column  gap-2">
-                <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
+                <h3 className="text-xl" style={{ marginBottom: '0px !important;' }}>
                   En foco <i>(focus)</i>
                 </h3>
-                <p style={{ marginBottom: '0px !important' }}>
+                <p style={{ marginBottom: '0px !important;' }}>
                   Es un principio de accesibilidad que asegura que cualquier elemento interactivo en una interfaz sea
                   claramente visible cuando recibe la atención del usuario, especialmente al ser navegado con el
                   teclado. En Obelisco se utiliza un borde o anillo <i>(focus ring)</i> por fuera del componente en un
@@ -727,10 +727,10 @@ const FormRadioDocs = () => {
 
             <div className="d-flex flex-column gap-3">
               <div className="d-flex flex-column  gap-2">
-                <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
+                <h3 className="text-xl" style={{ marginBottom: '0px !important;' }}>
                   Error
                 </h3>
-                <p style={{ marginBottom: '0px !important' }}>
+                <p style={{ marginBottom: '0px !important;' }}>
                   Para garantizar la accesibilidad, el estado de error debe ser claramente perceptible. En los botones
                   de radio, se utiliza un borde en color rojo con suficiente contraste. Esto asegura que todas las
                   personas puedan identificar y corregir errores fácilmente, cumpliendo con las pautas de accesibilidad
@@ -748,10 +748,10 @@ const FormRadioDocs = () => {
 
             <div className="d-flex flex-column gap-3">
               <div className="d-flex flex-column  gap-2">
-                <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
+                <h3 className="text-xl" style={{ marginBottom: '0px !important;' }}>
                   Deshabilitado <i>(disabled)</i>
                 </h3>
-                <p style={{ marginBottom: '0px !important' }}>
+                <p style={{ marginBottom: '0px !important;' }}>
                   Estado que indica que el botón no está disponible para la interacción, lo que significa que no puede
                   activarse.
                 </p>
@@ -773,11 +773,11 @@ const FormRadioDocs = () => {
       content: (
         <>
           <div className="d-flex flex-column gap-3">
-            <p style={{ marginBottom: '0px !important' }}>
+            <p style={{ marginBottom: '0px !important;' }}>
               La separación vertical entre <i>botones de radio</i> es de 8px. tanto para dispositivos desktop como
               mobile..
             </p>
-            <p style={{ marginBottom: '0px !important' }}>
+            <p style={{ marginBottom: '0px !important;' }}>
               Podes consultar la <Link href={'/patterns'}>ficha de patrones de formulario</Link> para conocer la
               separación entre secciones.
             </p>

@@ -423,19 +423,19 @@ const FormCheckDocs = () => {
         <>
           <section className="d-flex flex-column  gap-3 p-1">
             <div className="d-flex flex-column  gap-2">
-              <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
+              <h3 className="text-xl" style={{ marginBottom: '0px !important;' }}>
                 Uso de mayúsculas
               </h3>
-              <p style={{ marginBottom: '0px !important' }}>
+              <p style={{ marginBottom: '0px !important;' }}>
                 Utilizar mayúsculas en la letra inicial de todas las etiquetas del grupo.
               </p>
             </div>
 
             <div className="d-flex flex-column  gap-2">
-              <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
+              <h3 className="text-xl" style={{ marginBottom: '0px !important;' }}>
                 Longitud del texto
               </h3>
-              <p style={{ marginBottom: '0px !important' }}>
+              <p style={{ marginBottom: '0px !important;' }}>
                 Las etiquetas deben ser legibles, consistentes y concisas. En <i>checkboxes</i> independientes se
                 permite más texto, pero en grupos conviene mantener las etiquetas cortas para no afectar la experiencia
                 si se extienden a una segunda línea.
@@ -443,10 +443,10 @@ const FormCheckDocs = () => {
             </div>
 
             <div className="d-flex flex-column  gap-2">
-              <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
+              <h3 className="text-xl" style={{ marginBottom: '0px !important;' }}>
                 Etiquetas
               </h3>
-              <p style={{ marginBottom: '0px !important' }}>
+              <p style={{ marginBottom: '0px !important;' }}>
                 Usa etiquetas claras y concisas para que los usuarios puedan escanear las opciones fácilmente. Asegurate
                 de presentar todas las opciones y que no se superpongan. Todas las etiquetas deben ser consistentes en
                 longitud, tiempo verbal y significado. Para etiquetas de grupo, indicá la categoría del conjunto.
@@ -454,19 +454,19 @@ const FormCheckDocs = () => {
             </div>
 
             <div className="d-flex flex-column  gap-2">
-              <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
+              <h3 className="text-xl" style={{ marginBottom: '0px !important;' }}>
                 Organización
               </h3>
-              <p style={{ marginBottom: '0px !important' }}>
+              <p style={{ marginBottom: '0px !important;' }}>
                 Asegurate de que las opciones de los <i>checkboxes</i> estén organizadas de forma lógica y con sentido.
                 Tené en cuenta que, al listar elementos alfabéticamente, el orden puede cambiar al localizar el texto.
               </p>
             </div>
             <div className="d-flex flex-column  gap-2">
-              <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
+              <h3 className="text-xl" style={{ marginBottom: '0px !important;' }}>
                 Puntuación
               </h3>
-              <p style={{ marginBottom: '0px !important' }}>
+              <p style={{ marginBottom: '0px !important;' }}>
                 Evita usar signos de puntuación en las etiquetas, excepto cuando la etiqueta sea una oración completa,
                 por ejemplo, en términos y condiciones.
               </p>
@@ -526,10 +526,10 @@ const FormCheckDocs = () => {
           </div>
           <div className="d-flex flex-column gap-3">
             <div className="d-flex flex-column  gap-2">
-              <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
+              <h3 className="text-xl" style={{ marginBottom: '0px !important;' }}>
                 Interactividad limitada
               </h3>
-              <p style={{ marginBottom: '0px !important' }}>
+              <p style={{ marginBottom: '0px !important;' }}>
                 Cuando un <i>checkbox</i> está deshabilitado temporalmente, es importante indicarlo correctamente
                 mediante el atributo &quot;<i>disabled</i>&quot;. Además, debe evitarse que el foco del teclado llegue
                 al componente, y debe comunicarse su estado a tecnologías de asistencia.
@@ -726,10 +726,10 @@ const FormCheckDocs = () => {
           <section className="d-flex flex-column  gap-3 p-1">
             <div className="d-flex flex-column gap-3">
               <div className="d-flex flex-column  gap-2">
-                <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
+                <h3 className="text-xl" style={{ marginBottom: '0px !important;' }}>
                   Predeterminado <i>(default)</i>
                 </h3>
-                <p style={{ marginBottom: '0px !important' }}>Estado predeterminado del checkbox en una interfaz.</p>
+                <p style={{ marginBottom: '0px !important;' }}>Estado predeterminado del checkbox en una interfaz.</p>
               </div>
               <Image
                 src={`${basePath}/images/forms/check/state_default.svg`}
@@ -742,10 +742,10 @@ const FormCheckDocs = () => {
 
             <div className="d-flex flex-column gap-3">
               <div className="d-flex flex-column  gap-2">
-                <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
+                <h3 className="text-xl" style={{ marginBottom: '0px !important;' }}>
                   Sobre <i>(hover)</i>
                 </h3>
-                <p style={{ marginBottom: '0px !important' }}>
+                <p style={{ marginBottom: '0px !important;' }}>
                   Estado que adopta el checkbox cuando un cursor pasa sobre él, cambiando su apariencia para indicar su
                   interactividad a la persona usuaria.
                 </p>
@@ -761,10 +761,10 @@ const FormCheckDocs = () => {
 
             <div className="d-flex flex-column gap-3">
               <div className="d-flex flex-column  gap-2">
-                <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
+                <h3 className="text-xl" style={{ marginBottom: '0px !important;' }}>
                   En foco <i>(focus)</i>
                 </h3>
-                <p style={{ marginBottom: '0px !important' }}>
+                <p style={{ marginBottom: '0px !important;' }}>
                   Es un principio de accesibilidad que asegura que cualquier elemento interactivo en una interfaz sea
                   claramente visible cuando recibe la atención del usuario, especialmente al ser navegado con el
                   teclado. En Obelisco se utiliza un borde o anillo <i>(focus ring)</i> por fuera del componente en un
@@ -782,10 +782,10 @@ const FormCheckDocs = () => {
 
             <div className="d-flex flex-column gap-3">
               <div className="d-flex flex-column  gap-2">
-                <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
+                <h3 className="text-xl" style={{ marginBottom: '0px !important;' }}>
                   Error
                 </h3>
-                <p style={{ marginBottom: '0px !important' }}>
+                <p style={{ marginBottom: '0px !important;' }}>
                   Para garantizar la accesibilidad, el estado de error debe ser claramente perceptible. En los checkbox,
                   se utiliza un borde en color rojo con suficiente contraste. Esto asegura que todas las personas puedan
                   identificar y corregir errores fácilmente, cumpliendo con las pautas de accesibilidad (WCAG).
@@ -802,10 +802,10 @@ const FormCheckDocs = () => {
 
             <div className="d-flex flex-column gap-3">
               <div className="d-flex flex-column  gap-2">
-                <h3 className="text-xl" style={{ marginBottom: '0px !important' }}>
+                <h3 className="text-xl" style={{ marginBottom: '0px !important;' }}>
                   Deshabilitado <i>(disabled)</i>
                 </h3>
-                <p style={{ marginBottom: '0px !important' }}>
+                <p style={{ marginBottom: '0px !important;' }}>
                   Estado que indica que el botón no está disponible para la interacción, lo que significa que no puede
                   activarse.
                 </p>
@@ -827,10 +827,10 @@ const FormCheckDocs = () => {
       content: (
         <>
           <div className="d-flex flex-column gap-3">
-            <p style={{ marginBottom: '0px !important' }}>
+            <p style={{ marginBottom: '0px !important;' }}>
               La separación vertical entre <i>checkboxes</i> es de 8px. tanto para dispositivos desktop como mobile.
             </p>
-            <p style={{ marginBottom: '0px !important' }}>
+            <p style={{ marginBottom: '0px !important;' }}>
               Podes consultar la <Link href={'/patterns'}>ficha de patrones de formulario </Link> para conocer la
               separación entre secciones.
             </p>

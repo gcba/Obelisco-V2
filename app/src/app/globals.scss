@@ -436,6 +436,44 @@ pre {
   }
 }
 
+// Visualización de disposición con scroll
+.card-box-sizing-disp-scroll {
+  transform: scale(0.6);
+  transform-origin: top;
+  max-height: 600px;
+
+  // <=768 & >=576
+  @media screen and (max-width: 768px) {
+    transform: scale(0.6);
+    max-height: 260px;
+  }
+
+  // >=768 & <=1200
+  @media screen and (min-width: 768px) {
+    max-height: 440px;
+  }
+
+  // >= a 1200
+  @media screen and (min-width: 1200px) {
+    max-height: 450px;
+  }
+  > * {
+    width: 160%;
+    position: relative;
+    left: -30%;
+    @media screen and (min-width: 576px) and (max-width: 1199.98px) {
+      left: 0;
+    }
+  }
+  &-2 {
+    @extend .card-box-sizing-columns;
+    max-height: 340px;
+    @media screen and (min-width: 768px) {
+      max-height: 220px;
+    }
+  }
+}
+
 //Contenedores para barra de desplazamiento
 .horizontal-example {
   min-width: 1200px;

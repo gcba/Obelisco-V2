@@ -30,20 +30,6 @@ $scroll-border-radius: 100px;
     }
   }
 
-  @include media-breakpoint-down(md) {
-    overflow-x: auto;
-
-    .card-items-3 {
-      display: flex;
-      flex-wrap: nowrap;
-      max-width: 410px;
-    }
-
-    .card-items-3 > .col {
-      flex: 0 0 auto;
-    }
-  }
-
   &:has(> .table) {
     padding: 0;
     border: 1px solid $border-color;

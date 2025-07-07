@@ -15,6 +15,7 @@ import {
   HORIZONTAL_IMG,
   HORIZONTAL_TEXT,
   HORIZONTAL_THEME,
+  SCROLL_DISPOSITION,
   TARJETAS_ACCESSIBILTY,
   TARJETAS_ACCESSIBILTY_2,
   VERTICAL_AGENDA,
@@ -338,10 +339,10 @@ const CardDocs: React.FC = () => {
     {
       subtitle: 'Disposicion con scroll',
       content: (
-        <CodeBox codeHTML={DISPOSITION_3}>
+        <CodeBox codeHTML={SCROLL_DISPOSITION}>
           <div className="card-box-sizing-disp-scroll">
             <div className="container">
-              <div className="responsive-scroll has-card-items " tabIndex={0}>
+              <div className="responsive-scroll has-card-items" tabIndex={0}>
                 <div className="card-items-3">
                   <div className="col">
                     <div className="card">

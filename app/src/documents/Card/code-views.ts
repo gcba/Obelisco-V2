@@ -175,6 +175,68 @@ export const VERTICAL_AGENDA = `
   </div>
 </div>
 `;
+export const SCROLL_DISPOSITION = `
+<div class="responsive-scroll has-card-items">
+  <div class="card-items-3">
+    <div class="col">
+      <div class="card">
+        <i class="bx bxs-info-circle card-icon"></i>
+        <div class="card-body">
+          <h3 class="card-title">
+            <a href="#" class="card-title-link">Título de la tarjeta</a>
+          </h3>
+          <p class="card-text">Descripción de la tarjeta</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <i class="bx bxs-info-circle card-icon"></i>
+        <div class="card-body">
+          <h3 class="card-title">
+            <a href="#" class="card-title-link">Título de la tarjeta</a>
+          </h3>
+          <p class="card-text">Descripción de la tarjeta</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <i class="bx bxs-info-circle card-icon"></i>
+        <div class="card-body">
+          <h3 class="card-title">
+            <a href="#" class="card-title-link">Título de la tarjeta</a>
+          </h3>
+          <p class="card-text">Descripción de la tarjeta</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <i class="bx bxs-info-circle card-icon"></i>
+        <div class="card-body">
+          <h3 class="card-title">
+            <a href="#" class="card-title-link">Título de la tarjeta</a>
+          </h3>
+          <p class="card-text">Descripción de la tarjeta</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <i class="bx bxs-info-circle card-icon"></i>
+        <div class="card-body">
+          <h3 class="card-title">
+            <a href="#" class="card-title-link">Título de la tarjeta</a>
+          </h3>
+          <p class="card-text">Descripción de la tarjeta</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 export const DISPOSITION_3 = `
 <div class="card-items-3">
   <div class="col">

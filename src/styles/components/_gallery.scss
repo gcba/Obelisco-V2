@@ -7,7 +7,7 @@ $carousel-control-size: $carousel-control-icon-size + $carousel-control-padding 
 $carousel-control-border-radius: 100%;
 
 $carousel-control-space-x-mobile: $carousel-control-size * 0.25;
-$carousel-control-space-top-mobile: 0.5rem5;
+$carousel-control-space-top-mobile: 25%;
 
 $carousel-control-space-x: $carousel-control-size * -1.5;
 $carousel-control-space-top: 0.25rem * 50;
@@ -158,6 +158,7 @@ $carousel-margin-bottom: 0.25rem * 4;
   padding: $carousel-control-padding;
   background: $slate-50;
   top: $carousel-control-space-top-mobile;
+  transform: translateY(-$carousel-control-space-top-mobile);
   border-radius: $carousel-control-border-radius;
   opacity: 0.75;
 }
@@ -214,6 +215,7 @@ $carousel-margin-bottom: 0.25rem * 4;
   color: $body-color;
   top: 100%;
   padding-top: 0;
+  padding-bottom: 0;
 
   h5 {
     @extend .h4;

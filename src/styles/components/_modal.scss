@@ -5,15 +5,9 @@ $modal-mobile: 328px;
 
 // Custom styles
 .modal {
-  //?new
   .modal-sm {
     max-width: $modal-mobile;
 
-    .modal-content {
-      @media screen and (width <= 360px) {
-        margin: 0 0.5rem;
-      }
-    }
     @include media-breakpoint-up(md) {
       max-width: $modal-tablet;
     }
@@ -39,7 +33,9 @@ $modal-mobile: 328px;
 
   .modal-content {
     border: none;
-    padding: 1rem;
+    padding-top: 10px;
+
+    // padding: 0 !important;
     outline: 0.125rem solid transparent;
 
     .modal-header {
@@ -93,5 +89,11 @@ $modal-mobile: 328px;
     @include media-breakpoint-up(xl) {
       padding: 1.5rem;
     }
+  }
+
+  .modal-dialog {
+    margin-top: 0;
+    margin-bottom: 0;
+    max-height: 100vh;
   }
 }

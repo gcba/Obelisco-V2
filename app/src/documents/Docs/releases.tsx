@@ -32,6 +32,7 @@ const ReleasesComponents: React.FC = () => {
             .
           </li>
           <li>Fix de comportamiento de tarjetas verticales de noticias.</li>
+          <li>Se crea la clase <code>has-card-items</code> para tarjetas con disposición y scroll.</li>
         </ul>
       ),
     },

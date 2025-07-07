@@ -14906,11 +14906,6 @@ input[type=search]::-moz-search-clear-button {
 .modal .modal-sm {
   max-width: 328px;
 }
-@media screen and (width <= 360px) {
-  .modal .modal-sm .modal-content {
-    margin: 0 0.5rem;
-  }
-}
 @media (min-width: 768px) {
   .modal .modal-sm {
     max-width: 336px;
@@ -14937,7 +14932,7 @@ input[type=search]::-moz-search-clear-button {
 }
 .modal .modal-content {
   border: none;
-  padding: 1rem;
+  padding-top: 10px;
   outline: 0.125rem solid transparent;
 }
 .modal .modal-content .modal-header {
@@ -14982,6 +14977,11 @@ input[type=search]::-moz-search-clear-button {
   .modal .modal-content {
     padding: 1.5rem;
   }
+}
+.modal .modal-dialog {
+  margin-top: 0;
+  margin-bottom: 0;
+  max-height: 100vh;
 }
 
 .status {
@@ -16061,7 +16061,8 @@ span.form-label {
   height: 3rem;
   padding: 0.75rem;
   background: #f3f6f9;
-  top: 0.5rem5;
+  top: 25%;
+  transform: translateY(-25%);
   border-radius: 100%;
   opacity: 0.75;
 }
@@ -16112,6 +16113,7 @@ span.form-label {
   color: #101e37;
   top: 100%;
   padding-top: 0;
+  padding-bottom: 0;
 }
 .carousel-caption h5, .carousel-caption .h5 {
   font-weight: 700;
@@ -18707,6 +18709,24 @@ span.form-label {
   overflow: auto;
   border-radius: 0.5rem;
   scrollbar-color: auto;
+}
+@media (min-width: 768px) {
+  .responsive-scroll.has-card-items {
+    overflow: hidden;
+  }
+}
+@media (max-width: 767.98px) {
+  .responsive-scroll {
+    overflow-x: auto;
+  }
+  .responsive-scroll .card-items-3 {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 410px;
+  }
+  .responsive-scroll .card-items-3 > .col {
+    flex: 0 0 auto;
+  }
 }
 .responsive-scroll:has(> .table) {
   padding: 0;

@@ -188,20 +188,18 @@ const PatternsComponents: React.FC = () => {
       ),
     },
     {
-      title: 'Tipos de Input',
+      title: 'Tipos de campos',
       content: (
         <>
-          <p className="text-md">
+          <p className="text-md" style={{ marginBottom: '32px' }}>
             Cada tipo de input tiene una funcionalidad específica. Es importante elegir el indicado según el dato que se
             requiera.
           </p>
-        </>
-      ),
-    },
-    {
-      titleBold: 'Inputs de texto',
-      content: (
-        <>
+
+          <p className="text-xl mb-2" style={{ fontWeight: 600 }}>
+            Campos de texto
+          </p>
+          {/* Inicio - Campos de texto */}
           <p className="text-md">
             Para conocer más sobre usos, especificaciones de código y accesibilidad, consultar la ficha de{' '}
             <Link href="/components/form-text">Inputs de texto</Link>.
@@ -210,7 +208,7 @@ const PatternsComponents: React.FC = () => {
           {/* 1 */}
           <div className="max-items-2" style={{ marginTop: '32px' }}>
             <div className="col pe-3">
-              <p className="text-xl">Text</p>
+              <p className="text-xl">Texto</p>
               <p className="text-md">Permite ingresar una línea de texto de pocas palabras.</p>
             </div>
             <div className="col ps-3">
@@ -227,7 +225,7 @@ const PatternsComponents: React.FC = () => {
           {/* 2 */}
           <div className="max-items-2" style={{ marginTop: '32px' }}>
             <div className="col pe-3">
-              <p className="text-xl">Text Area</p>
+              <p className="text-xl">Área de texto</p>
               <p className="text-md">Permite ingresar múltiples líneas de texto.</p>
             </div>
             <div className="col ps-3">
@@ -244,7 +242,7 @@ const PatternsComponents: React.FC = () => {
           {/* 3 */}
           <div className="max-items-2" style={{ marginTop: '32px' }}>
             <div className="col pe-3">
-              <p className="text-xl">Password</p>
+              <p className="text-xl">Contraseña</p>
               <p className="text-md">Permite ingresar contraseñas y datos sensibles.</p>
             </div>
             <div className="col ps-3">
@@ -278,7 +276,7 @@ const PatternsComponents: React.FC = () => {
           {/* 5 */}
           <div className="max-items-2" style={{ marginTop: '32px' }}>
             <div className="col pe-3">
-              <p className="text-xl">Number</p>
+              <p className="text-xl">Número</p>
               <p className="text-md">Permite ingresar números.</p>
             </div>
             <div className="col ps-3">
@@ -295,7 +293,7 @@ const PatternsComponents: React.FC = () => {
           {/* 6 */}
           <div className="max-items-2" style={{ marginTop: '32px' }}>
             <div className="col pe-3">
-              <p className="text-xl">Tel</p>
+              <p className="text-xl">Teléfono</p>
               <p className="text-md">Permite ingresar un número telefónico.</p>
             </div>
             <div className="col ps-3">
@@ -312,7 +310,7 @@ const PatternsComponents: React.FC = () => {
           {/* 7 */}
           <div className="max-items-2" style={{ marginTop: '32px' }}>
             <div className="col pe-3">
-              <p className="text-xl">Date</p>
+              <p className="text-xl">Fecha</p>
               <p className="text-md">Permite ingresar una fecha.</p>
             </div>
             <div className="col ps-3">
@@ -329,7 +327,7 @@ const PatternsComponents: React.FC = () => {
           {/* 8 */}
           <div className="max-items-2" style={{ marginTop: '32px' }}>
             <div className="col pe-3">
-              <p className="text-xl">Time</p>
+              <p className="text-xl">Hora</p>
               <p className="text-md">Permite ingresar un horario.</p>
             </div>
             <div className="col ps-3">
@@ -342,16 +340,15 @@ const PatternsComponents: React.FC = () => {
               />
             </div>
           </div>
-        </>
-      ),
-    },
-    {
-      titleBold: 'Input de búsqueda',
-      content: (
-        <>
+          {/* Fin - Campos de texto */}
+
+          {/* Inicio - Campo de búsqueda */}
+          <p className="text-xl mb-2" style={{ marginTop: '32px', fontWeight: 600 }}>
+            Campos de búsqueda
+          </p>
           <p className="text-md">
             Para conocer más sobre usos, especificaciones de diseño y código, y accesibilidad, consultar la ficha de{' '}
-            <Link href="/components/form-search"> Search</Link>.
+            <Link href="/components/form-search">Campo de búsqueda</Link>.
           </p>
 
           {/* 1 */}
@@ -370,24 +367,24 @@ const PatternsComponents: React.FC = () => {
               />
             </div>
           </div>
-        </>
-      ),
-    },
-    {
-      titleBold: 'Inputs de selección',
-      content: (
-        <>
+          {/* Fin - Campo de búsqueda */}
+
+          {/* Inicio - Campo de selección */}
+          <p className="text-xl mb-2" style={{ marginTop: '32px', fontWeight: 600 }}>
+            Campos de selección
+          </p>
           <p className="text-md">
             Para conocer más sobre usos, especificaciones de diseño y código, y accesibilidad, consultar las fichas de{' '}
-            <Link href="/components/form-text#section-dev-6">Select</Link>,{' '}
-            <Link href="/components/form-selection#section-dev-2">Radio</Link> y{' '}
-            <Link href="/components/form-selection#section-dev-5">Checkbox</Link>.
+            {/* # Rutas */}
+            <Link href="/components/form-text">Selector</Link>,{' '}
+            <Link href="/components/form-radio">Botón de radio</Link> y{' '}
+            <Link href="/components/form-check">Casilla de verificación</Link>.
           </p>
 
           {/* 1 */}
           <div className="max-items-2" style={{ marginTop: '32px' }}>
             <div className="col pe-3">
-              <p className="text-xl">Select</p>
+              <p className="text-xl">Selector</p>
               <p className="text-md">
                 Permite seleccionar un valor único o múltiples valores dentro de una lista desplegable de opciones.
               </p>
@@ -406,7 +403,7 @@ const PatternsComponents: React.FC = () => {
           {/* 2 */}
           <div className="max-items-2" style={{ marginTop: '32px' }}>
             <div className="col pe-3">
-              <p className="text-xl">Radio</p>
+              <p className="text-xl">Botón de radio</p>
               <p className="text-md">Permite seleccionar un único valor dentro de un número limitado de opciones.</p>
             </div>
             <div className="col ps-3">
@@ -423,7 +420,7 @@ const PatternsComponents: React.FC = () => {
           {/* 3 */}
           <div className="max-items-2" style={{ marginTop: '32px' }}>
             <div className="col pe-3">
-              <p className="text-xl">Checkbox</p>
+              <p className="text-xl">Casilla de verificación</p>
               <p className="text-md">
                 Permite seleccionar cero o múltiples valores dentro de un número limitado de opciones.
               </p>
@@ -438,13 +435,12 @@ const PatternsComponents: React.FC = () => {
               />
             </div>
           </div>
-        </>
-      ),
-    },
-    {
-      titleBold: 'Input de carga de archivo',
-      content: (
-        <>
+          {/* Fin - Campo de selección */}
+
+          {/* Inicio - Carga de archivo */}
+          <p className="text-xl mb-2" style={{ marginTop: '32px', fontWeight: 600 }}>
+            Carga de archivo
+          </p>
           <p className="text-md">
             Para conocer más sobre usos, especificaciones de diseño y código, y accesibilidad, consultar la ficha de{' '}
             <Link href="/components/form-file">File</Link>.
@@ -453,7 +449,7 @@ const PatternsComponents: React.FC = () => {
           {/* 1 */}
           <div className="max-items-2" style={{ marginTop: '32px' }}>
             <div className="col pe-3">
-              <p className="text-xl">File</p>
+              <p className="text-xl">Carga de archivo</p>
               <p className="text-md">Permite cargar uno o múltiples archivos.</p>
             </div>
             <div className="col ps-3">
@@ -466,6 +462,7 @@ const PatternsComponents: React.FC = () => {
               />
             </div>
           </div>
+          {/* Fin - Carga de archivo */}
         </>
       ),
     },

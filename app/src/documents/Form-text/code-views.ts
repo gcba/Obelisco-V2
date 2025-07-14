@@ -186,3 +186,10 @@ export const INPUT_BACKGROUND = `
   />
 </div>
 `;
+
+export const INPUT_TEXT_ACCESSIBILITY = `<div class="form-label-container">
+    <label for="email">Correo electrónico</label>
+</div>
+<input type="email" id="email" name="email"/>
+<p class="form-label-description">Campo de asistencia</p>
+`;

@@ -80,6 +80,7 @@ const GalleryDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'Grillas',
+      firstTitle: true,
       content: (
         <>
           <CodeBox codeHTML={generateCode(selectedGrid + 1)}>

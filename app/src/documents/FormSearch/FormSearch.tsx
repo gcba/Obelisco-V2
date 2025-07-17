@@ -142,7 +142,7 @@ const FormSearchDocs: React.FC = () => {
               </ul>
             </div>
             <div className="list-informative">
-              <p className="text-xl">Cuándo usar</p>
+              <p className="text-xl">Cuándo no usar</p>
               <ul className="list-informative-bullet">
                 <li>Para consultas complejas que involucran varias palabras clave o una sintaxis específica.</li>
                 <li>Cuando haya cantidad pequeñas o limitadas de datos.</li>

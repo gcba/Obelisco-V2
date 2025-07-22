@@ -14,6 +14,7 @@ export default function HeaderDesktop() {
     { text: 'Empezar con Obelisco', url: '/getting-started', id: 1 },
     { text: 'Librería', url: '/components', id: 2 },
     { text: 'Patrones', url: '/patterns', id: 3 },
+    { text: 'Plantillas', url: '/templates', id: 4 },
   ];
   const pathname = usePathname();
 
@@ -46,11 +47,6 @@ export default function HeaderDesktop() {
                           </Link>
                         </li>
                       ))}
-                      <li className="nav-item">
-                        <a className={`nav-link nav-link-lg`} href="https://gcba.github.io/obelisco-demo/index.html">
-                          <span>Plantillas</span>
-                        </a>
-                      </li>
                       <li className="dropdown">
                         <button
                           type="button"

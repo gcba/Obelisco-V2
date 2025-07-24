@@ -8,7 +8,7 @@ import {
   gettingPages,
   organismsPages,
   stylesPages,
-  templates,
+  templatesPages,
   versions,
 } from '../../main-layout';
 import NavLayout from '../../Navigation/nav';
@@ -53,7 +53,7 @@ export default function HeaderMobile() {
             <NavLayout items={documentationPages} />
             <hr className="nav-divider" />
             <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Plantillas</p>
-            <NavLayout items={templates} />
+            <NavLayout items={templatesPages} />
             <hr className="nav-divider" />
             <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Estilos</p>
             <NavLayout items={stylesPages} />

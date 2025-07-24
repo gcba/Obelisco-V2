@@ -58,7 +58,6 @@ export const componentsPages = [
   { text: 'Tarjetas', url: '/components/cards', id: 28 },
   { text: 'Tooltip', url: '/components/tooltip', id: 29 },
 ];
-
 export const gettingPages = [
   { text: 'Sobre Obelisco', url: '/getting-started', id: 1 },
   { text: 'Instalación', url: '/getting-started/installation', id: 2 },
@@ -66,14 +65,13 @@ export const gettingPages = [
   { text: 'Accesibilidad', url: '/getting-started/accessibility', id: 4 },
   { text: 'Editor de código', url: '/getting-started/editor', id: 5 },
 ];
-
 export const documentationPages = [
   { text: 'Cambios en componentes', url: '/documentation/update-component', id: 1 },
   { text: 'Clases disponibles', url: '/documentation/class-documentation', id: 2 },
   { text: 'Versionados', url: '/documentation/releases', id: 4 },
 ];
 
-export const templates = [{ text: 'Plantillas', url: '/templates', id: 1 }];
+export const templatesPages = [{ text: 'Página de trámites', url: '/templates/pagina-tramites', id: 1 }];
 
 export const patterns = [{ text: 'Construir un formulario', url: '/patterns', id: 1 }];
 
@@ -132,12 +130,13 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
               <NavLayout items={patterns} />
             </div>
           )}
+
           {pathname.includes('/templates') && (
             <div className="nav-left sticky-nav h-auto">
               <div className="nav-left-box-title">
                 <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Plantillas</p>
               </div>
-              <NavLayout items={templates} />
+              <NavLayout items={templatesPages} />
             </div>
           )}
 

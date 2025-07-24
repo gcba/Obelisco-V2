@@ -71,7 +71,11 @@ export const documentationPages = [
   { text: 'Versionados', url: '/documentation/releases', id: 4 },
 ];
 
-export const templatesPages = [{ text: 'Página de trámites', url: '/templates/pagina-tramites', id: 1 }];
+export const templatesPages = [
+  { text: 'Página de trámites', url: '/templates/pagina-tramites', id: 1 },
+  { text: 'Página de área uno', url: '/templates/pagina-area-uno', id: 2 },
+  { text: 'Página de área dos', url: '/templates/pagina-area-dos', id: 3 },
+];
 
 export const patterns = [{ text: 'Construir un formulario', url: '/patterns', id: 1 }];
 

@@ -272,7 +272,7 @@ const FormCheckDocs = () => {
               </ul>
             </div>
             <div className="list-informative">
-              <p className="text-xl">Cuándo usar</p>
+              <p className="text-xl">Cuándo no usar</p>
               <ul className="list-informative-bullet">
                 <li>
                   Cuando se requiere una única respuesta dentro de un conjunto de opciones, en ese caso utilizar el

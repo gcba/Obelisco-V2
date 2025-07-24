@@ -553,8 +553,8 @@ const FormTextDocs: React.FC = () => {
             <div className="d-flex pt-3">
               <span className="material-symbols-rounded text-success">check</span>
               <p className="mb-0">
-                Utilizar el <strong>texto de prefijo</strong> para reforzar el tipo de dato que se espera, como los
-                símbolos de una moneda.
+                Utilizar el <strong>texto de prefijo</strong> para reforzar el tipo de dato que se espera, como unidades
+                de medidas.
               </p>
             </div>
           </div>
@@ -687,10 +687,6 @@ const FormTextDocs: React.FC = () => {
             <li>
               Restricciones técnicas o legales. Cuando el sistema tiene un límite específico, por ejemplo, en un campo
               de nombre o código.
-            </li>
-            <li>
-              <strong>Dejar un campo obligatorio incompleto</strong>. Falta completar un dato obligatorio que el
-              formulario necesita para avanzar.
             </li>
           </ul>
         </>
@@ -958,7 +954,7 @@ const FormTextDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md">
-            El componente de migas de pan está construido para ser reconocido por herramientas de asistencia como la
+            El componente de campo de texto está construido para ser reconocido por herramientas de asistencia como la
             navegación por teclado o lectores por voz.
           </p>
           <span className="badge badge-default ms-1">TAB</span>

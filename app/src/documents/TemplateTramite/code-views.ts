@@ -1549,3 +1549,615 @@ export const TRAMITES = `
 </body>
 </html>
 `;
+
+export const TEMPLATE_TRAMITES = `
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link
+      rel="shortcut icon"
+      href="../../assets/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <title>Trámites</title>
+
+    <!-- Obelisco -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../node_modules/@gcba/obelisco-v2/dist/styles.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0"/>
+  </head>
+
+  <body>
+    <main id="main">
+      <article class="mb-5">
+        <header class="bg-light pt-2 pt-xl-3 pb-4 pb-xl-5 mb-4 mb-xl-5">
+          <div class="container pt-1">
+            <nav aria-label="Navegación secundaria" class="py-3">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                <li class="breadcrumb-item">
+                  <a href="#">Jefe de Gobierno</a>
+                </li>
+                <li class="breadcrumb-item"><a href="#">Trámites</a></li>
+                <li class="breadcrumb-item">
+                  <a href="#">Título del trámite</a>
+                </li>
+              </ol>
+            </nav>
+
+            <div class="row">
+              <div class="col-12 col-xl-8">
+                <div class="pt-xl-1 pb-xl-2">
+                  <h1 class="mb-3 mb-xl-2">Título del trámite</h1>
+                  <p class="lead mb-4">
+                    Descripción del trámite que sintetice para qué la persona
+                    deberá realizarlo.
+                  </p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <span class="me-1">Modalidad: </span>
+                  <span class="badge badge-default">Presencial</span>
+                  <span class="badge badge-default">En línea</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="container pt-2 pt-xl-0">
+          <div class="row flex-column-reverse flex-xl-row">
+            <div class="col-12 col-xl-8">
+              <section class="pb-xl-4 pb-2">
+                <h2 class="mb-4">Requisitos para iniciar el trámite</h2>
+                <div class="list-informative mb-4 pb-xl-1 pb-0">
+                  <h3 class="list-informative-subtitle">
+                    Subtítulo con lista de requisitos 1
+                  </h3>
+                  <ul class="list-informative-check">
+                    <li>
+                      Descripción del tipo de requisito que necesita la persona
+                      usuaria y que sea condicionante para poder avanzar con el
+                      trámite.
+                    </li>
+                    <li>
+                      Descripción del tipo de requisito que necesita la persona
+                      usuaria y que sea condicionante para poder avanzar con el
+                      trámite.
+                      <a href="#" target="_blank" rel="noreferrer"
+                        >Aquí va un enlace pertinente</a
+                      >
+                    </li>
+                    <li>
+                      Descripción del tipo de requisito que necesita la persona
+                      usuaria y que sea condicionante para poder avanzar con el
+                      trámite.
+                    </li>
+                  </ul>
+                </div>
+                <div class="list-informative mb-4 pb-xl-1 pb-0">
+                  <h3 class="list-informative-subtitle">
+                    Subtítulo con lista de requisitos 2
+                  </h3>
+                  <ul class="list-informative-check">
+                    <li>
+                      Descripción del tipo de requisito que necesita la persona
+                      usuaria y que sea condicionante para poder avanzar con el
+                      trámite.
+                    </li>
+                    <li>
+                      Descripción del tipo de requisito que necesita la persona
+                      usuaria y que sea condicionante para poder avanzar con el
+                      trámite.
+                      <a href="#" target="_blank" rel="noreferrer"
+                        >Aquí va un enlace pertinente</a
+                      >
+                    </li>
+                    <li>
+                      Descripción del tipo de requisito que necesita la persona
+                      usuaria y que sea condicionante para poder avanzar con el
+                      trámite.
+                    </li>
+                  </ul>
+                </div>
+                <div class="list-informative mb-4 pb-xl-1 pb-0">
+                  <h3 class="list-informative-subtitle">
+                    Subtítulo con lista de requisitos 3
+                  </h3>
+                  <ul class="list-informative-check">
+                    <li>
+                      Descripción del tipo de requisito que necesita la persona
+                      usuaria y que sea condicionante para poder avanzar con el
+                      trámite.
+                    </li>
+                    <li>
+                      Descripción del tipo de requisito que necesita la persona
+                      usuaria y que sea condicionante para poder avanzar con el
+                      trámite.
+                      <a href="#" target="_blank" rel="noreferrer"
+                        >Aquí va un enlace pertinente</a
+                      >
+                    </li>
+                    <li>
+                      Descripción del tipo de requisito que necesita la persona
+                      usuaria y que sea condicionante para poder avanzar con el
+                      trámite.
+                    </li>
+                  </ul>
+                </div>
+              </section>
+
+              <section class="mb-5">
+                <h2 class="mb-xl-4 mb-3">
+                  Pasos para completar el trámite
+                </h2>
+                <ul class="list-steps">
+                  <li class="list-steps-item">
+                    <h4>Título del paso</h4>
+                    <p>
+                      En esta descripción del paso se muestran los detalles
+                      principales de las acciones que deberá realizar la persona
+                      usuaria posteriormente.
+                    </p>
+                  </li>
+                  <li class="list-steps-item">
+                    <h4>Título del paso</h4>
+                    <p>
+                      En esta descripción del paso se muestran los detalles
+                      principales de las acciones que deberá realizar la persona
+                      usuaria posteriormente.
+                    </p>
+                  </li>
+                  <li class="list-steps-item">
+                    <h4>Título del paso</h4>
+                    <p>
+                      En esta descripción del paso se muestran los detalles
+                      principales de las acciones que deberá realizar la persona
+                      usuaria posteriormente.
+                    </p>
+                  </li>
+                </ul>
+              </section>
+
+              <section class="mb-4 mb-xl-3 pb-2 pb-xl-0">
+                <h2 class="mb-3">Costos del trámite</h2>
+                <div class="pb-0 pb-xl-1">
+                  <div
+                    class="col-12 col-xl-5 d-inline-block px-0 me-xl-4 pr-xl-2 mb-3 mb-xl-4 pb-xl-2"
+                  >
+                    <h3 class="mb-1">$ 00,00</h3>
+                    <p class="mb-0">Breve descripción del concepto</p>
+                  </div>
+                  <div
+                    class="col-12 col-xl-5 d-inline-block px-0 me-xl-4 pr-xl-2 mb-3 mb-xl-4 pb-xl-2"
+                  >
+                    <h3 class="mb-1">$ 00,00</h3>
+                    <p class="mb-0">Breve descripción del concepto</p>
+                  </div>
+                </div>
+                <div class="pb-0 pb-xl-1">
+                  <div
+                    class="col-12 col-xl-5 d-inline-block px-0 me-xl-4 pr-xl-2 mb-2 pb-xl-2"
+                  >
+                    <h3 class="mb-1">$ 00,00</h3>
+                    <p class="mb-0">Breve descripción del concepto</p>
+                  </div>
+                  <div
+                    class="col-12 col-xl-5 d-inline-block px-0 me-xl-4 pr-xl-2"
+                  >
+                    <h3 class="mb-1">$ 00,00</h3>
+                    <p class="mb-0">Breve descripción del concepto</p>
+                  </div>
+                </div>
+                <div class="mb-3 mb-xl-4 pb-xl-2">
+                  <p>
+                    Según la
+                    <a
+                      href="https://buenosaires.gob.ar/sites/default/files/2024-01/LEY%20N%C2%BA%206711.%20Tarifaria%202024_183.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Ley Tarifaria vigente </a
+                    >.
+                  </p>
+                </div>
+              </section>
+
+              <section class="mb-5">
+                <h2 class="mb-3">Título referido a colapsables</h2>
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <button
+                      class="accordion-button collapsed"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="false" 
+                      aria-controls="collapseOne"
+                    >
+                    <span class="collapse-title">Título</span>
+                    </button>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        Esta es la descripción que se encuentra dentro de un
+                        colapsable. Recomendamos no utilizar demasiado texto,
+                        para generar una lectura óptima.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button
+                      class="accordion-button collapsed"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false" 
+                      aria-controls="collapseOne"
+                    >
+                      <span class="collapse-title">Título</span>
+                    </button>
+                    <div
+                      id="collapseTwo"
+                      class="collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        Esta es la descripción que se encuentra dentro de un
+                        colapsable. Recomendamos no utilizar demasiado texto,
+                        para generar una lectura óptima.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button
+                      class="accordion-button collapsed"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false" 
+                      aria-controls="collapseOne"
+                    >
+                    <span class="collapse-title">Título</span>
+                    </button>
+                    <div
+                      id="collapseThree"
+                      class="collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        Esta es la descripción que se encuentra dentro de un
+                        colapsable. Recomendamos no utilizar demasiado texto,
+                        para generar una lectura óptima.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button
+                      class="accordion-button collapsed"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                      aria-expanded="false" 
+                      aria-controls="collapseOne"
+                    >
+                      <span class="collapse-title">Título</span>
+                    </button>
+                    <div
+                      id="collapseFour"
+                      class="collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        Esta es la descripción que se encuentra dentro de un
+                        colapsable. Recomendamos no utilizar demasiado texto,
+                        para generar una lectura óptima.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button
+                      class="accordion-button collapsed"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive"
+                      aria-expanded="false" 
+                      aria-controls="collapseOne"
+                    >
+                      <span class="collapse-title">Título</span>
+                    </button>
+                    <div
+                      id="collapseFive"
+                      class="collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        Esta es la descripción que se encuentra dentro de un
+                        colapsable. Recomendamos no utilizar demasiado texto,
+                        para generar una lectura óptima.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="mb-xl-5 mb-4 pb-2 pb-xl-0">
+                <h2 class="mb-4 pb-2">Más información</h2>
+                <div class="list-informative">
+                  <ul class="list-informative-bullet">
+                    <li>
+                      Este es un ejemplo de como disponer mas información sobre
+                      el trámite
+                    </li>
+                    <li>
+                      Este es un ejemplo de como disponer mas información sobre
+                      el trámite
+                    </li>
+                    <li>
+                      Este es un ejemplo de como disponer mas información sobre
+                      el trámite
+                    </li>
+                  </ul>
+                </div>
+              </section>
+
+              <section class="mb-xl-5 mb-4 pb-2 pb-xl-0">
+                <h2 class="mb-4 pb-2">Descargables</h2>
+                <div class="list-link mb-4 pb-2">
+                  <a class="download" href="#" target="_blank" rel="noreferrer"
+                    >Título del archivo a descargar</a
+                  >
+                  <a class="download" href="#" target="_blank" rel="noreferrer"
+                    >Título del archivo a descargar</a
+                  >
+                  <a class="download" href="#" target="_blank" rel="noreferrer"
+                    >Título del archivo a descargar</a
+                  >
+                </div>
+
+                <h2 class="mb-4">Descargables</h2>
+                <div class="list-link mb-4 pb-xl-1">
+                  <h3 class="list-link-title">
+                    Descargables
+                  </h3>
+                  <a class="download" href="#" target="_blank" rel="noreferrer"
+                    >Título del archivo a descargar</a
+                  >
+                  <a class="download" href="#" target="_blank" rel="noreferrer"
+                    >Título del archivo a descargar</a
+                  >
+                  <a class="download" href="#" target="_blank" rel="noreferrer"
+                    >Título del archivo a descargar</a
+                  >
+                </div>
+                <div class="list-link mb-4 pb-2">
+                  <h3 class="list-link-title">
+                    Descargables
+                  </h3>
+                  <a class="download" href="#" target="_blank" rel="noreferrer"
+                    >Título del archivo a descargar</a
+                  >
+                  <a class="download" href="#" target="_blank" rel="noreferrer"
+                    >Título del archivo a descargar</a
+                  >
+                  <a class="download" href="#" target="_blank" rel="noreferrer"
+                    >Título del archivo a descargar</a
+                  >
+                </div>
+
+                <h2 class="mb-4 pb-2">Descargables</h2>
+                <div class="list-link">
+                  <a class="download" href="#" target="_blank" rel="noreferrer"
+                    >Título del archivo a descargar</a
+                  >
+                  <a class="download" href="#" target="_blank" rel="noreferrer"
+                    >Título del archivo a descargar</a
+                  >
+                  <a class="download" href="#" target="_blank" rel="noreferrer"
+                    >Título del archivo a descargar</a
+                  >
+                </div>
+              </section>
+
+              <section>
+                <h2 class="mb-3">Normativa</h2>
+                <h3 class="mb-0">N° de normativa</h3>
+              </section>
+            </div>
+
+            <div class="col-12 col-xl-4 mx-auto mb-4 mb-xl-0 pb-2 pb-xl-0">
+              <div
+                class="block bg-light position-sticky"
+                style="top: 48px"
+              >
+                <div class="block-body">
+                  <h4 class="block-title">
+                    Iniciá el trámite y completá todos los pasos
+                  </h4>
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="btn btn-lg btn-primary btn-block"
+                  >
+                    Iniciar trámite
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <section class="mb-5">
+        <div class="container">
+          <div class="mb-4 pb-2">
+            <h2 class="mb-0">Encontrá la oficina más cercana</h2>
+          </div>
+          <div class="card-items-3">
+            <div class="col">
+              <div class="card card-horizontal">
+                <div class="card-body">
+                  <h3 class="card-title">
+                    <a href="#" class="card-title-link">
+                      Sede Comunal 1
+                    </a>
+                  </h3>
+                  <p class="card-text">Dirección 1234</p>
+                  <p class="card-text mt-0">Horario de atención: 00 a 00 hs</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-horizontal">
+                <div class="card-body">
+                  <h3 class="card-title">
+                    <a href="#" class="card-title-link">
+                      Sede Comunal 1
+                    </a>
+                  </h3>
+                  <p class="card-text">Dirección 1234</p>
+                  <p class="card-text mt-0">Horario de atención: 00 a 00 hs</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-horizontal">
+                <div class="card-body">
+                  <h3 class="card-title">
+                    <a href="#" class="card-title-link">
+                      Sede Comunal 1
+                    </a>
+                  </h3>
+                  <p class="card-text">Dirección 1234</p>
+                  <p class="card-text mt-0">Horario de atención: 00 a 00 hs</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-horizontal">
+                <div class="card-body">
+                  <h3 class="card-title">
+                    <a href="#" class="card-title-link">
+                      Sede Comunal 1
+                    </a>
+                  </h3>
+                  <p class="card-text">Dirección 1234</p>
+                  <p class="card-text mt-0">Horario de atención: 00 a 00 hs</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-horizontal d-none d-sm-block">
+                <div class="card-body">
+                  <h3 class="card-title">
+                    <a href="#" class="card-title-link">
+                      Sede Comunal 1
+                    </a>
+                  </h3>
+                  <p class="card-text">Dirección 1234</p>
+                  <p class="card-text mt-0">Horario de atención: 00 a 00 hs</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-horizontal d-none d-sm-block">
+                <div class="card-body">
+                  <h3 class="card-title">
+                    <a href="#" class="card-title-link">
+                      Sede Comunal 1
+                    </a>
+                  </h3>
+                  <p class="card-text">Dirección 1234</p>
+                  <p class="card-text mt-0">Horario de atención: 00 a 00 hs</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-horizontal d-none d-sm-block">
+                <div class="card-body">
+                  <h3 class="card-title">
+                    <a href="#" class="card-title-link">
+                      Sede Comunal 1
+                    </a>
+                  </h3>
+                  <p class="card-text">Dirección 1234</p>
+                  <p class="card-text mt-0">Horario de atención: 00 a 00 hs</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-horizontal d-none d-sm-block">
+                <div class="card-body">
+                  <h3 class="card-title">
+                    <a href="#" class="card-title-link">
+                      Sede Comunal 1
+                    </a>
+                  </h3>
+                  <p class="card-text">Dirección 1234</p>
+                  <p class="card-text mt-0">Horario de atención: 00 a 00 hs</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-horizontal d-none d-sm-block">
+                <div class="card-body">
+                  <h3 class="card-title">
+                    <a href="#" class="card-title-link">
+                      Sede Comunal 1
+                    </a>
+                  </h3>
+                  <p class="card-text">Dirección 1234</p>
+                  <p class="card-text mt-0">Horario de atención: 00 a 00 hs</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-3 d-sm-none">
+            <a class="access" href="#" target="_blank" rel="noreferrer">
+              Ver todas las sedes
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-light py-xl-5 py-4">
+        <div class="container">
+          <div class="mb-4 pb-xl-1">
+            <h2 class="mb-2">Organismo responsable</h2>
+            <h3 class="mb-0">Dirección general</h3>
+          </div>
+          <div class="mb-4">
+            <h4 class="mb-2">Ubicación</h4>
+            <a href="#" target="_blank" rel="noreferrer">Insertar dirección</a>
+          </div>
+          <div class="mb-4">
+            <h4 class="mb-2">Días y horarios de atención</h4>
+            <p class="mb-0">Lunes a viernes de 8:30 a 14:00 hs.</p>
+          </div>
+          <div>
+            <h4 class="mb-2">Contacto</h4>
+            <p class="mb-0">
+              Si tenés alguna duda, o necesitás información adicional, escribí a
+              <a href="mailto:correodeejemplo@buenosaires.gob.ar"
+                >correodeejemplo@buenosaires.gob.ar</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossOrigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossOrigin="anonymous"></script>
+    <script src="../../shared/header-search-login.js"></script>
+    <script src="../../shared/footer.js"></script>
+  </body>
+</html>
+`;

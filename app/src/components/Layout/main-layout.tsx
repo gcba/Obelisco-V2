@@ -73,8 +73,8 @@ export const documentationPages = [
 
 export const templatesPages = [
   { text: 'Página de trámites', url: '/templates/pagina-tramites', id: 1 },
-  { text: 'Página de área uno', url: '/templates/pagina-area-uno', id: 2 },
-  { text: 'Página de área dos', url: '/templates/pagina-area-dos', id: 3 },
+  { text: 'Página de área - Nivel 1 ', url: '/templates/pagina-area-uno', id: 2 },
+  { text: 'Página de área - Nivel 2', url: '/templates/pagina-area-dos', id: 3 },
 ];
 
 export const patterns = [{ text: 'Construir un formulario', url: '/patterns', id: 1 }];

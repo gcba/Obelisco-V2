@@ -64,7 +64,7 @@ export const CodeViewTemplate = ({ template }: { template: string }) => {
 
       <div style={{ position: 'relative' }}>
         <div ref={codeRefHTML}>
-          <SyntaxHighlighter language="tsx" style={dracula} codeTagProps={{ ref: codeRefHTML }} wrapLongLines>
+          <SyntaxHighlighter language="tsx" style={dracula} wrapLongLines>
             {template}
           </SyntaxHighlighter>
         </div>

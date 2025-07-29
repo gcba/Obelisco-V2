@@ -3,6 +3,7 @@
 // import Link from 'next/link';
 // import Image from 'next/image';
 // import Link from 'next/link';
+import Link from 'next/link';
 import React from 'react';
 // import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 // import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
@@ -29,17 +30,21 @@ const TemplatesComponents: React.FC = () => {
           <div className="container">
             <div className="max-items-2 mb-5 pt-3">
               <div className="col">
-                <a href="#" className="list-group-item">
+                <Link href="/templates/pagina-area-uno" className="list-group-item">
                   <span className="material-symbols-rounded o-icon" aria-hidden="true">
                     language
                   </span>
                   <div className="access-content">
                     <span className="access-title">Guía de uso</span>
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="col">
-                <a href="#" className="list-group-item">
+                <a
+                  href="https://gcba.github.io/obelisco-demo/pagina_area/area_de_gobierno/op1.html"
+                  target="_blank"
+                  className="list-group-item"
+                >
                   <span className="material-symbols-rounded o-icon" aria-hidden="true">
                     language
                   </span>
@@ -50,17 +55,21 @@ const TemplatesComponents: React.FC = () => {
               </div>
 
               <div className="col">
-                <a href="#" className="list-group-item">
+                <Link href="/templates/pagina-area-dos" className="list-group-item">
                   <span className="material-symbols-rounded o-icon" aria-hidden="true">
                     language
                   </span>
                   <div className="access-content">
                     <span className="access-title">Guía de uso</span>
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="col">
-                <a href="#" className="list-group-item">
+                <a
+                  href="https://gcba.github.io/obelisco-demo/pagina_area/area_de_gobierno/op2.html"
+                  className="list-group-item"
+                  target="_blank"
+                >
                   <span className="material-symbols-rounded o-icon" aria-hidden="true">
                     language
                   </span>
@@ -137,14 +146,14 @@ const TemplatesComponents: React.FC = () => {
           <div className="container">
             <div className="max-items-2">
               <div className="col">
-                <a href="https://gcba.github.io/obelisco-demo/pagina_libro/index.html" className="list-group-item">
+                <Link href="/templates/pagina-tramites" className="list-group-item">
                   <span className="material-symbols-rounded o-icon" aria-hidden="true">
                     language
                   </span>
                   <div className="access-content">
                     <span className="access-title">Guía de uso</span>
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="col">
                 <a href="https://gcba.github.io/obelisco-demo/pagina_libro/index.html" className="list-group-item">

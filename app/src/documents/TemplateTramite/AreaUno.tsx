@@ -93,27 +93,37 @@ export default function AreaUno() {
       subtitle: <>Malas practicas</>,
       content: (
         <>
-          <ul className="list-informative-bullet">
-            <li>
+          <div className="d-flex">
+            <span className="material-symbols-rounded text-danger">close</span>
+            <p>
               Generar puntos de tensión en la lectura y desequilibrio visual en el inicio de la página. En las
               situaciones en las que haya cuatro tarjetas en la primera línea y una por debajo, recomendamos reubicar la
               última tarjeta en la sección que corresponda y velar por el equilibrio en la página.
-            </li>
-            <li>
+            </p>
+          </div>
+          <div className="d-flex">
+            <span className="material-symbols-rounded text-danger">close</span>
+            <p>
               Presentar sólo dos tarjetas destacadas. En estas situaciones, recomendamos preservar la simetría y el
               equilibrio al inicio de la página ya que un diseño agradable crea respuestas positivas en el cerebro de
               las personas. Por lo tanto, considerar incluir una tercera tarjeta con contenido relevante para los
               usuarios.
-            </li>
-            <li>
+            </p>
+          </div>
+          <div className="d-flex">
+            <span className="material-symbols-rounded text-danger">close</span>
+            <p>
               Creer que todo es importante para destacar. No recomendamos tener más de 6 tarjetas destacadas, ya que el
               tiempo que lleva tomar una decisión aumenta con el número y la complejidad de las opciones.
-            </li>
-            <li>
+            </p>
+          </div>
+          <div className="d-flex">
+            <span className="material-symbols-rounded text-danger">close</span>
+            <p>
               En las situaciones que haya 6 tarjetas destacadas, recomendamos colocar los elementos menos importantes en
               medio de la lista y las acciones claves en los extremos izquierdo y derecho para aumentar la memorización.
-            </li>
-          </ul>
+            </p>
+          </div>
         </>
       ),
     },
@@ -145,16 +155,21 @@ export default function AreaUno() {
       subtitle: <>Malas practicas</>,
       content: (
         <>
-          <ul className="list-informative-bullet">
-            <li>
+          <div className="d-flex">
+            <span className="material-symbols-rounded text-danger">close</span>
+            <p>
               Sumar varios destacados dentro de una misma home. Es importante recordar que el propósito de este
               componente es darle jerarquía a un programa o evento.
-            </li>
-            <li>Utilizar dos destacados con multimedia uno debajo del otro. </li>
-            <li>
-              Sumar más de dos botones de acción al destacado con multimedia. El mínimo es uno y el máximo es dos{' '}
-            </li>
-          </ul>
+            </p>
+          </div>
+          <div className="d-flex">
+            <span className="material-symbols-rounded text-danger">close</span>
+            <p>Utilizar dos destacados con multimedia uno debajo del otro.</p>
+          </div>
+          <div className="d-flex">
+            <span className="material-symbols-rounded text-danger">close</span>
+            <p>Sumar más de dos botones de acción al destacado con multimedia. El mínimo es uno y el máximo es dos </p>
+          </div>
         </>
       ),
     },

@@ -100,29 +100,39 @@ export default function AreaDos() {
     {
       subtitle: <>Malas practicas</>,
       content: (
-        <div className="list-informative">
-          <ul className="list-informative-bullet">
-            <li>
+        <>
+          <div className="d-flex">
+            <span className="material-symbols-rounded text-danger">close</span>
+            <p>
               Generar puntos de tensión en la lectura y desequilibrio visual en el inicio de la página. En las
               situaciones en las que haya tres tarjetas en la primera línea y una por debajo, recomendamos reubicar la
               última tarjeta en la sección que corresponda y velar por el equilibrio en la página.
-            </li>
-            <li>
+            </p>
+          </div>
+          <div className="d-flex">
+            <span className="material-symbols-rounded text-danger">close</span>
+            <p>
               Presentar sólo dos opciones como destacadas. En estas situaciones, recomendamos preservar la simetría y el
               equilibrio al inicio de la página ya que un diseño agradable crea respuestas positivas en el cerebro de
               las personas. Por lo tanto, considerar incluir una tercera tarjeta con contenido relevante para los
               usuarios.
-            </li>
-            <li>
+            </p>
+          </div>
+          <div className="d-flex">
+            <span className="material-symbols-rounded text-danger">close</span>
+            <p>
               Creer que todo es importante para destacar. No recomendamos tener más de 6 tarjetas destacadas, ya que el
               tiempo que lleva tomar una decisión aumenta con el número y la complejidad de las opciones.
-            </li>
-            <li>
+            </p>
+          </div>
+          <div className="d-flex">
+            <span className="material-symbols-rounded text-danger">close</span>
+            <p>
               En las situaciones que haya 6 tarjetas destacadas recomendamos colocar los elementos menos importantes en
               medio de la lista y las acciones claves en los extremos izquierdo y derecho para aumentar la memorización.
-            </li>
-          </ul>
-        </div>
+            </p>
+          </div>
+        </>
       ),
     },
     {

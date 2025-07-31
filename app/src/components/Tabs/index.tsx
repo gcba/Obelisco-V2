@@ -7,7 +7,7 @@ import DocumentationTemplate, { Section } from '../Template/DocumentationTemplat
 interface TabItemProps {
   id: string;
   title?: string;
-  icon?: string;
+  icon?: string | 'open_in_new';
   urlDemo?: string;
   activeTab: string;
   setActiveTab: (id: string) => void;

@@ -34,7 +34,7 @@ export default function Template() {
             <TabItem
               id={`#`}
               title={'Demo'}
-              icon="description"
+              icon="open_in_new"
               urlDemo="https://gcba.github.io/obelisco-demo/pagina_area/area_de_gobierno/op2.html"
               activeTab={activeTab}
               setActiveTab={setActiveTab}

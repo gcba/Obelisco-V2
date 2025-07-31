@@ -654,7 +654,7 @@ const TemplateTramiteDocs: React.FC = () => {
           <ul className="nav nav-pills nav-box tabs p-0" role="tablist">
             <TabItem
               id={`panel-content-docs`}
-              title={'Documentación'}
+              title={'Guía de uso'}
               activeTab={activeTab}
               setActiveTab={setActiveTab}
             />

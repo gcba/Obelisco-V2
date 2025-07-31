@@ -72,9 +72,14 @@ export const documentationPages = [
 ];
 
 export const templatesPages = [
-  { text: 'Página de área - Nivel 1 ', url: '/templates/pagina-area-uno', id: 2 },
-  { text: 'Página de área - Nivel 2', url: '/templates/pagina-area-dos', id: 3 },
-  { text: 'Página de trámites', url: '/templates/pagina-tramites', id: 1 },
+  { text: 'Página de área - Nivel 1 ', url: '/templates/pagina-area-uno', id: 1 },
+  { text: 'Página de área - Nivel 2', url: '/templates/pagina-area-dos', id: 2 },
+  { text: 'Página de trámites', url: '/templates/pagina-tramites', id: 3 },
+  { text: 'Página simple', url: '/templates/pagina-simple', id: 4 },
+  { text: 'Página de libro', url: '/templates/pagina-de-libro', id: 5 },
+  { text: 'Noticias', url: '/templates/pagina-de-noticias', id: 6 },
+  { text: 'Formulario página única', url: '/templates/formulario-pagina-unica', id: 7 },
+  { text: 'Formulario múltipágina', url: '/templates/formulario-multipagina', id: 7 },
 ];
 
 export const patterns = [{ text: 'Construir un formulario', url: '/patterns', id: 1 }];

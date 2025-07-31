@@ -355,7 +355,12 @@ export default function AreaUno() {
       <div>
         <nav className="tabs-box" aria-label="Navegación por pestañas">
           <ul className="nav nav-pills nav-box tabs p-0" role="tablist">
-            <TabItem id={`panel-content-docs`} title={'Docs'} activeTab={activeTab} setActiveTab={setActiveTab} />
+            <TabItem
+              id={`panel-content-docs`}
+              title={'Documentación'}
+              activeTab={activeTab}
+              setActiveTab={setActiveTab}
+            />
             <TabItem id={`panel-content-html`} title={'HTML'} activeTab={activeTab} setActiveTab={setActiveTab} />
             <TabItem
               id={`#`}

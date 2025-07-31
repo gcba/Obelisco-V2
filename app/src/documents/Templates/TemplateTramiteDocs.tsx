@@ -33,7 +33,9 @@ const SECTIONS_UX = [
           className="img-fluid mb-2"
         />
 
-        <p className="text-xl">Buenas prácticas</p>
+        <p className="text-md">
+          <strong>Buenas prácticas</strong>
+        </p>
         <div className="d-flex">
           <span className="material-symbols-rounded text-success">check</span>
           <p>El máximo de caracteres para el título es de 120 caracteres (incluyendo espacios).</p>
@@ -120,7 +122,9 @@ const SECTIONS_UX = [
           style={{ border: '2px solid #e6ebf0', borderRadius: '5px' }}
         />
 
-        <p className="text-xl">Buenas prácticas </p>
+        <p>
+          <strong>Buenas prácticas</strong>
+        </p>
         <div className="d-flex">
           <span className="material-symbols-rounded text-success">check</span>
 
@@ -134,7 +138,9 @@ const SECTIONS_UX = [
 
           <p>El subtítulo de la lista de requisitos es opcional y puede omitirse en caso de no ser necesario.</p>
         </div>
-        <p className="text-xl">Malas prácticas </p>
+        <p>
+          <strong>Malas prácticas</strong>
+        </p>
         <div className="d-flex">
           <span className="material-symbols-rounded text-danger">close</span>
 
@@ -177,7 +183,9 @@ const SECTIONS_UX = [
           style={{ border: '2px solid #e6ebf0', borderRadius: '5px' }}
         />
 
-        <p className="text-xl">Buenas prácticas</p>
+        <p>
+          <strong>Buenas prácticas</strong>
+        </p>
 
         <div className="d-flex">
           <span className="material-symbols-rounded text-success">check</span>
@@ -197,7 +205,9 @@ const SECTIONS_UX = [
           </p>
         </div>
 
-        <p className="text-xl">Malas prácticas </p>
+        <p>
+          <strong>Malas prácticas</strong>
+        </p>
 
         <div className="d-flex">
           <span className="material-symbols-rounded text-danger">close</span>
@@ -242,7 +252,9 @@ const SECTIONS_UX = [
           alt="Imagen de costos del tramite"
         />
 
-        <p className="text-xl">Buenas prácticas</p>
+        <p>
+          <strong>Buenas prácticas</strong>
+        </p>
 
         <div className="d-flex">
           <span className="material-symbols-rounded text-success">check</span>
@@ -262,7 +274,9 @@ const SECTIONS_UX = [
           </p>
         </div>
 
-        <p className="text-xl">Malas prácticas </p>
+        <p>
+          <strong>Malas prácticas</strong>
+        </p>
 
         <div className="d-flex">
           <span className="material-symbols-rounded text-danger">close</span>
@@ -312,7 +326,9 @@ const SECTIONS_UX = [
           Colapsables
         </a>
 
-        <p className="text-xl">Buenas prácticas</p>
+        <p>
+          <strong>Buenas prácticas</strong>
+        </p>
 
         <div className="d-flex">
           <span className="material-symbols-rounded text-success">check</span>
@@ -330,7 +346,9 @@ const SECTIONS_UX = [
           <p>Cada colapsable puede tener un máximo de 800 caracteres (contando espacios) para su descripción.</p>
         </div>
 
-        <p className="text-xl">Malas prácticas </p>
+        <p>
+          <strong>Malas prácticas</strong>
+        </p>
 
         <div className="d-flex">
           <span className="material-symbols-rounded text-danger">close</span>
@@ -387,7 +405,9 @@ const SECTIONS_UX = [
           alt="Imagen de información adicional"
         />
 
-        <p className="text-xl">Buenas prácticas</p>
+        <p>
+          <strong>Buenas prácticas</strong>
+        </p>
 
         <div className="d-flex">
           <span className="material-symbols-rounded text-success">check</span>
@@ -410,7 +430,9 @@ const SECTIONS_UX = [
           <p>Utilizar texto plano cuando no es posible generar más de 1 ítem para la lista informativa.</p>
         </div>
 
-        <p className="text-xl">Malas prácticas </p>
+        <p>
+          <strong>Malas prácticas</strong>
+        </p>
 
         <div className="d-flex">
           <span className="material-symbols-rounded text-danger">close</span>
@@ -461,7 +483,9 @@ const SECTIONS_UX = [
           style={{ border: '2px solid #e6ebf0', borderRadius: '5px' }}
         />
 
-        <p className="text-xl">Buenas prácticas </p>
+        <p>
+          <strong>Buenas prácticas</strong>
+        </p>
 
         <div className="d-flex">
           <span className="material-symbols-rounded text-success">check</span>
@@ -484,7 +508,9 @@ const SECTIONS_UX = [
           </p>
         </div>
 
-        <p className="text-xl">Malas prácticas </p>
+        <p>
+          <strong>Malas prácticas</strong>
+        </p>
 
         <div className="d-flex">
           <span className="material-symbols-rounded text-danger">close</span>
@@ -515,7 +541,9 @@ const SECTIONS_UX = [
           style={{ border: '2px solid #e6ebf0', borderRadius: '5px' }}
         />
 
-        <p className="text-xl">Buenas prácticas </p>
+        <p>
+          <strong>Buenas prácticas</strong>
+        </p>
 
         <div className="d-flex">
           <span className="material-symbols-rounded text-success">check</span>
@@ -526,7 +554,9 @@ const SECTIONS_UX = [
           </p>
         </div>
 
-        <p className="text-xl">Malas prácticas </p>
+        <p>
+          <strong>Malas prácticas</strong>
+        </p>
 
         <div className="d-flex">
           <span className="material-symbols-rounded text-danger">close</span>
@@ -557,7 +587,9 @@ const SECTIONS_UX = [
           alt="Ejemplo de organismo responsable"
           style={{ border: '2px solid #e6ebf0', borderRadius: '5px' }}
         />
-        <p className="text-xl">Buenas prácticas </p>
+        <p>
+          <strong>Buenas prácticas</strong>
+        </p>
         <div className="d-flex">
           <span className="material-symbols-rounded text-success">check</span>
 
@@ -566,7 +598,9 @@ const SECTIONS_UX = [
             el modelo del template.{' '}
           </p>
         </div>
-        <p className="text-xl">Malas prácticas </p>
+        <p>
+          <strong>Malas prácticas</strong>
+        </p>
         <div className="d-flex">
           <span className="material-symbols-rounded text-danger">close</span>
 

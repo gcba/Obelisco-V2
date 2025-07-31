@@ -355,27 +355,12 @@ export default function AreaUno() {
       <div>
         <nav className="tabs-box" aria-label="Navegación por pestañas">
           <ul className="nav nav-pills nav-box tabs p-0" role="tablist">
+            <TabItem id={`panel-content-docs`} title={'Docs'} activeTab={activeTab} setActiveTab={setActiveTab} />
+            <TabItem id={`panel-content-html`} title={'HTML'} activeTab={activeTab} setActiveTab={setActiveTab} />
             <TabItem
-              //         // key={section.id}
-              id={`panel-content-docs`}
-              title={'Docs'}
-              icon="description"
-              activeTab={activeTab}
-              setActiveTab={setActiveTab}
-            />
-            <TabItem
-              // key={section.id}
-              id={`panel-content-html`}
-              title={'HTML'}
-              icon="description"
-              activeTab={activeTab}
-              setActiveTab={setActiveTab}
-            />
-            <TabItem
-              // key={section.id}
               id={`#`}
               title={'Demo'}
-              icon="description"
+              icon="open_in_new"
               urlDemo="https://gcba.github.io/obelisco-demo/pagina_area/area_de_gobierno/op2.html"
               activeTab={activeTab}
               setActiveTab={setActiveTab}
@@ -388,7 +373,7 @@ export default function AreaUno() {
         <div className="tab-content" style={{ paddingTop: '32px' }}>
           <TabPanel id={`panel-content-docs`} activeTab={activeTab}>
             <>
-              <DocumentationTemplate sections={DOC_SECTIONS} />
+              <DocumentationTemplate sections={DOC_SECTIONS} type="ux" />
             </>
           </TabPanel>
 
@@ -396,10 +381,6 @@ export default function AreaUno() {
             <>
               <CodeViewTemplate template={AREA_1} />
             </>
-          </TabPanel>
-
-          <TabPanel id={'panel-content-react'} activeTab={activeTab}>
-            <></>
           </TabPanel>
         </div>
       </div>

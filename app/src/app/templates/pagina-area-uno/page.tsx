@@ -1,4 +1,4 @@
-import AreaUno from '@/documents/TemplateTramite/AreaUno';
+import AreaUno from '@/documents/Templates/AreaUno';
 
 export default function TemplatePage() {
   return (

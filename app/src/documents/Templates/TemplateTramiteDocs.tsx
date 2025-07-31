@@ -3,14 +3,11 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 import { TabItem, TabPanel } from '@/components/Tabs';
-// import Tabs from '@/components/Tabs';
 import { CodeViewTemplate } from '@/components/Template/CodeViewTemplate';
-// import ComponentHeader from '@/components/Template/ComponentHeader';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 
 import { TEMPLATE_TRAMITES } from './code-views';
-// import CodeBox from '@/components/CodeBox';
 
 const basePath = '/Obelisco-V2';
 
@@ -655,27 +652,12 @@ const TemplateTramiteDocs: React.FC = () => {
       <div>
         <nav className="tabs-box" aria-label="Navegación por pestañas">
           <ul className="nav nav-pills nav-box tabs p-0" role="tablist">
+            <TabItem id={`panel-content-docs`} title={'Docs'} activeTab={activeTab} setActiveTab={setActiveTab} />
+            <TabItem id={`panel-content-html`} title={'HTML'} activeTab={activeTab} setActiveTab={setActiveTab} />
             <TabItem
-              // key={section.id}
-              id={`panel-content-docs`}
-              title={'Docs'}
-              icon="description"
-              activeTab={activeTab}
-              setActiveTab={setActiveTab}
-            />
-            <TabItem
-              // key={section.id}
-              id={`panel-content-html`}
-              title={'HTML'}
-              icon="description"
-              activeTab={activeTab}
-              setActiveTab={setActiveTab}
-            />
-            <TabItem
-              // key={section.id}
               id={`#`}
               title={'Demo'}
-              icon="description"
+              icon="open_in_new"
               urlDemo="https://gcba.github.io/obelisco-demo/pagina_simple/tramites/index.html"
               activeTab={activeTab}
               setActiveTab={setActiveTab}
@@ -688,7 +670,7 @@ const TemplateTramiteDocs: React.FC = () => {
         <div className="tab-content" style={{ paddingTop: '32px' }}>
           <TabPanel id={`panel-content-docs`} activeTab={activeTab}>
             <>
-              <DocumentationTemplate sections={SECTIONS_UX} />
+              <DocumentationTemplate sections={SECTIONS_UX} type="ux" />
             </>
           </TabPanel>
 
@@ -696,10 +678,6 @@ const TemplateTramiteDocs: React.FC = () => {
             <>
               <CodeViewTemplate template={TEMPLATE_TRAMITES} />
             </>
-          </TabPanel>
-
-          <TabPanel id={'panel-content-react'} activeTab={activeTab}>
-            <></>
           </TabPanel>
         </div>
       </div>

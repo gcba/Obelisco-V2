@@ -15,8 +15,6 @@ interface TabItemProps {
 
 export const TabItem: React.FC<TabItemProps> = ({ id, title, icon, urlDemo, activeTab, setActiveTab }) => {
   const handleClickDemo = (url: string) => {
-    console.log('URL');
-
     window.open(url, '_blank');
   };
 

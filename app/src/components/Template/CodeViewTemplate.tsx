@@ -48,26 +48,26 @@ export const CodeViewTemplate = ({ template }: { template: string }) => {
     <div
       style={{
         position: 'relative',
-        paddingTop: '3rem',
-        ...(!toggleExpandHTML ? { maxHeight: '300px', overflowY: 'hidden' } : {}),
       }}
     >
       {showButtonHTML && (
         <button
-          className={'btn btn-outline-tertiary btn-sm my-2'}
-          style={{ position: 'absolute', top: '5px', right: '10px' }}
+          className={`btn btn-outline-tertiary btn-sm my-2 `}
+          style={{ position: 'absolute', right: '1rem', top: '-3rem', minWidth: '140px' }}
           onClick={() => setToggleExpandHTML(!toggleExpandHTML)}
         >
           {toggleExpandHTML ? 'Ver menos' : 'Ver más'}
         </button>
       )}
 
-      <div style={{ position: 'relative' }}>
+      <div style={{ position: 'relative', ...(!toggleExpandHTML ? { maxHeight: '300px', overflowY: 'hidden' } : {}) }}>
         <div ref={codeRefHTML}>
+          <div className={!toggleExpandHTML ? styles.faded : ''}></div>
           <SyntaxHighlighter language="tsx" style={dracula} wrapLongLines>
             {template}
           </SyntaxHighlighter>
         </div>
+
         <button className={`btn btn-xs ${styles.btnCopy}`} onClick={() => copyCode(codeRefHTML)}>
           <span className="material-symbols-rounded" aria-hidden="true">
             content_copy

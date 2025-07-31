@@ -1,19 +1,9 @@
 'use client';
-
-// import Link from 'next/link';
-// import Image from 'next/image';
-// import Link from 'next/link';
 import Link from 'next/link';
 import React from 'react';
-// import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-// import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
-
-// import { PATTERNS_ACCESSIBILTY } from './code-views';
-
-// const basePath = '/Obelisco-V2';
 
 const TemplatesComponents: React.FC = () => {
   const SECTION_UX = [

@@ -1,4 +1,4 @@
-import TemplateTramiteDocs from '@/documents/TemplateTramite/TemplateTramiteDocs';
+import TemplateTramiteDocs from '@/documents/Templates/TemplateTramiteDocs';
 
 export default function TemplatePage() {
   return <TemplateTramiteDocs />;

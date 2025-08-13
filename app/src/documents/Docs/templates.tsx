@@ -1,221 +1,112 @@
 'use client';
-import Link from 'next/link';
+// import Link from 'next/link';
 import React from 'react';
 
-import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
+import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
+const basePath = '/Obelisco-V2';
 
 const TemplatesComponents: React.FC = () => {
   const SECTION_UX = [
     {
-      title: 'Áreas de Gobierno',
-      firstTitle: true,
       content: (
         <>
-          <p>
-            Página principal de un ministerio, secretaría o subsecretaría. Es la puerta de acceso a los demás tipos de
-            contenido (artículos, páginas, páginas de libro, etc.)
-          </p>
-
-          <div className="container">
-            <div className="max-items-2 mb-5 pt-3">
+          <div className="container py-1">
+            <div className="max-items-2">
               <div className="col">
-                <Link href="/templates/pagina-area-uno" className="list-group-item">
-                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                    language
-                  </span>
-                  <div className="access-content">
-                    <span className="access-title">Guía de uso</span>
+                <div className="card h-100">
+                  <i className="bx bxs-info-circle card-icon">
+                    {/* <span className="material-symbols-outlined card-icon">apartment</span> */}
+                  </i>
+                  <div className="card-body">
+                    <h3 className="card-title">
+                      <a href={`${basePath}/templates/paginas-de-areas`} className="card-title-link">
+                        Páginas de área
+                      </a>
+                    </h3>
+                    <p className="card-text">
+                      Plantilla para páginas institucionales de primer y segundo nivel, utilizada para presentar
+                      ministerios.
+                    </p>
                   </div>
-                </Link>
-              </div>
-              <div className="col">
-                <a
-                  href="https://gcba.github.io/obelisco-demo/pagina_area/area_de_gobierno/op1.html"
-                  target="_blank"
-                  className="list-group-item"
-                >
-                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                    language
-                  </span>
-                  <div className="access-content">
-                    <span className="access-title">Página de primer nivel</span>
-                  </div>
-                </a>
+                </div>
               </div>
 
               <div className="col">
-                <Link href="/templates/pagina-area-dos" className="list-group-item">
-                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                    language
-                  </span>
-                  <div className="access-content">
-                    <span className="access-title">Guía de uso</span>
+                <div className="card h-100">
+                  <i className="bx bx-list-ul card-icon"></i>
+                  <div className="card-body">
+                    <h3 className="card-title">
+                      <a href={`${basePath}/templates/paginas-de-areas`} className="card-title-link">
+                        Formularios
+                      </a>
+                    </h3>
+                    <p className="card-text">
+                      Permiten a las personas interactuar con el sistema, ingresando, editando o confirmando
+                      información. 
+                    </p>
                   </div>
-                </Link>
+                </div>
               </div>
-              <div className="col">
-                <a
-                  href="https://gcba.github.io/obelisco-demo/pagina_area/area_de_gobierno/op2.html"
-                  className="list-group-item"
-                  target="_blank"
-                >
-                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                    language
-                  </span>
-                  <div className="access-content">
-                    <span className="access-title">Página de segundo nivel</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </>
-      ),
-    },
-    {
-      title: 'Página Simple',
-      content: (
-        <>
-          <p className="text-md">
-            Las usamos para transmitir información estática de menor jerarquía, en comparación a una página de área, y
-            con menor cantidad de contenido.
-          </p>
-          <div className="container">
-            <div className="max-items-2">
-              <div className="col">
-                <a
-                  href="https://gcba.github.io/obelisco-demo/pagina_simple/pagina_simple_op5/index.html"
-                  className="list-group-item"
-                >
-                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                    language
-                  </span>
-                  <div className="access-content">
-                    <span className="access-title">Página simple</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </>
-      ),
-    },
-    {
-      title: 'Página de libro',
-      content: (
-        <>
-          <p className="text-md">
-            Las usamos para agrupar información sobre un mismo tema en subtemas. Los índices y las subpáginas deben
-            tener como mínimo 2 párrafos de 5 líneas de información.
-          </p>
-          <div className="container">
-            <div className="max-items-2">
-              <div className="col">
-                <a href="https://gcba.github.io/obelisco-demo/pagina_libro/index.html" className="list-group-item">
-                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                    language
-                  </span>
-                  <div className="access-content">
-                    <span className="access-title">Página de libro</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </>
-      ),
-    },
-    {
-      title: 'Trámites',
-      content: (
-        <>
-          <p className="text-md">
-            Página que usamos para todos los trámites que ofrece el Gobierno de la Ciudad de Buenos Aires.
-          </p>
-          <div className="container">
-            <div className="max-items-2">
-              <div className="col">
-                <Link href="/templates/pagina-tramites" className="list-group-item">
-                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                    language
-                  </span>
-                  <div className="access-content">
-                    <span className="access-title">Guía de uso</span>
-                  </div>
-                </Link>
-              </div>
-              <div className="col">
-                <a href="https://gcba.github.io/obelisco-demo/pagina_libro/index.html" className="list-group-item">
-                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                    language
-                  </span>
-                  <div className="access-content">
-                    <span className="access-title">Página de trámites</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </>
-      ),
-    },
-    {
-      title: 'Noticias',
-      content: (
-        <>
-          <p className="text-md">
-            Las utilizamos para comunicar noticias y novedades. Este tipo de página debe actualizarse al menos 1 vez por
-            semana.
-          </p>
 
-          <div className="container">
-            <div className="max-items-2">
               <div className="col">
-                <a href="https://gcba.github.io/obelisco-demo/pagina_libro/index.html" className="list-group-item">
-                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                    language
-                  </span>
-                  <div className="access-content">
-                    <span className="access-title">Página de libro</span>
+                <div className="card h-100">
+                  <i className="bx bx-news card-icon"></i>
+                  <div className="card-body">
+                    <h3 className="card-title">
+                      <a href={`${basePath}/templates/pagina-de-noticias`} className="card-title-link">
+                        Noticias
+                      </a>
+                    </h3>
+                    <p className="card-text">
+                      Página para comunicar avisos y novedades. Debe estar constantemente actualizada.
+                    </p>
                   </div>
-                </a>
+                </div>
               </div>
-            </div>
-          </div>
-        </>
-      ),
-    },
-    {
-      title: 'Formularios',
-      content: (
-        <>
-          <p className="text-md mb-4">
-            Permiten a las personas interactuar con el sistema, ingresando, editando o confirmando información. Se usan
-            para registrarse en un servicio, programa o beneficio, para solicitar turnos o iniciar sesión en una cuenta.
-          </p>
 
-          <div className="container">
-            <div className="max-items-2">
               <div className="col">
-                <a href="https://gcba.github.io/obelisco-demo/pagina_libro/index.html" className="list-group-item">
-                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                    language
-                  </span>
-                  <div className="access-content">
-                    <span className="access-title">Formulario de página única</span>
+                <div className="card h-100">
+                  <i className="bx bxs-book-content card-icon"></i>
+                  <div className="card-body">
+                    <h3 className="card-title">
+                      <a href="#" className="card-title-link">
+                        Página simple
+                      </a>
+                    </h3>
+                    <p className="card-text">Página informativa con un nivel jerárquico menor a una página de área.</p>
                   </div>
-                </a>
+                </div>
               </div>
+
               <div className="col">
-                <a href="https://gcba.github.io/obelisco-demo/pagina_libro/index.html" className="list-group-item">
-                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                    language
-                  </span>
-                  <div className="access-content">
-                    <span className="access-title">Formulario multipágina</span>
+                <div className="card h-100">
+                  <i className="bx bxs-book-open card-icon"></i>
+                  <div className="card-body">
+                    <h3 className="card-title">
+                      <a href="#" className="card-title-link">
+                        Página de libro
+                      </a>
+                    </h3>
+                    <p className="card-text">La usamos para agrupar información sobre un mismo tema en subtemas. </p>
                   </div>
-                </a>
+                </div>
+              </div>
+
+              <div className="col">
+                <div className="card h-100">
+                  <i className="bx bxs-file card-icon"></i>
+                  <div className="card-body">
+                    <h3 className="card-title">
+                      <a href="#" className="card-title-link">
+                        Trámites
+                      </a>
+                    </h3>
+                    <p className="card-text">
+                      La usamos para los trámites que ofrece el Gobierno de la Ciudad de Buenos Aires.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -234,7 +125,7 @@ const TemplatesComponents: React.FC = () => {
           `,
         ]}
       />
-      <Tabs sectionUx={SECTION_UX} />
+      <DocumentationTemplate sections={SECTION_UX} type="none" />
     </>
   );
 };

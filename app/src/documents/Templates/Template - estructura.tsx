@@ -26,7 +26,7 @@ export default function Template() {
             />
             <TabItem
               id={`panel-content-html`}
-              title={'HTML'}
+              title={'Código'}
               icon="description"
               activeTab={activeTab}
               setActiveTab={setActiveTab}
@@ -46,15 +46,11 @@ export default function Template() {
 
         <div className="tab-content" style={{ paddingTop: '32px' }}>
           <TabPanel id={`panel-content-docs`} activeTab={activeTab}>
-            <>
-              <DocumentationTemplate sections={[]} />
-            </>
+            <DocumentationTemplate sections={[]} />
           </TabPanel>
 
           <TabPanel id={`panel-content-html`} activeTab={activeTab}>
-            <>
-              <CodeViewTemplate template={AREA_2} />
-            </>
+            <CodeViewTemplate template={AREA_2} />
           </TabPanel>
         </div>
       </div>

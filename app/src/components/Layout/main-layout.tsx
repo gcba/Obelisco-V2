@@ -72,14 +72,12 @@ export const documentationPages = [
 ];
 
 export const templatesPages = [
-  { text: 'Página de área - Nivel 1 ', url: '/templates/pagina-area-uno', id: 1 },
-  { text: 'Página de área - Nivel 2', url: '/templates/pagina-area-dos', id: 2 },
-  { text: 'Página de trámites', url: '/templates/pagina-tramites', id: 3 },
-  { text: 'Página simple', url: '/templates/pagina-simple', id: 4 },
-  { text: 'Página de libro', url: '/templates/pagina-de-libro', id: 5 },
-  { text: 'Noticias', url: '/templates/pagina-de-noticias', id: 6 },
-  { text: 'Formulario página única', url: '/templates/formulario-pagina-unica', id: 7 },
-  { text: 'Formulario múltipágina', url: '/templates/formulario-multipagina', id: 7 },
+  { text: 'Páginas de áreas ', url: '/templates/paginas-de-areas', id: 1 },
+  { text: 'Página de trámites', url: '/templates/pagina-tramites', id: 4 },
+  { text: 'Página simple', url: '/templates/pagina-simple', id: 5 },
+  { text: 'Página de libro', url: '/templates/pagina-de-libro', id: 6 },
+  { text: 'Noticias', url: '/templates/pagina-de-noticias', id: 7 },
+  { text: 'Formularios', url: '/templates/formularios', id: 8 },
 ];
 
 export const patterns = [{ text: 'Construir un formulario', url: '/patterns', id: 1 }];
@@ -140,7 +138,7 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             </div>
           )}
 
-          {pathname.includes('/templates') && (
+          {pathname.startsWith('/templates/') && (
             <div className="nav-left sticky-nav h-auto">
               <div className="nav-left-box-title">
                 <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Plantillas</p>

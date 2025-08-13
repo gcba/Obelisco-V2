@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 import { TabItem, TabPanel } from '@/components/Tabs';
@@ -38,12 +39,12 @@ export default function AreaUno() {
             <p className="text-xl">Se compone con los siguientes elementos:</p>
             <div className="list-informative mb-3">
               <ul className="list-informative-bullet">
-                <li>Migas de pan que nos indican el camino recorrido hasta llegar a dónde estamos navegando </li>
+                <li>Migas de pan que nos indican el camino recorrido hasta llegar a dónde estamos navegando </li>
                 <li>Título</li>
                 <li>Bajada</li>
                 <li>
                   Desplegables de “Institucional” y/o “Transparencia activa”. Evitamos sumar más desplegables. La idea
-                  de este bloque es que sea la presentación de lo que las personas encontrarán al seguir scrolleando. 
+                  de este bloque es que sea la presentación de lo que las personas encontrarán al seguir scrolleando.
                 </li>
               </ul>
             </div>
@@ -75,7 +76,7 @@ export default function AreaUno() {
             <h3 className="text-xl mb-2">Variante de componente</h3>
             <p>
               Se utiliza la tarjeta vertical con ícono sin borde. Sugerimos que tanto el título como la bajada no lleve
-              más de dos líneas. 
+              más de dos líneas.
             </p>
           </div>
 
@@ -299,11 +300,11 @@ export default function AreaUno() {
             <p>Este bloque se compone de la siguiente información.</p>
 
             <div>
-              <h3 className="text-xl mb-2">Título: Información Institucional. </h3>
+              <h3 className="text-xl mb-2">Título: Información Institucional. </h3>
               <ul>
                 <li>Foto del Ministro/a</li>
                 <li>Nombre del Ministro/a a cargo.</li>
-                <li>Cargo </li>
+                <li>Cargo </li>
               </ul>
             </div>
 
@@ -317,8 +318,8 @@ export default function AreaUno() {
 
             <div>
               <h3 className="text-xl mb-2">Título: Redes sociales</h3>
-              <p>Facebook   /   Instagram   /   X   /   YouTube</p>
-              <p>Se utiliza el acceso con iconografía correspondiente a la red social y título. </p>
+              <p>Facebook / Instagram / X / YouTube</p>
+              <p>Se utiliza el acceso con iconografía correspondiente a la red social y título. </p>
             </div>
 
             <p>
@@ -341,35 +342,50 @@ export default function AreaUno() {
 
   return (
     <>
+      <nav aria-label="Navegación secundaria">
+        <ol className="breadcrumb">
+          <li className="breadcrumb-item">
+            <Link href="/templates">Plantillas</Link>
+          </li>
+          <li className="breadcrumb-item">
+            <Link href="/templates/paginas-de-areas">Páginas de áreas</Link>
+          </li>
+        </ol>
+      </nav>
+
       <ComponentHeader
         title="Página de área - Nivel 1"
         description={[
           `
           Con este template buscamos mejorar la experiencia de las personas a la hora de navegar nuestro sitio
           web. Buscamos crear jerarquías claras de contenido donde se aplique el sistema de diseño
-          Obelisco. Esta guía tiene como fin orientar a quienes trabajan como webmasters para que sepan qué tipo
-          de componente se utiliza en las distintas casuísticas. 
+          Obelisco. Esta guía tiene como fin orientar a quienes trabajan como webmasters para que sepan qué tipo
+          de componente se utiliza en las distintas casuísticas. 
           `,
         ]}
       />
+
+      <a
+        className="btn btn-outline-secondary"
+        href="https://gcba.github.io/obelisco-demo/pagina_area/area_de_gobierno/op1.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ marginBottom: '32px' }}
+      >
+        Acceder a la plantilla
+        <span className="material-symbols-rounded o-icon">open_in_new</span>
+      </a>
+
       <div>
         <nav className="tabs-box" aria-label="Navegación por pestañas">
           <ul className="nav nav-pills nav-box tabs p-0" role="tablist">
             <TabItem
               id={`panel-content-docs`}
-              title={'Guía de uso'}
+              title={'Especificaciones'}
               activeTab={activeTab}
               setActiveTab={setActiveTab}
             />
-            <TabItem id={`panel-content-html`} title={'HTML'} activeTab={activeTab} setActiveTab={setActiveTab} />
-            <TabItem
-              id={`#`}
-              title={'Demo'}
-              icon="open_in_new"
-              urlDemo="https://gcba.github.io/obelisco-demo/pagina_area/area_de_gobierno/op2.html"
-              activeTab={activeTab}
-              setActiveTab={setActiveTab}
-            />
+            <TabItem id={`panel-content-html`} title={'Código'} activeTab={activeTab} setActiveTab={setActiveTab} />
           </ul>
         </nav>
 
@@ -377,15 +393,11 @@ export default function AreaUno() {
 
         <div className="tab-content" style={{ paddingTop: '32px' }}>
           <TabPanel id={`panel-content-docs`} activeTab={activeTab}>
-            <>
-              <DocumentationTemplate sections={DOC_SECTIONS} type="ux" />
-            </>
+            <DocumentationTemplate sections={DOC_SECTIONS} type="ux" />
           </TabPanel>
 
           <TabPanel id={`panel-content-html`} activeTab={activeTab}>
-            <>
-              <CodeViewTemplate template={AREA_1} />
-            </>
+            <CodeViewTemplate template={AREA_1} />
           </TabPanel>
         </div>
       </div>

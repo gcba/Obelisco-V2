@@ -8,6 +8,7 @@ import ComponentHeader from '@/components/Template/ComponentHeader';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 
 import { AREA_2 } from './code-views';
+import Link from 'next/link';
 const basePath = '/Obelisco-V2';
 
 export default function AreaDos() {
@@ -293,6 +294,17 @@ export default function AreaDos() {
 
   return (
     <>
+      <nav aria-label="Navegación secundaria">
+        <ol className="breadcrumb">
+          <li className="breadcrumb-item">
+            <Link href="/templates">Plantillas</Link>
+          </li>
+          <li className="breadcrumb-item">
+            <Link href="/templates/paginas-de-areas">Páginas de áreas</Link>
+          </li>
+        </ol>
+      </nav>
+
       <ComponentHeader
         title="Página de área - Nivel 2"
         description={[
@@ -305,24 +317,27 @@ export default function AreaDos() {
         ]}
       />
 
+      <a
+        className="btn btn-outline-secondary"
+        href="https://gcba.github.io/obelisco-demo/pagina_area/area_de_gobierno/op2.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ marginBottom: '32px' }}
+      >
+        Acceder a la plantilla
+        <span className="material-symbols-rounded o-icon">open_in_new</span>
+      </a>
+
       <div>
         <nav className="tabs-box" aria-label="Navegación por pestañas">
           <ul className="nav nav-pills nav-box tabs p-0" role="tablist">
             <TabItem
               id={`panel-content-docs`}
-              title={'Guía de uso'}
+              title={'Especificaciones'}
               activeTab={activeTab}
               setActiveTab={setActiveTab}
             />
-            <TabItem id={`panel-content-html`} title={'HTML'} activeTab={activeTab} setActiveTab={setActiveTab} />
-            <TabItem
-              id={`#`}
-              title={'Demo'}
-              icon="open_in_new"
-              urlDemo="https://gcba.github.io/obelisco-demo/pagina_area/area_de_gobierno/op2.html"
-              activeTab={activeTab}
-              setActiveTab={setActiveTab}
-            />
+            <TabItem id={`panel-content-html`} title={'Código'} activeTab={activeTab} setActiveTab={setActiveTab} />
           </ul>
         </nav>
 
@@ -330,15 +345,11 @@ export default function AreaDos() {
 
         <div className="tab-content" style={{ paddingTop: '32px' }}>
           <TabPanel id={`panel-content-docs`} activeTab={activeTab}>
-            <>
-              <DocumentationTemplate sections={DOC_SECTIONS} type="ux" />
-            </>
+            <DocumentationTemplate sections={DOC_SECTIONS} type="ux" />
           </TabPanel>
 
           <TabPanel id={`panel-content-html`} activeTab={activeTab}>
-            <>
-              <CodeViewTemplate template={AREA_2} />
-            </>
+            <CodeViewTemplate template={AREA_2} />
           </TabPanel>
         </div>
       </div>

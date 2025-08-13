@@ -683,24 +683,27 @@ const TemplateTramiteDocs: React.FC = () => {
         ]}
       />
 
+      <a
+        className="btn btn-outline-secondary"
+        href="https://gcba.github.io/obelisco-demo/pagina_simple/tramites/index.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ marginBottom: '32px' }}
+      >
+        Acceder a la plantilla
+        <span className="material-symbols-rounded o-icon">open_in_new</span>
+      </a>
+
       <div>
         <nav className="tabs-box" aria-label="Navegación por pestañas">
           <ul className="nav nav-pills nav-box tabs p-0" role="tablist">
             <TabItem
               id={`panel-content-docs`}
-              title={'Guía de uso'}
+              title={'Especificaciones'}
               activeTab={activeTab}
               setActiveTab={setActiveTab}
             />
-            <TabItem id={`panel-content-html`} title={'HTML'} activeTab={activeTab} setActiveTab={setActiveTab} />
-            <TabItem
-              id={`#`}
-              title={'Demo'}
-              icon="open_in_new"
-              urlDemo="https://gcba.github.io/obelisco-demo/pagina_simple/tramites/index.html"
-              activeTab={activeTab}
-              setActiveTab={setActiveTab}
-            />
+            <TabItem id={`panel-content-html`} title={'Código'} activeTab={activeTab} setActiveTab={setActiveTab} />
           </ul>
         </nav>
 
@@ -708,15 +711,11 @@ const TemplateTramiteDocs: React.FC = () => {
 
         <div className="tab-content" style={{ paddingTop: '32px' }}>
           <TabPanel id={`panel-content-docs`} activeTab={activeTab}>
-            <>
-              <DocumentationTemplate sections={SECTIONS_UX} type="ux" />
-            </>
+            <DocumentationTemplate sections={SECTIONS_UX} type="ux" />
           </TabPanel>
 
           <TabPanel id={`panel-content-html`} activeTab={activeTab}>
-            <>
-              <CodeViewTemplate template={TEMPLATE_TRAMITES} />
-            </>
+            <CodeViewTemplate template={TEMPLATE_TRAMITES} />
           </TabPanel>
         </div>
       </div>

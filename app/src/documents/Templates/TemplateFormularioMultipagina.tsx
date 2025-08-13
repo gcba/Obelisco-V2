@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import { useState } from 'react';
 
 import { TabItem, TabPanel } from '@/components/Tabs';
@@ -12,6 +13,17 @@ const TemplateFormularioMultipagina: React.FC = () => {
 
   return (
     <>
+      {' '}
+      <nav aria-label="Navegación secundaria">
+        <ol className="breadcrumb">
+          <li className="breadcrumb-item">
+            <Link href="/templates">Plantillas</Link>
+          </li>
+          <li className="breadcrumb-item">
+            <Link href="/templates/formularios">Formularios</Link>
+          </li>
+        </ol>
+      </nav>
       <ComponentHeader
         title="Formulario multipágina"
         description={[
@@ -20,24 +32,20 @@ const TemplateFormularioMultipagina: React.FC = () => {
           `,
         ]}
       />
-
+      <a
+        className="btn btn-outline-secondary"
+        href="https://gcba.github.io/obelisco-demo/formularios/multipagina/index.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ marginBottom: '32px' }}
+      >
+        Acceder a la plantilla
+        <span className="material-symbols-rounded o-icon">open_in_new</span>
+      </a>
       <div>
         <nav className="tabs-box" aria-label="Navegación por pestañas">
           <ul className="nav nav-pills nav-box tabs p-0" role="tablist">
-            <TabItem
-              id={`panel-content-html`}
-              title={'HTML'}
-              activeTab={activeTab}
-              setActiveTab={setActiveTab}
-            />
-            <TabItem
-              id={`#`}
-              title={'Demo'}
-              icon="open_in_new"
-              urlDemo="https://gcba.github.io/obelisco-demo/formularios/multipagina/index.html"
-              activeTab={activeTab}
-              setActiveTab={setActiveTab}
-            />
+            <TabItem id={`panel-content-html`} title={'Código'} activeTab={activeTab} setActiveTab={setActiveTab} />
           </ul>
         </nav>
 
@@ -45,13 +53,7 @@ const TemplateFormularioMultipagina: React.FC = () => {
 
         <div className="tab-content" style={{ paddingTop: '32px' }}>
           <TabPanel id={`panel-content-html`} activeTab={activeTab}>
-            <>
-              <CodeViewTemplate template={TEMPLATE_FORM_MULTIPAGINA} />
-            </>
-          </TabPanel>
-
-          <TabPanel id={'panel-content-react'} activeTab={activeTab}>
-            <></>
+            <CodeViewTemplate template={TEMPLATE_FORM_MULTIPAGINA} />
           </TabPanel>
         </div>
       </div>

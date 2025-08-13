@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
 
 import { TabItem, TabPanel } from '@/components/Tabs';
@@ -8,7 +9,6 @@ import ComponentHeader from '@/components/Template/ComponentHeader';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 
 import { AREA_2 } from './code-views';
-import Link from 'next/link';
 const basePath = '/Obelisco-V2';
 
 export default function AreaDos() {

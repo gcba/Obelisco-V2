@@ -22,7 +22,7 @@ export default function Areas() {
         <>
           <div className="container">
             <div className="max-items-2">
-              <div className="col">
+              <div className="col d-flex">
                 <a href={`${basePath}/templates/paginas-de-areas/pagina-area-uno`} className="list-group-item item-sm">
                   <div className="access-content">
                     <span className="access-title">Página de áreas | Nivel 1</span>
@@ -33,7 +33,7 @@ export default function Areas() {
                 </a>
               </div>
 
-              <div className="col">
+              <div className="col d-flex">
                 <a href={`${basePath}/templates/paginas-de-areas/pagina-area-dos`} className="list-group-item item-sm">
                   <div className="access-content">
                     <span className="access-title">Página de áreas | Nivel 2</span>

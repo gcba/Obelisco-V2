@@ -96,67 +96,72 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   ) : (
     <div className="container custom-layout-container">
       <div className="row v-height-100" style={{ paddingTop: '32px' }}>
-        <div className="col-3 d-none d-xl-block pe-0">
-          {pathname.includes('/components') && (
-            <div className="nav-left sticky-nav pb-1">
-              <div className="nav-left-box-title">
-                <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Estilos</p>
+        {pathname.includes('/templates') ? null : (
+          <div className="col-3 d-none d-xl-block pe-0">
+            {pathname.includes('/components') && (
+              <div className="nav-left sticky-nav pb-1">
+                <div className="nav-left-box-title">
+                  <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Estilos</p>
+                </div>
+                <NavLayout items={stylesPages} />
+                <hr className="nav-divider" />
+                <div className="nav-left-box-title">
+                  <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Componentes</p>
+                </div>
+                <NavLayout items={componentsPages} />
+                <hr className="nav-divider" />
+                <div className="nav-left-box-title">
+                  <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Formularios</p>
+                </div>
+                <NavLayout items={formsPages} />
+                <hr className="nav-divider" />
+                <div className="nav-left-box-title">
+                  <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Organismos</p>
+                </div>
+                <NavLayout items={organismsPages} />
               </div>
-              <NavLayout items={stylesPages} />
-              <hr className="nav-divider" />
-              <div className="nav-left-box-title">
-                <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Componentes</p>
-              </div>
-              <NavLayout items={componentsPages} />
-              <hr className="nav-divider" />
-              <div className="nav-left-box-title">
-                <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Formularios</p>
-              </div>
-              <NavLayout items={formsPages} />
-              <hr className="nav-divider" />
-              <div className="nav-left-box-title">
-                <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Organismos</p>
-              </div>
-              <NavLayout items={organismsPages} />
-            </div>
-          )}
+            )}
 
-          {pathname.includes('/getting-started') && (
-            <div className="nav-left sticky-nav h-auto">
-              <div className="nav-left-box-title">
-                <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Empezar con Obelisco</p>
+            {pathname.includes('/getting-started') && (
+              <div className="nav-left sticky-nav h-auto">
+                <div className="nav-left-box-title">
+                  <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Empezar con Obelisco</p>
+                </div>
+                <NavLayout items={gettingPages} />
               </div>
-              <NavLayout items={gettingPages} />
-            </div>
-          )}
-          {pathname.includes('/patterns') && (
-            <div className="nav-left sticky-nav h-auto">
-              <div className="nav-left-box-title">
-                <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Patrones</p>
+            )}
+            {pathname.includes('/patterns') && (
+              <div className="nav-left sticky-nav h-auto">
+                <div className="nav-left-box-title">
+                  <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Patrones</p>
+                </div>
+                <NavLayout items={patterns} />
               </div>
-              <NavLayout items={patterns} />
-            </div>
-          )}
+            )}
 
-          {pathname.startsWith('/templates/') && (
+            {/* {pathname.startsWith('/templates/') && (
             <div className="nav-left sticky-nav h-auto">
               <div className="nav-left-box-title">
                 <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Plantillas</p>
               </div>
               <NavLayout items={templatesPages} />
             </div>
-          )}
+          )} */}
 
-          {pathname.includes('/documentation') && (
-            <div className="nav-left sticky-nav h-auto">
-              <div className="nav-left-box-title">
-                <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Documentación</p>
+            {pathname.includes('/documentation') && (
+              <div className="nav-left sticky-nav h-auto">
+                <div className="nav-left-box-title">
+                  <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Documentación</p>
+                </div>
+                <NavLayout items={documentationPages} />
               </div>
-              <NavLayout items={documentationPages} />
-            </div>
-          )}
+            )}
+          </div>
+        )}
+
+        <div className={`col-12 col-xl-9 custom-col-9-desktop ${pathname.includes('/templates') ? 'mx-auto' : ''}`}>
+          {children}
         </div>
-        <div className="col-12 col-xl-9 custom-col-9-desktop">{children}</div>
       </div>
     </div>
   );

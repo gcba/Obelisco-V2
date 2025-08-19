@@ -70,7 +70,7 @@ const TemplatesComponents: React.FC = () => {
                   <i className="bx bxs-book-content card-icon"></i>
                   <div className="card-body">
                     <h3 className="card-title">
-                      <a href="#" className="card-title-link">
+                      <a href={`${basePath}/templates/pagina-simple`} className="card-title-link">
                         Página simple
                       </a>
                     </h3>
@@ -84,7 +84,7 @@ const TemplatesComponents: React.FC = () => {
                   <i className="bx bxs-book-open card-icon"></i>
                   <div className="card-body">
                     <h3 className="card-title">
-                      <a href="#" className="card-title-link">
+                      <a href={`${basePath}/templates/pagina-de-libro`} className="card-title-link">
                         Página de libro
                       </a>
                     </h3>
@@ -98,7 +98,7 @@ const TemplatesComponents: React.FC = () => {
                   <i className="bx bxs-file card-icon"></i>
                   <div className="card-body">
                     <h3 className="card-title">
-                      <a href="#" className="card-title-link">
+                      <a href={`${basePath}/templates/pagina-tramites`} className="card-title-link">
                         Trámites
                       </a>
                     </h3>

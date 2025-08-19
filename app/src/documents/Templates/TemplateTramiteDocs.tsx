@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
 
 import { TabItem, TabPanel } from '@/components/Tabs';
@@ -671,14 +672,18 @@ const TemplateTramiteDocs: React.FC = () => {
 
   return (
     <>
+      <nav aria-label="Navegación secundaria">
+        <ol className="breadcrumb">
+          <li className="breadcrumb-item">
+            <Link href="/templates">Plantillas</Link>
+          </li>
+        </ol>
+      </nav>
       <ComponentHeader
         title="Página de trámites"
         description={[
           `
-          Con este template buscamos mejorar la experiencia de las personas a la hora de navegar nuestro sitio
-          web. Buscamos crear jerarquías claras de contenido donde se aplique el sistema de diseño
-          Obelisco. Esta guía tiene como fin orientar a quienes trabajan como webmasters para que sepan qué tipo
-          de componente se utiliza en las distintas casuísticas. 
+          Esta guía está diseñada para proporcionar una compresión clara y completa de cómo utilizar la plantilla de trámites de manera efectiva. La idea es asegurar la mejor experiencia posible a la persona usuaria y facilitar la implementación de la plantilla.
           `,
         ]}
       />

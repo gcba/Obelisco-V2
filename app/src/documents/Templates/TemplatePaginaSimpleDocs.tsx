@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import { useState } from 'react';
 
 import { TabItem, TabPanel } from '@/components/Tabs';
@@ -12,6 +13,13 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
 
   return (
     <>
+      <nav aria-label="Navegación secundaria">
+        <ol className="breadcrumb">
+          <li className="breadcrumb-item">
+            <Link href="/templates">Plantillas</Link>
+          </li>
+        </ol>
+      </nav>
       <ComponentHeader
         title="Página simple"
         description={[

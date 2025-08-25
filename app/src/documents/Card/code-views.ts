@@ -72,6 +72,80 @@ export const HORIZONTAL_THEME = `
 </div>
 `;
 
+export const HORIZONTAL_MISCELLANEA = `
+	<div class="card card-horizontal">
+		<div class="d-flex w-100 card-border-left-purple">
+			<i class="bx bxs-info-circle card-icon"></i>
+			<div class="card-body">
+				<h3 class="card-title">
+					<a href="#" class="card-title-link">Título de la tarjeta</a>
+				</h3>
+				<p class="card-text">Descripción de la tarjeta</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="card card-horizontal">
+		<div class="d-flex w-100 card-border-left-red">
+			<i class="bx bxs-info-circle card-icon"></i>
+			<div class="card-body">
+				<h3 class="card-title">
+					<a href="#" class="card-title-link">Título de la tarjeta</a>
+				</h3>
+				<p class="card-text">Descripción de la tarjeta</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="card card-horizontal">
+		<div class="d-flex w-100 card-border-left-sky">
+			<i class="bx bxs-info-circle card-icon"></i>
+			<div class="card-body">
+				<h3 class="card-title">
+					<a href="#" class="card-title-link">Título de la tarjeta</a>
+				</h3>
+				<p class="card-text">Descripción de la tarjeta</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="card card-horizontal">
+		<div class="d-flex w-100 card-border-left-yellow">
+			<i class="bx bxs-info-circle card-icon"></i>
+			<div class="card-body">
+				<h3 class="card-title">
+					<a href="#" class="card-title-link">Título de la tarjeta</a>
+				</h3>
+				<p class="card-text">Descripción de la tarjeta</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="card card-horizontal">
+		<div class="d-flex w-100 card-border-left-cyan">
+			<i class="bx bxs-info-circle card-icon"></i>
+			<div class="card-body">
+				<h3 class="card-title">
+					<a href="#" class="card-title-link">Título de la tarjeta</a>
+				</h3>
+				<p class="card-text">Descripción de la tarjeta</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="card card-horizontal">
+		<div class="d-flex w-100 card-border-left-blue">
+			<i class="bx bxs-info-circle card-icon"></i>
+			<div class="card-body">
+				<h3 class="card-title">
+					<a href="#" class="card-title-link">Título de la tarjeta</a>
+				</h3>
+				<p class="card-text">Descripción de la tarjeta</p>
+			</div>
+		</div>
+	</div>
+`;
+
 // VERTICALES
 export const VERTICAL_ICON = `
 <div class="card">
@@ -174,6 +248,67 @@ export const VERTICAL_AGENDA = `
     </div>
   </div>
 </div>
+`;
+export const VERTICAL_MISCELLANEA = `
+	<div class="card">
+		<img class="card-img" src="./img.jpg" alt="descripción de imagen" />
+		<div class="card-body card-border-bottom-purple">
+			<h3 class="card-title">
+				<a href="#" class="card-title-link">Título de la tarjeta</a>
+			</h3>
+			<p class="card-text">Descripción de la tarjeta</p>
+		</div>
+	</div>
+
+	<div class="card">
+		<img class="card-img" src="./img.jpg" alt="descripción de imagen" />
+		<div class="card-body card-border-bottom-red">
+			<h3 class="card-title">
+				<a href="#" class="card-title-link">Título de la tarjeta</a>
+			</h3>
+			<p class="card-text">Descripción de la tarjeta</p>
+		</div>
+	</div>
+
+	<div class="card">
+		<img class="card-img" src="./img.jpg" alt="descripción de imagen" />
+		<div class="card-body card-border-bottom-sky">
+			<h3 class="card-title">
+				<a href="#" class="card-title-link">Título de la tarjeta</a>
+			</h3>
+			<p class="card-text">Descripción de la tarjeta</p>
+		</div>
+	</div>
+
+	<div class="card">
+		<img class="card-img" src="./img.jpg" alt="descripción de imagen" />
+		<div class="card-body card-border-bottom-yellow">
+			<h3 class="card-title">
+				<a href="#" class="card-title-link">Título de la tarjeta</a>
+			</h3>
+			<p class="card-text">Descripción de la tarjeta</p>
+		</div>
+	</div>
+
+	<div class="card">
+		<img class="card-img" src="./img.jpg" alt="descripción de imagen" />
+		<div class="card-body card-border-bottom-cyan">
+			<h3 class="card-title">
+				<a href="#" class="card-title-link">Título de la tarjeta</a>
+			</h3>
+			<p class="card-text">Descripción de la tarjeta</p>
+		</div>
+	</div>
+
+	<div class="card">
+		<img class="card-img" src="./img.jpg" alt="descripción de imagen" />
+		<div class="card-body card-border-bottom-blue">
+			<h3 class="card-title">
+				<a href="#" class="card-title-link">Título de la tarjeta</a>
+			</h3>
+			<p class="card-text">Descripción de la tarjeta</p>
+		</div>
+	</div>
 `;
 export const SCROLL_DISPOSITION = `
 <div class="responsive-scroll has-card-items">

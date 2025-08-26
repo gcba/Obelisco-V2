@@ -1400,8 +1400,8 @@ const ButtonDocs: React.FC = () => {
         ]}
       />
       <Tabs
-        sectionUx={SECTION_UX}
         sectionDev={SECTIONS_DEV}
+        sectionUx={SECTION_UX}
         customSections={[
           {
             title: 'Especificaciones',

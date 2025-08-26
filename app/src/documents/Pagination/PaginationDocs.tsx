@@ -289,8 +289,8 @@ const PaginationDocs: React.FC = () => {
         <>
           <p className="text-md">
             Los paginados permiten moverse entre diferentes secciones de contenido. Pueden mostrar números para acceder
-            directamente a una página específica, o descripciones como “Anterior” y “Siguiente” para avanzar o
-            retroceder de forma secuencial.
+            directamente a una página específica, o descripciones como &quot;Anterior&quot; y &quot;Siguiente&quot; para
+            avanzar o retroceder de forma secuencial.
           </p>
         </>
       ),
@@ -300,8 +300,9 @@ const PaginationDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md mb-4">
-            Permite avanzar o retroceder entre secciones usando botones como “Anterior” y “Siguiente”, facilitando una
-            navegación secuencial. Este tipo se usa principalmente en la versión mobile.
+            Permite avanzar o retroceder entre secciones usando botones como &quot;Anterior&quot; y
+            &quot;Siguiente&quot;, facilitando una navegación secuencial. Este tipo se usa principalmente en la versión{' '}
+            <i>mobile</i>.
           </p>
           <Image
             src={`${basePath}/images/pagination/prev-next-buttons.svg`}
@@ -432,7 +433,8 @@ const PaginationDocs: React.FC = () => {
               <tr>
                 <td className="border-end">1. Botón anterior</td>
                 <td>
-                  Navegación con iconografía <b>‘chevron_left’</b> que redirecciona a la &quot;página anterior&quot;.
+                  Navegación con iconografía <b>&quot;chevron_left&quot;</b> que redirecciona a la &quot;página
+                  anterior&quot;.
                 </td>
               </tr>
 
@@ -456,7 +458,8 @@ const PaginationDocs: React.FC = () => {
               <tr>
                 <td className="border-end">5. Botón siguiente</td>
                 <td>
-                  Navegación con iconografía <b>‘chevron_right’</b> que redirecciona a la &quot;página siguiente&quot;.
+                  Navegación con iconografía <b>&quot;chevron_right&quot;</b> que redirecciona a la &quot;página
+                  siguiente&quot;.
                 </td>
               </tr>
             </tbody>
@@ -588,24 +591,26 @@ const PaginationDocs: React.FC = () => {
       title: 'Etiquetado descriptivo',
       content: (
         <>
-          <p className="text-md mb-4">
+          <p className="text-md mb-0">
             La etiqueta que engloba al paginado debe ser un &lt;nav&gt;&lt;/nav&gt;, el cual necesita un atributo
             aria-label que comunique que el componente es de paginación. Dentro de él debería tener una lista sin
-            enumerar, &lt;ul&gt;&lt;/ul&gt;, con sus respectivos items, &lt;li&gt;&lt;/li&gt;. Cada etiqueta
-            &lt;a&gt;&lt;/a&gt; debe estar acompañada de aria-label indicando la página a la que se redirigía, por
-            ejemplo: “Ir a la página 7”.
+            enumerar, &lt;ul&gt;&lt;/ul&gt;, con sus respectivos items, &lt;li&gt;&lt;/li&gt;.
+          </p>
+          <p className="text-md mb-4">
+            Cada etiqueta &lt;a&gt;&lt;/a&gt; debe estar acompañada de aria-label indicando la página a la que se
+            redirigía, por ejemplo: &quot;Ir a la página 7&quot;.
           </p>
 
           <p className="text-xl mb-2">Interactividad limitada</p>
           <p className="text-md mb-4">
-            Cuando un botón está deshabilitado, por ejemplo el botón “Anterior”, es importante indicarlo correctamente
-            mediante el atributo “disabled”. Además, debe evitarse que el foco del teclado llegue al componente, y debe
-            comunicarse su estado a tecnologías de asistencia.
+            Cuando un botón está deshabilitado, por ejemplo el botón &quot;Anterior&quot;, es importante indicarlo
+            correctamente mediante el atributo <i>&quot;disabled&quot;</i>. Además, debe evitarse que el foco del
+            teclado llegue al componente, y debe comunicarse su estado a tecnologías de asistencia.
           </p>
           <p className="text-xl mb-2">Funcionalidad técnica</p>
           <p className="text-md mb-4">
             El elemento que esté seleccionado, es decir, que marque la página en la que se encuentra la persona usuaria
-            deberá tener activado el atributo aria-current=”page”.
+            deberá tener activado el atributo aria-current=&quot;page&quot;.
           </p>
           <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
             {PAGINATION_ACCESSIBILITY}

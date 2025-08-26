@@ -29,6 +29,7 @@ $badge-primary-hover-bg: (
   orange: $orange-100,
   purple: $purple-100,
 );
+
 // Fin | Variables Etiquetas primarias -
 
 // - Inicio | Variables Etiquetas secundarias
@@ -49,6 +50,7 @@ $badge-secondary-border-color: (
   orange: $orange-800,
   purple: $purple-800,
 );
+
 // - Fin | Variables Etiquetas secundarias -
 
 // Primarias Estaticas, con y sin ícono
@@ -57,6 +59,7 @@ $badge-secondary-border-color: (
   background-color: map-get($badge-primary-bg, $color-name);
   border-radius: 8px;
 }
+
 // Secundarias Estaticas, con y sin ícono
 @mixin badge-secondary-static($color-name-primary-secondary) {
   color: $white;
@@ -67,7 +70,6 @@ $badge-secondary-border-color: (
 // - Inicio | Primarias Clickeables, con y sin ícono
 @mixin badge-primary-link($color-name) {
   $original-color: map-get($badge-primary-font-color, $color-name);
-
   border: 1px solid $original-color;
   color: $original-color;
   background-color: map-get($badge-primary-bg, $color-name);
@@ -77,6 +79,7 @@ $badge-secondary-border-color: (
     color: $original-color;
     text-decoration: none;
   }
+
   span {
     text-decoration: underline;
   }
@@ -92,6 +95,7 @@ $badge-secondary-border-color: (
       color: $original-color;
       text-decoration: none;
     }
+
     span {
       text-decoration: underline;
     }
@@ -103,7 +107,7 @@ $badge-secondary-border-color: (
     background-color: map-get($badge-primary-bg, $color-name);
     color: $original-color;
     text-decoration: none;
-    border: 0px solid #00000000;
+    border: 0 solid #00000000;
 
     i {
       color: $original-color;
@@ -111,6 +115,7 @@ $badge-secondary-border-color: (
     }
   }
 }
+
 // Fin | Primarias Clickeables, con y sin ícono -
 
 // - Inicio | Secundarias Clickeables, con y sin ícono
@@ -154,7 +159,7 @@ $badge-secondary-border-color: (
     background-color: map-get($badge-secondary-bg, $color-name);
     color: $white;
     text-decoration: none;
-    border: 0px solid #00000000;
+    border: 0 solid #00000000;
 
     i {
       color: $white;
@@ -162,6 +167,7 @@ $badge-secondary-border-color: (
     }
   }
 }
+
 // Fin | Secundarias Clickeables, con y sin ícono -
 
 // Mixin base para todas las etiquetas. Estilos por default
@@ -184,7 +190,7 @@ $badge-secondary-border-color: (
 
   &:focus,
   &.focus {
-    border: 0px solid #00000000;
+    border: 0 solid #00000000;
     box-shadow: $focus-box-shadow-subtle;
   }
 }
@@ -203,6 +209,7 @@ $badge-secondary-border-color: (
     min-height: 20px;
     line-height: 20px;
   }
+
   &.badge-lg {
     @extend .text-lg;
     padding: 8px;
@@ -245,11 +252,13 @@ $badge-secondary-border-color: (
   background-color: $white;
   border: 1px solid $blue-900;
   color: $blue-900;
+
   &:hover,
   &.hover {
     background-color: $slate-100;
     color: $blue-900;
   }
+
   &.disabled {
     background-color: $slate-100;
     color: $disabled-text;
@@ -258,6 +267,7 @@ $badge-secondary-border-color: (
     pointer-events: none;
   }
 }
+
 // Fin Mixin para seleccionables y eliminables -
 
 // - Inicio Seleccionables
@@ -286,6 +296,7 @@ a.badge-select {
     text-decoration: none;
   }
 }
+
 // Fin Seleccionables -
 
 // - Inicio eliminable
@@ -317,6 +328,7 @@ a.badge-remove {
     i {
       text-decoration: none;
     }
+
     span {
       text-decoration: underline;
     }
@@ -335,9 +347,11 @@ a.badge-remove {
       box-shadow: $focus-box-shadow-subtle;
       border-radius: 2px;
     }
+
     span {
       text-decoration: underline;
     }
   }
 }
+
 // Fin eliminable -

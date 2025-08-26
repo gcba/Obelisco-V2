@@ -2,6 +2,8 @@
 
 import Image from 'next/image';
 import React, { useState } from 'react';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import CodeCopy from '@/components/CodeBox';
 import CodeBox from '@/components/CodeBox';
@@ -17,6 +19,7 @@ import {
   PAGINATION_INITIAL,
   PAGINATION_DESCRIPTION,
   PAGINATION_DISABLED,
+  PAGINATION_ACCESSIBILITY,
 } from './code-views';
 
 const PaginationDocs: React.FC = () => {
@@ -289,8 +292,13 @@ const PaginationDocs: React.FC = () => {
             directamente a una página específica, o descripciones como “Anterior” y “Siguiente” para avanzar o
             retroceder de forma secuencial.
           </p>
-
-          <h5 className="fw-normal pt-3">Descriptivo</h5>
+        </>
+      ),
+    },
+    {
+      subtitle: 'Descriptivo',
+      content: (
+        <>
           <p className="text-md mb-4">
             Permite avanzar o retroceder entre secciones usando botones como “Anterior” y “Siguiente”, facilitando una
             navegación secuencial. Este tipo se usa principalmente en la versión mobile.
@@ -302,10 +310,13 @@ const PaginationDocs: React.FC = () => {
             height="148"
             className="img-fluid"
           />
-
-          <h5 className="fw-normal" style={{ marginTop: '32px' }}>
-            Numerado
-          </h5>
+        </>
+      ),
+    },
+    {
+      subtitle: 'Numerado',
+      content: (
+        <>
           <p className="text-md mb-4">
             Muestra una secuencia de páginas y permite ir directamente a una de ellas. La página activa se resalta para
             indicar la ubicación actual. Se recomienda su uso en dispositivos desktop y tablet.
@@ -317,7 +328,6 @@ const PaginationDocs: React.FC = () => {
             height="148"
             className="img-fluid"
           />
-
           <div className="list-informative">
             <p className="text-xl fw-semibold" style={{ marginTop: '32px' }}>
               Comportamiento del paginado numerado
@@ -421,7 +431,9 @@ const PaginationDocs: React.FC = () => {
             <tbody>
               <tr>
                 <td className="border-end">1. Botón anterior</td>
-                <td>Navegación con iconografía ‘chevron_left’ que redirecciona a la &quot;página anterior&quot;.</td>
+                <td>
+                  Navegación con iconografía <b>‘chevron_left’</b> que redirecciona a la &quot;página anterior&quot;.
+                </td>
               </tr>
 
               <tr>
@@ -595,13 +607,9 @@ const PaginationDocs: React.FC = () => {
             El elemento que esté seleccionado, es decir, que marque la página en la que se encuentra la persona usuaria
             deberá tener activado el atributo aria-current=”page”.
           </p>
-          <Image
-            src={`${basePath}/images/pagination/code.svg`}
-            alt="Codigo"
-            width="728"
-            height="696"
-            className="img-fluid"
-          />
+          <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
+            {PAGINATION_ACCESSIBILITY}
+          </SyntaxHighlighter>
         </>
       ),
     },

@@ -55,3 +55,10 @@ export const BADGE_TYPES = `// Default
   ETIQUETA
 </a>
 `;
+
+export const BADGE_ACCESSIBLITY = `<span class="badge badge-default">Cultura</span>`;
+
+export const BADGE_ACCESSIBLITY_2 = `<a href="/tematica/salud" class="badge badge-default">
+ Cultura
+</a>
+`;

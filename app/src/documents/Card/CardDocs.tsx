@@ -15,7 +15,6 @@ import {
   HORIZONTAL_IMG,
   HORIZONTAL_TEXT,
   HORIZONTAL_THEME,
-  HORIZONTAL_MISCELLANEA,
   SCROLL_DISPOSITION,
   TARJETAS_ACCESSIBILTY,
   TARJETAS_ACCESSIBILTY_2,
@@ -49,6 +48,18 @@ const CardDocs: React.FC = () => {
                     <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
                   </h3>
                   <p className="card-text">Descripción de la tarjeta</p>
+                </div>
+              </div>
+              <br />
+              <div className="card card-horizontal">
+                <div className="d-flex w-100 card-border-left-blue">
+                  <i className="bx bxs-info-circle card-icon"></i>
+                  <div className="card-body">
+                    <h3 className="card-title">
+                      <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                    </h3>
+                    <p className="card-text">Descripción de la tarjeta</p>
+                  </div>
                 </div>
               </div>
               <br />
@@ -88,6 +99,24 @@ const CardDocs: React.FC = () => {
                 </div>
               </div>
               <br />
+              <div className="card card-horizontal">
+                <div className="d-flex w-100 card-border-left-blue">
+                  <Image
+                    src={`${basePath}/images/card-img-left.jpg`}
+                    className="card-img"
+                    alt="descripción de imagen"
+                    width={64}
+                    height={64}
+                  ></Image>
+                  <div className="card-body">
+                    <h3 className="card-title">
+                      <LinkClient className="card-title-link">Título de la tarjeta con más de una línea</LinkClient>
+                    </h3>
+                    <p className="card-text">Descripción de la tarjeta</p>
+                  </div>
+                </div>
+              </div>
+              <br />
               <div className="card card-horizontal unbordered">
                 <Image
                   src={`${basePath}/images/card-img-left.jpg`}
@@ -116,6 +145,15 @@ const CardDocs: React.FC = () => {
             <div className="col-12 col-xl-8">
               <div className="card card-horizontal">
                 <div className="card-body">
+                  <h3 className="card-title">
+                    <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                  </h3>
+                  <p className="card-text">Descripción de la tarjeta</p>
+                </div>
+              </div>
+              <br />
+              <div className="card card-horizontal">
+                <div className="card-body card-border-left-blue">
                   <h3 className="card-title">
                     <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
                   </h3>
@@ -163,40 +201,6 @@ const CardDocs: React.FC = () => {
       ),
     },
     {
-      subtitle: 'Con icono y miscelánea',
-      content: (
-        <CodeBox codeHTML={HORIZONTAL_MISCELLANEA}>
-          <div className="container mx-auto">
-            <div className="row g-4 justify-content-center">
-              <div className="card-box-sizing-disp-scroll">
-                <div className="container">
-                  <div className="responsive-scroll has-card-items" tabIndex={0}>
-                    <div className="card-items-3"> 
-                    {colors.map((color, i) => (
-                      <div className="col" key={i}>
-                        <div className="card card-horizontal">
-                          <div className={`d-flex w-100 card-border-left-${color}`}>
-                            <i className="bx bxs-info-circle card-icon" />
-                            <div className="card-body">
-                              <h3 className="card-title">
-                                <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
-                              </h3>
-                              <p className="card-text">Descripción de la tarjeta</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </CodeBox>
-      ),
-    },
-    {
       title: 'Vertical',
     },
     {
@@ -208,6 +212,16 @@ const CardDocs: React.FC = () => {
               <div className="card">
                 <i className="bx bxs-info-circle card-icon"></i>
                 <div className="card-body">
+                  <h3 className="card-title">
+                    <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                  </h3>
+                  <p className="card-text">Descripción de la tarjeta</p>
+                </div>
+              </div>
+              <br />
+              <div className="card">
+                <i className="bx bxs-info-circle card-icon"></i>
+                <div className="card-body card-border-bottom-blue">
                   <h3 className="card-title">
                     <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
                   </h3>
@@ -244,6 +258,22 @@ const CardDocs: React.FC = () => {
                   height={196}
                 ></Image>
                 <div className="card-body">
+                  <h3 className="card-title">
+                    <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                  </h3>
+                  <p className="card-text">Descripción de la tarjeta</p>
+                </div>
+              </div>
+              <br />
+              <div className="card">
+                <Image
+                  src={`${basePath}/images/card-img-top.jpg`}
+                  className="card-img"
+                  alt="descripción de imagen"
+                  width={348}
+                  height={196}
+                ></Image>
+                <div className="card-body card-border-bottom-blue">
                   <h3 className="card-title">
                     <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
                   </h3>
@@ -371,16 +401,16 @@ const CardDocs: React.FC = () => {
       ),
     },
     {
-      subtitle: 'Con imagen y miscelánea',
+      title: 'Con miscelánea',
       content: (
         <CodeBox codeHTML={VERTICAL_MISCELLANEA}>
           <div className="container mx-auto">
-            <div className="row g-4 justify-content-center">              
-                <div className="card-box-sizing-disp-scroll">
-                  <div className="container">
-                    <div className="responsive-scroll has-card-items" tabIndex={0}>
-                      <div className="card-items-3">
-                        {colors.map((color, i) => (
+            <div className="row g-4 justify-content-center">
+              <div className="card-box-sizing-disp-scroll">
+                <div className="container">
+                  <div className="responsive-scroll has-card-items" tabIndex={0}>
+                    <div className="card-items-3">
+                      {colors.map((color, i) => (
                         <div className="col" key={i}>
                           <div className="card">
                             <Image
@@ -398,11 +428,11 @@ const CardDocs: React.FC = () => {
                             </div>
                           </div>
                         </div>
-                         ))}
-                      </div>
+                      ))}
                     </div>
                   </div>
-                </div>             
+                </div>
+              </div>
             </div>
           </div>
         </CodeBox>

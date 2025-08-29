@@ -275,8 +275,8 @@ const FormSearchDocs: React.FC = () => {
           </p>
           <div className="flex flex-column gap-3">
             <div>
-              <span className="badge badge-default ms-1">TAB</span>
-              <span className="badge badge-default">ENTER</span>
+              <span className="badge badge-s-default">TAB</span>
+              <span className="badge badge-s-default">ENTER</span>
             </div>
             <p>
               Utilizando el tab la persona usuaria puede navegar a través de elementos de la interfaz. Además, con el

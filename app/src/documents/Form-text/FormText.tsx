@@ -957,8 +957,8 @@ const FormTextDocs: React.FC = () => {
             El componente de campo de texto está construido para ser reconocido por herramientas de asistencia como la
             navegación por teclado o lectores por voz.
           </p>
-          <span className="badge badge-default ms-1">TAB</span>
-          <span className="badge badge-default">ENTER</span>
+          <span className="badge badge-s-default">TAB</span>
+          <span className="badge badge-s-default">ENTER</span>
           <p className="text-md">
             Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Además, con
             el <i>enter</i>, puede accionar los elementos sobre los que esté posicionada como botones, enlaces, entre

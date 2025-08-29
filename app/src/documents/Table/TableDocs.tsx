@@ -78,7 +78,7 @@ const SECTIONS_DEV = [
                       </div>
                     </td>
                     <td>
-                      <span className="badge badge-default">Texto predeterminado</span>
+                      <span className="badge badge-s-default badge-sm">Texto predeterminado</span>
                     </td>
                   </tr>
                   <tr>
@@ -107,7 +107,7 @@ const SECTIONS_DEV = [
                       </div>
                     </td>
                     <td>
-                      <span className="badge badge-danger">Texto predeterminado</span>
+                      <span className="badge badge-s-info badge-sm">Texto predeterminado</span>
                     </td>
                   </tr>
                   <tr>
@@ -136,7 +136,7 @@ const SECTIONS_DEV = [
                       </div>
                     </td>
                     <td>
-                      <span className="badge badge-info">Texto predeterminado</span>
+                      <span className="badge badge-s-success badge-sm">Texto predeterminado</span>
                     </td>
                   </tr>
                   <tr>
@@ -165,7 +165,7 @@ const SECTIONS_DEV = [
                       </div>
                     </td>
                     <td>
-                      <span className="badge badge-warning">Texto predeterminado</span>
+                      <span className="badge badge-s-warning badge-sm">Texto predeterminado</span>
                     </td>
                   </tr>
                 </tbody>
@@ -232,7 +232,7 @@ const SECTIONS_DEV = [
                     </div>
                   </td>
                   <td>
-                    <span className="badge badge-default">Texto predeterminado</span>
+                    <span className="badge badge-s-default badge-sm-default badge-sm">Texto predeterminado</span>
                   </td>
                 </tr>
                 <tr>
@@ -261,7 +261,7 @@ const SECTIONS_DEV = [
                     </div>
                   </td>
                   <td>
-                    <span className="badge badge-success">Texto predeterminado</span>
+                    <span className="badge badge-s-info badge-sm">Texto predeterminado</span>
                   </td>
                 </tr>
                 <tr>
@@ -290,7 +290,7 @@ const SECTIONS_DEV = [
                     </div>
                   </td>
                   <td>
-                    <span className="badge badge-info">Texto predeterminado</span>
+                    <span className="badge badge-s-success badge-sm">Texto predeterminado</span>
                   </td>
                 </tr>
                 <tr>
@@ -319,7 +319,7 @@ const SECTIONS_DEV = [
                     </div>
                   </td>
                   <td>
-                    <span className="badge badge-warning">Texto predeterminado</span>
+                    <span className="badge badge-s-warning badge-sm">Texto predeterminado</span>
                   </td>
                 </tr>
               </tbody>
@@ -385,7 +385,7 @@ const SECTIONS_DEV = [
                     </div>
                   </td>
                   <td>
-                    <span className="badge badge-default">Texto predeterminado</span>
+                    <span className="badge badge-s-default badge-sm">Texto predeterminado</span>
                   </td>
                 </tr>
                 <tr>
@@ -414,7 +414,7 @@ const SECTIONS_DEV = [
                     </div>
                   </td>
                   <td>
-                    <span className="badge badge-warning">Texto predeterminado</span>
+                    <span className="badge badge-s-info badge-sm">Texto predeterminado</span>
                   </td>
                 </tr>
                 <tr>
@@ -443,7 +443,7 @@ const SECTIONS_DEV = [
                     </div>
                   </td>
                   <td>
-                    <span className="badge badge-info">Texto predeterminado</span>
+                    <span className="badge badge-s-success badge-sm">Texto predeterminado</span>
                   </td>
                 </tr>
                 <tr>
@@ -472,7 +472,7 @@ const SECTIONS_DEV = [
                     </div>
                   </td>
                   <td>
-                    <span className="badge badge-danger">Texto predeterminado</span>
+                    <span className="badge badge-s-danger badge-sm">Texto predeterminado</span>
                   </td>
                 </tr>
               </tbody>
@@ -829,7 +829,7 @@ const SECTIONS_DEV = [
                   <td>Texto predeterminado</td>
                   <td>Texto predeterminado</td>
                   <td>
-                    <span className="badge badge-default">Texto predeterminado</span>
+                    <span className="badge badge-s-default badge-sm-default badge-sm">Texto predeterminado</span>
                   </td>
                 </tr>
                 <tr>
@@ -838,7 +838,7 @@ const SECTIONS_DEV = [
                   <td>Texto predeterminado</td>
                   <td>Texto predeterminado</td>
                   <td>
-                    <span className="badge badge-danger">Texto predeterminado</span>
+                    <span className="badge badge-s-default badge-sm">Texto predeterminado</span>
                   </td>
                 </tr>
                 <tr>
@@ -847,7 +847,7 @@ const SECTIONS_DEV = [
                   <td>Texto predeterminado</td>
                   <td>Texto predeterminado</td>
                   <td>
-                    <span className="badge badge-info">Texto predeterminado</span>
+                    <span className="badge badge-s-default badge-sm">Texto predeterminado</span>
                   </td>
                 </tr>
                 <tr>
@@ -856,7 +856,7 @@ const SECTIONS_DEV = [
                   <td>Texto predeterminado</td>
                   <td>Texto predeterminado</td>
                   <td>
-                    <span className="badge badge-success">Texto predeterminado</span>
+                    <span className="badge badge-s-default badge-sm">Texto predeterminado</span>
                   </td>
                 </tr>
               </tbody>

@@ -6,652 +6,196 @@ import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
+
 const basePath = '/Obelisco-V2';
-
-import { BADGE_ACCESSIBLITY, BADGE_ACCESSIBLITY_2, BADGE_COLORS, BADGE_TYPES } from './code-views';
-
+import {
+  BADGE_ACCESSIBLITY,
+  BADGE_ACCESSIBLITY_2,
+  BADGE_APARIENCIA,
+  BADGE_CLICKEABLE_PRIMARIA_CON_ICONO,
+  BADGE_CLICKEABLE_PRIMARIA_SOLO_TEXTO,
+  BADGE_CLICKEABLE_SECUNDARIA_CON_ICONO,
+  BADGE_CLICKEABLE_SECUNDARIA_SOLO_TEXTO,
+  BADGE_ESTATICA_PRIMARIA_CON_ICONO,
+  BADGE_ESTATICA_PRIMARIA_SOLO_TEXTO,
+  BADGE_ESTATICA_SECUNDARIA_CON_ICONO,
+  BADGE_ESTATICA_SECUNDARIA_SOLO_TEXTO,
+  BADGE_SELECT,
+  BADGE_SIZES,
+  //  BADGE_TYPES
+} from './code-views';
 const BadgeDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
-      title: 'Primarias - Estáticas',
+      title: 'Estáticas',
       firstTitle: true,
+      content: <></>,
+    },
+    {
+      subtitle: 'Primarias',
+      content: <></>,
+    },
+    {
+      tertiarytitle: 'Con ícono',
       content: (
-        <CodeBox codeHTML={BADGE_COLORS}>
+        <CodeBox codeHTML={BADGE_ESTATICA_PRIMARIA_CON_ICONO}>
           <div className="row justify-content-center">
             <div className="col-auto">
-              <div className="grid gap-5 mt-4">
-                <span className="badge badge-p-default badge-sm">Etiqueta</span>
-                <span className="badge badge-p-default">Etiqueta</span>
-                <span className="badge badge-p-default badge-lg">Etiqueta</span>
-              </div>
-              {/* Inicio - Estáticas sm */}
-              <div className="grid gap-5 mt-4">
-                <span className="badge badge-p-default badge-sm">Etiqueta</span>
-                <span className="badge badge-p-sky badge-sm">Etiqueta</span>
-                <span className="badge badge-p-green badge-sm">Etiqueta</span>
-                <span className="badge badge-p-red badge-sm">Etiqueta</span>
-                <span className="badge badge-p-orange badge-sm">Etiqueta</span>
-                <span className="badge badge-p-purple badge-sm">Etiqueta</span>
-              </div>
-              {/* Fin - Estáticas sm */}
-              <div className="grid gap-5 mt-4">
-                <span className="badge badge-p-default">Etiqueta</span>
-                <span className="badge badge-p-sky">Etiqueta</span>
-                <span className="badge badge-p-green">Etiqueta</span>
-                <span className="badge badge-p-red">Etiqueta</span>
-                <span className="badge badge-p-orange">Etiqueta</span>
-                <span className="badge badge-p-purple">Etiqueta</span>
-              </div>
-              <div className="grid gap-5 mt-4">
-                <span className="badge badge-p-default badge-lg">Etiqueta</span>
-                <span className="badge badge-p-sky badge-lg">Etiqueta</span>
-                <span className="badge badge-p-green badge-lg">Etiqueta</span>
-                <span className="badge badge-p-red badge-lg">Etiqueta</span>
-                <span className="badge badge-p-orange badge-lg">Etiqueta</span>
-                <span className="badge badge-p-purple badge-lg">Etiqueta</span>
-              </div>
+              <span className="badge badge-p-default">
+                <i className="bx bx-grid-alt"></i>Etiqueta
+              </span>
             </div>
           </div>
         </CodeBox>
       ),
     },
     {
-      title: 'Primarias - Estáticas - con ícono',
+      tertiarytitle: 'Sólo texto',
       content: (
-        <CodeBox codeHTML={BADGE_COLORS}>
+        <CodeBox codeHTML={BADGE_ESTATICA_PRIMARIA_SOLO_TEXTO}>
           <div className="row justify-content-center">
             <div className="col-auto">
-              {/* Inicio - Estáticas sm */}
-              <div className="grid gap-5">
-                <span className="badge badge-primary badge-p-default badge-sm">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-                <span className="badge badge-p-sky badge-sm">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-                <span className="badge badge-p-green badge-sm">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-                <span className="badge badge-p-red badge-sm">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-                <span className="badge badge-p-orange badge-sm">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-                <span className="badge badge-p-purple badge-sm">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-              </div>
-              {/* Fin - Estáticas sm */}
-              <div className="grid gap-5 mt-4">
-                <span className="badge badge-p-default">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-                <span className="badge badge-p-sky">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-                <span className="badge badge-p-green">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-                <span className="badge badge-p-red">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-                <span className="badge badge-p-orange">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-                <span className="badge badge-p-purple">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-              </div>
-              <div className="grid gap-5 mt-4">
-                <span className="badge badge-p-default badge-lg">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-                <span className="badge badge-p-sky badge-lg">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-                <span className="badge badge-p-green badge-lg">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-                <span className="badge badge-p-red badge-lg">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-                <span className="badge badge-p-orange badge-lg">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-                <span className="badge badge-p-purple badge-lg">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-              </div>
+              <span className="badge badge-p-default">Etiqueta</span>
             </div>
           </div>
         </CodeBox>
       ),
     },
     {
-      title: 'Primarias - Clickeables',
+      subtitle: 'Secundarias',
+      content: <></>,
+    },
+    {
+      tertiarytitle: 'Con ícono',
       content: (
-        <CodeBox codeHTML={BADGE_TYPES}>
+        <CodeBox codeHTML={BADGE_ESTATICA_SECUNDARIA_CON_ICONO}>
           <div className="row justify-content-center">
             <div className="col-auto">
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-p-link-default badge-sm">Etiqueta</LinkClient>
-                <LinkClient className="badge hover badge-p-link-default">Etiqueta</LinkClient>
-                <LinkClient className="badge focus badge-p-link-default badge-lg">Etiqueta</LinkClient>
-              </div>
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-p-link-default">Etiqueta</LinkClient>
-                <LinkClient className="badge hover badge-p-link-default">Etiqueta</LinkClient>
-                <LinkClient className="badge focus badge-p-link-default">Etiqueta</LinkClient>
-              </div>
-
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-p-link-sky">Etiqueta</LinkClient>
-                <LinkClient className="badge hover badge-p-link-sky">Etiqueta</LinkClient>
-                <LinkClient className="badge focus badge-p-link-sky">Etiqueta</LinkClient>
-              </div>
-
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-p-link-green">Etiqueta</LinkClient>
-                <LinkClient className="badge hover badge-p-link-green">Etiqueta</LinkClient>
-                <LinkClient className="badge focus badge-p-link-green">Etiqueta</LinkClient>
-              </div>
-
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-p-link-red">Etiqueta</LinkClient>
-                <LinkClient className="badge hover badge-p-link-red">Etiqueta</LinkClient>
-                <LinkClient className="badge focus badge-p-link-red">Etiqueta</LinkClient>
-              </div>
-
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-p-link-orange">Etiqueta</LinkClient>
-                <LinkClient className="badge hover badge-p-link-orange">Etiqueta</LinkClient>
-                <LinkClient className="badge focus badge-p-link-orange">Etiqueta</LinkClient>
-              </div>
-
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-p-link-purple">Etiqueta</LinkClient>
-                <LinkClient className="badge hover badge-p-link-purple">Etiqueta</LinkClient>
-                <LinkClient className="badge focus badge-p-link-purple">Etiqueta</LinkClient>
-              </div>
+              <span className="badge badge-s-default">
+                <i className="bx bx-grid-alt"></i>Etiqueta
+              </span>
             </div>
           </div>
         </CodeBox>
       ),
     },
     {
-      title: 'Primarias - Clickeables con ícono',
+      tertiarytitle: 'Sólo texto',
       content: (
-        <CodeBox codeHTML={BADGE_TYPES}>
+        <CodeBox codeHTML={BADGE_ESTATICA_SECUNDARIA_SOLO_TEXTO}>
           <div className="row justify-content-center">
             <div className="col-auto">
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-p-link-default badge-sm">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge badge-p-link-default">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge badge-p-link-default badge-lg">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-              </div>
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-p-link-default">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge hover badge-p-link-default">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge focus badge-p-link-default">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-              </div>
-
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-p-link-sky">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge hover badge-p-link-sky">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge focus badge-p-link-sky">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-              </div>
-
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-p-link-green">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge hover badge-p-link-green">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge focus badge-p-link-green">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-              </div>
-
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-p-link-red">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge hover badge-p-link-red">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge focus badge-p-link-red">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-              </div>
-
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-p-link-orange">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge hover badge-p-link-orange">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge focus badge-p-link-orange">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-              </div>
-
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-p-link-purple">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge hover badge-p-link-purple">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge focus badge-p-link-purple">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-              </div>
+              <span className="badge badge-s-default">Etiqueta</span>
             </div>
           </div>
         </CodeBox>
       ),
     },
     {
-      title: 'Secundarias - Estáticas',
+      title: 'Clickeables',
       firstTitle: true,
+      content: <></>,
+    },
+    {
+      subtitle: 'Primarias',
+      content: <></>,
+    },
+    {
+      tertiarytitle: 'Con ícono',
       content: (
-        <CodeBox codeHTML={BADGE_COLORS}>
+        <CodeBox codeHTML={BADGE_CLICKEABLE_PRIMARIA_CON_ICONO}>
           <div className="row justify-content-center">
             <div className="col-auto">
-              <div className="grid gap-5 mt-4">
-                <span className="badge badge-s-default badge-sm">Etiqueta</span>
-                <span className="badge badge-s-default">Etiqueta</span>
-                <span className="badge badge-s-default badge-lg">Etiqueta</span>
-              </div>
-              {/* Inicio - Estáticas sm */}
-              <div className="grid gap-5 mt-4">
-                <span className="badge badge-s-default badge-sm">Etiqueta</span>
-                <span className="badge badge-s-sky badge-sm">Etiqueta</span>
-                <span className="badge badge-s-green badge-sm">Etiqueta</span>
-                <span className="badge badge-s-red badge-sm">Etiqueta</span>
-                <span className="badge badge-s-orange badge-sm">Etiqueta</span>
-                <span className="badge badge-s-purple badge-sm">Etiqueta</span>
-              </div>
-              {/* Fin - Estáticas sm */}
-              <div className="grid gap-5 mt-4">
-                <span className="badge badge-s-default">Etiqueta</span>
-                <span className="badge badge-s-sky">Etiqueta</span>
-                <span className="badge badge-s-green">Etiqueta</span>
-                <span className="badge badge-s-red">Etiqueta</span>
-                <span className="badge badge-s-orange">Etiqueta</span>
-                <span className="badge badge-s-purple">Etiqueta</span>
-              </div>
-              <div className="grid gap-5 mt-4">
-                <span className="badge badge-s-default badge-lg">Etiqueta</span>
-                <span className="badge badge-s-sky badge-lg">Etiqueta</span>
-                <span className="badge badge-s-green badge-lg">Etiqueta</span>
-                <span className="badge badge-s-red badge-lg">Etiqueta</span>
-                <span className="badge badge-s-orange badge-lg">Etiqueta</span>
-                <span className="badge badge-s-purple badge-lg">Etiqueta</span>
-              </div>
+              <LinkClient className="badge badge-p-link-default">
+                <i className="bx bx-grid-alt"></i>
+                <span>Etiqueta</span>
+              </LinkClient>
             </div>
           </div>
         </CodeBox>
       ),
     },
     {
-      title: 'Secundarias - Estáticas - con ícono',
-      firstTitle: true,
+      tertiarytitle: 'Sólo texto',
       content: (
-        <CodeBox codeHTML={BADGE_COLORS}>
+        <CodeBox codeHTML={BADGE_CLICKEABLE_PRIMARIA_SOLO_TEXTO}>
           <div className="row justify-content-center">
             <div className="col-auto">
-              <div className="grid gap-5 mt-4">
-                <span className="badge badge-s-default badge-sm">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-                <span className="badge badge-s-default">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-                <span className="badge badge-s-default badge-lg">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-              </div>
-              {/* Inicio - Estáticas sm */}
-              <div className="grid gap-5 mt-4">
-                <span className="badge badge-s-default badge-sm">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-                <span className="badge badge-s-sky badge-sm">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-                <span className="badge badge-s-green badge-sm">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-                <span className="badge badge-s-red badge-sm">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-                <span className="badge badge-s-orange badge-sm">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-                <span className="badge badge-s-purple badge-sm">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-              </div>
-              {/* Fin - Estáticas sm */}
-              <div className="grid gap-5 mt-4">
-                <span className="badge badge-s-default">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-                <span className="badge badge-s-sky">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-                <span className="badge badge-s-green">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-                <span className="badge badge-s-red">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-                <span className="badge badge-s-orange">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-                <span className="badge badge-s-purple">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-              </div>
-              <div className="grid gap-5 mt-4">
-                <span className="badge badge-s-default badge-lg">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-                <span className="badge badge-s-sky badge-lg">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-                <span className="badge badge-s-green badge-lg">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-                <span className="badge badge-s-red badge-lg">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-                <span className="badge badge-s-orange badge-lg">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-                <span className="badge badge-s-purple badge-lg">
-                  <i className="bx bx-grid-alt"></i>
-                  Etiqueta
-                </span>
-              </div>
+              <LinkClient className="badge badge-p-link-default">
+                <span>Etiqueta</span>
+              </LinkClient>
             </div>
           </div>
         </CodeBox>
       ),
     },
     {
-      title: 'Secundarias - Clickeables',
+      subtitle: 'Secundarias',
+      content: <></>,
+    },
+    {
+      tertiarytitle: 'Con ícono',
       content: (
-        <CodeBox codeHTML={BADGE_TYPES}>
+        <CodeBox codeHTML={BADGE_CLICKEABLE_SECUNDARIA_CON_ICONO}>
           <div className="row justify-content-center">
             <div className="col-auto">
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-s-link-default badge-sm">Etiqueta</LinkClient>
-                <LinkClient className="badge hover badge-s-link-default">Etiqueta</LinkClient>
-                <LinkClient className="badge focus badge-s-link-default badge-lg">Etiqueta</LinkClient>
-              </div>
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-s-link-default">Etiqueta</LinkClient>
-                <LinkClient className="badge hover badge-s-link-default">Etiqueta</LinkClient>
-                <LinkClient className="badge focus badge-s-link-default">Etiqueta</LinkClient>
-              </div>
-
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-s-link-sky">Etiqueta</LinkClient>
-                <LinkClient className="badge hover badge-s-link-sky">Etiqueta</LinkClient>
-                <LinkClient className="badge focus badge-s-link-sky">Etiqueta</LinkClient>
-              </div>
-
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-s-link-green">Etiqueta</LinkClient>
-                <LinkClient className="badge hover badge-s-link-green">Etiqueta</LinkClient>
-                <LinkClient className="badge focus badge-s-link-green">Etiqueta</LinkClient>
-              </div>
-
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-s-link-red">Etiqueta</LinkClient>
-                <LinkClient className="badge hover badge-s-link-red">Etiqueta</LinkClient>
-                <LinkClient className="badge focus badge-s-link-red">Etiqueta</LinkClient>
-              </div>
-
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-s-link-orange">Etiqueta</LinkClient>
-                <LinkClient className="badge hover badge-s-link-orange">Etiqueta</LinkClient>
-                <LinkClient className="badge focus badge-s-link-orange">Etiqueta</LinkClient>
-              </div>
-
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-s-link-purple">Etiqueta</LinkClient>
-                <LinkClient className="badge hover badge-s-link-purple">Etiqueta</LinkClient>
-                <LinkClient className="badge focus badge-s-link-purple">Etiqueta</LinkClient>
-              </div>
+              <LinkClient className="badge badge-s-link-default">
+                <i className="bx bx-grid-alt"></i>
+                <span>Etiqueta</span>
+              </LinkClient>
             </div>
           </div>
         </CodeBox>
       ),
     },
     {
-      title: 'Secundarias - Clickeables con ícono',
+      tertiarytitle: 'Sólo texto',
       content: (
-        <CodeBox codeHTML={BADGE_TYPES}>
+        <CodeBox codeHTML={BADGE_CLICKEABLE_SECUNDARIA_SOLO_TEXTO}>
           <div className="row justify-content-center">
             <div className="col-auto">
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-s-link-default badge-sm">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge hover badge-s-link-default">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge focus badge-s-link-default badge-lg">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-              </div>
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-s-link-default">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge hover badge-s-link-default">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge focus badge-s-link-default">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-              </div>
-
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-s-link-sky">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge hover badge-s-link-sky">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge focus badge-s-link-sky">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-              </div>
-
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-s-link-green">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge hover badge-s-link-green">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge focus badge-s-link-green">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-              </div>
-
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-s-link-red">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge hover badge-s-link-red">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge focus badge-s-link-red">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-              </div>
-
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-s-link-orange">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge hover badge-s-link-orange">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge focus badge-s-link-orange">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-              </div>
-
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-s-link-purple">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge hover badge-s-link-purple">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge focus badge-s-link-purple">
-                  <i className="bx bx-grid-alt"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-              </div>
+              <LinkClient className="badge badge-s-link-default">
+                <span>Etiqueta</span>
+              </LinkClient>
             </div>
           </div>
         </CodeBox>
       ),
     },
     {
-      title: 'Seleccionables',
+      title: 'Tamaños',
       content: (
-        <CodeBox codeHTML={BADGE_TYPES}>
+        <CodeBox codeHTML={BADGE_SIZES}>
           <div className="row justify-content-center">
+            <div className="col-auto gap-2">
+              <span className="badge badge-s-default badge-sm">Etiqueta</span>
+              <span className="badge badge-s-default">Etiqueta</span>
+              <span className="badge badge-s-default badge-lg">Etiqueta</span>
+            </div>
+          </div>
+        </CodeBox>
+      ),
+    },
+    {
+      title: 'Apariencia',
+      content: (
+        <CodeBox codeHTML={BADGE_APARIENCIA}>
+          <div className="row justify-content-center align-items-center gap-3">
             <div className="col-auto">
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-select badge-sm  ">Etiqueta</LinkClient>
-                <LinkClient className="badge badge-select badge-sm hover  ">Etiqueta</LinkClient>
-                <LinkClient className="badge badge-select badge-sm active  ">Etiqueta</LinkClient>
-                <LinkClient className="badge badge-select badge-sm focus  ">Etiqueta</LinkClient>
-                <LinkClient className="badge badge-select badge-sm disabled  ">Etiqueta</LinkClient>
-              </div>
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-select  ">Etiqueta</LinkClient>
-                <LinkClient className="badge badge-select hover  ">Etiqueta</LinkClient>
-                <LinkClient className="badge badge-select active  ">Etiqueta</LinkClient>
-                <LinkClient className="badge badge-select focus  ">Etiqueta</LinkClient>
-                <LinkClient className="badge badge-select disabled  ">Etiqueta</LinkClient>
-              </div>
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-select badge-lg  ">Etiqueta</LinkClient>
-                <LinkClient className="badge badge-select badge-lg hover  ">Etiqueta</LinkClient>
-                <LinkClient className="badge badge-select badge-lg active  ">Etiqueta</LinkClient>
-                <LinkClient className="badge badge-select badge-lg focus  ">Etiqueta</LinkClient>
-                <LinkClient className="badge badge-select badge-lg disabled  ">Etiqueta</LinkClient>
-              </div>
+              <span className="badge badge-p-default">Etiqueta</span>
+              <span className="badge badge-p-info">Etiqueta</span>
+              <span className="badge badge-p-success">Etiqueta</span>
+              <span className="badge badge-p-danger">Etiqueta</span>
+              <span className="badge badge-p-warning">Etiqueta</span>
+              <span className="badge badge-p-highlight">Etiqueta</span>
+            </div>
+            <div className="col-auto">
+              <span className="badge badge-s-default">Etiqueta</span>
+              <span className="badge badge-s-info">Etiqueta</span>
+              <span className="badge badge-s-success">Etiqueta</span>
+              <span className="badge badge-s-danger">Etiqueta</span>
+              <span className="badge badge-s-warning">Etiqueta</span>
+              <span className="badge badge-s-highlight">Etiqueta</span>
             </div>
           </div>
         </CodeBox>
@@ -660,63 +204,27 @@ const BadgeDocs: React.FC = () => {
     {
       title: 'Eliminables',
       content: (
-        <CodeBox codeHTML={BADGE_TYPES}>
-          <div className="row justify-content-center">
+        <CodeBox codeHTML={BADGE_SIZES}>
+          <div className="row justify-content-center align-items-center gap-3">
             <div className="col-auto">
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-remove badge-sm  ">
-                  <i className="bx bx-x"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge badge-remove badge-sm hover  ">
-                  <i className="bx bx-x"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge badge-remove badge-sm focus  ">
-                  <i className="bx bx-x"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge badge-remove badge-sm disabled  ">
-                  <i className="bx bx-x"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-              </div>
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-remove  ">
-                  <i className="bx bx-x"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge badge-remove hover  ">
-                  <i className="bx bx-x"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge badge-remove focus  ">
-                  <i className="bx bx-x"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge badge-remove disabled  ">
-                  <i className="bx bx-x"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-              </div>
-              <div className="grid gap-5 mt-4">
-                <LinkClient className="badge badge-remove badge-lg  ">
-                  <i className="bx bx-x"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge badge-remove badge-lg hover  ">
-                  <i className="bx bx-x"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge badge-remove badge-lg focus  ">
-                  <i className="bx bx-x"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-                <LinkClient className="badge badge-remove badge-lg disabled  ">
-                  <i className="bx bx-x"></i>
-                  <span>Etiqueta</span>
-                </LinkClient>
-              </div>
+              <LinkClient className="badge badge-remove">
+                <i className="bx bx-x"></i>
+                <span>Etiqueta</span>
+              </LinkClient>
+            </div>
+          </div>
+        </CodeBox>
+      ),
+    },
+    {
+      title: 'Seleccionables',
+      content: (
+        <CodeBox codeHTML={BADGE_SELECT}>
+          <div className="row justify-content-center align-items-center gap-3">
+            <div className="col-auto">
+              <LinkClient className="badge badge-select">
+                <span>Etiqueta</span>
+              </LinkClient>
             </div>
           </div>
         </CodeBox>
@@ -744,13 +252,12 @@ const BadgeDocs: React.FC = () => {
               </li>
             </ul>
           </div>
-
           <div className="list-informative" style={{ marginTop: '32px' }}>
             <p className="text-xl">Cuándo no usar</p>
             <ul className="list-informative-bullet">
               <li>
-                Como llamada a la acción para redirigir a la persona usuaria a una nueva página, en ese caso utiliza el
-                componente <a href="https://gcba.github.io/Obelisco-V2/components/button">Botón</a>
+                Como llamada a la acción para dangeririgir a la persona usuaria a una nueva página, en ese caso utiliza
+                el componente <a href="https://gcba.github.io/Obelisco-V2/components/button">Botón</a>
               </li>
               <li>
                 Evitá usar las etiquetas estáticas e interactivas en una misma página ya que puede generar errores no
@@ -784,12 +291,11 @@ const BadgeDocs: React.FC = () => {
               />
             </div>
             {/* estatica */}
-
             {/* Clickeable */}
             <div className="col pe-3">
               <p className="text-xl">Clickeable</p>
               <p className="text-md">
-                Se utiliza para redirigir a la persona usuaria a otra página con contenido relacionado a la etiqueta.
+                Se utiliza para dangeririgir a la persona usuaria a otra página con contenido relacionado a la etiqueta.
               </p>
             </div>
             <div className="col ps-3">
@@ -802,7 +308,6 @@ const BadgeDocs: React.FC = () => {
               />
             </div>
             {/* Clickeable */}
-
             {/* Seleccionable */}
             <div className="col pe-3">
               <p className="text-xl">Seleccionable</p>
@@ -818,7 +323,6 @@ const BadgeDocs: React.FC = () => {
               />
             </div>
             {/* Seleccionable */}
-
             {/* Eliminable */}
             <div className="col pe-3">
               <p className="text-xl">Eliminable</p>
@@ -883,10 +387,9 @@ const BadgeDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md">
-            Las etiquetas adoptan estilos predefinidos según su función. Cada tipo aplica un set de variables de color
-            específicas que garantizan consistencia visual y una comunicación clara del contenido.
+            Las etiquetas adoptan estilos pdangerefinidos según su función. Cada tipo aplica un set de variables de
+            color específicas que garantizan consistencia visual y una comunicación clara del contenido.
           </p>
-
           <div className="responsive-scroll mt-4" tabIndex={0}>
             <table className="table">
               <thead>
@@ -912,37 +415,43 @@ const BadgeDocs: React.FC = () => {
                 </tr>
                 <tr>
                   <td>
-                    <span className="badge badge-p-sky">Información</span>
+                    <span className="badge badge-p-info">Información</span>
                   </td>
                   <td>Datos informativos o aclaratorios.</td>
                   <td>Azul</td>
                 </tr>
                 <tr>
                   <td>
-                    <span className="badge badge-p-green">Éxito</span>
+                    <span className="badge badge-p-success">Éxito</span>
                   </td>
                   <td>Para casos aprobados, completos, exitosos, finalizados.</td>
                   <td>Verde</td>
                 </tr>
                 <tr>
                   <td>
-                    <span className="badge badge-p-orange">Advertencia</span>
+                    <span className="badge badge-p-warning">Advertencia</span>
                   </td>
                   <td>Para casos que requieren atención, también para casos en pausa o rechazados.</td>
                   <td>Amarillo</td>
                 </tr>
+
                 <tr>
                   <td>
-                    <span className="badge badge-p-red">Peligro</span>
+                    <span className="badge badge-p-danger">Peligro</span>
                   </td>
+
                   <td>Para casos de error, no completados, eliminados.</td>
+
                   <td>Rojo</td>
                 </tr>
+
                 <tr>
                   <td>
-                    <span className="badge badge-p-purple">Destacado</span>
+                    <span className="badge badge-p-highlight">Destacado</span>
                   </td>
+
                   <td>Promoción, novedad, énfasis visual.</td>
+
                   <td>Violeta / color destacado</td>
                 </tr>
               </tbody>
@@ -951,8 +460,10 @@ const BadgeDocs: React.FC = () => {
         </>
       ),
     },
+
     {
       title: 'Jerarquías',
+
       content: (
         <>
           <p className="text-md">
@@ -962,13 +473,16 @@ const BadgeDocs: React.FC = () => {
 
           <div className="max-items-2 mb-2" style={{ marginTop: '32px' }}>
             {/* Primaria */}
+
             <div className="col pe-3">
               <p className="text-xl">Primaria</p>
+
               <p className="text-md">
                 La jerarquía primaria se utiliza para destacar un elemento, propiedad o concepto del conjunto total de
                 etiquetas.
               </p>
             </div>
+
             <div className="col ps-3">
               <Image
                 src={`${basePath}/images/etiqueta/badge-primaria.svg`}
@@ -978,16 +492,20 @@ const BadgeDocs: React.FC = () => {
                 className="img-fluid"
               />
             </div>
+
             {/* Primaria */}
 
             {/* Secundaria */}
+
             <div className="col pe-3">
               <p className="text-xl">Secundaria</p>
+
               <p className="text-md">
                 La jerarquía secundaria se usa con mayor frecuencia cuando hay tres o más etiquetas en línea para
                 categorizar la información de un elemento.{' '}
               </p>
             </div>
+
             <div className="col ps-3">
               <Image
                 src={`${basePath}/images/etiqueta/badge-secundaria.svg`}
@@ -997,35 +515,76 @@ const BadgeDocs: React.FC = () => {
                 className="img-fluid"
               />
             </div>
+
             {/* Secundaria */}
 
             {/* Unica */}
+
             <div className="col pe-3">
               <p className="text-xl">Unica</p>
+
               <p className="text-md">
                 Tanto las etiquetas seleccionables como eliminables tienen una jerarquía visual única para no entorpecer
                 la decisión del usuario por el color.{' '}
               </p>
             </div>
+
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/etiqueta/badge-Unica.svg`}
+                src={`${basePath}/images/etiqueta/badge-unica.svg`}
                 alt="Etiqueta Unica"
                 width="800"
                 height="200"
                 className="img-fluid"
               />
             </div>
+
             {/* Unica */}
           </div>
 
           {/* ejemplos de uso */}
+
           <p className="text-xl">Ejemplos de uso</p>
+          <Image
+            src={`${basePath}/images/etiqueta/badge_ejemplo_de_uso_correcto.svg`}
+            alt="Ejemplo de uso correcto"
+            width="800"
+            height="200"
+            className="img-fluid"
+          />
+
+          <div className="d-flex pt-3 mb-4">
+            <span className="material-symbols-rounded text-success">check</span>
+
+            <p className="mb-0">
+              Utilizá etiquetas primarias para resaltar la categoría principal del evento, y las etiquetas secundarias
+              información complementaria.
+            </p>
+          </div>
+
+          <Image
+            src={`${basePath}/images/etiqueta/badge_ejemplo_de_uso_incorrecto.svg`}
+            alt="Ejemplo de uso incorrecto"
+            width="800"
+            height="200"
+            className="img-fluid"
+          />
+
+          <div className="d-flex pt-3">
+            <span className="material-symbols-rounded text-danger">close</span>
+
+            <p className="mb-0">
+              No recomendamos saturar la página con etiquetas primarias, ya que pueden competir entre sí. Si todo está
+              resaltado, nada lo está.
+            </p>
+          </div>
         </>
       ),
     },
+
     {
       title: 'Uso de íconos',
+
       content: (
         <>
           <p className="text-md mb-4">
@@ -1033,6 +592,7 @@ const BadgeDocs: React.FC = () => {
             visual de la información. Se recomienda usarlos únicamente cuando aporten valor semántico o mejoren la
             comprensión, evitando sobrecargar el componente.
           </p>
+
           <Image
             src={`${basePath}/images/etiqueta/badge-iconos.svg`}
             alt="Tamaños de etiquetas"
@@ -1043,8 +603,10 @@ const BadgeDocs: React.FC = () => {
         </>
       ),
     },
+
     {
       title: 'Disposición',
+
       content: (
         <>
           <p className="text-md mb-4">
@@ -1052,6 +614,7 @@ const BadgeDocs: React.FC = () => {
             artículo para mostrar una categoría principal, o al final como &quot;Etiquetas relacionadas&quot;, ayudando
             a clasificar y contextualizar el contenido.
           </p>
+
           <div className="max-items-2">
             <div className="col pe-3">
               <Image
@@ -1061,13 +624,16 @@ const BadgeDocs: React.FC = () => {
                 height="200"
                 className="img-fluid"
               />
+
               <div className="d-flex pt-3">
                 <span className="material-symbols-rounded text-success">check</span>
+
                 <p className="mb-0">
                   Las etiquetas se alinean a la izquierda para facilitar la lectura y la accesibilidad.
                 </p>
               </div>
             </div>
+
             <div className="col ps-3">
               <Image
                 src={`${basePath}/images/etiqueta/badge-disposicion_mal_uso.svg`}
@@ -1076,8 +642,10 @@ const BadgeDocs: React.FC = () => {
                 height="200"
                 className="img-fluid"
               />
+
               <div className="d-flex pt-3">
                 <span className="material-symbols-rounded text-danger">check</span>
+
                 <p className="mb-0">Alinearlas a la derecha interrumpe la lectura y dificulta su identificación.</p>
               </div>
             </div>
@@ -1085,14 +653,17 @@ const BadgeDocs: React.FC = () => {
         </>
       ),
     },
+
     {
       title: 'Contexto de uso',
+
       content: (
         <>
           <p className="text-xl mb-4">
             Para resaltar un estado, tipo o modalidad de contenido que no requiere acción del usuario.
           </p>
-          <p className="text-md">
+
+          <p className="text-md mb-4">
             Se pueden utilizar para mostrar información complementaria o clasificar contenido de manera visual, sin
             interacción. Por ejemplo, en una ficha de trámite puede indicar si es Presencial o En línea.
           </p>
@@ -1103,10 +674,12 @@ const BadgeDocs: React.FC = () => {
             width="800"
             height="200"
             className="img-fluid"
+            style={{ marginBottom: '32px' }}
           />
 
           <p className="text-xl mb-4">Para agrupar o categorizar contenido </p>
-          <p className="text-md">
+
+          <p className="text-md mb-4">
             Se pueden utilizar en listados, tarjetas o secciones donde el contenido puede organizarse por temas o
             categorías, permitiéndole al usuario filtrar, navegar o descubrir información relacionada de forma rápida.
             Suelen resumir el contenido de la página.
@@ -1118,10 +691,12 @@ const BadgeDocs: React.FC = () => {
             width="800"
             height="200"
             className="img-fluid"
+            style={{ marginBottom: '32px' }}
           />
 
-          <p className="text-xl mb-4">Para búsquedas filtradas por temas específicos</p>
-          <p className="text-md">
+          <p className="text-xl mb-3">Para búsquedas filtradas por temas específicos</p>
+
+          <p className="text-md  mb-4">
             Para filtrar información sobre temas relacionados a través de un campo de búsqueda. Permite eliminar las
             etiquetas seleccionadas para volver atrás con la filtración por esa categoría.
           </p>
@@ -1132,10 +707,12 @@ const BadgeDocs: React.FC = () => {
             width="800"
             height="200"
             className="img-fluid"
+            style={{ marginBottom: '32px' }}
           />
 
-          <p className="text-xl mb-4">Para filtrar contenido en una misma página</p>
-          <p className="text-md">
+          <p className="text-xl mb-3">Para filtrar contenido en una misma página</p>
+
+          <p className="text-md mb-4">
             Las etiquetas de filtro activas se utilizan para indicar que un criterio de filtrado está aplicado. Al
             interactuar con la etiqueta, el filtro se activa o desactiva produciendo que la interfaz actualice de manera
             inmediata.
@@ -1147,18 +724,22 @@ const BadgeDocs: React.FC = () => {
             width="800"
             height="200"
             className="img-fluid"
+            style={{ marginBottom: '32px' }}
           />
         </>
       ),
     },
+
     {
       title: 'Contenido',
+
       content: (
         <>
           <p className="text-xl mb-4">Texto en las etiquetas</p>
+
           <p className="text-md">
-            Las etiquetas deben ser breves, claras y estar redactadas siguiendo pautas de escritura. Evitá que el texto
-            se corte en varias líneas: lo ideal es que no superen los 20 caracteres.
+            Las etiquetas deben ser breves, claras y estar dangeractadas siguiendo pautas de escritura. Evitá que el
+            texto se corte en varias líneas: lo ideal es que no superen los 20 caracteres.
           </p>
         </>
       ),
@@ -1186,11 +767,13 @@ const BadgeDocs: React.FC = () => {
                   <th scope="col" className="tb-text">
                     Elemento
                   </th>
+
                   <th scope="col" className="tb-text">
                     Carácter
                   </th>
                 </tr>
               </thead>
+
               <tbody>
                 <tr>
                   <td>1. Contenedor</td>
@@ -1221,15 +804,15 @@ const BadgeDocs: React.FC = () => {
     {
       subtitle: (
         <>
-          Predeterminado <i>(default)</i>
+          Pdangereterminado <i>(default)</i>
         </>
       ),
       content: (
         <>
-          <p className="text-md mb-4">Estado predeterminado de la etiqueta en una interfaz. </p>
+          <p className="text-md mb-4">Estado pdangereterminado de la etiqueta en una interfaz. </p>
           <Image
             src={`${basePath}/images/etiqueta/badge-estado-default.svg`}
-            alt="Estado predeterminado del boton"
+            alt="Estado pdangereterminado del boton"
             width="800"
             height="464"
             className="img-fluid"
@@ -1313,15 +896,14 @@ const BadgeDocs: React.FC = () => {
       firstTitle: true,
       content: (
         <>
-          <p className="text-md" style={{ marginBottom: '32px' }}>
+          <p className="text-md mb-4">
             El componente de etiquetas está construido para ser accesible mediante navegación por teclado y reconocible
             por lectores de pantalla, comunicando su estado (activado o desactivado) de forma clara.
           </p>
-          <span className="badge badge-p-default">TAB</span>
+          <span className="badge badge-s-default">TAB</span>
           <p className="text-md mb-4">
             Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz.
           </p>
-
           <Image
             src={`${basePath}/images/etiqueta/badge-accesibilidad.svg`}
             alt="Navegacion alternativa de la etiqueta"
@@ -1343,10 +925,10 @@ const BadgeDocs: React.FC = () => {
           <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
             {BADGE_ACCESSIBLITY}
           </SyntaxHighlighter>
-          <p className="text-md">
+          <p className="text-md mt-4 mb-3">
             Para las etiquetas interactivas usá el elemento <code>{'<a>'}</code> para que la etiqueta funcione como un
-            enlace que permita explorar contenido relacionado (por temática, categoría, etc.). Si la etiqueta redirige,
-            el atributo href debe ser válido y apuntar al destino correcto.
+            enlace que permita explorar contenido relacionado (por temática, categoría, etc.). Si la etiqueta
+            dangeririge, el atributo href debe ser válido y apuntar al destino correcto.
           </p>
           <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
             {BADGE_ACCESSIBLITY_2}
@@ -1370,7 +952,6 @@ const BadgeDocs: React.FC = () => {
             La información, la estructura y las relaciones transmitidas a través de la presentación pueden determinarse
             mediante programación o están disponibles en el texto.
           </p>
-
           <a
             className="external"
             href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast"
@@ -1383,7 +964,6 @@ const BadgeDocs: React.FC = () => {
             La presentación visual de elementos de la interfaz de usuario y objetos gráficos tiene por lo menos una
             relación de contraste de 3:1 con respecto a los colores adyacentes.
           </p>
-
           <a
             className="external"
             href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html"
@@ -1393,7 +973,6 @@ const BadgeDocs: React.FC = () => {
             Success Criterion 2.1.1 Keyboard (Level A)
           </a>
           <p>Todas las funcionalidades del contenido se puede operar a través de una interfaz de teclado.</p>
-
           <a
             className="external"
             href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html"
@@ -1411,7 +990,6 @@ const BadgeDocs: React.FC = () => {
       ),
     },
   ];
-
   return (
     <>
       <ComponentHeader
@@ -1451,5 +1029,4 @@ const BadgeDocs: React.FC = () => {
     </>
   );
 };
-
 export default BadgeDocs;

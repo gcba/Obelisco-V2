@@ -235,8 +235,8 @@ const CardDocs: React.FC = () => {
                   ></Image>
                   <div className="card-body">
                     <div className="card-badges">
-                      <span className="badge badge-default">etiqueta 1</span>
-                      <span className="badge badge-default">etiqueta 2</span>
+                      <span className="badge badge-s-default badge-sm">Etiqueta</span>
+                      <span className="badge badge-s-default badge-sm">Etiqueta</span>
                     </div>
                     <h3 className="card-title">
                       <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
@@ -269,8 +269,8 @@ const CardDocs: React.FC = () => {
                   ></Image>
                   <div className="card-body">
                     <div className="card-badges">
-                      <span className="badge badge-default">etiqueta 1</span>
-                      <span className="badge badge-default">etiqueta 2</span>
+                      <span className="badge badge-s-default badge-sm">Etiqueta</span>
+                      <span className="badge badge-s-default badge-sm">Etiqueta</span>
                     </div>
                     <h3 className="card-title">
                       <LinkClient className="card-title-link ellipsis-3">
@@ -355,8 +355,8 @@ const CardDocs: React.FC = () => {
                       ></Image>{' '}
                       <div className="card-body">
                         <div className="card-badges">
-                          <span className="badge badge-default">etiqueta 1</span>
-                          <span className="badge badge-default">etiqueta 2</span>
+                          <span className="badge badge-p-default badge-sm">Etiqueta</span>
+                          <span className="badge badge-s-default badge-sm">Etiqueta</span>
                         </div>
                         <h3 className="card-title">
                           <a href="#" className="card-title-link">
@@ -385,8 +385,8 @@ const CardDocs: React.FC = () => {
                       ></Image>
                       <div className="card-body">
                         <div className="card-badges">
-                          <span className="badge badge-default">etiqueta 1</span>
-                          <span className="badge badge-default">etiqueta 2</span>
+                          <span className="badge badge-p-default badge-sm">Etiqueta</span>
+                          <span className="badge badge-s-default badge-sm">Etiqueta</span>
                         </div>
                         <h3 className="card-title">
                           <a href="#" className="card-title-link">
@@ -415,8 +415,8 @@ const CardDocs: React.FC = () => {
                       ></Image>
                       <div className="card-body">
                         <div className="card-badges">
-                          <span className="badge badge-default">etiqueta 1</span>
-                          <span className="badge badge-default">etiqueta 2</span>
+                          <span className="badge badge-p-default badge-sm">Etiqueta</span>
+                          <span className="badge badge-s-default badge-sm">Etiqueta</span>
                         </div>
                         <h3 className="card-title">
                           <a href="#" className="card-title-link">
@@ -445,8 +445,8 @@ const CardDocs: React.FC = () => {
                       ></Image>
                       <div className="card-body">
                         <div className="card-badges">
-                          <span className="badge badge-default">etiqueta 1</span>
-                          <span className="badge badge-default">etiqueta 2</span>
+                          <span className="badge badge-p-default badge-sm">Etiqueta</span>
+                          <span className="badge badge-s-default badge-sm">Etiqueta</span>
                         </div>
                         <h3 className="card-title">
                           <a href="#" className="card-title-link">
@@ -464,36 +464,6 @@ const CardDocs: React.FC = () => {
                       </div>
                     </div>
                   </div>
-                  {/* <div className="col">
-                    <div className="card">
-                      <Image
-                    src={`${basePath}/images/card-img-top.jpg`}
-                    className="card-img"
-                    alt="descripción de imagen"
-                    width={348}
-                    height={196}
-                  ></Image>
-                      <div className="card-body">
-                        <div className="card-badges">
-                          <span className="badge badge-default">etiqueta 1</span>
-                          <span className="badge badge-default">etiqueta 2</span>
-                        </div>
-                        <h3 className="card-title">
-                          <a href="#" className="card-title-link">
-                            Título de la tarjeta
-                          </a>
-                        </h3>
-                        <p className="card-text">Descripción de la tarjeta</p>
-                        <div className="card-info">
-                          <div>
-                            <small>
-                              <span>Fecha de publicación</span>
-                            </small>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div> */}
                 </div>
               </div>
             </div>
@@ -653,8 +623,8 @@ const CardDocs: React.FC = () => {
                 ></Image>
                 <div className="card-body">
                   <div className="card-badges">
-                    <span className="badge badge-default">etiqueta 1</span>
-                    <span className="badge badge-default">etiqueta 2</span>
+                    <span className="badge badge-p-default badge-sm">Etiqueta</span>
+                    <span className="badge badge-s-default badge-sm">Etiqueta</span>
                   </div>
                   <h3 className="card-title">
                     <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
@@ -679,8 +649,8 @@ const CardDocs: React.FC = () => {
                 ></Image>
                 <div className="card-body">
                   <div className="card-badges">
-                    <span className="badge badge-default">etiqueta 1</span>
-                    <span className="badge badge-default">etiqueta 2</span>
+                    <span className="badge badge-p-default badge-sm">Etiqueta</span>
+                    <span className="badge badge-s-default badge-sm">Etiqueta</span>
                   </div>
                   <h3 className="card-title">
                     <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
@@ -705,8 +675,8 @@ const CardDocs: React.FC = () => {
                 ></Image>
                 <div className="card-body">
                   <div className="card-badges">
-                    <span className="badge badge-default">etiqueta 1</span>
-                    <span className="badge badge-default">etiqueta 2</span>
+                    <span className="badge badge-p-default badge-sm">Etiqueta</span>
+                    <span className="badge badge-s-default badge-sm">Etiqueta</span>
                   </div>
                   <h3 className="card-title">
                     <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
@@ -1275,8 +1245,8 @@ const CardDocs: React.FC = () => {
             El componente de tarjetas pueden recorrerse utilizando la navegación por teclado u otras herramientas de
             asistencia como lectores por voz.
           </p>
-          <span className="badge badge-default ms-1">TAB</span>
-          <span className="badge badge-default">ENTER</span>
+          <span className="badge badge-s-default">TAB</span>
+          <span className="badge badge-s-default">ENTER</span>
           <p className="text-md">
             Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Además, con
             el <i>enter</i>, puede accionar los elementos sobre los que esté posicionada como botones, enlaces, entre
@@ -1299,7 +1269,7 @@ const CardDocs: React.FC = () => {
         <>
           <p className="text-md">
             Para una correcta organización jerárquica de encabezados, se recomienda que en el caso que el grupo de
-            tarjetas no contenga un título con etiqueta <strong>{'<h2>'}</strong> que las preceda, se agregue el mismo
+            tarjetas no contenga un título con Etiqueta <strong>{'<h2>'}</strong> que las preceda, se agregue el mismo
             con la clase &quot;sr-only&quot;.
           </p>
           <SyntaxHighlighter language="html" style={dracula} wrapLongLines>

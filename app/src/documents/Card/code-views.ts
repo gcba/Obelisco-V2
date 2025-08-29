@@ -110,8 +110,8 @@ export const VERTICAL_NOTICE = `
   <img class="card-img" src="/card-img-top.jpg" alt="descripción de imagen" />
   <div class="card-body">
     <div class="card-badges">
-        <span class="badge badge-default">etiqueta 1</span>
-        <span class="badge badge-default">etiqueta 2</span>
+        <span class="badge badge-p-default badge-sm">Etiqueta</span>
+        <span class="badge badge-s-default badge-sm">Etiqueta</span>
     </div>
     <h3 class="card-title">
       <a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -132,8 +132,8 @@ export const VERTICAL_NOTICE_TRUNCATE = `
   <img class="card-img" src="/card-img-top.jpg" alt="descripción de imagen" />
   <div class="card-body">
     <div class="card-badges">
-        <span class="badge badge-default">etiqueta 1</span>
-        <span class="badge badge-default">etiqueta 2</span>
+        <span class="badge badge-p-default badge-sm">Etiqueta</span>
+        <span class="badge badge-s-default badge-sm">Etiqueta</span>
     </div>
     <h3 class="card-title">
       <a href="#" class="card-title-link ellipsis-3">
@@ -361,8 +361,8 @@ export const DISPOSITION_SCROLL = `
     <img class="card-img" src="/card-img-top.jpg" alt="descripción de imagen" />
     <div class="card-body">
       <div class="card-badges">
-        <span class="badge badge-default">etiqueta 1</span>
-        <span class="badge badge-default">etiqueta 2</span>
+        <span class="badge badge-p-default badge-sm">Etiqueta</span>
+        <span class="badge badge-s-default badge-sm">Etiqueta</span>
       </div>
       <h3 class="card-title">
         <a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -381,8 +381,8 @@ export const DISPOSITION_SCROLL = `
     <img class="card-img" src="/card-img-top.jpg" alt="descripción de imagen" />
     <div class="card-body">
       <div class="card-badges">
-        <span class="badge badge-default">etiqueta 1</span>
-        <span class="badge badge-default">etiqueta 2</span>
+        <span class="badge badge-p-default badge-sm">Etiqueta</span>
+        <span class="badge badge-s-default badge-sm">Etiqueta</span>
       </div>
       <h3 class="card-title">
         <a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -401,8 +401,8 @@ export const DISPOSITION_SCROLL = `
     <img class="card-img" src="/card-img-top.jpg" alt="descripción de imagen" />
     <div class="card-body">
       <div class="card-badges">
-        <span class="badge badge-default">etiqueta 1</span>
-        <span class="badge badge-default">etiqueta 2</span>
+        <span class="badge badge-p-default badge-sm">Etiqueta</span>
+        <span class="badge badge-s-default badge-sm">Etiqueta</span>
       </div>
       <h3 class="card-title">
         <a href="#" class="card-title-link">Título de la tarjeta</a>

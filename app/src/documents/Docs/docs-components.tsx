@@ -773,8 +773,8 @@ const sections = [
           <br />
           Donde <code>{'direction'}</code>, es el posicionamiento: <code>left</code> o <code>bottom</code>
           <br />
-          Donde <code>{'color'}</code>, es la miscelánea de color: <code>purple</code>, <code>red</code>, <code>sky</code>,{' '}
-          <code>yellow</code>, <code>cyan</code> o <code>blue</code>
+          Donde <code>{'color'}</code>, es la miscelánea de color: <code>purple</code>, <code>red</code>,{' '}
+          <code>sky</code>, <code>yellow</code>, <code>cyan</code> o <code>blue</code>
         </li>
       </ul>
     ),

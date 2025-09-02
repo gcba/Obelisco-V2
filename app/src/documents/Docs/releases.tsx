@@ -19,6 +19,25 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
+      title: 'Versión 1.6.1',
+      firstTitle: true,
+      content: (
+        <ul className="docs-list">
+          <p>La versión 1.6.1 contiene lo siguiente: </p>
+          <li>Actualización de la Ficha de componente Páginado.</li>
+          <li>Actualización de la Ficha de componente Tarjetas.</li>
+          <li>Nueva variante de componente Tarjetas con miscelánea.</li>
+          <li>
+            En{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-30">
+              Cambios de componentes
+            </a>{' '}
+            se encuentran las clases para las Tarjetas con miscelánea.
+          </li>
+        </ul>
+      ),
+    },
+    {
       title: 'Versión 1.6.0',
       firstTitle: true,
       content: (
@@ -175,12 +194,10 @@ const ReleasesComponents: React.FC = () => {
         description={[
           'En esta sección se encuentran los versionados de la librería y la documentación de los cambios que se hicieron sobre cada versión de Obelisco.',
           <>
-            <p>
-              Versión actual:{' '}
-              <Link href="https://github.com/gcba/Obelisco-V2/releases" target="blank">
-                {versionPages.text}
-              </Link>
-            </p>
+            Versión actual:{' '}
+            <Link href="https://github.com/gcba/Obelisco-V2/releases" target="blank">
+              {versionPages.text}
+            </Link>
           </>,
         ]}
         divider={true}

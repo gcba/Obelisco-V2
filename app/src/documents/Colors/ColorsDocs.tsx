@@ -8,6 +8,8 @@ import {
   ALERT_COLORS,
   BACKGROUND_COLORS,
   BADGE_COLORS,
+  BADGE_COLORS_BG_SECONDARY,
+  BADGE_COLORS_BORDERS,
   BLOCKQUOTE_COLORS,
   blueArray,
   BORDER_COLORS,
@@ -292,7 +294,15 @@ const ColorsDocs: React.FC = () => {
       content: (
         <div>
           <p>Estos colores se utilizan únicamente dentro del componente de Etiqueta.</p>
+
+          <p className="text-md mt-4">Variables de fondos primarios</p>
           <PalletteTable arrayTableColors={BADGE_COLORS} />
+
+          <p className="text-md">Variables de fondos secundarios</p>
+          <PalletteTable arrayTableColors={BADGE_COLORS_BG_SECONDARY} />
+
+          <p className="text-md">Variables de bordes</p>
+          <PalletteTable arrayTableColors={BADGE_COLORS_BORDERS} />
         </div>
       ),
     },

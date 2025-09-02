@@ -768,6 +768,14 @@ const sections = [
           Las clases <code>.card-deck</code>, <code>.max-cards-2</code> y <code>.card-column</code> quedan deprecadas y
           se reemplazan por <code>.card-items-2</code>.
         </li>
+        <li>
+          Se crean las clases <code>{'.card-border-{direction}-{color}'}</code>
+          <br />
+          Donde <code>{'direction'}</code>, es el posicionamiento: <code>left</code> o <code>bottom</code>
+          <br />
+          Donde <code>{'color'}</code>, es la miscelánea de color: <code>purple</code>, <code>red</code>, <code>sky</code>,{' '}
+          <code>yellow</code>, <code>cyan</code> o <code>blue</code>
+        </li>
       </ul>
     ),
   },

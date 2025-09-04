@@ -826,3 +826,29 @@ export const TABLE_BUTTON_ICON = `
     </table>
 </div>
 `;
+
+export const TABLE_ACCESSIBILTY = `<div class="responsive-scroll" tabIndex="0">
+    <table class="table table-borderless" aria-describedby="Tabla">
+        <thead>
+            <tr>
+            <th scope="col" class="tb-number">Número</th>
+            <th scope="col" class="tb-text">
+              <span class="th-title">Título de la celda</span>
+              <span class="th-subtitle">Subtítulo de hasta 2 líneas donde se puede sumar contenido de soporte</span>
+            </th>
+            <th scope="col" class="tb-link">Enlace</th>
+            <th scope="col" class="tb-button">Botón</th>
+            <th scope="col" class="tb-check">Checkbox</th>
+            <th scope="col" class="tb-tag">Etiqueta</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td class="text-right">1</td>
+            <td>Juan</td>
+            <td>
+                <a href="#" target="_blank" rel="noreferrer">
+                Enlace predeterminado
+                </a>
+            </td>
+`;

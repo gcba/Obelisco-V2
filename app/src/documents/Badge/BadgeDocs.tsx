@@ -256,8 +256,8 @@ const BadgeDocs: React.FC = () => {
             <p className="text-xl">Cuándo no usar</p>
             <ul className="list-informative-bullet">
               <li>
-                Como llamada a la acción para dangeririgir a la persona usuaria a una nueva página, en ese caso utiliza
-                el componente <a href="https://gcba.github.io/Obelisco-V2/components/button">Botón</a>
+                Como llamada a la acción para redirigir a la persona usuaria a una nueva página, en ese caso utiliza el
+                componente <a href="https://gcba.github.io/Obelisco-V2/components/button">Botón</a>
               </li>
               <li>
                 Evitá usar las etiquetas estáticas e interactivas en una misma página ya que puede generar errores no
@@ -295,7 +295,7 @@ const BadgeDocs: React.FC = () => {
             <div className="col pe-3">
               <p className="text-xl">Clickeable</p>
               <p className="text-md">
-                Se utiliza para dangeririgir a la persona usuaria a otra página con contenido relacionado a la etiqueta.
+                Se utiliza para redirigir a la persona usuaria a otra página con contenido relacionado a la etiqueta.
               </p>
             </div>
             <div className="col ps-3">
@@ -387,8 +387,8 @@ const BadgeDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md">
-            Las etiquetas adoptan estilos pdangerefinidos según su función. Cada tipo aplica un set de variables de
-            color específicas que garantizan consistencia visual y una comunicación clara del contenido.
+            Las etiquetas adoptan estilos predefinidos según su función. Cada tipo aplica un set de variables de color
+            específicas que garantizan consistencia visual y una comunicación clara del contenido.
           </p>
           <div className="responsive-scroll mt-4" tabIndex={0}>
             <table className="table">
@@ -738,8 +738,8 @@ const BadgeDocs: React.FC = () => {
           <p className="text-xl mb-4">Texto en las etiquetas</p>
 
           <p className="text-md">
-            Las etiquetas deben ser breves, claras y estar dangeractadas siguiendo pautas de escritura. Evitá que el
-            texto se corte en varias líneas: lo ideal es que no superen los 20 caracteres.
+            Las etiquetas deben ser breves, claras y estar redactadas siguiendo pautas de escritura. Evitá que el texto
+            se corte en varias líneas: lo ideal es que no superen los 20 caracteres.
           </p>
         </>
       ),
@@ -804,15 +804,15 @@ const BadgeDocs: React.FC = () => {
     {
       subtitle: (
         <>
-          Pdangereterminado <i>(default)</i>
+          Predeterminado <i>(default)</i>
         </>
       ),
       content: (
         <>
-          <p className="text-md mb-4">Estado pdangereterminado de la etiqueta en una interfaz. </p>
+          <p className="text-md mb-4">Estado predeterminado de la etiqueta en una interfaz. </p>
           <Image
             src={`${basePath}/images/etiqueta/badge-estado-default.svg`}
-            alt="Estado pdangereterminado del boton"
+            alt="Estado predeterminado del boton"
             width="800"
             height="464"
             className="img-fluid"
@@ -927,8 +927,8 @@ const BadgeDocs: React.FC = () => {
           </SyntaxHighlighter>
           <p className="text-md mt-4 mb-3">
             Para las etiquetas interactivas usá el elemento <code>{'<a>'}</code> para que la etiqueta funcione como un
-            enlace que permita explorar contenido relacionado (por temática, categoría, etc.). Si la etiqueta
-            dangeririge, el atributo href debe ser válido y apuntar al destino correcto.
+            enlace que permita explorar contenido relacionado (por temática, categoría, etc.). Si la etiqueta redirige,
+            el atributo href debe ser válido y apuntar al destino correcto.
           </p>
           <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
             {BADGE_ACCESSIBLITY_2}

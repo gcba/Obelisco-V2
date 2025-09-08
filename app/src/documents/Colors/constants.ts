@@ -590,7 +590,7 @@ export const BADGE_COLORS: ColorTableArray[] = [
   {
     base: '$purple/700',
     hex: '#6D0099',
-    variable: '$bg-purple',
+    variable: '$bg-highlight',
     use: 'Es el color primario de fondo de la etiqueta destacada.',
   },
 ];

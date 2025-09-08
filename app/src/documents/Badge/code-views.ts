@@ -12,6 +12,11 @@ export const BADGE_ESTATICA_SECUNDARIA_CON_ICONO = `<span className="badge badge
 
 export const BADGE_ESTATICA_SECUNDARIA_SOLO_TEXTO = `<span class="badge badge-s-default">Etiqueta</span>`;
 
+export const BADGE_REMOVE = `<a href="#" class="badge badge-remove" target="_blank" rel="noopener noreferrer">
+  <i class="bx bx-x"></i>
+  <span>Etiqueta</span>
+</a>`;
+
 export const BADGE_SIZES = `<span className="badge badge-s-default badge-sm">Etiqueta</span>
 <span className="badge badge-s-default">Etiqueta</span>
 <span className="badge badge-s-default badge-lg">Etiqueta</span>`;

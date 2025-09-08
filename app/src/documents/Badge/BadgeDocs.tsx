@@ -20,6 +20,7 @@ import {
   BADGE_ESTATICA_PRIMARIA_SOLO_TEXTO,
   BADGE_ESTATICA_SECUNDARIA_CON_ICONO,
   BADGE_ESTATICA_SECUNDARIA_SOLO_TEXTO,
+  BADGE_REMOVE,
   BADGE_SELECT,
   BADGE_SIZES,
   //  BADGE_TYPES
@@ -204,7 +205,7 @@ const BadgeDocs: React.FC = () => {
     {
       title: 'Eliminables',
       content: (
-        <CodeBox codeHTML={BADGE_SIZES}>
+        <CodeBox codeHTML={BADGE_REMOVE}>
           <div className="row justify-content-center align-items-center gap-3">
             <div className="col-auto">
               <LinkClient className="badge badge-remove">
@@ -996,18 +997,6 @@ const BadgeDocs: React.FC = () => {
         title="Etiquetas"
         description={[
           'Las etiquetas se utilizan para identificar y categorizar la información dentro de una página proporcionando más detalles a los usuarios sobre el contenido que necesitan.',
-          <>
-            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del
-            componente podés{' '}
-            <a
-              href="https://gcba.github.io/estandares/componentes/etiquetas/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              visitar la documentación en Obelisco v.1
-            </a>
-            .
-          </>,
         ]}
       />
       <Tabs

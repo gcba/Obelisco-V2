@@ -164,6 +164,7 @@ $badge-primary-border-color: (
     }
   }
 }
+
 // Fin | Secundarias Clickeables, con y sin ícono -
 
 // Mixin base para todas las etiquetas. Estilos por default
@@ -301,6 +302,7 @@ a.badge-remove {
   &:hover,
   &.hover {
     background-color: $white;
+
     i {
       background-color: $slate-100;
       text-decoration: none;
@@ -331,6 +333,7 @@ a.badge-remove {
     }
   }
 }
+
 // Fin eliminable -
 
 // - Inicio Seleccionables
@@ -359,4 +362,5 @@ a.badge-select {
     text-decoration: none;
   }
 }
+
 // Fin Seleccionables -

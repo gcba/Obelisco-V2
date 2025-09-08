@@ -295,13 +295,13 @@ const ColorsDocs: React.FC = () => {
         <div>
           <p>Estos colores se utilizan únicamente dentro del componente de Etiqueta.</p>
 
-          <p className="text-md mt-4">Variables de fondos primarios</p>
+          <p className="text-md mt-4 fw-semibold">Variables de fondos primarios</p>
           <PalletteTable arrayTableColors={BADGE_COLORS} />
 
-          <p className="text-md">Variables de fondos secundarios</p>
+          <p className="text-md fw-semibold">Variables de fondos secundarios</p>
           <PalletteTable arrayTableColors={BADGE_COLORS_BG_SECONDARY} />
 
-          <p className="text-md">Variables de bordes</p>
+          <p className="text-md fw-semibold">Variables de bordes</p>
           <PalletteTable arrayTableColors={BADGE_COLORS_BORDERS} />
         </div>
       ),

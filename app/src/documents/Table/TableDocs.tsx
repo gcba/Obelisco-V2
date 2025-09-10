@@ -1140,7 +1140,7 @@ const SECTION_UX = [
         <p className="text-md mb-4">Ocupa 8 columnas de la grilla de Obelisco.</p>
 
         <Image
-          src={`${basePath}/images/tabla/tabla_tamanos.svg`}
+          src={`${basePath}/images/tabla/tabla_tamanos_2.svg`}
           alt="Tabla desktop al 75%"
           width="800"
           height="200"
@@ -1184,93 +1184,6 @@ const SECTION_UX = [
           height="200"
           className="img-fluid"
         />
-
-        <p className="text-xl mb-4" style={{ marginTop: '32px' }}>
-          Ejemplos de uso
-        </p>
-
-        <div>
-          <div className="max-items-2">
-            <div className="col pe-3">
-              <Image
-                src={`${basePath}/images/tabla/tabla_uso_icono_si.svg`}
-                alt="Cómo sí usar los íconos"
-                width="800"
-                height="200"
-                className="img-fluid"
-              />
-              <div className="d-flex pt-3">
-                <span className="material-symbols-rounded text-success">check</span>
-                <p className="mb-0 text-sm">
-                  Utilizar librerías que estén integradas a Obelisco, como Material Symbols o Boxicons.
-                </p>
-              </div>
-            </div>
-            <div className="col ps-3">
-              <Image
-                src={`${basePath}/images/tabla/tabla_uso_icono_no.svg`}
-                alt="Cómo no usar los íconos"
-                width="800"
-                height="200"
-                className="img-fluid"
-              />
-              <div className="d-flex pt-3">
-                <span className="material-symbols-rounded text-danger">check</span>
-                <p className="mb-0 text-sm">No utilizar íconos de librerías que no estén en Obelisco.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="list-informative">
-          <p className="text-lg">Posición</p>
-          <ul className="list-informative-bullet">
-            <li>
-              <strong>Ícono inicial</strong> <i>(leading icon)</i>: se posiciona antes de la etiqueta y sirve de
-              refuerzo visual. Esta posición se debe al orden de lectura de la persona usuaria.
-            </li>
-            <li>
-              <strong>Ícono final</strong> <i>(trailing icon)</i>: se posiciona luego de la etiqueta, y se utiliza en
-              botones con acciones que denotan continuidad. En este caso, es recomendable usar un ícono de flecha o de
-              chevrón.
-            </li>
-          </ul>
-        </div>
-
-        <p className="text-xl mb-4" style={{ marginTop: '32px' }}>
-          Ejemplos de uso
-        </p>
-
-        <div>
-          <div className="max-items-2">
-            <div className="col pe-3">
-              <Image
-                src={`${basePath}/images/tabla/tabla_uso_icono_2_si.svg`}
-                alt="Ejemplo de uso de cómo sí usar los íconos"
-                width="800"
-                height="200"
-                className="img-fluid"
-              />
-              <div className="d-flex pt-3">
-                <span className="material-symbols-rounded text-success">check</span>
-                <p className="mb-0">Utilizar solo 1 ícono de soporte, como ícono inicial o como ícono final.</p>
-              </div>
-            </div>
-            <div className="col ps-3">
-              <Image
-                src={`${basePath}/images/tabla/tabla_uso_icono_2_no.svg`}
-                alt="Ejemplo de uso de cómo no usar los íconos"
-                width="800"
-                height="200"
-                className="img-fluid"
-              />
-              <div className="d-flex pt-3">
-                <span className="material-symbols-rounded text-danger">check</span>
-                <p className="mb-0">No utilizar 2 íconos de soporte al mismo tiempo.</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </>
     ),
   },
@@ -1530,8 +1443,9 @@ const SPECS = [
         <p className="text-md mb-4" style={{ marginTop: '32px' }}>
           Las tablas se integran con otros componentes como filtros,{' '}
           <a href="https://gcba.github.io/Obelisco-V2/components/form-search">campo de búsqueda</a>,{' '}
-          <a href="https://gcba.github.io/Obelisco-V2/components/button">botones</a>,<a href="http://">desplegables</a>{' '}
-          y <a href="https://gcba.github.io/Obelisco-V2/components/pagination">paginado</a>, manteniendo los espaciados
+          <a href="https://gcba.github.io/Obelisco-V2/components/button">botones</a>,
+          <a href="https://gcba.github.io/Obelisco-V2/components/dropdown-sel">desplegables</a> y{' '}
+          <a href="https://gcba.github.io/Obelisco-V2/components/pagination">paginado</a>, manteniendo los espaciados
           correspondientes.
         </p>
 

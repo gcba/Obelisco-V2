@@ -74,12 +74,11 @@ export const documentationPages = [
 ];
 
 export const contenidos = [
-  { text: 'Contenidos', url: '/content', id: 1 },
-  { text: 'Comunicar con claridad', url: '/content/comunicar-con-claridad', id: 2 },
-  { text: 'Usos y convenciones de escritura', url: '/content/usos-y-convenciones', id: 3 },
-  { text: 'Pautas de escritura UX', url: '/content/pautas-de-escritura-ux', id: 4 },
-  { text: 'Cómo redactar una noticia', url: '/content/como-redactar-una-noticia', id: 5 },
-  { text: 'Escribir para la accesibilidad', url: '/content/escribir-para-la-accesibilidad', id: 6 },
+  { text: 'Comunicar con claridad', url: '/content/comunicar-con-claridad', id: 1 },
+  { text: 'Usos y convenciones de escritura', url: '/content/usos-y-convenciones', id: 2 },
+  { text: 'Pautas de escritura UX', url: '/content/pautas-de-escritura-ux', id: 3 },
+  { text: 'Cómo redactar una noticia', url: '/content/como-redactar-una-noticia', id: 4 },
+  { text: 'Escribir para la accesibilidad', url: '/content/escribir-para-la-accesibilidad', id: 5 },
 ];
 
 export const templates = [{ text: 'Plantillas', url: 'https://gcba.github.io/obelisco-demo/index.html', id: 1 }];

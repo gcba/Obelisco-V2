@@ -21,7 +21,6 @@ $aside-colors: (
 
 @mixin mask-size-cover {
   mask-size: cover;
-  mask-size: cover;
 }
 
 header.hero {
@@ -49,12 +48,10 @@ header.hero {
 
     &.wave::after {
       mask: $hero-wave-mobile-svg no-repeat bottom;
-      mask: $hero-wave-mobile-svg no-repeat bottom;
       @include mask-size-cover;
     }
 
     &.ripple::after {
-      mask: $hero-ripple-mobile-svg no-repeat bottom;
       mask: $hero-ripple-mobile-svg no-repeat bottom;
       @include mask-size-cover;
     }
@@ -101,12 +98,10 @@ header.hero {
 
       &.wave::after {
         mask: $hero-wave-svg no-repeat right;
-        mask: $hero-wave-svg no-repeat right;
         @include mask-size-cover;
       }
 
       &.ripple::after {
-        mask: $hero-ripple-svg no-repeat right;
         mask: $hero-ripple-svg no-repeat right;
         @include mask-size-cover;
       }

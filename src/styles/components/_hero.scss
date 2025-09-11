@@ -10,128 +10,128 @@ $content-colors: (
   'red': $red-300,
   'cyan': $cyan-400,
   'yellow': $yellow-300,
-	'purple': $purple-700,
+  'purple': $purple-700,
 );
 
-$muted-color: #D1D8E0;
+$muted-color: #d1d8e0;
 $aside-colors: (
-	'sky': $sky-900,
-	'muted': $muted-color,
+  'sky': $sky-900,
+  'muted': $muted-color,
 );
 
 @mixin mask-size-cover {
-	mask-size: cover;
-	-webkit-mask-size: cover;
+  mask-size: cover;
+  mask-size: cover;
 }
 
 header.hero {
-	display: flex;
-	flex-direction: column;
-	min-height: 500px;
-	background-color: $muted-color;
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+  background-color: $muted-color;
 
-	.content {
-		flex-grow: 1;
-		flex-shrink: 1;
-		position: relative;
-		padding: 2rem;
+  .content {
+    flex-grow: 1;
+    flex-shrink: 1;
+    position: relative;
+    padding: 2rem;
 
-		&::after {
-			content: '';
-			position: absolute;	
-			background: $muted-color;
-			z-index: 1;
-			right: 0;
-			width: 100%;
-			bottom: -64px;
-			height: 65px;
-		}
+    &::after {
+      content: '';
+      position: absolute;
+      background: $muted-color;
+      z-index: 1;
+      right: 0;
+      width: 100%;
+      bottom: -64px;
+      height: 65px;
+    }
 
-		&.wave::after {
-			mask: $hero-wave-mobile-svg no-repeat bottom;
-			-webkit-mask: $hero-wave-mobile-svg no-repeat bottom;
-			@include mask-size-cover;
-		}
+    &.wave::after {
+      mask: $hero-wave-mobile-svg no-repeat bottom;
+      mask: $hero-wave-mobile-svg no-repeat bottom;
+      @include mask-size-cover;
+    }
 
-		&.ripple::after {
-			mask: $hero-ripple-mobile-svg no-repeat bottom;	
-			-webkit-mask: $hero-ripple-mobile-svg no-repeat bottom;
-			@include mask-size-cover;
-		}
+    &.ripple::after {
+      mask: $hero-ripple-mobile-svg no-repeat bottom;
+      mask: $hero-ripple-mobile-svg no-repeat bottom;
+      @include mask-size-cover;
+    }
 
-		&.corner::after {
-			bottom: -39px;	
-			height: 40px;
-			border-radius: 0;
-			border-bottom-right-radius: 40px;
-		}
-	}
+    &.corner::after {
+      bottom: -39px;
+      height: 40px;
+      border-radius: 0;
+      border-bottom-right-radius: 40px;
+    }
+  }
 
-	.aside {
-		width: 100%;
-		min-height: 100px;
-		min-width: 100%;
-		max-height: 40%;
-		position: relative;
-		overflow: hidden;
-		background-color: #fff;
-	}
+  .aside {
+    width: 100%;
+    min-height: 100px;
+    min-width: 100%;
+    max-height: 40%;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+  }
 
-	@each $name, $color in $aside-colors {
-		.aside.#{$name} {
-			background-color: $color;
-		}
-	}
+  @each $name, $color in $aside-colors {
+    .aside.#{$name} {
+      background-color: $color;
+    }
+  }
 
-	@media (width >= 768px) {
-		min-height: 380px;
-		flex-direction: row;
-		padding-left: calc((100% - 720px) / 2 + 0.75rem);
+  @media (width >= 768px) {
+    min-height: 380px;
+    flex-direction: row;
+    padding-left: calc((100% - 720px) / 2 + 0.75rem);
 
-		.content {
-			padding: 0;
+    .content {
+      padding: 0;
 
-			&::after {
-				bottom: auto;
-				top: 0;
-				right: -54px;
-				width: 55px;
-				height: 100%;
-			}
+      &::after {
+        bottom: auto;
+        top: 0;
+        right: -54px;
+        width: 55px;
+        height: 100%;
+      }
 
-			&.wave::after {
-				mask: $hero-wave-svg no-repeat right;
-				-webkit-mask: $hero-wave-svg no-repeat right;
-				@include mask-size-cover;
-			}
+      &.wave::after {
+        mask: $hero-wave-svg no-repeat right;
+        mask: $hero-wave-svg no-repeat right;
+        @include mask-size-cover;
+      }
 
-			&.ripple::after {
-				mask: $hero-ripple-svg no-repeat right;
-				-webkit-mask: $hero-ripple-svg no-repeat right;
-				@include mask-size-cover;
-			}
+      &.ripple::after {
+        mask: $hero-ripple-svg no-repeat right;
+        mask: $hero-ripple-svg no-repeat right;
+        @include mask-size-cover;
+      }
 
-			&.corner::after {
-				height: 100%;
-				width: 80px;
-				right: -80px;
-				border-radius: 0;
-				border-top-right-radius: 80px;
-			}
-		}
+      &.corner::after {
+        height: 100%;
+        width: 80px;
+        right: -80px;
+        border-radius: 0;
+        border-top-right-radius: 80px;
+      }
+    }
 
-		.aside {
-			flex-shrink: 0;
-			flex-grow: 0;
-			width: auto;
-			min-width: 200px;
-			max-width: 40%;
-		}
-	}
+    .aside {
+      flex-shrink: 0;
+      flex-grow: 0;
+      width: auto;
+      min-width: 200px;
+      max-width: 40%;
+    }
+  }
 
-	@media (width >= 1200px) {
-		padding-left: calc((100% - 1140px) / 2 + 0.75rem);
-	}
+  @media (width >= 1200px) {
+    padding-left: calc((100% - 1140px) / 2 + 0.75rem);
+  }
 }
 
 @each $name, $color in $content-colors {

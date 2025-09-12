@@ -52,19 +52,19 @@ const VOZ_Y_TONO = [
         <p className="text-sm fw-semibold" style={{ marginBottom: '12px' }}>
           Ejemplos de este uso
         </p>
-        <div className="d-flex">
+        <div className="d-flex align-items-center">
           <span className="material-symbols-rounded text-danger">close</span>
           <p className="text-sm mb-0">Tenemos contenidos, propuestas y actividades.</p>
         </div>
-        <div className="d-flex pt-2">
+        <div className="d-flex align-items-center pt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">Conocé todos los contenidos, propuestas y actividades que tenemos para vos.</p>
         </div>
-        <div className="d-flex pt-2">
+        <div className="d-flex align-items-center pt-2">
           <span className="material-symbols-rounded text-danger">close</span>
           <p className="text-sm mb-0">¿Qué acción requiere?</p>
         </div>
-        <div className="d-flex pt-2">
+        <div className="d-flex align-items-center pt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">¿Qué tipo de solicitud necesitás hacer?</p>
         </div>
@@ -88,23 +88,23 @@ const VOZ_Y_TONO = [
         <p className="text-sm fw-semibold" style={{ marginBottom: '12px' }}>
           Ejemplos de este uso
         </p>
-        <div className="d-flex">
+        <div className="d-flex align-items-center">
           <span className="material-symbols-rounded text-danger">close</span>
           <p className="text-sm mb-0">
             Conocé, una por una, las diferentes colectividades que hay en la Ciudad de Buenos Aires.{' '}
           </p>
         </div>
-        <div className="d-flex pt-2">
+        <div className="d-flex align-items-center pt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">Conocé las colectividades de la Ciudad. </p>
         </div>
-        <div className="d-flex pt-2">
+        <div className="d-flex align-items-center pt-2">
           <span className="material-symbols-rounded text-danger">close</span>
           <p className="text-sm mb-0">
             Ingresá y completá el formulario para que puedas tramitar el Boleto estudiantil.{' '}
           </p>
         </div>
-        <div className="d-flex pt-2">
+        <div className="d-flex align-items-center pt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">Tramitá el Boleto estudiantil. </p>
         </div>
@@ -134,11 +134,11 @@ const LENGUAJE = [
         <p className="text-sm fw-semibold" style={{ marginBottom: '12px' }}>
           Ejemplos de este uso
         </p>
-        <div className="d-flex">
+        <div className="d-flex align-items-center">
           <span className="material-symbols-rounded text-danger">close</span>
           <p className="text-sm mb-0">Tu inscripción fue realizada correctamente</p>
         </div>
-        <div className="d-flex pt-2">
+        <div className="d-flex align-items-center pt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">Te inscribiste correctamente </p>
         </div>
@@ -150,11 +150,11 @@ const LENGUAJE = [
         <p className="text-sm fw-semibold" style={{ marginBottom: '12px' }}>
           Ejemplos de este uso
         </p>
-        <div className="d-flex">
+        <div className="d-flex align-items-center">
           <span className="material-symbols-rounded text-danger">close</span>
           <p className="text-sm mb-0">Has iniciado el trámite con éxito</p>
         </div>
-        <div className="d-flex pt-2">
+        <div className="d-flex align-items-center pt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">Iniciaste el trámite con éxito </p>
         </div>
@@ -198,7 +198,7 @@ const LENGUAJE = [
         <p className="text-sm fw-semibold" style={{ marginBottom: '12px' }}>
           Ejemplos de este uso
         </p>
-        <div className="d-flex pt-2">
+        <div className="d-flex align-items-center pt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">&quot;los emprendedores y emprendedoras&quot;.</p>
         </div>
@@ -213,7 +213,7 @@ const LENGUAJE = [
         <p className="text-sm fw-semibold" style={{ marginBottom: '12px' }}>
           Ejemplos de este uso
         </p>
-        <div className="d-flex pt-2">
+        <div className="d-flex align-items-center pt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">
             En una pieza titulada &quot;Día de maestro&quot; podemos acompañarla con una imagen que incluya a maestras y
@@ -230,11 +230,11 @@ const LENGUAJE = [
         <p className="text-sm fw-semibold" style={{ marginBottom: '12px' }}>
           Ejemplos de este uso
         </p>
-        <div className="d-flex pt-2">
+        <div className="d-flex align-items-center pt-2">
           <span className="material-symbols-rounded text-danger">close</span>
           <p className="text-sm mb-0">&quot;Bienvenidos a Buenos Aires&quot; </p>
         </div>
-        <div className="d-flex pt-2">
+        <div className="d-flex align-items-center pt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">&quot;Te damos la bienvenida a Buenos Aires&quot;</p>
         </div>
@@ -245,19 +245,19 @@ const LENGUAJE = [
         <p className="text-sm fw-semibold" style={{ marginBottom: '12px' }}>
           Ejemplos de este uso
         </p>
-        <div className="d-flex pt-2">
+        <div className="d-flex align-items-center pt-2">
           <span className="material-symbols-rounded text-danger">close</span>
           <p className="text-sm mb-0">Los vecinos de la Ciudad </p>
         </div>
-        <div className="d-flex pt-2">
+        <div className="d-flex align-items-center pt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">La ciudadanía </p>
         </div>
-        <div className="d-flex pt-2">
+        <div className="d-flex align-items-center pt-2">
           <span className="material-symbols-rounded text-danger">close</span>
           <p className="text-sm mb-0">Los usuarios </p>
         </div>
-        <div className="d-flex pt-2">
+        <div className="d-flex align-items-center pt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">Las personas usuarias </p>
         </div>
@@ -271,11 +271,11 @@ const LENGUAJE = [
         <p className="text-sm fw-semibold" style={{ marginBottom: '12px' }}>
           Ejemplos de este uso
         </p>
-        <div className="d-flex pt-2">
+        <div className="d-flex align-items-center pt-2">
           <span className="material-symbols-rounded text-danger">close</span>
           <p className="text-sm mb-0">Los que sacan la licencia de conducir </p>
         </div>
-        <div className="d-flex pt-2">
+        <div className="d-flex align-items-center pt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">Quienes sacan la licencia de conducir </p>
         </div>
@@ -289,11 +289,11 @@ const LENGUAJE = [
         <p className="text-sm fw-semibold" style={{ marginBottom: '12px' }}>
           Ejemplos de este uso
         </p>
-        <div className="d-flex pt-2">
+        <div className="d-flex align-items-center pt-2">
           <span className="material-symbols-rounded text-danger">close</span>
           <p className="text-sm mb-0">El usuario debe completar el formulario </p>
         </div>
-        <div className="d-flex pt-2">
+        <div className="d-flex align-items-center pt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">Completar el formulario</p>
         </div>
@@ -302,17 +302,17 @@ const LENGUAJE = [
         <p className="text-sm fw-semibold" style={{ marginBottom: '12px' }}>
           Ejemplos de este uso
         </p>
-        <div className="d-flex pt-2">
+        <div className="d-flex align-items-center pt-2">
           <span className="material-symbols-rounded text-danger">close</span>
           <p className="text-sm mb-0">Los usuarios deben… </p>
         </div>
-        <div className="d-flex pt-2">
+        <div className="d-flex align-items-center pt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">Se recomienda… </p>
         </div>
 
         <p className="text-xl mt-4">Usar Imágenes y material visual inclusivo </p>
-        <ul>
+        <ul className="list-informative-bullet">
           <li>
             Seleccionar fotografías e ilustraciones que representen la diversidad de géneros, edades y características
             físicas.
@@ -343,7 +343,7 @@ const LENGUAJE = [
         </p>
         <p className="text-sm fw-semibold mb-0">Ejemplos de este uso</p>
 
-        <div className="d-flex mt-2">
+        <div className="d-flex align-items-center mt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">
             &quot;El Hospital Santojanni inauguró su nueva guardia pediátrica, un espacio diseñado para brindar una
@@ -374,7 +374,7 @@ const LENGUAJE = [
           <strong>Palabras en inglés</strong>: no las uses, excepto nombres propios o términos específicos. En el caso
           de utilizar alguna palabra en inglés debe ir en cursiva y preferentemente con su traducción al castellano.{' '}
         </p>
-        <div className="d-flex mt-2">
+        <div className="d-flex align-items-center mt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">
             &quot;El Hospital Santojanni inauguró su nueva guardia pediátrica, un espacio diseñado para brindar una
@@ -408,10 +408,10 @@ const VERIFICACION_DE_ESCRITURA = [
     subtitle: 'Público objetivo ',
     content: (
       <>
-        <ul>
-          <li className="mb-3 mt-2">¿Nos preguntamos a quién está dirigido el texto? </li>
-          <li className="mb-3">¿Está claro el objetivo del texto? </li>
-          <li className="mb-3">¿Respondimos de forma precisa la información buscada por la persona usuaria? </li>
+        <ul className="list-informative-bullet">
+          <li>¿Nos preguntamos a quién está dirigido el texto? </li>
+          <li>¿Está claro el objetivo del texto? </li>
+          <li>¿Respondimos de forma precisa la información buscada por la persona usuaria? </li>
           <li>¿Sabemos qué tiene que hacer la persona usuaria después de leer la información brindada? </li>
         </ul>
       </>
@@ -421,15 +421,11 @@ const VERIFICACION_DE_ESCRITURA = [
     subtitle: 'Contenido y organización del texto ',
     content: (
       <>
-        <ul>
-          <li className="mb-3 mt-2">
-            ¿El texto responde a las famosas 5 W del periodismo? ¿Qué? ¿Quién? ¿Cuándo? ¿Dónde? ¿Por qué?{' '}
-          </li>
-          <li className="mb-3">
-            ¿Está organizado según la pirámide invertida? ¿Atiende primero lo esencial y luego lo secundario?{' '}
-          </li>
-          <li className="mb-3">¿Desarrollamos cada idea en un párrafo breve de no más de 5 líneas? </li>
-          <li className="mb-3">¿Hacemos un uso correcto de los signos de puntuación? </li>
+        <ul className="list-informative-bullet">
+          <li>¿El texto responde a las famosas 5 W del periodismo? ¿Qué? ¿Quién? ¿Cuándo? ¿Dónde? ¿Por qué? </li>
+          <li>¿Está organizado según la pirámide invertida? ¿Atiende primero lo esencial y luego lo secundario? </li>
+          <li>¿Desarrollamos cada idea en un párrafo breve de no más de 5 líneas? </li>
+          <li>¿Hacemos un uso correcto de los signos de puntuación? </li>
           <li>¿Incorporamos anclas visuales para facilitar el escaneo y la legibilidad? </li>
         </ul>
       </>
@@ -439,15 +435,15 @@ const VERIFICACION_DE_ESCRITURA = [
     subtitle: 'Lenguaje y vocabulario  ',
     content: (
       <>
-        <ul>
-          <li className="mb-3 mt-2">¿Usamos oraciones simples y directas?</li>
-          <li className="mb-3">
+        <ul className="list-informative-bullet">
+          <li>¿Usamos oraciones simples y directas?</li>
+          <li>
             ¿Utilizamos vocablos del español correctos, simples y precisos? ¿Qué tratamiento le dimos a las siglas?
           </li>
-          <li className="mb-3">¿Evitamos el uso de jerga y tecnicismos innecesarios? </li>
-          <li className="mb-3">¿Priorizamos la voz activa y los tiempos verbales simples? </li>
-          <li className="mb-3">¿Usamos un vocabulario sencillo y acorde al público objetivo? </li>
-          <li className="mb-3">¿El lenguaje es inclusivo, no sexista y sin sesgo de género? </li>
+          <li>¿Evitamos el uso de jerga y tecnicismos innecesarios? </li>
+          <li>¿Priorizamos la voz activa y los tiempos verbales simples? </li>
+          <li>¿Usamos un vocabulario sencillo y acorde al público objetivo? </li>
+          <li>¿El lenguaje es inclusivo, no sexista y sin sesgo de género? </li>
           <li>En caso de excepciones al lenguaje claro, ¿explicamos los conceptos de uso no habitual? </li>
         </ul>
       </>
@@ -457,9 +453,9 @@ const VERIFICACION_DE_ESCRITURA = [
     subtitle: 'Revisión final',
     content: (
       <>
-        <ul>
-          <li className="mb-3 mt-2">¿Validamos el documento para asegurarnos de que es claro y comprensible? </li>
-          <li className="mb-3">¿Redactamos desde el punto de vista de la persona usuaria? </li>
+        <ul className="list-informative-bullet">
+          <li>¿Validamos el documento para asegurarnos de que es claro y comprensible? </li>
+          <li>¿Redactamos desde el punto de vista de la persona usuaria? </li>
           <li>¿Podríamos haber presentado la información de otra forma aún más breve? </li>
         </ul>
       </>

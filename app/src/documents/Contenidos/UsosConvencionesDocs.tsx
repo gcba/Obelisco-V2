@@ -15,19 +15,19 @@ const sections = [
         <p className="text-sm fw-semibold" style={{ marginBottom: '12px' }}>
           Ejemplos de este uso
         </p>
-        <div className="d-flex">
+        <div className="d-flex align-items-center">
           <span className="material-symbols-rounded text-danger">close</span>
           <p className="text-sm mb-0">Completaste el formulario?</p>
         </div>
-        <div className="d-flex mt-2">
+        <div className="d-flex align-items-center mt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">¿Completaste el formulario?</p>
         </div>
-        <div className="d-flex mt-3">
+        <div className="d-flex align-items-center mt-3">
           <span className="material-symbols-rounded text-danger">close</span>
           <p className="text-sm mb-0">Gracias por inscribirte! </p>
         </div>
-        <div className="d-flex mt-2">
+        <div className="d-flex align-items-center mt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">¡Gracias por inscribirte!</p>
         </div>
@@ -37,11 +37,11 @@ const sections = [
           mayúscula inicial.
         </p>
         <p className="text-sm fw-semibold mt-3">Ejemplos de este uso</p>
-        <div className="d-flex mt-2">
+        <div className="d-flex align-items-center mt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">¿Completaste el formulario? Podés hacerlo desde nuestra página. </p>
         </div>
-        <div className="d-flex mt-2">
+        <div className="d-flex align-items-center mt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">¡Gracias por inscribirte! Pronto recibirás más información.</p>
         </div>
@@ -68,14 +68,14 @@ const sections = [
         <p className="text-sm fw-semibold" style={{ marginBottom: '12px' }}>
           Ejemplos de este uso
         </p>
-        <div className="d-flex mt-2">
+        <div className="d-flex align-items-start mt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">
             Escuchando y respetando a los demás descubrimos que somos más que una persona: somos un equipo que, desde
             sus diferencias, se potencia.{' '}
           </p>
         </div>
-        <div className="d-flex mt-2">
+        <div className="d-flex align-items-center mt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">Detectar: el móvil sanitario continúa con los testeos en Belgrano.</p>
         </div>
@@ -88,7 +88,7 @@ const sections = [
         <p className="text-sm fw-semibold" style={{ marginBottom: '12px' }}>
           Ejemplo de un caso excepcional en mayúscula{' '}
         </p>
-        <div className="d-flex mt-2">
+        <div className="d-flex align-items-start mt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">
             Dijo Luciana, participante de una nueva edición de la Game Jam Mujeres Digitales: &quot;Estamos en la
@@ -106,48 +106,48 @@ const sections = [
         <p className="text-sm fw-semibold" style={{ marginBottom: '12px' }}>
           Ejemplos de este uso
         </p>
-        <div className="d-flex">
+        <div className="d-flex align-items-center">
           <span className="material-symbols-rounded text-danger">close</span>
           <p className="text-sm mb-0">
             Pueden realizar hasta cincuenta viajes mensuales con un tope de 4 viajes diarios.{' '}
           </p>
         </div>
-        <div className="d-flex mt-2">
+        <div className="d-flex align-items-center mt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">Pueden realizar hasta 50 viajes mensuales con un tope de 4 viajes diarios.</p>
         </div>
-        <div className="d-flex mt-3">
+        <div className="d-flex align-items-center mt-3">
           <span className="material-symbols-rounded text-danger">close</span>
           <p className="text-sm mb-0">Tres de cada diez personas usan nuestro sistema.</p>
         </div>
-        <div className="d-flex mt-2">
+        <div className="d-flex align-items-center mt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">3 de cada 10 personas usan nuestro sistema.</p>
         </div>
 
-        <div className="d-flex mt-3">
+        <div className="d-flex align-items-center mt-3">
           <span className="material-symbols-rounded text-danger">close</span>
           <p className="text-sm mb-0">Conocé, 1 por 1, las colectividades de la Ciudad.</p>
         </div>
-        <div className="d-flex mt-2">
+        <div className="d-flex align-items-center mt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">Conocé, una por una, las colectividades de la Ciudad.</p>
         </div>
 
-        <div className="d-flex mt-3">
+        <div className="d-flex align-items-center mt-3">
           <span className="material-symbols-rounded text-danger">close</span>
           <p className="text-sm mb-0">Ciento cincuenta mil personas beneficiadas</p>
         </div>
-        <div className="d-flex mt-2">
+        <div className="d-flex align-items-center mt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">150.000 personas beneficiadas.</p>
         </div>
 
-        <div className="d-flex mt-3">
+        <div className="d-flex align-items-center mt-3">
           <span className="material-symbols-rounded text-danger">close</span>
           <p className="text-sm mb-0">Hoy- Ayer.</p>
         </div>
-        <div className="d-flex mt-2">
+        <div className="d-flex align-items-center mt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">19 de marzo de 2025.</p>
         </div>

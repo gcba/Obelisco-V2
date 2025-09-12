@@ -7,22 +7,22 @@ const sections = [
     firstTitle: true,
     content: (
       <>
-        <ul>
-          <li className="mb-3">
+        <ul className="list-informative-bullet">
+          <li>
             El título de una página debe tener relación con el enlace de donde proviene (acceso, banner, destacado,
             tarjeta, etc.){' '}
           </li>
-          <li className="mb-3">
+          <li>
             En los títulos de las páginas de área hablá como Gobierno y no como área, es decir, no debemos utilizar
             términos como «subsecretaría» o «ministerio», por ejemplo.
           </li>
           <li>
             En lo posible, no repetir palabras de la bajada (buscar sinónimos). Aquí tener en cuenta:
-            <ul>
+            <ul style={{ listStyleType: 'none' }}>
               <li className="mt-3 mb-3">
                 Debe tener la información más importante, dejando la secundaria y complementaria para la bajada.{' '}
               </li>
-              <li className="mb-3">
+              <li>
                 Debe considerarse el uso de <i>keywords</i> o palabras que puedan mejorar el posicionamiento en
                 buscadores como Google.{' '}
               </li>
@@ -36,7 +36,7 @@ const sections = [
         <p className="text-sm fw-semibold mt-3" style={{ marginBottom: '12px' }}>
           Ejemplos de este uso
         </p>
-        <div className="d-flex mt-2">
+        <div className="d-flex align-items-center mt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">
             BA Oportunidades realizó un taller de Marca Personal para personas con discapacidad.
@@ -49,19 +49,19 @@ const sections = [
     title: 'Resúmenes o bajadas ',
     content: (
       <>
-        <ul>
-          <li className="mb-3">Deben explicar de qué se trata toda la página de manera breve y concisa.</li>
-          <li className="mb-3">
-            Si tienen más de 2 líneas, se subdivide en oraciones, buscando que la información sea
+        <ul className="list-informative-bullet">
+          <li>Deben explicar de qué se trata toda la página de manera breve y concisa.</li>
+          <li>
+            Si tienen más de 2 líneas, se subdivide en oraciones, buscando que la información sea{' '}
             <strong>fácil y rápida de entender</strong> para el visitante.
           </li>
-          <li className="mb-3">
+          <li>
             Son <strong>obligatorios</strong> y su contenido indexa en las búsquedas de Google.
           </li>
-          <li className="mb-3">
+          <li>
             No deben repetir información mencionada en el título. La información complementa la utilizada en el título.
           </li>
-          <li className="mb-3">No contienen negritas, mayúsculas, ni hipervínculos. </li>
+          <li>No contienen negritas, mayúsculas, ni hipervínculos. </li>
           <li>
             Las bajadas deben tener como <strong>máximo 150 caracteres</strong>.
           </li>
@@ -70,7 +70,7 @@ const sections = [
         <p className="text-sm fw-semibold mt-3" style={{ marginBottom: '12px' }}>
           Ejemplos de este uso
         </p>
-        <div className="d-flex mt-2">
+        <div className="d-flex align-items-center mt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">
             El encuentro, dictado junto a Manpower, se llevó a cabo con el fin de fortalecer perfiles laborales y
@@ -95,13 +95,13 @@ const sections = [
     title: 'Negritas',
     content: (
       <>
-        <ul>
-          <li className="mb-3">
+        <ul className="list-informative-bullet">
+          <li>
             Utilizá la negrita para <strong>destacar ciertos términos</strong> que tienen mayor jerarquía en una
             oración. De este modo la persona escanea rápidamente el contenido de tu sitio y encuentra fácilmente lo que
             está buscando. No destacar todo el texto, elegir lo más relevante para el visitante.
           </li>
-          <li className="mb-3">
+          <li>
             <strong>No</strong> utilizamos negrita <strong>en las bajadas</strong> de las páginas o dentro de una cita;
             tampoco en combinación con hipervínculos.
           </li>
@@ -114,14 +114,14 @@ const sections = [
         <p className="text-sm fw-semibold mt-3" style={{ marginBottom: '12px' }}>
           Ejemplos de este uso
         </p>
-        <div className="d-flex mt-2">
+        <div className="d-flex align-items-start mt-2">
           <span className="material-symbols-rounded text-danger">close</span>
           <p className="text-sm mb-0">
             La fiesta del Gran Magal de Touba es la <strong>fiesta religiosa</strong> más importante de la colectividad
             senegalesa.
           </p>
         </div>
-        <div className="d-flex mt-2">
+        <div className="d-flex align-items-start mt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">
             La <strong>fiesta del Gran Magal de Touba</strong> es la fiesta religiosa más importante de la colectividad
@@ -150,28 +150,28 @@ const sections = [
           Son hipervínculos (links) que se usan en la página para que el vecino o la vecina pueda tener acceso a otras
           páginas dentro y fuera de ella. En la página, se ven como palabras subrayadas en color azul.
         </p>
-        <ul>
-          <li className="mb-3">Dirigí los enlaces siempre a una página existente. </li>
-          <li className="mb-3">Es preferible que sean largos a muy cortos.</li>
-          <li className="mb-3">Indexan en todos los motores de búsqueda, como Google, por eso debés incluirlos. </li>
-          <li className="mb-3">
+        <ul className="list-informative-bullet">
+          <li>Dirigí los enlaces siempre a una página existente. </li>
+          <li>Es preferible que sean largos a muy cortos.</li>
+          <li>Indexan en todos los motores de búsqueda, como Google, por eso debés incluirlos. </li>
+          <li>
             Se desaconsejan frases genéricas como «clic aquí» o «más información»; el texto debe tener sentido y
             clariﬁcar el enlace.
           </li>
-          <li className="mb-3">No uses negrita en los hipervínculos. </li>
+          <li>No uses negrita en los hipervínculos. </li>
           <li>No incluyas signos de puntuación en los enlaces. </li>
         </ul>
 
         <p className="text-sm fw-semibold mt-3" style={{ marginBottom: '12px' }}>
           Ejemplos de este uso
         </p>
-        <div className="d-flex mt-2">
+        <div className="d-flex align-items-center mt-2">
           <span className="material-symbols-rounded text-danger">close</span>
           <p className="text-sm mb-0">
             Para conocer más sobre la exposición, <a href="http://">ingresá acá.</a> 
           </p>
         </div>
-        <div className="d-flex mt-2">
+        <div className="d-flex align-items-center mt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">
             Ingresá para conocer la exposición 
@@ -202,15 +202,31 @@ const sections = [
         <p className="text-sm fw-semibold mt-3" style={{ marginBottom: '12px' }}>
           Ejemplos de este uso
         </p>
-        <div className="d-flex mt-2">
-          <span className="material-symbols-rounded text-success">check</span>
-          <p className="text-sm mb-0">Completá la solicitud con la siguiente información:</p>
-          {/* # Sí esto está mal, no pude lograr que se vea bien. Pendiente */}
-          <ul>
-            <li>Nombre y apellido</li>
-            <li>Domicilio</li>
-            <li>Correo electrónico</li>
-          </ul>
+        <div className="d-flex align-items-start mt-2">
+          <span
+            className="material-symbols-rounded text-success me-2"
+            style={{
+              fontSize: '1.5rem',
+              verticalAlign: 'middle',
+            }}
+          >
+            check
+          </span>
+          <div>
+            <p className="text-sm mb-0">Completá la solicitud con la siguiente información:</p>
+            <ul
+              className="mb-0"
+              style={{
+                marginTop: '0.25rem',
+                paddingLeft: '1.25rem',
+                listStyleType: 'disc',
+              }}
+            >
+              <li>Nombre y apellido</li>
+              <li>Domicilio</li>
+              <li>Correo electrónico</li>
+            </ul>
+          </div>
         </div>
       </>
     ),
@@ -219,7 +235,7 @@ const sections = [
     title: 'Horarios',
     content: (
       <>
-        <ul>
+        <ul className="list-informative-bullet">
           <li className="mb-3">Al referirnos a horarios utilizamos el símbolo h. acompañado de un punto ﬁnal.</li>
           <li className="mb-3">
             El símbolo puede incluirse en el último número; no es necesario incluirlo en ambos números.
@@ -229,20 +245,29 @@ const sections = [
         <p className="text-sm fw-semibold mt-3" style={{ marginBottom: '12px' }}>
           Ejemplos de este uso
         </p>
-        <div className="d-flex mt-2">
-          <span className="material-symbols-rounded text-success">check</span>
-          {/* # Sí esto está mal, no me detuve a lograr que se vea bien. Pendiente */}
-          <p className="text-sm mb-0">
-            Ambos circuitos están disponibles de lunes a viernes de 9:30 a 17:30 h. y un cupo máximo de 20 personas en
-            simultáneo.
-          </p>
-        </div>
-        <div className="d-flex mt-2">
-          <span className="material-symbols-rounded text-danger">close</span>
-          {/* # Pendiente */}
-          <p className="text-sm mb-0">Emergencias las 24 hs. los 365 días del año</p>
-          <span className="material-symbols-rounded text-success">check</span>
-          <p className="text-sm mb-0">Emergencias las 24 h. los 365 días del año</p>
+        <div className="d-flex flex-wrap row  gap-3">
+          {/* Columna izquierda */}
+          <div className="col d-flex align-items-start">
+            <div className="d-flex align-items-start mb-1">
+              <span className="material-symbols-rounded text-success">check</span>
+              <p className="text-sm mb-0 ms-2">
+                Ambos circuitos están disponibles de lunes a viernes de 9:30 a 17:30 h. y un cupo máximo de 20 personas
+                en simultáneo.
+              </p>
+            </div>
+          </div>
+
+          {/* Columna derecha */}
+          <div className="col d-flex flex-column gap-1">
+            <div className="d-flex align-items-center">
+              <span className="material-symbols-rounded text-danger">close</span>
+              <p className="text-sm mb-0 ms-2">Emergencias las 24 hs. los 365 días del año</p>
+            </div>
+            <div className="d-flex align-items-center">
+              <span className="material-symbols-rounded text-success">check</span>
+              <p className="text-sm mb-0 ms-2">Emergencias las 24 h. los 365 días del año</p>
+            </div>
+          </div>
         </div>
       </>
     ),
@@ -257,29 +282,23 @@ const sections = [
         </p>
         <p className="text-sm fw-semibold mb-3">Las mayúsculas se usan:</p>
 
-        <ul>
-          <li className="mb-3">Al principio de una oración.</li>
-          <li className="mb-3">
-            Para nombres propios. Por ejemplo: &quot;Ministerio de Educación&quot;, &quot;María Pérez&quot;.
-          </li>
-          <li className="mb-3">En términos como «Ciudad», «Gobierno», «Comunas» cuando se refieren a Buenos Aires.</li>
-          <li className="mb-3">
-            En nombre de programas. Por ejemplo: &quot;Buenos Aires Aprende&quot;, &quot;Talento Tech&quot;.
-          </li>
+        <ul className="list-informative-bullet">
+          <li>Al principio de una oración.</li>
+          <li>Para nombres propios. Por ejemplo: &quot;Ministerio de Educación&quot;, &quot;María Pérez&quot;.</li>
+          <li>En términos como «Ciudad», «Gobierno», «Comunas» cuando se refieren a Buenos Aires.</li>
+          <li>En nombre de programas. Por ejemplo: &quot;Buenos Aires Aprende&quot;, &quot;Talento Tech&quot;.</li>
           <li className="mb-4">Para escribir siglas. Por ejemplo: &quot;M.J.G.G.C.&quot;</li>
         </ul>
 
         <p className="text-sm fw-semibold mb-3">Las minúsculas se usan:</p>
 
-        <ul>
-          <li className="mb-3">Después de dos puntos a menos que armes una lista de elementos. </li>
-          <li className="mb-3">En los días, meses y estaciones del año, excepto las efemérides. </li>
-          <li className="mb-4">
-            En los cargos de funcionarios y funcionarias. Por ejemplo: &quot;ministra de Educación&quot;.{' '}
-          </li>
+        <ul className="list-informative-bullet">
+          <li>Después de dos puntos a menos que armes una lista de elementos. </li>
+          <li>En los días, meses y estaciones del año, excepto las efemérides. </li>
+          <li>En los cargos de funcionarios y funcionarias. Por ejemplo: &quot;ministra de Educación&quot;. </li>
         </ul>
 
-        <p className="text-md">
+        <p className="text-md mt-4">
           <strong>Importante:</strong> nunca escribir TODO EN MAYÚSCULAS; dificulta la lectura y por convención web,
           sería como gritar o levantar la voz.
         </p>
@@ -303,7 +322,7 @@ const sections = [
         </p>
 
         <p className="text-sm fw-semibold mb-2">Ejemplos de este uso</p>
-        <div className="d-flex">
+        <div className="d-flex align-items-center">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">Recuperar mi contraseña </p>
         </div>
@@ -316,7 +335,7 @@ const sections = [
         </p>
 
         <p className="text-sm fw-semibold mb-2">Ejemplos de este uso</p>
-        <div className="d-flex">
+        <div className="d-flex align-items-center">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">Recuperar mi contraseña </p>
         </div>
@@ -341,10 +360,10 @@ const sections = [
           relevante tiene que estar presente en el título, la bajada y las primeras palabras de la izquierda del cuerpo
           del texto. Esto lo logramos generando anclas visuales como:{' '}
         </p>
-        <ul>
-          <li className="mb-2">Negritas</li>
-          <li className="mb-2">Citas</li>
-          <li className="mb-2">Viñetas </li>
+        <ul className="list-informative-bullet">
+          <li>Negritas</li>
+          <li>Citas</li>
+          <li>Viñetas </li>
           <li>Subtítulos</li>
         </ul>
       </>

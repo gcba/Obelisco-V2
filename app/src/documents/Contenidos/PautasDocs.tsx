@@ -70,7 +70,7 @@ const sections = [
         <p className="text-sm fw-semibold mt-3" style={{ marginBottom: '12px' }}>
           Ejemplos de este uso
         </p>
-        <div className="d-flex align-items-center mt-2">
+        <div className="d-flex align-items-start mt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">
             El encuentro, dictado junto a Manpower, se llevó a cabo con el fin de fortalecer perfiles laborales y

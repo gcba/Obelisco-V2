@@ -49,7 +49,7 @@ const sections = [
         <p className="text-sm fw-semibold" style={{ marginBottom: '12px' }}>
           Ejemplos de este uso
         </p>
-        <div className="d-flex align-items-start">
+        <div className="d-flex align-items-center">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">
             &quot;El sistema permitirá que las personas usuarias gestionen turnos en línea de manera rápida y

@@ -1,11 +1,5 @@
-// import Image from 'next/image';
 import React from 'react';
-// import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-// import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-// const basePath = '/Obelisco-V2';
-// import CodeBox from '@/components/CodeBox';
-// import LinkClient from '@/components/LinkClient';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
@@ -37,7 +31,7 @@ const VOZ_Y_TONO = [
     content: (
       <>
         <p className="text-md">
-          El tono es la forma en que usamos la voz, es decir, cómo hablamos. Este debe ser cercano, conciso y directo.
+          El tono es la forma en que usamos la voz, es decir, cómo hablamos. Este debe ser cercano, conciso y directo.
         </p>
 
         <p className="text-md fw-semibold" style={{ marginBottom: '12px' }}>
@@ -70,12 +64,12 @@ const VOZ_Y_TONO = [
         </div>
 
         <p className="text-md mt-3">
-          Hay una excepción al uso del &quot;voseo&quot; y es la redacción de 
+          Hay una excepción al uso del &quot;voseo&quot; y es la redacción de
           <a href="https://www.figma.com/proto/10hu568n1Vbugniv2rKGdL/An%C3%A1lisis-de-componentes-%7C-2025?page-id=9517%3A1319&node-id=10732-3542&viewport=-418%2C-1063%2C0.22&t=ig8U1wgLsMyxjOW0-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=10876%3A10570">
             noticias
           </a>
-           en el que se mantiene el estilo objetivo, en tercera persona. Esta función es necesaria sobre todo en
-          situaciones de crisis en la que debe adoptarse un estilo neutro y estrictamente informativo.{' '}
+          en el que se mantiene el estilo objetivo, en tercera persona. Esta función es necesaria sobre todo en
+          situaciones de crisis en la que debe adoptarse un estilo neutro y estrictamente informativo.{' '}
         </p>
 
         <p className="text-md fw-semibold">Corto y directo</p>
@@ -343,7 +337,7 @@ const LENGUAJE = [
         </p>
         <p className="text-sm fw-semibold mb-0">Ejemplos de este uso</p>
 
-        <div className="d-flex align-items-center mt-2">
+        <div className="d-flex align-items-start mt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">
             &quot;El Hospital Santojanni inauguró su nueva guardia pediátrica, un espacio diseñado para brindar una
@@ -351,7 +345,7 @@ const LENGUAJE = [
           </p>
         </div>
         <p className="text-md mt-3">
-          También se lo utiliza en la redacción de noticias, con mayor énfasis en temas  de crisis o vulnerabilidad
+          También se lo utiliza en la redacción de noticias, con mayor énfasis en temas de crisis o vulnerabilidad
           institucional.{' '}
         </p>
       </>
@@ -374,19 +368,15 @@ const LENGUAJE = [
           <strong>Palabras en inglés</strong>: no las uses, excepto nombres propios o términos específicos. En el caso
           de utilizar alguna palabra en inglés debe ir en cursiva y preferentemente con su traducción al castellano.{' '}
         </p>
-        <div className="d-flex align-items-center mt-2">
+        <div className="d-flex align-items-start mt-2">
           <span className="material-symbols-rounded text-success">check</span>
           <p className="text-sm mb-0">
-            &quot;El Hospital Santojanni inauguró su nueva guardia pediátrica, un espacio diseñado para brindar una
-            atención más segura, rápida y confortable a niñas, niños y adolescentes de la Ciudad&quot;.
+            &quot;Buenos Aires continúa posicionándose como una ciudad global que conecta ideas, talento e innovación
+            con el mundo. Comenzó el <i>South American Business Forum</i> (Foro Sudamericano de Negocios), un evento
+            internacional que reúne a jóvenes de todo el planeta para debatir, pensar y proyectar nuevos modelos de
+            liderazgo.&quot;
           </p>
         </div>
-        <p className="text-md mt-3">
-          &quot;Buenos Aires continúa posicionándose como una ciudad global que conecta ideas, talento e innovación con
-          el mundo. Comenzó el <i>South American Business Forum</i> (Foro Sudamericano de Negocios), un evento
-          internacional que reúne a jóvenes de todo el planeta para debatir, pensar y proyectar nuevos modelos de
-          liderazgo.&quot;
-        </p>
       </>
     ),
   },
@@ -432,7 +422,7 @@ const VERIFICACION_DE_ESCRITURA = [
     ),
   },
   {
-    subtitle: 'Lenguaje y vocabulario  ',
+    subtitle: 'Lenguaje y vocabulario  ',
     content: (
       <>
         <ul className="list-informative-bullet">
@@ -450,7 +440,7 @@ const VERIFICACION_DE_ESCRITURA = [
     ),
   },
   {
-    subtitle: 'Revisión final',
+    subtitle: 'Revisión final',
     content: (
       <>
         <ul className="list-informative-bullet">

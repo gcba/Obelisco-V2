@@ -1321,6 +1321,7 @@ const SPECS = [
                 className="img-fluid mb-2"
               />
               <p className="text-md">De texto</p>
+              <p className="text-sm">(Máximo de 105 caracteres permitidos)</p>
             </div>
             <div className="col d-flex flex-column align-items-center">
               <Image
@@ -1443,7 +1444,7 @@ const SPECS = [
         <p className="text-md mb-4" style={{ marginTop: '32px' }}>
           Las tablas se integran con otros componentes como filtros,{' '}
           <a href="https://gcba.github.io/Obelisco-V2/components/form-search">campo de búsqueda</a>,{' '}
-          <a href="https://gcba.github.io/Obelisco-V2/components/button">botones</a>,
+          <a href="https://gcba.github.io/Obelisco-V2/components/button">botones</a>,{' '}
           <a href="https://gcba.github.io/Obelisco-V2/components/dropdown-sel">desplegables</a> y{' '}
           <a href="https://gcba.github.io/Obelisco-V2/components/pagination">paginado</a>, manteniendo los espaciados
           correspondientes.
@@ -1677,14 +1678,6 @@ const TableDocs: React.FC = () => {
         title="Tablas"
         description={[
           'La tabla muestra datos organizados y estructurados en filas y columnas. Se utiliza para categorizar y comparar contenido relacionado. Este componente permite escanear más fácilmente información compleja.',
-          <>
-            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del
-            componente podés{' '}
-            <a href="https://gcba.github.io/estandares/componentes/tabla/" target="_blank" rel="noopener noreferrer">
-              visitar la documentación en Obelisco v.1
-            </a>
-            .
-          </>,
         ]}
       />
       <Tabs

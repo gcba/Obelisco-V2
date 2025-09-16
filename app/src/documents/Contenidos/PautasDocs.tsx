@@ -193,7 +193,7 @@ const sections = [
     content: (
       <>
         <p className="text-md">Nos permiten listar y organizar todo tipo de contenidos:</p>
-        <ul>
+        <ul className="list-informative-bullet">
           <li className="mb-3">Usalas para hacer listas que muestran etapas o grupos de información.</li>
           <li className="mb-3">Incluí una introducción para dar contexto a ese grupo de información.</li>
           <li>Enumerá cada etapa si el orden de la lista es importante.</li>

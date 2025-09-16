@@ -12,7 +12,7 @@ const sections = [
           <strong>No usamos signos de admiración, ni de interrogación.</strong>
         </p>
 
-        <ul>
+        <ul className="list-informative-bullet">
           <li className="mb-3">
             Longitud: entre <strong>50 y 70 caracteres</strong> (ideal para buscadores y redes sociales).
           </li>
@@ -40,7 +40,7 @@ const sections = [
           <strong>Tampoco debemos usar negritas, cursivas o hipervínculos en el resumen.</strong> 
         </p>
 
-        <ul>
+        <ul className="list-informative-bullet">
           <li className="mb-3">
             Longitud: entre <strong>90 y 150 caracteres</strong>.
           </li>
@@ -79,7 +79,7 @@ const sections = [
           siguientes lo menos relevante. El contenido debe tener anclas visuales (negritas, hipervínculos, botones,
           citas) para facilitar la lectura de las personas usuarias. 
         </p>
-        <ul>
+        <ul className="list-informative-bullet">
           <li className="mb-3">
             <strong>Primer párrafo:</strong> resume lo esencial: qué, quién, cuándo, dónde, por qué (las &quot;5
             W&quot;). Extensión recomendada: 4 o 5 líneas como máximo.

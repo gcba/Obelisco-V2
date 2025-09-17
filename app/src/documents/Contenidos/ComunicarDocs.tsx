@@ -16,8 +16,8 @@ const VOZ_Y_TONO = [
         <div className="list-informative">
           <ul className="list-informative-bullet">
             <li>
-              <strong>Participativa</strong>: Buscamos empatía pensando el contenido para nuestros visitantes, facilitando
-              la interacción. Es importante que se sientan partícipes en todo el recorrido digital.
+              <strong>Participativa</strong>: Buscamos empatía pensando el contenido para nuestros visitantes,
+              facilitando la interacción. Es importante que se sientan partícipes en todo el recorrido digital.
             </li>
             <li>
               <strong>Simple y clara</strong>: La persona usuaria tiene que entender el contenido que le presentamos

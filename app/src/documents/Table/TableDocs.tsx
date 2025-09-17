@@ -1126,7 +1126,7 @@ const SECTION_UX = [
     subtitle: 'Desktop',
     content: (
       <>
-        <p className="text-md mb-4">Ocupa el ancho total de la grilla de 12 columnas de Obelisco.</p>
+        <p className="text-md mb-4">La tabla al 100% ocupa el ancho total de la grilla de 12 columnas de Obelisco.</p>
 
         <Image
           src={`${basePath}/images/tabla/tabla_tamanos.svg`}
@@ -1137,7 +1137,7 @@ const SECTION_UX = [
           style={{ marginBottom: '32px' }}
         />
 
-        <p className="text-md mb-4">Ocupa 8 columnas de la grilla de Obelisco.</p>
+        <p className="text-md mb-4">Cuando la tabla se encuentra al 75%, ocupa 8 columnas de la grilla de Obelisco.</p>
 
         <Image
           src={`${basePath}/images/tabla/tabla_tamanos_2.svg`}

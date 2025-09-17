@@ -212,6 +212,18 @@ const BadgeDocs: React.FC = () => {
                 <i className="bx bx-x"></i>
                 <span>Etiqueta</span>
               </LinkClient>
+              <LinkClient className="badge badge-remove hover">
+                <i className="bx bx-x"></i>
+                <span>Etiqueta</span>
+              </LinkClient>
+              <LinkClient className="badge badge-remove focus">
+                <i className="bx bx-x"></i>
+                <span>Etiqueta</span>
+              </LinkClient>
+              <LinkClient className="badge badge-remove disabled">
+                <i className="bx bx-x"></i>
+                <span>Etiqueta</span>
+              </LinkClient>
             </div>
           </div>
         </CodeBox>
@@ -223,9 +235,18 @@ const BadgeDocs: React.FC = () => {
         <CodeBox codeHTML={BADGE_SELECT}>
           <div className="row justify-content-center align-items-center gap-3">
             <div className="col-auto">
-              <LinkClient className="badge badge-select">
-                <span>Etiqueta</span>
-              </LinkClient>
+              <span className="badge badge-select" tabIndex={0}>
+                Etiqueta
+              </span>
+              <span className="badge badge-select hover" tabIndex={0}>
+                Etiqueta
+              </span>
+              <span className="badge badge-select focus" tabIndex={0}>
+                Etiqueta
+              </span>
+              <span className="badge badge-select disabled" tabIndex={0}>
+                Etiqueta
+              </span>
             </div>
           </div>
         </CodeBox>

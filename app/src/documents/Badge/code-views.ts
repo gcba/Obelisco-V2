@@ -15,6 +15,11 @@ export const BADGE_ESTATICA_SECUNDARIA_SOLO_TEXTO = `<span class="badge badge-s-
 export const BADGE_REMOVE = `<a href="#" class="badge badge-remove" target="_blank" rel="noopener noreferrer">
   <i class="bx bx-x"></i>
   <span>Etiqueta</span>
+</a>
+// Disabled
+<a href="#" class="badge badge-remove disabled" target="_blank" rel="noopener noreferrer">
+  <i class="bx bx-x"></i>
+  <span>Etiqueta</span>
 </a>`;
 
 export const BADGE_SIZES = `<span className="badge badge-s-default badge-sm">Etiqueta</span>
@@ -59,9 +64,13 @@ export const BADGE_APARIENCIA = ` // Primarias
 <span class="badge badge-s-purple">Etiqueta</span>
 `;
 
-export const BADGE_SELECT = `<a href="#" class="badge badge-select" target="_blank" rel="noopener noreferrer">
-  <span>Etiqueta</span>
-</a>`;
+export const BADGE_SELECT = `<span className="badge badge-select" tabIndex={0}>
+  Etiqueta
+</span>
+// Disabled
+<span className="badge badge-select disabled" tabIndex={0}>
+  Etiqueta
+</span>`;
 
 export const BADGE_TYPES = `// Default
 <a href="#" class="badge badge-default">

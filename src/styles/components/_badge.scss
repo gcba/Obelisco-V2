@@ -337,7 +337,7 @@ a.badge-remove {
 // Fin eliminable -
 
 // - Inicio Seleccionables
-a.badge-select {
+.badge-select {
   @include badge-select-remove-base;
   background-color: $white;
   border: 1px solid $blue-900;
@@ -345,7 +345,7 @@ a.badge-select {
 
   &:hover,
   &.hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   &:active,
@@ -357,9 +357,10 @@ a.badge-select {
 
   &:focus,
   &.focus {
-    background-color: $white;
-    color: $blue-900;
+    background-color: $sky-900;
+    color: $white;
     text-decoration: none;
+    box-shadow: 0 0 0 0.125rem $blue-900;
   }
 }
 

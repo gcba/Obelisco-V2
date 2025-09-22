@@ -103,6 +103,10 @@ const sections = [
     title: 'Uso de símbolos numerales ',
     content: (
       <>
+        <p className="text-md">
+          Usalos para números, no texto. Excepto para casos en los que se habla de pronombres «uno/una» o «unos/unas».{' '}
+        </p>
+
         <p className="text-sm fw-semibold" style={{ marginBottom: '12px' }}>
           Ejemplos de este uso
         </p>
@@ -159,7 +163,7 @@ const UsosConvencionesDocs: React.FC = () => {
   return (
     <>
       <ComponentHeader
-        title="Sobre Obelisco"
+        title="Usos y convenciones de escritura"
         description={['Conocé los estándares básicos y necesarios para escribir los contenidos en tu sitio web.']}
         divider={true}
       />

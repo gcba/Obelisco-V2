@@ -276,10 +276,6 @@ const sections = [
     title: 'Uso de las mayúsculas y minúsculas',
     content: (
       <>
-        <p className="text-md">
-          La cursiva se utiliza tanto para dar énfasis como para advertir al lector de que una palabra o una frase puede
-          no resultarle familiar, ya sea porque es extranjera o porque forma parte de una jerga.
-        </p>
         <p className="text-sm fw-semibold mb-3">Las mayúsculas se usan:</p>
 
         <ul className="list-informative-bullet">
@@ -337,7 +333,7 @@ const sections = [
         <p className="text-sm fw-semibold mb-2">Ejemplos de este uso</p>
         <div className="d-flex align-items-center">
           <span className="material-symbols-rounded text-success">check</span>
-          <p className="text-sm mb-0">Recuperar mi contraseña </p>
+          <p className="text-sm mb-0">Recuperar tu contraseña </p>
         </div>
       </>
     ),

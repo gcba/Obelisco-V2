@@ -26,15 +26,12 @@ const sections = [
           <li>Se redactan dos versiones: la original y la adaptada a la lectura fácil</li>
           <li>Se aplica a todo tipo de textos, incluida la literatura</li>
           <li>Requiere validación </li>
-          <li>Es posible eliminar información no relevante</li>
-          <li>Se redactan dos versiones: la original y la adaptada a la lectura fácil</li>
-          <li>Se aplica a todo tipo de textos, incluida la literatura</li>
         </ul>
       </>
     ),
   },
   {
-    title: '¿Qué podemos hacer para aplicar la lectura fácil?  ',
+    subtitle: '¿Qué podemos hacer para aplicar la lectura fácil?  ',
     content: (
       <>
         <p className="text-sm fw-semibold mt-3" style={{ marginBottom: '12px' }}>

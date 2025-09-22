@@ -64,7 +64,12 @@ interface TabsProps {
 }
 
 const Tabs: React.FC<TabsProps> = ({ sectionUx, sectionDev, customSections }) => {
-  const [activeTab, setActiveTab] = useState(sectionUx ? 'panel-content-ux' : 'panel-content-dev');
+  const [activeTab, setActiveTab] = useState(() => {
+    if (sectionUx) return 'panel-content-ux';
+    if (sectionDev) return 'panel-content-dev';
+    if (customSections?.length) return `panel-content-${customSections[0].id}`;
+    return '';
+  });
 
   return (
     <div>

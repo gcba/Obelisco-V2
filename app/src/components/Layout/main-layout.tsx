@@ -73,6 +73,14 @@ export const documentationPages = [
   { text: 'Versionados', url: '/documentation/releases', id: 4 },
 ];
 
+export const contenidos = [
+  { text: 'Comunicar con claridad', url: '/content/comunicar-con-claridad', id: 1 },
+  { text: 'Usos y convenciones de escritura', url: '/content/usos-y-convenciones', id: 2 },
+  { text: 'Pautas de escritura UX', url: '/content/pautas-de-escritura-ux', id: 3 },
+  { text: 'Cómo redactar una noticia', url: '/content/como-redactar-una-noticia', id: 4 },
+  { text: 'Escribir para la accesibilidad', url: '/content/escribir-para-la-accesibilidad', id: 5 },
+];
+
 export const templates = [{ text: 'Plantillas', url: 'https://gcba.github.io/obelisco-demo/index.html', id: 1 }];
 
 export const patterns = [{ text: 'Construir un formulario', url: '/patterns', id: 1 }];
@@ -139,6 +147,15 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                 <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Documentación</p>
               </div>
               <NavLayout items={documentationPages} />
+            </div>
+          )}
+
+          {pathname.includes('/content') && (
+            <div className="nav-left sticky-nav h-auto">
+              <div className="nav-left-box-title">
+                <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Documentación</p>
+              </div>
+              <NavLayout items={contenidos} />
             </div>
           )}
         </div>

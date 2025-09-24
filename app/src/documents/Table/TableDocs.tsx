@@ -1476,8 +1476,8 @@ const ACCESSIBILITY = [
           El componente de tabla está construido para ser reconocido por herramientas de asistencia como la navegación
           por teclado o lectores por voz.
         </p>
-        <span className="badge badge-default ms-1">TAB</span>
-        <span className="badge badge-default">ENTER</span>
+        <span className="badge badge-s-default ms-1">TAB</span>
+        <span className="badge badge-s-default">ENTER</span>
         <p className="text-md mb-4">
           Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Además, con el{' '}
           <i>enter</i>, puede accionar los elementos sobre el item en el que la persona está posicionada.

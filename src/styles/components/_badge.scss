@@ -326,6 +326,7 @@ a.badge-remove {
       text-decoration: none;
       box-shadow: $focus-box-shadow-subtle;
       border-radius: 2px;
+      cursor: pointer;
     }
 
     span {
@@ -361,6 +362,7 @@ a.badge-remove {
     color: $white;
     text-decoration: none;
     box-shadow: 0 0 0 0.125rem $blue-900;
+    cursor: pointer;
   }
 }
 

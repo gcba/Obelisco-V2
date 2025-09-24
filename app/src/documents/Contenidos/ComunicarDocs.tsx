@@ -66,10 +66,10 @@ const VOZ_Y_TONO = [
         </div>
 
         <p className="text-md mt-3">
-          Hay una excepción al uso del &quot;voseo&quot; y es la redacción de
+          Hay una excepción al uso del &quot;voseo&quot; y es la redacción de{' '}
           <a href="https://www.figma.com/proto/10hu568n1Vbugniv2rKGdL/An%C3%A1lisis-de-componentes-%7C-2025?page-id=9517%3A1319&node-id=10732-3542&viewport=-418%2C-1063%2C0.22&t=ig8U1wgLsMyxjOW0-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=10876%3A10570">
             noticias
-          </a>
+          </a>{' '}
           en el que se mantiene el estilo objetivo, en tercera persona. Esta función es necesaria sobre todo en
           situaciones de crisis en la que debe adoptarse un estilo neutro y estrictamente informativo.{' '}
         </p>
@@ -161,18 +161,21 @@ const LENGUAJE = [
     title: 'Lenguaje inclusivo',
     content: (
       <>
-        <p className="text-md mb-4">
+        <p className="text-md mb-2">
           Para evitar el lenguaje sexista, el sesgo de género y la reproducción de estereotipos en el lenguaje tratamos
           de hacer uso de frases y expresiones más neutras e inclusivas.
-          <br />
+        </p>
+        <p className="text-md mb-2">
           Se trata de repensar la comunicación de manera tal que incluya a todas las personas. Preguntarnos a quiénes
           incluimos en nuestros contenidos (y a quiénes dejamos afuera) y de qué forma lo hacemos es una buena manera de
           empezar.
-          <br />
+        </p>
+        <p className="text-md mb-2">
           En esta tarea, desaconsejamos el uso de la &quot;@&quot;, la &quot;x&quot; o la &quot;e&quot; ya que, por más
           que surgen con una intención incluyente, no son accesibles para los lectores de pantalla y entorpecen la
           lectura.
-          <br />
+        </p>
+        <p className="text-md mb-2">
           Acá te dejamos una serie de recomendaciones de escritura para llevarlo a la práctica.
         </p>
 
@@ -478,7 +481,7 @@ const ComunicarDocs: React.FC = () => {
             sectionContent: LENGUAJE,
           },
           {
-            title: 'Verificacion de escritura',
+            title: 'Verificación de escritura',
             id: 'section-verificacion_de_escritura',
             sectionContent: VERIFICACION_DE_ESCRITURA,
           },

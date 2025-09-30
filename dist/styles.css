@@ -18901,13 +18901,16 @@ header.hero .aside {
   overflow: hidden;
   background-color: #fff;
 }
+header.hero .aside.sky-900 {
+  background-color: #002733;
+}
 header.hero .aside.dark {
   background-color: #002733;
 }
 header.hero .aside.muted {
   background-color: #d1d8e0;
 }
-@media (width >= 576px) {
+@media (width <= 768px) {
   header.hero .content::after {
     bottom: -29px;
     height: 30px;
@@ -18926,10 +18929,10 @@ header.hero .aside.muted {
   header.hero {
     min-height: 380px;
     flex-direction: row;
-    padding-left: calc((100% - 720px) / 2 + 0.75rem);
+    padding-left: 2rem;
   }
   header.hero .content {
-    padding: 0;
+    padding: 2rem;
   }
   header.hero .content::after {
     bottom: auto;
@@ -18960,6 +18963,11 @@ header.hero .aside.muted {
 @media (width >= 1200px) {
   header.hero {
     padding-left: calc((100% - 1140px) / 2 + 0.75rem);
+  }
+}
+@media (width >= 1440px) {
+  header.hero {
+    padding-left: calc((100% - 1440px) / 2 + 0.75rem);
   }
 }
 

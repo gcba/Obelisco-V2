@@ -3,7 +3,7 @@
 
 import { usePathname } from 'next/navigation';
 
-import NavLayout from './Navigation/nav';
+// import NavLayout from './Navigation/nav';
 
 export const stylesPages = [
   { text: 'Colores', url: '/components/colors', id: 1 },
@@ -42,21 +42,23 @@ export const componentsPages = [
   { text: 'Enlace', url: '/components/link', id: 12 },
   { text: 'Etiquetas', url: '/components/badge', id: 13 },
   { text: 'Galería', url: '/components/gallery', id: 14 },
-  { text: 'Lista de enlaces', url: '/components/list-link', id: 15 },
-  { text: 'Lista de pasos', url: '/components/list-step', id: 16 },
-  { text: 'Lista informativa', url: '/components/list-informative', id: 17 },
-  { text: 'Mapa', url: '/components/map', id: 18 },
-  { text: 'Mensaje de estado', url: '/components/status-message', id: 19 },
-  { text: 'Migas de pan', url: '/components/breadcrumb', id: 20 },
-  { text: 'Modal', url: '/components/modal', id: 21 },
-  { text: 'Navegación horizontal', url: '/components/nav-horizontal', id: 22 },
-  { text: 'Navegación vertical', url: '/components/nav-vertical', id: 23 },
-  { text: 'Paginado', url: '/components/pagination', id: 24 },
-  { text: 'Pestañas', url: '/components/tabs', id: 25 },
-  { text: 'Spinner', url: '/components/spinner', id: 26 },
-  { text: 'Switch', url: '/components/switch', id: 27 },
-  { text: 'Tarjetas', url: '/components/cards', id: 28 },
-  { text: 'Tooltip', url: '/components/tooltip', id: 29 },
+  { text: 'Hero', url: '/components/hero', id: 15 },
+  { text: 'Hero Template', url: '/components/hero-template', id: 15 },
+  { text: 'Lista de enlaces', url: '/components/list-link', id: 16 },
+  { text: 'Lista de pasos', url: '/components/list-step', id: 17 },
+  { text: 'Lista informativa', url: '/components/list-informative', id: 18 },
+  { text: 'Mapa', url: '/components/map', id: 19 },
+  { text: 'Mensaje de estado', url: '/components/status-message', id: 20 },
+  { text: 'Migas de pan', url: '/components/breadcrumb', id: 21 },
+  { text: 'Modal', url: '/components/modal', id: 22 },
+  { text: 'Navegación horizontal', url: '/components/nav-horizontal', id: 23 },
+  { text: 'Navegación vertical', url: '/components/nav-vertical', id: 24 },
+  { text: 'Paginado', url: '/components/pagination', id: 25 },
+  { text: 'Pestañas', url: '/components/tabs', id: 26 },
+  { text: 'Spinner', url: '/components/spinner', id: 27 },
+  { text: 'Switch', url: '/components/switch', id: 28 },
+  { text: 'Tarjetas', url: '/components/cards', id: 29 },
+  { text: 'Tooltip', url: '/components/tooltip', id: 30 },
 ];
 
 export const gettingPages = [
@@ -91,7 +93,7 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   ) : (
     <div className="container custom-layout-container">
       <div className="row v-height-100" style={{ paddingTop: '32px' }}>
-        <div className="col-3 d-none d-xl-block pe-0">
+        {/* <div className="col-3 d-none d-xl-block pe-0">
           {pathname.includes('/components') && (
             <div className="nav-left sticky-nav pb-1">
               <div className="nav-left-box-title">
@@ -141,8 +143,8 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
               <NavLayout items={documentationPages} />
             </div>
           )}
-        </div>
-        <div className="col-12 col-xl-9 custom-col-9-desktop">{children}</div>
+        </div> */}
+        <div className="col-12 col-xl-12 custom-col-9-desktop">{children}</div>
       </div>
     </div>
   );

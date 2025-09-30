@@ -320,6 +320,13 @@ pre {
   width: 200%;
 }
 
+// Contenedor para mostrar variante 'Banner del GCBA' de componente header
+.header-box-sizing_hero-header {
+  transform: scale(0.5);
+  transform-origin: top left;
+  width: 200%;
+}
+
 //Visualizacion de Destacado en codebox
 .highlighted-box-sizing {
   transform: scale(0.6);

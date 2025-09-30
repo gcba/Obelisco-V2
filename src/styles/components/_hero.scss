@@ -66,6 +66,10 @@ header.hero {
     position: relative;
     overflow: hidden;
     background-color: #fff;
+    
+    &.sky-900 {
+      background-color: $sky-900;
+    }
   }
 
   @each $name, $color in $aside-colors {
@@ -74,7 +78,7 @@ header.hero {
     }
   }
 
-  @media (width >= 576px) {
+  @media (width <= 768px) {
     .content {
       &::after {
         bottom: -29px;
@@ -97,10 +101,10 @@ header.hero {
   @media (width >= 768px) {
     min-height: 380px;
     flex-direction: row;
-    padding-left: calc((100% - 720px) / 2 + 0.75rem);
+    padding-left: 2rem;
 
     .content {
-      padding: 0;
+      padding: 2rem;
 
       &::after {
         bottom: auto;
@@ -135,6 +139,10 @@ header.hero {
 
   @media (width >= 1200px) {
     padding-left: calc((100% - 1140px) / 2 + 0.75rem);
+  }
+
+  @media (width >= 1440px) {
+    padding-left: calc((100% - 1440px) / 2 + 0.75rem);
   }
 }
 

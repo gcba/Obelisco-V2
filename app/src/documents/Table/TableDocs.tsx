@@ -85,7 +85,7 @@ const SECTIONS_DEV = [
                       </div>
                     </td>
                     <td>
-                      <span className="badge badge-default">Texto predeterminado</span>
+                      <span className="badge badge-s-default badge-sm">Texto predeterminado</span>
                     </td>
                   </tr>
                   <tr>
@@ -114,7 +114,7 @@ const SECTIONS_DEV = [
                       </div>
                     </td>
                     <td>
-                      <span className="badge badge-danger">Texto predeterminado</span>
+                      <span className="badge badge-s-info badge-sm">Texto predeterminado</span>
                     </td>
                   </tr>
                   <tr>
@@ -143,7 +143,7 @@ const SECTIONS_DEV = [
                       </div>
                     </td>
                     <td>
-                      <span className="badge badge-info">Texto predeterminado</span>
+                      <span className="badge badge-s-success badge-sm">Texto predeterminado</span>
                     </td>
                   </tr>
                   <tr>
@@ -172,7 +172,7 @@ const SECTIONS_DEV = [
                       </div>
                     </td>
                     <td>
-                      <span className="badge badge-warning">Texto predeterminado</span>
+                      <span className="badge badge-s-warning badge-sm">Texto predeterminado</span>
                     </td>
                   </tr>
                 </tbody>
@@ -239,7 +239,7 @@ const SECTIONS_DEV = [
                     </div>
                   </td>
                   <td>
-                    <span className="badge badge-default">Texto predeterminado</span>
+                    <span className="badge badge-s-default badge-sm-default badge-sm">Texto predeterminado</span>
                   </td>
                 </tr>
                 <tr>
@@ -268,7 +268,7 @@ const SECTIONS_DEV = [
                     </div>
                   </td>
                   <td>
-                    <span className="badge badge-success">Texto predeterminado</span>
+                    <span className="badge badge-s-info badge-sm">Texto predeterminado</span>
                   </td>
                 </tr>
                 <tr>
@@ -297,7 +297,7 @@ const SECTIONS_DEV = [
                     </div>
                   </td>
                   <td>
-                    <span className="badge badge-info">Texto predeterminado</span>
+                    <span className="badge badge-s-success badge-sm">Texto predeterminado</span>
                   </td>
                 </tr>
                 <tr>
@@ -326,7 +326,7 @@ const SECTIONS_DEV = [
                     </div>
                   </td>
                   <td>
-                    <span className="badge badge-warning">Texto predeterminado</span>
+                    <span className="badge badge-s-warning badge-sm">Texto predeterminado</span>
                   </td>
                 </tr>
               </tbody>
@@ -392,7 +392,7 @@ const SECTIONS_DEV = [
                     </div>
                   </td>
                   <td>
-                    <span className="badge badge-default">Texto predeterminado</span>
+                    <span className="badge badge-s-default badge-sm">Texto predeterminado</span>
                   </td>
                 </tr>
                 <tr>
@@ -421,7 +421,7 @@ const SECTIONS_DEV = [
                     </div>
                   </td>
                   <td>
-                    <span className="badge badge-warning">Texto predeterminado</span>
+                    <span className="badge badge-s-info badge-sm">Texto predeterminado</span>
                   </td>
                 </tr>
                 <tr>
@@ -450,7 +450,7 @@ const SECTIONS_DEV = [
                     </div>
                   </td>
                   <td>
-                    <span className="badge badge-info">Texto predeterminado</span>
+                    <span className="badge badge-s-success badge-sm">Texto predeterminado</span>
                   </td>
                 </tr>
                 <tr>
@@ -479,7 +479,7 @@ const SECTIONS_DEV = [
                     </div>
                   </td>
                   <td>
-                    <span className="badge badge-danger">Texto predeterminado</span>
+                    <span className="badge badge-s-danger badge-sm">Texto predeterminado</span>
                   </td>
                 </tr>
               </tbody>
@@ -836,7 +836,7 @@ const SECTIONS_DEV = [
                   <td>Texto predeterminado</td>
                   <td>Texto predeterminado</td>
                   <td>
-                    <span className="badge badge-default">Texto predeterminado</span>
+                    <span className="badge badge-s-default badge-sm-default badge-sm">Texto predeterminado</span>
                   </td>
                 </tr>
                 <tr>
@@ -845,7 +845,7 @@ const SECTIONS_DEV = [
                   <td>Texto predeterminado</td>
                   <td>Texto predeterminado</td>
                   <td>
-                    <span className="badge badge-danger">Texto predeterminado</span>
+                    <span className="badge badge-s-default badge-sm">Texto predeterminado</span>
                   </td>
                 </tr>
                 <tr>
@@ -854,7 +854,7 @@ const SECTIONS_DEV = [
                   <td>Texto predeterminado</td>
                   <td>Texto predeterminado</td>
                   <td>
-                    <span className="badge badge-info">Texto predeterminado</span>
+                    <span className="badge badge-s-default badge-sm">Texto predeterminado</span>
                   </td>
                 </tr>
                 <tr>
@@ -863,7 +863,7 @@ const SECTIONS_DEV = [
                   <td>Texto predeterminado</td>
                   <td>Texto predeterminado</td>
                   <td>
-                    <span className="badge badge-success">Texto predeterminado</span>
+                    <span className="badge badge-s-default badge-sm">Texto predeterminado</span>
                   </td>
                 </tr>
               </tbody>
@@ -1476,8 +1476,8 @@ const ACCESSIBILITY = [
           El componente de tabla está construido para ser reconocido por herramientas de asistencia como la navegación
           por teclado o lectores por voz.
         </p>
-        <span className="badge badge-default ms-1">TAB</span>
-        <span className="badge badge-default">ENTER</span>
+        <span className="badge badge-s-default ms-1">TAB</span>
+        <span className="badge badge-s-default">ENTER</span>
         <p className="text-md mb-4">
           Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Además, con el{' '}
           <i>enter</i>, puede accionar los elementos sobre el item en el que la persona está posicionada.

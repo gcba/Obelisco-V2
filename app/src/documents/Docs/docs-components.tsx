@@ -373,6 +373,56 @@ const sections = [
     title: 'Etiquetas',
     content: (
       <ul className="docs-list">
+        <p className="text-md mb-2">
+          De la versión <strong>1.7.0</strong> en adelante, son estas clases:
+        </p>
+        <li>
+          Se crearon nuevas clases para etiquetas:
+          <ul>
+            {/* Estáticas */}
+            <li>
+              <code>.badge-p-color</code>
+            </li>
+            <li>
+              <code>.badge-s-color</code>
+            </li>
+            {/* Estáticas */}
+            {/* Clickeables */}
+            <li>
+              <code>.badge-p-link-color</code>
+            </li>
+            <li>
+              <code>.badge-s-link-color</code>
+            </li>
+            {/* Clickeables */}
+          </ul>
+          <li>Se crearon nuevas clases para tamaños:</li>
+          <ul>
+            {/* Tamaños */}
+            <li>
+              <code>.badge-sm</code>
+            </li>
+            <li>
+              <code>.badge-lg</code>
+            </li>
+            {/* Tamaños */}
+          </ul>
+          <li>Se crearon nuevas Etiquetas. Seleccionables y Eliminables:</li>
+          <ul>
+            {/* Tamaños */}
+            <li>
+              <code>.badge-remove</code>
+            </li>
+            <li>
+              <code>.badge-select</code>
+            </li>
+            {/* Tamaños */}
+          </ul>
+        </li>
+
+        <p className="text-md mt-4 mb-2">
+          De la versión <strong>1.6.1</strong> para abajo, son estas clases:
+        </p>
         <li>
           Se crean las clases <code>.badge-default</code> y <code>.badge-warning</code>.{' '}
         </li>

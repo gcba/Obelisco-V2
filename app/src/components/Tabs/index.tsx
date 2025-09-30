@@ -55,8 +55,10 @@ interface CustomSectionProps {
   id: string;
   title: string;
   subtitle?: string;
+  tertiarytitle?: string;
   content?: React.ReactNode;
 }
+
 interface TabsProps {
   sectionUx?: Section[];
   sectionDev?: Section[];
@@ -93,9 +95,7 @@ const Tabs: React.FC<TabsProps> = ({ sectionUx, sectionDev, customSections }) =>
             ))}
         </ul>
       </nav>
-
       <hr className="mt-0 mb-4" />
-
       <div className="tab-content" style={{ paddingTop: '32px' }}>
         {sectionUx && (
           <TabPanel id={`panel-content-ux`} activeTab={activeTab}>

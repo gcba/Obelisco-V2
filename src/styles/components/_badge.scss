@@ -2,67 +2,370 @@
 $badge-color: $body-color;
 $badge-separation: 0.5rem;
 
-$badge-theme-color: (
-  default: $blue-900,
-  success: $success,
-  info: $info,
-  warning: $warning,
-  danger: $danger,
-);
+// - Inicio | Variables Etiquetas primarias
 
-$badge-bg-theme-color: (
-  default: $slate-50,
+$badge-secondary-bg: (
+  default: $slate-100,
+  info: $sky-50,
   success: $green-50,
   danger: $red-50,
   warning: $orange-50,
-  info: $sky-50,
+  highlight: $purple-50,
 );
 
-// Custom variables and mixins
-@mixin badge-variant-custom($color, $value) {
-  color: $badge-color;
-  background-color: map-get($badge-bg-theme-color, $color);
-  outline: 0.0625rem solid map-get($badge-theme-color, $color);
+$badge-secondary-font-color: (
+  default: $badge-color,
+  info: $sky-800,
+  success: $green-900,
+  danger: $red-900,
+  warning: $orange-900,
+  highlight: $purple-800,
+);
 
-  @at-root a#{&} {
-    &:hover,
-    &.hover {
-      color: $blue-700;
-      outline: 0.125rem solid $blue-700;
-      background-color: map-get($badge-bg-theme-color, $color);
-      text-decoration: underline;
-      text-decoration-thickness: 2px;
+$badge-secondary-hover-bg: (
+  default: $blue-200,
+  info: $sky-100,
+  success: $green-100,
+  danger: $red-100,
+  warning: $orange-100,
+  highlight: $purple-100,
+);
+
+// Fin | Variables Etiquetas primarias -
+
+// - Inicio | Variables Etiquetas secundarias
+
+$badge-primary-bg: (
+  default: $slate-800,
+  info: $sky-700,
+  success: $green-700,
+  danger: $red-700,
+  warning: $orange-700,
+  highlight: $purple-700,
+);
+
+$badge-primary-border-color: (
+  default: $slate-900,
+  info: $sky-800,
+  success: $green-800,
+  danger: $red-800,
+  warning: $orange-800,
+  highlight: $purple-800,
+);
+
+// - Fin | Variables Etiquetas secundarias -
+
+// Primarias Estaticas, con y sin ícono
+
+@mixin badge-secondary-static($color-name) {
+  color: map-get($badge-secondary-font-color, $color-name);
+  background-color: map-get($badge-secondary-bg, $color-name);
+  border-radius: 8px;
+}
+
+// Secundarias Estaticas, con y sin ícono
+
+@mixin badge-primary-static($color-name-primary-secondary) {
+  color: $white;
+  background-color: map-get($badge-primary-bg, $color-name-primary-secondary);
+  border-radius: 8px;
+}
+
+// - Inicio | Primarias Clickeables, con y sin ícono
+
+@mixin badge-secondary-link($color-name) {
+  $original-color: map-get($badge-secondary-font-color, $color-name);
+  border: 1px solid $original-color;
+  color: $original-color;
+  background-color: map-get($badge-secondary-bg, $color-name);
+  text-decoration: none;
+  cursor: pointer;
+  
+  i {
+    color: $original-color;
+    text-decoration: none;
+  }
+
+  &:hover,
+  &.hover {
+    border: 1px solid $original-color;
+    color: $original-color;
+    background-color: map-get($badge-secondary-hover-bg, $color-name);
+    text-decoration: none;
+
+    i {
+      color: $original-color;
+      text-decoration: none;
     }
 
-    &:focus,
-    &.focus {
-      background-color: map-get($badge-bg-theme-color, $color);
-      box-shadow: $focus-box-shadow;
-      outline: $outline-transparent;
-      color: $body-color;
+    span {
+      text-decoration: underline;
+    }
+  }
+
+  &:focus,
+  &.focus {
+    box-shadow: $focus-box-shadow-subtle;
+    background-color: map-get($badge-secondary-bg, $color-name);
+    color: $original-color;
+    text-decoration: none;
+    border: 1px solid transparent;
+
+    i {
+      color: $original-color;
       text-decoration: none;
     }
   }
 }
 
-// Custom styles
-.badge {
-  @extend .text-sm; //fs 14px, lh 20px, fw 400
-  color: $badge-color;
+// Fin | Primarias Clickeables, con y sin ícono -
+
+// - Inicio | Secundarias Clickeables, con y sin ícono
+@mixin badge-primary-link($color-name) {
+  $original-color: map-get($badge-secondary-font-color, $color-name);
+  $original-border-color: map-get($badge-primary-border-color, $color-name);
+  border: 1px solid $original-border-color;
+  background-color: map-get($badge-primary-bg, $color-name);
   text-decoration: none;
-  text-transform: uppercase;
-  min-height: 1.5rem;
+  color: $white;
+  cursor: pointer;
+
+  i {
+    color: $white;
+    text-decoration: none;
+  }
+
+  &:hover,
+  &.hover {
+    border: 1px solid $original-border-color;
+    color: $white;
+    background-color: map-get($badge-primary-border-color, $color-name);
+    text-decoration: none;
+
+    i {
+      color: $white;
+      text-decoration: none;
+    }
+
+    span {
+      text-decoration: underline;
+    }
+  }
+
+  &:focus,
+  &.focus {
+    box-shadow: $focus-box-shadow-subtle;
+    background-color: map-get($badge-primary-bg, $color-name);
+    color: $white;
+    text-decoration: none;
+    border: 1px solid transparent;
+
+    i {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}
+
+// Fin | Secundarias Clickeables, con y sin ícono -
+
+// Mixin base para todas las etiquetas. Estilos por default
+
+@mixin badge-base {
+  text-decoration: none;
+  height: 24px;
+  min-height: 24px;
   max-width: 100%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   margin-right: $badge-separation;
-  border-radius: $border-radius-lg; //8px
-  padding: 0.125rem 0.25rem; //2px 4px
-}
+  border-radius: $border-radius-lg;
+  padding: 4px 8px;
+  line-height: 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
 
-@each $color, $value in $badge-theme-color {
-  .badge-#{$color} {
-    @include badge-variant-custom($color, $value);
+  &:focus,
+  &.focus {
+    border: 1px solid transparent;
+    box-shadow: $focus-box-shadow-subtle;
   }
 }
+
+// Usa @badge-base. Acá se definen las clases de los tamaños
+
+.badge {
+  --bs-badge-font-weight: initial;
+  --bs-badge-font-size: initial;
+  all: unset;
+
+  @include badge-base;
+
+  &.badge-sm {
+    @extend .text-sm;
+    padding: 2px 8px;
+    height: 20px;
+    min-height: 20px;
+    line-height: 20px;
+  }
+
+  &.badge-lg {
+    @extend .text-lg;
+    padding: 8px;
+    height: 24px;
+    min-height: 24px;
+  }
+}
+
+// Primarias Estaticas, con y sin ícono.badge-p-default, .badge-p-info
+
+@each $color-name, $color-value in $badge-secondary-bg {
+  .badge-s-#{$color-name} {
+    @include badge-secondary-static($color-name);
+  }
+}
+
+// Primarias Clickeables, con y sin ícono .badge-p-link-default, .badge-p-link-info
+
+@each $color-name, $color-value in $badge-secondary-font-color {
+  a.badge-s-link-#{$color-name} {
+    @include badge-secondary-link($color-name);
+  }
+}
+
+// Secundarias Estaticas, con y sin ícono.badge-s-default, .badge-s-info
+
+@each $color-name, $color-value in $badge-primary-bg {
+  .badge-p-#{$color-name} {
+    @include badge-primary-static($color-name);
+  }
+}
+
+// Secundarias Clickeables, con y sin ícono .badge-s-link-default, .badge-s-link-info
+
+@each $color-name, $color-value in $badge-secondary-font-color {
+  a.badge-p-link-#{$color-name} {
+    @include badge-primary-link($color-name);
+  }
+}
+
+// - Inicio Mixin para seleccionables y eliminables
+
+@mixin badge-select-remove-base {
+  @include badge-base;
+  background-color: $white;
+  border: 1px solid $blue-900;
+  color: $blue-900;
+
+  &:hover,
+  &.hover {
+    background-color: $slate-100;
+    color: $blue-900;
+  }
+
+  &.disabled {
+    background-color: $slate-100;
+    color: $disabled-text;
+    border-color: $disabled-text;
+    text-decoration: none;
+    pointer-events: none;
+  }
+}
+
+// Fin Mixin para seleccionables y eliminables -
+
+// - Inicio eliminable
+a.badge-remove {
+  @include badge-select-remove-base;
+
+  i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    font-size: 1.5rem;
+    line-height: 1;
+    overflow: hidden;
+    font-style: normal;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+
+  &.badge-lg i {
+    width: 20px;
+    height: 20px;
+    font-size: 2rem;
+    padding: 2px;
+  }
+
+  &:hover,
+  &.hover {
+    background-color: $white;
+
+    i {
+      background-color: $slate-100;
+      text-decoration: none;
+      border-radius: 2px;
+    }
+
+    span {
+      text-decoration: none;
+    }
+  }
+
+  &:focus,
+  &.focus {
+    background-color: $white;
+    color: $blue-900;
+    text-decoration: none;
+    box-shadow: none;
+    border: 1px solid $blue-900;
+
+    i {
+      text-decoration: none;
+      box-shadow: $focus-box-shadow-subtle;
+      border-radius: 2px;
+    }
+
+    span {
+      text-decoration: none;
+    }
+  }
+}
+
+// Fin eliminable -
+
+// - Inicio Seleccionables
+.badge-select {
+  @include badge-select-remove-base;
+  background-color: $white;
+  border: 1px solid $blue-900;
+  color: $blue-900;
+  cursor: pointer;
+
+  &:hover,
+  &.hover {
+    text-decoration: none;
+  }
+
+  &:active,
+  &.active {
+    background-color: $blue-900;
+    color: $white;
+    text-decoration: none;
+  }
+
+  &:focus,
+  &.focus {
+    background-color: $sky-900;
+    color: $white;
+    text-decoration: none;
+    box-shadow: 0 0 0 0.125rem $blue-900;
+  }
+}
+
+// Fin Seleccionables -

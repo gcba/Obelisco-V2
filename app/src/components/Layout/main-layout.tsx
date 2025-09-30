@@ -77,7 +77,7 @@ export const contenidos = [
   { text: 'Comunicar con claridad', url: '/content/comunicar-con-claridad', id: 1 },
   { text: 'Usos y convenciones de escritura', url: '/content/usos-y-convenciones', id: 2 },
   { text: 'Pautas de escritura UX', url: '/content/pautas-de-escritura-ux', id: 3 },
-  { text: 'Cómo redactar una noticia', url: '/content/como-redactar-una-noticia', id: 4 },
+  { text: 'Redactar una noticia', url: '/content/como-redactar-una-noticia', id: 4 },
   { text: 'Escribir para la accesibilidad', url: '/content/escribir-para-la-accesibilidad', id: 5 },
 ];
 

@@ -18910,6 +18910,12 @@ header.hero .aside.dark {
 header.hero .aside.muted {
   background-color: #d1d8e0;
 }
+@media (width < 576px) {
+  header.hero .w-sm-100 {
+    width: 100%;
+    display: block;
+  }
+}
 @media (width <= 768px) {
   header.hero .content::after {
     bottom: -29px;

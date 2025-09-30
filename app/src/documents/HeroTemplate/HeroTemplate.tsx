@@ -3,9 +3,7 @@ import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 
 const sections = [
   {
-    title: 'Instalación con npm',
-    description:
-      'Para instalar la librería de componentes Obelisco V2 en tu proyecto, puedes utilizar cualquiera de los siguientes gestores de paquetes:',
+    title: '4/4 Variante color default con 2 botones',
     content: (
       <div className="col-12">
         <header className="hero">
@@ -22,14 +20,154 @@ const sections = [
               </nav>
 
               <div>
-                <h1 className="mb-3">Este es un encabezado de página que contiene hasta 2 líneas de texto.</h1>
+                <h1 className="mb-3">Encabezado de la página</h1>
                 <p className="lead m-0">
                   Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la
                   convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
                 </p>
               </div>
 
-              <div className="d-grid d-sm-grid d-md-flex flew-wrap column-gap-2 row-gap-4">
+              <div className="d-grid d-sm-grid d-md-flex flex-wrap column-gap-2 row-gap-4">
+                <div className="form-wrapper " style={{ minWidth: '580px', maxWidth: '580px' }}>
+                  <form className="form-group position-relative" role="search" aria-label="Buscar en el sitio">
+                    <label htmlFor="search-home" className="sr-only">
+                      Buscar
+                    </label>
+
+                    <input
+                      type="text"
+                      id="search-home"
+                      name="search-home"
+                      maxLength={100}
+                      autoComplete="off"
+                      className="form-control pe-5 py-3"
+                      placeholder="¿En qué te podemos ayudar?"
+                      aria-label="Buscar"
+                    />
+
+                    <button
+                      type="submit"
+                      className="btn btn-primary position-absolute end-0 top-50 translate-middle-y me-2"
+                    >
+                      Buscar
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="aside sky-900"></div>
+        </header>
+      </div>
+    ),
+  },
+  {
+    title: '3/4 Variante color default con 3 etiquetas máximo',
+    content: (
+      <div className="col-12">
+        <header className="hero">
+          <div className="content wave">
+            <div className="d-flex flex-column row-gap-4 py-3 py-lg-5">
+              <nav aria-label="Navegación secundaria">
+                <ol className="breadcrumb m-0">
+                  <li className="breadcrumb-item">
+                    <a href="#" style={{ color: '#101E37' }}>
+                      Inicio
+                    </a>
+                  </li>
+                </ol>
+              </nav>
+
+              <div>
+                <h1 className="mb-3">Encabezado de la página</h1>
+                <p className="lead m-0">
+                  Este es el subtítulo de la página que puede contener hasta 3 líneas de texto, describiendo brevemente
+                  su función.
+                </p>
+              </div>
+
+              <div className="d-flex flex-wrap column-gap-2 row-gap-4">
+                <span className="me-3 fw-semibold">Texto de las etiquetas: </span>
+                <span className="badge badge-default">Etiqueta</span>
+                <span className="badge badge-default">Etiqueta</span>
+                <span className="badge badge-default">Etiqueta</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="aside sky-900"></div>
+        </header>
+      </div>
+    ),
+  },
+  {
+    title: '2/4 Variante color default con 2 botones',
+    content: (
+      <div className="col-12">
+        <header className="hero">
+          <div className="content wave">
+            <div className="d-flex flex-column row-gap-4 py-3 py-lg-5">
+              <nav aria-label="Navegación secundaria">
+                <ol className="breadcrumb m-0">
+                  <li className="breadcrumb-item">
+                    <a href="#" style={{ color: '#101E37' }}>
+                      Inicio
+                    </a>
+                  </li>
+                </ol>
+              </nav>
+
+              <div>
+                <h1 className="mb-3">Encabezado de la página</h1>
+                <p className="lead m-0">
+                  Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la
+                  convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
+                </p>
+              </div>
+
+              <div className="d-grid d-sm-flex column-gap-2 row-gap-4">
+                <button type="button" className="btn btn-secondary w-sm-100">
+                  Botón
+                </button>
+                <button type="button" className="btn btn-outline-secondary w-sm-100">
+                  Botón
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div className="aside sky-900"></div>
+        </header>
+      </div>
+    ),
+  },
+  {
+    title: '1/4 Variante color default con 3 desplegables',
+    content: (
+      <div className="col-12">
+        <header className="hero">
+          <div className="content wave">
+            <div className="d-flex flex-column row-gap-4 py-3 py-lg-5">
+              <nav aria-label="Navegación secundaria">
+                <ol className="breadcrumb m-0">
+                  <li className="breadcrumb-item">
+                    <a href="#" style={{ color: '#101E37' }}>
+                      Inicio
+                    </a>
+                  </li>
+                </ol>
+              </nav>
+
+              <div>
+                <h1 className="mb-3">Encabezado de la página</h1>
+                <p className="lead m-0">
+                  Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la
+                  convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
+                </p>
+              </div>
+
+              <div className="d-grid d-sm-flex flex-wrap column-gap-2 row-gap-4">
                 {/* <!-- Inicio Desplegable de navegación 1 --> */}
                 <div className="dropdown">
                   <button

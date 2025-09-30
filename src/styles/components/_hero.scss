@@ -66,7 +66,7 @@ header.hero {
     position: relative;
     overflow: hidden;
     background-color: #fff;
-    
+
     &.sky-900 {
       background-color: $sky-900;
     }
@@ -75,6 +75,13 @@ header.hero {
   @each $name, $color in $aside-colors {
     .aside.#{$name} {
       background-color: $color;
+    }
+  }
+
+  @media (width < 576px) {
+    .w-sm-100 {
+      width: 100%;
+      display: block;
     }
   }
 

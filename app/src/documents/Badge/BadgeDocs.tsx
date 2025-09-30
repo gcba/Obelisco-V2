@@ -922,8 +922,9 @@ const BadgeDocs: React.FC = () => {
             El componente de etiquetas está construido para ser accesible mediante navegación por teclado y reconocible
             por lectores de pantalla, comunicando su estado (activado o desactivado) de forma clara.
           </p>
-          <span className="badge badge-s-default">TAB</span>
-          <p className="text-md mb-4">
+          <span className="badge badge-s-default ms-1">TAB</span>
+          <span className="badge badge-s-default">ENTER</span>
+          <p className="text-md mt-2 mb-4">
             Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz.
           </p>
           <Image
@@ -1017,7 +1018,7 @@ const BadgeDocs: React.FC = () => {
       <ComponentHeader
         title="Etiquetas"
         description={[
-          'Las etiquetas se utilizan para identificar y categorizar la información dentro de una página proporcionando más detalles a los usuarios sobre el contenido que necesitan.',
+          'Las etiquetas se utilizan para identificar y categorizar la información de una página, ofreciendo contexto para que los usuarios comprendan mejor el contenido.',
         ]}
       />
       <Tabs

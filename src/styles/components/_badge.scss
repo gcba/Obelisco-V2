@@ -343,6 +343,7 @@ a.badge-remove {
   background-color: $white;
   border: 1px solid $blue-900;
   color: $blue-900;
+  cursor: pointer;
 
   &:hover,
   &.hover {
@@ -362,7 +363,6 @@ a.badge-remove {
     color: $white;
     text-decoration: none;
     box-shadow: 0 0 0 0.125rem $blue-900;
-    cursor: pointer;
   }
 }
 

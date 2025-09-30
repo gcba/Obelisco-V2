@@ -79,7 +79,8 @@ $badge-primary-border-color: (
   color: $original-color;
   background-color: map-get($badge-secondary-bg, $color-name);
   text-decoration: none;
-
+  cursor: pointer;
+  
   i {
     color: $original-color;
     text-decoration: none;
@@ -127,6 +128,7 @@ $badge-primary-border-color: (
   background-color: map-get($badge-primary-bg, $color-name);
   text-decoration: none;
   color: $white;
+  cursor: pointer;
 
   i {
     color: $white;
@@ -290,6 +292,7 @@ a.badge-remove {
     overflow: hidden;
     font-style: normal;
     vertical-align: middle;
+    cursor: pointer;
   }
 
   &.badge-lg i {
@@ -326,7 +329,6 @@ a.badge-remove {
       text-decoration: none;
       box-shadow: $focus-box-shadow-subtle;
       border-radius: 2px;
-      cursor: pointer;
     }
 
     span {

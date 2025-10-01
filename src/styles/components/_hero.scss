@@ -25,14 +25,13 @@ $aside-colors: (
 header.hero {
   display: flex;
   flex-direction: column;
-  min-height: 500px;
   background-color: map-get($content-colors, 'sky');
 
   .content {
     flex-grow: 1;
     flex-shrink: 1;
     position: relative;
-    padding: 2rem;
+    padding: 2rem 2rem 0;
 
     &::after {
       content: '';
@@ -95,7 +94,6 @@ header.hero {
   }
 
   @media (width >= 768px) {
-    min-height: 380px;
     flex-direction: row;
     padding-left: calc((100% - 720px) / 2 + 0.75rem);
 

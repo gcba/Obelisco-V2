@@ -18897,10 +18897,10 @@ header.hero .content .btn-hero {
   row-gap: 24px;
 }
 @media (max-width: 360px) {
-  header.hero .content .btn-hero .btn-hero {
+  header.hero .content .btn-hero {
     display: grid;
   }
-  header.hero .content .btn-hero .btn-hero button {
+  header.hero .content .btn-hero button {
     width: 100%;
     display: block;
   }
@@ -18984,12 +18984,6 @@ header.hero .aside {
   position: relative;
   overflow: hidden;
   background-color: #fff;
-}
-header.hero .aside.dark {
-  background-color: #002733;
-}
-header.hero .aside.muted {
-  background-color: #d1d8e0;
 }
 @media (width >= 576px) {
   header.hero .content::after {
@@ -19105,6 +19099,14 @@ header.bg-content-hero-dark {
 }
 header.bg-content-hero-dark .content::after {
   background-color: #002733;
+}
+
+div.aside.bg-aside-hero-dark {
+  background-color: #002733;
+}
+
+div.aside.bg-aside-hero-muted {
+  background-color: #d1d8e0;
 }
 
 /*# sourceMappingURL=styles.css.map */

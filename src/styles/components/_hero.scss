@@ -62,14 +62,11 @@ header.hero {
       column-gap: 8px;
       row-gap: 24px;
       @media (max-width: 360px) {
-        // Variante con botones
-        .btn-hero {
-          display: grid;
+        display: grid;
 
-          button {
-            width: 100%;
-            display: block;
-          }
+        button {
+          width: 100%;
+          display: block;
         }
       }
     }
@@ -174,13 +171,7 @@ header.hero {
     background-color: #fff;
   }
 
-  @each $name, $color in $aside-colors {
-    .aside.#{$name} {
-      background-color: $color;
-    }
-  }
-	
-	@media (width >= 576px) {
+  @media (width >= 576px) {
     .content {
       &::after {
         bottom: -31px;
@@ -254,5 +245,11 @@ header.hero {
     .content::after {
       background-color: $color;
     }
+  }
+}
+
+@each $name, $color in $aside-colors {
+  div.aside.bg-aside-hero-#{$name} {
+    background-color: $color;
   }
 }

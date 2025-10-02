@@ -80,7 +80,7 @@ const sections = [
             </div>
           </div>
 
-          <div className="aside"></div>
+          <div className="aside bg-aside-hero-dark"></div>
         </header>
       </div>
     ),
@@ -119,7 +119,7 @@ const sections = [
             </div>
           </div>
 
-          <div className="aside dark"></div>
+          <div className="aside bg-aside-hero-dark"></div>
         </header>
       </div>
     ),
@@ -160,7 +160,7 @@ const sections = [
             </div>
           </div>
 
-          <div className="aside muted"></div>
+          <div className="aside bg-aside-hero-dark"></div>
         </header>
       </div>
     ),
@@ -273,7 +273,7 @@ const sections = [
             </div>
           </div>
 
-          <div className="aside dark"></div>
+          <div className="aside bg-aside-hero-dark"></div>
         </header>
       </div>
     ),
@@ -356,7 +356,7 @@ const sections = [
             </div>
           </div>
 
-          <div className="aside sky-900">
+          <div className="aside bg-aside-hero-dark">
             <video
               src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
               width="100%"

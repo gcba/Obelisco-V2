@@ -79,7 +79,7 @@ header.hero {
       overflow: hidden;
       width: 100%;
       height: 100%;
-      position: absolute;
+      position: relative;
       top: 0;
 
       &:focus-within {
@@ -126,9 +126,21 @@ header.hero {
           }
 
           > p {
-            display: inline;
+            // display: inline;
             margin: 0;
             padding: 0;
+          }
+
+          @media (max-width: 360px) {
+            & > svg {
+              display: block;
+            }
+
+            & > p {
+              display: none;
+            }
+
+            z-index: 100;
           }
         }
       }
@@ -143,19 +155,6 @@ header.hero {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-      }
-
-      // responsive dentro de Sass
-      @media (max-width: 576px) {
-        .btn-search > svg {
-          display: block;
-        }
-
-        .btn-search > p {
-          display: none;
-        }
-
-        z-index: 100;
       }
     }
     // Variante buscador

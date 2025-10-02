@@ -18911,7 +18911,7 @@ header.hero .content .search-wrapper {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: relative;
   top: 0;
   /* contenedor del botón */
   /* input dentro de search */
@@ -18951,9 +18951,19 @@ header.hero .content .search-wrapper .search-btn-container .btn-search > svg {
   display: none;
 }
 header.hero .content .search-wrapper .search-btn-container .btn-search > p {
-  display: inline;
   margin: 0;
   padding: 0;
+}
+@media (max-width: 360px) {
+  header.hero .content .search-wrapper .search-btn-container .btn-search {
+    z-index: 100;
+  }
+  header.hero .content .search-wrapper .search-btn-container .btn-search > svg {
+    display: block;
+  }
+  header.hero .content .search-wrapper .search-btn-container .btn-search > p {
+    display: none;
+  }
 }
 header.hero .content .search-wrapper #search-home.form-control {
   border-bottom: 2px solid #e6ebf0;
@@ -18964,17 +18974,6 @@ header.hero .content .search-wrapper #search-home.form-control {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-@media (max-width: 576px) {
-  header.hero .content .search-wrapper {
-    z-index: 100;
-  }
-  header.hero .content .search-wrapper .btn-search > svg {
-    display: block;
-  }
-  header.hero .content .search-wrapper .btn-search > p {
-    display: none;
-  }
 }
 header.hero .aside {
   width: 100%;

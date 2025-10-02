@@ -78,7 +78,7 @@ const sections = [
             </div>
           </div>
 
-          <div className="aside bg-hero-blue"></div>
+          <div className="aside"></div>
         </header>
       </div>
     ),
@@ -117,7 +117,7 @@ const sections = [
             </div>
           </div>
 
-          <div className="aside bg-hero-blue"></div>
+          <div className="aside dark"></div>
         </header>
       </div>
     ),
@@ -158,7 +158,7 @@ const sections = [
             </div>
           </div>
 
-          <div className="aside bg-hero-blue"></div>
+          <div className="aside muted"></div>
         </header>
       </div>
     ),
@@ -271,8 +271,83 @@ const sections = [
             </div>
           </div>
 
-          <div className="aside bg-hero-blue"></div>
+          <div className="aside dark"></div>
         </header>
+      </div>
+    ),
+  },
+  {
+    title: '1/2 Variante Imagen',
+    content: (
+      <div className="col-12">
+        <header className="hero">
+          <div className="content wave">
+            <div className="d-flex flex-column row-gap-4 py-3 py-lg-5">
+              <nav aria-label="Navegación secundaria">
+                <ol className="breadcrumb m-0">
+                  <li className="breadcrumb-item">
+                    <a href="#" style={{ color: '#101E37' }}>
+                      Inicio
+                    </a>
+                  </li>
+                </ol>
+              </nav>
+
+              <div>
+                <h1 className="mb-3">Encabezado de la página</h1>
+                <p className="lead m-0">
+                  Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la
+                  convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
+                </p>
+              </div>
+
+              <div className="d-grid d-sm-grid d-md-flex flex-wrap column-gap-2 row-gap-4">
+                <div className="form-wrapper " style={{ minWidth: '580px', maxWidth: '580px' }}>
+                  <form className="form-group position-relative" role="search" aria-label="Buscar en el sitio">
+                    <label htmlFor="search-home" className="sr-only">
+                      Buscar
+                    </label>
+
+                    <input
+                      type="text"
+                      id="search-home"
+                      name="search-home"
+                      maxLength={100}
+                      autoComplete="off"
+                      className="form-control pe-5 py-3"
+                      placeholder="¿En qué te podemos ayudar?"
+                      aria-label="Buscar"
+                    />
+
+                    <button
+                      type="submit"
+                      className="btn btn-primary position-absolute end-0 top-50 translate-middle-y me-2"
+                    >
+                      Buscar
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="aside sky-900">
+            <video
+              src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+              width="100%"
+              height="100%"
+              style={{ objectFit: 'cover', objectPosition: 'right' }}
+              autoPlay
+              muted
+              loop
+              playsInline
+              controls
+            >
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </header>
+        <div className="container">CONTAINER:::::</div>
       </div>
     ),
   },

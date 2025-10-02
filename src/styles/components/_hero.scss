@@ -25,7 +25,6 @@ $aside-colors: (
 header.hero {
   display: flex;
   flex-direction: column;
-  min-height: 500px;
   background-color: map-get($content-colors, 'sky');
 
   .content {
@@ -41,8 +40,8 @@ header.hero {
       z-index: 1;
       right: 0;
       width: 100%;
-      bottom: -49px;
-      height: 50px;
+      bottom: -35px;
+      height: 36px;
     }
 
     &.wave::after {
@@ -167,24 +166,25 @@ header.hero {
 
   .aside {
     width: 100%;
-    min-height: 100px;
+    min-height: 64px;
     min-width: 100%;
     max-height: 40%;
     position: relative;
     overflow: hidden;
     background-color: #fff;
-
-    &.bg-hero-blue {
-      background-color: $sky-900;
-    }
   }
 
-  // Media querys de header.hero
-  @media (width <= 768px) {
+  @each $name, $color in $aside-colors {
+    .aside.#{$name} {
+      background-color: $color;
+    }
+  }
+	
+	@media (width >= 576px) {
     .content {
       &::after {
-        bottom: -29px;
-        height: 30px;
+        bottom: -31px;
+        height: 32px;
       }
 
       &.wave::after {
@@ -201,18 +201,17 @@ header.hero {
   }
 
   @media (width >= 768px) {
-    min-height: 380px;
     flex-direction: row;
-    padding-left: 2rem;
+    padding-left: calc((100% - 720px) / 2 + 0.75rem);
 
     .content {
-      padding: 2rem;
+      padding: 0;
 
       &::after {
         bottom: auto;
         top: 0;
-        right: -49px;
-        width: 50px;
+        right: -29px;
+        width: 30px;
         height: 100%;
       }
 
@@ -224,7 +223,7 @@ header.hero {
       &.corner::after {
         height: 100%;
         width: 48px;
-        right: -48px;
+        right: -47px;
         border-radius: 0;
         border-top-right-radius: 80px;
       }
@@ -255,12 +254,5 @@ header.hero {
     .content::after {
       background-color: $color;
     }
-  }
-}
-
-@each $name, $color in $aside-colors {
-  // aside muted
-  .aside.#{$name} {
-    background-color: $color;
   }
 }

@@ -91,7 +91,7 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return isHome ? (
     children
   ) : (
-    <div className="container custom-layout-container">
+    <div className="container-fluid custom-layout-container">
       <div className="row v-height-100" style={{ paddingTop: '32px' }}>
         {/* <div className="col-3 d-none d-xl-block pe-0">
           {pathname.includes('/components') && (

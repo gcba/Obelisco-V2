@@ -18892,6 +18892,91 @@ header.hero .content.corner::after {
   border-radius: 0;
   border-bottom-right-radius: 32px;
 }
+header.hero .content .btn-hero {
+  display: flex;
+  column-gap: 8px;
+  row-gap: 24px;
+}
+@media (max-width: 360px) {
+  header.hero .content .btn-hero .btn-hero {
+    display: grid;
+  }
+  header.hero .content .btn-hero .btn-hero button {
+    width: 100%;
+    display: block;
+  }
+}
+header.hero .content .search-wrapper {
+  max-width: 650px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  /* contenedor del botón */
+  /* input dentro de search */
+}
+header.hero .content .search-wrapper:focus-within {
+  background-color: #f3f6f9;
+  box-shadow: 0 0 0 0.25rem #218274;
+  outline: 0.25rem solid transparent;
+  min-height: max-content;
+}
+header.hero .content .search-wrapper:focus-within .search-results {
+  display: block;
+}
+header.hero .content .search-wrapper .search-results {
+  display: none;
+  /* resultados */
+}
+header.hero .content .search-wrapper .search-results a:focus {
+  box-shadow: none;
+  outline: none;
+}
+header.hero .content .search-wrapper .search-results .list-link-result {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  gap: 0.25rem;
+}
+header.hero .content .search-wrapper .search-btn-container {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  bottom: 4px;
+}
+header.hero .content .search-wrapper .search-btn-container .btn-search > svg {
+  display: none;
+}
+header.hero .content .search-wrapper .search-btn-container .btn-search > p {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+header.hero .content .search-wrapper #search-home.form-control {
+  border-bottom: 2px solid #e6ebf0;
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 1rem 12px;
+  padding-right: 128px;
+  box-shadow: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media (max-width: 576px) {
+  header.hero .content .search-wrapper {
+    z-index: 100;
+  }
+  header.hero .content .search-wrapper .btn-search > svg {
+    display: block;
+  }
+  header.hero .content .search-wrapper .btn-search > p {
+    display: none;
+  }
+}
 header.hero .aside {
   width: 100%;
   min-height: 100px;
@@ -18901,20 +18986,8 @@ header.hero .aside {
   overflow: hidden;
   background-color: #fff;
 }
-header.hero .aside.sky-900 {
+header.hero .aside.bg-hero-blue {
   background-color: #002733;
-}
-header.hero .aside.dark {
-  background-color: #002733;
-}
-header.hero .aside.muted {
-  background-color: #d1d8e0;
-}
-@media (width < 576px) {
-  header.hero .w-sm-100 {
-    width: 100%;
-    display: block;
-  }
 }
 @media (width <= 768px) {
   header.hero .content::after {
@@ -18977,60 +19050,68 @@ header.hero .aside.muted {
   }
 }
 
-header.hero.sky {
+header.bg-content-hero-sky {
   background-color: #66dcff;
 }
-header.hero.sky .content::after {
+header.bg-content-hero-sky .content::after {
   background-color: #66dcff;
 }
 
-header.hero.blue {
+header.bg-content-hero-blue {
   background-color: #85a5e0;
 }
-header.hero.blue .content::after {
+header.bg-content-hero-blue .content::after {
   background-color: #85a5e0;
 }
 
-header.hero.cyan {
+header.bg-content-hero-cyan {
   background-color: #64d8c8;
 }
-header.hero.cyan .content::after {
+header.bg-content-hero-cyan .content::after {
   background-color: #64d8c8;
 }
 
-header.hero.yellow {
+header.bg-content-hero-yellow {
   background-color: #ffd633;
 }
-header.hero.yellow .content::after {
+header.bg-content-hero-yellow .content::after {
   background-color: #ffd633;
 }
 
-header.hero.red {
+header.bg-content-hero-red {
   background-color: #e08585;
 }
-header.hero.red .content::after {
+header.bg-content-hero-red .content::after {
   background-color: #e08585;
 }
 
-header.hero.purple {
+header.bg-content-hero-purple {
   background-color: #d366ff;
 }
-header.hero.purple .content::after {
+header.bg-content-hero-purple .content::after {
   background-color: #d366ff;
 }
 
-header.hero.light {
+header.bg-content-hero-light {
   background-color: #f3f6f9;
 }
-header.hero.light .content::after {
+header.bg-content-hero-light .content::after {
   background-color: #f3f6f9;
 }
 
-header.hero.dark {
+header.bg-content-hero-dark {
   background-color: #002733;
 }
-header.hero.dark .content::after {
+header.bg-content-hero-dark .content::after {
   background-color: #002733;
+}
+
+.aside.dark {
+  background-color: #002733;
+}
+
+.aside.muted {
+  background-color: #d1d8e0;
 }
 
 /*# sourceMappingURL=styles.css.map */

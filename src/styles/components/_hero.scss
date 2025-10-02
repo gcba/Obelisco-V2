@@ -56,6 +56,113 @@ header.hero {
       border-radius: 0;
       border-bottom-right-radius: 32px;
     }
+
+    // Variante botones
+    .btn-hero {
+      display: flex;
+      column-gap: 8px;
+      row-gap: 24px;
+      @media (max-width: 360px) {
+        // Variante con botones
+        .btn-hero {
+          display: grid;
+
+          button {
+            width: 100%;
+            display: block;
+          }
+        }
+      }
+    }
+    // Variante botones
+
+    // Variante buscador
+    .search-wrapper {
+      max-width: 650px;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+
+      &:focus-within {
+        background-color: #f3f6f9;
+        box-shadow: 0 0 0 0.25rem #218274;
+        outline: 0.25rem solid transparent;
+        min-height: max-content;
+
+        .search-results {
+          display: block;
+        }
+      }
+
+      // resultados
+      .search-results {
+        display: none;
+
+        a:focus {
+          box-shadow: none;
+          outline: none;
+        }
+
+        /* resultados */
+        .list-link-result {
+          padding: 0.5rem;
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          color: #000;
+          gap: 0.25rem;
+        }
+      }
+
+      /* contenedor del botón */
+      .search-btn-container {
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        bottom: 4px;
+
+        .btn-search {
+          > svg {
+            display: none;
+          }
+
+          > p {
+            display: inline;
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+
+      /* input dentro de search */
+      #search-home.form-control {
+        border-bottom: 2px solid #e6ebf0;
+        border-radius: 0.5rem 0.5rem 0 0;
+        padding: 1rem 12px;
+        padding-right: 128px;
+        box-shadow: none;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      // responsive dentro de Sass
+      @media (max-width: 576px) {
+        .btn-search > svg {
+          display: block;
+        }
+
+        .btn-search > p {
+          display: none;
+        }
+
+        z-index: 100;
+      }
+    }
+    // Variante buscador
   }
 
   .aside {
@@ -67,24 +174,12 @@ header.hero {
     overflow: hidden;
     background-color: #fff;
 
-    &.sky-900 {
+    &.bg-hero-blue {
       background-color: $sky-900;
     }
   }
 
-  @each $name, $color in $aside-colors {
-    .aside.#{$name} {
-      background-color: $color;
-    }
-  }
-
-  @media (width < 576px) {
-    .w-sm-100 {
-      width: 100%;
-      display: block;
-    }
-  }
-
+  // Media querys de header.hero
   @media (width <= 768px) {
     .content {
       &::after {
@@ -154,11 +249,18 @@ header.hero {
 }
 
 @each $name, $color in $content-colors {
-  header.hero.#{$name} {
+  header.bg-content-hero-#{$name} {
     background-color: $color;
 
     .content::after {
       background-color: $color;
     }
+  }
+}
+
+@each $name, $color in $aside-colors {
+  // aside muted
+  .aside.#{$name} {
+    background-color: $color;
   }
 }

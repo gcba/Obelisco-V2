@@ -19009,6 +19009,8 @@ header.hero .aside video, header.hero .aside img {
 @media (width >= 768px) {
   header.hero {
     flex-direction: row;
+    align-items: stretch;
+    position: relative;
     padding-left: calc((100% - 720px) / 2 + 0.75rem);
   }
   header.hero .content {
@@ -19017,8 +19019,8 @@ header.hero .aside video, header.hero .aside img {
   header.hero .content::after {
     bottom: auto;
     top: 0;
-    right: -29px;
-    width: 30px;
+    right: -36px;
+    width: 36px;
     height: 100%;
   }
   header.hero .content.wave::after {
@@ -19038,20 +19040,20 @@ header.hero .aside video, header.hero .aside img {
     width: auto;
     min-width: 200px;
     max-width: 50%;
-    max-height: 100%;
+    max-height: none;
   }
   header.hero .aside video, header.hero .aside img {
     object-position: right;
+    position: absolute !important;
+  }
+  header.hero .aside:has(img),
+  header.hero .aside:has(video) {
+    flex: 1 1 150%;
   }
 }
 @media (width >= 1200px) {
   header.hero {
     padding-left: calc((100% - 1140px) / 2 + 0.75rem);
-  }
-}
-@media (width >= 1440px) {
-  header.hero {
-    padding-left: calc((100% - 1440px) / 2 + 0.75rem);
   }
 }
 

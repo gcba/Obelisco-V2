@@ -18979,10 +18979,17 @@ header.hero .aside {
   width: 100%;
   min-height: 64px;
   min-width: 100%;
-  max-height: 40%;
+  max-height: 352px;
   position: relative;
   overflow: hidden;
   background-color: #fff;
+}
+header.hero .aside video, header.hero .aside img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  position: inherit !important;
 }
 @media (width >= 576px) {
   header.hero .content::after {
@@ -19031,6 +19038,10 @@ header.hero .aside {
     width: auto;
     min-width: 200px;
     max-width: 50%;
+    max-height: 100%;
+  }
+  header.hero .aside video, header.hero .aside img {
+    object-position: right;
   }
 }
 @media (width >= 1200px) {

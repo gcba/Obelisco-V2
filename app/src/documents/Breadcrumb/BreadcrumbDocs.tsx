@@ -13,12 +13,40 @@ import { BREADCRUMB, BREADCRUMB_ACCESSIBILTY } from './code-views';
 const BreadcrumbDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
-      title: 'Simple',
+      title: 'Fondo claro',
       firstTitle: true,
       content: (
         <>
           <CodeBox codeHTML={BREADCRUMB}>
             <div className="container">
+              <nav aria-label="Ruta de navegación">
+                <ol className="breadcrumb">
+                  <li className="breadcrumb-item">
+                    <LinkClient>Inicio</LinkClient>
+                  </li>
+                  <li className="breadcrumb-item">
+                    <LinkClient>Página intermedia con mucho mucho texto</LinkClient>
+                  </li>
+                  <li className="breadcrumb-item">
+                    <LinkClient>Intermedia</LinkClient>
+                  </li>
+                  <li className="breadcrumb-item">
+                    <LinkClient>Página anterior</LinkClient>
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+        {
+      title: 'Fondo oscuro',
+      firstTitle: true,
+      content: (
+        <>
+          <CodeBox codeHTML={BREADCRUMB}>
+            <div className="container bg-dark">
               <nav aria-label="Ruta de navegación">
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">

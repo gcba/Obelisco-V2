@@ -252,3 +252,14 @@ header.hero {
     background-color: $color;
   }
 }
+
+// CONDICIONALES
+// Cuando header tiene bg-content-hero-dark Y dentro en algún momento contiene .aside.bg-aside-hero-dark
+header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-dark) .content {
+  .breadcrumb-item a,
+  div h1,
+  div p,
+  div span.fw-semibold.me-3 {
+    color: $white;
+  }
+}

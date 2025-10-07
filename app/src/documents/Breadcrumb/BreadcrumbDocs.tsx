@@ -40,14 +40,14 @@ const BreadcrumbDocs: React.FC = () => {
         </>
       ),
     },
-        {
+    {
       title: 'Fondo oscuro',
       firstTitle: true,
       content: (
         <>
           <CodeBox codeHTML={BREADCRUMB}>
-            <div className="container bg-dark">
-              <nav aria-label="Ruta de navegación">
+            <div className="container">
+              <nav aria-label="Ruta de navegación" className="bg-dark">
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
                     <LinkClient>Inicio</LinkClient>

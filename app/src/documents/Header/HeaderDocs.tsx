@@ -120,7 +120,10 @@ const HeaderDocs: React.FC = () => {
                               </li>
 
                               <li className="nav-item">
-                                <LinkClient className="nav-link nav-link-lg" href="#">
+                                <LinkClient
+                                  className="nav-link nav-link-lg"
+                                  href="https://buenosaires.gob.ar/inicio/tramitesyservicios"
+                                >
                                   <span>Trámites y servicios</span>
                                 </LinkClient>
                               </li>
@@ -233,7 +236,10 @@ const HeaderDocs: React.FC = () => {
                               </li>
 
                               <li className="nav-item">
-                                <LinkClient className="nav-link nav-link-lg" href="#">
+                                <LinkClient
+                                  className="nav-link nav-link-lg"
+                                  href="https://buenosaires.gob.ar/inicio/tramitesyservicios"
+                                >
                                   <span>Trámites y servicios</span>
                                 </LinkClient>
                               </li>

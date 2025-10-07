@@ -19066,7 +19066,7 @@ header.hero .aside video::-webkit-media-controls-fullscreen-button {
   }
   header.hero .aside img {
     object-position: right;
-    position: absolute;
+    position: absolute !important;
   }
   header.hero .aside video {
     object-position: right;

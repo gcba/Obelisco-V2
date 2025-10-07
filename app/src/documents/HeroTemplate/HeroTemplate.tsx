@@ -361,7 +361,7 @@ const sections = [
           </div>
 
           <div className="aside">
-            <video src={`${basePath}/images/video_hero_header.mp4`} autoPlay muted loop playsInline controls>
+            <video src={`${basePath}/images/video_hero_header.mp4`} autoPlay muted loop controls>
               Your browser does not support the video tag.
             </video>
           </div>

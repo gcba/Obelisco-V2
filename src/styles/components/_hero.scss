@@ -169,12 +169,38 @@ header.hero {
     overflow: hidden;
     background-color: #fff;
 
-		& video, img {
+		& img {
+			object-fit: cover;
+			object-position: bottom;
+			position: inherit !important;
+		}
+
+		& video {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
 			object-position: bottom;
-			position: inherit !important;
+
+			&::-webkit-media-controls-enclosure {
+        border-radius: 0 !important; 
+        background-color: transparent !important;
+      }
+      
+      &::-webkit-media-controls-panel {
+				background-color: #101E37;
+				background-image: unset;
+				border: solid 1px #000;
+				border-radius: 8px;
+				width: 80%;
+				height: 70px;
+				position: absolute;
+				bottom: 10px;
+				left: 10%;
+      }
+
+			&::-webkit-media-controls-fullscreen-button { 
+				display: none !important;
+			}
 		}
   }
 
@@ -237,15 +263,24 @@ header.hero {
       max-width: 50%;
       max-height: none;
 
-      & video, img {
+      & img {
         object-position: right;
-				position: absolute !important;
+				position: absolute;
       }
+
+			& video {
+				object-position: right;
+				position: absolute;
+
+				&::-webkit-media-controls-panel {
+					left: 14%;
+				}
+			}
     }
  
     .aside:has(img),
     .aside:has(video) {
-			flex: 1 1 150%;
+			flex: 1 1 250%;
     }
   }
 

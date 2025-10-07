@@ -18984,12 +18984,34 @@ header.hero .aside {
   overflow: hidden;
   background-color: #fff;
 }
-header.hero .aside video, header.hero .aside img {
+header.hero .aside img {
+  object-fit: cover;
+  object-position: bottom;
+  position: inherit !important;
+}
+header.hero .aside video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: bottom;
-  position: inherit !important;
+}
+header.hero .aside video::-webkit-media-controls-enclosure {
+  border-radius: 0 !important;
+  background-color: transparent !important;
+}
+header.hero .aside video::-webkit-media-controls-panel {
+  background-color: #101E37;
+  background-image: unset;
+  border: solid 1px #000;
+  border-radius: 8px;
+  width: 80%;
+  height: 70px;
+  position: absolute;
+  bottom: 10px;
+  left: 10%;
+}
+header.hero .aside video::-webkit-media-controls-fullscreen-button {
+  display: none !important;
 }
 @media (width >= 576px) {
   header.hero .content::after {
@@ -19042,13 +19064,20 @@ header.hero .aside video, header.hero .aside img {
     max-width: 50%;
     max-height: none;
   }
-  header.hero .aside video, header.hero .aside img {
+  header.hero .aside img {
     object-position: right;
-    position: absolute !important;
+    position: absolute;
+  }
+  header.hero .aside video {
+    object-position: right;
+    position: absolute;
+  }
+  header.hero .aside video::-webkit-media-controls-panel {
+    left: 14%;
   }
   header.hero .aside:has(img),
   header.hero .aside:has(video) {
-    flex: 1 1 150%;
+    flex: 1 1 250%;
   }
 }
 @media (width >= 1200px) {

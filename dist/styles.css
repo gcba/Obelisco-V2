@@ -18869,7 +18869,7 @@ header.hero .content {
   flex-grow: 1;
   flex-shrink: 1;
   position: relative;
-  padding: 2rem;
+  padding: 0.875rem 1rem 0.625rem;
 }
 header.hero .content::after {
   content: "";
@@ -19027,16 +19027,15 @@ header.hero .aside video::-webkit-media-controls-fullscreen-button {
     height: 48px;
     border-bottom-right-radius: 48px;
   }
+  header.hero .content > div {
+    width: 90%;
+  }
 }
 @media (width >= 768px) {
   header.hero {
     flex-direction: row;
     align-items: stretch;
     position: relative;
-    padding-left: calc((100% - 720px) / 2 + 0.75rem);
-  }
-  header.hero .content {
-    padding: 0;
   }
   header.hero .content::after {
     bottom: auto;
@@ -19081,8 +19080,11 @@ header.hero .aside video::-webkit-media-controls-fullscreen-button {
   }
 }
 @media (width >= 1200px) {
-  header.hero {
-    padding-left: calc((100% - 1140px) / 2 + 0.75rem);
+  header.hero .content {
+    padding: 0 0 0 60px;
+  }
+  header.hero .content > div {
+    width: 70%;
   }
 }
 

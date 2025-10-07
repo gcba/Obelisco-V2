@@ -31,7 +31,7 @@ header.hero {
     flex-grow: 1;
     flex-shrink: 1;
     position: relative;
-    padding: 2rem;
+    padding: 0.875rem 1rem 0.625rem;
 
     &::after {
       content: '';
@@ -221,6 +221,10 @@ header.hero {
         height: 48px;
         border-bottom-right-radius: 48px;
       }
+
+			& > div {
+				width: 90%;
+			}
     }
   }
 
@@ -228,11 +232,8 @@ header.hero {
     flex-direction: row;
     align-items: stretch;
 		position: relative;
-    padding-left: calc((100% - 720px) / 2 + 0.75rem);
 
     .content {
-      padding: 0;
-
       &::after {
         bottom: auto;
         top: 0;
@@ -285,7 +286,13 @@ header.hero {
   }
 
   @media (width >= 1200px) {
-    padding-left: calc((100% - 1140px) / 2 + 0.75rem);
+		.content {
+			padding: 0 0 0 60px;
+
+			> div {
+				width: 70%;
+			}
+		}
   }
 }
 

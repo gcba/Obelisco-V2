@@ -12,14 +12,17 @@ nav.bg-dark {
   .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
     background: transparent $breadcrumb-divider-dark no-repeat center center;
   }
+
   .breadcrumb .breadcrumb-item {
     a {
       color: white;
     }
   }
 }
+
 nav {
   display: inline-block;
+
   .breadcrumb .breadcrumb-item {
     &:not(:last-child) {
       padding-right: $breadcrumb-item-padding-right;

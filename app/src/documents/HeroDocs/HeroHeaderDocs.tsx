@@ -140,7 +140,7 @@ const HeroHeaderDocs: React.FC = () => {
               <div className="header-box-sizing_hero-header ">
                 <header className="hero">
                   <div className="content wave">
-                    <div className="d-flex flex-column row-gap-4 py-3 py-lg-5 pe-md-1">
+                    <div className="d-flex flex-column row-gap-4 py-3 py-lg-5">
                       <nav aria-label="Navegación secundaria">
                         <ol className="breadcrumb m-0">
                           <li className="breadcrumb-item">
@@ -148,7 +148,6 @@ const HeroHeaderDocs: React.FC = () => {
                           </li>
                         </ol>
                       </nav>
-
                       <div>
                         <h1 className="mb-3">Encabezado de la página</h1>
                         <p className="lead m-0">
@@ -156,7 +155,6 @@ const HeroHeaderDocs: React.FC = () => {
                           convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
                         </p>
                       </div>
-
                       {/* botones */}
                       <div className="btn-hero">
                         <button type="button" className="btn btn-secondary">

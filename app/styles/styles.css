@@ -19148,15 +19148,15 @@ div.aside.bg-aside-hero-dark {
   background-color: #002733;
 }
 
-div.aside.bg-aside-hero-muted {
+div.aside.bg-aside-hero-light {
   background-color: #d1d8e0;
 }
 
-header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-dark) .content .breadcrumb-item a,
-header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-dark) .content div h1,
-header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-dark) .content div .h1,
-header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-dark) .content div p,
-header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-dark) .content div span.fw-semibold.me-3 {
+header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content .breadcrumb-item a,
+header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div h1,
+header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div .h1,
+header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div p,
+header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div span.fw-semibold.me-3 {
   color: #ffffff;
 }
 

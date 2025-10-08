@@ -15,7 +15,7 @@ $content-colors: (
 
 $aside-colors: (
   'dark': $dark,
-  'muted': $slate-200,
+  'light': $slate-200,
 );
 
 @mixin mask-size-cover {
@@ -314,7 +314,7 @@ header.hero {
 
 // CONDICIONALES
 // Cuando header tiene bg-content-hero-dark Y dentro en algún momento contiene .aside.bg-aside-hero-dark
-header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-dark) .content {
+header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content {
   .breadcrumb-item a,
   div h1,
   div p,

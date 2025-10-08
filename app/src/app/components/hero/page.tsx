@@ -1,4 +1,4 @@
-import HeroHeaderDocs from '@/documents/HeroHeader/HeroHeaderDocs';
+import HeroHeaderDocs from '@/documents/HeroDocs/HeroHeaderDocs';
 
 export default function HeaderPage() {
   return <HeroHeaderDocs />;

@@ -8,7 +8,7 @@ import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 const basePath = '/Obelisco-V2';
 
-import { BREADCRUMB, BREADCRUMB_ACCESSIBILTY } from './code-views';
+import { BREADCRUMB, BREADCRUMB_DARK, BREADCRUMB_ACCESSIBILTY } from './code-views';
 
 const BreadcrumbDocs: React.FC = () => {
   const SECTIONS_DEV = [
@@ -45,7 +45,7 @@ const BreadcrumbDocs: React.FC = () => {
       firstTitle: true,
       content: (
         <>
-          <CodeBox codeHTML={BREADCRUMB}>
+          <CodeBox codeHTML={BREADCRUMB_DARK}>
             <div className="container">
               <nav aria-label="Ruta de navegación" className="bg-dark">
                 <ol className="breadcrumb">

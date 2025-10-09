@@ -59,9 +59,8 @@ header.hero {
     // Variante botones
     .btn-hero {
       display: flex;
-      column-gap: 8px;
-      row-gap: 24px;
-      @media (max-width: 360px) {
+      gap: 24px 8px;
+      @media (width <= 360px) {
         display: grid;
 
         button {
@@ -70,6 +69,7 @@ header.hero {
         }
       }
     }
+
     // Variante botones
 
     // Variante buscador
@@ -131,7 +131,7 @@ header.hero {
             padding: 0;
           }
 
-          @media (max-width: 360px) {
+          @media (width <= 360px) {
             & > svg {
               display: block;
             }
@@ -139,7 +139,6 @@ header.hero {
             & > p {
               display: none;
             }
-
             z-index: 100;
           }
         }
@@ -157,6 +156,7 @@ header.hero {
         text-overflow: ellipsis;
       }
     }
+
     // Variante buscador
   }
 

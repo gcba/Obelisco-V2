@@ -1,0 +1,123 @@
+$icon-check: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(56, 72, 92);transform: ;msFilter:;"><path d="m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z"></path></svg>');
+$icon-institutional: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="121" height="64" viewBox="0 0 121 64" fill="none"><g clip-path="url(%23clip0_25745_3319)"><path d="M119.666 50.689L96.4889 6.59346C94.4897 2.67912 90.3939 0 85.6394 0H85.6279C80.8791 0 76.7776 2.67912 74.7784 6.59346L58.4639 37.6318C56.6423 34.4394 53.738 31.9351 50.2322 30.5815C54.1447 27.7952 56.6938 23.2548 56.6938 18.1334C56.6938 12.1942 53.2683 7.05596 48.2617 4.50657C43.8508 2.22226 38.8155 0.930642 33.4767 0.930642H9.07376C4.0557 0.930642 0 4.92394 0 9.85353V54.5695C0 59.4991 4.0557 63.4924 9.07376 63.4924H35.4644C40.5512 63.4924 45.3917 62.4546 49.7854 60.6046L51.4581 59.8093C51.5498 59.7642 51.6414 59.719 51.7331 59.6739C53.3198 62.2628 56.1897 64.0056 59.495 64.0056C63.1669 64.0056 66.329 61.8623 67.7554 58.7658C68.4657 57.1302 70.0696 55.9739 71.96 55.8837H99.3016C101.198 55.9739 102.796 57.1302 103.506 58.7658C104.927 61.8623 108.095 64.0056 111.767 64.0056C116.779 64.0056 120.835 60.0011 120.835 55.0884C120.835 53.4866 120.416 51.9862 119.66 50.6946" fill="%23153244"/></g><defs><clipPath id="clip0_25745_3319"><rect width="120.84" height="64" fill="white"/></clipPath></defs></svg>');
+$inset: -0.15rem 0 0 -0.2rem;
+$inset-institutional: 0.15rem 0 0 0;
+$padding-icon-institutional: 4.05rem;
+$width-icon-institutional: 7.553rem;
+$height-icon-institutional: 4rem;
+$status-size: 4rem;
+$status-padding-top: 4rem;
+$status-title-padding: 1rem;
+$status-margin-bottom: 1rem;
+$status-list-margin-bottom: 3rem;
+$status-list-padding-left: 1.5rem;
+$status-list-item-margin-bottom: 1rem;
+$status-list-icon-left: -0.3rem;
+$status-types: ('info', 'success', 'danger', 'warning', 'institutional');
+$success-icons-list: (
+  'info':
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none"><path d="M31.9999 5.33325C17.2799 5.33325 5.33325 17.2799 5.33325 31.9999C5.33325 46.7199 17.2799 58.6666 31.9999 58.6666C46.7199 58.6666 58.6666 46.7199 58.6666 31.9999C58.6666 17.2799 46.7199 5.33325 31.9999 5.33325ZM31.9999 45.3333C30.5333 45.3333 29.3333 44.1333 29.3333 42.6666V31.9999C29.3333 30.5333 30.5333 29.3333 31.9999 29.3333C33.4666 29.3333 34.6666 30.5333 34.6666 31.9999V42.6666C34.6666 44.1333 33.4666 45.3333 31.9999 45.3333ZM34.6666 23.9999H29.3333V18.6666H34.6666V23.9999Z" fill="%230086AD"/></svg>'),
+  'success':
+    url('data:image/svg+xml,<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31.9999 5.33325C17.2799 5.33325 5.33325 17.2799 5.33325 31.9999C5.33325 46.7199 17.2799 58.6666 31.9999 58.6666C46.7199 58.6666 58.6666 46.7199 58.6666 31.9999C58.6666 17.2799 46.7199 5.33325 31.9999 5.33325ZM24.7733 43.4399L15.1999 33.8666C14.1599 32.8266 14.1599 31.1466 15.1999 30.1066C16.2399 29.0666 17.9199 29.0666 18.9599 30.1066L26.6666 37.7866L45.0133 19.4399C46.0533 18.3999 47.7333 18.3999 48.7733 19.4399C49.8133 20.4799 49.8133 22.1599 48.7733 23.1999L28.5333 43.4399C27.5199 44.4799 25.8133 44.4799 24.7733 43.4399Z" fill="%2326874A"/></svg>'),
+  'warning':
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none"><path d="M11.92 54.6766H52.08C56.1867 54.6766 58.7467 50.2232 56.6933 46.6766L36.6133 11.9832C34.56 8.43658 29.44 8.43658 27.3867 11.9832L7.30666 46.6766C5.25333 50.2232 7.81333 54.6766 11.92 54.6766ZM32 36.0099C30.5333 36.0099 29.3333 34.8099 29.3333 33.3432V28.0099C29.3333 26.5432 30.5333 25.3432 32 25.3432C33.4667 25.3432 34.6667 26.5432 34.6667 28.0099V33.3432C34.6667 34.8099 33.4667 36.0099 32 36.0099ZM34.6667 46.6766H29.3333V41.3432H34.6667V46.6766Z" fill="%23FF9500"/></svg>'),
+  'danger':
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none"><path d="M31.9999 5.3335C17.2799 5.3335 5.3335 17.2802 5.3335 32.0002C5.3335 46.7202 17.2799 58.6668 31.9999 58.6668C46.7199 58.6668 58.6666 46.7202 58.6666 32.0002C58.6666 17.2802 46.7199 5.3335 31.9999 5.3335ZM31.9999 34.6668C30.5333 34.6668 29.3333 33.4668 29.3333 32.0002V21.3335C29.3333 19.8668 30.5333 18.6668 31.9999 18.6668C33.4666 18.6668 34.6666 19.8668 34.6666 21.3335V32.0002C34.6666 33.4668 33.4666 34.6668 31.9999 34.6668ZM34.6666 45.3335H29.3333V40.0002H34.6666V45.3335Z" fill="%23CC3333"/></svg>'),
+);
+
+$status-icons: map-merge(
+  $success-icons-list,
+  (
+    'institutional': $icon-institutional,
+  )
+);
+
+@mixin status-icon($type) {
+  &::before {
+    background-image: map-get($status-icons, $type);
+
+    @if $type == 'institutional' {
+      width: $width-icon-institutional;
+      height: $height-icon-institutional;
+      inset: $inset-institutional;
+    }
+  }
+}
+
+.status {
+  position: relative;
+  padding-top: $status-padding-top;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: $status-size;
+    height: $status-size;
+    inset: $inset;
+  }
+
+  @each $color in $status-types {
+    &.status-#{$color} {
+      @include status-icon($color);
+
+      @if $color == 'institutional' {
+        padding-top: $padding-icon-institutional;
+      }
+    }
+  }
+
+  .status-title {
+    font-weight: 600;
+    margin: $status-title-padding 0;
+    line-height: 2.25rem;
+    font-size: 1.75rem;
+    color: $blue-900;
+  }
+
+  .status-text {
+    margin-bottom: $status-margin-bottom;
+    color: $blue-900;
+  }
+
+  &:not(:has(.status-list)) .status-text {
+    margin-bottom: $status-margin-bottom;
+
+    &:not(:has(+ .status-text)),
+    + .status-text {
+      margin-bottom: 3rem;
+    }
+  }
+
+  .status-list {
+    padding-left: $status-list-padding-left;
+    margin-bottom: $status-list-margin-bottom;
+    color: $blue-900;
+
+    > li {
+      margin-bottom: $status-list-item-margin-bottom;
+      color: $blue-900;
+    }
+  }
+
+  .status-list.list-informative {
+    padding-left: 0;
+  }
+
+  @include media-breakpoint-down(md) {
+    > .btn {
+      width: 100%;
+    }
+  }
+
+  > .btn + .btn {
+    margin-left: 1rem;
+
+    @include media-breakpoint-down(md) {
+      margin-left: 0;
+      margin-top: 1rem;
+      width: 100%;
+    }
+  }
+}

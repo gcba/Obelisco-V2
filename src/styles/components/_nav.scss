@@ -1,0 +1,250 @@
+@use 'sass:math';
+
+// Variables
+$nav-icon-font-size: 1.25rem;
+$nav-link-padding-sm: 0.25rem 0.5rem;
+$nav-link-padding: 0.5rem 0.75rem;
+$nav-link-padding-lg: 0.75rem;
+$nav-link-vertical-padding-x: 1.125rem;
+
+// Custom styles
+nav {
+  .nav-pills {
+    gap: 0.625rem;
+
+    .nav-item {
+      .nav-link {
+        color: $body-color;
+        @extend .headline-md;
+        font-weight: $font-weight-normal;
+        border-radius: $border-radius-lg;
+        text-decoration: none;
+        background-color: $white;
+        outline: 0.125rem solid transparent;
+        outline-offset: 0;
+        min-height: 40px;
+        padding: $nav-link-padding;
+
+        &-lg {
+          min-height: 48px;
+          padding: $nav-link-padding-lg;
+        }
+
+        &-sm {
+          min-height: 32px;
+          padding: $nav-link-padding-sm;
+          @extend .headline-sm;
+          line-height: 1.5rem;
+
+          .nav-icon {
+            .o-icon {
+              font-size: $nav-icon-font-size;
+            }
+          }
+        }
+
+        &.disabled,
+        &:disabled {
+          color: $disabled-text;
+          background-color: $disabled-bg;
+          outline-color: $disabled-bg;
+        }
+
+        &:visited {
+          color: $body-color;
+
+          &.disabled,
+          &:disabled {
+            color: $disabled-text;
+          }
+        }
+
+        &.border-link {
+          outline-color: $slate-100;
+        }
+
+        .o-icon {
+          vertical-align: middle;
+        }
+
+        &:hover {
+          outline-color: $hover-color;
+          color: $hover-color;
+
+          &:visited {
+            color: $hover-color;
+          }
+
+          span:not(.o-icon) {
+            // @extend .underline-1; // Ya no existe
+            text-decoration-color: transparent;
+          }
+
+          .nav-icon {
+            text-decoration: none;
+
+            span:not(.o-icon) {
+              // @extend .underline-1; // Ya no existe
+              text-decoration-color: transparent;
+            }
+          }
+        }
+
+        &:focus {
+          outline: 0.25rem solid transparent;
+          outline-offset: 0;
+          box-shadow: $focus-box-shadow;
+          color: $body-color;
+          text-decoration: none;
+
+          .nav-icon {
+            .o-icon {
+              text-decoration: none;
+            }
+
+            span {
+              text-decoration: none;
+            }
+          }
+
+          span {
+            text-decoration: none;
+          }
+
+          &:hover {
+            color: $body-color;
+          }
+        }
+
+        &.active,
+        &:active {
+          color: $white;
+          background-color: $active-color;
+          outline: 0.25rem solid transparent;
+          box-shadow: none;
+
+          &:hover,
+          &:focus {
+            color: $white;
+            background-color: $active-color;
+            text-decoration: none;
+
+            span {
+              text-decoration: none;
+            }
+
+            .nav-icon {
+              .o-icon {
+                text-decoration: none;
+              }
+
+              span {
+                text-decoration: none;
+              }
+            }
+          }
+
+          &.active-child {
+            color: $active-color;
+            text-decoration: none;
+            font-weight: $font-weight-normal;
+            box-shadow: none;
+            background-color: $white;
+          }
+
+          .nav-icon {
+            span {
+              text-decoration: none;
+            }
+          }
+        }
+
+        &.active-child {
+          outline: 0.25rem solid transparent;
+          outline-offset: -0.125rem;
+          color: $active-color;
+          font-weight: $font-weight-normal;
+
+          &:hover,
+          &:focus {
+            color: $active-color;
+            font-weight: $font-weight-normal;
+            box-shadow: none;
+
+            span {
+              text-decoration: none !important;
+            }
+
+            .nav-icon {
+              .o-icon {
+                text-decoration: none;
+              }
+
+              span {
+                text-decoration: none;
+              }
+            }
+          }
+
+          &:focus,
+          &.focus {
+            outline-offset: 0;
+          }
+        }
+
+        .nav-icon {
+          display: flex;
+          align-items: center;
+          gap: 0.25rem; //Este gap define el espaciado en navegación vertical y horizontal
+
+          .o-icon {
+            font-size: $nav-icon-font-size;
+            display: inline;
+          }
+        }
+      }
+    }
+
+    // Navegacion Vertical
+    &.flex-column {
+      margin-top: 0.188rem;
+      background-color: $white;
+      border-radius: $border-radius-lg;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      .nav-item > .nav-link {
+        max-height: fit-content;
+      }
+
+      .nav .nav-item .nav-link .nav-icon {
+        .o-icon {
+          display: none;
+        }
+      }
+
+      // Espaciado nav vertical 2do nivel
+      .nav {
+        .nav-link {
+          padding-left: $nav-link-vertical-padding-x * 2.4444; //44px
+        }
+
+        // Espaciado nav vertical 3er nivel
+        .nav {
+          .nav-link {
+            padding-left: $nav-link-vertical-padding-x * 4; //72px
+          }
+
+          // Espaciado nav vertical 4to nivel
+          .nav {
+            .nav-link {
+              padding-left: $nav-link-vertical-padding-x * 4.5;
+            }
+          }
+        }
+      }
+    }
+  }
+}

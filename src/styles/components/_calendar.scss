@@ -1,0 +1,226 @@
+// Custom variables and mixins
+$calendar-spacing: 0.5rem 0.25rem;
+$calendar-footer-spacing: 1rem 0.5rem 0;
+$calendar-td-span-size: 2.25rem;
+
+// Custom styles
+.calendar {
+  width: 100%;
+  max-width: 328px;
+  background-color: $white;
+  padding: $calendar-spacing;
+
+  .calendar-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 0.625rem;
+    height: 24px;
+
+    .calendar-title,
+    .calendar-year {
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+      font-weight: 600;
+      font-family: $font-family-headings;
+      margin-bottom: 0;
+      color: $blue-900;
+    }
+  }
+
+  .calendar-body {
+    padding: 1rem 0 0;
+    color: $slate-950;
+    margin-bottom: 0;
+
+    table {
+      width: 100%;
+      text-align: center;
+
+      th,
+      td {
+        padding: 0;
+
+        span {
+          height: 40px;
+          width: 40px;
+          display: inline-block;
+          line-height: 40px;
+          border-radius: 50%;
+          margin: 0.25rem 0;
+        }
+      }
+
+      .calendar-week-header {
+        th {
+          font-weight: 700;
+          font-family: Nunito, sans-serif;
+          height: 48px;
+          background-color: $blue-50;
+          color: $slate-950;
+        }
+      }
+
+      .calendar-week {
+        line-height: 8px;
+
+        &:nth-of-type(even) {
+          background-color: $blue-50;
+        }
+
+        &:nth-of-type(odd) {
+          td {
+            padding: 0.25rem 0;
+          }
+        }
+
+        &:nth-of-type(1) {
+          td {
+            padding: 0.5rem 0 0.25rem;
+          }
+        }
+
+        td {
+          pointer-events: inherit;
+
+          .calendar-link {
+            border-radius: 50%;
+            margin: 0.25rem 0;
+            outline: 0.125rem solid transparent;
+
+            &:hover {
+              outline: 0.25rem solid transparent;
+
+              .active {
+                background-color: $blue-600;
+              }
+
+              .active-secondary {
+                background-color: $blue-950;
+              }
+            }
+
+            &:focus {
+              box-shadow: none;
+              backface-visibility: inherit;
+
+              .active {
+                background-color: $blue-600;
+                color: $white;
+              }
+
+              .active-secondary {
+                background-color: $blue-900;
+                color: $white;
+              }
+
+              .active,
+              .active-secondary {
+                box-shadow: 0 0 0 0.125rem $focus-color;
+              }
+            }
+
+            &:active {
+              box-shadow: none;
+              backface-visibility: inherit;
+
+              .active,
+              .active-secondary {
+                box-shadow: 0 0 0 0.125rem $blue-800;
+              }
+
+              .active {
+                background-color: $blue-600;
+              }
+
+              .active-secondary {
+                background-color: $blue-950;
+              }
+            }
+          }
+
+          span {
+            &::after {
+              line-height: 1.5;
+            }
+
+            &.disabled {
+              color: $slate-300;
+            }
+
+            &.active,
+            &.active-secondary {
+              color: $white;
+              background-color: $blue-500;
+              min-width: 100%;
+              height: 100%;
+              margin: 0;
+              outline: 0.125rem solid transparent;
+              cursor: pointer;
+            }
+
+            &.active-secondary {
+              background-color: $blue-900;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .calendar-footer {
+    .calendar-footer-list {
+      margin-top: 1rem;
+      box-shadow: 0 -1px 0 0 $slate-100;
+      padding: $calendar-footer-spacing;
+      margin-bottom: 0;
+
+      li {
+        font-size: 0.875rem;
+        line-height: 20px;
+        list-style-type: none;
+
+        &:not(:last-child) {
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+
+    .accordion-item {
+      margin-top: 1rem;
+
+      .calendar-footer-list {
+        margin: 0;
+        box-shadow: none;
+        padding: 0;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .calendar-header {
+      padding: 0 0.25rem;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    max-width: 332px;
+  }
+}
+
+//Disposición anual de calendario
+.calendar-deck {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+
+  @include media-breakpoint-up(md) {
+    gap: 1.5rem;
+  }
+
+  @include media-breakpoint-up(xl) {
+    justify-content: space-between;
+    gap: 2rem 19px;
+  }
+}

@@ -1,0 +1,82 @@
+name: 🐞 ODS - Error o mejora técnica
+title: "🐞 ODS - Error o mejora técnica: [Nombre de tu requerimiento]"
+description: "Reportá un error o sugerí una mejora técnica en el sistema de diseño Obelisco."
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Describí el error o la mejora técnica"
+      description: "Escribí en pocas palabras, de forma clara y concreta, cuál es el error o la mejora técnica encontrada."
+    validations:
+      required: true
+ 
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: "Pasos para reproducir"
+      description: "Identificá los pasos para reproducir el error o el punto de dolor."
+      placeholder: "1. Ir a '...'\n2. Hacer click en '...'\n3. Navegar hasta '...'\n4. Error"
+    validations:
+      required: true
+ 
+  - type: textarea
+    id: expectation
+    attributes:
+      label: "Comportamiento esperado"
+      description: "Describí el comportamiento esperado de forma clara y concisa."
+    validations:
+      required: true
+ 
+  - type: textarea
+    id: related_code
+    attributes:
+      label: "Código relacionado"
+      description: "Incluí imágenes o extractos del código relacionados al error o punto de dolor."
+      placeholder: "Adjuntá el código relevante aquí."
+    validations:
+      required: false
+ 
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: "Capturas de pantalla"
+      description: "Tomá capturas de pantalla del error o punto de dolor en el entorno en el que se encuentre (producción o desarrollo)."
+    validations:
+      required: true
+ 
+  - type: dropdown
+    id: version
+    attributes:
+      label: "Versión de Obelisco"
+      description: "Seleccioná la versión del sistema de diseño que utilices."
+      options:
+        - "Obelisco v2"
+        - "Obelisco v1 (sin soporte)"
+    validations:
+      required: true
+ 
+  - type: textarea
+    id: settings
+    attributes:
+      label: "Configuración del sistema/Tecnología en uso "
+      description: "Identificá el dispositivo, sistema operativo, navegador y versión del navegador relacionado al issue."
+      placeholder: "- Dispositivo:\n- Sistema operativo:\n- Navegador y versión:"
+    validations:
+      required: true
+ 
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: "Información adicional"
+      description: "Sumá cualquier información adicional que consideres necesaria para entender el error o punto de dolor."
+    validations:
+      required: false
+ 
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: "¿Tenés algo adelantado o querés contribuir a la solución?"
+      description: "Si realizaste pruebas o exploraciones, o querés contribuir con la solución, marcá la opción."
+      options:
+        - label: "Sí, quiero y contribuiré a la solución del problema."
+          required: false

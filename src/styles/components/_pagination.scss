@@ -1,0 +1,246 @@
+// Custom variables and mixins
+$pagination-bg: $white;
+$pagination-active-color: $white;
+$pagination-hover-color: $blue-700;
+$pagination-active-bg: $blue-700;
+$pagination-size: 2.75rem; //44px
+$pagination-size-mobile: 2rem; //32px
+$pagination-icon-padding-x: 0.5rem;
+$padding-icon-previous: 0.5rem 0.75rem 0.5rem 0.25rem;
+$padding-icon-next: 0.5rem 0.25rem 0.5rem 0.75rem;
+
+// Icons
+$svg-base-left: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 6.70498C14.61 6.31498 13.98 6.31498 13.59 6.70498L9.00002 11.295C8.61002 11.685 8.61002 12.315 9.00002 12.705L13.59 17.295C13.98 17.685 14.61 17.685 15 17.295C15.39 16.905 15.39 16.275 15 15.885L11.12 11.995L15 8.11498C15.39 7.72498 15.38 7.08498 15 6.70498Z" fill="%23';
+$svg-base-right: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9.00002 6.71063C8.61002 7.10063 8.61002 7.73063 9.00002 8.12063L12.88 12.0006L9.00002 15.8806C8.61002 16.2706 8.61002 16.9006 9.00002 17.2906C9.39002 17.6806 10.02 17.6806 10.41 17.2906L15 12.7006C15.39 12.3106 15.39 11.6806 15 11.2906L10.41 6.70063C10.03 6.32063 9.39002 6.32063 9.00002 6.71063Z" fill="%23';
+$color-default: '101E37';
+$color-hover: '274986';
+$color-disabled: '9EAAB8';
+$color-active: 'FFFFFF';
+
+$pagination-icon-left: url('#{$svg-base-left}#{$color-default}"/></svg>');
+$pagination-icon-right: url('#{$svg-base-right}#{$color-default}"/></svg>');
+$pagination-icon-left-hover: url('#{$svg-base-left}#{$color-hover}"/></svg>');
+$pagination-icon-right-hover: url('#{$svg-base-right}#{$color-hover}"/></svg>');
+$pagination-icon-left-disabled: url('#{$svg-base-left}#{$color-disabled}"/></svg>');
+$pagination-icon-right-disabled: url('#{$svg-base-right}#{$color-disabled}"/></svg>');
+$pagination-icon-left-active: url('#{$svg-base-left}#{$color-active}"/></svg>');
+$pagination-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
+
+@mixin pagination-states(
+  $text-decoration,
+  $box-shadow,
+  $bg-color,
+  $color,
+  $icon-left,
+  $icon-right
+) {
+  text-decoration: none;
+  box-shadow: $box-shadow;
+  background-color: $bg-color;
+  color: $color;
+
+  .page-previous-icon {
+    content: $icon-left;
+  }
+
+  .page-next-icon {
+    content: $icon-right;
+  }
+
+  .page-previous-text,
+  .page-next-text {
+    color: $color;
+  }
+}
+
+// Custom styles
+.pagination {
+  justify-content: center;
+  gap: 0.5rem;
+
+  .page-item {
+    display: inline-block;
+    height: $pagination-size;
+
+    &.no-events {
+      pointer-events: none;
+      border: none;
+      box-shadow: none;
+
+      .page-link {
+        background-color: transparent;
+        padding: 0;
+        outline: none;
+        height: 40px;
+        border: none;
+        box-shadow: none;
+      }
+    }
+
+    .page-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: $border-radius-lg;
+      border: none;
+      outline: $outline-border;
+      height: $pagination-size;
+      min-width: 48px;
+      gap: 0.25rem;
+      text-decoration: none;
+      @extend .headline-md;
+      font-weight: $font-weight-normal;
+      word-break: normal;
+      padding: 0.5rem 0.25rem;
+      color: $body-color;
+
+      .page-previous-icon,
+      .page-next-icon {
+        display: inline-block;
+        vertical-align: text-bottom;
+      }
+
+      .page-previous-icon {
+        content: $pagination-icon-left;
+      }
+
+      .page-next-icon {
+        content: $pagination-icon-right;
+      }
+
+      &:has(.page-previous-icon) {
+        padding: $padding-icon-previous;
+      }
+
+      &:has(.page-next-icon) {
+        padding: $padding-icon-next;
+      }
+
+      &:has(.page-previous-icon, .page-next-icon):not(
+          :has(.page-next-text, .page-previous-text)
+        ) {
+        padding-left: $pagination-icon-padding-x;
+        padding-right: $pagination-icon-padding-x;
+      }
+
+      &:visited {
+        color: $body-color;
+      }
+
+      &:focus,
+      &.focus {
+        @include pagination-states(
+          none,
+          $focus-box-shadow,
+          $pagination-bg,
+          $body-color,
+          $pagination-icon-left,
+          $pagination-icon-right
+        );
+        outline: 0.25rem solid transparent;
+      }
+
+      &:hover,
+      &.hover {
+        @include pagination-states(
+          underline,
+          none,
+          $pagination-bg,
+          $pagination-hover-color,
+          $pagination-icon-left-hover,
+          $pagination-icon-right-hover
+        );
+        outline: $hover-outline;
+        text-decoration: underline;
+        text-decoration-color: transparent;
+      }
+    }
+
+    &:active,
+    &.active {
+      .page-link,
+      .page-link:visited {
+        @include pagination-states(
+          none,
+          none,
+          $pagination-active-bg,
+          $pagination-active-color,
+          $pagination-icon-left-active,
+          $pagination-icon-right-active
+        );
+        z-index: 0;
+        outline: 0.25rem solid transparent;
+        outline-offset: -2px;
+        box-shadow: 0 0 0 0.125rem $slate-100;
+
+        &:hover,
+        &.hover {
+          @include pagination-states(
+            none,
+            none,
+            $pagination-active-bg,
+            $pagination-active-color,
+            $pagination-icon-left-active,
+            $pagination-icon-right-active
+          );
+          outline: 2px solid transparent;
+          outline-offset: 0;
+          box-shadow: 0 0 0 0.125rem $blue-700;
+          text-decoration: underline;
+          text-decoration-color: transparent;
+        }
+
+        &:focus,
+        &.focus {
+          outline: 0.25rem solid transparent;
+          outline-offset: 0;
+          box-shadow: $focus-box-shadow;
+        }
+      }
+    }
+
+    &:is(.disabled) {
+      pointer-events: none;
+    }
+
+    &.disabled {
+      .page-link {
+        background-color: $disabled-bg;
+        outline-color: $disabled-bg;
+        color: $disabled-text;
+        opacity: 1;
+        cursor: none;
+        pointer-events: none;
+      }
+
+      .page-previous-icon {
+        content: $pagination-icon-left-disabled;
+      }
+
+      .page-next-icon {
+        content: $pagination-icon-right-disabled;
+      }
+    }
+  }
+
+  .page-navigation {
+    padding-top: 0.25rem * 6;
+    padding-bottom: 0.25rem * 4;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .pagination {
+    justify-content: space-between;
+    width: 100%;
+
+    .page-item {
+      &:not(:first-child, :last-child) {
+        display: none;
+      }
+    }
+  }
+}

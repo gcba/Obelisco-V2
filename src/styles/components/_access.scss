@@ -1,0 +1,345 @@
+// Variables and mixins
+$access-padding: 1rem;
+$access-padding-desktop: 1.5rem;
+$access-padding-sm: 0.5rem 1rem;
+$access-padding-sm-desktop: 0.75rem 1.5rem;
+$access-text-color: $slate-950; //#38485C
+// Accesos organismos
+$padding-card-access-body: 1.5rem;
+$padding-title-option: 0.75rem 1.5rem;
+$font-size-icon-card: 2rem;
+$card-size: 4rem; //64px;
+$border-radius-card-item: 0 0 0.5rem 0.5rem;
+$no-text-decoration: none;
+$margin-clearfix: 0 0 0.5rem; //0 0 8px
+$color-clearfix: $slate-100;
+$height-clearfix: 0.125rem;
+
+// Icono flecha de Accesos
+$access-arrow: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><g clip-path="url(%23clip0_1497_1475)"><path d="M9.83547 15.88L13.7155 12L9.83547 8.11998C9.44547 7.72998 9.44547 7.09998 9.83547 6.70998C10.2255 6.31998 10.8555 6.31998 11.2455 6.70998L15.8355 11.3C16.2255 11.69 16.2255 12.32 15.8355 12.71L11.2455 17.3C10.8555 17.69 10.2255 17.69 9.83547 17.3C9.45547 16.91 9.44547 16.27 9.83547 15.88Z" fill="%23101E37"/></g><defs><clipPath id="clip0_1497_1475"><rect width="24" height="24" fill="white" transform="translate(0.54541)"/></clipPath></defs></svg>');
+$access-arrow-blue: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none"><g clip-path="url(%23clip0_2222_853)"><path d="M9.83547 15.88L13.7155 12L9.83547 8.11998C9.44547 7.72998 9.44547 7.09998 9.83547 6.70998C10.2255 6.31998 10.8555 6.31998 11.2455 6.70998L15.8355 11.3C16.2255 11.69 16.2255 12.32 15.8355 12.71L11.2455 17.3C10.8555 17.69 10.2255 17.69 9.83547 17.3C9.45547 16.91 9.44547 16.27 9.83547 15.88Z" fill="%23274986"/></g><defs><clipPath id="clip0_2222_853"><rect width="24" height="24" fill="white" transform="translate(0.54541)"/></clipPath></defs></svg>');
+
+@mixin display-flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin access-icon($icon) {
+  content: '';
+  height: 1.5rem;
+  width: 1.5rem;
+  min-width: 1.5rem;
+  background: transparent #{$icon} no-repeat center center;
+}
+
+// Estilos para estado active de acceso
+@mixin access-active {
+  outline: 0.25rem solid transparent;
+  color: $active-color;
+  box-shadow: $focus-box-shadow;
+
+  .access-text {
+    color: $active-color;
+  }
+}
+
+// Custom styles
+a.list-group-item {
+  text-decoration: $no-text-decoration;
+  color: $body-color;
+  border: none;
+  outline: $outline-border;
+  border-radius: $border-radius-lg;
+  padding: $access-padding;
+  display: flex;
+  height: auto;
+  background-color: $white;
+
+  @include media-breakpoint-up(xl) {
+    padding: $access-padding-desktop;
+  }
+
+  .o-icon {
+    font-size: 1.5rem;
+    align-self: center;
+    margin-right: 0.75rem;
+    vertical-align: middle;
+  }
+
+  .access-title {
+    @extend .text-md;
+    font-weight: $font-weight-normal;
+    display: inline-block;
+  }
+
+  &:not(.access-content) {
+    > .access-title {
+      width: 100%;
+    }
+  }
+
+  .access-content {
+    width: 100%;
+
+    .access-text {
+      @extend .text-sm;
+      font-weight: $font-weight-normal;
+      margin: 0.125rem 0 0;
+      color: $access-text-color;
+    }
+  }
+
+  &:visited {
+    color: $body-color;
+
+    .access-text {
+      color: $access-text-color;
+    }
+  }
+
+  &:first-child {
+    border-radius: $border-radius-lg;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+    border-radius: $border-radius-lg;
+  }
+
+  &:hover,
+  &.hover {
+    outline: $hover-outline;
+    color: $hover-color;
+    text-decoration: $no-text-decoration;
+
+    .access-title {
+      @extend .underline-2;
+      text-decoration-color: transparent;
+    }
+
+    .access-text {
+      color: $hover-color;
+    }
+
+    &::after {
+      @include access-icon($access-arrow-blue);
+    }
+  }
+
+  &:focus,
+  &.focus {
+    box-shadow: $focus-box-shadow;
+    outline: $outline-transparent;
+    background: $white;
+
+    &:hover:not(:active),
+    &.hover:not(:active),
+    &:hover:not(.active),
+    &.hover:not(.active) {
+      box-shadow: $focus-box-shadow;
+      outline: $outline-transparent;
+      color: $body-color;
+
+      .access-title {
+        @extend .underline-2;
+        text-decoration-color: transparent;
+      }
+
+      .access-text {
+        color: $access-text-color;
+      }
+
+      &::after {
+        float: right;
+        @include access-icon($access-arrow);
+      }
+    }
+  }
+
+  &:active,
+  &.active {
+    @include access-active;
+
+    &::after {
+      @include access-icon($access-arrow-blue); // icono azul
+    }
+
+    &:hover,
+    &.hover,
+    &:focus,
+    &.focus {
+      @include access-active;
+
+      &:hover,
+      &.hover {
+        @include access-active;
+
+        &::after {
+          @include access-icon($access-arrow-blue); // icono azul
+        }
+      }
+    }
+
+    &:visited {
+      color: $active-color;
+    }
+
+    .access-title {
+      text-decoration-color: transparent;
+    }
+  }
+
+  &::after {
+    float: right;
+    @include access-icon($access-arrow);
+    margin-left: 0.25rem;
+  }
+
+  &.item-sm {
+    padding: $access-padding-sm;
+    @include media-breakpoint-up(xl) {
+      padding: $access-padding-sm-desktop;
+    }
+  }
+}
+
+// Accesos organismos
+.group-access {
+  display: grid;
+  margin-bottom: 1rem;
+  background-color: $white;
+
+  .card-access {
+    display: grid;
+    width: 100%;
+    outline: 0.125rem solid $slate-100;
+    border-radius: $border-radius-lg;
+    padding-bottom: 0;
+
+    .clearfix {
+      margin: $margin-clearfix;
+      border: none;
+      height: $height-clearfix;
+      min-height: $height-clearfix;
+      background-color: $color-clearfix;
+      opacity: 1;
+    }
+
+    .card-access-body {
+      display: flex;
+      gap: 0.75rem;
+      padding: $padding-card-access-body;
+
+      &:not(.p-list) {
+        &:has(~ .container-access) {
+          ~ .card-item {
+            &:not(:hover) {
+              outline-color: transparent;
+            }
+          }
+        }
+      }
+
+      h4 {
+        @extend .headline-lg;
+        font-weight: $font-weight-bold;
+        margin-bottom: 0.25rem;
+      }
+
+      &:not(.reverse) {
+        justify-content: space-between;
+      }
+
+      .card-access-title {
+        @extend .h4;
+        margin-bottom: 0.25rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+      }
+
+      .card-access-text {
+        margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+      }
+
+      .card-access-icon {
+        font-size: $font-size-icon-card;
+        background-color: $slate-50;
+        flex: 0 0 $card-size;
+        height: $card-size;
+        border-radius: $border-radius-lg;
+        text-align: center;
+        line-height: $card-size;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &.descriptive {
+          color: $blue-500;
+          font-weight: $font-weight-bold;
+          font-size: 2rem;
+          font-family: $font-family-headings;
+        }
+      }
+
+      &.reverse {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+      }
+
+      & + .list-group-item {
+        border-radius: $border-radius-card-item;
+      }
+    }
+
+    .container-access {
+      .access-option {
+        padding: 0;
+
+        .list-group-item {
+          &:last-child {
+            margin-bottom: 0;
+          }
+          margin-bottom: 0.5rem;
+
+          &:not(:hover) {
+            outline-color: transparent;
+          }
+        }
+
+        .title-option {
+          padding: $padding-title-option;
+          @extend .headline-md;
+          font-weight: $font-weight-semibold;
+          margin-bottom: 0.5rem;
+        }
+
+        & + .clearfix {
+          & + .card-item {
+            border-radius: 0.5rem;
+
+            &:not(:hover) {
+              outline-color: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .card-item {
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+    @include display-flex-between;
+  }
+}

@@ -1,0 +1,512 @@
+$form-search-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15.9765 14.4716H15.1865L14.9065 14.2016C16.1065 12.8016 16.7265 10.8916 16.3865 8.86157C15.9165 6.08157 13.5965 3.86157 10.7965 3.52157C6.56646 3.00157 3.00646 6.56157 3.52646 10.7916C3.86646 13.5916 6.08646 15.9116 8.86646 16.3816C10.8965 16.7216 12.8065 16.1016 14.2065 14.9016L14.4765 15.1816V15.9716L18.7265 20.2216C19.1365 20.6316 19.8065 20.6316 20.2165 20.2216C20.6265 19.8116 20.6265 19.1416 20.2165 18.7316L15.9765 14.4716ZM9.97646 14.4716C7.48646 14.4716 5.47646 12.4616 5.47646 9.97157C5.47646 7.48157 7.48646 5.47157 9.97646 5.47157C12.4665 5.47157 14.4765 7.48157 14.4765 9.97157C14.4765 12.4616 12.4665 14.4716 9.97646 14.4716Z" fill="%235C6A7A"/></svg>');
+$form-search-icon-button: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15.9765 14.4716H15.1865L14.9065 14.2016C16.1065 12.8016 16.7265 10.8916 16.3865 8.86157C15.9165 6.08157 13.5965 3.86157 10.7965 3.52157C6.56646 3.00157 3.00646 6.56157 3.52646 10.7916C3.86646 13.5916 6.08646 15.9116 8.86646 16.3816C10.8965 16.7216 12.8065 16.1016 14.2065 14.9016L14.4765 15.1816V15.9716L18.7265 20.2216C19.1365 20.6316 19.8065 20.6316 20.2165 20.2216C20.6265 19.8116 20.6265 19.1416 20.2165 18.7316L15.9765 14.4716ZM9.97646 14.4716C7.48646 14.4716 5.47646 12.4616 5.47646 9.97157C5.47646 7.48157 7.48646 5.47157 9.97646 5.47157C12.4665 5.47157 14.4765 7.48157 14.4765 9.97157C14.4765 12.4616 12.4665 14.4716 9.97646 14.4716Z" fill="%23101e37"/></svg>');
+$form-search-icon-disabled: url('data:image/svg+xml,<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="buscar" clip-path="url(%23clip0_1940_23370)"><path id="bx-search" d="M10.9836 19.301C12.7546 19.3006 14.4745 18.7078 15.8696 17.617L20.2586 22.003L21.6696 20.593L17.2826 16.206C18.3841 14.7799 18.9701 13.023 18.9453 11.2213C18.9206 9.41956 18.2864 7.67936 17.1461 6.28419C16.0058 4.88901 14.4267 3.9211 12.666 3.53815C10.9053 3.15521 9.06681 3.3798 7.45008 4.17534C5.83334 4.97087 4.53366 6.29047 3.76278 7.91911C2.99191 9.54775 2.79529 11.3894 3.20495 13.1441C3.61461 14.8988 4.60641 16.463 6.01876 17.582C7.4311 18.7009 9.18074 19.3086 10.9826 19.306L10.9836 19.301ZM10.9836 5.33296C12.1683 5.33217 13.3265 5.68279 14.3119 6.34045C15.2972 6.99812 16.0653 7.93327 16.519 9.0276C16.9727 10.1219 17.0917 11.3262 16.8607 12.4882C16.6298 13.6501 16.0594 14.7174 15.2218 15.5551C14.3841 16.3928 13.3168 16.9632 12.1548 17.1941C10.9929 17.425 9.78858 17.3061 8.69425 16.8524C7.59992 16.3987 6.66476 15.6306 6.0071 14.6452C5.34943 13.6599 4.99881 12.5016 4.9996 11.317C5.00225 9.73071 5.63355 8.2102 6.7552 7.08855C7.87684 5.96691 9.39736 5.3356 10.9836 5.33296Z" fill="%2369788A"/></g><defs><clipPath id="clip0_1940_23370"><rect width="24" height="24" fill="white" transform="translate(0 0.333008)"/></clipPath></defs></svg>');
+$form-search-button-reset: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18.3 5.70997C17.91 5.31997 17.28 5.31997 16.89 5.70997L12 10.59L7.10997 5.69997C6.71997 5.30997 6.08997 5.30997 5.69997 5.69997C5.30997 6.08997 5.30997 6.71997 5.69997 7.10997L10.59 12L5.69997 16.89C5.30997 17.28 5.30997 17.91 5.69997 18.3C6.08997 18.69 6.71997 18.69 7.10997 18.3L12 13.41L16.89 18.3C17.28 18.69 17.91 18.69 18.3 18.3C18.69 17.91 18.69 17.28 18.3 16.89L13.41 12L18.3 7.10997C18.68 6.72997 18.68 6.08997 18.3 5.70997Z" fill="%23101E37"/></svg>');
+$form-search-reset-bar: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1" height="24" viewBox="0 0 1 24" fill="none"><rect y="0.5" width="1" height="23" fill="%239EAAB8"/></svg>');
+$form-date-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M20.0009 3H19.0009V2C19.0009 1.45 18.5509 1 18.0009 1C17.4509 1 17.0009 1.45 17.0009 2V3H7.00092V2C7.00092 1.45 6.55092 1 6.00092 1C5.45092 1 5.00092 1.45 5.00092 2V3H4.00092C2.90092 3 2.00092 3.9 2.00092 5V21C2.00092 22.1 2.90092 23 4.00092 23H20.0009C21.1009 23 22.0009 22.1 22.0009 21V5C22.0009 3.9 21.1009 3 20.0009 3ZM19.0009 21H5.00092C4.45092 21 4.00092 20.55 4.00092 20V8H20.0009V20C20.0009 20.55 19.5509 21 19.0009 21Z" fill="%23101E37"/></svg>');
+$form-date-icon-disabled: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="calendario" clip-path="url(%23clip0_1914_1188)"><path id="Vector" d="M20 3H19V2C19 1.45 18.55 1 18 1C17.45 1 17 1.45 17 2V3H7V2C7 1.45 6.55 1 6 1C5.45 1 5 1.45 5 2V3H4C2.9 3 2 3.9 2 5V21C2 22.1 2.9 23 4 23H20C21.1 23 22 22.1 22 21V5C22 3.9 21.1 3 20 3ZM19 21H5C4.45 21 4 20.55 4 20V8H20V20C20 20.55 19.55 21 19 21Z" fill="%2369788A"/></g><defs><clipPath id="clip0_1914_1188"><rect width="24" height="24" fill="white"/></clipPath></defs></svg>');
+$validation-icons: (
+  'invalid':
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M7.99992 1.33337C4.31992 1.33337 1.33325 4.32004 1.33325 8.00004C1.33325 11.68 4.31992 14.6667 7.99992 14.6667C11.6799 14.6667 14.6666 11.68 14.6666 8.00004C14.6666 4.32004 11.6799 1.33337 7.99992 1.33337ZM7.99992 8.66671C7.63325 8.66671 7.33325 8.36671 7.33325 8.00004V5.33337C7.33325 4.96671 7.63325 4.66671 7.99992 4.66671C8.36659 4.66671 8.66659 4.96671 8.66659 5.33337V8.00004C8.66659 8.36671 8.36659 8.66671 7.99992 8.66671ZM8.66659 11.3334H7.33325V10H8.66659V11.3334Z" fill="%23CC3333"/></svg>'),
+  'valid':
+    url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="check_circle"><path id="Vector" d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM9.29 16.29L5.7 12.7C5.31 12.31 5.31 11.68 5.7 11.29C6.09 10.9 6.72 10.9 7.11 11.29L10 14.17L16.88 7.29C17.27 6.9 17.9 6.9 18.29 7.29C18.68 7.68 18.68 8.31 18.29 8.7L10.7 16.29C10.32 16.68 9.68 16.68 9.29 16.29Z" fill="%2326874A"/></g></svg>'),
+);
+@mixin focus-style {
+  background-color: $slate-50;
+  box-shadow: $focus-box-shadow;
+  outline: $outline-transparent;
+}
+
+// Etiqueta para inputs: Required y optional
+$badge-separation: 0.5rem;
+$badge-color: $body-color;
+
+.badge-forms {
+  @extend .text-sm;
+  color: $badge-color;
+  text-decoration: none;
+  min-height: 20px;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-right: $badge-separation;
+  border-radius: 4px;
+  padding: 0 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+
+.badge-required-forms {
+  color: $body-color;
+  background-color: $purple-100;
+  display: inline-grid;
+}
+
+.badge-optional-forms {
+  @extend .badge-required-forms;
+  background-color: $cyan-100;
+}
+
+// Etiquetas para inputs: Required y optional
+
+// Field Wrapper. Prefijo - input - sufijo
+// .field-wrapper {
+//   border: 2px solid #101e37;
+//   border-radius: 8px;
+//   padding: 12px 16px;
+//   display: flex;
+//   align-items: center;
+//   min-height: 24px;
+//   margin-top: 8px;
+
+//   .field-wrapper-prefix,
+//   .field-wrapper-suffix {
+//     flex: 0 0 auto;
+//     white-space: nowrap;
+//     display: flex;
+//     align-items: center;
+//   }
+
+//   .field-wrapper-prefix {
+//     margin-right: 0.5rem;
+//     border-right: 2px solid black;
+//     padding-right: 0.5rem;
+//   }
+
+//   .field-wrapper-suffix {
+//     margin-left: 0.5rem;
+//     border-left: 2px solid black;
+//     padding-left: 0.5rem;
+//   }
+
+//   .field-input {
+//     flex: 1 1 auto;
+//     min-width: 0;
+//     border: none;
+//     background-color: transparent;
+//     border-radius: 0;
+//     outline: none;
+//     padding: 0;
+//     margin: 0;
+//     box-shadow: none;
+//     display: block;
+
+//     &:focus {
+//       background-color: transparent;
+//       box-shadow: none;
+//       outline: none none none;
+//     }
+//   }
+// }
+
+// Field Wrapper. Prefijo - input - sufijo
+
+// - Estilos generales del label común
+.form-label-container {
+  align-items: center;
+  gap: 8px;
+  grid-area: label-wrapper;
+
+  .form-label {
+    font-weight: bold;
+    color: $body-color;
+  }
+}
+
+// Estilos generales del label común -
+
+.time-picker {
+  position: relative;
+  display: inline-block;
+}
+
+.time-picker .icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  pointer-events: none;
+  color: #555;
+}
+
+.time-picker input {
+  width: 150px;
+  height: 36px;
+  font-size: 16px;
+  padding-right: 30px;
+}
+
+.form-label-number {
+  @extend .text-sm;
+  grid-area: number;
+  display: block;
+  margin-top: 0.25rem;
+  float: right;
+}
+
+.form-label-container + .form-label-description {
+  margin-top: 0;
+}
+
+.form-label-description {
+  @extend .text-sm;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  grid-area: description;
+  display: grid;
+}
+
+.form-label {
+  @extend .headline-md;
+  color: $blue-900;
+  margin-bottom: 0.5rem;
+  position: relative;
+  grid-area: label;
+}
+
+// - Input file
+input[type='file'] {
+  padding: 6px;
+  color: $placeholder-color;
+  font-family: Arial, sans-serif;
+  height: 48px;
+  @extend .text-md;
+}
+
+// botón seleccionar archivo
+input[type='file']::-webkit-file-upload-button {
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background-color: #005e7a !important;
+  height: 48px;
+
+  @extend .headline-md;
+}
+
+input[type='file']:disabled {
+  border: 2px solid $slate-400;
+  border-radius: 8px;
+  background-color: $slate-100;
+  color: $slate-700;
+  display: flex;
+  align-items: center;
+  cursor: not-allowed;
+}
+
+input[type='file']:disabled::-webkit-file-upload-button {
+  color: $slate-400;
+  padding: 12px 24px;
+  background-color: $slate-100 !important;
+  cursor: not-allowed;
+  pointer-events: none;
+  border: none;
+}
+
+// Input file -
+
+// - Estilos generales del Input. form-control
+.form-control {
+  background-color: $gray-0;
+  padding: 0.75rem 1rem;
+  color: $body-color;
+  font-size: $md-body-fs;
+  font-weight: $md-body-fw;
+  border: none;
+  border-radius: $border-radius-lg;
+  outline: 0.125rem solid $body-color;
+  outline-offset: 0;
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: $placeholder-color;
+  }
+
+  &.is-valid,
+  &.is-invalid {
+    background-image: none;
+    outline: transparent;
+    border-color: transparent !important;
+
+    input[type='file']::-webkit-file-upload-button:hover {
+      border-color: transparent !important;
+    }
+
+    &:focus {
+      @include focus-style;
+
+      input[type='file']::-webkit-file-upload-button:hover {
+        border-color: transparent !important;
+      }
+    }
+  }
+
+  &.is-valid {
+    box-shadow: 0 0 0 2px $green-600;
+  }
+
+  &.is-invalid {
+    box-shadow: 0 0 0 2px $red-500;
+  }
+
+  &:focus {
+    @include focus-style;
+  }
+
+  &:disabled {
+    background-color: $slate-100;
+    color: $disabled-text;
+    outline-color: $slate-400;
+
+    &:hover {
+      cursor: not-allowed;
+    }
+  }
+
+  &:disabled::placeholder {
+    color: $disabled-text;
+  }
+
+  &.form-white {
+    background-color: $white;
+
+    &:focus {
+      background-color: $white;
+    }
+  }
+}
+
+// Estilos generales del Input. form-control -
+
+// - Estilos para input date
+input[type='date'] {
+  position: relative;
+
+  &::before {
+    content: $form-date-icon;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    cursor: pointer;
+    height: 24px;
+  }
+
+  &:disabled::before {
+    content: $form-date-icon-disabled;
+  }
+}
+
+// Estilos para input date -
+
+// Para Opera, Chrome, Edge y Safari
+::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  cursor: pointer;
+}
+
+// - Estilos para input Search
+.search-container {
+  position: relative;
+
+  .input-search {
+    &[type='search'] {
+      background-image: $form-search-icon;
+      background-repeat: no-repeat;
+      background-position: center left 1rem;
+      padding-left: 3.125rem; //50px
+      padding-right: 3.125rem; //50px
+      box-sizing: border-box;
+
+      .reset {
+        vertical-align: middle;
+      }
+    }
+
+    [type='search']:invalid ~ .reset[type='reset'] {
+      display: none;
+    }
+
+    &[type='search']:placeholder-shown {
+      ~ .reset {
+        display: none;
+      }
+    }
+
+    &[type='search'] ~ .reset[type='reset'] {
+      border: none;
+      border-radius: 0.5rem;
+      position: absolute;
+      background: transparent $form-search-button-reset no-repeat center center;
+      right: 16px;
+      top: 50%;
+      transform: translate(0, -50%);
+      height: 24px;
+      width: 24px;
+    }
+
+    &:disabled {
+      background-image: $form-search-icon-disabled;
+
+      ~ .button-search {
+        background-image: $form-search-icon-disabled;
+        pointer-events: none;
+      }
+    }
+
+    &.input-search-with-button {
+      &[type='search'] {
+        background-image: none;
+        padding-left: 1rem;
+        padding-right: 5.5rem;
+      }
+
+      &[type='search'] ~ .reset[type='reset'] {
+        border: none;
+        border-radius: 0.5rem;
+        position: absolute;
+        background: transparent $form-search-button-reset no-repeat center
+          center;
+        right: 60px;
+        top: 50%;
+        transform: translate(0, -50%);
+
+        &::after {
+          content: '';
+          position: relative;
+          left: 22px;
+          top: 50%;
+          transform: translate(0, -50%);
+          display: inline-block;
+          height: 100%;
+          width: 1px;
+          min-width: 1px;
+          background: transparent $form-search-reset-bar no-repeat center center;
+        }
+      }
+    }
+  }
+
+  .button-search {
+    background-image: $form-search-icon-button;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translate(0, -50%);
+    align-items: center;
+    display: flex;
+    border: none;
+    border-radius: $border-radius-lg;
+    outline: $outline-transparent-subtle;
+
+    &:focus {
+      @include focus-style;
+    }
+  }
+
+  .reset {
+    display: block;
+    cursor: pointer;
+    outline: 0.125rem solid transparent;
+    outline-offset: -2px;
+
+    &:focus,
+    &:focus-visible {
+      box-shadow: $focus-box-shadow;
+      border-radius: $border-radius-lg;
+      outline: 0.25rem solid transparent;
+
+      &::after {
+        color: transparent;
+        background-image: none;
+      }
+    }
+  }
+}
+
+// Para input search de Opera, Chrome, Edge y Safari
+input[type='search']::-webkit-search-cancel-button {
+  appearance: none;
+}
+
+// Para input search de Firefox
+input[type='search']::-moz-search-clear-button {
+  display: none;
+}
+
+// Estilos visibles para validación
+.valid-feedback,
+.invalid-feedback {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 12px;
+  max-width: 443px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: $body-color;
+  position: relative;
+  padding-left: 44px;
+  margin-top: 0.5rem;
+
+  p {
+    @extend .text-sm;
+    margin-bottom: 0;
+    color: $body-color;
+  }
+}
+
+.valid-feedback {
+  background-color: $green-50;
+}
+
+.invalid-feedback {
+  background-color: $red-50;
+  padding-left: 44px;
+}
+
+.valid-feedback::before,
+.invalid-feedback::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+}
+
+.valid-feedback::before {
+  background-image: map-get($validation-icons, 'valid');
+}
+
+.invalid-feedback::before {
+  background-image: map-get($validation-icons, 'invalid');
+}
+
+// Estilos para validación -
+
+//Input con fondo
+.form-bg-light {
+  background-color: $light;
+
+  .form-control,
+  .custom-select {
+    &:not(:disabled) {
+      background-color: $white;
+    }
+  }
+}
+
+//Input con fondo -

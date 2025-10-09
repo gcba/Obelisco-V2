@@ -8,27 +8,27 @@ $breadcrumb-divider-padding-right: 0;
 $breadcrumb-bg: transparent;
 $breadcrumb-item-padding-right: 0.5rem;
 $breadcrumb-padding-x: 0;
- 
+
 nav:has(ol.breadcrumb) {
   display: inline-block;
- 
+
   &.bg-dark {
     .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
       background: transparent $breadcrumb-divider-dark no-repeat center center;
     }
- 
+
     .breadcrumb .breadcrumb-item {
       a {
         color: white;
       }
     }
   }
- 
+
   .breadcrumb .breadcrumb-item {
     &:not(:last-child) {
       padding-right: $breadcrumb-item-padding-right;
     }
- 
+
     a {
       max-width: 16rem;
       display: block;
@@ -37,7 +37,7 @@ nav:has(ol.breadcrumb) {
       text-overflow: ellipsis;
       color: $body-color;
     }
- 
+
     &::before {
       width: $breadcrumb-divider-width;
       min-width: $breadcrumb-divider-width;
@@ -45,10 +45,10 @@ nav:has(ol.breadcrumb) {
       margin-right: $breadcrumb-divider-margin-right;
       padding-right: $breadcrumb-divider-padding-right;
     }
- 
+
     & + .breadcrumb-item {
       padding-left: 0;
- 
+
       &::before {
         content: '';
         background: transparent $breadcrumb-divider no-repeat center center;
@@ -56,13 +56,13 @@ nav:has(ol.breadcrumb) {
     }
   }
 }
- 
+
 @include media-breakpoint-down(xl) {
   .breadcrumb {
     .breadcrumb-item:last-child::before {
       transform: rotate(0.5turn);
     }
- 
+
     .breadcrumb-item:not(:last-child) {
       display: none;
     }

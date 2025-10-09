@@ -27,7 +27,9 @@ const ReleasesComponents: React.FC = () => {
           <li>
             Se modifica la propiedad color del componente Migas de pan para fondos claros al <code>#101e37</code>
           </li>
-          <li>Se agrega la variante <code>dark</code> de Migas de pan para fondos oscuros</li>
+          <li>
+            Se agrega la variante <code>dark</code> de Migas de pan para fondos oscuros
+          </li>
           <li>Se modifica el color de la línea divisoria del componente header</li>
         </ul>
       ),

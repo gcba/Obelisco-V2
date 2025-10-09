@@ -1,5 +1,6 @@
 import Image from 'next/image';
 
+import LinkClient from '@/components/LinkClient';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 
@@ -10,7 +11,7 @@ const sections = [
     title: 'carousel',
     content: (
       <div className="container">
-        <div id="carousel" className="carousel slide" data-bs-ride="carousel">
+        <div id="carousel" className="carousel slide" data-bs-ride="carousel" data-bs-wrap="false">
           <div className="carousel-indicators">
             <button
               type="button"
@@ -19,20 +20,99 @@ const sections = [
               className="active"
               aria-current="true"
               aria-label="Slide 1"
+              style={{ background: 'red' }}
             ></button>
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button
+              style={{ background: 'red' }}
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              style={{ background: 'red' }}
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
           </div>
 
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src="https://picsum.photos/800/600" className="d-block w-100" alt="Slide 1" />
+              <div className="panel-horizontal-content">
+                <div className="panel-horizontal">
+                  <Image
+                    src={`${basePath}/images/destacado.jpg`}
+                    alt="descripción de imagen"
+                    className="panel-img"
+                    width={538}
+                    height={304}
+                  ></Image>
+                  <div className="panel-body">
+                    <h2 className="panel-title">Título del destacado</h2>
+                    <p className="panel-text">
+                      Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
+                      negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas.
+                      No puede contener negritas ni enlaces
+                    </p>
+                    <div className="panel-footer">
+                      <LinkClient className="btn btn-primary btn-lg">Botón</LinkClient>
+                      <LinkClient className="btn btn-outline-primary btn-lg">Botón</LinkClient>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="carousel-item">
-              <img src="https://picsum.photos/800/600" className="d-block w-100" alt="Slide 2" />
+              <div className="panel-horizontal-content">
+                <div className="panel-horizontal">
+                  <Image
+                    src={`${basePath}/images/destacado.jpg`}
+                    alt="descripción de imagen"
+                    className="panel-img"
+                    width={538}
+                    height={304}
+                  ></Image>
+                  <div className="panel-body">
+                    <h2 className="panel-title">Título del destacado</h2>
+                    <p className="panel-text">
+                      Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
+                      negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas.
+                      No puede contener negritas ni enlaces
+                    </p>
+                    <div className="panel-footer">
+                      <LinkClient className="btn btn-primary btn-lg">Botón</LinkClient>
+                      <LinkClient className="btn btn-outline-primary btn-lg">Botón</LinkClient>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div className="carousel-item">
-              <img src="https://picsum.photos/800/600" className="d-block w-100" alt="Slide 3" />
+              <div className="panel-horizontal-content">
+                <div className="panel-horizontal">
+                  <Image
+                    src={`${basePath}/images/destacado.jpg`}
+                    alt="descripción de imagen"
+                    className="panel-img"
+                    width={538}
+                    height={304}
+                  ></Image>
+                  <div className="panel-body">
+                    <h2 className="panel-title">Título del destacado</h2>
+                    <p className="panel-text">
+                      Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
+                      negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas.
+                      No puede contener negritas ni enlaces
+                    </p>
+                    <div className="panel-footer">
+                      <LinkClient className="btn btn-primary btn-lg">Botón</LinkClient>
+                      <LinkClient className="btn btn-outline-primary btn-lg">Botón</LinkClient>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">

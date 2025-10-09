@@ -19,6 +19,18 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
+      title: 'Versión 1.6.2',
+      firstTitle: true,
+      content: (
+        <ul className="docs-list">
+          <p>La versión 1.6.2 contiene lo siguiente: </p>
+          <li>Se modifica el color del breadcrumb al #hexa </li>
+          <li>Se agrega la variante breadcrumb para fondos oscuros</li>
+          <li>Se modifica el color de la línea divisoria del componente header</li>
+        </ul>
+      ),
+    },
+    {
       title: 'Versión 1.6.1',
       firstTitle: true,
       content: (

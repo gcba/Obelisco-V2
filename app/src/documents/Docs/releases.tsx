@@ -19,6 +19,22 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
+      title: 'Versión 1.6.2',
+      firstTitle: true,
+      content: (
+        <ul className="docs-list">
+          <p>La versión 1.6.2 contiene lo siguiente: </p>
+          <li>
+            Se modifica la propiedad color del componente Migas de pan para fondos claros al <code>#101e37</code>
+          </li>
+          <li>
+            Se agrega la variante <code>dark</code> de Migas de pan para fondos oscuros
+          </li>
+          <li>Se modifica el color de la línea divisoria del componente header</li>
+        </ul>
+      ),
+    },
+    {
       title: 'Versión 1.6.1',
       firstTitle: true,
       content: (

@@ -15700,27 +15700,37 @@ a.badge-danger:focus, a.badge-danger.focus {
   margin: 0.5rem 0 0;
 }
 
-.breadcrumb .breadcrumb-item:not(:last-child) {
+nav:has(ol.breadcrumb) {
+  display: inline-block;
+}
+nav:has(ol.breadcrumb).bg-dark .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  background: transparent url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="chevron_right"><path id="Vector" d="M8.99953 6.71051C8.60953 7.10051 8.60953 7.73051 8.99953 8.12051L12.8795 12.0005L8.99953 15.8805C8.60953 16.2705 8.60953 16.9005 8.99953 17.2905C9.38953 17.6805 10.0195 17.6805 10.4095 17.2905L14.9995 12.7005C15.3895 12.3105 15.3895 11.6805 14.9995 11.2905L10.4095 6.70051C10.0295 6.32051 9.38953 6.32051 8.99953 6.71051Z" fill="%23FFFFFF"/></g></svg>') no-repeat center center;
+}
+nav:has(ol.breadcrumb).bg-dark .breadcrumb .breadcrumb-item a {
+  color: white;
+}
+nav:has(ol.breadcrumb) .breadcrumb .breadcrumb-item:not(:last-child) {
   padding-right: 0.5rem;
 }
-.breadcrumb .breadcrumb-item a {
+nav:has(ol.breadcrumb) .breadcrumb .breadcrumb-item a {
   max-width: 16rem;
   display: block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: #101e37;
 }
-.breadcrumb .breadcrumb-item::before {
+nav:has(ol.breadcrumb) .breadcrumb .breadcrumb-item::before {
   width: 1.5rem;
   min-width: 1.5rem;
   height: 1.5rem;
   margin-right: 0.25rem;
   padding-right: 0;
 }
-.breadcrumb .breadcrumb-item + .breadcrumb-item {
+nav:has(ol.breadcrumb) .breadcrumb .breadcrumb-item + .breadcrumb-item {
   padding-left: 0;
 }
-.breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+nav:has(ol.breadcrumb) .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
   content: "";
   background: transparent url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="chevron_right"><path id="Vector" d="M8.99953 6.71051C8.60953 7.10051 8.60953 7.73051 8.99953 8.12051L12.8795 12.0005L8.99953 15.8805C8.60953 16.2705 8.60953 16.9005 8.99953 17.2905C9.38953 17.6805 10.0195 17.6805 10.4095 17.2905L14.9995 12.7005C15.3895 12.3105 15.3895 11.6805 14.9995 11.2905L10.4095 6.70051C10.0295 6.32051 9.38953 6.32051 8.99953 6.71051Z" fill="%23101E37"/></g></svg>') no-repeat center center;
 }
@@ -17108,7 +17118,7 @@ span.form-label {
 }
 
 .navbar.o-header {
-  border-bottom: 0.25rem solid #ffcc00;
+  border-bottom: 0.125rem solid #f3f6f9;
   padding: 0.875rem 1rem 0.625rem;
 }
 @media (min-width: 1200px) {

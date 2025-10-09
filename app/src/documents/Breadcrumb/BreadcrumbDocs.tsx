@@ -8,18 +8,46 @@ import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 const basePath = '/Obelisco-V2';
 
-import { BREADCRUMB, BREADCRUMB_ACCESSIBILTY } from './code-views';
+import { BREADCRUMB, BREADCRUMB_DARK, BREADCRUMB_ACCESSIBILTY } from './code-views';
 
 const BreadcrumbDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
-      title: 'Simple',
+      title: 'Fondo claro',
       firstTitle: true,
       content: (
         <>
           <CodeBox codeHTML={BREADCRUMB}>
             <div className="container">
               <nav aria-label="Ruta de navegación">
+                <ol className="breadcrumb">
+                  <li className="breadcrumb-item">
+                    <LinkClient>Inicio</LinkClient>
+                  </li>
+                  <li className="breadcrumb-item">
+                    <LinkClient>Página intermedia con mucho mucho texto</LinkClient>
+                  </li>
+                  <li className="breadcrumb-item">
+                    <LinkClient>Intermedia</LinkClient>
+                  </li>
+                  <li className="breadcrumb-item">
+                    <LinkClient>Página anterior</LinkClient>
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+    {
+      title: 'Fondo oscuro',
+      firstTitle: true,
+      content: (
+        <>
+          <CodeBox codeHTML={BREADCRUMB_DARK}>
+            <div className="container">
+              <nav aria-label="Ruta de navegación" className="bg-dark">
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
                     <LinkClient>Inicio</LinkClient>

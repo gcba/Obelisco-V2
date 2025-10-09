@@ -11,7 +11,7 @@ const sections = [
     title: 'carousel',
     content: (
       <div className="container">
-        <div id="carousel" className="carousel slide" data-bs-ride="carousel" data-bs-wrap="false">
+        <div id="carousel" className="carousel slide" data-bs-wrap="false">
           <div className="carousel-indicators">
             <button
               type="button"

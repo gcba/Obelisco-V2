@@ -19160,4 +19160,57 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
   color: #ffffff;
 }
 
+#carousel .carousel-status {
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+#carousel {
+  --current: "1";
+}
+
+#carousel .carousel-status::after {
+  content: "Mostrando " var(--current) " de " attr(data-total);
+}
+
+#carousel:has(.carousel-inner .carousel-item:nth-child(1).active) {
+  --current: "1";
+}
+
+#carousel:has(.carousel-inner .carousel-item:nth-child(2).active) {
+  --current: "2";
+}
+
+#carousel:has(.carousel-inner .carousel-item:nth-child(3).active) {
+  --current: "3";
+}
+
+#carousel:has(.carousel-inner .carousel-item:nth-child(4).active) {
+  --current: "4";
+}
+
+#carousel:has(.carousel-inner .carousel-item:nth-child(5).active) {
+  --current: "5";
+}
+
+#carousel:has(.carousel-inner .carousel-item:nth-child(6).active) {
+  --current: "6";
+}
+
+#carousel:has(.carousel-inner .carousel-item:nth-child(7).active) {
+  --current: "7";
+}
+
+#carousel:has(.carousel-inner .carousel-item:nth-child(8).active) {
+  --current: "8";
+}
+
+#carousel:has(.carousel-inner .carousel-item:nth-child(9).active) {
+  --current: "9";
+}
+
+#carousel:has(.carousel-inner .carousel-item:nth-child(10).active) {
+  --current: "10";
+}
+
 /*# sourceMappingURL=styles.css.map */

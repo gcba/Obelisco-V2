@@ -115,6 +115,9 @@ const sections = [
               </div>
             </div>
           </div>
+
+          <p className="carousel-status" aria-live="polite" data-total="3"></p>
+
           <button className="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
             <span className="visually-hidden">Previous</span>

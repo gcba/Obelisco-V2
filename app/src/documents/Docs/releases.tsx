@@ -23,6 +23,44 @@ const ReleasesComponents: React.FC = () => {
       firstTitle: true,
       content: (
         <ul className="docs-list">
+          <p>La versión 1.7.0 contiene lo siguiente: </p>
+          <li>Se crea el componente Encabezado (hero).</li>
+          <li>
+            <strong>Contenido principal:</strong> se crean las clases <code>.bg-content-hero-{'{color}'}</code>
+            para definir el color de fondo del contenido principal del Hero. <br />
+            Colores disponibles: <code>sky</code>, <code>blue</code>, <code>cyan</code>, <code>yellow</code>,{' '}
+            <code>red</code>, <code>purple</code>, <code>light</code> y <code>dark</code>.
+          </li>
+
+          <li>
+            <strong>Aside:</strong> se crean las clases <code>.bg-aside-hero-{'{color}'}</code>, que deben utilizarse
+            junto con <code>.aside</code> para definir el color del fondo lateral. <br />
+            Colores disponibles: <code>dark</code> y <code>light</code>.
+          </li>
+
+          <li>
+            <strong>Accionable de botón:</strong> se incorpora la clase <code>.btn-hero</code>, que permite generar un
+            botón expandible a partir de 360px de ancho.
+          </li>
+
+          <li>
+            <strong>Accionable de buscador:</strong> se integran las clases <code>.search-wrapper</code>,{' '}
+            <code>.search-results</code>, <code>.search-btn-container</code> y <code>#search-home.form-control</code>,
+            correspondientes al buscador utilizado en BA Productiva.
+          </li>
+
+          <li>
+            <strong>Decoraciones visuales:</strong> se incorporan las clases <code>.corner</code> (borde esquinado) y{' '}
+            <code>.wave</code> (efecto de onda).
+          </li>
+        </ul>
+      ),
+    },
+    {
+      title: 'Versión 1.6.2',
+      firstTitle: true,
+      content: (
+        <ul className="docs-list">
           <p>La versión 1.6.2 contiene lo siguiente: </p>
           <li>
             Se modifica la propiedad color del componente Migas de pan para fondos claros al <code>#101e37</code>

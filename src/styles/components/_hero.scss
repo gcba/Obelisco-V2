@@ -1,0 +1,324 @@
+$hero-wave-svg: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1022 490'><path d='M993.386 245C993.386 275.625 1021.5 275.625 1021.5 306.25C1021.5 336.875 993.386 336.875 993.386 367.5C993.386 398.125 1021.5 398.125 1021.5 428.75C1021.5 459.375 993.386 459.375 993.386 490H953.856L953.855 0H993.386C993.386 30.625 1021.5 30.625 1021.5 61.25C1021.5 91.875 993.386 91.875 993.386 122.5C993.386 153.125 1021.5 153.125 1021.5 183.75C1021.5 214.375 993.386 214.375 993.386 245Z'/><path d='M0.5 0H953.855V490H0.5V0Z'/></svg>");
+$hero-wave-mobile-svg: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 444'><path d='M115 421.265C84.375 421.265 84.375 443.5 53.75 443.5C23.125 443.5 23.125 421.265 -7.5 421.265C-38.125 421.265 -38.125 443.5 -68.75 443.5C-99.375 443.5 -99.375 421.265 -130 421.265V390.001L360 390V421.265C329.375 421.265 329.375 443.5 298.75 443.5C268.125 443.5 268.125 421.265 237.5 421.265C206.875 421.265 206.875 443.5 176.25 443.5C145.625 443.5 145.625 421.265 115 421.265Z'/><path d='M360 0.5V390H-130V0.5H360Z'/></svg>");
+$hero-wave-mobile-lg-svg: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 768 332'><path d='M629 309.265C598.375 309.265 598.375 331.5 567.75 331.5C537.125 331.5 537.125 309.265 506.5 309.265C475.875 309.265 475.875 331.5 445.25 331.5C414.625 331.5 414.625 309.265 384 309.265V278.001L874 278V309.265C843.375 309.265 843.375 331.5 812.75 331.5C782.125 331.5 782.125 309.265 751.5 309.265C720.875 309.265 720.875 331.5 690.25 331.5C659.625 331.5 659.625 309.265 629 309.265Z'/><path d='M139 309.265C108.375 309.265 108.375 331.5 77.75 331.5C47.125 331.5 47.125 309.265 16.5 309.265C-14.125 309.265 -14.125 331.5 -44.75 331.5C-75.375 331.5 -75.375 309.265 -106 309.265V278.001L384 278V309.265C353.375 309.265 353.375 331.5 322.75 331.5C292.125 331.5 292.125 309.265 261.5 309.265C230.875 309.265 230.875 331.5 200.25 331.5C169.625 331.5 169.625 309.265 139 309.265Z'/><path d='M768 0V278H0V0H768Z'/></svg>");
+
+$content-colors: (
+  'sky': $sky-300,
+  'blue': $blue-300,
+  'cyan': $cyan-500,
+  'yellow': $yellow-400,
+  'red': $red-300,
+  'purple': $purple-300,
+  'light': $light,
+  'dark': $dark,
+);
+
+$aside-colors: (
+  'dark': $dark,
+  'light': $slate-200,
+);
+
+@mixin mask-size-cover {
+  mask-size: cover;
+}
+
+header.hero {
+  display: flex;
+  flex-direction: column;
+  background-color: map-get($content-colors, 'sky');
+
+  .content {
+    flex-grow: 1;
+    flex-shrink: 1;
+    position: relative;
+    padding: 0.875rem 1rem 0.625rem;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background: map-get($content-colors, 'sky');
+      z-index: 1;
+      right: 0;
+      width: 100%;
+      bottom: -35px;
+      height: 36px;
+    }
+
+    &.wave::after {
+      mask: $hero-wave-mobile-svg no-repeat bottom;
+      @include mask-size-cover;
+    }
+
+    &.corner::after {
+      bottom: -31px;
+      height: 32px;
+      border-radius: 0;
+      border-bottom-right-radius: 32px;
+    }
+
+    // Variante botones
+    .btn-hero {
+      display: flex;
+      column-gap: 8px;
+      row-gap: 24px;
+      @media (max-width: 360px) {
+        display: grid;
+
+        button {
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+    // Variante botones
+
+    // Variante buscador
+    .search-wrapper {
+      max-width: 650px;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      top: 0;
+
+      &:focus-within {
+        background-color: #f3f6f9;
+        box-shadow: 0 0 0 0.25rem #218274;
+        outline: 0.25rem solid transparent;
+        min-height: max-content;
+
+        .search-results {
+          display: block;
+        }
+      }
+
+      // resultados
+      .search-results {
+        display: none;
+
+        a:focus {
+          box-shadow: none;
+          outline: none;
+        }
+
+        /* resultados */
+        .list-link-result {
+          padding: 0.5rem;
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          color: #000;
+          gap: 0.25rem;
+        }
+      }
+
+      /* contenedor del botón */
+      .search-btn-container {
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        bottom: 4px;
+
+        .btn-search {
+          > svg {
+            display: none;
+          }
+
+          > p {
+            // display: inline;
+            margin: 0;
+            padding: 0;
+          }
+
+          @media (max-width: 360px) {
+            & > svg {
+              display: block;
+            }
+
+            & > p {
+              display: none;
+            }
+
+            z-index: 100;
+          }
+        }
+      }
+
+      /* input dentro de search */
+      #search-home.form-control {
+        border-bottom: 2px solid #e6ebf0;
+        border-radius: 0.5rem 0.5rem 0 0;
+        padding: 1rem 12px;
+        padding-right: 128px;
+        box-shadow: none;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    // Variante buscador
+  }
+
+  .aside {
+    width: 100%;
+    min-height: 64px;
+    min-width: 100%;
+    max-height: 352px;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+
+    & img {
+      object-fit: cover;
+      object-position: bottom;
+      position: inherit !important;
+    }
+
+    & video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: bottom;
+
+      &::-webkit-media-controls-enclosure {
+        border-radius: 0 !important;
+        background-color: transparent !important;
+      }
+
+      &::-webkit-media-controls-panel {
+        background-color: #101e37;
+        background-image: unset;
+        border: solid 1px #000;
+        border-radius: 8px;
+        width: 80%;
+        height: 70px;
+        position: absolute;
+        bottom: 10px;
+        left: 10%;
+      }
+
+      &::-webkit-media-controls-fullscreen-button {
+        display: none !important;
+      }
+    }
+  }
+
+  @media (width >= 576px) {
+    .content {
+      &::after {
+        bottom: -31px;
+        height: 32px;
+      }
+
+      &.wave::after {
+        mask: $hero-wave-mobile-lg-svg no-repeat bottom;
+        @include mask-size-cover;
+      }
+
+      &.corner::after {
+        bottom: -47px;
+        height: 48px;
+        border-bottom-right-radius: 48px;
+      }
+
+      & > div {
+        width: 90%;
+      }
+    }
+  }
+
+  @media (width >= 768px) {
+    flex-direction: row;
+    align-items: stretch;
+    position: relative;
+
+    .content {
+      &::after {
+        bottom: auto;
+        top: 0;
+        right: -36px;
+        width: 36px;
+        height: 100%;
+      }
+
+      &.wave::after {
+        mask: $hero-wave-svg no-repeat right;
+        @include mask-size-cover;
+      }
+
+      &.corner::after {
+        height: 100%;
+        width: 48px;
+        right: -47px;
+        border-radius: 0;
+        border-top-right-radius: 80px;
+      }
+    }
+
+    .aside {
+      flex-shrink: 0;
+      flex-grow: 0;
+      width: auto;
+      min-width: 200px;
+      max-width: 50%;
+      max-height: none;
+
+      & img {
+        object-position: right;
+        position: absolute !important;
+      }
+
+      & video {
+        object-position: right;
+        position: absolute;
+
+        &::-webkit-media-controls-panel {
+          left: 14%;
+        }
+      }
+    }
+
+    .aside:has(img),
+    .aside:has(video) {
+      flex: 1 1 250%;
+    }
+  }
+
+  @media (width >= 1200px) {
+    .content {
+      padding: 0 0 0 60px;
+
+      > div {
+        width: 70%;
+      }
+    }
+  }
+}
+
+@each $name, $color in $content-colors {
+  header.bg-content-hero-#{$name} {
+    background-color: $color;
+
+    .content::after {
+      background-color: $color;
+    }
+  }
+}
+
+@each $name, $color in $aside-colors {
+  div.aside.bg-aside-hero-#{$name} {
+    background-color: $color;
+  }
+}
+
+// CONDICIONALES
+// Cuando header tiene bg-content-hero-dark Y dentro en algún momento contiene .aside.bg-aside-hero-dark
+header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content {
+  .breadcrumb-item a,
+  div h1,
+  div p,
+  div span.fw-semibold.me-3 {
+    color: $white;
+  }
+}

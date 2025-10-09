@@ -7,26 +7,7 @@ import CodeBox from '@/components/CodeBox';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
-import {
-  HEADER_BANNER,
-  // HEADER_LOGIN_ONE_LINE,
-  // HEADER_LOGIN_ONE_LINE_SEARCH,
-  // HEADER_LOGIN_TWO_LINES,
-  // HEADER_LOGIN_TWO_LINES_SEARCH,
-  // HEADER_NO_LOGIN,
-  // HEADER_NO_LOGIN_SEARCH,
-  // HEADER_ONE_LINE_SEARCH,
-  // HEADER_ONLY_LOGIN,
-  // HEADER_ONLY_LOGIN_SEARCH,
-  // HEADER_ONLY_LOGO,
-  // HEADER_ONLY_SEARCH,
-  // HEADER_TWO_LINES,
-  // HEADER_TWO_LINES_SEARCH,
-} from './code-views';
-
-// const logo = '/images/logo_ba.svg';
-// const logo_mobile = '/images/logo_ba_mobile.svg';
-// const logo_ba_logo_banner = '/images/header/logo_BA_banner.svg';
+import { HERO_INSTITUCIONAL } from './code-views';
 
 const HeroHeaderDocs: React.FC = () => {
   const SECTIONS_DEV = [
@@ -38,7 +19,7 @@ const HeroHeaderDocs: React.FC = () => {
       subtitle: 'Institucional',
       content: (
         <>
-          <CodeBox codeHTML={HEADER_BANNER}>
+          <CodeBox codeHTML={HERO_INSTITUCIONAL}>
             <div className="container">
               <div className="header-box-sizing_hero-header ">
                 <header className="hero">
@@ -85,7 +66,7 @@ const HeroHeaderDocs: React.FC = () => {
       subtitle: 'Dinámico',
       content: (
         <>
-          <CodeBox codeHTML={HEADER_BANNER}>
+          <CodeBox codeHTML={HERO_INSTITUCIONAL}>
             <div className="container">
               <div className="header-box-sizing_hero-header ">
                 <header className="hero">
@@ -135,7 +116,7 @@ const HeroHeaderDocs: React.FC = () => {
       subtitle: 'Con imagen',
       content: (
         <>
-          <CodeBox codeHTML={HEADER_BANNER}>
+          <CodeBox codeHTML={HERO_INSTITUCIONAL}>
             <div className="container">
               <div className="header-box-sizing_hero-header ">
                 <header className="hero">
@@ -182,7 +163,7 @@ const HeroHeaderDocs: React.FC = () => {
       subtitle: 'Con video',
       content: (
         <>
-          <CodeBox codeHTML={HEADER_BANNER}>
+          <CodeBox codeHTML={HERO_INSTITUCIONAL}>
             <div className="container">
               <div className="header-box-sizing_hero-header ">
                 <header className="hero">
@@ -233,7 +214,7 @@ const HeroHeaderDocs: React.FC = () => {
       subtitle: 'Con gif',
       content: (
         <>
-          <CodeBox codeHTML={HEADER_BANNER}>
+          <CodeBox codeHTML={HERO_INSTITUCIONAL}>
             <div className="container">
               <div className="header-box-sizing_hero-header ">
                 <header className="hero">
@@ -286,7 +267,7 @@ const HeroHeaderDocs: React.FC = () => {
 
       content: (
         <>
-          <CodeBox codeHTML={HEADER_BANNER}>
+          <CodeBox codeHTML={HERO_INSTITUCIONAL}>
             <div className="container">
               <div className="header-box-sizing_hero-header ">
                 <header className="hero">
@@ -333,7 +314,7 @@ const HeroHeaderDocs: React.FC = () => {
       subtitle: 'Con campo buscador',
       content: (
         <>
-          <CodeBox codeHTML={HEADER_BANNER}>
+          <CodeBox codeHTML={HERO_INSTITUCIONAL}>
             <div className="container">
               <div className="header-box-sizing_hero-header ">
                 <header className="hero">
@@ -427,7 +408,7 @@ const HeroHeaderDocs: React.FC = () => {
       subtitle: 'Con etiquetas',
       content: (
         <>
-          <CodeBox codeHTML={HEADER_BANNER}>
+          <CodeBox codeHTML={HERO_INSTITUCIONAL}>
             <div className="container">
               <div className="header-box-sizing_hero-header ">
                 <header className="hero">
@@ -472,7 +453,7 @@ const HeroHeaderDocs: React.FC = () => {
       subtitle: 'Con desplegables',
       content: (
         <>
-          <CodeBox codeHTML={HEADER_BANNER}>
+          <CodeBox codeHTML={HERO_INSTITUCIONAL}>
             <div className="container">
               <div className="header-box-sizing_hero-header ">
                 <header className="hero">
@@ -594,7 +575,7 @@ const HeroHeaderDocs: React.FC = () => {
       subtitle: 'Color (6 colores)',
       content: (
         <>
-          <CodeBox codeHTML={HEADER_BANNER}>
+          <CodeBox codeHTML={HERO_INSTITUCIONAL}>
             <div className="container">
               <div className="header-box-sizing_hero-header ">
                 {/* cyan */}
@@ -754,7 +735,7 @@ const HeroHeaderDocs: React.FC = () => {
       subtitle: 'Light',
       content: (
         <>
-          <CodeBox codeHTML={HEADER_BANNER}>
+          <CodeBox codeHTML={HERO_INSTITUCIONAL}>
             <div className="container">
               <div className="header-box-sizing_hero-header ">
                 {/* light */}
@@ -803,7 +784,7 @@ const HeroHeaderDocs: React.FC = () => {
       subtitle: 'Dark',
       content: (
         <>
-          <CodeBox codeHTML={HEADER_BANNER}>
+          <CodeBox codeHTML={HERO_INSTITUCIONAL}>
             <div className="container">
               <div className="header-box-sizing_hero-header ">
                 {/* dark */}

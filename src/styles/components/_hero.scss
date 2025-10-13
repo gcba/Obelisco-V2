@@ -45,8 +45,8 @@ header.hero {
     &.wave::after {
       mask: $hero-wave-mobile-svg no-repeat bottom;
       @include mask-size-cover;
-			height: 45px;
-			bottom: -44px;
+      height: 45px;
+      bottom: -44px;
     }
 
     &.corner::after {
@@ -204,17 +204,16 @@ header.hero {
     }
   }
 
-	@media (width >= 426px) {
-		.content {
-			&.wave::after {
-				bottom: -31px;
+  @media (width >= 426px) {
+    .content {
+      &.wave::after {
+        bottom: -31px;
         height: 32px;
         mask: $hero-wave-mobile-lg-svg no-repeat bottom;
         @include mask-size-cover;
       }
-		}
-	}
-
+    }
+  }
 
   @media (width >= 576px) {
     .content {
@@ -241,21 +240,21 @@ header.hero {
       }
 
       &.wave::after {
-				bottom: auto;
-				right: -36px;
+        bottom: auto;
+        right: -36px;
         width: 37px;
         mask: $hero-wave-svg no-repeat right;
         @include mask-size-cover;
-				height: 100%;
+        height: 100%;
       }
 
       &.corner::after {
-				bottom: auto;
+        bottom: auto;
         width: 48px;
         right: -47px;
         border-radius: 0;
         border-top-right-radius: 80px;
-				height: 100%;
+        height: 100%;
       }
     }
 

@@ -17269,7 +17269,7 @@ span.form-label {
     z-index: 1050;
     background-color: #ffffff;
     width: 100%;
-    border-bottom: 0.25rem solid #ffcc00;
+    border-bottom: 0.125rem solid #f3f6f9;
     border-top: 0.25rem solid #ffffff;
   }
 }
@@ -17806,10 +17806,9 @@ header.hero .content.corner::after {
 }
 header.hero .content .btn-hero {
   display: flex;
-  column-gap: 8px;
-  row-gap: 24px;
+  gap: 24px 8px;
 }
-@media (max-width: 360px) {
+@media (width <= 360px) {
   header.hero .content .btn-hero {
     display: grid;
   }
@@ -17867,7 +17866,7 @@ header.hero .content .search-wrapper .search-btn-container .btn-search > p {
   margin: 0;
   padding: 0;
 }
-@media (max-width: 360px) {
+@media (width <= 360px) {
   header.hero .content .search-wrapper .search-btn-container .btn-search {
     z-index: 100;
   }

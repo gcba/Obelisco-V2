@@ -550,10 +550,10 @@ export const HERO_DARK = `<header class="hero bg-content-hero-dark">
         </p>
       </div>
       <div class="btn-hero">
-        <button type="button" class="btn btn-secondary">
+        <button type="button" class="btn btn-light">
           Botón
         </button>
-        <button type="button" class="btn btn-outline-secondary">
+        <button type="button" class="btn btn-outline-light">
           Botón
         </button>
       </div>

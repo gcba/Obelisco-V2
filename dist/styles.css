@@ -17887,6 +17887,9 @@ header.hero .content .search-wrapper #search-home.form-control {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+header.hero .content > .flex-column, header.hero .content > .list-steps {
+  row-gap: 24px;
+}
 header.hero .aside {
   width: 100%;
   min-height: 64px;
@@ -17965,8 +17968,11 @@ header.hero .aside video::-webkit-media-controls-fullscreen-button {
     width: 48px;
     right: -47px;
     border-radius: 0;
-    border-top-right-radius: 80px;
+    border-top-right-radius: 48px;
     height: 100%;
+  }
+  header.hero .content > .flex-column, header.hero .content > .list-steps {
+    row-gap: 32px;
   }
   header.hero .aside {
     flex-shrink: 0;

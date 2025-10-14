@@ -1,6 +1,6 @@
 export const HERO_INSTITUCIONAL = `<header class="hero">
   <div class="content corner">
-    <div class="d-flex flex-column row-gap-4 py-3 py-lg-5">
+    <div class="d-flex flex-column py-3 py-lg-5">
       <nav aria-label="Navegación secundaria">
         <ol class="breadcrumb m-0">
           <li class="breadcrumb-item">
@@ -15,7 +15,6 @@ export const HERO_INSTITUCIONAL = `<header class="hero">
           convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
         </p>
       </div>
-      {/* botones */}
       <div class="btn-hero">
         <button type="button" class="btn btn-secondary">
           Botón
@@ -24,7 +23,6 @@ export const HERO_INSTITUCIONAL = `<header class="hero">
           Botón
         </button>
       </div>
-      {/* botones */}
     </div>
   </div>
   <div class="aside bg-aside-hero-dark"></div>
@@ -32,7 +30,7 @@ export const HERO_INSTITUCIONAL = `<header class="hero">
 
 export const HERO_DINAMICO = `<header class="hero">
    <div class="content wave">
-      <div class="d-flex flex-column row-gap-4 py-3 py-lg-5">
+      <div class="d-flex flex-column py-3 py-lg-5">
          <nav aria-label="Navegación secundaria">
             <ol class="breadcrumb m-0">
                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
@@ -43,16 +41,14 @@ export const HERO_DINAMICO = `<header class="hero">
             <p class="lead m-0">Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
             </p>
          </div>
-          {/* botones */}
-          <div class="btn-hero">
-            <button type="button" class="btn btn-secondary">
-              Botón
-            </button>
-            <button type="button" class="btn btn-outline-secondary">
-              Botón
-            </button>
-          </div>
-          {/* botones */}
+				<div class="btn-hero">
+					<button type="button" class="btn btn-secondary">
+						Botón
+					</button>
+					<button type="button" class="btn btn-outline-secondary">
+						Botón
+					</button>
+				</div>
       </div>
    </div>
    <div class="aside">
@@ -65,7 +61,7 @@ export const HERO_DINAMICO = `<header class="hero">
 
 export const HERO_CON_IMAGEN = `<header class="hero">
    <div class="content wave">
-      <div class="d-flex flex-column row-gap-4 py-3 py-lg-5">
+      <div class="d-flex flex-column py-3 py-lg-5">
          <nav aria-label="Navegación secundaria">
             <ol class="breadcrumb m-0">
                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
@@ -75,16 +71,14 @@ export const HERO_CON_IMAGEN = `<header class="hero">
             <h1 class="mb-3">Encabezado de la página</h1>
             <p class="lead m-0">Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.</p>
          </div>
-         {/* botones */}
-          <div class="btn-hero">
-            <button type="button" class="btn btn-secondary">
-              Botón
-            </button>
-            <button type="button" class="btn btn-outline-secondary">
-              Botón
-            </button>
-          </div>
-          {/* botones */}
+				<div class="btn-hero">
+					<button type="button" class="btn btn-secondary">
+						Botón
+					</button>
+					<button type="button" class="btn btn-outline-secondary">
+						Botón
+					</button>
+				</div>
       </div>
    </div>
    <div class="aside"><img alt="Hero" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" src="/Obelisco-V2/images/hero/multimedia-hero.jpg"></div>
@@ -92,7 +86,7 @@ export const HERO_CON_IMAGEN = `<header class="hero">
 
 export const HERO_CON_VIDEO = `<header class="hero">
    <div class="content wave">
-      <div class="d-flex flex-column row-gap-4 py-3 py-lg-5">
+      <div class="d-flex flex-column py-3 py-lg-5">
          <nav aria-label="Navegación secundaria">
             <ol class="breadcrumb m-0">
                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
@@ -102,16 +96,14 @@ export const HERO_CON_VIDEO = `<header class="hero">
             <h1 class="mb-3">Encabezado de la página</h1>
             <p class="lead m-0">Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.</p>
          </div>
-         {/* botones */}
-          <div class="btn-hero">
-            <button type="button" class="btn btn-secondary">
-              Botón
-            </button>
-            <button type="button" class="btn btn-outline-secondary">
-              Botón
-            </button>
-          </div>
-          {/* botones */}
+				<div class="btn-hero">
+					<button type="button" class="btn btn-secondary">
+						Botón
+					</button>
+					<button type="button" class="btn btn-outline-secondary">
+						Botón
+					</button>
+				</div>
       </div>
    </div>
    <div class="aside">
@@ -123,7 +115,7 @@ export const HERO_CON_VIDEO = `<header class="hero">
 
 export const HERO_CON_GIF = `<header class="hero">
    <div class="content wave">
-      <div class="d-flex flex-column row-gap-4 py-3 py-lg-5">
+      <div class="d-flex flex-column py-3 py-lg-5">
          <nav aria-label="Navegación secundaria">
             <ol class="breadcrumb m-0">
                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
@@ -133,16 +125,14 @@ export const HERO_CON_GIF = `<header class="hero">
             <h1 class="mb-3">Encabezado de la página</h1>
             <p class="lead m-0">Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.</p>
          </div>
-         {/* botones */}
-          <div class="btn-hero">
-            <button type="button" class="btn btn-secondary">
-              Botón
-            </button>
-            <button type="button" class="btn btn-outline-secondary">
-              Botón
-            </button>
-          </div>
-          {/* botones */}
+				<div class="btn-hero">
+					<button type="button" class="btn btn-secondary">
+						Botón
+					</button>
+					<button type="button" class="btn btn-outline-secondary">
+						Botón
+					</button>
+				</div>
       </div>
    </div>
    <div class="aside">
@@ -154,7 +144,7 @@ export const HERO_CON_GIF = `<header class="hero">
 
 export const HERO_CON_CAMPO_BUSCADOR = `<header class="hero">
   <div class="content corner">
-    <div class="d-flex flex-column row-gap-4 py-3 py-lg-5">
+    <div class="d-flex flex-column py-3 py-lg-5">
       <nav aria-label="Navegación secundaria">
         <ol class="breadcrumb m-0">
           <li class="breadcrumb-item">
@@ -169,14 +159,13 @@ export const HERO_CON_CAMPO_BUSCADOR = `<header class="hero">
           convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
         </p>
       </div>
-      {/* search wrapper */}
       <div class="search-wrapper">
         <label htmlFor="search-home" class="sr-only">Buscar</label>
         <input 
           type="text" 
           id="search-home" 
-          maxLength={100} 
-          autoComplete="off" 
+          maxlength="100"
+          autocomplete="off" 
           class="form-control" 
           placeholder="¿En qué te podemos ayudar?" 
           name="search-home" 
@@ -205,7 +194,6 @@ export const HERO_CON_CAMPO_BUSCADOR = `<header class="hero">
             </div>
         </div>
       </div>
-      {/* search wrapper */}
     </div>
   </div>
   <div class="aside bg-aside-hero-dark"></div>
@@ -213,7 +201,7 @@ export const HERO_CON_CAMPO_BUSCADOR = `<header class="hero">
 
 export const HERO_CON_ETIQUETAS = `<header class="hero">
   <div class="content corner">
-    <div class="d-flex flex-column row-gap-4 py-3 py-lg-5">
+    <div class="d-flex flex-column py-3 py-lg-5">
       <nav aria-label="Navegación secundaria">
         <ol class="breadcrumb m-0">
           <li class="breadcrumb-item">
@@ -228,14 +216,12 @@ export const HERO_CON_ETIQUETAS = `<header class="hero">
           convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
         </p>
       </div>
-      {/* etiquetas */}
       <div class="d-flex flex-wrap column-gap-2 row-gap-4">
         <span class="me-3 fw-semibold">Texto de las etiquetas: </span>
         <span class="badge badge-default">Etiqueta</span>
         <span class="badge badge-default">Etiqueta</span>
         <span class="badge badge-default">Etiqueta</span>
       </div>
-      {/* etiquetas */}
     </div>
   </div>
   <div class="aside bg-aside-hero-dark"></div>
@@ -243,7 +229,7 @@ export const HERO_CON_ETIQUETAS = `<header class="hero">
 
 export const HERO_CON_DESPLEGABLES = `<header class="hero">
   <div class="content corner">
-    <div class="d-flex flex-column row-gap-4 py-3 py-lg-5">
+    <div class="d-flex flex-column py-3 py-lg-5">
       <nav aria-label="Navegación secundaria">
         <ol class="breadcrumb m-0">
           <li class="breadcrumb-item">
@@ -258,9 +244,7 @@ export const HERO_CON_DESPLEGABLES = `<header class="hero">
           convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
         </p>
       </div>
-      {/* desplegables */}
       <div class="d-grid d-sm-flex flex-wrap column-gap-2 row-gap-4">
-        {/* <!-- Inicio Desplegable de navegación 1 --> */}
         <div class="dropdown">
           <button
             type="button"
@@ -285,8 +269,6 @@ export const HERO_CON_DESPLEGABLES = `<header class="hero">
             </a>
           </div>
         </div>
-        {/* <!-- Fin Desplegable de navegación 1 --> */}
-        {/* <!-- Inicio Desplegable de navegación 2 --> */}
         <div class="dropdown">
           <button
             type="button"
@@ -311,8 +293,6 @@ export const HERO_CON_DESPLEGABLES = `<header class="hero">
             </a>
           </div>
         </div>
-        {/* <!-- Fin Desplegable de navegación 2 --> */}
-        {/* <!-- Inicio Desplegable de navegación 3 --> */}
         <div class="dropdown">
           <button
             type="button"
@@ -337,9 +317,7 @@ export const HERO_CON_DESPLEGABLES = `<header class="hero">
             </a>
           </div>
         </div>
-        {/* <!-- Fin Desplegable de navegación 3 --> */}
       </div>
-      {/* desplegables */}
     </div>
   </div>
   <div class="aside bg-aside-hero-dark"></div>
@@ -348,7 +326,7 @@ export const HERO_CON_DESPLEGABLES = `<header class="hero">
 export const HERO_COLORES = `<!-- default -->
 <header class="hero bg-content-hero-cyan">
   <div class="content corner">
-    <div class="d-flex flex-column row-gap-4 py-3 py-lg-5">
+    <div class="d-flex flex-column py-3 py-lg-5">
       <nav aria-label="Navegación secundaria">
         <ol class="breadcrumb m-0">
           <li class="breadcrumb-item">
@@ -363,7 +341,6 @@ export const HERO_COLORES = `<!-- default -->
           convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
         </p>
       </div>
-      {/* botones */}
       <div class="btn-hero">
         <button type="button" class="btn btn-secondary">
           Botón
@@ -372,7 +349,6 @@ export const HERO_COLORES = `<!-- default -->
           Botón
         </button>
       </div>
-      {/* botones */}
     </div>
   </div>
   <div class="aside bg-aside-hero-dark"></div>
@@ -380,7 +356,7 @@ export const HERO_COLORES = `<!-- default -->
 <!-- sky -->
 <header class="hero bg-content-hero-sky">
   <div class="content corner">
-    <div class="d-flex flex-column row-gap-4 py-3 py-lg-5">
+    <div class="d-flex flex-column py-3 py-lg-5">
       <nav aria-label="Navegación secundaria">
         <ol class="breadcrumb m-0">
           <li class="breadcrumb-item">
@@ -395,7 +371,6 @@ export const HERO_COLORES = `<!-- default -->
           convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
         </p>
       </div>
-      {/* botones */}
       <div class="btn-hero">
         <button type="button" class="btn btn-secondary">
           Botón
@@ -404,7 +379,6 @@ export const HERO_COLORES = `<!-- default -->
           Botón
         </button>
       </div>
-      {/* botones */}
     </div>
   </div>
   <div class="aside bg-aside-hero-dark"></div>
@@ -412,7 +386,7 @@ export const HERO_COLORES = `<!-- default -->
 <!-- yellow -->
 <header class="hero bg-content-hero-yellow">
   <div class="content corner">
-    <div class="d-flex flex-column row-gap-4 py-3 py-lg-5">
+    <div class="d-flex flex-column py-3 py-lg-5">
       <nav aria-label="Navegación secundaria">
         <ol class="breadcrumb m-0">
           <li class="breadcrumb-item">
@@ -427,7 +401,6 @@ export const HERO_COLORES = `<!-- default -->
           convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
         </p>
       </div>
-      {/* botones */}
       <div class="btn-hero">
         <button type="button" class="btn btn-secondary">
           Botón
@@ -436,7 +409,6 @@ export const HERO_COLORES = `<!-- default -->
           Botón
         </button>
       </div>
-      {/* botones */}
     </div>
   </div>
   <div class="aside bg-aside-hero-dark"></div>
@@ -444,7 +416,7 @@ export const HERO_COLORES = `<!-- default -->
 <!-- purple -->
 <header class="hero bg-content-hero-purple">
   <div class="content corner">
-    <div class="d-flex flex-column row-gap-4 py-3 py-lg-5">
+    <div class="d-flex flex-column py-3 py-lg-5">
       <nav aria-label="Navegación secundaria">
         <ol class="breadcrumb m-0">
           <li class="breadcrumb-item">
@@ -459,7 +431,6 @@ export const HERO_COLORES = `<!-- default -->
           convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
         </p>
       </div>
-      {/* botones */}
       <div class="btn-hero">
         <button type="button" class="btn btn-secondary">
           Botón
@@ -468,7 +439,6 @@ export const HERO_COLORES = `<!-- default -->
           Botón
         </button>
       </div>
-      {/* botones */}
     </div>
   </div>
   <div class="aside bg-aside-hero-dark"></div>
@@ -477,7 +447,7 @@ export const HERO_COLORES = `<!-- default -->
 
 export const HERO_LIGHT = `<header class="hero bg-content-hero-light">
   <div class="content corner">
-    <div class="d-flex flex-column row-gap-4 py-3 py-lg-5">
+    <div class="d-flex flex-column py-3 py-lg-5">
       <nav aria-label="Navegación secundaria">
         <ol class="breadcrumb m-0">
           <li class="breadcrumb-item">
@@ -492,7 +462,6 @@ export const HERO_LIGHT = `<header class="hero bg-content-hero-light">
           convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
         </p>
       </div>
-      {/* botones */}
       <div class="btn-hero">
         <button type="button" class="btn btn-secondary">
           Botón
@@ -501,7 +470,6 @@ export const HERO_LIGHT = `<header class="hero bg-content-hero-light">
           Botón
         </button>
       </div>
-      {/* botones */}
     </div>
   </div>
   <div class="aside bg-aside-hero-light"></div>
@@ -509,7 +477,7 @@ export const HERO_LIGHT = `<header class="hero bg-content-hero-light">
 
 export const HERO_DARK = `<header class="hero bg-content-hero-dark">
   <div class="content corner">
-    <div class="d-flex flex-column row-gap-4 py-3 py-lg-5">
+    <div class="d-flex flex-column py-3 py-lg-5">
       <nav aria-label="Navegación secundaria">
         <ol class="breadcrumb m-0">
           <li class="breadcrumb-item">
@@ -524,7 +492,6 @@ export const HERO_DARK = `<header class="hero bg-content-hero-dark">
           convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
         </p>
       </div>
-      {/* botones */}
       <div class="btn-hero">
         <button type="button" class="btn btn-secondary">
           Botón
@@ -533,7 +500,6 @@ export const HERO_DARK = `<header class="hero bg-content-hero-dark">
           Botón
         </button>
       </div>
-      {/* botones */}
     </div>
   </div>
   <div class="aside bg-aside-hero-light"></div>

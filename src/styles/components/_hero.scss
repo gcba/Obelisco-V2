@@ -157,6 +157,10 @@ header.hero {
       }
     }
 
+		> .flex-column {
+			row-gap: 24px;
+		}
+
     // Variante buscador
   }
 
@@ -253,9 +257,13 @@ header.hero {
         width: 48px;
         right: -47px;
         border-radius: 0;
-        border-top-right-radius: 80px;
+        border-top-right-radius: 48px;
         height: 100%;
       }
+
+			> .flex-column {
+				row-gap: 32px;
+			}
     }
 
     .aside {

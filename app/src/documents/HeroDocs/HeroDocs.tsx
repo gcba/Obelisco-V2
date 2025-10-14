@@ -36,7 +36,7 @@ const HeroHeaderDocs: React.FC = () => {
                 <div className="hero-box-sizing ">
                   <header className="hero">
                     <div className="content corner">
-                      <div className="d-flex flex-column row-gap-4 py-3 py-lg-5">
+                      <div className="d-flex flex-column py-3 py-lg-5">
                         <nav aria-label="Navegación secundaria">
                           <ol className="breadcrumb m-0">
                             <li className="breadcrumb-item">
@@ -85,7 +85,7 @@ const HeroHeaderDocs: React.FC = () => {
                 <div className="hero-box-sizing ">
                   <header className="hero">
                     <div className="content wave">
-                      <div className="d-flex flex-column row-gap-4 py-3 py-lg-5">
+                      <div className="d-flex flex-column py-3 py-lg-5">
                         <nav aria-label="Navegación secundaria">
                           <ol className="breadcrumb m-0">
                             <li className="breadcrumb-item">
@@ -137,7 +137,7 @@ const HeroHeaderDocs: React.FC = () => {
                 <div className="hero-box-sizing ">
                   <header className="hero">
                     <div className="content wave">
-                      <div className="d-flex flex-column row-gap-4 py-3 py-lg-5">
+                      <div className="d-flex flex-column py-3 py-lg-5">
                         <nav aria-label="Navegación secundaria">
                           <ol className="breadcrumb m-0">
                             <li className="breadcrumb-item">
@@ -186,7 +186,7 @@ const HeroHeaderDocs: React.FC = () => {
                 <div className="hero-box-sizing ">
                   <header className="hero">
                     <div className="content wave">
-                      <div className="d-flex flex-column row-gap-4 py-3 py-lg-5">
+                      <div className="d-flex flex-column py-3 py-lg-5">
                         <nav aria-label="Navegación secundaria">
                           <ol className="breadcrumb m-0">
                             <li className="breadcrumb-item">
@@ -239,7 +239,7 @@ const HeroHeaderDocs: React.FC = () => {
                 <div className="hero-box-sizing ">
                   <header className="hero">
                     <div className="content wave">
-                      <div className="d-flex flex-column row-gap-4 py-3 py-lg-5">
+                      <div className="d-flex flex-column py-3 py-lg-5">
                         <nav aria-label="Navegación secundaria">
                           <ol className="breadcrumb m-0">
                             <li className="breadcrumb-item">
@@ -294,7 +294,7 @@ const HeroHeaderDocs: React.FC = () => {
                 <div className="hero-box-sizing ">
                   <header className="hero">
                     <div className="content corner">
-                      <div className="d-flex flex-column row-gap-4 py-3 py-lg-5">
+                      <div className="d-flex flex-column py-3 py-lg-5">
                         <nav aria-label="Navegación secundaria">
                           <ol className="breadcrumb m-0">
                             <li className="breadcrumb-item">
@@ -343,7 +343,7 @@ const HeroHeaderDocs: React.FC = () => {
                 <div className="hero-box-sizing ">
                   <header className="hero">
                     <div className="content corner">
-                      <div className="d-flex flex-column row-gap-4 py-3 py-lg-5">
+                      <div className="d-flex flex-column py-3 py-lg-5">
                         <nav aria-label="Navegación secundaria">
                           <ol className="breadcrumb m-0">
                             <li className="breadcrumb-item">
@@ -438,7 +438,7 @@ const HeroHeaderDocs: React.FC = () => {
                 <div className="hero-box-sizing ">
                   <header className="hero">
                     <div className="content corner">
-                      <div className="d-flex flex-column row-gap-4 py-3 py-lg-5">
+                      <div className="d-flex flex-column py-3 py-lg-5">
                         <nav aria-label="Navegación secundaria">
                           <ol className="breadcrumb m-0">
                             <li className="breadcrumb-item">
@@ -485,7 +485,7 @@ const HeroHeaderDocs: React.FC = () => {
                 <div className="hero-box-sizing ">
                   <header className="hero">
                     <div className="content corner">
-                      <div className="d-flex flex-column row-gap-4 py-3 py-lg-5">
+                      <div className="d-flex flex-column py-3 py-lg-5">
                         <nav aria-label="Navegación secundaria">
                           <ol className="breadcrumb m-0">
                             <li className="breadcrumb-item">
@@ -610,7 +610,7 @@ const HeroHeaderDocs: React.FC = () => {
                   {/* cyan */}
                   <header className="hero bg-content-hero-cyan">
                     <div className="content corner">
-                      <div className="d-flex flex-column row-gap-4 py-3 py-lg-5">
+                      <div className="d-flex flex-column py-3 py-lg-5">
                         <nav aria-label="Navegación secundaria">
                           <ol className="breadcrumb m-0">
                             <li className="breadcrumb-item">
@@ -647,7 +647,7 @@ const HeroHeaderDocs: React.FC = () => {
                   {/* sky */}
                   <header className="hero bg-content-hero-sky">
                     <div className="content corner">
-                      <div className="d-flex flex-column row-gap-4 py-3 py-lg-5">
+                      <div className="d-flex flex-column py-3 py-lg-5">
                         <nav aria-label="Navegación secundaria">
                           <ol className="breadcrumb m-0">
                             <li className="breadcrumb-item">
@@ -684,7 +684,7 @@ const HeroHeaderDocs: React.FC = () => {
                   {/* yellow */}
                   <header className="hero bg-content-hero-yellow">
                     <div className="content corner">
-                      <div className="d-flex flex-column row-gap-4 py-3 py-lg-5">
+                      <div className="d-flex flex-column py-3 py-lg-5">
                         <nav aria-label="Navegación secundaria">
                           <ol className="breadcrumb m-0">
                             <li className="breadcrumb-item">
@@ -721,7 +721,7 @@ const HeroHeaderDocs: React.FC = () => {
                   {/* purple */}
                   <header className="hero bg-content-hero-purple">
                     <div className="content corner">
-                      <div className="d-flex flex-column row-gap-4 py-3 py-lg-5">
+                      <div className="d-flex flex-column py-3 py-lg-5">
                         <nav aria-label="Navegación secundaria">
                           <ol className="breadcrumb m-0">
                             <li className="breadcrumb-item">
@@ -772,7 +772,7 @@ const HeroHeaderDocs: React.FC = () => {
                   {/* light */}
                   <header className="hero bg-content-hero-light">
                     <div className="content corner">
-                      <div className="d-flex flex-column row-gap-4 py-3 py-lg-5">
+                      <div className="d-flex flex-column py-3 py-lg-5">
                         <nav aria-label="Navegación secundaria">
                           <ol className="breadcrumb m-0">
                             <li className="breadcrumb-item">
@@ -829,7 +829,7 @@ const HeroHeaderDocs: React.FC = () => {
                   {/* dark */}
                   <header className="hero bg-content-hero-dark">
                     <div className="content corner">
-                      <div className="d-flex flex-column row-gap-4 py-3 py-lg-5">
+                      <div className="d-flex flex-column py-3 py-lg-5">
                         <nav aria-label="Navegación secundaria">
                           <ol className="breadcrumb m-0">
                             <li className="breadcrumb-item">

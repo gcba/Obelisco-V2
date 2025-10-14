@@ -243,6 +243,15 @@ header.hero {
   }
 
   @media (width >= 768px) {
+    .content {
+      &.wave::after {
+        bottom: -39px;
+        height: 40px;
+      }
+    }
+  }
+
+  @media (width >= 992px) {
     flex-direction: row;
     align-items: stretch;
     position: relative;

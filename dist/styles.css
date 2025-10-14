@@ -17956,6 +17956,12 @@ header.hero .aside video::-webkit-media-controls-fullscreen-button {
   }
 }
 @media (width >= 768px) {
+  header.hero .content.wave::after {
+    bottom: -39px;
+    height: 40px;
+  }
+}
+@media (width >= 992px) {
   header.hero {
     flex-direction: row;
     align-items: stretch;

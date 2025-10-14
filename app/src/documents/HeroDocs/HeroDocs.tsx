@@ -399,15 +399,15 @@ const HeroHeaderDocs: React.FC = () => {
                             <div className="search-results bg-light">
                               <div>
                                 <a href="#" target="_blank" rel="noopener noreferrer" className="list-link-result">
-                                  <span className="material-symbols-outlined">search</span>
+                                  <span className="material-symbols-rounded">search</span>
                                   Enlace predeterminado
                                 </a>
                                 <a href="#" target="_blank" rel="noopener noreferrer" className="list-link-result">
-                                  <span className="material-symbols-outlined">search</span>
+                                  <span className="material-symbols-rounded">search</span>
                                   Enlace predeterminado
                                 </a>
                                 <a href="#" target="_blank" rel="noopener noreferrer" className="list-link-result">
-                                  <span className="material-symbols-outlined">search</span>
+                                  <span className="material-symbols-rounded">search</span>
                                   Enlace predeterminado
                                 </a>
                               </div>

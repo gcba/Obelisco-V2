@@ -154,7 +154,7 @@ export const HERO_CON_CAMPO_BUSCADOR = `<header class="hero">
           convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
         </p>
       </div>
-			<div class="search-container>
+			<div class="search-container">
 				<div class="search-wrapper">
 					<label htmlFor="search-home" class="sr-only">Buscar</label>
 					<input 
@@ -179,12 +179,12 @@ export const HERO_CON_CAMPO_BUSCADOR = `<header class="hero">
 						<div>
 								<a href="#" target="_blank" rel="noopener noreferrer" 
 								class="list-link-result">
-									<span class="material-symbols-outlined">search</span>
+									<span class="material-symbols-rounded">search</span>
 									Enlace predeterminado
 								</a>
 								<a href="#" target="_blank" rel="noopener noreferrer" 
 								class="list-link-result">
-									<span class="material-symbols-outlined">search</span>
+									<span class="material-symbols-rounded">search</span>
 									Enlace predeterminado
 								</a>
 							</div>

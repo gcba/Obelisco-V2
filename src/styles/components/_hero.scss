@@ -31,7 +31,7 @@ header.hero {
     flex-grow: 1;
     flex-shrink: 1;
     position: relative;
-    padding: 0.875rem 1rem 0.625rem;
+    padding: 32px 16px 24px;
 
     &::after {
       content: '';
@@ -228,6 +228,8 @@ header.hero {
 
   @media (width >= 576px) {
     .content {
+      padding: 32px 32px 24px;
+
       &.corner::after {
         bottom: -47px;
         height: 48px;
@@ -246,6 +248,8 @@ header.hero {
     position: relative;
 
     .content {
+      padding: 48px 0 48px 16px;
+
       &::after {
         top: 0;
       }
@@ -304,7 +308,7 @@ header.hero {
 
   @media (width >= 1200px) {
     .content {
-      padding: 0 0 0 60px;
+      padding: 48px 0 48px 60px;
 
       > div {
         width: 70%;

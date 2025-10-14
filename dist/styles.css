@@ -17782,7 +17782,7 @@ header.hero .content {
   flex-grow: 1;
   flex-shrink: 1;
   position: relative;
-  padding: 0.875rem 1rem 0.625rem;
+  padding: 32px 16px 24px;
 }
 header.hero .content::after {
   content: "";
@@ -17943,6 +17943,9 @@ header.hero .aside video::-webkit-media-controls-fullscreen-button {
   }
 }
 @media (width >= 576px) {
+  header.hero .content {
+    padding: 32px 32px 24px;
+  }
   header.hero .content.corner::after {
     bottom: -47px;
     height: 48px;
@@ -17957,6 +17960,9 @@ header.hero .aside video::-webkit-media-controls-fullscreen-button {
     flex-direction: row;
     align-items: stretch;
     position: relative;
+  }
+  header.hero .content {
+    padding: 48px 0 48px 16px;
   }
   header.hero .content::after {
     top: 0;
@@ -18006,7 +18012,7 @@ header.hero .aside video::-webkit-media-controls-fullscreen-button {
 }
 @media (width >= 1200px) {
   header.hero .content {
-    padding: 0 0 0 60px;
+    padding: 48px 0 48px 60px;
   }
   header.hero .content > div {
     width: 70%;

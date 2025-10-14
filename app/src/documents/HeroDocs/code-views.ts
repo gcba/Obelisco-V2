@@ -51,12 +51,7 @@ export const HERO_DINAMICO = `<header class="hero">
 				</div>
       </div>
    </div>
-   <div class="aside">
-      <img alt="Hero" loading="lazy" decoding="async" data-nimg="fill" 
-        style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" 
-        src="/Obelisco-V2/images/hero/multimedia-hero.jpg"
-      >
-  </div>
+   <div class="aside bg-aside-hero-dark"></div>
 </header>`;
 
 export const HERO_CON_IMAGEN = `<header class="hero">

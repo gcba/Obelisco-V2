@@ -17817,35 +17817,41 @@ header.hero .content .btn-hero {
     display: block;
   }
 }
-header.hero .content .search-wrapper {
+header.hero .content .search-container {
+  position: relative;
+  height: 58px;
+  z-index: 4;
+}
+header.hero .content .search-container .search-wrapper {
   max-width: 650px;
   border-radius: 0.5rem;
   overflow: hidden;
   width: 100%;
   height: 100%;
-  position: relative;
+  position: absolute;
   top: 0;
+  left: 0;
   /* contenedor del botón */
   /* input dentro de search */
 }
-header.hero .content .search-wrapper:focus-within {
+header.hero .content .search-container .search-wrapper:focus-within {
   background-color: #f3f6f9;
   box-shadow: 0 0 0 0.25rem #218274;
   outline: 0.25rem solid transparent;
   min-height: max-content;
 }
-header.hero .content .search-wrapper:focus-within .search-results {
+header.hero .content .search-container .search-wrapper:focus-within .search-results {
   display: block;
 }
-header.hero .content .search-wrapper .search-results {
+header.hero .content .search-container .search-wrapper .search-results {
   display: none;
   /* resultados */
 }
-header.hero .content .search-wrapper .search-results a:focus {
+header.hero .content .search-container .search-wrapper .search-results a:focus {
   box-shadow: none;
   outline: none;
 }
-header.hero .content .search-wrapper .search-results .list-link-result {
+header.hero .content .search-container .search-wrapper .search-results .list-link-result {
   padding: 0.5rem;
   display: flex;
   align-items: center;
@@ -17853,31 +17859,31 @@ header.hero .content .search-wrapper .search-results .list-link-result {
   color: #000;
   gap: 0.25rem;
 }
-header.hero .content .search-wrapper .search-btn-container {
+header.hero .content .search-container .search-wrapper .search-btn-container {
   position: absolute;
   top: 4px;
   right: 4px;
   bottom: 4px;
 }
-header.hero .content .search-wrapper .search-btn-container .btn-search > svg {
+header.hero .content .search-container .search-wrapper .search-btn-container .btn-search > svg {
   display: none;
 }
-header.hero .content .search-wrapper .search-btn-container .btn-search > p {
+header.hero .content .search-container .search-wrapper .search-btn-container .btn-search > p {
   margin: 0;
   padding: 0;
 }
 @media (width <= 360px) {
-  header.hero .content .search-wrapper .search-btn-container .btn-search {
+  header.hero .content .search-container .search-wrapper .search-btn-container .btn-search {
     z-index: 100;
   }
-  header.hero .content .search-wrapper .search-btn-container .btn-search > svg {
+  header.hero .content .search-container .search-wrapper .search-btn-container .btn-search > svg {
     display: block;
   }
-  header.hero .content .search-wrapper .search-btn-container .btn-search > p {
+  header.hero .content .search-container .search-wrapper .search-btn-container .btn-search > p {
     display: none;
   }
 }
-header.hero .content .search-wrapper #search-home.form-control {
+header.hero .content .search-container .search-wrapper #search-home.form-control {
   border-bottom: 2px solid #e6ebf0;
   border-radius: 0.5rem 0.5rem 0 0;
   padding: 1rem 12px;

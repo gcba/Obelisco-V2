@@ -360,7 +360,7 @@ const HeroHeaderDocs: React.FC = () => {
                           </p>
                         </div>
 
-                        <div className="d-grid d-sm-grid d-md-flex flex-wrap column-gap-2 row-gap-4">
+                        <div className="d-grid d-sm-grid d-md-flex flex-wrap search-container">
                           {/* search wrapper */}
                           <div className="search-wrapper">
                             <label htmlFor="search-home" className="sr-only">

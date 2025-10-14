@@ -445,6 +445,66 @@ export const HERO_COLORES = `<!-- default -->
   </div>
   <div class="aside bg-aside-hero-dark"></div>
 </header>
+<!-- blue -->
+<header class="hero bg-content-hero-blue">
+  <div class="content corner">
+    <div class="d-flex flex-column">
+      <nav aria-label="Navegación secundaria">
+        <ol class="breadcrumb m-0">
+          <li class="breadcrumb-item">
+            <a href="#">Inicio</a>
+          </li>
+        </ol>
+      </nav>
+      <div>
+        <h1 class="mb-3">Encabezado de la página</h1>
+        <p class="lead m-0">
+          Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la
+          convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
+        </p>
+      </div>
+      <div class="btn-hero">
+        <button type="button" class="btn btn-secondary">
+          Botón
+        </button>
+        <button type="button" class="btn btn-outline-secondary">
+          Botón
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="aside bg-aside-hero-dark"></div>
+</header>
+<!-- red -->
+<header class="hero bg-content-hero-red">
+  <div class="content corner">
+    <div class="d-flex flex-column">
+      <nav aria-label="Navegación secundaria">
+        <ol class="breadcrumb m-0">
+          <li class="breadcrumb-item">
+            <a href="#">Inicio</a>
+          </li>
+        </ol>
+      </nav>
+      <div>
+        <h1 class="mb-3">Encabezado de la página</h1>
+        <p class="lead m-0">
+          Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la
+          convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
+        </p>
+      </div>
+      <div class="btn-hero">
+        <button type="button" class="btn btn-secondary">
+          Botón
+        </button>
+        <button type="button" class="btn btn-outline-secondary">
+          Botón
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="aside bg-aside-hero-dark"></div>
+</header>
 `;
 
 export const HERO_LIGHT = `<header class="hero bg-content-hero-light">

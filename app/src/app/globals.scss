@@ -342,16 +342,13 @@ pre {
 
 .hero-container-4 {
   overflow: hidden;
-  min-height: calc(200px * 4);
+  min-height: calc(200px * 6);
 
   @media (max-width: 768px) {
-    min-height: calc(260px * 3);
+    min-height: calc(260px * 5);
   }
   @media (max-width: 385px) {
-    min-height: calc(300px * 3);
-  }
-  @media (max-width: 385px) {
-    min-height: calc(400px * 3);
+    min-height: calc(300px * 4);
   }
 }
 

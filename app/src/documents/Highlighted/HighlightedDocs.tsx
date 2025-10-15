@@ -29,6 +29,64 @@ const basePath = '/Obelisco-V2';
 const HighlightedDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
+      title: 'Destacado vertical',
+      firstTitle: true,
+      content: (
+        <>
+          <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTONS}>
+            <div className="highlighted-box-sizing-vertical">
+              <div className="container">
+                <div className="max-items-2">
+                  <div className="col">
+                    <div className="destacado-vertical">
+                      <Image
+                        src={`${basePath}/images/destacado/destacado_vertical.svg`}
+                        alt="descripción de imagen"
+                        className="panel-img"
+                        width={539}
+                        height={607}
+                      ></Image>
+
+                      <div className="destacado-vertical_contenido">
+                        <h4>Día del niño en la Ciudad</h4>
+                        <p className="text-md">
+                          ¡Vení a festejar con espectáculos en vivo, talleres, juegos y un montón de diversión!
+                        </p>
+                        <button type="button" className="btn btn-light">
+                          Más información
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="destacado-vertical">
+                      <Image
+                        src={`${basePath}/images/destacado/destacado_vertical.svg`}
+                        alt="descripción de imagen"
+                        className="panel-img"
+                        width={539}
+                        height={607}
+                      ></Image>
+
+                      <div className="destacado-vertical_contenido">
+                        <h4>Día del niño en la Ciudad</h4>
+                        <p className="text-md">
+                          ¡Vení a festejar con espectáculos en vivo, talleres, juegos y un montón de diversión!
+                        </p>
+                        <button type="button" className="btn btn-light">
+                          Más información
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+    {
       title: 'Destacado banner',
       firstTitle: true,
       content: (
@@ -38,7 +96,7 @@ const HighlightedDocs: React.FC = () => {
               <div className="panel-horizontal-content">
                 <div className="panel-horizontal">
                   <Image
-                    src={`${basePath}/images/destacado.jpg`}
+                    src={`${basePath}/images/destacado/destacado.jpg`}
                     alt="descripción de imagen"
                     className="panel-img"
                     width={538}
@@ -66,7 +124,7 @@ const HighlightedDocs: React.FC = () => {
               <div className="panel-horizontal-content">
                 <div className="panel-horizontal">
                   <Image
-                    src={`${basePath}/images/destacado.jpg`}
+                    src={`${basePath}/images/destacado/destacado.jpg`}
                     alt="descripción de imagen"
                     className="panel-img"
                     width={538}
@@ -93,7 +151,7 @@ const HighlightedDocs: React.FC = () => {
               <div className="panel-horizontal-content">
                 <div className="panel-horizontal">
                   <Image
-                    src={`${basePath}/images/destacado.jpg`}
+                    src={`${basePath}/images/destacado/destacado.jpg`}
                     alt="descripción de imagen"
                     className="panel-img"
                     width={538}
@@ -125,7 +183,7 @@ const HighlightedDocs: React.FC = () => {
               <div className="panel-horizontal-content">
                 <div className="panel-horizontal">
                   <Image
-                    src={`${basePath}/images/destacado.jpg`}
+                    src={`${basePath}/images/destacado/destacado.jpg`}
                     alt="descripción de imagen"
                     className="panel-img"
                     width={538}
@@ -152,7 +210,7 @@ const HighlightedDocs: React.FC = () => {
               <div className="panel-horizontal-content">
                 <div className="panel-horizontal">
                   <Image
-                    src={`${basePath}/images/destacado.jpg`}
+                    src={`${basePath}/images/destacado/destacado.jpg`}
                     alt="descripción de imagen"
                     className="panel-img"
                     width={538}
@@ -266,7 +324,7 @@ const HighlightedDocs: React.FC = () => {
               <div className="panel-horizontal-content bg-light">
                 <div className="panel-horizontal">
                   <Image
-                    src={`${basePath}/images/destacado.jpg`}
+                    src={`${basePath}/images/destacado/destacado.jpg`}
                     alt="descripción de imagen"
                     className="panel-img"
                     width={538}
@@ -302,7 +360,7 @@ const HighlightedDocs: React.FC = () => {
                   <div className="col">
                     <div className="panel-vertical">
                       <Image
-                        src={`${basePath}/images/destacado.jpg`}
+                        src={`${basePath}/images/destacado/destacado.jpg`}
                         alt="descripción de imagen"
                         className="panel-img"
                         width={538}
@@ -324,7 +382,7 @@ const HighlightedDocs: React.FC = () => {
                   <div className="col">
                     <div className="panel-vertical">
                       <Image
-                        src={`${basePath}/images/destacado.jpg`}
+                        src={`${basePath}/images/destacado/destacado.jpg`}
                         alt="descripción de imagen"
                         className="panel-img"
                         width={538}
@@ -351,7 +409,7 @@ const HighlightedDocs: React.FC = () => {
                   <div className="col">
                     <div className="panel-vertical">
                       <Image
-                        src={`${basePath}/images/destacado.jpg`}
+                        src={`${basePath}/images/destacado/destacado.jpg`}
                         alt="descripción de imagen"
                         className="panel-img"
                         width={538}
@@ -373,7 +431,7 @@ const HighlightedDocs: React.FC = () => {
                   <div className="col">
                     <div className="panel-vertical">
                       <Image
-                        src={`${basePath}/images/destacado.jpg`}
+                        src={`${basePath}/images/destacado/destacado.jpg`}
                         alt="descripción de imagen"
                         className="panel-img"
                         width={538}

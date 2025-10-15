@@ -948,9 +948,9 @@ const HeroHeaderDocs: React.FC = () => {
   return (
     <>
       <ComponentHeader
-        title="Hero header"
+        title="Cabecera de Página"
         description={[
-          'El header es una sección ubicada en la parte superior de la página que contiene elementos y componentes relacionados a la navegación. Su función es permitir que la persona usuaria pueda navegar y acceder intuitivamente a las diferentes secciones de un sitio.',
+          'La cabecera de página es el área destacada y principal de una página, pensada para captar la atención inmediata de la persona usuaria. Puede contener accionables como botones o campos de búsqueda.',
         ]}
       />
       <Tabs sectionDev={SECTIONS_DEV} />

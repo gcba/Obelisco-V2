@@ -19,39 +19,74 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
-      title: 'Versión 1.6.2',
+      title: 'Versión 1.7.0',
       firstTitle: true,
       content: (
         <ul className="docs-list">
           <p>La versión 1.7.0 contiene lo siguiente: </p>
-          <li>Se crea el componente Encabezado (hero).</li>
+          <li>Se crea el componente <a href="https://gcba.github.io/Obelisco-V2/components/hero">Cabecera de página.</a></li>
           <li>
-            <strong>Contenido principal:</strong> se crean las clases <code>.bg-content-hero-{'{color}'}</code>
+            <strong>Contenido principal:</strong> Se crean las clases <code>.bg-content-hero-{'{color}'} </code>
             para definir el color de fondo del contenido principal del Hero. <br />
-            Colores disponibles: <code>sky</code>, <code>blue</code>, <code>cyan</code>, <code>yellow</code>,{' '}
-            <code>red</code>, <code>purple</code>, <code>light</code> y <code>dark</code>.
+            Colores disponibles: 
+              <ul>
+                <li className='mb-0'><code>sky</code></li> 
+                <li className='mb-0'><code>blue</code></li>
+                <li className='mb-0'><code>cyan</code></li>
+                <li className='mb-0'><code>yellow</code></li>
+                <li className='mb-0'><code>red</code></li>
+                <li className='mb-0'><code>purple</code></li>
+                <li className='mb-0'><code>light</code></li>
+                <li className='mb-0'><code>dark</code></li>
+              </ul>
           </li>
 
           <li>
-            <strong>Aside:</strong> se crean las clases <code>.bg-aside-hero-{'{color}'}</code>, que deben utilizarse
+            <strong>Aside:</strong> Se crean las clases <code>.bg-aside-hero-{'{color}'}</code>, que deben utilizarse
             junto con <code>.aside</code> para definir el color del fondo lateral. <br />
-            Colores disponibles: <code>dark</code> y <code>light</code>.
+            Colores disponibles: 
+            <ul>
+              <li><code>dark</code></li>  
+              <li><code>light</code></li>
+            </ul>
+            <p>
+              Además el aside puede estar acompañado de multimedia, incluyendo imágenes o videos.
+            </p>
           </li>
 
           <li>
-            <strong>Accionable de botón:</strong> se incorpora la clase <code>.btn-hero</code>, que permite generar un
-            botón expandible a partir de 360px de ancho.
-          </li>
-
-          <li>
-            <strong>Accionable de buscador:</strong> se integran las clases <code>.search-wrapper</code>,{' '}
-            <code>.search-results</code>, <code>.search-btn-container</code> y <code>#search-home.form-control</code>,
-            correspondientes al buscador utilizado en BA Productiva.
-          </li>
-
-          <li>
-            <strong>Decoraciones visuales:</strong> se incorporan las clases <code>.corner</code> (borde esquinado) y{' '}
+            <strong>Decoraciones visuales:</strong> Se incorporan las clases <code>.corner</code> (borde esquinado) y{' '}
             <code>.wave</code> (efecto de onda).
+          </li>
+
+          <li>
+            <strong>Accionables:</strong> Los ejemplos que tenemos disponibles pueden ser de tipo:
+            <ul>
+              <li>
+                <strong> Botón: </strong>Donde se incorpora la clase <code>.btn-hero</code>, que permite generar un botón expandible a
+                partir de 360px de ancho.
+              </li>
+              <li>
+                <strong>Buscador: </strong>Donde se integran las clases <code>.search-wrapper</code>,{' '}
+                <code>.search-results</code>, <code>.search-btn-container</code> y <code>#search-home.form-control</code>.
+              </li>
+              <li>
+                Para <strong>Etiquetas</strong> y <strong>Desplegables</strong> se colocan las clases necesarias para la disposición 
+                visual y espaciados como <code>d-flex</code>, <code>d-grid</code>, <code>column-gap-2</code> o <code>row-gap-4</code>
+              </li>
+            </ul>        
+            {/* <p className='mb-0'>
+              <strong> Botón: </strong>Donde se incorpora la clase <code>.btn-hero</code>, que permite generar un botón expandible a
+              partir de 360px de ancho.
+            </p>
+            <p>
+              <strong>Buscador: </strong>Donde se integran las clases <code>.search-wrapper</code>,{' '}
+              <code>.search-results</code>, <code>.search-btn-container</code> y <code>#search-home.form-control</code>.
+            </p>
+            <p>
+              Para <strong>Etiquetas</strong> y <strong>Desplegables</strong> se colocan las clases necesarias para la disposición 
+              visual y espaciados como <code>d-flex</code>, <code>d-grid</code>, <code>column-gap-2</code> o <code>row-gap-4</code>
+            </p> */}
           </li>
         </ul>
       ),

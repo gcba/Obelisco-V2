@@ -59,7 +59,6 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
                   id={section.id || `section-${type}-${index + 1}`}
                   ref={sectionRefs[index]}
                 >
-                  {/* {section.title && <h2 className="h4 mb-3 mt-5" style={{ marginTop: '32px !important' }} >{section.title}</h2>} */}
                   {section.title && (
                     <h2 className="h4 mb-3" style={{ marginTop: section.firstTitle ? `0px` : '48px' }}>
                       {section.title}
@@ -83,7 +82,6 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
 
                   {section.description && <SimpleText description={section.description} />}
                   {section.content && <div style={{ marginBottom: '32px' }}>{section.content}</div>}
-                  {/* <div style={{ marginBottom: `${section.contentMarginBottom || 32}px` }}>{section.content}</div> */}
                 </section>
               ))}
               {!noScrollButton && (
@@ -94,26 +92,28 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
             </div>
           </article>
 
-          <div className="nav-scrollspy d-none d-xl-block flex-grow-1">
-            <div className="nav-scrollspy-position">
-              <p className="text-sm fw-bold text-body-secondary mb-3">
-                {type == 'dev' ? 'Variantes' : 'Contenido en esta página'}
-              </p>
-              <ul className="scrollspy" data-cy="nav-wrapper">
-                {sections.map((section, index) => (
-                  <li key={`${section.id}-${index}`} className={activeIndex === index ? 'active' : ''}>
-                    <a href={`#${section.id || `section-${type}-${index + 1}`}`} className="text-sm">
-                      {section.title && section.title}
-                      {section.subtitle && <ScrollspySubtitle text={section.subtitle} ScrollspyComponent={true} />}
-                      {section.subtitleBold && (
-                        <ScrollspySubtitle text={section.subtitleBold} ScrollspyComponent={true} />
-                      )}
-                    </a>
-                  </li>
-                ))}
-              </ul>
+          {type !== 'none' && (
+            <div className="nav-scrollspy d-none d-xl-block flex-grow-1">
+              <div className="nav-scrollspy-position">
+                <p className="text-sm fw-bold text-body-secondary mb-3">
+                  {type === 'dev' ? 'Variantes' : 'Contenido en esta página'}
+                </p>
+                <ul className="scrollspy" data-cy="nav-wrapper">
+                  {sections.map((section, index) => (
+                    <li key={`${section.id}-${index}`} className={activeIndex === index ? 'active' : ''}>
+                      <a href={`#${section.id || `section-${type}-${index + 1}`}`} className="text-sm">
+                        {section.title && section.title}
+                        {section.subtitle && <ScrollspySubtitle text={section.subtitle} ScrollspyComponent={true} />}
+                        {section.subtitleBold && (
+                          <ScrollspySubtitle text={section.subtitleBold} ScrollspyComponent={true} />
+                        )}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
-          </div>
+          )}
         </div>
       )}
     </Scrollspy>

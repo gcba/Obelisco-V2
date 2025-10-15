@@ -320,6 +320,38 @@ pre {
   width: 200%;
 }
 
+// Contenedor para mostrar variante Encabezado (Hero)
+.hero-box-sizing {
+  zoom: 0.5;
+  transform-origin: top left;
+  width: 100%;
+  margin-bottom: -100%;
+}
+
+.hero-container {
+  overflow: hidden;
+  min-height: 300px;
+
+  @media (max-width: 768px) {
+    min-height: 350px;
+  }
+  @media (max-width: 360px) {
+    min-height: 330px;
+  }
+}
+
+.hero-container-4 {
+  overflow: hidden;
+  min-height: calc(200px * 6);
+
+  @media (max-width: 768px) {
+    min-height: calc(260px * 5);
+  }
+  @media (max-width: 385px) {
+    min-height: calc(300px * 4);
+  }
+}
+
 //Visualizacion de Destacado en codebox
 .highlighted-box-sizing {
   transform: scale(0.6);

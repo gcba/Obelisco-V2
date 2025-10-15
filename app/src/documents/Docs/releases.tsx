@@ -24,34 +24,54 @@ const ReleasesComponents: React.FC = () => {
       content: (
         <ul className="docs-list">
           <p>La versión 1.7.0 contiene lo siguiente: </p>
-          <li>Se crea el componente <a href="https://gcba.github.io/Obelisco-V2/components/hero">Cabecera de página.</a></li>
+          <li>
+            Se crea el componente <a href="https://gcba.github.io/Obelisco-V2/components/hero">Cabecera de página.</a>
+          </li>
           <li>
             <strong>Contenido principal:</strong> Se crean las clases <code>.bg-content-hero-{'{color}'} </code>
             para definir el color de fondo del contenido principal del Hero. <br />
-            Colores disponibles: 
-              <ul>
-                <li className='mb-0'><code>sky</code></li> 
-                <li className='mb-0'><code>blue</code></li>
-                <li className='mb-0'><code>cyan</code></li>
-                <li className='mb-0'><code>yellow</code></li>
-                <li className='mb-0'><code>red</code></li>
-                <li className='mb-0'><code>purple</code></li>
-                <li className='mb-0'><code>light</code></li>
-                <li className='mb-0'><code>dark</code></li>
-              </ul>
+            Colores disponibles:
+            <ul>
+              <li className="mb-0">
+                <code>sky</code>
+              </li>
+              <li className="mb-0">
+                <code>blue</code>
+              </li>
+              <li className="mb-0">
+                <code>cyan</code>
+              </li>
+              <li className="mb-0">
+                <code>yellow</code>
+              </li>
+              <li className="mb-0">
+                <code>red</code>
+              </li>
+              <li className="mb-0">
+                <code>purple</code>
+              </li>
+              <li className="mb-0">
+                <code>light</code>
+              </li>
+              <li className="mb-0">
+                <code>dark</code>
+              </li>
+            </ul>
           </li>
 
           <li>
             <strong>Aside:</strong> Se crean las clases <code>.bg-aside-hero-{'{color}'}</code>, que deben utilizarse
             junto con <code>.aside</code> para definir el color del fondo lateral. <br />
-            Colores disponibles: 
+            Colores disponibles:
             <ul>
-              <li><code>dark</code></li>  
-              <li><code>light</code></li>
+              <li>
+                <code>dark</code>
+              </li>
+              <li>
+                <code>light</code>
+              </li>
             </ul>
-            <p>
-              Además el aside puede estar acompañado de multimedia, incluyendo imágenes o videos.
-            </p>
+            <p>Además el aside puede estar acompañado de multimedia, incluyendo imágenes o videos.</p>
           </li>
 
           <li>
@@ -63,18 +83,20 @@ const ReleasesComponents: React.FC = () => {
             <strong>Accionables:</strong> Los ejemplos que tenemos disponibles pueden ser de tipo:
             <ul>
               <li>
-                <strong> Botón: </strong>Donde se incorpora la clase <code>.btn-hero</code>, que permite generar un botón expandible a
-                partir de 360px de ancho.
+                <strong> Botón: </strong>Donde se incorpora la clase <code>.btn-hero</code>, que permite generar un
+                botón expandible a partir de 360px de ancho.
               </li>
               <li>
                 <strong>Buscador: </strong>Donde se integran las clases <code>.search-wrapper</code>,{' '}
-                <code>.search-results</code>, <code>.search-btn-container</code> y <code>#search-home.form-control</code>.
+                <code>.search-results</code>, <code>.search-btn-container</code> y{' '}
+                <code>#search-home.form-control</code>.
               </li>
               <li>
-                Para <strong>Etiquetas</strong> y <strong>Desplegables</strong> se colocan las clases necesarias para la disposición 
-                visual y espaciados como <code>d-flex</code>, <code>d-grid</code>, <code>column-gap-2</code> o <code>row-gap-4</code>
+                Para <strong>Etiquetas</strong> y <strong>Desplegables</strong> se colocan las clases necesarias para la
+                disposición visual y espaciados como <code>d-flex</code>, <code>d-grid</code>, <code>column-gap-2</code>{' '}
+                o <code>row-gap-4</code>
               </li>
-            </ul>        
+            </ul>
             {/* <p className='mb-0'>
               <strong> Botón: </strong>Donde se incorpora la clase <code>.btn-hero</code>, que permite generar un botón expandible a
               partir de 360px de ancho.

@@ -1,0 +1,202 @@
+.carousel {
+	padding:  24px 16px;
+	background-color: $light;
+	display: flex;
+	flex-direction: column;
+	row-gap: 24px;
+
+	.carousel-indicators {
+		position: relative;
+		justify-content: start;
+		margin: 0;
+		align-items: center;
+		column-gap: 8px;
+		height: 48px;
+
+		button {
+			margin: 0;
+			background-color: transparent;
+			border: solid 1px $blue-900;
+			width: 12px;
+			height: 12px;
+			opacity: 1;
+			border-radius: 50%;
+
+			&.active {
+				background-color: $blue-900;
+			}
+		}
+	}
+
+	.carousel-control-next, .carousel-control-prev {
+		top: auto;
+		bottom: 12px;
+		z-index: 2;
+		border: 2px solid $slate-100;
+		border-radius: 8px;
+		background-color: #fff;
+		display: flex;
+		padding: 8px;
+		align-items: center;
+		justify-content: center;
+
+		span {
+			width: 32px;
+			height: 32px;
+		}
+	}
+
+	.carousel-control-next {
+		right: 16px;
+	}
+
+	.carousel-control-prev {
+		left: auto;
+		right: 70px;
+	}
+
+	.panel-horizontal-content {
+		background-color: transparent;
+
+		.panel-horizontal {
+			padding: 0;
+			max-width: 100%;
+
+			.panel-footer {
+				a {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	&.dark {
+		background-color: $dark;
+		color: $white;
+
+		.carousel-indicators {
+			button {
+				border-color: $white;
+
+				&.active {
+					background-color: $white;
+				}
+			}
+		}
+	}
+
+	&.cards {
+		// Version mobile, se usa el media query para evirar romper el funcionamiento del carousel
+		@media (width < 992px) {
+			.carousel-inner {
+				display: flex;
+				flex-wrap: nowrap;
+				overflow-x: auto;
+				overflow-y: hidden;
+				column-gap: 24px;
+				padding: 0 0 24px 0;
+	
+				.carousel-item {
+					display: contents;
+	
+					.card {
+						flex: 0 0 auto;
+						width: 296px;
+					}
+				}
+			}
+	
+			.carousel-control-next, .carousel-control-prev, .carousel-indicators {
+				display: none;
+			}
+		}
+	}
+
+	@media (width >= 576px) {
+		padding: 32px;
+
+		.panel-horizontal-content {
+			.panel-horizontal {
+				.panel-footer {
+					a {
+						width: auto;
+					}
+				}
+			}
+		}
+
+		&.cards {
+			padding:  24px 16px;
+		}
+	}
+
+	@media (width >= 992px) {
+		padding: 48px 84px 32px;
+
+		.carousel-indicators {
+			justify-content: center;
+			height: auto;
+		}
+
+		.carousel-control-next, .carousel-control-prev {
+			top: 50%;
+			bottom: auto;
+
+			span {
+				width: 48px;
+				height: 48px;
+			}
+		}
+
+		.carousel-control-prev {
+			left: 16px;
+			right: auto;
+		}
+
+		.carousel-control-next {
+			right: 16px;
+			left: auto;
+		}
+
+		.panel-horizontal-content {
+			padding: 0;
+
+			.panel-horizontal {
+				flex-direction: row-reverse;
+				align-items: center;
+
+				img {
+					max-width: 50%;
+				}
+			}
+		}
+
+		&.cards {
+			padding: 48px 84px 32px;
+
+			.carousel-inner {
+				overflow-x: hidden;
+				display: block;
+
+				.carousel-item {
+					.card {
+						display: inline-block;
+						vertical-align: top;
+						width: calc((100% - 58px) / 3);
+						margin-right: 24px;
+
+						&:nth-child(3n) {
+							margin-right: 0;
+						}
+					}
+				}
+			}
+
+			& > a {
+				position: absolute;
+				right: 84px;
+				top: 54px;
+			} 
+		}
+	}
+}

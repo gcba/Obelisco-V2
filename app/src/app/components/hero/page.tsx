@@ -1,5 +1,5 @@
-import HeroHeaderDocs from '@/documents/HeroDocs/HeroHeaderDocs';
+import HeroDocs from '@/documents/HeroDocs/HeroDocs';
 
 export default function HeaderPage() {
-  return <HeroHeaderDocs />;
+  return <HeroDocs />;
 }

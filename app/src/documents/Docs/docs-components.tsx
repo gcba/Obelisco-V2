@@ -768,6 +768,11 @@ const sections = [
           Las clases <code>.card-deck</code>, <code>.max-cards-2</code> y <code>.card-column</code> quedan deprecadas y
           se reemplazan por <code>.card-items-2</code>.
         </li>
+
+        <p className="text-md my-4">
+          <strong>Versión 1.6.1</strong>
+        </p>
+
         <li>
           Se crean las clases <code>{'.card-border-{direction}-{color}'}</code>
           <br />

@@ -131,7 +131,7 @@
 	}
 
 	@media (width >= 992px) {
-		padding: 48px 84px 32px;
+		padding: 48px 129px 32px;
 
 		.carousel-indicators {
 			justify-content: center;
@@ -149,12 +149,12 @@
 		}
 
 		.carousel-control-prev {
-			left: 16px;
+			left: 40px;
 			right: auto;
 		}
 
 		.carousel-control-next {
-			right: 16px;
+			right: 40px;
 			left: auto;
 		}
 
@@ -172,7 +172,7 @@
 		}
 
 		&.cards {
-			padding: 48px 84px 32px;
+			padding: 48px 129px 32px;
 
 			.carousel-inner {
 				overflow-x: hidden;

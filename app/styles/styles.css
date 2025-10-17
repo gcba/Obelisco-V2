@@ -17906,6 +17906,8 @@ header.hero .aside {
   background-color: #fff;
 }
 header.hero .aside img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: bottom;
   position: inherit !important;
@@ -17968,7 +17970,7 @@ header.hero .aside video::-webkit-media-controls-fullscreen-button {
     position: relative;
   }
   header.hero .content {
-    padding: 48px 0 48px 16px;
+    padding: 48px 0 48px calc((100% - 720px) / 2 + 0.75rem);
   }
   header.hero .content::after {
     top: 0;
@@ -17991,6 +17993,9 @@ header.hero .aside video::-webkit-media-controls-fullscreen-button {
   }
   header.hero .content > .flex-column, header.hero .content > .list-steps {
     row-gap: 32px;
+  }
+  header.hero .content > div {
+    width: 100%;
   }
   header.hero .aside {
     flex-shrink: 0;
@@ -18018,10 +18023,13 @@ header.hero .aside video::-webkit-media-controls-fullscreen-button {
 }
 @media (width >= 1200px) {
   header.hero .content {
-    padding: 48px 0 48px 60px;
+    padding: 48px 0 48px calc((100% - 1140px) / 2 + 0.75rem);
   }
-  header.hero .content > div {
-    width: 70%;
+}
+@media (width >= 1900px) {
+  header.hero {
+    max-width: 1900px;
+    margin: 0 auto;
   }
 }
 

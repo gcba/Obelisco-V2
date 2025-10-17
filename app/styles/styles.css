@@ -19221,7 +19221,8 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
 .carousel .carousel-indicators button.active {
   background-color: #101e37;
 }
-.carousel .carousel-control-next, .carousel .carousel-control-prev {
+.carousel .carousel-control-next,
+.carousel .carousel-control-prev {
   top: auto;
   bottom: 12px;
   z-index: 2;
@@ -19233,7 +19234,8 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
   align-items: center;
   justify-content: center;
 }
-.carousel .carousel-control-next span, .carousel .carousel-control-prev span {
+.carousel .carousel-control-next span,
+.carousel .carousel-control-prev span {
   width: 32px;
   height: 32px;
 }
@@ -19268,10 +19270,9 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
   .carousel.cards .carousel-inner {
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
+    overflow: auto hidden;
     column-gap: 24px;
-    padding: 0 0 24px 0;
+    padding: 0 0 24px;
   }
   .carousel.cards .carousel-inner .carousel-item {
     display: contents;
@@ -19280,7 +19281,9 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
     flex: 0 0 auto;
     width: 296px;
   }
-  .carousel.cards .carousel-control-next, .carousel.cards .carousel-control-prev, .carousel.cards .carousel-indicators {
+  .carousel.cards .carousel-control-next,
+  .carousel.cards .carousel-control-prev,
+  .carousel.cards .carousel-indicators {
     display: none;
   }
 }
@@ -19303,11 +19306,13 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
     justify-content: center;
     height: auto;
   }
-  .carousel .carousel-control-next, .carousel .carousel-control-prev {
+  .carousel .carousel-control-next,
+  .carousel .carousel-control-prev {
     top: 50%;
     bottom: auto;
   }
-  .carousel .carousel-control-next span, .carousel .carousel-control-prev span {
+  .carousel .carousel-control-next span,
+  .carousel .carousel-control-prev span {
     width: 48px;
     height: 48px;
   }

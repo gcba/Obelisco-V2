@@ -19297,7 +19297,7 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
 }
 @media (width >= 992px) {
   .carousel {
-    padding: 48px 84px 32px;
+    padding: 48px 129px 32px;
   }
   .carousel .carousel-indicators {
     justify-content: center;
@@ -19312,11 +19312,11 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
     height: 48px;
   }
   .carousel .carousel-control-prev {
-    left: 16px;
+    left: 40px;
     right: auto;
   }
   .carousel .carousel-control-next {
-    right: 16px;
+    right: 40px;
     left: auto;
   }
   .carousel .panel-horizontal-content {
@@ -19330,7 +19330,7 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
     max-width: 50%;
   }
   .carousel.cards {
-    padding: 48px 84px 32px;
+    padding: 48px 129px 32px;
   }
   .carousel.cards .carousel-inner {
     overflow-x: hidden;

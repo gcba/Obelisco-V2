@@ -27,7 +27,7 @@ header.hero {
   flex-direction: column;
   background-color: map-get($content-colors, 'sky');
   min-height: 324px;
-  
+
   .content {
     flex-grow: 1;
     flex-shrink: 1;

@@ -149,8 +149,6 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
               </div>
               <NavLayout items={templatesPages} />
             </div>
-          )}
-
           )}{' '}
           {pathname.includes('/documentation') && (
             <div className="nav-left sticky-nav h-auto">

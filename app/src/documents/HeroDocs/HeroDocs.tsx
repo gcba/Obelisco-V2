@@ -18,7 +18,6 @@ import {
   HERO_DINAMICO,
   HERO_INSTITUCIONAL,
   HERO_LIGHT,
-  HERO_CON_IMAGEN,
 } from './code-views';
 
 const HeroHeaderDocs: React.FC = () => {
@@ -132,7 +131,7 @@ const HeroHeaderDocs: React.FC = () => {
       subtitle: 'Con imagen',
       content: (
         <>
-          <CodeBox codeHTML={HERO_CON_IMAGEN}>
+          <CodeBox codeHTML={HERO_DINAMICO}>
             <div className="container">
               <div className="hero-container">
                 <div className="hero-box-sizing ">

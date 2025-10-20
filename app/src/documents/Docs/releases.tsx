@@ -19,7 +19,7 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
-      title: 'Versión 1.7.0',
+      title: 'Versión 1.7.1',
       firstTitle: true,
       content: (
         <ul className="docs-list">

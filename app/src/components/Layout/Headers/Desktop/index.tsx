@@ -14,7 +14,8 @@ export default function HeaderDesktop() {
     { text: 'Empezar con Obelisco', url: '/getting-started', id: 1 },
     { text: 'Librería', url: '/components', id: 2 },
     { text: 'Patrones', url: '/patterns', id: 3 },
-    { text: 'Plantillas', url: '/templates', id: 4 },
+    { text: 'Contenidos', url: '/content', id: 4 },
+    { text: 'Plantillas', url: '/templates', id: 5 },
   ];
   const pathname = usePathname();
 

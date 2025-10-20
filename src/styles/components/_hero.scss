@@ -255,7 +255,6 @@ header.hero {
     &:has(.aside img, .aside video) .content > .flex-column {
       width: 90%;
     }
-
     flex-direction: row;
     align-items: stretch;
     position: relative;

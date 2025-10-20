@@ -22,11 +22,11 @@ const TemplatePaginaLibroDocs: React.FC = () => {
       content: (
         <>
           <div style={{ marginTop: '8px' }}>
-            <p>
+            <p className="text-md">
               Se encuentra al comienzo de la página, justo debajo del componente Migas de pan. Su funcionalidad es
               brindar un pantallazo acerca de la página. Está compuesto por:
             </p>
-            <div className="list-informative mb-3">
+            <div className="list-informative mb-5">
               <ul className="list-informative-bullet">
                 <li>Título, obligatorio.</li>
                 <li>Bajada, opcional. Da más contexto sobre la página y se usa de apoyo al título.</li>
@@ -50,7 +50,7 @@ const TemplatePaginaLibroDocs: React.FC = () => {
       content: (
         <>
           <div>
-            <p>
+            <p className="text-md" style={{ marginBottom: '2rem' }}>
               Contiene accesos directos a las distintas secciones de la página y señala en cuál se encuentra la persona
               usuaria, es obligatoria.
             </p>
@@ -71,7 +71,7 @@ const TemplatePaginaLibroDocs: React.FC = () => {
         <>
           <div>
             <p>Contenido de la página. Está compuesto por secciones que pueden incluir:</p>
-            <div className="list-informative mb-3">
+            <div className="list-informative" style={{ margin: '2rem 0' }}>
               <ul className="list-informative-bullet">
                 <li>Título, obligatorio.</li>
                 <li>Bajada, opcional. Brinda contexto sobre la sección y se usa de apoyo al título.</li>
@@ -90,8 +90,8 @@ const TemplatePaginaLibroDocs: React.FC = () => {
           />
           <div className="d-flex flex-column" style={{ marginTop: '2rem', gap: '2rem' }}>
             <div>
-              <p className="text-md">
-                <strong>Buenas prácticas</strong>
+              <p className="text-xl" style={{ marginBottom: '0.75rem' }}>
+                Buenas prácticas
               </p>
               <div className="d-flex">
                 <span className="material-symbols-rounded text-success">check</span>
@@ -103,8 +103,8 @@ const TemplatePaginaLibroDocs: React.FC = () => {
             </div>
 
             <div>
-              <p>
-                <strong>Malas prácticas</strong>
+              <p className="text-xl" style={{ marginBottom: '0.75rem' }}>
+                Malas prácticas
               </p>
               <div className="d-flex">
                 <span className="material-symbols-rounded text-danger">close</span>
@@ -123,12 +123,12 @@ const TemplatePaginaLibroDocs: React.FC = () => {
       content: (
         <>
           <div>
-            <p>
+            <p className="text-md m-0">
               Para mantener una estructura clara, legible y alineada al sistema de grillas, recomendamos los siguientes
               espaciados entre títulos, párrafos y accionables.
             </p>
 
-            <div className="d-flex flex-column mt-3" style={{ gap: '2rem' }}>
+            <div className="d-flex flex-column " style={{ gap: '2rem', marginTop: '2rem' }}>
               <Image
                 src={`${basePath}/images/templates/pagina_libro/space_1.svg`}
                 alt="Ejemplo encabezado de página libro"

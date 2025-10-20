@@ -23,6 +23,22 @@ const ReleasesComponents: React.FC = () => {
       firstTitle: true,
       content: (
         <ul className="docs-list">
+          <p>La versión 1.7.1 contiene lo siguiente: </p>
+          <li>Se corrigen alineaciones y márgenes del componente Cabecera de Página</li>
+          <li>
+            <strong>
+              Se define un punto de corte (breakpoint) en la etiqueta <code>body</code>.{' '}
+            </strong>
+            Para dispositivos con resoluciones superiores a 1920px, el contenido tiene un ancho máximo de 1900px.
+          </li>
+        </ul>
+      ),
+    },
+    {
+      title: 'Versión 1.7.0',
+      firstTitle: true,
+      content: (
+        <ul className="docs-list">
           <p>La versión 1.7.0 contiene lo siguiente: </p>
           <li>
             Se crea el componente <a href="https://gcba.github.io/Obelisco-V2/components/hero">Cabecera de página.</a>

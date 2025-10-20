@@ -12007,6 +12007,13 @@ textarea.form-control-lg {
   }
 }
 
+@media (width >= 1920px) {
+  body {
+    max-width: 1900px;
+    margin: 0 auto;
+  }
+}
+
 .h1,
 h1 {
   font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -17967,6 +17974,9 @@ header.hero .aside video::-webkit-media-controls-fullscreen-button {
     align-items: stretch;
     position: relative;
   }
+  header.hero:has(.aside img, .aside video) .content > .flex-column, header.hero:has(.aside img, .aside video) .content > .list-steps {
+    width: 90%;
+  }
   header.hero .content {
     padding: 48px 0 48px 16px;
   }
@@ -18022,6 +18032,11 @@ header.hero .aside video::-webkit-media-controls-fullscreen-button {
   }
   header.hero .content > div {
     width: 70%;
+  }
+}
+@media (width >= 1400px) {
+  header.hero .content {
+    padding: 48px 0 48px 176px;
   }
 }
 

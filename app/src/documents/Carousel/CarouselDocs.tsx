@@ -24,7 +24,7 @@ const CarouselDocs: React.FC = () => {
         <CodeBox codeHTML={CAROUSEL_DESTACADO}>
           <div className="container">
             <ZoomContainer>
-              <div id="carousel" className="carousel slide" data-bs-wrap="false">
+              <div id="carousel" className="carousel slide">
                 <div className="carousel-inner">
                   <div className="carousel-item active">
                     <div className="panel-horizontal-content">
@@ -136,7 +136,7 @@ const CarouselDocs: React.FC = () => {
         <CodeBox codeHTML={CAROUSEL_DESTACADO_DARK}>
           <div className="container">
             <ZoomContainer>
-              <div id="carousel-dark" className="carousel dark slide" data-bs-wrap="false">
+              <div id="carousel-dark" className="carousel dark slide">
                 <div className="carousel-inner">
                   <div className="carousel-item active">
                     <div className="panel-horizontal-content">
@@ -271,8 +271,13 @@ const CarouselDocs: React.FC = () => {
         <CodeBox codeHTML={CAROUSEL_CARDS}>
           <div className="container">
             <ZoomContainer>
-              <div id="carousel-cards" className="carousel cards slide" data-bs-wrap="false">
-                <h4 className="m-0">Encabezado de la seccion</h4>
+              <div id="carousel-cards" className="carousel cards slide">
+                <div className="title">
+                  <h4 className="m-0">Encabezado de la seccion</h4>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    Enlace predeterminado
+                  </a>
+                </div>
 
                 <div className="carousel-inner responsive-scroll">
                   <div className="carousel-item active">
@@ -375,10 +380,6 @@ const CarouselDocs: React.FC = () => {
                   <span className="carousel-control-next-icon" aria-hidden="true"></span>
                   <span className="visually-hidden">Siguiente</span>
                 </button>
-
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  Enlace predeterminado
-                </a>
               </div>
             </ZoomContainer>
           </div>
@@ -391,8 +392,13 @@ const CarouselDocs: React.FC = () => {
         <CodeBox codeHTML={CAROUSEL_CARDS_DARK}>
           <div className="container">
             <ZoomContainer>
-              <div id="carousel-cards-dark" className="carousel cards dark slide" data-bs-wrap="false">
-                <h4 className="m-0">Encabezado de la seccion</h4>
+              <div id="carousel-cards-dark" className="carousel cards dark slide">
+                <div className="title">
+                  <h4 className="m-0">Encabezado de la seccion</h4>
+                  <a href="#" target="_blank" className="link-white" rel="noopener noreferrer">
+                    Enlace predeterminado
+                  </a>
+                </div>
 
                 <div className="carousel-inner responsive-scroll">
                   <div className="carousel-item active">
@@ -476,10 +482,6 @@ const CarouselDocs: React.FC = () => {
                     aria-label="Slide 3"
                   ></button>
                 </div>
-
-                <a href="#" target="_blank" className="link-white" rel="noopener noreferrer">
-                  Enlace predeterminado
-                </a>
 
                 <button
                   className="carousel-control-prev"

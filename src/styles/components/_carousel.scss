@@ -1,9 +1,46 @@
+$carousel-bg: $white;
+$carousel-active-bg: $blue-700;
+$svg-base-left: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 6.70498C14.61 6.31498 13.98 6.31498 13.59 6.70498L9.00002 11.295C8.61002 11.685 8.61002 12.315 9.00002 12.705L13.59 17.295C13.98 17.685 14.61 17.685 15 17.295C15.39 16.905 15.39 16.275 15 15.885L11.12 11.995L15 8.11498C15.39 7.72498 15.38 7.08498 15 6.70498Z" fill="%23';
+$svg-base-right: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9.00002 6.71063C8.61002 7.10063 8.61002 7.73063 9.00002 8.12063L12.88 12.0006L9.00002 15.8806C8.61002 16.2706 8.61002 16.9006 9.00002 17.2906C9.39002 17.6806 10.02 17.6806 10.41 17.2906L15 12.7006C15.39 12.3106 15.39 11.6806 15 11.2906L10.41 6.70063C10.03 6.32063 9.39002 6.32063 9.00002 6.71063Z" fill="%23';
+$color-default: '101E37';
+$color-hover: '274986';
+$color-active: 'FFFFFF';
+
+$carousel-icon-left: url('#{$svg-base-left}#{$color-default}"/></svg>');
+$carousel-icon-right: url('#{$svg-base-right}#{$color-default}"/></svg>');
+$carousel-icon-left-hover: url('#{$svg-base-left}#{$color-hover}"/></svg>');
+$carousel-icon-right-hover: url('#{$svg-base-right}#{$color-hover}"/></svg>');
+$carousel-icon-left-active: url('#{$svg-base-left}#{$color-active}"/></svg>');
+$carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
+
+@mixin carousel-navigation-states(
+  $box-shadow,
+  $bg-color,
+  $icon-left,
+  $icon-right
+) {
+  box-shadow: $box-shadow;
+  background-color: $bg-color;
+
+  .carousel-control-prev-icon {
+    content: $icon-left;
+  }
+
+  .carousel-control-next-icon {
+    content: $icon-right;
+  }
+}
+
 .carousel {
   padding: 24px 16px;
   background-color: $light;
   display: flex;
   flex-direction: column;
   row-gap: 24px;
+
+  &:has(.title > a) {
+    padding-bottom: 64px;
+  }
 
   .carousel-indicators {
     position: relative;
@@ -33,17 +70,56 @@
     top: auto;
     bottom: 12px;
     z-index: 2;
-    border: 2px solid $slate-100;
-    border-radius: 8px;
-    background-color: #fff;
     display: flex;
-    padding: 8px;
     align-items: center;
     justify-content: center;
+    border-radius: $border-radius-lg;
+    border: none;
+    outline: $outline-border;
+    height: $pagination-size;
+    min-width: 48px;
+    padding: 0.5rem 0.25rem;
 
-    span {
-      width: 32px;
-      height: 32px;
+    .carousel-control-prev-icon {
+      background-image: none;
+      content: $carousel-icon-left;
+    }
+
+    .carousel-control-next-icon {
+      background-image: none;
+      content: $carousel-icon-right;
+    }
+
+    &:focus {
+      @include carousel-navigation-states(
+        $focus-box-shadow,
+        $carousel-bg,
+        $carousel-icon-left,
+        $carousel-icon-right
+      );
+      outline: 0.25rem solid transparent;
+    }
+
+    &:hover {
+      @include carousel-navigation-states(
+        none,
+        $carousel-bg,
+        $carousel-icon-left-hover,
+        $carousel-icon-right-hover
+      );
+      outline: $hover-outline;
+    }
+
+    &:active {
+      @include carousel-navigation-states(
+        none,
+        $carousel-active-bg,
+        $carousel-icon-left-active,
+        $carousel-icon-right-active
+      );
+      outline: 0.25rem solid transparent;
+      outline-offset: -2px;
+      box-shadow: 0 0 0 0.125rem $slate-100;
     }
   }
 
@@ -56,6 +132,18 @@
     right: 70px;
   }
 
+  .title {
+    display: flex;
+    column-gap: 2rem;
+    align-items: center;
+
+    a {
+      position: absolute;
+      left: 16px;
+      bottom: 24px;
+    }
+  }
+
   .panel-horizontal-content {
     background-color: transparent;
 
@@ -66,6 +154,7 @@
       .panel-footer {
         a {
           width: 100%;
+          max-width: 360px;
         }
       }
     }
@@ -117,6 +206,12 @@
   @media (width >= 576px) {
     padding: 32px;
 
+    .title {
+      a {
+        left: 32px;
+      }
+    }
+
     .panel-horizontal-content {
       .panel-horizontal {
         .panel-footer {
@@ -128,7 +223,7 @@
     }
 
     &.cards {
-      padding: 24px 16px;
+      padding: 24px 32px;
     }
   }
 
@@ -144,11 +239,6 @@
     .carousel-control-prev {
       top: 50%;
       bottom: auto;
-
-      span {
-        width: 48px;
-        height: 48px;
-      }
     }
 
     .carousel-control-prev {
@@ -159,6 +249,12 @@
     .carousel-control-next {
       right: 40px;
       left: auto;
+    }
+
+    .title {
+      a {
+        position: unset;
+      }
     }
 
     .panel-horizontal-content {
@@ -193,12 +289,6 @@
             }
           }
         }
-      }
-
-      & > a {
-        position: absolute;
-        right: 84px;
-        top: 54px;
       }
     }
   }

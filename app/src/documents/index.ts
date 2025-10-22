@@ -2,6 +2,7 @@ export * from './Alert/AlertDocs';
 export * from './Access/AccessDocs';
 export * from './Banner/BannerDocs';
 export * from './Button/ButtonDocs';
+export * from './Carousel/CarouselDocs';
 export * from './Calendar/CalendarDocs';
 export * from './Collapse/CollapseDocs';
 export * from './Docs/Docs';

@@ -70,6 +70,14 @@ export const documentationPages = [
   { text: 'Versionados', url: '/documentation/releases', id: 4 },
 ];
 
+export const contenidos = [
+  { text: 'Comunicar con claridad', url: '/content/comunicar-con-claridad', id: 1 },
+  { text: 'Usos y convenciones de escritura', url: '/content/usos-y-convenciones', id: 2 },
+  { text: 'Pautas de escritura UX', url: '/content/pautas-de-escritura-ux', id: 3 },
+  { text: 'Cómo redactar una noticia', url: '/content/como-redactar-una-noticia', id: 4 },
+  { text: 'Escribir para la accesibilidad', url: '/content/escribir-para-la-accesibilidad', id: 5 },
+];
+
 export const templatesPages = [
   { text: 'Páginas de áreas ', url: '/templates/paginas-de-areas', id: 1 },
   { text: 'Página de trámites', url: '/templates/pagina-tramites', id: 4 },
@@ -160,6 +168,14 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
               <NavLayout items={documentationPages} />{' '}
             </div>
           )}{' '}
+          {pathname.includes('/content') && (
+            <div className="nav-left sticky-nav h-auto">
+              <div className="nav-left-box-title">
+                <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Documentación</p>
+              </div>
+              <NavLayout items={contenidos} />
+            </div>
+          )}
         </div>{' '}
         <div className="col-12 col-xl-9 custom-col-9-desktop">{children}</div>{' '}
       </div>{' '}

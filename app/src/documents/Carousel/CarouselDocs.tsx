@@ -15,11 +15,11 @@ const ZoomContainer = ({ children }: React.PropsWithChildren) => <div style={{ z
 const CarouselDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
-      title: 'Variantes',
+      title: 'De destacados',
       firstTitle: true,
     },
     {
-      subtitle: 'Destacado',
+      subtitle: 'Con fondo claro',
       content: (
         <CodeBox codeHTML={CAROUSEL_DESTACADO}>
           <div className="container">
@@ -131,7 +131,7 @@ const CarouselDocs: React.FC = () => {
       ),
     },
     {
-      subtitle: 'Destacado Dark',
+      subtitle: 'Con fondo oscuro',
       content: (
         <CodeBox codeHTML={CAROUSEL_DESTACADO_DARK}>
           <div className="container">
@@ -263,7 +263,10 @@ const CarouselDocs: React.FC = () => {
       ),
     },
     {
-      subtitle: 'Con tarjetas',
+      title: 'De tarjetas',
+    },
+    {
+      subtitle: 'Con fondo claro',
       content: (
         <CodeBox codeHTML={CAROUSEL_CARDS}>
           <div className="container">
@@ -383,7 +386,7 @@ const CarouselDocs: React.FC = () => {
       ),
     },
     {
-      subtitle: 'Con tarjets DARK',
+      subtitle: 'Con fondo oscuro',
       content: (
         <CodeBox codeHTML={CAROUSEL_CARDS_DARK}>
           <div className="container">
@@ -506,7 +509,12 @@ const CarouselDocs: React.FC = () => {
 
   return (
     <>
-      <ComponentHeader title="Carousel" description={['Descripcion Carousel']} />
+      <ComponentHeader
+        title="Carrusel"
+        description={[
+          'El carrusel es un contenedor que permite a las personas usuarias navegar horizontalmente para ver diferentes contenidos colocados dentro del componente, pueden ser grupos de tarjetas o contenido destacado.',
+        ]}
+      />
       <Tabs sectionDev={SECTIONS_DEV} />
     </>
   );

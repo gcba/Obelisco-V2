@@ -19270,6 +19270,7 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
 }
 .carousel .panel-horizontal-content .panel-horizontal .panel-footer a {
   width: 100%;
+  max-width: 360px;
 }
 .carousel.dark {
   background-color: #002733;

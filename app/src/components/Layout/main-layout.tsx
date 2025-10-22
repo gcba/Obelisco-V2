@@ -23,6 +23,7 @@ export const organismsPages = [
   { text: 'Accesos (organismo)', url: '/components/access-organism', id: 1 },
   { text: 'Calendario', url: '/components/calendar', id: 2 },
   { text: 'Encabezado (header)', url: '/components/header', id: 3 },
+  { text: 'Cabecera de Página', url: '/components/hero', id: 3 },
   { text: 'Pasos de un formulario', url: '/components/steps-form', id: 4 },
   { text: 'Pie de página (footer)', url: '/components/footer', id: 5 },
   { text: 'Tablas', url: '/components/table', id: 6 },

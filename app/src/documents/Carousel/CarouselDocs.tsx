@@ -514,7 +514,7 @@ const CarouselDocs: React.FC = () => {
       <ComponentHeader
         title="Carrusel"
         description={[
-          'El carrusel es un contenedor que permite a las personas usuarias navegar horizontalmente para ver diferentes contenidos colocados dentro del componente, pueden ser grupos de tarjetas o contenido destacado.',
+          'El carrusel permite a las personas usuarias navegar horizontalmente para ver diferentes contenidos colocados dentro del componente, pueden ser grupos de tarjetas o contenido destacado.',
         ]}
       />
       <Tabs sectionDev={SECTIONS_DEV} />

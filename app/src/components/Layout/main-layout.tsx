@@ -34,7 +34,7 @@ export const componentsPages = [
   { text: 'Barra de progreso', url: '/components/progress-bar', id: 5 },
   { text: 'Bloque de trámite', url: '/components/block', id: 6 },
   { text: 'Botones', url: '/components/button', id: 7 },
-  { text: 'Carrusel (carousel)', url: '/components/carousel', id: 8 },
+  { text: 'Carrusel', url: '/components/carousel', id: 8 },
   { text: 'Colapsables', url: '/components/collapse', id: 9 },
   { text: 'Desplegable de navegación', url: '/components/dropdown-nav', id: 10 },
   { text: 'Desplegable de selección', url: '/components/dropdown-sel', id: 11 },

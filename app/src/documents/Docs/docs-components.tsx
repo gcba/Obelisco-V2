@@ -783,7 +783,7 @@ const sections = [
         </li>
 
         <p className="text-md my-4">
-          <strong>Versión 1.7.2 o 1.8.0 ⬇️</strong>
+          <strong>Versión 1.8.0 ⬇️</strong>
         </p>
 
         <li>

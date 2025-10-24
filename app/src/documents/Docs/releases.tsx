@@ -32,6 +32,13 @@ const ReleasesComponents: React.FC = () => {
             </a>{' '}
             se disponibiliza la documentación del componente.
           </li>
+          <li>
+            Se crea el componente <a href="https://gcba.github.io/Obelisco-V2/components/carousel">Carrusel.</a>
+          </li>
+          <li>
+            El componente cuenta con las variantes para <strong>Destacados</strong> y <strong>Tarjetas</strong> en su
+            versión <i>desktop</i> y <i>mobile</i> para fondos <i>claros</i> y <i>oscuros</i>.
+          </li>
         </ul>
       ),
     },

@@ -140,10 +140,24 @@ $card-info-icon-size: 1rem;
   }
 
   // Clase para Tarjeta de eventos
-  &.card-eventos{
+  &.card-eventos {
     min-height: 576px;
-    .card-info{
+
+    .card-info {
+      position: relative;
       margin-top: 32px;
+
+      // Línea divisoria
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -24px;
+        right: -24px;
+        height: 1px;
+        transform: translateY(-16px);
+        background-color: #e6ebf0;
+      }
     }
   }
 

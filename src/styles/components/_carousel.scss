@@ -42,6 +42,10 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     padding-bottom: 64px;
   }
 
+  .carousel-inner {
+    border-radius: 8px;
+  }
+
   .carousel-indicators {
     position: relative;
     justify-content: start;
@@ -76,18 +80,21 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     border-radius: $border-radius-lg;
     border: none;
     outline: $outline-border;
-    height: $pagination-size;
-    min-width: 48px;
-    padding: 0.5rem 0.25rem;
+    width: 48px;
+    height: 48px;
 
     .carousel-control-prev-icon {
       background-image: none;
       content: $carousel-icon-left;
+      width: 32px;
+      height: 32px;
     }
 
     .carousel-control-next-icon {
       background-image: none;
       content: $carousel-icon-right;
+      width: 32px;
+      height: 32px;
     }
 
     &:focus {
@@ -129,7 +136,7 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
 
   .carousel-control-prev {
     left: auto;
-    right: 70px;
+    right: 84px;
   }
 
   .title {
@@ -150,6 +157,7 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     .panel-horizontal {
       padding: 0;
       max-width: 100%;
+      row-gap: 24px;
 
       .panel-footer {
         a {
@@ -230,6 +238,10 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
   @media (width >= 992px) {
     padding: 48px 129px 32px;
 
+    .carousel-inner {
+      border-radius: 16px;
+    }
+
     .carousel-indicators {
       justify-content: center;
       height: auto;
@@ -239,15 +251,27 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     .carousel-control-prev {
       top: 50%;
       bottom: auto;
+      width: 64px;
+      height: 64px;
+
+      .carousel-control-prev-icon {
+        width: 48px;
+        height: 48px;
+      }
+
+      .carousel-control-next-icon {
+        width: 48px;
+        height: 48px;
+      }
     }
 
     .carousel-control-prev {
-      left: 40px;
+      left: 28px;
       right: auto;
     }
 
     .carousel-control-next {
-      right: 40px;
+      right: 28px;
       left: auto;
     }
 

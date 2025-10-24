@@ -19,6 +19,23 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
+      title: 'Versión 1.7.2 o 1.8.0',
+      firstTitle: true,
+      content: (
+        <ul className="docs-list">
+          <p>La versión 1.7.2 o 1.8.0 contiene lo siguiente: </p>
+          <li>Se modifica el nombre del componente &quot;Tarjeta de Agenda&quot; a &quot;Tarjeta de Eventos&quot;</li>
+          <li>
+            Se crea la clase <code>.card-eventos</code> para espaciados y tamaño. En{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-16">
+              Cambios en componentes
+            </a>{' '}
+            se disponibiliza la documentación del componente.
+          </li>
+        </ul>
+      ),
+    },
+    {
       title: 'Versión 1.7.1',
       firstTitle: true,
       content: (

@@ -139,6 +139,14 @@ $card-info-icon-size: 1rem;
     background: transparent;
   }
 
+  // Clase para Tarjeta de eventos
+  &.card-eventos{
+    min-height: 576px;
+    .card-info{
+      margin-top: 32px;
+    }
+  }
+
   &.card-horizontal {
     flex-direction: row;
 

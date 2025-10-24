@@ -19,6 +19,20 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
+      title: 'Versión 1.8.0',
+      firstTitle: true,
+      content: (
+        <ul className="docs-list">
+          <p>La versión 1.8.0 contiene lo siguiente: </p>
+          <li>Se crea el componente <a href="https://gcba.github.io/Obelisco-V2/components/carousel">Carrusel.</a></li>
+          <li>
+            El componente cuenta con las variantes para <strong>Destacados</strong> y <strong>Tarjetas</strong> en su versión {' '}
+            <i>desktop</i> y <i>mobile</i> para fondos <i>claros</i> y <i>oscuros</i>.
+          </li>
+        </ul>
+      ),
+    },
+    {
       title: 'Versión 1.7.1',
       firstTitle: true,
       content: (

@@ -5,7 +5,13 @@ import LinkClient from '@/components/LinkClient';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
-import { CAROUSEL_DESTACADO, CAROUSEL_DESTACADO_DARK, CAROUSEL_CARDS, CAROUSEL_CARDS_DARK } from './code-views';
+import {
+  CAROUSEL_DESTACADO,
+  CAROUSEL_DESTACADO_DARK,
+  CAROUSEL_CARDS,
+  CAROUSEL_CARDS_DARK,
+  CAROUSEL_SPONSORS,
+} from './code-views';
 
 const basePath = '/Obelisco-V2';
 const colors = ['yellow', 'cyan', 'blue'];
@@ -23,60 +29,62 @@ const CarouselDocs: React.FC = () => {
     {
       subtitle: 'Sponsors',
       content: (
-        <div className="container">
-          <ZoomContainer>
-            <div id="carousel_sponsors" className="carousel sponsors slide" data-bs-ride="carousel">
-              <div className="carousel-inner">
-                <div className="carousel-item active">
-                  <div className="logos">
-                    {SPONSORS.map((image, i) => (
-                      <a href="https://google.com" target="_blank" key={i}>
-                        <Image src={`${basePath}/images/sponsors/${image}`} alt="descripción de imagen" fill />
-                      </a>
-                    ))}
+        <CodeBox codeHTML={CAROUSEL_SPONSORS}>
+          <div className="container">
+            <ZoomContainer>
+              <div id="carousel_sponsors" className="carousel sponsors slide" data-bs-ride="carousel">
+                <div className="carousel-inner">
+                  <div className="carousel-item active">
+                    <div className="logos">
+                      {SPONSORS.map((image, i) => (
+                        <a href="https://google.com" target="_blank" key={i}>
+                          <Image src={`${basePath}/images/sponsors/${image}`} alt="descripción de imagen" fill />
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="carousel-item">
+                    <div className="logos">
+                      {SPONSORS.map((image, i) => (
+                        <a href="https://google.com" target="_blank" key={i}>
+                          <Image src={`${basePath}/images/sponsors/${image}`} alt="descripción de imagen" fill />
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="carousel-item">
+                    <div className="logos">
+                      {SPONSORS.map((image, i) => (
+                        <a href="https://google.com" target="_blank" key={i}>
+                          <Image src={`${basePath}/images/sponsors/${image}`} alt="descripción de imagen" fill />
+                        </a>
+                      ))}
+                    </div>
                   </div>
                 </div>
-                <div className="carousel-item">
-                  <div className="logos">
-                    {SPONSORS.map((image, i) => (
-                      <a href="https://google.com" target="_blank" key={i}>
-                        <Image src={`${basePath}/images/sponsors/${image}`} alt="descripción de imagen" fill />
-                      </a>
-                    ))}
-                  </div>
-                </div>
-                <div className="carousel-item">
-                  <div className="logos">
-                    {SPONSORS.map((image, i) => (
-                      <a href="https://google.com" target="_blank" key={i}>
-                        <Image src={`${basePath}/images/sponsors/${image}`} alt="descripción de imagen" fill />
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              </div>
 
-              <button
-                className="carousel-control-prev"
-                type="button"
-                data-bs-target="#carousel_sponsors"
-                data-bs-slide="prev"
-              >
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Anterior</span>
-              </button>
-              <button
-                className="carousel-control-next"
-                type="button"
-                data-bs-target="#carousel_sponsors"
-                data-bs-slide="next"
-              >
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Siguiente</span>
-              </button>
-            </div>
-          </ZoomContainer>
-        </div>
+                <button
+                  className="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel_sponsors"
+                  data-bs-slide="prev"
+                >
+                  <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span className="visually-hidden">Anterior</span>
+                </button>
+                <button
+                  className="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel_sponsors"
+                  data-bs-slide="next"
+                >
+                  <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span className="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </ZoomContainer>
+          </div>
+        </CodeBox>
       ),
     },
     {

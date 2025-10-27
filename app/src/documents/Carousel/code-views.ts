@@ -657,3 +657,77 @@ export const CAROUSEL_CARDS_DARK = `
 				<span class="visually-hidden">Siguiente</span>
 			</button>
 		</div>`;
+
+export const CAROUSEL_SPONSORS = `
+<div id="carousel_sponsors" class="carousel sponsors slide" data-bs-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="logos">
+						<a href="https://google.com" target="_blank">
+							<img src="images/sponsors/adidas.svg" alt="Adidas" />
+						</a>
+						<a href="https://google.com" target="_blank">
+							<img src="images/sponsors/chocolinas.svg" alt="Chocolinas" />
+						</a>
+						<a href="https://google.com" target="_blank">
+							<img src="images/sponsors/samsung.svg" alt="Samsung" />
+						</a>
+						<a href="https://google.com" target="_blank">
+							<img src="images/sponsors/adidas.svg" alt="Adidas" />
+						</a>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="logos">
+						<a href="https://google.com" target="_blank">
+							<img src="images/sponsors/adidas.svg" alt="Adidas" />
+						</a>
+						<a href="https://google.com" target="_blank">
+							<img src="images/sponsors/chocolinas.svg" alt="Chocolinas" />
+						</a>
+						<a href="https://google.com" target="_blank">
+							<img src="images/sponsors/samsung.svg" alt="Samsung" />
+						</a>
+						<a href="https://google.com" target="_blank">
+							<img src="images/sponsors/adidas.svg" alt="Adidas" />
+						</a>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="logos">
+						<a href="https://google.com" target="_blank">
+							<img src="images/sponsors/adidas.svg" alt="Adidas" />
+						</a>
+						<a href="https://google.com" target="_blank">
+							<img src="images/sponsors/chocolinas.svg" alt="Chocolinas" />
+						</a>
+						<a href="https://google.com" target="_blank">
+							<img src="images/sponsors/samsung.svg" alt="Samsung" />
+						</a>
+						<a href="https://google.com" target="_blank">
+							<img src="images/sponsors/adidas.svg" alt="Adidas" />
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<button
+				class="carousel-control-prev"
+				type="button"
+				data-bs-target="#carousel_sponsors"
+				data-bs-slide="prev"
+			>
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Anterior</span>
+			</button>
+			<button
+				class="carousel-control-next"
+				type="button"
+				data-bs-target="#carousel_sponsors"
+				data-bs-slide="next"
+			>
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Siguiente</span>
+			</button>
+		</div>
+`;

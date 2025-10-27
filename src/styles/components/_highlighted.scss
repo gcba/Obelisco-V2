@@ -11,9 +11,9 @@
   .panel-img,
   video {
     width: 100%;
-    max-width: 538px;
+    width: 539px;
     height: 304px;
-    border-radius: $border-radius-lg;
+    border-radius: 24px 24px 0 0;
     object-fit: cover;
     object-position: center;
     aspect-ratio: 16/9;
@@ -29,15 +29,11 @@
       margin: 0;
     }
 
-    .panel-text {
-      margin: 0.5rem 0 0;
-    }
-
     .panel-footer {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
-      margin-top: 2rem;
+      margin-top: 24px;
 
       .list-group-item {
         width: 100%;
@@ -61,9 +57,9 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 1.25rem; //20px
     padding: 1.5rem 0.75rem;
     margin: 0 auto;
+    height: auto;
 
     .panel-img,
     video {
@@ -83,6 +79,7 @@
       }
     }
   }
+
   @include media-breakpoint-down(md) {
     padding: 1.5rem 1rem;
 
@@ -94,12 +91,13 @@
 }
 
 // Custom styles
-//Estilos para Destacado Banner (antes Panel Grande Horizontal)
+// Estilos para Destacado Banner (antes Panel Grande Horizontal)
 .panel-horizontal-content {
   width: 100%;
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: $white;
+
   @include media-breakpoint-down(xl) {
     padding-top: 0;
     padding-bottom: 0;
@@ -112,18 +110,50 @@
   }
 }
 
-//Estilos para Destacado Conjunto (antes Panel Grande Vertical)
+// Estilos para Destacado Conjunto (antes Panel Grande Vertical)
+
 .panel-vertical {
   @include panel-content(column, xl);
-  gap: 1.25rem; //20px
+  gap: 0;
+  border-radius: 24px;
+  height: 586px !important;
+
   .panel-body {
+    background-color: $slate-50;
+  }
+
+  .panel-body-dark {
+    background-color: $sky-900;
+    color: $white;
+
+    &.panel-sin-multimedia {
+      border-radius: 24px;
+    }
+  }
+
+  @media (max-width: 390px) {
+  }
+
+  .panel-body,
+  .panel-body-dark {
+    padding: 2rem; // 32px
+    width: 539px;
+    max-width: 539px;
+    height: 282px;
+    border-radius: 0 0 24px 24px;
+    display: flex;
+    flex-direction: column;
+
     .panel-footer {
-      margin-top: 1.25rem; //20px
+      margin-top: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
     }
   }
 }
 
-//Destacado Lateral
+// Destacado Lateral
 .panel-lateral {
   @include panel-content(column, xl);
   padding: 2rem 1.5rem;

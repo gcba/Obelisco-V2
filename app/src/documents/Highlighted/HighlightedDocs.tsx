@@ -139,7 +139,7 @@ const HighlightedDocs: React.FC = () => {
                       No puede contener negritas ni enlaces
                     </p>
                     <div className="panel-footer">
-                      <LinkClient className="external">Enlace externo</LinkClient>
+                      <LinkClient className="external ">Enlace externo</LinkClient>
                     </div>
                   </div>
                 </div>
@@ -293,6 +293,9 @@ const HighlightedDocs: React.FC = () => {
     },
     {
       title: 'Destacado conjunto',
+    },
+    {
+      subtitle: 'Fondos',
       content: (
         <>
           <CodeBox codeHTML={HIGHLIGHTED_JOIN_IMAGE}>
@@ -308,15 +311,14 @@ const HighlightedDocs: React.FC = () => {
                         width={538}
                         height={304}
                       ></Image>
-                      <div className="panel-body">
-                        <h2 className="panel-title">Título del destacado</h2>
-                        <p className="panel-text">
-                          Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
-                          contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de
-                          pocas líneas. No puede contener negritas ni enlaces
+                      <div className="panel-body-dark">
+                        <h5 className="panel-title">Este es el titulo del destacado</h5>
+                        <p className="panel-text ellipsis-3">
+                          Esta es la descripción del destacado que puede contener hasta 3 líneas de texto.
                         </p>
                         <div className="panel-footer">
-                          <LinkClient className="btn btn-primary btn-lg">Botón</LinkClient>
+                          <LinkClient className="btn btn-light">Botón</LinkClient>
+                          <LinkClient className="btn btn-outline-light">Botón</LinkClient>
                         </div>
                       </div>
                     </div>
@@ -331,14 +333,105 @@ const HighlightedDocs: React.FC = () => {
                         height={304}
                       ></Image>
                       <div className="panel-body">
-                        <h2 className="panel-title">Título del destacado</h2>
-                        <p className="panel-text">
-                          Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
-                          contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de
-                          pocas líneas. No puede contener negritas ni enlaces
+                        <h5 className="panel-title">
+                          Este es el titulo del destacado que puede contener hasta 2 líneas de texto.
+                        </h5>
+                        <p className="panel-text ellipsis-3">
+                          Esta es la descripción del destacado que puede contener hasta 3 líneas de texto. Si se excede
+                          de este límite, el texto de la descripción se va a truncar,
                         </p>
                         <div className="panel-footer">
-                          <LinkClient className="btn btn-secondary btn-lg" download="">
+                          <LinkClient className="btn btn-primary">Botón</LinkClient>
+                          <LinkClient className="btn btn-outline-primary">Botón</LinkClient>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+    {
+      subtitle: 'Accionables',
+      content: (
+        <>
+          <CodeBox codeHTML={HIGHLIGHTED_JOIN_IMAGE}>
+            <div className="highlighted-box-sizing-vertical">
+              <div className="container">
+                <div className="highlighted-items-2">
+                  <div className="col">
+                    <div className="panel-vertical">
+                      <Image
+                        src={`${basePath}/images/destacado.jpg`}
+                        alt="descripción de imagen"
+                        className="panel-img"
+                        width={538}
+                        height={304}
+                      ></Image>
+                      <div className="panel-body-dark">
+                        <h5 className="panel-title">Este es el titulo del destacado</h5>
+                        <p className="panel-text ellipsis-3">
+                          Esta es la descripción del destacado que puede contener hasta 3 líneas de texto.
+                        </p>
+                        <div className="panel-footer">
+                          <LinkClient className="btn btn-light">Botón</LinkClient>
+                          <LinkClient className="btn btn-outline-light">Botón</LinkClient>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="panel-vertical">
+                      <Image
+                        src={`${basePath}/images/destacado.jpg`}
+                        alt="descripción de imagen"
+                        className="panel-img"
+                        width={538}
+                        height={304}
+                      ></Image>
+                      <div className="panel-body-dark">
+                        <h5 className="panel-title">
+                          Este es el titulo del destacado que puede contener hasta 2 líneas de texto.
+                        </h5>
+                        <p className="panel-text ellipsis-3">
+                          Esta es la descripción del destacado que puede contener hasta 3 líneas de texto. Si se excede
+                          de este límite, el texto de la descripción se va a truncar,
+                        </p>
+                        <div className="panel-footer">
+                          <LinkClient className="list-group-item item-sm">
+                            <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                              info
+                            </span>
+                            <div className="access-content">
+                              <span className="access-title">Acceso</span>
+                            </div>
+                          </LinkClient>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="panel-vertical">
+                      <Image
+                        src={`${basePath}/images/destacado.jpg`}
+                        alt="descripción de imagen"
+                        className="panel-img"
+                        width={538}
+                        height={304}
+                      ></Image>
+                      <div className="panel-body-dark">
+                        <h5 className="panel-title">
+                          Este es el titulo del destacado que puede contener hasta 2 líneas de texto.
+                        </h5>
+                        <p className="panel-text ellipsis-3">
+                          Esta es la descripción del destacado que puede contener hasta 3 líneas de texto. Si se excede
+                          de este límite, el texto de la descripción se va a truncar,
+                        </p>
+                        <div className="panel-footer">
+                          <LinkClient className="btn btn-light btn-lg" download="">
                             <span className="material-symbols-rounded" aria-hidden="true">
                               file_download
                             </span>
@@ -357,44 +450,16 @@ const HighlightedDocs: React.FC = () => {
                         width={538}
                         height={304}
                       ></Image>
-                      <div className="panel-body">
-                        <h2 className="panel-title">Título del destacado</h2>
-                        <p className="panel-text">
-                          Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
-                          contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de
-                          pocas líneas. No puede contener negritas ni enlaces
+                      <div className="panel-body-dark">
+                        <h5 className="panel-title">
+                          Este es el titulo del destacado que puede contener hasta 2 líneas de texto.
+                        </h5>
+                        <p className="panel-text mb-0 ellipsis-3">
+                          Esta es la descripción del destacado que puede contener hasta 3 líneas de texto. Si se excede
+                          de este límite, el texto de la descripción se va a truncar,
                         </p>
                         <div className="panel-footer">
-                          <LinkClient className="external">Enlace externo</LinkClient>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col">
-                    <div className="panel-vertical">
-                      <Image
-                        src={`${basePath}/images/destacado.jpg`}
-                        alt="descripción de imagen"
-                        className="panel-img"
-                        width={538}
-                        height={304}
-                      ></Image>
-                      <div className="panel-body">
-                        <h2 className="panel-title">Título del destacado</h2>
-                        <p className="panel-text">
-                          Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
-                          contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de
-                          pocas líneas. No puede contener negritas ni enlaces
-                        </p>
-                        <div className="panel-footer">
-                          <LinkClient className="list-group-item item-sm">
-                            <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                              info
-                            </span>
-                            <div className="access-content">
-                              <span className="access-title">Acceso</span>
-                            </div>
-                          </LinkClient>
+                          <LinkClient className="external link-white">Enlace externo</LinkClient>
                         </div>
                       </div>
                     </div>
@@ -403,7 +468,13 @@ const HighlightedDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-          <br />
+        </>
+      ),
+    },
+    {
+      subtitle: 'Con vídeo',
+      content: (
+        <>
           <CodeBox codeHTML={HIGHLIGHTED_JOIN_VIDEO}>
             <div className="highlighted-box-sizing-vertical max-h-800">
               <div className="container">
@@ -419,7 +490,7 @@ const HighlightedDocs: React.FC = () => {
                           <a href={`${basePath}/images/videoBuenosAires.mp4`}>este enlace</a>.
                         </p>
                       </video>
-                      <div className="panel-body">
+                      <div className="panel-body-dark">
                         <h2 className="panel-title">Título del destacado</h2>
                         <p className="panel-text">
                           Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
@@ -427,7 +498,7 @@ const HighlightedDocs: React.FC = () => {
                           pocas líneas. No puede contener negritas ni enlaces
                         </p>
                         <div className="panel-footer">
-                          <LinkClient className="btn btn-primary btn-lg">Botón</LinkClient>
+                          <LinkClient className="btn btn-light btn-lg">Botón</LinkClient>
                         </div>
                       </div>
                     </div>
@@ -459,11 +530,32 @@ const HighlightedDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-          <br />
+        </>
+      ),
+    },
+    {
+      subtitle: 'Sin multimedia',
+      content: (
+        <>
           <CodeBox codeHTML={HIGHLIGHTED_JOIN_NO_IMAGE}>
             <div className="highlighted-box-sizing-vertical max-h-640">
               <div className="container">
                 <div className="highlighted-items-2">
+                  <div className="col">
+                    <div className="panel-vertical">
+                      <div className="panel-body-dark panel-sin-multimedia">
+                        <h2 className="panel-title">Título del destacado</h2>
+                        <p className="panel-text">
+                          Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
+                          contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de
+                          pocas líneas. No puede contener negritas ni enlaces
+                        </p>
+                        <div className="panel-footer">
+                          <LinkClient className="btn btn-light btn-lg">Botón</LinkClient>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div className="col">
                     <div className="panel-vertical">
                       <div className="panel-body">
@@ -475,63 +567,6 @@ const HighlightedDocs: React.FC = () => {
                         </p>
                         <div className="panel-footer">
                           <LinkClient className="btn btn-primary btn-lg">Botón</LinkClient>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col">
-                    <div className="panel-vertical">
-                      <div className="panel-body">
-                        <h2 className="panel-title">Título del destacado</h2>
-                        <p className="panel-text">
-                          Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
-                          contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de
-                          pocas líneas. No puede contener negritas ni enlaces
-                        </p>
-                        <div className="panel-footer">
-                          <LinkClient className="btn btn-secondary btn-lg" download="">
-                            <span className="material-symbols-rounded" aria-hidden="true">
-                              file_download
-                            </span>
-                            Descargar
-                          </LinkClient>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col">
-                    <div className="panel-vertical">
-                      <div className="panel-body">
-                        <h2 className="panel-title">Título del destacado</h2>
-                        <p className="panel-text">
-                          Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
-                          contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de
-                          pocas líneas. No puede contener negritas ni enlaces
-                        </p>
-                        <div className="panel-footer">
-                          <LinkClient className="external">Enlace externo</LinkClient>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col">
-                    <div className="panel-vertical">
-                      <div className="panel-body">
-                        <h2 className="panel-title">Título del destacado</h2>
-                        <p className="panel-text">
-                          Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
-                          contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de
-                          pocas líneas. No puede contener negritas ni enlaces
-                        </p>
-                        <div className="panel-footer">
-                          <LinkClient className="list-group-item item-sm">
-                            <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                              info
-                            </span>
-                            <div className="access-content">
-                              <span className="access-title">Acceso</span>
-                            </div>
-                          </LinkClient>
                         </div>
                       </div>
                     </div>

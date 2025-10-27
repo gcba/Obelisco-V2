@@ -12,11 +12,72 @@ const colors = ['yellow', 'cyan', 'blue'];
 
 const ZoomContainer = ({ children }: React.PropsWithChildren) => <div style={{ zoom: 0.5 }}>{children}</div>;
 
+const SPONSORS = ['adidas.svg', 'chocolinas.svg', 'samsung.svg', 'adidas.svg'];
+
 const CarouselDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
       title: 'De destacados',
       firstTitle: true,
+    },
+    {
+      subtitle: 'Sponsors',
+      content: (
+        <div className="container">
+          <ZoomContainer>
+            <div id="carousel_sponsors" className="carousel sponsors slide" data-bs-ride="carousel">
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <div className="logos">
+                    {SPONSORS.map((image, i) => (
+                      <a href="https://google.com" target="_blank" key={i}>
+                        <Image src={`${basePath}/images/sponsors/${image}`} alt="descripción de imagen" fill />
+                      </a>
+                    ))}
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <div className="logos">
+                    {SPONSORS.map((image, i) => (
+                      <a href="https://google.com" target="_blank" key={i}>
+                        <Image src={`${basePath}/images/sponsors/${image}`} alt="descripción de imagen" fill />
+                      </a>
+                    ))}
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <div className="logos">
+                    {SPONSORS.map((image, i) => (
+                      <a href="https://google.com" target="_blank" key={i}>
+                        <Image src={`${basePath}/images/sponsors/${image}`} alt="descripción de imagen" fill />
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              <button
+                className="carousel-control-prev"
+                type="button"
+                data-bs-target="#carousel_sponsors"
+                data-bs-slide="prev"
+              >
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Anterior</span>
+              </button>
+              <button
+                className="carousel-control-next"
+                type="button"
+                data-bs-target="#carousel_sponsors"
+                data-bs-slide="next"
+              >
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+          </ZoomContainer>
+        </div>
+      ),
     },
     {
       subtitle: 'Con fondo claro',

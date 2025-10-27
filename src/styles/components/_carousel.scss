@@ -5,6 +5,7 @@ $svg-base-right: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" wid
 $color-default: '101E37';
 $color-hover: '274986';
 $color-active: 'FFFFFF';
+$color-active-sponsors: '000000';
 
 $carousel-icon-left: url('#{$svg-base-left}#{$color-default}"/></svg>');
 $carousel-icon-right: url('#{$svg-base-right}#{$color-default}"/></svg>');
@@ -12,6 +13,8 @@ $carousel-icon-left-hover: url('#{$svg-base-left}#{$color-hover}"/></svg>');
 $carousel-icon-right-hover: url('#{$svg-base-right}#{$color-hover}"/></svg>');
 $carousel-icon-left-active: url('#{$svg-base-left}#{$color-active}"/></svg>');
 $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
+$carousel-icon-left-sponsors-active: url('#{$svg-base-left}#{$color-active-sponsors}"/></svg>');
+$carousel-icon-right-sponsors-active: url('#{$svg-base-right}#{$color-active-sponsors}"/></svg>');
 
 @mixin carousel-navigation-states(
   $box-shadow,
@@ -211,6 +214,31 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     }
   }
 
+  /* SPONSORS */
+  &.sponsors {
+    .carousel-control-next,
+    .carousel-control-next:focus,
+    .carousel-control-next:hover,
+    .carousel-control-prev,
+    .carousel-control-prev:focus,
+    .carousel-control-prev:hover {
+      border: none;
+      outline: none;
+      background: none;
+      box-shadow: none;
+
+      &:active {
+        @include carousel-navigation-states(
+          none,
+          none,
+          $carousel-icon-left-sponsors-active,
+          $carousel-icon-right-sponsors-active
+        );
+        outline: none;
+      }
+    }
+  }
+
   @media (width >= 576px) {
     padding: 32px;
 
@@ -253,7 +281,7 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
 
     .carousel-control-next,
     .carousel-control-prev {
-      top: 50%;
+      top: calc(50% - 16px);
       bottom: auto;
       width: 64px;
       height: 64px;
@@ -315,6 +343,32 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
             &:nth-child(3n) {
               margin-right: 0;
             }
+          }
+        }
+      }
+    }
+
+    /* SPONSORS */
+    &.sponsors {
+      .logos {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 8px;
+
+        a {
+          position: relative;
+
+          &:focus {
+            border: none;
+            outline: none;
+            box-shadow: none;
+          }
+
+          img {
+            position: relative !important;
+            width: 100%;
+            height: auto;
           }
         }
       }

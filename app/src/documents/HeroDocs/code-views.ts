@@ -76,7 +76,9 @@ export const HERO_CON_IMAGEN = `<header class="hero">
 				</div>
       </div>
    </div>
-   <div class="aside"><img alt="Hero" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" src="/Obelisco-V2/images/hero/multimedia-hero.jpg"></div>
+  <div class="aside">
+    <img alt="Hero" loading="lazy" decoding="async" data-nimg="fill" src="/Obelisco-V2/images/hero/multimedia-hero.jpg">
+  </div>
 </header>`;
 
 export const HERO_CON_VIDEO = `<header class="hero">
@@ -131,10 +133,8 @@ export const HERO_CON_GIF = `<header class="hero">
       </div>
    </div>
    <div class="aside">
-      <video src="/Obelisco-V2/images/gif_hero_header.gif" autoplay="" muted="" loop="" controls="">
-        Your browser does not support the video tag.
-      </video>
-   </div>
+    <img alt="Hero" loading="lazy" decoding="async" data-nimg="fill" src="/gif_hero_header.gif">
+  </div>
 </header>`;
 
 export const HERO_CON_CAMPO_BUSCADOR = `<header class="hero">

@@ -13,6 +13,7 @@ import {
   HERO_CON_DESPLEGABLES,
   HERO_CON_ETIQUETAS,
   HERO_CON_GIF,
+  HERO_CON_IMAGEN,
   HERO_CON_VIDEO,
   HERO_DARK,
   HERO_DINAMICO,
@@ -131,7 +132,7 @@ const HeroHeaderDocs: React.FC = () => {
       subtitle: 'Con imagen',
       content: (
         <>
-          <CodeBox codeHTML={HERO_DINAMICO}>
+          <CodeBox codeHTML={HERO_CON_IMAGEN}>
             <div className="container">
               <div className="hero-container">
                 <div className="hero-box-sizing ">

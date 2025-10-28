@@ -26,6 +26,7 @@ header.hero {
   display: flex;
   flex-direction: column;
   background-color: map-get($content-colors, 'sky');
+  min-height: 324px;
 
   .content {
     flex-grow: 1;
@@ -252,6 +253,9 @@ header.hero {
   }
 
   @media (width >= 992px) {
+    &:has(.aside img, .aside video) .content > .flex-column {
+      width: 90%;
+    }
     flex-direction: row;
     align-items: stretch;
     position: relative;
@@ -322,6 +326,12 @@ header.hero {
       > div {
         width: 70%;
       }
+    }
+  }
+
+  @media (width >=1400px) {
+    .content {
+      padding: 48px 0 48px 176px;
     }
   }
 }

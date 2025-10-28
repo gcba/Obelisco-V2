@@ -19,6 +19,46 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
+      title: 'Versión 1.8.0',
+      firstTitle: true,
+      content: (
+        <ul className="docs-list">
+          <p>La Versión 1.8.0 contiene lo siguiente: </p>
+          <li>Se modifica el nombre del componente &quot;Tarjeta de Agenda&quot; a &quot;Tarjeta de Eventos&quot;</li>
+          <li>
+            Se crea la clase <code>.card-eventos</code> para espaciados y tamaño. En{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-30">
+              Cambios en componentes
+            </a>{' '}
+            se disponibiliza la documentación del componente.
+          </li>
+          <li>
+            Se crea el componente <a href="https://gcba.github.io/Obelisco-V2/components/carousel">Carrusel.</a>
+          </li>
+          <li>
+            El componente cuenta con las variantes para <strong>Destacados</strong> y <strong>Tarjetas</strong> en su
+            versión <i>desktop</i> y <i>mobile</i> para fondos <i>claros</i> y <i>oscuros</i>.
+          </li>
+        </ul>
+      ),
+    },
+    {
+      title: 'Versión 1.7.1',
+      firstTitle: true,
+      content: (
+        <ul className="docs-list">
+          <p>La versión 1.7.1 contiene lo siguiente: </p>
+          <li>Se corrigen alineaciones y márgenes del componente Cabecera de Página</li>
+          <li>
+            <strong>
+              Se define un punto de corte (breakpoint) en la etiqueta <code>body</code>.{' '}
+            </strong>
+            Para dispositivos con resoluciones superiores a 1920px, el contenido tiene un ancho máximo de 1900px.
+          </li>
+        </ul>
+      ),
+    },
+    {
       title: 'Versión 1.7.0',
       firstTitle: true,
       content: (

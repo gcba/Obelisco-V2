@@ -770,7 +770,7 @@ const sections = [
         </li>
 
         <p className="text-md my-4">
-          <strong>Versión 1.6.1</strong>
+          <strong>Versión 1.6.1 ⬇️</strong>
         </p>
 
         <li>
@@ -781,6 +781,17 @@ const sections = [
           Donde <code>{'color'}</code>, es la miscelánea de color: <code>purple</code>, <code>red</code>,{' '}
           <code>sky</code>, <code>yellow</code>, <code>cyan</code> o <code>blue</code>
         </li>
+
+        <p className="text-md my-4">
+          <strong>Versión 1.8.0 ⬇️</strong>
+        </p>
+
+        <li>
+          Se crea la clase <code>.card-eventos</code>, para contener los estilos necesarios para la nueva{' '}
+          <a href="https://gcba.github.io/Obelisco-V2/components/cards#section-dev-10">Tarjeta de Eventos</a>.
+        </li>
+        <li>La Tarjeta de Eventos, ahora admite cómo máximo 2 Etiquetas.</li>
+        <li>También, se agregó un ítem de información del evento: Ubicación</li>
       </ul>
     ),
   },

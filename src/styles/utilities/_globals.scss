@@ -1,3 +1,11 @@
+// Punto de corte para pantallas grandes
+body {
+  @media (width >=1920px) {
+    max-width: 1900px;
+    margin: 0 auto;
+  }
+}
+
 // Accesibilidad
 .sr-only {
   @extend .visually-hidden;

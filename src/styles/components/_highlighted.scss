@@ -11,7 +11,6 @@
   .panel-img,
   video {
     width: 100%;
-    width: 539px;
     height: 304px;
     border-radius: 24px 24px 0 0;
     object-fit: cover;
@@ -137,8 +136,7 @@
   .panel-body,
   .panel-body-dark {
     padding: 2rem; // 32px
-    width: 539px;
-    max-width: 539px;
+    width: 100%;
     height: 282px;
     border-radius: 0 0 24px 24px;
     display: flex;

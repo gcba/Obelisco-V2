@@ -95,7 +95,6 @@
 }
 
 // Disposición de Destacado Conjunto
-
 .highlighted-items-2 {
   @extend .row;
   @extend .row-cols-1;
@@ -111,5 +110,10 @@
     .col {
       padding: 0;
     }
+  }
+
+  align-items: stretch;
+  .col {
+    display: flex;
   }
 }

@@ -26,6 +26,8 @@ import {
 
 const basePath = '/Obelisco-V2';
 
+const ZoomContainer = ({ children }: React.PropsWithChildren) => <div style={{ zoom: 0.5 }}>{children}</div>;
+
 const HighlightedDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
@@ -34,7 +36,7 @@ const HighlightedDocs: React.FC = () => {
       content: (
         <>
           <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTONS}>
-            <div className="highlighted-box-sizing">
+            <ZoomContainer>
               <div className="panel-horizontal-content">
                 <div className="panel-horizontal">
                   <Image
@@ -58,11 +60,11 @@ const HighlightedDocs: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </ZoomContainer>
           </CodeBox>
           <br />
           <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTON}>
-            <div className="highlighted-box-sizing">
+            <ZoomContainer>
               <div className="panel-horizontal-content">
                 <div className="panel-horizontal">
                   <Image
@@ -85,11 +87,11 @@ const HighlightedDocs: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </ZoomContainer>
           </CodeBox>
           <br />
           <CodeBox codeHTML={HIGHLIGHTED_BANNER_DOWNLOAD}>
-            <div className="highlighted-box-sizing">
+            <ZoomContainer>
               <div className="panel-horizontal-content">
                 <div className="panel-horizontal">
                   <Image
@@ -117,11 +119,11 @@ const HighlightedDocs: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </ZoomContainer>
           </CodeBox>
           <br />
           <CodeBox codeHTML={HIGHLIGHTED_BANNER_LINK}>
-            <div className="highlighted-box-sizing">
+            <ZoomContainer>
               <div className="panel-horizontal-content">
                 <div className="panel-horizontal">
                   <Image
@@ -144,11 +146,11 @@ const HighlightedDocs: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </ZoomContainer>
           </CodeBox>
           <br />
           <CodeBox codeHTML={HIGHLIGHTED_BANNER_ACCESS}>
-            <div className="highlighted-box-sizing">
+            <ZoomContainer>
               <div className="panel-horizontal-content">
                 <div className="panel-horizontal">
                   <Image
@@ -178,11 +180,11 @@ const HighlightedDocs: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </ZoomContainer>
           </CodeBox>
           <br />
           <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTONS_VIDEO_MP4}>
-            <div className="highlighted-box-sizing">
+            <ZoomContainer>
               <div className="panel-horizontal-content">
                 <div className="panel-horizontal">
                   <p className="sr-only">Buenos Aires se escribe en plural</p>
@@ -208,11 +210,11 @@ const HighlightedDocs: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </ZoomContainer>
           </CodeBox>
           <br />
           <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTONS_VIDEO_YT}>
-            <div className="highlighted-box-sizing">
+            <ZoomContainer>
               <div className="panel-horizontal-content">
                 <div className="panel-horizontal">
                   <iframe
@@ -237,11 +239,11 @@ const HighlightedDocs: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </ZoomContainer>
           </CodeBox>
           <br />
           <CodeBox codeHTML={HIGHLIGHTED_BANNER_NO_MEDIA}>
-            <div className="highlighted-box-sizing">
+            <ZoomContainer>
               <div className="panel-horizontal-content">
                 <div className="panel-horizontal">
                   <div className="panel-body">
@@ -258,11 +260,11 @@ const HighlightedDocs: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </ZoomContainer>
           </CodeBox>
           <br />
           <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTONS_BG}>
-            <div className="highlighted-box-sizing">
+            <ZoomContainer>
               <div className="panel-horizontal-content bg-light">
                 <div className="panel-horizontal">
                   <Image
@@ -286,7 +288,7 @@ const HighlightedDocs: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </ZoomContainer>
           </CodeBox>
         </>
       ),
@@ -299,7 +301,7 @@ const HighlightedDocs: React.FC = () => {
       content: (
         <>
           <CodeBox codeHTML={HIGHLIGHTED_JOIN_IMAGE}>
-            <div className="highlighted-box-sizing-vertical max-h-800">
+            <ZoomContainer>
               <div className="container">
                 <div className="highlighted-items-2">
                   <div className="col">
@@ -354,7 +356,7 @@ const HighlightedDocs: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </ZoomContainer>
           </CodeBox>
         </>
       ),
@@ -364,7 +366,7 @@ const HighlightedDocs: React.FC = () => {
       content: (
         <>
           <CodeBox codeHTML={HIGHLIGHTED_JOIN_IMAGE}>
-            <div className="highlighted-box-sizing-vertical">
+            <ZoomContainer>
               <div className="container">
                 <div className="highlighted-items-2">
                   <div className="col">
@@ -471,7 +473,7 @@ const HighlightedDocs: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </ZoomContainer>
           </CodeBox>
         </>
       ),
@@ -481,7 +483,7 @@ const HighlightedDocs: React.FC = () => {
       content: (
         <>
           <CodeBox codeHTML={HIGHLIGHTED_JOIN_VIDEO}>
-            <div className="highlighted-box-sizing-vertical max-h-800">
+            <ZoomContainer>
               <div className="container">
                 <div className="highlighted-items-2">
                   <div className="col">
@@ -532,7 +534,7 @@ const HighlightedDocs: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </ZoomContainer>
           </CodeBox>
         </>
       ),
@@ -542,7 +544,7 @@ const HighlightedDocs: React.FC = () => {
       content: (
         <>
           <CodeBox codeHTML={HIGHLIGHTED_JOIN_NO_IMAGE}>
-            <div className="highlighted-box-sizing-vertical max-h-640">
+            <ZoomContainer>
               <div className="container">
                 <div className="highlighted-items-2">
                   <div className="col">
@@ -577,7 +579,7 @@ const HighlightedDocs: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </ZoomContainer>
           </CodeBox>
         </>
       ),

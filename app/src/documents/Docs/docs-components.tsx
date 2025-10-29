@@ -356,6 +356,27 @@ const sections = [
           Para la disposición de Destacado conjunto, las clases <code>.card-deck</code> y <code>.max-cards-2</code>{' '}
           quedan deprecadas, se reemplazan por <code>.highlighted-items-2</code>.
         </li>
+        <p className="text-md my-4">
+          <strong>Versión 1.8.1 ⬇️</strong>
+        </p>
+        <p className="text-md mt-4">Común a todas las variantes:</p>
+        <li>
+          Se agrega la clase <code>ellipsis-2</code> a <code>panel-title</code>{' '}
+        </li>
+        <li>
+          Se agrega la clase <code>ellipsis-3</code> a <code>panel-text</code>{' '}
+        </li>
+        <li>
+          Se agrega la clase <code>panel-body-dark</code> para todas las variantes de Destacado conjunto
+        </li>
+        <li>
+          El título, que antes era un <code>{'<h2>'}</code>, ahora es un <code>{'<h5>'}</code>.
+        </li>
+        <p className="text-md mt-4">Destacado conjunto sin multimedia:</p>
+        <li>
+          Se crea la clase: <code>panel-sin-multimedia-v</code> y se utiliza en el mismo div donde va:{' '}
+          <code>panel-body-dark</code> / <code>panel-body</code>
+        </li>
       </ul>
     ),
   },

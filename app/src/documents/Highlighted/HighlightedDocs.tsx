@@ -549,7 +549,7 @@ const HighlightedDocs: React.FC = () => {
                 <div className="highlighted-items-2">
                   <div className="col">
                     <div className="panel-vertical">
-                      <div className="panel-body-dark panel-sin-multimedia">
+                      <div className="panel-body-dark panel-sin-multimedia-v">
                         <h2 className="panel-title">Título del destacado</h2>
                         <p className="panel-text">
                           Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
@@ -564,7 +564,7 @@ const HighlightedDocs: React.FC = () => {
                   </div>
                   <div className="col">
                     <div className="panel-vertical">
-                      <div className="panel-body  panel-sin-multimedia">
+                      <div className="panel-body  panel-sin-multimedia-v">
                         <h2 className="panel-title">Título del destacado</h2>
                         <p className="panel-text">
                           Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede

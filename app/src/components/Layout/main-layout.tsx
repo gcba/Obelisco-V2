@@ -81,6 +81,7 @@ export const contenidos = [
   { text: 'Pautas de escritura UX', url: '/content/pautas-de-escritura-ux', id: 3 },
   { text: 'Redactar una noticia', url: '/content/como-redactar-una-noticia', id: 4 },
   { text: 'Escribir para la accesibilidad', url: '/content/escribir-para-la-accesibilidad', id: 5 },
+];
 
 
 export const templatesPages = [

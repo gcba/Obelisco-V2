@@ -74,17 +74,21 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
     },
     {
       title: 'Componentes utilizados',
+    },
+    {
+      subtitleBold: 'Tarjetas horizontales',
       content: (
         <>
           <div className="d-flex flex-column gap-3">
-            <h5 className="mt-3 mb-0 fw-semibold">Tarjetas horizontales</h5>
             <p className="text-md m-0">
               Las variantes disponibles para este tipo de página incluyen todas las variaciones de la tarjeta
               horizontal, es decir, se pueden usar las variantes con icono, con imagen, sin multimedia, de 4 columnas y
               de 6 columnas de ancho.
             </p>
             <div className="list-informative d-flex flex-column gap-2">
-              <h3 className="list-informative-subtitle m-0">Variantes disponibles de tarjetas horizontales:</h3>
+              <h3 className="list-informative-subtitle m-0 text-md">
+                <strong>Variantes disponibles de tarjetas horizontales:</strong>
+              </h3>
               <ul className="list-informative-bullet">
                 <li>
                   Variante de <strong>4 columnas,</strong> con ícono/imagen.
@@ -95,7 +99,9 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
               </ul>
             </div>
             <div className="list-informative d-flex flex-column gap-2">
-              <h3 className="list-informative-subtitle m-0">Variaciones del componente:</h3>
+              <h3 className="list-informative-subtitle m-0 text-md">
+                <strong>Variaciones del componente:</strong>
+              </h3>
               <ul className="list-informative-bullet">
                 <li>Con botones, con enlaces, con accesos y botones de descarga.</li>
               </ul>
@@ -171,13 +177,17 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
               todas las variantes de accionables según la necesidad del contenido.
             </p>
             <div className="list-informative d-flex flex-column gap-2">
-              <h3 className="list-informative-subtitle m-0">Variantes disponibles:</h3>
+              <h3 className="list-informative-subtitle text-md m-0">
+                <strong>Variantes disponibles:</strong>
+              </h3>
               <ul className="list-informative-bullet">
                 <li>Destacado sin multimedia con fondo secundario.</li>
               </ul>
             </div>
             <div className="list-informative d-flex flex-column gap-2">
-              <h3 className="list-informative-subtitle m-0">Variaciones del componente:</h3>
+              <h3 className="list-informative-subtitle m-0 text-md">
+                <strong>Variaciones del componente:</strong>
+              </h3>
               <ul className="list-informative-bullet">
                 <li>Con botones, con enlaces, con accesos y botones de descarga.</li>
               </ul>
@@ -218,14 +228,18 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
               similitud en su contenido.
             </p>
             <div className="list-informative d-flex flex-column gap-2">
-              <h3 className="list-informative-subtitle m-0">Variantes disponibles:</h3>
+              <h3 className="list-informative-subtitle m-0 text-md">
+                <strong>Variantes disponibles:</strong>
+              </h3>
               <ul className="list-informative-bullet">
                 <li>Acceso con borde y descripción, sin icono.</li>
                 <li>Acceso con borde, sin icono, ni descripción.</li>
               </ul>
             </div>
             <div className="list-informative d-flex flex-column gap-2">
-              <h3 className="list-informative-subtitle m-0">Cantidad óptima de caracteres:</h3>
+              <h3 className="list-informative-subtitle m-0 text-md">
+                <strong>Cantidad óptima de caracteres:</strong>
+              </h3>
               <ul className="list-informative-bullet">
                 <li>
                   <strong>Titulo:</strong> 2 líneas de texto, equivalente a 60 caracteres incluidos los espacios.

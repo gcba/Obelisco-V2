@@ -18,9 +18,9 @@ const SECTIONS_UX = [
     firstTitle: true,
     content: (
       <>
-        <p className="text-md mb-4">Va al comienzo de la página, justo debajo del header, y está formado por: </p>
+        <p className="text-md mb-4">Se encuentra al comienzo de la página, justo debajo del header y está formado por: </p>
         <ul className="list-informative-bullet mb-4">
-          <li>Migas de pan, que nos indican el recorrido de la persona usuaria hasta la página actual.</li>
+          <li><a href="https://gcba.github.io/Obelisco-V2/components/breadcrumb" target="_blank" rel="noopener noreferrer">Migas de pan</a>, que nos indican el recorrido de la persona usuaria hasta la página actual.</li>
           <li>El título del trámite.</li>
           <li>Una breve descripción del trámite.</li>
           <li>La modalidad del trámite identificada con la etiqueta respectiva.</li>
@@ -31,11 +31,11 @@ const SECTIONS_UX = [
           height={300}
           src={`${basePath}/images/templates/tramites/ejemplo_incluir_en_pagina.svg`}
           alt="Ejemplo de lo que puede incluir una página de tramite"
-          className="img-fluid mb-2"
+          className="img-fluid mb-4"
         />
 
-        <p className="text-md">
-          <strong>Buenas prácticas</strong>
+        <p className="text-xl">
+          Buenas prácticas
         </p>
         <div className="d-flex">
           <span className="material-symbols-rounded text-success">check</span>
@@ -62,11 +62,11 @@ const SECTIONS_UX = [
           continuarlo desde el paso en el npque lo dejó por última vez.
         </p>
 
-        <p className="text-md">
+        {/* <p className="text-md">
           Podés consultar la ficha de{' '}
           <a href="https://gcba.github.io/Obelisco-V2/components/block"> bloque de trámite</a> para conocer los
           lineamientos de uso del componente.
-        </p>
+        </p> */}
 
         <Image
           width={500}
@@ -79,40 +79,15 @@ const SECTIONS_UX = [
     ),
   },
   {
-    title: 'Títulos de sección',
-    content: (
-      <>
-        {' '}
-        <p className="text-md">
-          Estos títulos son independientes a los componentes dentro del template y sirven para dividir e identificar
-          cada una de las secciones y su contenido. Utilizan la etiqueta H2.{' '}
-        </p>
-        <Image
-          width={500}
-          height={200}
-          src={`${basePath}/images/templates/tramites/titulo_requisito_del_tramite.svg`}
-          className=""
-          alt="Imagen de títulos de sección"
-        />
-      </>
-    ),
-  },
-  {
-    subtitle: 'Requisitos del trámite',
+    title: 'Requisitos del trámite',
     content: (
       <>
         <p className="text-md">
-          En esta sección se encuentran cada uno de los requisitos necesarios para realizar el trámite. Para mostrarlos
-          se utiliza una lista de requisitos con check siguiendo los lineamientos de Obelisco, nuestro sistema de
-          estándares y diseño.{' '}
+          Muestra cada requisitos necesarios para realizar el trámite. Para mostrarlos se utilizá una <a href="https://gcba.github.io/Obelisco-V2/components/list-informative"
+          target="_blank"> Lista  de requisitos </a> con check siguiendo los lineamientos de Obelisco, 
+          nuestro sistema de estándares y diseño.          
         </p>
-        <a
-          href="https://gcba.github.io/estandares/componentes/listas/lista-informativa/"
-          className="external  d-block"
-          target="_blank"
-        >
-          Ficha de Lista informativa
-        </a>
+
 
         <Image
           width={500}
@@ -123,8 +98,8 @@ const SECTIONS_UX = [
           style={{ border: '2px solid #e6ebf0', borderRadius: '5px' }}
         />
 
-        <p>
-          <strong>Buenas prácticas</strong>
+        <p className="text-xl">
+          Buenas prácticas
         </p>
         <div className="d-flex">
           <span className="material-symbols-rounded text-success">check</span>
@@ -139,8 +114,8 @@ const SECTIONS_UX = [
 
           <p>El subtítulo de la lista de requisitos es opcional y puede omitirse en caso de no ser necesario.</p>
         </div>
-        <p>
-          <strong>Malas prácticas</strong>
+        <p className="text-xl">
+          Malas prácticas
         </p>
         <div className="d-flex">
           <span className="material-symbols-rounded text-danger">close</span>
@@ -184,8 +159,8 @@ const SECTIONS_UX = [
           style={{ border: '2px solid #e6ebf0', borderRadius: '5px' }}
         />
 
-        <p>
-          <strong>Buenas prácticas</strong>
+        <p className="text-xl">
+          Buenas prácticas
         </p>
 
         <div className="d-flex">
@@ -240,9 +215,7 @@ const SECTIONS_UX = [
     content: (
       <>
         <p className="text-md mb-4">
-          Esta sección va luego de la lista de pasos, y muestra todos los costos relacionados al trámite. Es una bajada
-          simple de título, subtítulos y descripción organizada por bloques. La descripción del concepto sirve para
-          identificar la razón del costo y puede contener un enlace si lo necesita.{' '}
+          Se utiliza para ingresar datos breves, de una sola línea, como nombres, dirección de correo electrónico o números de teléfonos.{' '}
         </p>
 
         <Image
@@ -253,16 +226,15 @@ const SECTIONS_UX = [
           alt="Imagen de costos del tramite"
         />
 
-        <p>
-          <strong>Buenas prácticas</strong>
+        <p className="text-xl">
+          Buenas prácticas
         </p>
 
         <div className="d-flex">
           <span className="material-symbols-rounded text-success">check</span>
 
           <p>
-            Utilizar títulos claros y concisos. Usar verbos o frases de acción para indicar a la persona usuaria lo que
-            sucederá en cada paso.
+             Mantener un máximo de 2 costos con subtítulo y descripción por fila. 
           </p>
         </div>
 
@@ -270,72 +242,70 @@ const SECTIONS_UX = [
           <span className="material-symbols-rounded text-success">check</span>
 
           <p>
-            Usar la menor cantidad de pasos posibles para no abrumar a la persona usuaria. Si luego en el flujo verá más
-            información, limitar la lista de pasos a una síntesis del proceso a realizar.
+            Conservar el sentido de lectura de izquierda a derecha. Antes de pasar a una 2da fila, la 1era fila debe ocupar un máximo de 6 columnas (2 ítems). 
           </p>
         </div>
 
-        <p>
-          <strong>Malas prácticas</strong>
+        <div className="d-flex">
+          <span className="material-symbols-rounded text-success">check</span>
+
+          <p>
+            Cuando el trámite es gratuito, el valor del monto cambia por “Gratuito” y no es necesario sumar una descripción del concepto.  
+          </p>
+        </div>
+
+        <p className="text-xl">
+          Malas prácticas
         </p>
 
         <div className="d-flex">
           <span className="material-symbols-rounded text-danger">close</span>
 
-          <p>No utilizar este componente si el proceso tiene sólo un paso.</p>
+          <p>No apilar costos de forma vertical donde no se siga la estructura de bloque y/o no se respete el sentido de lectura de izquierda a derecha. </p>
         </div>
 
         <div className="d-flex">
           <span className="material-symbols-rounded text-danger">close</span>
 
           <p>
-            No utilizar el componente sólo con el título. Siempre debe contener, aunque mínima, una bajada explicativa.
-          </p>
-        </div>
-
-        <div className="d-flex">
-          <span className="material-symbols-rounded text-danger">close</span>
-
-          <p>
-            No incluir componentes como listas informativas, bulleteados y botones dentro de la lista de pasos. La
-            bajada debe consistir sólo en un párrafo de texto, y si es necesario puede poseer enlaces dentro del mismo.
+            La descripción de los costos no debe sobrepasar las 3 columnas de ancho, que es el límite de tamaño máximo para cada ítem. 
           </p>
         </div>
       </>
     ),
   },
   {
-    title: 'Información adicional',
-
-    content: <></>,
-  },
-  {
-    subtitle: 'Colapsables',
+    title: 'Colapsables',
     content: (
       <>
         <p className="text-md">
-          Los colapsables se utilizan en caso que los trámites tengan información adicional de casos particulares. Es
-          una buena forma de mostrar y ocultar secciones sin agregar información por fuera del template.
+          Se utilizan cuando los trámites tienen información adicional de casos particulares. 
+          Es una buena forma de mostrar y ocultar secciones sin agregar información por fuera del template.
         </p>
 
         <p className="text-md">
-          Para mostrarlos se utilizan colapsables de selección única siguiendo los lineamientos de Obelisco, nuestro
-          sistema de estándares y diseño.
+          Para mostrarlos se utilizan <a href="https://gcba.github.io/estandares/componentes/colapsable/" target="_blank">
+          colapsables</a> de selección única siguiendo los lineamientos de Obelisco, 
+          nuestro sistema de estándares y diseño. 
         </p>
 
-        <a href="https://gcba.github.io/estandares/componentes/colapsable/" className="external mb-4" target="_blank">
-          Colapsables
-        </a>
+        <Image
+          width={500}
+          height={300}
+          src={`${basePath}/images/templates/tramites/colapsables.svg`}
+          className="img-fluid border-imgs mb-4"
+          alt="Imagen de colapsables"
+        />
 
-        <p>
-          <strong>Buenas prácticas</strong>
+        <p className="text-xl">
+          Buenas prácticas
         </p>
 
         <div className="d-flex">
           <span className="material-symbols-rounded text-success">check</span>
 
           <p>
-            Mantener títulos breves y claros. El encabezado es lo primero que capta la atención de la mayoría de las
+            <strong>Mantener títulos breves y claros.</strong> El encabezado es lo primero que capta la atención de la mayoría de las
             personas usuarias. Es fundamental que el contenido del colapsable se exprese de manera clara para que las
             personas usuarias puedan decidir si desean expandirlo o no.
           </p>
@@ -347,8 +317,8 @@ const SECTIONS_UX = [
           <p>Cada colapsable puede tener un máximo de 800 caracteres (contando espacios) para su descripción.</p>
         </div>
 
-        <p>
-          <strong>Malas prácticas</strong>
+        <p className="text-xl">
+          Malas prácticas
         </p>
 
         <div className="d-flex">
@@ -372,13 +342,13 @@ const SECTIONS_UX = [
         <div className="d-flex">
           <span className="material-symbols-rounded text-danger">close</span>
 
-          <p>No utilizar más de 1 sección de colapsables. </p>
+          <p>No utilizar más de una sección de colapsables. </p>
         </div>
       </>
     ),
   },
   {
-    subtitle: 'Lista informativa',
+    title: 'Información adicional',
     content: (
       <>
         <p className="text-md">
@@ -387,17 +357,10 @@ const SECTIONS_UX = [
         </p>
 
         <p className="text-md">
-          En este caso, se utiliza una lista informativa con viñeta o texto plano, siguiendo los lineamientos de
+          En este caso, se utiliza una <a href="https://gcba.github.io/Obelisco-V2/components/list-informative" target="_blank" rel="noopener noreferrer">lista informativa</a> con viñeta o texto plano, siguiendo los lineamientos de
           Obelisco, nuestro sistema de estándares y diseño.
         </p>
 
-        <a
-          href="https://gcba.github.io/estandares/componentes/listas/lista-informativa//"
-          className="external mb-4 d-block"
-          target="_blank"
-        >
-          Lista informativa general
-        </a>
         <Image
           width={500}
           height={300}
@@ -406,14 +369,14 @@ const SECTIONS_UX = [
           alt="Imagen de información adicional"
         />
 
-        <p>
-          <strong>Buenas prácticas</strong>
+        <p className="text-xl">
+          Buenas prácticas
         </p>
 
         <div className="d-flex">
           <span className="material-symbols-rounded text-success">check</span>
 
-          <p>Utilizar listas informativas para piezas de información de texto que no tienen un orden secuencial.</p>
+          <p><strong>Utilizar listas informativas para piezas de información de texto que no tienen un orden secuencial.</strong></p>
         </div>
 
         <div className="d-flex">
@@ -431,8 +394,8 @@ const SECTIONS_UX = [
           <p>Utilizar texto plano cuando no es posible generar más de 1 ítem para la lista informativa.</p>
         </div>
 
-        <p>
-          <strong>Malas prácticas</strong>
+        <p className="text-xl">
+          Malas prácticas
         </p>
 
         <div className="d-flex">
@@ -464,17 +427,10 @@ const SECTIONS_UX = [
       <>
         <p className="text-md">
           En este bloque la persona usuaria encontrará los descargables o archivos necesarios para realizar el trámite.
-          En este caso, se utiliza una lista de enlaces siguiendo los lineamientos de Obelisco, nuestro sistema de
-          estándares y diseño.{' '}
+          En este caso, se utiliza una <a href="https://gcba.github.io/Obelisco-V2/components/list-link" target="_blank" rel="noopener noreferrer">lista de enlaces </a> 
+          {' '} siguiendo los lineamientos de Obelisco, nuestro sistema de estándares y diseño.{' '}
         </p>
 
-        <a
-          href="https://gcba.github.io/estandares/componentes/listas/lista-de-enlaces/"
-          className="external mb-4 d-block"
-          target="_blank"
-        >
-          Lista de enlaces
-        </a>
         <Image
           width={500}
           height={300}
@@ -484,8 +440,8 @@ const SECTIONS_UX = [
           style={{ border: '2px solid #e6ebf0', borderRadius: '5px' }}
         />
 
-        <p>
-          <strong>Buenas prácticas</strong>
+        <p className="text-xl">
+          Buenas prácticas
         </p>
 
         <div className="d-flex">
@@ -509,8 +465,8 @@ const SECTIONS_UX = [
           </p>
         </div>
 
-        <p>
-          <strong>Malas prácticas</strong>
+        <p className="text-xl">
+          Malas prácticas
         </p>
 
         <div className="d-flex">
@@ -542,8 +498,8 @@ const SECTIONS_UX = [
           style={{ border: '2px solid #e6ebf0', borderRadius: '5px' }}
         />
 
-        <p>
-          <strong>Buenas prácticas</strong>
+        <p className="text-xl">
+          Buenas prácticas
         </p>
 
         <div className="d-flex">
@@ -555,8 +511,8 @@ const SECTIONS_UX = [
           </p>
         </div>
 
-        <p>
-          <strong>Malas prácticas</strong>
+        <p className="text-xl">
+          Malas prácticas
         </p>
 
         <div className="d-flex">
@@ -588,8 +544,8 @@ const SECTIONS_UX = [
           alt="Ejemplo de organismo responsable"
           style={{ border: '2px solid #e6ebf0', borderRadius: '5px' }}
         />
-        <p>
-          <strong>Buenas prácticas</strong>
+        <p className="text-xl">
+          Buenas prácticas
         </p>
         <div className="d-flex">
           <span className="material-symbols-rounded text-success">check</span>
@@ -599,8 +555,8 @@ const SECTIONS_UX = [
             el modelo del template.{' '}
           </p>
         </div>
-        <p>
-          <strong>Malas prácticas</strong>
+        <p className="text-xl">
+          Malas prácticas
         </p>
         <div className="d-flex">
           <span className="material-symbols-rounded text-danger">close</span>
@@ -616,7 +572,7 @@ const SECTIONS_UX = [
     ),
   },
   {
-    title: 'Contenido del template de trámites',
+    title: 'Contenidos',
     content: (
       <>
         <p className="text-md">
@@ -628,7 +584,7 @@ const SECTIONS_UX = [
     ),
   },
   {
-    title: 'Estilos de texto',
+    subtitle: 'Estilos de texto',
     content: (
       <>
         <p className="text-md">
@@ -640,20 +596,32 @@ const SECTIONS_UX = [
 
           <li>
             Todos los campos de texto dentro del cuerpo del template pueden ir acompañados de un enlace/hipervínculo
-            (ejemplo), a excepción de: los títulos (incluyendo el del <a href="#encabezado">Encabezado</a>), los
+            (ejemplo), a excepción de: los títulos (incluyendo el del Encabezado), los
             subtítulos, la descripción del trámite y la normativa.{' '}
           </li>
         </ul>
       </>
     ),
   },
+    {
+    subtitle: 'Títulos',
+    content: (
+      <>
+        {' '}
+        <p className="text-md">
+          Estos títulos son independientes a los componentes dentro del template y sirven para dividir e identificar
+          cada una de las secciones y su contenido. Utilizan la etiqueta H2.{' '}
+        </p>
+      </>
+    ),
+  },
   {
-    title: 'Cantidad de caracteres',
+    subtitle: 'Cantidad de caracteres',
     content: (
       <>
         <p className="text-md">
           Existen secciones dentro del template de trámites que cuentan con un máximo de caracteres por la capacidad del
-          espacio/componente (véase <a href="#encabezado">Encabezado</a> como ejemplo), sin embargo, la gran mayoría de
+          espacio/componente (véase Encabezado como ejemplo), sin embargo, la gran mayoría de
           campos de texto no tienen un límite definido más allá de respetar la propuesta de contenido y no sobrecargar
           ninguna de las secciones.{' '}
         </p>

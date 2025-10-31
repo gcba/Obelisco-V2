@@ -18611,8 +18611,19 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
     height: 296px;
   }
 }
-.panel-horizontal-content .panel-img,
-.panel-horizontal-content video {
+.panel-horizontal-content .panel-horizontal .panel-img {
+  border-radius: 1.5rem;
+}
+
+.panel-horizontal-content-dark {
+  background-color: #002733;
+}
+.panel-horizontal-content-dark .panel-horizontal .panel-body h5.panel-title, .panel-horizontal-content-dark .panel-horizontal .panel-body .panel-title.h5, .panel-horizontal-content-dark .panel-horizontal .panel-body .panel-vertical .panel-title, .panel-vertical .panel-horizontal-content-dark .panel-horizontal .panel-body .panel-title,
+.panel-horizontal-content-dark .panel-horizontal .panel-body .panel-text {
+  color: #ffffff;
+}
+.panel-horizontal-content-dark .panel-img,
+.panel-horizontal-content-dark video {
   width: 100%;
   max-width: 538px;
   height: 304px;

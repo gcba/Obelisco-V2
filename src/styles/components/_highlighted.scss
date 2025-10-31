@@ -170,6 +170,22 @@
     @extend .container;
     align-items: center;
     @include panel-content(row, xl);
+    .panel-img {
+      border-radius: 1.5rem; // Destacado banner
+    }
+  }
+}
+
+// Destacado banner dark
+.panel-horizontal-content-dark {
+  background-color: $sky-900;
+  .panel-horizontal {
+    .panel-body {
+      h5.panel-title,
+      .panel-text {
+        color: $white;
+      }
+    }
   }
 
   .panel-img,

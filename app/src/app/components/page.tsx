@@ -8,6 +8,7 @@ export default function ComponentsPage() {
   return (
     <>
       <h1 className="visually-hidden">Secciones de la libreria de componentes Obelisco v2</h1>
+
       <div className="mb-5 bg-light p-3 rounded-4">
         <p className="headline-lg fw-bold d-flex">
           <span className="material-symbols-rounded o-icon me-2" aria-hidden="true">

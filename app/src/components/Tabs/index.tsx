@@ -7,20 +7,25 @@ import DocumentationTemplate, { Section } from '../Template/DocumentationTemplat
 interface TabItemProps {
   id: string;
   title?: string;
-  icon?: string;
+  icon?: string | 'open_in_new';
+  urlDemo?: string;
   activeTab: string;
   setActiveTab: (id: string) => void;
 }
 
-const TabItem: React.FC<TabItemProps> = ({ id, title, icon, activeTab, setActiveTab }) => {
+export const TabItem: React.FC<TabItemProps> = ({ id, title, icon, urlDemo, activeTab, setActiveTab }) => {
+  const handleClickDemo = (url: string) => {
+    window.open(url, '_blank');
+  };
+
   return (
-    <li className="nav-item" role="presentation">
+    <li className="nav-item" role="presentation" onClick={urlDemo ? () => handleClickDemo(urlDemo) : undefined}>
       <button
         className={`nav-link ${activeTab === id ? 'active' : ''}`}
         type="button"
         role="tab"
         aria-controls={id}
-        onClick={() => setActiveTab(id)}
+        onClick={id !== '#' ? () => setActiveTab(id) : undefined}
       >
         <div className="nav-icon">
           <span>{title}</span>
@@ -37,7 +42,7 @@ interface TabPanelProps {
   activeTab: string;
 }
 
-const TabPanel: React.FC<TabPanelProps> = ({ id, children, activeTab }) => {
+export const TabPanel: React.FC<TabPanelProps> = ({ id, children, activeTab }) => {
   return (
     <div
       className={`tab-pane fade ${activeTab === id ? 'show active' : ''}`}

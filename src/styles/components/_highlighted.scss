@@ -95,11 +95,14 @@
 
 // Custom styles
 //Estilos para Destacado Banner (antes Panel Grande Horizontal)
-.panel-horizontal-content {
+.panel-horizontal-content,
+.panel-horizontal-content-dark // Destacado banner dark
+{
   width: 100%;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: $white;
+  background-color: $slate-50; // Destacado banner
+
   @include media-breakpoint-down(xl) {
     padding-top: 0;
     padding-bottom: 0;
@@ -109,6 +112,22 @@
     @extend .container;
     align-items: center;
     @include panel-content(row, xl);
+    .panel-img {
+      border-radius: 1.5rem; // Destacado banner
+    }
+  }
+}
+
+// Destacado banner dark
+.panel-horizontal-content-dark {
+  background-color: $sky-900;
+  .panel-horizontal {
+    .panel-body {
+      h5.panel-title,
+      .panel-text {
+        color: $white;
+      }
+    }
   }
 }
 

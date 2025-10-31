@@ -33,6 +33,7 @@ header.hero {
     flex-shrink: 1;
     position: relative;
     padding: 32px 16px 24px;
+		min-height: auto;
 
     &::after {
       content: '';
@@ -183,15 +184,19 @@ header.hero {
 
     & img {
       object-fit: cover;
-      object-position: bottom;
+      object-position: center;
       position: inherit !important;
+			inset: 0px;
+			width: 100%;
+			height: 100%;
     }
 
     & video {
       width: 100%;
       height: 100%;
+			inset: 0px;
       object-fit: cover;
-      object-position: bottom;
+      object-position: center;
 
       &::-webkit-media-controls-enclosure {
         border-radius: 0 !important;
@@ -299,12 +304,10 @@ header.hero {
       max-height: none;
 
       & img {
-        object-position: right;
         position: absolute !important;
       }
 
       & video {
-        object-position: right;
         position: absolute;
 
         &::-webkit-media-controls-panel {

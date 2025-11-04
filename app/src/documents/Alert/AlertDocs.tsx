@@ -10,10 +10,63 @@ import {
   HYPERLINK_ALERT,
   LIST_LINK_ALERT,
   WITH_DESCRIPTION_ALERT,
+  SYSTEM_ALERT,
 } from './code-views';
 
 const AlertDocs: React.FC = () => {
   const SECTIONS_DEV = [
+    {
+      title: 'Sistema',
+      content: (
+        <CodeBox codeHTML={SYSTEM_ALERT}>
+          <div className="container d-flex flex-column gap-3">
+            <div className="alert alert-info system" role="alert">
+              <p>
+                <strong>Este es un destacado de una alerta de información. </strong>
+                Esta es la descripción de una alerta de información que continua al texto destacado, incluso
+              </p>
+              <div className="d-flex gap-3">
+                <LinkClient>con enlaces</LinkClient>
+                <LinkClient>con enlaces</LinkClient>
+              </div>
+            </div>
+
+            <div className="alert alert-success system" role="alert">
+              <p>
+                <strong>Este es un destacado de una alerta de información. </strong>
+                Esta es la descripción de una alerta de información que continua al texto destacado, incluso
+              </p>
+              <div className="d-flex gap-3">
+                <LinkClient>con enlaces</LinkClient>
+                <LinkClient>con enlaces</LinkClient>
+              </div>
+            </div>
+
+            <div className="alert alert-warning system" role="alert">
+              <p>
+                <strong>Este es un destacado de una alerta de información. </strong>
+                Esta es la descripción de una alerta de información que continua al texto destacado, incluso
+              </p>
+              <div className="d-flex gap-3">
+                <LinkClient>con enlaces</LinkClient>
+                <LinkClient>con enlaces</LinkClient>
+              </div>
+            </div>
+
+            <div className="alert alert-danger system" role="alert">
+              <p>
+                <strong>Este es un destacado de una alerta de información. </strong>
+                Esta es la descripción de una alerta de información que continua al texto destacado, incluso
+              </p>
+              <div className="d-flex gap-3">
+                <LinkClient>con enlaces</LinkClient>
+                <LinkClient>con enlaces</LinkClient>
+              </div>
+            </div>
+          </div>
+        </CodeBox>
+      ),
+    },
     {
       title: 'Simple',
       firstTitle: true,

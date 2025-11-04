@@ -125,3 +125,45 @@ export const WITH_DESCRIPTION_ALERT = `
     </ol>
   </div>
 `;
+
+export const SYSTEM_ALERT = `
+  <div class="alert alert-info system" role="alert">
+    <p>
+      <strong>Este es un destacado de una alerta de información.</strong> Esta es la descripción de una alerta de información que continua al texto destacado.
+    </p>
+		<div class="d-flex gap-3">
+			<a href="#">con enlaces</a>
+			<a href="#">con enlaces</a>
+		</div>
+  </div>
+
+	<div class="alert alert-success system" role="alert">
+    <p>
+      <strong>Este es un destacado de una alerta de información.</strong> Esta es la descripción de una alerta de información que continua al texto destacado.
+    </p>
+		<div class="d-flex gap-3">
+			<a href="#">con enlaces</a>
+			<a href="#">con enlaces</a>
+		</div>
+  </div>
+
+	<div class="alert alert-warning system" role="alert">
+    <p>
+      <strong>Este es un destacado de una alerta de información.</strong> Esta es la descripción de una alerta de información que continua al texto destacado.
+    </p>
+		<div class="d-flex gap-3">
+			<a href="#">con enlaces</a>
+			<a href="#">con enlaces</a>
+		</div>
+  </div>
+
+	<div class="alert alert-danger system" role="alert">
+    <p>
+      <strong>Este es un destacado de una alerta de información.</strong> Esta es la descripción de una alerta de información que continua al texto destacado.
+    </p>
+		<div class="d-flex gap-3">
+			<a href="#">con enlaces</a>
+			<a href="#">con enlaces</a>
+		</div>
+  </div>
+`;

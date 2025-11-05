@@ -23,6 +23,23 @@ const ReleasesComponents: React.FC = () => {
       firstTitle: true,
       content: (
         <ul className="docs-list">
+          <p>La Versión 1.8.1 contiene lo siguiente: </p>
+          <li>Se modifica el borde en componente Alertas.</li>
+          <li>
+            Se agrega una nueva variante &quot;Alerta sistemas&quot; en el componente Alertas. En{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-30">
+              Cambios en componentes
+            </a>{' '}
+            está la documentación de las nuevas clases.
+          </li>
+        </ul>
+      ),
+    },
+    {
+      title: 'Versión 1.8.0',
+      firstTitle: true,
+      content: (
+        <ul className="docs-list">
           <p>La Versión 1.8.0 contiene lo siguiente: </p>
           <li>Se modifica el nombre del componente &quot;Tarjeta de Agenda&quot; a &quot;Tarjeta de Eventos&quot;</li>
           <li>

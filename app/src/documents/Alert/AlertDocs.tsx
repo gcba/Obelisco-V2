@@ -6,7 +6,7 @@ import ComponentHeader from '@/components/Template/ComponentHeader';
 import {
   SIMPLE_ALERT,
   WITH_CLOSE_ALERT,
-  HIGHLIGTHED_ALERT,
+  HIGHLIGHTED_ALERT,
   HYPERLINK_ALERT,
   LIST_LINK_ALERT,
   WITH_DESCRIPTION_ALERT,
@@ -123,7 +123,7 @@ const AlertDocs: React.FC = () => {
     {
       title: 'Con destacado',
       content: (
-        <CodeBox codeHTML={HIGHLIGTHED_ALERT}>
+        <CodeBox codeHTML={HIGHLIGHTED_ALERT}>
           <div className="container d-flex flex-column gap-3">
             <div className="alert alert-info" role="alert">
               <p>

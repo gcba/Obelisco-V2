@@ -92,11 +92,13 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
             </div>
           </article>
 
-          {type !== 'none' && (
+          {type === 'none' ? (
+            <div className="nav-scrollspy-none"></div>
+          ) : (
             <div className="nav-scrollspy d-none d-xl-block flex-grow-1">
               <div className="nav-scrollspy-position">
                 <p className="text-sm fw-bold text-body-secondary mb-3">
-                  {type === 'dev' ? 'Variantes' : 'Contenido en esta página'}
+                  {type == 'dev' ? 'Variantes' : 'Contenido en esta página'}
                 </p>
                 <ul className="scrollspy" data-cy="nav-wrapper">
                   {sections.map((section, index) => (

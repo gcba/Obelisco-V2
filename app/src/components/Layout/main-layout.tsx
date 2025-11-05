@@ -83,6 +83,15 @@ export const contenidos = [
   { text: 'Escribir para la accesibilidad', url: '/content/escribir-para-la-accesibilidad', id: 5 },
 ];
 
+export const templatesPages = [
+  { text: 'Páginas de áreas ', url: '/templates/paginas-de-areas', id: 1 },
+  { text: 'Página de trámites', url: '/templates/pagina-tramites', id: 4 },
+  { text: 'Página simple', url: '/templates/pagina-simple', id: 5 },
+  { text: 'Página de libro', url: '/templates/pagina-de-libro', id: 6 },
+  { text: 'Noticias', url: '/templates/pagina-de-noticias', id: 7 },
+  { text: 'Formularios', url: '/templates/formularios', id: 8 },
+];
+
 export const templates = [{ text: 'Plantillas', url: 'https://gcba.github.io/obelisco-demo/index.html', id: 1 }];
 
 export const patterns = [{ text: 'Construir un formulario', url: '/patterns', id: 1 }];

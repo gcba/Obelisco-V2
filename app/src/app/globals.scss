@@ -110,6 +110,14 @@ hr {
       }
     }
   }
+
+  .nav-scrollspy-none {
+    position: relative;
+    min-width: 319px;
+    width: 319px;
+    padding: 0 0 2rem 2rem;
+  }
+
   .box-content .box-section:last-of-type {
     @media screen and (min-width: 992px) {
       min-height: 40vh;

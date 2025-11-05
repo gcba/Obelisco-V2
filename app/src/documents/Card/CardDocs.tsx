@@ -864,7 +864,7 @@ const CardDocs: React.FC = () => {
               </li>
             </ul>
           </div>
-          <div className="list-informative" style={{ marginTop: '32px' }}>
+          <div className="list-informative">
             <p className="text-xl">Cuándo no usar</p>
             <ul className="list-informative-bullet">
               <li>
@@ -1124,7 +1124,7 @@ const CardDocs: React.FC = () => {
           </div>
 
           <Image
-            src={`${basePath}/images/tarjetas/tarjetas_modulacion_si_usar.svg`}
+            src={`${basePath}/images/tarjetas/tarjetas_modulacion_no_usar.svg`}
             alt="Tarjeta horizontal tematica"
             width="800"
             height="200"
@@ -1138,6 +1138,134 @@ const CardDocs: React.FC = () => {
               escaneabilidad de la información.
             </p>
           </div>
+        </>
+      ),
+    },
+    {
+      title: 'Contexto de uso',
+      content: (
+        <>
+          <p className="text-md mb-3">
+            Para agrupar información cuyo contenido principal es visual. Generalmente se utilizan en páginas de cultura
+            o turismo para captar la atención de la persona usuaria.
+          </p>
+          <Image
+            src={`${basePath}/images/tarjetas/tarjetas_contexto_de_uso.svg`}
+            alt="Contexto de uso"
+            width="800"
+            height="285"
+            className="img-fluid"
+          />
+          <p className="text-md" style={{ marginTop: '32px' }}>
+            Para agrupar información cuyo contenido textual es más relevante que el contenido visual, pero necesite un
+            ícono que ayude a identificar la categoría o tipo de acción, por ejemplo, trámites o servicios.
+          </p>
+          <Image
+            src={`${basePath}/images/tarjetas/tarjetas_agrupar_info.svg`}
+            alt="Agrupación de tarjetas"
+            width="800"
+            height="285"
+            className="img-fluid"
+          />
+          <p className="text-md mb-0" style={{ marginTop: '32px' }}>
+            Para promocionar actividades culturales, recreativas o institucionales, brindando información sobre fecha,
+            tipo de evento y público al que está dirigida.
+          </p>
+          <p className="text-md mt-0">
+            Es obligatorio indicar el tipo de evento, por ejemplo: Muestra, Taller, Charla, Recital, y el tipo de
+            público, por ejemplo: Infantil, Adultos mayores, Familiar, etc.
+          </p>
+          <Image
+            src={`${basePath}/images/tarjetas/tarjetas_promocionar.svg`}
+            alt="Uso de tarjetas para promocionar"
+            width="800"
+            height="285"
+            className="img-fluid"
+          />
+          <p className="text-md mb-0" style={{ marginTop: '32px' }}>
+            Para destacar novedades relevantes de forma visual y resumida, con un acceso directo al detalle de cada
+            nota.
+          </p>
+          <p className="text-md mt-0">
+            Se recomienda incluir siempre una fecha visible para brindar contexto del contenido.
+          </p>
+          <Image
+            src={`${basePath}/images/tarjetas/tarjetas_destacar.svg`}
+            alt="Uso de tarjetas para destacar"
+            width="800"
+            height="285"
+            className="img-fluid"
+          />
+        </>
+      ),
+    },
+    {
+      title: 'Contenidos',
+      content: (
+        <>
+          <p className="text-xl fw-semibold">Información para eventos</p>
+          <p className="text-md mb-1 fw-semibold">Sobrelínea</p>
+          <p className="text-md">
+            La sobrelínea se utiliza para indicar el tipo de evento y permite filtrar actividades según esa categoría.
+            Debe limitarse a un máximo de dos palabras.
+          </p>
+
+          <p className="text-md mb-1 fw-semibold">
+            Etiquetas <i>(tag)</i>
+          </p>
+          <p className="text-md">
+            La tarjeta de eventos tiene dos etiquetas que son obligatorias; la primera funciona como nexo adicional al
+            tipo de evento, puede ser una etiqueta relacionada, y la segunda al tipo de público al que está dirigido el
+            evento.
+          </p>
+
+          <p className="text-md mb-1 fw-semibold">Formato de fechas:</p>
+          <ul className="list-informative-bullet">
+            <li>Fecha única: 5 de noviembre</li>
+            <li>Rango de fechas: Del 5 al 10 de noviembre</li>
+            <li>Múltiples fechas: 5, 10, 15 y 20 de noviembre. </li>
+          </ul>
+          <p className="text-md mt-1">
+            Si hay más de 4 fechas disponibles, se recomienda destacar la próxima fecha más cercana y ofrecer el detalle
+            completo en la página del evento.
+          </p>
+
+          <p className="text-md mb-1 fw-semibold">Formato de horarios:</p>
+          <ul className="list-informative-bullet">
+            <li>Horario único: 15:00 h</li>
+            <li>Rango de horarios: 15:00 - 16:00 h</li>
+            <li>Múltiples horarios: 16:00 | 18:00 | 20:00</li>
+          </ul>
+          <p className="text-md mt-1 mb-0">
+            Si hay más de tres horarios, se recomienda usar el formato resumido con un “+” y detallar el resto en la
+            página del evento. Por ejemplo: 16:00 | 18:00 | 20:00 +
+          </p>
+
+          <p className="text-xl mb-3 fw-semibold" style={{ marginTop: '32px' }}>
+            Información para noticias
+          </p>
+          <p className="text-md">
+            Estos datos ayudan a la persona usuaria a contextualizar la información, distinguir entre distintos tipos de
+            contenido y contribuyen al orden cronológico de las noticias.
+          </p>
+
+          <p className="text-md mb-1 fw-semibold">Fecha de publicación:</p>
+          <p className="text-md">
+            Debe mostrarse en formato accesible (ej. “12 de septiembre de 2025”) y visible en el nivel superior del
+            contenido.
+          </p>
+
+          <p className="text-md mb-3 fw-semibold">
+            Etiquetas <i>(tag)</i>
+          </p>
+          <p className="text-md">
+            La tarjeta de noticias debe incluir al menos una etiqueta temática que permita identificar temática o
+            categoría de la noticia, por ejemplo, &quot;Cultura&quot; &quot;Musica&quot;
+          </p>
+          <p className="text-md">
+            Para conocer más información podes consultar la guía para{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/content/como-redactar-una-noticia">redactar una noticia</a>
+          </p>
         </>
       ),
     },
@@ -1201,6 +1329,10 @@ const CardDocs: React.FC = () => {
                 </tr>
                 <tr>
                   <td>8. Horario</td>
+                  <td>Opcional, solo está disponible en tarjetas de eventos.</td>
+                </tr>
+                <tr>
+                  <td>9. Ubicación</td>
                   <td>Opcional, solo está disponible en tarjetas de eventos.</td>
                 </tr>
               </tbody>

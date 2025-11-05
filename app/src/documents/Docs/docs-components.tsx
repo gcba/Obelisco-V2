@@ -388,7 +388,7 @@ const sections = [
           Se agrega la clase <code>panel-body-dark</code> para todas las variantes de Destacado conjunto
         </li>
         <li>
-          El título, que antes era un <code>{'<h2>'}</code>, ahora es un <code>{'<h5>'}</code>.
+          El título semánticamente es un <code>{'<h2>'}</code>, pero extiende los estilos de <code>{'<h5>'}</code>.
         </li>
         <p className="text-md mt-4">Destacado conjunto sin multimedia:</p>
         <li>

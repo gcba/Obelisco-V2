@@ -362,12 +362,12 @@ const CardDocs: React.FC = () => {
       ),
     },
     {
-      subtitle: 'Agenda',
+      subtitle: 'Eventos',
       content: (
         <CodeBox codeHTML={VERTICAL_AGENDA}>
           <div className="container">
             <div className="card-vertical-box-sizing">
-              <div className="card">
+              <div className="card card-eventos">
                 <Image
                   src={`${basePath}/images/card-img-top.jpg`}
                   className="card-img"
@@ -376,11 +376,20 @@ const CardDocs: React.FC = () => {
                   height={196}
                 ></Image>
                 <div className="card-body">
-                  <p className="card-headline">sobrelinea</p>
+                  <p className="card-headline">TIPO DE EVENTO</p>
+                  <div className="mb-3">
+                    <span className="badge badge-default">Etiqueta</span>
+                    <span className="badge badge-default">Tipo de público</span>
+                  </div>
                   <h3 className="card-title">
-                    <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                    <LinkClient className="card-title-link ellipsis-2">
+                      Este es el título del evento que puede contener 2 líneas de texto
+                    </LinkClient>
                   </h3>
-                  <p className="card-text">Descripción de la tarjeta</p>
+                  <p className="card-text ellipsis-4">
+                    Esta es la descripción del evento que puede contener hasta 4 líneas de texto. Cuando la descripción
+                    se excede de este límite, el texto se trunca y aparece el
+                  </p>
                   <div className="card-info">
                     <div className="pt-2">
                       <small>
@@ -390,6 +399,10 @@ const CardDocs: React.FC = () => {
                       <small>
                         <span className="material-symbols-rounded o-icon">schedule</span>
                         17 | 18 | 19 hs
+                      </small>
+                      <small>
+                        <span className="material-symbols-rounded o-icon">location_on</span>
+                        Ubicación del evento
                       </small>
                     </div>
                   </div>
@@ -933,13 +946,13 @@ const CardDocs: React.FC = () => {
 
           <div className="max-items-2 mt-4 mb-2">
             <div className="col">
-              <p className="text-xl">Agenda</p>
+              <p className="text-xl">Eventos</p>
               <p className="text-md">Se utiliza para mostrar información sobre un evento.</p>
             </div>
             <div className="col">
               <Image
                 src={`${basePath}/images/tarjetas/tarjetas_vertical_agenda.svg`}
-                alt="Tarjeta vertical de agenda"
+                alt="Tarjeta vertical de eventos"
                 width="800"
                 height="200"
                 className="img-fluid"

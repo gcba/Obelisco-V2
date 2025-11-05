@@ -27,14 +27,42 @@ const ReleasesComponents: React.FC = () => {
           <li>
             Se modifica la variante{' '}
             <a href="https://gcba.github.io/Obelisco-V2/components/highlighted#section-dev-2">Destado Conjunto</a>, del
-            componente Destacado.
-          </li>
-          <li>
-            En{' '}
+            componente Destacado. En{' '}
             <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-12">
               Cambios en componentes
             </a>
-            , están las especificaciones.
+            , se encuentran las modificaciones.
+          </li>
+          <li>
+            Se realizaron correcciones en el componente Cabecera de Página, también documentadas en{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-8">
+              Cambios en componentes
+            </a>
+            .
+          </li>
+        </ul>
+      ),
+    },
+    {
+      title: 'Versión 1.8.0',
+      firstTitle: true,
+      content: (
+        <ul className="docs-list">
+          <p>La Versión 1.8.0 contiene lo siguiente: </p>
+          <li>Se modifica el nombre del componente &quot;Tarjeta de Agenda&quot; a &quot;Tarjeta de Eventos&quot;</li>
+          <li>
+            Se crea la clase <code>.card-eventos</code> para espaciados y tamaño. En{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-30">
+              Cambios en componentes
+            </a>{' '}
+            se disponibiliza la documentación del componente.
+          </li>
+          <li>
+            Se crea el componente <a href="https://gcba.github.io/Obelisco-V2/components/carousel">Carrusel.</a>
+          </li>
+          <li>
+            El componente cuenta con las variantes para <strong>Destacados</strong> y <strong>Tarjetas</strong> en su
+            versión <i>desktop</i> y <i>mobile</i> para fondos <i>claros</i> y <i>oscuros</i>.
           </li>
         </ul>
       ),

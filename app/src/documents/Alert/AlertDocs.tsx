@@ -23,12 +23,9 @@ const AlertDocs: React.FC = () => {
             <div className="alert alert-info system" role="alert">
               <p>
                 <strong>Este es un destacado de una alerta de información. </strong>
-                Esta es la descripción de una alerta de información que continua al texto destacado, incluso
+                Esta es la descripción de una alerta de información que continua al texto destacado, incluso{' '}
+                <LinkClient>con enlaces</LinkClient>
               </p>
-              <div className="d-flex gap-3">
-                <LinkClient>con enlaces</LinkClient>
-                <LinkClient>con enlaces</LinkClient>
-              </div>
             </div>
 
             <div className="alert alert-success system" role="alert">
@@ -36,7 +33,7 @@ const AlertDocs: React.FC = () => {
                 <strong>Este es un destacado de una alerta de información. </strong>
                 Esta es la descripción de una alerta de información que continua al texto destacado, incluso
               </p>
-              <div className="d-flex gap-3">
+              <div className="alert-links">
                 <LinkClient>con enlaces</LinkClient>
                 <LinkClient>con enlaces</LinkClient>
               </div>
@@ -47,10 +44,23 @@ const AlertDocs: React.FC = () => {
                 <strong>Este es un destacado de una alerta de información. </strong>
                 Esta es la descripción de una alerta de información que continua al texto destacado, incluso
               </p>
-              <div className="d-flex gap-3">
-                <LinkClient>con enlaces</LinkClient>
-                <LinkClient>con enlaces</LinkClient>
-              </div>
+              <ol>
+                <li>
+                  <LinkClient>con enlaces</LinkClient>
+                </li>
+                <li>
+                  <LinkClient>con enlaces</LinkClient>
+                </li>
+                <li>
+                  <LinkClient>con enlaces</LinkClient>
+                </li>
+                <li>
+                  <LinkClient>con enlaces</LinkClient>
+                </li>
+                <li>
+                  <LinkClient>con enlaces</LinkClient>
+                </li>
+              </ol>
             </div>
 
             <div className="alert alert-danger system" role="alert">
@@ -58,10 +68,13 @@ const AlertDocs: React.FC = () => {
                 <strong>Este es un destacado de una alerta de información. </strong>
                 Esta es la descripción de una alerta de información que continua al texto destacado, incluso
               </p>
-              <div className="d-flex gap-3">
-                <LinkClient>con enlaces</LinkClient>
-                <LinkClient>con enlaces</LinkClient>
-              </div>
+              <ol>
+                <li>Texto descriptivo</li>
+                <li>Texto descriptivo</li>
+                <li>Texto descriptivo</li>
+                <li>Texto descriptivo</li>
+                <li>Texto descriptivo</li>
+              </ol>
             </div>
           </div>
         </CodeBox>

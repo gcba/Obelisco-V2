@@ -91,8 +91,9 @@ $system-content-colors: (
           background-color: map-get($system-content-colors, $name);
         }
 
-        a {
-          color: map-get($system-content-colors, $name);
+        a,
+        ol {
+          color: map-get($system-content-colors, $name) !important;
         }
       }
     }
@@ -146,6 +147,19 @@ $system-content-colors: (
       &:focus {
         box-shadow: $focus-box-shadow;
       }
+    }
+  }
+
+  .alert-links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+  }
+
+  @include media-breakpoint-up(sm) {
+    .alert-links {
+      flex-direction: row;
+      column-gap: 16px;
     }
   }
 

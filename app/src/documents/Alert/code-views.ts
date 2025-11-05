@@ -121,16 +121,12 @@ export const WITH_DESCRIPTION_ALERT = `<div class="alert alert-info" role="alert
 `;
 
 export const SYSTEM_ALERT = `// <!-- Alerta sistema Info -->
-<div class="alert alert-info system" role="alert">
-    <p>
-      <strong>Este es un destacado de una alerta de información.</strong>
-      Esta es la descripción de una alerta de información que continua al texto destacado.
-    </p>
-	<div class="d-flex gap-3">
-		<a href="#">con enlaces</a>
-		<a href="#">con enlaces</a>
+	<div class="alert alert-info system" role="alert">
+		<p>
+			<strong>Este es un destacado de una alerta de información.</strong>
+			Esta es la descripción de una alerta de información que continua al texto destacado. <a href="#">con enlaces</a>
+		</p>
 	</div>
-  </div>
 
   // <!-- Alerta sistema Success -->
 	<div class="alert alert-success system" role="alert">
@@ -138,7 +134,7 @@ export const SYSTEM_ALERT = `// <!-- Alerta sistema Info -->
       <strong>Este es un destacado de una alerta de información.</strong>
       Esta es la descripción de una alerta de información que continua al texto destacado.
     </p>
-	<div class="d-flex gap-3">
+	<div class="alert-links">
 		<a href="#">con enlaces</a>
 		<a href="#">con enlaces</a>
 	</div>
@@ -150,10 +146,13 @@ export const SYSTEM_ALERT = `// <!-- Alerta sistema Info -->
       <strong>Este es un destacado de una alerta de información.</strong>
       Esta es la descripción de una alerta de información que continua al texto destacado.
     </p>
-	<div class="d-flex gap-3">
-		<a href="#">con enlaces</a>
-		<a href="#">con enlaces</a>
-	</div>
+		<ol>
+			<li><a href="#">con enlaces</a></li>
+			<li><a href="#">con enlaces</a></li>
+			<li><a href="#">con enlaces</a></li>
+			<li><a href="#">con enlaces</a></li>
+			<li><a href="#">con enlaces</a></li>
+		</ol>
   </div>
 
   // <!-- Alerta sistema Danger -->
@@ -162,9 +161,12 @@ export const SYSTEM_ALERT = `// <!-- Alerta sistema Info -->
       <strong>Este es un destacado de una alerta de información.</strong>
       Esta es la descripción de una alerta de información que continua al texto destacado.
     </p>
-	<div class="d-flex gap-3">
-		<a href="#">con enlaces</a>
-		<a href="#">con enlaces</a>
-	</div>
+		<ol>
+			<li>Texto descriptivo</li>
+			<li>Texto descriptivo</li>
+			<li>Texto descriptivo</li>
+			<li>Texto descriptivo</li>
+			<li>Texto descriptivo</li>
+		</ol>
   </div>
 `;

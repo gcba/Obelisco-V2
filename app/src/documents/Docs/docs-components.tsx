@@ -75,6 +75,15 @@ const sections = [
             <code>data-dismiss=&quot;alert&quot;</code> por <code>data-bs-dismiss=&quot;alert&quot;</code>, y la clase{' '}
             <code>.close</code> se reemplaza por <code>.btn-close</code>.
           </li>
+
+          <p className="text-md my-4">
+            <strong>Versión 1.8.1 ⬇️</strong>
+          </p>
+
+          <li>
+            Para Alertas de Sistema; Se crea la clase <code>.system</code>, debe usarse junto a{' '}
+            <code>.alert-primary</code>.
+          </li>
         </ul>
       </>
     ),

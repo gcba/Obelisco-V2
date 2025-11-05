@@ -52,8 +52,7 @@
   }
 
   // panel-vertical
-  .panel-vertical &,
-  &.panel-vertical {
+  .panel-vertical {
     .panel-img,
     video {
       height: 304px;
@@ -126,7 +125,11 @@
   gap: 0;
   border-radius: 24px;
   height: 100%;
-	max-width: 538px;
+  max-width: 538px;
+
+  .panel-title {
+    @extend .h5;
+  }
 
   .panel-img,
   video {

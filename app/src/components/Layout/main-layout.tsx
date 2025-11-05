@@ -92,8 +92,6 @@ export const templatesPages = [
   { text: 'Formularios', url: '/templates/formularios', id: 8 },
 ];
 
-export const templates = [{ text: 'Plantillas', url: 'https://gcba.github.io/obelisco-demo/index.html', id: 1 }];
-
 export const patterns = [{ text: 'Construir un formulario', url: '/patterns', id: 1 }];
 
 export const versions = [
@@ -164,9 +162,18 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           {pathname.includes('/content') && (
             <div className="nav-left sticky-nav h-auto">
               <div className="nav-left-box-title">
-                <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Documentación</p>
+                <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Contenidos</p>
               </div>
               <NavLayout items={contenidos} />
+            </div>
+          )}
+
+          {pathname.includes('/templates') && (
+            <div className="nav-left sticky-nav h-auto">
+              <div className="nav-left-box-title">
+                <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Plantillas</p>
+              </div>
+              <NavLayout items={templatesPages} />
             </div>
           )}
         </div>

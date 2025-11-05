@@ -51,15 +51,6 @@
     }
   }
 
-  // panel-vertical
-  .panel-vertical {
-    .panel-img,
-    video {
-      height: 304px;
-      border-radius: 24px 24px 0 0;
-    }
-  }
-
   // Responsive
   @include media-breakpoint-down(#{$media-query}) {
     flex-direction: column;
@@ -71,7 +62,7 @@
 
     .panel-img,
     video {
-      max-width: 100%;
+      max-width: 538px;
       height: 392px;
     }
 
@@ -98,28 +89,7 @@
   }
 }
 
-// Custom styles
-// Estilos para Destacado Banner (antes Panel Grande Horizontal)
-.panel-horizontal-content {
-  width: 100%;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  background-color: $white;
-  border-radius: 0.5rem !important;
-
-  @include media-breakpoint-down(xl) {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  .panel-horizontal {
-    @extend .container;
-    align-items: center;
-    @include panel-content(row, xl);
-  }
-}
-
-// Estilos para Destacado Conjunto (antes Panel Grande Vertical)
+// ESTILOS PARA PANEL VERTICAL
 .panel-vertical {
   @include panel-content(column, xl);
   gap: 0;
@@ -127,19 +97,19 @@
   height: 100%;
   max-width: 538px;
 
+  .panel-img,
+  video {
+    height: 304px;
+    border-radius: 24px 24px 0 0;
+  }
+
   .panel-title {
     @extend .h5;
   }
 
-  .panel-img,
-  video {
-    border-radius: 24px 24px 0 0;
-  }
-
-  // mismos estilos a ambas versiones
   .panel-body,
   .panel-body-dark {
-    padding: 2rem; // 32px
+    padding: 2rem;
     width: 100%;
     min-height: 282px;
     flex: 1;
@@ -148,7 +118,6 @@
     flex-direction: column;
     background-color: $slate-50;
 
-    // versión dark
     &.panel-body-dark {
       background-color: $sky-900;
       color: $white;
@@ -182,7 +151,38 @@
   }
 }
 
-// Destacado Lateral
+// ESTILOS PARA PANEL HORIZONTAL
+.panel-horizontal-content {
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: $white;
+  border-radius: 0.5rem !important;
+
+  @include media-breakpoint-down(xl) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .panel-horizontal {
+    @extend .container;
+    align-items: center;
+    @include panel-content(row, xl);
+  }
+
+  .panel-img,
+  video {
+    width: 100%;
+    max-width: 538px;
+    height: 304px;
+    border-radius: $border-radius-lg;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 16/9;
+  }
+}
+
+// ESTILOS PARA PANEL LATERAL
 .panel-lateral {
   @include panel-content(column, xl);
   padding: 2rem 1.5rem;

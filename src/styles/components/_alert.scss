@@ -119,6 +119,7 @@ $system-content-colors: (
 
     li {
       margin-bottom: $alert-text-distance;
+			font-size: 14px;
 
       &::before {
         counter-increment: section;
@@ -154,6 +155,10 @@ $system-content-colors: (
     display: flex;
     flex-direction: column;
     row-gap: 12px;
+
+		a {
+			font-size: 14px;
+		}
   }
 
   @include media-breakpoint-up(sm) {

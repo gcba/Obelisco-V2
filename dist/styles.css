@@ -217,7 +217,7 @@ hr {
 }
 
 h6, .h6, .list-steps-item h3, .list-steps-item .h3,
-.list-steps-item .list-steps-item-title, .list-informative-subtitle, .list-link .list-link-title, h5, .h5, h4, .h4, .stepper-content .stepper .step-title, .panel-lateral .panel-body .panel-title, .panel-vertical .panel-body .panel-title, .panel-horizontal-content .panel-horizontal .panel-body .panel-title, .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .h3,
+.list-steps-item .list-steps-item-title, .list-informative-subtitle, .list-link .list-link-title, h5, .h5, .panel-vertical .panel-title, h4, .h4, .stepper-content .stepper .step-title, .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .h3,
 .list-steps.list-steps-lg .list-steps-item .list-steps-item-title, .carousel-caption h5, .carousel-caption .h5, .group-access .card-access .card-access-body .card-access-title, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -253,18 +253,18 @@ h3, .h3 {
   }
 }
 
-h4, .h4, .stepper-content .stepper .step-title, .panel-lateral .panel-body .panel-title, .panel-vertical .panel-body .panel-title, .panel-horizontal-content .panel-horizontal .panel-body .panel-title, .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .h3,
-.list-steps.list-steps-lg .list-steps-item .list-steps-item-title, .carousel-caption h5, .carousel-caption .h5, .group-access .card-access .card-access-body .card-access-title {
+h4, .h4, .stepper-content .stepper .step-title, .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .h3,
+.list-steps.list-steps-lg .list-steps-item .list-steps-item-title, .carousel-caption h5, .carousel-caption .h5, .carousel-caption .panel-vertical .panel-title, .panel-vertical .carousel-caption .panel-title, .group-access .card-access .card-access-body .card-access-title {
   font-size: calc(1.275rem + 0.3vw);
 }
 @media (min-width: 1200px) {
-  h4, .h4, .stepper-content .stepper .step-title, .panel-lateral .panel-body .panel-title, .panel-vertical .panel-body .panel-title, .panel-horizontal-content .panel-horizontal .panel-body .panel-title, .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .h3,
-  .list-steps.list-steps-lg .list-steps-item .list-steps-item-title, .carousel-caption h5, .carousel-caption .h5, .group-access .card-access .card-access-body .card-access-title {
+  h4, .h4, .stepper-content .stepper .step-title, .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .h3,
+  .list-steps.list-steps-lg .list-steps-item .list-steps-item-title, .carousel-caption h5, .carousel-caption .h5, .carousel-caption .panel-vertical .panel-title, .panel-vertical .carousel-caption .panel-title, .group-access .card-access .card-access-body .card-access-title {
     font-size: 1.5rem;
   }
 }
 
-h5, .h5 {
+h5, .h5, .panel-vertical .panel-title {
   font-size: 1.25rem;
 }
 
@@ -11990,6 +11990,7 @@ textarea.form-control-lg {
 
 .highlighted-items-2 {
   row-gap: 2rem;
+  align-items: stretch;
 }
 @media (max-width: 767.98px) {
   .highlighted-items-2 {
@@ -12005,6 +12006,9 @@ textarea.form-control-lg {
   .highlighted-items-2 .col {
     padding: 0;
   }
+}
+.highlighted-items-2 .col {
+  display: flex;
 }
 
 @media (width >= 1920px) {
@@ -12038,8 +12042,8 @@ h3 {
   font-weight: 600;
 }
 
-.h4, .stepper-content .stepper .step-title, .panel-lateral .panel-body .panel-title, .panel-vertical .panel-body .panel-title, .panel-horizontal-content .panel-horizontal .panel-body .panel-title, .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .h3,
-.list-steps.list-steps-lg .list-steps-item .list-steps-item-title, .carousel-caption h5, .carousel-caption .h5, .group-access .card-access .card-access-body .card-access-title,
+.h4, .stepper-content .stepper .step-title, .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .h3,
+.list-steps.list-steps-lg .list-steps-item .list-steps-item-title, .carousel-caption h5, .carousel-caption .h5, .carousel-caption .panel-vertical .panel-title, .panel-vertical .carousel-caption .panel-title, .group-access .card-access .card-access-body .card-access-title,
 h4 {
   font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.75rem;
@@ -12047,7 +12051,7 @@ h4 {
   font-weight: 600;
 }
 
-.h5,
+.h5, .panel-vertical .panel-title,
 h5 {
   font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.5rem;
@@ -12082,9 +12086,9 @@ h6 {
     font-size: 1.875rem;
   }
 }
-.headline-lg, .card .card-title, .accordion-item .accordion-button .collapse-title, .accordion-item .accordion-button, .block .block-body .block-title, .list-steps-item::before, .navbar.o-header .header-container .navbar-collapse .navbar-content-extended .navbar-sections-title, .navbar.o-header .header-container .navbar-collapse .navbar-user-mobile .navbar-user-mobile-title, .navbar.o-header .header-container .navbar-collapse .navbar-content .navbar-sections .navbar-sections-title, .map .map-body .map-title, .group-access .card-access .card-access-body h4, .group-access .card-access .card-access-body .h4, .group-access .card-access .card-access-body .stepper-content .stepper .step-title, .stepper-content .stepper .group-access .card-access .card-access-body .step-title, .group-access .card-access .card-access-body .panel-lateral .panel-body .panel-title, .panel-lateral .panel-body .group-access .card-access .card-access-body .panel-title, .group-access .card-access .card-access-body .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .group-access .card-access .card-access-body .panel-title, .group-access .card-access .card-access-body .panel-horizontal-content .panel-horizontal .panel-body .panel-title, .panel-horizontal-content .panel-horizontal .panel-body .group-access .card-access .card-access-body .panel-title, .group-access .card-access .card-access-body .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body h3, .group-access .card-access .card-access-body .list-steps.list-steps-lg .list-steps-item .h3, .list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body .h3,
+.headline-lg, .card .card-title, .accordion-item .accordion-button .collapse-title, .accordion-item .accordion-button, .block .block-body .block-title, .list-steps-item::before, .navbar.o-header .header-container .navbar-collapse .navbar-content-extended .navbar-sections-title, .navbar.o-header .header-container .navbar-collapse .navbar-user-mobile .navbar-user-mobile-title, .navbar.o-header .header-container .navbar-collapse .navbar-content .navbar-sections .navbar-sections-title, .map .map-body .map-title, .group-access .card-access .card-access-body h4, .group-access .card-access .card-access-body .h4, .group-access .card-access .card-access-body .stepper-content .stepper .step-title, .stepper-content .stepper .group-access .card-access .card-access-body .step-title, .group-access .card-access .card-access-body .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body h3, .group-access .card-access .card-access-body .list-steps.list-steps-lg .list-steps-item .h3, .list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body .h3,
 .group-access .card-access .card-access-body .list-steps.list-steps-lg .list-steps-item .list-steps-item-title,
-.list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body .list-steps-item-title, .group-access .card-access .card-access-body .carousel-caption h5, .carousel-caption .group-access .card-access .card-access-body h5, .group-access .card-access .card-access-body .carousel-caption .h5, .carousel-caption .group-access .card-access .card-access-body .h5, .group-access .card-access .card-access-body .card-access-title {
+.list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body .list-steps-item-title, .group-access .card-access .card-access-body .carousel-caption h5, .carousel-caption .group-access .card-access .card-access-body h5, .group-access .card-access .card-access-body .carousel-caption .h5, .group-access .card-access .card-access-body .carousel-caption .panel-vertical .panel-title, .panel-vertical .group-access .card-access .card-access-body .carousel-caption .panel-title, .carousel-caption .group-access .card-access .card-access-body .h5, .carousel-caption .group-access .card-access .card-access-body .panel-vertical .panel-title, .panel-vertical .carousel-caption .group-access .card-access .card-access-body .panel-title, .group-access .card-access .card-access-body .card-access-title {
   font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.25rem;
   line-height: 1.5rem;
@@ -14087,9 +14091,9 @@ a.list-group-item.item-sm {
 .group-access .card-access .card-access-body:not(.p-list):has(~ .container-access) ~ .card-item:not(:hover) {
   outline-color: transparent;
 }
-.group-access .card-access .card-access-body h4, .group-access .card-access .card-access-body .h4, .group-access .card-access .card-access-body .stepper-content .stepper .step-title, .stepper-content .stepper .group-access .card-access .card-access-body .step-title, .group-access .card-access .card-access-body .panel-lateral .panel-body .panel-title, .panel-lateral .panel-body .group-access .card-access .card-access-body .panel-title, .group-access .card-access .card-access-body .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .group-access .card-access .card-access-body .panel-title, .group-access .card-access .card-access-body .panel-horizontal-content .panel-horizontal .panel-body .panel-title, .panel-horizontal-content .panel-horizontal .panel-body .group-access .card-access .card-access-body .panel-title, .group-access .card-access .card-access-body .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body h3, .group-access .card-access .card-access-body .list-steps.list-steps-lg .list-steps-item .h3, .list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body .h3,
+.group-access .card-access .card-access-body h4, .group-access .card-access .card-access-body .h4, .group-access .card-access .card-access-body .stepper-content .stepper .step-title, .stepper-content .stepper .group-access .card-access .card-access-body .step-title, .group-access .card-access .card-access-body .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body h3, .group-access .card-access .card-access-body .list-steps.list-steps-lg .list-steps-item .h3, .list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body .h3,
 .group-access .card-access .card-access-body .list-steps.list-steps-lg .list-steps-item .list-steps-item-title,
-.list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body .list-steps-item-title, .group-access .card-access .card-access-body .carousel-caption h5, .carousel-caption .group-access .card-access .card-access-body h5, .group-access .card-access .card-access-body .carousel-caption .h5, .carousel-caption .group-access .card-access .card-access-body .h5, .group-access .card-access .card-access-body .card-access-title {
+.list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body .list-steps-item-title, .group-access .card-access .card-access-body .carousel-caption h5, .carousel-caption .group-access .card-access .card-access-body h5, .group-access .card-access .card-access-body .carousel-caption .h5, .group-access .card-access .card-access-body .carousel-caption .panel-vertical .panel-title, .panel-vertical .group-access .card-access .card-access-body .carousel-caption .panel-title, .carousel-caption .group-access .card-access .card-access-body .h5, .carousel-caption .group-access .card-access .card-access-body .panel-vertical .panel-title, .panel-vertical .carousel-caption .group-access .card-access .card-access-body .panel-title, .group-access .card-access .card-access-body .card-access-title {
   font-weight: 700;
   margin-bottom: 0.25rem;
 }
@@ -16132,7 +16136,7 @@ span.form-label {
   padding-top: 0;
   padding-bottom: 0;
 }
-.carousel-caption h5, .carousel-caption .h5 {
+.carousel-caption h5, .carousel-caption .h5, .carousel-caption .panel-vertical .panel-title, .panel-vertical .carousel-caption .panel-title {
   font-weight: 700;
 }
 
@@ -16959,9 +16963,9 @@ span.form-label {
     padding: 2rem 0;
   }
 }
-.main-footer h4, .main-footer .h4, .main-footer .stepper-content .stepper .step-title, .stepper-content .stepper .main-footer .step-title, .main-footer .panel-lateral .panel-body .panel-title, .panel-lateral .panel-body .main-footer .panel-title, .main-footer .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .main-footer .panel-title, .main-footer .panel-horizontal-content .panel-horizontal .panel-body .panel-title, .panel-horizontal-content .panel-horizontal .panel-body .main-footer .panel-title, .main-footer .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .main-footer h3, .main-footer .list-steps.list-steps-lg .list-steps-item .h3, .list-steps.list-steps-lg .list-steps-item .main-footer .h3,
+.main-footer h4, .main-footer .h4, .main-footer .stepper-content .stepper .step-title, .stepper-content .stepper .main-footer .step-title, .main-footer .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .main-footer h3, .main-footer .list-steps.list-steps-lg .list-steps-item .h3, .list-steps.list-steps-lg .list-steps-item .main-footer .h3,
 .main-footer .list-steps.list-steps-lg .list-steps-item .list-steps-item-title,
-.list-steps.list-steps-lg .list-steps-item .main-footer .list-steps-item-title, .main-footer .group-access .card-access .card-access-body .card-access-title, .group-access .card-access .card-access-body .main-footer .card-access-title, .main-footer .carousel-caption h5, .carousel-caption .main-footer h5, .main-footer .carousel-caption .h5, .carousel-caption .main-footer .h5,
+.list-steps.list-steps-lg .list-steps-item .main-footer .list-steps-item-title, .main-footer .group-access .card-access .card-access-body .card-access-title, .group-access .card-access .card-access-body .main-footer .card-access-title, .main-footer .carousel-caption h5, .carousel-caption .main-footer h5, .main-footer .carousel-caption .h5, .main-footer .carousel-caption .panel-vertical .panel-title, .panel-vertical .main-footer .carousel-caption .panel-title, .carousel-caption .main-footer .h5, .carousel-caption .main-footer .panel-vertical .panel-title, .panel-vertical .carousel-caption .main-footer .panel-title,
 .main-footer h3,
 .main-footer .h3 {
   font-size: 1.125rem;
@@ -16970,9 +16974,9 @@ span.form-label {
   margin-bottom: 0.5rem;
 }
 @media (max-width: 575.98px) {
-  .main-footer h4, .main-footer .h4, .main-footer .stepper-content .stepper .step-title, .stepper-content .stepper .main-footer .step-title, .main-footer .panel-lateral .panel-body .panel-title, .panel-lateral .panel-body .main-footer .panel-title, .main-footer .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .main-footer .panel-title, .main-footer .panel-horizontal-content .panel-horizontal .panel-body .panel-title, .panel-horizontal-content .panel-horizontal .panel-body .main-footer .panel-title, .main-footer .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .main-footer h3, .main-footer .list-steps.list-steps-lg .list-steps-item .h3, .list-steps.list-steps-lg .list-steps-item .main-footer .h3,
+  .main-footer h4, .main-footer .h4, .main-footer .stepper-content .stepper .step-title, .stepper-content .stepper .main-footer .step-title, .main-footer .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .main-footer h3, .main-footer .list-steps.list-steps-lg .list-steps-item .h3, .list-steps.list-steps-lg .list-steps-item .main-footer .h3,
   .main-footer .list-steps.list-steps-lg .list-steps-item .list-steps-item-title,
-  .list-steps.list-steps-lg .list-steps-item .main-footer .list-steps-item-title, .main-footer .group-access .card-access .card-access-body .card-access-title, .group-access .card-access .card-access-body .main-footer .card-access-title, .main-footer .carousel-caption h5, .carousel-caption .main-footer h5, .main-footer .carousel-caption .h5, .carousel-caption .main-footer .h5,
+  .list-steps.list-steps-lg .list-steps-item .main-footer .list-steps-item-title, .main-footer .group-access .card-access .card-access-body .card-access-title, .group-access .card-access .card-access-body .main-footer .card-access-title, .main-footer .carousel-caption h5, .carousel-caption .main-footer h5, .main-footer .carousel-caption .h5, .main-footer .carousel-caption .panel-vertical .panel-title, .panel-vertical .main-footer .carousel-caption .panel-title, .carousel-caption .main-footer .h5, .carousel-caption .main-footer .panel-vertical .panel-title, .panel-vertical .carousel-caption .main-footer .panel-title,
   .main-footer h3,
   .main-footer .h3 {
     margin-bottom: 1rem;
@@ -17791,6 +17795,7 @@ header.hero .content {
   flex-shrink: 1;
   position: relative;
   padding: 32px 16px 24px;
+  min-height: auto;
 }
 header.hero .content::after {
   content: "";
@@ -17915,14 +17920,18 @@ header.hero .aside {
 }
 header.hero .aside img {
   object-fit: cover;
-  object-position: bottom;
+  object-position: top center;
   position: inherit !important;
+  inset: 0;
+  width: 100%;
+  height: 100%;
 }
 header.hero .aside video {
   width: 100%;
   height: 100%;
+  inset: 0;
   object-fit: cover;
-  object-position: bottom;
+  object-position: top center;
 }
 header.hero .aside video::-webkit-media-controls-enclosure {
   border-radius: 0 !important;
@@ -18012,11 +18021,9 @@ header.hero .aside video::-webkit-media-controls-fullscreen-button {
     max-height: none;
   }
   header.hero .aside img {
-    object-position: right;
     position: absolute !important;
   }
   header.hero .aside video {
-    object-position: right;
     position: absolute;
   }
   header.hero .aside video::-webkit-media-controls-panel {
@@ -18380,103 +18387,6 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
   margin-top: 1rem;
 }
 
-.panel-horizontal-content {
-  width: 100%;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  background-color: #ffffff;
-}
-@media (max-width: 1199.98px) {
-  .panel-horizontal-content {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
-.panel-horizontal-content .panel-horizontal {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  gap: 2rem;
-  background-color: transparent;
-  border-radius: 0;
-  border: none;
-}
-.panel-horizontal-content .panel-horizontal .panel-img,
-.panel-horizontal-content .panel-horizontal video {
-  width: 100%;
-  max-width: 538px;
-  height: 304px;
-  border-radius: 0.5rem;
-  object-fit: cover;
-  object-position: center;
-  aspect-ratio: 16/9;
-}
-.panel-horizontal-content .panel-horizontal .panel-body {
-  padding: 0;
-  width: 100%;
-  max-width: 728px;
-}
-.panel-horizontal-content .panel-horizontal .panel-body .panel-title {
-  margin: 0;
-}
-.panel-horizontal-content .panel-horizontal .panel-body .panel-text {
-  margin: 0.5rem 0 0;
-}
-.panel-horizontal-content .panel-horizontal .panel-body .panel-footer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 2rem;
-}
-.panel-horizontal-content .panel-horizontal .panel-body .panel-footer .list-group-item {
-  width: 100%;
-  max-width: 348px;
-  display: flex;
-  margin-bottom: 2px;
-}
-.panel-horizontal-content .panel-horizontal .panel-body .panel-footer .btn-block {
-  width: 100%;
-}
-.panel-horizontal-content .panel-horizontal .panel-body .panel-footer a.btn,
-.panel-horizontal-content .panel-horizontal .panel-body .panel-footer a.download-link {
-  display: flex;
-}
-@media (max-width: 1199.98px) {
-  .panel-horizontal-content .panel-horizontal {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 1.25rem;
-    padding: 1.5rem 0.75rem;
-    margin: 0 auto;
-  }
-  .panel-horizontal-content .panel-horizontal .panel-img,
-  .panel-horizontal-content .panel-horizontal video {
-    max-width: 100%;
-    height: 392px;
-  }
-  .panel-horizontal-content .panel-horizontal .panel-body {
-    max-width: 100%;
-  }
-  .panel-horizontal-content .panel-horizontal .panel-body .panel-footer {
-    flex-direction: row;
-    margin-top: 1.25rem;
-  }
-  .panel-horizontal-content .panel-horizontal .panel-body .panel-footer .download-link {
-    width: fit-content;
-  }
-}
-@media (max-width: 767.98px) {
-  .panel-horizontal-content .panel-horizontal {
-    padding: 1.5rem 1rem;
-  }
-  .panel-horizontal-content .panel-horizontal .panel-img,
-  .panel-horizontal-content .panel-horizontal video {
-    height: 296px;
-  }
-}
-
 .panel-vertical {
   display: flex;
   flex-direction: column;
@@ -18485,17 +18395,18 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
   background-color: transparent;
   border-radius: 0;
   border: none;
-  gap: 1.25rem;
+  gap: 0;
+  border-radius: 24px;
+  height: 100%;
+  max-width: 538px;
 }
 .panel-vertical .panel-img,
 .panel-vertical video {
   width: 100%;
-  max-width: 538px;
-  height: 304px;
-  border-radius: 0.5rem;
   object-fit: cover;
   object-position: center;
   aspect-ratio: 16/9;
+  border-radius: 0.5rem;
 }
 .panel-vertical .panel-body {
   padding: 0;
@@ -18505,14 +18416,11 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
 .panel-vertical .panel-body .panel-title {
   margin: 0;
 }
-.panel-vertical .panel-body .panel-text {
-  margin: 0.5rem 0 0;
-}
 .panel-vertical .panel-body .panel-footer {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 24px;
 }
 .panel-vertical .panel-body .panel-footer .list-group-item {
   width: 100%;
@@ -18532,13 +18440,13 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 1.25rem;
     padding: 1.5rem 0.75rem;
     margin: 0 auto;
+    height: auto;
   }
   .panel-vertical .panel-img,
   .panel-vertical video {
-    max-width: 100%;
+    max-width: 538px;
     height: 392px;
   }
   .panel-vertical .panel-body {
@@ -18561,8 +18469,155 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
     height: 296px;
   }
 }
-.panel-vertical .panel-body .panel-footer {
-  margin-top: 1.25rem;
+.panel-vertical .panel-img,
+.panel-vertical video {
+  height: 304px;
+  border-radius: 24px 24px 0 0;
+}
+.panel-vertical .panel-body,
+.panel-vertical .panel-body-dark {
+  padding: 2rem;
+  width: 100%;
+  min-height: 282px;
+  flex: 1;
+  border-radius: 0 0 24px 24px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f6f9;
+}
+.panel-vertical .panel-body.panel-body-dark,
+.panel-vertical .panel-body-dark.panel-body-dark {
+  background-color: #002733;
+  color: #ffffff;
+}
+.panel-vertical .panel-body.panel-sin-multimedia-v,
+.panel-vertical .panel-body-dark.panel-sin-multimedia-v {
+  border-radius: 24px;
+}
+.panel-vertical .panel-body .panel-text,
+.panel-vertical .panel-body-dark .panel-text {
+  margin-bottom: 24px;
+}
+.panel-vertical .panel-body .panel-footer,
+.panel-vertical .panel-body-dark .panel-footer {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+@media (max-width: 1199.98px) {
+  .panel-vertical {
+    height: auto !important;
+  }
+  .panel-vertical .panel-body,
+  .panel-vertical .panel-body-dark {
+    height: auto;
+    min-height: unset;
+    padding: 2rem;
+  }
+}
+
+.panel-horizontal-content {
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem !important;
+}
+@media (max-width: 1199.98px) {
+  .panel-horizontal-content {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+.panel-horizontal-content .panel-horizontal {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 2rem;
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+}
+.panel-horizontal-content .panel-horizontal .panel-img,
+.panel-horizontal-content .panel-horizontal video {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 16/9;
+  border-radius: 0.5rem;
+}
+.panel-horizontal-content .panel-horizontal .panel-body {
+  padding: 0;
+  width: 100%;
+  max-width: 728px;
+}
+.panel-horizontal-content .panel-horizontal .panel-body .panel-title {
+  margin: 0;
+}
+.panel-horizontal-content .panel-horizontal .panel-body .panel-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 24px;
+}
+.panel-horizontal-content .panel-horizontal .panel-body .panel-footer .list-group-item {
+  width: 100%;
+  max-width: 348px;
+  display: flex;
+  margin-bottom: 2px;
+}
+.panel-horizontal-content .panel-horizontal .panel-body .panel-footer .btn-block {
+  width: 100%;
+}
+.panel-horizontal-content .panel-horizontal .panel-body .panel-footer a.btn,
+.panel-horizontal-content .panel-horizontal .panel-body .panel-footer a.download-link {
+  display: flex;
+}
+@media (max-width: 1199.98px) {
+  .panel-horizontal-content .panel-horizontal {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1.5rem 0.75rem;
+    margin: 0 auto;
+    height: auto;
+  }
+  .panel-horizontal-content .panel-horizontal .panel-img,
+  .panel-horizontal-content .panel-horizontal video {
+    max-width: 538px;
+    height: 392px;
+  }
+  .panel-horizontal-content .panel-horizontal .panel-body {
+    max-width: 100%;
+  }
+  .panel-horizontal-content .panel-horizontal .panel-body .panel-footer {
+    flex-direction: row;
+    margin-top: 1.25rem;
+  }
+  .panel-horizontal-content .panel-horizontal .panel-body .panel-footer .download-link {
+    width: fit-content;
+  }
+}
+@media (max-width: 767.98px) {
+  .panel-horizontal-content .panel-horizontal {
+    padding: 1.5rem 1rem;
+  }
+  .panel-horizontal-content .panel-horizontal .panel-img,
+  .panel-horizontal-content .panel-horizontal video {
+    height: 296px;
+  }
+}
+.panel-horizontal-content .panel-img,
+.panel-horizontal-content video {
+  width: 100%;
+  max-width: 538px;
+  height: 304px;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 16/9;
 }
 
 .panel-lateral {
@@ -18580,12 +18635,10 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
 .panel-lateral .panel-img,
 .panel-lateral video {
   width: 100%;
-  max-width: 538px;
-  height: 304px;
-  border-radius: 0.5rem;
   object-fit: cover;
   object-position: center;
   aspect-ratio: 16/9;
+  border-radius: 0.5rem;
 }
 .panel-lateral .panel-body {
   padding: 0;
@@ -18595,14 +18648,11 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
 .panel-lateral .panel-body .panel-title {
   margin: 0;
 }
-.panel-lateral .panel-body .panel-text {
-  margin: 0.5rem 0 0;
-}
 .panel-lateral .panel-body .panel-footer {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 24px;
 }
 .panel-lateral .panel-body .panel-footer .list-group-item {
   width: 100%;
@@ -18622,13 +18672,13 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 1.25rem;
     padding: 1.5rem 0.75rem;
     margin: 0 auto;
+    height: auto;
   }
   .panel-lateral .panel-img,
   .panel-lateral video {
-    max-width: 100%;
+    max-width: 538px;
     height: 392px;
   }
   .panel-lateral .panel-body {

@@ -133,6 +133,24 @@ const sections = [
     ),
   },
   {
+    title: 'Cabecera de página',
+    content: (
+      <ul className="docs-list">
+        <p className="text-md my-4">
+          <strong>Versión 1.7.0 ⬇️</strong>
+        </p>
+        <li>Se crea el componente.</li>
+        <p className="text-md my-4">
+          <strong>Versión 1.8.1 ⬇️</strong>
+        </p>
+        <li>Se corrige comportamiento en las variantes con multimedia, ahora está centrado el contenido.</li>
+        <li>
+          Se agregó un alto minimo en <code>.content</code>, para evitar conflictos con estilos externos.
+        </li>
+      </ul>
+    ),
+  },
+  {
     title: 'Calendario',
     content: (
       <ul className="docs-list">
@@ -355,6 +373,27 @@ const sections = [
         <li>
           Para la disposición de Destacado conjunto, las clases <code>.card-deck</code> y <code>.max-cards-2</code>{' '}
           quedan deprecadas, se reemplazan por <code>.highlighted-items-2</code>.
+        </li>
+        <p className="text-md my-4">
+          <strong>Versión 1.8.1 ⬇️</strong>
+        </p>
+        <p className="text-md mt-4">Común a todas las variantes:</p>
+        <li>
+          Se agrega la clase <code>ellipsis-2</code> a <code>panel-title</code>{' '}
+        </li>
+        <li>
+          Se agrega la clase <code>ellipsis-3</code> a <code>panel-text</code>{' '}
+        </li>
+        <li>
+          Se agrega la clase <code>panel-body-dark</code> para todas las variantes de Destacado conjunto
+        </li>
+        <li>
+          El título semánticamente es un <code>{'<h2>'}</code>, pero extiende los estilos de <code>{'<h5>'}</code>.
+        </li>
+        <p className="text-md mt-4">Destacado conjunto sin multimedia:</p>
+        <li>
+          Se crea la clase: <code>panel-sin-multimedia-v</code> y se utiliza en el mismo div donde va:{' '}
+          <code>panel-body-dark</code> / <code>panel-body</code>
         </li>
       </ul>
     ),

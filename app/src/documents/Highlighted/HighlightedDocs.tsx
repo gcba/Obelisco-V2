@@ -39,7 +39,7 @@ const HighlightedDocs: React.FC = () => {
         <>
           <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTONS}>
             <div className="highlighted-box-sizing">
-              <div className="panel-horizontal-content">
+              <div className="panel-horizontal-content-2">
                 <div className="panel-horizontal">
                   <Image
                     src={`${basePath}/images/destacado.jpg`}

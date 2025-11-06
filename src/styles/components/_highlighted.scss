@@ -95,6 +95,7 @@
 
 // Custom styles
 //Estilos para Destacado Banner (antes Panel Grande Horizontal)
+.panel-horizontal-content-2,
 .panel-horizontal-content,
 .panel-horizontal-content-dark // Destacado banner dark
 {
@@ -115,6 +116,38 @@
 
     .panel-img {
       border-radius: 1.5rem; // Destacado banner
+    }
+  }
+}
+.panel-horizontal-content-2 {
+  border-radius: 1.5rem;
+  padding: 0 0;
+
+  .panel-horizontal {
+    @extend .container;
+    align-items: center;
+    @include panel-content(row, xl);
+    margin: 0;
+    padding: 0;
+
+    .panel-img {
+      width: 538px;
+      border-radius: 1.5rem 0 0 1.5rem;
+    }
+
+    .panel-body {
+      padding: 32px;
+    }
+  }
+
+  @media screen and (max-width: 1337px) {
+    .panel-horizontal {
+      .panel-img {
+        width: 100%;
+        border-radius: 1.5rem;
+        max-width: 100%;
+        height: 392px;
+      }
     }
   }
 }

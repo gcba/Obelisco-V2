@@ -129,9 +129,11 @@
     @include panel-content(row, xl);
     margin: 0;
     padding: 0;
+		position: relative;
 
     .panel-img {
       width: 538px;
+			max-width: 50%;
       border-radius: 1.5rem 0 0 1.5rem;
     }
 
@@ -140,7 +142,7 @@
     }
   }
 
-  @media screen and (max-width: 1337px) {
+  @media screen and (max-width: 1200px) {
     .panel-horizontal {
       .panel-img {
         width: 100%;

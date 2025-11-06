@@ -28,7 +28,7 @@ const ReleasesComponents: React.FC = () => {
             Se modifica la variante{' '}
             <a href="https://gcba.github.io/Obelisco-V2/components/highlighted#section-dev-2">Destado Conjunto</a>, del
             componente Destacado. En{' '}
-            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-12">
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-13">
               Cambios en componentes
             </a>
             , se encuentran las modificaciones.

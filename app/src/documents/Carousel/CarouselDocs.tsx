@@ -281,61 +281,67 @@ const CarouselDocs: React.FC = () => {
 
                 <div className="carousel-inner responsive-scroll">
                   <div className="carousel-item active">
-                    {colors.map((color, i) => (
-                      <div className="card" key={i}>
-                        <Image
-                          src={`${basePath}/images/card-img-top.jpg`}
-                          className="card-img"
-                          alt="descripción de imagen"
-                          width={348}
-                          height={196}
-                        />
-                        <div className={`card-body card-border-bottom-${color}`}>
-                          <h3 className="card-title">
-                            <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
-                          </h3>
-                          <p className="card-text">Descripción de la tarjeta</p>
+                    <div className="card-items">
+                      {colors.map((color, i) => (
+                        <div className="card" key={i}>
+                          <Image
+                            src={`${basePath}/images/card-img-top.jpg`}
+                            className="card-img"
+                            alt="descripción de imagen"
+                            width={348}
+                            height={196}
+                          />
+                          <div className={`card-body card-border-bottom-${color}`}>
+                            <h3 className="card-title">
+                              <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                            </h3>
+                            <p className="card-text">Descripción de la tarjeta</p>
+                          </div>
                         </div>
-                      </div>
-                    ))}
+                      ))}
+                    </div>
                   </div>
                   <div className="carousel-item">
-                    {colors.map((color, i) => (
-                      <div className="card" key={i}>
-                        <Image
-                          src={`${basePath}/images/card-img-top.jpg`}
-                          className="card-img"
-                          alt="descripción de imagen"
-                          width={348}
-                          height={196}
-                        />
-                        <div className={`card-body card-border-bottom-${color}`}>
-                          <h3 className="card-title">
-                            <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
-                          </h3>
-                          <p className="card-text">Descripción de la tarjeta</p>
+                    <div className="card-items">
+                      {colors.map((color, i) => (
+                        <div className="card" key={i}>
+                          <Image
+                            src={`${basePath}/images/card-img-top.jpg`}
+                            className="card-img"
+                            alt="descripción de imagen"
+                            width={348}
+                            height={196}
+                          />
+                          <div className={`card-body card-border-bottom-${color}`}>
+                            <h3 className="card-title">
+                              <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                            </h3>
+                            <p className="card-text">Descripción de la tarjeta</p>
+                          </div>
                         </div>
-                      </div>
-                    ))}
+                      ))}
+                    </div>
                   </div>
                   <div className="carousel-item">
-                    {colors.map((color, i) => (
-                      <div className="card" key={i}>
-                        <Image
-                          src={`${basePath}/images/card-img-top.jpg`}
-                          className="card-img"
-                          alt="descripción de imagen"
-                          width={348}
-                          height={196}
-                        />
-                        <div className={`card-body card-border-bottom-${color}`}>
-                          <h3 className="card-title">
-                            <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
-                          </h3>
-                          <p className="card-text">Descripción de la tarjeta</p>
+                    <div className="card-items">
+                      {colors.map((color, i) => (
+                        <div className="card" key={i}>
+                          <Image
+                            src={`${basePath}/images/card-img-top.jpg`}
+                            className="card-img"
+                            alt="descripción de imagen"
+                            width={348}
+                            height={196}
+                          />
+                          <div className={`card-body card-border-bottom-${color}`}>
+                            <h3 className="card-title">
+                              <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                            </h3>
+                            <p className="card-text">Descripción de la tarjeta</p>
+                          </div>
                         </div>
-                      </div>
-                    ))}
+                      ))}
+                    </div>
                   </div>
                 </div>
 
@@ -402,61 +408,67 @@ const CarouselDocs: React.FC = () => {
 
                 <div className="carousel-inner responsive-scroll">
                   <div className="carousel-item active">
-                    {colors.map((color, i) => (
-                      <div className="card" key={i}>
-                        <Image
-                          src={`${basePath}/images/card-img-top.jpg`}
-                          className="card-img"
-                          alt="descripción de imagen"
-                          width={348}
-                          height={196}
-                        />
-                        <div className={`card-body card-border-bottom-${color}`}>
-                          <h3 className="card-title">
-                            <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
-                          </h3>
-                          <p className="card-text">Descripción de la tarjeta</p>
+                    <div className="card-items">
+                      {colors.map((color, i) => (
+                        <div className="card" key={i}>
+                          <Image
+                            src={`${basePath}/images/card-img-top.jpg`}
+                            className="card-img"
+                            alt="descripción de imagen"
+                            width={348}
+                            height={196}
+                          />
+                          <div className={`card-body card-border-bottom-${color}`}>
+                            <h3 className="card-title">
+                              <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                            </h3>
+                            <p className="card-text">Descripción de la tarjeta</p>
+                          </div>
                         </div>
-                      </div>
-                    ))}
+                      ))}
+                    </div>
                   </div>
                   <div className="carousel-item">
-                    {colors.map((color, i) => (
-                      <div className="card" key={i}>
-                        <Image
-                          src={`${basePath}/images/card-img-top.jpg`}
-                          className="card-img"
-                          alt="descripción de imagen"
-                          width={348}
-                          height={196}
-                        />
-                        <div className={`card-body card-border-bottom-${color}`}>
-                          <h3 className="card-title">
-                            <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
-                          </h3>
-                          <p className="card-text">Descripción de la tarjeta</p>
+                    <div className="card-items">
+                      {colors.map((color, i) => (
+                        <div className="card" key={i}>
+                          <Image
+                            src={`${basePath}/images/card-img-top.jpg`}
+                            className="card-img"
+                            alt="descripción de imagen"
+                            width={348}
+                            height={196}
+                          />
+                          <div className={`card-body card-border-bottom-${color}`}>
+                            <h3 className="card-title">
+                              <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                            </h3>
+                            <p className="card-text">Descripción de la tarjeta</p>
+                          </div>
                         </div>
-                      </div>
-                    ))}
+                      ))}
+                    </div>
                   </div>
                   <div className="carousel-item">
-                    {colors.map((color, i) => (
-                      <div className="card" key={i}>
-                        <Image
-                          src={`${basePath}/images/card-img-top.jpg`}
-                          className="card-img"
-                          alt="descripción de imagen"
-                          width={348}
-                          height={196}
-                        />
-                        <div className={`card-body card-border-bottom-${color}`}>
-                          <h3 className="card-title">
-                            <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
-                          </h3>
-                          <p className="card-text">Descripción de la tarjeta</p>
+                    <div className="card-items">
+                      {colors.map((color, i) => (
+                        <div className="card" key={i}>
+                          <Image
+                            src={`${basePath}/images/card-img-top.jpg`}
+                            className="card-img"
+                            alt="descripción de imagen"
+                            width={348}
+                            height={196}
+                          />
+                          <div className={`card-body card-border-bottom-${color}`}>
+                            <h3 className="card-title">
+                              <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                            </h3>
+                            <p className="card-text">Descripción de la tarjeta</p>
+                          </div>
                         </div>
-                      </div>
-                    ))}
+                      ))}
+                    </div>
                   </div>
                 </div>
 

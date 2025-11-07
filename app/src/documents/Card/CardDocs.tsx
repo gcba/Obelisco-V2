@@ -388,23 +388,23 @@ const CardDocs: React.FC = () => {
                   </h3>
                   <p className="card-text ellipsis-4">
                     Esta es la descripción del evento que puede contener hasta 4 líneas de texto. Cuando la descripción
-                    se excede de este límite, el texto se trunca y aparece el
+                    se excede de este límite, el texto se trunca y aparecen
                   </p>
                   <div className="card-info">
-                    <div className="pt-2">
-                      <small>
-                        <span className="material-symbols-rounded o-icon">calendar_today</span>
-                        Lun 01/1
-                      </small>
-                      <small>
-                        <span className="material-symbols-rounded o-icon">schedule</span>
-                        17 | 18 | 19 hs
-                      </small>
-                      <small>
-                        <span className="material-symbols-rounded o-icon">location_on</span>
-                        Ubicación del evento
-                      </small>
-                    </div>
+                    {/* <div> */}
+                    <small>
+                      <span className="material-symbols-rounded o-icon">calendar_today</span>
+                      Lun 01/1
+                    </small>
+                    <small>
+                      <span className="material-symbols-rounded o-icon">schedule</span>
+                      17 | 18 | 19 hs
+                    </small>
+                    <small>
+                      <span className="material-symbols-rounded o-icon">location_on</span>
+                      Ubicación del evento
+                    </small>
+                    {/* </div> */}
                   </div>
                 </div>
               </div>

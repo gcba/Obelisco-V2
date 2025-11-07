@@ -143,20 +143,27 @@ $card-info-icon-size: 1rem;
   &.card-eventos {
     min-height: 576px;
 
-    .card-info {
-      position: relative;
-      margin-top: 32px;
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1; // Hace que ocupe todo el espacio disponible
+      height: 100%; 
+      .card-info {
+        position: relative;
+        margin-top: auto; // Hace que vaya al fondo independientemente de lo que ocupe el contenido arriba
+        position: relative;
 
-      // Línea divisoria
-      &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -24px;
-        right: -24px;
-        height: 1px;
-        transform: translateY(-16px);
-        background-color: #e6ebf0;
+        // Línea divisoria
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -24px;
+          right: -24px;
+          height: 1px;
+          transform: translateY(-16px);
+          background-color: #e6ebf0;
+        }
       }
     }
   }

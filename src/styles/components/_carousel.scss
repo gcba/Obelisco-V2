@@ -196,15 +196,14 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
         .carousel-item {
           display: contents;
 
-					.card-items {
-						display: contents;
+          .card-items {
+            display: contents;
 
-						.card {
-							flex: 0 0 auto;
-							width: 296px;
-						}
-					}
-
+            .card {
+              flex: 0 0 auto;
+              width: 296px;
+            }
+          }
         }
       }
 
@@ -310,11 +309,11 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
         overflow-x: hidden;
 
         .carousel-item {
-					.card-items {
-						display: flex;
-						column-gap: 24px;
-						align-items: stretch;
-					}
+          .card-items {
+            display: flex;
+            column-gap: 24px;
+            align-items: stretch;
+          }
         }
       }
     }

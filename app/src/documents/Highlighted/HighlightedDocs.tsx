@@ -13,6 +13,7 @@ import {
   HIGHLIGHTED_BANNER_BUTTONS_VIDEO_MP4,
   HIGHLIGHTED_BANNER_BUTTONS_VIDEO_YT,
   HIGHLIGHTED_BANNER_DOWNLOAD,
+  HIGHLIGHTED_BANNER_FONDOS,
   HIGHLIGHTED_BANNER_LINK,
   HIGHLIGHTED_BANNER_NO_MEDIA,
   HIGHLIGHTED_JOIN_IMAGE,
@@ -300,7 +301,7 @@ const HighlightedDocs: React.FC = () => {
       subtitle: 'Fondos',
       content: (
         <>
-          <CodeBox codeHTML={HIGHLIGHTED_JOIN_IMAGE}>
+          <CodeBox codeHTML={HIGHLIGHTED_BANNER_FONDOS}>
             <ZoomContainer>
               <div className="container">
                 <div className="highlighted-items-2">

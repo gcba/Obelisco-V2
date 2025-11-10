@@ -32,7 +32,7 @@ export default function Formularios() {
 
               <div className="col">
                 <a
-                  href={`${basePath}/templates/formularios/formulario-pagina-unica`}
+                  href={`${basePath}/templates/formularios/formulario-multipagina`}
                   className="list-group-item item-sm"
                 >
                   <div className="access-content">

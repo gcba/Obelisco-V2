@@ -25,10 +25,12 @@ const ReleasesComponents: React.FC = () => {
         <ul className="docs-list">
           <p>La versión 1.8.2 contiene lo siguiente: </p>
           <li>
-            Se agrega la clase <code>card-items</code> al componente carrusel para asegurar la correcta visualización de la altura de las tarjetas.
+            Se agrega la clase <code>card-items</code> al componente carrusel para asegurar la correcta visualización de
+            la altura de las tarjetas.
           </li>
           <li>
-            Se corrigieron los <code>code views</code> de los componentes y los redireccionamientos de las URLs dentro del sitio web.
+            Se corrigieron los <code>code views</code> de los componentes y los redireccionamientos de las URLs dentro
+            del sitio web.
           </li>
         </ul>
       ),

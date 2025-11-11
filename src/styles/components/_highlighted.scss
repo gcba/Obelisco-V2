@@ -62,7 +62,7 @@
 
     .panel-img,
     video {
-      max-width: 538px;
+      max-width: 100%;
       height: 392px;
     }
 
@@ -82,6 +82,7 @@
 
   @include media-breakpoint-down(md) {
     padding: 1.5rem 1rem;
+		max-width: 540px;
 
     .panel-img,
     video {

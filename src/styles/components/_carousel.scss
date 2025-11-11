@@ -159,6 +159,10 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
       max-width: 100%;
       row-gap: 24px;
 
+			img {
+				max-width: 100%;
+			}
+
       .panel-footer {
         a {
           width: 100%;

@@ -164,6 +164,10 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
           width: 100%;
         }
       }
+
+			img {
+				max-width: 100%;
+			}
     }
   }
 

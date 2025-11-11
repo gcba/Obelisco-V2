@@ -191,13 +191,18 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
         overflow: auto hidden;
         column-gap: 24px;
         padding: 0 0 24px;
+        align-items: stretch;
 
         .carousel-item {
           display: contents;
 
-          .card {
-            flex: 0 0 auto;
-            width: 296px;
+          .card-items {
+            display: contents;
+
+            .card {
+              flex: 0 0 auto;
+              width: 296px;
+            }
           }
         }
       }
@@ -302,18 +307,12 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
 
       .carousel-inner {
         overflow-x: hidden;
-        display: block;
 
         .carousel-item {
-          .card {
-            display: inline-block;
-            vertical-align: top;
-            width: calc((100% - 58px) / 3);
-            margin-right: 24px;
-
-            &:nth-child(3n) {
-              margin-right: 0;
-            }
+          .card-items {
+            display: flex;
+            column-gap: 24px;
+            align-items: stretch;
           }
         }
       }

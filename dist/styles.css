@@ -19427,11 +19427,15 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
     overflow: auto hidden;
     column-gap: 24px;
     padding: 0 0 24px;
+    align-items: stretch;
   }
   .carousel.cards .carousel-inner .carousel-item {
     display: contents;
   }
-  .carousel.cards .carousel-inner .carousel-item .card {
+  .carousel.cards .carousel-inner .carousel-item .card-items {
+    display: contents;
+  }
+  .carousel.cards .carousel-inner .carousel-item .card-items .card {
     flex: 0 0 auto;
     width: 296px;
   }
@@ -19512,16 +19516,11 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
   }
   .carousel.cards .carousel-inner {
     overflow-x: hidden;
-    display: block;
   }
-  .carousel.cards .carousel-inner .carousel-item .card {
-    display: inline-block;
-    vertical-align: top;
-    width: calc((100% - 58px) / 3);
-    margin-right: 24px;
-  }
-  .carousel.cards .carousel-inner .carousel-item .card:nth-child(3n) {
-    margin-right: 0;
+  .carousel.cards .carousel-inner .carousel-item .card-items {
+    display: flex;
+    column-gap: 24px;
+    align-items: stretch;
   }
 }
 

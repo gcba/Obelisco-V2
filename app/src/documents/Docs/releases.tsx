@@ -19,6 +19,23 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
+      title: 'Versión 1.8.2',
+      firstTitle: true,
+      content: (
+        <ul className="docs-list">
+          <p>La versión 1.8.2 contiene lo siguiente: </p>
+          <li>
+            Se agrega la clase <code>card-items</code> al componente carrusel para asegurar la correcta visualización de
+            la altura de las tarjetas.
+          </li>
+          <li>
+            Se corrigieron los <code>code views</code> de los componentes y los redireccionamientos de las URLs dentro
+            del sitio web.
+          </li>
+        </ul>
+      ),
+    },
+    {
       title: 'Versión 1.8.1',
       firstTitle: true,
       content: (
@@ -28,7 +45,7 @@ const ReleasesComponents: React.FC = () => {
             Se modifica la variante{' '}
             <a href="https://gcba.github.io/Obelisco-V2/components/highlighted#section-dev-2">Destado Conjunto</a>, del
             componente Destacado. En{' '}
-            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-12">
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-13">
               Cambios en componentes
             </a>
             , se encuentran las modificaciones.

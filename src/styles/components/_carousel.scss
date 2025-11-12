@@ -228,7 +228,7 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
 
   // el &.cards, hace que solo aplique a las clases .card dentro de .carousel
   &.cards {
-    @media (width < 576px) {
+    @media (width < 768px) {
       .carousel-inner {
         display: flex;
         flex-wrap: nowrap;
@@ -277,7 +277,9 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
         }
       }
     }
+  }
 
+  @media (width >= 768px) {
     &.cards {
       padding: 24px 32px;
 
@@ -298,9 +300,7 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
         }
       }
     }
-  }
 
-  @media (width >= 992px) {
     &:has(.title > a) {
       padding-bottom: 12px;
 
@@ -310,6 +310,14 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
       }
     }
 
+    .title {
+      a {
+        position: unset;
+      }
+    }
+  }
+
+  @media (width >= 992px) {
     .carousel-inner {
       border-radius: 16px;
 
@@ -321,12 +329,6 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     &:not(.cards) {
       padding: 48px 129px 32px;
       @include carousel-desktop-navigation;
-    }
-
-    .title {
-      a {
-        position: unset;
-      }
     }
 
     .panel-horizontal-content {

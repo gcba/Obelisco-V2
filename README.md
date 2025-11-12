@@ -22,6 +22,8 @@ yarn add @gcba/obelisco-v2
 
 pnpm i @gcba/obelisco-v2
 
+bun install @gcba/obelisco-v2
+
 ```
 
 ## Actualización

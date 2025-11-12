@@ -282,7 +282,37 @@ const CarouselDocs: React.FC = () => {
                 <div className="carousel-inner responsive-scroll">
                   <div className="carousel-item active">
                     <div className="card-items">
-                      {colors.map((color, i) => (
+                      <div className="card">
+                        <Image
+                          src={`${basePath}/images/card-img-top.jpg`}
+                          className="card-img"
+                          alt="descripción de imagen"
+                          width={348}
+                          height={196}
+                        />
+                        <div className="card-body card-border-bottom-yellow">
+                          <h3 className="card-title">
+                            <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                          </h3>
+                          <p className="card-text">Descripción de la tarjeta</p>
+                        </div>
+                      </div>
+                      <div className="card">
+                        <Image
+                          src={`${basePath}/images/card-img-top.jpg`}
+                          className="card-img"
+                          alt="descripción de imagen"
+                          width={348}
+                          height={196}
+                        />
+                        <div className="card-body card-border-bottom-yellow">
+                          <h3 className="card-title">
+                            <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                          </h3>
+                          <p className="card-text">Descripción de la tarjeta</p>
+                        </div>
+                      </div>
+                      {/* {colors.map((color, i) => (
                         <div className="card" key={i}>
                           <Image
                             src={`${basePath}/images/card-img-top.jpg`}
@@ -298,7 +328,7 @@ const CarouselDocs: React.FC = () => {
                             <p className="card-text">Descripción de la tarjeta</p>
                           </div>
                         </div>
-                      ))}
+                      ))} */}
                     </div>
                   </div>
                   <div className="carousel-item">
@@ -381,6 +411,451 @@ const CarouselDocs: React.FC = () => {
                   className="carousel-control-next"
                   type="button"
                   data-bs-target="#carousel-cards"
+                  data-bs-slide="next"
+                >
+                  <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span className="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </ZoomContainer>
+          </div>
+        </CodeBox>
+      ),
+    },
+    {
+      subtitle: 'Con fondo claro',
+      content: (
+        <CodeBox codeHTML={CAROUSEL_CARDS}>
+          <div className="container">
+            <ZoomContainer>
+              <div id="carousel-cards-eventos" className="carousel cards slide">
+                <div className="title">
+                  <h4 className="m-0">Encabezado de la seccion</h4>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    Enlace predeterminado
+                  </a>
+                </div>
+
+                <div className="carousel-inner responsive-scroll">
+                  <div className="carousel-item active">
+                    <div className="card-items">
+                      <div className="card card-eventos">
+                        <Image
+                          alt="descripción de imagen"
+                          loading="lazy"
+                          width="348"
+                          height="196"
+                          decoding="async"
+                          data-nimg="1"
+                          className="card-img"
+                          src="/Obelisco-V2/images/card-img-top.jpg"
+                        />
+                        <div className="card-body">
+                          <p className="card-headline">TIPO DE EVENTO</p>
+                          <div className="mb-3">
+                            <span className="badge badge-default">Etiqueta</span>
+                            <span className="badge badge-default">Tipo de público</span>
+                          </div>
+                          <h3 className="card-title">
+                            <a
+                              href="#"
+                              className="card-title-link ellipsis-2"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              Este es el título del evento que puede contener 2 líneas de texto
+                            </a>
+                          </h3>
+                          <p className="card-text ellipsis-4">
+                            Esta es la descripción del evento que puede contener hasta 4 líneas de texto. Cuando la
+                            descripción se excede de este límite, el texto se trunca y aparece el
+                          </p>
+                          <div className="card-info">
+                            <div className="pt-2">
+                              <small>
+                                <span className="material-symbols-rounded o-icon">calendar_today</span>Lun 01/1
+                              </small>
+                              <small>
+                                <span className="material-symbols-rounded o-icon">schedule</span>17 | 18 | 19 hs
+                              </small>
+                              <small>
+                                <span className="material-symbols-rounded o-icon">location_on</span>Ubicación del evento
+                              </small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="card card-eventos">
+                        <Image
+                          alt="descripción de imagen"
+                          loading="lazy"
+                          width="348"
+                          height="196"
+                          decoding="async"
+                          data-nimg="1"
+                          className="card-img"
+                          src="/Obelisco-V2/images/card-img-top.jpg"
+                        />
+                        <div className="card-body">
+                          <p className="card-headline">TIPO DE EVENTO</p>
+                          <div className="mb-3">
+                            <span className="badge badge-default">Etiqueta</span>
+                            <span className="badge badge-default">Tipo de público</span>
+                          </div>
+                          <h3 className="card-title">
+                            <a
+                              href="#"
+                              className="card-title-link ellipsis-2"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              Este es el título del evento que puede contener 2 líneas de texto
+                            </a>
+                          </h3>
+                          <p className="card-text ellipsis-4">
+                            Esta es la descripción del evento que puede contener hasta 4 líneas de texto. Cuando la
+                            descripción se excede de este límite, el texto se trunca y aparece el
+                          </p>
+                          <div className="card-info">
+                            <div className="pt-2">
+                              <small>
+                                <span className="material-symbols-rounded o-icon">calendar_today</span>Lun 01/1
+                              </small>
+                              <small>
+                                <span className="material-symbols-rounded o-icon">schedule</span>17 | 18 | 19 hs
+                              </small>
+                              <small>
+                                <span className="material-symbols-rounded o-icon">location_on</span>Ubicación del evento
+                              </small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="carousel-item">
+                    <div className="card-items">
+                      <div className="card card-eventos">
+                        <Image
+                          alt="descripción de imagen"
+                          loading="lazy"
+                          width="348"
+                          height="196"
+                          decoding="async"
+                          data-nimg="1"
+                          className="card-img"
+                          src="/Obelisco-V2/images/card-img-top.jpg"
+                        />
+                        <div className="card-body">
+                          <p className="card-headline">TIPO DE EVENTO</p>
+                          <div className="mb-3">
+                            <span className="badge badge-default">Etiqueta</span>
+                            <span className="badge badge-default">Tipo de público</span>
+                          </div>
+                          <h3 className="card-title">
+                            <a
+                              href="#"
+                              className="card-title-link ellipsis-2"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              Este es el título del evento que puede contener 2 líneas de texto
+                            </a>
+                          </h3>
+                          <p className="card-text ellipsis-4">
+                            Esta es la descripción del evento que puede contener hasta 4 líneas de texto. Cuando la
+                            descripción se excede de este límite, el texto se trunca y aparece el
+                          </p>
+                          <div className="card-info">
+                            <div className="pt-2">
+                              <small>
+                                <span className="material-symbols-rounded o-icon">calendar_today</span>Lun 01/1
+                              </small>
+                              <small>
+                                <span className="material-symbols-rounded o-icon">schedule</span>17 | 18 | 19 hs
+                              </small>
+                              <small>
+                                <span className="material-symbols-rounded o-icon">location_on</span>Ubicación del evento
+                              </small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="card card-eventos">
+                        <Image
+                          alt="descripción de imagen"
+                          loading="lazy"
+                          width="348"
+                          height="196"
+                          decoding="async"
+                          data-nimg="1"
+                          className="card-img"
+                          src="/Obelisco-V2/images/card-img-top.jpg"
+                        />
+                        <div className="card-body">
+                          <p className="card-headline">TIPO DE EVENTO</p>
+                          <div className="mb-3">
+                            <span className="badge badge-default">Etiqueta</span>
+                            <span className="badge badge-default">Tipo de público</span>
+                          </div>
+                          <h3 className="card-title">
+                            <a
+                              href="#"
+                              className="card-title-link ellipsis-2"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              Este es el título del evento que puede contener 2 líneas de texto
+                            </a>
+                          </h3>
+                          <p className="card-text ellipsis-4">
+                            Esta es la descripción del evento que puede contener hasta 4 líneas de texto. Cuando la
+                            descripción se excede de este límite, el texto se trunca y aparece el
+                          </p>
+                          <div className="card-info">
+                            <div className="pt-2">
+                              <small>
+                                <span className="material-symbols-rounded o-icon">calendar_today</span>Lun 01/1
+                              </small>
+                              <small>
+                                <span className="material-symbols-rounded o-icon">schedule</span>17 | 18 | 19 hs
+                              </small>
+                              <small>
+                                <span className="material-symbols-rounded o-icon">location_on</span>Ubicación del evento
+                              </small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="card card-eventos">
+                        <Image
+                          alt="descripción de imagen"
+                          loading="lazy"
+                          width="348"
+                          height="196"
+                          decoding="async"
+                          data-nimg="1"
+                          className="card-img"
+                          src="/Obelisco-V2/images/card-img-top.jpg"
+                        />
+                        <div className="card-body">
+                          <p className="card-headline">TIPO DE EVENTO</p>
+                          <div className="mb-3">
+                            <span className="badge badge-default">Etiqueta</span>
+                            <span className="badge badge-default">Tipo de público</span>
+                          </div>
+                          <h3 className="card-title">
+                            <a
+                              href="#"
+                              className="card-title-link ellipsis-2"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              Este es el título del evento que puede contener 2 líneas de texto
+                            </a>
+                          </h3>
+                          <p className="card-text ellipsis-4">
+                            Esta es la descripción del evento que puede contener hasta 4 líneas de texto. Cuando la
+                            descripción se excede de este límite, el texto se trunca y aparece el
+                          </p>
+                          <div className="card-info">
+                            <div className="pt-2">
+                              <small>
+                                <span className="material-symbols-rounded o-icon">calendar_today</span>Lun 01/1
+                              </small>
+                              <small>
+                                <span className="material-symbols-rounded o-icon">schedule</span>17 | 18 | 19 hs
+                              </small>
+                              <small>
+                                <span className="material-symbols-rounded o-icon">location_on</span>Ubicación del evento
+                              </small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="carousel-item">
+                    <div className="card-items">
+                      <div className="card card-eventos">
+                        <Image
+                          alt="descripción de imagen"
+                          loading="lazy"
+                          width="348"
+                          height="196"
+                          decoding="async"
+                          data-nimg="1"
+                          className="card-img"
+                          src="/Obelisco-V2/images/card-img-top.jpg"
+                        />
+                        <div className="card-body">
+                          <p className="card-headline">TIPO DE EVENTO</p>
+                          <div className="mb-3">
+                            <span className="badge badge-default">Etiqueta</span>
+                            <span className="badge badge-default">Tipo de público</span>
+                          </div>
+                          <h3 className="card-title">
+                            <a
+                              href="#"
+                              className="card-title-link ellipsis-2"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              Este es el título del evento que puede contener 2 líneas de texto
+                            </a>
+                          </h3>
+                          <p className="card-text ellipsis-4">
+                            Esta es la descripción del evento que puede contener hasta 4 líneas de texto. Cuando la
+                            descripción se excede de este límite, el texto se trunca y aparece el
+                          </p>
+                          <div className="card-info">
+                            <div className="pt-2">
+                              <small>
+                                <span className="material-symbols-rounded o-icon">calendar_today</span>Lun 01/1
+                              </small>
+                              <small>
+                                <span className="material-symbols-rounded o-icon">schedule</span>17 | 18 | 19 hs
+                              </small>
+                              <small>
+                                <span className="material-symbols-rounded o-icon">location_on</span>Ubicación del evento
+                              </small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="card card-eventos">
+                        <Image
+                          alt="descripción de imagen"
+                          loading="lazy"
+                          width="348"
+                          height="196"
+                          decoding="async"
+                          data-nimg="1"
+                          className="card-img"
+                          src="/Obelisco-V2/images/card-img-top.jpg"
+                        />
+                        <div className="card-body">
+                          <p className="card-headline">TIPO DE EVENTO</p>
+                          <div className="mb-3">
+                            <span className="badge badge-default">Etiqueta</span>
+                            <span className="badge badge-default">Tipo de público</span>
+                          </div>
+                          <h3 className="card-title">
+                            <a
+                              href="#"
+                              className="card-title-link ellipsis-2"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              Este es el título del evento que puede contener 2 líneas de texto
+                            </a>
+                          </h3>
+                          <p className="card-text ellipsis-4">
+                            Esta es la descripción del evento que puede contener hasta 4 líneas de texto. Cuando la
+                            descripción se excede de este límite, el texto se trunca y aparece el
+                          </p>
+                          <div className="card-info">
+                            <div className="pt-2">
+                              <small>
+                                <span className="material-symbols-rounded o-icon">calendar_today</span>Lun 01/1
+                              </small>
+                              <small>
+                                <span className="material-symbols-rounded o-icon">schedule</span>17 | 18 | 19 hs
+                              </small>
+                              <small>
+                                <span className="material-symbols-rounded o-icon">location_on</span>Ubicación del evento
+                              </small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="card card-eventos">
+                        <Image
+                          alt="descripción de imagen"
+                          loading="lazy"
+                          width="348"
+                          height="196"
+                          decoding="async"
+                          data-nimg="1"
+                          className="card-img"
+                          src="/Obelisco-V2/images/card-img-top.jpg"
+                        />
+                        <div className="card-body">
+                          <p className="card-headline">TIPO DE EVENTO</p>
+                          <div className="mb-3">
+                            <span className="badge badge-default">Etiqueta</span>
+                            <span className="badge badge-default">Tipo de público</span>
+                          </div>
+                          <h3 className="card-title">
+                            <a
+                              href="#"
+                              className="card-title-link ellipsis-2"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              Este es el título del evento que puede contener 2 líneas de texto
+                            </a>
+                          </h3>
+                          <p className="card-text ellipsis-4">
+                            Esta es la descripción del evento que puede contener hasta 4 líneas de texto. Cuando la
+                            descripción se excede de este límite, el texto se trunca y aparece el
+                          </p>
+                          <div className="card-info">
+                            <div className="pt-2">
+                              <small>
+                                <span className="material-symbols-rounded o-icon">calendar_today</span>Lun 01/1
+                              </small>
+                              <small>
+                                <span className="material-symbols-rounded o-icon">schedule</span>17 | 18 | 19 hs
+                              </small>
+                              <small>
+                                <span className="material-symbols-rounded o-icon">location_on</span>Ubicación del evento
+                              </small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      y
+                    </div>
+                  </div>
+                </div>
+
+                <div className="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carousel-cards-eventos"
+                    data-bs-slide-to="0"
+                    className="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel-cards-eventos"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel-cards-eventos"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+
+                <button
+                  className="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel-cards-eventos"
+                  data-bs-slide="prev"
+                >
+                  <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span className="visually-hidden">Anterior</span>
+                </button>
+                <button
+                  className="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel-cards-eventos"
                   data-bs-slide="next"
                 >
                   <span className="carousel-control-next-icon" aria-hidden="true"></span>

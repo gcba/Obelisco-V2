@@ -159,9 +159,9 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
       max-width: 100%;
       row-gap: 24px;
 
-			img {
-				max-width: 100%;
-			}
+      img {
+        max-width: 100%;
+      }
 
       .panel-footer {
         a {
@@ -169,9 +169,9 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
         }
       }
 
-			img {
-				max-width: 100%;
-			}
+      img {
+        max-width: 100%;
+      }
     }
   }
 
@@ -190,8 +190,35 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     }
   }
 
+  // el &.cards, hace que solo aplique a las clases .card dentro de .carousel
   &.cards {
-    // Version mobile, se usa el media query para evirar romper el funcionamiento del carousel
+    // Breakpoint lg = 992
+    @media (width >= 992px) {
+      // Cuando son 2 div.cards
+      .carousel-inner {
+        .carousel-item {
+          .card-items {
+            display: flex;
+
+            // Cuando son 2 div.cards
+            &:has(.card:nth-child(2):last-child) {
+              justify-content: center;
+
+              .card {
+                flex: 0 0 348px;
+                max-width: 348px;
+              }
+            }
+            // Sigue el comportamiento por defecto en 3 div.cards
+            .card {
+              flex: 1;
+              min-width: 0;
+            }
+          }
+        }
+      }
+    }
+
     @media (width < 992px) {
       .carousel-inner {
         display: flex;
@@ -202,7 +229,7 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
         align-items: stretch;
 
         .carousel-item {
-          display: contents;
+          display: contents; // ¿Que hace esto?
 
           .card-items {
             display: contents;

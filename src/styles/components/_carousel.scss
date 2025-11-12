@@ -31,16 +31,47 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
   }
 }
 
+@mixin carousel-desktop-navigation {
+  .carousel-indicators {
+    justify-content: center;
+    height: auto;
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    top: 50%;
+    bottom: auto;
+    width: 64px;
+    height: 64px;
+
+    .carousel-control-prev-icon {
+      width: 48px;
+      height: 48px;
+    }
+
+    .carousel-control-next-icon {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  .carousel-control-prev {
+    left: 28px;
+    right: auto;
+  }
+
+  .carousel-control-next {
+    right: 28px;
+    left: auto;
+  }
+}
+
 .carousel {
   padding: 24px 16px;
   background-color: $light;
   display: flex;
   flex-direction: column;
   row-gap: 24px;
-
-  &:has(.title > a) {
-    padding-bottom: 64px;
-  }
 
   .carousel-inner {
     border-radius: 8px;
@@ -151,6 +182,15 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     }
   }
 
+  &:has(.title > a) {
+    padding-bottom: 64px;
+
+    .carousel-control-next,
+    .carousel-control-prev {
+      bottom: 52px;
+    }
+  }
+
   .panel-horizontal-content {
     background-color: transparent;
 
@@ -158,10 +198,6 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
       padding: 0;
       max-width: 100%;
       row-gap: 24px;
-
-      img {
-        max-width: 100%;
-      }
 
       .panel-footer {
         a {
@@ -192,7 +228,7 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
 
   // el &.cards, hace que solo aplique a las clases .card dentro de .carousel
   &.cards {
-    @media (width < 992px) {
+    @media (width < 576px) {
       .carousel-inner {
         display: flex;
         flex-wrap: nowrap;
@@ -244,11 +280,35 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
 
     &.cards {
       padding: 24px 32px;
+
+      .carousel-inner {
+        overflow-x: hidden;
+
+        .carousel-item {
+          .card-items {
+            display: flex;
+            column-gap: 24px;
+            align-items: stretch;
+            justify-content: start;
+
+            .card {
+              max-width: 33%;
+            }
+          }
+        }
+      }
     }
   }
 
   @media (width >= 992px) {
-    padding: 48px 129px 32px;
+    &:has(.title > a) {
+      padding-bottom: 12px;
+
+      .carousel-control-next,
+      .carousel-control-prev {
+        bottom: 6px;
+      }
+    }
 
     .carousel-inner {
       border-radius: 16px;
@@ -258,37 +318,9 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
       }
     }
 
-    .carousel-indicators {
-      justify-content: center;
-      height: auto;
-    }
-
-    .carousel-control-next,
-    .carousel-control-prev {
-      top: 50%;
-      bottom: auto;
-      width: 64px;
-      height: 64px;
-
-      .carousel-control-prev-icon {
-        width: 48px;
-        height: 48px;
-      }
-
-      .carousel-control-next-icon {
-        width: 48px;
-        height: 48px;
-      }
-    }
-
-    .carousel-control-prev {
-      left: 28px;
-      right: auto;
-    }
-
-    .carousel-control-next {
-      right: 28px;
-      left: auto;
+    &:not(.cards) {
+      padding: 48px 129px 32px;
+      @include carousel-desktop-navigation;
     }
 
     .title {
@@ -309,26 +341,12 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
         }
       }
     }
+  }
 
+  @media (width >= 1400px) {
     &.cards {
       padding: 48px 129px 32px;
-
-      .carousel-inner {
-        overflow-x: hidden;
-
-        .carousel-item {
-          .card-items {
-            display: flex;
-            column-gap: 24px;
-            align-items: stretch;
-						justify-content: start;
-
-						.card {
-							max-width: 33%;
-						}
-          }
-        }
-      }
+      @include carousel-desktop-navigation;
     }
   }
 }

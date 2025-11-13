@@ -209,6 +209,29 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
         max-width: 100%;
       }
     }
+
+    @media (width >= 576px) {
+      .panel-horizontal {
+        .panel-footer {
+          a {
+            width: auto;
+          }
+        }
+      }
+    }
+
+    @media (width >= 992px) {
+      padding: 0;
+
+      .panel-horizontal {
+        flex-direction: row-reverse;
+        align-items: center;
+
+        img {
+          max-width: 50%;
+        }
+      }
+    }
   }
 
   &.dark {
@@ -266,16 +289,6 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
           left: 32px;
         }
       }
-
-      .panel-horizontal-content {
-        .panel-horizontal {
-          .panel-footer {
-            a {
-              width: auto;
-            }
-          }
-        }
-      }
     }
 
     @media (width >= 768px) {
@@ -319,19 +332,6 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
 
         .carousel-item {
           padding: 0 8px;
-        }
-      }
-
-      .panel-horizontal-content {
-        padding: 0;
-
-        .panel-horizontal {
-          flex-direction: row-reverse;
-          align-items: center;
-
-          img {
-            max-width: 50%;
-          }
         }
       }
     }

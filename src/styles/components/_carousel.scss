@@ -257,32 +257,29 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
         display: none;
       }
     }
-  }
 
-  @media (width >= 576px) {
-    padding: 32px;
+    @media (width >= 576px) {
+      padding: 32px;
 
-    .title {
-      a {
-        left: 32px;
+      .title {
+        a {
+          left: 32px;
+        }
       }
-    }
 
-    .panel-horizontal-content {
-      .panel-horizontal {
-        .panel-footer {
-          a {
-            width: auto;
+      .panel-horizontal-content {
+        .panel-horizontal {
+          .panel-footer {
+            a {
+              width: auto;
+            }
           }
         }
       }
     }
-  }
 
-  @media (width >= 768px) {
-    &.cards {
+    @media (width >= 768px) {
       padding: 24px 32px;
-
       .carousel-inner {
         overflow-x: hidden;
 
@@ -291,7 +288,7 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
             display: flex;
             column-gap: 24px;
             align-items: stretch;
-            justify-content: start;
+            justify-content: center;
 
             .card {
               max-width: 33%;
@@ -299,56 +296,54 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
           }
         }
       }
-    }
 
-    &:has(.title > a) {
-      padding-bottom: 12px;
+      &:has(.title > a) {
+        padding-bottom: 12px;
 
-      .carousel-control-next,
-      .carousel-control-prev {
-        bottom: 6px;
+        .carousel-control-next,
+        .carousel-control-prev {
+          bottom: 6px;
+        }
       }
-    }
 
-    .title {
-      a {
-        position: unset;
-      }
-    }
-  }
-
-  @media (width >= 992px) {
-    .carousel-inner {
-      border-radius: 16px;
-
-      .carousel-item {
-        padding: 0 8px;
-      }
-    }
-
-    &:not(.cards) {
-      padding: 48px 129px 32px;
-      @include carousel-desktop-navigation;
-    }
-
-    .panel-horizontal-content {
-      padding: 0;
-
-      .panel-horizontal {
-        flex-direction: row-reverse;
-        align-items: center;
-
-        img {
-          max-width: 50%;
+      .title {
+        a {
+          position: unset;
         }
       }
     }
-  }
 
-  @media (width >= 1400px) {
-    &.cards {
+    @media (width >= 992px) {
+      .carousel-inner {
+        border-radius: 16px;
+
+        .carousel-item {
+          padding: 0 8px;
+        }
+      }
+
+      .panel-horizontal-content {
+        padding: 0;
+
+        .panel-horizontal {
+          flex-direction: row-reverse;
+          align-items: center;
+
+          img {
+            max-width: 50%;
+          }
+        }
+      }
+    }
+
+    @media (width >= 1400px) {
       padding: 48px 129px 32px;
       @include carousel-desktop-navigation;
     }
+  }
+
+  &:not(.cards) {
+    padding: 48px 129px 32px;
+    @include carousel-desktop-navigation;
   }
 }

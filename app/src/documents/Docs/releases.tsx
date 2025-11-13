@@ -19,6 +19,20 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
+      title: 'Versión 1.8.3',
+      firstTitle: true,
+      content: (
+        <ul className="docs-list">
+          <p>La versión 1.8.3 contiene lo siguiente: </p>
+          <li>
+            Se corrige la visualización de Carrusel de Tarjetas, al ser menos de 3 por slide. Siendo 3 el máximo
+            permitido.
+          </li>
+          <li>Se corrige fix de Carrusel de Destacados en Desktop.</li>
+        </ul>
+      ),
+    },
+    {
       title: 'Versión 1.8.2',
       firstTitle: true,
       content: (

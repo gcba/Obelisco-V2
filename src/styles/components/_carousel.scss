@@ -293,6 +293,7 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
 
     @media (width >= 768px) {
       padding: 24px 32px;
+
       .carousel-inner {
         overflow-x: hidden;
 

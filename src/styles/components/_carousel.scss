@@ -32,7 +32,7 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
 }
 
 @mixin carousel-navigation-row {
-	padding: 48px 0 32px;
+  padding: 48px 0 32px;
 
   .carousel-indicators {
     justify-content: center;
@@ -69,38 +69,39 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
 }
 
 @mixin carousel-navigation-column {
-	padding: 24px 16px;
+  padding: 24px 16px;
 
-	.carousel-indicators {
-		justify-content: start;
-		height: 48px;
-	}
+  .carousel-indicators {
+    justify-content: start;
+    height: 48px;
+  }
 
-	.carousel-control-next,
-	.carousel-control-prev {
-		top: auto;
-		bottom: 12px;
-		width: 48px;
-		height: 48px;
+  .carousel-control-next,
+  .carousel-control-prev {
+    top: auto;
+    bottom: 12px;
+    width: 48px;
+    height: 48px;
 
-		.carousel-control-prev-icon, .carousel-control-next-icon {
-			width: 32px;
-			height: 32px;
-		}
-	}
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: 32px;
+      height: 32px;
+    }
+  }
 
-	.carousel-control-next {
-		right: 32px;
-	}
+  .carousel-control-next {
+    right: 32px;
+  }
 
-	.carousel-control-prev {
-		left: auto;
-		right: 100px;
-	}
+  .carousel-control-prev {
+    left: auto;
+    right: 100px;
+  }
 }
 
 @function container-alignment($max-width) {
-	@return calc((100% - #{$max-width}) / 2 + 0.75rem);
+  @return calc((100% - #{$max-width}) / 2 + 0.75rem);
 }
 
 .carousel {
@@ -187,7 +188,7 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     }
   }
 
-	@include carousel-navigation-column;
+  @include carousel-navigation-column;
 
   .title {
     display: flex;
@@ -323,21 +324,22 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
       }
     }
 
-		.responsive-scroll {
-			padding: 0;
-		}
+    .responsive-scroll {
+      padding: 0;
+    }
   }
 
-	$container-max-width: 720px;
+  $container-max-width: 720px;
   @media (width >= 992px) {
-		@include carousel-navigation-row;
-		.carousel-control-prev {
-			left: max(5px, calc(container-alignment($container-max-width) - 114px));
-		}
-	
-		.carousel-control-next {
-			right: max(5px, calc(container-alignment($container-max-width) - 114px));
-		}
+    @include carousel-navigation-row;
+
+    .carousel-control-prev {
+      left: max(5px, calc(container-alignment($container-max-width) - 114px));
+    }
+
+    .carousel-control-next {
+      right: max(5px, calc(container-alignment($container-max-width) - 114px));
+    }
 
     .carousel-inner {
       border-radius: 16px;
@@ -367,19 +369,21 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     }
   }
 
-	$container-max-width: 1140px;
+  $container-max-width: 1140px;
   @media (width >= 1200px) {
-		@include carousel-navigation-column;
-		.carousel-indicators {
-			padding-left: container-alignment($container-max-width);
-		}
-		.carousel-control-next {
-			right: max(22px, container-alignment($container-max-width));
-		}
-	
-		.carousel-control-prev {
-			right: max(86px, calc(container-alignment($container-max-width) + 64px));
-		}
+    @include carousel-navigation-column;
+
+    .carousel-indicators {
+      padding-left: container-alignment($container-max-width);
+    }
+
+    .carousel-control-next {
+      right: max(22px, container-alignment($container-max-width));
+    }
+
+    .carousel-control-prev {
+      right: max(86px, calc(container-alignment($container-max-width) + 64px));
+    }
 
     .carousel-inner {
       max-width: $container-max-width;
@@ -391,17 +395,18 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
   }
 
   @media (width >= 1400px) {
-		@include carousel-navigation-row;
-		.carousel-indicators {
-			padding-left: 0;
-		}
+    @include carousel-navigation-row;
 
-		.carousel-control-prev {
-			left: max(5px, calc(container-alignment($container-max-width) - 114px));
-		}
-	
-		.carousel-control-next {
-			right: max(5px, calc(container-alignment($container-max-width) - 114px));
-		}
+    .carousel-indicators {
+      padding-left: 0;
+    }
+
+    .carousel-control-prev {
+      left: max(5px, calc(container-alignment($container-max-width) - 114px));
+    }
+
+    .carousel-control-next {
+      right: max(5px, calc(container-alignment($container-max-width) - 114px));
+    }
   }
 }

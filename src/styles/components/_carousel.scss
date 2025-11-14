@@ -31,16 +31,47 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
   }
 }
 
+@mixin carousel-desktop-navigation {
+  .carousel-indicators {
+    justify-content: center;
+    height: auto;
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    top: 50%;
+    bottom: auto;
+    width: 64px;
+    height: 64px;
+
+    .carousel-control-prev-icon {
+      width: 48px;
+      height: 48px;
+    }
+
+    .carousel-control-next-icon {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  .carousel-control-prev {
+    left: 28px;
+    right: auto;
+  }
+
+  .carousel-control-next {
+    right: 28px;
+    left: auto;
+  }
+}
+
 .carousel {
   padding: 24px 16px;
   background-color: $light;
   display: flex;
   flex-direction: column;
   row-gap: 24px;
-
-  &:has(.title > a) {
-    padding-bottom: 64px;
-  }
 
   .carousel-inner {
     border-radius: 8px;
@@ -151,6 +182,15 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     }
   }
 
+  &:has(.title > a) {
+    padding-bottom: 64px;
+
+    .carousel-control-next,
+    .carousel-control-prev {
+      bottom: 52px;
+    }
+  }
+
   .panel-horizontal-content {
     background-color: transparent;
 
@@ -163,6 +203,10 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
         a {
           width: 100%;
         }
+      }
+
+      img {
+        max-width: 100%;
       }
     }
   }
@@ -182,9 +226,9 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     }
   }
 
+  // el &.cards, hace que solo aplique a las clases .card dentro de .carousel
   &.cards {
-    // Version mobile, se usa el media query para evirar romper el funcionamiento del carousel
-    @media (width < 992px) {
+    @media (width < 768px) {
       .carousel-inner {
         display: flex;
         flex-wrap: nowrap;
@@ -194,7 +238,7 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
         align-items: stretch;
 
         .carousel-item {
-          display: contents;
+          display: contents; // para poder ver el contenido de los hijos
 
           .card-items {
             display: contents;
@@ -233,60 +277,64 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
         }
       }
     }
-
-    &.cards {
-      padding: 24px 32px;
-    }
   }
 
-  @media (width >= 992px) {
-    padding: 48px 129px 32px;
+  @media (width >= 768px) {
+    &.cards {
+      padding: 24px 32px;
 
-    .carousel-inner {
-      border-radius: 16px;
+      .carousel-inner {
+        overflow-x: hidden;
 
-      .carousel-item {
-        padding: 0 8px;
+        .carousel-item {
+          .card-items {
+            display: flex;
+            column-gap: 24px;
+            align-items: stretch;
+            justify-content: center;
+
+            .card {
+              max-width: 33%;
+            }
+          }
+        }
       }
     }
 
-    .carousel-indicators {
-      justify-content: center;
-      height: auto;
-    }
+    &:has(.title > a) {
+      padding-bottom: 12px;
 
-    .carousel-control-next,
-    .carousel-control-prev {
-      top: 50%;
-      bottom: auto;
-      width: 64px;
-      height: 64px;
-
-      .carousel-control-prev-icon {
-        width: 48px;
-        height: 48px;
+      .carousel-control-next,
+      .carousel-control-prev {
+        bottom: 6px;
       }
-
-      .carousel-control-next-icon {
-        width: 48px;
-        height: 48px;
-      }
-    }
-
-    .carousel-control-prev {
-      left: 28px;
-      right: auto;
-    }
-
-    .carousel-control-next {
-      right: 28px;
-      left: auto;
     }
 
     .title {
       a {
         position: unset;
       }
+    }
+  }
+
+  @media (width >= 992px) {
+    .carousel-inner {
+      border-radius: 16px;
+      margin: 0 auto;
+      max-width: 720px;
+
+      .carousel-item {
+        padding: 0 8px;
+      }
+    }
+
+    .title {
+      padding-left: calc((100% - 720px) / 2 + 0.75rem) !important;
+    }
+
+    &:not(.cards) {
+      padding: 48px 129px 32px;
+      @include carousel-desktop-navigation;
     }
 
     .panel-horizontal-content {
@@ -301,21 +349,57 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
         }
       }
     }
+  }
 
+  @media (width >= 1200px) {
+    .carousel-inner {
+      max-width: 1140px;
+    }
+
+    .title {
+      padding-left: calc((100% - 1140px) / 2 + 0.75rem) !important;
+    }
+
+    // TODO: alineado de botones para machear container
+    // &:not(.cards) {
+    // 	.carousel-indicators {
+    // 		justify-content: start;
+    // 		height: 48px;
+    // 	}
+
+    // 	.carousel-control-next,
+    // 	.carousel-control-prev {
+    // 		top: auto;
+    // 		bottom: 12px;
+    // 		width: 48px;
+    // 		height: 48px;
+
+    // 		.carousel-control-prev-icon {
+    // 			width: 32px;
+    // 			height: 32px;
+    // 		}
+
+    // 		.carousel-control-next-icon {
+    // 			width: 32px;
+    // 			height: 32px;
+    // 		}
+    // 	}
+
+    // 	.carousel-control-next {
+    // 		right: 16px;
+    // 	}
+
+    // 	.carousel-control-prev {
+    // 		left: auto;
+    // 		right: 84px;
+    // 	}
+    // }
+  }
+
+  @media (width >= 1400px) {
     &.cards {
       padding: 48px 129px 32px;
-
-      .carousel-inner {
-        overflow-x: hidden;
-
-        .carousel-item {
-          .card-items {
-            display: flex;
-            column-gap: 24px;
-            align-items: stretch;
-          }
-        }
-      }
+      @include carousel-desktop-navigation;
     }
   }
 }

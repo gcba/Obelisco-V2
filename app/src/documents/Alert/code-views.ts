@@ -170,3 +170,15 @@ export const SYSTEM_ALERT = `// <!-- Alerta sistema Info -->
 		</ol>
   </div>
 `;
+
+export const ALERTAS_ACCESSIBILTY = `<div class="alert alert-info" role="alert">
+  Esta es la descripción de una alerta de información.
+</div>
+`;
+
+export const ALERTAS_ACCESSIBILTY_2 = `<div class="alert alert-info" role="alert" aria-labelledby="alertTitulo" 
+aria-describedby="alertDesc">
+  <h4 id="alertTitulo">Actualización del sistema</h4>
+  <p id="alertDesc">El servicio estará disponible nuevamente a las 14:00.</p>
+</div>
+`;

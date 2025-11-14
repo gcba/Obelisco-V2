@@ -19420,23 +19420,6 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
 .carousel .panel-horizontal-content .panel-horizontal img {
   max-width: 100%;
 }
-@media (width >= 576px) {
-  .carousel .panel-horizontal-content .panel-horizontal .panel-footer a {
-    width: auto;
-  }
-}
-@media (width >= 992px) {
-  .carousel .panel-horizontal-content {
-    padding: 0;
-  }
-  .carousel .panel-horizontal-content .panel-horizontal {
-    flex-direction: row-reverse;
-    align-items: center;
-  }
-  .carousel .panel-horizontal-content .panel-horizontal img {
-    max-width: 50%;
-  }
-}
 .carousel.dark {
   background-color: #002733;
   color: #ffffff;
@@ -19473,11 +19456,14 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
   }
 }
 @media (width >= 576px) {
-  .carousel.cards {
+  .carousel {
     padding: 32px;
   }
-  .carousel.cards .title a {
+  .carousel .title a {
     left: 32px;
+  }
+  .carousel .panel-horizontal-content .panel-horizontal .panel-footer a {
+    width: auto;
   }
 }
 @media (width >= 768px) {
@@ -19496,23 +19482,78 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
   .carousel.cards .carousel-inner .carousel-item .card-items .card {
     max-width: 33%;
   }
-  .carousel.cards:has(.title > a) {
+  .carousel:has(.title > a) {
     padding-bottom: 12px;
   }
-  .carousel.cards:has(.title > a) .carousel-control-next,
-  .carousel.cards:has(.title > a) .carousel-control-prev {
+  .carousel:has(.title > a) .carousel-control-next,
+  .carousel:has(.title > a) .carousel-control-prev {
     bottom: 6px;
   }
-  .carousel.cards .title a {
+  .carousel .title a {
     position: unset;
   }
 }
 @media (width >= 992px) {
-  .carousel.cards .carousel-inner {
+  .carousel .carousel-inner {
     border-radius: 16px;
+    margin: 0 auto;
+    max-width: 720px;
   }
-  .carousel.cards .carousel-inner .carousel-item {
+  .carousel .carousel-inner .carousel-item {
     padding: 0 8px;
+  }
+  .carousel .title {
+    padding-left: calc((100% - 720px) / 2 + 0.75rem) !important;
+  }
+  .carousel:not(.cards) {
+    padding: 48px 129px 32px;
+  }
+  .carousel:not(.cards) .carousel-indicators {
+    justify-content: center;
+    height: auto;
+  }
+  .carousel:not(.cards) .carousel-control-next,
+  .carousel:not(.cards) .carousel-control-prev {
+    top: 50%;
+    bottom: auto;
+    width: 64px;
+    height: 64px;
+  }
+  .carousel:not(.cards) .carousel-control-next .carousel-control-prev-icon,
+  .carousel:not(.cards) .carousel-control-prev .carousel-control-prev-icon {
+    width: 48px;
+    height: 48px;
+  }
+  .carousel:not(.cards) .carousel-control-next .carousel-control-next-icon,
+  .carousel:not(.cards) .carousel-control-prev .carousel-control-next-icon {
+    width: 48px;
+    height: 48px;
+  }
+  .carousel:not(.cards) .carousel-control-prev {
+    left: 28px;
+    right: auto;
+  }
+  .carousel:not(.cards) .carousel-control-next {
+    right: 28px;
+    left: auto;
+  }
+  .carousel .panel-horizontal-content {
+    padding: 0;
+  }
+  .carousel .panel-horizontal-content .panel-horizontal {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .carousel .panel-horizontal-content .panel-horizontal img {
+    max-width: 50%;
+  }
+}
+@media (width >= 1200px) {
+  .carousel .carousel-inner {
+    max-width: 1140px;
+  }
+  .carousel .title {
+    padding-left: calc((100% - 1140px) / 2 + 0.75rem) !important;
   }
 }
 @media (width >= 1400px) {
@@ -19548,38 +19589,6 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
     right: 28px;
     left: auto;
   }
-}
-.carousel:not(.cards) {
-  padding: 48px 129px 32px;
-}
-.carousel:not(.cards) .carousel-indicators {
-  justify-content: center;
-  height: auto;
-}
-.carousel:not(.cards) .carousel-control-next,
-.carousel:not(.cards) .carousel-control-prev {
-  top: 50%;
-  bottom: auto;
-  width: 64px;
-  height: 64px;
-}
-.carousel:not(.cards) .carousel-control-next .carousel-control-prev-icon,
-.carousel:not(.cards) .carousel-control-prev .carousel-control-prev-icon {
-  width: 48px;
-  height: 48px;
-}
-.carousel:not(.cards) .carousel-control-next .carousel-control-next-icon,
-.carousel:not(.cards) .carousel-control-prev .carousel-control-next-icon {
-  width: 48px;
-  height: 48px;
-}
-.carousel:not(.cards) .carousel-control-prev {
-  left: 28px;
-  right: auto;
-}
-.carousel:not(.cards) .carousel-control-next {
-  right: 28px;
-  left: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

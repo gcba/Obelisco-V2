@@ -9,7 +9,7 @@ import LinkClient from '@/components/LinkClient';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
-import { LINK_DEFAULT, LINK_EXTERNAL, LINK_DOWNLOAD, LINK_ACCESS, LINK_ACCESSIBILTY } from './code-views';
+import { LINK_DEFAULT, LINK_EXTERNAL, LINK_DOWNLOAD, LINK_ACCESS, LINK_ACCESSIBILITY } from './code-views';
 
 const LinkDocs: React.FC = () => {
   const SECTIONS_DEV = [
@@ -773,7 +773,7 @@ const LinkDocs: React.FC = () => {
             persona usuaria sobre adónde va y la acción que desencadena.
           </p>
           <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
-            {LINK_ACCESSIBILTY}
+            {LINK_ACCESSIBILITY}
           </SyntaxHighlighter>
         </>
       ),

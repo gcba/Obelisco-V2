@@ -540,7 +540,7 @@ export const DISPOSITION_SCROLL = `
 </div>
 `;
 
-export const TARJETAS_ACCESSIBILTY = `
+export const TARJETAS_ACCESSIBILITY = `
 <h2 class="sr-only">Encabezado de grupo de tarjetas</h2>
 <div class="container">
   <div class="card-deck max-cards-3 card-column">
@@ -553,7 +553,7 @@ export const TARJETAS_ACCESSIBILTY = `
 </div>
 `;
 
-export const TARJETAS_ACCESSIBILTY_2 = `
+export const TARJETAS_ACCESSIBILITY_2 = `
 <div class="card">
   <img class="card-img" src="/card-img-top.jpg" alt="Este es el texto descriptivo de la imagen." />
   <div class="card-body">

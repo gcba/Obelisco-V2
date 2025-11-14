@@ -16,8 +16,8 @@ import {
   HORIZONTAL_TEXT,
   HORIZONTAL_THEME,
   SCROLL_DISPOSITION,
-  TARJETAS_ACCESSIBILTY,
-  TARJETAS_ACCESSIBILTY_2,
+  TARJETAS_ACCESSIBILITY,
+  TARJETAS_ACCESSIBILITY_2,
   VERTICAL_AGENDA,
   VERTICAL_MISCELLANEA,
   VERTICAL_ICON,
@@ -1578,7 +1578,7 @@ const CardDocs: React.FC = () => {
             con la clase &quot;sr-only&quot;.
           </p>
           <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
-            {TARJETAS_ACCESSIBILTY}
+            {TARJETAS_ACCESSIBILITY}
           </SyntaxHighlighter>
         </>
       ),
@@ -1593,7 +1593,7 @@ const CardDocs: React.FC = () => {
             atributo <i>alt</i> debe estar vacío.
           </p>
           <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
-            {TARJETAS_ACCESSIBILTY_2}
+            {TARJETAS_ACCESSIBILITY_2}
           </SyntaxHighlighter>
         </>
       ),

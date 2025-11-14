@@ -10,7 +10,7 @@ import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
-import { PATTERNS_ACCESSIBILTY } from './code-views';
+import { PATTERNS_ACCESSIBILITY } from './code-views';
 
 const basePath = '/Obelisco-V2';
 
@@ -905,7 +905,7 @@ const PatternsComponents: React.FC = () => {
             sin problemas.
           </p>
           <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
-            {PATTERNS_ACCESSIBILTY}
+            {PATTERNS_ACCESSIBILITY}
           </SyntaxHighlighter>
         </>
       ),

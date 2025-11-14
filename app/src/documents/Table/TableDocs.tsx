@@ -10,7 +10,7 @@ import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import {
-  TABLE_ACCESSIBILTY,
+  TABLE_ACCESSIBILITY,
   TABLE_BUTTON,
   TABLE_BUTTON_ICON,
   TABLE_LINK,
@@ -1517,7 +1517,7 @@ const ACCESSIBILITY = [
         </p>
 
         <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
-          {TABLE_ACCESSIBILTY}
+          {TABLE_ACCESSIBILITY}
         </SyntaxHighlighter>
       </>
     ),

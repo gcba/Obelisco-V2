@@ -36,7 +36,7 @@ export const BREADCRUMB_DARK = `
     </nav>
 `;
 
-export const BREADCRUMB_ACCESSIBILTY = `    
+export const BREADCRUMB_ACCESSIBILITY = `    
     <nav aria-label="Ruta de navegación">
       <ol class="breadcrumb">
         ...

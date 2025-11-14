@@ -9,7 +9,7 @@ import CodeBox from '@/components/CodeBox';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
-import { FOOTER, FOOTER_ACCESSIBILTY, FOOTER_INDICATOR, FOOTER_LEGALS } from './code-views';
+import { FOOTER, FOOTER_ACCESSIBILITY, FOOTER_INDICATOR, FOOTER_LEGALS } from './code-views';
 
 const FooterDocs: React.FC = () => {
   const SECTIONS_DEV = [
@@ -639,7 +639,7 @@ const FooterDocs: React.FC = () => {
             bloques del pie de página.
           </p>
           <SyntaxHighlighter language="html" style={dracula} wrapLongLines className="mb-3">
-            {FOOTER_ACCESSIBILTY}
+            {FOOTER_ACCESSIBILITY}
           </SyntaxHighlighter>
         </>
       ),

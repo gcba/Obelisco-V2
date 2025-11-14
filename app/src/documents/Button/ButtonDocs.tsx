@@ -21,7 +21,7 @@ import {
   BUTTON_SPINNER,
   BUTTON_OUTLINE_SPINNER,
   BUTTON_ICON_XS,
-  BUTTON_ACCESSIBILTY,
+  BUTTON_ACCESSIBILITY,
 } from './code-views';
 
 const ButtonDocs: React.FC = () => {
@@ -1301,7 +1301,7 @@ const ButtonDocs: React.FC = () => {
             <i>(aria-label)</i> en el código con el texto descriptivo de la acción.
           </p>
           <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
-            {BUTTON_ACCESSIBILTY}
+            {BUTTON_ACCESSIBILITY}
           </SyntaxHighlighter>
         </>
       ),

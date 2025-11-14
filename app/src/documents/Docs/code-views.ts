@@ -1,4 +1,4 @@
-export const PATTERNS_ACCESSIBILTY = `    <form>
+export const PATTERNS_ACCESSIBILITY = `    <form>
       <div class="form-label-container">
         <label for="fullname" class="form-label">
             ...

@@ -184,7 +184,7 @@ export const BUTTON_ICON_XS = `
   <i class="bx bxs-download o-icon"></i>
 </button>
 `;
-export const BUTTON_ACCESSIBILTY = `<button type="button" class="btn btn-xs" aria-label="Editar">
+export const BUTTON_ACCESSIBILITY = `<button type="button" class="btn btn-xs" aria-label="Editar">
   <span class="material-symbols-rounded o-icon" aria-hidden="true">
     edit
   </span>

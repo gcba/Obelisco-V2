@@ -16,8 +16,8 @@ import {
   LIST_LINK_ALERT,
   WITH_DESCRIPTION_ALERT,
   SYSTEM_ALERT,
-  ALERTAS_ACCESSIBILTY,
-  ALERTAS_ACCESSIBILTY_2,
+  ALERTAS_ACCESSIBILITY,
+  ALERTAS_ACCESSIBILITY_2,
 } from './code-views';
 
 const AlertDocs: React.FC = () => {
@@ -831,7 +831,7 @@ const AlertDocs: React.FC = () => {
           </p>
 
           <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
-            {ALERTAS_ACCESSIBILTY}
+            {ALERTAS_ACCESSIBILITY}
           </SyntaxHighlighter>
 
           <p className="text-md mt-4 mb-3">
@@ -841,7 +841,7 @@ const AlertDocs: React.FC = () => {
           </p>
 
           <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
-            {ALERTAS_ACCESSIBILTY_2}
+            {ALERTAS_ACCESSIBILITY_2}
           </SyntaxHighlighter>
         </>
       ),

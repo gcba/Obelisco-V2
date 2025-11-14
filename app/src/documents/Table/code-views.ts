@@ -827,7 +827,7 @@ export const TABLE_BUTTON_ICON = `
 </div>
 `;
 
-export const TABLE_ACCESSIBILTY = `<div class="responsive-scroll" tabIndex="0">
+export const TABLE_ACCESSIBILITY = `<div class="responsive-scroll" tabIndex="0">
     <table class="table table-borderless" aria-describedby="Tabla">
         <thead>
             <tr>

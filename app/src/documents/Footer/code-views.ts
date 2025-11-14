@@ -364,7 +364,7 @@ export const FOOTER_INDICATOR = `<h2 class="sr-only">Navegación de pie de pági
   </div>
 </footer>`;
 
-export const FOOTER_ACCESSIBILTY = `<h2 class="sr-only">Navegación de pie de página</h2>
+export const FOOTER_ACCESSIBILITY = `<h2 class="sr-only">Navegación de pie de página</h2>
 <footer class="main-footer">  
           ...  
   <hr class="divider" />  

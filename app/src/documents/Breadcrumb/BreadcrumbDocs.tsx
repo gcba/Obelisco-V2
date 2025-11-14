@@ -8,7 +8,7 @@ import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 const basePath = '/Obelisco-V2';
 
-import { BREADCRUMB, BREADCRUMB_DARK, BREADCRUMB_ACCESSIBILTY } from './code-views';
+import { BREADCRUMB, BREADCRUMB_DARK, BREADCRUMB_ACCESSIBILITY } from './code-views';
 
 const BreadcrumbDocs: React.FC = () => {
   const SECTIONS_DEV = [
@@ -287,7 +287,7 @@ const BreadcrumbDocs: React.FC = () => {
             reconocidas independientemente de la forma en que la persona usuaria recorra la página.
           </p>
           <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
-            {BREADCRUMB_ACCESSIBILTY}
+            {BREADCRUMB_ACCESSIBILITY}
           </SyntaxHighlighter>
         </>
       ),

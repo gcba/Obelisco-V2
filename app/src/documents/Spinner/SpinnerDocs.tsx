@@ -10,8 +10,8 @@ import ComponentHeader from '@/components/Template/ComponentHeader';
 const basePath = '/Obelisco-V2';
 
 import {
-  SPINNER_ACCESSIBILTY,
-  SPINNER_ACCESSIBILTY2,
+  SPINNER_ACCESSIBILITY,
+  SPINNER_ACCESSIBILITY2,
   SPINNER_BLOCK,
   SPINNER_DESCRIPTION,
   SPINNER_SIZES,
@@ -412,7 +412,7 @@ const SpinnerDocs: React.FC = () => {
             hasta que finalice.
           </p>
           <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
-            {SPINNER_ACCESSIBILTY}
+            {SPINNER_ACCESSIBILITY}
           </SyntaxHighlighter>
         </>
       ),
@@ -431,7 +431,7 @@ const SpinnerDocs: React.FC = () => {
             <i>div</i>, para indicar el estado de carga que especifica la etiqueta <i>span</i>.
           </p>
           <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
-            {SPINNER_ACCESSIBILTY2}
+            {SPINNER_ACCESSIBILITY2}
           </SyntaxHighlighter>
         </>
       ),

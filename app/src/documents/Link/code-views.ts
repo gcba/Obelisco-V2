@@ -35,7 +35,7 @@ export const LINK_ACCESS = `
   </div>
 `;
 
-export const LINK_ACCESSIBILTY = `<a href="https://facebook.com/GCBA" aria-label="Ir a la página de Facebook del Gobierno de la Ciudad de Buenos Aires" target="_blank" rel="noopener noreferrer">
+export const LINK_ACCESSIBILITY = `<a href="https://facebook.com/GCBA" aria-label="Ir a la página de Facebook del Gobierno de la Ciudad de Buenos Aires" target="_blank" rel="noopener noreferrer">
   Facebook
 </a>
 `;

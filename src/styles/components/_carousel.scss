@@ -31,7 +31,9 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
   }
 }
 
-@mixin carousel-desktop-navigation {
+@mixin carousel-navigation-row {
+  padding: 48px 0 32px;
+
   .carousel-indicators {
     justify-content: center;
     height: auto;
@@ -66,8 +68,43 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
   }
 }
 
-.carousel {
+@mixin carousel-navigation-column {
   padding: 24px 16px;
+
+  .carousel-indicators {
+    justify-content: start;
+    height: 48px;
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    top: auto;
+    bottom: 12px;
+    width: 48px;
+    height: 48px;
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .carousel-control-next {
+    right: 32px;
+  }
+
+  .carousel-control-prev {
+    left: auto;
+    right: 100px;
+  }
+}
+
+@function container-alignment($max-width) {
+  @return calc((100% - #{$max-width}) / 2 + 0.75rem);
+}
+
+.carousel {
   background-color: $light;
   display: flex;
   flex-direction: column;
@@ -79,11 +116,9 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
 
   .carousel-indicators {
     position: relative;
-    justify-content: start;
     margin: 0;
     align-items: center;
     column-gap: 8px;
-    height: 48px;
 
     button {
       margin: 0;
@@ -102,8 +137,6 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
 
   .carousel-control-next,
   .carousel-control-prev {
-    top: auto;
-    bottom: 12px;
     z-index: 2;
     display: flex;
     align-items: center;
@@ -111,21 +144,15 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     border-radius: $border-radius-lg;
     border: none;
     outline: $outline-border;
-    width: 48px;
-    height: 48px;
 
     .carousel-control-prev-icon {
       background-image: none;
       content: $carousel-icon-left;
-      width: 32px;
-      height: 32px;
     }
 
     .carousel-control-next-icon {
       background-image: none;
       content: $carousel-icon-right;
-      width: 32px;
-      height: 32px;
     }
 
     &:focus {
@@ -161,14 +188,7 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     }
   }
 
-  .carousel-control-next {
-    right: 16px;
-  }
-
-  .carousel-control-prev {
-    left: auto;
-    right: 84px;
-  }
+  @include carousel-navigation-column;
 
   .title {
     display: flex;
@@ -184,11 +204,6 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
 
   &:has(.title > a) {
     padding-bottom: 64px;
-
-    .carousel-control-next,
-    .carousel-control-prev {
-      bottom: 52px;
-    }
   }
 
   .panel-horizontal-content {
@@ -281,8 +296,6 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
 
   @media (width >= 768px) {
     &.cards {
-      padding: 24px 32px;
-
       .carousel-inner {
         overflow-x: hidden;
 
@@ -302,12 +315,7 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     }
 
     &:has(.title > a) {
-      padding-bottom: 12px;
-
-      .carousel-control-next,
-      .carousel-control-prev {
-        bottom: 6px;
-      }
+      padding-bottom: 32px;
     }
 
     .title {
@@ -315,9 +323,24 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
         position: unset;
       }
     }
+
+    .responsive-scroll {
+      padding: 0;
+    }
   }
 
+  $container-max-width: 720px;
   @media (width >= 992px) {
+    @include carousel-navigation-row;
+
+    .carousel-control-prev {
+      left: max(5px, calc(container-alignment($container-max-width) - 114px));
+    }
+
+    .carousel-control-next {
+      right: max(5px, calc(container-alignment($container-max-width) - 114px));
+    }
+
     .carousel-inner {
       border-radius: 16px;
       margin: 0 auto;
@@ -329,12 +352,7 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     }
 
     .title {
-      padding-left: calc((100% - 720px) / 2 + 0.75rem) !important;
-    }
-
-    &:not(.cards) {
-      padding: 48px 129px 32px;
-      @include carousel-desktop-navigation;
+      padding-left: container-alignment($container-max-width);
     }
 
     .panel-horizontal-content {
@@ -351,55 +369,44 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     }
   }
 
+  $container-max-width: 1140px;
   @media (width >= 1200px) {
+    @include carousel-navigation-column;
+
+    .carousel-indicators {
+      padding-left: container-alignment($container-max-width);
+    }
+
+    .carousel-control-next {
+      right: max(22px, container-alignment($container-max-width));
+    }
+
+    .carousel-control-prev {
+      right: max(86px, calc(container-alignment($container-max-width) + 64px));
+    }
+
     .carousel-inner {
-      max-width: 1140px;
+      max-width: $container-max-width;
     }
 
     .title {
-      padding-left: calc((100% - 1140px) / 2 + 0.75rem) !important;
+      padding-left: container-alignment($container-max-width);
     }
-
-    // TODO: alineado de botones para machear container
-    // &:not(.cards) {
-    // 	.carousel-indicators {
-    // 		justify-content: start;
-    // 		height: 48px;
-    // 	}
-
-    // 	.carousel-control-next,
-    // 	.carousel-control-prev {
-    // 		top: auto;
-    // 		bottom: 12px;
-    // 		width: 48px;
-    // 		height: 48px;
-
-    // 		.carousel-control-prev-icon {
-    // 			width: 32px;
-    // 			height: 32px;
-    // 		}
-
-    // 		.carousel-control-next-icon {
-    // 			width: 32px;
-    // 			height: 32px;
-    // 		}
-    // 	}
-
-    // 	.carousel-control-next {
-    // 		right: 16px;
-    // 	}
-
-    // 	.carousel-control-prev {
-    // 		left: auto;
-    // 		right: 84px;
-    // 	}
-    // }
   }
 
   @media (width >= 1400px) {
-    &.cards {
-      padding: 48px 129px 32px;
-      @include carousel-desktop-navigation;
+    @include carousel-navigation-row;
+
+    .carousel-indicators {
+      padding-left: 0;
+    }
+
+    .carousel-control-prev {
+      left: max(5px, calc(container-alignment($container-max-width) - 114px));
+    }
+
+    .carousel-control-next {
+      right: max(5px, calc(container-alignment($container-max-width) - 114px));
     }
   }
 }

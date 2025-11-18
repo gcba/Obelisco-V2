@@ -383,7 +383,7 @@ const AlertDocs: React.FC = () => {
             className="img-fluid mb-2"
           />
 
-          <p className="text-sm">Estado de notificación para el componente Alertas.</p>
+          <p className="text-sm mb-4">Estado de notificación para el componente Alertas.</p>
 
           <table className="table">
             <thead>
@@ -684,6 +684,10 @@ const AlertDocs: React.FC = () => {
                     innecesario.
                   </td>
                 </tr>
+                <tr>
+                  <td>Cajón de acciones</td>
+                  <td>Opcional, el mensaje puede requerir, o no, una acción al respecto.</td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -796,15 +800,14 @@ const AlertDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md">
-            El componente de tarjetas pueden recorrerse utilizando la navegación por teclado u otras herramientas de
-            asistencia como lectores por voz.
+            El componente de alertas está construido para ser accesible mediante navegación por teclado y reconocible
+            por lectores de pantalla.
           </p>
           <span className="badge badge-default ms-1">TAB</span>
           <span className="badge badge-default">ENTER</span>
           <p className="text-md">
-            Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Además, con
-            el <i>enter</i>, puede accionar los elementos sobre los que esté posicionada como botones, enlaces, entre
-            otros.
+            Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Acciones
+            como cerrar o activar botones se pueden realizar con las teclas <i>Enter</i> o <i>space</i>.
           </p>
 
           <Image
@@ -899,31 +902,6 @@ const AlertDocs: React.FC = () => {
             del teclado es visible. Cuando utiliza un teclado para navegar por los componentes, los enlaces tienen un
             subrayado visible y un recuadro outline que indica que los enlaces son interactivos.
           </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.1.1 Keyboard (Level A)
-          </a>
-          <p>Todas las funcionalidades del contenido se puede operar a través de una interfaz de teclado.</p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.1.2 No Keyboard Trap (Level A)
-          </a>
-          <p>
-            Si el foco del teclado puede moverse a un componente de la página utilizando una interfaz de teclado,
-            también debe ser posible mover el foco fuera de ese componente usando únicamente la misma interfaz de
-            teclado. Si se requiere algo más que las teclas de flecha, tabulador u otros métodos estándar para salir, se
-            debe informar al usuario sobre el método necesario para mover el foco.
-          </p>
         </>
       ),
     },
@@ -934,7 +912,7 @@ const AlertDocs: React.FC = () => {
       <ComponentHeader
         title="Alertas"
         description={[
-          'Las alertas son avisos que mantienen a los usuarios informados sobre el estado del sistema y pueden requerir o no que realicen una acción.',
+          'Son notificaciones breves dentro del contenido la página que captan la atención de las personas usuarias para informar sobre el estado del sistema y/o el estado específico de una sección de la página.',
           <>
             Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del
             componente podés{' '}

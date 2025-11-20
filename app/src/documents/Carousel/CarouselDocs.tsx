@@ -5,7 +5,13 @@ import LinkClient from '@/components/LinkClient';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
-import { CAROUSEL_DESTACADO, CAROUSEL_DESTACADO_DARK, CAROUSEL_CARDS, CAROUSEL_CARDS_DARK } from './code-views';
+import {
+  CAROUSEL_DESTACADO,
+  CAROUSEL_DESTACADO_DARK,
+  CAROUSEL_CARDS,
+  CAROUSEL_CARDS_DARK,
+  CAROUSEL_CARDS_EVENTS,
+} from './code-views';
 
 const basePath = '/Obelisco-V2';
 const colors = ['yellow', 'cyan', 'blue'];
@@ -425,7 +431,7 @@ const CarouselDocs: React.FC = () => {
     {
       subtitle: 'Con fondo claro',
       content: (
-        <CodeBox codeHTML={CAROUSEL_CARDS}>
+        <CodeBox codeHTML={CAROUSEL_CARDS_EVENTS}>
           <div className="container">
             <ZoomContainer>
               <div id="carousel-cards-eventos" className="carousel cards slide">

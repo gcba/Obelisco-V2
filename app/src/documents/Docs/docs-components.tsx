@@ -156,6 +156,12 @@ const sections = [
         <li>
           Se agregó un alto minimo en <code>.content</code>, para evitar conflictos con estilos externos.
         </li>
+        <li>
+          Se han incorporado clases de utilidad para el control preciso de la posición de los elementos multimedia
+          dentro de su contenedor <code>.aside</code>. Estas clases, como <code>.hero-center</code> y{' '}
+          <code>.hero-top-center</code>, replican directamente los valores y el comportamiento de la propiedad CSS{' '}
+          <code>object-position</code>.
+        </li>
       </ul>
     ),
   },

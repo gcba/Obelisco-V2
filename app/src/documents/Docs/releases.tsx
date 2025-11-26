@@ -32,6 +32,9 @@ const ReleasesComponents: React.FC = () => {
             </a>{' '}
             está la documentación de las nuevas clases.
           </li>
+          <li>El contenido del carrusel se alinea con el container, solo en resoluciones desktop</li>
+          <li>Se agregan clases para ajustar el alineamento media del hero, ej: hero-center, hero-top-center</li>
+          <li>Correcciones del code-view de los componentes</li>
         </ul>
       ),
     },

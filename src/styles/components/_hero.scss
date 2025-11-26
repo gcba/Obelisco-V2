@@ -18,6 +18,18 @@ $aside-colors: (
   'light': $slate-200,
 );
 
+$media-positions-vertical: (
+  'bottom': 'bottom',
+  'top': 'top',
+  'center': 'center',
+);
+
+$media-positions-horizontal: (
+  'center': 'center',
+  'right': 'right',
+  'left': 'left',
+);
+
 @mixin mask-size-cover {
   mask-size: cover;
 }
@@ -363,5 +375,32 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content {
   div p,
   div span.fw-semibold.me-3 {
     color: $white;
+  }
+}
+
+// CLASES PARA OBJECT-POSITION del media
+// Clases simples (un solo valor) - combinando ambos arrays sin repetir 'center'
+@each $name, $position in $media-positions-vertical {
+  header.hero .aside img.hero-#{$name},
+  header.hero .aside video.hero-#{$name} {
+    object-position: #{$position};
+  }
+}
+@each $name, $position in $media-positions-horizontal {
+  @if $name != 'center' {
+    header.hero .aside img.#{$name},
+    header.hero .aside video.#{$name} {
+      object-position: #{$position};
+    }
+  }
+}
+
+// Clases combinadas (dos valores)
+@each $name1, $position1 in $media-positions-vertical {
+  @each $name2, $position2 in $media-positions-horizontal {
+    header.hero .aside img.hero-#{$name1}-#{$name2},
+    header.hero .aside video.hero-#{$name1}-#{$name2} {
+      object-position: #{$position1} #{$position2};
+    }
   }
 }

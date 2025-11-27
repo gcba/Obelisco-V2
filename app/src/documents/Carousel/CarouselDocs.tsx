@@ -7,6 +7,7 @@ import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import {
   CAROUSEL_DESTACADO,
+  CAROUSEL_DESTACADO_WHITE,
   CAROUSEL_DESTACADO_DARK,
   CAROUSEL_CARDS,
   CAROUSEL_CARDS_DARK,
@@ -23,6 +24,118 @@ const CarouselDocs: React.FC = () => {
     {
       title: 'De destacados',
       firstTitle: true,
+    },
+    {
+      subtitle: 'Con fondo blanco',
+      content: (
+        <CodeBox codeHTML={CAROUSEL_DESTACADO_WHITE}>
+          <div className="container">
+            <ZoomContainer>
+              <div id="carousel" className="carousel white slide">
+                <div className="carousel-inner">
+                  <div className="carousel-item active">
+                    <div className="panel-horizontal-content">
+                      <div className="panel-horizontal">
+                        <Image
+                          src={`${basePath}/images/destacado.jpg`}
+                          alt="descripción de imagen"
+                          className="panel-img"
+                          width={538}
+                          height={304}
+                        ></Image>
+                        <div className="panel-body">
+                          <h2 className="panel-title">Título del destacado</h2>
+                          <p className="panel-text">
+                            Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
+                            contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso,
+                            de pocas líneas. No puede contener negritas ni enlaces
+                          </p>
+                          <div className="panel-footer">
+                            <LinkClient className="btn btn-secondary btn-lg">Botón</LinkClient>
+                            <LinkClient className="btn btn-outline-secondary btn-lg">Botón</LinkClient>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="carousel-item">
+                    <div className="panel-horizontal-content">
+                      <div className="panel-horizontal">
+                        <Image
+                          src={`${basePath}/images/destacado.jpg`}
+                          alt="descripción de imagen"
+                          className="panel-img"
+                          width={538}
+                          height={304}
+                        ></Image>
+                        <div className="panel-body">
+                          <h2 className="panel-title">Título del destacado</h2>
+                          <p className="panel-text">
+                            Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
+                            contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso,
+                            de pocas líneas. No puede contener negritas ni enlaces
+                          </p>
+                          <div className="panel-footer">
+                            <LinkClient className="btn btn-secondary btn-lg">Botón</LinkClient>
+                            <LinkClient className="btn btn-outline-secondary btn-lg">Botón</LinkClient>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="carousel-item">
+                    <div className="panel-horizontal-content">
+                      <div className="panel-horizontal">
+                        <Image
+                          src={`${basePath}/images/destacado.jpg`}
+                          alt="descripción de imagen"
+                          className="panel-img"
+                          width={538}
+                          height={304}
+                        ></Image>
+                        <div className="panel-body">
+                          <h2 className="panel-title">Título del destacado</h2>
+                          <p className="panel-text">
+                            Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
+                            contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso,
+                            de pocas líneas. No puede contener negritas ni enlaces
+                          </p>
+                          <div className="panel-footer">
+                            <LinkClient className="btn btn-secondary btn-lg">Botón</LinkClient>
+                            <LinkClient className="btn btn-outline-secondary btn-lg">Botón</LinkClient>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carousel"
+                    data-bs-slide-to="0"
+                    className="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <button className="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                  <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span className="visually-hidden">Anterior</span>
+                </button>
+                <button className="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                  <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span className="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+            </ZoomContainer>
+          </div>
+        </CodeBox>
+      ),
     },
     {
       subtitle: 'Con fondo claro',

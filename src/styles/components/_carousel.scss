@@ -241,6 +241,10 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     }
   }
 
+  &.white {
+    background-color: $white;
+  }
+
   // el &.cards, hace que solo aplique a las clases .card dentro de .carousel
   &.cards {
     @media (width < 768px) {

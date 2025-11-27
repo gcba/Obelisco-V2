@@ -739,8 +739,9 @@ const AlertDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md mb-4">
-            Los enlaces dentro de una alerta se utilizan para una llamada a la acción. Todos los enlaces a la
-            documentación o información deben abrirse en una nueva pestaña.
+            Permite incluir uno o más enlaces accionables ubicados por fuera del texto principal de la alerta. Su
+            función es ofrecer al usuario caminos directos para resolver la situación comunicada, sin interrumpir la
+            lectura del mensaje.
           </p>
           <Image
             src={`${basePath}/images/alert/alerta_variante_enlace_independiente.svg`}

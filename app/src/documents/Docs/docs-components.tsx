@@ -77,12 +77,16 @@ const sections = [
           </li>
 
           <p className="text-md my-4">
-            <strong>Versión 1.8.1 ⬇️</strong>
+            <strong>Versión 1.8.4 ⬇️</strong>
           </p>
 
           <li>
-            Para Alertas de Sistema; Se crea la clase <code>.system</code>, debe usarse junto a{' '}
-            <code>.alert-primary</code>.
+            Para Alertas de Sistema; Se crea la clase <code>.system</code>, que debe usarse junto a{' '}
+            <code>.alert-{'{color}'}</code>
+          </li>
+          <li>
+            Donde <code>{'color'}</code> puede ser: <code>{'primary'}</code>, <code>{'secondary'}</code>,
+            <code>{'tertiary'}</code>, <code>{'light'}</code>, <code>{'dark'}</code>.
           </li>
         </ul>
       </>
@@ -174,6 +178,28 @@ const sections = [
           del componente Colapsable.
         </li>
         <li>La variante con referencias cromáticas queda deprecada.</li>
+      </ul>
+    ),
+  },
+  {
+    title: 'Carrusel',
+    content: (
+      <ul className="docs-list">
+        <p className="text-md my-4">
+          <strong>Versión 1.8.4 ⬇️</strong>
+        </p>
+        <li>
+          Los elementos <code>{'<img>'}</code> y <code>{'<video>'}</code>, pueden usar{' '}
+          <code>{'.hero-{positions-vertical}'}</code> y <code>{'.hero-{positions-horizontal}'}</code>para alinear la
+          multimedia:
+        </li>
+        <li>
+          Donde <code>{'{positions-vertical}'}</code> puede ser: <code>{'bottom'}</code>, <code>{'top'}</code>,
+          <code>{'center'}</code>.
+          <br />
+          Donde <code>{'{positions-horizontal}'}</code> puede ser: <code>{'center'}</code>, <code>{'right'}</code>,
+          <code>{'left'}</code>.
+        </li>{' '}
       </ul>
     ),
   },

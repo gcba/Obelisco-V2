@@ -388,8 +388,8 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content {
 }
 @each $name, $position in $media-positions-horizontal {
   @if $name != 'center' {
-    header.hero .aside img.#{$name},
-    header.hero .aside video.#{$name} {
+    header.hero .aside img.hero-#{$name},
+    header.hero .aside video.hero-#{$name} {
       object-position: #{$position};
     }
   }

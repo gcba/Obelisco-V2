@@ -8,11 +8,12 @@ import ComponentHeader from '@/components/Template/ComponentHeader';
 import {
   HIGHLIGHTED_BANNER_ACCESS,
   HIGHLIGHTED_BANNER_BUTTON,
-  HIGHLIGHTED_BANNER_BUTTONS,
+  HIGHLIGHTED_BANNER_BUTTONS_LIGHT,
   HIGHLIGHTED_BANNER_BUTTONS_DARK,
   // HIGHLIGHTED_BANNER_BUTTONS_BG,
   HIGHLIGHTED_BANNER_BUTTONS_VIDEO_MP4,
   HIGHLIGHTED_BANNER_BUTTONS_VIDEO_YT,
+  HIGHLIGHTED_BANNER_BUTTONS_WHITE,
   HIGHLIGHTED_BANNER_DOWNLOAD,
   HIGHLIGHTED_BANNER_FONDOS,
   HIGHLIGHTED_BANNER_LINK,
@@ -40,8 +41,8 @@ const HighlightedDocs: React.FC = () => {
       subtitle: 'Fondos',
       content: (
         <>
-          <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTONS}>
-            <ZoomContainer>
+          <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTONS_WHITE}>
+            <div className="highlighted-box-sizing">
               <div className="panel-horizontal-content">
                 <div className="panel-horizontal">
                   <Image
@@ -67,10 +68,37 @@ const HighlightedDocs: React.FC = () => {
               </div>
             </ZoomContainer>
           </CodeBox>
+          <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTONS_LIGHT}>
+            <div className="highlighted-box-sizing">
+              <div className="panel-horizontal-content bg-light">
+                <div className="panel-horizontal">
+                  <Image
+                    src={`${basePath}/images/destacado.jpg`}
+                    alt="descripción de imagen"
+                    className="panel-img"
+                    width={538}
+                    height={304}
+                  ></Image>
+                  <div className="panel-body">
+                    <h5 className="panel-title">Título del destacado</h5>
+                    <p className="panel-text">
+                      Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
+                      negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas.
+                      No puede contener negritas ni enlaces
+                    </p>
+                    <div className="panel-footer">
+                      <LinkClient className="btn btn-primary btn-lg">Botón</LinkClient>
+                      <LinkClient className="btn btn-outline-primary btn-lg">Botón</LinkClient>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </CodeBox>
           <br />
           <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTONS_DARK}>
             <div className="highlighted-box-sizing">
-              <div className="panel-horizontal-content-dark">
+              <div className="panel-horizontal-content bg-dark">
                 <div className="panel-horizontal">
                   <Image
                     src={`${basePath}/images/destacado.jpg`}

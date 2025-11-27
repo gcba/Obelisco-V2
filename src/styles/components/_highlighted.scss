@@ -1,6 +1,7 @@
 // Custom variables and mixins
 // MIXIN GENERAL
 @mixin panel-content($flex-direction, $media-query) {
+  background-color: transparent;
   display: flex;
   flex-direction: #{$flex-direction};
   width: 100%;
@@ -177,15 +178,17 @@
   }
 }
 
-// Destacado banner dark
-.panel-horizontal-content-dark {
-  background-color: $sky-900;
+.panel-horizontal-content {
+  &.bg-dark {
+    background-color: $sky-900;
+    color: $white;
 
-  .panel-horizontal {
-    .panel-body {
-      h5.panel-title,
-      .panel-text {
-        color: $white;
+    .panel-horizontal {
+      .panel-body {
+        h5.panel-title,
+        .panel-text {
+          color: $white;
+        }
       }
     }
   }

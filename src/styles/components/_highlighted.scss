@@ -1,5 +1,6 @@
 // Custom variables and mixins
 @mixin panel-content($flex-direction, $media-query) {
+  background-color: transparent;
   display: flex;
   flex-direction: #{$flex-direction};
   width: 100%;
@@ -95,13 +96,11 @@
 
 // Custom styles
 //Estilos para Destacado Banner (antes Panel Grande Horizontal)
-.panel-horizontal-content,
-.panel-horizontal-content-dark // Destacado banner dark
-{
+.panel-horizontal-content {
   width: 100%;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: $slate-50; // Destacado banner
+  background-color: #fff;
 
   @include media-breakpoint-down(xl) {
     padding-top: 0;
@@ -119,15 +118,17 @@
   }
 }
 
-// Destacado banner dark
-.panel-horizontal-content-dark {
-  background-color: $sky-900;
+.panel-horizontal-content {
+  &.bg-dark {
+    background-color: $sky-900;
+    color: $white;
 
-  .panel-horizontal {
-    .panel-body {
-      h5.panel-title,
-      .panel-text {
-        color: $white;
+    .panel-horizontal {
+      .panel-body {
+        h5.panel-title,
+        .panel-text {
+          color: $white;
+        }
       }
     }
   }

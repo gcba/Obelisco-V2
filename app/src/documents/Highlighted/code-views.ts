@@ -1,4 +1,27 @@
-export const HIGHLIGHTED_BANNER_BUTTONS = `<div class="panel-horizontal-content">
+export const HIGHLIGHTED_BANNER_BUTTONS_WHITE = `<div class="panel-horizontal-content">
+  <div class="panel-horizontal">
+    <img src="/destacado.jpg" alt="descripción de imagen" class="panel-img" />
+    <div class="panel-body">
+      <h2 class="panel-title">Título del destacado</h2>
+      <p class="panel-text">
+        Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
+        líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un
+        destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
+        negritas ni enlaces
+      </p>
+      <div class="panel-footer">
+        <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
+          Botón
+        </a>
+        <a class="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
+          Botón
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+export const HIGHLIGHTED_BANNER_BUTTONS_LIGHT = `<div class="panel-horizontal-content bg-light">
   <div class="panel-horizontal">
     <img src="/destacado.jpg" alt="descripción de imagen" class="panel-img" />
     <div class="panel-body">

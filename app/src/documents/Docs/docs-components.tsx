@@ -160,11 +160,21 @@ const sections = [
         <li>
           Se agregó un alto minimo en <code>.content</code>, para evitar conflictos con estilos externos.
         </li>
+        <p className="text-md my-4">
+          <strong>Versión 1.8.4 ⬇️</strong>
+        </p>
         <li>
-          Se han incorporado clases de utilidad para el control preciso de la posición de los elementos multimedia
-          dentro de su contenedor <code>.aside</code>. Estas clases, como <code>.hero-center</code> y{' '}
-          <code>.hero-top-center</code>, replican directamente los valores y el comportamiento de la propiedad CSS{' '}
-          <code>object-position</code>.
+          El elemento <code>{'<div class="aside">'}</code>, puede usar <code>{'.hero-{positions-vertical}'}</code>,{' '}
+          <code>{'.hero-{positions-horizontal}'}</code> o{' '}
+          <code>{'.hero-{positions-horizontal}-{positions-vertical}'}</code> para alinear la multimedia: Los elementos{' '}
+          <code>{'<img>'}</code> y <code>{'<video>'}</code>
+        </li>
+        <li>
+          Donde <code>{'{positions-vertical}'}</code> puede ser: <code>{'bottom'}</code>, <code>{'top'}</code>,
+          <code>{'center'}</code>.
+          <br />
+          Donde <code>{'{positions-horizontal}'}</code> puede ser: <code>{'center'}</code>, <code>{'right'}</code>,
+          <code>{'left'}</code>.
         </li>
       </ul>
     ),
@@ -178,28 +188,6 @@ const sections = [
           del componente Colapsable.
         </li>
         <li>La variante con referencias cromáticas queda deprecada.</li>
-      </ul>
-    ),
-  },
-  {
-    title: 'Carrusel',
-    content: (
-      <ul className="docs-list">
-        <p className="text-md my-4">
-          <strong>Versión 1.8.4 ⬇️</strong>
-        </p>
-        <li>
-          Los elementos <code>{'<img>'}</code> y <code>{'<video>'}</code>, pueden usar{' '}
-          <code>{'.hero-{positions-vertical}'}</code> y <code>{'.hero-{positions-horizontal}'}</code>para alinear la
-          multimedia:
-        </li>
-        <li>
-          Donde <code>{'{positions-vertical}'}</code> puede ser: <code>{'bottom'}</code>, <code>{'top'}</code>,
-          <code>{'center'}</code>.
-          <br />
-          Donde <code>{'{positions-horizontal}'}</code> puede ser: <code>{'center'}</code>, <code>{'right'}</code>,
-          <code>{'left'}</code>.
-        </li>{' '}
       </ul>
     ),
   },

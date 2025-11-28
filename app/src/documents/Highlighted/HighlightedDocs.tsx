@@ -53,7 +53,7 @@ const HighlightedDocs: React.FC = () => {
                     height={304}
                   ></Image>
                   <div className="panel-body">
-                    <h5 className="panel-title">Título del destacado</h5>
+                    <h2 className="panel-title">Título del destacado</h2>
                     <p className="panel-text">
                       Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
                       negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas.
@@ -80,7 +80,7 @@ const HighlightedDocs: React.FC = () => {
                     height={304}
                   ></Image>
                   <div className="panel-body">
-                    <h5 className="panel-title">Título del destacado</h5>
+                    <h2 className="panel-title">Título del destacado</h2>
                     <p className="panel-text">
                       Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
                       negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas.
@@ -108,7 +108,7 @@ const HighlightedDocs: React.FC = () => {
                     height={304}
                   ></Image>
                   <div className="panel-body">
-                    <h5 className="panel-title">Título del destacado</h5>
+                    <h2 className="panel-title">Título del destacado</h2>
                     <p className="panel-text">
                       Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
                       negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas.
@@ -142,7 +142,7 @@ const HighlightedDocs: React.FC = () => {
                     height={304}
                   ></Image>
                   <div className="panel-body">
-                    <h5 className="panel-title">Título del destacado</h5>
+                    <h2 className="panel-title">Título del destacado</h2>
                     <p className="panel-text">
                       Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
                       negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas.
@@ -169,7 +169,7 @@ const HighlightedDocs: React.FC = () => {
                     height={304}
                   ></Image>
                   <div className="panel-body">
-                    <h5 className="panel-title">Título del destacado</h5>
+                    <h2 className="panel-title">Título del destacado</h2>
                     <p className="panel-text">
                       Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
                       negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas.
@@ -201,7 +201,7 @@ const HighlightedDocs: React.FC = () => {
                     height={304}
                   ></Image>
                   <div className="panel-body">
-                    <h5 className="panel-title">Título del destacado</h5>
+                    <h2 className="panel-title">Título del destacado</h2>
                     <p className="panel-text">
                       Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
                       negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas.
@@ -228,7 +228,7 @@ const HighlightedDocs: React.FC = () => {
                     height={304}
                   ></Image>
                   <div className="panel-body">
-                    <h5 className="panel-title">Título del destacado</h5>
+                    <h2 className="panel-title">Título del destacado</h2>
                     <p className="panel-text">
                       Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
                       negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas.
@@ -270,7 +270,7 @@ const HighlightedDocs: React.FC = () => {
                     </p>
                   </video>
                   <div className="panel-body">
-                    <h5 className="panel-title">Título del destacado</h5>
+                    <h2 className="panel-title">Título del destacado</h2>
                     <p className="panel-text">
                       Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
                       negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas.

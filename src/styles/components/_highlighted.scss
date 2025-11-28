@@ -172,6 +172,12 @@
     align-items: center;
     @include panel-content(row, xl);
 
+    .panel-body {
+      h2.panel-title {
+        @extend .h5;
+      }
+    }
+
     .panel-img {
       border-radius: 1.5rem; // Destacado banner
     }

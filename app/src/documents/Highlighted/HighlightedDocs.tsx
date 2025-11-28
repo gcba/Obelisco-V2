@@ -10,7 +10,7 @@ import {
   HIGHLIGHTED_BANNER_BUTTON,
   HIGHLIGHTED_BANNER_BUTTONS_LIGHT,
   HIGHLIGHTED_BANNER_BUTTONS_DARK,
-  // HIGHLIGHTED_BANNER_BUTTONS_BG,
+  HIGHLIGHTED_BANNER_BUTTONS_BG,
   HIGHLIGHTED_BANNER_BUTTONS_VIDEO_MP4,
   HIGHLIGHTED_BANNER_BUTTONS_VIDEO_YT,
   HIGHLIGHTED_BANNER_BUTTONS_WHITE,
@@ -42,7 +42,7 @@ const HighlightedDocs: React.FC = () => {
       content: (
         <>
           <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTONS_WHITE}>
-            <div className="highlighted-box-sizing">
+            <ZoomContainer>
               <div className="panel-horizontal-content">
                 <div className="panel-horizontal">
                   <Image
@@ -69,7 +69,7 @@ const HighlightedDocs: React.FC = () => {
             </ZoomContainer>
           </CodeBox>
           <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTONS_LIGHT}>
-            <div className="highlighted-box-sizing">
+            <ZoomContainer>
               <div className="panel-horizontal-content bg-light">
                 <div className="panel-horizontal">
                   <Image
@@ -93,11 +93,11 @@ const HighlightedDocs: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </ZoomContainer>
           </CodeBox>
           <br />
           <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTONS_DARK}>
-            <div className="highlighted-box-sizing">
+            <ZoomContainer>
               <div className="panel-horizontal-content bg-dark">
                 <div className="panel-horizontal">
                   <Image
@@ -121,7 +121,7 @@ const HighlightedDocs: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </ZoomContainer>
           </CodeBox>
         </>
       ),

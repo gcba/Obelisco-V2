@@ -15,7 +15,7 @@ import {
   HIGHLIGHTED_BANNER_BUTTONS_VIDEO_YT,
   HIGHLIGHTED_BANNER_BUTTONS_WHITE,
   HIGHLIGHTED_BANNER_DOWNLOAD,
-  HIGHLIGHTED_BANNER_FONDOS,
+  HIGHLIGHTED_VERTICAL_FONDOS,
   HIGHLIGHTED_BANNER_LINK,
   HIGHLIGHTED_BANNER_NO_MEDIA,
   HIGHLIGHTED_JOIN_IMAGE,
@@ -379,7 +379,7 @@ const HighlightedDocs: React.FC = () => {
       subtitle: 'Fondos',
       content: (
         <>
-          <CodeBox codeHTML={HIGHLIGHTED_BANNER_FONDOS}>
+          <CodeBox codeHTML={HIGHLIGHTED_VERTICAL_FONDOS}>
             <ZoomContainer>
               <div className="container">
                 <div className="highlighted-items-2">
@@ -392,7 +392,7 @@ const HighlightedDocs: React.FC = () => {
                         width={538}
                         height={304}
                       ></Image>
-                      <div className="panel-body-dark">
+                      <div className="panel-body bg-dark">
                         <h2 className="panel-title ellipsis-2">
                           Este es el titulo del destacado que puede contener hasta 2 líneas de texto.
                         </h2>
@@ -457,7 +457,7 @@ const HighlightedDocs: React.FC = () => {
                         width={538}
                         height={304}
                       ></Image>
-                      <div className="panel-body-dark">
+                      <div className="panel-body bg-dark">
                         <h2 className="panel-title ellipsis-2">Este es el titulo del destacado</h2>
                         <p className="panel-text ellipsis-3">
                           Esta es la descripción del destacado que puede contener hasta 3 líneas de texto.
@@ -478,7 +478,7 @@ const HighlightedDocs: React.FC = () => {
                         width={538}
                         height={304}
                       ></Image>
-                      <div className="panel-body-dark">
+                      <div className="panel-body bg-dark">
                         <h2 className="panel-title ellipsis-2">
                           Este es el titulo del destacado que puede contener hasta 2 líneas de texto.
                         </h2>
@@ -508,7 +508,7 @@ const HighlightedDocs: React.FC = () => {
                         width={538}
                         height={304}
                       ></Image>
-                      <div className="panel-body-dark">
+                      <div className="panel-body bg-dark">
                         <h2 className="panel-title ellipsis-2">
                           Este es el titulo del destacado que puede contener hasta 2 líneas de texto.
                         </h2>
@@ -536,7 +536,7 @@ const HighlightedDocs: React.FC = () => {
                         width={538}
                         height={304}
                       ></Image>
-                      <div className="panel-body-dark">
+                      <div className="panel-body bg-dark">
                         <h2 className="panel-title ellipsis-2">
                           Este es el titulo del destacado que puede contener hasta 2 líneas de texto.
                         </h2>
@@ -575,7 +575,7 @@ const HighlightedDocs: React.FC = () => {
                           <a href={`${basePath}/images/videoBuenosAires.mp4`}>este enlace</a>.
                         </p>
                       </video>
-                      <div className="panel-body-dark">
+                      <div className="panel-body bg-dark">
                         <h2 className="panel-title ellipsis-2">Título del destacado</h2>
                         <p className="panel-text">
                           Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
@@ -628,7 +628,7 @@ const HighlightedDocs: React.FC = () => {
                 <div className="highlighted-items-2">
                   <div className="col">
                     <div className="panel-vertical">
-                      <div className="panel-body-dark panel-sin-multimedia-v">
+                      <div className="panel-body bg-dark panel-sin-multimedia-v">
                         <h2 className="panel-title">Título del destacado</h2>
                         <p className="panel-text">
                           Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
@@ -643,7 +643,7 @@ const HighlightedDocs: React.FC = () => {
                   </div>
                   <div className="col">
                     <div className="panel-vertical">
-                      <div className="panel-body  panel-sin-multimedia-v">
+                      <div className="panel-body bg-light panel-sin-multimedia-v">
                         <h2 className="panel-title">Título del destacado</h2>
                         <p className="panel-text">
                           Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede

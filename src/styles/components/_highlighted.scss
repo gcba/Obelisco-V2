@@ -110,8 +110,7 @@
     @extend .h5;
   }
 
-  .panel-body,
-  .panel-body-dark {
+  .panel-body {
     padding: 2rem;
     width: 100%;
     min-height: 282px;
@@ -121,13 +120,34 @@
     flex-direction: column;
     background-color: $slate-50;
 
-    &.panel-body-dark {
-      background-color: $sky-900;
+    &.bg-dark {
+      background-color: $dark;
       color: $white;
     }
 
     &.panel-sin-multimedia-v {
       border-radius: 24px;
+      background-color: $slate-50;
+    }
+
+    &.panel-sin-multimedia-v.bg-dark {
+      border-radius: 24px;
+      background-color: $dark;
+      color: $white;
+
+      .panel-horizontal {
+        .panel-body {
+          h5.panel-title,
+          .panel-text {
+            color: $white;
+          }
+        }
+      }
+    }
+
+    &.panel-sin-multimedia-v.bg-light {
+      border-radius: 24px;
+      background-color: $slate-50;
     }
 
     .panel-text {
@@ -186,7 +206,7 @@
 
 .panel-horizontal-content {
   &.bg-dark {
-    background-color: $sky-900;
+    background-color: $dark;
     color: $white;
 
     .panel-horizontal {
@@ -220,5 +240,11 @@
 
   @include media-breakpoint-down(xl) {
     padding: 1.5rem 1rem;
+  }
+
+  .panel-body {
+    h2.panel-title {
+      @extend .h5;
+    }
   }
 }

@@ -1,7 +1,6 @@
 // Custom variables and mixins
 // MIXIN GENERAL
 @mixin panel-content($flex-direction, $media-query) {
-  background-color: transparent;
   display: flex;
   flex-direction: #{$flex-direction};
   width: 100%;
@@ -187,24 +186,6 @@
     padding-bottom: 0;
   }
 
-  .panel-horizontal {
-    @extend .container;
-    align-items: center;
-    @include panel-content(row, xl);
-
-    .panel-body {
-      h2.panel-title {
-        @extend .h5;
-      }
-    }
-
-    .panel-img {
-      border-radius: 1.5rem; // Destacado banner
-    }
-  }
-}
-
-.panel-horizontal-content {
   &.bg-dark {
     background-color: $dark;
     color: $white;
@@ -219,15 +200,20 @@
     }
   }
 
-  .panel-img,
-  video {
-    width: 100%;
-    max-width: 538px;
-    height: 304px;
-    border-radius: $border-radius-lg;
-    object-fit: cover;
-    object-position: center;
-    aspect-ratio: 16/9;
+  .panel-horizontal {
+    @extend .container;
+    align-items: center;
+    @include panel-content(row, xl);
+
+    .panel-body {
+      h2.panel-title {
+        @extend .h5;
+      }
+    }
+
+    .panel-img {
+      border-radius: 1.5rem; // Destacado banner
+    }
   }
 }
 

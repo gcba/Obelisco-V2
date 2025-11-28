@@ -26,7 +26,7 @@
     max-width: 728px;
 
     .panel-title {
-      @extend .h4;
+      // @extend .h4;
       margin: 0;
     }
 
@@ -111,6 +111,12 @@
     @extend .container;
     align-items: center;
     @include panel-content(row, xl);
+
+    .panel-body {
+      h2.panel-title {
+        @extend .h5;
+      }
+    }
 
     .panel-img {
       border-radius: 1.5rem; // Destacado banner

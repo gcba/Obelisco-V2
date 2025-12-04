@@ -166,20 +166,6 @@
     padding-bottom: 0;
   }
 
-  &.bg-dark {
-    background-color: $sky-900;
-    color: $white;
-
-    .panel-horizontal {
-      .panel-body {
-        h5.panel-title,
-        .panel-text {
-          color: $white;
-        }
-      }
-    }
-  }
-
   .panel-horizontal {
     @extend .container;
     align-items: center;
@@ -196,6 +182,7 @@
     }
   }
 
+  // Imagen y video 
   .panel-img,
   video {
     width: 100%;
@@ -206,6 +193,21 @@
     object-position: center;
     aspect-ratio: 16/9;
   }
+
+  // Variante oscura
+  &.bg-dark {
+    background-color: $sky-900;
+    color: $white;
+
+    .panel-horizontal {
+      .panel-body {
+        h5.panel-title,
+        .panel-text {
+          color: $white;
+        }
+      }
+    }
+  }
 }
 
 // ESTILOS PARA PANEL LATERAL
@@ -215,13 +217,13 @@
   background-color: $slate-50;
   border-radius: 0.5rem;
 
+  @include media-breakpoint-down(xl) {
+    padding: 1.5rem 1rem;
+  }
+
   .panel-body {
     h2.panel-title {
       @extend .h5;
     }
-  }
-
-  @include media-breakpoint-down(xl) {
-    padding: 1.5rem 1rem;
   }
 }

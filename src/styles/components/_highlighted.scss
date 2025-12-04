@@ -1,7 +1,6 @@
 // Custom variables and mixins
 // MIXIN GENERAL
 @mixin panel-content($flex-direction, $media-query) {
-  background-color: transparent;
   display: flex;
   flex-direction: #{$flex-direction};
   width: 100%;
@@ -182,9 +181,20 @@
       border-radius: 1.5rem; // Destacado banner
     }
   }
-}
 
-.panel-horizontal-content {
+  // Imagen y video (se aplica siempre)
+  .panel-img,
+  video {
+    width: 100%;
+    max-width: 538px;
+    height: 304px;
+    border-radius: $border-radius-lg;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 16/9;
+  }
+
+  // Variante oscura
   &.bg-dark {
     background-color: $sky-900;
     color: $white;
@@ -198,17 +208,6 @@
       }
     }
   }
-
-  .panel-img,
-  video {
-    width: 100%;
-    max-width: 538px;
-    height: 304px;
-    border-radius: $border-radius-lg;
-    object-fit: cover;
-    object-position: center;
-    aspect-ratio: 16/9;
-  }
 }
 
 // ESTILOS PARA PANEL LATERAL
@@ -220,5 +219,11 @@
 
   @include media-breakpoint-down(xl) {
     padding: 1.5rem 1rem;
+  }
+
+  .panel-body {
+    h2.panel-title {
+      @extend .h5;
+    }
   }
 }

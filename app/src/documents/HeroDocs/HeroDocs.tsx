@@ -1340,9 +1340,19 @@ const HeroHeaderDocs: React.FC = () => {
               <p className="text-md fw-bold d-inline">Dark</p>: Para fondos con identidad visual.
             </li>
           </ul>{' '}
-          <p className="text-md">
+          <p className="text-md mb-2">
             El modo Color incluye 6 opciones intercambiables desde las propiedades del componente:
           </p>
+          <div className="d-flex gap-2">
+            <span className="badge text-bg-light py-1 px-2 text-lowercase">$hero/bg-blue</span>
+            <span className="badge text-bg-light py-1 px-2 text-lowercase">$hero/bg-sky</span>
+            <span className="badge text-bg-light py-1 px-2 text-lowercase">$hero/bg-cyan</span>
+          </div>
+          <div className="d-flex mt-2  gap-2">
+            <span className="badge text-bg-light py-1 px-2 text-lowercase">$hero/bg-yellow</span>
+            <span className="badge text-bg-light py-1 px-2 text-lowercase">$hero/bg-red</span>
+            <span className="badge text-bg-light py-1 px-2 text-lowercase">$hero/bg-purple</span>
+          </div>
           <Image
             src={`${basePath}/images/hero/hero_color_bg_dark.svg`}
             alt="Modo de color dark"

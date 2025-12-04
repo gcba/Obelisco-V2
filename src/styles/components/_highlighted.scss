@@ -170,8 +170,19 @@
     @extend .container;
     align-items: center;
     @include panel-content(row, xl);
+
+    .panel-body {
+      h2.panel-title {
+        @extend .h5;
+      }
+    }
+
+    .panel-img {
+      border-radius: 1.5rem; // Destacado banner
+    }
   }
 
+  // Imagen y video (se aplica siempre)
   .panel-img,
   video {
     width: 100%;
@@ -181,6 +192,21 @@
     object-fit: cover;
     object-position: center;
     aspect-ratio: 16/9;
+  }
+
+  // Variante oscura
+  &.bg-dark {
+    background-color: $sky-900;
+    color: $white;
+
+    .panel-horizontal {
+      .panel-body {
+        h5.panel-title,
+        .panel-text {
+          color: $white;
+        }
+      }
+    }
   }
 }
 
@@ -193,5 +219,11 @@
 
   @include media-breakpoint-down(xl) {
     padding: 1.5rem 1rem;
+  }
+
+  .panel-body {
+    h2.panel-title {
+      @extend .h5;
+    }
   }
 }

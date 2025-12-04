@@ -1445,8 +1445,9 @@ const HeroHeaderDocs: React.FC = () => {
         <>
           <p className="text-md">
             La etiqueta de texto {'<h1>'} representa el título con más jerarquía de la página y aparece al inicio del
-            bloque del componente para garantizar orientación, SEO y accesibilidad. Cada página va a contar con un único
-            encabezado {'<h1>'} que no se debe repetir en las secciones internas.
+            bloque del componente para garantizar orientación, SEO y accesibilidad. Cada página debe tener un único{' '}
+            {'<h1>'} y no debe repetirse en otras secciones o encabezados internos, para evitar confusión y mantener una
+            estructura semántica clara.
           </p>
           <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
             {HERO_ACCESIBILITY}

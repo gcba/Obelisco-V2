@@ -340,7 +340,7 @@ const HighlightedDocs: React.FC = () => {
                 </div>
               </div>
             </ZoomContainer>
-          </CodeBox>          
+          </CodeBox>
         </>
       ),
     },

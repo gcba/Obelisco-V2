@@ -217,7 +217,8 @@ hr {
 }
 
 h6, .h6, .list-steps-item h3, .list-steps-item .h3,
-.list-steps-item .list-steps-item-title, .list-informative-subtitle, .list-link .list-link-title, h5, .h5, .panel-vertical .panel-title, h4, .h4, .stepper-content .stepper .step-title, .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .h3,
+.list-steps-item .list-steps-item-title, .list-informative-subtitle, .list-link .list-link-title, h5, .h5, .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-vertical .panel-body .panel-title,
+.panel-vertical .panel-body-dark .panel-title, h4, .h4, .stepper-content .stepper .step-title, .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .h3,
 .list-steps.list-steps-lg .list-steps-item .list-steps-item-title, .carousel-caption h5, .carousel-caption .h5, .group-access .card-access .card-access-body .card-access-title, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -254,17 +255,22 @@ h3, .h3 {
 }
 
 h4, .h4, .stepper-content .stepper .step-title, .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .h3,
-.list-steps.list-steps-lg .list-steps-item .list-steps-item-title, .carousel-caption h5, .carousel-caption .h5, .carousel-caption .panel-vertical .panel-title, .panel-vertical .carousel-caption .panel-title, .group-access .card-access .card-access-body .card-access-title {
+.list-steps.list-steps-lg .list-steps-item .list-steps-item-title, .carousel-caption h5, .carousel-caption .h5, .carousel-caption .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .carousel-caption h2.panel-title, .carousel-caption .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .carousel-caption .panel-title.h2, .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .carousel-caption h2.panel-title, .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .carousel-caption .panel-title.h2, .carousel-caption .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .carousel-caption .panel-title,
+.carousel-caption .panel-vertical .panel-body-dark .panel-title,
+.panel-vertical .panel-body-dark .carousel-caption .panel-title, .group-access .card-access .card-access-body .card-access-title {
   font-size: calc(1.275rem + 0.3vw);
 }
 @media (min-width: 1200px) {
   h4, .h4, .stepper-content .stepper .step-title, .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .h3,
-  .list-steps.list-steps-lg .list-steps-item .list-steps-item-title, .carousel-caption h5, .carousel-caption .h5, .carousel-caption .panel-vertical .panel-title, .panel-vertical .carousel-caption .panel-title, .group-access .card-access .card-access-body .card-access-title {
+  .list-steps.list-steps-lg .list-steps-item .list-steps-item-title, .carousel-caption h5, .carousel-caption .h5, .carousel-caption .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .carousel-caption h2.panel-title, .carousel-caption .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .carousel-caption .panel-title.h2, .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .carousel-caption h2.panel-title, .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .carousel-caption .panel-title.h2, .carousel-caption .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .carousel-caption .panel-title,
+  .carousel-caption .panel-vertical .panel-body-dark .panel-title,
+  .panel-vertical .panel-body-dark .carousel-caption .panel-title, .group-access .card-access .card-access-body .card-access-title {
     font-size: 1.5rem;
   }
 }
 
-h5, .h5, .panel-vertical .panel-title {
+h5, .h5, .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-vertical .panel-body .panel-title,
+.panel-vertical .panel-body-dark .panel-title {
   font-size: 1.25rem;
 }
 
@@ -12043,7 +12049,9 @@ h3 {
 }
 
 .h4, .stepper-content .stepper .step-title, .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .h3,
-.list-steps.list-steps-lg .list-steps-item .list-steps-item-title, .carousel-caption h5, .carousel-caption .h5, .carousel-caption .panel-vertical .panel-title, .panel-vertical .carousel-caption .panel-title, .group-access .card-access .card-access-body .card-access-title,
+.list-steps.list-steps-lg .list-steps-item .list-steps-item-title, .carousel-caption h5, .carousel-caption .h5, .carousel-caption .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .carousel-caption h2.panel-title, .carousel-caption .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .carousel-caption .panel-title.h2, .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .carousel-caption h2.panel-title, .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .carousel-caption .panel-title.h2, .carousel-caption .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .carousel-caption .panel-title,
+.carousel-caption .panel-vertical .panel-body-dark .panel-title,
+.panel-vertical .panel-body-dark .carousel-caption .panel-title, .group-access .card-access .card-access-body .card-access-title,
 h4 {
   font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.75rem;
@@ -12051,7 +12059,8 @@ h4 {
   font-weight: 600;
 }
 
-.h5, .panel-vertical .panel-title,
+.h5, .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-vertical .panel-body .panel-title,
+.panel-vertical .panel-body-dark .panel-title,
 h5 {
   font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.5rem;
@@ -12088,7 +12097,11 @@ h6 {
 }
 .headline-lg, .card .card-title, .accordion-item .accordion-button .collapse-title, .accordion-item .accordion-button, .block .block-body .block-title, .list-steps-item::before, .navbar.o-header .header-container .navbar-collapse .navbar-content-extended .navbar-sections-title, .navbar.o-header .header-container .navbar-collapse .navbar-user-mobile .navbar-user-mobile-title, .navbar.o-header .header-container .navbar-collapse .navbar-content .navbar-sections .navbar-sections-title, .map .map-body .map-title, .group-access .card-access .card-access-body h4, .group-access .card-access .card-access-body .h4, .group-access .card-access .card-access-body .stepper-content .stepper .step-title, .stepper-content .stepper .group-access .card-access .card-access-body .step-title, .group-access .card-access .card-access-body .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body h3, .group-access .card-access .card-access-body .list-steps.list-steps-lg .list-steps-item .h3, .list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body .h3,
 .group-access .card-access .card-access-body .list-steps.list-steps-lg .list-steps-item .list-steps-item-title,
-.list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body .list-steps-item-title, .group-access .card-access .card-access-body .carousel-caption h5, .carousel-caption .group-access .card-access .card-access-body h5, .group-access .card-access .card-access-body .carousel-caption .h5, .group-access .card-access .card-access-body .carousel-caption .panel-vertical .panel-title, .panel-vertical .group-access .card-access .card-access-body .carousel-caption .panel-title, .carousel-caption .group-access .card-access .card-access-body .h5, .carousel-caption .group-access .card-access .card-access-body .panel-vertical .panel-title, .panel-vertical .carousel-caption .group-access .card-access .card-access-body .panel-title, .group-access .card-access .card-access-body .card-access-title {
+.list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body .list-steps-item-title, .group-access .card-access .card-access-body .carousel-caption h5, .carousel-caption .group-access .card-access .card-access-body h5, .group-access .card-access .card-access-body .carousel-caption .h5, .group-access .card-access .card-access-body .carousel-caption .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .group-access .card-access .card-access-body .carousel-caption h2.panel-title, .group-access .card-access .card-access-body .carousel-caption .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .group-access .card-access .card-access-body .carousel-caption .panel-title.h2, .group-access .card-access .card-access-body .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .group-access .card-access .card-access-body .carousel-caption h2.panel-title, .group-access .card-access .card-access-body .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .group-access .card-access .card-access-body .carousel-caption .panel-title.h2, .group-access .card-access .card-access-body .carousel-caption .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .group-access .card-access .card-access-body .carousel-caption .panel-title,
+.group-access .card-access .card-access-body .carousel-caption .panel-vertical .panel-body-dark .panel-title,
+.panel-vertical .panel-body-dark .group-access .card-access .card-access-body .carousel-caption .panel-title, .carousel-caption .group-access .card-access .card-access-body .h5, .carousel-caption .group-access .card-access .card-access-body .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .carousel-caption .group-access .card-access .card-access-body h2.panel-title, .carousel-caption .group-access .card-access .card-access-body .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .carousel-caption .group-access .card-access .card-access-body .panel-title.h2, .carousel-caption .group-access .card-access .card-access-body .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .carousel-caption .group-access .card-access .card-access-body h2.panel-title, .carousel-caption .group-access .card-access .card-access-body .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .carousel-caption .group-access .card-access .card-access-body .panel-title.h2, .carousel-caption .group-access .card-access .card-access-body .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .carousel-caption .group-access .card-access .card-access-body .panel-title,
+.carousel-caption .group-access .card-access .card-access-body .panel-vertical .panel-body-dark .panel-title,
+.panel-vertical .panel-body-dark .carousel-caption .group-access .card-access .card-access-body .panel-title, .group-access .card-access .card-access-body .card-access-title {
   font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.25rem;
   line-height: 1.5rem;
@@ -14093,7 +14106,11 @@ a.list-group-item.item-sm {
 }
 .group-access .card-access .card-access-body h4, .group-access .card-access .card-access-body .h4, .group-access .card-access .card-access-body .stepper-content .stepper .step-title, .stepper-content .stepper .group-access .card-access .card-access-body .step-title, .group-access .card-access .card-access-body .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body h3, .group-access .card-access .card-access-body .list-steps.list-steps-lg .list-steps-item .h3, .list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body .h3,
 .group-access .card-access .card-access-body .list-steps.list-steps-lg .list-steps-item .list-steps-item-title,
-.list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body .list-steps-item-title, .group-access .card-access .card-access-body .carousel-caption h5, .carousel-caption .group-access .card-access .card-access-body h5, .group-access .card-access .card-access-body .carousel-caption .h5, .group-access .card-access .card-access-body .carousel-caption .panel-vertical .panel-title, .panel-vertical .group-access .card-access .card-access-body .carousel-caption .panel-title, .carousel-caption .group-access .card-access .card-access-body .h5, .carousel-caption .group-access .card-access .card-access-body .panel-vertical .panel-title, .panel-vertical .carousel-caption .group-access .card-access .card-access-body .panel-title, .group-access .card-access .card-access-body .card-access-title {
+.list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body .list-steps-item-title, .group-access .card-access .card-access-body .carousel-caption h5, .carousel-caption .group-access .card-access .card-access-body h5, .group-access .card-access .card-access-body .carousel-caption .h5, .group-access .card-access .card-access-body .carousel-caption .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .group-access .card-access .card-access-body .carousel-caption h2.panel-title, .group-access .card-access .card-access-body .carousel-caption .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .group-access .card-access .card-access-body .carousel-caption .panel-title.h2, .group-access .card-access .card-access-body .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .group-access .card-access .card-access-body .carousel-caption h2.panel-title, .group-access .card-access .card-access-body .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .group-access .card-access .card-access-body .carousel-caption .panel-title.h2, .group-access .card-access .card-access-body .carousel-caption .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .group-access .card-access .card-access-body .carousel-caption .panel-title,
+.group-access .card-access .card-access-body .carousel-caption .panel-vertical .panel-body-dark .panel-title,
+.panel-vertical .panel-body-dark .group-access .card-access .card-access-body .carousel-caption .panel-title, .carousel-caption .group-access .card-access .card-access-body .h5, .carousel-caption .group-access .card-access .card-access-body .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .carousel-caption .group-access .card-access .card-access-body h2.panel-title, .carousel-caption .group-access .card-access .card-access-body .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .carousel-caption .group-access .card-access .card-access-body .panel-title.h2, .carousel-caption .group-access .card-access .card-access-body .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .carousel-caption .group-access .card-access .card-access-body h2.panel-title, .carousel-caption .group-access .card-access .card-access-body .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .carousel-caption .group-access .card-access .card-access-body .panel-title.h2, .carousel-caption .group-access .card-access .card-access-body .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .carousel-caption .group-access .card-access .card-access-body .panel-title,
+.carousel-caption .group-access .card-access .card-access-body .panel-vertical .panel-body-dark .panel-title,
+.panel-vertical .panel-body-dark .carousel-caption .group-access .card-access .card-access-body .panel-title, .group-access .card-access .card-access-body .card-access-title {
   font-weight: 700;
   margin-bottom: 0.25rem;
 }
@@ -16136,7 +16153,9 @@ span.form-label {
   padding-top: 0;
   padding-bottom: 0;
 }
-.carousel-caption h5, .carousel-caption .h5, .carousel-caption .panel-vertical .panel-title, .panel-vertical .carousel-caption .panel-title {
+.carousel-caption h5, .carousel-caption .h5, .carousel-caption .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .carousel-caption h2.panel-title, .carousel-caption .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .carousel-caption .panel-title.h2, .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .carousel-caption h2.panel-title, .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .carousel-caption .panel-title.h2, .carousel-caption .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .carousel-caption .panel-title,
+.carousel-caption .panel-vertical .panel-body-dark .panel-title,
+.panel-vertical .panel-body-dark .carousel-caption .panel-title {
   font-weight: 700;
 }
 
@@ -16676,90 +16695,196 @@ span.form-label {
 .alert::before {
   content: "";
   position: absolute;
-  background-repeat: no-repeat;
-  background-size: contain;
   width: 1.5rem;
   height: 1.5rem;
+  mask-size: contain;
   inset: 1rem 0 0 1rem;
 }
 .alert.alert-primary {
   border: none;
-  outline: 0.125rem solid #336acc;
-  outline-offset: -0.125rem;
+  outline: 0.0625rem solid #336acc;
+  outline-offset: -0.0625rem;
   border-radius: 0.5rem;
   color: #101e37;
 }
+.alert.alert-primary::before {
+  mask: no-repeat center;
+  background-color: #336acc;
+}
+.alert.alert-primary.system {
+  outline: unset;
+}
+.alert.alert-primary.system a,
+.alert.alert-primary.system ol {
+  color: !important;
+}
 .alert.alert-secondary {
   border: none;
-  outline: 0.125rem solid #101e37;
-  outline-offset: -0.125rem;
+  outline: 0.0625rem solid #101e37;
+  outline-offset: -0.0625rem;
   border-radius: 0.5rem;
   color: #101e37;
+}
+.alert.alert-secondary::before {
+  mask: no-repeat center;
+  background-color: #101e37;
+}
+.alert.alert-secondary.system {
+  outline: unset;
+}
+.alert.alert-secondary.system a,
+.alert.alert-secondary.system ol {
+  color: !important;
 }
 .alert.alert-success {
   background-color: #f2fbf5;
   border: none;
-  outline: 0.125rem solid #26874a;
-  outline-offset: -0.125rem;
+  outline: 0.0625rem solid #26874a;
+  outline-offset: -0.0625rem;
   border-radius: 0.5rem;
   color: #101e37;
 }
 .alert.alert-success::before {
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM9.29 16.29L5.7 12.7C5.60742 12.6074 5.53398 12.4975 5.48387 12.3765C5.43377 12.2556 5.40798 12.1259 5.40798 11.995C5.40798 11.8641 5.43377 11.7344 5.48387 11.6135C5.53398 11.4925 5.60742 11.3826 5.7 11.29C5.79258 11.1974 5.90249 11.124 6.02346 11.0739C6.14442 11.0238 6.27407 10.998 6.405 10.998C6.53593 10.998 6.66558 11.0238 6.78654 11.0739C6.90751 11.124 7.01742 11.1974 7.11 11.29L10 14.17L16.88 7.29C17.067 7.10302 17.3206 6.99798 17.585 6.99798C17.8494 6.99798 18.103 7.10302 18.29 7.29C18.477 7.47698 18.582 7.73057 18.582 7.995C18.582 8.25943 18.477 8.51302 18.29 8.7L10.7 16.29C10.6075 16.3827 10.4976 16.4563 10.3766 16.5064C10.2557 16.5566 10.126 16.5824 9.995 16.5824C9.86403 16.5824 9.73435 16.5566 9.61338 16.5064C9.4924 16.4563 9.38251 16.3827 9.29 16.29Z" fill="%2326874A"/></svg>');
+  mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM9.29 16.29L5.7 12.7C5.60742 12.6074 5.53398 12.4975 5.48387 12.3765C5.43377 12.2556 5.40798 12.1259 5.40798 11.995C5.40798 11.8641 5.43377 11.7344 5.48387 11.6135C5.53398 11.4925 5.60742 11.3826 5.7 11.29C5.79258 11.1974 5.90249 11.124 6.02346 11.0739C6.14442 11.0238 6.27407 10.998 6.405 10.998C6.53593 10.998 6.66558 11.0238 6.78654 11.0739C6.90751 11.124 7.01742 11.1974 7.11 11.29L10 14.17L16.88 7.29C17.067 7.10302 17.3206 6.99798 17.585 6.99798C17.8494 6.99798 18.103 7.10302 18.29 7.29C18.477 7.47698 18.582 7.73057 18.582 7.995C18.582 8.25943 18.477 8.51302 18.29 8.7L10.7 16.29C10.6075 16.3827 10.4976 16.4563 10.3766 16.5064C10.2557 16.5566 10.126 16.5824 9.995 16.5824C9.86403 16.5824 9.73435 16.5566 9.61338 16.5064C9.4924 16.4563 9.38251 16.3827 9.29 16.29Z" fill="%2326874A"/></svg>') no-repeat center;
+  background-color: #26874a;
+}
+.alert.alert-success.system {
+  outline: unset;
+  background-color: #26874a;
+  color: #ffffff;
+}
+.alert.alert-success.system::before {
+  background-color: #ffffff;
+}
+.alert.alert-success.system a,
+.alert.alert-success.system ol {
+  color: #ffffff !important;
 }
 .alert.alert-tertiary {
   border: none;
-  outline: 0.125rem solid #005e7a;
-  outline-offset: -0.125rem;
+  outline: 0.0625rem solid #005e7a;
+  outline-offset: -0.0625rem;
   border-radius: 0.5rem;
   color: #101e37;
+}
+.alert.alert-tertiary::before {
+  mask: no-repeat center;
+  background-color: #005e7a;
+}
+.alert.alert-tertiary.system {
+  outline: unset;
+}
+.alert.alert-tertiary.system a,
+.alert.alert-tertiary.system ol {
+  color: !important;
 }
 .alert.alert-info {
   background-color: #e5f9ff;
   border: none;
-  outline: 0.125rem solid #0086ad;
-  outline-offset: -0.125rem;
+  outline: 0.0625rem solid #0086ad;
+  outline-offset: -0.0625rem;
   border-radius: 0.5rem;
   color: #101e37;
 }
 .alert.alert-info::before {
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 17C11.45 17 11 16.55 11 16V12C11 11.45 11.45 11 12 11C12.55 11 13 11.45 13 12V16C13 16.55 12.55 17 12 17ZM13 9H11V7H13V9Z" fill="%230086AD"/></svg>');
+  mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 17C11.45 17 11 16.55 11 16V12C11 11.45 11.45 11 12 11C12.55 11 13 11.45 13 12V16C13 16.55 12.55 17 12 17ZM13 9H11V7H13V9Z" fill="%230086AD"/></svg>') no-repeat center;
+  background-color: #0086ad;
+}
+.alert.alert-info.system {
+  outline: unset;
+  background-color: #336acc;
+  color: #ffffff;
+}
+.alert.alert-info.system::before {
+  background-color: #ffffff;
+}
+.alert.alert-info.system a,
+.alert.alert-info.system ol {
+  color: #ffffff !important;
 }
 .alert.alert-warning {
   background-color: #fff4e5;
   border: none;
-  outline: 0.125rem solid #ff9500;
-  outline-offset: -0.125rem;
+  outline: 0.0625rem solid #ff9500;
+  outline-offset: -0.0625rem;
   border-radius: 0.5rem;
   color: #101e37;
 }
 .alert.alert-warning::before {
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4.47012 21H19.5301C21.0701 21 22.0301 19.33 21.2601 18L13.7301 4.98999C12.9601 3.65999 11.0401 3.65999 10.2701 4.98999L2.74012 18C1.97012 19.33 2.93012 21 4.47012 21ZM12.0001 14C11.4501 14 11.0001 13.55 11.0001 13V11C11.0001 10.45 11.4501 9.99999 12.0001 9.99999C12.5501 9.99999 13.0001 10.45 13.0001 11V13C13.0001 13.55 12.5501 14 12.0001 14ZM13.0001 18H11.0001V16H13.0001V18Z" fill="%23FF9500"/></svg>');
+  mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4.47012 21H19.5301C21.0701 21 22.0301 19.33 21.2601 18L13.7301 4.98999C12.9601 3.65999 11.0401 3.65999 10.2701 4.98999L2.74012 18C1.97012 19.33 2.93012 21 4.47012 21ZM12.0001 14C11.4501 14 11.0001 13.55 11.0001 13V11C11.0001 10.45 11.4501 9.99999 12.0001 9.99999C12.5501 9.99999 13.0001 10.45 13.0001 11V13C13.0001 13.55 12.5501 14 12.0001 14ZM13.0001 18H11.0001V16H13.0001V18Z" fill="%23FF9500"/></svg>') no-repeat center;
+  background-color: #ff9500;
+}
+.alert.alert-warning.system {
+  outline: unset;
+  background-color: #ff9500;
+  color: #101e37;
+}
+.alert.alert-warning.system::before {
+  background-color: #101e37;
+}
+.alert.alert-warning.system a,
+.alert.alert-warning.system ol {
+  color: #101e37 !important;
 }
 .alert.alert-danger {
   background-color: #fbefef;
   border: none;
-  outline: 0.125rem solid #cc3333;
-  outline-offset: -0.125rem;
+  outline: 0.0625rem solid #cc3333;
+  outline-offset: -0.0625rem;
   border-radius: 0.5rem;
   color: #101e37;
 }
 .alert.alert-danger::before {
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.47 2 2 6.47 2 12C2 17.53 6.47 22 12 22C17.53 22 22 17.53 22 12C22 6.47 17.53 2 12 2ZM16.3 16.3C16.2075 16.3927 16.0976 16.4663 15.9766 16.5164C15.8557 16.5666 15.726 16.5924 15.595 16.5924C15.464 16.5924 15.3343 16.5666 15.2134 16.5164C15.0924 16.4663 14.9825 16.3927 14.89 16.3L12 13.41L9.11 16.3C8.92302 16.487 8.66943 16.592 8.405 16.592C8.14057 16.592 7.88698 16.487 7.7 16.3C7.51302 16.113 7.40798 15.8594 7.40798 15.595C7.40798 15.4641 7.43377 15.3344 7.48387 15.2135C7.53398 15.0925 7.60742 14.9826 7.7 14.89L10.59 12L7.7 9.11C7.51302 8.92302 7.40798 8.66943 7.40798 8.405C7.40798 8.14057 7.51302 7.88698 7.7 7.7C7.88698 7.51302 8.14057 7.40798 8.405 7.40798C8.66943 7.40798 8.92302 7.51302 9.11 7.7L12 10.59L14.89 7.7C14.9826 7.60742 15.0925 7.53398 15.2135 7.48387C15.3344 7.43377 15.4641 7.40798 15.595 7.40798C15.7259 7.40798 15.8556 7.43377 15.9765 7.48387C16.0975 7.53398 16.2074 7.60742 16.3 7.7C16.3926 7.79258 16.466 7.90249 16.5161 8.02346C16.5662 8.14442 16.592 8.27407 16.592 8.405C16.592 8.53593 16.5662 8.66558 16.5161 8.78654C16.466 8.90751 16.3926 9.01742 16.3 9.11L13.41 12L16.3 14.89C16.68 15.27 16.68 15.91 16.3 16.3Z" fill="%23CC3333"/></svg>');
+  mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 11C9.45 11 9 10.55 9 10V6C9 5.45 9.45 5 10 5C10.55 5 11 5.45 11 6V10C11 10.55 10.55 11 10 11ZM11 15H9V13H11V15Z" fill="%23CC3333"/></svg>') no-repeat center;
+  background-color: #cc3333;
+}
+.alert.alert-danger.system {
+  outline: unset;
+  background-color: #a32929;
+  color: #ffffff;
+}
+.alert.alert-danger.system::before {
+  background-color: #ffffff;
+}
+.alert.alert-danger.system a,
+.alert.alert-danger.system ol {
+  color: #ffffff !important;
 }
 .alert.alert-light {
   border: none;
-  outline: 0.125rem solid #f3f6f9;
-  outline-offset: -0.125rem;
+  outline: 0.0625rem solid #f3f6f9;
+  outline-offset: -0.0625rem;
   border-radius: 0.5rem;
   color: #101e37;
 }
+.alert.alert-light::before {
+  mask: no-repeat center;
+  background-color: #f3f6f9;
+}
+.alert.alert-light.system {
+  outline: unset;
+}
+.alert.alert-light.system a,
+.alert.alert-light.system ol {
+  color: !important;
+}
 .alert.alert-dark {
   border: none;
-  outline: 0.125rem solid #002733;
-  outline-offset: -0.125rem;
+  outline: 0.0625rem solid #002733;
+  outline-offset: -0.0625rem;
   border-radius: 0.5rem;
   color: #101e37;
+}
+.alert.alert-dark::before {
+  mask: no-repeat center;
+  background-color: #002733;
+}
+.alert.alert-dark.system {
+  outline: unset;
+}
+.alert.alert-dark.system a,
+.alert.alert-dark.system ol {
+  color: !important;
 }
 .alert.alert-primary, .alert.alert-secondary, .alert.alert-tertiary, .alert.alert-light, .alert.alert-dark {
   outline: none;
@@ -16775,6 +16900,7 @@ span.form-label {
 }
 .alert ol li {
   margin-bottom: 0.5rem;
+  font-size: 14px;
 }
 .alert ol li::before {
   counter-increment: section;
@@ -16798,6 +16924,20 @@ span.form-label {
 }
 .alert.alert-dismissible .btn-close:focus {
   box-shadow: 0 0 0 0.25rem #218274;
+}
+.alert .alert-links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.alert .alert-links a {
+  font-size: 14px;
+}
+@media (min-width: 576px) {
+  .alert .alert-links {
+    flex-direction: row;
+    column-gap: 16px;
+  }
 }
 @media (min-width: 1200px) {
   .alert {
@@ -16965,7 +17105,11 @@ span.form-label {
 }
 .main-footer h4, .main-footer .h4, .main-footer .stepper-content .stepper .step-title, .stepper-content .stepper .main-footer .step-title, .main-footer .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .main-footer h3, .main-footer .list-steps.list-steps-lg .list-steps-item .h3, .list-steps.list-steps-lg .list-steps-item .main-footer .h3,
 .main-footer .list-steps.list-steps-lg .list-steps-item .list-steps-item-title,
-.list-steps.list-steps-lg .list-steps-item .main-footer .list-steps-item-title, .main-footer .group-access .card-access .card-access-body .card-access-title, .group-access .card-access .card-access-body .main-footer .card-access-title, .main-footer .carousel-caption h5, .carousel-caption .main-footer h5, .main-footer .carousel-caption .h5, .main-footer .carousel-caption .panel-vertical .panel-title, .panel-vertical .main-footer .carousel-caption .panel-title, .carousel-caption .main-footer .h5, .carousel-caption .main-footer .panel-vertical .panel-title, .panel-vertical .carousel-caption .main-footer .panel-title,
+.list-steps.list-steps-lg .list-steps-item .main-footer .list-steps-item-title, .main-footer .group-access .card-access .card-access-body .card-access-title, .group-access .card-access .card-access-body .main-footer .card-access-title, .main-footer .carousel-caption h5, .carousel-caption .main-footer h5, .main-footer .carousel-caption .h5, .main-footer .carousel-caption .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .main-footer .carousel-caption h2.panel-title, .main-footer .carousel-caption .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .main-footer .carousel-caption .panel-title.h2, .main-footer .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .main-footer .carousel-caption h2.panel-title, .main-footer .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .main-footer .carousel-caption .panel-title.h2, .main-footer .carousel-caption .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .main-footer .carousel-caption .panel-title,
+.main-footer .carousel-caption .panel-vertical .panel-body-dark .panel-title,
+.panel-vertical .panel-body-dark .main-footer .carousel-caption .panel-title, .carousel-caption .main-footer .h5, .carousel-caption .main-footer .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .carousel-caption .main-footer h2.panel-title, .carousel-caption .main-footer .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .carousel-caption .main-footer .panel-title.h2, .carousel-caption .main-footer .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .carousel-caption .main-footer h2.panel-title, .carousel-caption .main-footer .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .carousel-caption .main-footer .panel-title.h2, .carousel-caption .main-footer .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .carousel-caption .main-footer .panel-title,
+.carousel-caption .main-footer .panel-vertical .panel-body-dark .panel-title,
+.panel-vertical .panel-body-dark .carousel-caption .main-footer .panel-title,
 .main-footer h3,
 .main-footer .h3 {
   font-size: 1.125rem;
@@ -16976,7 +17120,11 @@ span.form-label {
 @media (max-width: 575.98px) {
   .main-footer h4, .main-footer .h4, .main-footer .stepper-content .stepper .step-title, .stepper-content .stepper .main-footer .step-title, .main-footer .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .main-footer h3, .main-footer .list-steps.list-steps-lg .list-steps-item .h3, .list-steps.list-steps-lg .list-steps-item .main-footer .h3,
   .main-footer .list-steps.list-steps-lg .list-steps-item .list-steps-item-title,
-  .list-steps.list-steps-lg .list-steps-item .main-footer .list-steps-item-title, .main-footer .group-access .card-access .card-access-body .card-access-title, .group-access .card-access .card-access-body .main-footer .card-access-title, .main-footer .carousel-caption h5, .carousel-caption .main-footer h5, .main-footer .carousel-caption .h5, .main-footer .carousel-caption .panel-vertical .panel-title, .panel-vertical .main-footer .carousel-caption .panel-title, .carousel-caption .main-footer .h5, .carousel-caption .main-footer .panel-vertical .panel-title, .panel-vertical .carousel-caption .main-footer .panel-title,
+  .list-steps.list-steps-lg .list-steps-item .main-footer .list-steps-item-title, .main-footer .group-access .card-access .card-access-body .card-access-title, .group-access .card-access .card-access-body .main-footer .card-access-title, .main-footer .carousel-caption h5, .carousel-caption .main-footer h5, .main-footer .carousel-caption .h5, .main-footer .carousel-caption .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .main-footer .carousel-caption h2.panel-title, .main-footer .carousel-caption .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .main-footer .carousel-caption .panel-title.h2, .main-footer .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .main-footer .carousel-caption h2.panel-title, .main-footer .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .main-footer .carousel-caption .panel-title.h2, .main-footer .carousel-caption .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .main-footer .carousel-caption .panel-title,
+  .main-footer .carousel-caption .panel-vertical .panel-body-dark .panel-title,
+  .panel-vertical .panel-body-dark .main-footer .carousel-caption .panel-title, .carousel-caption .main-footer .h5, .carousel-caption .main-footer .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .carousel-caption .main-footer h2.panel-title, .carousel-caption .main-footer .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .carousel-caption .main-footer .panel-title.h2, .carousel-caption .main-footer .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .carousel-caption .main-footer h2.panel-title, .carousel-caption .main-footer .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .carousel-caption .main-footer .panel-title.h2, .carousel-caption .main-footer .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .carousel-caption .main-footer .panel-title,
+  .carousel-caption .main-footer .panel-vertical .panel-body-dark .panel-title,
+  .panel-vertical .panel-body-dark .carousel-caption .main-footer .panel-title,
   .main-footer h3,
   .main-footer .h3 {
     margin-bottom: 1rem;
@@ -18120,6 +18268,76 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
   color: #ffffff;
 }
 
+header.hero .aside img.hero-bottom,
+header.hero .aside video.hero-bottom {
+  object-position: bottom;
+}
+
+header.hero .aside img.hero-top,
+header.hero .aside video.hero-top {
+  object-position: top;
+}
+
+header.hero .aside img.hero-center,
+header.hero .aside video.hero-center {
+  object-position: center;
+}
+
+header.hero .aside img.hero-right,
+header.hero .aside video.hero-right {
+  object-position: right;
+}
+
+header.hero .aside img.hero-left,
+header.hero .aside video.hero-left {
+  object-position: left;
+}
+
+header.hero .aside img.hero-bottom-center,
+header.hero .aside video.hero-bottom-center {
+  object-position: bottom center;
+}
+
+header.hero .aside img.hero-bottom-right,
+header.hero .aside video.hero-bottom-right {
+  object-position: bottom right;
+}
+
+header.hero .aside img.hero-bottom-left,
+header.hero .aside video.hero-bottom-left {
+  object-position: bottom left;
+}
+
+header.hero .aside img.hero-top-center,
+header.hero .aside video.hero-top-center {
+  object-position: top center;
+}
+
+header.hero .aside img.hero-top-right,
+header.hero .aside video.hero-top-right {
+  object-position: top right;
+}
+
+header.hero .aside img.hero-top-left,
+header.hero .aside video.hero-top-left {
+  object-position: top left;
+}
+
+header.hero .aside img.hero-center-center,
+header.hero .aside video.hero-center-center {
+  object-position: center center;
+}
+
+header.hero .aside img.hero-center-right,
+header.hero .aside video.hero-center-right {
+  object-position: center right;
+}
+
+header.hero .aside img.hero-center-left,
+header.hero .aside video.hero-center-left {
+  object-position: center left;
+}
+
 .list-link {
   display: flex;
   flex-direction: column;
@@ -18414,7 +18632,7 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
   max-width: 728px;
 }
 .panel-vertical .panel-body .panel-title {
-  margin: 0;
+  margin-bottom: 8px;
 }
 .panel-vertical .panel-body .panel-footer {
   display: flex;
@@ -18555,7 +18773,7 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
   max-width: 728px;
 }
 .panel-horizontal-content .panel-horizontal .panel-body .panel-title {
-  margin: 0;
+  margin-bottom: 8px;
 }
 .panel-horizontal-content .panel-horizontal .panel-body .panel-footer {
   display: flex;
@@ -18611,6 +18829,9 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
     height: 296px;
   }
 }
+.panel-horizontal-content .panel-horizontal .panel-img {
+  border-radius: 1.5rem;
+}
 .panel-horizontal-content .panel-img,
 .panel-horizontal-content video {
   width: 100%;
@@ -18620,6 +18841,15 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
   object-fit: cover;
   object-position: center;
   aspect-ratio: 16/9;
+}
+.panel-horizontal-content.bg-dark {
+  background-color: #002733;
+  color: #ffffff;
+}
+.panel-horizontal-content.bg-dark .panel-horizontal .panel-body h5.panel-title, .panel-horizontal-content.bg-dark .panel-horizontal .panel-body .panel-title.h5, .panel-horizontal-content.bg-dark .panel-horizontal .panel-vertical .panel-body .panel-title, .panel-vertical .panel-horizontal-content.bg-dark .panel-horizontal .panel-body .panel-title,
+.panel-horizontal-content.bg-dark .panel-horizontal .panel-body .panel-vertical .panel-body-dark .panel-title, .panel-horizontal-content.bg-dark .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content.bg-dark .panel-horizontal .panel-body .panel-title.h2,
+.panel-horizontal-content.bg-dark .panel-horizontal .panel-body .panel-text {
+  color: #ffffff;
 }
 
 .panel-lateral {
@@ -18648,7 +18878,7 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
   max-width: 728px;
 }
 .panel-lateral .panel-body .panel-title {
-  margin: 0;
+  margin-bottom: 8px;
 }
 .panel-lateral .panel-body .panel-footer {
   display: flex;
@@ -18709,7 +18939,6 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
     padding: 1.5rem 1rem;
   }
 }
-
 .accordion .accordion-item:not(:last-of-type) {
   margin-bottom: 1rem;
 }
@@ -19281,22 +19510,20 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
   }
 }
 .carousel {
-  padding: 24px 16px;
   background-color: #f3f6f9;
   display: flex;
   flex-direction: column;
   row-gap: 24px;
+  padding: 24px 16px;
 }
 .carousel .carousel-inner {
   border-radius: 8px;
 }
 .carousel .carousel-indicators {
   position: relative;
-  justify-content: start;
   margin: 0;
   align-items: center;
   column-gap: 8px;
-  height: 48px;
 }
 .carousel .carousel-indicators button {
   margin: 0;
@@ -19312,8 +19539,6 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
 }
 .carousel .carousel-control-next,
 .carousel .carousel-control-prev {
-  top: auto;
-  bottom: 12px;
   z-index: 2;
   display: flex;
   align-items: center;
@@ -19321,22 +19546,16 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
   border-radius: 0.5rem;
   border: none;
   outline: 0.125rem solid #e6ebf0;
-  width: 48px;
-  height: 48px;
 }
 .carousel .carousel-control-next .carousel-control-prev-icon,
 .carousel .carousel-control-prev .carousel-control-prev-icon {
   background-image: none;
   content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 6.70498C14.61 6.31498 13.98 6.31498 13.59 6.70498L9.00002 11.295C8.61002 11.685 8.61002 12.315 9.00002 12.705L13.59 17.295C13.98 17.685 14.61 17.685 15 17.295C15.39 16.905 15.39 16.275 15 15.885L11.12 11.995L15 8.11498C15.39 7.72498 15.38 7.08498 15 6.70498Z" fill="%23101E37"/></svg>');
-  width: 32px;
-  height: 32px;
 }
 .carousel .carousel-control-next .carousel-control-next-icon,
 .carousel .carousel-control-prev .carousel-control-next-icon {
   background-image: none;
   content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9.00002 6.71063C8.61002 7.10063 8.61002 7.73063 9.00002 8.12063L12.88 12.0006L9.00002 15.8806C8.61002 16.2706 8.61002 16.9006 9.00002 17.2906C9.39002 17.6806 10.02 17.6806 10.41 17.2906L15 12.7006C15.39 12.3106 15.39 11.6806 15 11.2906L10.41 6.70063C10.03 6.32063 9.39002 6.32063 9.00002 6.71063Z" fill="%23101E37"/></svg>');
-  width: 32px;
-  height: 32px;
 }
 .carousel .carousel-control-next:focus,
 .carousel .carousel-control-prev:focus {
@@ -19382,12 +19601,30 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
 .carousel .carousel-control-prev:active .carousel-control-next-icon {
   content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9.00002 6.71063C8.61002 7.10063 8.61002 7.73063 9.00002 8.12063L12.88 12.0006L9.00002 15.8806C8.61002 16.2706 8.61002 16.9006 9.00002 17.2906C9.39002 17.6806 10.02 17.6806 10.41 17.2906L15 12.7006C15.39 12.3106 15.39 11.6806 15 11.2906L10.41 6.70063C10.03 6.32063 9.39002 6.32063 9.00002 6.71063Z" fill="%23FFFFFF"/></svg>');
 }
+.carousel .carousel-indicators {
+  justify-content: start;
+  height: 48px;
+}
+.carousel .carousel-control-next,
+.carousel .carousel-control-prev {
+  top: auto;
+  bottom: 12px;
+  width: 48px;
+  height: 48px;
+}
+.carousel .carousel-control-next .carousel-control-prev-icon,
+.carousel .carousel-control-next .carousel-control-next-icon,
+.carousel .carousel-control-prev .carousel-control-prev-icon,
+.carousel .carousel-control-prev .carousel-control-next-icon {
+  width: 32px;
+  height: 32px;
+}
 .carousel .carousel-control-next {
-  right: 16px;
+  right: 32px;
 }
 .carousel .carousel-control-prev {
   left: auto;
-  right: 84px;
+  right: 100px;
 }
 .carousel .title {
   display: flex;
@@ -19401,10 +19638,6 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
 }
 .carousel:has(.title > a) {
   padding-bottom: 64px;
-}
-.carousel:has(.title > a) .carousel-control-next,
-.carousel:has(.title > a) .carousel-control-prev {
-  bottom: 52px;
 }
 .carousel .panel-horizontal-content {
   background-color: transparent;
@@ -19428,6 +19661,9 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
   border-color: #ffffff;
 }
 .carousel.dark .carousel-indicators button.active {
+  background-color: #ffffff;
+}
+.carousel.white {
   background-color: #ffffff;
 }
 @media (width < 768px) {
@@ -19467,9 +19703,6 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
   }
 }
 @media (width >= 768px) {
-  .carousel.cards {
-    padding: 24px 32px;
-  }
   .carousel.cards .carousel-inner {
     overflow-x: hidden;
   }
@@ -19483,17 +19716,54 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
     max-width: 33%;
   }
   .carousel:has(.title > a) {
-    padding-bottom: 12px;
-  }
-  .carousel:has(.title > a) .carousel-control-next,
-  .carousel:has(.title > a) .carousel-control-prev {
-    bottom: 6px;
+    padding-bottom: 32px;
   }
   .carousel .title a {
     position: unset;
   }
+  .carousel .responsive-scroll {
+    padding: 0;
+  }
 }
 @media (width >= 992px) {
+  .carousel {
+    padding: 48px 0 32px;
+  }
+  .carousel .carousel-indicators {
+    justify-content: center;
+    height: auto;
+  }
+  .carousel .carousel-control-next,
+  .carousel .carousel-control-prev {
+    top: 50%;
+    bottom: auto;
+    width: 64px;
+    height: 64px;
+  }
+  .carousel .carousel-control-next .carousel-control-prev-icon,
+  .carousel .carousel-control-prev .carousel-control-prev-icon {
+    width: 48px;
+    height: 48px;
+  }
+  .carousel .carousel-control-next .carousel-control-next-icon,
+  .carousel .carousel-control-prev .carousel-control-next-icon {
+    width: 48px;
+    height: 48px;
+  }
+  .carousel .carousel-control-prev {
+    left: 28px;
+    right: auto;
+  }
+  .carousel .carousel-control-next {
+    right: 28px;
+    left: auto;
+  }
+  .carousel .carousel-control-prev {
+    left: max(5px, (100% - 720px) / 2 + 0.75rem - 114px);
+  }
+  .carousel .carousel-control-next {
+    right: max(5px, (100% - 720px) / 2 + 0.75rem - 114px);
+  }
   .carousel .carousel-inner {
     border-radius: 16px;
     margin: 0 auto;
@@ -19503,39 +19773,7 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
     padding: 0 8px;
   }
   .carousel .title {
-    padding-left: calc((100% - 720px) / 2 + 0.75rem) !important;
-  }
-  .carousel:not(.cards) {
-    padding: 48px 129px 32px;
-  }
-  .carousel:not(.cards) .carousel-indicators {
-    justify-content: center;
-    height: auto;
-  }
-  .carousel:not(.cards) .carousel-control-next,
-  .carousel:not(.cards) .carousel-control-prev {
-    top: 50%;
-    bottom: auto;
-    width: 64px;
-    height: 64px;
-  }
-  .carousel:not(.cards) .carousel-control-next .carousel-control-prev-icon,
-  .carousel:not(.cards) .carousel-control-prev .carousel-control-prev-icon {
-    width: 48px;
-    height: 48px;
-  }
-  .carousel:not(.cards) .carousel-control-next .carousel-control-next-icon,
-  .carousel:not(.cards) .carousel-control-prev .carousel-control-next-icon {
-    width: 48px;
-    height: 48px;
-  }
-  .carousel:not(.cards) .carousel-control-prev {
-    left: 28px;
-    right: auto;
-  }
-  .carousel:not(.cards) .carousel-control-next {
-    right: 28px;
-    left: auto;
+    padding-left: calc((100% - 720px) / 2 + 0.75rem);
   }
   .carousel .panel-horizontal-content {
     padding: 0;
@@ -19549,45 +19787,91 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div sp
   }
 }
 @media (width >= 1200px) {
+  .carousel {
+    padding: 24px 16px;
+  }
+  .carousel .carousel-indicators {
+    justify-content: start;
+    height: 48px;
+  }
+  .carousel .carousel-control-next,
+  .carousel .carousel-control-prev {
+    top: auto;
+    bottom: 12px;
+    width: 48px;
+    height: 48px;
+  }
+  .carousel .carousel-control-next .carousel-control-prev-icon,
+  .carousel .carousel-control-next .carousel-control-next-icon,
+  .carousel .carousel-control-prev .carousel-control-prev-icon,
+  .carousel .carousel-control-prev .carousel-control-next-icon {
+    width: 32px;
+    height: 32px;
+  }
+  .carousel .carousel-control-next {
+    right: 32px;
+  }
+  .carousel .carousel-control-prev {
+    left: auto;
+    right: 100px;
+  }
+  .carousel .carousel-indicators {
+    padding-left: calc((100% - 1140px) / 2 + 0.75rem);
+  }
+  .carousel .carousel-control-next {
+    right: max(22px, (100% - 1140px) / 2 + 0.75rem);
+  }
+  .carousel .carousel-control-prev {
+    right: max(86px, (100% - 1140px) / 2 + 0.75rem + 64px);
+  }
   .carousel .carousel-inner {
     max-width: 1140px;
   }
   .carousel .title {
-    padding-left: calc((100% - 1140px) / 2 + 0.75rem) !important;
+    padding-left: calc((100% - 1140px) / 2 + 0.75rem);
   }
 }
 @media (width >= 1400px) {
-  .carousel.cards {
-    padding: 48px 129px 32px;
+  .carousel {
+    padding: 48px 0 32px;
   }
-  .carousel.cards .carousel-indicators {
+  .carousel .carousel-indicators {
     justify-content: center;
     height: auto;
   }
-  .carousel.cards .carousel-control-next,
-  .carousel.cards .carousel-control-prev {
+  .carousel .carousel-control-next,
+  .carousel .carousel-control-prev {
     top: 50%;
     bottom: auto;
     width: 64px;
     height: 64px;
   }
-  .carousel.cards .carousel-control-next .carousel-control-prev-icon,
-  .carousel.cards .carousel-control-prev .carousel-control-prev-icon {
+  .carousel .carousel-control-next .carousel-control-prev-icon,
+  .carousel .carousel-control-prev .carousel-control-prev-icon {
     width: 48px;
     height: 48px;
   }
-  .carousel.cards .carousel-control-next .carousel-control-next-icon,
-  .carousel.cards .carousel-control-prev .carousel-control-next-icon {
+  .carousel .carousel-control-next .carousel-control-next-icon,
+  .carousel .carousel-control-prev .carousel-control-next-icon {
     width: 48px;
     height: 48px;
   }
-  .carousel.cards .carousel-control-prev {
+  .carousel .carousel-control-prev {
     left: 28px;
     right: auto;
   }
-  .carousel.cards .carousel-control-next {
+  .carousel .carousel-control-next {
     right: 28px;
     left: auto;
+  }
+  .carousel .carousel-indicators {
+    padding-left: 0;
+  }
+  .carousel .carousel-control-prev {
+    left: max(5px, (100% - 1140px) / 2 + 0.75rem - 114px);
+  }
+  .carousel .carousel-control-next {
+    right: max(5px, (100% - 1140px) / 2 + 0.75rem - 114px);
   }
 }
 

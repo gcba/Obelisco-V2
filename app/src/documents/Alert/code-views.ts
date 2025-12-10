@@ -1,5 +1,4 @@
-export const SIMPLE_ALERT = `
-  <div class="alert alert-info" role="alert">
+export const SIMPLE_ALERT = `<div class="alert alert-info" role="alert">
     Esta es la descripción de una alerta de información.
   </div>
 
@@ -16,8 +15,7 @@ export const SIMPLE_ALERT = `
   </div>
 `;
 
-export const WITH_CLOSE_ALERT = `
-  <div class="alert alert-info alert-dismissible fade show" role="alert">
+export const WITH_CLOSE_ALERT = `<div class="alert alert-info alert-dismissible fade show" role="alert">
     <p>Esta es la descripción de una alerta de información.</p>
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
   </div>
@@ -38,8 +36,7 @@ export const WITH_CLOSE_ALERT = `
   </div>
 `;
 
-export const HIGHLIGTHED_ALERT = `
-  <div class="alert alert-info" role="alert">
+export const HIGHLIGHTED_ALERT = `<div class="alert alert-info" role="alert">
     <p>
       <strong>Este es un destacado de una alerta de información.</strong> Esta es la descripción de una alerta de información que continua al texto destacado.
     </p>
@@ -66,8 +63,7 @@ export const HIGHLIGTHED_ALERT = `
   </div>
 `;
 
-export const HYPERLINK_ALERT = `
-  <div class="alert alert-info" role="alert">
+export const HYPERLINK_ALERT = `<div class="alert alert-info" role="alert">
     <p>
       <strong>Este es un destacado de una alerta de información. </strong>
       Esta es la descripción de una alerta de información que continua al texto destacado, incluso <a href="#">con enlaces</a>.
@@ -96,8 +92,7 @@ export const HYPERLINK_ALERT = `
   </div>
 `;
 
-export const LIST_LINK_ALERT = `
-  <div class="alert alert-danger" role="alert">
+export const LIST_LINK_ALERT = `<div class="alert alert-danger" role="alert">
     <p>
       <strong>Este es un destacado de una alerta de error.</strong> Esta es la descripción de una alerta de error que continua al texto destacado.
     </p>
@@ -111,8 +106,7 @@ export const LIST_LINK_ALERT = `
   </div>
 `;
 
-export const WITH_DESCRIPTION_ALERT = `
-  <div class="alert alert-info" role="alert">
+export const WITH_DESCRIPTION_ALERT = `<div class="alert alert-info" role="alert">
     <p>
       <strong>Este es un destacado de una alerta de información.</strong> Esta es la descripción de una alerta de información que continua al texto destacado.
     </p>
@@ -124,4 +118,67 @@ export const WITH_DESCRIPTION_ALERT = `
       <li><span>Texto descriptivo 5</span></li>
     </ol>
   </div>
+`;
+
+export const SYSTEM_ALERT = `// <!-- Alerta sistema Info -->
+	<div class="alert alert-info system" role="alert">
+		<p>
+			<strong>Este es un destacado de una alerta de información.</strong>
+			Esta es la descripción de una alerta de información que continua al texto destacado. <a href="#">con enlaces</a>
+		</p>
+	</div>
+
+  // <!-- Alerta sistema Success -->
+	<div class="alert alert-success system" role="alert">
+    <p>
+      <strong>Este es un destacado de una alerta de información.</strong>
+      Esta es la descripción de una alerta de información que continua al texto destacado.
+    </p>
+	<div class="alert-links">
+		<a href="#">con enlaces</a>
+		<a href="#">con enlaces</a>
+	</div>
+  </div>
+
+  // <!-- Alerta sistema Warning -->
+	<div class="alert alert-warning system" role="alert">
+    <p>
+      <strong>Este es un destacado de una alerta de información.</strong>
+      Esta es la descripción de una alerta de información que continua al texto destacado.
+    </p>
+		<ol>
+			<li><a href="#">con enlaces</a></li>
+			<li><a href="#">con enlaces</a></li>
+			<li><a href="#">con enlaces</a></li>
+			<li><a href="#">con enlaces</a></li>
+			<li><a href="#">con enlaces</a></li>
+		</ol>
+  </div>
+
+  // <!-- Alerta sistema Danger -->
+	<div class="alert alert-danger system" role="alert">
+    <p>
+      <strong>Este es un destacado de una alerta de información.</strong>
+      Esta es la descripción de una alerta de información que continua al texto destacado.
+    </p>
+		<ol>
+			<li>Texto descriptivo</li>
+			<li>Texto descriptivo</li>
+			<li>Texto descriptivo</li>
+			<li>Texto descriptivo</li>
+			<li>Texto descriptivo</li>
+		</ol>
+  </div>
+`;
+
+export const ALERTAS_ACCESSIBILTY = `<div class="alert alert-info" role="alert">
+  Esta es la descripción de una alerta de información.
+</div>
+`;
+
+export const ALERTAS_ACCESSIBILTY_2 = `<div class="alert alert-info" role="alert" aria-labelledby="alertTitulo" 
+aria-describedby="alertDesc">
+  <h4 id="alertTitulo">Actualización del sistema</h4>
+  <p id="alertDesc">El servicio estará disponible nuevamente a las 14:00.</p>
+</div>
 `;

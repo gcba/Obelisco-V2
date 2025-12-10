@@ -472,3 +472,10 @@ export const DROPDOWN_RADIO_JS = `
     });
   }
 `;
+export const DROPWDOWN_ACCESSIBILTY = `<button 
+  type="button" 
+  class="btn btn-dropdown btn-lg" 
+  data-bs-toogle="dropdown"  aria-haspopup="true" 
+  aria-expanded="false" 
+  data-bs-auto-close="outside"
+>`;

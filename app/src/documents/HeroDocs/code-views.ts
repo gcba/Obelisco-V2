@@ -561,3 +561,25 @@ export const HERO_DARK = `<header class="hero bg-content-hero-dark">
   </div>
   <div class="aside bg-aside-hero-light"></div>
 </header>`;
+
+export const HERO_ACCESIBILITY = `<header class="hero">
+   <div class="content wave">
+      <div class="d-flex flex-column">
+         <nav aria-label="Navegación secundaria">... </nav>
+         <div>
+            <h1 class="mb-3">Encabezado único de la página</h1>
+            <p class="lead m-0">Subtítulo de la página</p>
+         </div>
+      </div>
+   </div>
+</header>
+`;
+
+export const HERO_ACCESIBILITY_2 = `<header class="hero"> 
+  <div class="content wave"> ... </div> 
+  <div class="aside">
+    <img alt="Festival de música al aire libre en Buenos Aires, con banda tocando en escenario" 
+    loading="lazy" decoding="async" data-nimg="fill" src="/images/hero/multimedia-hero.jpg">
+  </div>
+</header>
+`;

@@ -33,7 +33,7 @@ const ReleasesComponents: React.FC = () => {
             está la documentación de las nuevas clases.
           </li>
           <li>En el componente Carrusel, el contenido se alinea con el container, solo en resoluciones desktop.</li>
-          <li>Se agrega la variante de fondo blanco para el carrusel de destacados</li>
+          <li>Se agrega la variante de fondo blanco para el carrusel de destacados.</li>
           <li>
             Se agregan clases en los elementos <code>{'<img>'}</code> y <code>{'<video>'}</code> para ajustar el
             alineamento de la multimedia en el componente Cabecera de Página. En{' '}
@@ -42,7 +42,8 @@ const ReleasesComponents: React.FC = () => {
             </a>{' '}
             está la documentación de las nuevas clases.
           </li>
-          <li>Correcciones de los code-view en los componentes.</li>
+          <li>Se agrega la variante de fondo oscuro al componente destacado horizontal.</li>
+          <li>Se hacen correcciones de los code-view en los componentes.</li>
         </ul>
       ),
     },

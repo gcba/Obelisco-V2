@@ -75,6 +75,19 @@ const sections = [
             <code>data-dismiss=&quot;alert&quot;</code> por <code>data-bs-dismiss=&quot;alert&quot;</code>, y la clase{' '}
             <code>.close</code> se reemplaza por <code>.btn-close</code>.
           </li>
+
+          <p className="text-md my-4">
+            <strong>Versión 1.8.4 ⬇️</strong>
+          </p>
+
+          <li>
+            Para Alertas de Sistema; Se crea la clase <code>.system</code>, que debe usarse junto a{' '}
+            <code>.alert-{'{color}'}</code>
+          </li>
+          <li>
+            Donde <code>{'color'}</code> puede ser: <code>{'primary'}</code>, <code>{'secondary'}</code>,
+            <code>{'tertiary'}</code>, <code>{'light'}</code>, <code>{'dark'}</code>.
+          </li>
         </ul>
       </>
     ),
@@ -146,6 +159,22 @@ const sections = [
         <li>Se corrige comportamiento en las variantes con multimedia, ahora está centrado el contenido.</li>
         <li>
           Se agregó un alto minimo en <code>.content</code>, para evitar conflictos con estilos externos.
+        </li>
+        <p className="text-md my-4">
+          <strong>Versión 1.8.4 ⬇️</strong>
+        </p>
+        <li>
+          El elemento <code>{'<div class="aside">'}</code>, puede usar <code>{'.hero-{positions-vertical}'}</code>,{' '}
+          <code>{'.hero-{positions-horizontal}'}</code> o{' '}
+          <code>{'.hero-{positions-horizontal}-{positions-vertical}'}</code> para alinear la multimedia: Los elementos{' '}
+          <code>{'<img>'}</code> y <code>{'<video>'}</code>
+        </li>
+        <li>
+          Donde <code>{'{positions-vertical}'}</code> puede ser: <code>{'bottom'}</code>, <code>{'top'}</code>,
+          <code>{'center'}</code>.
+          <br />
+          Donde <code>{'{positions-horizontal}'}</code> puede ser: <code>{'center'}</code>, <code>{'right'}</code>,
+          <code>{'left'}</code>.
         </li>
       </ul>
     ),

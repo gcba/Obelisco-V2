@@ -19,6 +19,35 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
+      title: 'Versión 1.8.4',
+      firstTitle: true,
+      content: (
+        <ul className="docs-list">
+          <p>La Versión 1.8.4 contiene lo siguiente: </p>
+          <li>Se modifica el borde en componente Alertas.</li>
+          <li>
+            Se agrega una nueva variante &quot;Alerta sistemas&quot; en el componente Alertas. En{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-3">
+              Cambios en componentes
+            </a>{' '}
+            está la documentación de las nuevas clases.
+          </li>
+          <li>En el componente Carrusel, el contenido se alinea con el container, solo en resoluciones desktop.</li>
+          <li>Se agrega la variante de fondo blanco para el carrusel de destacados.</li>
+          <li>
+            Se agregan clases en los elementos <code>{'<img>'}</code> y <code>{'<video>'}</code> para ajustar el
+            alineamento de la multimedia en el componente Cabecera de Página. En{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-3">
+              Cambios en componentes
+            </a>{' '}
+            está la documentación de las nuevas clases.
+          </li>
+          <li>Se agrega la variante de fondo oscuro al componente destacado horizontal.</li>
+          <li>Se hacen correcciones de los code-view en los componentes.</li>
+        </ul>
+      ),
+    },
+    {
       title: 'Versión 1.8.3',
       firstTitle: true,
       content: (
@@ -39,8 +68,8 @@ const ReleasesComponents: React.FC = () => {
         <ul className="docs-list">
           <p>La versión 1.8.2 contiene lo siguiente: </p>
           <li>
-            Se agrega la clase <code>card-items</code> al componente carrusel para asegurar la correcta visualización de
-            la altura de las tarjetas.
+            Se agrega la clase <code>.card-items</code> al componente carrusel para asegurar la correcta visualización
+            de la altura de las tarjetas.
           </li>
           <li>
             Se corrigieron los <code>code views</code> de los componentes y los redireccionamientos de las URLs dentro
@@ -59,7 +88,7 @@ const ReleasesComponents: React.FC = () => {
             Se modifica la variante{' '}
             <a href="https://gcba.github.io/Obelisco-V2/components/highlighted#section-dev-2">Destado Conjunto</a>, del
             componente Destacado. En{' '}
-            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-13">
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-14">
               Cambios en componentes
             </a>
             , se encuentran las modificaciones.
@@ -83,7 +112,7 @@ const ReleasesComponents: React.FC = () => {
           <li>Se modifica el nombre del componente &quot;Tarjeta de Agenda&quot; a &quot;Tarjeta de Eventos&quot;</li>
           <li>
             Se crea la clase <code>.card-eventos</code> para espaciados y tamaño. En{' '}
-            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-30">
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-31">
               Cambios en componentes
             </a>{' '}
             se disponibiliza la documentación del componente.
@@ -236,7 +265,7 @@ const ReleasesComponents: React.FC = () => {
           <li>Nueva variante de componente Tarjetas con miscelánea.</li>
           <li>
             En{' '}
-            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-30">
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-31">
               Cambios de componentes
             </a>{' '}
             se encuentran las clases para las Tarjetas con miscelánea.
@@ -252,7 +281,7 @@ const ReleasesComponents: React.FC = () => {
           <p>La versión 1.6.0 contiene lo siguiente: </p>
           <li>
             Se disponibiliza componente Galeria, se incluye documentación en{' '}
-            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-16">
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-18">
               Cambios en componentes
             </a>
             .

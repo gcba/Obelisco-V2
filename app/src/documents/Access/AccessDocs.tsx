@@ -505,7 +505,7 @@ const SECTION_UX = [
     title: 'Disposiciones',
     content: (
       <>
-        <p className="mb-4">
+        <p className="pt-2 mb-4">
           Es una agrupación de accesos que tienen cercanía en cuanto a la similitud de acción. Pueden utilizarse tanto
           vertical como horizontalmente.
         </p>
@@ -544,9 +544,7 @@ const SECTION_UX = [
     title: 'Contenido',
     content: (
       <>
-        <p className="text-xl mb-4" style={{ marginTop: '32px' }}>
-          Ejemplos de uso
-        </p>
+        <p className="text-xl mb-4">Ejemplos de uso</p>
 
         <div className="col">
           <Image
@@ -556,7 +554,7 @@ const SECTION_UX = [
             height="200"
             className="img-fluid"
           />
-          <div className="d-flex align-items-center mt-2">
+          <div className="d-flex align-items-center mt-2 gap-1">
             <span className="material-symbols-rounded text-success">check</span>
             <p className="mb-0 text-sm">
               Recomendamos limitarse a una línea de texto para el título y la descripción de los accesos.{' '}
@@ -571,7 +569,7 @@ const SECTION_UX = [
             height="200"
             className="img-fluid mt-3"
           />
-          <div className="d-flex align-items-center mt-2">
+          <div className="d-flex align-items-center mt-2  gap-1">
             <span className="material-symbols-rounded text-danger">check</span>
             <p className="mb-0 text-sm">No utilizar puntos suspensivos para truncar el texto de los accesos</p>
           </div>
@@ -720,7 +718,7 @@ const SPECS = [
           alt="Acceso tamaños"
           width="800"
           height="280"
-          className="img-fluid mt.3"
+          className="img-fluid mt-3"
         />
       </>
     ),
@@ -737,7 +735,7 @@ const SPECS = [
     ),
     content: (
       <>
-        <p className="text-md mb-4">Estado predeterminado de los botones en una interfaz.</p>
+        <p className="text-md mb-4 mt-2">Estado predeterminado de los botones en una interfaz.</p>
         <Image
           src={`${basePath}/images/access/accesos_default.svg`}
           alt="Estado predeterminado del componente acceso en una interfaz. "
@@ -817,13 +815,13 @@ const ACCESSIBILITY = [
     firstTitle: true,
     content: (
       <>
-        <p className="text-md" style={{ marginBottom: '32px' }}>
+        <p className="text-md mb-4">
           El componente de accesos está construido para ser accesible mediante navegación por teclado y reconocible por
           lectores de pantalla.
         </p>
         <span className="badge badge-default ms-1">TAB</span>
         <span className="badge badge-default">ENTER</span>
-        <p className="text-md mb-4">
+        <p className="text-md mb-4 mt-2">
           Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Acciones como
           cerrar o activar botones se pueden realizar con las teclas <i>Enter</i> o <i>space</i>.
         </p>
@@ -842,7 +840,7 @@ const ACCESSIBILITY = [
     title: 'Etiquetado descriptivo',
     content: (
       <>
-        <p className="text-md">
+        <p className="text-md   pt-2">
           Las alertas deben incluir etiquetas semánticas y atributos ARIA que comuniquen correctamente su propósito y
           estado al usuario, especialmente a las tecnologías asistivas.
         </p>

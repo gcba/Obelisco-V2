@@ -164,18 +164,26 @@ const sections = [
           <strong>Versión 1.8.4 ⬇️</strong>
         </p>
         <li>
-          El elemento <code>{'<div class="aside">'}</code>, puede usar <code>{'.hero-{positions-vertical}'}</code>,{' '}
-          <code>{'.hero-{positions-horizontal}'}</code> o{' '}
-          <code>{'.hero-{positions-horizontal}-{positions-vertical}'}</code> para alinear la multimedia: Los elementos{' '}
-          <code>{'<img>'}</code> y <code>{'<video>'}</code>
+          El elemento <code>{'<div class="aside">'}</code>, puede usar alguna de las siguientes clases para alinear la
+          multimedia; <code>{'<img>'}</code> y <code>{'<video>'}</code>:
+          <ul>
+            <li>
+              <code>{'.hero-{positions-vertical}'}</code>,
+            </li>
+            <li>
+              {' '}
+              <code>{'.hero-{positions-horizontal}'}</code>
+            </li>
+            <li>
+              <code>{'.hero-{positions-horizontal}-{positions-vertical}'}</code>
+            </li>
+          </ul>{' '}
         </li>
-        <li>
-          Donde <code>{'{positions-vertical}'}</code> puede ser: <code>{'bottom'}</code>, <code>{'top'}</code>,
-          <code>{'center'}</code>.
-          <br />
-          Donde <code>{'{positions-horizontal}'}</code> puede ser: <code>{'center'}</code>, <code>{'right'}</code>,
-          <code>{'left'}</code>.
-        </li>
+        Donde <code>{'{positions-vertical}'}</code> puede ser: <code>{'bottom'}</code>, <code>{'top'}</code>,{' '}
+        <code>{'center'}</code>.
+        <br />
+        Donde <code>{'{positions-horizontal}'}</code> puede ser: <code>{'center'}</code>, <code>{'right'}</code>,{' '}
+        <code>{'left'}</code>.
       </ul>
     ),
   },

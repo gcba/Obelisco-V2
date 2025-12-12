@@ -313,3 +313,15 @@ export const ONE_COLUMN_ACCESS = `
     </div>
   </div>
 `;
+
+export const ACCESS_ACCESSIBILITY = `<div class="alert alert-info" role="alert">
+  Esta es la descripción de una alerta de información.
+</div>
+`;
+
+export const ACCESS_ACCESSIBILITY_2 = `<div class="alert alert-info" role="alert" aria-labelledby="alertTitulo" aria-describedby="alertDesc">
+  <h4 id="alertTitulo">Actualización del sistema</h4>
+  <p id="alertDesc">El servicio estará disponible nuevamente a las 14:00.</p>
+</div>
+
+`;

@@ -527,7 +527,7 @@ const SECTION_UX = [
           &quot;list-group&quot; y &quot;list-group-row&quot;.
         </p>
         <Image
-          src={`${basePath}/images/access/accesos_vertical.svg`}
+          src={`${basePath}/images/access/accesos_horizontal.svg`}
           alt="Tamaños de botones"
           width="800"
           height="200"

@@ -237,7 +237,7 @@ const SECTIONS_UX = [
         <div className="d-flex">
           <span className="material-symbols-rounded text-success">check</span>
 
-          <p>Mantener un máximo de 2 costos con subtítulo y descripción por fila. </p>
+          <p>Mantener un máximo de 2 costos con subtítulo y descripción por fila. </p>
         </div>
 
         <div className="d-flex">
@@ -245,7 +245,7 @@ const SECTIONS_UX = [
 
           <p>
             Conservar el sentido de lectura de izquierda a derecha. Antes de pasar a una 2da fila, la 1era fila debe
-            ocupar un máximo de 6 columnas (2 ítems). 
+            ocupar un máximo de 6 columnas (2 ítems).
           </p>
         </div>
 
@@ -254,7 +254,7 @@ const SECTIONS_UX = [
 
           <p>
             Cuando el trámite es gratuito, el valor del monto cambia por “Gratuito” y no es necesario sumar una
-            descripción del concepto.  
+            descripción del concepto.
           </p>
         </div>
 
@@ -265,7 +265,7 @@ const SECTIONS_UX = [
 
           <p>
             No apilar costos de forma vertical donde no se siga la estructura de bloque y/o no se respete el sentido de
-            lectura de izquierda a derecha. 
+            lectura de izquierda a derecha.
           </p>
         </div>
 
@@ -274,7 +274,7 @@ const SECTIONS_UX = [
 
           <p>
             La descripción de los costos no debe sobrepasar las 3 columnas de ancho, que es el límite de tamaño máximo
-            para cada ítem. 
+            para cada ítem.
           </p>
         </div>
       </>

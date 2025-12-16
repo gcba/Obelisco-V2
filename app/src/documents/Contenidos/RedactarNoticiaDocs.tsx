@@ -37,7 +37,7 @@ const sections = [
           Son obligatorias y su contenido indexa en las búsquedas de Google. Complementan la información del título con
           un dato clave o contexto. Explican de manera atractiva y concisa el objetivo de la noticia. No deben repetir
           información, conceptos o palabras mencionadas en el título.{' '}
-          <strong>Tampoco debemos usar negritas, cursivas o hipervínculos en el resumen.</strong> 
+          <strong>Tampoco debemos usar negritas, cursivas o hipervínculos en el resumen.</strong>
         </p>
 
         <ul className="list-informative-bullet">
@@ -77,7 +77,7 @@ const sections = [
         <p className="text-md">
           Utilizamos la pirámide invertida colocando la información más importante en el primer párrafo y en los
           siguientes lo menos relevante. El contenido debe tener anclas visuales (negritas, hipervínculos, botones,
-          citas) para facilitar la lectura de las personas usuarias. 
+          citas) para facilitar la lectura de las personas usuarias.
         </p>
         <ul className="list-informative-bullet">
           <li className="mb-3">
@@ -109,7 +109,7 @@ const sections = [
       <>
         <p className="text-md">
           Se utilizan para facilitar la lectura del contenido. Se sugieren hasta 3 imágenes en línea por noticia. Deben
-          tener 700x400 px como mínimo. 
+          tener 700x400 px como mínimo.
         </p>
       </>
     ),

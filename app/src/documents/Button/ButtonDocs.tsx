@@ -1316,7 +1316,7 @@ const ButtonDocs: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Success Criterion 1.1.1 Non-text Content (Level A)
+            Success Criterion 1.1.1 Non-text Content (Level A)
           </a>
           <p>
             Todo el contenido no textual que se presenta al usuario tiene una alternativa de texto que sirve para el

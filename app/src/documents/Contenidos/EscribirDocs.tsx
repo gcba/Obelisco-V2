@@ -12,13 +12,13 @@ const sections = [
           La lectura fácil se enfoca en{' '}
           <strong>personas que tienen dificultades temporales o permanentes para leer</strong>, como las personas con
           discapacidad, con falta de educación básica o con edad avanzada. El objetivo de la lectura fácil es que las
-          personas vulnerables puedan mejorar sus habilidades de lectura, su motivación y su confianza.  
+          personas vulnerables puedan mejorar sus habilidades de lectura, su motivación y su confianza. 
         </p>
 
         <p className="text-md">
           A diferencia del{' '}
           <a href={`${basePath}/content/comunicar-con-claridad#section-section-lenguaje-1`}>lenguaje claro</a>, es
-          importante tener en cuenta que en la <strong>lectura fácil:</strong>  
+          importante tener en cuenta que en la <strong>lectura fácil:</strong> 
         </p>
 
         <ul className="list-informative-bullet">
@@ -31,7 +31,7 @@ const sections = [
     ),
   },
   {
-    subtitle: '¿Qué podemos hacer para aplicar la lectura fácil?  ',
+    subtitle: '¿Qué podemos hacer para aplicar la lectura fácil?  ',
     content: (
       <>
         <p className="text-sm fw-semibold mt-3" style={{ marginBottom: '12px' }}>
@@ -57,7 +57,7 @@ const sections = [
           <li>Evitar lenguaje abstracto, técnico o ambiguo.</li>
           <li>Mantener frases simples, claras, con estructura sujeto-verbo-predicado.</li>
           <li>Priorizar el uso de vocabulario cotidiano y frecuente.</li>
-          <li>Eliminar siglas, abreviaturas y tecnicismos innecesarios.  </li>
+          <li>Eliminar siglas, abreviaturas y tecnicismos innecesarios.  </li>
         </ul>
 
         <p className="text-sm fw-semibold mt-4" style={{ marginBottom: '12px' }}>

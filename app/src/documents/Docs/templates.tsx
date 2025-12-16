@@ -43,7 +43,7 @@ const TemplatesComponents: React.FC = () => {
                     </h3>
                     <p className="card-text">
                       Permiten a las personas interactuar con el sistema, ingresando, editando o confirmando
-                      información. 
+                      información.
                     </p>
                   </div>
                 </div>

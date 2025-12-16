@@ -250,7 +250,7 @@ const SECTION_UX = [
           <div className="d-flex pt-2">
             <span className="material-symbols-rounded text-danger">close</span>
             <p className="mb-0">
-              No modificar el uso de la paleta cromática en la iconografía. El color semántico debe ser congruente con
+              No modificar el uso de la paleta cromática en la iconografía. El color semántico debe ser congruente con
               el contenido del mensaje.
             </p>
           </div>
@@ -763,7 +763,7 @@ const ACCESSIBILITY = [
           target="_blank"
           rel="noopener noreferrer"
         >
-          Success Criterion 2.4.3 Focus Order (Level A)
+          Success Criterion 2.4.3 Focus Order (Level A)
         </a>
         <p>
           Si una página web puede navegarse de forma secuencial y las secuencias de navegación afectan el significado o

@@ -946,9 +946,9 @@ const PatternsComponents: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Success Criterion 2.4.6 Headings and Labels (Level AA)
+            Success Criterion 2.4.6 Headings and Labels (Level AA)
           </a>
-          <p className="mt-2">Los encabezados y las etiquetas describen el tema o el propósito.</p>
+          <p className="mt-2">Los encabezados y las etiquetas describen el tema o el propósito.</p>
 
           <a
             className="external"
@@ -956,11 +956,11 @@ const PatternsComponents: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Success Criterion 3.2.2 On Input (Level A)
+            Success Criterion 3.2.2 On Input (Level A)
           </a>
           <p className="mt-2">
-            El cambio de la configuración de cualquier componente de la interfaz no provoca automáticamente un cambio de
-            contexto a menos que la persona usuaria haya sido informada del comportamiento antes de utilizar el
+            El cambio de la configuración de cualquier componente de la interfaz no provoca automáticamente un cambio de
+            contexto a menos que la persona usuaria haya sido informada del comportamiento antes de utilizar el
             componente.
           </p>
 
@@ -973,7 +973,7 @@ const PatternsComponents: React.FC = () => {
             Success Criterion Labels or Instructions (Level A)
           </a>
           <p className="mt-2">
-            Se proporcionan etiquetas o instrucciones cuando el contenido requiere la entrada de la persona usuaria.
+            Se proporcionan etiquetas o instrucciones cuando el contenido requiere la entrada de la persona usuaria.
           </p>
 
           <a
@@ -982,7 +982,7 @@ const PatternsComponents: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Success Criterion 4.1.2 Name, Role, Value (Level A)
+            Success Criterion 4.1.2 Name, Role, Value (Level A)
           </a>
           <p className="mt-2">
             Para todos los componentes de la interfaz de usuario (incluidos, entre otros: elementos de formulario,

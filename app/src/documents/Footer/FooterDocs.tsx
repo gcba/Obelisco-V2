@@ -680,7 +680,7 @@ const FooterDocs: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Success Criterion 1.4.10 Reflow (Level AA)
+            Success Criterion 1.4.10 Reflow (Level AA)
           </a>
           <p>
             El contenido puede presentarse sin pérdida de información o funcionalidad y sin necesidad de desplazarse en
@@ -695,7 +695,7 @@ const FooterDocs: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Success Criterion 1.4.4 Resize Text (Level AA)
+            Success Criterion 1.4.4 Resize Text (Level AA)
           </a>
           <p>
             Excepto por los subtítulos e imágenes de texto, el texto puede redimensionarse hasta un 200 % sin tecnología

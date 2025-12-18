@@ -372,7 +372,21 @@ const SECTION_UX = [
         </p>
         <Image
           src={`${basePath}/images/dropdown_nav/tipos.svg`}
-          alt="Alerta del sistema"
+          alt="Desplegables en encabezado de página"
+          width="800"
+          height="285"
+          className="img-fluid mb-4"
+        />
+
+        <p className="text-xl fw-semibold mb-2">Desplegables en navegación horizontal</p>
+
+        <p className="text-md mb-4">
+          En este contexto el menú desplegable puede mostrar opciones con íconos y cascadas. Según el dispositivo la
+          cascada será vertical u horizontal.
+        </p>
+        <Image
+          src={`${basePath}/images/dropdown_nav/tipos_1.svg`}
+          alt="Desplegables en navegación horizontal"
           width="800"
           height="285"
           className="img-fluid mb-4"
@@ -462,10 +476,10 @@ const SPECS = [
           alt="Anatomia de desplegable de selección"
           width="800"
           height="280"
-          className="img-fluid"
+          className="img-fluid mb-5"
         />
 
-        <div className="responsive-scroll mt-4" tabIndex={0}>
+        <div className="responsive-scroll" tabIndex={0}>
           <table className="table">
             <thead>
               <tr>
@@ -500,7 +514,7 @@ const SPECS = [
               </tr>
               <tr>
                 <td>
-                  4. Icono derecho <i>(expandir)</i>
+                  4. Icono derecho <i>(Expandir)</i>
                 </td>
                 <td>Obligatorio. Se utiliza para indicar que el campo puede expandirse para mostrar las opciones.</td>
               </tr>
@@ -533,7 +547,7 @@ const SPECS = [
           alt="Estado predeterminado del desplegable de selección"
           width="800"
           height="148"
-          className="img-fluid mb-4"
+          className="img-fluid"
         />
       </>
     ),
@@ -552,7 +566,7 @@ const SPECS = [
           alt="Estado predeterminado del desplegable de selección"
           width="800"
           height="464"
-          className="img-fluid mb-4"
+          className="img-fluid"
         />
       </>
     ),
@@ -575,7 +589,7 @@ const SPECS = [
           alt="Estado en foco del desplegable de selección"
           width="800"
           height="464"
-          className="img-fluid mb-4"
+          className="img-fluid"
         />
       </>
     ),
@@ -584,11 +598,7 @@ const SPECS = [
     subtitle: 'Expandido',
     content: (
       <>
-        <p className="text-sm">
-          Es un principio de accesibilidad que asegura que cualquier elemento interactivo en una interfaz sea claramente
-          visible cuando recibe la atención del usuario, especialmente al ser navegado con el teclado. En Obelisco se
-          utiliza un borde o anillo (focus ring) por fuera del componente en un color distintivo.{' '}
-        </p>
+        <p className="text-sm">Cuando un usuario está seleccionando una opción.</p>
         <Image
           src={`${basePath}/images/dropdown_nav/specs_expandido.svg`}
           alt="Estado en foco del desplegable de selección"
@@ -607,7 +617,7 @@ const ACCESSIBILITY = [
     firstTitle: true,
     content: (
       <>
-        <p className="text-md">
+        <p className="text-md mb-4">
           El componente de desplegable de selección está construido para ser accesible mediante navegación por teclado y
           reconocible por lectores de pantalla, comunicando su estado de forma clara.
         </p>
@@ -615,12 +625,11 @@ const ACCESSIBILITY = [
         <span className="badge badge-default">ENTER</span>
         <span className="badge badge-default">SPACE</span>
         <span className="badge badge-default">SCAPE</span>
-        <p className="text-md mb-4">
+        <p className="text-md  mt-4 mb-4">
           Utilizando el <i>tab</i> la persona usuaria puede llegar hasta el campo de selección. Con la{' '}
-          <i>barra espaciadora</i>
-          (space), las <i>flechas</i> para arriba o abajo puede abrir el desplegable donde estarán las opciones a
-          seleccionar. Las flechas, además, se usan para navegar a través de las opciones, las cuales pueden ser
-          seleccionadas con la <i>barra espaciadora</i> o <i>enter</i>.
+          <i>barra espaciadora</i> (space), las <i>flechas</i> para arriba o abajo puede abrir el desplegable donde
+          estarán las opciones a seleccionar. Las flechas, además, se usan para navegar a través de las opciones, las
+          cuales pueden ser seleccionadas con la <i>barra espaciadora</i> o <i>enter</i>.
         </p>
 
         <Image
@@ -645,7 +654,9 @@ const ACCESSIBILITY = [
         <p className="text-md">
           Para el desplegable de navegación recomendamos utilizar <i>aria-haspopup=&quot;menu&quot;</i>, indica que
           elemento button abre un menú.
-          <br />
+        </p>
+
+        <p className="text-md">
           Recomendamos utilizar aria expanded con valor <i>&quot;false&quot;</i> cuando no se muestrea el menú y con el
           valor <i>&quot;true&quot;</i> cuando mostramos el menú.
         </p>
@@ -765,8 +776,7 @@ const ACCESSIBILITY = [
         </a>
         <p>
           Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque
-          del teclado es visible. Cuando utiliza un teclado para navegar por los componentes, los enlaces tienen un
-          subrayado visible y un recuadro outline que indica que los enlaces son interactivos.
+          del teclado es visible.
         </p>
 
         <a

@@ -959,32 +959,13 @@ const HeroHeaderDocs: React.FC = () => {
             <p className="text-xl">Cuándo usar</p>
             <ul className="list-informative-bullet">
               <li>
-                Para mensajes de alta prioridad que informen sobre el estado en funcionamiento de una acción o del
-                sistema.
+                Debe estar presente en todas las páginas que requieran de una sección principal que funcione como
+                introducción al contenido de la misma.
               </li>
               <li>
-                Para proporcionar información complementaria dentro del contexto del contenido de la página y guiar a
-                los usuarios a tomar decisiones informadas.
+                Para captar la atención de la persona usuaria en páginas de contenido cultural, de turismo, de eventos u
+                otro.
               </li>
-            </ul>
-          </div>
-          <div className="list-informative" style={{ marginTop: '32px' }}>
-            <p className="text-xl">Cuándo no usar</p>
-            <ul className="list-informative-bullet">
-              <li>
-                Cuando la información no es crítica ni afecta el flujo de la tarea del usuario. En esos casos, es
-                preferible usar texto informativo dentro del contenido.
-              </li>
-              <li>
-                Para notificar sobre situaciones externas al contexto de la página o del sistema, por ejemplo, alertas
-                meteorológicas o estado del transporte público. En estos casos recomendamos usar el componente Banner
-              </li>
-              <li>Para mensajes de retroalimentación efímeros, como “copiado al portapapeles”.</li>
-              <li>
-                Cuando se utiliza la navegación horizontal en combinación con la navegación principal, puede resultar
-                redundante incluir migas de pan.
-              </li>
-              <li>En las páginas de inicio omita incluir el componente migas de pan.</li>
             </ul>
           </div>
         </>
@@ -995,12 +976,93 @@ const HeroHeaderDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md" style={{ marginTop: '32px' }}>
-            Se ubican en la parte superior izquierda de la página, generalmente, dentro del encabezado de página, por
-            encima del título H1.
+            Se ubica siempre en la parte superior del sitio, inmediatamente debajo del Encabezado <i>(header)</i>{' '}
+            principal, actuando como punto de inicio y orientación del contenido de la página.
+          </p>
+        </>
+      ),
+    },
+    {
+      subtitle: (
+        <>
+          En dispositivos <i>desktop</i>
+        </>
+      ),
+      content: (
+        <>
+          <p className="text-md mb-4">
+            El contenedor de la cabecera ocupa el 100% del ancho de la pantalla, manteniendo el orden de lectura de
+            izquierda a derecha en sentido horizontal de los elementos como formas y multimedia.
           </p>
           <Image
-            src={`${basePath}/images/migas_de_pan/migas_de_pan_disposicion.svg`}
-            alt="Migas de pan disposición"
+            src={`${basePath}/images/hero/hero_disposicion.svg`}
+            alt="Cabecera de página disposición desktop"
+            width="800"
+            height="200"
+            className="img-fluid"
+            style={{ marginBottom: '32px' }}
+          />
+
+          <p className="text-md fw-bold mb-4">Responsive en tamaños de pantalla grandes</p>
+
+          <p className="text-md">
+            <strong>Entre 1200 a 1400px</strong>: Hasta pantallas de 1400px. las alineaciones de texto y forma de la
+            cabecera van a estar en sincronía con las alineaciones del encabezado <i>(header)</i> para compensar los
+            pesos visuales del componente en la interfaz.
+          </p>
+
+          <Image
+            src={`${basePath}/images/hero/hero_disposicion_1.svg`}
+            alt="Cabecera de página disposición desktop"
+            width="800"
+            height="200"
+            className="img-fluid mb-4"
+          />
+
+          <p className="text-md">
+            <strong>Entre 1400 a 1920px</strong>: Entre estas resoluciones el margen de la cabecera va a ser ligeramente
+            mayor al del Encabezado <i>(header)</i> para mantener las proporciones en tamaños de pantalla mayores.
+          </p>
+
+          <Image
+            src={`${basePath}/images/hero/hero_disposicion_2.svg`}
+            alt="Cabecera de página disposición desktop"
+            width="800"
+            height="200"
+            className="img-fluid mb-4"
+          />
+
+          <p className="text-md">
+            <strong>Mayor a 1920px</strong>: Para pantallas con resoluciones mayores a 1920 px., la página mantiene un
+            ancho fijo y se extienden márgenes en blanco para ocupar el espacio disponible de la pantalla.
+          </p>
+
+          <Image
+            src={`${basePath}/images/hero/hero_disposicion_3.svg`}
+            alt="Cabecera de página disposición desktop"
+            width="800"
+            height="200"
+            className="img-fluid mb-4"
+          />
+        </>
+      ),
+    },
+    {
+      subtitle: (
+        <>
+          En dispositivos <i>tablet</i>
+        </>
+      ),
+      content: (
+        <>
+          <p className="text-md">
+            La cabecera ocupa el 100% del ancho de la pantalla, incluyendo los márgenes, manteniendo una disposición
+            vertical de la estructura. Esto quiere decir que, en el orden de lectura, el contenido textual, tanto título
+            como descripción, se van a ubicar primeros, y por debajo la multimedia.
+          </p>
+          <Image
+            src={`${basePath}/images/hero/hero_disposicion_4.svg`}
+            alt="Cabecera de página disposición tablet"
             width="800"
             height="200"
             className="img-fluid"
@@ -1009,23 +1071,68 @@ const HeroHeaderDocs: React.FC = () => {
       ),
     },
     {
-      title: 'Contenido',
-    },
-    {
-      subtitle: 'Basado en el ancho',
+      subtitle: (
+        <>
+          En dispositivos <i>Mobile</i>
+        </>
+      ),
       content: (
         <>
-          <p className="text-md mb-4">
-            Cuando el nombre de un enlace de ancla excede los 32 caracteres (incluyendo espacios), el texto se trunca y
-            agrega tres puntos (…) al final para visualizar que hay más texto en ese nivel.
+          <p className="text-md">
+            Al igual que en dispositivos <i>tablet</i> , la cabecera ocupa el 100% del ancho de la pantalla, incluyendo
+            los márgenes, manteniendo una disposición vertical de la estructura.
           </p>
           <Image
-            src={`${basePath}/images/migas_de_pan/migas_de_pan_contenido.svg`}
-            alt="Migas de pan basado en el ancho"
+            src={`${basePath}/images/hero/hero_disposicion_5.svg`}
+            alt="Cabecera de página disposición mobile"
             width="800"
             height="200"
             className="img-fluid"
           />
+        </>
+      ),
+    },
+    {
+      title: 'Personalización',
+      content: (
+        <>
+          <Image
+            src={`${basePath}/images/hero/hero_disposicion_6.svg`}
+            alt="Personalización"
+            width="800"
+            height="200"
+            className="img-fluid"
+            style={{ marginBottom: '32px' }}
+          />
+
+          <p className="d-flex text-md fw-semibold mt-4">
+            <span className="pe-1 material-symbols-rounded" aria-hidden="true">
+              info
+            </span>
+            Uso del componente en Figma
+          </p>
+
+          <p className="text-md">
+            Para los diseñadores en Figma, el componente tiene la posibilidad de intercambiar el color de fondo por
+            alguno de los seis colores definidos que pertenecen a la paleta de colores de Obelisco. Para hacerlo deben
+            seguir los siguientes pasos:
+          </p>
+
+          <ol>
+            <li>
+              Seleccionar el tema denominado &quot;Color&quot; desde las propiedades del componente. Por defecto, les
+              aparecerá el color cyan.{' '}
+            </li>
+            <li>
+              Con el componente seleccionado, dirigirse a las propiedades de color del componente donde van a encontrar
+              la variables d colores asignados al texto, al fondo y otros. Entre ellas van a encontrar una variable
+              funcional llamada &quot;hero/bg-cyan&quot;.
+            </li>
+            <li>
+              Intercambiá el <i>slot</i>, utilizando la propiedad de <i>instance swap</i> del encabezado <i>(header)</i>
+              , por el logo de la marca o el activo digital.
+            </li>
+          </ol>
         </>
       ),
     },

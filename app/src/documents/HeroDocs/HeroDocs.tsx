@@ -1042,7 +1042,7 @@ const HeroHeaderDocs: React.FC = () => {
             alt="Cabecera de página disposición desktop"
             width="800"
             height="200"
-            className="img-fluid mb-4"
+            className="img-fluid"
           />
         </>
       ),
@@ -1055,7 +1055,7 @@ const HeroHeaderDocs: React.FC = () => {
       ),
       content: (
         <>
-          <p className="text-md">
+          <p className="text-md mb-4">
             La cabecera ocupa el 100% del ancho de la pantalla, incluyendo los márgenes, manteniendo una disposición
             vertical de la estructura. Esto quiere decir que, en el orden de lectura, el contenido textual, tanto título
             como descripción, se van a ubicar primeros, y por debajo la multimedia.
@@ -1078,7 +1078,7 @@ const HeroHeaderDocs: React.FC = () => {
       ),
       content: (
         <>
-          <p className="text-md">
+          <p className="text-md mb-4">
             Al igual que en dispositivos <i>tablet</i> , la cabecera ocupa el 100% del ancho de la pantalla, incluyendo
             los márgenes, manteniendo una disposición vertical de la estructura.
           </p>
@@ -1101,7 +1101,7 @@ const HeroHeaderDocs: React.FC = () => {
             alt="Personalización"
             width="800"
             height="200"
-            className="img-fluid"
+            className="img-fluid mt-2"
             style={{ marginBottom: '32px' }}
           />
 

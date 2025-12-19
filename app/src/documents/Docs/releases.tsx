@@ -37,7 +37,7 @@ const ReleasesComponents: React.FC = () => {
           <li>
             Se agregan clases en los elementos <code>{'<img>'}</code> y <code>{'<video>'}</code> para ajustar el
             alineamento de la multimedia en el componente Cabecera de Página. En{' '}
-            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-3">
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-8 ">
               Cambios en componentes
             </a>{' '}
             está la documentación de las nuevas clases.

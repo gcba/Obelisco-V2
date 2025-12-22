@@ -1023,7 +1023,7 @@ const SECTION_ACCESSIBILITY = [
           target="_blank"
           rel="noopener noreferrer"
         >
-          Success Criterion 1.4.4 Resize Text (Level AA)
+          Success Criterion 1.4.4 Resize Text (Level AA)
         </a>
         <p>
           Excepto por los subtítulos e imágenes de texto, el texto puede redimensionarse hasta un 200 % sin tecnología
@@ -1074,7 +1074,7 @@ const SECTION_ACCESSIBILITY = [
           target="_blank"
           rel="noopener noreferrer"
         >
-          Success Criterion 4.1.2 Name, Role, Value (Level A)
+          Success Criterion 4.1.2 Name, Role, Value (Level A)
         </a>
         <p>
           Para todos los componentes de la interfaz de usuario (incluidos, entre otros: elementos de formulario, enlaces

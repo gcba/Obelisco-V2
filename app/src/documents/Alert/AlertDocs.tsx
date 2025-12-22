@@ -914,14 +914,6 @@ const AlertDocs: React.FC = () => {
         title="Alertas"
         description={[
           'Son notificaciones breves dentro del contenido la página que captan la atención de las personas usuarias para informar sobre el estado del sistema y/o el estado específico de una sección de la página.',
-          <>
-            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del
-            componente podés{' '}
-            <a href="https://gcba.github.io/estandares/componentes/alerta/" target="_blank" rel="noopener noreferrer">
-              visitar la documentación en Obelisco v.1
-            </a>
-            .
-          </>,
         ]}
       />
       <Tabs

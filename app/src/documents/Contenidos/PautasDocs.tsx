@@ -151,15 +151,15 @@ const sections = [
           páginas dentro y fuera de ella. En la página, se ven como palabras subrayadas en color azul.
         </p>
         <ul className="list-informative-bullet">
-          <li>Dirigí los enlaces siempre a una página existente. </li>
+          <li>Dirigí los enlaces siempre a una página existente. </li>
           <li>Es preferible que sean largos a muy cortos.</li>
           <li>Indexan en todos los motores de búsqueda, como Google, por eso debés incluirlos. </li>
           <li>
             Se desaconsejan frases genéricas como «clic aquí» o «más información»; el texto debe tener sentido y
             clariﬁcar el enlace.
           </li>
-          <li>No uses negrita en los hipervínculos. </li>
-          <li>No incluyas signos de puntuación en los enlaces. </li>
+          <li>No uses negrita en los hipervínculos. </li>
+          <li>No incluyas signos de puntuación en los enlaces. </li>
         </ul>
 
         <p className="text-sm fw-semibold mt-3" style={{ marginBottom: '12px' }}>
@@ -168,7 +168,7 @@ const sections = [
         <div className="d-flex align-items-center mt-2">
           <span className="material-symbols-rounded text-danger">close</span>
           <p className="text-sm mb-0">
-            Para conocer más sobre la exposición, <a href="http://">ingresá acá.</a> 
+            Para conocer más sobre la exposición, <a href="http://">ingresá acá.</a>
           </p>
         </div>
         <div className="d-flex align-items-center mt-2">
@@ -178,7 +178,6 @@ const sections = [
             <a href="https://museomoderno.org/es/exposiciones/santiago-iturralde-la-pintura-desnuda">
               Santiago Iturralde: La pintura desnuda
             </a>
-             
           </p>
         </div>
 
@@ -327,7 +326,7 @@ const sections = [
 
         <p className="text-md mb-2">
           Son aquellos verbos que indican que la parte emisora se dirige a alguien que se encuentra presente en la
-          situación comunicativa y le habla de forma directa. 
+          situación comunicativa y le habla de forma directa.
         </p>
 
         <p className="text-sm fw-semibold mb-2">Ejemplos de este uso</p>

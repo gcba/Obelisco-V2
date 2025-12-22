@@ -312,3 +312,20 @@ export const DROPDOWN_CASCADE_RIGHT = `
     </div>
   </div>
 `;
+
+export const DROPDOWN_NAV_ACCESSIBILITY = `<div class="dropdown">
+ <button
+   type="button" 
+   class="btn btn-dropdown btn-dropdown-border btn-lg" 
+   data-bs-toogle="dropdown"   aria-haspopup="menu" 
+   aria-expanded="false" 
+ >
+  <span 
+   class="btn-dropdown-text ellipsis-1"> Desplegable 
+  <span>
+  <span 
+   class="material-symbols-rounded btn-dropdown-icon"
+   aria-hidden="true"> expand_more
+  <span>
+ </button>
+`;

@@ -23,8 +23,8 @@ export default function AreaDos() {
           <div style={{ marginTop: '8px' }}>
             <p>
               Se llama segundo nivel de navegación a toda página que se desprenda de los atajos de las home de
-              Ministerios.  Son páginas que por su contenido funcionan como nexo a más información de un área específica
-              y buscan mostrar los destacados, programas y servicios. 
+              Ministerios. Son páginas que por su contenido funcionan como nexo a más información de un área específica
+              y buscan mostrar los destacados, programas y servicios.
             </p>
           </div>
         </>
@@ -38,12 +38,12 @@ export default function AreaDos() {
             <p className="text-xl">Se compone con los siguientes elementos:</p>
             <div className="list-informative mb-3">
               <ul className="list-informative-bullet">
-                <li>Migas de pan que nos indican el camino recorrido hasta llegar a dónde estamos navegando. </li>
+                <li>Migas de pan que nos indican el camino recorrido hasta llegar a dónde estamos navegando. </li>
                 <li>Título</li>
                 <li>Bajada</li>
                 <li>
                   Desplegables de “Institucional” y/o “Transparencia activa”. Evitamos sumar más desplegables. La idea
-                  de este bloque es que sea la presentación de lo que las personas encontrarán al seguir scrolleando. 
+                  de este bloque es que sea la presentación de lo que las personas encontrarán al seguir scrolleando.
                 </li>
               </ul>
             </div>
@@ -76,7 +76,7 @@ export default function AreaDos() {
             <h3 className="text-xl mb-2">Encabezado</h3>
             <p>
               Llevan un título que puede ser &quot;Accesos rápidos&quot; o &quot;Destacados&quot;, siempre haciendo
-              referencia que esos son los destacados de la página. 
+              referencia que esos son los destacados de la página.
             </p>
           </div>
 
@@ -84,7 +84,7 @@ export default function AreaDos() {
             <h3 className="text-xl mb-2">Variante de componente</h3>
             <p>
               Se utiliza la tarjeta horizontal con ícono con la alineación interna al borde superior izquerdo. Sugerimos
-              que tanto el título como la bajada no lleve más de dos líneas. 
+              que tanto el título como la bajada no lleve más de dos líneas.
             </p>
           </div>
 
@@ -143,7 +143,7 @@ export default function AreaDos() {
           <p>
             Los programas son contenido de valor que crean desde las distintas áreas de gobierno para acercarse a los
             vecinos, para promover su trabajo o las políticas que llevan adelante durante su gestión. Por eso es que
-            para este tipo de contenidos se utilizan las tarjetas horizontales con imagen. 
+            para este tipo de contenidos se utilizan las tarjetas horizontales con imagen.
           </p>
           <p>Esta información se presenta en grilla de tres con un ancho de 4 columnas.</p>
           <p>Esta agrupación de tarjetas de programas siempre llevan un título que haga referencia a dicho grupo.</p>
@@ -254,7 +254,7 @@ export default function AreaDos() {
           <p>Este bloque se compone de la siguiente información.</p>
 
           <div>
-            <h3 className="text-xl mb-2">Título: Información Institucional. </h3>
+            <h3 className="text-xl mb-2">Título: Información Institucional. </h3>
             <ul>
               <li>Nombre del funcionario/a a cargo.</li>
               <li>Cargo</li>
@@ -270,14 +270,14 @@ export default function AreaDos() {
             <p>
               La información institucional se aplica siempre y cuando el área tenga un funcionario a cargo. En caso de
               que no haya alguna persona con este rol, este bloque de información no debe incluirse y van únicamente las
-              redes sociales. 
+              redes sociales.
             </p>
           </div>
 
           <div>
             <h3 className="text-xl mb-2">Título: Redes sociales</h3>
-            <p>Facebook   /   Instagram   /   X   /   YouTube</p>
-            <p>Se utiliza el acceso con iconografía correspondiente a la red social y título. </p>
+            <p>Facebook / Instagram / X / YouTube</p>
+            <p>Se utiliza el acceso con iconografía correspondiente a la red social y título. </p>
           </div>
 
           <Image
@@ -311,8 +311,8 @@ export default function AreaDos() {
           `
           Con este template buscamos mejorar la experiencia de las personas a la hora de navegar nuestro sitio
           web. Buscamos crear jerarquías claras de contenido donde se aplique el sistema de diseño
-          Obelisco. Esta guía tiene como fin orientar a quienes trabajan como webmasters para que sepan qué tipo
-          de componente se utiliza en las distintas casuísticas. 
+          Obelisco. Esta guía tiene como fin orientar a quienes trabajan como webmasters para que sepan qué tipo
+          de componente se utiliza en las distintas casuísticas. 
           `,
         ]}
       />

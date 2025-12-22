@@ -927,14 +927,6 @@ const AccessDocs: React.FC = () => {
         title="Accesos"
         description={[
           'Los accesos funcionan como puntos de ingreso a diferentes secciones y pueden agruparse cuando hay una similitud en su contenido.',
-          <>
-            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del
-            componente podés{' '}
-            <a href="https://gcba.github.io/estandares/componentes/acceso/" target="_blank" rel="noopener noreferrer">
-              visitar la documentación en Obelisco v.1
-            </a>
-            .
-          </>,
         ]}
       />
       <Tabs

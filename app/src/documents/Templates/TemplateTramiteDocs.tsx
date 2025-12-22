@@ -68,7 +68,7 @@ const SECTIONS_UX = [
       <>
         <p className="text-md mb-4">
           Por medio del bloque de iniciar trámite la persona usuaria podrá iniciar su trámite o, si así lo requiera,
-          continuarlo desde el paso en el npque lo dejó por última vez.
+          continuarlo desde el paso en el que lo dejó por última vez.
         </p>
 
         {/* <p className="text-md">

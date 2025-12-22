@@ -806,18 +806,6 @@ const DropdownNavDocs: React.FC = () => {
         title="Desplegable de navegación"
         description={[
           'Este tipo de desplegables permite acceder a opciones de navegación y funcionalidades adicionales de manera organizada, desplegándolas de forma vertical u horizontal.',
-          <>
-            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del
-            componente podés{' '}
-            <a
-              href="https://gcba.github.io/estandares/componentes/desplegables/desplegables_navegacion/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              visitar la documentación en Obelisco v.1
-            </a>
-            .
-          </>,
         ]}
       />
       <Tabs

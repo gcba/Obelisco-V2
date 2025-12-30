@@ -326,10 +326,19 @@ header.hero {
           left: 14%;
         }
       }
+
+      & iframe {
+        position: absolute !important;
+        inset: 0;
+        width: 100%;
+        height: 120%;
+        border: 0;
+      }
     }
 
     .aside:has(img),
-    .aside:has(video) {
+    .aside:has(video),
+    .aside:has(iframe) {
       flex: 1 1 250%;
     }
   }

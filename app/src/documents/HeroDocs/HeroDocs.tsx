@@ -221,9 +221,16 @@ const HeroHeaderDocs: React.FC = () => {
                     </div>
 
                     <div className="aside">
-                      <video src={`${basePath}/images/hero/video_hero_header.mp4`} autoPlay muted loop controls>
-                        Your browser does not support the video tag.
-                      </video>
+                      <div className="iframe">
+                        <iframe
+                          width="100%"
+                          height="100%"
+                          src="https://www.youtube.com/embed/4b4XqBqmXYE?autoplay=1&mute=1&controls=0&rel=0&modestbranding=1&playsinline=1"
+                          title="YouTube video player"
+                          allow="autoplay; encrypted-media; picture-in-picture"
+                          referrerPolicy="strict-origin-when-cross-origin"
+                        />
+                      </div>
                     </div>
                   </header>
                 </div>

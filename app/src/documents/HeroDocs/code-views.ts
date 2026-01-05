@@ -110,6 +110,40 @@ export const HERO_CON_VIDEO = `<header class="hero">
    </div>
 </header>`;
 
+export const HERO_CON_VIDEO_IFRAME = `<header class="hero">
+   <div class="content wave">
+      <div class="d-flex flex-column">
+         <nav aria-label="Navegación secundaria">
+            <ol class="breadcrumb m-0">
+               <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+            </ol>
+         </nav>
+         <div>
+            <h1 class="mb-3">Encabezado de la página</h1>
+            <p class="lead m-0">Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.</p>
+         </div>
+				<div class="btn-hero">
+					<button type="button" class="btn btn-secondary">
+						Botón
+					</button>
+					<button type="button" class="btn btn-outline-secondary">
+						Botón
+					</button>
+				</div>
+      </div>
+   </div>
+   <div class="aside">
+      <iframe
+				src="https://www.youtube.com/embed/Q0oIoR9mLwc?si=UzWVs2zM0f7N4vMB"
+				title="YouTube video player"
+				frameBorder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin"
+				allowfullscreen
+			></iframe>
+   </div>
+</header>`;
+
 export const HERO_CON_GIF = `<header class="hero">
    <div class="content wave">
       <div class="d-flex flex-column">

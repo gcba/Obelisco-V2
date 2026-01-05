@@ -231,6 +231,15 @@ header.hero {
         display: none !important;
       }
     }
+
+    & iframe {
+      width: 100%;
+      height: 100%;
+    }
+
+    &:has(iframe) {
+      aspect-ratio: 16 / 9;
+    }
   }
 
   @media (width >= 426px) {
@@ -270,7 +279,7 @@ header.hero {
   }
 
   @media (width >= 992px) {
-    &:has(.aside img, .aside video) .content > .flex-column {
+    &:has(.aside img, .aside video, .aside iframe) .content > .flex-column {
       width: 90%;
     }
     flex-direction: row;
@@ -326,10 +335,15 @@ header.hero {
           left: 14%;
         }
       }
+
+			&:has(iframe) {
+				aspect-ratio: unset;
+			}
     }
 
     .aside:has(img),
-    .aside:has(video) {
+    .aside:has(video),
+    .aside:has(iframe) {
       flex: 1 1 250%;
     }
   }

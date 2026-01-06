@@ -336,9 +336,9 @@ header.hero {
         }
       }
 
-			&:has(iframe) {
-				aspect-ratio: unset;
-			}
+      &:has(iframe) {
+        aspect-ratio: unset;
+      }
     }
 
     .aside:has(img),

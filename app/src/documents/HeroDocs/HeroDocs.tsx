@@ -276,7 +276,7 @@ const HeroHeaderDocs: React.FC = () => {
 
                     <div className="aside">
                       <iframe
-                        src="https://www.youtube.com/embed/Q0oIoR9mLwc?si=UzWVs2zM0f7N4vMB"
+                        src="https://www.youtube.com/embed/3UUC3p0k4SE?si=r15TOyvXzI2GM7WU"
                         title="YouTube video player"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

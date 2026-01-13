@@ -15,9 +15,7 @@ const TemplatesComponents: React.FC = () => {
             <div className="max-items-2">
               <div className="col">
                 <div className="card h-100">
-                  <i className="bx bxs-info-circle card-icon">
-                    {/* <span className="material-symbols-outlined card-icon">apartment</span> */}
-                  </i>
+                  <i className="bx bxs-info-circle card-icon"></i>
                   <div className="card-body">
                     <h3 className="card-title">
                       <a href={`${basePath}/templates/paginas-de-areas`} className="card-title-link">

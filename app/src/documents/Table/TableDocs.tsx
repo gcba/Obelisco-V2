@@ -993,7 +993,7 @@ const SECTIONS_DEV = [
                         </span>
                       </button>
                       <button type="button" className="btn btn-xs">
-                        <i className="bx bxs-trash-alt o-icon"></i>
+                        <i className="bx  bxs-trash-alt" style={{ color: '#ffffff' }}></i>{' '}
                       </button>
                       <button type="button" className="btn btn-xs">
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">

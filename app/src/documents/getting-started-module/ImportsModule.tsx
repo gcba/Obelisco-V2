@@ -7,7 +7,6 @@ import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import {
   BOOTSTRAP_CODE,
   BOXICONS_CODE,
-  BOXICONS_CODE_NPM,
   MATERIAL_S_CODE_NPM,
   MATERIAL_SYMBOLS_CODE,
   NUNITO_CODE,
@@ -73,16 +72,7 @@ const sections = [
     subtitle: 'Boxicons',
     content: (
       <div className="col-12">
-        <SyntaxHighlighter language="bash" style={dracula} wrapLongLines>
-          {BOXICONS_CODE_NPM}
-        </SyntaxHighlighter>
-
         <br />
-        <p>Es importante que incluyas el import a Boxicons en tu hoja de estilos si lo usas via NPM</p>
-
-        <SyntaxHighlighter language="scss" style={dracula} wrapLongLines>
-          {`@import "boxicons/css/boxicons.min.css";`}
-        </SyntaxHighlighter>
 
         <br />
         <p className="headline-md">O puedes utilizar la CDN:</p>

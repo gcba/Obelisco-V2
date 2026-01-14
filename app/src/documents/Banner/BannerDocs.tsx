@@ -188,13 +188,37 @@ const BannerDocs: React.FC = () => {
           <p className="text-md">
             Los banners pueden disponibilizarse en cualquier parte de la página y funcionan como un elemento más para
             mostrar información. (Ej: &quot;Lanzamos una nueva versión de nuestro sistema de diseño&quot;)
+            <br />
+            Ademas el banner no puede ubicarse de forma arbitraria: solo puede mostrarse en tres posiciones predefinidas
+            dentro de la estructura de la página:
           </p>
+          <ol>
+            <li>Debajo del header</li>
+            <li>Debajo del hero (encabezado de la página)</li>
+            <li>Arriba del footer</li>
+          </ol>
           <Image
             src={`${basePath}/images/banner/banner_1.svg`}
             alt="Contexto de uso de componente Banner"
             width="800"
             height="200"
-            className="img-fluid"
+            className="img-fluid mb-3"
+          />
+
+          <Image
+            src={`${basePath}/images/banner/banner_1_1.svg`}
+            alt="Contexto de uso de componente Banner"
+            width="800"
+            height="200"
+            className="img-fluid mb-3"
+          />
+
+          <Image
+            src={`${basePath}/images/banner/banner_1_2.svg`}
+            alt="Contexto de uso de componente Banner"
+            width="800"
+            height="200"
+            className="img-fluid mb-3"
           />
 
           <p className="text-xl fw-semibold mb-2 mt-4">Uso de banner con comportamiento fijo (sticky)</p>
@@ -558,14 +582,7 @@ const BannerDocs: React.FC = () => {
         title="Banner"
         description={[
           'Los banners muestran mensajes importantes y breves, a modo de aviso general, para informar a los usuarios sobre temas de diverso interés. Se muestran al ancho completo.',
-          <>
-            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del
-            componente podés{' '}
-            <a href="https://gcba.github.io/estandares/componentes/banner/" target="_blank" rel="noopener noreferrer">
-              visitar la documentación en Obelisco v.1
-            </a>
-            .
-          </>,
+          ,
         ]}
       />
       <Tabs

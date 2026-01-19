@@ -1,8 +1,11 @@
 // @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded');
-@import url('https://cdn.boxicons.com/3.0.7/fonts/basic/boxicons.min.css');
+@import url('https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css');
+@import url('https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css');
+@import url('https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css');
 @import '../../styles/styles.css';
+
 
 // Generic Styles
 html {
@@ -242,7 +245,7 @@ hr {
   background: #e6ebf0;
   margin-bottom: 2rem;
 }
-.custom-layout-container {
+.container.custom-layout-container {
   @media screen and (min-width: 1200px) {
     max-width: 100%;
   }
@@ -525,3 +528,4 @@ pre {
     height: 500px;
   }
 }
+

@@ -161,7 +161,7 @@ const BannerDocs: React.FC = () => {
                 <a href="https://gcba.github.io/Obelisco-V2/components/alert">Alertas</a>{' '}
               </li>
               <li>
-                Para mensajes que requieran una respuesta obligatoria o confirmación explícita. En esos casos utilizar
+                Para mensajes que requieran una respuesta obligatoria o confirmación explícita. En esos casos utilizar{' '}
                 <a href="https://gcba.github.io/Obelisco-V2/components/modal">Modal</a>.
               </li>
               <li>
@@ -176,7 +176,7 @@ const BannerDocs: React.FC = () => {
       title: 'Contexto de uso',
       content: (
         <>
-          <p className="text-md mt-3">
+          <p className="text-md mt-4">
             Este componente está diseñado para ser utilizado únicamente en páginas de inicio (Home), donde cumple un rol
             informativo y de orientación inicial.
           </p>
@@ -193,9 +193,9 @@ const BannerDocs: React.FC = () => {
             dentro de la estructura de la página:
           </p>
           <ol>
-            <li>Debajo del header</li>
-            <li>Debajo del hero (encabezado de la página)</li>
-            <li>Arriba del footer</li>
+            <li className="mb-3">Debajo del header</li>
+            <li className="mb-3">Debajo del hero (encabezado de la página)</li>
+            <li className="mb-3">Arriba del footer</li>
           </ol>
           <Image
             src={`${basePath}/images/banner/banner_1.svg`}
@@ -218,7 +218,7 @@ const BannerDocs: React.FC = () => {
             alt="Contexto de uso de componente Banner"
             width="800"
             height="200"
-            className="img-fluid mb-3"
+            className="img-fluid"
           />
 
           <p className="text-xl fw-semibold mb-2 mt-4">Uso de banner con comportamiento fijo (sticky)</p>
@@ -236,6 +236,25 @@ const BannerDocs: React.FC = () => {
             y similares) que puedan confundir los banners con{' '}
             <a href="https://gcba.github.io/Obelisco-V2/components/alert">alertas</a>.
           </p>
+        </>
+      ),
+    },
+    {
+      title: 'Contenido',
+      content: (
+        <>
+          <p className="text-md">
+            Utilizar un máximo de 110 caracteres para las descripciones de los banners. El contenido debe ser claro,
+            simple y conciso. En caso de superar el máximo de caracteres, el texto se truncará (a excepción del Banner
+            con enlace, donde el texto no se trunca y pasa a otra línea).
+          </p>
+          <Image
+            src={`${basePath}/images/banner/banner_8.svg`}
+            alt="Contenido del  Banner"
+            width="800"
+            height="200"
+            className="img-fluid mb-3"
+          />
         </>
       ),
     },

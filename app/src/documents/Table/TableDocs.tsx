@@ -993,7 +993,7 @@ const SECTIONS_DEV = [
                         </span>
                       </button>
                       <button type="button" className="btn btn-xs">
-                        <i className="bx  bxs-trash-alt" style={{ color: '#ffffff' }}></i>{' '}
+                        <i className="bxf bx-trash-alt o-icon"></i>{' '}
                       </button>
                       <button type="button" className="btn btn-xs">
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
@@ -1001,7 +1001,7 @@ const SECTIONS_DEV = [
                         </span>
                       </button>
                       <button type="button" className="btn btn-xs">
-                        <i className="bxf bx-download o-icon"></i>
+                        <i className="bxf bx-arrow-to-bottom o-icon"></i>
                       </button>
                     </div>
                   </td>
@@ -1026,7 +1026,7 @@ const SECTIONS_DEV = [
                         </span>
                       </button>
                       <button type="button" className="btn btn-xs">
-                        <i className="bxf bx-download o-icon"></i>
+                        <i className="bxf bx-arrow-to-bottom o-icon"></i>
                       </button>
                     </div>
                   </td>
@@ -1051,7 +1051,7 @@ const SECTIONS_DEV = [
                         </span>
                       </button>
                       <button type="button" className="btn btn-xs">
-                        <i className="bxf bx-download o-icon"></i>
+                        <i className="bxf bx-arrow-to-bottom o-icon"></i>
                       </button>
                     </div>
                   </td>
@@ -1076,7 +1076,7 @@ const SECTIONS_DEV = [
                         </span>
                       </button>
                       <button type="button" className="btn btn-xs">
-                        <i className="bxf bx-download o-icon"></i>
+                        <i className="bxf bx-arrow-to-bottom o-icon"></i>
                       </button>
                     </div>
                   </td>

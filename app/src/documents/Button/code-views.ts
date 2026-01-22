@@ -181,7 +181,7 @@ export const BUTTON_ICON_XS = `
   </span>
 </button>
 <button type="button" class="btn btn-xs" aria-label="Editar">
-  <i class="bxf bx-download o-icon"></i>
+  <i class="bxf bx-arrow-to-bottom o-icon"></i>
 </button>
 `;
 export const BUTTON_ACCESSIBILTY = `<button type="button" class="btn btn-xs" aria-label="Editar">

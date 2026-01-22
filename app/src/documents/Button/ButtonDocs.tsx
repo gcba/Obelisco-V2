@@ -384,7 +384,7 @@ const ButtonDocs: React.FC = () => {
                 </span>
               </button>
               <button type="button" className="btn btn-xs" aria-label="Descargar">
-                <i className="bxf bx-download o-icon"></i>
+                <i className="bxf bx-arrow-to-bottom o-icon"></i>
               </button>
             </div>
           </CodeBox>

@@ -208,17 +208,17 @@ const ButtonDocs: React.FC = () => {
             <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center px-2">
               {/* Icono y Texto */}
               <button type="button" className="btn btn-primary btn-sm">
-                <i className="bx bx-plus o-icon"></i>
+                <i className="bxf bx-plus o-icon"></i>
                 Botón
               </button>
 
               <button type="button" className="btn btn-primary">
-                <i className="bx bx-plus o-icon"></i>
+                <i className="bxf bx-plus o-icon"></i>
                 Botón
               </button>
 
               <button type="button" className="btn btn-primary btn-lg">
-                <i className="bx bx-plus o-icon"></i>
+                <i className="bxf bx-plus o-icon"></i>
                 Botón
               </button>
               {/* Fin Icono y Texto */}
@@ -376,7 +376,7 @@ const ButtonDocs: React.FC = () => {
                 </span>
               </button>
               <button type="button" className="btn btn-xs" aria-label="Eliminar">
-                <i className="bx bxs-trash-alt o-icon"></i>
+                <i className="bxf bx-trash-alt o-icon"></i>
               </button>
               <button type="button" className="btn btn-xs" aria-label="Visualizar">
                 <span className="material-symbols-rounded o-icon" aria-hidden="true">
@@ -384,7 +384,7 @@ const ButtonDocs: React.FC = () => {
                 </span>
               </button>
               <button type="button" className="btn btn-xs" aria-label="Descargar">
-                <i className="bx bxs-download o-icon"></i>
+                <i className="bxf bx-download o-icon"></i>
               </button>
             </div>
           </CodeBox>

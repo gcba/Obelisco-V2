@@ -15,7 +15,7 @@ const TemplatesComponents: React.FC = () => {
             <div className="max-items-2">
               <div className="col">
                 <div className="card h-100">
-                  <i className="bx bxs-info-circle card-icon"></i>
+                  <i className="bxf bx-info-circle card-icon"></i>
                   <div className="card-body">
                     <h3 className="card-title">
                       <a href={`${basePath}/templates/paginas-de-areas`} className="card-title-link">
@@ -32,7 +32,7 @@ const TemplatesComponents: React.FC = () => {
 
               <div className="col">
                 <div className="card h-100">
-                  <i className="bx bx-list-ul card-icon"></i>
+                  <i className="bxf bx-list-ul card-icon"></i>
                   <div className="card-body">
                     <h3 className="card-title">
                       <a href={`${basePath}/templates/paginas-de-areas`} className="card-title-link">
@@ -49,7 +49,7 @@ const TemplatesComponents: React.FC = () => {
 
               <div className="col">
                 <div className="card h-100">
-                  <i className="bx bx-news card-icon"></i>
+                  <i className="bxf bx-news card-icon"></i>
                   <div className="card-body">
                     <h3 className="card-title">
                       <a href={`${basePath}/templates/pagina-de-noticias`} className="card-title-link">
@@ -65,7 +65,7 @@ const TemplatesComponents: React.FC = () => {
 
               <div className="col">
                 <div className="card h-100">
-                  <i className="bx bxs-book-content card-icon"></i>
+                  <i className="bxf bx-book-content card-icon"></i>
                   <div className="card-body">
                     <h3 className="card-title">
                       <a href={`${basePath}/templates/pagina-simple`} className="card-title-link">
@@ -79,7 +79,7 @@ const TemplatesComponents: React.FC = () => {
 
               <div className="col">
                 <div className="card h-100">
-                  <i className="bx bxs-book-open card-icon"></i>
+                  <i className="bxf bx-book-open card-icon"></i>
                   <div className="card-body">
                     <h3 className="card-title">
                       <a href={`${basePath}/templates/pagina-de-libro`} className="card-title-link">
@@ -93,7 +93,7 @@ const TemplatesComponents: React.FC = () => {
 
               <div className="col">
                 <div className="card h-100">
-                  <i className="bx bxs-file card-icon"></i>
+                  <i className="bxf bx-file card-icon"></i>
                   <div className="card-body">
                     <h3 className="card-title">
                       <a href={`${basePath}/templates/pagina-tramites`} className="card-title-link">

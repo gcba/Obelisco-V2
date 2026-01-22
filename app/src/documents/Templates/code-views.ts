@@ -87,7 +87,7 @@ export const AREA_1 = `
         <div class="card-items-3 mb-5">
           <div class="col">
             <div class="card unbordered">
-              <i class='bx bxs-detail card-icon'></i>
+              <i class='bxf bx-detail card-icon'></i>
               <div class="card-body">
                 <h3 class="card-title"><a href="#">Titular de la tarjeta</a></h3>
                 <p class="card-text">
@@ -98,7 +98,7 @@ export const AREA_1 = `
           </div>
           <div class="col">
             <div class="card unbordered">
-              <i class='bx bxs-detail card-icon'></i>
+              <i class='bxf bx-detail card-icon'></i>
               <div class="card-body">
                 <h3 class="card-title"><a href="#">Titular de la tarjeta</a></h3>
                 <p class="card-text">
@@ -109,7 +109,7 @@ export const AREA_1 = `
           </div>
           <div class="col">
             <div class="card unbordered">
-              <i class='bx bxs-detail card-icon'></i>
+              <i class='bxf bx-detail card-icon'></i>
               <div class="card-body">
                 <h3 class="card-title"><a href="#">Titular de la tarjeta</a></h3>
                 <p class="card-text">
@@ -154,7 +154,7 @@ export const AREA_1 = `
               <span class="material-symbols-rounded card-icon">
                 assignment
               </span>
-              <!-- <i class='bx bxs-assignment card-icon'></i> -->
+              <!-- <i class='bxf bx-assignment card-icon'></i> -->
               <div class="card-body">
                 <h3 class="card-title">Titular de la tarjeta con dos líneas de ejemplo</h3>
                 <p class="card-text">
@@ -168,7 +168,7 @@ export const AREA_1 = `
               <span class="material-symbols-rounded card-icon">
                 assignment
               </span>
-              <!-- <i class='bx bxs-assignment card-icon'></i> -->
+              <!-- <i class='bxf bx-assignment card-icon'></i> -->
               <div class="card-body">
                 <h3 class="card-title">Titular de la tarjeta con dos líneas de ejemplo</h3>
                 <p class="card-text">
@@ -182,7 +182,7 @@ export const AREA_1 = `
               <span class="material-symbols-rounded card-icon">
                 assignment
               </span>
-              <!-- <i class='bx bxs-assignment card-icon'></i> -->
+              <!-- <i class='bxf bx-assignment card-icon'></i> -->
               <div class="card-body">
                 <h3 class="card-title">Titular de la tarjeta con dos líneas de ejemplo</h3>
                 <p class="card-text">
@@ -365,7 +365,7 @@ export const AREA_1 = `
             <div class="access-items-1 mb-3">
               <div class="col">
                 <a href="#" class="list-group-item item-sm">
-                  <i class="bx bxl-facebook-circle o-icon"></i>
+                  <i class="bxf bxl-facebook-circle o-icon"></i>
                   <div class="access-content">
                     <span class="access-title">Facebook</span>
                   </div>
@@ -373,7 +373,7 @@ export const AREA_1 = `
               </div>
               <div class="col">
                 <a href="#" class="list-group-item item-sm">
-                  <i class="bx bxl-instagram o-icon"></i>
+                  <i class="bxf bxl-instagram o-icon"></i>
                   <div class="access-content">
                     <span class="access-title">Instagram</span>
                   </div>
@@ -381,7 +381,7 @@ export const AREA_1 = `
               </div>
               <div class="col">
                 <a href="#" class="list-group-item item-sm">
-                  <i class="bx bxl-twitter o-icon"></i>
+                  <i class="bxf bxl-twitter o-icon"></i>
                   <div class="access-content">
                     <span class="access-title">Twitter</span>
                   </div>
@@ -389,7 +389,7 @@ export const AREA_1 = `
               </div>
               <div class="col">
                 <a href="#" class="list-group-item item-sm">
-                  <i class="bx bxl-youtube o-icon"></i>
+                  <i class="bxf bxl-youtube o-icon"></i>
                   <div class="access-content">
                     <span class="access-title">Youtube</span>
                   </div>
@@ -466,13 +466,13 @@ export const AREA_1 = `
           <ul class="list-inline">
             <li class="list-inline-item redes-items">
               <a href="https://www.facebook.com/GCBA">
-                <i class="o-icon bx bxl-facebook-circle"></i>
+                <i class="o-icon bxf bxl-facebook-circle"></i>
                 Facebook
               </a>
             </li>
             <li class="list-inline-item redes-items">
               <a href="https://www.instagram.com/gcba/">
-                <i class="o-icon bx bxl-instagram-alt"></i>
+                <i class="o-icon bxf bxl-instagram-alt"></i>
                 Instagram
               </a>
             </li>
@@ -484,25 +484,25 @@ export const AREA_1 = `
             </li>
             <li class="list-inline-item redes-items">
               <a href="https://www.youtube.com/user/GCBA">
-                <i class="o-icon bx bxl-youtube"></i>
+                <i class="o-icon bxf bxl-youtube"></i>
                 YouTube
               </a>
             </li>
             <li class="list-inline-item redes-items">
               <a href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires">
-                <i class="o-icon bx bxl-linkedin-square"></i>
+                <i class="o-icon bxf bxl-linkedin-square"></i>
                 LinkedIn
               </a>
             </li>
             <li class="list-inline-item redes-items">
               <a href="https://www.tiktok.com/@buenosaires">
-                <i class="o-icon bx bxl-tiktok"></i>
+                <i class="o-icon bxf bxl-tiktok"></i>
                 TikTok
               </a>
             </li>
             <li class="list-inline-item redes-items">
               <a href="https://www.pinterest.es/buenosaires/">
-                <i class="o-icon bx bxl-pinterest"></i>
+                <i class="o-icon bxf bxl-pinterest"></i>
                 Pinterest
               </a>
             </li>
@@ -914,7 +914,7 @@ export const AREA_2 = `
             <div class="access-items-3">
               <div class="col">
                 <a href="#" class="list-group-item">
-                  <i class="bx bxl-facebook-circle o-icon"></i>
+                  <i class="bxf bxl-facebook-circle o-icon"></i>
                   <div class="access-content">
                     <span class="access-title">Facebook</span>
                   </div>
@@ -922,7 +922,7 @@ export const AREA_2 = `
               </div>
               <div class="col">
                 <a href="#" class="list-group-item">
-                  <i class="bx bxl-instagram-alt o-icon"></i>
+                  <i class="bxf bxl-instagram-alt o-icon"></i>
                   <div class="access-content">
                     <span class="access-title">Instagram</span>
                   </div>
@@ -930,7 +930,7 @@ export const AREA_2 = `
               </div>
               <div class="col">
                 <a href="#" class="list-group-item">
-                  <i class="bx bxl-twitter o-icon"></i>
+                  <i class="bxf bxl-twitter o-icon"></i>
                   <div class="access-content">
                     <span class="access-title">Twitter</span>
                   </div>
@@ -1928,19 +1928,19 @@ export const TEMPLATE_PAG_LIBRO = `<!DOCTYPE html>
               <ul class="list-inline ms-2">
                 <li class="list-inline-item me-1">
                   <a href="#" target="_blank" class="d-inline-flex text-decoration-none">
-                  <i class='bx bx-sm bxl-facebook-circle'></i></a>
+                  <i class='bxf bx-sm bxl-facebook-circle'></i></a>
                 </li>
                 <li class="list-inline-item me-1">
                   <a href="#" target="_blank" class="d-inline-flex text-decoration-none">
-                  <i class='bx bx-sm bxl-instagram'></i></a>
+                  <i class='bxf bx-sm bxl-instagram'></i></a>
                 </li>
                 <li class="list-inline-item me-1">
                   <a href="#" target="_blank" class="d-inline-flex text-decoration-none">
-                  <i class='bx bx-sm bxl-twitter'></i></a>
+                  <i class='bxf bx-sm bxl-twitter'></i></a>
                 </li>
                 <li class="list-inline-item me-1">
                   <a href="#" target="_blank" class="d-inline-flex text-decoration-none">
-                  <i class='bx bx-sm bxl-linkedin-square'></i></a>
+                  <i class='bxf bx-sm bxl-linkedin-square'></i></a>
                 </li>
               </ul>
             </div>
@@ -2026,22 +2026,22 @@ export const TEMPLATE_PAG_NOTICIAS = `<!DOCTYPE html>
                   <ul class="list-inline ms-2">
                     <li class="list-inline-item me-1">
                       <a href="#" target="_blank" class="d-inline-flex text-decoration-none">
-                        <i class="bx bx-sm bxl-facebook-circle"></i>
+                        <i class="bxf bx-sm bxl-facebook-circle"></i>
                       </a>
                     </li>
                     <li class="list-inline-item me-1">
                       <a href="#" target="_blank" class="d-inline-flex text-decoration-none">
-                        <i class="bx bx-sm bxl-instagram"></i>
+                        <i class="bxf bx-sm bxl-instagram"></i>
                       </a>
                     </li>
                     <li class="list-inline-item me-1">
                       <a href="#" target="_blank" class="d-inline-flex text-decoration-none">
-                        <i class="bx bx-sm bxl-twitter"></i>
+                        <i class="bxf bx-sm bxl-twitter"></i>
                       </a>
                     </li>
                     <li class="list-inline-item me-1">
                       <a href="#" target="_blank" class="d-inline-flex text-decoration-none">
-                        <i class="bx bx-sm bxl-linkedin-square"></i>
+                        <i class="bxf bx-sm bxl-linkedin-square"></i>
                       </a>
                     </li>
                   </ul>

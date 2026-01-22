@@ -748,13 +748,13 @@ export const TABLE_BUTTON_ICON = `
                         <span class="material-symbols-rounded o-icon" aria-hidden="true">edit</span>
                     </button>
                     <button type="button" class="btn btn-xs">
-                        <i class="bx bxs-trash-alt o-icon"></i>
+                        <i class="bxf bx-trash-alt o-icon"></i>
                     </button>
                     <button type="button" class="btn btn-xs">
                         <span class="material-symbols-rounded o-icon" aria-hidden="true">visibility</span>
                     </button>
                     <button type="button" class="btn btn-xs">
-                        <i class="bx bxs-download o-icon"></i>
+                        <i class="bxf bx-download o-icon"></i>
                     </button>
                     </div>
                 </td>
@@ -769,13 +769,13 @@ export const TABLE_BUTTON_ICON = `
                         <span class="material-symbols-rounded o-icon" aria-hidden="true">edit</span>
                     </button>
                     <button type="button" class="btn btn-xs">
-                        <i class="bx bxs-trash-alt o-icon"></i>
+                        <i class="bxf bx-trash-alt o-icon"></i>
                     </button>
                     <button type="button" class="btn btn-xs">
                         <span class="material-symbols-rounded o-icon" aria-hidden="true">visibility</span>
                     </button>
                     <button type="button" class="btn btn-xs">
-                        <i class="bx bxs-download o-icon"></i>
+                        <i class="bxf bx-download o-icon"></i>
                     </button>
                     </div>
                 </td>
@@ -790,13 +790,13 @@ export const TABLE_BUTTON_ICON = `
                         <span class="material-symbols-rounded o-icon" aria-hidden="true">edit</span>
                     </button>
                     <button type="button" class="btn btn-xs">
-                        <i class="bx bxs-trash-alt o-icon"></i>
+                        <i class="bxf bx-trash-alt o-icon"></i>
                     </button>
                     <button type="button" class="btn btn-xs">
                         <span class="material-symbols-rounded o-icon" aria-hidden="true">visibility</span>
                     </button>
                     <button type="button" class="btn btn-xs">
-                        <i class="bx bxs-download o-icon"></i>
+                        <i class="bxf bx-download o-icon"></i>
                     </button>
                     </div>
                 </td>
@@ -811,13 +811,13 @@ export const TABLE_BUTTON_ICON = `
                         <span class="material-symbols-rounded o-icon" aria-hidden="true">edit</span>
                     </button>
                     <button type="button" class="btn btn-xs">
-                        <i class="bx bxs-trash-alt o-icon"></i>
+                        <i class="bxf bx-trash-alt o-icon"></i>
                     </button>
                     <button type="button" class="btn btn-xs">
                         <span class="material-symbols-rounded o-icon" aria-hidden="true">visibility</span>
                     </button>
                     <button type="button" class="btn btn-xs">
-                        <i class="bx bxs-download o-icon"></i>
+                        <i class="bxf bx-download o-icon"></i>
                     </button>
                     </div>
                 </td>

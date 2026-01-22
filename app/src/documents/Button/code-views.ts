@@ -44,15 +44,15 @@ export const BUTTON_BLOCK = `
 `;
 export const BUTTON_ICON = `// Botón con texto e icono a la izquierda
 <button type="button" class="btn btn-primary btn-sm">
-  <i class="bx bx-plus o-icon"></i> Botón
+  <i class="bxf bx-plus o-icon"></i> Botón
 </button>
 
 <button type="button" class="btn btn-primary">
-  <i class="bx bx-plus o-icon"></i> Botón
+  <i class="bxf bx-plus o-icon"></i> Botón
 </button>
 
 <button type="button" class="btn btn-primary btn-lg">
-  <i class="bx bx-plus o-icon"></i> Botón
+  <i class="bxf bx-plus o-icon"></i> Botón
 </button>
 
 // Botón con texto e icono a la derecha
@@ -170,7 +170,7 @@ export const BUTTON_ICON_XS = `
   </span>
 </button>
 <button type="button" class="btn btn-xs" aria-label="Editar">
-  <i class="bx bxs-trash-alt o-icon"></i>
+  <i class="bxf bx-trash-alt o-icon"></i>
 </button>
 <button type="button" class="btn btn-xs" aria-label="Editar">
   <span
@@ -181,7 +181,7 @@ export const BUTTON_ICON_XS = `
   </span>
 </button>
 <button type="button" class="btn btn-xs" aria-label="Editar">
-  <i class="bx bxs-download o-icon"></i>
+  <i class="bxf bx-download o-icon"></i>
 </button>
 `;
 export const BUTTON_ACCESSIBILTY = `<button type="button" class="btn btn-xs" aria-label="Editar">

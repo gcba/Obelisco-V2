@@ -15,12 +15,12 @@ const HomeDocs = () => (
         </div>
         <div className="d-flex flex-wrap gap-2">
           <Link href="https://github.com/gcba/Obelisco-V2" className="btn btn-primary btn-lg btn-icon">
-            <i className="bx bxl-github"></i>
+            <i className="bxf bxl-github"></i>
             Github
           </Link>
           <Link href="/getting-started" className="btn btn-secondary btn-lg btn-icon">
             Get Started
-            <i className="bx bx-right-arrow-alt"></i>
+            <i className="bxf bx-right-arrow-alt"></i>
           </Link>
         </div>
       </div>

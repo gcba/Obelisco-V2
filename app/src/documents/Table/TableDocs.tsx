@@ -993,7 +993,9 @@ const SECTIONS_DEV = [
                         </span>
                       </button>
                       <button type="button" className="btn btn-xs">
-                        <i className="bxf bx-trash-alt o-icon"></i>{' '}
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                          delete
+                        </span>{' '}
                       </button>
                       <button type="button" className="btn btn-xs">
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
@@ -1001,9 +1003,9 @@ const SECTIONS_DEV = [
                         </span>
                       </button>
                       <button type="button" className="btn btn-xs">
-											<span className="material-symbols-rounded o-icon" aria-hidden="true">
-												download_2
-											</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                          download_2
+                        </span>
                       </button>
                     </div>
                   </td>
@@ -1020,7 +1022,9 @@ const SECTIONS_DEV = [
                         </span>
                       </button>
                       <button type="button" className="btn btn-xs">
-                        <i className="bxf bx-trash-alt o-icon"></i>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                          delete
+                        </span>
                       </button>
                       <button type="button" className="btn btn-xs">
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
@@ -1028,9 +1032,9 @@ const SECTIONS_DEV = [
                         </span>
                       </button>
                       <button type="button" className="btn btn-xs">
-											<span className="material-symbols-rounded o-icon" aria-hidden="true">
-												download_2
-											</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                          download_2
+                        </span>
                       </button>
                     </div>
                   </td>
@@ -1047,7 +1051,9 @@ const SECTIONS_DEV = [
                         </span>
                       </button>
                       <button type="button" className="btn btn-xs">
-                        <i className="bxf bx-trash-alt o-icon"></i>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                          delete
+                        </span>
                       </button>
                       <button type="button" className="btn btn-xs">
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
@@ -1055,9 +1061,9 @@ const SECTIONS_DEV = [
                         </span>
                       </button>
                       <button type="button" className="btn btn-xs">
-											<span className="material-symbols-rounded o-icon" aria-hidden="true">
-												download_2
-											</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                          download_2
+                        </span>
                       </button>
                     </div>
                   </td>
@@ -1074,7 +1080,9 @@ const SECTIONS_DEV = [
                         </span>
                       </button>
                       <button type="button" className="btn btn-xs">
-                        <i className="bxf bx-trash-alt o-icon"></i>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                          delete
+                        </span>
                       </button>
                       <button type="button" className="btn btn-xs">
                         <span className="material-symbols-rounded o-icon" aria-hidden="true">
@@ -1082,9 +1090,9 @@ const SECTIONS_DEV = [
                         </span>
                       </button>
                       <button type="button" className="btn btn-xs">
-												<span className="material-symbols-rounded o-icon" aria-hidden="true">
-													download_2
-												</span>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                          download_2
+                        </span>
                       </button>
                     </div>
                   </td>

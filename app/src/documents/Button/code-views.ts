@@ -44,15 +44,15 @@ export const BUTTON_BLOCK = `
 `;
 export const BUTTON_ICON = `// Botón con texto e icono a la izquierda
 <button type="button" class="btn btn-primary btn-sm">
-  <i class="bxf bx-plus o-icon"></i> Botón
+  <span className="material-symbols-rounded o-icon" aria-hidden="true">add_2</span> Botón
 </button>
 
 <button type="button" class="btn btn-primary">
-  <i class="bxf bx-plus o-icon"></i> Botón
+  <span className="material-symbols-rounded o-icon" aria-hidden="true">add_2</span> Botón
 </button>
 
 <button type="button" class="btn btn-primary btn-lg">
-  <i class="bxf bx-plus o-icon"></i> Botón
+  <span className="material-symbols-rounded o-icon" aria-hidden="true">add_2</span> Botón
 </button>
 
 // Botón con texto e icono a la derecha
@@ -170,7 +170,7 @@ export const BUTTON_ICON_XS = `
   </span>
 </button>
 <button type="button" class="btn btn-xs" aria-label="Editar">
-  <i class="bxf bx-trash-alt o-icon"></i>
+  <span className="material-symbols-rounded o-icon" aria-hidden="true">delete</span>
 </button>
 <button type="button" class="btn btn-xs" aria-label="Editar">
   <span

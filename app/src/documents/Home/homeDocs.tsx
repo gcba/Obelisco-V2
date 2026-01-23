@@ -20,7 +20,9 @@ const HomeDocs = () => (
           </Link>
           <Link href="/getting-started" className="btn btn-secondary btn-lg btn-icon">
             Get Started
-            <i className="bxf bx-arrow-right-stroke"></i>
+            <span className="material-symbols-rounded o-icon" aria-hidden="true">
+              arrow_right_alt
+            </span>
           </Link>
         </div>
       </div>

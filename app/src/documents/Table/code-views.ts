@@ -748,7 +748,7 @@ export const TABLE_BUTTON_ICON = `
                         <span class="material-symbols-rounded o-icon" aria-hidden="true">edit</span>
                     </button>
                     <button type="button" class="btn btn-xs">
-                        <i class="bxf bx-trash-alt o-icon"></i>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">delete</span>
                     </button>
                     <button type="button" class="btn btn-xs">
                         <span class="material-symbols-rounded o-icon" aria-hidden="true">visibility</span>
@@ -771,7 +771,7 @@ export const TABLE_BUTTON_ICON = `
                         <span class="material-symbols-rounded o-icon" aria-hidden="true">edit</span>
                     </button>
                     <button type="button" class="btn btn-xs">
-                        <i class="bxf bx-trash-alt o-icon"></i>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">delete</span>
                     </button>
                     <button type="button" class="btn btn-xs">
                         <span class="material-symbols-rounded o-icon" aria-hidden="true">visibility</span>
@@ -794,7 +794,7 @@ export const TABLE_BUTTON_ICON = `
                         <span class="material-symbols-rounded o-icon" aria-hidden="true">edit</span>
                     </button>
                     <button type="button" class="btn btn-xs">
-                        <i class="bxf bx-trash-alt o-icon"></i>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">delete</span>
                     </button>
                     <button type="button" class="btn btn-xs">
                         <span class="material-symbols-rounded o-icon" aria-hidden="true">visibility</span>
@@ -817,7 +817,7 @@ export const TABLE_BUTTON_ICON = `
                         <span class="material-symbols-rounded o-icon" aria-hidden="true">edit</span>
                     </button>
                     <button type="button" class="btn btn-xs">
-                        <i class="bxf bx-trash-alt o-icon"></i>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">delete</span>
                     </button>
                     <button type="button" class="btn btn-xs">
                         <span class="material-symbols-rounded o-icon" aria-hidden="true">visibility</span>

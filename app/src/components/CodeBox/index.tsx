@@ -115,7 +115,7 @@ const CodeBox = ({ codeHTML, children, codeJS }: { codeHTML: string; children?: 
               id={`tab-bg-2-${id}`}
             >
               <div className="nav-icon">
-                <i className="bxf bx-code-alt"></i>
+                <span className="material-symbols-rounded">code</span>
                 HTML
               </div>
             </button>
@@ -133,7 +133,7 @@ const CodeBox = ({ codeHTML, children, codeJS }: { codeHTML: string; children?: 
                 id={`tab-bg-3-${id}`}
               >
                 <div className="nav-icon">
-                  <i className="bxf bx-file-js"></i>
+                  <span className="material-symbols-rounded">javascript</span>
                   JS
                 </div>
               </button>

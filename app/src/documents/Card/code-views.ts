@@ -1,7 +1,7 @@
 // HORIZONTALES
 export const HORIZONTAL_ICON = `
 <div class="card card-horizontal">
-  <i class="bxf bx-info-circle card-icon"></i>
+  <span class="material-symbols-rounded card-icon" aria-hidden="true">info</span>
   <div class="card-body">
     <h3 class="card-title">
       <a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -12,7 +12,7 @@ export const HORIZONTAL_ICON = `
 
 <div class="card card-horizontal">
 	<div class="d-flex w-100 card-border-left-blue">
-		<i class="bxf bx-info-circle card-icon"></i>
+		<span class="material-symbols-rounded card-icon" aria-hidden="true">info</span>
 		<div class="card-body">
 			<h3 class="card-title">
 				<a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -23,7 +23,7 @@ export const HORIZONTAL_ICON = `
 </div>
 
 <div class="card card-horizontal unbordered">
-  <i class="bxf bx-info-circle card-icon"></i>
+  <span class="material-symbols-rounded card-icon" aria-hidden="true">info</span>
   <div class="card-body">
     <h3 class="card-title">
       <a href="#">Título de la tarjeta</a>
@@ -108,7 +108,7 @@ export const HORIZONTAL_THEME = `
 // VERTICALES
 export const VERTICAL_ICON = `
 <div class="card">
-  <i class="bxf bx-info-circle card-icon"></i>
+  <span class="material-symbols-rounded card-icon" aria-hidden="true">info</span>
   <div class="card-body">
     <h3 class="card-title">
       <a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -118,7 +118,7 @@ export const VERTICAL_ICON = `
 </div>
 
 <div class="card">
-  <i class="bxf bx-info-circle card-icon"></i>
+  <span class="material-symbols-rounded card-icon" aria-hidden="true">info</span>
   <div class="card-body card-border-bottom-blue">
     <h3 class="card-title">
       <a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -128,7 +128,7 @@ export const VERTICAL_ICON = `
 </div>
 
 <div class="card unbordered">
-  <i class="bxf bx-info-circle card-icon"></i>
+  <span class="material-symbols-rounded card-icon" aria-hidden="true">info</span>
   <div class="card-body">
     <h3 class="card-title">
       <a href="#">Título de la tarjeta</a>
@@ -300,7 +300,7 @@ export const SCROLL_DISPOSITION = `
   <div class="card-items-3">
     <div class="col">
       <div class="card">
-        <i class="bxf bx-info-circle card-icon"></i>
+        <span class="material-symbols-rounded card-icon" aria-hidden="true">info</span>
         <div class="card-body">
           <h3 class="card-title">
             <a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -311,7 +311,7 @@ export const SCROLL_DISPOSITION = `
     </div>
     <div class="col">
       <div class="card">
-        <i class="bxf bx-info-circle card-icon"></i>
+        <span class="material-symbols-rounded card-icon" aria-hidden="true">info</span>
         <div class="card-body">
           <h3 class="card-title">
             <a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -322,7 +322,7 @@ export const SCROLL_DISPOSITION = `
     </div>
     <div class="col">
       <div class="card">
-        <i class="bxf bx-info-circle card-icon"></i>
+        <span class="material-symbols-rounded card-icon" aria-hidden="true">info</span>
         <div class="card-body">
           <h3 class="card-title">
             <a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -333,7 +333,7 @@ export const SCROLL_DISPOSITION = `
     </div>
     <div class="col">
       <div class="card">
-        <i class="bxf bx-info-circle card-icon"></i>
+        <span class="material-symbols-rounded card-icon" aria-hidden="true">info</span>
         <div class="card-body">
           <h3 class="card-title">
             <a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -344,7 +344,7 @@ export const SCROLL_DISPOSITION = `
     </div>
     <div class="col">
       <div class="card">
-        <i class="bxf bx-info-circle card-icon"></i>
+        <span class="material-symbols-rounded card-icon" aria-hidden="true">info</span>
         <div class="card-body">
           <h3 class="card-title">
             <a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -361,7 +361,7 @@ export const DISPOSITION_3 = `
 <div class="card-items-3">
   <div class="col">
     <div class="card">
-      <i class="bxf bx-info-circle card-icon"></i>
+      <span class="material-symbols-rounded card-icon" aria-hidden="true">info</span>
       <div class="card-body">
         <h3 class="card-title">
           <a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -372,7 +372,7 @@ export const DISPOSITION_3 = `
   </div>
   <div class="col">
     <div class="card">
-      <i class="bxf bx-info-circle card-icon"></i>
+      <span class="material-symbols-rounded card-icon" aria-hidden="true">info</span>
       <div class="card-body">
         <h3 class="card-title">
           <a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -383,7 +383,7 @@ export const DISPOSITION_3 = `
   </div>
   <div class="col">
     <div class="card">
-      <i class="bxf bx-info-circle card-icon"></i>
+      <span class="material-symbols-rounded card-icon" aria-hidden="true">info</span>
       <div class="card-body">
         <h3 class="card-title">
           <a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -394,7 +394,7 @@ export const DISPOSITION_3 = `
   </div>
   <div class="col">
     <div class="card">
-      <i class="bxf bx-info-circle card-icon"></i>
+      <span class="material-symbols-rounded card-icon" aria-hidden="true">info</span>
       <div class="card-body">
         <h3 class="card-title">
           <a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -405,7 +405,7 @@ export const DISPOSITION_3 = `
   </div>
   <div class="col">
     <div class="card">
-      <i class="bxf bx-info-circle card-icon"></i>
+      <span class="material-symbols-rounded card-icon" aria-hidden="true">info</span>
       <div class="card-body">
         <h3 class="card-title">
           <a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -420,7 +420,7 @@ export const DISPOSITION_2 = `
 <div class="card-items-2">
   <div class="col">
     <div class="card card-horizontal">
-      <i class="bxf bx-info-circle card-icon"></i>
+      <span class="material-symbols-rounded card-icon" aria-hidden="true">info</span>
       <div class="card-body">
         <h3 class="card-title">
           <a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -431,7 +431,7 @@ export const DISPOSITION_2 = `
   </div>
   <div class="col">
     <div class="card card-horizontal">
-      <i class="bxf bx-info-circle card-icon"></i>
+      <span class="material-symbols-rounded card-icon" aria-hidden="true">info</span>
       <div class="card-body">
         <h3 class="card-title">
           <a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -442,7 +442,7 @@ export const DISPOSITION_2 = `
   </div>
   <div class="col">
     <div class="card card-horizontal">
-      <i class="bxf bx-info-circle card-icon"></i>
+      <span class="material-symbols-rounded card-icon" aria-hidden="true">info</span>
       <div class="card-body">
         <h3 class="card-title">
           <a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -453,7 +453,7 @@ export const DISPOSITION_2 = `
   </div>
   <div class="col">
     <div class="card card-horizontal">
-      <i class="bxf bx-info-circle card-icon"></i>
+      <span class="material-symbols-rounded card-icon" aria-hidden="true">info</span>
       <div class="card-body">
         <h3 class="card-title">
           <a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -464,7 +464,7 @@ export const DISPOSITION_2 = `
   </div>
   <div class="col">
     <div class="card card-horizontal">
-      <i class="bxf bx-info-circle card-icon"></i>
+      <span class="material-symbols-rounded card-icon" aria-hidden="true">info</span>
       <div class="card-body">
         <h3 class="card-title">
           <a href="#" class="card-title-link">Título de la tarjeta</a>

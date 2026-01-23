@@ -87,7 +87,9 @@ export const AREA_1 = `
         <div class="card-items-3 mb-5">
           <div class="col">
             <div class="card unbordered">
-              <i class='bxf bx-detail card-icon'></i>
+							<span class="material-symbols-rounded card-icon">
+								article
+							</span>
               <div class="card-body">
                 <h3 class="card-title"><a href="#">Titular de la tarjeta</a></h3>
                 <p class="card-text">
@@ -98,7 +100,9 @@ export const AREA_1 = `
           </div>
           <div class="col">
             <div class="card unbordered">
-              <i class='bxf bx-detail card-icon'></i>
+              <span class="material-symbols-rounded card-icon">
+								article
+							</span>
               <div class="card-body">
                 <h3 class="card-title"><a href="#">Titular de la tarjeta</a></h3>
                 <p class="card-text">
@@ -109,7 +113,9 @@ export const AREA_1 = `
           </div>
           <div class="col">
             <div class="card unbordered">
-              <i class='bxf bx-detail card-icon'></i>
+              <span class="material-symbols-rounded card-icon">
+								article
+							</span>
               <div class="card-body">
                 <h3 class="card-title"><a href="#">Titular de la tarjeta</a></h3>
                 <p class="card-text">

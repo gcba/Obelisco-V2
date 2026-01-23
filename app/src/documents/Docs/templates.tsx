@@ -15,7 +15,9 @@ const TemplatesComponents: React.FC = () => {
             <div className="max-items-2">
               <div className="col">
                 <div className="card h-100">
-                  <i className="bxf bx-info-circle card-icon"></i>
+                  <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                    info
+                  </span>
                   <div className="card-body">
                     <h3 className="card-title">
                       <a href={`${basePath}/templates/paginas-de-areas`} className="card-title-link">
@@ -79,7 +81,9 @@ const TemplatesComponents: React.FC = () => {
 
               <div className="col">
                 <div className="card h-100">
-                  <i className="bxf bx-book-open card-icon"></i>
+                  <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                    menu_book
+                  </span>
                   <div className="card-body">
                     <h3 className="card-title">
                       <a href={`${basePath}/templates/pagina-de-libro`} className="card-title-link">
@@ -93,7 +97,9 @@ const TemplatesComponents: React.FC = () => {
 
               <div className="col">
                 <div className="card h-100">
-                  <i className="bxf bx-file card-icon"></i>
+                  <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                    description
+                  </span>
                   <div className="card-body">
                     <h3 className="card-title">
                       <a href={`${basePath}/templates/pagina-tramites`} className="card-title-link">

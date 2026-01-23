@@ -208,17 +208,23 @@ const ButtonDocs: React.FC = () => {
             <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center px-2">
               {/* Icono y Texto */}
               <button type="button" className="btn btn-primary btn-sm">
-                <i className="bxf bx-plus o-icon"></i>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  add_2
+                </span>
                 Botón
               </button>
 
               <button type="button" className="btn btn-primary">
-                <i className="bxf bx-plus o-icon"></i>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  add_2
+                </span>
                 Botón
               </button>
 
               <button type="button" className="btn btn-primary btn-lg">
-                <i className="bxf bx-plus o-icon"></i>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  add_2
+                </span>
                 Botón
               </button>
               {/* Fin Icono y Texto */}
@@ -376,7 +382,9 @@ const ButtonDocs: React.FC = () => {
                 </span>
               </button>
               <button type="button" className="btn btn-xs" aria-label="Eliminar">
-                <i className="bxf bx-trash-alt o-icon"></i>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  delete
+                </span>
               </button>
               <button type="button" className="btn btn-xs" aria-label="Visualizar">
                 <span className="material-symbols-rounded o-icon" aria-hidden="true">

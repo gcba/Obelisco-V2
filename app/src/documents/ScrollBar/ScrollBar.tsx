@@ -152,7 +152,7 @@ const ScrollBarDocs: React.FC = () => {
           />
 
           <p className="text-xl fw-semibold mt-4">Ubicación</p>
-          <div className="max-items-2">
+          <div className="max-items-2 row-gap-3">
             <div className="col pe-3">
               <Image
                 src={`${basePath}/images/scrollbar/scrollbar_2.svg`}
@@ -234,7 +234,7 @@ const ScrollBarDocs: React.FC = () => {
             className="img-fluid"
           />
 
-          <div className="responsive-scroll mt-4" tabIndex={0}>
+          <div className="responsive-scroll mt-5" tabIndex={0}>
             <table className="table">
               <thead>
                 <tr>
@@ -268,10 +268,12 @@ const ScrollBarDocs: React.FC = () => {
       title: 'Variantes',
     },
     {
-      subtitle: 'Barra vertical',
+      subtitleBold: 'Barra vertical',
       content: (
         <>
-          <p className="text-md">Se utiliza cuando el contenido de un elemento excede el espacio visible a lo alto. </p>
+          <p className="text-md mb-4">
+            Se utiliza cuando el contenido de un elemento excede el espacio visible a lo alto.{' '}
+          </p>
           <Image
             src={`${basePath}/images/scrollbar/scrollbar_7.svg`}
             alt="Ilustración de barra vertical"
@@ -283,10 +285,12 @@ const ScrollBarDocs: React.FC = () => {
       ),
     },
     {
-      subtitle: 'Barra horizontal',
+      subtitleBold: 'Barra horizontal',
       content: (
         <>
-          <p className="text-md">Se utiliza cuando el contenido de un elemento excede el espacio visible a lo ancho.</p>
+          <p className="text-md mb-4">
+            Se utiliza cuando el contenido de un elemento excede el espacio visible a lo ancho.
+          </p>
           <Image
             src={`${basePath}/images/scrollbar/scrollbar_8.svg`}
             alt="Ilustración de barra horizontal"
@@ -306,7 +310,7 @@ const ScrollBarDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md" style={{ marginBottom: '32px' }}>
-            Si el contenedor requiere desplazamiento, puede habilitarse foco con tabindex=&qupt;0&qupt; para permitir
+            Si el contenedor requiere desplazamiento, puede habilitarse foco con tabindex=&quot;0&quot; para permitir
             desplazamiento con teclado. <br />
             <br />
             Se recomienda utilizarlo únicamente cuando el contenedor no contenga elementos interactivos.
@@ -326,11 +330,11 @@ const ScrollBarDocs: React.FC = () => {
           </ul>
 
           <Image
-            src={`${basePath}/images/scrollbar/scrollbar_1.svg`}
+            src={`${basePath}/images/scrollbar/scrollbar_9.svg`}
             alt="Navegacion alternativa del botón"
             width="738"
             height="400"
-            className="img-fluid"
+            className="img-fluid mt-4"
           />
         </>
       ),
@@ -342,11 +346,15 @@ const ScrollBarDocs: React.FC = () => {
           <p className="text-md">No se debe aplicar semántica ARIA a la barra de desplazamiento.</p>
           <p className="text-md">Recomendaciones:</p>
           <ul className="list-informative-bullet">
-            <li>No utilizar role=&quot;scrollbar&quot;.</li>
-            <li>No utilizar role=&quot;progressbar&quot;.</li>
+            <li>
+              No utilizar role=<i>&quot;scrollbar&quot;</i>.
+            </li>
+            <li>
+              No utilizar role=<i>&quot;progressbar&quot;</i>.
+            </li>
             <li>No agregar atributos ARIA para anunciar el desplazamiento.</li>
           </ul>
-          <p className="text-md">
+          <p className="text-md mt-4">
             La navegación y el desplazamiento deben resolverse mediante el comportamiento nativo del navegador.
           </p>
         </>
@@ -371,6 +379,29 @@ const ScrollBarDocs: React.FC = () => {
 
           <a
             className="external"
+            href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Success Criterion 1.4.11 Non-Text Contrast (Level AA)
+          </a>
+          <p>
+            La presentación visual de elementos de la interfaz de usuario y objetos gráficos tiene por lo menos una
+            relación de contraste de 3:1 con respecto a los colores adyacentes.{' '}
+          </p>
+
+          <a
+            className="external"
+            href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Success Criterion 2.1.1 Keyboard (Level A){' '}
+          </a>
+          <p>Todas las funcionalidades del contenido se puede operar a través de una interfaz de teclado.</p>
+
+          <a
+            className="external"
             href="https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks.html"
             target="_blank"
             rel="noopener noreferrer"
@@ -392,8 +423,9 @@ const ScrollBarDocs: React.FC = () => {
             Success Criterion 2.4.3 Focus Order (Level A)
           </a>
           <p>
-            Al navegar por las migas de pan con el teclado, el foco en los enlaces permanece en orden lógico en relación
-            con los demás enlaces en la ruta de navegación.
+            Si una página web puede navegarse de forma secuencial y las secuencias de navegación afectan el significado
+            o la operación, los componentes enfocables reciben el foco en un orden que preserve el significado y la
+            operabilidad.
           </p>
 
           <a
@@ -406,8 +438,7 @@ const ScrollBarDocs: React.FC = () => {
           </a>
           <p>
             Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque
-            del teclado es visible. Cuando utiliza un teclado para navegar por los componentes, los enlaces tienen un
-            subrayado visible y un recuadro <i>outline</i> que indica que los enlaces son interactivos.
+            del teclado es visible.
           </p>
         </>
       ),

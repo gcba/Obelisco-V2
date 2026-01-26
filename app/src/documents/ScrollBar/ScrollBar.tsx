@@ -329,6 +329,10 @@ const ScrollBarDocs: React.FC = () => {
             <li>Barra espaciadora (según navegador).</li>
           </ul>
 
+          <p  className="text-md mt-4">
+            El orden de foco no debe verse alterado por la presencia del scroll.
+          </p>
+
           <Image
             src={`${basePath}/images/scrollbar/scrollbar_9.svg`}
             alt="Navegacion alternativa del botón"
@@ -399,20 +403,6 @@ const ScrollBarDocs: React.FC = () => {
             Success Criterion 2.1.1 Keyboard (Level A){' '}
           </a>
           <p>Todas las funcionalidades del contenido se puede operar a través de una interfaz de teclado.</p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.4.1 Bypass Blocks (Level A)
-          </a>
-          <p className="mt-2">
-            Para ayudar a los usuarios de lectores de pantalla en la navegación, cada búsqueda debe estar dentro de una
-            región de landmark (hito) ARIA. Cada instancia debe tener una etiqueta única de identificación, a menos que
-            las búsquedas duplicadas realicen la misma función.
-          </p>
 
           <a
             className="external"

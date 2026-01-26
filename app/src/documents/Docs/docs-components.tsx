@@ -187,10 +187,13 @@ const sections = [
         <p className="text-md my-4">
           <strong>Versión 1.8.5 ⬇️</strong>
         </p>
-        <li>Se corrige la version multimeadia para los iframe</li>
         <li>
-          Se agrega la opcion de usar los breakpoint de <code>sm</code>, <code>md</code>, <code>lg</code>,{' '}
-          <code>xl</code> y <code>xxl</code> para el alineamiento del multimedia para diferentes resoluciones
+          Se corrige la version multimeadia para los <code>{'<iframe>'}</code>
+        </li>
+        <li>
+          Se incorpora la posibilidad de utilizar los breakpoints <code>sm</code>, <code>md</code>, <code>lg</code>,{' '}
+          <code>xl</code> y <code>xxl</code> para definir el alineamiento del contenido multimedia en distintas
+          resoluciones de pantalla.
           <ul>
             <li>
               <code>{'.hero-{breakpoint}-{positions-vertical}'}</code>,

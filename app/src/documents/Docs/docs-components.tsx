@@ -184,6 +184,33 @@ const sections = [
         <br />
         Donde <code>{'{positions-horizontal}'}</code> puede ser: <code>{'center'}</code>, <code>{'right'}</code>,{' '}
         <code>{'left'}</code>.
+        <p className="text-md my-4">
+          <strong>Versión 1.8.5 ⬇️</strong>
+        </p>
+        <li>Se corrige la version multimeadia para los iframe</li>
+        <li>
+          Se agrega la opcion de usar los breakpoint de <code>sm</code>, <code>md</code>, <code>lg</code>,{' '}
+          <code>xl</code> y <code>xxl</code> para el alineamiento del multimedia para diferentes resoluciones
+          <ul>
+            <li>
+              <code>{'.hero-{breakpoint}-{positions-vertical}'}</code>,
+            </li>
+            <li>
+              {' '}
+              <code>{'.hero-{breakpoint}-{positions-horizontal}'}</code>
+            </li>
+            <li>
+              <code>{'.hero-{breakpoint}-{positions-horizontal}-{positions-vertical}'}</code>
+            </li>
+          </ul>
+        </li>
+        Donde <code>{'{breakpoint}'}</code> puede ser <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>{' '}
+        o <code>xxl</code>
+        <br />
+        Se sigue la misma logica que en los breakpoints de{' '}
+        <a href="https://getbootstrap.com/docs/5.0/layout/breakpoints/" target="_blank">
+          bootstrap
+        </a>
       </ul>
     ),
   },

@@ -329,9 +329,7 @@ const ScrollBarDocs: React.FC = () => {
             <li>Barra espaciadora (según navegador).</li>
           </ul>
 
-          <p  className="text-md mt-4">
-            El orden de foco no debe verse alterado por la presencia del scroll.
-          </p>
+          <p className="text-md mt-4">El orden de foco no debe verse alterado por la presencia del scroll.</p>
 
           <Image
             src={`${basePath}/images/scrollbar/scrollbar_9.svg`}

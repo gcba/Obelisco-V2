@@ -19,6 +19,23 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
+      title: 'Versión 1.8.5',
+      firstTitle: true,
+      content: (
+        <ul className="docs-list">
+          <p>La Versión 1.8.5 contiene lo siguiente: </p>
+          <li>se corrige la visualizacion de iframe para la version multimedia de la cabecera de página</li>
+          <li>
+            Se agregan clases para la alineacion del multimeadia de la cabecera de página. En{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-8">
+              Cambios en componentes
+            </a>{' '}
+            está la documentación de las nuevas clases.
+          </li>
+        </ul>
+      ),
+    },
+    {
       title: 'Versión 1.8.4',
       firstTitle: true,
       content: (

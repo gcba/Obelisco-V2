@@ -9,6 +9,7 @@ export const stylesPages = [
   { text: 'Colores', url: '/components/colors', id: 1 },
   { text: 'Grilla', url: '/components/grid', id: 2 },
   { text: 'Tipografía', url: '/components/typography', id: 3 },
+  { text: 'Íconos', url: '/components/icons', id: 4 },
 ];
 export const formsPages = [
   { text: 'Botón de radio', url: '/components/form-radio', id: 6 },

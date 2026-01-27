@@ -19,8 +19,47 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
+      title: 'Versión X.X.X',
+      content: (
+        <ul className="docs-list">
+          <p>La Versión X.X.X contiene lo siguiente: </p>
+          <li>
+            Se incorpora la<strong> nueva versión de boxicons 3.0.7</strong>, eso trae los siguientes cambios:
+          </li>
+
+          <div className="responsive-scroll mb-3" tabIndex={0}>
+            <table className="table">
+              <thead>
+                <tr>
+                  <th scope="col" className="tb-text">
+                    Antes
+                  </th>
+                  <th scope="col" className="tb-text">
+                    Ahora
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <code>{`<i class="o-icon bx bxl-instagram-alt">  </i>`}</code>
+                  </td>
+                  <td>
+                    <code>{`<i class="o-icon bxl bx-instagram-alt">  </i>`}</code>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <li>
+            Se crea la <a href="http://">seccion de Íconos</a>, con su documentación de uso.
+          </li>
+        </ul>
+      ),
+    },
+    {
       title: 'Versión 1.8.4',
-      firstTitle: true,
       content: (
         <ul className="docs-list">
           <p>La Versión 1.8.4 contiene lo siguiente: </p>
@@ -49,7 +88,6 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.8.3',
-      firstTitle: true,
       content: (
         <ul className="docs-list">
           <p>La versión 1.8.3 contiene lo siguiente: </p>
@@ -63,7 +101,6 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.8.2',
-      firstTitle: true,
       content: (
         <ul className="docs-list">
           <p>La versión 1.8.2 contiene lo siguiente: </p>
@@ -80,7 +117,6 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.8.1',
-      firstTitle: true,
       content: (
         <ul className="docs-list">
           <p>La versión 1.8.1 contiene lo siguiente: </p>
@@ -105,7 +141,6 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.8.0',
-      firstTitle: true,
       content: (
         <ul className="docs-list">
           <p>La Versión 1.8.0 contiene lo siguiente: </p>
@@ -129,7 +164,6 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.7.1',
-      firstTitle: true,
       content: (
         <ul className="docs-list">
           <p>La versión 1.7.1 contiene lo siguiente: </p>
@@ -145,7 +179,6 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.7.0',
-      firstTitle: true,
       content: (
         <ul className="docs-list">
           <p>La versión 1.7.0 contiene lo siguiente: </p>
@@ -240,7 +273,6 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.6.2',
-      firstTitle: true,
       content: (
         <ul className="docs-list">
           <p>La versión 1.6.2 contiene lo siguiente: </p>
@@ -256,7 +288,6 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.6.1',
-      firstTitle: true,
       content: (
         <ul className="docs-list">
           <p>La versión 1.6.1 contiene lo siguiente: </p>
@@ -275,7 +306,6 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.6.0',
-      firstTitle: true,
       content: (
         <ul className="docs-list">
           <p>La versión 1.6.0 contiene lo siguiente: </p>
@@ -295,7 +325,6 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.5.6',
-      firstTitle: true,
       content: (
         <ul className="docs-list">
           <p>La versión 1.5.6 contiene lo siguiente: </p>

@@ -1131,18 +1131,6 @@ const DropdownSelDocs: React.FC = () => {
         title="Desplegable de selección"
         description={[
           'Los desplegables muestran una lista de opciones permitiendo que una persona usuaria pueda seleccionar una o varias en simultáneo. Una opción seleccionada puede usarse como una acción para filtrar u ordenar el contenido existente.',
-          <>
-            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del
-            componente podés{' '}
-            <a
-              href="https://gcba.github.io/estandares/componentes/desplegables/desplegables_seleccion/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              visitar la documentación en Obelisco v.1
-            </a>
-            .
-          </>,
         ]}
       />
       <Tabs

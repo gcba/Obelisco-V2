@@ -1,5 +1,6 @@
 'use client';
 // import Image from 'next/image';
+import { basePath } from '@/utils';
 import Link from 'next/link';
 import React from 'react';
 
@@ -8,8 +9,6 @@ import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 // import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 
 // import { AREA_1 } from './code-views';
-
-const basePath = '/Obelisco-V2';
 
 export default function Areas() {
   //   const [activeTab, setActiveTab] = useState('panel-content-docs');

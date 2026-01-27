@@ -1,4 +1,5 @@
 'use client';
+import { basePath } from '@/utils';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -9,7 +10,6 @@ import ComponentHeader from '@/components/Template/ComponentHeader';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 
 import { TEMPLATE_PAG_SIMPLE } from './code-views';
-const basePath = '/Obelisco-V2';
 
 const TemplatePaginaSimpleDocs: React.FC = () => {
   const [activeTab, setActiveTab] = useState('panel-content-docs');

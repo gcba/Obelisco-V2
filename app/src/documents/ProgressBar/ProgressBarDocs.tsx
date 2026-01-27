@@ -1,11 +1,11 @@
 'use client';
+import { basePath } from '@/utils';
 import Image from 'next/image';
 
 import CodeBox from '@/components/CodeBox';
 // import LinkClient from '@/components/LinkClient';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
-const basePath = '/Obelisco-V2';
 
 import {
   PROGRESSBAR_DESCRIPTION_PRIMARY,

@@ -1,12 +1,11 @@
 'use client';
 // import Image from 'next/image';
+import { basePath } from '@/utils';
 import Link from 'next/link';
 import React from 'react';
 
 import ComponentHeader from '@/components/Template/ComponentHeader';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
-
-const basePath = '/Obelisco-V2';
 
 export default function Formularios() {
   const sections = [

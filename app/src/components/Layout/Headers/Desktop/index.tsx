@@ -1,13 +1,12 @@
 'use client';
 
+import { basePath } from '@/utils';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 import '../../layout.scss';
 
 import HeaderMobile from '../Mobile';
-
-const basePath = '/Obelisco-V2';
 
 export default function HeaderDesktop() {
   const gettingPages = [

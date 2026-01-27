@@ -1,3 +1,4 @@
+import { basePath } from '@/utils';
 import Image from 'next/image';
 
 import CodeBox from '@/components/CodeBox';
@@ -25,8 +26,6 @@ import {
   HIGHLIGHTED_LATERAL_DOWNLOAD,
   HIGHLIGHTED_LATERAL_LINK,
 } from './code-views';
-
-const basePath = '/Obelisco-V2';
 
 const ZoomContainer = ({ children }: React.PropsWithChildren) => <div style={{ zoom: 0.5 }}>{children}</div>;
 

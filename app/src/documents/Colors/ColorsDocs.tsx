@@ -1,4 +1,6 @@
 'use client';
+import { basePath } from '@/utils';
+
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 import PalletteColor from '@/components/Template/PalletteColor';
@@ -33,8 +35,6 @@ import {
   themeColors,
   yellowArray,
 } from './constants';
-
-const basePath = '/Obelisco-V2';
 
 const ColorsDocs: React.FC = () => {
   const SECTION_DEV = [

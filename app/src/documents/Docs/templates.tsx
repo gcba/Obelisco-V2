@@ -1,10 +1,10 @@
 'use client';
 // import Link from 'next/link';
+import { basePath } from '@/utils';
 import React from 'react';
 
 import ComponentHeader from '@/components/Template/ComponentHeader';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
-const basePath = '/Obelisco-V2';
 
 const TemplatesComponents: React.FC = () => {
   const SECTION_UX = [

@@ -1,6 +1,7 @@
 'use client';
 
 // import Link from 'next/link';
+import { basePath } from '@/utils';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -11,8 +12,6 @@ import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import { PATTERNS_ACCESSIBILTY } from './code-views';
-
-const basePath = '/Obelisco-V2';
 
 const PatternsComponents: React.FC = () => {
   const SECTION_UX = [

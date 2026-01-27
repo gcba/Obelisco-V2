@@ -1,5 +1,6 @@
 'use client';
 
+import { basePath } from '@/utils';
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
@@ -10,8 +11,6 @@ import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
-
-const basePath = '/Obelisco-V2';
 
 import {
   PAGINATION_CENTRAL,

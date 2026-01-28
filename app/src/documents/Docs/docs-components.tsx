@@ -188,7 +188,7 @@ const sections = [
           <strong>Versión 1.8.5 ⬇️</strong>
         </p>
         <li>
-          Se corrige la version multimeadia para los <code>{'<iframe>'}</code>
+          Se corrige la version multimedia para los elementos <code>{'<iframe>'}</code>
         </li>
         <li>
           Se incorpora la posibilidad de utilizar los breakpoints <code>sm</code>, <code>md</code>, <code>lg</code>,{' '}
@@ -212,8 +212,9 @@ const sections = [
         <br />
         Se sigue la misma logica que en los breakpoints de{' '}
         <a href="https://getbootstrap.com/docs/5.0/layout/breakpoints/" target="_blank">
-          bootstrap
+          Bootstrap
         </a>
+        .
       </ul>
     ),
   },

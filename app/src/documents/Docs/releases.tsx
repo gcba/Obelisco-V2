@@ -24,9 +24,12 @@ const ReleasesComponents: React.FC = () => {
       content: (
         <ul className="docs-list">
           <p>La Versión 1.8.5 contiene lo siguiente: </p>
-          <li>se corrige la visualizacion de iframe para la version multimedia de la cabecera de página</li>
           <li>
-            Se agregan clases para la alineacion del multimeadia de la cabecera de página. En{' '}
+            Se corrige la visualizacion de los elementos<code>{'<iframe>'}</code> para la version multimedia de Cabecera
+            de página
+          </li>
+          <li>
+            Se agregan clases para la alineacion de la multimedia en Cabecera de página. En{' '}
             <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-8">
               Cambios en componentes
             </a>{' '}

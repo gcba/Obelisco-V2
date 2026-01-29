@@ -27,7 +27,7 @@ const ReleasesComponents: React.FC = () => {
           <li>Se modifica el borde en componente Alertas.</li>
           <li>
             Se agrega una nueva variante &quot;Alerta sistemas&quot; en el componente Alertas. En{' '}
-            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-3">
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#alerta">
               Cambios en componentes
             </a>{' '}
             está la documentación de las nuevas clases.
@@ -37,7 +37,7 @@ const ReleasesComponents: React.FC = () => {
           <li>
             Se agregan clases en los elementos <code>{'<img>'}</code> y <code>{'<video>'}</code> para ajustar el
             alineamento de la multimedia en el componente Cabecera de Página. En{' '}
-            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-8 ">
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#cabecera-pagina">
               Cambios en componentes
             </a>{' '}
             está la documentación de las nuevas clases.
@@ -88,14 +88,14 @@ const ReleasesComponents: React.FC = () => {
             Se modifica la variante{' '}
             <a href="https://gcba.github.io/Obelisco-V2/components/highlighted#section-dev-2">Destado Conjunto</a>, del
             componente Destacado. En{' '}
-            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-14">
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#destacado">
               Cambios en componentes
             </a>
             , se encuentran las modificaciones.
           </li>
           <li>
             Se realizaron correcciones en el componente Cabecera de Página, también documentadas en{' '}
-            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-8">
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#cabecera-pagina">
               Cambios en componentes
             </a>
             .
@@ -112,7 +112,7 @@ const ReleasesComponents: React.FC = () => {
           <li>Se modifica el nombre del componente &quot;Tarjeta de Agenda&quot; a &quot;Tarjeta de Eventos&quot;</li>
           <li>
             Se crea la clase <code>.card-eventos</code> para espaciados y tamaño. En{' '}
-            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-31">
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#tarjetas">
               Cambios en componentes
             </a>{' '}
             se disponibiliza la documentación del componente.
@@ -265,7 +265,7 @@ const ReleasesComponents: React.FC = () => {
           <li>Nueva variante de componente Tarjetas con miscelánea.</li>
           <li>
             En{' '}
-            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-31">
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#tarjetas">
               Cambios de componentes
             </a>{' '}
             se encuentran las clases para las Tarjetas con miscelánea.
@@ -281,7 +281,7 @@ const ReleasesComponents: React.FC = () => {
           <p>La versión 1.6.0 contiene lo siguiente: </p>
           <li>
             Se disponibiliza componente Galeria, se incluye documentación en{' '}
-            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-18">
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#galeria">
               Cambios en componentes
             </a>
             .

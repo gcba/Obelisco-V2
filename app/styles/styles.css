@@ -18103,7 +18103,7 @@ header.hero .aside iframe {
   width: 100%;
   height: 100%;
 }
-header.hero .aside:has(iframe) {
+header.hero .aside:has(iframe), header.hero .aside:has(video), header.hero .aside:has(img) {
   aspect-ratio: 16/9;
 }
 header.hero .aside img.hero-bottom,
@@ -18352,9 +18352,6 @@ header.hero .aside video.hero-center-left {
   header.hero .aside video::-webkit-media-controls-panel {
     left: 14%;
   }
-  header.hero .aside:has(iframe) {
-    aspect-ratio: unset;
-  }
   header.hero .aside img.hero-lg-bottom,
   header.hero .aside video.hero-lg-bottom {
     object-position: bottom;
@@ -18415,6 +18412,7 @@ header.hero .aside video.hero-center-left {
   header.hero .aside:has(video),
   header.hero .aside:has(iframe) {
     flex: 1 1 250%;
+    aspect-ratio: unset;
   }
 }
 @media (width >= 1200px) {

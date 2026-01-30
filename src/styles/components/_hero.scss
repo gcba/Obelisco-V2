@@ -378,9 +378,6 @@ header.hero {
         }
       }
 
-      &:has(iframe) {
-        aspect-ratio: unset;
-      }
       @include hero-media-position(lg);
     }
 
@@ -388,6 +385,7 @@ header.hero {
     .aside:has(video),
     .aside:has(iframe) {
       flex: 1 1 250%;
+      aspect-ratio: unset;
     }
   }
 

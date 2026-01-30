@@ -1,10 +1,10 @@
 import Link from 'next/link';
-
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import ComponentHeader from '@/components/Template/ComponentHeader';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
+
 import { HERO_EXAMPLE, HERO_EXAMPLE_2 } from './code-views';
 
 const sections = [

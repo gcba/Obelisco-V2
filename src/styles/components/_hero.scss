@@ -268,7 +268,9 @@ header.hero {
       height: 100%;
     }
 
-    &:has(iframe), &:has(video), &:has(img) {
+    &:has(iframe),
+    &:has(video),
+    &:has(img) {
       aspect-ratio: 16 / 9;
     }
     @include hero-media-position;

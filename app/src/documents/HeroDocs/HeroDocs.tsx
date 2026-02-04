@@ -23,6 +23,7 @@ import {
   HERO_LIGHT,
   HERO_ACCESIBILITY,
   HERO_ACCESIBILITY_2,
+  HERO_REDES_SOCIALES,
 } from './code-views';
 
 const HeroHeaderDocs: React.FC = () => {
@@ -651,6 +652,67 @@ const HeroHeaderDocs: React.FC = () => {
                     </div>
 
                     <div className="aside bg-aside-hero-dark"></div>
+                  </header>
+                </div>
+              </div>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+    {
+      title: 'Variante Noticias',
+      subtitle: 'Con redes sociales',
+      content: (
+        <>
+          <CodeBox codeHTML={HERO_REDES_SOCIALES}>
+            <div className="container">
+              <div className="hero-container">
+                <div className="hero-box-sizing ">
+                  <header className="hero bg-content-hero-light">
+                    <div className="content corner">
+                      <div className="d-flex flex-column">
+                        <nav aria-label="Navegación secundaria">
+                          <ol className="breadcrumb m-0">
+                            <li className="breadcrumb-item">
+                              <a href="#">Inicio</a>
+                            </li>
+                          </ol>
+                        </nav>
+
+                        <div className="d-flex flex-wrap align-items-center column-gap-2 row-gap-4">
+                          <span className="badge badge-info">Etiqueta</span>
+                          <span className="badge badge-info">Etiqueta</span>
+                        </div>
+
+                        <div>
+                          <p className="text-sm text-body-secondary mb-3">Jueves 17 de julio de 2022</p>
+                          <h1 className="mb-3">Encabezado de la página</h1>
+                          <p className="lead m-0">
+                            Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la
+                            convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
+                          </p>
+                        </div>
+
+                        <div className="d-flex flex-wrap align-items-center column-gap-2 row-gap-4">
+                          <span className="text-body-secondary me-2">Compartir en redes</span>
+                          <a href="#" className="shadow-none" target="_blank">
+                            <i className="bx bxl-facebook-circle o-icon text-primary"></i>
+                          </a>
+                          <a href="#" className="shadow-none" target="_blank">
+                            <i className="bx bxl-instagram o-icon text-primary"></i>
+                          </a>
+                          <a href="#" className="shadow-none" target="_blank">
+                            <i className="bx bxl-twitter o-icon text-primary"></i>
+                          </a>
+                          <a href="#" className="shadow-none" target="_blank">
+                            <i className="bx bxl-linkedin-square o-icon text-primary"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="aside bg-aside-hero-light"></div>
                   </header>
                 </div>
               </div>

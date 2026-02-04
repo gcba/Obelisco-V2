@@ -617,3 +617,50 @@ export const HERO_ACCESIBILITY_2 = `<header class="hero">
   </div>
 </header>
 `;
+
+export const HERO_REDES_SOCIALES = `<header class="hero bg-content-hero-light">
+	<div class="content corner">
+		<div class="d-flex flex-column">
+			<nav aria-label="Navegación secundaria">
+				<ol class="breadcrumb m-0">
+					<li class="breadcrumb-item">
+						<a href="#">Inicio</a>
+					</li>
+				</ol>
+			</nav>
+
+			<div class="d-flex flex-wrap align-items-center column-gap-2 row-gap-4">
+				<span class="badge badge-info">Etiqueta</span>
+				<span class="badge badge-info">Etiqueta</span>
+			</div>
+
+			<div>
+				<p class="text-sm text-body-secondary mb-3">Jueves 17 de julio de 2022</p>
+				<h1 class="mb-3">Encabezado de la página</h1>
+				<p class="lead m-0">
+					Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la
+					convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
+				</p>
+			</div>
+
+			<div class="d-flex flex-wrap align-items-center column-gap-2 row-gap-4">
+				<span class="text-body-secondary me-2">Compartir en redes</span>
+				<a href="#" class="shadow-none" target="_blank">
+					<i class="bx bxl-facebook-circle o-icon text-primary"></i>
+				</a>
+				<a href="#" class="shadow-none" target="_blank">
+					<i class="bx bxl-instagram o-icon text-primary"></i>
+				</a>
+				<a href="#" class="shadow-none" target="_blank">
+					<i class="bx bxl-twitter o-icon text-primary"></i>
+				</a>
+				<a href="#" class="shadow-none" target="_blank">
+					<i class="bx bxl-linkedin-square o-icon text-primary"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="aside bg-aside-hero-light"></div>
+</header>
+`;

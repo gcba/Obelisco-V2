@@ -24,9 +24,6 @@ const SECTIONS_DEV = [
                 <th scope="col" className="tb-text">
                   Clase
                 </th>
-                <th scope="col" className="tb-text">
-                  Uso/Tamaño?
-                </th>
               </tr>
             </thead>
             <tbody>
@@ -37,7 +34,6 @@ const SECTIONS_DEV = [
                 <td>
                   <code>{'ob-icon interbanking'}</code>
                 </td>
-                <td>Texto predeterminado</td>
               </tr>
               <tr>
                 <li className="list-inline-item redes-items">
@@ -46,7 +42,6 @@ const SECTIONS_DEV = [
                 <td>
                   <code>{'ob-icon red-link'}</code>
                 </td>
-                <td>Texto predeterminado</td>
               </tr>
               <tr>
                 <li className="list-inline-item redes-items">
@@ -55,7 +50,6 @@ const SECTIONS_DEV = [
                 <td>
                   <code>{'ob-icon maestro'}</code>
                 </td>
-                <td>Texto predeterminado</td>
               </tr>
               <tr>
                 <li className="list-inline-item redes-items">
@@ -64,7 +58,6 @@ const SECTIONS_DEV = [
                 <td>
                   <code>{'ob-icon cabal'}</code>
                 </td>
-                <td>Texto predeterminado</td>
               </tr>
               <tr>
                 <li className="list-inline-item redes-items">
@@ -73,7 +66,6 @@ const SECTIONS_DEV = [
                 <td>
                   <code>{'ob-icon visa'}</code>
                 </td>
-                <td>Texto predeterminado</td>
               </tr>
               <tr>
                 <li className="list-inline-item redes-items">
@@ -82,7 +74,6 @@ const SECTIONS_DEV = [
                 <td>
                   <code>{'ob-icon pago-mis-cuentas'}</code>
                 </td>
-                <td>Texto predeterminado</td>
               </tr>
               <tr>
                 <li className="list-inline-item redes-items">
@@ -91,7 +82,6 @@ const SECTIONS_DEV = [
                 <td>
                   <code>{'ob-icon mercado-pago'}</code>
                 </td>
-                <td>Texto predeterminado</td>
               </tr>
               <tr>
                 <li className="list-inline-item redes-items">
@@ -100,7 +90,6 @@ const SECTIONS_DEV = [
                 <td>
                   <code>{'ob-icon american-express'}</code>
                 </td>
-                <td>Texto predeterminado</td>
               </tr>
               <tr>
                 <li className="list-inline-item redes-items">
@@ -109,7 +98,6 @@ const SECTIONS_DEV = [
                 <td>
                   <code>{'ob-icon mastercard'}</code>
                 </td>
-                <td>Texto predeterminado</td>
               </tr>
             </tbody>
           </table>
@@ -136,9 +124,6 @@ const SECTIONS_DEV = [
                 <th scope="col" className="tb-text">
                   Clase específica
                 </th>
-                <th scope="col" className="tb-text">
-                  Uso/Tamaño?
-                </th>
               </tr>
             </thead>
             <tbody>
@@ -147,49 +132,42 @@ const SECTIONS_DEV = [
                 <td>
                   <code>{'bx-facebook-circle'}</code>
                 </td>
-                <td>Texto predeterminado</td>
               </tr>
               <tr>
                 <i className="o-icon bxl bx-instagram-alt"></i>
                 <td>
                   <code>{'bx-instagram-alt'}</code>
                 </td>
-                <td>Texto predeterminado</td>
               </tr>
               <tr>
                 <i className="o-icon bxl bx-twitter-x"></i>
                 <td>
                   <code>{'bx-twitter-x'}</code>
                 </td>
-                <td>Texto predeterminado</td>
               </tr>
               <tr>
                 <i className="o-icon bxl bx-youtube"></i>
                 <td>
                   <code>{'bx-youtube'}</code>
                 </td>
-                <td>Texto predeterminado</td>
               </tr>
               <tr>
                 <i className="o-icon bxl bx-linkedin-square"></i>
                 <td>
                   <code>{'bx-linkedin-square'}</code>
                 </td>
-                <td>Texto predeterminado</td>
               </tr>
               <tr>
                 <i className="o-icon bxl bx-tiktok"></i>
                 <td>
                   <code>{'bx-tiktok'}</code>
                 </td>
-                <td>Texto predeterminado</td>
               </tr>
               <tr>
                 <i className="o-icon bxl bx-pinterest"></i>
                 <td>
                   <code>{'bx-pinterest'}</code>
                 </td>
-                <td>Texto predeterminado</td>
               </tr>
             </tbody>
           </table>
@@ -225,9 +203,6 @@ const SECTIONS_DEV = [
                 <th scope="col" className="tb-text">
                   Ligadura tipografica
                 </th>
-                <th scope="col" className="tb-text">
-                  Uso/Tamaño?
-                </th>
               </tr>
             </thead>
             <tbody>
@@ -239,7 +214,6 @@ const SECTIONS_DEV = [
                 <td>
                   <code>{'info'}</code>
                 </td>
-                <td>Texto predeterminado</td>
               </tr>
               <tr>
                 <span className="material-symbols-rounded o-icon" aria-hidden="true">
@@ -249,7 +223,6 @@ const SECTIONS_DEV = [
                 <td>
                   <code>{'check'}</code>
                 </td>
-                <td>Texto predeterminado</td>
               </tr>
               <tr>
                 <span className="material-symbols-rounded o-icon" aria-hidden="true">
@@ -259,7 +232,6 @@ const SECTIONS_DEV = [
                 <td>
                   <code>{'close'}</code>
                 </td>
-                <td>Texto predeterminado</td>
               </tr>
               <tr>
                 <span className="material-symbols-rounded o-icon" aria-hidden="true">
@@ -269,7 +241,6 @@ const SECTIONS_DEV = [
                 <td>
                   <code>{'warning'}</code>
                 </td>
-                <td>Texto predeterminado</td>
               </tr>
             </tbody>
           </table>
@@ -296,7 +267,10 @@ const SECTIONS_DEV = [
 const IconsDocs: React.FC = () => {
   return (
     <>
-      <ComponentHeader title="Tipografía" description={['La tipografía es uno de los elementos.']} />
+      <ComponentHeader
+        title="Tipografía"
+        description={['Conocé las familia de íconos de Obelisco para los productos digitales de GCBA.']}
+      />
       <Tabs sectionDev={SECTIONS_DEV} />
     </>
   );

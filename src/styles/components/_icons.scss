@@ -21,8 +21,8 @@ $iconos-mastercard-svg: url("data:image/svg+xml;utf8,<svg viewBox='0 0 24 24' xm
 
 i.ob-icon {
   height: 24px;
-
   font-size: 24px;
+
   &.interbanking {
     @include custom-icon($iconos-interbanking-svg);
   }

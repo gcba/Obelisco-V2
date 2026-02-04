@@ -18057,6 +18057,10 @@ header.hero .content .search-container .search-wrapper #search-home.form-control
 header.hero .content > .flex-column, header.hero .content > .list-steps {
   row-gap: 24px;
 }
+header.hero .content .o-icon {
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
 header.hero .aside {
   width: 100%;
   min-height: 64px;

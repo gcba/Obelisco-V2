@@ -34,6 +34,37 @@ $media-positions-horizontal: (
   mask-size: cover;
 }
 
+// CLASES PARA OBJECT-POSITION del media
+@mixin hero-media-position($breakpoint: null) {
+  $bp-prefix: if($breakpoint == null, '', '#{$breakpoint}-');
+
+  // Clases simples (un solo valor) - combinando ambos arrays sin repetir 'center'
+  @each $name, $position in $media-positions-vertical {
+    img.hero-#{$bp-prefix}#{$name},
+    video.hero-#{$bp-prefix}#{$name} {
+      object-position: #{$position};
+    }
+  }
+  @each $name, $position in $media-positions-horizontal {
+    @if $name != 'center' {
+      img.hero-#{$bp-prefix}#{$name},
+      video.hero-#{$bp-prefix}#{$name} {
+        object-position: #{$position};
+      }
+    }
+  }
+
+  // Clases combinadas (dos valores)
+  @each $name1, $position1 in $media-positions-vertical {
+    @each $name2, $position2 in $media-positions-horizontal {
+      img.hero-#{$bp-prefix}#{$name1}-#{$name2},
+      video.hero-#{$bp-prefix}#{$name1}-#{$name2} {
+        object-position: #{$position1} #{$position2};
+      }
+    }
+  }
+}
+
 header.hero {
   display: flex;
   flex-direction: column;
@@ -183,6 +214,11 @@ header.hero {
     }
 
     // Variante buscador
+
+    .o-icon {
+      font-size: 1.5rem;
+      vertical-align: middle;
+    }
   }
 
   .aside {
@@ -231,6 +267,18 @@ header.hero {
         display: none !important;
       }
     }
+
+    & iframe {
+      width: 100%;
+      height: 100%;
+    }
+
+    &:has(iframe),
+    &:has(video),
+    &:has(img) {
+      aspect-ratio: 16 / 9;
+    }
+    @include hero-media-position;
   }
 
   @media (width >= 426px) {
@@ -258,6 +306,10 @@ header.hero {
         width: 90%;
       }
     }
+
+    .aside {
+      @include hero-media-position(sm);
+    }
   }
 
   @media (width >= 768px) {
@@ -267,10 +319,14 @@ header.hero {
         height: 40px;
       }
     }
+
+    .aside {
+      @include hero-media-position(md);
+    }
   }
 
   @media (width >= 992px) {
-    &:has(.aside img, .aside video) .content > .flex-column {
+    &:has(.aside img, .aside video, .aside iframe) .content > .flex-column {
       width: 90%;
     }
     flex-direction: row;
@@ -326,11 +382,15 @@ header.hero {
           left: 14%;
         }
       }
+
+      @include hero-media-position(lg);
     }
 
     .aside:has(img),
-    .aside:has(video) {
+    .aside:has(video),
+    .aside:has(iframe) {
       flex: 1 1 250%;
+      aspect-ratio: unset;
     }
   }
 
@@ -342,11 +402,19 @@ header.hero {
         width: 70%;
       }
     }
+
+    .aside {
+      @include hero-media-position(xl);
+    }
   }
 
   @media (width >=1400px) {
     .content {
       padding: 48px 0 48px 176px;
+    }
+
+    .aside {
+      @include hero-media-position(xxl);
     }
   }
 }
@@ -375,32 +443,5 @@ header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content {
   div p,
   div span.fw-semibold.me-3 {
     color: $white;
-  }
-}
-
-// CLASES PARA OBJECT-POSITION del media
-// Clases simples (un solo valor) - combinando ambos arrays sin repetir 'center'
-@each $name, $position in $media-positions-vertical {
-  header.hero .aside img.hero-#{$name},
-  header.hero .aside video.hero-#{$name} {
-    object-position: #{$position};
-  }
-}
-@each $name, $position in $media-positions-horizontal {
-  @if $name != 'center' {
-    header.hero .aside img.hero-#{$name},
-    header.hero .aside video.hero-#{$name} {
-      object-position: #{$position};
-    }
-  }
-}
-
-// Clases combinadas (dos valores)
-@each $name1, $position1 in $media-positions-vertical {
-  @each $name2, $position2 in $media-positions-horizontal {
-    header.hero .aside img.hero-#{$name1}-#{$name2},
-    header.hero .aside video.hero-#{$name1}-#{$name2} {
-      object-position: #{$position1} #{$position2};
-    }
   }
 }

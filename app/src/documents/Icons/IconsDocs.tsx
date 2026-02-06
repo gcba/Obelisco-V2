@@ -28,73 +28,73 @@ const SECTIONS_DEV = [
             </thead>
             <tbody>
               <tr>
-                <li className="list-inline-item redes-items">
+                <td>
                   <i className="ob-icon interbanking"></i>
-                </li>
+                </td>
                 <td>
                   <code>{'ob-icon interbanking'}</code>
                 </td>
               </tr>
               <tr>
-                <li className="list-inline-item redes-items">
+                <td>
                   <i className="ob-icon red-link"></i>
-                </li>
+                </td>
                 <td>
                   <code>{'ob-icon red-link'}</code>
                 </td>
               </tr>
               <tr>
-                <li className="list-inline-item redes-items">
+                <td>
                   <i className="ob-icon maestro"></i>
-                </li>
+                </td>
                 <td>
                   <code>{'ob-icon maestro'}</code>
                 </td>
               </tr>
               <tr>
-                <li className="list-inline-item redes-items">
+                <td>
                   <i className="ob-icon cabal"></i>
-                </li>
+                </td>
                 <td>
                   <code>{'ob-icon cabal'}</code>
                 </td>
               </tr>
               <tr>
-                <li className="list-inline-item redes-items">
+                <td>
                   <i className="ob-icon visa"></i>
-                </li>
+                </td>
                 <td>
                   <code>{'ob-icon visa'}</code>
                 </td>
               </tr>
               <tr>
-                <li className="list-inline-item redes-items">
+                <td>
                   <i className="ob-icon pago-mis-cuentas"></i>
-                </li>
+                </td>
                 <td>
                   <code>{'ob-icon pago-mis-cuentas'}</code>
                 </td>
               </tr>
               <tr>
-                <li className="list-inline-item redes-items">
+                <td>
                   <i className="ob-icon mercado-pago"></i>
-                </li>
+                </td>
                 <td>
                   <code>{'ob-icon mercado-pago'}</code>
                 </td>
               </tr>
               <tr>
-                <li className="list-inline-item redes-items">
+                <td>
                   <i className="ob-icon american-express"></i>
-                </li>
+                </td>
                 <td>
                   <code>{'ob-icon american-express'}</code>
                 </td>
               </tr>
               <tr>
-                <li className="list-inline-item redes-items">
+                <td>
                   <i className="ob-icon mastercard"></i>
-                </li>
+                </td>
                 <td>
                   <code>{'ob-icon mastercard'}</code>
                 </td>
@@ -128,43 +128,57 @@ const SECTIONS_DEV = [
             </thead>
             <tbody>
               <tr>
-                <i className="o-icon bxl bx-facebook-circle"></i>
+                <td>
+                  <i className="o-icon bxl bx-facebook-circle"></i>
+                </td>
                 <td>
                   <code>{'bx-facebook-circle'}</code>
                 </td>
               </tr>
               <tr>
-                <i className="o-icon bxl bx-instagram-alt"></i>
+                <td>
+                  <i className="o-icon bxl bx-instagram-alt"></i>
+                </td>
                 <td>
                   <code>{'bx-instagram-alt'}</code>
                 </td>
               </tr>
               <tr>
-                <i className="o-icon bxl bx-twitter-x"></i>
+                <td>
+                  <i className="o-icon bxl bx-twitter-x"></i>
+                </td>
                 <td>
                   <code>{'bx-twitter-x'}</code>
                 </td>
               </tr>
               <tr>
-                <i className="o-icon bxl bx-youtube"></i>
+                <td>
+                  <i className="o-icon bxl bx-youtube"></i>
+                </td>
                 <td>
                   <code>{'bx-youtube'}</code>
                 </td>
               </tr>
               <tr>
-                <i className="o-icon bxl bx-linkedin-square"></i>
+                <td>
+                  <i className="o-icon bxl bx-linkedin-square"></i>
+                </td>
                 <td>
                   <code>{'bx-linkedin-square'}</code>
                 </td>
               </tr>
               <tr>
-                <i className="o-icon bxl bx-tiktok"></i>
+                <td>
+                  <i className="o-icon bxl bx-tiktok"></i>
+                </td>
                 <td>
                   <code>{'bx-tiktok'}</code>
                 </td>
               </tr>
               <tr>
-                <i className="o-icon bxl bx-pinterest"></i>
+                <td>
+                  <i className="o-icon bxl bx-pinterest"></i>
+                </td>
                 <td>
                   <code>{'bx-pinterest'}</code>
                 </td>
@@ -207,36 +221,44 @@ const SECTIONS_DEV = [
             </thead>
             <tbody>
               <tr>
-                <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                  info
-                </span>
+                <td>
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                    info
+                  </span>
+                </td>
 
                 <td>
                   <code>{'info'}</code>
                 </td>
               </tr>
               <tr>
-                <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                  check
-                </span>
+                <td>
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                    check
+                  </span>
+                </td>
 
                 <td>
                   <code>{'check'}</code>
                 </td>
               </tr>
               <tr>
-                <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                  close
-                </span>
+                <td>
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                    close
+                  </span>
+                </td>
 
                 <td>
                   <code>{'close'}</code>
                 </td>
               </tr>
               <tr>
-                <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                  warning
-                </span>
+                <td>
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                    warning
+                  </span>
+                </td>
 
                 <td>
                   <code>{'warning'}</code>

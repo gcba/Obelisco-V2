@@ -14960,7 +14960,7 @@ input[type=search]::-moz-search-clear-button {
 }
 .modal .modal-content {
   border: none;
-  padding-top: 10px;
+  padding: 10px;
   outline: 0.125rem solid transparent;
 }
 .modal .modal-content .modal-header {
@@ -15000,6 +15000,11 @@ input[type=search]::-moz-search-clear-button {
 }
 .modal .modal-content .modal-footer button.btn {
   margin: 0;
+}
+@media (min-width: 768px) {
+  .modal .modal-content {
+    padding: 1rem;
+  }
 }
 @media (min-width: 1200px) {
   .modal .modal-content {

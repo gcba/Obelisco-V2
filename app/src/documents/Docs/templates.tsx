@@ -34,16 +34,17 @@ const TemplatesComponents: React.FC = () => {
 
               <div className="col">
                 <div className="card h-100">
-                  <i className="bxf bx-list-ul card-icon"></i>
+                  <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                    description
+                  </span>
                   <div className="card-body">
                     <h3 className="card-title">
-                      <a href={`${basePath}/templates/paginas-de-areas`} className="card-title-link">
-                        Formularios
+                      <a href={`${basePath}/templates/pagina-tramites`} className="card-title-link">
+                        Trámites
                       </a>
                     </h3>
                     <p className="card-text">
-                      Permiten a las personas interactuar con el sistema, ingresando, editando o confirmando
-                      información.
+                      La usamos para los trámites que ofrece el Gobierno de la Ciudad de Buenos Aires.
                     </p>
                   </div>
                 </div>
@@ -51,23 +52,9 @@ const TemplatesComponents: React.FC = () => {
 
               <div className="col">
                 <div className="card h-100">
-                  <i className="bxf bx-news card-icon"></i>
-                  <div className="card-body">
-                    <h3 className="card-title">
-                      <a href={`${basePath}/templates/pagina-de-noticias`} className="card-title-link">
-                        Noticias
-                      </a>
-                    </h3>
-                    <p className="card-text">
-                      Página para comunicar avisos y novedades. Debe estar constantemente actualizada.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col">
-                <div className="card h-100">
-                  <i className="bxf bx-book-content card-icon"></i>
+                  <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                    chrome_reader_mode{' '}
+                  </span>{' '}
                   <div className="card-body">
                     <h3 className="card-title">
                       <a href={`${basePath}/templates/pagina-simple`} className="card-title-link">
@@ -98,16 +85,35 @@ const TemplatesComponents: React.FC = () => {
               <div className="col">
                 <div className="card h-100">
                   <span className="material-symbols-rounded card-icon" aria-hidden="true">
-                    description
-                  </span>
+                    newspaper
+                  </span>{' '}
                   <div className="card-body">
                     <h3 className="card-title">
-                      <a href={`${basePath}/templates/pagina-tramites`} className="card-title-link">
-                        Trámites
+                      <a href={`${basePath}/templates/pagina-de-noticias`} className="card-title-link">
+                        Noticias
                       </a>
                     </h3>
                     <p className="card-text">
-                      La usamos para los trámites que ofrece el Gobierno de la Ciudad de Buenos Aires.
+                      Página para comunicar avisos y novedades. Debe estar constantemente actualizada.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col">
+                <div className="card h-100">
+                  <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                    format_list_bulleted
+                  </span>{' '}
+                  <div className="card-body">
+                    <h3 className="card-title">
+                      <a href={`${basePath}/templates/paginas-de-areas`} className="card-title-link">
+                        Formularios
+                      </a>
+                    </h3>
+                    <p className="card-text">
+                      Permiten a las personas interactuar con el sistema, ingresando, editando o confirmando
+                      información.
                     </p>
                   </div>
                 </div>

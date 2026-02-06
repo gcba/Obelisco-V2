@@ -19,12 +19,12 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
-      title: 'Versión X.X.X',
+      title: 'Versión 1.9.0',
       content: (
         <ul className="docs-list">
-          <p>La Versión X.X.X contiene lo siguiente: </p>
+          <p>La Versión 1.9.0 contiene lo siguiente: </p>
           <li>
-            Se incorpora la<strong> nueva versión de boxicons 3.0.7</strong>, eso trae los siguientes cambios:
+            Se incorpora la<strong> nueva versión de boxicons 3.0.8</strong>, eso trae los siguientes cambios:
           </li>
 
           <div className="responsive-scroll mb-3" tabIndex={0}>
@@ -42,10 +42,10 @@ const ReleasesComponents: React.FC = () => {
               <tbody>
                 <tr>
                   <td>
-                    <code>{`<i class="o-icon bx bxl-instagram-alt">  </i>`}</code>
+                    <code>{`<i class="o-icon bx bxl-instagram-alt">`}</code>
                   </td>
                   <td>
-                    <code>{`<i class="o-icon bxl bx-instagram-alt">  </i>`}</code>
+                    <code>{`<i class="o-icon bxl bx-instagram-alt">`}</code>
                   </td>
                 </tr>
               </tbody>

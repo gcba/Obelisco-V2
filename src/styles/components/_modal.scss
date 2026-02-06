@@ -86,9 +86,9 @@ $modal-mobile: 328px;
       }
     }
 
-		@include media-breakpoint-up(md) {
-			padding: 1rem;
-		}
+    @include media-breakpoint-up(md) {
+      padding: 1rem;
+    }
 
     @include media-breakpoint-up(xl) {
       padding: 1.5rem;

@@ -179,12 +179,7 @@ const TemplatePaginaLibroDocs: React.FC = () => {
       <div>
         <nav className="tabs-box" aria-label="Navegación por pestañas">
           <ul className="nav nav-pills nav-box tabs p-0" role="tablist">
-            <TabItem
-              id={`content-docs`}
-              title={'Especificaciones'}
-              activeTab={activeTab}
-              setActiveTab={setActiveTab}
-            />
+            <TabItem id={`content-docs`} title={'Especificaciones'} activeTab={activeTab} setActiveTab={setActiveTab} />
             <TabItem id={`content-html`} title={'Código'} activeTab={activeTab} setActiveTab={setActiveTab} />
           </ul>
         </nav>

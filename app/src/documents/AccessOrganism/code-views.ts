@@ -92,13 +92,17 @@ export const CATEGORIES_ACCESS_ORGANISM = `
         </a>
         <h5 class="title-option">Categoría 2</h5>
         <a href="#" class="list-group-item item-sm">
-          <i class="bx bxs-info-circle o-icon"></i>
+          <span className="material-symbols-rounded o-icon" aria-hidden="true">
+						info
+					</span>
           <div class="access-content">
             <span class="access-title">Acceso chico</span>
           </div>
         </a>
         <a href="#" class="list-group-item item-sm">
-          <i class="bx bxs-info-circle o-icon"></i>
+          <span className="material-symbols-rounded o-icon" aria-hidden="true">
+						info
+					</span>
           <div class="access-content">
             <span class="access-title">Acceso chico</span>
           </div>

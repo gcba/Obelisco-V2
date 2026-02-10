@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "@makotot/ghostui": "^2.0.0",
-    "boxicons": "^2.1.4",
     "classnames": "^2.3.2",
     "next": "14.2.5",
     "node-fetch": "^3.3.2",

@@ -165,13 +165,17 @@ const AccessOrganismDocs: React.FC = () => {
                               </LinkClient>
                               <h5 className="title-option">Categoría 2</h5>
                               <LinkClient className="list-group-item item-sm">
-                                <i className="bx bxs-info-circle o-icon"></i>
+                                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                                  info
+                                </span>
                                 <div className="access-content">
                                   <span className="access-title">Acceso chico</span>
                                 </div>
                               </LinkClient>
                               <LinkClient className="list-group-item item-sm">
-                                <i className="bx bxs-info-circle o-icon"></i>
+                                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                                  info
+                                </span>
                                 <div className="access-content">
                                   <span className="access-title">Acceso chico</span>
                                 </div>

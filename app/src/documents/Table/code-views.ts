@@ -748,13 +748,15 @@ export const TABLE_BUTTON_ICON = `
                         <span class="material-symbols-rounded o-icon" aria-hidden="true">edit</span>
                     </button>
                     <button type="button" class="btn btn-xs">
-                        <i class="bx bxs-trash-alt o-icon"></i>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">delete</span>
                     </button>
                     <button type="button" class="btn btn-xs">
                         <span class="material-symbols-rounded o-icon" aria-hidden="true">visibility</span>
                     </button>
                     <button type="button" class="btn btn-xs">
-                        <i class="bx bxs-download o-icon"></i>
+                      <span className="material-symbols-rounded o-icon" aria-hidden="true">
+												download_2
+											</span>
                     </button>
                     </div>
                 </td>
@@ -769,13 +771,15 @@ export const TABLE_BUTTON_ICON = `
                         <span class="material-symbols-rounded o-icon" aria-hidden="true">edit</span>
                     </button>
                     <button type="button" class="btn btn-xs">
-                        <i class="bx bxs-trash-alt o-icon"></i>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">delete</span>
                     </button>
                     <button type="button" class="btn btn-xs">
                         <span class="material-symbols-rounded o-icon" aria-hidden="true">visibility</span>
                     </button>
                     <button type="button" class="btn btn-xs">
-                        <i class="bx bxs-download o-icon"></i>
+                      <span className="material-symbols-rounded o-icon" aria-hidden="true">
+												download_2
+											</span>
                     </button>
                     </div>
                 </td>
@@ -790,13 +794,15 @@ export const TABLE_BUTTON_ICON = `
                         <span class="material-symbols-rounded o-icon" aria-hidden="true">edit</span>
                     </button>
                     <button type="button" class="btn btn-xs">
-                        <i class="bx bxs-trash-alt o-icon"></i>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">delete</span>
                     </button>
                     <button type="button" class="btn btn-xs">
                         <span class="material-symbols-rounded o-icon" aria-hidden="true">visibility</span>
                     </button>
                     <button type="button" class="btn btn-xs">
-                        <i class="bx bxs-download o-icon"></i>
+                      <span className="material-symbols-rounded o-icon" aria-hidden="true">
+												download_2
+											</span>
                     </button>
                     </div>
                 </td>
@@ -811,13 +817,15 @@ export const TABLE_BUTTON_ICON = `
                         <span class="material-symbols-rounded o-icon" aria-hidden="true">edit</span>
                     </button>
                     <button type="button" class="btn btn-xs">
-                        <i class="bx bxs-trash-alt o-icon"></i>
+                        <span className="material-symbols-rounded o-icon" aria-hidden="true">delete</span>
                     </button>
                     <button type="button" class="btn btn-xs">
                         <span class="material-symbols-rounded o-icon" aria-hidden="true">visibility</span>
                     </button>
                     <button type="button" class="btn btn-xs">
-                        <i class="bx bxs-download o-icon"></i>
+                      <span className="material-symbols-rounded o-icon" aria-hidden="true">
+												download_2
+											</span>
                     </button>
                     </div>
                 </td>

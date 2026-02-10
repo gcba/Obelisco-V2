@@ -285,7 +285,7 @@ const CollapseDocs: React.FC = () => {
                         <input className="form-radio-input" type="radio" name="credit_card" id="visa" />
                         <label className="form-radio-label" htmlFor="visa">
                           <div className="label-content">
-                            <i className="bx bxl-visa label-icon"></i>
+                            <i className="bxl bx-visa label-icon"></i>
                             <small className="label-top">Volanta</small>
                             <span className="label-title">Visa Débito ****1234</span>
                             <small className="label-subtitle">Heraldo Paez</small>
@@ -297,7 +297,7 @@ const CollapseDocs: React.FC = () => {
                         <input className="form-radio-input" type="radio" name="credit_card" id="master" />
                         <label className="form-radio-label" htmlFor="master">
                           <div className="label-content">
-                            <i className="bx bxl-mastercard label-icon"></i>
+                            <i className="bxl bx-mastercard label-icon"></i>
                             <small className="label-top">Volanta</small>
                             <span className="label-title">MasterCard Crédito ****5678</span>
                             <small className="label-subtitle">Heraldo Paez</small>

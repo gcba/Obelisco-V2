@@ -590,7 +590,7 @@ const ModalDocs: React.FC = () => {
         customSections={[
           {
             title: 'Especificaciones',
-            id: 'section-specs',
+            id: 'specs',
             sectionContent: SECTION_SPECS,
           },
           {

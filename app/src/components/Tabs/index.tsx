@@ -1,6 +1,7 @@
 'use client';
 
-import React, { useState } from 'react';
+import { useRouter, useSearchParams, usePathname } from 'next/navigation';
+import React, { useEffect, useState } from 'react';
 
 import DocumentationTemplate, { Section } from '../Template/DocumentationTemplate';
 
@@ -55,6 +56,7 @@ export const TabPanel: React.FC<TabPanelProps> = ({ id, children, activeTab }) =
   );
 };
 
+// Componente Tabs
 interface CustomSectionProps {
   sectionContent?: Section[];
   id: string;
@@ -69,31 +71,62 @@ interface TabsProps {
 }
 
 const Tabs: React.FC<TabsProps> = ({ sectionUx, sectionDev, customSections }) => {
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const pathname = usePathname();
+
+  const tabFromUrl = searchParams.get('tab');
+
   const [activeTab, setActiveTab] = useState(() => {
-    if (sectionUx) return 'panel-content-ux';
-    if (sectionDev) return 'panel-content-dev';
-    if (customSections?.length) return `panel-content-${customSections[0].id}`;
+    if (tabFromUrl) return tabFromUrl;
+    if (sectionUx) return 'content-ux';
+    if (sectionDev) return 'content-dev';
+    if (customSections?.length) return `content-${customSections[0].id}`;
     return '';
   });
+
+  // Sincronizar tab con URL
+  useEffect(() => {
+    if (tabFromUrl && tabFromUrl !== activeTab) {
+      setActiveTab(tabFromUrl);
+    }
+  }, [tabFromUrl, activeTab]);
+
+  const handleChangeTab = (id: string) => {
+    setActiveTab(id);
+
+    const params = new URLSearchParams(searchParams.toString());
+    params.set('tab', id);
+
+    // IMPORTANTE: Remover el hash de la URL al cambiar de pestaña
+    const newUrl = `${pathname}?${params.toString()}`;
+
+    router.push(newUrl, { scroll: false });
+
+    // También limpiamos el hash del navegador
+    if (window.location.hash) {
+      window.history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+  };
 
   return (
     <div>
       <nav className="tabs-box" aria-label="Navegación por pestañas">
         <ul className="nav nav-pills tabs p-0" role="tablist">
           {sectionUx && (
-            <TabItem id="panel-content-ux" title="Guía de uso" activeTab={activeTab} setActiveTab={setActiveTab} />
+            <TabItem id="content-ux" title="Guía de uso" activeTab={activeTab} setActiveTab={handleChangeTab} />
           )}
           {sectionDev && (
-            <TabItem id="panel-content-dev" title="Código" activeTab={activeTab} setActiveTab={setActiveTab} />
+            <TabItem id="content-dev" title="Código" activeTab={activeTab} setActiveTab={handleChangeTab} />
           )}
           {customSections &&
             customSections.map((section) => (
               <TabItem
                 key={section.id}
-                id={`panel-content-${section.id}`}
+                id={`content-${section.id}`}
                 title={section.title}
                 activeTab={activeTab}
-                setActiveTab={setActiveTab}
+                setActiveTab={handleChangeTab}
               />
             ))}
         </ul>
@@ -103,25 +136,27 @@ const Tabs: React.FC<TabsProps> = ({ sectionUx, sectionDev, customSections }) =>
 
       <div className="tab-content" style={{ paddingTop: '32px' }}>
         {sectionUx && (
-          <TabPanel id={`panel-content-ux`} activeTab={activeTab}>
-            <DocumentationTemplate sections={sectionUx} type="ux" />
+          <TabPanel id="content-ux" activeTab={activeTab}>
+            <DocumentationTemplate sections={sectionUx} type="ux" tabId="content-ux" />
           </TabPanel>
         )}
+
         {sectionDev && (
-          <TabPanel id={`panel-content-dev`} activeTab={activeTab}>
-            <DocumentationTemplate sections={sectionDev} type="dev" />
+          <TabPanel id="content-dev" activeTab={activeTab}>
+            <DocumentationTemplate sections={sectionDev} type="dev" tabId="content-dev" />
           </TabPanel>
         )}
+
         {customSections &&
           customSections.map(
             (section) =>
               section.sectionContent && (
-                <TabPanel
-                  key={section.id} // Clave única requerida por React
-                  id={`panel-content-${section.id}`}
-                  activeTab={activeTab}
-                >
-                  <DocumentationTemplate sections={section.sectionContent} type={section.id.toLowerCase()} />
+                <TabPanel key={section.id} id={`content-${section.id}`} activeTab={activeTab}>
+                  <DocumentationTemplate
+                    sections={section.sectionContent}
+                    type={section.id.toLowerCase()}
+                    tabId={`content-${section.id}`}
+                  />
                 </TabPanel>
               ),
           )}

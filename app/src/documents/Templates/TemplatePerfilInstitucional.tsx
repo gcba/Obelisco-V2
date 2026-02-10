@@ -20,15 +20,17 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
       title: 'Encabezados',
       content: (
         <>
-          <p className="text-md m-0">
+          <p className="text-md">
             Se encuentra al comienzo de la página, justo debajo del header y está formado por:
           </p>
           <div className="list-informative d-flex flex-column gap-2">
             <ul className="list-informative-bullet">
-              <li>Migas de pan, que nos indican el recorrido de la persona usuaria hasta la página actual.</li>
+              <li><a href="https://gcba.github.io/Obelisco-V2/components/breadcrumb"
+                target="_blank" rel="noopener noreferrer">Migas de pan</a>, que nos indican el recorrido de la persona usuaria 
+              hasta la página actual.</li>
               <li>Título, que debe ser claro y utilizar el nombre formal del organismo.</li>
               <li>
-                Breve descripción que explica la función o responsabilidad principal del área con un máximo de 120
+                Breve descripción que explica la función o responsabilidad principal del área con un máximo de 150
                 caracteres.
               </li>
             </ul>
@@ -56,7 +58,7 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
             <span className="material-symbols-rounded text-success">check</span>
             <p className="mb-0">Usar mayúsculas solo donde corresponda.</p>
           </div>
-          <p className="text-xl" style={{ marginBottom: '12px' }}>
+          <p className="text-xl" style={{ marginBottom: '12px', marginTop: '32px;' }}>
             Malas prácticas
           </p>{' '}
           <div className="d-flex gap-2" style={{ marginBottom: '12px' }}>
@@ -83,7 +85,7 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
             <li>
               Una fotografía que presenta visualmente a la autoridad asociada al área.
               <br />
-              <strong>Dimensiones</strong>: 352 x 352 px
+              <strong>Dimensiones</strong>: 250 x 250 px
               <br />
               <strong>Peso máximo</strong>: 400 KB
               <br />
@@ -98,7 +100,8 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
               caracteres.
             </li>
             <li>
-              Se deberá incluir un apartado obligatorio con datos de contacto utilizando enlaces y la fecha de última
+              Se deberá incluir un apartado obligatorio con datos de contacto utilizando <a href="https://gcba.github.io/Obelisco-V2/components/link"
+                target="_blank" rel="noopener noreferrer">enlaces</a> y la fecha de última
               actualización.
             </li>
           </ul>
@@ -125,7 +128,7 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
             <span className="material-symbols-rounded text-success">check</span>
             <p className="mb-0">Verificar que los canales de contacto se encuentren correctamente enlazados.</p>
           </div>
-          <p className="text-xl" style={{ marginBottom: '12px' }}>
+          <p className="text-xl" style={{ marginBottom: '12px', marginTop: '32px;' }}>
             Malas prácticas
           </p>{' '}
           <div className="d-flex gap-2" style={{ marginBottom: '12px' }}>
@@ -150,8 +153,9 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md">
-            Este módulo tiene como finalidad presentar información institucional del área de forma clara y estructurada.
-            Deberá incluir obligatoriamente dos colapsables: “Misión y funciones” y “Responsabilidades primarias”.
+            Este módulo tiene como finalidad presentar información institucional del área de forma clara y estructurada. 
+            Deberá incluir obligatoriamente el colapsable <strong>&quot;Misión y funciones&quot;</strong>. El contenido debe ser breve, claro y sintético. 
+            Extensión máxima recomendada: 1500 caracteres.
           </p>
           <Image
             src={`${basePath}/images/templates/perfil_institucional/3.svg`}
@@ -161,15 +165,7 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
             className="img-fluid"
             style={{ marginTop: '32px' }}
           />
-          <Image
-            src={`${basePath}/images/templates/perfil_institucional/4.svg`}
-            alt="Ejemplo de información institucional"
-            width="800"
-            height="295"
-            className="img-fluid"
-            style={{ marginTop: '32px', marginBottom: '32px' }}
-          />
-          <p className="text-xl" style={{ marginBottom: '12px' }}>
+          <p className="text-xl" style={{ marginBottom: '12px', marginTop: '32px;' }}>
             Buenas prácticas
           </p>{' '}
           <div className="d-flex gap-2" style={{ marginBottom: '12px' }}>
@@ -186,7 +182,7 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
             <span className="material-symbols-rounded text-success">check</span>
             <p className="mb-0">Utilizar párrafos breves y/o listas si corresponde.</p>
           </div>
-          <p className="text-xl" style={{ marginBottom: '12px' }}>
+          <p className="text-xl" style={{ marginBottom: '12px', marginTop: '32px;' }}>
             Malas prácticas
           </p>{' '}
           <div className="d-flex gap-2" style={{ marginBottom: '12px' }}>
@@ -219,7 +215,8 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
           <ul className="list-informative-bullet">
             <li>Nombre de la normativa.</li>
             <li>
-              Botón que permite acceder al documento. Incluye ícono de enlace externo e indica apertura en nueva
+              <a href="https://gcba.github.io/Obelisco-V2/components/button"
+                target="_blank" rel="noopener noreferrer">Botón</a> que permite acceder al documento. Incluye ícono de enlace externo e indica apertura en nueva
               pestaña.
             </li>
           </ul>
@@ -268,7 +265,7 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
       title: 'Acceso al organigrama',
       content: (
         <>
-          <p className="text-md">
+          <p className="text-md mb-0">
             Su función es permitir que la persona usuaria explore la estructura jerárquica completa, incluyendo las
             autoridades dependientes y áreas internas asociadas.
           </p>
@@ -290,7 +287,7 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
               existe una subsección específica, deberá dirigir a la página de inicio del organigrama.
             </p>
           </div>
-          <p className="text-xl" style={{ marginBottom: '12px' }}>
+          <p className="text-xl" style={{ marginBottom: '12px', marginTop: '32px' }}>
             Malas prácticas
           </p>{' '}
           <div className="d-flex gap-2" style={{ marginBottom: '12px' }}>

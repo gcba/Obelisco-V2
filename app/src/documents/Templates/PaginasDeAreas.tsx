@@ -11,7 +11,7 @@ import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 // import { AREA_1 } from './code-views';
 
 export default function Areas() {
-  //   const [activeTab, setActiveTab] = useState('panel-content-docs');
+  //   const [activeTab, setActiveTab] = useState('content-docs');
 
   const sections = [
     {

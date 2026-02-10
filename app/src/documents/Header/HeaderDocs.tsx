@@ -2885,7 +2885,7 @@ const HeaderDocs: React.FC = () => {
         sectionDev={SECTIONS_DEV}
         sectionUx={SECTION_UX}
         customSections={[
-          { title: 'Especificaciones', id: 'section-specs', sectionContent: SPECS },
+          { title: 'Especificaciones', id: 'specs', sectionContent: SPECS },
           { title: 'Accesibilidad', id: 'section-accessibility', sectionContent: ACCESSIBILITY },
         ]}
       />

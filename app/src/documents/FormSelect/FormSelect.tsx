@@ -524,7 +524,7 @@ export default function FormSelect() {
           customSections={[
             {
               title: 'Especificaciones',
-              id: 'section-specs',
+              id: 'specs',
               sectionContent: SPECS,
             },
             {

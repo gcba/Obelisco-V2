@@ -1,7 +1,7 @@
 'use client';
 
 import { useRouter, useSearchParams, usePathname } from 'next/navigation';
-import React, { useEffect, useState } from 'react';
+import React, { Suspense, useEffect, useState } from 'react';
 
 import DocumentationTemplate, { Section } from '../Template/DocumentationTemplate';
 
@@ -70,7 +70,7 @@ interface TabsProps {
   customSections?: CustomSectionProps[];
 }
 
-const Tabs: React.FC<TabsProps> = ({ sectionUx, sectionDev, customSections }) => {
+function TabsContent({ sectionUx, sectionDev, customSections }: TabsProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
   const pathname = usePathname();
@@ -85,7 +85,7 @@ const Tabs: React.FC<TabsProps> = ({ sectionUx, sectionDev, customSections }) =>
     return '';
   });
 
-  // Sincronizar tab con URL
+  // sincroniza tab con URL
   useEffect(() => {
     if (tabFromUrl && tabFromUrl !== activeTab) {
       setActiveTab(tabFromUrl);
@@ -98,12 +98,12 @@ const Tabs: React.FC<TabsProps> = ({ sectionUx, sectionDev, customSections }) =>
     const params = new URLSearchParams(searchParams.toString());
     params.set('tab', id);
 
-    // IMPORTANTE: Remover el hash de la URL al cambiar de pestaña
+    // remueve el hash de la URL al cambiar de pestaña
     const newUrl = `${pathname}?${params.toString()}`;
 
     router.push(newUrl, { scroll: false });
 
-    // También limpiamos el hash del navegador
+    // limpia el hash del navegador
     if (window.location.hash) {
       window.history.replaceState(null, '', window.location.pathname + window.location.search);
     }
@@ -162,6 +162,25 @@ const Tabs: React.FC<TabsProps> = ({ sectionUx, sectionDev, customSections }) =>
           )}
       </div>
     </div>
+  );
+}
+
+// Componente principal con Suspense
+const Tabs: React.FC<TabsProps> = (props) => {
+  return (
+    <Suspense
+      fallback={
+        <div className="tabs-loading">
+          <div className="placeholder-glow">
+            <div className="placeholder col-12" style={{ height: '50px' }}></div>
+            <hr className="mt-0 mb-4" />
+            <div className="placeholder col-12" style={{ height: '400px' }}></div>
+          </div>
+        </div>
+      }
+    >
+      <TabsContent {...props} />
+    </Suspense>
   );
 };
 

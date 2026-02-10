@@ -3163,3 +3163,336 @@ export const TEMPLATE_FORM_MULTIPAGINA = `<!DOCTYPE html>
   </main>
 </body>
 </html>`;
+
+export const TEMPLATE_PERFIL_INSTITUCIONAL = `<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon">
+
+  <title>Área de gobierno 1er nivel - Opción 1</title>
+
+  <!-- Obelisco -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  </link>
+  <link rel="stylesheet" href="../node_modules/@gcba/obelisco-v2/dist/styles.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+</head>
+
+<body>
+  <main id="main">
+    <article class="pb-5">
+
+      <header class="hero bg-content-hero-light">
+        <div class="content corner">
+          <div class="d-flex flex-column">
+            <nav aria-label="Navegación secundaria">
+              <ol class="breadcrumb m-0">
+                <li class="breadcrumb-item">
+                  <a href="#">Inicio</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#">Página 2</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#">Página 3</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="#">Página anterior</a>
+                </li>
+              </ol>
+            </nav>
+            <div>
+              <h1 class="mb-3">Nombre del organismo</h1>
+              <p class="lead m-0">
+                Breve descripción que explica la función, el rol o la responsabilidad principal del área dentro de la
+                organización.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="aside bg-aside-hero-light"></div>
+      </header>
+
+      <div class="container">
+          <div class="col-12 col-xl-8">
+            <!-- Inicio Informacion institucional -->
+            <section class="my-5">
+              <article class="d-flex flex-column flex-md-row gap-5">
+                <figure class="mb-0">
+                  <img src="./foto_perfil_institucional.svg" alt="" width="250" height="250">
+                </figure>
+                <div class="col d-flex flex-column justify-content-between">
+                  <header>
+                    <h2 class="mb-1">Nombre y apellido</h2>
+                    <p class="fw-semibold">Cargo o rol dentro del organismo</p>
+                  </header>
+
+                  <section id="contacto">
+                    <p id="contacto" class="text-md fw-semibold mb-1 headline-md" style="font-family: Nunito;">Contacto
+                    </p>
+                    <p class="mb-0">Correo: <a href="mailto:ejemplo@buenosaires.gob.ar">ejemplo@buenosaires.gob.ar</a>
+                    </p>
+                    <p class="mb-0">Fecha de designación: <time datetime="2022-02-22">dd/mm/yyyy</time></p>
+                    <p class="mb-0" style="color: #38485C"><i>Última actualización: <time
+                          datetime="2022-02-22">dd/mm/yyyy</time></i></p>
+                  </section>
+                </div>
+              </article>
+
+              <p class="text-md mt-4">Breve reseña que presenta la trayectoria profesional, formación y experiencia
+                relevante de
+                la autoridad o referente, con el objetivo de contextualizar su rol y facilitar la identificación
+                institucional.</p>
+            </section>
+            <!-- Fin Informacion institucional -->
+
+            <!-- Colapsables -->           
+            <section class="accordion">
+              <!-- Inicio Objetivos -->
+              <div class="accordion-item item-white">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseMisionesFunciones" aria-expanded="false"
+                  aria-controls="collapseMisionesFunciones">
+                  <span class="collapse-title">Objetivos</span>
+                </button>
+                <div id="collapseMisionesFunciones" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <p>Este espacio describe la misión del área y las funciones que cumple dentro de su rol
+                      institucional,
+                      para facilitar la comprensión de su propósito y alcance.
+                    </p>
+
+                    <ul class="list-informative-bullet">
+                      <li>Descripción sintética de una misión o función principal del área.</li>
+                      <li>Descripción sintética de una misión o función principal del área.</li>
+                      <li>Descripción sintética de una misión o función principal del área.</li>
+                      <li>Descripción sintética de una misión o función principal del área.</li>
+                      <li>Descripción sintética de una misión o función principal del área.</li>
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
+              <!-- Fin Objetivos -->
+
+              <!-- Inicio Responsabilidades primarias -->
+              <div class="accordion-item item-white">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseResponsabilidadesPrimarias" aria-expanded="false"
+                  aria-controls="collapseResponsabilidadesPrimarias">
+                  <span class="collapse-title">Responsabilidades primarias</span>
+                </button>
+                <div id="collapseResponsabilidadesPrimarias" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <p>Este espacio describe la misión del área y las funciones que cumple dentro de su rol
+                      institucional,
+                      para facilitar la comprensión de su propósito y alcance.
+                    </p>
+
+                    <ul class="list-informative-bullet">
+                      <li>Descripción sintética de una misión o función principal del área.</li>
+                      <li>Descripción sintética de una misión o función principal del área.</li>
+                      <li>Descripción sintética de una misión o función principal del área.</li>
+                      <li>Descripción sintética de una misión o función principal del área.</li>
+                      <li>Descripción sintética de una misión o función principal del área.</li>
+                    </ul>
+
+                  </div>
+                </div>
+              </div>
+            <!-- Fin Responsabilidades primarias -->       
+            </section>      
+            <!-- Fin colapsables-->
+
+            <!-- Inicio normativa -->
+            <section class="bg-light ps-3 pe-3 rounded-2 my-5 py-4">
+              <h4>Normativa</h4>
+              <div class="normative_bloque mt-3">
+                <p class="mb-2">IF-2023-45656308-GCABA-MHFGC</p>
+                <a class="btn btn-tertiary btn-sm external" href="#" target="_blank" rel="noopener noreferrer"
+                  download="">Ir a normativa</a>
+
+                <p class="mb-2 mt-4">IF-2023-45656308-GCABA-MHFGC</p>
+                <a class="btn btn-tertiary btn-sm external" href="#" target="_blank" rel="noopener noreferrer"
+                  download="">Ir a normativa</a>
+              </div>
+            </section>
+            <!-- Fin normativa -->
+
+            <!-- Inicio Organigrama -->
+            <section class="block my-4 col-lg-8">
+              <div class="block-body">
+                <h2 class="block-title">¿Querés ver todas las autoridades a cargo?</h2>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-primary btn-block">
+                  Ver organigrama
+                </a>
+              </div>
+            </section>
+            <!-- Fin Organigrama -->
+          </div>
+        <!-- </div> -->
+      </div>
+    </article>
+
+    <!-- Inicio Indicador -->
+    <div class="footer-info">
+      <div class="container">
+        <h4 class="footer-info-text">Texto del indicador</h4>
+        <div class="footer-info-actions"><button class="btn btn-outline-secondary">Acción 1</button><button
+            class="btn btn-outline-secondary">Acción 2</button></div>
+      </div>
+    </div>
+    <!-- Fin indicador -->
+    </div>
+
+    <h2 class="sr-only">Navegación de pie de página</h2>
+    <footer class="main-footer">
+      <div class="container">
+        <section>
+          <h3>Teléfonos útiles</h3>
+          <ul class="list-inline">
+            <li class="list-inline-item phone-items">
+              <a href="tel:102">102 - Niñez y Adolescencia</a>
+            </li>
+            <li class="list-inline-item phone-items">
+              <a href="tel:103">103 - Emergencias</a>
+            </li>
+            <li class="list-inline-item phone-items">
+              <a href="tel:107">107 - SAME</a>
+            </li>
+            <li class="list-inline-item phone-items">
+              <a href="tel:911">911 - Policía</a>
+            </li>
+            <li class="list-inline-item phone-items">
+              <a href="tel:144">144 - Violencia de género</a>
+            </li>
+            <li class="list-inline-item phone-items">
+              <a href="tel:147">147 - Atención ciudadana</a>
+            </li>
+          </ul>
+          <a href="https://buenosaires.gob.ar/inicio/telefonos">
+            Ver todos los teléfonos
+          </a>
+        </section>
+        <section>
+          <h3>Redes de la ciudad</h3>
+          <ul class="list-inline">
+            <li class="list-inline-item redes-items">
+              <a href="https://www.facebook.com/GCBA">
+                <i class="o-icon bx bxl-facebook-circle"></i>
+                Facebook
+              </a>
+            </li>
+            <li class="list-inline-item redes-items">
+              <a href="https://www.instagram.com/gcba/">
+                <i class="o-icon bx bxl-instagram-alt"></i>
+                Instagram
+              </a>
+            </li>
+            <li class="list-inline-item redes-items">
+              <a href="https://x.com/gcba">
+                <img src="../../assets/footer/rrss_x.svg" class="o-icon" alt="x" />
+                X
+              </a>
+            </li>
+            <li class="list-inline-item redes-items">
+              <a href="https://www.youtube.com/user/GCBA">
+                <i class="o-icon bx bxl-youtube"></i>
+                YouTube
+              </a>
+            </li>
+            <li class="list-inline-item redes-items">
+              <a href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires">
+                <i class="o-icon bx bxl-linkedin-square"></i>
+                LinkedIn
+              </a>
+            </li>
+            <li class="list-inline-item redes-items">
+              <a href="https://www.tiktok.com/@buenosaires">
+                <i class="o-icon bx bxl-tiktok"></i>
+                TikTok
+              </a>
+            </li>
+            <li class="list-inline-item redes-items">
+              <a href="https://www.pinterest.es/buenosaires/">
+                <i class="o-icon bx bxl-pinterest"></i>
+                Pinterest
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <hr class="divider" />
+      <div class="container">
+        <section class="footer-legal-section">
+          <h3 class="sr-only">Información gubernamental</h3>
+          <div class="row align-items-center">
+            <div class="col-12 col-md-5 col-xl-4 footer-content-img">
+              <img class="d-md-none" src="../../assets/footer/logo-footer-mobile.svg"
+                alt="Logo de Ciudad de Buenos Aires" height="48" />
+              <img class="d-none d-md-inline" src="../../assets/footer/logo-footer.svg"
+                alt="Logo de Ciudad de Buenos Aires" height="40" />
+              <img class="img-vamos-ba" src="../../assets/footer/logo-footer-ba.svg" alt="Logo de Vamos Buenos Aires" />
+            </div>
+            <div class="col-12">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="https://boletinoficial.buenosaires.gob.ar">
+                    Boletín oficial
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://buenosaires.gob.ar/inicio/terminos-y-condiciones">
+                    Términos y condiciones
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://buenosaires.gob.ar/inicio/privacidad">
+                    Política de privacidad
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://buenosaires.gob.ar/jefedegobierno/legalytecnica/normativa/boletin-oficial-y-registro/oficios-judiciales">
+                    Oficios judiciales
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.buenosaires.gob.ar/gobierno/transparencia">
+                    Transparencia
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="footer-license-text">
+            Los contenidos de buenosaires.gob.ar están licenciados bajo Creative
+            Commons Reconocimiento 2.5 Argentina License.
+          </div>
+        </section>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossOrigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossOrigin="anonymous"></script>
+  <script src="../../shared/header-search-login.js"></script>
+</body>
+
+</html>
+`;

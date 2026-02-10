@@ -1,3 +1,4 @@
+import { basePath } from '@/utils';
 import Image from 'next/image';
 
 import CodeBox from '@/components/CodeBox';
@@ -14,7 +15,6 @@ import {
   CAROUSEL_CARDS_EVENTS,
 } from './code-views';
 
-const basePath = '/Obelisco-V2';
 const colors = ['yellow', 'cyan', 'blue'];
 
 const ZoomContainer = ({ children }: React.PropsWithChildren) => <div style={{ zoom: 0.5 }}>{children}</div>;

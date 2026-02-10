@@ -1,3 +1,4 @@
+import { basePath } from '@/utils';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
@@ -8,7 +9,6 @@ import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import { SELECT, SELECT_DISABLED } from './code-views';
-const basePath = '/Obelisco-V2';
 
 const CODE_INTERACTIVITY = `<div class="form-label-container">  
   <label for="input-select" class="form-label">    
@@ -524,7 +524,7 @@ export default function FormSelect() {
           customSections={[
             {
               title: 'Especificaciones',
-              id: 'section-specs',
+              id: 'specs',
               sectionContent: SPECS,
             },
             {

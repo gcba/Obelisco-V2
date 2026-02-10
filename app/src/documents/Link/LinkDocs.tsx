@@ -1,6 +1,6 @@
+import { basePath } from '@/utils';
 import Image from 'next/image';
 import React from 'react';
-const basePath = '/Obelisco-V2';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
@@ -881,7 +881,7 @@ const LinkDocs: React.FC = () => {
         customSections={[
           {
             title: 'Especificaciones',
-            id: 'section-specs',
+            id: 'specs',
             sectionContent: SPECS,
           },
           {

@@ -1,5 +1,5 @@
+import { basePath } from '@/utils';
 import Image from 'next/image';
-const basePath = '/Obelisco-V2';
 
 import ComponentHeader from '@/components/Template/ComponentHeader';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';

@@ -1,7 +1,7 @@
+import { basePath } from '@/utils';
 import Image from 'next/image';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
-const basePath = '/Obelisco-V2';
 
 import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
@@ -2885,7 +2885,7 @@ const HeaderDocs: React.FC = () => {
         sectionDev={SECTIONS_DEV}
         sectionUx={SECTION_UX}
         customSections={[
-          { title: 'Especificaciones', id: 'section-specs', sectionContent: SPECS },
+          { title: 'Especificaciones', id: 'specs', sectionContent: SPECS },
           { title: 'Accesibilidad', id: 'section-accessibility', sectionContent: ACCESSIBILITY },
         ]}
       />

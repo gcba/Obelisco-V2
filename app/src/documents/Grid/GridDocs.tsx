@@ -1,3 +1,4 @@
+import { basePath } from '@/utils';
 import Image from 'next/image';
 
 import CodeBox from '@/components/CodeBox';
@@ -5,8 +6,6 @@ import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import { FOUR_COLUMNS, LAYOUTS, ONE_COLUMN, THREE_COLUMNS, TWO_COLUMNS } from './code-views';
-
-const basePath = '/Obelisco-V2';
 
 const GridDocs: React.FC = () => {
   const SECTION_UX = [

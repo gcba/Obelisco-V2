@@ -1,7 +1,6 @@
+import { basePath } from '@/utils';
 import Image from 'next/image';
 import React from 'react';
-
-const basePath = '/Obelisco-V2';
 
 import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
@@ -804,7 +803,7 @@ const StatusMessageDocs: React.FC = () => {
         customSections={[
           {
             title: 'Especificaciones',
-            id: 'section-specs',
+            id: 'specs',
             sectionContent: SPECS,
           },
           {

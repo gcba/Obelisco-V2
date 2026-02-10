@@ -76,7 +76,7 @@ const sections = [
         <p className="headline-md">Utilizando CDN:</p>
         <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
           {BOXICONS_CODE}
-        </SyntaxHighlighter>        
+        </SyntaxHighlighter>
         <br />
       </div>
     ),

@@ -73,12 +73,11 @@ const sections = [
     content: (
       <div className="col-12">
         <br />
-
-        <br />
-        <p className="headline-md">O puedes utilizar la CDN:</p>
+        <p className="headline-md">Utilizando CDN:</p>
         <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
           {BOXICONS_CODE}
-        </SyntaxHighlighter>
+        </SyntaxHighlighter>        
+        <br />
       </div>
     ),
   },
@@ -86,6 +85,8 @@ const sections = [
     subtitle: 'Material Symbols Rounded',
     content: (
       <div className="col-12">
+        <br />
+        <p className="headline-md">Utilizando NPM:</p>
         <SyntaxHighlighter language="bash" style={dracula} wrapLongLines>
           {MATERIAL_S_CODE_NPM}
         </SyntaxHighlighter>

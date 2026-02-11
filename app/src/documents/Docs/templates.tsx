@@ -118,6 +118,22 @@ const TemplatesComponents: React.FC = () => {
                   </div>
                 </div>
               </div>
+
+              <div className="col">
+                <div className="card h-100">
+                  <i className="bx bxs-user card-icon"></i>
+                  <div className="card-body">
+                    <h3 className="card-title">
+                      <a href={`${basePath}/templates/perfil-institucional`} className="card-title-link">
+                        Perfil Institucional
+                      </a>
+                    </h3>
+                    <p className="card-text">
+                      La usamos para la ficha del perfil institucional del Gobierno de la Ciudad de Buenos Aires.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </>

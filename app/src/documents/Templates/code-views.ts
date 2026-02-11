@@ -3236,7 +3236,7 @@ export const TEMPLATE_PERFIL_INSTITUCIONAL = `<!DOCTYPE html>
                   </header>
 
                   <section id="contacto">
-                    <p id="contacto" class="text-md fw-semibold mb-1 headline-md" style="font-family: Nunito;">Contacto
+                    <p id="contacto" class="text-md fw-semibold mb-1 headline-md" style="font-family: Nunito;">Contacto 
                     </p>
                     <p class="mb-0">Correo: <a href="mailto:ejemplo@buenosaires.gob.ar">ejemplo@buenosaires.gob.ar</a>
                     </p>
@@ -3256,44 +3256,16 @@ export const TEMPLATE_PERFIL_INSTITUCIONAL = `<!DOCTYPE html>
 
             <!-- Colapsables -->           
             <section class="accordion">
-              <!-- Inicio Objetivos -->
-              <div class="accordion-item item-white">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseMisionesFunciones" aria-expanded="false"
-                  aria-controls="collapseMisionesFunciones">
-                  <span class="collapse-title">Objetivos</span>
-                </button>
-                <div id="collapseMisionesFunciones" class="accordion-collapse collapse">
-                  <div class="accordion-body">
-                    <p>Este espacio describe la misión del área y las funciones que cumple dentro de su rol
-                      institucional,
-                      para facilitar la comprensión de su propósito y alcance.
-                    </p>
-
-                    <ul class="list-informative-bullet">
-                      <li>Descripción sintética de una misión o función principal del área.</li>
-                      <li>Descripción sintética de una misión o función principal del área.</li>
-                      <li>Descripción sintética de una misión o función principal del área.</li>
-                      <li>Descripción sintética de una misión o función principal del área.</li>
-                      <li>Descripción sintética de una misión o función principal del área.</li>
-                    </ul>
-
-                  </div>
-                </div>
-              </div>
-              <!-- Fin Objetivos -->
-
               <!-- Inicio Responsabilidades primarias -->
               <div class="accordion-item item-white">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseResponsabilidadesPrimarias" aria-expanded="false"
                   aria-controls="collapseResponsabilidadesPrimarias">
-                  <span class="collapse-title">Responsabilidades primarias</span>
+                  <span class="collapse-title">Misiones y funciones</span>
                 </button>
                 <div id="collapseResponsabilidadesPrimarias" class="accordion-collapse collapse">
                   <div class="accordion-body">
-                    <p>Este espacio describe la misión del área y las funciones que cumple dentro de su rol
-                      institucional,
+                    <p>Este espacio describe la misión del área y las funciones que cumple dentro de su rol institucional, 
                       para facilitar la comprensión de su propósito y alcance.
                     </p>
 

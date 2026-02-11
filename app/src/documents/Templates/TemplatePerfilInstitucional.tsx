@@ -319,7 +319,7 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
 
       <a
         className="btn btn-outline-secondary"
-        href="https://gcba.github.io/obelisco-demo/perfil_institucional/pagina_simple_op5/index.html"
+        href="https://gcba.github.io/obelisco-demo/perfil_institucional/index.html"
         target="_blank"
         rel="noopener noreferrer"
         style={{ marginBottom: '32px' }}

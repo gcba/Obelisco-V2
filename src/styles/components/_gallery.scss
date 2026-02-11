@@ -6,7 +6,7 @@ $carousel-control-size: $carousel-control-icon-size + $carousel-control-padding 
   2;
 $carousel-control-border-radius: 100%;
 
-$carousel-control-space-x-mobile: $carousel-control-size * 0.25;
+$carousel-control-space-x-mobile: $carousel-control-size * 0.50;
 $carousel-control-space-top-mobile: 25%;
 
 $carousel-control-space-x: $carousel-control-size * -1.5;
@@ -214,6 +214,11 @@ div.modal.modal-carousel {
       }
 
       @include media-breakpoint-up(sm) {
+				&.carousel {
+					max-width: 85%;
+					margin: 0 auto;
+				}
+
         .carousel-control-prev,
         .carousel-control-next {
           top: $carousel-control-space-top;
@@ -228,6 +233,27 @@ div.modal.modal-carousel {
           right: $carousel-control-space-x;
         }
       }
+
+			@include media-breakpoint-up(md) {
+				&.carousel {
+					max-width: 100%;
+					margin: 0;
+				}
+			}
+
+			@include media-breakpoint-up(lg) {
+				.carousel-control-prev,
+        .carousel-control-next {
+					top: calc(50% - 86px);
+				}
+
+				.carousel-inner {
+					max-width: 100%;
+					.carousel-item {
+						padding: 0;
+					}
+				}
+			}
     }
   }
 }
@@ -237,7 +263,12 @@ div.modal.modal-carousel {
   background: $white;
 
   .modal-content {
+		padding: 10px 0 0 0;
     border: none;
+
+		@include media-breakpoint-up(xl) {
+			padding-top: 1.5rem;
+		}
   }
 
   .modal-carousel-close {

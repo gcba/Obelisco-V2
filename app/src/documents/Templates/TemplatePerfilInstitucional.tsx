@@ -20,14 +20,19 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
       title: 'Encabezados',
       content: (
         <>
-          <p className="text-md">
-            Se encuentra al comienzo de la página, justo debajo del header y está formado por:
-          </p>
+          <p className="text-md">Se encuentra al comienzo de la página, justo debajo del header y está formado por:</p>
           <div className="list-informative d-flex flex-column gap-2">
             <ul className="list-informative-bullet">
-              <li><a href="https://gcba.github.io/Obelisco-V2/components/breadcrumb"
-                target="_blank" rel="noopener noreferrer">Migas de pan</a>, que nos indican el recorrido de la persona usuaria 
-              hasta la página actual.</li>
+              <li>
+                <a
+                  href="https://gcba.github.io/Obelisco-V2/components/breadcrumb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Migas de pan
+                </a>
+                , que nos indican el recorrido de la persona usuaria hasta la página actual.
+              </li>
               <li>Título, que debe ser claro y utilizar el nombre formal del organismo.</li>
               <li>
                 Breve descripción que explica la función o responsabilidad principal del área con un máximo de 150
@@ -100,9 +105,11 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
               caracteres.
             </li>
             <li>
-              Se deberá incluir un apartado obligatorio con datos de contacto utilizando <a href="https://gcba.github.io/Obelisco-V2/components/link"
-                target="_blank" rel="noopener noreferrer">enlaces</a> y la fecha de última
-              actualización.
+              Se deberá incluir un apartado obligatorio con datos de contacto utilizando{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/components/link" target="_blank" rel="noopener noreferrer">
+                enlaces
+              </a>{' '}
+              y la fecha de última actualización.
             </li>
           </ul>
           <Image
@@ -153,9 +160,9 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md">
-            Este módulo tiene como finalidad presentar información institucional del área de forma clara y estructurada. 
-            Deberá incluir obligatoriamente el colapsable <strong>&quot;Misión y funciones&quot;</strong>. El contenido debe ser breve, claro y sintético. 
-            Extensión máxima recomendada: 1500 caracteres.
+            Este módulo tiene como finalidad presentar información institucional del área de forma clara y estructurada.
+            Deberá incluir obligatoriamente el colapsable <strong>&quot;Misión y funciones&quot;</strong>. El contenido
+            debe ser breve, claro y sintético. Extensión máxima recomendada: 1500 caracteres.
           </p>
           <Image
             src={`${basePath}/images/templates/perfil_institucional/3.svg`}
@@ -215,9 +222,10 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
           <ul className="list-informative-bullet">
             <li>Nombre de la normativa.</li>
             <li>
-              <a href="https://gcba.github.io/Obelisco-V2/components/button"
-                target="_blank" rel="noopener noreferrer">Botón</a> que permite acceder al documento. Incluye ícono de enlace externo e indica apertura en nueva
-              pestaña.
+              <a href="https://gcba.github.io/Obelisco-V2/components/button" target="_blank" rel="noopener noreferrer">
+                Botón
+              </a>{' '}
+              que permite acceder al documento. Incluye ícono de enlace externo e indica apertura en nueva pestaña.
             </li>
           </ul>
           <Image

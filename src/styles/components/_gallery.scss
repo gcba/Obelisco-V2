@@ -149,82 +149,90 @@ $carousel-margin-bottom: 0.25rem * 4;
 }
 
 // Custom styles
+div.modal.modal-carousel {
+  div.modal-dialog {
+    #modalGalleryControls {
+      &.carousel {
+        background: none;
+      }
 
-.carousel-control-prev,
-.carousel-control-next {
-  display: block;
-  width: $carousel-control-size;
-  height: $carousel-control-size;
-  padding: $carousel-control-padding;
-  background: $slate-50;
-  top: $carousel-control-space-top-mobile;
-  transform: translateY(-$carousel-control-space-top-mobile);
-  border-radius: $carousel-control-border-radius;
-  opacity: 0.75;
-}
+      .carousel-control-prev,
+      .carousel-control-next {
+        display: block;
+        width: $carousel-control-size;
+        height: $carousel-control-size;
+        padding: $carousel-control-padding;
+        background: $slate-50;
+        top: $carousel-control-space-top-mobile;
+        transform: translateY(-$carousel-control-space-top-mobile);
+        border-radius: $carousel-control-border-radius;
+        opacity: 0.75;
+      }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  width: $carousel-control-icon-size;
-  height: $carousel-control-icon-size;
-}
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        width: $carousel-control-icon-size;
+        height: $carousel-control-icon-size;
+      }
 
-.carousel-control-prev {
-  left: $carousel-control-space-x-mobile;
+      .carousel-control-prev {
+        left: $carousel-control-space-x-mobile;
 
-  .carousel-control-prev-icon {
-    background-image: $carousel-control-prev-icon;
-  }
-}
+        .carousel-control-prev-icon {
+          background-image: $carousel-control-prev-icon;
+        }
+      }
 
-.carousel-control-next {
-  right: $carousel-control-space-x-mobile;
+      .carousel-control-next {
+        right: $carousel-control-space-x-mobile;
 
-  .carousel-control-next-icon {
-    background-image: $carousel-control-next-icon;
-  }
-}
+        .carousel-control-next-icon {
+          background-image: $carousel-control-next-icon;
+        }
+      }
 
-@include media-breakpoint-up(sm) {
-  .carousel-control-prev,
-  .carousel-control-next {
-    top: $carousel-control-space-top;
-    opacity: 1;
-  }
+      .carousel-inner {
+        border-radius: $border-radius-lg;
 
-  .carousel-control-prev {
-    left: $carousel-control-space-x;
-  }
+        img {
+          border-radius: $border-radius-lg;
+        }
+      }
 
-  .carousel-control-next {
-    right: $carousel-control-space-x;
-  }
-}
+      .carousel-caption {
+        position: static;
+        text-align: left;
+        color: $body-color;
+        top: 100%;
+        padding-top: 0;
+        padding-bottom: 0;
 
-.carousel-inner {
-  border-radius: $border-radius-lg;
+        h5 {
+          @extend .h4;
+          font-weight: $font-weight-bold;
+        }
+      }
 
-  img {
-    border-radius: $border-radius-lg;
-  }
-}
+      @include media-breakpoint-up(sm) {
+        .carousel-control-prev,
+        .carousel-control-next {
+          top: $carousel-control-space-top;
+          opacity: 1;
+        }
 
-.carousel-caption {
-  position: static;
-  text-align: left;
-  color: $body-color;
-  top: 100%;
-  padding-top: 0;
-  padding-bottom: 0;
+        .carousel-control-prev {
+          left: $carousel-control-space-x;
+        }
 
-  h5 {
-    @extend .h4;
-    font-weight: $font-weight-bold;
+        .carousel-control-next {
+          right: $carousel-control-space-x;
+        }
+      }
+    }
   }
 }
 
 // Modal
-
 .modal-carousel {
   background: $white;
 
@@ -251,7 +259,6 @@ $carousel-margin-bottom: 0.25rem * 4;
 }
 
 // Gallery grid
-
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

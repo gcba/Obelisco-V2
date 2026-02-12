@@ -109,12 +109,23 @@ const SECTIONS_DEV = [
     ),
   },
   {
-    title: 'Pasos de un formulario con logica',
+    title: 'Demo',
     firstTitle: true,
     content: (
-      <CodeBox codeHTML={STEPS_FORM_LOGIC} codeJS={STEPS_FORM_LOGIC_JS}>
-        <StepperWithLogic />
-      </CodeBox>
+      <>
+        <p>
+          A continuación, se presenta un ejemplo de código JavaScript para su implementación, teniendo en cuenta los
+          estilos y funcionalidad del componente.
+        </p>
+        <p>
+          Es importante tener en cuenta que la funcionalidad deberá integrarse de acuerdo con la tecnología utilizada,
+          como por ejemplo React o Angular.
+        </p>
+
+        <CodeBox codeHTML={STEPS_FORM_LOGIC} codeJS={STEPS_FORM_LOGIC_JS}>
+          <StepperWithLogic />
+        </CodeBox>
+      </>
     ),
   },
 ];

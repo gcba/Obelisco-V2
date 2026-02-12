@@ -192,12 +192,13 @@ $carousel-margin-bottom: 0.25rem * 4;
       transform: translateY(-$carousel-control-space-top-mobile);
       border-radius: $carousel-control-border-radius;
       opacity: 0.75;
+			outline: unset;
 
       &:hover,
       &:focus,
       &:active {
-        // box-shadow: none;
-        // outline: none;
+        box-shadow: unset;
+        outline: unset;
       }
     }
 
@@ -214,6 +215,7 @@ $carousel-margin-bottom: 0.25rem * 4;
 
       .carousel-control-prev-icon {
         background-image: $carousel-control-prev-icon;
+				content: unset;
       }
     }
 
@@ -222,6 +224,7 @@ $carousel-margin-bottom: 0.25rem * 4;
 
       .carousel-control-next-icon {
         background-image: $carousel-control-next-icon;
+				content: unset;
       }
     }
 

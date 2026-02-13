@@ -143,6 +143,8 @@ const TemplatePaginaNoticiasDocs: React.FC = () => {
               Permite insertar una imagen puntual entre bloques de texto para acompañar o reforzar una idea específica
               del contenido. Recomendamos completar el campo de texto alternativo con una breve descripción de la imagen
               para garantizar la accesibilidad.
+              <br />
+              <br />
               <strong>Ejemplo de texto alternativo</strong>: &quot;Grupo de personas realizando actividades recreativas
               al aire libre&quot;.
             </li>
@@ -155,38 +157,6 @@ const TemplatePaginaNoticiasDocs: React.FC = () => {
             className="img-fluid"
             style={{ marginTop: '32px', marginBottom: '32px' }}
           />
-          <p className="text-xl" style={{ marginBottom: '12px' }}>
-            Buenas prácticas
-          </p>{' '}
-          <div className="d-flex gap-2" style={{ marginBottom: '12px' }}>
-            <span className="material-symbols-rounded text-success">check</span>
-            <p className="mb-0">Verificar ortografía, formato y longitud del texto antes de ser publicado.</p>
-          </div>
-          <div className="d-flex gap-2" style={{ marginBottom: '12px' }}>
-            <span className="material-symbols-rounded text-success">check</span>
-            <p className="mb-0">Validar la fotografía con el área correspondiente.</p>
-          </div>
-          <div className="d-flex gap-2" style={{ marginBottom: '12px' }}>
-            <span className="material-symbols-rounded text-success">check</span>
-            <p className="mb-0">Verificar que los canales de contacto se encuentren correctamente enlazados.</p>
-          </div>
-          <p className="text-xl" style={{ marginBottom: '12px', marginTop: '32px;' }}>
-            Malas prácticas
-          </p>{' '}
-          <div className="d-flex gap-2" style={{ marginBottom: '12px' }}>
-            <span className="material-symbols-rounded text-danger">close</span>
-            <p className="mb-0">Utilizar fotografías informales, con fondo ruidoso o mala calidad. </p>
-          </div>
-          <div className="d-flex gap-2" style={{ marginBottom: '12px' }}>
-            <span className="material-symbols-rounded text-danger">close</span>
-            <p className="mb-0">Modificar tamaños, márgenes o estructura del módulo.</p>
-          </div>
-          <div className="d-flex gap-2" style={{ marginBottom: '12px' }}>
-            <span className="material-symbols-rounded text-danger">close</span>
-            <p className="mb-0">
-              Incluir información personal sensible (por ej.: DNI, datos privados, teléfonos personales).
-            </p>
-          </div>
           <h6>Elementos multimedia</h6>
           <p className="text-md">
             Opciones disponibles para incorporar recursos audiovisuales que complementan el contenido de la noticia:{' '}
@@ -229,32 +199,12 @@ const TemplatePaginaNoticiasDocs: React.FC = () => {
             className="img-fluid"
             style={{ marginTop: '32px', marginBottom: '32px' }}
           />
-        </>
-      ),
-    },
-    {
-      title: 'Información institucional',
-      content: (
-        <>
-          <p className="text-md">
-            Este módulo tiene como finalidad presentar información institucional del área de forma clara y estructurada.
-            Deberá incluir obligatoriamente el colapsable <strong>&quot;Misión y funciones&quot;</strong>. El contenido
-            debe ser breve, claro y sintético. Extensión máxima recomendada: 1500 caracteres.
-          </p>
-          <Image
-            src={`${basePath}/images/templates/noticias/3.svg`}
-            alt="Ejemplo de información institucional"
-            width="800"
-            height="295"
-            className="img-fluid"
-            style={{ marginTop: '32px' }}
-          />
           <p className="text-xl" style={{ marginBottom: '12px', marginTop: '32px;' }}>
             Buenas prácticas
           </p>{' '}
           <div className="d-flex gap-2" style={{ marginBottom: '12px' }}>
             <span className="material-symbols-rounded text-success">check</span>
-            <p className="mb-0">Redactar utilizando lenguaje claro, evitando tecnicismos innecesarios. </p>
+            <p className="mb-0">Redactar utilizando lenguaje claro, evitando tecnicismos innecesarios.</p>
           </div>
           <div className="d-flex gap-2" style={{ marginBottom: '12px' }}>
             <span className="material-symbols-rounded text-success">check</span>
@@ -481,7 +431,7 @@ const TemplatePaginaNoticiasDocs: React.FC = () => {
       <ComponentHeader
         title="Noticias"
         description={[
-          `Las utilizamos para comunicar noticias y novedades. Este tipo de página debe actualizarse al menos 1 vez por semana.`,
+          `Guía orientada a estandarizar la carga y presentación de noticias, promoviendo claridad, consistencia y una lectura fluida.`,
         ]}
       />
 

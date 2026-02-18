@@ -192,7 +192,7 @@ const sections = [
           {HERO_EXAMPLE}
         </SyntaxHighlighter>
         <p className="text-md my-4">
-          <strong>Versión 1.8.5 ⬇️</strong>
+          <strong>Versión 1.9.1 ⬇️</strong>
         </p>
         <li>
           Se corrige la versión multimedia para los elementos <code>{'<iframe>'}</code>

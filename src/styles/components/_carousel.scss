@@ -1,4 +1,5 @@
 $carousel-bg: $white;
+$carousel-bg-hover: $slate-50;
 $carousel-active-bg: $blue-700;
 $svg-base-left: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 6.70498C14.61 6.31498 13.98 6.31498 13.59 6.70498L9.00002 11.295C8.61002 11.685 8.61002 12.315 9.00002 12.705L13.59 17.295C13.98 17.685 14.61 17.685 15 17.295C15.39 16.905 15.39 16.275 15 15.885L11.12 11.995L15 8.11498C15.39 7.72498 15.38 7.08498 15 6.70498Z" fill="%23';
 $svg-base-right: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9.00002 6.71063C8.61002 7.10063 8.61002 7.73063 9.00002 8.12063L12.88 12.0006L9.00002 15.8806C8.61002 16.2706 8.61002 16.9006 9.00002 17.2906C9.39002 17.6806 10.02 17.6806 10.41 17.2906L15 12.7006C15.39 12.3106 15.39 11.6806 15 11.2906L10.41 6.70063C10.03 6.32063 9.39002 6.32063 9.00002 6.71063Z" fill="%23';
@@ -16,18 +17,18 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
 @mixin carousel-navigation-states(
   $box-shadow,
   $bg-color,
-  $icon-left,
-  $icon-right
+  $carousel-icon-left,
+  $carousel-icon-right
 ) {
   box-shadow: $box-shadow;
   background-color: $bg-color;
 
   .carousel-control-prev-icon {
-    content: $icon-left;
+    content: $carousel-icon-left;
   }
 
   .carousel-control-next-icon {
-    content: $icon-right;
+    content: $carousel-icon-right;
   }
 }
 
@@ -45,6 +46,7 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     bottom: auto;
     width: 64px;
     height: 64px;
+    opacity: 1;
 
     .carousel-control-prev-icon {
       width: 48px;
@@ -144,6 +146,7 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     border-radius: $border-radius-lg;
     border: none;
     outline: $outline-border;
+    background-color: $carousel-bg;
 
     .carousel-control-prev-icon {
       background-image: none;
@@ -155,6 +158,23 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
       content: $carousel-icon-right;
     }
 
+    // &:focus {
+    //   @include carousel-navigation-states(
+    //     $focus-box-shadow,
+    //     $carousel-bg,
+    //     $carousel-icon-left,
+    //     $carousel-icon-right
+    //   );
+    //   outline: 0.25rem solid transparent;
+    // }
+
+    &:hover {
+      // @include carousel-navigation-states(none, $carousel-bg);
+      background-color: $carousel-bg-hover;
+
+      // outline: $hover-outline;
+    }
+
     &:focus {
       @include carousel-navigation-states(
         $focus-box-shadow,
@@ -163,16 +183,6 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
         $carousel-icon-right
       );
       outline: 0.25rem solid transparent;
-    }
-
-    &:hover {
-      @include carousel-navigation-states(
-        none,
-        $carousel-bg,
-        $carousel-icon-left-hover,
-        $carousel-icon-right-hover
-      );
-      outline: $hover-outline;
     }
 
     &:active {

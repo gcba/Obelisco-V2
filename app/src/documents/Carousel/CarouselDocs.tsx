@@ -6,12 +6,12 @@ import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import {
-  CAROUSEL_DESTACADO,
   CAROUSEL_DESTACADO_WHITE,
   CAROUSEL_DESTACADO_DARK,
   CAROUSEL_CARDS,
   CAROUSEL_CARDS_DARK,
   CAROUSEL_CARDS_EVENTS,
+  CAROUSEL_DESTACADO_LIGHT,
 } from './code-views';
 
 const basePath = '/Obelisco-V2';
@@ -140,10 +140,10 @@ const CarouselDocs: React.FC = () => {
     {
       subtitle: 'Con fondo claro',
       content: (
-        <CodeBox codeHTML={CAROUSEL_DESTACADO}>
+        <CodeBox codeHTML={CAROUSEL_DESTACADO_LIGHT}>
           <div className="container">
             <ZoomContainer>
-              <div id="carousel" className="carousel slide">
+              <div id="carousel_light" className="carousel slide">
                 <div className="carousel-inner">
                   <div className="carousel-item active">
                     <div className="panel-horizontal-content">
@@ -225,21 +225,41 @@ const CarouselDocs: React.FC = () => {
                 <div className="carousel-indicators">
                   <button
                     type="button"
-                    data-bs-target="#carousel"
+                    data-bs-target="#carousel_light"
                     data-bs-slide-to="0"
                     className="active"
                     aria-current="true"
                     aria-label="Slide 1"
                   ></button>
-                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel_light"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel_light"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
                 </div>
 
-                <button className="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <button
+                  className="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel_light"
+                  data-bs-slide="prev"
+                >
                   <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span className="visually-hidden">Anterior</span>
                 </button>
-                <button className="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <button
+                  className="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel_light"
+                  data-bs-slide="next"
+                >
                   <span className="carousel-control-next-icon" aria-hidden="true"></span>
                   <span className="visually-hidden">Siguiente</span>
                 </button>

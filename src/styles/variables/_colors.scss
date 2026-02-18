@@ -182,7 +182,7 @@ $body-secondary-color: $slate-950 !default;
 //Hover
 $hover-color: $blue-700;
 $hover-color-danger: $red-500;
-$hover-outline: 0.125rem solid $hover-color;
+$hover-outline: 0.125rem solid $hover-color; // !
 $hover-outline-danger: 0.125rem solid $hover-color-danger;
 
 // Focus

@@ -13,3 +13,13 @@ export const PATTERNS_ACCESSIBILTY = `    <form>
       </div>
     </form>
 `;
+
+export const HERO_EXAMPLE = `.hero-center /* {horizontal} */
+.hero-left /* {vertical} */
+.hero-center-left /* {horizontal}-{vertical} */
+`;
+
+export const HERO_EXAMPLE_2 = `.hero-sm-center /* breakpoint-{horizontal} */
+.hero-md-left /* breakpoint-{vertical} */
+.hero-xl-center-left /* breakpoint-{horizontal}-{vertical} */
+`;

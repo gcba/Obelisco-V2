@@ -1,7 +1,11 @@
 import Link from 'next/link';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import ComponentHeader from '@/components/Template/ComponentHeader';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
+
+import { HERO_EXAMPLE, HERO_EXAMPLE_2 } from './code-views';
 
 const sections = [
   {
@@ -166,24 +170,61 @@ const sections = [
         <li>
           El elemento <code>{'<div class="aside">'}</code>, puede usar alguna de las siguientes clases para alinear la
           multimedia; <code>{'<img>'}</code> y <code>{'<video>'}</code>:
-          <ul>
-            <li>
-              <code>{'.hero-{positions-vertical}'}</code>,
-            </li>
+          <ul className="mt-3 mb-3">
             <li>
               {' '}
-              <code>{'.hero-{positions-horizontal}'}</code>
+              <code>{'.hero-{horizontal}'}</code>
             </li>
             <li>
-              <code>{'.hero-{positions-horizontal}-{positions-vertical}'}</code>
+              <code>{'.hero-{vertical}'}</code>,
+            </li>
+            <li>
+              <code>{'.hero-{horizontal}-{vertical}'}</code>
             </li>
           </ul>{' '}
         </li>
-        Donde <code>{'{positions-vertical}'}</code> puede ser: <code>{'bottom'}</code>, <code>{'top'}</code>,{' '}
-        <code>{'center'}</code>.
-        <br />
-        Donde <code>{'{positions-horizontal}'}</code> puede ser: <code>{'center'}</code>, <code>{'right'}</code>,{' '}
+        Donde <code>{'{horizontal}'}</code> puede ser: <code>{'center'}</code>, <code>{'right'}</code>,{' '}
         <code>{'left'}</code>.
+        <br />
+        Donde <code>{'{vertical}'}</code> puede ser: <code>{'bottom'}</code>, <code>{'top'}</code>,{' '}
+        <code>{'center'}</code>.
+        <SyntaxHighlighter language="css" style={dracula} wrapLongLines>
+          {HERO_EXAMPLE}
+        </SyntaxHighlighter>
+        <p className="text-md my-4">
+          <strong>Versión 1.9.1 ⬇️</strong>
+        </p>
+        <li>
+          Se corrige la versión multimedia para los elementos <code>{'<iframe>'}</code>
+        </li>
+        <li>
+          Se incorpora la posibilidad de utilizar los breakpoints <code>sm</code>, <code>md</code>, <code>lg</code>,{' '}
+          <code>xl</code> y <code>xxl</code> para definir el alineamiento del contenido multimedia en distintas
+          resoluciones de pantalla.
+          <ul className="mt-3 mb-3">
+            <li>
+              {' '}
+              <code>{'.hero-{breakpoint}-{horizontal}'}</code>
+            </li>
+            <li>
+              <code>{'.hero-{breakpoint}-{vertical}'}</code>,
+            </li>
+            <li>
+              <code>{'.hero-{breakpoint}-{horizontal}-{vertical}'}</code>
+            </li>
+          </ul>
+        </li>
+        Donde <code>{'{breakpoint}'}</code> puede ser <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>{' '}
+        o <code>xxl</code>
+        <SyntaxHighlighter language="css" style={dracula} wrapLongLines>
+          {HERO_EXAMPLE_2}
+        </SyntaxHighlighter>
+        <br />
+        Se sigue la misma lógica que en los breakpoints de{' '}
+        <a href="https://getbootstrap.com/docs/5.0/layout/breakpoints/" target="_blank">
+          Bootstrap
+        </a>
+        .
       </ul>
     ),
   },

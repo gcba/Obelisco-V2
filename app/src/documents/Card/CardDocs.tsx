@@ -40,7 +40,9 @@ const CardDocs: React.FC = () => {
           <div className="container">
             <div className="card-box-sizing">
               <div className="card card-horizontal">
-                <i className="bx bxs-info-circle card-icon"></i>
+                <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                  info
+                </span>
                 <div className="card-body">
                   <h3 className="card-title">
                     <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
@@ -49,8 +51,24 @@ const CardDocs: React.FC = () => {
                 </div>
               </div>
               <br />
+              <div className="card card-horizontal">
+                <div className="d-flex w-100 card-border-left-blue">
+                  <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                    info
+                  </span>
+                  <div className="card-body">
+                    <h3 className="card-title">
+                      <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                    </h3>
+                    <p className="card-text">Descripción de la tarjeta</p>
+                  </div>
+                </div>
+              </div>
+              <br />
               <div className="card card-horizontal unbordered">
-                <i className="bx bxs-info-circle card-icon"></i>
+                <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                  info
+                </span>
                 <div className="card-body">
                   <h3 className="card-title">
                     <LinkClient>Título de la tarjeta</LinkClient>
@@ -169,7 +187,9 @@ const CardDocs: React.FC = () => {
           <div className="container">
             <div className="card-vertical-box-sizing">
               <div className="card">
-                <i className="bx bxs-info-circle card-icon"></i>
+                <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                  info
+                </span>
                 <div className="card-body">
                   <h3 className="card-title">
                     <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
@@ -178,8 +198,22 @@ const CardDocs: React.FC = () => {
                 </div>
               </div>
               <br />
+              <div className="card">
+                <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                  info
+                </span>
+                <div className="card-body card-border-bottom-blue">
+                  <h3 className="card-title">
+                    <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                  </h3>
+                  <p className="card-text">Descripción de la tarjeta</p>
+                </div>
+              </div>
+              <br />
               <div className="card unbordered">
-                <i className="bx bxs-info-circle card-icon"></i>
+                <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                  info
+                </span>
                 <div className="card-body">
                   <h3 className="card-title">
                     <LinkClient>Título de la tarjeta</LinkClient>
@@ -295,12 +329,12 @@ const CardDocs: React.FC = () => {
       ),
     },
     {
-      subtitle: 'Agenda',
+      subtitle: 'Eventos',
       content: (
         <CodeBox codeHTML={VERTICAL_AGENDA}>
           <div className="container">
             <div className="card-vertical-box-sizing">
-              <div className="card">
+              <div className="card card-eventos">
                 <Image
                   src={`${basePath}/images/card-img-top.jpg`}
                   className="card-img"
@@ -309,11 +343,20 @@ const CardDocs: React.FC = () => {
                   height={196}
                 ></Image>
                 <div className="card-body">
-                  <p className="card-headline">sobrelinea</p>
+                  <p className="card-headline">TIPO DE EVENTO</p>
+                  <div className="mb-3">
+                    <span className="badge badge-default">Etiqueta</span>
+                    <span className="badge badge-default">Tipo de público</span>
+                  </div>
                   <h3 className="card-title">
-                    <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                    <LinkClient className="card-title-link ellipsis-2">
+                      Este es el título del evento que puede contener 2 líneas de texto
+                    </LinkClient>
                   </h3>
-                  <p className="card-text">Descripción de la tarjeta</p>
+                  <p className="card-text ellipsis-4">
+                    Esta es la descripción del evento que puede contener hasta 4 líneas de texto. Cuando la descripción
+                    se excede de este límite, el texto se trunca y aparece el
+                  </p>
                   <div className="card-info">
                     <div className="pt-2">
                       <small>
@@ -323,6 +366,10 @@ const CardDocs: React.FC = () => {
                       <small>
                         <span className="material-symbols-rounded o-icon">schedule</span>
                         17 | 18 | 19 hs
+                      </small>
+                      <small>
+                        <span className="material-symbols-rounded o-icon">location_on</span>
+                        Ubicación del evento
                       </small>
                     </div>
                   </div>
@@ -480,7 +527,9 @@ const CardDocs: React.FC = () => {
               <div className="card-items-3">
                 <div className="col">
                   <div className="card">
-                    <i className="bx bxs-info-circle card-icon"></i>
+                    <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                      info
+                    </span>
                     <div className="card-body">
                       <h3 className="card-title">
                         <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
@@ -491,7 +540,9 @@ const CardDocs: React.FC = () => {
                 </div>
                 <div className="col">
                   <div className="card">
-                    <i className="bx bxs-info-circle card-icon"></i>
+                    <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                      info
+                    </span>
                     <div className="card-body">
                       <h3 className="card-title">
                         <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
@@ -502,7 +553,9 @@ const CardDocs: React.FC = () => {
                 </div>
                 <div className="col">
                   <div className="card">
-                    <i className="bx bxs-info-circle card-icon"></i>
+                    <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                      info
+                    </span>
                     <div className="card-body">
                       <h3 className="card-title">
                         <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
@@ -513,7 +566,9 @@ const CardDocs: React.FC = () => {
                 </div>
                 <div className="col">
                   <div className="card">
-                    <i className="bx bxs-info-circle card-icon"></i>
+                    <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                      info
+                    </span>
                     <div className="card-body">
                       <h3 className="card-title">
                         <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
@@ -524,7 +579,9 @@ const CardDocs: React.FC = () => {
                 </div>
                 <div className="col">
                   <div className="card">
-                    <i className="bx bxs-info-circle card-icon"></i>
+                    <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                      info
+                    </span>
                     <div className="card-body">
                       <h3 className="card-title">
                         <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
@@ -548,7 +605,9 @@ const CardDocs: React.FC = () => {
               <div className="card-items-2">
                 <div className="col">
                   <div className="card card-horizontal">
-                    <i className="bx bxs-info-circle card-icon"></i>
+                    <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                      info
+                    </span>
                     <div className="card-body">
                       <h3 className="card-title">
                         <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
@@ -559,7 +618,9 @@ const CardDocs: React.FC = () => {
                 </div>
                 <div className="col">
                   <div className="card card-horizontal">
-                    <i className="bx bxs-info-circle card-icon"></i>
+                    <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                      info
+                    </span>
                     <div className="card-body">
                       <h3 className="card-title">
                         <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
@@ -570,7 +631,9 @@ const CardDocs: React.FC = () => {
                 </div>
                 <div className="col">
                   <div className="card card-horizontal">
-                    <i className="bx bxs-info-circle card-icon"></i>
+                    <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                      info
+                    </span>
                     <div className="card-body">
                       <h3 className="card-title">
                         <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
@@ -581,7 +644,9 @@ const CardDocs: React.FC = () => {
                 </div>
                 <div className="col">
                   <div className="card card-horizontal">
-                    <i className="bx bxs-info-circle card-icon"></i>
+                    <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                      info
+                    </span>
                     <div className="card-body">
                       <h3 className="card-title">
                         <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
@@ -592,7 +657,9 @@ const CardDocs: React.FC = () => {
                 </div>
                 <div className="col">
                   <div className="card card-horizontal">
-                    <i className="bx bxs-info-circle card-icon"></i>
+                    <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                      info
+                    </span>
                     <div className="card-body">
                       <h3 className="card-title">
                         <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
@@ -706,7 +773,7 @@ const CardDocs: React.FC = () => {
         <>
           <div className="list-informative">
             <p className="text-xl">Cuándo usar</p>
-            <ul className="list-informative-bullet">
+            <ul className="list-informative-bullet" style={{ marginBottom: '32px' }}>
               <li>
                 Para organizar y agrupar información relacionada, como artículos, noticias o secciones de un sitio web.
               </li>
@@ -716,7 +783,7 @@ const CardDocs: React.FC = () => {
               </li>
             </ul>
           </div>
-          <div className="list-informative" style={{ marginTop: '32px' }}>
+          <div className="list-informative">
             <p className="text-xl">Cuándo no usar</p>
             <ul className="list-informative-bullet">
               <li>
@@ -741,7 +808,7 @@ const CardDocs: React.FC = () => {
       title: 'Disposición',
       content: (
         <>
-          <p style={{ marginTop: '32px' }}>
+          <p className="mb-4" style={{ marginTop: '32px' }}>
             En Obelisco existen 2 disposiciones posibles: vertical y horizontal. La disposición del componente sirve
             para generar diferentes niveles de jerarquía según el tipo de tarjeta.
           </p>
@@ -761,7 +828,7 @@ const CardDocs: React.FC = () => {
         <>
           <div className="max-items-2">
             <div className="col">
-              <p className="text-xl mt-2">Predeterminada</p>
+              <p className="text-xl mt-2 mb-2">Predeterminada</p>
               <p className="text-md">
                 Se utiliza para mostrar información de mayor peso visual en la página, y lleva una imagen descriptiva
                 del contenido.
@@ -778,9 +845,9 @@ const CardDocs: React.FC = () => {
             </div>
           </div>
 
-          <div className="max-items-2 mt-4 mb-2">
+          <div className="max-items-2" style={{ marginTop: '32px' }}>
             <div className="col">
-              <p className="text-xl">Noticias</p>
+              <p className="text-xl mb-2">Noticias</p>
               <p className="text-md">
                 Se utiliza para modular contenido de noticias en páginas simples y páginas de área.
               </p>
@@ -796,15 +863,15 @@ const CardDocs: React.FC = () => {
             </div>
           </div>
 
-          <div className="max-items-2 mt-4 mb-2">
+          <div className="max-items-2 mt-4" style={{ marginTop: '32px' }}>
             <div className="col">
-              <p className="text-xl">Agenda</p>
+              <p className="text-xl mb-2">Eventos</p>
               <p className="text-md">Se utiliza para mostrar información sobre un evento.</p>
             </div>
             <div className="col">
               <Image
                 src={`${basePath}/images/tarjetas/tarjetas_vertical_agenda.svg`}
-                alt="Tarjeta vertical de agenda"
+                alt="Tarjeta vertical de eventos"
                 width="800"
                 height="200"
                 className="img-fluid"
@@ -818,31 +885,42 @@ const CardDocs: React.FC = () => {
       title: 'Tipos de tarjeta horizontal',
       content: (
         <>
-          <p className="text-xl">Predeterminada</p>
-          <p className="text-md mb-4">
-            Contiene información que no precisa de imágenes descriptivas. Dentro del entorno de Buenos Aires se utiliza,
-            por ejemplo, para agrupar programas o servicios de un área.
-          </p>
-          <Image
-            src={`${basePath}/images/tarjetas/tarjetas_horizontal_predeterminada.svg`}
-            alt="Tarjeta horizontal predeterminada"
-            width="800"
-            height="200"
-            className="img-fluid"
-          />
-          <p className="text-xl mb-4" style={{ marginTop: '32px' }}>
-            Temática
-          </p>
-          <p className="text-md">
-            Se utiliza en la página de inicio de Buenos Aires para redirigir a los principales trámites y servicios.
-          </p>
-          <Image
-            src={`${basePath}/images/tarjetas/tarjetas_horizontal_tematica.svg`}
-            alt="Tarjeta horizontal tematica"
-            width="800"
-            height="200"
-            className="img-fluid"
-          />
+          <div className="max-items-2" style={{ marginTop: '32px' }}>
+            <div className="col">
+              <p className="text-xl mb-2">Predeterminada</p>
+              <p className="text-md">
+                Contiene información que no precisa de imágenes descriptivas. Dentro del entorno de Buenos Aires se
+                utiliza, por ejemplo, para agrupar programas o servicios de un área.{' '}
+              </p>
+            </div>
+            <div className="col">
+              <Image
+                src={`${basePath}/images/tarjetas/tarjetas_horizontal_predeterminada.svg`}
+                alt="Tarjeta horizontal predeterminada"
+                width="800"
+                height="200"
+                className="img-fluid"
+              />
+            </div>
+          </div>
+
+          <div className="max-items-2" style={{ marginTop: '32px' }}>
+            <div className="col">
+              <p className="text-xl mb-2">Temática</p>
+              <p className="text-md">
+                Se utiliza en la página de inicio de Buenos Aires para redirigir a los principales trámites y servicios.
+              </p>
+            </div>
+            <div className="col">
+              <Image
+                src={`${basePath}/images/tarjetas/tarjetas_horizontal_tematica.svg`}
+                alt="Tarjeta horizontal tematica"
+                width="800"
+                height="200"
+                className="img-fluid"
+              />
+            </div>
+          </div>
         </>
       ),
     },
@@ -859,27 +937,23 @@ const CardDocs: React.FC = () => {
             alt="Tarjeta horizontal tematica"
             width="800"
             height="200"
-            className="img-fluid"
+            className="img-fluid mb-2"
           />
-          <div className="d-flex pt-2" style={{ marginTop: '32px' }}>
+          <div className="d-flex" style={{ marginBottom: '32px' }}>
             <span className="material-symbols-rounded text-success">check</span>
             <p className="mb-0">
               Utilizar tarjetas con la misma disposición y del mismo tipo dentro de un mismo grupo.
             </p>
           </div>
 
-          {/* <p className="text-md">
-            Las tarjetas se utilizan en grupo para organizar la navegación y redirección a contenidos relacionados de un
-            mismo sitio web.
-          </p> */}
           <Image
             src={`${basePath}/images/tarjetas/tarjetas_agrupacion_no_usar_1.svg`}
             alt="Tarjeta horizontal tematica"
             width="800"
             height="200"
-            className="img-fluid"
+            className="img-fluid mb-2"
           />
-          <div className="d-flex pt-3">
+          <div className="d-flex">
             <span className="material-symbols-rounded text-danger">close</span>
             <p className="mb-0">No combinar la disposición y/o los tipos de tarjetas dentro de un mismo grupo.</p>
           </div>
@@ -904,7 +978,7 @@ const CardDocs: React.FC = () => {
             className="img-fluid"
           />
 
-          <p className="text-md mt-3">
+          <p className="text-md" style={{ marginTop: '32px' }}>
             En <i>desktop</i>, las tarjetas horizontales de 4 columnas pueden agruparse hasta un máximo de 3 por línea,
             mientras que las de 6 columnas pueden hasta un máximo de 2 por línea.
           </p>
@@ -922,11 +996,10 @@ const CardDocs: React.FC = () => {
             alt="Tarjetas modulacion ej 4"
             width="800"
             height="200"
-            className="img-fluid"
-            style={{ marginTop: '1.5rem !important' }}
+            className="img-fluid mt-3"
           />
 
-          <p className="text-md mt-4">
+          <p className="text-md" style={{ marginTop: '32px' }}>
             En <i>mobile</i>, todas las tarjetas van una debajo de la otra y ocupan el ancho total de la grilla del
             dispositivo.
           </p>
@@ -937,10 +1010,9 @@ const CardDocs: React.FC = () => {
             width="800"
             height="200"
             className="img-fluid"
-            style={{ marginTop: '1rem !important' }}
           />
 
-          <p className="text-md mt-4">
+          <p className="text-md" style={{ marginTop: '32px' }}>
             En mobile, las tarjetas de noticias forman un carrusel horizontal para facilitar su visualización.
           </p>
 
@@ -950,7 +1022,6 @@ const CardDocs: React.FC = () => {
             width="800"
             height="200"
             className="img-fluid"
-            style={{ marginTop: '1rem !important' }}
           />
         </>
       ),
@@ -965,9 +1036,8 @@ const CardDocs: React.FC = () => {
             width="800"
             height="200"
             className="img-fluid"
-            style={{ marginTop: '1rem !important' }}
           />
-          <div className="d-flex pt-3">
+          <div className="d-flex mt-2">
             <span className="material-symbols-rounded text-success">check</span>
             <p className="mb-0">
               Respetar la modulación según la disposición y el tipo de tarjeta, independientemente del espacio
@@ -976,13 +1046,15 @@ const CardDocs: React.FC = () => {
           </div>
 
           <Image
-            src={`${basePath}/images/tarjetas/tarjetas_modulacion_si_usar.svg`}
+            src={`${basePath}/images/tarjetas/tarjetas_modulacion_no_usar.svg`}
             alt="Tarjeta horizontal tematica"
             width="800"
             height="200"
-            className="img-fluid mt-4"
+            className="img-fluid"
+            style={{ marginTop: '32px' }}
           />
-          <div className="d-flex pt-3">
+
+          <div className="d-flex mt-2">
             <span className="material-symbols-rounded text-danger">close</span>
             <p className="mb-0">
               No estirar o cambiar la modulación de las tarjetas únicamente por rellenar el espacio en blanco. Cambiar
@@ -990,6 +1062,134 @@ const CardDocs: React.FC = () => {
               escaneabilidad de la información.
             </p>
           </div>
+        </>
+      ),
+    },
+    {
+      title: 'Contexto de uso',
+      content: (
+        <>
+          <p className="text-md mb-3">
+            Para agrupar información cuyo contenido principal es visual. Generalmente se utilizan en páginas de cultura
+            o turismo para captar la atención de la persona usuaria.
+          </p>
+          <Image
+            src={`${basePath}/images/tarjetas/tarjetas_contexto_de_uso.svg`}
+            alt="Contexto de uso"
+            width="800"
+            height="285"
+            className="img-fluid"
+          />
+          <p className="text-md" style={{ marginTop: '32px' }}>
+            Para agrupar información cuyo contenido textual es más relevante que el contenido visual, pero necesite un
+            ícono que ayude a identificar la categoría o tipo de acción, por ejemplo, trámites o servicios.
+          </p>
+          <Image
+            src={`${basePath}/images/tarjetas/tarjetas_agrupar_info.svg`}
+            alt="Agrupación de tarjetas"
+            width="800"
+            height="285"
+            className="img-fluid"
+          />
+          <p className="text-md mb-0" style={{ marginTop: '32px' }}>
+            Para promocionar actividades culturales, recreativas o institucionales, brindando información sobre fecha,
+            tipo de evento y público al que está dirigida.
+          </p>
+          <p className="text-md mt-0">
+            Es obligatorio indicar el tipo de evento, por ejemplo: Muestra, Taller, Charla, Recital, y el tipo de
+            público, por ejemplo: Infantil, Adultos mayores, Familiar, etc.
+          </p>
+          <Image
+            src={`${basePath}/images/tarjetas/tarjetas_promocionar.svg`}
+            alt="Uso de tarjetas para promocionar"
+            width="800"
+            height="285"
+            className="img-fluid"
+          />
+          <p className="text-md mb-0" style={{ marginTop: '32px' }}>
+            Para destacar novedades relevantes de forma visual y resumida, con un acceso directo al detalle de cada
+            nota.
+          </p>
+          <p className="text-md mt-0">
+            Se recomienda incluir siempre una fecha visible para brindar contexto del contenido.
+          </p>
+          <Image
+            src={`${basePath}/images/tarjetas/tarjetas_destacar.svg`}
+            alt="Uso de tarjetas para destacar"
+            width="800"
+            height="285"
+            className="img-fluid"
+          />
+        </>
+      ),
+    },
+    {
+      title: 'Contenidos',
+      content: (
+        <>
+          <p className="text-xl fw-semibold">Información para eventos</p>
+          <p className="text-md mb-1 fw-semibold">Sobrelínea</p>
+          <p className="text-md">
+            La sobrelínea se utiliza para indicar el tipo de evento y permite filtrar actividades según esa categoría.
+            Debe limitarse a un máximo de dos palabras.
+          </p>
+
+          <p className="text-md mb-1 fw-semibold">
+            Etiquetas <i>(tag)</i>
+          </p>
+          <p className="text-md">
+            La tarjeta de eventos tiene dos etiquetas que son obligatorias; la primera funciona como nexo adicional al
+            tipo de evento, puede ser una etiqueta relacionada, y la segunda al tipo de público al que está dirigido el
+            evento.
+          </p>
+
+          <p className="text-md mb-1 fw-semibold">Formato de fechas:</p>
+          <ul className="list-informative-bullet">
+            <li>Fecha única: 5 de noviembre</li>
+            <li>Rango de fechas: Del 5 al 10 de noviembre</li>
+            <li>Múltiples fechas: 5, 10, 15 y 20 de noviembre. </li>
+          </ul>
+          <p className="text-md mt-2">
+            Si hay más de 4 fechas disponibles, se recomienda destacar la próxima fecha más cercana y ofrecer el detalle
+            completo en la página del evento.
+          </p>
+
+          <p className="text-md mb-1 fw-semibold">Formato de horarios:</p>
+          <ul className="list-informative-bullet">
+            <li>Horario único: 15:00 h</li>
+            <li>Rango de horarios: 15:00 - 16:00 h</li>
+            <li>Múltiples horarios: 16:00 | 18:00 | 20:00</li>
+          </ul>
+          <p className="text-md mt-2 mb-0">
+            Si hay más de tres horarios, se recomienda usar el formato resumido con un “+” y detallar el resto en la
+            página del evento. Por ejemplo: 16:00 | 18:00 | 20:00 +
+          </p>
+
+          <p className="text-xl mb-3 fw-semibold" style={{ marginTop: '32px' }}>
+            Información para noticias
+          </p>
+          <p className="text-md">
+            Estos datos ayudan a la persona usuaria a contextualizar la información, distinguir entre distintos tipos de
+            contenido y contribuyen al orden cronológico de las noticias.
+          </p>
+
+          <p className="text-md mb-1 fw-semibold">Fecha de publicación:</p>
+          <p className="text-md">
+            Debe mostrarse en formato accesible (ej. “12 de septiembre de 2025”) y visible en el nivel superior del
+            contenido.
+          </p>
+
+          <p className="text-md mb-3 fw-semibold">
+            Etiquetas <i>(tag)</i>
+          </p>
+          <p className="text-md">
+            La tarjeta de noticias debe incluir al menos una etiqueta temática que permita identificar temática o
+            categoría de la noticia, por ejemplo, &quot;Cultura&quot; &quot;Musica&quot;
+          </p>
+          <p className="text-md">
+            Para conocer más información podes consultar la guía para{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/content/como-redactar-una-noticia">redactar una noticia</a>
+          </p>
         </>
       ),
     },
@@ -1053,6 +1253,10 @@ const CardDocs: React.FC = () => {
                 </tr>
                 <tr>
                   <td>8. Horario</td>
+                  <td>Opcional, solo está disponible en tarjetas de eventos.</td>
+                </tr>
+                <tr>
+                  <td>9. Ubicación</td>
                   <td>Opcional, solo está disponible en tarjetas de eventos.</td>
                 </tr>
               </tbody>

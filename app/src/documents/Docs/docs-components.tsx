@@ -1,7 +1,11 @@
 import Link from 'next/link';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import ComponentHeader from '@/components/Template/ComponentHeader';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
+
+import { HERO_EXAMPLE, HERO_EXAMPLE_2 } from './code-views';
 
 const sections = [
   {
@@ -75,6 +79,19 @@ const sections = [
             <code>data-dismiss=&quot;alert&quot;</code> por <code>data-bs-dismiss=&quot;alert&quot;</code>, y la clase{' '}
             <code>.close</code> se reemplaza por <code>.btn-close</code>.
           </li>
+
+          <p className="text-md my-4">
+            <strong>Versión 1.8.4 ⬇️</strong>
+          </p>
+
+          <li>
+            Para Alertas de Sistema; Se crea la clase <code>.system</code>, que debe usarse junto a{' '}
+            <code>.alert-{'{color}'}</code>
+          </li>
+          <li>
+            Donde <code>{'color'}</code> puede ser: <code>{'primary'}</code>, <code>{'secondary'}</code>,
+            <code>{'tertiary'}</code>, <code>{'light'}</code>, <code>{'dark'}</code>.
+          </li>
         </ul>
       </>
     ),
@@ -129,6 +146,85 @@ const sections = [
         <li>
           Se agrega la clase <code>.o-icon</code> al ícono del componente <strong>banner</strong> con ícono.
         </li>
+      </ul>
+    ),
+  },
+  {
+    title: 'Cabecera de página',
+    content: (
+      <ul className="docs-list">
+        <p className="text-md my-4">
+          <strong>Versión 1.7.0 ⬇️</strong>
+        </p>
+        <li>Se crea el componente.</li>
+        <p className="text-md my-4">
+          <strong>Versión 1.8.1 ⬇️</strong>
+        </p>
+        <li>Se corrige comportamiento en las variantes con multimedia, ahora está centrado el contenido.</li>
+        <li>
+          Se agregó un alto minimo en <code>.content</code>, para evitar conflictos con estilos externos.
+        </li>
+        <p className="text-md my-4">
+          <strong>Versión 1.8.4 ⬇️</strong>
+        </p>
+        <li>
+          El elemento <code>{'<div class="aside">'}</code>, puede usar alguna de las siguientes clases para alinear la
+          multimedia; <code>{'<img>'}</code> y <code>{'<video>'}</code>:
+          <ul className="mt-3 mb-3">
+            <li>
+              {' '}
+              <code>{'.hero-{horizontal}'}</code>
+            </li>
+            <li>
+              <code>{'.hero-{vertical}'}</code>,
+            </li>
+            <li>
+              <code>{'.hero-{horizontal}-{vertical}'}</code>
+            </li>
+          </ul>{' '}
+        </li>
+        Donde <code>{'{horizontal}'}</code> puede ser: <code>{'center'}</code>, <code>{'right'}</code>,{' '}
+        <code>{'left'}</code>.
+        <br />
+        Donde <code>{'{vertical}'}</code> puede ser: <code>{'bottom'}</code>, <code>{'top'}</code>,{' '}
+        <code>{'center'}</code>.
+        <SyntaxHighlighter language="css" style={dracula} wrapLongLines>
+          {HERO_EXAMPLE}
+        </SyntaxHighlighter>
+        <p className="text-md my-4">
+          <strong>Versión 1.9.1 ⬇️</strong>
+        </p>
+        <li>
+          Se corrige la versión multimedia para los elementos <code>{'<iframe>'}</code>
+        </li>
+        <li>
+          Se incorpora la posibilidad de utilizar los breakpoints <code>sm</code>, <code>md</code>, <code>lg</code>,{' '}
+          <code>xl</code> y <code>xxl</code> para definir el alineamiento del contenido multimedia en distintas
+          resoluciones de pantalla.
+          <ul className="mt-3 mb-3">
+            <li>
+              {' '}
+              <code>{'.hero-{breakpoint}-{horizontal}'}</code>
+            </li>
+            <li>
+              <code>{'.hero-{breakpoint}-{vertical}'}</code>,
+            </li>
+            <li>
+              <code>{'.hero-{breakpoint}-{horizontal}-{vertical}'}</code>
+            </li>
+          </ul>
+        </li>
+        Donde <code>{'{breakpoint}'}</code> puede ser <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>{' '}
+        o <code>xxl</code>
+        <SyntaxHighlighter language="css" style={dracula} wrapLongLines>
+          {HERO_EXAMPLE_2}
+        </SyntaxHighlighter>
+        <br />
+        Se sigue la misma lógica que en los breakpoints de{' '}
+        <a href="https://getbootstrap.com/docs/5.0/layout/breakpoints/" target="_blank">
+          Bootstrap
+        </a>
+        .
       </ul>
     ),
   },
@@ -355,6 +451,27 @@ const sections = [
         <li>
           Para la disposición de Destacado conjunto, las clases <code>.card-deck</code> y <code>.max-cards-2</code>{' '}
           quedan deprecadas, se reemplazan por <code>.highlighted-items-2</code>.
+        </li>
+        <p className="text-md my-4">
+          <strong>Versión 1.8.1 ⬇️</strong>
+        </p>
+        <p className="text-md mt-4">Común a todas las variantes:</p>
+        <li>
+          Se agrega la clase <code>ellipsis-2</code> a <code>panel-title</code>{' '}
+        </li>
+        <li>
+          Se agrega la clase <code>ellipsis-3</code> a <code>panel-text</code>{' '}
+        </li>
+        <li>
+          Se agrega la clase <code>panel-body-dark</code> para todas las variantes de Destacado conjunto
+        </li>
+        <li>
+          El título semánticamente es un <code>{'<h2>'}</code>, pero extiende los estilos de <code>{'<h5>'}</code>.
+        </li>
+        <p className="text-md mt-4">Destacado conjunto sin multimedia:</p>
+        <li>
+          Se crea la clase: <code>panel-sin-multimedia-v</code> y se utiliza en el mismo div donde va:{' '}
+          <code>panel-body-dark</code> / <code>panel-body</code>
         </li>
       </ul>
     ),
@@ -818,6 +935,11 @@ const sections = [
           Las clases <code>.card-deck</code>, <code>.max-cards-2</code> y <code>.card-column</code> quedan deprecadas y
           se reemplazan por <code>.card-items-2</code>.
         </li>
+
+        <p className="text-md my-4">
+          <strong>Versión 1.6.1 ⬇️</strong>
+        </p>
+
         <li>
           Se crean las clases <code>{'.card-border-{direction}-{color}'}</code>
           <br />
@@ -826,6 +948,17 @@ const sections = [
           Donde <code>{'color'}</code>, es la miscelánea de color: <code>purple</code>, <code>red</code>,{' '}
           <code>sky</code>, <code>yellow</code>, <code>cyan</code> o <code>blue</code>
         </li>
+
+        <p className="text-md my-4">
+          <strong>Versión 1.8.0 ⬇️</strong>
+        </p>
+
+        <li>
+          Se crea la clase <code>.card-eventos</code>, para contener los estilos necesarios para la nueva{' '}
+          <a href="https://gcba.github.io/Obelisco-V2/components/cards#section-dev-10">Tarjeta de Eventos</a>.
+        </li>
+        <li>La Tarjeta de Eventos, ahora admite cómo máximo 2 Etiquetas.</li>
+        <li>También, se agregó un ítem de información del evento: Ubicación</li>
       </ul>
     ),
   },

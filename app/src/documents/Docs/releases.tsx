@@ -19,28 +19,300 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
-      title: 'Versión 1.7.0',
-      firstTitle: true,
+      title: 'Version 1.9.1',
       content: (
         <ul className="docs-list">
-          <p>La versión 1.6.2 contiene lo siguiente: </p>
-          <li>Se crearon nuevas variantes del componente Etiquetas</li>
-          <li>Se actualizaron y agregaron variables funcionales de color para el componente Etiquetas.</li>
-          <li>Se actualizó la ficha de uso del componente Etiquetas.</li>
-          <li>Se actualizó la ficha de color para sumar las nuevas variables funcionales del componente Etiquetas.</li>
+          <p>La Versión 1.9.1 contiene lo siguiente: </p>
           <li>
-            En{' '}
-            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-30">
-              Cambios de componentes
+            Se corrige la visualización de los elementos <code>{'<iframe>'}</code> para la versión multimedia de
+            Cabecera de página.
+          </li>
+          <li>
+            Se agregan clases para la alineación de la multimedia en Cabecera de página. En{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-8">
+              Cambios en componentes
             </a>{' '}
-            se encuentran las clases para las nuevas variantes de Etiqueta.
+            está la documentación de las nuevas clases.
+          </li>
+          <li>
+            Se agrega la variante encabezado Noticias en{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/components/hero">Cabecera de pagina</a>
+          </li>
+          <li>Se corrige fix de modal en mobile.</li>
+          <li>Se corrige fix en la visualización del componente galería.</li>
+        </ul>
+      ),
+    },
+    {
+      title: 'Versión 1.9.0',
+      content: (
+        <ul className="docs-list">
+          <p>La Versión 1.9.0 contiene lo siguiente: </p>
+          <li>
+            Se incorpora la<strong> nueva versión de boxicons 3.0.8</strong>, eso trae los siguientes cambios:
+          </li>
+
+          <div className="responsive-scroll mb-3" tabIndex={0}>
+            <table className="table">
+              <thead>
+                <tr>
+                  <th scope="col" className="tb-text">
+                    Antes
+                  </th>
+                  <th scope="col" className="tb-text">
+                    Ahora
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <code>{`<i class="o-icon bx bxl-instagram-alt">`}</code>
+                  </td>
+                  <td>
+                    <code>{`<i class="o-icon bxl bx-instagram-alt">`}</code>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <li>
+            Se crea la <a href="http://">seccion de Íconos</a>, con su documentación de uso.
           </li>
         </ul>
       ),
     },
     {
+      title: 'Versión 1.8.4',
+      content: (
+        <ul className="docs-list">
+          <p>La Versión 1.8.4 contiene lo siguiente: </p>
+          <li>Se modifica el borde en componente Alertas.</li>
+          <li>
+            Se agrega una nueva variante &quot;Alerta sistemas&quot; en el componente Alertas. En{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-3">
+              Cambios en componentes
+            </a>{' '}
+            está la documentación de las nuevas clases.
+          </li>
+          <li>En el componente Carrusel, el contenido se alinea con el container, solo en resoluciones desktop.</li>
+          <li>Se agrega la variante de fondo blanco para el carrusel de destacados.</li>
+          <li>
+            Se agregan clases en los elementos <code>{'<img>'}</code> y <code>{'<video>'}</code> para ajustar el
+            alineamento de la multimedia en el componente Cabecera de Página. En{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-8 ">
+              Cambios en componentes
+            </a>{' '}
+            está la documentación de las nuevas clases.
+          </li>
+          <li>Se agrega la variante de fondo oscuro al componente destacado horizontal.</li>
+          <li>Se hacen correcciones de los code-view en los componentes.</li>
+        </ul>
+      ),
+    },
+    {
+      title: 'Versión 1.8.3',
+      content: (
+        <ul className="docs-list">
+          <p>La versión 1.8.3 contiene lo siguiente: </p>
+          <li>
+            Se corrige la visualización de Carrusel de Tarjetas, al ser menos de 3 por slide. Siendo 3 el máximo
+            permitido.
+          </li>
+          <li>Se corrige fix de Carrusel de Destacados en Desktop.</li>
+        </ul>
+      ),
+    },
+    {
+      title: 'Versión 1.8.2',
+      content: (
+        <ul className="docs-list">
+          <p>La versión 1.8.2 contiene lo siguiente: </p>
+          <li>
+            Se agrega la clase <code>.card-items</code> al componente carrusel para asegurar la correcta visualización
+            de la altura de las tarjetas.
+          </li>
+          <li>
+            Se corrigieron los <code>code views</code> de los componentes y los redireccionamientos de las URLs dentro
+            del sitio web.
+          </li>
+        </ul>
+      ),
+    },
+    {
+      title: 'Versión 1.8.1',
+      content: (
+        <ul className="docs-list">
+          <p>La versión 1.8.1 contiene lo siguiente: </p>
+          <li>
+            Se modifica la variante{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/components/highlighted#section-dev-2">Destado Conjunto</a>, del
+            componente Destacado. En{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-14">
+              Cambios en componentes
+            </a>
+            , se encuentran las modificaciones.
+          </li>
+          <li>
+            Se realizaron correcciones en el componente Cabecera de Página, también documentadas en{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-8">
+              Cambios en componentes
+            </a>
+            .
+          </li>
+        </ul>
+      ),
+    },
+    {
+      title: 'Versión 1.8.0',
+      content: (
+        <ul className="docs-list">
+          <p>La Versión 1.8.0 contiene lo siguiente: </p>
+          <li>Se modifica el nombre del componente &quot;Tarjeta de Agenda&quot; a &quot;Tarjeta de Eventos&quot;</li>
+          <li>
+            Se crea la clase <code>.card-eventos</code> para espaciados y tamaño. En{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-31">
+              Cambios en componentes
+            </a>{' '}
+            se disponibiliza la documentación del componente.
+          </li>
+          <li>
+            Se crea el componente <a href="https://gcba.github.io/Obelisco-V2/components/carousel">Carrusel.</a>
+          </li>
+          <li>
+            El componente cuenta con las variantes para <strong>Destacados</strong> y <strong>Tarjetas</strong> en su
+            versión <i>desktop</i> y <i>mobile</i> para fondos <i>claros</i> y <i>oscuros</i>.
+          </li>
+        </ul>
+      ),
+    },
+    {
+      title: 'Versión 1.7.1',
+      content: (
+        <ul className="docs-list">
+          <p>La versión 1.7.1 contiene lo siguiente: </p>
+          <li>Se corrigen alineaciones y márgenes del componente Cabecera de Página</li>
+          <li>
+            <strong>
+              Se define un punto de corte (breakpoint) en la etiqueta <code>body</code>.{' '}
+            </strong>
+            Para dispositivos con resoluciones superiores a 1920px, el contenido tiene un ancho máximo de 1900px.
+          </li>
+        </ul>
+      ),
+    },
+    {
+      title: 'Versión 1.7.0',
+      content: (
+        <ul className="docs-list">
+          <p>La versión 1.7.0 contiene lo siguiente: </p>
+          <li>
+            Se crea el componente <a href="https://gcba.github.io/Obelisco-V2/components/hero">Cabecera de página.</a>
+          </li>
+          <li>
+            <strong>Contenido principal:</strong> Se crean las clases <code>.bg-content-hero-{'{color}'} </code>
+            para definir el color de fondo del contenido principal del Hero. <br />
+            Colores disponibles:
+            <ul>
+              <li className="mb-0">
+                <code>sky</code>
+              </li>
+              <li className="mb-0">
+                <code>blue</code>
+              </li>
+              <li className="mb-0">
+                <code>cyan</code>
+              </li>
+              <li className="mb-0">
+                <code>yellow</code>
+              </li>
+              <li className="mb-0">
+                <code>red</code>
+              </li>
+              <li className="mb-0">
+                <code>purple</code>
+              </li>
+              <li className="mb-0">
+                <code>light</code>
+              </li>
+              <li className="mb-0">
+                <code>dark</code>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>Aside:</strong> Se crean las clases <code>.bg-aside-hero-{'{color}'}</code>, que deben utilizarse
+            junto con <code>.aside</code> para definir el color del fondo lateral. <br />
+            Colores disponibles:
+            <ul>
+              <li>
+                <code>dark</code>
+              </li>
+              <li>
+                <code>light</code>
+              </li>
+            </ul>
+            <p>Además el aside puede estar acompañado de multimedia, incluyendo imágenes o videos.</p>
+          </li>
+
+          <li>
+            <strong>Decoraciones visuales:</strong> Se incorporan las clases <code>.corner</code> (borde esquinado) y{' '}
+            <code>.wave</code> (efecto de onda).
+          </li>
+
+          <li>
+            <strong>Accionables:</strong> Los ejemplos que tenemos disponibles pueden ser de tipo:
+            <ul>
+              <li>
+                <strong> Botón: </strong>Donde se incorpora la clase <code>.btn-hero</code>, que permite generar un
+                botón expandible a partir de 360px de ancho.
+              </li>
+              <li>
+                <strong>Buscador: </strong>Donde se integran las clases <code>.search-wrapper</code>,{' '}
+                <code>.search-results</code>, <code>.search-btn-container</code> y{' '}
+                <code>#search-home.form-control</code>.
+              </li>
+              <li>
+                Para <strong>Etiquetas</strong> y <strong>Desplegables</strong> se colocan las clases necesarias para la
+                disposición visual y espaciados como <code>d-flex</code>, <code>d-grid</code>, <code>column-gap-2</code>{' '}
+                o <code>row-gap-4</code>
+              </li>
+            </ul>
+            {/* <p className='mb-0'>
+              <strong> Botón: </strong>Donde se incorpora la clase <code>.btn-hero</code>, que permite generar un botón expandible a
+              partir de 360px de ancho.
+            </p>
+            <p>
+              <strong>Buscador: </strong>Donde se integran las clases <code>.search-wrapper</code>,{' '}
+              <code>.search-results</code>, <code>.search-btn-container</code> y <code>#search-home.form-control</code>.
+            </p>
+            <p>
+              Para <strong>Etiquetas</strong> y <strong>Desplegables</strong> se colocan las clases necesarias para la disposición 
+              visual y espaciados como <code>d-flex</code>, <code>d-grid</code>, <code>column-gap-2</code> o <code>row-gap-4</code>
+            </p> */}
+          </li>
+        </ul>
+      ),
+    },
+    {
+      title: 'Versión 1.6.2',
+      content: (
+        <ul className="docs-list">
+          <p>La versión 1.6.2 contiene lo siguiente: </p>
+          <li>
+            Se modifica la propiedad color del componente Migas de pan para fondos claros al <code>#101e37</code>
+          </li>
+          <li>
+            Se agrega la variante <code>dark</code> de Migas de pan para fondos oscuros
+          </li>
+          <li>Se modifica el color de la línea divisoria del componente header</li>
+        </ul>
+      ),
+    },
+    {
       title: 'Versión 1.6.1',
-      firstTitle: true,
       content: (
         <ul className="docs-list">
           <p>La versión 1.6.1 contiene lo siguiente: </p>
@@ -49,7 +321,7 @@ const ReleasesComponents: React.FC = () => {
           <li>Nueva variante de componente Tarjetas con miscelánea.</li>
           <li>
             En{' '}
-            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-30">
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-31">
               Cambios de componentes
             </a>{' '}
             se encuentran las clases para las Tarjetas con miscelánea.
@@ -59,13 +331,12 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.6.0',
-      firstTitle: true,
       content: (
         <ul className="docs-list">
           <p>La versión 1.6.0 contiene lo siguiente: </p>
           <li>
             Se disponibiliza componente Galeria, se incluye documentación en{' '}
-            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-16">
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-18">
               Cambios en componentes
             </a>
             .
@@ -79,7 +350,6 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.5.6',
-      firstTitle: true,
       content: (
         <ul className="docs-list">
           <p>La versión 1.5.6 contiene lo siguiente: </p>

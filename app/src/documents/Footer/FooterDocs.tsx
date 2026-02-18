@@ -51,40 +51,42 @@ const FooterDocs: React.FC = () => {
                   <ul className="list-inline">
                     <li className="list-inline-item redes-items">
                       <a href="https://www.facebook.com/GCBA">
-                        <i className="o-icon bx bxl-facebook-circle"></i>
+                        <i className="o-icon bxl bx-facebook-circle"></i>
                         Facebook
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://www.instagram.com/gcba/">
-                        <i className="o-icon bx bxl-instagram-alt"></i>
+                        <i className="o-icon bxl bx-instagram-alt"></i>
                         Instagram
                       </a>
                     </li>
-                    <li className="list-inline-item redes-items social-x">
-                      <a href="https://x.com/gcba">X</a>
+                    <li className="list-inline-item redes-items">
+                      <a href="https://x.com/gcba">
+                        <i className="o-icon bxl bx-twitter-x"></i>X
+                      </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://www.youtube.com/user/GCBA">
-                        <i className="o-icon bx bxl-youtube"></i>
+                        <i className="o-icon bxl bx-youtube"></i>
                         YouTube
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires">
-                        <i className="o-icon bx bxl-linkedin-square"></i>
+                        <i className="o-icon bxl bx-linkedin-square"></i>
                         LinkedIn
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://www.tiktok.com/@buenosaires">
-                        <i className="o-icon bx bxl-tiktok"></i>
+                        <i className="o-icon bxl bx-tiktok"></i>
                         TikTok
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://www.pinterest.es/buenosaires/">
-                        <i className="o-icon bx bxl-pinterest"></i>
+                        <i className="o-icon bxl bx-pinterest"></i>
                         Pinterest
                       </a>
                     </li>
@@ -261,40 +263,42 @@ const FooterDocs: React.FC = () => {
                   <ul className="list-inline">
                     <li className="list-inline-item redes-items">
                       <a href="https://www.facebook.com/GCBA">
-                        <i className="o-icon bx bxl-facebook-circle"></i>
+                        <i className="o-icon bxl bx-facebook-circle"></i>
                         Facebook
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://www.instagram.com/gcba/">
-                        <i className="o-icon bx bxl-instagram-alt"></i>
+                        <i className="o-icon bxl bx-instagram-alt"></i>
                         Instagram
                       </a>
                     </li>
-                    <li className="list-inline-item redes-items social-x">
-                      <a href="https://x.com/gcba">X</a>
+                    <li className="list-inline-item redes-items">
+                      <a href="https://x.com/gcba">
+                        <i className="o-icon bxl bx-twitter-x"></i>X
+                      </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://www.youtube.com/user/GCBA">
-                        <i className="o-icon bx bxl-youtube"></i>
+                        <i className="o-icon bxl bx-youtube"></i>
                         YouTube
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires">
-                        <i className="o-icon bx bxl-linkedin-square"></i>
+                        <i className="o-icon bxl bx-linkedin-square"></i>
                         LinkedIn
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://www.tiktok.com/@buenosaires">
-                        <i className="o-icon bx bxl-tiktok"></i>
+                        <i className="o-icon bxl bx-tiktok"></i>
                         TikTok
                       </a>
                     </li>
                     <li className="list-inline-item redes-items">
                       <a href="https://www.pinterest.es/buenosaires/">
-                        <i className="o-icon bx bxl-pinterest"></i>
+                        <i className="o-icon bxl bx-pinterest"></i>
                         Pinterest
                       </a>
                     </li>
@@ -680,7 +684,7 @@ const FooterDocs: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Success Criterion 1.4.10 Reflow (Level AA)
+            Success Criterion 1.4.10 Reflow (Level AA)
           </a>
           <p>
             El contenido puede presentarse sin pérdida de información o funcionalidad y sin necesidad de desplazarse en
@@ -695,7 +699,7 @@ const FooterDocs: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Success Criterion 1.4.4 Resize Text (Level AA)
+            Success Criterion 1.4.4 Resize Text (Level AA)
           </a>
           <p>
             Excepto por los subtítulos e imágenes de texto, el texto puede redimensionarse hasta un 200 % sin tecnología

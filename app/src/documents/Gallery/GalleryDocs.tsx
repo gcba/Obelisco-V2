@@ -48,7 +48,7 @@ const generateCode = (numImages: number): string => {
     imagesCode += `
     <a
       href="gallery/${i}.jpg"
-      className="gallery-grid-item"
+      class="gallery-grid-item"
       data-bs-toggle="modal"
       data-bs-target="#modalGallery"
     >
@@ -59,7 +59,7 @@ const generateCode = (numImages: number): string => {
     </a>
     `;
   }
-  return `<div className="gallery-grid gallery-max-${Math.min(numImages, 7)}">
+  return `<div class="gallery-grid gallery-max-${Math.min(numImages, 7)}">
     ${imagesCode}
   </div>`;
 };

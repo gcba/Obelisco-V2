@@ -9,6 +9,7 @@ export const stylesPages = [
   { text: 'Colores', url: '/components/colors', id: 1 },
   { text: 'Grilla', url: '/components/grid', id: 2 },
   { text: 'Tipografía', url: '/components/typography', id: 3 },
+  { text: 'Íconos', url: '/components/icons', id: 4 },
 ];
 export const formsPages = [
   { text: 'Botón de radio', url: '/components/form-radio', id: 6 },
@@ -23,6 +24,7 @@ export const organismsPages = [
   { text: 'Accesos (organismo)', url: '/components/access-organism', id: 1 },
   { text: 'Calendario', url: '/components/calendar', id: 2 },
   { text: 'Encabezado (header)', url: '/components/header', id: 3 },
+  { text: 'Cabecera de Página', url: '/components/hero', id: 3 },
   { text: 'Pasos de un formulario', url: '/components/steps-form', id: 4 },
   { text: 'Pie de página (footer)', url: '/components/footer', id: 5 },
   { text: 'Tablas', url: '/components/table', id: 6 },
@@ -35,28 +37,29 @@ export const componentsPages = [
   { text: 'Barra de progreso', url: '/components/progress-bar', id: 5 },
   { text: 'Bloque de trámite', url: '/components/block', id: 6 },
   { text: 'Botones', url: '/components/button', id: 7 },
-  { text: 'Colapsables', url: '/components/collapse', id: 8 },
-  { text: 'Desplegable de navegación', url: '/components/dropdown-nav', id: 9 },
-  { text: 'Desplegable de selección', url: '/components/dropdown-sel', id: 10 },
-  { text: 'Destacado', url: '/components/highlighted', id: 11 },
-  { text: 'Enlace', url: '/components/link', id: 12 },
-  { text: 'Etiquetas', url: '/components/badge', id: 13 },
-  { text: 'Galería', url: '/components/gallery', id: 14 },
-  { text: 'Lista de enlaces', url: '/components/list-link', id: 15 },
-  { text: 'Lista de pasos', url: '/components/list-step', id: 16 },
-  { text: 'Lista informativa', url: '/components/list-informative', id: 17 },
-  { text: 'Mapa', url: '/components/map', id: 18 },
-  { text: 'Mensaje de estado', url: '/components/status-message', id: 19 },
-  { text: 'Migas de pan', url: '/components/breadcrumb', id: 20 },
-  { text: 'Modal', url: '/components/modal', id: 21 },
-  { text: 'Navegación horizontal', url: '/components/nav-horizontal', id: 22 },
-  { text: 'Navegación vertical', url: '/components/nav-vertical', id: 23 },
-  { text: 'Paginado', url: '/components/pagination', id: 24 },
-  { text: 'Pestañas', url: '/components/tabs', id: 25 },
-  { text: 'Spinner', url: '/components/spinner', id: 26 },
-  { text: 'Switch', url: '/components/switch', id: 27 },
-  { text: 'Tarjetas', url: '/components/cards', id: 28 },
-  { text: 'Tooltip', url: '/components/tooltip', id: 29 },
+  { text: 'Carrusel', url: '/components/carousel', id: 8 },
+  { text: 'Colapsables', url: '/components/collapse', id: 9 },
+  { text: 'Desplegable de navegación', url: '/components/dropdown-nav', id: 10 },
+  { text: 'Desplegable de selección', url: '/components/dropdown-sel', id: 11 },
+  { text: 'Destacado', url: '/components/highlighted', id: 12 },
+  { text: 'Enlace', url: '/components/link', id: 13 },
+  { text: 'Etiquetas', url: '/components/badge', id: 14 },
+  { text: 'Galería', url: '/components/gallery', id: 15 },
+  { text: 'Lista de enlaces', url: '/components/list-link', id: 16 },
+  { text: 'Lista de pasos', url: '/components/list-step', id: 17 },
+  { text: 'Lista informativa', url: '/components/list-informative', id: 18 },
+  { text: 'Mapa', url: '/components/map', id: 19 },
+  { text: 'Mensaje de estado', url: '/components/status-message', id: 20 },
+  { text: 'Migas de pan', url: '/components/breadcrumb', id: 21 },
+  { text: 'Modal', url: '/components/modal', id: 22 },
+  { text: 'Navegación horizontal', url: '/components/nav-horizontal', id: 23 },
+  { text: 'Navegación vertical', url: '/components/nav-vertical', id: 24 },
+  { text: 'Paginado', url: '/components/pagination', id: 25 },
+  { text: 'Pestañas', url: '/components/tabs', id: 26 },
+  { text: 'Spinner', url: '/components/spinner', id: 27 },
+  { text: 'Switch', url: '/components/switch', id: 28 },
+  { text: 'Tarjetas', url: '/components/cards', id: 29 },
+  { text: 'Tooltip', url: '/components/tooltip', id: 30 },
 ];
 
 export const gettingPages = [
@@ -81,7 +84,15 @@ export const contenidos = [
   { text: 'Escribir para la accesibilidad', url: '/content/escribir-para-la-accesibilidad', id: 5 },
 ];
 
-export const templates = [{ text: 'Plantillas', url: 'https://gcba.github.io/obelisco-demo/index.html', id: 1 }];
+export const templatesPages = [
+  { text: 'Páginas de áreas ', url: '/templates/paginas-de-areas', id: 1 },
+  { text: 'Página de trámites', url: '/templates/pagina-tramites', id: 4 },
+  { text: 'Página simple', url: '/templates/pagina-simple', id: 5 },
+  { text: 'Página de libro', url: '/templates/pagina-de-libro', id: 6 },
+  { text: 'Noticias', url: '/templates/pagina-de-noticias', id: 7 },
+  { text: 'Formularios', url: '/templates/formularios', id: 8 },
+  { text: 'Perfil institucional', url: '/templates/perfil-institucional', id: 8 },
+];
 
 export const patterns = [{ text: 'Construir un formulario', url: '/patterns', id: 1 }];
 
@@ -153,9 +164,18 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           {pathname.includes('/content') && (
             <div className="nav-left sticky-nav h-auto">
               <div className="nav-left-box-title">
-                <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Documentación</p>
+                <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Contenidos</p>
               </div>
               <NavLayout items={contenidos} />
+            </div>
+          )}
+
+          {pathname.includes('/templates') && (
+            <div className="nav-left sticky-nav h-auto">
+              <div className="nav-left-box-title">
+                <p className="text-xs fw-semibold text-uppercase text-body-secondary mb-3">Plantillas</p>
+              </div>
+              <NavLayout items={templatesPages} />
             </div>
           )}
         </div>

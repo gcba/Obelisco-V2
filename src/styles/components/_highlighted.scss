@@ -1,4 +1,5 @@
 // Custom variables and mixins
+// MIXIN GENERAL
 @mixin panel-content($flex-direction, $media-query) {
   display: flex;
   flex-direction: #{$flex-direction};
@@ -11,12 +12,10 @@
   .panel-img,
   video {
     width: 100%;
-    max-width: 538px;
-    height: 304px;
-    border-radius: $border-radius-lg;
     object-fit: cover;
     object-position: center;
     aspect-ratio: 16/9;
+    border-radius: 0.5rem;
   }
 
   .panel-body {
@@ -25,19 +24,14 @@
     max-width: 728px;
 
     .panel-title {
-      @extend .h4;
-      margin: 0;
-    }
-
-    .panel-text {
-      margin: 0.5rem 0 0;
+      margin-bottom: 8px;
     }
 
     .panel-footer {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
-      margin-top: 2rem;
+      margin-top: 24px;
 
       .list-group-item {
         width: 100%;
@@ -57,13 +51,14 @@
     }
   }
 
+  // Responsive
   @include media-breakpoint-down(#{$media-query}) {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 1.25rem; //20px
     padding: 1.5rem 0.75rem;
     margin: 0 auto;
+    height: auto;
 
     .panel-img,
     video {
@@ -76,15 +71,18 @@
 
       .panel-footer {
         flex-direction: row;
-        margin-top: 1.25rem; //20px
+        margin-top: 1.25rem;
+
         .download-link {
           width: fit-content;
         }
       }
     }
   }
+
   @include media-breakpoint-down(md) {
     padding: 1.5rem 1rem;
+    max-width: 540px;
 
     .panel-img,
     video {
@@ -93,13 +91,76 @@
   }
 }
 
-// Custom styles
-//Estilos para Destacado Banner (antes Panel Grande Horizontal)
+// ESTILOS PARA PANEL VERTICAL
+.panel-vertical {
+  @include panel-content(column, xl);
+  gap: 0;
+  border-radius: 24px;
+  height: 100%;
+  max-width: 538px;
+
+  .panel-img,
+  video {
+    height: 304px;
+    border-radius: 24px 24px 0 0;
+  }
+
+  .panel-body,
+  .panel-body-dark {
+    padding: 2rem;
+    width: 100%;
+    min-height: 282px;
+    flex: 1;
+    border-radius: 0 0 24px 24px;
+    display: flex;
+    flex-direction: column;
+    background-color: $slate-50;
+
+    &.panel-body-dark {
+      background-color: $sky-900;
+      color: $white;
+    }
+
+    &.panel-sin-multimedia-v {
+      border-radius: 24px;
+    }
+
+    .panel-text {
+      margin-bottom: 24px;
+    }
+
+    .panel-footer {
+      margin-top: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .panel-title {
+      @extend .h5;
+    }
+  }
+
+  @include media-breakpoint-down(xl) {
+    height: auto !important;
+
+    .panel-body,
+    .panel-body-dark {
+      height: auto;
+      min-height: unset;
+      padding: 2rem;
+    }
+  }
+}
+
+// ESTILOS PARA PANEL HORIZONTAL
 .panel-horizontal-content {
   width: 100%;
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: $white;
+  border-radius: 0.5rem !important;
+
   @include media-breakpoint-down(xl) {
     padding-top: 0;
     padding-bottom: 0;
@@ -109,27 +170,60 @@
     @extend .container;
     align-items: center;
     @include panel-content(row, xl);
-  }
-}
 
-//Estilos para Destacado Conjunto (antes Panel Grande Vertical)
-.panel-vertical {
-  @include panel-content(column, xl);
-  gap: 1.25rem; //20px
-  .panel-body {
-    .panel-footer {
-      margin-top: 1.25rem; //20px
+    .panel-body {
+      h2.panel-title {
+        @extend .h5;
+      }
+    }
+
+    .panel-img {
+      border-radius: 1.5rem; // Destacado banner
+    }
+  }
+
+  // Imagen y video
+  .panel-img,
+  video {
+    width: 100%;
+    max-width: 538px;
+    height: 304px;
+    border-radius: $border-radius-lg;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 16/9;
+  }
+
+  // Variante oscura
+  &.bg-dark {
+    background-color: $sky-900;
+    color: #fff;
+
+    .panel-horizontal {
+      .panel-body {
+        h5.panel-title,
+        .panel-text {
+          color: #fff;
+        }
+      }
     }
   }
 }
 
-//Destacado Lateral
+// ESTILOS PARA PANEL LATERAL
 .panel-lateral {
   @include panel-content(column, xl);
   padding: 2rem 1.5rem;
   background-color: $slate-50;
   border-radius: 0.5rem;
+
   @include media-breakpoint-down(xl) {
     padding: 1.5rem 1rem;
+  }
+
+  .panel-body {
+    h2.panel-title {
+      @extend .h5;
+    }
   }
 }

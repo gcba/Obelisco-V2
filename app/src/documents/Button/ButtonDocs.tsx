@@ -208,17 +208,23 @@ const ButtonDocs: React.FC = () => {
             <div className="d-flex gap-4 flex-wrap justify-content-center align-items-center px-2">
               {/* Icono y Texto */}
               <button type="button" className="btn btn-primary btn-sm">
-                <i className="bx bx-plus o-icon"></i>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  add_2
+                </span>
                 Botón
               </button>
 
               <button type="button" className="btn btn-primary">
-                <i className="bx bx-plus o-icon"></i>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  add_2
+                </span>
                 Botón
               </button>
 
               <button type="button" className="btn btn-primary btn-lg">
-                <i className="bx bx-plus o-icon"></i>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  add_2
+                </span>
                 Botón
               </button>
               {/* Fin Icono y Texto */}
@@ -376,7 +382,9 @@ const ButtonDocs: React.FC = () => {
                 </span>
               </button>
               <button type="button" className="btn btn-xs" aria-label="Eliminar">
-                <i className="bx bxs-trash-alt o-icon"></i>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  delete
+                </span>
               </button>
               <button type="button" className="btn btn-xs" aria-label="Visualizar">
                 <span className="material-symbols-rounded o-icon" aria-hidden="true">
@@ -384,7 +392,9 @@ const ButtonDocs: React.FC = () => {
                 </span>
               </button>
               <button type="button" className="btn btn-xs" aria-label="Descargar">
-                <i className="bx bxs-download o-icon"></i>
+                <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                  download_2
+                </span>
               </button>
             </div>
           </CodeBox>
@@ -1316,7 +1326,7 @@ const ButtonDocs: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Success Criterion 1.1.1 Non-text Content (Level A)
+            Success Criterion 1.1.1 Non-text Content (Level A)
           </a>
           <p>
             Todo el contenido no textual que se presenta al usuario tiene una alternativa de texto que sirve para el

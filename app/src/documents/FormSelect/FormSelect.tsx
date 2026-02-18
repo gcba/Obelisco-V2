@@ -312,7 +312,7 @@ export default function FormSelect() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Success Criterion 4.1.2 Name, Role, Value (Level A)
+            Success Criterion 4.1.2 Name, Role, Value (Level A)
           </a>
           <p className="mt-2">
             Para todos los componentes de la interfaz de usuario (incluidos, entre otros: elementos de formulario,

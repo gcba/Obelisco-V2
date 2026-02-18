@@ -92,33 +92,31 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
               )}
             </div>
           </article>
-          <div className="nav-scrollspy d-none d-xl-block flex-grow-1">
-            <div className="nav-scrollspy-position">
-              <p className="text-sm fw-bold text-body-secondary mb-3">
-                {type == 'dev' ? 'Variantes' : 'Contenido en esta página'}
-              </p>
-              <ul className="scrollspy" data-cy="nav-wrapper">
-                {sections.map((section, index) => (
-                  <li key={`${section.id}-${index}`} className={activeIndex === index ? 'active' : ''}>
-                    <a href={`#${section.id || `section-${type}-${index + 1}`}`} className="text-sm">
-                      {section.title && section.title}
-                      {section.subtitle && <ScrollspySubtitle text={section.subtitle} ScrollspyComponent={true} />}
-                      {section.tertiarytitle && (
-                        <ScrollspySubtitle
-                          text={section.tertiarytitle}
-                          ScrollspyComponent={true}
-                          tertiaryLevel={true} // Solo indentación, no cambio de tamaño
-                        />
-                      )}
-                      {section.subtitleBold && (
-                        <ScrollspySubtitle text={section.subtitleBold} ScrollspyComponent={true} />
-                      )}
-                    </a>
-                  </li>
-                ))}
-              </ul>
+
+          {type === 'none' ? (
+            <div className="nav-scrollspy-none"></div>
+          ) : (
+            <div className="nav-scrollspy d-none d-xl-block flex-grow-1">
+              <div className="nav-scrollspy-position">
+                <p className="text-sm fw-bold text-body-secondary mb-3">
+                  {type == 'dev' ? 'Variantes' : 'Contenido en esta página'}
+                </p>
+                <ul className="scrollspy" data-cy="nav-wrapper">
+                  {sections.map((section, index) => (
+                    <li key={`${section.id}-${index}`} className={activeIndex === index ? 'active' : ''}>
+                      <a href={`#${section.id || `section-${type}-${index + 1}`}`} className="text-sm">
+                        {section.title && section.title}
+                        {section.subtitle && <ScrollspySubtitle text={section.subtitle} ScrollspyComponent={true} />}
+                        {section.subtitleBold && (
+                          <ScrollspySubtitle text={section.subtitleBold} ScrollspyComponent={true} />
+                        )}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
-          </div>
+          )}
         </div>
       )}
     </Scrollspy>

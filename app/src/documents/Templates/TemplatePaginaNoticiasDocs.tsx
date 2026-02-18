@@ -116,7 +116,7 @@ const TemplatePaginaNoticiasDocs: React.FC = () => {
             Este módulo tiene como objetivo concentrar el contenido principal de la noticia. Permite organizar la
             información y sumar recursos complementarios. Está compuesto por los siguientes elementos:{' '}
           </p>
-          <h6>Elementos de párrafo</h6>
+          <h6 className="fw-700">Elementos de párrafo</h6>
           <p className="text-md">
             Opciones disponibles para redactar, estructurar y dar forma al contenido textual de la noticia:
           </p>
@@ -287,8 +287,9 @@ const TemplatePaginaNoticiasDocs: React.FC = () => {
           <div className="d-flex gap-2" style={{ marginBottom: '12px' }}>
             <span className="material-symbols-rounded text-success">check</span>
             <p className="mb-0">
-              En caso de incluir un enlace, que sea un llamado a la acción claro y breve, por ejemplo: &quot;Ir al
-              formulario&quot;, &quot;Conocé más&quot;, &quot;Accedé al trámite&quot;.
+              En caso de incluir un enlace, que sea un llamado a la acción claro y breve, por ejemplo: &quot;
+              <strong>Ir al formulario</strong>&quot;, &quot;<strong>Conocé más</strong>&quot;, &quot;
+              <strong>Accedé al trámite</strong>&quot;.
             </p>
           </div>
           <p className="text-xl" style={{ marginBottom: '12px' }}>
@@ -313,7 +314,7 @@ const TemplatePaginaNoticiasDocs: React.FC = () => {
       title: 'Apartado',
       content: (
         <>
-          <p className="text-md mb-0">
+          <p className="text-md mb-0" style={{ marginBottom: '32px' }}>
             Se ubica en la columna derecha de la página y permite incorporar información complementaria a la noticia.
           </p>
           <h6>Documentación adjunta</h6>
@@ -344,25 +345,6 @@ const TemplatePaginaNoticiasDocs: React.FC = () => {
             className="img-fluid"
             style={{ marginTop: '32px', marginBottom: '32px' }}
           />
-          <p className="text-xl" style={{ marginBottom: '12px' }}>
-            Buenas prácticas
-          </p>{' '}
-          <div className="d-flex gap-2" style={{ marginBottom: '12px' }}>
-            <span className="material-symbols-rounded text-success">check</span>
-            <p className="mb-0">
-              El botón debe redirigir a la subsección correspondiente del organigrama que se encuentra esa área; si no
-              existe una subsección específica, deberá dirigir a la página de inicio del organigrama.
-            </p>
-          </div>
-          <p className="text-xl" style={{ marginBottom: '12px', marginTop: '32px' }}>
-            Malas prácticas
-          </p>{' '}
-          <div className="d-flex gap-2" style={{ marginBottom: '12px' }}>
-            <span className="material-symbols-rounded text-danger">close</span>
-            <p className="mb-0">
-              Redireccionar a la página de inicio del organigrama si existe una subsección específica.
-            </p>
-          </div>
           <h6>Mapa de ubicación</h6>
           <p className="text-md">Permite indicar una ubicación física relevante asociada a la noticia. </p>
           <Image

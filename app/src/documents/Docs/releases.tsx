@@ -34,7 +34,10 @@ const ReleasesComponents: React.FC = () => {
             </a>{' '}
             está la documentación de las nuevas clases.
           </li>
-          <li>Se agrega la variante encabezado Noticias en <a href="https://gcba.github.io/Obelisco-V2/components/hero">Cabecera de pagina</a></li>
+          <li>
+            Se agrega la variante encabezado Noticias en{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/components/hero">Cabecera de pagina</a>
+          </li>
           <li>Se corrige fix de modal en mobile.</li>
           <li>Se corrige fix en la visualización del componente galería.</li>
         </ul>

@@ -12,7 +12,7 @@ import { TEMPLATE_PAG_NOTICIAS } from './code-views';
 const basePath = '/Obelisco-V2';
 
 const TemplatePaginaNoticiasDocs: React.FC = () => {
-  const [activeTab, setActiveTab] = useState('panel-content-html');
+  const [activeTab, setActiveTab] = useState('panel-content-docs');
 
   const DOC_SECTIONS = [
     {

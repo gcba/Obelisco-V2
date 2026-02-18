@@ -19,28 +19,47 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
-      title: 'Versión 1.8.5',
-      firstTitle: true,
+      title: 'Versión 1.9.0',
       content: (
         <ul className="docs-list">
-          <p>La Versión 1.8.5 contiene lo siguiente: </p>
+          <p>La Versión 1.9.0 contiene lo siguiente: </p>
           <li>
-            Se corrige la visualización de los elementos <code>{'<iframe>'}</code> para la versión multimedia de
-            Cabecera de página
+            Se incorpora la<strong> nueva versión de boxicons 3.0.8</strong>, eso trae los siguientes cambios:
           </li>
+
+          <div className="responsive-scroll mb-3" tabIndex={0}>
+            <table className="table">
+              <thead>
+                <tr>
+                  <th scope="col" className="tb-text">
+                    Antes
+                  </th>
+                  <th scope="col" className="tb-text">
+                    Ahora
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <code>{`<i class="o-icon bx bxl-instagram-alt">`}</code>
+                  </td>
+                  <td>
+                    <code>{`<i class="o-icon bxl bx-instagram-alt">`}</code>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
           <li>
-            Se agregan clases para la alineación de la multimedia en Cabecera de página. En{' '}
-            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-8">
-              Cambios en componentes
-            </a>{' '}
-            está la documentación de las nuevas clases.
+            Se crea la <a href="http://">seccion de Íconos</a>, con su documentación de uso.
           </li>
         </ul>
       ),
     },
     {
       title: 'Versión 1.8.4',
-      firstTitle: true,
       content: (
         <ul className="docs-list">
           <p>La Versión 1.8.4 contiene lo siguiente: </p>
@@ -69,7 +88,6 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.8.3',
-      firstTitle: true,
       content: (
         <ul className="docs-list">
           <p>La versión 1.8.3 contiene lo siguiente: </p>
@@ -83,7 +101,6 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.8.2',
-      firstTitle: true,
       content: (
         <ul className="docs-list">
           <p>La versión 1.8.2 contiene lo siguiente: </p>
@@ -100,7 +117,6 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.8.1',
-      firstTitle: true,
       content: (
         <ul className="docs-list">
           <p>La versión 1.8.1 contiene lo siguiente: </p>
@@ -125,7 +141,6 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.8.0',
-      firstTitle: true,
       content: (
         <ul className="docs-list">
           <p>La Versión 1.8.0 contiene lo siguiente: </p>
@@ -149,7 +164,6 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.7.1',
-      firstTitle: true,
       content: (
         <ul className="docs-list">
           <p>La versión 1.7.1 contiene lo siguiente: </p>
@@ -165,7 +179,6 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.7.0',
-      firstTitle: true,
       content: (
         <ul className="docs-list">
           <p>La versión 1.7.0 contiene lo siguiente: </p>
@@ -260,7 +273,6 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.6.2',
-      firstTitle: true,
       content: (
         <ul className="docs-list">
           <p>La versión 1.6.2 contiene lo siguiente: </p>
@@ -276,7 +288,6 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.6.1',
-      firstTitle: true,
       content: (
         <ul className="docs-list">
           <p>La versión 1.6.1 contiene lo siguiente: </p>
@@ -295,7 +306,6 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.6.0',
-      firstTitle: true,
       content: (
         <ul className="docs-list">
           <p>La versión 1.6.0 contiene lo siguiente: </p>
@@ -315,7 +325,6 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.5.6',
-      firstTitle: true,
       content: (
         <ul className="docs-list">
           <p>La versión 1.5.6 contiene lo siguiente: </p>

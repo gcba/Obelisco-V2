@@ -423,18 +423,19 @@ const SECTIONS_DEV = [
     ),
   },
   {
-    title: 'Implementación',
+    title: 'Demo',
     content: (
       <>
         <p>
           A continuación, se presenta un ejemplo de código JavaScript para su implementación, teniendo en cuenta los
-          estilos y funcionalidad al seleccionar una opción.
+          estilos y funcionalidad del componente.
         </p>
         <p>
           Es importante tener en cuenta que la funcionalidad deberá integrarse de acuerdo con la tecnología utilizada,
           como por ejemplo React o Angular.
         </p>
-        <h3 className="fw-normal">Desplegable con casillas de opción múltiple</h3>
+        <br />
+        <h3 className="fw-normal h5">Desplegable con casillas de opción múltiple</h3>
         <CodeBox codeHTML={DROPDOWN_CHECKBOX_HTML} codeJS={DROPDOWN_CHECKBOX_JS}>
           <div className="container">
             <div className="dropdown">
@@ -502,7 +503,7 @@ const SECTIONS_DEV = [
         </CodeBox>
         <br />
         <br />
-        <h3 className="fw-normal">Desplegable con casillas de opción única</h3>
+        <h3 className="fw-normal h5">Desplegable con casillas de opción única</h3>
         <CodeBox codeHTML={DROPDOWN_RADIO_HTML} codeJS={DROPDOWN_RADIO_JS}>
           <div className="container">
             <div className="dropdown">
@@ -1131,18 +1132,6 @@ const DropdownSelDocs: React.FC = () => {
         title="Desplegable de selección"
         description={[
           'Los desplegables muestran una lista de opciones permitiendo que una persona usuaria pueda seleccionar una o varias en simultáneo. Una opción seleccionada puede usarse como una acción para filtrar u ordenar el contenido existente.',
-          <>
-            Estamos actualizando todas las fichas de los componentes. Para conocer más sobre los lineamientos de uso del
-            componente podés{' '}
-            <a
-              href="https://gcba.github.io/estandares/componentes/desplegables/desplegables_seleccion/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              visitar la documentación en Obelisco v.1
-            </a>
-            .
-          </>,
         ]}
       />
       <Tabs

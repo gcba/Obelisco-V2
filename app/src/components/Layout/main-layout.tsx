@@ -9,6 +9,7 @@ export const stylesPages = [
   { text: 'Colores', url: '/components/colors', id: 1 },
   { text: 'Grilla', url: '/components/grid', id: 2 },
   { text: 'Tipografía', url: '/components/typography', id: 3 },
+  { text: 'Íconos', url: '/components/icons', id: 4 },
 ];
 export const formsPages = [
   { text: 'Botón de radio', url: '/components/form-radio', id: 6 },
@@ -90,6 +91,7 @@ export const templatesPages = [
   { text: 'Página de libro', url: '/templates/pagina-de-libro', id: 6 },
   { text: 'Noticias', url: '/templates/pagina-de-noticias', id: 7 },
   { text: 'Formularios', url: '/templates/formularios', id: 8 },
+  { text: 'Perfil institucional', url: '/templates/perfil-institucional', id: 8 },
 ];
 
 export const patterns = [{ text: 'Construir un formulario', url: '/patterns', id: 1 }];

@@ -42,7 +42,9 @@ const CardDocs: React.FC = () => {
           <div className="container">
             <div className="card-box-sizing">
               <div className="card card-horizontal">
-                <i className="bx bxs-info-circle card-icon"></i>
+                <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                  info
+                </span>
                 <div className="card-body">
                   <h3 className="card-title">
                     <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
@@ -53,7 +55,9 @@ const CardDocs: React.FC = () => {
               <br />
               <div className="card card-horizontal">
                 <div className="d-flex w-100 card-border-left-blue">
-                  <i className="bx bxs-info-circle card-icon"></i>
+                  <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                    info
+                  </span>
                   <div className="card-body">
                     <h3 className="card-title">
                       <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
@@ -64,7 +68,9 @@ const CardDocs: React.FC = () => {
               </div>
               <br />
               <div className="card card-horizontal unbordered">
-                <i className="bx bxs-info-circle card-icon"></i>
+                <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                  info
+                </span>
                 <div className="card-body">
                   <h3 className="card-title">
                     <LinkClient>Título de la tarjeta</LinkClient>
@@ -210,7 +216,9 @@ const CardDocs: React.FC = () => {
           <div className="container">
             <div className="card-vertical-box-sizing">
               <div className="card">
-                <i className="bx bxs-info-circle card-icon"></i>
+                <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                  info
+                </span>
                 <div className="card-body">
                   <h3 className="card-title">
                     <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
@@ -220,7 +228,9 @@ const CardDocs: React.FC = () => {
               </div>
               <br />
               <div className="card">
-                <i className="bx bxs-info-circle card-icon"></i>
+                <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                  info
+                </span>
                 <div className="card-body card-border-bottom-blue">
                   <h3 className="card-title">
                     <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
@@ -230,7 +240,9 @@ const CardDocs: React.FC = () => {
               </div>
               <br />
               <div className="card unbordered">
-                <i className="bx bxs-info-circle card-icon"></i>
+                <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                  info
+                </span>
                 <div className="card-body">
                   <h3 className="card-title">
                     <LinkClient>Título de la tarjeta</LinkClient>
@@ -628,7 +640,9 @@ const CardDocs: React.FC = () => {
               <div className="card-items-3">
                 <div className="col">
                   <div className="card">
-                    <i className="bx bxs-info-circle card-icon"></i>
+                    <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                      info
+                    </span>
                     <div className="card-body">
                       <h3 className="card-title">
                         <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
@@ -639,7 +653,9 @@ const CardDocs: React.FC = () => {
                 </div>
                 <div className="col">
                   <div className="card">
-                    <i className="bx bxs-info-circle card-icon"></i>
+                    <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                      info
+                    </span>
                     <div className="card-body">
                       <h3 className="card-title">
                         <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
@@ -650,7 +666,9 @@ const CardDocs: React.FC = () => {
                 </div>
                 <div className="col">
                   <div className="card">
-                    <i className="bx bxs-info-circle card-icon"></i>
+                    <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                      info
+                    </span>
                     <div className="card-body">
                       <h3 className="card-title">
                         <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
@@ -661,7 +679,9 @@ const CardDocs: React.FC = () => {
                 </div>
                 <div className="col">
                   <div className="card">
-                    <i className="bx bxs-info-circle card-icon"></i>
+                    <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                      info
+                    </span>
                     <div className="card-body">
                       <h3 className="card-title">
                         <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
@@ -672,7 +692,9 @@ const CardDocs: React.FC = () => {
                 </div>
                 <div className="col">
                   <div className="card">
-                    <i className="bx bxs-info-circle card-icon"></i>
+                    <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                      info
+                    </span>
                     <div className="card-body">
                       <h3 className="card-title">
                         <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
@@ -696,7 +718,9 @@ const CardDocs: React.FC = () => {
               <div className="card-items-2">
                 <div className="col">
                   <div className="card card-horizontal">
-                    <i className="bx bxs-info-circle card-icon"></i>
+                    <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                      info
+                    </span>
                     <div className="card-body">
                       <h3 className="card-title">
                         <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
@@ -707,7 +731,9 @@ const CardDocs: React.FC = () => {
                 </div>
                 <div className="col">
                   <div className="card card-horizontal">
-                    <i className="bx bxs-info-circle card-icon"></i>
+                    <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                      info
+                    </span>
                     <div className="card-body">
                       <h3 className="card-title">
                         <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
@@ -718,7 +744,9 @@ const CardDocs: React.FC = () => {
                 </div>
                 <div className="col">
                   <div className="card card-horizontal">
-                    <i className="bx bxs-info-circle card-icon"></i>
+                    <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                      info
+                    </span>
                     <div className="card-body">
                       <h3 className="card-title">
                         <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
@@ -729,7 +757,9 @@ const CardDocs: React.FC = () => {
                 </div>
                 <div className="col">
                   <div className="card card-horizontal">
-                    <i className="bx bxs-info-circle card-icon"></i>
+                    <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                      info
+                    </span>
                     <div className="card-body">
                       <h3 className="card-title">
                         <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
@@ -740,7 +770,9 @@ const CardDocs: React.FC = () => {
                 </div>
                 <div className="col">
                   <div className="card card-horizontal">
-                    <i className="bx bxs-info-circle card-icon"></i>
+                    <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                      info
+                    </span>
                     <div className="card-body">
                       <h3 className="card-title">
                         <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
@@ -854,7 +886,7 @@ const CardDocs: React.FC = () => {
         <>
           <div className="list-informative">
             <p className="text-xl">Cuándo usar</p>
-            <ul className="list-informative-bullet">
+            <ul className="list-informative-bullet" style={{ marginBottom: '32px' }}>
               <li>
                 Para organizar y agrupar información relacionada, como artículos, noticias o secciones de un sitio web.
               </li>
@@ -889,7 +921,7 @@ const CardDocs: React.FC = () => {
       title: 'Disposición',
       content: (
         <>
-          <p style={{ marginTop: '32px' }}>
+          <p className="mb-4" style={{ marginTop: '32px' }}>
             En Obelisco existen 2 disposiciones posibles: vertical y horizontal. La disposición del componente sirve
             para generar diferentes niveles de jerarquía según el tipo de tarjeta.
           </p>
@@ -909,7 +941,7 @@ const CardDocs: React.FC = () => {
         <>
           <div className="max-items-2">
             <div className="col">
-              <p className="text-xl mt-2">Predeterminada</p>
+              <p className="text-xl mt-2 mb-2">Predeterminada</p>
               <p className="text-md">
                 Se utiliza para mostrar información de mayor peso visual en la página, y lleva una imagen descriptiva
                 del contenido.
@@ -926,9 +958,9 @@ const CardDocs: React.FC = () => {
             </div>
           </div>
 
-          <div className="max-items-2 mt-4 mb-2">
+          <div className="max-items-2" style={{ marginTop: '32px' }}>
             <div className="col">
-              <p className="text-xl">Noticias</p>
+              <p className="text-xl mb-2">Noticias</p>
               <p className="text-md">
                 Se utiliza para modular contenido de noticias en páginas simples y páginas de área.
               </p>
@@ -944,9 +976,9 @@ const CardDocs: React.FC = () => {
             </div>
           </div>
 
-          <div className="max-items-2 mt-4 mb-2">
+          <div className="max-items-2 mt-4" style={{ marginTop: '32px' }}>
             <div className="col">
-              <p className="text-xl">Eventos</p>
+              <p className="text-xl mb-2">Eventos</p>
               <p className="text-md">Se utiliza para mostrar información sobre un evento.</p>
             </div>
             <div className="col">
@@ -966,31 +998,42 @@ const CardDocs: React.FC = () => {
       title: 'Tipos de tarjeta horizontal',
       content: (
         <>
-          <p className="text-xl">Predeterminada</p>
-          <p className="text-md mb-4">
-            Contiene información que no precisa de imágenes descriptivas. Dentro del entorno de Buenos Aires se utiliza,
-            por ejemplo, para agrupar programas o servicios de un área.
-          </p>
-          <Image
-            src={`${basePath}/images/tarjetas/tarjetas_horizontal_predeterminada.svg`}
-            alt="Tarjeta horizontal predeterminada"
-            width="800"
-            height="200"
-            className="img-fluid"
-          />
-          <p className="text-xl mb-4" style={{ marginTop: '32px' }}>
-            Temática
-          </p>
-          <p className="text-md">
-            Se utiliza en la página de inicio de Buenos Aires para redirigir a los principales trámites y servicios.
-          </p>
-          <Image
-            src={`${basePath}/images/tarjetas/tarjetas_horizontal_tematica.svg`}
-            alt="Tarjeta horizontal tematica"
-            width="800"
-            height="200"
-            className="img-fluid"
-          />
+          <div className="max-items-2" style={{ marginTop: '32px' }}>
+            <div className="col">
+              <p className="text-xl mb-2">Predeterminada</p>
+              <p className="text-md">
+                Contiene información que no precisa de imágenes descriptivas. Dentro del entorno de Buenos Aires se
+                utiliza, por ejemplo, para agrupar programas o servicios de un área.{' '}
+              </p>
+            </div>
+            <div className="col">
+              <Image
+                src={`${basePath}/images/tarjetas/tarjetas_horizontal_predeterminada.svg`}
+                alt="Tarjeta horizontal predeterminada"
+                width="800"
+                height="200"
+                className="img-fluid"
+              />
+            </div>
+          </div>
+
+          <div className="max-items-2" style={{ marginTop: '32px' }}>
+            <div className="col">
+              <p className="text-xl mb-2">Temática</p>
+              <p className="text-md">
+                Se utiliza en la página de inicio de Buenos Aires para redirigir a los principales trámites y servicios.
+              </p>
+            </div>
+            <div className="col">
+              <Image
+                src={`${basePath}/images/tarjetas/tarjetas_horizontal_tematica.svg`}
+                alt="Tarjeta horizontal tematica"
+                width="800"
+                height="200"
+                className="img-fluid"
+              />
+            </div>
+          </div>
         </>
       ),
     },
@@ -1007,27 +1050,23 @@ const CardDocs: React.FC = () => {
             alt="Tarjeta horizontal tematica"
             width="800"
             height="200"
-            className="img-fluid"
+            className="img-fluid mb-2"
           />
-          <div className="d-flex pt-2" style={{ marginTop: '32px' }}>
+          <div className="d-flex" style={{ marginBottom: '32px' }}>
             <span className="material-symbols-rounded text-success">check</span>
             <p className="mb-0">
               Utilizar tarjetas con la misma disposición y del mismo tipo dentro de un mismo grupo.
             </p>
           </div>
 
-          {/* <p className="text-md">
-            Las tarjetas se utilizan en grupo para organizar la navegación y redirección a contenidos relacionados de un
-            mismo sitio web.
-          </p> */}
           <Image
             src={`${basePath}/images/tarjetas/tarjetas_agrupacion_no_usar_1.svg`}
             alt="Tarjeta horizontal tematica"
             width="800"
             height="200"
-            className="img-fluid"
+            className="img-fluid mb-2"
           />
-          <div className="d-flex pt-3">
+          <div className="d-flex">
             <span className="material-symbols-rounded text-danger">close</span>
             <p className="mb-0">No combinar la disposición y/o los tipos de tarjetas dentro de un mismo grupo.</p>
           </div>
@@ -1052,7 +1091,7 @@ const CardDocs: React.FC = () => {
             className="img-fluid"
           />
 
-          <p className="text-md mt-3">
+          <p className="text-md" style={{ marginTop: '32px' }}>
             En <i>desktop</i>, las tarjetas horizontales de 4 columnas pueden agruparse hasta un máximo de 3 por línea,
             mientras que las de 6 columnas pueden hasta un máximo de 2 por línea.
           </p>
@@ -1070,11 +1109,10 @@ const CardDocs: React.FC = () => {
             alt="Tarjetas modulacion ej 4"
             width="800"
             height="200"
-            className="img-fluid"
-            style={{ marginTop: '1.5rem !important' }}
+            className="img-fluid mt-3"
           />
 
-          <p className="text-md mt-4">
+          <p className="text-md" style={{ marginTop: '32px' }}>
             En <i>mobile</i>, todas las tarjetas van una debajo de la otra y ocupan el ancho total de la grilla del
             dispositivo.
           </p>
@@ -1085,10 +1123,9 @@ const CardDocs: React.FC = () => {
             width="800"
             height="200"
             className="img-fluid"
-            style={{ marginTop: '1rem !important' }}
           />
 
-          <p className="text-md mt-4">
+          <p className="text-md" style={{ marginTop: '32px' }}>
             En mobile, las tarjetas de noticias forman un carrusel horizontal para facilitar su visualización.
           </p>
 
@@ -1098,7 +1135,6 @@ const CardDocs: React.FC = () => {
             width="800"
             height="200"
             className="img-fluid"
-            style={{ marginTop: '1rem !important' }}
           />
         </>
       ),
@@ -1113,9 +1149,8 @@ const CardDocs: React.FC = () => {
             width="800"
             height="200"
             className="img-fluid"
-            style={{ marginTop: '1rem !important' }}
           />
-          <div className="d-flex pt-3">
+          <div className="d-flex mt-2">
             <span className="material-symbols-rounded text-success">check</span>
             <p className="mb-0">
               Respetar la modulación según la disposición y el tipo de tarjeta, independientemente del espacio
@@ -1128,9 +1163,11 @@ const CardDocs: React.FC = () => {
             alt="Tarjeta horizontal tematica"
             width="800"
             height="200"
-            className="img-fluid mt-4"
+            className="img-fluid"
+            style={{ marginTop: '32px' }}
           />
-          <div className="d-flex pt-3">
+
+          <div className="d-flex mt-2">
             <span className="material-symbols-rounded text-danger">close</span>
             <p className="mb-0">
               No estirar o cambiar la modulación de las tarjetas únicamente por rellenar el espacio en blanco. Cambiar
@@ -1225,7 +1262,7 @@ const CardDocs: React.FC = () => {
             <li>Rango de fechas: Del 5 al 10 de noviembre</li>
             <li>Múltiples fechas: 5, 10, 15 y 20 de noviembre. </li>
           </ul>
-          <p className="text-md mt-1">
+          <p className="text-md mt-2">
             Si hay más de 4 fechas disponibles, se recomienda destacar la próxima fecha más cercana y ofrecer el detalle
             completo en la página del evento.
           </p>
@@ -1236,7 +1273,7 @@ const CardDocs: React.FC = () => {
             <li>Rango de horarios: 15:00 - 16:00 h</li>
             <li>Múltiples horarios: 16:00 | 18:00 | 20:00</li>
           </ul>
-          <p className="text-md mt-1 mb-0">
+          <p className="text-md mt-2 mb-0">
             Si hay más de tres horarios, se recomienda usar el formato resumido con un “+” y detallar el resto en la
             página del evento. Por ejemplo: 16:00 | 18:00 | 20:00 +
           </p>

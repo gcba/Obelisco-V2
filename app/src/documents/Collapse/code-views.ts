@@ -210,7 +210,7 @@ export const COLLAPSE_LIST = `
                         />
                         <label class="form-radio-label" for="visa">
                             <div class="label-content">
-                            <i class="bx bxl-visa label-icon"></i>
+                            <i class="bxf bxl-visa label-icon"></i>
                             <small class="label-top">Volanta</small>
                             <span class="label-title">Visa Débito ****1234</span>
                             <small class="label-subtitle">Heraldo Paez</small>
@@ -227,7 +227,7 @@ export const COLLAPSE_LIST = `
                         />
                         <label class="form-radio-label" for="master">
                             <div class="label-content">
-                                <i class="bx bxl-mastercard label-icon"></i>
+                                <i class="bxf bxl-mastercard label-icon"></i>
                                 <small class="label-top">Volanta</small>
                                 <span class="label-title">MasterCard Crédito ****5678</span>
                                 <small class="label-subtitle">Heraldo Paez</small>

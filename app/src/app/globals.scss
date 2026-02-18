@@ -1,7 +1,8 @@
 // @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded');
-@import url('../../node_modules/boxicons/css/boxicons.min.css');
+
+@import url('https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css');
 @import '../../styles/styles.css';
 
 // Generic Styles
@@ -242,7 +243,7 @@ hr {
   background: #e6ebf0;
   margin-bottom: 2rem;
 }
-.custom-layout-container {
+.container.custom-layout-container {
   @media screen and (min-width: 1200px) {
     max-width: 100%;
   }
@@ -449,7 +450,7 @@ pre {
     max-width: 348px;
   }
 }
-.card-box-sizing-columns {
+.tab-content .card-box-sizing-columns {
   transform: scale(0.6);
   transform-origin: top;
   max-height: 600px;
@@ -477,7 +478,7 @@ pre {
 }
 
 // Visualización de disposición con scroll
-.card-box-sizing-disp-scroll {
+.tab-pane .card-box-sizing-disp-scroll {
   transform: scale(0.6);
   transform-origin: top;
   max-height: 600px;

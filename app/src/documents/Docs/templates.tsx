@@ -15,9 +15,9 @@ const TemplatesComponents: React.FC = () => {
             <div className="max-items-2">
               <div className="col">
                 <div className="card h-100">
-                  <i className="bx bxs-info-circle card-icon">
-                    {/* <span className="material-symbols-outlined card-icon">apartment</span> */}
-                  </i>
+                  <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                    info
+                  </span>
                   <div className="card-body">
                     <h3 className="card-title">
                       <a href={`${basePath}/templates/paginas-de-areas`} className="card-title-link">
@@ -34,7 +34,77 @@ const TemplatesComponents: React.FC = () => {
 
               <div className="col">
                 <div className="card h-100">
-                  <i className="bx bx-list-ul card-icon"></i>
+                  <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                    description
+                  </span>
+                  <div className="card-body">
+                    <h3 className="card-title">
+                      <a href={`${basePath}/templates/pagina-tramites`} className="card-title-link">
+                        Trámites
+                      </a>
+                    </h3>
+                    <p className="card-text">
+                      La usamos para los trámites que ofrece el Gobierno de la Ciudad de Buenos Aires.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col">
+                <div className="card h-100">
+                  <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                    chrome_reader_mode{' '}
+                  </span>{' '}
+                  <div className="card-body">
+                    <h3 className="card-title">
+                      <a href={`${basePath}/templates/pagina-simple`} className="card-title-link">
+                        Página simple
+                      </a>
+                    </h3>
+                    <p className="card-text">Página informativa con un nivel jerárquico menor a una página de área.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col">
+                <div className="card h-100">
+                  <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                    menu_book
+                  </span>
+                  <div className="card-body">
+                    <h3 className="card-title">
+                      <a href={`${basePath}/templates/pagina-de-libro`} className="card-title-link">
+                        Página de libro
+                      </a>
+                    </h3>
+                    <p className="card-text">La usamos para agrupar información sobre un mismo tema en subtemas. </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col">
+                <div className="card h-100">
+                  <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                    newspaper
+                  </span>{' '}
+                  <div className="card-body">
+                    <h3 className="card-title">
+                      <a href={`${basePath}/templates/pagina-de-noticias`} className="card-title-link">
+                        Noticias
+                      </a>
+                    </h3>
+                    <p className="card-text">
+                      Página para comunicar avisos y novedades. Debe estar constantemente actualizada.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col">
+                <div className="card h-100">
+                  <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                    format_list_bulleted
+                  </span>{' '}
                   <div className="card-body">
                     <h3 className="card-title">
                       <a href={`${basePath}/templates/paginas-de-areas`} className="card-title-link">
@@ -51,59 +121,15 @@ const TemplatesComponents: React.FC = () => {
 
               <div className="col">
                 <div className="card h-100">
-                  <i className="bx bx-news card-icon"></i>
+                  <i className="bx bxs-user card-icon"></i>
                   <div className="card-body">
                     <h3 className="card-title">
-                      <a href={`${basePath}/templates/pagina-de-noticias`} className="card-title-link">
-                        Noticias
+                      <a href={`${basePath}/templates/perfil-institucional`} className="card-title-link">
+                        Perfil Institucional
                       </a>
                     </h3>
                     <p className="card-text">
-                      Página para comunicar avisos y novedades. Debe estar constantemente actualizada.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col">
-                <div className="card h-100">
-                  <i className="bx bxs-book-content card-icon"></i>
-                  <div className="card-body">
-                    <h3 className="card-title">
-                      <a href={`${basePath}/templates/pagina-simple`} className="card-title-link">
-                        Página simple
-                      </a>
-                    </h3>
-                    <p className="card-text">Página informativa con un nivel jerárquico menor a una página de área.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col">
-                <div className="card h-100">
-                  <i className="bx bxs-book-open card-icon"></i>
-                  <div className="card-body">
-                    <h3 className="card-title">
-                      <a href={`${basePath}/templates/pagina-de-libro`} className="card-title-link">
-                        Página de libro
-                      </a>
-                    </h3>
-                    <p className="card-text">La usamos para agrupar información sobre un mismo tema en subtemas. </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col">
-                <div className="card h-100">
-                  <i className="bx bxs-file card-icon"></i>
-                  <div className="card-body">
-                    <h3 className="card-title">
-                      <a href={`${basePath}/templates/pagina-tramites`} className="card-title-link">
-                        Trámites
-                      </a>
-                    </h3>
-                    <p className="card-text">
-                      La usamos para los trámites que ofrece el Gobierno de la Ciudad de Buenos Aires.
+                      La usamos para la ficha del perfil institucional del Gobierno de la Ciudad de Buenos Aires.
                     </p>
                   </div>
                 </div>

@@ -646,16 +646,16 @@ export const HERO_REDES_SOCIALES = `<header class="hero bg-content-hero-light">
 			<div class="d-flex flex-wrap align-items-center column-gap-2 row-gap-4">
 				<span class="text-body-secondary me-2">Compartir en redes</span>
 				<a href="#" class="shadow-none" target="_blank">
-					<i class="bx bxl-facebook-circle o-icon text-primary"></i>
+					<i class="bxl bx-facebook-circle o-icon text-primary"></i>
 				</a>
 				<a href="#" class="shadow-none" target="_blank">
-					<i class="bx bxl-instagram o-icon text-primary"></i>
+					<i class="bxl bx-instagram o-icon text-primary"></i>
 				</a>
 				<a href="#" class="shadow-none" target="_blank">
-					<i class="bx bxl-twitter o-icon text-primary"></i>
+					<i class="bxl bx-twitter-x o-icon text-primary"></i>
 				</a>
 				<a href="#" class="shadow-none" target="_blank">
-					<i class="bx bxl-linkedin-square o-icon text-primary"></i>
+					<i class="bxl bx-linkedin-square o-icon text-primary"></i>
 				</a>
 			</div>
 		</div>

@@ -697,16 +697,16 @@ const HeroHeaderDocs: React.FC = () => {
                         <div className="d-flex flex-wrap align-items-center column-gap-2 row-gap-4">
                           <span className="text-body-secondary me-2">Compartir en redes</span>
                           <a href="#" className="shadow-none" target="_blank">
-                            <i className="bx bxl-facebook-circle o-icon text-primary"></i>
+                            <i className="bxl bx-facebook-circle o-icon text-primary"></i>
                           </a>
                           <a href="#" className="shadow-none" target="_blank">
-                            <i className="bx bxl-instagram o-icon text-primary"></i>
+                            <i className="bxl bx-instagram o-icon text-primary"></i>
                           </a>
                           <a href="#" className="shadow-none" target="_blank">
-                            <i className="bx bxl-twitter o-icon text-primary"></i>
+                            <i className="bxl bx-twitter-x o-icon text-primary"></i>
                           </a>
                           <a href="#" className="shadow-none" target="_blank">
-                            <i className="bx bxl-linkedin-square o-icon text-primary"></i>
+                            <i className="bxl bx-linkedin-square o-icon text-primary"></i>
                           </a>
                         </div>
                       </div>

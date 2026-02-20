@@ -601,6 +601,62 @@ const HeroHeaderDocs: React.FC = () => {
       ),
     },
     {
+      subtitle: 'Con redes sociales',
+      content: (
+        <>
+          <CodeBox codeHTML={HERO_CON_DESPLEGABLES}>
+            <div className="container">
+              <div className="hero-container">
+                <div className="hero-box-sizing ">
+                  <header className="hero">
+                    <div className="content corner">
+                      <div className="d-flex flex-column">
+                        <nav aria-label="Navegación secundaria">
+                          <ol className="breadcrumb m-0">
+                            <li className="breadcrumb-item">
+                              <a href="#">Inicio</a>
+                            </li>
+                          </ol>
+                        </nav>
+
+                        <div>
+                          <h1 className="mb-3">Encabezado de la página</h1>
+                          <p className="lead m-0">
+                            Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la
+                            convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
+                          </p>
+                        </div>
+
+                        {/* redes sociales */}
+                        <div className="d-flex flex-wrap align-items-center column-gap-2 row-gap-4">
+                          <span className="text-body-secondary me-2">Compartir en redes</span>
+                          <a href="#" className="shadow-none" target="_blank">
+                            <i className="bxl bx-facebook-circle o-icon text-primary"></i>
+                          </a>
+                          <a href="#" className="shadow-none" target="_blank">
+                            <i className="bxl bx-instagram o-icon text-primary"></i>
+                          </a>
+                          <a href="#" className="shadow-none" target="_blank">
+                            <i className="bxl bx-twitter-x o-icon text-primary"></i>
+                          </a>
+                          <a href="#" className="shadow-none" target="_blank">
+                            <i className="bxl bx-linkedin-square o-icon text-primary"></i>
+                          </a>
+                        </div>
+                        {/* redes sociales */}
+                      </div>
+                    </div>
+
+                    <div className="aside bg-aside-hero-dark"></div>
+                  </header>
+                </div>
+              </div>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+    {
       title: 'Modos de color',
     },
     {

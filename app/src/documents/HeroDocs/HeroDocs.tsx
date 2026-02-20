@@ -16,12 +16,14 @@ import {
   HERO_CON_GIF,
   HERO_CON_IMAGEN,
   HERO_CON_VIDEO,
+  HERO_CON_VIDEO_IFRAME,
   HERO_DARK,
   HERO_DINAMICO,
   HERO_INSTITUCIONAL,
   HERO_LIGHT,
   HERO_ACCESIBILITY,
   HERO_ACCESIBILITY_2,
+  HERO_REDES_SOCIALES,
 } from './code-views';
 
 const HeroHeaderDocs: React.FC = () => {
@@ -224,6 +226,64 @@ const HeroHeaderDocs: React.FC = () => {
                       <video src={`${basePath}/images/hero/video_hero_header.mp4`} autoPlay muted loop controls>
                         Your browser does not support the video tag.
                       </video>
+                    </div>
+                  </header>
+                </div>
+              </div>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+    {
+      subtitle: 'Con video (iframe)',
+      content: (
+        <>
+          <CodeBox codeHTML={HERO_CON_VIDEO_IFRAME}>
+            <div className="container">
+              <div className="hero-container">
+                <div className="hero-box-sizing mb-0">
+                  <header className="hero">
+                    <div className="content wave">
+                      <div className="d-flex flex-column">
+                        <nav aria-label="Navegación secundaria">
+                          <ol className="breadcrumb m-0">
+                            <li className="breadcrumb-item">
+                              <a href="#">Inicio</a>
+                            </li>
+                          </ol>
+                        </nav>
+
+                        <div>
+                          <h1 className="mb-3">Encabezado de la página</h1>
+                          <p className="lead m-0">
+                            Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la
+                            convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
+                          </p>
+                        </div>
+
+                        {/* botones */}
+                        <div className="btn-hero">
+                          <button type="button" className="btn btn-secondary">
+                            Botón
+                          </button>
+                          <button type="button" className="btn btn-outline-secondary">
+                            Botón
+                          </button>
+                        </div>
+                        {/* botones */}
+                      </div>
+                    </div>
+
+                    <div className="aside">
+                      <iframe
+                        src="https://www.youtube.com/embed/3UUC3p0k4SE?si=r15TOyvXzI2GM7WU"
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
+                      ></iframe>
                     </div>
                   </header>
                 </div>

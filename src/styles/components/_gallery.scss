@@ -6,7 +6,7 @@ $carousel-control-size: $carousel-control-icon-size + $carousel-control-padding 
   2;
 $carousel-control-border-radius: 100%;
 
-$carousel-control-space-x-mobile: $carousel-control-size * 0.25;
+$carousel-control-space-x-mobile: $carousel-control-size * 0.5;
 $carousel-control-space-top-mobile: 25%;
 
 $carousel-control-space-x: $carousel-control-size * -1.5;
@@ -149,87 +149,16 @@ $carousel-margin-bottom: 0.25rem * 4;
 }
 
 // Custom styles
-
-.carousel-control-prev,
-.carousel-control-next {
-  display: block;
-  width: $carousel-control-size;
-  height: $carousel-control-size;
-  padding: $carousel-control-padding;
-  background: $slate-50;
-  top: $carousel-control-space-top-mobile;
-  transform: translateY(-$carousel-control-space-top-mobile);
-  border-radius: $carousel-control-border-radius;
-  opacity: 0.75;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  width: $carousel-control-icon-size;
-  height: $carousel-control-icon-size;
-}
-
-.carousel-control-prev {
-  left: $carousel-control-space-x-mobile;
-
-  .carousel-control-prev-icon {
-    background-image: $carousel-control-prev-icon;
-  }
-}
-
-.carousel-control-next {
-  right: $carousel-control-space-x-mobile;
-
-  .carousel-control-next-icon {
-    background-image: $carousel-control-next-icon;
-  }
-}
-
-@include media-breakpoint-up(sm) {
-  .carousel-control-prev,
-  .carousel-control-next {
-    top: $carousel-control-space-top;
-    opacity: 1;
-  }
-
-  .carousel-control-prev {
-    left: $carousel-control-space-x;
-  }
-
-  .carousel-control-next {
-    right: $carousel-control-space-x;
-  }
-}
-
-.carousel-inner {
-  border-radius: $border-radius-lg;
-
-  img {
-    border-radius: $border-radius-lg;
-  }
-}
-
-.carousel-caption {
-  position: static;
-  text-align: left;
-  color: $body-color;
-  top: 100%;
-  padding-top: 0;
-  padding-bottom: 0;
-
-  h5 {
-    @extend .h4;
-    font-weight: $font-weight-bold;
-  }
-}
-
-// Modal
-
 .modal-carousel {
   background: $white;
 
   .modal-content {
+    padding: 10px 0 0;
     border: none;
+
+    @include media-breakpoint-up(xl) {
+      padding-top: 1.5rem;
+    }
   }
 
   .modal-carousel-close {
@@ -248,10 +177,157 @@ $carousel-margin-bottom: 0.25rem * 4;
       background: transparent $carousel-close-icon no-repeat center center;
     }
   }
+
+  > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) {
+    background: none;
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      display: block;
+      width: $carousel-control-size;
+      height: $carousel-control-size;
+      padding: $carousel-control-padding;
+      background-color: #f4f6f9;
+      top: $carousel-control-space-top-mobile;
+      transform: translateY(-$carousel-control-space-top-mobile);
+      border-radius: $carousel-control-border-radius;
+      opacity: 0.75;
+      outline: 0.125rem solid $slate-100;
+
+      &:hover,
+      &:focus,
+      &:active {
+        box-shadow: unset;
+        outline: 0.125rem solid $slate-100;
+        outline-offset: unset;
+      }
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: $carousel-control-icon-size;
+      height: $carousel-control-icon-size;
+      background: none;
+      background-image: inherit;
+    }
+
+    .carousel-control-prev {
+      left: $carousel-control-space-x-mobile;
+
+      .carousel-control-prev-icon {
+        background-image: $carousel-control-prev-icon;
+        content: unset;
+      }
+    }
+
+    .carousel-control-next {
+      right: $carousel-control-space-x-mobile;
+
+      .carousel-control-next-icon {
+        background-image: $carousel-control-next-icon;
+        content: unset;
+      }
+    }
+
+    .carousel-inner {
+      border-radius: $border-radius-lg;
+
+      img {
+        border-radius: $border-radius-lg;
+      }
+    }
+
+    .carousel-caption {
+      position: static;
+      text-align: left;
+      color: $body-color;
+      top: 100%;
+      padding-top: 0;
+      padding-bottom: 0;
+
+      h5 {
+        @extend .h4;
+        font-weight: $font-weight-bold;
+      }
+    }
+
+    @include media-breakpoint-up(sm) {
+      &.carousel {
+        max-width: 85%;
+        margin: 0 auto;
+      }
+
+      .carousel-control-prev,
+      .carousel-control-next {
+        top: $carousel-control-space-top;
+        opacity: 1;
+      }
+
+      .carousel-control-prev {
+        left: $carousel-control-space-x;
+      }
+
+      .carousel-control-next {
+        right: $carousel-control-space-x;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      &.carousel {
+        max-width: 100%;
+        margin: 0;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      .carousel-control-prev,
+      .carousel-control-next {
+        top: calc(50% - 86px);
+      }
+
+      .carousel-inner {
+        max-width: 100%;
+
+        .carousel-item {
+          padding: 0;
+        }
+      }
+    }
+  }
 }
 
-// Gallery grid
+// Modal
+// .modal-carousel {
+//   background: $white;
 
+//   .modal-content {
+//     padding: 10px 0 0;
+//     border: none;
+
+//     @include media-breakpoint-up(xl) {
+//       padding-top: 1.5rem;
+//     }
+//   }
+
+//   .modal-carousel-close {
+//     text-align: right;
+//     margin-bottom: $carousel-margin-bottom;
+//     width: fit-content;
+//     margin-left: auto;
+
+//     &::after {
+//       vertical-align: middle;
+//       content: '';
+//       display: inline-block;
+//       height: 1.75rem;
+//       width: 1.75rem;
+//       min-width: 1.75rem;
+//       background: transparent $carousel-close-icon no-repeat center center;
+//     }
+//   }
+// }
+
+// Gallery grid
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

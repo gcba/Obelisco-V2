@@ -1,5 +1,4 @@
-export const CAROUSEL_DESTACADO = `
-	<div id="carousel" class="carousel slide">
+export const CAROUSEL_DESTACADO = `<div id="carousel" class="carousel slide">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<div class="panel-horizontal-content">
@@ -99,8 +98,7 @@ export const CAROUSEL_DESTACADO = `
 		</div>
 `;
 
-export const CAROUSEL_DESTACADO_WHITE = `
-	<div id="carousel" class="carousel white slide">
+export const CAROUSEL_DESTACADO_WHITE = `<div id="carousel_2" class="carousel white slide">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<div class="panel-horizontal-content">
@@ -179,29 +177,28 @@ export const CAROUSEL_DESTACADO_WHITE = `
 			<div class="carousel-indicators">
 				<button
 					type="button"
-					data-bs-target="#carousel"
+					data-bs-target="#carousel_2"
 					data-bs-slide-to="0"
 					class="active"
 					aria-current="true"
 					aria-label="Slide 1"
 				></button>
-				<button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-				<button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				<button type="button" data-bs-target="#carousel_2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carousel_2" data-bs-slide-to="2" aria-label="Slide 3"></button>
 			</div>
 
-			<button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+			<button class="carousel-control-prev" type="button" data-bs-target="#carousel_2" data-bs-slide="prev">
 				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 				<span class="visually-hidden">Anterior</span>
 			</button>
-			<button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+			<button class="carousel-control-next" type="button" data-bs-target="#carousel_2" data-bs-slide="next">
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				<span class="visually-hidden">Siguiente</span>
 			</button>
 		</div>
 `;
 
-export const CAROUSEL_DESTACADO_DARK = `
-<div id="carousel-dark" class="carousel dark slide">
+export const CAROUSEL_DESTACADO_DARK = `<div id="carousel-dark" class="carousel dark slide">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<div class="panel-horizontal-content">
@@ -300,8 +297,106 @@ export const CAROUSEL_DESTACADO_DARK = `
 			</button>
 		</div>`;
 
-export const CAROUSEL_CARDS = `
-<div id="carousel-cards" class="carousel cards slide">
+export const CAROUSEL_DESTACADO_LIGHT = `<div id="carousel-light" class="carousel light slide">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="panel-horizontal-content">
+						<div class="panel-horizontal">
+							<img src="images/destacado.jpg" alt="descripción de imagen" class="panel-img" />
+							<div class="panel-body">
+								<h2 class="panel-title">Título del destacado</h2>
+								<p class="panel-text">
+									Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
+									líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un
+									destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
+									negritas ni enlaces
+								</p>
+								<div class="panel-footer">
+									<a class="btn btn-light btn-lg" href="#" rel="noopener noreferrer">
+										Botón
+									</a>
+									<a class="btn btn-outline-light btn-lg" href="#" rel="noopener noreferrer">
+										Botón
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="panel-horizontal-content">
+						<div class="panel-horizontal">
+							<img src="images/destacado.jpg" alt="descripción de imagen" class="panel-img" />
+							<div class="panel-body">
+								<h2 class="panel-title">Título del destacado</h2>
+								<p class="panel-text">
+									Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
+									líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un
+									destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
+									negritas ni enlaces
+								</p>
+								<div class="panel-footer">
+									<a class="btn btn-light btn-lg" href="#" rel="noopener noreferrer">
+										Botón
+									</a>
+									<a class="btn btn-outline-light btn-lg" href="#" rel="noopener noreferrer">
+										Botón
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="panel-horizontal-content">
+						<div class="panel-horizontal">
+							<img src="images/destacado.jpg" alt="descripción de imagen" class="panel-img" />
+							<div class="panel-body">
+								<h2 class="panel-title">Título del destacado</h2>
+								<p class="panel-text">
+									Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
+									líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un
+									destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
+									negritas ni enlaces
+								</p>
+								<div class="panel-footer">
+									<a class="btn btn-light btn-lg" href="#" rel="noopener noreferrer">
+										Botón
+									</a>
+									<a class="btn btn-outline-light btn-lg" href="#" rel="noopener noreferrer">
+										Botón
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="carousel-indicators">
+				<button
+					type="button"
+					data-bs-target="#carousel-light"
+					data-bs-slide-to="0"
+					class="active"
+					aria-current="true"
+					aria-label="Slide 1"
+				></button>
+				<button type="button" data-bs-target="#carousel-light" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carousel-light" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+
+			<button class="carousel-control-prev" type="button" data-bs-target="#carousel-light" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Anterior</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carousel-light" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Siguiente</span>
+			</button>
+		</div>`;
+
+export const CAROUSEL_CARDS = `<div id="carousel-cards" class="carousel cards slide">
 		<div class="title">
 			<h4 class="m-0">Encabezado de la seccion</h4>
 			<a href="#" target="_blank" rel="noopener noreferrer">
@@ -536,8 +631,7 @@ export const CAROUSEL_CARDS = `
 	</div>
 `;
 
-export const CAROUSEL_CARDS_EVENTS = `
-<div id="carousel-cards-eventos" class="carousel cards slide">
+export const CAROUSEL_CARDS_EVENTS = `<div id="carousel-cards-eventos" class="carousel cards slide">
 			<div class="title">
 				<h4 class="m-0">Encabezado de la seccion</h4>
 				<a href="#" target="_blank" rel="noopener noreferrer">Enlace predeterminado</a>
@@ -653,8 +747,7 @@ export const CAROUSEL_CARDS_EVENTS = `
 		</div>
 	`;
 
-export const CAROUSEL_CARDS_DARK = `
-<div id="carousel-cards-dark" class="carousel cards dark slide">
+export const CAROUSEL_CARDS_DARK = `<div id="carousel-cards-dark" class="carousel cards dark slide">
 		<div class="title">
 			<h4 class="m-0">Encabezado de la seccion</h4>
 			<a href="#" target="_blank" class="link-light" rel="noopener noreferrer">

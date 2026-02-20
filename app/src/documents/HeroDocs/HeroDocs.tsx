@@ -664,7 +664,7 @@ const HeroHeaderDocs: React.FC = () => {
       subtitle: 'Con redes sociales',
       content: (
         <>
-          <CodeBox codeHTML={HERO_CON_DESPLEGABLES}>
+          <CodeBox codeHTML={HERO_REDES_SOCIALES}>
             <div className="container">
               <div className="hero-container">
                 <div className="hero-box-sizing ">

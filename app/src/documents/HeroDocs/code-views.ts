@@ -110,6 +110,40 @@ export const HERO_CON_VIDEO = `<header class="hero">
    </div>
 </header>`;
 
+export const HERO_CON_VIDEO_IFRAME = `<header class="hero">
+   <div class="content wave">
+      <div class="d-flex flex-column">
+         <nav aria-label="Navegación secundaria">
+            <ol class="breadcrumb m-0">
+               <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+            </ol>
+         </nav>
+         <div>
+            <h1 class="mb-3">Encabezado de la página</h1>
+            <p class="lead m-0">Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.</p>
+         </div>
+				<div class="btn-hero">
+					<button type="button" class="btn btn-secondary">
+						Botón
+					</button>
+					<button type="button" class="btn btn-outline-secondary">
+						Botón
+					</button>
+				</div>
+      </div>
+   </div>
+   <div class="aside">
+      <iframe
+				src="https://www.youtube.com/embed/3UUC3p0k4SE?si=r15TOyvXzI2GM7WU"
+				title="YouTube video player"
+				frameBorder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin"
+				allowfullscreen
+			></iframe>
+   </div>
+</header>`;
+
 export const HERO_CON_GIF = `<header class="hero">
    <div class="content wave">
       <div class="d-flex flex-column">
@@ -618,5 +652,52 @@ export const HERO_ACCESIBILITY_2 = `<header class="hero">
     <img alt="Festival de música al aire libre en Buenos Aires, con banda tocando en escenario" 
     loading="lazy" decoding="async" data-nimg="fill" src="/images/hero/multimedia-hero.jpg">
   </div>
+</header>
+`;
+
+export const HERO_REDES_SOCIALES = `<header class="hero bg-content-hero-light">
+	<div class="content corner">
+		<div class="d-flex flex-column">
+			<nav aria-label="Navegación secundaria">
+				<ol class="breadcrumb m-0">
+					<li class="breadcrumb-item">
+						<a href="#">Inicio</a>
+					</li>
+				</ol>
+			</nav>
+
+			<div class="d-flex flex-wrap align-items-center column-gap-2 row-gap-4">
+				<span class="badge badge-info">Etiqueta</span>
+				<span class="badge badge-info">Etiqueta</span>
+			</div>
+
+			<div>
+				<p class="text-sm text-body-secondary mb-3">Jueves 17 de julio de 2022</p>
+				<h1 class="mb-3">Encabezado de la página</h1>
+				<p class="lead m-0">
+					Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la
+					convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
+				</p>
+			</div>
+
+			<div class="d-flex flex-wrap align-items-center column-gap-2 row-gap-4">
+				<span class="text-body-secondary me-2">Compartir en redes</span>
+				<a href="#" class="shadow-none" target="_blank">
+					<i class="bxl bx-facebook-circle o-icon text-primary"></i>
+				</a>
+				<a href="#" class="shadow-none" target="_blank">
+					<i class="bxl bx-instagram o-icon text-primary"></i>
+				</a>
+				<a href="#" class="shadow-none" target="_blank">
+					<i class="bxl bx-twitter-x o-icon text-primary"></i>
+				</a>
+				<a href="#" class="shadow-none" target="_blank">
+					<i class="bxl bx-linkedin-square o-icon text-primary"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="aside bg-aside-hero-light"></div>
 </header>
 `;

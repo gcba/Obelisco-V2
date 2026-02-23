@@ -110,6 +110,13 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
                         {section.subtitleBold && (
                           <ScrollspySubtitle text={section.subtitleBold} ScrollspyComponent={true} />
                         )}
+                        {section.tertiarytitle && (
+                          <ScrollspySubtitle
+                            text={section.tertiarytitle}
+                            ScrollspyComponent={true}
+                            tertiaryLevel={true}
+                          />
+                        )}
                       </a>
                     </li>
                   ))}

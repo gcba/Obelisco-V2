@@ -1,15 +1,15 @@
+import { basePath } from '@/utils';
 import Image from 'next/image';
 import React from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
-
-const basePath = '/Obelisco-V2';
 
 import CodeBox from '@/components/CodeBox';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import LinkClient from '../../components/LinkClient/index';
+import CriteriosWCAG from '../CriteriosWCAG';
 import {
   SIMPLE_ACCESS,
   DESCRIPTION_ACCESS,
@@ -866,55 +866,7 @@ const ACCESSIBILITY = [
     title: 'Criterios WCAG aplicados',
     content: (
       <>
-        <a
-          className="external"
-          href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Success Criterion 1.3.1 Info and Relationships (Level A)
-        </a>
-        <p>
-          La información, la estructura y las relaciones transmitidas a través de la presentación pueden determinarse
-          mediante programación o están disponibles en el texto.
-        </p>
-
-        <a
-          className="external"
-          href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Success Criterion 1.4.11 Non-Text Contrast (Level AA)
-        </a>
-        <p>
-          La presentación visual de elementos de la interfaz de usuario y objetos gráficos tiene por lo menos una
-          relación de contraste de 3:1 con respecto a los colores adyacentes.{' '}
-        </p>
-
-        <a
-          className="external"
-          href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Success Criterion 2.1.1 Keyboard (Level A){' '}
-        </a>
-        <p>Todas las funcionalidades del contenido se puede operar a través de una interfaz de teclado.</p>
-
-        <a
-          className="external"
-          href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Success Criterion 2.4.7 Focus Visible (Level AA){' '}
-        </a>
-        <p>
-          Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque
-          del teclado es visible. Cuando utiliza un teclado para navegar por los componentes, los enlaces tienen un
-          subrayado visible y un recuadro <i>outline</i> que indica que los enlaces son interactivos.
-        </p>
+        <CriteriosWCAG list={['1.3.1', '1.4.11', '2.1.1', '2.4.7']} />
       </>
     ),
   },
@@ -935,7 +887,7 @@ const AccessDocs: React.FC = () => {
         customSections={[
           {
             title: 'Especificaciones',
-            id: 'section-specs',
+            id: 'specs',
             sectionContent: SPECS,
           },
           {

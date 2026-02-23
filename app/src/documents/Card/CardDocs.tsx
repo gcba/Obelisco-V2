@@ -1,3 +1,4 @@
+import { basePath } from '@/utils';
 import Image from 'next/image';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
@@ -26,7 +27,6 @@ import {
   VERTICAL_NOTICE_TRUNCATE,
 } from './code-views';
 
-const basePath = '/Obelisco-V2';
 const colors = ['purple', 'red', 'sky', 'yellow', 'cyan', 'blue'];
 
 const CardDocs: React.FC = () => {
@@ -1737,7 +1737,7 @@ const CardDocs: React.FC = () => {
         customSections={[
           {
             title: 'Especificaciones',
-            id: 'section-specs',
+            id: 'specs',
             sectionContent: SPECS,
           },
           {

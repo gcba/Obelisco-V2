@@ -1,4 +1,5 @@
 'use client';
+import { basePath } from '@/utils';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -9,10 +10,9 @@ import ComponentHeader from '@/components/Template/ComponentHeader';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 
 import { AREA_2 } from './code-views';
-const basePath = '/Obelisco-V2';
 
 export default function AreaDos() {
-  const [activeTab, setActiveTab] = useState('panel-content-docs');
+  const [activeTab, setActiveTab] = useState('content-docs');
 
   const DOC_SECTIONS = [
     {
@@ -331,24 +331,19 @@ export default function AreaDos() {
       <div>
         <nav className="tabs-box" aria-label="Navegación por pestañas">
           <ul className="nav nav-pills nav-box tabs p-0" role="tablist">
-            <TabItem
-              id={`panel-content-docs`}
-              title={'Especificaciones'}
-              activeTab={activeTab}
-              setActiveTab={setActiveTab}
-            />
-            <TabItem id={`panel-content-html`} title={'Código'} activeTab={activeTab} setActiveTab={setActiveTab} />
+            <TabItem id={`content-docs`} title={'Especificaciones'} activeTab={activeTab} setActiveTab={setActiveTab} />
+            <TabItem id={`content-html`} title={'Código'} activeTab={activeTab} setActiveTab={setActiveTab} />
           </ul>
         </nav>
 
         <hr className="mt-0 mb-4" />
 
         <div className="tab-content" style={{ paddingTop: '32px' }}>
-          <TabPanel id={`panel-content-docs`} activeTab={activeTab}>
+          <TabPanel id={`content-docs`} activeTab={activeTab}>
             <DocumentationTemplate sections={DOC_SECTIONS} type="ux" />
           </TabPanel>
 
-          <TabPanel id={`panel-content-html`} activeTab={activeTab}>
+          <TabPanel id={`content-html`} activeTab={activeTab}>
             <CodeViewTemplate template={AREA_2} />
           </TabPanel>
         </div>

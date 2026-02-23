@@ -1,10 +1,10 @@
+import { basePath } from '@/utils';
+
 import CodeBox from '@/components/CodeBox';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import { HEADLINE, HEADINGS, BODY, OTHER_STYLES, DEFAULT_LISTS, BLOCKQUOTE } from './code-views';
-
-const basePath = '/Obelisco-V2';
 
 const SECTIONS_UX = [
   {

@@ -5,10 +5,10 @@ export const TABS_SIMPLE = `
         <button
           class="nav-link"
           data-bs-toggle="tab"
-          data-bs-target="#panel-content-1"
+          data-bs-target="#content-1"
           type="button"
           role="tab"
-          aria-controls="panel-content-1"
+          aria-controls="content-1"
           aria-selected="false"
           id="tab-1"
         >
@@ -19,10 +19,10 @@ export const TABS_SIMPLE = `
         <button
           class="nav-link"
           data-bs-toggle="tab"
-          data-bs-target="#panel-content-2"
+          data-bs-target="#content-2"
           type="button"
           role="tab"
-          aria-controls="panel-content-2"
+          aria-controls="content-2"
           aria-selected="false"
           id="tab-2"
         >
@@ -33,10 +33,10 @@ export const TABS_SIMPLE = `
         <button
           class="nav-link active"
           data-bs-toggle="tab"
-          data-bs-target="#panel-content-3"
+          data-bs-target="#content-3"
           type="button"
           role="tab"
-          aria-controls="panel-content-3"
+          aria-controls="content-3"
           aria-selected="true"
           id="tab-3"
         >
@@ -46,13 +46,13 @@ export const TABS_SIMPLE = `
     </ul>
   </nav>
   <div class="tab-content" id="simple-myTabContent">
-    <div class="tab-pane fade" id="panel-content-1" role="tabpanel" aria-labelledby="tab-1">
+    <div class="tab-pane fade" id="content-1" role="tabpanel" aria-labelledby="tab-1">
       Contenido Pestaña 1
     </div>
-    <div class="tab-pane fade" id="panel-content-2" role="tabpanel" aria-labelledby="tab-2">
+    <div class="tab-pane fade" id="content-2" role="tabpanel" aria-labelledby="tab-2">
       Contenido Pestaña 2
     </div>
-    <div class="tab-pane fade show active" id="panel-content-3" role="tabpanel" aria-labelledby="tab-3">
+    <div class="tab-pane fade show active" id="content-3" role="tabpanel" aria-labelledby="tab-3">
       Contenido Pestaña 3
     </div>
   </div>

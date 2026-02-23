@@ -1,3 +1,4 @@
+import { basePath } from '@/utils';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -18,8 +19,6 @@ import {
 } from './code-views';
 
 // import { RADIO, RADIO_DISABLED, RADIO_GROUP, RADIO_NO_TEXT, RADIO_POSITION } from './code-views';
-
-const basePath = '/Obelisco-V2';
 
 const CODE_INTERACTIVITY = `<div class="form-checkbox"> 
     <input 
@@ -859,7 +858,7 @@ const FormCheckDocs = () => {
         customSections={[
           {
             title: 'Especificaciones',
-            id: 'section-specs',
+            id: 'specs',
             sectionContent: SPECS,
           },
           {

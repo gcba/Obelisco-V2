@@ -1,4 +1,5 @@
 'use client';
+import { basePath } from '@/utils';
 import Image from 'next/image';
 import { useEffect } from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
@@ -7,8 +8,6 @@ import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import CodeBox from '@/components/CodeBox';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
-
-const basePath = '/Obelisco-V2';
 
 import {
   DROPDOWN_CHECKBOX_HTML,
@@ -1140,7 +1139,7 @@ const DropdownSelDocs: React.FC = () => {
         customSections={[
           {
             title: 'Especificaciones',
-            id: 'section-specs',
+            id: 'specs',
             sectionContent: SECTION_SPECS,
           },
           {

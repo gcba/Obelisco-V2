@@ -1,6 +1,5 @@
+import { basePath } from '@/utils';
 import React from 'react';
-
-const basePath = '/Obelisco-V2';
 
 export default function Footer() {
   return (

@@ -1,3 +1,4 @@
+import { basePath } from '@/utils';
 import Image from 'next/image';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
@@ -7,8 +8,6 @@ import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import { MODAL_CONFIRM, MODAL_DANGER, MODAL_RECOGNITION, MODAL_ACCESIBILITY } from './code-views';
-
-const basePath = '/Obelisco-V2';
 
 const ModalDocs: React.FC = () => {
   const SECTIONS_DEV = [
@@ -591,7 +590,7 @@ const ModalDocs: React.FC = () => {
         customSections={[
           {
             title: 'Especificaciones',
-            id: 'section-specs',
+            id: 'specs',
             sectionContent: SECTION_SPECS,
           },
           {

@@ -1,9 +1,9 @@
+import { basePath } from '@/utils';
 import Image from 'next/image';
 import React from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-const basePath = '/Obelisco-V2';
 import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
 import Tabs from '@/components/Tabs';
@@ -1702,7 +1702,7 @@ const TableDocs: React.FC = () => {
         customSections={[
           {
             title: 'Especificaciones',
-            id: 'section-specs',
+            id: 'specs',
             sectionContent: SPECS,
           },
           {

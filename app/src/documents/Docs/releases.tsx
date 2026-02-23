@@ -80,6 +80,11 @@ const ReleasesComponents: React.FC = () => {
           <li>
             Se crea la <a href="http://">seccion de Íconos</a>, con su documentación de uso.
           </li>
+          <li>
+            La red social Twitter ya no necesita la clase <code>{'social-x'}</code>, en la nueva versión de Box Icons se
+            encuentra el nuevo ícono <i className="o-icon bxl bx-twitter-x" style={{ verticalAlign: 'sub' }}></i>{' '}
+            <code>{'<i className="o-icon bxl bx-twitter-x"></i>'}</code>
+          </li>
         </ul>
       ),
     },

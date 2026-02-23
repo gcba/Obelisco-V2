@@ -10,7 +10,6 @@ import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import LinkClient from '../../components/LinkClient/index';
 import CriteriosWCAG from '../CriteriosWCAG';
-
 import {
   SIMPLE_ACCESS,
   DESCRIPTION_ACCESS,

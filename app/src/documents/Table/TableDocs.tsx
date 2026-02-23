@@ -5,6 +5,7 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import CodeBox from '@/components/CodeBox';
+import CriteriosWCAG from '@/components/CriteriosWCAG';
 import LinkClient from '@/components/LinkClient';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
@@ -1526,146 +1527,9 @@ const ACCESSIBILITY = [
     title: 'Criterios WCAG aplicados',
     content: (
       <>
-        <a
-          className="external"
-          href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          1.3.1 Info and Relationships (Level A)
-        </a>
-        <p>
-          La información, la estructura y las relaciones transmitidas a través de la presentación pueden determinarse
-          mediante programación o están disponibles en el texto.
-        </p>
-
-        <a
-          className="external"
-          href="https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          1.3.2 Meaningful Sequence (Level A)
-        </a>
-        <p>
-          Cuando la secuencia en que se presenta el contenido afecta su significado, se puede determinar mediante
-          programación una secuencia de lectura correcta.
-        </p>
-
-        <a
-          className="external"
-          href="https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          1.4.1 Use of Color (Level A)
-        </a>
-        <p>
-          El color no se utiliza como el único medio visual para transmitir información, indicar una acción, provocar
-          una respuesta o distinguir un elemento visual.
-        </p>
-
-        <a
-          className="external"
-          href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          1.4.11 Non-text Contrast (Level AA)
-        </a>
-        <p>
-          La presentación visual de los siguientes elementos tiene una relación de contraste de al menos 3:1 con
-          respecto a los colores adyacentes: componentes de la interfaz de usuario; objetos gráficos.
-        </p>
-        <a
-          className="external"
-          href="https://www.w3.org/WAI/WCAG21/Understanding/text-spacing.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          1.4.12 Text Spacing (Level AA)
-        </a>
-        <p>
-          No se produce pérdida de contenido ni funcionalidad al configurar todo lo siguiente y no cambiar ninguna otra
-          propiedad de estilo: altura de línea establecida en 1,5; espaciado después de párrafos establecido al menos en
-          2 veces el tamaño de fuente; espaciado entre letras establecido al menos en 0,12 veces el tamaño de fuente;
-          espaciado entre palabras establecido al menos en 0,16 veces el tamaño de fuente.
-        </p>
-
-        <a
-          className="external"
-          href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          1.4.3 Minimum Contrast (Level AA)
-        </a>
-        <p>
-          La presentación visual del texto y las imágenes del texto tiene una relación de contraste de al menos 4,5:1.
-        </p>
-
-        <a
-          className="external"
-          href="https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          2.1.1 Keyboard (Level A)
-        </a>
-        <p>Toda la funcionalidad del contenido se puede operar a través de una interfaz de teclado.</p>
-
-        <a
-          className="external"
-          href="https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          2.1.2 No Keyboard Trap (Level A)
-        </a>
-        <p>
-          Si el foco del teclado se puede mover a un componente de la página usando una interfaz de teclado, entonces el
-          foco se puede mover lejos de ese componente usando solo una interfaz de teclado.
-        </p>
-        <a
-          className="external"
-          href="https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          2.2.1 Timing Adjustable (Level A)
-        </a>
-        <p>
-          Si hay limitaciones de tiempo establecidas por el contenido, se debe cumplir una de las siguientes
-          condiciones: desactivar, ajustar, extender, excepción en tiempo real, excepción esencial, excepción de 20
-          horas.
-        </p>
-
-        <a
-          className="external"
-          href="https://www.w3.org/WAI/WCAG21/Understanding/label-in-name.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          2.5.3 Label in Name (Level A)
-        </a>
-        <p>
-          Para los componentes de la interfaz de usuario con etiquetas que incluyen texto o imágenes de texto, el nombre
-          contiene el texto que se presenta visualmente.
-        </p>
-
-        <a
-          className="external"
-          href="https://www.w3.org/WAI/WCAG21/Understanding/status-messages.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          4.1.3 Status Messages (Level AA)
-        </a>
-        <p>
-          En el contenido implementado mediante lenguajes de marcado, los mensajes de estado se pueden determinar
-          mediante programación a través de roles o propiedades, de modo que puedan presentarse al usuario mediante
-          tecnologías de asistencia sin recibir el foco.
-        </p>
+        <CriteriosWCAG
+          list={['1.3.1', '1.3.2', '1.4.1', '1.4.11', '1.4.12', '1.4.3', '2.1.1', '2.1.2', '2.2.1', '2.5.3', '4.1.3']}
+        />
       </>
     ),
   },

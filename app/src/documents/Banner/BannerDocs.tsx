@@ -2,6 +2,7 @@ import { basePath } from '@/utils';
 import Image from 'next/image';
 
 import CodeBox from '@/components/CodeBox';
+import CriteriosWCAG from '@/components/CriteriosWCAG';
 import LinkClient from '@/components/LinkClient';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
@@ -469,127 +470,7 @@ const BannerDocs: React.FC = () => {
       title: 'Criterios WCAG aplicados',
       content: (
         <>
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.3.1 Info and Relationships (Level A)
-          </a>
-          <p>
-            La información, la estructura y las relaciones transmitidas a través de la presentación pueden determinarse
-            mediante programación o están disponibles en el texto.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.4.11 Non-Text Contrast (Level AA)
-          </a>
-          <p>
-            La presentación visual de elementos de la interfaz de usuario y objetos gráficos tiene por lo menos una
-            relación de contraste de 3:1 con respecto a los colores adyacentes.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.4.3 Contrast (Minimum) (Level AA)
-          </a>
-          <p>
-            La presentación visual de texto y de imágenes de texto tiene una relación de contraste de por lo menos
-            4.5:1, excepto textos grandes e imágenes de texto grande que tienen un contraste de por lo menos 3:1, textos
-            o imágenes que son parte de un componente inactivo de interfaz de usuario o son pura decoración, o
-            logotipos.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/resize-text"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.4.4 Resize Text (Level AA)
-          </a>
-          <p>
-            Excepto por los subtítulos e imágenes de texto, el texto puede redimensionarse hasta un 200 % sin tecnología
-            de asistencia, sin pérdida de contenido ni funcionalidad.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/reflow.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.4.10 Reflow (Level AA)
-          </a>
-          <p>
-            El contenido puede presentarse sin pérdida de información o funcionalidad y sin necesidad de desplazarse en
-            dos dimensiones, siempre que el desplazamiento vertical se ajuste a un ancho equivalente a 320 píxeles CSS y
-            el desplazamiento horizontal a una altura equivalente a 256 píxeles CSS, excepto en aquellas partes del
-            contenido que requieran un diseño bidimensional para su uso o significado.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.1.1 Keyboard (Level A)
-          </a>
-          <p>Todas las funcionalidades del contenido se puede operar a través de una interfaz de teclado.</p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.4.3 Focus Order (Level A)
-          </a>
-          <p>
-            Al navegar por las migas de pan con el teclado, el foco en los enlaces permanece en orden lógico en relación
-            con los demás enlaces en la ruta de navegación.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.4.7 Focus Visible (Level AA)
-          </a>
-          <p>
-            Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque
-            del teclado es visible. Cuando utiliza un teclado para navegar por las migas de pan, los enlaces tienen un
-            subrayado visible y un recuadro outline que indica que los enlaces son interactivos.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 4.1.2 Name, Role, Value (Level A)
-          </a>
-          <p className="mt-2">
-            Para todos los componentes de la interfaz de usuario (incluidos, entre otros: elementos de formulario,
-            enlaces y componentes generados por scripts), el nombre y la función se pueden determinar mediante
-            programación; los estados, propiedades y valores que puede establecer el usuario se pueden configurar
-            mediante programación; y la notificación de cambios en estos elementos está disponible para los agentes de
-            usuario, incluidas las tecnologías de asistencia.
-          </p>
+          <CriteriosWCAG list={['1.3.1', '1.4.11', '1.4.3', '1.4.4', '1.4.10', '2.1.1', '2.4.3', '2.4.7', '4.1.2']} />
         </>
       ),
     },

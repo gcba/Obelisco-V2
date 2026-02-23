@@ -6,6 +6,7 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import CodeBox from '@/components/CodeBox';
+import CriteriosWCAG from '@/components/CriteriosWCAG';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
@@ -440,76 +441,7 @@ const SpinnerDocs: React.FC = () => {
       title: 'Criterios WCAG aplicables',
       content: (
         <>
-          <a
-            className="external mb-2"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.4.11 Non-Text Contrast (Level AA)
-          </a>
-          <p>
-            La presentación visual de elementos de la interfaz de usuario y objetos gráficos tiene por lo menos una
-            relación de contraste de 3:1 con respecto a los colores adyacentes.
-          </p>
-
-          <a
-            className="external mb-2"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.4.3 Contrast (Minimum) (Level AA)
-          </a>
-          <p>
-            La presentación visual de texto y de imágenes de texto tiene una relación de contraste de por lo menos
-            4.5:1, excepto textos grandes e imágenes de texto grande que tienen un contraste de por lo menos 3:1, textos
-            o imágenes que son parte de un componente inactivo de interfaz de usuario o son pura decoración, o
-            logotipos.
-          </p>
-
-          <a
-            className="external mb-2"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/resize-text"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.4.4 Resize Text (Level AA)
-          </a>
-          <p>
-            Excepto por los subtítulos e imágenes de texto, el texto puede redimensionarse hasta un 200 % sin tecnología
-            de asistencia, sin pérdida de contenido ni funcionalidad.
-          </p>
-
-          <a
-            className="external mb-2"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/consistent-identification.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 3.2.4 Consistent Identification (Level AA)
-          </a>
-          <p>
-            Los componentes que tienen la misma funcionalidad dentro de un conjunto de páginas web se identifican de
-            manera consistente. Los enlaces que dirigen a un mismo lugar deben tener la misma identificación para no
-            generar confusiones.
-          </p>
-
-          <a
-            className="external mb-2"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 4.1.2 Name, Role, Value (Level A)
-          </a>
-          <p>
-            Para todos los componentes de la interfaz de usuario (incluidos, entre otros: elementos de formulario,
-            enlaces y componentes generados por scripts), el nombre y la función se pueden determinar mediante
-            programación; los estados, propiedades y valores que puede establecer el usuario se pueden configurar
-            mediante programación; y la notificación de cambios en estos elementos está disponible para los agentes de
-            usuario, incluidas las tecnologías de asistencia.
-          </p>
+          <CriteriosWCAG list={['1.4.11', '1.4.3', '1.4.4', '3.2.4', '4.1.2']} />
         </>
       ),
     },

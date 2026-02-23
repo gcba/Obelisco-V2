@@ -4,6 +4,7 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import CodeBox from '@/components/CodeBox';
+import CriteriosWCAG from '@/components/CriteriosWCAG';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
@@ -432,145 +433,9 @@ const ModalDocs: React.FC = () => {
       title: 'Criterios WCAG aplicados',
       content: (
         <>
-          <a
-            className="external"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"
-          >
-            Success Criterion 1.3.1 Info and Relationships (Level A)
-          </a>
-          <p>
-            La información, la estructura y las relaciones transmitidas a través de la presentación pueden determinarse
-            mediante programación o están disponibles en el texto.
-          </p>
-          <a
-            className="external"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast"
-          >
-            Success Criterion 1.4.11 Non-Text Contrast (Level AA)
-          </a>
-          <p>
-            La presentación visual de elementos de la interfaz de usuario y objetos gráficos tiene por lo menos una
-            relación de contraste de 3:1 con respecto a los colores adyacentes.
-          </p>
-          <a
-            className="external"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html"
-          >
-            Success Criterion 1.4.3 Contrast (Minimum) (Level AA)
-          </a>
-          <p>
-            La presentación visual de texto y de imágenes de texto tiene una relación de contraste de por lo menos
-            4.5:1, excepto textos grandes e imágenes de texto grande que tienen un contraste de por lo menos 3:1, textos
-            o imágenes que son parte de un componente inactivo de interfaz de usuario o son pura decoración, o
-            logotipos.
-          </p>
-          <a
-            className="external"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/resize-text"
-          >
-            Success Criterion 1.4.4 Resize Text (Level AA)
-          </a>
-          <p>
-            Excepto por los subtítulos e imágenes de texto, el texto puede redimensionarse hasta un 200 % sin tecnología
-            de asistencia, sin pérdida de contenido ni funcionalidad.
-          </p>
-          <a
-            className="external"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/reflow.html"
-          >
-            Success Criterion 1.4.10 Reflow (Level AA)
-          </a>
-          <p>
-            El contenido puede presentarse sin pérdida de información o funcionalidad y sin necesidad de desplazarse en
-            dos dimensiones, siempre que el desplazamiento vertical se ajuste a un ancho equivalente a 320 píxeles CSS y
-            el desplazamiento horizontal a una altura equivalente a 256 píxeles CSS, excepto en aquellas partes del
-            contenido que requieran un diseño bidimensional para su uso o significado.
-          </p>
-          <a
-            className="external"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html"
-          >
-            Success Criterion 2.1.1 Keyboard (Level A)
-          </a>
-          <p>Todas las funcionalidades del contenido se puede operar a través de una interfaz de teclado.</p>
-          <a
-            className="external"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html"
-          >
-            Success Criterion 2.1.2 No Keyboard Trap (Level A)
-          </a>
-          <p>
-            Si el foco del teclado puede moverse a un componente de la página utilizando una interfaz de teclado,
-            también debe ser posible mover el foco fuera de ese componente usando únicamente la misma interfaz de
-            teclado. Si se requiere algo más que las teclas de flecha, tabulador u otros métodos estándar para salir, se
-            debe informar al usuario sobre el método necesario para mover el foco.
-          </p>
-          <a
-            className="external"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html"
-          >
-            Success Criterion 2.4.3 Focus Order (Level A)
-          </a>
-          <p>
-            Si una página web puede navegarse de forma secuencial y las secuencias de navegación afectan el significado
-            o la operación, los componentes enfocables reciben el foco en un orden que preserve el significado y la
-            operabilidad.
-          </p>
-          <a
-            className="external"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html"
-          >
-            Success Criterion 2.4.7 Focus Visible (Level AA)
-          </a>
-          <p>
-            Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque
-            del teclado es visible.
-          </p>
-          <a
-            className="external"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation.html"
-          >
-            Success Criterion 3.2.3 Consistent Navigation (Level AA)
-          </a>
-          <p>
-            Los mecanismos de navegación que se repiten en varias páginas web dentro de un conjunto de páginas aparecen
-            en el mismo orden relativo cada vez que se repiten, a menos que el usuario inicie un cambio.
-          </p>
-          <a
-            className="external"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html"
-          >
-            Success Criterion 4.1.2 Name, Role, Value (Level A)
-          </a>
-          <p>
-            Para todos los componentes de la interfaz de usuario (incluidos, entre otros: elementos de formulario,
-            enlaces y componentes generados por scripts), el nombre y la función se pueden determinar mediante
-            programación; los estados, propiedades y valores que puede establecer el usuario se pueden configurar
-            mediante programación; y la notificación de cambios en estos elementos está disponible para los agentes de
-            usuario, incluidas las tecnologías de asistencia.
-          </p>
+          <CriteriosWCAG
+            list={['1.3.1', '1.4.11', '1.4.3', '1.4.4', '1.4.10', '2.1.1', '2.1.2', '2.4.3', '2.4.7', '3.2.3', '4.1.2']}
+          />
         </>
       ),
     },

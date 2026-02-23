@@ -11,6 +11,18 @@
     "title": "Success Criterion 1.3.1 Info and Relationships (Level A)",
     "description": "La información, la estructura y las relaciones transmitidas a través de la presentación pueden determinarse mediante programación o están disponibles en el texto."
   },
+	{
+		"id": "1.3.2",
+		"url": "https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence.html",
+		"title": "1.3.2 Meaningful Sequence (Level A)",
+		"description": "Cuando la secuencia en que se presenta el contenido afecta su significado, se puede determinar mediante programación una secuencia de lectura correcta."
+	},
+	{
+		"id": "1.4.1",
+		"url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html",
+		"title": "1.4.1 Use of Color (Level A)",
+		"description": "El color no se utiliza como el único medio visual para transmitir información, indicar una acción, provocar una respuesta o distinguir un elemento visual."
+	},
   {
     "id": "1.4.3",
     "url": "https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html",
@@ -54,7 +66,7 @@
     "description": "Si el foco del teclado se puede mover a un componente de la página usando una interfaz de teclado, entonces el foco se puede mover lejos de ese componente usando solo una interfaz de teclado."
   },
   {
-    "id": "2.2.2",
+    "id": "2.2.1",
     "url": "https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable.html",
     "title": "2.2.1 Timing Adjustable (Level A)",
     "description": "Si hay limitaciones de tiempo establecidas por el contenido, se debe cumplir una de las siguientes condiciones: desactivar, ajustar, extender, excepción en tiempo real, excepción esencial, excepción de 20 horas."

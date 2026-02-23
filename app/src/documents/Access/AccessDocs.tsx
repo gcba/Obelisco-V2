@@ -5,11 +5,11 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import CodeBox from '@/components/CodeBox';
+import CriteriosWCAG from '@/components/CriteriosWCAG';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import LinkClient from '../../components/LinkClient/index';
-import CriteriosWCAG from '../CriteriosWCAG';
 import {
   SIMPLE_ACCESS,
   DESCRIPTION_ACCESS,

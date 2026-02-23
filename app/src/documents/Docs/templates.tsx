@@ -121,7 +121,7 @@ const TemplatesComponents: React.FC = () => {
 
               <div className="col">
                 <div className="card h-100">
-                  <i className="bx bxs-user card-icon"></i>
+                  <span className="material-symbols-rounded card-icon">account_circle</span>{' '}
                   <div className="card-body">
                     <h3 className="card-title">
                       <a href={`${basePath}/templates/perfil-institucional`} className="card-title-link">

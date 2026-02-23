@@ -354,6 +354,43 @@ export const HERO_CON_DESPLEGABLES = `<header class="hero">
   <div class="aside bg-aside-hero-dark"></div>
 </header>`;
 
+export const HERO_NOTICIAS = `<header class="hero">
+  <div class="content corner">
+    <div class="d-flex flex-column">
+      <nav aria-label="Navegación secundaria">
+        <ol class="breadcrumb m-0">
+          <li class="breadcrumb-item">
+            <a href="#">Inicio</a>
+          </li>
+        </ol>
+      </nav>
+      <div>
+        <h1 class="mb-3">Encabezado de la página</h1>
+        <p class="lead m-0">
+          Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la
+          convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
+        </p>
+      </div>
+      <div class="d-flex flex-wrap align-items-center column-gap-2 row-gap-4">
+				<span class="text-body-secondary me-2">Compartir en redes</span>
+				<a href="#" class="shadow-none" target="_blank">
+					<i class="bxl bx-facebook-circle o-icon text-primary"></i>
+				</a>
+				<a href="#" class="shadow-none" target="_blank">
+					<i class="bxl bx-instagram o-icon text-primary"></i>
+				</a>
+				<a href="#" class="shadow-none" target="_blank">
+					<i class="bxl bx-twitter-x o-icon text-primary"></i>
+				</a>
+				<a href="#" class="shadow-none" target="_blank">
+					<i class="bxl bx-linkedin-square o-icon text-primary"></i>
+				</a>
+			</div>
+    </div>
+  </div>
+  <div class="aside bg-aside-hero-dark"></div>
+</header>`;
+
 export const HERO_COLORES = `<!-- default -->
 <header class="hero bg-content-hero-cyan">
   <div class="content corner">

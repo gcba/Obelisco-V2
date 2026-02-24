@@ -81,7 +81,7 @@ $badge-primary-border-color: (
   text-decoration: none;
   cursor: pointer;
 
-  i {
+  span.material-symbols-rounded {
     color: $original-color;
     text-decoration: none;
   }
@@ -93,7 +93,7 @@ $badge-primary-border-color: (
     background-color: map-get($badge-secondary-hover-bg, $color-name);
     text-decoration: none;
 
-    i {
+    span.material-symbols-rounded {
       color: $original-color;
       text-decoration: none;
     }
@@ -111,7 +111,7 @@ $badge-primary-border-color: (
     text-decoration: none;
     border: 1px solid transparent;
 
-    i {
+    span.material-symbols-rounded {
       color: $original-color;
       text-decoration: none;
     }
@@ -130,7 +130,7 @@ $badge-primary-border-color: (
   color: $white;
   cursor: pointer;
 
-  i {
+  span.material-symbols-rounded {
     color: $white;
     text-decoration: none;
   }
@@ -142,7 +142,7 @@ $badge-primary-border-color: (
     background-color: map-get($badge-primary-border-color, $color-name);
     text-decoration: none;
 
-    i {
+    span.material-symbols-rounded {
       color: $white;
       text-decoration: none;
     }
@@ -160,7 +160,7 @@ $badge-primary-border-color: (
     text-decoration: none;
     border: 1px solid transparent;
 
-    i {
+    span.material-symbols-rounded {
       color: $white;
       text-decoration: none;
     }
@@ -217,6 +217,10 @@ $badge-primary-border-color: (
     padding: 8px;
     height: 24px;
     min-height: 24px;
+  }
+
+  span.material-symbols-rounded {
+    font-size: 20px;
   }
 }
 
@@ -281,7 +285,7 @@ $badge-primary-border-color: (
 a.badge-remove {
   @include badge-select-remove-base;
 
-  i {
+  span.material-symbols-rounded {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -295,7 +299,7 @@ a.badge-remove {
     cursor: pointer;
   }
 
-  &.badge-lg i {
+  &.badge-lg span.material-symbols-rounded {
     width: 20px;
     height: 20px;
     font-size: 2rem;
@@ -304,13 +308,7 @@ a.badge-remove {
 
   &:hover,
   &.hover {
-    background-color: $white;
-
-    i {
-      background-color: $slate-100;
-      text-decoration: none;
-      border-radius: 2px;
-    }
+    background-color: $slate-100;
 
     span {
       text-decoration: none;
@@ -325,7 +323,7 @@ a.badge-remove {
     box-shadow: none;
     border: 1px solid $blue-900;
 
-    i {
+    span.material-symbols-rounded {
       text-decoration: none;
       box-shadow: $focus-box-shadow-subtle;
       border-radius: 2px;
@@ -357,6 +355,7 @@ a.badge-remove {
     background-color: $blue-900;
     color: $white;
     text-decoration: none;
+    box-shadow: 0 0 0 0.25rem $cyan-800;
   }
 
   &:focus,
@@ -364,7 +363,7 @@ a.badge-remove {
     background-color: $sky-900;
     color: $white;
     text-decoration: none;
-    box-shadow: 0 0 0 0.125rem $blue-900;
+    box-shadow: none;
   }
 }
 

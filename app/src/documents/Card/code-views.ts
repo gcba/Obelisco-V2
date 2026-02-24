@@ -175,8 +175,8 @@ export const VERTICAL_AGENDA = `<div class="card card-eventos">
     <div class="card-body">
         <p class="card-headline">TIPO DE EVENTO</p>
         <div class="mb-3">
-          <span class="badge badge-default">Etiqueta</span>
-          <span class="badge badge-default">Tipo de público</span>
+          <span class="badge badge-s-default">Etiqueta</span>
+          <span class="badge badge-s-default">Tipo de público</span>
         </div>
         <h3 class="card-title">
           <a href="#" class="card-title-link ellipsis-2" target="_blank" rel="noopener noreferrer">Este es el título del evento que puede contener 2 líneas de texto</a>

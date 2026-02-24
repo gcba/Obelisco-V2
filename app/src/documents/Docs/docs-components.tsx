@@ -490,55 +490,58 @@ const sections = [
     title: 'Etiquetas',
     content: (
       <ul className="docs-list">
-        <p className="text-md mb-2">
-          De la versión <strong>1.7.0</strong> en adelante, son estas clases:
+        <p className="text-md mt-4 mb-2">
+          <strong>Versión 1.10.0 ⬇️</strong>
         </p>
-        <li>
-          Se crearon nuevas clases para etiquetas:
-          <ul>
-            {/* Estáticas */}
-            <li>
-              <code>.badge-p-color</code>
-            </li>
-            <li>
-              <code>.badge-s-color</code>
-            </li>
-            {/* Estáticas */}
-            {/* Clickeables */}
-            <li>
-              <code>.badge-p-link-color</code>
-            </li>
-            <li>
-              <code>.badge-s-link-color</code>
-            </li>
-            {/* Clickeables */}
-          </ul>
-          <li>Se crearon nuevas clases para tamaños:</li>
-          <ul>
-            {/* Tamaños */}
-            <li>
-              <code>.badge-sm</code>
-            </li>
-            <li>
-              <code>.badge-lg</code>
-            </li>
-            {/* Tamaños */}
-          </ul>
-          <li>Se crearon nuevas Etiquetas. Seleccionables y Eliminables:</li>
-          <ul>
-            {/* Tamaños */}
-            <li>
-              <code>.badge-remove</code>
-            </li>
-            <li>
-              <code>.badge-select</code>
-            </li>
-            {/* Tamaños */}
-          </ul>
-        </li>
+
+        <li> Se crearon nuevas clases (primarias y secundarias) para etiquetas.</li>
+        <ul>
+          {/* Estáticas */}
+          <li>
+            <code>.badge-p-{'{color}'}</code>
+          </li>
+          <li>
+            <code>.badge-s-{'{color}'}</code>
+          </li>
+          {/* Estáticas */}
+          {/* Clickeables */}
+          <li>
+            <code>.badge-p-link-{'{color}'}</code>
+          </li>
+          <li>
+            <code>.badge-s-link-{'{color}'}</code>
+          </li>
+          <p>
+            Donde <code>{'{color}'}</code> puede ser: <code>default</code>, <code>sky</code>, <code>green</code>,{' '}
+            <code>red</code>, <code>orange</code> o <code>purple</code>
+          </p>
+        </ul>
+        {/* Clickeables */}
+        <li>Se crearon nuevas clases para tamaños:</li>
+        <ul>
+          {/* Tamaños */}
+          <li>
+            <code>.badge-sm</code>
+          </li>
+          <li>
+            <code>.badge-lg</code>
+          </li>
+          {/* Tamaños */}
+        </ul>
+        <li>Se crearon nuevas variantes de etiquetas Seleccionables y Eliminables:</li>
+        <ul>
+          {/* Tamaños */}
+          <li>
+            <code>.badge-select</code>
+          </li>
+          <li>
+            <code>.badge-remove</code>
+          </li>
+          {/* Tamaños */}
+        </ul>
 
         <p className="text-md mt-4 mb-2">
-          De la versión <strong>1.6.1</strong> para abajo, son estas clases:
+          <strong>Versión 1.6.1 ⬇️</strong>
         </p>
         <li>
           Se crean las clases <code>.badge-default</code> y <code>.badge-warning</code>.{' '}
@@ -912,6 +915,31 @@ const sections = [
     title: 'Tarjetas',
     content: (
       <ul className="docs-list">
+        <p className="text-md my-4">
+          <strong>Versión 1.8.0 ⬇️</strong>
+        </p>
+        <li>
+          Se crea la clase <code>.card-eventos</code>, para contener los estilos necesarios para la nueva{' '}
+          <a href="https://gcba.github.io/Obelisco-V2/components/cards#section-dev-10">Tarjeta de Eventos</a>.
+        </li>
+        <li>La Tarjeta de Eventos, ahora admite cómo máximo 2 Etiquetas.</li>
+        <li>También, se agregó un ítem de información del evento: Ubicación</li>
+
+        <p className="text-md my-4">
+          <strong>Versión 1.6.1 ⬇️</strong>
+        </p>
+        <li>
+          Se crean las clases <code>{'.card-border-{direction}-{color}'}</code>
+          <br />
+          Donde <code>{'direction'}</code>, es el posicionamiento: <code>left</code> o <code>bottom</code>
+          <br />
+          Donde <code>{'color'}</code>, es la miscelánea de color: <code>purple</code>, <code>red</code>,{' '}
+          <code>sky</code>, <code>yellow</code>, <code>cyan</code> o <code>blue</code>
+        </li>
+
+        <p className="text-md my-4">
+          <strong>Versión 1.6.0 y anterior ⬇️</strong>
+        </p>
         <li>
           Quedan deprecadas las clases <code>.card-simple</code> y <code>.card-lg</code>.
         </li>
@@ -935,30 +963,6 @@ const sections = [
           Las clases <code>.card-deck</code>, <code>.max-cards-2</code> y <code>.card-column</code> quedan deprecadas y
           se reemplazan por <code>.card-items-2</code>.
         </li>
-
-        <p className="text-md my-4">
-          <strong>Versión 1.6.1 ⬇️</strong>
-        </p>
-
-        <li>
-          Se crean las clases <code>{'.card-border-{direction}-{color}'}</code>
-          <br />
-          Donde <code>{'direction'}</code>, es el posicionamiento: <code>left</code> o <code>bottom</code>
-          <br />
-          Donde <code>{'color'}</code>, es la miscelánea de color: <code>purple</code>, <code>red</code>,{' '}
-          <code>sky</code>, <code>yellow</code>, <code>cyan</code> o <code>blue</code>
-        </li>
-
-        <p className="text-md my-4">
-          <strong>Versión 1.8.0 ⬇️</strong>
-        </p>
-
-        <li>
-          Se crea la clase <code>.card-eventos</code>, para contener los estilos necesarios para la nueva{' '}
-          <a href="https://gcba.github.io/Obelisco-V2/components/cards#section-dev-10">Tarjeta de Eventos</a>.
-        </li>
-        <li>La Tarjeta de Eventos, ahora admite cómo máximo 2 Etiquetas.</li>
-        <li>También, se agregó un ítem de información del evento: Ubicación</li>
       </ul>
     ),
   },

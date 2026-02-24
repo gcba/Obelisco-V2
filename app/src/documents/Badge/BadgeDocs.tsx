@@ -43,7 +43,7 @@ const BadgeDocs: React.FC = () => {
           <div className="row justify-content-center">
             <div className="col-auto">
               <span className="badge badge-p-default">
-                <i className="bx bx-grid-alt"></i>Etiqueta
+                <span className="material-symbols-rounded">ink_selection</span> Etiqueta
               </span>
             </div>
           </div>
@@ -73,7 +73,7 @@ const BadgeDocs: React.FC = () => {
           <div className="row justify-content-center">
             <div className="col-auto">
               <span className="badge badge-s-default">
-                <i className="bx bx-grid-alt"></i>Etiqueta
+                <span className="material-symbols-rounded">ink_selection</span> Etiqueta
               </span>
             </div>
           </div>
@@ -108,7 +108,7 @@ const BadgeDocs: React.FC = () => {
           <div className="row justify-content-center">
             <div className="col-auto">
               <LinkClient className="badge badge-p-link-default">
-                <i className="bx bx-grid-alt"></i>
+                <span className="material-symbols-rounded">ink_selection</span>
                 <span>Etiqueta</span>
               </LinkClient>
             </div>
@@ -141,7 +141,7 @@ const BadgeDocs: React.FC = () => {
           <div className="row justify-content-center">
             <div className="col-auto">
               <LinkClient className="badge badge-s-link-default">
-                <i className="bx bx-grid-alt"></i>
+                <span className="material-symbols-rounded">ink_selection</span>
                 <span>Etiqueta</span>
               </LinkClient>
             </div>
@@ -209,19 +209,19 @@ const BadgeDocs: React.FC = () => {
           <div className="row justify-content-center align-items-center gap-3">
             <div className="col-auto">
               <LinkClient className="badge badge-remove">
-                <i className="bx bx-x"></i>
+                <span className="material-symbols-rounded">close</span>
                 <span>Etiqueta</span>
               </LinkClient>
               <LinkClient className="badge badge-remove hover">
-                <i className="bx bx-x"></i>
+                <span className="material-symbols-rounded">close</span>
                 <span>Etiqueta</span>
               </LinkClient>
               <LinkClient className="badge badge-remove focus">
-                <i className="bx bx-x"></i>
+                <span className="material-symbols-rounded">close</span>
                 <span>Etiqueta</span>
               </LinkClient>
               <LinkClient className="badge badge-remove disabled">
-                <i className="bx bx-x"></i>
+                <span className="material-symbols-rounded">close</span>
                 <span>Etiqueta</span>
               </LinkClient>
             </div>
@@ -236,15 +236,23 @@ const BadgeDocs: React.FC = () => {
           <div className="row justify-content-center align-items-center gap-3">
             <div className="col-auto">
               <span className="badge badge-select" tabIndex={0}>
+                <span className="material-symbols-rounded">ink_selection</span>
                 Etiqueta
               </span>
               <span className="badge badge-select hover" tabIndex={0}>
+                <span className="material-symbols-rounded">ink_selection</span>
                 Etiqueta
               </span>
               <span className="badge badge-select focus" tabIndex={0}>
+                <span className="material-symbols-rounded">ink_selection</span>
+                Etiqueta
+              </span>
+              <span className="badge badge-select active" tabIndex={0}>
+                <span className="material-symbols-rounded">ink_selection</span>
                 Etiqueta
               </span>
               <span className="badge badge-select disabled" tabIndex={0}>
+                <span className="material-symbols-rounded">ink_selection</span>
                 Etiqueta
               </span>
             </div>

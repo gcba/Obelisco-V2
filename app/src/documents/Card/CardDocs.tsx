@@ -345,8 +345,8 @@ const CardDocs: React.FC = () => {
                 <div className="card-body">
                   <p className="card-headline">TIPO DE EVENTO</p>
                   <div className="mb-3">
-                    <span className="badge badge-default">Etiqueta</span>
-                    <span className="badge badge-default">Tipo de público</span>
+                    <span className="badge badge-s-default">Etiqueta</span>
+                    <span className="badge badge-s-default">Tipo de público</span>
                   </div>
                   <h3 className="card-title">
                     <LinkClient className="card-title-link ellipsis-2">

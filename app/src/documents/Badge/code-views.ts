@@ -1,13 +1,12 @@
 export const BADGE_ESTATICA_PRIMARIA_CON_ICONO = `<span className="badge badge-p-default">
-  <i className="bx bx-grid-alt"></i>
+<span className="material-symbols-rounded">grid_view</span> 
   Etiqueta
 </span>`;
 
 export const BADGE_ESTATICA_PRIMARIA_SOLO_TEXTO = `<span class="badge badge-p-default">Etiqueta</span>`;
 
 export const BADGE_ESTATICA_SECUNDARIA_CON_ICONO = `<span className="badge badge-s-default">
-  <i className="bx bx-grid-alt"></i>
-  Etiqueta
+<span className="material-symbols-rounded">grid_view</span>   Etiqueta
 </span>`;
 
 export const BADGE_ESTATICA_SECUNDARIA_SOLO_TEXTO = `<span class="badge badge-s-default">Etiqueta</span>`;
@@ -18,7 +17,7 @@ export const BADGE_REMOVE = `<a href="#" class="badge badge-remove" target="_bla
 </a>
 // Disabled
 <a href="#" class="badge badge-remove disabled" target="_blank" rel="noopener noreferrer">
-  <i class="bx bx-x"></i>
+  <span className="material-symbols-rounded">grid_view</span> 
   <span>Etiqueta</span>
 </a>`;
 
@@ -27,7 +26,7 @@ export const BADGE_SIZES = `<span className="badge badge-s-default badge-sm">Eti
 <span className="badge badge-s-default badge-lg">Etiqueta</span>`;
 
 export const BADGE_CLICKEABLE_PRIMARIA_CON_ICONO = `<a href="#" class="badge badge-p-link-default" target="_blank" rel="noopener noreferrer">
-  <i class="bx bx-grid-alt"></i>
+  <span className="material-symbols-rounded">grid_view</span> 
   <span>Etiqueta</span>
 </a>
 `;

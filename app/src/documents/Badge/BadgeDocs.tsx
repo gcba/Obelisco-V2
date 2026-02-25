@@ -236,23 +236,18 @@ const BadgeDocs: React.FC = () => {
           <div className="row justify-content-center align-items-center gap-3">
             <div className="col-auto">
               <span className="badge badge-select" tabIndex={0}>
-                <span className="material-symbols-rounded">ink_selection</span>
                 Etiqueta
               </span>
               <span className="badge badge-select hover" tabIndex={0}>
-                <span className="material-symbols-rounded">ink_selection</span>
                 Etiqueta
               </span>
               <span className="badge badge-select focus" tabIndex={0}>
-                <span className="material-symbols-rounded">ink_selection</span>
                 Etiqueta
               </span>
               <span className="badge badge-select active" tabIndex={0}>
-                <span className="material-symbols-rounded">ink_selection</span>
                 Etiqueta
               </span>
               <span className="badge badge-select disabled" tabIndex={0}>
-                <span className="material-symbols-rounded">ink_selection</span>
                 Etiqueta
               </span>
             </div>

@@ -24,7 +24,8 @@ const ReleasesComponents: React.FC = () => {
         <ul className="docs-list">
           <p>La Versión 1.10.0 contiene lo siguiente: </p>
           <li>
-            Se crean nuevas variante de Etiquetas. En{' '}
+            Se crean nuevas variantes del componente Etiqueta. Se separan por etiquetas primarias y secundarias. Además existen nuevas variantes 
+            como seleccionables y con cierre. En{' '}
             <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-15">
               Cambios en componentes
             </a>{' '}

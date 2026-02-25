@@ -19,6 +19,22 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
+      title: 'Version 1.10.0',
+      content: (
+        <ul className="docs-list">
+          <p>La Versión 1.10.0 contiene lo siguiente: </p>
+          <li>
+            Se crean nuevas variantes del componente Etiqueta. Se separan por etiquetas primarias y secundarias. Además
+            existen nuevas variantes como seleccionables y con cierre. En{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-15">
+              Cambios en componentes
+            </a>{' '}
+            está la documentación de las nuevas clases.
+          </li>
+        </ul>
+      ),
+    },
+    {
       title: 'Version 1.9.1',
       content: (
         <ul className="docs-list">

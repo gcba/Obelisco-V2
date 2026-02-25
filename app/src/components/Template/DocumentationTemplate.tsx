@@ -12,6 +12,7 @@ export interface Section {
   title?: string | React.ReactNode;
   subtitle?: string | React.ReactNode;
   subtitleBold?: string | React.ReactNode;
+  tertiarytitle?: string | React.ReactNode;
   content?: React.ReactNode;
   description?: string;
   firstTitle?: boolean;
@@ -26,7 +27,6 @@ interface DocumentationTemplateProps {
 const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections, type, noScrollButton }) => {
   const sectionRefs = useMemo(() => sections.map(() => React.createRef<HTMLDivElement>()), [sections]);
   const [activeIndex, setActiveIndex] = useState<number>(0);
-
   const handleScroll = useCallback(() => {
     sectionRefs.forEach((ref, index) => {
       const element = ref.current;
@@ -38,14 +38,12 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
       }
     });
   }, [sectionRefs]);
-
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, [handleScroll]);
-
   return (
     <Scrollspy sectionRefs={sectionRefs} offset={84}>
       {() => (
@@ -64,13 +62,17 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
                       {section.title}
                     </h2>
                   )}
-
                   {section.subtitle && (
                     <h3 className="text-xl mb-2" style={{ marginLeft: '-16px', marginBottom: '8px !important' }}>
                       <ScrollspySubtitle text={section.subtitle} />
                     </h3>
                   )}
-
+                  {section.tertiarytitle && (
+                    <h3 className="text-xl mb-2" style={{ marginLeft: '-16px', marginBottom: '8px !important' }}>
+                      <ScrollspySubtitle text={section.tertiarytitle} tertiaryLevel={true} />{' '}
+                      {/* Con tertiaryLevel aquí */}
+                    </h3>
+                  )}
                   {section.subtitleBold && (
                     <h3
                       className="text-xl mb-2 fw-semibold"
@@ -79,7 +81,6 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
                       <ScrollspySubtitle text={section.subtitleBold} />
                     </h3>
                   )}
-
                   {section.description && <SimpleText description={section.description} />}
                   {section.content && <div style={{ marginBottom: '32px' }}>{section.content}</div>}
                 </section>
@@ -108,6 +109,13 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
                         {section.subtitle && <ScrollspySubtitle text={section.subtitle} ScrollspyComponent={true} />}
                         {section.subtitleBold && (
                           <ScrollspySubtitle text={section.subtitleBold} ScrollspyComponent={true} />
+                        )}
+                        {section.tertiarytitle && (
+                          <ScrollspySubtitle
+                            text={section.tertiarytitle}
+                            ScrollspyComponent={true}
+                            tertiaryLevel={true}
+                          />
                         )}
                       </a>
                     </li>

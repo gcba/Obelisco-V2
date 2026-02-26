@@ -8,6 +8,7 @@ import React from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
+import CriteriosWCAG from '@/components/CriteriosWCAG';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
@@ -913,97 +914,9 @@ const PatternsComponents: React.FC = () => {
       title: 'Criterios WCAG aplicados',
       content: (
         <>
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.3.1 Info and Relationships (Level A)
-          </a>
-          <p className="mt-2">
-            La información, la estructura y las relaciones transmitidas a través de la presentación pueden determinarse
-            mediante programación o están disponibles en el texto.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.2.5 Re-authenticating (Level AAA)
-          </a>
-          <p className="mt-2">
-            Cuando una sesión autenticada expira, la persona usuaria puede continuar la actividad sin pérdida de datos
-            después de re-autenticarse.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.4.6 Headings and Labels (Level AA)
-          </a>
-          <p className="mt-2">Los encabezados y las etiquetas describen el tema o el propósito.</p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/resize-text"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 3.2.2 On Input (Level A)
-          </a>
-          <p className="mt-2">
-            El cambio de la configuración de cualquier componente de la interfaz no provoca automáticamente un cambio de
-            contexto a menos que la persona usuaria haya sido informada del comportamiento antes de utilizar el
-            componente.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/reflow.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion Labels or Instructions (Level A)
-          </a>
-          <p className="mt-2">
-            Se proporcionan etiquetas o instrucciones cuando el contenido requiere la entrada de la persona usuaria.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 4.1.2 Name, Role, Value (Level A)
-          </a>
-          <p className="mt-2">
-            Para todos los componentes de la interfaz de usuario (incluidos, entre otros: elementos de formulario,
-            enlaces y componentes generados por scripts), el nombre y la función se pueden determinar mediante
-            programación; los estados, propiedades y valores que puede establecer el usuario se pueden configurar
-            mediante programación; y la notificación de cambios en estos elementos está disponible para los agentes de
-            usuario, incluidas las tecnologías de asistencia.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            G98: Proporcionar la posibilidad de revisar y corregir las respuestas antes de enviarlas
-          </a>
-          <p className="mt-2">
-            Antes de que se produzca el paso final que compromete la transacción, se proporcionan instrucciones para
-            solicitar que la persona usuaria revise los datos ingresados y confirme. Una vez que la persona confirma, la
-            transacción se completa.
-          </p>
+          <CriteriosWCAG
+            list={['1.3.1', '2.2.5', '2.4.6', '3.2.2', 'Reflow (Level AA)', '4.1.2', 'No Keyboard Trap (Level A)']}
+          />
         </>
       ),
     },

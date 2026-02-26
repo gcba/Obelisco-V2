@@ -1029,6 +1029,9 @@ const HeroHeaderDocs: React.FC = () => {
                             <li className="breadcrumb-item">
                               <a href="#">Inicio</a>
                             </li>
+                            <li className="breadcrumb-item">
+                              <a href="#">Seccion</a>
+                            </li>
                           </ol>
                         </nav>
 

@@ -689,7 +689,21 @@ const ACCESSIBILITY = [
     title: 'Criterios WCAG aplicados',
     content: (
       <>
-        <CriteriosWCAG list={['1.1.1', '1.4.11', '1.4.3', '1.4.4', '2.1.1', '2.1.2', '2.4.7', '4.1.2']} />
+        <CriteriosWCAG
+          list={['1.1.1', '1.4.11', '1.4.3', '1.4.4', '2.1.1', '2.1.2', '2.4.7', '4.1.2']}
+          customItem={[
+            {
+              customId: '2.4.7',
+              customDescripcion:
+                'Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque del teclado es visible.',
+            },
+            {
+              customId: '4.1.2',
+              customDescripcion:
+                'Para todos los componentes de la interfaz de usuario (incluidos, entre otros: elementos de formulario, enlaces y componentes generados por scripts), el nombre y la función se pueden determinar mediante programación; los estados, propiedades y valores que puede establecer el usuario se pueden configurar mediante programación; y la notificación de cambios en estos elementos está disponible para los agentes de usuario, incluidas las tecnologías de asistencia.',
+            },
+          ]}
+        />
       </>
     ),
   },

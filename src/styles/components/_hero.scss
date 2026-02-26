@@ -444,4 +444,8 @@ header.hero.bg-content-hero-dark .content {
   div span.fw-semibold.me-3 {
     color: $white;
   }
+
+  .breadcrumb-item::before {
+    background: transparent $breadcrumb-divider-dark no-repeat center center !important;
+  }
 }

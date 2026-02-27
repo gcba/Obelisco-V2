@@ -1310,7 +1310,16 @@ const ButtonDocs: React.FC = () => {
       title: 'Criterios WCAG aplicados',
       content: (
         <>
-          <CriteriosWCAG list={['1.1.1', '1.3.1', '1.4.3', '1.4.11', '2.4.7', '2.5.8']} />
+          <CriteriosWCAG
+            list={['1.1.1', '1.3.1', '1.4.3', '1.4.11', '2.4.7', '2.5.8']}
+            customItem={[
+              {
+                customId: '2.4.7',
+                customDescripcion:
+                  'La presentación visual de elementos de la interfaz de usuario y objetos gráficos tiene por lo menos una relación de contraste de 3:1 con respecto a los colores adyacentes.',
+              },
+            ]}
+          />
         </>
       ),
     },

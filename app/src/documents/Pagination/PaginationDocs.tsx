@@ -624,6 +624,18 @@ const PaginationDocs: React.FC = () => {
         <>
           <CriteriosWCAG
             list={['1.3.1', '1.3.2', '1.4.1', '1.4.11', '1.4.12', '1.4.3', '2.1.1', '2.1.2', '2.2.1', '2.5.3', '4.1.3']}
+            customItem={[
+              {
+                customId: '1.4.3',
+                customDescripcion:
+                  'La presentación visual del texto y las imágenes del texto tiene una relación de contraste de al menos 4,5:1.',
+              },
+              {
+                customId: '2.1.2',
+                customDescripcion:
+                  'Si el foco del teclado se puede mover a un componente de la página usando una interfaz de teclado, entonces el foco se puede mover lejos de ese componente usando solo una interfaz de teclado.',
+              },
+            ]}
           />
         </>
       ),

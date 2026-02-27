@@ -692,7 +692,16 @@ const ACCESSIBILITY = [
     title: 'Criterios WCAG aplicados',
     content: (
       <>
-        <CriteriosWCAG list={['1.4.11', '1.4.3', '2.1.1', '2.1.2', '2.4.7', '2.4.3', '2.4.4']} />
+        <CriteriosWCAG
+          list={['1.4.11', '1.4.3', '2.1.1', '2.1.2', '2.4.7', '2.4.3', '2.4.4']}
+          customItem={[
+            {
+              customId: '2.4.7',
+              customDescripcion:
+                'Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque del teclado es visible.',
+            },
+          ]}
+        />
       </>
     ),
   },

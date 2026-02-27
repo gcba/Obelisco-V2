@@ -1591,6 +1591,18 @@ const HeroHeaderDocs: React.FC = () => {
         <>
           <CriteriosWCAG
             list={['1.3.1', '1.4.11', '1.4.3', '1.4.4', '1.4.10', '2.1.1', '2.1.2', '2.4.4', '2.4.7', '2.4.8', '3.2.3']}
+            customItem={[
+              {
+                customId: '2.4.8',
+                customDescripcion:
+                  'La información sobre la ubicación del usuario dentro de un conjunto de páginas web está disponible.',
+              },
+              {
+                customId: '3.2.3',
+                customDescripcion:
+                  'Los mecanismos de navegación que se repiten en varias páginas web dentro de un conjunto de páginas aparecen en el mismo orden relativo cada vez que se repiten, a menos que el usuario inicie un cambio.',
+              },
+            ]}
           />
         </>
       ),

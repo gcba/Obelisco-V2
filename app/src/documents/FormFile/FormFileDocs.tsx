@@ -4,6 +4,7 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import CodeBox from '@/components/CodeBox';
+import CriteriosWCAG from '@/components/CriteriosWCAG';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
@@ -382,99 +383,7 @@ const FormFileDocs: React.FC = () => {
       title: 'Criterios WCAG aplicados',
       content: (
         <>
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.3.1 Info and Relationships (Level A)
-          </a>
-          <p>
-            La información, la estructura y las relaciones transmitidas a través de la presentación pueden determinarse
-            mediante programación o están disponibles en el texto.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.4.11 Non-Text Contrast (Level AA)
-          </a>
-          <p>
-            La presentación visual de elementos de la interfaz de usuario y objetos gráficos tiene por lo menos una
-            relación de contraste de 3:1 con respecto a los colores adyacentes.{' '}
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.1.1 Keyboard (Level A)
-          </a>
-          <p>Todas las funcionalidades del contenido se puede operar a través de una interfaz de teclado.</p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.4.6 Headings and Labels (Level AA)
-          </a>
-          <p>
-            Si se utilizan encabezados o etiquetas, deben describir con precisión el propósito o contenido al que se
-            refieren. Esto facilita la comprensión y navegación del contenido, especialmente para personas con
-            discapacidades cognitivas o que utilizan lectores de pantalla.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.4.7 Focus Visible (Level AA)
-          </a>
-          <p>
-            Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque
-            del teclado es visible. Cuando utiliza un teclado para navegar por los componentes, los enlaces tienen un
-            subrayado visible y un recuadro <i>outline</i> que indica que los enlaces son interactivos.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/on-input.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 3.2.2 On Input (Level A)
-          </a>
-          <p>
-            Garantiza una experiencia predecible avisando desde el inicio sobre patrones poco comunes.Por ejemplo, una
-            persona con dificultades cognitivas podría esperar revisar el archivo antes de enviarlo, y puede confundirse
-            si el archivo se sube automáticamente al seleccionarlo.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/error-suggestion.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 3.3.3 Error Suggestion (Level AA)
-          </a>
-          <p>
-            Asegurarse de que todos los textos de ayuda y mensajes de error brinden asistencia útil para evitar o
-            corregir errores.
-            <br />
-            No uses mensajes poco claros, como <i> &quot;Seleccioná un formato de archivo válido&quot;</i> . En su
-            lugar, aclarar qué formatos son válidos.
-          </p>
+          <CriteriosWCAG list={['1.3.1', '1.4.11', '2.1.1', '2.4.6', '2.4.7', '3.2.2', '3.3.3']} />
         </>
       ),
     },

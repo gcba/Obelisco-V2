@@ -13,7 +13,6 @@ interface CriteriaProps {
   customItem?: CustomDescription[];
 }
 // list es un el array de objetos del json
-// customItem = [{}, {}]
 const CriteriosWCAG: React.FC<CriteriaProps> = ({ list, customItem }) => {
   const filteredCriteria = list.map((listId) => criteriaItems.find(({ id }) => listId === id)); // te devuelve un array con los ids encontrados
 

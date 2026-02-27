@@ -435,6 +435,18 @@ const ModalDocs: React.FC = () => {
         <>
           <CriteriosWCAG
             list={['1.3.1', '1.4.11', '1.4.3', '1.4.4', '1.4.10', '2.1.1', '2.1.2', '2.4.3', '2.4.7', '3.2.3', '4.1.2']}
+            customItem={[
+              {
+                customId: '2.4.3',
+                customDescripcion:
+                  'Si una página web puede navegarse de forma secuencial y las secuencias de navegación afectan el significado o la operación, los componentes enfocables reciben el foco en un orden que preserve el significado y la operabilidad.',
+              },
+              {
+                customId: '2.4.7',
+                customDescripcion:
+                  'Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque del teclado es visible.',
+              },
+            ]}
           />
         </>
       ),

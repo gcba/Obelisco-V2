@@ -5,6 +5,7 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import CodeBox from '@/components/CodeBox';
+import CriteriosWCAG from '@/components/CriteriosWCAG';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
@@ -332,85 +333,7 @@ const FormSearchDocs: React.FC = () => {
       title: 'Criterios WCAG aplicables',
       content: (
         <>
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.3.1 Info and Relationships (Level A)
-          </a>
-          <p className="mt-2">
-            La información, la estructura y las relaciones transmitidas a través de la presentación pueden determinarse
-            mediante programación o están disponibles en el texto.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.4.11 Non-Text Contrast (Level AA)
-          </a>
-          <p className="mt-2">
-            La presentación visual de elementos de la interfaz de usuario y objetos gráficos tiene por lo menos una
-            relación de contraste de 3:1 con respecto a los colores adyacentes.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.1.1 Keyboard (Level A)
-          </a>
-          <p className="mt-2">
-            Todas las funcionalidades del contenido se puede operar a través de una interfaz de teclado.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.4.1 Bypass Blocks (Level A)
-          </a>
-          <p className="mt-2">
-            Para ayudar a los usuarios de lectores de pantalla en la navegación, cada búsqueda debe estar dentro de una
-            región de landmark (hito) ARIA. Cada instancia debe tener una etiqueta única de identificación, a menos que
-            las búsquedas duplicadas realicen la misma función.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.4.5 Multiple Ways (Level AA)
-          </a>
-          <p className="mt-2">
-            Considera usar un mecanismo de búsqueda para ayudar a los usuarios a localizar información fácilmente y de
-            múltiples maneras La búsqueda permite a los usuarios encontrar información de manera más fácil y precisa,
-            incluyendo a personas con discapacidades visuales, limitaciones cognitivas u otras discapacidades.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.4.7 Focus Visible (Level AA)
-          </a>
-          <p className="mt-2">
-            Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque
-            del teclado es visible. Cuando utiliza un teclado para navegar por los componentes, los enlaces tienen un
-            subrayado visible y un recuadro outline que indica que los enlaces son interactivos.
-          </p>
+          <CriteriosWCAG list={['1.3.1', '1.4.11', '2.1.1', '2.4.1', '2.4.5', '2.4.6', '2.4.7', '4.1.2']} />
         </>
       ),
     },

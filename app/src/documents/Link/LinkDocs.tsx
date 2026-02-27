@@ -783,7 +783,21 @@ const LinkDocs: React.FC = () => {
       title: 'Criterios WCAG aplicados',
       content: (
         <>
-          <CriteriosWCAG list={['1.4.11', '1.4.3', '2.1.1', '2.4.4', '2.4.7', '3.2.4']} />
+          <CriteriosWCAG
+            list={['1.4.11', '1.4.3', '2.1.1', '2.4.4', '2.4.7', '3.2.4']}
+            customItem={[
+              {
+                customId: '2.4.7',
+                customDescripcion:
+                  'Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque del teclado es visible.',
+              },
+              {
+                customId: '3.2.4',
+                customDescripcion:
+                  'Los componentes que tienen la misma funcionalidad dentro de un conjunto de páginas web se identifican de manera consistente. Los enlaces que dirigen a un mismo lugar deben tener la misma identificación para no generar confusiones. Un ejemplo de inconsistencia podría ser un enlace que diga "Ingresá al Portal de Pagos", y otro que lleve al mismo sitio pero diga "Ingresá a la Plataforma de Pagos de la Ciudad".',
+              },
+            ]}
+          />
         </>
       ),
     },

@@ -2832,6 +2832,7 @@ const HeaderDocs: React.FC = () => {
   const ACCESSIBILITY = [
     {
       title: 'Navegación alternativa',
+      firstTitle: true,
       content: (
         <>
           <p className="text-md">

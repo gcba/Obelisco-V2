@@ -197,6 +197,64 @@ $calendar-td-span-size: 2.25rem;
     }
   }
 
+  &.interactive {
+    .calendar-body {
+      .calendar-week {
+        td {
+          user-select: none;
+          position: relative;
+          padding: 4px 0;
+
+          &.not-current {
+            color: $gray-200;
+            background-color: #f9f9f9;
+            opacity: 0.6;
+          }
+
+          &:not(.not-current) {
+            cursor: pointer;
+          }
+
+          span:first-child {
+            margin: 0 !important;
+            height: 100% !important;
+          }
+
+          span {
+            .today {
+              box-shadow: inset 0 0 0 1px #004357;
+            }
+          }
+
+          &[class*='event-']::before {
+            color: $primary;
+            position: absolute;
+            z-index: 1;
+            height: 6px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+          }
+
+          &.event-single::before {
+            content: '•';
+            bottom: 8px;
+          }
+
+          &.event-multiple::before {
+            content: '▲';
+            font-size: 8px;
+            bottom: 9px;
+          }
+
+          &:has(.active)[class*='event-']::before {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
   @include media-breakpoint-up(md) {
     .calendar-header {
       padding: 0 0.25rem;

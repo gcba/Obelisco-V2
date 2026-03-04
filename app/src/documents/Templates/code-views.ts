@@ -267,7 +267,7 @@ export const AREA_1 = `
               <img src="../../assets/tarjetas/image-1.jpeg" class="card-img" alt="descripción alternativa" />
               <div class="card-body">
                 <div class="card-badge mb-2">
-                  <span class="badge badge-info">ETIQUETA</span>
+                  <span class="badge badge-s-info">ETIQUETA</span>
                 </div>
                 <h3 class="card-title">
                   <a href="#" class="card-title-link">Titular de la tarjeta con dos líneas de ejemplo</a>
@@ -288,7 +288,7 @@ export const AREA_1 = `
               <img src="../../assets/tarjetas/image-2.jpeg" class="card-img" alt="descripción alternativa" />
               <div class="card-body">
                 <div class="card-badge">
-                  <span class="badge badge-info">ETIQUETA</span>
+                  <span class="badge badge-s-info">ETIQUETA</span>
                 </div>
                 <h3 class="card-title">
                   <a href="#" class="card-title-link">Titular de la tarjeta con dos líneas de ejemplo</a>
@@ -308,7 +308,7 @@ export const AREA_1 = `
               <img src="../../assets/tarjetas/image-3.jpeg" class="card-img" alt="descripción alternativa" />
               <div class="card-body">
                 <div class="card-badge mb-2">
-                  <span class="badge badge-info">ETIQUETA</span>
+                  <span class="badge badge-s-info">ETIQUETA</span>
                 </div>
                 <h3 class="card-title">
                   <a href="#" class="card-title-link">Titular de la tarjeta con dos líneas de ejemplo</a>
@@ -2017,7 +2017,7 @@ export const TEMPLATE_PAG_NOTICIAS = `<!DOCTYPE html>
             <div class="row">
               <div class="col-12 col-xl-8">
                 <div class="mt-2 pt-1">
-                  <p><a href="#" class="badge badge-info">Espacio público</a></p>
+                  <p><a href="#" class="badge badge-s-info">Espacio público</a></p>
                   <p class="mb-0"><small>Jueves 17 de junio de 2022</small></p>
                   <h1 class="mb-3">Sumate al programa Embajadores Verdes y promové el reciclado</h1>
                   <p class="lead">

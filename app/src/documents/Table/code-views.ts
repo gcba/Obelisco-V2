@@ -67,7 +67,7 @@ export const WITHOUT_DIVIDERS = `
                     </label>
                 </div>
             </td>
-            <td><span class="badge badge-danger">Texto predeterminado</span></td>
+            <td><span class="badge badge-s-red">Texto predeterminado</span></td>
             </tr>
             <tr>
             <td class="text-right">3</td>
@@ -94,7 +94,7 @@ export const WITHOUT_DIVIDERS = `
                     </label>
                 </div>
             </td>
-            <td><span class="badge badge-info">Texto predeterminado</span></td>
+            <td><span class="badge badge-s-info">Texto predeterminado</span></td>
             </tr>
             <tr>
             <td class="text-right">4</td>
@@ -121,7 +121,7 @@ export const WITHOUT_DIVIDERS = `
                     </label>
                 </div>
             </td>
-            <td><span class="badge badge-warning">Texto predeterminado</span></td>
+            <td><span class="badge badge-s-warning">Texto predeterminado</span></td>
             </tr>
         </tbody>
     </table>
@@ -193,7 +193,7 @@ export const WITH_DIVIDERS = `
                     </label>
                 </div>
             </td>
-            <td><span class="badge badge-success">Texto predeterminado</span></td>
+            <td><span class="badge badge-s-success">Texto predeterminado</span></td>
             </tr>
             <tr>
             <td class="text-right">3</td>
@@ -220,7 +220,7 @@ export const WITH_DIVIDERS = `
                     </label>
                 </div>
             </td>
-            <td><span class="badge badge-info">Texto predeterminado</span></td>
+            <td><span class="badge badge-s-info">Texto predeterminado</span></td>
             </tr>
             <tr>
             <td class="text-right">4</td>
@@ -247,7 +247,7 @@ export const WITH_DIVIDERS = `
                     </label>
                 </div>
             </td>
-            <td><span class="badge badge-warning">Texto predeterminado</span></td>
+            <td><span class="badge badge-s-warning">Texto predeterminado</span></td>
             </tr>
         </tbody>
     </table>
@@ -319,7 +319,7 @@ export const WITH_ZEBRA = `
                     </label>
                 </div>
             </td>
-            <td><span class="badge badge-warning">Texto predeterminado</span></td>
+            <td><span class="badge badge-s-warning">Texto predeterminado</span></td>
             </tr>
             <tr>
             <td class="text-right">3</td>
@@ -346,7 +346,7 @@ export const WITH_ZEBRA = `
                     </label>
                 </div>
             </td>
-            <td><span class="badge badge-info">Texto predeterminado</span></td>
+            <td><span class="badge badge-s-info">Texto predeterminado</span></td>
             </tr>
             <tr>
             <td class="text-right">4</td>
@@ -373,7 +373,7 @@ export const WITH_ZEBRA = `
                     </label>
                 </div>
             </td>
-            <td><span class="badge badge-danger">Texto predeterminado</span></td>
+            <td><span class="badge badge-s-red">Texto predeterminado</span></td>
             </tr>
         </tbody>
     </table>
@@ -647,21 +647,21 @@ export const TABLE_TAG = `
                 <td>Texto predeterminado</td>
                 <td>Texto predeterminado</td>
                 <td>Texto predeterminado</td>
-                <td><span class="badge badge-danger">Texto predeterminado</span></td>
+                <td><span class="badge badge-s-red">Texto predeterminado</span></td>
             </tr>
             <tr>
                 <td>Texto predeterminado</td>
                 <td>Texto predeterminado</td>
                 <td>Texto predeterminado</td>
                 <td>Texto predeterminado</td>
-                <td><span class="badge badge-info">Texto predeterminado</span></td>
+                <td><span class="badge badge-s-info">Texto predeterminado</span></td>
             </tr>
             <tr>
                 <td>Texto predeterminado</td>
                 <td>Texto predeterminado</td>
                 <td>Texto predeterminado</td>
                 <td>Texto predeterminado</td>
-                <td><span class="badge badge-success">Texto predeterminado</span></td>
+                <td><span class="badge badge-s-success">Texto predeterminado</span></td>
             </tr>
         </tbody>
     </table>

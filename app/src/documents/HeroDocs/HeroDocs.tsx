@@ -522,9 +522,9 @@ const HeroHeaderDocs: React.FC = () => {
                         {/* etiquetas */}
                         <div className="d-flex flex-wrap column-gap-2 row-gap-4">
                           <span className="me-3 fw-semibold">Texto de las etiquetas: </span>
-                          <span className="badge badge-default">Etiqueta</span>
-                          <span className="badge badge-default">Etiqueta</span>
-                          <span className="badge badge-default">Etiqueta</span>
+                          <span className="badge badge-s-default">Etiqueta</span>
+                          <span className="badge badge-s-default">Etiqueta</span>
+                          <span className="badge badge-s-default">Etiqueta</span>
                         </div>
                         {/* etiquetas */}
                       </div>
@@ -1655,8 +1655,8 @@ const HeroHeaderDocs: React.FC = () => {
             El componente Cabecera de página está construido para ser accesible mediante navegación por teclado y
             reconocible por lectores de pantalla.{' '}
           </p>
-          <span className="badge badge-default ms-1">TAB</span>
-          <span className="badge badge-default">ENTER</span>
+          <span className="badge badge-s-default ms-1">TAB</span>
+          <span className="badge badge-s-default">ENTER</span>
           <p className="text-md">
             Acciones como accionar botones botones o abrir desplegables se pueden realizar con las teclas <i>Enter</i> o{' '}
             <i>space</i>, y controlar con las flechas del teclado.

@@ -667,8 +667,8 @@ export const HERO_REDES_SOCIALES = `<header class="hero bg-content-hero-light">
 			</nav>
 
 			<div class="d-flex flex-wrap align-items-center column-gap-2 row-gap-4">
-				<span class="badge badge-info">Etiqueta</span>
-				<span class="badge badge-info">Etiqueta</span>
+				<span class="badge badge-s-info">Etiqueta</span>
+				<span class="badge badge-s-info">Etiqueta</span>
 			</div>
 
 			<div>

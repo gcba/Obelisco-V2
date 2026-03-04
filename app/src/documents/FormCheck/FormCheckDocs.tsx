@@ -272,7 +272,7 @@ const FormCheckDocs = () => {
               </ul>
             </div>
             <div className="list-informative">
-              <p className="text-xl">Cuándo usar</p>
+              <p className="text-xl">Cuándo no usar</p>
               <ul className="list-informative-bullet">
                 <li>
                   Cuando se requiere una única respuesta dentro de un conjunto de opciones, en ese caso utilizar el
@@ -489,8 +489,8 @@ const FormCheckDocs = () => {
           </p>
           <div className="flex flex-column gap-3">
             <div>
-              <span className="badge badge-default ms-1">TAB</span>
-              <span className="badge badge-default">ENTER</span>
+              <span className="badge badge-s-default">TAB</span>
+              <span className="badge badge-s-default">ENTER</span>
             </div>
             <p>
               Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Además,

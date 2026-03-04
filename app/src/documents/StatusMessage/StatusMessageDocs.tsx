@@ -157,7 +157,7 @@ const SECTION_UX = [
             height="280"
             className="img-fluid"
           ></Image>
-          <div className="d-flex pt-3">
+          <div className="d-flex pt-2" style={{ marginBottom: '32px' }}>
             <span className="material-symbols-rounded text-success">check</span>
             <p className="mb-0">
               Los encabezados y las descripciones deben agregar información útil para ayudar a la persona usuaria a
@@ -172,7 +172,6 @@ const SECTION_UX = [
             width="800"
             height="280"
             className="img-fluid"
-            style={{ marginTop: '2rem !important' }}
           ></Image>
           <div className="d-flex pt-3">
             <span className="material-symbols-rounded text-danger">close</span>
@@ -232,7 +231,7 @@ const SECTION_UX = [
         </div>
 
         <p className="text-xl mt-3 pt-3 mb-3">Colores semánticos y uso de íconos</p>
-        <p className="text-md mb-3">
+        <p className="text-md mb-0">
           El ícono de un mensaje de estado sirve como refuerzo visual y semántico para ayudar a la persona usuaria a
           identificar el tipo de <i>feedback</i> que recibe. Más allá de la ayuda que representa, no se debe depender de
           la iconografía para comunicar el estado, por lo que el título y la descripción del mensaje deben ser claros y
@@ -245,7 +244,7 @@ const SECTION_UX = [
             width="800"
             height="280"
             className="img-fluid"
-            style={{ marginTop: '2rem !important' }}
+            style={{ marginTop: '32px' }}
           ></Image>
           <div className="d-flex pt-2">
             <span className="material-symbols-rounded text-danger">close</span>
@@ -664,6 +663,7 @@ const SPECS = [
 
 const ACCESSIBILITY = [
   {
+    firstTitle: true,
     title: 'Navegación alternativa',
     content: (
       <>
@@ -671,8 +671,8 @@ const ACCESSIBILITY = [
           Todos los elementos del mensaje de estado pueden recorrerse utilizando la navegación por teclado u otras
           herramientas de asistencia como lectores por voz.
         </p>
-        <span className="badge badge-default ms-1">TAB</span>
-        <span className="badge badge-default">ENTER</span>
+        <span className="badge badge-s-default">TAB</span>
+        <span className="badge badge-s-default">ENTER</span>
         <p className="text-md mb-4">
           Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Además, con el{' '}
           <i>enter</i>, puede accionar los elementos sobre los que esté posicionada como botones, enlaces, entre otros.

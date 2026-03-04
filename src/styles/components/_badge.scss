@@ -264,8 +264,8 @@ $badge-primary-border-color: (
   border: 1px solid $blue-900;
   color: $blue-900;
 
-  &:hover,
-  &.hover {
+  &:hover:not(:focus),
+  &.hover:not(.focus) {
     background-color: $slate-100;
     color: $blue-900;
   }
@@ -338,32 +338,48 @@ a.badge-remove {
 // Fin eliminable -
 
 // - Inicio Seleccionables
+
 .badge-select {
   @include badge-select-remove-base;
   background-color: $white;
   border: 1px solid $blue-900;
   color: $blue-900;
   cursor: pointer;
+  user-select: none;
+  user-select: none;
+  user-select: none;
 
-  &:hover,
-  &.hover {
+  &:hover {
     text-decoration: none;
   }
+}
 
-  &:active,
-  &.active {
+.badge-toggle {
+  position: relative;
+  cursor: pointer;
+
+  input {
+    position: absolute;
+    opacity: 0;
+  }
+
+  /* fondo cuando está seleccionado */
+  input:checked + .badge-select {
     background-color: $blue-900;
     color: $white;
-    text-decoration: none;
-    box-shadow: 0 0 0 0.25rem $cyan-800;
   }
 
-  &:focus,
-  &.focus {
-    background-color: $sky-900;
-    color: $white;
-    text-decoration: none;
-    box-shadow: none;
+  /* focus persistente */
+  input:focus + .badge-select {
+    box-shadow: 0 0 0 0.125rem $cyan-800;
+    outline: none;
+    border: 1px solid transparent;
+  }
+
+  input:active + .badge-select {
+    box-shadow: 0 0 0 0.125rem $cyan-800;
+    outline: none;
+    border: 1px solid transparent;
   }
 }
 

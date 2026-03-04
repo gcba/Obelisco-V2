@@ -188,6 +188,7 @@ const BadgeDocs: React.FC = () => {
               <span className="badge badge-p-success">Etiqueta</span>
               <span className="badge badge-p-danger">Etiqueta</span>
               <span className="badge badge-p-warning">Etiqueta</span>
+              <span className="badge badge-p-default">Etiqueta</span>
               <span className="badge badge-p-highlight">Etiqueta</span>
             </div>
             <div className="col-auto">
@@ -196,6 +197,7 @@ const BadgeDocs: React.FC = () => {
               <span className="badge badge-s-success">Etiqueta</span>
               <span className="badge badge-s-danger">Etiqueta</span>
               <span className="badge badge-s-warning">Etiqueta</span>
+              <span className="badge badge-s-default">Etiqueta</span>
               <span className="badge badge-s-highlight">Etiqueta</span>
             </div>
           </div>
@@ -235,21 +237,14 @@ const BadgeDocs: React.FC = () => {
         <CodeBox codeHTML={BADGE_SELECT}>
           <div className="row justify-content-center align-items-center gap-3">
             <div className="col-auto">
-              <span className="badge badge-select" tabIndex={0}>
-                Etiqueta
-              </span>
-              <span className="badge badge-select hover" tabIndex={0}>
-                Etiqueta
-              </span>
-              <span className="badge badge-select focus" tabIndex={0}>
-                Etiqueta
-              </span>
-              <span className="badge badge-select active" tabIndex={0}>
-                Etiqueta
-              </span>
-              <span className="badge badge-select disabled" tabIndex={0}>
-                Etiqueta
-              </span>
+              <label className="badge-toggle">
+                <input type="checkbox" />
+                <span className="badge badge-select">Etiqueta</span>
+              </label>
+              <label className="badge-toggle">
+                <input type="checkbox" />
+                <span className="badge badge-select">Etiqueta</span>
+              </label>
             </div>
           </div>
         </CodeBox>

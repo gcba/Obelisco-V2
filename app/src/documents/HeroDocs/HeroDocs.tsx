@@ -24,6 +24,7 @@ import {
   HERO_ACCESIBILITY,
   HERO_ACCESIBILITY_2,
   HERO_REDES_SOCIALES,
+  HERO_LANDING,
 } from './code-views';
 
 const HeroHeaderDocs: React.FC = () => {
@@ -31,6 +32,51 @@ const HeroHeaderDocs: React.FC = () => {
     {
       title: 'Tipos de formas',
       firstTitle: true,
+    },
+    {
+      title: 'Landing page',
+      content: (
+        <>
+          <CodeBox codeHTML={HERO_LANDING}>
+            <div className="container">
+              <div className="hero-container">
+                <div className="hero-box-sizing mb-0">
+                  <header className="hero-landing">
+                    <Image
+                      src={`${basePath}/images/hero/hero-landing.jpg`}
+                      className="hero-bg-image"
+                      alt="Hero"
+                      width={1366}
+                      height={500}
+                    />
+
+                    <div className="panel-horizontal-content">
+                      <div className="panel-horizontal">
+                        <div className="panel-body">
+                          <h2 className="panel-title">Título del destacado</h2>
+                          <p className="panel-text">
+                            Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
+                            contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso,
+                            de pocas líneas. No puede contener negritas ni enlaces
+                          </p>
+                          <div className="panel-footer">
+                            <a className="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
+                              Botón
+                            </a>
+                            <a className="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
+                              Botón
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </header>
+                </div>
+              </div>
+            </div>
+          </CodeBox>
+        </>
+      ),
     },
     {
       subtitle: 'Institucional',

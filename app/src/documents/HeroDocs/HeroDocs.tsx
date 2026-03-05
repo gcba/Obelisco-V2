@@ -53,19 +53,64 @@ const HeroHeaderDocs: React.FC = () => {
                     <div className="panel-horizontal-content">
                       <div className="panel-horizontal">
                         <div className="panel-body">
-                          <h2 className="panel-title">Título del destacado</h2>
-                          <p className="panel-text">
+                          <h1 className="panel-title">Título del destacado</h1>
+                          <p className="panel-text text-xl">
                             Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
                             contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso,
                             de pocas líneas. No puede contener negritas ni enlaces
                           </p>
                           <div className="panel-footer">
-                            <a className="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
+                            <button type="button" className="btn btn-secondary">
                               Botón
-                            </a>
-                            <a className="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
+                            </button>
+                            <button type="button" className="btn btn-outline-secondary">
                               Botón
-                            </a>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </header>
+                </div>
+              </div>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+    {
+      title: 'Landing page - Dark',
+      content: (
+        <>
+          <CodeBox codeHTML={HERO_LANDING}>
+            <div className="container">
+              <div className="hero-container">
+                <div className="hero-box-sizing mb-0">
+                  <header className="hero-landing bg-content-hero-dark">
+                    <Image
+                      src={`${basePath}/images/hero/hero-landing.jpg`}
+                      className="hero-bg-image"
+                      alt="Hero"
+                      width={1366}
+                      height={500}
+                    />
+
+                    <div className="panel-horizontal-content">
+                      <div className="panel-horizontal">
+                        <div className="panel-body">
+                          <h1 className="panel-title">Título del destacado</h1>
+                          <p className="panel-text text-xl">
+                            Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
+                            contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso,
+                            de pocas líneas. No puede contener negritas ni enlaces
+                          </p>
+                          <div className="panel-footer">
+                            <button type="button" className="btn btn-light">
+                              Botón
+                            </button>
+                            <button type="button" className="btn btn-outline-light">
+                              Botón
+                            </button>
                           </div>
                         </div>
                       </div>

@@ -128,8 +128,8 @@ const CalendarJs: React.FC = () => {
   const formattedTodayDate = todayDate.toISOString().split('T')[0];
   const [selectedDay, setSelectedDay] = useState<Day | undefined>();
   const [selectedDate, setSelectedDate] = useState({
-    month: todayDate.getMonth(),
-    year: todayDate.getFullYear(),
+    month: 1,
+    year: 2026,
   });
 
   const grid = getCalendarGrid(selectedDate.month, selectedDate.year, EVENTS_LIST);

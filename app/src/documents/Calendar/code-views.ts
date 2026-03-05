@@ -891,6 +891,154 @@ export const CALENDAR_INTERACTIVE = `
 					</tr>
 			</thead>
 			<tbody>
+				<tr class="calendar-week">
+					<td data-date="2026-02-01" class="event-multiple">
+						<span>
+							<span>1</span>
+						</span>
+					</td>
+					<td data-date="2026-02-02" class="event-single">
+						<span>
+							<span>2</span>
+						</span>
+					</td>
+					<td data-date="2026-02-03">
+						<span>
+							<span>3</span>
+						</span>
+					</td>
+					<td data-date="2026-02-04">
+						<span>
+							<span>4</span>
+						</span>
+					</td>
+					<td data-date="2026-02-05">
+						<span>
+							<span>5</span>
+						</span>
+					</td>
+					<td data-date="2026-02-06">
+						<span>
+							<span>6</span>
+						</span>
+					</td>
+					<td data-date="2026-02-07">
+						<span>
+							<span>7</span>
+						</span>
+					</td>
+				</tr>
+				<tr class="calendar-week">
+					<td data-date="2026-02-08">
+						<span>
+							<span>8</span>
+						</span>
+					</td>
+					<td data-date="2026-02-09">
+						<span>
+							<span>9</span>
+						</span>
+					</td>
+					<td data-date="2026-02-10" class="event-single">
+						<span>
+							<span>10</span>
+						</span>
+					</td>
+					<td data-date="2026-02-11" class="event-multiple">
+						<span>
+							<span class="active">11</span>
+						</span>
+					</td>
+					<td data-date="2026-02-12">
+						<span>
+							<span>12</span>
+						</span>
+					</td>
+					<td data-date="2026-02-13">
+						<span>
+							<span>13</span>
+						</span>
+					</td>
+					<td data-date="2026-02-14">
+						<span>
+							<span>14</span>
+						</span>
+					</td>
+				</tr>
+				<tr class="calendar-week">
+					<td data-date="2026-02-15">
+						<span>
+							<span>15</span>
+						</span>
+					</td>
+					<td data-date="2026-02-16">
+						<span>
+							<span>16</span>
+						</span>
+					</td>
+					<td data-date="2026-02-17">
+						<span>
+							<span>17</span>
+						</span>
+					</td>
+					<td data-date="2026-02-18">
+						<span>
+							<span>18</span>
+						</span>
+					</td>
+					<td data-date="2026-02-19">
+						<span>
+							<span>19</span>
+						</span>
+					</td>
+					<td data-date="2026-02-20">
+						<span>
+							<span>20</span>
+						</span>
+					</td>
+					<td data-date="2026-02-21">
+						<span>
+							<span>21</span>
+						</span>
+					</td>
+				</tr>
+				<tr class="calendar-week">
+					<td data-date="2026-02-22">
+						<span>
+							<span>22</span>
+						</span>
+					</td>
+					<td data-date="2026-02-23">
+						<span>
+							<span>23</span>
+						</span>
+					</td>
+					<td data-date="2026-02-24">
+						<span>
+							<span>24</span>
+						</span>
+					</td>
+					<td data-date="2026-02-25">
+						<span>
+							<span>25</span>
+						</span>
+					</td>
+					<td data-date="2026-02-26">
+						<span>
+							<span>26</span>
+						</span>
+					</td>
+					<td data-date="2026-02-27">
+						<span>
+							<span>27</span>
+						</span>
+					</td>
+					<td data-date="2026-02-28">
+						<span>
+							<span>28</span>
+						</span>
+					</td>
+				</tr>
 			</tbody>
 		</table>
 	</div>

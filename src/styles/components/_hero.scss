@@ -453,34 +453,36 @@ header.hero.bg-content-hero-dark .content {
 
 // Landing page version
 header.hero-landing {
-	img.hero-bg-image {
-		width: 100%;
-		height: 500px;
-		display: block;
-		object-fit: cover;
-		object-position: center;
+  img.hero-bg-image {
+    width: 100%;
+    height: 500px;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    mask-image: $hero-wave-landing-svg, linear-gradient(#000, #000);
+    mask-size:
+      1366px 75px,
+      100% calc(100% - 74px);
+    mask-position: bottom, top;
+    mask-repeat: repeat-x, no-repeat;
+  }
 
-		mask-image: $hero-wave-landing-svg, linear-gradient(#000, #000);
-		mask-size: 1366px 75px, 100% calc(100% - 74px);
-		mask-position: bottom, top;
-		mask-repeat: repeat-x, no-repeat;
-	}
+  .panel-horizontal-content {
+    background-color: transparent;
 
-	.panel-horizontal-content {
-		background-color: transparent;
+    .panel-horizontal {
+      justify-content: center;
 
-		.panel-horizontal {
-			justify-content: center;
+      .panel-body {
+        .panel-title,
+        .panel-text {
+          text-align: center;
+        }
 
-			.panel-body {
-				.panel-title, .panel-text {
-					text-align: center;
-				}
-
-				.panel-footer {
-					justify-content: center;
-				}
-			}
-		}
-	}
+        .panel-footer {
+          justify-content: center;
+        }
+      }
+    }
+  }
 }

@@ -27,16 +27,14 @@ const ReleasesComponents: React.FC = () => {
             Se corrigen estilos en el componente Cabecera de página para color de fondo y Breadcrumb (migas de pan).
           </li>
           <br />
-          <li>
-            Se agregan estilos en el componente Calendario, para indicar uno o más 'eventos' por fecha. 
-          </li>
-          <li>
-            Se agregan estilos para el nuevo comportamiento que indica la fecha actual. 
-          </li>
-          <li>El componente Calendario cuenta con un ejemplo interactivo.</li>                      
-            En{' '} <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-9">
-              Cambios en componentes
-            </a>{' '}está la documentación de las nuevas clases.
+          <li>Se agregan estilos en el componente Calendario, para indicar uno o más &quot;eventos&quot; por fecha.</li>
+          <li>Se agregan estilos para el nuevo comportamiento que indica la fecha actual.</li>
+          <li>El componente Calendario cuenta con un ejemplo interactivo.</li>
+          En{' '}
+          <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-9">
+            Cambios en componentes
+          </a>{' '}
+          está la documentación de las nuevas clases.
         </ul>
       ),
     },

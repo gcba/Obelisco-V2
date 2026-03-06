@@ -251,7 +251,6 @@ const sections = [
         <li>
           Se agrega la clase <code>today</code> para indicar la fecha actual.
         </li>
-
       </ul>
     ),
   },

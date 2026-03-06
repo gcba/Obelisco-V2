@@ -16699,6 +16699,47 @@ span.form-label {
   box-shadow: none;
   padding: 0;
 }
+.calendar.interactive .calendar-body .calendar-week td {
+  user-select: none;
+  position: relative;
+  padding: 4px 0;
+}
+.calendar.interactive .calendar-body .calendar-week td.not-current {
+  color: #cccccc;
+  background-color: #f9f9f9;
+  opacity: 0.6;
+}
+.calendar.interactive .calendar-body .calendar-week td:not(.not-current) {
+  cursor: pointer;
+}
+.calendar.interactive .calendar-body .calendar-week td span:first-child {
+  margin: 0 !important;
+  height: 100% !important;
+}
+.calendar.interactive .calendar-body .calendar-week td span .today {
+  box-shadow: inset 0 0 0 1px #004357;
+}
+.calendar.interactive .calendar-body .calendar-week td[class*=event-]::before {
+  color: #336acc;
+  position: absolute;
+  z-index: 1;
+  height: 6px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.calendar.interactive .calendar-body .calendar-week td.event-single::before {
+  content: "•";
+  bottom: 8px;
+}
+.calendar.interactive .calendar-body .calendar-week td.event-multiple::before {
+  content: "▲";
+  font-size: 8px;
+  bottom: 9px;
+}
+.calendar.interactive .calendar-body .calendar-week td:has(.active)[class*=event-]::before {
+  color: #ffffff;
+}
 @media (min-width: 768px) {
   .calendar .calendar-header {
     padding: 0 0.25rem;
@@ -18654,12 +18695,15 @@ div.aside.bg-aside-hero-light {
   background-color: #d1d8e0;
 }
 
-header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content .breadcrumb-item a,
-header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div h1,
-header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div .h1,
-header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div p,
-header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content div span.fw-semibold.me-3 {
+header.hero.bg-content-hero-dark .content .breadcrumb-item a,
+header.hero.bg-content-hero-dark .content div h1,
+header.hero.bg-content-hero-dark .content div .h1,
+header.hero.bg-content-hero-dark .content div p,
+header.hero.bg-content-hero-dark .content div span.fw-semibold.me-3 {
   color: #ffffff;
+}
+header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
+  background: transparent url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="chevron_right"><path id="Vector" d="M8.99953 6.71051C8.60953 7.10051 8.60953 7.73051 8.99953 8.12051L12.8795 12.0005L8.99953 15.8805C8.60953 16.2705 8.60953 16.9005 8.99953 17.2905C9.38953 17.6805 10.0195 17.6805 10.4095 17.2905L14.9995 12.7005C15.3895 12.3105 15.3895 11.6805 14.9995 11.2905L10.4095 6.70051C10.0295 6.32051 9.38953 6.32051 8.99953 6.71051Z" fill="%23FFFFFF"/></g></svg>') no-repeat center center !important;
 }
 
 .list-link {

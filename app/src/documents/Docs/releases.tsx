@@ -509,12 +509,12 @@ const ReleasesComponents: React.FC = () => {
         description={[
           'En esta sección se encuentran los versionados de la librería y la documentación de los cambios que se hicieron sobre cada versión de Obelisco.',
           <>
-            <p className='d-flex gap-1'> 
-              Versión actual: {' '}
-            <Link href="https://github.com/gcba/Obelisco-V2/releases" target="blank">
-              {versionPages.text}
-            </Link> {' '}
-            <i className="bxl bx-github mt-1" style={{fontSize: '18px'}} />
+            <p className="d-flex gap-1">
+              Versión actual:{' '}
+              <Link href="https://github.com/gcba/Obelisco-V2/releases" target="blank">
+                {versionPages.text}
+              </Link>{' '}
+              <i className="bxl bx-github mt-1" style={{ fontSize: '18px' }} />
             </p>
           </>,
         ]}

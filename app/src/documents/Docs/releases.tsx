@@ -19,10 +19,10 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
-      title: 'Versión 1.9.2',
+      title: 'Versión 1.10.0',
       content: (
         <ul className="docs-list">
-          <p>La Versión 1.9.2 contiene lo siguiente: </p>
+          <p>La Versión 1.10.0 contiene lo siguiente: </p>
           <li>
             Se corrigen estilos en el componente Cabecera de página para color de fondo y Breadcrumb (migas de pan).
           </li>
@@ -511,10 +511,13 @@ const ReleasesComponents: React.FC = () => {
         description={[
           'En esta sección se encuentran los versionados de la librería y la documentación de los cambios que se hicieron sobre cada versión de Obelisco.',
           <>
-            Versión actual:{' '}
+            <p className='d-flex gap-1'> 
+              Versión actual: {' '}
             <Link href="https://github.com/gcba/Obelisco-V2/releases" target="blank">
               {versionPages.text}
-            </Link>
+            </Link> {' '}
+            <i className="bxl bx-github mt-1" style={{fontSize: '18px'}} />
+            </p>
           </>,
         ]}
         divider={true}

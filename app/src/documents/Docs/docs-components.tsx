@@ -239,7 +239,7 @@ const sections = [
         <li>La variante con referencias cromáticas queda deprecada.</li>
 
         <p className="text-md my-4">
-          <strong>Versión 1.9.2 ⬇️</strong>
+          <strong>Versión 1.10.0 ⬇️</strong>
         </p>
 
         <li>

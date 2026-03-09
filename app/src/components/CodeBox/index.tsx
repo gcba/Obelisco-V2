@@ -98,7 +98,7 @@ const CodeBox = ({ codeHTML, children, codeJS }: { codeHTML: string; children?: 
               id={`tab-bg-1-${id}`}
             >
               <div className="nav-icon">
-                <i className="bxf bx-component"></i>
+                <span className="material-symbols-rounded">component_exchange</span>
                 Componente
               </div>
             </button>

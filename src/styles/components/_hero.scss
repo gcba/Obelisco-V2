@@ -437,11 +437,15 @@ header.hero {
 
 // CONDICIONALES
 // Cuando header tiene bg-content-hero-dark Y dentro en algún momento contiene .aside.bg-aside-hero-dark
-header.hero.bg-content-hero-dark:has(.aside.bg-aside-hero-light) .content {
+header.hero.bg-content-hero-dark .content {
   .breadcrumb-item a,
   div h1,
   div p,
   div span.fw-semibold.me-3 {
     color: $white;
+  }
+
+  .breadcrumb-item::before {
+    background: transparent $breadcrumb-divider-dark no-repeat center center !important;
   }
 }

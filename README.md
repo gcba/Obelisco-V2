@@ -78,7 +78,7 @@ Boxicons con CDN:
 
 
 ```sh
-<link href='https://cdn.boxicons.com/3.0.7/fonts/basic/boxicons.min.css' rel='stylesheet'>
+<link href='https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
 ```
 
 Material Symbols con npm o CDN:

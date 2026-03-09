@@ -3,6 +3,7 @@ import LinkClient from '@/components/LinkClient';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
+import CalendarJs from './CalendarJs';
 import {
   CALENDAR_COLLAPSE,
   CALENDAR_DECK,
@@ -10,6 +11,8 @@ import {
   CALENDAR_LINKS,
   CALENDAR_NO_EVENTS,
   CALENDAR_WITH_REFERENCES,
+  CALENDAR_INTERACTIVE,
+  CALENDAR_INTERACTIVE_JS,
 } from './code-views';
 
 const CalendarDocs: React.FC = () => {
@@ -215,6 +218,16 @@ const CalendarDocs: React.FC = () => {
                 </ul>
               </div>
             </div>
+          </div>
+        </CodeBox>
+      ),
+    },
+    {
+      title: 'Interactivo',
+      content: (
+        <CodeBox codeHTML={CALENDAR_INTERACTIVE} codeJS={CALENDAR_INTERACTIVE_JS}>
+          <div className="row justify-content-center">
+            <CalendarJs />
           </div>
         </CodeBox>
       ),

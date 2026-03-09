@@ -237,6 +237,20 @@ const sections = [
           del componente Colapsable.
         </li>
         <li>La variante con referencias cromáticas queda deprecada.</li>
+
+        <p className="text-md my-4">
+          <strong>Versión 1.10.0 ⬇️</strong>
+        </p>
+
+        <li>
+          Se agrega la clase <code>event-single</code> para fechas de un evento, colocando un círculo.
+        </li>
+        <li>
+          Se agrega la clase <code>event-multiple</code> para fechas de más de un evento, colocando un triángulo.
+        </li>
+        <li>
+          Se agrega la clase <code>today</code> para indicar la fecha actual.
+        </li>
       </ul>
     ),
   },

@@ -1,0 +1,30 @@
+.indicator {
+  width: 375px;
+  max-width: 375px;
+  text-align: center;
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid #e6ebf0;
+
+  h1 {
+    margin-bottom: 8px;
+  }
+
+  p.headline-lg {
+    margin-bottom: 8px;
+  }
+
+  &.indicator-start {
+    text-align: start;
+  }
+
+  &.bigger-title {
+    h1 {
+      font-size: 64px;
+    }
+  }
+
+  &.unbordered {
+    border: none;
+  }
+}

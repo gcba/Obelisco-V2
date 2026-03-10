@@ -34,6 +34,51 @@ const HeroHeaderDocs: React.FC = () => {
       firstTitle: true,
     },
     {
+      title: 'Landing page - degrade',
+      content: (
+        <>
+          <CodeBox codeHTML={HERO_LANDING}>
+            <div className="container">
+              <div className="hero-container">
+                <div className="hero-box-sizing mb-0">
+                  <header className="hero-landing gradient">
+                    <Image
+                      src={`${basePath}/images/hero/hero-landing.jpg`}
+                      className="hero-bg-image"
+                      alt="Hero"
+                      width={1366}
+                      height={500}
+                    />
+
+                    <div className="panel-horizontal-content">
+                      <div className="panel-horizontal">
+                        <div className="panel-body">
+                          <h1 className="panel-title">Título del destacado</h1>
+                          <p className="panel-text text-xl">
+                            Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
+                            contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso,
+                            de pocas líneas. No puede contener negritas ni enlaces
+                          </p>
+                          <div className="panel-footer">
+                            <button type="button" className="btn btn-secondary">
+                              Botón
+                            </button>
+                            <button type="button" className="btn btn-outline-secondary">
+                              Botón
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </header>
+                </div>
+              </div>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+    {
       title: 'Landing page',
       content: (
         <>

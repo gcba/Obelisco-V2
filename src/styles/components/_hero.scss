@@ -438,7 +438,8 @@ header.hero {
 
 // CONDICIONALES
 // Cuando header tiene bg-content-hero-dark Y dentro en algún momento contiene .aside.bg-aside-hero-dark
-header.hero.bg-content-hero-dark .content {
+header.hero.bg-content-hero-dark .content,
+header.hero-landing.bg-content-hero-dark {
   .breadcrumb-item a,
   div h1,
   div p,
@@ -452,19 +453,25 @@ header.hero.bg-content-hero-dark .content {
 }
 
 // Landing page version
+$landing-img-hight: 500px;
+
+@mixin hero-landing-mask {
+	mask-image: $hero-wave-landing-svg, linear-gradient(#000, #000);
+	mask-size:
+		1366px 75px,
+		100% calc(100% - 74px);
+	mask-position: bottom, top;
+	mask-repeat: repeat-x, no-repeat;
+}
+
 header.hero-landing {
   img.hero-bg-image {
     width: 100%;
-    height: 500px;
+    height: $landing-img-hight;
     display: block;
     object-fit: cover;
     object-position: center;
-    mask-image: $hero-wave-landing-svg, linear-gradient(#000, #000);
-    mask-size:
-      1366px 75px,
-      100% calc(100% - 74px);
-    mask-position: bottom, top;
-    mask-repeat: repeat-x, no-repeat;
+    @include hero-landing-mask;
   }
 
   .panel-horizontal-content {
@@ -485,4 +492,59 @@ header.hero-landing {
       }
     }
   }
+
+	&.gradient {
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: $landing-img-hight;
+			z-index: 1;
+			background: linear-gradient(to right, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+			
+			@include hero-landing-mask;
+		}
+
+		@include media-breakpoint-up(md) {
+			.panel-horizontal-content {
+				position: absolute;
+				top: 15%;
+				left: 80px;
+				z-index: 2;
+	
+				.panel-horizontal {
+					justify-content: start;
+					margin: 0;
+		
+					.panel-body {
+						.panel-title,
+						.panel-text {
+							color: $white;
+							text-align: left;
+						}
+		
+						.panel-footer {
+							justify-content: start;
+	
+							button {
+								&.btn-secondary {
+									color: #000000;
+									background-color: $light;
+								}
+	
+								&.btn-outline-secondary {
+									color: $light;
+									outline-color: $light;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

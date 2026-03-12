@@ -346,11 +346,18 @@ a.badge-remove {
   color: $blue-900;
   cursor: pointer;
   user-select: none;
-  user-select: none;
-  user-select: none;
 
   &:hover {
     text-decoration: none;
+  }
+
+  &.disabled {
+    background-color: $slate-100;
+    color: $disabled-text;
+    border-color: $disabled-text;
+    text-decoration: none;
+    pointer-events: none;
+    cursor: not-allowed;
   }
 }
 
@@ -363,24 +370,35 @@ a.badge-remove {
     opacity: 0;
   }
 
-  /* fondo cuando está seleccionado */
+  // Cuando el checkbox queda seleccionado, despues de hacer click
   input:checked + .badge-select {
     background-color: $blue-900;
     color: $white;
   }
 
-  /* focus persistente */
-  input:focus + .badge-select {
+  // FOCUS - mientras se hace click (solo cuando NO está deshabilitado)
+  input:not(:disabled):focus + .badge-select {
     box-shadow: 0 0 0 0.125rem $cyan-800;
     outline: none;
     border: 1px solid transparent;
   }
 
-  input:active + .badge-select {
+  // ACTIVE - mientras se hace click (solo cuando NO está deshabilitado)
+  input:not(:disabled):active + .badge-select {
     box-shadow: 0 0 0 0.125rem $cyan-800;
     outline: none;
     border: 1px solid transparent;
   }
+
+  // DESHABILITADO
+  input:disabled + .badge-select {
+    background-color: $slate-100;
+    color: $disabled-text;
+    border-color: $disabled-text;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
 }
 
 // Fin Seleccionables -

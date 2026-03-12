@@ -1,12 +1,12 @@
-export const BADGE_ESTATICA_PRIMARIA_CON_ICONO = `<span className="badge badge-p-default">
-<span className="material-symbols-rounded">grid_view</span> 
+export const BADGE_ESTATICA_PRIMARIA_CON_ICONO = `<span class="badge badge-p-default">
+<span class="material-symbols-rounded">grid_view</span> 
   Etiqueta
 </span>`;
 
 export const BADGE_ESTATICA_PRIMARIA_SOLO_TEXTO = `<span class="badge badge-p-default">Etiqueta</span>`;
 
-export const BADGE_ESTATICA_SECUNDARIA_CON_ICONO = `<span className="badge badge-s-default">
-<span className="material-symbols-rounded">grid_view</span>   Etiqueta
+export const BADGE_ESTATICA_SECUNDARIA_CON_ICONO = `<span class="badge badge-s-default">
+<span class="material-symbols-rounded">grid_view</span>   Etiqueta
 </span>`;
 
 export const BADGE_ESTATICA_SECUNDARIA_SOLO_TEXTO = `<span class="badge badge-s-default">Etiqueta</span>`;
@@ -17,16 +17,16 @@ export const BADGE_REMOVE = `<a href="#" class="badge badge-remove" target="_bla
 </a>
 // Disabled
 <a href="#" class="badge badge-remove disabled" target="_blank" rel="noopener noreferrer">
-  <span className="material-symbols-rounded">grid_view</span> 
+  <span class="material-symbols-rounded">grid_view</span> 
   <span>Etiqueta</span>
 </a>`;
 
-export const BADGE_SIZES = `<span className="badge badge-s-default badge-sm">Etiqueta</span>
-<span className="badge badge-s-default">Etiqueta</span>
-<span className="badge badge-s-default badge-lg">Etiqueta</span>`;
+export const BADGE_SIZES = `<span class="badge badge-s-default badge-sm">Etiqueta</span>
+<span class="badge badge-s-default">Etiqueta</span>
+<span class="badge badge-s-default badge-lg">Etiqueta</span>`;
 
 export const BADGE_CLICKEABLE_PRIMARIA_CON_ICONO = `<a href="#" class="badge badge-p-link-default" target="_blank" rel="noopener noreferrer">
-  <span className="material-symbols-rounded">grid_view</span> 
+  <span class="material-symbols-rounded">grid_view</span> 
   <span>Etiqueta</span>
 </a>
 `;
@@ -63,13 +63,15 @@ export const BADGE_APARIENCIA = ` // Primarias
 <span class="badge badge-s-highlight">Etiqueta</span>
 `;
 
-export const BADGE_SELECT = `<span className="badge badge-select" tabIndex={0}>
-  Etiqueta
-</span>
+export const BADGE_SELECT = `<label class="badge-toggle">
+  <input type="checkbox" />
+  <span class="badge badge-select">Etiqueta</span>
+</label>
 // Disabled
-<span className="badge badge-select disabled" tabIndex={0}>
-  Etiqueta
-</span>`;
+<label class="badge-toggle">
+  <input type="checkbox" />
+  <span class="badge badge-select">Etiqueta</span>
+</label>`;
 
 export const BADGE_TYPES = `// Default
 <a href="#" class="badge badge-default">

@@ -241,8 +241,8 @@ const BadgeDocs: React.FC = () => {
                 <input type="checkbox" />
                 <span className="badge badge-select">Etiqueta</span>
               </label>
-              <label className="badge-toggle">
-                <input type="checkbox" />
+              <label className="badge-toggle ">
+                <input type="checkbox" disabled />
                 <span className="badge badge-select">Etiqueta</span>
               </label>
             </div>

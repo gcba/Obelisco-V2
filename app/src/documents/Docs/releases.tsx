@@ -22,7 +22,7 @@ const ReleasesComponents: React.FC = () => {
       title: 'Versión 1.11.0',
       content: (
         <ul className="docs-list">
-          <p>La Versión 1.10.1 contiene lo siguiente: </p>
+          <p>La Versión 1.11.0 contiene lo siguiente: </p>
           <li>Se crea el componente Indicador, variantes: con y sin borde, con y sin fondo.</li>
           <li>
             En{' '}

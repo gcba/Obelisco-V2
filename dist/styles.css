@@ -16049,7 +16049,7 @@ a.badge-remove:focus, a.badge-remove.focus {
   border: 1px solid transparent;
   box-shadow: 0 0 0 0.125rem #218274;
 }
-a.badge-remove:hover, a.badge-remove.hover {
+a.badge-remove:hover:not(:focus), a.badge-remove.hover:not(.focus) {
   background-color: #e6ebf0;
   color: #101e37;
 }
@@ -16124,12 +16124,13 @@ a.badge-remove:focus span, a.badge-remove.focus span {
   border: 1px solid #101e37;
   color: #101e37;
   cursor: pointer;
+  user-select: none;
 }
 .badge-select:focus, .badge-select.focus {
   border: 1px solid transparent;
   box-shadow: 0 0 0 0.125rem #218274;
 }
-.badge-select:hover, .badge-select.hover {
+.badge-select:hover:not(:focus), .badge-select.hover:not(.focus) {
   background-color: #e6ebf0;
   color: #101e37;
 }
@@ -16140,20 +16141,46 @@ a.badge-remove:focus span, a.badge-remove.focus span {
   text-decoration: none;
   pointer-events: none;
 }
-.badge-select:hover, .badge-select.hover {
+.badge-select:hover {
   text-decoration: none;
 }
-.badge-select:active, .badge-select.active {
+.badge-select.disabled {
+  background-color: #e6ebf0;
+  color: #9eaab8;
+  border-color: #9eaab8;
+  text-decoration: none;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.badge-toggle {
+  position: relative;
+  cursor: pointer;
+}
+.badge-toggle input {
+  position: absolute;
+  opacity: 0;
+}
+.badge-toggle input:checked + .badge-select {
   background-color: #101e37;
   color: #ffffff;
-  text-decoration: none;
-  box-shadow: 0 0 0 0.25rem #218274;
 }
-.badge-select:focus, .badge-select.focus {
-  background-color: #002733;
-  color: #ffffff;
-  text-decoration: none;
-  box-shadow: none;
+.badge-toggle input:not(:disabled):focus + .badge-select {
+  box-shadow: 0 0 0 0.125rem #218274;
+  outline: none;
+  border: 1px solid transparent;
+}
+.badge-toggle input:not(:disabled):active + .badge-select {
+  box-shadow: 0 0 0 0.125rem #218274;
+  outline: none;
+  border: 1px solid transparent;
+}
+.badge-toggle input:disabled + .badge-select {
+  background-color: #e6ebf0;
+  color: #9eaab8;
+  border-color: #9eaab8;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .banner {

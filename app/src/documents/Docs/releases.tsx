@@ -19,6 +19,22 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
+      title: 'Versión 1.11.0',
+      content: (
+        <ul className="docs-list">
+          <p>La Versión 1.10.1 contiene lo siguiente: </p>
+          <li>Se crea el componente Indicador, variantes: con y sin borde, con y sin fondo.</li>
+          <li>
+            En{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-22">
+              Cambios en componentes
+            </a>{' '}
+            está la documentación de las nuevas clases.
+          </li>
+        </ul>
+      ),
+    },
+    {
       title: 'Versión 1.10.0',
       content: (
         <ul className="docs-list">

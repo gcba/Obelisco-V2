@@ -83,3 +83,7 @@ blockquote {
     line-clamp: #{$i};
   }
 }
+
+.list-style-none {
+  list-style-type: none;
+}

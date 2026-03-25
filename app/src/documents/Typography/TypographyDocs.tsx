@@ -1,4 +1,6 @@
+// Hoja de rutas: app/src/documents/Typography/TypographyDocs.tsx
 import { basePath } from '@/utils';
+import Image from 'next/image';
 
 import CodeBox from '@/components/CodeBox';
 import Tabs from '@/components/Tabs';
@@ -43,7 +45,13 @@ const SECTIONS_UX = [
         </p>
         <div className="max-items-2">
           <div className="col">
-            <img src={`${basePath}/images/tipografia/tipografia_1.svg`} className="w-100 pb-4" alt="Familia Nunito" />
+            <Image
+              src={`${basePath}/images/tipografia/tipografia_1.svg`}
+              className="img-fluid"
+              alt="Familia Nunito"
+              width={800}
+              height={200}
+            />
             <p className="text-xl mb-2">Nunito</p>
             <p>
               Es una tipografía <i>sans-serif</i> geométrica con formas redondeadas, diseñada para interfaces digitales
@@ -51,10 +59,12 @@ const SECTIONS_UX = [
             </p>
           </div>
           <div className="col">
-            <img
+            <Image
               src={`${basePath}/images/tipografia/tipografia_open_sans.svg`}
-              className="w-100 pb-4"
+              className="img-fluid"
               alt="Familia Open Sans"
+              width={800}
+              height={200}
             />
             <p className="text-xl mb-2">Open Sans</p>
             <p>
@@ -74,7 +84,13 @@ const SECTIONS_UX = [
           Para generar una jerarquía clara y minimizar las inconsistencias, asignamos a cada estilo un rol que describe
           su función.
         </p>
-        <img src={`${basePath}/images/tipografia/tipografia_3.svg`} className="w-100" alt="Roles" />
+        <Image
+          src={`${basePath}/images/tipografia/tipografia_3.svg`}
+          className="img-fluid"
+          alt="Roles"
+          width={800}
+          height={200}
+        />
       </>
     ),
   },
@@ -181,7 +197,13 @@ const SECTIONS_UX = [
           ).
         </p>
         <p className="mb-4">No recomendamos utilizar textos sobre imágenes, porque dificultan la legibilidad.</p>
-        <img src={`${basePath}/images/tipografia/tipografia_4.svg`} className="w-100" alt="Contraste de color" />
+        <Image
+          src={`${basePath}/images/tipografia/tipografia_4.svg`}
+          className="img-fluid"
+          alt="Contraste de color"
+          width={800}
+          height={200}
+        />
       </>
     ),
   },
@@ -240,7 +262,13 @@ const SECTIONS_UX = [
         </ul>
 
         <div className="d-flex flex-column flex-md-row align-items-center mb-4" style={{ gap: '32px' }}>
-          <img src={`${basePath}/images/tipografia/tipografia_5.svg`} alt="Texto en negrita" />
+          <Image
+            src={`${basePath}/images/tipografia/tipografia_5.svg`}
+            className="img-fluid"
+            alt="Texto en negrita"
+            width={800}
+            height={200}
+          />
           <div>
             <p className="mb-0 fw-semibold">
               Negrita <i>(Bold)</i>
@@ -252,7 +280,13 @@ const SECTIONS_UX = [
           </div>
         </div>
         <div className="d-flex flex-column flex-md-row align-items-center mb-4" style={{ gap: '32px' }}>
-          <img src={`${basePath}/images/tipografia/tipografia_6.svg`} alt="Texto en Semi-negrita" />
+          <Image
+            src={`${basePath}/images/tipografia/tipografia_6.svg`}
+            className="img-fluid"
+            alt="Texto en Semi-negrita"
+            width={800}
+            height={200}
+          />
           <div>
             <p className="mb-0 fw-semibold">
               Semi-negrita <i>(Semibold)</i>
@@ -264,7 +298,13 @@ const SECTIONS_UX = [
           </div>
         </div>
         <div className="d-flex flex-column flex-md-row align-items-center mb-4" style={{ gap: '32px' }}>
-          <img src={`${basePath}/images/tipografia/tipografia_7.svg`} alt="Texto en Regular" />
+          <Image
+            src={`${basePath}/images/tipografia/tipografia_7.svg`}
+            className="img-fluid"
+            alt="Texto en Regular"
+            width={800}
+            height={200}
+          />
           <div>
             <p className="mb-0 fw-semibold">
               Regular <i>(Regular)</i>
@@ -289,7 +329,13 @@ const SECTIONS_UX = [
         </p>
 
         <div className="d-flex flex-column flex-md-row align-items-center mb-4" style={{ gap: '32px' }}>
-          <img src={`${basePath}/images/tipografia/tipografia_8.svg`} alt="Texto en Cursiva" />
+          <Image
+            src={`${basePath}/images/tipografia/tipografia_8.svg`}
+            className="img-fluid"
+            alt="Texto en Cursiva"
+            width={800}
+            height={200}
+          />
           <div>
             <p className="mb-0 fw-semibold">
               Cursiva <i>(Italic)</i>
@@ -301,7 +347,13 @@ const SECTIONS_UX = [
           </div>
         </div>
         <div className="d-flex flex-column flex-md-row align-items-center mb-4" style={{ gap: '32px' }}>
-          <img src={`${basePath}/images/tipografia/tipografia_9.svg`} alt="Texto Subrayado" />
+          <Image
+            src={`${basePath}/images/tipografia/tipografia_9.svg`}
+            className="img-fluid"
+            alt="Texto Subrayado"
+            width={800}
+            height={200}
+          />
           <div>
             <p className="mb-0 fw-semibold">
               Subrayado <i>(Underline)</i>
@@ -343,10 +395,12 @@ const SECTIONS_UX = [
           El ancho máximo en desktop para un contenedor con texto corrido es de 8 columnas, mientras que en dispositivos{' '}
           <i>tablet</i> y <i>mobile</i> el bloque debe ocupar el 100 % del contenedor disponible.
         </p>
-        <img
+        <Image
           src={`${basePath}/images/tipografia/tipografia_10.svg`}
-          className="w-100"
+          className="img-fluid"
           alt="Ancho máximo de párrafo por línea"
+          width={800}
+          height={200}
         />
       </>
     ),

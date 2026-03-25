@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Typography/code-views.ts
 export const HEADINGS = `
   <h1>Headings h1 - Nunito, 40px, IL 48px</h1>
   <h2>Headings h2 - Nunito, 36px, IL 44px</h2>

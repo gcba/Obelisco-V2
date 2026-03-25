@@ -1,6 +1,7 @@
 // Hoja de rutas: app/src/documents/Colors/ColorsDocs.tsx
 'use client';
 import { basePath } from '@/utils';
+import Image from 'next/image';
 
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
@@ -390,7 +391,13 @@ const ColorsDocs: React.FC = () => {
             respuesta o distinguir un elemento visual. Dado que muchas personas usuarias tienen dificultades para
             percibir el color, es importante reforzar el mensaje añadiendo otros elementos.{' '}
           </p>
-          <img src={`${basePath}/images/colors/color_1.svg`} className="w-100" alt="Uso del color" />
+          <Image
+            src={`${basePath}/images/colors/color_1.svg`}
+            width="800"
+            height="200"
+            className="img-fluid"
+            alt="Uso del color"
+          />
         </>
       ),
     },
@@ -417,7 +424,13 @@ const ColorsDocs: React.FC = () => {
             máximo contraste posible. Si encontrás muestras que no tienen ni la etiqueta AA o AAA, es porque esa
             combinación no pasa accesibilidad y, por lo tanto, debe evitarse su uso.
           </p>
-          <img src={`${basePath}/images/colors/color_2.svg`} className="w-100" alt="Combinaciones de texto y fondo" />
+          <Image
+            src={`${basePath}/images/colors/color_2.svg`}
+            className="img-fluid"
+            width="800"
+            height="200"
+            alt="Combinaciones de texto y fondo"
+          />
         </div>
       ),
     },
@@ -518,7 +531,13 @@ const ColorsDocs: React.FC = () => {
             La paleta de color está disponible en Figma en forma de variables. El uso de variables facilita el
             mantenimiento y permite trabajar en un sistema escalable y robusto.
           </p>
-          <img src={`${basePath}/images/colors/color_3.svg`} className="w-100" alt="Variables en Figma" />
+          <Image
+            src={`${basePath}/images/colors/color_3.svg`}
+            className="img-fluid"
+            width="800"
+            height="200"
+            alt="Variables en Figma"
+          />
         </div>
       ),
     },

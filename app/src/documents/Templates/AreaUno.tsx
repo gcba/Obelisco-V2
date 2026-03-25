@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Templates/AreaUno.tsx
 'use client';
 import { basePath } from '@/utils';
 import Image from 'next/image';

@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/components/Template/MainDescription.tsx
 import React from 'react';
 
 interface DescriptionTemplate {

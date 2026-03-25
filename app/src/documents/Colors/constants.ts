@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Colors/constants.ts
 import { ColorArray } from '@/components/Template/PalletteColor';
 import { ColorTableArray } from '@/components/Template/PalletteTable';
 

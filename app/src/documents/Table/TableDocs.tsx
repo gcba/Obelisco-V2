@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Table/TableDocs.tsx
 import { basePath } from '@/utils';
 import Image from 'next/image';
 import React from 'react';

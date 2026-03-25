@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/components/Template/ComponentHeader.tsx
 import React, { ReactNode } from 'react';
 
 interface ComponentHeaderProps {

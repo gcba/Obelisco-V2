@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Map/code-views.ts
 export const MAP_LATERAL = `<div class="map">
   <div class="map-body">
     <h2 class="map-title">Ubicación</h2>

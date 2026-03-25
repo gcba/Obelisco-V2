@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Templates/PaginasDeAreas.tsx
 'use client';
 // import Image from 'next/image';
 import { basePath } from '@/utils';

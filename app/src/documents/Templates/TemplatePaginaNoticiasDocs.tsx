@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Templates/TemplatePaginaNoticiasDocs.tsx
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';

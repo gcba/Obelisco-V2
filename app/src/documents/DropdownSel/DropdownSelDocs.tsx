@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/DropdownSel/DropdownSelDocs.tsx
 'use client';
 import { basePath } from '@/utils';
 import Image from 'next/image';

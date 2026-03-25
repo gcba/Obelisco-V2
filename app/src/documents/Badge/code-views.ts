@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Badge/code-views.ts
 export const BADGE_COLORS = `<span class="badge badge-default">Predeterminada</span>
 <span class="badge badge-danger">Peligro</span>
 <span class="badge badge-info">Info</span>

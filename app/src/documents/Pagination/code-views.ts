@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Pagination/code-views.ts
 export const PAGINATION_DESCRIPTION = `<div class="pagination">
   <div class="page-navigation">
     <div class="page-item">

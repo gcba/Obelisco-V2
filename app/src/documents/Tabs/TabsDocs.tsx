@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Tabs/TabsDocs.tsx
 import CodeBox from '@/components/CodeBox';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';

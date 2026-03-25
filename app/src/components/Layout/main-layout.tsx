@@ -1,4 +1,4 @@
-// app/components/MainLayout.tsx
+// Hoja de rutas: app/src/components/Layout/main-layout.tsx
 'use client';
 
 import { usePathname } from 'next/navigation';

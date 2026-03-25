@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/components/Template/Divisor.tsx
 import React from 'react';
 
 const Divisor = () => {

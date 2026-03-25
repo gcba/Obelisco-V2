@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Collapse/CollapseDocs.tsx
 import CodeBox from '@/components/CodeBox';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';

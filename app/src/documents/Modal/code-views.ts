@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Modal/code-views.ts
 export const MODAL_CONFIRM = `<button 
   type="button" 
   class="btn btn-primary" 

@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Docs/code-views.ts
 export const PATTERNS_ACCESSIBILTY = `    <form>
       <div class="form-label-container">
         <label for="fullname" class="form-label">

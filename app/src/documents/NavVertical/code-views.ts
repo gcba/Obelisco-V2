@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/NavVertical/code-views.ts
 export const NAV_VERTICAL_SIMPLE = `
   <nav aria-label="Navegación vertical">
     <ul class="nav flex-column nav-pills">

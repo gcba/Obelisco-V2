@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/FormSearch/code-views.ts
 export const SEARCH = `  <form>
     <div class="form-label-container">
       <label for="search" class="form-label">Ejemplo Buscador</label>

@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/NavVertical/NavVerticalDocs.tsx
 import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
 import Tabs from '@/components/Tabs';

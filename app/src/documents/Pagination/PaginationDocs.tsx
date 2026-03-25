@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Pagination/PaginationDocs.tsx
 'use client';
 
 import { basePath } from '@/utils';

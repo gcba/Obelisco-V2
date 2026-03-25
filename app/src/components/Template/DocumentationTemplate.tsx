@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/components/Template/DocumentationTemplate.tsx
 'use client';
 
 import { Scrollspy } from '@makotot/ghostui';

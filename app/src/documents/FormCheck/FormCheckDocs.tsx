@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/FormCheck/FormCheckDocs.tsx
 import { basePath } from '@/utils';
 import Image from 'next/image';
 import Link from 'next/link';

@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/HeroDocs/HeroDocs.tsx
 import { basePath } from '@/utils';
 import Image from 'next/image';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';

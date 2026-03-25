@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/components/Layout/Navigation/nav.tsx
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 

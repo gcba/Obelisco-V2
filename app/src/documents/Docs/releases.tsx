@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Docs/releases.tsx
 'use client';
 
 import Link from 'next/link';

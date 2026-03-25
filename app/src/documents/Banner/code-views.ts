@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Banner/code-views.ts
 export const BANNER_SIMPLE = `
   <div class="banner">
     <div class="banner-content">

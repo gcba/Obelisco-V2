@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Gallery/code-views.ts
 export const GALLERY_INTERACTIVE = `//GRID
 <div class="gallery-grid gallery-max-3">
   <a

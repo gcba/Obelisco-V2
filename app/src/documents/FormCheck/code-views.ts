@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/FormCheck/code-views.ts
 export const CHECKBOX = `  <p class="headline-md">Seleccioná una o varias opciones *</p>
   <div class="form-checkbox">
     <input

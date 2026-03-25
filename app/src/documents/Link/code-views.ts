@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Link/code-views.ts
 export const LINK_DEFAULT = `
   <a href="#" target="_blank" rel="noopener noreferrer">enlace en párrafo</a>
   <small>

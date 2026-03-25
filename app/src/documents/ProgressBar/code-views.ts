@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/ProgressBar/code-views.ts
 export const PROGRESSBAR_TYPES_PRIMARY = `
 <div class="container">
     <div class="progress">

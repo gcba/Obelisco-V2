@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Link/LinkDocs.tsx
 import { basePath } from '@/utils';
 import Image from 'next/image';
 import React from 'react';

@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/StepsForm/code-views.ts
 export const STEPS_FORM = `
 <div class="stepper-content">
   <div class="stepper">

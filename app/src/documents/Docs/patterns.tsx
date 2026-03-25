@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Docs/patterns.tsx
 'use client';
 
 // import Link from 'next/link';

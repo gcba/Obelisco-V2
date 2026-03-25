@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Alert/code-views.ts
 export const SIMPLE_ALERT = `<div class="alert alert-info" role="alert">
     Esta es la descripción de una alerta de información.
   </div>

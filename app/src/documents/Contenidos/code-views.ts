@@ -1,4 +1,4 @@
-// Hoja de rutas: app/src/documents/Table/code-views.ts
+// Hoja de rutas: app/src/documents/Contenidos/code-views.ts
 export const WITHOUT_DIVIDERS = `
 <div class="responsive-scroll" tabIndex="0">
     <table class="table table-borderless">
@@ -749,15 +749,13 @@ export const TABLE_BUTTON_ICON = `
                         <span class="material-symbols-rounded o-icon" aria-hidden="true">edit</span>
                     </button>
                     <button type="button" class="btn btn-xs">
-                        <span className="material-symbols-rounded o-icon" aria-hidden="true">delete</span>
+                        <i class="bx bxs-trash-alt o-icon"></i>
                     </button>
                     <button type="button" class="btn btn-xs">
                         <span class="material-symbols-rounded o-icon" aria-hidden="true">visibility</span>
                     </button>
                     <button type="button" class="btn btn-xs">
-                      <span className="material-symbols-rounded o-icon" aria-hidden="true">
-												download_2
-											</span>
+                        <i class="bx bxs-download o-icon"></i>
                     </button>
                     </div>
                 </td>
@@ -772,15 +770,13 @@ export const TABLE_BUTTON_ICON = `
                         <span class="material-symbols-rounded o-icon" aria-hidden="true">edit</span>
                     </button>
                     <button type="button" class="btn btn-xs">
-                        <span className="material-symbols-rounded o-icon" aria-hidden="true">delete</span>
+                        <i class="bx bxs-trash-alt o-icon"></i>
                     </button>
                     <button type="button" class="btn btn-xs">
                         <span class="material-symbols-rounded o-icon" aria-hidden="true">visibility</span>
                     </button>
                     <button type="button" class="btn btn-xs">
-                      <span className="material-symbols-rounded o-icon" aria-hidden="true">
-												download_2
-											</span>
+                        <i class="bx bxs-download o-icon"></i>
                     </button>
                     </div>
                 </td>
@@ -795,15 +791,13 @@ export const TABLE_BUTTON_ICON = `
                         <span class="material-symbols-rounded o-icon" aria-hidden="true">edit</span>
                     </button>
                     <button type="button" class="btn btn-xs">
-                        <span className="material-symbols-rounded o-icon" aria-hidden="true">delete</span>
+                        <i class="bx bxs-trash-alt o-icon"></i>
                     </button>
                     <button type="button" class="btn btn-xs">
                         <span class="material-symbols-rounded o-icon" aria-hidden="true">visibility</span>
                     </button>
                     <button type="button" class="btn btn-xs">
-                      <span className="material-symbols-rounded o-icon" aria-hidden="true">
-												download_2
-											</span>
+                        <i class="bx bxs-download o-icon"></i>
                     </button>
                     </div>
                 </td>
@@ -818,15 +812,13 @@ export const TABLE_BUTTON_ICON = `
                         <span class="material-symbols-rounded o-icon" aria-hidden="true">edit</span>
                     </button>
                     <button type="button" class="btn btn-xs">
-                        <span className="material-symbols-rounded o-icon" aria-hidden="true">delete</span>
+                        <i class="bx bxs-trash-alt o-icon"></i>
                     </button>
                     <button type="button" class="btn btn-xs">
                         <span class="material-symbols-rounded o-icon" aria-hidden="true">visibility</span>
                     </button>
                     <button type="button" class="btn btn-xs">
-                      <span className="material-symbols-rounded o-icon" aria-hidden="true">
-												download_2
-											</span>
+                        <i class="bx bxs-download o-icon"></i>
                     </button>
                     </div>
                 </td>

@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Badge/BadgeDocs.tsx
 import CodeBox from '@/components/CodeBox';
 import LinkClient from '@/components/LinkClient';
 import Tabs from '@/components/Tabs';

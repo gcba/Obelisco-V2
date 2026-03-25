@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/components/Layout/Footer/footer.tsx
 import { basePath } from '@/utils';
 import React from 'react';
 

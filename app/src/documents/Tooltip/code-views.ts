@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Tooltip/code-views.ts
 export const TOOLTIP_BUTTONS = `//SUPERIOR
 <span
   data-direction="top-right"

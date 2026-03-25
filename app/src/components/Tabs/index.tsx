@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/components/Tabs/index.tsx
 'use client';
 
 import { useRouter, useSearchParams, usePathname } from 'next/navigation';

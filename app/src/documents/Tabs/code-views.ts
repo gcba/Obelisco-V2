@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Tabs/code-views.ts
 export const TABS_SIMPLE = `
   <nav class="tabs-box" aria-label="Navegación por pestañas">
     <ul class="nav nav-pills tabs" id="simple-myTab" role="tablist">

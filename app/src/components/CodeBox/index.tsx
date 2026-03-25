@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/components/CodeBox/index.tsx
 'use client';
 import React, { useEffect, useRef, useState } from 'react';
 import { useId } from 'react';

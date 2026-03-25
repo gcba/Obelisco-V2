@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Gallery/GalleryDocs.tsx
 'use client';
 import { useState } from 'react';
 

@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/AccessOrganism/code-views.ts
 export const SIMPLE_ACCESS_ORGANISM = `
 <div class="group-access">
   <div class="card-access">

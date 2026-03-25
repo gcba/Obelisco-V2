@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Collapse/code-views.ts
 export const COLLAPSE = `
 <div class="accordion" id="accordionUniqueSelection">
     <div class="accordion-item">

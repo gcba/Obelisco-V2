@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Templates/Template - estructura.tsx
 'use client';
 // este archivo se usa solamente como referencia para los templates de documentacion de los templates
 // import CodeCopy from '@/components/CodeCopy';

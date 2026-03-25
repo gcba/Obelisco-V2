@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Access/code-views.ts
 // Simple
 export const SIMPLE_ACCESS = `
   <a href="#" class="list-group-item item-sm">

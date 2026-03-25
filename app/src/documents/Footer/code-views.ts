@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Footer/code-views.ts
 export const FOOTER = `<h2 class="sr-only">Navegación de pie de página</h2>
 <footer class="main-footer">
   <div class="container">

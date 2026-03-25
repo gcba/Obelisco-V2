@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/components/Template/Flex.tsx
 import React, { ReactNode } from 'react';
 
 interface FlexData {

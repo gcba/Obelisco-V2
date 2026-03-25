@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Highlighted/code-views.ts
 export const HIGHLIGHTED_BANNER_BUTTONS_WHITE = `<div class="panel-horizontal-content">
   <div class="panel-horizontal">
     <img src="/destacado.jpg" alt="descripción de imagen" class="panel-img" />

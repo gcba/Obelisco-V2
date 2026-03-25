@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Templates/code-views.ts
 export const AREA_1 = `
 <!DOCTYPE html>
 <html lang="es">

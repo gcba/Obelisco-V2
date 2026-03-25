@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/FormFile/code-views.ts
 export const FILE_DEFAULT = `    <div class="form-label-container">
       <label for="exampleInputFile" class="form-label">Label</label>
       <span class="badge-forms badge-required-forms">Requerido</span>

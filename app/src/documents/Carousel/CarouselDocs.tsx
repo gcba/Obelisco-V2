@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Carousel/CarouselDocs.tsx
 import { basePath } from '@/utils';
 import Image from 'next/image';
 

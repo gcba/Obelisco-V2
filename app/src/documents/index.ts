@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/index.ts
 export * from './Alert/AlertDocs';
 export * from './Access/AccessDocs';
 export * from './Banner/BannerDocs';

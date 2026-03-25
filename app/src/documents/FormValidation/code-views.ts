@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/FormValidation/code-views.ts
 export const INPUT_VALIDATION_TEXT = `    <div class="form-label-container">
       <label for="exampleInputTexto" class="form-label">Label</label>
       <span class="badge-forms badge-required-forms">Requerido</span>

@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Breadcrumb/code-views.ts
 export const BREADCRUMB = `
     <nav aria-label="Ruta de navegación">
       <ol class="breadcrumb">

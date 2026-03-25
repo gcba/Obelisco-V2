@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/components/LinkClient/index.tsx
 'use client';
 
 import React from 'react';

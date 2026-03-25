@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/getting-started-module/InstallationModule.tsx
 import Link from 'next/link';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';

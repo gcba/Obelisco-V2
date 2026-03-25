@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Spinner/SpinnerDocs.tsx
 'use client';
 import { basePath } from '@/utils';
 import Image from 'next/image';

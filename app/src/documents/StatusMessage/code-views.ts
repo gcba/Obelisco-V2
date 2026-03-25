@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/StatusMessage/code-views.ts
 export const SM_INFO = `<div class="status status-info">
   <h2 class="status-title">Este es el título de un mensaje de estado</h2>
   <p class="status-text">

@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/ListStep/code-views.ts
 export const LIST_STEP_LARGE = `
 <ul class="list-steps list-steps-lg">
   <li class="list-steps-item">

@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/components/CodeCopy/index.tsx
 'use client';
 import React, { useRef } from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';

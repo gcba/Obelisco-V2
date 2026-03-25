@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/components/Layout/Headers/Desktop/index.tsx
 'use client';
 
 import { basePath } from '@/utils';

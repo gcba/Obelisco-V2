@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/app/content/page.tsx
 // Para que al darle a /content, redirija a /comunicar-con-claridad
 import { redirect } from 'next/navigation';
 // app\src\components\Layout\main-layout.tsx

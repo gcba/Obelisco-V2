@@ -1,7 +1,7 @@
+// Hoja de rutas: app/src/documents/StepsForm/StepsFormDocs.tsx
 'use client';
 import React, { useState } from 'react';
 
-// Hoja de rutas: app/src/documents/StepsForm/StepsFormDocs.tsx
 import CodeBox from '@/components/CodeBox';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';

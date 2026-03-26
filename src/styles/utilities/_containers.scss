@@ -1,3 +1,5 @@
+// src/styles/utilities/_containers.scss - Estilos de containers estilos de contenedores
+
 .max-items-1 {
   @extend .row;
   @include media-breakpoint-down(md) {

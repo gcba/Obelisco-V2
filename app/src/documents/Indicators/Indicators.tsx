@@ -155,7 +155,7 @@ const SECTION_UX = [
         <p className="text-xl fw-semibold mb-2">Indicador simple</p>
         <p className="text-md mb-4">Muestra un único valor acompañado de una etiqueta descriptiva.</p>
         <Image
-          src={`${basePath}/images/indicator/indicador_2.svg`}
+          src={`${basePath}/images/indicator/indicador_1.svg`}
           alt="Componente indicador simple"
           width="800"
           height="200"
@@ -171,7 +171,9 @@ const SECTION_UX = [
           className="img-fluid"
         />
         <p className="text-xl fw-semibold mt-4 mb-2">Grupo de indicadores</p>
-        <p className="text-md mb-4">Incluye una breve explicación que aporta contexto al dato.</p>
+        <p className="text-md mb-4">
+          Se presentan múltiples indicadores en conjunto (generalmente en grilla) para facilitar la comparación.
+        </p>
         <Image
           src={`${basePath}/images/indicator/indicador_3.svg`}
           alt="Grupo de indicadores"
@@ -244,7 +246,9 @@ const SPECS = [
                 <td>Describe el significado del valor.</td>
               </tr>
               <tr>
-                <td>3. Título</td>
+                <td>
+                  3. Descripción <i>(Opcional)</i>
+                </td>
                 <td>Aporta contexto adicional.</td>
               </tr>
               <tr>
@@ -276,7 +280,7 @@ const SPECS = [
           className="img-fluid"
         />
 
-        <p className="text-xl fw-semibold mb-2">Con contenedor</p>
+        <p className="text-xl fw-semibold mt-4 mb-2">Con contenedor</p>
         <p className="text-md mb-3">
           Cada indicador se presenta dentro de una tarjeta, mejorando la separación visual y la legibilidad.{' '}
         </p>
@@ -289,7 +293,7 @@ const SPECS = [
           className="img-fluid"
         />
 
-        <p className="text-xl fw-semibold mb-2">Jerarquía visual</p>
+        <p className="text-xl fw-semibold mt-4 mb-2">Jerarquía visual</p>
         <p className="text-md mb-3">
           El número es el elemento principal, con mayor tamaño y peso. El título describe el dato y la descripción, si
           está presente, aporta contexto.{' '}
@@ -320,6 +324,10 @@ const ACCESSIBILITY = [
         <p className="text-md">
           La información se presenta de forma estática y debe ser accesible directamente a través de su contenido
           textual.
+        </p>
+        <p className="text-md">
+          En caso de estar dentro de una página con navegación por teclado, el indicador no debe ser foco de tabulación
+          (tabindex), ya que no representa una acción ni control interactivo.
         </p>
       </>
     ),
@@ -395,7 +403,12 @@ const ACCESSIBILITY = [
 const IndicatorsDocs: React.FC = () => {
   return (
     <>
-      <ComponentHeader title="Indicador" description={['Componente Indicador de datos']} />
+      <ComponentHeader
+        title="Indicador"
+        description={[
+          'Los indicadores de datos muestran información cuantitativa relevante de forma destacada y sintética. Se utilizan para comunicar métricas clave de manera rápida, sin requerir interacción por parte de la persona usuaria.',
+        ]}
+      />
       <Tabs
         sectionDev={SECTIONS_DEV}
         sectionUx={SECTION_UX}

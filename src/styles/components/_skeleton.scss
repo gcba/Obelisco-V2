@@ -33,11 +33,36 @@
   }
 
 	// HEADER
-	.o-header {
+	&.o-header {
 		.ob-placeholder-action {
 			min-height: 48px;
 			border-radius: 0.5rem;
 			width: 100%;
+		}
+	}
+
+	// FOOTER
+	&.main-footer{
+		.ob-placeholder {
+			background-color: $light;
+
+			&::after {
+				background: linear-gradient(
+					90deg,
+					transparent 0%,
+					rgba(0, 0, 0, 0.25) 50%,
+					transparent 100%
+				);
+			}
+		}
+
+		.ob-placeholder-icon {
+			width: 24px;
+			height: 24px;			
+		}
+		.ob-placeholder-logo {
+			width: 100%;	
+			height: 40px;			
 		}
 	}
 }

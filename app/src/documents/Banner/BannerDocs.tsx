@@ -13,6 +13,12 @@ import {
   BANNER_BUTTONS_DARK,
   BANNER_SIMPLE,
   BANNER_SIMPLE_DARK,
+  SKELETON_BOTON,
+  SKELETON_BOTON_DARK,
+  SKELETON_BOTONES,
+  SKELETON_BOTONES_DARK,
+  SKELETON_SIMPLE,
+  SKELETON_SIMPLE_DARK,
 } from './code-views';
 
 const BannerDocs: React.FC = () => {
@@ -595,6 +601,90 @@ const BannerDocs: React.FC = () => {
     },
   ];
 
+  const SKELETON = [
+    {
+      title: 'Skeleton',
+      firstTitle: true,
+      content: (
+        <>
+          <CodeBox codeHTML={SKELETON_SIMPLE}>
+            <div className="banner ob-skeleton">
+              <div className="banner-content ob-placeholder">
+                <p className="banner-text ob-placeholder"></p>
+              </div>
+            </div>
+          </CodeBox>
+          <br />
+          <CodeBox codeHTML={SKELETON_SIMPLE_DARK}>
+            <div className="banner banner-dark ob-skeleton">
+              <div className="banner-content ob-placeholder">
+                <p className="banner-text ob-placeholder"></p>
+              </div>
+            </div>
+          </CodeBox>
+          {/*     Con botón e ícono       */}
+          <CodeBox codeHTML={SKELETON_BOTON}>
+            <div className="banner ob-skeleton">
+              <div className="banner-content ">
+                <span className="material-symbols-rounded o-icon ob-placeholder ob-placeholder-icon" aria-hidden="true">
+                  departure_board
+                </span>
+                <p className="banner-text ob-placeholder"></p>
+                <div className="banner-actions">
+                  <LinkClient className="btn btn-sm btn-primary ob-placeholder">Botón</LinkClient>
+                </div>
+              </div>
+            </div>
+          </CodeBox>
+          <br />
+          <CodeBox codeHTML={SKELETON_BOTON_DARK}>
+            <div className="banner banner-dark ob-skeleton">
+              <div className="banner-content ">
+                <span className="material-symbols-rounded o-icon ob-placeholder ob-placeholder-icon" aria-hidden="true">
+                  departure_board
+                </span>
+                <p className="banner-text ob-placeholder"></p>
+                <div className="banner-actions">
+                  <LinkClient className="btn btn-sm btn-primary ob-placeholder">Botón</LinkClient>
+                </div>
+              </div>
+            </div>
+          </CodeBox>
+          {/*     Con 2 botones e ícono       */}
+          <CodeBox codeHTML={SKELETON_BOTONES}>
+            <div className="banner ob-skeleton">
+              <div className="banner-content ">
+                <span className="material-symbols-rounded o-icon ob-placeholder ob-placeholder-icon" aria-hidden="true">
+                  departure_board
+                </span>
+                <p className="banner-text ob-placeholder"></p>
+                <div className="banner-actions">
+                  <LinkClient className="btn btn-sm btn-primary ob-placeholder">Botón</LinkClient>
+                  <LinkClient className="btn btn-sm btn-primary ob-placeholder">Botón</LinkClient>
+                </div>
+              </div>
+            </div>
+          </CodeBox>
+          <br />
+          <CodeBox codeHTML={SKELETON_BOTONES_DARK}>
+            <div className="banner banner-dark ob-skeleton">
+              <div className="banner-content ">
+                <span className="material-symbols-rounded o-icon ob-placeholder ob-placeholder-icon" aria-hidden="true">
+                  departure_board
+                </span>
+                <p className="banner-text ob-placeholder"></p>
+                <div className="banner-actions">
+                  <LinkClient className="btn btn-sm btn-primary ob-placeholder">Botón</LinkClient>
+                  <LinkClient className="btn btn-sm btn-primary ob-placeholder">Botón</LinkClient>
+                </div>
+              </div>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+  ];
+
   return (
     <>
       <ComponentHeader
@@ -617,6 +707,11 @@ const BannerDocs: React.FC = () => {
             title: 'Accesibilidad',
             id: 'section-accessibility',
             sectionContent: ACCESSIBILITY,
+          },
+          {
+            title: 'Esqueleto',
+            id: 'section-skeleton',
+            sectionContent: SKELETON,
           },
         ]}
       />

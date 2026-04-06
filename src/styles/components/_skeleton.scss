@@ -3,6 +3,7 @@
     0% {
       transform: translateX(-100%);
     }
+
     100% {
       transform: translateX(100%);
     }
@@ -17,6 +18,7 @@
     cursor: wait;
     opacity: 0.5;
     background-color: $dark;
+    border-radius: 2px;
 
     &::after {
       content: '';
@@ -25,44 +27,87 @@
       background: linear-gradient(
         90deg,
         transparent 0%,
-        rgba(255, 255, 255, 0.25) 50%,
+        rgb(255 255 255 / 25%) 50%,
         transparent 100%
       );
       animation: ob-skeleton-shimmer 1.5s infinite;
     }
   }
 
-	// HEADER
-	&.o-header {
-		.ob-placeholder-action {
-			min-height: 48px;
-			border-radius: 0.5rem;
-			width: 100%;
-		}
-	}
+  // BANNER
+  &.banner {
+    .ob-placeholder {
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-	// FOOTER
-	&.main-footer{
-		.ob-placeholder {
-			background-color: $light;
+      a {
+        text-decoration: none;
+      }
+    }
 
-			&::after {
-				background: linear-gradient(
-					90deg,
-					transparent 0%,
-					rgba(0, 0, 0, 0.25) 50%,
-					transparent 100%
-				);
-			}
-		}
+    a.ob-placeholder {
+      color: transparent;
+      text-decoration: none;
+      outline: 0;
+    }
 
-		.ob-placeholder-icon {
-			width: 24px;
-			height: 24px;			
-		}
-		.ob-placeholder-logo {
-			width: 100%;	
-			height: 40px;			
-		}
-	}
+    a.ob-placeholder:active,
+    a.ob-placeholder:focus,
+    a.ob-placeholder:hover {
+      color: transparent;
+      text-decoration: none;
+      outline: 0;
+    }
+
+    &.banner-dark {
+      .ob-placeholder {
+        background-color: $light;
+
+        &::after {
+          background: linear-gradient(
+            90deg,
+            transparent 0%,
+            rgb(0 0 0 / 25%) 50%,
+            transparent 100%
+          );
+        }
+      }
+    }
+  }
+
+  // HEADER
+  &.o-header {
+    .ob-placeholder-action {
+      min-height: 48px;
+      border-radius: 0.5rem;
+      width: 100%;
+    }
+  }
+
+  // FOOTER
+  &.main-footer {
+    .ob-placeholder {
+      background-color: $light;
+
+      &::after {
+        background: linear-gradient(
+          90deg,
+          transparent 0%,
+          rgb(0 0 0 / 25%) 50%,
+          transparent 100%
+        );
+      }
+    }
+
+    .ob-placeholder-icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    .ob-placeholder-logo {
+      width: 100%;
+      height: 40px;
+    }
+  }
 }

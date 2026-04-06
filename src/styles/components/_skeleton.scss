@@ -8,18 +8,15 @@
     }
   }
 
-  @keyframes ob-skeleton-shimmer-bg {
-    0% {
-      background-position: 100% 0;
-    }
-    100% {
-      background-position: -100% 0;
-    }
-  }
-
-  .placeholder {
+  .ob-placeholder {
     position: relative;
     overflow: hidden;
+    display: inline-block;
+    min-height: 1em;
+    vertical-align: middle;
+    cursor: wait;
+    opacity: 0.5;
+    background-color: $dark;
 
     &::after {
       content: '';
@@ -35,20 +32,12 @@
     }
   }
 
-  img.placeholder,
-  input.placeholder {
-    background-image: linear-gradient(
-      90deg,
-      transparent 0%,
-      rgba(255, 255, 255, 0.25) 50%,
-      transparent 100%
-    ) !important;
-    background-size: 200% 100% !important;
-    background-repeat: no-repeat !important;
-    animation: ob-skeleton-shimmer-bg 1.5s infinite !important;
-
-    &::after {
-      display: none;
-    }
-  }
+	// HEADER
+	.o-header {
+		.ob-placeholder-action {
+			min-height: 48px;
+			border-radius: 0.5rem;
+			width: 100%;
+		}
+	}
 }

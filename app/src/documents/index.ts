@@ -25,4 +25,3 @@ export * from './StatusMessage/StatusMessageDocs';
 export * from './Header/HeaderDocs';
 export * from './Home/homeDocs';
 export * from './Footer/FooterDocs';
-export * from './Skeleton/Skeleton';

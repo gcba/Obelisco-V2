@@ -9,7 +9,15 @@ import CodeBox from '@/components/CodeBox';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
-import { FOOTER, FOOTER_ACCESSIBILTY, FOOTER_INDICATOR, FOOTER_LEGALS } from './code-views';
+import {
+  FOOTER,
+  FOOTER_ACCESSIBILTY,
+  FOOTER_INDICATOR,
+  FOOTER_LEGALS,
+  SKELETON_FOOTER,
+  SKELETON_LEGALS,
+  SKELETON_INDICATOR,
+} from './code-views';
 
 const FooterDocs: React.FC = () => {
   const SECTIONS_DEV = [
@@ -748,6 +756,293 @@ const FooterDocs: React.FC = () => {
     },
   ];
 
+  const SKELETON = [
+    {
+      title: 'Completo',
+      firstTitle: true,
+      content: (
+        <CodeBox codeHTML={SKELETON_FOOTER}>
+          <div className="px-4">
+            <footer className="main-footer ob-skeleton" aria-hidden="true">
+              <div className="container">
+                <section>
+                  <h3>
+                    <span className="ob-placeholder" style={{ width: '132px' }}></span>
+                  </h3>
+                  <ul className="list-inline">
+                    <li className="list-inline-item phone-items">
+                      <span className="ob-placeholder" style={{ width: '196px' }}></span>
+                    </li>
+                    <li className="list-inline-item phone-items">
+                      <span className="ob-placeholder" style={{ width: '135px' }}></span>
+                    </li>
+                    <li className="list-inline-item phone-items">
+                      <span className="ob-placeholder" style={{ width: '83px' }}></span>
+                    </li>
+                    <li className="list-inline-item phone-items">
+                      <span className="ob-placeholder" style={{ width: '88px' }}></span>
+                    </li>
+                    <li className="list-inline-item phone-items">
+                      <span className="ob-placeholder" style={{ width: '187px' }}></span>
+                    </li>
+                    <li className="list-inline-item phone-items">
+                      <span className="ob-placeholder" style={{ width: '188px' }}></span>
+                    </li>
+                  </ul>
+                  <span className="ob-placeholder" style={{ width: '170px' }}></span>
+                </section>
+                <section>
+                  <h3>
+                    <span className="ob-placeholder" style={{ width: '160px' }}></span>
+                  </h3>
+                  <ul className="list-inline">
+                    <li className="list-inline-item redes-items">
+                      <span className="ob-placeholder ob-placeholder-icon me-1"></span>
+                      <span className="ob-placeholder" style={{ width: '100px' }}></span>
+                    </li>
+                    <li className="list-inline-item redes-items">
+                      <span className="ob-placeholder ob-placeholder-icon me-1"></span>
+                      <span className="ob-placeholder" style={{ width: '100px' }}></span>
+                    </li>
+                    <li className="list-inline-item redes-items">
+                      <span className="ob-placeholder ob-placeholder-icon me-1"></span>
+                      <span className="ob-placeholder" style={{ width: '20px' }}></span>
+                    </li>
+                    <li className="list-inline-item redes-items">
+                      <span className="ob-placeholder ob-placeholder-icon me-1"></span>
+                      <span className="ob-placeholder" style={{ width: '80px' }}></span>
+                    </li>
+                    <li className="list-inline-item redes-items">
+                      <span className="ob-placeholder ob-placeholder-icon me-1"></span>
+                      <span className="ob-placeholder" style={{ width: '80px' }}></span>
+                    </li>
+                    <li className="list-inline-item redes-items">
+                      <span className="ob-placeholder ob-placeholder-icon me-1"></span>
+                      <span className="ob-placeholder" style={{ width: '70px' }}></span>
+                    </li>
+                    <li className="list-inline-item redes-items">
+                      <span className="ob-placeholder ob-placeholder-icon me-1"></span>
+                      <span className="ob-placeholder" style={{ width: '80px' }}></span>
+                    </li>
+                  </ul>
+                </section>
+              </div>
+              <hr className="divider" />
+              <div className="container">
+                <section className="footer-legal-section">
+                  <div className="row align-items-center">
+                    <div className="col-12 col-md-5 col-xl-4 footer-content-img">
+                      <span className="ob-placeholder ob-placeholder-logo"></span>
+                      <span className="ob-placeholder ob-placeholder-logo"></span>
+                    </div>
+                    <div className="col-12">
+                      <ul className="list-inline">
+                        <li className="list-inline-item">
+                          <span className="ob-placeholder" style={{ width: '100px' }}></span>
+                        </li>
+                        <li className="list-inline-item">
+                          <span className="ob-placeholder" style={{ width: '175px' }}></span>
+                        </li>
+                        <li className="list-inline-item">
+                          <span className="ob-placeholder" style={{ width: '160px' }}></span>
+                        </li>
+                        <li className="list-inline-item">
+                          <span className="ob-placeholder" style={{ width: '120px' }}></span>
+                        </li>
+                        <li className="list-inline-item">
+                          <span className="ob-placeholder" style={{ width: '100px' }}></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+                <section>
+                  <div className="footer-license-text">
+                    <span className="ob-placeholder col-2"></span>
+                    <span className="ob-placeholder col-1 mx-1"></span>
+                    <span className="ob-placeholder col-3"></span>
+                    <span className="ob-placeholder col-1 ms-1"></span>
+                  </div>
+                </section>
+              </div>
+            </footer>
+          </div>
+        </CodeBox>
+      ),
+    },
+    {
+      title: 'Solo legales',
+      content: (
+        <CodeBox codeHTML={SKELETON_LEGALS}>
+          <div className="px-4">
+            <footer className="main-footer ob-skeleton" aria-hidden="true">
+              <div className="container">
+                <section className="footer-legal-section">
+                  <div className="row align-items-center">
+                    <div className="col-12 col-md-5 col-xl-4 footer-content-img">
+                      <span className="ob-placeholder w-100" style={{ height: '40px' }}></span>
+                      <span className="ob-placeholder w-100" style={{ height: '40px' }}></span>
+                    </div>
+                    <div className="col-12">
+                      <ul className="list-inline">
+                        <li className="list-inline-item">
+                          <span className="ob-placeholder" style={{ width: '100px' }}></span>
+                        </li>
+                        <li className="list-inline-item">
+                          <span className="ob-placeholder" style={{ width: '175px' }}></span>
+                        </li>
+                        <li className="list-inline-item">
+                          <span className="ob-placeholder" style={{ width: '160px' }}></span>
+                        </li>
+                        <li className="list-inline-item">
+                          <span className="ob-placeholder" style={{ width: '120px' }}></span>
+                        </li>
+                        <li className="list-inline-item">
+                          <span className="ob-placeholder" style={{ width: '105px' }}></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+                <section>
+                  <div className="footer-license-text">
+                    <span className="ob-placeholder col-2"></span>
+                    <span className="ob-placeholder col-1 mx-1"></span>
+                    <span className="ob-placeholder col-3"></span>
+                    <span className="ob-placeholder col-1 ms-1"></span>
+                  </div>
+                </section>
+              </div>
+            </footer>
+          </div>
+        </CodeBox>
+      ),
+    },
+    {
+      title: 'Con indicador',
+      content: (
+        <CodeBox codeHTML={SKELETON_INDICATOR}>
+          <div className="px-4">
+            <div className="footer-info ob-skeleton">
+              <div className="container">
+                <h3 className="footer-info-text">
+                  <span className="ob-placeholder" style={{ width: '190px' }}></span>
+                </h3>
+                <div className="footer-info-actions">
+                  <span className="ob-placeholder rounded-3 w-100" style={{ maxWidth: '140px', height: '40px' }}></span>
+                  <span className="ob-placeholder rounded-3 w-100" style={{ maxWidth: '140px', height: '40px' }}></span>
+                </div>
+              </div>
+            </div>
+            <footer className="main-footer ob-skeleton" aria-hidden="true">
+              <div className="container">
+                <section>
+                  <h3>
+                    <span className="ob-placeholder" style={{ width: '132px' }}></span>
+                  </h3>
+                  <ul className="list-inline">
+                    <li className="list-inline-item phone-items">
+                      <span className="ob-placeholder" style={{ width: '196px' }}></span>
+                    </li>
+                    <li className="list-inline-item phone-items">
+                      <span className="ob-placeholder" style={{ width: '135px' }}></span>
+                    </li>
+                    <li className="list-inline-item phone-items">
+                      <span className="ob-placeholder" style={{ width: '83px' }}></span>
+                    </li>
+                    <li className="list-inline-item phone-items">
+                      <span className="ob-placeholder" style={{ width: '88px' }}></span>
+                    </li>
+                    <li className="list-inline-item phone-items">
+                      <span className="ob-placeholder" style={{ width: '187px' }}></span>
+                    </li>
+                    <li className="list-inline-item phone-items">
+                      <span className="ob-placeholder" style={{ width: '188px' }}></span>
+                    </li>
+                  </ul>
+                  <span className="ob-placeholder" style={{ width: '170px' }}></span>
+                </section>
+                <section>
+                  <h3>
+                    <span className="ob-placeholder" style={{ width: '160px' }}></span>
+                  </h3>
+                  <ul className="list-inline">
+                    <li className="list-inline-item redes-items">
+                      <span className="ob-placeholder ob-placeholder-icon me-1"></span>
+                      <span className="ob-placeholder" style={{ width: '100px' }}></span>
+                    </li>
+                    <li className="list-inline-item redes-items">
+                      <span className="ob-placeholder ob-placeholder-icon me-1"></span>
+                      <span className="ob-placeholder" style={{ width: '100px' }}></span>
+                    </li>
+                    <li className="list-inline-item redes-items">
+                      <span className="ob-placeholder ob-placeholder-icon me-1"></span>
+                      <span className="ob-placeholder" style={{ width: '20px' }}></span>
+                    </li>
+                    <li className="list-inline-item redes-items">
+                      <span className="ob-placeholder ob-placeholder-icon me-1"></span>
+                      <span className="ob-placeholder" style={{ width: '80px' }}></span>
+                    </li>
+                    <li className="list-inline-item redes-items">
+                      <span className="ob-placeholder ob-placeholder-icon me-1"></span>
+                      <span className="ob-placeholder" style={{ width: '80px' }}></span>
+                    </li>
+                    <li className="list-inline-item redes-items">
+                      <span className="ob-placeholder ob-placeholder-icon me-1"></span>
+                      <span className="ob-placeholder" style={{ width: '70px' }}></span>
+                    </li>
+                    <li className="list-inline-item redes-items">
+                      <span className="ob-placeholder ob-placeholder-icon me-1"></span>
+                      <span className="ob-placeholder" style={{ width: '80px' }}></span>
+                    </li>
+                  </ul>
+                </section>
+              </div>
+              <hr className="divider" />
+              <div className="container">
+                <section className="footer-legal-section">
+                  <div className="row align-items-center">
+                    <div className="col-12 col-md-5 col-xl-4 footer-content-img">
+                      <span className="ob-placeholder ob-placeholder-logo"></span>
+                      <span className="ob-placeholder ob-placeholder-logo"></span>
+                    </div>
+                    <div className="col-12">
+                      <ul className="list-inline">
+                        <li className="list-inline-item">
+                          <span className="ob-placeholder" style={{ width: '100px' }}></span>
+                        </li>
+                        <li className="list-inline-item">
+                          <span className="ob-placeholder" style={{ width: '175px' }}></span>
+                        </li>
+                        <li className="list-inline-item">
+                          <span className="ob-placeholder" style={{ width: '160px' }}></span>
+                        </li>
+                        <li className="list-inline-item">
+                          <span className="ob-placeholder" style={{ width: '120px' }}></span>
+                        </li>
+                        <li className="list-inline-item">
+                          <span className="ob-placeholder" style={{ width: '100px' }}></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+                <section>
+                  <div className="footer-license-text">
+                    <span className="ob-placeholder col-2"></span>
+                    <span className="ob-placeholder col-1 mx-1"></span>
+                    <span className="ob-placeholder col-3"></span>
+                    <span className="ob-placeholder col-1 ms-1"></span>
+                  </div>
+                </section>
+              </div>
+            </footer>
+          </div>
+        </CodeBox>
+      ),
+    },
+  ];
+
   return (
     <>
       <ComponentHeader
@@ -769,6 +1064,11 @@ const FooterDocs: React.FC = () => {
             title: 'Accesibilidad',
             id: 'accessibility',
             sectionContent: ACCESSIBILITY,
+          },
+          {
+            title: 'Esqueleto',
+            id: 'section-skeleton',
+            sectionContent: SKELETON,
           },
         ]}
       />

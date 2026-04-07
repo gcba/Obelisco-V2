@@ -1852,3 +1852,423 @@ export const HEADER_2 = `<header class="navbar navbar-light navbar-expand-lg" ro
     </div>
 </header>
 `;
+
+export const SKELETON_BANNER = `
+<div class="header-banner ob-skeleton">
+	<span class="ob-placeholder me-3" style="width:30px;height:16px"></span>
+	<p class="text-sm col-2">
+		<span class="ob-placeholder w-100"></span>
+	</p>
+</div>
+<header class="o-header o-header_banner navbar ob-skeleton" role="banner" aria-hidden="true">
+	<div class="container header-container">
+		<div class="navbar-brand">
+			<span class="ob-placeholder" style="width:74px;height:40px"></span>
+		</div>
+		<div class="navbar-login-mobile col-2 ms-auto">
+			<span class="ob-placeholder ob-placeholder-action"></span>
+		</div>
+		<span class="ob-placeholder ob-placeholder-action d-xl-none ms-3" style="width:48px"></span>
+		<div class="collapse navbar-collapse">
+			<div class="navbar-content">
+				<div class="navbar-sections">
+					<nav>
+						<ul class="nav nav-pills nav-sections">
+							<li class="nav-item col-2">
+								<span class="ob-placeholder ob-placeholder-action"></span>
+							</li>
+							<li class="nav-item col-2">
+								<span class="ob-placeholder ob-placeholder-action"></span>
+							</li>
+							<li class="nav-item col-2">
+								<span class="ob-placeholder ob-placeholder-action"></span>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="navbar-search">
+					<div class="search-container">
+						<span class="ob-placeholder ob-placeholder-action"></span>
+					</div>
+				</div>
+				<div class="navbar-login col-1">
+					<span class="ob-placeholder ob-placeholder-action"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-backdrop"></div>
+</header>
+`;
+
+export const SKELETON_NO_BANNER = `
+<header class="o-header  navbar ob-skeleton" role="banner" aria-hidden="true">
+  <div class="container header-container">
+    <div class="navbar-brand">
+      <span class="ob-placeholder" style="width: 74px; height: 40px;"></span>
+    </div>
+    <div class="navbar-login-mobile col-2 ms-auto">
+      <span class="ob-placeholder ob-placeholder-action"></span>
+    </div>
+    <span class="ob-placeholder ob-placeholder-action d-xl-none ms-3" style="width: 48px;"></span>
+    <div class="collapse navbar-collapse">
+      <div class="navbar-content">
+        <div class="navbar-sections">
+          <nav>
+            <ul class="nav nav-pills nav-sections">
+              <li class="nav-item col-2">
+                <span class="ob-placeholder ob-placeholder-action"></span>
+              </li>
+              <li class="nav-item col-2">
+                <span class="ob-placeholder ob-placeholder-action"></span>
+              </li>
+              <li class="nav-item col-2">
+                <span class="ob-placeholder ob-placeholder-action"></span>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="navbar-search">
+          <div class="search-container">
+            <span class="ob-placeholder ob-placeholder-action"></span>
+          </div>
+        </div>
+        <div class="navbar-login col-1">
+          <span class="ob-placeholder ob-placeholder-action"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-backdrop"></div>
+</header>
+`;
+
+export const SKELETON_LOGIN_ONE_LINE_SEARCH = `
+<header class="o-header navbar ob-skeleton" role="banner" aria-hidden="true">
+  <div class="container header-container">
+    <div class="navbar-brand">
+      <span class="ob-placeholder" style="width: 74px; height: 40px;"></span>
+    </div>
+    <div class="navbar-login-mobile col-2 ms-auto">
+      <span class="ob-placeholder ob-placeholder-action"></span>
+    </div>
+    <span class="ob-placeholder ob-placeholder-action d-xl-none ms-3" style="width: 48px;"></span>
+    <div class="collapse navbar-collapse">
+      <div class="navbar-content">
+        <div class="navbar-sections">
+          <nav>
+            <ul class="nav nav-pills nav-sections">
+              <li class="nav-item col-2">
+                <span class="ob-placeholder ob-placeholder-action"></span>
+              </li>
+              <li class="nav-item col-2">
+                <span class="ob-placeholder ob-placeholder-action"></span>
+              </li>
+              <li class="nav-item col-2">
+                <span class="ob-placeholder ob-placeholder-action"></span>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="navbar-search">
+          <div class="search-container">
+            <span class="ob-placeholder ob-placeholder-action"></span>
+          </div>
+        </div>
+        <div class="navbar-login col-1">
+          <span class="ob-placeholder ob-placeholder-action"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-backdrop"></div>
+</header>
+`;
+
+export const SKELETON_LOGIN_ONE_LINE = `
+<header class="o-header navbar ob-skeleton" role="banner" aria-hidden="true">
+  <div class="container header-container">
+    <div class="navbar-brand">
+      <span class="ob-placeholder" style="width: 74px; height: 40px;"></span>
+    </div>
+    <div class="navbar-login-mobile col-2 ms-auto">
+      <span class="ob-placeholder ob-placeholder-action"></span>
+    </div>
+    <span class="ob-placeholder ob-placeholder-action d-xl-none ms-3" style="width: 48px;"></span>
+    <div class="collapse navbar-collapse">
+      <div class="navbar-content">
+        <div class="navbar-sections">
+          <nav>
+            <ul class="nav nav-pills nav-sections">
+              <li class="nav-item col-2">
+                <span class="ob-placeholder ob-placeholder-action"></span>
+              </li>
+              <li class="nav-item col-2">
+                <span class="ob-placeholder ob-placeholder-action"></span>
+              </li>
+              <li class="nav-item col-2">
+                <span class="ob-placeholder ob-placeholder-action"></span>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="navbar-login col-1">
+          <span class="ob-placeholder ob-placeholder-action"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-backdrop"></div>
+</header>
+`;
+
+export const SKELETON_LOGIN_TWO_LINES_SEARCH = `
+<header class="o-header navbar ob-skeleton" role="banner" aria-hidden="true">
+  <div class="container header-container">
+    <div class="navbar-brand">
+      <span class="ob-placeholder" style="width: 74px; height: 40px;"></span>
+    </div>
+    <div class="navbar-login-mobile col-2 ms-auto">
+      <span class="ob-placeholder ob-placeholder-action"></span>
+    </div>
+    <span class="ob-placeholder ob-placeholder-action d-xl-none ms-3" style="width: 48px;"></span>
+    <div class="collapse navbar-collapse">
+      <div class="navbar-content">
+        <div class="navbar-search">
+          <div class="search-container">
+            <span class="ob-placeholder ob-placeholder-action"></span>
+          </div>
+        </div>
+        <div class="navbar-login col-1">
+          <span class="ob-placeholder ob-placeholder-action"></span>
+        </div>
+      </div>
+      <div class="navbar-content-extended">
+        <nav>
+          <ul class="nav nav-pills nav-sections">
+            <li class="nav-item col-1">
+              <span class="ob-placeholder ob-placeholder-action"></span>
+            </li>
+            <li class="nav-item col-1">
+              <span class="ob-placeholder ob-placeholder-action"></span>
+            </li>
+            <li class="nav-item col-1">
+              <span class="ob-placeholder ob-placeholder-action"></span>
+            </li>
+            <li class="nav-item col-1">
+              <span class="ob-placeholder ob-placeholder-action"></span>
+            </li>
+            <li class="nav-item col-1">
+              <span class="ob-placeholder ob-placeholder-action"></span>
+            </li>
+            <li class="nav-item col-1">
+              <span class="ob-placeholder ob-placeholder-action"></span>
+            </li>
+            <li class="nav-item col-1">
+              <span class="ob-placeholder ob-placeholder-action"></span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="header-backdrop"></div>
+</header>
+`;
+
+export const SKELETON_LOGIN_TWO_LINES = `
+<header class="o-header navbar ob-skeleton" role="banner" aria-hidden="true">
+  <div class="container header-container">
+    <div class="navbar-brand">
+      <span class="ob-placeholder" style="width: 74px; height: 40px;"></span>
+    </div>
+    <div class="navbar-login-mobile col-2 ms-auto">
+      <span class="ob-placeholder ob-placeholder-action"></span>
+    </div>
+    <span class="ob-placeholder ob-placeholder-action d-xl-none ms-3" style="width: 48px;"></span>
+    <div class="collapse navbar-collapse">
+      <div class="navbar-content">
+        <div class="navbar-login col-1">
+          <span class="ob-placeholder ob-placeholder-action"></span>
+        </div>
+      </div>
+      <div class="navbar-content-extended">
+        <nav>
+          <ul class="nav nav-pills nav-sections">
+            <li class="nav-item col-1">
+              <span class="ob-placeholder ob-placeholder-action"></span>
+            </li>
+            <li class="nav-item col-1">
+              <span class="ob-placeholder ob-placeholder-action"></span>
+            </li>
+            <li class="nav-item col-1">
+              <span class="ob-placeholder ob-placeholder-action"></span>
+            </li>
+            <li class="nav-item col-1">
+              <span class="ob-placeholder ob-placeholder-action"></span>
+            </li>
+            <li class="nav-item col-1">
+              <span class="ob-placeholder ob-placeholder-action"></span>
+            </li>
+            <li class="nav-item col-1">
+              <span class="ob-placeholder ob-placeholder-action"></span>
+            </li>
+            <li class="nav-item col-1">
+              <span class="ob-placeholder ob-placeholder-action"></span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="header-backdrop"></div>
+</header>
+`;
+
+export const SKELETON_NO_LOGIN_SEARCH = `
+<header class="o-header  navbar ob-skeleton" role="banner" aria-hidden="true">
+  <div class="container header-container">
+    <div class="navbar-brand">
+      <span class="ob-placeholder" style="width: 74px; height: 40px;"></span>
+    </div>
+    <span class="ob-placeholder ob-placeholder-action d-xl-none ms-3" style="width: 48px;"></span>
+    <div class="collapse navbar-collapse">
+      <div class="navbar-content">
+        <div class="navbar-sections">
+          <nav>
+            <ul class="nav nav-pills nav-sections">
+              <li class="nav-item col-2">
+                <span class="ob-placeholder ob-placeholder-action"></span>
+              </li>
+              <li class="nav-item col-2">
+                <span class="ob-placeholder ob-placeholder-action"></span>
+              </li>
+              <li class="nav-item col-2">
+                <span class="ob-placeholder ob-placeholder-action"></span>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="navbar-search">
+          <div class="search-container">
+            <span class="ob-placeholder ob-placeholder-action"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-backdrop"></div>
+</header>
+`;
+
+export const SKELETON_NO_LOGIN = `
+<header class="o-header  navbar ob-skeleton" role="banner" aria-hidden="true">
+  <div class="container header-container">
+    <div class="navbar-brand">
+      <span class="ob-placeholder" style="width: 74px; height: 40px;"></span>
+    </div>
+    <span class="ob-placeholder ob-placeholder-action d-xl-none ms-3" style="width: 48px;"></span>
+    <div class="collapse navbar-collapse">
+      <div class="navbar-content">
+        <div class="navbar-sections">
+          <nav>
+            <ul class="nav nav-pills nav-sections">
+              <li class="nav-item col-2">
+                <span class="ob-placeholder ob-placeholder-action"></span>
+              </li>
+              <li class="nav-item col-2">
+                <span class="ob-placeholder ob-placeholder-action"></span>
+              </li>
+              <li class="nav-item col-2">
+                <span class="ob-placeholder ob-placeholder-action"></span>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-backdrop"></div>
+</header>
+`;
+
+export const SKELETON_LOGIN_ONLY_SEARCH = `
+<header class="o-header  navbar ob-skeleton" role="banner" aria-hidden="true">
+  <div class="container header-container">
+    <div class="navbar-brand">
+      <span class="ob-placeholder" style="width: 74px; height: 40px;"></span>
+    </div>
+    <div class="navbar-login-mobile col-2 ms-auto">
+      <span class="ob-placeholder ob-placeholder-action"></span>
+    </div>
+    <span class="ob-placeholder ob-placeholder-action d-xl-none ms-3" style="width: 48px;"></span>
+    <div class="collapse navbar-collapse">
+      <div class="navbar-content">
+        <div class="navbar-search">
+          <div class="search-container">
+            <span class="ob-placeholder ob-placeholder-action"></span>
+          </div>
+        </div>
+        <div class="navbar-login col-1">
+          <span class="ob-placeholder ob-placeholder-action"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-backdrop"></div>
+</header>
+`;
+
+export const SKELETON_LOGIN_ONLY = `
+<header class="o-header  navbar ob-skeleton" role="banner" aria-hidden="true">
+  <div class="container header-container">
+    <div class="navbar-brand">
+      <span class="ob-placeholder" style="width: 74px; height: 40px;"></span>
+    </div>
+    <div class="navbar-login-mobile col-2 ms-auto">
+      <span class="ob-placeholder ob-placeholder-action"></span>
+    </div>
+    <span class="ob-placeholder ob-placeholder-action d-xl-none ms-3" style="width: 48px;"></span>
+    <div class="collapse navbar-collapse">
+      <div class="navbar-content">
+        <div class="navbar-login col-1">
+          <span class="ob-placeholder ob-placeholder-action"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-backdrop"></div>
+</header>
+`;
+
+export const SKELETON_ONLY_SEARCH = `
+<header class="o-header navbar ob-skeleton" role="banner" aria-hidden="true">
+  <div class="container header-container">
+    <div class="navbar-brand">
+      <span class="ob-placeholder" style="width: 74px; height: 40px;"></span>
+    </div>
+    <span class="ob-placeholder ob-placeholder-action d-xl-none ms-3" style="width: 48px;"></span>
+    <div class="collapse navbar-collapse">
+      <div class="navbar-content">
+        <div class="navbar-search">
+          <div class="search-container">
+            <span class="ob-placeholder ob-placeholder-action"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-backdrop"></div>
+</header>
+`;
+
+export const SKELETON_ONLY_LOGO = `
+<header class="o-header navbar ob-skeleton" role="banner" aria-hidden="true">
+  <div class="container header-container">
+    <div class="navbar-brand">
+      <span class="ob-placeholder" style="width: 74px; height: 40px;"></span>
+    </div>
+  </div>
+  <div class="header-backdrop"></div>
+</header>
+`;

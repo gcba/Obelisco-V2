@@ -564,3 +564,203 @@ export const TARJETAS_ACCESSIBILTY_2 = `
   </div>
 </div>
 `;
+
+export const SKELETON_HORIZONTAL_ICON = `
+<div class="card card-horizontal ob-skeleton" aria-hidden="true">
+	<span class="ob-placeholder rounded-3 m-3 me-0" style="width: 64px; height: 64px;"></span>
+	<div class="card-body">
+		<h3 class="card-title">
+			<span class="ob-placeholder w-50"></span>
+		</h3>
+		<span class="ob-placeholder mt-2 w-75"></span>
+	</div>
+</div>
+
+<div class="card card-horizontal ob-skeleton" aria-hidden="true">
+	<div class="d-flex w-100 card-border-left-blue">
+		<span class="ob-placeholder rounded-3 m-3 me-0" style="width: 64px; height: 64px;"></span>
+		<div class="card-body">
+			<h3 class="card-title">
+				<span class="ob-placeholder w-50"></span>
+			</h3>
+			<span class="ob-placeholder mt-2 w-75"></span>
+		</div>
+	</div>
+</div>
+
+<div class="card card-horizontal unbordered ob-skeleton" aria-hidden="true">
+	<span class="ob-placeholder rounded-3 m-3 me-0" style="width: 64px; height: 64px;"></span>
+	<div class="card-body">
+		<h3 class="card-title">
+			<span class="ob-placeholder w-50"></span>
+		</h3>
+		<span class="ob-placeholder mt-2 w-75"></span>
+	</div>
+</div>
+`;
+
+export const SKELETON_HORIZONTAL_TEXT = `
+<div class="card card-horizontal ob-skeleton" aria-hidden="true">
+	<div class="card-body">
+		<h3 class="card-title">
+			<span class="ob-placeholder w-50"></span>
+		</h3>
+		<span class="ob-placeholder mt-2 w-75"></span>
+	</div>
+</div>
+
+<div class="card card-horizontal ob-skeleton" aria-hidden="true">
+	<div class="card-body card-border-left-blue">
+		<h3 class="card-title">
+			<span class="ob-placeholder w-50"></span>
+		</h3>
+		<span class="ob-placeholder mt-2 w-75"></span>
+	</div>
+</div>
+
+<div class="card card-horizontal unbordered ob-skeleton" aria-hidden="true">
+	<div class="card-body">
+		<h3 class="card-title">
+			<span class="ob-placeholder w-50"></span>
+		</h3>
+		<span class="ob-placeholder mt-2 w-75"></span>
+	</div>
+</div>
+`;
+
+export const SKELETON_HORIZONTAL_THEME = `
+<div class="card thematic ob-skeleton" aria-hidden="true">
+  <span class="ob-placeholder" style="width: 128px; height: 128px;"></span>
+  <div class="card-body">
+    <h3 class="card-title">
+      <span class="ob-placeholder w-50"></span>
+    </h3>
+    <span class="ob-placeholder mt-2 w-75"></span>
+  </div>
+</div>
+`;
+
+export const SKELETON_VERTICAL_ICON = `
+<div class="card ob-skeleton" aria-hidden="true">
+	<span class="ob-placeholder rounded-3 m-4 mb-0" style="width: 64px; height: 64px;"></span>
+	<div class="card-body">
+		<h3 class="card-title">
+			<span class="ob-placeholder w-50"></span>
+		</h3>
+		<span class="ob-placeholder mt-2 w-75"></span>
+	</div>
+</div>
+
+<div class="card ob-skeleton" aria-hidden="true">
+	<span class="ob-placeholder rounded-3 m-4 mb-0" style="width: 64px; height: 64px;"></span>
+	<div class="card-body card-border-bottom-blue">
+		<h3 class="card-title">
+			<span class="ob-placeholder w-50"></span>
+		</h3>
+		<span class="ob-placeholder mt-2 w-75"></span>
+	</div>
+</div>
+
+<div class="card unbordered ob-skeleton" aria-hidden="true">
+	<span class="ob-placeholder rounded-3 m-4 mb-0" style="width: 64px; height: 64px;"></span>
+	<div class="card-body">
+		<h3 class="card-title">
+			<span class="ob-placeholder w-50"></span>
+		</h3>
+		<span class="ob-placeholder mt-2 w-75"></span>
+	</div>
+</div>
+`;
+
+export const SKELETON_VERTICAL_IMG = `
+<div class="card ob-skeleton" aria-hidden="true">
+	<span class="ob-placeholder w-100" style="height: 196px;"></span>
+	<div class="card-body">
+		<h3 class="card-title">
+			<span class="ob-placeholder w-50"></span>
+		</h3>
+		<span class="ob-placeholder mt-2 w-75"></span>
+	</div>
+</div>
+
+<div class="card ob-skeleton" aria-hidden="true">
+	<span class="ob-placeholder w-100" style="height: 196px;"></span>
+	<div class="card-body card-border-bottom-blue">
+		<h3 class="card-title">
+			<span class="ob-placeholder w-50"></span>
+		</h3>
+		<span class="ob-placeholder mt-2 w-75"></span>
+	</div>
+</div>
+`;
+
+export const SKELETON_VERTICAL_NOTICE = `
+<div class="card ob-skeleton" aria-hidden="true">
+  <span class="ob-placeholder w-100" style="height: 196px;"></span>
+  <div class="card-body">
+    <div class="card-badges">
+      <span class="ob-placeholder w-25 rounded-2 me-2" style="height: 24px;"></span>
+      <span class="ob-placeholder w-25 rounded-2" style="height: 24px;"></span>
+    </div>
+    <h3 class="card-title">
+      <span class="ob-placeholder w-50"></span>
+    </h3>
+    <span class="ob-placeholder mt-2 w-75"></span>
+    <div class="card-info">
+      <div>
+        <small>
+          <span class="ob-placeholder mt-2 w-50"></span>
+        </small>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+export const SKELETON_VERTICAL_AGENDA = `
+<div class="card card-eventos ob-skeleton" aria-hidden="true">
+  <span class="ob-placeholder w-100" style="height: 196px;"></span>
+  <div class="card-body">
+    <span class="ob-placeholder w-50 mb-3"></span>
+    <div class="mb-3">
+      <span class="ob-placeholder w-25 rounded-2 me-2" style="height: 24px;"></span>
+      <span class="ob-placeholder w-25 rounded-2" style="height: 24px;"></span>
+    </div>
+    <h3 class="card-title">
+      <span class="ob-placeholder col-1 me-1"></span>
+      <span class="ob-placeholder col-2 me-1"></span>
+      <span class="ob-placeholder col-4 me-1"></span>
+      <span class="ob-placeholder col-3 me-1"></span>
+      <span class="ob-placeholder col-4 me-1"></span>
+      <span class="ob-placeholder col-6"></span>
+    </h3>
+    <div class="mt-3 d-flex flex-wrap gap-1">
+      <span class="ob-placeholder col-1"></span>
+      <span class="ob-placeholder col-3"></span>
+      <span class="ob-placeholder col-2"></span>
+      <span class="ob-placeholder col-4"></span>
+      <span class="ob-placeholder col-6"></span>
+      <span class="ob-placeholder col-1"></span>
+      <span class="ob-placeholder col-3"></span>
+      <span class="ob-placeholder col-6"></span>
+      <span class="ob-placeholder col-4"></span>
+      <span class="ob-placeholder col-2"></span>
+      <span class="ob-placeholder col-6"></span>
+      <span class="ob-placeholder col-3"></span>
+    </div>
+    <div class="card-info">
+      <div class="pt-2">
+        <small>
+          <span class="ob-placeholder mt-2 w-25"></span>
+        </small>
+        <small>
+          <span class="ob-placeholder mt-2 w-25"></span>
+        </small>
+        <small>
+          <span class="ob-placeholder mt-2 w-50"></span>
+        </small>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -24,6 +24,13 @@ import {
   VERTICAL_IMG,
   VERTICAL_NOTICE,
   VERTICAL_NOTICE_TRUNCATE,
+  SKELETON_HORIZONTAL_ICON,
+  SKELETON_HORIZONTAL_TEXT,
+  SKELETON_HORIZONTAL_THEME,
+  SKELETON_VERTICAL_ICON,
+  SKELETON_VERTICAL_IMG,
+  SKELETON_VERTICAL_NOTICE,
+  SKELETON_VERTICAL_AGENDA,
 } from './code-views';
 
 const basePath = '/Obelisco-V2';
@@ -1723,6 +1730,272 @@ const CardDocs: React.FC = () => {
     },
   ];
 
+  const SKELETON = [
+    {
+      title: 'Horizontal',
+      firstTitle: true,
+    },
+    {
+      subtitle: 'Con icono / imagen',
+      content: (
+        <CodeBox codeHTML={SKELETON_HORIZONTAL_ICON}>
+          <div className="container">
+            <div className="card-box-sizing">
+              <div className="card card-horizontal ob-skeleton" aria-hidden="true">
+                <span className="ob-placeholder rounded-3 m-3 me-0" style={{ width: '64px', height: '64px' }}></span>
+                <div className="card-body">
+                  <h3 className="card-title">
+                    <span className="ob-placeholder w-50"></span>
+                  </h3>
+                  <span className="ob-placeholder mt-2 w-75"></span>
+                </div>
+              </div>
+              <br />
+              <div className="card card-horizontal ob-skeleton" aria-hidden="true">
+                <div className="d-flex w-100 card-border-left-blue">
+                  <span className="ob-placeholder rounded-3 m-3 me-0" style={{ width: '64px', height: '64px' }}></span>
+                  <div className="card-body">
+                    <h3 className="card-title">
+                      <span className="ob-placeholder w-50"></span>
+                    </h3>
+                    <span className="ob-placeholder mt-2 w-75"></span>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div className="card card-horizontal unbordered ob-skeleton" aria-hidden="true">
+                <span className="ob-placeholder rounded-3 m-3 me-0" style={{ width: '64px', height: '64px' }}></span>
+                <div className="card-body">
+                  <h3 className="card-title">
+                    <span className="ob-placeholder w-50"></span>
+                  </h3>
+                  <span className="ob-placeholder mt-2 w-75"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </CodeBox>
+      ),
+    },
+    {
+      subtitle: 'Solo texto',
+      content: (
+        <CodeBox codeHTML={SKELETON_HORIZONTAL_TEXT}>
+          <div className="container">
+            <div className="col-12 col-xl-8">
+              <div className="card card-horizontal ob-skeleton" aria-hidden="true">
+                <div className="card-body">
+                  <h3 className="card-title">
+                    <span className="ob-placeholder w-50"></span>
+                  </h3>
+                  <span className="ob-placeholder mt-2 w-75"></span>
+                </div>
+              </div>
+              <br />
+              <div className="card card-horizontal ob-skeleton" aria-hidden="true">
+                <div className="card-body card-border-left-blue">
+                  <h3 className="card-title">
+                    <span className="ob-placeholder w-50"></span>
+                  </h3>
+                  <span className="ob-placeholder mt-2 w-75"></span>
+                </div>
+              </div>
+              <br />
+              <div className="card card-horizontal unbordered ob-skeleton" aria-hidden="true">
+                <div className="card-body">
+                  <h3 className="card-title">
+                    <span className="ob-placeholder w-50"></span>
+                  </h3>
+                  <span className="ob-placeholder mt-2 w-75"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </CodeBox>
+      ),
+    },
+    {
+      subtitle: 'Temática',
+      content: (
+        <CodeBox codeHTML={SKELETON_HORIZONTAL_THEME}>
+          <div className="container">
+            <div className="card-box-sizing">
+              <div className="card thematic ob-skeleton" aria-hidden="true">
+                <span className="ob-placeholder" style={{ width: '128px', height: '128px' }}></span>
+                <div className="card-body">
+                  <h3 className="card-title">
+                    <span className="ob-placeholder w-50"></span>
+                  </h3>
+                  <span className="ob-placeholder mt-2 w-75"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </CodeBox>
+      ),
+    },
+    {
+      title: 'Vertical',
+    },
+    {
+      subtitle: 'Con icono',
+      content: (
+        <CodeBox codeHTML={SKELETON_VERTICAL_ICON}>
+          <div className="container">
+            <div className="card-vertical-box-sizing">
+              <div className="card ob-skeleton" aria-hidden="true">
+                <span className="ob-placeholder rounded-3 m-4 mb-0" style={{ width: '64px', height: '64px' }}></span>
+                <div className="card-body">
+                  <h3 className="card-title">
+                    <span className="ob-placeholder w-50"></span>
+                  </h3>
+                  <span className="ob-placeholder mt-2 w-75"></span>
+                </div>
+              </div>
+              <br />
+              <div className="card ob-skeleton" aria-hidden="true">
+                <span className="ob-placeholder rounded-3 m-4 mb-0" style={{ width: '64px', height: '64px' }}></span>
+                <div className="card-body card-border-bottom-blue">
+                  <h3 className="card-title">
+                    <span className="ob-placeholder w-50"></span>
+                  </h3>
+                  <span className="ob-placeholder mt-2 w-75"></span>
+                </div>
+              </div>
+              <br />
+              <div className="card unbordered ob-skeleton" aria-hidden="true">
+                <span className="ob-placeholder rounded-3 m-4 mb-0" style={{ width: '64px', height: '64px' }}></span>
+                <div className="card-body">
+                  <h3 className="card-title">
+                    <span className="ob-placeholder w-50"></span>
+                  </h3>
+                  <span className="ob-placeholder mt-2 w-75"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </CodeBox>
+      ),
+    },
+    {
+      subtitle: 'Con imagen',
+      content: (
+        <CodeBox codeHTML={SKELETON_VERTICAL_IMG}>
+          <div className="container">
+            <div className="card-vertical-box-sizing">
+              <div className="card ob-skeleton" aria-hidden="true">
+                <span className="ob-placeholder w-100" style={{ height: '196px' }}></span>
+                <div className="card-body">
+                  <h3 className="card-title">
+                    <span className="ob-placeholder w-50"></span>
+                  </h3>
+                  <span className="ob-placeholder mt-2 w-75"></span>
+                </div>
+              </div>
+              <br />
+              <div className="card ob-skeleton" aria-hidden="true">
+                <span className="ob-placeholder w-100" style={{ height: '196px' }}></span>
+                <div className="card-body card-border-bottom-blue">
+                  <h3 className="card-title">
+                    <span className="ob-placeholder w-50"></span>
+                  </h3>
+                  <span className="ob-placeholder mt-2 w-75"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </CodeBox>
+      ),
+    },
+    {
+      subtitle: 'Noticia',
+      content: (
+        <CodeBox codeHTML={SKELETON_VERTICAL_NOTICE}>
+          <div className="container">
+            <div className="card-vertical-box-sizing">
+              <div className="card ob-skeleton" aria-hidden="true">
+                <span className="ob-placeholder w-100" style={{ height: '196px' }}></span>
+                <div className="card-body">
+                  <div className="card-badges">
+                    <span className="ob-placeholder w-25 rounded-2 me-2" style={{ height: '24px' }}></span>
+                    <span className="ob-placeholder w-25 rounded-2" style={{ height: '24px' }}></span>
+                  </div>
+                  <h3 className="card-title">
+                    <span className="ob-placeholder w-50"></span>
+                  </h3>
+                  <span className="ob-placeholder mt-2 w-75"></span>
+                  <div className="card-info">
+                    <div>
+                      <small>
+                        <span className="ob-placeholder mt-2 w-50"></span>
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </CodeBox>
+      ),
+    },
+    {
+      subtitle: 'Eventos',
+      content: (
+        <CodeBox codeHTML={SKELETON_VERTICAL_AGENDA}>
+          <div className="container">
+            <div className="card-vertical-box-sizing">
+              <div className="card card-eventos ob-skeleton" aria-hidden="true">
+                <span className="ob-placeholder w-100" style={{ height: '196px' }}></span>
+                <div className="card-body">
+                  <span className="ob-placeholder w-50 mb-3"></span>
+                  <div className="mb-3">
+                    <span className="ob-placeholder w-25 rounded-2 me-2" style={{ height: '24px' }}></span>
+                    <span className="ob-placeholder w-25 rounded-2" style={{ height: '24px' }}></span>
+                  </div>
+                  <h3 className="card-title">
+                    <span className="ob-placeholder col-1 me-1"></span>
+                    <span className="ob-placeholder col-2 me-1"></span>
+                    <span className="ob-placeholder col-4 me-1"></span>
+                    <span className="ob-placeholder col-3 me-1"></span>
+                    <span className="ob-placeholder col-4 me-1"></span>
+                    <span className="ob-placeholder col-6"></span>
+                  </h3>
+                  <div className="mt-3 d-flex flex-wrap gap-1">
+                    <span className="ob-placeholder col-1"></span>
+                    <span className="ob-placeholder	col-3"></span>
+                    <span className="ob-placeholder col-2"></span>
+                    <span className="ob-placeholder col-4"></span>
+                    <span className="ob-placeholder col-6"></span>
+                    <span className="ob-placeholder col-1"></span>
+                    <span className="ob-placeholder col-3"></span>
+                    <span className="ob-placeholder col-6"></span>
+                    <span className="ob-placeholder col-4"></span>
+                    <span className="ob-placeholder col-2"></span>
+                    <span className="ob-placeholder col-6"></span>
+                    <span className="ob-placeholder col-3"></span>
+                  </div>
+                  <div className="card-info">
+                    <div className="pt-2">
+                      <small>
+                        <span className="ob-placeholder mt-2 w-25"></span>
+                      </small>
+                      <small>
+                        <span className="ob-placeholder mt-2 w-25"></span>
+                      </small>
+                      <small>
+                        <span className="ob-placeholder mt-2 w-50"></span>
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </CodeBox>
+      ),
+    },
+  ];
+
   return (
     <>
       <ComponentHeader
@@ -1744,6 +2017,11 @@ const CardDocs: React.FC = () => {
             title: 'Accesibilidad',
             id: 'section-accessibility',
             sectionContent: ACCESSIBILITY,
+          },
+          {
+            title: 'Skeleton',
+            id: 'section-skeleton',
+            sectionContent: SKELETON,
           },
         ]}
       />

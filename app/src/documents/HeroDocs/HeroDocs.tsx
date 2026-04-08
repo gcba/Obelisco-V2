@@ -33,51 +33,7 @@ const HeroHeaderDocs: React.FC = () => {
       title: 'Tipos de formas',
       firstTitle: true,
     },
-    {
-      title: 'Landing page - degrade',
-      content: (
-        <>
-          <CodeBox codeHTML={HERO_LANDING}>
-            <div className="container">
-              <div className="hero-container">
-                <div className="hero-box-sizing mb-0">
-                  <header className="hero-landing gradient">
-                    <Image
-                      src={`${basePath}/images/hero/hero-landing.jpg`}
-                      className="hero-bg-image"
-                      alt="Hero"
-                      width={1366}
-                      height={500}
-                    />
 
-                    <div className="panel-horizontal-content">
-                      <div className="panel-horizontal">
-                        <div className="panel-body">
-                          <h1 className="panel-title">Título del destacado</h1>
-                          <p className="panel-text text-xl">
-                            Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
-                            contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso,
-                            de pocas líneas. No puede contener negritas ni enlaces
-                          </p>
-                          <div className="panel-footer">
-                            <button type="button" className="btn btn-secondary">
-                              Botón
-                            </button>
-                            <button type="button" className="btn btn-outline-secondary">
-                              Botón
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </header>
-                </div>
-              </div>
-            </div>
-          </CodeBox>
-        </>
-      ),
-    },
     {
       title: 'Landing page',
       content: (
@@ -98,19 +54,140 @@ const HeroHeaderDocs: React.FC = () => {
                     <div className="panel-horizontal-content">
                       <div className="panel-horizontal">
                         <div className="panel-body">
-                          <h1 className="panel-title">Título del destacado</h1>
-                          <p className="panel-text text-xl">
-                            Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
-                            contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso,
-                            de pocas líneas. No puede contener negritas ni enlaces
-                          </p>
+                          <div className="panel-wrapper">
+                            <h1 className="panel-title">Descubrir BA</h1>
+                            <p className="panel-text text-xl">Todo lo que podés hacer en la Ciudad en un solo lugar.</p>
+                          </div>
+
                           <div className="panel-footer">
-                            <button type="button" className="btn btn-secondary">
-                              Botón
-                            </button>
-                            <button type="button" className="btn btn-outline-secondary">
-                              Botón
-                            </button>
+                            {/* desplegables */}
+                            <div className="d-grid d-sm-flex flex-wrap column-gap-2 row-gap-4">
+                              <div className="dropdown">
+                                <button
+                                  type="button"
+                                  className="btn btn-dropdown btn-dropdown-border btn-lg"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
+                                  <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                                    expand_more
+                                  </span>
+                                </button>
+                                <div className="dropdown-menu">
+                                  <a className="dropdown-item" href="#">
+                                    <span className="item-text">Opción de navegación</span>
+                                  </a>
+                                  <a className="dropdown-item" href="#">
+                                    <span className="item-text">Opción de navegación</span>
+                                  </a>
+                                  <a className="dropdown-item" href="#">
+                                    <span className="item-text">Opción de navegación</span>
+                                  </a>
+                                </div>
+                              </div>
+                              <div className="dropdown">
+                                <button
+                                  type="button"
+                                  className="btn btn-dropdown btn-dropdown-border btn-lg"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
+                                  <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                                    expand_more
+                                  </span>
+                                </button>
+                                <div className="dropdown-menu">
+                                  <a className="dropdown-item" href="#">
+                                    <span className="item-text">Opción de navegación</span>
+                                  </a>
+                                  <a className="dropdown-item" href="#">
+                                    <span className="item-text">Opción de navegación</span>
+                                  </a>
+                                  <a className="dropdown-item" href="#">
+                                    <span className="item-text">Opción de navegación</span>
+                                  </a>
+                                </div>
+                              </div>
+                              <div className="dropdown">
+                                <button
+                                  type="button"
+                                  className="btn btn-dropdown btn-dropdown-border btn-lg"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
+                                  <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                                    expand_more
+                                  </span>
+                                </button>
+                                <div className="dropdown-menu">
+                                  <a className="dropdown-item" href="#">
+                                    <span className="item-text">Opción de navegación</span>
+                                  </a>
+                                  <a className="dropdown-item" href="#">
+                                    <span className="item-text">Opción de navegación</span>
+                                  </a>
+                                  <a className="dropdown-item" href="#">
+                                    <span className="item-text">Opción de navegación</span>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            {/* desplegables */}
+
+                            {/* etiquetas */}
+                            {/* <div className="d-flex flex-wrap column-gap-2 row-gap-4">
+                              <span className="me-3 fw-semibold">Texto de las etiquetas: </span>
+                              <span className="badge badge-default">Etiqueta</span>
+                              <span className="badge badge-default">Etiqueta</span>
+                              <span className="badge badge-default">Etiqueta</span>
+                            </div> */}
+                            {/* etiquetas */}
+
+                            {/* Buscador */}
+                            {/* <div className="search-container">
+                              <div className="search-wrapper">
+                                <input
+                                  type="text"
+                                  id="search-home"
+                                  name="search-home"
+                                  maxLength={100}
+                                  autoComplete="off"
+                                  className="form-control"
+                                  placeholder="¿En qué te podemos ayudar?"
+                                />
+                                <div className="search-btn-container">
+                                  <button className="btn btn-primary btn-search">Buscar</button>
+                                </div>
+
+                                <div className="search-results bg-light">
+                                  <div>
+                                    <a href="#" target="_blank" rel="noopener noreferrer" className="list-link-result">
+                                      <span className="material-symbols-rounded">search</span>
+                                      Enlace predeterminado
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener noreferrer" className="list-link-result">
+                                      <span className="material-symbols-rounded">search</span>
+                                      Enlace predeterminado
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div> */}
+                            {/* Buscador */}
+
+                            {/* botones */}
+                            {/* <div className="btn-hero">
+                              <button type="button" className="btn btn-secondary">
+                                Botón
+                              </button>
+                              <button type="button" className="btn btn-outline-secondary">
+                                Botón
+                              </button>
+                            </div> */}
+                            {/* botones */}
                           </div>
                         </div>
                       </div>

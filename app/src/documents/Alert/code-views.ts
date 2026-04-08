@@ -182,3 +182,20 @@ aria-describedby="alertDesc">
   <p id="alertDesc">El servicio estará disponible nuevamente a las 14:00.</p>
 </div>
 `;
+
+export const SKELETON_ALERT = `<div className="container d-flex flex-column gap-3">
+  <div className="alert alert-info system ob-skeleton" role="alert">
+    <p className="ob-placeholder">
+      <strong>Este es un destacado de una alerta de información. </strong>
+      Esta es la descripción de una alerta de información que continua al texto destacado, incluso{' '}
+      <LinkClient>con enlaces</LinkClient>
+    </p>
+    <ol className="ob-placeholder">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ol>
+  </div>
+</div>`;

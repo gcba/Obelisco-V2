@@ -23,6 +23,12 @@
     color: transparent;
     pointer-events: none;
 
+    // enlaces dentro de un elemento con la clase .ob-placeholder
+    a {
+      color: transparent;
+      text-decoration: none;
+    }
+
     &::after {
       content: '';
       position: absolute;
@@ -37,15 +43,44 @@
     }
 
     // BADGE
+    // las etiquetas llevan este estilo acá, porque el 'ob-skeleton' lo lleva un div que las contiene. no lleva 'ob-skeleton' a la misma altura de .badge
     &.badge {
       outline: 0 transparent;
       text-decoration: none;
+    }
+  }
 
-      &:active,
-      &:focus,
-      &:hover {
-        all: unset;
+  // ALERTAS
+  &.alert {
+    position: relative;
+    background-color: $slate-200 !important;
+    
+    .ob-placeholder {
+      a {
+        color: transparent !important; // es la única manera de hacerlo, porque en los estilos del componente lleva !important
+        text-decoration: none;
       }
+    }
+
+    ol.ob-placeholder {
+      color: transparent !important; // es la única manera de hacerlo, porque en los estilos del componente lleva !important
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 1rem;
+      top: 1.25rem;
+      width: 1.25rem;
+      height: 1.25rem;
+      background-color: $dark;
+      opacity: 0.5;
+      border-radius: 2px;
+      overflow: hidden;
+      background-image: linear-gradient(90deg, transparent 0%, rgb(255 255 255 / 25%) 50%, transparent 100%);
+      background-size: 200% 100%;
+      background-repeat: no-repeat;
+      animation: ob-skeleton-shimmer 1.5s infinite;
     }
   }
 

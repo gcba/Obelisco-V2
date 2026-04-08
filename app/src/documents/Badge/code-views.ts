@@ -55,3 +55,11 @@ export const BADGE_TYPES = `// Default
   ETIQUETA
 </a>
 `;
+
+export const SKELETON_BADGE = `<div class="grid gap-5 ob-skeleton">
+  <span class="badge badge-default ob-placeholder">predeterminada</span>
+</div>`;
+
+export const SKELETON_BADGE_LINK = `<div class="grid gap-5 ob-skeleton">
+    <a href="#" class="badge badge-default ob-placeholder" rel="noopener noreferrer">Etiqueta</a>
+</div>`;

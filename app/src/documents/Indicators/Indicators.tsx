@@ -82,37 +82,45 @@ const SECTIONS_DEV = [
     content: (
       <CodeBox codeHTML={INDICATOR_MULTIPLES}>
         <div className="container">
-          <div className="d-flex gap-3 justify-content-center">
-            <div className="indicator">
-              <h1>36.578</h1>
-              <p className="headline-lg">Días ahorrados</p>
-              <p className="text-md">Tiempo que se ahorran los vecinos y la administracion Pública</p>
+          <div className="card-items-3">
+            <div className="col">
+              <div className="indicator">
+                <h1>36.578</h1>
+                <p className="headline-lg">Días ahorrados</p>
+                <p className="text-md">Tiempo que se ahorran los vecinos y la administracion Pública</p>
+              </div>
             </div>
 
-            <div className="indicator">
-              <h1>36.578</h1>
-              <p className="headline-lg">Días ahorrados</p>
-              <p className="text-md">Tiempo que se ahorran los vecinos y la administracion Pública</p>
+            <div className="col">
+              <div className="indicator">
+                <h1>36.578</h1>
+                <p className="headline-lg">Días ahorrados</p>
+                <p className="text-md">Tiempo que se ahorran los vecinos y la administracion Pública</p>
+              </div>
             </div>
 
-            <div className="indicator">
-              <h1>36.578</h1>
-              <p className="headline-lg">Días ahorrados</p>
-              <p className="text-md">Tiempo que se ahorran los vecinos y la administracion Pública</p>
-            </div>
-          </div>
-
-          <div className="d-flex gap-3 justify-content-center pt-3">
-            <div className="indicator bg-light">
-              <h1>36.578</h1>
-              <p className="headline-lg">Días ahorrados</p>
-              <p className="text-md">Tiempo que se ahorran los vecinos y la administracion Pública</p>
+            <div className="col">
+              <div className="indicator">
+                <h1>36.578</h1>
+                <p className="headline-lg">Días ahorrados</p>
+                <p className="text-md">Tiempo que se ahorran los vecinos y la administracion Pública</p>
+              </div>
             </div>
 
-            <div className="indicator bg-light">
-              <h1>36.578</h1>
-              <p className="headline-lg">Días ahorrados</p>
-              <p className="text-md">Tiempo que se ahorran los vecinos y la administracion Pública</p>
+            <div className="col w-lg-50">
+              <div className="indicator bg-light mw-lg-100">
+                <h1>36.578</h1>
+                <p className="headline-lg">Días ahorrados</p>
+                <p className="text-md">Tiempo que se ahorran los vecinos y la administracion Pública</p>
+              </div>
+            </div>
+
+            <div className="col w-lg-50">
+              <div className="indicator bg-light mw-lg-100">
+                <h1>36.578</h1>
+                <p className="headline-lg">Días ahorrados</p>
+                <p className="text-md">Tiempo que se ahorran los vecinos y la administracion Pública</p>
+              </div>
             </div>
           </div>
         </div>

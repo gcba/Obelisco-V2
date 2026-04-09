@@ -43,37 +43,41 @@ export const INDICATOR_SIZE = `
 `;
 
 export const INDICATOR_MULTIPLES = `
-<div class="d-flex gap-3 justify-content-center">
-	<div class="indicator">
-		<h1>36.578</h1>
-		<p class="headline-lg">Días ahorrados</p>
-		<p class="text-md">Tiempo que se ahorran los vecinos y la administracion Pública</p>
-	</div>
-
-	<div class="indicator">
-		<h1>36.578</h1>
-		<p class="headline-lg">Días ahorrados</p>
-		<p class="text-md">Tiempo que se ahorran los vecinos y la administracion Pública</p>
-	</div>
-
-	<div class="indicator">
-		<h1>36.578</h1>
-		<p class="headline-lg">Días ahorrados</p>
-		<p class="text-md">Tiempo que se ahorran los vecinos y la administracion Pública</p>
-	</div>
-</div>
-
-<div class="d-flex gap-3 justify-content-center pt-3">
-	<div class="indicator bg-light">
-		<h1>36.578</h1>
-		<p class="headline-lg">Días ahorrados</p>
-		<p class="text-md">Tiempo que se ahorran los vecinos y la administracion Pública</p>
-	</div>
-
-	<div class="indicator bg-light">
-		<h1>36.578</h1>
-		<p class="headline-lg">Días ahorrados</p>
-		<p class="text-md">Tiempo que se ahorran los vecinos y la administracion Pública</p>
-	</div>
+<div class="card-items-3">
+  <div class="col">
+    <div class="indicator">
+      <h1>36.578</h1>
+      <p class="headline-lg">Días ahorrados</p>
+      <p class="text-md">Tiempo que se ahorran los vecinos y la administracion Pública</p>
+    </div>
+  </div>
+  <div class="col">
+    <div class="indicator">
+      <h1>36.578</h1>
+      <p class="headline-lg">Días ahorrados</p>
+      <p class="text-md">Tiempo que se ahorran los vecinos y la administracion Pública</p>
+    </div>
+  </div>
+  <div class="col">
+    <div class="indicator">
+      <h1>36.578</h1>
+      <p class="headline-lg">Días ahorrados</p>
+      <p class="text-md">Tiempo que se ahorran los vecinos y la administracion Pública</p>
+    </div>
+  </div>
+  <div class="col w-lg-50">
+    <div class="indicator bg-light mw-lg-100">
+      <h1>36.578</h1>
+      <p class="headline-lg">Días ahorrados</p>
+      <p class="text-md">Tiempo que se ahorran los vecinos y la administracion Pública</p>
+    </div>
+  </div>
+  <div class="col w-lg-50">
+    <div class="indicator bg-light mw-lg-100">
+      <h1>36.578</h1>
+      <p class="headline-lg">Días ahorrados</p>
+      <p class="text-md">Tiempo que se ahorran los vecinos y la administracion Pública</p>
+    </div>
+  </div>
 </div>
 `;

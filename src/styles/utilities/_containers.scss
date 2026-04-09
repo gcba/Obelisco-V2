@@ -117,3 +117,13 @@
     display: flex;
   }
 }
+
+@include media-breakpoint-up(lg) {
+  .w-lg-50 {
+    width: 50%;
+  }
+
+  .mw-lg-100 {
+    max-width: 100% !important;
+  }
+}

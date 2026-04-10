@@ -701,3 +701,59 @@ export const HERO_REDES_SOCIALES = `<header class="hero bg-content-hero-light">
 	<div class="aside bg-aside-hero-light"></div>
 </header>
 `;
+
+export const HERO_LANDING = `
+	<header class="hero-landing">
+		<img src="images/hero-landing.jpg" class="hero-bg-image" alt="Hero" />
+
+		<div class="panel-horizontal-content">
+			<div class="panel-horizontal">
+				<div class="panel-body">
+					<h1 class="panel-title">Título del destacado</h1>
+					<p class="panel-text text-xl">
+						Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
+						líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un
+						destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
+						negritas ni enlaces
+					</p>
+					<div class="panel-footer">
+						<button type="button" class="btn btn-secondary">
+							Botón
+						</button>
+						<button type="button" class="btn btn-outline-secondary">
+							Botón
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+`;
+
+export const HERO_LANDING_DARK = `
+	<header class="hero-landing">
+		<img src="images/hero-landing.jpg" class="hero-bg-image" alt="Hero" />
+
+		<div class="panel-horizontal-content">
+			<div class="panel-horizontal">
+				<div class="panel-body">
+					<h1 class="panel-title">Título del destacado</h2>
+					<p class="panel-text text-xl">
+						Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
+						líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un
+						destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
+						negritas ni enlaces
+					</p>
+					<div class="panel-footer">
+						<button type="button" class="btn btn-light">
+							Botón
+						</button>
+						<button type="button" class="btn btn-outline-light">
+							Botón
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+`;

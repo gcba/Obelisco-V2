@@ -468,8 +468,8 @@ $landing-img-hight: 500px;
 }
 
 header.hero-landing {
-	background-color: map-get($content-colors, 'sky');
-	@include hero-landing-mask;
+  background-color: map-get($content-colors, 'sky');
+  @include hero-landing-mask;
 
   img.hero-bg-image {
     width: 100%;
@@ -498,7 +498,7 @@ header.hero-landing {
 
         .panel-title,
         .panel-text {
-          text-align: center;
+          text-align: start;
           text-overflow: ellipsis;
           display: -webkit-box;
           -webkit-line-clamp: 2;
@@ -607,7 +607,6 @@ header.hero-landing {
               }
             }
           }
-
           // variante buscador
 
           // variante botones
@@ -624,51 +623,43 @@ header.hero-landing {
               }
             }
           }
-
           // variante botones
         }
       }
     }
   }
 
-	// @include media-breakpoint-up(md) {
-	// 	.panel-horizontal-content {
-	// 		position: absolute;
-	// 		inset: 0;
-	// 		padding: 120px 0 0 80px;
-	// 		z-index: 2;
+  // @media (width <= 1200px) {
+  //   .panel-footer {
+  //     width: 50%;
+  //   }
+  // }
 
-	// 		.panel-horizontal {
-	// 			justify-content: start;
-	// 			margin: 0;
-
-	// 			.panel-body {
-	// 				.panel-title,
-	// 				.panel-text {
-	// 					color: $white;
-	// 					text-align: left;
-	// 				}
-
-	// 				.panel-footer {
-	// 					justify-content: start;
-	// 				}
-	// 			}
-	// 		}
-	// 	}
-	// }
-}
-
-// Versión responsiva para móviles
-@media (width <= 992px) {
-  header.hero-landing {
+  @media (width <= 1200px) {
     .panel-horizontal-content {
+      padding: 32px 16px;
       .panel-horizontal {
         .panel-body {
           flex-direction: column;
-          gap: 1.5rem;
+          justify-content: center;
+          align-items: center;
+          gap: 0;
+          .panel-wrapper {
+            width: 100%;
+            height: 100%;
+
+            .panel-title {
+              margin-bottom: 12px;
+            }
+
+            .panel-text {
+              margin-bottom: 24px;
+            }
+          }
 
           .panel-footer {
             width: 100%;
+            margin-top: 0px;
 
             .search-container {
               min-width: auto;
@@ -679,10 +670,8 @@ header.hero-landing {
       }
     }
   }
-}
 
-@media (width <= 576px) {
-  header.hero-landing {
+  @media (width <= 576px) {
     .search-wrapper {
       .btn-search {
         span {
@@ -695,11 +684,9 @@ header.hero-landing {
       }
     }
   }
-}
 
-// Ajustes responsivos
-@media (width >= 768px) {
-  header.hero-landing {
+  // Ajustes responsivos
+  @media (width >= 768px) {
     .search-container {
       max-width: 650px;
     }

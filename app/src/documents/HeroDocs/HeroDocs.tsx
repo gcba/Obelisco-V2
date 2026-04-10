@@ -61,7 +61,7 @@ const HeroHeaderDocs: React.FC = () => {
 
                           <div className="panel-footer">
                             {/* desplegables */}
-                            <div className="d-grid d-sm-flex flex-wrap column-gap-2 row-gap-4">
+                            {/* <div className="d-grid d-sm-flex flex-wrap column-gap-2 row-gap-4">
                               <div className="dropdown">
                                 <button
                                   type="button"
@@ -134,7 +134,7 @@ const HeroHeaderDocs: React.FC = () => {
                                   </a>
                                 </div>
                               </div>
-                            </div>
+                            </div> */}
                             {/* desplegables */}
 
                             {/* etiquetas */}
@@ -147,7 +147,7 @@ const HeroHeaderDocs: React.FC = () => {
                             {/* etiquetas */}
 
                             {/* Buscador */}
-                            {/* <div className="search-container">
+                            <div className="search-container">
                               <div className="search-wrapper">
                                 <input
                                   type="text"
@@ -175,7 +175,7 @@ const HeroHeaderDocs: React.FC = () => {
                                   </div>
                                 </div>
                               </div>
-                            </div> */}
+                            </div>
                             {/* Buscador */}
 
                             {/* botones */}

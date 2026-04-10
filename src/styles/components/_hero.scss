@@ -672,17 +672,23 @@ header.hero-landing {
   }
 
   @media (width <= 576px) {
-    .search-wrapper {
-      .btn-search {
-        span {
-          display: none;
-        }
+		.panel-horizontal-content {
+			.panel-horizontal {
+				max-width: unset;
 
-        svg {
-          margin: 0 !important;
-        }
-      }
-    }
+				.search-wrapper {
+					.btn-search {
+						span {
+							display: none;
+						}
+		
+						svg {
+							margin: 0 !important;
+						}
+					}
+				}
+			}
+		}
   }
 
   // Ajustes responsivos

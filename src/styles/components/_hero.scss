@@ -425,7 +425,7 @@ header.hero {
 
 @each $name, $color in $content-colors {
   header.bg-content-hero-#{$name} {
-    background-color: $color;
+    background-color: $color !important;
 
     .content::after {
       background-color: $color;
@@ -468,13 +468,15 @@ $landing-img-hight: 500px;
 }
 
 header.hero-landing {
+	background-color: map-get($content-colors, 'sky');
+	@include hero-landing-mask;
+
   img.hero-bg-image {
     width: 100%;
     height: $landing-img-hight;
     display: block;
     object-fit: cover;
     object-position: center;
-    @include hero-landing-mask;
   }
 
   .panel-horizontal-content {
@@ -629,51 +631,31 @@ header.hero-landing {
     }
   }
 
-  &.gradient {
-    position: relative;
+	// @include media-breakpoint-up(md) {
+	// 	.panel-horizontal-content {
+	// 		position: absolute;
+	// 		inset: 0;
+	// 		padding: 120px 0 0 80px;
+	// 		z-index: 2;
 
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: $landing-img-hight;
-      z-index: 1;
-      background: linear-gradient(
-        to right,
-        rgb(0 0 0 / 90%) 0%,
-        rgb(0 0 0 / 0%) 100%
-      );
-      @include hero-landing-mask;
-    }
+	// 		.panel-horizontal {
+	// 			justify-content: start;
+	// 			margin: 0;
 
-    @include media-breakpoint-up(md) {
-      .panel-horizontal-content {
-        position: absolute;
-        inset: 0;
-        padding: 120px 0 0 80px;
-        z-index: 2;
+	// 			.panel-body {
+	// 				.panel-title,
+	// 				.panel-text {
+	// 					color: $white;
+	// 					text-align: left;
+	// 				}
 
-        .panel-horizontal {
-          justify-content: start;
-          margin: 0;
-
-          .panel-body {
-            .panel-title,
-            .panel-text {
-              color: $white;
-              text-align: left;
-            }
-
-            .panel-footer {
-              justify-content: start;
-            }
-          }
-        }
-      }
-    }
-  }
+	// 				.panel-footer {
+	// 					justify-content: start;
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// }
 }
 
 // Versión responsiva para móviles

@@ -5,7 +5,7 @@ import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 const basePath = '/Obelisco-V2';
 
-import { INDICATOR, INDICATOR_BG, INDICATOR_NO_BORDER, INDICATOR_SIZE, INDICATOR_MULTIPLES } from './code-views';
+import { INDICATOR, INDICATOR_BG, INDICATOR_NO_BORDER, INDICATOR_SIZE, INDICATOR_DISPOSITION } from './code-views';
 
 const SECTIONS_DEV = [
   {
@@ -78,11 +78,11 @@ const SECTIONS_DEV = [
     ),
   },
   {
-    title: 'Multiples',
+    title: 'Disposición',
     content: (
-      <CodeBox codeHTML={INDICATOR_MULTIPLES}>
+      <CodeBox codeHTML={INDICATOR_DISPOSITION}>
         <div className="container">
-          <div className="card-items-3">
+          <div className="indicator-items-3">
             <div className="col">
               <div className="indicator">
                 <h1>36.578</h1>

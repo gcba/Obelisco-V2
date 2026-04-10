@@ -42,7 +42,7 @@ export const INDICATOR_SIZE = `
 </div>
 `;
 
-export const INDICATOR_MULTIPLES = `
+export const INDICATOR_DISPOSITION = `
 <div class="card-items-3">
   <div class="col">
     <div class="indicator">

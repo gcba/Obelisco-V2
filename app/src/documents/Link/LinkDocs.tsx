@@ -166,7 +166,7 @@ const LinkDocs: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/enlace/enlaces_tipos_predeterminado.svg`}
+                src={`${basePath}/images/link/default_types.svg`}
                 alt="Enlace tipo predeterminado"
                 width="800"
                 height="200"
@@ -185,7 +185,7 @@ const LinkDocs: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/enlace/enlaces_tipos_acceso.svg`}
+                src={`${basePath}/images/link/access_types.svg`}
                 alt="Enlace tipo acceso"
                 width="800"
                 height="200"
@@ -205,7 +205,7 @@ const LinkDocs: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/enlace/enlaces_tipos_descarga.svg`}
+                src={`${basePath}/images/link/download_types.svg`}
                 alt="Enlace tipo descarga"
                 width="800"
                 height="200"
@@ -224,7 +224,7 @@ const LinkDocs: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/enlace/enlaces_tipos_externo.svg`}
+                src={`${basePath}/images/link/external_types.svg`}
                 alt="Botón de exito"
                 width="800"
                 height="200"
@@ -243,7 +243,7 @@ const LinkDocs: React.FC = () => {
             Hay dos tamaños de enlaces: grande y chico, tanto para dispositivos <i>desktop, tablet y mobile</i>.
           </p>
           <Image
-            src={`${basePath}/images/enlace/enlace_tamaños.svg`}
+            src={`${basePath}/images/link/sizes.svg`}
             alt="Tamaños de botones"
             width="800"
             height="200"
@@ -271,7 +271,7 @@ const LinkDocs: React.FC = () => {
             hace referencia, o para redirigir a otro punto por dentro o fuera del sitio web.
           </p>
           <Image
-            src={`${basePath}/images/enlace/enlace_disposicion.svg`}
+            src={`${basePath}/images/link/standalone.svg`}
             alt="Cómo usar los íconos"
             width="800"
             height="200"
@@ -299,7 +299,7 @@ const LinkDocs: React.FC = () => {
             &quot;Contenido en esta página&quot;, para que las personas usuarias identifiquen su función.
           </p>
           <Image
-            src={`${basePath}/images/enlace/enlace_bloque_de_texto.svg`}
+            src={`${basePath}/images/link/anchor.svg`}
             alt="Enlaces en bloques de texto"
             width="800"
             height="200"
@@ -321,7 +321,7 @@ const LinkDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/enlace/enlace_de_anclaje.svg`}
+            src={`${basePath}/images/link/inline.svg`}
             alt="Enlaces en bloques de texto"
             width="800"
             height="200"
@@ -369,7 +369,7 @@ const LinkDocs: React.FC = () => {
               {/* 1 */}
               <div className="col">
                 <Image
-                  src={`${basePath}/images/enlace/enlace_inline_usar.svg`}
+                  src={`${basePath}/images/link/inline_porper_usage.svg`}
                   alt="Mala práctica en enlaces ejemplo 2"
                   width="800"
                   height="242"
@@ -386,7 +386,7 @@ const LinkDocs: React.FC = () => {
               {/* 2 */}
               <div className="col">
                 <Image
-                  src={`${basePath}/images/enlace/enlace_inline_no_usar.svg`}
+                  src={`${basePath}/images/link/inline_imporper_usage.svg`}
                   alt="Buena práctica en enlaces ejemplo 2"
                   width="800"
                   height="242"
@@ -449,7 +449,7 @@ const LinkDocs: React.FC = () => {
               {/* 1 */}
               <div className="col pe-3">
                 <Image
-                  src={`${basePath}/images/enlace/enlace_no_usar_2.svg`}
+                  src={`${basePath}/images/link/improper_usage_2.svg`}
                   alt="Mala práctica en enlaces ejemplo 2"
                   width="800"
                   height="242"
@@ -466,7 +466,7 @@ const LinkDocs: React.FC = () => {
               {/* 2 */}
               <div className="col ps-3">
                 <Image
-                  src={`${basePath}/images/enlace/enlace_usar_2.svg`}
+                  src={`${basePath}/images/link/proper_usage_2.svg`}
                   alt="Buena práctica en enlaces ejemplo 2"
                   width="800"
                   height="242"
@@ -483,7 +483,7 @@ const LinkDocs: React.FC = () => {
               {/* 3 */}
               <div className="col pe-3">
                 <Image
-                  src={`${basePath}/images/enlace/enlace_no_usar_3.svg`}
+                  src={`${basePath}/images/link/improper_usage_3.svg`}
                   alt="Mala práctica en enlaces ejemplo 3"
                   width="800"
                   height="242"
@@ -500,7 +500,7 @@ const LinkDocs: React.FC = () => {
               {/* 4 */}
               <div className="col ps-3">
                 <Image
-                  src={`${basePath}/images/enlace/enlace_usar_3.svg`}
+                  src={`${basePath}/images/link/proper_usage_3.svg`}
                   alt="Buena práctica en enlaces ejemplo 3"
                   width="800"
                   height="242"
@@ -538,7 +538,7 @@ const LinkDocs: React.FC = () => {
               {/* 1 */}
               <div className="col pe-3">
                 <Image
-                  src={`${basePath}/images/enlace/enlace_no_usar_4.svg`}
+                  src={`${basePath}/images/link/improper_usage_4.svg`}
                   alt="Mala práctica en enlaces ejemplo 4"
                   width="800"
                   height="242"
@@ -555,7 +555,7 @@ const LinkDocs: React.FC = () => {
               {/* 2 */}
               <div className="col ps-3">
                 <Image
-                  src={`${basePath}/images/enlace/enlace_usar_4.svg`}
+                  src={`${basePath}/images/link/proper_usage_4.svg`}
                   alt="Buena práctica en enlaces ejemplo 4"
                   width="800"
                   height="242"
@@ -584,7 +584,7 @@ const LinkDocs: React.FC = () => {
         <>
           <p className="text-md mb-4">El enlace puede tener hasta 3 elementos dependiendo del tipo.</p>
           <Image
-            src={`${basePath}/images/enlace/enlace_anatomia.svg`}
+            src={`${basePath}/images/link/anatomy.svg`}
             alt="Anatomia del botón"
             width="800"
             height="280"
@@ -640,8 +640,8 @@ const LinkDocs: React.FC = () => {
         <>
           <p className="text-md mb-4">Este es el estado por defecto del enlace.</p>
           <Image
-            src={`${basePath}/images/enlace/enlace_estado_predeterminado.svg`}
-            alt="Estado Estado   del enlace"
+            src={`${basePath}/images/link/default.svg`}
+            alt="Estado predeterminado del enlace"
             width="800"
             height="464"
             className="img-fluid"
@@ -663,8 +663,8 @@ const LinkDocs: React.FC = () => {
             grosor de trazo, sin cambiar el color.
           </p>
           <Image
-            src={`${basePath}/images/enlace/enlace_estado_sobre.svg`}
-            alt="Estado Estado   del enlace"
+            src={`${basePath}/images/link/hover.svg`}
+            alt="Estado sobre del enlace"
             width="800"
             height="464"
             className="img-fluid"
@@ -686,8 +686,8 @@ const LinkDocs: React.FC = () => {
             Obelisco se utiliza un borde o anillo (focus ring) por fuera del componente en un color distintivo.
           </p>
           <Image
-            src={`${basePath}/images/enlace/enlace_estado_en_foco.svg`}
-            alt="Estado en Estado   del enlace"
+            src={`${basePath}/images/link/focus.svg`}
+            alt="Estado en foco del enlace"
             width="800"
             height="464"
             className="img-fluid"
@@ -708,8 +708,8 @@ const LinkDocs: React.FC = () => {
             permite a la persona usuaria identificar qué enlaces ya navegó o visitó en interacciones previas.
           </p>
           <Image
-            src={`${basePath}/images/enlace/enlace_estado_visitado.svg`}
-            alt="Estado Estado   del enlace"
+            src={`${basePath}/images/link/visited.svg`}
+            alt="Estado visitado del enlace"
             width="800"
             height="464"
             className="img-fluid"
@@ -726,8 +726,8 @@ const LinkDocs: React.FC = () => {
             texto y el ícono, para evitar que el ícono colapse con el texto y mantenga relación al mismo tiempo.
           </p>
           <Image
-            src={`${basePath}/images/enlace/enlace_espaciado.svg`}
-            alt="Estado   del enlace"
+            src={`${basePath}/images/link/spacing.svg`}
+            alt="Espaciado del enlace"
             width="800"
             height="285"
             className="img-fluid"
@@ -756,7 +756,7 @@ const LinkDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/boton/boton_navegacion_alternativa.svg`}
+            src={`${basePath}/images/button/alternative_navigation.svg`}
             alt="Navegacion alternativa del botón"
             width="738"
             height="400"

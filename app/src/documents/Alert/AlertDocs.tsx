@@ -339,7 +339,7 @@ const AlertDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/alert/alerta_de_sistema.svg`}
+            src={`${basePath}/images/alert/system.svg`}
             alt="Alerta del sistema"
             width="800"
             height="285"
@@ -357,7 +357,7 @@ const AlertDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/alert/alerta_de_contexto.svg`}
+            src={`${basePath}/images/alert/context.svg`}
             alt="Alerta del contexto"
             width="800"
             height="285"
@@ -378,7 +378,7 @@ const AlertDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/alert/estados_de_alerta.svg`}
+            src={`${basePath}/images/alert/states.svg`}
             alt="Estados de alerta"
             width="800"
             height="285"
@@ -444,7 +444,7 @@ const AlertDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/alert/alertas_jerarquias.svg`}
+            src={`${basePath}/images/alert/hierarchies.svg`}
             alt="Jerarquias de alertas"
             width="800"
             height="285"
@@ -468,7 +468,7 @@ const AlertDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/alert/alertas_disposicion.svg`}
+            src={`${basePath}/images/alert/disposition.svg`}
             alt="Disposicion de alertas"
             width="800"
             height="285"
@@ -483,7 +483,7 @@ const AlertDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/alert/alertas_disposicion_contexto.svg`}
+            src={`${basePath}/images/alert/description_context.svg`}
             alt="Disposicion de alertas"
             width="800"
             height="285"
@@ -496,7 +496,7 @@ const AlertDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/alert/alertas_disposicion_mobile.svg`}
+            src={`${basePath}/images/alert/description_mobile.svg`}
             alt="Disposicion de alertas mobile"
             width="800"
             height="285"
@@ -517,7 +517,7 @@ const AlertDocs: React.FC = () => {
             uso.
           </p>
           <Image
-            src={`${basePath}/images/alert/alertas_contexto_de_uso.svg`}
+            src={`${basePath}/images/alert/context_use.svg`}
             alt="Contexto de uso alertas - notificar sobre el mantenimiento del sistema"
             width="800"
             height="285"
@@ -530,7 +530,7 @@ const AlertDocs: React.FC = () => {
             frustraciones o errores. No interrumpe la experiencia, pero brinda orientación relevante.
           </p>
           <Image
-            src={`${basePath}/images/alert/alertas_contexto_de_uso_2.svg`}
+            src={`${basePath}/images/alert/context_use_2.svg`}
             alt="Contexto de uso alertas - comunicar reestricciones"
             width="800"
             height="285"
@@ -543,7 +543,7 @@ const AlertDocs: React.FC = () => {
             persona usuaria a corregirlos antes de continuar. Deben ubicarse cerca del campo afectado.
           </p>
           <Image
-            src={`${basePath}/images/alert/alertas_contexto_de_uso_3.svg`}
+            src={`${basePath}/images/alert/context_use_3.svg`}
             alt="Contexto de uso alertas - validar campos"
             width="800"
             height="285"
@@ -645,7 +645,7 @@ const AlertDocs: React.FC = () => {
       content: (
         <>
           <Image
-            src={`${basePath}/images/alert/alertas_anatomia.svg`}
+            src={`${basePath}/images/alert/anatomy.svg`}
             alt="Anatomia de las alertas"
             width="800"
             height="280"
@@ -708,7 +708,7 @@ const AlertDocs: React.FC = () => {
             contenido que consideran innecesario.
           </p>
           <Image
-            src={`${basePath}/images/alert/variantes_con_boton.svg`}
+            src={`${basePath}/images/alert/button_variant.svg`}
             alt="Variante de alertas con boton de cierre"
             width="800"
             height="464"
@@ -727,7 +727,7 @@ const AlertDocs: React.FC = () => {
             documentación o información deben abrirse en una nueva pestaña.
           </p>
           <Image
-            src={`${basePath}/images/alert/alerta_variante_enlace.svg`}
+            src={`${basePath}/images/alert/link_variant.svg`}
             alt="Variante de alertas con enlace en línea"
             width="800"
             height="464"
@@ -746,7 +746,7 @@ const AlertDocs: React.FC = () => {
             lectura del mensaje.
           </p>
           <Image
-            src={`${basePath}/images/alert/alerta_variante_enlace_independiente.svg`}
+            src={`${basePath}/images/alert/independent_link_variant.svg`}
             alt="Variante de alertas con enlace en línea"
             width="800"
             height="464"
@@ -766,7 +766,7 @@ const AlertDocs: React.FC = () => {
             error.
           </p>
           <Image
-            src={`${basePath}/images/alert/alerta_variante_lista_enlaces.svg`}
+            src={`${basePath}/images/alert/link_list_variant.svg`}
             alt="Variante de alertas con lista de enlaces"
             width="800"
             height="464"
@@ -785,7 +785,7 @@ const AlertDocs: React.FC = () => {
             principal de la página.
           </p>
           <Image
-            src={`${basePath}/images/alert/alerta_variante_lista_descriptiva.svg`}
+            src={`${basePath}/images/alert/descriptive_list_variant.svg`}
             alt="Variante de alertas con lista de enlaces"
             width="800"
             height="464"
@@ -814,7 +814,7 @@ const AlertDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/alert/alertas_accesibilidad.svg`}
+            src={`${basePath}/images/alert/accessibility.svg`}
             alt="Navegacion alternativa de las alertas"
             width="738"
             height="400"

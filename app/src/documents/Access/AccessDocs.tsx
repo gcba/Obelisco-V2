@@ -516,7 +516,7 @@ const SECTION_UX = [
           adaptarlo correctamente en forma de lista.
         </p>
         <Image
-          src={`${basePath}/images/access/accesos_vertical.svg`}
+          src={`${basePath}/images/access/vertical.svg`}
           alt="Tamaños de botones"
           width="800"
           height="200"
@@ -528,7 +528,7 @@ const SECTION_UX = [
           &quot;list-group&quot; y &quot;list-group-row&quot;.
         </p>
         <Image
-          src={`${basePath}/images/access/accesos_horizontal.svg`}
+          src={`${basePath}/images/access/horizontal.svg`}
           alt="Tamaños de botones"
           width="800"
           height="200"
@@ -549,7 +549,7 @@ const SECTION_UX = [
 
         <div className="col">
           <Image
-            src={`${basePath}/images/access/accesos_ej_de_uso_correcto.svg`}
+            src={`${basePath}/images/access/eg_proper_use.svg`}
             alt="Ejemplo de cómo sí usar los accesos"
             width="800"
             height="200"
@@ -564,7 +564,7 @@ const SECTION_UX = [
         </div>
         <div className="col">
           <Image
-            src={`${basePath}/images/access/accesos_ej_de_uso_incorrecto.svg`}
+            src={`${basePath}/images/access/eg_imporper_use.svg`}
             alt="Ejemplo de cómo no usar los accesos"
             width="800"
             height="200"
@@ -587,7 +587,7 @@ const SPECS = [
     content: (
       <>
         <Image
-          src={`${basePath}/images/access/accesos_anatomia.svg`}
+          src={`${basePath}/images/access/anatomy.svg`}
           alt="Anatomia del acceso"
           width="800"
           height="280"
@@ -647,7 +647,7 @@ const SPECS = [
           Se utilizan para componer organismos donde se establezcan múltiples accesos dentro de un mismo contenedor.
         </p>
         <Image
-          src={`${basePath}/images/access/accesos_variantes.svg`}
+          src={`${basePath}/images/access/variants.svg`}
           alt="Acceso sin borde"
           width="800"
           height="280"
@@ -665,7 +665,7 @@ const SPECS = [
           generando agrupaciones de una misma temática.
         </p>
         <Image
-          src={`${basePath}/images/access/accesos_con_borde.svg`}
+          src={`${basePath}/images/access/with_border.svg`}
           alt="Acceso con borde"
           width="800"
           height="280"
@@ -683,7 +683,7 @@ const SPECS = [
           usuaria a comprender mejor la acción a realizar.
         </p>
         <Image
-          src={`${basePath}/images/access/accesos_con_descripcion.svg`}
+          src={`${basePath}/images/access/with_description.svg`}
           alt="Acceso Con descripción"
           width="800"
           height="280"
@@ -701,7 +701,7 @@ const SPECS = [
           a tomar una decisión.
         </p>
         <Image
-          src={`${basePath}/images/access/accesos_con_icono.svg`}
+          src={`${basePath}/images/access/with_icon.svg`}
           alt="Acceso Con ícono"
           width="800"
           height="280"
@@ -715,7 +715,7 @@ const SPECS = [
     content: (
       <>
         <Image
-          src={`${basePath}/images/access/accesos_tamaños.svg`}
+          src={`${basePath}/images/access/sizes.svg`}
           alt="Acceso tamaños"
           width="800"
           height="280"
@@ -738,7 +738,7 @@ const SPECS = [
       <>
         <p className="text-md mb-4 mt-2">Estado predeterminado de los botones en una interfaz.</p>
         <Image
-          src={`${basePath}/images/access/accesos_default.svg`}
+          src={`${basePath}/images/access/default.svg`}
           alt="Estado predeterminado del componente acceso en una interfaz. "
           width="800"
           height="464"
@@ -757,7 +757,7 @@ const SPECS = [
       <>
         <p className="text-md mb-4">Cuando un usuario está sobre el elemento.</p>
         <Image
-          src={`${basePath}/images/access/accesos_hover.svg`}
+          src={`${basePath}/images/access/hover.svg`}
           alt="Estado sobre del boton"
           width="800"
           height="464"
@@ -780,7 +780,7 @@ const SPECS = [
           utiliza un borde o anillo (focus ring) por fuera del componente en un color distintivo.
         </p>
         <Image
-          src={`${basePath}/images/access/accesos_focus.svg`}
+          src={`${basePath}/images/access/focus.svg`}
           alt="Estado en foco del boton"
           width="800"
           height="464"
@@ -799,7 +799,7 @@ const SPECS = [
       <>
         <p className="text-md mb-4">Indica que la persona usuaria seleccionó el acceso</p>
         <Image
-          src={`${basePath}/images/access/accesos_focus.svg`}
+          src={`${basePath}/images/access/active.svg`}
           alt="Estado en foco del boton"
           width="800"
           height="464"
@@ -828,7 +828,7 @@ const ACCESSIBILITY = [
         </p>
 
         <Image
-          src={`${basePath}/images/access/accesos_accesibilidad.svg`}
+          src={`${basePath}/images/access/accessibility.svg`}
           alt="Navegacion alternativa de los accesos"
           width="738"
           height="400"

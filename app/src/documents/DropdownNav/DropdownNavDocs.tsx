@@ -373,7 +373,7 @@ const SECTION_UX = [
           disponible y el dispositivo.
         </p>
         <Image
-          src={`${basePath}/images/dropdown_nav/tipos.svg`}
+          src={`${basePath}/images/dropdown_nav/types.svg`}
           alt="Desplegables en encabezado de página"
           width="800"
           height="285"
@@ -387,7 +387,7 @@ const SECTION_UX = [
           cascada será vertical u horizontal.
         </p>
         <Image
-          src={`${basePath}/images/dropdown_nav/tipos_1.svg`}
+          src={`${basePath}/images/dropdown_nav/types_1.svg`}
           alt="Desplegables en navegación horizontal"
           width="800"
           height="285"
@@ -408,7 +408,7 @@ const SECTION_UX = [
         </p>
 
         <Image
-          src={`${basePath}/images/dropdown_nav/disposiciones.svg`}
+          src={`${basePath}/images/dropdown_nav/dispositions.svg`}
           alt="Disposición de desplegable de selección"
           width="800"
           height="285"
@@ -416,7 +416,7 @@ const SECTION_UX = [
         />
 
         <Image
-          src={`${basePath}/images/dropdown_nav/disposiciones_1.svg`}
+          src={`${basePath}/images/dropdown_nav/dispositions_1.svg`}
           alt="Disposición de desplegable de selección"
           width="800"
           height="285"
@@ -432,7 +432,7 @@ const SECTION_UX = [
         </p>
 
         <Image
-          src={`${basePath}/images/dropdown_nav/disposiciones_2.svg`}
+          src={`${basePath}/images/dropdown_nav/dispositions_2.svg`}
           alt="Disposición de desplegable de selección"
           width="800"
           height="285"
@@ -440,7 +440,7 @@ const SECTION_UX = [
         />
 
         <Image
-          src={`${basePath}/images/dropdown_nav/disposiciones_3.svg`}
+          src={`${basePath}/images/dropdown_nav/dispositions_3.svg`}
           alt="Disposición de desplegable de selección"
           width="800"
           height="285"
@@ -448,7 +448,7 @@ const SECTION_UX = [
         />
 
         <Image
-          src={`${basePath}/images/dropdown_nav/disposiciones_4.svg`}
+          src={`${basePath}/images/dropdown_nav/dispositions_4.svg`}
           alt="Disposición de desplegable de selección"
           width="800"
           height="285"
@@ -456,7 +456,7 @@ const SECTION_UX = [
         />
 
         <Image
-          src={`${basePath}/images/dropdown_nav/disposiciones_5.svg`}
+          src={`${basePath}/images/dropdown_nav/dispositions_5.svg`}
           alt="Disposición de desplegable de selección"
           width="800"
           height="285"
@@ -474,7 +474,7 @@ const SPECS = [
     content: (
       <>
         <Image
-          src={`${basePath}/images/dropdown_nav/specs_anatomia.svg`}
+          src={`${basePath}/images/dropdown_nav/anatomy.svg`}
           alt="Anatomia de desplegable de selección"
           width="800"
           height="280"
@@ -602,7 +602,7 @@ const SPECS = [
       <>
         <p className="text-sm">Cuando un usuario está seleccionando una opción.</p>
         <Image
-          src={`${basePath}/images/dropdown_nav/specs_expandido.svg`}
+          src={`${basePath}/images/dropdown_nav/specs_expanded.svg`}
           alt="Estado en foco del desplegable de selección"
           width="800"
           height="464"
@@ -635,7 +635,7 @@ const ACCESSIBILITY = [
         </p>
 
         <Image
-          src={`${basePath}/images/dropdown_nav/accesibilidad_nav_alternativa.svg`}
+          src={`${basePath}/images/dropdown_nav/alternative_accessibility.svg`}
           alt="Navegacion alternativa del desplegable de selección"
           width="738"
           height="400"

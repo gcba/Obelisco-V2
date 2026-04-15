@@ -11,7 +11,7 @@ import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import { TEMPLATE_PERFIL_INSTITUCIONAL } from './code-views';
 const basePath = '/Obelisco-V2';
 
-const TemplatePaginaSimpleDocs: React.FC = () => {
+const TemplatePerfilInstitucionalDocs: React.FC = () => {
   const [activeTab, setActiveTab] = useState('panel-content-docs');
 
   const DOC_SECTIONS = [
@@ -364,4 +364,4 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
   );
 };
 
-export default TemplatePaginaSimpleDocs;
+export default TemplatePerfilInstitucionalDocs;

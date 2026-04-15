@@ -1,9 +1,9 @@
-import TemplatePerfilInstitucional from '@/documents/Templates/TemplatePerfilInstitucional';
+import TemplatePerfilInstitucionalDocs from '@/documents/Templates/TemplatePerfilInstitucional';
 
 export default function TemplatePage() {
   return (
     <>
-      <TemplatePerfilInstitucional />
+      <TemplatePerfilInstitucionalDocs />
     </>
   );
 }

@@ -2427,7 +2427,7 @@ const HeaderDocs: React.FC = () => {
             <div className="max-items-2">
               <div className="col">
                 <Image
-                  src={`${basePath}/images/header/header_columnas_si_usar.svg`}
+                  src={`${basePath}/images/header/columns_proper_usage.svg`}
                   alt="Cómo usar la navegacion principal de header"
                   width="800"
                   height="352"
@@ -2442,7 +2442,7 @@ const HeaderDocs: React.FC = () => {
               </div>
               <div className="col">
                 <Image
-                  src={`${basePath}/images/header/header_columnas_no_usar.svg`}
+                  src={`${basePath}/images/header/columns_improper_usage.svg`}
                   alt="Cómo usar la navegacion principal de header"
                   width="800"
                   height="352"
@@ -2474,7 +2474,7 @@ const HeaderDocs: React.FC = () => {
             <div className="max-items-2">
               <div className="col">
                 <Image
-                  src={`${basePath}/images/header/header_opciones_de_navegacion_si.svg`}
+                  src={`${basePath}/images/header/navigation_options_proper_usage.svg`}
                   alt="Cómo sí usar las opciones de navegación del header"
                   width="800"
                   height="352"
@@ -2489,7 +2489,7 @@ const HeaderDocs: React.FC = () => {
               </div>
               <div className="col">
                 <Image
-                  src={`${basePath}/images/header/header_opciones_de_navegacion_no.svg`}
+                  src={`${basePath}/images/header/navigation_options_imporper_usage.svg`}
                   alt="Cómo no usar las opciones de navegación del header"
                   width="800"
                   height="352"
@@ -2532,7 +2532,7 @@ const HeaderDocs: React.FC = () => {
             El encabezado <i>(header)</i> de 1 línea es el tipo de encabezado que se utiliza por defecto.
           </p>
           <Image
-            src={`${basePath}/images/header/header_desktop_deslogueado_1_linea.svg`}
+            src={`${basePath}/images/header/desktop_logged_out_line_1.svg`}
             alt="Desktop deslogueado en 1 línea"
             width="800"
             height="35"
@@ -2553,7 +2553,7 @@ const HeaderDocs: React.FC = () => {
             El encabezado <i>(header)</i> de 1 línea es el tipo de encabezado que se utiliza por defecto.
           </p>
           <Image
-            src={`${basePath}/images/header/header_desktop_logueado_1_linea.svg`}
+            src={`${basePath}/images/header/desktop_logged_in_line_1.svg`}
             alt="Desktop logueado en 1 línea"
             width="800"
             height="35"
@@ -2575,7 +2575,7 @@ const HeaderDocs: React.FC = () => {
             disponible en 1 línea.
           </p>
           <Image
-            src={`${basePath}/images/header/header_desktop_deslogueado_2_lineas.svg`}
+            src={`${basePath}/images/header/desktop_logged_out_line_2.svg`}
             alt="Desktop logueado en 2 líneas"
             width="800"
             height="35"
@@ -2597,7 +2597,7 @@ const HeaderDocs: React.FC = () => {
             disponible en 1 línea.
           </p>
           <Image
-            src={`${basePath}/images/header/header_desktop_logueado_2_lineas.svg`}
+            src={`${basePath}/images/header/desktop_logged_in_line_2.svg`}
             alt="Desktop deslogueado en 2 líneas"
             width="800"
             height="35"
@@ -2619,7 +2619,7 @@ const HeaderDocs: React.FC = () => {
             los elementos que lo componen.
           </p>
           <Image
-            src={`${basePath}/images/header/header_mobile.svg`}
+            src={`${basePath}/images/header/mobile.svg`}
             alt="Mobile"
             width="800"
             height="389"
@@ -2646,7 +2646,7 @@ const HeaderDocs: React.FC = () => {
             replicar la flexibilidad de uso del código.
           </p>
           <Image
-            src={`${basePath}/images/header/header_slots.svg`}
+            src={`${basePath}/images/header/slots.svg`}
             alt="Header variante slots"
             width="800"
             height="389"
@@ -2691,7 +2691,7 @@ const HeaderDocs: React.FC = () => {
       content: (
         <>
           <Image
-            src={`${basePath}/images/header/header_specs_anatomia.svg`}
+            src={`${basePath}/images/header/specs_anatomy.svg`}
             alt="Header anatomía"
             width="800"
             height="242"
@@ -2756,7 +2756,7 @@ const HeaderDocs: React.FC = () => {
             navegaciones manteniendo 1 sola línea para el organismo.
           </p>
           <Image
-            src={`${basePath}/images/header/header_specs_variantes.svg`}
+            src={`${basePath}/images/header/specs_variants.svg`}
             alt="Variante del header - Sin buscador"
             width="800"
             height="35"
@@ -2775,7 +2775,7 @@ const HeaderDocs: React.FC = () => {
             sola línea para el organismo.
           </p>
           <Image
-            src={`${basePath}/images/header/header_specs_sin_boton.svg`}
+            src={`${basePath}/images/header/specs_without_button.svg`}
             alt="Header variante sin boton/seccion de perfil"
             width="800"
             height="35"
@@ -2795,7 +2795,7 @@ const HeaderDocs: React.FC = () => {
               sola línea para el organismo.
             </p>
             <Image
-              src={`${basePath}/images/header/header_specs_sin_navegacion.svg`}
+              src={`${basePath}/images/header/specs_without_navigation.svg`}
               alt="Header variante sin boton/seccion de perfil"
               width="800"
               height="35"
@@ -2818,7 +2818,7 @@ const HeaderDocs: React.FC = () => {
               digital.
             </p>
             <Image
-              src={`${basePath}/images/header/header_banner.svg`}
+              src={`${basePath}/images/header/banner.svg`}
               alt="Header variante banner"
               width="800"
               height="35"

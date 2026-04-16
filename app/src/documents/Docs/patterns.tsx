@@ -92,7 +92,7 @@ const PatternsComponents: React.FC = () => {
           </ol>
 
           <Image
-            src={`${basePath}/images/patterns/patterns_elementos_de_un_form.svg`}
+            src={`${basePath}/images/patterns/form_elements.svg`}
             alt="Anatomía de Elementos que componen un formulario"
             width="800"
             height="200"
@@ -115,7 +115,7 @@ const PatternsComponents: React.FC = () => {
             {/* 1 */}
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_ej_1_no_usar.svg`}
+                src={`${basePath}/images/patterns/improper_usage_1.svg`}
                 alt="Mala práctica en patrones de formularios ejemplo 1"
                 width="800"
                 height="242"
@@ -129,7 +129,7 @@ const PatternsComponents: React.FC = () => {
             {/* 2 */}
             <div className="col pe-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_ej_1_si_usar.svg`}
+                src={`${basePath}/images/patterns/proper_usage_1.svg`}
                 alt="Buena práctica en patrones de formularios ejemplo 1"
                 width="800"
                 height="242"
@@ -157,7 +157,7 @@ const PatternsComponents: React.FC = () => {
             {/* 1 */}
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_ej_2_si_usar.svg`}
+                src={`${basePath}/images/patterns/proper_usage_2.svg`}
                 alt="Buena práctica en patrones de formularios ejemplo 2"
                 width="800"
                 height="242"
@@ -171,7 +171,7 @@ const PatternsComponents: React.FC = () => {
             {/* 2 */}
             <div className="col pe-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_ej_2_no_usar.svg`}
+                src={`${basePath}/images/patterns/improper_usage_2.svg`}
                 alt="Mala práctica en patrones de formularios ejemplo 2"
                 width="800"
                 height="242"
@@ -214,7 +214,7 @@ const PatternsComponents: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_input_text.svg`}
+                src={`${basePath}/images/patterns/input_text.svg`}
                 alt="Input de texto - Texto"
                 width="800"
                 height="295"
@@ -231,7 +231,7 @@ const PatternsComponents: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_input_textarea.svg`}
+                src={`${basePath}/images/patterns/input_textarea.svg`}
                 alt="Input de texto - Textarea"
                 width="800"
                 height="295"
@@ -248,7 +248,7 @@ const PatternsComponents: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_input_password.svg`}
+                src={`${basePath}/images/patterns/input_password.svg`}
                 alt="Input de texto - Password"
                 width="800"
                 height="295"
@@ -265,7 +265,7 @@ const PatternsComponents: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_input_email.svg`}
+                src={`${basePath}/images/patterns/input_email.svg`}
                 alt="Input de texto - Email"
                 width="800"
                 height="295"
@@ -282,7 +282,7 @@ const PatternsComponents: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_input_number.svg`}
+                src={`${basePath}/images/patterns/input_number.svg`}
                 alt="Input de texto - Number"
                 width="800"
                 height="295"
@@ -299,7 +299,7 @@ const PatternsComponents: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_input_tel.svg`}
+                src={`${basePath}/images/patterns/input_tel.svg`}
                 alt="Input de texto - Telefono"
                 width="800"
                 height="295"
@@ -316,7 +316,7 @@ const PatternsComponents: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_input_date.svg`}
+                src={`${basePath}/images/patterns/input_date.svg`}
                 alt="Input de texto - Date"
                 width="800"
                 height="295"
@@ -333,7 +333,7 @@ const PatternsComponents: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_input_time.svg`}
+                src={`${basePath}/images/patterns/input_time.svg`}
                 alt="Input de texto - Time"
                 width="800"
                 height="295"
@@ -360,7 +360,7 @@ const PatternsComponents: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_input_search.svg`}
+                src={`${basePath}/images/patterns/input_search.svg`}
                 alt="Input de búsqueda"
                 width="800"
                 height="295"
@@ -392,7 +392,7 @@ const PatternsComponents: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_input_select.svg`}
+                src={`${basePath}/images/patterns/input_select.svg`}
                 alt="Input de selección - Select"
                 width="800"
                 height="295"
@@ -409,7 +409,7 @@ const PatternsComponents: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_input_radio.svg`}
+                src={`${basePath}/images/patterns/input_radio.svg`}
                 alt="Input de selección - Radio"
                 width="800"
                 height="295"
@@ -428,7 +428,7 @@ const PatternsComponents: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_input_checkbox.svg`}
+                src={`${basePath}/images/patterns/input_checkbox.svg`}
                 alt="Input de selección - Checkbox"
                 width="800"
                 height="295"
@@ -455,7 +455,7 @@ const PatternsComponents: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_input_file.svg`}
+                src={`${basePath}/images/patterns/input_file.svg`}
                 alt="Input de carga de archivo "
                 width="800"
                 height="295"
@@ -480,7 +480,7 @@ const PatternsComponents: React.FC = () => {
             {/* 1 */}
             <div className="col pe-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_accionables_ej_1_no_usar.svg`}
+                src={`${basePath}/images/patterns/actionable_improper_usage_1.svg`}
                 alt="Mala práctica en patrones accionables ejemplo 1"
                 width="800"
                 height="242"
@@ -494,7 +494,7 @@ const PatternsComponents: React.FC = () => {
             {/* 2 */}
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_accionables_ej_1_si_usar.svg`}
+                src={`${basePath}/images/patterns/actionable_proper_usage_1.svg`}
                 alt="Buena práctica en patrones accionables ejemplo 1"
                 width="800"
                 height="242"
@@ -510,7 +510,7 @@ const PatternsComponents: React.FC = () => {
             {/* 3 */}
             <div className="col pe-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_accionables_ej_2_no_usar.svg`}
+                src={`${basePath}/images/patterns/actionable_improper_usage_2.svg`}
                 alt="Mala práctica en patrones accionables ejemplo 2"
                 width="800"
                 height="242"
@@ -527,7 +527,7 @@ const PatternsComponents: React.FC = () => {
             {/* 4 */}
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_accionables_ej_2_si_usar.svg`}
+                src={`${basePath}/images/patterns/actionable_proper_usage_2.svg`}
                 alt="Buena práctica en patrones accionables ejemplo 2"
                 width="800"
                 height="242"
@@ -569,7 +569,7 @@ const PatternsComponents: React.FC = () => {
           </div>
           <div className="mt-4 mb-3">
             <Image
-              src={`${basePath}/images/patterns/diagrams/estructura.svg`}
+              src={`${basePath}/images/patterns/diagrams/structure.svg`}
               alt="Estructura de un formulario"
               width="800"
               height="200"
@@ -597,7 +597,7 @@ const PatternsComponents: React.FC = () => {
           </p>
           <div className="mb-3">
             <Image
-              src={`${basePath}/images/patterns/diagrams/disposicion.svg`}
+              src={`${basePath}/images/patterns/diagrams/disposition.svg`}
               alt="Disposición de Elementos que componen un formulario"
               width="800"
               height="200"
@@ -618,7 +618,7 @@ const PatternsComponents: React.FC = () => {
             facilitar la navegación a las personas que utilizan tecnologías de asistencia.
           </p>
           <Image
-            src={`${basePath}/images/patterns/diagrams/agrupacion_campos.svg`}
+            src={`${basePath}/images/patterns/diagrams/group_fields.svg`}
             alt="Agrupacion de campos"
             width="800"
             height="200"
@@ -628,7 +628,7 @@ const PatternsComponents: React.FC = () => {
             <p className="text-xl mb-4">Ejemplos de uso</p>
             <div className="mb-4">
               <Image
-                src={`${basePath}/images/patterns/diagrams/uso_incorrecto_1.svg`}
+                src={`${basePath}/images/patterns/diagrams/imporper_usage.svg`}
                 alt="Mala práctica de uso ejemplo 1"
                 width="800"
                 height="242"
@@ -645,7 +645,7 @@ const PatternsComponents: React.FC = () => {
             </div>
             <div className="mb-4">
               <Image
-                src={`${basePath}/images/patterns/diagrams/uso_correcto.svg`}
+                src={`${basePath}/images/patterns/diagrams/proper_usage.svg`}
                 alt="Buena práctica de uso"
                 width="800"
                 height="242"
@@ -683,7 +683,7 @@ const PatternsComponents: React.FC = () => {
             para conocer las combinaciones y alineaciones recomendadas en dispositivos desktop, tablet y mobile.
           </p>
           <Image
-            src={`${basePath}/images/patterns/diagrams/alineacion_botones.svg`}
+            src={`${basePath}/images/patterns/diagrams/buttons_alignment.svg`}
             alt="Mala práctica de uso ejemplo 2"
             width="800"
             height="242"
@@ -713,7 +713,7 @@ const PatternsComponents: React.FC = () => {
             </ul>
           </div>
           <Image
-            src={`${basePath}/images/patterns/diagrams/espaciados.svg`}
+            src={`${basePath}/images/patterns/diagrams/spacing.svg`}
             alt="Espaciados ejemplo Desktop"
             width="800"
             height="242"
@@ -724,7 +724,7 @@ const PatternsComponents: React.FC = () => {
             separación entre campos es de 12px.
           </p>
           <Image
-            src={`${basePath}/images/patterns/diagrams/espaciados_mobile.svg`}
+            src={`${basePath}/images/patterns/diagrams/mobile_spacing.svg`}
             alt="Espaciados de ejemplo mobile"
             width="800"
             height="242"
@@ -760,7 +760,7 @@ const PatternsComponents: React.FC = () => {
             </ul>
           </div>
           <Image
-            src={`${basePath}/images/patterns/diagrams/seccion_por_temas.svg`}
+            src={`${basePath}/images/patterns/diagrams/theme_sections.svg`}
             alt="Seccion por temas"
             width="800"
             height="242"
@@ -779,7 +779,7 @@ const PatternsComponents: React.FC = () => {
             que hacer suposiciones.
           </p>
           <Image
-            src={`${basePath}/images/patterns/diagrams/etiquetas_campos.svg`}
+            src={`${basePath}/images/patterns/diagrams/field_label.svg`}
             alt="Etiquetas de campo requerido y opcional"
             width="800"
             height="242"
@@ -790,7 +790,7 @@ const PatternsComponents: React.FC = () => {
           <div className="max-items-2">
             <div className="col pe-3">
               <Image
-                src={`${basePath}/images/patterns/diagrams/etiqueta_mal_uso.svg`}
+                src={`${basePath}/images/patterns/diagrams/label_imporper_usage.svg`}
                 alt="Mala práctica en etiquetas"
                 width="800"
                 height="242"
@@ -803,7 +803,7 @@ const PatternsComponents: React.FC = () => {
             </div>
             <div className="col pe-3">
               <Image
-                src={`${basePath}/images/patterns/diagrams/etiqueta_buen_uso.svg`}
+                src={`${basePath}/images/patterns/diagrams/label_proper_usage.svg`}
                 alt="Buena práctica en etiquetas"
                 width="800"
                 height="242"
@@ -844,7 +844,7 @@ const PatternsComponents: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/patterns/accessibility/accessibility_navegacion_alternativa.svg`}
+            src={`${basePath}/images/patterns/accessibility/alternative_navigation.svg`}
             alt="Accesibilidad en navegación alternativa por TAB"
             width="800"
             height="200"

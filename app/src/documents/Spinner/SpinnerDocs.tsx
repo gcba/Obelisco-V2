@@ -60,7 +60,7 @@ const SpinnerDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/spinner/tipos.svg`}
+            src={`${basePath}/images/spinner/types.svg`}
             alt="Tipos de spinner"
             width="800"
             height="280"
@@ -80,7 +80,7 @@ const SpinnerDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/spinner/tamaños.svg`}
+            src={`${basePath}/images/spinner/sizes.svg`}
             alt="Tamaños de spinner"
             width="800"
             height="280"
@@ -119,7 +119,7 @@ const SpinnerDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/spinner/patron_de_uso_boton.svg`}
+            src={`${basePath}/images/spinner/button_usage.svg`}
             alt="Uso en botón"
             width="800"
             height="280"
@@ -138,7 +138,7 @@ const SpinnerDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/spinner/patron_de_uso_componentes.svg`}
+            src={`${basePath}/images/spinner/component_usage.svg`}
             alt="Uso en componentes"
             width="800"
             height="280"
@@ -166,7 +166,7 @@ const SpinnerDocs: React.FC = () => {
           </p>
           <div className="col">
             <Image
-              src={`${basePath}/images/spinner/patron_buen_uso.svg`}
+              src={`${basePath}/images/spinner/proper_usage.svg`}
               alt="Buena práctica de uso"
               width="800"
               height="280"
@@ -182,7 +182,7 @@ const SpinnerDocs: React.FC = () => {
           </div>
           <div className="col">
             <Image
-              src={`${basePath}/images/spinner/patron_mal_uso.svg`}
+              src={`${basePath}/images/spinner/improper_usage.svg`}
               alt="Mala práctica de uso"
               width="800"
               height="280"
@@ -292,7 +292,7 @@ const SpinnerDocs: React.FC = () => {
       content: (
         <>
           <Image
-            src={`${basePath}/images/spinner/anatomia.svg`}
+            src={`${basePath}/images/spinner/anatomy.svg`}
             alt="Anatomía"
             width="800"
             height="280"
@@ -341,7 +341,7 @@ const SpinnerDocs: React.FC = () => {
             etiqueta, y se ubica por debajo del indicador.
           </p>
           <Image
-            src={`${basePath}/images/spinner/variantes.svg`}
+            src={`${basePath}/images/spinner/variants.svg`}
             alt="Variantes"
             width="800"
             height="280"
@@ -360,7 +360,7 @@ const SpinnerDocs: React.FC = () => {
             48px.
           </p>
           <Image
-            src={`${basePath}/images/spinner/medidas.svg`}
+            src={`${basePath}/images/spinner/measures.svg`}
             alt="Medidas"
             width="800"
             height="280"
@@ -377,7 +377,7 @@ const SpinnerDocs: React.FC = () => {
             En la variante de tamaño grande, el espaciado entre la etiqueta y el indicador es de 8px.
           </p>
           <Image
-            src={`${basePath}/images/spinner/espaciados.svg`}
+            src={`${basePath}/images/spinner/spacing.svg`}
             alt="Espaciados"
             width="800"
             height="280"

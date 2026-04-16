@@ -107,7 +107,7 @@ const GridDocs: React.FC = () => {
           </ul>
 
           <Image
-            src={`${basePath}/images/grilla/anatomia-grilla.svg`}
+            src={`${basePath}/images/grid/anatomy.svg`}
             alt="Referencia visual de la anatomia de grillas"
             width="800"
             height="200"
@@ -129,7 +129,7 @@ const GridDocs: React.FC = () => {
             <div className="max-items-2">
               <div className="col">
                 <Image
-                  src={`${basePath}/images/grilla/uso-1.svg`}
+                  src={`${basePath}/images/grid/usage-1.svg`}
                   alt="Referencia visual reglas de uso de grillas"
                   width="340"
                   height="170"
@@ -142,7 +142,7 @@ const GridDocs: React.FC = () => {
               </div>
               <div className="col">
                 <Image
-                  src={`${basePath}/images/grilla/uso-2.svg`}
+                  src={`${basePath}/images/grid/usage-2.svg`}
                   alt="Referencia visual reglas de uso de grillas"
                   width="340"
                   height="170"
@@ -155,7 +155,7 @@ const GridDocs: React.FC = () => {
               </div>
               <div className="col">
                 <Image
-                  src={`${basePath}/images/grilla/uso-3.svg`}
+                  src={`${basePath}/images/grid/usage-3.svg`}
                   alt="Referencia visual reglas de uso de grillas"
                   width="340"
                   height="170"
@@ -168,7 +168,7 @@ const GridDocs: React.FC = () => {
               </div>
               <div className="col">
                 <Image
-                  src={`${basePath}/images/grilla/uso-4.svg`}
+                  src={`${basePath}/images/grid/usage-4.svg`}
                   alt="Referencia visual reglas de uso de grillas"
                   width="340"
                   height="170"
@@ -299,7 +299,7 @@ const GridDocs: React.FC = () => {
 
           <div className="py-4">
             <Image
-              src={`${basePath}/images/grilla/dispositivos.svg`}
+              src={`${basePath}/images/grid/devices.svg`}
               alt="Referencia visual de uso de grillas en diferentes dispositivos."
               width="711"
               height="411"
@@ -329,7 +329,7 @@ const GridDocs: React.FC = () => {
           </p>
           <div className="pt-2">
             <Image
-              src={`${basePath}/images/grilla/ancho-completo.svg`}
+              src={`${basePath}/images/grid/full-width.svg`}
               alt="Referencia visual de uso de grillas en pantalla ancho completo"
               width="711"
               height="411"
@@ -352,7 +352,7 @@ const GridDocs: React.FC = () => {
             <div className="max-items-2">
               <div className="col">
                 <Image
-                  src={`${basePath}/images/grilla/lateral-1.svg`}
+                  src={`${basePath}/images/grid/lateral-1.svg`}
                   alt="Referencia visual reglas de uso de grillas en disposicion lateral."
                   width="340"
                   height="170"
@@ -361,7 +361,7 @@ const GridDocs: React.FC = () => {
               </div>
               <div className="col">
                 <Image
-                  src={`${basePath}/images/grilla/lateral-2.svg`}
+                  src={`${basePath}/images/grid/lateral-2.svg`}
                   alt="Referencia visual reglas de uso de grillas en disposicion lateral."
                   width="340"
                   height="170"
@@ -384,7 +384,7 @@ const GridDocs: React.FC = () => {
           </p>
           <div className="pt-2 mb-5">
             <Image
-              src={`${basePath}/images/grilla/mobile.svg`}
+              src={`${basePath}/images/grid/mobile.svg`}
               alt="Referencia visual de uso de grillas en pantallas de dispositivos mobiles"
               width="711"
               height="411"

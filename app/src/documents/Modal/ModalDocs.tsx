@@ -196,7 +196,7 @@ const ModalDocs: React.FC = () => {
             tecla ESC en el teclado o mismo haciendo clic por fuera del modal.
           </p>
           <Image
-            src={`${basePath}/images/modal/reconocimiento.svg`}
+            src={`${basePath}/images/modal/recognition.svg`}
             alt="Modal de reconocimiento"
             width="800"
             height="200"
@@ -213,7 +213,7 @@ const ModalDocs: React.FC = () => {
             el botón secundario, presionando la tecla ESC en el teclado o mismo haciendo clic por fuera del modal.
           </p>
           <Image
-            src={`${basePath}/images/modal/confirmacion.svg`}
+            src={`${basePath}/images/modal/confirmation.svg`}
             alt="Modal de confirmación"
             width="800"
             height="200"
@@ -226,7 +226,7 @@ const ModalDocs: React.FC = () => {
             descarta de la misma forma que los modales de confirmación.
           </p>
           <Image
-            src={`${basePath}/images/modal/peligro.svg`}
+            src={`${basePath}/images/modal/danger.svg`}
             alt="Modal de peligro"
             width="800"
             height="200"
@@ -246,7 +246,7 @@ const ModalDocs: React.FC = () => {
             título.
           </p>
           <Image
-            src={`${basePath}/images/modal/contexto_uso.svg`}
+            src={`${basePath}/images/modal/usage_context.svg`}
             alt="Modal contexto de uso"
             width="800"
             height="200"
@@ -269,7 +269,7 @@ const ModalDocs: React.FC = () => {
             usuaria lo cierre.
           </p>
           <Image
-            src={`${basePath}/images/modal/estado_focus.svg`}
+            src={`${basePath}/images/modal/focus_state.svg`}
             alt="Modal estado focus"
             width="800"
             height="200"
@@ -287,7 +287,7 @@ const ModalDocs: React.FC = () => {
       content: (
         <>
           <Image
-            src={`${basePath}/images/modal/anotomia.svg`}
+            src={`${basePath}/images/modal/anotomy.svg`}
             alt="Modal anotomia"
             width="800"
             height="200"
@@ -379,7 +379,7 @@ const ModalDocs: React.FC = () => {
             </li>
           </ul>
           <Image
-            src={`${basePath}/images/modal/navegacion_alternativa.svg`}
+            src={`${basePath}/images/modal/alternative_navigation.svg`}
             alt="Modal navegacion alternativa"
             width="800"
             height="200"

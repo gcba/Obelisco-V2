@@ -118,7 +118,7 @@ const BreadcrumbDocs: React.FC = () => {
             encima del título H1.
           </p>
           <Image
-            src={`${basePath}/images/migas_de_pan/migas_de_pan_disposicion.svg`}
+            src={`${basePath}/images/breadcrumb/disposition.svg`}
             alt="Migas de pan disposición"
             width="800"
             height="200"
@@ -139,7 +139,7 @@ const BreadcrumbDocs: React.FC = () => {
             agrega tres puntos (…) al final para visualizar que hay más texto en ese nivel.
           </p>
           <Image
-            src={`${basePath}/images/migas_de_pan/migas_de_pan_contenido.svg`}
+            src={`${basePath}/images/breadcrumb/content.svg`}
             alt="Migas de pan basado en el ancho"
             width="800"
             height="200"
@@ -158,7 +158,7 @@ const BreadcrumbDocs: React.FC = () => {
         <>
           <p className="text-md mb-4">Las migas de pan tienen una composición diferente dependiendo de la variante.</p>
           <Image
-            src={`${basePath}/images/migas_de_pan/migas_de_pan_anatomia.svg`}
+            src={`${basePath}/images/breadcrumb/anatomy.svg`}
             alt="Anatomia del botón"
             width="800"
             height="280"
@@ -216,7 +216,7 @@ const BreadcrumbDocs: React.FC = () => {
             Puede estar compuesta por hasta 4 enlaces de ancla, que representan el camino de la persona usuaria.{' '}
           </p>
           <Image
-            src={`${basePath}/images/migas_de_pan/migas_de_pan_variantes_desktop.svg`}
+            src={`${basePath}/images/breadcrumb/desktop.svg`}
             alt="Migas de Pan variante desktop"
             width="800"
             height="464"
@@ -239,7 +239,7 @@ const BreadcrumbDocs: React.FC = () => {
             encuentra la persona usuaria, y sirve para volver un paso hacia atrás.
           </p>
           <Image
-            src={`${basePath}/images/migas_de_pan/migas_de_pan_variantes_mobile.svg`}
+            src={`${basePath}/images/breadcrumb/mobile.svg`}
             alt="Estado sobre del boton"
             width="800"
             height="464"
@@ -269,7 +269,7 @@ const BreadcrumbDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/migas_de_pan/migas_de_pan_accesibilidad.svg`}
+            src={`${basePath}/images/breadcrumb/accessibility.svg`}
             alt="Navegacion alternativa de las migas de pan"
             width="738"
             height="400"

@@ -55,7 +55,7 @@ const SECTION_UX = [
           al Gobierno de la Ciudad de Buenos Aires.
         </p>
         <Image
-          src={`${basePath}/images/mensaje_de_estado/mensaje_institucional.svg`}
+          src={`${basePath}/images/status_message/institutional.svg`}
           alt="Mensaje de estado institucional"
           width="800"
           height="280"
@@ -71,7 +71,7 @@ const SECTION_UX = [
           state.
         </p>
         <Image
-          src={`${basePath}/images/mensaje_de_estado/mensaje_informacion.svg`}
+          src={`${basePath}/images/status_message/information.svg`}
           alt="Mensaje de estado información"
           width="800"
           height="280"
@@ -86,7 +86,7 @@ const SECTION_UX = [
           seguridad y cierre sobre el proceso.
         </p>
         <Image
-          src={`${basePath}/images/mensaje_de_estado/mensaje_exito.svg`}
+          src={`${basePath}/images/status_message/success.svg`}
           alt="Mensaje de estado información"
           width="800"
           height="280"
@@ -101,7 +101,7 @@ const SECTION_UX = [
           consecuencia de una acción clave dentro del flujo.
         </p>
         <Image
-          src={`${basePath}/images/mensaje_de_estado/mensaje_advertencia.svg`}
+          src={`${basePath}/images/status_message/warning.svg`}
           alt="Mensaje de estado advertencia"
           width="800"
           height="280"
@@ -115,7 +115,7 @@ const SECTION_UX = [
           Se utiliza para comunicar que el proceso no se pudo completar, e indica los pasos a seguir para solucionarlo.
         </p>
         <Image
-          src={`${basePath}/images/mensaje_de_estado/mensaje_error.svg`}
+          src={`${basePath}/images/status_message/error.svg`}
           alt="Mensaje de estado error"
           width="800"
           height="280"
@@ -133,7 +133,7 @@ const SECTION_UX = [
           evitar sobrecargar a la persona usuaria con información.
         </p>
         <Image
-          src={`${basePath}/images/mensaje_de_estado/disposicion.svg`}
+          src={`${basePath}/images/status_message/disposition.svg`}
           alt="Disposición"
           width="800"
           height="280"
@@ -152,7 +152,7 @@ const SECTION_UX = [
         </p>
         <div className="col">
           <Image
-            src={`${basePath}/images/mensaje_de_estado/contenido_correcto.svg`}
+            src={`${basePath}/images/status_message/content_correct.svg`}
             alt="Buena práctica de contenido"
             width="800"
             height="280"
@@ -168,7 +168,7 @@ const SECTION_UX = [
         </div>
         <div className="col">
           <Image
-            src={`${basePath}/images/mensaje_de_estado/contenido_incorrecto.svg`}
+            src={`${basePath}/images/status_message/content_error.svg`}
             alt="Mala práctica de contenido"
             width="800"
             height="280"
@@ -202,7 +202,7 @@ const SECTION_UX = [
         </ul>
         <div className="col">
           <Image
-            src={`${basePath}/images/mensaje_de_estado/accionable_correcto.svg`}
+            src={`${basePath}/images/status_message/actionable_proper_usage.svg`}
             alt="Buena práctica de accionable"
             width="800"
             height="280"
@@ -216,7 +216,7 @@ const SECTION_UX = [
         </div>
         <div className="col">
           <Image
-            src={`${basePath}/images/mensaje_de_estado/accionable_incorrecto.svg`}
+            src={`${basePath}/images/status_message/actionable_improper_usage.svg`}
             alt="Mala práctica de accionable"
             width="800"
             height="280"
@@ -241,7 +241,7 @@ const SECTION_UX = [
         </p>
         <div className="col">
           <Image
-            src={`${basePath}/images/mensaje_de_estado/colores_semanticos_iconos.svg`}
+            src={`${basePath}/images/status_message/semantic_colors_icons.svg`}
             alt="Mala práctica de colores semanticos"
             width="800"
             height="280"
@@ -270,7 +270,7 @@ const SECTION_UX = [
         </p>
         <div className="col">
           <Image
-            src={`${basePath}/images/mensaje_de_estado/patron_de_uso_1.svg`}
+            src={`${basePath}/images/status_message/pattern_usage_1.svg`}
             alt="Patrón de uso paso 1"
             width="800"
             height="280"
@@ -282,7 +282,7 @@ const SECTION_UX = [
         </div>
         <div className="col">
           <Image
-            src={`${basePath}/images/mensaje_de_estado/patron_de_uso_2.svg`}
+            src={`${basePath}/images/status_message/pattern_usage_2.svg`}
             alt="Patrón de uso paso 2"
             width="800"
             height="280"
@@ -297,7 +297,7 @@ const SECTION_UX = [
         </div>
         <div className="col">
           <Image
-            src={`${basePath}/images/mensaje_de_estado/patron_de_uso_3.svg`}
+            src={`${basePath}/images/status_message/pattern_usage_3.svg`}
             alt="Patrón de uso paso 3"
             width="800"
             height="280"
@@ -517,7 +517,7 @@ const SPECS = [
     content: (
       <>
         <Image
-          src={`${basePath}/images/mensaje_de_estado/anatomia.svg`}
+          src={`${basePath}/images/status_message/anatomy.svg`}
           alt="Anatomia del mensaje de estado"
           width="800"
           height="280"
@@ -580,7 +580,7 @@ const SPECS = [
           izquierda a derecha.
         </p>
         <Image
-          src={`${basePath}/images/mensaje_de_estado/variante_desktop.svg`}
+          src={`${basePath}/images/status_message/desktop_variant.svg`}
           alt="Variante desktop de mensaje de estado"
           width="800"
           height="280"
@@ -603,7 +603,7 @@ const SPECS = [
           usabilidad de los accionables, los botones siguen la alineación en columna y de ancho completo.
         </p>
         <Image
-          src={`${basePath}/images/mensaje_de_estado/variante_mobile.svg`}
+          src={`${basePath}/images/status_message/mobile_variant.svg`}
           alt="Variante mobile de mensaje de estado"
           width="800"
           height="280"
@@ -634,7 +634,7 @@ const SPECS = [
     content: (
       <>
         <Image
-          src={`${basePath}/images/mensaje_de_estado/espaciado_desktop.svg`}
+          src={`${basePath}/images/status_message/desktop_spacing.svg`}
           alt="Espaciado desktop de mensaje de estado"
           width="800"
           height="280"
@@ -652,7 +652,7 @@ const SPECS = [
     content: (
       <>
         <Image
-          src={`${basePath}/images/mensaje_de_estado/espaciado_mobile.svg`}
+          src={`${basePath}/images/status_message/mobile_spacing.svg`}
           alt="Espaciado mobile de mensaje de estado"
           width="800"
           height="280"
@@ -680,7 +680,7 @@ const ACCESSIBILITY = [
         </p>
 
         <Image
-          src={`${basePath}/images/mensaje_de_estado/navegacion_alternativa.svg`}
+          src={`${basePath}/images/status_message/alternative_navigation.svg`}
           alt="Navegacion alternativa del botón"
           width="738"
           height="400"

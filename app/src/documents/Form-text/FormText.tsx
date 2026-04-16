@@ -379,7 +379,7 @@ const FormTextDocs: React.FC = () => {
             números de teléfonos.
           </p>
           <Image
-            src={`${basePath}/images/form_text/campo_de_texto.svg`}
+            src={`${basePath}/images/form_text/text_field.svg`}
             alt="Ejemplo visual de campo de texto"
             width="800"
             height="200"
@@ -498,7 +498,7 @@ const FormTextDocs: React.FC = () => {
           <p className="text-xl">Ejemplos de uso de prefijos</p>
           <div className="col mb-4">
             <Image
-              src={`${basePath}/images/form_text/ejemplo_de_uso_de_prefijos_incorrecto.svg`}
+              src={`${basePath}/images/form_text/prefix_imporper_usage.svg`}
               alt="Mala práctica de uso de prefijos"
               width="800"
               height="280"
@@ -512,7 +512,7 @@ const FormTextDocs: React.FC = () => {
           </div>
           <div className="col">
             <Image
-              src={`${basePath}/images/form_text/ejemplo_de_uso_de_prefijos_correcto.svg`}
+              src={`${basePath}/images/form_text/prefix_proper_usage.svg`}
               alt="Buena práctica de uso de prefijos"
               width="800"
               height="280"
@@ -532,7 +532,7 @@ const FormTextDocs: React.FC = () => {
           </p>
           <div className="col mb-4">
             <Image
-              src={`${basePath}/images/form_text/ejemplo_de_uso_de_sufijos_incorrecto.svg`}
+              src={`${basePath}/images/form_text/suffix_imporper_usage.svg`}
               alt="Buena práctica de uso de sufijos"
               width="800"
               height="280"
@@ -546,7 +546,7 @@ const FormTextDocs: React.FC = () => {
           </div>
           <div className="col">
             <Image
-              src={`${basePath}/images/form_text/ejemplo_de_uso_de_sufijos_correcto.svg`}
+              src={`${basePath}/images/form_text/suffix_proper_usage.svg`}
               alt="Buena práctica de uso de sufijos"
               width="800"
               height="280"
@@ -585,14 +585,14 @@ const FormTextDocs: React.FC = () => {
           {/* imgs */}
           <p className="text-xl mt-4">Ejemplos de uso</p>
           <Image
-            src={`${basePath}/images/form_text/ej_de_uso_accionables_1.svg`}
+            src={`${basePath}/images/form_text/actionable_usage_1.svg`}
             alt="Ejemplo de uso de accionables 1"
             width="800"
             height="280"
             className="img-fluid"
           ></Image>
           <Image
-            src={`${basePath}/images/form_text/ej_de_uso_accionables_2.svg`}
+            src={`${basePath}/images/form_text/actionable_usage_2.svg`}
             alt="Ejemplo de uso de accionables 2"
             width="800"
             height="280"
@@ -629,7 +629,7 @@ const FormTextDocs: React.FC = () => {
             {/* 1 */}
             <div className="col">
               <Image
-                src={`${basePath}/images/form_text/mns_de_error_ej_de_uso_incorrecto.svg`}
+                src={`${basePath}/images/form_text/error_msg_imporper_usage.svg`}
                 alt="Mala práctica en mensaje de error en formularios"
                 width="800"
                 height="242"
@@ -643,7 +643,7 @@ const FormTextDocs: React.FC = () => {
             {/* 2 */}
             <div className="col">
               <Image
-                src={`${basePath}/images/form_text/mns_de_error_ej_de_uso_correcto.svg`}
+                src={`${basePath}/images/form_text/error_msg_proper_usage.svg`}
                 alt="Buena práctica en mensaje de error en formularios"
                 width="800"
                 height="242"
@@ -668,7 +668,7 @@ const FormTextDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/form_text/area_de_texto.svg`}
+            src={`${basePath}/images/form_text/text_area.svg`}
             alt="Ejemplo visual de campo de area de texto"
             width="800"
             height="200"
@@ -710,7 +710,7 @@ const FormTextDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/form_text/indicador.svg`}
+            src={`${basePath}/images/form_text/indicator.svg`}
             alt="Ejemplo visual de indicador de requerido y opcional"
             width="800"
             height="200"
@@ -740,7 +740,7 @@ const FormTextDocs: React.FC = () => {
             </li>
           </ul>
           <Image
-            src={`${basePath}/images/form_text/ancho_minimo_maximo.svg`}
+            src={`${basePath}/images/form_text/max_min_width.svg`}
             alt="Ejemplo visual de ancho mínimo y máximo, indicando columnas"
             width="800"
             height="200"
@@ -791,7 +791,7 @@ const FormTextDocs: React.FC = () => {
       content: (
         <>
           <Image
-            src={`${basePath}/images/form_text/anatomia_input_text.svg`}
+            src={`${basePath}/images/form_text/anatomy.svg`}
             alt="Anatomia del input de texto"
             width="800"
             height="280"
@@ -877,7 +877,7 @@ const FormTextDocs: React.FC = () => {
           </p>
           <p className="text-md">Estado predeterminado del campo de texto en una interfaz. </p>
           <Image
-            src={`${basePath}/images/form_text/estado_default.svg`}
+            src={`${basePath}/images/form_text/default_state.svg`}
             alt="Estado predeterminado del input de texto"
             width="800"
             height="280"
@@ -893,7 +893,7 @@ const FormTextDocs: React.FC = () => {
             Obelisco se utiliza un borde o anillo (focus ring) por fuera del componente en un color distintivo.{' '}
           </p>
           <Image
-            src={`${basePath}/images/form_text/estado_en_foco.svg`}
+            src={`${basePath}/images/form_text/focus_state.svg`}
             alt="Estado en foco del input de texto"
             width="800"
             height="280"
@@ -903,7 +903,7 @@ const FormTextDocs: React.FC = () => {
           <p className="text-xl">Activo</p>
           <p className="text-md">Cuando un usuario está escribiendo contenido activamente en el campo.</p>
           <Image
-            src={`${basePath}/images/form_text/estado_activo.svg`}
+            src={`${basePath}/images/form_text/atvice_state.svg`}
             alt="Estado activo del input de texto"
             width="800"
             height="280"
@@ -913,7 +913,7 @@ const FormTextDocs: React.FC = () => {
           <p className="text-xl">Completado</p>
           <p className="text-md">Indica que la persona usuaria ingresó información válida en el campo de texto.</p>
           <Image
-            src={`${basePath}/images/form_text/estado_completado.svg`}
+            src={`${basePath}/images/form_text/completed_state.svg`}
             alt="Estado activo del input de texto"
             width="800"
             height="280"
@@ -927,7 +927,7 @@ const FormTextDocs: React.FC = () => {
             puedan identificar y corregir errores fácilmente, cumpliendo con las pautas de accesibilidad (WCAG).
           </p>
           <Image
-            src={`${basePath}/images/form_text/estado_error.svg`}
+            src={`${basePath}/images/form_text/error_state.svg`}
             alt="Estado de error del input de texto"
             width="800"
             height="280"
@@ -942,7 +942,7 @@ const FormTextDocs: React.FC = () => {
             puede activarse.
           </p>
           <Image
-            src={`${basePath}/images/form_text/estado_deshabilitado.svg`}
+            src={`${basePath}/images/form_text/disabled_state.svg`}
             alt="Estado deshabilitado del input de texto"
             width="800"
             height="280"

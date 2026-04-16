@@ -413,7 +413,7 @@ const FooterDocs: React.FC = () => {
           </div>
           <div className="col">
             <Image
-              src={`${basePath}/images/footer/footer_legales.svg`}
+              src={`${basePath}/images/footer/lawful.svg`}
               alt="Enlace tipo predeterminado"
               width="800"
               height="200"
@@ -433,7 +433,7 @@ const FooterDocs: React.FC = () => {
           </div>
           <div className="col">
             <Image
-              src={`${basePath}/images/footer/footer_informacion_util.svg`}
+              src={`${basePath}/images/footer/useful_info.svg`}
               alt="Enlace tipo predeterminado"
               width="800"
               height="200"
@@ -453,7 +453,7 @@ const FooterDocs: React.FC = () => {
           </div>
           <div className="col">
             <Image
-              src={`${basePath}/images/footer/footer_indicador.svg`}
+              src={`${basePath}/images/footer/indicator.svg`}
               alt="Enlace tipo predeterminado"
               width="800"
               height="200"
@@ -472,7 +472,7 @@ const FooterDocs: React.FC = () => {
       content: (
         <>
           <Image
-            src={`${basePath}/images/footer/footer_anatomia.svg`}
+            src={`${basePath}/images/footer/anatomy.svg`}
             alt="Anatomia del footer"
             width="800"
             height="280"
@@ -529,7 +529,7 @@ const FooterDocs: React.FC = () => {
             Contiene el logo y el escudo de la Ciudad de Buenos Aires, e información legal.
           </p>
           <Image
-            src={`${basePath}/images/footer/footer_especificaciones_legales.svg`}
+            src={`${basePath}/images/footer/specs_lawful.svg`}
             alt="Footer especifiaciones legales"
             width="800"
             height="464"
@@ -544,7 +544,7 @@ const FooterDocs: React.FC = () => {
         <>
           <p className="text-md mb-4">Contiene teléfonos útiles y redes sociales de la Ciudad.</p>
           <Image
-            src={`${basePath}/images/footer/footer_especificaciones_informacion_util.svg`}
+            src={`${basePath}/images/footer/specs_useful_info.svg`}
             alt="Footer Información útil"
             width="800"
             height="464"
@@ -559,7 +559,7 @@ const FooterDocs: React.FC = () => {
         <>
           <p className="text-md mb-4">Está compuesto de una pregunta y dos acciones posibles de la misma jerarquía.</p>
           <Image
-            src={`${basePath}/images/footer/footer_especificaciones_indicador.svg`}
+            src={`${basePath}/images/footer/specs_indicator.svg`}
             alt="Indicador de utilidad"
             width="800"
             height="464"
@@ -577,7 +577,7 @@ const FooterDocs: React.FC = () => {
       content: (
         <>
           <Image
-            src={`${basePath}/images/footer/footer_tablet.svg`}
+            src={`${basePath}/images/footer/tablet.svg`}
             alt="Tablet"
             width="800"
             height="285"
@@ -596,7 +596,7 @@ const FooterDocs: React.FC = () => {
       content: (
         <>
           <Image
-            src={`${basePath}/images/footer/footer_mobile.svg`}
+            src={`${basePath}/images/footer/mobile.svg`}
             alt="Mobile"
             width="800"
             height="285"
@@ -626,7 +626,7 @@ const FooterDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/footer/footer_ilustracion.svg`}
+            src={`${basePath}/images/footer/illustration.svg`}
             alt="Navegacion alternativa del footer"
             width="800"
             height="285"

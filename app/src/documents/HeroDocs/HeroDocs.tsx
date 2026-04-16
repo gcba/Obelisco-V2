@@ -1116,7 +1116,7 @@ const HeroHeaderDocs: React.FC = () => {
             izquierda a derecha en sentido horizontal de los elementos como formas y multimedia.
           </p>
           <Image
-            src={`${basePath}/images/hero/hero_disposicion.svg`}
+            src={`${basePath}/images/hero/disposition.svg`}
             alt="Cabecera de página disposición desktop"
             width="800"
             height="200"
@@ -1133,7 +1133,7 @@ const HeroHeaderDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/hero/hero_disposicion_1.svg`}
+            src={`${basePath}/images/hero/disposition_1.svg`}
             alt="Cabecera de página disposición desktop"
             width="800"
             height="200"
@@ -1146,7 +1146,7 @@ const HeroHeaderDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/hero/hero_disposicion_2.svg`}
+            src={`${basePath}/images/hero/disposition_2.svg`}
             alt="Cabecera de página disposición desktop"
             width="800"
             height="200"
@@ -1159,7 +1159,7 @@ const HeroHeaderDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/hero/hero_disposicion_3.svg`}
+            src={`${basePath}/images/hero/disposition_3.svg`}
             alt="Cabecera de página disposición desktop"
             width="800"
             height="200"
@@ -1182,7 +1182,7 @@ const HeroHeaderDocs: React.FC = () => {
             como descripción, se van a ubicar primeros, y por debajo la multimedia.
           </p>
           <Image
-            src={`${basePath}/images/hero/hero_disposicion_4.svg`}
+            src={`${basePath}/images/hero/disposition_4.svg`}
             alt="Cabecera de página disposición tablet"
             width="800"
             height="200"
@@ -1204,7 +1204,7 @@ const HeroHeaderDocs: React.FC = () => {
             los márgenes, manteniendo una disposición vertical de la estructura.
           </p>
           <Image
-            src={`${basePath}/images/hero/hero_disposicion_5.svg`}
+            src={`${basePath}/images/hero/disposition_5.svg`}
             alt="Cabecera de página disposición mobile"
             width="800"
             height="200"
@@ -1218,7 +1218,7 @@ const HeroHeaderDocs: React.FC = () => {
       content: (
         <>
           <Image
-            src={`${basePath}/images/hero/hero_disposicion_6.svg`}
+            src={`${basePath}/images/hero/disposition_6.svg`}
             alt="Personalización"
             width="800"
             height="200"
@@ -1266,7 +1266,7 @@ const HeroHeaderDocs: React.FC = () => {
       content: (
         <>
           <Image
-            src={`${basePath}/images/hero/hero_anatomia.svg`}
+            src={`${basePath}/images/hero/anatomy.svg`}
             alt="Anatomia de la Cabecera de página"
             width="800"
             height="280"
@@ -1432,7 +1432,7 @@ const HeroHeaderDocs: React.FC = () => {
             Forma dinámica
           </p>
           <Image
-            src={`${basePath}/images/hero/hero_forma_dinamica.svg`}
+            src={`${basePath}/images/hero/dynamic.svg`}
             alt="Forma dinámica del hero"
             width="738"
             height="400"
@@ -1443,7 +1443,7 @@ const HeroHeaderDocs: React.FC = () => {
             Forma institucional
           </p>
           <Image
-            src={`${basePath}/images/hero/hero_forma_institucional.svg`}
+            src={`${basePath}/images/hero/institutional.svg`}
             alt="Forma institucional del hero"
             width="738"
             height="400"
@@ -1465,7 +1465,7 @@ const HeroHeaderDocs: React.FC = () => {
             Con imagen
           </p>
           <Image
-            src={`${basePath}/images/hero/hero_forma_con_imagen.svg`}
+            src={`${basePath}/images/hero/image_usage.svg`}
             alt="Forma con imagen del hero"
             width="738"
             height="400"
@@ -1476,7 +1476,7 @@ const HeroHeaderDocs: React.FC = () => {
             Con video
           </p>
           <Image
-            src={`${basePath}/images/hero/hero_forma_con_video.svg`}
+            src={`${basePath}/images/hero/video_usage.svg`}
             alt="Forma con video del hero"
             width="738"
             height="400"
@@ -1487,7 +1487,7 @@ const HeroHeaderDocs: React.FC = () => {
             Con gif
           </p>
           <Image
-            src={`${basePath}/images/hero/hero_forma_con_gif.svg`}
+            src={`${basePath}/images/hero/gif_usage.svg`}
             alt="Forma con gif del hero"
             width="738"
             height="400"
@@ -1510,7 +1510,7 @@ const HeroHeaderDocs: React.FC = () => {
             Con botones
           </p>
           <Image
-            src={`${basePath}/images/hero/hero_accionables_con_botones.svg`}
+            src={`${basePath}/images/hero/actions_with_buttons.svg`}
             alt="Accionables con botones del hero"
             width="738"
             height="400"
@@ -1521,7 +1521,7 @@ const HeroHeaderDocs: React.FC = () => {
             Con campo de búsqueda
           </p>
           <Image
-            src={`${basePath}/images/hero/hero_accionables_con_campo_de_busqueda.svg`}
+            src={`${basePath}/images/hero/actions_with_search_field.svg`}
             alt="Accionables con campo de búsqueda del hero"
             width="738"
             height="400"
@@ -1532,7 +1532,7 @@ const HeroHeaderDocs: React.FC = () => {
             Con desplegables de selección
           </p>
           <Image
-            src={`${basePath}/images/hero/hero_accionables_con_desplegables_de_seleccion.svg`}
+            src={`${basePath}/images/hero/actions_with_dropdowns.svg`}
             alt="Accionables con desplegables de selección del hero"
             width="738"
             height="400"
@@ -1543,7 +1543,7 @@ const HeroHeaderDocs: React.FC = () => {
             Con etiquetas
           </p>
           <Image
-            src={`${basePath}/images/hero/hero_accionables_con_etiquetas.svg`}
+            src={`${basePath}/images/hero/actions_with_tags.svg`}
             alt="Accionables con etiquetas"
             width="738"
             height="400"
@@ -1582,7 +1582,7 @@ const HeroHeaderDocs: React.FC = () => {
             <span className="badge text-bg-light py-1 px-2 text-lowercase">$hero/bg-purple</span>
           </div>
           <Image
-            src={`${basePath}/images/hero/hero_color_bg_dark.svg`}
+            src={`${basePath}/images/hero/color_bg_dark.svg`}
             alt="Modo de color dark"
             width="800"
             height="200"
@@ -1590,7 +1590,7 @@ const HeroHeaderDocs: React.FC = () => {
             style={{ marginTop: '24px' }}
           />
           <Image
-            src={`${basePath}/images/hero/hero_color_bg_light.svg`}
+            src={`${basePath}/images/hero/color_bg_light.svg`}
             alt="Modo de color light"
             width="800"
             height="200"
@@ -1598,7 +1598,7 @@ const HeroHeaderDocs: React.FC = () => {
             style={{ marginTop: '24px' }}
           />
           <Image
-            src={`${basePath}/images/hero/hero_color_cyan.svg`}
+            src={`${basePath}/images/hero/color_cyan.svg`}
             alt="Modo de color cyan"
             width="800"
             height="200"
@@ -1606,7 +1606,7 @@ const HeroHeaderDocs: React.FC = () => {
             style={{ marginTop: '24px' }}
           />
           <Image
-            src={`${basePath}/images/hero/hero_color_sky.svg`}
+            src={`${basePath}/images/hero/color_sky.svg`}
             alt="Modo de color sky"
             width="800"
             height="200"
@@ -1614,7 +1614,7 @@ const HeroHeaderDocs: React.FC = () => {
             style={{ marginTop: '24px' }}
           />
           <Image
-            src={`${basePath}/images/hero/hero_color_red.svg`}
+            src={`${basePath}/images/hero/color_red.svg`}
             alt="Modo de color red"
             width="800"
             height="200"
@@ -1622,7 +1622,7 @@ const HeroHeaderDocs: React.FC = () => {
             style={{ marginTop: '24px' }}
           />
           <Image
-            src={`${basePath}/images/hero/hero_color_yellow.svg`}
+            src={`${basePath}/images/hero/color_yellow.svg`}
             alt="Modo de color yellow"
             width="800"
             height="200"
@@ -1630,7 +1630,7 @@ const HeroHeaderDocs: React.FC = () => {
             style={{ marginTop: '24px' }}
           />
           <Image
-            src={`${basePath}/images/hero/hero_color_purple.svg`}
+            src={`${basePath}/images/hero/color_purple.svg`}
             alt="Modo de color purple"
             width="800"
             height="200"
@@ -1638,7 +1638,7 @@ const HeroHeaderDocs: React.FC = () => {
             style={{ marginTop: '24px' }}
           />
           <Image
-            src={`${basePath}/images/hero/hero_color_blue.svg`}
+            src={`${basePath}/images/hero/color_blue.svg`}
             alt="Modo de color blue"
             width="800"
             height="200"
@@ -1668,7 +1668,7 @@ const HeroHeaderDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/hero/hero_accesibilidad.svg`}
+            src={`${basePath}/images/hero/accessibility.svg`}
             alt="Navegacion alternativa de la Cabecera de página"
             width="738"
             height="400"

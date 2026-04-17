@@ -41,7 +41,7 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
             </ul>
           </div>
           <Image
-            src={`${basePath}/images/templates/perfil_institucional/1.svg`}
+            src={`${basePath}/images/templates/institutional/1.svg`}
             alt="Ejemplo de perfil institucional"
             width="800"
             height="295"
@@ -113,7 +113,7 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
             </li>
           </ul>
           <Image
-            src={`${basePath}/images/templates/perfil_institucional/2.svg`}
+            src={`${basePath}/images/templates/institutional/2.svg`}
             alt="Ejemplo de perfil institucional"
             width="800"
             height="295"
@@ -165,7 +165,7 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
             debe ser breve, claro y sintético. Extensión máxima recomendada: 1500 caracteres.
           </p>
           <Image
-            src={`${basePath}/images/templates/perfil_institucional/3.svg`}
+            src={`${basePath}/images/templates/institutional/3.svg`}
             alt="Ejemplo de información institucional"
             width="800"
             height="295"
@@ -229,7 +229,7 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
             </li>
           </ul>
           <Image
-            src={`${basePath}/images/templates/perfil_institucional/5.svg`}
+            src={`${basePath}/images/templates/institutional/5.svg`}
             alt="Ejemplo de información institucional"
             width="800"
             height="295"
@@ -278,7 +278,7 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
             autoridades dependientes y áreas internas asociadas.
           </p>
           <Image
-            src={`${basePath}/images/templates/perfil_institucional/6.svg`}
+            src={`${basePath}/images/templates/institutional/6.svg`}
             alt="Ejemplo de información institucional"
             width="800"
             height="295"

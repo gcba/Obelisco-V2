@@ -35,7 +35,7 @@ const TemplatePaginaLibroDocs: React.FC = () => {
               </ul>
             </div>
             <Image
-              src={`${basePath}/images/templates/pagina_libro/encabezado.svg`}
+              src={`${basePath}/images/templates/book/header.svg`}
               alt="Ejemplo encabezado de página libro"
               width="800"
               height="295"
@@ -55,7 +55,7 @@ const TemplatePaginaLibroDocs: React.FC = () => {
               usuaria, es obligatoria.
             </p>
             <Image
-              src={`${basePath}/images/templates/pagina_libro/nav_vertical.svg`}
+              src={`${basePath}/images/templates/book/nav_vertical.svg`}
               alt="Ejemplo encabezado de página libro"
               width="800"
               height="295"
@@ -82,7 +82,7 @@ const TemplatePaginaLibroDocs: React.FC = () => {
             </div>
           </div>
           <Image
-            src={`${basePath}/images/templates/pagina_libro/page_body.svg`}
+            src={`${basePath}/images/templates/book/page_body.svg`}
             alt="Ejemplo encabezado de página libro"
             width="800"
             height="295"
@@ -130,14 +130,14 @@ const TemplatePaginaLibroDocs: React.FC = () => {
 
             <div className="d-flex flex-column " style={{ gap: '2rem', marginTop: '2rem' }}>
               <Image
-                src={`${basePath}/images/templates/pagina_libro/space_1.svg`}
+                src={`${basePath}/images/templates/book/space_1.svg`}
                 alt="Ejemplo encabezado de página libro"
                 width="800"
                 height="295"
                 className="img-fluid"
               />
               <Image
-                src={`${basePath}/images/templates/pagina_libro/space_2.svg`}
+                src={`${basePath}/images/templates/book/space_2.svg`}
                 alt="Ejemplo encabezado de página libro"
                 width="800"
                 height="295"

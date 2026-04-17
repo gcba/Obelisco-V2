@@ -49,7 +49,7 @@ export default function AreaUno() {
               </ul>
             </div>
             <Image
-              src={`${basePath}/images/templates/pagina_area/hero.svg`}
+              src={`${basePath}/images/templates/area/hero.svg`}
               alt="Ejemplo encabezado de área"
               width="800"
               height="295"
@@ -81,7 +81,7 @@ export default function AreaUno() {
           </div>
 
           <Image
-            src={`${basePath}/images/templates/pagina_area/access.svg`}
+            src={`${basePath}/images/templates/area/access.svg`}
             alt="Ejemplo accesos rapidos en página de área"
             width="800"
             height="295"
@@ -143,7 +143,7 @@ export default function AreaUno() {
             descripción.
           </p>
           <Image
-            src={`${basePath}/images/templates/pagina_area/destacado.svg`}
+            src={`${basePath}/images/templates/area/highlighted.svg`}
             alt="Ejemplo encabezado de área"
             width="800"
             height="295"
@@ -209,7 +209,7 @@ export default function AreaUno() {
                 </li>
               </ul>
               <Image
-                src={`${basePath}/images/templates/pagina_area/hero_areas.svg`}
+                src={`${basePath}/images/templates/area/hero_areas.svg`}
                 alt="Ejemplo encabezado de área"
                 width="800"
                 height="295"
@@ -251,7 +251,7 @@ export default function AreaUno() {
             </p>
           </div>
           <Image
-            src={`${basePath}/images/templates/pagina_area/programasyservicios.svg`}
+            src={`${basePath}/images/templates/area/programs_services.svg`}
             alt="Ejemplo encabezado de área"
             width="800"
             height="295"
@@ -282,7 +282,7 @@ export default function AreaUno() {
               todas las noticias.
             </p>
             <Image
-              src={`${basePath}/images/templates/pagina_area/noticias.svg`}
+              src={`${basePath}/images/templates/area/news.svg`}
               alt="Ejemplo encabezado de área"
               width="800"
               height="295"
@@ -328,7 +328,7 @@ export default function AreaUno() {
             </p>
 
             <Image
-              src={`${basePath}/images/templates/pagina_area/institucional.svg`}
+              src={`${basePath}/images/templates/area/institutional.svg`}
               alt="Ejemplo encabezado de área"
               width="800"
               height="295"

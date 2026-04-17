@@ -49,7 +49,7 @@ export default function AreaDos() {
               </ul>
             </div>
             <Image
-              src={`${basePath}/images/templates/pagina_area/segundo_nivel/hero.svg`}
+              src={`${basePath}/images/templates/area/second_level/hero.svg`}
               alt="Ejemplo encabezado de área"
               width="800"
               height="295"
@@ -90,7 +90,7 @@ export default function AreaDos() {
           </div>
 
           <Image
-            src={`${basePath}/images/templates/pagina_area/segundo_nivel/access.svg`}
+            src={`${basePath}/images/templates/area/second_level/access.svg`}
             alt="Ejemplo accesos rapidos en página de área"
             width="800"
             height="295"
@@ -149,7 +149,7 @@ export default function AreaDos() {
           <p>Esta información se presenta en grilla de tres con un ancho de 4 columnas.</p>
           <p>Esta agrupación de tarjetas de programas siempre llevan un título que haga referencia a dicho grupo.</p>
           <Image
-            src={`${basePath}/images/templates/pagina_area/segundo_nivel/programs.svg`}
+            src={`${basePath}/images/templates/area/second_level/programs.svg`}
             alt="Ejemplo encabezado de área"
             width="800"
             height="295"
@@ -181,7 +181,7 @@ export default function AreaDos() {
             utiliza el acceso solo con título. Se utilizan en grilla de tres columnas por fila.
           </p>
           <Image
-            src={`${basePath}/images/templates/pagina_area/segundo_nivel/services.svg`}
+            src={`${basePath}/images/templates/area/second_level/services.svg`}
             alt="Ejemplo encabezado de área"
             width="800"
             height="295"
@@ -206,7 +206,7 @@ export default function AreaDos() {
               tipo de contenido.
             </p>
             <Image
-              src={`${basePath}/images/templates/pagina_area/segundo_nivel/destacado.svg`}
+              src={`${basePath}/images/templates/area/second_level/highlighted.svg`}
               alt="Ejemplo encabezado de área"
               width="800"
               height="295"
@@ -220,7 +220,7 @@ export default function AreaDos() {
               servicios.
             </p>
             <Image
-              src={`${basePath}/images/templates/pagina_area/segundo_nivel/destacado1.svg`}
+              src={`${basePath}/images/templates/area/second_level/highlighted_1.svg`}
               alt="Ejemplo encabezado de área"
               width="800"
               height="295"
@@ -239,7 +239,7 @@ export default function AreaDos() {
             todas las noticias.
           </p>
           <Image
-            src={`${basePath}/images/templates/pagina_area/segundo_nivel/noticias.svg`}
+            src={`${basePath}/images/templates/area/second_level/news.svg`}
             alt="Ejemplo encabezado de área"
             width="800"
             height="295"
@@ -282,7 +282,7 @@ export default function AreaDos() {
           </div>
 
           <Image
-            src={`${basePath}/images/templates/pagina_area/segundo_nivel/social_media.svg`}
+            src={`${basePath}/images/templates/area/second_level/social_media.svg`}
             alt="Ejemplo encabezado de área"
             width="800"
             height="295"

@@ -1147,7 +1147,7 @@ const SECTION_UX = [
         <p className="text-md mb-4">La tabla al 100% ocupa el ancho total de la grilla de 12 columnas de Obelisco.</p>
 
         <Image
-          src={`${basePath}/images/tabla/tabla_tamanos.svg`}
+          src={`${basePath}/images/table/sizes.svg`}
           alt="Tabla desktop al 100%"
           width="800"
           height="200"
@@ -1158,7 +1158,7 @@ const SECTION_UX = [
         <p className="text-md mb-4">Cuando la tabla se encuentra al 75%, ocupa 8 columnas de la grilla de Obelisco.</p>
 
         <Image
-          src={`${basePath}/images/tabla/tabla_tamanos_2.svg`}
+          src={`${basePath}/images/table/sizes_2.svg`}
           alt="Tabla desktop al 75%"
           width="800"
           height="200"
@@ -1177,7 +1177,7 @@ const SECTION_UX = [
         </p>
 
         <Image
-          src={`${basePath}/images/tabla/tabla_mobile.svg`}
+          src={`${basePath}/images/table/mobile.svg`}
           alt="Tabla tabla_mobile"
           width="800"
           height="200"
@@ -1196,8 +1196,8 @@ const SECTION_UX = [
           habilitar desplazamiento horizontal dentro del contenedor para evitar pérdida de información.
         </p>
         <Image
-          src={`${basePath}/images/tabla/tabla_disposicion.svg`}
-          alt="Cómo usar los íconos"
+          src={`${basePath}/images/table/disposition.svg`}
+          alt="Disposición de la tabla"
           width="800"
           height="200"
           className="img-fluid"
@@ -1214,7 +1214,7 @@ const SPECS = [
     content: (
       <>
         <Image
-          src={`${basePath}/images/tabla/tabla_anatomia.svg`}
+          src={`${basePath}/images/table/anatomy.svg`}
           alt="Anatomia de la tabla"
           width="800"
           height="280"
@@ -1282,7 +1282,7 @@ const SPECS = [
           subtítulo breve como asistencia.
         </p>
         <Image
-          src={`${basePath}/images/tabla/tabla_celdas.svg`}
+          src={`${basePath}/images/table/header_cells.svg`}
           alt="Celdas de encabezado"
           width="800"
           height="464"
@@ -1302,7 +1302,7 @@ const SPECS = [
           diferenciarse del encabezado.
         </p>
         <Image
-          src={`${basePath}/images/tabla/tabla_fila.svg`}
+          src={`${basePath}/images/table/row.svg`}
           alt="Fila de tabla"
           width="800"
           height="464"
@@ -1322,7 +1322,7 @@ const SPECS = [
           <div className="max-items-2">
             <div className="col d-flex flex-column align-items-center">
               <Image
-                src={`${basePath}/images/tabla/tabla_celda_seleccion.svg`}
+                src={`${basePath}/images/table/cell_selection.svg`}
                 alt="Celda de selección"
                 width="800"
                 height="464"
@@ -1332,7 +1332,7 @@ const SPECS = [
             </div>
             <div className="col d-flex flex-column align-items-center">
               <Image
-                src={`${basePath}/images/tabla/tabla_celda_texto.svg`}
+                src={`${basePath}/images/table/cell_text.svg`}
                 alt="Celda de texto"
                 width="800"
                 height="464"
@@ -1343,7 +1343,7 @@ const SPECS = [
             </div>
             <div className="col d-flex flex-column align-items-center">
               <Image
-                src={`${basePath}/images/tabla/tabla_celda_enlace.svg`}
+                src={`${basePath}/images/table/cell_link.svg`}
                 alt="Celda de enlace"
                 width="800"
                 height="464"
@@ -1353,7 +1353,7 @@ const SPECS = [
             </div>
             <div className="col d-flex flex-column align-items-center">
               <Image
-                src={`${basePath}/images/tabla/tabla_celda_numero.svg`}
+                src={`${basePath}/images/table/cell_number.svg`}
                 alt="Celda de número"
                 width="800"
                 height="464"
@@ -1365,7 +1365,7 @@ const SPECS = [
             </div>
             <div className="col d-flex flex-column align-items-center">
               <Image
-                src={`${basePath}/images/tabla/tabla_celda_etiqueta.svg`}
+                src={`${basePath}/images/table/cell_tag.svg`}
                 alt="Celda de etiqueta"
                 width="800"
                 height="464"
@@ -1375,7 +1375,7 @@ const SPECS = [
             </div>
             <div className="col d-flex flex-column align-items-center">
               <Image
-                src={`${basePath}/images/tabla/tabla_celda_boton.svg`}
+                src={`${basePath}/images/table/cell_button.svg`}
                 alt="Celda de botón"
                 width="800"
                 height="464"
@@ -1387,7 +1387,7 @@ const SPECS = [
           <div className="max-items-1">
             <div className="col d-flex flex-column align-items-center">
               <Image
-                src={`${basePath}/images/tabla/tabla_icono.svg`}
+                src={`${basePath}/images/table/icon.svg`}
                 alt="Celda de icono"
                 width="800"
                 height="464"
@@ -1410,7 +1410,7 @@ const SPECS = [
           selección.
         </p>
         <Image
-          src={`${basePath}/images/tabla/tabla_columna.svg`}
+          src={`${basePath}/images/table/column.svg`}
           alt="Fila de tabla"
           width="800"
           height="464"
@@ -1430,7 +1430,7 @@ const SPECS = [
         <div className="max-items-2">
           <div className="col d-flex flex-column align-items-center">
             <Image
-              src={`${basePath}/images/tabla/tabla_espaciados_1.svg`}
+              src={`${basePath}/images/table/spacing_1.svg`}
               alt="Ejemplo espaciados 1"
               width="800"
               height="464"
@@ -1439,7 +1439,7 @@ const SPECS = [
           </div>
           <div className="col d-flex flex-column align-items-center">
             <Image
-              src={`${basePath}/images/tabla/tabla_espaciados_2.svg`}
+              src={`${basePath}/images/table/spacing_2.svg`}
               alt="Ejemplo espaciados 2"
               width="800"
               height="464"
@@ -1450,7 +1450,7 @@ const SPECS = [
         <div className="max-items-1" style={{ marginTop: '32px' }}>
           <div className="col d-flex flex-column align-items-center">
             <Image
-              src={`${basePath}/images/tabla/tabla_espaciados_3.svg`}
+              src={`${basePath}/images/table/spacing_3.svg`}
               alt="Ejemplo espaciados 3"
               width="800"
               height="300"
@@ -1471,7 +1471,7 @@ const SPECS = [
         <div className="max-items-1 mt-4">
           <div className="col d-flex flex-column align-items-center">
             <Image
-              src={`${basePath}/images/tabla/tabla_espaciados_4.svg`}
+              src={`${basePath}/images/table/spacing_4.svg`}
               alt="Ejemplo espaciados 4"
               width="800"
               height="300"
@@ -1502,7 +1502,7 @@ const ACCESSIBILITY = [
         </p>
 
         <Image
-          src={`${basePath}/images/tabla/tablas_navegacion.svg`}
+          src={`${basePath}/images/table/navigation.svg`}
           alt="Navegacion alternativa de la tabla"
           width="738"
           height="400"

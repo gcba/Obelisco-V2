@@ -46,7 +46,7 @@ const SECTIONS_UX = [
         <div className="max-items-2">
           <div className="col">
             <Image
-              src={`${basePath}/images/tipografia/tipografia_1.svg`}
+              src={`${basePath}/images/typography/nunito.svg`}
               className="img-fluid"
               alt="Familia Nunito"
               width={800}
@@ -60,7 +60,7 @@ const SECTIONS_UX = [
           </div>
           <div className="col">
             <Image
-              src={`${basePath}/images/tipografia/tipografia_open_sans.svg`}
+              src={`${basePath}/images/typography/open_sans.svg`}
               className="img-fluid"
               alt="Familia Open Sans"
               width={800}
@@ -85,7 +85,7 @@ const SECTIONS_UX = [
           su función.
         </p>
         <Image
-          src={`${basePath}/images/tipografia/tipografia_3.svg`}
+          src={`${basePath}/images/typography/roles.svg`}
           className="img-fluid"
           alt="Roles"
           width={800}
@@ -198,7 +198,7 @@ const SECTIONS_UX = [
         </p>
         <p className="mb-4">No recomendamos utilizar textos sobre imágenes, porque dificultan la legibilidad.</p>
         <Image
-          src={`${basePath}/images/tipografia/tipografia_4.svg`}
+          src={`${basePath}/images/typography/contrast_usage.svg`}
           className="img-fluid"
           alt="Contraste de color"
           width={800}
@@ -263,7 +263,7 @@ const SECTIONS_UX = [
 
         <div className="d-flex flex-column flex-md-row align-items-center mb-4" style={{ gap: '32px' }}>
           <Image
-            src={`${basePath}/images/tipografia/tipografia_5.svg`}
+            src={`${basePath}/images/typography/bold.svg`}
             className="img-fluid"
             alt="Texto en negrita"
             width={800}
@@ -281,7 +281,7 @@ const SECTIONS_UX = [
         </div>
         <div className="d-flex flex-column flex-md-row align-items-center mb-4" style={{ gap: '32px' }}>
           <Image
-            src={`${basePath}/images/tipografia/tipografia_6.svg`}
+            src={`${basePath}/images/typography/semibold.svg`}
             className="img-fluid"
             alt="Texto en Semi-negrita"
             width={800}
@@ -299,7 +299,7 @@ const SECTIONS_UX = [
         </div>
         <div className="d-flex flex-column flex-md-row align-items-center mb-4" style={{ gap: '32px' }}>
           <Image
-            src={`${basePath}/images/tipografia/tipografia_7.svg`}
+            src={`${basePath}/images/typography/regular.svg`}
             className="img-fluid"
             alt="Texto en Regular"
             width={800}
@@ -330,7 +330,7 @@ const SECTIONS_UX = [
 
         <div className="d-flex flex-column flex-md-row align-items-center mb-4" style={{ gap: '32px' }}>
           <Image
-            src={`${basePath}/images/tipografia/tipografia_8.svg`}
+            src={`${basePath}/images/typography/italic.svg`}
             className="img-fluid"
             alt="Texto en Cursiva"
             width={800}
@@ -348,7 +348,7 @@ const SECTIONS_UX = [
         </div>
         <div className="d-flex flex-column flex-md-row align-items-center mb-4" style={{ gap: '32px' }}>
           <Image
-            src={`${basePath}/images/tipografia/tipografia_9.svg`}
+            src={`${basePath}/images/typography/underline.svg`}
             className="img-fluid"
             alt="Texto Subrayado"
             width={800}
@@ -396,7 +396,7 @@ const SECTIONS_UX = [
           <i>tablet</i> y <i>mobile</i> el bloque debe ocupar el 100 % del contenedor disponible.
         </p>
         <Image
-          src={`${basePath}/images/tipografia/tipografia_10.svg`}
+          src={`${basePath}/images/typography/max_width.svg`}
           className="img-fluid"
           alt="Ancho máximo de párrafo por línea"
           width={800}

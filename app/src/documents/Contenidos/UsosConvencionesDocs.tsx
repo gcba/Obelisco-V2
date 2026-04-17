@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Contenidos/UsosConvencionesDocs.tsx
 import ComponentHeader from '@/components/Template/ComponentHeader';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 

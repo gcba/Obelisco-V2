@@ -1,18 +1,19 @@
+// Hoja de rutas: app/src/documents/Docs/patterns.tsx
 'use client';
 
 // import Link from 'next/link';
+import { basePath } from '@/utils';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
+import CriteriosWCAG from '@/components/CriteriosWCAG';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import { PATTERNS_ACCESSIBILTY } from './code-views';
-
-const basePath = '/Obelisco-V2';
 
 const PatternsComponents: React.FC = () => {
   const SECTION_UX = [
@@ -91,7 +92,7 @@ const PatternsComponents: React.FC = () => {
           </ol>
 
           <Image
-            src={`${basePath}/images/patterns/patterns_elementos_de_un_form.svg`}
+            src={`${basePath}/images/patterns/form_elements.svg`}
             alt="Anatomía de Elementos que componen un formulario"
             width="800"
             height="200"
@@ -114,7 +115,7 @@ const PatternsComponents: React.FC = () => {
             {/* 1 */}
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_ej_1_no_usar.svg`}
+                src={`${basePath}/images/patterns/improper_usage_1.svg`}
                 alt="Mala práctica en patrones de formularios ejemplo 1"
                 width="800"
                 height="242"
@@ -128,7 +129,7 @@ const PatternsComponents: React.FC = () => {
             {/* 2 */}
             <div className="col pe-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_ej_1_si_usar.svg`}
+                src={`${basePath}/images/patterns/proper_usage_1.svg`}
                 alt="Buena práctica en patrones de formularios ejemplo 1"
                 width="800"
                 height="242"
@@ -156,7 +157,7 @@ const PatternsComponents: React.FC = () => {
             {/* 1 */}
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_ej_2_si_usar.svg`}
+                src={`${basePath}/images/patterns/proper_usage_2.svg`}
                 alt="Buena práctica en patrones de formularios ejemplo 2"
                 width="800"
                 height="242"
@@ -170,7 +171,7 @@ const PatternsComponents: React.FC = () => {
             {/* 2 */}
             <div className="col pe-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_ej_2_no_usar.svg`}
+                src={`${basePath}/images/patterns/improper_usage_2.svg`}
                 alt="Mala práctica en patrones de formularios ejemplo 2"
                 width="800"
                 height="242"
@@ -213,7 +214,7 @@ const PatternsComponents: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_input_text.svg`}
+                src={`${basePath}/images/patterns/input_text.svg`}
                 alt="Input de texto - Texto"
                 width="800"
                 height="295"
@@ -230,7 +231,7 @@ const PatternsComponents: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_input_textarea.svg`}
+                src={`${basePath}/images/patterns/input_textarea.svg`}
                 alt="Input de texto - Textarea"
                 width="800"
                 height="295"
@@ -247,7 +248,7 @@ const PatternsComponents: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_input_password.svg`}
+                src={`${basePath}/images/patterns/input_password.svg`}
                 alt="Input de texto - Password"
                 width="800"
                 height="295"
@@ -264,7 +265,7 @@ const PatternsComponents: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_input_email.svg`}
+                src={`${basePath}/images/patterns/input_email.svg`}
                 alt="Input de texto - Email"
                 width="800"
                 height="295"
@@ -281,7 +282,7 @@ const PatternsComponents: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_input_number.svg`}
+                src={`${basePath}/images/patterns/input_number.svg`}
                 alt="Input de texto - Number"
                 width="800"
                 height="295"
@@ -298,7 +299,7 @@ const PatternsComponents: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_input_tel.svg`}
+                src={`${basePath}/images/patterns/input_tel.svg`}
                 alt="Input de texto - Telefono"
                 width="800"
                 height="295"
@@ -315,7 +316,7 @@ const PatternsComponents: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_input_date.svg`}
+                src={`${basePath}/images/patterns/input_date.svg`}
                 alt="Input de texto - Date"
                 width="800"
                 height="295"
@@ -332,7 +333,7 @@ const PatternsComponents: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_input_time.svg`}
+                src={`${basePath}/images/patterns/input_time.svg`}
                 alt="Input de texto - Time"
                 width="800"
                 height="295"
@@ -359,7 +360,7 @@ const PatternsComponents: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_input_search.svg`}
+                src={`${basePath}/images/patterns/input_search.svg`}
                 alt="Input de búsqueda"
                 width="800"
                 height="295"
@@ -391,7 +392,7 @@ const PatternsComponents: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_input_select.svg`}
+                src={`${basePath}/images/patterns/input_select.svg`}
                 alt="Input de selección - Select"
                 width="800"
                 height="295"
@@ -408,7 +409,7 @@ const PatternsComponents: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_input_radio.svg`}
+                src={`${basePath}/images/patterns/input_radio.svg`}
                 alt="Input de selección - Radio"
                 width="800"
                 height="295"
@@ -427,7 +428,7 @@ const PatternsComponents: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_input_checkbox.svg`}
+                src={`${basePath}/images/patterns/input_checkbox.svg`}
                 alt="Input de selección - Checkbox"
                 width="800"
                 height="295"
@@ -454,7 +455,7 @@ const PatternsComponents: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_input_file.svg`}
+                src={`${basePath}/images/patterns/input_file.svg`}
                 alt="Input de carga de archivo "
                 width="800"
                 height="295"
@@ -479,7 +480,7 @@ const PatternsComponents: React.FC = () => {
             {/* 1 */}
             <div className="col pe-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_accionables_ej_1_no_usar.svg`}
+                src={`${basePath}/images/patterns/actionable_improper_usage_1.svg`}
                 alt="Mala práctica en patrones accionables ejemplo 1"
                 width="800"
                 height="242"
@@ -493,7 +494,7 @@ const PatternsComponents: React.FC = () => {
             {/* 2 */}
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_accionables_ej_1_si_usar.svg`}
+                src={`${basePath}/images/patterns/actionable_proper_usage_1.svg`}
                 alt="Buena práctica en patrones accionables ejemplo 1"
                 width="800"
                 height="242"
@@ -509,7 +510,7 @@ const PatternsComponents: React.FC = () => {
             {/* 3 */}
             <div className="col pe-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_accionables_ej_2_no_usar.svg`}
+                src={`${basePath}/images/patterns/actionable_improper_usage_2.svg`}
                 alt="Mala práctica en patrones accionables ejemplo 2"
                 width="800"
                 height="242"
@@ -526,7 +527,7 @@ const PatternsComponents: React.FC = () => {
             {/* 4 */}
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/patterns/patterns_accionables_ej_2_si_usar.svg`}
+                src={`${basePath}/images/patterns/actionable_proper_usage_2.svg`}
                 alt="Buena práctica en patrones accionables ejemplo 2"
                 width="800"
                 height="242"
@@ -568,7 +569,7 @@ const PatternsComponents: React.FC = () => {
           </div>
           <div className="mt-4 mb-3">
             <Image
-              src={`${basePath}/images/patterns/diagrams/estructura.svg`}
+              src={`${basePath}/images/patterns/diagrams/structure.svg`}
               alt="Estructura de un formulario"
               width="800"
               height="200"
@@ -596,7 +597,7 @@ const PatternsComponents: React.FC = () => {
           </p>
           <div className="mb-3">
             <Image
-              src={`${basePath}/images/patterns/diagrams/disposicion.svg`}
+              src={`${basePath}/images/patterns/diagrams/disposition.svg`}
               alt="Disposición de Elementos que componen un formulario"
               width="800"
               height="200"
@@ -617,7 +618,7 @@ const PatternsComponents: React.FC = () => {
             facilitar la navegación a las personas que utilizan tecnologías de asistencia.
           </p>
           <Image
-            src={`${basePath}/images/patterns/diagrams/agrupacion_campos.svg`}
+            src={`${basePath}/images/patterns/diagrams/group_fields.svg`}
             alt="Agrupacion de campos"
             width="800"
             height="200"
@@ -627,7 +628,7 @@ const PatternsComponents: React.FC = () => {
             <p className="text-xl mb-4">Ejemplos de uso</p>
             <div className="mb-4">
               <Image
-                src={`${basePath}/images/patterns/diagrams/uso_incorrecto_1.svg`}
+                src={`${basePath}/images/patterns/diagrams/imporper_usage.svg`}
                 alt="Mala práctica de uso ejemplo 1"
                 width="800"
                 height="242"
@@ -644,7 +645,7 @@ const PatternsComponents: React.FC = () => {
             </div>
             <div className="mb-4">
               <Image
-                src={`${basePath}/images/patterns/diagrams/uso_correcto.svg`}
+                src={`${basePath}/images/patterns/diagrams/proper_usage.svg`}
                 alt="Buena práctica de uso"
                 width="800"
                 height="242"
@@ -682,7 +683,7 @@ const PatternsComponents: React.FC = () => {
             para conocer las combinaciones y alineaciones recomendadas en dispositivos desktop, tablet y mobile.
           </p>
           <Image
-            src={`${basePath}/images/patterns/diagrams/alineacion_botones.svg`}
+            src={`${basePath}/images/patterns/diagrams/buttons_alignment.svg`}
             alt="Mala práctica de uso ejemplo 2"
             width="800"
             height="242"
@@ -712,7 +713,7 @@ const PatternsComponents: React.FC = () => {
             </ul>
           </div>
           <Image
-            src={`${basePath}/images/patterns/diagrams/espaciados.svg`}
+            src={`${basePath}/images/patterns/diagrams/spacing.svg`}
             alt="Espaciados ejemplo Desktop"
             width="800"
             height="242"
@@ -723,7 +724,7 @@ const PatternsComponents: React.FC = () => {
             separación entre campos es de 12px.
           </p>
           <Image
-            src={`${basePath}/images/patterns/diagrams/espaciados_mobile.svg`}
+            src={`${basePath}/images/patterns/diagrams/mobile_spacing.svg`}
             alt="Espaciados de ejemplo mobile"
             width="800"
             height="242"
@@ -759,7 +760,7 @@ const PatternsComponents: React.FC = () => {
             </ul>
           </div>
           <Image
-            src={`${basePath}/images/patterns/diagrams/seccion_por_temas.svg`}
+            src={`${basePath}/images/patterns/diagrams/theme_sections.svg`}
             alt="Seccion por temas"
             width="800"
             height="242"
@@ -778,7 +779,7 @@ const PatternsComponents: React.FC = () => {
             que hacer suposiciones.
           </p>
           <Image
-            src={`${basePath}/images/patterns/diagrams/etiquetas_campos.svg`}
+            src={`${basePath}/images/patterns/diagrams/field_label.svg`}
             alt="Etiquetas de campo requerido y opcional"
             width="800"
             height="242"
@@ -789,7 +790,7 @@ const PatternsComponents: React.FC = () => {
           <div className="max-items-2">
             <div className="col pe-3">
               <Image
-                src={`${basePath}/images/patterns/diagrams/etiqueta_mal_uso.svg`}
+                src={`${basePath}/images/patterns/diagrams/label_imporper_usage.svg`}
                 alt="Mala práctica en etiquetas"
                 width="800"
                 height="242"
@@ -802,7 +803,7 @@ const PatternsComponents: React.FC = () => {
             </div>
             <div className="col pe-3">
               <Image
-                src={`${basePath}/images/patterns/diagrams/etiqueta_buen_uso.svg`}
+                src={`${basePath}/images/patterns/diagrams/label_proper_usage.svg`}
                 alt="Buena práctica en etiquetas"
                 width="800"
                 height="242"
@@ -843,7 +844,7 @@ const PatternsComponents: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/patterns/accessibility/accessibility_navegacion_alternativa.svg`}
+            src={`${basePath}/images/patterns/accessibility/alternative_navigation.svg`}
             alt="Accesibilidad en navegación alternativa por TAB"
             width="800"
             height="200"
@@ -914,97 +915,9 @@ const PatternsComponents: React.FC = () => {
       title: 'Criterios WCAG aplicados',
       content: (
         <>
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.3.1 Info and Relationships (Level A)
-          </a>
-          <p className="mt-2">
-            La información, la estructura y las relaciones transmitidas a través de la presentación pueden determinarse
-            mediante programación o están disponibles en el texto.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.2.5 Re-authenticating (Level AAA)
-          </a>
-          <p className="mt-2">
-            Cuando una sesión autenticada expira, la persona usuaria puede continuar la actividad sin pérdida de datos
-            después de re-autenticarse.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.4.6 Headings and Labels (Level AA)
-          </a>
-          <p className="mt-2">Los encabezados y las etiquetas describen el tema o el propósito.</p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/resize-text"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 3.2.2 On Input (Level A)
-          </a>
-          <p className="mt-2">
-            El cambio de la configuración de cualquier componente de la interfaz no provoca automáticamente un cambio de
-            contexto a menos que la persona usuaria haya sido informada del comportamiento antes de utilizar el
-            componente.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/reflow.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion Labels or Instructions (Level A)
-          </a>
-          <p className="mt-2">
-            Se proporcionan etiquetas o instrucciones cuando el contenido requiere la entrada de la persona usuaria.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 4.1.2 Name, Role, Value (Level A)
-          </a>
-          <p className="mt-2">
-            Para todos los componentes de la interfaz de usuario (incluidos, entre otros: elementos de formulario,
-            enlaces y componentes generados por scripts), el nombre y la función se pueden determinar mediante
-            programación; los estados, propiedades y valores que puede establecer el usuario se pueden configurar
-            mediante programación; y la notificación de cambios en estos elementos está disponible para los agentes de
-            usuario, incluidas las tecnologías de asistencia.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            G98: Proporcionar la posibilidad de revisar y corregir las respuestas antes de enviarlas
-          </a>
-          <p className="mt-2">
-            Antes de que se produzca el paso final que compromete la transacción, se proporcionan instrucciones para
-            solicitar que la persona usuaria revise los datos ingresados y confirme. Una vez que la persona confirma, la
-            transacción se completa.
-          </p>
+          <CriteriosWCAG
+            list={['1.3.1', '2.2.5', '2.4.6', '3.2.2', 'Reflow (Level AA)', '4.1.2', 'No Keyboard Trap (Level A)']}
+          />
         </>
       ),
     },

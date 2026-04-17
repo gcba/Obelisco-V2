@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Form-text/code-views.ts
 export const INPUT_TEXT = `  <div class="form-label-container">
     <label for="input-text" class="form-label">
       Campo de texto *

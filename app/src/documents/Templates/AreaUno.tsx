@@ -1,4 +1,6 @@
+// Hoja de rutas: app/src/documents/Templates/AreaUno.tsx
 'use client';
+import { basePath } from '@/utils';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
@@ -10,10 +12,8 @@ import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 
 import { AREA_1 } from './code-views';
 
-const basePath = '/Obelisco-V2';
-
 export default function AreaUno() {
-  const [activeTab, setActiveTab] = useState('panel-content-docs');
+  const [activeTab, setActiveTab] = useState('content-docs');
 
   const DOC_SECTIONS = [
     {
@@ -49,7 +49,7 @@ export default function AreaUno() {
               </ul>
             </div>
             <Image
-              src={`${basePath}/images/templates/pagina_area/hero.svg`}
+              src={`${basePath}/images/templates/area/hero.svg`}
               alt="Ejemplo encabezado de área"
               width="800"
               height="295"
@@ -81,7 +81,7 @@ export default function AreaUno() {
           </div>
 
           <Image
-            src={`${basePath}/images/templates/pagina_area/access.svg`}
+            src={`${basePath}/images/templates/area/access.svg`}
             alt="Ejemplo accesos rapidos en página de área"
             width="800"
             height="295"
@@ -143,7 +143,7 @@ export default function AreaUno() {
             descripción.
           </p>
           <Image
-            src={`${basePath}/images/templates/pagina_area/destacado.svg`}
+            src={`${basePath}/images/templates/area/highlighted.svg`}
             alt="Ejemplo encabezado de área"
             width="800"
             height="295"
@@ -209,7 +209,7 @@ export default function AreaUno() {
                 </li>
               </ul>
               <Image
-                src={`${basePath}/images/templates/pagina_area/hero_areas.svg`}
+                src={`${basePath}/images/templates/area/hero_areas.svg`}
                 alt="Ejemplo encabezado de área"
                 width="800"
                 height="295"
@@ -251,7 +251,7 @@ export default function AreaUno() {
             </p>
           </div>
           <Image
-            src={`${basePath}/images/templates/pagina_area/programasyservicios.svg`}
+            src={`${basePath}/images/templates/area/programs_services.svg`}
             alt="Ejemplo encabezado de área"
             width="800"
             height="295"
@@ -282,7 +282,7 @@ export default function AreaUno() {
               todas las noticias.
             </p>
             <Image
-              src={`${basePath}/images/templates/pagina_area/noticias.svg`}
+              src={`${basePath}/images/templates/area/news.svg`}
               alt="Ejemplo encabezado de área"
               width="800"
               height="295"
@@ -328,7 +328,7 @@ export default function AreaUno() {
             </p>
 
             <Image
-              src={`${basePath}/images/templates/pagina_area/institucional.svg`}
+              src={`${basePath}/images/templates/area/institutional.svg`}
               alt="Ejemplo encabezado de área"
               width="800"
               height="295"
@@ -379,24 +379,19 @@ export default function AreaUno() {
       <div>
         <nav className="tabs-box" aria-label="Navegación por pestañas">
           <ul className="nav nav-pills nav-box tabs p-0" role="tablist">
-            <TabItem
-              id={`panel-content-docs`}
-              title={'Especificaciones'}
-              activeTab={activeTab}
-              setActiveTab={setActiveTab}
-            />
-            <TabItem id={`panel-content-html`} title={'Código'} activeTab={activeTab} setActiveTab={setActiveTab} />
+            <TabItem id={`content-docs`} title={'Especificaciones'} activeTab={activeTab} setActiveTab={setActiveTab} />
+            <TabItem id={`content-html`} title={'Código'} activeTab={activeTab} setActiveTab={setActiveTab} />
           </ul>
         </nav>
 
         <hr className="mt-0 mb-4" />
 
         <div className="tab-content" style={{ paddingTop: '32px' }}>
-          <TabPanel id={`panel-content-docs`} activeTab={activeTab}>
+          <TabPanel id={`content-docs`} activeTab={activeTab}>
             <DocumentationTemplate sections={DOC_SECTIONS} type="ux" />
           </TabPanel>
 
-          <TabPanel id={`panel-content-html`} activeTab={activeTab}>
+          <TabPanel id={`content-html`} activeTab={activeTab}>
             <CodeViewTemplate template={AREA_1} />
           </TabPanel>
         </div>

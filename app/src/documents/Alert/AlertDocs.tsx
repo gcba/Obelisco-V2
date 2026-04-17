@@ -1,12 +1,14 @@
+// Hoja de rutas: app/src/documents/Alert/AlertDocs.tsx
+import { basePath } from '@/utils';
 import Image from 'next/image';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import CodeBox from '@/components/CodeBox';
+import CriteriosWCAG from '@/components/CriteriosWCAG';
 import LinkClient from '@/components/LinkClient';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
-const basePath = '/Obelisco-V2';
 
 import {
   SIMPLE_ALERT,
@@ -337,7 +339,7 @@ const AlertDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/alert/alerta_de_sistema.svg`}
+            src={`${basePath}/images/alert/system.svg`}
             alt="Alerta del sistema"
             width="800"
             height="285"
@@ -355,7 +357,7 @@ const AlertDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/alert/alerta_de_contexto.svg`}
+            src={`${basePath}/images/alert/context.svg`}
             alt="Alerta del contexto"
             width="800"
             height="285"
@@ -376,7 +378,7 @@ const AlertDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/alert/estados_de_alerta.svg`}
+            src={`${basePath}/images/alert/states.svg`}
             alt="Estados de alerta"
             width="800"
             height="285"
@@ -442,7 +444,7 @@ const AlertDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/alert/alertas_jerarquias.svg`}
+            src={`${basePath}/images/alert/hierarchies.svg`}
             alt="Jerarquias de alertas"
             width="800"
             height="285"
@@ -466,7 +468,7 @@ const AlertDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/alert/alertas_disposicion.svg`}
+            src={`${basePath}/images/alert/disposition.svg`}
             alt="Disposicion de alertas"
             width="800"
             height="285"
@@ -481,7 +483,7 @@ const AlertDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/alert/alertas_disposicion_contexto.svg`}
+            src={`${basePath}/images/alert/description_context.svg`}
             alt="Disposicion de alertas"
             width="800"
             height="285"
@@ -494,7 +496,7 @@ const AlertDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/alert/alertas_disposicion_mobile.svg`}
+            src={`${basePath}/images/alert/description_mobile.svg`}
             alt="Disposicion de alertas mobile"
             width="800"
             height="285"
@@ -515,7 +517,7 @@ const AlertDocs: React.FC = () => {
             uso.
           </p>
           <Image
-            src={`${basePath}/images/alert/alertas_contexto_de_uso.svg`}
+            src={`${basePath}/images/alert/context_use.svg`}
             alt="Contexto de uso alertas - notificar sobre el mantenimiento del sistema"
             width="800"
             height="285"
@@ -528,7 +530,7 @@ const AlertDocs: React.FC = () => {
             frustraciones o errores. No interrumpe la experiencia, pero brinda orientación relevante.
           </p>
           <Image
-            src={`${basePath}/images/alert/alertas_contexto_de_uso_2.svg`}
+            src={`${basePath}/images/alert/context_use_2.svg`}
             alt="Contexto de uso alertas - comunicar reestricciones"
             width="800"
             height="285"
@@ -541,7 +543,7 @@ const AlertDocs: React.FC = () => {
             persona usuaria a corregirlos antes de continuar. Deben ubicarse cerca del campo afectado.
           </p>
           <Image
-            src={`${basePath}/images/alert/alertas_contexto_de_uso_3.svg`}
+            src={`${basePath}/images/alert/context_use_3.svg`}
             alt="Contexto de uso alertas - validar campos"
             width="800"
             height="285"
@@ -643,7 +645,7 @@ const AlertDocs: React.FC = () => {
       content: (
         <>
           <Image
-            src={`${basePath}/images/alert/alertas_anatomia.svg`}
+            src={`${basePath}/images/alert/anatomy.svg`}
             alt="Anatomia de las alertas"
             width="800"
             height="280"
@@ -706,7 +708,7 @@ const AlertDocs: React.FC = () => {
             contenido que consideran innecesario.
           </p>
           <Image
-            src={`${basePath}/images/alert/variantes_con_boton.svg`}
+            src={`${basePath}/images/alert/button_variant.svg`}
             alt="Variante de alertas con boton de cierre"
             width="800"
             height="464"
@@ -725,7 +727,7 @@ const AlertDocs: React.FC = () => {
             documentación o información deben abrirse en una nueva pestaña.
           </p>
           <Image
-            src={`${basePath}/images/alert/alerta_variante_enlace.svg`}
+            src={`${basePath}/images/alert/link_variant.svg`}
             alt="Variante de alertas con enlace en línea"
             width="800"
             height="464"
@@ -744,7 +746,7 @@ const AlertDocs: React.FC = () => {
             lectura del mensaje.
           </p>
           <Image
-            src={`${basePath}/images/alert/alerta_variante_enlace_independiente.svg`}
+            src={`${basePath}/images/alert/independent_link_variant.svg`}
             alt="Variante de alertas con enlace en línea"
             width="800"
             height="464"
@@ -764,7 +766,7 @@ const AlertDocs: React.FC = () => {
             error.
           </p>
           <Image
-            src={`${basePath}/images/alert/alerta_variante_lista_enlaces.svg`}
+            src={`${basePath}/images/alert/link_list_variant.svg`}
             alt="Variante de alertas con lista de enlaces"
             width="800"
             height="464"
@@ -783,7 +785,7 @@ const AlertDocs: React.FC = () => {
             principal de la página.
           </p>
           <Image
-            src={`${basePath}/images/alert/alerta_variante_lista_descriptiva.svg`}
+            src={`${basePath}/images/alert/descriptive_list_variant.svg`}
             alt="Variante de alertas con lista de enlaces"
             width="800"
             height="464"
@@ -812,7 +814,7 @@ const AlertDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/alert/alertas_accesibilidad.svg`}
+            src={`${basePath}/images/alert/accessibility.svg`}
             alt="Navegacion alternativa de las alertas"
             width="738"
             height="400"
@@ -854,55 +856,7 @@ const AlertDocs: React.FC = () => {
       title: 'Criterios WCAG aplicados',
       content: (
         <>
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.3.1 Info and Relationships (Level A){' '}
-          </a>
-          <p>
-            La información, la estructura y las relaciones transmitidas a través de la presentación pueden determinarse
-            mediante programación o están disponibles en el texto.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.4.11 Non-Text Contrast (Level AA){' '}
-          </a>
-          <p>
-            La presentación visual de elementos de la interfaz de usuario y objetos gráficos tiene por lo menos una
-            relación de contraste de 3:1 con respecto a los colores adyacentes.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.1.1 Keyboard (Level A){' '}
-          </a>
-          <p>Todas las funcionalidades del contenido se puede operar a través de una interfaz de teclado.</p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.4.7 Focus Visible (Level AA)
-          </a>
-          <p>
-            Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque
-            del teclado es visible. Cuando utiliza un teclado para navegar por los componentes, los enlaces tienen un
-            subrayado visible y un recuadro outline que indica que los enlaces son interactivos.
-          </p>
+          <CriteriosWCAG list={['1.3.1', '1.4.11', '2.1.1', '2.4.7']} />
         </>
       ),
     },
@@ -922,7 +876,7 @@ const AlertDocs: React.FC = () => {
         customSections={[
           {
             title: 'Especificaciones',
-            id: 'section-specs',
+            id: 'specs',
             sectionContent: SPECS,
           },
           {

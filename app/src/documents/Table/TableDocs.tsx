@@ -1,10 +1,12 @@
+// Hoja de rutas: app/src/documents/Table/TableDocs.tsx
+import { basePath } from '@/utils';
 import Image from 'next/image';
 import React from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-const basePath = '/Obelisco-V2';
 import CodeBox from '@/components/CodeBox';
+import CriteriosWCAG from '@/components/CriteriosWCAG';
 import LinkClient from '@/components/LinkClient';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
@@ -1145,7 +1147,7 @@ const SECTION_UX = [
         <p className="text-md mb-4">La tabla al 100% ocupa el ancho total de la grilla de 12 columnas de Obelisco.</p>
 
         <Image
-          src={`${basePath}/images/tabla/tabla_tamanos.svg`}
+          src={`${basePath}/images/table/sizes.svg`}
           alt="Tabla desktop al 100%"
           width="800"
           height="200"
@@ -1156,7 +1158,7 @@ const SECTION_UX = [
         <p className="text-md mb-4">Cuando la tabla se encuentra al 75%, ocupa 8 columnas de la grilla de Obelisco.</p>
 
         <Image
-          src={`${basePath}/images/tabla/tabla_tamanos_2.svg`}
+          src={`${basePath}/images/table/sizes_2.svg`}
           alt="Tabla desktop al 75%"
           width="800"
           height="200"
@@ -1175,7 +1177,7 @@ const SECTION_UX = [
         </p>
 
         <Image
-          src={`${basePath}/images/tabla/tabla_mobile.svg`}
+          src={`${basePath}/images/table/mobile.svg`}
           alt="Tabla tabla_mobile"
           width="800"
           height="200"
@@ -1194,8 +1196,8 @@ const SECTION_UX = [
           habilitar desplazamiento horizontal dentro del contenedor para evitar pérdida de información.
         </p>
         <Image
-          src={`${basePath}/images/tabla/tabla_disposicion.svg`}
-          alt="Cómo usar los íconos"
+          src={`${basePath}/images/table/disposition.svg`}
+          alt="Disposición de la tabla"
           width="800"
           height="200"
           className="img-fluid"
@@ -1212,7 +1214,7 @@ const SPECS = [
     content: (
       <>
         <Image
-          src={`${basePath}/images/tabla/tabla_anatomia.svg`}
+          src={`${basePath}/images/table/anatomy.svg`}
           alt="Anatomia de la tabla"
           width="800"
           height="280"
@@ -1280,7 +1282,7 @@ const SPECS = [
           subtítulo breve como asistencia.
         </p>
         <Image
-          src={`${basePath}/images/tabla/tabla_celdas.svg`}
+          src={`${basePath}/images/table/header_cells.svg`}
           alt="Celdas de encabezado"
           width="800"
           height="464"
@@ -1300,7 +1302,7 @@ const SPECS = [
           diferenciarse del encabezado.
         </p>
         <Image
-          src={`${basePath}/images/tabla/tabla_fila.svg`}
+          src={`${basePath}/images/table/row.svg`}
           alt="Fila de tabla"
           width="800"
           height="464"
@@ -1320,7 +1322,7 @@ const SPECS = [
           <div className="max-items-2">
             <div className="col d-flex flex-column align-items-center">
               <Image
-                src={`${basePath}/images/tabla/tabla_celda_seleccion.svg`}
+                src={`${basePath}/images/table/cell_selection.svg`}
                 alt="Celda de selección"
                 width="800"
                 height="464"
@@ -1330,7 +1332,7 @@ const SPECS = [
             </div>
             <div className="col d-flex flex-column align-items-center">
               <Image
-                src={`${basePath}/images/tabla/tabla_celda_texto.svg`}
+                src={`${basePath}/images/table/cell_text.svg`}
                 alt="Celda de texto"
                 width="800"
                 height="464"
@@ -1341,7 +1343,7 @@ const SPECS = [
             </div>
             <div className="col d-flex flex-column align-items-center">
               <Image
-                src={`${basePath}/images/tabla/tabla_celda_enlace.svg`}
+                src={`${basePath}/images/table/cell_link.svg`}
                 alt="Celda de enlace"
                 width="800"
                 height="464"
@@ -1351,7 +1353,7 @@ const SPECS = [
             </div>
             <div className="col d-flex flex-column align-items-center">
               <Image
-                src={`${basePath}/images/tabla/tabla_celda_numero.svg`}
+                src={`${basePath}/images/table/cell_number.svg`}
                 alt="Celda de número"
                 width="800"
                 height="464"
@@ -1363,7 +1365,7 @@ const SPECS = [
             </div>
             <div className="col d-flex flex-column align-items-center">
               <Image
-                src={`${basePath}/images/tabla/tabla_celda_etiqueta.svg`}
+                src={`${basePath}/images/table/cell_tag.svg`}
                 alt="Celda de etiqueta"
                 width="800"
                 height="464"
@@ -1373,7 +1375,7 @@ const SPECS = [
             </div>
             <div className="col d-flex flex-column align-items-center">
               <Image
-                src={`${basePath}/images/tabla/tabla_celda_boton.svg`}
+                src={`${basePath}/images/table/cell_button.svg`}
                 alt="Celda de botón"
                 width="800"
                 height="464"
@@ -1385,7 +1387,7 @@ const SPECS = [
           <div className="max-items-1">
             <div className="col d-flex flex-column align-items-center">
               <Image
-                src={`${basePath}/images/tabla/tabla_icono.svg`}
+                src={`${basePath}/images/table/icon.svg`}
                 alt="Celda de icono"
                 width="800"
                 height="464"
@@ -1408,7 +1410,7 @@ const SPECS = [
           selección.
         </p>
         <Image
-          src={`${basePath}/images/tabla/tabla_columna.svg`}
+          src={`${basePath}/images/table/column.svg`}
           alt="Fila de tabla"
           width="800"
           height="464"
@@ -1428,7 +1430,7 @@ const SPECS = [
         <div className="max-items-2">
           <div className="col d-flex flex-column align-items-center">
             <Image
-              src={`${basePath}/images/tabla/tabla_espaciados_1.svg`}
+              src={`${basePath}/images/table/spacing_1.svg`}
               alt="Ejemplo espaciados 1"
               width="800"
               height="464"
@@ -1437,7 +1439,7 @@ const SPECS = [
           </div>
           <div className="col d-flex flex-column align-items-center">
             <Image
-              src={`${basePath}/images/tabla/tabla_espaciados_2.svg`}
+              src={`${basePath}/images/table/spacing_2.svg`}
               alt="Ejemplo espaciados 2"
               width="800"
               height="464"
@@ -1448,7 +1450,7 @@ const SPECS = [
         <div className="max-items-1" style={{ marginTop: '32px' }}>
           <div className="col d-flex flex-column align-items-center">
             <Image
-              src={`${basePath}/images/tabla/tabla_espaciados_3.svg`}
+              src={`${basePath}/images/table/spacing_3.svg`}
               alt="Ejemplo espaciados 3"
               width="800"
               height="300"
@@ -1469,7 +1471,7 @@ const SPECS = [
         <div className="max-items-1 mt-4">
           <div className="col d-flex flex-column align-items-center">
             <Image
-              src={`${basePath}/images/tabla/tabla_espaciados_4.svg`}
+              src={`${basePath}/images/table/spacing_4.svg`}
               alt="Ejemplo espaciados 4"
               width="800"
               height="300"
@@ -1500,7 +1502,7 @@ const ACCESSIBILITY = [
         </p>
 
         <Image
-          src={`${basePath}/images/tabla/tablas_navegacion.svg`}
+          src={`${basePath}/images/table/navigation.svg`}
           alt="Navegacion alternativa de la tabla"
           width="738"
           height="400"
@@ -1542,146 +1544,9 @@ const ACCESSIBILITY = [
     title: 'Criterios WCAG aplicados',
     content: (
       <>
-        <a
-          className="external"
-          href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          1.3.1 Info and Relationships (Level A)
-        </a>
-        <p>
-          La información, la estructura y las relaciones transmitidas a través de la presentación pueden determinarse
-          mediante programación o están disponibles en el texto.
-        </p>
-
-        <a
-          className="external"
-          href="https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          1.3.2 Meaningful Sequence (Level A)
-        </a>
-        <p>
-          Cuando la secuencia en que se presenta el contenido afecta su significado, se puede determinar mediante
-          programación una secuencia de lectura correcta.
-        </p>
-
-        <a
-          className="external"
-          href="https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          1.4.1 Use of Color (Level A)
-        </a>
-        <p>
-          El color no se utiliza como el único medio visual para transmitir información, indicar una acción, provocar
-          una respuesta o distinguir un elemento visual.
-        </p>
-
-        <a
-          className="external"
-          href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          1.4.11 Non-text Contrast (Level AA)
-        </a>
-        <p>
-          La presentación visual de los siguientes elementos tiene una relación de contraste de al menos 3:1 con
-          respecto a los colores adyacentes: componentes de la interfaz de usuario; objetos gráficos.
-        </p>
-        <a
-          className="external"
-          href="https://www.w3.org/WAI/WCAG21/Understanding/text-spacing.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          1.4.12 Text Spacing (Level AA)
-        </a>
-        <p>
-          No se produce pérdida de contenido ni funcionalidad al configurar todo lo siguiente y no cambiar ninguna otra
-          propiedad de estilo: altura de línea establecida en 1,5; espaciado después de párrafos establecido al menos en
-          2 veces el tamaño de fuente; espaciado entre letras establecido al menos en 0,12 veces el tamaño de fuente;
-          espaciado entre palabras establecido al menos en 0,16 veces el tamaño de fuente.
-        </p>
-
-        <a
-          className="external"
-          href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          1.4.3 Minimum Contrast (Level AA)
-        </a>
-        <p>
-          La presentación visual del texto y las imágenes del texto tiene una relación de contraste de al menos 4,5:1.
-        </p>
-
-        <a
-          className="external"
-          href="https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          2.1.1 Keyboard (Level A)
-        </a>
-        <p>Toda la funcionalidad del contenido se puede operar a través de una interfaz de teclado.</p>
-
-        <a
-          className="external"
-          href="https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          2.1.2 No Keyboard Trap (Level A)
-        </a>
-        <p>
-          Si el foco del teclado se puede mover a un componente de la página usando una interfaz de teclado, entonces el
-          foco se puede mover lejos de ese componente usando solo una interfaz de teclado.
-        </p>
-        <a
-          className="external"
-          href="https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          2.2.1 Timing Adjustable (Level A)
-        </a>
-        <p>
-          Si hay limitaciones de tiempo establecidas por el contenido, se debe cumplir una de las siguientes
-          condiciones: desactivar, ajustar, extender, excepción en tiempo real, excepción esencial, excepción de 20
-          horas.
-        </p>
-
-        <a
-          className="external"
-          href="https://www.w3.org/WAI/WCAG21/Understanding/label-in-name.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          2.5.3 Label in Name (Level A)
-        </a>
-        <p>
-          Para los componentes de la interfaz de usuario con etiquetas que incluyen texto o imágenes de texto, el nombre
-          contiene el texto que se presenta visualmente.
-        </p>
-
-        <a
-          className="external"
-          href="https://www.w3.org/WAI/WCAG21/Understanding/status-messages.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          4.1.3 Status Messages (Level AA)
-        </a>
-        <p>
-          En el contenido implementado mediante lenguajes de marcado, los mensajes de estado se pueden determinar
-          mediante programación a través de roles o propiedades, de modo que puedan presentarse al usuario mediante
-          tecnologías de asistencia sin recibir el foco.
-        </p>
+        <CriteriosWCAG
+          list={['1.3.1', '1.3.2', '1.4.1', '1.4.11', '1.4.12', '1.4.3', '2.1.1', '2.1.2', '2.2.1', '2.5.3', '4.1.3']}
+        />
       </>
     ),
   },
@@ -1702,7 +1567,7 @@ const TableDocs: React.FC = () => {
         customSections={[
           {
             title: 'Especificaciones',
-            id: 'section-specs',
+            id: 'specs',
             sectionContent: SPECS,
           },
           {

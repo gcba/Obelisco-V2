@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/components/Template/PalletteTable.tsx
 import React from 'react';
 
 export interface ColorTableArray {

@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Button/code-views.ts
 export const BUTTON_SOLID = `
 <button type="button" class="btn btn-primary">Primario</button>
 <button type="button" class="btn btn-secondary">Secundario</button>

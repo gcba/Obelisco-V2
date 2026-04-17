@@ -1,4 +1,6 @@
+// Hoja de rutas: app/src/documents/Gallery/GalleryDocs.tsx
 'use client';
+import Image from 'next/image';
 import { useState } from 'react';
 
 import CodeBox from '@/components/CodeBox';
@@ -35,7 +37,7 @@ const GalleryGrid: React.FC<{ images: string[]; maxColumns: number }> = ({ image
     <div className={`gallery-grid gallery-max-${maxColumns}`}>
       {images.map((src, index) => (
         <div className="gallery-grid-item" key={index}>
-          <img src={src} alt={`Imagen ${index + 1}`} />
+          <Image src={src} alt={`Imagen ${index + 1}`} width={800} height={200} className="img-fluid" />
         </div>
       ))}
     </div>
@@ -123,7 +125,7 @@ const GalleryDocs: React.FC = () => {
                       data-bs-toggle="modal"
                       data-bs-target="#modalGallery"
                     >
-                      <img src={d.src} alt={d.alt} />
+                      <Image src={d.src} alt={d.alt} width={800} height={200} className="img-fluid" />
                     </a>
                   ))}
                 </div>
@@ -146,7 +148,7 @@ const GalleryDocs: React.FC = () => {
                   <div className="carousel-inner">
                     {DATA_GALERY.map((d, i) => (
                       <div key={d.id} className={`carousel-item ${i === 0 ? 'active' : ''} `} data-bs-interval="3000">
-                        <img src={d.src} className="d-block w-100" alt={d.alt} />
+                        <Image src={d.src} className="img-fluid" alt={d.alt} width={800} height={200} />
                         <div className="carousel-caption">
                           <div className="row mb-4">
                             <div className="col">

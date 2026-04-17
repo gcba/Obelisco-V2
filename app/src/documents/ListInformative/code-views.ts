@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/ListInformative/code-views.ts
 export const LIST_INFORMATIVE_BULLET = `
   <div class="list-informative">
     <h3 class="list-informative-subtitle">

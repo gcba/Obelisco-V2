@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/DropdownSel/code-views.ts
 export const DROPDOWN_RADIO_SIZES_MD = `
   <div class="dropdown">
     <button

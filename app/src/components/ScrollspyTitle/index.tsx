@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/components/ScrollspyTitle/index.tsx
 'use client';
 import React from 'react';
 

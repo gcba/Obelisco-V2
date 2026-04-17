@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/components/Template/CodeViewTemplate.tsx
 import { useEffect, useRef, useState } from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs';

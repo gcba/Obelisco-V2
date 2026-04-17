@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/AccessOrganism/AccessOrganismDoc.tsx
 'use client';
 
 import React from 'react';

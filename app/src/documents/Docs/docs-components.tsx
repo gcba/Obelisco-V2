@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Docs/docs-components.tsx
 import Link from 'next/link';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
@@ -9,6 +10,7 @@ import { HERO_EXAMPLE, HERO_EXAMPLE_2 } from './code-views';
 
 const sections = [
   {
+    id: 'accesibilidad',
     title: 'Accesibilidad',
     content: (
       <ul className="docs-list">
@@ -19,6 +21,7 @@ const sections = [
     ),
   },
   {
+    id: 'accesos',
     title: 'Accesos',
     content: (
       <ul className="docs-list">
@@ -67,6 +70,7 @@ const sections = [
     ),
   },
   {
+    id: 'alerta',
     title: 'Alerta',
     content: (
       <>
@@ -97,6 +101,7 @@ const sections = [
     ),
   },
   {
+    id: 'barra-progreso',
     title: 'Barra de progreso',
     content: (
       <ul className="docs-list">
@@ -107,6 +112,7 @@ const sections = [
     ),
   },
   {
+    id: 'bloque-tramite',
     title: 'Bloque de trámite',
     content: (
       <ul className="docs-list">
@@ -117,6 +123,7 @@ const sections = [
     ),
   },
   {
+    id: 'botones',
     title: 'Botones',
     content: (
       <ul className="docs-list">
@@ -140,6 +147,7 @@ const sections = [
     ),
   },
   {
+    id: 'banner',
     title: 'Banner',
     content: (
       <ul className="docs-list">
@@ -150,6 +158,7 @@ const sections = [
     ),
   },
   {
+    id: 'cabecera-pagina',
     title: 'Cabecera de página',
     content: (
       <ul className="docs-list">
@@ -229,6 +238,7 @@ const sections = [
     ),
   },
   {
+    id: 'calendario',
     title: 'Calendario',
     content: (
       <ul className="docs-list">
@@ -255,6 +265,7 @@ const sections = [
     ),
   },
   {
+    id: 'colapsables',
     title: 'Colapsables',
     content: (
       <ul className="docs-list">
@@ -277,6 +288,7 @@ const sections = [
     ),
   },
   {
+    id: 'colores',
     title: 'Colores',
     content: (
       <div className="responsive-scroll mt-4 mb-5" tabIndex={0}>
@@ -400,6 +412,7 @@ const sections = [
     ),
   },
   {
+    id: 'desplegables-navegacion-seleccion',
     title: 'Desplegables de navegación y selección',
     content: (
       <>
@@ -451,6 +464,7 @@ const sections = [
     ),
   },
   {
+    id: 'destacado',
     title: 'Destacado',
     content: (
       <ul className="docs-list">
@@ -491,6 +505,7 @@ const sections = [
     ),
   },
   {
+    id: 'enlace',
     title: 'Enlace',
     content: (
       <ul className="docs-list">
@@ -501,6 +516,7 @@ const sections = [
     ),
   },
   {
+    id: 'etiquetas',
     title: 'Etiquetas',
     content: (
       <ul className="docs-list">
@@ -514,6 +530,7 @@ const sections = [
     ),
   },
   {
+    id: 'formulario-radio-checkbox',
     title: 'Formulario - Casillas de selección (Radio y Checkbox)',
     content: (
       <ul className="docs-list">
@@ -548,6 +565,7 @@ const sections = [
     ),
   },
   {
+    id: 'formulario-texto',
     title: 'Formularios de texto',
     content: (
       <ul className="docs-list">
@@ -576,6 +594,7 @@ const sections = [
     ),
   },
   {
+    id: 'galeria',
     title: 'Galeria',
     content: (
       <ul className="docs-list">
@@ -613,6 +632,7 @@ const sections = [
     ),
   },
   {
+    id: 'grilla',
     title: 'Grilla',
     content: (
       <div className="responsive-scroll mt-4 mb-5" tabIndex={0}>
@@ -697,6 +717,7 @@ const sections = [
     ),
   },
   {
+    id: 'header',
     title: 'Header (encabezado)',
     content: (
       <ul className="docs-list">
@@ -718,6 +739,7 @@ const sections = [
     ),
   },
   {
+    id: 'iconos',
     title: 'Iconos',
     content: (
       <ul className="docs-list">
@@ -730,6 +752,7 @@ const sections = [
     ),
   },
   {
+    id: 'lista-pasos',
     title: 'Lista de pasos',
     content: (
       <ul className="docs-list">
@@ -740,6 +763,7 @@ const sections = [
     ),
   },
   {
+    id: 'mapa',
     title: 'Mapa',
     content: (
       <ul className="docs-list">
@@ -755,6 +779,7 @@ const sections = [
     ),
   },
   {
+    id: 'mensaje-estados',
     title: 'Mensaje de estados',
     content: (
       <>
@@ -770,6 +795,7 @@ const sections = [
     ),
   },
   {
+    id: 'migas-pan',
     title: 'Migas de pan',
     content: (
       <>
@@ -783,6 +809,7 @@ const sections = [
     ),
   },
   {
+    id: 'modal',
     title: 'Modal',
     content: (
       <ul className="docs-list">
@@ -807,6 +834,7 @@ const sections = [
     ),
   },
   {
+    id: 'pasos-formulario',
     title: 'Pasos de un formulario',
     content: (
       <ul className="docs-list">
@@ -824,6 +852,7 @@ const sections = [
     ),
   },
   {
+    id: 'pestaña',
     title: 'Pestaña',
     content: (
       <ul className="docs-list">
@@ -851,6 +880,7 @@ const sections = [
     ),
   },
   {
+    id: 'pie-pagina',
     title: 'Pie de Página (Footer)',
     content: (
       <ul className="docs-list">
@@ -862,6 +892,7 @@ const sections = [
     ),
   },
   {
+    id: 'spinner',
     title: 'Spinner',
     content: (
       <ul className="docs-list">
@@ -873,6 +904,7 @@ const sections = [
     ),
   },
   {
+    id: 'tarjetas',
     title: 'Tarjetas',
     content: (
       <ul className="docs-list">
@@ -927,6 +959,7 @@ const sections = [
     ),
   },
   {
+    id: 'tipografia',
     title: 'Tipografía',
     content: (
       <ul className="docs-list">

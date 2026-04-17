@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/getting-started-module/EditorModule.tsx
 import ComponentHeader from '@/components/Template/ComponentHeader';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 

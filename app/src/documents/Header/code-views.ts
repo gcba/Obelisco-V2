@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Header/code-views.ts
 export const HEADER_LOGIN_ONE_LINE_SEARCH = `
 <header class="o-header navbar" role="banner">
     <a href="#main" class="skip-to-main-content-link">

@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Calendar/code-views.ts
 export const CALENDAR_DEFAULT = `<div class="calendar">
     <div class="calendar-header">
         <h2 class="calendar-title">Enero</h2>

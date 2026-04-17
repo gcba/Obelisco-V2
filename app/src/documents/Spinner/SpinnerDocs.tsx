@@ -1,13 +1,15 @@
+// Hoja de rutas: app/src/documents/Spinner/SpinnerDocs.tsx
 'use client';
+import { basePath } from '@/utils';
 import Image from 'next/image';
 import React from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import CodeBox from '@/components/CodeBox';
+import CriteriosWCAG from '@/components/CriteriosWCAG';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
-const basePath = '/Obelisco-V2';
 
 import {
   SPINNER_ACCESSIBILTY,
@@ -58,7 +60,7 @@ const SpinnerDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/spinner/tipos.svg`}
+            src={`${basePath}/images/spinner/types.svg`}
             alt="Tipos de spinner"
             width="800"
             height="280"
@@ -78,7 +80,7 @@ const SpinnerDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/spinner/tamaños.svg`}
+            src={`${basePath}/images/spinner/sizes.svg`}
             alt="Tamaños de spinner"
             width="800"
             height="280"
@@ -117,7 +119,7 @@ const SpinnerDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/spinner/patron_de_uso_boton.svg`}
+            src={`${basePath}/images/spinner/button_usage.svg`}
             alt="Uso en botón"
             width="800"
             height="280"
@@ -136,7 +138,7 @@ const SpinnerDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/spinner/patron_de_uso_componentes.svg`}
+            src={`${basePath}/images/spinner/component_usage.svg`}
             alt="Uso en componentes"
             width="800"
             height="280"
@@ -164,7 +166,7 @@ const SpinnerDocs: React.FC = () => {
           </p>
           <div className="col">
             <Image
-              src={`${basePath}/images/spinner/patron_buen_uso.svg`}
+              src={`${basePath}/images/spinner/proper_usage.svg`}
               alt="Buena práctica de uso"
               width="800"
               height="280"
@@ -180,7 +182,7 @@ const SpinnerDocs: React.FC = () => {
           </div>
           <div className="col">
             <Image
-              src={`${basePath}/images/spinner/patron_mal_uso.svg`}
+              src={`${basePath}/images/spinner/improper_usage.svg`}
               alt="Mala práctica de uso"
               width="800"
               height="280"
@@ -290,7 +292,7 @@ const SpinnerDocs: React.FC = () => {
       content: (
         <>
           <Image
-            src={`${basePath}/images/spinner/anatomia.svg`}
+            src={`${basePath}/images/spinner/anatomy.svg`}
             alt="Anatomía"
             width="800"
             height="280"
@@ -339,7 +341,7 @@ const SpinnerDocs: React.FC = () => {
             etiqueta, y se ubica por debajo del indicador.
           </p>
           <Image
-            src={`${basePath}/images/spinner/variantes.svg`}
+            src={`${basePath}/images/spinner/variants.svg`}
             alt="Variantes"
             width="800"
             height="280"
@@ -358,7 +360,7 @@ const SpinnerDocs: React.FC = () => {
             48px.
           </p>
           <Image
-            src={`${basePath}/images/spinner/medidas.svg`}
+            src={`${basePath}/images/spinner/measures.svg`}
             alt="Medidas"
             width="800"
             height="280"
@@ -375,7 +377,7 @@ const SpinnerDocs: React.FC = () => {
             En la variante de tamaño grande, el espaciado entre la etiqueta y el indicador es de 8px.
           </p>
           <Image
-            src={`${basePath}/images/spinner/espaciados.svg`}
+            src={`${basePath}/images/spinner/spacing.svg`}
             alt="Espaciados"
             width="800"
             height="280"
@@ -440,76 +442,7 @@ const SpinnerDocs: React.FC = () => {
       title: 'Criterios WCAG aplicables',
       content: (
         <>
-          <a
-            className="external mb-2"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.4.11 Non-Text Contrast (Level AA)
-          </a>
-          <p>
-            La presentación visual de elementos de la interfaz de usuario y objetos gráficos tiene por lo menos una
-            relación de contraste de 3:1 con respecto a los colores adyacentes.
-          </p>
-
-          <a
-            className="external mb-2"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.4.3 Contrast (Minimum) (Level AA)
-          </a>
-          <p>
-            La presentación visual de texto y de imágenes de texto tiene una relación de contraste de por lo menos
-            4.5:1, excepto textos grandes e imágenes de texto grande que tienen un contraste de por lo menos 3:1, textos
-            o imágenes que son parte de un componente inactivo de interfaz de usuario o son pura decoración, o
-            logotipos.
-          </p>
-
-          <a
-            className="external mb-2"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/resize-text"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.4.4 Resize Text (Level AA)
-          </a>
-          <p>
-            Excepto por los subtítulos e imágenes de texto, el texto puede redimensionarse hasta un 200 % sin tecnología
-            de asistencia, sin pérdida de contenido ni funcionalidad.
-          </p>
-
-          <a
-            className="external mb-2"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/consistent-identification.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 3.2.4 Consistent Identification (Level AA)
-          </a>
-          <p>
-            Los componentes que tienen la misma funcionalidad dentro de un conjunto de páginas web se identifican de
-            manera consistente. Los enlaces que dirigen a un mismo lugar deben tener la misma identificación para no
-            generar confusiones.
-          </p>
-
-          <a
-            className="external mb-2"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 4.1.2 Name, Role, Value (Level A)
-          </a>
-          <p>
-            Para todos los componentes de la interfaz de usuario (incluidos, entre otros: elementos de formulario,
-            enlaces y componentes generados por scripts), el nombre y la función se pueden determinar mediante
-            programación; los estados, propiedades y valores que puede establecer el usuario se pueden configurar
-            mediante programación; y la notificación de cambios en estos elementos está disponible para los agentes de
-            usuario, incluidas las tecnologías de asistencia.
-          </p>
+          <CriteriosWCAG list={['1.4.11', '1.4.3', '1.4.4', '3.2.4', '4.1.2']} />
         </>
       ),
     },
@@ -529,7 +462,7 @@ const SpinnerDocs: React.FC = () => {
         customSections={[
           {
             title: 'Especificaciones',
-            id: 'section-specs',
+            id: 'specs',
             sectionContent: SPECS,
           },
           {

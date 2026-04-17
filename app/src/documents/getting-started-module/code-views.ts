@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/getting-started-module/code-views.ts
 //section Installation
 export const NPM_CODE = `npm i @gcba/obelisco-v2`;
 export const YARN_CODE = `yarn add @gcba/obelisco-v2`;

@@ -1,4 +1,6 @@
+// Hoja de rutas: app/src/documents/Templates/TemplatePaginaSimpleDocs.tsx
 'use client';
+import { basePath } from '@/utils';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -9,10 +11,9 @@ import ComponentHeader from '@/components/Template/ComponentHeader';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 
 import { TEMPLATE_PAG_SIMPLE } from './code-views';
-const basePath = '/Obelisco-V2';
 
 const TemplatePaginaSimpleDocs: React.FC = () => {
-  const [activeTab, setActiveTab] = useState('panel-content-docs');
+  const [activeTab, setActiveTab] = useState('content-docs');
 
   const DOC_SECTIONS = [
     {
@@ -62,7 +63,7 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
             </div>
 
             <Image
-              src={`${basePath}/images/templates/pagina_simple/estructura_gral.svg`}
+              src={`${basePath}/images/templates/simple/general_structure.svg`}
               alt="Ejemplo de estructura general"
               width="800"
               height="295"
@@ -119,7 +120,7 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
             </p>
             <div className="d-flex flex-column" style={{ gap: '1.5rem' }}>
               <Image
-                src={`${basePath}/images/templates/pagina_simple/tarjetas_1.svg`}
+                src={`${basePath}/images/templates/simple/card_1.svg`}
                 alt="Ejemplo uso de tarjetas"
                 width="800"
                 height="295"
@@ -128,7 +129,7 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
               <div>
                 <p className="text-lg">Ejemplos de uso</p>
                 <Image
-                  src={`${basePath}/images/templates/pagina_simple/tarjetas_2.svg`}
+                  src={`${basePath}/images/templates/simple/card_2.svg`}
                   alt="Ejemplo uso de tarjetas"
                   width="800"
                   height="295"
@@ -143,7 +144,7 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
                 </div>
                 <div>
                   <Image
-                    src={`${basePath}/images/templates/pagina_simple/tarjetas_3.svg`}
+                    src={`${basePath}/images/templates/simple/card_3.svg`}
                     alt="Ejemplo uso de tarjetas"
                     width="800"
                     height="295"
@@ -196,7 +197,7 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
           <div>
             <div>
               <Image
-                src={`${basePath}/images/templates/pagina_simple/destacados.svg`}
+                src={`${basePath}/images/templates/simple/highlighted.svg`}
                 alt="Ejemplo uso de destacado"
                 width="800"
                 height="295"
@@ -207,7 +208,7 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
             <div>
               <p className="text-lg">Ejemplos de uso</p>
               <Image
-                src={`${basePath}/images/templates/pagina_simple/destacados_2.svg`}
+                src={`${basePath}/images/templates/simple/highlighted_2.svg`}
                 alt="Ejemplo uso de destacado"
                 width="800"
                 height="295"
@@ -253,7 +254,7 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
           <div>
             <div>
               <Image
-                src={`${basePath}/images/templates/pagina_simple/accesos.svg`}
+                src={`${basePath}/images/templates/simple/access.svg`}
                 alt="Ejemplo uso de acceso"
                 width="800"
                 height="295"
@@ -265,7 +266,7 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
             <div>
               <p className="text-lg">Ejemplos de uso</p>
               <Image
-                src={`${basePath}/images/templates/pagina_simple/accesos_2.svg`}
+                src={`${basePath}/images/templates/simple/access_2.svg`}
                 alt="Ejemplo uso de acceso"
                 width="800"
                 height="295"
@@ -282,7 +283,7 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
 
             <div>
               <Image
-                src={`${basePath}/images/templates/pagina_simple/accesos_3.svg`}
+                src={`${basePath}/images/templates/simple/access_3.svg`}
                 alt="Ejemplo uso de acceso"
                 width="800"
                 height="295"
@@ -318,7 +319,7 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
             </div>
             <div className="mt-3">
               <Image
-                src={`${basePath}/images/templates/pagina_simple/colapsables.svg`}
+                src={`${basePath}/images/templates/simple/collapse.svg`}
                 alt="Ejemplo uso de colapsable"
                 width="800"
                 height="295"
@@ -334,7 +335,7 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
               una sección de preguntas frecuentes es de 6 colapsables, y una cantidad mínima de 4 opciones.
             </p>
             <Image
-              src={`${basePath}/images/templates/pagina_simple/colapsables_2.svg`}
+              src={`${basePath}/images/templates/simple/collapse_2.svg`}
               alt="Ejemplo uso de colapsable"
               width="800"
               height="295"
@@ -347,7 +348,7 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
               recomendamos redactar la información directamente en el cuerpo.
             </p>
             <Image
-              src={`${basePath}/images/templates/pagina_simple/colapsables_3.svg`}
+              src={`${basePath}/images/templates/simple/collapse_3.svg`}
               alt="Ejemplo uso de colapsable"
               width="800"
               height="295"
@@ -387,7 +388,7 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
                 el 100% porque se generan líneas de texto muy largas y perjudica la lectura.
               </p>
               <Image
-                src={`${basePath}/images/templates/pagina_simple/contenido_texto.svg`}
+                src={`${basePath}/images/templates/simple/content_text.svg`}
                 alt="Ejemplo uso de párrafo de texto"
                 width="800"
                 height="295"
@@ -413,7 +414,7 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
                 <div>
                   <p className="text-lg">Ejemplos de uso</p>
                   <Image
-                    src={`${basePath}/images/templates/pagina_simple/contenido_texto_2.svg`}
+                    src={`${basePath}/images/templates/simple/content_text_2.svg`}
                     alt="Ejemplo uso de párrafo de texto"
                     width="800"
                     height="295"
@@ -429,7 +430,7 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
                 </div>
                 <div>
                   <Image
-                    src={`${basePath}/images/templates/pagina_simple/contenido_texto_3.svg`}
+                    src={`${basePath}/images/templates/simple/content_text_3.svg`}
                     alt="Ejemplo uso de párrafo de texto"
                     width="800"
                     height="295"
@@ -475,7 +476,7 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
             </div>
 
             <Image
-              src={`${basePath}/images/templates/pagina_simple/espaciados.svg`}
+              src={`${basePath}/images/templates/simple/spacing.svg`}
               alt="Ejemplo de espaciados"
               width="800"
               height="295"
@@ -519,23 +520,18 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
       <div>
         <nav className="tabs-box" aria-label="Navegación por pestañas">
           <ul className="nav nav-pills nav-box tabs p-0" role="tablist">
-            <TabItem
-              id={`panel-content-docs`}
-              title={'Especificaciones'}
-              activeTab={activeTab}
-              setActiveTab={setActiveTab}
-            />
-            <TabItem id={`panel-content-html`} title={'Código'} activeTab={activeTab} setActiveTab={setActiveTab} />
+            <TabItem id={`content-docs`} title={'Especificaciones'} activeTab={activeTab} setActiveTab={setActiveTab} />
+            <TabItem id={`content-html`} title={'Código'} activeTab={activeTab} setActiveTab={setActiveTab} />
           </ul>
         </nav>
 
         <hr className="mt-0 mb-4" />
 
         <div className="tab-content" style={{ paddingTop: '32px' }}>
-          <TabPanel id={`panel-content-docs`} activeTab={activeTab}>
+          <TabPanel id={`content-docs`} activeTab={activeTab}>
             <DocumentationTemplate sections={DOC_SECTIONS} type="ux" />
           </TabPanel>
-          <TabPanel id={`panel-content-html`} activeTab={activeTab}>
+          <TabPanel id={`content-html`} activeTab={activeTab}>
             <CodeViewTemplate template={TEMPLATE_PAG_SIMPLE} />
           </TabPanel>
         </div>

@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/HeroDocs/code-views.ts
 export const HERO_INSTITUCIONAL = `<header class="hero">
   <div class="content corner">
     <div class="d-flex flex-column">

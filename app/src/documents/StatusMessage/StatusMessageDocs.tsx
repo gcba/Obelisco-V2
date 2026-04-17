@@ -1,9 +1,10 @@
+// Hoja de rutas: app/src/documents/StatusMessage/StatusMessageDocs.tsx
+import { basePath } from '@/utils';
 import Image from 'next/image';
 import React from 'react';
 
-const basePath = '/Obelisco-V2';
-
 import CodeBox from '@/components/CodeBox';
+import CriteriosWCAG from '@/components/CriteriosWCAG';
 import LinkClient from '@/components/LinkClient';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
@@ -54,7 +55,7 @@ const SECTION_UX = [
           al Gobierno de la Ciudad de Buenos Aires.
         </p>
         <Image
-          src={`${basePath}/images/mensaje_de_estado/mensaje_institucional.svg`}
+          src={`${basePath}/images/status_message/institutional.svg`}
           alt="Mensaje de estado institucional"
           width="800"
           height="280"
@@ -70,7 +71,7 @@ const SECTION_UX = [
           state.
         </p>
         <Image
-          src={`${basePath}/images/mensaje_de_estado/mensaje_informacion.svg`}
+          src={`${basePath}/images/status_message/information.svg`}
           alt="Mensaje de estado información"
           width="800"
           height="280"
@@ -85,7 +86,7 @@ const SECTION_UX = [
           seguridad y cierre sobre el proceso.
         </p>
         <Image
-          src={`${basePath}/images/mensaje_de_estado/mensaje_exito.svg`}
+          src={`${basePath}/images/status_message/success.svg`}
           alt="Mensaje de estado información"
           width="800"
           height="280"
@@ -100,7 +101,7 @@ const SECTION_UX = [
           consecuencia de una acción clave dentro del flujo.
         </p>
         <Image
-          src={`${basePath}/images/mensaje_de_estado/mensaje_advertencia.svg`}
+          src={`${basePath}/images/status_message/warning.svg`}
           alt="Mensaje de estado advertencia"
           width="800"
           height="280"
@@ -114,7 +115,7 @@ const SECTION_UX = [
           Se utiliza para comunicar que el proceso no se pudo completar, e indica los pasos a seguir para solucionarlo.
         </p>
         <Image
-          src={`${basePath}/images/mensaje_de_estado/mensaje_error.svg`}
+          src={`${basePath}/images/status_message/error.svg`}
           alt="Mensaje de estado error"
           width="800"
           height="280"
@@ -132,7 +133,7 @@ const SECTION_UX = [
           evitar sobrecargar a la persona usuaria con información.
         </p>
         <Image
-          src={`${basePath}/images/mensaje_de_estado/disposicion.svg`}
+          src={`${basePath}/images/status_message/disposition.svg`}
           alt="Disposición"
           width="800"
           height="280"
@@ -151,7 +152,7 @@ const SECTION_UX = [
         </p>
         <div className="col">
           <Image
-            src={`${basePath}/images/mensaje_de_estado/contenido_correcto.svg`}
+            src={`${basePath}/images/status_message/content_correct.svg`}
             alt="Buena práctica de contenido"
             width="800"
             height="280"
@@ -167,7 +168,7 @@ const SECTION_UX = [
         </div>
         <div className="col">
           <Image
-            src={`${basePath}/images/mensaje_de_estado/contenido_incorrecto.svg`}
+            src={`${basePath}/images/status_message/content_error.svg`}
             alt="Mala práctica de contenido"
             width="800"
             height="280"
@@ -201,7 +202,7 @@ const SECTION_UX = [
         </ul>
         <div className="col">
           <Image
-            src={`${basePath}/images/mensaje_de_estado/accionable_correcto.svg`}
+            src={`${basePath}/images/status_message/actionable_proper_usage.svg`}
             alt="Buena práctica de accionable"
             width="800"
             height="280"
@@ -215,7 +216,7 @@ const SECTION_UX = [
         </div>
         <div className="col">
           <Image
-            src={`${basePath}/images/mensaje_de_estado/accionable_incorrecto.svg`}
+            src={`${basePath}/images/status_message/actionable_improper_usage.svg`}
             alt="Mala práctica de accionable"
             width="800"
             height="280"
@@ -240,7 +241,7 @@ const SECTION_UX = [
         </p>
         <div className="col">
           <Image
-            src={`${basePath}/images/mensaje_de_estado/colores_semanticos_iconos.svg`}
+            src={`${basePath}/images/status_message/semantic_colors_icons.svg`}
             alt="Mala práctica de colores semanticos"
             width="800"
             height="280"
@@ -269,7 +270,7 @@ const SECTION_UX = [
         </p>
         <div className="col">
           <Image
-            src={`${basePath}/images/mensaje_de_estado/patron_de_uso_1.svg`}
+            src={`${basePath}/images/status_message/pattern_usage_1.svg`}
             alt="Patrón de uso paso 1"
             width="800"
             height="280"
@@ -281,7 +282,7 @@ const SECTION_UX = [
         </div>
         <div className="col">
           <Image
-            src={`${basePath}/images/mensaje_de_estado/patron_de_uso_2.svg`}
+            src={`${basePath}/images/status_message/pattern_usage_2.svg`}
             alt="Patrón de uso paso 2"
             width="800"
             height="280"
@@ -296,7 +297,7 @@ const SECTION_UX = [
         </div>
         <div className="col">
           <Image
-            src={`${basePath}/images/mensaje_de_estado/patron_de_uso_3.svg`}
+            src={`${basePath}/images/status_message/pattern_usage_3.svg`}
             alt="Patrón de uso paso 3"
             width="800"
             height="280"
@@ -516,7 +517,7 @@ const SPECS = [
     content: (
       <>
         <Image
-          src={`${basePath}/images/mensaje_de_estado/anatomia.svg`}
+          src={`${basePath}/images/status_message/anatomy.svg`}
           alt="Anatomia del mensaje de estado"
           width="800"
           height="280"
@@ -579,7 +580,7 @@ const SPECS = [
           izquierda a derecha.
         </p>
         <Image
-          src={`${basePath}/images/mensaje_de_estado/variante_desktop.svg`}
+          src={`${basePath}/images/status_message/desktop_variant.svg`}
           alt="Variante desktop de mensaje de estado"
           width="800"
           height="280"
@@ -602,7 +603,7 @@ const SPECS = [
           usabilidad de los accionables, los botones siguen la alineación en columna y de ancho completo.
         </p>
         <Image
-          src={`${basePath}/images/mensaje_de_estado/variante_mobile.svg`}
+          src={`${basePath}/images/status_message/mobile_variant.svg`}
           alt="Variante mobile de mensaje de estado"
           width="800"
           height="280"
@@ -633,7 +634,7 @@ const SPECS = [
     content: (
       <>
         <Image
-          src={`${basePath}/images/mensaje_de_estado/espaciado_desktop.svg`}
+          src={`${basePath}/images/status_message/desktop_spacing.svg`}
           alt="Espaciado desktop de mensaje de estado"
           width="800"
           height="280"
@@ -651,7 +652,7 @@ const SPECS = [
     content: (
       <>
         <Image
-          src={`${basePath}/images/mensaje_de_estado/espaciado_mobile.svg`}
+          src={`${basePath}/images/status_message/mobile_spacing.svg`}
           alt="Espaciado mobile de mensaje de estado"
           width="800"
           height="280"
@@ -679,7 +680,7 @@ const ACCESSIBILITY = [
         </p>
 
         <Image
-          src={`${basePath}/images/mensaje_de_estado/navegacion_alternativa.svg`}
+          src={`${basePath}/images/status_message/alternative_navigation.svg`}
           alt="Navegacion alternativa del botón"
           width="738"
           height="400"
@@ -692,98 +693,16 @@ const ACCESSIBILITY = [
     title: 'Criterios WCAG aplicados',
     content: (
       <>
-        <a
-          className="external mb-2"
-          href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Success Criterion 1.4.11 Non-Text Contrast (Level AA)
-        </a>
-        <p>
-          La presentación visual de elementos de la interfaz de usuario y objetos gráficos tiene por lo menos una
-          relación de contraste de 3:1 con respecto a los colores adyacentes.
-        </p>
-
-        <a
-          className="external mb-2"
-          href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Success Criterion 1.4.3 Contrast (Minimum) (Level AA)
-        </a>
-        <p>
-          La presentación visual de texto y de imágenes de texto tiene una relación de contraste de por lo menos 4.5:1,
-          excepto textos grandes e imágenes de texto grande que tienen un contraste de por lo menos 3:1, textos o
-          imágenes que son parte de un componente inactivo de interfaz de usuario o son pura decoración, o logotipos.
-        </p>
-
-        <a
-          className="external mb-2"
-          href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Success Criterion 2.1.1 Keyboard (Level A)
-        </a>
-        <p>Todas las funcionalidades del contenido se puede operar a través de una interfaz de teclado.</p>
-
-        <a
-          className="external mb-2"
-          href="https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Success Criterion 2.1.2 No Keyboard Trap (Level A)
-        </a>
-        <p>
-          Si el foco del teclado puede moverse a un componente de la página utilizando una interfaz de teclado, también
-          debe ser posible mover el foco fuera de ese componente usando únicamente la misma interfaz de teclado. Si se
-          requiere algo más que las teclas de flecha, tabulador u otros métodos estándar para salir, se debe informar al
-          usuario sobre el método necesario para mover el foco.
-        </p>
-
-        <a
-          className="external mb-2"
-          href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Success Criterion 2.4.7 Focus Visible (Level AA)
-        </a>
-        <p>
-          Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque
-          del teclado es visible.
-        </p>
-
-        <a
-          className="external mb-2"
-          href="https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Success Criterion 2.4.3 Focus Order (Level A)
-        </a>
-        <p>
-          Si una página web puede navegarse de forma secuencial y las secuencias de navegación afectan el significado o
-          la operación, los componentes enfocables reciben el foco en un orden que preserve el significado y la
-          operabilidad.
-        </p>
-
-        <a
-          className="external mb-2"
-          href="https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html#dfn-link-purpose"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Success Criterion 2.4.4 Link Purpose (In Context) (Level A)
-        </a>
-        <p>
-          El propósito de cada enlace debe ser determinado solo con el texto del enlace o con el texto del enlace junto
-          con su contexto determinado de forma programática, excepto en los casos en los que el propósito del enlace sea
-          ambiguo para los usuarios en general.
-        </p>
+        <CriteriosWCAG
+          list={['1.4.11', '1.4.3', '2.1.1', '2.1.2', '2.4.7', '2.4.3', '2.4.4']}
+          customItem={[
+            {
+              customId: '2.4.7',
+              customDescripcion:
+                'Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque del teclado es visible.',
+            },
+          ]}
+        />
       </>
     ),
   },
@@ -804,7 +723,7 @@ const StatusMessageDocs: React.FC = () => {
         customSections={[
           {
             title: 'Especificaciones',
-            id: 'section-specs',
+            id: 'specs',
             sectionContent: SPECS,
           },
           {

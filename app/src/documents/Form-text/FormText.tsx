@@ -1,12 +1,14 @@
+// Hoja de rutas: app/src/documents/Form-text/FormText.tsx
+import { basePath } from '@/utils';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import CodeBox from '@/components/CodeBox';
+import CriteriosWCAG from '@/components/CriteriosWCAG';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
-const basePath = '/Obelisco-V2';
 
 import {
   INPUT_BACKGROUND,
@@ -377,7 +379,7 @@ const FormTextDocs: React.FC = () => {
             números de teléfonos.
           </p>
           <Image
-            src={`${basePath}/images/form_text/campo_de_texto.svg`}
+            src={`${basePath}/images/form_text/text_field.svg`}
             alt="Ejemplo visual de campo de texto"
             width="800"
             height="200"
@@ -496,7 +498,7 @@ const FormTextDocs: React.FC = () => {
           <p className="text-xl">Ejemplos de uso de prefijos</p>
           <div className="col mb-4">
             <Image
-              src={`${basePath}/images/form_text/ejemplo_de_uso_de_prefijos_incorrecto.svg`}
+              src={`${basePath}/images/form_text/prefix_imporper_usage.svg`}
               alt="Mala práctica de uso de prefijos"
               width="800"
               height="280"
@@ -510,7 +512,7 @@ const FormTextDocs: React.FC = () => {
           </div>
           <div className="col">
             <Image
-              src={`${basePath}/images/form_text/ejemplo_de_uso_de_prefijos_correcto.svg`}
+              src={`${basePath}/images/form_text/prefix_proper_usage.svg`}
               alt="Buena práctica de uso de prefijos"
               width="800"
               height="280"
@@ -530,7 +532,7 @@ const FormTextDocs: React.FC = () => {
           </p>
           <div className="col mb-4">
             <Image
-              src={`${basePath}/images/form_text/ejemplo_de_uso_de_sufijos_incorrecto.svg`}
+              src={`${basePath}/images/form_text/suffix_imporper_usage.svg`}
               alt="Buena práctica de uso de sufijos"
               width="800"
               height="280"
@@ -544,7 +546,7 @@ const FormTextDocs: React.FC = () => {
           </div>
           <div className="col">
             <Image
-              src={`${basePath}/images/form_text/ejemplo_de_uso_de_sufijos_correcto.svg`}
+              src={`${basePath}/images/form_text/suffix_proper_usage.svg`}
               alt="Buena práctica de uso de sufijos"
               width="800"
               height="280"
@@ -583,14 +585,14 @@ const FormTextDocs: React.FC = () => {
           {/* imgs */}
           <p className="text-xl mt-4">Ejemplos de uso</p>
           <Image
-            src={`${basePath}/images/form_text/ej_de_uso_accionables_1.svg`}
+            src={`${basePath}/images/form_text/actionable_usage_1.svg`}
             alt="Ejemplo de uso de accionables 1"
             width="800"
             height="280"
             className="img-fluid"
           ></Image>
           <Image
-            src={`${basePath}/images/form_text/ej_de_uso_accionables_2.svg`}
+            src={`${basePath}/images/form_text/actionable_usage_2.svg`}
             alt="Ejemplo de uso de accionables 2"
             width="800"
             height="280"
@@ -627,7 +629,7 @@ const FormTextDocs: React.FC = () => {
             {/* 1 */}
             <div className="col">
               <Image
-                src={`${basePath}/images/form_text/mns_de_error_ej_de_uso_incorrecto.svg`}
+                src={`${basePath}/images/form_text/error_msg_imporper_usage.svg`}
                 alt="Mala práctica en mensaje de error en formularios"
                 width="800"
                 height="242"
@@ -641,7 +643,7 @@ const FormTextDocs: React.FC = () => {
             {/* 2 */}
             <div className="col">
               <Image
-                src={`${basePath}/images/form_text/mns_de_error_ej_de_uso_correcto.svg`}
+                src={`${basePath}/images/form_text/error_msg_proper_usage.svg`}
                 alt="Buena práctica en mensaje de error en formularios"
                 width="800"
                 height="242"
@@ -666,7 +668,7 @@ const FormTextDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/form_text/area_de_texto.svg`}
+            src={`${basePath}/images/form_text/text_area.svg`}
             alt="Ejemplo visual de campo de area de texto"
             width="800"
             height="200"
@@ -708,7 +710,7 @@ const FormTextDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/form_text/indicador.svg`}
+            src={`${basePath}/images/form_text/indicator.svg`}
             alt="Ejemplo visual de indicador de requerido y opcional"
             width="800"
             height="200"
@@ -738,7 +740,7 @@ const FormTextDocs: React.FC = () => {
             </li>
           </ul>
           <Image
-            src={`${basePath}/images/form_text/ancho_minimo_maximo.svg`}
+            src={`${basePath}/images/form_text/max_min_width.svg`}
             alt="Ejemplo visual de ancho mínimo y máximo, indicando columnas"
             width="800"
             height="200"
@@ -789,7 +791,7 @@ const FormTextDocs: React.FC = () => {
       content: (
         <>
           <Image
-            src={`${basePath}/images/form_text/anatomia_input_text.svg`}
+            src={`${basePath}/images/form_text/anatomy.svg`}
             alt="Anatomia del input de texto"
             width="800"
             height="280"
@@ -875,7 +877,7 @@ const FormTextDocs: React.FC = () => {
           </p>
           <p className="text-md">Estado predeterminado del campo de texto en una interfaz. </p>
           <Image
-            src={`${basePath}/images/form_text/estado_default.svg`}
+            src={`${basePath}/images/form_text/default_state.svg`}
             alt="Estado predeterminado del input de texto"
             width="800"
             height="280"
@@ -891,7 +893,7 @@ const FormTextDocs: React.FC = () => {
             Obelisco se utiliza un borde o anillo (focus ring) por fuera del componente en un color distintivo.{' '}
           </p>
           <Image
-            src={`${basePath}/images/form_text/estado_en_foco.svg`}
+            src={`${basePath}/images/form_text/focus_state.svg`}
             alt="Estado en foco del input de texto"
             width="800"
             height="280"
@@ -901,7 +903,7 @@ const FormTextDocs: React.FC = () => {
           <p className="text-xl">Activo</p>
           <p className="text-md">Cuando un usuario está escribiendo contenido activamente en el campo.</p>
           <Image
-            src={`${basePath}/images/form_text/estado_activo.svg`}
+            src={`${basePath}/images/form_text/atvice_state.svg`}
             alt="Estado activo del input de texto"
             width="800"
             height="280"
@@ -911,7 +913,7 @@ const FormTextDocs: React.FC = () => {
           <p className="text-xl">Completado</p>
           <p className="text-md">Indica que la persona usuaria ingresó información válida en el campo de texto.</p>
           <Image
-            src={`${basePath}/images/form_text/estado_completado.svg`}
+            src={`${basePath}/images/form_text/completed_state.svg`}
             alt="Estado activo del input de texto"
             width="800"
             height="280"
@@ -925,7 +927,7 @@ const FormTextDocs: React.FC = () => {
             puedan identificar y corregir errores fácilmente, cumpliendo con las pautas de accesibilidad (WCAG).
           </p>
           <Image
-            src={`${basePath}/images/form_text/estado_error.svg`}
+            src={`${basePath}/images/form_text/error_state.svg`}
             alt="Estado de error del input de texto"
             width="800"
             height="280"
@@ -940,7 +942,7 @@ const FormTextDocs: React.FC = () => {
             puede activarse.
           </p>
           <Image
-            src={`${basePath}/images/form_text/estado_deshabilitado.svg`}
+            src={`${basePath}/images/form_text/disabled_state.svg`}
             alt="Estado deshabilitado del input de texto"
             width="800"
             height="280"
@@ -1004,111 +1006,7 @@ const FormTextDocs: React.FC = () => {
       title: 'Criterios WCAG aplicados',
       content: (
         <>
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.1.1 Non-text Content (Level A){' '}
-          </a>
-          <p>
-            Si el campo tiene un ícono decorativo, por ejemplo, un ícono de búsqueda, debe tener una alternativa textual
-            o estar marcado como decorativo (aria-hidden=&quot;true&quot; o role=&quot;presentation&quot;).
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.3.1 Info and Relationships (Level A)
-          </a>
-          <p>
-            La información, la estructura y las relaciones transmitidas a través de la presentación pueden determinarse
-            mediante programación o están disponibles en el texto.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.4.11 Non-Text Contrast (Level AA){' '}
-          </a>
-          <p>
-            La presentación visual de elementos de la interfaz de usuario y objetos gráficos tiene por lo menos una
-            relación de contraste de 3:1 con respecto a los colores adyacentes.{' '}
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.1.1 Keyboard (Level A){' '}
-          </a>
-          <p>Todas las funcionalidades del contenido se puede operar a través de una interfaz de teclado.</p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.4.6 Headings and Labels (Level AA){' '}
-          </a>
-          <p>
-            Si se utilizan encabezados o etiquetas, deben describir con precisión el propósito o contenido al que se
-            refieren. Esto facilita la comprensión y navegación del contenido, especialmente para personas con
-            discapacidades cognitivas o que utilizan lectores de pantalla.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.htmll"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.4.7 Focus Visible (Level AA){' '}
-          </a>
-          <p>
-            Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque
-            del teclado es visible. Cuando utiliza un teclado para navegar por los checkboxs, los enlaces tienen un
-            subrayado visible y un recuadro outline que indica que los enlaces son interactivos.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 3.3.2 Labels or Instructions (Level A){' '}
-          </a>
-          <p>
-            Asegúrese de que todo el texto de ayuda y los mensajes de error proporcionen asistencia significativa para
-            ayudar a los usuarios a evitar o corregir errores.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 4.1.2 Name, Role, Value (Level A){' '}
-          </a>
-          <p>
-            Para todos los componentes de la interfaz de usuario (incluidos, entre otros: elementos de formulario,
-            enlaces y componentes generados por scripts), el nombre y la función se pueden determinar mediante
-            programación; los estados, propiedades y valores que puede establecer el usuario se pueden configurar
-            mediante programación; y la notificación de cambios en estos elementos está disponible para los agentes de
-            usuario, incluidas las tecnologías de asistencia.
-          </p>
+          <CriteriosWCAG list={['1.1.1', '1.3.1', '1.4.11', '1.4.4', '2.1.1', '2.4.6', '2.4.7', '3.3.2', '4.1.2']} />
         </>
       ),
     },
@@ -1128,7 +1026,7 @@ const FormTextDocs: React.FC = () => {
         customSections={[
           {
             title: 'Especificaciones',
-            id: 'section-specs',
+            id: 'specs',
             sectionContent: SPECS,
           },
           {

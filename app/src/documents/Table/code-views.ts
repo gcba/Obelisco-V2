@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Table/code-views.ts
 export const WITHOUT_DIVIDERS = `
 <div class="responsive-scroll" tabIndex="0">
     <table class="table table-borderless">

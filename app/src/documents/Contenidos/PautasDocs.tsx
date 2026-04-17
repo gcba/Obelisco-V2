@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Contenidos/PautasDocs.tsx
 import ComponentHeader from '@/components/Template/ComponentHeader';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 

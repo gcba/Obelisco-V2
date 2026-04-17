@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Card/code-views.ts
 // HORIZONTALES
 export const HORIZONTAL_ICON = `
 <div class="card card-horizontal">

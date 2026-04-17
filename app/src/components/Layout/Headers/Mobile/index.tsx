@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/components/Layout/Headers/Mobile/index.tsx
 import React, { useEffect, useState } from 'react';
 
 import Drawer from '../../../Drawer/index';

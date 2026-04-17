@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Templates/TemplateFormularioMultipagina.tsx
 'use client';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -9,7 +10,7 @@ import ComponentHeader from '@/components/Template/ComponentHeader';
 import { TEMPLATE_FORM_MULTIPAGINA } from './code-views';
 
 const TemplateFormularioMultipagina: React.FC = () => {
-  const [activeTab, setActiveTab] = useState('panel-content-html');
+  const [activeTab, setActiveTab] = useState('content-html');
 
   return (
     <>
@@ -44,14 +45,14 @@ const TemplateFormularioMultipagina: React.FC = () => {
       <div>
         <nav className="tabs-box" aria-label="Navegación por pestañas">
           <ul className="nav nav-pills nav-box tabs p-0" role="tablist">
-            <TabItem id={`panel-content-html`} title={'Código'} activeTab={activeTab} setActiveTab={setActiveTab} />
+            <TabItem id={`content-html`} title={'Código'} activeTab={activeTab} setActiveTab={setActiveTab} />
           </ul>
         </nav>
 
         <hr className="mt-0 mb-4" />
 
         <div className="tab-content" style={{ paddingTop: '32px' }}>
-          <TabPanel id={`panel-content-html`} activeTab={activeTab}>
+          <TabPanel id={`content-html`} activeTab={activeTab}>
             <CodeViewTemplate template={TEMPLATE_FORM_MULTIPAGINA} />
           </TabPanel>
         </div>

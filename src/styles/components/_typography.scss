@@ -1,3 +1,5 @@
+// src/styles/components/_typography.scss - Estilos de tipografia
+
 // Estilos de headings de h1 a h6
 @each $i, $styles in $heading-styles {
   .h#{$i},

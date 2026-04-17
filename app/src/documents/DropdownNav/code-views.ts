@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/DropdownNav/code-views.ts
 export const DROPDOWN = `
   <div class="dropdown">
     <button

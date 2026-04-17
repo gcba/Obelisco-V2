@@ -1,11 +1,12 @@
+// Hoja de rutas: app/src/documents/Access/AccessDocs.tsx
+import { basePath } from '@/utils';
 import Image from 'next/image';
 import React from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-const basePath = '/Obelisco-V2';
-
 import CodeBox from '@/components/CodeBox';
+import CriteriosWCAG from '@/components/CriteriosWCAG';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
@@ -515,7 +516,7 @@ const SECTION_UX = [
           adaptarlo correctamente en forma de lista.
         </p>
         <Image
-          src={`${basePath}/images/access/accesos_vertical.svg`}
+          src={`${basePath}/images/access/vertical.svg`}
           alt="Tamaños de botones"
           width="800"
           height="200"
@@ -527,7 +528,7 @@ const SECTION_UX = [
           &quot;list-group&quot; y &quot;list-group-row&quot;.
         </p>
         <Image
-          src={`${basePath}/images/access/accesos_horizontal.svg`}
+          src={`${basePath}/images/access/horizontal.svg`}
           alt="Tamaños de botones"
           width="800"
           height="200"
@@ -548,7 +549,7 @@ const SECTION_UX = [
 
         <div className="col">
           <Image
-            src={`${basePath}/images/access/accesos_ej_de_uso_correcto.svg`}
+            src={`${basePath}/images/access/eg_proper_use.svg`}
             alt="Ejemplo de cómo sí usar los accesos"
             width="800"
             height="200"
@@ -563,7 +564,7 @@ const SECTION_UX = [
         </div>
         <div className="col">
           <Image
-            src={`${basePath}/images/access/accesos_ej_de_uso_incorrecto.svg`}
+            src={`${basePath}/images/access/eg_imporper_use.svg`}
             alt="Ejemplo de cómo no usar los accesos"
             width="800"
             height="200"
@@ -586,7 +587,7 @@ const SPECS = [
     content: (
       <>
         <Image
-          src={`${basePath}/images/access/accesos_anatomia.svg`}
+          src={`${basePath}/images/access/anatomy.svg`}
           alt="Anatomia del acceso"
           width="800"
           height="280"
@@ -646,7 +647,7 @@ const SPECS = [
           Se utilizan para componer organismos donde se establezcan múltiples accesos dentro de un mismo contenedor.
         </p>
         <Image
-          src={`${basePath}/images/access/accesos_variantes.svg`}
+          src={`${basePath}/images/access/variants.svg`}
           alt="Acceso sin borde"
           width="800"
           height="280"
@@ -664,7 +665,7 @@ const SPECS = [
           generando agrupaciones de una misma temática.
         </p>
         <Image
-          src={`${basePath}/images/access/accesos_con_borde.svg`}
+          src={`${basePath}/images/access/with_border.svg`}
           alt="Acceso con borde"
           width="800"
           height="280"
@@ -682,7 +683,7 @@ const SPECS = [
           usuaria a comprender mejor la acción a realizar.
         </p>
         <Image
-          src={`${basePath}/images/access/accesos_con_descripcion.svg`}
+          src={`${basePath}/images/access/with_description.svg`}
           alt="Acceso Con descripción"
           width="800"
           height="280"
@@ -700,7 +701,7 @@ const SPECS = [
           a tomar una decisión.
         </p>
         <Image
-          src={`${basePath}/images/access/accesos_con_icono.svg`}
+          src={`${basePath}/images/access/with_icon.svg`}
           alt="Acceso Con ícono"
           width="800"
           height="280"
@@ -714,7 +715,7 @@ const SPECS = [
     content: (
       <>
         <Image
-          src={`${basePath}/images/access/accesos_tamaños.svg`}
+          src={`${basePath}/images/access/sizes.svg`}
           alt="Acceso tamaños"
           width="800"
           height="280"
@@ -737,7 +738,7 @@ const SPECS = [
       <>
         <p className="text-md mb-4 mt-2">Estado predeterminado de los botones en una interfaz.</p>
         <Image
-          src={`${basePath}/images/access/accesos_default.svg`}
+          src={`${basePath}/images/access/default.svg`}
           alt="Estado predeterminado del componente acceso en una interfaz. "
           width="800"
           height="464"
@@ -756,7 +757,7 @@ const SPECS = [
       <>
         <p className="text-md mb-4">Cuando un usuario está sobre el elemento.</p>
         <Image
-          src={`${basePath}/images/access/accesos_hover.svg`}
+          src={`${basePath}/images/access/hover.svg`}
           alt="Estado sobre del boton"
           width="800"
           height="464"
@@ -779,7 +780,7 @@ const SPECS = [
           utiliza un borde o anillo (focus ring) por fuera del componente en un color distintivo.
         </p>
         <Image
-          src={`${basePath}/images/access/accesos_focus.svg`}
+          src={`${basePath}/images/access/focus.svg`}
           alt="Estado en foco del boton"
           width="800"
           height="464"
@@ -798,7 +799,7 @@ const SPECS = [
       <>
         <p className="text-md mb-4">Indica que la persona usuaria seleccionó el acceso</p>
         <Image
-          src={`${basePath}/images/access/accesos_focus.svg`}
+          src={`${basePath}/images/access/active.svg`}
           alt="Estado en foco del boton"
           width="800"
           height="464"
@@ -827,7 +828,7 @@ const ACCESSIBILITY = [
         </p>
 
         <Image
-          src={`${basePath}/images/access/accesos_accesibilidad.svg`}
+          src={`${basePath}/images/access/accessibility.svg`}
           alt="Navegacion alternativa de los accesos"
           width="738"
           height="400"
@@ -866,55 +867,7 @@ const ACCESSIBILITY = [
     title: 'Criterios WCAG aplicados',
     content: (
       <>
-        <a
-          className="external"
-          href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Success Criterion 1.3.1 Info and Relationships (Level A)
-        </a>
-        <p>
-          La información, la estructura y las relaciones transmitidas a través de la presentación pueden determinarse
-          mediante programación o están disponibles en el texto.
-        </p>
-
-        <a
-          className="external"
-          href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Success Criterion 1.4.11 Non-Text Contrast (Level AA)
-        </a>
-        <p>
-          La presentación visual de elementos de la interfaz de usuario y objetos gráficos tiene por lo menos una
-          relación de contraste de 3:1 con respecto a los colores adyacentes.{' '}
-        </p>
-
-        <a
-          className="external"
-          href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Success Criterion 2.1.1 Keyboard (Level A){' '}
-        </a>
-        <p>Todas las funcionalidades del contenido se puede operar a través de una interfaz de teclado.</p>
-
-        <a
-          className="external"
-          href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Success Criterion 2.4.7 Focus Visible (Level AA){' '}
-        </a>
-        <p>
-          Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque
-          del teclado es visible. Cuando utiliza un teclado para navegar por los componentes, los enlaces tienen un
-          subrayado visible y un recuadro <i>outline</i> que indica que los enlaces son interactivos.
-        </p>
+        <CriteriosWCAG list={['1.3.1', '1.4.11', '2.1.1', '2.4.7']} />
       </>
     ),
   },
@@ -935,7 +888,7 @@ const AccessDocs: React.FC = () => {
         customSections={[
           {
             title: 'Especificaciones',
-            id: 'section-specs',
+            id: 'specs',
             sectionContent: SPECS,
           },
           {

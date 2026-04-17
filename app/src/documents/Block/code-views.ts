@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Block/code-views.ts
 export const BLOCK = `
 <div class="block position-sticky" style="top: 48px;">
   <div class="block-body">

@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Contenidos/ComunicarDocs.tsx
 import React from 'react';
 
 import Tabs from '@/components/Tabs';

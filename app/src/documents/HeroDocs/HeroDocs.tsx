@@ -1,13 +1,15 @@
+// Hoja de rutas: app/src/documents/HeroDocs/HeroDocs.tsx
+import { basePath } from '@/utils';
 import Image from 'next/image';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import CodeBox from '@/components/CodeBox';
 // import LinkClient from '@/components/LinkClient';
+import CriteriosWCAG from '@/components/CriteriosWCAG';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
-const basePath = '/Obelisco-V2';
 import {
   HERO_COLORES,
   HERO_CON_CAMPO_BUSCADOR,
@@ -1114,7 +1116,7 @@ const HeroHeaderDocs: React.FC = () => {
             izquierda a derecha en sentido horizontal de los elementos como formas y multimedia.
           </p>
           <Image
-            src={`${basePath}/images/hero/hero_disposicion.svg`}
+            src={`${basePath}/images/hero/disposition.svg`}
             alt="Cabecera de página disposición desktop"
             width="800"
             height="200"
@@ -1131,7 +1133,7 @@ const HeroHeaderDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/hero/hero_disposicion_1.svg`}
+            src={`${basePath}/images/hero/disposition_1.svg`}
             alt="Cabecera de página disposición desktop"
             width="800"
             height="200"
@@ -1144,7 +1146,7 @@ const HeroHeaderDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/hero/hero_disposicion_2.svg`}
+            src={`${basePath}/images/hero/disposition_2.svg`}
             alt="Cabecera de página disposición desktop"
             width="800"
             height="200"
@@ -1157,7 +1159,7 @@ const HeroHeaderDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/hero/hero_disposicion_3.svg`}
+            src={`${basePath}/images/hero/disposition_3.svg`}
             alt="Cabecera de página disposición desktop"
             width="800"
             height="200"
@@ -1180,7 +1182,7 @@ const HeroHeaderDocs: React.FC = () => {
             como descripción, se van a ubicar primeros, y por debajo la multimedia.
           </p>
           <Image
-            src={`${basePath}/images/hero/hero_disposicion_4.svg`}
+            src={`${basePath}/images/hero/disposition_4.svg`}
             alt="Cabecera de página disposición tablet"
             width="800"
             height="200"
@@ -1202,7 +1204,7 @@ const HeroHeaderDocs: React.FC = () => {
             los márgenes, manteniendo una disposición vertical de la estructura.
           </p>
           <Image
-            src={`${basePath}/images/hero/hero_disposicion_5.svg`}
+            src={`${basePath}/images/hero/disposition_5.svg`}
             alt="Cabecera de página disposición mobile"
             width="800"
             height="200"
@@ -1216,7 +1218,7 @@ const HeroHeaderDocs: React.FC = () => {
       content: (
         <>
           <Image
-            src={`${basePath}/images/hero/hero_disposicion_6.svg`}
+            src={`${basePath}/images/hero/disposition_6.svg`}
             alt="Personalización"
             width="800"
             height="200"
@@ -1264,7 +1266,7 @@ const HeroHeaderDocs: React.FC = () => {
       content: (
         <>
           <Image
-            src={`${basePath}/images/hero/hero_anatomia.svg`}
+            src={`${basePath}/images/hero/anatomy.svg`}
             alt="Anatomia de la Cabecera de página"
             width="800"
             height="280"
@@ -1430,7 +1432,7 @@ const HeroHeaderDocs: React.FC = () => {
             Forma dinámica
           </p>
           <Image
-            src={`${basePath}/images/hero/hero_forma_dinamica.svg`}
+            src={`${basePath}/images/hero/dynamic.svg`}
             alt="Forma dinámica del hero"
             width="738"
             height="400"
@@ -1441,7 +1443,7 @@ const HeroHeaderDocs: React.FC = () => {
             Forma institucional
           </p>
           <Image
-            src={`${basePath}/images/hero/hero_forma_institucional.svg`}
+            src={`${basePath}/images/hero/institutional.svg`}
             alt="Forma institucional del hero"
             width="738"
             height="400"
@@ -1463,7 +1465,7 @@ const HeroHeaderDocs: React.FC = () => {
             Con imagen
           </p>
           <Image
-            src={`${basePath}/images/hero/hero_forma_con_imagen.svg`}
+            src={`${basePath}/images/hero/image_usage.svg`}
             alt="Forma con imagen del hero"
             width="738"
             height="400"
@@ -1474,7 +1476,7 @@ const HeroHeaderDocs: React.FC = () => {
             Con video
           </p>
           <Image
-            src={`${basePath}/images/hero/hero_forma_con_video.svg`}
+            src={`${basePath}/images/hero/video_usage.svg`}
             alt="Forma con video del hero"
             width="738"
             height="400"
@@ -1485,7 +1487,7 @@ const HeroHeaderDocs: React.FC = () => {
             Con gif
           </p>
           <Image
-            src={`${basePath}/images/hero/hero_forma_con_gif.svg`}
+            src={`${basePath}/images/hero/gif_usage.svg`}
             alt="Forma con gif del hero"
             width="738"
             height="400"
@@ -1508,7 +1510,7 @@ const HeroHeaderDocs: React.FC = () => {
             Con botones
           </p>
           <Image
-            src={`${basePath}/images/hero/hero_accionables_con_botones.svg`}
+            src={`${basePath}/images/hero/actions_with_buttons.svg`}
             alt="Accionables con botones del hero"
             width="738"
             height="400"
@@ -1519,7 +1521,7 @@ const HeroHeaderDocs: React.FC = () => {
             Con campo de búsqueda
           </p>
           <Image
-            src={`${basePath}/images/hero/hero_accionables_con_campo_de_busqueda.svg`}
+            src={`${basePath}/images/hero/actions_with_search_field.svg`}
             alt="Accionables con campo de búsqueda del hero"
             width="738"
             height="400"
@@ -1530,7 +1532,7 @@ const HeroHeaderDocs: React.FC = () => {
             Con desplegables de selección
           </p>
           <Image
-            src={`${basePath}/images/hero/hero_accionables_con_desplegables_de_seleccion.svg`}
+            src={`${basePath}/images/hero/actions_with_dropdowns.svg`}
             alt="Accionables con desplegables de selección del hero"
             width="738"
             height="400"
@@ -1541,7 +1543,7 @@ const HeroHeaderDocs: React.FC = () => {
             Con etiquetas
           </p>
           <Image
-            src={`${basePath}/images/hero/hero_accionables_con_etiquetas.svg`}
+            src={`${basePath}/images/hero/actions_with_tags.svg`}
             alt="Accionables con etiquetas"
             width="738"
             height="400"
@@ -1580,7 +1582,7 @@ const HeroHeaderDocs: React.FC = () => {
             <span className="badge text-bg-light py-1 px-2 text-lowercase">$hero/bg-purple</span>
           </div>
           <Image
-            src={`${basePath}/images/hero/hero_color_bg_dark.svg`}
+            src={`${basePath}/images/hero/color_bg_dark.svg`}
             alt="Modo de color dark"
             width="800"
             height="200"
@@ -1588,7 +1590,7 @@ const HeroHeaderDocs: React.FC = () => {
             style={{ marginTop: '24px' }}
           />
           <Image
-            src={`${basePath}/images/hero/hero_color_bg_light.svg`}
+            src={`${basePath}/images/hero/color_bg_light.svg`}
             alt="Modo de color light"
             width="800"
             height="200"
@@ -1596,7 +1598,7 @@ const HeroHeaderDocs: React.FC = () => {
             style={{ marginTop: '24px' }}
           />
           <Image
-            src={`${basePath}/images/hero/hero_color_cyan.svg`}
+            src={`${basePath}/images/hero/color_cyan.svg`}
             alt="Modo de color cyan"
             width="800"
             height="200"
@@ -1604,7 +1606,7 @@ const HeroHeaderDocs: React.FC = () => {
             style={{ marginTop: '24px' }}
           />
           <Image
-            src={`${basePath}/images/hero/hero_color_sky.svg`}
+            src={`${basePath}/images/hero/color_sky.svg`}
             alt="Modo de color sky"
             width="800"
             height="200"
@@ -1612,7 +1614,7 @@ const HeroHeaderDocs: React.FC = () => {
             style={{ marginTop: '24px' }}
           />
           <Image
-            src={`${basePath}/images/hero/hero_color_red.svg`}
+            src={`${basePath}/images/hero/color_red.svg`}
             alt="Modo de color red"
             width="800"
             height="200"
@@ -1620,7 +1622,7 @@ const HeroHeaderDocs: React.FC = () => {
             style={{ marginTop: '24px' }}
           />
           <Image
-            src={`${basePath}/images/hero/hero_color_yellow.svg`}
+            src={`${basePath}/images/hero/color_yellow.svg`}
             alt="Modo de color yellow"
             width="800"
             height="200"
@@ -1628,7 +1630,7 @@ const HeroHeaderDocs: React.FC = () => {
             style={{ marginTop: '24px' }}
           />
           <Image
-            src={`${basePath}/images/hero/hero_color_purple.svg`}
+            src={`${basePath}/images/hero/color_purple.svg`}
             alt="Modo de color purple"
             width="800"
             height="200"
@@ -1636,7 +1638,7 @@ const HeroHeaderDocs: React.FC = () => {
             style={{ marginTop: '24px' }}
           />
           <Image
-            src={`${basePath}/images/hero/hero_color_blue.svg`}
+            src={`${basePath}/images/hero/color_blue.svg`}
             alt="Modo de color blue"
             width="800"
             height="200"
@@ -1666,7 +1668,7 @@ const HeroHeaderDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/hero/hero_accesibilidad.svg`}
+            src={`${basePath}/images/hero/accessibility.svg`}
             alt="Navegacion alternativa de la Cabecera de página"
             width="738"
             height="400"
@@ -1707,165 +1709,21 @@ const HeroHeaderDocs: React.FC = () => {
       title: 'Criterios WCAG aplicados',
       content: (
         <>
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.3.1 Info and Relationships (Level A){' '}
-          </a>
-          <p>
-            La información, la estructura y las relaciones transmitidas a través de la presentación pueden determinarse
-            mediante programación o están disponibles en el texto.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.4.11 Non-Text Contrast (Level AA){' '}
-          </a>
-          <p>
-            La presentación visual de elementos de la interfaz de usuario y objetos gráficos tiene por lo menos una
-            relación de contraste de 3:1 con respecto a los colores adyacentes.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.4.3 Contrast (Minimum) (Level AA){' '}
-          </a>
-          <p>
-            La presentación visual de texto y de imágenes de texto tiene una relación de contraste de por lo menos
-            4.5:1, excepto textos grandes e imágenes de texto grande que tienen un contraste de por lo menos 3:1, textos
-            o imágenes que son parte de un componente inactivo de interfaz de usuario o son pura decoración, o
-            logotipos.{' '}
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/resize-text"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.4.4 Resize Text (Level AA){' '}
-          </a>
-          <p>
-            Excepto por los subtítulos e imágenes de texto, el texto puede redimensionarse hasta un 200 % sin tecnología
-            de asistencia, sin pérdida de contenido ni funcionalidad.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/reflow.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.4.10 Reflow (Level AA){' '}
-          </a>
-
-          <p>
-            El contenido puede presentarse sin pérdida de información o funcionalidad y sin necesidad de desplazarse en
-            dos dimensiones, siempre que el desplazamiento vertical se ajuste a un ancho equivalente a 320 píxeles CSS y
-            el desplazamiento horizontal a una altura equivalente a 256 píxeles CSS, excepto en aquellas partes del
-            contenido que requieran un diseño bidimensional para su uso o significado.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.1.1 Keyboard (Level A){' '}
-          </a>
-          <p>Todas las funcionalidades del contenido se puede operar a través de una interfaz de teclado.</p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.1.2 No Keyboard Trap (Level A){' '}
-          </a>
-          <p>
-            Si el foco del teclado puede moverse a un componente de la página utilizando una interfaz de teclado,
-            también debe ser posible mover el foco fuera de ese componente usando únicamente la misma interfaz de
-            teclado. Si se requiere algo más que las teclas de flecha, tabulador u otros métodos estándar para salir, se
-            debe informar al usuario sobre el método necesario para mover el foco.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html#dfn-link-purpose"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.4.4 Link Purpose (In Context) (Level A){' '}
-          </a>
-          <p>
-            El propósito de cada enlace debe ser determinado solo con el texto del enlace o con el texto del enlace
-            junto con su contexto determinado de forma programática, excepto en los casos en los que el propósito del
-            enlace sea ambiguo para los usuarios en general.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html#dfn-link-purpose"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.4.4 Link Purpose (In Context) (Level A)
-          </a>
-          <p>
-            El propósito de cada enlace debe ser determinado solo con el texto del enlace o con el texto del enlace
-            junto con su contexto determinado de forma programática, excepto en los casos en los que el propósito del
-            enlace sea ambiguo para los usuarios en general.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.4.7 Focus Visible (Level AA){' '}
-          </a>
-          <p>
-            Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque
-            del teclado es visible. Cuando utiliza un teclado para navegar por los componentes, los enlaces tienen un
-            subrayado visible y un recuadro <i>outline</i> que indica que los enlaces son interactivos.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/location.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.4.8. Location (Level AAA){' '}
-          </a>
-          <p>La información sobre la ubicación del usuario dentro de un conjunto de páginas web está disponible.</p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 3.2.3 Consistent Navigation (Level AA){' '}
-          </a>
-          <p>
-            Los mecanismos de navegación que se repiten en varias páginas web dentro de un conjunto de páginas aparecen
-            en el mismo orden relativo cada vez que se repiten, a menos que el usuario inicie un cambio.{' '}
-          </p>
+          <CriteriosWCAG
+            list={['1.3.1', '1.4.11', '1.4.3', '1.4.4', '1.4.10', '2.1.1', '2.1.2', '2.4.4', '2.4.7', '2.4.8', '3.2.3']}
+            customItem={[
+              {
+                customId: '2.4.8',
+                customDescripcion:
+                  'La información sobre la ubicación del usuario dentro de un conjunto de páginas web está disponible.',
+              },
+              {
+                customId: '3.2.3',
+                customDescripcion:
+                  'Los mecanismos de navegación que se repiten en varias páginas web dentro de un conjunto de páginas aparecen en el mismo orden relativo cada vez que se repiten, a menos que el usuario inicie un cambio.',
+              },
+            ]}
+          />
         </>
       ),
     },
@@ -1885,7 +1743,7 @@ const HeroHeaderDocs: React.FC = () => {
         customSections={[
           {
             title: 'Especificaciones',
-            id: 'section-specs',
+            id: 'specs',
             sectionContent: SPECS,
           },
           {

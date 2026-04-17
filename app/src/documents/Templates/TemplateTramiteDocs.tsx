@@ -1,4 +1,6 @@
+// Hoja de rutas: app/src/documents/Templates/TemplateTramiteDocs.tsx
 'use client';
+import { basePath } from '@/utils';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -9,8 +11,6 @@ import ComponentHeader from '@/components/Template/ComponentHeader';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 
 import { TEMPLATE_TRAMITES } from './code-views';
-
-const basePath = '/Obelisco-V2';
 
 const SECTIONS_UX = [
   {
@@ -40,7 +40,7 @@ const SECTIONS_UX = [
         <Image
           width={500}
           height={300}
-          src={`${basePath}/images/templates/tramites/ejemplo_incluir_en_pagina.svg`}
+          src={`${basePath}/images/templates/procedure/page_include.svg`}
           alt="Ejemplo de lo que puede incluir una página de tramite"
           className="img-fluid mb-4"
         />
@@ -80,7 +80,7 @@ const SECTIONS_UX = [
         <Image
           width={500}
           height={300}
-          src={`${basePath}/images/templates/tramites/estado_del_tramite.svg`}
+          src={`${basePath}/images/templates/procedure/status.svg`}
           className="img-fluid"
           alt="Imagen del bloque de trámite"
         />
@@ -103,7 +103,7 @@ const SECTIONS_UX = [
         <Image
           width={500}
           height={300}
-          src={`${basePath}/images/templates/tramites/subtitulo_con_lista_de_requisitos.png`}
+          src={`${basePath}/images/templates/procedure/requirements.png`}
           className="img-fluid mb-3 mt-3"
           alt="Imagen de lista informativa"
           style={{ border: '2px solid #e6ebf0', borderRadius: '5px' }}
@@ -160,7 +160,7 @@ const SECTIONS_UX = [
         <Image
           width={500}
           height={300}
-          src={`${basePath}/images/templates/tramites/lista_de_pasos.png  `}
+          src={`${basePath}/images/templates/procedure/steps_list.png  `}
           className="img-fluid mb-4"
           alt="Imagen de lista de pasos"
           style={{ border: '2px solid #e6ebf0', borderRadius: '5px' }}
@@ -227,7 +227,7 @@ const SECTIONS_UX = [
         <Image
           width={500}
           height={300}
-          src={`${basePath}/images/templates/tramites/costos_del_tramite.svg`}
+          src={`${basePath}/images/templates/procedure/costs.svg`}
           className="img-fluid border-imgs mb-4"
           alt="Imagen de costos del tramite"
         />
@@ -300,7 +300,7 @@ const SECTIONS_UX = [
         <Image
           width={500}
           height={300}
-          src={`${basePath}/images/templates/tramites/colapsables.svg`}
+          src={`${basePath}/images/templates/procedure/collapse.svg`}
           className="img-fluid border-imgs mb-4"
           alt="Imagen de colapsables"
         />
@@ -375,7 +375,7 @@ const SECTIONS_UX = [
         <Image
           width={500}
           height={300}
-          src={`${basePath}/images/templates/tramites/info_adicional.svg`}
+          src={`${basePath}/images/templates/procedure/additional_info.svg`}
           className="img-fluid border-imgs mb-4"
           alt="Imagen de información adicional"
         />
@@ -449,7 +449,7 @@ const SECTIONS_UX = [
           width={500}
           height={300}
           className="img-fluid border-imgs mb-4"
-          src={`${basePath}/images/templates/tramites/descargables.png`}
+          src={`${basePath}/images/templates/procedure/downloadable.png`}
           alt="Ejemplo de links descargables"
           style={{ border: '2px solid #e6ebf0', borderRadius: '5px' }}
         />
@@ -503,7 +503,7 @@ const SECTIONS_UX = [
           width={300}
           height={100}
           className="img-fluid mb-4 border-imgs"
-          src={`${basePath}/images/templates/tramites/normativa.png`}
+          src={`${basePath}/images/templates/procedure/normative.png`}
           alt="Ejemplo de nro de normativa"
           style={{ border: '2px solid #e6ebf0', borderRadius: '5px' }}
         />
@@ -546,7 +546,7 @@ const SECTIONS_UX = [
           width={600}
           height={400}
           className="img-fluid mb-4"
-          src={`${basePath}/images/templates/tramites/organismo_responsable.png`}
+          src={`${basePath}/images/templates/procedure/responsible_organization.png`}
           alt="Ejemplo de organismo responsable"
           style={{ border: '2px solid #e6ebf0', borderRadius: '5px' }}
         />
@@ -637,7 +637,7 @@ const SECTIONS_UX = [
 ];
 
 const TemplateTramiteDocs: React.FC = () => {
-  const [activeTab, setActiveTab] = useState('panel-content-docs');
+  const [activeTab, setActiveTab] = useState('content-docs');
 
   return (
     <>
@@ -671,24 +671,19 @@ const TemplateTramiteDocs: React.FC = () => {
       <div>
         <nav className="tabs-box" aria-label="Navegación por pestañas">
           <ul className="nav nav-pills nav-box tabs p-0" role="tablist">
-            <TabItem
-              id={`panel-content-docs`}
-              title={'Especificaciones'}
-              activeTab={activeTab}
-              setActiveTab={setActiveTab}
-            />
-            <TabItem id={`panel-content-html`} title={'Código'} activeTab={activeTab} setActiveTab={setActiveTab} />
+            <TabItem id={`content-docs`} title={'Especificaciones'} activeTab={activeTab} setActiveTab={setActiveTab} />
+            <TabItem id={`content-html`} title={'Código'} activeTab={activeTab} setActiveTab={setActiveTab} />
           </ul>
         </nav>
 
         <hr className="mt-0 mb-4" />
 
         <div className="tab-content" style={{ paddingTop: '32px' }}>
-          <TabPanel id={`panel-content-docs`} activeTab={activeTab}>
+          <TabPanel id={`content-docs`} activeTab={activeTab}>
             <DocumentationTemplate sections={SECTIONS_UX} type="ux" />
           </TabPanel>
 
-          <TabPanel id={`panel-content-html`} activeTab={activeTab}>
+          <TabPanel id={`content-html`} activeTab={activeTab}>
             <CodeViewTemplate template={TEMPLATE_TRAMITES} />
           </TabPanel>
         </div>

@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Switch/code-views.ts
 export const SwitchTypes = `<label class="switch" for="switch-1">
   <input type="checkbox" id="switch-1" />
   <span class="slider"></span>

@@ -1,12 +1,14 @@
+// Hoja de rutas: app/src/documents/Breadcrumb/BreadcrumbDocs.tsx
+import { basePath } from '@/utils';
 import Image from 'next/image';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import CodeBox from '@/components/CodeBox';
+import CriteriosWCAG from '@/components/CriteriosWCAG';
 import LinkClient from '@/components/LinkClient';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
-const basePath = '/Obelisco-V2';
 
 import { BREADCRUMB, BREADCRUMB_DARK, BREADCRUMB_ACCESSIBILTY } from './code-views';
 
@@ -116,7 +118,7 @@ const BreadcrumbDocs: React.FC = () => {
             encima del título H1.
           </p>
           <Image
-            src={`${basePath}/images/migas_de_pan/migas_de_pan_disposicion.svg`}
+            src={`${basePath}/images/breadcrumb/disposition.svg`}
             alt="Migas de pan disposición"
             width="800"
             height="200"
@@ -137,7 +139,7 @@ const BreadcrumbDocs: React.FC = () => {
             agrega tres puntos (…) al final para visualizar que hay más texto en ese nivel.
           </p>
           <Image
-            src={`${basePath}/images/migas_de_pan/migas_de_pan_contenido.svg`}
+            src={`${basePath}/images/breadcrumb/content.svg`}
             alt="Migas de pan basado en el ancho"
             width="800"
             height="200"
@@ -156,7 +158,7 @@ const BreadcrumbDocs: React.FC = () => {
         <>
           <p className="text-md mb-4">Las migas de pan tienen una composición diferente dependiendo de la variante.</p>
           <Image
-            src={`${basePath}/images/migas_de_pan/migas_de_pan_anatomia.svg`}
+            src={`${basePath}/images/breadcrumb/anatomy.svg`}
             alt="Anatomia del botón"
             width="800"
             height="280"
@@ -214,7 +216,7 @@ const BreadcrumbDocs: React.FC = () => {
             Puede estar compuesta por hasta 4 enlaces de ancla, que representan el camino de la persona usuaria.{' '}
           </p>
           <Image
-            src={`${basePath}/images/migas_de_pan/migas_de_pan_variantes_desktop.svg`}
+            src={`${basePath}/images/breadcrumb/desktop.svg`}
             alt="Migas de Pan variante desktop"
             width="800"
             height="464"
@@ -237,7 +239,7 @@ const BreadcrumbDocs: React.FC = () => {
             encuentra la persona usuaria, y sirve para volver un paso hacia atrás.
           </p>
           <Image
-            src={`${basePath}/images/migas_de_pan/migas_de_pan_variantes_mobile.svg`}
+            src={`${basePath}/images/breadcrumb/mobile.svg`}
             alt="Estado sobre del boton"
             width="800"
             height="464"
@@ -267,7 +269,7 @@ const BreadcrumbDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/migas_de_pan/migas_de_pan_accesibilidad.svg`}
+            src={`${basePath}/images/breadcrumb/accessibility.svg`}
             alt="Navegacion alternativa de las migas de pan"
             width="738"
             height="400"
@@ -296,93 +298,7 @@ const BreadcrumbDocs: React.FC = () => {
       title: 'Criterios WCAG aplicados',
       content: (
         <>
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.4.11 Non-Text Contrast (Level AA)
-          </a>
-          <p>
-            La presentación visual de elementos de la interfaz de usuario y objetos gráficos tiene por lo menos una
-            relación de contraste de 3:1 con respecto a los colores adyacentes.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.4.3 Contrast (Minimum) (Level AA)
-          </a>
-          <p>
-            La presentación visual de texto y de imágenes de texto tiene una relación de contraste de por lo menos
-            4.5:1, excepto textos grandes e imágenes de texto grande que tienen un contraste de por lo menos 3:1, textos
-            o imágenes que son parte de un componente inactivo de interfaz de usuario o son pura decoración, o
-            logotipos.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.1.1 Keyboard (Level A)
-          </a>
-          <p>Todas las funcionalidades del contenido se puede operar a través de una interfaz de teclado.</p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/focus-order.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.4.3 Focus Order (Level A)
-          </a>
-          <p>
-            Al navegar por las migas de pan con el teclado, el foco en los enlaces permanece en orden lógico en relación
-            con los demás enlaces en la ruta de navegación.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.4.7 Focus Visible (Level AA)
-          </a>
-          <p>
-            Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque
-            del teclado es visible. Cuando utiliza un teclado para navegar por las migas de pan, los enlaces tienen un
-            subrayado visible y un recuadro outline que indica que los enlaces son interactivos.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 3.2.3 Consistent Navigation (Level AA)
-          </a>
-          <p>
-            Cuando navega por diferentes páginas del sitio web, los enlaces de las migas de pan siempre están en el
-            mismo orden y en el mismo lugar.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/location.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.4.8. Location (Level AAA)
-          </a>
-          <p>Los usuarios saben dónde se encuentran en un conjunto de páginas.</p>
+          <CriteriosWCAG list={['1.4.11', '1.4.3', '2.1.1', '2.4.3', '2.4.7', '3.2.3', '2.4.8']} />
         </>
       ),
     },
@@ -402,7 +318,7 @@ const BreadcrumbDocs: React.FC = () => {
         customSections={[
           {
             title: 'Especificaciones',
-            id: 'section-specs',
+            id: 'specs',
             sectionContent: SPECS,
           },
           {

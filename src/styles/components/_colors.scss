@@ -1,3 +1,5 @@
+// src/styles/components/_colors.scss - Estilos de colores de fondo
+
 // Backgrounds colors
 @each $key, $value in $theme-colors {
   .bg-#{$key} {

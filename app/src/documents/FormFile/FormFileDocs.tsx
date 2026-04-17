@@ -1,11 +1,13 @@
+// Hoja de rutas: app/src/documents/FormFile/FormFileDocs.tsx
+import { basePath } from '@/utils';
 import Image from 'next/image';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import CodeBox from '@/components/CodeBox';
+import CriteriosWCAG from '@/components/CriteriosWCAG';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
-const basePath = '/Obelisco-V2';
 
 import { FILE_DEFAULT, FILE_DISABLED, INPUT_FILE_ACCESSIBILITY } from './code-views';
 
@@ -114,7 +116,7 @@ const FormFileDocs: React.FC = () => {
             explorador o la cámara, según el tipo de archivo solicitado.
           </p>
           <Image
-            src={`${basePath}/images/form_file/ej_de_uso_input_file.svg`}
+            src={`${basePath}/images/form_file/usage.svg`}
             alt="Ejemplo visual de campo de carga de archivo"
             width="800"
             height="200"
@@ -135,7 +137,7 @@ const FormFileDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/form_file/indicador_form_file.svg`}
+            src={`${basePath}/images/form_file/indicator.svg`}
             alt="Ejemplo visual de indicador de requerido y opcional de carga de archivo"
             width="800"
             height="200"
@@ -177,7 +179,7 @@ const FormFileDocs: React.FC = () => {
       content: (
         <>
           <Image
-            src={`${basePath}/images/form_file/anatomia_input_file.svg`}
+            src={`${basePath}/images/form_file/anatomy.svg`}
             alt="Anatomia del input de carga de archivo"
             width="800"
             height="280"
@@ -232,7 +234,7 @@ const FormFileDocs: React.FC = () => {
           </p>
           <p className="text-md mb-4">Estado predeterminado de la carga de archivo en una interfaz. </p>
           <Image
-            src={`${basePath}/images/form_file/estado_default_file.svg`}
+            src={`${basePath}/images/form_file/default_state.svg`}
             alt="Estado predeterminado del input de carga de archivo"
             width="800"
             height="280"
@@ -246,7 +248,7 @@ const FormFileDocs: React.FC = () => {
             correctamente.
           </p>
           <Image
-            src={`${basePath}/images/form_file/estado_completado_file.svg`}
+            src={`${basePath}/images/form_file/complete_state.svg`}
             alt="Estado completado del input de carga de archivo"
             width="800"
             height="280"
@@ -262,7 +264,7 @@ const FormFileDocs: React.FC = () => {
             Obelisco se utiliza un borde o anillo (<i>focus ring</i>) por fuera del componente en un color distintivo.
           </p>
           <Image
-            src={`${basePath}/images/form_file/estado_focus_file.svg`}
+            src={`${basePath}/images/form_file/focus_state.svg`}
             alt="Estado en foco del input de carga de archivo"
             width="800"
             height="280"
@@ -277,7 +279,7 @@ const FormFileDocs: React.FC = () => {
             pesado) y sepa cómo corregirlo, cumpliendo con las pautas de accesibilidad (WCAG).
           </p>
           <Image
-            src={`${basePath}/images/form_file/estado_error_file.svg`}
+            src={`${basePath}/images/form_file/error_state.svg`}
             alt="Estado de error del input de carga de archivo"
             width="800"
             height="280"
@@ -292,7 +294,7 @@ const FormFileDocs: React.FC = () => {
             activarse.
           </p>
           <Image
-            src={`${basePath}/images/form_file/estado_deshabilitado_file.svg`}
+            src={`${basePath}/images/form_file/disabled_state.svg`}
             alt="Estado deshabilitado del input de carga de archivo"
             width="800"
             height="280"
@@ -313,7 +315,7 @@ const FormFileDocs: React.FC = () => {
             para conocer la separación entre secciones.
           </p>
           <Image
-            src={`${basePath}/images/form_file/espaciados_file.svg`}
+            src={`${basePath}/images/form_file/spacing.svg`}
             alt="Esquema de espaciados del input de carga de archivo"
             width="800"
             height="280"
@@ -343,7 +345,7 @@ const FormFileDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/form_file/accesibilidad_file.svg`}
+            src={`${basePath}/images/form_file/accessibility.svg`}
             alt="Navegacion alternativa del campo de carga de archivo"
             width="738"
             height="400"
@@ -382,99 +384,7 @@ const FormFileDocs: React.FC = () => {
       title: 'Criterios WCAG aplicados',
       content: (
         <>
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.3.1 Info and Relationships (Level A)
-          </a>
-          <p>
-            La información, la estructura y las relaciones transmitidas a través de la presentación pueden determinarse
-            mediante programación o están disponibles en el texto.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.4.11 Non-Text Contrast (Level AA)
-          </a>
-          <p>
-            La presentación visual de elementos de la interfaz de usuario y objetos gráficos tiene por lo menos una
-            relación de contraste de 3:1 con respecto a los colores adyacentes.{' '}
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.1.1 Keyboard (Level A)
-          </a>
-          <p>Todas las funcionalidades del contenido se puede operar a través de una interfaz de teclado.</p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.4.6 Headings and Labels (Level AA)
-          </a>
-          <p>
-            Si se utilizan encabezados o etiquetas, deben describir con precisión el propósito o contenido al que se
-            refieren. Esto facilita la comprensión y navegación del contenido, especialmente para personas con
-            discapacidades cognitivas o que utilizan lectores de pantalla.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.4.7 Focus Visible (Level AA)
-          </a>
-          <p>
-            Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque
-            del teclado es visible. Cuando utiliza un teclado para navegar por los componentes, los enlaces tienen un
-            subrayado visible y un recuadro <i>outline</i> que indica que los enlaces son interactivos.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/on-input.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 3.2.2 On Input (Level A)
-          </a>
-          <p>
-            Garantiza una experiencia predecible avisando desde el inicio sobre patrones poco comunes.Por ejemplo, una
-            persona con dificultades cognitivas podría esperar revisar el archivo antes de enviarlo, y puede confundirse
-            si el archivo se sube automáticamente al seleccionarlo.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/error-suggestion.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 3.3.3 Error Suggestion (Level AA)
-          </a>
-          <p>
-            Asegurarse de que todos los textos de ayuda y mensajes de error brinden asistencia útil para evitar o
-            corregir errores.
-            <br />
-            No uses mensajes poco claros, como <i> &quot;Seleccioná un formato de archivo válido&quot;</i> . En su
-            lugar, aclarar qué formatos son válidos.
-          </p>
+          <CriteriosWCAG list={['1.3.1', '1.4.11', '2.1.1', '2.4.6', '2.4.7', '3.2.2', '3.3.3']} />
         </>
       ),
     },
@@ -492,7 +402,7 @@ const FormFileDocs: React.FC = () => {
         customSections={[
           {
             title: 'Especificaciones',
-            id: 'section-specs',
+            id: 'specs',
             sectionContent: SPECS,
           },
           {

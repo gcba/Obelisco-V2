@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/FormSelect/code-views.ts
 export const SELECT = `<div class="form-label-container">
   <label for="input-select" class="form-label">
     Nombre del selector *

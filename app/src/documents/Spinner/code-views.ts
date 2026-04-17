@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Spinner/code-views.ts
 export const SPINNER_TYPES = `
 <div class="spinner-border text-primary" role="status">
   <span class="sr-only">Cargando...</span>

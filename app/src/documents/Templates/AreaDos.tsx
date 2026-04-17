@@ -1,4 +1,6 @@
+// Hoja de rutas: app/src/documents/Templates/AreaDos.tsx
 'use client';
+import { basePath } from '@/utils';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -9,10 +11,9 @@ import ComponentHeader from '@/components/Template/ComponentHeader';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 
 import { AREA_2 } from './code-views';
-const basePath = '/Obelisco-V2';
 
 export default function AreaDos() {
-  const [activeTab, setActiveTab] = useState('panel-content-docs');
+  const [activeTab, setActiveTab] = useState('content-docs');
 
   const DOC_SECTIONS = [
     {
@@ -48,7 +49,7 @@ export default function AreaDos() {
               </ul>
             </div>
             <Image
-              src={`${basePath}/images/templates/pagina_area/segundo_nivel/hero.svg`}
+              src={`${basePath}/images/templates/area/second_level/hero.svg`}
               alt="Ejemplo encabezado de área"
               width="800"
               height="295"
@@ -89,7 +90,7 @@ export default function AreaDos() {
           </div>
 
           <Image
-            src={`${basePath}/images/templates/pagina_area/segundo_nivel/access.svg`}
+            src={`${basePath}/images/templates/area/second_level/access.svg`}
             alt="Ejemplo accesos rapidos en página de área"
             width="800"
             height="295"
@@ -148,7 +149,7 @@ export default function AreaDos() {
           <p>Esta información se presenta en grilla de tres con un ancho de 4 columnas.</p>
           <p>Esta agrupación de tarjetas de programas siempre llevan un título que haga referencia a dicho grupo.</p>
           <Image
-            src={`${basePath}/images/templates/pagina_area/segundo_nivel/programs.svg`}
+            src={`${basePath}/images/templates/area/second_level/programs.svg`}
             alt="Ejemplo encabezado de área"
             width="800"
             height="295"
@@ -180,7 +181,7 @@ export default function AreaDos() {
             utiliza el acceso solo con título. Se utilizan en grilla de tres columnas por fila.
           </p>
           <Image
-            src={`${basePath}/images/templates/pagina_area/segundo_nivel/services.svg`}
+            src={`${basePath}/images/templates/area/second_level/services.svg`}
             alt="Ejemplo encabezado de área"
             width="800"
             height="295"
@@ -205,7 +206,7 @@ export default function AreaDos() {
               tipo de contenido.
             </p>
             <Image
-              src={`${basePath}/images/templates/pagina_area/segundo_nivel/destacado.svg`}
+              src={`${basePath}/images/templates/area/second_level/highlighted.svg`}
               alt="Ejemplo encabezado de área"
               width="800"
               height="295"
@@ -219,7 +220,7 @@ export default function AreaDos() {
               servicios.
             </p>
             <Image
-              src={`${basePath}/images/templates/pagina_area/segundo_nivel/destacado1.svg`}
+              src={`${basePath}/images/templates/area/second_level/highlighted_1.svg`}
               alt="Ejemplo encabezado de área"
               width="800"
               height="295"
@@ -238,7 +239,7 @@ export default function AreaDos() {
             todas las noticias.
           </p>
           <Image
-            src={`${basePath}/images/templates/pagina_area/segundo_nivel/noticias.svg`}
+            src={`${basePath}/images/templates/area/second_level/news.svg`}
             alt="Ejemplo encabezado de área"
             width="800"
             height="295"
@@ -281,7 +282,7 @@ export default function AreaDos() {
           </div>
 
           <Image
-            src={`${basePath}/images/templates/pagina_area/segundo_nivel/social_media.svg`}
+            src={`${basePath}/images/templates/area/second_level/social_media.svg`}
             alt="Ejemplo encabezado de área"
             width="800"
             height="295"
@@ -331,24 +332,19 @@ export default function AreaDos() {
       <div>
         <nav className="tabs-box" aria-label="Navegación por pestañas">
           <ul className="nav nav-pills nav-box tabs p-0" role="tablist">
-            <TabItem
-              id={`panel-content-docs`}
-              title={'Especificaciones'}
-              activeTab={activeTab}
-              setActiveTab={setActiveTab}
-            />
-            <TabItem id={`panel-content-html`} title={'Código'} activeTab={activeTab} setActiveTab={setActiveTab} />
+            <TabItem id={`content-docs`} title={'Especificaciones'} activeTab={activeTab} setActiveTab={setActiveTab} />
+            <TabItem id={`content-html`} title={'Código'} activeTab={activeTab} setActiveTab={setActiveTab} />
           </ul>
         </nav>
 
         <hr className="mt-0 mb-4" />
 
         <div className="tab-content" style={{ paddingTop: '32px' }}>
-          <TabPanel id={`panel-content-docs`} activeTab={activeTab}>
+          <TabPanel id={`content-docs`} activeTab={activeTab}>
             <DocumentationTemplate sections={DOC_SECTIONS} type="ux" />
           </TabPanel>
 
-          <TabPanel id={`panel-content-html`} activeTab={activeTab}>
+          <TabPanel id={`content-html`} activeTab={activeTab}>
             <CodeViewTemplate template={AREA_2} />
           </TabPanel>
         </div>

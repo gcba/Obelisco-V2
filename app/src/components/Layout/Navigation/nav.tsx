@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/components/Layout/Navigation/nav.tsx
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -5,7 +6,6 @@ interface NavItem {
   text: string;
   isDisabled?: boolean;
   url?: string;
-  id?: string | number;
 }
 
 interface NavProps {

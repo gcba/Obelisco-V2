@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Tabs/TabsDocs.tsx
 import CodeBox from '@/components/CodeBox';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
@@ -30,10 +31,10 @@ const SECTIONS_DEV = [
                   <button
                     className="nav-link"
                     data-bs-toggle="tab"
-                    data-bs-target="#panel-content-1"
+                    data-bs-target="#content-1"
                     type="button"
                     role="tab"
-                    aria-controls="panel-content-1"
+                    aria-controls="content-1"
                     aria-selected="false"
                     id="tab-1"
                   >
@@ -44,10 +45,10 @@ const SECTIONS_DEV = [
                   <button
                     className="nav-link"
                     data-bs-toggle="tab"
-                    data-bs-target="#panel-content-2"
+                    data-bs-target="#content-2"
                     type="button"
                     role="tab"
-                    aria-controls="panel-content-2"
+                    aria-controls="content-2"
                     aria-selected="false"
                     id="tab-2"
                   >
@@ -58,10 +59,10 @@ const SECTIONS_DEV = [
                   <button
                     className="nav-link active"
                     data-bs-toggle="tab"
-                    data-bs-target="#panel-content-3"
+                    data-bs-target="#content-3"
                     type="button"
                     role="tab"
-                    aria-controls="panel-content-3"
+                    aria-controls="content-3"
                     aria-selected="true"
                     id="tab-3"
                   >
@@ -71,13 +72,13 @@ const SECTIONS_DEV = [
               </ul>
             </nav>
             <div className="tab-content" id="simple-myTabContent">
-              <div className="tab-pane fade" id="panel-content-1" role="tabpanel" aria-labelledby="tab-1">
+              <div className="tab-pane fade" id="content-1" role="tabpanel" aria-labelledby="tab-1">
                 Contenido Pestaña 1
               </div>
-              <div className="tab-pane fade" id="panel-content-2" role="tabpanel" aria-labelledby="tab-2">
+              <div className="tab-pane fade" id="content-2" role="tabpanel" aria-labelledby="tab-2">
                 Contenido Pestaña 2
               </div>
-              <div className="tab-pane fade show active" id="panel-content-3" role="tabpanel" aria-labelledby="tab-3">
+              <div className="tab-pane fade show active" id="content-3" role="tabpanel" aria-labelledby="tab-3">
                 Contenido Pestaña 3
               </div>
             </div>

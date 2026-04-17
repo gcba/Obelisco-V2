@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/NavHorizontal/code-views.ts
 export const NAV_HORIZONTAL_SIMPLE = `
   <nav aria-label="Navegación horizontal" aria-label='Navegación horizontal'>
     <ul class="nav flex-row nav-pills">

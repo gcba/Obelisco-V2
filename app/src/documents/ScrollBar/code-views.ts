@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/ScrollBar/code-views.ts
 export const SCROLLBAR_HORIZONTAL = `
 <div class="responsive-scroll" tabindex="0">
   <div class="horizontal-example">

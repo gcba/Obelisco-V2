@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Docs/class-documentation.tsx
 import Link from 'next/link';
 
 import ComponentHeader from '@/components/Template/ComponentHeader';

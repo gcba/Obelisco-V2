@@ -375,7 +375,7 @@ const SECTION_UX = [
         <div className="max-items-2">
           <div className="col pe-3">
             <Image
-              src={`${basePath}/images/boton/1.svg`}
+              src={`${basePath}/images/button/1.svg`}
               alt="Cómo sí usar los íconos"
               width="800"
               height="200"
@@ -387,7 +387,7 @@ const SECTION_UX = [
           </div>
           <div className="col ps-3">
             <Image
-              src={`${basePath}/images/boton/2.svg`}
+              src={`${basePath}/images/button/2.svg`}
               alt="Cómo sí usar los íconos"
               width="800"
               height="200"

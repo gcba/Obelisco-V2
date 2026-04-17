@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/components/Template/HeadingTemplate.tsx
 import React, { ReactElement } from 'react';
 
 interface HeadingTemplateProps {

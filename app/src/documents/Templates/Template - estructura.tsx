@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Templates/Template - estructura.tsx
 'use client';
 // este archivo se usa solamente como referencia para los templates de documentacion de los templates
 // import CodeCopy from '@/components/CodeCopy';
@@ -10,7 +11,7 @@ import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import { AREA_2 } from './code-views';
 
 export default function Template() {
-  const [activeTab, setActiveTab] = useState('panel-content-docs');
+  const [activeTab, setActiveTab] = useState('content-docs');
 
   return (
     <>
@@ -18,14 +19,14 @@ export default function Template() {
         <nav className="tabs-box" aria-label="Navegación por pestañas">
           <ul className="nav nav-pills nav-box tabs p-0" role="tablist">
             <TabItem
-              id={`panel-content-docs`}
+              id={`content-docs`}
               title={'Docs'}
               icon="description"
               activeTab={activeTab}
               setActiveTab={setActiveTab}
             />
             <TabItem
-              id={`panel-content-html`}
+              id={`content-html`}
               title={'Código'}
               icon="description"
               activeTab={activeTab}
@@ -45,11 +46,11 @@ export default function Template() {
         <hr className="mt-0 mb-4" />
 
         <div className="tab-content" style={{ paddingTop: '32px' }}>
-          <TabPanel id={`panel-content-docs`} activeTab={activeTab}>
+          <TabPanel id={`content-docs`} activeTab={activeTab}>
             <DocumentationTemplate sections={[]} />
           </TabPanel>
 
-          <TabPanel id={`panel-content-html`} activeTab={activeTab}>
+          <TabPanel id={`content-html`} activeTab={activeTab}>
             <CodeViewTemplate template={AREA_2} />
           </TabPanel>
         </div>

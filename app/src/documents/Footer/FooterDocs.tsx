@@ -1,11 +1,12 @@
+// Hoja de rutas: app/src/documents/Footer/FooterDocs.tsx
+import { basePath } from '@/utils';
 import Image from 'next/image';
 import React from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-const basePath = '/Obelisco-V2';
-
 import CodeBox from '@/components/CodeBox';
+import CriteriosWCAG from '@/components/CriteriosWCAG';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
@@ -412,7 +413,7 @@ const FooterDocs: React.FC = () => {
           </div>
           <div className="col">
             <Image
-              src={`${basePath}/images/footer/footer_legales.svg`}
+              src={`${basePath}/images/footer/lawful.svg`}
               alt="Enlace tipo predeterminado"
               width="800"
               height="200"
@@ -432,7 +433,7 @@ const FooterDocs: React.FC = () => {
           </div>
           <div className="col">
             <Image
-              src={`${basePath}/images/footer/footer_informacion_util.svg`}
+              src={`${basePath}/images/footer/useful_info.svg`}
               alt="Enlace tipo predeterminado"
               width="800"
               height="200"
@@ -452,7 +453,7 @@ const FooterDocs: React.FC = () => {
           </div>
           <div className="col">
             <Image
-              src={`${basePath}/images/footer/footer_indicador.svg`}
+              src={`${basePath}/images/footer/indicator.svg`}
               alt="Enlace tipo predeterminado"
               width="800"
               height="200"
@@ -471,7 +472,7 @@ const FooterDocs: React.FC = () => {
       content: (
         <>
           <Image
-            src={`${basePath}/images/footer/footer_anatomia.svg`}
+            src={`${basePath}/images/footer/anatomy.svg`}
             alt="Anatomia del footer"
             width="800"
             height="280"
@@ -528,7 +529,7 @@ const FooterDocs: React.FC = () => {
             Contiene el logo y el escudo de la Ciudad de Buenos Aires, e información legal.
           </p>
           <Image
-            src={`${basePath}/images/footer/footer_especificaciones_legales.svg`}
+            src={`${basePath}/images/footer/specs_lawful.svg`}
             alt="Footer especifiaciones legales"
             width="800"
             height="464"
@@ -543,7 +544,7 @@ const FooterDocs: React.FC = () => {
         <>
           <p className="text-md mb-4">Contiene teléfonos útiles y redes sociales de la Ciudad.</p>
           <Image
-            src={`${basePath}/images/footer/footer_especificaciones_informacion_util.svg`}
+            src={`${basePath}/images/footer/specs_useful_info.svg`}
             alt="Footer Información útil"
             width="800"
             height="464"
@@ -558,7 +559,7 @@ const FooterDocs: React.FC = () => {
         <>
           <p className="text-md mb-4">Está compuesto de una pregunta y dos acciones posibles de la misma jerarquía.</p>
           <Image
-            src={`${basePath}/images/footer/footer_especificaciones_indicador.svg`}
+            src={`${basePath}/images/footer/specs_indicator.svg`}
             alt="Indicador de utilidad"
             width="800"
             height="464"
@@ -576,7 +577,7 @@ const FooterDocs: React.FC = () => {
       content: (
         <>
           <Image
-            src={`${basePath}/images/footer/footer_tablet.svg`}
+            src={`${basePath}/images/footer/tablet.svg`}
             alt="Tablet"
             width="800"
             height="285"
@@ -595,7 +596,7 @@ const FooterDocs: React.FC = () => {
       content: (
         <>
           <Image
-            src={`${basePath}/images/footer/footer_mobile.svg`}
+            src={`${basePath}/images/footer/mobile.svg`}
             alt="Mobile"
             width="800"
             height="285"
@@ -625,7 +626,7 @@ const FooterDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/footer/footer_ilustracion.svg`}
+            src={`${basePath}/images/footer/illustration.svg`}
             alt="Navegacion alternativa del footer"
             width="800"
             height="285"
@@ -652,97 +653,16 @@ const FooterDocs: React.FC = () => {
       title: 'Criterios WCAG aplicados',
       content: (
         <>
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.4.11 Non-Text Contrast (Level AA)
-          </a>
-          <p>
-            La presentación visual de elementos de la interfaz de usuario y objetos gráficos tiene por lo menos una
-            relación de contraste de 3:1 con respecto a los colores adyacentes.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.3.1 Info and Relationships (Level A)
-          </a>
-          <p>
-            La información, la estructura y las relaciones transmitidas a través de la presentación pueden determinarse
-            mediante programación o están disponibles en el texto.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/reflow.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.4.10 Reflow (Level AA)
-          </a>
-          <p>
-            El contenido puede presentarse sin pérdida de información o funcionalidad y sin necesidad de desplazarse en
-            dos dimensiones, siempre que el desplazamiento vertical se ajuste a un ancho equivalente a 320 píxeles CSS y
-            el desplazamiento horizontal a una altura equivalente a 256 píxeles CSS, excepto en aquellas partes del
-            contenido que requieran un diseño bidimensional para su uso o significado.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/resize-text"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.4.4 Resize Text (Level AA)
-          </a>
-          <p>
-            Excepto por los subtítulos e imágenes de texto, el texto puede redimensionarse hasta un 200 % sin tecnología
-            de asistencia, sin pérdida de contenido ni funcionalidad.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.1.1 Keyboard (Level A)
-          </a>
-          <p>Todas las funcionalidades del contenido se puede operar a través de una interfaz de teclado.</p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.1.2 No Keyboard Trap (Level A)
-          </a>
-          <p>
-            Si el foco del teclado puede moverse a un componente de la página utilizando una interfaz de teclado,
-            también debe ser posible mover el foco fuera de ese componente usando únicamente la misma interfaz de
-            teclado. Si se requiere algo más que las teclas de flecha, tabulador u otros métodos estándar para salir, se
-            debe informar al usuario sobre el método necesario para mover el foco.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html"
-            target="_blank"
-            rel="nooper noreferrer"
-          >
-            Success Criterion 2.4.7 Focus Visible (Level AA)
-          </a>
-          <p>
-            Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque
-            del teclado es visible.
-          </p>
+          <CriteriosWCAG
+            list={['1.4.11', '1.3.1', '1.4.10', '1.4.4', '2.1.1', '2.1.2', '2.4.7']}
+            customItem={[
+              {
+                customId: '2.4.7',
+                customDescripcion:
+                  'Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque del teclado es visible.',
+              },
+            ]}
+          />
         </>
       ),
     },
@@ -762,7 +682,7 @@ const FooterDocs: React.FC = () => {
         customSections={[
           {
             title: 'Especificaciones',
-            id: 'section-specs',
+            id: 'specs',
             sectionContent: SPECS,
           },
           {

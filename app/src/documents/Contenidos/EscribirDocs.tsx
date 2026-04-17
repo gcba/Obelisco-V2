@@ -1,6 +1,8 @@
+// Hoja de rutas: app/src/documents/Contenidos/EscribirDocs.tsx
+import { basePath } from '@/utils';
+
 import ComponentHeader from '@/components/Template/ComponentHeader';
 import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
-const basePath = '/Obelisco-V2';
 
 const sections = [
   {

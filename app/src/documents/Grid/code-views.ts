@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Grid/code-views.ts
 export const LAYOUTS = `
   <div class="container">
     <div>Container 100%</div>

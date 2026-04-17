@@ -1,4 +1,6 @@
+// Hoja de rutas: app/src/documents/Templates/TemplatePaginaLibroDocs.tsx
 'use client';
+import { basePath } from '@/utils';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -10,10 +12,8 @@ import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 
 import { TEMPLATE_PAG_LIBRO } from './code-views';
 
-const basePath = '/Obelisco-V2';
-
 const TemplatePaginaLibroDocs: React.FC = () => {
-  const [activeTab, setActiveTab] = useState('panel-content-docs');
+  const [activeTab, setActiveTab] = useState('content-docs');
 
   const DOC_SECTIONS = [
     {
@@ -35,7 +35,7 @@ const TemplatePaginaLibroDocs: React.FC = () => {
               </ul>
             </div>
             <Image
-              src={`${basePath}/images/templates/pagina_libro/encabezado.svg`}
+              src={`${basePath}/images/templates/book/header.svg`}
               alt="Ejemplo encabezado de página libro"
               width="800"
               height="295"
@@ -55,7 +55,7 @@ const TemplatePaginaLibroDocs: React.FC = () => {
               usuaria, es obligatoria.
             </p>
             <Image
-              src={`${basePath}/images/templates/pagina_libro/nav_vertical.svg`}
+              src={`${basePath}/images/templates/book/nav_vertical.svg`}
               alt="Ejemplo encabezado de página libro"
               width="800"
               height="295"
@@ -82,7 +82,7 @@ const TemplatePaginaLibroDocs: React.FC = () => {
             </div>
           </div>
           <Image
-            src={`${basePath}/images/templates/pagina_libro/page_body.svg`}
+            src={`${basePath}/images/templates/book/page_body.svg`}
             alt="Ejemplo encabezado de página libro"
             width="800"
             height="295"
@@ -130,14 +130,14 @@ const TemplatePaginaLibroDocs: React.FC = () => {
 
             <div className="d-flex flex-column " style={{ gap: '2rem', marginTop: '2rem' }}>
               <Image
-                src={`${basePath}/images/templates/pagina_libro/space_1.svg`}
+                src={`${basePath}/images/templates/book/space_1.svg`}
                 alt="Ejemplo encabezado de página libro"
                 width="800"
                 height="295"
                 className="img-fluid"
               />
               <Image
-                src={`${basePath}/images/templates/pagina_libro/space_2.svg`}
+                src={`${basePath}/images/templates/book/space_2.svg`}
                 alt="Ejemplo encabezado de página libro"
                 width="800"
                 height="295"
@@ -180,23 +180,18 @@ const TemplatePaginaLibroDocs: React.FC = () => {
       <div>
         <nav className="tabs-box" aria-label="Navegación por pestañas">
           <ul className="nav nav-pills nav-box tabs p-0" role="tablist">
-            <TabItem
-              id={`panel-content-docs`}
-              title={'Especificaciones'}
-              activeTab={activeTab}
-              setActiveTab={setActiveTab}
-            />
-            <TabItem id={`panel-content-html`} title={'Código'} activeTab={activeTab} setActiveTab={setActiveTab} />
+            <TabItem id={`content-docs`} title={'Especificaciones'} activeTab={activeTab} setActiveTab={setActiveTab} />
+            <TabItem id={`content-html`} title={'Código'} activeTab={activeTab} setActiveTab={setActiveTab} />
           </ul>
         </nav>
 
         <hr className="mt-0 mb-4" />
 
         <div className="tab-content" style={{ paddingTop: '32px' }}>
-          <TabPanel id={`panel-content-docs`} activeTab={activeTab}>
+          <TabPanel id={`content-docs`} activeTab={activeTab}>
             <DocumentationTemplate sections={DOC_SECTIONS} type="ux" />
           </TabPanel>
-          <TabPanel id={`panel-content-html`} activeTab={activeTab}>
+          <TabPanel id={`content-html`} activeTab={activeTab}>
             <CodeViewTemplate template={TEMPLATE_PAG_LIBRO} />
           </TabPanel>
         </div>

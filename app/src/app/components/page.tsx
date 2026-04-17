@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/app/components/page.tsx
 'use client';
 
 import Link from 'next/link';
@@ -17,8 +18,8 @@ export default function ComponentsPage() {
           Estilos
         </p>
         <div className="access-items-3">
-          {stylesPages.map(({ text, url, id }) => (
-            <div className="col" key={id}>
+          {stylesPages.map(({ text, url }, i) => (
+            <div className="col" key={i}>
               <Link href={url} className="list-group-item item-sm">
                 <div className="access-content">
                   <span className="access-title">{text}</span>
@@ -36,8 +37,8 @@ export default function ComponentsPage() {
           Componentes
         </p>
         <div className="access-items-3">
-          {componentsPages.map(({ text, url, id }) => (
-            <div className="col" key={id}>
+          {componentsPages.map(({ text, url }, i) => (
+            <div className="col" key={i}>
               <Link href={url} className="list-group-item item-sm">
                 <div className="access-content">
                   <span className="access-title">{text}</span>
@@ -55,8 +56,8 @@ export default function ComponentsPage() {
           Formularios
         </p>
         <div className="access-items-3">
-          {formsPages.map(({ text, url, id }) => (
-            <div className="col" key={id}>
+          {formsPages.map(({ text, url }, i) => (
+            <div className="col" key={i}>
               <Link href={url} className="list-group-item item-sm">
                 <div className="access-content">
                   <span className="access-title">{text}</span>
@@ -74,8 +75,8 @@ export default function ComponentsPage() {
           Organismos
         </p>
         <div className="access-items-3">
-          {organismsPages.map(({ text, url, id }) => (
-            <div className="col" key={id}>
+          {organismsPages.map(({ text, url }, i) => (
+            <div className="col" key={i}>
               <Link href={url} className="list-group-item item-sm">
                 <div className="access-content">
                   <span className="access-title">{text}</span>

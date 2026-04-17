@@ -1,10 +1,12 @@
+// Hoja de rutas: app/src/documents/Link/LinkDocs.tsx
+import { basePath } from '@/utils';
 import Image from 'next/image';
 import React from 'react';
-const basePath = '/Obelisco-V2';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import CodeBox from '@/components/CodeBox';
+import CriteriosWCAG from '@/components/CriteriosWCAG';
 import LinkClient from '@/components/LinkClient';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
@@ -164,7 +166,7 @@ const LinkDocs: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/enlace/enlaces_tipos_predeterminado.svg`}
+                src={`${basePath}/images/link/default_types.svg`}
                 alt="Enlace tipo predeterminado"
                 width="800"
                 height="200"
@@ -183,7 +185,7 @@ const LinkDocs: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/enlace/enlaces_tipos_acceso.svg`}
+                src={`${basePath}/images/link/access_types.svg`}
                 alt="Enlace tipo acceso"
                 width="800"
                 height="200"
@@ -203,7 +205,7 @@ const LinkDocs: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/enlace/enlaces_tipos_descarga.svg`}
+                src={`${basePath}/images/link/download_types.svg`}
                 alt="Enlace tipo descarga"
                 width="800"
                 height="200"
@@ -222,7 +224,7 @@ const LinkDocs: React.FC = () => {
             </div>
             <div className="col ps-3">
               <Image
-                src={`${basePath}/images/enlace/enlaces_tipos_externo.svg`}
+                src={`${basePath}/images/link/external_types.svg`}
                 alt="Botón de exito"
                 width="800"
                 height="200"
@@ -241,7 +243,7 @@ const LinkDocs: React.FC = () => {
             Hay dos tamaños de enlaces: grande y chico, tanto para dispositivos <i>desktop, tablet y mobile</i>.
           </p>
           <Image
-            src={`${basePath}/images/enlace/enlace_tamaños.svg`}
+            src={`${basePath}/images/link/sizes.svg`}
             alt="Tamaños de botones"
             width="800"
             height="200"
@@ -269,7 +271,7 @@ const LinkDocs: React.FC = () => {
             hace referencia, o para redirigir a otro punto por dentro o fuera del sitio web.
           </p>
           <Image
-            src={`${basePath}/images/enlace/enlace_disposicion.svg`}
+            src={`${basePath}/images/link/standalone.svg`}
             alt="Cómo usar los íconos"
             width="800"
             height="200"
@@ -297,7 +299,7 @@ const LinkDocs: React.FC = () => {
             &quot;Contenido en esta página&quot;, para que las personas usuarias identifiquen su función.
           </p>
           <Image
-            src={`${basePath}/images/enlace/enlace_bloque_de_texto.svg`}
+            src={`${basePath}/images/link/anchor.svg`}
             alt="Enlaces en bloques de texto"
             width="800"
             height="200"
@@ -319,7 +321,7 @@ const LinkDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/enlace/enlace_de_anclaje.svg`}
+            src={`${basePath}/images/link/inline.svg`}
             alt="Enlaces en bloques de texto"
             width="800"
             height="200"
@@ -367,7 +369,7 @@ const LinkDocs: React.FC = () => {
               {/* 1 */}
               <div className="col">
                 <Image
-                  src={`${basePath}/images/enlace/enlace_inline_usar.svg`}
+                  src={`${basePath}/images/link/inline_porper_usage.svg`}
                   alt="Mala práctica en enlaces ejemplo 2"
                   width="800"
                   height="242"
@@ -384,7 +386,7 @@ const LinkDocs: React.FC = () => {
               {/* 2 */}
               <div className="col">
                 <Image
-                  src={`${basePath}/images/enlace/enlace_inline_no_usar.svg`}
+                  src={`${basePath}/images/link/inline_imporper_usage.svg`}
                   alt="Buena práctica en enlaces ejemplo 2"
                   width="800"
                   height="242"
@@ -447,7 +449,7 @@ const LinkDocs: React.FC = () => {
               {/* 1 */}
               <div className="col pe-3">
                 <Image
-                  src={`${basePath}/images/enlace/enlace_no_usar_2.svg`}
+                  src={`${basePath}/images/link/improper_usage_2.svg`}
                   alt="Mala práctica en enlaces ejemplo 2"
                   width="800"
                   height="242"
@@ -464,7 +466,7 @@ const LinkDocs: React.FC = () => {
               {/* 2 */}
               <div className="col ps-3">
                 <Image
-                  src={`${basePath}/images/enlace/enlace_usar_2.svg`}
+                  src={`${basePath}/images/link/proper_usage_2.svg`}
                   alt="Buena práctica en enlaces ejemplo 2"
                   width="800"
                   height="242"
@@ -481,7 +483,7 @@ const LinkDocs: React.FC = () => {
               {/* 3 */}
               <div className="col pe-3">
                 <Image
-                  src={`${basePath}/images/enlace/enlace_no_usar_3.svg`}
+                  src={`${basePath}/images/link/improper_usage_3.svg`}
                   alt="Mala práctica en enlaces ejemplo 3"
                   width="800"
                   height="242"
@@ -498,7 +500,7 @@ const LinkDocs: React.FC = () => {
               {/* 4 */}
               <div className="col ps-3">
                 <Image
-                  src={`${basePath}/images/enlace/enlace_usar_3.svg`}
+                  src={`${basePath}/images/link/proper_usage_3.svg`}
                   alt="Buena práctica en enlaces ejemplo 3"
                   width="800"
                   height="242"
@@ -536,7 +538,7 @@ const LinkDocs: React.FC = () => {
               {/* 1 */}
               <div className="col pe-3">
                 <Image
-                  src={`${basePath}/images/enlace/enlace_no_usar_4.svg`}
+                  src={`${basePath}/images/link/improper_usage_4.svg`}
                   alt="Mala práctica en enlaces ejemplo 4"
                   width="800"
                   height="242"
@@ -553,7 +555,7 @@ const LinkDocs: React.FC = () => {
               {/* 2 */}
               <div className="col ps-3">
                 <Image
-                  src={`${basePath}/images/enlace/enlace_usar_4.svg`}
+                  src={`${basePath}/images/link/proper_usage_4.svg`}
                   alt="Buena práctica en enlaces ejemplo 4"
                   width="800"
                   height="242"
@@ -582,7 +584,7 @@ const LinkDocs: React.FC = () => {
         <>
           <p className="text-md mb-4">El enlace puede tener hasta 3 elementos dependiendo del tipo.</p>
           <Image
-            src={`${basePath}/images/enlace/enlace_anatomia.svg`}
+            src={`${basePath}/images/link/anatomy.svg`}
             alt="Anatomia del botón"
             width="800"
             height="280"
@@ -638,8 +640,8 @@ const LinkDocs: React.FC = () => {
         <>
           <p className="text-md mb-4">Este es el estado por defecto del enlace.</p>
           <Image
-            src={`${basePath}/images/enlace/enlace_estado_predeterminado.svg`}
-            alt="Estado Estado   del enlace"
+            src={`${basePath}/images/link/default.svg`}
+            alt="Estado predeterminado del enlace"
             width="800"
             height="464"
             className="img-fluid"
@@ -661,8 +663,8 @@ const LinkDocs: React.FC = () => {
             grosor de trazo, sin cambiar el color.
           </p>
           <Image
-            src={`${basePath}/images/enlace/enlace_estado_sobre.svg`}
-            alt="Estado Estado   del enlace"
+            src={`${basePath}/images/link/hover.svg`}
+            alt="Estado sobre del enlace"
             width="800"
             height="464"
             className="img-fluid"
@@ -684,8 +686,8 @@ const LinkDocs: React.FC = () => {
             Obelisco se utiliza un borde o anillo (focus ring) por fuera del componente en un color distintivo.
           </p>
           <Image
-            src={`${basePath}/images/enlace/enlace_estado_en_foco.svg`}
-            alt="Estado en Estado   del enlace"
+            src={`${basePath}/images/link/focus.svg`}
+            alt="Estado en foco del enlace"
             width="800"
             height="464"
             className="img-fluid"
@@ -706,8 +708,8 @@ const LinkDocs: React.FC = () => {
             permite a la persona usuaria identificar qué enlaces ya navegó o visitó en interacciones previas.
           </p>
           <Image
-            src={`${basePath}/images/enlace/enlace_estado_visitado.svg`}
-            alt="Estado Estado   del enlace"
+            src={`${basePath}/images/link/visited.svg`}
+            alt="Estado visitado del enlace"
             width="800"
             height="464"
             className="img-fluid"
@@ -724,8 +726,8 @@ const LinkDocs: React.FC = () => {
             texto y el ícono, para evitar que el ícono colapse con el texto y mantenga relación al mismo tiempo.
           </p>
           <Image
-            src={`${basePath}/images/enlace/enlace_espaciado.svg`}
-            alt="Estado   del enlace"
+            src={`${basePath}/images/link/spacing.svg`}
+            alt="Espaciado del enlace"
             width="800"
             height="285"
             className="img-fluid"
@@ -754,7 +756,7 @@ const LinkDocs: React.FC = () => {
           </p>
 
           <Image
-            src={`${basePath}/images/boton/boton_navegacion_alternativa.svg`}
+            src={`${basePath}/images/button/alternative_navigation.svg`}
             alt="Navegacion alternativa del botón"
             width="738"
             height="400"
@@ -782,86 +784,21 @@ const LinkDocs: React.FC = () => {
       title: 'Criterios WCAG aplicados',
       content: (
         <>
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.4.11 Non-Text Contrast (Level AA)
-          </a>
-          <p>
-            La presentación visual de elementos de la interfaz de usuario y objetos gráficos tiene por lo menos una
-            relación de contraste de 3:1 con respecto a los colores adyacentes.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.4.3 Contrast (Minimum) (Level AA)
-          </a>
-          <p>
-            La presentación visual de texto y de imágenes de texto tiene una relación de contraste de por lo menos
-            4.5:1, excepto textos grandes e imágenes de texto grande que tienen un contraste de por lo menos 3:1, textos
-            o imágenes que son parte de un componente inactivo de interfaz de usuario o son pura decoración, o
-            logotipos.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.1.1 Keyboard (Level A)
-          </a>
-          <p>Todas las funcionalidades del contenido se puede operar a través de una interfaz de teclado.</p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html#dfn-link-purpose"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.4.4 Link Purpose (In Context) (Level A)
-          </a>
-          <p>
-            El propósito de cada enlace debe ser determinado solo con el texto del enlace o con el texto del enlace
-            junto con su contexto determinado de forma programática, excepto en los casos en los que el propósito del
-            enlace sea ambiguo para los usuarios en general.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 2.4.7 Focus Visible (Level AA)
-          </a>
-          <p>
-            Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque
-            del teclado es visible.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 3.2.4 Consistent Identification (Level AA)
-          </a>
-          <p>
-            Los componentes que tienen la misma funcionalidad dentro de un conjunto de páginas web se identifican de
-            manera consistente. Los enlaces que dirigen a un mismo lugar deben tener la misma identificación para no
-            generar confusiones. Un ejemplo de inconsistencia podría ser un enlace que diga &quot;Ingresá al Portal de
-            Pagos&quot;, y otro que lleve al mismo sitio pero diga &quot;Ingresá a la Plataforma de Pagos de la
-            Ciudad&quot;.
-          </p>
+          <CriteriosWCAG
+            list={['1.4.11', '1.4.3', '2.1.1', '2.4.4', '2.4.7', '3.2.4']}
+            customItem={[
+              {
+                customId: '2.4.7',
+                customDescripcion:
+                  'Cualquier interfaz de usuario operable por teclado tiene un modo de operación donde el indicador de enfoque del teclado es visible.',
+              },
+              {
+                customId: '3.2.4',
+                customDescripcion:
+                  'Los componentes que tienen la misma funcionalidad dentro de un conjunto de páginas web se identifican de manera consistente. Los enlaces que dirigen a un mismo lugar deben tener la misma identificación para no generar confusiones. Un ejemplo de inconsistencia podría ser un enlace que diga "Ingresá al Portal de Pagos", y otro que lleve al mismo sitio pero diga "Ingresá a la Plataforma de Pagos de la Ciudad".',
+              },
+            ]}
+          />
         </>
       ),
     },
@@ -881,7 +818,7 @@ const LinkDocs: React.FC = () => {
         customSections={[
           {
             title: 'Especificaciones',
-            id: 'section-specs',
+            id: 'specs',
             sectionContent: SPECS,
           },
           {

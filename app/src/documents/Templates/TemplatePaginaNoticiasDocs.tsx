@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Templates/TemplatePaginaNoticiasDocs.tsx
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -57,7 +58,7 @@ const TemplatePaginaNoticiasDocs: React.FC = () => {
             </ul>
           </div>
           <Image
-            src={`${basePath}/images/templates/noticias/1.svg`}
+            src={`${basePath}/images/templates/news/1.svg`}
             alt="Ejemplo de noticias"
             width="800"
             height="295"
@@ -150,7 +151,7 @@ const TemplatePaginaNoticiasDocs: React.FC = () => {
             </li>
           </ul>
           <Image
-            src={`${basePath}/images/templates/noticias/2.svg`}
+            src={`${basePath}/images/templates/news/2.svg`}
             alt="Ejemplo de noticias"
             width="800"
             height="295"
@@ -184,7 +185,7 @@ const TemplatePaginaNoticiasDocs: React.FC = () => {
             </li>
           </ul>
           <Image
-            src={`${basePath}/images/templates/noticias/3.svg`}
+            src={`${basePath}/images/templates/news/3.svg`}
             alt="Ejemplo de noticias"
             width="800"
             height="295"
@@ -192,7 +193,7 @@ const TemplatePaginaNoticiasDocs: React.FC = () => {
             style={{ marginTop: '32px', marginBottom: '32px' }}
           />
           <Image
-            src={`${basePath}/images/templates/noticias/4.svg`}
+            src={`${basePath}/images/templates/news/4.svg`}
             alt="Ejemplo de noticias"
             width="800"
             height="295"
@@ -251,7 +252,7 @@ const TemplatePaginaNoticiasDocs: React.FC = () => {
             </li>
           </ul>
           <Image
-            src={`${basePath}/images/templates/noticias/5.svg`}
+            src={`${basePath}/images/templates/news/5.svg`}
             alt="Ejemplo de noticias"
             width="800"
             height="295"
@@ -338,7 +339,7 @@ const TemplatePaginaNoticiasDocs: React.FC = () => {
             </li>
           </ul>
           <Image
-            src={`${basePath}/images/templates/noticias/6.svg`}
+            src={`${basePath}/images/templates/news/6.svg`}
             alt="Ejemplo de información institucional"
             width="800"
             height="295"
@@ -348,7 +349,7 @@ const TemplatePaginaNoticiasDocs: React.FC = () => {
           <h6>Mapa de ubicación</h6>
           <p className="text-md">Permite indicar una ubicación física relevante asociada a la noticia. </p>
           <Image
-            src={`${basePath}/images/templates/noticias/7.svg`}
+            src={`${basePath}/images/templates/news/7.svg`}
             alt="Ejemplo de noticias"
             width="800"
             height="295"

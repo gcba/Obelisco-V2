@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Home/homeDocs.tsx
 import Link from 'next/link';
 import './home.scss';
 import React from 'react';

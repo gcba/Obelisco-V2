@@ -1,11 +1,13 @@
+// Hoja de rutas: app/src/documents/ProgressBar/ProgressBarDocs.tsx
 'use client';
+import { basePath } from '@/utils';
 import Image from 'next/image';
 
 import CodeBox from '@/components/CodeBox';
 // import LinkClient from '@/components/LinkClient';
+import CriteriosWCAG from '@/components/CriteriosWCAG';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
-const basePath = '/Obelisco-V2';
 
 import {
   PROGRESSBAR_DESCRIPTION_PRIMARY,
@@ -395,45 +397,7 @@ const ProgressBarDocs: React.FC = () => {
       title: 'Criterios WCAG aplicados',
       content: (
         <>
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.3.1 Info and Relationships (Level A)
-          </a>
-          <p>
-            La información, la estructura y las relaciones transmitidas a través de la presentación pueden determinarse
-            mediante programación o están disponibles en el texto.
-          </p>
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.4.11 Non-Text Contrast (Level AA)
-          </a>
-          <p>
-            La presentación visual de elementos de la interfaz de usuario y objetos gráficos tiene por lo menos una
-            relación de contraste de 3:1 con respecto a los colores adyacentes.
-          </p>
-
-          <a
-            className="external"
-            href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Success Criterion 1.4.3 Contrast (Minimum) (Level AA)
-          </a>
-          <p>
-            La presentación visual de texto y de imágenes de texto tiene una relación de contraste de por lo menos
-            4.5:1, excepto textos grandes e imágenes de texto grande que tienen un contraste de por lo menos 3:1, textos
-            o imágenes que son parte de un componente inactivo de interfaz de usuario o son pura decoración, o
-            logotipos.
-          </p>
+          <CriteriosWCAG list={['1.3.1', '1.4.11', '1.4.3']} />
         </>
       ),
     },
@@ -454,7 +418,7 @@ const ProgressBarDocs: React.FC = () => {
         customSections={[
           {
             title: 'Especificaciones',
-            id: 'section-specs',
+            id: 'specs',
             sectionContent: SPECS,
           },
           {

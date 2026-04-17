@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/components/Drawer/index.tsx
 import React, { useEffect, useRef } from 'react';
 
 import styles from './Drawer.module.scss';

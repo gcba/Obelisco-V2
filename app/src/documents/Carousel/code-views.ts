@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/documents/Carousel/code-views.ts
 export const CAROUSEL_DESTACADO = `<div id="carousel" class="carousel slide">
 			<div class="carousel-inner">
 				<div class="carousel-item active">

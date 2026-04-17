@@ -1,3 +1,4 @@
+// Hoja de rutas: app/src/components/Template/Box.tsx
 import React, { ReactNode } from 'react';
 
 interface BoxTemplateProps {

@@ -1,13 +1,14 @@
+// Hoja de rutas: app/src/components/Layout/Headers/Desktop/index.tsx
 'use client';
 
+import { basePath } from '@/utils';
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 import '../../layout.scss';
 
 import HeaderMobile from '../Mobile';
-
-const basePath = '/Obelisco-V2';
 
 export default function HeaderDesktop() {
   const gettingPages = [
@@ -27,8 +28,20 @@ export default function HeaderDesktop() {
         </a>
         <div className="container header-container">
           <Link href="https://gcba.github.io/" className="navbar-brand">
-            <img className="d-none d-xl-block" src={`${basePath}/images/logo_obelisco.svg`} alt="Obelisco" />
-            <img className="d-xl-none" src={`${basePath}/images/logo_obelisco_mobile.svg`} alt="Obelisco" />
+            <Image
+              className="d-none d-xl-block img-fluid"
+              src={`${basePath}/images/logo_obelisco.svg`}
+              alt="Obelisco"
+              width={169}
+              height={34}
+            />
+            <Image
+              className="d-xl-none img-fluid"
+              src={`${basePath}/images/logo_obelisco_mobile.svg`}
+              alt="Obelisco"
+              width={159}
+              height={33}
+            />
           </Link>
           <HeaderMobile />
           <div className="collapse navbar-collapse" id="navbarContent">

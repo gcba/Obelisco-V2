@@ -6,7 +6,6 @@ interface NavItem {
   text: string;
   isDisabled?: boolean;
   url?: string;
-  id?: string | number;
 }
 
 interface NavProps {

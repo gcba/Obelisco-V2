@@ -16,472 +16,247 @@ const TemplateInscripcionesDocs: React.FC = () => {
 
   const DOC_SECTIONS = [
     {
+      title: 'Uso',
       firstTitle: true,
-      title: 'Estructura general',
       content: (
         <>
-          <div>
-            <div className="d-flex flex-column gap-3 mb-5">
-              <p className="text-md m-0">
-                Sus características admiten la convivencia de contenido variado, entre lo estático (texto, imágenes,
-                descripciones) y lo accionable (tarjetas, destacados, accesos). Esto es posible porque la plantilla
-                disponibiliza el 100% del ancho de la grilla (12 columnas).
-              </p>
-
-              <div className="list-informative d-flex flex-column gap-2">
-                <h3 className="list-informative-subtitle m-0">Cuándo usar</h3>
-                <ul className="list-informative-bullet">
-                  <li>
-                    Para describir un evento (fecha, descripción, fotos) y sumar secciones accionables como accesos a la
-                    programación, inscripciones o descargas de material.
-                  </li>
-                  <li>
-                    Para combinar información textual (qué es, requisitos, beneficios) con secciones interactivas como
-                    accesos a trámites, descargas y enlaces de contacto.
-                  </li>
-                </ul>
-              </div>
-
-              <div className="list-informative d-flex flex-column gap-2">
-                <h3 className="list-informative-subtitle m-0">Cuándo no usar</h3>
-                <ul className="list-informative-bullet">
-                  <li>
-                    Para solicitudes de turnos, inscripciones o envíos de información. En estos casos la estructura debe
-                    guiar al usuario con formularios, validaciones y pasos claros, recomendamos usar la plantilla de{' '}
-                    <Link href={'https://gcba.github.io/Obelisco-V2/templates/formularios/formulario-pagina-unica'}>
-                      Formularios multipágina
-                    </Link>
-                  </li>
-                  <li>
-                    Para agrupar información sobre un mismo tema en subtemas, en este caso recomendamos el uso de la
-                    plantilla de{' '}
-                    <Link href={'https://gcba.github.io/Obelisco-V2/templates/pagina-de-libro'}>Página libro</Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <Image
-              src={`${basePath}/images/templates/pagina_simple/estructura_gral.svg`}
-              alt="Ejemplo de estructura general"
-              width="800"
-              height="295"
-              className="img-fluid"
-            />
-          </div>
+          <p className="text-md">
+            Cuando se quiera agrupar la oferta de trámites, como turnos, inscripciones o servicios varios, se puede
+            emplear el template catálogo. En él se van a encontrar con uno o varios conjuntos de{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/components/cards">tarjetas</a> organizadas bajo títulos, para
+            mostrar de forma accesible, legible y ordenada la oferta de los trámites que pueden realizar en esa sección
+            del sitio.{' '}
+          </p>
+          <p className="text-xl">Cuándo usar</p>
+          <ul className="list-informative-bullet">
+            <li>Para agrupar la oferta disponible para agendar turnos presenciales, en un solo lugar.</li>
+            <li>Para visualizar y concretar las incripciones a cursos y capacitaciones.</li>
+            <li>Para mostrar de forma ordenada la gestión administrativa de trámites.</li>
+            <li>
+              Para organizar gran cantidad de tipos de servicios, teniendo en cuenta que puede ser el inicio de un
+              proceso más largo.
+            </li>
+          </ul>
+          <p className="text-xl mt-3">Cuándo no usar</p>
+          <ul className="list-informative-bullet">
+            <li>
+              Para agrupar y conectar diferentes componentes navegables, para ello usar el template de{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/templates/paginas-de-areas/pagina-area-dos">
+                {' '}
+                página de área - nivel 2
+              </a>
+              .
+            </li>
+            <li>
+              Para ofrecer un solo trámite o servicio, para ello emplear directamente el tamplate de{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/templates/pagina-tramites">trámites</a>.
+            </li>
+            <li>
+              Para mostrar contenido que no tiene ningún tipo de organización, analizar si aplica usar{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/templates/pagina-simple">página simple</a>.
+            </li>
+          </ul>
         </>
       ),
     },
     {
-      title: 'Componentes utilizados',
-    },
-    {
-      subtitleBold: 'Tarjetas horizontales',
+      title: 'Encabezado',
       content: (
         <>
-          <div className="d-flex flex-column gap-3">
-            <p className="text-md m-0">
-              Las variantes disponibles para este tipo de página incluyen todas las variaciones de la tarjeta
-              horizontal, es decir, se pueden usar las variantes con icono, con imagen, sin multimedia, de 4 columnas y
-              de 6 columnas de ancho.
-            </p>
-            <div className="list-informative d-flex flex-column gap-2">
-              <h3 className="list-informative-subtitle m-0 text-md">
-                <strong>Variantes disponibles de tarjetas horizontales:</strong>
-              </h3>
-              <ul className="list-informative-bullet">
-                <li>
-                  Variante de <strong>4 columnas,</strong> con ícono/imagen.
-                </li>
-                <li>
-                  Variante de <strong>6 columnas,</strong> con ícono/imagen.
-                </li>
-              </ul>
-            </div>
-            <div className="list-informative d-flex flex-column gap-2">
-              <h3 className="list-informative-subtitle m-0 text-md">
-                <strong>Variaciones del componente:</strong>
-              </h3>
-              <ul className="list-informative-bullet">
-                <li>Con botones, con enlaces, con accesos y botones de descarga.</li>
-              </ul>
-            </div>
-            <p className="text-md m-0">
-              En desktop, las tarjetas horizontales de 4 columnas pueden agruparse hasta un máximo de 3 por línea,
-              mientras que las de 6 columnas pueden hasta un máximo de 2 por línea. Recomendamos que la cantidad máxima
-              de opciones no supere las 6 tarjetas para optimizar la toma de decisiones y evitar abrumar a las personas
-              usuarias.
-            </p>
-            <p className="text-md m-0">
-              Podés consultar la{' '}
-              <Link href={'https://gcba.github.io/Obelisco-V2/components/cards'}>documentación de tarjetas</Link> para
-              conocer más sobre el uso y variantes del componente.
-            </p>
-            <div className="d-flex flex-column" style={{ gap: '1.5rem' }}>
-              <Image
-                src={`${basePath}/images/templates/pagina_simple/tarjetas_1.svg`}
-                alt="Ejemplo uso de tarjetas"
-                width="800"
-                height="295"
-                className="img-fluid"
-              />
-              <div>
-                <p className="text-lg">Ejemplos de uso</p>
-                <Image
-                  src={`${basePath}/images/templates/pagina_simple/tarjetas_2.svg`}
-                  alt="Ejemplo uso de tarjetas"
-                  width="800"
-                  height="295"
-                  className="img-fluid mb-2"
-                />
-                <div className="d-flex">
-                  <span className="material-symbols-rounded text-success">check</span>
-                  <p>
-                    Las listas de requisitos llevan únicamente un subtítulo y contenido, cualquier elemento adicional
-                    debe ir fuera del componente.
-                  </p>
-                </div>
-                <div>
-                  <Image
-                    src={`${basePath}/images/templates/pagina_simple/tarjetas_3.svg`}
-                    alt="Ejemplo uso de tarjetas"
-                    width="800"
-                    height="295"
-                    className="img-fluid mb-2"
-                  />
+          <p className="text-lg">Se encuentra al comienzo de la página, justo debajo del header y está formado por:</p>
+          <ul className="list-informative-bullet">
+            <li>
+              <a href="https://gcba.github.io/Obelisco-V2/components/breadcrumb">Migas de pan</a>, que nos indican el
+              recorrido de la persona usuaria hasta la página actual.
+            </li>
+            <li>
+              Título, que debe ser claro y utilizar el nombre formal de los servicios, trámites o productos que se
+              ofrecen.
+            </li>
+            <li>
+              Breve descripción que explica los tipos de servicios o productos que van en encontrar en la pantalla
+              organizados, debe ser de un máximo de 150 caracteres.
+            </li>
+          </ul>
 
-                  <div className="d-flex">
-                    <span className="material-symbols-rounded text-danger">close</span>
-                    <p>Evitar combinar la disposición y/o los tipos de tarjetas dentro de un mismo grupo.</p>
-                  </div>
-                </div>
-              </div>
+          <div className="d-flex flex-column">
+            <p className="text-xl" style={{ marginTop: '32px' }}>
+              Buenas prácticas
+            </p>
+            <div className="d-flex">
+              <span className="material-symbols-rounded text-success">check</span>
+              <p style={{ marginBottom: '12px' }}>Utilizar textos breves para la bajada.</p>
+            </div>
+            <div className="d-flex">
+              <span className="material-symbols-rounded text-success">check</span>
+              <p style={{ marginBottom: '12px' }}>Evitar abreviaturas o denominaciones informales.</p>
+            </div>
+            <div className="d-flex">
+              <span className="material-symbols-rounded text-success">check</span>
+              <p>Usar mayúsculas solo donde corresponda.</p>
+            </div>
+
+            <p className="text-xl" style={{ marginTop: '32px' }}>
+              Malas prácticas
+            </p>
+            <div className="d-flex">
+              <span className="material-symbols-rounded text-danger">close</span>
+              <p style={{ marginBottom: '12px' }}>
+                Modificar la estructura visual del componente (tamaño, alineación, espaciados, colores).
+              </p>
+            </div>
+            <div className="d-flex">
+              <span className="material-symbols-rounded text-danger">close</span>
+              <p style={{ marginBottom: '12px' }}>Usar textos demasiado largos o técnicos en la bajada.</p>
             </div>
           </div>
         </>
       ),
     },
     {
-      subtitleBold: 'Destacados',
+      title: 'Tarjetas',
       content: (
         <>
-          <div className="d-flex flex-column gap-2 mb-3 mt-2">
-            <p className="text-md m-0">
-              Los destacados permiten resaltar contenido relevante que requiere un nivel jerárquico mayor al resto de la
-              información. Su uso se limita a <strong>un destacado por página</strong> para asegurar el énfasis en los
-              elementos destacados y evitar que compitan entre sí.
+          <p className="textm-md">
+            En este bloque se presentan dos o más opciones de servicios, trámites o productos en{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/components/cards">tarjetas horizontales</a> organizadas en 3
+            columnas o 2 columnas, según se requiera respetando tamaños de componentes y organización en grilla. Para
+            mayor organización, se recomienda agrupar por subtítulos.
+            <br />
+            <br />
+            Se sugiere organizar cada grupo de tarjeta por orden alfabético en un mismo grupo, por ser una manera
+            esperable de visualización.
+          </p>
+          <ul className="list-informative-bullet">
+            <li>
+              Tarjeta de ancho de 4 columnas (4-col) organizadas en 3 columnas o tarjetas de ancho de 6 columnas (6-col)
+              organizadas en 2 columnas.
+            </li>
+            <li>Incluye título y descripción, en cada caso, no pueden superar las dos líneas de texto.</li>
+            <li>
+              Agrupar las tarjetas en categorías descriptivas que se muestren en subtítulos, como ser
+              &quot;Cursos&quot;. En el caso de que se tenga una sola categoría de tarjetas, se sugiere omitir el
+              subtítulo.
+            </li>
+            <li>
+              Cuando en la fila de 2 o 3 columnas, se tengan 1 o 2 tarjetas, alinearlas a la izquierda. No completar con
+              tarjetas vacías el grupo de tarjetas.{' '}
+            </li>
+          </ul>
+
+          <Image
+            src={`${basePath}/images/templates/inscripciones/inscripciones_1.svg`}
+            alt="Ejemplo de tarjetas en template inscripciones"
+            width="800"
+            height="295"
+            className="img-fluid"
+            style={{ marginTop: '32px' }}
+          />
+
+          <div className="d-flex flex-column">
+            <p className="text-xl" style={{ marginTop: '32px' }}>
+              Buenas prácticas
             </p>
-            <p className="text-md m-0">
-              La variante disponible para el tipo de página simple es el <strong>destacado sin multimedia</strong> con
-              fondo secundario. En todos los dispositivos ocupa el 100% del ancho de la pantalla. Se pueden utilizar
-              todas las variantes de accionables según la necesidad del contenido.
-            </p>
-            <div className="list-informative d-flex flex-column gap-2">
-              <h3 className="list-informative-subtitle text-md m-0">
-                <strong>Variantes disponibles:</strong>
-              </h3>
-              <ul className="list-informative-bullet">
-                <li>Destacado sin multimedia con fondo secundario.</li>
-              </ul>
+            <div className="d-flex">
+              <span className="material-symbols-rounded text-success">check</span>
+              <p style={{ marginBottom: '12px' }}>
+                Verificar ortografía, formato y longitud del texto antes de ser publicado.
+              </p>
             </div>
-            <div className="list-informative d-flex flex-column gap-2">
-              <h3 className="list-informative-subtitle m-0 text-md">
-                <strong>Variaciones del componente:</strong>
-              </h3>
-              <ul className="list-informative-bullet">
-                <li>Con botones, con enlaces, con accesos y botones de descarga.</li>
-              </ul>
+            <div className="d-flex">
+              <span className="material-symbols-rounded text-success">check</span>
+              <p style={{ marginBottom: '12px' }}>
+                Verificar que el servicio y la página a la que redirige estén habilitados.
+              </p>
+            </div>
+
+            <p className="text-xl" style={{ marginTop: '32px' }}>
+              Malas prácticas
+            </p>
+            <div className="d-flex">
+              <span className="material-symbols-rounded text-danger">close</span>
+              <p style={{ marginBottom: '12px' }}>
+                Modificar la estructura visual del componente (tamaño, alineación, espaciados, colores).
+              </p>
+            </div>
+            <div className="d-flex">
+              <span className="material-symbols-rounded text-danger">close</span>
+              <p style={{ marginBottom: '12px' }}>Usar textos demasiado largos o técnicos en la bajada.</p>
             </div>
           </div>
-          <div>
-            <div>
-              <Image
-                src={`${basePath}/images/templates/pagina_simple/destacados.svg`}
-                alt="Ejemplo uso de destacado"
-                width="800"
-                height="295"
-                className="img-fluid mb-2"
-              />
-              <p className="text-sm">Variantes de accionables en el componente Destacado.</p>
-            </div>
-            <div>
-              <p className="text-lg">Ejemplos de uso</p>
-              <Image
-                src={`${basePath}/images/templates/pagina_simple/destacados_2.svg`}
-                alt="Ejemplo uso de destacado"
-                width="800"
-                height="295"
-                className="img-fluid mb-2"
-              />
-            </div>
-          </div>
+
+          <p className="text-xl">Contenido</p>
+          <ul className="list-informative-bullet">
+            <li>
+              Título de tarjeta: Usar el nombre oficial del trámite, turno o servicio. No abreviar, ni renombrar. Debe
+              tener hasta 2 líneas o 60 caracteres, después se corta con puntos suspensivos.
+            </li>
+            <li>
+              Descripción de tarjeta: Ofrecer una oración para orientar sobre el trámite o servicio. Debe tener un
+              máximo de 3 líneas o 107 caracteres, después se corta con puntos suspensivos.
+            </li>
+            <li>
+              Título de categoría (opcional): Organizar las tarjetas dentro de categorías reconocibles y descriptivas
+              con el/los títulos de los trámites.
+            </li>
+            <li>Orden de tarjetas: ordenar alfabéticamente dentro de la categoría.</li>
+            <li>Cantidad mínima de tarjetas: en cada categoría puede tener una tarjeta alineada a la izquierda. </li>
+          </ul>
         </>
       ),
     },
     {
-      subtitleBold: 'Accesos',
+      title: 'Espaciado',
       content: (
         <>
-          <div className="d-flex flex-column gap-3 mb-3">
-            <p className="text-md mb-0">
-              Los accesos funcionan como puntos de ingreso a diferentes secciones y pueden agruparse cuando hay una
-              similitud en su contenido.
-            </p>
-            <div className="list-informative d-flex flex-column gap-2">
-              <h3 className="list-informative-subtitle m-0 text-md">
-                <strong>Variantes disponibles:</strong>
-              </h3>
-              <ul className="list-informative-bullet">
-                <li>Acceso con borde y descripción, sin icono.</li>
-                <li>Acceso con borde, sin icono, ni descripción.</li>
-              </ul>
-            </div>
-            <div className="list-informative d-flex flex-column gap-2">
-              <h3 className="list-informative-subtitle m-0 text-md">
-                <strong>Cantidad óptima de caracteres:</strong>
-              </h3>
-              <ul className="list-informative-bullet">
-                <li>
-                  <strong>Titulo:</strong> 2 líneas de texto, equivalente a 60 caracteres incluidos los espacios.
-                </li>
-                <li>
-                  <strong>Descripción:</strong> 3 líneas de texto, equivalente a 90 caracteres incluidos los espacios.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div>
-            <div>
-              <Image
-                src={`${basePath}/images/templates/pagina_simple/accesos.svg`}
-                alt="Ejemplo uso de acceso"
-                width="800"
-                height="295"
-                className="img-fluid mb-2"
-              />
-              <p className="text-sm">Variantes disponibles de Accesos para la plantilla de página simple.</p>
-            </div>
+          <p className="text-md">
+            Para mantener una estructura clara, legible y alineada al sistema de grilla, recomendamos los siguientes
+            espaciados entre títulos, párrafos y accionables, para desktop:
+          </p>
+          <ul className="list-informative-bullet">
+            <li>
+              Espacio horizontal: entre encabezado y pie de página (footer) relacionados con títulos y tarjetas debe
+              haber un espacio de 48 px. Entre el título y las tarjetas, 24 px. Entre filas de tarjetas 32 px.
+            </li>
+            <li>Espacio vertical: entre las columnas de tarjetas 32 px.</li>
+          </ul>
 
-            <div>
-              <p className="text-lg">Ejemplos de uso</p>
-              <Image
-                src={`${basePath}/images/templates/pagina_simple/accesos_2.svg`}
-                alt="Ejemplo uso de acceso"
-                width="800"
-                height="295"
-                className="img-fluid mb-2"
-              />
-              <div className="d-flex">
-                <span className="material-symbols-rounded text-success">check</span>
-                <p>
-                  Las listas de requisitos llevan únicamente un subtítulo y contenido, cualquier elemento adicional debe
-                  ir fuera del componente.
-                </p>
-              </div>
-            </div>
+          <Image
+            src={`${basePath}/images/templates/inscripciones/inscripciones_2.svg`}
+            alt="Ejemplo de espaciados en template inscripciones"
+            width="800"
+            height="295"
+            className="img-fluid"
+            style={{ marginTop: '32px' }}
+          />
 
-            <div>
-              <Image
-                src={`${basePath}/images/templates/pagina_simple/accesos_3.svg`}
-                alt="Ejemplo uso de acceso"
-                width="800"
-                height="295"
-                className="img-fluid mb-2"
-              />
-              <div className="d-flex">
-                <span className="material-symbols-rounded text-danger">close</span>
-                <p>
-                  Las listas de requisitos llevan únicamente un subtítulo y contenido, cualquier elemento adicional debe
-                  ir fuera del componente.
-                </p>
-              </div>
-            </div>
-          </div>
-        </>
-      ),
-    },
-    {
-      subtitleBold: 'Colapsables',
-      content: (
-        <>
-          <div style={{ marginBottom: '1.75rem' }}>
-            <p className="text-md" style={{ marginTop: '1.5rem', marginBottom: '.75rem' }}>
-              Los colapsables sirven para mostrar y ocultar secciones de contenido relacionado en una página, lo que
-              mejora la experiencia de las personas usuarias.
-            </p>
-            <div className="list-informative d-flex flex-column gap-2">
-              <h3 className="list-informative-subtitle m-0">Variantes disponibles:</h3>
-              <ul className="list-informative-bullet">
-                <li>Colapsable sólo título (obligatorio).</li>
-                <li>Colapsable con título y descripción (opcional).</li>
-              </ul>
-            </div>
-            <div className="mt-3">
-              <Image
-                src={`${basePath}/images/templates/pagina_simple/colapsables.svg`}
-                alt="Ejemplo uso de colapsable"
-                width="800"
-                height="295"
-                className="img-fluid mb-2"
-              />
-              <p className="text-sm m-0">Variantes disponibles de Colapsables para la plantilla de página simple.</p>
-            </div>
-          </div>
-          <div className="mb-3">
-            <p className="text-xl fw-semibold">Contexto de uso</p>
-            <p className="text-md mb-2">
-              <strong>Para secciones de preguntas frecuentes.</strong> La cantidad máxima de opciones para incluir en
-              una sección de preguntas frecuentes es de 6 colapsables, y una cantidad mínima de 4 opciones.
-            </p>
-            <Image
-              src={`${basePath}/images/templates/pagina_simple/colapsables_2.svg`}
-              alt="Ejemplo uso de colapsable"
-              width="800"
-              height="295"
-              className="img-fluid mb-2"
-            />
-          </div>
-          <div>
-            <p className="text-md mb-2">
-              Si son menos de 4 preguntas frecuentes recomendamos que no se use el componente Colapsables. En cambio, sí
-              recomendamos redactar la información directamente en el cuerpo.
-            </p>
-            <Image
-              src={`${basePath}/images/templates/pagina_simple/colapsables_3.svg`}
-              alt="Ejemplo uso de colapsable"
-              width="800"
-              height="295"
-              className="img-fluid mb-2"
-            />
-          </div>
-        </>
-      ),
-    },
-    {
-      title: 'Contenido de texto',
-      content: (
-        <>
-          <div className="d-flex flex-column gap-3">
-            <p className="text-md m-0">
-              Podés consultar las <Link href={''}>pautas y lineamientos de contenidos</Link> para conocer más prácticas
-              recomendadas sobre escritura en interfaces digitales.
-            </p>
+          <p className="text-md">
+            Para mantener una estructura clara, legible y alineada en mobile, hay que mantener los siguientes espacios:
+          </p>
 
-            <div className="d-flex flex-column gap-2">
-              <h5 className="m-0 fw-semibold">Títulos</h5>
-              <p className="text-md m-0">
-                <strong>El título principal</strong> de la página es un encabezado H1 que admite hasta 3 líneas de
-                extensión. En cambio, los <strong>títulos de las secciones</strong> dentro de la página son encabezados
-                H2 y admiten un máximo de 70 caracteres, equivalente a una línea de texto.
-              </p>
-              <p className="text-md m-0">
-                En dispositivos <i>desktop</i>, la extensión del contenedor de los encabezados H2 no debe exceder las 8
-                columnas de la grilla.
-              </p>
-            </div>
+          <ul className="list-informative-bullet">
+            <li>
+              Espacio horizontal - encabezado y footer: entre encabezado y pie de página (footer) con títulos y tarjetas
+              32 px.
+            </li>
+            <li>
+              Espacio horizontal - tarjetas: los componentes dentro de una misma sección o grupo están dispuestos uno
+              debajo del otro y entre cada uno hay 16 px.
+            </li>
+            <li>
+              Espacio horizontal - secciones: al comenzar y finalizar cada sección o grupo, cada margen superior e
+              inferior tendrá 24 px.
+            </li>
+          </ul>
 
-            <div className="d-flex flex-column gap-2">
-              <h5 className="m-0 fw-semibold">Párrafos de texto</h5>
-              <p className="text-md m-0">
-                En dispositivos <i>desktop</i>, el contenedor del párrafo de texto no debe ser mayor a 8 columnas. Nunca
-                el 100% porque se generan líneas de texto muy largas y perjudica la lectura.
-              </p>
-              <Image
-                src={`${basePath}/images/templates/pagina_simple/contenido_texto.svg`}
-                alt="Ejemplo uso de párrafo de texto"
-                width="800"
-                height="295"
-                className="img-fluid"
-              />
-            </div>
-
-            <div className="d-flex flex-column gap-2">
-              <h5 className="m-0 fw-semibold">Galería de imágenes</h5>
-              <p className="text-md m-0">
-                Las imágenes se utilizan como complemento figurativo o ilustrativo de la información del párrafo de
-                texto anterior o posterior, por eso sugerimos que su uso se limite a brindar mayor contexto a la persona
-                usuaria.
-              </p>
-              <p className="text-md m-0">
-                En una página simple, las imágenes se ubican antes, después, o entre párrafos de texto, y pueden ser
-                parte de una{' '}
-                <Link href={'https://gcba.github.io/Obelisco-V2/components/gallery'}>galería de imágenes</Link> a través
-                de una cuadrícula de fotos interactivas y de una vista ampliada con el formato de carrusel. El{' '}
-                <strong>máximo</strong> de imágenes para este tipo de formato es hasta 7 imágenes.
-              </p>
-              <div className="d-flex flex-column gap-3">
-                <div>
-                  <p className="text-lg">Ejemplos de uso</p>
-                  <Image
-                    src={`${basePath}/images/templates/pagina_simple/contenido_texto_2.svg`}
-                    alt="Ejemplo uso de párrafo de texto"
-                    width="800"
-                    height="295"
-                    className="img-fluid mb-2"
-                  />
-                  <div className="d-flex">
-                    <span className="material-symbols-rounded text-success">check</span>
-                    <p className="text-sm m-0">
-                      En la continuación de un párrafo de texto, recomendamos mantener la disposición de 8 columnas para
-                      ubicar las imágenes.
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <Image
-                    src={`${basePath}/images/templates/pagina_simple/contenido_texto_3.svg`}
-                    alt="Ejemplo uso de párrafo de texto"
-                    width="800"
-                    height="295"
-                    className="img-fluid mb-2"
-                  />
-                  <div className="d-flex">
-                    <span className="material-symbols-rounded text-danger">close</span>
-                    <p className="text-sm m-0">
-                      En <i>desktop</i>, evitar que las imágenes ocupen el 100% del ancho de la página para no
-                      interferir en la lectura e interacción del usuario con la página.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </>
-      ),
-    },
-    {
-      title: 'Espaciados',
-      content: (
-        <>
-          <div className="d-flex flex-column" style={{ gap: '1.5rem' }}>
-            <div className="d-flex flex-column" style={{ gap: '.75rem' }}>
-              <p className="text-md m-0">
-                Para mantener una estructura clara, legible y alineada al sistema de grillas, recomendamos los
-                siguientes espaciados entre secciones para dispositivos desktop:
-              </p>
-
-              <div className="list-informative d-flex flex-column">
-                <ul className="list-informative-bullet">
-                  <li>
-                    <strong>Espaciado horizontal de 48px:</strong> Entre secciones consecuentes del cuerpo de la página,
-                    incluye secciones de contenido de texto, secciones de tarjetas, accesos u otro.
-                  </li>
-                  <li>
-                    <strong>Espaciado horizontal de 24px:</strong> Entre el encabezado H2 de la sección y el contenido
-                    en sí mismo, pueden ser tarjetas, accesos, contenido de texto u otro.
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <Image
-              src={`${basePath}/images/templates/pagina_simple/espaciados.svg`}
-              alt="Ejemplo de espaciados"
-              width="800"
-              height="295"
-              className="img-fluid"
-            />
-          </div>
+          <Image
+            src={`${basePath}/images/templates/inscripciones/inscripciones_3.svg`}
+            alt="Ejemplo de espaciados en template inscripciones"
+            width="800"
+            height="295"
+            className="img-fluid"
+            style={{ marginTop: '32px' }}
+          />
         </>
       ),
     },
@@ -500,7 +275,7 @@ const TemplateInscripcionesDocs: React.FC = () => {
         title="Inscripciones"
         description={[
           `
-          Las usamos para transmitir información estática de menor jerarquía, en comparación a una página de área, y con menor cantidad de contenido.
+          Esta guía está diseñada para proporcionar instrucciones claras para completar el template de catálogo, que se puede emplear para agrupar la oferta de inscripciones, turnos o aquellos servicios que así lo requieran. Busca asegurar consistencia y facilitar la carga correcta del contenido.
           `,
         ]}
       />

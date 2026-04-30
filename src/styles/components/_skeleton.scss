@@ -93,6 +93,10 @@
     ol.ob-placeholder {
       color: transparent !important; // es la única manera de hacerlo, porque en los estilos del componente lleva !important
     }
+
+    &::before {
+      visibility: hidden;
+    }
   }
 
   // BANNER

@@ -763,7 +763,7 @@ const FooterDocs: React.FC = () => {
       content: (
         <CodeBox codeHTML={SKELETON_FOOTER}>
           <div className="px-4">
-            <footer className="main-footer ob-skeleton" aria-hidden="true">
+            <footer className="main-footer ob-skeleton-dark" aria-hidden="true">
               <div className="container">
                 <section>
                   <h3>
@@ -875,7 +875,7 @@ const FooterDocs: React.FC = () => {
       content: (
         <CodeBox codeHTML={SKELETON_LEGALS}>
           <div className="px-4">
-            <footer className="main-footer ob-skeleton" aria-hidden="true">
+            <footer className="main-footer ob-skeleton-dark" aria-hidden="true">
               <div className="container">
                 <section className="footer-legal-section">
                   <div className="row align-items-center">
@@ -934,7 +934,7 @@ const FooterDocs: React.FC = () => {
                 </div>
               </div>
             </div>
-            <footer className="main-footer ob-skeleton" aria-hidden="true">
+            <footer className="main-footer ob-skeleton-dark" aria-hidden="true">
               <div className="container">
                 <section>
                   <h3>

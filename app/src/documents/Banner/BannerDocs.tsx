@@ -616,7 +616,7 @@ const BannerDocs: React.FC = () => {
           </CodeBox>
           <br />
           <CodeBox codeHTML={SKELETON_SIMPLE_DARK}>
-            <div className="banner banner-dark ob-skeleton">
+            <div className="banner banner-dark ob-skeleton-dark">
               <div className="banner-content ob-placeholder">
                 <p className="banner-text ob-placeholder"></p>
               </div>
@@ -638,7 +638,7 @@ const BannerDocs: React.FC = () => {
           </CodeBox>
           <br />
           <CodeBox codeHTML={SKELETON_BOTON_DARK}>
-            <div className="banner banner-dark ob-skeleton">
+            <div className="banner banner-dark ob-skeleton-dark">
               <div className="banner-content ">
                 <span className="material-symbols-rounded o-icon ob-placeholder ob-placeholder-icon" aria-hidden="true">
                   departure_board
@@ -667,7 +667,7 @@ const BannerDocs: React.FC = () => {
           </CodeBox>
           <br />
           <CodeBox codeHTML={SKELETON_BOTONES_DARK}>
-            <div className="banner banner-dark ob-skeleton">
+            <div className="banner banner-dark ob-skeleton-dark">
               <div className="banner-content ">
                 <span className="material-symbols-rounded o-icon ob-placeholder ob-placeholder-icon" aria-hidden="true">
                   departure_board

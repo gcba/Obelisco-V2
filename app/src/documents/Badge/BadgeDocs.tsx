@@ -78,7 +78,7 @@ const BadgeDocs: React.FC = () => {
             <div className="row justify-content-center">
               <div className="col-auto">
                 <div className="grid gap-5 ob-skeleton">
-                  <span className="badge badge-default ob-placeholder">predeterminada</span>
+                  <span className="badge badge-default ob-placeholder rounded-3">predeterminada</span>
                 </div>
               </div>
             </div>
@@ -88,7 +88,7 @@ const BadgeDocs: React.FC = () => {
             <div className="row justify-content-center">
               <div className="col-auto">
                 <div className="grid gap-5 ob-skeleton">
-                  <LinkClient className="badge badge-default ob-placeholder">Etiqueta</LinkClient>
+                  <LinkClient className="badge badge-default ob-placeholder rounded-3">Etiqueta</LinkClient>
                 </div>
               </div>
             </div>

@@ -315,10 +315,10 @@ const ScrollBarDocs: React.FC = () => {
             <br />
             Se recomienda utilizarlo únicamente cuando el contenedor no contenga elementos interactivos.
           </p>
-          <span className="badge badge-default ms-1">FLECHAS</span>
-          <span className="badge badge-default">PAGE UP/PAGE DOWN</span>
-          <span className="badge badge-default">INICIO/FIN</span>
-          <span className="badge badge-default">ESPACIO</span>
+          <span className="badge badge-s-default ms-1">FLECHAS</span>
+          <span className="badge badge-s-default">PAGE UP/PAGE DOWN</span>
+          <span className="badge badge-s-default">INICIO/FIN</span>
+          <span className="badge badge-s-default">ESPACIO</span>
 
           <p className="text-md mb-4 mt-4">El desplazamiento del contenido puede realizarse mediante:</p>
 

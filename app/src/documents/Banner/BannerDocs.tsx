@@ -420,8 +420,8 @@ const BannerDocs: React.FC = () => {
             El componente de banner está construido para ser accesible mediante navegación por teclado y reconocible por
             lectores de pantalla, comunicando su estado de forma clara.
           </p>
-          <span className="badge badge-default ms-1">TAB</span>
-          <span className="badge badge-default">ENTER</span>
+          <span className="badge badge-s-default ms-1">TAB</span>
+          <span className="badge badge-s-default">ENTER</span>
           <ul className="list-informative-bullet mt-4 mb-4">
             <li className="mb-3">
               Tab / Shift + Tab <br />

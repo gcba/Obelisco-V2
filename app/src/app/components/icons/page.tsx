@@ -1,5 +1,5 @@
 import IconsDocs from '@/documents/Icons/IconsDocs';
 
-export default function TypographyPage() {
+export default function IconsPage() {
   return <IconsDocs />;
 }

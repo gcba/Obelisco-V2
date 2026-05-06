@@ -792,7 +792,7 @@ progress {
   --bs-breakpoint-xxl: 1400px;
 }
 
-.row, .highlighted-items-2, .max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .card-items-2, .max-items-3, .card-items-3, .max-items-4 {
+.row, .highlighted-items-2, .max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .card-items-2, .max-items-3, .indicator-items-3, .card-items-3, .max-items-4 {
   --bs-gutter-x: 2rem;
   --bs-gutter-y: 0;
   display: flex;
@@ -801,7 +801,7 @@ progress {
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
-.row > *, .highlighted-items-2 > *, .max-items-1 > *, .access-items-1 > *, .access-items-3 > *, .access-items-4 > *, .max-items-2 > *, .card-items-2 > *, .max-items-3 > *, .card-items-3 > *, .max-items-4 > * {
+.row > *, .highlighted-items-2 > *, .max-items-1 > *, .access-items-1 > *, .access-items-3 > *, .access-items-4 > *, .max-items-2 > *, .card-items-2 > *, .max-items-3 > *, .indicator-items-3 > *, .card-items-3 > *, .max-items-4 > * {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
@@ -819,7 +819,7 @@ progress {
   width: auto;
 }
 
-.row-cols-1 > *, .highlighted-items-2 > *, .max-items-1 > *, .access-items-1 > *, .access-items-3 > *, .access-items-4 > *, .max-items-2 > *, .card-items-2 > *, .max-items-3 > *, .card-items-3 > *, .max-items-4 > * {
+.row-cols-1 > *, .highlighted-items-2 > *, .max-items-1 > *, .access-items-1 > *, .access-items-3 > *, .access-items-4 > *, .max-items-2 > *, .card-items-2 > *, .max-items-3 > *, .indicator-items-3 > *, .card-items-3 > *, .max-items-4 > * {
   flex: 0 0 auto;
   width: 100%;
 }
@@ -1199,7 +1199,7 @@ progress {
     flex: 0 0 auto;
     width: 100%;
   }
-  .row-cols-md-2 > *, .access-items-3 > *, .access-items-4 > *, .max-items-2 > *, .card-items-2 > *, .max-items-3 > *, .card-items-3 > *, .max-items-4 > * {
+  .row-cols-md-2 > *, .access-items-3 > *, .access-items-4 > *, .max-items-2 > *, .card-items-2 > *, .max-items-3 > *, .indicator-items-3 > *, .card-items-3 > *, .max-items-4 > * {
     flex: 0 0 auto;
     width: 50%;
   }
@@ -1541,7 +1541,7 @@ progress {
     flex: 0 0 auto;
     width: 50%;
   }
-  .row-cols-xl-3 > *, .access-items-3.row-cols-md-1 > *, .row-cols-md-1.access-items-4 > *, .access-items-3 > *, .access-items-4 > *, .max-items-3 > *, .card-items-3 > *, .max-items-4 > * {
+  .row-cols-xl-3 > *, .access-items-3.row-cols-md-1 > *, .row-cols-md-1.access-items-4 > *, .access-items-3 > *, .access-items-4 > *, .max-items-3 > *, .indicator-items-3 > *, .card-items-3 > *, .max-items-4 > * {
     flex: 0 0 auto;
     width: 33.33333333%;
   }
@@ -11959,16 +11959,16 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .card-items-2, .max-items-3, .card-items-3, .max-items-4 {
+.max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .card-items-2, .max-items-3, .indicator-items-3, .card-items-3, .max-items-4 {
   row-gap: 2rem;
 }
 @media (max-width: 767.98px) {
-  .max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .card-items-2, .max-items-3, .card-items-3, .max-items-4 {
+  .max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .card-items-2, .max-items-3, .indicator-items-3, .card-items-3, .max-items-4 {
     row-gap: 1rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1199.98px) {
-  .max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .card-items-2, .max-items-3, .card-items-3, .max-items-4 {
+  .max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .card-items-2, .max-items-3, .indicator-items-3, .card-items-3, .max-items-4 {
     row-gap: 1.5rem;
   }
 }
@@ -11982,11 +11982,11 @@ textarea.form-control-lg {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
-  .row, .highlighted-items-2, .max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .card-items-2, .max-items-3, .card-items-3, .max-items-4 {
+  .row, .highlighted-items-2, .max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .card-items-2, .max-items-3, .indicator-items-3, .card-items-3, .max-items-4 {
     margin-left: -0.75rem;
     margin-right: -0.75rem;
   }
-  .row > *, .highlighted-items-2 > *, .max-items-1 > *, .access-items-1 > *, .access-items-3 > *, .access-items-4 > *, .max-items-2 > *, .card-items-2 > *, .max-items-3 > *, .card-items-3 > *, .max-items-4 > * {
+  .row > *, .highlighted-items-2 > *, .max-items-1 > *, .access-items-1 > *, .access-items-3 > *, .access-items-4 > *, .max-items-2 > *, .card-items-2 > *, .max-items-3 > *, .indicator-items-3 > *, .card-items-3 > *, .max-items-4 > * {
     padding-right: 0.75rem;
     padding-left: 0.75rem;
   }
@@ -12019,6 +12019,14 @@ textarea.form-control-lg {
   display: flex;
 }
 
+@media (min-width: 992px) {
+  .w-lg-50 {
+    width: 50%;
+  }
+  .mw-lg-100 {
+    max-width: 100% !important;
+  }
+}
 @media (width >= 1920px) {
   body {
     max-width: 1900px;
@@ -12217,6 +12225,10 @@ blockquote .author {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   line-clamp: 4;
+}
+
+.list-style-none {
+  list-style-type: none;
 }
 
 .bg-primary {
@@ -20315,6 +20327,42 @@ i.ob-icon.mastercard::before {
 
 i.o-icon.bxl::before {
   font-size: 24px;
+}
+
+.indicator {
+  width: 100%;
+  max-width: 425px;
+  text-align: center;
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid #e6ebf0;
+}
+.indicator h1, .indicator .h1 {
+  margin-bottom: 8px;
+}
+.indicator p.headline-lg, .indicator .group-access .card-access .card-access-body p.h4, .group-access .card-access .card-access-body .indicator p.h4, .indicator .group-access .card-access .card-access-body p.card-access-title, .group-access .card-access .card-access-body .indicator p.card-access-title, .indicator .map .map-body p.map-title, .map .map-body .indicator p.map-title, .indicator .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption p.h5, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .indicator p.h5, .indicator .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body p.h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .indicator p.h5, .indicator .navbar.o-header .header-container .navbar-collapse .navbar-content .navbar-sections p.navbar-sections-title, .navbar.o-header .header-container .navbar-collapse .navbar-content .navbar-sections .indicator p.navbar-sections-title, .indicator .navbar.o-header .header-container .navbar-collapse .navbar-user-mobile p.navbar-user-mobile-title, .navbar.o-header .header-container .navbar-collapse .navbar-user-mobile .indicator p.navbar-user-mobile-title, .indicator .navbar.o-header .header-container .navbar-collapse .navbar-content-extended p.navbar-sections-title, .navbar.o-header .header-container .navbar-collapse .navbar-content-extended .indicator p.navbar-sections-title, .indicator p.list-steps-item::before, .indicator .group-access .card-access .card-access-body .list-steps.list-steps-lg .list-steps-item p.h3, .group-access .card-access .card-access-body .list-steps.list-steps-lg .list-steps-item .indicator p.h3, .indicator .list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body p.h3, .list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body .indicator p.h3,
+.indicator .group-access .card-access .card-access-body .list-steps.list-steps-lg .list-steps-item p.list-steps-item-title,
+.group-access .card-access .card-access-body .list-steps.list-steps-lg .list-steps-item .indicator p.list-steps-item-title,
+.indicator .list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body p.list-steps-item-title,
+.list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body .indicator p.list-steps-item-title, .indicator .block .block-body p.block-title, .block .block-body .indicator p.block-title, .indicator .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body p.panel-title, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body .indicator p.panel-title, .indicator .panel-vertical .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption p.panel-title, .panel-vertical .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .indicator p.panel-title,
+.indicator .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body-dark p.panel-title,
+.group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body-dark .indicator p.panel-title,
+.indicator .panel-vertical .panel-body-dark .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption p.panel-title,
+.panel-vertical .panel-body-dark .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .indicator p.panel-title, .indicator .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-vertical .panel-body p.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-vertical .panel-body .indicator p.panel-title, .indicator .panel-vertical .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body p.panel-title, .panel-vertical .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .indicator p.panel-title,
+.indicator .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-vertical .panel-body-dark p.panel-title,
+.modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-vertical .panel-body-dark .indicator p.panel-title,
+.indicator .panel-vertical .panel-body-dark .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body p.panel-title,
+.panel-vertical .panel-body-dark .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .indicator p.panel-title, .indicator .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body p.panel-title.h2, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body .indicator p.panel-title.h2, .indicator .panel-horizontal-content .panel-horizontal .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption p.panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .indicator p.panel-title.h2, .indicator .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-horizontal-content .panel-horizontal .panel-body p.panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-horizontal-content .panel-horizontal .panel-body .indicator p.panel-title.h2, .indicator .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body p.panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .indicator p.panel-title.h2, .indicator .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body p.panel-title.h2, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body .indicator p.panel-title.h2, .indicator .panel-lateral .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption p.panel-title.h2, .panel-lateral .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .indicator p.panel-title.h2, .indicator .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-lateral .panel-body p.panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-lateral .panel-body .indicator p.panel-title.h2, .indicator .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body p.panel-title.h2, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .indicator p.panel-title.h2, .indicator .accordion-item p.accordion-button, .accordion-item .indicator p.accordion-button, .indicator .accordion-item .accordion-button p.collapse-title, .accordion-item .accordion-button .indicator p.collapse-title, .indicator .card p.card-title, .card .indicator p.card-title, .indicator .group-access .card-access .card-access-body .stepper-content .stepper p.step-title, .group-access .card-access .card-access-body .stepper-content .stepper .indicator p.step-title, .indicator .stepper-content .stepper .group-access .card-access .card-access-body p.step-title, .stepper-content .stepper .group-access .card-access .card-access-body .indicator p.step-title {
+  margin-bottom: 8px;
+}
+.indicator.indicator-start {
+  text-align: start;
+}
+.indicator.bigger-title h1, .indicator.bigger-title .h1 {
+  font-size: 64px;
+}
+.indicator.unbordered {
+  border: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

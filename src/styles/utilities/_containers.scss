@@ -94,6 +94,11 @@
   }
 }
 
+// Disposición de Indicadores
+.indicator-items-3 {
+  @extend .max-items-3;
+}
+
 // Disposición de Destacado Conjunto
 .highlighted-items-2 {
   @extend .row;
@@ -115,5 +120,15 @@
 
   .col {
     display: flex;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .w-lg-50 {
+    width: 50%;
+  }
+
+  .mw-lg-100 {
+    max-width: 100% !important;
   }
 }

@@ -15562,6 +15562,7 @@ a.badge-s-link-default {
   color: #101e37;
   background-color: #e6ebf0;
   text-decoration: none;
+  cursor: pointer;
 }
 a.badge-s-link-default span.material-symbols-rounded {
   color: #101e37;
@@ -15597,6 +15598,7 @@ a.badge-s-link-info {
   color: #004357;
   background-color: #e5f9ff;
   text-decoration: none;
+  cursor: pointer;
 }
 a.badge-s-link-info span.material-symbols-rounded {
   color: #004357;
@@ -15632,6 +15634,7 @@ a.badge-s-link-success {
   color: #1c4b2d;
   background-color: #f2fbf5;
   text-decoration: none;
+  cursor: pointer;
 }
 a.badge-s-link-success span.material-symbols-rounded {
   color: #1c4b2d;
@@ -15667,6 +15670,7 @@ a.badge-s-link-danger {
   color: #290a0a;
   background-color: #fbefef;
   text-decoration: none;
+  cursor: pointer;
 }
 a.badge-s-link-danger span.material-symbols-rounded {
   color: #290a0a;
@@ -15702,6 +15706,7 @@ a.badge-s-link-warning {
   color: #331e00;
   background-color: #fff4e5;
   text-decoration: none;
+  cursor: pointer;
 }
 a.badge-s-link-warning span.material-symbols-rounded {
   color: #331e00;
@@ -15737,6 +15742,7 @@ a.badge-s-link-highlight {
   color: #490066;
   background-color: #f7e5ff;
   text-decoration: none;
+  cursor: pointer;
 }
 a.badge-s-link-highlight span.material-symbols-rounded {
   color: #490066;
@@ -15808,6 +15814,7 @@ a.badge-p-link-default {
   background-color: #505e70;
   text-decoration: none;
   color: #ffffff;
+  cursor: pointer;
 }
 a.badge-p-link-default span.material-symbols-rounded {
   color: #ffffff;
@@ -15843,6 +15850,7 @@ a.badge-p-link-info {
   background-color: #005e7a;
   text-decoration: none;
   color: #ffffff;
+  cursor: pointer;
 }
 a.badge-p-link-info span.material-symbols-rounded {
   color: #ffffff;
@@ -15878,6 +15886,7 @@ a.badge-p-link-success {
   background-color: #237240;
   text-decoration: none;
   color: #ffffff;
+  cursor: pointer;
 }
 a.badge-p-link-success span.material-symbols-rounded {
   color: #ffffff;
@@ -15913,6 +15922,7 @@ a.badge-p-link-danger {
   background-color: #7a1f1f;
   text-decoration: none;
   color: #ffffff;
+  cursor: pointer;
 }
 a.badge-p-link-danger span.material-symbols-rounded {
   color: #ffffff;
@@ -15948,6 +15958,7 @@ a.badge-p-link-warning {
   background-color: #995900;
   text-decoration: none;
   color: #ffffff;
+  cursor: pointer;
 }
 a.badge-p-link-warning span.material-symbols-rounded {
   color: #ffffff;
@@ -15983,6 +15994,7 @@ a.badge-p-link-highlight {
   background-color: #6d0099;
   text-decoration: none;
   color: #ffffff;
+  cursor: pointer;
 }
 a.badge-p-link-highlight span.material-symbols-rounded {
   color: #ffffff;
@@ -16059,6 +16071,7 @@ a.badge-remove span.material-symbols-rounded {
   overflow: hidden;
   font-style: normal;
   vertical-align: middle;
+  cursor: pointer;
 }
 a.badge-remove.badge-lg span.material-symbols-rounded {
   width: 20px;
@@ -16083,7 +16096,6 @@ a.badge-remove:focus span.material-symbols-rounded, a.badge-remove.focus span.ma
   text-decoration: none;
   box-shadow: 0 0 0 0.125rem #218274;
   border-radius: 2px;
-  cursor: pointer;
 }
 a.badge-remove:focus span, a.badge-remove.focus span {
   text-decoration: none;
@@ -16111,11 +16123,8 @@ a.badge-remove:focus span, a.badge-remove.focus span {
   background-color: #ffffff;
   border: 1px solid #101e37;
   color: #101e37;
-<<<<<<< HEAD
-=======
   cursor: pointer;
   user-select: none;
->>>>>>> d496ce9 (fix: CSS y correción de estado Deshabilitado de Etiqueta Seleccionable)
 }
 .badge-select:focus, .badge-select.focus {
   border: 1px solid transparent;
@@ -16156,12 +16165,22 @@ a.badge-remove:focus span, a.badge-remove.focus span {
   background-color: #101e37;
   color: #ffffff;
 }
-.badge-select:focus, .badge-select.focus {
-  background-color: #002733;
-  color: #ffffff;
-  text-decoration: none;
-  box-shadow: 0 0 0 0.125rem #101e37;
-  cursor: pointer;
+.badge-toggle input:not(:disabled):focus + .badge-select {
+  box-shadow: 0 0 0 0.125rem #218274;
+  outline: none;
+  border: 1px solid transparent;
+}
+.badge-toggle input:not(:disabled):active + .badge-select {
+  box-shadow: 0 0 0 0.125rem #218274;
+  outline: none;
+  border: 1px solid transparent;
+}
+.badge-toggle input:disabled + .badge-select {
+  background-color: #e6ebf0;
+  color: #9eaab8;
+  border-color: #9eaab8;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .banner {

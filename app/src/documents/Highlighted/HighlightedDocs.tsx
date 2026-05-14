@@ -20,10 +20,7 @@ import {
   HIGHLIGHTED_JOIN_IMAGE,
   HIGHLIGHTED_JOIN_NO_IMAGE,
   HIGHLIGHTED_JOIN_VIDEO,
-  HIGHLIGHTED_LATERAL_ACCESS,
-  HIGHLIGHTED_LATERAL_BUTTON,
-  HIGHLIGHTED_LATERAL_DOWNLOAD,
-  HIGHLIGHTED_LATERAL_LINK,
+  HIGHLIGHTED_LATERAL,
 } from './code-views';
 
 const basePath = '/Obelisco-V2';
@@ -641,95 +638,69 @@ const HighlightedDocs: React.FC = () => {
     {
       title: 'Destacado lateral',
       content: (
-        <>
-          <CodeBox codeHTML={HIGHLIGHTED_LATERAL_BUTTON}>
-            <div className="container">
-              <div className="col-12 col-xl-6">
-                <div className="panel-lateral">
-                  <div className="panel-body">
-                    <h2 className="panel-title">Título del destacado</h2>
-                    <p className="panel-text">
-                      Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
-                      negritas ni enlaces.
-                    </p>
-                    <div className="panel-footer">
-                      <LinkClient className="btn btn-primary btn-lg btn-block">Botón</LinkClient>
-                    </div>
+        <CodeBox codeHTML={HIGHLIGHTED_LATERAL}>
+          <div className="container">
+            <div className="col-12 col-xl-6">
+              <div className="panel-lateral">
+                <div className="panel-body">
+                  <h2 className="panel-title">Título del destacado</h2>
+                  <div className="d-flex gap-1 my-3">
+                    <span className="badge badge-default">Etiqueta</span>
+                    <span className="badge badge-default">Etiqueta</span>
+                    <span className="badge badge-default">Etiqueta</span>
                   </div>
-                </div>
-              </div>
-            </div>
-          </CodeBox>
-          <br />
-          <CodeBox codeHTML={HIGHLIGHTED_LATERAL_DOWNLOAD}>
-            <div className="container">
-              <div className="col-12 col-xl-6">
-                <div className="panel-lateral">
-                  <div className="panel-body">
-                    <h2 className="panel-title">Título del destacado</h2>
-                    <p className="panel-text">
-                      Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
-                      negritas ni enlaces.
-                    </p>
-                    <div className="panel-footer">
-                      <LinkClient className="btn btn-secondary btn-lg btn-block" download="">
-                        <span className="material-symbols-rounded" aria-hidden="true">
-                          file_download
-                        </span>
-                        Descargar
-                      </LinkClient>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </CodeBox>
-          <br />
-          <CodeBox codeHTML={HIGHLIGHTED_LATERAL_LINK}>
-            <div className="container">
-              <div className="col-12 col-xl-6">
-                <div className="panel-lateral">
-                  <div className="panel-body">
-                    <h2 className="panel-title">Título del destacado</h2>
-                    <p className="panel-text">
-                      Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
-                      negritas ni enlaces.
-                    </p>
-                    <div className="panel-footer">
-                      <LinkClient className="external">Enlace externo</LinkClient>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </CodeBox>
-          <br />
-          <CodeBox codeHTML={HIGHLIGHTED_LATERAL_ACCESS}>
-            <div className="container">
-              <div className="col-12 col-xl-6">
-                <div className="panel-lateral">
-                  <div className="panel-body">
-                    <h2 className="panel-title">Título del destacado</h2>
-                    <p className="panel-text">
-                      Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
-                      negritas ni enlaces.
-                    </p>
-                    <div className="panel-footer">
-                      <LinkClient className="list-group-item item-sm">
-                        <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                          info
-                        </span>
-                        <div className="access-content">
-                          <span className="access-title">Acceso</span>
+                  <p className="panel-text">
+                    Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
+                    negritas ni enlaces.
+                  </p>
+
+                  <div className="accordion plain">
+                    <div className="accordion-item">
+                      <button
+                        className="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseHeaderIcon"
+                        aria-expanded="false"
+                        aria-controls="collapseHeaderIcon"
+                      >
+                        <p className="headline-sm m-0">Detalle</p>
+                      </button>
+                      <div id="collapseHeaderIcon" className="accordion-collapse collapse">
+                        <div className="accordion-body">
+                          <p>
+                            Esta es la descripción que se encuentra dentro de un colapsable. Debe ser breve y concisa.
+                          </p>
                         </div>
-                      </LinkClient>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="panel-footer">
+                    <LinkClient className="btn btn-primary btn-lg btn-block">Botón</LinkClient>
+                  </div>
+                  <div className="d-flex gap-3 mt-3 align-items-center">
+                    <p className="text-md mb-1">Compartir en redes:</p>
+                    <div className="d-flex gap-2">
+                      <a href="#" className="shadow-none" target="_blank">
+                        <i className="bxl bx-facebook-circle o-icon text-primary"></i>
+                      </a>
+                      <a href="#" className="shadow-none" target="_blank">
+                        <i className="bxl bx-instagram o-icon text-primary"></i>
+                      </a>
+                      <a href="#" className="shadow-none" target="_blank">
+                        <i className="bxl bx-twitter-x o-icon text-primary"></i>
+                      </a>
+                      <a href="#" className="shadow-none" target="_blank">
+                        <i className="bxl bx-linkedin-square o-icon text-primary"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </CodeBox>
-        </>
+          </div>
+        </CodeBox>
       ),
     },
   ];

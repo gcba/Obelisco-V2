@@ -60,6 +60,8 @@ $card-info-icon-size: 1rem;
   border: none;
   outline: $outline-border;
   width: 100%;
+	border-radius: 30px;
+	overflow: hidden;
 
   .card-body {
     padding: $card-spacing-desktop;
@@ -126,7 +128,8 @@ $card-info-icon-size: 1rem;
   }
 
   .card-img {
-    border-radius: $border-radius-lg $border-radius-lg 0 0;
+    // border-radius: $border-radius-lg $border-radius-lg 0 0;
+		border-radius: 30px 30px 0 0;
     aspect-ratio: 16 / 9;
     object-fit: cover;
     object-position: center;
@@ -267,7 +270,7 @@ $positions: ('left', 'right', 'top', 'bottom');
 @each $position in $positions {
   @each $key, $color in $colors {
     .card-border-#{$position}-#{$key} {
-      border-#{$position}: 8px solid $color;
+      border-#{$position}: 12px solid $color;
     }
   }
 }

@@ -1,5 +1,6 @@
 // Familia Tipográfica
 $font-family-polyfill:
+  'Archivo',
   'Open Sans',
   system-ui,
   -apple-system,
@@ -13,6 +14,6 @@ $font-family-polyfill:
   'Segoe UI Emoji',
   'Segoe UI Symbol',
   'Noto Color Emoji';
-$font-family-sans-serif: 'Archivo', $font-family-polyfill; // Se sobreescribe variable de Bootstrap
+$font-family-sans-serif: $font-family-polyfill; // Se sobreescribe variable de Bootstrap
 $font-family-base: $font-family-sans-serif; // Se sobreescribe variable de Bootstrap para estilos de body
 $font-family-headings: $font-family-base;

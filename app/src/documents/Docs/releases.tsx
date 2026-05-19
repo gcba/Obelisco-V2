@@ -19,6 +19,29 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
+      title: 'Versión X.X.X',
+      content: (
+        <ul className="docs-list">
+          <p>La Versión X.X.X contiene lo siguiente: </p>
+          <li>
+            Se crea el componente{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/components/highlighted-lateral" target="_blank">
+              Destacado lateral
+            </a>
+            . En{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-14">
+              Cambios en componentes
+            </a>{' '}
+            está la documentación de la nueva estructura.
+          </li>
+          <li>Se elimina el componente Bloque de trámite, se lo reemplaza por el componente Destacado lateral.</li>
+          <li>
+            En el componente Mapa se modificó el botón de <code>primario</code> a <code>primario outline</code>
+          </li>
+        </ul>
+      ),
+    },
+    {
       title: 'Versión 1.10.0',
       content: (
         <ul className="docs-list">

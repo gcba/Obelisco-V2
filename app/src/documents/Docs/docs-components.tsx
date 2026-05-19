@@ -113,6 +113,11 @@ const sections = [
         <li>
           Se elimina la clase <code>.card</code>.
         </li>
+
+        <p className="text-md my-4">
+          <strong>Versión X.X.X ⬇️</strong>
+        </p>
+        <li>Se elimina el componente, es reemplazado por Destacado lateral</li>
       </ul>
     ),
   },
@@ -486,6 +491,20 @@ const sections = [
         <li>
           Se crea la clase: <code>panel-sin-multimedia-v</code> y se utiliza en el mismo div donde va:{' '}
           <code>panel-body-dark</code> / <code>panel-body</code>
+        </li>
+      </ul>
+    ),
+  },
+  {
+    title: 'Destacado lateral',
+    content: (
+      <ul className="docs-list">
+        <p className="text-md my-4">
+          <strong>Versión X.X.X ⬇️</strong>
+        </p>
+        <li>
+          Se crea el componente. Puede incluir Etiquetas, descripción, desplegable de detalle, botón, bloque de
+          compartir en redes.
         </li>
       </ul>
     ),

@@ -732,6 +732,40 @@ const HighlightedDocs: React.FC = () => {
         </>
       ),
     },
+    {
+      title: 'Destacado invertido',
+      content: (
+        <>
+          <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTONS_DARK}>
+            <ZoomContainer>
+              <div className="panel-horizontal-content bg-dark">
+                <div className="panel-horizontal d-flex flex-row-reverse">
+                  <Image
+                    src={`${basePath}/images/destacado.jpg`}
+                    alt="descripción de imagen"
+                    className="panel-img"
+                    width={538}
+                    height={304}
+                  ></Image>
+                  <div className="panel-body">
+                    <h2 className="panel-title">Título del destacado</h2>
+                    <p className="panel-text">
+                      Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
+                      negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas.
+                      No puede contener negritas ni enlaces
+                    </p>
+                    <div className="panel-footer">
+                      <LinkClient className="btn btn-light btn-lg">Botón</LinkClient>
+                      <LinkClient className="btn btn-outline-light btn-lg">Botón</LinkClient>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ZoomContainer>
+          </CodeBox>
+        </>
+      ),
+    },
   ];
 
   return (

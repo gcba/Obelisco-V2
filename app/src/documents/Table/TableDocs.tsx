@@ -31,6 +31,10 @@ const SECTIONS_DEV = [
       <>
         <CodeBox codeHTML={WITHOUT_DIVIDERS}>
           <div className="max-600 p-2">
+            <h2>Título de tabla</h2>
+            <p className="text-md mt-3">
+              Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+            </p>
             <div className="responsive-scroll" tabIndex={0}>
               <table className="table table-borderless">
                 <thead>

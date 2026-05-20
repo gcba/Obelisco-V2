@@ -1,4 +1,8 @@
 export const WITHOUT_DIVIDERS = `
+<h2>Título de tabla</h2>
+<p className="text-md mt-3">
+  Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+</p>
 <div class="responsive-scroll" tabIndex="0">
     <table class="table table-borderless">
         <thead>

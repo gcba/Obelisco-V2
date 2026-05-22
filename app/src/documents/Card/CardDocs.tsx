@@ -28,6 +28,7 @@ import {
 
 const basePath = '/Obelisco-V2';
 const colors = ['purple', 'red', 'sky', 'yellow', 'cyan', 'blue'];
+// const ZoomContainer = ({ children }: React.PropsWithChildren) => <div style={{ zoom: 0.5 }}>{children}</div>;
 
 const CardDocs: React.FC = () => {
   const SECTIONS_DEV = [
@@ -873,6 +874,73 @@ const CardDocs: React.FC = () => {
               </div>
             </div>
           </div>
+        </CodeBox>
+      ),
+    },
+    {
+      subtitle: 'Minimalista',
+      content: (
+        <CodeBox codeHTML={DISPOSITION_SCROLL}>
+          {/* <ZoomContainer> */}
+          <div className="card-items-3">
+            <div className="col">
+              <div className="card card-minimalista">
+                <div className="card-icon-container">
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                    ads_click
+                  </span>
+                </div>
+                <div className="card-body">
+                  <h3 className="card-title">
+                    <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                  </h3>
+                  <p className="card-text">
+                    Descripción de la tarjeta el máximo de líneas que puede tener es 4 líneas. Descripción de la tarjeta
+                    el máximo de líneas que puede tener es 4 líneas.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col">
+              <div className="card card-minimalista">
+                <div className="card-icon-container">
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                    ads_click
+                  </span>
+                </div>
+                <div className="card-body">
+                  <h3 className="card-title">
+                    <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                  </h3>
+                  <p className="card-text">
+                    Descripción de la tarjeta el máximo de líneas que puede tener es 4 líneas. Descripción de la tarjeta
+                    el máximo de líneas que puede tener es 4 líneas.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col">
+              <div className="card card-minimalista">
+                <div className="card-icon-container">
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                    ads_click
+                  </span>
+                </div>
+                <div className="card-body">
+                  <h3 className="card-title">
+                    <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                  </h3>
+                  <p className="card-text">
+                    Descripción de la tarjeta el máximo de líneas que puede tener es 4 líneas. Descripción de la tarjeta
+                    el máximo de líneas que puede tener es 4 líneas.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* </ZoomContainer> */}
         </CodeBox>
       ),
     },

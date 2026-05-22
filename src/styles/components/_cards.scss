@@ -228,6 +228,69 @@ $card-info-icon-size: 1rem;
       }
     }
   }
+
+  // Estilos para tarjetas minimalistas/tecba
+  &.card-minimalista {
+    width: 253px;
+    min-height: 320px;
+    max-width: 253px;
+    border-radius: 30px;
+    border: 1px solid #143246;
+    background-color: #e9f2fe;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 15px;
+    /* Evita que el fondo se extienda debajo del borde */
+    background-clip: padding-box;
+    overflow: hidden;
+    margin: 0;
+    gap: 15px;
+
+    .card-icon-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+
+      span.o-icon {
+        font-size: 60px;
+      }
+    }
+
+    .card-body {
+      margin: 0;
+      padding: 0 !important;
+      /* margin-top: auto; */
+      display: flex;
+      flex-direction: column;
+      /* el body ocupe todo el espacio restante */
+      flex: 1;
+
+      h3.card-title {
+        margin-top: 13px;
+        margin-bottom: 16px;
+        font-weight: 400;
+
+        a.card-title-link {
+          text-decoration: none;
+          color: #101e37;
+          font-size: 22px;
+        }
+      }
+
+      .card-text {
+        color: #101e37;
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    &:hover {
+      background-color: #fff;
+    }
+  }
 }
 
 //Estilos para lista de tarjetas verticales desplazable

@@ -123,6 +123,7 @@ $theme-color-btn-bg-hover: (
   @extend .headline-md; // Nunito, 18px, 24px
   font-weight: $font-weight-bold; // 700
   padding: $btn-padding-md;
+
   // border-radius: $border-radius-lg; // 0.5rem
   border-radius: 22px;
   min-height: 2.5rem; // 40px
@@ -293,9 +294,10 @@ $theme-color-btn-bg-hover: (
     &.focus,
     &:focus:not(:focus-visible) {
       color: $white;
-			// @if $color == 'tertiary' {
-			// 	color: $blue-900;
-			// }
+
+      // @if $color == 'tertiary' {
+      // 	color: $blue-900;
+      // }
 
       //Estilos para link
       @include btn-specific-color($color, 'link');
@@ -312,13 +314,14 @@ $theme-color-btn-bg-hover: (
 
   .btn-#{$color} {
     background-color: map-get($theme-colors, $color);
-		
-		@if $color == 'tertiary' {
-			color: $blue-900;
-			// &:hover {
-			// 	color: $blue-900;
-			// }
-		}
+
+    @if $color == 'tertiary' {
+      color: $blue-900;
+
+      // &:hover {
+      // 	color: $blue-900;
+      // }
+    }
   }
 }
 

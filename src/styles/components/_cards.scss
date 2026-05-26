@@ -291,6 +291,45 @@ $card-info-icon-size: 1rem;
       background-color: #fff;
     }
   }
+
+  // Estilos para tarjeta de imagen de fondo
+  &.card-img-bg {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    min-width: 346px;
+    padding: 40px 30px;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-20px);
+    }
+
+    img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      z-index: 0;
+    }
+
+    a {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+    }
+
+    > *:not(img, a) {
+      position: relative;
+      z-index: 1;
+    }
+  }
 }
 
 //Estilos para lista de tarjetas verticales desplazable

@@ -24,6 +24,7 @@ import {
   VERTICAL_IMG,
   VERTICAL_NOTICE,
   VERTICAL_NOTICE_TRUNCATE,
+  TARJETAS_IMAGEN_FONDO,
 } from './code-views';
 
 const basePath = '/Obelisco-V2';
@@ -941,6 +942,45 @@ const CardDocs: React.FC = () => {
             </div>
           </div>
           {/* </ZoomContainer> */}
+        </CodeBox>
+      ),
+    },
+    {
+      title: 'Full Image Card',
+      content: (
+        <CodeBox codeHTML={TARJETAS_IMAGEN_FONDO}>
+          <div className="container">
+            <div className="responsive-scroll vertical-cards-container pt-4" tabIndex={0}>
+              <div className="card card-img-bg">
+                <Image src={`${basePath}/images/cards/bax.png`} alt="descripción de imagen" width={348} height={196} />
+                <h2 className="fw-bold text-white">BAX</h2>
+                <a href="https://buenosaires.gob.ar/gcaba_historico/bax" aria-label="BAX"></a>
+              </div>
+
+              <div className="card card-img-bg">
+                <Image src={`${basePath}/images/cards/boti.png`} alt="descripción de imagen" width={348} height={196} />
+                <h2 className="fw-bold text-white">Boti</h2>
+                <a
+                  href="https://buenosaires.gob.ar/gcaba_historico/innovacionytransformaciondigital/boti"
+                  aria-label="Boti"
+                ></a>
+              </div>
+
+              <div className="card card-img-bg">
+                <Image
+                  src={`${basePath}/images/cards/seguridad.png`}
+                  alt="descripción de imagen"
+                  width={348}
+                  height={196}
+                />
+                <h2 className="fw-bold text-white">Centro de ciberseguridad</h2>
+                <a
+                  href="https://buenosaires.gob.ar/gcaba_historico/jefaturadegabinete/centro-de-ciberseguridad"
+                  aria-label="Centro de ciberseguridad"
+                ></a>
+              </div>
+            </div>
+          </div>
         </CodeBox>
       ),
     },

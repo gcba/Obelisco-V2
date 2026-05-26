@@ -564,3 +564,23 @@ export const TARJETAS_ACCESSIBILTY_2 = `
   </div>
 </div>
 `;
+
+export const TARJETAS_IMAGEN_FONDO = `
+<div class="responsive-scroll vertical-cards-container pt-4" tabindex="0">
+  <div class="card card-img-bg">
+    <img alt="descripción de imagen" loading="lazy" width="348" height="196" decoding="async" data-nimg="1" src="/Obelisco-V2/images/cards/bax.png" style="color: transparent;">
+    <h2 class="fw-bold text-white">BAX</h2>
+    <a href="https://buenosaires.gob.ar/gcaba_historico/bax" aria-label="BAX"></a>
+  </div>
+  <div class="card card-img-bg">
+    <img alt="descripción de imagen" loading="lazy" width="348" height="196" decoding="async" data-nimg="1" src="/Obelisco-V2/images/cards/boti.png" style="color: transparent;">
+    <h2 class="fw-bold text-white">Boti</h2>
+    <a href="https://buenosaires.gob.ar/gcaba_historico/innovacionytransformaciondigital/boti" aria-label="Boti"></a>
+  </div>
+  <div class="card card-img-bg">
+    <img alt="descripción de imagen" loading="lazy" width="348" height="196" decoding="async" data-nimg="1" src="/Obelisco-V2/images/cards/seguridad.png" style="color: transparent;">
+    <h2 class="fw-bold text-white">Centro de ciberseguridad</h2>
+    <a href="https://buenosaires.gob.ar/gcaba_historico/jefaturadegabinete/centro-de-ciberseguridad" aria-label="Centro de ciberseguridad"></a>
+  </div>
+</div>
+`;

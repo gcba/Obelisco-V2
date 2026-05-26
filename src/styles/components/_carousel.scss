@@ -288,6 +288,68 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     }
   }
 
+	&.ob-carousel-tecba {
+		background-color: transparent;
+
+		.carousel-header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 20px;
+
+			h3 {
+				margin: 0;
+				padding: 0;
+			}
+
+			.carousel-buttons {
+				display: flex;
+				gap: 12px;
+
+				.carousel-control-prev,
+				.carousel-control-next {
+					width: 63px;
+					height: 63px;
+					border-radius: 50%;
+					background: white;
+					border: solid 2px #101E37;
+					transition: all 0.3s ease;
+					box-sizing: border-box;
+					bottom: 30px;
+
+					span {
+						color: #101E37;
+						font-size: 28px;
+					}
+
+					&:hover {
+						background: rgba(0, 0, 0, 0.1);
+					}
+
+					&:focus {
+						box-shadow: 0 0 0 0.025rem #101E37;
+					}
+				}
+			}
+		}
+		
+		.carousel-inner {
+			.card-items {
+				padding: 0;
+				display: flex;
+				gap: 24px;
+				flex-wrap: nowrap;
+				align-items: stretch;
+			}
+		}
+
+		.carousel-indicators {
+			height: 64px;
+			width: 75%;
+		}
+	}
+
   @media (width >= 576px) {
     padding: 32px;
 
@@ -341,6 +403,27 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     .responsive-scroll {
       padding: 0;
     }
+
+		&.ob-carousel-tecba {
+			.carousel-header {
+				.carousel-buttons {
+					.carousel-control-prev,
+					.carousel-control-next {
+						position: unset;
+					}
+				}
+			}
+
+			.carousel-inner {
+				max-width: unset;
+			}
+
+			.carousel-indicators {
+				justify-content: center;
+				width: 100%;
+				height: auto;
+			}
+		}
   }
 
   $container-max-width: 720px;

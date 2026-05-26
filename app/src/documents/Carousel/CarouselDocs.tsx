@@ -1133,6 +1133,198 @@ const CarouselDocs: React.FC = () => {
         </CodeBox>
       ),
     },
+    {
+      subtle: 'Version Tecba',
+      content: (
+        <CodeBox codeHTML={CAROUSEL_CARDS_DARK}>
+          <div className="container">
+            <ZoomContainer>
+              <div id="carousel-cards-tecba" className="carousel slide ob-carousel-tecba">
+                <div className="carousel-header">
+                  <h3>Conocé los proyectos de TecBA</h3>
+
+                  <div className="carousel-buttons">
+                    <button
+                      className="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#carousel-cards-tecba"
+                      data-bs-slide="prev"
+                    >
+                      <span className="material-symbols-rounded">arrow_back</span>
+                      <span className="sr-only">Anterior</span>
+                    </button>
+
+                    <button
+                      className="carousel-control-next"
+                      type="button"
+                      data-bs-target="#carousel-cards-tecba"
+                      data-bs-slide="next"
+                    >
+                      <span className="material-symbols-rounded">arrow_forward</span>
+                      <span className="sr-only">Siguiente</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div className="carousel-inner pt-4">
+                  <div className="carousel-item active">
+                    <div className="card-items">
+                      <div className="card card-img-bg">
+                        <Image
+                          src={`${basePath}/images/cards/bax.png`}
+                          alt="descripción de imagen"
+                          width={348}
+                          height={196}
+                        />
+                        <h2 className="fw-bold text-white">BAX</h2>
+                        <a href="https://buenosaires.gob.ar/gcaba_historico/bax" aria-label="BAX"></a>
+                      </div>
+
+                      <div className="card card-img-bg">
+                        <Image
+                          src={`${basePath}/images/cards/boti.png`}
+                          alt="descripción de imagen"
+                          width={348}
+                          height={196}
+                        />
+                        <h2 className="fw-bold text-white">Boti</h2>
+                        <a
+                          href="https://buenosaires.gob.ar/gcaba_historico/innovacionytransformaciondigital/boti"
+                          aria-label="Boti"
+                        ></a>
+                      </div>
+
+                      <div className="card card-img-bg">
+                        <Image
+                          src={`${basePath}/images/cards/seguridad.png`}
+                          alt="descripción de imagen"
+                          width={348}
+                          height={196}
+                        />
+                        <h2 className="fw-bold text-white">Centro de ciberseguridad</h2>
+                        <a
+                          href="https://buenosaires.gob.ar/gcaba_historico/jefaturadegabinete/centro-de-ciberseguridad"
+                          aria-label="Centro de ciberseguridad"
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="carousel-item">
+                    <div className="card-items">
+                      <div className="card card-img-bg">
+                        <Image
+                          src={`${basePath}/images/cards/bax.png`}
+                          alt="descripción de imagen"
+                          width={348}
+                          height={196}
+                        />
+                        <h2 className="fw-bold text-white">BAX</h2>
+                        <a href="https://buenosaires.gob.ar/gcaba_historico/bax" aria-label="BAX"></a>
+                      </div>
+
+                      <div className="card card-img-bg">
+                        <Image
+                          src={`${basePath}/images/cards/boti.png`}
+                          alt="descripción de imagen"
+                          width={348}
+                          height={196}
+                        />
+                        <h2 className="fw-bold text-white">Boti</h2>
+                        <a
+                          href="https://buenosaires.gob.ar/gcaba_historico/innovacionytransformaciondigital/boti"
+                          aria-label="Boti"
+                        ></a>
+                      </div>
+
+                      <div className="card card-img-bg">
+                        <Image
+                          src={`${basePath}/images/cards/seguridad.png`}
+                          alt="descripción de imagen"
+                          width={348}
+                          height={196}
+                        />
+                        <h2 className="fw-bold text-white">Centro de ciberseguridad</h2>
+                        <a
+                          href="https://buenosaires.gob.ar/gcaba_historico/jefaturadegabinete/centro-de-ciberseguridad"
+                          aria-label="Centro de ciberseguridad"
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="carousel-item">
+                    <div className="card-items">
+                      <div className="card card-img-bg">
+                        <Image
+                          src={`${basePath}/images/cards/bax.png`}
+                          alt="descripción de imagen"
+                          width={348}
+                          height={196}
+                        />
+                        <h2 className="fw-bold text-white">BAX</h2>
+                        <a href="https://buenosaires.gob.ar/gcaba_historico/bax" aria-label="BAX"></a>
+                      </div>
+
+                      <div className="card card-img-bg">
+                        <Image
+                          src={`${basePath}/images/cards/boti.png`}
+                          alt="descripción de imagen"
+                          width={348}
+                          height={196}
+                        />
+                        <h2 className="fw-bold text-white">Boti</h2>
+                        <a
+                          href="https://buenosaires.gob.ar/gcaba_historico/innovacionytransformaciondigital/boti"
+                          aria-label="Boti"
+                        ></a>
+                      </div>
+
+                      <div className="card card-img-bg">
+                        <Image
+                          src={`${basePath}/images/cards/seguridad.png`}
+                          alt="descripción de imagen"
+                          width={348}
+                          height={196}
+                        />
+                        <h2 className="fw-bold text-white">Centro de ciberseguridad</h2>
+                        <a
+                          href="https://buenosaires.gob.ar/gcaba_historico/jefaturadegabinete/centro-de-ciberseguridad"
+                          aria-label="Centro de ciberseguridad"
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carousel-cards-tecba"
+                    data-bs-slide-to="0"
+                    className="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel-cards-tecba"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel-cards-tecba"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+              </div>
+            </ZoomContainer>
+          </div>
+        </CodeBox>
+      ),
+    },
   ];
 
   return (

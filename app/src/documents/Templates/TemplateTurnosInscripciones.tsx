@@ -146,12 +146,13 @@ const TemplateTurnosInscripciones: React.FC = () => {
               <li className="mb-3">Destacado lateral</li>
               <li>Mapa</li>
             </ol>
+
             <Image
-              src={`${basePath}/images/templates/pagina_turnos_inscripciones/mapa.svg`}
+              src={`${basePath}/images/templates/pagina_turnos_inscripciones/pagina_turnos_inscripciones_2.svg`}
               alt="Ejemplo de estructura general"
               width="800"
               height="295"
-              className="img-fluid mt-3"
+              className="img-fluid"
             />
           </div>
         </>
@@ -215,13 +216,6 @@ const TemplateTurnosInscripciones: React.FC = () => {
                 sistema de estándares y diseño.
               </p>
             </div>
-            <Image
-              src={`${basePath}/images/templates/pagina_turnos_inscripciones/pagina_turnos_inscripciones_3.svg`}
-              alt="Ejemplo de estructura general"
-              width="800"
-              height="295"
-              className="img-fluid mb-4"
-            />
           </div>
         </>
       ),
@@ -296,7 +290,7 @@ const TemplateTurnosInscripciones: React.FC = () => {
             </p>
             {/* cambiar img */}
             <Image
-              src={`${basePath}/images/templates/pagina_turnos_inscripciones/pagina_turnos_inscripciones_4.svg`}
+              src={`${basePath}/images/templates/pagina_turnos_inscripciones/pagina_turnos_inscripciones_5.svg`}
               alt="Ejemplo de espaciados"
               width="800"
               height="295"
@@ -356,7 +350,7 @@ const TemplateTurnosInscripciones: React.FC = () => {
             </p>
             {/* cambiar img */}
             <Image
-              src={`${basePath}/images/templates/pagina_turnos_inscripciones/pagina_turnos_inscripciones_4.svg`}
+              src={`${basePath}/images/templates/pagina_turnos_inscripciones/pagina_turnos_inscripciones_6.svg`}
               alt="Ejemplo de espaciados"
               width="800"
               height="295"
@@ -415,7 +409,7 @@ const TemplateTurnosInscripciones: React.FC = () => {
             </p>
             {/* cambiar img */}
             <Image
-              src={`${basePath}/images/templates/pagina_turnos_inscripciones/pagina_turnos_inscripciones_4.svg`}
+              src={`${basePath}/images/templates/pagina_turnos_inscripciones/pagina_turnos_inscripciones_7.svg`}
               alt="Ejemplo de espaciados"
               width="800"
               height="295"
@@ -472,7 +466,7 @@ const TemplateTurnosInscripciones: React.FC = () => {
             </p>
             {/* cambiar img */}
             <Image
-              src={`${basePath}/images/templates/pagina_turnos_inscripciones/pagina_turnos_inscripciones_4.svg`}
+              src={`${basePath}/images/templates/pagina_turnos_inscripciones/pagina_turnos_inscripciones_8.svg`}
               alt="Ejemplo de espaciados"
               width="800"
               height="295"

@@ -137,7 +137,7 @@ const TemplatesComponents: React.FC = () => {
 
               <div className="col">
                 <div className="card h-100">
-                  <span className="material-symbols-rounded card-icon">calendar_month</span>{' '}
+                  <span className="material-symbols-rounded card-icon">calendar_check</span>{' '}
                   <div className="card-body">
                     <h3 className="card-title">
                       <a href={`${basePath}/templates/pagina-turnos-inscripciones`} className="card-title-link">

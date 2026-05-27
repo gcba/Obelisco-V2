@@ -92,6 +92,7 @@ export const templatesPages = [
   { text: 'Noticias', url: '/templates/pagina-de-noticias', id: 7 },
   { text: 'Formularios', url: '/templates/formularios', id: 8 },
   { text: 'Perfil institucional', url: '/templates/perfil-institucional', id: 8 },
+  { text: 'Página de turnos e inscripciones', url: '/templates/pagina-turnos-inscripciones', id: 9 },
 ];
 
 export const patterns = [{ text: 'Construir un formulario', url: '/patterns', id: 1 }];

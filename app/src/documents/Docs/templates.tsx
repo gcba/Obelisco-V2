@@ -134,6 +134,23 @@ const TemplatesComponents: React.FC = () => {
                   </div>
                 </div>
               </div>
+
+              <div className="col">
+                <div className="card h-100">
+                  <span className="material-symbols-rounded card-icon">calendar_month</span>{' '}
+                  <div className="card-body">
+                    <h3 className="card-title">
+                      <a href={`${basePath}/templates/pagina-turnos-inscripciones`} className="card-title-link">
+                        Página de turnos e inscripciones
+                      </a>
+                    </h3>
+                    <p className="card-text">
+                      Página que usamos para gestionar la reserva o la inscripción de turnos y capacitaciones que ofrece
+                      el Gobierno de la Ciudad de Buenos Aires.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </>

@@ -26,7 +26,16 @@ const TemplateTurnosInscripciones: React.FC = () => {
             </p>
 
             <ul className="list-informative-bullet">
-              <li>Migas de pan, que nos indican el recorrido de la persona usuaria hasta la página actual.</li>
+              <li>
+                <a
+                  href="https://gcba.github.io/Obelisco-V2/components/breadcrumb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Migas de pan
+                </a>
+                , que nos indican el recorrido de la persona usuaria hasta la página actual.
+              </li>
               <li>Título del turno o inscripción.</li>
               <li>Una breve descripción del turno o inscripción.</li>
               <li>La modalidad del turno o incripción identificada con la etiqueta respectiva.</li>
@@ -37,7 +46,7 @@ const TemplateTurnosInscripciones: React.FC = () => {
               alt="Ejemplo de estructura general"
               width="800"
               height="295"
-              className="img-fluid"
+              className="img-fluid mt-5"
             />
           </div>
         </>
@@ -79,7 +88,7 @@ const TemplateTurnosInscripciones: React.FC = () => {
               </li>
             </ul>
 
-            <p className="headline-sm">No usar cuando:</p>
+            <p className="headline-sm mt-3">No usar cuando:</p>
 
             <ul className="list-informative-bullet">
               <li>
@@ -112,7 +121,7 @@ const TemplateTurnosInscripciones: React.FC = () => {
               <li>El servicio, curso o trámite, requiere presencialidad.</li>
             </ul>
 
-            <p className="headline-sm">No usar cuando:</p>
+            <p className="headline-sm mt-3">No usar cuando:</p>
 
             <ul className="list-informative-bullet">
               <li>El trámite es completamente digital.</li>
@@ -133,10 +142,17 @@ const TemplateTurnosInscripciones: React.FC = () => {
 
             <p className="headline-sm">Orden recomendado:</p>
 
-            <ul>
-              <li>Destacado lateral</li>
+            <ol>
+              <li className="mb-3">Destacado lateral</li>
               <li>Mapa</li>
-            </ul>
+            </ol>
+            <Image
+              src={`${basePath}/images/templates/pagina_turnos_inscripciones/mapa.svg`}
+              alt="Ejemplo de estructura general"
+              width="800"
+              height="295"
+              className="img-fluid mt-3"
+            />
           </div>
         </>
       ),
@@ -156,7 +172,7 @@ const TemplateTurnosInscripciones: React.FC = () => {
               alt="Ejemplo de estructura general"
               width="800"
               height="295"
-              className="img-fluid"
+              className="img-fluid mb-4 mt-2"
             />
             <p className="text-xl" style={{ marginBottom: '12px' }}>
               Buenas prácticas
@@ -204,7 +220,7 @@ const TemplateTurnosInscripciones: React.FC = () => {
               alt="Ejemplo de estructura general"
               width="800"
               height="295"
-              className="img-fluid"
+              className="img-fluid mb-4"
             />
           </div>
         </>
@@ -268,8 +284,15 @@ const TemplateTurnosInscripciones: React.FC = () => {
           <div className="d-flex flex-column gap-2 mb-3 mt-2">
             <p className="text-md">
               En este bloque la persona usuaria podrá ver cada uno de los pasos organizados en secuencia que deberá
-              realizar para completar el trámite. Para mostrarlos, se utiliza una lista de pasos siguiendo los
-              lineamientos de Obelisco, nuestro sistema de estándares y diseño.
+              realizar para completar el trámite. Para mostrarlos, se utiliza una{' '}
+              <a
+                href="https://gcba.github.io/Obelisco-V2/components/list-step"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                lista de pasos
+              </a>{' '}
+              siguiendo los lineamientos de Obelisco, nuestro sistema de estándares y diseño.
             </p>
             {/* cambiar img */}
             <Image
@@ -277,7 +300,7 @@ const TemplateTurnosInscripciones: React.FC = () => {
               alt="Ejemplo de espaciados"
               width="800"
               height="295"
-              className="img-fluid"
+              className="img-fluid mb-4"
             />
             <p className="text-xl" style={{ marginBottom: '12px' }}>
               Buenas prácticas
@@ -337,7 +360,7 @@ const TemplateTurnosInscripciones: React.FC = () => {
               alt="Ejemplo de espaciados"
               width="800"
               height="295"
-              className="img-fluid"
+              className="img-fluid mb-4"
             />
             <p className="text-xl" style={{ marginBottom: '12px' }}>
               Buenas prácticas
@@ -396,7 +419,7 @@ const TemplateTurnosInscripciones: React.FC = () => {
               alt="Ejemplo de espaciados"
               width="800"
               height="295"
-              className="img-fluid"
+              className="img-fluid mb-4 mt-2"
             />
             <p className="text-xl" style={{ marginBottom: '12px' }}>
               Buenas prácticas
@@ -437,8 +460,15 @@ const TemplateTurnosInscripciones: React.FC = () => {
         <>
           <div className="d-flex flex-column gap-2 mb-3 mt-2">
             <p className="text-md">
-              Para mostrar preguntas frecuentes se utilizan colapsables de selección única siguiendo los lineamientos de
-              Obelisco, nuestro sistema de estándares y diseño.
+              Para mostrar preguntas frecuentes se utilizan{' '}
+              <a
+                href="https://gcba.github.io/Obelisco-V2/components/collapse"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                colapsables
+              </a>{' '}
+              de selección única siguiendo los lineamientos de Obelisco, nuestro sistema de estándares y diseño.
             </p>
             {/* cambiar img */}
             <Image
@@ -446,7 +476,7 @@ const TemplateTurnosInscripciones: React.FC = () => {
               alt="Ejemplo de espaciados"
               width="800"
               height="295"
-              className="img-fluid"
+              className="img-fluid mb-4"
             />
             <p className="text-xl" style={{ marginBottom: '12px' }}>
               Buenas prácticas

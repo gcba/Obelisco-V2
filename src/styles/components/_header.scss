@@ -548,6 +548,11 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
       }
     }
   }
+
+  &.bg-glass {
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(5.25px);
+  }
 }
 
 // Header Variante Banner

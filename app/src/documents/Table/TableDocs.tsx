@@ -31,6 +31,12 @@ const SECTIONS_DEV = [
       <>
         <CodeBox codeHTML={WITHOUT_DIVIDERS}>
           <div className="max-600 p-2">
+            <div className="table-title">
+              <h2 className="mb-4">Título de tabla</h2>
+              <p className="text-md">
+                Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+              </p>
+            </div>
             <div className="responsive-scroll" tabIndex={0}>
               <table className="table table-borderless">
                 <thead>
@@ -188,6 +194,12 @@ const SECTIONS_DEV = [
     content: (
       <CodeBox codeHTML={WITH_DIVIDERS}>
         <div className="max-600 p-2">
+          <div className="table-title">
+            <h2 className="mb-4">Título de tabla</h2>
+            <p className="text-md">
+              Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+            </p>
+          </div>
           <div className="responsive-scroll" tabIndex={0}>
             <table className="table">
               <thead>
@@ -341,6 +353,12 @@ const SECTIONS_DEV = [
     content: (
       <CodeBox codeHTML={WITH_ZEBRA}>
         <div className="max-600 p-2">
+          <div className="table-title">
+            <h2 className="mb-4">Título de tabla</h2>
+            <p className="text-md">
+              Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+            </p>
+          </div>
           <div className="responsive-scroll" tabIndex={0}>
             <table className="table table-striped">
               <thead>
@@ -494,6 +512,12 @@ const SECTIONS_DEV = [
     content: (
       <CodeBox codeHTML={WITH_CHECKBOX}>
         <div className="max-600 p-2">
+          <div className="table-title">
+            <h2 className="mb-4">Título de tabla</h2>
+            <p className="text-md">
+              Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+            </p>
+          </div>
           <div className="responsive-scroll" tabIndex={0}>
             <table className="table">
               <thead>
@@ -619,6 +643,12 @@ const SECTIONS_DEV = [
     content: (
       <CodeBox codeHTML={TABLE_TEXT}>
         <div className="max-600 p-2">
+          <div className="table-title">
+            <h2 className="mb-4">Título de tabla</h2>
+            <p className="text-md">
+              Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+            </p>
+          </div>
           <div className="responsive-scroll" tabIndex={0}>
             <table className="table">
               <thead>
@@ -667,6 +697,12 @@ const SECTIONS_DEV = [
     content: (
       <CodeBox codeHTML={TABLE_NUMBER}>
         <div className="max-600 p-2">
+          <div className="table-title">
+            <h2 className="mb-4">Título de tabla</h2>
+            <p className="text-md">
+              Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+            </p>
+          </div>
           <div className="responsive-scroll" tabIndex={0}>
             <table className="table">
               <thead>
@@ -732,6 +768,12 @@ const SECTIONS_DEV = [
     content: (
       <CodeBox codeHTML={TABLE_LINK}>
         <div className="max-600 p-2">
+          <div className="table-title">
+            <h2 className="mb-4">Título de tabla</h2>
+            <p className="text-md">
+              Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+            </p>
+          </div>
           <div className="responsive-scroll" tabIndex={0}>
             <table className="table">
               <thead>
@@ -805,6 +847,12 @@ const SECTIONS_DEV = [
     content: (
       <CodeBox codeHTML={TABLE_TAG}>
         <div className="max-600 p-2">
+          <div className="table-title">
+            <h2 className="mb-4">Título de tabla</h2>
+            <p className="text-md">
+              Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+            </p>
+          </div>
           <div className="responsive-scroll" tabIndex={0}>
             <table className="table">
               <thead>
@@ -878,6 +926,12 @@ const SECTIONS_DEV = [
     content: (
       <CodeBox codeHTML={TABLE_BUTTON}>
         <div className="max-600 p-2">
+          <div className="table-title">
+            <h2 className="mb-4">Título de tabla</h2>
+            <p className="text-md">
+              Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+            </p>
+          </div>
           <div className="responsive-scroll" tabIndex={0}>
             <table className="table">
               <thead>
@@ -959,6 +1013,12 @@ const SECTIONS_DEV = [
     content: (
       <CodeBox codeHTML={TABLE_BUTTON_ICON}>
         <div className="max-600 p-2">
+          <div className="table-title">
+            <h2 className="mb-4">Título de tabla</h2>
+            <p className="text-md">
+              Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+            </p>
+          </div>
           <div className="responsive-scroll" tabIndex={0}>
             <table className="table">
               <thead>

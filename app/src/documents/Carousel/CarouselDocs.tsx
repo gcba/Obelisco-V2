@@ -1139,7 +1139,8 @@ const CarouselDocs: React.FC = () => {
         <CodeBox codeHTML={CAROUSEL_CARDS_DARK}>
           <div className="container">
             <ZoomContainer>
-              <div id="carousel-cards-tecba" className="carousel slide ob-carousel-tecba">
+              {/* CAROUSEL MOBILE */}
+              <div id="carousel-cards-tecba" className="carousel slide ob-carousel-tecba d-md-none">
                 <div className="carousel-header">
                   <h3>Conocé los proyectos de TecBA</h3>
 
@@ -1150,23 +1151,101 @@ const CarouselDocs: React.FC = () => {
                       data-bs-target="#carousel-cards-tecba"
                       data-bs-slide="prev"
                     >
-                      <span className="material-symbols-rounded">arrow_back</span>
-                      <span className="sr-only">Anterior</span>
+                      <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span className="visually-hidden">Anterior</span>
                     </button>
-
                     <button
                       className="carousel-control-next"
                       type="button"
                       data-bs-target="#carousel-cards-tecba"
                       data-bs-slide="next"
                     >
-                      <span className="material-symbols-rounded">arrow_forward</span>
-                      <span className="sr-only">Siguiente</span>
+                      <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span className="visually-hidden">Siguiente</span>
                     </button>
                   </div>
                 </div>
 
-                <div className="carousel-inner pt-4">
+                <div className="carousel-inner pt-4 d-block d-md-none">
+                  {(() => {
+                    const slides = [
+                      { img: 'bax.png', title: 'BAX', url: 'https://buenosaires.gob.ar/gcaba_historico/bax' },
+                      {
+                        img: 'boti.png',
+                        title: 'Boti',
+                        url: 'https://buenosaires.gob.ar/gcaba_historico/innovacionytransformaciondigital/boti',
+                      },
+                      {
+                        img: 'seguridad.png',
+                        title: 'Centro de ciberseguridad',
+                        url: 'https://buenosaires.gob.ar/gcaba_historico/innovacionytransformaciondigital/centro-de-ciberseguridad',
+                      },
+                    ];
+                    return Array.from({ length: 3 }).flatMap((_, repetition) =>
+                      slides.map((slide, index) => {
+                        const key = repetition * slides.length + index;
+                        return (
+                          <div className={`carousel-item ${key === 0 ? 'active' : ''}`} key={key}>
+                            <div className="card card-img-bg">
+                              <Image
+                                src={`${basePath}/images/cards/${slide.img}`}
+                                alt="descripción de imagen"
+                                width={348}
+                                height={196}
+                              />
+                              <h2 className="fw-bold text-white">{slide.title}</h2>
+                              <a href={slide.url} aria-label={slide.title}></a>
+                            </div>
+                          </div>
+                        );
+                      }),
+                    );
+                  })()}
+                </div>
+
+                <div className="carousel-indicators d-md-none">
+                  {Array.from({ length: 9 }).map((_, index) => (
+                    <button
+                      key={index}
+                      type="button"
+                      data-bs-target="#carousel-cards-tecba"
+                      data-bs-slide-to={index}
+                      className={index === 0 ? 'active' : ''}
+                      aria-current="true"
+                      aria-label={`Slide ${index + 1}`}
+                    ></button>
+                  ))}
+                </div>
+              </div>
+
+              {/* CAROUSEL DESKTOP */}
+              <div id="carousel-cards-tecba-desktop" className="carousel slide ob-carousel-tecba d-none d-md-flex">
+                <div className="carousel-header">
+                  <h3>Conocé los proyectos de TecBA</h3>
+
+                  <div className="carousel-buttons">
+                    <button
+                      className="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#carousel-cards-tecba-desktop"
+                      data-bs-slide="prev"
+                    >
+                      <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span className="visually-hidden">Anterior</span>
+                    </button>
+                    <button
+                      className="carousel-control-next"
+                      type="button"
+                      data-bs-target="#carousel-cards-tecba-desktop"
+                      data-bs-slide="next"
+                    >
+                      <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span className="visually-hidden">Siguiente</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div className="carousel-inner pt-4 d-none d-md-block">
                   <div className="carousel-item active">
                     <div className="card-items">
                       <div className="card card-img-bg">
@@ -1297,27 +1376,18 @@ const CarouselDocs: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="carousel-indicators">
-                  <button
-                    type="button"
-                    data-bs-target="#carousel-cards-tecba"
-                    data-bs-slide-to="0"
-                    className="active"
-                    aria-current="true"
-                    aria-label="Slide 1"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carousel-cards-tecba"
-                    data-bs-slide-to="1"
-                    aria-label="Slide 2"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carousel-cards-tecba"
-                    data-bs-slide-to="2"
-                    aria-label="Slide 3"
-                  ></button>
+                <div className="carousel-indicators d-none d-md-flex">
+                  {Array.from({ length: 3 }).map((_, index) => (
+                    <button
+                      key={index}
+                      type="button"
+                      data-bs-target="#carousel-cards-tecba-desktop"
+                      data-bs-slide-to={index}
+                      className={index === 0 ? 'active' : ''}
+                      aria-current="true"
+                      aria-label={`Slide ${index + 1}`}
+                    ></button>
+                  ))}
                 </div>
               </div>
             </ZoomContainer>

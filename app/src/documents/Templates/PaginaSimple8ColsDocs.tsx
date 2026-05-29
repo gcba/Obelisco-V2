@@ -11,7 +11,7 @@ import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import { TEMPLATE_PAG_SIMPLE } from './code-views';
 const basePath = '/Obelisco-V2';
 
-const TemplatePaginaSimpleDocs: React.FC = () => {
+const PaginaSimple8ColsDocs: React.FC = () => {
   const [activeTab, setActiveTab] = useState('panel-content-docs');
 
   const DOC_SECTIONS = [
@@ -494,6 +494,9 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
           <li className="breadcrumb-item">
             <Link href="/templates">Plantillas</Link>
           </li>
+          <li className="breadcrumb-item">
+            <Link href="/templates/paginas-simples">Página simple</Link>
+          </li>
         </ol>
       </nav>
       <ComponentHeader
@@ -544,4 +547,4 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
   );
 };
 
-export default TemplatePaginaSimpleDocs;
+export default PaginaSimple8ColsDocs;

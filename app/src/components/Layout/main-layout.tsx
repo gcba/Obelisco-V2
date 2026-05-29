@@ -87,7 +87,7 @@ export const contenidos = [
 export const templatesPages = [
   { text: 'Páginas de áreas ', url: '/templates/paginas-de-areas', id: 1 },
   { text: 'Página de trámites', url: '/templates/pagina-tramites', id: 4 },
-  { text: 'Página simple', url: '/templates/pagina-simple', id: 5 },
+  { text: 'Página simple', url: '/templates/paginas-simples', id: 5 },
   { text: 'Página de libro', url: '/templates/pagina-de-libro', id: 6 },
   { text: 'Noticias', url: '/templates/pagina-de-noticias', id: 7 },
   { text: 'Formularios', url: '/templates/formularios', id: 8 },

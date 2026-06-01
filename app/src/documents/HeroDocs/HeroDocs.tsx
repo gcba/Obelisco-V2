@@ -457,6 +457,75 @@ const HeroHeaderDocs: React.FC = () => {
       ),
     },
     {
+      subtitle: 'con navbar tecba',
+      content: (
+        <>
+          <CodeBox codeHTML={HERO_DINAMICO}>
+            <div className="container">
+              <div className="hero-container">
+                <div className="hero-box-sizing ">
+                  <header className="navbar tecba-navbar navbar-lg">
+                    <div className="container">
+                      <a className="navbar-brand" href="https://www.buenosaires.gob.ar/">
+                        <img className="header-logo" src="./imgs/ba-logo.svg" alt="Ciudad de buenos aires" />
+                      </a>
+                      <div className="navbar-search d-responsive ml-auto">
+                        <button type="button" className="btn btn-icon tecba-button btn-dark">
+                          <span className="material-icons-round">search</span>
+                        </button>
+                      </div>
+
+                      <div className="list-group-content d-responsive ml-2">
+                        <button type="button" className="btn btn-icon tecba-button btn-light">
+                          <span className="material-icons-round">menu</span>
+                        </button>
+                      </div>
+
+                      <div className="list-group-content d-responsive ml-2">
+                        <button type="button" className="btn btn-icon tecba-button btn-cyan">
+                          <span className="material-icons-round">person</span>
+                        </button>
+                      </div>
+
+                      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className="nav nav-pills">
+                          <li className="nav-item d-responsive">
+                            <div className="navbar-search">
+                              <form className="form-search">
+                                <div className="form-group">
+                                  <input
+                                    type="search"
+                                    className="form-control form-control-sm input-search tecba-search"
+                                    id="header-search-example-4"
+                                    name="header-search"
+                                    aria-label="Ingrese su búsqueda"
+                                    placeholder="¿En que te podemos ayudar?"
+                                  />
+                                  <button type="button" className="btn btn-dark tecba-button">
+                                    Buscar
+                                  </button>
+                                </div>
+                              </form>
+                            </div>
+                          </li>
+                          <li className="nav-item d-responsive">
+                            <button type="button" className="btn btn-icon tecba-button btn-cyan">
+                              <span className="material-icons-round">person</span>
+                              Ingresar
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </header>
+                </div>
+              </div>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+    {
       subtitle: 'Institucional',
       content: (
         <>

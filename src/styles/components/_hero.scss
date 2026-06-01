@@ -449,3 +449,34 @@ header.hero.bg-content-hero-dark .content {
     background: transparent $breadcrumb-divider-dark no-repeat center center !important;
   }
 }
+
+/* HEADER NAVBAR */
+header.tecba-navbar {
+  background-color: transparent;
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  height: 80px !important;
+}
+
+header.tecba-navbar .form-search {
+  height: auto;
+}
+
+header.tecba-navbar .tecba-search.form-control-sm {
+  height: 64px;
+  width: 24rem;
+}
+
+header.tecba-navbar .form-search .form-group .btn {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (width > 1160px) {
+  header.tecba-navbar {
+    height: 7rem;
+  }
+}

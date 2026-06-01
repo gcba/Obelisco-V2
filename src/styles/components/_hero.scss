@@ -457,22 +457,75 @@ header.tecba-navbar {
   inset: 0;
   z-index: 2;
   height: 80px !important;
+	border-bottom: unset !important;
 }
+
 
 header.tecba-navbar .form-search {
   height: auto;
 }
 
-header.tecba-navbar .tecba-search.form-control-sm {
+header.tecba-navbar .input-search-with-button {
   height: 64px;
-  width: 24rem;
 }
 
-header.tecba-navbar .form-search .form-group .btn {
+header.tecba-navbar .search-container .btn {
   position: absolute;
   right: 16px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.tecba-search.form-control.input-search {
+	padding: 8px 142px 8px 40px !important;
+	border-radius: 100px;
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.10);
+	background-color: rgba(255, 255, 255, 0.18);
+	backdrop-filter: blur(5.25px);
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='white' d='M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z'/%3E%3C/svg%3E") !important;
+	background-position: center left .8rem;
+	background-size: 16px;
+	color: rgba(255, 255, 255, 0.80);
+	outline: unset;
+}
+
+.tecba-search::placeholder {
+	color: rgba(255, 255, 255, 0.80);
+}
+
+.tecba-search:focus {
+	outline: unset !important;
+	background-color: rgba(255, 255, 255, 0.18);
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.10);
+}
+
+/* BUTTON */
+.tecba-button {
+	border-radius: 45px;
+	padding: 12px 20px;
+	outline: unset;
+}
+
+.tecba-button.btn-cyan {
+	background-color: #64D8C8;
+	color: #143246;
+}
+
+.tecba-button.btn-cyan:hover,
+.tecba-button.btn-cyan:active,
+.tecba-button.btn-cyan:focus {
+	box-shadow: 0 0 0 2px #64D8C8;
+}
+
+.tecba-button.btn-dark {
+	background-color: #101E37;
+	color: #fff;
+}
+
+.tecba-button.btn-dark:hover,
+.tecba-button.btn-dark:active,
+.tecba-button.btn-dark:focus {
+	box-shadow: 0 0 0 2px #101E37;
 }
 
 @media (width > 1160px) {

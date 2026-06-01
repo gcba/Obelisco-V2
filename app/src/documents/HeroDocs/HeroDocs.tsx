@@ -27,6 +27,7 @@ import {
 } from './code-views';
 
 const logo = '/images/logo_ba.svg';
+const logo_white = '/images/logo_ba_white.svg';
 const logo_mobile = '/images/logo_ba_mobile.svg';
 
 const HeroHeaderDocs: React.FC = () => {
@@ -463,60 +464,106 @@ const HeroHeaderDocs: React.FC = () => {
           <CodeBox codeHTML={HERO_DINAMICO}>
             <div className="container">
               <div className="hero-container">
-                <div className="hero-box-sizing ">
-                  <header className="navbar tecba-navbar navbar-lg">
-                    <div className="container">
-                      <a className="navbar-brand" href="https://www.buenosaires.gob.ar/">
-                        <img className="header-logo" src="./imgs/ba-logo.svg" alt="Ciudad de buenos aires" />
-                      </a>
-                      <div className="navbar-search d-responsive ml-auto">
-                        <button type="button" className="btn btn-icon tecba-button btn-dark">
-                          <span className="material-symbols-rounded">search</span>
-                        </button>
-                      </div>
-
-                      <div className="list-group-content d-responsive ml-2">
-                        <button type="button" className="btn btn-icon tecba-button btn-light">
-                          <span className="material-symbols-rounded">menu</span>
-                        </button>
-                      </div>
-
-                      <div className="list-group-content d-responsive ml-2">
-                        <button type="button" className="btn btn-icon tecba-button btn-cyan">
-                          <span className="material-symbols-rounded">person</span>
-                        </button>
-                      </div>
-
-                      <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="nav nav-pills">
-                          <li className="nav-item d-responsive">
+                <div className="hero-box-sizing">
+                  <header className="hero">
+                    {/* HEADER */}
+                    <header
+                      className="o-header tecba-navbar navbar position-absolute top-0 start-0 z-3 w-100"
+                      role="banner"
+                    >
+                      <LinkClient href="#main" className="skip-to-main-content-link">
+                        Saltar al contenido principal
+                      </LinkClient>
+                      <div className="container header-container">
+                        <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
+                          <img src={`${basePath}${logo_white}`} alt="Gobierno de la Ciudad de Buenos Aires - Inicio" />
+                        </LinkClient>
+                        <div className="navbar-login-mobile">
+                          <LinkClient className="btn btn-lg btn-icon btn-outline-tertiary">
+                            <span className="material-symbols-rounded" aria-hidden="true">
+                              person
+                            </span>
+                            <span className="btn-text">Ingresar</span>
+                          </LinkClient>
+                        </div>
+                        <button
+                          className="navbar-toggler"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#navbarContent1"
+                          aria-controls="navbarContent1"
+                          aria-expanded="false"
+                          aria-label="Menú"
+                        ></button>
+                        <div className="collapse navbar-collapse" id="navbarContent1">
+                          <div className="navbar-content align-items-center">
+                            <div className="navbar-sections"></div>
                             <div className="navbar-search">
                               <form className="form-search">
-                                <div className="form-group">
+                                <label htmlFor="header-search" className="form-label sr-only">
+                                  Buscador
+                                </label>
+                                <div className="search-container">
                                   <input
                                     type="search"
-                                    className="form-control form-control-sm input-search tecba-search"
-                                    id="header-search-example-4"
-                                    name="header-search"
-                                    aria-label="Ingrese su búsqueda"
-                                    placeholder="¿En que te podemos ayudar?"
+                                    className="form-control input-search input-search-with-button tecba-search"
+                                    id="header-search"
+                                    placeholder="Buscador"
                                   />
+                                  {/* <button className="reset" type="reset" aria-label="Borrar"></button> */}
+                                  {/* <button className="button-search" type="submit" aria-label="Buscar"></button> */}
                                   <button type="button" className="btn btn-dark tecba-button">
                                     Buscar
                                   </button>
                                 </div>
                               </form>
                             </div>
-                          </li>
-                          <li className="nav-item d-responsive">
-                            <button type="button" className="btn btn-icon tecba-button btn-cyan">
-                              <span className="material-icons-round">person</span>
-                              Ingresar
-                            </button>
-                          </li>
-                        </ul>
+                            <div className="navbar-login">
+                              <LinkClient className="btn btn-lg btn-outline-tertiary tecba-button btn-cyan">
+                                <span className="material-symbols-rounded" aria-hidden="true">
+                                  person
+                                </span>
+                                <span className="btn-text">Ingresar</span>
+                              </LinkClient>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="header-backdrop"></div>
+                    </header>
+                    {/* HEADER */}
+                    <div className="content corner" style={{ paddingTop: '100px' }}>
+                      <div className="d-flex flex-column">
+                        <nav aria-label="Navegación secundaria">
+                          <ol className="breadcrumb m-0">
+                            <li className="breadcrumb-item">
+                              <a href="#">Inicio</a>
+                            </li>
+                          </ol>
+                        </nav>
+
+                        <div>
+                          <h1 className="mb-3">Encabezado de la página</h1>
+                          <p className="lead m-0">
+                            Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la
+                            convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
+                          </p>
+                        </div>
+
+                        {/* botones */}
+                        <div className="btn-hero">
+                          <button type="button" className="btn btn-secondary">
+                            Botón
+                          </button>
+                          <button type="button" className="btn btn-outline-secondary">
+                            Botón
+                          </button>
+                        </div>
+                        {/* botones */}
                       </div>
                     </div>
+
+                    <div className="aside bg-aside-hero-dark"></div>
                   </header>
                 </div>
               </div>

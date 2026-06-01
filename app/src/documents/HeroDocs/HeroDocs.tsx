@@ -471,19 +471,19 @@ const HeroHeaderDocs: React.FC = () => {
                       </a>
                       <div className="navbar-search d-responsive ml-auto">
                         <button type="button" className="btn btn-icon tecba-button btn-dark">
-                          <span className="material-icons-round">search</span>
+                          <span className="material-symbols-rounded">search</span>
                         </button>
                       </div>
 
                       <div className="list-group-content d-responsive ml-2">
                         <button type="button" className="btn btn-icon tecba-button btn-light">
-                          <span className="material-icons-round">menu</span>
+                          <span className="material-symbols-rounded">menu</span>
                         </button>
                       </div>
 
                       <div className="list-group-content d-responsive ml-2">
                         <button type="button" className="btn btn-icon tecba-button btn-cyan">
-                          <span className="material-icons-round">person</span>
+                          <span className="material-symbols-rounded">person</span>
                         </button>
                       </div>
 

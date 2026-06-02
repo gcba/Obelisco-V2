@@ -34,9 +34,12 @@ const MapDocs: React.FC = () => {
                     </div>
                     <LinkClient
                       href="https://mapa.buenosaires.gob.ar/comollego/?lat=-34.640340&amp;lng=-58.407032&amp;zl=15&amp;modo=transporte&amp;dir=Uspallata+3160"
-                      className="btn btn-primary btn-lg btn-block"
+                      className="btn btn-outline-primary btn-lg btn-block"
                     >
                       Cómo llego
+                      <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                        open_in_new
+                      </span>
                     </LinkClient>
                   </div>
                 </div>
@@ -72,9 +75,12 @@ const MapDocs: React.FC = () => {
                     </div>
                     <LinkClient
                       href="https://mapa.buenosaires.gob.ar/comollego/?lat=-34.640340&amp;lng=-58.407032&amp;zl=15&amp;modo=transporte&amp;dir=Uspallata+3160"
-                      className="btn btn-primary btn-lg btn-block"
+                      className="btn btn-outline-primary btn-lg btn-block"
                     >
                       Cómo llego
+                      <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                        open_in_new
+                      </span>
                     </LinkClient>
                   </div>
                 </div>

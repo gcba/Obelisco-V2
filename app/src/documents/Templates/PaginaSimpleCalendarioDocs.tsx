@@ -11,7 +11,7 @@ import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 import { TEMPLATE_PAG_SIMPLE } from './code-views';
 const basePath = '/Obelisco-V2';
 
-const TemplatePaginaSimpleDocs: React.FC = () => {
+const PaginaSimpleCalendarioDocs: React.FC = () => {
   const [activeTab, setActiveTab] = useState('panel-content-docs');
 
   const DOC_SECTIONS = [
@@ -494,6 +494,9 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
           <li className="breadcrumb-item">
             <Link href="/templates">Plantillas</Link>
           </li>
+          <li className="breadcrumb-item">
+            <Link href="/templates/paginas-simples">Página simple</Link>
+          </li>
         </ol>
       </nav>
       <ComponentHeader
@@ -507,7 +510,7 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
 
       <a
         className="btn btn-outline-secondary"
-        href="https://gcba.github.io/obelisco-demo/pagina_simple/pagina_simple_op5/index.html"
+        href="https://gcba.github.io/obelisco-demo/pagina_simple/ejemplo_calendario/index.html"
         target="_blank"
         rel="noopener noreferrer"
         style={{ marginBottom: '32px' }}
@@ -544,4 +547,4 @@ const TemplatePaginaSimpleDocs: React.FC = () => {
   );
 };
 
-export default TemplatePaginaSimpleDocs;
+export default PaginaSimpleCalendarioDocs;

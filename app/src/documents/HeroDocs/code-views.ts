@@ -28,34 +28,8 @@ export const HERO_INSTITUCIONAL = `<header class="hero">
   <div class="aside bg-aside-hero-dark"></div>
 </header>`;
 
-export const HERO_DINAMICO = `<header class="hero">
-   <div class="content wave">
-      <div class="d-flex flex-column">
-         <nav aria-label="Navegación secundaria">
-            <ol class="breadcrumb m-0">
-               <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-            </ol>
-         </nav>
-         <div>
-            <h1 class="mb-3">Encabezado de la página</h1>
-            <p class="lead m-0">Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
-            </p>
-         </div>
-				<div class="btn-hero">
-					<button type="button" class="btn btn-secondary">
-						Botón
-					</button>
-					<button type="button" class="btn btn-outline-secondary">
-						Botón
-					</button>
-				</div>
-      </div>
-   </div>
-   <div class="aside bg-aside-hero-dark"></div>
-</header>`;
-
 export const HERO_CON_IMAGEN = `<header class="hero">
-   <div class="content wave">
+   <div class="content corner">
       <div class="d-flex flex-column">
          <nav aria-label="Navegación secundaria">
             <ol class="breadcrumb m-0">
@@ -82,7 +56,7 @@ export const HERO_CON_IMAGEN = `<header class="hero">
 </header>`;
 
 export const HERO_CON_VIDEO = `<header class="hero">
-   <div class="content wave">
+   <div class="content corner">
       <div class="d-flex flex-column">
          <nav aria-label="Navegación secundaria">
             <ol class="breadcrumb m-0">
@@ -111,7 +85,7 @@ export const HERO_CON_VIDEO = `<header class="hero">
 </header>`;
 
 export const HERO_CON_VIDEO_IFRAME = `<header class="hero">
-   <div class="content wave">
+   <div class="content corner">
       <div class="d-flex flex-column">
          <nav aria-label="Navegación secundaria">
             <ol class="breadcrumb m-0">
@@ -145,7 +119,7 @@ export const HERO_CON_VIDEO_IFRAME = `<header class="hero">
 </header>`;
 
 export const HERO_CON_GIF = `<header class="hero">
-   <div class="content wave">
+   <div class="content corner">
       <div class="d-flex flex-column">
          <nav aria-label="Navegación secundaria">
             <ol class="breadcrumb m-0">
@@ -634,7 +608,7 @@ export const HERO_DARK = `<header class="hero bg-content-hero-dark">
 </header>`;
 
 export const HERO_ACCESIBILITY = `<header class="hero">
-   <div class="content wave">
+   <div class="content corner">
       <div class="d-flex flex-column">
          <nav aria-label="Navegación secundaria">... </nav>
          <div>
@@ -647,7 +621,7 @@ export const HERO_ACCESIBILITY = `<header class="hero">
 `;
 
 export const HERO_ACCESIBILITY_2 = `<header class="hero"> 
-  <div class="content wave"> ... </div> 
+  <div class="content corner"> ... </div> 
   <div class="aside">
     <img alt="Festival de música al aire libre en Buenos Aires, con banda tocando en escenario" 
     loading="lazy" decoding="async" data-nimg="fill" src="/images/hero/multimedia-hero.jpg">

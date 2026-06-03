@@ -528,6 +528,17 @@ header.tecba-navbar .search-container .btn {
 	box-shadow: 0 0 0 2px #101E37;
 }
 
+header.hero-header-combined {
+	.content {
+		&.corner {
+			&::after {
+				width: 132px;
+				border-top-right-radius: 132px;
+			}
+		}
+	}
+}
+
 @media (width > 1160px) {
   header.tecba-navbar {
     height: 7rem;

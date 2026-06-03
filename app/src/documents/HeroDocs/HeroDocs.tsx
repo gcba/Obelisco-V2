@@ -37,6 +37,216 @@ const HeroHeaderDocs: React.FC = () => {
       firstTitle: true,
     },
     {
+      subtitle: 'Combinado',
+      content: (
+        <>
+          <CodeBox codeHTML={HERO_DINAMICO}>
+            <div className="container">
+              <div className="hero-container">
+                <div className="hero-box-sizing ">
+                  <header className="hero bg-content-hero-cyan hero-header-combined">
+                    {/* HEADER */}
+                    <header
+                      className="o-header navbar position-absolute top-0 start-0 z-3 w-100 bg-light"
+                      role="banner"
+                    >
+                      <LinkClient href="#main" className="skip-to-main-content-link">
+                        Saltar al contenido principal
+                      </LinkClient>
+                      <div className="container header-container">
+                        <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
+                          <img
+                            className="d-none d-xl-block"
+                            src={`${basePath}${logo}`}
+                            alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                          />
+                          <img
+                            className="d-xl-none"
+                            src={`${basePath}${logo_mobile}`}
+                            alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                          />
+                        </LinkClient>
+                        <div className="navbar-login-mobile">
+                          <LinkClient className="btn btn-lg btn-icon btn-outline-tertiary">
+                            <span className="material-symbols-rounded" aria-hidden="true">
+                              person
+                            </span>
+                            <span className="btn-text">Ingresar</span>
+                          </LinkClient>
+                        </div>
+                        <button
+                          className="navbar-toggler"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#navbarContent1"
+                          aria-controls="navbarContent1"
+                          aria-expanded="false"
+                          aria-label="Menú"
+                        ></button>
+                        <div className="collapse navbar-collapse" id="navbarContent1">
+                          <div className="navbar-content">
+                            <div className="navbar-sections">
+                              <nav>
+                                <p className="navbar-sections-title">Secciones</p>
+                                <ul className="nav nav-pills nav-sections">
+                                  <li className="dropdown">
+                                    <button
+                                      type="button"
+                                      className="btn btn-dropdown btn-lg"
+                                      data-bs-toggle="dropdown"
+                                      aria-expanded="false"
+                                    >
+                                      <span className="btn-dropdown-text ellipsis-1">Navegación</span>
+                                      <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                                        expand_more
+                                      </span>
+                                    </button>
+                                    <div className="dropdown-menu">
+                                      <LinkClient className="dropdown-item">
+                                        <span className="item-text">Enlace de navegación</span>
+                                      </LinkClient>
+                                      <LinkClient className="dropdown-item">
+                                        <span className="item-text">Enlace de navegación</span>
+                                      </LinkClient>
+                                      <LinkClient className="dropdown-item">
+                                        <span className="item-text">Enlace de navegación</span>
+                                      </LinkClient>
+                                      <LinkClient className="dropdown-item">
+                                        <span className="item-text">Enlace de navegación</span>
+                                      </LinkClient>
+                                      <LinkClient className="dropdown-item">
+                                        <span className="item-text">Enlace de navegación</span>
+                                      </LinkClient>
+                                      <LinkClient className="dropdown-item">
+                                        <span className="item-text">Enlace de navegación</span>
+                                      </LinkClient>
+                                      <LinkClient className="dropdown-item item-link">
+                                        <span className="item-text">Ver más</span>
+                                        <span className="material-symbols-rounded" aria-hidden="true">
+                                          arrow_forward
+                                        </span>
+                                      </LinkClient>
+                                    </div>
+                                  </li>
+                                  <li className="nav-item">
+                                    <LinkClient className="nav-link nav-link-lg">
+                                      <span>Navegación</span>
+                                    </LinkClient>
+                                  </li>
+                                  <li className="dropdown">
+                                    <button
+                                      type="button"
+                                      className="btn btn-dropdown btn-lg"
+                                      data-bs-toggle="dropdown"
+                                      aria-expanded="false"
+                                    >
+                                      <span className="btn-dropdown-text ellipsis-1">Navegación</span>
+                                      <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                                        expand_more
+                                      </span>
+                                    </button>
+                                    <div className="dropdown-menu">
+                                      <LinkClient className="dropdown-item">
+                                        <span className="item-text">Enlace de navegación</span>
+                                      </LinkClient>
+                                      <LinkClient className="dropdown-item">
+                                        <span className="item-text">Enlace de navegación</span>
+                                      </LinkClient>
+                                      <LinkClient className="dropdown-item">
+                                        <span className="item-text">Enlace de navegación</span>
+                                      </LinkClient>
+                                      <LinkClient className="dropdown-item">
+                                        <span className="item-text">Enlace de navegación</span>
+                                      </LinkClient>
+                                      <LinkClient className="dropdown-item">
+                                        <span className="item-text">Enlace de navegación</span>
+                                      </LinkClient>
+                                      <LinkClient className="dropdown-item">
+                                        <span className="item-text">Enlace de navegación</span>
+                                      </LinkClient>
+                                      <LinkClient className="dropdown-item item-link">
+                                        <span className="item-text">Ver más</span>
+                                        <span className="material-symbols-rounded" aria-hidden="true">
+                                          arrow_forward
+                                        </span>
+                                      </LinkClient>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </nav>
+                            </div>
+                            <div className="navbar-search">
+                              <form className="form-search">
+                                <label htmlFor="header-search" className="form-label sr-only">
+                                  Buscador
+                                </label>
+                                <div className="search-container">
+                                  <input
+                                    type="search"
+                                    className="form-control input-search input-search-with-button"
+                                    id="header-search"
+                                    placeholder="Buscador"
+                                  />
+                                  <button className="reset" type="reset" aria-label="Borrar"></button>
+                                  <button className="button-search" type="submit" aria-label="Buscar"></button>
+                                </div>
+                              </form>
+                            </div>
+                            <div className="navbar-login">
+                              <LinkClient className="btn btn-lg btn-outline-tertiary">
+                                <span className="material-symbols-rounded" aria-hidden="true">
+                                  person
+                                </span>
+                                <span className="btn-text">Ingresar</span>
+                              </LinkClient>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="header-backdrop"></div>
+                    </header>
+                    {/* HEADER */}
+                    <div className="content corner" style={{ paddingTop: '80px' }}>
+                      <div className="d-flex flex-column">
+                        <nav aria-label="Navegación secundaria">
+                          <ol className="breadcrumb m-0">
+                            <li className="breadcrumb-item">
+                              <a href="#">Inicio</a>
+                            </li>
+                          </ol>
+                        </nav>
+
+                        <div>
+                          <h1 className="mb-3">Encabezado de la página</h1>
+                          <p className="lead m-0">
+                            Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la
+                            convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
+                          </p>
+                        </div>
+
+                        {/* botones */}
+                        <div className="btn-hero">
+                          <button type="button" className="btn btn-secondary">
+                            Botón
+                          </button>
+                          <button type="button" className="btn btn-outline-secondary">
+                            Botón
+                          </button>
+                        </div>
+                        {/* botones */}
+                      </div>
+                    </div>
+
+                    <div className="aside bg-aside-hero-dark"></div>
+                  </header>
+                </div>
+              </div>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+    {
       subtitle: 'con header',
       content: (
         <>

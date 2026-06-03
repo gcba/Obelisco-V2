@@ -115,7 +115,7 @@ const sections = [
         </li>
 
         <p className="text-md my-4">
-          <strong>Versión 1.11.0 ⬇️</strong>
+          <strong>Versión 1.11.1 ⬇️</strong>
         </p>
         <li>Se elimina el componente, es reemplazado por Destacado lateral</li>
       </ul>
@@ -500,7 +500,7 @@ const sections = [
     content: (
       <ul className="docs-list">
         <p className="text-md my-4">
-          <strong>Versión 1.11.0 ⬇️</strong>
+          <strong>Versión 1.11.1 ⬇️</strong>
         </p>
         <li>
           Se crea el componente. Puede incluir Etiquetas, descripción, desplegable de detalle, botón, bloque de

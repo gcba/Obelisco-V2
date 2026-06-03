@@ -1,4 +1,4 @@
-// Custom variables and mixins
+/* Custom variables and mixins */
 // MIXIN GENERAL
 @mixin panel-content($flex-direction, $media-query) {
   display: flex;
@@ -90,6 +90,7 @@
     }
   }
 }
+/* Custom variables and mixins */
 
 // ESTILOS PARA PANEL VERTICAL
 .panel-vertical {
@@ -197,13 +198,13 @@
   // Variante oscura
   &.bg-dark {
     background-color: $sky-900;
-    color: #fff;
+    color: $white;
 
     .panel-horizontal {
       .panel-body {
         h5.panel-title,
         .panel-text {
-          color: #fff;
+          color: $white;
         }
       }
     }
@@ -271,9 +272,7 @@
   }
 }
 
-// COMPONENTE DEPRECADO - BLOQUE DE TRAMITE
-// Custom styles
-
+/* COMPONENTE DEPRECADO - BLOQUE DE TRAMITE */
 .block {
   outline: $outline-border;
   border-radius: $border-radius-lg;
@@ -309,3 +308,4 @@
     }
   }
 }
+/* COMPONENTE DEPRECADO - BLOQUE DE TRAMITE */

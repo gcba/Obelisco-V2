@@ -11959,6 +11959,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* 1.11.1 */
 .max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .card-items-2, .max-items-3, .card-items-3, .max-items-4 {
   row-gap: 2rem;
 }
@@ -17143,8 +17144,8 @@ span.form-label {
   cursor: pointer;
 }
 .table.table-striped tbody tr:nth-of-type(odd) td {
-  --bs-table-bg-type: white;
-  background-color: white !important;
+  --bs-table-bg-type: $white;
+  background-color: #ffffff !important;
 }
 .table.table-striped tbody tr:nth-of-type(even) td {
   --bs-table-bg-type: $slate-50;
@@ -18946,6 +18947,8 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
   padding-top: 1px;
 }
 
+/* Custom variables and mixins */
+/* Custom variables and mixins */
 .panel-vertical {
   display: flex;
   flex-direction: column;
@@ -19185,12 +19188,12 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
 }
 .panel-horizontal-content.bg-dark {
   background-color: #002733;
-  color: #fff;
+  color: #ffffff;
 }
 .panel-horizontal-content.bg-dark .panel-horizontal .panel-body h5.panel-title, .panel-horizontal-content.bg-dark .panel-horizontal .panel-body .panel-title.h5, .panel-horizontal-content.bg-dark .panel-horizontal .panel-vertical .panel-body .panel-title, .panel-vertical .panel-horizontal-content.bg-dark .panel-horizontal .panel-body .panel-title,
 .panel-horizontal-content.bg-dark .panel-horizontal .panel-body .panel-vertical .panel-body-dark .panel-title, .panel-horizontal-content.bg-dark .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content.bg-dark .panel-horizontal .panel-body .panel-title.h2,
 .panel-horizontal-content.bg-dark .panel-horizontal .panel-body .panel-text {
-  color: #fff;
+  color: #ffffff;
 }
 
 .panel-lateral {
@@ -19274,6 +19277,9 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
     height: 296px;
   }
 }
+.panel-lateral:not(.bg-light) {
+  outline: 0.125rem solid #e6ebf0;
+}
 @media (max-width: 1199.98px) {
   .panel-lateral {
     padding: 1.5rem 1rem;
@@ -19300,6 +19306,7 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
   background-color: #f3f6f9;
 }
 
+/* COMPONENTE DEPRECADO - BLOQUE DE TRAMITE */
 .block {
   outline: 0.125rem solid #e6ebf0;
   border-radius: 0.5rem;
@@ -19331,6 +19338,7 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
   margin-top: 1rem;
 }
 
+/* COMPONENTE DEPRECADO - BLOQUE DE TRAMITE */
 .accordion .accordion-item:not(:last-of-type) {
   margin-bottom: 1rem;
 }

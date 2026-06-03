@@ -159,8 +159,8 @@
   }
 
   &.table-striped tbody tr:nth-of-type(odd) td {
-    --bs-table-bg-type: white;
-    background-color: white !important;
+    --bs-table-bg-type: $white;
+    background-color: $white !important;
   }
 
   &.table-striped tbody tr:nth-of-type(even) td {
@@ -189,6 +189,7 @@
   }
 }
 
+// Estilo para Título de la tabla (1.11.1)
 .table-title {
   margin-bottom: 32px;
 }

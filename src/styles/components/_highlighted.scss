@@ -215,9 +215,10 @@
   @include panel-content(column, xl);
   padding: 2rem 1.5rem;
   border-radius: 0.5rem;
-	&:not(.bg-light) {
-		outline: $outline-border;
-	}
+
+  &:not(.bg-light) {
+    outline: $outline-border;
+  }
 
   @include media-breakpoint-down(xl) {
     padding: 1.5rem 1rem;

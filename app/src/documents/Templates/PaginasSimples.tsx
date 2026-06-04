@@ -24,7 +24,7 @@ export default function PagSimples() {
             <div className="max-items-2">
               <div className="col">
                 <a
-                  href={`${basePath}/templates/paginas-simples/pagina-simple-8-columnas`}
+                  href={`${basePath}/templates/paginas-simples/pagina-simple-12-columnas`}
                   className="list-group-item item-sm"
                 >
                   <div className="access-content">
@@ -38,7 +38,7 @@ export default function PagSimples() {
 
               <div className="col">
                 <a
-                  href={`${basePath}/templates/paginas-simples/pagina-simple-12-columnas`}
+                  href={`${basePath}/templates/paginas-simples/pagina-simple-8-columnas`}
                   className="list-group-item item-sm"
                 >
                   <div className="access-content">

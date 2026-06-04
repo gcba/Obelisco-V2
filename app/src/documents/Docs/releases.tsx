@@ -19,10 +19,10 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
-      title: 'Versión 1.11.0',
+      title: 'Versión 1.11.1',
       content: (
         <ul className="docs-list">
-          <p>La Versión 1.11.0 contiene lo siguiente: </p>
+          <p>La Versión 1.11.1 contiene lo siguiente: </p>
           <li>
             Se crea el componente{' '}
             <a href="https://gcba.github.io/Obelisco-V2/components/highlighted-lateral" target="_blank">
@@ -38,10 +38,9 @@ const ReleasesComponents: React.FC = () => {
           <li>
             En el componente Mapa se modificó el botón de <code>primario</code> a <code>primario outline</code>
           </li>
-          <li>Se agrega la posibilidad de tener título y bajada en Tablas</li>
+          <li>Se agrega la posibilidad de tener título y bajada en Tablas.</li>
           <li>
-            La etiqueta <code>{'<h5>'}</code> pasa a tener peso <code>{'bold'}</code>, y la etiqueta{' '}
-            <code>{'<h5>'}</code> pasa a tener peso <code>{'semibold'}</code>.
+            La etiqueta <code>{' <h5>'}</code> pasa a tener peso <code>{'semibold'}</code>.
           </li>
         </ul>
       ),

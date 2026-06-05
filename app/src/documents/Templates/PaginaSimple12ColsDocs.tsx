@@ -88,7 +88,7 @@ const PaginaSimple12ColsDocs: React.FC = () => {
               contenido relacionado.
             </p>
             <div className="list-informative d-flex flex-column gap-2">
-              <h3 className="list-informative-subtitle m-0 text-md">Cuándo usar</h3>
+              <h3 className="list-informative-subtitle m-0 text-xl">Cuándo usar</h3>
               <ul className="list-informative-bullet">
                 <li>Para mostrar contenido estructurado en columnas y filas.</li>
                 <li>Para comparar valores y reconocer patrones.</li>
@@ -96,18 +96,18 @@ const PaginaSimple12ColsDocs: React.FC = () => {
               </ul>
             </div>
             <div className="list-informative d-flex flex-column gap-2">
-              <h3 className="list-informative-subtitle m-0 text-md">Cuándo no usar</h3>
+              <h3 className="list-informative-subtitle m-0 text-xl">Cuándo no usar</h3>
               <ul className="list-informative-bullet">
                 <li>Para mostrar contenido sin organización.</li>
                 <li>Para comunicar información no relacionada.</li>
                 <li>Para ordenar poca información, menor a dos líneas.</li>
               </ul>
             </div>
-            <p className="text-md">
+            <p className="text-md mb-0">
               La tabla puede estar acompañada por un título y un párrafo de texto de dos líneas, que no deben ocupar más
               de 6 columnas de la grilla responsiva de nuestro sistema de diseño Obelisco.
             </p>
-            <p className="text-md">
+            <p className="text-md mb-0">
               Podés consultar la{' '}
               <Link href={'https://gcba.github.io/Obelisco-V2/components/table'}>documentación de tabla</Link> para
               conocer más sobre el uso y variantes del componente.
@@ -234,10 +234,10 @@ const PaginaSimple12ColsDocs: React.FC = () => {
                 <li>Bajada con información complementaria como público, días y horarios de cursada.</li>
               </ul>
             </div>
-            <p className="text-md">
+            <p className="text-md mb-0">
               En <i>desktop</i>, las tarjetas verticales de 4 columnas pueden agruparse hasta un máximo de 3 por línea.
             </p>
-            <p className="text-md">
+            <p className="text-md mb-0">
               Podés consultar la{' '}
               <Link href={'https://gcba.github.io/Obelisco-V2/components/cards'}>documentación de tarjetas</Link> para
               conocer más sobre el uso y variantes del componente.
@@ -317,11 +317,11 @@ const PaginaSimple12ColsDocs: React.FC = () => {
       subtitleBold: 'Galería de imágenes',
       content: (
         <>
-          <p className="text-md m-0">
+          <p className="text-md mb-2">
             Las imágenes se utilizan como complemento figurativo o ilustrativo de la información del párrafo de texto
             anterior o posterior, por eso sugerimos que su uso se limite a brindar mayor contexto a la persona usuaria.
           </p>
-          <p className="text-md m-0">
+          <p className="text-md mb-2">
             En una página simple, las imágenes se ubican antes, después, o entre párrafos de texto, y pueden ser parte
             de una <Link href={'https://gcba.github.io/Obelisco-V2/components/gallery'}>galería de imágenes</Link> a
             través de una cuadrícula de fotos interactivas y de una vista ampliada con el formato de carrusel. El{' '}

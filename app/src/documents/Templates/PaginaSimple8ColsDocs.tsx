@@ -34,7 +34,7 @@ const PaginaSimple8ColsDocs: React.FC = () => {
               </p>
 
               <div className="list-informative d-flex flex-column gap-2">
-                <h3 className="list-informative-subtitle m-0">Cuándo usar</h3>
+                <p className="text-xl">Cuándo usar</p>
                 <ul className="list-informative-bullet">
                   <li>
                     Para combinar información textual (en formato párrafo, listas y cita) y sumar contenido multimedia
@@ -48,7 +48,7 @@ const PaginaSimple8ColsDocs: React.FC = () => {
               </div>
 
               <div className="list-informative d-flex flex-column gap-2">
-                <h3 className="list-informative-subtitle m-0">Cuándo no usar</h3>
+                <p className="text-xl">Cuándo no usar</p>
                 <ul className="list-informative-bullet">
                   <li>
                     Para informar sobre la gestión de un trámite, recomendamos usar la plantilla{' '}

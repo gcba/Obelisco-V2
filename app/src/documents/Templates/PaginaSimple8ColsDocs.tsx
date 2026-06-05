@@ -67,12 +67,15 @@ const PaginaSimple8ColsDocs: React.FC = () => {
             </div>
 
             <Image
-              src={`${basePath}/images/templates/pagina_simple/estructura_gral.svg`}
+              src={`${basePath}/images/templates/pagina_simple/8-columns-structure.svg`}
               alt="Ejemplo de estructura general"
               width="800"
               height="295"
               className="img-fluid"
             />
+            <p className="text-xs mt-2">
+              Estructura principal de la plantilla de página simple con el sistema de columnas visible.
+            </p>
           </div>
         </>
       ),

@@ -166,13 +166,18 @@ const PaginaSimple12ColsDocs: React.FC = () => {
               conocer más sobre el uso y variantes del componente.
             </p>
             <div className="d-flex flex-column" style={{ gap: '1.5rem' }}>
-              <Image
-                src={`${basePath}/images/templates/pagina_simple/tarjetas_1.svg`}
-                alt="Ejemplo uso de tarjetas"
-                width="800"
-                height="295"
-                className="img-fluid"
-              />
+              <div>
+                <Image
+                  src={`${basePath}/images/templates/pagina_simple/12-columns-card-hierarchy.svg`}
+                  alt="Ejemplo uso de tarjetas"
+                  width="800"
+                  height="295"
+                  className="img-fluid"
+                />
+                <p className="text-xs mt-3">
+                  Variantes disponibles del componente Tarjetas para la plantilla de página simple.
+                </p>
+              </div>
               <div>
                 <p className="text-lg">Ejemplos de uso</p>
                 <Image

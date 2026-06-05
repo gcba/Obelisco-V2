@@ -39,8 +39,8 @@ const PaginaSimple12ColsDocs: React.FC = () => {
                     tarjetas y destacados.
                   </li>
                   <li>
-                    Para organizar información y contenidos en otros formatos que no están contemplados en las otras
-                    plantillas del sistema Obelisco.
+                    Para organizar información y contenidos en otros formatos que no están contemplados en las{' '}
+                    <a href="https://gcba.github.io/Obelisco-V2/templates"> otras plantillas</a> del sistema Obelisco.
                   </li>
                 </ul>
               </div>
@@ -49,13 +49,13 @@ const PaginaSimple12ColsDocs: React.FC = () => {
                 <h3 className="list-informative-subtitle m-0">Cuándo no usar</h3>
                 <ul className="list-informative-bullet">
                   <li>
-                    Para informar sobre la gestión de un trámite, recomendamos usar la plantilla
+                    Para informar sobre la gestión de un trámite, recomendamos usar la plantilla{' '}
                     <Link href={'página de trámites.'}>página de trámites</Link>.
                   </li>
                   <li>
                     Para agrupar información sobre un mismo tema en subtemas, en este caso recomendamos el uso de la
                     plantilla de{' '}
-                    <Link href={'https://gcba.github.io/Obelisco-V2/templates/pagina-de-libro'}>Página libro</Link>
+                    <Link href={'https://gcba.github.io/Obelisco-V2/templates/pagina-de-libro'}>página libro</Link>.
                   </li>
                 </ul>
               </div>
@@ -224,7 +224,7 @@ const PaginaSimple12ColsDocs: React.FC = () => {
               </h3>
               <ul className="list-informative-bullet">
                 <li>Imagen multimedia.</li>
-                <li>Eitqueta: única donde se avisa si el curso o taller está abierto o cerrado para su inscripción.</li>
+                <li>Etiqueta: única donde se avisa si el curso o taller está abierto o cerrado para su inscripción.</li>
                 <li>Título descriptivo del curso.</li>
                 <li>Bajada con información complementaria como público, días y horarios de cursada.</li>
               </ul>

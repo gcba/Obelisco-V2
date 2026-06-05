@@ -26,9 +26,11 @@ const PaginaSimple8ColsDocs: React.FC = () => {
                 En general, en página simple se organiza contenido informativo de forma detallada, sin que implique una
                 acción por parte de la persona usuaria. Eventualmente, puede contener enlaces para redireccionar a otras
                 secciones para que pueda realizar el trámite, inscribirse en el curso o reservar el turno.
-                <br /> Sus características admiten la convivencia de contenido variado, entre lo estático (texto,
-                imágenes, descripciones) y lo accionable (listas, cita, desplegables). Esto es posible porque la
-                plantilla disponibiliza el 70% del ancho de la grilla (8 columnas).
+                <br />
+                <br />
+                Sus características admiten la convivencia de contenido variado, entre lo estático (texto, imágenes,
+                descripciones) y lo accionable (listas, cita, desplegables). Esto es posible porque la plantilla
+                disponibiliza el 70% del ancho de la grilla (8 columnas).
               </p>
 
               <div className="list-informative d-flex flex-column gap-2">
@@ -39,8 +41,8 @@ const PaginaSimple8ColsDocs: React.FC = () => {
                     como imagen y video.
                   </li>
                   <li>
-                    Para organizar información y contenidos en otros formatos que no están contemplados en las otras
-                    plantillas del sistema Obelisco.
+                    Para organizar información y contenidos en otros formatos que no están contemplados en las{' '}
+                    <a href="https://gcba.github.io/Obelisco-V2/templates"> otras plantillas</a> del sistema Obelisco.
                   </li>
                 </ul>
               </div>
@@ -49,16 +51,16 @@ const PaginaSimple8ColsDocs: React.FC = () => {
                 <h3 className="list-informative-subtitle m-0">Cuándo no usar</h3>
                 <ul className="list-informative-bullet">
                   <li>
-                    Para informar sobre la gestión de un trámite, recomendamos usar la plantilla página de{' '}
+                    Para informar sobre la gestión de un trámite, recomendamos usar la plantilla{' '}
                     <Link href={'https://gcba.github.io/Obelisco-V2/templates/formularios/formulario-pagina-unica'}>
-                      trámites
+                      página de trámites
                     </Link>
                     .
                   </li>
                   <li>
                     Para agrupar información sobre un mismo tema en subtemas, en este caso recomendamos el uso de la
                     plantilla de{' '}
-                    <Link href={'https://gcba.github.io/Obelisco-V2/templates/pagina-de-libro'}>Página libro</Link>
+                    <Link href={'https://gcba.github.io/Obelisco-V2/templates/pagina-de-libro'}>página libro</Link>.
                   </li>
                 </ul>
               </div>
@@ -79,7 +81,7 @@ const PaginaSimple8ColsDocs: React.FC = () => {
       title: 'Cuerpo de la página',
       content: (
         <>
-          <p className="text-md">
+          <p className="text-md mb-0">
             Este módulo tiene como objetivo concentrar el contenido principal de la página. Permite organizar la
             información y sumar recursos complementarios. Está compuesto por los siguientes elementos:
           </p>
@@ -92,13 +94,13 @@ const PaginaSimple8ColsDocs: React.FC = () => {
         <>
           <div className="d-flex flex-column gap-3">
             <div className="list-informative d-flex flex-column gap-2">
-              <h3 className="list-informative-subtitle m-0 text-md">
+              <h3 className="list-informative-subtitle mb-2 text-md">
                 Opciones disponibles para redactar, estructurar y dar forma al contenido textual de la página simple:
               </h3>
               <ul className="list-informative-bullet">
                 <li>
-                  Títulos y subtítulos que pueden ir de ‘Encabezado 2’ a ‘Encabezado 6’, utilizados para organizar y
-                  jerarquizar el contenido en secciones, especialmente en textos extensos.
+                  Títulos y subtítulos que pueden ir de &quot;Encabezado 2&quot; a &quot;Encabezado 6&quot;, utilizados
+                  para organizar y jerarquizar el contenido en secciones, especialmente en textos extensos.
                 </li>
                 <li>
                   Texto general para el desarrollo completo de la información. Permite aplicar estilos de formato como
@@ -135,7 +137,7 @@ const PaginaSimple8ColsDocs: React.FC = () => {
       subtitleBold: 'Elementos multimedia',
       content: (
         <>
-          <div className="list-informative d-flex flex-column gap-2">
+          <div className="list-informative d-flex flex-column gap-3" style={{ marginBottom: '32px' }}>
             <h3 className="list-informative-subtitle m-0 text-md">
               Opciones disponibles para incorporar recursos audiovisuales que complementan el contenido de la página
               simple:
@@ -146,8 +148,8 @@ const PaginaSimple8ColsDocs: React.FC = () => {
                 del contenido. Recomendamos completar el campo de texto alternativo con una breve descripción de la
                 imagen para garantizar la accesibilidad.
                 <br />
-                <br /> <b>Ejemplo de texto alternativo:</b> “Grupo de personas realizando actividades recreativas al
-                aire libre”.
+                <br /> <b>Ejemplo de texto alternativo:</b> &quot;Grupo de personas realizando actividades recreativas
+                al aire libre”.
               </li>
               <li>
                 Incrustación de video, permite incorporar contenido audiovisual en la página, ya sea mediante un video
@@ -167,7 +169,7 @@ const PaginaSimple8ColsDocs: React.FC = () => {
             alt="Ejemplo uso de imagen"
             width="800"
             height="295"
-            className="img-fluid mt-4"
+            className="img-fluid"
           />
           <Image
             src={`${basePath}/images/templates/pagina_simple/8-columns-video.svg`}
@@ -179,34 +181,32 @@ const PaginaSimple8ColsDocs: React.FC = () => {
           <p className="text-xl">Buenas prácticas</p>
           <div className="d-flex">
             <span className="material-symbols-rounded text-success">check</span>
-
             <p>Redactar utilizando lenguaje claro, evitando tecnicismos innecesarios.</p>
           </div>
           <div className="d-flex">
             <span className="material-symbols-rounded text-success">check</span>
-
+            <p>Utilizar títulos secundarios cuando haya contenido extenso.</p>
+          </div>
+          <div className="d-flex">
+            <span className="material-symbols-rounded text-success">check</span>
             <p>Incorporar recursos multimedia solo si aportan información útil o contextual.</p>
           </div>
           <div className="d-flex">
             <span className="material-symbols-rounded text-success">check</span>
-
             <p>Verificar enlaces antes de publicar.</p>
           </div>
 
           <p className="text-xl mt-4">Malas prácticas</p>
           <div className="d-flex">
             <span className="material-symbols-rounded text-danger">close</span>
-
             <p>Sobrecargar el contenido con elementos multimedia sin propósito informativo.</p>
           </div>
           <div className="d-flex">
             <span className="material-symbols-rounded text-danger">close</span>
-
             <p>Insertar bloques extensos de texto sin estructura, listas ni separación.</p>
           </div>
           <div className="d-flex">
             <span className="material-symbols-rounded text-danger">close</span>
-
             <p>Utilizar imágenes pixeladas o contenido no verificado.</p>
           </div>
         </>
@@ -227,7 +227,7 @@ const PaginaSimple8ColsDocs: React.FC = () => {
             través de una cuadrícula de fotos interactivas y de una vista ampliada con el formato de carrusel. El{' '}
             <b>máximo</b> de imágenes para este tipo de formato es hasta 7 imágenes.
           </p>
-          <p className="text-md">Ejemplos de uso</p>
+          <p className="text-md  mb-2">Ejemplos de uso</p>
           <Image
             src={`${basePath}/images/templates/pagina_simple/8-columns-gallery.svg`}
             alt="Ejemplo uso de galeria"
@@ -237,8 +237,7 @@ const PaginaSimple8ColsDocs: React.FC = () => {
           />
           <div className="d-flex">
             <span className="material-symbols-rounded text-success">check</span>
-
-            <p>
+            <p className="text-sm mb-2">
               En la continuación de un párrafo de texto, recomendamos mantener la disposición de 8 columnas para ubicar
               las imágenes.
             </p>
@@ -254,8 +253,8 @@ const PaginaSimple8ColsDocs: React.FC = () => {
             <span className="material-symbols-rounded text-danger">close</span>
 
             <p>
-              En desktop, evitar que las imágenes ocupen el 100% del ancho de la página para no interferir en la lectura
-              e interacción del usuario con la página.
+              En <i>desktop</i>, evitar que las imágenes ocupen el 100% del ancho de la página para no interferir en la
+              lectura e interacción del usuario con la página.
             </p>
           </div>
         </>
@@ -299,7 +298,7 @@ const PaginaSimple8ColsDocs: React.FC = () => {
               alt="Ejemplo uso de colapsable"
               width="800"
               height="295"
-              className="img-fluid mb-2"
+              className="img-fluid"
             />
           </div>
           <div>
@@ -367,7 +366,7 @@ const PaginaSimple8ColsDocs: React.FC = () => {
             <div className="d-flex flex-column" style={{ gap: '.75rem' }}>
               <p className="text-md m-0">
                 Para mantener una estructura clara, legible y alineada al sistema de grillas, recomendamos los
-                siguientes espaciados entre secciones para dispositivos desktop:
+                siguientes espaciados entre secciones para dispositivos <i>desktop</i>:
               </p>
 
               <div className="list-informative d-flex flex-column">

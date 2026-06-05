@@ -138,27 +138,31 @@ const PaginaSimpleCalendarioDocs: React.FC = () => {
             height="295"
             className="img-fluid my-4"
           />
-          <div className="d-flex gap-4">
-            <Image
-              src={`${basePath}/images/templates/pagina_simple/calendar-spacing-mobile.svg`}
-              alt="Espaciado calendario mobile"
-              width="800"
-              height="295"
-              className="img-fluid"
-            />
-            <div>
-              <p className="text-md">
-                Para mantener una estructura clara, legible y alineada al sistema de grillas, recomendamos los
-                siguientes espaciados entre secciones para dispositivos <i>mobile</i>:
-              </p>
-              <ul className="list-informative-bullet">
-                <li>
-                  <b>Espaciado horizontal de 32px</b>: Entre encabezado y el cuerpo de la página.
-                </li>
-                <li>
-                  <b>Espaciado vertical de 16px</b>: Entre cada uno de los componentes de calendario.
-                </li>
-              </ul>
+          <div className="container">
+            <div className="max-items-2">
+              <div className="col">
+                <Image
+                  src={`${basePath}/images/templates/pagina_simple/calendar-spacing-mobile.svg`}
+                  alt="Espaciado calendario mobile"
+                  width="800"
+                  height="295"
+                  className="img-fluid"
+                />
+              </div>
+              <div className="col">
+                <p className="text-md">
+                  Para mantener una estructura clara, legible y alineada al sistema de grillas, recomendamos los
+                  siguientes espaciados entre secciones para dispositivos <i>mobile</i>:
+                </p>
+                <ul className="list-informative-bullet">
+                  <li>
+                    <b>Espaciado horizontal de 32px</b>: Entre encabezado y el cuerpo de la página.
+                  </li>
+                  <li>
+                    <b>Espaciado vertical de 16px</b>: Entre cada uno de los componentes de calendario.
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </>

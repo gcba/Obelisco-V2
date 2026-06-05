@@ -1,0 +1,37 @@
+// Radios de borde
+$border-radius-xs: 1px;
+$border-radius-sm: 2px;
+$border-radius-md: 4px;
+$border-radius-lg: 6px;
+$border-radius-xl: 8px;
+$border-radius-2xl: 12px;
+$border-radius-3xl: 16px;
+$border-radius-4xl: 20px;
+$border-radius-5xl: 24px;
+$border-radius-6xl: 32px;
+$border-radius-7xl: 64px;
+$border-radius-8xl: 128px;
+$border-radius-pill: 9999px;
+
+// theme-borders
+$theme-border-radius: (
+  'border-radius-xs': $border-radius-xs,
+  'border-radius-sm': $border-radius-sm,
+  'border-radius-md': $border-radius-md,
+  'border-radius-lg': $border-radius-lg,
+  'border-radius-xl': $border-radius-xl,
+  'border-radius-2xl': $border-radius-2xl,
+  'border-radius-3xl': $border-radius-3xl,
+  'border-radius-4xl': $border-radius-4xl,
+  'border-radius-5xl': $border-radius-5xl,
+  'border-radius-6xl': $border-radius-6xl,
+  'border-radius-7xl': $border-radius-7xl,
+  'border-radius-8xl': $border-radius-8xl,
+  'border-radius-pill': $border-radius-pill,
+);
+
+@each $border, $value in $theme-border-radius {
+  .border-radius-#{$border} {
+    border-radius: $value;
+  }
+}

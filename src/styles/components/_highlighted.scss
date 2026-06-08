@@ -159,7 +159,7 @@
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: $white;
-  border-radius: 0.5rem !important;
+  border-radius: 0.5rem;
 
   @include media-breakpoint-down(xl) {
     padding-top: 0;
@@ -224,6 +224,56 @@
   .panel-body {
     h2.panel-title {
       @extend .h5;
+    }
+  }
+}
+
+.panel-horizontal-container {
+  @extend .panel-horizontal-content;
+  padding: 64px;
+  max-height: 388px;
+  max-width: 1109px;
+  background-color: #101e37;
+  border-radius: 30px;
+
+  .panel-horizontal {
+    .panel-img {
+      width: 404px;
+      height: 228px;
+      object-fit: fill;
+    }
+
+    .panel-body {
+      color: white;
+
+      p.panel-title {
+        font-size: 36px;
+        line-height: 28px;
+        margin-bottom: 20px;
+      }
+
+      p.panel-text {
+        margin-bottom: 0;
+      }
+
+      .panel-footer {
+        margin-top: 20px;
+
+        .btn {
+          border-radius: 30px;
+          padding: 12px 20px;
+          min-width: 193px;
+
+          &.btn-primary {
+            background-color: #336acc;
+            border: none;
+          }
+
+          &.btn-outline-light {
+            border-color: white;
+          }
+        }
+      }
     }
   }
 }

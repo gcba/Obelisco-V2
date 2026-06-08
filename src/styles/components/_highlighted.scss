@@ -160,7 +160,7 @@
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: $white;
-  border-radius: 0.5rem !important;
+  border-radius: 0.5rem;
 
   @include media-breakpoint-down(xl) {
     padding-top: 0;
@@ -173,6 +173,7 @@
     @include panel-content(row, xl);
 
     .panel-body {
+      // color: white;
       h2.panel-title {
         @extend .h5;
       }

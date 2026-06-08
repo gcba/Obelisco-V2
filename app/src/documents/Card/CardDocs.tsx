@@ -24,10 +24,12 @@ import {
   VERTICAL_IMG,
   VERTICAL_NOTICE,
   VERTICAL_NOTICE_TRUNCATE,
+  TARJETAS_IMAGEN_FONDO,
 } from './code-views';
 
 const basePath = '/Obelisco-V2';
 const colors = ['purple', 'red', 'sky', 'yellow', 'cyan', 'blue'];
+// const ZoomContainer = ({ children }: React.PropsWithChildren) => <div style={{ zoom: 0.5 }}>{children}</div>;
 
 const CardDocs: React.FC = () => {
   const SECTIONS_DEV = [
@@ -870,6 +872,112 @@ const CardDocs: React.FC = () => {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </CodeBox>
+      ),
+    },
+    {
+      subtitle: 'Minimalista',
+      content: (
+        <CodeBox codeHTML={DISPOSITION_SCROLL}>
+          {/* <ZoomContainer> */}
+          <div className="card-items-3">
+            <div className="col">
+              <div className="card card-minimalista">
+                <div className="card-icon-container">
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                    ads_click
+                  </span>
+                </div>
+                <div className="card-body">
+                  <h3 className="card-title">
+                    <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                  </h3>
+                  <p className="card-text">
+                    Descripción de la tarjeta el máximo de líneas que puede tener es 4 líneas. Descripción de la tarjeta
+                    el máximo de líneas que puede tener es 4 líneas.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col">
+              <div className="card card-minimalista">
+                <div className="card-icon-container">
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                    ads_click
+                  </span>
+                </div>
+                <div className="card-body">
+                  <h3 className="card-title">
+                    <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                  </h3>
+                  <p className="card-text">
+                    Descripción de la tarjeta el máximo de líneas que puede tener es 4 líneas. Descripción de la tarjeta
+                    el máximo de líneas que puede tener es 4 líneas.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col">
+              <div className="card card-minimalista">
+                <div className="card-icon-container">
+                  <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                    ads_click
+                  </span>
+                </div>
+                <div className="card-body">
+                  <h3 className="card-title">
+                    <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                  </h3>
+                  <p className="card-text">
+                    Descripción de la tarjeta el máximo de líneas que puede tener es 4 líneas. Descripción de la tarjeta
+                    el máximo de líneas que puede tener es 4 líneas.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* </ZoomContainer> */}
+        </CodeBox>
+      ),
+    },
+    {
+      title: 'Full Image Card',
+      content: (
+        <CodeBox codeHTML={TARJETAS_IMAGEN_FONDO}>
+          <div className="container">
+            <div className="responsive-scroll vertical-cards-container pt-4" tabIndex={0}>
+              <div className="card card-img-bg">
+                <Image src={`${basePath}/images/cards/bax.png`} alt="descripción de imagen" width={348} height={196} />
+                <h2 className="fw-bold text-white">BAX</h2>
+                <a href="https://buenosaires.gob.ar/gcaba_historico/bax" aria-label="BAX"></a>
+              </div>
+
+              <div className="card card-img-bg">
+                <Image src={`${basePath}/images/cards/boti.png`} alt="descripción de imagen" width={348} height={196} />
+                <h2 className="fw-bold text-white">Boti</h2>
+                <a
+                  href="https://buenosaires.gob.ar/gcaba_historico/innovacionytransformaciondigital/boti"
+                  aria-label="Boti"
+                ></a>
+              </div>
+
+              <div className="card card-img-bg">
+                <Image
+                  src={`${basePath}/images/cards/seguridad.png`}
+                  alt="descripción de imagen"
+                  width={348}
+                  height={196}
+                />
+                <h2 className="fw-bold text-white">Centro de ciberseguridad</h2>
+                <a
+                  href="https://buenosaires.gob.ar/gcaba_historico/jefaturadegabinete/centro-de-ciberseguridad"
+                  aria-label="Centro de ciberseguridad"
+                ></a>
               </div>
             </div>
           </div>

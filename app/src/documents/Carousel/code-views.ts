@@ -747,236 +747,175 @@ export const CAROUSEL_CARDS_EVENTS = `<div id="carousel-cards-eventos" class="ca
 		</div>
 	`;
 
-export const CAROUSEL_CARDS_DARK = `<div id="carousel-cards-dark" class="carousel cards dark slide">
-		<div class="title">
-			<h4 class="m-0">Encabezado de la seccion</h4>
-			<a href="#" target="_blank" class="link-light" rel="noopener noreferrer">
-				Enlace predeterminado
-			</a>
-		</div>
-
-		<div class="carousel-inner responsive-scroll">
-			<div class="carousel-item active">
-				<div class="card-items">
-					<div class="card">
-						<img class="card-img" src="images/card-img-top.jpg" alt="descripción de imagen" />
-						<div class="card-body">
-							<div class="card-badges">
-									<span class="badge badge-default">etiqueta 1</span>
-									<span class="badge badge-default">etiqueta 2</span>
-							</div>
-							<h3 class="card-title">
-								<a href="#" class="card-title-link">Título de la tarjeta</a>
-							</h3>
-							<p class="card-text">Descripción de la tarjeta</p>
-							<div class="card-info">
-								<div>
-									<small>
-										<span>Fecha de publicación</span>
-									</small>
-								</div>
-							</div>
-						</div>
-					</div>
-	
-					<div class="card">
-						<img class="card-img" src="images/card-img-top.jpg" alt="descripción de imagen" />
-						<div class="card-body">
-							<div class="card-badges">
-									<span class="badge badge-default">etiqueta 1</span>
-									<span class="badge badge-default">etiqueta 2</span>
-							</div>
-							<h3 class="card-title">
-								<a href="#" class="card-title-link">Título de la tarjeta</a>
-							</h3>
-							<p class="card-text">Descripción de la tarjeta</p>
-							<div class="card-info">
-								<div>
-									<small>
-										<span>Fecha de publicación</span>
-									</small>
-								</div>
-							</div>
-						</div>
-					</div>
-	
-					<div class="card">
-						<img class="card-img" src="images/card-img-top.jpg" alt="descripción de imagen" />
-						<div class="card-body">
-							<div class="card-badges">
-									<span class="badge badge-default">etiqueta 1</span>
-									<span class="badge badge-default">etiqueta 2</span>
-							</div>
-							<h3 class="card-title">
-								<a href="#" class="card-title-link">Título de la tarjeta</a>
-							</h3>
-							<p class="card-text">Descripción de la tarjeta</p>
-							<div class="card-info">
-								<div>
-									<small>
-										<span>Fecha de publicación</span>
-									</small>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="carousel-item">
-				<div class="card-items">
-					<div class="card">
-						<img class="card-img" src="images/card-img-top.jpg" alt="descripción de imagen" />
-						<div class="card-body">
-							<div class="card-badges">
-									<span class="badge badge-default">etiqueta 1</span>
-									<span class="badge badge-default">etiqueta 2</span>
-							</div>
-							<h3 class="card-title">
-								<a href="#" class="card-title-link">Título de la tarjeta</a>
-							</h3>
-							<p class="card-text">Descripción de la tarjeta</p>
-							<div class="card-info">
-								<div>
-									<small>
-										<span>Fecha de publicación</span>
-									</small>
-								</div>
-							</div>
-						</div>
-					</div>
-	
-					<div class="card">
-						<img class="card-img" src="images/card-img-top.jpg" alt="descripción de imagen" />
-						<div class="card-body">
-							<div class="card-badges">
-									<span class="badge badge-default">etiqueta 1</span>
-									<span class="badge badge-default">etiqueta 2</span>
-							</div>
-							<h3 class="card-title">
-								<a href="#" class="card-title-link">Título de la tarjeta</a>
-							</h3>
-							<p class="card-text">Descripción de la tarjeta</p>
-							<div class="card-info">
-								<div>
-									<small>
-										<span>Fecha de publicación</span>
-									</small>
-								</div>
-							</div>
-						</div>
-					</div>
-	
-					<div class="card">
-						<img class="card-img" src="images/card-img-top.jpg" alt="descripción de imagen" />
-						<div class="card-body">
-							<div class="card-badges">
-									<span class="badge badge-default">etiqueta 1</span>
-									<span class="badge badge-default">etiqueta 2</span>
-							</div>
-							<h3 class="card-title">
-								<a href="#" class="card-title-link">Título de la tarjeta</a>
-							</h3>
-							<p class="card-text">Descripción de la tarjeta</p>
-							<div class="card-info">
-								<div>
-									<small>
-										<span>Fecha de publicación</span>
-									</small>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="carousel-item">
-				<div class="card-items">
-					<div class="card">
-						<img class="card-img" src="images/card-img-top.jpg" alt="descripción de imagen" />
-						<div class="card-body">
-							<div class="card-badges">
-									<span class="badge badge-default">etiqueta 1</span>
-									<span class="badge badge-default">etiqueta 2</span>
-							</div>
-							<h3 class="card-title">
-								<a href="#" class="card-title-link">Título de la tarjeta</a>
-							</h3>
-							<p class="card-text">Descripción de la tarjeta</p>
-							<div class="card-info">
-								<div>
-									<small>
-										<span>Fecha de publicación</span>
-									</small>
-								</div>
-							</div>
-						</div>
-					</div>
-	
-					<div class="card">
-						<img class="card-img" src="images/card-img-top.jpg" alt="descripción de imagen" />
-						<div class="card-body">
-							<div class="card-badges">
-									<span class="badge badge-default">etiqueta 1</span>
-									<span class="badge badge-default">etiqueta 2</span>
-							</div>
-							<h3 class="card-title">
-								<a href="#" class="card-title-link">Título de la tarjeta</a>
-							</h3>
-							<p class="card-text">Descripción de la tarjeta</p>
-							<div class="card-info">
-								<div>
-									<small>
-										<span>Fecha de publicación</span>
-									</small>
-								</div>
-							</div>
-						</div>
-					</div>
-	
-					<div class="card">
-						<img class="card-img" src="images/card-img-top.jpg" alt="descripción de imagen" />
-						<div class="card-body">
-							<div class="card-badges">
-									<span class="badge badge-default">etiqueta 1</span>
-									<span class="badge badge-default">etiqueta 2</span>
-							</div>
-							<h3 class="card-title">
-								<a href="#" class="card-title-link">Título de la tarjeta</a>
-							</h3>
-							<p class="card-text">Descripción de la tarjeta</p>
-							<div class="card-info">
-								<div>
-									<small>
-										<span>Fecha de publicación</span>
-									</small>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="carousel-indicators">
-			<button
-				type="button"
-				data-bs-target="#carousel-cards-dark"
-				data-bs-slide-to="0"
-				class="active"
-				aria-current="true"
-				aria-label="Slide 1"
-			></button>
-			<button type="button" data-bs-target="#carousel-cards-dark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-			<button type="button" data-bs-target="#carousel-cards-dark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-		</div>
-
-		<button class="carousel-control-prev" type="button" data-bs-target="#carousel-cards-dark" data-bs-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Anterior</span>
-		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#carousel-cards-dark" data-bs-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Siguiente</span>
-		</button>
-	</div>`;
+export const CAROUSEL_CARDS_DARK = `
+  <div id="carousel-cards-tecba" class="carousel slide ob-carousel-tecba d-md-none">
+    <div class="carousel-header">
+      <h3>Conocé los proyectos de TecBA</h3>
+      <div class="carousel-buttons">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-cards-tecba" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-cards-tecba" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
+    <div class="carousel-inner pt-4 d-block d-md-none">
+      <div class="carousel-item active">
+        <div class="card card-img-bg">
+          <img alt="descripción de imagen" loading="lazy" width="348" height="196" decoding="async" data-nimg="1" style="color:transparent" src="/Obelisco-V2/images/cards/bax.png">
+          <h2 class="fw-bold text-white">BAX</h2>
+          <a href="https://buenosaires.gob.ar/gcaba_historico/bax" aria-label="BAX"></a>
+        </div>
+      </div>
+      <div class="carousel-item ">
+        <div class="card card-img-bg">
+          <img alt="descripción de imagen" loading="lazy" width="348" height="196" decoding="async" data-nimg="1" style="color:transparent" src="/Obelisco-V2/images/cards/boti.png">
+          <h2 class="fw-bold text-white">Boti</h2>
+          <a href="https://buenosaires.gob.ar/gcaba_historico/innovacionytransformaciondigital/boti" aria-label="Boti"></a>
+        </div>
+      </div>
+      <div class="carousel-item ">
+        <div class="card card-img-bg">
+          <img alt="descripción de imagen" loading="lazy" width="348" height="196" decoding="async" data-nimg="1" style="color:transparent" src="/Obelisco-V2/images/cards/seguridad.png">
+          <h2 class="fw-bold text-white">Centro de ciberseguridad</h2>
+          <a href="https://buenosaires.gob.ar/gcaba_historico/innovacionytransformaciondigital/centro-de-ciberseguridad" aria-label="Centro de ciberseguridad"></a>
+        </div>
+      </div>
+      <div class="carousel-item ">
+        <div class="card card-img-bg">
+          <img alt="descripción de imagen" loading="lazy" width="348" height="196" decoding="async" data-nimg="1" style="color:transparent" src="/Obelisco-V2/images/cards/bax.png">
+          <h2 class="fw-bold text-white">BAX</h2>
+          <a href="https://buenosaires.gob.ar/gcaba_historico/bax" aria-label="BAX"></a>
+        </div>
+      </div>
+      <div class="carousel-item ">
+        <div class="card card-img-bg">
+          <img alt="descripción de imagen" loading="lazy" width="348" height="196" decoding="async" data-nimg="1" style="color:transparent" src="/Obelisco-V2/images/cards/boti.png">
+          <h2 class="fw-bold text-white">Boti</h2>
+          <a href="https://buenosaires.gob.ar/gcaba_historico/innovacionytransformaciondigital/boti" aria-label="Boti"></a>
+        </div>
+      </div>
+      <div class="carousel-item ">
+        <div class="card card-img-bg">
+          <img alt="descripción de imagen" loading="lazy" width="348" height="196" decoding="async" data-nimg="1" style="color:transparent" src="/Obelisco-V2/images/cards/seguridad.png">
+          <h2 class="fw-bold text-white">Centro de ciberseguridad</h2>
+          <a href="https://buenosaires.gob.ar/gcaba_historico/innovacionytransformaciondigital/centro-de-ciberseguridad" aria-label="Centro de ciberseguridad"></a>
+        </div>
+      </div>
+      <div class="carousel-item ">
+        <div class="card card-img-bg">
+          <img alt="descripción de imagen" loading="lazy" width="348" height="196" decoding="async" data-nimg="1" style="color:transparent" src="/Obelisco-V2/images/cards/bax.png">
+          <h2 class="fw-bold text-white">BAX</h2>
+          <a href="https://buenosaires.gob.ar/gcaba_historico/bax" aria-label="BAX"></a>
+        </div>
+      </div>
+      <div class="carousel-item ">
+        <div class="card card-img-bg">
+          <img alt="descripción de imagen" loading="lazy" width="348" height="196" decoding="async" data-nimg="1" style="color:transparent" src="/Obelisco-V2/images/cards/boti.png">
+          <h2 class="fw-bold text-white">Boti</h2>
+          <a href="https://buenosaires.gob.ar/gcaba_historico/innovacionytransformaciondigital/boti" aria-label="Boti"></a>
+        </div>
+      </div>
+      <div class="carousel-item ">
+        <div class="card card-img-bg">
+          <img alt="descripción de imagen" loading="lazy" width="348" height="196" decoding="async" data-nimg="1" style="color:transparent" src="/Obelisco-V2/images/cards/seguridad.png">
+          <h2 class="fw-bold text-white">Centro de ciberseguridad</h2>
+          <a href="https://buenosaires.gob.ar/gcaba_historico/innovacionytransformaciondigital/centro-de-ciberseguridad" aria-label="Centro de ciberseguridad"></a>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-indicators d-md-none">
+      <button type="button" data-bs-target="#carousel-cards-tecba" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carousel-cards-tecba" data-bs-slide-to="1" class="" aria-current="true" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carousel-cards-tecba" data-bs-slide-to="2" class="" aria-current="true" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carousel-cards-tecba" data-bs-slide-to="3" class="" aria-current="true" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carousel-cards-tecba" data-bs-slide-to="4" class="" aria-current="true" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carousel-cards-tecba" data-bs-slide-to="5" class="" aria-current="true" aria-label="Slide 6"></button>
+      <button type="button" data-bs-target="#carousel-cards-tecba" data-bs-slide-to="6" class="" aria-current="true" aria-label="Slide 7"></button>
+      <button type="button" data-bs-target="#carousel-cards-tecba" data-bs-slide-to="7" class="" aria-current="true" aria-label="Slide 8"></button>
+      <button type="button" data-bs-target="#carousel-cards-tecba" data-bs-slide-to="8" class="" aria-current="true" aria-label="Slide 9"></button>
+    </div>
+  </div>
+  <div id="carousel-cards-tecba-desktop" class="carousel slide ob-carousel-tecba d-none d-md-flex">
+    <div class="carousel-header">
+      <h3>Conocé los proyectos de TecBA</h3>
+      <div class="carousel-buttons">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-cards-tecba-desktop" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-cards-tecba-desktop" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
+    <div class="carousel-inner pt-4 d-none d-md-block">
+      <div class="carousel-item active">
+        <div class="card-items">
+          <div class="card card-img-bg">
+            <img alt="descripción de imagen" loading="lazy" width="348" height="196" decoding="async" data-nimg="1" style="color:transparent" src="/Obelisco-V2/images/cards/bax.png">
+            <h2 class="fw-bold text-white">BAX</h2>
+            <a href="https://buenosaires.gob.ar/gcaba_historico/bax" aria-label="BAX"></a>
+          </div>
+          <div class="card card-img-bg">
+            <img alt="descripción de imagen" loading="lazy" width="348" height="196" decoding="async" data-nimg="1" style="color:transparent" src="/Obelisco-V2/images/cards/boti.png">
+            <h2 class="fw-bold text-white">Boti</h2>
+            <a href="https://buenosaires.gob.ar/gcaba_historico/innovacionytransformaciondigital/boti" aria-label="Boti"></a>
+          </div>
+          <div class="card card-img-bg">
+            <img alt="descripción de imagen" loading="lazy" width="348" height="196" decoding="async" data-nimg="1" style="color:transparent" src="/Obelisco-V2/images/cards/seguridad.png">
+            <h2 class="fw-bold text-white">Centro de ciberseguridad</h2>
+            <a href="https://buenosaires.gob.ar/gcaba_historico/jefaturadegabinete/centro-de-ciberseguridad" aria-label="Centro de ciberseguridad"></a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card-items">
+          <div class="card card-img-bg">
+            <img alt="descripción de imagen" loading="lazy" width="348" height="196" decoding="async" data-nimg="1" style="color:transparent" src="/Obelisco-V2/images/cards/bax.png">
+            <h2 class="fw-bold text-white">BAX</h2>
+            <a href="https://buenosaires.gob.ar/gcaba_historico/bax" aria-label="BAX"></a>
+          </div>
+          <div class="card card-img-bg">
+            <img alt="descripción de imagen" loading="lazy" width="348" height="196" decoding="async" data-nimg="1" style="color:transparent" src="/Obelisco-V2/images/cards/boti.png">
+            <h2 class="fw-bold text-white">Boti</h2>
+            <a href="https://buenosaires.gob.ar/gcaba_historico/innovacionytransformaciondigital/boti" aria-label="Boti"></a>
+          </div>
+          <div class="card card-img-bg">
+            <img alt="descripción de imagen" loading="lazy" width="348" height="196" decoding="async" data-nimg="1" style="color:transparent" src="/Obelisco-V2/images/cards/seguridad.png">
+            <h2 class="fw-bold text-white">Centro de ciberseguridad</h2>
+            <a href="https://buenosaires.gob.ar/gcaba_historico/jefaturadegabinete/centro-de-ciberseguridad" aria-label="Centro de ciberseguridad"></a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card-items">
+          <div class="card card-img-bg">
+            <img alt="descripción de imagen" loading="lazy" width="348" height="196" decoding="async" data-nimg="1" style="color:transparent" src="/Obelisco-V2/images/cards/bax.png">
+            <h2 class="fw-bold text-white">BAX</h2>
+            <a href="https://buenosaires.gob.ar/gcaba_historico/bax" aria-label="BAX"></a>
+          </div>
+          <div class="card card-img-bg">
+            <img alt="descripción de imagen" loading="lazy" width="348" height="196" decoding="async" data-nimg="1" style="color:transparent" src="/Obelisco-V2/images/cards/boti.png">
+            <h2 class="fw-bold text-white">Boti</h2>
+            <a href="https://buenosaires.gob.ar/gcaba_historico/innovacionytransformaciondigital/boti" aria-label="Boti"></a>
+          </div>
+          <div class="card card-img-bg">
+            <img alt="descripción de imagen" loading="lazy" width="348" height="196" decoding="async" data-nimg="1" style="color:transparent" src="/Obelisco-V2/images/cards/seguridad.png">
+            <h2 class="fw-bold text-white">Centro de ciberseguridad</h2>
+            <a href="https://buenosaires.gob.ar/gcaba_historico/jefaturadegabinete/centro-de-ciberseguridad" aria-label="Centro de ciberseguridad"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-indicators d-none d-md-flex">
+      <button type="button" data-bs-target="#carousel-cards-tecba-desktop" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carousel-cards-tecba-desktop" data-bs-slide-to="1" class="" aria-current="true" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carousel-cards-tecba-desktop" data-bs-slide-to="2" class="" aria-current="true" aria-label="Slide 3"></button>
+    </div>
+  </div>
+`;

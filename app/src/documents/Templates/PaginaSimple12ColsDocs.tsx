@@ -17,14 +17,17 @@ const PaginaSimple12ColsDocs: React.FC = () => {
   const DOC_SECTIONS = [
     {
       firstTitle: true,
-      title: 'Estructura general',
+      title: '¿A qué llamamos 12 columnas?',
       content: (
         <>
           <div>
             <div className="d-flex flex-column gap-3 mb-5">
               <p className="text-md m-0">
-                Sus características admiten la convivencia de contenido variado, entre lo estático (texto, imágenes,
-                descripciones) y lo accionable (tarjetas, destacados, accesos). Esto es posible porque la plantilla
+                En general, en página simple se organiza contenido informativo de forma detallada, sin que implique una
+                acción por parte de la persona usuaria. Eventualmente, puede contener enlaces para redireccionar a otras
+                secciones para que pueda realizar el trámite, inscribirse en el curso o reservar el turno.
+                <br /> Sus características admiten la convivencia de contenido variado, entre lo estático (texto,
+                tablas) y lo accionable (tarjetas, destacados, accesos). Esto es posible porque la plantilla
                 disponibiliza el 100% del ancho de la grilla (12 columnas).
               </p>
 
@@ -32,12 +35,12 @@ const PaginaSimple12ColsDocs: React.FC = () => {
                 <h3 className="list-informative-subtitle m-0">Cuándo usar</h3>
                 <ul className="list-informative-bullet">
                   <li>
-                    Para describir un evento (fecha, descripción, fotos) y sumar secciones accionables como accesos a la
-                    programación, inscripciones o descargas de material.
+                    Para combinar información textual (en formato párrafo y tabla) y sumar contenido enlazado como
+                    tarjetas y destacados.
                   </li>
                   <li>
-                    Para combinar información textual (qué es, requisitos, beneficios) con secciones interactivas como
-                    accesos a trámites, descargas y enlaces de contacto.
+                    Para organizar información y contenidos en otros formatos que no están contemplados en las{' '}
+                    <a href="https://gcba.github.io/Obelisco-V2/templates"> otras plantillas</a> del sistema Obelisco.
                   </li>
                 </ul>
               </div>
@@ -46,24 +49,72 @@ const PaginaSimple12ColsDocs: React.FC = () => {
                 <h3 className="list-informative-subtitle m-0">Cuándo no usar</h3>
                 <ul className="list-informative-bullet">
                   <li>
-                    Para solicitudes de turnos, inscripciones o envíos de información. En estos casos la estructura debe
-                    guiar al usuario con formularios, validaciones y pasos claros, recomendamos usar la plantilla de{' '}
-                    <Link href={'https://gcba.github.io/Obelisco-V2/templates/formularios/formulario-pagina-unica'}>
-                      Formularios multipágina
-                    </Link>
+                    Para informar sobre la gestión de un trámite, recomendamos usar la plantilla{' '}
+                    <Link href={'página de trámites.'}>página de trámites</Link>.
                   </li>
                   <li>
                     Para agrupar información sobre un mismo tema en subtemas, en este caso recomendamos el uso de la
                     plantilla de{' '}
-                    <Link href={'https://gcba.github.io/Obelisco-V2/templates/pagina-de-libro'}>Página libro</Link>
+                    <Link href={'https://gcba.github.io/Obelisco-V2/templates/pagina-de-libro'}>página libro</Link>.
                   </li>
                 </ul>
               </div>
             </div>
 
             <Image
-              src={`${basePath}/images/templates/pagina_simple/estructura_gral.svg`}
-              alt="Ejemplo de estructura general"
+              src={`${basePath}/images/templates/pagina_simple/12-columns-cards.svg`}
+              alt="Ejemplo de jerariquia de tarjetas"
+              width="800"
+              height="295"
+              className="img-fluid"
+            />
+            <p className="text-xs mt-1">
+              Estructura principal de la plantilla de página simple con el sistema de columnas visible.
+            </p>
+          </div>
+        </>
+      ),
+    },
+    {
+      title: 'Componentes utilizados',
+    },
+    {
+      subtitleBold: 'Tabla',
+      content: (
+        <>
+          <div className="d-flex flex-column gap-3">
+            <p className="text-md m-0">
+              La tabla muestra datos organizados y estructurados en filas y columnas, para categorizar y comparar
+              contenido relacionado.
+            </p>
+            <div className="list-informative d-flex flex-column gap-2">
+              <h3 className="list-informative-subtitle m-0 text-xl">Cuándo usar</h3>
+              <ul className="list-informative-bullet">
+                <li>Para mostrar contenido estructurado en columnas y filas.</li>
+                <li>Para comparar valores y reconocer patrones.</li>
+                <li>Para organizar gran volumen de información.</li>
+              </ul>
+            </div>
+            <div className="list-informative d-flex flex-column gap-2">
+              <h3 className="list-informative-subtitle m-0 text-xl">Cuándo no usar</h3>
+              <ul className="list-informative-bullet">
+                <li>Para mostrar contenido sin organización.</li>
+                <li>Para comunicar información no relacionada.</li>
+                <li>Para ordenar poca información, menor a dos líneas.</li>
+              </ul>
+            </div>
+            <p className="text-md mb-0">
+              La tabla puede estar acompañada por un título y un párrafo de texto de dos líneas, que no deben ocupar más
+              de 6 columnas de la grilla responsiva de nuestro sistema de diseño Obelisco.
+            </p>
+            <p className="text-md mb-0">
+              Podés consultar la{' '}
+              <Link href={'https://gcba.github.io/Obelisco-V2/components/table'}>documentación de tabla</Link> para
+              conocer más sobre el uso y variantes del componente.
+            </p>
+            <Image
+              src={`${basePath}/images/templates/pagina_simple/12-columns-table.svg`}
+              alt="Ejemplo uso de tabla"
               width="800"
               height="295"
               className="img-fluid"
@@ -71,9 +122,6 @@ const PaginaSimple12ColsDocs: React.FC = () => {
           </div>
         </>
       ),
-    },
-    {
-      title: 'Componentes utilizados',
     },
     {
       subtitleBold: 'Tarjetas horizontales',
@@ -107,10 +155,10 @@ const PaginaSimple12ColsDocs: React.FC = () => {
               </ul>
             </div>
             <p className="text-md m-0">
-              En desktop, las tarjetas horizontales de 4 columnas pueden agruparse hasta un máximo de 3 por línea,
-              mientras que las de 6 columnas pueden hasta un máximo de 2 por línea. Recomendamos que la cantidad máxima
-              de opciones no supere las 6 tarjetas para optimizar la toma de decisiones y evitar abrumar a las personas
-              usuarias.
+              En <i>desktop</i>, las tarjetas horizontales de 4 columnas pueden agruparse hasta un máximo de 3 por
+              línea, mientras que las de 6 columnas pueden hasta un máximo de 2 por línea. Recomendamos que la cantidad
+              máxima de opciones no supere las 6 tarjetas para optimizar la toma de decisiones y evitar abrumar a las
+              personas usuarias.
             </p>
             <p className="text-md m-0">
               Podés consultar la{' '}
@@ -118,13 +166,18 @@ const PaginaSimple12ColsDocs: React.FC = () => {
               conocer más sobre el uso y variantes del componente.
             </p>
             <div className="d-flex flex-column" style={{ gap: '1.5rem' }}>
-              <Image
-                src={`${basePath}/images/templates/pagina_simple/tarjetas_1.svg`}
-                alt="Ejemplo uso de tarjetas"
-                width="800"
-                height="295"
-                className="img-fluid"
-              />
+              <div>
+                <Image
+                  src={`${basePath}/images/templates/pagina_simple/12-columns-card-hierarchy.svg`}
+                  alt="Ejemplo uso de tarjetas"
+                  width="800"
+                  height="295"
+                  className="img-fluid"
+                />
+                <p className="text-xs mt-3">
+                  Variantes disponibles del componente Tarjetas para la plantilla de página simple.
+                </p>
+              </div>
               <div>
                 <p className="text-lg">Ejemplos de uso</p>
                 <Image
@@ -137,8 +190,8 @@ const PaginaSimple12ColsDocs: React.FC = () => {
                 <div className="d-flex">
                   <span className="material-symbols-rounded text-success">check</span>
                   <p>
-                    Las listas de requisitos llevan únicamente un subtítulo y contenido, cualquier elemento adicional
-                    debe ir fuera del componente.
+                    Recomendamos agrupar por categorías, temáticas, tipos de contenido, etc., el contenido de las
+                    tarjetas para facilitar la lectura y toma de decisión de la persona usuaria.
                   </p>
                 </div>
                 <div>
@@ -157,6 +210,48 @@ const PaginaSimple12ColsDocs: React.FC = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </>
+      ),
+    },
+    {
+      subtitleBold: 'Tarjeta vertical',
+      content: (
+        <>
+          <div className="d-flex flex-column gap-3">
+            <p className="text-md m-0">
+              La variante disponible para este tipo de página incluye el tipo para cursos o talleres, de 4 columnas de
+              ancho con imagen, etiqueta, título y bajada.
+            </p>
+            <div className="list-informative d-flex flex-column gap-2">
+              <h3 className="list-informative-subtitle m-0 text-md">
+                <strong>Elementos del componente:</strong>
+              </h3>
+              <ul className="list-informative-bullet">
+                <li>Imagen multimedia.</li>
+                <li>Etiqueta: única donde se avisa si el curso o taller está abierto o cerrado para su inscripción.</li>
+                <li>Título descriptivo del curso.</li>
+                <li>Bajada con información complementaria como público, días y horarios de cursada.</li>
+              </ul>
+            </div>
+            <p className="text-md mb-0">
+              En <i>desktop</i>, las tarjetas verticales de 4 columnas pueden agruparse hasta un máximo de 3 por línea.
+            </p>
+            <p className="text-md mb-0">
+              Podés consultar la{' '}
+              <Link href={'https://gcba.github.io/Obelisco-V2/components/cards'}>documentación de tarjetas</Link> para
+              conocer más sobre el uso y variantes del componente.
+            </p>
+            <Image
+              src={`${basePath}/images/templates/pagina_simple/12-columns-vertical-cards.svg`}
+              alt="Ejemplo uso de tarjetas verticales"
+              width="800"
+              height="295"
+              className="img-fluid my-2"
+            />
+            <p className="text-xs">
+              Variante disponible del componente Tarjetas para curso o taller en la plantilla de página simple.
+            </p>
           </div>
         </>
       ),
@@ -219,140 +314,53 @@ const PaginaSimple12ColsDocs: React.FC = () => {
       ),
     },
     {
-      subtitleBold: 'Accesos',
+      subtitleBold: 'Galería de imágenes',
       content: (
         <>
-          <div className="d-flex flex-column gap-3 mb-3">
-            <p className="text-md mb-0">
-              Los accesos funcionan como puntos de ingreso a diferentes secciones y pueden agruparse cuando hay una
-              similitud en su contenido.
-            </p>
-            <div className="list-informative d-flex flex-column gap-2">
-              <h3 className="list-informative-subtitle m-0 text-md">
-                <strong>Variantes disponibles:</strong>
-              </h3>
-              <ul className="list-informative-bullet">
-                <li>Acceso con borde y descripción, sin icono.</li>
-                <li>Acceso con borde, sin icono, ni descripción.</li>
-              </ul>
-            </div>
-            <div className="list-informative d-flex flex-column gap-2">
-              <h3 className="list-informative-subtitle m-0 text-md">
-                <strong>Cantidad óptima de caracteres:</strong>
-              </h3>
-              <ul className="list-informative-bullet">
-                <li>
-                  <strong>Titulo:</strong> 2 líneas de texto, equivalente a 60 caracteres incluidos los espacios.
-                </li>
-                <li>
-                  <strong>Descripción:</strong> 3 líneas de texto, equivalente a 90 caracteres incluidos los espacios.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div>
-            <div>
-              <Image
-                src={`${basePath}/images/templates/pagina_simple/accesos.svg`}
-                alt="Ejemplo uso de acceso"
-                width="800"
-                height="295"
-                className="img-fluid mb-2"
-              />
-              <p className="text-sm">Variantes disponibles de Accesos para la plantilla de página simple.</p>
-            </div>
-
+          <p className="text-md mb-2">
+            Las imágenes se utilizan como complemento figurativo o ilustrativo de la información del párrafo de texto
+            anterior o posterior, por eso sugerimos que su uso se limite a brindar mayor contexto a la persona usuaria.
+          </p>
+          <p className="text-md mb-2">
+            En una página simple, las imágenes se ubican antes, después, o entre párrafos de texto, y pueden ser parte
+            de una <Link href={'https://gcba.github.io/Obelisco-V2/components/gallery'}>galería de imágenes</Link> a
+            través de una cuadrícula de fotos interactivas y de una vista ampliada con el formato de carrusel. El{' '}
+            <strong>máximo</strong> de imágenes para este tipo de formato es hasta 7 imágenes.
+          </p>
+          <div className="d-flex flex-column gap-3">
             <div>
               <p className="text-lg">Ejemplos de uso</p>
               <Image
-                src={`${basePath}/images/templates/pagina_simple/accesos_2.svg`}
-                alt="Ejemplo uso de acceso"
+                src={`${basePath}/images/templates/pagina_simple/contenido_texto_2.svg`}
+                alt="Ejemplo uso de párrafo de texto"
                 width="800"
                 height="295"
                 className="img-fluid mb-2"
               />
               <div className="d-flex">
                 <span className="material-symbols-rounded text-success">check</span>
-                <p>
-                  Las listas de requisitos llevan únicamente un subtítulo y contenido, cualquier elemento adicional debe
-                  ir fuera del componente.
+                <p className="text-sm m-0">
+                  En la continuación de un párrafo de texto, recomendamos mantener la disposición de 8 columnas para
+                  ubicar las imágenes.
                 </p>
               </div>
             </div>
-
             <div>
               <Image
-                src={`${basePath}/images/templates/pagina_simple/accesos_3.svg`}
-                alt="Ejemplo uso de acceso"
+                src={`${basePath}/images/templates/pagina_simple/contenido_texto_3.svg`}
+                alt="Ejemplo uso de párrafo de texto"
                 width="800"
                 height="295"
                 className="img-fluid mb-2"
               />
               <div className="d-flex">
                 <span className="material-symbols-rounded text-danger">close</span>
-                <p>
-                  Las listas de requisitos llevan únicamente un subtítulo y contenido, cualquier elemento adicional debe
-                  ir fuera del componente.
+                <p className="text-sm m-0">
+                  En <i>desktop</i>, evitar que las imágenes ocupen el 100% del ancho de la página para no interferir en
+                  la lectura e interacción del usuario con la página.
                 </p>
               </div>
             </div>
-          </div>
-        </>
-      ),
-    },
-    {
-      subtitleBold: 'Colapsables',
-      content: (
-        <>
-          <div style={{ marginBottom: '1.75rem' }}>
-            <p className="text-md" style={{ marginTop: '1.5rem', marginBottom: '.75rem' }}>
-              Los colapsables sirven para mostrar y ocultar secciones de contenido relacionado en una página, lo que
-              mejora la experiencia de las personas usuarias.
-            </p>
-            <div className="list-informative d-flex flex-column gap-2">
-              <h3 className="list-informative-subtitle m-0">Variantes disponibles:</h3>
-              <ul className="list-informative-bullet">
-                <li>Colapsable sólo título (obligatorio).</li>
-                <li>Colapsable con título y descripción (opcional).</li>
-              </ul>
-            </div>
-            <div className="mt-3">
-              <Image
-                src={`${basePath}/images/templates/pagina_simple/colapsables.svg`}
-                alt="Ejemplo uso de colapsable"
-                width="800"
-                height="295"
-                className="img-fluid mb-2"
-              />
-              <p className="text-sm m-0">Variantes disponibles de Colapsables para la plantilla de página simple.</p>
-            </div>
-          </div>
-          <div className="mb-3">
-            <p className="text-xl fw-semibold">Contexto de uso</p>
-            <p className="text-md mb-2">
-              <strong>Para secciones de preguntas frecuentes.</strong> La cantidad máxima de opciones para incluir en
-              una sección de preguntas frecuentes es de 6 colapsables, y una cantidad mínima de 4 opciones.
-            </p>
-            <Image
-              src={`${basePath}/images/templates/pagina_simple/colapsables_2.svg`}
-              alt="Ejemplo uso de colapsable"
-              width="800"
-              height="295"
-              className="img-fluid mb-2"
-            />
-          </div>
-          <div>
-            <p className="text-md mb-2">
-              Si son menos de 4 preguntas frecuentes recomendamos que no se use el componente Colapsables. En cambio, sí
-              recomendamos redactar la información directamente en el cuerpo.
-            </p>
-            <Image
-              src={`${basePath}/images/templates/pagina_simple/colapsables_3.svg`}
-              alt="Ejemplo uso de colapsable"
-              width="800"
-              height="295"
-              className="img-fluid mb-2"
-            />
           </div>
         </>
       ),
@@ -393,57 +401,6 @@ const PaginaSimple12ColsDocs: React.FC = () => {
                 height="295"
                 className="img-fluid"
               />
-            </div>
-
-            <div className="d-flex flex-column gap-2">
-              <h5 className="m-0 fw-semibold">Galería de imágenes</h5>
-              <p className="text-md m-0">
-                Las imágenes se utilizan como complemento figurativo o ilustrativo de la información del párrafo de
-                texto anterior o posterior, por eso sugerimos que su uso se limite a brindar mayor contexto a la persona
-                usuaria.
-              </p>
-              <p className="text-md m-0">
-                En una página simple, las imágenes se ubican antes, después, o entre párrafos de texto, y pueden ser
-                parte de una{' '}
-                <Link href={'https://gcba.github.io/Obelisco-V2/components/gallery'}>galería de imágenes</Link> a través
-                de una cuadrícula de fotos interactivas y de una vista ampliada con el formato de carrusel. El{' '}
-                <strong>máximo</strong> de imágenes para este tipo de formato es hasta 7 imágenes.
-              </p>
-              <div className="d-flex flex-column gap-3">
-                <div>
-                  <p className="text-lg">Ejemplos de uso</p>
-                  <Image
-                    src={`${basePath}/images/templates/pagina_simple/contenido_texto_2.svg`}
-                    alt="Ejemplo uso de párrafo de texto"
-                    width="800"
-                    height="295"
-                    className="img-fluid mb-2"
-                  />
-                  <div className="d-flex">
-                    <span className="material-symbols-rounded text-success">check</span>
-                    <p className="text-sm m-0">
-                      En la continuación de un párrafo de texto, recomendamos mantener la disposición de 8 columnas para
-                      ubicar las imágenes.
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <Image
-                    src={`${basePath}/images/templates/pagina_simple/contenido_texto_3.svg`}
-                    alt="Ejemplo uso de párrafo de texto"
-                    width="800"
-                    height="295"
-                    className="img-fluid mb-2"
-                  />
-                  <div className="d-flex">
-                    <span className="material-symbols-rounded text-danger">close</span>
-                    <p className="text-sm m-0">
-                      En <i>desktop</i>, evitar que las imágenes ocupen el 100% del ancho de la página para no
-                      interferir en la lectura e interacción del usuario con la página.
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </>

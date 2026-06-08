@@ -707,7 +707,96 @@ const HeroHeaderDocs: React.FC = () => {
                         ></button>
                         <div className="collapse navbar-collapse" id="navbarContent1">
                           <div className="navbar-content align-items-center">
-                            <div className="navbar-sections"></div>
+                            <div className="navbar-sections">
+                              <nav>
+                                <p className="navbar-sections-title">Secciones</p>
+                                <ul className="nav nav-pills nav-sections">
+                                  <li className="dropdown">
+                                    <button
+                                      type="button"
+                                      className="btn btn-dropdown btn-lg"
+                                      data-bs-toggle="dropdown"
+                                      aria-expanded="false"
+                                    >
+                                      <span className="btn-dropdown-text ellipsis-1">Navegación</span>
+                                      <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                                        expand_more
+                                      </span>
+                                    </button>
+                                    <div className="dropdown-menu">
+                                      <LinkClient className="dropdown-item">
+                                        <span className="item-text">Enlace de navegación</span>
+                                      </LinkClient>
+                                      <LinkClient className="dropdown-item">
+                                        <span className="item-text">Enlace de navegación</span>
+                                      </LinkClient>
+                                      <LinkClient className="dropdown-item">
+                                        <span className="item-text">Enlace de navegación</span>
+                                      </LinkClient>
+                                      <LinkClient className="dropdown-item">
+                                        <span className="item-text">Enlace de navegación</span>
+                                      </LinkClient>
+                                      <LinkClient className="dropdown-item">
+                                        <span className="item-text">Enlace de navegación</span>
+                                      </LinkClient>
+                                      <LinkClient className="dropdown-item">
+                                        <span className="item-text">Enlace de navegación</span>
+                                      </LinkClient>
+                                      <LinkClient className="dropdown-item item-link">
+                                        <span className="item-text">Ver más</span>
+                                        <span className="material-symbols-rounded" aria-hidden="true">
+                                          arrow_forward
+                                        </span>
+                                      </LinkClient>
+                                    </div>
+                                  </li>
+                                  <li className="nav-item">
+                                    <LinkClient className="nav-link nav-link-lg">
+                                      <span>Navegación</span>
+                                    </LinkClient>
+                                  </li>
+                                  <li className="dropdown">
+                                    <button
+                                      type="button"
+                                      className="btn btn-dropdown btn-lg"
+                                      data-bs-toggle="dropdown"
+                                      aria-expanded="false"
+                                    >
+                                      <span className="btn-dropdown-text ellipsis-1">Navegación</span>
+                                      <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                                        expand_more
+                                      </span>
+                                    </button>
+                                    <div className="dropdown-menu">
+                                      <LinkClient className="dropdown-item">
+                                        <span className="item-text">Enlace de navegación</span>
+                                      </LinkClient>
+                                      <LinkClient className="dropdown-item">
+                                        <span className="item-text">Enlace de navegación</span>
+                                      </LinkClient>
+                                      <LinkClient className="dropdown-item">
+                                        <span className="item-text">Enlace de navegación</span>
+                                      </LinkClient>
+                                      <LinkClient className="dropdown-item">
+                                        <span className="item-text">Enlace de navegación</span>
+                                      </LinkClient>
+                                      <LinkClient className="dropdown-item">
+                                        <span className="item-text">Enlace de navegación</span>
+                                      </LinkClient>
+                                      <LinkClient className="dropdown-item">
+                                        <span className="item-text">Enlace de navegación</span>
+                                      </LinkClient>
+                                      <LinkClient className="dropdown-item item-link">
+                                        <span className="item-text">Ver más</span>
+                                        <span className="material-symbols-rounded" aria-hidden="true">
+                                          arrow_forward
+                                        </span>
+                                      </LinkClient>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </nav>
+                            </div>
                             <div className="navbar-search">
                               <form className="form-search">
                                 <label htmlFor="header-search" className="form-label sr-only">

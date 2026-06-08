@@ -458,6 +458,16 @@ header.tecba-navbar {
   z-index: 2;
   height: 80px !important;
 	border-bottom: unset !important;
+
+	.navbar-sections {
+		.btn-dropdown,
+		.nav-link,
+		.btn-dropdown:active,
+		.nav-link:active {
+			background-color: transparent !important;
+			color: #101e37 !important;
+		}
+	}
 }
 
 

@@ -1,3 +1,6 @@
+@use 'sass:map';
+@use 'sass:list';
+
 // Custom variables and mixins
 // MIXIN GENERAL
 @mixin panel-content($flex-direction, $media-query) {
@@ -228,6 +231,21 @@
   }
 }
 
+$gradient-colors: (
+  'cyan': (
+    $sky-900,
+    #8ce1d7,
+  ),
+  'blue': (
+    $blue-900,
+    $blue-500,
+  ),
+);
+
+@mixin bg-gradient-color($color1, $color2) {
+  background: linear-gradient(180deg, $color1 0%, $color2 100%);
+}
+
 .panel-horizontal-container {
   @extend .panel-horizontal-content;
   padding: 64px;
@@ -272,6 +290,30 @@
           &.btn-outline-light {
             border-color: white;
           }
+        }
+      }
+    }
+  }
+
+  @each $name, $color in $gradient-colors {
+    &.bg-panel-horizontal-gradient-#{$name} {
+      @include bg-gradient-color(list.nth($color, 1), list.nth($color, 2));
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+
+      .panel-horizontal {
+        .panel-body {
+          padding: 64px 0 64px 64px;
+          max-width: 50%;
+          position: relative;
+        }
+
+        .panel-img {
+          width: auto;
+          height: 288px;
+          object-fit: none;
+          overflow: initial;
         }
       }
     }

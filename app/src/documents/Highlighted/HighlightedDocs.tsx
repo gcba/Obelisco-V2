@@ -769,6 +769,43 @@ const HighlightedDocs: React.FC = () => {
         </>
       ),
     },
+    {
+      title: 'Destacado con degrade',
+      content: (
+        <>
+          <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTONS_DARK}>
+            <div className="container">
+              <ZoomContainer>
+                <div className="panel-horizontal-content panel-horizontal-container bg-panel-horizontal-gradient-cyan">
+                  <div className="panel-horizontal d-flex flex-row-reverse">
+                    <Image
+                      src={`${basePath}/images/highlighted/bax-phone.png`}
+                      alt="descripción de imagen"
+                      className="panel-img"
+                      width={538}
+                      height={304}
+                    ></Image>
+
+                    <div className="panel-body">
+                      <p className="panel-title">Título del destacado</p>
+                      <p className="panel-text">
+                        Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
+                        negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
+                        líneas. No puede contener negritas ni enlaces
+                      </p>
+                      <div className="panel-footer">
+                        <LinkClient className="btn btn-primary btn-lg">Botón</LinkClient>
+                        <LinkClient className="btn btn-outline-light btn-lg">Botón</LinkClient>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ZoomContainer>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
   ];
 
   return (

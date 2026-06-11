@@ -17,7 +17,7 @@ const PaginaSimple12ColsDocs: React.FC = () => {
   const DOC_SECTIONS = [
     {
       firstTitle: true,
-      title: '¿A qué llamamos 12 columnas?',
+      title: 'Estructura general',
       content: (
         <>
           <div>
@@ -71,6 +71,59 @@ const PaginaSimple12ColsDocs: React.FC = () => {
             <p className="text-xs mt-1">
               Estructura principal de la plantilla de página simple con el sistema de columnas visible.
             </p>
+          </div>
+        </>
+      ),
+    },
+    {
+      title: 'Cuerpo de la página',
+      content: (
+        <>
+          <p className="text-md mb-0">
+            Este es un módulo opcional para plasmar el contenido escrito de la página y aparece debajo del encabezado.
+            Permite organizar la información y sumar recursos complementarios. Está compuesto por los siguientes
+            elementos:
+          </p>
+        </>
+      ),
+    },
+    {
+      subtitleBold: 'Elementos de párrafo',
+      content: (
+        <>
+          <div className="d-flex flex-column gap-3">
+            <div className="list-informative d-flex flex-column gap-2">
+              <h3 className="list-informative-subtitle mb-2 text-md">
+                Opciones disponibles para redactar, estructurar y dar forma al contenido textual de la página simple:
+              </h3>
+              <ul className="list-informative-bullet">
+                <li>
+                  Títulos y subtítulos que pueden ir de &quot;Encabezado 2&quot; a &quot;Encabezado 6&quot;, utilizados
+                  para organizar y jerarquizar el contenido en secciones, especialmente en textos extensos.
+                </li>
+                <li>
+                  Texto general para el desarrollo completo de la información. Permite aplicar estilos de formato como
+                  negrita e itálica para jerarquizar y destacar contenido relevante.
+                </li>
+                <li>Enlaces, permite enlazar información complementaria sin extender el texto principal.</li>
+                <li>
+                  Listas simples con viñetas o numeración para organizar información, que puede incluir enlace. Las
+                  listas con viñetas se utilizan cuando los elementos no siguen un orden secuencial, mientras que las
+                  listas numeradas se emplean cuando existe un orden o secuencia definida.
+                </li>
+                <li>
+                  Listas simples con enlaces, que pueden tener o no icono de descarga, para enlazar con otras pantallas
+                  y descarga de documentación.
+                </li>
+              </ul>
+            </div>
+            <Image
+              src={`${basePath}/images/templates/pagina_simple/section-title-subtitle.svg`}
+              alt="Ejemplo de título y subtítulo"
+              width="800"
+              height="295"
+              className="img-fluid my-3"
+            />
           </div>
         </>
       ),

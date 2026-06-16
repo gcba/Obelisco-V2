@@ -143,7 +143,9 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: $border-radius-lg;
+
+    // border-radius: $border-radius-lg;
+    @extend .border-radius-pill;
     border: none;
     outline: $outline-border;
     background-color: $carousel-bg;

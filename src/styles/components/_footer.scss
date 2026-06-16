@@ -33,6 +33,11 @@ $footer-social-x: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0
   background-color: $dark;
   padding: 40px 0;
   outline: 0.25rem solid transparent;
+  @extend .border-radius-7xl;
+
+  @include media-breakpoint-down(lg) {
+    @extend .border-radius-6xl;
+  }
 
   @include media-breakpoint-down(sm) {
     padding: $footer-padding-y-sm 0;

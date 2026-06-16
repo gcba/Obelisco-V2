@@ -181,7 +181,9 @@ input[type='file'] {
 input[type='file']::-webkit-file-upload-button {
   color: white;
   padding: 12px 24px;
-  border-radius: 8px;
+
+  // border-radius: 8px;
+  @extend .border-radius-3xl;
   background-color: #005e7a !important;
   height: 48px;
 
@@ -190,7 +192,9 @@ input[type='file']::-webkit-file-upload-button {
 
 input[type='file']:disabled {
   border: 2px solid $slate-400;
-  border-radius: 8px;
+
+  // border-radius: 8px;
+  @extend .border-radius-3xl;
   background-color: $slate-100;
   color: $slate-700;
   display: flex;
@@ -217,7 +221,9 @@ input[type='file']:disabled::-webkit-file-upload-button {
   font-size: $md-body-fs;
   font-weight: $md-body-fw;
   border: none;
-  border-radius: $border-radius-lg;
+
+  // border-radius: $border-radius-lg;
+  @extend .border-radius-pill;
   outline: 0.125rem solid $body-color;
   outline-offset: 0;
   box-sizing: border-box;
@@ -510,3 +516,10 @@ input[type='search']::-moz-search-clear-button {
 }
 
 //Input con fondo -
+
+// - Textarea
+textarea.form-control {
+  @extend .border-radius-3xl;
+}
+
+// Textarea -

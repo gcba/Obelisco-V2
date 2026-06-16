@@ -125,7 +125,8 @@ $theme-color-btn-bg-hover: (
   padding: $btn-padding-md;
 
   // border-radius: $border-radius-lg; // 0.5rem
-  border-radius: 22px;
+  // border-radius: 22px;
+  @extend .border-radius-pill;
   min-height: 2.5rem; // 40px
   display: inline-flex;
   align-items: center;
@@ -165,7 +166,9 @@ $theme-color-btn-bg-hover: (
     width: 1.75rem;
     max-width: 1.75rem;
     height: 1.75rem;
-    border-radius: $border-radius-sm; //.25rem
+
+    // border-radius: $border-radius-sm; //.25rem
+    @extend .border-radius-pill;
     border: none;
     outline: $outline-transparent-subtle;
 
@@ -186,7 +189,9 @@ $theme-color-btn-bg-hover: (
     &.focus,
     &:focus:not(:focus-visible) {
       box-shadow: $focus-box-shadow;
-      border-radius: $border-radius-sm; //.25rem
+
+      // border-radius: $border-radius-sm; //.25rem
+      @extend .border-radius-pill;
       text-decoration: none;
       outline: $outline-transparent;
     }

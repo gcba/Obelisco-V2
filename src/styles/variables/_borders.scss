@@ -35,3 +35,40 @@ $theme-border-radius: (
     border-radius: $value;
   }
 }
+
+// Sólo para vista en Sección bordes
+div.container.bordes {
+  // background-color: red;
+
+  .max-items-4 {
+    gap: 15px;
+
+    .col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #e0e2e7;
+      width: 140px;
+      height: 114px;
+      padding: 16px;
+      border-radius: $border-radius-2xl;
+
+      .box-borders {
+        width: 80px;
+        height: 36px;
+        border: 1.5px solid $blue-500;
+      }
+
+      p {
+        font-weight: 700;
+        margin-bottom: 0;
+      }
+
+      span {
+        color: #707580;
+        font-size: 11px;
+      }
+    }
+  }
+}

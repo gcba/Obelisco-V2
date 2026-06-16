@@ -10,6 +10,7 @@ export const stylesPages = [
   { text: 'Grilla', url: '/components/grid', id: 2 },
   { text: 'Tipografía', url: '/components/typography', id: 3 },
   { text: 'Íconos', url: '/components/icons', id: 4 },
+  { text: 'Bordes', url: '/components/borders', id: 5 },
 ];
 export const formsPages = [
   { text: 'Botón de radio', url: '/components/form-radio', id: 6 },

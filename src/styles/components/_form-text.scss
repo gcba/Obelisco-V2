@@ -194,7 +194,7 @@ input[type='file']:disabled {
   border: 2px solid $slate-400;
 
   // border-radius: 8px;
-  @extend .border-radius-3xl;
+  @extend .border-radius-pill;
   background-color: $slate-100;
   color: $slate-700;
   display: flex;

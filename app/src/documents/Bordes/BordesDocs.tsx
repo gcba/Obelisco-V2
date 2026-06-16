@@ -172,7 +172,7 @@ const BordesDocs: React.FC = () => {
       <ComponentHeader
         title="Bordes"
         description={[
-          'Los iconos son elementos gráficos que representan conceptos, acciones o marcas visuales y ayudan a las personas usuarias a navegar y entender la interfaz de forma rápida y clara. En los productos digitales del GCBA utilizamos principalmente Material Icons, con variantes permitidas en casos específicos.',
+          'Texto para la bajada de bordes: Los bordes delimitan los elementos para su organización espacial. En esta sección, se configura el radio de curvatura de las esquinas de diferentes componentes como botones, tarjetas y campos.',
         ]}
       />
       <Tabs sectionDev={SECTIONS_DEV} />

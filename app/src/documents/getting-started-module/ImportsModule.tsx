@@ -56,7 +56,7 @@ const sections = [
 
         <br />
 
-        <h3 className="headline-md">Nunito:</h3>
+        <h3 className="headline-md">Archivo:</h3>
         <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
           {NUNITO_CODE}
         </SyntaxHighlighter>

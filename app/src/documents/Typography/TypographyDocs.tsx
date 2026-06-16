@@ -44,10 +44,10 @@ const SECTIONS_UX = [
         <div className="max-items-2">
           <div className="col">
             <img src={`${basePath}/images/tipografia/tipografia_1.svg`} className="w-100 pb-4" alt="Familia Nunito" />
-            <p className="text-xl mb-2">Nunito</p>
+            <p className="text-xl mb-2">Archivo</p>
             <p>
-              Es una tipografía <i>sans-serif</i> geométrica con formas redondeadas, diseñada para interfaces digitales
-              con alta legibilidad.
+              Es una tipografía <i>sans-serif</i> grotesca diseñada para ser usada simultáneamente en plataformas
+              impresas y digitales.
             </p>
           </div>
           <div className="col">

@@ -31,7 +31,7 @@ $theme-border-radius: (
 );
 
 @each $border, $value in $theme-border-radius {
-  .border-radius-#{$border} {
+  .border-radius-#{$border}.border-radius-#{$border} {
     border-radius: $value;
   }
 }

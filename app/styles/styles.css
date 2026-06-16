@@ -12028,55 +12028,60 @@ textarea.form-control-lg {
   }
 }
 
-.border-radius-border-radius-xs {
+.border-radius-xs.border-radius-xs {
   border-radius: 1px;
 }
 
-.border-radius-border-radius-sm {
+.border-radius-sm.border-radius-sm {
   border-radius: 2px;
 }
 
-.border-radius-border-radius-md {
+.border-radius-md.border-radius-md {
   border-radius: 4px;
 }
 
-.border-radius-border-radius-lg {
+.border-radius-lg.border-radius-lg {
   border-radius: 6px;
 }
 
-.border-radius-border-radius-xl {
+.border-radius-xl.border-radius-xl {
   border-radius: 8px;
 }
 
-.border-radius-border-radius-2xl {
+.border-radius-2xl.border-radius-2xl {
   border-radius: 12px;
 }
 
-.border-radius-border-radius-3xl {
+.border-radius-3xl.border-radius-3xl, .accordion-item .accordion-button.collapsed, .accordion-item .accordion-button:focus, .accordion-item .accordion-button.focus, .accordion-item:first-of-type, .accordion-item:last-of-type, .accordion-item, .table-responsive,
+.table-responsive-sm,
+.table-responsive-md,
+.table-responsive-lg,
+.table-responsive-xl, .table.table-bordered, .table, .alert.alert-dark, .alert.alert-light, .alert.alert-danger, .alert.alert-warning, .alert.alert-info, .alert.alert-tertiary, .alert.alert-success, .alert.alert-secondary, .alert.alert-primary, .map, .modal .modal-content, textarea.form-control, input[type=file]::-webkit-file-upload-button, .group-access .card-access .card-access-body + .list-group-item, .group-access .card-access .card-access-body .card-access-icon, .group-access .card-access, a.list-group-item:last-child, a.list-group-item:first-child, a.list-group-item {
   border-radius: 16px;
 }
 
-.border-radius-border-radius-4xl {
+.border-radius-4xl.border-radius-4xl {
   border-radius: 20px;
 }
 
-.border-radius-border-radius-5xl {
+.border-radius-5xl.border-radius-5xl {
   border-radius: 24px;
 }
 
-.border-radius-border-radius-6xl {
+.border-radius-6xl.border-radius-6xl, .card {
   border-radius: 32px;
 }
 
-.border-radius-border-radius-7xl {
+.border-radius-7xl.border-radius-7xl {
   border-radius: 64px;
 }
 
-.border-radius-border-radius-8xl {
+.border-radius-8xl.border-radius-8xl {
   border-radius: 128px;
 }
 
-.border-radius-border-radius-pill {
+.border-radius-pill.border-radius-pill, .carousel .carousel-control-next,
+.carousel .carousel-control-prev, .pagination .page-item .page-link, .form-control, input[type=file]:disabled, .btn-xs:focus, .btn-xs:focus:not(:focus-visible), .btn-xs.focus, .btn-xs, .btn {
   border-radius: 9999px;
 }
 
@@ -13052,7 +13057,6 @@ nav .nav-pills.flex-column .nav .nav .nav .nav-link, nav .nav-pills.list-steps .
 .btn {
   font-weight: 700;
   padding: 0.5rem 1rem;
-  border-radius: 22px;
   min-height: 2.5rem;
   display: inline-flex;
   align-items: center;
@@ -13082,7 +13086,6 @@ nav .nav-pills.flex-column .nav .nav .nav .nav-link, nav .nav-pills.list-steps .
   width: 1.75rem;
   max-width: 1.75rem;
   height: 1.75rem;
-  border-radius: 2px;
   border: none;
   outline: 0.125rem solid transparent;
 }
@@ -13097,7 +13100,6 @@ nav .nav-pills.flex-column .nav .nav .nav .nav-link, nav .nav-pills.list-steps .
 }
 .btn-xs:focus, .btn-xs.focus, .btn-xs:focus:not(:focus-visible) {
   box-shadow: 0 0 0 0.25rem #218274;
-  border-radius: 2px;
   text-decoration: none;
   outline: 0.25rem solid transparent;
 }
@@ -14026,7 +14028,6 @@ a.list-group-item {
   color: #101e37;
   border: none;
   outline: 0.125rem solid #e6ebf0;
-  border-radius: 6px;
   padding: 1rem;
   display: flex;
   height: auto;
@@ -14064,12 +14065,8 @@ a.list-group-item:visited {
 a.list-group-item:visited .access-text {
   color: #38485c;
 }
-a.list-group-item:first-child {
-  border-radius: 6px;
-}
 a.list-group-item:last-child {
   margin-bottom: 0;
-  border-radius: 6px;
 }
 a.list-group-item:hover, a.list-group-item.hover {
   outline: 0.125rem solid #274986;
@@ -14184,7 +14181,6 @@ a.list-group-item.item-sm {
   display: grid;
   width: 100%;
   outline: 0.125rem solid #e6ebf0;
-  border-radius: 6px;
   padding-bottom: 0;
 }
 .group-access .card-access .clearfix {
@@ -14239,7 +14235,6 @@ a.list-group-item.item-sm {
   background-color: #f3f6f9;
   flex: 0 0 4rem;
   height: 4rem;
-  border-radius: 6px;
   text-align: center;
   line-height: 4rem;
   display: flex;
@@ -14255,9 +14250,6 @@ a.list-group-item.item-sm {
 .group-access .card-access .card-access-body.reverse {
   flex-direction: row-reverse;
   justify-content: flex-end;
-}
-.group-access .card-access .card-access-body + .list-group-item {
-  border-radius: 0 0 0.5rem 0.5rem;
 }
 .group-access .card-access .container-access .access-option {
   padding: 0;
@@ -14384,14 +14376,12 @@ input[type=file] {
 input[type=file]::-webkit-file-upload-button {
   color: white;
   padding: 12px 24px;
-  border-radius: 8px;
   background-color: #005e7a !important;
   height: 48px;
 }
 
 input[type=file]:disabled {
   border: 2px solid #9eaab8;
-  border-radius: 8px;
   background-color: #e6ebf0;
   color: #5c6a7a;
   display: flex;
@@ -14415,7 +14405,6 @@ input[type=file]:disabled::-webkit-file-upload-button {
   font-size: 1rem;
   font-weight: 400;
   border: none;
-  border-radius: 6px;
   outline: 0.125rem solid #101e37;
   outline-offset: 0;
   box-sizing: border-box;
@@ -15877,7 +15866,6 @@ nav:has(ol.breadcrumb) .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
 }
 .map {
   outline: 0.125rem solid #e6ebf0;
-  border-radius: 6px;
   background-color: #ffffff;
 }
 .map .map-body {
@@ -16454,7 +16442,6 @@ span.form-label {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 6px;
   border: none;
   outline: 0.125rem solid #e6ebf0;
   height: 2.75rem;
@@ -16887,7 +16874,6 @@ span.form-label {
   border: none;
   outline: 0.0625rem solid #336acc;
   outline-offset: -0.0625rem;
-  border-radius: 6px;
   color: #101e37;
 }
 .alert.alert-primary::before {
@@ -16905,7 +16891,6 @@ span.form-label {
   border: none;
   outline: 0.0625rem solid #101e37;
   outline-offset: -0.0625rem;
-  border-radius: 6px;
   color: #101e37;
 }
 .alert.alert-secondary::before {
@@ -16924,7 +16909,6 @@ span.form-label {
   border: none;
   outline: 0.0625rem solid #26874a;
   outline-offset: -0.0625rem;
-  border-radius: 6px;
   color: #101e37;
 }
 .alert.alert-success::before {
@@ -16947,7 +16931,6 @@ span.form-label {
   border: none;
   outline: 0.0625rem solid #3cceb8;
   outline-offset: -0.0625rem;
-  border-radius: 6px;
   color: #101e37;
 }
 .alert.alert-tertiary::before {
@@ -16966,7 +16949,6 @@ span.form-label {
   border: none;
   outline: 0.0625rem solid #0086ad;
   outline-offset: -0.0625rem;
-  border-radius: 6px;
   color: #101e37;
 }
 .alert.alert-info::before {
@@ -16990,7 +16972,6 @@ span.form-label {
   border: none;
   outline: 0.0625rem solid #ff9500;
   outline-offset: -0.0625rem;
-  border-radius: 6px;
   color: #101e37;
 }
 .alert.alert-warning::before {
@@ -17014,7 +16995,6 @@ span.form-label {
   border: none;
   outline: 0.0625rem solid #cc3333;
   outline-offset: -0.0625rem;
-  border-radius: 6px;
   color: #101e37;
 }
 .alert.alert-danger::before {
@@ -17037,7 +17017,6 @@ span.form-label {
   border: none;
   outline: 0.0625rem solid #f3f6f9;
   outline-offset: -0.0625rem;
-  border-radius: 6px;
   color: #101e37;
 }
 .alert.alert-light::before {
@@ -17055,7 +17034,6 @@ span.form-label {
   border: none;
   outline: 0.0625rem solid #002733;
   outline-offset: -0.0625rem;
-  border-radius: 6px;
   color: #101e37;
 }
 .alert.alert-dark::before {
@@ -17139,7 +17117,6 @@ span.form-label {
 
 .table {
   border: 1px solid #e6ebf0;
-  border-radius: 6px;
   border-collapse: initial;
   border-spacing: initial;
   margin: 0;
@@ -17181,10 +17158,10 @@ span.form-label {
   min-width: 136px;
 }
 .table thead tr th:first-of-type {
-  border-top-left-radius: 6px;
+  border-top-left-radius: 16px;
 }
 .table thead tr th:last-of-type {
-  border-top-right-radius: 6px;
+  border-top-right-radius: 16px;
 }
 .table thead tr th .th-title {
   font-weight: 700;
@@ -17215,16 +17192,13 @@ span.form-label {
   border-top: none;
 }
 .table tbody tr:last-of-type td:first-of-type {
-  border-bottom-left-radius: 6px;
+  border-bottom-left-radius: 16px;
 }
 .table tbody tr:last-of-type td:last-of-type {
-  border-bottom-right-radius: 6px;
+  border-bottom-right-radius: 16px;
 }
 .table tbody tr:last-of-type td {
   border: none;
-}
-.table.table-bordered {
-  border-radius: 6px;
 }
 .table.table-bordered thead th {
   border: none;
@@ -17254,7 +17228,6 @@ span.form-label {
 .table-responsive-lg,
 .table-responsive-xl {
   border: 1px solid #e6ebf0;
-  border-radius: 6px;
 }
 .table-responsive > .table-bordered,
 .table-responsive-sm > .table-bordered,
@@ -17284,6 +17257,12 @@ span.form-label {
   background-color: #002733;
   padding: 40px 0;
   outline: 0.25rem solid transparent;
+  border-radius: 64px 64px 0 0;
+}
+@media (max-width: 991.98px) {
+  .main-footer {
+    border-radius: 32px 32px 0 0;
+  }
 }
 @media (max-width: 575.98px) {
   .main-footer {
@@ -19492,10 +19471,6 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
   overflow: visible;
   border: none;
   outline: 0.125rem solid #e6ebf0;
-  border-radius: 6px;
-}
-.accordion-item:first-of-type, .accordion-item:last-of-type {
-  border-radius: 6px;
 }
 .accordion-item .accordion-button {
   outline: 0.125rem solid transparent;
@@ -19504,7 +19479,7 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
   text-align: left;
   padding: 1rem 4rem 1rem 1.5rem;
   transition: background-color 0.2s;
-  border-radius: 6px 6px 0 0;
+  border-radius: 16px 16px 0 0;
   position: relative;
   z-index: 1;
   color: #ffffff;
@@ -19556,11 +19531,9 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
 }
 .accordion-item .accordion-button:focus, .accordion-item .accordion-button.focus {
   box-shadow: 0 0 0 0.25rem #218274;
-  border-radius: 6px;
   outline: 0.25rem solid transparent;
 }
 .accordion-item .accordion-button.collapsed {
-  border-radius: 6px;
   background-color: #f3f6f9;
   color: #101e37;
   position: relative;
@@ -19654,7 +19627,6 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
   border: none;
   outline: 0.125rem solid #e6ebf0;
   width: 100%;
-  border-radius: 30px;
   overflow: hidden;
 }
 .card .card-body {
@@ -20087,7 +20059,6 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 6px;
   border: none;
   outline: 0.125rem solid #e6ebf0;
   background-color: #ffffff;

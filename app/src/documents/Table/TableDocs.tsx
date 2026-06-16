@@ -37,7 +37,7 @@ const SECTIONS_DEV = [
                 Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
               </p>
             </div>
-            <div className="responsive-scroll" tabIndex={0}>
+            <div className="responsive-scroll border-radius-3xl" tabIndex={0}>
               <table className="table table-borderless">
                 <thead>
                   <tr>

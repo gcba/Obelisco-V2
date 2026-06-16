@@ -33,10 +33,10 @@ $footer-social-x: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0
   background-color: $dark;
   padding: 40px 0;
   outline: 0.25rem solid transparent;
-  @extend .border-radius-7xl;
+  border-radius: $border-radius-7xl $border-radius-7xl 0 0;
 
   @include media-breakpoint-down(lg) {
-    @extend .border-radius-6xl;
+    border-radius: $border-radius-6xl $border-radius-6xl 0 0;
   }
 
   @include media-breakpoint-down(sm) {

@@ -1,7 +1,9 @@
 // Custom styles
 .table {
   border: 1px solid $border-color;
-  border-radius: $border-radius-lg;
+
+  // border-radius: $border-radius-lg;
+  @extend .border-radius-3xl;
   border-collapse: initial;
   border-spacing: initial;
   margin: 0;
@@ -56,11 +58,13 @@
         }
 
         &:first-of-type {
-          border-top-left-radius: $border-radius-lg;
+          // border-top-left-radius: $border-radius-lg;
+          border-top-left-radius: $border-radius-3xl;
         }
 
         &:last-of-type {
-          border-top-right-radius: $border-radius-lg;
+          // border-top-right-radius: $border-radius-lg;
+          border-top-right-radius: $border-radius-3xl;
         }
 
         .th-title {
@@ -105,11 +109,13 @@
 
       &:last-of-type {
         td:first-of-type {
-          border-bottom-left-radius: $border-radius-lg;
+          // border-bottom-left-radius: $border-radius-lg;
+          border-bottom-left-radius: $border-radius-3xl;
         }
 
         td:last-of-type {
-          border-bottom-right-radius: $border-radius-lg;
+          // border-bottom-right-radius: $border-radius-lg;
+          border-bottom-right-radius: $border-radius-3xl;
         }
 
         td {
@@ -120,7 +126,8 @@
   }
 
   &.table-bordered {
-    border-radius: $border-radius-lg;
+    // border-radius: $border-radius-lg;
+    @extend .border-radius-3xl;
 
     thead th {
       border: none;
@@ -176,7 +183,9 @@
 .table-responsive-xl {
   //Se le saca el extend de responsive-scroll de manera que esta queda deprecada.
   border: 1px solid $border-color;
-  border-radius: $border-radius-lg;
+
+  // border-radius: $border-radius-lg;
+  @extend .border-radius-3xl;
 
   > .table-bordered {
     border: none;

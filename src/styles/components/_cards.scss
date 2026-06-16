@@ -60,7 +60,9 @@ $card-info-icon-size: 1rem;
   border: none;
   outline: $outline-border;
   width: 100%;
-  border-radius: 30px;
+
+  // border-radius: 30px;
+  @extend .border-radius-6xl;
   overflow: hidden;
 
   .card-body {

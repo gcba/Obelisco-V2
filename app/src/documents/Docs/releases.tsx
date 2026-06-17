@@ -19,6 +19,23 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
+      title: 'Versión 1.12.1',
+      content: (
+        <ul className="docs-list">
+          <p>La Versión 1.12.1 contiene lo siguiente: </p>
+          <li>
+            La tipografía principal pasa a ser Nunito. La nueva importación se encuentra en{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/getting-started/imports"></a>
+          </li>
+          <li>El color terciario, pasa a ser cyan.</li>
+          <li>
+            Se crean nuevos valores y clases para <code>{'border-radius'}</code>.
+          </li>
+          <li>El footer lleva una nueva identidad, con un borde esquinado.</li>
+        </ul>
+      ),
+    },
+    {
       title: 'Versión 1.11.1',
       content: (
         <ul className="docs-list">

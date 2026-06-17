@@ -330,6 +330,11 @@ $theme-color-btn-bg-hover: (
   }
 }
 
+.btn-outline-tertiary {
+  outline: 0.125rem solid $cyan-900;
+  color: $cyan-900;
+}
+
 a.btn {
   text-decoration: none;
 }

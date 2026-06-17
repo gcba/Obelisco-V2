@@ -338,9 +338,9 @@ $theme-color-btn-bg-hover: (
 a.btn {
   text-decoration: none;
 
-	&:focus {
-		border-radius: $border-radius-pill;
-	}
+  &:focus {
+    border-radius: $border-radius-pill;
+  }
 }
 
 //Botón expandible

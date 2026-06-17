@@ -88,7 +88,9 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
     border: none;
     box-shadow: none;
     outline: $outline-transparent-subtle;
-    border-radius: $border-radius-lg;
+
+    // border-radius: $border-radius-lg;
+    border-radius: $border-radius-pill;
     text-decoration: none;
     @extend .headline-md;
     font-weight: $font-weight-normal;
@@ -142,6 +144,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
       outline: $outline-transparent;
       color: $white;
       background: $active-color;
+      border-radius: $border-radius-3xl;
 
       // Animación icono
       .btn-dropdown-icon {

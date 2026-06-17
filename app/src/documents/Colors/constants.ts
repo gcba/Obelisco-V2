@@ -4,7 +4,7 @@ import { ColorTableArray } from '@/components/Template/PalletteTable';
 export const themeColors = [
   { name: 'primary', hex: '#336acc' },
   { name: 'secondary', hex: '#101e37' },
-  { name: 'tertiary', hex: '#005e7a' },
+  { name: 'tertiary', hex: '#10413a' },
   { name: 'success', hex: '#26874a' },
   { name: 'danger', hex: '#cc3333' },
   { name: 'warning', hex: '#ff9500', textDark: true },

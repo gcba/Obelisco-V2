@@ -9,8 +9,10 @@ const SECTIONS_DEV = [
       <>
         <div className="container bordes">
           <p className="pb-3">
-            Se creó la colección bordes con 13 tokens de border-radius, desde xs (1px) hasta 8xl (128px), más el token
-            pill (9999px) para elementos completamente redondeados.
+            Los radios de borde estandarizan la curvatura de las esquinas de los componentes y los planos, para asegurar
+            consistencia y coherencia dentro del sistema Obelisco. Al aplicar el radio de bordes en diferentes
+            componentes, estados y casos de uso, permite mejorar la claridad de los componentes y secciones para
+            favorecer la legibilidad y navegación dentro de los criterios de accesibilidad.
           </p>
           <div className="max-items-4">
             <div className="col">

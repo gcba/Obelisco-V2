@@ -33,12 +33,12 @@ $accordion-button-collapsed-icon: url('data:image/svg+xml,<svg xmlns="http://www
   outline: $outline-border;
 
   // border-radius: $border-radius-lg;
-  @extend .border-radius-3xl;
+  border-radius: $border-radius-3xl;
 
   &:first-of-type,
   &:last-of-type {
     // border-radius: $border-radius-lg;
-    @extend .border-radius-3xl;
+    border-radius: $border-radius-3xl;
   }
 
   .accordion-button {
@@ -115,13 +115,13 @@ $accordion-button-collapsed-icon: url('data:image/svg+xml,<svg xmlns="http://www
       box-shadow: $focus-box-shadow;
 
       // border-radius: $border-radius-lg;
-      @extend .border-radius-3xl;
+      border-radius: $border-radius-3xl;
       outline: 0.25rem solid transparent;
     }
 
     &.collapsed {
       // border-radius: $border-radius-lg;
-      @extend .border-radius-3xl;
+      border-radius: $border-radius-3xl;
       background-color: $slate-50;
       color: $body-color;
       position: relative;

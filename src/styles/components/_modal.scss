@@ -34,7 +34,7 @@ $modal-mobile: 328px;
   .modal-content {
     border: none;
     padding: 10px;
-    @extend .border-radius-3xl;
+    border-radius: $border-radius-3xl;
 
     // padding: 0 !important;
     outline: 0.125rem solid transparent;

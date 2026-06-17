@@ -3,7 +3,7 @@
   outline: $outline-border;
 
   // border-radius: $border-radius-lg;
-  @extend .border-radius-3xl;
+  border-radius: $border-radius-3xl;
   background-color: $white;
 
   .map-body {

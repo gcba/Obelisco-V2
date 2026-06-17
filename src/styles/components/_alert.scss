@@ -56,7 +56,7 @@ $system-content-colors: (
   outline-offset: -0.0625rem;
 
   // border-radius: $border-radius-lg;
-  @extend .border-radius-3xl;
+  border-radius: $border-radius-3xl;
 }
 
 // Custom styles

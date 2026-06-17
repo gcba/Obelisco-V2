@@ -126,7 +126,7 @@ $theme-color-btn-bg-hover: (
 
   // border-radius: $border-radius-lg; // 0.5rem
   // border-radius: 22px;
-  @extend .border-radius-pill;
+  border-radius: $border-radius-pill;
   min-height: 2.5rem; // 40px
   display: inline-flex;
   align-items: center;
@@ -168,7 +168,7 @@ $theme-color-btn-bg-hover: (
     height: 1.75rem;
 
     // border-radius: $border-radius-sm; //.25rem
-    @extend .border-radius-pill;
+    border-radius: $border-radius-pill;
     border: none;
     outline: $outline-transparent-subtle;
 
@@ -191,7 +191,7 @@ $theme-color-btn-bg-hover: (
       box-shadow: $focus-box-shadow;
 
       // border-radius: $border-radius-sm; //.25rem
-      @extend .border-radius-pill;
+      border-radius: $border-radius-pill;
       text-decoration: none;
       outline: $outline-transparent;
     }

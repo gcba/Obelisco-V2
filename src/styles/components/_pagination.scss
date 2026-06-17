@@ -83,7 +83,7 @@ $pagination-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>'
       align-items: center;
 
       // border-radius: $border-radius-lg;
-      @extend .border-radius-pill;
+      border-radius: $border-radius-pill;
       border: none;
       outline: $outline-border;
       height: $pagination-size;

@@ -3,7 +3,7 @@
   border: 1px solid $border-color;
 
   // border-radius: $border-radius-lg;
-  @extend .border-radius-3xl;
+  border-radius: $border-radius-3xl;
   border-collapse: initial;
   border-spacing: initial;
   margin: 0;
@@ -127,7 +127,7 @@
 
   &.table-bordered {
     // border-radius: $border-radius-lg;
-    @extend .border-radius-3xl;
+    border-radius: $border-radius-3xl;
 
     thead th {
       border: none;
@@ -185,7 +185,7 @@
   border: 1px solid $border-color;
 
   // border-radius: $border-radius-lg;
-  @extend .border-radius-3xl;
+  border-radius: $border-radius-3xl;
 
   > .table-bordered {
     border: none;

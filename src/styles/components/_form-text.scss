@@ -183,7 +183,7 @@ input[type='file']::-webkit-file-upload-button {
   padding: 12px 24px;
 
   // border-radius: 8px;
-  @extend .border-radius-3xl;
+  border-radius: $border-radius-3xl;
   background-color: #005e7a !important;
   height: 48px;
 
@@ -194,7 +194,7 @@ input[type='file']:disabled {
   border: 2px solid $slate-400;
 
   // border-radius: 8px;
-  @extend .border-radius-pill;
+  border-radius: $border-radius-pill;
   background-color: $slate-100;
   color: $slate-700;
   display: flex;
@@ -223,7 +223,7 @@ input[type='file']:disabled::-webkit-file-upload-button {
   border: none;
 
   // border-radius: $border-radius-lg;
-  @extend .border-radius-pill;
+  border-radius: $border-radius-pill;
   outline: 0.125rem solid $body-color;
   outline-offset: 0;
   box-sizing: border-box;
@@ -519,7 +519,7 @@ input[type='search']::-moz-search-clear-button {
 
 // - Textarea
 textarea.form-control {
-  @extend .border-radius-3xl;
+  border-radius: $border-radius-3xl;
 }
 
 // Textarea -

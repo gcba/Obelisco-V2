@@ -57,7 +57,7 @@ a.list-group-item {
   display: flex;
   height: auto;
   background-color: $white;
-  @extend .border-radius-3xl;
+  border-radius: $border-radius-3xl;
 
   @include media-breakpoint-up(xl) {
     padding: $access-padding-desktop;
@@ -103,14 +103,14 @@ a.list-group-item {
 
   &:first-child {
     // border-radius: $border-radius-lg;
-    @extend .border-radius-3xl;
+    border-radius: $border-radius-3xl;
   }
 
   &:last-child {
     margin-bottom: 0;
 
     // border-radius: $border-radius-lg;
-    @extend .border-radius-3xl;
+    border-radius: $border-radius-3xl;
   }
 
   &:hover,
@@ -222,7 +222,7 @@ a.list-group-item {
     outline: 0.125rem solid $slate-100;
 
     // border-radius: $border-radius-lg;
-    @extend .border-radius-3xl;
+    border-radius: $border-radius-3xl;
     padding-bottom: 0;
 
     .clearfix {
@@ -287,7 +287,7 @@ a.list-group-item {
         height: $card-size;
 
         // border-radius: $border-radius-lg;
-        @extend .border-radius-3xl;
+        border-radius: $border-radius-3xl;
         text-align: center;
         line-height: $card-size;
         display: flex;
@@ -309,7 +309,7 @@ a.list-group-item {
 
       & + .list-group-item {
         // border-radius: $border-radius-card-item;
-        @extend .border-radius-3xl;
+        border-radius: $border-radius-3xl;
       }
     }
 

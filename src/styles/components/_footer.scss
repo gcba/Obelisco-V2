@@ -35,7 +35,7 @@ $footer-social-x: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0
   outline: 0.25rem solid transparent;
   border-radius: $border-radius-7xl $border-radius-7xl 0 0;
   z-index: 1;
-  position: relative;  
+  position: relative;
 
   @include media-breakpoint-down(lg) {
     border-radius: $border-radius-6xl $border-radius-6xl 0 0;
@@ -179,12 +179,13 @@ $footer-social-x: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0
   background-color: $blue-200;
   padding: $footer-info-padding;
   word-break: break-word;
+
   // border-top: $footer-border-width solid $footer-border-color;
   border-radius: $border-radius-7xl $border-radius-7xl 0 0;
   min-height: 160px;
   position: relative;
   z-index: -1;
-	bottom: -60px;
+  bottom: -60px;
 
   > .container {
     display: flex;

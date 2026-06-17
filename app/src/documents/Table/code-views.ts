@@ -1,5 +1,11 @@
 export const WITHOUT_DIVIDERS = `
-<div class="responsive-scroll border-radius-3xl" tabIndex="0">
+<div class="table-title">
+  <h2 class="mb-4">Título de tabla</h2>
+  <p class="text-md">
+    Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+  </p>
+</div>
+<div class="responsive-scroll" tabIndex="0">
     <table class="table table-borderless">
         <thead>
             <tr>
@@ -128,7 +134,13 @@ export const WITHOUT_DIVIDERS = `
 </div>
 `;
 export const WITH_DIVIDERS = `
-<div class="responsive-scroll border-radius-3xl" tabIndex="0">
+<div class="table-title">
+  <h2 class="mb-4">Título de tabla</h2>
+  <p class="text-md">
+    Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+  </p>
+</div>
+<div class="responsive-scroll" tabIndex="0">
     <table class="table">
         <thead>
             <tr>
@@ -254,7 +266,13 @@ export const WITH_DIVIDERS = `
 </div>
 `;
 export const WITH_ZEBRA = `
-<div class="responsive-scroll border-radius-3xl" tabIndex="0">
+<div class="table-title">
+  <h2 class="mb-4">Título de tabla</h2>
+  <p class="text-md">
+    Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+  </p>
+</div>
+<div class="responsive-scroll" tabIndex="0">
     <table class="table table-striped">
         <thead>
             <tr>
@@ -380,7 +398,13 @@ export const WITH_ZEBRA = `
 </div>
 `;
 export const WITH_CHECKBOX = `
-<div class="responsive-scroll border-radius-3xl" tabIndex="0">
+<div class="table-title">
+  <h2 class="mb-4">Título de tabla</h2>
+  <p class="text-md">
+    Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+  </p>
+</div>
+<div class="responsive-scroll" tabIndex="0">
     <table class="table">
         <thead>
             <tr>
@@ -473,7 +497,13 @@ export const WITH_CHECKBOX = `
 </div>
 `;
 export const TABLE_TEXT = `
-<div class="responsive-scroll border-radius-3xl" tabIndex="0">
+<div class="table-title">
+  <h2 class="mb-4">Título de tabla</h2>
+  <p class="text-md">
+    Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+  </p>
+</div>
+<div class="responsive-scroll" tabIndex="0">
     <table class="table">
         <thead>
             <tr>
@@ -508,7 +538,13 @@ export const TABLE_TEXT = `
 </div>
 `;
 export const TABLE_NUMBER = `
-<div class="responsive-scroll border-radius-3xl" tabIndex="0">
+<div class="table-title">
+  <h2 class="mb-4">Título de tabla</h2>
+  <p class="text-md">
+    Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+  </p>
+</div>
+<div class="responsive-scroll" tabIndex="0">
     <table class="table">
         <thead>
             <tr>
@@ -556,7 +592,13 @@ export const TABLE_NUMBER = `
 </div>
 `;
 export const TABLE_LINK = `
-<div class="responsive-scroll border-radius-3xl" tabIndex="0">
+<div class="table-title">
+  <h2 class="mb-4">Título de tabla</h2>
+  <p class="text-md">
+    Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+  </p>
+</div>
+<div class="responsive-scroll" tabIndex="0">
     <table class="table">
         <thead>
             <tr>
@@ -620,7 +662,13 @@ export const TABLE_LINK = `
 </div>
 `;
 export const TABLE_TAG = `
-<div class="responsive-scroll border-radius-3xl" tabIndex="0">
+<div class="table-title">
+  <h2 class="mb-4">Título de tabla</h2>
+  <p class="text-md">
+    Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+  </p>
+</div>
+<div class="responsive-scroll" tabIndex="0">
     <table class="table">
         <thead>
             <tr>
@@ -668,7 +716,13 @@ export const TABLE_TAG = `
 </div>
 `;
 export const TABLE_BUTTON = `
-<div class="responsive-scroll border-radius-3xl" tabIndex="0">
+<div class="table-title">
+  <h2 class="mb-4">Título de tabla</h2>
+  <p class="text-md">
+    Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+  </p>
+</div>
+<div class="responsive-scroll" tabIndex="0">
     <table class="table">
         <thead>
             <tr>
@@ -724,7 +778,13 @@ export const TABLE_BUTTON = `
 </div>
 `;
 export const TABLE_BUTTON_ICON = `
-<div class="responsive-scroll border-radius-3xl" tabIndex="0">
+<div class="table-title">
+  <h2 class="mb-4">Título de tabla</h2>
+  <p class="text-md">
+    Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+  </p>
+</div>
+<div class="responsive-scroll" tabIndex="0">
     <table class="table">
         <thead>
             <tr>
@@ -835,7 +895,14 @@ export const TABLE_BUTTON_ICON = `
 </div>
 `;
 
-export const TABLE_ACCESSIBILTY = `<div class="responsive-scroll border-radius-3xl" tabIndex="0">
+export const TABLE_ACCESSIBILTY = `
+<div class="table-title">
+  <h2 class="mb-4">Título de tabla</h2>
+  <p class="text-md">
+    Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+  </p>
+</div>
+<div class="responsive-scroll" tabIndex="0">
     <table class="table table-borderless" aria-describedby="Tabla">
         <thead>
             <tr>

@@ -498,3 +498,63 @@ export const HIGHLIGHTED_LATERAL = `
   </div>
 </div>
 `;
+
+export const HIGHLIGHTED_LATERAL_BG = `
+<div class="panel-lateral bg-light">
+  <div class="panel-body">
+    <h2 class="panel-title">Título del destacado</h2>
+    <div class="d-flex gap-1 my-3">
+      <span class="badge badge-default">Etiqueta</span>
+      <span class="badge badge-default">Etiqueta</span>
+      <span class="badge badge-default">Etiqueta</span>
+    </div>
+    <p class="panel-text">Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces.</p>
+    <div class="accordion plain">
+      <div class="accordion-item">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHeaderIcon" aria-expanded="false" aria-controls="collapseHeaderIcon">
+          <p class="headline-sm m-0">Detalle</p>
+        </button>
+        <div id="collapseHeaderIcon" class="accordion-collapse collapse" style="">
+          <div class="accordion-body">
+            <p>Esta es la descripción que se encuentra dentro de un colapsable. Debe ser breve y concisa.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel-footer">
+      <a href="#" class="btn btn-primary btn-lg btn-block" target="_blank" rel="noopener noreferrer">Botón</a>
+    </div>
+    <div class="d-flex gap-3 mt-3 align-items-center">
+      <p class="text-md mb-1">Compartir en redes:</p>
+      <div class="d-flex gap-2">
+        <a href="#" class="shadow-none" target="_blank">
+          <i class="bxl bx-facebook-circle o-icon text-primary"></i>
+        </a>
+        <a href="#" class="shadow-none" target="_blank">
+          <i class="bxl bx-instagram o-icon text-primary"></i>
+        </a>
+        <a href="#" class="shadow-none" target="_blank">
+          <i class="bxl bx-twitter-x o-icon text-primary"></i>
+        </a>
+        <a href="#" class="shadow-none" target="_blank">
+          <i class="bxl bx-linkedin-square o-icon text-primary"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+export const BLOCK_DESCRIPTION = `
+<div class="block position-sticky" style="top: 48px;">
+  <div class="block-body">
+    <h2 class="block-title">Iniciá el trámite y completá todos los pasos</h2>
+    <p class="block-text">
+      Si tenés un trámite iniciado podés continuarlo desde acá.
+    </p>
+    <button type="button" class="btn btn-lg btn-primary btn-block">
+      Iniciar trámite
+    </button>
+  </div>
+</div>
+`;

@@ -11959,6 +11959,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* 1.11.1 */
 .max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .card-items-2, .max-items-3, .card-items-3, .max-items-4 {
   row-gap: 2rem;
 }
@@ -12067,7 +12068,7 @@ h5 {
   font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.5rem;
   line-height: 2rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .h6, .list-steps-item h3, .list-steps-item .h3,
@@ -17143,8 +17144,8 @@ span.form-label {
   cursor: pointer;
 }
 .table.table-striped tbody tr:nth-of-type(odd) td {
-  --bs-table-bg-type: white;
-  background-color: white !important;
+  --bs-table-bg-type: $white;
+  background-color: #ffffff !important;
 }
 .table.table-striped tbody tr:nth-of-type(even) td {
   --bs-table-bg-type: $slate-50;
@@ -17177,6 +17178,10 @@ span.form-label {
 .table-responsive-xl:focus-visible {
   box-shadow: 0 0 0 0.25rem #218274;
   outline: none;
+}
+
+.table-title {
+  margin-bottom: 32px;
 }
 
 .main-footer {
@@ -18942,37 +18947,8 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
   padding-top: 1px;
 }
 
-.block {
-  outline: 0.125rem solid #e6ebf0;
-  border-radius: 0.5rem;
-  border: none;
-  background-color: #ffffff;
-}
-.block .block-body {
-  padding: 1.5rem;
-}
-@media (max-width: 767.98px) {
-  .block .block-body {
-    padding: 1rem;
-  }
-}
-.block .block-body .block-title {
-  margin-bottom: 0;
-}
-.block .block-body .block-text {
-  margin-bottom: 0;
-  margin-top: 0.25rem;
-}
-.block .block-body .btn {
-  margin-top: 1rem;
-}
-.block .block-body .btn.btn-block {
-  width: 100%;
-}
-.block .block-body .progress {
-  margin-top: 1rem;
-}
-
+/* Custom variables and mixins */
+/* Custom variables and mixins */
 .panel-vertical {
   display: flex;
   flex-direction: column;
@@ -19212,12 +19188,12 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
 }
 .panel-horizontal-content.bg-dark {
   background-color: #002733;
-  color: #fff;
+  color: #ffffff;
 }
 .panel-horizontal-content.bg-dark .panel-horizontal .panel-body h5.panel-title, .panel-horizontal-content.bg-dark .panel-horizontal .panel-body .panel-title.h5, .panel-horizontal-content.bg-dark .panel-horizontal .panel-vertical .panel-body .panel-title, .panel-vertical .panel-horizontal-content.bg-dark .panel-horizontal .panel-body .panel-title,
 .panel-horizontal-content.bg-dark .panel-horizontal .panel-body .panel-vertical .panel-body-dark .panel-title, .panel-horizontal-content.bg-dark .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content.bg-dark .panel-horizontal .panel-body .panel-title.h2,
 .panel-horizontal-content.bg-dark .panel-horizontal .panel-body .panel-text {
-  color: #fff;
+  color: #ffffff;
 }
 
 .panel-lateral {
@@ -19229,7 +19205,6 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
   border-radius: 0;
   border: none;
   padding: 2rem 1.5rem;
-  background-color: #f3f6f9;
   border-radius: 0.5rem;
 }
 .panel-lateral .panel-img,
@@ -19302,11 +19277,68 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
     height: 296px;
   }
 }
+.panel-lateral:not(.bg-light) {
+  outline: 0.125rem solid #e6ebf0;
+}
 @media (max-width: 1199.98px) {
   .panel-lateral {
     padding: 1.5rem 1rem;
   }
 }
+.panel-lateral .panel-body .accordion.plain .accordion-item {
+  outline: unset;
+}
+.panel-lateral .panel-body .accordion.plain .accordion-item button {
+  min-height: unset;
+  padding: 8px;
+}
+.panel-lateral .panel-body .accordion.plain .accordion-item button::after {
+  right: 5px;
+  background: transparent url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="%23ffffff"><path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z"/></svg>') no-repeat center center;
+}
+.panel-lateral .panel-body .accordion.plain .accordion-item button.collapsed {
+  background-color: transparent;
+}
+.panel-lateral .panel-body .accordion.plain .accordion-item button.collapsed::after {
+  background: transparent url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="24px" fill="%2338485C"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>') no-repeat center center;
+}
+.panel-lateral.bg-light .panel-body .accordion.plain button.collapsed {
+  background-color: #f3f6f9;
+}
+
+/* COMPONENTE DEPRECADO - BLOQUE DE TRAMITE */
+.block {
+  outline: 0.125rem solid #e6ebf0;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #ffffff;
+}
+.block .block-body {
+  padding: 1.5rem;
+}
+@media (max-width: 767.98px) {
+  .block .block-body {
+    padding: 1rem;
+  }
+}
+.block .block-body .block-title {
+  margin-bottom: 0;
+}
+.block .block-body .block-text {
+  margin-bottom: 0;
+  margin-top: 0.25rem;
+}
+.block .block-body .btn {
+  margin-top: 1rem;
+}
+.block .block-body .btn.btn-block {
+  width: 100%;
+}
+.block .block-body .progress {
+  margin-top: 1rem;
+}
+
+/* COMPONENTE DEPRECADO - BLOQUE DE TRAMITE */
 .accordion .accordion-item:not(:last-of-type) {
   margin-bottom: 1rem;
 }

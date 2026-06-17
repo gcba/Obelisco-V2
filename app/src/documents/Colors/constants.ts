@@ -157,8 +157,8 @@ export const PRINCIPALS_COLORS: ColorTableArray[] = [
     use: 'Se utiliza en acciones de menor importancia que las primarias y genera jerarquía dentro de la interfaz.',
   },
   {
-    base: '$sky/700',
-    hex: '#005E7A',
+    base: '$cyan/900',
+    hex: '#10413a',
     variable: '$tertiary',
     use: 'Añade un tercer nivel de jerarquía dentro de la interfaz y se utiliza en acciones complementarias o repetitivas.',
   },

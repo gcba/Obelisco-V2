@@ -46,7 +46,7 @@ const sections = [
   {
     title: 'Tipografías utilizadas',
     description:
-      'Obelisco V2 utiliza las tipografías Open Sans y Nunito para asegurar una apariencia moderna y profesional. Puedes incluirlas en tu proyecto utilizando los siguientes enlaces:',
+      'Obelisco V2 utiliza las tipografías Open Sans y Archivo para asegurar una apariencia moderna y profesional. Puedes incluirlas en tu proyecto utilizando los siguientes enlaces:',
     content: (
       <div className="col-12">
         <h3 className="headline-md">Open Sans:</h3>

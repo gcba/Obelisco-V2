@@ -144,7 +144,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
       outline: $outline-transparent;
       color: $white;
       background: $active-color;
-      border-radius: $border-radius-3xl;
+      border-radius: $border-radius-pill;
 
       // Animación icono
       .btn-dropdown-icon {

@@ -291,6 +291,11 @@ $theme-color-btn-bg-hover: (
       @if $color == 'light' {
         color: $slate-50;
       }
+
+      // Estilos para outline-tertiary visited
+      @if $color == 'tertiary' {
+        color: $cyan-900;
+      }
     }
 
     &:hover,

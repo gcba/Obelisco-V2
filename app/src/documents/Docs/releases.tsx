@@ -22,25 +22,32 @@ const ReleasesComponents: React.FC = () => {
       title: 'Versión 1.12.0',
       content: (
         <ul className="docs-list">
+          <p className="text-body-secondary d-flex text-sm align-items-center gap-1">
+            <span className="material-symbols-rounded" aria-hidden="true" style={{ color: '#0086AD' }}>info</span>
+            <span>Esta versión implican cambios de estilos que impactan al sistema en general y todos sus componentes. 
+              Se recomienda verificar el buen uso de clases para su correcta visualización.</span>
+          </p>
           <p>La Versión 1.12.0 contiene lo siguiente: </p>
           <li>
-            La tipografía principal pasa a ser Nunito. La nueva importación se encuentra en{' '}
-            <a href="https://gcba.github.io/Obelisco-V2/getting-started/imports">Importaciones necesarias</a>.
+            La tipografía principal pasa a ser Archivo. La nueva importación se encuentra en el siguiente{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/getting-started/imports">link</a>.
           </li>
           <li>
-            Se agregó en las Guías de estilos, una sección de{' '}
+            Se agregó en Guías de estilos, una sección de{' '}
             <a href="https://gcba.github.io/Obelisco-V2/components/borders"></a> Bordes. Allí se indican los nuevos
             valores y clases para <code>{'border-radius'}</code>.
           </li>
           <li>
-            El color terciario, pasa a ser <code>{'cyan-600'}</code> (<code>{'#3cceb8'}</code> ).
+            Se invierte el color <code> primario </code> por <code> secundario</code>.
+          </li>
+          <li>
+            El color terciario pasa a ser <code>{'cyan-500'}</code> (<code>{'#64D8C8'}</code> ).
             <br />
             El color terciario <strong>outline</strong> , pasa a ser <code>{'cyan-900'}</code> (<code>{'#10413a'}</code>{' '}
             ).
           </li>
           <li>
-            El componente Pie de página (Footer) tiene nuevos estilos de radio de borde. Junto con el componente
-            Indicador.
+            El componente Pie de página (Footer) junto con el componente Indicador, se visualizan con nuevos estilos de radio y color.
           </li>
         </ul>
       ),

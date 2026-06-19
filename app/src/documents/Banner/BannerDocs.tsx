@@ -59,7 +59,7 @@ const BannerDocs: React.FC = () => {
                   superen más de una línea de texto.
                 </p>
                 <div className="banner-actions">
-                  <LinkClient className="btn btn-sm btn-primary">Botón</LinkClient>
+                  <LinkClient className="btn btn-sm btn-secondary">Botón</LinkClient>
                 </div>
               </div>
             </div>
@@ -76,7 +76,7 @@ const BannerDocs: React.FC = () => {
                   superen más de una línea de texto.
                 </p>
                 <div className="banner-actions">
-                  <LinkClient className="btn btn-sm btn-primary">Botón</LinkClient>
+                  <LinkClient className="btn btn-sm btn-secondary">Botón</LinkClient>
                 </div>
               </div>
             </div>
@@ -99,8 +99,8 @@ const BannerDocs: React.FC = () => {
                   superen más de una línea de texto.
                 </p>
                 <div className="banner-actions">
-                  <LinkClient className="btn btn-sm btn-primary">Botón</LinkClient>
-                  <LinkClient className="btn btn-sm btn-outline-primary">Botón</LinkClient>
+                  <LinkClient className="btn btn-sm btn-secondary">Botón</LinkClient>
+                  <LinkClient className="btn btn-sm btn-outline-secondary">Botón</LinkClient>
                 </div>
               </div>
             </div>
@@ -117,7 +117,7 @@ const BannerDocs: React.FC = () => {
                   superen más de una línea de texto.
                 </p>
                 <div className="banner-actions">
-                  <LinkClient className="btn btn-sm btn-primary">Botón</LinkClient>
+                  <LinkClient className="btn btn-sm btn-secondary">Botón</LinkClient>
                   <LinkClient className="btn btn-sm btn-outline-light">Botón</LinkClient>
                 </div>
               </div>

@@ -89,7 +89,7 @@ const SECTIONS_DEV = [
     title: 'Clases y valores de radio de borde',
     content: (
       <>
-        <div className="responsive-scroll" tabIndex={0}>
+        <div className="responsive-scroll border-radius-3xl" tabIndex={0}>
           <table className="table table-striped">
             <thead>
               <tr>
@@ -188,7 +188,7 @@ const SECTIONS_DEV = [
     title: 'Valores aplicados a cada componente (Versión 1.12.0 en adelante)',
     content: (
       <>
-        <div className="responsive-scroll" tabIndex={0}>
+        <div className="responsive-scroll border-radius-3xl" tabIndex={0}>
           <table className="table table-striped">
             <thead>
               <tr>

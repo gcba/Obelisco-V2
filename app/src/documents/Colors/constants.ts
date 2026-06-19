@@ -2,9 +2,10 @@ import { ColorArray } from '@/components/Template/PalletteColor';
 import { ColorTableArray } from '@/components/Template/PalletteTable';
 
 export const themeColors = [
-  { name: 'primary', hex: '#336acc' },
-  { name: 'secondary', hex: '#101e37' },
-  { name: 'tertiary', hex: '#10413a' },
+  { name: 'primary', hex: '#101e37' },
+  { name: 'secondary', hex: '#336acc' },
+  { name: 'tertiary', hex: '#3cceb8' },
+  { name: 'tertiary-outline', hex: '#10413a' },
   { name: 'success', hex: '#26874a' },
   { name: 'danger', hex: '#cc3333' },
   { name: 'warning', hex: '#ff9500', textDark: true },

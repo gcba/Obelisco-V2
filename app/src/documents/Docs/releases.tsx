@@ -19,19 +19,29 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
-      title: 'Versión 1.12.1',
+      title: 'Versión 1.12.0',
       content: (
         <ul className="docs-list">
-          <p>La Versión 1.12.1 contiene lo siguiente: </p>
+          <p>La Versión 1.12.0 contiene lo siguiente: </p>
           <li>
             La tipografía principal pasa a ser Nunito. La nueva importación se encuentra en{' '}
-            <a href="https://gcba.github.io/Obelisco-V2/getting-started/imports"></a>
+            <a href="https://gcba.github.io/Obelisco-V2/getting-started/imports">Importaciones necesarias</a>.
           </li>
-          <li>El color terciario, pasa a ser cyan.</li>
           <li>
-            Se crean nuevos valores y clases para <code>{'border-radius'}</code>.
+            Se agregó en las Guías de estilos, una sección de{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/components/borders"></a> Bordes. Allí se indican los nuevos
+            valores y clases para <code>{'border-radius'}</code>.
           </li>
-          <li>El footer lleva una nueva identidad, con un borde esquinado.</li>
+          <li>
+            El color terciario, pasa a ser <code>{'cyan-600'}</code> (<code>{'#3cceb8'}</code> ).
+            <br />
+            El color terciario <strong>outline</strong> , pasa a ser <code>{'cyan-900'}</code> (<code>{'#10413a'}</code>{' '}
+            ).
+          </li>
+          <li>
+            El componente Pie de página (Footer) tiene nuevos estilos de radio de borde. Junto con el componente
+            Indicador.
+          </li>
         </ul>
       ),
     },

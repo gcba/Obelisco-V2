@@ -86,7 +86,7 @@ const SECTIONS_DEV = [
     ),
   },
   {
-    title: 'Clases de radio de borde',
+    title: 'Clases y valores de radio de borde',
     content: (
       <>
         <div className="responsive-scroll" tabIndex={0}>
@@ -177,6 +177,189 @@ const SECTIONS_DEV = [
                   <code>{'.border-radius-pill'}</code>
                 </td>
                 <td>9999px</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </>
+    ),
+  },
+  {
+    title: 'Valores aplicados a cada componente (Versión 1.12.0 en adelante)',
+    content: (
+      <>
+        <div className="responsive-scroll" tabIndex={0}>
+          <table className="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col" className="tb-text">
+                  Componente
+                </th>
+                <th scope="col" className="tb-text">
+                  Detalle
+                </th>
+                <th scope="col" className="tb-number">
+                  Valor
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Acceso </td>
+                <td>-</td>
+                <td>3xl</td>
+              </tr>
+              <tr>
+                <td>Alertas </td>
+                <td>-</td>
+                <td>3xl</td>
+              </tr>
+              <tr>
+                <td>Banner </td>
+                <td></td>
+                <td>Sin cambios</td>
+              </tr>
+              <tr>
+                <td>Barra de progreso </td>
+                <td></td>
+                <td>Sin cambios</td>
+              </tr>
+              <tr>
+                <td>Botón </td>
+                <td>-</td>
+                <td>pill</td>
+              </tr>
+              {/* <tr>
+                <td>Cabecera de página </td>
+                <td>-</td>
+                <td>12px</td>
+              </tr> */}
+              <tr>
+                <td>Citas </td>
+                <td></td>
+                <td>Sin cambios</td>
+              </tr>
+              <tr>
+                <td>Colapsable </td>
+                <td>-</td>
+                <td>3xl</td>
+              </tr>
+              <tr>
+                <td>Desplegable de navegación </td>
+                <td>Estado cerrado • estado abierto </td>
+                <td>pill • 3xl</td>
+              </tr>
+              <tr>
+                <td>Desplegable de selección </td>
+                <td>Estado cerrado • estado abierto </td>
+                <td>pill • 3xl</td>
+              </tr>
+              <tr>
+                <td>Enlace </td>
+                <td></td>
+                <td>Sin cambios</td>
+              </tr>
+              <tr>
+                <td>Etiqueta </td>
+                <td></td>
+                <td>Sin cambios</td>
+              </tr>
+              <tr>
+                <td>Inputs </td>
+                <td>-</td>
+                <td>pill</td>
+              </tr>
+              <tr>
+                <td>Input (Textarea) </td>
+                <td>-</td>
+                <td>3xl</td>
+              </tr>
+              <tr>
+                <td>Listas </td>
+                <td></td>
+                <td>Sin cambios</td>
+              </tr>
+              <tr>
+                <td>Mapa </td>
+                <td>-</td>
+                <td>3xl</td>
+              </tr>
+              <tr>
+                <td>Mensajes de estado </td>
+                <td>-</td>
+                <td>pill</td>
+              </tr>
+              <tr>
+                <td>Migas de pan </td>
+                <td></td>
+                <td>Sin cambios</td>
+              </tr>
+              <tr>
+                <td>Modal </td>
+                <td>-</td>
+                <td>3xl • pill</td>
+              </tr>
+              <tr>
+                <td>Navegación y pestañas </td>
+                <td></td>
+                <td>Sin cambios</td>
+              </tr>
+              <tr>
+                <td>Paginado </td>
+                <td>-</td>
+                <td>pill</td>
+              </tr>
+              <tr>
+                <td>Spinner </td>
+                <td></td>
+                <td>Sin cambios</td>
+              </tr>
+              <tr>
+                <td>Switch </td>
+                <td></td>
+                <td>Sin cambios</td>
+              </tr>
+              <tr>
+                <td>Tarjetas </td>
+                <td>-</td>
+                <td>6xl</td>
+              </tr>
+              <tr>
+                <td>Tooltip </td>
+                <td></td>
+                <td>Sin cambios</td>
+              </tr>
+              {/* organismos */}
+
+              <tr>
+                <td>Accesos </td>
+                <td>Organismo</td>
+                <td>3xl</td>
+              </tr>
+              <tr>
+                <td>Calendario </td>
+                <td>Organismo</td>
+                <td>Sin cambios</td>
+              </tr>
+              <tr>
+                <td>Carrusel </td>
+                <td>Controlador de carrusel (botones e indicadores) • Tarjetas verticales</td>
+                <td>pill • 6xl</td>
+              </tr>
+              <tr>
+                <td>Pasos de formulario </td>
+                <td>Organismo</td>
+                <td>Sin cambios</td>
+              </tr>
+              <tr>
+                <td>Pie de página (Footer) </td>
+                <td>Desktop • Tablet y mobile</td>
+                <td>7xl • 6xl</td>
+              </tr>
+              <tr>
+                <td>Tablas </td>
+                <td>Organismo</td>
+                <td>3xl</td>
               </tr>
             </tbody>
           </table>

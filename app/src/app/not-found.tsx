@@ -6,7 +6,7 @@ const basePath = '/Obelisco-V2';
 
 export default function NotFound() {
   return (
-    <div className="container d-flex align-items-center h-100">
+    <div className="container d-flex align-items-center" style={{ height: '60vh' }}>
       <div className="d-flex">
         <div>
           <h1 className="headline-lg">¡Oops! No hemos podido encontrar la página que buscas.</h1>

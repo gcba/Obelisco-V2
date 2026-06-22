@@ -5,7 +5,7 @@ export const WITHOUT_DIVIDERS = `
     Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
   </p>
 </div>
-<div class="responsive-scroll border-radius-3xl" tabIndex="0">
+<div class="responsive-scroll" tabIndex="0">
     <table class="table table-borderless">
         <thead>
             <tr>
@@ -140,7 +140,7 @@ export const WITH_DIVIDERS = `
     Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
   </p>
 </div>
-<div class="responsive-scroll border-radius-3xl" tabIndex="0">
+<div class="responsive-scroll" tabIndex="0">
     <table class="table">
         <thead>
             <tr>
@@ -272,7 +272,7 @@ export const WITH_ZEBRA = `
     Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
   </p>
 </div>
-<div class="responsive-scroll border-radius-3xl" tabIndex="0">
+<div class="responsive-scroll" tabIndex="0">
     <table class="table table-striped">
         <thead>
             <tr>
@@ -404,7 +404,7 @@ export const WITH_CHECKBOX = `
     Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
   </p>
 </div>
-<div class="responsive-scroll border-radius-3xl" tabIndex="0">
+<div class="responsive-scroll" tabIndex="0">
     <table class="table">
         <thead>
             <tr>
@@ -503,7 +503,7 @@ export const TABLE_TEXT = `
     Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
   </p>
 </div>
-<div class="responsive-scroll border-radius-3xl" tabIndex="0">
+<div class="responsive-scroll" tabIndex="0">
     <table class="table">
         <thead>
             <tr>
@@ -544,7 +544,7 @@ export const TABLE_NUMBER = `
     Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
   </p>
 </div>
-<div class="responsive-scroll border-radius-3xl" tabIndex="0">
+<div class="responsive-scroll" tabIndex="0">
     <table class="table">
         <thead>
             <tr>
@@ -598,7 +598,7 @@ export const TABLE_LINK = `
     Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
   </p>
 </div>
-<div class="responsive-scroll border-radius-3xl" tabIndex="0">
+<div class="responsive-scroll" tabIndex="0">
     <table class="table">
         <thead>
             <tr>
@@ -668,7 +668,7 @@ export const TABLE_TAG = `
     Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
   </p>
 </div>
-<div class="responsive-scroll border-radius-3xl" tabIndex="0">
+<div class="responsive-scroll" tabIndex="0">
     <table class="table">
         <thead>
             <tr>
@@ -722,7 +722,7 @@ export const TABLE_BUTTON = `
     Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
   </p>
 </div>
-<div class="responsive-scroll border-radius-3xl" tabIndex="0">
+<div class="responsive-scroll" tabIndex="0">
     <table class="table">
         <thead>
             <tr>
@@ -784,7 +784,7 @@ export const TABLE_BUTTON_ICON = `
     Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
   </p>
 </div>
-<div class="responsive-scroll border-radius-3xl" tabIndex="0">
+<div class="responsive-scroll" tabIndex="0">
     <table class="table">
         <thead>
             <tr>

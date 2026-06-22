@@ -23,9 +23,13 @@ const ReleasesComponents: React.FC = () => {
       content: (
         <ul className="docs-list">
           <p className="text-body-secondary d-flex text-sm align-items-center gap-1">
-            <span className="material-symbols-rounded" aria-hidden="true" style={{ color: '#0086AD' }}>info</span>
-            <span>Esta versión implican cambios de estilos que impactan al sistema en general y todos sus componentes. 
-              Se recomienda verificar el buen uso de clases para su correcta visualización.</span>
+            <span className="material-symbols-rounded" aria-hidden="true" style={{ color: '#0086AD' }}>
+              info
+            </span>
+            <span>
+              Esta versión implican cambios de estilos que impactan al sistema en general y todos sus componentes. Se
+              recomienda verificar el buen uso de clases para su correcta visualización.
+            </span>
           </p>
           <p>La Versión 1.12.0 contiene lo siguiente: </p>
           <li>
@@ -47,7 +51,8 @@ const ReleasesComponents: React.FC = () => {
             ).
           </li>
           <li>
-            El componente Pie de página (Footer) junto con el componente Indicador, se visualizan con nuevos estilos de radio y color.
+            El componente Pie de página (Footer) junto con el componente Indicador, se visualizan con nuevos estilos de
+            radio y color.
           </li>
         </ul>
       ),

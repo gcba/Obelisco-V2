@@ -43,11 +43,11 @@ const SECTIONS_UX = [
         </p>
         <div className="max-items-2">
           <div className="col">
-            <img src={`${basePath}/images/tipografia/tipografia_1.svg`} className="w-100 pb-4" alt="Familia Nunito" />
-            <p className="text-xl mb-2">Nunito</p>
+            <img src={`${basePath}/images/tipografia/tipografia_1.svg`} className="w-100 pb-4" alt="Familia Archivo" />
+            <p className="text-xl mb-2">Archivo</p>
             <p>
-              Es una tipografía <i>sans-serif</i> geométrica con formas redondeadas, diseñada para interfaces digitales
-              con alta legibilidad.
+              Es una tipografía <i>sans-serif</i> grotesca diseñada para ser usada simultáneamente en plataformas
+              impresas y digitales.
             </p>
           </div>
           <div className="col">
@@ -360,12 +360,12 @@ const SECTIONS_DEV = [
       <>
         <CodeBox codeHTML={HEADINGS}>
           <div className="container">
-            <h1>Headings h1 - Nunito, 40px, IL 48px</h1>
-            <h2>Headings h2 - Nunito, 36px, IL 44px</h2>
-            <h3>Headings h3 - Nunito, 32px, IL 44px</h3>
-            <h4>Headings h4 - Nunito, 28px, IL 36px</h4>
-            <h5>Headings h5 - Nunito, 24px, IL 32px</h5>
-            <h6>Headings h6 - Nunito, 20px, IL 28px</h6>
+            <h1>Headings h1 - Archivo, 40px, IL 48px</h1>
+            <h2>Headings h2 - Archivo, 36px, IL 44px</h2>
+            <h3>Headings h3 - Archivo, 32px, IL 44px</h3>
+            <h4>Headings h4 - Archivo, 28px, IL 36px</h4>
+            <h5>Headings h5 - Archivo, 24px, IL 32px</h5>
+            <h6>Headings h6 - Archivo, 20px, IL 28px</h6>
             <p className="text-sm fst-italic mt-4 mb-0 text-body-secondary">* IL: interlineado</p>
           </div>
         </CodeBox>
@@ -378,9 +378,9 @@ const SECTIONS_DEV = [
       <>
         <CodeBox codeHTML={HEADLINE}>
           <div className="container">
-            <p className="headline-lg">Titular L - Nunito, 20px, IL 24px</p>
-            <p className="headline-md">Titular M - Nunito, 18px, IL 24px</p>
-            <p className="headline-sm">Titular S - Nunito, 16px, IL 20px</p>
+            <p className="headline-lg">Titular L - Archivo, 20px, IL 24px</p>
+            <p className="headline-md">Titular M - Archivo, 18px, IL 24px</p>
+            <p className="headline-sm">Titular S - Archivo, 16px, IL 20px</p>
             <p className="text-sm fst-italic mt-4 mb-0 text-body-secondary">* IL: interlineado</p>
           </div>
         </CodeBox>
@@ -508,7 +508,7 @@ const SECTIONS_SCALE = [
                 </td>
                 <td>
                   <ul className="my-1 ps-0">
-                    <li className="pb-3">Fuente: Nunito.</li>
+                    <li className="pb-3">Fuente: Archivo.</li>
                     <li className="pb-3">
                       Tamaño <i>desktop</i>: 40px.
                     </li>
@@ -531,7 +531,7 @@ const SECTIONS_SCALE = [
                 </td>
                 <td>
                   <ul className="my-1 ps-0">
-                    <li className="pb-3">Fuente: Nunito.</li>
+                    <li className="pb-3">Fuente: Archivo.</li>
                     <li className="pb-3">
                       Tamaño <i>desktop</i>: 36px.
                     </li>
@@ -551,7 +551,7 @@ const SECTIONS_SCALE = [
                 </td>
                 <td>
                   <ul className="my-1 ps-0">
-                    <li className="pb-3">Fuente: Nunito.</li>
+                    <li className="pb-3">Fuente: Archivo.</li>
                     <li className="pb-3">
                       Tamaño <i>desktop</i>: 32px.
                     </li>
@@ -571,7 +571,7 @@ const SECTIONS_SCALE = [
                 </td>
                 <td>
                   <ul className="my-1 ps-0">
-                    <li className="pb-3">Fuente: Nunito.</li>
+                    <li className="pb-3">Fuente: Archivo.</li>
                     <li className="pb-3">Tamaño: 28 px.</li>
                     <li>Interlineado: 36 px.</li>
                   </ul>
@@ -586,7 +586,7 @@ const SECTIONS_SCALE = [
                 </td>
                 <td>
                   <ul className="my-1 ps-0">
-                    <li className="pb-3">Fuente: Nunito.</li>
+                    <li className="pb-3">Fuente: Archivo.</li>
                     <li className="pb-3">Tamaño: 24 px.</li>
                     <li>Interlineado: 32 px.</li>
                   </ul>
@@ -601,7 +601,7 @@ const SECTIONS_SCALE = [
                 </td>
                 <td>
                   <ul className="my-1 ps-0">
-                    <li className="pb-3">Fuente: Nunito.</li>
+                    <li className="pb-3">Fuente: Archivo.</li>
                     <li className="pb-3">Tamaño: 20 px.</li>
                     <li>Interlineado: 28 px.</li>
                   </ul>
@@ -646,7 +646,7 @@ const SECTIONS_SCALE = [
                 </td>
                 <td>
                   <ul className="my-1 ps-0">
-                    <li className="pb-3">Fuente: Nunito.</li>
+                    <li className="pb-3">Fuente: Archivo.</li>
                     <li className="pb-3">Tamaño: 20 px.</li>
                     <li>Interlineado: 24 px.</li>
                   </ul>
@@ -661,7 +661,7 @@ const SECTIONS_SCALE = [
                 </td>
                 <td>
                   <ul className="my-1 ps-0">
-                    <li className="pb-3">Fuente: Nunito.</li>
+                    <li className="pb-3">Fuente: Archivo.</li>
                     <li className="pb-3">Tamaño: 18 px.</li>
                     <li>Interlineado: 24 px.</li>
                   </ul>
@@ -676,7 +676,7 @@ const SECTIONS_SCALE = [
                 </td>
                 <td>
                   <ul className="my-1 ps-0">
-                    <li className="pb-3">Fuente: Nunito.</li>
+                    <li className="pb-3">Fuente: Archivo.</li>
                     <li className="pb-3">Tamaño: 16 px.</li>
                     <li>Interlineado: 20 px.</li>
                   </ul>

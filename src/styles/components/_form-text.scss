@@ -181,9 +181,7 @@ input[type='file'] {
 input[type='file']::-webkit-file-upload-button {
   color: white;
   padding: 12px 24px;
-
-  // border-radius: 8px;
-  border-radius: $border-radius-3xl;
+  border-radius: $border-radius-pill;
   background-color: #005e7a !important;
   height: 48px;
 

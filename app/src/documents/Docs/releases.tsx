@@ -45,6 +45,17 @@ const ReleasesComponents: React.FC = () => {
               Se alinea el ícono informativo de estado en{' '}
               <a href="https://gcba.github.io/Obelisco-V2/components/form-validation"> Validacion de Inputs</a>.
             </li>
+            <li>
+              Se cambia el color <code>secundario</code> por <code>primario</code> para item de eventos (simples o
+              múltiples) en componente Calendario.
+            </li>
+            <li>
+              Se cambia el color <code>secundario</code> por <code>primario</code> para en Barra de progreso.
+            </li>
+            <li>
+              Se modifica el radio de borde del botón de carga de archivo. Ahora es <code>pill</code>, igual que el
+              input.
+            </li>
           </ul>
         </>
       ),

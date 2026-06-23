@@ -23,37 +23,28 @@ const ReleasesComponents: React.FC = () => {
       content: (
         <>
           <ul className="docs-list">
-            <p className="text-body-secondary d-flex text-sm align-items-center gap-1">
-              <span className="material-symbols-rounded" aria-hidden="true" style={{ color: '#0086AD' }}>
-                info
-              </span>
-              <span>
-                Esta versión implican cambios de estilos que impactan al sistema en general y todos sus componentes. Se
-                recomienda verificar el buen uso de clases para su correcta visualización.
-              </span>
-            </p>
             <p>La Versión 1.12.1 contiene lo siguiente: </p>
             <li>
-              Al componente Indicador, en Pie de página (Footer), se le cambia el botón <code>secundario</code> por el{' '}
-              <code>primario</code>.
+              Al componente Indicador, en Pie de página (Footer), se cambia la clase <code>btn-secondary</code> por{' '}
+              <code>btn-primary</code>.
             </li>
             <li>
               Se corrige el color de los elementos en el componente Alerta de sistema - Advertencia (Warning) por{' '}
-              <code>primario</code>.
+              <code>$primary</code>.
             </li>
             <li>
               Se alinea el ícono informativo de estado en{' '}
               <a href="https://gcba.github.io/Obelisco-V2/components/form-validation"> Validacion de Inputs</a>.
             </li>
             <li>
-              Se cambia el color <code>secundario</code> por <code>primario</code> para item de eventos (simples o
+              Se cambia el color de <code>$secondary</code> por <code>$primary</code> para item de eventos (simples o
               múltiples) en componente Calendario.
             </li>
             <li>
-              Se cambia el color <code>secundario</code> por <code>primario</code> para en Barra de progreso.
+              Se cambia la claser <code>bg-primary</code> por <code>bg-secondary</code> en Barra de progreso.
             </li>
             <li>
-              Se modifica el radio de borde del botón de carga de archivo. Ahora es <code>pill</code>, igual que el
+              Se modifica el radio de borde del botón de carga de archivo. Ahora es <code>pill</code>, igual que los
               input.
             </li>
           </ul>

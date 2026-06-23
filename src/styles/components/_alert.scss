@@ -38,7 +38,7 @@ $theme-colors-system: (
 $system-content-colors: (
   'success': $white,
   'danger': $white,
-  'warning': $secondary,
+  'warning': $primary,
   'info': $white,
 );
 
@@ -54,9 +54,7 @@ $system-content-colors: (
   border: none;
   outline: 0.0625rem solid map-get($theme-colors, $type);
   outline-offset: -0.0625rem;
-
-  // border-radius: $border-radius-lg;
-  border-radius: $border-radius-3xl;
+  border-radius: $border-radius-lg;
 }
 
 // Custom styles

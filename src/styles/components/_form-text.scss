@@ -181,9 +181,7 @@ input[type='file'] {
 input[type='file']::-webkit-file-upload-button {
   color: white;
   padding: 12px 24px;
-
-  // border-radius: 8px;
-  border-radius: $border-radius-3xl;
+  border-radius: 8px;
   background-color: #005e7a !important;
   height: 48px;
 
@@ -192,9 +190,7 @@ input[type='file']::-webkit-file-upload-button {
 
 input[type='file']:disabled {
   border: 2px solid $slate-400;
-
-  // border-radius: 8px;
-  border-radius: $border-radius-pill;
+  border-radius: 8px;
   background-color: $slate-100;
   color: $slate-700;
   display: flex;
@@ -221,9 +217,7 @@ input[type='file']:disabled::-webkit-file-upload-button {
   font-size: $md-body-fs;
   font-weight: $md-body-fw;
   border: none;
-
-  // border-radius: $border-radius-lg;
-  border-radius: $border-radius-pill;
+  border-radius: $border-radius-lg;
   outline: 0.125rem solid $body-color;
   outline-offset: 0;
   box-sizing: border-box;
@@ -485,7 +479,7 @@ input[type='search']::-moz-search-clear-button {
 .invalid-feedback::before {
   content: '';
   position: absolute;
-  top: 8px;
+  top: 4px;
   left: 12px;
   width: 24px;
   height: 24px;
@@ -516,10 +510,3 @@ input[type='search']::-moz-search-clear-button {
 }
 
 //Input con fondo -
-
-// - Textarea
-textarea.form-control {
-  border-radius: $border-radius-3xl;
-}
-
-// Textarea -

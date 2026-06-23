@@ -44,12 +44,6 @@ const ReleasesComponents: React.FC = () => {
             Se alinea el ícono informativo de estado en{' '}
             <a href="https://gcba.github.io/Obelisco-V2/components/form-validation"> Validacion de Inputs</a>.
           </li>
-          <li>
-            El color terciario pasa a ser <code>{'cyan-500'}</code> (<code>{'#64D8C8'}</code> ).
-            <br />
-            El color terciario <strong>outline</strong> , pasa a ser <code>{'cyan-900'}</code> (<code>{'#10413a'}</code>{' '}
-            ).
-          </li>
         </ul>
       ),
     },

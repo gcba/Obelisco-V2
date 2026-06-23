@@ -23,7 +23,7 @@ const ReleasesComponents: React.FC = () => {
       content: (
         <>
           <ul className="docs-list">
-            <p className=" d-none text-body-secondary d-flex text-sm align-items-center gap-1">
+            <p className="text-body-secondary d-flex text-sm align-items-center gap-1">
               <span className="material-symbols-rounded" aria-hidden="true" style={{ color: '#0086AD' }}>
                 info
               </span>
@@ -606,13 +606,13 @@ const ReleasesComponents: React.FC = () => {
         description={[
           'En esta sección se encuentran los versionados de la librería y la documentación de los cambios que se hicieron sobre cada versión de Obelisco.',
           <>
-            <p className="d-flex gap-1">
+            <span className="d-flex gap-1">
               Versión actual:{' '}
               <Link href="https://github.com/gcba/Obelisco-V2/releases" target="blank">
                 {versionPages.text}
               </Link>{' '}
               <i className="bxl bx-github mt-1" style={{ fontSize: '18px' }} />
-            </p>
+            </span>
           </>,
         ]}
         divider={true}

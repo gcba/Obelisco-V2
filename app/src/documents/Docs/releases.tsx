@@ -19,6 +19,37 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
+      title: 'Versión 1.12.1',
+      content: (
+        <>
+          <ul className="docs-list">
+            <p className=" d-none text-body-secondary d-flex text-sm align-items-center gap-1">
+              <span className="material-symbols-rounded" aria-hidden="true" style={{ color: '#0086AD' }}>
+                info
+              </span>
+              <span>
+                Esta versión implican cambios de estilos que impactan al sistema en general y todos sus componentes. Se
+                recomienda verificar el buen uso de clases para su correcta visualización.
+              </span>
+            </p>
+            <p>La Versión 1.12.1 contiene lo siguiente: </p>
+            <li>
+              Al componente Indicador, en Pie de página (Footer), se le cambia el botón <code>secundario</code> por el{' '}
+              <code>primario</code>.
+            </li>
+            <li>
+              Se corrige el color de los elementos en el componente Alerta de sistema - Advertencia (Warning) por{' '}
+              <code>primario</code>.
+            </li>
+            <li>
+              Se alinea el ícono informativo de estado en{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/components/form-validation"> Validacion de Inputs</a>.
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
       title: 'Versión 1.12.0',
       content: (
         <ul className="docs-list">

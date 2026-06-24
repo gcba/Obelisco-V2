@@ -14421,7 +14421,7 @@ input[type=file] {
 input[type=file]::-webkit-file-upload-button {
   color: white;
   padding: 12px 24px;
-  border-radius: 16px;
+  border-radius: 9999px;
   background-color: #005e7a !important;
   height: 48px;
 }
@@ -14670,7 +14670,7 @@ input[type=search]::-moz-search-clear-button {
 .invalid-feedback::before {
   content: "";
   position: absolute;
-  top: 8px;
+  top: 5px;
   left: 12px;
   width: 24px;
   height: 24px;
@@ -16860,7 +16860,7 @@ span.form-label {
   box-shadow: inset 0 0 0 1px #004357;
 }
 .calendar.interactive .calendar-body .calendar-week td[class*=event-]::before {
-  color: #101e37;
+  color: #336acc;
   position: absolute;
   z-index: 1;
   height: 6px;
@@ -16930,7 +16930,7 @@ span.form-label {
   border: none;
   outline: 0.0625rem solid #101e37;
   outline-offset: -0.0625rem;
-  border-radius: 16px;
+  border-radius: 6px;
   color: #101e37;
 }
 .alert.alert-primary::before {
@@ -16948,7 +16948,7 @@ span.form-label {
   border: none;
   outline: 0.0625rem solid #336acc;
   outline-offset: -0.0625rem;
-  border-radius: 16px;
+  border-radius: 6px;
   color: #101e37;
 }
 .alert.alert-secondary::before {
@@ -16967,7 +16967,7 @@ span.form-label {
   border: none;
   outline: 0.0625rem solid #26874a;
   outline-offset: -0.0625rem;
-  border-radius: 16px;
+  border-radius: 6px;
   color: #101e37;
 }
 .alert.alert-success::before {
@@ -16990,7 +16990,7 @@ span.form-label {
   border: none;
   outline: 0.0625rem solid #64d8c8;
   outline-offset: -0.0625rem;
-  border-radius: 16px;
+  border-radius: 6px;
   color: #101e37;
 }
 .alert.alert-tertiary::before {
@@ -17009,7 +17009,7 @@ span.form-label {
   border: none;
   outline: 0.0625rem solid #0086ad;
   outline-offset: -0.0625rem;
-  border-radius: 16px;
+  border-radius: 6px;
   color: #101e37;
 }
 .alert.alert-info::before {
@@ -17018,7 +17018,7 @@ span.form-label {
 }
 .alert.alert-info.system {
   outline: unset;
-  background-color: #101e37;
+  background-color: #336acc;
   color: #ffffff;
 }
 .alert.alert-info.system::before {
@@ -17033,7 +17033,7 @@ span.form-label {
   border: none;
   outline: 0.0625rem solid #ff9500;
   outline-offset: -0.0625rem;
-  border-radius: 16px;
+  border-radius: 6px;
   color: #101e37;
 }
 .alert.alert-warning::before {
@@ -17043,21 +17043,21 @@ span.form-label {
 .alert.alert-warning.system {
   outline: unset;
   background-color: #ff9500;
-  color: #336acc;
+  color: #101e37;
 }
 .alert.alert-warning.system::before {
-  background-color: #336acc;
+  background-color: #101e37;
 }
 .alert.alert-warning.system a,
 .alert.alert-warning.system ol {
-  color: #336acc !important;
+  color: #101e37 !important;
 }
 .alert.alert-danger {
   background-color: #fbefef;
   border: none;
   outline: 0.0625rem solid #cc3333;
   outline-offset: -0.0625rem;
-  border-radius: 16px;
+  border-radius: 6px;
   color: #101e37;
 }
 .alert.alert-danger::before {
@@ -17080,7 +17080,7 @@ span.form-label {
   border: none;
   outline: 0.0625rem solid #f3f6f9;
   outline-offset: -0.0625rem;
-  border-radius: 16px;
+  border-radius: 6px;
   color: #101e37;
 }
 .alert.alert-light::before {
@@ -17098,7 +17098,7 @@ span.form-label {
   border: none;
   outline: 0.0625rem solid #002733;
   outline-offset: -0.0625rem;
-  border-radius: 16px;
+  border-radius: 6px;
   color: #101e37;
 }
 .alert.alert-dark::before {

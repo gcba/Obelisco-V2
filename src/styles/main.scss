@@ -16,6 +16,9 @@
 @import 'utilities/containers';
 @import 'utilities/globals';
 
+// Import borders
+@import 'variables/borders';
+
 // Import component styles
 @import 'components/typography';
 @import 'components/colors';
@@ -48,7 +51,8 @@
 @import 'components/list-link';
 @import 'components/list-informative';
 @import 'components/list-step';
-@import 'components/block';
+
+// @import 'components/block'; /* 1.11.1 */
 @import 'components/highlighted';
 @import 'components/collapse';
 @import 'components/cards';

@@ -3,3 +3,5 @@ $spacer: 0.25rem;
 @function space-units($number) {
   @return $spacer * $number;
 }
+
+$border-radius-lg: 30px;

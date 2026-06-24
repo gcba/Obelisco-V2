@@ -33,28 +33,62 @@ $scroll-border-radius: 100px;
   &:has(> .table) {
     padding: 0;
     border: 1px solid $border-color;
+    border-radius: $border-radius-3xl $border-radius-3xl $border-radius-xl
+      $border-radius-xl;
 
     .table {
       border: none;
+
+      thead {
+        tr {
+          th {
+            &:first-of-type {
+              border-top-left-radius: unset;
+            }
+
+            &:last-of-type {
+              border-top-right-radius: unset;
+            }
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          td {
+            td:first-of-type {
+              border-bottom-left-radius: unset;
+            }
+
+            td:last-of-type {
+              border-bottom-right-radius: unset;
+            }
+          }
+        }
+      }
     }
   }
 
   &::-webkit-scrollbar {
-    width: 16px;
-    height: 16px;
-    background-color: $slate-50; //#f3f6f9
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
     border-radius: $scroll-border-radius;
     outline: 0.125rem solid transparent;
   }
 
   &::-webkit-scrollbar-track {
-    background-color: $slate-50; //#f3f6f9
+    background-color: $slate-50;
     border-radius: $scroll-border-radius;
+    border: 2px solid transparent;
+    background-clip: padding-box;
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: $slate-400; //#9eaab8
-    border-radius: 20px !important;
+    background-color: $slate-400;
+    border-radius: $scroll-border-radius !important;
+    border: 2px solid transparent;
+    background-clip: padding-box;
   }
 
   &:focus-visible {

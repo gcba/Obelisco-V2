@@ -2,9 +2,10 @@ import { ColorArray } from '@/components/Template/PalletteColor';
 import { ColorTableArray } from '@/components/Template/PalletteTable';
 
 export const themeColors = [
-  { name: 'primary', hex: '#336acc' },
-  { name: 'secondary', hex: '#101e37' },
-  { name: 'tertiary', hex: '#005e7a' },
+  { name: 'primary', hex: '#101e37' },
+  { name: 'secondary', hex: '#336acc' },
+  { name: 'tertiary', hex: '#3cceb8' },
+  { name: 'tertiary-outline', hex: '#10413a' },
   { name: 'success', hex: '#26874a' },
   { name: 'danger', hex: '#cc3333' },
   { name: 'warning', hex: '#ff9500', textDark: true },
@@ -157,8 +158,8 @@ export const PRINCIPALS_COLORS: ColorTableArray[] = [
     use: 'Se utiliza en acciones de menor importancia que las primarias y genera jerarquía dentro de la interfaz.',
   },
   {
-    base: '$sky/700',
-    hex: '#005E7A',
+    base: '$cyan/900',
+    hex: '#10413a',
     variable: '$tertiary',
     use: 'Añade un tercer nivel de jerarquía dentro de la interfaz y se utiliza en acciones complementarias o repetitivas.',
   },

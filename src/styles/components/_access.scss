@@ -1,3 +1,5 @@
+// @import '../variables/borders';
+
 // Variables and mixins
 $access-padding: 1rem;
 $access-padding-desktop: 1.5rem;
@@ -49,11 +51,13 @@ a.list-group-item {
   color: $body-color;
   border: none;
   outline: $outline-border;
-  border-radius: $border-radius-lg;
+
+  // border-radius: $border-radius-lg;
   padding: $access-padding;
   display: flex;
   height: auto;
   background-color: $white;
+  border-radius: $border-radius-3xl;
 
   @include media-breakpoint-up(xl) {
     padding: $access-padding-desktop;
@@ -98,12 +102,15 @@ a.list-group-item {
   }
 
   &:first-child {
-    border-radius: $border-radius-lg;
+    // border-radius: $border-radius-lg;
+    border-radius: $border-radius-3xl;
   }
 
   &:last-child {
     margin-bottom: 0;
-    border-radius: $border-radius-lg;
+
+    // border-radius: $border-radius-lg;
+    border-radius: $border-radius-3xl;
   }
 
   &:hover,
@@ -213,7 +220,9 @@ a.list-group-item {
     display: grid;
     width: 100%;
     outline: 0.125rem solid $slate-100;
-    border-radius: $border-radius-lg;
+
+    // border-radius: $border-radius-lg;
+    border-radius: $border-radius-3xl;
     padding-bottom: 0;
 
     .clearfix {
@@ -276,7 +285,9 @@ a.list-group-item {
         background-color: $slate-50;
         flex: 0 0 $card-size;
         height: $card-size;
-        border-radius: $border-radius-lg;
+
+        // border-radius: $border-radius-lg;
+        border-radius: $border-radius-3xl;
         text-align: center;
         line-height: $card-size;
         display: flex;
@@ -297,7 +308,8 @@ a.list-group-item {
       }
 
       & + .list-group-item {
-        border-radius: $border-radius-card-item;
+        // border-radius: $border-radius-card-item;
+        border-radius: $border-radius-3xl;
       }
     }
 

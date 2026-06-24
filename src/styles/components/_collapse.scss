@@ -31,11 +31,14 @@ $accordion-button-collapsed-icon: url('data:image/svg+xml,<svg xmlns="http://www
   overflow: visible;
   border: none;
   outline: $outline-border;
-  border-radius: $border-radius-lg;
+
+  // border-radius: $border-radius-lg;
+  border-radius: $border-radius-3xl;
 
   &:first-of-type,
   &:last-of-type {
-    border-radius: $border-radius-lg;
+    // border-radius: $border-radius-lg;
+    border-radius: $border-radius-3xl;
   }
 
   .accordion-button {
@@ -45,7 +48,7 @@ $accordion-button-collapsed-icon: url('data:image/svg+xml,<svg xmlns="http://www
     text-align: left;
     padding: $accordion-button-padding;
     transition: background-color 0.2s;
-    border-radius: $border-radius-lg $border-radius-lg 0 0;
+    border-radius: $border-radius-3xl $border-radius-3xl 0 0;
     position: relative;
     z-index: 1;
     color: $white;
@@ -110,12 +113,15 @@ $accordion-button-collapsed-icon: url('data:image/svg+xml,<svg xmlns="http://www
     &:focus,
     &.focus {
       box-shadow: $focus-box-shadow;
-      border-radius: $border-radius-lg;
+
+      // border-radius: $border-radius-lg;
+      border-radius: $border-radius-3xl;
       outline: 0.25rem solid transparent;
     }
 
     &.collapsed {
-      border-radius: $border-radius-lg;
+      // border-radius: $border-radius-lg;
+      border-radius: $border-radius-3xl;
       background-color: $slate-50;
       color: $body-color;
       position: relative;

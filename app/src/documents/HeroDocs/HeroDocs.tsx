@@ -61,10 +61,10 @@ const HeroHeaderDocs: React.FC = () => {
 
                         {/* botones */}
                         <div className="btn-hero">
-                          <button type="button" className="btn btn-secondary">
+                          <button type="button" className="btn btn-primary">
                             Botón
                           </button>
-                          <button type="button" className="btn btn-outline-secondary">
+                          <button type="button" className="btn btn-outline-primary">
                             Botón
                           </button>
                         </div>
@@ -110,10 +110,10 @@ const HeroHeaderDocs: React.FC = () => {
 
                         {/* botones */}
                         <div className="btn-hero">
-                          <button type="button" className="btn btn-secondary">
+                          <button type="button" className="btn btn-primary">
                             Botón
                           </button>
-                          <button type="button" className="btn btn-outline-secondary">
+                          <button type="button" className="btn btn-outline-primary">
                             Botón
                           </button>
                         </div>
@@ -160,10 +160,10 @@ const HeroHeaderDocs: React.FC = () => {
                         </div>
                         {/* botones */}
                         <div className="btn-hero">
-                          <button type="button" className="btn btn-secondary">
+                          <button type="button" className="btn btn-primary">
                             Botón
                           </button>
-                          <button type="button" className="btn btn-outline-secondary">
+                          <button type="button" className="btn btn-outline-primary">
                             Botón
                           </button>
                         </div>
@@ -211,10 +211,10 @@ const HeroHeaderDocs: React.FC = () => {
 
                         {/* botones */}
                         <div className="btn-hero">
-                          <button type="button" className="btn btn-secondary">
+                          <button type="button" className="btn btn-primary">
                             Botón
                           </button>
-                          <button type="button" className="btn btn-outline-secondary">
+                          <button type="button" className="btn btn-outline-primary">
                             Botón
                           </button>
                         </div>
@@ -264,10 +264,10 @@ const HeroHeaderDocs: React.FC = () => {
 
                         {/* botones */}
                         <div className="btn-hero">
-                          <button type="button" className="btn btn-secondary">
+                          <button type="button" className="btn btn-primary">
                             Botón
                           </button>
-                          <button type="button" className="btn btn-outline-secondary">
+                          <button type="button" className="btn btn-outline-primary">
                             Botón
                           </button>
                         </div>
@@ -322,10 +322,10 @@ const HeroHeaderDocs: React.FC = () => {
 
                         {/* botones */}
                         <div className="btn-hero">
-                          <button type="button" className="btn btn-secondary">
+                          <button type="button" className="btn btn-primary">
                             Botón
                           </button>
-                          <button type="button" className="btn btn-outline-secondary">
+                          <button type="button" className="btn btn-outline-primary">
                             Botón
                           </button>
                         </div>
@@ -377,10 +377,10 @@ const HeroHeaderDocs: React.FC = () => {
 
                         {/* botones */}
                         <div className="btn-hero">
-                          <button type="button" className="btn btn-secondary">
+                          <button type="button" className="btn btn-primary">
                             Botón
                           </button>
-                          <button type="button" className="btn btn-outline-secondary">
+                          <button type="button" className="btn btn-outline-primary">
                             Botón
                           </button>
                         </div>
@@ -689,7 +689,7 @@ const HeroHeaderDocs: React.FC = () => {
 
                         {/* redes sociales */}
                         <div className="d-flex flex-wrap align-items-center column-gap-2 row-gap-4">
-                          <span className="text-body-secondary me-2">Compartir en redes</span>
+                          <span className="text-body-primary me-2">Compartir en redes</span>
                           <a href="#" className="shadow-none" target="_blank">
                             <i className="bxl bx-facebook-circle o-icon text-primary"></i>
                           </a>
@@ -749,10 +749,10 @@ const HeroHeaderDocs: React.FC = () => {
 
                         {/* botones */}
                         <div className="btn-hero">
-                          <button type="button" className="btn btn-secondary">
+                          <button type="button" className="btn btn-primary">
                             Botón
                           </button>
-                          <button type="button" className="btn btn-outline-secondary">
+                          <button type="button" className="btn btn-outline-primary">
                             Botón
                           </button>
                         </div>
@@ -786,10 +786,10 @@ const HeroHeaderDocs: React.FC = () => {
 
                         {/* botones */}
                         <div className="btn-hero">
-                          <button type="button" className="btn btn-secondary">
+                          <button type="button" className="btn btn-primary">
                             Botón
                           </button>
-                          <button type="button" className="btn btn-outline-secondary">
+                          <button type="button" className="btn btn-outline-primary">
                             Botón
                           </button>
                         </div>
@@ -823,10 +823,10 @@ const HeroHeaderDocs: React.FC = () => {
 
                         {/* botones */}
                         <div className="btn-hero">
-                          <button type="button" className="btn btn-secondary">
+                          <button type="button" className="btn btn-primary">
                             Botón
                           </button>
-                          <button type="button" className="btn btn-outline-secondary">
+                          <button type="button" className="btn btn-outline-primary">
                             Botón
                           </button>
                         </div>
@@ -860,10 +860,10 @@ const HeroHeaderDocs: React.FC = () => {
 
                         {/* botones */}
                         <div className="btn-hero">
-                          <button type="button" className="btn btn-secondary">
+                          <button type="button" className="btn btn-primary">
                             Botón
                           </button>
-                          <button type="button" className="btn btn-outline-secondary">
+                          <button type="button" className="btn btn-outline-primary">
                             Botón
                           </button>
                         </div>
@@ -897,10 +897,10 @@ const HeroHeaderDocs: React.FC = () => {
 
                         {/* botones */}
                         <div className="btn-hero">
-                          <button type="button" className="btn btn-secondary">
+                          <button type="button" className="btn btn-primary">
                             Botón
                           </button>
-                          <button type="button" className="btn btn-outline-secondary">
+                          <button type="button" className="btn btn-outline-primary">
                             Botón
                           </button>
                         </div>
@@ -934,10 +934,10 @@ const HeroHeaderDocs: React.FC = () => {
 
                         {/* botones */}
                         <div className="btn-hero">
-                          <button type="button" className="btn btn-secondary">
+                          <button type="button" className="btn btn-primary">
                             Botón
                           </button>
-                          <button type="button" className="btn btn-outline-secondary">
+                          <button type="button" className="btn btn-outline-primary">
                             Botón
                           </button>
                         </div>
@@ -985,10 +985,10 @@ const HeroHeaderDocs: React.FC = () => {
 
                         {/* botones */}
                         <div className="btn-hero">
-                          <button type="button" className="btn btn-secondary">
+                          <button type="button" className="btn btn-primary">
                             Botón
                           </button>
-                          <button type="button" className="btn btn-outline-secondary">
+                          <button type="button" className="btn btn-outline-primary">
                             Botón
                           </button>
                         </div>

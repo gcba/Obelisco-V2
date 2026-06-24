@@ -29,8 +29,8 @@
   --bs-gray-700: #4c4c4c;
   --bs-gray-800: #333333;
   --bs-gray-900: #191919;
-  --bs-primary: #336acc;
-  --bs-secondary: #101e37;
+  --bs-primary: #101e37;
+  --bs-secondary: #336acc;
   --bs-success: #26874a;
   --bs-tertiary: #005e7a;
   --bs-info: #0086ad;
@@ -38,8 +38,8 @@
   --bs-danger: #cc3333;
   --bs-light: #f3f6f9;
   --bs-dark: #002733;
-  --bs-primary-rgb: 51, 106, 204;
-  --bs-secondary-rgb: 16, 30, 55;
+  --bs-primary-rgb: 16, 30, 55;
+  --bs-secondary-rgb: 51, 106, 204;
   --bs-success-rgb: 38, 135, 74;
   --bs-tertiary-rgb: 0, 94, 122;
   --bs-info-rgb: 0, 134, 173;
@@ -47,24 +47,24 @@
   --bs-danger-rgb: 204, 51, 51;
   --bs-light-rgb: 243, 246, 249;
   --bs-dark-rgb: 0, 39, 51;
-  --bs-primary-text-emphasis: #142a52;
-  --bs-secondary-text-emphasis: #060c16;
+  --bs-primary-text-emphasis: #060c16;
+  --bs-secondary-text-emphasis: #142a52;
   --bs-success-text-emphasis: #0f361e;
   --bs-info-text-emphasis: #003645;
   --bs-warning-text-emphasis: #663c00;
   --bs-danger-text-emphasis: #521414;
   --bs-light-text-emphasis: #4c4c4c;
   --bs-dark-text-emphasis: #4c4c4c;
-  --bs-primary-bg-subtle: #d6e1f5;
-  --bs-secondary-bg-subtle: #cfd2d7;
+  --bs-primary-bg-subtle: #cfd2d7;
+  --bs-secondary-bg-subtle: #d6e1f5;
   --bs-success-bg-subtle: #d4e7db;
   --bs-info-bg-subtle: #cce7ef;
   --bs-warning-bg-subtle: #ffeacc;
   --bs-danger-bg-subtle: #f5d6d6;
   --bs-light-bg-subtle: #f2f2f2;
   --bs-dark-bg-subtle: #999999;
-  --bs-primary-border-subtle: #adc3eb;
-  --bs-secondary-border-subtle: #9fa5af;
+  --bs-primary-border-subtle: #9fa5af;
+  --bs-secondary-border-subtle: #adc3eb;
   --bs-success-border-subtle: #a8cfb7;
   --bs-info-border-subtle: #99cfde;
   --bs-warning-border-subtle: #ffd599;
@@ -73,10 +73,10 @@
   --bs-dark-border-subtle: #7f7f7f;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-font-sans-serif: "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: "Archivo", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-body-font-family: "Archivo", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -120,7 +120,7 @@
   --bs-box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.075);
   --bs-focus-ring-width: 0.25rem;
   --bs-focus-ring-opacity: 0.25;
-  --bs-focus-ring-color: rgba(51, 106, 204, 0.25);
+  --bs-focus-ring-color: rgba(16, 30, 55, 0.25);
   --bs-form-valid-color: #26874a;
   --bs-form-valid-border-color: #26874a;
   --bs-form-invalid-color: #cc3333;
@@ -143,24 +143,24 @@
   --bs-tertiary-color-rgb: 178, 178, 178;
   --bs-tertiary-bg: #262626;
   --bs-tertiary-bg-rgb: 38, 38, 38;
-  --bs-primary-text-emphasis: #85a6e0;
-  --bs-secondary-text-emphasis: #707887;
+  --bs-primary-text-emphasis: #707887;
+  --bs-secondary-text-emphasis: #85a6e0;
   --bs-success-text-emphasis: #7db792;
   --bs-info-text-emphasis: #66b6ce;
   --bs-warning-text-emphasis: #ffbf66;
   --bs-danger-text-emphasis: #e08585;
   --bs-light-text-emphasis: #e5e5e5;
   --bs-dark-text-emphasis: #b2b2b2;
-  --bs-primary-bg-subtle: #0a1529;
-  --bs-secondary-bg-subtle: #03060b;
+  --bs-primary-bg-subtle: #03060b;
+  --bs-secondary-bg-subtle: #0a1529;
   --bs-success-bg-subtle: #081b0f;
   --bs-info-bg-subtle: #001b23;
   --bs-warning-bg-subtle: #331e00;
   --bs-danger-bg-subtle: #290a0a;
   --bs-light-bg-subtle: #333333;
   --bs-dark-bg-subtle: #1a1a1a;
-  --bs-primary-border-subtle: #1f407a;
-  --bs-secondary-border-subtle: #0a1221;
+  --bs-primary-border-subtle: #0a1221;
+  --bs-secondary-border-subtle: #1f407a;
   --bs-success-border-subtle: #17512c;
   --bs-info-border-subtle: #005068;
   --bs-warning-border-subtle: #995900;
@@ -168,10 +168,10 @@
   --bs-light-border-subtle: #4c4c4c;
   --bs-dark-border-subtle: #333333;
   --bs-heading-color: inherit;
-  --bs-link-color: #85a6e0;
-  --bs-link-hover-color: #9db8e6;
-  --bs-link-color-rgb: 133, 166, 224;
-  --bs-link-hover-color-rgb: 157, 184, 230;
+  --bs-link-color: #707887;
+  --bs-link-hover-color: #8d939f;
+  --bs-link-color-rgb: 112, 120, 135;
+  --bs-link-hover-color-rgb: 141, 147, 159;
   --bs-code-color: #e685b5;
   --bs-highlight-color: #b2b2b2;
   --bs-highlight-bg: #665200;
@@ -217,9 +217,9 @@ hr {
 }
 
 h6, .h6, .list-steps-item h3, .list-steps-item .h3,
-.list-steps-item .list-steps-item-title, .list-informative-subtitle, .list-link .list-link-title, h5, .h5, .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-vertical .panel-body .panel-title,
+.list-steps-item .list-steps-item-title, .list-informative-subtitle, .list-link .list-link-title, h5, .h5, .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-container .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-container .panel-horizontal .panel-body .panel-title.h2, .panel-vertical .panel-body .panel-title,
 .panel-vertical .panel-body-dark .panel-title, h4, .h4, .stepper-content .stepper .step-title, .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .h3,
-.list-steps.list-steps-lg .list-steps-item .list-steps-item-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title,
+.list-steps.list-steps-lg .list-steps-item .list-steps-item-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-container .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .panel-horizontal-container .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-container .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .panel-horizontal-container .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title,
 .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body-dark .panel-title,
 .panel-vertical .panel-body-dark .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title, .group-access .card-access .card-access-body .card-access-title, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
@@ -257,21 +257,21 @@ h3, .h3 {
 }
 
 h4, .h4, .stepper-content .stepper .step-title, .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .h3,
-.list-steps.list-steps-lg .list-steps-item .list-steps-item-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title,
+.list-steps.list-steps-lg .list-steps-item .list-steps-item-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-container .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .panel-horizontal-container .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-container .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .panel-horizontal-container .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title,
 .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body-dark .panel-title,
 .panel-vertical .panel-body-dark .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title, .group-access .card-access .card-access-body .card-access-title {
   font-size: calc(1.275rem + 0.3vw);
 }
 @media (min-width: 1200px) {
   h4, .h4, .stepper-content .stepper .step-title, .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .h3,
-  .list-steps.list-steps-lg .list-steps-item .list-steps-item-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title,
+  .list-steps.list-steps-lg .list-steps-item .list-steps-item-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-container .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .panel-horizontal-container .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-container .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .panel-horizontal-container .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title,
   .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body-dark .panel-title,
   .panel-vertical .panel-body-dark .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title, .group-access .card-access .card-access-body .card-access-title {
     font-size: 1.5rem;
   }
 }
 
-h5, .h5, .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-vertical .panel-body .panel-title,
+h5, .h5, .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-container .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-container .panel-horizontal .panel-body .panel-title.h2, .panel-vertical .panel-body .panel-title,
 .panel-vertical .panel-body-dark .panel-title {
   font-size: 1.25rem;
 }
@@ -742,7 +742,7 @@ progress {
   color: var(--bs-secondary-color);
 }
 
-.container, .stepper-content .stepper, .panel-horizontal-content .panel-horizontal,
+.container, .stepper-content .stepper, .panel-horizontal-content .panel-horizontal, .panel-horizontal-container .panel-horizontal,
 .container-fluid,
 .container-xxl,
 .container-xl,
@@ -759,27 +759,27 @@ progress {
 }
 
 @media (min-width: 576px) {
-  .container-sm, .container, .stepper-content .stepper, .panel-horizontal-content .panel-horizontal {
+  .container-sm, .container, .stepper-content .stepper, .panel-horizontal-content .panel-horizontal, .panel-horizontal-container .panel-horizontal {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
-  .container-md, .container-sm, .container, .stepper-content .stepper, .panel-horizontal-content .panel-horizontal {
+  .container-md, .container-sm, .container, .stepper-content .stepper, .panel-horizontal-content .panel-horizontal, .panel-horizontal-container .panel-horizontal {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
-  .container-lg, .container-md, .container-sm, .container, .stepper-content .stepper, .panel-horizontal-content .panel-horizontal {
+  .container-lg, .container-md, .container-sm, .container, .stepper-content .stepper, .panel-horizontal-content .panel-horizontal, .panel-horizontal-container .panel-horizontal {
     max-width: 720px;
   }
 }
 @media (min-width: 1200px) {
-  .container-xl, .container-lg, .container-md, .container-sm, .container, .stepper-content .stepper, .panel-horizontal-content .panel-horizontal {
+  .container-xl, .container-lg, .container-md, .container-sm, .container, .stepper-content .stepper, .panel-horizontal-content .panel-horizontal, .panel-horizontal-container .panel-horizontal {
     max-width: 1140px;
   }
 }
 @media (min-width: 1400px) {
-  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container, .stepper-content .stepper, .panel-horizontal-content .panel-horizontal {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container, .stepper-content .stepper, .panel-horizontal-content .panel-horizontal, .panel-horizontal-container .panel-horizontal {
     max-width: 1140px;
   }
 }
@@ -1945,20 +1945,6 @@ progress {
 
 .table-primary {
   --bs-table-color: #000000;
-  --bs-table-bg: #d6e1f5;
-  --bs-table-border-color: #abb4c4;
-  --bs-table-striped-bg: #cbd6e9;
-  --bs-table-striped-color: #000000;
-  --bs-table-active-bg: #c1cbdd;
-  --bs-table-active-color: #000000;
-  --bs-table-hover-bg: #c6d0e3;
-  --bs-table-hover-color: #000000;
-  color: var(--bs-table-color);
-  border-color: var(--bs-table-border-color);
-}
-
-.table-secondary {
-  --bs-table-color: #000000;
   --bs-table-bg: #cfd2d7;
   --bs-table-border-color: #a6a8ac;
   --bs-table-striped-bg: #c5c8cc;
@@ -1966,6 +1952,20 @@ progress {
   --bs-table-active-bg: #babdc2;
   --bs-table-active-color: #000000;
   --bs-table-hover-bg: #bfc2c7;
+  --bs-table-hover-color: #000000;
+  color: var(--bs-table-color);
+  border-color: var(--bs-table-border-color);
+}
+
+.table-secondary {
+  --bs-table-color: #000000;
+  --bs-table-bg: #d6e1f5;
+  --bs-table-border-color: #abb4c4;
+  --bs-table-striped-bg: #cbd6e9;
+  --bs-table-striped-color: #000000;
+  --bs-table-active-bg: #c1cbdd;
+  --bs-table-active-color: #000000;
+  --bs-table-hover-bg: #c6d0e3;
   --bs-table-hover-color: #000000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -2149,9 +2149,9 @@ progress {
 .form-control:focus {
   color: var(--bs-body-color);
   background-color: var(--bs-body-bg);
-  border-color: #99b5e6;
+  border-color: #888f9b;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(51, 106, 204, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(16, 30, 55, 0.25);
 }
 .form-control::-webkit-date-and-time-value {
   min-width: 85px;
@@ -2294,9 +2294,9 @@ textarea.form-control-lg {
   }
 }
 .form-select:focus {
-  border-color: #99b5e6;
+  border-color: #888f9b;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(51, 106, 204, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(16, 30, 55, 0.25);
 }
 .form-select[multiple], .form-select[size]:not([size="1"]) {
   padding-right: 0.75rem;
@@ -2378,13 +2378,13 @@ textarea.form-control-lg {
   filter: brightness(90%);
 }
 .form-check-input:focus, .form-checkbox .form-checkbox-input:focus, .form-radio .form-radio-input:focus {
-  border-color: #99b5e6;
+  border-color: #888f9b;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(51, 106, 204, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(16, 30, 55, 0.25);
 }
 .form-check-input:checked, .form-checkbox .form-checkbox-input:checked, .form-radio .form-radio-input:checked {
-  background-color: #336acc;
-  border-color: #336acc;
+  background-color: #101e37;
+  border-color: #101e37;
 }
 .form-check-input:checked[type=checkbox], .form-checkbox .form-checkbox-input:checked[type=checkbox], .form-radio .form-radio-input:checked[type=checkbox] {
   --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
@@ -2393,8 +2393,8 @@ textarea.form-control-lg {
   --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23ffffff'/%3e%3c/svg%3e");
 }
 .form-check-input[type=checkbox]:indeterminate, .form-checkbox [type=checkbox].form-checkbox-input:indeterminate, .form-radio [type=checkbox].form-radio-input:indeterminate {
-  background-color: #336acc;
-  border-color: #336acc;
+  background-color: #101e37;
+  border-color: #101e37;
   --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
 }
 .form-check-input:disabled, .form-checkbox .form-checkbox-input:disabled, .form-radio .form-radio-input:disabled {
@@ -2425,7 +2425,7 @@ textarea.form-control-lg {
   }
 }
 .form-switch .form-check-input:focus, .form-switch .form-checkbox .form-checkbox-input:focus, .form-checkbox .form-switch .form-checkbox-input:focus, .form-switch .form-radio .form-radio-input:focus, .form-radio .form-switch .form-radio-input:focus {
-  --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%2399b5e6'/%3e%3c/svg%3e");
+  --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23888f9b'/%3e%3c/svg%3e");
 }
 .form-switch .form-check-input:checked, .form-switch .form-checkbox .form-checkbox-input:checked, .form-checkbox .form-switch .form-checkbox-input:checked, .form-switch .form-radio .form-radio-input:checked, .form-radio .form-switch .form-radio-input:checked {
   background-position: right center;
@@ -2471,10 +2471,10 @@ textarea.form-control-lg {
   outline: 0;
 }
 .form-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 0.25rem rgba(51, 106, 204, 0.25);
+  box-shadow: 0 0 0 1px #ffffff, 0 0 0 0.25rem rgba(16, 30, 55, 0.25);
 }
 .form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #ffffff, 0 0 0 0.25rem rgba(51, 106, 204, 0.25);
+  box-shadow: 0 0 0 1px #ffffff, 0 0 0 0.25rem rgba(16, 30, 55, 0.25);
 }
 .form-range::-moz-focus-outer {
   border: 0;
@@ -2484,7 +2484,7 @@ textarea.form-control-lg {
   height: 1rem;
   margin-top: -0.25rem;
   appearance: none;
-  background-color: #336acc;
+  background-color: #101e37;
   border: 0;
   border-radius: 1rem;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -2495,7 +2495,7 @@ textarea.form-control-lg {
   }
 }
 .form-range::-webkit-slider-thumb:active {
-  background-color: #c2d2f0;
+  background-color: #b7bcc3;
 }
 .form-range::-webkit-slider-runnable-track {
   width: 100%;
@@ -2510,7 +2510,7 @@ textarea.form-control-lg {
   width: 1rem;
   height: 1rem;
   appearance: none;
-  background-color: #336acc;
+  background-color: #101e37;
   border: 0;
   border-radius: 1rem;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -2521,7 +2521,7 @@ textarea.form-control-lg {
   }
 }
 .form-range::-moz-range-thumb:active {
-  background-color: #c2d2f0;
+  background-color: #b7bcc3;
 }
 .form-range::-moz-range-track {
   width: 100%;
@@ -2983,23 +2983,6 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #ffffff;
-  --bs-btn-bg: #336acc;
-  --bs-btn-border-color: #336acc;
-  --bs-btn-hover-color: #ffffff;
-  --bs-btn-hover-bg: #2b5aad;
-  --bs-btn-hover-border-color: #2955a3;
-  --bs-btn-focus-shadow-rgb: 82, 128, 212;
-  --bs-btn-active-color: #ffffff;
-  --bs-btn-active-bg: #2955a3;
-  --bs-btn-active-border-color: #265099;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #ffffff;
-  --bs-btn-disabled-bg: #336acc;
-  --bs-btn-disabled-border-color: #336acc;
-}
-
-.btn-secondary {
-  --bs-btn-color: #ffffff;
   --bs-btn-bg: #101e37;
   --bs-btn-border-color: #101e37;
   --bs-btn-hover-color: #ffffff;
@@ -3013,6 +2996,23 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #ffffff;
   --bs-btn-disabled-bg: #101e37;
   --bs-btn-disabled-border-color: #101e37;
+}
+
+.btn-secondary {
+  --bs-btn-color: #ffffff;
+  --bs-btn-bg: #336acc;
+  --bs-btn-border-color: #336acc;
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #2b5aad;
+  --bs-btn-hover-border-color: #2955a3;
+  --bs-btn-focus-shadow-rgb: 82, 128, 212;
+  --bs-btn-active-color: #ffffff;
+  --bs-btn-active-bg: #2955a3;
+  --bs-btn-active-border-color: #265099;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #ffffff;
+  --bs-btn-disabled-bg: #336acc;
+  --bs-btn-disabled-border-color: #336acc;
 }
 
 .btn-success {
@@ -3135,23 +3135,6 @@ textarea.form-control-lg {
 }
 
 .btn-outline-primary {
-  --bs-btn-color: #336acc;
-  --bs-btn-border-color: #336acc;
-  --bs-btn-hover-color: #ffffff;
-  --bs-btn-hover-bg: #336acc;
-  --bs-btn-hover-border-color: #336acc;
-  --bs-btn-focus-shadow-rgb: 51, 106, 204;
-  --bs-btn-active-color: #ffffff;
-  --bs-btn-active-bg: #336acc;
-  --bs-btn-active-border-color: #336acc;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #336acc;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #336acc;
-  --bs-gradient: none;
-}
-
-.btn-outline-secondary {
   --bs-btn-color: #101e37;
   --bs-btn-border-color: #101e37;
   --bs-btn-hover-color: #ffffff;
@@ -3165,6 +3148,23 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #101e37;
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #101e37;
+  --bs-gradient: none;
+}
+
+.btn-outline-secondary {
+  --bs-btn-color: #336acc;
+  --bs-btn-border-color: #336acc;
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #336acc;
+  --bs-btn-hover-border-color: #336acc;
+  --bs-btn-focus-shadow-rgb: 51, 106, 204;
+  --bs-btn-active-color: #ffffff;
+  --bs-btn-active-bg: #336acc;
+  --bs-btn-active-border-color: #336acc;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #336acc;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #336acc;
   --bs-gradient: none;
 }
 
@@ -3406,7 +3406,7 @@ textarea.form-control-lg {
   --bs-dropdown-link-hover-color: var(--bs-body-color);
   --bs-dropdown-link-hover-bg: var(--bs-tertiary-bg);
   --bs-dropdown-link-active-color: #ffffff;
-  --bs-dropdown-link-active-bg: #336acc;
+  --bs-dropdown-link-active-bg: #101e37;
   --bs-dropdown-link-disabled-color: var(--bs-tertiary-color);
   --bs-dropdown-item-padding-x: 1rem;
   --bs-dropdown-item-padding-y: 0.25rem;
@@ -3672,7 +3672,7 @@ textarea.form-control-lg {
   --bs-dropdown-divider-bg: var(--bs-border-color-translucent);
   --bs-dropdown-link-hover-bg: rgba(255, 255, 255, 0.15);
   --bs-dropdown-link-active-color: #ffffff;
-  --bs-dropdown-link-active-bg: #336acc;
+  --bs-dropdown-link-active-bg: #101e37;
   --bs-dropdown-link-disabled-color: #7f7f7f;
   --bs-dropdown-header-color: #7f7f7f;
 }
@@ -3812,7 +3812,7 @@ textarea.form-control-lg {
 }
 .nav-link:focus-visible {
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(51, 106, 204, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(16, 30, 55, 0.25);
 }
 .nav-link.disabled, .nav-link:disabled {
   color: var(--bs-nav-link-disabled-color);
@@ -3855,7 +3855,7 @@ textarea.form-control-lg {
 .nav-pills {
   --bs-nav-pills-border-radius: var(--bs-border-radius);
   --bs-nav-pills-link-active-color: #ffffff;
-  --bs-nav-pills-link-active-bg: #336acc;
+  --bs-nav-pills-link-active-bg: #101e37;
 }
 .nav-pills .nav-link {
   border-radius: var(--bs-nav-pills-border-radius);
@@ -3940,7 +3940,7 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
 }
-.navbar > .container, .stepper-content .navbar > .stepper, .panel-horizontal-content .navbar > .panel-horizontal,
+.navbar > .container, .stepper-content .navbar > .stepper, .panel-horizontal-content .navbar > .panel-horizontal, .panel-horizontal-container .navbar > .panel-horizontal,
 .navbar > .container-fluid,
 .navbar > .container-sm,
 .navbar > .container-md,
@@ -4542,8 +4542,8 @@ textarea.form-control-lg {
   --bs-accordion-btn-icon-width: 1.25rem;
   --bs-accordion-btn-icon-transform: rotate(-180deg);
   --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
-  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23142a52' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
-  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(51, 106, 204, 0.25);
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23060c16' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(16, 30, 55, 0.25);
   --bs-accordion-body-padding-x: 1.25rem;
   --bs-accordion-body-padding-y: 1rem;
   --bs-accordion-active-color: var(--bs-primary-text-emphasis);
@@ -4660,8 +4660,8 @@ textarea.form-control-lg {
 }
 
 [data-bs-theme=dark] .accordion-button::after {
-  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2385a6e0'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2385a6e0'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23707887'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23707887'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
 .breadcrumb {
@@ -4710,10 +4710,10 @@ textarea.form-control-lg {
   --bs-pagination-hover-border-color: var(--bs-border-color);
   --bs-pagination-focus-color: var(--bs-link-hover-color);
   --bs-pagination-focus-bg: var(--bs-secondary-bg);
-  --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(51, 106, 204, 0.25);
+  --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(16, 30, 55, 0.25);
   --bs-pagination-active-color: #ffffff;
-  --bs-pagination-active-bg: #336acc;
-  --bs-pagination-active-border-color: #336acc;
+  --bs-pagination-active-bg: #101e37;
+  --bs-pagination-active-border-color: #101e37;
   --bs-pagination-disabled-color: var(--bs-secondary-color);
   --bs-pagination-disabled-bg: var(--bs-secondary-bg);
   --bs-pagination-disabled-border-color: var(--bs-border-color);
@@ -4932,7 +4932,7 @@ textarea.form-control-lg {
   --bs-progress-border-radius: var(--bs-border-radius);
   --bs-progress-box-shadow: var(--bs-box-shadow-inset);
   --bs-progress-bar-color: #ffffff;
-  --bs-progress-bar-bg: #336acc;
+  --bs-progress-bar-bg: #101e37;
   --bs-progress-bar-transition: width 0.6s ease;
   display: flex;
   height: var(--bs-progress-height);
@@ -4997,8 +4997,8 @@ textarea.form-control-lg {
   --bs-list-group-disabled-color: var(--bs-secondary-color);
   --bs-list-group-disabled-bg: var(--bs-body-bg);
   --bs-list-group-active-color: #ffffff;
-  --bs-list-group-active-bg: #336acc;
-  --bs-list-group-active-border-color: #336acc;
+  --bs-list-group-active-bg: #101e37;
+  --bs-list-group-active-border-color: #101e37;
   display: flex;
   flex-direction: column;
   padding-left: 0;
@@ -5342,7 +5342,7 @@ textarea.form-control-lg {
   --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
   --bs-btn-close-opacity: 0.5;
   --bs-btn-close-hover-opacity: 0.75;
-  --bs-btn-close-focus-shadow: 0 0 0 0.25rem rgba(51, 106, 204, 0.25);
+  --bs-btn-close-focus-shadow: 0 0 0 0.25rem rgba(16, 30, 55, 0.25);
   --bs-btn-close-focus-opacity: 1;
   --bs-btn-close-disabled-opacity: 0.25;
   --bs-btn-close-white-filter: invert(1) grayscale(100%) brightness(200%);
@@ -5754,7 +5754,7 @@ textarea.form-control-lg {
   z-index: var(--bs-tooltip-zindex);
   display: block;
   margin: var(--bs-tooltip-margin);
-  font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Archivo", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5864,7 +5864,7 @@ textarea.form-control-lg {
   z-index: var(--bs-popover-zindex);
   display: block;
   max-width: var(--bs-popover-max-width);
-  font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Archivo", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6866,8 +6866,8 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(var(--bs-primary-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-primary:hover, .link-primary:focus {
-  color: RGBA(41, 85, 163, var(--bs-link-opacity, 1)) !important;
-  text-decoration-color: RGBA(41, 85, 163, var(--bs-link-underline-opacity, 1)) !important;
+  color: RGBA(13, 24, 44, var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(13, 24, 44, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-secondary {
@@ -6875,8 +6875,8 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(var(--bs-secondary-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-secondary:hover, .link-secondary:focus {
-  color: RGBA(13, 24, 44, var(--bs-link-opacity, 1)) !important;
-  text-decoration-color: RGBA(13, 24, 44, var(--bs-link-underline-opacity, 1)) !important;
+  color: RGBA(41, 85, 163, var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(41, 85, 163, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-success {
@@ -11959,6 +11959,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* 1.11.1 */
 .max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .card-items-2, .max-items-3, .card-items-3, .max-items-4 {
   row-gap: 2rem;
 }
@@ -11978,7 +11979,8 @@ textarea.form-control-lg {
   .container-sm,
   .container,
   .stepper-content .stepper,
-  .panel-horizontal-content .panel-horizontal {
+  .panel-horizontal-content .panel-horizontal,
+  .panel-horizontal-container .panel-horizontal {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
@@ -12026,9 +12028,89 @@ textarea.form-control-lg {
   }
 }
 
+.border-radius-xs.border-radius-xs {
+  border-radius: 1px;
+}
+
+.border-radius-sm.border-radius-sm {
+  border-radius: 2px;
+}
+
+.border-radius-md.border-radius-md {
+  border-radius: 4px;
+}
+
+.border-radius-lg.border-radius-lg {
+  border-radius: 6px;
+}
+
+.border-radius-xl.border-radius-xl {
+  border-radius: 8px;
+}
+
+.border-radius-2xl.border-radius-2xl {
+  border-radius: 12px;
+}
+
+.border-radius-3xl.border-radius-3xl {
+  border-radius: 16px;
+}
+
+.border-radius-4xl.border-radius-4xl {
+  border-radius: 20px;
+}
+
+.border-radius-5xl.border-radius-5xl {
+  border-radius: 24px;
+}
+
+.border-radius-6xl.border-radius-6xl {
+  border-radius: 32px;
+}
+
+.border-radius-7xl.border-radius-7xl {
+  border-radius: 64px;
+}
+
+.border-radius-8xl.border-radius-8xl {
+  border-radius: 128px;
+}
+
+.border-radius-pill.border-radius-pill {
+  border-radius: 9999px;
+}
+
+div.container.bordes .max-items-4, .stepper-content div.bordes.stepper .max-items-4, .panel-horizontal-content div.bordes.panel-horizontal .max-items-4, .panel-horizontal-container div.bordes.panel-horizontal .max-items-4 {
+  gap: 15px;
+}
+div.container.bordes .max-items-4 .col, .stepper-content div.bordes.stepper .max-items-4 .col, .panel-horizontal-content div.bordes.panel-horizontal .max-items-4 .col, .panel-horizontal-container div.bordes.panel-horizontal .max-items-4 .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e0e2e7;
+  width: 140px;
+  height: 114px;
+  padding: 16px;
+  border-radius: 12px;
+}
+div.container.bordes .max-items-4 .col .box-borders, .stepper-content div.bordes.stepper .max-items-4 .col .box-borders, .panel-horizontal-content div.bordes.panel-horizontal .max-items-4 .col .box-borders, .panel-horizontal-container div.bordes.panel-horizontal .max-items-4 .col .box-borders {
+  width: 80px;
+  height: 36px;
+  border: 1.5px solid #336acc;
+}
+div.container.bordes .max-items-4 .col p, .stepper-content div.bordes.stepper .max-items-4 .col p, .panel-horizontal-content div.bordes.panel-horizontal .max-items-4 .col p, .panel-horizontal-container div.bordes.panel-horizontal .max-items-4 .col p {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+div.container.bordes .max-items-4 .col span, .stepper-content div.bordes.stepper .max-items-4 .col span, .panel-horizontal-content div.bordes.panel-horizontal .max-items-4 .col span, .panel-horizontal-container div.bordes.panel-horizontal .max-items-4 .col span {
+  color: #707580;
+  font-size: 11px;
+}
+
 .h1,
 h1 {
-  font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Archivo", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 2.5rem;
   line-height: 3rem;
   font-weight: 700;
@@ -12036,7 +12118,7 @@ h1 {
 
 .h2,
 h2 {
-  font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Archivo", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 2.25rem;
   line-height: 2.75rem;
   font-weight: 600;
@@ -12044,36 +12126,36 @@ h2 {
 
 .h3,
 h3 {
-  font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Archivo", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 2rem;
   line-height: 2.75rem;
   font-weight: 600;
 }
 
 .h4, .stepper-content .stepper .step-title, .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .h3,
-.list-steps.list-steps-lg .list-steps-item .list-steps-item-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title,
+.list-steps.list-steps-lg .list-steps-item .list-steps-item-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-container .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .panel-horizontal-container .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-container .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .panel-horizontal-container .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title,
 .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body-dark .panel-title,
 .panel-vertical .panel-body-dark .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title, .group-access .card-access .card-access-body .card-access-title,
 h4 {
-  font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Archivo", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.75rem;
   line-height: 2.25rem;
   font-weight: 600;
 }
 
-.h5, .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-vertical .panel-body .panel-title,
+.h5, .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-container .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-container .panel-horizontal .panel-body .panel-title.h2, .panel-vertical .panel-body .panel-title,
 .panel-vertical .panel-body-dark .panel-title,
 h5 {
-  font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Archivo", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.5rem;
   line-height: 2rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .h6, .list-steps-item h3, .list-steps-item .h3,
 .list-steps-item .list-steps-item-title, .list-informative-subtitle, .list-link .list-link-title,
 h6 {
-  font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Archivo", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 600;
@@ -12099,12 +12181,12 @@ h6 {
 }
 .headline-lg, .card .card-title, .accordion-item .accordion-button .collapse-title, .accordion-item .accordion-button, .block .block-body .block-title, .list-steps-item::before, .navbar.o-header .header-container .navbar-collapse .navbar-content-extended .navbar-sections-title, .navbar.o-header .header-container .navbar-collapse .navbar-user-mobile .navbar-user-mobile-title, .navbar.o-header .header-container .navbar-collapse .navbar-content .navbar-sections .navbar-sections-title, .map .map-body .map-title, .group-access .card-access .card-access-body h4, .group-access .card-access .card-access-body .h4, .group-access .card-access .card-access-body .stepper-content .stepper .step-title, .stepper-content .stepper .group-access .card-access .card-access-body .step-title, .group-access .card-access .card-access-body .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body h3, .group-access .card-access .card-access-body .list-steps.list-steps-lg .list-steps-item .h3, .list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body .h3,
 .group-access .card-access .card-access-body .list-steps.list-steps-lg .list-steps-item .list-steps-item-title,
-.list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body .list-steps-item-title, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body h5, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .h5, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title,
+.list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body .list-steps-item-title, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body h5, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .h5, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-container .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .panel-horizontal-container .panel-horizontal .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-container .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .panel-horizontal-container .panel-horizontal .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title,
 .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body-dark .panel-title,
-.panel-vertical .panel-body-dark .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-title,
+.panel-vertical .panel-body-dark .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-horizontal-container .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body h2.panel-title, .panel-horizontal-container .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-horizontal-container .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-title.h2, .panel-horizontal-container .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-title,
 .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-vertical .panel-body-dark .panel-title,
 .panel-vertical .panel-body-dark .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-title, .group-access .card-access .card-access-body .card-access-title {
-  font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Archivo", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.25rem;
   line-height: 1.5rem;
   font-weight: 700;
@@ -12112,35 +12194,35 @@ h6 {
 
 .headline-md, .accordion-item .accordion-body .accordion-form .form-radio .form-radio-label .label-content .label-title, .list-steps.list-steps-sm .list-steps-item h3, .list-steps.list-steps-sm .list-steps-item .h3,
 .list-steps.list-steps-sm .list-steps-item .list-steps-item-title, .navbar.o-header .header-container .navbar-collapse .navbar-content-extended .nav-sections .dropdown .dropdown-menu, .navbar.o-header .header-container .navbar-collapse .navbar-content .navbar-sections .nav-sections .dropdown .dropdown-menu, .navbar.o-header .header-container .navbar-collapse .navbar-content .navbar-user .dropdown .dropdown-menu, .pagination .page-item .page-link, .dropdown .btn-dropdown, input[type=file]::-webkit-file-upload-button, .form-label, .group-access .card-access .container-access .access-option .title-option, .btn, nav .nav-pills .nav-item .nav-link {
-  font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Archivo", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.125rem;
   line-height: 1.5rem;
   font-weight: 600;
 }
 
 .headline-sm, .list-steps.list-steps-sm .list-steps-item::before, .table thead tr th .th-title, .table thead tr th, nav .nav-pills .nav-item .nav-link-sm {
-  font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Archivo", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   line-height: 1.25rem;
   font-weight: 600;
 }
 
 .text-xl {
-  font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Archivo", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 400;
 }
 
-.text-lg, .badge.badge-lg {
-  font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+.text-lg {
+  font-family: "Archivo", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 400;
 }
 
 .text-md, .stepper-content .stepper .steps .steps-detail, .stepper-content .stepper .step-subtitle, .card .card-text, .accordion-item .accordion-button .collapse-subtitle, input[type=file], a.list-group-item .access-title, p {
-  font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Archivo", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 400;
@@ -12149,14 +12231,14 @@ h6 {
 .text-sm, .stepper-content .stepper .step-volanta, .card .card-headline, .accordion-item .accordion-body .accordion-form .form-radio .form-radio-label .label-content .label-top, .accordion-item .accordion-body .accordion-form .form-radio .form-radio-label .label-content .label-subtitle, .accordion-item .accordion-button .collapse-label, .table thead tr th .th-subtitle, .badge.badge-sm, .valid-feedback p,
 .invalid-feedback p, .form-label-description, .form-label-number, .badge-forms, a.list-group-item .access-content .access-text, small,
 .small {
-  font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Archivo", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 400;
 }
 
 .text-xs, .main-footer .footer-license-text {
-  font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Archivo", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.75rem;
   line-height: 1rem;
   font-weight: 400;
@@ -12220,11 +12302,11 @@ blockquote .author {
 }
 
 .bg-primary {
-  background-color: #336acc !important;
+  background-color: #101e37 !important;
 }
 
 .bg-secondary {
-  background-color: #101e37 !important;
+  background-color: #336acc !important;
 }
 
 .bg-success {
@@ -12713,7 +12795,7 @@ nav .nav-pills {
 nav .nav-pills .nav-item .nav-link {
   color: #101e37;
   font-weight: 400;
-  border-radius: 0.5rem;
+  border-radius: 6px;
   text-decoration: none;
   background-color: #ffffff;
   outline: 0.125rem solid transparent;
@@ -12850,7 +12932,7 @@ nav .nav-pills .nav-item .nav-link .nav-icon .o-icon {
 nav .nav-pills.flex-column, nav .nav-pills.list-steps {
   margin-top: 0.188rem;
   background-color: #ffffff;
-  border-radius: 0.5rem;
+  border-radius: 6px;
 }
 nav .nav-pills.flex-column:first-child, nav .nav-pills.list-steps:first-child {
   margin-top: 0;
@@ -12930,7 +13012,7 @@ nav .nav-pills.flex-column .nav .nav .nav .nav-link, nav .nav-pills.list-steps .
   background-color: transparent;
 }
 .tabs-box .nav.tabs .nav-item .nav-link.active:focus-visible, .tabs-box .nav.tabs .nav-item .nav-link:active:focus-visible {
-  border-radius: 0.5rem;
+  border-radius: 6px;
   box-shadow: inset 0 0 0 0.25rem #218274;
   background-color: transparent;
 }
@@ -12951,7 +13033,7 @@ nav .nav-pills.flex-column .nav .nav .nav .nav-link, nav .nav-pills.list-steps .
   border: none;
 }
 .tabs-box .nav.tabs.nav-box .nav-item .nav-link:focus, .tabs-box .nav.tabs.nav-box-bg .nav-item .nav-link:focus {
-  border-radius: 0.5rem;
+  border-radius: 6px;
 }
 .tabs-box .nav.tabs.nav-box .nav-item .nav-link.active, .tabs-box .nav.tabs.nav-box-bg .nav-item .nav-link.active, .tabs-box .nav.tabs.nav-box .nav-item .nav-link:active, .tabs-box .nav.tabs.nav-box-bg .nav-item .nav-link:active {
   background-color: #f3f6f9;
@@ -12998,7 +13080,7 @@ nav .nav-pills.flex-column .nav .nav .nav .nav-link, nav .nav-pills.list-steps .
 .btn {
   font-weight: 700;
   padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
+  border-radius: 9999px;
   min-height: 2.5rem;
   display: inline-flex;
   align-items: center;
@@ -13028,7 +13110,7 @@ nav .nav-pills.flex-column .nav .nav .nav .nav-link, nav .nav-pills.list-steps .
   width: 1.75rem;
   max-width: 1.75rem;
   height: 1.75rem;
-  border-radius: 0.25rem;
+  border-radius: 9999px;
   border: none;
   outline: 0.125rem solid transparent;
 }
@@ -13043,7 +13125,7 @@ nav .nav-pills.flex-column .nav .nav .nav .nav-link, nav .nav-pills.list-steps .
 }
 .btn-xs:focus, .btn-xs.focus, .btn-xs:focus:not(:focus-visible) {
   box-shadow: 0 0 0 0.25rem #218274;
-  border-radius: 0.25rem;
+  border-radius: 9999px;
   text-decoration: none;
   outline: 0.25rem solid transparent;
 }
@@ -13053,7 +13135,7 @@ nav .nav-pills.flex-column .nav .nav .nav .nav-link, nav .nav-pills.list-steps .
   color: #ffffff;
   text-decoration: none;
   border: none;
-  outline: 0.125rem solid #336acc;
+  outline: 0.125rem solid #101e37;
   outline-offset: -0.125rem;
   transition: all ease-in-out 50ms;
 }
@@ -13061,7 +13143,7 @@ nav .nav-pills.flex-column .nav .nav .nav .nav-link, nav .nav-pills.list-steps .
 .btn-outline-primary:hover,
 .btn-outline-primary.hover {
   outline-color: transparent;
-  background-color: #2e569e;
+  background-color: #080f1c;
 }
 .btn-primary:visited,
 .btn-outline-primary:visited {
@@ -13076,13 +13158,13 @@ nav .nav-pills.flex-column .nav .nav .nav .nav-link, nav .nav-pills.list-steps .
   outline: 0.25rem solid transparent;
   box-shadow: 0 0 0 0.25rem #218274;
   text-decoration: none;
-  background-color: #2e569e;
+  background-color: #080f1c;
 }
 .btn-primary:not(:disabled, .disabled):active, .btn-primary:not(:disabled, .disabled).active,
 .btn-outline-primary:not(:disabled, .disabled):active,
 .btn-outline-primary:not(:disabled, .disabled).active {
   outline: 0.125rem solid transparent;
-  background-color: #2e569e;
+  background-color: #080f1c;
   box-shadow: none;
 }
 .btn-primary:not(:disabled, .disabled):active:focus, .btn-primary:not(:disabled, .disabled):active.focus, .btn-primary:not(:disabled, .disabled):active:focus:not(:focus-visible), .btn-primary:not(:disabled, .disabled).active:focus, .btn-primary:not(:disabled, .disabled).active.focus, .btn-primary:not(:disabled, .disabled).active:focus:not(:focus-visible),
@@ -13106,13 +13188,17 @@ nav .nav-pills.flex-column .nav .nav .nav .nav-link, nav .nav-pills.list-steps .
 }
 
 .btn-outline-primary {
-  color: #336acc;
+  color: #101e37;
 }
 .btn-outline-primary:visited {
-  color: #336acc;
+  color: #101e37;
 }
 .btn-outline-primary:hover, .btn-outline-primary.hover, .btn-outline-primary:focus, .btn-outline-primary.focus, .btn-outline-primary:focus:not(:focus-visible) {
   color: #ffffff;
+}
+
+.btn-primary {
+  background-color: #101e37;
 }
 
 .btn-secondary,
@@ -13120,7 +13206,7 @@ nav .nav-pills.flex-column .nav .nav .nav .nav-link, nav .nav-pills.list-steps .
   color: #ffffff;
   text-decoration: none;
   border: none;
-  outline: 0.125rem solid #101e37;
+  outline: 0.125rem solid #336acc;
   outline-offset: -0.125rem;
   transition: all ease-in-out 50ms;
 }
@@ -13128,7 +13214,7 @@ nav .nav-pills.flex-column .nav .nav .nav .nav-link, nav .nav-pills.list-steps .
 .btn-outline-secondary:hover,
 .btn-outline-secondary.hover {
   outline-color: transparent;
-  background-color: #080f1c;
+  background-color: #274986;
 }
 .btn-secondary:visited,
 .btn-outline-secondary:visited {
@@ -13143,13 +13229,13 @@ nav .nav-pills.flex-column .nav .nav .nav .nav-link, nav .nav-pills.list-steps .
   outline: 0.25rem solid transparent;
   box-shadow: 0 0 0 0.25rem #218274;
   text-decoration: none;
-  background-color: #080f1c;
+  background-color: #274986;
 }
 .btn-secondary:not(:disabled, .disabled):active, .btn-secondary:not(:disabled, .disabled).active,
 .btn-outline-secondary:not(:disabled, .disabled):active,
 .btn-outline-secondary:not(:disabled, .disabled).active {
   outline: 0.125rem solid transparent;
-  background-color: #080f1c;
+  background-color: #274986;
   box-shadow: none;
 }
 .btn-secondary:not(:disabled, .disabled):active:focus, .btn-secondary:not(:disabled, .disabled):active.focus, .btn-secondary:not(:disabled, .disabled):active:focus:not(:focus-visible), .btn-secondary:not(:disabled, .disabled).active:focus, .btn-secondary:not(:disabled, .disabled).active.focus, .btn-secondary:not(:disabled, .disabled).active:focus:not(:focus-visible),
@@ -13173,13 +13259,17 @@ nav .nav-pills.flex-column .nav .nav .nav .nav-link, nav .nav-pills.list-steps .
 }
 
 .btn-outline-secondary {
-  color: #101e37;
+  color: #336acc;
 }
 .btn-outline-secondary:visited {
-  color: #101e37;
+  color: #336acc;
 }
 .btn-outline-secondary:hover, .btn-outline-secondary.hover, .btn-outline-secondary:focus, .btn-outline-secondary.focus, .btn-outline-secondary:focus:not(:focus-visible) {
   color: #ffffff;
+}
+
+.btn-secondary {
+  background-color: #336acc;
 }
 
 .btn-success,
@@ -13249,12 +13339,16 @@ nav .nav-pills.flex-column .nav .nav .nav .nav-link, nav .nav-pills.list-steps .
   color: #ffffff;
 }
 
+.btn-success {
+  background-color: #26874a;
+}
+
 .btn-tertiary,
 .btn-outline-tertiary {
   color: #ffffff;
   text-decoration: none;
   border: none;
-  outline: 0.125rem solid #005e7a;
+  outline: 0.125rem solid #64d8c8;
   outline-offset: -0.125rem;
   transition: all ease-in-out 50ms;
 }
@@ -13262,7 +13356,7 @@ nav .nav-pills.flex-column .nav .nav .nav .nav-link, nav .nav-pills.list-steps .
 .btn-outline-tertiary:hover,
 .btn-outline-tertiary.hover {
   outline-color: transparent;
-  background-color: #004357;
+  background-color: #10413a;
 }
 .btn-tertiary:visited,
 .btn-outline-tertiary:visited {
@@ -13277,13 +13371,14 @@ nav .nav-pills.flex-column .nav .nav .nav .nav-link, nav .nav-pills.list-steps .
   outline: 0.25rem solid transparent;
   box-shadow: 0 0 0 0.25rem #218274;
   text-decoration: none;
-  background-color: #004357;
+  background-color: #10413a;
+  box-shadow: 0 0 0 0.25rem #1c345f;
 }
 .btn-tertiary:not(:disabled, .disabled):active, .btn-tertiary:not(:disabled, .disabled).active,
 .btn-outline-tertiary:not(:disabled, .disabled):active,
 .btn-outline-tertiary:not(:disabled, .disabled).active {
   outline: 0.125rem solid transparent;
-  background-color: #004357;
+  background-color: #10413a;
   box-shadow: none;
 }
 .btn-tertiary:not(:disabled, .disabled):active:focus, .btn-tertiary:not(:disabled, .disabled):active.focus, .btn-tertiary:not(:disabled, .disabled):active:focus:not(:focus-visible), .btn-tertiary:not(:disabled, .disabled).active:focus, .btn-tertiary:not(:disabled, .disabled).active.focus, .btn-tertiary:not(:disabled, .disabled).active:focus:not(:focus-visible),
@@ -13295,6 +13390,7 @@ nav .nav-pills.flex-column .nav .nav .nav .nav-link, nav .nav-pills.list-steps .
 .btn-outline-tertiary:not(:disabled, .disabled).active:focus:not(:focus-visible) {
   box-shadow: 0 0 0 0.25rem #218274;
   text-decoration: none;
+  box-shadow: 0 0 0 0.25rem #1c345f;
 }
 .btn-tertiary.disabled, .btn-tertiary:disabled,
 .btn-outline-tertiary.disabled,
@@ -13307,13 +13403,19 @@ nav .nav-pills.flex-column .nav .nav .nav .nav-link, nav .nav-pills.list-steps .
 }
 
 .btn-outline-tertiary {
-  color: #005e7a;
+  color: #64d8c8;
 }
 .btn-outline-tertiary:visited {
-  color: #005e7a;
+  color: #64d8c8;
+  color: #10413a;
 }
 .btn-outline-tertiary:hover, .btn-outline-tertiary.hover, .btn-outline-tertiary:focus, .btn-outline-tertiary.focus, .btn-outline-tertiary:focus:not(:focus-visible) {
   color: #ffffff;
+}
+
+.btn-tertiary {
+  background-color: #64d8c8;
+  color: #101e37;
 }
 
 .btn-info,
@@ -13378,6 +13480,10 @@ nav .nav-pills.flex-column .nav .nav .nav .nav-link, nav .nav-pills.list-steps .
 }
 .btn-outline-info:hover, .btn-outline-info.hover, .btn-outline-info:focus, .btn-outline-info.focus, .btn-outline-info:focus:not(:focus-visible) {
   color: #ffffff;
+}
+
+.btn-info {
+  background-color: #0086ad;
 }
 
 .btn-warning,
@@ -13471,6 +13577,10 @@ nav .nav-pills.flex-column .nav .nav .nav .nav-link, nav .nav-pills.list-steps .
   box-shadow: none;
 }
 
+.btn-warning {
+  background-color: #ff9500;
+}
+
 .btn-danger,
 .btn-outline-danger {
   color: #ffffff;
@@ -13538,6 +13648,10 @@ nav .nav-pills.flex-column .nav .nav .nav .nav-link, nav .nav-pills.list-steps .
 }
 .btn-outline-danger:hover, .btn-outline-danger.hover, .btn-outline-danger:focus, .btn-outline-danger.focus, .btn-outline-danger:focus:not(:focus-visible) {
   color: #ffffff;
+}
+
+.btn-danger {
+  background-color: #cc3333;
 }
 
 .btn-light,
@@ -13616,6 +13730,10 @@ nav .nav-pills.flex-column .nav .nav .nav .nav-link, nav .nav-pills.list-steps .
 .btn-outline-light:hover, .btn-outline-light.hover, .btn-outline-light:focus, .btn-outline-light.focus, .btn-outline-light:focus:not(:focus-visible) {
   color: #ffffff;
   color: #000000;
+}
+
+.btn-light {
+  background-color: #f3f6f9;
 }
 
 .btn-dark,
@@ -13707,6 +13825,10 @@ nav .nav-pills.flex-column .nav .nav .nav .nav-link, nav .nav-pills.list-steps .
   background-color: transparent;
   outline-color: transparent;
   box-shadow: none;
+}
+
+.btn-dark {
+  background-color: #002733;
 }
 
 .btn-link,
@@ -13801,8 +13923,20 @@ nav .nav-pills.flex-column .nav .nav .nav .nav-link, nav .nav-pills.list-steps .
   color: #101e37;
 }
 
+.btn-link {
+  background-color: #101e37;
+}
+
+.btn-outline-tertiary {
+  outline: 0.125rem solid #10413a;
+  color: #10413a;
+}
+
 a.btn {
   text-decoration: none;
+}
+a.btn:focus {
+  border-radius: 9999px;
 }
 
 .btn-block {
@@ -13835,7 +13969,7 @@ a:hover, a.hover {
 }
 a:focus, a.focus {
   color: #336acc;
-  border-radius: 0.5rem;
+  border-radius: 6px;
   box-shadow: 0 0 0 0.125rem #218274;
   outline: 0.125rem solid transparent;
 }
@@ -13917,7 +14051,7 @@ a.link-white {
   color: white;
 }
 a.link-white:focus {
-  border-radius: 0.5rem;
+  border-radius: 6px;
   box-shadow: 0 0 0 0.125rem white;
 }
 a.link-white:visited {
@@ -13929,11 +14063,11 @@ a.list-group-item {
   color: #101e37;
   border: none;
   outline: 0.125rem solid #e6ebf0;
-  border-radius: 0.5rem;
   padding: 1rem;
   display: flex;
   height: auto;
   background-color: #ffffff;
+  border-radius: 16px;
 }
 @media (min-width: 1200px) {
   a.list-group-item {
@@ -13968,11 +14102,11 @@ a.list-group-item:visited .access-text {
   color: #38485c;
 }
 a.list-group-item:first-child {
-  border-radius: 0.5rem;
+  border-radius: 16px;
 }
 a.list-group-item:last-child {
   margin-bottom: 0;
-  border-radius: 0.5rem;
+  border-radius: 16px;
 }
 a.list-group-item:hover, a.list-group-item.hover {
   outline: 0.125rem solid #274986;
@@ -14087,7 +14221,7 @@ a.list-group-item.item-sm {
   display: grid;
   width: 100%;
   outline: 0.125rem solid #e6ebf0;
-  border-radius: 0.5rem;
+  border-radius: 16px;
   padding-bottom: 0;
 }
 .group-access .card-access .clearfix {
@@ -14108,9 +14242,9 @@ a.list-group-item.item-sm {
 }
 .group-access .card-access .card-access-body h4, .group-access .card-access .card-access-body .h4, .group-access .card-access .card-access-body .stepper-content .stepper .step-title, .stepper-content .stepper .group-access .card-access .card-access-body .step-title, .group-access .card-access .card-access-body .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body h3, .group-access .card-access .card-access-body .list-steps.list-steps-lg .list-steps-item .h3, .list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body .h3,
 .group-access .card-access .card-access-body .list-steps.list-steps-lg .list-steps-item .list-steps-item-title,
-.list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body .list-steps-item-title, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body h5, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .h5, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title,
+.list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body .list-steps-item-title, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body h5, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .h5, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-container .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .panel-horizontal-container .panel-horizontal .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-container .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .panel-horizontal-container .panel-horizontal .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title,
 .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body-dark .panel-title,
-.panel-vertical .panel-body-dark .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-title,
+.panel-vertical .panel-body-dark .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-horizontal-container .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body h2.panel-title, .panel-horizontal-container .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-horizontal-container .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-title.h2, .panel-horizontal-container .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-title,
 .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-vertical .panel-body-dark .panel-title,
 .panel-vertical .panel-body-dark .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-title, .group-access .card-access .card-access-body .card-access-title {
   font-weight: 700;
@@ -14142,7 +14276,7 @@ a.list-group-item.item-sm {
   background-color: #f3f6f9;
   flex: 0 0 4rem;
   height: 4rem;
-  border-radius: 0.5rem;
+  border-radius: 16px;
   text-align: center;
   line-height: 4rem;
   display: flex;
@@ -14153,14 +14287,14 @@ a.list-group-item.item-sm {
   color: #336acc;
   font-weight: 700;
   font-size: 2rem;
-  font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Archivo", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 .group-access .card-access .card-access-body.reverse {
   flex-direction: row-reverse;
   justify-content: flex-end;
 }
 .group-access .card-access .card-access-body + .list-group-item {
-  border-radius: 0 0 0.5rem 0.5rem;
+  border-radius: 16px;
 }
 .group-access .card-access .container-access .access-option {
   padding: 0;
@@ -14287,14 +14421,14 @@ input[type=file] {
 input[type=file]::-webkit-file-upload-button {
   color: white;
   padding: 12px 24px;
-  border-radius: 8px;
+  border-radius: 16px;
   background-color: #005e7a !important;
   height: 48px;
 }
 
 input[type=file]:disabled {
   border: 2px solid #9eaab8;
-  border-radius: 8px;
+  border-radius: 9999px;
   background-color: #e6ebf0;
   color: #5c6a7a;
   display: flex;
@@ -14318,7 +14452,7 @@ input[type=file]:disabled::-webkit-file-upload-button {
   font-size: 1rem;
   font-weight: 400;
   border: none;
-  border-radius: 0.5rem;
+  border-radius: 9999px;
   outline: 0.125rem solid #101e37;
   outline-offset: 0;
   box-sizing: border-box;
@@ -14471,7 +14605,7 @@ input[type=date]:disabled::before {
   align-items: center;
   display: flex;
   border: none;
-  border-radius: 0.5rem;
+  border-radius: 6px;
   outline: 0.125rem solid transparent;
 }
 .search-container .button-search:focus {
@@ -14487,7 +14621,7 @@ input[type=date]:disabled::before {
 }
 .search-container .reset:focus, .search-container .reset:focus-visible {
   box-shadow: 0 0 0 0.25rem #218274;
-  border-radius: 0.5rem;
+  border-radius: 6px;
   outline: 0.25rem solid transparent;
 }
 .search-container .reset:focus::after, .search-container .reset:focus-visible::after {
@@ -14558,6 +14692,10 @@ input[type=search]::-moz-search-clear-button {
 .form-bg-light .form-control:not(:disabled),
 .form-bg-light .custom-select:not(:disabled) {
   background-color: #ffffff;
+}
+
+textarea.form-control {
+  border-radius: 16px;
 }
 
 .icon-box {
@@ -14963,6 +15101,7 @@ input[type=search]::-moz-search-clear-button {
 .modal .modal-content {
   border: none;
   padding: 10px;
+  border-radius: 16px;
   outline: 0.125rem solid transparent;
 }
 .modal .modal-content .modal-header {
@@ -15108,7 +15247,7 @@ input[type=search]::-moz-search-clear-button {
   border: none;
   box-shadow: none;
   outline: 0.125rem solid transparent;
-  border-radius: 0.5rem;
+  border-radius: 9999px;
   text-decoration: none;
   font-weight: 400;
   min-height: 40px;
@@ -15166,6 +15305,7 @@ input[type=search]::-moz-search-clear-button {
   outline: 0.25rem solid transparent;
   color: #ffffff;
   background: #274986;
+  border-radius: 9999px;
 }
 .dropdown .btn-dropdown.show .btn-dropdown-icon, .dropdown .btn-dropdown.show:focus .btn-dropdown-icon {
   transform: rotate(-180deg);
@@ -15223,7 +15363,7 @@ input[type=search]::-moz-search-clear-button {
 }
 .dropdown .dropdown-menu {
   border: 0;
-  border-radius: 0.5rem;
+  border-radius: 6px;
   padding: 0;
   margin-top: 0.5rem !important;
   margin-bottom: 0.5rem !important;
@@ -15248,7 +15388,7 @@ input[type=search]::-moz-search-clear-button {
   }
 }
 .dropdown .dropdown-menu .dropdown-item {
-  border-radius: 0.5rem;
+  border-radius: 6px;
   padding: 0.5rem 0.75rem;
   white-space: normal;
   text-decoration: none;
@@ -15421,7 +15561,7 @@ input[type=search]::-moz-search-clear-button {
   gap: 0.75rem;
   white-space: normal;
   font-size: 1rem;
-  font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Archivo", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   outline: none;
 }
 .dropdown .dropdown-menu .dropdown.sub-dropdown .btn-dropdown:hover {
@@ -15519,6 +15659,8 @@ input[type=search]::-moz-search-clear-button {
 }
 .badge span.material-symbols-rounded {
   font-size: 20px;
+  border-radius: 6px;
+  padding: 0.125rem 0.25rem;
 }
 
 .badge-s-default {
@@ -16367,7 +16509,7 @@ nav:has(ol.breadcrumb) .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
 }
 .map {
   outline: 0.125rem solid #e6ebf0;
-  border-radius: 0.5rem;
+  border-radius: 16px;
   background-color: #ffffff;
 }
 .map .map-body {
@@ -16397,7 +16539,7 @@ nav:has(ol.breadcrumb) .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
   aspect-ratio: 16/9;
   object-fit: cover;
   outline: none;
-  border-radius: 0.5rem;
+  border-radius: 6px;
 }
 @media (min-width: 768px) and (max-width: 1199.98px) {
   .map .map-body .map-iframe iframe,
@@ -16507,7 +16649,7 @@ nav:has(ol.breadcrumb) .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
 .form-radio .form-radio-label {
   padding: 0.5rem 0;
   padding-left: 2.5rem;
-  border-radius: 0.5rem;
+  border-radius: 6px;
   min-height: 2.5rem;
 }
 .form-radio.reverse .form-radio-input {
@@ -16632,7 +16774,7 @@ nav:has(ol.breadcrumb) .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
 .form-checkbox .form-checkbox-label {
   padding: 0.5rem 0;
   padding-left: 2.5rem;
-  border-radius: 0.5rem;
+  border-radius: 6px;
   min-height: 2.5rem;
 }
 .form-checkbox.reverse .form-checkbox-input {
@@ -16759,10 +16901,10 @@ span.form-label {
   content: unset;
 }
 .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-inner {
-  border-radius: 0.5rem;
+  border-radius: 6px;
 }
 .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-inner img {
-  border-radius: 0.5rem;
+  border-radius: 6px;
 }
 .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption {
   position: static;
@@ -16772,7 +16914,7 @@ span.form-label {
   padding-top: 0;
   padding-bottom: 0;
 }
-.modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title,
+.modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-container .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .panel-horizontal-container .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-container .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .panel-horizontal-container .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title,
 .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body-dark .panel-title,
 .panel-vertical .panel-body-dark .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title {
   font-weight: 700;
@@ -16821,7 +16963,7 @@ span.form-label {
 }
 .gallery-grid .gallery-grid-item > img {
   width: 100%;
-  border-radius: 0.5rem;
+  border-radius: 6px;
   aspect-ratio: 3/2;
   object-fit: cover;
   object-position: center;
@@ -16944,7 +17086,7 @@ span.form-label {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 0.5rem;
+  border-radius: 9999px;
   border: none;
   outline: 0.125rem solid #e6ebf0;
   height: 2.75rem;
@@ -17154,7 +17296,7 @@ span.form-label {
   font-size: 1.25rem;
   line-height: 1.5rem;
   font-weight: 600;
-  font-family: "Nunito", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Archivo", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin-bottom: 0;
   color: #101e37;
 }
@@ -17307,7 +17449,7 @@ span.form-label {
   box-shadow: inset 0 0 0 1px #004357;
 }
 .calendar.interactive .calendar-body .calendar-week td[class*=event-]::before {
-  color: #336acc;
+  color: #101e37;
   position: absolute;
   z-index: 1;
   height: 6px;
@@ -17375,14 +17517,14 @@ span.form-label {
 }
 .alert.alert-primary {
   border: none;
-  outline: 0.0625rem solid #336acc;
+  outline: 0.0625rem solid #101e37;
   outline-offset: -0.0625rem;
-  border-radius: 0.5rem;
+  border-radius: 16px;
   color: #101e37;
 }
 .alert.alert-primary::before {
   mask: no-repeat center;
-  background-color: #336acc;
+  background-color: #101e37;
 }
 .alert.alert-primary.system {
   outline: unset;
@@ -17393,14 +17535,14 @@ span.form-label {
 }
 .alert.alert-secondary {
   border: none;
-  outline: 0.0625rem solid #101e37;
+  outline: 0.0625rem solid #336acc;
   outline-offset: -0.0625rem;
-  border-radius: 0.5rem;
+  border-radius: 16px;
   color: #101e37;
 }
 .alert.alert-secondary::before {
   mask: no-repeat center;
-  background-color: #101e37;
+  background-color: #336acc;
 }
 .alert.alert-secondary.system {
   outline: unset;
@@ -17414,7 +17556,7 @@ span.form-label {
   border: none;
   outline: 0.0625rem solid #26874a;
   outline-offset: -0.0625rem;
-  border-radius: 0.5rem;
+  border-radius: 16px;
   color: #101e37;
 }
 .alert.alert-success::before {
@@ -17435,14 +17577,14 @@ span.form-label {
 }
 .alert.alert-tertiary {
   border: none;
-  outline: 0.0625rem solid #005e7a;
+  outline: 0.0625rem solid #64d8c8;
   outline-offset: -0.0625rem;
-  border-radius: 0.5rem;
+  border-radius: 16px;
   color: #101e37;
 }
 .alert.alert-tertiary::before {
   mask: no-repeat center;
-  background-color: #005e7a;
+  background-color: #64d8c8;
 }
 .alert.alert-tertiary.system {
   outline: unset;
@@ -17456,7 +17598,7 @@ span.form-label {
   border: none;
   outline: 0.0625rem solid #0086ad;
   outline-offset: -0.0625rem;
-  border-radius: 0.5rem;
+  border-radius: 16px;
   color: #101e37;
 }
 .alert.alert-info::before {
@@ -17465,7 +17607,7 @@ span.form-label {
 }
 .alert.alert-info.system {
   outline: unset;
-  background-color: #336acc;
+  background-color: #101e37;
   color: #ffffff;
 }
 .alert.alert-info.system::before {
@@ -17480,7 +17622,7 @@ span.form-label {
   border: none;
   outline: 0.0625rem solid #ff9500;
   outline-offset: -0.0625rem;
-  border-radius: 0.5rem;
+  border-radius: 16px;
   color: #101e37;
 }
 .alert.alert-warning::before {
@@ -17490,21 +17632,21 @@ span.form-label {
 .alert.alert-warning.system {
   outline: unset;
   background-color: #ff9500;
-  color: #101e37;
+  color: #336acc;
 }
 .alert.alert-warning.system::before {
-  background-color: #101e37;
+  background-color: #336acc;
 }
 .alert.alert-warning.system a,
 .alert.alert-warning.system ol {
-  color: #101e37 !important;
+  color: #336acc !important;
 }
 .alert.alert-danger {
   background-color: #fbefef;
   border: none;
   outline: 0.0625rem solid #cc3333;
   outline-offset: -0.0625rem;
-  border-radius: 0.5rem;
+  border-radius: 16px;
   color: #101e37;
 }
 .alert.alert-danger::before {
@@ -17527,7 +17669,7 @@ span.form-label {
   border: none;
   outline: 0.0625rem solid #f3f6f9;
   outline-offset: -0.0625rem;
-  border-radius: 0.5rem;
+  border-radius: 16px;
   color: #101e37;
 }
 .alert.alert-light::before {
@@ -17545,7 +17687,7 @@ span.form-label {
   border: none;
   outline: 0.0625rem solid #002733;
   outline-offset: -0.0625rem;
-  border-radius: 0.5rem;
+  border-radius: 16px;
   color: #101e37;
 }
 .alert.alert-dark::before {
@@ -17591,7 +17733,7 @@ span.form-label {
   background-size: cover;
   height: 1.5rem;
   width: 1.5rem;
-  border-radius: 0.25rem;
+  border-radius: 2px;
   margin: 1rem 1rem 0 0;
   padding: 0;
 }
@@ -17629,7 +17771,7 @@ span.form-label {
 
 .table {
   border: 1px solid #e6ebf0;
-  border-radius: 0.5rem;
+  border-radius: 16px;
   border-collapse: initial;
   border-spacing: initial;
   margin: 0;
@@ -17671,10 +17813,10 @@ span.form-label {
   min-width: 136px;
 }
 .table thead tr th:first-of-type {
-  border-top-left-radius: 0.5rem;
+  border-top-left-radius: 16px;
 }
 .table thead tr th:last-of-type {
-  border-top-right-radius: 0.5rem;
+  border-top-right-radius: 16px;
 }
 .table thead tr th .th-title {
   font-weight: 700;
@@ -17682,7 +17824,7 @@ span.form-label {
   margin: 0;
 }
 .table thead tr th .th-subtitle {
-  font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Archivo", "Open Sans", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 400;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -17705,16 +17847,16 @@ span.form-label {
   border-top: none;
 }
 .table tbody tr:last-of-type td:first-of-type {
-  border-bottom-left-radius: 0.5rem;
+  border-bottom-left-radius: 16px;
 }
 .table tbody tr:last-of-type td:last-of-type {
-  border-bottom-right-radius: 0.5rem;
+  border-bottom-right-radius: 16px;
 }
 .table tbody tr:last-of-type td {
   border: none;
 }
 .table.table-bordered {
-  border-radius: 0.5rem;
+  border-radius: 16px;
 }
 .table.table-bordered thead th {
   border: none;
@@ -17730,8 +17872,8 @@ span.form-label {
   cursor: pointer;
 }
 .table.table-striped tbody tr:nth-of-type(odd) td {
-  --bs-table-bg-type: white;
-  background-color: white !important;
+  --bs-table-bg-type: $white;
+  background-color: #ffffff !important;
 }
 .table.table-striped tbody tr:nth-of-type(even) td {
   --bs-table-bg-type: $slate-50;
@@ -17744,7 +17886,7 @@ span.form-label {
 .table-responsive-lg,
 .table-responsive-xl {
   border: 1px solid #e6ebf0;
-  border-radius: 0.5rem;
+  border-radius: 16px;
 }
 .table-responsive > .table-bordered,
 .table-responsive-sm > .table-bordered,
@@ -17766,21 +17908,34 @@ span.form-label {
   outline: none;
 }
 
+.table-title {
+  margin-bottom: 32px;
+}
+
 .main-footer {
   background-color: #002733;
   padding: 40px 0;
   outline: 0.25rem solid transparent;
+  border-radius: 64px 64px 0 0;
+  z-index: 2;
+  position: relative;
+}
+@media (max-width: 991.98px) {
+  .main-footer {
+    border-radius: 32px 32px 0 0;
+  }
 }
 @media (max-width: 575.98px) {
   .main-footer {
     padding: 2rem 0;
+    top: -25px;
   }
 }
 .main-footer h4, .main-footer .h4, .main-footer .stepper-content .stepper .step-title, .stepper-content .stepper .main-footer .step-title, .main-footer .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .main-footer h3, .main-footer .list-steps.list-steps-lg .list-steps-item .h3, .list-steps.list-steps-lg .list-steps-item .main-footer .h3,
 .main-footer .list-steps.list-steps-lg .list-steps-item .list-steps-item-title,
-.list-steps.list-steps-lg .list-steps-item .main-footer .list-steps-item-title, .main-footer .group-access .card-access .card-access-body .card-access-title, .group-access .card-access .card-access-body .main-footer .card-access-title, .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer h5, .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .h5, .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title,
+.list-steps.list-steps-lg .list-steps-item .main-footer .list-steps-item-title, .main-footer .group-access .card-access .card-access-body .card-access-title, .group-access .card-access .card-access-body .main-footer .card-access-title, .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer h5, .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .h5, .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-container .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .panel-horizontal-container .panel-horizontal .panel-body .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-container .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .panel-horizontal-container .panel-horizontal .panel-body .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title,
 .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body-dark .panel-title,
-.panel-vertical .panel-body-dark .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-title,
+.panel-vertical .panel-body-dark .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-horizontal-container .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer h2.panel-title, .panel-horizontal-container .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-horizontal-container .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-title.h2, .panel-horizontal-container .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-title,
 .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-vertical .panel-body-dark .panel-title,
 .panel-vertical .panel-body-dark .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-title,
 .main-footer h3,
@@ -17793,9 +17948,9 @@ span.form-label {
 @media (max-width: 575.98px) {
   .main-footer h4, .main-footer .h4, .main-footer .stepper-content .stepper .step-title, .stepper-content .stepper .main-footer .step-title, .main-footer .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .main-footer h3, .main-footer .list-steps.list-steps-lg .list-steps-item .h3, .list-steps.list-steps-lg .list-steps-item .main-footer .h3,
   .main-footer .list-steps.list-steps-lg .list-steps-item .list-steps-item-title,
-  .list-steps.list-steps-lg .list-steps-item .main-footer .list-steps-item-title, .main-footer .group-access .card-access .card-access-body .card-access-title, .group-access .card-access .card-access-body .main-footer .card-access-title, .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer h5, .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .h5, .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title,
+  .list-steps.list-steps-lg .list-steps-item .main-footer .list-steps-item-title, .main-footer .group-access .card-access .card-access-body .card-access-title, .group-access .card-access .card-access-body .main-footer .card-access-title, .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer h5, .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .h5, .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-container .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .panel-horizontal-container .panel-horizontal .panel-body .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption h2.panel-title, .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-container .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .panel-horizontal-container .panel-horizontal .panel-body .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title.h2, .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title,
   .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body-dark .panel-title,
-  .panel-vertical .panel-body-dark .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-title,
+  .panel-vertical .panel-body-dark .main-footer .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-lateral .panel-body h2.panel-title, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-lateral .panel-body .panel-title.h2, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-horizontal-content .panel-horizontal .panel-body h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-horizontal-container .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer h2.panel-title, .panel-horizontal-container .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer h2.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-horizontal-content .panel-horizontal .panel-body .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-horizontal-container .panel-horizontal .panel-body .panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-title.h2, .panel-horizontal-container .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-vertical .panel-body .panel-title, .panel-vertical .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-title,
   .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-vertical .panel-body-dark .panel-title,
   .panel-vertical .panel-body-dark .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .main-footer .panel-title,
   .main-footer h3,
@@ -17894,43 +18049,54 @@ span.form-label {
 }
 
 .footer-info {
-  background-color: #f3f6f9;
+  background-color: #adc3eb;
   padding: 1.5rem 0;
   word-break: break-word;
-  border-top: 0.25rem solid #ffcc00;
+  border-radius: 64px 64px 0 0;
+  min-height: 160px;
+  position: relative;
+  z-index: 1;
+  bottom: -60px;
 }
-.footer-info > .container, .stepper-content .footer-info > .stepper, .panel-horizontal-content .footer-info > .panel-horizontal {
+.footer-info > .container, .stepper-content .footer-info > .stepper, .panel-horizontal-content .footer-info > .panel-horizontal, .panel-horizontal-container .footer-info > .panel-horizontal {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
 }
-.footer-info > .container .footer-info-text, .stepper-content .footer-info > .stepper .footer-info-text, .panel-horizontal-content .footer-info > .panel-horizontal .footer-info-text {
+.footer-info > .container .footer-info-text, .stepper-content .footer-info > .stepper .footer-info-text, .panel-horizontal-content .footer-info > .panel-horizontal .footer-info-text, .panel-horizontal-container .footer-info > .panel-horizontal .footer-info-text {
   font-size: 1.25rem;
   line-height: 1.5rem;
   font-weight: 700;
   margin: 0;
 }
-.footer-info > .container .footer-info-actions, .stepper-content .footer-info > .stepper .footer-info-actions, .panel-horizontal-content .footer-info > .panel-horizontal .footer-info-actions {
+.footer-info > .container .footer-info-actions, .stepper-content .footer-info > .stepper .footer-info-actions, .panel-horizontal-content .footer-info > .panel-horizontal .footer-info-actions, .panel-horizontal-container .footer-info > .panel-horizontal .footer-info-actions {
   flex-basis: 50%;
   display: flex;
   flex-shrink: 0;
   align-items: center;
   gap: 1rem;
 }
+@media (max-width: 991.98px) {
+  .footer-info {
+    border-radius: 32px 32px 0 0;
+  }
+}
 @media (max-width: 575.98px) {
-  .footer-info .container, .footer-info .stepper-content .stepper, .stepper-content .footer-info .stepper, .footer-info .panel-horizontal-content .panel-horizontal, .panel-horizontal-content .footer-info .panel-horizontal {
+  .footer-info .container, .footer-info .stepper-content .stepper, .stepper-content .footer-info .stepper, .footer-info .panel-horizontal-content .panel-horizontal, .footer-info .panel-horizontal-container .panel-horizontal, .panel-horizontal-content .footer-info .panel-horizontal, .panel-horizontal-container .footer-info .panel-horizontal {
     flex-wrap: wrap;
     gap: 1rem;
   }
-  .footer-info .container .footer-info-text, .footer-info .stepper-content .stepper .footer-info-text, .stepper-content .footer-info .stepper .footer-info-text, .footer-info .panel-horizontal-content .panel-horizontal .footer-info-text, .panel-horizontal-content .footer-info .panel-horizontal .footer-info-text {
+  .footer-info .container .footer-info-text, .footer-info .stepper-content .stepper .footer-info-text, .stepper-content .footer-info .stepper .footer-info-text, .footer-info .panel-horizontal-content .panel-horizontal .footer-info-text, .footer-info .panel-horizontal-container .panel-horizontal .footer-info-text, .panel-horizontal-content .footer-info .panel-horizontal .footer-info-text, .panel-horizontal-container .footer-info .panel-horizontal .footer-info-text {
     font-weight: 700;
   }
-  .footer-info .container .footer-info-actions, .footer-info .stepper-content .stepper .footer-info-actions, .stepper-content .footer-info .stepper .footer-info-actions, .footer-info .panel-horizontal-content .panel-horizontal .footer-info-actions, .panel-horizontal-content .footer-info .panel-horizontal .footer-info-actions {
+  .footer-info .container .footer-info-actions, .footer-info .stepper-content .stepper .footer-info-actions, .stepper-content .footer-info .stepper .footer-info-actions, .footer-info .panel-horizontal-content .panel-horizontal .footer-info-actions, .footer-info .panel-horizontal-container .panel-horizontal .footer-info-actions, .panel-horizontal-content .footer-info .panel-horizontal .footer-info-actions, .panel-horizontal-container .footer-info .panel-horizontal .footer-info-actions {
     flex-basis: 100%;
     flex-shrink: 1;
     gap: 0.5rem;
     align-items: flex-start;
+    justify-content: center;
   }
 }
 
@@ -18658,7 +18824,7 @@ header.hero .content .search-container {
 }
 header.hero .content .search-container .search-wrapper {
   max-width: 650px;
-  border-radius: 0.5rem;
+  border-radius: 9999px;
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -19529,37 +19695,8 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
   padding-top: 1px;
 }
 
-.block {
-  outline: 0.125rem solid #e6ebf0;
-  border-radius: 0.5rem;
-  border: none;
-  background-color: #ffffff;
-}
-.block .block-body {
-  padding: 1.5rem;
-}
-@media (max-width: 767.98px) {
-  .block .block-body {
-    padding: 1rem;
-  }
-}
-.block .block-body .block-title {
-  margin-bottom: 0;
-}
-.block .block-body .block-text {
-  margin-bottom: 0;
-  margin-top: 0.25rem;
-}
-.block .block-body .btn {
-  margin-top: 1rem;
-}
-.block .block-body .btn.btn-block {
-  width: 100%;
-}
-.block .block-body .progress {
-  margin-top: 1rem;
-}
-
+/* Custom variables and mixins */
+/* Custom variables and mixins */
 .panel-vertical {
   display: flex;
   flex-direction: column;
@@ -19691,20 +19828,20 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
   }
 }
 
-.panel-horizontal-content {
+.panel-horizontal-content, .panel-horizontal-container {
   width: 100%;
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: #ffffff;
-  border-radius: 0.5rem !important;
+  border-radius: 0.5rem;
 }
 @media (max-width: 1199.98px) {
-  .panel-horizontal-content {
+  .panel-horizontal-content, .panel-horizontal-container {
     padding-top: 0;
     padding-bottom: 0;
   }
 }
-.panel-horizontal-content .panel-horizontal {
+.panel-horizontal-content .panel-horizontal, .panel-horizontal-container .panel-horizontal {
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -19714,43 +19851,45 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
   border-radius: 0;
   border: none;
 }
-.panel-horizontal-content .panel-horizontal .panel-img,
-.panel-horizontal-content .panel-horizontal video {
+.panel-horizontal-content .panel-horizontal .panel-img, .panel-horizontal-container .panel-horizontal .panel-img,
+.panel-horizontal-content .panel-horizontal video,
+.panel-horizontal-container .panel-horizontal video {
   width: 100%;
   object-fit: cover;
   object-position: center;
   aspect-ratio: 16/9;
   border-radius: 0.5rem;
 }
-.panel-horizontal-content .panel-horizontal .panel-body {
+.panel-horizontal-content .panel-horizontal .panel-body, .panel-horizontal-container .panel-horizontal .panel-body {
   padding: 0;
   width: 100%;
   max-width: 728px;
 }
-.panel-horizontal-content .panel-horizontal .panel-body .panel-title {
+.panel-horizontal-content .panel-horizontal .panel-body .panel-title, .panel-horizontal-container .panel-horizontal .panel-body .panel-title {
   margin-bottom: 8px;
 }
-.panel-horizontal-content .panel-horizontal .panel-body .panel-footer {
+.panel-horizontal-content .panel-horizontal .panel-body .panel-footer, .panel-horizontal-container .panel-horizontal .panel-body .panel-footer {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 24px;
 }
-.panel-horizontal-content .panel-horizontal .panel-body .panel-footer .list-group-item {
+.panel-horizontal-content .panel-horizontal .panel-body .panel-footer .list-group-item, .panel-horizontal-container .panel-horizontal .panel-body .panel-footer .list-group-item {
   width: 100%;
   max-width: 348px;
   display: flex;
   margin-bottom: 2px;
 }
-.panel-horizontal-content .panel-horizontal .panel-body .panel-footer .btn-block {
+.panel-horizontal-content .panel-horizontal .panel-body .panel-footer .btn-block, .panel-horizontal-container .panel-horizontal .panel-body .panel-footer .btn-block {
   width: 100%;
 }
-.panel-horizontal-content .panel-horizontal .panel-body .panel-footer a.btn,
-.panel-horizontal-content .panel-horizontal .panel-body .panel-footer a.download-link {
+.panel-horizontal-content .panel-horizontal .panel-body .panel-footer a.btn, .panel-horizontal-container .panel-horizontal .panel-body .panel-footer a.btn,
+.panel-horizontal-content .panel-horizontal .panel-body .panel-footer a.download-link,
+.panel-horizontal-container .panel-horizontal .panel-body .panel-footer a.download-link {
   display: flex;
 }
 @media (max-width: 1199.98px) {
-  .panel-horizontal-content .panel-horizontal {
+  .panel-horizontal-content .panel-horizontal, .panel-horizontal-container .panel-horizontal {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
@@ -19758,53 +19897,58 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
     margin: 0 auto;
     height: auto;
   }
-  .panel-horizontal-content .panel-horizontal .panel-img,
-  .panel-horizontal-content .panel-horizontal video {
+  .panel-horizontal-content .panel-horizontal .panel-img, .panel-horizontal-container .panel-horizontal .panel-img,
+  .panel-horizontal-content .panel-horizontal video,
+  .panel-horizontal-container .panel-horizontal video {
     max-width: 100%;
     height: 392px;
   }
-  .panel-horizontal-content .panel-horizontal .panel-body {
+  .panel-horizontal-content .panel-horizontal .panel-body, .panel-horizontal-container .panel-horizontal .panel-body {
     max-width: 100%;
   }
-  .panel-horizontal-content .panel-horizontal .panel-body .panel-footer {
+  .panel-horizontal-content .panel-horizontal .panel-body .panel-footer, .panel-horizontal-container .panel-horizontal .panel-body .panel-footer {
     flex-direction: row;
     margin-top: 1.25rem;
   }
-  .panel-horizontal-content .panel-horizontal .panel-body .panel-footer .download-link {
+  .panel-horizontal-content .panel-horizontal .panel-body .panel-footer .download-link, .panel-horizontal-container .panel-horizontal .panel-body .panel-footer .download-link {
     width: fit-content;
   }
 }
 @media (max-width: 767.98px) {
-  .panel-horizontal-content .panel-horizontal {
+  .panel-horizontal-content .panel-horizontal, .panel-horizontal-container .panel-horizontal {
     padding: 1.5rem 1rem;
     max-width: 540px;
   }
-  .panel-horizontal-content .panel-horizontal .panel-img,
-  .panel-horizontal-content .panel-horizontal video {
+  .panel-horizontal-content .panel-horizontal .panel-img, .panel-horizontal-container .panel-horizontal .panel-img,
+  .panel-horizontal-content .panel-horizontal video,
+  .panel-horizontal-container .panel-horizontal video {
     height: 296px;
   }
 }
-.panel-horizontal-content .panel-horizontal .panel-img {
+.panel-horizontal-content .panel-horizontal .panel-img, .panel-horizontal-container .panel-horizontal .panel-img {
   border-radius: 1.5rem;
 }
-.panel-horizontal-content .panel-img,
-.panel-horizontal-content video {
+.panel-horizontal-content .panel-img, .panel-horizontal-container .panel-img,
+.panel-horizontal-content video,
+.panel-horizontal-container video {
   width: 100%;
   max-width: 538px;
   height: 304px;
-  border-radius: 0.5rem;
+  border-radius: 6px;
   object-fit: cover;
   object-position: center;
   aspect-ratio: 16/9;
 }
-.panel-horizontal-content.bg-dark {
+.panel-horizontal-content.bg-dark, .bg-dark.panel-horizontal-container {
   background-color: #002733;
-  color: #fff;
+  color: #ffffff;
 }
-.panel-horizontal-content.bg-dark .panel-horizontal .panel-body h5.panel-title, .panel-horizontal-content.bg-dark .panel-horizontal .panel-body .panel-title.h5, .panel-horizontal-content.bg-dark .panel-horizontal .panel-vertical .panel-body .panel-title, .panel-vertical .panel-horizontal-content.bg-dark .panel-horizontal .panel-body .panel-title,
-.panel-horizontal-content.bg-dark .panel-horizontal .panel-body .panel-vertical .panel-body-dark .panel-title, .panel-horizontal-content.bg-dark .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content.bg-dark .panel-horizontal .panel-body .panel-title.h2,
-.panel-horizontal-content.bg-dark .panel-horizontal .panel-body .panel-text {
-  color: #fff;
+.panel-horizontal-content.bg-dark .panel-horizontal .panel-body h5.panel-title, .bg-dark.panel-horizontal-container .panel-horizontal .panel-body h5.panel-title, .panel-horizontal-content.bg-dark .panel-horizontal .panel-body .panel-title.h5, .bg-dark.panel-horizontal-container .panel-horizontal .panel-body .panel-title.h5, .panel-horizontal-content.bg-dark .panel-horizontal .panel-vertical .panel-body .panel-title, .bg-dark.panel-horizontal-container .panel-horizontal .panel-vertical .panel-body .panel-title, .panel-vertical .panel-horizontal-content.bg-dark .panel-horizontal .panel-body .panel-title, .panel-vertical .bg-dark.panel-horizontal-container .panel-horizontal .panel-body .panel-title,
+.panel-horizontal-content.bg-dark .panel-horizontal .panel-body .panel-vertical .panel-body-dark .panel-title,
+.bg-dark.panel-horizontal-container .panel-horizontal .panel-body .panel-vertical .panel-body-dark .panel-title, .panel-horizontal-content.bg-dark .panel-horizontal .panel-body h2.panel-title, .bg-dark.panel-horizontal-container .panel-horizontal .panel-body h2.panel-title, .panel-horizontal-content.bg-dark .panel-horizontal .panel-body .panel-title.h2, .bg-dark.panel-horizontal-container .panel-horizontal .panel-body .panel-title.h2,
+.panel-horizontal-content.bg-dark .panel-horizontal .panel-body .panel-text,
+.bg-dark.panel-horizontal-container .panel-horizontal .panel-body .panel-text {
+  color: #ffffff;
 }
 
 .panel-lateral {
@@ -19816,7 +19960,6 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
   border-radius: 0;
   border: none;
   padding: 2rem 1.5rem;
-  background-color: #f3f6f9;
   border-radius: 0.5rem;
 }
 .panel-lateral .panel-img,
@@ -19889,11 +20032,107 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
     height: 296px;
   }
 }
+.panel-lateral:not(.bg-light) {
+  outline: 0.125rem solid #e6ebf0;
+}
 @media (max-width: 1199.98px) {
   .panel-lateral {
     padding: 1.5rem 1rem;
   }
 }
+.panel-lateral .panel-body .accordion.plain .accordion-item {
+  outline: unset;
+}
+.panel-lateral .panel-body .accordion.plain .accordion-item button {
+  min-height: unset;
+  padding: 8px;
+}
+.panel-lateral .panel-body .accordion.plain .accordion-item button::after {
+  right: 5px;
+  background: transparent url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="%23ffffff"><path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z"/></svg>') no-repeat center center;
+}
+.panel-lateral .panel-body .accordion.plain .accordion-item button.collapsed {
+  background-color: transparent;
+}
+.panel-lateral .panel-body .accordion.plain .accordion-item button.collapsed::after {
+  background: transparent url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="24px" fill="%2338485C"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>') no-repeat center center;
+}
+.panel-lateral.bg-light .panel-body .accordion.plain button.collapsed {
+  background-color: #f3f6f9;
+}
+
+/* COMPONENTE DEPRECADO - BLOQUE DE TRAMITE */
+.block {
+  outline: 0.125rem solid #e6ebf0;
+  border-radius: 6px;
+  border: none;
+  background-color: #ffffff;
+}
+.block .block-body {
+  padding: 1.5rem;
+}
+@media (max-width: 767.98px) {
+  .block .block-body {
+    padding: 1rem;
+  }
+}
+.block .block-body .block-title {
+  margin-bottom: 0;
+}
+.block .block-body .block-text {
+  margin-bottom: 0;
+  margin-top: 0.25rem;
+}
+.block .block-body .btn {
+  margin-top: 1rem;
+}
+.block .block-body .btn.btn-block {
+  width: 100%;
+}
+.block .block-body .progress {
+  margin-top: 1rem;
+}
+
+/* COMPONENTE DEPRECADO - BLOQUE DE TRAMITE */
+.panel-horizontal-container {
+  padding: 64px;
+  max-height: 388px;
+  max-width: 1109px;
+  background-color: #101e37;
+  border-radius: 30px;
+}
+.panel-horizontal-container .panel-horizontal .panel-img {
+  width: 404px;
+  height: 228px;
+  object-fit: fill;
+}
+.panel-horizontal-container .panel-horizontal .panel-body {
+  color: white;
+}
+.panel-horizontal-container .panel-horizontal .panel-body p.panel-title {
+  font-size: 36px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+.panel-horizontal-container .panel-horizontal .panel-body p.panel-text {
+  margin-bottom: 0;
+}
+.panel-horizontal-container .panel-horizontal .panel-body .panel-footer {
+  margin-top: 20px;
+}
+.panel-horizontal-container .panel-horizontal .panel-body .panel-footer .btn {
+  border-radius: 30px;
+  padding: 12px 20px;
+  min-width: 193px;
+}
+.panel-horizontal-container .panel-horizontal .panel-body .panel-footer .btn.btn-primary {
+  background-color: #336acc;
+  border: none;
+}
+.panel-horizontal-container .panel-horizontal .panel-body .panel-footer .btn.btn-outline-light {
+  border-color: white;
+}
+
 .accordion .accordion-item:not(:last-of-type) {
   margin-bottom: 1rem;
 }
@@ -19905,10 +20144,10 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
   overflow: visible;
   border: none;
   outline: 0.125rem solid #e6ebf0;
-  border-radius: 0.5rem;
+  border-radius: 16px;
 }
 .accordion-item:first-of-type, .accordion-item:last-of-type {
-  border-radius: 0.5rem;
+  border-radius: 16px;
 }
 .accordion-item .accordion-button {
   outline: 0.125rem solid transparent;
@@ -19917,7 +20156,7 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
   text-align: left;
   padding: 1rem 4rem 1rem 1.5rem;
   transition: background-color 0.2s;
-  border-radius: 0.5rem 0.5rem 0 0;
+  border-radius: 16px 16px 0 0;
   position: relative;
   z-index: 1;
   color: #ffffff;
@@ -19969,11 +20208,11 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
 }
 .accordion-item .accordion-button:focus, .accordion-item .accordion-button.focus {
   box-shadow: 0 0 0 0.25rem #218274;
-  border-radius: 0.5rem;
+  border-radius: 16px;
   outline: 0.25rem solid transparent;
 }
 .accordion-item .accordion-button.collapsed {
-  border-radius: 0.5rem;
+  border-radius: 16px;
   background-color: #f3f6f9;
   color: #101e37;
   position: relative;
@@ -20067,6 +20306,8 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
   border: none;
   outline: 0.125rem solid #e6ebf0;
   width: 100%;
+  position: relative;
+  border-radius: 32px;
 }
 .card .card-body {
   padding: 1.5rem;
@@ -20112,12 +20353,12 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
   background-color: #f3f6f9;
   width: 4rem;
   height: 4rem;
-  border-radius: 0.5rem;
+  border-radius: 6px;
   text-align: center;
   line-height: 4rem;
 }
 .card .card-img, .card.card-horizontal .card-icon {
-  border-radius: 0.5rem 0.5rem 0 0;
+  border-radius: 32px 32px 0 0;
   aspect-ratio: 16/9;
   object-fit: cover;
   object-position: center;
@@ -20154,7 +20395,7 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
   aspect-ratio: 1/1;
   margin: 1rem;
   margin-right: 0;
-  border-radius: 0.5rem;
+  border-radius: 6px;
   object-fit: cover;
   object-position: center;
   flex-shrink: 0;
@@ -20179,9 +20420,9 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
 }
 .card .card-body .card-title .card-title-link::after {
   content: "";
-  border-radius: 0.5rem;
+  border-radius: 32px;
   position: absolute;
-  inset: 0;
+  inset: 0.5px;
 }
 .card .card-body .card-title .card-title-link:hover {
   color: #274986;
@@ -20196,7 +20437,7 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
   outline: none;
   text-decoration: underline;
   text-decoration-thickness: 2px;
-  color: #336acc;
+  color: #101e37;
 }
 .card .card-body .card-title .card-title-link:focus::after {
   box-shadow: 0 0 0 0.25rem #218274;
@@ -20250,99 +20491,123 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
 }
 
 .card-border-left-blue {
-  border-left: 8px solid #5c88d6;
+  border-left: 12px solid #5c88d6;
+  border-radius: 32px;
 }
 
 .card-border-left-sky {
-  border-left: 8px solid #33d1ff;
+  border-left: 12px solid #33d1ff;
+  border-radius: 32px;
 }
 
 .card-border-left-cyan {
-  border-left: 8px solid #8de2d6;
+  border-left: 12px solid #8de2d6;
+  border-radius: 32px;
 }
 
 .card-border-left-red {
-  border-left: 8px solid #d65c5c;
+  border-left: 12px solid #d65c5c;
+  border-radius: 32px;
 }
 
 .card-border-left-yellow {
-  border-left: 8px solid #ffd633;
+  border-left: 12px solid #ffd633;
+  border-radius: 32px;
 }
 
 .card-border-left-purple {
-  border-left: 8px solid #c433ff;
+  border-left: 12px solid #c433ff;
+  border-radius: 32px;
 }
 
 .card-border-right-blue {
-  border-right: 8px solid #5c88d6;
+  border-right: 12px solid #5c88d6;
+  border-radius: 32px;
 }
 
 .card-border-right-sky {
-  border-right: 8px solid #33d1ff;
+  border-right: 12px solid #33d1ff;
+  border-radius: 32px;
 }
 
 .card-border-right-cyan {
-  border-right: 8px solid #8de2d6;
+  border-right: 12px solid #8de2d6;
+  border-radius: 32px;
 }
 
 .card-border-right-red {
-  border-right: 8px solid #d65c5c;
+  border-right: 12px solid #d65c5c;
+  border-radius: 32px;
 }
 
 .card-border-right-yellow {
-  border-right: 8px solid #ffd633;
+  border-right: 12px solid #ffd633;
+  border-radius: 32px;
 }
 
 .card-border-right-purple {
-  border-right: 8px solid #c433ff;
+  border-right: 12px solid #c433ff;
+  border-radius: 32px;
 }
 
 .card-border-top-blue {
-  border-top: 8px solid #5c88d6;
+  border-top: 12px solid #5c88d6;
+  border-radius: 32px;
 }
 
 .card-border-top-sky {
-  border-top: 8px solid #33d1ff;
+  border-top: 12px solid #33d1ff;
+  border-radius: 32px;
 }
 
 .card-border-top-cyan {
-  border-top: 8px solid #8de2d6;
+  border-top: 12px solid #8de2d6;
+  border-radius: 32px;
 }
 
 .card-border-top-red {
-  border-top: 8px solid #d65c5c;
+  border-top: 12px solid #d65c5c;
+  border-radius: 32px;
 }
 
 .card-border-top-yellow {
-  border-top: 8px solid #ffd633;
+  border-top: 12px solid #ffd633;
+  border-radius: 32px;
 }
 
 .card-border-top-purple {
-  border-top: 8px solid #c433ff;
+  border-top: 12px solid #c433ff;
+  border-radius: 32px;
 }
 
 .card-border-bottom-blue {
-  border-bottom: 8px solid #5c88d6;
+  border-bottom: 12px solid #5c88d6;
+  border-radius: 32px;
 }
 
 .card-border-bottom-sky {
-  border-bottom: 8px solid #33d1ff;
+  border-bottom: 12px solid #33d1ff;
+  border-radius: 32px;
 }
 
 .card-border-bottom-cyan {
-  border-bottom: 8px solid #8de2d6;
+  border-bottom: 12px solid #8de2d6;
+  border-radius: 32px;
 }
 
 .card-border-bottom-red {
-  border-bottom: 8px solid #d65c5c;
+  border-bottom: 12px solid #d65c5c;
+  border-radius: 32px;
 }
 
 .card-border-bottom-yellow {
-  border-bottom: 8px solid #ffd633;
+  border-bottom: 12px solid #ffd633;
+  border-radius: 32px;
 }
 
 .card-border-bottom-purple {
-  border-bottom: 8px solid #c433ff;
+  border-bottom: 12px solid #c433ff;
+  border-radius: 32px;
 }
 
 .stepper-content {
@@ -20407,7 +20672,7 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
   border: none;
   display: flex;
   overflow: auto;
-  border-radius: 0.5rem;
+  border-radius: 6px;
   scrollbar-color: auto;
 }
 @media (min-width: 768px) {
@@ -20431,24 +20696,41 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
 .responsive-scroll:has(> .table) {
   padding: 0;
   border: 1px solid #e6ebf0;
+  border-radius: 16px 16px 8px 8px;
 }
 .responsive-scroll:has(> .table) .table {
   border: none;
 }
+.responsive-scroll:has(> .table) .table thead tr th:first-of-type {
+  border-top-left-radius: unset;
+}
+.responsive-scroll:has(> .table) .table thead tr th:last-of-type {
+  border-top-right-radius: unset;
+}
+.responsive-scroll:has(> .table) .table tbody tr td td:first-of-type {
+  border-bottom-left-radius: unset;
+}
+.responsive-scroll:has(> .table) .table tbody tr td td:last-of-type {
+  border-bottom-right-radius: unset;
+}
 .responsive-scroll::-webkit-scrollbar {
-  width: 16px;
-  height: 16px;
-  background-color: #f3f6f9;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
   border-radius: 100px;
   outline: 0.125rem solid transparent;
 }
 .responsive-scroll::-webkit-scrollbar-track {
   background-color: #f3f6f9;
   border-radius: 100px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
 }
 .responsive-scroll::-webkit-scrollbar-thumb {
   background-color: #9eaab8;
-  border-radius: 20px !important;
+  border-radius: 100px !important;
+  border: 2px solid transparent;
+  background-clip: padding-box;
 }
 .responsive-scroll:focus-visible {
   box-shadow: 0 0 0 0.25rem #218274;
@@ -20498,7 +20780,7 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 0.5rem;
+  border-radius: 9999px;
   border: none;
   outline: 0.125rem solid #e6ebf0;
   background-color: #ffffff;
@@ -20585,18 +20867,18 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
 .carousel:has(.title > a) {
   padding-bottom: 64px;
 }
-.carousel .panel-horizontal-content {
+.carousel .panel-horizontal-content, .carousel .panel-horizontal-container {
   background-color: transparent;
 }
-.carousel .panel-horizontal-content .panel-horizontal {
+.carousel .panel-horizontal-content .panel-horizontal, .carousel .panel-horizontal-container .panel-horizontal {
   padding: 0;
   max-width: 100%;
   row-gap: 24px;
 }
-.carousel .panel-horizontal-content .panel-horizontal .panel-footer a {
+.carousel .panel-horizontal-content .panel-horizontal .panel-footer a, .carousel .panel-horizontal-container .panel-horizontal .panel-footer a {
   width: 100%;
 }
-.carousel .panel-horizontal-content .panel-horizontal img {
+.carousel .panel-horizontal-content .panel-horizontal img, .carousel .panel-horizontal-container .panel-horizontal img {
   max-width: 100%;
 }
 .carousel.dark {
@@ -20644,7 +20926,7 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
   .carousel .title a {
     left: 32px;
   }
-  .carousel .panel-horizontal-content .panel-horizontal .panel-footer a {
+  .carousel .panel-horizontal-content .panel-horizontal .panel-footer a, .carousel .panel-horizontal-container .panel-horizontal .panel-footer a {
     width: auto;
   }
 }
@@ -20722,14 +21004,14 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
   .carousel .title {
     padding-left: calc((100% - 720px) / 2 + 0.75rem);
   }
-  .carousel .panel-horizontal-content {
+  .carousel .panel-horizontal-content, .carousel .panel-horizontal-container {
     padding: 0;
   }
-  .carousel .panel-horizontal-content .panel-horizontal {
+  .carousel .panel-horizontal-content .panel-horizontal, .carousel .panel-horizontal-container .panel-horizontal {
     flex-direction: row-reverse;
     align-items: center;
   }
-  .carousel .panel-horizontal-content .panel-horizontal img {
+  .carousel .panel-horizontal-content .panel-horizontal img, .carousel .panel-horizontal-container .panel-horizontal img {
     max-width: 50%;
   }
 }

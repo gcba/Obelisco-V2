@@ -19,17 +19,67 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
-      title: 'Version 1.12.0',
+      title: 'Versión 1.12.0',
       content: (
         <ul className="docs-list">
+          <p className="text-body-secondary d-flex text-sm align-items-center gap-1">
+            <span className="material-symbols-rounded" aria-hidden="true" style={{ color: '#0086AD' }}>
+              info
+            </span>
+            <span>
+              Esta versión implican cambios de estilos que impactan al sistema en general y todos sus componentes. Se
+              recomienda verificar el buen uso de clases para su correcta visualización.
+            </span>
+          </p>
           <p>La Versión 1.12.0 contiene lo siguiente: </p>
           <li>
-            Se crean nuevas variantes del componente Etiqueta. Se separan por etiquetas primarias y secundarias. Además
-            existen nuevas variantes cómo seleccionables y con cierre. En{' '}
-            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-15">
+            La tipografía principal pasa a ser Archivo. La nueva importación se encuentra en el siguiente{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/getting-started/imports">link</a>.
+          </li>
+          <li>
+            Se agregó en Guías de estilos, una sección de{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/components/borders">Bordes</a>. Allí se indican los nuevos
+            valores y clases para <code>{'border-radius'}</code>.
+          </li>
+          <li>
+            Se invierte el color <code> primario </code> por <code> secundario</code>.
+          </li>
+          <li>
+            El color terciario pasa a ser <code>{'cyan-500'}</code> (<code>{'#64D8C8'}</code> ).
+            <br />
+            El color terciario <strong>outline</strong> , pasa a ser <code>{'cyan-900'}</code> (<code>{'#10413a'}</code>{' '}
+            ).
+          </li>
+          <li>
+            El componente Pie de página (Footer) junto con el componente Indicador, se visualizan con nuevos estilos de
+            radio y color.
+          </li>
+        </ul>
+      ),
+    },
+    {
+      title: 'Versión 1.11.1',
+      content: (
+        <ul className="docs-list">
+          <p>La Versión 1.11.1 contiene lo siguiente: </p>
+          <li>
+            Se crea el componente{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/components/highlighted-lateral" target="_blank">
+              Destacado lateral
+            </a>
+            . En{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-14">
               Cambios en componentes
             </a>{' '}
-            está la documentación de las nuevas clases.
+            está la documentación de la nueva estructura.
+          </li>
+          <li>Se elimina el componente Bloque de trámite, se lo reemplaza por el componente Destacado lateral.</li>
+          <li>
+            En el componente Mapa se modificó el botón de <code>primario</code> a <code>primario outline</code>
+          </li>
+          <li>Se agrega la posibilidad de tener título y bajada en Tablas.</li>
+          <li>
+            La etiqueta <code>{' <h5>'}</code> pasa a tener peso <code>{'semibold'}</code>.
           </li>
         </ul>
       ),

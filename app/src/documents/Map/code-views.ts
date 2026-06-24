@@ -27,12 +27,15 @@ export const MAP_LATERAL = `<div class="map">
         comollego/?lat=-34.640340&amp;lng=-58.
         407032&amp;zl=15&amp;modo=transporte&a
         mp;dir=Uspallata+3160"
-        class="btn btn-primary btn-lg btn-block"
+        class="btn btn-outline-primary btn-lg btn-block"
         target="_blank"
         rel="noopener noreferrer"
         tabindex="0"
     >
         Cómo llego
+        <span class="material-symbols-rounded o-icon" aria-hidden="true">
+            open_in_new
+        </span>
     </a>
   </div>
 </div>`;
@@ -63,12 +66,15 @@ export const MAP_INSTITUTION = `<div class="map">
     <a
         href="https://mapa.buenosaires.gob.ar/comollego/?lat=-34.640340&amp;
         lng=-58.407032&amp;zl=15&amp;modo=transporte&amp;dir=Uspallata+3160"
-        class="btn btn-primary btn-lg btn-block"
+        class="btn btn-outline-primary btn-lg btn-block"
         target="_blank"
         rel="noopener noreferrer"
         tabindex="0"
     >
         Cómo llego
+        <span class="material-symbols-rounded o-icon" aria-hidden="true">
+            open_in_new
+        </span>
     </a>
   </div>
 </div>`;

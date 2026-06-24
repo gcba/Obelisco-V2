@@ -41,10 +41,10 @@ const ReleasesComponents: React.FC = () => {
               múltiples) en componente Calendario.
             </li>
             <li>
-              Se cambia la claser <code>bg-primary</code> por <code>bg-secondary</code> en Barra de progreso.
+              Se cambia la clase <code>bg-primary</code> por <code>bg-secondary</code> en Barra de progreso.
             </li>
             <li>
-              Se modifica el radio de borde del botón de carga de archivo. Ahora es <code>pill</code>, igual que los
+              Se modifica el radio de borde del botón de carga de archivo. Ahora es <code>$pill</code>, igual que los
               input.
             </li>
           </ul>

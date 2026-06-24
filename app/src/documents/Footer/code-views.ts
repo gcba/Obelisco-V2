@@ -379,3 +379,268 @@ export const FOOTER_ACCESSIBILTY = `<h2 class="sr-only">Navegaci√≥n de pie de p√
     </section>
   </div>
 </footer>`;
+
+export const SKELETON_FOOTER = `
+<footer class="main-footer ob-skeleton" aria-hidden="true">
+  <div class="container">
+    <section>
+      <h3>
+        <span class="ob-placeholder" style="width: 132px;"></span>
+      </h3>
+      <ul class="list-inline">
+        <li class="list-inline-item phone-items">
+          <span class="ob-placeholder" style="width: 196px;"></span>
+        </li>
+        <li class="list-inline-item phone-items">
+          <span class="ob-placeholder" style="width: 135px;"></span>
+        </li>
+        <li class="list-inline-item phone-items">
+          <span class="ob-placeholder" style="width: 83px;"></span>
+        </li>
+        <li class="list-inline-item phone-items">
+          <span class="ob-placeholder" style="width: 88px;"></span>
+        </li>
+        <li class="list-inline-item phone-items">
+          <span class="ob-placeholder" style="width: 187px;"></span>
+        </li>
+        <li class="list-inline-item phone-items">
+          <span class="ob-placeholder" style="width: 188px;"></span>
+        </li>
+      </ul>
+      <span class="ob-placeholder" style="width: 170px;"></span>
+    </section>
+    <section>
+      <h3>
+        <span class="ob-placeholder" style="width: 160px;"></span>
+      </h3>
+      <ul class="list-inline">
+        <li class="list-inline-item redes-items">
+          <span class="ob-placeholder ob-placeholder-icon me-1"></span>
+          <span class="ob-placeholder" style="width: 100px;"></span>
+        </li>
+        <li class="list-inline-item redes-items">
+          <span class="ob-placeholder ob-placeholder-icon me-1"></span>
+          <span class="ob-placeholder" style="width: 100px;"></span>
+        </li>
+        <li class="list-inline-item redes-items">
+          <span class="ob-placeholder ob-placeholder-icon me-1"></span>
+          <span class="ob-placeholder" style="width: 20px;"></span>
+        </li>
+        <li class="list-inline-item redes-items">
+          <span class="ob-placeholder ob-placeholder-icon me-1"></span>
+          <span class="ob-placeholder" style="width: 80px;"></span>
+        </li>
+        <li class="list-inline-item redes-items">
+          <span class="ob-placeholder ob-placeholder-icon me-1"></span>
+          <span class="ob-placeholder" style="width: 80px;"></span>
+        </li>
+        <li class="list-inline-item redes-items">
+          <span class="ob-placeholder ob-placeholder-icon me-1"></span>
+          <span class="ob-placeholder" style="width: 70px;"></span>
+        </li>
+        <li class="list-inline-item redes-items">
+          <span class="ob-placeholder ob-placeholder-icon me-1"></span>
+          <span class="ob-placeholder" style="width: 80px;"></span>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <hr class="divider">
+  <div class="container">
+    <section class="footer-legal-section">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-5 col-xl-4 footer-content-img">
+          <span class="ob-placeholder ob-placeholder-logo"></span>
+          <span class="ob-placeholder ob-placeholder-logo"></span>
+        </div>
+        <div class="col-12">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <span class="ob-placeholder" style="width: 100px;"></span>
+            </li>
+            <li class="list-inline-item">
+              <span class="ob-placeholder" style="width: 175px;"></span>
+            </li>
+            <li class="list-inline-item">
+              <span class="ob-placeholder" style="width: 160px;"></span>
+            </li>
+            <li class="list-inline-item">
+              <span class="ob-placeholder" style="width: 120px;"></span>
+            </li>
+            <li class="list-inline-item">
+              <span class="ob-placeholder" style="width: 100px;"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="footer-license-text">
+        <span class="ob-placeholder col-2"></span>
+        <span class="ob-placeholder col-1 mx-1"></span>
+        <span class="ob-placeholder col-3"></span>
+        <span class="ob-placeholder col-1 ms-1"></span>
+      </div>
+    </section>
+  </div>
+</footer>
+`;
+
+export const SKELETON_LEGALS = `
+<footer class="main-footer ob-skeleton" aria-hidden="true">
+  <div class="container">
+    <section class="footer-legal-section">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-5 col-xl-4 footer-content-img">
+          <span class="ob-placeholder w-100" style="height: 40px;"></span>
+          <span class="ob-placeholder w-100" style="height: 40px;"></span>
+        </div>
+        <div class="col-12">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <span class="ob-placeholder" style="width: 100px;"></span>
+            </li>
+            <li class="list-inline-item">
+              <span class="ob-placeholder" style="width: 175px;"></span>
+            </li>
+            <li class="list-inline-item">
+              <span class="ob-placeholder" style="width: 160px;"></span>
+            </li>
+            <li class="list-inline-item">
+              <span class="ob-placeholder" style="width: 120px;"></span>
+            </li>
+            <li class="list-inline-item">
+              <span class="ob-placeholder" style="width: 105px;"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="footer-license-text">
+        <span class="ob-placeholder col-2"></span>
+        <span class="ob-placeholder col-1 mx-1"></span>
+        <span class="ob-placeholder col-3"></span>
+        <span class="ob-placeholder col-1 ms-1"></span>
+      </div>
+    </section>
+  </div>
+</footer>
+`;
+
+export const SKELETON_INDICATOR = `
+<div class="footer-info ob-skeleton">
+  <div class="container">
+    <h3 class="footer-info-text">
+      <span class="ob-placeholder" style="width: 190px;"></span>
+    </h3>
+    <div class="footer-info-actions">
+      <span class="ob-placeholder rounded-3 w-100" style="height: 40px; max-width: 140px;"></span>
+      <span class="ob-placeholder rounded-3 w-100" style="height: 40px; max-width: 140px;"></span>
+    </div>
+  </div>
+</div>
+<footer class="main-footer ob-skeleton" aria-hidden="true">
+  <div class="container">
+    <section>
+      <h3>
+        <span class="ob-placeholder" style="width: 132px;"></span>
+      </h3>
+      <ul class="list-inline">
+        <li class="list-inline-item phone-items">
+          <span class="ob-placeholder" style="width: 196px;"></span>
+        </li>
+        <li class="list-inline-item phone-items">
+          <span class="ob-placeholder" style="width: 135px;"></span>
+        </li>
+        <li class="list-inline-item phone-items">
+          <span class="ob-placeholder" style="width: 83px;"></span>
+        </li>
+        <li class="list-inline-item phone-items">
+          <span class="ob-placeholder" style="width: 88px;"></span>
+        </li>
+        <li class="list-inline-item phone-items">
+          <span class="ob-placeholder" style="width: 187px;"></span>
+        </li>
+        <li class="list-inline-item phone-items">
+          <span class="ob-placeholder" style="width: 188px;"></span>
+        </li>
+      </ul>
+      <span class="ob-placeholder" style="width: 170px;"></span>
+    </section>
+    <section>
+      <h3>
+        <span class="ob-placeholder" style="width: 160px;"></span>
+      </h3>
+      <ul class="list-inline">
+        <li class="list-inline-item redes-items">
+          <span class="ob-placeholder ob-placeholder-icon me-1"></span>
+          <span class="ob-placeholder" style="width: 100px;"></span>
+        </li>
+        <li class="list-inline-item redes-items">
+          <span class="ob-placeholder ob-placeholder-icon me-1"></span>
+          <span class="ob-placeholder" style="width: 100px;"></span>
+        </li>
+        <li class="list-inline-item redes-items">
+          <span class="ob-placeholder ob-placeholder-icon me-1"></span>
+          <span class="ob-placeholder" style="width: 20px;"></span>
+        </li>
+        <li class="list-inline-item redes-items">
+          <span class="ob-placeholder ob-placeholder-icon me-1"></span>
+          <span class="ob-placeholder" style="width: 80px;"></span>
+        </li>
+        <li class="list-inline-item redes-items">
+          <span class="ob-placeholder ob-placeholder-icon me-1"></span>
+          <span class="ob-placeholder" style="width: 80px;"></span>
+        </li>
+        <li class="list-inline-item redes-items">
+          <span class="ob-placeholder ob-placeholder-icon me-1"></span>
+          <span class="ob-placeholder" style="width: 70px;"></span>
+        </li>
+        <li class="list-inline-item redes-items">
+          <span class="ob-placeholder ob-placeholder-icon me-1"></span>
+          <span class="ob-placeholder" style="width: 80px;"></span>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <hr class="divider">
+  <div class="container">
+    <section class="footer-legal-section">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-5 col-xl-4 footer-content-img">
+          <span class="ob-placeholder ob-placeholder-logo"></span>
+          <span class="ob-placeholder ob-placeholder-logo"></span>
+        </div>
+        <div class="col-12">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <span class="ob-placeholder" style="width: 100px;"></span>
+            </li>
+            <li class="list-inline-item">
+              <span class="ob-placeholder" style="width: 175px;"></span>
+            </li>
+            <li class="list-inline-item">
+              <span class="ob-placeholder" style="width: 160px;"></span>
+            </li>
+            <li class="list-inline-item">
+              <span class="ob-placeholder" style="width: 120px;"></span>
+            </li>
+            <li class="list-inline-item">
+              <span class="ob-placeholder" style="width: 100px;"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="footer-license-text">
+        <span class="ob-placeholder col-2"></span>
+        <span class="ob-placeholder col-1 mx-1"></span>
+        <span class="ob-placeholder col-3"></span>
+        <span class="ob-placeholder col-1 ms-1"></span>
+      </div>
+    </section>
+  </div>
+</footer>
+`;

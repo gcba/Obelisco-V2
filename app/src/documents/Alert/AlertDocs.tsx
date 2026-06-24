@@ -18,6 +18,7 @@ import {
   SYSTEM_ALERT,
   ALERTAS_ACCESSIBILTY,
   ALERTAS_ACCESSIBILTY_2,
+  SKELETON_ALERT,
 } from './code-views';
 
 const AlertDocs: React.FC = () => {
@@ -908,6 +909,35 @@ const AlertDocs: React.FC = () => {
     },
   ];
 
+  const SKELETON = [
+    {
+      title: 'Skeleton',
+      firstTitle: true,
+      content: (
+        <>
+          <CodeBox codeHTML={SKELETON_ALERT}>
+            <div className="container d-flex flex-column gap-3">
+              <div className="alert alert-info system ob-skeleton" role="alert">
+                <p className="ob-placeholder">
+                  <strong>Este es un destacado de una alerta de información. </strong>
+                  Esta es la descripción de una alerta de información que continua al texto destacado, incluso{' '}
+                  <LinkClient>con enlaces</LinkClient>
+                </p>
+                <ol className="ob-placeholder">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ol>
+              </div>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+  ];
+
   return (
     <>
       <ComponentHeader
@@ -929,6 +959,11 @@ const AlertDocs: React.FC = () => {
             title: 'Accesibilidad',
             id: 'section-accessibility',
             sectionContent: ACCESSIBILITY,
+          },
+          {
+            title: 'Esqueleto',
+            id: 'section-skeleton',
+            sectionContent: SKELETON,
           },
         ]}
       />{' '}

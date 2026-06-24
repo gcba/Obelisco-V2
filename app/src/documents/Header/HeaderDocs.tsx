@@ -26,6 +26,18 @@ import {
   HEADER_ONLY_SEARCH,
   HEADER_TWO_LINES,
   HEADER_TWO_LINES_SEARCH,
+  SKELETON_BANNER,
+  SKELETON_NO_BANNER,
+  SKELETON_LOGIN_ONE_LINE_SEARCH,
+  SKELETON_LOGIN_ONE_LINE,
+  SKELETON_LOGIN_TWO_LINES_SEARCH,
+  SKELETON_LOGIN_TWO_LINES,
+  SKELETON_NO_LOGIN_SEARCH,
+  SKELETON_NO_LOGIN,
+  SKELETON_LOGIN_ONLY_SEARCH,
+  SKELETON_LOGIN_ONLY,
+  SKELETON_ONLY_SEARCH,
+  SKELETON_ONLY_LOGO,
 } from './code-views';
 
 const logo = '/images/logo_ba.svg';
@@ -2873,6 +2885,576 @@ const HeaderDocs: React.FC = () => {
     },
   ];
 
+  const SKELETON = [
+    {
+      title: 'Con banner',
+      firstTitle: true,
+      content: (
+        <CodeBox codeHTML={SKELETON_BANNER}>
+          <div className="container-fluid">
+            <div className="header-box-sizing_banner">
+              {/* header banner */}
+              <div className="header-banner ob-skeleton">
+                <span className="ob-placeholder me-3" style={{ width: '30px', height: '16px' }}></span>
+                <p className="text-sm col-2">
+                  <span className="ob-placeholder w-100"></span>
+                </p>
+              </div>
+              {/* header banner */}
+              <header className="o-header o-header_banner navbar ob-skeleton" role="banner" aria-hidden="true">
+                <div className="container header-container">
+                  <div className="navbar-brand">
+                    <span className="ob-placeholder" style={{ width: '74px', height: '40px' }}></span>
+                  </div>
+
+                  <div className="navbar-login-mobile col-2 ms-auto">
+                    <span className="ob-placeholder ob-placeholder-action"></span>
+                  </div>
+                  <span
+                    className="ob-placeholder ob-placeholder-action d-xl-none ms-3"
+                    style={{ width: '48px' }}
+                  ></span>
+
+                  <div className="collapse navbar-collapse" id="navbarContent1">
+                    <div className="navbar-content">
+                      <div className="navbar-sections">
+                        <nav>
+                          <ul className="nav nav-pills nav-sections">
+                            <li className="nav-item col-2">
+                              <span className="ob-placeholder ob-placeholder-action"></span>
+                            </li>
+
+                            <li className="nav-item col-2">
+                              <span className="ob-placeholder ob-placeholder-action"></span>
+                            </li>
+
+                            <li className="nav-item col-2">
+                              <span className="ob-placeholder ob-placeholder-action"></span>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                      <div className="navbar-search">
+                        <div className="search-container">
+                          <span className="ob-placeholder ob-placeholder-action"></span>
+                        </div>
+                      </div>
+                      <div className="navbar-login col-1">
+                        <span className="ob-placeholder ob-placeholder-action"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="header-backdrop"></div>
+              </header>
+            </div>
+          </div>
+        </CodeBox>
+      ),
+    },
+    {
+      subtitle: 'Sin banner',
+      content: (
+        <>
+          <CodeBox codeHTML={SKELETON_NO_BANNER}>
+            <div className="container">
+              <div className="header-box-sizing">
+                <header className="o-header  navbar ob-skeleton" role="banner" aria-hidden="true">
+                  <div className="container header-container">
+                    <div className="navbar-brand">
+                      <span className="ob-placeholder" style={{ width: '74px', height: '40px' }}></span>
+                    </div>
+                    <div className="navbar-login-mobile col-2 ms-auto">
+                      <span className="ob-placeholder ob-placeholder-action"></span>
+                    </div>
+                    <span
+                      className="ob-placeholder ob-placeholder-action d-xl-none ms-3"
+                      style={{ width: '48px' }}
+                    ></span>
+                    <div className="collapse navbar-collapse">
+                      <div className="navbar-content">
+                        <div className="navbar-sections">
+                          <nav>
+                            <ul className="nav nav-pills nav-sections">
+                              <li className="nav-item col-2">
+                                <span className="ob-placeholder ob-placeholder-action"></span>
+                              </li>
+
+                              <li className="nav-item col-2">
+                                <span className="ob-placeholder ob-placeholder-action"></span>
+                              </li>
+
+                              <li className="nav-item col-2">
+                                <span className="ob-placeholder ob-placeholder-action"></span>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                        <div className="navbar-search">
+                          <div className="search-container">
+                            <span className="ob-placeholder ob-placeholder-action"></span>
+                          </div>
+                        </div>
+                        <div className="navbar-login col-1">
+                          <span className="ob-placeholder ob-placeholder-action"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="header-backdrop"></div>
+                </header>
+              </div>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+    {
+      title: 'Deslogueado',
+    },
+    {
+      subtitle: 'En una línea',
+      content: (
+        <>
+          <CodeBox codeHTML={SKELETON_LOGIN_ONE_LINE_SEARCH}>
+            <div className="container">
+              <div className="header-box-sizing">
+                <header className="o-header navbar ob-skeleton" role="banner" aria-hidden="true">
+                  <div className="container header-container">
+                    <div className="navbar-brand">
+                      <span className="ob-placeholder" style={{ width: '74px', height: '40px' }}></span>
+                    </div>
+                    <div className="navbar-login-mobile col-2 ms-auto">
+                      <span className="ob-placeholder ob-placeholder-action"></span>
+                    </div>
+                    <span
+                      className="ob-placeholder ob-placeholder-action d-xl-none ms-3"
+                      style={{ width: '48px' }}
+                    ></span>
+                    <div className="collapse navbar-collapse">
+                      <div className="navbar-content">
+                        <div className="navbar-sections">
+                          <nav>
+                            <ul className="nav nav-pills nav-sections">
+                              <li className="nav-item col-2">
+                                <span className="ob-placeholder ob-placeholder-action"></span>
+                              </li>
+
+                              <li className="nav-item col-2">
+                                <span className="ob-placeholder ob-placeholder-action"></span>
+                              </li>
+
+                              <li className="nav-item col-2">
+                                <span className="ob-placeholder ob-placeholder-action"></span>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                        <div className="navbar-search">
+                          <div className="search-container">
+                            <span className="ob-placeholder ob-placeholder-action"></span>
+                          </div>
+                        </div>
+                        <div className="navbar-login col-1">
+                          <span className="ob-placeholder ob-placeholder-action"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="header-backdrop"></div>
+                </header>
+              </div>
+            </div>
+          </CodeBox>
+          <br />
+          <p>También está disponible la variante sin buscador:</p>
+          <CodeBox codeHTML={SKELETON_LOGIN_ONE_LINE}>
+            <div className="container">
+              <div className="header-box-sizing">
+                <header className="o-header navbar ob-skeleton" role="banner" aria-hidden="true">
+                  <div className="container header-container">
+                    <div className="navbar-brand">
+                      <span className="ob-placeholder" style={{ width: '74px', height: '40px' }}></span>
+                    </div>
+                    <div className="navbar-login-mobile col-2 ms-auto">
+                      <span className="ob-placeholder ob-placeholder-action"></span>
+                    </div>
+                    <span
+                      className="ob-placeholder ob-placeholder-action d-xl-none ms-3"
+                      style={{ width: '48px' }}
+                    ></span>
+                    <div className="collapse navbar-collapse">
+                      <div className="navbar-content">
+                        <div className="navbar-sections">
+                          <nav>
+                            <ul className="nav nav-pills nav-sections">
+                              <li className="nav-item col-2">
+                                <span className="ob-placeholder ob-placeholder-action"></span>
+                              </li>
+
+                              <li className="nav-item col-2">
+                                <span className="ob-placeholder ob-placeholder-action"></span>
+                              </li>
+
+                              <li className="nav-item col-2">
+                                <span className="ob-placeholder ob-placeholder-action"></span>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                        <div className="navbar-login col-1">
+                          <span className="ob-placeholder ob-placeholder-action"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="header-backdrop"></div>
+                </header>
+              </div>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+    {
+      subtitle: 'En dos líneas',
+      content: (
+        <>
+          <CodeBox codeHTML={SKELETON_LOGIN_TWO_LINES_SEARCH}>
+            <div className="container">
+              <div className="header-box-sizing">
+                <header className="o-header navbar ob-skeleton" role="banner" aria-hidden="true">
+                  <div className="container header-container">
+                    <div className="navbar-brand">
+                      <span className="ob-placeholder" style={{ width: '74px', height: '40px' }}></span>
+                    </div>
+                    <div className="navbar-login-mobile col-2 ms-auto">
+                      <span className="ob-placeholder ob-placeholder-action"></span>
+                    </div>
+                    <span
+                      className="ob-placeholder ob-placeholder-action d-xl-none ms-3"
+                      style={{ width: '48px' }}
+                    ></span>
+                    <div className="collapse navbar-collapse">
+                      <div className="navbar-content">
+                        <div className="navbar-search">
+                          <div className="search-container">
+                            <span className="ob-placeholder ob-placeholder-action"></span>
+                          </div>
+                        </div>
+                        <div className="navbar-login col-1">
+                          <span className="ob-placeholder ob-placeholder-action"></span>
+                        </div>
+                      </div>
+                      <div className="navbar-content-extended">
+                        <nav>
+                          <ul className="nav nav-pills nav-sections">
+                            <li className="nav-item col-1">
+                              <span className="ob-placeholder ob-placeholder-action"></span>
+                            </li>
+                            <li className="nav-item col-1">
+                              <span className="ob-placeholder ob-placeholder-action"></span>
+                            </li>
+                            <li className="nav-item col-1">
+                              <span className="ob-placeholder ob-placeholder-action"></span>
+                            </li>
+                            <li className="nav-item col-1">
+                              <span className="ob-placeholder ob-placeholder-action"></span>
+                            </li>
+                            <li className="nav-item col-1">
+                              <span className="ob-placeholder ob-placeholder-action"></span>
+                            </li>
+                            <li className="nav-item col-1">
+                              <span className="ob-placeholder ob-placeholder-action"></span>
+                            </li>
+                            <li className="nav-item col-1">
+                              <span className="ob-placeholder ob-placeholder-action"></span>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="header-backdrop"></div>
+                </header>
+              </div>
+            </div>
+          </CodeBox>
+          <br />
+          <p>También está disponible la variante sin buscador:</p>
+          <CodeBox codeHTML={SKELETON_LOGIN_TWO_LINES}>
+            <div className="container">
+              <div className="header-box-sizing">
+                <header className="o-header navbar ob-skeleton" role="banner" aria-hidden="true">
+                  <div className="container header-container">
+                    <div className="navbar-brand">
+                      <span className="ob-placeholder" style={{ width: '74px', height: '40px' }}></span>
+                    </div>
+                    <div className="navbar-login-mobile col-2 ms-auto">
+                      <span className="ob-placeholder ob-placeholder-action"></span>
+                    </div>
+                    <span
+                      className="ob-placeholder ob-placeholder-action d-xl-none ms-3"
+                      style={{ width: '48px' }}
+                    ></span>
+                    <div className="collapse navbar-collapse">
+                      <div className="navbar-content">
+                        <div className="navbar-login col-1">
+                          <span className="ob-placeholder ob-placeholder-action"></span>
+                        </div>
+                      </div>
+                      <div className="navbar-content-extended">
+                        <nav>
+                          <ul className="nav nav-pills nav-sections">
+                            <li className="nav-item col-1">
+                              <span className="ob-placeholder ob-placeholder-action"></span>
+                            </li>
+                            <li className="nav-item col-1">
+                              <span className="ob-placeholder ob-placeholder-action"></span>
+                            </li>
+                            <li className="nav-item col-1">
+                              <span className="ob-placeholder ob-placeholder-action"></span>
+                            </li>
+                            <li className="nav-item col-1">
+                              <span className="ob-placeholder ob-placeholder-action"></span>
+                            </li>
+                            <li className="nav-item col-1">
+                              <span className="ob-placeholder ob-placeholder-action"></span>
+                            </li>
+                            <li className="nav-item col-1">
+                              <span className="ob-placeholder ob-placeholder-action"></span>
+                            </li>
+                            <li className="nav-item col-1">
+                              <span className="ob-placeholder ob-placeholder-action"></span>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="header-backdrop"></div>
+                </header>
+              </div>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+    {
+      title: 'Sin logueo',
+      content: (
+        <>
+          <CodeBox codeHTML={SKELETON_NO_LOGIN_SEARCH}>
+            <div className="container">
+              <div className="header-box-sizing">
+                <header className="o-header  navbar ob-skeleton" role="banner" aria-hidden="true">
+                  <div className="container header-container">
+                    <div className="navbar-brand">
+                      <span className="ob-placeholder" style={{ width: '74px', height: '40px' }}></span>
+                    </div>
+                    <span
+                      className="ob-placeholder ob-placeholder-action d-xl-none ms-3"
+                      style={{ width: '48px' }}
+                    ></span>
+                    <div className="collapse navbar-collapse">
+                      <div className="navbar-content">
+                        <div className="navbar-sections">
+                          <nav>
+                            <ul className="nav nav-pills nav-sections">
+                              <li className="nav-item col-2">
+                                <span className="ob-placeholder ob-placeholder-action"></span>
+                              </li>
+
+                              <li className="nav-item col-2">
+                                <span className="ob-placeholder ob-placeholder-action"></span>
+                              </li>
+
+                              <li className="nav-item col-2">
+                                <span className="ob-placeholder ob-placeholder-action"></span>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                        <div className="navbar-search">
+                          <div className="search-container">
+                            <span className="ob-placeholder ob-placeholder-action"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="header-backdrop"></div>
+                </header>
+              </div>
+            </div>
+          </CodeBox>
+          <br />
+          <p>También está disponible la variante sin buscador:</p>
+          <CodeBox codeHTML={SKELETON_NO_LOGIN}>
+            <div className="container">
+              <div className="header-box-sizing">
+                <header className="o-header  navbar ob-skeleton" role="banner" aria-hidden="true">
+                  <div className="container header-container">
+                    <div className="navbar-brand">
+                      <span className="ob-placeholder" style={{ width: '74px', height: '40px' }}></span>
+                    </div>
+                    <span
+                      className="ob-placeholder ob-placeholder-action d-xl-none ms-3"
+                      style={{ width: '48px' }}
+                    ></span>
+                    <div className="collapse navbar-collapse">
+                      <div className="navbar-content">
+                        <div className="navbar-sections">
+                          <nav>
+                            <ul className="nav nav-pills nav-sections">
+                              <li className="nav-item col-2">
+                                <span className="ob-placeholder ob-placeholder-action"></span>
+                              </li>
+
+                              <li className="nav-item col-2">
+                                <span className="ob-placeholder ob-placeholder-action"></span>
+                              </li>
+
+                              <li className="nav-item col-2">
+                                <span className="ob-placeholder ob-placeholder-action"></span>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="header-backdrop"></div>
+                </header>
+              </div>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+    {
+      title: 'Sólo login',
+      content: (
+        <>
+          <CodeBox codeHTML={SKELETON_LOGIN_ONLY_SEARCH}>
+            <div className="container">
+              <div className="header-box-sizing">
+                <header className="o-header  navbar ob-skeleton" role="banner" aria-hidden="true">
+                  <div className="container header-container">
+                    <div className="navbar-brand">
+                      <span className="ob-placeholder" style={{ width: '74px', height: '40px' }}></span>
+                    </div>
+                    <div className="navbar-login-mobile col-2 ms-auto">
+                      <span className="ob-placeholder ob-placeholder-action"></span>
+                    </div>
+                    <span
+                      className="ob-placeholder ob-placeholder-action d-xl-none ms-3"
+                      style={{ width: '48px' }}
+                    ></span>
+                    <div className="collapse navbar-collapse">
+                      <div className="navbar-content">
+                        <div className="navbar-search">
+                          <div className="search-container">
+                            <span className="ob-placeholder ob-placeholder-action"></span>
+                          </div>
+                        </div>
+                        <div className="navbar-login col-1">
+                          <span className="ob-placeholder ob-placeholder-action"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="header-backdrop"></div>
+                </header>
+              </div>
+            </div>
+          </CodeBox>
+          <br />
+          <p>También está disponible la variante sin buscador:</p>
+          <CodeBox codeHTML={SKELETON_LOGIN_ONLY}>
+            <div className="container">
+              <div className="header-box-sizing">
+                <header className="o-header  navbar ob-skeleton" role="banner" aria-hidden="true">
+                  <div className="container header-container">
+                    <div className="navbar-brand">
+                      <span className="ob-placeholder" style={{ width: '74px', height: '40px' }}></span>
+                    </div>
+                    <div className="navbar-login-mobile col-2 ms-auto">
+                      <span className="ob-placeholder ob-placeholder-action"></span>
+                    </div>
+                    <span
+                      className="ob-placeholder ob-placeholder-action d-xl-none ms-3"
+                      style={{ width: '48px' }}
+                    ></span>
+                    <div className="collapse navbar-collapse">
+                      <div className="navbar-content">
+                        <div className="navbar-login col-1">
+                          <span className="ob-placeholder ob-placeholder-action"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="header-backdrop"></div>
+                </header>
+              </div>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+    {
+      title: 'Sólo Buscador',
+      content: (
+        <CodeBox codeHTML={SKELETON_ONLY_SEARCH}>
+          <div className="container">
+            <div className="header-box-sizing">
+              <header className="o-header navbar ob-skeleton" role="banner" aria-hidden="true">
+                <div className="container header-container">
+                  <div className="navbar-brand">
+                    <span className="ob-placeholder" style={{ width: '74px', height: '40px' }}></span>
+                  </div>
+                  <span
+                    className="ob-placeholder ob-placeholder-action d-xl-none ms-3"
+                    style={{ width: '48px' }}
+                  ></span>
+                  <div className="collapse navbar-collapse">
+                    <div className="navbar-content">
+                      <div className="navbar-search">
+                        <div className="search-container">
+                          <span className="ob-placeholder ob-placeholder-action"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="header-backdrop"></div>
+              </header>
+            </div>
+          </div>
+        </CodeBox>
+      ),
+    },
+    {
+      title: 'Sólo logo',
+      content: (
+        <CodeBox codeHTML={SKELETON_ONLY_LOGO}>
+          <div className="container">
+            <div className="header-box-sizing">
+              <header className="o-header navbar ob-skeleton" role="banner" aria-hidden="true">
+                <div className="container header-container">
+                  <div className="navbar-brand">
+                    <span className="ob-placeholder" style={{ width: '74px', height: '40px' }}></span>
+                  </div>
+                </div>
+                <div className="header-backdrop"></div>
+              </header>
+            </div>
+          </div>
+        </CodeBox>
+      ),
+    },
+  ];
+
   return (
     <>
       <ComponentHeader
@@ -2887,6 +3469,11 @@ const HeaderDocs: React.FC = () => {
         customSections={[
           { title: 'Especificaciones', id: 'section-specs', sectionContent: SPECS },
           { title: 'Accesibilidad', id: 'section-accessibility', sectionContent: ACCESSIBILITY },
+          {
+            title: 'Esqueleto',
+            id: 'section-skeleton',
+            sectionContent: SKELETON,
+          },
         ]}
       />
     </>

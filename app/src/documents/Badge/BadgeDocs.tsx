@@ -3,7 +3,7 @@ import LinkClient from '@/components/LinkClient';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
-import { BADGE_COLORS, BADGE_TYPES } from './code-views';
+import { BADGE_COLORS, BADGE_TYPES, SKELETON_BADGE, SKELETON_BADGE_LINK } from './code-views';
 
 const BadgeDocs: React.FC = () => {
   const SECTIONS_DEV = [
@@ -68,6 +68,36 @@ const BadgeDocs: React.FC = () => {
     },
   ];
 
+  const SKELETON = [
+    {
+      title: 'Skeleton',
+      firstTitle: true,
+      content: (
+        <>
+          <CodeBox codeHTML={SKELETON_BADGE}>
+            <div className="row justify-content-center">
+              <div className="col-auto">
+                <div className="grid gap-5 ob-skeleton">
+                  <span className="badge badge-default ob-placeholder rounded-3">predeterminada</span>
+                </div>
+              </div>
+            </div>
+          </CodeBox>
+          <br />
+          <CodeBox codeHTML={SKELETON_BADGE_LINK}>
+            <div className="row justify-content-center">
+              <div className="col-auto">
+                <div className="grid gap-5 ob-skeleton">
+                  <LinkClient className="badge badge-default ob-placeholder rounded-3">Etiqueta</LinkClient>
+                </div>
+              </div>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+  ];
+
   return (
     <>
       <ComponentHeader
@@ -88,7 +118,16 @@ const BadgeDocs: React.FC = () => {
           </>,
         ]}
       />
-      <Tabs sectionDev={SECTIONS_DEV} />
+      <Tabs
+        sectionDev={SECTIONS_DEV}
+        customSections={[
+          {
+            title: 'Esqueleto',
+            id: 'section-skeleton',
+            sectionContent: SKELETON,
+          },
+        ]}
+      />
     </>
   );
 };

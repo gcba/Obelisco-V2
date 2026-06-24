@@ -1,0 +1,151 @@
+.ob-skeleton {
+  @keyframes ob-skeleton-shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  cursor: wait;
+
+  .ob-placeholder {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    min-height: 1em;
+    vertical-align: middle;
+    cursor: wait;
+    opacity: 0.5;
+    background-color: $dark;
+    border-radius: 2px;
+    color: transparent;
+    pointer-events: none;
+
+    // enlaces (a) dentro de un elemento con la clase .ob-placeholder
+    a,
+    a.ob-placeholder {
+      color: transparent;
+      text-decoration: none;
+      outline: none;
+
+      &:active,
+      &:focus,
+      &:hover {
+        color: transparent;
+        text-decoration: none;
+        outline: none;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgb(255 255 255 / 25%) 50%,
+        transparent 100%
+      );
+      animation: ob-skeleton-shimmer 1.5s infinite;
+    }
+
+    // BADGE
+    // las etiquetas llevan este estilo acá, porque la clase 'ob-skeleton' la lleva un div que las contiene. no lleva 'ob-skeleton' a la misma altura de .badge. 'ob-skeleton' > .badge
+    &.badge {
+      outline: 0 transparent;
+      text-decoration: none;
+    }
+  }
+
+  // enlaces
+  a,
+  a.ob-placeholder,
+  a.btn,
+  a.btn-primary,
+  div.banner-actions a.ob-placeholder.btn {
+    color: transparent;
+    text-decoration: none;
+    outline: none;
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: transparent;
+      text-decoration: none;
+      outline: none;
+    }
+  }
+
+  // ALERTAS
+  &.alert {
+    position: relative;
+    background-color: $slate-200 !important;
+
+    .ob-placeholder {
+      a {
+        color: transparent !important; // es la única manera de hacerlo, porque en los estilos del componente lleva !important
+      }
+    }
+
+    ol.ob-placeholder {
+      color: transparent !important; // es la única manera de hacerlo, porque en los estilos del componente lleva !important
+    }
+
+    &::before {
+      visibility: hidden;
+    }
+  }
+
+  // BANNER
+  &.banner {
+    .ob-placeholder {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  // HEADER
+  &.o-header {
+    .ob-placeholder-action {
+      min-height: 48px;
+      border-radius: 0.5rem;
+      width: 100%;
+    }
+  }
+
+  // FOOTER
+  &.main-footer {
+    .ob-placeholder-icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    .ob-placeholder-logo {
+      width: 100%;
+      height: 40px;
+    }
+  }
+}
+
+// Tiene que estar acá abajo, por el extend. Si está arriba se sobreescribe el background-color y no toma el light para dark.
+// Si no hay que hacer clases ob-placeholder-dark y ponerlas en cada item. Es mas engorroso
+.ob-skeleton-dark {
+  @extend .ob-skeleton;
+
+  .ob-placeholder {
+    background-color: $light;
+
+    &::after {
+      background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgb(0 0 0 / 25%) 50%,
+        transparent 100%
+      );
+    }
+  }
+}

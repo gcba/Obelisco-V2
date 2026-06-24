@@ -136,3 +136,82 @@ export const BANNER_BUTTONS_DARK = `
     </div>
   </div>
 `;
+
+export const SKELETON_SIMPLE = `<div class="banner ob-skeleton">
+  <div class="banner-content ob-placeholder">
+    <p class="banner-text ob-placeholder"></p>
+  </div>
+</div>
+`;
+
+export const SKELETON_SIMPLE_DARK = `<div class="banner banner-dark ob-skeleton">
+  <div class="banner-content ob-placeholder">
+    <p class="banner-text ob-placeholder"></p>
+  </div>
+</div>
+`;
+
+export const SKELETON_BOTON = `< class="banner ob-skeleton">
+  <div class="banner-content ">
+    <span class="material-symbols-rounded o-icon ob-placeholder ob-placeholder-icon" aria-hidden="true">
+      departure_board
+    </span>
+    <p class="banner-text ob-placeholder"></p>
+    <div class="banner-actions">
+      <LinkClient class="btn btn-sm btn-primary ob-placeholder">Botón</LinkClient>
+    </div>
+  </div>
+<
+<div class="banner banner-dark ob-skeleton">
+  <div class="banner-content ">
+    <span class="material-symbols-rounded o-icon ob-placeholder ob-placeholder-icon" aria-hidden="true">
+      departure_board
+    </span>
+    <p class="banner-text ob-placeholder"></p>
+    <div class="banner-actions">
+      <LinkClient class="btn btn-sm btn-primary ob-placeholder">Botón</LinkClient>
+    </div>
+  </div>
+</div>
+`;
+
+export const SKELETON_BOTON_DARK = `<div class="banner banner-dark ob-skeleton">
+  <div class="banner-content ">
+    <span class="material-symbols-rounded o-icon ob-placeholder ob-placeholder-icon" aria-hidden="true">
+      departure_board
+    </span>
+    <p class="banner-text ob-placeholder"></p>
+    <div class="banner-actions">
+      <LinkClient class="btn btn-sm btn-primary ob-placeholder">Botón</LinkClient>
+    </div>
+  </div>
+</div>
+`;
+
+export const SKELETON_BOTONES = `<div class="banner ob-skeleton">
+  <div class="banner-content ">
+    <span class="material-symbols-rounded o-icon ob-placeholder ob-placeholder-icon" aria-hidden="true">
+      departure_board
+    </span>
+    <p class="banner-text ob-placeholder"></p>
+    <div class="banner-actions">
+      <LinkClient class="btn btn-sm btn-primary ob-placeholder">Botón</LinkClient>
+      <LinkClient class="btn btn-sm btn-primary ob-placeholder">Botón</LinkClient>
+    </div>
+  </div>
+</div>
+`;
+
+export const SKELETON_BOTONES_DARK = `<div class="banner banner-dark ob-skeleton">
+  <div class="banner-content ">
+    <span class="material-symbols-rounded o-icon ob-placeholder ob-placeholder-icon" aria-hidden="true">
+      departure_board
+    </span>
+    <p class="banner-text ob-placeholder"></p>
+    <div class="banner-actions">
+      <LinkClient class="btn btn-sm btn-primary ob-placeholder">Botón</LinkClient>
+      <LinkClient class="btn btn-sm btn-primary ob-placeholder">Botón</LinkClient>
+    </div>
+  </div>
+</div>
+`;

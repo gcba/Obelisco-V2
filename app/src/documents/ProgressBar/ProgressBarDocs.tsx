@@ -109,7 +109,7 @@ const ProgressBarDocs: React.FC = () => {
             <div className="container">
               <div className="progress">
                 <div
-                  className="progress-bar bg-primary"
+                  className="progress-bar bg-secondary"
                   role="progressbar"
                   aria-valuenow={25}
                   aria-valuemin={0}
@@ -120,7 +120,7 @@ const ProgressBarDocs: React.FC = () => {
               <br />
               <div className="progress">
                 <div
-                  className="progress-bar bg-primary"
+                  className="progress-bar bg-secondary"
                   role="progressbar"
                   aria-valuenow={50}
                   aria-valuemin={0}
@@ -131,7 +131,7 @@ const ProgressBarDocs: React.FC = () => {
               <br />
               <div className="progress">
                 <div
-                  className="progress-bar bg-primary"
+                  className="progress-bar bg-secondary"
                   role="progressbar"
                   aria-valuenow={100}
                   aria-valuemin={0}
@@ -194,7 +194,7 @@ const ProgressBarDocs: React.FC = () => {
               <p className="progress-description">Descripción</p>
               <div className="progress">
                 <div
-                  className="progress-bar bg-primary"
+                  className="progress-bar bg-secondary"
                   role="progressbar"
                   aria-valuenow={50}
                   aria-valuemin={0}
@@ -208,7 +208,7 @@ const ProgressBarDocs: React.FC = () => {
               <p className="progress-description">Descripción</p>
               <div className="progress">
                 <div
-                  className="progress-bar bg-primary"
+                  className="progress-bar bg-secondary"
                   role="progressbar"
                   aria-valuenow={100}
                   aria-valuemin={0}

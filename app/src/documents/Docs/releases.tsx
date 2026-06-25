@@ -19,6 +19,39 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
+      title: 'Versión 1.12.1',
+      content: (
+        <>
+          <ul className="docs-list">
+            <p>La Versión 1.12.1 contiene lo siguiente: </p>
+            <li>
+              Al componente Indicador, en Pie de página (Footer), se cambia la clase <code>btn-secondary</code> por{' '}
+              <code>btn-primary</code>.
+            </li>
+            <li>
+              Se corrige el color de los elementos en el componente Alerta de sistema - Advertencia (Warning) por{' '}
+              <code>$primary</code>.
+            </li>
+            <li>
+              Se alinea el ícono informativo de estado en{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/components/form-validation"> Validacion de Inputs</a>.
+            </li>
+            <li>
+              Se cambia el color de <code>$secondary</code> por <code>$primary</code> para item de eventos (simples o
+              múltiples) en componente Calendario.
+            </li>
+            <li>
+              Se cambia la clase <code>bg-primary</code> por <code>bg-secondary</code> en Barra de progreso.
+            </li>
+            <li>
+              Se modifica el radio de borde del botón de carga de archivo. Ahora es <code>$pill</code>, igual que los
+              input.
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
       title: 'Versión 1.12.0',
       content: (
         <ul className="docs-list">
@@ -575,13 +608,13 @@ const ReleasesComponents: React.FC = () => {
         description={[
           'En esta sección se encuentran los versionados de la librería y la documentación de los cambios que se hicieron sobre cada versión de Obelisco.',
           <>
-            <p className="d-flex gap-1">
+            <span className="d-flex gap-1">
               Versión actual:{' '}
               <Link href="https://github.com/gcba/Obelisco-V2/releases" target="blank">
                 {versionPages.text}
               </Link>{' '}
               <i className="bxl bx-github mt-1" style={{ fontSize: '18px' }} />
-            </p>
+            </span>
           </>,
         ]}
         divider={true}

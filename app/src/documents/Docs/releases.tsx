@@ -31,22 +31,22 @@ const ReleasesComponents: React.FC = () => {
                 <li>
                   Etiquetas primarias y secundarias.
                   <br />
-                  <code>.badge-p-{'{color}'}</code>
+                  <code>.badge-p-{'{color}'}</code> y <code>.badge-s-{'{color}'}</code>
                 </li>
                 <li>
                   Etiquetas <strong>clickeables</strong>
                   <br />
-                  <code>.badge-s-{'{color}'}</code>
+                  <code>.badge-s-link-{'{color}'}</code>
                 </li>
                 <li>
                   Etiquetas seleccionables y eliminables
                   <br />
-                  <code>.badge-select</code>
+                  <code>.badge-select</code> y <code>.badge-select</code>
                 </li>
                 <li>
                   Tamaños de etiquetas
                   <br />
-                  <code>.badge-sm</code>
+                  <code>.badge-sm</code> y <code>.badge-lg</code>
                 </li>
               </ul>
               En{' '}

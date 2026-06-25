@@ -47,20 +47,82 @@ export const BADGE_CLICKEABLE_SECUNDARIA_SOLO_TEXTO = `<a href="#" class="badge 
 </a>
 `;
 
-export const BADGE_APARIENCIA = ` // Primarias
+export const BADGE_APARIENCIA = ` // Estáticas - Primarias
 <span class="badge badge-p-default">Etiqueta</span>
 <span class="badge badge-p-info">Etiqueta</span>
 <span class="badge badge-p-success">Etiqueta</span>
 <span class="badge badge-p-danger">Etiqueta</span>
 <span class="badge badge-p-warning">Etiqueta</span>
 <span class="badge badge-p-highlight">Etiqueta</span>
- // Secundarias
+ // Estáticas - Secundarias
 <span class="badge badge-s-default">Etiqueta</span>
 <span class="badge badge-s-info">Etiqueta</span>
 <span class="badge badge-s-success">Etiqueta</span>
 <span class="badge badge-s-danger">Etiqueta</span>
 <span class="badge badge-s-warning">Etiqueta</span>
 <span class="badge badge-s-highlight">Etiqueta</span>
+// Clickeables - Primarias
+<a href="#" class="badge badge-p-link-default" target="_blank" 
+rel="noopener noreferrer">
+  <span class="material-symbols-rounded">grid_view</span> 
+  <span>Etiqueta</span>
+</a>
+
+<a href="#" class="badge badge-p-link-info" target="_blank" 
+rel="noopener noreferrer">
+  <span class="material-symbols-rounded">grid_view</span> 
+  <span>Etiqueta</span>
+</a>
+
+<a href="#" class="badge badge-p-link-success" target="_blank" 
+rel="noopener noreferrer">
+  <span class="material-symbols-rounded">grid_view</span> 
+  <span>Etiqueta</span>
+</a>
+
+<a href="#" class="badge badge-p-link-warning" target="_blank" 
+rel="noopener noreferrer">
+  <span class="material-symbols-rounded">grid_view</span> 
+  <span>Etiqueta</span>
+</a>
+
+<a href="#" class="badge badge-p-link-highlight" target="_blank" 
+rel="noopener noreferrer">
+  <span class="material-symbols-rounded">grid_view</span> 
+  <span>Etiqueta</span>
+</a>
+
+
+// Clickeables - Secundarias
+<a href="#" class="badge badge-s-link-default" target="_blank" 
+rel="noopener noreferrer">
+  <span class="material-symbols-rounded">grid_view</span> 
+  <span>Etiqueta</span>
+</a>
+
+<a href="#" class="badge badge-s-link-info" target="_blank" 
+rel="noopener noreferrer">
+  <span class="material-symbols-rounded">grid_view</span> 
+  <span>Etiqueta</span>
+</a>
+
+<a href="#" class="badge badge-s-link-success" target="_blank" 
+rel="noopener noreferrer">
+  <span class="material-symbols-rounded">grid_view</span> 
+  <span>Etiqueta</span>
+</a>
+
+<a href="#" class="badge badge-s-link-warning" target="_blank" 
+rel="noopener noreferrer">
+  <span class="material-symbols-rounded">grid_view</span> 
+  <span>Etiqueta</span>
+</a>
+
+<a href="#" class="badge badge-s-link-highlight" target="_blank" 
+rel="noopener noreferrer">
+  <span class="material-symbols-rounded">grid_view</span> 
+  <span>Etiqueta</span>
+</a>
 `;
 
 export const BADGE_SELECT = `<label class="badge-toggle">

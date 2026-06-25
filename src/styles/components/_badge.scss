@@ -56,7 +56,6 @@ $badge-primary-border-color: (
 // - Fin | Variables Etiquetas secundarias -
 
 // Primarias Estaticas, con y sin ícono
-
 @mixin badge-secondary-static($color-name) {
   color: map-get($badge-secondary-font-color, $color-name);
   background-color: map-get($badge-secondary-bg, $color-name);
@@ -72,7 +71,6 @@ $badge-primary-border-color: (
 }
 
 // - Inicio | Primarias Clickeables, con y sin ícono
-
 @mixin badge-secondary-link($color-name) {
   $original-color: map-get($badge-secondary-font-color, $color-name);
   border: 1px solid $original-color;
@@ -170,7 +168,6 @@ $badge-primary-border-color: (
 // Fin | Secundarias Clickeables, con y sin ícono -
 
 // Mixin base para todas las etiquetas. Estilos por default
-
 @mixin badge-base {
   text-decoration: none;
   height: 24px;
@@ -225,7 +222,6 @@ $badge-primary-border-color: (
 }
 
 // Primarias Estaticas, con y sin ícono.badge-p-default, .badge-p-info
-
 @each $color-name, $color-value in $badge-secondary-bg {
   .badge-s-#{$color-name} {
     @include badge-secondary-static($color-name);
@@ -233,7 +229,6 @@ $badge-primary-border-color: (
 }
 
 // Primarias Clickeables, con y sin ícono .badge-p-link-default, .badge-p-link-info
-
 @each $color-name, $color-value in $badge-secondary-font-color {
   a.badge-s-link-#{$color-name} {
     @include badge-secondary-link($color-name);
@@ -241,7 +236,6 @@ $badge-primary-border-color: (
 }
 
 // Secundarias Estaticas, con y sin ícono.badge-s-default, .badge-s-info
-
 @each $color-name, $color-value in $badge-primary-bg {
   .badge-p-#{$color-name} {
     @include badge-primary-static($color-name);
@@ -249,7 +243,6 @@ $badge-primary-border-color: (
 }
 
 // Secundarias Clickeables, con y sin ícono .badge-s-link-default, .badge-s-link-info
-
 @each $color-name, $color-value in $badge-secondary-font-color {
   a.badge-p-link-#{$color-name} {
     @include badge-primary-link($color-name);
@@ -257,7 +250,6 @@ $badge-primary-border-color: (
 }
 
 // - Inicio Mixin para seleccionables y eliminables
-
 @mixin badge-select-remove-base {
   @include badge-base;
   background-color: $white;
@@ -338,7 +330,6 @@ a.badge-remove {
 // Fin eliminable -
 
 // - Inicio Seleccionables
-
 .badge-select {
   @include badge-select-remove-base;
   background-color: $white;

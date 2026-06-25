@@ -524,7 +524,7 @@ const sections = [
     content: (
       <ul className="docs-list">
         <p className="text-md mt-4 mb-2">
-          <strong>Versión 1.10.0 ⬇️</strong>
+          <strong>Versión 1.13.0 ⬇️</strong>
         </p>
 
         <li> Se crearon nuevas clases (primarias y secundarias) para etiquetas.</li>
@@ -563,14 +563,14 @@ const sections = [
         </ul>
         <li>Se crearon nuevas variantes de etiquetas Seleccionables y Eliminables:</li>
         <ul>
-          {/* Tamaños */}
+          {/* Seleccionables y eliminables */}
           <li>
             <code>.badge-select</code>
           </li>
           <li>
             <code>.badge-remove</code>
           </li>
-          {/* Tamaños */}
+          {/* Seleccionables y eliminables */}
         </ul>
 
         <p className="text-md mt-4 mb-2">

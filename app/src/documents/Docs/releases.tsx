@@ -34,7 +34,7 @@ const ReleasesComponents: React.FC = () => {
                   <code>.badge-p-{'{color}'}</code> y <code>.badge-s-{'{color}'}</code>
                 </li>
                 <li>
-                  Etiquetas <strong>clickeables</strong>
+                  Etiquetas clickeables
                   <br />
                   <code>.badge-s-link-{'{color}'}</code>
                 </li>

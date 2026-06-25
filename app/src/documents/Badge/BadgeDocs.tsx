@@ -181,65 +181,73 @@ const BadgeDocs: React.FC = () => {
       title: 'Apariencia',
       content: (
         <CodeBox codeHTML={BADGE_APARIENCIA}>
-          <div className="row justify-content-center align-items-center gap-3">
+          <div className="row justify-content-center align-items-center gap-3 px-3 px-md-0">
             <div className="col-auto">
               <p>Estáticas</p>
-              <span className="badge badge-p-default">Etiqueta</span>
-              <span className="badge badge-p-info">Etiqueta</span>
-              <span className="badge badge-p-success">Etiqueta</span>
-              <span className="badge badge-p-danger">Etiqueta</span>
-              <span className="badge badge-p-warning">Etiqueta</span>
-              <span className="badge badge-p-highlight">Etiqueta</span>
+              <div className="d-flex row-gap-2 flex-wrap">
+                <span className="badge badge-p-default">Etiqueta</span>
+                <span className="badge badge-p-info">Etiqueta</span>
+                <span className="badge badge-p-success">Etiqueta</span>
+                <span className="badge badge-p-danger">Etiqueta</span>
+                <span className="badge badge-p-warning">Etiqueta</span>
+                <span className="badge badge-p-highlight">Etiqueta</span>
+              </div>
             </div>
             <div className="col-auto">
-              <span className="badge badge-s-default">Etiqueta</span>
-              <span className="badge badge-s-info">Etiqueta</span>
-              <span className="badge badge-s-success">Etiqueta</span>
-              <span className="badge badge-s-danger">Etiqueta</span>
-              <span className="badge badge-s-warning">Etiqueta</span>
-              <span className="badge badge-s-highlight">Etiqueta</span>
+              <div className="d-flex row-gap-2 flex-wrap">
+                <span className="badge badge-s-default">Etiqueta</span>
+                <span className="badge badge-s-info">Etiqueta</span>
+                <span className="badge badge-s-success">Etiqueta</span>
+                <span className="badge badge-s-danger">Etiqueta</span>
+                <span className="badge badge-s-warning">Etiqueta</span>
+                <span className="badge badge-s-highlight">Etiqueta</span>
+              </div>
             </div>
             {/* Clickeables */}
             <div className="col-auto">
               <p>Clickeables</p>
-              <LinkClient className="badge badge-p-link-default">
-                <span>Etiqueta</span>
-              </LinkClient>
-              <LinkClient className="badge badge-p-link-info">
-                <span>Etiqueta</span>
-              </LinkClient>
-              <LinkClient className="badge badge-p-link-success">
-                <span>Etiqueta</span>
-              </LinkClient>
-              <LinkClient className="badge badge-p-link-danger">
-                <span>Etiqueta</span>
-              </LinkClient>
-              <LinkClient className="badge badge-p-link-warning">
-                <span>Etiqueta</span>
-              </LinkClient>
-              <LinkClient className="badge badge-p-link-highlight">
-                <span>Etiqueta</span>
-              </LinkClient>
+              <div className="d-flex row-gap-2 flex-wrap">
+                <LinkClient className="badge badge-p-link-default">
+                  <span>Etiqueta</span>
+                </LinkClient>
+                <LinkClient className="badge badge-p-link-info">
+                  <span>Etiqueta</span>
+                </LinkClient>
+                <LinkClient className="badge badge-p-link-success">
+                  <span>Etiqueta</span>
+                </LinkClient>
+                <LinkClient className="badge badge-p-link-danger">
+                  <span>Etiqueta</span>
+                </LinkClient>
+                <LinkClient className="badge badge-p-link-warning">
+                  <span>Etiqueta</span>
+                </LinkClient>
+                <LinkClient className="badge badge-p-link-highlight">
+                  <span>Etiqueta</span>
+                </LinkClient>
+              </div>
             </div>
             <div className="col-auto">
-              <LinkClient className="badge badge-s-link-default">
-                <span>Etiqueta</span>
-              </LinkClient>
-              <LinkClient className="badge badge-s-link-info">
-                <span>Etiqueta</span>
-              </LinkClient>
-              <LinkClient className="badge badge-s-link-success">
-                <span>Etiqueta</span>
-              </LinkClient>
-              <LinkClient className="badge badge-s-link-danger">
-                <span>Etiqueta</span>
-              </LinkClient>
-              <LinkClient className="badge badge-s-link-warning">
-                <span>Etiqueta</span>
-              </LinkClient>
-              <LinkClient className="badge badge-s-link-highlight">
-                <span>Etiqueta</span>
-              </LinkClient>
+              <div className="d-flex row-gap-2 flex-wrap">
+                <LinkClient className="badge badge-s-link-default">
+                  <span>Etiqueta</span>
+                </LinkClient>
+                <LinkClient className="badge badge-s-link-info">
+                  <span>Etiqueta</span>
+                </LinkClient>
+                <LinkClient className="badge badge-s-link-success">
+                  <span>Etiqueta</span>
+                </LinkClient>
+                <LinkClient className="badge badge-s-link-danger">
+                  <span>Etiqueta</span>
+                </LinkClient>
+                <LinkClient className="badge badge-s-link-warning">
+                  <span>Etiqueta</span>
+                </LinkClient>
+                <LinkClient className="badge badge-s-link-highlight">
+                  <span>Etiqueta</span>
+                </LinkClient>
+              </div>
             </div>
           </div>
         </CodeBox>

@@ -15,15 +15,24 @@ $badge-secondary-bg: (
 
 $badge-secondary-font-color: (
   default: $badge-color,
+  info: $sky-600,
+  success: $green-600,
+  danger: $red-600,
+  warning: $orange-600,
+  highlight: $purple-600,
+);
+
+$badge-secondary-border-color: (
+  default: $badge-color,
   info: $sky-800,
-  success: $green-900,
-  danger: $red-900,
-  warning: $orange-900,
+  success: $green-800,
+  danger: $red-800,
+  warning: $orange-800,
   highlight: $purple-800,
 );
 
 $badge-secondary-hover-bg: (
-  default: $blue-200,
+  default: $slate-200,
   info: $sky-100,
   success: $green-100,
   danger: $red-100,
@@ -36,15 +45,24 @@ $badge-secondary-hover-bg: (
 // - Inicio | Variables Etiquetas secundarias
 
 $badge-primary-bg: (
-  default: $slate-800,
-  info: $sky-700,
-  success: $green-700,
-  danger: $red-700,
-  warning: $orange-700,
-  highlight: $purple-700,
+  default: $slate-600,
+  info: $sky-600,
+  success: $green-600,
+  danger: $red-600,
+  warning: $orange-600,
+  highlight: $purple-600,
 );
 
 $badge-primary-border-color: (
+  default: $blue-900,
+  info: $sky-800,
+  success: $green-800,
+  danger: $red-800,
+  warning: $orange-800,
+  highlight: $purple-800,
+);
+
+$badge-primary-hover-color: (
   default: $slate-900,
   info: $sky-800,
   success: $green-800,
@@ -73,7 +91,7 @@ $badge-primary-border-color: (
 // - Inicio | Primarias Clickeables, con y sin ícono
 @mixin badge-secondary-link($color-name) {
   $original-color: map-get($badge-secondary-font-color, $color-name);
-  border: 1px solid $original-color;
+  border: 1px solid map-get($badge-secondary-border-color, $color-name);
   color: $original-color;
   background-color: map-get($badge-secondary-bg, $color-name);
   text-decoration: none;
@@ -137,7 +155,7 @@ $badge-primary-border-color: (
   &.hover {
     border: 1px solid $original-border-color;
     color: $white;
-    background-color: map-get($badge-primary-border-color, $color-name);
+    background-color: map-get($badge-primary-hover-color, $color-name);
     text-decoration: none;
 
     span.material-symbols-rounded {

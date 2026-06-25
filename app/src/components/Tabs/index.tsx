@@ -25,6 +25,8 @@ export const TabItem: React.FC<TabItemProps> = ({ id, title, icon, urlDemo, acti
         type="button"
         role="tab"
         aria-controls={id}
+        aria-selected={activeTab === id}
+        tabIndex={activeTab === id ? 0 : -1}
         onClick={id !== '#' ? () => setActiveTab(id) : undefined}
       >
         <div className="nav-icon">

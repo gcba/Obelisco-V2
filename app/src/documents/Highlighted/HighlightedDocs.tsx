@@ -677,15 +677,7 @@ const HighlightedDocs: React.FC = () => {
             <div className="container">
               <ZoomContainer>
                 <div className="panel-horizontal-content panel-horizontal-container">
-                  <div className="panel-horizontal">
-                    <Image
-                      src={`${basePath}/images/destacado.jpg`}
-                      alt="descripción de imagen"
-                      className="panel-img"
-                      width={538}
-                      height={304}
-                    ></Image>
-
+                  <div className="panel-horizontal panel-inverted">
                     <div className="panel-body">
                       <h2 className="panel-title">Título del destacado</h2>
                       <p className="panel-text">
@@ -698,6 +690,14 @@ const HighlightedDocs: React.FC = () => {
                         <LinkClient className="btn btn-outline-primary btn-lg">Botón</LinkClient>
                       </div>
                     </div>
+
+                    <Image
+                      src={`${basePath}/images/destacado.jpg`}
+                      alt="descripción de imagen"
+                      className="panel-img"
+                      width={538}
+                      height={304}
+                    ></Image>
                   </div>
                 </div>
                 <br />
@@ -765,14 +765,6 @@ const HighlightedDocs: React.FC = () => {
               <ZoomContainer>
                 <div className="panel-horizontal-content panel-horizontal-container bg-gradient-blue p-0">
                   <div className="panel-horizontal">
-                    <Image
-                      src={`${basePath}/images/highlighted/bax-phone.png`}
-                      alt="descripción de imagen"
-                      className="panel-img"
-                      width={538}
-                      height={304}
-                    ></Image>
-
                     <div className="panel-body">
                       <h2 className="panel-title">Título del destacado</h2>
                       <p className="panel-text">
@@ -785,6 +777,14 @@ const HighlightedDocs: React.FC = () => {
                         <LinkClient className="btn btn-outline-light btn-lg">Botón</LinkClient>
                       </div>
                     </div>
+
+                    <Image
+                      src={`${basePath}/images/highlighted/bax-phone.png`}
+                      alt="descripción de imagen"
+                      className="panel-img"
+                      width={538}
+                      height={304}
+                    ></Image>
                   </div>
                 </div>
               </ZoomContainer>
@@ -802,14 +802,6 @@ const HighlightedDocs: React.FC = () => {
               <ZoomContainer>
                 <div className="panel-horizontal-content panel-horizontal-container bg-gradient-blue p-0">
                   <div className="panel-horizontal panel-inverted">
-                    <Image
-                      src={`${basePath}/images/highlighted/bax-phone.png`}
-                      alt="descripción de imagen"
-                      className="panel-img"
-                      width={538}
-                      height={304}
-                    ></Image>
-
                     <div className="panel-body">
                       <h2 className="panel-title">Título del destacado</h2>
                       <p className="panel-text">
@@ -822,6 +814,14 @@ const HighlightedDocs: React.FC = () => {
                         <LinkClient className="btn btn-outline-light btn-lg">Botón</LinkClient>
                       </div>
                     </div>
+
+                    <Image
+                      src={`${basePath}/images/highlighted/bax-phone.png`}
+                      alt="descripción de imagen"
+                      className="panel-img"
+                      width={538}
+                      height={304}
+                    ></Image>
                   </div>
                 </div>
               </ZoomContainer>

@@ -12,6 +12,12 @@
   border-radius: 0;
   border: none;
 
+  @if $flex-direction == row {
+    &.panel-inverted {
+      flex-direction: row-reverse;
+    }
+  }
+
   .panel-img,
   video {
     width: 100%;
@@ -174,12 +180,6 @@
     @extend .container;
     align-items: center;
     @include panel-content(row, xl);
-
-    &.panel-inverted {
-      @include media-breakpoint-up(xl) {
-        flex-direction: row;
-      }
-    }
 
     .panel-body {
       // color: white;
@@ -437,7 +437,7 @@ $gradient-text-colors: (
             }
 
             @include media-breakpoint-up(xl) {
-              padding: 64px 0 64px 64px;
+              padding: 64px 64px 64px 0;
               max-width: 50%;
             }
           }
@@ -445,7 +445,7 @@ $gradient-text-colors: (
           &.panel-inverted {
             .panel-body {
               @include media-breakpoint-up(xl) {
-                padding: 64px 64px 64px 0;
+                padding: 64px 0 64px 64px;
               }
             }
           }

@@ -175,6 +175,12 @@
     align-items: center;
     @include panel-content(row, xl);
 
+    &.panel-inverted {
+      @include media-breakpoint-up(xl) {
+        flex-direction: row;
+      }
+    }
+
     .panel-body {
       // color: white;
       h2.panel-title {
@@ -373,7 +379,7 @@ $gradient-text-colors: (
     max-width: unset !important;
     padding: 0 !important;
 
-    &.inverted {
+    &.panel-inverted {
       @include media-breakpoint-up(xl) {
         flex-direction: row;
       }
@@ -381,10 +387,6 @@ $gradient-text-colors: (
 
     .panel-img {
       border-radius: $border-radius-5xl;
-
-      // width: 538px;
-      // height: 304px;
-      // object-fit: fill;
     }
 
     .panel-body {
@@ -400,21 +402,6 @@ $gradient-text-colors: (
 
       .panel-footer {
         margin-top: 20px;
-
-        // .btn {
-        //   border-radius: 30px;
-        //   padding: 12px 20px;
-        //   min-width: 193px;
-
-        //   &.btn-primary {
-        //     background-color: #336acc;
-        //     border: none;
-        //   }
-
-        //   &.btn-outline-light {
-        //     border-color: white;
-        //   }
-        // }
       }
     }
 
@@ -455,13 +442,13 @@ $gradient-text-colors: (
             }
           }
 
-					&.inverted {
-						.panel-body {
-							@include media-breakpoint-up(xl) {
-								padding: 64px 64px 64px 0;
-							}
-						}
-					}
+          &.panel-inverted {
+            .panel-body {
+              @include media-breakpoint-up(xl) {
+                padding: 64px 64px 64px 0;
+              }
+            }
+          }
         }
 
         .panel-img {

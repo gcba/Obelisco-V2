@@ -652,7 +652,7 @@ const HighlightedDocs: React.FC = () => {
                     ></Image>
 
                     <div className="panel-body">
-                      <p className="panel-title">Título del destacado</p>
+                      <h2 className="panel-title">Título del destacado</h2>
                       <p className="panel-text">
                         Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
                         negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
@@ -660,6 +660,56 @@ const HighlightedDocs: React.FC = () => {
                       </p>
                       <div className="panel-footer">
                         <LinkClient className="btn btn-primary btn-lg">Botón</LinkClient>
+                        <LinkClient className="btn btn-outline-primary btn-lg">Botón</LinkClient>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <div className="panel-horizontal-content panel-horizontal-container bg-light">
+                  <div className="panel-horizontal">
+                    <Image
+                      src={`${basePath}/images/destacado.jpg`}
+                      alt="descripción de imagen"
+                      className="panel-img"
+                      width={538}
+                      height={304}
+                    ></Image>
+
+                    <div className="panel-body">
+                      <h2 className="panel-title">Título del destacado</h2>
+                      <p className="panel-text">
+                        Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
+                        negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
+                        líneas. No puede contener negritas ni enlaces
+                      </p>
+                      <div className="panel-footer">
+                        <LinkClient className="btn btn-primary btn-lg">Botón</LinkClient>
+                        <LinkClient className="btn btn-outline-primary btn-lg">Botón</LinkClient>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <div className="panel-horizontal-content panel-horizontal-container bg-dark">
+                  <div className="panel-horizontal">
+                    <Image
+                      src={`${basePath}/images/destacado.jpg`}
+                      alt="descripción de imagen"
+                      className="panel-img"
+                      width={538}
+                      height={304}
+                    ></Image>
+
+                    <div className="panel-body">
+                      <h2 className="panel-title">Título del destacado</h2>
+                      <p className="panel-text">
+                        Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
+                        negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
+                        líneas. No puede contener negritas ni enlaces
+                      </p>
+                      <div className="panel-footer">
+                        <LinkClient className="btn btn-light btn-lg">Botón</LinkClient>
                         <LinkClient className="btn btn-outline-light btn-lg">Botón</LinkClient>
                       </div>
                     </div>
@@ -733,8 +783,8 @@ const HighlightedDocs: React.FC = () => {
                         líneas. No puede contener negritas ni enlaces
                       </p>
                       <div className="panel-footer">
-                        <LinkClient className="btn btn-light btn-lg">Botón</LinkClient>
-                        <LinkClient className="btn btn-outline-light btn-lg">Botón</LinkClient>
+                        <LinkClient className="btn btn-primary btn-lg">Botón</LinkClient>
+                        <LinkClient className="btn btn-outline-primary btn-lg">Botón</LinkClient>
                       </div>
                     </div>
                   </div>
@@ -763,7 +813,7 @@ const HighlightedDocs: React.FC = () => {
                       </p>
                       <div className="panel-footer">
                         <LinkClient className="btn btn-light btn-lg">Botón</LinkClient>
-                        <LinkClient className="btn btn-outline-light btn-lg">Botón</LinkClient>
+                        <LinkClient className="btn btn-outline-primary btn-lg">Botón</LinkClient>
                       </div>
                     </div>
                   </div>

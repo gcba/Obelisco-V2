@@ -338,32 +338,49 @@ $gradient-text-colors: (
 .panel-horizontal-container {
   @extend .panel-horizontal-content;
   padding: 64px;
-  max-height: 388px;
+  // max-height: 388px;
+  height: auto;
   max-width: 1109px;
-  background-color: #101e37;
-  border-radius: 30px;
+  background-color: $white;
+  border-radius: $border-radius-6xl;
+
+  @include media-breakpoint-down(xl) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &.bg-dark {
+    color: $white;
+    .panel-horizontal {
+      .panel-body {
+        p.panel-title {
+          color: $white;
+        }
+      }
+    }
+  }
 
   .panel-horizontal {
     display: flex;
     flex-direction: row-reverse;
+    @include panel-content(row, xl);
 
     &.inverted {
       flex-direction: row;
     }
 
     .panel-img {
-      width: 404px;
-      height: 228px;
-      object-fit: fill;
+      border-radius: $border-radius-5xl;
+      // width: 538px;
+      // height: 304px;
+      // object-fit: fill;
     }
 
     .panel-body {
-      color: white;
+      color: $body-color;
 
       p.panel-title {
-        font-size: 36px;
-        line-height: 28px;
-        margin-bottom: 20px;
+        @extend .h5;
       }
 
       p.panel-text {
@@ -373,20 +390,20 @@ $gradient-text-colors: (
       .panel-footer {
         margin-top: 20px;
 
-        .btn {
-          border-radius: 30px;
-          padding: 12px 20px;
-          min-width: 193px;
+        // .btn {
+        //   border-radius: 30px;
+        //   padding: 12px 20px;
+        //   min-width: 193px;
 
-          &.btn-primary {
-            background-color: #336acc;
-            border: none;
-          }
+        //   &.btn-primary {
+        //     background-color: #336acc;
+        //     border: none;
+        //   }
 
-          &.btn-outline-light {
-            border-color: white;
-          }
-        }
+        //   &.btn-outline-light {
+        //     border-color: white;
+        //   }
+        // }
       }
     }
 

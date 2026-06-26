@@ -678,7 +678,7 @@ const HighlightedDocs: React.FC = () => {
           <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTONS_DARK}>
             <div className="container">
               <ZoomContainer>
-                <div className="panel-horizontal-content panel-horizontal-container bg-panel-horizontal-gradient-cyan">
+                <div className="panel-horizontal-content panel-horizontal-container bg-gradient-blue">
                   <div className="panel-horizontal d-flex flex-row-reverse">
                     <Image
                       src={`${basePath}/images/highlighted/bax-phone.png`}

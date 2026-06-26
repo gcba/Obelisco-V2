@@ -476,7 +476,7 @@ $gradient-colors: (
   }
 
   @each $name, $color in $gradient-colors {
-    &.bg-panel-horizontal-gradient-#{$name} {
+    &.bg-gradient-#{$name} {
       @include bg-gradient-color(list.nth($color, 1), list.nth($color, 2));
       padding: 0;
       position: relative;

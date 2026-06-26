@@ -783,8 +783,8 @@ const HighlightedDocs: React.FC = () => {
                         líneas. No puede contener negritas ni enlaces
                       </p>
                       <div className="panel-footer">
-                        <LinkClient className="btn btn-primary btn-lg">Botón</LinkClient>
-                        <LinkClient className="btn btn-outline-primary btn-lg">Botón</LinkClient>
+                        <LinkClient className="btn btn-light btn-lg">Botón</LinkClient>
+                        <LinkClient className="btn btn-outline-light btn-lg">Botón</LinkClient>
                       </div>
                     </div>
                   </div>
@@ -813,7 +813,7 @@ const HighlightedDocs: React.FC = () => {
                       </p>
                       <div className="panel-footer">
                         <LinkClient className="btn btn-light btn-lg">Botón</LinkClient>
-                        <LinkClient className="btn btn-outline-primary btn-lg">Botón</LinkClient>
+                        <LinkClient className="btn btn-outline-light btn-lg">Botón</LinkClient>
                       </div>
                     </div>
                   </div>

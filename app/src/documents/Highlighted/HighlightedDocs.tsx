@@ -642,7 +642,7 @@ const HighlightedDocs: React.FC = () => {
             <div className="container">
               <ZoomContainer>
                 <div className="panel-horizontal-content panel-horizontal-container">
-                  <div className="panel-horizontal d-flex flex-row-reverse">
+                  <div className="panel-horizontal">
                     <Image
                       src={`${basePath}/images/destacado.jpg`}
                       alt="descripción de imagen"
@@ -679,7 +679,7 @@ const HighlightedDocs: React.FC = () => {
             <div className="container">
               <ZoomContainer>
                 <div className="panel-horizontal-content panel-horizontal-container bg-gradient-blue p-0">
-                  <div className="panel-horizontal d-flex flex-row-reverse">
+                  <div className="panel-horizontal">
                     <Image
                       src={`${basePath}/images/highlighted/bax-phone.png`}
                       alt="descripción de imagen"
@@ -689,7 +689,7 @@ const HighlightedDocs: React.FC = () => {
                     ></Image>
 
                     <div className="panel-body">
-                      <p className="panel-title">Título del destacado</p>
+                      <h2 className="panel-title">Título del destacado</h2>
                       <p className="panel-text">
                         Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
                         negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
@@ -716,7 +716,7 @@ const HighlightedDocs: React.FC = () => {
             <div className="container">
               <ZoomContainer>
                 <div className="panel-horizontal-content panel-horizontal-container bg-gradient-blue p-0">
-                  <div className="panel-horizontal d-flex">
+                  <div className="panel-horizontal inverted">
                     <Image
                       src={`${basePath}/images/highlighted/bax-phone.png`}
                       alt="descripción de imagen"
@@ -726,7 +726,7 @@ const HighlightedDocs: React.FC = () => {
                     ></Image>
 
                     <div className="panel-body">
-                      <p className="panel-title">Título del destacado</p>
+                      <h2 className="panel-title">Título del destacado</h2>
                       <p className="panel-text">
                         Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
                         negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
@@ -755,7 +755,7 @@ const HighlightedDocs: React.FC = () => {
                 <div className="panel-horizontal-content panel-horizontal-container bg-gradient-blue">
                   <div className="panel-horizontal">
                     <div className="panel-body">
-                      <p className="panel-title">Título del destacado</p>
+                      <h2 className="panel-title">Título del destacado</h2>
                       <p className="panel-text">
                         Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
                         negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas

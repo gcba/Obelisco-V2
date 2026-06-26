@@ -327,8 +327,8 @@ $gradient-colors: (
 );
 
 $gradient-text-colors: (
-	'cyan': $white,
-	'blue': $white
+  'cyan': $white,
+  'blue': $white,
 );
 
 @mixin bg-gradient-color($color1, $color2) {
@@ -344,12 +344,12 @@ $gradient-text-colors: (
   border-radius: 30px;
 
   .panel-horizontal {
-		display: flex;
-		flex-direction: row-reverse;
+    display: flex;
+    flex-direction: row-reverse;
 
-		&.inverted {
-			flex-direction: row;
-		}
+    &.inverted {
+      flex-direction: row;
+    }
 
     .panel-img {
       width: 404px;
@@ -390,12 +390,12 @@ $gradient-text-colors: (
       }
     }
 
-    &:not(:has(.panel-img)) {			
-			display: block;
+    &:not(:has(.panel-img)) {
+      display: block;
 
-			.panel-body {
-				max-width: 80%;
-			}		
+      .panel-body {
+        max-width: 80%;
+      }
     }
   }
 
@@ -406,9 +406,9 @@ $gradient-text-colors: (
       overflow: hidden;
 
       .panel-horizontal {
-				.panel-body {
-					color: map-get($gradient-text-colors, $name);
-				}
+        .panel-body {
+          color: map-get($gradient-text-colors, $name);
+        }
 
         &:has(.panel-img) {
           .panel-body {

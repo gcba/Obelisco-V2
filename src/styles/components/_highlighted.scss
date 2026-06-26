@@ -313,102 +313,6 @@
   }
 }
 /* COMPONENTE DEPRECADO - BLOQUE DE TRAMITE */
-// panel invertido
-// .panel-horizontal-container.panel-horizontal-content {
-.panel-horizontal-container {
-  @extend .panel-horizontal-content;
-  padding: 64px;
-  max-height: 388px;
-  max-width: 1109px;
-  background-color: #101e37;
-  border-radius: 30px;
-
-  .panel-horizontal {
-    .panel-img {
-      width: 404px;
-      height: 228px;
-      object-fit: fill;
-    }
-
-    .panel-body {
-      color: white;
-
-      p.panel-title {
-        font-size: 36px;
-        line-height: 28px;
-        margin-bottom: 20px;
-      }
-
-      p.panel-text {
-        margin-bottom: 0;
-      }
-
-      .panel-footer {
-        margin-top: 20px;
-
-        .btn {
-          border-radius: 30px;
-          padding: 12px 20px;
-          min-width: 193px;
-
-          &.btn-primary {
-            background-color: #336acc;
-            border: none;
-          }
-
-          &.btn-outline-light {
-            border-color: white;
-          }
-        }
-      }
-    }
-  }
-}
-
-// @media (max-width: 1120px) {
-//   padding: 34px;
-//   max-height: 100%;
-
-//   img {
-//     width: 100%;
-//     /*
-//                           minimo de alto 200px,
-//                           si 44vw da menos de 200px usa 180px
-//                           si 44vw da más de 500px usa 500px
-//                           si está entre ambos - usa el valor calculado (44vw). Ese valor se recalcula continuamente según el tamaño de la pantalla
-//                           usar valor-flexible PERO nunca menor al mínimo y nunca mayor al máximo
-//                           */
-//     height: clamp(200px, 44vw, 500px);
-//     object-fit: cover;
-//   }
-
-//   .card.panel-horizontal {
-//     width: 100%;
-//     flex-direction: column;
-
-//     .card-body {
-//       .card-text {
-//         font-size: 18px;
-//       }
-//     }
-//   }
-// }
-
-// Destacado gradiente
-$gradient-colors: (
-  'cyan': (
-    $sky-900,
-    #8ce1d7,
-  ),
-  'blue': (
-    $blue-900,
-    $blue-500,
-  ),
-);
-
-@mixin bg-gradient-color($color1, $color2) {
-  background: linear-gradient(180deg, $color1 0%, $color2 100%);
-}
 
 // Destacado container
 $gradient-colors: (
@@ -473,20 +377,29 @@ $gradient-colors: (
         }
       }
     }
+
+    &:not(:has(.panel-img)) {
+      .panel-body {
+        max-width: 80%;
+      }
+    }
   }
 
   @each $name, $color in $gradient-colors {
     &.bg-gradient-#{$name} {
       @include bg-gradient-color(list.nth($color, 1), list.nth($color, 2));
-      padding: 0;
+
+      // padding: 0;
       position: relative;
       overflow: hidden;
 
       .panel-horizontal {
-        .panel-body {
-          padding: 64px 0 64px 64px;
-          max-width: 50%;
-          position: relative;
+        &:has(.panel-img) {
+          .panel-body {
+            padding: 64px 0 64px 64px;
+            max-width: 50%;
+            position: relative;
+          }
         }
 
         .panel-img {

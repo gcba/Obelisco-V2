@@ -135,58 +135,6 @@ export const BADGE_SELECT = `<label class="badge-toggle">
   <span class="badge badge-select">Etiqueta</span>
 </label>`;
 
-export const BADGE_TYPES = `// Default
-<a href="#" class="badge badge-default">
-  ETIQUETA
-</a>
-<a href="#" class="badge badge-default hover">
-  ETIQUETA
-</a>
-<a href="#" class="badge badge-default focus">
-  ETIQUETA
-</a>
-// Danger
-<a href="#" class="badge badge-s-red">
-  ETIQUETA
-</a>
-<a href="#" class="badge badge-s-red hover">
-  ETIQUETA
-</a>
-<a href="#" class="badge badge-s-red focus">
-  ETIQUETA
-</a>
-// Info
-<a href="#" class="badge badge-s-info">
-  ETIQUETA
-</a>
-<a href="#" class="badge badge-s-info hover">
-  ETIQUETA
-</a>
-<a href="#" class="badge badge-s-info focus">
-  ETIQUETA
-</a>
-// Success
-<a href="#" class="badge badge-s-success">
-  ETIQUETA
-</a>
-<a href="#" class="badge badge-s-success hover">
-  ETIQUETA
-</a>
-<a href="#" class="badge badge-s-success focus">
-  ETIQUETA
-</a>
-// Warning
-<a href="#" class="badge badge-s-warning">
-  ETIQUETA
-</a>
-<a href="#" class="badge badge-s-warning hover">
-  ETIQUETA
-</a>
-<a href="#" class="badge badge-s-warning focus">
-  ETIQUETA
-</a>
-`;
-
 export const BADGE_ACCESSIBLITY = `
 <span class="badge badge-default">Cultura</span>
 

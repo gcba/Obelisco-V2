@@ -249,9 +249,9 @@ export const HERO_CON_ETIQUETAS = `<header class="hero">
       </div>
       <div class="d-flex flex-wrap column-gap-2 row-gap-4">
         <span class="me-3 fw-semibold">Texto de las etiquetas: </span>
-        <span class="badge badge-default">Etiqueta</span>
-        <span class="badge badge-default">Etiqueta</span>
-        <span class="badge badge-default">Etiqueta</span>
+        <span class="badge badge-s-default">Etiqueta</span>
+        <span class="badge badge-s-default">Etiqueta</span>
+        <span class="badge badge-s-default">Etiqueta</span>
       </div>
     </div>
   </div>

@@ -46,7 +46,7 @@ export const WITHOUT_DIVIDERS = `
                     </label>
                 </div>
             </td>
-            <td><span class="badge badge-default">Texto predeterminado</span></td>
+            <td><span class="badge badge-s-default">Texto predeterminado</span></td>
             </tr>
             <tr>
             <td class="text-right">2</td>
@@ -73,7 +73,7 @@ export const WITHOUT_DIVIDERS = `
                     </label>
                 </div>
             </td>
-            <td><span class="badge badge-s-red">Texto predeterminado</span></td>
+            <td><span class="badge badge-s-danger">Texto predeterminado</span></td>
             </tr>
             <tr>
             <td class="text-right">3</td>
@@ -178,7 +178,7 @@ export const WITH_DIVIDERS = `
                     </label>
                 </div>
             </td>
-            <td><span class="badge badge-default">Texto predeterminado</span></td>
+            <td><span class="badge badge-s-default">Texto predeterminado</span></td>
             </tr>
             <tr>
             <td class="text-right">2</td>
@@ -310,7 +310,7 @@ export const WITH_ZEBRA = `
                     </label>
                 </div>
             </td>
-            <td><span class="badge badge-default">Texto predeterminado</span></td>
+            <td><span class="badge badge-s-default">Texto predeterminado</span></td>
             </tr>
             <tr>
             <td class="text-right">2</td>
@@ -391,7 +391,7 @@ export const WITH_ZEBRA = `
                     </label>
                 </div>
             </td>
-            <td><span class="badge badge-s-red">Texto predeterminado</span></td>
+            <td><span class="badge badge-s-danger">Texto predeterminado</span></td>
             </tr>
         </tbody>
     </table>
@@ -688,14 +688,14 @@ export const TABLE_TAG = `
                 <td>Texto predeterminado</td>
                 <td>Texto predeterminado</td>
                 <td>Texto predeterminado</td>
-                <td><span class="badge badge-default">Texto predeterminado</span></td>
+                <td><span class="badge badge-s-default">Texto predeterminado</span></td>
             </tr>
             <tr>
                 <td>Texto predeterminado</td>
                 <td>Texto predeterminado</td>
                 <td>Texto predeterminado</td>
                 <td>Texto predeterminado</td>
-                <td><span class="badge badge-s-red">Texto predeterminado</span></td>
+                <td><span class="badge badge-s-danger">Texto predeterminado</span></td>
             </tr>
             <tr>
                 <td>Texto predeterminado</td>

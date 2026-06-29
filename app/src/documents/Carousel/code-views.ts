@@ -411,8 +411,8 @@ export const CAROUSEL_CARDS = `<div id="carousel-cards" class="carousel cards sl
 						<img class="card-img" src="images/card-img-top.jpg" alt="descripción de imagen" />
 						<div class="card-body">
 							<div class="card-badges">
-									<span class="badge badge-default">etiqueta 1</span>
-									<span class="badge badge-default">etiqueta 2</span>
+									<span class="badge badge-s-default">etiqueta 1</span>
+									<span class="badge badge-s-default">etiqueta 2</span>
 							</div>
 							<h3 class="card-title">
 								<a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -432,8 +432,8 @@ export const CAROUSEL_CARDS = `<div id="carousel-cards" class="carousel cards sl
 						<img class="card-img" src="images/card-img-top.jpg" alt="descripción de imagen" />
 						<div class="card-body">
 							<div class="card-badges">
-									<span class="badge badge-default">etiqueta 1</span>
-									<span class="badge badge-default">etiqueta 2</span>
+									<span class="badge badge-s-default">etiqueta 1</span>
+									<span class="badge badge-s-default">etiqueta 2</span>
 							</div>
 							<h3 class="card-title">
 								<a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -453,8 +453,8 @@ export const CAROUSEL_CARDS = `<div id="carousel-cards" class="carousel cards sl
 						<img class="card-img" src="images/card-img-top.jpg" alt="descripción de imagen" />
 						<div class="card-body">
 							<div class="card-badges">
-									<span class="badge badge-default">etiqueta 1</span>
-									<span class="badge badge-default">etiqueta 2</span>
+									<span class="badge badge-s-default">etiqueta 1</span>
+									<span class="badge badge-s-default">etiqueta 2</span>
 							</div>
 							<h3 class="card-title">
 								<a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -478,8 +478,8 @@ export const CAROUSEL_CARDS = `<div id="carousel-cards" class="carousel cards sl
 						<img class="card-img" src="images/card-img-top.jpg" alt="descripción de imagen" />
 						<div class="card-body">
 							<div class="card-badges">
-									<span class="badge badge-default">etiqueta 1</span>
-									<span class="badge badge-default">etiqueta 2</span>
+									<span class="badge badge-s-default">etiqueta 1</span>
+									<span class="badge badge-s-default">etiqueta 2</span>
 							</div>
 							<h3 class="card-title">
 								<a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -499,8 +499,8 @@ export const CAROUSEL_CARDS = `<div id="carousel-cards" class="carousel cards sl
 						<img class="card-img" src="images/card-img-top.jpg" alt="descripción de imagen" />
 						<div class="card-body">
 							<div class="card-badges">
-									<span class="badge badge-default">etiqueta 1</span>
-									<span class="badge badge-default">etiqueta 2</span>
+									<span class="badge badge-s-default">etiqueta 1</span>
+									<span class="badge badge-s-default">etiqueta 2</span>
 							</div>
 							<h3 class="card-title">
 								<a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -520,8 +520,8 @@ export const CAROUSEL_CARDS = `<div id="carousel-cards" class="carousel cards sl
 						<img class="card-img" src="images/card-img-top.jpg" alt="descripción de imagen" />
 						<div class="card-body">
 							<div class="card-badges">
-									<span class="badge badge-default">etiqueta 1</span>
-									<span class="badge badge-default">etiqueta 2</span>
+									<span class="badge badge-s-default">etiqueta 1</span>
+									<span class="badge badge-s-default">etiqueta 2</span>
 							</div>
 							<h3 class="card-title">
 								<a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -545,8 +545,8 @@ export const CAROUSEL_CARDS = `<div id="carousel-cards" class="carousel cards sl
 						<img class="card-img" src="images/card-img-top.jpg" alt="descripción de imagen" />
 						<div class="card-body">
 							<div class="card-badges">
-									<span class="badge badge-default">etiqueta 1</span>
-									<span class="badge badge-default">etiqueta 2</span>
+									<span class="badge badge-s-default">etiqueta 1</span>
+									<span class="badge badge-s-default">etiqueta 2</span>
 							</div>
 							<h3 class="card-title">
 								<a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -566,8 +566,8 @@ export const CAROUSEL_CARDS = `<div id="carousel-cards" class="carousel cards sl
 						<img class="card-img" src="images/card-img-top.jpg" alt="descripción de imagen" />
 						<div class="card-body">
 							<div class="card-badges">
-									<span class="badge badge-default">etiqueta 1</span>
-									<span class="badge badge-default">etiqueta 2</span>
+									<span class="badge badge-s-default">etiqueta 1</span>
+									<span class="badge badge-s-default">etiqueta 2</span>
 							</div>
 							<h3 class="card-title">
 								<a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -587,8 +587,8 @@ export const CAROUSEL_CARDS = `<div id="carousel-cards" class="carousel cards sl
 						<img class="card-img" src="images/card-img-top.jpg" alt="descripción de imagen" />
 						<div class="card-body">
 							<div class="card-badges">
-									<span class="badge badge-default">etiqueta 1</span>
-									<span class="badge badge-default">etiqueta 2</span>
+									<span class="badge badge-s-default">etiqueta 1</span>
+									<span class="badge badge-s-default">etiqueta 2</span>
 							</div>
 							<h3 class="card-title">
 								<a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -642,7 +642,7 @@ export const CAROUSEL_CARDS_EVENTS = `<div id="carousel-cards-eventos" class="ca
 								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/card-img-top.jpg">
 										<div class="card-body">
 												<p class="card-headline">TIPO DE EVENTO</p>
-												<div class="mb-3"><span class="badge badge-default">Etiqueta</span><span class="badge badge-default">Tipo de público</span></div>
+												<div class="mb-3"><span class="badge badge-s-default">Etiqueta</span><span class="badge badge-s-default">Tipo de público</span></div>
 												<h3 class="card-title"><a href="#" class="card-title-link ellipsis-2" target="_blank" rel="noopener noreferrer">Este es el título del evento que puede contener 2 líneas de texto</a></h3>
 												<p class="card-text ellipsis-4">Esta es la descripción del evento que puede contener hasta 4 líneas de texto. Cuando la descripción se excede de este límite, el texto se trunca y aparece el</p>
 												<div class="card-info">
@@ -653,7 +653,7 @@ export const CAROUSEL_CARDS_EVENTS = `<div id="carousel-cards-eventos" class="ca
 								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/card-img-top.jpg">
 										<div class="card-body">
 												<p class="card-headline">TIPO DE EVENTO</p>
-												<div class="mb-3"><span class="badge badge-default">Etiqueta</span><span class="badge badge-default">Tipo de público</span></div>
+												<div class="mb-3"><span class="badge badge-s-default">Etiqueta</span><span class="badge badge-s-default">Tipo de público</span></div>
 												<h3 class="card-title"><a href="#" class="card-title-link ellipsis-2" target="_blank" rel="noopener noreferrer">Este es el título del evento que puede contener 2 líneas de texto</a></h3>
 												<p class="card-text ellipsis-4">Esta es la descripción del evento que puede contener hasta 4 líneas de texto. Cuando la descripción se excede de este límite, el texto se trunca y aparece el</p>
 												<div class="card-info">
@@ -668,7 +668,7 @@ export const CAROUSEL_CARDS_EVENTS = `<div id="carousel-cards-eventos" class="ca
 								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/card-img-top.jpg">
 										<div class="card-body">
 												<p class="card-headline">TIPO DE EVENTO</p>
-												<div class="mb-3"><span class="badge badge-default">Etiqueta</span><span class="badge badge-default">Tipo de público</span></div>
+												<div class="mb-3"><span class="badge badge-s-default">Etiqueta</span><span class="badge badge-s-default">Tipo de público</span></div>
 												<h3 class="card-title"><a href="#" class="card-title-link ellipsis-2" target="_blank" rel="noopener noreferrer">Este es el título del evento que puede contener 2 líneas de texto</a></h3>
 												<p class="card-text ellipsis-4">Esta es la descripción del evento que puede contener hasta 4 líneas de texto. Cuando la descripción se excede de este límite, el texto se trunca y aparece el</p>
 												<div class="card-info">
@@ -679,7 +679,7 @@ export const CAROUSEL_CARDS_EVENTS = `<div id="carousel-cards-eventos" class="ca
 								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/card-img-top.jpg">
 										<div class="card-body">
 												<p class="card-headline">TIPO DE EVENTO</p>
-												<div class="mb-3"><span class="badge badge-default">Etiqueta</span><span class="badge badge-default">Tipo de público</span></div>
+												<div class="mb-3"><span class="badge badge-s-default">Etiqueta</span><span class="badge badge-s-default">Tipo de público</span></div>
 												<h3 class="card-title"><a href="#" class="card-title-link ellipsis-2" target="_blank" rel="noopener noreferrer">Este es el título del evento que puede contener 2 líneas de texto</a></h3>
 												<p class="card-text ellipsis-4">Esta es la descripción del evento que puede contener hasta 4 líneas de texto. Cuando la descripción se excede de este límite, el texto se trunca y aparece el</p>
 												<div class="card-info">
@@ -690,7 +690,7 @@ export const CAROUSEL_CARDS_EVENTS = `<div id="carousel-cards-eventos" class="ca
 								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/card-img-top.jpg">
 										<div class="card-body">
 												<p class="card-headline">TIPO DE EVENTO</p>
-												<div class="mb-3"><span class="badge badge-default">Etiqueta</span><span class="badge badge-default">Tipo de público</span></div>
+												<div class="mb-3"><span class="badge badge-s-default">Etiqueta</span><span class="badge badge-s-default">Tipo de público</span></div>
 												<h3 class="card-title"><a href="#" class="card-title-link ellipsis-2" target="_blank" rel="noopener noreferrer">Este es el título del evento que puede contener 2 líneas de texto</a></h3>
 												<p class="card-text ellipsis-4">Esta es la descripción del evento que puede contener hasta 4 líneas de texto. Cuando la descripción se excede de este límite, el texto se trunca y aparece el</p>
 												<div class="card-info">
@@ -705,7 +705,7 @@ export const CAROUSEL_CARDS_EVENTS = `<div id="carousel-cards-eventos" class="ca
 								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/card-img-top.jpg">
 										<div class="card-body">
 												<p class="card-headline">TIPO DE EVENTO</p>
-												<div class="mb-3"><span class="badge badge-default">Etiqueta</span><span class="badge badge-default">Tipo de público</span></div>
+												<div class="mb-3"><span class="badge badge-s-default">Etiqueta</span><span class="badge badge-s-default">Tipo de público</span></div>
 												<h3 class="card-title"><a href="#" class="card-title-link ellipsis-2" target="_blank" rel="noopener noreferrer">Este es el título del evento que puede contener 2 líneas de texto</a></h3>
 												<p class="card-text ellipsis-4">Esta es la descripción del evento que puede contener hasta 4 líneas de texto. Cuando la descripción se excede de este límite, el texto se trunca y aparece el</p>
 												<div class="card-info">
@@ -716,7 +716,7 @@ export const CAROUSEL_CARDS_EVENTS = `<div id="carousel-cards-eventos" class="ca
 								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/card-img-top.jpg">
 										<div class="card-body">
 												<p class="card-headline">TIPO DE EVENTO</p>
-												<div class="mb-3"><span class="badge badge-default">Etiqueta</span><span class="badge badge-default">Tipo de público</span></div>
+												<div class="mb-3"><span class="badge badge-s-default">Etiqueta</span><span class="badge badge-s-default">Tipo de público</span></div>
 												<h3 class="card-title"><a href="#" class="card-title-link ellipsis-2" target="_blank" rel="noopener noreferrer">Este es el título del evento que puede contener 2 líneas de texto</a></h3>
 												<p class="card-text ellipsis-4">Esta es la descripción del evento que puede contener hasta 4 líneas de texto. Cuando la descripción se excede de este límite, el texto se trunca y aparece el</p>
 												<div class="card-info">
@@ -727,7 +727,7 @@ export const CAROUSEL_CARDS_EVENTS = `<div id="carousel-cards-eventos" class="ca
 								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/card-img-top.jpg">
 										<div class="card-body">
 												<p class="card-headline">TIPO DE EVENTO</p>
-												<div class="mb-3"><span class="badge badge-default">Etiqueta</span><span class="badge badge-default">Tipo de público</span></div>
+												<div class="mb-3"><span class="badge badge-s-default">Etiqueta</span><span class="badge badge-s-default">Tipo de público</span></div>
 												<h3 class="card-title"><a href="#" class="card-title-link ellipsis-2" target="_blank" rel="noopener noreferrer">Este es el título del evento que puede contener 2 líneas de texto</a></h3>
 												<p class="card-text ellipsis-4">Esta es la descripción del evento que puede contener hasta 4 líneas de texto. Cuando la descripción se excede de este límite, el texto se trunca y aparece el</p>
 												<div class="card-info">
@@ -762,8 +762,8 @@ export const CAROUSEL_CARDS_DARK = `<div id="carousel-cards-dark" class="carouse
 						<img class="card-img" src="images/card-img-top.jpg" alt="descripción de imagen" />
 						<div class="card-body">
 							<div class="card-badges">
-									<span class="badge badge-default">etiqueta 1</span>
-									<span class="badge badge-default">etiqueta 2</span>
+									<span class="badge badge-s-default">etiqueta 1</span>
+									<span class="badge badge-s-default">etiqueta 2</span>
 							</div>
 							<h3 class="card-title">
 								<a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -783,8 +783,8 @@ export const CAROUSEL_CARDS_DARK = `<div id="carousel-cards-dark" class="carouse
 						<img class="card-img" src="images/card-img-top.jpg" alt="descripción de imagen" />
 						<div class="card-body">
 							<div class="card-badges">
-									<span class="badge badge-default">etiqueta 1</span>
-									<span class="badge badge-default">etiqueta 2</span>
+									<span class="badge badge-s-default">etiqueta 1</span>
+									<span class="badge badge-s-default">etiqueta 2</span>
 							</div>
 							<h3 class="card-title">
 								<a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -804,8 +804,8 @@ export const CAROUSEL_CARDS_DARK = `<div id="carousel-cards-dark" class="carouse
 						<img class="card-img" src="images/card-img-top.jpg" alt="descripción de imagen" />
 						<div class="card-body">
 							<div class="card-badges">
-									<span class="badge badge-default">etiqueta 1</span>
-									<span class="badge badge-default">etiqueta 2</span>
+									<span class="badge badge-s-default">etiqueta 1</span>
+									<span class="badge badge-s-default">etiqueta 2</span>
 							</div>
 							<h3 class="card-title">
 								<a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -829,8 +829,8 @@ export const CAROUSEL_CARDS_DARK = `<div id="carousel-cards-dark" class="carouse
 						<img class="card-img" src="images/card-img-top.jpg" alt="descripción de imagen" />
 						<div class="card-body">
 							<div class="card-badges">
-									<span class="badge badge-default">etiqueta 1</span>
-									<span class="badge badge-default">etiqueta 2</span>
+									<span class="badge badge-s-default">etiqueta 1</span>
+									<span class="badge badge-s-default">etiqueta 2</span>
 							</div>
 							<h3 class="card-title">
 								<a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -850,8 +850,8 @@ export const CAROUSEL_CARDS_DARK = `<div id="carousel-cards-dark" class="carouse
 						<img class="card-img" src="images/card-img-top.jpg" alt="descripción de imagen" />
 						<div class="card-body">
 							<div class="card-badges">
-									<span class="badge badge-default">etiqueta 1</span>
-									<span class="badge badge-default">etiqueta 2</span>
+									<span class="badge badge-s-default">etiqueta 1</span>
+									<span class="badge badge-s-default">etiqueta 2</span>
 							</div>
 							<h3 class="card-title">
 								<a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -871,8 +871,8 @@ export const CAROUSEL_CARDS_DARK = `<div id="carousel-cards-dark" class="carouse
 						<img class="card-img" src="images/card-img-top.jpg" alt="descripción de imagen" />
 						<div class="card-body">
 							<div class="card-badges">
-									<span class="badge badge-default">etiqueta 1</span>
-									<span class="badge badge-default">etiqueta 2</span>
+									<span class="badge badge-s-default">etiqueta 1</span>
+									<span class="badge badge-s-default">etiqueta 2</span>
 							</div>
 							<h3 class="card-title">
 								<a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -896,8 +896,8 @@ export const CAROUSEL_CARDS_DARK = `<div id="carousel-cards-dark" class="carouse
 						<img class="card-img" src="images/card-img-top.jpg" alt="descripción de imagen" />
 						<div class="card-body">
 							<div class="card-badges">
-									<span class="badge badge-default">etiqueta 1</span>
-									<span class="badge badge-default">etiqueta 2</span>
+									<span class="badge badge-s-default">etiqueta 1</span>
+									<span class="badge badge-s-default">etiqueta 2</span>
 							</div>
 							<h3 class="card-title">
 								<a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -917,8 +917,8 @@ export const CAROUSEL_CARDS_DARK = `<div id="carousel-cards-dark" class="carouse
 						<img class="card-img" src="images/card-img-top.jpg" alt="descripción de imagen" />
 						<div class="card-body">
 							<div class="card-badges">
-									<span class="badge badge-default">etiqueta 1</span>
-									<span class="badge badge-default">etiqueta 2</span>
+									<span class="badge badge-s-default">etiqueta 1</span>
+									<span class="badge badge-s-default">etiqueta 2</span>
 							</div>
 							<h3 class="card-title">
 								<a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -938,8 +938,8 @@ export const CAROUSEL_CARDS_DARK = `<div id="carousel-cards-dark" class="carouse
 						<img class="card-img" src="images/card-img-top.jpg" alt="descripción de imagen" />
 						<div class="card-body">
 							<div class="card-badges">
-									<span class="badge badge-default">etiqueta 1</span>
-									<span class="badge badge-default">etiqueta 2</span>
+									<span class="badge badge-s-default">etiqueta 1</span>
+									<span class="badge badge-s-default">etiqueta 2</span>
 							</div>
 							<h3 class="card-title">
 								<a href="#" class="card-title-link">Título de la tarjeta</a>

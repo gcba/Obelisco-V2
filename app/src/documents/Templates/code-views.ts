@@ -829,7 +829,7 @@ export const AREA_2 = `
             <img class="card-img" src="../../assets/tarjetas/noticia-1.png" alt="descripción de imagen" />
             <div class="card-body">
               <div class="card-badges">
-                <span class="badge badge-default">etiqueta</span>
+                <span class="badge badge-s-default">etiqueta</span>
               </div>
               <h3 class="card-title">
                 <a href="#" class="card-title-link">La Ciudad inauguró una nueva sede del SAME</a>
@@ -849,8 +849,8 @@ export const AREA_2 = `
             <img class="card-img" src="../../assets/tarjetas/noticia-2.png" alt="descripción de imagen" />
             <div class="card-body">
               <div class="card-badges">
-                <span class="badge badge-default">etiqueta</span>
-                <span class="badge badge-default">etiqueta</span>
+                <span class="badge badge-s-default">etiqueta</span>
+                <span class="badge badge-s-default">etiqueta</span>
               </div>
               <h3 class="card-title">
                 <a href="#" class="card-title-link">Representaciones de la Ciudad acompañó las clínicas deportivas</a>
@@ -870,8 +870,8 @@ export const AREA_2 = `
             <img class="card-img" src="../../assets/tarjetas/noticia-3.png" alt="descripción de imagen" />
             <div class="card-body">
               <div class="card-badges">
-                <span class="badge badge-default">etiqueta</span>
-                <span class="badge badge-default">etiqueta</span>
+                <span class="badge badge-s-default">etiqueta</span>
+                <span class="badge badge-s-default">etiqueta</span>
               </div>
               <h3 class="card-title">
                 <a href="#" class="card-title-link">El Registro Civil permite hacer trámites en forma 100% virtual</a>
@@ -999,8 +999,8 @@ export const TEMPLATE_TRAMITES = `<!DOCTYPE html>
                 </div>
                 <div class="d-flex align-items-center">
                   <span class="me-1">Modalidad: </span>
-                  <span class="badge badge-default">Presencial</span>
-                  <span class="badge badge-default">En línea</span>
+                  <span class="badge badge-s-default">Presencial</span>
+                  <span class="badge badge-s-default">En línea</span>
                 </div>
               </div>
             </div>
@@ -2497,8 +2497,8 @@ export const TEMPLATE_PAG_NOTICIAS = `<!DOCTYPE html>
                 <img class="card-img" src="../assets/noticias/noticias-2.png" alt="descripción de imagen" />
                 <div class="card-body">
                   <div class="card-badges">
-                    <span class="badge badge-default">Comuna 7</span>
-                    <span class="badge badge-default">Gestión Comunal</span>
+                    <span class="badge badge-s-default">Comuna 7</span>
+                    <span class="badge badge-s-default">Gestión Comunal</span>
                   </div>
                   <h3 class="card-title">
                     <a href="#" class="card-title-link ellipsis-3">Nuevo patio de juegos, cancha y espacios de encuentro en Plaza Padre Rodolfo
@@ -2518,7 +2518,7 @@ export const TEMPLATE_PAG_NOTICIAS = `<!DOCTYPE html>
                 <img class="card-img" src="../assets/noticias/noticias-3.png" alt="descripción de imagen" />
                 <div class="card-body">
                   <div class="card-badges">
-                    <span class="badge badge-default">Usina del Arte</span>
+                    <span class="badge badge-s-default">Usina del Arte</span>
                   </div>
                   <h3 class="card-title">
                     <a href="#" class="card-title-link ellipsis-3">Cuatro shows infantiles en vivo para disfrutar el fin de semana en la Usina</a>
@@ -2538,8 +2538,8 @@ export const TEMPLATE_PAG_NOTICIAS = `<!DOCTYPE html>
                 <img class="card-img" src="../assets/noticias/noticias-4.png" alt="descripción de imagen" />
                 <div class="card-body">
                   <div class="card-badges">
-                    <span class="badge badge-default">Museos</span>
-                    <span class="badge badge-default">Museo Sívori</span>
+                    <span class="badge badge-s-default">Museos</span>
+                    <span class="badge badge-s-default">Museo Sívori</span>
                   </div>
                   <h3 class="card-title">
                     <a href="#" class="card-title-link ellipsis-3">Verano en el Museo Sívori, con propuestas para todas las edades</a>

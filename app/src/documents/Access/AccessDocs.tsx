@@ -819,8 +819,8 @@ const ACCESSIBILITY = [
           El componente de accesos está construido para ser accesible mediante navegación por teclado y reconocible por
           lectores de pantalla.
         </p>
-        <span className="badge badge-default ms-1">TAB</span>
-        <span className="badge badge-default">ENTER</span>
+        <span className="badge badge-s-default ms-1">TAB</span>
+        <span className="badge badge-s-default">ENTER</span>
         <p className="text-md mb-4 mt-2">
           Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Acciones como
           cerrar o activar botones se pueden realizar con las teclas <i>Enter</i> o <i>space</i>.

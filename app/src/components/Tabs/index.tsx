@@ -25,6 +25,8 @@ export const TabItem: React.FC<TabItemProps> = ({ id, title, icon, urlDemo, acti
         type="button"
         role="tab"
         aria-controls={id}
+        aria-selected={activeTab === id}
+        tabIndex={activeTab === id ? 0 : -1}
         onClick={id !== '#' ? () => setActiveTab(id) : undefined}
       >
         <div className="nav-icon">
@@ -60,8 +62,10 @@ interface CustomSectionProps {
   id: string;
   title: string;
   subtitle?: string;
+  tertiarytitle?: string;
   content?: React.ReactNode;
 }
+
 interface TabsProps {
   sectionUx?: Section[];
   sectionDev?: Section[];
@@ -98,9 +102,7 @@ const Tabs: React.FC<TabsProps> = ({ sectionUx, sectionDev, customSections }) =>
             ))}
         </ul>
       </nav>
-
       <hr className="mt-0 mb-4" />
-
       <div className="tab-content" style={{ paddingTop: '32px' }}>
         {sectionUx && (
           <TabPanel id={`panel-content-ux`} activeTab={activeTab}>

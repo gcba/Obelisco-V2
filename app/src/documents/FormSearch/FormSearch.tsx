@@ -142,7 +142,7 @@ const FormSearchDocs: React.FC = () => {
               </ul>
             </div>
             <div className="list-informative">
-              <p className="text-xl">Cuándo usar</p>
+              <p className="text-xl">Cuándo no usar</p>
               <ul className="list-informative-bullet">
                 <li>Para consultas complejas que involucran varias palabras clave o una sintaxis específica.</li>
                 <li>Cuando haya cantidad pequeñas o limitadas de datos.</li>
@@ -275,8 +275,8 @@ const FormSearchDocs: React.FC = () => {
           </p>
           <div className="flex flex-column gap-3">
             <div>
-              <span className="badge badge-default ms-1">TAB</span>
-              <span className="badge badge-default">ENTER</span>
+              <span className="badge badge-s-default">TAB</span>
+              <span className="badge badge-s-default">ENTER</span>
             </div>
             <p>
               Utilizando el tab la persona usuaria puede navegar a través de elementos de la interfaz. Además, con el

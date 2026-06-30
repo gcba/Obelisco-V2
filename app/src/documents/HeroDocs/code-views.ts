@@ -249,9 +249,9 @@ export const HERO_CON_ETIQUETAS = `<header class="hero">
       </div>
       <div class="d-flex flex-wrap column-gap-2 row-gap-4">
         <span class="me-3 fw-semibold">Texto de las etiquetas: </span>
-        <span class="badge badge-default">Etiqueta</span>
-        <span class="badge badge-default">Etiqueta</span>
-        <span class="badge badge-default">Etiqueta</span>
+        <span class="badge badge-s-default">Etiqueta</span>
+        <span class="badge badge-s-default">Etiqueta</span>
+        <span class="badge badge-s-default">Etiqueta</span>
       </div>
     </div>
   </div>
@@ -667,8 +667,8 @@ export const HERO_REDES_SOCIALES = `<header class="hero bg-content-hero-light">
 			</nav>
 
 			<div class="d-flex flex-wrap align-items-center column-gap-2 row-gap-4">
-				<span class="badge badge-info">Etiqueta</span>
-				<span class="badge badge-info">Etiqueta</span>
+				<span class="badge badge-s-info">Etiqueta</span>
+				<span class="badge badge-s-info">Etiqueta</span>
 			</div>
 
 			<div>

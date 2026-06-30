@@ -32,9 +32,7 @@ const PalletteColor: React.FC<PalletteColorProps> = ({ title, arrayColor, titleN
           {danger ? (
             <span className="badge badge-s-danger">{accessibility}</span>
           ) : (
-            <span className="badge badge-s-default">
-              {accessibility}
-            </span>
+            <span className="badge badge-s-default">{accessibility}</span>
           )}
         </div>
       ))}

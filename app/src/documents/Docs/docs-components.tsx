@@ -545,8 +545,8 @@ const sections = [
             <code>.badge-s-link-{'{color}'}</code>
           </li>
           <p>
-            Donde <code>{'{color}'}</code> puede ser: <code>default</code>, <code>sky</code>, <code>green</code>,{' '}
-            <code>red</code>, <code>orange</code> o <code>purple</code>
+            Donde <code>{'{color}'}</code> puede ser: <code>default</code>, <code>info</code>, <code>success</code>,{' '}
+            <code>danger</code>, <code>warning</code> o <code>highlight</code>
           </p>
         </ul>
         {/* Clickeables */}

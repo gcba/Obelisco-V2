@@ -136,12 +136,12 @@ export const BADGE_SELECT = `<label class="badge-toggle">
 </label>`;
 
 export const BADGE_ACCESSIBLITY = `
-<span class="badge badge-default">Cultura</span>
+<span class="badge badge-s-default">Cultura</span>
 
 `;
 
 export const BADGE_ACCESSIBLITY_2 = `
-<a href="/tematica/salud" class="badge badge-default">
+<a href="/tematica/salud" class="badge badge-s-default">
  Cultura
 </a>
 

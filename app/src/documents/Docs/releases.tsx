@@ -41,7 +41,7 @@ const ReleasesComponents: React.FC = () => {
                 <li>
                   Etiquetas seleccionables y eliminables
                   <br />
-                  <code>.badge-select</code> y <code>.badge-select</code>
+                  <code>.badge-select</code> y <code>.badge-remove</code>
                 </li>
                 <li>
                   Tamaños de etiquetas

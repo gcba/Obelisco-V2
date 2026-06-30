@@ -27,6 +27,24 @@
     border-radius: 0.5rem;
   }
 
+  .panel-img-full-height {
+    width: auto;
+    max-width: unset;
+    height: 100%;
+    aspect-ratio: unset;
+    object-fit: contain;
+    align-self: stretch;
+    max-height: 300px;
+
+    @include media-breakpoint-up(md) {
+      max-height: 400px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      max-height: unset;
+    }
+  }
+
   .panel-body {
     padding: 0;
     width: 100%;
@@ -451,14 +469,6 @@ $gradient-text-colors: (
               }
             }
           }
-        }
-
-        .panel-img {
-          width: auto;
-          height: 288px;
-          object-fit: none;
-          overflow: initial;
-          align-self: center;
         }
       }
     }

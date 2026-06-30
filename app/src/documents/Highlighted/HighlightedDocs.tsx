@@ -781,7 +781,7 @@ const HighlightedDocs: React.FC = () => {
                     <Image
                       src={`${basePath}/images/highlighted/bax-phone.png`}
                       alt="descripción de imagen"
-                      className="panel-img"
+                      className="panel-img panel-img-full-height"
                       width={538}
                       height={304}
                     ></Image>
@@ -818,7 +818,7 @@ const HighlightedDocs: React.FC = () => {
                     <Image
                       src={`${basePath}/images/highlighted/bax-phone.png`}
                       alt="descripción de imagen"
-                      className="panel-img"
+                      className="panel-img panel-img-full-height"
                       width={538}
                       height={304}
                     ></Image>

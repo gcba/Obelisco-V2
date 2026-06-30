@@ -380,8 +380,10 @@ $gradient-text-colors: (
     padding: 0 !important;
 
     &.panel-inverted {
-      @include media-breakpoint-up(xl) {
-        flex-direction: row;
+      flex-direction: row;
+
+      @include media-breakpoint-down(xl) {
+        flex-direction: column-reverse;
       }
     }
 

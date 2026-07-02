@@ -946,43 +946,62 @@ const CardDocs: React.FC = () => {
       ),
     },
     {
-      title: 'Full Image Card',
+      title: 'Tarjeta de impacto visual',
       content: (
-        <CodeBox codeHTML={TARJETAS_IMAGEN_FONDO}>
-          <div className="container">
-            <div className="responsive-scroll vertical-cards-container pt-4" tabIndex={0}>
-              <div className="card card-img-bg">
-                <Image src={`${basePath}/images/cards/bax.png`} alt="descripción de imagen" width={348} height={196} />
-                <h2 className="fw-bold text-white">BAX</h2>
-                <a href="https://buenosaires.gob.ar/gcaba_historico/bax" aria-label="BAX"></a>
-              </div>
+        <div className="card-box-sizing-columns">
+          <CodeBox codeHTML={TARJETAS_IMAGEN_FONDO}>
+            <div className="container">
+              <div className="responsive-scroll vertical-cards-container pt-4" tabIndex={0}>
+                <div className="card card-img-bg">
+                  <div className="card-badges">
+                    <span className="badge badge-s-default">Etiqueta</span>
+                    <span className="badge badge-s-default">Etiqueta</span>
+                  </div>
+                  <Image
+                    src={`${basePath}/images/tarjetas/tarjeta_de_impacto_visul.jpg`}
+                    alt="descripción de imagen"
+                    width={348}
+                    height={196}
+                  />
+                  <h2 className="fw-bold text-white">BAX</h2>
+                  <a href="https://buenosaires.gob.ar/gcaba_historico/bax" aria-label="BAX"></a>
+                </div>
 
-              <div className="card card-img-bg">
-                <Image src={`${basePath}/images/cards/boti.png`} alt="descripción de imagen" width={348} height={196} />
-                <h2 className="fw-bold text-white">Boti</h2>
-                <a
-                  href="https://buenosaires.gob.ar/gcaba_historico/innovacionytransformaciondigital/boti"
-                  aria-label="Boti"
-                ></a>
-              </div>
+                <div className="card card-img-bg">
+                  <Image
+                    src={`${basePath}/images/tarjetas/tarjeta_de_impacto_visul.jpg`}
+                    alt="descripción de imagen"
+                    width={348}
+                    height={196}
+                  />
+                  <h2 className="fw-bold text-white">Boti</h2>
+                  <a
+                    href="https://buenosaires.gob.ar/gcaba_historico/innovacionytransformaciondigital/boti"
+                    aria-label="Boti"
+                  ></a>
+                </div>
 
-              <div className="card card-img-bg">
-                <Image
-                  src={`${basePath}/images/cards/seguridad.png`}
-                  alt="descripción de imagen"
-                  width={348}
-                  height={196}
-                />
-                <h2 className="fw-bold text-white">Centro de ciberseguridad</h2>
-                <a
-                  href="https://buenosaires.gob.ar/gcaba_historico/jefaturadegabinete/centro-de-ciberseguridad"
-                  aria-label="Centro de ciberseguridad"
-                ></a>
+                <div className="card card-img-bg">
+                  <Image
+                    src={`${basePath}/images/tarjetas/tarjeta_de_impacto_visul.jpg`}
+                    alt="descripción de imagen"
+                    width={348}
+                    height={196}
+                  />
+                  <h2 className="fw-bold text-white">Centro de ciberseguridad</h2>
+                  <a
+                    href="https://buenosaires.gob.ar/gcaba_historico/jefaturadegabinete/centro-de-ciberseguridad"
+                    aria-label="Centro de ciberseguridad"
+                  ></a>
+                </div>
               </div>
             </div>
-          </div>
-        </CodeBox>
+          </CodeBox>
+        </div>
       ),
+    },
+    {
+      title: '',
     },
   ];
 

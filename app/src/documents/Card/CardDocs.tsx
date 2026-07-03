@@ -18,7 +18,7 @@ import {
   SCROLL_DISPOSITION,
   TARJETAS_ACCESSIBILTY,
   TARJETAS_ACCESSIBILTY_2,
-  TARJETAS_IMAGEN_FONDO,
+  TARJETAS_IMPACTO_VISUAL,
   VERTICAL_AGENDA,
   VERTICAL_ICON,
   VERTICAL_IMG,
@@ -834,7 +834,7 @@ const CardDocs: React.FC = () => {
     {
       title: 'Tarjeta de impacto visual',
       content: (
-        <CodeBox codeHTML={TARJETAS_IMAGEN_FONDO}>
+        <CodeBox codeHTML={TARJETAS_IMPACTO_VISUAL}>
           <div className="container">
             <div className="card-vertical-box-sizing">
               <div className="card card-img-bg">

@@ -33,7 +33,7 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
 }
 
 @mixin carousel-navigation-row {
-  padding: 48px 0 32px;
+  padding: 48px 129px;
 
   .carousel-indicators {
     justify-content: center;
@@ -259,6 +259,25 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
 
   // el &.cards, hace que solo aplique a las clases .card dentro de .carousel
   &.cards {
+    &.controls-top {
+      .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      .carousel-navigation {
+        display: flex;
+        gap: 12px;
+      }
+
+      .carousel-control-prev,
+      .carousel-control-next {
+        position: static;
+        transform: none;
+      }
+    }
+
     @media (width < 768px) {
       .carousel-inner {
         display: flex;
@@ -277,6 +296,12 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
             .card {
               flex: 0 0 auto;
               width: 296px;
+            }
+
+            .card.card-img-bg {
+              flex: 0 0 auto;
+              width: 300px;
+              min-width: 300px;
             }
           }
         }
@@ -345,7 +370,7 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     }
   }
 
-  $container-max-width: 720px;
+  $container-max-width: 1140px;
   @media (width >= 992px) {
     @include carousel-navigation-row;
 
@@ -360,15 +385,17 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     .carousel-inner {
       border-radius: 16px;
       margin: 0 auto;
-      max-width: 720px;
+      max-width: $container-max-width;
 
       .carousel-item {
         padding: 0 8px;
       }
     }
 
-    .title {
+    .title,
+    .carousel-link {
       padding-left: container-alignment($container-max-width);
+      padding-right: container-alignment($container-max-width);
     }
 
     .panel-horizontal-content {

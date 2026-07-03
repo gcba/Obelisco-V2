@@ -473,7 +473,7 @@ export const TARJETAS_ACCESSIBILTY_2 = `
 </div>
 `;
 
-export const TARJETAS_IMAGEN_FONDO = `<div class="card card-img-bg">
+export const TARJETAS_IMPACTO_VISUAL = `<div class="card card-img-bg">
     <div class="card-badges-bg">
         <span class="badge badge-s-default">Etiqueta</span>
         <span class="badge badge-s-default">Etiqueta</span>

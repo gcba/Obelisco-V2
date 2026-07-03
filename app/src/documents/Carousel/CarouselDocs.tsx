@@ -12,6 +12,7 @@ import {
   CAROUSEL_CARDS_DARK,
   CAROUSEL_CARDS_EVENTS,
   CAROUSEL_DESTACADO_LIGHT,
+  CAROUSEL_CARDS_IMPACTO_VISUAL,
 } from './code-views';
 
 const basePath = '/Obelisco-V2';
@@ -1131,6 +1132,213 @@ const CarouselDocs: React.FC = () => {
             </ZoomContainer>
           </div>
         </CodeBox>
+      ),
+    },
+    {
+      title: 'Con tarjetas de impacto visual',
+      content: (
+        <>
+          <CodeBox codeHTML={CAROUSEL_CARDS_IMPACTO_VISUAL}>
+            <div className="container">
+              <ZoomContainer>
+                <div id="carousel-cards-bg" className="carousel cards controls-top slide">
+                  <div className="title">
+                    <h4 className="m-0">Encabezado de la seccion</h4>
+
+                    <div className="carousel-navigation">
+                      <button
+                        className="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carousel-cards-bg"
+                        data-bs-slide="prev"
+                      >
+                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span className="visually-hidden">Anterior</span>
+                      </button>
+                      <button
+                        className="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carousel-cards-bg"
+                        data-bs-slide="next"
+                      >
+                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span className="visually-hidden">Siguiente</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div className="carousel-inner responsive-scroll">
+                    <div className="carousel-item active">
+                      <div className="card-items">
+                        <div className="card card-img-bg">
+                          <div className="card-badges-bg">
+                            <span className="badge badge-s-default">Etiqueta</span>
+                            <span className="badge badge-s-default">Etiqueta</span>
+                          </div>
+                          <Image
+                            src={`${basePath}/images/tarjetas/tarjeta_de_impacto_visual.jpg`}
+                            alt="descripción de imagen"
+                            width={348}
+                            height={196}
+                          />
+                          <p className="headline-lg">Título de la tarjeta</p>
+                          <a href="#" aria-label="Descripcion de tarjetas"></a>
+                        </div>
+                        <div className="card card-img-bg">
+                          <div className="card-badges-bg">
+                            <span className="badge badge-s-default">Etiqueta</span>
+                            <span className="badge badge-s-default">Etiqueta</span>
+                          </div>
+                          <Image
+                            src={`${basePath}/images/tarjetas/tarjeta_de_impacto_visual.jpg`}
+                            alt="descripción de imagen"
+                            width={348}
+                            height={196}
+                          />
+                          <p className="headline-lg">Título de la tarjeta</p>
+                          <a href="#" aria-label="Descripcion de tarjetas"></a>
+                        </div>
+                        <div className="card card-img-bg">
+                          <div className="card-badges-bg">
+                            <span className="badge badge-s-default">Etiqueta</span>
+                            <span className="badge badge-s-default">Etiqueta</span>
+                          </div>
+                          <Image
+                            src={`${basePath}/images/tarjetas/tarjeta_de_impacto_visual.jpg`}
+                            alt="descripción de imagen"
+                            width={348}
+                            height={196}
+                          />
+                          <p className="headline-lg">Título de la tarjeta</p>
+                          <a href="#" aria-label="Descripcion de tarjetas"></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="carousel-item">
+                      <div className="card-items">
+                        <div className="card card-img-bg">
+                          <div className="card-badges-bg">
+                            <span className="badge badge-s-default">Etiqueta</span>
+                            <span className="badge badge-s-default">Etiqueta</span>
+                          </div>
+                          <Image
+                            src={`${basePath}/images/tarjetas/tarjeta_de_impacto_visual.jpg`}
+                            alt="descripción de imagen"
+                            width={348}
+                            height={196}
+                          />
+                          <p className="headline-lg">Título de la tarjeta</p>
+                          <a href="#" aria-label="Descripcion de tarjetas"></a>
+                        </div>
+                        <div className="card card-img-bg">
+                          <div className="card-badges-bg">
+                            <span className="badge badge-s-default">Etiqueta</span>
+                            <span className="badge badge-s-default">Etiqueta</span>
+                          </div>
+                          <Image
+                            src={`${basePath}/images/tarjetas/tarjeta_de_impacto_visual.jpg`}
+                            alt="descripción de imagen"
+                            width={348}
+                            height={196}
+                          />
+                          <p className="headline-lg">Título de la tarjeta</p>
+                          <a href="#" aria-label="Descripcion de tarjetas"></a>
+                        </div>
+                        <div className="card card-img-bg">
+                          <div className="card-badges-bg">
+                            <span className="badge badge-s-default">Etiqueta</span>
+                            <span className="badge badge-s-default">Etiqueta</span>
+                          </div>
+                          <Image
+                            src={`${basePath}/images/tarjetas/tarjeta_de_impacto_visual.jpg`}
+                            alt="descripción de imagen"
+                            width={348}
+                            height={196}
+                          />
+                          <p className="headline-lg">Título de la tarjeta</p>
+                          <a href="#" aria-label="Descripcion de tarjetas"></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="carousel-item">
+                      <div className="card-items">
+                        <div className="card card-img-bg">
+                          <div className="card-badges-bg">
+                            <span className="badge badge-s-default">Etiqueta</span>
+                            <span className="badge badge-s-default">Etiqueta</span>
+                          </div>
+                          <Image
+                            src={`${basePath}/images/tarjetas/tarjeta_de_impacto_visual.jpg`}
+                            alt="descripción de imagen"
+                            width={348}
+                            height={196}
+                          />
+                          <p className="headline-lg">Título de la tarjeta</p>
+                          <a href="#" aria-label="Descripcion de tarjetas"></a>
+                        </div>
+                        <div className="card card-img-bg">
+                          <div className="card-badges-bg">
+                            <span className="badge badge-s-default">Etiqueta</span>
+                            <span className="badge badge-s-default">Etiqueta</span>
+                          </div>
+                          <Image
+                            src={`${basePath}/images/tarjetas/tarjeta_de_impacto_visual.jpg`}
+                            alt="descripción de imagen"
+                            width={348}
+                            height={196}
+                          />
+                          <p className="headline-lg">Título de la tarjeta</p>
+                          <a href="#" aria-label="Descripcion de tarjetas"></a>
+                        </div>
+                        <div className="card card-img-bg">
+                          <div className="card-badges-bg">
+                            <span className="badge badge-s-default">Etiqueta</span>
+                            <span className="badge badge-s-default">Etiqueta</span>
+                          </div>
+                          <Image
+                            src={`${basePath}/images/tarjetas/tarjeta_de_impacto_visual.jpg`}
+                            alt="descripción de imagen"
+                            width={348}
+                            height={196}
+                          />
+                          <p className="headline-lg">Título de la tarjeta</p>
+                          <a href="#" aria-label="Descripcion de tarjetas"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carousel-cards-bg"
+                      data-bs-slide-to="0"
+                      className="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carousel-cards-bg"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carousel-cards-bg"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                  </div>
+
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="carousel-link">
+                    Enlace predeterminado
+                  </a>
+                </div>
+              </ZoomContainer>
+            </div>
+          </CodeBox>
+        </>
       ),
     },
   ];

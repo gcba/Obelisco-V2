@@ -9,11 +9,11 @@ import {
   HIGHLIGHTED_BANNER_BUTTON,
   HIGHLIGHTED_BANNER_BUTTONS_VIDEO_MP4,
   HIGHLIGHTED_BANNER_BUTTONS_WHITE,
-  HIGHLIGHTED_BANNER_FONDOS,
+  HIGHLIGHTED_VERTICAL_FONDOS,
   HIGHLIGHTED_BANNER_NO_MEDIA,
-  HIGHLIGHTED_JOIN_IMAGE,
-  HIGHLIGHTED_JOIN_NO_IMAGE,
-  HIGHLIGHTED_JOIN_VIDEO,
+  HIGHLIGHTED_VERTICAL_ACCIONABLES,
+  HIGHLIGHTED_VERTICAL_SIN_MULTIMEDIA,
+  HIGHLIGHTED_VERTICAL_VIDEO,
   HIGHLIGHTED_CONTAINER,
   HIGHLIGHTED_DEGRADE,
   HIGHLIGHTED_DEGRADE_INVERTIDO,
@@ -382,12 +382,12 @@ const HighlightedDocs: React.FC = () => {
       subtitle: 'Fondos',
       content: (
         <>
-          <CodeBox codeHTML={HIGHLIGHTED_BANNER_FONDOS}>
+          <CodeBox codeHTML={HIGHLIGHTED_VERTICAL_FONDOS}>
             <ZoomContainer>
               <div className="container">
                 <div className="highlighted-items-2">
                   <div className="col">
-                    <div className="panel-vertical">
+                    <div className="panel-vertical bg-dark">
                       <Image
                         src={`${basePath}/images/destacado.jpg`}
                         alt="descripción de imagen"
@@ -407,6 +407,31 @@ const HighlightedDocs: React.FC = () => {
                         <div className="panel-footer">
                           <LinkClient className="btn btn-light">Botón</LinkClient>
                           <LinkClient className="btn btn-outline-light">Botón</LinkClient>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="panel-vertical bg-light">
+                      <Image
+                        src={`${basePath}/images/destacado.jpg`}
+                        alt="descripción de imagen"
+                        className="panel-img"
+                        width={538}
+                        height={304}
+                      ></Image>
+                      <div className="panel-body bg-light">
+                        <h2 className="panel-title ellipsis-2">
+                          Este es el titulo del destacado que puede contener hasta 2 líneas de texto.
+                        </h2>
+                        <p className="panel-text ellipsis-3">
+                          Esta es la descripción del destacado que puede contener hasta 3 líneas de texto. Si se excede
+                          de este límite, el texto de la descripción se va a truncar, el contenido, para garantizar
+                          Lorem ipsum dolor sit amet.
+                        </p>
+                        <div className="panel-footer">
+                          <LinkClient className="btn btn-primary">Botón</LinkClient>
+                          <LinkClient className="btn btn-outline-primary">Botón</LinkClient>
                         </div>
                       </div>
                     </div>
@@ -447,12 +472,12 @@ const HighlightedDocs: React.FC = () => {
       subtitle: 'Accionables',
       content: (
         <>
-          <CodeBox codeHTML={HIGHLIGHTED_JOIN_IMAGE}>
+          <CodeBox codeHTML={HIGHLIGHTED_VERTICAL_ACCIONABLES}>
             <ZoomContainer>
               <div className="container">
                 <div className="highlighted-items-2">
                   <div className="col">
-                    <div className="panel-vertical">
+                    <div className="panel-vertical bg-dark">
                       <Image
                         src={`${basePath}/images/destacado.jpg`}
                         alt="descripción de imagen"
@@ -476,7 +501,7 @@ const HighlightedDocs: React.FC = () => {
                     </div>
                   </div>
                   <div className="col">
-                    <div className="panel-vertical">
+                    <div className="panel-vertical bg-dark">
                       <Image
                         src={`${basePath}/images/destacado.jpg`}
                         alt="descripción de imagen"
@@ -506,7 +531,7 @@ const HighlightedDocs: React.FC = () => {
                     </div>
                   </div>
                   <div className="col">
-                    <div className="panel-vertical">
+                    <div className="panel-vertical bg-dark">
                       <Image
                         src={`${basePath}/images/destacado.jpg`}
                         alt="descripción de imagen"
@@ -534,7 +559,7 @@ const HighlightedDocs: React.FC = () => {
                     </div>
                   </div>
                   <div className="col">
-                    <div className="panel-vertical">
+                    <div className="panel-vertical bg-dark">
                       <Image
                         src={`${basePath}/images/destacado.jpg`}
                         alt="descripción de imagen"
@@ -567,12 +592,12 @@ const HighlightedDocs: React.FC = () => {
       subtitle: 'Con vídeo',
       content: (
         <>
-          <CodeBox codeHTML={HIGHLIGHTED_JOIN_VIDEO}>
+          <CodeBox codeHTML={HIGHLIGHTED_VERTICAL_VIDEO}>
             <ZoomContainer>
               <div className="container">
                 <div className="highlighted-items-2">
                   <div className="col">
-                    <div className="panel-vertical">
+                    <div className="panel-vertical bg-dark">
                       <video className="panel-img" controls>
                         <source src={`${basePath}/images/videoBuenosAires.mp4`} type="video/mp4" />
                         <track src={`${basePath}/images/videoBuenosAires.vtt`} default kind="captions" srcLang="es" />
@@ -590,6 +615,29 @@ const HighlightedDocs: React.FC = () => {
                         </p>
                         <div className="panel-footer">
                           <LinkClient className="btn btn-light btn-lg">Botón</LinkClient>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="panel-vertical bg-light">
+                      <iframe
+                        className="panel-img"
+                        src="https://www.youtube.com/embed/sXE613Oaxvc?si=iWSX1erqQxXOLojw"
+                        title="Buenos Aires se escribe en plural"
+                        frameBorder={0}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                      ></iframe>
+                      <div className="panel-body bg-light">
+                        <h2 className="panel-title ellipsis-2">Título del destacado</h2>
+                        <p className="panel-text">
+                          Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
+                          contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de
+                          pocas líneas. No puede contener negritas ni enlaces
+                        </p>
+                        <div className="panel-footer">
+                          <LinkClient className="btn btn-primary btn-lg">Botón</LinkClient>
                         </div>
                       </div>
                     </div>
@@ -628,7 +676,7 @@ const HighlightedDocs: React.FC = () => {
       subtitle: 'Sin multimedia',
       content: (
         <>
-          <CodeBox codeHTML={HIGHLIGHTED_JOIN_NO_IMAGE}>
+          <CodeBox codeHTML={HIGHLIGHTED_VERTICAL_SIN_MULTIMEDIA}>
             <ZoomContainer>
               <div className="container">
                 <div className="highlighted-items-2">
@@ -649,7 +697,22 @@ const HighlightedDocs: React.FC = () => {
                   </div>
                   <div className="col">
                     <div className="panel-vertical">
-                      <div className="panel-body  panel-sin-multimedia-v">
+                      <div className="panel-body bg-light panel-sin-multimedia-v">
+                        <h2 className="panel-title">Título del destacado</h2>
+                        <p className="panel-text">
+                          Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
+                          contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de
+                          pocas líneas. No puede contener negritas ni enlaces
+                        </p>
+                        <div className="panel-footer">
+                          <LinkClient className="btn btn-primary btn-lg">Botón</LinkClient>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div className="panel-vertical">
+                      <div className="panel-body panel-sin-multimedia-v">
                         <h2 className="panel-title">Título del destacado</h2>
                         <p className="panel-text">
                           Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
@@ -757,7 +820,7 @@ const HighlightedDocs: React.FC = () => {
       ),
     },
     {
-      title: 'Destacado con degrade',
+      subtitle: 'Destacado con degrade',
       content: (
         <>
           <CodeBox codeHTML={HIGHLIGHTED_DEGRADE}>

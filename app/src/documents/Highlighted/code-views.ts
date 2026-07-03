@@ -407,10 +407,11 @@ export const HIGHLIGHTED_BANNER_BUTTONS_VIDEO_MP4 = `<div class="panel-horizonta
 // </div>
 // `;
 
-export const HIGHLIGHTED_BANNER_FONDOS = `
+export const HIGHLIGHTED_VERTICAL_FONDOS = `
 <div class="highlighted-items-2">
+// Fondo oscuro
   <div class="col">
-    <div class="panel-vertical">
+    <div class="panel-vertical bg-dark">
       <img src="/destacado.jpg" alt="descripción de imagen" class="panel-img" />
       <div class="panel-body-dark">
         <h2 class="panel-title">Título del destacado</h2>
@@ -426,6 +427,25 @@ export const HIGHLIGHTED_BANNER_FONDOS = `
       </div>
     </div>
   </div>
+// Fondo claro
+  <div class="col">
+    <div class="panel-vertical bg-light">
+      <img src="/destacado.jpg" alt="descripción de imagen" class="panel-img" />
+      <div class="panel-body bg-light">
+        <h2 class="panel-title">Título del destacado</h2>
+        <p class="panel-text">Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces</p>
+        <div class="panel-footer">
+          <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
+            Botón
+          </a>
+          <a class="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
+            Botón
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+// Fondo blanco
   <div class="col">
     <div class="panel-vertical">
       <img src="/destacado.jpg" alt="descripción de imagen" class="panel-img" />
@@ -446,10 +466,10 @@ export const HIGHLIGHTED_BANNER_FONDOS = `
 </div>
 `;
 
-export const HIGHLIGHTED_JOIN_IMAGE = `
+export const HIGHLIGHTED_VERTICAL_ACCIONABLES = `
 <div class="highlighted-items-2">
   <div class="col">
-    <div class="panel-vertical">
+    <div class="panel-vertical bg-dark">
       <img src="/destacado.jpg" alt="descripción de imagen" class="panel-img" />
       <div class="panel-body-dark">
         <h2 class="panel-title">Este es el titulo del destacado que puede contener hasta 2 líneas de texto.</h2>
@@ -466,7 +486,7 @@ export const HIGHLIGHTED_JOIN_IMAGE = `
     </div>
   </div>
     <div class="col">
-    <div class="panel-vertical">
+    <div class="panel-vertical bg-dark">
       <img src="/destacado.jpg" alt="descripción de imagen" class="panel-img" />
       <div class="panel-body-dark">
         <h2 class="panel-title">Este es el titulo del destacado que puede contener hasta 2 líneas de texto.</h2>
@@ -483,7 +503,7 @@ export const HIGHLIGHTED_JOIN_IMAGE = `
     </div>
   </div>
   <div class="col">
-    <div class="panel-vertical">
+    <div class="panel-vertical bg-dark">
       <img src="/destacado.jpg" alt="descripción de imagen" class="panel-img" />
       <div class="panel-body-dark">
         <h2 class="panel-title">Este es el titulo del destacado que puede contener hasta 2 líneas de texto.</h2>
@@ -497,7 +517,7 @@ export const HIGHLIGHTED_JOIN_IMAGE = `
     </div>
   </div>
   <div class="col">
-    <div class="panel-vertical">
+    <div class="panel-vertical bg-dark">
       <img src="/destacado.jpg" alt="descripción de imagen" class="panel-img" />
       <div class="panel-body-dark">
         <h2 class="panel-title">Este es el titulo del destacado que puede contener hasta 2 líneas de texto.</h2>
@@ -511,10 +531,10 @@ export const HIGHLIGHTED_JOIN_IMAGE = `
 </div>
 `;
 
-export const HIGHLIGHTED_JOIN_NO_IMAGE = `<div class="highlighted-items-2">
+export const HIGHLIGHTED_VERTICAL_SIN_MULTIMEDIA = `<div class="highlighted-items-2">
   <div class="col">
   <!-- Destacado sin multimedia oscuro -->
-    <div class="panel-vertical">
+    <div class="panel-vertical bg-dark">
       <div class="panel-body-dark panel-sin-multimedia-v">
         <h2 class="panel-title">Título del destacado</h2>
         <p class="panel-text">
@@ -532,6 +552,24 @@ export const HIGHLIGHTED_JOIN_NO_IMAGE = `<div class="highlighted-items-2">
   </div>
   <div class="col">
   <!-- Destacado sin multimedia claro -->
+    <div class="panel-vertical bg-light">
+      <div class="panel-body panel-sin-multimedia-v bg-light">
+        <h2 class="panel-title">Título del destacado</h2>
+        <p class="panel-text">
+         Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede 
+         contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, 
+         de pocas líneas. No puede contener negritas ni enlaces
+        </p>
+        <div class="panel-footer">
+          <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
+            Botón
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+  <!-- Destacado sin multimedia blanco -->
     <div class="panel-vertical">
       <div class="panel-body panel-sin-multimedia-v">
         <h2 class="panel-title">Título del destacado</h2>
@@ -551,10 +589,11 @@ export const HIGHLIGHTED_JOIN_NO_IMAGE = `<div class="highlighted-items-2">
 </div>
 `;
 
-export const HIGHLIGHTED_JOIN_VIDEO = `
+export const HIGHLIGHTED_VERTICAL_VIDEO = `
 <div class="highlighted-items-2">
   <div class="col">
-    <div class="panel-vertical">
+  // Fondo oscuro
+    <div class="panel-vertical bg-dark">
       <p class="sr-only">Buenos Aires se escribe en plural</p>
       <video class="panel-img" controls="">
         <source src="/videoBuenosAires.mp4" type="video/mp4" />
@@ -568,7 +607,7 @@ export const HIGHLIGHTED_JOIN_VIDEO = `
           <a href="/videoBuenosAires.mp4">este enlace</a>.
         </p>
       </video>
-      <div class="panel-body">
+      <div class="panel-body-dark">
         <h2 class="panel-title">Título del destacado</h2>
         <p class="panel-text">Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces</p>
         <div class="panel-footer">
@@ -580,7 +619,8 @@ export const HIGHLIGHTED_JOIN_VIDEO = `
     </div>
   </div>
   <div class="col">
-    <div class="panel-vertical">
+  // Fondo claro
+    <div class="panel-vertical bg-light">
       <iframe
         class="panel-img"
         src="https://www.youtube.com/embed/sXE613Oaxvc?si=iWSX1erqQxXOLojw"
@@ -589,7 +629,7 @@ export const HIGHLIGHTED_JOIN_VIDEO = `
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen=""
       ></iframe>
-      <div class="panel-body">
+      <div class="panel-body bg-light">
         <h2 class="panel-title">Título del destacado</h2>
         <p class="panel-text">Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces</p>
         <div class="panel-footer">

@@ -113,14 +113,14 @@
 .panel-vertical {
   @include panel-content(column, xl);
   gap: 0;
-  border-radius: 24px;
+  border-radius: $border-radius-6xl;
   height: 100%;
   max-width: 538px;
 
   .panel-img,
   video {
     height: 304px;
-    border-radius: 24px 24px 0 0;
+    border-radius: $border-radius-6xl;
   }
 
   .panel-body,
@@ -132,7 +132,6 @@
     border-radius: 0 0 24px 24px;
     display: flex;
     flex-direction: column;
-    background-color: $slate-50;
 
     &.panel-body-dark {
       background-color: $sky-900;
@@ -140,7 +139,7 @@
     }
 
     &.panel-sin-multimedia-v {
-      border-radius: 24px;
+      border-radius: $border-radius-6xl;
     }
 
     .panel-text {
@@ -502,4 +501,5 @@ $gradient-text-colors: (
     }
   }
 }
+
 // Destacado container gradiente

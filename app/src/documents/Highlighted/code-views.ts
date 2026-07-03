@@ -717,7 +717,7 @@ export const HIGHLIGHTED_CONTAINER = `// Fondo blanco
 `;
 
 export const HIGHLIGHTED_DEGRADE = `<div class="container">
-  <div className="panel-horizontal-content panel-horizontal-container">
+  <div className="panel-horizontal-content panel-horizontal-container bg-gradient-blue p-0">
      <div className="panel-horizontal">
       <img alt="descripción de imagen" loading="lazy" width="538" height="304" decoding="async" data-nimg="1" class="panel-img" src="/Obelisco-V2/images/highlighted/bax-phone.png">
 
@@ -747,7 +747,7 @@ export const HIGHLIGHTED_DEGRADE = `<div class="container">
 `;
 
 export const HIGHLIGHTED_DEGRADE_INVERTIDO = `<div class="container">
-  <div className="panel-horizontal-content panel-horizontal-container">
+  <div className="panel-horizontal-content panel-horizontal-container bg-gradient-blue p-0">
      <div className="panel-horizontal panel-inverted">
       <img alt="descripción de imagen" loading="lazy" width="538" height="304" decoding="async" data-nimg="1" class="panel-img" src="/Obelisco-V2/images/highlighted/bax-phone.png">
 
@@ -770,7 +770,7 @@ export const HIGHLIGHTED_DEGRADE_INVERTIDO = `<div class="container">
         </div>
 
       </div>
-      
+
     </div>
   </div>
 </div>

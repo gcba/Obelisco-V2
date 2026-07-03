@@ -27,24 +27,6 @@
     border-radius: 0.5rem;
   }
 
-  .panel-img-full-height {
-    width: auto;
-    max-width: unset;
-    height: 100%;
-    aspect-ratio: unset;
-    object-fit: contain;
-    align-self: stretch;
-    max-height: 300px;
-
-    @include media-breakpoint-up(md) {
-      max-height: 400px;
-    }
-
-    @include media-breakpoint-up(xl) {
-      max-height: unset;
-    }
-  }
-
   .panel-body {
     padding: 0;
     width: 100%;
@@ -338,7 +320,7 @@
 }
 /* COMPONENTE DEPRECADO - BLOQUE DE TRAMITE */
 
-// Destacado container
+// Destacado container gradiente
 $gradient-colors: (
   'cyan': (
     $sky-900,
@@ -409,6 +391,36 @@ $gradient-text-colors: (
       border-radius: $border-radius-5xl;
     }
 
+    .panel-img-full-height {
+      width: auto;
+      max-width: unset;
+      height: 100%;
+      aspect-ratio: unset;
+      object-fit: contain;
+      align-self: stretch;
+      max-height: 300px;
+
+      @include media-breakpoint-up(md) {
+        max-height: 400px;
+      }
+
+      @include media-breakpoint-up(xl) {
+        max-height: unset;
+      }
+    }
+
+    .panel-img-object-fit-none {
+      object-fit: none;
+    }
+
+    .panel-img-object-fit-cover {
+      object-fit: cover;
+    }
+
+    .panel-img-object-fit-fill {
+      object-fit: fill;
+    }
+
     .panel-body {
       color: $body-color;
 
@@ -474,3 +486,4 @@ $gradient-text-colors: (
     }
   }
 }
+// Destacado container gradiente

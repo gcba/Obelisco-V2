@@ -779,9 +779,14 @@ const HighlightedDocs: React.FC = () => {
                     </div>
 
                     <Image
-                      src={`${basePath}/images/highlighted/bax-phone.png`}
+                      // src={`${basePath}/images/highlighted/destacado_container_2_332.png`}
+                      // src={`${basePath}/images/highlighted/destacado_container_1_443_332.png`}
+                      // src={`${basePath}/images/highlighted/destacado_container_1_1200_899.png`}
+                      // src={`${basePath}/images/highlighted/destacado_container_1_384_288_332.png`}
+                      src={`${basePath}/images/highlighted/destacado_container_2.png`}
                       alt="descripción de imagen"
-                      className="panel-img panel-img-full-height"
+                      // className="panel-img panel-img-full-height"
+                      className="panel-img panel-img-object-fit-none"
                       width={538}
                       height={304}
                     ></Image>
@@ -797,6 +802,12 @@ const HighlightedDocs: React.FC = () => {
       subtitle: 'Invertido',
       content: (
         <>
+          <p className="text-md">
+            Para invertir un Destacado horizontal se utiliza la clase: <code>{'panel-inverted'}</code>
+          </p>
+          <p className="text-md mb-3">
+            <code>{'<div class="panel-horizontal panel-inverted">'}</code>
+          </p>
           <CodeBox codeHTML={HIGHLIGHTED_DEGRADE_INVERTIDO}>
             <div className="container">
               <ZoomContainer>
@@ -816,9 +827,9 @@ const HighlightedDocs: React.FC = () => {
                     </div>
 
                     <Image
-                      src={`${basePath}/images/highlighted/bax-phone.png`}
+                      src={`${basePath}/images/highlighted/destacado_container_2_288.png`}
                       alt="descripción de imagen"
-                      className="panel-img panel-img-full-height"
+                      className="panel-img"
                       width={538}
                       height={304}
                     ></Image>

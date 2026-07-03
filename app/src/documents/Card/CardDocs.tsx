@@ -1690,20 +1690,20 @@ const CardDocs: React.FC = () => {
         ]}
       />
       <Tabs
-        // sectionUx={SECTION_UX}
+        sectionUx={SECTION_UX}
         sectionDev={SECTIONS_DEV}
-        // customSections={[
-        //   {
-        //     title: 'Especificaciones',
-        //     id: 'section-specs',
-        //     sectionContent: SPECS,
-        //   },
-        //   {
-        //     title: 'Accesibilidad',
-        //     id: 'section-accessibility',
-        //     sectionContent: ACCESSIBILITY,
-        //   },
-        // ]}
+        customSections={[
+          {
+            title: 'Especificaciones',
+            id: 'section-specs',
+            sectionContent: SPECS,
+          },
+          {
+            title: 'Accesibilidad',
+            id: 'section-accessibility',
+            sectionContent: ACCESSIBILITY,
+          },
+        ]}
       />
     </>
   );

@@ -472,3 +472,14 @@ export const TARJETAS_ACCESSIBILTY_2 = `
   </div>
 </div>
 `;
+
+export const TARJETAS_IMAGEN_FONDO = `<div class="card card-img-bg">
+    <div class="card-badges-bg">
+        <span class="badge badge-s-default">Etiqueta</span>
+        <span class="badge badge-s-default">Etiqueta</span>
+    </div>
+    <img alt="descripción de imagen" loading="lazy" width="348" height="196" src="/Obelisco-V2/images/" >
+    <p class="headline-lg">Título de la tarjeta</p>
+    <a href="#" aria-label="Descripcion de tarjetas"></a>
+  </div>
+`;

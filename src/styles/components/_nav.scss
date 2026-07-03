@@ -2,11 +2,12 @@
 
 // Variables
 $nav-icon-font-size: 1.25rem;
-$nav-link-padding-sm: 0.25rem 0.5rem;
-$nav-link-padding: 0.5rem 0.75rem;
-$nav-link-padding-lg: 0.75rem;
-$nav-link-vertical-padding-x: 1.125rem;
+$nav-link-padding-sm: 0.25rem 1rem;
+$nav-link-padding: 0.5rem 1rem;
+$nav-link-padding-lg: 0.75rem 1rem;
+$nav-link-vertical-padding-x: 1rem;
 
+// Navegación horizontal
 // Custom styles
 nav {
   .nav-pills {
@@ -17,7 +18,7 @@ nav {
         color: $body-color;
         @extend .headline-md;
         font-weight: $font-weight-normal;
-        border-radius: $border-radius-lg;
+        border-radius: $border-radius-pill;
         text-decoration: none;
         background-color: $white;
         outline: 0.125rem solid transparent;
@@ -209,7 +210,7 @@ nav {
     &.flex-column {
       margin-top: 0.188rem;
       background-color: $white;
-      border-radius: $border-radius-lg;
+      border-radius: 0;
 
       &:first-child {
         margin-top: 0;
@@ -217,6 +218,15 @@ nav {
 
       .nav-item > .nav-link {
         max-height: fit-content;
+
+        &.hover,
+        &:hover,
+        &.focus,
+        &:focus,
+        &.active,
+        &:active {
+          border-radius: $border-radius-3xl;
+        }
       }
 
       .nav .nav-item .nav-link .nav-icon {

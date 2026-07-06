@@ -458,9 +458,9 @@ export const HIGHLIGHTED_LATERAL = `
   <div class="panel-body">
     <h2 class="panel-title">Título del destacado</h2>
     <div class="d-flex gap-1 my-3">
-      <span class="badge badge-default">Etiqueta</span>
-      <span class="badge badge-default">Etiqueta</span>
-      <span class="badge badge-default">Etiqueta</span>
+      <span class="badge badge-s-default">Etiqueta</span>
+      <span class="badge badge-s-default">Etiqueta</span>
+      <span class="badge badge-s-default">Etiqueta</span>
     </div>
     <p class="panel-text">Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces.</p>
     <div class="accordion plain">
@@ -504,9 +504,9 @@ export const HIGHLIGHTED_LATERAL_BG = `
   <div class="panel-body">
     <h2 class="panel-title">Título del destacado</h2>
     <div class="d-flex gap-1 my-3">
-      <span class="badge badge-default">Etiqueta</span>
-      <span class="badge badge-default">Etiqueta</span>
-      <span class="badge badge-default">Etiqueta</span>
+      <span class="badge badge-s-default">Etiqueta</span>
+      <span class="badge badge-s-default">Etiqueta</span>
+      <span class="badge badge-s-default">Etiqueta</span>
     </div>
     <p class="panel-text">Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces.</p>
     <div class="accordion plain">

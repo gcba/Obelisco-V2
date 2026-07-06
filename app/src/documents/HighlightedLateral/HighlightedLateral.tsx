@@ -17,9 +17,9 @@ const HighlightedLateralDocs: React.FC = () => {
                 <div className="panel-body">
                   <h2 className="panel-title">Título del destacado</h2>
                   <div className="d-flex gap-1 my-3">
-                    <span className="badge badge-default">Etiqueta</span>
-                    <span className="badge badge-default">Etiqueta</span>
-                    <span className="badge badge-default">Etiqueta</span>
+                    <span className="badge badge-s-default">Etiqueta</span>
+                    <span className="badge badge-s-default">Etiqueta</span>
+                    <span className="badge badge-s-default">Etiqueta</span>
                   </div>
                   <p className="panel-text">
                     Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
@@ -85,9 +85,9 @@ const HighlightedLateralDocs: React.FC = () => {
                 <div className="panel-body">
                   <h2 className="panel-title">Título del destacado</h2>
                   <div className="d-flex gap-1 my-3">
-                    <span className="badge badge-default">Etiqueta</span>
-                    <span className="badge badge-default">Etiqueta</span>
-                    <span className="badge badge-default">Etiqueta</span>
+                    <span className="badge badge-s-default">Etiqueta</span>
+                    <span className="badge badge-s-default">Etiqueta</span>
+                    <span className="badge badge-s-default">Etiqueta</span>
                   </div>
                   <p className="panel-text">
                     Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener

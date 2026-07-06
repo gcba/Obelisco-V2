@@ -571,8 +571,8 @@ const PaginationDocs: React.FC = () => {
             El componente de Paginado está construido para ser accesible mediante navegación por teclado y reconocible
             por lectores de pantalla, comunicando sus diferentes estados de forma clara.
           </p>
-          <span className="badge badge-default ms-1">TAB</span>
-          <span className="badge badge-default">ENTER</span>
+          <span className="badge badge-s-default">TAB</span>
+          <span className="badge badge-s-default">ENTER</span>
           <p className="text-md mt-2 mb-4">
             Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Además, con
             el <i>enter</i>, puede accionar los elementos sobre el item en el que la persona está posicionada.

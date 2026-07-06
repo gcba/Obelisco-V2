@@ -140,6 +140,15 @@
 
     &.panel-sin-multimedia-v {
       border-radius: $border-radius-6xl;
+      padding: 32px;
+
+      @include media-breakpoint-down(xl) {
+        padding: 36px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        padding: 16px;
+      }
     }
 
     .panel-text {

@@ -31,9 +31,903 @@ import {
 const logo = '/images/logo_ba.svg';
 const logo_mobile = '/images/logo_ba_mobile.svg';
 const logo_ba_logo_banner = '/images/header/logo_BA_banner.svg';
+const logo_ba_white = '/images/logo_ba_white.svg';
 
 const HeaderDocs: React.FC = () => {
+  const SECTION_UX = [
+    {
+      title: 'Uso',
+      firstTitle: true,
+      content: (
+        <>
+          <div className="list-informative pb-3">
+            <p className="text-xl">Cuándo usar</p>
+            <ul className="list-informative-bullet">
+              <li>
+                Debe estar presente en todas las páginas de forma consistente, para facilitar la navegación de la
+                persona usuaria a través del sitio web.
+              </li>
+              <li>Para mantener las navegaciones principales y la presencia de la marca en un primer nivel.</li>
+            </ul>
+          </div>
+
+          <div className="list-informative pb-3">
+            <p className="text-xl">Cuándo no usar</p>
+            <ul className="list-informative-bullet">
+              <li>
+                Para categorías internas o filtrado dentro de una página, utilizar{' '}
+                <a href="https://gcba.github.io/Obelisco-V2/components/tabs">Pestañas</a> en su lugar.
+              </li>
+              <li>Para mantener las navegaciones principales y la presencia de la marca en un primer nivel.</li>
+              <li>
+                <strong>Para navegaciones de 2do nivel o subsecciones de contenido, considerar la </strong>{' '}
+                <a href="https://gcba.github.io/Obelisco-V2/components/nav-horizontal">Navegación horizontal</a>{' '}
+                <strong>o la </strong>
+                <a href="https://gcba.github.io/Obelisco-V2/components/nav-vertical">Navegación vertical</a>{' '}
+                <strong>dependiendo del tipo de página</strong>.
+              </li>
+            </ul>
+          </div>
+        </>
+      ),
+    },
+    {
+      title: 'Ejemplos de uso',
+    },
+    {
+      subtitle: 'Navegación principal',
+      content: (
+        <>
+          <p className="text-md">
+            Los enlaces de navegación redirigen a las secciones y/o páginas principales de la arquitectura de
+            información del sitio web.
+          </p>
+
+          <div className="py-4">
+            <div className="max-items-2">
+              <div className="col">
+                <Image
+                  src={`${basePath}/images/header/header_columnas_si_usar.svg`}
+                  alt="Cómo usar la navegacion principal de header"
+                  width="800"
+                  height="352"
+                  className="img-fluid"
+                />
+                <div className="d-flex pt-3">
+                  <span className="material-symbols-rounded text-success">check</span>
+                  <p className="mb-0">
+                    Utilizar hasta 7 enlaces de navegación, dependiendo del tipo de encabezado (header).
+                  </p>
+                </div>
+              </div>
+              <div className="col">
+                <Image
+                  src={`${basePath}/images/header/header_columnas_no_usar.svg`}
+                  alt="Cómo usar la navegacion principal de header"
+                  width="800"
+                  height="352"
+                  className="img-fluid"
+                />
+                <div className="d-flex pt-3">
+                  <span className="material-symbols-rounded text-danger">close</span>
+                  <p className="mb-0">
+                    No utilizar más de 7 enlaces de navegación, o más de las navegaciones disponibles para cada tipo de
+                    encabezado (header) y sus variantes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </>
+      ),
+    },
+    {
+      subtitle: 'Opciones de navegación',
+      content: (
+        <>
+          <p className="text-md">
+            Las opciones de navegación se utilizan como subsecciones dentro de un desplegable de navegación del
+            encabezado <i>(header)</i>.
+          </p>
+
+          <div className="py-4">
+            <div className="max-items-2">
+              <div className="col">
+                <Image
+                  src={`${basePath}/images/header/header_opciones_de_navegacion_si.svg`}
+                  alt="Cómo sí usar las opciones de navegación del header"
+                  width="800"
+                  height="352"
+                  className="img-fluid"
+                />
+                <div className="d-flex pt-3">
+                  <span className="material-symbols-rounded text-success">check</span>
+                  <p className="mb-0">
+                    Utilizar una opción de navegación con link de acceso cuando hay más de 6 opciones.
+                  </p>
+                </div>
+              </div>
+              <div className="col">
+                <Image
+                  src={`${basePath}/images/header/header_opciones_de_navegacion_no.svg`}
+                  alt="Cómo no usar las opciones de navegación del header"
+                  width="800"
+                  height="352"
+                  className="img-fluid"
+                />
+                <div className="d-flex pt-3">
+                  <span className="material-symbols-rounded text-danger">close</span>
+                  <p className="mb-0">No utilizar una opción link si las subsecciones no superan las 6 opciones.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </>
+      ),
+    },
+    {
+      title: (
+        <>
+          Tipos de encabezado <i>(header)</i>
+        </>
+      ),
+      content: (
+        <>
+          <p className="text-md">
+            Existen 2 tipos de header según la cantidad de navegaciones y el estado de la cuenta de la persona usuaria
+            (con sesión iniciada y sin iniciar sesión).
+          </p>
+        </>
+      ),
+    },
+    {
+      subtitle: (
+        <>
+          <i>Desktop deslogueado</i> | En 1 línea
+        </>
+      ),
+      content: (
+        <>
+          <p className="text-md mt-2 mb-4">
+            El encabezado <i>(header)</i> de 1 línea es el tipo de encabezado que se utiliza por defecto.
+          </p>
+          <Image
+            src={`${basePath}/images/header/header_desktop_deslogueado_1_linea.svg`}
+            alt="Desktop deslogueado en 1 línea"
+            width="800"
+            height="35"
+            className="img-fluid"
+          />
+        </>
+      ),
+    },
+    {
+      subtitle: (
+        <>
+          <i>Desktop logueado</i> | En 1 línea
+        </>
+      ),
+      content: (
+        <>
+          <p className="text-md mt-2 mb-4">
+            El encabezado <i>(header)</i> de 1 línea es el tipo de encabezado que se utiliza por defecto.
+          </p>
+          <Image
+            src={`${basePath}/images/header/header_desktop_logueado_1_linea.svg`}
+            alt="Desktop logueado en 1 línea"
+            width="800"
+            height="35"
+            className="img-fluid"
+          />
+        </>
+      ),
+    },
+    {
+      subtitle: (
+        <>
+          <i>Desktop deslogueado</i> | En 2 líneas
+        </>
+      ),
+      content: (
+        <>
+          <p className="text-md mt-2 mb-4">
+            El encabezado <i>(header)</i> de 2 líneas se utiliza cuando la cantidad de navegaciones excede al espacio
+            disponible en 1 línea.
+          </p>
+          <Image
+            src={`${basePath}/images/header/header_desktop_deslogueado_2_lineas.svg`}
+            alt="Desktop logueado en 2 líneas"
+            width="800"
+            height="35"
+            className="img-fluid"
+          />
+        </>
+      ),
+    },
+    {
+      subtitle: (
+        <>
+          <i>Desktop logueado</i> | En 2 líneas
+        </>
+      ),
+      content: (
+        <>
+          <p className="text-md mt-2 mb-4">
+            El encabezado <i>(header)</i> de 2 líneas se utiliza cuando la cantidad de navegaciones excede al espacio
+            disponible en 1 línea.
+          </p>
+          <Image
+            src={`${basePath}/images/header/header_desktop_logueado_2_lineas.svg`}
+            alt="Desktop deslogueado en 2 líneas"
+            width="800"
+            height="35"
+            className="img-fluid"
+          />
+        </>
+      ),
+    },
+    {
+      subtitle: (
+        <>
+          <i>Mobile</i>
+        </>
+      ),
+      content: (
+        <>
+          <p className="text-md mt-2 mb-4">
+            El encabezado <i>(header)</i> en su versión mobile pasa a ser un menú desplegable con la reorganización de
+            los elementos que lo componen.
+          </p>
+          <Image
+            src={`${basePath}/images/header/header_mobile.svg`}
+            alt="Mobile"
+            width="800"
+            height="389"
+            className="img-fluid"
+          />
+        </>
+      ),
+    },
+    {
+      title: (
+        <>
+          Encabezado <i>(header)</i> con slots
+        </>
+      ),
+      content: (
+        <>
+          <p className="text-md mb-3">
+            Un espacio reservado o <i>slot</i> es un componente local del sistema de diseño, que solo existe en Figma, y
+            se utiliza para flexibilizar el uso de un componente del UI kit. Los <i>slots</i> permiten adoptar el
+            sistema de diseño y utilizar componentes de la librería sin la necesidad de generar nuevas estructuras.
+          </p>
+          <p className="text-md mb-4">
+            En el caso del encabezado (header), el <i>slot</i> cumple la función del logo. El diseñador en Figma puede
+            replicar la flexibilidad de uso del código.
+          </p>
+          <Image
+            src={`${basePath}/images/header/header_slots.svg`}
+            alt="Header variante slots"
+            width="800"
+            height="389"
+            className="img-fluid"
+          />
+          <p className="d-flex text-md fw-semibold mt-4">
+            <span className="pe-1 material-symbols-rounded" aria-hidden="true">
+              info
+            </span>
+            Uso del componente en Figma
+          </p>
+
+          <p className="text-md">
+            Para evitar romper el vínculo del componente <i>(detachear)</i> en Figma, los diseñadores pueden
+            intercambiar la instancia del slot por el logo de marca y/o del activo digital, sin la necesidad de generar
+            nuevas estructuras.
+          </p>
+
+          <ol>
+            <li className="mb-3">
+              Componentizá el logo de la marca o el activo digital que adopta el sistema de diseño.
+            </li>
+            <li className="mb-3">
+              Seleccioná la variante de tamaño de <i>slot</i> que se adapte a tus necesidades. Existen 2 variantes: 1:1
+              (80x80 px. en <i>desktop</i> y 60x60 px. en <i>mobile</i>), y para logotipos horizontales (115x80 px. en
+              desktop y 115x60 px. en mobile).
+            </li>
+            <li>
+              Intercambiá el <i>slot</i>, utilizando la propiedad de <i>instance swap</i> del encabezado <i>(header)</i>
+              , por el logo de la marca o el activo digital.
+            </li>
+          </ol>
+        </>
+      ),
+    },
+  ];
+
+  const SPECS = [
+    {
+      title: 'Anatomía',
+      firstTitle: true,
+      content: (
+        <>
+          <Image
+            src={`${basePath}/images/header/header_specs_anatomia.svg`}
+            alt="Header anatomía"
+            width="800"
+            height="242"
+            className="img-fluid"
+          />
+          <div className="mt-4">
+            <div className="responsive-scroll" tabIndex={0}>
+              <table className="table">
+                <thead>
+                  <tr>
+                    <th scope="col" className="tb-text">
+                      Elemento
+                    </th>
+                    <th scope="col" className="tb-text">
+                      Texto
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Logo</td>
+                    <td>Obligatorio.</td>
+                  </tr>
+                  <tr>
+                    <td>Navegación principal</td>
+                    <td>Opcional, pero recomendado.</td>
+                  </tr>
+                  <tr>
+                    <td>Buscador</td>
+                    <td>Opcional.</td>
+                  </tr>
+                  <tr>
+                    <td>Desplegable de perfil</td>
+                    <td>Opcional.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </>
+      ),
+    },
+    {
+      title: 'Variantes',
+      content: (
+        <>
+          <p className="text-md mt-2 mb-4">
+            El encabezado <i>(header)</i> puede adaptarse a las necesidades del producto digital para ofrecer una
+            estructura basada en la arquitectura de información del sitio. El único elemento inamovible e imprescindible
+            del organismo es el logo de la Ciudad.
+          </p>
+        </>
+      ),
+    },
+    {
+      subtitle: 'Sin buscador',
+      content: (
+        <>
+          <p className="text-md mt-2 mb-4">
+            El encabezado <i>(header)</i> puede prescindir del buscador de no ser necesario o si ya hay un buscador
+            general dentro del cuerpo de la página. En caso de no haber un buscador, se pueden utilizar hasta 6
+            navegaciones manteniendo 1 sola línea para el organismo.
+          </p>
+          <Image
+            src={`${basePath}/images/header/header_specs_variantes.svg`}
+            alt="Variante del header - Sin buscador"
+            width="800"
+            height="35"
+            className="img-fluid"
+          />
+        </>
+      ),
+    },
+    {
+      subtitle: 'Sin botón/sección de perfil',
+      content: (
+        <>
+          <p className="text-md mt-2 mb-4">
+            El encabezado <i>(header)</i> puede prescindir de la sección de perfil de no ser necesaria. En caso de no
+            haber un botón de perfil o un desplegable de perfil, se pueden utilizar hasta 6 navegaciones manteniendo 1
+            sola línea para el organismo.
+          </p>
+          <Image
+            src={`${basePath}/images/header/header_specs_sin_boton.svg`}
+            alt="Header variante sin boton/seccion de perfil"
+            width="800"
+            height="35"
+            className="img-fluid"
+          />
+        </>
+      ),
+    },
+    {
+      subtitle: 'Sin navegaciones',
+      content: (
+        <>
+          <>
+            <p className="text-md mt-2 mb-4">
+              El encabezado <i>(header)</i> puede prescindir de la sección de perfil de no ser necesaria. En caso de no
+              haber un botón de perfil o un desplegable de perfil, se pueden utilizar hasta 6 navegaciones manteniendo 1
+              sola línea para el organismo.
+            </p>
+            <Image
+              src={`${basePath}/images/header/header_specs_sin_navegacion.svg`}
+              alt="Header variante sin boton/seccion de perfil"
+              width="800"
+              height="35"
+              className="img-fluid"
+            />
+          </>
+        </>
+      ),
+    },
+    {
+      subtitle: 'Banner del GCBA',
+      content: (
+        <>
+          <>
+            <p className="text-md mt-2 mb-4">
+              Para productos digitales externos a la web de la Ciudad de Buenos Aires, existe una variante del
+              encabezado (header) que se utiliza al adoptar el sistema de diseño. Al ser un producto externo
+              perteneciente al GCBA, el encabezado (header) utiliza un banner con la marca de Gobierno en un primer
+              nivel; por otro lado, el lugar designado para el logo se utiliza para el logo de la marca o activo
+              digital.
+            </p>
+            <Image
+              src={`${basePath}/images/header/header_banner.svg`}
+              alt="Header variante banner"
+              width="800"
+              height="35"
+              className="img-fluid"
+            />
+          </>
+        </>
+      ),
+    },
+  ];
+
+  const ACCESSIBILITY = [
+    {
+      title: 'Navegación alternativa',
+      firstTitle: true,
+      content: (
+        <>
+          <p className="text-md">
+            Todos los elementos del encabezado <i>(header)</i> pueden recorrerse utilizando la navegación por teclado u
+            otras herramientas de asistencia como lectores por voz.
+          </p>
+        </>
+      ),
+    },
+    {
+      subtitle: "Enlace 'Saltar al contenido principal'",
+      content: (
+        <>
+          <p className="text-md">
+            Con la clase {'skip-to-main-content-link'}, la persona usuaria puede saltar el encabezado <i>(header)</i> y
+            continuar directamente en el cuerpo de la página, sin la necesidad de navegar a través de los elementos del
+            organismo.
+          </p>
+          <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
+            {HEADER}
+          </SyntaxHighlighter>
+        </>
+      ),
+    },
+    {
+      subtitle: 'Texto alternativo para el logo',
+      content: (
+        <>
+          <p className="text-md">
+            El logo dentro del encabezado <i>(header)</i> funciona como enlace de redirección a la página de inicio del
+            sitio web. Por eso, dentro del atributo alt es necesario incluir la palabra “Inicio”, como forma de
+            identificar y brindar mayor contexto sobre la acción.
+          </p>
+          <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
+            {HEADER_2}
+          </SyntaxHighlighter>
+        </>
+      ),
+    },
+  ];
+
   const SECTIONS_DEV = [
+    {
+      title: 'Landing con multimedia',
+      firstTitle: true,
+      content: (
+        <>
+          <div className="container">
+            <div className="hero-container">
+              <div className="hero-box-sizing ">
+                <div className="container-headers">
+                  {/* Header logo y navegación ⬇ */}
+                  <header
+                    className="o-header hero-navbar navbar position-absolute top-0 start-0 z-3 w-100 bg-glass"
+                    role="banner"
+                  >
+                    <LinkClient href="#main" className="skip-to-main-content-link">
+                      Saltar al contenido principal
+                    </LinkClient>
+                    <div className="container header-container">
+                      <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
+                        <img
+                          className="d-none d-xl-block"
+                          src={`${basePath}${logo_ba_white}`}
+                          alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                        />
+                        <img
+                          className="d-xl-none"
+                          src={`${basePath}${logo_ba_white}`}
+                          alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                        />
+                      </LinkClient>
+                      <div className="navbar-login-mobile">
+                        <LinkClient className="btn btn-lg btn-icon  btn-outline-light">
+                          <span className="material-symbols-rounded" aria-hidden="true">
+                            person
+                          </span>
+                          <span className="btn-text">Ingresar</span>
+                        </LinkClient>
+                      </div>
+                      <button
+                        className="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarContent1"
+                        aria-controls="navbarContent1"
+                        aria-expanded="false"
+                        aria-label="Menú"
+                      ></button>
+                      <div className="collapse navbar-collapse" id="navbarContent1">
+                        <div className="navbar-content">
+                          <div className="navbar-sections">
+                            <nav>
+                              <p className="navbar-sections-title">Secciones</p>
+                              <ul className="nav nav-pills nav-sections">
+                                <li className="dropdown">
+                                  <button
+                                    type="button"
+                                    className="btn btn-dropdown btn-lg"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  >
+                                    <span className="btn-dropdown-text ellipsis-1">Áreas de Gobierno</span>
+                                    <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                                      expand_more
+                                    </span>
+                                  </button>
+                                  <div className="dropdown-menu">
+                                    <LinkClient className="dropdown-item">
+                                      <span className="item-text">Enlace de navegación</span>
+                                    </LinkClient>
+                                    <LinkClient className="dropdown-item">
+                                      <span className="item-text">Enlace de navegación</span>
+                                    </LinkClient>
+                                    <LinkClient className="dropdown-item">
+                                      <span className="item-text">Enlace de navegación</span>
+                                    </LinkClient>
+                                    <LinkClient className="dropdown-item">
+                                      <span className="item-text">Enlace de navegación</span>
+                                    </LinkClient>
+                                    <LinkClient className="dropdown-item">
+                                      <span className="item-text">Enlace de navegación</span>
+                                    </LinkClient>
+                                    <LinkClient className="dropdown-item">
+                                      <span className="item-text">Enlace de navegación</span>
+                                    </LinkClient>
+                                    <LinkClient className="dropdown-item item-link">
+                                      <span className="item-text">Ver más</span>
+                                      <span className="material-symbols-rounded" aria-hidden="true">
+                                        arrow_forward
+                                      </span>
+                                    </LinkClient>
+                                  </div>
+                                </li>
+                                <li className="nav-item">
+                                  <LinkClient className="nav-link nav-link-lg">
+                                    <span>BA Discapacidad</span>
+                                  </LinkClient>
+                                </li>
+                                <li className="dropdown">
+                                  <button
+                                    type="button"
+                                    className="btn btn-dropdown btn-lg"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  >
+                                    <span className="btn-dropdown-text ellipsis-1">Trámites y servicios</span>
+                                    <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                                      expand_more
+                                    </span>
+                                  </button>
+                                  <div className="dropdown-menu">
+                                    <LinkClient className="dropdown-item">
+                                      <span className="item-text">Enlace de navegación</span>
+                                    </LinkClient>
+                                    <LinkClient className="dropdown-item">
+                                      <span className="item-text">Enlace de navegación</span>
+                                    </LinkClient>
+                                    <LinkClient className="dropdown-item">
+                                      <span className="item-text">Enlace de navegación</span>
+                                    </LinkClient>
+                                    <LinkClient className="dropdown-item">
+                                      <span className="item-text">Enlace de navegación</span>
+                                    </LinkClient>
+                                    <LinkClient className="dropdown-item">
+                                      <span className="item-text">Enlace de navegación</span>
+                                    </LinkClient>
+                                    <LinkClient className="dropdown-item">
+                                      <span className="item-text">Enlace de navegación</span>
+                                    </LinkClient>
+                                    <LinkClient className="dropdown-item item-link">
+                                      <span className="item-text">Ver más</span>
+                                      <span className="material-symbols-rounded" aria-hidden="true">
+                                        arrow_forward
+                                      </span>
+                                    </LinkClient>
+                                  </div>
+                                </li>
+                              </ul>
+                            </nav>
+                          </div>
+                          <div className="navbar-search">
+                            <form className="form-search">
+                              <label htmlFor="header-search" className="form-label sr-only">
+                                Buscador
+                              </label>
+                              <div className="search-container">
+                                <input
+                                  type="search"
+                                  className="form-control input-search input-search-with-button"
+                                  id="header-search"
+                                  placeholder="Buscador"
+                                />
+                                <button className="reset" type="reset" aria-label="Borrar"></button>
+                                <button className="button-search" type="submit" aria-label="Buscar"></button>
+                              </div>
+                            </form>
+                          </div>
+                          <div className="navbar-login">
+                            <LinkClient className="btn btn-lg btn-outline-light">
+                              <span className="material-symbols-rounded" aria-hidden="true">
+                                person
+                              </span>
+                              <span className="btn-text">Ingresar</span>
+                            </LinkClient>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="header-backdrop"></div>
+                  </header>
+
+                  {/* Header multimedia y contenido ⬇ */}
+                  <header className="hero-landing hero-video ob-hero">
+                    {/* multimedia */}
+                    <video src={`${basePath}/images/header/video_landing.mp4`} autoPlay muted loop playsInline></video>
+
+                    {/* capa gradiente */}
+                    <div className="ob-bg"></div>
+
+                    {/* contenido */}
+                    <div className="container py-5">
+                      <nav aria-label="breadcrumb">
+                        <ol className="breadcrumb">
+                          <li className="breadcrumb-item">
+                            <a href="#">Buenos aires</a>
+                          </li>
+                          <li className="breadcrumb-item">
+                            <a href="#">Jefatura de gabinete</a>
+                          </li>
+                        </ol>
+                      </nav>
+                      <div className="row">
+                        <div className="col-12 col-lg-8">
+                          <div className="mt-2 pt-1">
+                            <h1 className="mb-3">Secretaría de Innovación y Transformación Digital</h1>
+                            <p>
+                              Trabajamos en soluciones integrales para mejorar la calidad de vida de los vecinos y
+                              visitantes de la Ciudad, a partir de la tecnología y la innovación.
+                            </p>
+
+                            <div className="container-dropdowns">
+                              <div className="dropdown">
+                                <button
+                                  type="button"
+                                  className="btn btn-dropdown btn-dropdown-border btn-lg"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
+                                  <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                                    expand_more
+                                  </span>
+                                </button>
+                                <div className="dropdown-menu">
+                                  <a className="dropdown-item" href="#">
+                                    <span className="item-text">Opción de navegación</span>
+                                  </a>
+                                  <a className="dropdown-item" href="#">
+                                    <span className="item-text">Opción de navegación</span>
+                                  </a>
+                                  <a className="dropdown-item" href="#">
+                                    <span className="item-text">Opción de navegación</span>
+                                  </a>
+                                </div>
+                              </div>
+
+                              <div className="dropdown">
+                                <button
+                                  type="button"
+                                  className="btn btn-dropdown btn-dropdown-border btn-lg"
+                                  data-bs-toggle="dropdown"
+                                  aria-expanded="false"
+                                >
+                                  <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
+                                  <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                                    expand_more
+                                  </span>
+                                </button>
+                                <div className="dropdown-menu">
+                                  <a className="dropdown-item" href="#">
+                                    <span className="item-text">Opción de navegación</span>
+                                  </a>
+                                  <a className="dropdown-item" href="#">
+                                    <span className="item-text">Opción de navegación</span>
+                                  </a>
+                                  <a className="dropdown-item" href="#">
+                                    <span className="item-text">Opción de navegación</span>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </header>
+                </div>
+              </div>
+            </div>
+          </div>
+        </>
+      ),
+    },
+    // {
+    //   title: 'Funciona',
+    //   firstTitle: true,
+    //   content: (
+    //     <>
+    //       <br />
+    //       <br />
+    //       <br />
+    //       <br />
+    //       <br />
+    //       <div className="hero-box-sizing ">
+    //         <div className="container-headers">
+    //           {/* Logo y navegación ⬇ */}
+    //           <header className="o-header navbar hero-navbar navbar-lg">
+    //             {' '}
+    //             <div className="container">
+    //               <a className="navbar-brand" href="https://www.buenosaires.gob.ar/">
+    //                 <img className="header-logo" src={basePath + logo_ba_dark} alt="Ciudad de buenos aires" />
+    //               </a>
+
+    //               <div className="navbar-search d-responsive ml-auto">
+    //                 <button
+    //                   className="button-search btn btn-icon tecba-button btn-dark"
+    //                   type="submit"
+    //                   aria-label="Buscar"
+    //                 >
+    //                   <span className="material-icons-round">Buscar</span>
+    //                 </button>
+    //               </div>
+
+    //               <div className="list-group-content d-responsive ml-2">
+    //                 <button type="button" className="btn btn-icon tecba-button btn-cyan">
+    //                   <span className="material-symbols-rounded" aria-hidden="true">
+    //                     person
+    //                   </span>
+    //                   <span className="btn-text">Ingresar</span>
+    //                 </button>
+    //               </div>
+    //             </div>
+    //           </header>
+
+    //           {/* Multimedia y contenido ⬇ */}
+    //           <header className="hero-landing hero-video ob-hero">
+    //             {/* multimedia */}
+    //             <video src={`${basePath}/images/header/video_landing.mp4`} autoPlay muted loop playsInline></video>
+
+    //             {/* capa gradiente */}
+    //             <div className="ob-bg"></div>
+
+    //             <div className="container py-5">
+    //               <nav aria-label="breadcrumb">
+    //                 <ol className="breadcrumb">
+    //                   <li className="breadcrumb-item">
+    //                     <a href="#">Buenos aires</a>
+    //                   </li>
+    //                   <li className="breadcrumb-item">
+    //                     <a href="#">Jefatura de gabinete</a>
+    //                   </li>
+    //                 </ol>
+    //               </nav>
+    //               <div className="row">
+    //                 <div className="col-12 col-lg-8">
+    //                   <div className="mt-2 pt-1">
+    //                     <h1 className="mb-3">Secretaría de Innovación y Transformación Digital</h1>
+    //                     <p>
+    //                       Trabajamos en soluciones integrales para mejorar la calidad de vida de los vecinos y
+    //                       visitantes de la Ciudad, a partir de la tecnología y la innovación.
+    //                     </p>
+
+    //                     <div className="container-dropdowns">
+    //                       <div className="dropdown">
+    //                         <button
+    //                           type="button"
+    //                           className="btn btn-dropdown btn-dropdown-border btn-lg"
+    //                           data-bs-toggle="dropdown"
+    //                           aria-expanded="false"
+    //                         >
+    //                           <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
+    //                           <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+    //                             expand_more
+    //                           </span>
+    //                         </button>
+    //                         <div className="dropdown-menu">
+    //                           <a className="dropdown-item" href="#">
+    //                             <span className="item-text">Opción de navegación</span>
+    //                           </a>
+    //                           <a className="dropdown-item" href="#">
+    //                             <span className="item-text">Opción de navegación</span>
+    //                           </a>
+    //                           <a className="dropdown-item" href="#">
+    //                             <span className="item-text">Opción de navegación</span>
+    //                           </a>
+    //                         </div>
+    //                       </div>
+
+    //                       <div className="dropdown">
+    //                         <button
+    //                           type="button"
+    //                           className="btn btn-dropdown btn-dropdown-border btn-lg"
+    //                           data-bs-toggle="dropdown"
+    //                           aria-expanded="false"
+    //                         >
+    //                           <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
+    //                           <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+    //                             expand_more
+    //                           </span>
+    //                         </button>
+    //                         <div className="dropdown-menu">
+    //                           <a className="dropdown-item" href="#">
+    //                             <span className="item-text">Opción de navegación</span>
+    //                           </a>
+    //                           <a className="dropdown-item" href="#">
+    //                             <span className="item-text">Opción de navegación</span>
+    //                           </a>
+    //                           <a className="dropdown-item" href="#">
+    //                             <span className="item-text">Opción de navegación</span>
+    //                           </a>
+    //                         </div>
+    //                       </div>
+    //                     </div>
+    //                   </div>
+    //                 </div>
+    //               </div>
+    //             </div>
+    //           </header>
+    //         </div>
+    //       </div>
+    //     </>
+    //   ),
+    // },
     {
       title: 'Header GCBA',
       firstTitle: true,
@@ -86,8 +980,9 @@ const HeaderDocs: React.FC = () => {
                         <span className="btn-text">Ingresar</span>
                       </LinkClient>
                     </div>
+                    {/* Menú hamburguesa */}
                     <button
-                      className="navbar-toggler"
+                      className="navbar-toggler bg-white"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#navbarContent1"
@@ -148,7 +1043,7 @@ const HeaderDocs: React.FC = () => {
                           </form>
                         </div>
                         <div className="navbar-login">
-                          <LinkClient className="btn btn-lg btn-outline-tertiary">
+                          <LinkClient className="btn btn-lg btn-outline-light">
                             <span className="material-symbols-rounded" aria-hidden="true">
                               person
                             </span>
@@ -2368,507 +3263,6 @@ const HeaderDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-        </>
-      ),
-    },
-  ];
-
-  const SECTION_UX = [
-    {
-      title: 'Uso',
-      firstTitle: true,
-      content: (
-        <>
-          <div className="list-informative pb-3">
-            <p className="text-xl">Cuándo usar</p>
-            <ul className="list-informative-bullet">
-              <li>
-                Debe estar presente en todas las páginas de forma consistente, para facilitar la navegación de la
-                persona usuaria a través del sitio web.
-              </li>
-              <li>Para mantener las navegaciones principales y la presencia de la marca en un primer nivel.</li>
-            </ul>
-          </div>
-
-          <div className="list-informative pb-3">
-            <p className="text-xl">Cuándo no usar</p>
-            <ul className="list-informative-bullet">
-              <li>
-                Para categorías internas o filtrado dentro de una página, utilizar{' '}
-                <a href="https://gcba.github.io/Obelisco-V2/components/tabs">Pestañas</a> en su lugar.
-              </li>
-              <li>Para mantener las navegaciones principales y la presencia de la marca en un primer nivel.</li>
-              <li>
-                <strong>Para navegaciones de 2do nivel o subsecciones de contenido, considerar la </strong>{' '}
-                <a href="https://gcba.github.io/Obelisco-V2/components/nav-horizontal">Navegación horizontal</a>{' '}
-                <strong>o la </strong>
-                <a href="https://gcba.github.io/Obelisco-V2/components/nav-vertical">Navegación vertical</a>{' '}
-                <strong>dependiendo del tipo de página</strong>.
-              </li>
-            </ul>
-          </div>
-        </>
-      ),
-    },
-    {
-      title: 'Ejemplos de uso',
-    },
-    {
-      subtitle: 'Navegación principal',
-      content: (
-        <>
-          <p className="text-md">
-            Los enlaces de navegación redirigen a las secciones y/o páginas principales de la arquitectura de
-            información del sitio web.
-          </p>
-
-          <div className="py-4">
-            <div className="max-items-2">
-              <div className="col">
-                <Image
-                  src={`${basePath}/images/header/header_columnas_si_usar.svg`}
-                  alt="Cómo usar la navegacion principal de header"
-                  width="800"
-                  height="352"
-                  className="img-fluid"
-                />
-                <div className="d-flex pt-3">
-                  <span className="material-symbols-rounded text-success">check</span>
-                  <p className="mb-0">
-                    Utilizar hasta 7 enlaces de navegación, dependiendo del tipo de encabezado (header).
-                  </p>
-                </div>
-              </div>
-              <div className="col">
-                <Image
-                  src={`${basePath}/images/header/header_columnas_no_usar.svg`}
-                  alt="Cómo usar la navegacion principal de header"
-                  width="800"
-                  height="352"
-                  className="img-fluid"
-                />
-                <div className="d-flex pt-3">
-                  <span className="material-symbols-rounded text-danger">close</span>
-                  <p className="mb-0">
-                    No utilizar más de 7 enlaces de navegación, o más de las navegaciones disponibles para cada tipo de
-                    encabezado (header) y sus variantes.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </>
-      ),
-    },
-    {
-      subtitle: 'Opciones de navegación',
-      content: (
-        <>
-          <p className="text-md">
-            Las opciones de navegación se utilizan como subsecciones dentro de un desplegable de navegación del
-            encabezado <i>(header)</i>.
-          </p>
-
-          <div className="py-4">
-            <div className="max-items-2">
-              <div className="col">
-                <Image
-                  src={`${basePath}/images/header/header_opciones_de_navegacion_si.svg`}
-                  alt="Cómo sí usar las opciones de navegación del header"
-                  width="800"
-                  height="352"
-                  className="img-fluid"
-                />
-                <div className="d-flex pt-3">
-                  <span className="material-symbols-rounded text-success">check</span>
-                  <p className="mb-0">
-                    Utilizar una opción de navegación con link de acceso cuando hay más de 6 opciones.
-                  </p>
-                </div>
-              </div>
-              <div className="col">
-                <Image
-                  src={`${basePath}/images/header/header_opciones_de_navegacion_no.svg`}
-                  alt="Cómo no usar las opciones de navegación del header"
-                  width="800"
-                  height="352"
-                  className="img-fluid"
-                />
-                <div className="d-flex pt-3">
-                  <span className="material-symbols-rounded text-danger">close</span>
-                  <p className="mb-0">No utilizar una opción link si las subsecciones no superan las 6 opciones.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </>
-      ),
-    },
-    {
-      title: (
-        <>
-          Tipos de encabezado <i>(header)</i>
-        </>
-      ),
-      content: (
-        <>
-          <p className="text-md">
-            Existen 2 tipos de header según la cantidad de navegaciones y el estado de la cuenta de la persona usuaria
-            (con sesión iniciada y sin iniciar sesión).
-          </p>
-        </>
-      ),
-    },
-    {
-      subtitle: (
-        <>
-          <i>Desktop deslogueado</i> | En 1 línea
-        </>
-      ),
-      content: (
-        <>
-          <p className="text-md mt-2 mb-4">
-            El encabezado <i>(header)</i> de 1 línea es el tipo de encabezado que se utiliza por defecto.
-          </p>
-          <Image
-            src={`${basePath}/images/header/header_desktop_deslogueado_1_linea.svg`}
-            alt="Desktop deslogueado en 1 línea"
-            width="800"
-            height="35"
-            className="img-fluid"
-          />
-        </>
-      ),
-    },
-    {
-      subtitle: (
-        <>
-          <i>Desktop logueado</i> | En 1 línea
-        </>
-      ),
-      content: (
-        <>
-          <p className="text-md mt-2 mb-4">
-            El encabezado <i>(header)</i> de 1 línea es el tipo de encabezado que se utiliza por defecto.
-          </p>
-          <Image
-            src={`${basePath}/images/header/header_desktop_logueado_1_linea.svg`}
-            alt="Desktop logueado en 1 línea"
-            width="800"
-            height="35"
-            className="img-fluid"
-          />
-        </>
-      ),
-    },
-    {
-      subtitle: (
-        <>
-          <i>Desktop deslogueado</i> | En 2 líneas
-        </>
-      ),
-      content: (
-        <>
-          <p className="text-md mt-2 mb-4">
-            El encabezado <i>(header)</i> de 2 líneas se utiliza cuando la cantidad de navegaciones excede al espacio
-            disponible en 1 línea.
-          </p>
-          <Image
-            src={`${basePath}/images/header/header_desktop_deslogueado_2_lineas.svg`}
-            alt="Desktop logueado en 2 líneas"
-            width="800"
-            height="35"
-            className="img-fluid"
-          />
-        </>
-      ),
-    },
-    {
-      subtitle: (
-        <>
-          <i>Desktop logueado</i> | En 2 líneas
-        </>
-      ),
-      content: (
-        <>
-          <p className="text-md mt-2 mb-4">
-            El encabezado <i>(header)</i> de 2 líneas se utiliza cuando la cantidad de navegaciones excede al espacio
-            disponible en 1 línea.
-          </p>
-          <Image
-            src={`${basePath}/images/header/header_desktop_logueado_2_lineas.svg`}
-            alt="Desktop deslogueado en 2 líneas"
-            width="800"
-            height="35"
-            className="img-fluid"
-          />
-        </>
-      ),
-    },
-    {
-      subtitle: (
-        <>
-          <i>Mobile</i>
-        </>
-      ),
-      content: (
-        <>
-          <p className="text-md mt-2 mb-4">
-            El encabezado <i>(header)</i> en su versión mobile pasa a ser un menú desplegable con la reorganización de
-            los elementos que lo componen.
-          </p>
-          <Image
-            src={`${basePath}/images/header/header_mobile.svg`}
-            alt="Mobile"
-            width="800"
-            height="389"
-            className="img-fluid"
-          />
-        </>
-      ),
-    },
-    {
-      title: (
-        <>
-          Encabezado <i>(header)</i> con slots
-        </>
-      ),
-      content: (
-        <>
-          <p className="text-md mb-3">
-            Un espacio reservado o <i>slot</i> es un componente local del sistema de diseño, que solo existe en Figma, y
-            se utiliza para flexibilizar el uso de un componente del UI kit. Los <i>slots</i> permiten adoptar el
-            sistema de diseño y utilizar componentes de la librería sin la necesidad de generar nuevas estructuras.
-          </p>
-          <p className="text-md mb-4">
-            En el caso del encabezado (header), el <i>slot</i> cumple la función del logo. El diseñador en Figma puede
-            replicar la flexibilidad de uso del código.
-          </p>
-          <Image
-            src={`${basePath}/images/header/header_slots.svg`}
-            alt="Header variante slots"
-            width="800"
-            height="389"
-            className="img-fluid"
-          />
-          <p className="d-flex text-md fw-semibold mt-4">
-            <span className="pe-1 material-symbols-rounded" aria-hidden="true">
-              info
-            </span>
-            Uso del componente en Figma
-          </p>
-
-          <p className="text-md">
-            Para evitar romper el vínculo del componente <i>(detachear)</i> en Figma, los diseñadores pueden
-            intercambiar la instancia del slot por el logo de marca y/o del activo digital, sin la necesidad de generar
-            nuevas estructuras.
-          </p>
-
-          <ol>
-            <li className="mb-3">
-              Componentizá el logo de la marca o el activo digital que adopta el sistema de diseño.
-            </li>
-            <li className="mb-3">
-              Seleccioná la variante de tamaño de <i>slot</i> que se adapte a tus necesidades. Existen 2 variantes: 1:1
-              (80x80 px. en <i>desktop</i> y 60x60 px. en <i>mobile</i>), y para logotipos horizontales (115x80 px. en
-              desktop y 115x60 px. en mobile).
-            </li>
-            <li>
-              Intercambiá el <i>slot</i>, utilizando la propiedad de <i>instance swap</i> del encabezado <i>(header)</i>
-              , por el logo de la marca o el activo digital.
-            </li>
-          </ol>
-        </>
-      ),
-    },
-  ];
-
-  const SPECS = [
-    {
-      title: 'Anatomía',
-      firstTitle: true,
-      content: (
-        <>
-          <Image
-            src={`${basePath}/images/header/header_specs_anatomia.svg`}
-            alt="Header anatomía"
-            width="800"
-            height="242"
-            className="img-fluid"
-          />
-          <div className="mt-4">
-            <div className="responsive-scroll" tabIndex={0}>
-              <table className="table">
-                <thead>
-                  <tr>
-                    <th scope="col" className="tb-text">
-                      Elemento
-                    </th>
-                    <th scope="col" className="tb-text">
-                      Texto
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Logo</td>
-                    <td>Obligatorio.</td>
-                  </tr>
-                  <tr>
-                    <td>Navegación principal</td>
-                    <td>Opcional, pero recomendado.</td>
-                  </tr>
-                  <tr>
-                    <td>Buscador</td>
-                    <td>Opcional.</td>
-                  </tr>
-                  <tr>
-                    <td>Desplegable de perfil</td>
-                    <td>Opcional.</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </>
-      ),
-    },
-    {
-      title: 'Variantes',
-      content: (
-        <>
-          <p className="text-md mt-2 mb-4">
-            El encabezado <i>(header)</i> puede adaptarse a las necesidades del producto digital para ofrecer una
-            estructura basada en la arquitectura de información del sitio. El único elemento inamovible e imprescindible
-            del organismo es el logo de la Ciudad.
-          </p>
-        </>
-      ),
-    },
-    {
-      subtitle: 'Sin buscador',
-      content: (
-        <>
-          <p className="text-md mt-2 mb-4">
-            El encabezado <i>(header)</i> puede prescindir del buscador de no ser necesario o si ya hay un buscador
-            general dentro del cuerpo de la página. En caso de no haber un buscador, se pueden utilizar hasta 6
-            navegaciones manteniendo 1 sola línea para el organismo.
-          </p>
-          <Image
-            src={`${basePath}/images/header/header_specs_variantes.svg`}
-            alt="Variante del header - Sin buscador"
-            width="800"
-            height="35"
-            className="img-fluid"
-          />
-        </>
-      ),
-    },
-    {
-      subtitle: 'Sin botón/sección de perfil',
-      content: (
-        <>
-          <p className="text-md mt-2 mb-4">
-            El encabezado <i>(header)</i> puede prescindir de la sección de perfil de no ser necesaria. En caso de no
-            haber un botón de perfil o un desplegable de perfil, se pueden utilizar hasta 6 navegaciones manteniendo 1
-            sola línea para el organismo.
-          </p>
-          <Image
-            src={`${basePath}/images/header/header_specs_sin_boton.svg`}
-            alt="Header variante sin boton/seccion de perfil"
-            width="800"
-            height="35"
-            className="img-fluid"
-          />
-        </>
-      ),
-    },
-    {
-      subtitle: 'Sin navegaciones',
-      content: (
-        <>
-          <>
-            <p className="text-md mt-2 mb-4">
-              El encabezado <i>(header)</i> puede prescindir de la sección de perfil de no ser necesaria. En caso de no
-              haber un botón de perfil o un desplegable de perfil, se pueden utilizar hasta 6 navegaciones manteniendo 1
-              sola línea para el organismo.
-            </p>
-            <Image
-              src={`${basePath}/images/header/header_specs_sin_navegacion.svg`}
-              alt="Header variante sin boton/seccion de perfil"
-              width="800"
-              height="35"
-              className="img-fluid"
-            />
-          </>
-        </>
-      ),
-    },
-    {
-      subtitle: 'Banner del GCBA',
-      content: (
-        <>
-          <>
-            <p className="text-md mt-2 mb-4">
-              Para productos digitales externos a la web de la Ciudad de Buenos Aires, existe una variante del
-              encabezado (header) que se utiliza al adoptar el sistema de diseño. Al ser un producto externo
-              perteneciente al GCBA, el encabezado (header) utiliza un banner con la marca de Gobierno en un primer
-              nivel; por otro lado, el lugar designado para el logo se utiliza para el logo de la marca o activo
-              digital.
-            </p>
-            <Image
-              src={`${basePath}/images/header/header_banner.svg`}
-              alt="Header variante banner"
-              width="800"
-              height="35"
-              className="img-fluid"
-            />
-          </>
-        </>
-      ),
-    },
-  ];
-
-  const ACCESSIBILITY = [
-    {
-      title: 'Navegación alternativa',
-      firstTitle: true,
-      content: (
-        <>
-          <p className="text-md">
-            Todos los elementos del encabezado <i>(header)</i> pueden recorrerse utilizando la navegación por teclado u
-            otras herramientas de asistencia como lectores por voz.
-          </p>
-        </>
-      ),
-    },
-    {
-      subtitle: "Enlace 'Saltar al contenido principal'",
-      content: (
-        <>
-          <p className="text-md">
-            Con la clase {'skip-to-main-content-link'}, la persona usuaria puede saltar el encabezado <i>(header)</i> y
-            continuar directamente en el cuerpo de la página, sin la necesidad de navegar a través de los elementos del
-            organismo.
-          </p>
-          <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
-            {HEADER}
-          </SyntaxHighlighter>
-        </>
-      ),
-    },
-    {
-      subtitle: 'Texto alternativo para el logo',
-      content: (
-        <>
-          <p className="text-md">
-            El logo dentro del encabezado <i>(header)</i> funciona como enlace de redirección a la página de inicio del
-            sitio web. Por eso, dentro del atributo alt es necesario incluir la palabra “Inicio”, como forma de
-            identificar y brindar mayor contexto sobre la acción.
-          </p>
-          <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
-            {HEADER_2}
-          </SyntaxHighlighter>
         </>
       ),
     },

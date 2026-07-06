@@ -15,9 +15,9 @@ import {
   HIGHLIGHTED_VERTICAL_SIN_MULTIMEDIA,
   HIGHLIGHTED_VERTICAL_VIDEO,
   HIGHLIGHTED_CONTAINER,
-  HIGHLIGHTED_DEGRADE,
-  HIGHLIGHTED_DEGRADE_INVERTIDO,
   HIGHLIGHTED_DEGRADE_SIN_MULTIMEDIA,
+  HIGHLIGHTED_DEGRADE_INVERTIDO,
+  HIGHLIGHTED_DEGRADE,
 } from './code-views';
 
 const basePath = '/Obelisco-V2';
@@ -842,14 +842,14 @@ const HighlightedDocs: React.FC = () => {
                     </div>
 
                     <Image
-                      // src={`${basePath}/images/highlighted/destacado_container_2_332.png`}
+                      src={`${basePath}/images/highlighted/destacado_container_2_332.png`}
                       // src={`${basePath}/images/highlighted/destacado_container_1_443_332.png`}
                       // src={`${basePath}/images/highlighted/destacado_container_1_1200_899.png`}
                       // src={`${basePath}/images/highlighted/destacado_container_1_384_288_332.png`}
-                      src={`${basePath}/images/highlighted/destacado_container_2.png`}
+                      // src={`${basePath}/images/highlighted/destacado_container_2.png`}
                       alt="descripción de imagen"
-                      // className="panel-img panel-img-full-height"
-                      className="panel-img panel-img-object-fit-none"
+                      className="panel-img panel-img-full-height"
+                      // className="panel-img panel-img-object-fit-none"
                       width={538}
                       height={304}
                     ></Image>

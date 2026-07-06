@@ -691,18 +691,18 @@ export const HIGHLIGHTED_LATERAL = `
 
 export const HIGHLIGHTED_CONTAINER = `// Fondo blanco
 <div class="container">
-  <div className="panel-horizontal-content panel-horizontal-container">
-    <div className="panel-horizontal">
+  <div class="panel-horizontal-content panel-horizontal-container">
+    <div class="panel-horizontal">
       <img alt="descripción de imagen" loading="lazy" width="538" height="304" decoding="async" data-nimg="1" class="panel-img" src="/Obelisco-V2/images/destacado.jpg">
 
-      <div className="panel-body">
-        <h2 className="panel-title">Título del destacado</h2>
-        <p className="panel-text">
+      <div class="panel-body">
+        <h2 class="panel-title">Título del destacado</h2>
+        <p class="panel-text">
           Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. 
           No puede contener negritas ni enlaces. Este es el cuerpo de un destacado. 
           Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces
         </p>
-        <div className="panel-footer">
+        <div class="panel-footer">
           <a href="#" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Botón</a>
           <a href="#" class="btn btn-outline-primary btn-lg" target="_blank" rel="noopener noreferrer">Botón</a>
         </div>
@@ -713,18 +713,18 @@ export const HIGHLIGHTED_CONTAINER = `// Fondo blanco
 
 // Fondo gris
 <div class="container">
-  <div className="panel-horizontal-content panel-horizontal-container bg-light">
-    <div className="panel-horizontal">
+  <div class="panel-horizontal-content panel-horizontal-container bg-light">
+    <div class="panel-horizontal">
       <img alt="descripción de imagen" loading="lazy" width="538" height="304" decoding="async" data-nimg="1" class="panel-img" src="/Obelisco-V2/images/destacado.jpg">
 
-      <div className="panel-body">
-        <h2 className="panel-title">Título del destacado</h2>
-        <p className="panel-text">
+      <div class="panel-body">
+        <h2 class="panel-title">Título del destacado</h2>
+        <p class="panel-text">
           Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. 
           No puede contener negritas ni enlaces. Este es el cuerpo de un destacado. 
           Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces
         </p>
-        <div className="panel-footer">
+        <div class="panel-footer">
           <a href="#" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">Botón</a>
           <a href="#" class="btn btn-outline-primary btn-lg" target="_blank" rel="noopener noreferrer">Botón</a>
         </div>
@@ -735,18 +735,18 @@ export const HIGHLIGHTED_CONTAINER = `// Fondo blanco
 
 // Fondo oscuro
 <div class="container">
-  <div className="panel-horizontal-content panel-horizontal-container bg-dark">
-    <div className="panel-horizontal">
+  <div class="panel-horizontal-content panel-horizontal-container bg-dark">
+    <div class="panel-horizontal">
       <img alt="descripción de imagen" loading="lazy" width="538" height="304" decoding="async" data-nimg="1" class="panel-img" src="/Obelisco-V2/images/destacado.jpg">
 
-      <div className="panel-body">
-        <h2 className="panel-title">Título del destacado</h2>
-        <p className="panel-text">
+      <div class="panel-body">
+        <h2 class="panel-title">Título del destacado</h2>
+        <p class="panel-text">
           Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. 
           No puede contener negritas ni enlaces. Este es el cuerpo de un destacado. 
           Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces
         </p>
-        <div className="panel-footer">
+        <div class="panel-footer">
           <a href="#" class="btn btn-light btn-lg" target="_blank" rel="noopener noreferrer">Botón</a>
           <a href="#" class="btn btn-outline-light btn-lg" target="_blank" rel="noopener noreferrer">Botón</a>
         </div>
@@ -757,13 +757,13 @@ export const HIGHLIGHTED_CONTAINER = `// Fondo blanco
 `;
 
 export const HIGHLIGHTED_DEGRADE = `<div class="container">
-  <div className="panel-horizontal-content panel-horizontal-container bg-gradient-blue p-0">
-     <div className="panel-horizontal">
-      <img alt="descripción de imagen" loading="lazy" width="538" height="304" decoding="async" data-nimg="1" class="panel-img" src="/Obelisco-V2/images/highlighted/bax-phone.png">
+  <div class="panel-horizontal-content panel-horizontal-container bg-gradient-blue p-0">
+     <div class="panel-horizontal">
+      <img alt="descripción de imagen" loading="lazy" width="538" height="304" decoding="async" data-nimg="1" class="panel-img panel-img-object-fit-none" src="/Obelisco-V2/images/highlighted/bax-phone.png">
 
-      <div className="panel-body">
-        <h2 className="panel-title">Título del destacado</h2>
-        <p className="panel-text">
+      <div class="panel-body">
+        <h2 class="panel-title">Título del destacado</h2>
+        <p class="panel-text">
         Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
         líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un
         destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
@@ -787,13 +787,13 @@ export const HIGHLIGHTED_DEGRADE = `<div class="container">
 `;
 
 export const HIGHLIGHTED_DEGRADE_INVERTIDO = `<div class="container">
-  <div className="panel-horizontal-content panel-horizontal-container bg-gradient-blue p-0">
-     <div className="panel-horizontal panel-inverted">
+  <div class="panel-horizontal-content panel-horizontal-container bg-gradient-blue p-0">
+     <div class="panel-horizontal panel-inverted">
       <img alt="descripción de imagen" loading="lazy" width="538" height="304" decoding="async" data-nimg="1" class="panel-img" src="/Obelisco-V2/images/highlighted/bax-phone.png">
 
-      <div className="panel-body">
-        <h2 className="panel-title">Título del destacado</h2>
-        <p className="panel-text">
+      <div class="panel-body">
+        <h2 class="panel-title">Título del destacado</h2>
+        <p class="panel-text">
         Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
         líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un
         destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
@@ -817,12 +817,12 @@ export const HIGHLIGHTED_DEGRADE_INVERTIDO = `<div class="container">
 `;
 
 export const HIGHLIGHTED_DEGRADE_SIN_MULTIMEDIA = `<div class="container">
-  <div className="panel-horizontal-content panel-horizontal-container">
-     <div className="panel-horizontal panel-inverted">
+  <div class="panel-horizontal-content panel-horizontal-container bg-gradient-blue"">
+     <div class="panel-horizontal panel-inverted">
 
-      <div className="panel-body">
-        <h2 className="panel-title">Título del destacado</h2>
-        <p className="panel-text">
+      <div class="panel-body">
+        <h2 class="panel-title">Título del destacado</h2>
+        <p class="panel-text">
         Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
         líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un
         destacado. Debe ser breve y conciso, de pocas líneas. No puede contener

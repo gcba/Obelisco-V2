@@ -1,5 +1,5 @@
-@use "sass:map";
-@use "sass:list";
+@use 'sass:map';
+@use 'sass:list';
 
 /* Custom variables and mixins */
 // MIXIN GENERAL
@@ -349,19 +349,19 @@
 
 // Destacado container gradiente
 $gradient-colors: (
-  "cyan": (
+  'cyan': (
     $sky-900,
-    #8ce1d7
+    #8ce1d7,
   ),
-  "blue": (
+  'blue': (
     $blue-900,
-    $blue-500
-  )
+    $blue-500,
+  ),
 );
 
 $gradient-text-colors: (
-  "cyan": $white,
-  "blue": $white
+  'cyan': $white,
+  'blue': $white,
 );
 
 @mixin bg-gradient-color($color1, $color2) {

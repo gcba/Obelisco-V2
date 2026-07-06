@@ -25,16 +25,20 @@ const ReleasesComponents: React.FC = () => {
           <ul className="docs-list">
             <p>La Versión 1.14.0 contiene lo siguiente: </p>
             <li>
-              Se sumaron nuevas variantes para el componente {' '}
+              Se sumaron nuevas variantes para el componente{' '}
               <a href="https://gcba.github.io/Obelisco-V2/components/highlighted">Destacado:</a>
             </li>
             <ul>
               <li>Se agrega la variante con color en degrade y ancho contenedor.</li>
-              <li>Se agrega la variante con fondos de color <code>dark</code> y <code>light</code>,
-                para ancho contenedor en destacados horizontales.</li>
+              <li>
+                Se agrega la variante con fondos de color <code>dark</code> y <code>light</code>, para ancho contenedor
+                en destacados horizontales.
+              </li>
               <li>Se agrega la variante con fondo blanco para destacado vertical.</li>
-              <li>Se agrega la clase <code>panel-inverted</code> para invertir el contenido 
-                en los destacados horizontales en todas sus variantes.</li>
+              <li>
+                Se agrega la clase <code>panel-inverted</code> para invertir el contenido en los destacados horizontales
+                en todas sus variantes.
+              </li>
             </ul>
             <br />
             <li>

@@ -18,7 +18,6 @@ import {
   HIGHLIGHTED_DEGRADE,
   HIGHLIGHTED_DEGRADE_INVERTED,
   HIGHLIGHTED_DEGRADE_NO_MEDIA,
-
 } from './code-views';
 
 const basePath = '/Obelisco-V2';

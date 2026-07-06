@@ -1,4 +1,4 @@
-export const HIGHLIGHTED_BANNER_BUTTONS_WHITE = `// Fondo blanco
+export const HIGHLIGHTED_BANNER_BACKGROUND = `// Fondo blanco
 <div class="panel-horizontal-content">
   <div class="panel-horizontal">
     <img src="/destacado.jpg" alt="descripción de imagen" class="panel-img" />
@@ -70,55 +70,8 @@ export const HIGHLIGHTED_BANNER_BUTTONS_WHITE = `// Fondo blanco
   </div>
 </div>
 `;
-// export const HIGHLIGHTED_BANNER_BUTTONS_LIGHT = `<div class="panel-horizontal-content bg-light">
-//   <div class="panel-horizontal">
-//     <img src="/destacado.jpg" alt="descripción de imagen" class="panel-img" />
-//     <div class="panel-body">
-//       <h2 class="panel-title">Título del destacado</h2>
-//       <p class="panel-text">
-//         Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
-//         líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un
-//         destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
-//         negritas ni enlaces
-//       </p>
-//       <div class="panel-footer">
-//         <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
-//           Botón
-//         </a>
-//         <a class="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
-//           Botón
-//         </a>
-//       </div>
-//     </div>
-//   </div>
-// </div>
-// `;
 
-// export const HIGHLIGHTED_BANNER_BUTTONS_DARK = `<div class="panel-horizontal-content bg-dark">
-//   <div class="panel-horizontal">
-//     <img src="/destacado.jpg" alt="descripción de imagen" class="panel-img" />
-//     <div class="panel-body">
-//       <h2 class="panel-title">Título del destacado</h2>
-//       <p class="panel-text">
-//         Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
-//         líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un
-//         destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
-//         negritas ni enlaces
-//       </p>
-//       <div class="panel-footer">
-//         <a class="btn btn-light btn-lg" href="#" rel="noopener noreferrer">
-//           Botón
-//         </a>
-//         <a class="btn btn-outline-light btn-lg" href="#" rel="noopener noreferrer">
-//           Botón
-//         </a>
-//       </div>
-//     </div>
-//   </div>
-// </div>
-// `;
-
-export const HIGHLIGHTED_BANNER_BUTTON = `// Accionable botón
+export const HIGHLIGHTED_BANNER_ACTIONABLE_ITEMS = `// Accionable botón
 <div class="panel-horizontal-content">
   <div class="panel-horizontal">
     <img src="/destacado.jpg" alt="descripción de imagen" class="panel-img" />
@@ -203,114 +156,8 @@ export const HIGHLIGHTED_BANNER_BUTTON = `// Accionable botón
   </div>
 </div>
 `;
-// export const HIGHLIGHTED_BANNER_DOWNLOAD = `<div class="panel-horizontal-content">
-//   <div class="panel-horizontal">
-//     <img src="/destacado.jpg" alt="descripción de imagen" class="panel-img" />
-//     <div class="panel-body">
-//       <h2 class="panel-title">Título del destacado</h2>
-//       <p class="panel-text">
-//         Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
-//         líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un
-//         destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
-//         negritas ni enlaces
-//       </p>
-//       <div class="panel-footer">
-//         <a class="btn btn-secondary btn-lg" href="#" target="_blank" download="">
-//           <span class="material-symbols-rounded" aria-hidden="true">file_download</span>Descargar
-//         </a>
-//       </div>
-//     </div>
-//   </div>
-// </div>
-// `;
-// export const HIGHLIGHTED_BANNER_LINK = `<div class="panel-horizontal-content">
-//   <div class="panel-horizontal">
-//     <img src="/destacado.jpg" alt="descripción de imagen" class="panel-img" />
-//     <div class="panel-body">
-//       <h2 class="panel-title">Título del destacado</h2>
-//       <p class="panel-text">
-//         Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
-//         líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un
-//         destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
-//         negritas ni enlaces
-//       </p>
-//       <div class="panel-footer">
-//         <a class="external" href="#" target="_blank" rel="noopener noreferrer">Enlace externo</a>
-//       </div>
-//     </div>
-//   </div>
-// </div>
-// `;
-// export const HIGHLIGHTED_BANNER_ACCESS = `<div class="panel-horizontal-content">
-//   <div class="panel-horizontal">
-//     <img src="/destacado.jpg" alt="descripción de imagen" class="panel-img" />
-//     <div class="panel-body">
-//       <h2 class="panel-title">Título del destacado</h2>
-//       <p class="panel-text">
-//         Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
-//         líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un
-//         destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
-//         negritas ni enlaces
-//       </p>
-//       <div class="panel-footer">
-//         <a href="#" class="list-group-item item-sm">
-//           <span class="material-symbols-rounded o-icon" aria-hidden="true">info</span>
-//           <div class="access-content">
-//             <span class="access-title">Acceso</span>
-//           </div>
-//         </a>
-//       </div>
-//     </div>
-//   </div>
-// </div>
-// `;
-export const HIGHLIGHTED_BANNER_NO_MEDIA = `
-<div class="panel-horizontal-content">
-  <div class="panel-horizontal">
-    <div class="panel-body">
-      <h2 class="panel-title">Título del destacado</h2>
-      <p class="panel-text">
-        Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
-        líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un
-        destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
-        negritas ni enlaces
-      </p>
-      <div class="panel-footer">
-        <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
-          Botón
-        </a>
-        <a class="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
-          Botón
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-// export const HIGHLIGHTED_BANNER_BUTTONS_BG = `<div class="panel-horizontal-content bg-light">
-//   <div class="panel-horizontal">
-//     <img src="/destacado.jpg" alt="descripción de imagen" class="panel-img" />
-//     <div class="panel-body">
-//       <h2 class="panel-title">Título del destacado</h2>
-//       <p class="panel-text">
-//         Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
-//         líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un
-//         destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
-//         negritas ni enlaces
-//       </p>
-//       <div class="panel-footer">
-//         <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
-//           Botón
-//         </a>
-//         <a class="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
-//           Botón
-//         </a>
-//       </div>
-//     </div>
-//   </div>
-// </div>
-// `;
-export const HIGHLIGHTED_BANNER_BUTTONS_VIDEO_MP4 = `<div class="panel-horizontal-content">
+
+export const HIGHLIGHTED_BANNER_VIDEOS = `<div class="panel-horizontal-content">
   <div class="panel-horizontal">
     <p class="sr-only">Buenos Aires se escribe en plural</p>
     <video class="panel-img" controls="">
@@ -376,38 +223,66 @@ export const HIGHLIGHTED_BANNER_BUTTONS_VIDEO_MP4 = `<div class="panel-horizonta
   </div>
 </div>
 `;
-// export const HIGHLIGHTED_BANNER_BUTTONS_VIDEO_YT = `<div class="panel-horizontal-content">
-//   <div class="panel-horizontal">
-//     <iframe
-//       class="panel-img"
-//       src="https://www.youtube.com/embed/sXE613Oaxvc?si=iWSX1erqQxXOLojw"
-//       title="Buenos Aires se escribe en plural"
-//       frameborder="0"
-//       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-//       allowfullscreen=""
-//     ></iframe>
-//     <div class="panel-body">
-//       <h2 class="panel-title">Título del destacado</h2>
-//       <p class="panel-text">
-//         Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
-//         líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un
-//         destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
-//         negritas ni enlaces
-//       </p>
-//       <div class="panel-footer">
-//         <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
-//           Botón
-//         </a>
-//         <a class="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
-//           Botón
-//         </a>
-//       </div>
-//     </div>
-//   </div>
-// </div>
-// `;
 
-export const HIGHLIGHTED_VERTICAL_FONDOS = `
+export const HIGHLIGHTED_BANNER_NO_MEDIA = `//Sin multimedia fondo blanco
+<div class="panel-horizontal-content">
+  <div class="panel-horizontal">
+    <div class="panel-body">
+      <h2 class="panel-title">Título del destacado</h2>
+      <p class="panel-text">
+        Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
+        líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un
+        destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
+        negritas ni enlaces
+      </p>
+      <div class="panel-footer">
+        <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
+          Botón
+        </a>
+        <a class="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
+          Botón
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+//Sin multimedia fondo gris
+<div class="panel-horizontal-content bg-light">
+  <div class="panel-horizontal">
+    <div class="panel-body">
+      <h2 class="panel-title">Título del destacado</h2>
+      <p class="panel-text">
+        Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
+        negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas.
+        No puede contener negritas ni enlaces
+      </p>
+      <div class="panel-footer">
+        <LinkClient class="btn btn-primary btn-lg">Botón</LinkClient>
+        <LinkClient class="btn btn-outline-primary btn-lg">Botón</LinkClient>
+      </div>
+    </div>
+  </div>
+</div>
+//Sin multimedia fondo oscuro
+<div class="panel-horizontal-content bg-dark">
+  <div class="panel-horizontal">
+    <div class="panel-body">
+      <h2 class="panel-title">Título del destacado</h2>
+      <p class="panel-text">
+        Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
+        negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas.
+        No puede contener negritas ni enlaces
+      </p>
+      <div class="panel-footer">
+        <LinkClient class="btn btn-light btn-lg">Botón</LinkClient>
+        <LinkClient class="btn btn-outline-light btn-lg">Botón</LinkClient>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+export const HIGHLIGHTED_VERTICAL_BACKGROUND = `
 <div class="highlighted-items-2">
 // Fondo oscuro
   <div class="col">
@@ -466,7 +341,7 @@ export const HIGHLIGHTED_VERTICAL_FONDOS = `
 </div>
 `;
 
-export const HIGHLIGHTED_VERTICAL_ACCIONABLES = `
+export const HIGHLIGHTED_VERTICAL_ACTIONABLE_ITEMS = `
 <div class="highlighted-items-2">
   <div class="col">
     <div class="panel-vertical bg-dark">
@@ -531,64 +406,6 @@ export const HIGHLIGHTED_VERTICAL_ACCIONABLES = `
 </div>
 `;
 
-export const HIGHLIGHTED_VERTICAL_SIN_MULTIMEDIA = `<div class="highlighted-items-2">
-  <div class="col">
-  <!-- Destacado sin multimedia oscuro -->
-    <div class="panel-vertical bg-dark">
-      <div class="panel-body-dark panel-sin-multimedia-v">
-        <h2 class="panel-title">Título del destacado</h2>
-        <p class="panel-text">
-         Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
-         contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de
-         pocas líneas. No puede contener negritas ni enlaces
-        </p>
-        <div class="panel-footer">
-          <a class="btn btn-light btn-lg" href="#" rel="noopener noreferrer">
-            Botón
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-  <!-- Destacado sin multimedia claro -->
-    <div class="panel-vertical bg-light">
-      <div class="panel-body panel-sin-multimedia-v bg-light">
-        <h2 class="panel-title">Título del destacado</h2>
-        <p class="panel-text">
-         Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede 
-         contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, 
-         de pocas líneas. No puede contener negritas ni enlaces
-        </p>
-        <div class="panel-footer">
-          <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
-            Botón
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-  <!-- Destacado sin multimedia blanco -->
-    <div class="panel-vertical">
-      <div class="panel-body panel-sin-multimedia-v">
-        <h2 class="panel-title">Título del destacado</h2>
-        <p class="panel-text">
-         Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede 
-         contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, 
-         de pocas líneas. No puede contener negritas ni enlaces
-        </p>
-        <div class="panel-footer">
-          <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
-            Botón
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
 export const HIGHLIGHTED_VERTICAL_VIDEO = `
 <div class="highlighted-items-2">
   <div class="col">
@@ -643,46 +460,58 @@ export const HIGHLIGHTED_VERTICAL_VIDEO = `
 </div>
 `;
 
-export const HIGHLIGHTED_LATERAL = `
-<div class="panel-lateral">
-  <div class="panel-body">
-    <h2 class="panel-title">Título del destacado</h2>
-    <div class="d-flex gap-1 my-3">
-      <span class="badge badge-default">Etiqueta</span>
-      <span class="badge badge-default">Etiqueta</span>
-      <span class="badge badge-default">Etiqueta</span>
-    </div>
-    <p class="panel-text">Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces.</p>
-    <div class="accordion plain">
-      <div class="accordion-item">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHeaderIcon" aria-expanded="false" aria-controls="collapseHeaderIcon">
-          <p class="headline-sm m-0">Detalle</p>
-        </button>
-        <div id="collapseHeaderIcon" class="accordion-collapse collapse" style="">
-          <div class="accordion-body">
-            <p>Esta es la descripción que se encuentra dentro de un colapsable. Debe ser breve y concisa.</p>
-          </div>
+export const HIGHLIGHTED_VERTICAL_NO_MEDIA = `<div class="highlighted-items-2">
+  <div class="col">
+  <!-- Destacado sin multimedia oscuro -->
+    <div class="panel-vertical bg-dark">
+      <div class="panel-body-dark panel-sin-multimedia-v">
+        <h2 class="panel-title">Título del destacado</h2>
+        <p class="panel-text">
+         Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
+         contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de
+         pocas líneas. No puede contener negritas ni enlaces
+        </p>
+        <div class="panel-footer">
+          <a class="btn btn-light btn-lg" href="#" rel="noopener noreferrer">
+            Botón
+          </a>
         </div>
       </div>
     </div>
-    <div class="panel-footer">
-      <a href="#" class="btn btn-primary btn-lg btn-block" target="_blank" rel="noopener noreferrer">Botón</a>
+  </div>
+  <div class="col">
+  <!-- Destacado sin multimedia claro -->
+    <div class="panel-vertical bg-light">
+      <div class="panel-body panel-sin-multimedia-v bg-light">
+        <h2 class="panel-title">Título del destacado</h2>
+        <p class="panel-text">
+         Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede 
+         contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, 
+         de pocas líneas. No puede contener negritas ni enlaces
+        </p>
+        <div class="panel-footer">
+          <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
+            Botón
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="d-flex gap-3 mt-3 align-items-center">
-      <p class="text-md mb-1">Compartir en redes:</p>
-      <div class="d-flex gap-2">
-        <a href="#" class="shadow-none" target="_blank">
-          <i class="bxl bx-facebook-circle o-icon text-primary"></i>
-        </a>
-        <a href="#" class="shadow-none" target="_blank">
-          <i class="bxl bx-instagram o-icon text-primary"></i>
-        </a>
-        <a href="#" class="shadow-none" target="_blank">
-          <i class="bxl bx-twitter-x o-icon text-primary"></i>
-        </a>
-        <a href="#" class="shadow-none" target="_blank">
-          <i class="bxl bx-linkedin-square o-icon text-primary"></i>
-        </a>
+  </div>
+  <div class="col">
+  <!-- Destacado sin multimedia blanco -->
+    <div class="panel-vertical">
+      <div class="panel-body panel-sin-multimedia-v">
+        <h2 class="panel-title">Título del destacado</h2>
+        <p class="panel-text">
+         Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede 
+         contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, 
+         de pocas líneas. No puede contener negritas ni enlaces
+        </p>
+        <div class="panel-footer">
+          <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
+            Botón
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -786,7 +615,7 @@ export const HIGHLIGHTED_DEGRADE = `<div class="container">
 </div>
 `;
 
-export const HIGHLIGHTED_DEGRADE_INVERTIDO = `<div class="container">
+export const HIGHLIGHTED_DEGRADE_INVERTED = `<div class="container">
   <div class="panel-horizontal-content panel-horizontal-container bg-gradient-blue p-0">
      <div class="panel-horizontal panel-inverted">
       <img alt="descripción de imagen" loading="lazy" width="538" height="304" decoding="async" data-nimg="1" class="panel-img" src="/Obelisco-V2/images/highlighted/bax-phone.png">
@@ -816,7 +645,7 @@ export const HIGHLIGHTED_DEGRADE_INVERTIDO = `<div class="container">
 </div>
 `;
 
-export const HIGHLIGHTED_DEGRADE_SIN_MULTIMEDIA = `<div class="container">
+export const HIGHLIGHTED_DEGRADE_NO_MEDIA = `<div class="container">
   <div class="panel-horizontal-content panel-horizontal-container bg-gradient-blue"">
      <div class="panel-horizontal panel-inverted">
 

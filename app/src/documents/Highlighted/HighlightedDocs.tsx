@@ -6,18 +6,19 @@ import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import {
-  HIGHLIGHTED_BANNER_BUTTON,
-  HIGHLIGHTED_BANNER_BUTTONS_VIDEO_MP4,
-  HIGHLIGHTED_BANNER_BUTTONS_WHITE,
-  HIGHLIGHTED_VERTICAL_FONDOS,
+  HIGHLIGHTED_BANNER_BACKGROUND,
+  HIGHLIGHTED_BANNER_ACTIONABLE_ITEMS,
+  HIGHLIGHTED_BANNER_VIDEOS,
   HIGHLIGHTED_BANNER_NO_MEDIA,
-  HIGHLIGHTED_VERTICAL_ACCIONABLES,
-  HIGHLIGHTED_VERTICAL_SIN_MULTIMEDIA,
+  HIGHLIGHTED_VERTICAL_BACKGROUND,
+  HIGHLIGHTED_VERTICAL_ACTIONABLE_ITEMS,
   HIGHLIGHTED_VERTICAL_VIDEO,
+  HIGHLIGHTED_VERTICAL_NO_MEDIA,
   HIGHLIGHTED_CONTAINER,
-  HIGHLIGHTED_DEGRADE_SIN_MULTIMEDIA,
-  HIGHLIGHTED_DEGRADE_INVERTIDO,
   HIGHLIGHTED_DEGRADE,
+  HIGHLIGHTED_DEGRADE_INVERTED,
+  HIGHLIGHTED_DEGRADE_NO_MEDIA,
+
 } from './code-views';
 
 const basePath = '/Obelisco-V2';
@@ -34,7 +35,7 @@ const HighlightedDocs: React.FC = () => {
       subtitle: 'Fondos',
       content: (
         <>
-          <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTONS_WHITE}>
+          <CodeBox codeHTML={HIGHLIGHTED_BANNER_BACKGROUND}>
             <ZoomContainer>
               <div className="panel-horizontal-content">
                 <div className="panel-horizontal panel-inverted">
@@ -116,7 +117,7 @@ const HighlightedDocs: React.FC = () => {
       subtitle: 'Accionables',
       content: (
         <>
-          <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTON}>
+          <CodeBox codeHTML={HIGHLIGHTED_BANNER_ACTIONABLE_ITEMS}>
             <ZoomContainer>
               <div className="panel-horizontal-content">
                 <div className="panel-horizontal">
@@ -230,7 +231,7 @@ const HighlightedDocs: React.FC = () => {
       subtitle: 'Con vídeo',
       content: (
         <>
-          <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTONS_VIDEO_MP4}>
+          <CodeBox codeHTML={HIGHLIGHTED_BANNER_VIDEOS}>
             <ZoomContainer>
               <div className="panel-horizontal-content">
                 <div className="panel-horizontal">
@@ -258,7 +259,7 @@ const HighlightedDocs: React.FC = () => {
                 </div>
               </div>
               <br />
-              <div className="panel-horizontal-content bg-light">
+              <div className="panel-horizontal-content">
                 <div className="panel-horizontal">
                   <iframe
                     className="panel-img"
@@ -269,7 +270,7 @@ const HighlightedDocs: React.FC = () => {
                     allowFullScreen
                   ></iframe>
                   <div className="panel-body">
-                    <h5 className="panel-title">Título del destacado</h5>
+                    <h2 className="panel-title">Título del destacado</h2>
                     <p className="panel-text">
                       Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
                       negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas.
@@ -284,35 +285,6 @@ const HighlightedDocs: React.FC = () => {
               </div>
             </ZoomContainer>
           </CodeBox>
-          {/* <br />
-          <CodeBox codeHTML={HIGHLIGHTED_BANNER_BUTTONS_VIDEO_YT}>
-            <ZoomContainer>
-              <div className="panel-horizontal-content">
-                <div className="panel-horizontal">
-                  <iframe
-                    className="panel-img"
-                    src="https://www.youtube.com/embed/sXE613Oaxvc?si=iWSX1erqQxXOLojw"
-                    title="Buenos Aires se escribe en plural"
-                    frameBorder={0}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                  ></iframe>
-                  <div className="panel-body">
-                    <h5 className="panel-title">Título del destacado</h5>
-                    <p className="panel-text">
-                      Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
-                      negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas.
-                      No puede contener negritas ni enlaces
-                    </p>
-                    <div className="panel-footer">
-                      <LinkClient className="btn btn-primary btn-lg">Botón</LinkClient>
-                      <LinkClient className="btn btn-outline-primary btn-lg">Botón</LinkClient>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </ZoomContainer>
-          </CodeBox> */}
         </>
       ),
     },
@@ -382,7 +354,7 @@ const HighlightedDocs: React.FC = () => {
       subtitle: 'Fondos',
       content: (
         <>
-          <CodeBox codeHTML={HIGHLIGHTED_VERTICAL_FONDOS}>
+          <CodeBox codeHTML={HIGHLIGHTED_VERTICAL_BACKGROUND}>
             <ZoomContainer>
               <div className="container">
                 <div className="highlighted-items-2">
@@ -472,7 +444,7 @@ const HighlightedDocs: React.FC = () => {
       subtitle: 'Accionables',
       content: (
         <>
-          <CodeBox codeHTML={HIGHLIGHTED_VERTICAL_ACCIONABLES}>
+          <CodeBox codeHTML={HIGHLIGHTED_VERTICAL_ACTIONABLE_ITEMS}>
             <ZoomContainer>
               <div className="container">
                 <div className="highlighted-items-2">
@@ -676,7 +648,7 @@ const HighlightedDocs: React.FC = () => {
       subtitle: 'Sin multimedia',
       content: (
         <>
-          <CodeBox codeHTML={HIGHLIGHTED_VERTICAL_SIN_MULTIMEDIA}>
+          <CodeBox codeHTML={HIGHLIGHTED_VERTICAL_NO_MEDIA}>
             <ZoomContainer>
               <div className="container">
                 <div className="highlighted-items-2">
@@ -871,7 +843,7 @@ const HighlightedDocs: React.FC = () => {
           <p className="text-md mb-3">
             <code>{'<div class="panel-horizontal panel-inverted">'}</code>
           </p>
-          <CodeBox codeHTML={HIGHLIGHTED_DEGRADE_INVERTIDO}>
+          <CodeBox codeHTML={HIGHLIGHTED_DEGRADE_INVERTED}>
             <div className="container">
               <ZoomContainer>
                 <div className="panel-horizontal-content panel-horizontal-container bg-gradient-blue p-0">
@@ -908,7 +880,7 @@ const HighlightedDocs: React.FC = () => {
       subtitle: 'Sin multimedia',
       content: (
         <>
-          <CodeBox codeHTML={HIGHLIGHTED_DEGRADE_SIN_MULTIMEDIA}>
+          <CodeBox codeHTML={HIGHLIGHTED_DEGRADE_NO_MEDIA}>
             <div className="container">
               <ZoomContainer>
                 <div className="panel-horizontal-content panel-horizontal-container bg-gradient-blue">

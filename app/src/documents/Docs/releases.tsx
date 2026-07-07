@@ -19,6 +19,54 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
+      title: 'Versión 1.14.0',
+      content: (
+        <>
+          <ul className="docs-list">
+            <p>La Versión 1.14.0 contiene lo siguiente: </p>
+            <li>
+              Se sumaron nuevas variantes para el componente{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/components/highlighted">Destacado:</a>
+            </li>
+            <ul>
+              <li>Se agrega la variante con color en degrade y ancho contenedor.</li>
+              <li>
+                Se agrega la variante con fondos de color <code>dark</code> y <code>light</code>, para ancho contenedor
+                en destacados horizontales.
+              </li>
+              <li>Se agrega la variante con fondo blanco para destacado vertical.</li>
+              <li>
+                Se agrega la clase <code>panel-inverted</code> para invertir el contenido en los destacados horizontales
+                en todas sus variantes. Se usa así: <code>{'<div class="panel-horizontal panel-inverted">'}</code>
+              </li>
+              <li>
+                Se crean clases para modificar el comportamiento de la imagen del <strong>Destacado container</strong>.
+                <ul>
+                  <li>
+                    Con <code>{'panel-img-object-fit-none'}</code>, aplica la propiedad:{' '}
+                    <code>{'object-fit: none;'}</code>
+                  </li>
+                  <li>
+                    Con <code>{'panel-img-object-fit-cover'}</code>, aplica la propiedad:{' '}
+                    <code>{'object-fit: cover;'}</code>
+                  </li>
+                  <li>
+                    Con <code>{'panel-img-object-fit-fill'}</code>, aplica la propiedad:{' '}
+                    <code>{'object-fit: fill;'}</code>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <br />
+            <li>
+              Se modifican los bordes y padding para el componente: <i>Desplegable de navegación y selección</i> y{' '}
+              <i>Navegacion horizontal y vertical.</i>
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
       title: 'Versión 1.13.0',
       content: (
         <>

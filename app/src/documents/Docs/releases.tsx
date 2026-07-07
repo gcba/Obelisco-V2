@@ -37,12 +37,30 @@ const ReleasesComponents: React.FC = () => {
               <li>Se agrega la variante con fondo blanco para destacado vertical.</li>
               <li>
                 Se agrega la clase <code>panel-inverted</code> para invertir el contenido en los destacados horizontales
-                en todas sus variantes.
+                en todas sus variantes. Se usa así: <code>{'<div class="panel-horizontal panel-inverted">'}</code>
+              </li>
+              <li>
+                Se crean clases para modificar el comportamiento de la imagen del <strong>Destacado container</strong>.
+                <ul>
+                  <li>
+                    Con <code>{'panel-img-object-fit-none'}</code>, aplica la propiedad:{' '}
+                    <code>{'object-fit: none;'}</code>
+                  </li>
+                  <li>
+                    Con <code>{'panel-img-object-fit-cover'}</code>, aplica la propiedad:{' '}
+                    <code>{'object-fit: cover;'}</code>
+                  </li>
+                  <li>
+                    Con <code>{'panel-img-object-fit-fill'}</code>, aplica la propiedad:{' '}
+                    <code>{'object-fit: fill;'}</code>
+                  </li>
+                </ul>
               </li>
             </ul>
             <br />
             <li>
-              Se modifican los bordes para el componente <i>desplegable</i> y <i>navegacion horizontal y vertical.</i>
+              Se modifican los bordes y padding para el componente: <i>Desplegable de navegación y selección</i> y{' '}
+              <i>Navegacion horizontal y vertical.</i>
             </li>
           </ul>
         </>

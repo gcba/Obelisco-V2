@@ -12,20 +12,6 @@
   border-radius: 0;
   border: none;
 
-  // @if $flex-direction == row {
-  //   &.panel-inverted {
-  //     flex-direction: row-reverse;
-  //   }
-
-  //   @include media-breakpoint-down(#{$media-query}) {
-  //     flex-direction: column;
-
-  //     &.panel-inverted {
-  //       flex-direction: column-reverse;
-  //     }
-  //   }
-  // }
-
   .panel-img,
   video {
     width: 100%;

@@ -814,13 +814,8 @@ const HighlightedDocs: React.FC = () => {
 
                     <Image
                       src={`${basePath}/images/highlighted/destacado_container_2_332.png`}
-                      // src={`${basePath}/images/highlighted/destacado_container_1_443_332.png`}
-                      // src={`${basePath}/images/highlighted/destacado_container_1_1200_899.png`}
-                      // src={`${basePath}/images/highlighted/destacado_container_1_384_288_332.png`}
-                      // src={`${basePath}/images/highlighted/destacado_container_2.png`}
                       alt="descripción de imagen"
-                      className="panel-img panel-img-full-height"
-                      // className="panel-img panel-img-object-fit-none"
+                      className="panel-img"
                       width={538}
                       height={304}
                     ></Image>
@@ -861,7 +856,7 @@ const HighlightedDocs: React.FC = () => {
                     </div>
 
                     <Image
-                      src={`${basePath}/images/highlighted/destacado_container_2_288.png`}
+                      src={`${basePath}/images/highlighted/destacado_container_2_332.png`}
                       alt="descripción de imagen"
                       className="panel-img"
                       width={538}

@@ -766,11 +766,18 @@ const HighlightedDocs: React.FC = () => {
                 <div className="panel-horizontal-content panel-horizontal-container bg-gradient-blue p-0">
                   <div className="panel-horizontal">
                     <div className="panel-body">
-                      <h2 className="panel-title">Título del destacado</h2>
-                      <p className="panel-text">
+                      <h2 className="panel-title ellipsis-2">
+                        Título del destacado Título del destacado Título del destacado Título del destacado Título del
+                        destacado
+                      </h2>
+                      <p className="panel-text ellipsis-4">
                         Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
                         negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
-                        líneas. No puede contener negritas ni enlaces
+                        líneas. No puede contener negritas ni enlacesEste es el cuerpo de un destacado. Debe ser breve y
+                        conciso, de pocas líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un
+                        destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces
+                        destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces
+                        destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces
                       </p>
                       <div className="panel-footer">
                         <LinkClient className="btn btn-light btn-lg">Botón</LinkClient>
@@ -779,7 +786,7 @@ const HighlightedDocs: React.FC = () => {
                     </div>
 
                     <Image
-                      src={`${basePath}/images/highlighted/bax-phone.png`}
+                      src={`${basePath}/images/highlighted/destacado_multimedia_container.png`}
                       alt="descripción de imagen"
                       className="panel-img"
                       width={538}
@@ -803,11 +810,18 @@ const HighlightedDocs: React.FC = () => {
                 <div className="panel-horizontal-content panel-horizontal-container bg-gradient-blue p-0">
                   <div className="panel-horizontal panel-inverted">
                     <div className="panel-body">
-                      <h2 className="panel-title">Título del destacado</h2>
-                      <p className="panel-text">
+                      <h2 className="panel-title ellipsis-2">
+                        Título del destacado Título del destacado Título del destacado Título del destacado Título del
+                        destacado
+                      </h2>
+                      <p className="panel-text ellipsis-4">
                         Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
                         negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
-                        líneas. No puede contener negritas ni enlaces
+                        líneas. No puede contener negritas ni enlacesEste es el cuerpo de un destacado. Debe ser breve y
+                        conciso, de pocas líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un
+                        destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces
+                        destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces
+                        destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces
                       </p>
                       <div className="panel-footer">
                         <LinkClient className="btn btn-light btn-lg">Botón</LinkClient>
@@ -816,7 +830,7 @@ const HighlightedDocs: React.FC = () => {
                     </div>
 
                     <Image
-                      src={`${basePath}/images/highlighted/bax-phone.png`}
+                      src={`${basePath}/images/highlighted/destacado_multimedia_container.png`}
                       alt="descripción de imagen"
                       className="panel-img"
                       width={538}

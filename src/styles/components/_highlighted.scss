@@ -344,7 +344,6 @@ $gradient-text-colors: (
 .panel-horizontal-container {
   @extend .panel-horizontal-content;
   padding: 16px;
-
   // max-height: 388px;
   height: auto;
   max-width: 1109px;
@@ -356,7 +355,7 @@ $gradient-text-colors: (
   }
 
   @include media-breakpoint-up(md) {
-    padding: 64px;
+    padding-left: 64px;
   }
 
   &.bg-dark {
@@ -373,17 +372,21 @@ $gradient-text-colors: (
 
   .panel-horizontal {
     @include panel-content(row, xl);
-
-    // display: flex;
+    display: flex;
+    align-items: stretch;
     flex-direction: row-reverse;
     max-width: unset !important;
     padding: 0 !important;
+
+    @include media-breakpoint-up(lg) {
+      min-height: 432px;
+    }
 
     &.panel-inverted {
       flex-direction: row;
 
       @include media-breakpoint-down(xl) {
-        flex-direction: column-reverse;
+        flex-direction: column;
       }
     }
 
@@ -393,6 +396,9 @@ $gradient-text-colors: (
 
     .panel-body {
       color: $body-color;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
       p.panel-title {
         @extend .h5;
@@ -432,14 +438,20 @@ $gradient-text-colors: (
         &:has(.panel-img) {
           .panel-body {
             position: relative;
-            padding: 16px;
+            // padding: 16px;
 
             @include media-breakpoint-up(sm) {
               padding: 36px;
+              // margin-top: 150px;
+
+              .panel-img {
+                width: 400px;
+                height: 400px;
+              }
             }
 
             @include media-breakpoint-up(xl) {
-              padding: 64px 64px 64px 0;
+              padding-right: 64px;
               max-width: 50%;
             }
           }
@@ -447,19 +459,20 @@ $gradient-text-colors: (
           &.panel-inverted {
             .panel-body {
               @include media-breakpoint-up(xl) {
-                padding: 64px 0 64px 64px;
+                padding-left: 64px;
+                max-width: 50%;
               }
             }
           }
         }
 
-        .panel-img {
-          width: auto;
-          height: 288px;
-          object-fit: none;
-          overflow: initial;
-          align-self: center;
-        }
+        // .panel-img {
+        //   width: auto;
+        //   height: 288px;
+        //   object-fit: none;
+        //   overflow: initial;
+        //   align-self: center;
+        // }
       }
     }
   }

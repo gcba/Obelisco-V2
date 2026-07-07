@@ -28,7 +28,7 @@ $breadcrumb-divider-dark: url('data:image/svg+xml,<svg width="24" height="24" vi
       }
     }
 
-    &[aria-expanded="true"],
+    &[aria-expanded='true'],
     &:active {
       color: $white;
       background-color: $active-color;
@@ -190,8 +190,8 @@ $breadcrumb-divider-dark: url('data:image/svg+xml,<svg width="24" height="24" vi
 .notification {
   position: relative;
 
-  &[aria-expanded="false"]::before {
-    content: "" !important;
+  &[aria-expanded='false']::before {
+    content: '' !important;
     position: absolute;
     top: 8px;
     right: 8px;
@@ -225,6 +225,7 @@ $breadcrumb-divider-dark: url('data:image/svg+xml,<svg width="24" height="24" vi
 
       .header-container {
         padding: 0.875rem 1rem;
+        position: relative;
         z-index: 1050;
         background-color: transparent;
       }
@@ -328,7 +329,7 @@ $breadcrumb-divider-dark: url('data:image/svg+xml,<svg width="24" height="24" vi
         box-shadow: $focus-box-shadow;
       }
 
-      &[aria-expanded="true"] {
+      &[aria-expanded='true'] {
         background: $active-color $navbar-toggle-close no-repeat center center;
         box-shadow: none;
         outline: 0.125rem solid transparent;
@@ -409,7 +410,7 @@ $breadcrumb-divider-dark: url('data:image/svg+xml,<svg width="24" height="24" vi
             @include dropdown-states;
 
             .btn-dropdown {
-              &[aria-expanded="true"] {
+              &[aria-expanded='true'] {
                 color: $white;
               }
             }
@@ -589,117 +590,121 @@ div.container-headers {
   justify-content: space-between;
 
   //  Header logo y navegación
-  header.o-header.navbar {
+  header.o-header.hero-navbar.navbar {
     border-bottom: none;
 
+    @include media-breakpoint-down(xl) {
+      z-index: 1100;
+    }
+
     .header-container {
-      // @include media-breakpoint-down(xxl) {
-      //   padding: 0;
-      //   max-width: 100%;
-      //   align-items: center;
-      //   min-height: 48px;
-      // }
+      @include media-breakpoint-up(xl) {
+        div.navbar-collapse {
+          ul.nav.nav-pills {
+            li.dropdown button.btn.btn-dropdown {
+              background: transparent;
+              color: white;
+            }
 
-      // @include media-breakpoint-up(xxl) {
-      //   column-gap: 1.5rem;
-      //   max-width: $navbar-container-width;
-      //   padding-left: $navbar-container-padding-x;
-      //   padding-right: $navbar-container-padding-x;
-      // }
-    }
-
-    // @include media-breakpoint-up(xxl) {
-    //   .navbar-collapse {
-    //     display: flex !important;
-    //   }
-    // }
-
-    ul.nav {
-      li.dropdown {
-        button.btn.btn-dropdown {
-          background: transparent;
-          color: white;
+            li.nav-item a.nav-link {
+              background: transparent;
+              color: white;
+            }
+          }
         }
       }
 
-      li.nav-item {
-        a.nav-link {
-          background: transparent;
-          color: white;
+      // Mobile
+      @include media-breakpoint-down(xl) {
+        div.navbar-collapse {
+          ul.nav.nav-pills {
+            li.dropdown button.btn.btn-dropdown,
+            li.nav-item a.nav-link {
+              color: $body-color;
+            }
+
+            .btn-dropdown-icon {
+              color: $body-color;
+            }
+          }
+        }
+
+        // .navbar-collapse {
+
+        // @include media-breakpoint-down(xxl) {
+        //   display: none;
+
+        //   &.show,
+        //   &.collapsing {
+        //     display: block;
+        //   }
+        // }
+      }
+
+      .navbar-toggler {
+        border-radius: $border-radius-3xl;
+        background-color: white;
+
+        &.collapsed {
+          flex-wrap: nowrap;
         }
       }
-    }
 
-    .navbar-toggler {
-      background-color: white;
-      // @include media-breakpoint-down(xxl) {
-      //   display: inline-block;
-      // }
-    }
+      .navbar-toggler[aria-expanded='true'] {
+        background: $active-color $navbar-toggle-close no-repeat center center;
+      }
 
-    .navbar-collapse {
-      flex-wrap: nowrap;
-
-      // @include media-breakpoint-down(xxl) {
-      //   display: none;
-
-      //   &.show,
-      //   &.collapsing {
-      //     display: block;
+      // .navbar-login {
+      //   @include media-breakpoint-down(xxl) {
+      //     display: none;
       //   }
       // }
+
+      // .navbar-user {
+      //   @include media-breakpoint-down(xxl) {
+      //     display: none;
+      //   }
+      // }
+
+      // .navbar-login-mobile {
+      //   @include media-breakpoint-up(xxl) {
+      //     display: none;
+      //   }
+      // }
+
+      // .navbar-user-mobile {
+      //   @include media-breakpoint-up(xxl) {
+      //     display: none;
+      //   }
+      // }
+
+      // .navbar-content {
+      //   @include media-breakpoint-down(xxl) {
+      //     flex-direction: column-reverse;
+      //   }
+      // }
+
+      // .navbar-search {
+      //   @include media-breakpoint-down(xxl) {
+      //     max-width: 100%;
+      //     padding: 0;
+      //     margin-top: 0.25rem;
+      //     margin-bottom: 1rem;
+      //   }
+      // }
+
+      // .navbar-sections {
+      //   @include media-breakpoint-up(xxl) {
+      //     margin-right: auto;
+      //     min-width: 0;
+      //     max-width: none;
+      //     margin-top: 0;
+      //     margin-bottom: 0;
+      //   }
+      // }
+      // }
     }
-
-    // .navbar-login {
-    //   @include media-breakpoint-down(xxl) {
-    //     display: none;
-    //   }
-    // }
-
-    // .navbar-user {
-    //   @include media-breakpoint-down(xxl) {
-    //     display: none;
-    //   }
-    // }
-
-    // .navbar-login-mobile {
-    //   @include media-breakpoint-up(xxl) {
-    //     display: none;
-    //   }
-    // }
-
-    // .navbar-user-mobile {
-    //   @include media-breakpoint-up(xxl) {
-    //     display: none;
-    //   }
-    // }
-
-    // .navbar-content {
-    //   @include media-breakpoint-down(xxl) {
-    //     flex-direction: column-reverse;
-    //   }
-    // }
-
-    // .navbar-search {
-    //   @include media-breakpoint-down(xxl) {
-    //     max-width: 100%;
-    //     padding: 0;
-    //     margin-top: 0.25rem;
-    //     margin-bottom: 1rem;
-    //   }
-    // }
-
-    // .navbar-sections {
-    //   @include media-breakpoint-up(xxl) {
-    //     margin-right: auto;
-    //     min-width: 0;
-    //     max-width: none;
-    //     margin-top: 0;
-    //     margin-bottom: 0;
-    //   }
-    // }
   }
-
   //  Header logo y navegación
 
   // Header multimedia y contenido

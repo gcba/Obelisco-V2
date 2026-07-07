@@ -547,7 +547,7 @@ const HeaderDocs: React.FC = () => {
                 <div className="container-headers">
                   {/* Header logo y navegación ⬇ */}
                   <header
-                    className="o-header hero-navbar navbar position-absolute top-0 start-0 z-3 w-100 bg-glass"
+                    className="o-header hero-navbar navbar position-absolute top-0 start-0 z-3 w-100"
                     role="banner"
                   >
                     <LinkClient href="#main" className="skip-to-main-content-link">
@@ -578,12 +578,12 @@ const HeaderDocs: React.FC = () => {
                         className="navbar-toggler"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#navbarContent1"
-                        aria-controls="navbarContent1"
+                        data-bs-target="#navbarContentMultimedia"
+                        aria-controls="navbarContentMultimedia"
                         aria-expanded="false"
                         aria-label="Menú"
                       ></button>
-                      <div className="collapse navbar-collapse" id="navbarContent1">
+                      <div className="collapse navbar-collapse" id="navbarContentMultimedia">
                         <div className="navbar-content">
                           <div className="navbar-sections">
                             <nav>
@@ -798,136 +798,6 @@ const HeaderDocs: React.FC = () => {
         </>
       ),
     },
-    // {
-    //   title: 'Funciona',
-    //   firstTitle: true,
-    //   content: (
-    //     <>
-    //       <br />
-    //       <br />
-    //       <br />
-    //       <br />
-    //       <br />
-    //       <div className="hero-box-sizing ">
-    //         <div className="container-headers">
-    //           {/* Logo y navegación ⬇ */}
-    //           <header className="o-header navbar hero-navbar navbar-lg">
-    //             {' '}
-    //             <div className="container">
-    //               <a className="navbar-brand" href="https://www.buenosaires.gob.ar/">
-    //                 <img className="header-logo" src={basePath + logo_ba_dark} alt="Ciudad de buenos aires" />
-    //               </a>
-
-    //               <div className="navbar-search d-responsive ml-auto">
-    //                 <button
-    //                   className="button-search btn btn-icon tecba-button btn-dark"
-    //                   type="submit"
-    //                   aria-label="Buscar"
-    //                 >
-    //                   <span className="material-icons-round">Buscar</span>
-    //                 </button>
-    //               </div>
-
-    //               <div className="list-group-content d-responsive ml-2">
-    //                 <button type="button" className="btn btn-icon tecba-button btn-cyan">
-    //                   <span className="material-symbols-rounded" aria-hidden="true">
-    //                     person
-    //                   </span>
-    //                   <span className="btn-text">Ingresar</span>
-    //                 </button>
-    //               </div>
-    //             </div>
-    //           </header>
-
-    //           {/* Multimedia y contenido ⬇ */}
-    //           <header className="hero-landing hero-video ob-hero">
-    //             {/* multimedia */}
-    //             <video src={`${basePath}/images/header/video_landing.mp4`} autoPlay muted loop playsInline></video>
-
-    //             {/* capa gradiente */}
-    //             <div className="ob-bg"></div>
-
-    //             <div className="container py-5">
-    //               <nav aria-label="breadcrumb">
-    //                 <ol className="breadcrumb">
-    //                   <li className="breadcrumb-item">
-    //                     <a href="#">Buenos aires</a>
-    //                   </li>
-    //                   <li className="breadcrumb-item">
-    //                     <a href="#">Jefatura de gabinete</a>
-    //                   </li>
-    //                 </ol>
-    //               </nav>
-    //               <div className="row">
-    //                 <div className="col-12 col-lg-8">
-    //                   <div className="mt-2 pt-1">
-    //                     <h1 className="mb-3">Secretaría de Innovación y Transformación Digital</h1>
-    //                     <p>
-    //                       Trabajamos en soluciones integrales para mejorar la calidad de vida de los vecinos y
-    //                       visitantes de la Ciudad, a partir de la tecnología y la innovación.
-    //                     </p>
-
-    //                     <div className="container-dropdowns">
-    //                       <div className="dropdown">
-    //                         <button
-    //                           type="button"
-    //                           className="btn btn-dropdown btn-dropdown-border btn-lg"
-    //                           data-bs-toggle="dropdown"
-    //                           aria-expanded="false"
-    //                         >
-    //                           <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
-    //                           <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
-    //                             expand_more
-    //                           </span>
-    //                         </button>
-    //                         <div className="dropdown-menu">
-    //                           <a className="dropdown-item" href="#">
-    //                             <span className="item-text">Opción de navegación</span>
-    //                           </a>
-    //                           <a className="dropdown-item" href="#">
-    //                             <span className="item-text">Opción de navegación</span>
-    //                           </a>
-    //                           <a className="dropdown-item" href="#">
-    //                             <span className="item-text">Opción de navegación</span>
-    //                           </a>
-    //                         </div>
-    //                       </div>
-
-    //                       <div className="dropdown">
-    //                         <button
-    //                           type="button"
-    //                           className="btn btn-dropdown btn-dropdown-border btn-lg"
-    //                           data-bs-toggle="dropdown"
-    //                           aria-expanded="false"
-    //                         >
-    //                           <span className="btn-dropdown-text ellipsis-1">Desplegable</span>
-    //                           <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
-    //                             expand_more
-    //                           </span>
-    //                         </button>
-    //                         <div className="dropdown-menu">
-    //                           <a className="dropdown-item" href="#">
-    //                             <span className="item-text">Opción de navegación</span>
-    //                           </a>
-    //                           <a className="dropdown-item" href="#">
-    //                             <span className="item-text">Opción de navegación</span>
-    //                           </a>
-    //                           <a className="dropdown-item" href="#">
-    //                             <span className="item-text">Opción de navegación</span>
-    //                           </a>
-    //                         </div>
-    //                       </div>
-    //                     </div>
-    //                   </div>
-    //                 </div>
-    //               </div>
-    //             </div>
-    //           </header>
-    //         </div>
-    //       </div>
-    //     </>
-    //   ),
-    // },
     {
       title: 'Header GCBA',
       firstTitle: true,

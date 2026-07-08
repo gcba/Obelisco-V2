@@ -448,13 +448,21 @@ $gradient-text-colors: (
           }
         }
 
+        &.panel-inverted {
+          .panel-body {
+            @include media-breakpoint-up(xl) {
+              padding-left: 64px;
+              max-width: 50%;
+            }
+          }
+        }
+
         .panel-img {
           width: auto;
           height: auto;
           object-fit: none;
           overflow: initial;
           align-self: center;
-          border-radius: $border-radius-5xl;
         }
 
         @include media-breakpoint-down(xl) {
@@ -466,6 +474,7 @@ $gradient-text-colors: (
             max-width: 100%;
             width: 100%;
             padding-right: 0;
+            padding: 36px;
           }
 
           .panel-img {
@@ -474,6 +483,15 @@ $gradient-text-colors: (
             height: auto;
             object-fit: contain;
             object-position: center;
+          }
+        }
+
+         @include media-breakpoint-down(sm) {
+          .panel-body {
+            max-width: 100%;
+            width: 100%;
+            padding-right: 0;
+            padding: 16px;
           }
         }
       }

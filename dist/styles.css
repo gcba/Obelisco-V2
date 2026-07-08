@@ -19670,13 +19670,18 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
     max-width: 50%;
   }
 }
+@media (min-width: 1200px) {
+  .panel-horizontal-container.bg-gradient-cyan .panel-horizontal.panel-inverted .panel-body {
+    padding-left: 64px;
+    max-width: 50%;
+  }
+}
 .panel-horizontal-container.bg-gradient-cyan .panel-horizontal .panel-img {
   width: auto;
   height: auto;
   object-fit: none;
   overflow: initial;
   align-self: center;
-  border-radius: 24px;
 }
 @media (max-width: 1199.98px) {
   .panel-horizontal-container.bg-gradient-cyan .panel-horizontal {
@@ -19688,12 +19693,21 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
     max-width: 100%;
     width: 100%;
     padding-right: 0;
+    padding: 36px;
   }
   .panel-horizontal-container.bg-gradient-cyan .panel-horizontal .panel-img {
     width: 100%;
     height: auto;
     object-fit: contain;
     object-position: center;
+  }
+}
+@media (max-width: 575.98px) {
+  .panel-horizontal-container.bg-gradient-cyan .panel-horizontal .panel-body {
+    max-width: 100%;
+    width: 100%;
+    padding-right: 0;
+    padding: 16px;
   }
 }
 .panel-horizontal-container.bg-gradient-blue {
@@ -19709,13 +19723,18 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
     max-width: 50%;
   }
 }
+@media (min-width: 1200px) {
+  .panel-horizontal-container.bg-gradient-blue .panel-horizontal.panel-inverted .panel-body {
+    padding-left: 64px;
+    max-width: 50%;
+  }
+}
 .panel-horizontal-container.bg-gradient-blue .panel-horizontal .panel-img {
   width: auto;
   height: auto;
   object-fit: none;
   overflow: initial;
   align-self: center;
-  border-radius: 24px;
 }
 @media (max-width: 1199.98px) {
   .panel-horizontal-container.bg-gradient-blue .panel-horizontal {
@@ -19727,12 +19746,21 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
     max-width: 100%;
     width: 100%;
     padding-right: 0;
+    padding: 36px;
   }
   .panel-horizontal-container.bg-gradient-blue .panel-horizontal .panel-img {
     width: 100%;
     height: auto;
     object-fit: contain;
     object-position: center;
+  }
+}
+@media (max-width: 575.98px) {
+  .panel-horizontal-container.bg-gradient-blue .panel-horizontal .panel-body {
+    max-width: 100%;
+    width: 100%;
+    padding-right: 0;
+    padding: 16px;
   }
 }
 

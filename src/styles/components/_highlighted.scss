@@ -1,5 +1,5 @@
-@use "sass:map";
-@use "sass:list";
+@use 'sass:map';
+@use 'sass:list';
 
 /* Custom variables and mixins */
 // MIXIN GENERAL
@@ -339,24 +339,25 @@
 /* COMPONENTE DEPRECADO - BLOQUE DE TRAMITE */
 // DESTACADO CONTAINER GRADIENTE
 $gradient-colors: (
-  "cyan": (
+  'cyan': (
     $sky-900,
-    #8ce1d7
+    #8ce1d7,
   ),
-  "blue": (
+  'blue': (
     $blue-900,
-    $blue-500
-  )
+    $blue-500,
+  ),
 );
 
 $gradient-text-colors: (
-  "cyan": $white,
-  "blue": $white
+  'cyan': $white,
+  'blue': $white,
 );
 
 @mixin bg-gradient-color($color1, $color2) {
   background: linear-gradient(180deg, $color1 0%, $color2 100%);
 }
+
 // DESTACADO CONTAINER GRADIENTE
 
 // Destacado container
@@ -500,7 +501,6 @@ $gradient-text-colors: (
           height: auto;
           object-fit: contain;
           object-position: center;
-
           display: block;
           margin: 0 auto;
         }
@@ -522,12 +522,14 @@ $gradient-text-colors: (
           .panel-body {
             max-width: 100%;
             width: 100%;
-            padding-right: 0;
+
+            // padding-right: 0;
             padding: 36px;
           }
 
           .panel-img {
             width: 100%;
+
             // max-width: 538px;
             height: auto;
             object-fit: contain;
@@ -539,7 +541,8 @@ $gradient-text-colors: (
           .panel-body {
             max-width: 100%;
             width: 100%;
-            padding-right: 0;
+
+            // padding-right: 0;
             padding: 16px;
           }
         }
@@ -551,11 +554,13 @@ $gradient-text-colors: (
         // Destacado container sin multimedia
         &:not(:has(.panel-img)) {
           width: 100%;
+
           // min-height: 264px; // min-height no va acá, va en panel-horizontal-container
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
+
           // background-color: red;
           .panel-body {
             width: 100%;

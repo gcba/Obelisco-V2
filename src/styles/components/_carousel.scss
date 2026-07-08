@@ -3,9 +3,9 @@ $carousel-bg-hover: $slate-50;
 $carousel-active-bg: $blue-700;
 $svg-base-left: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 6.70498C14.61 6.31498 13.98 6.31498 13.59 6.70498L9.00002 11.295C8.61002 11.685 8.61002 12.315 9.00002 12.705L13.59 17.295C13.98 17.685 14.61 17.685 15 17.295C15.39 16.905 15.39 16.275 15 15.885L11.12 11.995L15 8.11498C15.39 7.72498 15.38 7.08498 15 6.70498Z" fill="%23';
 $svg-base-right: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9.00002 6.71063C8.61002 7.10063 8.61002 7.73063 9.00002 8.12063L12.88 12.0006L9.00002 15.8806C8.61002 16.2706 8.61002 16.9006 9.00002 17.2906C9.39002 17.6806 10.02 17.6806 10.41 17.2906L15 12.7006C15.39 12.3106 15.39 11.6806 15 11.2906L10.41 6.70063C10.03 6.32063 9.39002 6.32063 9.00002 6.71063Z" fill="%23';
-$color-default: '101E37';
-$color-hover: '274986';
-$color-active: 'FFFFFF';
+$color-default: "101E37";
+$color-hover: "274986";
+$color-active: "FFFFFF";
 
 $carousel-icon-left: url('#{$svg-base-left}#{$color-default}"/></svg>');
 $carousel-icon-right: url('#{$svg-base-right}#{$color-default}"/></svg>');
@@ -14,12 +14,7 @@ $carousel-icon-right-hover: url('#{$svg-base-right}#{$color-hover}"/></svg>');
 $carousel-icon-left-active: url('#{$svg-base-left}#{$color-active}"/></svg>');
 $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
 
-@mixin carousel-navigation-states(
-  $box-shadow,
-  $bg-color,
-  $carousel-icon-left,
-  $carousel-icon-right
-) {
+@mixin carousel-navigation-states($box-shadow, $bg-color, $carousel-icon-left, $carousel-icon-right) {
   box-shadow: $box-shadow;
   background-color: $bg-color;
 
@@ -178,12 +173,7 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     }
 
     &:focus {
-      @include carousel-navigation-states(
-        $focus-box-shadow,
-        $carousel-bg,
-        $carousel-icon-left,
-        $carousel-icon-right
-      );
+      @include carousel-navigation-states($focus-box-shadow, $carousel-bg, $carousel-icon-left, $carousel-icon-right);
       outline: 0.25rem solid transparent;
     }
 
@@ -259,6 +249,25 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
 
   // el &.cards, hace que solo aplique a las clases .card dentro de .carousel
   &.cards {
+    &.controls-top {
+      .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      .carousel-navigation {
+        display: flex;
+        gap: 12px;
+      }
+
+      .carousel-control-prev,
+      .carousel-control-next {
+        position: static;
+        transform: none;
+      }
+    }
+
     @media (width < 768px) {
       .carousel-inner {
         display: flex;
@@ -277,6 +286,12 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
             .card {
               flex: 0 0 auto;
               width: 296px;
+            }
+
+            .card.card-img-bg {
+              flex: 0 0 auto;
+              width: 300px;
+              min-width: 300px;
             }
           }
         }
@@ -345,7 +360,8 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     }
   }
 
-  $container-max-width: 720px;
+  // $container-max-width: 720px;
+  $container-max-width: 1140px;
   @media (width >= 992px) {
     @include carousel-navigation-row;
 
@@ -360,15 +376,17 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     .carousel-inner {
       border-radius: 16px;
       margin: 0 auto;
-      max-width: 720px;
+      max-width: calc($container-max-width - 20px);
 
       .carousel-item {
         padding: 0 8px;
       }
     }
 
-    .title {
+    .title,
+    .carousel-link {
       padding-left: container-alignment($container-max-width);
+      padding-right: container-alignment($container-max-width);
     }
 
     .panel-horizontal-content {

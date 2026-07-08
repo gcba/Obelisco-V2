@@ -446,7 +446,11 @@ $gradient-text-colors: (
 
               .panel-img {
                 width: 400px;
-                height: 400px;
+                height: 288px;
+                width: auto;
+                object-fit: none;
+                overflow: initial;
+                align-self: center;
               }
             }
 

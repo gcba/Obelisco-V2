@@ -19515,11 +19515,6 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
   background-color: #ffffff;
   border-radius: 32px;
 }
-@media (min-width: 576px) {
-  .panel-horizontal-container {
-    padding: 36px;
-  }
-}
 @media (min-width: 768px) {
   .panel-horizontal-container {
     padding-left: 64px;
@@ -19527,6 +19522,9 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
 }
 .panel-horizontal-container.bg-dark {
   color: #ffffff;
+}
+.panel-horizontal-container.bg-dark .panel-horizontal .panel-img {
+  border-radius: 32px;
 }
 .panel-horizontal-container.bg-dark .panel-horizontal .panel-body p.panel-title {
   color: #ffffff;
@@ -19628,7 +19626,12 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
 }
 @media (max-width: 1199.98px) {
   .panel-horizontal-container .panel-horizontal.panel-inverted {
-    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 1199.98px) {
+  .panel-horizontal-container .panel-horizontal {
+    flex-direction: column-reverse;
   }
 }
 .panel-horizontal-container .panel-horizontal .panel-img {
@@ -19656,74 +19659,80 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
 }
 .panel-horizontal-container.bg-gradient-cyan {
   background: linear-gradient(180deg, #002733 0%, #8ce1d7 100%);
-  position: relative;
   overflow: hidden;
 }
 .panel-horizontal-container.bg-gradient-cyan .panel-horizontal .panel-body {
   color: #ffffff;
 }
-.panel-horizontal-container.bg-gradient-cyan .panel-horizontal:has(.panel-img) .panel-body {
-  position: relative;
-}
-@media (min-width: 576px) {
-  .panel-horizontal-container.bg-gradient-cyan .panel-horizontal:has(.panel-img) .panel-body {
-    padding: 36px;
-  }
-  .panel-horizontal-container.bg-gradient-cyan .panel-horizontal:has(.panel-img) .panel-body .panel-img {
-    width: 400px;
-    height: 288px;
-    width: auto;
-    object-fit: none;
-    overflow: initial;
-    align-self: center;
-  }
-}
 @media (min-width: 1200px) {
-  .panel-horizontal-container.bg-gradient-cyan .panel-horizontal:has(.panel-img) .panel-body {
+  .panel-horizontal-container.bg-gradient-cyan .panel-horizontal .panel-body {
     padding-right: 64px;
     max-width: 50%;
   }
 }
-@media (min-width: 1200px) {
-  .panel-horizontal-container.bg-gradient-cyan .panel-horizontal:has(.panel-img).panel-inverted .panel-body {
-    padding-left: 64px;
-    max-width: 50%;
+.panel-horizontal-container.bg-gradient-cyan .panel-horizontal .panel-img {
+  width: auto;
+  height: auto;
+  object-fit: none;
+  overflow: initial;
+  align-self: center;
+  border-radius: 24px;
+}
+@media (max-width: 1199.98px) {
+  .panel-horizontal-container.bg-gradient-cyan .panel-horizontal {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 32px;
+  }
+  .panel-horizontal-container.bg-gradient-cyan .panel-horizontal .panel-body {
+    max-width: 100%;
+    width: 100%;
+    padding-right: 0;
+  }
+  .panel-horizontal-container.bg-gradient-cyan .panel-horizontal .panel-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
   }
 }
 .panel-horizontal-container.bg-gradient-blue {
   background: linear-gradient(180deg, #101e37 0%, #336acc 100%);
-  position: relative;
   overflow: hidden;
 }
 .panel-horizontal-container.bg-gradient-blue .panel-horizontal .panel-body {
   color: #ffffff;
 }
-.panel-horizontal-container.bg-gradient-blue .panel-horizontal:has(.panel-img) .panel-body {
-  position: relative;
-}
-@media (min-width: 576px) {
-  .panel-horizontal-container.bg-gradient-blue .panel-horizontal:has(.panel-img) .panel-body {
-    padding: 36px;
-  }
-  .panel-horizontal-container.bg-gradient-blue .panel-horizontal:has(.panel-img) .panel-body .panel-img {
-    width: 400px;
-    height: 288px;
-    width: auto;
-    object-fit: none;
-    overflow: initial;
-    align-self: center;
-  }
-}
 @media (min-width: 1200px) {
-  .panel-horizontal-container.bg-gradient-blue .panel-horizontal:has(.panel-img) .panel-body {
+  .panel-horizontal-container.bg-gradient-blue .panel-horizontal .panel-body {
     padding-right: 64px;
     max-width: 50%;
   }
 }
-@media (min-width: 1200px) {
-  .panel-horizontal-container.bg-gradient-blue .panel-horizontal:has(.panel-img).panel-inverted .panel-body {
-    padding-left: 64px;
-    max-width: 50%;
+.panel-horizontal-container.bg-gradient-blue .panel-horizontal .panel-img {
+  width: auto;
+  height: auto;
+  object-fit: none;
+  overflow: initial;
+  align-self: center;
+  border-radius: 24px;
+}
+@media (max-width: 1199.98px) {
+  .panel-horizontal-container.bg-gradient-blue .panel-horizontal {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 32px;
+  }
+  .panel-horizontal-container.bg-gradient-blue .panel-horizontal .panel-body {
+    max-width: 100%;
+    width: 100%;
+    padding-right: 0;
+  }
+  .panel-horizontal-container.bg-gradient-blue .panel-horizontal .panel-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
   }
 }
 

@@ -1,5 +1,5 @@
-@use 'sass:map';
-@use 'sass:list';
+@use "sass:map";
+@use "sass:list";
 
 /* Custom variables and mixins */
 // MIXIN GENERAL
@@ -322,19 +322,19 @@
 
 // Destacado container
 $gradient-colors: (
-  'cyan': (
+  "cyan": (
     $sky-900,
-    #8ce1d7,
+    #8ce1d7
   ),
-  'blue': (
+  "blue": (
     $blue-900,
-    $blue-500,
-  ),
+    $blue-500
+  )
 );
 
 $gradient-text-colors: (
-  'cyan': $white,
-  'blue': $white,
+  "cyan": $white,
+  "blue": $white
 );
 
 @mixin bg-gradient-color($color1, $color2) {
@@ -351,7 +351,7 @@ $gradient-text-colors: (
   border-radius: $border-radius-6xl;
 
   @include media-breakpoint-up(sm) {
-    padding: 36px;
+    // padding: 36px;
   }
 
   @include media-breakpoint-up(md) {
@@ -362,6 +362,9 @@ $gradient-text-colors: (
     color: $white;
 
     .panel-horizontal {
+      .panel-img {
+        border-radius: $border-radius-6xl;
+      }
       .panel-body {
         p.panel-title {
           color: $white;
@@ -385,9 +388,14 @@ $gradient-text-colors: (
     &.panel-inverted {
       flex-direction: row;
 
+      // invertir columna para dejar imagen arriba
       @include media-breakpoint-down(xl) {
-        flex-direction: column;
+        flex-direction: column-reverse;
       }
+    }
+
+    @include media-breakpoint-down(xl) {
+      flex-direction: column-reverse;
     }
 
     .panel-img {
@@ -424,59 +432,50 @@ $gradient-text-colors: (
     }
   }
 
+  // DESTACADO GRADIENTE
   @each $name, $color in $gradient-colors {
     &.bg-gradient-#{$name} {
       @include bg-gradient-color(list.nth($color, 1), list.nth($color, 2));
-      position: relative;
       overflow: hidden;
 
       .panel-horizontal {
         .panel-body {
           color: map-get($gradient-text-colors, $name);
+
+          @include media-breakpoint-up(xl) {
+            padding-right: 64px;
+            max-width: 50%;
+          }
         }
 
-        &:has(.panel-img) {
+        .panel-img {
+          width: auto;
+          height: auto;
+          object-fit: none;
+          overflow: initial;
+          align-self: center;
+          border-radius: $border-radius-5xl;
+        }
+
+        @include media-breakpoint-down(xl) {
+          display: flex;
+          flex-direction: column-reverse;
+          gap: 32px;
+
           .panel-body {
-            position: relative;
-            // padding: 16px;
-
-            @include media-breakpoint-up(sm) {
-              padding: 36px;
-              // margin-top: 150px;
-
-              .panel-img {
-                width: 400px;
-                height: 288px;
-                width: auto;
-                object-fit: none;
-                overflow: initial;
-                align-self: center;
-              }
-            }
-
-            @include media-breakpoint-up(xl) {
-              padding-right: 64px;
-              max-width: 50%;
-            }
+            max-width: 100%;
+            width: 100%;
+            padding-right: 0;
           }
 
-          &.panel-inverted {
-            .panel-body {
-              @include media-breakpoint-up(xl) {
-                padding-left: 64px;
-                max-width: 50%;
-              }
-            }
+          .panel-img {
+            width: 100%;
+            // max-width: 538px;
+            height: auto;
+            object-fit: contain;
+            object-position: center;
           }
         }
-
-        // .panel-img {
-        //   width: auto;
-        //   height: 288px;
-        //   object-fit: none;
-        //   overflow: initial;
-        //   align-self: center;
-        // }
       }
     }
   }

@@ -19,6 +19,36 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
+      title: 'Versión 1.15.0',
+      content: (
+        <>
+          <ul className="docs-list">
+            <p>La Versión 1.15.0 contiene lo siguiente: </p>
+            <li>Componente Tarjetas, se crea la variante Tarjetas de impacto visual.</li>
+            <li>
+              Componente Carrusel, se crea la variante que utiliza las Tarjetas de impacto visual, tiene una disposición
+              de controles diferente y exclusiva para esta variante.
+            </li>
+            <li>
+              <strong>Correción (fix) en Destacado container</strong>.
+              <ul>
+                <li>
+                  El componente con multimedia tiene una altura mínima de <code>432px</code>, sin multimedia{' '}
+                  <code>264px</code>.
+                </li>
+                <li>
+                  Se crean 2 clases par manipular las imagenes:{' '}
+                  <code>
+                    .panel-img-ilustracion y <code>.panel-img...</code>
+                  </code>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
       title: 'Versión 1.14.0',
       content: (
         <>
@@ -38,23 +68,6 @@ const ReleasesComponents: React.FC = () => {
               <li>
                 Se agrega la clase <code>panel-inverted</code> para invertir el contenido en los destacados horizontales
                 en todas sus variantes. Se usa así: <code>{'<div class="panel-horizontal panel-inverted">'}</code>
-              </li>
-              <li>
-                Se crean clases para modificar el comportamiento de la imagen del <strong>Destacado container</strong>.
-                <ul>
-                  <li>
-                    Con <code>{'panel-img-object-fit-none'}</code>, aplica la propiedad:{' '}
-                    <code>{'object-fit: none;'}</code>
-                  </li>
-                  <li>
-                    Con <code>{'panel-img-object-fit-cover'}</code>, aplica la propiedad:{' '}
-                    <code>{'object-fit: cover;'}</code>
-                  </li>
-                  <li>
-                    Con <code>{'panel-img-object-fit-fill'}</code>, aplica la propiedad:{' '}
-                    <code>{'object-fit: fill;'}</code>
-                  </li>
-                </ul>
               </li>
             </ul>
             <br />

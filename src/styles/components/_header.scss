@@ -434,7 +434,6 @@ $breadcrumb-divider-dark: url('data:image/svg+xml,<svg width="24" height="24" vi
 
           @include media-breakpoint-up(xl) {
             margin-right: auto;
-
             min-width: 0;
             max-width: none;
             margin-top: 0;
@@ -577,13 +576,14 @@ $breadcrumb-divider-dark: url('data:image/svg+xml,<svg width="24" height="24" vi
     margin: 0;
   }
 }
+
 // Header Variante Banner
 
 // Hero header
 div.container-headers {
   position: relative;
   min-height: 756px;
-  /* revisar altura y colores*/
+  /* revisar altura y colores */
   height: 75vh;
   display: flex;
   flex-direction: column;
@@ -705,6 +705,7 @@ div.container-headers {
       // }
     }
   }
+
   //  Header logo y navegación
 
   // Header multimedia y contenido
@@ -719,6 +720,7 @@ div.container-headers {
     nav ol.breadcrumb li.breadcrumb-item a {
       color: white;
     }
+
     nav ol.breadcrumb li.breadcrumb-item::before {
       background: transparent $breadcrumb-divider-dark no-repeat center center;
     }
@@ -734,14 +736,14 @@ div.container-headers {
       z-index: 0;
     }
 
-    /* capa gradiente Degradado encima del video z-index 1*/
+    /* capa gradiente Degradado encima del video z-index 1 */
     .ob-bg {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(179deg, #000 4.22%, rgba(0, 0, 0, 0) 99.02%);
+      background: linear-gradient(179deg, #000 4.22%, rgb(0 0 0 / 0%) 99.02%);
       z-index: 1;
     }
 
@@ -775,8 +777,10 @@ div.container-headers {
     .dropdown .btn-dropdown.btn-dropdown-border.progression-link {
       border-radius: 25px;
     }
+
     // Header multimedia y contenido
   }
+
   // Header multimedia y contenido
 }
 

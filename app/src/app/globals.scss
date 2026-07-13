@@ -2,9 +2,9 @@
 // @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded');
 
-@import url('https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import '../../styles/styles.css';
+@import url("https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "../../styles/styles.css";
 
 // Generic Styles
 html {
@@ -82,7 +82,7 @@ hr {
             padding: 12px 0 12px 16px;
             min-height: 40px;
             &:after {
-              content: '';
+              content: "";
               background-color: #e6ebf0;
               position: absolute;
               width: 2px;
@@ -138,20 +138,20 @@ hr {
 .custom-toast {
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.075);
   font-family:
-    'Nunito',
-    'Open Sans',
+    "Nunito",
+    "Open Sans",
     system-ui,
     -apple-system,
-    'Segoe UI',
+    "Segoe UI",
     roboto,
-    'Helvetica Neue',
+    "Helvetica Neue",
     arial,
-    'Noto Sans',
+    "Noto Sans",
     sans-serif,
-    'Apple Color Emoji',
-    'Segoe UI Emoji',
-    'Segoe UI Symbol',
-    'Noto Color Emoji';
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
   font-size: 0.875rem;
   color: #101e37;
   background-color: #f3f6f9;
@@ -317,7 +317,7 @@ pre {
 
   &:has(.navbar-collapse.collapse.show),
   &:has(.navbar-collapse.collapsing),
-  &:has(.dropdown .btn-dropdown[aria-expanded='true']) {
+  &:has(.dropdown .btn-dropdown[aria-expanded="true"]) {
     z-index: 9999;
     position: relative;
   }
@@ -526,4 +526,9 @@ pre {
   @media screen and (max-width: 768px) {
     height: 500px;
   }
+}
+
+.tab-content .card-box-sizing-columns {
+  max-height: none !important;
+  overflow: visible !important;
 }

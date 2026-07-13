@@ -25,11 +25,105 @@ import {
   VERTICAL_NOTICE,
   VERTICAL_NOTICE_TRUNCATE,
 } from './code-views';
+import { title } from 'process';
 
 const basePath = '/Obelisco-V2';
 
 const CardDocs: React.FC = () => {
   const SECTIONS_DEV = [
+    {
+      title: 'Disposición',
+      content: (
+        // <div className="card-box-sizing-columns">
+        <div className="container">
+          {/* <div className="card-vertical-box-sizing"> */}
+          <div className="card-items-3">
+            <div className="col">
+              <div className="card card-img-bg">
+                <div className="card-badges-bg">
+                  <span className="badge badge-s-default">Etiqueta</span>
+                  <span className="badge badge-s-default">Etiqueta</span>
+                </div>
+                <Image
+                  src={`${basePath}/images/tarjetas/tarjeta_de_impacto_visual.jpg`}
+                  alt="descripción de imagen"
+                  width={348}
+                  height={196}
+                />
+                <p className="headline-lg">Título de la tarjeta</p>
+                <a href="#" aria-label="Descripcion de tarjetas"></a>
+              </div>
+            </div>
+            <div className="col">
+              <div className="card card-img-bg">
+                <div className="card-badges-bg">
+                  <span className="badge badge-s-default">Etiqueta</span>
+                  <span className="badge badge-s-default">Etiqueta</span>
+                </div>
+                <Image
+                  src={`${basePath}/images/tarjetas/tarjeta_de_impacto_visual.jpg`}
+                  alt="descripción de imagen"
+                  width={348}
+                  height={196}
+                />
+                <p className="headline-lg">Título de la tarjeta</p>
+                <a href="#" aria-label="Descripcion de tarjetas"></a>
+              </div>
+            </div>
+            <div className="col">
+              <div className="card card-img-bg">
+                <div className="card-badges-bg">
+                  <span className="badge badge-s-default">Etiqueta</span>
+                  <span className="badge badge-s-default">Etiqueta</span>
+                </div>
+                <Image
+                  src={`${basePath}/images/tarjetas/tarjeta_de_impacto_visual.jpg`}
+                  alt="descripción de imagen"
+                  width={348}
+                  height={196}
+                />
+                <p className="headline-lg">Título de la tarjeta</p>
+                <a href="#" aria-label="Descripcion de tarjetas"></a>
+              </div>
+            </div>
+            <div className="col">
+              <div className="card card-img-bg">
+                <div className="card-badges-bg">
+                  <span className="badge badge-s-default">Etiqueta</span>
+                  <span className="badge badge-s-default">Etiqueta</span>
+                </div>
+                <Image
+                  src={`${basePath}/images/tarjetas/tarjeta_de_impacto_visual.jpg`}
+                  alt="descripción de imagen"
+                  width={348}
+                  height={196}
+                />
+                <p className="headline-lg">Título de la tarjeta</p>
+                <a href="#" aria-label="Descripcion de tarjetas"></a>
+              </div>
+            </div>
+            <div className="col">
+              <div className="card card-img-bg">
+                <div className="card-badges-bg">
+                  <span className="badge badge-s-default">Etiqueta</span>
+                  <span className="badge badge-s-default">Etiqueta</span>
+                </div>
+                <Image
+                  src={`${basePath}/images/tarjetas/tarjeta_de_impacto_visual.jpg`}
+                  alt="descripción de imagen"
+                  width={348}
+                  height={196}
+                />
+                <p className="headline-lg">Título de la tarjeta</p>
+                <a href="#" aria-label="Descripcion de tarjetas"></a>
+              </div>
+            </div>
+          </div>
+          {/* </div> */}
+          {/* </div> */}
+        </div>
+      ),
+    },
     {
       title: 'Horizontal',
       firstTitle: true,
@@ -768,8 +862,170 @@ const CardDocs: React.FC = () => {
       title: 'Tarjeta de impacto visual',
       content: (
         <CodeBox codeHTML={TARJETAS_IMPACTO_VISUAL}>
+          <div className="card-box-sizing-columns">
+            <div className="container">
+              <div className="card-vertical-box-sizing">
+                <div className="card card-img-bg">
+                  <div className="card-badges-bg">
+                    <span className="badge badge-s-default">Etiqueta</span>
+                    <span className="badge badge-s-default">Etiqueta</span>
+                  </div>
+                  <Image
+                    src={`${basePath}/images/tarjetas/tarjeta_de_impacto_visual.jpg`}
+                    alt="descripción de imagen"
+                    width={348}
+                    height={196}
+                  />
+                  <p className="headline-lg">Título de la tarjeta</p>
+                  <a href="#" aria-label="Descripcion de tarjetas"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </CodeBox>
+      ),
+    },
+    {
+      title: 'Disposición',
+      content: (
+        <CodeBox codeHTML={HORIZONTAL_ICON}>
+          <div className="card-box-sizing-columns">
+            <div className="container">
+              <div className="card-items-3">
+                <div className="col">
+                  <div className="card card-img-bg">
+                    <div className="card-badges-bg">
+                      <span className="badge badge-s-default">Etiqueta</span>
+                      <span className="badge badge-s-default">Etiqueta</span>
+                    </div>
+                    <Image
+                      src={`${basePath}/images/tarjetas/tarjeta_de_impacto_visual.jpg`}
+                      alt="descripción de imagen"
+                      width={348}
+                      height={196}
+                    />
+                    <p className="headline-lg">Título de la tarjeta</p>
+                    <a href="#" aria-label="Descripcion de tarjetas"></a>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="card card-img-bg">
+                    <div className="card-badges-bg">
+                      <span className="badge badge-s-default">Etiqueta</span>
+                      <span className="badge badge-s-default">Etiqueta</span>
+                    </div>
+                    <Image
+                      src={`${basePath}/images/tarjetas/tarjeta_de_impacto_visual.jpg`}
+                      alt="descripción de imagen"
+                      width={348}
+                      height={196}
+                    />
+                    <p className="headline-lg">Título de la tarjeta</p>
+                    <a href="#" aria-label="Descripcion de tarjetas"></a>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="card card-img-bg">
+                    <div className="card-badges-bg">
+                      <span className="badge badge-s-default">Etiqueta</span>
+                      <span className="badge badge-s-default">Etiqueta</span>
+                    </div>
+                    <Image
+                      src={`${basePath}/images/tarjetas/tarjeta_de_impacto_visual.jpg`}
+                      alt="descripción de imagen"
+                      width={348}
+                      height={196}
+                    />
+                    <p className="headline-lg">Título de la tarjeta</p>
+                    <a href="#" aria-label="Descripcion de tarjetas"></a>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="card card-img-bg">
+                    <div className="card-badges-bg">
+                      <span className="badge badge-s-default">Etiqueta</span>
+                      <span className="badge badge-s-default">Etiqueta</span>
+                    </div>
+                    <Image
+                      src={`${basePath}/images/tarjetas/tarjeta_de_impacto_visual.jpg`}
+                      alt="descripción de imagen"
+                      width={348}
+                      height={196}
+                    />
+                    <p className="headline-lg">Título de la tarjeta</p>
+                    <a href="#" aria-label="Descripcion de tarjetas"></a>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="card card-img-bg">
+                    <div className="card-badges-bg">
+                      <span className="badge badge-s-default">Etiqueta</span>
+                      <span className="badge badge-s-default">Etiqueta</span>
+                    </div>
+                    <Image
+                      src={`${basePath}/images/tarjetas/tarjeta_de_impacto_visual.jpg`}
+                      alt="descripción de imagen"
+                      width={348}
+                      height={196}
+                    />
+                    <p className="headline-lg">Título de la tarjeta</p>
+                    <a href="#" aria-label="Descripcion de tarjetas"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </CodeBox>
+      ),
+    },
+    {
+      subtitle: 'Desplazable',
+      content: (
+        <CodeBox codeHTML={DISPOSITION_SCROLL}>
           <div className="container">
-            <div className="card-vertical-box-sizing">
+            <div className="responsive-scroll vertical-cards-container" tabIndex={0}>
+              <div className="card card-img-bg">
+                <div className="card-badges-bg">
+                  <span className="badge badge-s-default">Etiqueta</span>
+                  <span className="badge badge-s-default">Etiqueta</span>
+                </div>
+                <Image
+                  src={`${basePath}/images/tarjetas/tarjeta_de_impacto_visual.jpg`}
+                  alt="descripción de imagen"
+                  width={348}
+                  height={196}
+                />
+                <p className="headline-lg">Título de la tarjeta</p>
+                <a href="#" aria-label="Descripcion de tarjetas"></a>
+              </div>
+              <div className="card card-img-bg">
+                <div className="card-badges-bg">
+                  <span className="badge badge-s-default">Etiqueta</span>
+                  <span className="badge badge-s-default">Etiqueta</span>
+                </div>
+                <Image
+                  src={`${basePath}/images/tarjetas/tarjeta_de_impacto_visual.jpg`}
+                  alt="descripción de imagen"
+                  width={348}
+                  height={196}
+                />
+                <p className="headline-lg">Título de la tarjeta</p>
+                <a href="#" aria-label="Descripcion de tarjetas"></a>
+              </div>
+              <div className="card card-img-bg">
+                <div className="card-badges-bg">
+                  <span className="badge badge-s-default">Etiqueta</span>
+                  <span className="badge badge-s-default">Etiqueta</span>
+                </div>
+                <Image
+                  src={`${basePath}/images/tarjetas/tarjeta_de_impacto_visual.jpg`}
+                  alt="descripción de imagen"
+                  width={348}
+                  height={196}
+                />
+                <p className="headline-lg">Título de la tarjeta</p>
+                <a href="#" aria-label="Descripcion de tarjetas"></a>
+              </div>
               <div className="card card-img-bg">
                 <div className="card-badges-bg">
                   <span className="badge badge-s-default">Etiqueta</span>
@@ -789,9 +1045,7 @@ const CardDocs: React.FC = () => {
         </CodeBox>
       ),
     },
-    {
-      title: '',
-    },
+    { title: '', content: <></> },
   ];
 
   const SECTION_UX = [
@@ -1623,20 +1877,20 @@ const CardDocs: React.FC = () => {
         ]}
       />
       <Tabs
-        sectionUx={SECTION_UX}
+        // sectionUx={SECTION_UX}
         sectionDev={SECTIONS_DEV}
-        customSections={[
-          {
-            title: 'Especificaciones',
-            id: 'section-specs',
-            sectionContent: SPECS,
-          },
-          {
-            title: 'Accesibilidad',
-            id: 'section-accessibility',
-            sectionContent: ACCESSIBILITY,
-          },
-        ]}
+        // customSections={[
+        //   {
+        //     title: 'Especificaciones',
+        //     id: 'section-specs',
+        //     sectionContent: SPECS,
+        //   },
+        //   {
+        //     title: 'Accesibilidad',
+        //     id: 'section-accessibility',
+        //     sectionContent: ACCESSIBILITY,
+        //   },
+        // ]}
       />
     </>
   );

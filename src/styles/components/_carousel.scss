@@ -482,6 +482,7 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     }
 
     @media (width >= 992px) and (width < 1200px) {
+      // Solo para carrusel de destacados
       &:has(.panel-horizontal-content) {
         .carousel-inner {
           padding-inline: 48px;
@@ -495,6 +496,23 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
         .carousel-control-next {
           right: 60px;
         }
+      }
+    }
+  }
+
+  // solo para carrusel de tarjetas
+  @media (width >= 992px) and (width < 1200px) {
+    &.cards {
+      .carousel-inner {
+        padding-inline: 64px;
+      }
+
+      .carousel-control-prev {
+        left: 64px;
+      }
+
+      .carousel-control-next {
+        right: 64px;
       }
     }
   }

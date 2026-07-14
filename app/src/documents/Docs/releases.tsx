@@ -33,16 +33,12 @@ const ReleasesComponents: React.FC = () => {
               <strong>Correción (fix) en Destacado container</strong>.
               <ul>
                 <li>
-                  El componente con multimedia tiene una altura mínima de <code>432px</code>, sin multimedia{' '}
+                  El componente con multimedia pasa a tener una altura mínima de <code>432px</code>y sin multimedia{' '}
                   <code>264px</code>.
                 </li>
                 <li>
-                  Se crea 1 clase para manipular las imagenes <strong>grandes</strong>, del mismo o más tamaño que el
-                  alto mínimo: <code>.panel-img-edge</code>, se usa junto con
-                  <code>.panel-img</code>
-                  <br />
-                  Lo que hace es llevar la imagen a los bordes del Destacado, para dar un efecto de que
-                  &quot;sobresale&quot; la imagen.
+                  Se crea la clase <code>.panel-img-edge</code> para manipular las imagenes grandes, del mismo o mayor tamaño que el alto mínimo. 
+                  Esta nueva clase se utiliza junto con <code>.panel-img</code>.
                 </li>
               </ul>
             </li>

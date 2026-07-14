@@ -37,8 +37,8 @@ const ReleasesComponents: React.FC = () => {
                   <code>264px</code>.
                 </li>
                 <li>
-                  Se crea la clase <code>.panel-img-edge</code> para manipular las imagenes grandes, del mismo o mayor tamaño que el alto mínimo. 
-                  Esta nueva clase se utiliza junto con <code>.panel-img</code>.
+                  Se crea la clase <code>.panel-img-edge</code> para manipular las imagenes grandes, del mismo o mayor
+                  tamaño que el alto mínimo. Esta nueva clase se utiliza junto con <code>.panel-img</code>.
                 </li>
               </ul>
             </li>

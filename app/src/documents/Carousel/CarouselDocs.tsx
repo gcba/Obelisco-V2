@@ -1301,8 +1301,8 @@ const CarouselDocs: React.FC = () => {
             <ZoomContainer>
               <div id="carousel-cards-dark" className="carousel cards slide bg-dark">
                 <div className="title">
-                  <h4 className="m-0">Encabezado de la seccion</h4>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
+                  <h4 className="m-0 text-white">Encabezado de la seccion</h4>
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="link-white">
                     Enlace predeterminado
                   </a>
                 </div>
@@ -1981,8 +1981,8 @@ const CarouselDocs: React.FC = () => {
                     ></button>
                   </div>
 
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="carousel-link">
-                    Enlace predeterminado
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="carousel-link ">
+                    Mostrar todos los eventos
                   </a>
                 </div>
               </ZoomContainer>

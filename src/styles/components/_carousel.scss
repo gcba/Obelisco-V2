@@ -101,7 +101,7 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     right: 100px;
   }
 }
-
+$max-width: 1000px;
 @function container-alignment($max-width) {
   @return calc((100% - #{$max-width}) / 2 + 0.75rem);
 }
@@ -294,7 +294,7 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
         flex-wrap: nowrap;
         overflow: auto hidden;
         column-gap: 24px;
-        padding: 0 0 24px;
+        padding: 2px 2px 24px;
         align-items: stretch;
 
         .carousel-item {
@@ -375,13 +375,14 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
       }
     }
 
-    .responsive-scroll {
-      padding: 0;
-    }
+    // .responsive-scroll {
+    //   padding: 0;
+    // }
   }
 
   // $container-max-width: 720px;
   $container-max-width: 1000px;
+  $container-max-width-992-1200: 890px;
   $carousel-control-offset: 24px;
 
   @function carousel-control-position($max-width, $offset) {
@@ -395,7 +396,7 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
       left: max(
         16px,
         carousel-control-position(
-          $container-max-width,
+          $container-max-width-992-1200,
           $carousel-control-offset
         )
       );
@@ -405,7 +406,7 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
       right: max(
         16px,
         carousel-control-position(
-          $container-max-width,
+          $container-max-width-992-1200,
           $carousel-control-offset
         )
       );
@@ -417,14 +418,14 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
       max-width: calc($container-max-width);
 
       .carousel-item {
-        padding: 0 8px;
+        padding: 2px 8px;
       }
     }
 
     .title,
     .carousel-link {
-      padding-left: container-alignment($container-max-width);
-      padding-right: container-alignment($container-max-width);
+      padding-left: container-alignment($container-max-width-992-1200);
+      padding-right: container-alignment($container-max-width-992-1200);
     }
 
     .panel-horizontal-content {

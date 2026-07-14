@@ -434,7 +434,7 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
   }
 
   // $container-max-width: 720px;
-  $container-max-width: 1140px;
+  $container-max-width: 1000px;
   $carousel-control-offset: 24px;
 
   @function carousel-control-position($max-width, $offset) {

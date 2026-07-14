@@ -797,7 +797,6 @@ const CarouselDocs: React.FC = () => {
                           </div>
                         </div>
                       </div>
-                      y
                     </div>
                   </div>
                 </div>

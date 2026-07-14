@@ -37,10 +37,12 @@ const ReleasesComponents: React.FC = () => {
                   <code>264px</code>.
                 </li>
                 <li>
-                  Se crean 2 clases par manipular las imagenes:{' '}
-                  <code>
-                    .panel-img-ilustracion y <code>.panel-img...</code>
-                  </code>
+                  Se crea 1 clase para manipular las imagenes <strong>grandes</strong>, del mismo o más tamaño que el
+                  alto mínimo: <code>.panel-img-edge</code>, se usa junto con
+                  <code>.panel-img</code>
+                  <br />
+                  Lo que hace es llevar la imagen a los bordes del Destacado, para dar un efecto de que
+                  &quot;sobresale&quot; la imagen.
                 </li>
               </ul>
             </li>

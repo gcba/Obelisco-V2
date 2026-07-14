@@ -546,10 +546,7 @@ const HeaderDocs: React.FC = () => {
               <div className="hero-box-sizing ">
                 <div className="container-headers">
                   {/* Header logo y navegación ⬇ */}
-                  <header
-                    className="o-header hero-navbar navbar position-absolute top-0 start-0 z-3 w-100"
-                    role="banner"
-                  >
+                  <header className="o-header hero-navbar navbar" role="banner">
                     <LinkClient href="#main" className="skip-to-main-content-link">
                       Saltar al contenido principal
                     </LinkClient>
@@ -714,22 +711,26 @@ const HeaderDocs: React.FC = () => {
                     {/* capa gradiente */}
                     <div className="ob-bg"></div>
 
-                    {/* contenido */}
-                    <div className="container py-5">
-                      <nav aria-label="breadcrumb">
-                        <ol className="breadcrumb">
-                          <li className="breadcrumb-item">
-                            <a href="#">Buenos aires</a>
-                          </li>
-                          <li className="breadcrumb-item">
-                            <a href="#">Jefatura de gabinete</a>
-                          </li>
-                        </ol>
-                      </nav>
+                    {/* contenido, título, bajada, accionables */}
+                    <div className="container">
                       <div className="row">
-                        <div className="col-12 col-lg-8">
-                          <div className="mt-2 pt-1">
-                            <h1 className="mb-3">Secretaría de Innovación y Transformación Digital</h1>
+                        <nav aria-label="breadcrumb">
+                          <ol className="breadcrumb">
+                            <li className="breadcrumb-item">
+                              <a href="#">Buenos aires</a>
+                            </li>
+                            <li className="breadcrumb-item">
+                              <a href="#">Jefatura de gabinete</a>
+                            </li>
+                          </ol>
+                        </nav>
+                      </div>
+                      <div className="row">
+                        <div className="col-12 col-lg-8 w-100">
+                          {/* <div className="mt-2 pt-1"> */}
+                          <div>
+                            {/* <h1 className="mb-3">Secretaría de Innovación y Transformación Digital</h1> */}
+                            <h1>Secretaría de Innovación y Transformación Digital</h1>
                             <p>
                               Trabajamos en soluciones integrales para mejorar la calidad de vida de los vecinos y
                               visitantes de la Ciudad, a partir de la tecnología y la innovación.
@@ -790,6 +791,7 @@ const HeaderDocs: React.FC = () => {
                         </div>
                       </div>
                     </div>
+                    {/* contenido, título, bajada, accionables */}
                   </header>
                 </div>
               </div>

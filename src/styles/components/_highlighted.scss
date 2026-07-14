@@ -28,6 +28,11 @@
 
     .panel-title {
       margin-bottom: 8px;
+      @extend .ellipsis-2;
+    }
+
+    .panel-text {
+      @extend .ellipsis-4;
     }
 
     .panel-footer {
@@ -161,7 +166,7 @@
       height: auto;
       min-height: unset;
       padding: 0;
-      margin-top: 20px;
+      margin-top: 32px;
     }
   }
 }
@@ -332,8 +337,7 @@
   }
 }
 /* COMPONENTE DEPRECADO - BLOQUE DE TRAMITE */
-
-// Destacado container gradiente
+// DESTACADO CONTAINER GRADIENTE
 $gradient-colors: (
   'cyan': (
     $sky-900,
@@ -354,6 +358,9 @@ $gradient-text-colors: (
   background: linear-gradient(180deg, $color1 0%, $color2 100%);
 }
 
+// DESTACADO CONTAINER GRADIENTE
+
+// Destacado container
 .panel-horizontal-container {
   @extend .panel-horizontal-content;
   padding: 16px;
@@ -372,6 +379,7 @@ $gradient-text-colors: (
     padding: 64px;
   }
 
+  // Destacado container DARK
   &.bg-dark {
     color: $white;
 
@@ -402,35 +410,35 @@ $gradient-text-colors: (
       border-radius: $border-radius-5xl;
     }
 
-    .panel-img-full-height {
-      width: auto;
-      max-width: unset;
-      height: 100%;
-      aspect-ratio: unset;
-      object-fit: contain;
-      align-self: stretch;
-      max-height: 300px;
+    // .panel-img-full-height {
+    //   width: auto;
+    //   max-width: unset;
+    //   height: 100%;
+    //   aspect-ratio: unset;
+    //   object-fit: contain;
+    //   align-self: stretch;
+    //   max-height: 300px;
 
-      @include media-breakpoint-up(md) {
-        max-height: 400px;
-      }
+    //   @include media-breakpoint-up(md) {
+    //     max-height: 400px;
+    //   }
 
-      @include media-breakpoint-up(xl) {
-        max-height: unset;
-      }
-    }
+    //   @include media-breakpoint-up(xl) {
+    //     max-height: unset;
+    //   }
+    // }
 
-    .panel-img-object-fit-none {
-      object-fit: none;
-    }
+    // .panel-img-object-fit-none {
+    //   object-fit: none;
+    // }
 
-    .panel-img-object-fit-cover {
-      object-fit: cover;
-    }
+    // .panel-img-object-fit-cover {
+    //   object-fit: cover;
+    // }
 
-    .panel-img-object-fit-fill {
-      object-fit: fill;
-    }
+    // .panel-img-object-fit-fill {
+    //   object-fit: fill;
+    // }
 
     .panel-body {
       color: $body-color;
@@ -444,10 +452,11 @@ $gradient-text-colors: (
       }
 
       .panel-footer {
-        margin-top: 20px;
+        margin-top: 32px;
       }
     }
 
+    // Destacado container sin multimedia
     &:not(:has(.panel-img)) {
       display: block;
 
@@ -459,38 +468,103 @@ $gradient-text-colors: (
     }
   }
 
+  // DESTACADO CONTAINER GRADIENTE
   @each $name, $color in $gradient-colors {
     &.bg-gradient-#{$name} {
       @include bg-gradient-color(list.nth($color, 1), list.nth($color, 2));
-      position: relative;
       overflow: hidden;
 
       .panel-horizontal {
         .panel-body {
           color: map-get($gradient-text-colors, $name);
+
+          @include media-breakpoint-up(xl) {
+            padding-right: 64px;
+            max-width: 50%;
+          }
         }
 
-        &:has(.panel-img) {
+        &.panel-inverted {
           .panel-body {
-            position: relative;
-            padding: 16px;
-
-            @include media-breakpoint-up(sm) {
-              padding: 36px;
-            }
-
             @include media-breakpoint-up(xl) {
-              padding: 64px 64px 64px 0;
+              padding-left: 64px;
+              padding-right: 0;
               max-width: 50%;
             }
           }
+        }
 
-          &.panel-inverted {
-            .panel-body {
-              @include media-breakpoint-up(xl) {
-                padding: 64px 0 64px 64px;
-              }
-            }
+        .panel-img {
+          flex: 0 0 538px;
+          width: 538px;
+          max-width: 100%;
+          height: auto;
+          object-fit: contain;
+          object-position: center;
+          display: block;
+          margin: 0 auto;
+        }
+
+        // edge - borde. Con esta clase clase si la imagen es GRANDE, llega a los bordes.
+        .panel-img-edge {
+          width: auto;
+          height: auto;
+          object-fit: none;
+          overflow: initial;
+          align-self: center;
+        }
+
+        @include media-breakpoint-down(xl) {
+          display: flex;
+          flex-direction: column-reverse;
+          gap: 32px;
+
+          .panel-body {
+            max-width: 100%;
+            width: 100%;
+
+            // padding-right: 0;
+            padding: 36px;
+          }
+
+          .panel-img {
+            width: 100%;
+
+            // max-width: 538px;
+            height: auto;
+            object-fit: contain;
+            object-position: center;
+          }
+        }
+
+        @include media-breakpoint-down(sm) {
+          .panel-body {
+            max-width: 100%;
+            width: 100%;
+
+            // padding-right: 0;
+            padding: 16px;
+          }
+        }
+
+        &:has(.panel-img) {
+          min-height: 432px;
+        }
+
+        // Destacado container sin multimedia
+        &:not(:has(.panel-img)) {
+          width: 100%;
+
+          // min-height: 264px; // min-height no va acá, va en panel-horizontal-container
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          // background-color: red;
+          .panel-body {
+            width: 100%;
+            max-width: 100%;
           }
         }
       }
@@ -498,4 +572,4 @@ $gradient-text-colors: (
   }
 }
 
-// Destacado container gradiente
+// Destacado container

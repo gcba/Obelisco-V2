@@ -813,9 +813,11 @@ const HighlightedDocs: React.FC = () => {
                     </div>
 
                     <Image
-                      src={`${basePath}/images/highlighted/destacado_container_2_332.png`}
+                      // src={`${basePath}/images/highlighted/destacado_container_2_332.png`}
+                      // src={`${basePath}/images/highlighted/destacado_multimedia_container.png`}
+                      src={`${basePath}/images/highlighted/destacado_multimedia_container_353_450.png`}
                       alt="descripción de imagen"
-                      className="panel-img"
+                      className="panel-img panel-img-edge"
                       width={538}
                       height={304}
                     ></Image>
@@ -881,10 +883,18 @@ const HighlightedDocs: React.FC = () => {
                   <div className="panel-horizontal">
                     <div className="panel-body">
                       <h2 className="panel-title">Título del destacado</h2>
+                      {/* <h2 className="panel-title">
+                        Título del destacado Título del destacado Título del destacado Título del destacado Título del
+                        destacado Título del destacado Título del destacado Título del destacado Título del destacado
+                      </h2> */}
                       <p className="panel-text">
-                        Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
+                        Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas.
+                        {/* No puede contener
                         negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
-                        líneas. No puede contener negritas ni enlaces
+                        líneas. No puede contener negritas ni enlaces. No puede contener negritas ni enlaces. Este es el
+                        cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni
+                        enlaces. No puede contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser
+                        breve y conciso, de pocas líneas. No puede contener negritas ni enlaces */}
                       </p>
                       <div className="panel-footer">
                         <LinkClient className="btn btn-light btn-lg">Botón</LinkClient>

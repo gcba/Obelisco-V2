@@ -11997,6 +11997,22 @@ textarea.form-control-lg {
 .card-items-3 .col .card {
   height: 100%;
 }
+.card-items-2 .col .card:not(.card-img-bg),
+.card-items-3 .col .card:not(.card-img-bg) {
+  height: 100%;
+}
+.card-items-2 .col .card.card-img-bg,
+.card-items-3 .col .card.card-img-bg {
+  width: 100%;
+  max-width: none;
+}
+@media (max-width: 575.98px) {
+  .card-items-2 .col .card.card-img-bg,
+  .card-items-3 .col .card.card-img-bg {
+    max-width: 346px;
+    margin-inline: auto;
+  }
+}
 
 .highlighted-items-2 {
   row-gap: 2rem;
@@ -12274,7 +12290,7 @@ blockquote .author {
   line-clamp: 1;
 }
 
-.ellipsis-2 {
+.ellipsis-2, .panel-lateral .panel-body .panel-title, .panel-horizontal-content .panel-horizontal .panel-body .panel-title, .panel-horizontal-container .panel-horizontal .panel-body .panel-title, .panel-vertical .panel-body .panel-title {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -12292,7 +12308,7 @@ blockquote .author {
   line-clamp: 3;
 }
 
-.ellipsis-4 {
+.ellipsis-4, .panel-lateral .panel-body .panel-text, .panel-horizontal-content .panel-horizontal .panel-body .panel-text, .panel-horizontal-container .panel-horizontal .panel-body .panel-text, .panel-vertical .panel-body .panel-text {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -19838,7 +19854,7 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
     height: auto;
     min-height: unset;
     padding: 0;
-    margin-top: 20px;
+    margin-top: 32px;
   }
 }
 
@@ -20234,34 +20250,6 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
 .panel-horizontal-container .panel-horizontal .panel-img {
   border-radius: 24px;
 }
-.panel-horizontal-container .panel-horizontal .panel-img-full-height {
-  width: auto;
-  max-width: unset;
-  height: 100%;
-  aspect-ratio: unset;
-  object-fit: contain;
-  align-self: stretch;
-  max-height: 300px;
-}
-@media (min-width: 768px) {
-  .panel-horizontal-container .panel-horizontal .panel-img-full-height {
-    max-height: 400px;
-  }
-}
-@media (min-width: 1200px) {
-  .panel-horizontal-container .panel-horizontal .panel-img-full-height {
-    max-height: unset;
-  }
-}
-.panel-horizontal-container .panel-horizontal .panel-img-object-fit-none {
-  object-fit: none;
-}
-.panel-horizontal-container .panel-horizontal .panel-img-object-fit-cover {
-  object-fit: cover;
-}
-.panel-horizontal-container .panel-horizontal .panel-img-object-fit-fill {
-  object-fit: fill;
-}
 .panel-horizontal-container .panel-horizontal .panel-body {
   color: #101e37;
 }
@@ -20269,7 +20257,7 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
   margin-bottom: 0;
 }
 .panel-horizontal-container .panel-horizontal .panel-body .panel-footer {
-  margin-top: 20px;
+  margin-top: 32px;
 }
 .panel-horizontal-container .panel-horizontal:not(:has(.panel-img)) {
   display: block;
@@ -20281,59 +20269,155 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
 }
 .panel-horizontal-container.bg-gradient-cyan {
   background: linear-gradient(180deg, #002733 0%, #8ce1d7 100%);
-  position: relative;
   overflow: hidden;
 }
 .panel-horizontal-container.bg-gradient-cyan .panel-horizontal .panel-body {
   color: #ffffff;
 }
-.panel-horizontal-container.bg-gradient-cyan .panel-horizontal:has(.panel-img) .panel-body {
-  position: relative;
-  padding: 16px;
-}
-@media (min-width: 576px) {
-  .panel-horizontal-container.bg-gradient-cyan .panel-horizontal:has(.panel-img) .panel-body {
-    padding: 36px;
-  }
-}
 @media (min-width: 1200px) {
-  .panel-horizontal-container.bg-gradient-cyan .panel-horizontal:has(.panel-img) .panel-body {
-    padding: 64px 64px 64px 0;
+  .panel-horizontal-container.bg-gradient-cyan .panel-horizontal .panel-body {
+    padding-right: 64px;
     max-width: 50%;
   }
 }
 @media (min-width: 1200px) {
-  .panel-horizontal-container.bg-gradient-cyan .panel-horizontal:has(.panel-img).panel-inverted .panel-body {
-    padding: 64px 0 64px 64px;
+  .panel-horizontal-container.bg-gradient-cyan .panel-horizontal.panel-inverted .panel-body {
+    padding-left: 64px;
+    padding-right: 0;
+    max-width: 50%;
   }
+}
+.panel-horizontal-container.bg-gradient-cyan .panel-horizontal .panel-img {
+  flex: 0 0 538px;
+  width: 538px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  margin: 0 auto;
+}
+.panel-horizontal-container.bg-gradient-cyan .panel-horizontal .panel-img-edge {
+  width: auto;
+  height: auto;
+  object-fit: none;
+  overflow: initial;
+  align-self: center;
+}
+@media (max-width: 1199.98px) {
+  .panel-horizontal-container.bg-gradient-cyan .panel-horizontal {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 32px;
+  }
+  .panel-horizontal-container.bg-gradient-cyan .panel-horizontal .panel-body {
+    max-width: 100%;
+    width: 100%;
+    padding: 36px;
+  }
+  .panel-horizontal-container.bg-gradient-cyan .panel-horizontal .panel-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+@media (max-width: 575.98px) {
+  .panel-horizontal-container.bg-gradient-cyan .panel-horizontal .panel-body {
+    max-width: 100%;
+    width: 100%;
+    padding: 16px;
+  }
+}
+.panel-horizontal-container.bg-gradient-cyan .panel-horizontal:has(.panel-img) {
+  min-height: 432px;
+}
+.panel-horizontal-container.bg-gradient-cyan .panel-horizontal:not(:has(.panel-img)) {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.panel-horizontal-container.bg-gradient-cyan .panel-horizontal:not(:has(.panel-img)) .panel-body {
+  width: 100%;
+  max-width: 100%;
 }
 .panel-horizontal-container.bg-gradient-blue {
   background: linear-gradient(180deg, #101e37 0%, #336acc 100%);
-  position: relative;
   overflow: hidden;
 }
 .panel-horizontal-container.bg-gradient-blue .panel-horizontal .panel-body {
   color: #ffffff;
 }
-.panel-horizontal-container.bg-gradient-blue .panel-horizontal:has(.panel-img) .panel-body {
-  position: relative;
-  padding: 16px;
-}
-@media (min-width: 576px) {
-  .panel-horizontal-container.bg-gradient-blue .panel-horizontal:has(.panel-img) .panel-body {
-    padding: 36px;
-  }
-}
 @media (min-width: 1200px) {
-  .panel-horizontal-container.bg-gradient-blue .panel-horizontal:has(.panel-img) .panel-body {
-    padding: 64px 64px 64px 0;
+  .panel-horizontal-container.bg-gradient-blue .panel-horizontal .panel-body {
+    padding-right: 64px;
     max-width: 50%;
   }
 }
 @media (min-width: 1200px) {
-  .panel-horizontal-container.bg-gradient-blue .panel-horizontal:has(.panel-img).panel-inverted .panel-body {
-    padding: 64px 0 64px 64px;
+  .panel-horizontal-container.bg-gradient-blue .panel-horizontal.panel-inverted .panel-body {
+    padding-left: 64px;
+    padding-right: 0;
+    max-width: 50%;
   }
+}
+.panel-horizontal-container.bg-gradient-blue .panel-horizontal .panel-img {
+  flex: 0 0 538px;
+  width: 538px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  margin: 0 auto;
+}
+.panel-horizontal-container.bg-gradient-blue .panel-horizontal .panel-img-edge {
+  width: auto;
+  height: auto;
+  object-fit: none;
+  overflow: initial;
+  align-self: center;
+}
+@media (max-width: 1199.98px) {
+  .panel-horizontal-container.bg-gradient-blue .panel-horizontal {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 32px;
+  }
+  .panel-horizontal-container.bg-gradient-blue .panel-horizontal .panel-body {
+    max-width: 100%;
+    width: 100%;
+    padding: 36px;
+  }
+  .panel-horizontal-container.bg-gradient-blue .panel-horizontal .panel-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+@media (max-width: 575.98px) {
+  .panel-horizontal-container.bg-gradient-blue .panel-horizontal .panel-body {
+    max-width: 100%;
+    width: 100%;
+    padding: 16px;
+  }
+}
+.panel-horizontal-container.bg-gradient-blue .panel-horizontal:has(.panel-img) {
+  min-height: 432px;
+}
+.panel-horizontal-container.bg-gradient-blue .panel-horizontal:not(:has(.panel-img)) {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.panel-horizontal-container.bg-gradient-blue .panel-horizontal:not(:has(.panel-img)) .panel-body {
+  width: 100%;
+  max-width: 100%;
 }
 
 .accordion .accordion-item:not(:last-of-type) {
@@ -20675,6 +20759,74 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
     height: 8rem;
   }
 }
+.card.card-img-bg {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  max-height: 500px;
+  min-height: 500px;
+  max-width: 346px;
+  padding: 24px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.card.card-img-bg p.headline-lg, .card.card-img-bg .group-access .card-access .card-access-body p.h4, .card.card-img-bg .group-access .card-access .card-access-body .stepper-content .stepper p.step-title, .stepper-content .stepper .card.card-img-bg .group-access .card-access .card-access-body p.step-title, .group-access .card-access .card-access-body .card.card-img-bg p.h4, .group-access .card-access .card-access-body .card.card-img-bg .stepper-content .stepper p.step-title, .stepper-content .stepper .group-access .card-access .card-access-body .card.card-img-bg p.step-title, .card.card-img-bg .group-access .card-access .card-access-body p.card-access-title, .group-access .card-access .card-access-body .card.card-img-bg p.card-access-title, .card.card-img-bg .map .map-body p.map-title, .map .map-body .card.card-img-bg p.map-title, .card.card-img-bg .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption p.h5, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .card.card-img-bg p.h5, .card.card-img-bg .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body p.h5, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .card.card-img-bg p.h5, .card.card-img-bg .navbar.o-header .header-container .navbar-collapse .navbar-content .navbar-sections p.navbar-sections-title, .navbar.o-header .header-container .navbar-collapse .navbar-content .navbar-sections .card.card-img-bg p.navbar-sections-title, .card.card-img-bg .navbar.o-header .header-container .navbar-collapse .navbar-user-mobile p.navbar-user-mobile-title, .navbar.o-header .header-container .navbar-collapse .navbar-user-mobile .card.card-img-bg p.navbar-user-mobile-title, .card.card-img-bg .navbar.o-header .header-container .navbar-collapse .navbar-content-extended p.navbar-sections-title, .navbar.o-header .header-container .navbar-collapse .navbar-content-extended .card.card-img-bg p.navbar-sections-title, .card.card-img-bg p.list-steps-item::before, .card.card-img-bg .group-access .card-access .card-access-body .list-steps.list-steps-lg .list-steps-item p.h3, .group-access .card-access .card-access-body .list-steps.list-steps-lg .list-steps-item .card.card-img-bg p.h3, .card.card-img-bg .list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body p.h3, .list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body .card.card-img-bg p.h3,
+.card.card-img-bg .group-access .card-access .card-access-body .list-steps.list-steps-lg .list-steps-item p.list-steps-item-title,
+.group-access .card-access .card-access-body .list-steps.list-steps-lg .list-steps-item .card.card-img-bg p.list-steps-item-title,
+.card.card-img-bg .list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body p.list-steps-item-title,
+.list-steps.list-steps-lg .list-steps-item .group-access .card-access .card-access-body .card.card-img-bg p.list-steps-item-title, .card.card-img-bg .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body p.panel-title, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body .card.card-img-bg p.panel-title, .card.card-img-bg .panel-vertical .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption p.panel-title, .panel-vertical .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .card.card-img-bg p.panel-title,
+.card.card-img-bg .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body-dark p.panel-title,
+.group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-vertical .panel-body-dark .card.card-img-bg p.panel-title,
+.card.card-img-bg .panel-vertical .panel-body-dark .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption p.panel-title,
+.panel-vertical .panel-body-dark .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .card.card-img-bg p.panel-title, .card.card-img-bg .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-vertical .panel-body p.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-vertical .panel-body .card.card-img-bg p.panel-title, .card.card-img-bg .panel-vertical .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body p.panel-title, .panel-vertical .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .card.card-img-bg p.panel-title,
+.card.card-img-bg .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-vertical .panel-body-dark p.panel-title,
+.modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-vertical .panel-body-dark .card.card-img-bg p.panel-title,
+.card.card-img-bg .panel-vertical .panel-body-dark .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body p.panel-title,
+.panel-vertical .panel-body-dark .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .card.card-img-bg p.panel-title, .card.card-img-bg .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body p.panel-title.h2, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body .card.card-img-bg p.panel-title.h2, .card.card-img-bg .panel-horizontal-content .panel-horizontal .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption p.panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .card.card-img-bg p.panel-title.h2, .card.card-img-bg .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-horizontal-content .panel-horizontal .panel-body p.panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-horizontal-content .panel-horizontal .panel-body .card.card-img-bg p.panel-title.h2, .card.card-img-bg .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body p.panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .card.card-img-bg p.panel-title.h2, .card.card-img-bg .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body p.panel-title.h2, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-lateral .panel-body .card.card-img-bg p.panel-title.h2, .card.card-img-bg .panel-lateral .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption p.panel-title.h2, .panel-lateral .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .card.card-img-bg p.panel-title.h2, .card.card-img-bg .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-lateral .panel-body p.panel-title.h2, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-lateral .panel-body .card.card-img-bg p.panel-title.h2, .card.card-img-bg .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body p.panel-title.h2, .panel-lateral .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .card.card-img-bg p.panel-title.h2, .card.card-img-bg .block .block-body p.block-title, .block .block-body .card.card-img-bg p.block-title, .card.card-img-bg .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-container .panel-horizontal .panel-body p.panel-title, .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .panel-horizontal-container .panel-horizontal .panel-body .card.card-img-bg p.panel-title, .card.card-img-bg .panel-horizontal-container .panel-horizontal .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption p.panel-title, .panel-horizontal-container .panel-horizontal .panel-body .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .card.card-img-bg p.panel-title, .card.card-img-bg .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-horizontal-container .panel-horizontal .panel-body p.panel-title, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .panel-horizontal-container .panel-horizontal .panel-body .card.card-img-bg p.panel-title, .card.card-img-bg .panel-horizontal-container .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body p.panel-title, .panel-horizontal-container .panel-horizontal .panel-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-caption .group-access .card-access .card-access-body .card.card-img-bg p.panel-title, .card.card-img-bg .accordion-item p.accordion-button, .accordion-item .card.card-img-bg p.accordion-button, .card.card-img-bg .accordion-item .accordion-button p.collapse-title, .accordion-item .accordion-button .card.card-img-bg p.collapse-title, .card.card-img-bg p.card-title {
+  color: white;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+.card.card-img-bg div.card-badges-bg {
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  row-gap: 4px;
+}
+@media (width <= 290px) {
+  .card.card-img-bg div.card-badges-bg {
+    margin-bottom: 4px;
+  }
+}
+.card.card-img-bg::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+.card.card-img-bg img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+.card.card-img-bg a {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+.card.card-img-bg > *:not(img, a) {
+  position: relative;
+  z-index: 1;
+}
 
 .responsive-scroll.vertical-cards-container {
   max-width: fit-content;
@@ -20983,6 +21135,7 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 1;
   border-radius: 9999px;
   border: none;
   outline: 0.125rem solid #e6ebf0;
@@ -21097,13 +21250,34 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
 .carousel.white {
   background-color: #ffffff;
 }
+.carousel.cards {
+  background-color: white;
+}
+.carousel.cards.bg-dark .title,
+.carousel.cards.bg-dark .carousel-link {
+  color: white;
+}
+.carousel.cards.controls-top .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.carousel.cards.controls-top .carousel-navigation {
+  display: flex;
+  gap: 12px;
+}
+.carousel.cards.controls-top .carousel-control-prev,
+.carousel.cards.controls-top .carousel-control-next {
+  position: static;
+  transform: none;
+}
 @media (width < 768px) {
   .carousel.cards .carousel-inner {
     display: flex;
     flex-wrap: nowrap;
     overflow: auto hidden;
     column-gap: 24px;
-    padding: 0 0 24px;
+    padding: 2px 2px 24px;
     align-items: stretch;
   }
   .carousel.cards .carousel-inner .carousel-item {
@@ -21115,6 +21289,11 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
   .carousel.cards .carousel-inner .carousel-item .card-items .card {
     flex: 0 0 auto;
     width: 296px;
+  }
+  .carousel.cards .carousel-inner .carousel-item .card-items .card.card-img-bg {
+    flex: 0 0 auto;
+    width: 300px;
+    min-width: 300px;
   }
   .carousel.cards .carousel-control-next,
   .carousel.cards .carousel-control-prev,
@@ -21152,9 +21331,6 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
   .carousel .title a {
     position: unset;
   }
-  .carousel .responsive-scroll {
-    padding: 0;
-  }
 }
 @media (width >= 992px) {
   .carousel {
@@ -21191,21 +21367,23 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
     left: auto;
   }
   .carousel .carousel-control-prev {
-    left: max(5px, (100% - 720px) / 2 + 0.75rem - 114px);
+    left: max(16px, (100% - 890px) / 2 - 24px);
   }
   .carousel .carousel-control-next {
-    right: max(5px, (100% - 720px) / 2 + 0.75rem - 114px);
+    right: max(16px, (100% - 890px) / 2 - 24px);
   }
   .carousel .carousel-inner {
     border-radius: 16px;
     margin: 0 auto;
-    max-width: 720px;
+    max-width: 1000px;
   }
   .carousel .carousel-inner .carousel-item {
-    padding: 0 8px;
+    padding: 2px 8px;
   }
-  .carousel .title {
-    padding-left: calc((100% - 720px) / 2 + 0.75rem);
+  .carousel .title,
+  .carousel .carousel-link {
+    padding-left: calc((100% - 890px) / 2 + 0.75rem);
+    padding-right: calc((100% - 890px) / 2 + 0.75rem);
   }
   .carousel .panel-horizontal-content, .carousel .panel-horizontal-container {
     padding: 0;
@@ -21216,6 +21394,29 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
   }
   .carousel .panel-horizontal-content .panel-horizontal img, .carousel .panel-horizontal-container .panel-horizontal img {
     max-width: 50%;
+  }
+}
+@media (width >= 992px) and (width >= 992px) and (width < 1200px) {
+  .carousel:has(.panel-horizontal-content, .panel-horizontal-container) .carousel-inner {
+    padding-inline: 48px;
+    box-sizing: border-box;
+  }
+  .carousel:has(.panel-horizontal-content, .panel-horizontal-container) .carousel-control-prev {
+    left: 60px;
+  }
+  .carousel:has(.panel-horizontal-content, .panel-horizontal-container) .carousel-control-next {
+    right: 60px;
+  }
+}
+@media (width >= 992px) and (width < 1200px) {
+  .carousel.cards .carousel-inner {
+    padding-inline: 64px;
+  }
+  .carousel.cards .carousel-control-prev {
+    left: 64px;
+  }
+  .carousel.cards .carousel-control-next {
+    right: 64px;
   }
 }
 @media (width >= 1200px) {

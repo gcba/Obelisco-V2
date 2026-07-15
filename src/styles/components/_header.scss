@@ -583,7 +583,9 @@ $breadcrumb-divider-dark: url('data:image/svg+xml,<svg width="24" height="24" vi
 div.container-headers {
   position: relative;
   min-height: 0;
-  height: 100vh;
+  height: 75vh;
+  max-height: 75vh;
+  min-height: 765px;
   /* revisar altura y colores */
   display: flex;
   flex-direction: column;
@@ -639,7 +641,6 @@ div.container-headers {
         }
       }
 
-      // Mobile
       @include media-breakpoint-down(xl) {
         div.navbar-collapse {
           ul.nav.nav-pills {
@@ -653,17 +654,19 @@ div.container-headers {
             }
           }
         }
+      }
 
-        // .navbar-collapse {
+      // Breakpoint 350px
+      @media (max-width: 350px) {
+        gap: 10px;
+        flex-direction: column;
+        align-items: start;
 
-        // @include media-breakpoint-down(xxl) {
-        //   display: none;
-
-        //   &.show,
-        //   &.collapsing {
-        //     display: block;
-        //   }
-        // }
+        div.container.header-container {
+          button.navbar-toggler {
+            margin: 0;
+          }
+        }
       }
 
       .navbar-toggler {
@@ -678,56 +681,6 @@ div.container-headers {
       .navbar-toggler[aria-expanded='true'] {
         background: $active-color $navbar-toggle-close no-repeat center center;
       }
-
-      // .navbar-login {
-      //   @include media-breakpoint-down(xxl) {
-      //     display: none;
-      //   }
-      // }
-
-      // .navbar-user {
-      //   @include media-breakpoint-down(xxl) {
-      //     display: none;
-      //   }
-      // }
-
-      // .navbar-login-mobile {
-      //   @include media-breakpoint-up(xxl) {
-      //     display: none;
-      //   }
-      // }
-
-      // .navbar-user-mobile {
-      //   @include media-breakpoint-up(xxl) {
-      //     display: none;
-      //   }
-      // }
-
-      // .navbar-content {
-      //   @include media-breakpoint-down(xxl) {
-      //     flex-direction: column-reverse;
-      //   }
-      // }
-
-      // .navbar-search {
-      //   @include media-breakpoint-down(xxl) {
-      //     max-width: 100%;
-      //     padding: 0;
-      //     margin-top: 0.25rem;
-      //     margin-bottom: 1rem;
-      //   }
-      // }
-
-      // .navbar-sections {
-      //   @include media-breakpoint-up(xxl) {
-      //     margin-right: auto;
-      //     min-width: 0;
-      //     max-width: none;
-      //     margin-top: 0;
-      //     margin-bottom: 0;
-      //   }
-      // }
-      // }
     }
   }
 
@@ -765,12 +718,52 @@ div.container-headers {
     }
 
     /* Contenido del hero encima del degradado */
-    .container {
+    .container.hero-landing_container {
       position: relative;
       z-index: 101;
       color: white;
       width: 100%;
       padding: 88px 0 0;
+
+      @include media-breakpoint-down(xl) {
+        padding: 0 32px 32px 32px;
+
+        nav {
+          ol.breadcrumb {
+            margin-bottom: 24px;
+          }
+        }
+
+        div.row {
+          div.col-12.col-lg-8 {
+            p {
+              margin-bottom: 24px;
+            }
+          }
+        }
+      }
+
+      @include media-breakpoint-down(sm) {
+        div.row {
+          div.col-12.col-lg-8 {
+            p {
+              margin-bottom: 24px;
+            }
+          }
+        }
+      }
+
+      // Breakpoint 350px
+      @media (max-width: 350px) {
+        margin-top: 200px;
+      }
+
+      @include media-breakpoint-between(lg, xl) {
+        .row {
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
 
       // migas de pan
       nav {
@@ -791,31 +784,32 @@ div.container-headers {
       }
 
       div.row {
+        margin-left: 0;
+        margin-right: 0;
+
         div.col-12.col-lg-8 {
           padding: 0;
 
-          div {
-            h1 {
-              margin-bottom: 16px;
-            }
+          h1 {
+            margin-bottom: 16px;
+          }
 
-            p {
-              margin-bottom: 40px;
-            }
+          p {
+            margin-bottom: 40px;
+          }
 
-            div.container-dropdowns {
+          div.container-dropdowns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+
+            .dropdown-menu .dropdown-item {
               display: flex;
-              flex-wrap: wrap;
-              gap: 13px;
+            }
 
-              .dropdown-menu .dropdown-item {
-                display: flex;
-              }
-
-              .dropdown .btn.btn-dropdown.btn-dropdown-border,
-              .dropdown .btn-dropdown.btn-dropdown-border.progression-link {
-                border-radius: 25px;
-              }
+            .dropdown .btn.btn-dropdown.btn-dropdown-border,
+            .dropdown .btn-dropdown.btn-dropdown-border.progression-link {
+              border-radius: 25px;
             }
           }
         }

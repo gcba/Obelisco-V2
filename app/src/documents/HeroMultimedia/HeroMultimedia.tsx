@@ -8,7 +8,13 @@ import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
 const basePath = '/Obelisco-V2';
-import { HERO_MULTIMEDIA } from './code-views';
+import {
+  HERO_MULTIMEDIA,
+  HERO_MULTIMEDIA_BOTONES,
+  HERO_MULTIMEDIA_CAMPO_BUSCADOR,
+  HERO_MULTIMEDIA_DESPLEGABLES,
+  HERO_MULTIMEDIA_ETIQUETAS,
+} from './code-views';
 
 const ZoomContainer = ({ children }: React.PropsWithChildren) => <div style={{ zoom: 0.5 }}>{children}</div>;
 const logo_ba_white = '/images/logo_ba_white.svg';
@@ -16,7 +22,7 @@ const logo_ba_white = '/images/logo_ba_white.svg';
 const HeroMultimediaDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
-      title: 'Con vídeo',
+      title: 'Con imagen',
       firstTitle: true,
       content: (
         <>
@@ -185,7 +191,7 @@ const HeroMultimediaDocs: React.FC = () => {
                 <header className="hero-landing hero-video ob-hero">
                   {/* multimedia */}
                   {/* <video src={`${basePath}/images/hero/videoplayback.mp4`} autoPlay muted loop playsInline></video> */}
-                  <img src={`${basePath}/images/hero/hero_multimedia.jpg`} />
+                  <img src={`${basePath}/images/hero/hero_multimedia.jpg`} alt="Imagen de fondo" />
 
                   {/* capa gradiente */}
                   <div className="ob-bg"></div>
@@ -236,7 +242,7 @@ const HeroMultimediaDocs: React.FC = () => {
       ),
     },
     {
-      title: 'Con imagen',
+      title: 'Con vídeo',
       firstTitle: true,
       content: (
         <>
@@ -506,10 +512,9 @@ const HeroMultimediaDocs: React.FC = () => {
     },
     {
       subtitle: 'Con botones',
-
       content: (
         <>
-          <CodeBox codeHTML={HERO_MULTIMEDIA}>
+          <CodeBox codeHTML={HERO_MULTIMEDIA_BOTONES}>
             <ZoomContainer>
               <div className="container-headers">
                 {/* Header logo y navegación ⬇ */}
@@ -730,13 +735,13 @@ const HeroMultimediaDocs: React.FC = () => {
       subtitle: 'Con campo buscador',
       content: (
         <>
-          <CodeBox codeHTML={HERO_MULTIMEDIA}>
+          <CodeBox codeHTML={HERO_MULTIMEDIA_CAMPO_BUSCADOR}>
             <ZoomContainer>
               <div className="container-headers">
                 {/* Header logo y navegación ⬇ */}
                 <header className="o-header hero-navbar navbar" role="banner">
                   <LinkClient href="#main" className="skip-to-main-content-link">
-                    Saltar al contenido princip|al
+                    Saltar al contenido principal
                   </LinkClient>
                   <div className="container header-container">
                     <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
@@ -899,6 +904,7 @@ const HeroMultimediaDocs: React.FC = () => {
 
                   {/* capa gradiente */}
                   <div className="ob-bg"></div>
+                  {/* capa gradiente */}
 
                   {/* contenido, título, bajada, accionables */}
                   <div className="container hero-landing-container">
@@ -999,7 +1005,7 @@ const HeroMultimediaDocs: React.FC = () => {
       subtitle: 'Con etiquetas',
       content: (
         <>
-          <CodeBox codeHTML={HERO_MULTIMEDIA}>
+          <CodeBox codeHTML={HERO_MULTIMEDIA_ETIQUETAS}>
             <ZoomContainer>
               <div className="container-headers">
                 {/* Header logo y navegación ⬇ */}
@@ -1218,7 +1224,7 @@ const HeroMultimediaDocs: React.FC = () => {
       subtitle: 'Con desplegables',
       content: (
         <>
-          <CodeBox codeHTML={HERO_MULTIMEDIA}>
+          <CodeBox codeHTML={HERO_MULTIMEDIA_DESPLEGABLES}>
             <ZoomContainer>
               <div className="container-headers">
                 {/* Header logo y navegación ⬇ */}
@@ -1485,7 +1491,7 @@ const HeroMultimediaDocs: React.FC = () => {
   return (
     <>
       <ComponentHeader
-        title="Cabecera de Página"
+        title="Cabecera de página multimedia"
         description={[
           'La cabecera de página es el área destacada y principal de una página, pensada para captar la atención inmediata de la persona usuaria. Puede contener accionables como botones o campos de búsqueda.',
         ]}

@@ -590,6 +590,11 @@ div.container-headers {
   flex-direction: column;
   justify-content: space-between;
 
+  // Breakpoint <170px
+  @media (width <= 170px) {
+    min-height: 1300px;
+  }
+
   //  Header logo y navegación
   header.o-header.hero-navbar.navbar {
     border-bottom: none;
@@ -691,11 +696,12 @@ div.container-headers {
     min-height: 0;
     flex: 1;
     display: flex;
-    align-items: center;
+    align-items: start;
     background: transparent;
 
     /* z-index 0 */
-    video, img {
+    video,
+    img {
       position: absolute;
       top: 0;
       left: 0;
@@ -722,10 +728,11 @@ div.container-headers {
       z-index: 101;
       color: white;
       width: 100%;
-      padding: 88px 0 0;
+      padding-top: 168px; // 80 altura del header y 88 espaciado
+      padding-bottom: 48px;
 
       @include media-breakpoint-down(xl) {
-        padding: 0 32px 32px;
+        padding: 168px 32px 32px;
 
         nav {
           ol.breadcrumb {
@@ -752,9 +759,9 @@ div.container-headers {
         }
       }
 
-      // Breakpoint 350px
+      // Breakpoint <350px
       @media (width <= 350px) {
-        margin-top: 200px;
+        padding-top: 220px;
       }
 
       @include media-breakpoint-between(lg, xl) {
@@ -782,6 +789,8 @@ div.container-headers {
         }
       }
 
+      // migas de pan
+
       div.row {
         margin-left: 0;
         margin-right: 0;
@@ -797,6 +806,9 @@ div.container-headers {
             margin-bottom: 40px;
           }
 
+          // Accionables
+
+          // Accionable desplegables
           div.container-dropdowns {
             display: flex;
             flex-wrap: wrap;
@@ -811,6 +823,126 @@ div.container-headers {
               border-radius: 25px;
             }
           }
+
+          // Accionable desplegables
+
+          // Accionable boton
+          // Son los mismos estilos que en la hoja de hero.scss
+          div.btn-hero {
+            display: flex;
+            gap: 24px 8px;
+            @media (width <= 360px) {
+              display: grid;
+
+              button {
+                width: 100%;
+                display: block;
+              }
+            }
+          }
+
+          // Accionable boton
+
+          // Variante buscador
+          // Son los mismos estilos que en la hoja de hero.scss
+          .search-container {
+            position: relative;
+            height: 57px;
+            z-index: 4;
+
+            .search-wrapper {
+              max-width: 650px;
+              border-radius: $border-radius-pill;
+              overflow: hidden;
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+
+              &:focus-within {
+                background-color: #f3f6f9;
+                box-shadow: 0 0 0 0.25rem #218274;
+                outline: 0.25rem solid transparent;
+                min-height: max-content;
+
+                .search-results {
+                  display: block;
+                }
+              }
+
+              // resultados
+              .search-results {
+                display: none;
+
+                a:focus {
+                  box-shadow: none;
+                  outline: none;
+                }
+
+                /* resultados */
+                .list-link-result {
+                  padding: 0.5rem;
+                  display: flex;
+                  align-items: center;
+                  text-decoration: none;
+                  color: #000;
+                  gap: 0.25rem;
+                }
+              }
+
+              /* contenedor del botón */
+              .search-btn-container {
+                position: absolute;
+                top: 4px;
+                right: 4px;
+                bottom: 4px;
+
+                .btn-search {
+                  > svg {
+                    display: none;
+                  }
+
+                  > p {
+                    // display: inline;
+                    margin: 0;
+                    padding: 0;
+                  }
+
+                  @media (width <= 360px) {
+                    & > svg {
+                      display: block;
+                    }
+
+                    & > p {
+                      display: none;
+                    }
+                    z-index: 100;
+                  }
+                }
+              }
+
+              /* input dentro de search */
+              #search-home.form-control {
+                border-bottom: 2px solid #e6ebf0;
+                border-radius: 0.5rem 0.5rem 0 0;
+                padding: 1rem 12px;
+                padding-right: 128px;
+                box-shadow: none;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+            }
+          }
+
+          > .flex-column {
+            row-gap: 24px;
+          }
+
+          // Variante buscador
+
+          // Accionables
         }
       }
     }

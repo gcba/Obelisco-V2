@@ -701,3 +701,5 @@ export const HERO_REDES_SOCIALES = `<header class="hero bg-content-hero-light">
 	<div class="aside bg-aside-hero-light"></div>
 </header>
 `;
+
+export const HERO_MULTIMEDIA = ``;

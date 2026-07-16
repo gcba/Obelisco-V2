@@ -636,6 +636,7 @@ div.container-headers {
           width: 100%;
           height: 100%;
           z-index: 1040;
+
           // background-color: $black;
         }
       }
@@ -659,6 +660,7 @@ div.container-headers {
                     &:active {
                       outline: 0.125rem solid white;
                     }
+
                     &:focus:not(:hover, :active) {
                       outline: 0.25rem solid transparent;
                     }
@@ -989,4 +991,5 @@ div.container-headers {
 
   // Header multimedia y contenido
 }
+
 // Hero header

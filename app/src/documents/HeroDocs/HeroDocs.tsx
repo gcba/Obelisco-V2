@@ -35,218 +35,218 @@ const HeroHeaderDocs: React.FC = () => {
           {/* <div className="container"> */}
           {/* <div className="hero-container"> */}
           {/* <div className="hero-box-sizing "> */}
-          <CodeBox codeHTML={HERO_MULTIMEDIA}>
-            <ZoomContainer>
-              <div className="container-headers">
-                {/* Header logo y navegación ⬇ */}
-                <header className="o-header hero-navbar navbar" role="banner">
-                  <LinkClient href="#main" className="skip-to-main-content-link">
-                    Saltar al contenido principal
+          {/* <CodeBox codeHTML={HERO_MULTIMEDIA}> */}
+          {/* <ZoomContainer> */}
+          <div className="container-headers">
+            {/* Header logo y navegación ⬇ */}
+            <header className="o-header hero-navbar navbar" role="banner">
+              <LinkClient href="#main" className="skip-to-main-content-link">
+                Saltar al contenido principal
+              </LinkClient>
+              <div className="container header-container">
+                <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
+                  <img
+                    className="d-none d-xl-block"
+                    src={`${basePath}${logo_ba_white}`}
+                    alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                  />
+                  <img
+                    className="d-xl-none"
+                    src={`${basePath}${logo_ba_white}`}
+                    alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
+                  />
+                </LinkClient>
+                <div className="navbar-login-mobile">
+                  <LinkClient className="btn btn-lg btn-icon  btn-outline-light">
+                    <span className="material-symbols-rounded" aria-hidden="true">
+                      person
+                    </span>
+                    <span className="btn-text">Ingresar</span>
                   </LinkClient>
-                  <div className="container header-container">
-                    <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
-                      <img
-                        className="d-none d-xl-block"
-                        src={`${basePath}${logo_ba_white}`}
-                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
-                      />
-                      <img
-                        className="d-xl-none"
-                        src={`${basePath}${logo_ba_white}`}
-                        alt="Gobierno de la Ciudad de Buenos Aires - Inicio"
-                      />
-                    </LinkClient>
-                    <div className="navbar-login-mobile">
-                      <LinkClient className="btn btn-lg btn-icon  btn-outline-light">
+                </div>
+                <button
+                  className="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarContentMultimedia"
+                  aria-controls="navbarContentMultimedia"
+                  aria-expanded="false"
+                  aria-label="Menú"
+                ></button>
+                <div className="collapse navbar-collapse" id="navbarContentMultimedia">
+                  <div className="navbar-content">
+                    <div className="navbar-sections">
+                      <nav>
+                        <p className="navbar-sections-title">Secciones</p>
+                        <ul className="nav nav-pills nav-sections">
+                          <li className="dropdown">
+                            <button
+                              type="button"
+                              className="btn btn-dropdown btn-lg"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span className="btn-dropdown-text ellipsis-1">Áreas de Gobierno</span>
+                              <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                                expand_more
+                              </span>
+                            </button>
+                            <div className="dropdown-menu">
+                              <LinkClient className="dropdown-item">
+                                <span className="item-text">Enlace de navegación</span>
+                              </LinkClient>
+                              <LinkClient className="dropdown-item">
+                                <span className="item-text">Enlace de navegación</span>
+                              </LinkClient>
+                              <LinkClient className="dropdown-item">
+                                <span className="item-text">Enlace de navegación</span>
+                              </LinkClient>
+                              <LinkClient className="dropdown-item">
+                                <span className="item-text">Enlace de navegación</span>
+                              </LinkClient>
+                              <LinkClient className="dropdown-item">
+                                <span className="item-text">Enlace de navegación</span>
+                              </LinkClient>
+                              <LinkClient className="dropdown-item">
+                                <span className="item-text">Enlace de navegación</span>
+                              </LinkClient>
+                              <LinkClient className="dropdown-item item-link">
+                                <span className="item-text">Ver más</span>
+                                <span className="material-symbols-rounded" aria-hidden="true">
+                                  arrow_forward
+                                </span>
+                              </LinkClient>
+                            </div>
+                          </li>
+                          <li className="nav-item">
+                            <LinkClient className="nav-link nav-link-lg">
+                              <span>BA Discapacidad</span>
+                            </LinkClient>
+                          </li>
+                          <li className="dropdown">
+                            <button
+                              type="button"
+                              className="btn btn-dropdown btn-lg"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span className="btn-dropdown-text ellipsis-1">Trámites y servicios</span>
+                              <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                                expand_more
+                              </span>
+                            </button>
+                            <div className="dropdown-menu">
+                              <LinkClient className="dropdown-item">
+                                <span className="item-text">Enlace de navegación</span>
+                              </LinkClient>
+                              <LinkClient className="dropdown-item">
+                                <span className="item-text">Enlace de navegación</span>
+                              </LinkClient>
+                              <LinkClient className="dropdown-item">
+                                <span className="item-text">Enlace de navegación</span>
+                              </LinkClient>
+                              <LinkClient className="dropdown-item">
+                                <span className="item-text">Enlace de navegación</span>
+                              </LinkClient>
+                              <LinkClient className="dropdown-item">
+                                <span className="item-text">Enlace de navegación</span>
+                              </LinkClient>
+                              <LinkClient className="dropdown-item">
+                                <span className="item-text">Enlace de navegación</span>
+                              </LinkClient>
+                              <LinkClient className="dropdown-item item-link">
+                                <span className="item-text">Ver más</span>
+                                <span className="material-symbols-rounded" aria-hidden="true">
+                                  arrow_forward
+                                </span>
+                              </LinkClient>
+                            </div>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <div className="navbar-search">
+                      <form className="form-search">
+                        <label htmlFor="header-search" className="form-label sr-only">
+                          Buscador
+                        </label>
+                        <div className="search-container">
+                          <input
+                            type="search"
+                            className="form-control input-search input-search-with-button"
+                            id="header-search"
+                            placeholder="Buscador"
+                          />
+                          <button className="reset" type="reset" aria-label="Borrar"></button>
+                          <button className="button-search" type="submit" aria-label="Buscar"></button>
+                        </div>
+                      </form>
+                    </div>
+                    <div className="navbar-login">
+                      <LinkClient className="btn btn-lg btn-outline-light">
                         <span className="material-symbols-rounded" aria-hidden="true">
                           person
                         </span>
                         <span className="btn-text">Ingresar</span>
                       </LinkClient>
                     </div>
-                    <button
-                      className="navbar-toggler"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#navbarContentMultimedia"
-                      aria-controls="navbarContentMultimedia"
-                      aria-expanded="false"
-                      aria-label="Menú"
-                    ></button>
-                    <div className="collapse navbar-collapse" id="navbarContentMultimedia">
-                      <div className="navbar-content">
-                        <div className="navbar-sections">
-                          <nav>
-                            <p className="navbar-sections-title">Secciones</p>
-                            <ul className="nav nav-pills nav-sections">
-                              <li className="dropdown">
-                                <button
-                                  type="button"
-                                  className="btn btn-dropdown btn-lg"
-                                  data-bs-toggle="dropdown"
-                                  aria-expanded="false"
-                                >
-                                  <span className="btn-dropdown-text ellipsis-1">Áreas de Gobierno</span>
-                                  <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
-                                    expand_more
-                                  </span>
-                                </button>
-                                <div className="dropdown-menu">
-                                  <LinkClient className="dropdown-item">
-                                    <span className="item-text">Enlace de navegación</span>
-                                  </LinkClient>
-                                  <LinkClient className="dropdown-item">
-                                    <span className="item-text">Enlace de navegación</span>
-                                  </LinkClient>
-                                  <LinkClient className="dropdown-item">
-                                    <span className="item-text">Enlace de navegación</span>
-                                  </LinkClient>
-                                  <LinkClient className="dropdown-item">
-                                    <span className="item-text">Enlace de navegación</span>
-                                  </LinkClient>
-                                  <LinkClient className="dropdown-item">
-                                    <span className="item-text">Enlace de navegación</span>
-                                  </LinkClient>
-                                  <LinkClient className="dropdown-item">
-                                    <span className="item-text">Enlace de navegación</span>
-                                  </LinkClient>
-                                  <LinkClient className="dropdown-item item-link">
-                                    <span className="item-text">Ver más</span>
-                                    <span className="material-symbols-rounded" aria-hidden="true">
-                                      arrow_forward
-                                    </span>
-                                  </LinkClient>
-                                </div>
-                              </li>
-                              <li className="nav-item">
-                                <LinkClient className="nav-link nav-link-lg">
-                                  <span>BA Discapacidad</span>
-                                </LinkClient>
-                              </li>
-                              <li className="dropdown">
-                                <button
-                                  type="button"
-                                  className="btn btn-dropdown btn-lg"
-                                  data-bs-toggle="dropdown"
-                                  aria-expanded="false"
-                                >
-                                  <span className="btn-dropdown-text ellipsis-1">Trámites y servicios</span>
-                                  <span className="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
-                                    expand_more
-                                  </span>
-                                </button>
-                                <div className="dropdown-menu">
-                                  <LinkClient className="dropdown-item">
-                                    <span className="item-text">Enlace de navegación</span>
-                                  </LinkClient>
-                                  <LinkClient className="dropdown-item">
-                                    <span className="item-text">Enlace de navegación</span>
-                                  </LinkClient>
-                                  <LinkClient className="dropdown-item">
-                                    <span className="item-text">Enlace de navegación</span>
-                                  </LinkClient>
-                                  <LinkClient className="dropdown-item">
-                                    <span className="item-text">Enlace de navegación</span>
-                                  </LinkClient>
-                                  <LinkClient className="dropdown-item">
-                                    <span className="item-text">Enlace de navegación</span>
-                                  </LinkClient>
-                                  <LinkClient className="dropdown-item">
-                                    <span className="item-text">Enlace de navegación</span>
-                                  </LinkClient>
-                                  <LinkClient className="dropdown-item item-link">
-                                    <span className="item-text">Ver más</span>
-                                    <span className="material-symbols-rounded" aria-hidden="true">
-                                      arrow_forward
-                                    </span>
-                                  </LinkClient>
-                                </div>
-                              </li>
-                            </ul>
-                          </nav>
-                        </div>
-                        <div className="navbar-search">
-                          <form className="form-search">
-                            <label htmlFor="header-search" className="form-label sr-only">
-                              Buscador
-                            </label>
-                            <div className="search-container">
-                              <input
-                                type="search"
-                                className="form-control input-search input-search-with-button"
-                                id="header-search"
-                                placeholder="Buscador"
-                              />
-                              <button className="reset" type="reset" aria-label="Borrar"></button>
-                              <button className="button-search" type="submit" aria-label="Buscar"></button>
-                            </div>
-                          </form>
-                        </div>
-                        <div className="navbar-login">
-                          <LinkClient className="btn btn-lg btn-outline-light">
-                            <span className="material-symbols-rounded" aria-hidden="true">
-                              person
-                            </span>
-                            <span className="btn-text">Ingresar</span>
-                          </LinkClient>
-                        </div>
-                      </div>
-                    </div>
                   </div>
-                  <div className="header-backdrop"></div>
-                </header>
-
-                {/* Header multimedia y contenido ⬇ */}
-                <header className="hero-landing hero-video ob-hero">
-                  {/* multimedia */}
-                  {/* <video src={`${basePath}/images/hero/videoplayback.mp4`} autoPlay muted loop playsInline></video> */}
-                  <img src={`${basePath}/images/hero/hero_multimedia.jpg`} />
-
-                  {/* capa gradiente */}
-                  <div className="ob-bg"></div>
-
-                  {/* contenido, título, bajada, accionables */}
-                  <div className="container hero-landing-container">
-                    <nav aria-label="breadcrumb">
-                      <ol className="breadcrumb">
-                        <li className="breadcrumb-item">
-                          <a href="#">Inicio</a>
-                        </li>
-                        <li className="breadcrumb-item">
-                          <a href="#">Página 2</a>
-                        </li>
-                        <li className="breadcrumb-item">
-                          <a href="#">Página 3</a>
-                        </li>
-                        <li className="breadcrumb-item">
-                          <a href="#">Página anterior</a>
-                        </li>
-                      </ol>
-                    </nav>
-                    <div className="row">
-                      <div className="col-12 col-lg-8 w-100">
-                        <h1>Título de la página</h1>
-                        <p className="text-xl">
-                          Este es el subtítulo de la página que puede contener hasta 3 líneas de texto, describiendo
-                          brevemente su función.
-                        </p>
-
-                        {/* Accionable etiquetas */}
-                        <div className="d-flex flex-wrap column-gap-2 row-gap-4">
-                          <span className="me-3 fw-semibold">Texto de las etiquetas: </span>
-                          <span className="badge badge-s-default">Etiqueta</span>
-                          <span className="badge badge-s-default">Etiqueta</span>
-                          <span className="badge badge-s-default">Etiqueta</span>
-                        </div>
-                        {/* Accionable etiquetas */}
-                      </div>
-                    </div>
-                  </div>
-                  {/* contenido, título, bajada, accionables */}
-                </header>
+                </div>
               </div>
-            </ZoomContainer>
-          </CodeBox>
+              <div className="header-backdrop"></div>
+            </header>
+
+            {/* Header multimedia y contenido ⬇ */}
+            <header className="hero-landing hero-video ob-hero">
+              {/* multimedia */}
+              {/* <video src={`${basePath}/images/hero/videoplayback.mp4`} autoPlay muted loop playsInline></video> */}
+              <img src={`${basePath}/images/hero/hero_multimedia.jpg`} />
+
+              {/* capa gradiente */}
+              <div className="ob-bg"></div>
+
+              {/* contenido, título, bajada, accionables */}
+              <div className="container hero-landing-container">
+                <nav aria-label="breadcrumb">
+                  <ol className="breadcrumb">
+                    <li className="breadcrumb-item">
+                      <a href="#">Inicio</a>
+                    </li>
+                    <li className="breadcrumb-item">
+                      <a href="#">Página 2</a>
+                    </li>
+                    <li className="breadcrumb-item">
+                      <a href="#">Página 3</a>
+                    </li>
+                    <li className="breadcrumb-item">
+                      <a href="#">Página anterior</a>
+                    </li>
+                  </ol>
+                </nav>
+                <div className="row">
+                  <div className="col-12 col-lg-8 w-100">
+                    <h1>Título de la página</h1>
+                    <p className="text-xl">
+                      Este es el subtítulo de la página que puede contener hasta 3 líneas de texto, describiendo
+                      brevemente su función.
+                    </p>
+
+                    {/* Accionable etiquetas */}
+                    <div className="d-flex flex-wrap column-gap-2 row-gap-4">
+                      <span className="me-3 fw-semibold">Texto de las etiquetas: </span>
+                      <span className="badge badge-s-default">Etiqueta</span>
+                      <span className="badge badge-s-default">Etiqueta</span>
+                      <span className="badge badge-s-default">Etiqueta</span>
+                    </div>
+                    {/* Accionable etiquetas */}
+                  </div>
+                </div>
+              </div>
+              {/* contenido, título, bajada, accionables */}
+            </header>
+          </div>
+          {/* </ZoomContainer>  */}
+          {/* </CodeBox> */}
           <br />
           <CodeBox codeHTML={HERO_MULTIMEDIA}>
             <ZoomContainer>
@@ -332,9 +332,12 @@ const HeroHeaderDocs: React.FC = () => {
                                 </div>
                               </li>
                               <li className="nav-item">
-                                <LinkClient className="nav-link nav-link-lg">
+                                {/* <LinkClient className="nav-link nav-link-lg">
                                   <span>BA Discapacidad</span>
-                                </LinkClient>
+                                </LinkClient> */}
+                                <a className="nav-link nav-link-lg">
+                                  <span>BA Discapacidad</span>
+                                </a>
                               </li>
                               <li className="dropdown">
                                 <button
@@ -2429,20 +2432,20 @@ const HeroHeaderDocs: React.FC = () => {
       />
       <Tabs
         sectionDev={SECTIONS_DEV}
-        sectionUx={SECTION_UX}
-        customSections={[
-          {
-            title: 'Especificaciones',
-            id: 'section-specs',
-            sectionContent: SPECS,
-          },
-          {
-            title: 'Accesibilidad',
-            id: 'section-accessibility',
-            sectionContent: ACCESSIBILITY,
-          },
-        ]}
-      />{' '}
+        // sectionUx={SECTION_UX}
+        // customSections={[
+        //   {
+        //     title: 'Especificaciones',
+        //     id: 'section-specs',
+        //     sectionContent: SPECS,
+        //   },
+        //   {
+        //     title: 'Accesibilidad',
+        //     id: 'section-accessibility',
+        //     sectionContent: ACCESSIBILITY,
+        //   },
+        // ]}
+      />
     </>
   );
 };

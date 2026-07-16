@@ -712,7 +712,7 @@ const HeaderDocs: React.FC = () => {
               <div className="ob-bg"></div>
 
               {/* contenido, título, bajada, accionables */}
-              <div className="container hero-landing_container">
+              <div className="container hero-landing-container">
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">

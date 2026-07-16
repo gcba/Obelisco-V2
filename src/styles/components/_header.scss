@@ -582,7 +582,6 @@ $breadcrumb-divider-dark: url('data:image/svg+xml,<svg width="24" height="24" vi
 // Hero header
 div.container-headers {
   position: relative;
-  min-height: 0;
   height: 75vh;
   max-height: 75vh;
   min-height: 765px;
@@ -657,7 +656,7 @@ div.container-headers {
       }
 
       // Breakpoint 350px
-      @media (max-width: 350px) {
+      @media (width <= 350px) {
         gap: 10px;
         flex-direction: column;
         align-items: start;
@@ -718,7 +717,7 @@ div.container-headers {
     }
 
     /* Contenido del hero encima del degradado */
-    .container.hero-landing_container {
+    .container.hero-landing-container {
       position: relative;
       z-index: 101;
       color: white;
@@ -726,7 +725,7 @@ div.container-headers {
       padding: 88px 0 0;
 
       @include media-breakpoint-down(xl) {
-        padding: 0 32px 32px 32px;
+        padding: 0 32px 32px;
 
         nav {
           ol.breadcrumb {
@@ -754,7 +753,7 @@ div.container-headers {
       }
 
       // Breakpoint 350px
-      @media (max-width: 350px) {
+      @media (width <= 350px) {
         margin-top: 200px;
       }
 

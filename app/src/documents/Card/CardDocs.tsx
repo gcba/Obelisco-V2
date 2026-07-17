@@ -8,6 +8,7 @@ import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
 import {
+  CARD_VISUAL_SIN_BORDE,
   DISPOSITION_2,
   DISPOSITION_3,
   DISPOSITION_SCROLL,
@@ -83,29 +84,44 @@ const CardDocs: React.FC = () => {
       ),
     },
     {
-      subtitle: 'Con icono, sin borde',
+      subtitle: 'Visuales sin borde',
       content: (
-        // <CodeBox codeHTML={HORIZONTAL_ICON}>
-        <div className="container">
-          {/* <div className="card-box-sizing"> */}
+        <CodeBox codeHTML={CARD_VISUAL_SIN_BORDE}>
+          <div className="card-vertical-box-sizing">
+            <div className="container">
+              <div className="card card-horizontal visual-sin-borde bg-light">
+                <div className="visual-sin-borde-icon-container">
+                  <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                    info
+                  </span>
+                </div>
 
-          <div className="card card-horizontal icono-sin-borde-h">
-            <div className="card-h-icon-container">
-              <span className="material-symbols-rounded card-icon" aria-hidden="true">
-                info
-              </span>
-            </div>
+                <div className="card-body">
+                  <h3 className="card-title">
+                    <LinkClient className="card-title-link">Título de la tarjeta con más de una línea</LinkClient>
+                  </h3>
+                  <p className="card-text">Descripción de la tarjeta</p>
+                </div>
+              </div>
+              <br />
+              <div className="card card-horizontal visual-sin-borde">
+                <div className="visual-sin-borde-icon-container">
+                  <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                    info
+                  </span>
+                </div>
 
-            <div className="card-body">
-              <h3 className="card-title">
-                <LinkClient className="card-title-link">Título de la tarjeta con más de una línea</LinkClient>
-              </h3>
-              <p className="card-text">Descripción de la tarjeta</p>
+                <div className="card-body">
+                  <h3 className="card-title">
+                    <LinkClient className="card-title-link">Título de la tarjeta con más de una línea</LinkClient>
+                  </h3>
+                  <p className="card-text">Descripción de la tarjeta</p>
+                </div>
+              </div>
+              <br />
             </div>
           </div>
-        </div>
-        // </div>
-        // </CodeBox>
+        </CodeBox>
       ),
     },
     {

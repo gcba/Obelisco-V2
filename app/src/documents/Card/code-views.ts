@@ -483,3 +483,17 @@ export const TARJETAS_IMPACTO_VISUAL = `<div class="card card-img-bg">
     <a href="#" aria-label="Descripcion de tarjetas"></a>
   </div>
 `;
+
+export const CARD_VISUAL_SIN_BORDE = `<div class="card card-horizontal visual-sin-borde bg-light">
+  <div class="card-h-icon-container">
+    <span class="material-symbols-rounded card-icon" aria-hidden="true">info</span>
+  </div>
+  <div class="card-body">
+    <h3 class="card-title">
+      <a href="#" class="card-title-link" target="_blank" rel="noopener noreferrer">
+      Título de la tarjeta con más de una línea</a>
+    </h3>
+    <p class="card-text">Descripción de la tarjeta</p>
+  </div>
+</div>
+`;

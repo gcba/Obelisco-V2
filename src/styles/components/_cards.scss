@@ -4,6 +4,8 @@ $card-icon-size: 2rem;
 $card-media-size: 4rem;
 $card-icon-bg: $slate-50;
 $card-info-icon-size: 1rem;
+$card-icon-sin-borde-h: url('data:image/svg+xml,<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.740699" y="0.740699" width="30.5186" height="30.5186" rx="15.2593" stroke="%2338485C" stroke-width="1.4814"/><path d="M12.3427 19.7034L11.5557 18.9164L17.8053 12.6667H12.2964V11.5557H19.7034V18.9627H18.5923V13.4537L12.3427 19.7034Z" fill="%2338485C"/></svg>');
+$padding-card-icon-sin-borde: 24px;
 
 // Estilos de estados de tarjetas
 @mixin card-states-styles {
@@ -195,6 +197,55 @@ $card-info-icon-size: 1rem;
       justify-content: flex-start;
       padding: 1.5rem 1rem;
     }
+
+    // Tarjeta horizontal con ícono, sin borde
+    &.icono-sin-borde-h {
+      width: 328px;
+      min-width: 328px;
+      height: 180px;
+      min-height: 180px;
+      background-color: $light;
+      flex-direction: column;
+      outline: 0;
+
+      .card-h-icon-container {
+        height: 80px;
+        padding: $padding-card-icon-sin-borde;
+        display: flex;
+        align-items: center;
+
+        .card-icon {
+          margin: 0;
+          width: 32px;
+          height: 32px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 32px;
+          line-height: 1;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: $padding-card-icon-sin-borde; // tiene que ser el mismo valor que el padding
+          right: $padding-card-icon-sin-borde;
+          width: 32px;
+          height: 32px;
+          background: $card-icon-sin-borde-h center/contain no-repeat;
+        }
+      }
+
+      .card-body {
+        padding: 24px 32px;
+
+        .card-title {
+          @extend .ellipsis-2;
+        }
+      }
+    }
+
+    // Tarjeta horizontal con ícono, sin borde
   }
 
   // Estilos para estados hover, focus

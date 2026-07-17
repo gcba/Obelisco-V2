@@ -83,6 +83,32 @@ const CardDocs: React.FC = () => {
       ),
     },
     {
+      subtitle: 'Con icono, sin borde',
+      content: (
+        // <CodeBox codeHTML={HORIZONTAL_ICON}>
+        <div className="container">
+          {/* <div className="card-box-sizing"> */}
+
+          <div className="card card-horizontal icono-sin-borde-h">
+            <div className="card-h-icon-container">
+              <span className="material-symbols-rounded card-icon" aria-hidden="true">
+                info
+              </span>
+            </div>
+
+            <div className="card-body">
+              <h3 className="card-title">
+                <LinkClient className="card-title-link">Título de la tarjeta con más de una línea</LinkClient>
+              </h3>
+              <p className="card-text">Descripción de la tarjeta</p>
+            </div>
+          </div>
+        </div>
+        // </div>
+        // </CodeBox>
+      ),
+    },
+    {
       subtitle: 'Con imagen',
       content: (
         <CodeBox codeHTML={HORIZONTAL_IMG}>

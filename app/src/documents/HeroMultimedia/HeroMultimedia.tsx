@@ -188,7 +188,7 @@ const HeroMultimediaDocs: React.FC = () => {
                 </header>
 
                 {/* Header multimedia y contenido ⬇ */}
-                <header className="hero-landing hero-video ob-hero">
+                <header className="hero-landing  ">
                   {/* multimedia */}
                   {/* <video src={`${basePath}/images/hero/videoplayback.mp4`} autoPlay muted loop playsInline></video> */}
                   <img src={`${basePath}/images/hero/hero_multimedia.jpg`} alt="Imagen de fondo" />
@@ -411,7 +411,7 @@ const HeroMultimediaDocs: React.FC = () => {
                 </header>
 
                 {/* Header multimedia y contenido ⬇ */}
-                <header className="hero-landing hero-video ob-hero">
+                <header className="hero-landing  ">
                   {/* multimedia */}
                   <video src={`${basePath}/images/hero/videoplayback.mp4`} autoPlay muted loop playsInline></video>
                   {/* <img src={`${basePath}/images/hero/hero_multimedia.jpg`} /> */}
@@ -676,7 +676,7 @@ const HeroMultimediaDocs: React.FC = () => {
                 </header>
 
                 {/* Header multimedia y contenido ⬇ */}
-                <header className="hero-landing hero-video ob-hero">
+                <header className="hero-landing  ">
                   {/* multimedia */}
                   <video src={`${basePath}/images/hero/videoplayback.mp4`} autoPlay muted loop playsInline></video>
                   {/* <img src={`${basePath}/images/hero/hero_multimedia.jpg`} /> */}
@@ -897,7 +897,7 @@ const HeroMultimediaDocs: React.FC = () => {
                 </header>
 
                 {/* Header multimedia y contenido ⬇ */}
-                <header className="hero-landing hero-video ob-hero">
+                <header className="hero-landing  ">
                   {/* multimedia */}
                   <video src={`${basePath}/images/hero/videoplayback.mp4`} autoPlay muted loop playsInline></video>
                   {/* <img src={`${basePath}/images/hero/hero_multimedia.jpg`} /> */}
@@ -1167,7 +1167,7 @@ const HeroMultimediaDocs: React.FC = () => {
                 </header>
 
                 {/* Header multimedia y contenido ⬇ */}
-                <header className="hero-landing hero-video ob-hero">
+                <header className="hero-landing  ">
                   {/* multimedia */}
                   {/* <video src={`${basePath}/images/hero/videoplayback.mp4`} autoPlay muted loop playsInline></video> */}
                   <img src={`${basePath}/images/hero/hero_multimedia.jpg`} />
@@ -1389,7 +1389,7 @@ const HeroMultimediaDocs: React.FC = () => {
                 </header>
 
                 {/* Header multimedia y contenido ⬇ */}
-                <header className="hero-landing hero-video ob-hero">
+                <header className="hero-landing  ">
                   {/* multimedia */}
                   <video src={`${basePath}/images/hero/videoplayback.mp4`} autoPlay muted loop playsInline></video>
                   {/* <img src={`${basePath}/images/hero/hero_multimedia.jpg`} /> */}

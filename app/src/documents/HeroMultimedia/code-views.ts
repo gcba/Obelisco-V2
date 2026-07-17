@@ -74,7 +74,7 @@ export const HERO_MULTIMEDIA_IMAGEN = `<div class="container-headers">
     <div class="header-backdrop"></div>
   </header>
 
-  <header class="hero-landing hero-video ob-hero">
+  <header class="hero-landing  ">
     {/* <!-- multimedia --> */}
     <img src="/Obelisco-V2/images/hero/hero_multimedia.jpg" alt="Imagen de fondo" />
     {/* <!-- multimedia --> */}
@@ -252,7 +252,7 @@ export const HERO_MULTIMEDIA_CAMPO_BUSCADOR = `<div class="container-headers">
     <div class="header-backdrop"></div>
   </header>
 
-  <header class="hero-landing hero-video ob-hero">
+  <header class="hero-landing  ">
     {/* <!-- multimedia --> */}
     <video src={'/images/hero/videoplayback.mp4'} autoPlay muted loop playsInline></video>
     {/* <!-- multimedia --> */}
@@ -427,7 +427,7 @@ export const HERO_MULTIMEDIA_BOTONES = `<div class="container-headers">
     <div class="header-backdrop"></div>
   </header>
 
-  <header class="hero-landing hero-video ob-hero">
+  <header class="hero-landing  ">
     {/* <!-- multimedia --> */}
     <video src={'/images/hero/videoplayback.mp4'} autoPlay muted loop playsInline></video>
     {/* <!-- multimedia --> */}
@@ -556,7 +556,7 @@ export const HERO_MULTIMEDIA_ETIQUETAS = `<div class="container-headers">
     <div class="header-backdrop"></div>
   </header>
 
-  <header class="hero-landing hero-video ob-hero">
+  <header class="hero-landing  ">
     {/* <!-- multimedia --> */}
     <video src={'/images/hero/videoplayback.mp4'} autoPlay muted loop playsInline></video>
     {/* <!-- multimedia --> */}
@@ -687,7 +687,7 @@ export const HERO_MULTIMEDIA_DESPLEGABLES = `<div class="container-headers">
     <div class="header-backdrop"></div>
   </header>
 
-  <header class="hero-landing hero-video ob-hero">
+  <header class="hero-landing  ">
     {/* <!-- multimedia --> */}
     <video src={'/images/hero/videoplayback.mp4'} autoPlay muted loop playsInline></video>
     {/* <!-- multimedia --> */}
@@ -887,7 +887,7 @@ export const HERO_MULTIMEDIA = `<div class="container-headers">
     <div class="header-backdrop"></div>
   </header>
 
-  <header class="hero-landing hero-video ob-hero">
+  <header class="hero-landing  ">
     {/* <!-- multimedia --> */}
     <video src='/images/hero/videoplayback.mp4' autoPlay muted loop playsInline></video>
     {/* <!-- multimedia --> */}

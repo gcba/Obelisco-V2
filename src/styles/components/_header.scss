@@ -579,7 +579,7 @@ $breadcrumb-divider-dark: url('data:image/svg+xml,<svg width="24" height="24" vi
 
 // Header Variante Banner
 
-// Hero header
+// Hero header multimedia
 div.container-headers {
   position: relative;
   height: 75vh;
@@ -730,7 +730,7 @@ div.container-headers {
   //  Header logo y navegación
 
   // Header multimedia y contenido
-  > header.hero-landing.ob-hero.hero-video {
+  header.hero-landing {
     position: relative;
     min-height: 0;
     flex: 1;
@@ -762,7 +762,7 @@ div.container-headers {
     }
 
     /* Contenido del hero encima del degradado */
-    .container.hero-landing-container {
+    .hero-landing-container {
       position: relative;
       z-index: 101;
       color: white;
@@ -779,8 +779,8 @@ div.container-headers {
           }
         }
 
-        div.row {
-          div.col-12.col-lg-8 {
+        div {
+          div {
             p {
               margin-bottom: 24px;
             }
@@ -789,8 +789,8 @@ div.container-headers {
       }
 
       @include media-breakpoint-down(sm) {
-        div.row {
-          div.col-12.col-lg-8 {
+        div {
+          div {
             p {
               margin-bottom: 24px;
             }
@@ -830,11 +830,11 @@ div.container-headers {
 
       // migas de pan
 
-      div.row {
+      div {
         margin-left: 0;
         margin-right: 0;
 
-        div.col-12.col-lg-8 {
+        div {
           padding: 0;
 
           h1 {
@@ -904,6 +904,7 @@ div.container-headers {
                 box-shadow: 0 0 0 0.25rem #218274;
                 outline: 0.25rem solid transparent;
                 min-height: max-content;
+                border-radius: $border-radius-6xl;
 
                 .search-results {
                   display: block;
@@ -992,4 +993,4 @@ div.container-headers {
   // Header multimedia y contenido
 }
 
-// Hero header
+// Hero header multimedia

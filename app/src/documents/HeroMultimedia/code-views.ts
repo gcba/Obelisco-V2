@@ -1,5 +1,5 @@
 export const HERO_MULTIMEDIA_IMAGEN = `<div class="container-headers">
-{/* <! -- Header logo y navegación ⬇ --> */}
+{/* Header logo y navegación ⬇  */}
   <header class="o-header navbar" role="banner">
       <a href="#main" class="skip-to-main-content-link">
       Saltar al contenido principal
@@ -11,7 +11,7 @@ export const HERO_MULTIMEDIA_IMAGEN = `<div class="container-headers">
       </a>
       <div class="navbar-login-mobile">
           <a
-          class="btn btn-lg btn-icon btn-outline-tertiary"
+          class="btn btn-lg btn-icon btn-outline-light"
           href="#"
           target="_blank"
           >
@@ -75,15 +75,15 @@ export const HERO_MULTIMEDIA_IMAGEN = `<div class="container-headers">
   </header>
 
   <header class="hero-landing  ">
-    {/* <!-- multimedia --> */}
+    {/*  multimedia  */}
     <img src="/Obelisco-V2/images/hero/hero_multimedia.jpg" alt="Imagen de fondo" />
-    {/* <!-- multimedia --> */}
+    {/*  multimedia  */}
 
-    {/* <!-- capa gradiente --> */}
+    {/*  capa gradiente  */}
     <div class="ob-bg"></div>
-    {/* <!-- capa gradiente --> */}
+    {/*  capa gradiente  */}
 
-    {/* <!-- contenido, título, bajada, accionables --> */}
+    {/*  contenido, título, bajada, accionables  */}
     <div class="container hero-landing-container">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -167,7 +167,7 @@ export const HERO_MULTIMEDIA_IMAGEN = `<div class="container-headers">
         </div>
       </div>
     </div>
-    {/* <!-- contenido, título, bajada, accionables --> */}
+    {/*  contenido, título, bajada, accionables  */}
 
 
   </header>
@@ -177,8 +177,8 @@ export const HERO_MULTIMEDIA_IMAGEN = `<div class="container-headers">
 `;
 
 export const HERO_MULTIMEDIA_CAMPO_BUSCADOR = `<div class="container-headers">
-{/* <! -- Header logo y navegación ⬇ --> */}
-  <header class="o-header navbar" role="banner">
+{/* Header logo y navegación ⬇  */}
+  <header class="o-header hero-navbar navbar" role="banner">
       <a href="#main" class="skip-to-main-content-link">
       Saltar al contenido principal
       </a>
@@ -189,7 +189,7 @@ export const HERO_MULTIMEDIA_CAMPO_BUSCADOR = `<div class="container-headers">
       </a>
       <div class="navbar-login-mobile">
           <a
-          class="btn btn-lg btn-icon btn-outline-tertiary"
+          class="btn btn-lg btn-icon btn-outline-light"
           href="#"
           target="_blank"
           >
@@ -253,15 +253,15 @@ export const HERO_MULTIMEDIA_CAMPO_BUSCADOR = `<div class="container-headers">
   </header>
 
   <header class="hero-landing  ">
-    {/* <!-- multimedia --> */}
+    {/*  multimedia  */}
     <video src={'/images/hero/videoplayback.mp4'} autoPlay muted loop playsInline></video>
-    {/* <!-- multimedia --> */}
+    {/*  multimedia  */}
 
-    {/* <!-- capa gradiente --> */}
+    {/*  capa gradiente  */}
     <div class="ob-bg"></div>
-    {/* <!-- capa gradiente --> */}
+    {/*  capa gradiente  */}
 
-    {/* <!-- contenido, título, bajada, accionables --> */}
+    {/*  contenido, título, bajada, accionables  */}
     <div class="container hero-landing-container">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -345,14 +345,14 @@ export const HERO_MULTIMEDIA_CAMPO_BUSCADOR = `<div class="container-headers">
         </div>
       </div>
     </div>
-    {/* <!-- contenido, título, bajada, accionables --> */}
+    {/*  contenido, título, bajada, accionables  */}
 
   </header>
 </div>
 `;
 
 export const HERO_MULTIMEDIA_BOTONES = `<div class="container-headers">
-{/* <!-- Header logo y navegación ⬇ --> */}
+{/*  Header logo y navegación ⬇  */}
   <header class="o-header navbar" role="banner">
       <a href="#main" class="skip-to-main-content-link">
       Saltar al contenido principal
@@ -364,7 +364,7 @@ export const HERO_MULTIMEDIA_BOTONES = `<div class="container-headers">
       </a>
       <div class="navbar-login-mobile">
           <a
-          class="btn btn-lg btn-icon btn-outline-tertiary"
+          class="btn btn-lg btn-icon btn-outline-light"
           href="#"
           target="_blank"
           >
@@ -428,15 +428,15 @@ export const HERO_MULTIMEDIA_BOTONES = `<div class="container-headers">
   </header>
 
   <header class="hero-landing  ">
-    {/* <!-- multimedia --> */}
+    {/*  multimedia  */}
     <video src={'/images/hero/videoplayback.mp4'} autoPlay muted loop playsInline></video>
-    {/* <!-- multimedia --> */}
+    {/*  multimedia  */}
 
-    {/* <!-- capa gradiente --> */}
+    {/*  capa gradiente  */}
     <div class="ob-bg"></div>
-    {/* <!-- capa gradiente --> */}
+    {/*  capa gradiente  */}
 
-    {/* <!-- contenido, título, bajada, accionables --> */}
+    {/*  contenido, título, bajada, accionables  */}
     <div class="container hero-landing-container">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -471,7 +471,7 @@ export const HERO_MULTIMEDIA_BOTONES = `<div class="container-headers">
         </div>
       </div>
     </div>
-    {/* <!-- contenido, título, bajada, accionables --> */}
+    {/*  contenido, título, bajada, accionables  */}
 
 
   </header>
@@ -481,7 +481,7 @@ export const HERO_MULTIMEDIA_BOTONES = `<div class="container-headers">
 `;
 
 export const HERO_MULTIMEDIA_ETIQUETAS = `<div class="container-headers">
-{/* <!-- Header logo y navegación ⬇ --> */}
+{/*  Header logo y navegación ⬇  */}
   <header class="o-header navbar" role="banner">
       <a href="#main" class="skip-to-main-content-link">
       Saltar al contenido principal
@@ -493,7 +493,7 @@ export const HERO_MULTIMEDIA_ETIQUETAS = `<div class="container-headers">
       </a>
       <div class="navbar-login-mobile">
           <a
-          class="btn btn-lg btn-icon btn-outline-tertiary"
+          class="btn btn-lg btn-icon btn-outline-light"
           href="#"
           target="_blank"
           >
@@ -557,15 +557,15 @@ export const HERO_MULTIMEDIA_ETIQUETAS = `<div class="container-headers">
   </header>
 
   <header class="hero-landing  ">
-    {/* <!-- multimedia --> */}
+    {/*  multimedia  */}
     <video src={'/images/hero/videoplayback.mp4'} autoPlay muted loop playsInline></video>
-    {/* <!-- multimedia --> */}
+    {/*  multimedia  */}
 
-    {/* <!-- capa gradiente --> */}
+    {/*  capa gradiente  */}
     <div class="ob-bg"></div>
-    {/* <!-- capa gradiente --> */}
+    {/*  capa gradiente  */}
 
-    {/* <!-- contenido, título, bajada, accionables --> */}
+    {/*  contenido, título, bajada, accionables  */}
     <div class="container hero-landing-container">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -602,7 +602,7 @@ export const HERO_MULTIMEDIA_ETIQUETAS = `<div class="container-headers">
         </div>
       </div>
     </div>
-    {/* <!-- contenido, título, bajada, accionables --> */}
+    {/*  contenido, título, bajada, accionables  */}
 
 
   </header>
@@ -612,7 +612,7 @@ export const HERO_MULTIMEDIA_ETIQUETAS = `<div class="container-headers">
 `;
 
 export const HERO_MULTIMEDIA_DESPLEGABLES = `<div class="container-headers">
-{/* <!-- Header logo y navegación ⬇ --> */}
+{/*  Header logo y navegación ⬇  */}
   <header class="o-header navbar" role="banner">
       <a href="#main" class="skip-to-main-content-link">
       Saltar al contenido principal
@@ -624,7 +624,7 @@ export const HERO_MULTIMEDIA_DESPLEGABLES = `<div class="container-headers">
       </a>
       <div class="navbar-login-mobile">
           <a
-          class="btn btn-lg btn-icon btn-outline-tertiary"
+          class="btn btn-lg btn-icon btn-outline-light"
           href="#"
           target="_blank"
           >
@@ -688,15 +688,15 @@ export const HERO_MULTIMEDIA_DESPLEGABLES = `<div class="container-headers">
   </header>
 
   <header class="hero-landing  ">
-    {/* <!-- multimedia --> */}
+    {/*  multimedia  */}
     <video src={'/images/hero/videoplayback.mp4'} autoPlay muted loop playsInline></video>
-    {/* <!-- multimedia --> */}
+    {/*  multimedia  */}
 
-    {/* <!-- capa gradiente --> */}
+    {/*  capa gradiente  */}
     <div class="ob-bg"></div>
-    {/* <!-- capa gradiente --> */}
+    {/*  capa gradiente  */}
 
-    {/* <!-- contenido, título, bajada, accionables --> */}
+    {/*  contenido, título, bajada, accionables  */}
     <div class="container hero-landing-container">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -802,7 +802,7 @@ export const HERO_MULTIMEDIA_DESPLEGABLES = `<div class="container-headers">
         </div>
       </div>
     </div>
-    {/* <!-- contenido, título, bajada, accionables --> */}
+    {/*  contenido, título, bajada, accionables  */}
 
 
   </header>
@@ -812,7 +812,7 @@ export const HERO_MULTIMEDIA_DESPLEGABLES = `<div class="container-headers">
 `;
 
 export const HERO_MULTIMEDIA = `<div class="container-headers">
-{/* <! -- Header logo y navegación ⬇ --> */}
+{/* Header logo y navegación ⬇  */}
   <header class="o-header navbar" role="banner">
       <a href="#main" class="skip-to-main-content-link">
       Saltar al contenido principal
@@ -824,7 +824,7 @@ export const HERO_MULTIMEDIA = `<div class="container-headers">
       </a>
       <div class="navbar-login-mobile">
           <a
-          class="btn btn-lg btn-icon btn-outline-tertiary"
+          class="btn btn-lg btn-icon btn-outline-light"
           href="#"
           target="_blank"
           >
@@ -888,15 +888,15 @@ export const HERO_MULTIMEDIA = `<div class="container-headers">
   </header>
 
   <header class="hero-landing  ">
-    {/* <!-- multimedia --> */}
+    {/*  multimedia  */}
     <video src='/images/hero/videoplayback.mp4' autoPlay muted loop playsInline></video>
-    {/* <!-- multimedia --> */}
+    {/*  multimedia  */}
 
-    {/* <!-- capa gradiente --> */}
+    {/*  capa gradiente  */}
     <div class="ob-bg"></div>
-    {/* <!-- capa gradiente --> */}
+    {/*  capa gradiente  */}
 
-    {/* <!-- contenido, título, bajada, accionables --> */}
+    {/*  contenido, título, bajada, accionables  */}
     <div class="container hero-landing-container">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -980,7 +980,7 @@ export const HERO_MULTIMEDIA = `<div class="container-headers">
         </div>
       </div>
     </div>
-    {/* <!-- contenido, título, bajada, accionables --> */}
+    {/*  contenido, título, bajada, accionables  */}
 
 
   </header>

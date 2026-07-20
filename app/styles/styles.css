@@ -12290,7 +12290,7 @@ blockquote .author {
   line-clamp: 1;
 }
 
-.ellipsis-2, .panel-lateral .panel-body .panel-title, .panel-horizontal-content .panel-horizontal .panel-body .panel-title, .panel-horizontal-container .panel-horizontal .panel-body .panel-title, .panel-vertical .panel-body .panel-title {
+.ellipsis-2, .card.card-horizontal.visual-icon-borderless .card-body .card-title, .panel-lateral .panel-body .panel-title, .panel-horizontal-content .panel-horizontal .panel-body .panel-title, .panel-horizontal-container .panel-horizontal .panel-body .panel-title, .panel-vertical .panel-body .panel-title {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -20695,6 +20695,43 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
   flex-direction: column;
   justify-content: flex-start;
   padding: 1.5rem 1rem;
+}
+.card.card-horizontal.visual-icon-borderless {
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  flex-direction: column;
+  outline: 0;
+}
+.card.card-horizontal.visual-icon-borderless .visual-icon-container {
+  height: 80px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+}
+.card.card-horizontal.visual-icon-borderless .visual-icon-container .card-icon {
+  margin: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  line-height: 1;
+  background: transparent;
+}
+.card.card-horizontal.visual-icon-borderless .visual-icon-container::after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 32px;
+  height: 32px;
+  background: url('data:image/svg+xml,<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.740699" y="0.740699" width="30.5186" height="30.5186" rx="15.2593" stroke="%2338485C" stroke-width="1.4814"/><path d="M12.3427 19.7034L11.5557 18.9164L17.8053 12.6667H12.2964V11.5557H19.7034V18.9627H18.5923V13.4537L12.3427 19.7034Z" fill="%2338485C"/></svg>') center/contain no-repeat;
+}
+.card.card-horizontal.visual-icon-borderless .card-body {
+  padding: 24px 32px;
 }
 .card .card-body .card-title a:hover {
   color: #274986;

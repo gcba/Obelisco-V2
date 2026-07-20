@@ -89,8 +89,8 @@ const CardDocs: React.FC = () => {
         <CodeBox codeHTML={CARD_VISUAL_SIN_BORDE}>
           <div className="card-vertical-box-sizing">
             <div className="container">
-              <div className="card card-horizontal visual-sin-borde bg-light">
-                <div className="visual-sin-borde-icon-container">
+              <div className="card card-horizontal visual-icon-borderless bg-light">
+                <div className="visual-icon-container">
                   <span className="material-symbols-rounded card-icon" aria-hidden="true">
                     info
                   </span>
@@ -104,8 +104,8 @@ const CardDocs: React.FC = () => {
                 </div>
               </div>
               <br />
-              <div className="card card-horizontal visual-sin-borde">
-                <div className="visual-sin-borde-icon-container">
+              <div className="card card-horizontal visual-icon-borderless">
+                <div className="visual-icon-container">
                   <span className="material-symbols-rounded card-icon" aria-hidden="true">
                     info
                   </span>

@@ -199,7 +199,7 @@ $padding-card-icon-sin-borde: 24px;
     }
 
     // Tarjeta horizontal con ícono, sin borde
-    &.visual-sin-borde {
+    &.visual-icon-borderless {
       width: 100%;
       min-width: 100%;
       height: 100%;
@@ -209,7 +209,7 @@ $padding-card-icon-sin-borde: 24px;
       flex-direction: column;
       outline: 0;
 
-      .visual-sin-borde-icon-container {
+      .visual-icon-container {
         height: 80px;
         padding: $padding-card-icon-sin-borde;
         display: flex;

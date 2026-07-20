@@ -204,8 +204,6 @@ $padding-card-icon-sin-borde: 24px;
       min-width: 100%;
       height: 100%;
       min-height: 100%;
-
-      // background-color: $light;
       flex-direction: column;
       outline: 0;
 
@@ -230,7 +228,7 @@ $padding-card-icon-sin-borde: 24px;
         &::after {
           content: '';
           position: absolute;
-          top: $padding-card-icon-sin-borde; // tiene que ser el mismo valor que el padding
+          top: $padding-card-icon-sin-borde;
           right: $padding-card-icon-sin-borde;
           width: 32px;
           height: 32px;

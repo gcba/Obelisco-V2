@@ -230,16 +230,16 @@ $breadcrumb-divider-dark: url('data:image/svg+xml,<svg width="24" height="24" vi
         background-color: transparent;
       }
 
-      .header-backdrop {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1040;
-        width: 100%;
-        height: 100%;
-        background-color: $black;
-        opacity: 0.25;
-      }
+      // .header-backdrop {
+      //   position: fixed;
+      //   top: 0;
+      //   left: 0;
+      //   z-index: 1040;
+      //   width: 100%;
+      //   height: 100%;
+      //   background-color: $black;
+      //   opacity: 0.25;
+      // }
     }
   }
 
@@ -611,9 +611,11 @@ div.container-headers {
           nav {
             ul.nav.nav-pills.nav-sections {
               li.dropdown {
-                button.btn.btn-dropdown.btn-lg.show,
-                .btn-dropdown-icon {
-                  color: $white;
+                button.btn.btn-dropdown.btn-lg.show {
+                  .btn-dropdown-icon,
+                  .btn-dropdown-text {
+                    color: $white;
+                  }
                 }
               }
             }
@@ -630,15 +632,15 @@ div.container-headers {
           background: transparent;
         }
 
-        .header-backdrop {
-          position: absolute;
-          inset: 0;
-          width: 100%;
-          height: 100%;
-          z-index: 1040;
+        // .header-backdrop {
+        //   position: absolute;
+        //   inset: 0;
+        //   width: 100%;
+        //   height: 100%;
+        //   z-index: 1040;
 
-          // background-color: $black;
-        }
+        // background-color: $black;
+        // }
       }
     }
 

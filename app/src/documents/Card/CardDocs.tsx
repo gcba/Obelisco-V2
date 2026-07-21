@@ -23,6 +23,7 @@ import {
   VERTICAL_ICON,
   VERTICAL_IMG,
   VERTICAL_NOTICE,
+  VERTICAL_NOTICE_SIN_BORDE,
   VERTICAL_NOTICE_TRUNCATE,
 } from './code-views';
 
@@ -30,229 +31,229 @@ const basePath = '/Obelisco-V2';
 
 const CardDocs: React.FC = () => {
   const SECTIONS_DEV = [
-    {
-      title: 'Horizontal',
-      firstTitle: true,
-    },
-    {
-      subtitle: 'Con icono',
-      content: (
-        <CodeBox codeHTML={HORIZONTAL_ICON}>
-          <div className="container">
-            <div className="card-box-sizing">
-              <div className="card card-horizontal">
-                <span className="material-symbols-rounded card-icon" aria-hidden="true">
-                  info
-                </span>
-                <div className="card-body">
-                  <h3 className="card-title">
-                    <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
-                  </h3>
-                  <p className="card-text">Descripción de la tarjeta</p>
-                </div>
-              </div>
-              <br />
-              <div className="card card-horizontal">
-                <div className="d-flex w-100 card-border-left-blue">
-                  <span className="material-symbols-rounded card-icon" aria-hidden="true">
-                    info
-                  </span>
-                  <div className="card-body">
-                    <h3 className="card-title">
-                      <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
-                    </h3>
-                    <p className="card-text">Descripción de la tarjeta</p>
-                  </div>
-                </div>
-              </div>
-              <br />
-              <div className="card card-horizontal unbordered">
-                <span className="material-symbols-rounded card-icon" aria-hidden="true">
-                  info
-                </span>
-                <div className="card-body">
-                  <h3 className="card-title">
-                    <LinkClient>Título de la tarjeta</LinkClient>
-                  </h3>
-                  <p className="card-text">Descripción de la tarjeta</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </CodeBox>
-      ),
-    },
-    {
-      subtitle: 'Con imagen',
-      content: (
-        <CodeBox codeHTML={HORIZONTAL_IMG}>
-          <div className="container">
-            <div className="card-box-sizing">
-              <div className="card card-horizontal">
-                <Image
-                  src={`${basePath}/images/card-img-left.jpg`}
-                  className="card-img"
-                  alt="descripción de imagen"
-                  width={64}
-                  height={64}
-                ></Image>
-                <div className="card-body">
-                  <h3 className="card-title">
-                    <LinkClient className="card-title-link">Título de la tarjeta con más de una línea</LinkClient>
-                  </h3>
-                  <p className="card-text">Descripción de la tarjeta</p>
-                </div>
-              </div>
-              <br />
-              <div className="card card-horizontal unbordered">
-                <Image
-                  src={`${basePath}/images/card-img-left.jpg`}
-                  className="card-img"
-                  alt="descripción de imagen"
-                  width={64}
-                  height={64}
-                ></Image>
-                <div className="card-body">
-                  <h3 className="card-title">
-                    <LinkClient>Título de la tarjeta con más de una línea</LinkClient>
-                  </h3>
-                  <p className="card-text">Descripción de la tarjeta</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </CodeBox>
-      ),
-    },
-    {
-      subtitle: 'Solo texto',
-      content: (
-        <CodeBox codeHTML={HORIZONTAL_TEXT}>
-          <div className="container">
-            <div className="col-12 col-xl-8">
-              <div className="card card-horizontal">
-                <div className="card-body">
-                  <h3 className="card-title">
-                    <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
-                  </h3>
-                  <p className="card-text">Descripción de la tarjeta</p>
-                </div>
-              </div>
-              <br />
-              <div className="card card-horizontal unbordered">
-                <div className="card-body">
-                  <h3 className="card-title">
-                    <LinkClient>Título de la tarjeta</LinkClient>
-                  </h3>
-                  <p className="card-text">Descripción de la tarjeta</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </CodeBox>
-      ),
-    },
-    {
-      subtitle: 'Temática',
-      content: (
-        <CodeBox codeHTML={HORIZONTAL_THEME}>
-          <div className="container">
-            <div className="card-box-sizing">
-              <div className="card thematic">
-                <Image
-                  src={`${basePath}/images/card-illustration.svg`}
-                  className="card-img"
-                  alt="descripción de imagen"
-                  width={128}
-                  height={128}
-                ></Image>
-                <div className="card-body">
-                  <h3 className="card-title">
-                    <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
-                  </h3>
-                  <p className="card-text">Descripción de la tarjeta</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </CodeBox>
-      ),
-    },
-    {
-      title: 'Vertical',
-    },
-    {
-      subtitle: 'Con icono',
-      content: (
-        <CodeBox codeHTML={VERTICAL_ICON}>
-          <div className="container">
-            <div className="card-vertical-box-sizing">
-              <div className="card">
-                <span className="material-symbols-rounded card-icon" aria-hidden="true">
-                  info
-                </span>
-                <div className="card-body">
-                  <h3 className="card-title">
-                    <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
-                  </h3>
-                  <p className="card-text">Descripción de la tarjeta</p>
-                </div>
-              </div>
-              <br />
-              <div className="card">
-                <span className="material-symbols-rounded card-icon" aria-hidden="true">
-                  info
-                </span>
-                <div className="card-body card-border-bottom-blue">
-                  <h3 className="card-title">
-                    <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
-                  </h3>
-                  <p className="card-text">Descripción de la tarjeta</p>
-                </div>
-              </div>
-              <br />
-              <div className="card unbordered">
-                <span className="material-symbols-rounded card-icon" aria-hidden="true">
-                  info
-                </span>
-                <div className="card-body">
-                  <h3 className="card-title">
-                    <LinkClient>Título de la tarjeta</LinkClient>
-                  </h3>
-                  <p className="card-text">Descripción de la tarjeta</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </CodeBox>
-      ),
-    },
-    {
-      subtitle: 'Con imagen',
-      content: (
-        <CodeBox codeHTML={VERTICAL_IMG}>
-          <div className="container">
-            <div className="card-vertical-box-sizing">
-              <div className="card">
-                <Image
-                  src={`${basePath}/images/card-img-top.jpg`}
-                  className="card-img"
-                  alt="descripción de imagen"
-                  width={348}
-                  height={196}
-                ></Image>
-                <div className="card-body">
-                  <h3 className="card-title">
-                    <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
-                  </h3>
-                  <p className="card-text">Descripción de la tarjeta</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </CodeBox>
-      ),
-    },
+    // {
+    //   title: 'Horizontal',
+    //   firstTitle: true,
+    // },
+    // {
+    //   subtitle: 'Con icono',
+    //   content: (
+    //     <CodeBox codeHTML={HORIZONTAL_ICON}>
+    //       <div className="container">
+    //         <div className="card-box-sizing">
+    //           <div className="card card-horizontal">
+    //             <span className="material-symbols-rounded card-icon" aria-hidden="true">
+    //               info
+    //             </span>
+    //             <div className="card-body">
+    //               <h3 className="card-title">
+    //                 <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+    //               </h3>
+    //               <p className="card-text">Descripción de la tarjeta</p>
+    //             </div>
+    //           </div>
+    //           <br />
+    //           <div className="card card-horizontal">
+    //             <div className="d-flex w-100 card-border-left-blue">
+    //               <span className="material-symbols-rounded card-icon" aria-hidden="true">
+    //                 info
+    //               </span>
+    //               <div className="card-body">
+    //                 <h3 className="card-title">
+    //                   <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+    //                 </h3>
+    //                 <p className="card-text">Descripción de la tarjeta</p>
+    //               </div>
+    //             </div>
+    //           </div>
+    //           <br />
+    //           <div className="card card-horizontal unbordered">
+    //             <span className="material-symbols-rounded card-icon" aria-hidden="true">
+    //               info
+    //             </span>
+    //             <div className="card-body">
+    //               <h3 className="card-title">
+    //                 <LinkClient>Título de la tarjeta</LinkClient>
+    //               </h3>
+    //               <p className="card-text">Descripción de la tarjeta</p>
+    //             </div>
+    //           </div>
+    //         </div>
+    //       </div>
+    //     </CodeBox>
+    //   ),
+    // },
+    // {
+    //   subtitle: 'Con imagen',
+    //   content: (
+    //     <CodeBox codeHTML={HORIZONTAL_IMG}>
+    //       <div className="container">
+    //         <div className="card-box-sizing">
+    //           <div className="card card-horizontal">
+    //             <Image
+    //               src={`${basePath}/images/card-img-left.jpg`}
+    //               className="card-img"
+    //               alt="descripción de imagen"
+    //               width={64}
+    //               height={64}
+    //             ></Image>
+    //             <div className="card-body">
+    //               <h3 className="card-title">
+    //                 <LinkClient className="card-title-link">Título de la tarjeta con más de una línea</LinkClient>
+    //               </h3>
+    //               <p className="card-text">Descripción de la tarjeta</p>
+    //             </div>
+    //           </div>
+    //           <br />
+    //           <div className="card card-horizontal unbordered">
+    //             <Image
+    //               src={`${basePath}/images/card-img-left.jpg`}
+    //               className="card-img"
+    //               alt="descripción de imagen"
+    //               width={64}
+    //               height={64}
+    //             ></Image>
+    //             <div className="card-body">
+    //               <h3 className="card-title">
+    //                 <LinkClient>Título de la tarjeta con más de una línea</LinkClient>
+    //               </h3>
+    //               <p className="card-text">Descripción de la tarjeta</p>
+    //             </div>
+    //           </div>
+    //         </div>
+    //       </div>
+    //     </CodeBox>
+    //   ),
+    // },
+    // {
+    //   subtitle: 'Solo texto',
+    //   content: (
+    //     <CodeBox codeHTML={HORIZONTAL_TEXT}>
+    //       <div className="container">
+    //         <div className="col-12 col-xl-8">
+    //           <div className="card card-horizontal">
+    //             <div className="card-body">
+    //               <h3 className="card-title">
+    //                 <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+    //               </h3>
+    //               <p className="card-text">Descripción de la tarjeta</p>
+    //             </div>
+    //           </div>
+    //           <br />
+    //           <div className="card card-horizontal unbordered">
+    //             <div className="card-body">
+    //               <h3 className="card-title">
+    //                 <LinkClient>Título de la tarjeta</LinkClient>
+    //               </h3>
+    //               <p className="card-text">Descripción de la tarjeta</p>
+    //             </div>
+    //           </div>
+    //         </div>
+    //       </div>
+    //     </CodeBox>
+    //   ),
+    // },
+    // {
+    //   subtitle: 'Temática',
+    //   content: (
+    //     <CodeBox codeHTML={HORIZONTAL_THEME}>
+    //       <div className="container">
+    //         <div className="card-box-sizing">
+    //           <div className="card thematic">
+    //             <Image
+    //               src={`${basePath}/images/card-illustration.svg`}
+    //               className="card-img"
+    //               alt="descripción de imagen"
+    //               width={128}
+    //               height={128}
+    //             ></Image>
+    //             <div className="card-body">
+    //               <h3 className="card-title">
+    //                 <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+    //               </h3>
+    //               <p className="card-text">Descripción de la tarjeta</p>
+    //             </div>
+    //           </div>
+    //         </div>
+    //       </div>
+    //     </CodeBox>
+    //   ),
+    // },
+    // {
+    //   title: 'Vertical',
+    // },
+    // {
+    //   subtitle: 'Con icono',
+    //   content: (
+    //     <CodeBox codeHTML={VERTICAL_ICON}>
+    //       <div className="container">
+    //         <div className="card-vertical-box-sizing">
+    //           <div className="card">
+    //             <span className="material-symbols-rounded card-icon" aria-hidden="true">
+    //               info
+    //             </span>
+    //             <div className="card-body">
+    //               <h3 className="card-title">
+    //                 <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+    //               </h3>
+    //               <p className="card-text">Descripción de la tarjeta</p>
+    //             </div>
+    //           </div>
+    //           <br />
+    //           <div className="card">
+    //             <span className="material-symbols-rounded card-icon" aria-hidden="true">
+    //               info
+    //             </span>
+    //             <div className="card-body card-border-bottom-blue">
+    //               <h3 className="card-title">
+    //                 <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+    //               </h3>
+    //               <p className="card-text">Descripción de la tarjeta</p>
+    //             </div>
+    //           </div>
+    //           <br />
+    //           <div className="card unbordered">
+    //             <span className="material-symbols-rounded card-icon" aria-hidden="true">
+    //               info
+    //             </span>
+    //             <div className="card-body">
+    //               <h3 className="card-title">
+    //                 <LinkClient>Título de la tarjeta</LinkClient>
+    //               </h3>
+    //               <p className="card-text">Descripción de la tarjeta</p>
+    //             </div>
+    //           </div>
+    //         </div>
+    //       </div>
+    //     </CodeBox>
+    //   ),
+    // },
+    // {
+    //   subtitle: 'Con imagen',
+    //   content: (
+    //     <CodeBox codeHTML={VERTICAL_IMG}>
+    //       <div className="container">
+    //         <div className="card-vertical-box-sizing">
+    //           <div className="card">
+    //             <Image
+    //               src={`${basePath}/images/card-img-top.jpg`}
+    //               className="card-img"
+    //               alt="descripción de imagen"
+    //               width={348}
+    //               height={196}
+    //             ></Image>
+    //             <div className="card-body">
+    //               <h3 className="card-title">
+    //                 <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+    //               </h3>
+    //               <p className="card-text">Descripción de la tarjeta</p>
+    //             </div>
+    //           </div>
+    //         </div>
+    //       </div>
+    //     </CodeBox>
+    //   ),
+    // },
     {
       subtitle: 'Noticia',
       content: (
@@ -289,14 +290,19 @@ const CardDocs: React.FC = () => {
               </div>
             </div>
           </CodeBox>
-          <br />
-          <p>A continuación, se muestra variante Noticias con el título truncado: </p>
-          <CodeBox codeHTML={VERTICAL_NOTICE_TRUNCATE}>
+        </>
+      ),
+    },
+    {
+      subtitle: 'Variante noticia sin borde',
+      content: (
+        <>
+          <CodeBox codeHTML={VERTICAL_NOTICE_SIN_BORDE}>
             <div className="container">
               <div className="card-vertical-box-sizing">
-                <div className="card">
+                <div className="card card-news">
                   <Image
-                    src="https://gcba.github.io/Obelisco/cards/img-top.jpg"
+                    src={`${basePath}/images/tarjetas/card-news.svg`}
                     className="card-img"
                     alt="descripción de imagen"
                     width={348}
@@ -308,16 +314,13 @@ const CardDocs: React.FC = () => {
                       <span className="badge badge-s-default badge-sm">Etiqueta</span>
                     </div>
                     <h3 className="card-title">
-                      <LinkClient className="card-title-link ellipsis-3">
-                        Título de la tarjeta Noticias truncado con texto extendido que supera las tres líneas de
-                        longitud.
-                      </LinkClient>
+                      <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
                     </h3>
                     <p className="card-text">Descripción de la tarjeta</p>
                     <div className="card-info">
                       <div>
                         <small>
-                          <span>Fecha de publicación</span>
+                          <span>Fecha de publicación: 00/00/00</span>
                         </small>
                       </div>
                     </div>

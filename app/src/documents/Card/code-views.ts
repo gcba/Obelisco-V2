@@ -149,6 +149,30 @@ export const VERTICAL_NOTICE = `
   </div>
 </div>
 `;
+
+export const VERTICAL_NOTICE_SIN_BORDE = `
+<div class="card card-news">
+  <img class="card-img" src="/card-img-top.jpg" alt="descripción de imagen" />
+  <div class="card-body">
+    <div class="card-badges">
+        <span class="badge badge-s-default badge-sm">Etiqueta</span>
+        <span class="badge badge-s-default badge-sm">Etiqueta</span>
+    </div>
+    <h3 class="card-title">
+      <a href="#" class="card-title-link">Título de la tarjeta</a>
+    </h3>
+    <p class="card-text">Descripción de la tarjeta</p>
+    <div class="card-info">
+      <div>
+        <small>
+          <span>Fecha de publicación</span>
+        </small>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 export const VERTICAL_NOTICE_TRUNCATE = `
 <div class="card">
   <img class="card-img" src="/card-img-top.jpg" alt="descripción de imagen" />

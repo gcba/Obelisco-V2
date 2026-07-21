@@ -144,7 +144,7 @@ $card-info-icon-size: 1rem;
     background: transparent;
   }
 
-  // Clase para Tarjeta de eventos
+  // Clase para Tarjeta de eventos. Vertical.
   &.card-eventos {
     min-height: 576px;
 
@@ -165,6 +165,7 @@ $card-info-icon-size: 1rem;
       }
     }
   }
+  // Clase para Tarjeta de eventos. Vertical.
 
   &.card-horizontal {
     flex-direction: row;
@@ -200,7 +201,7 @@ $card-info-icon-size: 1rem;
   // Estilos para estados hover, focus
   @include card-states-styles;
 
-  //Estilos para tarjeta horizontal temática
+  //Estilos para tarjeta temática. Horizontal.
   &.thematic {
     flex-direction: column;
     padding: 16px;
@@ -234,7 +235,7 @@ $card-info-icon-size: 1rem;
     }
   }
 
-  // Tarjeta de impacto visual
+  // Tarjeta de impacto visual. Vertical.
   &.card-img-bg {
     position: relative;
     width: 100%;
@@ -302,8 +303,35 @@ $card-info-icon-size: 1rem;
       z-index: 1;
     }
   }
+  // Tarjeta de impacto visual. Vertical.
 
-  // Tarjeta de impacto visual
+  // Variante de noticias sin borde. Vertical.
+  &.card-news {
+    width: 348px;
+    max-width: 348px;
+    height: 576px;
+    max-height: 576px;
+    @extend .unbordered;
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .card-img {
+      border-radius: $border-radius-6xl;
+      height: 400px;
+    }
+
+    .card-badges {
+      padding-bottom: 16px;
+    }
+
+    .card-info {
+      margin-top: 1rem;
+    }
+  }
+  // Variante de noticias sin borde. Vertical.
 }
 
 //Estilos para lista de tarjetas verticales desplazable

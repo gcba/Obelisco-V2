@@ -32,29 +32,89 @@ export const HERO_MULTIMEDIA_IMAGEN = `<div class="container-headers">
           <div class="navbar-content">
           <div class="navbar-sections">
               <nav>
-              <p class="navbar-sections-title">Secciones</p>
-              <ul class="nav nav-pills nav-sections">
-                      <li class="nav-item">
-                          <a class="nav-link nav-link-lg"
-                          href="https://buenosaires.gob.ar/areasdegobierno"
-                          >
-                              <span>Áreas de gobierno</span>
-                          </a>
-                      </li>
-
-                      <li class="nav-item">
-                          <a class="nav-link nav-link-lg"
-                          href="https://buenosaires.gob.ar/vicejefatura/ba-discapacidad"
-                          >
-                              <span>BA Discapacidad</span>
-                          </a>
-                      </li>
-
-                      <li class="nav-item">
-                          <a class="nav-link nav-link-lg" href="#">
-                          <span>Trámites y servicios</span>
-                          </a>
-                      </li>
+                <p class="navbar-sections-title">Secciones</p>
+                  <ul class="nav nav-pills nav-sections">
+                    <li class="dropdown">
+                        <button
+                        type="button"
+                        class="btn btn-dropdown btn-lg"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        >
+                        <span class="btn-dropdown-text ellipsis-1">Areas de gobierno</span>
+                        <span class="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                            expand_more
+                        </span>
+                        </button>
+                        <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item item-link" href="#">
+                            <span class="item-text">Ver más</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                        </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-lg"
+                        href="https://buenosaires.gob.ar/vicejefatura/ba-discapacidad"
+                        >
+                            <span>BA Discapacidad</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <button
+                        type="button"
+                        class="btn btn-dropdown btn-lg"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        >
+                        <span class="btn-dropdown-text ellipsis-1">Trámites y servidios</span>
+                        <span class="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                            expand_more
+                        </span>
+                        </button>
+                        <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item item-link" href="#">
+                            <span class="item-text">Ver más</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                        </a>
+                        </div>
+                    </li>
                   </ul>
               </nav>
           </div>
@@ -210,29 +270,89 @@ export const HERO_MULTIMEDIA_CAMPO_BUSCADOR = `<div class="container-headers">
           <div class="navbar-content">
           <div class="navbar-sections">
               <nav>
-              <p class="navbar-sections-title">Secciones</p>
-              <ul class="nav nav-pills nav-sections">
-                      <li class="nav-item">
-                          <a class="nav-link nav-link-lg"
-                          href="https://buenosaires.gob.ar/areasdegobierno"
-                          >
-                              <span>Áreas de gobierno</span>
-                          </a>
-                      </li>
-
-                      <li class="nav-item">
-                          <a class="nav-link nav-link-lg"
-                          href="https://buenosaires.gob.ar/vicejefatura/ba-discapacidad"
-                          >
-                              <span>BA Discapacidad</span>
-                          </a>
-                      </li>
-
-                      <li class="nav-item">
-                          <a class="nav-link nav-link-lg" href="#">
-                          <span>Trámites y servicios</span>
-                          </a>
-                      </li>
+                <p class="navbar-sections-title">Secciones</p>
+                  <ul class="nav nav-pills nav-sections">
+                    <li class="dropdown">
+                        <button
+                        type="button"
+                        class="btn btn-dropdown btn-lg"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        >
+                        <span class="btn-dropdown-text ellipsis-1">Areas de gobierno</span>
+                        <span class="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                            expand_more
+                        </span>
+                        </button>
+                        <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item item-link" href="#">
+                            <span class="item-text">Ver más</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                        </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-lg"
+                        href="https://buenosaires.gob.ar/vicejefatura/ba-discapacidad"
+                        >
+                            <span>BA Discapacidad</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <button
+                        type="button"
+                        class="btn btn-dropdown btn-lg"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        >
+                        <span class="btn-dropdown-text ellipsis-1">Trámites y servidios</span>
+                        <span class="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                            expand_more
+                        </span>
+                        </button>
+                        <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item item-link" href="#">
+                            <span class="item-text">Ver más</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                        </a>
+                        </div>
+                    </li>
                   </ul>
               </nav>
           </div>
@@ -385,29 +505,89 @@ export const HERO_MULTIMEDIA_BOTONES = `<div class="container-headers">
           <div class="navbar-content">
           <div class="navbar-sections">
               <nav>
-              <p class="navbar-sections-title">Secciones</p>
-              <ul class="nav nav-pills nav-sections">
-                      <li class="nav-item">
-                          <a class="nav-link nav-link-lg"
-                          href="https://buenosaires.gob.ar/areasdegobierno"
-                          >
-                              <span>Áreas de gobierno</span>
-                          </a>
-                      </li>
-
-                      <li class="nav-item">
-                          <a class="nav-link nav-link-lg"
-                          href="https://buenosaires.gob.ar/vicejefatura/ba-discapacidad"
-                          >
-                              <span>BA Discapacidad</span>
-                          </a>
-                      </li>
-
-                      <li class="nav-item">
-                          <a class="nav-link nav-link-lg" href="#">
-                          <span>Trámites y servicios</span>
-                          </a>
-                      </li>
+                <p class="navbar-sections-title">Secciones</p>
+                  <ul class="nav nav-pills nav-sections">
+                    <li class="dropdown">
+                        <button
+                        type="button"
+                        class="btn btn-dropdown btn-lg"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        >
+                        <span class="btn-dropdown-text ellipsis-1">Areas de gobierno</span>
+                        <span class="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                            expand_more
+                        </span>
+                        </button>
+                        <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item item-link" href="#">
+                            <span class="item-text">Ver más</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                        </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-lg"
+                        href="https://buenosaires.gob.ar/vicejefatura/ba-discapacidad"
+                        >
+                            <span>BA Discapacidad</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <button
+                        type="button"
+                        class="btn btn-dropdown btn-lg"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        >
+                        <span class="btn-dropdown-text ellipsis-1">Trámites y servidios</span>
+                        <span class="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                            expand_more
+                        </span>
+                        </button>
+                        <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item item-link" href="#">
+                            <span class="item-text">Ver más</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                        </a>
+                        </div>
+                    </li>
                   </ul>
               </nav>
           </div>
@@ -514,29 +694,89 @@ export const HERO_MULTIMEDIA_ETIQUETAS = `<div class="container-headers">
           <div class="navbar-content">
           <div class="navbar-sections">
               <nav>
-              <p class="navbar-sections-title">Secciones</p>
-              <ul class="nav nav-pills nav-sections">
-                      <li class="nav-item">
-                          <a class="nav-link nav-link-lg"
-                          href="https://buenosaires.gob.ar/areasdegobierno"
-                          >
-                              <span>Áreas de gobierno</span>
-                          </a>
-                      </li>
-
-                      <li class="nav-item">
-                          <a class="nav-link nav-link-lg"
-                          href="https://buenosaires.gob.ar/vicejefatura/ba-discapacidad"
-                          >
-                              <span>BA Discapacidad</span>
-                          </a>
-                      </li>
-
-                      <li class="nav-item">
-                          <a class="nav-link nav-link-lg" href="#">
-                          <span>Trámites y servicios</span>
-                          </a>
-                      </li>
+                <p class="navbar-sections-title">Secciones</p>
+                  <ul class="nav nav-pills nav-sections">
+                    <li class="dropdown">
+                        <button
+                        type="button"
+                        class="btn btn-dropdown btn-lg"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        >
+                        <span class="btn-dropdown-text ellipsis-1">Areas de gobierno</span>
+                        <span class="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                            expand_more
+                        </span>
+                        </button>
+                        <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item item-link" href="#">
+                            <span class="item-text">Ver más</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                        </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-lg"
+                        href="https://buenosaires.gob.ar/vicejefatura/ba-discapacidad"
+                        >
+                            <span>BA Discapacidad</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <button
+                        type="button"
+                        class="btn btn-dropdown btn-lg"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        >
+                        <span class="btn-dropdown-text ellipsis-1">Trámites y servidios</span>
+                        <span class="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                            expand_more
+                        </span>
+                        </button>
+                        <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item item-link" href="#">
+                            <span class="item-text">Ver más</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                        </a>
+                        </div>
+                    </li>
                   </ul>
               </nav>
           </div>
@@ -645,29 +885,89 @@ export const HERO_MULTIMEDIA_DESPLEGABLES = `<div class="container-headers">
           <div class="navbar-content">
           <div class="navbar-sections">
               <nav>
-              <p class="navbar-sections-title">Secciones</p>
-              <ul class="nav nav-pills nav-sections">
-                      <li class="nav-item">
-                          <a class="nav-link nav-link-lg"
-                          href="https://buenosaires.gob.ar/areasdegobierno"
-                          >
-                              <span>Áreas de gobierno</span>
-                          </a>
-                      </li>
-
-                      <li class="nav-item">
-                          <a class="nav-link nav-link-lg"
-                          href="https://buenosaires.gob.ar/vicejefatura/ba-discapacidad"
-                          >
-                              <span>BA Discapacidad</span>
-                          </a>
-                      </li>
-
-                      <li class="nav-item">
-                          <a class="nav-link nav-link-lg" href="#">
-                          <span>Trámites y servicios</span>
-                          </a>
-                      </li>
+                <p class="navbar-sections-title">Secciones</p>
+                  <ul class="nav nav-pills nav-sections">
+                    <li class="dropdown">
+                        <button
+                        type="button"
+                        class="btn btn-dropdown btn-lg"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        >
+                        <span class="btn-dropdown-text ellipsis-1">Areas de gobierno</span>
+                        <span class="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                            expand_more
+                        </span>
+                        </button>
+                        <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item item-link" href="#">
+                            <span class="item-text">Ver más</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                        </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-lg"
+                        href="https://buenosaires.gob.ar/vicejefatura/ba-discapacidad"
+                        >
+                            <span>BA Discapacidad</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <button
+                        type="button"
+                        class="btn btn-dropdown btn-lg"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        >
+                        <span class="btn-dropdown-text ellipsis-1">Trámites y servidios</span>
+                        <span class="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                            expand_more
+                        </span>
+                        </button>
+                        <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item item-link" href="#">
+                            <span class="item-text">Ver más</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                        </a>
+                        </div>
+                    </li>
                   </ul>
               </nav>
           </div>
@@ -845,91 +1145,89 @@ export const HERO_MULTIMEDIA = `<div class="container-headers">
           <div class="navbar-content">
           <div class="navbar-sections">
               <nav>
-              <p class="navbar-sections-title">Secciones</p>
-              <ul class="nav nav-pills nav-sections">
-                      <li class="dropdown">
-                          <button
-                          type="button"
-                          class="btn btn-dropdown btn-lg"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                          >
-                          <span class="btn-dropdown-text ellipsis-1">Areas de gobierno</span>
-                          <span class="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
-                              expand_more
-                          </span>
-                          </button>
-                          <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">
-                              <span class="item-text">Enlace de navegación</span>
-                          </a>
-                          <a class="dropdown-item" href="#">
-                              <span class="item-text">Enlace de navegación</span>
-                          </a>
-                          <a class="dropdown-item" href="#">
-                              <span class="item-text">Enlace de navegación</span>
-                          </a>
-                          <a class="dropdown-item" href="#">
-                              <span class="item-text">Enlace de navegación</span>
-                          </a>
-                          <a class="dropdown-item" href="#">
-                              <span class="item-text">Enlace de navegación</span>
-                          </a>
-                          <a class="dropdown-item" href="#">
-                              <span class="item-text">Enlace de navegación</span>
-                          </a>
-                          <a class="dropdown-item item-link" href="#">
-                              <span class="item-text">Ver más</span>
-                              <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
-                          </a>
-                          </div>
-                      </li>
-
-                      <li class="nav-item">
-                          <a class="nav-link nav-link-lg"
-                          href="https://buenosaires.gob.ar/vicejefatura/ba-discapacidad"
-                          >
-                              <span>BA Discapacidad</span>
-                          </a>
-                      </li>
-
-                      <li class="dropdown">
-                          <button
-                          type="button"
-                          class="btn btn-dropdown btn-lg"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                          >
-                          <span class="btn-dropdown-text ellipsis-1">Trámites y servidios</span>
-                          <span class="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
-                              expand_more
-                          </span>
-                          </button>
-                          <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">
-                              <span class="item-text">Enlace de navegación</span>
-                          </a>
-                          <a class="dropdown-item" href="#">
-                              <span class="item-text">Enlace de navegación</span>
-                          </a>
-                          <a class="dropdown-item" href="#">
-                              <span class="item-text">Enlace de navegación</span>
-                          </a>
-                          <a class="dropdown-item" href="#">
-                              <span class="item-text">Enlace de navegación</span>
-                          </a>
-                          <a class="dropdown-item" href="#">
-                              <span class="item-text">Enlace de navegación</span>
-                          </a>
-                          <a class="dropdown-item" href="#">
-                              <span class="item-text">Enlace de navegación</span>
-                          </a>
-                          <a class="dropdown-item item-link" href="#">
-                              <span class="item-text">Ver más</span>
-                              <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
-                          </a>
-                          </div>
-                      </li>
+                <p class="navbar-sections-title">Secciones</p>
+                  <ul class="nav nav-pills nav-sections">
+                    <li class="dropdown">
+                        <button
+                        type="button"
+                        class="btn btn-dropdown btn-lg"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        >
+                        <span class="btn-dropdown-text ellipsis-1">Areas de gobierno</span>
+                        <span class="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                            expand_more
+                        </span>
+                        </button>
+                        <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item item-link" href="#">
+                            <span class="item-text">Ver más</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                        </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-lg"
+                        href="https://buenosaires.gob.ar/vicejefatura/ba-discapacidad"
+                        >
+                            <span>BA Discapacidad</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <button
+                        type="button"
+                        class="btn btn-dropdown btn-lg"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        >
+                        <span class="btn-dropdown-text ellipsis-1">Trámites y servidios</span>
+                        <span class="material-symbols-rounded btn-dropdown-icon" aria-label="hidden">
+                            expand_more
+                        </span>
+                        </button>
+                        <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="item-text">Enlace de navegación</span>
+                        </a>
+                        <a class="dropdown-item item-link" href="#">
+                            <span class="item-text">Ver más</span>
+                            <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+                        </a>
+                        </div>
+                    </li>
                   </ul>
               </nav>
           </div>

@@ -14,6 +14,7 @@ import {
   HERO_MULTIMEDIA_CAMPO_BUSCADOR,
   HERO_MULTIMEDIA_DESPLEGABLES,
   HERO_MULTIMEDIA_ETIQUETAS,
+  HERO_MULTIMEDIA_IMAGEN,
 } from './code-views';
 
 const ZoomContainer = ({ children }: React.PropsWithChildren) => <div style={{ zoom: 0.5 }}>{children}</div>;
@@ -26,7 +27,7 @@ const HeroMultimediaDocs: React.FC = () => {
       firstTitle: true,
       content: (
         <>
-          <CodeBox codeHTML={HERO_MULTIMEDIA}>
+          <CodeBox codeHTML={HERO_MULTIMEDIA_IMAGEN}>
             <ZoomContainer>
               <div className="container-headers">
                 {/* Header logo y navegación ⬇ */}

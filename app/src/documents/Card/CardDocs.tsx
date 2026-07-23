@@ -482,6 +482,33 @@ const CardDocs: React.FC = () => {
       ),
     },
     {
+      subtitle: 'Tarjeta de impacto visual',
+      content: (
+        <CodeBox codeHTML={TARJETAS_IMPACTO_VISUAL}>
+          <div className="card-box-sizing-columns">
+            <div className="container">
+              <div className="card-vertical-box-sizing">
+                <div className="card card-img-bg">
+                  <div className="card-badges-bg">
+                    <span className="badge badge-s-default">Etiqueta</span>
+                    <span className="badge badge-s-default">Etiqueta</span>
+                  </div>
+                  <Image
+                    src={`${basePath}/images/tarjetas/tarjeta_de_impacto_visual.jpg`}
+                    alt="descripción de imagen"
+                    width={348}
+                    height={196}
+                  />
+                  <p className="headline-lg">Título de la tarjeta</p>
+                  <a href="#" aria-label="Descripcion de tarjetas"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </CodeBox>
+      ),
+    },
+    {
       title: 'Disposición',
     },
     {
@@ -857,33 +884,6 @@ const CardDocs: React.FC = () => {
                       </small>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </CodeBox>
-      ),
-    },
-    {
-      title: 'Tarjeta de impacto visual',
-      content: (
-        <CodeBox codeHTML={TARJETAS_IMPACTO_VISUAL}>
-          <div className="card-box-sizing-columns">
-            <div className="container">
-              <div className="card-vertical-box-sizing">
-                <div className="card card-img-bg">
-                  <div className="card-badges-bg">
-                    <span className="badge badge-s-default">Etiqueta</span>
-                    <span className="badge badge-s-default">Etiqueta</span>
-                  </div>
-                  <Image
-                    src={`${basePath}/images/tarjetas/tarjeta_de_impacto_visual.jpg`}
-                    alt="descripción de imagen"
-                    width={348}
-                    height={196}
-                  />
-                  <p className="headline-lg">Título de la tarjeta</p>
-                  <a href="#" aria-label="Descripcion de tarjetas"></a>
                 </div>
               </div>
             </div>

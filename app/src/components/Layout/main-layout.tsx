@@ -26,7 +26,7 @@ export const organismsPages = [
   { text: 'Calendario', url: '/components/calendar', id: 2 },
   { text: 'Encabezado (header)', url: '/components/header', id: 3 },
   { text: 'Cabecera de página institucional', url: '/components/hero', id: 3 },
-  { text: 'Cabecera de página multimedia', url: '/components/', id: 4 },
+  { text: 'Cabecera de página multimedia', url: '/components/hero-multimedia', id: 4 },
   { text: 'Pasos de un formulario', url: '/components/steps-form', id: 5 },
   { text: 'Pie de página (footer)', url: '/components/footer', id: 6 },
   { text: 'Tablas', url: '/components/table', id: 7 },

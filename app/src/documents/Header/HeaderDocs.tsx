@@ -558,7 +558,7 @@ const HeaderDocs: React.FC = () => {
                   <p className="text-sm">Gobierno de la Ciudad de Buenos Aires</p>
                 </div>
                 {/* header banner */}
-                <header className="o-header o-header_banner navbar" role="banner">
+                <header className="o-header  navbar" role="banner">
                   <LinkClient href="#main" className="skip-to-main-content-link">
                     Saltar al contenido principal
                   </LinkClient>
@@ -587,9 +587,8 @@ const HeaderDocs: React.FC = () => {
                         <span className="btn-text">Ingresar</span>
                       </LinkClient>
                     </div>
-                    {/* Menú hamburguesa */}
                     <button
-                      className="navbar-toggler bg-white"
+                      className="navbar-toggler"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#navbarContent1"
@@ -650,7 +649,7 @@ const HeaderDocs: React.FC = () => {
                           </form>
                         </div>
                         <div className="navbar-login">
-                          <LinkClient className="btn btn-lg btn-outline-light">
+                          <LinkClient className="btn btn-lg btn-outline-tertiary">
                             <span className="material-symbols-rounded" aria-hidden="true">
                               person
                             </span>

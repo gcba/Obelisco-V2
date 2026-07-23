@@ -36,7 +36,7 @@ const HeroHeaderDocs: React.FC = () => {
             <div className="container">
               <div className="hero-container">
                 <div className="hero-box-sizing ">
-                  <header className="hero">
+                  <header className="hero bg-content-hero-light">
                     <div className="content corner">
                       <div className="d-flex flex-column">
                         <nav aria-label="Navegación secundaria">
@@ -68,7 +68,7 @@ const HeroHeaderDocs: React.FC = () => {
                       </div>
                     </div>
 
-                    <div className="aside bg-aside-hero-dark"></div>
+                    <div className="aside bg-aside-hero-light"></div>
                   </header>
                 </div>
               </div>
@@ -89,7 +89,7 @@ const HeroHeaderDocs: React.FC = () => {
             <div className="container">
               <div className="hero-container">
                 <div className="hero-box-sizing ">
-                  <header className="hero">
+                  <header className="hero bg-content-hero-dark">
                     <div className="content corner">
                       <div className="d-flex flex-column">
                         <nav aria-label="Navegación secundaria">
@@ -110,10 +110,10 @@ const HeroHeaderDocs: React.FC = () => {
 
                         {/* botones */}
                         <div className="btn-hero">
-                          <button type="button" className="btn btn-primary">
+                          <button type="button" className="btn btn-light">
                             Botón
                           </button>
-                          <button type="button" className="btn btn-outline-primary">
+                          <button type="button" className="btn btn-outline-light">
                             Botón
                           </button>
                         </div>
@@ -121,7 +121,7 @@ const HeroHeaderDocs: React.FC = () => {
                       </div>
                     </div>
 
-                    <div className="aside bg-aside-hero-dark"></div>
+                    <div className="aside bg-aside-hero-light"></div>
                   </header>
                 </div>
               </div>
@@ -138,7 +138,7 @@ const HeroHeaderDocs: React.FC = () => {
             <div className="container">
               <div className="hero-container">
                 <div className="hero-box-sizing ">
-                  <header className="hero">
+                  <header className="hero bg-content-hero-light">
                     <div className="content corner">
                       <div className="d-flex flex-column">
                         <nav aria-label="Navegación secundaria">
@@ -157,6 +157,7 @@ const HeroHeaderDocs: React.FC = () => {
                           </p>
                         </div>
 
+                        {/* accionable campo buscador */}
                         <div className="d-grid d-sm-grid d-md-flex flex-wrap search-container">
                           {/* search wrapper */}
                           <div className="search-wrapper">
@@ -213,10 +214,11 @@ const HeroHeaderDocs: React.FC = () => {
                           </div>
                           {/* search wrapper */}
                         </div>
+                        {/* accionable campo buscador */}
                       </div>
                     </div>
 
-                    <div className="aside bg-aside-hero-dark"></div>
+                    <div className="aside bg-aside-hero-light"></div>
                   </header>
                 </div>
               </div>
@@ -233,7 +235,7 @@ const HeroHeaderDocs: React.FC = () => {
             <div className="container">
               <div className="hero-container">
                 <div className="hero-box-sizing ">
-                  <header className="hero">
+                  <header className="hero bg-content-hero-dark">
                     <div className="content corner">
                       <div className="d-flex flex-column">
                         <nav aria-label="Navegación secundaria">
@@ -263,7 +265,7 @@ const HeroHeaderDocs: React.FC = () => {
                       </div>
                     </div>
 
-                    <div className="aside bg-aside-hero-dark"></div>
+                    <div className="aside bg-aside-hero-light"></div>
                   </header>
                 </div>
               </div>
@@ -280,7 +282,7 @@ const HeroHeaderDocs: React.FC = () => {
             <div className="container">
               <div className="hero-container">
                 <div className="hero-box-sizing ">
-                  <header className="hero">
+                  <header className="hero bg-content-hero-light">
                     <div className="content corner">
                       <div className="d-flex flex-column">
                         <nav aria-label="Navegación secundaria">
@@ -384,7 +386,7 @@ const HeroHeaderDocs: React.FC = () => {
                       </div>
                     </div>
 
-                    <div className="aside bg-aside-hero-dark"></div>
+                    <div className="aside bg-aside-hero-light"></div>
                   </header>
                 </div>
               </div>
@@ -401,7 +403,7 @@ const HeroHeaderDocs: React.FC = () => {
             <div className="container">
               <div className="hero-container">
                 <div className="hero-box-sizing ">
-                  <header className="hero">
+                  <header className="hero bg-content-hero-light">
                     <div className="content corner">
                       <div className="d-flex flex-column">
                         <nav aria-label="Navegación secundaria">
@@ -440,7 +442,7 @@ const HeroHeaderDocs: React.FC = () => {
                       </div>
                     </div>
 
-                    <div className="aside bg-aside-hero-dark"></div>
+                    <div className="aside bg-aside-hero-light"></div>
                   </header>
                 </div>
               </div>
@@ -460,8 +462,8 @@ const HeroHeaderDocs: React.FC = () => {
             <div className="container">
               <div className="hero-container">
                 <div className="hero-box-sizing ">
-                  {/* cyan */}
-                  <header className="hero bg-content-hero-cyan">
+                  {/* blue */}
+                  <header className="hero bg-content-hero-blue">
                     <div className="content corner">
                       <div className="d-flex flex-column">
                         <nav aria-label="Navegación secundaria">
@@ -482,10 +484,10 @@ const HeroHeaderDocs: React.FC = () => {
 
                         {/* botones */}
                         <div className="btn-hero">
-                          <button type="button" className="btn btn-primary">
+                          <button type="button" className="btn btn-light">
                             Botón
                           </button>
-                          <button type="button" className="btn btn-outline-primary">
+                          <button type="button" className="btn btn-outline-light">
                             Botón
                           </button>
                         </div>
@@ -493,46 +495,9 @@ const HeroHeaderDocs: React.FC = () => {
                       </div>
                     </div>
 
-                    <div className="aside bg-aside-hero-dark"></div>
+                    <div className="aside bg-aside-hero-neutral"></div>
                   </header>
                   {/* cyan */}
-                  <br />
-                  {/* sky */}
-                  <header className="hero bg-content-hero-sky">
-                    <div className="content corner">
-                      <div className="d-flex flex-column">
-                        <nav aria-label="Navegación secundaria">
-                          <ol className="breadcrumb m-0">
-                            <li className="breadcrumb-item">
-                              <a href="#">Inicio</a>
-                            </li>
-                          </ol>
-                        </nav>
-
-                        <div>
-                          <h1 className="mb-3">Encabezado de la página</h1>
-                          <p className="lead m-0">
-                            Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la
-                            convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
-                          </p>
-                        </div>
-
-                        {/* botones */}
-                        <div className="btn-hero">
-                          <button type="button" className="btn btn-primary">
-                            Botón
-                          </button>
-                          <button type="button" className="btn btn-outline-primary">
-                            Botón
-                          </button>
-                        </div>
-                        {/* botones */}
-                      </div>
-                    </div>
-
-                    <div className="aside bg-aside-hero-dark"></div>
-                  </header>
-                  {/* sky */}
                 </div>
               </div>
             </div>

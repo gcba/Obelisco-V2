@@ -966,7 +966,7 @@ div.container-headers {
 
               /* input dentro de search */
               #search-home.form-control {
-                border-bottom: 2px solid #e6ebf0;
+                // border-bottom: 2px solid #e6ebf0;
                 border-radius: 0.5rem 0.5rem 0 0;
                 padding: 1rem 12px;
                 padding-right: 128px;
@@ -974,6 +974,7 @@ div.container-headers {
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                outline: 0.125rem solid white;
               }
             }
           }

@@ -19,6 +19,25 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
+      title: 'Versión 1.17.0',
+      content: (
+        <>
+          <ul className="docs-list">
+            <p>La Versión 1.17.0 contiene lo siguiente: </p>
+            <li>Componente Tarjetas, se crea la variante Tarjetas de noticia sin borde y Tarjetas de curso.</li>
+            <li>
+              El componente &quot;Cabecera de página&quot;, pasa a llamarse &quot;Cabecera de página
+              institucional&quot;.
+            </li>
+            <li>Se crea el componente &quot;Cabecera de página multimedia&quot;.</li>
+            <li>
+              Se corrige el <code>code-view</code> de Destacado container.
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
       title: 'Versión 1.15.0',
       content: (
         <>

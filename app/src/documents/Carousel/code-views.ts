@@ -404,7 +404,7 @@ export const CAROUSEL_CARDS = `<div id="carousel-cards-eventos" class="carousel 
 			<div class="carousel-inner responsive-scroll">
 				<div class="carousel-item">
 						<div class="card-items">
-								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/card-img-top.jpg">
+								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/tarjetas/tarjetas_img_top.jpg">
 										<div class="card-body">
 												<p class="card-headline">TIPO DE EVENTO</p>
 												<div class="mb-3"><span class="badge badge-s-default">Etiqueta</span><span class="badge badge-s-default">Tipo de público</span></div>
@@ -415,7 +415,7 @@ export const CAROUSEL_CARDS = `<div id="carousel-cards-eventos" class="carousel 
 												</div>
 										</div>
 								</div>
-								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/card-img-top.jpg">
+								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/tarjetas/tarjetas_img_top.jpg">
 										<div class="card-body">
 												<p class="card-headline">TIPO DE EVENTO</p>
 												<div class="mb-3"><span class="badge badge-s-default">Etiqueta</span><span class="badge badge-s-default">Tipo de público</span></div>
@@ -430,7 +430,7 @@ export const CAROUSEL_CARDS = `<div id="carousel-cards-eventos" class="carousel 
 				</div>
 				<div class="carousel-item">
 						<div class="card-items">
-								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/card-img-top.jpg">
+								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/tarjetas/tarjetas_img_top.jpg">
 										<div class="card-body">
 												<p class="card-headline">TIPO DE EVENTO</p>
 												<div class="mb-3"><span class="badge badge-s-default">Etiqueta</span><span class="badge badge-s-default">Tipo de público</span></div>
@@ -441,7 +441,7 @@ export const CAROUSEL_CARDS = `<div id="carousel-cards-eventos" class="carousel 
 												</div>
 										</div>
 								</div>
-								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/card-img-top.jpg">
+								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/tarjetas/tarjetas_img_top.jpg">
 										<div class="card-body">
 												<p class="card-headline">TIPO DE EVENTO</p>
 												<div class="mb-3"><span class="badge badge-s-default">Etiqueta</span><span class="badge badge-s-default">Tipo de público</span></div>
@@ -452,7 +452,7 @@ export const CAROUSEL_CARDS = `<div id="carousel-cards-eventos" class="carousel 
 												</div>
 										</div>
 								</div>
-								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/card-img-top.jpg">
+								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/tarjetas/tarjetas_img_top.jpg">
 										<div class="card-body">
 												<p class="card-headline">TIPO DE EVENTO</p>
 												<div class="mb-3"><span class="badge badge-s-default">Etiqueta</span><span class="badge badge-s-default">Tipo de público</span></div>
@@ -467,7 +467,7 @@ export const CAROUSEL_CARDS = `<div id="carousel-cards-eventos" class="carousel 
 				</div>
 				<div class="carousel-item active">
 						<div class="card-items">
-								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/card-img-top.jpg">
+								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/tarjetas/tarjetas_img_top.jpg">
 										<div class="card-body">
 												<p class="card-headline">TIPO DE EVENTO</p>
 												<div class="mb-3"><span class="badge badge-s-default">Etiqueta</span><span class="badge badge-s-default">Tipo de público</span></div>
@@ -478,7 +478,7 @@ export const CAROUSEL_CARDS = `<div id="carousel-cards-eventos" class="carousel 
 												</div>
 										</div>
 								</div>
-								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/card-img-top.jpg">
+								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/tarjetas/tarjetas_img_top.jpg">
 										<div class="card-body">
 												<p class="card-headline">TIPO DE EVENTO</p>
 												<div class="mb-3"><span class="badge badge-s-default">Etiqueta</span><span class="badge badge-s-default">Tipo de público</span></div>
@@ -489,7 +489,7 @@ export const CAROUSEL_CARDS = `<div id="carousel-cards-eventos" class="carousel 
 												</div>
 										</div>
 								</div>
-								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/card-img-top.jpg">
+								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/tarjetas/tarjetas_img_top.jpg">
 										<div class="card-body">
 												<p class="card-headline">TIPO DE EVENTO</p>
 												<div class="mb-3"><span class="badge badge-s-default">Etiqueta</span><span class="badge badge-s-default">Tipo de público</span></div>
@@ -520,7 +520,7 @@ export const CAROUSEL_CARDS_EVENTS = `<div id="carousel-cards-eventos" class="ca
 			<div class="carousel-inner responsive-scroll">
 				<div class="carousel-item">
 						<div class="card-items">
-								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/card-img-top.jpg">
+								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/tarjetas/tarjetas_img_top.jpg">
 										<div class="card-body">
 												<p class="card-headline">TIPO DE EVENTO</p>
 												<div class="mb-3"><span class="badge badge-s-default">Etiqueta</span><span class="badge badge-s-default">Tipo de público</span></div>
@@ -531,7 +531,7 @@ export const CAROUSEL_CARDS_EVENTS = `<div id="carousel-cards-eventos" class="ca
 												</div>
 										</div>
 								</div>
-								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/card-img-top.jpg">
+								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/tarjetas/tarjetas_img_top.jpg">
 										<div class="card-body">
 												<p class="card-headline">TIPO DE EVENTO</p>
 												<div class="mb-3"><span class="badge badge-s-default">Etiqueta</span><span class="badge badge-s-default">Tipo de público</span></div>
@@ -546,7 +546,7 @@ export const CAROUSEL_CARDS_EVENTS = `<div id="carousel-cards-eventos" class="ca
 				</div>
 				<div class="carousel-item">
 						<div class="card-items">
-								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/card-img-top.jpg">
+								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/tarjetas/tarjetas_img_top.jpg">
 										<div class="card-body">
 												<p class="card-headline">TIPO DE EVENTO</p>
 												<div class="mb-3"><span class="badge badge-s-default">Etiqueta</span><span class="badge badge-s-default">Tipo de público</span></div>
@@ -557,7 +557,7 @@ export const CAROUSEL_CARDS_EVENTS = `<div id="carousel-cards-eventos" class="ca
 												</div>
 										</div>
 								</div>
-								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/card-img-top.jpg">
+								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/tarjetas/tarjetas_img_top.jpg">
 										<div class="card-body">
 												<p class="card-headline">TIPO DE EVENTO</p>
 												<div class="mb-3"><span class="badge badge-s-default">Etiqueta</span><span class="badge badge-s-default">Tipo de público</span></div>
@@ -568,7 +568,7 @@ export const CAROUSEL_CARDS_EVENTS = `<div id="carousel-cards-eventos" class="ca
 												</div>
 										</div>
 								</div>
-								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/card-img-top.jpg">
+								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/tarjetas/tarjetas_img_top.jpg">
 										<div class="card-body">
 												<p class="card-headline">TIPO DE EVENTO</p>
 												<div class="mb-3"><span class="badge badge-s-default">Etiqueta</span><span class="badge badge-s-default">Tipo de público</span></div>
@@ -583,7 +583,7 @@ export const CAROUSEL_CARDS_EVENTS = `<div id="carousel-cards-eventos" class="ca
 				</div>
 				<div class="carousel-item active">
 						<div class="card-items">
-								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/card-img-top.jpg">
+								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/tarjetas/tarjetas_img_top.jpg">
 										<div class="card-body">
 												<p class="card-headline">TIPO DE EVENTO</p>
 												<div class="mb-3"><span class="badge badge-s-default">Etiqueta</span><span class="badge badge-s-default">Tipo de público</span></div>
@@ -594,7 +594,7 @@ export const CAROUSEL_CARDS_EVENTS = `<div id="carousel-cards-eventos" class="ca
 												</div>
 										</div>
 								</div>
-								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/card-img-top.jpg">
+								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/tarjetas/tarjetas_img_top.jpg">
 										<div class="card-body">
 												<p class="card-headline">TIPO DE EVENTO</p>
 												<div class="mb-3"><span class="badge badge-s-default">Etiqueta</span><span class="badge badge-s-default">Tipo de público</span></div>
@@ -605,7 +605,7 @@ export const CAROUSEL_CARDS_EVENTS = `<div id="carousel-cards-eventos" class="ca
 												</div>
 										</div>
 								</div>
-								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/card-img-top.jpg">
+								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/tarjetas/tarjetas_img_top.jpg">
 										<div class="card-body">
 												<p class="card-headline">TIPO DE EVENTO</p>
 												<div class="mb-3"><span class="badge badge-s-default">Etiqueta</span><span class="badge badge-s-default">Tipo de público</span></div>
@@ -636,7 +636,7 @@ export const CAROUSEL_CARDS_DARK = `<div id="carousel-cards-eventos" class="caro
 			<div class="carousel-inner responsive-scroll">
 				<div class="carousel-item">
 						<div class="card-items">
-								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/card-img-top.jpg">
+								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/tarjetas/tarjetas_img_top.jpg">
 										<div class="card-body">
 												<p class="card-headline">TIPO DE EVENTO</p>
 												<div class="mb-3"><span class="badge badge-s-default">Etiqueta</span><span class="badge badge-s-default">Tipo de público</span></div>
@@ -647,7 +647,7 @@ export const CAROUSEL_CARDS_DARK = `<div id="carousel-cards-eventos" class="caro
 												</div>
 										</div>
 								</div>
-								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/card-img-top.jpg">
+								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/tarjetas/tarjetas_img_top.jpg">
 										<div class="card-body">
 												<p class="card-headline">TIPO DE EVENTO</p>
 												<div class="mb-3"><span class="badge badge-s-default">Etiqueta</span><span class="badge badge-s-default">Tipo de público</span></div>
@@ -662,7 +662,7 @@ export const CAROUSEL_CARDS_DARK = `<div id="carousel-cards-eventos" class="caro
 				</div>
 				<div class="carousel-item">
 						<div class="card-items">
-								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/card-img-top.jpg">
+								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/tarjetas/tarjetas_img_top.jpg">
 										<div class="card-body">
 												<p class="card-headline">TIPO DE EVENTO</p>
 												<div class="mb-3"><span class="badge badge-s-default">Etiqueta</span><span class="badge badge-s-default">Tipo de público</span></div>
@@ -673,7 +673,7 @@ export const CAROUSEL_CARDS_DARK = `<div id="carousel-cards-eventos" class="caro
 												</div>
 										</div>
 								</div>
-								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/card-img-top.jpg">
+								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/tarjetas/tarjetas_img_top.jpg">
 										<div class="card-body">
 												<p class="card-headline">TIPO DE EVENTO</p>
 												<div class="mb-3"><span class="badge badge-s-default">Etiqueta</span><span class="badge badge-s-default">Tipo de público</span></div>
@@ -684,7 +684,7 @@ export const CAROUSEL_CARDS_DARK = `<div id="carousel-cards-eventos" class="caro
 												</div>
 										</div>
 								</div>
-								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/card-img-top.jpg">
+								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/tarjetas/tarjetas_img_top.jpg">
 										<div class="card-body">
 												<p class="card-headline">TIPO DE EVENTO</p>
 												<div class="mb-3"><span class="badge badge-s-default">Etiqueta</span><span class="badge badge-s-default">Tipo de público</span></div>
@@ -699,7 +699,7 @@ export const CAROUSEL_CARDS_DARK = `<div id="carousel-cards-eventos" class="caro
 				</div>
 				<div class="carousel-item active">
 						<div class="card-items">
-								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/card-img-top.jpg">
+								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/tarjetas/tarjetas_img_top.jpg">
 										<div class="card-body">
 												<p class="card-headline">TIPO DE EVENTO</p>
 												<div class="mb-3"><span class="badge badge-s-default">Etiqueta</span><span class="badge badge-s-default">Tipo de público</span></div>
@@ -710,7 +710,7 @@ export const CAROUSEL_CARDS_DARK = `<div id="carousel-cards-eventos" class="caro
 												</div>
 										</div>
 								</div>
-								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/card-img-top.jpg">
+								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/tarjetas/tarjetas_img_top.jpg">
 										<div class="card-body">
 												<p class="card-headline">TIPO DE EVENTO</p>
 												<div class="mb-3"><span class="badge badge-s-default">Etiqueta</span><span class="badge badge-s-default">Tipo de público</span></div>
@@ -721,7 +721,7 @@ export const CAROUSEL_CARDS_DARK = `<div id="carousel-cards-eventos" class="caro
 												</div>
 										</div>
 								</div>
-								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/card-img-top.jpg">
+								<div class="card card-eventos"><img alt="descripción de imagen" data-nimg="1" loading="lazy" width="348" height="196" decoding="async" class="card-img" style="color:transparent" src="/Obelisco-V2/images/tarjetas/tarjetas_img_top.jpg">
 										<div class="card-body">
 												<p class="card-headline">TIPO DE EVENTO</p>
 												<div class="mb-3"><span class="badge badge-s-default">Etiqueta</span><span class="badge badge-s-default">Tipo de público</span></div>

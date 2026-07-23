@@ -165,6 +165,7 @@ $card-info-icon-size: 1rem;
       }
     }
   }
+
   // Clase para Tarjeta de eventos. Vertical.
 
   &.card-horizontal {
@@ -303,13 +304,14 @@ $card-info-icon-size: 1rem;
       z-index: 1;
     }
   }
+
   // Tarjeta de impacto visual. Vertical.
 
   // Variante de noticias sin borde. Vertical.
-  &.card-news {
+  &.card-img-sin-borde {
     width: 348px;
     max-width: 348px;
-    height: 576px;
+    height: 100%;
     max-height: 576px;
     @extend .unbordered;
 
@@ -331,6 +333,7 @@ $card-info-icon-size: 1rem;
       margin-top: 1rem;
     }
   }
+
   // Variante de noticias sin borde. Vertical.
 }
 

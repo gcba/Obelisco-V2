@@ -588,7 +588,6 @@ export const HIGHLIGHTED_CONTAINER = `// Fondo blanco
 export const HIGHLIGHTED_DEGRADE = `<div class="container">
   <div class="panel-horizontal-content panel-horizontal-container bg-gradient-blue p-0">
      <div class="panel-horizontal">
-      <img alt="descripción de imagen" loading="lazy" width="538" height="304" decoding="async" data-nimg="1" class="panel-img panel-img-object-fit-none" src="/Obelisco-V2/images/highlighted/bax-phone.png">
 
       <div class="panel-body">
         <h2 class="panel-title">Título del destacado</h2>
@@ -607,8 +606,9 @@ export const HIGHLIGHTED_DEGRADE = `<div class="container">
             Botón
           </a>
         </div>
-
       </div>
+
+      <img alt="descripción de imagen" loading="lazy" width="538" height="304" decoding="async" data-nimg="1" class="panel-img" src="/Obelisco-V2/images/highlighted/bax-phone.png">
 
     </div>
   </div>
@@ -618,7 +618,6 @@ export const HIGHLIGHTED_DEGRADE = `<div class="container">
 export const HIGHLIGHTED_DEGRADE_INVERTED = `<div class="container">
   <div class="panel-horizontal-content panel-horizontal-container bg-gradient-blue p-0">
      <div class="panel-horizontal panel-inverted">
-      <img alt="descripción de imagen" loading="lazy" width="538" height="304" decoding="async" data-nimg="1" class="panel-img" src="/Obelisco-V2/images/highlighted/bax-phone.png">
 
       <div class="panel-body">
         <h2 class="panel-title">Título del destacado</h2>
@@ -637,8 +636,9 @@ export const HIGHLIGHTED_DEGRADE_INVERTED = `<div class="container">
             Botón
           </a>
         </div>
-
       </div>
+
+      <img alt="descripción de imagen" loading="lazy" width="538" height="304" decoding="async" data-nimg="1" class="panel-img" src="/Obelisco-V2/images/highlighted/bax-phone.png">
 
     </div>
   </div>

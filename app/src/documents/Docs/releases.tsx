@@ -19,6 +19,23 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
+      title: 'Versión 1.16.0',
+      content: (
+        <>
+          <ul className="docs-list">
+            <p>La Versión 1.16.0 contiene lo siguiente: </p>
+            <li>
+              Se crea una nueva variante de Tarjetas horizontales:{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/components/cards#section-dev-1">
+                Tarjetas visuales con ícono
+              </a>
+              .
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
       title: 'Versión 1.15.0',
       content: (
         <>

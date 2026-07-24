@@ -37,6 +37,7 @@ const ReleasesComponents: React.FC = () => {
         </>
       ),
     },
+    {
       title: 'Versión 1.16.0',
       content: (
         <>

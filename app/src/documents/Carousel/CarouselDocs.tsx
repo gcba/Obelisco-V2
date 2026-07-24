@@ -1785,7 +1785,7 @@ const CarouselDocs: React.FC = () => {
       ),
     },
     {
-      title: 'Con tarjetas de impacto visual',
+      subtitle: 'Con tarjetas de impacto visual',
       content: (
         <>
           <CodeBox codeHTML={CAROUSEL_CARDS_IMPACTO_VISUAL}>

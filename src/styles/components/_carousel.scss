@@ -374,13 +374,8 @@ $max-width: 1000px;
         position: unset;
       }
     }
-
-    // .responsive-scroll {
-    //   padding: 0;
-    // }
   }
 
-  // $container-max-width: 720px;
   $container-max-width: 1000px;
   $container-max-width-992-1200: 890px;
   $carousel-control-offset: 24px;
@@ -499,6 +494,37 @@ $max-width: 1000px;
 
     .title {
       padding-left: container-alignment($container-max-width);
+    }
+
+    // carrusel de impacto visual
+    &.cards.controls-top {
+      // Título y flechas
+      .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: calc((100% - 1140px) / 2 + 0.75rem);
+        flex: 1 1 auto;
+        width: 100%;
+        min-width: 100%;
+        box-sizing: border-box;
+      }
+
+      // indicadores, puntitos
+      .carousel-indicators {
+        justify-content: center;
+        padding-left: 0;
+        margin-inline: auto;
+      }
+
+      .carousel-link {
+        display: flex;
+        max-width: $container-max-width;
+        padding-left: calc((100% - 1140px) / 2 + 0.75rem);
+        text-align: left;
+        justify-content: start;
+        align-items: start;
+      }
     }
   }
 

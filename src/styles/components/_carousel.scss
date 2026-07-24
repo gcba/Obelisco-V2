@@ -519,7 +519,6 @@ $max-width: 1000px;
 
       .carousel-link {
         display: flex;
-        max-width: $container-max-width;
         padding-left: calc((100% - 1140px) / 2 + 0.75rem);
         text-align: left;
         justify-content: start;

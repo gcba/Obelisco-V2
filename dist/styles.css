@@ -15131,7 +15131,7 @@ textarea.form-control {
   align-items: flex-start;
   box-shadow: 0 1px 0 0 #f3f6f9;
 }
-.modal .modal-content .modal-header.unbordered {
+.modal .modal-content .modal-header.unbordered, .modal .modal-content .modal-header.card.card-img-sin-borde {
   box-shadow: none;
   background: none;
 }
@@ -18546,7 +18546,7 @@ span.form-label {
     display: none;
   }
 }
-.navbar.o-header .header-container .navbar-collapse .navbar-user-mobile.unbordered {
+.navbar.o-header .header-container .navbar-collapse .navbar-user-mobile.unbordered, .navbar.o-header .header-container .navbar-collapse .navbar-user-mobile.card.card-img-sin-borde {
   border-top: none;
   padding-top: 0;
 }
@@ -20651,7 +20651,7 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
   object-position: center;
   height: 196px;
 }
-.card.unbordered {
+.card.unbordered, .card.card-img-sin-borde {
   box-shadow: none;
   outline-color: transparent;
   background: transparent;
@@ -20826,6 +20826,28 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
 .card.card-img-bg > *:not(img, a) {
   position: relative;
   z-index: 1;
+}
+.card.card-img-sin-borde {
+  width: 348px;
+  max-width: 348px;
+  height: 100%;
+  max-height: 576px;
+}
+@media (max-width: 575.98px) {
+  .card.card-img-sin-borde {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.card.card-img-sin-borde .card-img, .card.card-img-sin-borde .card.card-horizontal .card-icon, .card.card-horizontal .card.card-img-sin-borde .card-icon {
+  border-radius: 32px;
+  height: 400px;
+}
+.card.card-img-sin-borde .card-badges {
+  padding-bottom: 16px;
+}
+.card.card-img-sin-borde .card-info {
+  margin-top: 1rem;
 }
 
 .responsive-scroll.vertical-cards-container {
@@ -21462,6 +21484,28 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
   }
   .carousel .title {
     padding-left: calc((100% - 1140px) / 2 + 0.75rem);
+  }
+  .carousel.cards.controls-top .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: calc((100% - 1140px) / 2 + 0.75rem);
+    flex: 1 1 auto;
+    width: 100%;
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  .carousel.cards.controls-top .carousel-indicators {
+    justify-content: center;
+    padding-left: 0;
+    margin-inline: auto;
+  }
+  .carousel.cards.controls-top .carousel-link {
+    display: flex;
+    padding-left: calc((100% - 1140px) / 2 + 0.75rem);
+    text-align: left;
+    justify-content: start;
+    align-items: start;
   }
 }
 @media (width >= 1400px) {

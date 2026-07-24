@@ -267,6 +267,15 @@ $max-width: 1000px;
       .carousel-link {
         color: white;
       }
+      .carousel-indicators {
+        button {
+          border-color: $white;
+
+          &.active {
+            background-color: $white;
+          }
+        }
+      }
     }
 
     &.controls-top {

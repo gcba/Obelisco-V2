@@ -895,5 +895,11 @@ export const CAROUSEL_CARDS_IMPACTO_VISUAL = `<div id="carousel-cards" class="ca
 			<button type="button" data-bs-target="#carousel-cards" data-bs-slide-to="1" aria-label="Slide 2"></button>
 			<button type="button" data-bs-target="#carousel-cards" data-bs-slide-to="2" aria-label="Slide 3"></button>
 		</div>
+
+		<a href="#" target="_blank" rel="noopener noreferrer" className="carousel-link external">
+            Mostrar todos los eventos
+        </a>
+
 	</div>
+
 `;

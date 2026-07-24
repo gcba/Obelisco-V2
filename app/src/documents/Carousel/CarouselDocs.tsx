@@ -1981,7 +1981,7 @@ const CarouselDocs: React.FC = () => {
                     ></button>
                   </div>
 
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="carousel-link ">
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="carousel-link external">
                     Mostrar todos los eventos
                   </a>
                 </div>

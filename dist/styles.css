@@ -21316,6 +21316,12 @@ header.hero.bg-content-hero-dark .content .breadcrumb-item::before {
 .carousel.cards.bg-dark .carousel-link {
   color: white;
 }
+.carousel.cards.bg-dark .carousel-indicators button {
+  border-color: #ffffff;
+}
+.carousel.cards.bg-dark .carousel-indicators button.active {
+  background-color: #ffffff;
+}
 .carousel.cards.controls-top .title {
   display: flex;
   justify-content: space-between;

@@ -392,7 +392,7 @@ export const HERO_NOTICIAS = `<header class="hero">
 </header>`;
 
 export const HERO_COLORES = `<!-- default -->
-<header class="hero bg-content-hero-cyan">
+<header class="hero bg-content-hero-blue">
   <div class="content corner">
     <div class="d-flex flex-column">
       <nav aria-label="Navegación secundaria">

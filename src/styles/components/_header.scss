@@ -579,12 +579,12 @@ $breadcrumb-divider-dark: url('data:image/svg+xml,<svg width="24" height="24" vi
 
 // Header Variante Banner
 
-// Hero header multimedia
+// Hero header multimedia - Cabecera de página multimedia
 div.container-headers {
   position: relative;
-  height: 75vh;
-  max-height: 75vh;
-  min-height: 765px;
+  height: 70vh;
+  min-height: 700px;
+
   /* revisar altura y colores */
   display: flex;
   flex-direction: column;
@@ -595,142 +595,6 @@ div.container-headers {
     min-height: 1300px;
   }
 
-  //  Header logo y navegación
-  header.o-header.hero-navbar.navbar {
-    border-bottom: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1100;
-
-    div.navbar-collapse.show,
-    div.navbar-collapse.collapsing {
-      div.navbar-content {
-        div.navbar-sections {
-          nav {
-            ul.nav.nav-pills.nav-sections {
-              li.dropdown {
-                button.btn.btn-dropdown.btn-lg.show {
-                  .btn-dropdown-icon,
-                  .btn-dropdown-text {
-                    color: $white;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
-    @include media-breakpoint-down(xl) {
-      z-index: 1100;
-
-      &:has(.navbar-collapse.show, .navbar-collapse.collapsing) {
-        .header-container {
-          background: transparent;
-        }
-
-        // .header-backdrop {
-        //   position: absolute;
-        //   inset: 0;
-        //   width: 100%;
-        //   height: 100%;
-        //   z-index: 1040;
-
-        // background-color: $black;
-        // }
-      }
-    }
-
-    div.header-container {
-      @include media-breakpoint-up(xl) {
-        div.navbar-collapse {
-          div.navbar-content {
-            div.navbar-sections {
-              nav {
-                ul.nav.nav-pills {
-                  li.dropdown button.btn.btn-dropdown,
-                  li.nav-item a.nav-link {
-                    background: transparent;
-                    color: white;
-                  }
-
-                  li.dropdown button.btn.btn-dropdown {
-                    &:hover:not(:focus),
-                    &:active {
-                      outline: 0.125rem solid white;
-                    }
-
-                    &:focus:not(:hover, :active) {
-                      outline: 0.25rem solid transparent;
-                    }
-                  }
-
-                  li.nav-item a.nav-link {
-                    &:hover:not(:focus),
-                    &:active {
-                      outline: 0.125rem solid white;
-                      box-shadow: 0 0 0 2px white;
-                    }
-
-                    &:focus:not(:hover, :active) {
-                      outline: 0.25rem solid transparent;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-
-      @include media-breakpoint-down(xl) {
-        div.navbar-collapse {
-          ul.nav.nav-pills {
-            li.dropdown button.btn.btn-dropdown,
-            li.nav-item a.nav-link {
-              color: $body-color;
-            }
-
-            .btn-dropdown-icon {
-              color: $body-color;
-            }
-          }
-        }
-      }
-
-      // Breakpoint 350px
-      @media (width <= 350px) {
-        gap: 10px;
-        flex-direction: column;
-        align-items: start;
-
-        div.container.header-container {
-          button.navbar-toggler {
-            margin: 0;
-          }
-        }
-      }
-
-      .navbar-toggler {
-        border-radius: $border-radius-3xl;
-        background-color: white;
-
-        &.collapsed {
-          flex-wrap: nowrap;
-        }
-      }
-
-      .navbar-toggler[aria-expanded='true'] {
-        background: $active-color $navbar-toggle-close no-repeat center center;
-      }
-    }
-  }
-
-  //  Header logo y navegación
-
   // Header multimedia y contenido
   header.hero-landing {
     position: relative;
@@ -740,7 +604,10 @@ div.container-headers {
     align-items: start;
     background: transparent;
 
-    /* z-index 0 */
+    @include media-breakpoint-down(md) {
+      min-height: 600px;
+    }
+
     video,
     img {
       position: absolute;
@@ -769,11 +636,11 @@ div.container-headers {
       z-index: 101;
       color: white;
       width: 100%;
-      padding-top: 168px; // 80 altura del header y 88 espaciado
+      padding-top: 88px;
       padding-bottom: 48px;
 
       @include media-breakpoint-down(xl) {
-        padding: 168px 32px 32px;
+        padding: 88px 32px 32px;
 
         nav {
           ol.breadcrumb {
@@ -996,4 +863,4 @@ div.container-headers {
   // Header multimedia y contenido
 }
 
-// Hero header multimedia
+// Hero header multimedia - Cabecera de página multimedia

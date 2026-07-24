@@ -19,6 +19,65 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
+      title: 'Versión 1.15.0',
+      content: (
+        <>
+          <ul className="docs-list">
+            <p>La Versión 1.15.0 contiene lo siguiente: </p>
+            <li>Componente Tarjetas, se crea la variante Tarjetas de impacto visual.</li>
+            <li>
+              Componente Carrusel, se crea la variante que utiliza las Tarjetas de impacto visual, tiene una disposición
+              de controles diferente y exclusiva para esta variante.
+            </li>
+            <li>
+              <strong>Correción (fix) en Destacado container</strong>.
+              <ul>
+                <li>
+                  El componente con multimedia pasa a tener una altura mínima de <code>432px</code>y sin multimedia{' '}
+                  <code>264px</code>.
+                </li>
+                <li>
+                  Se crea la clase <code>.panel-img-edge</code> para manipular las imagenes grandes, del mismo o mayor
+                  tamaño que el alto mínimo. Esta nueva clase se utiliza junto con <code>.panel-img</code>.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      title: 'Versión 1.14.0',
+      content: (
+        <>
+          <ul className="docs-list">
+            <p>La Versión 1.14.0 contiene lo siguiente: </p>
+            <li>
+              Se sumaron nuevas variantes para el componente{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/components/highlighted">Destacado:</a>
+            </li>
+            <ul>
+              <li>Se agrega la variante con color en degrade y ancho contenedor.</li>
+              <li>
+                Se agrega la variante con fondos de color <code>dark</code> y <code>light</code>, para ancho contenedor
+                en destacados horizontales.
+              </li>
+              <li>Se agrega la variante con fondo blanco para destacado vertical.</li>
+              <li>
+                Se agrega la clase <code>panel-inverted</code> para invertir el contenido en los destacados horizontales
+                en todas sus variantes. Se usa así: <code>{'<div class="panel-horizontal panel-inverted">'}</code>
+              </li>
+            </ul>
+            <br />
+            <li>
+              Se modifican los bordes y padding para el componente: <i>Desplegable de navegación y selección</i> y{' '}
+              <i>Navegacion horizontal y vertical.</i>
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
       title: 'Versión 1.13.0',
       content: (
         <>

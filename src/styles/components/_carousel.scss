@@ -101,7 +101,7 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     right: 100px;
   }
 }
-
+$max-width: 1000px;
 @function container-alignment($max-width) {
   @return calc((100% - #{$max-width}) / 2 + 0.75rem);
 }
@@ -143,6 +143,7 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 1;
 
     // border-radius: $border-radius-lg;
     border-radius: $border-radius-pill;
@@ -259,13 +260,41 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
 
   // el &.cards, hace que solo aplique a las clases .card dentro de .carousel
   &.cards {
+    background-color: white;
+
+    &.bg-dark {
+      .title,
+      .carousel-link {
+        color: white;
+      }
+    }
+
+    &.controls-top {
+      .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      .carousel-navigation {
+        display: flex;
+        gap: 12px;
+      }
+
+      .carousel-control-prev,
+      .carousel-control-next {
+        position: static;
+        transform: none;
+      }
+    }
+
     @media (width < 768px) {
       .carousel-inner {
         display: flex;
         flex-wrap: nowrap;
         overflow: auto hidden;
         column-gap: 24px;
-        padding: 0 0 24px;
+        padding: 2px 2px 24px;
         align-items: stretch;
 
         .carousel-item {
@@ -277,6 +306,12 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
             .card {
               flex: 0 0 auto;
               width: 296px;
+            }
+
+            .card.card-img-bg {
+              flex: 0 0 auto;
+              width: 300px;
+              min-width: 300px;
             }
           }
         }
@@ -340,35 +375,57 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
       }
     }
 
-    .responsive-scroll {
-      padding: 0;
-    }
+    // .responsive-scroll {
+    //   padding: 0;
+    // }
   }
 
-  $container-max-width: 720px;
+  // $container-max-width: 720px;
+  $container-max-width: 1000px;
+  $container-max-width-992-1200: 890px;
+  $carousel-control-offset: 24px;
+
+  @function carousel-control-position($max-width, $offset) {
+    @return calc((100% - #{$max-width}) / 2 - #{$offset});
+  }
+
   @media (width >= 992px) {
     @include carousel-navigation-row;
 
     .carousel-control-prev {
-      left: max(5px, calc(container-alignment($container-max-width) - 114px));
+      left: max(
+        16px,
+        carousel-control-position(
+          $container-max-width-992-1200,
+          $carousel-control-offset
+        )
+      );
     }
 
     .carousel-control-next {
-      right: max(5px, calc(container-alignment($container-max-width) - 114px));
+      right: max(
+        16px,
+        carousel-control-position(
+          $container-max-width-992-1200,
+          $carousel-control-offset
+        )
+      );
     }
 
     .carousel-inner {
       border-radius: 16px;
       margin: 0 auto;
-      max-width: 720px;
+      max-width: calc($container-max-width);
 
       .carousel-item {
-        padding: 0 8px;
+        padding: 2px 8px;
       }
     }
 
-    .title {
-      padding-left: container-alignment($container-max-width);
+    .title,
+    .carousel-link {
+      padding-left: container-alignment($container-max-width-992-1200);
+      padding-right: container-alignment($container-max-width-992-1200);
     }
 
     .panel-horizontal-content {
@@ -381,6 +438,41 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
         img {
           max-width: 50%;
         }
+      }
+    }
+
+    @media (width >= 992px) and (width < 1200px) {
+      // Solo para carrusel de destacados
+      &:has(.panel-horizontal-content) {
+        .carousel-inner {
+          padding-inline: 48px;
+          box-sizing: border-box;
+        }
+
+        .carousel-control-prev {
+          left: 60px;
+        }
+
+        .carousel-control-next {
+          right: 60px;
+        }
+      }
+    }
+  }
+
+  // solo para carrusel de tarjetas
+  @media (width >= 992px) and (width < 1200px) {
+    &.cards {
+      .carousel-inner {
+        padding-inline: 64px;
+      }
+
+      .carousel-control-prev {
+        left: 64px;
+      }
+
+      .carousel-control-next {
+        right: 64px;
       }
     }
   }

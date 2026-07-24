@@ -89,8 +89,24 @@
 
 .card-items-2,
 .card-items-3 {
-  .col .card {
-    height: 100%;
+  .col {
+    .card {
+      height: 100%;
+
+      &:not(.card-img-bg) {
+        height: 100%;
+      }
+
+      &.card-img-bg {
+        width: 100%;
+        max-width: none;
+
+        @include media-breakpoint-down(sm) {
+          max-width: 346px;
+          margin-inline: auto;
+        }
+      }
+    }
   }
 }
 

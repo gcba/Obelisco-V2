@@ -260,7 +260,7 @@ export const HIGHLIGHTED_BANNER_BUTTONS_VIDEO_YT = `<div class="panel-horizontal
 </div>
 `;
 
-export const HIGHLIGHTED_BANNER_FONDOS = `
+export const HIGHLIGHTED_VERTICAL_FONDOS = `
 <div class="highlighted-items-2">
   <div class="col">
     <div class="panel-vertical">
@@ -299,7 +299,7 @@ export const HIGHLIGHTED_BANNER_FONDOS = `
 </div>
 `;
 
-export const HIGHLIGHTED_JOIN_IMAGE = `
+export const HIGHLIGHTED_VERTICAL_ACCIONABLES = `
 <div class="highlighted-items-2">
   <div class="col">
     <div class="panel-vertical">
@@ -363,7 +363,7 @@ export const HIGHLIGHTED_JOIN_IMAGE = `
   </div>
 </div>
 `;
-export const HIGHLIGHTED_JOIN_NO_IMAGE = `
+export const HIGHLIGHTED_VERTICAL_SIN_MULTIMEDIA = `
 <div class="highlighted-items-2">
   <div class="col">
     <div class="panel-vertical">
@@ -401,7 +401,7 @@ export const HIGHLIGHTED_JOIN_NO_IMAGE = `
   </div>
 </div>
 `;
-export const HIGHLIGHTED_JOIN_VIDEO = `
+export const HIGHLIGHTED_VERTICAL_VIDEO = `
 <div class="highlighted-items-2">
   <div class="col">
     <div class="panel-vertical">

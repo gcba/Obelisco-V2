@@ -18,6 +18,7 @@ import {
   SCROLL_DISPOSITION,
   TARJETAS_ACCESSIBILTY,
   TARJETAS_ACCESSIBILTY_2,
+  TARJETAS_IMPACTO_VISUAL,
   VERTICAL_AGENDA,
   VERTICAL_ICON,
   VERTICAL_IMG,
@@ -763,6 +764,34 @@ const CardDocs: React.FC = () => {
         </CodeBox>
       ),
     },
+    {
+      title: 'Tarjeta de impacto visual',
+      content: (
+        <CodeBox codeHTML={TARJETAS_IMPACTO_VISUAL}>
+          <div className="card-box-sizing-columns">
+            <div className="container">
+              <div className="card-vertical-box-sizing">
+                <div className="card card-img-bg">
+                  <div className="card-badges-bg">
+                    <span className="badge badge-s-default">Etiqueta</span>
+                    <span className="badge badge-s-default">Etiqueta</span>
+                  </div>
+                  <Image
+                    src={`${basePath}/images/tarjetas/tarjeta_de_impacto_visual.jpg`}
+                    alt="descripción de imagen"
+                    width={348}
+                    height={196}
+                  />
+                  <p className="headline-lg">Título de la tarjeta</p>
+                  <a href="#" aria-label="Descripcion de tarjetas"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </CodeBox>
+      ),
+    },
+    { title: '', content: <></> },
   ];
 
   const SECTION_UX = [

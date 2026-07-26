@@ -26,22 +26,19 @@ const ReleasesComponents: React.FC = () => {
             <p>La Versión 1.17.0 contiene lo siguiente: </p>
             <li>
               Se crea una nueva variante de Cabecera de Página con multimedia:{' '}
-              <a href="https://gcba.github.io/Obelisco-V2/components/hero-multimedia">
-                Cabecera de Página multimedia
-              </a>
-              .
+              <a href="https://gcba.github.io/Obelisco-V2/components/hero-multimedia">Cabecera de Página multimedia</a>.
             </li>
             <li>
-              Se creó la sección de {' '}
-              <a href="https://gcba.github.io/Obelisco-V2/components/hero">
-                Cabecera de Página institucional
-              </a>.
+              Se creó la sección de{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/components/hero">Cabecera de Página institucional</a>.
             </li>
-            <li>Se eliminaron las variantes de colores para cabecera institucional, 
-              dejando como único color de fondo relacionado al manual de marca <code>bg-blue</code>.
+            <li>
+              Se eliminaron las variantes de colores para cabecera institucional, dejando como único color de fondo
+              relacionado al manual de marca <code>bg-blue</code>.
             </li>
-            <li>Se eliminó la variante "dinámica" para cabeceras con clase <code> wave </code> 
-              y sus respectivas variantes de multimedia.
+            <li>
+              Se eliminó la variante &quot;dinámica&quot; para cabeceras con clase <code> wave </code>y sus respectivas
+              variantes de multimedia.
             </li>
           </ul>
           En{' '}

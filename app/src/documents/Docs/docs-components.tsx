@@ -237,20 +237,35 @@ const sections = [
           Se elimina la clase <code>wave</code> que pertenecia al encabezado dinámico.
         </li>
         <li>
-          Se eliminan las variantes con multimedia para institucional con clase <code>wave</code> o <code>corner </code> 
+          Se eliminan las variantes con multimedia para institucional con clase <code>wave</code> o <code>corner </code>
           y se crea la nueva variante Cabecera de Pagina con multimedia.
         </li>
-        <li>Se eliminan las clases de colores para el componente encabezado:
+        <li>
+          Se eliminan las clases de colores para el componente encabezado:
           <ul>
-            <li><code>bg-content-hero-cyan</code></li>
-            <li><code>bg-content-hero-sky</code></li>
-            <li><code>bg-content-hero-yellow</code></li>
-            <li><code>bg-content-hero-purple</code></li>
-            <li><code>bg-content-hero-blue</code></li>
-            <li><code>bg-content-hero-red</code></li>
+            <li>
+              <code>bg-content-hero-cyan</code>
+            </li>
+            <li>
+              <code>bg-content-hero-sky</code>
+            </li>
+            <li>
+              <code>bg-content-hero-yellow</code>
+            </li>
+            <li>
+              <code>bg-content-hero-purple</code>
+            </li>
+            <li>
+              <code>bg-content-hero-blue</code>
+            </li>
+            <li>
+              <code>bg-content-hero-red</code>
+            </li>
           </ul>
         </li>
-        <li>Se crea una nueva clase para color de fondo institucional llamada <code>bg-blue</code></li>
+        <li>
+          Se crea una nueva clase para color de fondo institucional llamada <code>bg-blue</code>
+        </li>
       </ul>
     ),
   },

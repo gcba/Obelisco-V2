@@ -24,16 +24,28 @@ const ReleasesComponents: React.FC = () => {
         <>
           <ul className="docs-list">
             <p>La Versión 1.17.0 contiene lo siguiente: </p>
-            <li>Componente Tarjetas, se crea la variante Tarjetas de noticia sin borde y Tarjetas de curso.</li>
             <li>
-              El componente &quot;Cabecera de página&quot;, pasa a llamarse &quot;Cabecera de página
-              institucional&quot;.
+              Se crea una nueva variante de Cabecera de Página con multimedia:{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/components/hero-multimedia">Cabecera de Página multimedia</a>.
             </li>
-            <li>Se crea el componente &quot;Cabecera de página multimedia&quot;.</li>
             <li>
-              Se corrige el <code>code-view</code> de Destacado container.
+              Se creó la sección de{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/components/hero">Cabecera de Página institucional</a>.
+            </li>
+            <li>
+              Se eliminaron las variantes de colores para cabecera institucional, dejando como único color de fondo
+              relacionado al manual de marca <code>bg-blue</code>.
+            </li>
+            <li>
+              Se eliminó la variante &quot;dinámica&quot; para cabeceras con clase <code> wave </code>y sus respectivas
+              variantes de multimedia.
             </li>
           </ul>
+          En{' '}
+          <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-8">
+            Cambios en componente
+          </a>{' '}
+          está la documentación de las clases en detalle.
         </>
       ),
     },

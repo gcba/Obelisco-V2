@@ -2,7 +2,7 @@
 $dropdown-btn-gap: 0.25rem;
 $dropdown-item-padding: 0.5rem 1rem;
 $dropdown-item-padding-sm: 0.25rem 1rem;
-$dropdown-item-padding-lg: 0.75rem 1rem;
+$dropdown-item-padding-lg: 0.5rem 1rem;
 $dropdown-item-btn-gap: 0.75rem;
 $dropdown-item-padding-left-checkbox: 3rem;
 $animation-toggle: transform 0.2s ease-in-out;
@@ -28,11 +28,13 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
       padding-top: 0.25rem;
       padding-bottom: 0.25rem;
       min-height: 2rem;
+      border-radius: $border-radius-3xl;
     }
 
     .form-checkbox .form-checkbox-input,
     .form-radio.reverse .form-radio-input {
       top: 0.25rem;
+      border-radius: $border-radius-3xl;
     }
   }
 }
@@ -41,11 +43,14 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
   min-height: 3rem;
   padding: $dropdown-item-padding-lg;
 
+  // padding: 12px 16px;
+
   + .dropdown-menu {
     .dropdown-item,
     .sub-dropdown .btn-dropdown {
       min-height: 3rem;
       padding: $dropdown-item-padding-lg;
+      border-radius: $border-radius-3xl;
     }
 
     .form-checkbox .form-checkbox-label,
@@ -175,7 +180,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
 
   .dropdown-menu {
     border: 0;
-    border-radius: $border-radius-lg;
+    border-radius: $border-radius-3xl;
     padding: 0;
     margin-top: 0.5rem !important;
     margin-bottom: 0.5rem !important;
@@ -184,7 +189,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
     max-width: 348px;
 
     .dropdown-item {
-      border-radius: $border-radius-lg;
+      border-radius: $border-radius-3xl;
       padding: $dropdown-item-padding;
       white-space: normal;
       text-decoration: none;
@@ -302,6 +307,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
         width: 100%;
         padding-left: 3rem; //48px
         padding-right: 0.75rem; //12px
+        border-radius: $border-radius-3xl;
       }
 
       .form-checkbox-input,
@@ -376,8 +382,12 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
         font-family: $font-family-sans-serif;
         outline: none;
 
+        // padding: 12px 16px;
+        border-radius: $border-radius-3xl;
+
         &:hover {
           outline: $hover-outline;
+          border-radius: $border-radius-3xl;
         }
 
         &:focus {

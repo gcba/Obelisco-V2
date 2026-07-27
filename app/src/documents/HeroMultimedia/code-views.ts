@@ -1,14 +1,7 @@
 export const HERO_MULTIMEDIA_IMAGEN = `<div class="container-headers">
-  <header class="hero-landing  ">
-    {/*  multimedia  */}
+  <header class="hero-landing">
     <img src="/Obelisco-V2/images/hero/hero_multimedia.jpg" alt="Imagen de fondo" />
-    {/*  multimedia  */}
-
-    {/*  capa gradiente  */}
     <div class="ob-bg"></div>
-    {/*  capa gradiente  */}
-
-    {/*  contenido, título, bajada, accionables  */}
     <div class="container hero-landing-container">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -34,9 +27,7 @@ export const HERO_MULTIMEDIA_IMAGEN = `<div class="container-headers">
             Este es el subtítulo de la página que puede contener hasta 3 líneas de texto, describiendo
             brevemente su función.
           </p>
-          {/* accionable campo buscador */}
           <div class="d-grid d-sm-grid d-md-flex flex-wrap search-container">
-            {/* search wrapper */}
             <div class="search-wrapper">
               <label htmlFor="search-home" class="sr-only">
                 Buscar
@@ -67,7 +58,6 @@ export const HERO_MULTIMEDIA_IMAGEN = `<div class="container-headers">
                   </svg>
                 </button>
               </div>
-              {/* input buscador */}
               <div class="search-results bg-light">
                 <div>
                   <a href="#" target="_blank" rel="noopener noreferrer" class="list-link-result">
@@ -84,34 +74,19 @@ export const HERO_MULTIMEDIA_IMAGEN = `<div class="container-headers">
                   </a>
                 </div>
               </div>
-              {/* input buscador */}
             </div>
-            {/* search wrapper */}
           </div>
-          {/* accionable campo buscador */}
         </div>
       </div>
     </div>
-    {/*  contenido, título, bajada, accionables  */}
-
-
   </header>
-
-
 </div>
 `;
 
 export const HERO_MULTIMEDIA_CAMPO_BUSCADOR = `<div class="container-headers">
-  <header class="hero-landing  ">
-    {/*  multimedia  */}
+  <header class="hero-landing">
     <video src={'/images/hero/videoplayback.mp4'} autoPlay muted loop playsInline></video>
-    {/*  multimedia  */}
-
-    {/*  capa gradiente  */}
     <div class="ob-bg"></div>
-    {/*  capa gradiente  */}
-
-    {/*  contenido, título, bajada, accionables  */}
     <div class="container hero-landing-container">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -137,9 +112,7 @@ export const HERO_MULTIMEDIA_CAMPO_BUSCADOR = `<div class="container-headers">
             Este es el subtítulo de la página que puede contener hasta 3 líneas de texto, describiendo
             brevemente su función.
           </p>
-          {/* accionable campo buscador */}
           <div class="d-grid d-sm-grid d-md-flex flex-wrap search-container">
-            {/* search wrapper */}
             <div class="search-wrapper">
               <label for="search-home" class="sr-only">
                 Buscar
@@ -170,7 +143,6 @@ export const HERO_MULTIMEDIA_CAMPO_BUSCADOR = `<div class="container-headers">
                   </svg>
                 </button>
               </div>
-              {/* input buscador */}
               <div class="search-results bg-light">
                 <div>
                   <a href="#" target="_blank" rel="noopener noreferrer" class="list-link-result">
@@ -187,31 +159,19 @@ export const HERO_MULTIMEDIA_CAMPO_BUSCADOR = `<div class="container-headers">
                   </a>
                 </div>
               </div>
-              {/* input buscador */}
             </div>
-            {/* search wrapper */}
           </div>
-          {/* accionable campo buscador */}
         </div>
       </div>
     </div>
-    {/*  contenido, título, bajada, accionables  */}
-
   </header>
 </div>
 `;
 
 export const HERO_MULTIMEDIA_BOTONES = `<div class="container-headers">
-  <header class="hero-landing  ">
-    {/*  multimedia  */}
+  <header class="hero-landing">
     <video src={'/images/hero/videoplayback.mp4'} autoPlay muted loop playsInline></video>
-    {/*  multimedia  */}
-
-    {/*  capa gradiente  */}
     <div class="ob-bg"></div>
-    {/*  capa gradiente  */}
-
-    {/*  contenido, título, bajada, accionables  */}
     <div class="container hero-landing-container">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -237,35 +197,21 @@ export const HERO_MULTIMEDIA_BOTONES = `<div class="container-headers">
             Este es el subtítulo de la página que puede contener hasta 3 líneas de texto, describiendo
             brevemente su función.
           </p>
-          {/* accionable botones */}
           <div class="btn-hero">
             <button type="button" class="btn btn-light">Botón</button>
             <button type="button" class="btn btn-outline-light">Botón</button>
           </div>
-          {/* accionable botones */}
         </div>
       </div>
     </div>
-    {/*  contenido, título, bajada, accionables  */}
-
-
   </header>
-
-
 </div>
 `;
 
 export const HERO_MULTIMEDIA_ETIQUETAS = `<div class="container-headers">
-  <header class="hero-landing  ">
-    {/*  multimedia  */}
+  <header class="hero-landing">
     <video src={'/images/hero/videoplayback.mp4'} autoPlay muted loop playsInline></video>
-    {/*  multimedia  */}
-
-    {/*  capa gradiente  */}
     <div class="ob-bg"></div>
-    {/*  capa gradiente  */}
-
-    {/*  contenido, título, bajada, accionables  */}
     <div class="container hero-landing-container">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -291,55 +237,40 @@ export const HERO_MULTIMEDIA_ETIQUETAS = `<div class="container-headers">
             Este es el subtítulo de la página que puede contener hasta 3 líneas de texto, describiendo
             brevemente su función.
           </p>
-          {/* Accionable etiquetas */}
           <div className="d-flex flex-wrap column-gap-2 row-gap-4">
             <span className="me-3 fw-semibold">Texto de las etiquetas: </span>
             <span className="badge badge-s-default">Etiqueta</span>
             <span className="badge badge-s-default">Etiqueta</span>
             <span className="badge badge-s-default">Etiqueta</span>
           </div>
-          {/* Accionable etiquetas */}
         </div>
       </div>
     </div>
-    {/*  contenido, título, bajada, accionables  */}
-
-
   </header>
-
-
 </div>
 `;
 
 export const HERO_MULTIMEDIA_DESPLEGABLES = `<div class="container-headers">
-  <header class="hero-landing  ">
-    {/*  multimedia  */}
+  <header class="hero-landing">
     <video src={'/images/hero/videoplayback.mp4'} autoPlay muted loop playsInline></video>
-    {/*  multimedia  */}
-
-    {/*  capa gradiente  */}
     <div class="ob-bg"></div>
-    {/*  capa gradiente  */}
-
-    {/*  contenido, título, bajada, accionables  */}
-    <div class="container hero-landing-container">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="#">Inicio</a>
-          </li>
-          <li class="breadcrumb-item">
-            <a href="#">Página 2</a>
-          </li>
-          <li class="breadcrumb-item">
-            <a href="#">Página 3</a>
-          </li>
-          <li class="breadcrumb-item">
-            <a href="#">Página anterior</a>
-          </li>
-        </ol>
-      </nav>
-
+      <div class="container hero-landing-container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="#">Inicio</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="#">Página 2</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="#">Página 3</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="#">Página anterior</a>
+              </li>
+            </ol>
+          </nav>
           <div class="row">
             <div class="col-12 col-lg-8 w-100">
               <h1>Título de la página</h1>
@@ -347,7 +278,6 @@ export const HERO_MULTIMEDIA_DESPLEGABLES = `<div class="container-headers">
                 Este es el subtítulo de la página que puede contener hasta 3 líneas de texto, describiendo
                 brevemente su función.
               </p>
-              {/* Accionable desplegables */}
               <div class="d-grid d-sm-flex flex-wrap column-gap-2 row-gap-4">
                 <div class="dropdown">
                   <button
@@ -423,30 +353,17 @@ export const HERO_MULTIMEDIA_DESPLEGABLES = `<div class="container-headers">
               </div>
             </div>
           </div>
-          {/* Accionable desplegables */}
         </div>
       </div>
     </div>
-    {/*  contenido, título, bajada, accionables  */}
-
-
   </header>
-
-
 </div>
 `;
 
 export const HERO_MULTIMEDIA = `<div class="container-headers">
-  <header class="hero-landing  ">
-    {/*  multimedia  */}
+  <header class="hero-landing">
     <video src='/images/hero/videoplayback.mp4' autoPlay muted loop playsInline></video>
-    {/*  multimedia  */}
-
-    {/*  capa gradiente  */}
     <div class="ob-bg"></div>
-    {/*  capa gradiente  */}
-
-    {/*  contenido, título, bajada, accionables  */}
     <div class="container hero-landing-container">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -472,9 +389,7 @@ export const HERO_MULTIMEDIA = `<div class="container-headers">
             Este es el subtítulo de la página que puede contener hasta 3 líneas de texto, describiendo
             brevemente su función.
           </p>
-          {/* accionable campo buscador */}
           <div class="d-grid d-sm-grid d-md-flex flex-wrap search-container">
-            {/* search wrapper */}
             <div class="search-wrapper">
               <label htmlFor="search-home" class="sr-only">
                 Buscar
@@ -505,7 +420,6 @@ export const HERO_MULTIMEDIA = `<div class="container-headers">
                   </svg>
                 </button>
               </div>
-              {/* input buscador */}
               <div class="search-results bg-light">
                 <div>
                   <a href="#" target="_blank" rel="noopener noreferrer" class="list-link-result">
@@ -522,19 +436,11 @@ export const HERO_MULTIMEDIA = `<div class="container-headers">
                   </a>
                 </div>
               </div>
-              {/* input buscador */}
             </div>
-            {/* search wrapper */}
           </div>
-          {/* accionable campo buscador */}
         </div>
       </div>
     </div>
-    {/*  contenido, título, bajada, accionables  */}
-
-
   </header>
-
-
 </div>
 `;

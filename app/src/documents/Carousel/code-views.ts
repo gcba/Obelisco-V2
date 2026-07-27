@@ -744,14 +744,11 @@ export const CAROUSEL_CARDS_DARK = `<div id="carousel-cards-eventos" class="caro
 		</div>
 	`;
 
-export const CAROUSEL_CARDS_IMPACTO_VISUAL = `<div id="carousel-cards" class="carousel cards controls-top slide">
-		<div class="title">
-			<h4 class="m-0">Encabezado de la seccion</h4>
-			<a href="#" target="_blank" rel="noopener noreferrer">
-				Enlace predeterminado
-			</a>
-
-			<div class="carousel-navigation">
+export const CAROUSEL_CARDS_IMPACTO_VISUAL = `<div id="carousel-cards-bg" class="carousel cards controls-top slide">
+        <div class="title">
+            <h4 class="m-0">Encabezado de la seccion</h4>
+           
+            <div class="carousel-navigation">
               <button
                 class="carousel-control-prev"
                 type="button"
@@ -771,135 +768,135 @@ export const CAROUSEL_CARDS_IMPACTO_VISUAL = `<div id="carousel-cards" class="ca
                 <span class="visually-hidden">Siguiente</span>
               </button>
             </div>
-		</div>
-
-		<div class="carousel-inner responsive-scroll">
-			<div class="carousel-item active">
-				<div class="card-items">
-					
-					<div class="card card-img-bg">
-						<div class="card-badges-bg">
-							<span class="badge badge-s-default">Etiqueta</span>
-							<span class="badge badge-s-default">Etiqueta</span>
-						</div>
-						<img alt="descripción de imagen" loading="lazy" width="348" height="196" src="/Obelisco-V2/images/" >
-						<p class="headline-lg">Título de la tarjeta</p>
-						<a href="#" aria-label="Descripcion de tarjetas"></a>
-					</div>
-
-					<div class="card card-img-bg">
-						<div class="card-badges-bg">
-							<span class="badge badge-s-default">Etiqueta</span>
-							<span class="badge badge-s-default">Etiqueta</span>
-						</div>
-						<img alt="descripción de imagen" loading="lazy" width="348" height="196" src="/Obelisco-V2/images/" >
-						<p class="headline-lg">Título de la tarjeta</p>
-						<a href="#" aria-label="Descripcion de tarjetas"></a>
-					</div>
-
-					<div class="card card-img-bg">
-						<div class="card-badges-bg">
-							<span class="badge badge-s-default">Etiqueta</span>
-							<span class="badge badge-s-default">Etiqueta</span>
-						</div>
-						<img alt="descripción de imagen" loading="lazy" width="348" height="196" src="/Obelisco-V2/images/" >
-						<p class="headline-lg">Título de la tarjeta</p>
-						<a href="#" aria-label="Descripcion de tarjetas"></a>
-					</div>
-
-				</div>
-			</div>
-
-			<div class="carousel-item">
-				<div class="card-items">
-					
-					<div class="card card-img-bg">
-						<div class="card-badges-bg">
-							<span class="badge badge-s-default">Etiqueta</span>
-							<span class="badge badge-s-default">Etiqueta</span>
-						</div>
-						<img alt="descripción de imagen" loading="lazy" width="348" height="196" src="/Obelisco-V2/images/" >
-						<p class="headline-lg">Título de la tarjeta</p>
-						<a href="#" aria-label="Descripcion de tarjetas"></a>
-					</div>
-
-					<div class="card card-img-bg">
-						<div class="card-badges-bg">
-							<span class="badge badge-s-default">Etiqueta</span>
-							<span class="badge badge-s-default">Etiqueta</span>
-						</div>
-						<img alt="descripción de imagen" loading="lazy" width="348" height="196" src="/Obelisco-V2/images/" >
-						<p class="headline-lg">Título de la tarjeta</p>
-						<a href="#" aria-label="Descripcion de tarjetas"></a>
-					</div>
-
-					<div class="card card-img-bg">
-						<div class="card-badges-bg">
-							<span class="badge badge-s-default">Etiqueta</span>
-							<span class="badge badge-s-default">Etiqueta</span>
-						</div>
-						<img alt="descripción de imagen" loading="lazy" width="348" height="196" src="/Obelisco-V2/images/" >
-						<p class="headline-lg">Título de la tarjeta</p>
-						<a href="#" aria-label="Descripcion de tarjetas"></a>
-					</div>
-					
-				</div>
-			</div>
-
-			<div class="carousel-item">
-				<div class="card-items">
-					
-					<div class="card card-img-bg">
-						<div class="card-badges-bg">
-							<span class="badge badge-s-default">Etiqueta</span>
-							<span class="badge badge-s-default">Etiqueta</span>
-						</div>
-						<img alt="descripción de imagen" loading="lazy" width="348" height="196" src="/Obelisco-V2/images/" >
-						<p class="headline-lg">Título de la tarjeta</p>
-						<a href="#" aria-label="Descripcion de tarjetas"></a>
-					</div>
-
-					<div class="card card-img-bg">
-						<div class="card-badges-bg">
-							<span class="badge badge-s-default">Etiqueta</span>
-							<span class="badge badge-s-default">Etiqueta</span>
-						</div>
-						<img alt="descripción de imagen" loading="lazy" width="348" height="196" src="/Obelisco-V2/images/" >
-						<p class="headline-lg">Título de la tarjeta</p>
-						<a href="#" aria-label="Descripcion de tarjetas"></a>
-					</div>
-
-					<div class="card card-img-bg">
-						<div class="card-badges-bg">
-							<span class="badge badge-s-default">Etiqueta</span>
-							<span class="badge badge-s-default">Etiqueta</span>
-						</div>
-						<img alt="descripción de imagen" loading="lazy" width="348" height="196" src="/Obelisco-V2/images/" >
-						<p class="headline-lg">Título de la tarjeta</p>
-						<a href="#" aria-label="Descripcion de tarjetas"></a>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-
-		<div class="carousel-indicators">
-			<button
-				type="button"
-				data-bs-target="#carousel-cards"
-				data-bs-slide-to="0"
-				class="active"
-				aria-current="true"
-				aria-label="Slide 1"
-			></button>
-			<button type="button" data-bs-target="#carousel-cards" data-bs-slide-to="1" aria-label="Slide 2"></button>
-			<button type="button" data-bs-target="#carousel-cards" data-bs-slide-to="2" aria-label="Slide 3"></button>
-		</div>
-
-		<a href="#" target="_blank" rel="noopener noreferrer" className="carousel-link external">
+        </div>
+ 
+        <div class="carousel-inner responsive-scroll">
+            <div class="carousel-item active">
+                <div class="card-items">
+                   
+                    <div class="card card-img-bg">
+                        <div class="card-badges-bg">
+                            <span class="badge badge-s-default">Etiqueta</span>
+                            <span class="badge badge-s-default">Etiqueta</span>
+                        </div>
+                        <img alt="descripción de imagen" loading="lazy" width="348" height="196" src="/Obelisco-V2/images/" >
+                        <p class="headline-lg">Título de la tarjeta</p>
+                        <a href="#" aria-label="Descripcion de tarjetas"></a>
+                    </div>
+ 
+                    <div class="card card-img-bg">
+                        <div class="card-badges-bg">
+                            <span class="badge badge-s-default">Etiqueta</span>
+                            <span class="badge badge-s-default">Etiqueta</span>
+                        </div>
+                        <img alt="descripción de imagen" loading="lazy" width="348" height="196" src="/Obelisco-V2/images/" >
+                        <p class="headline-lg">Título de la tarjeta</p>
+                        <a href="#" aria-label="Descripcion de tarjetas"></a>
+                    </div>
+ 
+                    <div class="card card-img-bg">
+                        <div class="card-badges-bg">
+                            <span class="badge badge-s-default">Etiqueta</span>
+                            <span class="badge badge-s-default">Etiqueta</span>
+                        </div>
+                        <img alt="descripción de imagen" loading="lazy" width="348" height="196" src="/Obelisco-V2/images/" >
+                        <p class="headline-lg">Título de la tarjeta</p>
+                        <a href="#" aria-label="Descripcion de tarjetas"></a>
+                    </div>
+ 
+                </div>
+            </div>
+ 
+            <div class="carousel-item">
+                <div class="card-items">
+                   
+                    <div class="card card-img-bg">
+                        <div class="card-badges-bg">
+                            <span class="badge badge-s-default">Etiqueta</span>
+                            <span class="badge badge-s-default">Etiqueta</span>
+                        </div>
+                        <img alt="descripción de imagen" loading="lazy" width="348" height="196" src="/Obelisco-V2/images/" >
+                        <p class="headline-lg">Título de la tarjeta</p>
+                        <a href="#" aria-label="Descripcion de tarjetas"></a>
+                    </div>
+ 
+                    <div class="card card-img-bg">
+                        <div class="card-badges-bg">
+                            <span class="badge badge-s-default">Etiqueta</span>
+                            <span class="badge badge-s-default">Etiqueta</span>
+                        </div>
+                        <img alt="descripción de imagen" loading="lazy" width="348" height="196" src="/Obelisco-V2/images/" >
+                        <p class="headline-lg">Título de la tarjeta</p>
+                        <a href="#" aria-label="Descripcion de tarjetas"></a>
+                    </div>
+ 
+                    <div class="card card-img-bg">
+                        <div class="card-badges-bg">
+                            <span class="badge badge-s-default">Etiqueta</span>
+                            <span class="badge badge-s-default">Etiqueta</span>
+                        </div>
+                        <img alt="descripción de imagen" loading="lazy" width="348" height="196" src="/Obelisco-V2/images/" >
+                        <p class="headline-lg">Título de la tarjeta</p>
+                        <a href="#" aria-label="Descripcion de tarjetas"></a>
+                    </div>
+                   
+                </div>
+            </div>
+ 
+            <div class="carousel-item">
+                <div class="card-items">
+                   
+                    <div class="card card-img-bg">
+                        <div class="card-badges-bg">
+                            <span class="badge badge-s-default">Etiqueta</span>
+                            <span class="badge badge-s-default">Etiqueta</span>
+                        </div>
+                        <img alt="descripción de imagen" loading="lazy" width="348" height="196" src="/Obelisco-V2/images/" >
+                        <p class="headline-lg">Título de la tarjeta</p>
+                        <a href="#" aria-label="Descripcion de tarjetas"></a>
+                    </div>
+ 
+                    <div class="card card-img-bg">
+                        <div class="card-badges-bg">
+                            <span class="badge badge-s-default">Etiqueta</span>
+                            <span class="badge badge-s-default">Etiqueta</span>
+                        </div>
+                        <img alt="descripción de imagen" loading="lazy" width="348" height="196" src="/Obelisco-V2/images/" >
+                        <p class="headline-lg">Título de la tarjeta</p>
+                        <a href="#" aria-label="Descripcion de tarjetas"></a>
+                    </div>
+ 
+                    <div class="card card-img-bg">
+                        <div class="card-badges-bg">
+                            <span class="badge badge-s-default">Etiqueta</span>
+                            <span class="badge badge-s-default">Etiqueta</span>
+                        </div>
+                        <img alt="descripción de imagen" loading="lazy" width="348" height="196" src="/Obelisco-V2/images/" >
+                        <p class="headline-lg">Título de la tarjeta</p>
+                        <a href="#" aria-label="Descripcion de tarjetas"></a>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+ 
+        <div class="carousel-indicators">
+            <button
+                type="button"
+                data-bs-target="#carousel-cards-bg"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+            ></button>
+            <button type="button" data-bs-target="#carousel-cards-bg" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel-cards-bg" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+ 
+        <a href="#" target="_blank" rel="noopener noreferrer" className="carousel-link external">
             Mostrar todos los eventos
         </a>
-
-	</div>
-
+ 
+    </div>
+ 
 `;

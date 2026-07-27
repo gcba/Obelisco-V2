@@ -102,9 +102,14 @@
         max-width: none;
 
         @include media-breakpoint-down(sm) {
-          max-width: 346px;
+          max-width: 100%;
           margin-inline: auto;
         }
+      }
+
+      &.card-img-sin-borde {
+        width: 100%;
+        max-width: none;
       }
     }
   }

@@ -1,38 +1,54 @@
 // Custom variables and mixins
+
 $card-spacing-desktop: 1.5rem;
+
 $card-icon-size: 2rem;
+
 $card-media-size: 4rem;
+
 $card-icon-bg: $slate-50;
+
 $card-info-icon-size: 1rem;
+
 $card-icon-sin-borde-h: url('data:image/svg+xml,<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.740699" y="0.740699" width="30.5186" height="30.5186" rx="15.2593" stroke="%2338485C" stroke-width="1.4814"/><path d="M12.3427 19.7034L11.5557 18.9164L17.8053 12.6667H12.2964V11.5557H19.7034V18.9627H18.5923V13.4537L12.3427 19.7034Z" fill="%2338485C"/></svg>');
+
 $padding-card-icon-sin-borde: 24px;
 
 // Estilos de estados de tarjetas
+
 @mixin card-states-styles {
   .card-body {
     .card-title {
       a {
         &:hover {
           color: $hover-color;
+
           text-decoration: underline;
+
           text-decoration-thickness: 3px;
         }
       }
 
       .card-title-link {
         text-decoration: none;
+
         color: $body-color;
 
         &::after {
-          content: '';
+          content: "";
+
           border-radius: $border-radius-6xl;
+
           position: absolute;
+
           inset: 0.5px;
         }
 
         &:hover {
           color: $hover-color;
+
           text-decoration: underline;
+
           text-decoration-thickness: 3px;
 
           &::after {
@@ -42,13 +58,18 @@ $padding-card-icon-sin-borde: 24px;
 
         &:focus {
           box-shadow: none;
+
           outline: none;
+
           text-decoration: underline;
+
           text-decoration-thickness: 2px;
+
           color: $primary;
 
           &::after {
             box-shadow: $focus-box-shadow;
+
             outline: 0.25rem solid transparent;
           }
         }
@@ -58,13 +79,18 @@ $padding-card-icon-sin-borde: 24px;
 }
 
 // Custom styles
+
 .card {
   border: none;
+
   outline: $outline-border;
+
   width: 100%;
+
   position: relative;
 
   // border-radius: 30px;
+
   border-radius: $border-radius-6xl;
 
   .card-body {
@@ -73,18 +99,23 @@ $padding-card-icon-sin-borde: 24px;
 
   .card-headline {
     @extend .text-sm;
+
     text-transform: uppercase;
+
     margin-bottom: 1rem;
   }
 
   .card-title {
     @extend .headline-lg;
+
     margin-bottom: 0;
   }
 
   .card-text {
     @extend .text-md;
+
     margin-top: 0.25rem;
+
     margin-bottom: 0;
   }
 
@@ -105,12 +136,16 @@ $padding-card-icon-sin-borde: 24px;
 
     small {
       //   display: block;
+
       display: flex;
+
       align-items: center;
 
       .o-icon {
         font-size: $card-info-icon-size;
+
         vertical-align: sub;
+
         margin-right: 0.25rem;
       }
 
@@ -122,47 +157,71 @@ $padding-card-icon-sin-borde: 24px;
 
   .card-icon {
     margin: $card-spacing-desktop $card-spacing-desktop 0;
+
     font-size: $card-icon-size;
+
     background-color: $card-icon-bg;
+
     width: $card-media-size;
+
     height: $card-media-size;
+
     border-radius: $border-radius-lg;
+
     text-align: center;
+
     line-height: $card-media-size;
   }
 
   .card-img {
     // border-radius: $border-radius-lg $border-radius-lg 0 0;
+
     border-radius: $border-radius-6xl $border-radius-6xl 0 0;
+
     aspect-ratio: 16 / 9;
+
     object-fit: cover;
+
     object-position: center;
+
     height: 196px;
   }
 
   &.unbordered {
     box-shadow: none;
+
     outline-color: transparent;
+
     background: transparent;
   }
 
   // Clase para Tarjeta de eventos. Vertical.
+
   &.card-eventos {
     min-height: 576px;
 
     .card-info {
       position: relative;
+
       margin-top: 32px;
 
       // Línea divisoria
+
       &::before {
-        content: '';
+        content: "";
+
         position: absolute;
+
         top: 0;
+
         left: -24px;
+
         right: -24px;
+
         height: 1px;
+
         transform: translateY(-16px);
+
         background-color: #e6ebf0;
       }
     }
@@ -175,13 +234,21 @@ $padding-card-icon-sin-borde: 24px;
 
     .card-img {
       width: $card-media-size;
+
       height: $card-media-size;
+
       aspect-ratio: 1 / 1;
+
       margin: 1rem;
+
       margin-right: 0;
+
       border-radius: $border-radius-lg;
+
       object-fit: cover;
+
       object-position: center;
+
       flex-shrink: 0;
 
       + .card-body {
@@ -195,45 +262,71 @@ $padding-card-icon-sin-borde: 24px;
 
     .card-body {
       display: flex;
+
       flex-direction: column;
+
       justify-content: flex-start;
+
       padding: 1.5rem 1rem;
     }
 
     // Tarjeta horizontal con ícono, sin borde
+
     &.visual-icon-borderless {
       width: 100%;
+
       min-width: 100%;
+
       height: 100%;
+
       min-height: 100%;
+
       flex-direction: column;
+
       outline: 0;
 
       .visual-icon-container {
         height: 80px;
+
         padding: $padding-card-icon-sin-borde;
+
         display: flex;
+
         align-items: center;
 
         .card-icon {
           margin: 0;
+
           width: 32px;
+
           height: 32px;
+
           display: flex;
+
           align-items: center;
+
           justify-content: center;
+
           font-size: 32px;
+
           line-height: 1;
+
           background: transparent;
         }
 
         &::after {
-          content: '';
+          content: "";
+
           position: absolute;
+
           top: $padding-card-icon-sin-borde;
+
           right: $padding-card-icon-sin-borde;
+
           width: 32px;
+
           height: 32px;
+
           background: $card-icon-sin-borde-h center/contain no-repeat;
         }
       }
@@ -251,17 +344,23 @@ $padding-card-icon-sin-borde: 24px;
   }
 
   // Estilos para estados hover, focus
+
   @include card-states-styles;
 
   //Estilos para tarjeta temática. Horizontal.
+
   &.thematic {
     flex-direction: column;
+
     padding: 16px;
 
     .card-img {
       width: 6rem;
+
       height: 6rem;
+
       aspect-ratio: 1/1;
+
       margin: 0;
 
       + .card-body {
@@ -271,46 +370,65 @@ $padding-card-icon-sin-borde: 24px;
 
     .card-body {
       padding: 1.5rem 1rem;
+
       padding-left: 0;
     }
 
     @include media-breakpoint-up(xl) {
       flex-direction: row;
+
       gap: 1.5rem;
+
       align-items: center;
+
       padding: 0;
 
       .card-img {
         width: 8rem;
+
         height: 8rem;
       }
     }
   }
 
   // Tarjeta de impacto visual. Vertical.
+
   &.card-img-bg {
     position: relative;
+
     width: 100%;
+
     height: 500px;
+
     max-height: 500px;
+
     min-height: 500px;
 
     // width: 346px;
+
     max-width: 346px;
+
     padding: 24px;
+
     border-radius: 30px;
+
     overflow: hidden;
 
     p.headline-lg {
       color: white;
+
       margin-top: 16px;
+
       margin-bottom: 0;
     }
 
     div.card-badges-bg {
       width: 100%;
+
       display: inline-flex;
+
       flex-wrap: wrap;
+
       row-gap: 4px;
 
       @media (width <= 290px) {
@@ -319,39 +437,57 @@ $padding-card-icon-sin-borde: 24px;
     }
 
     &::after {
-      content: '';
+      content: "";
+
       width: 100%;
+
       height: 100%;
+
       position: absolute;
+
       left: 0;
+
       bottom: 0;
+
       background: linear-gradient(
         0deg,
         rgb(0 0 0 / 0%) 0%,
+
         rgb(0 0 0 / 80%) 100%
       );
     }
 
     img {
       position: absolute;
+
       inset: 0;
+
       width: 100%;
+
       height: 100%;
+
       object-fit: cover;
+
       object-position: center;
+
       z-index: 0;
     }
 
     a {
       position: absolute;
+
       inset: 0;
+
       z-index: 2;
+
       width: 100%;
+
       height: 100%;
     }
 
     > *:not(img, a) {
       position: relative;
+
       z-index: 1;
     }
   }
@@ -359,21 +495,30 @@ $padding-card-icon-sin-borde: 24px;
   // Tarjeta de impacto visual. Vertical.
 
   // Variante de noticias sin borde. Vertical.
+
   &.card-img-sin-borde {
     width: 348px;
+
     max-width: 348px;
+
     height: 100%;
-    max-height: 576px;
+
+    // height: 576px;
+
     @extend .unbordered;
 
     @include media-breakpoint-down(sm) {
       width: 100%;
+
       max-width: 100%;
     }
 
     .card-img {
       border-radius: $border-radius-6xl;
+
       height: 400px;
+
+      min-height: 400px;
     }
 
     .card-badges {
@@ -389,15 +534,20 @@ $padding-card-icon-sin-borde: 24px;
 }
 
 //Estilos para lista de tarjetas verticales desplazable
+
 .responsive-scroll {
   &.vertical-cards-container {
     max-width: fit-content;
+
     border-radius: 0.5rem;
+
     gap: 1rem;
+
     padding: 0.25rem 0.25rem 0.75rem;
 
     .card {
       width: 348px;
+
       min-width: 348px;
 
       @include media-breakpoint-down(xs) {
@@ -412,20 +562,26 @@ $padding-card-icon-sin-borde: 24px;
 }
 
 $colors: (
-  'blue': $blue-400,
-  'sky': $sky-400,
-  'cyan': $cyan-400,
-  'red': $red-400,
-  'yellow': $yellow-400,
-  'purple': $purple-400,
+  "blue": $blue-400,
+
+  "sky": $sky-400,
+
+  "cyan": $cyan-400,
+
+  "red": $red-400,
+
+  "yellow": $yellow-400,
+
+  "purple": $purple-400
 );
 
-$positions: ('left', 'right', 'top', 'bottom');
+$positions: ("left", "right", "top", "bottom");
 
 @each $position in $positions {
   @each $key, $color in $colors {
     .card-border-#{$position}-#{$key} {
       border-#{$position}: 12px solid $color;
+
       border-radius: $border-radius-6xl;
     }
   }

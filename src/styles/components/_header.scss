@@ -5,6 +5,8 @@ $navbar-container-padding-x: 60px;
 $navbar-toggle-close: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="rgb(255, 255, 255)"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M18.3 5.71c-.39-.39-1.02-.39-1.41 0L12 10.59 7.11 5.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"/></svg>');
 $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><g clip-path="url(%23clip0_15634_2285)"><path d="M4 18H20C20.55 18 21 17.55 21 17C21 16.45 20.55 16 20 16H4C3.45 16 3 16.45 3 17C3 17.55 3.45 18 4 18ZM4 13H20C20.55 13 21 12.55 21 12C21 11.45 20.55 11 20 11H4C3.45 11 3 11.45 3 12C3 12.55 3.45 13 4 13ZM3 7C3 7.55 3.45 8 4 8H20C20.55 8 21 7.55 21 7C21 6.45 20.55 6 20 6H4C3.45 6 3 6.45 3 7Z" fill="%2338485C"/></g><defs><clipPath id="clip0_15634_2285"><rect width="24" height="24" fill="white"/></clipPath></defs></svg>');
 
+$breadcrumb-divider-dark: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="chevron_right"><path id="Vector" d="M8.99953 6.71051C8.60953 7.10051 8.60953 7.73051 8.99953 8.12051L12.8795 12.0005L8.99953 15.8805C8.60953 16.2705 8.60953 16.9005 8.99953 17.2905C9.38953 17.6805 10.0195 17.6805 10.4095 17.2905L14.9995 12.7005C15.3895 12.3105 15.3895 11.6805 14.9995 11.2905L10.4095 6.70051C10.0295 6.32051 9.38953 6.32051 8.99953 6.71051Z" fill="%23FFFFFF"/></g></svg>');
+
 @mixin item-notification($margin-left) {
   display: inline-block;
   width: 8px;
@@ -223,20 +225,21 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
 
       .header-container {
         padding: 0.875rem 1rem;
+        position: relative;
         z-index: 1050;
-        background-color: $white;
+        background-color: transparent;
       }
 
-      .header-backdrop {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1040;
-        width: 100%;
-        height: 100%;
-        background-color: $black;
-        opacity: 0.25;
-      }
+      // .header-backdrop {
+      //   position: fixed;
+      //   top: 0;
+      //   left: 0;
+      //   z-index: 1040;
+      //   width: 100%;
+      //   height: 100%;
+      //   background-color: $black;
+      //   opacity: 0.25;
+      // }
     }
   }
 
@@ -431,8 +434,8 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
 
           @include media-breakpoint-up(xl) {
             margin-right: auto;
-            min-width: 451px;
-            max-width: 990px;
+            min-width: 0;
+            max-width: none;
             margin-top: 0;
             margin-bottom: 0;
           }
@@ -575,3 +578,289 @@ $navbar-toggle-menu: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/
 }
 
 // Header Variante Banner
+
+// Hero header multimedia - Cabecera de página multimedia
+div.container-headers {
+  position: relative;
+  height: 70vh;
+  min-height: 700px;
+
+  /* revisar altura y colores */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  // Breakpoint <170px
+  @media (width <= 170px) {
+    min-height: 1300px;
+  }
+
+  // Header multimedia y contenido
+  header.hero-landing {
+    position: relative;
+    min-height: 0;
+    flex: 1;
+    display: flex;
+    align-items: start;
+    background: transparent;
+
+    @include media-breakpoint-down(md) {
+      min-height: 600px;
+    }
+
+    video,
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+
+    /* capa gradiente Degradado encima del video z-index 1 */
+    .ob-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(179deg, #000 4.22%, rgb(0 0 0 / 0%) 99.02%);
+      z-index: 1;
+    }
+
+    /* Contenido del hero encima del degradado */
+    .hero-landing-container {
+      position: relative;
+      z-index: 101;
+      color: white;
+      width: 100%;
+      padding-top: 88px;
+      padding-bottom: 48px;
+
+      @include media-breakpoint-down(xl) {
+        padding: 88px 32px 32px;
+
+        nav {
+          ol.breadcrumb {
+            margin-bottom: 24px;
+          }
+        }
+
+        div {
+          div {
+            p {
+              margin-bottom: 24px;
+            }
+          }
+        }
+      }
+
+      @include media-breakpoint-down(sm) {
+        div {
+          div {
+            p {
+              margin-bottom: 24px;
+            }
+          }
+        }
+      }
+
+      // Breakpoint <350px
+      @media (width <= 350px) {
+        padding-top: 220px;
+      }
+
+      @include media-breakpoint-between(lg, xl) {
+        .row {
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+
+      // migas de pan
+      nav {
+        padding: 0;
+
+        ol.breadcrumb {
+          margin-bottom: 48px;
+
+          li.breadcrumb-item a {
+            color: white;
+          }
+
+          li.breadcrumb-item::before {
+            background: transparent $breadcrumb-divider-dark no-repeat center
+              center;
+          }
+        }
+      }
+
+      // migas de pan
+
+      div {
+        margin-left: 0;
+        margin-right: 0;
+
+        div {
+          padding: 0;
+
+          h1 {
+            margin-bottom: 16px;
+          }
+
+          p {
+            margin-bottom: 40px;
+          }
+
+          // Accionables
+
+          // Accionable desplegables
+          div.container-dropdowns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+
+            .dropdown-menu .dropdown-item {
+              display: flex;
+            }
+
+            .dropdown .btn.btn-dropdown.btn-dropdown-border,
+            .dropdown .btn-dropdown.btn-dropdown-border.progression-link {
+              border-radius: 25px;
+            }
+          }
+
+          // Accionable desplegables
+
+          // Accionable boton
+          // Son los mismos estilos que en la hoja de hero.scss
+          div.btn-hero {
+            display: flex;
+            gap: 24px 8px;
+            @media (width <= 360px) {
+              display: grid;
+
+              button {
+                width: 100%;
+                display: block;
+              }
+            }
+          }
+
+          // Accionable boton
+
+          // Variante buscador
+          // Son los mismos estilos que en la hoja de hero.scss
+          .search-container {
+            position: relative;
+            height: 57px;
+            z-index: 4;
+
+            .search-wrapper {
+              max-width: 650px;
+              border-radius: $border-radius-pill;
+              overflow: hidden;
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              left: 0;
+
+              &:focus-within {
+                background-color: #f3f6f9;
+                box-shadow: 0 0 0 0.25rem #218274;
+                outline: 0.25rem solid transparent;
+                min-height: max-content;
+                border-radius: $border-radius-6xl;
+
+                .search-results {
+                  display: block;
+                }
+              }
+
+              // resultados
+              .search-results {
+                display: none;
+
+                a:focus {
+                  box-shadow: none;
+                  outline: none;
+                }
+
+                /* resultados */
+                .list-link-result {
+                  padding: 0.5rem;
+                  display: flex;
+                  align-items: center;
+                  text-decoration: none;
+                  color: #000;
+                  gap: 0.25rem;
+                }
+              }
+
+              /* contenedor del botón */
+              .search-btn-container {
+                position: absolute;
+                top: 4px;
+                right: 4px;
+                bottom: 4px;
+
+                .btn-search {
+                  > svg {
+                    display: none;
+                  }
+
+                  > p {
+                    // display: inline;
+                    margin: 0;
+                    padding: 0;
+                  }
+
+                  @media (width <= 360px) {
+                    & > svg {
+                      display: block;
+                    }
+
+                    & > p {
+                      display: none;
+                    }
+                    z-index: 100;
+                  }
+                }
+              }
+
+              /* input dentro de search */
+              #search-home.form-control {
+                // border-bottom: 2px solid #e6ebf0;
+                border-radius: 0.5rem 0.5rem 0 0;
+                padding: 1rem 12px;
+                padding-right: 128px;
+                box-shadow: none;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                outline: 0.125rem solid white;
+              }
+            }
+          }
+
+          > .flex-column {
+            row-gap: 24px;
+          }
+
+          // Variante buscador
+
+          // Accionables
+        }
+      }
+    }
+
+    // Header multimedia y contenido
+  }
+
+  // Header multimedia y contenido
+}
+
+// Hero header multimedia - Cabecera de página multimedia

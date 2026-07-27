@@ -19,6 +19,37 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
+      title: 'Versión 1.17.0',
+      content: (
+        <>
+          <ul className="docs-list">
+            <p>La Versión 1.17.0 contiene lo siguiente: </p>
+            <li>
+              Se crea una nueva variante de Cabecera de Página con multimedia:{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/components/hero-multimedia">Cabecera de Página multimedia</a>.
+            </li>
+            <li>
+              Se creó la sección de{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/components/hero">Cabecera de Página institucional</a>.
+            </li>
+            <li>
+              Se eliminaron las variantes de colores para cabecera institucional, dejando como único color de fondo
+              relacionado al manual de marca <code>bg-blue</code>.
+            </li>
+            <li>
+              Se eliminó la variante &quot;dinámica&quot; para cabeceras con clase <code> wave </code>y sus respectivas
+              variantes de multimedia.
+            </li>
+          </ul>
+          En{' '}
+          <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-8">
+            Cambios en componente
+          </a>{' '}
+          está la documentación de las clases en detalle.
+        </>
+      ),
+    },
+    {
       title: 'Versión 1.16.0',
       content: (
         <>

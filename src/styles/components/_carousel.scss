@@ -470,29 +470,68 @@ $max-width: 1000px;
         }
       }
     }
+  }
 
-    @media (width >= 992px) and (width < 1200px) {
-      // Solo para carrusel de destacados
+  // Solo para carrusel de destacados
+  @media (width >= 992px) and (width < 1200px) {
+    padding: 32px;
 
-      &:has(.panel-horizontal-content) {
-        .carousel-inner {
-          max-width: 890px;
-          margin: auto;
+    &:has(.panel-horizontal-content) {
+      .carousel-inner {
+        // max-width: 890px;
+        width: 100%;
+        margin: auto;
+
+        .carousel-item {
+          .panel-horizontal-content {
+            .panel-horizontal {
+              flex-direction: column;
+
+              .panel-img {
+                max-width: 100%;
+              }
+            }
+          }
         }
+      }
 
-        .carousel-control-prev {
-          left: 60px;
-        }
+      .carousel-indicators {
+        justify-content: start;
+      }
 
-        .carousel-control-next {
-          right: 60px;
+      .carousel-control-next,
+      .carousel-control-prev {
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        border-radius: 9999px;
+        border: none;
+        outline: 0.125rem solid #e6ebf0;
+        background-color: #ffffff;
+        top: auto;
+        bottom: 12px;
+        width: 48px;
+        height: 48px;
+        .carousel-control-next-icon, .carousel-control-prev-icon {
+          width: 32px;
+          height: 32px;
         }
+      }
+
+      .carousel-control-prev {
+        left: auto;
+        right: 100px;
+      }
+
+      .carousel-control-next {
+        right: 32px;
       }
     }
   }
 
   // solo para carrusel de tarjetas
-
   @media (width >= 992px) and (width < 1200px) {
     &.cards {
       .carousel-control-prev {

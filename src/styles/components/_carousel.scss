@@ -1,29 +1,13 @@
 $carousel-bg: $white;
-
 $carousel-bg-hover: $slate-50;
-
 $carousel-active-bg: $blue-700;
-
-$svg-base-left: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 6.70498C14.61 6.31498 13.98 6.31498 13.59 6.70498L9.00002 11.295C8.61002 11.685 8.61002 12.315 9.00002 12.705L13.59 17.295C13.98 17.685 14.61 17.685 15 17.295C15.39 16.905 15.39 16.275 15 15.885L11.12 11.995L15 8.11498C15.39 7.72498 15.38 7.08498 15 6.70498Z" fill="%23';
-
-$svg-base-right: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9.00002 6.71063C8.61002 7.10063 8.61002 7.73063 9.00002 8.12063L12.88 12.0006L9.00002 15.8806C8.61002 16.2706 8.61002 16.9006 9.00002 17.2906C9.39002 17.6806 10.02 17.6806 10.41 17.2906L15 12.7006C15.39 12.3106 15.39 11.6806 15 11.2906L10.41 6.70063C10.03 6.32063 9.39002 6.32063 9.00002 6.71063Z" fill="%23';
-
-$color-default: '101E37';
-
 $color-hover: '274986';
-
 $color-active: 'FFFFFF';
-
-$carousel-icon-left: url('#{$svg-base-left}#{$color-default}"/></svg>');
-
-$carousel-icon-right: url('#{$svg-base-right}#{$color-default}"/></svg>');
-
+$carousel-icon-left: url('data:image/svg+xml,<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.4433 8.79H4.55L11.0567 2.28333C11.5767 1.76333 11.5767 0.91 11.0567 0.39C10.5367 -0.13 9.69667 -0.13 9.17667 0.39L0.39 9.17667C-0.13 9.69667 -0.13 10.5367 0.39 11.0567L9.17667 19.8433C9.69667 20.3633 10.5367 20.3633 11.0567 19.8433C11.5767 19.3233 11.5767 18.4833 11.0567 17.9633L4.55 11.4567H19.4433C20.1767 11.4567 20.7767 10.8567 20.7767 10.1233C20.7767 9.39 20.1767 8.79 19.4433 8.79Z" fill="%231D3343"/></svg>');
+$carousel-icon-right: url('data:image/svg+xml,<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.33333 11.4567H16.2267L9.72 17.9633C9.2 18.4833 9.2 19.3367 9.72 19.8567C10.24 20.3767 11.08 20.3767 11.6 19.8567L20.3867 11.07C20.9067 10.55 20.9067 9.71 20.3867 9.19L11.6133 0.39C11.0933 -0.13 10.2533 -0.13 9.73333 0.39C9.21333 0.91 9.21333 1.75 9.73333 2.27L16.2267 8.79H1.33333C0.6 8.79 0 9.39 0 10.1233C0 10.8567 0.6 11.4567 1.33333 11.4567Z" fill="%231D3343"/></svg>');
 $carousel-icon-left-hover: url('#{$svg-base-left}#{$color-hover}"/></svg>');
-
 $carousel-icon-right-hover: url('#{$svg-base-right}#{$color-hover}"/></svg>');
-
 $carousel-icon-left-active: url('#{$svg-base-left}#{$color-active}"/></svg>');
-
 $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
 
 @mixin carousel-navigation-states(
@@ -60,14 +44,10 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
     height: 64px;
     opacity: 1;
 
-    .carousel-control-prev-icon {
-      width: 48px;
-      height: 48px;
-    }
-
+    .carousel-control-prev-icon,
     .carousel-control-next-icon {
-      width: 48px;
-      height: 48px;
+      width: 21px;
+      height: 21px;
     }
   }
 
@@ -514,6 +494,7 @@ $max-width: 1000px;
         bottom: 12px;
         width: 48px;
         height: 48px;
+
         .carousel-control-next-icon,
         .carousel-control-prev-icon {
           width: 32px;

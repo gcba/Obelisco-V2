@@ -256,15 +256,12 @@ const sections = [
               <code>bg-content-hero-purple</code>
             </li>
             <li>
-              <code>bg-content-hero-blue</code>
-            </li>
-            <li>
               <code>bg-content-hero-red</code>
             </li>
+            <li>
+              Solo queda disponible como único color <code>bg-content-hero-blue</code>
+            </li>
           </ul>
-        </li>
-        <li>
-          Se crea una nueva clase para color de fondo institucional llamada <code>bg-blue</code>
         </li>
       </ul>
     ),

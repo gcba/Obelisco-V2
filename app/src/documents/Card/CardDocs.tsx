@@ -383,7 +383,7 @@ const CardDocs: React.FC = () => {
               <div className="card-vertical-box-sizing">
                 <div className="card card-img-borderless">
                   <Image
-                    src={`${basePath}/images/tarjetas/card-img-borderless.svg`}
+                    src={`${basePath}/images/tarjetas/card-img-sin-borde.svg`}
                     className="card-img"
                     alt="descripción de imagen"
                     width={348}
@@ -448,7 +448,7 @@ const CardDocs: React.FC = () => {
               <div className="card-vertical-box-sizing">
                 <div className="card card-img-borderless">
                   <Image
-                    src={`${basePath}/images/tarjetas/card-img-borderless.svg`}
+                    src={`${basePath}/images/tarjetas/card-img-sin-borde.svg`}
                     className="card-img"
                     alt="descripción de imagen"
                     width={348}
@@ -498,7 +498,7 @@ const CardDocs: React.FC = () => {
                   </h3>
                   <p className="card-text ellipsis-4">
                     Esta es la descripción del evento que puede contener hasta 4 líneas de texto. Cuando la descripción
-                    se excede de este límite, el texto se trunca y aparece el
+                    se excede de este límite, el texto se trunca y aparecen los puntos suspensivos.
                   </p>
                   <div className="card-info">
                     <div className="pt-2">

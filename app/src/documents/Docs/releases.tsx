@@ -37,14 +37,13 @@ const ReleasesComponents: React.FC = () => {
             </li>
             <li>
               Se truncan tarjetas verticales (excepto eventos, impacto visual y noticia sin borde) a 2 líneas en título,
-              3 líneas en descripcion.
+              3 líneas en descripción.
             </li>
-
             <li>
               <strong>Correciones (fix):</strong>
               <ul>
                 <li>
-                  Estado <code>focus</code> en Cábecera de página institucional, con accionable campo buscador.
+                  Estado <code>focus</code> en Cabecera de página institucional, con accionable campo buscador.
                 </li>
                 <li>
                   Carrusel de destacados entre <code>992px</code> y <code>1200px</code>. La disposición pasa a ser

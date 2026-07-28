@@ -167,8 +167,8 @@ export const VERTICAL_CURSOS = `
 `;
 
 export const VERTICAL_NOTICE_SIN_BORDE = `
-<div class="card card-img-sin-borde">
-  <img class="card-img" src="/card-img-sin-borde.svg" alt="descripción de imagen" />
+<div class="card card-img-borderless">
+  <img class="card-img" src="/card-img-borderless.svg" alt="descripción de imagen" />
   <div class="card-body">
     <div class="card-badges">
         <span class="badge badge-s-default badge-sm">Etiqueta</span>
@@ -189,8 +189,8 @@ export const VERTICAL_NOTICE_SIN_BORDE = `
 </div>
 `;
 export const VERTICAL_NOTICE_SIN_BORDE_CURSOS = `
-<div class="card card-img-sin-borde">
-  <img class="card-img" src="/card-img-sin-borde.svg" alt="descripción de imagen" />
+<div class="card card-img-borderless">
+  <img class="card-img" src="/card-img-borderless.svg" alt="descripción de imagen" />
   <div class="card-body">
     <div class="card-badges">
         <span class="badge badge-s-default badge-sm">Etiqueta</span>

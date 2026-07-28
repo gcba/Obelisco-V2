@@ -381,9 +381,9 @@ const CardDocs: React.FC = () => {
           <CodeBox codeHTML={VERTICAL_NOTICE_SIN_BORDE}>
             <div className="container">
               <div className="card-vertical-box-sizing">
-                <div className="card card-img-sin-borde">
+                <div className="card card-img-borderless">
                   <Image
-                    src={`${basePath}/images/tarjetas/card-img-sin-borde.svg`}
+                    src={`${basePath}/images/tarjetas/card-img-borderless.svg`}
                     className="card-img"
                     alt="descripción de imagen"
                     width={348}
@@ -446,9 +446,9 @@ const CardDocs: React.FC = () => {
           <CodeBox codeHTML={VERTICAL_NOTICE_SIN_BORDE_CURSOS}>
             <div className="container">
               <div className="card-vertical-box-sizing">
-                <div className="card card-img-sin-borde">
+                <div className="card card-img-borderless">
                   <Image
-                    src={`${basePath}/images/tarjetas/card-img-sin-borde.svg`}
+                    src={`${basePath}/images/tarjetas/card-img-borderless.svg`}
                     className="card-img"
                     alt="descripción de imagen"
                     width={348}

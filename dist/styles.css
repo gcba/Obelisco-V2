@@ -12013,8 +12013,8 @@ textarea.form-control-lg {
     margin-inline: auto;
   }
 }
-
-.highlighted-items-2 {
+card-img-borderless
+.highlighted-items-2 {card-img-borderless
   row-gap: 2rem;
   align-items: stretch;
 }
@@ -15136,7 +15136,7 @@ textarea.form-control {
   background: none;
 }
 .modal .modal-content .modal-header small, .modal .modal-content .modal-header .small {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;card-img-borderless
   color: #101e37;
 }
 .modal .modal-content .modal-header .modal-title {
@@ -18548,7 +18548,7 @@ span.form-label {
   padding-top: 0;
 }
 .navbar.o-header .header-container .navbar-collapse .navbar-user-mobile .navbar-user-mobile-title {
-  font-weight: 600;
+  font-weight: 600;card-img-borderless
   margin-bottom: 0.5rem;
   padding-left: 1rem;
 }
@@ -20841,7 +20841,7 @@ header.hero.bg-content-hero-blue .content .breadcrumb-item::before {
   background: transparent;
 }
 .card.card-eventos {
-  min-height: 576px;
+  min-height: 576px;card-img-borderless
 }
 .card.card-eventos .card-info {
   position: relative;
@@ -21054,26 +21054,26 @@ header.hero.bg-content-hero-blue .content .breadcrumb-item::before {
   height: 100%;
   max-height: 576px;
 }
-@media (max-width: 575.98px) {
+@mediacard-img-borderless8px) {
   .card.card-img-sin-borde {
     width: 100%;
     max-width: 100%;
   }
 }
-.card.card-img-sin-borde .card-img, .card.card-img-sin-borde .card.card-horizontal .card-icon, .card.card-horizontal .card.card-img-sin-borde .card-icon {
+.card.cacard-img-borderlesscard-img, .card.card-img-sin-borde .card.card-horizontal .card-icon, .card.card-horizontal .card.card-img-sin-borde .card-icon {
   border-radius: 32px;
   height: 400px;
 }
 .card.card-img-sin-borde .card-badges {
-  padding-bottom: 16px;
+  paddcard-img-borderlesscard-img-borderlesscard-img-borderless
 }
 .card.card-img-sin-borde .card-info {
   margin-top: 1rem;
 }
-
+card-img-borderless
 .responsive-scroll.vertical-cards-container {
   max-width: fit-content;
-  border-radius: 0.5rem;
+  bordcard-img-borderless
   gap: 1rem;
   padding: 0.25rem 0.25rem 0.75rem;
 }

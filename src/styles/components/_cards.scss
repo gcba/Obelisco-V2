@@ -89,12 +89,14 @@ $padding-card-icon-sin-borde: 24px;
   .card-title {
     @extend .headline-lg;
     margin-bottom: 0;
+    @extend .ellipsis-2;
   }
 
   .card-text {
     @extend .text-md;
     margin-top: 0.25rem;
     margin-bottom: 0;
+    @extend .ellipsis-3;
   }
 
   .card-badges {
@@ -212,7 +214,6 @@ $padding-card-icon-sin-borde: 24px;
     }
 
     // Tarjeta horizontal con ícono, sin borde
-
     &.visual-icon-borderless {
       width: 100%;
       min-width: 100%;
@@ -375,21 +376,16 @@ $padding-card-icon-sin-borde: 24px;
   // Tarjeta de impacto visual. Vertical.
 
   // Variante de noticias sin borde. Vertical.
-
   &.card-img-sin-borde {
     width: 348px;
     max-width: 348px;
     height: 100%;
-
-    // height: 576px;
-
     @extend .unbordered;
 
     @include media-breakpoint-down(sm) {
       width: 100%;
       max-width: 100%;
     }
-
     .card-img {
       border-radius: $border-radius-6xl;
       height: 400px;
@@ -398,6 +394,14 @@ $padding-card-icon-sin-borde: 24px;
 
     .card-badges {
       padding-bottom: 16px;
+    }
+
+    .card-title-link {
+      @extend .ellipsis-2;
+    }
+
+    .card-text {
+      @extend .ellipsis-3;
     }
 
     .card-info {

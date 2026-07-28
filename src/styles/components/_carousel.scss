@@ -514,7 +514,8 @@ $max-width: 1000px;
         bottom: 12px;
         width: 48px;
         height: 48px;
-        .carousel-control-next-icon, .carousel-control-prev-icon {
+        .carousel-control-next-icon,
+        .carousel-control-prev-icon {
           width: 32px;
           height: 32px;
         }
@@ -570,7 +571,6 @@ $max-width: 1000px;
     }
 
     // carrusel de impacto visual
-
     &.cards.controls-top {
       // Título y flechas
 

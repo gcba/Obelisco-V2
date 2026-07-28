@@ -114,6 +114,7 @@ header.hero {
     // Variante botones
 
     // Variante buscador
+    // Son los mismos estilos que en la hoja de hero.scss
     .search-container {
       position: relative;
       height: 57px;
@@ -134,6 +135,7 @@ header.hero {
           box-shadow: 0 0 0 0.25rem #218274;
           outline: 0.25rem solid transparent;
           min-height: max-content;
+          border-radius: $border-radius-6xl;
 
           .search-results {
             display: block;

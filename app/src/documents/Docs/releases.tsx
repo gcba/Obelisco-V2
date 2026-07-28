@@ -35,6 +35,10 @@ const ReleasesComponents: React.FC = () => {
               Se crea una nueva Tarjeta vertical, de cursos:{' '}
               <a href="https://gcba.github.io/Obelisco-V2/components/cards#section-dev-10">Tarjetas de cursos</a>.
             </li>
+            <li>
+              Se truncan tarjetas verticales (excepto eventos, impacto visual y noticia sin borde) a 2 líneas en título,
+              3 líneas en descripcion.
+            </li>
 
             <li>
               <strong>Correciones (fix):</strong>

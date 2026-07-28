@@ -8,11 +8,11 @@ $svg-base-left: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" widt
 
 $svg-base-right: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9.00002 6.71063C8.61002 7.10063 8.61002 7.73063 9.00002 8.12063L12.88 12.0006L9.00002 15.8806C8.61002 16.2706 8.61002 16.9006 9.00002 17.2906C9.39002 17.6806 10.02 17.6806 10.41 17.2906L15 12.7006C15.39 12.3106 15.39 11.6806 15 11.2906L10.41 6.70063C10.03 6.32063 9.39002 6.32063 9.00002 6.71063Z" fill="%23';
 
-$color-default: "101E37";
+$color-default: '101E37';
 
-$color-hover: "274986";
+$color-hover: '274986';
 
-$color-active: "FFFFFF";
+$color-active: 'FFFFFF';
 
 $carousel-icon-left: url('#{$svg-base-left}#{$color-default}"/></svg>');
 
@@ -26,9 +26,13 @@ $carousel-icon-left-active: url('#{$svg-base-left}#{$color-active}"/></svg>');
 
 $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
 
-@mixin carousel-navigation-states($box-shadow, $bg-color, $carousel-icon-left, $carousel-icon-right) {
+@mixin carousel-navigation-states(
+  $box-shadow,
+  $bg-color,
+  $carousel-icon-left,
+  $carousel-icon-right
+) {
   box-shadow: $box-shadow;
-
   background-color: $bg-color;
 
   .carousel-control-prev-icon {
@@ -45,44 +49,35 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
 
   .carousel-indicators {
     justify-content: center;
-
     height: auto;
   }
 
   .carousel-control-next,
   .carousel-control-prev {
     top: 50%;
-
     bottom: auto;
-
     width: 64px;
-
     height: 64px;
-
     opacity: 1;
 
     .carousel-control-prev-icon {
       width: 48px;
-
       height: 48px;
     }
 
     .carousel-control-next-icon {
       width: 48px;
-
       height: 48px;
     }
   }
 
   .carousel-control-prev {
     left: 28px;
-
     right: auto;
   }
 
   .carousel-control-next {
     right: 28px;
-
     left: auto;
   }
 }
@@ -92,24 +87,19 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
 
   .carousel-indicators {
     justify-content: start;
-
     height: 48px;
   }
 
   .carousel-control-next,
   .carousel-control-prev {
     top: auto;
-
     bottom: 12px;
-
     width: 48px;
-
     height: 48px;
 
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
       width: 32px;
-
       height: 32px;
     }
   }
@@ -120,7 +110,6 @@ $carousel-icon-right-active: url('#{$svg-base-right}#{$color-active}"/></svg>');
 
   .carousel-control-prev {
     left: auto;
-
     right: 100px;
   }
 }
@@ -133,11 +122,8 @@ $max-width: 1000px;
 
 .carousel {
   background-color: $light;
-
   display: flex;
-
   flex-direction: column;
-
   row-gap: 24px;
 
   .carousel-inner {
@@ -146,26 +132,17 @@ $max-width: 1000px;
 
   .carousel-indicators {
     position: relative;
-
     margin: 0;
-
     align-items: center;
-
     column-gap: 8px;
 
     button {
       margin: 0;
-
       background-color: transparent;
-
       border: solid 1px $blue-900;
-
       width: 12px;
-
       height: 12px;
-
       opacity: 1;
-
       border-radius: 50%;
 
       &.active {
@@ -177,34 +154,24 @@ $max-width: 1000px;
   .carousel-control-next,
   .carousel-control-prev {
     z-index: 2;
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     opacity: 1;
 
     // border-radius: $border-radius-lg;
-
     border-radius: $border-radius-pill;
-
     border: none;
-
     outline: $outline-border;
-
     background-color: $carousel-bg;
 
     .carousel-control-prev-icon {
       background-image: none;
-
       content: $carousel-icon-left;
     }
 
     .carousel-control-next-icon {
       background-image: none;
-
       content: $carousel-icon-right;
     }
 
@@ -228,15 +195,18 @@ $max-width: 1000px;
 
     &:hover {
       // @include carousel-navigation-states(none, $carousel-bg);
-
       background-color: $carousel-bg-hover;
 
       // outline: $hover-outline;
     }
 
     &:focus {
-      @include carousel-navigation-states($focus-box-shadow, $carousel-bg, $carousel-icon-left, $carousel-icon-right);
-
+      @include carousel-navigation-states(
+        $focus-box-shadow,
+        $carousel-bg,
+        $carousel-icon-left,
+        $carousel-icon-right
+      );
       outline: 0.25rem solid transparent;
     }
 
@@ -247,11 +217,8 @@ $max-width: 1000px;
         $carousel-icon-left-active,
         $carousel-icon-right-active
       );
-
       outline: 0.25rem solid transparent;
-
       outline-offset: -2px;
-
       box-shadow: 0 0 0 0.125rem $slate-100;
     }
   }
@@ -260,16 +227,12 @@ $max-width: 1000px;
 
   .title {
     display: flex;
-
     column-gap: 2rem;
-
     align-items: center;
 
     a {
       position: absolute;
-
       left: 16px;
-
       bottom: 24px;
     }
   }
@@ -283,9 +246,7 @@ $max-width: 1000px;
 
     .panel-horizontal {
       padding: 0;
-
       max-width: 100%;
-
       row-gap: 24px;
 
       .panel-footer {
@@ -302,7 +263,6 @@ $max-width: 1000px;
 
   &.dark {
     background-color: $dark;
-
     color: $white;
 
     .carousel-indicators {
@@ -345,22 +305,18 @@ $max-width: 1000px;
     &.controls-top {
       .title {
         display: flex;
-
         justify-content: space-between;
-
         align-items: flex-start;
       }
 
       .carousel-navigation {
         display: flex;
-
         gap: 12px;
       }
 
       .carousel-control-prev,
       .carousel-control-next {
         position: static;
-
         transform: none;
       }
     }
@@ -368,15 +324,10 @@ $max-width: 1000px;
     @media (width < 768px) {
       .carousel-inner {
         display: flex;
-
         flex-wrap: nowrap;
-
         overflow: auto hidden;
-
         column-gap: 24px;
-
         padding: 2px 2px 24px;
-
         align-items: stretch;
 
         .carousel-item {
@@ -387,15 +338,12 @@ $max-width: 1000px;
 
             .card {
               flex: 0 0 auto;
-
               width: 296px;
             }
 
             .card.card-img-bg {
               flex: 0 0 auto;
-
               width: 300px;
-
               min-width: 300px;
             }
           }
@@ -438,11 +386,8 @@ $max-width: 1000px;
         .carousel-item {
           .card-items {
             display: flex;
-
             column-gap: 24px;
-
             align-items: stretch;
-
             justify-content: center;
 
             .card {
@@ -478,18 +423,28 @@ $max-width: 1000px;
     @include carousel-navigation-row;
 
     .carousel-control-prev {
-      left: max(16px, carousel-control-position($container-max-width-992-1200, $carousel-control-offset));
+      left: max(
+        16px,
+        carousel-control-position(
+          $container-max-width-992-1200,
+          $carousel-control-offset
+        )
+      );
     }
 
     .carousel-control-next {
-      right: max(16px, carousel-control-position($container-max-width-992-1200, $carousel-control-offset));
+      right: max(
+        16px,
+        carousel-control-position(
+          $container-max-width-992-1200,
+          $carousel-control-offset
+        )
+      );
     }
 
     .carousel-inner {
       border-radius: 16px;
-
       margin: 0 auto;
-
       max-width: calc($container-max-width);
 
       .carousel-item {
@@ -500,7 +455,6 @@ $max-width: 1000px;
     .title,
     .carousel-link {
       padding-left: container-alignment($container-max-width-992-1200);
-
       padding-right: container-alignment($container-max-width-992-1200);
     }
 
@@ -509,7 +463,6 @@ $max-width: 1000px;
 
       .panel-horizontal {
         flex-direction: row-reverse;
-
         align-items: center;
 
         img {
@@ -584,19 +537,12 @@ $max-width: 1000px;
 
       .title {
         display: flex;
-
         justify-content: space-between;
-
         align-items: center;
-
         padding-right: calc((100% - 1140px) / 2 + 0.75rem);
-
         flex: 1 1 auto;
-
         width: 100%;
-
         min-width: 100%;
-
         box-sizing: border-box;
       }
 
@@ -604,21 +550,15 @@ $max-width: 1000px;
 
       .carousel-indicators {
         justify-content: center;
-
         padding-left: 0;
-
         margin-inline: auto;
       }
 
       .carousel-link {
         display: flex;
-
         padding-left: calc((100% - 1140px) / 2 + 0.75rem);
-
         text-align: left;
-
         justify-content: start;
-
         align-items: start;
       }
     }

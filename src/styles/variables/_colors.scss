@@ -82,7 +82,7 @@ $red-50: #fff0ee;
 $red-100: #ffdad5;
 $red-200: #ffc5bd;
 $red-300: #ff9e92;
-$red-400: #ff7266; // chequear figma
+$red-400: #ff7266;
 $red-500: #ea4f48;
 $red-600: #cb3232;
 $red-700: #ad0b1e;
@@ -95,7 +95,7 @@ $purple-50: #fbf0ff;
 $purple-100: #f5d9ff;
 $purple-200: #efc4ff;
 $purple-300: #e39eff;
-$purple-400: #d576ff; // chequear figma
+$purple-400: #d576ff;
 $purple-500: #c447ff;
 $purple-600: #ad00f3;
 $purple-700: #8a00c3;
@@ -123,7 +123,7 @@ $gray-100: #e2e2e2;
 $gray-200: #d3d3d3;
 $gray-300: #b8b8b8;
 $gray-400: #9e9e9e;
-$gray-500: #858585; // chequear figma
+$gray-500: #858585;
 $gray-600: #6d6d6d;
 $gray-700: #565656;
 $gray-800: #313131;
@@ -131,9 +131,10 @@ $gray-900: #1e1e1e;
 $gray-950: #090909;
 
 // Variables del Theme-color
+// PRINCIPALS_COLORS
 $primary: $blue-800;
 $secondary: $blue-700;
-$tertiary: $sky-500;
+$tertiary: $cyan-500;
 $info: $sky-600;
 $warning: $orange-400;
 $success: $green-700;

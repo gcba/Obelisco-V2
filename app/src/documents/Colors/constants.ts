@@ -8,9 +8,9 @@ export const themeColors = [
   { name: 'tertiary-outline', hex: '#10413a' }, // revisar como cambiar el color de texto
   { name: 'success', hex: '#00642f' },
   { name: 'danger', hex: '#cb3232' },
-  { name: 'warning', hex: '#e88700', textDark: true },
-  { name: 'info', hex: '#00769a' },
-  { name: 'light', hex: '#edf4ff', textDark: true },
+  { name: 'warning', hex: '#c47100', textDark: true },
+  { name: 'info', hex: '#0086ad' },
+  { name: 'light', hex: '#EDF4FF', textDark: true },
   { name: 'dark', hex: '#002733' },
 ];
 export const yellowArray: ColorArray[] = [
@@ -144,63 +144,62 @@ export const grayArray: ColorArray[] = [
   { name: '900', hex: '#1e1e1e', accessibility: 'AAA 17.58', fixedWidth: false },
   { name: '950', hex: '#090909', accessibility: 'AAA 21.1', fixedWidth: false },
 ];
-
 export const PRINCIPALS_COLORS: ColorTableArray[] = [
   {
-    base: '$blue/500',
-    hex: '#336ACC',
+    base: '$blue/800',
+    hex: '#1d3343',
     variable: '$primary',
     use: 'Es el color predominante de la paleta de Obelisco y se utiliza en las acciones principales.',
   },
   {
-    base: '$blue/900',
-    hex: '#101e37',
+    base: '$blue/700',
+    hex: '#035c80',
     variable: '$secondary',
     use: 'Se utiliza en acciones de menor importancia que las primarias y genera jerarquía dentro de la interfaz.',
   },
   {
-    base: '$cyan/900',
-    hex: '#10413a',
+    base: '$cyan/500',
+    hex: '#009688',
     variable: '$tertiary',
     use: 'Añade un tercer nivel de jerarquía dentro de la interfaz y se utiliza en acciones complementarias o repetitivas.',
   },
   {
     base: '$sky/600',
-    hex: '#0086AD',
+    hex: '#00769a',
     variable: '$info',
     use: 'Comunica mensajes informativos y se utiliza en alertas, etiquetas y mensajes de estado.',
   },
   {
-    base: '$orange/500',
-    hex: '#FF9500',
+    base: '$orange/400',
+    hex: '#e88700',
     variable: '$warning',
     use: 'Comunica mensajes informativos y se utiliza en alertas, etiquetas y mensajes de estado.',
   },
   {
-    base: '$green/600',
-    hex: '#26874A',
+    base: '$green/700',
+    hex: '#00642f',
     variable: '$success',
     use: 'Comunica mensajes de éxito y se utiliza en botones, alertas, etiquetas y mensajes de estado.',
   },
   {
-    base: '$red/500',
-    hex: '#CC3333',
+    base: '$red/600',
+    hex: '#cb3232',
     variable: '$danger',
     use: 'Comunica mensajes informativos y se utiliza en alertas, etiquetas y mensajes de estado.',
   },
-  { base: '$slate/50', hex: '#F3F6F9', variable: '$light', use: 'Genera contraste con fondos oscuros.' },
-  { base: '$sky/900', hex: '#002733', variable: '$dark', use: 'Genera contraste con fondos claros.' },
+  { base: '$slate/50', hex: '#edf4ff', variable: '$light', use: 'Genera contraste con fondos oscuros.' },
+  { base: '$sky/900', hex: '#002230', variable: '$dark', use: 'Genera contraste con fondos claros.' },
 ];
 export const TEXT_COLORS: ColorTableArray[] = [
   {
     base: '$blue/900',
-    hex: '#101e37',
+    hex: '#08202f',
     variable: '$body-primary',
     use: 'Color predeterminado de textos de la interfaz que garantiza legibilidad y contraste.',
   },
   {
     base: '$slate/950',
-    hex: '#38485C',
+    hex: '#000b18',
     variable: '$body-secondary',
     use: 'Se utiliza para textos secundarios o de apoyo.',
   },

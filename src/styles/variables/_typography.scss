@@ -156,13 +156,13 @@ $line-height-base: $md-body-lh; // Se sobreescribe variable de Bootstrap
 
 $body-primary: $blue-900;
 $body-secondary: $slate-950;
-$text-primary: $primary;
-$text-secondary: $secondary;
+$text-primary: $primary; // $blue-800
+$text-secondary: $secondary; // $blue-700
 $text-tertiary: $cyan-950;
 $text-info: $sky-600;
 $text-warning: $orange-500;
-$text-success: $success;
-$text-danger: $danger;
+$text-success: $success; // $green-700
+$text-danger: $danger; // $red-600
 $text-placeholder: $slate-700;
 $text-disabled: $slate-400;
 $text-light: $light;

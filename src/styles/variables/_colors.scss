@@ -230,7 +230,8 @@ $link-color: $blue-700; // Color de texto.
 $link-hover-color: $blue-500; // <<VER - REVISAR>>
 
 // Border, Box-shadow, Outline
-$border-color: $slate-100;
+$border-color: $slate-100; // $border-neutral
+$border-link: $blue-700; // Color de borde de enlace. $border-link
 $box-shadow: 0 0 0 0.125rem $slate-100;
 $outline-border: 0.125rem solid $slate-100;
 $outline-transparent: 0.25rem solid transparent;

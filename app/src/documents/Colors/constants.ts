@@ -315,11 +315,11 @@ export const STATES_COLORS: ColorTableArray[] = [
 export const BORDER_COLORS: ColorTableArray[] = [
   {
     base: '$slate/100',
-    hex: '#F3F6F9',
+    hex: '#D6E4F6',
     variable: '$border-neutral',
     use: 'Es el color predeterminado de todos los bordes de componentes y divisores.',
   },
-  { base: '$primary', hex: '#336ACC', variable: '$border-link', use: 'Es el color del subrayado para los enlaces.' },
+  { base: '$blue-700', hex: '#035C80', variable: '$border-link', use: 'Es el color del subrayado para los enlaces.' },
 ];
 export const BACKGROUND_COLORS: ColorTableArray[] = [
   {

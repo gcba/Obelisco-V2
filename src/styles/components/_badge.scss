@@ -2,7 +2,7 @@
 $badge-color: $body-color;
 $badge-separation: 0.5rem;
 
-// - Inicio | Variables Etiquetas primarias
+// - Inicio | Variables Etiquetas secundarias
 
 $badge-secondary-bg: (
   default: $slate-100,
@@ -40,16 +40,16 @@ $badge-secondary-hover-bg: (
   highlight: $purple-100,
 );
 
-// Fin | Variables Etiquetas primarias -
+// Fin | Variables Etiquetas secundarias -
 
-// - Inicio | Variables Etiquetas secundarias
+// - Inicio | Variables Etiquetas primarias
 
 $badge-primary-bg: (
   default: $slate-600,
-  info: $sky-600,
-  success: $green-600,
-  danger: $red-600,
-  warning: $orange-600,
+  info: $sky-700,
+  success: $green-700,
+  danger: $red-700,
+  warning: $orange-400,
   highlight: $purple-600,
 );
 
@@ -71,7 +71,7 @@ $badge-primary-hover-color: (
   highlight: $purple-800,
 );
 
-// - Fin | Variables Etiquetas secundarias -
+// - Fin | Variables Etiquetas primarias
 
 // Primarias Estaticas, con y sin ícono
 @mixin badge-secondary-static($color-name) {

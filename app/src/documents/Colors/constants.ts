@@ -570,14 +570,14 @@ export const BLOCKQUOTE_COLORS: ColorTableArray[] = [
 ];
 export const BADGE_COLORS: ColorTableArray[] = [
   {
-    base: '$slate/800',
-    hex: '#505E70',
+    base: '$slate/600',
+    hex: '#626E7E',
     variable: '$bg-primary',
     use: 'Es el color de fondo primaria de la etiqueta predeterminada.',
   },
   {
     base: '$sky/700',
-    hex: '#005E7A',
+    hex: '#005D7B',
     variable: '$bg-info',
     use: 'Es el color de fondo primaria de la etiqueta de información.  ',
   },
@@ -602,6 +602,45 @@ export const BADGE_COLORS: ColorTableArray[] = [
   {
     base: '$purple/700',
     hex: '#6D0099',
+    variable: '$bg-highlight',
+    use: 'Es el color primario de fondo de la etiqueta destacada.',
+  },
+];
+
+export const BADGE_COLORS_HOVER: ColorTableArray[] = [
+  {
+    base: '$slate/900',
+    hex: '#121F2C',
+    variable: '$bg-primary',
+    use: 'Es el color de fondo primaria de la etiqueta predeterminada.',
+  },
+  {
+    base: '$sky/800',
+    hex: '#003548',
+    variable: '$bg-info',
+    use: 'Es el color de fondo primaria de la etiqueta de información.  ',
+  },
+  {
+    base: '$orange/800',
+    hex: '#4B2800',
+    variable: '$bg-warning',
+    use: 'Es el color de fondo primaria de la etiqueta de advertencia.',
+  },
+  {
+    base: '$green/800',
+    hex: '#003A18',
+    variable: '$bg-success',
+    use: 'Es el color de fondo primaria de la etiqueta de éxito.',
+  },
+  {
+    base: '$red/800',
+    hex: '#6A0009',
+    variable: '$bg-danger',
+    use: 'Es el color de fondo primaria de la etiqueta de peligro.',
+  },
+  {
+    base: '$purple/800',
+    hex: '#520077',
     variable: '$bg-highlight',
     use: 'Es el color primario de fondo de la etiqueta destacada.',
   },
@@ -646,40 +685,79 @@ export const BADGE_COLORS_BG_SECONDARY: ColorTableArray[] = [
   },
 ];
 
+export const BADGE_COLORS_HOVER_BG_SECONDARY: ColorTableArray[] = [
+  {
+    base: '$slate/200',
+    hex: '#C7D4E6',
+    variable: '$bg-primary',
+    use: 'Es el color de fondo secundario de la etiqueta de información.',
+  },
+  {
+    base: '$sky/100',
+    hex: '#C0E8FF',
+    variable: '$bg-info',
+    use: 'Es el color de fondo secundario de la etiqueta de información.',
+  },
+  {
+    base: '$orange/100',
+    hex: '#FFDCBF',
+    variable: '$bg-warning',
+    use: 'Es el color de fondo secundario de la etiqueta de advertencia.',
+  },
+  {
+    base: '$green/100',
+    hex: '#87FAA9',
+    variable: '$bg-success',
+    use: 'Es el color de fondo secundario de la etiqueta de éxito.',
+  },
+  {
+    base: '$red/100',
+    hex: '#FFDAD5',
+    variable: '$bg-danger',
+    use: 'Es el color de fondo secundario de la etiqueta de peligro.',
+  },
+  {
+    base: '$purple/100',
+    hex: '#F5D9FF',
+    variable: '$bg-highlight',
+    use: 'Es el color de fondo secundario de la etiqueta de peligro.',
+  },
+];
+
 export const BADGE_COLORS_BORDERS: ColorTableArray[] = [
   {
     base: '$blue/900',
-    hex: '#101E37',
+    hex: '#08202F',
     variable: '$border-primary',
     use: 'Es el color del borde de la etiqueta predeterminada.  ',
   },
   {
     base: '$sky/800',
-    hex: '#004357',
+    hex: '#003548',
     variable: '$border-info',
     use: 'Es el color del borde de la etiqueta de información.',
   },
   {
     base: '$orange/800',
-    hex: '#663C00',
+    hex: '#4B2800',
     variable: '$border-warning',
     use: 'Es el color del borde de la etiqueta de advertencia.',
   },
   {
     base: '$green/800',
-    hex: '#205B36',
+    hex: '#003A18',
     variable: '$border-success',
     use: 'Es el color del borde de la etiqueta de éxito.',
   },
   {
     base: '$red/800',
-    hex: '#521414',
+    hex: '#6A0009',
     variable: '$border-danger',
     use: 'Es el color del borde de la etiqueta de peligro.',
   },
   {
     base: '$purple/800',
-    hex: '#490066',
+    hex: '#520077',
     variable: '$border-highlight',
     use: 'Es el color del borde de la etiqueta destacada.',
   },

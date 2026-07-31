@@ -10,6 +10,8 @@ import {
   BADGE_COLORS,
   BADGE_COLORS_BG_SECONDARY,
   BADGE_COLORS_BORDERS,
+  BADGE_COLORS_HOVER,
+  BADGE_COLORS_HOVER_BG_SECONDARY,
   BLOCKQUOTE_COLORS,
   blueArray,
   BORDER_COLORS,
@@ -298,8 +300,14 @@ const ColorsDocs: React.FC = () => {
           <p className="text-md mt-4 fw-semibold">Variables de fondos primarios</p>
           <PalletteTable arrayTableColors={BADGE_COLORS} />
 
+          <p className="text-md mt-4 fw-semibold">Variables de hover primarios</p>
+          <PalletteTable arrayTableColors={BADGE_COLORS_HOVER} />
+
           <p className="text-md fw-semibold">Variables de fondos secundarios</p>
           <PalletteTable arrayTableColors={BADGE_COLORS_BG_SECONDARY} />
+
+          <p className="text-md mt-4 fw-semibold">Variables de hover secundarios</p>
+          <PalletteTable arrayTableColors={BADGE_COLORS_HOVER_BG_SECONDARY} />
 
           <p className="text-md fw-semibold">Variables de bordes</p>
           <PalletteTable arrayTableColors={BADGE_COLORS_BORDERS} />

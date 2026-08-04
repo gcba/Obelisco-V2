@@ -19,15 +19,25 @@ $aside-colors: (
 );
 
 $media-positions-vertical: (
+  'none': 'none',
   'bottom': 'bottom',
   'top': 'top',
   'center': 'center',
 );
 
 $media-positions-horizontal: (
+  'none': 'none',
   'center': 'center',
   'right': 'right',
   'left': 'left',
+);
+
+$media-object-fit: (
+  'none': 'none',
+  'cover': 'cover',
+  'contain': 'contain',
+  'fill': 'fill',
+  'unset': 'unset',
 );
 
 @mixin mask-size-cover {
@@ -63,6 +73,11 @@ $media-positions-horizontal: (
       }
     }
   }
+}
+
+// Clases para object-fit
+@each $name, $position in $media-object-fit {
+  object-position: #{$position};
 }
 
 header.hero {

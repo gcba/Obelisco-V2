@@ -812,15 +812,149 @@ const HighlightedDocs: React.FC = () => {
                       </div>
                     </div>
 
-                    <Image
-                      // src={`${basePath}/images/highlighted/destacado_container_2_332.png`}
-                      // src={`${basePath}/images/highlighted/destacado_multimedia_container.png`}
-                      src={`${basePath}/images/highlighted/destacado_multimedia_container_353_450.png`}
-                      alt="descripción de imagen"
-                      className="panel-img panel-img-edge"
-                      width={538}
-                      height={304}
-                    ></Image>
+                    <div className="panel-media">
+                      <Image
+                        // src={`${basePath}/images/highlighted/destacado_container_2_332.png`}
+                        src={`${basePath}/images/highlighted/destacado_multimedia_container.png`}
+                        // src={`${basePath}/images/highlighted/destacado_multimedia_container_353_450.png`}
+                        // src={`https://nba-back-ocp-dev.gcba.gob.ar/api/v1/imagen/banner-promocional/banner_promocional_1.png`}
+                        alt="descripción de imagen"
+                        className="panel-img "
+                        width={538}
+                        height={304}
+                      ></Image>
+                    </div>
+                  </div>
+                </div>
+              </ZoomContainer>
+            </div>
+            <div className="container">
+              <ZoomContainer>
+                <div className="panel-horizontal-content panel-horizontal-container bg-gradient-blue p-0">
+                  <div className="panel-horizontal">
+                    <div className="panel-body">
+                      <h2 className="panel-title">Título del destacado</h2>
+                      <p className="panel-text">
+                        Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
+                        negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
+                        líneas. No puede contener negritas ni enlaces
+                      </p>
+                      <div className="panel-footer">
+                        <LinkClient className="btn btn-light btn-lg">Botón</LinkClient>
+                        <LinkClient className="btn btn-outline-light btn-lg">Botón</LinkClient>
+                      </div>
+                    </div>
+
+                    <div className="panel-media">
+                      <Image
+                        // src={`${basePath}/images/highlighted/destacado_container_2_332.png`}
+                        src={`${basePath}/images/highlighted/destacado_multimedia_container.png`}
+                        // src={`${basePath}/images/highlighted/destacado_multimedia_container_353_450.png`}
+                        // src={`https://nba-back-ocp-dev.gcba.gob.ar/api/v1/imagen/banner-promocional/banner_promocional_1.png`}
+                        alt="descripción de imagen"
+                        className="panel-img "
+                        width={538}
+                        height={304}
+                      ></Image>
+                    </div>
+                  </div>
+                </div>
+              </ZoomContainer>
+            </div>
+            <div className="container">
+              <ZoomContainer>
+                <div className="panel-horizontal-content panel-horizontal-container bg-gradient-blue p-0">
+                  <div className="panel-horizontal panel-inverted">
+                    <div className="panel-body">
+                      <h2 className="panel-title">Título del destacado</h2>
+                      <p className="panel-text">
+                        Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
+                        negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
+                        líneas. No puede contener negritas ni enlaces
+                      </p>
+                      <div className="panel-footer">
+                        <LinkClient className="btn btn-light btn-lg">Botón</LinkClient>
+                        <LinkClient className="btn btn-outline-light btn-lg">Botón</LinkClient>
+                      </div>
+                    </div>
+
+                    <div className="panel-media panel-media-edge">
+                      <Image
+                        // src={`${basePath}/images/highlighted/destacado_container_2_332.png`}
+                        src={`${basePath}/images/highlighted/destacado_multimedia_container.png`}
+                        // src={`${basePath}/images/highlighted/destacado_multimedia_container_353_450.png`}
+                        // src={`https://nba-back-ocp-dev.gcba.gob.ar/api/v1/imagen/banner-promocional/banner_promocional_1.png`}
+                        alt="descripción de imagen"
+                        className="panel-img "
+                        width={538}
+                        height={304}
+                      ></Image>
+                    </div>
+                  </div>
+                </div>
+              </ZoomContainer>
+            </div>
+            <div className="container">
+              <ZoomContainer>
+                <div className="panel-horizontal-content panel-horizontal-container bg-gradient-blue p-0">
+                  <div className="panel-horizontal panel-inverted">
+                    <div className="panel-body">
+                      <h2 className="panel-title">Título del destacado</h2>
+                      <p className="panel-text">
+                        Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
+                        negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
+                        líneas. No puede contener negritas ni enlaces
+                      </p>
+                      <div className="panel-footer">
+                        <LinkClient className="btn btn-light btn-lg">Botón</LinkClient>
+                        <LinkClient className="btn btn-outline-light btn-lg">Botón</LinkClient>
+                      </div>
+                    </div>
+
+                    <div className="panel-media panel-media-edge">
+                      <Image
+                        // src={`${basePath}/images/highlighted/destacado_container_2_332.png`}
+                        // src={`${basePath}/images/highlighted/destacado_multimedia_container.png`}
+                        // src={`${basePath}/images/highlighted/destacado_multimedia_container_353_450.png`}
+                        src={`https://nba-back-ocp-dev.gcba.gob.ar/api/v1/imagen/banner-promocional/banner_promocional_1.png`}
+                        alt="descripción de imagen"
+                        className="panel-img "
+                        width={538}
+                        height={304}
+                      ></Image>
+                    </div>
+                  </div>
+                </div>
+              </ZoomContainer>
+            </div>
+            <div className="container">
+              <ZoomContainer>
+                <div className="panel-horizontal-content panel-horizontal-container bg-gradient-blue p-0">
+                  <div className="panel-horizontal">
+                    <div className="panel-body">
+                      <h2 className="panel-title">Título del destacado</h2>
+                      <p className="panel-text">
+                        Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
+                        negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
+                        líneas. No puede contener negritas ni enlaces
+                      </p>
+                      <div className="panel-footer">
+                        <LinkClient className="btn btn-light btn-lg">Botón</LinkClient>
+                        <LinkClient className="btn btn-outline-light btn-lg">Botón</LinkClient>
+                      </div>
+                    </div>
+                    <div className="panel-media panel-media-edge">
+                      <Image
+                        // src={`${basePath}/images/highlighted/destacado_container_2_332.png`}
+                        // src={`${basePath}/images/highlighted/destacado_multimedia_container.png`}
+                        // src={`${basePath}/images/highlighted/destacado_multimedia_container_353_450.png`}
+                        src={`https://nba-back-ocp-dev.gcba.gob.ar/api/v1/imagen/banner-promocional/banner_promocional_1.png`}
+                        alt="descripción de imagen"
+                        className="panel-img "
+                        width={538}
+                        height={304}
+                      ></Image>
+                    </div>
                   </div>
                 </div>
               </ZoomContainer>
@@ -860,7 +994,7 @@ const HighlightedDocs: React.FC = () => {
                     <Image
                       src={`${basePath}/images/highlighted/destacado_container_2_332.png`}
                       alt="descripción de imagen"
-                      className="panel-img"
+                      className="panel-img panel-img-edge"
                       width={538}
                       height={304}
                     ></Image>

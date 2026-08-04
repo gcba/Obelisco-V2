@@ -17,6 +17,7 @@ import {
   BORDER_COLORS,
   BUTTON_COLORS,
   CALENDAR_COLORS,
+  CARDS_COLORS,
   cyanArray,
   FOOTER_COLORS,
   FORM_COLORS,
@@ -336,6 +337,15 @@ const ColorsDocs: React.FC = () => {
       ),
     },
     {
+      subtitle: 'Componente: pie de página (footer)',
+      content: (
+        <div>
+          <p>Estos colores se utilizan únicamente dentro del componente Pie de página (footer).</p>
+          <PalletteTable arrayTableColors={FOOTER_COLORS} />
+        </div>
+      ),
+    },
+    {
       subtitle: 'Componente: spinner',
       content: (
         <div>
@@ -345,11 +355,11 @@ const ColorsDocs: React.FC = () => {
       ),
     },
     {
-      subtitle: 'Componente: pie de página (footer)',
+      subtitle: 'Componente: tarjetas',
       content: (
         <div>
-          <p>Estos colores se utilizan únicamente dentro del componente Pie de página (footer).</p>
-          <PalletteTable arrayTableColors={FOOTER_COLORS} />
+          <p>Estos colores se utilizan únicamente para las misceláneas del componente Tarjetas.</p>
+          <PalletteTable arrayTableColors={CARDS_COLORS} />
         </div>
       ),
     },

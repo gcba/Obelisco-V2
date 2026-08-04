@@ -900,3 +900,42 @@ export const FOOTER_COLORS: ColorTableArray[] = [
     use: 'Es el color de la línea divisoria de secciones dentro del footer. ',
   },
 ];
+
+export const CARDS_COLORS: ColorTableArray[] = [
+  {
+    base: '$blue/400',
+    hex: '#67A5CD',
+    variable: '$decoration-blue',
+    use: 'Decorativo para la miscelánea del tarjetas.',
+  },
+  {
+    base: '$sky/400',
+    hex: '#00ABDE',
+    variable: '$decoration-sky',
+    use: 'Decorativo para la miscelánea del tarjetas.',
+  },
+  {
+    base: '$cyan/400',
+    hex: '#35B0A1',
+    variable: '$decoration-cyan',
+    use: 'Decorativo para la miscelánea del tarjetas.',
+  },
+  {
+    base: '$purple/400',
+    hex: '#D576FF',
+    variable: '$decoration-purple',
+    use: 'Decorativo para la miscelánea del tarjetas.',
+  },
+  {
+    base: '$yellow/400',
+    hex: '#C09A00',
+    variable: '$decoration-yellow',
+    use: 'Decorativo para la miscelánea del tarjetas.',
+  },
+  {
+    base: '$red/400',
+    hex: '#FF7266',
+    variable: '$decoration-red',
+    use: 'Decorativo para la miscelánea del tarjetas.',
+  },
+];

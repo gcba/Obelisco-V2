@@ -75,10 +75,10 @@ $media-object-fit: (
   }
 }
 
-// Clases para object-fit
-@each $name, $position in $media-object-fit {
-  object-position: #{$position};
-}
+// // Clases para object-fit
+// @each $name, $position in $media-object-fit {
+//   object-position: $position;
+// }
 
 header.hero {
   display: flex;

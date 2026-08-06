@@ -536,6 +536,11 @@ $gradient-text-colors: (
             height: 432px;
             max-height: 432px;
           }
+
+          // Destacado container sin multimedia
+          &:not(:has(.panel-img)) {
+            padding: 0;
+          }
         }
 
         @include media-breakpoint-down(xl) {
@@ -543,26 +548,44 @@ $gradient-text-colors: (
           flex-direction: column-reverse;
           gap: 32px;
 
-          &:has(.panel-img) {
-            height: auto;
-            max-height: none;
+          // &:has(.panel-img) {
+          .panel-media,
+          .panel-media-edge {
+            flex: none;
+            width: 100%;
+            max-width: 100%;
+            height: 450px;
+            max-height: 450px;
           }
+
+          .panel-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+          }
+          // }
 
           .panel-body {
             max-width: 100%;
             width: 100%;
             padding: 36px;
           }
-          .panel-media {
-            flex: none;
-            width: 100%;
-          }
-          .panel-img {
-            width: 100%;
-            height: auto;
-            object-fit: contain;
-            object-position: center;
-          }
+          // .panel-media,
+          // .panel-media-edge {
+          //   flex: none;
+          //   width: 100%;
+          //   max-width: 100%;
+          //   height: 450px;
+          //   max-height: 450px;
+          // }
+
+          // .panel-img {
+          //   width: 100%;
+          //   height: 100%;
+          //   object-fit: contain;
+          //   object-position: center;
+          // }
         }
 
         @include media-breakpoint-down(sm) {
@@ -577,14 +600,50 @@ $gradient-text-colors: (
 
         // Destacado container sin multimedia
         &:not(:has(.panel-img)) {
+          // @include media-breakpoint-up(lg) {
+          //   padding: 0;
+          // }
+
+          // @include media-breakpoint-up(sm) {
+          //   padding: 0;
+          //   .panel-body {
+          //     padding: 16px;
+          //   }
+          // }
+
           width: 100%;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
+
           .panel-body {
             width: 100%;
             max-width: 100%;
+          }
+        }
+      }
+
+      // Destacado container sin multimedia
+      &:not(:has(.panel-img)) {
+        @include media-breakpoint-up(xl) {
+          padding: 0;
+          .panel-body {
+            padding: 64px;
+          }
+        }
+
+        @include media-breakpoint-down(xl) {
+          padding: 0;
+          .panel-body {
+            padding: 36px;
+          }
+        }
+
+        @include media-breakpoint-down(sm) {
+          padding: 0;
+          .panel-body {
+            padding: 16px;
           }
         }
       }

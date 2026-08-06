@@ -10,6 +10,7 @@ import SimpleText from './SimpleText';
 export interface Section {
   id?: string;
   title?: string | React.ReactNode;
+  date?: string | React.ReactNode;
   subtitle?: string | React.ReactNode;
   subtitleBold?: string | React.ReactNode;
   tertiarytitle?: string | React.ReactNode;
@@ -57,7 +58,17 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
                   id={section.id || `section-${type}-${index + 1}`}
                   ref={sectionRefs[index]}
                 >
-                  {section.title && (
+                  {section.date ? (
+                    <>
+                      <div
+                        className="d-flex mb-3 align-items-baseline"
+                        style={{ marginTop: section.firstTitle ? `0px` : '48px' }}
+                      >
+                        <h2 className="h4 me-3">{section.title}</h2>
+                        <p style={{ color: '#000b18' }}>{section.date}</p>
+                      </div>
+                    </>
+                  ) : (
                     <h2 className="h4 mb-3" style={{ marginTop: section.firstTitle ? `0px` : '48px' }}>
                       {section.title}
                     </h2>
@@ -106,6 +117,9 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
                     <li key={`${section.id}-${index}`} className={activeIndex === index ? 'active' : ''}>
                       <a href={`#${section.id || `section-${type}-${index + 1}`}`} className="text-sm">
                         {section.title && section.title}
+
+                        {section.date && <span className="ms-1">- {section.date}</span>}
+
                         {section.subtitle && <ScrollspySubtitle text={section.subtitle} ScrollspyComponent={true} />}
                         {section.subtitleBold && (
                           <ScrollspySubtitle text={section.subtitleBold} ScrollspyComponent={true} />

@@ -364,7 +364,6 @@ $gradient-text-colors: (
 .panel-horizontal-container {
   @extend .panel-horizontal-content;
   padding: 16px;
-
   // max-height: 388px;
   height: auto;
   max-width: 1109px;
@@ -548,7 +547,12 @@ $gradient-text-colors: (
           flex-direction: column-reverse;
           gap: 32px;
 
-          // &:has(.panel-img) {
+          .panel-media {
+            &:not(.panel-media-edge) .panel-img {
+              height: 100%;
+            }
+          }
+
           .panel-media,
           .panel-media-edge {
             flex: none;
@@ -564,28 +568,12 @@ $gradient-text-colors: (
             object-fit: contain;
             object-position: center;
           }
-          // }
 
           .panel-body {
             max-width: 100%;
             width: 100%;
             padding: 36px;
           }
-          // .panel-media,
-          // .panel-media-edge {
-          //   flex: none;
-          //   width: 100%;
-          //   max-width: 100%;
-          //   height: 450px;
-          //   max-height: 450px;
-          // }
-
-          // .panel-img {
-          //   width: 100%;
-          //   height: 100%;
-          //   object-fit: contain;
-          //   object-position: center;
-          // }
         }
 
         @include media-breakpoint-down(sm) {
@@ -624,7 +612,7 @@ $gradient-text-colors: (
         }
       }
 
-      // Destacado container sin multimedia
+      // Espaciados para Destacado container sin multimedia
       &:not(:has(.panel-img)) {
         @include media-breakpoint-up(xl) {
           padding: 0;

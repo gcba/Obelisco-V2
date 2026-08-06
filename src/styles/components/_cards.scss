@@ -1,13 +1,21 @@
 // Custom variables and mixins
+
 $card-spacing-desktop: 1.5rem;
+
 $card-icon-size: 2rem;
+
 $card-media-size: 4rem;
+
 $card-icon-bg: $slate-50;
+
 $card-info-icon-size: 1rem;
+
 $card-icon-sin-borde-h: url('data:image/svg+xml,<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.740699" y="0.740699" width="30.5186" height="30.5186" rx="15.2593" stroke="%2338485C" stroke-width="1.4814"/><path d="M12.3427 19.7034L11.5557 18.9164L17.8053 12.6667H12.2964V11.5557H19.7034V18.9627H18.5923V13.4537L12.3427 19.7034Z" fill="%2338485C"/></svg>');
+
 $padding-card-icon-sin-borde: 24px;
 
 // Estilos de estados de tarjetas
+
 @mixin card-states-styles {
   .card-body {
     .card-title {
@@ -58,6 +66,7 @@ $padding-card-icon-sin-borde: 24px;
 }
 
 // Custom styles
+
 .card {
   border: none;
   outline: $outline-border;
@@ -80,12 +89,14 @@ $padding-card-icon-sin-borde: 24px;
   .card-title {
     @extend .headline-lg;
     margin-bottom: 0;
+    @extend .ellipsis-2;
   }
 
   .card-text {
     @extend .text-md;
     margin-top: 0.25rem;
     margin-bottom: 0;
+    @extend .ellipsis-3;
   }
 
   .card-badges {
@@ -146,7 +157,8 @@ $padding-card-icon-sin-borde: 24px;
     background: transparent;
   }
 
-  // Clase para Tarjeta de eventos
+  // Clase para Tarjeta de eventos. Vertical.
+
   &.card-eventos {
     min-height: 576px;
 
@@ -155,6 +167,7 @@ $padding-card-icon-sin-borde: 24px;
       margin-top: 32px;
 
       // Línea divisoria
+
       &::before {
         content: '';
         position: absolute;
@@ -167,6 +180,8 @@ $padding-card-icon-sin-borde: 24px;
       }
     }
   }
+
+  // Clase para Tarjeta de eventos. Vertical.
 
   &.card-horizontal {
     flex-direction: row;
@@ -249,9 +264,11 @@ $padding-card-icon-sin-borde: 24px;
   }
 
   // Estilos para estados hover, focus
+
   @include card-states-styles;
 
-  //Estilos para tarjeta horizontal temática
+  //Estilos para tarjeta temática. Horizontal.
+
   &.thematic {
     flex-direction: column;
     padding: 16px;
@@ -285,7 +302,8 @@ $padding-card-icon-sin-borde: 24px;
     }
   }
 
-  // Tarjeta de impacto visual
+  // Tarjeta de impacto visual. Vertical.
+
   &.card-img-bg {
     position: relative;
     width: 100%;
@@ -326,6 +344,7 @@ $padding-card-icon-sin-borde: 24px;
       background: linear-gradient(
         0deg,
         rgb(0 0 0 / 0%) 0%,
+
         rgb(0 0 0 / 80%) 100%
       );
     }
@@ -354,10 +373,48 @@ $padding-card-icon-sin-borde: 24px;
     }
   }
 
-  // Tarjeta de impacto visual
+  // Tarjeta de impacto visual. Vertical.
+
+  // Variante de noticias sin borde. Vertical.
+  &.card-img-borderless {
+    width: 348px;
+    max-width: 348px;
+    height: 100%;
+    @extend .unbordered;
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .card-img {
+      border-radius: $border-radius-6xl;
+      height: 400px;
+      min-height: 400px;
+    }
+
+    .card-badges {
+      padding-bottom: 16px;
+    }
+
+    .card-title-link {
+      @extend .ellipsis-2;
+    }
+
+    .card-text {
+      @extend .ellipsis-3;
+    }
+
+    .card-info {
+      margin-top: 1rem;
+    }
+  }
+
+  // Variante de noticias sin borde. Vertical.
 }
 
 //Estilos para lista de tarjetas verticales desplazable
+
 .responsive-scroll {
   &.vertical-cards-container {
     max-width: fit-content;
@@ -382,10 +439,15 @@ $padding-card-icon-sin-borde: 24px;
 
 $colors: (
   'blue': $blue-400,
+
   'sky': $sky-400,
+
   'cyan': $cyan-400,
+
   'red': $red-400,
+
   'yellow': $yellow-400,
+
   'purple': $purple-400,
 );
 

@@ -1,4 +1,4 @@
-export const HERO_INSTITUCIONAL = `<header class="hero">
+export const HERO_INSTITUCIONAL = `<header class="hero bg-content-hero-dark">
   <div class="content corner">
     <div class="d-flex flex-column">
       <nav aria-label="Navegación secundaria">
@@ -25,7 +25,7 @@ export const HERO_INSTITUCIONAL = `<header class="hero">
       </div>
     </div>
   </div>
-  <div class="aside bg-aside-hero-dark"></div>
+  <div class="aside bg-aside-hero-light"></div>
 </header>`;
 
 export const HERO_DINAMICO = `<header class="hero">
@@ -171,7 +171,7 @@ export const HERO_CON_GIF = `<header class="hero">
   </div>
 </header>`;
 
-export const HERO_CON_CAMPO_BUSCADOR = `<header class="hero">
+export const HERO_CON_CAMPO_BUSCADOR = `<header class="hero bg-content-hero-light">
   <div class="content corner">
     <div class="d-flex flex-column">
       <nav aria-label="Navegación secundaria">
@@ -227,10 +227,10 @@ export const HERO_CON_CAMPO_BUSCADOR = `<header class="hero">
 			</div>
     </div>
   </div>
-  <div class="aside bg-aside-hero-dark"></div>
+  <div class="aside bg-aside-hero-light"></div>
 </header>`;
 
-export const HERO_CON_ETIQUETAS = `<header class="hero">
+export const HERO_CON_ETIQUETAS = `<header class="hero bg-content-hero-dark">
   <div class="content corner">
     <div class="d-flex flex-column">
       <nav aria-label="Navegación secundaria">
@@ -255,10 +255,10 @@ export const HERO_CON_ETIQUETAS = `<header class="hero">
       </div>
     </div>
   </div>
-  <div class="aside bg-aside-hero-dark"></div>
+  <div class="aside bg-aside-hero-light"></div>
 </header>`;
 
-export const HERO_CON_DESPLEGABLES = `<header class="hero">
+export const HERO_CON_DESPLEGABLES = `<header class="hero bg-content-hero-light">
   <div class="content corner">
     <div class="d-flex flex-column">
       <nav aria-label="Navegación secundaria">
@@ -351,7 +351,7 @@ export const HERO_CON_DESPLEGABLES = `<header class="hero">
       </div>
     </div>
   </div>
-  <div class="aside bg-aside-hero-dark"></div>
+  <div class="aside bg-aside-hero-light"></div>
 </header>`;
 
 export const HERO_NOTICIAS = `<header class="hero">
@@ -392,7 +392,7 @@ export const HERO_NOTICIAS = `<header class="hero">
 </header>`;
 
 export const HERO_COLORES = `<!-- default -->
-<header class="hero bg-content-hero-cyan">
+<header class="hero bg-content-hero-blue">
   <div class="content corner">
     <div class="d-flex flex-column">
       <nav aria-label="Navegación secundaria">
@@ -701,3 +701,5 @@ export const HERO_REDES_SOCIALES = `<header class="hero bg-content-hero-light">
 	<div class="aside bg-aside-hero-light"></div>
 </header>
 `;
+
+export const HERO_MULTIMEDIA = ``;

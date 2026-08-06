@@ -13,34 +13,30 @@ import {
   HERO_CON_CAMPO_BUSCADOR,
   HERO_CON_DESPLEGABLES,
   HERO_CON_ETIQUETAS,
-  HERO_CON_GIF,
-  HERO_CON_IMAGEN,
-  HERO_CON_VIDEO,
-  HERO_CON_VIDEO_IFRAME,
   HERO_DARK,
-  HERO_DINAMICO,
   HERO_INSTITUCIONAL,
   HERO_LIGHT,
   HERO_ACCESIBILITY,
   HERO_ACCESIBILITY_2,
   HERO_REDES_SOCIALES,
+  // HERO_MULTIMEDIA,
 } from './code-views';
+
+// const ZoomContainer = ({ children }: React.PropsWithChildren) => <div style={{ zoom: 0.5 }}>{children}</div>;
+// const logo_ba_white = '/images/logo_ba_white.svg';
 
 const HeroHeaderDocs: React.FC = () => {
   const SECTIONS_DEV = [
     {
-      title: 'Tipos de formas',
+      title: 'Institucional',
       firstTitle: true,
-    },
-    {
-      subtitle: 'Institucional',
       content: (
         <>
           <CodeBox codeHTML={HERO_INSTITUCIONAL}>
             <div className="container">
               <div className="hero-container">
                 <div className="hero-box-sizing ">
-                  <header className="hero">
+                  <header className="hero bg-content-hero-light">
                     <div className="content corner">
                       <div className="d-flex flex-column">
                         <nav aria-label="Navegación secundaria">
@@ -72,270 +68,7 @@ const HeroHeaderDocs: React.FC = () => {
                       </div>
                     </div>
 
-                    <div className="aside bg-aside-hero-dark"></div>
-                  </header>
-                </div>
-              </div>
-            </div>
-          </CodeBox>
-        </>
-      ),
-    },
-    {
-      subtitle: 'Dinámico',
-      content: (
-        <>
-          <CodeBox codeHTML={HERO_DINAMICO}>
-            <div className="container">
-              <div className="hero-container">
-                <div className="hero-box-sizing ">
-                  <header className="hero">
-                    <div className="content wave">
-                      <div className="d-flex flex-column">
-                        <nav aria-label="Navegación secundaria">
-                          <ol className="breadcrumb m-0">
-                            <li className="breadcrumb-item">
-                              <a href="#">Inicio</a>
-                            </li>
-                          </ol>
-                        </nav>
-
-                        <div>
-                          <h1 className="mb-3">Encabezado de la página</h1>
-                          <p className="lead m-0">
-                            Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la
-                            convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
-                          </p>
-                        </div>
-
-                        {/* botones */}
-                        <div className="btn-hero">
-                          <button type="button" className="btn btn-primary">
-                            Botón
-                          </button>
-                          <button type="button" className="btn btn-outline-primary">
-                            Botón
-                          </button>
-                        </div>
-                        {/* botones */}
-                      </div>
-                    </div>
-
-                    <div className="aside bg-aside-hero-dark"></div>
-                  </header>
-                </div>
-              </div>
-            </div>
-          </CodeBox>
-        </>
-      ),
-    },
-    {
-      title: 'Con multimedia',
-    },
-    {
-      subtitle: 'Con imagen',
-      content: (
-        <>
-          <CodeBox codeHTML={HERO_CON_IMAGEN}>
-            <div className="container">
-              <div className="hero-container">
-                <div className="hero-box-sizing ">
-                  <header className="hero">
-                    <div className="content wave">
-                      <div className="d-flex flex-column">
-                        <nav aria-label="Navegación secundaria">
-                          <ol className="breadcrumb m-0">
-                            <li className="breadcrumb-item">
-                              <a href="#">Inicio</a>
-                            </li>
-                          </ol>
-                        </nav>
-                        <div>
-                          <h1 className="mb-3">Encabezado de la página</h1>
-                          <p className="lead m-0">
-                            Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la
-                            convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
-                          </p>
-                        </div>
-                        {/* botones */}
-                        <div className="btn-hero">
-                          <button type="button" className="btn btn-primary">
-                            Botón
-                          </button>
-                          <button type="button" className="btn btn-outline-primary">
-                            Botón
-                          </button>
-                        </div>
-                        {/* botones */}
-                      </div>
-                    </div>
-
-                    <div className="aside">
-                      <Image src={`${basePath}/images/hero/multimedia-hero.jpg`} alt="Hero" fill />
-                    </div>
-                  </header>
-                </div>
-              </div>
-            </div>
-          </CodeBox>
-        </>
-      ),
-    },
-    {
-      subtitle: 'Con video',
-      content: (
-        <>
-          <CodeBox codeHTML={HERO_CON_VIDEO}>
-            <div className="container">
-              <div className="hero-container">
-                <div className="hero-box-sizing ">
-                  <header className="hero">
-                    <div className="content wave">
-                      <div className="d-flex flex-column">
-                        <nav aria-label="Navegación secundaria">
-                          <ol className="breadcrumb m-0">
-                            <li className="breadcrumb-item">
-                              <a href="#">Inicio</a>
-                            </li>
-                          </ol>
-                        </nav>
-
-                        <div>
-                          <h1 className="mb-3">Encabezado de la página</h1>
-                          <p className="lead m-0">
-                            Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la
-                            convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
-                          </p>
-                        </div>
-
-                        {/* botones */}
-                        <div className="btn-hero">
-                          <button type="button" className="btn btn-primary">
-                            Botón
-                          </button>
-                          <button type="button" className="btn btn-outline-primary">
-                            Botón
-                          </button>
-                        </div>
-                        {/* botones */}
-                      </div>
-                    </div>
-
-                    <div className="aside">
-                      <video src={`${basePath}/images/hero/video_hero_header.mp4`} autoPlay muted loop controls>
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                  </header>
-                </div>
-              </div>
-            </div>
-          </CodeBox>
-        </>
-      ),
-    },
-    {
-      subtitle: 'Con video (iframe)',
-      content: (
-        <>
-          <CodeBox codeHTML={HERO_CON_VIDEO_IFRAME}>
-            <div className="container">
-              <div className="hero-container">
-                <div className="hero-box-sizing mb-0">
-                  <header className="hero">
-                    <div className="content wave">
-                      <div className="d-flex flex-column">
-                        <nav aria-label="Navegación secundaria">
-                          <ol className="breadcrumb m-0">
-                            <li className="breadcrumb-item">
-                              <a href="#">Inicio</a>
-                            </li>
-                          </ol>
-                        </nav>
-
-                        <div>
-                          <h1 className="mb-3">Encabezado de la página</h1>
-                          <p className="lead m-0">
-                            Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la
-                            convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
-                          </p>
-                        </div>
-
-                        {/* botones */}
-                        <div className="btn-hero">
-                          <button type="button" className="btn btn-primary">
-                            Botón
-                          </button>
-                          <button type="button" className="btn btn-outline-primary">
-                            Botón
-                          </button>
-                        </div>
-                        {/* botones */}
-                      </div>
-                    </div>
-
-                    <div className="aside">
-                      <iframe
-                        src="https://www.youtube.com/embed/3UUC3p0k4SE?si=r15TOyvXzI2GM7WU"
-                        title="YouTube video player"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerPolicy="strict-origin-when-cross-origin"
-                        allowFullScreen
-                      ></iframe>
-                    </div>
-                  </header>
-                </div>
-              </div>
-            </div>
-          </CodeBox>
-        </>
-      ),
-    },
-    {
-      subtitle: 'Con gif',
-      content: (
-        <>
-          <CodeBox codeHTML={HERO_CON_GIF}>
-            <div className="container">
-              <div className="hero-container">
-                <div className="hero-box-sizing ">
-                  <header className="hero">
-                    <div className="content wave">
-                      <div className="d-flex flex-column">
-                        <nav aria-label="Navegación secundaria">
-                          <ol className="breadcrumb m-0">
-                            <li className="breadcrumb-item">
-                              <a href="#">Inicio</a>
-                            </li>
-                          </ol>
-                        </nav>
-
-                        <div>
-                          <h1 className="mb-3">Encabezado de la página</h1>
-                          <p className="lead m-0">
-                            Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la
-                            convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
-                          </p>
-                        </div>
-
-                        {/* botones */}
-                        <div className="btn-hero">
-                          <button type="button" className="btn btn-primary">
-                            Botón
-                          </button>
-                          <button type="button" className="btn btn-outline-primary">
-                            Botón
-                          </button>
-                        </div>
-                        {/* botones */}
-                      </div>
-                    </div>
-
-                    <div className="aside">
-                      <Image src={`${basePath}/images/hero/gif_hero_header.gif`} alt="Hero" fill />
-                    </div>
+                    <div className="aside bg-aside-hero-light"></div>
                   </header>
                 </div>
               </div>
@@ -356,7 +89,7 @@ const HeroHeaderDocs: React.FC = () => {
             <div className="container">
               <div className="hero-container">
                 <div className="hero-box-sizing ">
-                  <header className="hero">
+                  <header className="hero bg-content-hero-dark">
                     <div className="content corner">
                       <div className="d-flex flex-column">
                         <nav aria-label="Navegación secundaria">
@@ -377,10 +110,10 @@ const HeroHeaderDocs: React.FC = () => {
 
                         {/* botones */}
                         <div className="btn-hero">
-                          <button type="button" className="btn btn-primary">
+                          <button type="button" className="btn btn-light">
                             Botón
                           </button>
-                          <button type="button" className="btn btn-outline-primary">
+                          <button type="button" className="btn btn-outline-light">
                             Botón
                           </button>
                         </div>
@@ -388,7 +121,7 @@ const HeroHeaderDocs: React.FC = () => {
                       </div>
                     </div>
 
-                    <div className="aside bg-aside-hero-dark"></div>
+                    <div className="aside bg-aside-hero-light"></div>
                   </header>
                 </div>
               </div>
@@ -405,7 +138,7 @@ const HeroHeaderDocs: React.FC = () => {
             <div className="container">
               <div className="hero-container">
                 <div className="hero-box-sizing ">
-                  <header className="hero">
+                  <header className="hero bg-content-hero-light">
                     <div className="content corner">
                       <div className="d-flex flex-column">
                         <nav aria-label="Navegación secundaria">
@@ -424,6 +157,7 @@ const HeroHeaderDocs: React.FC = () => {
                           </p>
                         </div>
 
+                        {/* accionable campo buscador */}
                         <div className="d-grid d-sm-grid d-md-flex flex-wrap search-container">
                           {/* search wrapper */}
                           <div className="search-wrapper">
@@ -480,10 +214,11 @@ const HeroHeaderDocs: React.FC = () => {
                           </div>
                           {/* search wrapper */}
                         </div>
+                        {/* accionable campo buscador */}
                       </div>
                     </div>
 
-                    <div className="aside bg-aside-hero-dark"></div>
+                    <div className="aside bg-aside-hero-light"></div>
                   </header>
                 </div>
               </div>
@@ -500,7 +235,7 @@ const HeroHeaderDocs: React.FC = () => {
             <div className="container">
               <div className="hero-container">
                 <div className="hero-box-sizing ">
-                  <header className="hero">
+                  <header className="hero bg-content-hero-dark">
                     <div className="content corner">
                       <div className="d-flex flex-column">
                         <nav aria-label="Navegación secundaria">
@@ -530,7 +265,7 @@ const HeroHeaderDocs: React.FC = () => {
                       </div>
                     </div>
 
-                    <div className="aside bg-aside-hero-dark"></div>
+                    <div className="aside bg-aside-hero-light"></div>
                   </header>
                 </div>
               </div>
@@ -547,7 +282,7 @@ const HeroHeaderDocs: React.FC = () => {
             <div className="container">
               <div className="hero-container">
                 <div className="hero-box-sizing ">
-                  <header className="hero">
+                  <header className="hero bg-content-hero-light">
                     <div className="content corner">
                       <div className="d-flex flex-column">
                         <nav aria-label="Navegación secundaria">
@@ -651,7 +386,7 @@ const HeroHeaderDocs: React.FC = () => {
                       </div>
                     </div>
 
-                    <div className="aside bg-aside-hero-dark"></div>
+                    <div className="aside bg-aside-hero-light"></div>
                   </header>
                 </div>
               </div>
@@ -668,7 +403,7 @@ const HeroHeaderDocs: React.FC = () => {
             <div className="container">
               <div className="hero-container">
                 <div className="hero-box-sizing ">
-                  <header className="hero">
+                  <header className="hero bg-content-hero-light">
                     <div className="content corner">
                       <div className="d-flex flex-column">
                         <nav aria-label="Navegación secundaria">
@@ -707,7 +442,7 @@ const HeroHeaderDocs: React.FC = () => {
                       </div>
                     </div>
 
-                    <div className="aside bg-aside-hero-dark"></div>
+                    <div className="aside bg-aside-hero-light"></div>
                   </header>
                 </div>
               </div>
@@ -725,156 +460,8 @@ const HeroHeaderDocs: React.FC = () => {
         <>
           <CodeBox codeHTML={HERO_COLORES}>
             <div className="container">
-              <div className="hero-container-4">
+              <div className="hero-container">
                 <div className="hero-box-sizing ">
-                  {/* cyan */}
-                  <header className="hero bg-content-hero-cyan">
-                    <div className="content corner">
-                      <div className="d-flex flex-column">
-                        <nav aria-label="Navegación secundaria">
-                          <ol className="breadcrumb m-0">
-                            <li className="breadcrumb-item">
-                              <a href="#">Inicio</a>
-                            </li>
-                          </ol>
-                        </nav>
-
-                        <div>
-                          <h1 className="mb-3">Encabezado de la página</h1>
-                          <p className="lead m-0">
-                            Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la
-                            convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
-                          </p>
-                        </div>
-
-                        {/* botones */}
-                        <div className="btn-hero">
-                          <button type="button" className="btn btn-primary">
-                            Botón
-                          </button>
-                          <button type="button" className="btn btn-outline-primary">
-                            Botón
-                          </button>
-                        </div>
-                        {/* botones */}
-                      </div>
-                    </div>
-
-                    <div className="aside bg-aside-hero-dark"></div>
-                  </header>
-                  {/* cyan */}
-                  <br />
-                  {/* sky */}
-                  <header className="hero bg-content-hero-sky">
-                    <div className="content corner">
-                      <div className="d-flex flex-column">
-                        <nav aria-label="Navegación secundaria">
-                          <ol className="breadcrumb m-0">
-                            <li className="breadcrumb-item">
-                              <a href="#">Inicio</a>
-                            </li>
-                          </ol>
-                        </nav>
-
-                        <div>
-                          <h1 className="mb-3">Encabezado de la página</h1>
-                          <p className="lead m-0">
-                            Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la
-                            convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
-                          </p>
-                        </div>
-
-                        {/* botones */}
-                        <div className="btn-hero">
-                          <button type="button" className="btn btn-primary">
-                            Botón
-                          </button>
-                          <button type="button" className="btn btn-outline-primary">
-                            Botón
-                          </button>
-                        </div>
-                        {/* botones */}
-                      </div>
-                    </div>
-
-                    <div className="aside bg-aside-hero-dark"></div>
-                  </header>
-                  {/* sky */}
-                  <br />
-                  {/* yellow */}
-                  <header className="hero bg-content-hero-yellow">
-                    <div className="content corner">
-                      <div className="d-flex flex-column">
-                        <nav aria-label="Navegación secundaria">
-                          <ol className="breadcrumb m-0">
-                            <li className="breadcrumb-item">
-                              <a href="#">Inicio</a>
-                            </li>
-                          </ol>
-                        </nav>
-
-                        <div>
-                          <h1 className="mb-3">Encabezado de la página</h1>
-                          <p className="lead m-0">
-                            Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la
-                            convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
-                          </p>
-                        </div>
-
-                        {/* botones */}
-                        <div className="btn-hero">
-                          <button type="button" className="btn btn-primary">
-                            Botón
-                          </button>
-                          <button type="button" className="btn btn-outline-primary">
-                            Botón
-                          </button>
-                        </div>
-                        {/* botones */}
-                      </div>
-                    </div>
-
-                    <div className="aside bg-aside-hero-dark"></div>
-                  </header>
-                  {/* yellow */}
-                  <br />
-                  {/* purple */}
-                  <header className="hero bg-content-hero-purple">
-                    <div className="content corner">
-                      <div className="d-flex flex-column">
-                        <nav aria-label="Navegación secundaria">
-                          <ol className="breadcrumb m-0">
-                            <li className="breadcrumb-item">
-                              <a href="#">Inicio</a>
-                            </li>
-                          </ol>
-                        </nav>
-
-                        <div>
-                          <h1 className="mb-3">Encabezado de la página</h1>
-                          <p className="lead m-0">
-                            Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la
-                            convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
-                          </p>
-                        </div>
-
-                        {/* botones */}
-                        <div className="btn-hero">
-                          <button type="button" className="btn btn-primary">
-                            Botón
-                          </button>
-                          <button type="button" className="btn btn-outline-primary">
-                            Botón
-                          </button>
-                        </div>
-                        {/* botones */}
-                      </div>
-                    </div>
-
-                    <div className="aside bg-aside-hero-dark"></div>
-                  </header>
-                  {/* purple */}
-                  <br />
                   {/* blue */}
                   <header className="hero bg-content-hero-blue">
                     <div className="content corner">
@@ -897,47 +484,10 @@ const HeroHeaderDocs: React.FC = () => {
 
                         {/* botones */}
                         <div className="btn-hero">
-                          <button type="button" className="btn btn-primary">
+                          <button type="button" className="btn btn-light">
                             Botón
                           </button>
-                          <button type="button" className="btn btn-outline-primary">
-                            Botón
-                          </button>
-                        </div>
-                        {/* botones */}
-                      </div>
-                    </div>
-
-                    <div className="aside bg-aside-hero-dark"></div>
-                  </header>
-                  {/* blue */}
-                  <br />
-                  {/* red */}
-                  <header className="hero bg-content-hero-red">
-                    <div className="content corner">
-                      <div className="d-flex flex-column">
-                        <nav aria-label="Navegación secundaria">
-                          <ol className="breadcrumb m-0">
-                            <li className="breadcrumb-item">
-                              <a href="#">Inicio</a>
-                            </li>
-                          </ol>
-                        </nav>
-
-                        <div>
-                          <h1 className="mb-3">Encabezado de la página</h1>
-                          <p className="lead m-0">
-                            Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la
-                            convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
-                          </p>
-                        </div>
-
-                        {/* botones */}
-                        <div className="btn-hero">
-                          <button type="button" className="btn btn-primary">
-                            Botón
-                          </button>
-                          <button type="button" className="btn btn-outline-primary">
+                          <button type="button" className="btn btn-outline-light">
                             Botón
                           </button>
                         </div>
@@ -945,9 +495,9 @@ const HeroHeaderDocs: React.FC = () => {
                       </div>
                     </div>
 
-                    <div className="aside bg-aside-hero-dark"></div>
+                    <div className="aside bg-aside-hero-neutral"></div>
                   </header>
-                  {/* red */}
+                  {/* cyan */}
                 </div>
               </div>
             </div>
@@ -957,7 +507,7 @@ const HeroHeaderDocs: React.FC = () => {
     },
     {
       subtitle: 'Light',
-      _content: (
+      content: (
         <>
           <CodeBox codeHTML={HERO_LIGHT}>
             <div className="container">
@@ -1005,12 +555,6 @@ const HeroHeaderDocs: React.FC = () => {
           </CodeBox>
         </>
       ),
-      get content() {
-        return this._content;
-      },
-      set content(value) {
-        this._content = value;
-      },
     },
     {
       subtitle: 'Dark',
@@ -1894,7 +1438,7 @@ const HeroHeaderDocs: React.FC = () => {
             sectionContent: ACCESSIBILITY,
           },
         ]}
-      />{' '}
+      />
     </>
   );
 };

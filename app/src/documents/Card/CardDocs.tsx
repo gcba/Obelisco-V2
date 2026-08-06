@@ -21,9 +21,12 @@ import {
   TARJETAS_ACCESSIBILTY_2,
   TARJETAS_IMPACTO_VISUAL,
   VERTICAL_AGENDA,
+  VERTICAL_CURSOS,
   VERTICAL_ICON,
   VERTICAL_IMG,
   VERTICAL_NOTICE,
+  VERTICAL_NOTICE_SIN_BORDE,
+  VERTICAL_NOTICE_SIN_BORDE_CURSOS,
   VERTICAL_NOTICE_TRUNCATE,
 } from './code-views';
 
@@ -277,7 +280,7 @@ const CardDocs: React.FC = () => {
             <div className="card-vertical-box-sizing">
               <div className="card">
                 <Image
-                  src={`${basePath}/images/card-img-top.jpg`}
+                  src={`${basePath}/images/tarjetas/tarjetas_img_top.jpg`}
                   className="card-img"
                   alt="descripción de imagen"
                   width={348}
@@ -304,7 +307,7 @@ const CardDocs: React.FC = () => {
               <div className="card-vertical-box-sizing">
                 <div className="card">
                   <Image
-                    src={`${basePath}/images/card-img-top.jpg`}
+                    src={`${basePath}/images/tarjetas/tarjetas_img_top.jpg`}
                     className="card-img"
                     alt="descripción de imagen"
                     width={348}
@@ -372,6 +375,103 @@ const CardDocs: React.FC = () => {
       ),
     },
     {
+      tertiarytitle: 'Sin borde',
+      content: (
+        <>
+          <CodeBox codeHTML={VERTICAL_NOTICE_SIN_BORDE}>
+            <div className="container">
+              <div className="card-vertical-box-sizing">
+                <div className="card card-img-borderless">
+                  <Image
+                    src={`${basePath}/images/tarjetas/card-img-sin-borde.svg`}
+                    className="card-img"
+                    alt="descripción de imagen"
+                    width={348}
+                    height={196}
+                  ></Image>
+                  <div className="card-body">
+                    <div className="card-badges">
+                      <span className="badge badge-s-default badge-sm">Etiqueta</span>
+                      <span className="badge badge-s-default badge-sm">Etiqueta</span>
+                    </div>
+                    <h3 className="card-title">
+                      <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                    </h3>
+                    <p className="card-text">Descripción de la tarjeta</p>
+                    <div className="card-info">
+                      <div>
+                        <small>
+                          <span>Fecha de publicación: 00/00/00</span>
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+    {
+      subtitle: 'Cursos',
+      content: (
+        <>
+          <CodeBox codeHTML={VERTICAL_CURSOS}>
+            <div className="container">
+              <div className="card-vertical-box-sizing">
+                <div className="card">
+                  <Image
+                    src={`${basePath}/images/tarjetas/tarjetas_img_top.jpg`}
+                    className="card-img"
+                    alt="descripción de imagen"
+                    width={348}
+                    height={196}
+                  ></Image>
+                  <div className="card-body">
+                    <div className="card-badges">
+                      <span className="badge badge-s-default badge-sm">Etiqueta</span>
+                      <span className="badge badge-s-default badge-sm">Etiqueta</span>
+                    </div>
+                    <h3 className="card-title">
+                      <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                    </h3>
+                    <p className="card-text">Descripción de la tarjeta</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </CodeBox>
+          <br />
+          <CodeBox codeHTML={VERTICAL_NOTICE_SIN_BORDE_CURSOS}>
+            <div className="container">
+              <div className="card-vertical-box-sizing">
+                <div className="card card-img-borderless">
+                  <Image
+                    src={`${basePath}/images/tarjetas/card-img-sin-borde.svg`}
+                    className="card-img"
+                    alt="descripción de imagen"
+                    width={348}
+                    height={196}
+                  ></Image>
+                  <div className="card-body">
+                    <div className="card-badges">
+                      <span className="badge badge-s-default badge-sm">Etiqueta</span>
+                      <span className="badge badge-s-default badge-sm">Etiqueta</span>
+                    </div>
+                    <h3 className="card-title">
+                      <LinkClient className="card-title-link">Título de la tarjeta</LinkClient>
+                    </h3>
+                    <p className="card-text">Descripción de la tarjeta</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </CodeBox>
+        </>
+      ),
+    },
+    {
       subtitle: 'Eventos',
       content: (
         <CodeBox codeHTML={VERTICAL_AGENDA}>
@@ -379,7 +479,7 @@ const CardDocs: React.FC = () => {
             <div className="card-vertical-box-sizing">
               <div className="card card-eventos">
                 <Image
-                  src={`${basePath}/images/card-img-top.jpg`}
+                  src={`${basePath}/images/tarjetas/tarjetas_img_top.jpg`}
                   className="card-img"
                   alt="descripción de imagen"
                   width={348}
@@ -398,7 +498,7 @@ const CardDocs: React.FC = () => {
                   </h3>
                   <p className="card-text ellipsis-4">
                     Esta es la descripción del evento que puede contener hasta 4 líneas de texto. Cuando la descripción
-                    se excede de este límite, el texto se trunca y aparece el
+                    se excede de este límite, el texto se trunca y aparecen los puntos suspensivos.
                   </p>
                   <div className="card-info">
                     <div className="pt-2">
@@ -424,6 +524,33 @@ const CardDocs: React.FC = () => {
       ),
     },
     {
+      subtitle: 'Tarjeta de impacto visual',
+      content: (
+        <CodeBox codeHTML={TARJETAS_IMPACTO_VISUAL}>
+          <div className="card-box-sizing-columns">
+            <div className="container">
+              <div className="card-vertical-box-sizing">
+                <div className="card card-img-bg">
+                  <div className="card-badges-bg">
+                    <span className="badge badge-s-default">Etiqueta</span>
+                    <span className="badge badge-s-default">Etiqueta</span>
+                  </div>
+                  <Image
+                    src={`${basePath}/images/tarjetas/tarjeta_de_impacto_visual.jpg`}
+                    alt="descripción de imagen"
+                    width={348}
+                    height={196}
+                  />
+                  <p className="headline-lg">Título de la tarjeta</p>
+                  <a href="#" aria-label="Descripcion de tarjetas"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </CodeBox>
+      ),
+    },
+    {
       title: 'Disposición',
     },
     {
@@ -437,7 +564,7 @@ const CardDocs: React.FC = () => {
                   <div className="col">
                     <div className="card">
                       <Image
-                        src={`${basePath}/images/card-img-top.jpg`}
+                        src={`${basePath}/images/tarjetas/tarjetas_img_top.jpg`}
                         className="card-img"
                         alt="descripción de imagen"
                         width={348}
@@ -467,7 +594,7 @@ const CardDocs: React.FC = () => {
                   <div className="col">
                     <div className="card">
                       <Image
-                        src={`${basePath}/images/card-img-top.jpg`}
+                        src={`${basePath}/images/tarjetas/tarjetas_img_top.jpg`}
                         className="card-img"
                         alt="descripción de imagen"
                         width={348}
@@ -497,7 +624,7 @@ const CardDocs: React.FC = () => {
                   <div className="col">
                     <div className="card">
                       <Image
-                        src={`${basePath}/images/card-img-top.jpg`}
+                        src={`${basePath}/images/tarjetas/tarjetas_img_top.jpg`}
                         className="card-img"
                         alt="descripción de imagen"
                         width={348}
@@ -527,7 +654,7 @@ const CardDocs: React.FC = () => {
                   <div className="col">
                     <div className="card">
                       <Image
-                        src={`${basePath}/images/card-img-top.jpg`}
+                        src={`${basePath}/images/tarjetas/tarjetas_img_top.jpg`}
                         className="card-img"
                         alt="descripción de imagen"
                         width={348}
@@ -725,7 +852,7 @@ const CardDocs: React.FC = () => {
             <div className="responsive-scroll vertical-cards-container" tabIndex={0}>
               <div className="card">
                 <Image
-                  src={`${basePath}/images/card-img-top.jpg`}
+                  src={`${basePath}/images/tarjetas/tarjetas_img_top.jpg`}
                   className="card-img"
                   alt="descripción de imagen"
                   width={348}
@@ -751,7 +878,7 @@ const CardDocs: React.FC = () => {
               </div>
               <div className="card">
                 <Image
-                  src={`${basePath}/images/card-img-top.jpg`}
+                  src={`${basePath}/images/tarjetas/tarjetas_img_top.jpg`}
                   className="card-img"
                   alt="descripción de imagen"
                   width={348}
@@ -777,7 +904,7 @@ const CardDocs: React.FC = () => {
               </div>
               <div className="card">
                 <Image
-                  src={`${basePath}/images/card-img-top.jpg`}
+                  src={`${basePath}/images/tarjetas/tarjetas_img_top.jpg`}
                   className="card-img"
                   alt="descripción de imagen"
                   width={348}
@@ -799,33 +926,6 @@ const CardDocs: React.FC = () => {
                       </small>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </CodeBox>
-      ),
-    },
-    {
-      title: 'Tarjeta de impacto visual',
-      content: (
-        <CodeBox codeHTML={TARJETAS_IMPACTO_VISUAL}>
-          <div className="card-box-sizing-columns">
-            <div className="container">
-              <div className="card-vertical-box-sizing">
-                <div className="card card-img-bg">
-                  <div className="card-badges-bg">
-                    <span className="badge badge-s-default">Etiqueta</span>
-                    <span className="badge badge-s-default">Etiqueta</span>
-                  </div>
-                  <Image
-                    src={`${basePath}/images/tarjetas/tarjeta_de_impacto_visual.jpg`}
-                    alt="descripción de imagen"
-                    width={348}
-                    height={196}
-                  />
-                  <p className="headline-lg">Título de la tarjeta</p>
-                  <a href="#" aria-label="Descripcion de tarjetas"></a>
                 </div>
               </div>
             </div>

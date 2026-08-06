@@ -19,6 +19,74 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
+      title: 'Versión 1.18.0',
+      content: (
+        <>
+          <ul className="docs-list">
+            <p>La Versión 1.18.0 contiene lo siguiente: </p>
+            <li>
+              Se crea una nueva variante de Tarjetas verticales de noticias, sin borde:{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/components/cards#section-dev-10">
+                Tarjetas de noticias sin borde
+              </a>
+              .
+            </li>
+            <li>
+              Se crea una nueva Tarjeta vertical, de cursos:{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/components/cards#section-dev-10">Tarjetas de cursos</a>.
+            </li>
+            <li>
+              Se truncan tarjetas verticales (excepto eventos, impacto visual y noticia sin borde) a 2 líneas en título,
+              3 líneas en descripción.
+            </li>
+            <li>
+              <strong>Correciones (fix):</strong>
+              <ul>
+                <li>
+                  Estado <code>focus</code> en Cabecera de página institucional, con accionable campo buscador.
+                </li>
+                <li>
+                  Carrusel de destacados entre <code>992px</code> y <code>1200px</code>. La disposición pasa a ser
+                  vertical.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      title: 'Versión 1.17.0',
+      content: (
+        <>
+          <ul className="docs-list">
+            <p>La Versión 1.17.0 contiene lo siguiente: </p>
+            <li>
+              Se crea una nueva variante de Cabecera de Página con multimedia:{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/components/hero-multimedia">Cabecera de Página multimedia</a>.
+            </li>
+            <li>
+              Se creó la sección de{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/components/hero">Cabecera de Página institucional</a>.
+            </li>
+            <li>
+              Se eliminaron las variantes de colores para cabecera institucional, dejando como único color de fondo
+              relacionado al manual de marca <code>bg-blue</code>.
+            </li>
+            <li>
+              Se eliminó la variante &quot;dinámica&quot; para cabeceras con clase <code> wave </code>y sus respectivas
+              variantes de multimedia.
+            </li>
+          </ul>
+          En{' '}
+          <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-8">
+            Cambios en componente
+          </a>{' '}
+          está la documentación de las clases en detalle.
+        </>
+      ),
+    },
+    {
       title: 'Versión 1.16.0',
       content: (
         <>

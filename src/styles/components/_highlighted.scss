@@ -364,6 +364,7 @@ $gradient-text-colors: (
 .panel-horizontal-container {
   @extend .panel-horizontal-content;
   padding: 16px;
+
   // max-height: 388px;
   height: auto;
   max-width: 1109px;
@@ -575,6 +576,7 @@ $gradient-text-colors: (
       &:not(:has(.panel-img)) {
         @include media-breakpoint-up(xl) {
           padding: 0;
+
           .panel-body {
             padding: 64px;
           }
@@ -582,6 +584,7 @@ $gradient-text-colors: (
 
         @include media-breakpoint-down(xl) {
           padding: 0;
+
           .panel-body {
             padding: 36px;
           }
@@ -589,6 +592,7 @@ $gradient-text-colors: (
 
         @include media-breakpoint-down(sm) {
           padding: 0;
+
           .panel-body {
             padding: 16px;
           }

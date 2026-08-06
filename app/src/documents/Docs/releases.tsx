@@ -19,6 +19,59 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
+      title: 'Versión 1.18.1',
+      content: (
+        <>
+          <ul className="docs-list">
+            <p>La Versión 1.18.1 contiene lo siguiente: </p>
+            <li>Se crea una nueva paleta de colores. Todos los colores de la rampa cambiaron.</li>
+            <li>
+              <strong>Correciones (fix):</strong>
+              <ul>
+                <li>
+                  Se corrigen las flechas de Carrusel en estado <code>focus</code>, ahora se ve el ícono correcto.
+                </li>
+                <li>
+                  En Destacado container con degrade, <strong>se le agrega un wrapper a la imagen.</strong> Este wrapper
+                  se usa con las clases: <code>&quot;panel-media&quot;</code> o{' '}
+                  <code>&quot;panel-media panel-media-edge&quot;</code>, en conjunto.
+                  <br />
+                  <div className="responsive-scroll mb-3" tabIndex={0}>
+                    <table className="table">
+                      <thead>
+                        <tr>
+                          <th scope="col" className="tb-text">
+                            Antes
+                          </th>
+                          <th scope="col" className="tb-text">
+                            Ahora
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <code>{`<img alt="descripción de imagen" class="panel-img" src="...">`}</code>
+                          </td>
+                          <td>
+                            <code>{`<div class="panel-media" `}</code>
+                            <br />
+                            <code>{`            <img alt="descripción de imagen" class="panel-img" src="...">`}</code>
+                            <br />
+                            <code>{`</div>`}</code>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
       title: 'Versión 1.18.0',
       content: (
         <>

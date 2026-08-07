@@ -77,8 +77,8 @@ $carousel-icon-right-active: url('data:image/svg+xml,<svg width="21" height="21"
 
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
-      width: 32px;
-      height: 32px;
+      width: 21px;
+      height: 21px;
     }
   }
 
@@ -475,6 +475,7 @@ $max-width: 1000px;
 
       .carousel-indicators {
         justify-content: start;
+        margin-left: calc((100% - 992px) / 2 + 0.75rem);
       }
 
       .carousel-control-next,
@@ -495,18 +496,18 @@ $max-width: 1000px;
 
         .carousel-control-next-icon,
         .carousel-control-prev-icon {
-          width: 32px;
-          height: 32px;
+          width: 21px;
+          height: 21px;
         }
       }
 
       .carousel-control-prev {
         left: auto;
-        right: 100px;
+        right: 265px;
       }
 
       .carousel-control-next {
-        right: 32px;
+        margin-left: calc((100% - 992px) / 2 + 0.75rem);
       }
     }
   }

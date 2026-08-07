@@ -235,8 +235,9 @@ $footer-social-x: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0
     }
   }
 
-  @media (max-width: 405px) {
-    padding: 1.5rem 0 3.5rem 0;
+  @media (width <= 405px) {
+    padding: 1.5rem 0 3.5rem;
+
     .container {
       .footer-info-actions {
         align-items: center;

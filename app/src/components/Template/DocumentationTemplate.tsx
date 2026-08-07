@@ -65,7 +65,7 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
                         style={{ marginTop: section.firstTitle ? `0px` : '48px' }}
                       >
                         <h2 className="h4 me-3">{section.title}</h2>
-                        <p style={{ color: '#000b18' }}>{section.date}</p>
+                        <p style={{ color: '#4A5766' }}>{section.date}</p>
                       </div>
                     </>
                   ) : (

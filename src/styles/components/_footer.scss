@@ -16,7 +16,7 @@ $footer-icon-separation: 0.25rem;
 $footer-icon-size: 1.5rem;
 
 $divider-margin: 1.625rem 0 2.5rem 0;
-$divider-border: 0.125rem solid $slate-700;
+$divider-border: 0.125rem solid $blue-700;
 
 $divider-margin-mobile: 2rem 0 2rem;
 
@@ -215,6 +215,8 @@ $footer-social-x: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0
   }
 
   @include media-breakpoint-down(sm) {
+    bottom: -4px;
+
     .container {
       flex-wrap: wrap;
       gap: $footer-info-gap-mobile;
@@ -229,6 +231,17 @@ $footer-social-x: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0
         gap: 0.5rem;
         align-items: flex-start;
         justify-content: center;
+      }
+    }
+  }
+
+  @media (width <= 405px) {
+    padding: 1.5rem 0 3.5rem;
+
+    .container {
+      .footer-info-actions {
+        align-items: center;
+        flex-direction: column;
       }
     }
   }

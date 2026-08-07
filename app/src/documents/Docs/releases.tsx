@@ -19,7 +19,64 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
+      title: 'Versión 1.18.1',
+      date: '06/08/2026',
+      content: (
+        <>
+          <ul className="docs-list">
+            <p>La Versión 1.18.1 contiene lo siguiente: </p>
+            <li>Se crea una nueva paleta de colores. Todos los colores de la rampa cambiaron.</li>
+            <li>
+              <strong>Correciones (fix):</strong>
+              <ul>
+                <li>
+                  Se corrige el color y tamaño de las flechas de Carrusel en estado <code>focus</code>, ahora se ve el
+                  ícono correcto.
+                </li>
+                <li>Se corrige el indicador del footer en responsive.</li>
+                <li>
+                  En Destacado container con degrade, <strong>se le agrega un wrapper a la imagen.</strong> Este wrapper
+                  se usa con las clases: <code>&quot;panel-media&quot;</code> o{' '}
+                  <code>&quot;panel-media panel-media-edge&quot;</code>, en conjunto.
+                  <br />
+                  <div className="responsive-scroll mb-3" tabIndex={0}>
+                    <table className="table">
+                      <thead>
+                        <tr>
+                          <th scope="col" className="tb-text">
+                            Antes
+                          </th>
+                          <th scope="col" className="tb-text">
+                            Ahora
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <code>{`<img alt="descripción de imagen" class="panel-img" src="...">`}</code>
+                          </td>
+                          <td>
+                            <code>{`<div class="panel-media" `}</code>
+                            <br />
+                            <code>{`            <img alt="descripción de imagen" class="panel-img" src="...">`}</code>
+                            <br />
+                            <code>{`</div>`}</code>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
       title: 'Versión 1.18.0',
+      date: '28/07/2026',
       content: (
         <>
           <ul className="docs-list">
@@ -57,6 +114,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.17.0',
+      date: '27/07/2026',
       content: (
         <>
           <ul className="docs-list">
@@ -88,6 +146,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.16.0',
+      date: '21/07/2026',
       content: (
         <>
           <ul className="docs-list">
@@ -105,6 +164,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.15.0',
+      date: '15/07/2026',
       content: (
         <>
           <ul className="docs-list">
@@ -133,6 +193,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.14.0',
+      date: '07/07/2026',
       content: (
         <>
           <ul className="docs-list">
@@ -164,6 +225,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.13.0',
+      date: '30/06/2026',
       content: (
         <>
           <ul className="docs-list">
@@ -205,6 +267,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.12.1',
+      date: '24/06/2026',
       content: (
         <>
           <ul className="docs-list">
@@ -238,6 +301,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.12.0',
+      date: '22/06/2026',
       content: (
         <ul className="docs-list">
           <p className="text-body-secondary d-flex text-sm align-items-center gap-1">
@@ -277,6 +341,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.11.1',
+      date: '04/06/2026',
       content: (
         <ul className="docs-list">
           <p>La Versión 1.11.1 contiene lo siguiente: </p>
@@ -304,6 +369,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.10.0',
+      date: '09/03/2026',
       content: (
         <ul className="docs-list">
           <p>La Versión 1.10.0 contiene lo siguiente: </p>
@@ -324,6 +390,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.9.1',
+      date: '18/02/2026',
       content: (
         <ul className="docs-list">
           <p>La Versión 1.9.1 contiene lo siguiente: </p>
@@ -349,6 +416,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.9.0',
+      date: '10/02/2026',
       content: (
         <ul className="docs-list">
           <p>La Versión 1.9.0 contiene lo siguiente: </p>
@@ -394,6 +462,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.8.4',
+      date: '10/12/2025',
       content: (
         <ul className="docs-list">
           <p>La Versión 1.8.4 contiene lo siguiente: </p>
@@ -422,6 +491,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.8.3',
+      date: '14/11/2025',
       content: (
         <ul className="docs-list">
           <p>La versión 1.8.3 contiene lo siguiente: </p>
@@ -435,6 +505,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.8.2',
+      date: '11/11/2025',
       content: (
         <ul className="docs-list">
           <p>La versión 1.8.2 contiene lo siguiente: </p>
@@ -451,6 +522,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.8.1',
+      date: '06/11/2025',
       content: (
         <ul className="docs-list">
           <p>La versión 1.8.1 contiene lo siguiente: </p>
@@ -475,6 +547,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.8.0',
+      date: '28/10/2025',
       content: (
         <ul className="docs-list">
           <p>La Versión 1.8.0 contiene lo siguiente: </p>
@@ -498,6 +571,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.7.1',
+      date: '20/10/2025',
       content: (
         <ul className="docs-list">
           <p>La versión 1.7.1 contiene lo siguiente: </p>
@@ -513,6 +587,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.7.0',
+      date: '15/10/2025',
       content: (
         <ul className="docs-list">
           <p>La versión 1.7.0 contiene lo siguiente: </p>
@@ -607,6 +682,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.6.2',
+      date: '09/10/2025',
       content: (
         <ul className="docs-list">
           <p>La versión 1.6.2 contiene lo siguiente: </p>
@@ -622,6 +698,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.6.1',
+      date: '02/09/2025',
       content: (
         <ul className="docs-list">
           <p>La versión 1.6.1 contiene lo siguiente: </p>
@@ -640,6 +717,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.6.0',
+      date: '07/07/2025',
       content: (
         <ul className="docs-list">
           <p>La versión 1.6.0 contiene lo siguiente: </p>
@@ -659,6 +737,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.5.6',
+      date: '28/05/2025',
       content: (
         <ul className="docs-list">
           <p>La versión 1.5.6 contiene lo siguiente: </p>
@@ -678,6 +757,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.5.5',
+      date: '09/05/2025',
       content: (
         <ul className="docs-list">
           <p>
@@ -688,6 +768,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.5.4',
+      date: '08/05/2025',
       content: (
         <ul className="docs-list">
           <p>La versión 1.5.4 contiene lo siguiente: </p>
@@ -702,6 +783,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.5.3',
+      date: '23/04/2025',
       content: (
         <ul className="docs-list">
           <p>La versión 1.5.3 contiene lo siguiente: </p>
@@ -718,6 +800,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.5.2',
+      date: '25/03/2025',
       content: (
         <ul className="docs-list">
           <p>La versión 1.5.2 contiene los siguientes fixes: </p>
@@ -732,6 +815,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.5.1',
+      date: '02/12/2024',
       content: (
         <ul className="docs-list">
           <p>La versión 1.5.1 contiene los siguientes fixes: </p>
@@ -754,6 +838,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.5.0',
+      date: '28/11/2024',
       content: (
         <ul className="docs-list">
           <p>La versión 1.5.0 contiene: </p>
@@ -766,6 +851,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.4.2',
+      date: '25/11/2024',
       content: (
         <ul className="docs-list">
           <p>La versión 1.4.2 es la primer versión estable de Obelisco. Los puntos más destacados de ésta contiene: </p>
@@ -774,6 +860,16 @@ const ReleasesComponents: React.FC = () => {
             Nueva guía de estilos: Modificación de tipografía, grilla y nueva paleta de color enfocada en la
             accesibilidad.
           </li>
+        </ul>
+      ),
+    },
+    // **
+    {
+      title: 'Versión 1.0.0',
+      date: '05/09/2024',
+      content: (
+        <ul className="docs-list">
+          <p>La versión 1.0.0 es la primer versión de Obelisco V2.</p>
         </ul>
       ),
     },

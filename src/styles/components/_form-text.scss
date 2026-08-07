@@ -254,7 +254,7 @@ input[type='file']:disabled::-webkit-file-upload-button {
   }
 
   &.is-invalid {
-    box-shadow: 0 0 0 2px $red-500;
+    box-shadow: 0 0 0 2px $red-600;
   }
 
   &:focus {

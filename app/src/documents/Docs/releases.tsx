@@ -30,8 +30,10 @@ const ReleasesComponents: React.FC = () => {
               <strong>Correciones (fix):</strong>
               <ul>
                 <li>
-                  Se corrigen las flechas de Carrusel en estado <code>focus</code>, ahora se ve el ícono correcto.
+                  Se corrige el color y tamaño de las flechas de Carrusel en estado <code>focus</code>, ahora se ve el
+                  ícono correcto.
                 </li>
+                <li>Se corrige el indicador del footer en responsive.</li>
                 <li>
                   En Destacado container con degrade, <strong>se le agrega un wrapper a la imagen.</strong> Este wrapper
                   se usa con las clases: <code>&quot;panel-media&quot;</code> o{' '}

@@ -599,10 +599,10 @@ export const HIGHLIGHTED_DEGRADE = `<div class="container">
         </p>
 
         <div class="panel-footer">
-          <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
+          <a class="btn btn-light btn-lg" href="#" rel="noopener noreferrer">
             Botón
           </a>
-          <a class="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
+          <a class="btn btn-outline-light btn-lg" href="#" rel="noopener noreferrer">
             Botón
           </a>
         </div>
@@ -631,10 +631,10 @@ export const HIGHLIGHTED_DEGRADE_INVERTED = `<div class="container">
         </p>
 
         <div class="panel-footer">
-          <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
+          <a class="btn btn-light btn-lg" href="#" rel="noopener noreferrer">
             Botón
           </a>
-          <a class="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
+          <a class="btn btn-outline-light btn-lg" href="#" rel="noopener noreferrer">
             Botón
           </a>
         </div>
@@ -694,10 +694,10 @@ export const HIGHLIGHTED_DEGRADE_NO_MEDIA = `<div class="container">
         </p>
 
         <div class="panel-footer">
-          <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
+          <a class="btn btn-light btn-lg" href="#" rel="noopener noreferrer">
             Botón
           </a>
-          <a class="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
+          <a class="btn btn-outline-light btn-lg" href="#" rel="noopener noreferrer">
             Botón
           </a>
         </div>

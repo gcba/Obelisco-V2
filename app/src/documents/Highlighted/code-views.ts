@@ -608,9 +608,7 @@ export const HIGHLIGHTED_DEGRADE = `<div class="container">
         </div>
       </div>
 
-      <div class="panel-media">
-        <img alt="descripción de imagen" loading="lazy" width="538" height="304" decoding="async" data-nimg="1" class="panel-img" src="/Obelisco-V2/images/highlighted/bax-phone.png">
-      </div>
+      <img alt="descripción de imagen" loading="lazy" width="538" height="304" decoding="async" data-nimg="1" class="panel-img" src="/Obelisco-V2/images/highlighted/bax-phone.png">
 
     </div>
   </div>
@@ -640,40 +638,7 @@ export const HIGHLIGHTED_DEGRADE_INVERTED = `<div class="container">
         </div>
       </div>
 
-      <div class="panel-media">
-        <img alt="descripción de imagen" loading="lazy" width="538" height="304" decoding="async" data-nimg="1" class="panel-img" src="/Obelisco-V2/images/highlighted/bax-phone.png">
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="panel-horizontal-content panel-horizontal-container bg-gradient-blue p-0">
-     <div class="panel-horizontal panel-inverted">
-
-      <div class="panel-body">
-        <h2 class="panel-title">Título del destacado</h2>
-        <p class="panel-text">
-        Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas
-        líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un
-        destacado. Debe ser breve y conciso, de pocas líneas. No puede contener
-        negritas ni enlaces
-        </p>
-
-        <div class="panel-footer">
-          <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
-            Botón
-          </a>
-          <a class="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
-            Botón
-          </a>
-        </div>
-      </div>
-
-      <div class="panel-media-edge">
-        <img alt="descripción de imagen" loading="lazy" width="538" height="304" decoding="async" data-nimg="1" class="panel-img" src="/Obelisco-V2/images/highlighted/destacado_multimedia_container.png">
-      </div>
+      <img alt="descripción de imagen" loading="lazy" width="538" height="304" decoding="async" data-nimg="1" class="panel-img" src="/Obelisco-V2/images/highlighted/bax-phone.png">
 
     </div>
   </div>

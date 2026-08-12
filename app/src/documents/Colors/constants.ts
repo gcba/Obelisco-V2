@@ -5,7 +5,7 @@ export const themeColors = [
   { name: 'primary', hex: '#1d3343' },
   { name: 'secondary', hex: '#035c80' },
   { name: 'tertiary', hex: '#009688' },
-  { name: 'tertiary-outline', hex: '#10413a' }, // revisar como cambiar el color de texto
+  { name: 'tertiary-outline', hex: '#10413a' },
   { name: 'success', hex: '#00642f' },
   { name: 'danger', hex: '#cb3232' },
   { name: 'warning', hex: '#e88700', textDark: true },

@@ -20,10 +20,19 @@ const ReleasesComponents: React.FC = () => {
   const sections = [
     {
       title: 'Versión 1.18.1',
-      date: '06/08/2026',
+      date: '12/08/2026',
       content: (
         <>
           <ul className="docs-list">
+            <p
+              className="text-body-secondary d-flex text-sm align-items-center gap-1 mb-0"
+              style={{ paddingBottom: '16px' }}
+            >
+              <span className="material-symbols-rounded" aria-hidden="true" style={{ color: '#0086AD' }}>
+                info
+              </span>
+              <span>Esta versión contiene cambios de colores que impactan al sistema en su totalidad.</span>
+            </p>
             <p>La Versión 1.18.1 contiene lo siguiente: </p>
             <li>Se crea una nueva paleta de colores. Todos los colores de la rampa cambiaron.</li>
             <li>
@@ -35,38 +44,17 @@ const ReleasesComponents: React.FC = () => {
                 </li>
                 <li>Se corrige el indicador del footer en responsive.</li>
                 <li>
-                  En Destacado container con degrade, <strong>se le agrega un wrapper a la imagen.</strong> Este wrapper
-                  se usa con las clases: <code>&quot;panel-media&quot;</code> o{' '}
-                  <code>&quot;panel-media panel-media-edge&quot;</code>, en conjunto.
-                  <br />
-                  <div className="responsive-scroll mb-3" tabIndex={0}>
-                    <table className="table">
-                      <thead>
-                        <tr>
-                          <th scope="col" className="tb-text">
-                            Antes
-                          </th>
-                          <th scope="col" className="tb-text">
-                            Ahora
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            <code>{`<img alt="descripción de imagen" class="panel-img" src="...">`}</code>
-                          </td>
-                          <td>
-                            <code>{`<div class="panel-media" `}</code>
-                            <br />
-                            <code>{`            <img alt="descripción de imagen" class="panel-img" src="...">`}</code>
-                            <br />
-                            <code>{`</div>`}</code>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+                  Destacado container con degrade:
+                  <ul>
+                    <li>
+                      Se corrige el alto y el alto máximo. Mide por defecto y cómo máximo <code>432px</code>.
+                    </li>
+                    <li>
+                      Se corrige que al tener una imagen ancha, esta no empuje al contenido. Ahora ambos ocupan 50%, sin
+                      importar el tamaño de la imagen.
+                    </li>
+                    <li>Al Destacado container sin multimedia, se le corrigen los espaciados en responsive.</li>
+                  </ul>
                 </li>
               </ul>
             </li>

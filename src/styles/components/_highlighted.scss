@@ -339,18 +339,13 @@
 /* COMPONENTE DEPRECADO - BLOQUE DE TRAMITE */
 // DESTACADO CONTAINER GRADIENTE
 $gradient-colors: (
-  'cyan': (
-    $sky-900,
-    #8ce1d7,
-  ),
   'blue': (
-    $blue-900,
-    $blue-500,
+    $blue-800,
+    $blue-700,
   ),
 );
 
 $gradient-text-colors: (
-  'cyan': $white,
   'blue': $white,
 );
 
@@ -445,115 +440,57 @@ $gradient-text-colors: (
       overflow: hidden;
 
       .panel-horizontal {
-        .panel-body {
-          color: map-get($gradient-text-colors, $name);
-          flex: 1 1 50%;
-          min-width: 0;
+        // Destacado container sin multimedia
+        &:has(.panel-img) {
+          height: 432px;
+          max-height: 432px;
 
-          @include media-breakpoint-up(xl) {
-            padding-right: 64px;
-            max-width: 50%;
-          }
-        }
-
-        &.panel-inverted {
           .panel-body {
+            color: map-get($gradient-text-colors, $name);
+
+            // el texto ocupa como máximo el 50%
+            flex: 1 1 50%;
+            min-width: 0;
+            max-width: 50%;
+
             @include media-breakpoint-up(xl) {
-              padding-left: 64px;
-              padding-right: 0;
-              max-width: 50%;
+              padding-right: 64px;
             }
           }
-        }
 
-        .panel-media {
-          flex: 0 0 50%;
-          min-width: 0;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-
-          &:not(.panel-media-edge) {
-            overflow: visible;
+          &.panel-inverted {
+            .panel-body {
+              @include media-breakpoint-up(xl) {
+                padding-left: 64px;
+                padding-right: 0;
+                max-width: 50%;
+              }
+            }
           }
 
-          &:not(.panel-media-edge) .panel-img {
+          // multimedia ocupa como máximo el 50%
+          .panel-img {
+            flex: 0 1 50%;
+            min-width: 0;
+            max-width: 50%;
             width: auto;
             height: auto;
-            max-width: 100%;
             max-height: 432px;
-            object-fit: contain;
-            aspect-ratio: auto;
-          }
-
-          &.panel-media-edge {
-            overflow: hidden;
-            align-self: stretch;
-          }
-
-          &.panel-media-edge .panel-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            max-height: 432px;
-            aspect-ratio: auto;
-          }
-        }
-
-        @include media-breakpoint-up(xl) {
-          &:has(.panel-img) {
-            // min-height: 432px;
-            height: 432px;
-            max-height: 432px;
-          }
-
-          // Destacado container sin multimedia
-          &:not(:has(.panel-img)) {
-            padding: 0;
-          }
-        }
-
-        @include media-breakpoint-down(xl) {
-          display: flex;
-          flex-direction: column-reverse;
-          gap: 32px;
-
-          .panel-media {
-            &:not(.panel-media-edge) .panel-img {
-              height: 100%;
-            }
-          }
-
-          .panel-media,
-          .panel-media-edge {
-            flex: none;
-            width: 100%;
-            max-width: 100%;
-            height: 450px;
-            max-height: 450px;
-          }
-
-          .panel-img {
-            width: 100%;
-            height: 100%;
             object-fit: contain;
             object-position: center;
+            display: block;
+            margin: 0 auto;
           }
 
-          .panel-body {
-            max-width: 100%;
+          // panel-img-edge. comportamiento de llegar hasta los bordes del destacado
+          .panel-img-edge {
             width: 100%;
-            padding: 36px;
-          }
-        }
-
-        @include media-breakpoint-down(sm) {
-          .panel-body {
-            max-width: 100%;
-            width: 100%;
-
-            // padding-right: 0;
-            padding: 16px;
+            height: 100%;
+            max-width: 50%;
+            object-fit: cover;
+            object-position: center;
+            margin: 0;
+            align-self: stretch;
           }
         }
 
@@ -568,38 +505,77 @@ $gradient-text-colors: (
           .panel-body {
             width: 100%;
             max-width: 100%;
+            color: map-get($gradient-text-colors, $name);
+          }
+        }
+
+        @include media-breakpoint-down(xl) {
+          display: flex;
+          flex-direction: column-reverse;
+          gap: 32px;
+
+          .panel-body {
+            max-width: 100%;
+            width: 100%;
+            padding: 36px;
+          }
+
+          .panel-img {
+            flex: none;
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            max-height: 350px;
+            object-fit: contain;
+            object-position: center;
+          }
+
+          .panel-img-edge {
+            width: 100%;
+            max-width: 100%;
+            height: 350px;
+            max-height: 350px;
+            object-fit: cover;
+          }
+        }
+
+        @include media-breakpoint-down(sm) {
+          .panel-body {
+            max-width: 100%;
+            width: 100%;
+            padding: 16px;
           }
         }
       }
 
       // Espaciados para Destacado container sin multimedia
       &:not(:has(.panel-img)) {
-        @include media-breakpoint-up(xl) {
-          padding: 0;
+        padding: 0;
 
-          .panel-body {
-            padding: 64px;
+        @include media-breakpoint-up(xl) {
+          .panel-horizontal {
+            .panel-body {
+              padding: 64px;
+            }
           }
         }
 
         @include media-breakpoint-down(xl) {
-          padding: 0;
-
-          .panel-body {
-            padding: 36px;
+          .panel-horizontal {
+            .panel-body {
+              padding: 36px;
+            }
           }
         }
 
         @include media-breakpoint-down(sm) {
-          padding: 0;
-
-          .panel-body {
-            padding: 16px;
+          .panel-horizontal {
+            .panel-body {
+              padding: 16px;
+            }
           }
         }
       }
     }
   }
 }
-
-// Destacado container

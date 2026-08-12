@@ -83,3 +83,14 @@ blockquote {
     line-clamp: #{$i};
   }
 }
+
+// Ficha de color
+.docs-color {
+  color: red;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2.5px;
+  text-underline-position: from-font;
+}

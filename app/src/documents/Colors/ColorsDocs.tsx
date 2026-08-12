@@ -154,7 +154,10 @@ const ColorsDocs: React.FC = () => {
             <span className="material-symbols-rounded" aria-hidden="true" style={{ color: '#0086AD' }}>
               info
             </span>
-            <span>Estas variables están disponibles sólo en Figma. No están disponibles en el código.</span>
+            <span>
+              Estas variables están disponibles sólo en Figma.{' '}
+              <span className="docs-color"> No están disponibles en el código</span>.
+            </span>
           </p>
         </div>
       ),

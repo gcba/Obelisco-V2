@@ -503,11 +503,11 @@ $max-width: 1000px;
 
       .carousel-control-prev {
         left: auto;
-        right: 265px;
+        right: 100px;
       }
 
       .carousel-control-next {
-        margin-left: calc((100% - 992px) / 2 + 0.75rem);
+        right: 32px;
       }
     }
   }

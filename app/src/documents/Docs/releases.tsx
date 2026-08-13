@@ -20,7 +20,7 @@ const ReleasesComponents: React.FC = () => {
   const sections = [
     {
       title: 'Versión 1.18.1',
-      date: '12/08/2026',
+      date: '13/08/2026',
       content: (
         <>
           <ul className="docs-list">
@@ -43,6 +43,9 @@ const ReleasesComponents: React.FC = () => {
                   ícono correcto.
                 </li>
                 <li>Se corrige el indicador del footer en responsive.</li>
+                <li>
+                  Se corrige el <code>padding</code> de disposición de Destacados verticales, en pantallas pequeñas.{' '}
+                </li>
                 <li>
                   Destacado container con degrade:
                   <ul>

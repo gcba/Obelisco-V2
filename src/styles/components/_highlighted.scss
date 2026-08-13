@@ -1,5 +1,15 @@
 @use 'sass:map';
 @use 'sass:list';
+/* -------------------------
+Destacado horizontal:
+2 líneas de título
+4 de contenido
+-----------------------------
+Destacado vertical
+2 líneas de título
+3 de contenido
+-----------------------------
+*/
 
 /* Custom variables and mixins */
 // MIXIN GENERAL
@@ -140,10 +150,19 @@
       @include media-breakpoint-down(sm) {
         padding: 16px;
       }
+
+      .panel-title {
+        @extend .ellipsis-2;
+      }
+
+      .panel-text {
+        @extend .ellipsis-3;
+      }
     }
 
     .panel-text {
       margin-bottom: 20px;
+      @extend .ellipsis-3;
     }
 
     .panel-footer {
@@ -155,6 +174,7 @@
 
     .panel-title {
       @extend .h5;
+      @extend .ellipsis-2;
     }
   }
 
@@ -200,9 +220,9 @@
     }
 
     .panel-body {
-      // color: white;
       h2.panel-title {
         @extend .h5;
+        @extend .ellipsis-2;
       }
     }
 
@@ -256,6 +276,7 @@
   .panel-body {
     h2.panel-title {
       @extend .h5;
+      @extend .ellipsis-2;
     }
 
     .accordion.plain {
@@ -382,6 +403,7 @@ $gradient-text-colors: (
       .panel-body {
         p.panel-title {
           color: $white;
+          @extend .ellipsis-2;
         }
       }
     }
@@ -410,10 +432,12 @@ $gradient-text-colors: (
 
       p.panel-title {
         @extend .h5;
+        @extend .ellipsis-2;
       }
 
       p.panel-text {
         margin-bottom: 0;
+        @extend .ellipsis-4;
       }
 
       .panel-footer {
@@ -510,32 +534,50 @@ $gradient-text-colors: (
         }
 
         @include media-breakpoint-down(xl) {
-          display: flex;
-          flex-direction: column-reverse;
-          gap: 32px;
+          &:has(.panel-img) {
+            height: 630px;
+            max-height: 630px;
 
-          .panel-body {
-            max-width: 100%;
-            width: 100%;
-            padding: 36px;
-          }
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 32px;
 
-          .panel-img {
-            flex: none;
-            width: 100%;
-            max-width: 100%;
-            height: auto;
-            max-height: 350px;
-            object-fit: contain;
-            object-position: center;
-          }
+            .panel-body {
+              flex: 0 0 auto;
+              width: 100%;
+              max-width: 100%;
+              padding: 36px;
+              min-height: 0;
+            }
 
-          .panel-img-edge {
-            width: 100%;
-            max-width: 100%;
-            height: 350px;
-            max-height: 350px;
-            object-fit: cover;
+            // la imagen ocupa todo el espacio restante (cómo en figma)
+            .panel-img {
+              flex: 1 1 auto;
+              min-height: 0;
+              width: 100%;
+              height: 100%;
+              max-height: none;
+              object-fit: contain;
+              object-position: center;
+              display: block;
+            }
+
+            .panel-img-edge {
+              flex: 1 1 auto;
+              min-height: 0;
+              min-width: 0;
+
+              width: 100%;
+              height: 100%;
+              max-width: 100%;
+              max-height: 100%;
+
+              object-fit: contain;
+              object-position: center center;
+
+              display: block;
+              margin: 0 auto;
+            }
           }
         }
 

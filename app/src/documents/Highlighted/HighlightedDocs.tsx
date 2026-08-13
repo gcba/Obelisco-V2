@@ -186,7 +186,7 @@ const HighlightedDocs: React.FC = () => {
                       No puede contener negritas ni enlaces
                     </p>
                     <div className="panel-footer">
-                      <LinkClient className="external ">Enlace externo</LinkClient>
+                      <LinkClient className="external">Enlace externo</LinkClient>
                     </div>
                   </div>
                 </div>
@@ -367,10 +367,10 @@ const HighlightedDocs: React.FC = () => {
                         height={304}
                       ></Image>
                       <div className="panel-body-dark">
-                        <h2 className="panel-title ellipsis-2">
+                        <h2 className="panel-title">
                           Este es el titulo del destacado que puede contener hasta 2 líneas de texto.
                         </h2>
-                        <p className="panel-text ellipsis-3">
+                        <p className="panel-text">
                           Esta es la descripción del destacado que puede contener hasta 3 líneas de texto. Si se excede
                           de este límite, el texto de la descripción se va a truncar, el contenido, para garantizar
                           Lorem ipsum dolor sit amet.
@@ -392,10 +392,10 @@ const HighlightedDocs: React.FC = () => {
                         height={304}
                       ></Image>
                       <div className="panel-body bg-light">
-                        <h2 className="panel-title ellipsis-2">
+                        <h2 className="panel-title">
                           Este es el titulo del destacado que puede contener hasta 2 líneas de texto.
                         </h2>
-                        <p className="panel-text ellipsis-3">
+                        <p className="panel-text">
                           Esta es la descripción del destacado que puede contener hasta 3 líneas de texto. Si se excede
                           de este límite, el texto de la descripción se va a truncar, el contenido, para garantizar
                           Lorem ipsum dolor sit amet.
@@ -417,10 +417,10 @@ const HighlightedDocs: React.FC = () => {
                         height={304}
                       ></Image>
                       <div className="panel-body">
-                        <h2 className="panel-title ellipsis-2">
+                        <h2 className="panel-title">
                           Este es el titulo del destacado que puede contener hasta 2 líneas de texto.
                         </h2>
-                        <p className="panel-text ellipsis-3">
+                        <p className="panel-text">
                           Esta es la descripción del destacado que puede contener hasta 3 líneas de texto. Si se excede
                           de este límite, el texto de la descripción se va a truncar, el contenido, para garantizar
                           Lorem ipsum dolor sit amet.
@@ -457,10 +457,10 @@ const HighlightedDocs: React.FC = () => {
                         height={304}
                       ></Image>
                       <div className="panel-body-dark">
-                        <h2 className="panel-title ellipsis-2">
+                        <h2 className="panel-title">
                           Este es el titulo del destacado que puede contener hasta 2 líneas de texto.
                         </h2>
-                        <p className="panel-text ellipsis-3">
+                        <p className="panel-text">
                           Esta es la descripción del destacado que puede contener hasta 3 líneas de texto. Si se excede
                           de este límite, el texto de la descripción se va a truncar.
                         </p>
@@ -481,10 +481,10 @@ const HighlightedDocs: React.FC = () => {
                         height={304}
                       ></Image>
                       <div className="panel-body-dark">
-                        <h2 className="panel-title ellipsis-2">
+                        <h2 className="panel-title">
                           Este es el titulo del destacado que puede contener hasta 2 líneas de texto.
                         </h2>
-                        <p className="panel-text ellipsis-3">
+                        <p className="panel-text">
                           Esta es la descripción del destacado que puede contener hasta 3 líneas de texto. Si se excede
                           de este límite, el texto de la descripción se va a truncar.
                         </p>
@@ -511,10 +511,10 @@ const HighlightedDocs: React.FC = () => {
                         height={304}
                       ></Image>
                       <div className="panel-body-dark">
-                        <h2 className="panel-title ellipsis-2">
+                        <h2 className="panel-title">
                           Este es el titulo del destacado que puede contener hasta 2 líneas de texto.
                         </h2>
-                        <p className="panel-text ellipsis-3">
+                        <p className="panel-text">
                           Esta es la descripción del destacado que puede contener hasta 3 líneas de texto. Si se excede
                           de este límite, el texto de la descripción se va a truncar.
                         </p>
@@ -539,10 +539,10 @@ const HighlightedDocs: React.FC = () => {
                         height={304}
                       ></Image>
                       <div className="panel-body-dark">
-                        <h2 className="panel-title ellipsis-2">
+                        <h2 className="panel-title">
                           Este es el titulo del destacado que puede contener hasta 2 líneas de texto.
                         </h2>
-                        <p className="panel-text mb-0 ellipsis-3">
+                        <p className="panel-text mb-0">
                           Esta es la descripción del destacado que puede contener hasta 3 líneas de texto. Si se excede
                           de este límite, el texto de la descripción se va a truncar.
                         </p>
@@ -578,7 +578,7 @@ const HighlightedDocs: React.FC = () => {
                         </p>
                       </video>
                       <div className="panel-body-dark">
-                        <h2 className="panel-title ellipsis-2">Título del destacado</h2>
+                        <h2 className="panel-title">Título del destacado</h2>
                         <p className="panel-text">
                           Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
                           contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de
@@ -601,7 +601,7 @@ const HighlightedDocs: React.FC = () => {
                         allowFullScreen
                       ></iframe>
                       <div className="panel-body bg-light">
-                        <h2 className="panel-title ellipsis-2">Título del destacado</h2>
+                        <h2 className="panel-title">Título del destacado</h2>
                         <p className="panel-text">
                           Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
                           contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de
@@ -624,7 +624,7 @@ const HighlightedDocs: React.FC = () => {
                         allowFullScreen
                       ></iframe>
                       <div className="panel-body">
-                        <h2 className="panel-title ellipsis-2">Título del destacado</h2>
+                        <h2 className="panel-title">Título del destacado</h2>
                         <p className="panel-text">
                           Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede
                           contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de

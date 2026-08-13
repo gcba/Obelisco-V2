@@ -493,23 +493,6 @@ const sections = [
     content: (
       <ul className="docs-list">
         <p className="text-md my-4">
-          <strong>Versión 1.18.1 ⬇️</strong>
-        </p>
-
-        <li>
-          <strong>Destacado container:</strong>
-          <ul>
-            <li>
-              Se le agrega un wrapper a la imagen del Destacado. Este wrapper utiliza las clases <code>panel-img</code>{' '}
-              o <code>panel-media panel-media-edge</code>, en conjunto.
-            </li>
-            <li>
-              La imagen, queda sólo con <code>panel-img</code>.
-            </li>
-          </ul>
-        </li>
-
-        <p className="text-md my-4">
           <strong>Versión 1.8.1 ⬇️</strong>
         </p>
         <p className="text-md mt-4">Común a todas las variantes:</p>

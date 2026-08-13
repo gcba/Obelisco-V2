@@ -222,6 +222,7 @@ Destacado vertical
     .panel-body {
       h2.panel-title {
         @extend .h5;
+
         // @extend .ellipsis-2;
       }
     }
@@ -276,6 +277,7 @@ Destacado vertical
   .panel-body {
     h2.panel-title {
       @extend .h5;
+
       // @extend .ellipsis-2;
     }
 
@@ -403,6 +405,7 @@ $gradient-text-colors: (
       .panel-body {
         p.panel-title {
           color: $white;
+
           // @extend .ellipsis-2;
         }
       }
@@ -432,6 +435,7 @@ $gradient-text-colors: (
 
       p.panel-title {
         @extend .h5;
+
         // @extend .ellipsis-2;
       }
 
@@ -519,7 +523,7 @@ $gradient-text-colors: (
             max-height: 630px;
             display: flex;
             flex-direction: column-reverse;
-            gap: 0px;
+            gap: 0;
 
             .panel-body {
               flex: 0 0 auto;

@@ -711,7 +711,14 @@ const HighlightedDocs: React.FC = () => {
             <div className="container">
               <ZoomContainer>
                 <div className="panel-horizontal-content panel-horizontal-container">
-                  <div className="panel-horizontal panel-inverted">
+                  <div className="panel-horizontal">
+                    <Image
+                      src={`${basePath}/images/destacado.jpg`}
+                      alt="descripción de imagen"
+                      className="panel-img"
+                      width={538}
+                      height={304}
+                    ></Image>
                     <div className="panel-body">
                       <h2 className="panel-title">Título del destacado</h2>
                       <p className="panel-text">
@@ -724,19 +731,11 @@ const HighlightedDocs: React.FC = () => {
                         <LinkClient className="btn btn-outline-primary btn-lg">Botón</LinkClient>
                       </div>
                     </div>
-
-                    <Image
-                      src={`${basePath}/images/destacado.jpg`}
-                      alt="descripción de imagen"
-                      className="panel-img"
-                      width={538}
-                      height={304}
-                    ></Image>
                   </div>
                 </div>
                 <br />
                 <div className="panel-horizontal-content panel-horizontal-container bg-light">
-                  <div className="panel-horizontal">
+                  <div className="panel-horizontal ">
                     <Image
                       src={`${basePath}/images/destacado.jpg`}
                       alt="descripción de imagen"
@@ -761,7 +760,7 @@ const HighlightedDocs: React.FC = () => {
                 </div>
                 <br />
                 <div className="panel-horizontal-content panel-horizontal-container bg-dark">
-                  <div className="panel-horizontal">
+                  <div className="panel-horizontal  panel-inverted">
                     <Image
                       src={`${basePath}/images/destacado.jpg`}
                       alt="descripción de imagen"
@@ -834,7 +833,7 @@ const HighlightedDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md">
-            Para invertir un Destacado horizontal se utiliza la clase: <code>{'panel-inverted'}</code>
+            Para invertir un Destacado <strong>horizontal</strong> se utiliza la clase: <code>{'panel-inverted'}</code>
           </p>
           <p className="text-md mb-3">
             <code>{'<div class="panel-horizontal panel-inverted">'}</code>

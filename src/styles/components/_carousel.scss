@@ -502,6 +502,7 @@ $max-width: 1000px;
 
       .carousel-control-prev {
         left: auto;
+
         // right: 100px;
         right: calc((100% - 870px) / 2 + 0.75rem);
       }

@@ -475,7 +475,8 @@ $max-width: 1000px;
 
       .carousel-indicators {
         justify-content: start;
-        margin-left: calc((100% - 992px) / 2 + 0.75rem);
+        // margin-left: calc((100% - 992px) / 2 + 0.75rem);
+        padding-left: calc((100% - 1140px) / 2 + 0.75rem);
       }
 
       .carousel-control-next,

@@ -214,6 +214,7 @@ $footer-social-x: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0
 
   @include media-breakpoint-down(sm) {
     bottom: -4px;
+    min-height: 240px;
 
     .container {
       flex-wrap: wrap;
@@ -235,6 +236,7 @@ $footer-social-x: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0
 
   @media (width <= 405px) {
     padding: 1.5rem 0 3.5rem;
+    min-height: 270px;
 
     .container {
       .footer-info-actions {

@@ -1,4 +1,7 @@
 // Backgrounds colors
+/* 
+theme-colors:, primary, secondary, success, tertiary, info, warning, danger, light, dark
+*/
 @each $key, $value in $theme-colors {
   .bg-#{$key} {
     background-color: $value !important;
@@ -12,7 +15,7 @@
   }
 }
 
-//Backgrounds para fondos
+// Backgrounds para fondos. Colores de fondo
 .bg-neutral {
   background-color: $slate-100 !important;
 }
@@ -20,3 +23,5 @@
 .bg-muted {
   background-color: $slate-200 !important;
 }
+
+// bg-white viene de boostrap

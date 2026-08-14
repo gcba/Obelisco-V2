@@ -1,5 +1,15 @@
 @use 'sass:map';
 @use 'sass:list';
+/* -------------------------
+Destacado horizontal:
+2 líneas de título
+4 de contenido
+-----------------------------
+Destacado vertical
+2 líneas de título
+3 de contenido
+-----------------------------
+*/
 
 /* Custom variables and mixins */
 // MIXIN GENERAL
@@ -140,10 +150,19 @@
       @include media-breakpoint-down(sm) {
         padding: 16px;
       }
+
+      .panel-title {
+        @extend .ellipsis-2;
+      }
+
+      .panel-text {
+        @extend .ellipsis-3;
+      }
     }
 
     .panel-text {
       margin-bottom: 20px;
+      @extend .ellipsis-3;
     }
 
     .panel-footer {
@@ -155,6 +174,7 @@
 
     .panel-title {
       @extend .h5;
+      @extend .ellipsis-2;
     }
   }
 
@@ -200,9 +220,10 @@
     }
 
     .panel-body {
-      // color: white;
       h2.panel-title {
         @extend .h5;
+
+        // @extend .ellipsis-2;
       }
     }
 
@@ -256,6 +277,8 @@
   .panel-body {
     h2.panel-title {
       @extend .h5;
+
+      // @extend .ellipsis-2;
     }
 
     .accordion.plain {
@@ -339,18 +362,13 @@
 /* COMPONENTE DEPRECADO - BLOQUE DE TRAMITE */
 // DESTACADO CONTAINER GRADIENTE
 $gradient-colors: (
-  'cyan': (
-    $sky-900,
-    #8ce1d7,
-  ),
   'blue': (
-    $blue-900,
-    $blue-500,
+    $blue-800,
+    $blue-700,
   ),
 );
 
 $gradient-text-colors: (
-  'cyan': $white,
   'blue': $white,
 );
 
@@ -387,6 +405,8 @@ $gradient-text-colors: (
       .panel-body {
         p.panel-title {
           color: $white;
+
+          // @extend .ellipsis-2;
         }
       }
     }
@@ -410,45 +430,18 @@ $gradient-text-colors: (
       border-radius: $border-radius-5xl;
     }
 
-    // .panel-img-full-height {
-    //   width: auto;
-    //   max-width: unset;
-    //   height: 100%;
-    //   aspect-ratio: unset;
-    //   object-fit: contain;
-    //   align-self: stretch;
-    //   max-height: 300px;
-
-    //   @include media-breakpoint-up(md) {
-    //     max-height: 400px;
-    //   }
-
-    //   @include media-breakpoint-up(xl) {
-    //     max-height: unset;
-    //   }
-    // }
-
-    // .panel-img-object-fit-none {
-    //   object-fit: none;
-    // }
-
-    // .panel-img-object-fit-cover {
-    //   object-fit: cover;
-    // }
-
-    // .panel-img-object-fit-fill {
-    //   object-fit: fill;
-    // }
-
     .panel-body {
       color: $body-color;
 
       p.panel-title {
         @extend .h5;
+
+        // @extend .ellipsis-2;
       }
 
       p.panel-text {
         margin-bottom: 0;
+        @extend .ellipsis-4;
       }
 
       .panel-footer {
@@ -475,65 +468,112 @@ $gradient-text-colors: (
       overflow: hidden;
 
       .panel-horizontal {
-        .panel-body {
-          color: map-get($gradient-text-colors, $name);
+        // Destacado container con multimedia
+        &:has(.panel-img) {
+          height: 432px;
+          max-height: 432px;
 
-          @include media-breakpoint-up(xl) {
-            padding-right: 64px;
-            max-width: 50%;
-          }
-        }
-
-        &.panel-inverted {
           .panel-body {
+            color: map-get($gradient-text-colors, $name);
+            flex: 1 1 50%; // el texto ocupa como máximo el 50%
+            min-width: 0;
+            max-width: 50%;
+
             @include media-breakpoint-up(xl) {
-              padding-left: 64px;
-              padding-right: 0;
-              max-width: 50%;
+              padding-right: 64px;
+            }
+          }
+
+          &.panel-inverted {
+            .panel-body {
+              @include media-breakpoint-up(xl) {
+                padding-left: 64px;
+                padding-right: 0;
+                max-width: 50%;
+              }
+            }
+          }
+
+          .panel-img {
+            flex: 0 1 50%;
+            min-width: 0;
+            max-width: 50%;
+            width: auto;
+            height: auto;
+            max-height: 432px;
+            object-fit: contain;
+            object-position: center;
+            display: block;
+            margin: 0 auto;
+          }
+
+          // panel-img-edge. comportamiento de llegar hasta los bordes del destacado
+          .panel-img-edge {
+            width: 100%;
+            height: 100%;
+            max-width: 50%;
+            object-fit: cover;
+            object-position: center;
+            margin: 0;
+            align-self: stretch;
+          }
+
+          @include media-breakpoint-down(xl) {
+            height: 630px;
+            max-height: 630px;
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 0;
+
+            .panel-body {
+              flex: 0 0 auto;
+              width: 100%;
+              max-width: 100%;
+              padding: 36px;
+              min-height: 0;
+            }
+
+            // la imagen ocupa todo el espacio restante (cómo en figma)
+            .panel-img {
+              flex: 1 1 auto;
+              min-height: 0;
+              width: 100%;
+              max-width: 100%;
+              height: 100%;
+              max-height: none;
+              object-fit: contain;
+              object-position: center;
+              display: block;
+            }
+
+            .panel-img-edge {
+              flex: 1 1 auto;
+              min-height: 0;
+              min-width: 0;
+              width: 100%;
+              height: 100%;
+              max-width: 100%;
+              max-height: 100%;
+              object-fit: contain;
+              object-position: center center;
+              display: block;
+              margin: 0 auto;
             }
           }
         }
 
-        .panel-img {
-          flex: 0 0 538px;
-          width: 538px;
-          max-width: 100%;
-          height: auto;
-          object-fit: contain;
-          object-position: center;
-          display: block;
-          margin: 0 auto;
-        }
-
-        // edge - borde. Con esta clase clase si la imagen es GRANDE, llega a los bordes.
-        .panel-img-edge {
-          width: auto;
-          height: auto;
-          object-fit: none;
-          overflow: initial;
-          align-self: center;
-        }
-
-        @include media-breakpoint-down(xl) {
+        // Destacado container sin multimedia
+        &:not(:has(.panel-img)) {
+          width: 100%;
           display: flex;
-          flex-direction: column-reverse;
-          gap: 32px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
 
           .panel-body {
+            width: 100%;
             max-width: 100%;
-            width: 100%;
-
-            // padding-right: 0;
-            padding: 36px;
-          }
-
-          .panel-img {
-            width: 100%;
-
-            // max-width: 538px;
-            height: auto;
-            object-fit: contain;
-            object-position: center;
+            color: map-get($gradient-text-colors, $name);
           }
         }
 
@@ -541,35 +581,40 @@ $gradient-text-colors: (
           .panel-body {
             max-width: 100%;
             width: 100%;
-
-            // padding-right: 0;
             padding: 16px;
           }
         }
+      }
 
-        &:has(.panel-img) {
-          min-height: 432px;
+      // Espaciados para Destacado container. por especificidad deben ir asi las reglas, con has y not
+      &:not(:has(.panel-img)),
+      &:has(.panel-img) {
+        padding: 0;
+
+        @include media-breakpoint-up(xl) {
+          .panel-horizontal {
+            .panel-body {
+              padding: 64px;
+            }
+          }
         }
 
-        // Destacado container sin multimedia
-        &:not(:has(.panel-img)) {
-          width: 100%;
+        @include media-breakpoint-down(xl) {
+          .panel-horizontal {
+            .panel-body {
+              padding: 36px;
+            }
+          }
+        }
 
-          // min-height: 264px; // min-height no va acá, va en panel-horizontal-container
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-
-          // background-color: red;
-          .panel-body {
-            width: 100%;
-            max-width: 100%;
+        @include media-breakpoint-down(sm) {
+          .panel-horizontal {
+            .panel-body {
+              padding: 16px;
+            }
           }
         }
       }
     }
   }
 }
-
-// Destacado container

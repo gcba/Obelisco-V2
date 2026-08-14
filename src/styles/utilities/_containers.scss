@@ -120,19 +120,16 @@
   @extend .row;
   @extend .row-cols-1;
   @extend .row-cols-xl-2;
+  row-gap: 2rem;
+  align-items: stretch;
+
   @include media-breakpoint-down(md) {
     row-gap: 1rem;
   }
+
   @include media-breakpoint-between(md, xl) {
     row-gap: 1.5rem;
   }
-  row-gap: 2rem;
-  @include media-breakpoint-down(xl) {
-    .col {
-      padding: 0;
-    }
-  }
-  align-items: stretch;
 
   .col {
     display: flex;

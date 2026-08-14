@@ -10,11 +10,14 @@ import {
   BADGE_COLORS,
   BADGE_COLORS_BG_SECONDARY,
   BADGE_COLORS_BORDERS,
+  BADGE_COLORS_HOVER,
+  BADGE_COLORS_HOVER_BG_SECONDARY,
   BLOCKQUOTE_COLORS,
   blueArray,
   BORDER_COLORS,
   BUTTON_COLORS,
   CALENDAR_COLORS,
+  CARDS_COLORS,
   cyanArray,
   FOOTER_COLORS,
   FORM_COLORS,
@@ -151,7 +154,10 @@ const ColorsDocs: React.FC = () => {
             <span className="material-symbols-rounded" aria-hidden="true" style={{ color: '#0086AD' }}>
               info
             </span>
-            <span>Estas variables están disponibles sólo en Figma. No están disponibles en el código.</span>
+            <span>
+              Estas variables están disponibles sólo en Figma.{' '}
+              <span className="docs-color"> No están disponibles en el código</span>.
+            </span>
           </p>
         </div>
       ),
@@ -298,8 +304,14 @@ const ColorsDocs: React.FC = () => {
           <p className="text-md mt-4 fw-semibold">Variables de fondos primarios</p>
           <PalletteTable arrayTableColors={BADGE_COLORS} />
 
+          <p className="text-md mt-4 fw-semibold">Variables de hover primarios</p>
+          <PalletteTable arrayTableColors={BADGE_COLORS_HOVER} />
+
           <p className="text-md fw-semibold">Variables de fondos secundarios</p>
           <PalletteTable arrayTableColors={BADGE_COLORS_BG_SECONDARY} />
+
+          <p className="text-md mt-4 fw-semibold">Variables de hover secundarios</p>
+          <PalletteTable arrayTableColors={BADGE_COLORS_HOVER_BG_SECONDARY} />
 
           <p className="text-md fw-semibold">Variables de bordes</p>
           <PalletteTable arrayTableColors={BADGE_COLORS_BORDERS} />
@@ -328,6 +340,15 @@ const ColorsDocs: React.FC = () => {
       ),
     },
     {
+      subtitle: 'Componente: pie de página (footer)',
+      content: (
+        <div>
+          <p>Estos colores se utilizan únicamente dentro del componente Pie de página (footer).</p>
+          <PalletteTable arrayTableColors={FOOTER_COLORS} />
+        </div>
+      ),
+    },
+    {
       subtitle: 'Componente: spinner',
       content: (
         <div>
@@ -337,11 +358,11 @@ const ColorsDocs: React.FC = () => {
       ),
     },
     {
-      subtitle: 'Componente: pie de página (footer)',
+      subtitle: 'Componente: tarjetas',
       content: (
         <div>
-          <p>Estos colores se utilizan únicamente dentro del componente Pie de página (footer).</p>
-          <PalletteTable arrayTableColors={FOOTER_COLORS} />
+          <p>Estos colores se utilizan únicamente para las misceláneas del componente Tarjetas.</p>
+          <PalletteTable arrayTableColors={CARDS_COLORS} />
         </div>
       ),
     },

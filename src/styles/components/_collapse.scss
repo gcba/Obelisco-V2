@@ -168,6 +168,7 @@ $accordion-button-collapsed-icon: url('data:image/svg+xml,<svg xmlns="http://www
     p:last-child,
     ul:last-child {
       margin-bottom: 0;
+      overflow-wrap: break-word;
     }
 
     .accordion-form {

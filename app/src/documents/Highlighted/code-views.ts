@@ -282,58 +282,59 @@ export const HIGHLIGHTED_BANNER_NO_MEDIA = `//Sin multimedia fondo blanco
 </div>
 `;
 
-export const HIGHLIGHTED_VERTICAL_BACKGROUND = `
-<div class="highlighted-items-2">
-// Fondo oscuro
-  <div class="col">
-    <div class="panel-vertical bg-dark">
-      <img src="/destacado.jpg" alt="descripción de imagen" class="panel-img" />
-      <div class="panel-body-dark">
-        <h2 class="panel-title">Título del destacado</h2>
-        <p class="panel-text">Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces</p>
-        <div class="panel-footer">
-          <a class="btn btn-light btn-lg" href="#" rel="noopener noreferrer">
-            Botón
-          </a>
-          <a class="btn btn-outline-light btn-lg" href="#" rel="noopener noreferrer">
-            Botón
-          </a>
+export const HIGHLIGHTED_VERTICAL_BACKGROUND = `<div class="container">
+  <div class="highlighted-items-2">
+  // Fondo oscuro
+    <div class="col">
+      <div class="panel-vertical bg-dark">
+        <img src="/destacado.jpg" alt="descripción de imagen" class="panel-img" />
+        <div class="panel-body-dark">
+          <h2 class="panel-title">Título del destacado</h2>
+          <p class="panel-text">Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces</p>
+          <div class="panel-footer">
+            <a class="btn btn-light btn-lg" href="#" rel="noopener noreferrer">
+              Botón
+            </a>
+            <a class="btn btn-outline-light btn-lg" href="#" rel="noopener noreferrer">
+              Botón
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-// Fondo claro
-  <div class="col">
-    <div class="panel-vertical bg-light">
-      <img src="/destacado.jpg" alt="descripción de imagen" class="panel-img" />
-      <div class="panel-body bg-light">
-        <h2 class="panel-title">Título del destacado</h2>
-        <p class="panel-text">Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces</p>
-        <div class="panel-footer">
-          <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
-            Botón
-          </a>
-          <a class="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
-            Botón
-          </a>
+  // Fondo claro
+    <div class="col">
+      <div class="panel-vertical bg-light">
+        <img src="/destacado.jpg" alt="descripción de imagen" class="panel-img" />
+        <div class="panel-body bg-light">
+          <h2 class="panel-title">Título del destacado</h2>
+          <p class="panel-text">Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces</p>
+          <div class="panel-footer">
+            <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
+              Botón
+            </a>
+            <a class="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
+              Botón
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-// Fondo blanco
-  <div class="col">
-    <div class="panel-vertical">
-      <img src="/destacado.jpg" alt="descripción de imagen" class="panel-img" />
-      <div class="panel-body">
-        <h2 class="panel-title">Título del destacado</h2>
-        <p class="panel-text">Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces</p>
-        <div class="panel-footer">
-          <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
-            Botón
-          </a>
-          <a class="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
-            Botón
-          </a>
+  // Fondo blanco
+    <div class="col">
+      <div class="panel-vertical">
+        <img src="/destacado.jpg" alt="descripción de imagen" class="panel-img" />
+        <div class="panel-body">
+          <h2 class="panel-title">Título del destacado</h2>
+          <p class="panel-text">Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces. Este es el cuerpo de un destacado. Debe ser breve y conciso, de pocas líneas. No puede contener negritas ni enlaces</p>
+          <div class="panel-footer">
+            <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
+              Botón
+            </a>
+            <a class="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
+              Botón
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -565,7 +566,7 @@ export const HIGHLIGHTED_CONTAINER = `// Fondo blanco
 // Fondo oscuro
 <div class="container">
   <div class="panel-horizontal-content panel-horizontal-container bg-dark">
-    <div class="panel-horizontal">
+    <div class="panel-horizontal panel-inverted">
       <img alt="descripción de imagen" loading="lazy" width="538" height="304" decoding="async" data-nimg="1" class="panel-img" src="/Obelisco-V2/images/destacado.jpg">
 
       <div class="panel-body">
@@ -599,10 +600,10 @@ export const HIGHLIGHTED_DEGRADE = `<div class="container">
         </p>
 
         <div class="panel-footer">
-          <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
+          <a class="btn btn-light btn-lg" href="#" rel="noopener noreferrer">
             Botón
           </a>
-          <a class="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
+          <a class="btn btn-outline-light btn-lg" href="#" rel="noopener noreferrer">
             Botón
           </a>
         </div>
@@ -629,10 +630,10 @@ export const HIGHLIGHTED_DEGRADE_INVERTED = `<div class="container">
         </p>
 
         <div class="panel-footer">
-          <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
+          <a class="btn btn-light btn-lg" href="#" rel="noopener noreferrer">
             Botón
           </a>
-          <a class="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
+          <a class="btn btn-outline-light btn-lg" href="#" rel="noopener noreferrer">
             Botón
           </a>
         </div>
@@ -659,10 +660,10 @@ export const HIGHLIGHTED_DEGRADE_NO_MEDIA = `<div class="container">
         </p>
 
         <div class="panel-footer">
-          <a class="btn btn-primary btn-lg" href="#" rel="noopener noreferrer">
+          <a class="btn btn-light btn-lg" href="#" rel="noopener noreferrer">
             Botón
           </a>
-          <a class="btn btn-outline-primary btn-lg" href="#" rel="noopener noreferrer">
+          <a class="btn btn-outline-light btn-lg" href="#" rel="noopener noreferrer">
             Botón
           </a>
         </div>

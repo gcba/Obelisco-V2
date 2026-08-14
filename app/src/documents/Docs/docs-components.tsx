@@ -492,18 +492,6 @@ const sections = [
     title: 'Destacado',
     content: (
       <ul className="docs-list">
-        <li>
-          Se eliminan las clases <code>.card</code> y <code>.card-simple</code>.
-        </li>
-        <li>
-          Las clases <code>.card-img</code>, <code>.block-body</code>, <code>.card-title</code> y{' '}
-          <code>.card-text</code> se reemplazan por <code>.panel-img</code>, <code>.panel-body</code>,{' '}
-          <code>.panel-title</code> y <code>.panel-text</code>, respectivamente.
-        </li>
-        <li>
-          Para la disposición de Destacado conjunto, las clases <code>.card-deck</code> y <code>.max-cards-2</code>{' '}
-          quedan deprecadas, se reemplazan por <code>.highlighted-items-2</code>.
-        </li>
         <p className="text-md my-4">
           <strong>Versión 1.8.1 ⬇️</strong>
         </p>
@@ -524,6 +512,22 @@ const sections = [
         <li>
           Se crea la clase: <code>panel-sin-multimedia-v</code> y se utiliza en el mismo div donde va:{' '}
           <code>panel-body-dark</code> / <code>panel-body</code>
+        </li>
+
+        <p className="text-md my-4">
+          <strong>Previo a 1.8.1 ⬇️</strong>
+        </p>
+        <li>
+          Se eliminan las clases <code>.card</code> y <code>.card-simple</code>.
+        </li>
+        <li>
+          Las clases <code>.card-img</code>, <code>.block-body</code>, <code>.card-title</code> y{' '}
+          <code>.card-text</code> se reemplazan por <code>.panel-img</code>, <code>.panel-body</code>,{' '}
+          <code>.panel-title</code> y <code>.panel-text</code>, respectivamente.
+        </li>
+        <li>
+          Para la disposición de Destacado conjunto, las clases <code>.card-deck</code> y <code>.max-cards-2</code>{' '}
+          quedan deprecadas, se reemplazan por <code>.highlighted-items-2</code>.
         </li>
       </ul>
     ),

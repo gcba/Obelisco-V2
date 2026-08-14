@@ -432,8 +432,8 @@ $max-width: 1000px;
 
     .title,
     .carousel-link {
-      padding-left: container-alignment($container-max-width-992-1200);
-      padding-right: container-alignment($container-max-width-992-1200);
+      padding-left: calc((100% - 1000px) / 2 + 0.75rem);
+      padding-right: calc((100% - 1010px) / 2 + 0.75rem);
     }
 
     .panel-horizontal-content {

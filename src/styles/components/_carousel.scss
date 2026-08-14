@@ -456,7 +456,6 @@ $max-width: 1000px;
 
     &:has(.panel-horizontal-content) {
       .carousel-inner {
-        // max-width: 890px;
         width: 100%;
         margin: auto;
 
@@ -475,8 +474,7 @@ $max-width: 1000px;
 
       .carousel-indicators {
         justify-content: start;
-        // margin-left: calc((100% - 992px) / 2 + 0.75rem);
-        padding-left: calc((100% - 1140px) / 2 + 0.75rem);
+        padding-left: calc((100% - 1010px) / 2 + 0.75rem);
       }
 
       .carousel-control-next,
@@ -504,11 +502,13 @@ $max-width: 1000px;
 
       .carousel-control-prev {
         left: auto;
-        right: 100px;
+        // right: 100px;
+        right: calc((100% - 870px) / 2 + 0.75rem);
       }
 
       .carousel-control-next {
-        right: 32px;
+        // right: 32px;
+        right: calc((100% - 1000px) / 2 + 0.75rem);
       }
     }
   }

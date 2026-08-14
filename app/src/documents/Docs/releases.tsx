@@ -34,17 +34,16 @@ const ReleasesComponents: React.FC = () => {
               <span>Esta versión contiene cambios de colores que impactan al sistema en su totalidad.</span>
             </p>
             <p>La Versión 1.18.1 contiene lo siguiente: </p>
-            <li>Se crea una nueva paleta de colores. Todos los colores de la rampa cambiaron.</li>
+            <li>Se crea una nueva paleta de colores. Se modificaron los colores de la rampa.</li>
             <li>
               <strong>Correciones (fix):</strong>
               <ul>
                 <li>
-                  Se corrige el color y tamaño de las flechas de Carrusel en estado <code>focus</code>, ahora se ve el
-                  ícono correcto.
+                  Se corrige el color y tamaño de las flechas de Carrusel en estado <code>focus</code>.
                 </li>
                 <li>Se corrige el indicador del footer en responsive.</li>
                 <li>
-                  Se corrige el <code>padding</code> de disposición de Destacados verticales, en pantallas pequeñas.{' '}
+                  Se corrige el <code>padding</code> de disposición de Destacados verticales, en pantallas móviles.{' '}
                 </li>
                 <li>
                   Se agrega <code> overflow-wrap: break-word;</code> en los parrafos de Colapsables{' '}
@@ -59,7 +58,7 @@ const ReleasesComponents: React.FC = () => {
                       Se corrige que al tener una imagen ancha, esta no empuje al contenido. Ahora ambos ocupan 50%, sin
                       importar el tamaño de la imagen.
                     </li>
-                    <li>Al Destacado container sin multimedia, se le corrigen los espaciados en responsive.</li>
+                    <li>Se corrige el destacado container sin multimedia los espaciados en responsive.</li>
                   </ul>
                 </li>
               </ul>

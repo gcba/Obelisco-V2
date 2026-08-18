@@ -146,6 +146,7 @@ $radio-image-dropdown: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/200
     &.show,
     &.show:focus {
       box-shadow: none;
+
       // outline: $outline-transparent;
       // color: $white;
       outline: $hover-outline;

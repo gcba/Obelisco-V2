@@ -43,6 +43,7 @@ $footer-social-x: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0
 
   @include media-breakpoint-down(sm) {
     padding: $footer-padding-y-sm 0;
+
     // top: -25px;
   }
 
@@ -189,6 +190,7 @@ $footer-social-x: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+
     // justify-content: center;
     gap: $footer-info-gap;
 

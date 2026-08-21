@@ -15338,14 +15338,15 @@ textarea.form-control {
 }
 .dropdown .btn-dropdown.show, .dropdown .btn-dropdown.show:focus {
   box-shadow: none;
-  outline: 0.25rem solid transparent;
-  color: #ffffff;
-  background: #035c80;
+  outline: 0.125rem solid #035c80;
+  color: #035c80;
+  background: #ffffff;
   border-radius: 9999px;
 }
 .dropdown .btn-dropdown.show .btn-dropdown-icon, .dropdown .btn-dropdown.show:focus .btn-dropdown-icon {
   transform: rotate(-180deg);
   transition: transform 0.2s ease-in-out;
+  color: #035c80;
 }
 .dropdown .btn-dropdown:not(.show).selected {
   color: #035c80;
@@ -17968,7 +17969,6 @@ span.form-label {
 @media (max-width: 575.98px) {
   .main-footer {
     padding: 2rem 0;
-    top: -25px;
   }
 }
 .main-footer h4, .main-footer .h4, .main-footer .stepper-content .stepper .step-title, .stepper-content .stepper .main-footer .step-title, .main-footer .list-steps.list-steps-lg .list-steps-item h3, .list-steps.list-steps-lg .list-steps-item .main-footer h3, .main-footer .list-steps.list-steps-lg .list-steps-item .h3, .list-steps.list-steps-lg .list-steps-item .main-footer .h3,
@@ -18102,7 +18102,6 @@ span.form-label {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: center;
   gap: 2rem;
 }
 .footer-info > .container .footer-info-text, .stepper-content .footer-info > .stepper .footer-info-text, .panel-horizontal-content .footer-info > .panel-horizontal .footer-info-text, .panel-horizontal-container .footer-info > .panel-horizontal .footer-info-text {
@@ -18140,12 +18139,10 @@ span.form-label {
     gap: 0.5rem;
     align-items: flex-start;
     justify-content: center;
+    padding-bottom: clamp(70px, 5vw, 50px);
   }
 }
 @media (width <= 405px) {
-  .footer-info {
-    padding: 1.5rem 0 3.5rem;
-  }
   .footer-info .container .footer-info-actions, .footer-info .stepper-content .stepper .footer-info-actions, .stepper-content .footer-info .stepper .footer-info-actions, .footer-info .panel-horizontal-content .panel-horizontal .footer-info-actions, .footer-info .panel-horizontal-container .panel-horizontal .footer-info-actions, .panel-horizontal-content .footer-info .panel-horizontal .footer-info-actions, .panel-horizontal-container .footer-info .panel-horizontal .footer-info-actions {
     align-items: center;
     flex-direction: column;
@@ -18809,6 +18806,7 @@ span.form-label {
 }
 .header-banner .header-banner-img {
   margin-right: 0.75rem;
+  width: 114px;
 }
 .header-banner p {
   margin: 0;
@@ -20504,6 +20502,7 @@ Destacado vertical
   flex: 1 1 50%;
   min-width: 0;
   max-width: 50%;
+  padding-right: 64px;
 }
 @media (min-width: 1200px) {
   .panel-horizontal-container.bg-gradient-blue .panel-horizontal:has(.panel-img) .panel-body {
@@ -20852,6 +20851,9 @@ Destacado vertical
   box-shadow: none;
   outline-color: transparent;
   background: transparent;
+}
+.card.unbordered .card-body .card-title:focus-within, .card.card-img-borderless .card-body .card-title:focus-within {
+  overflow: visible;
 }
 .card.card-eventos {
   min-height: 576px;

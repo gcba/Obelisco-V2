@@ -43,7 +43,8 @@ $footer-social-x: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0
 
   @include media-breakpoint-down(sm) {
     padding: $footer-padding-y-sm 0;
-    top: -25px;
+
+    // top: -25px;
   }
 
   h4,
@@ -189,7 +190,8 @@ $footer-social-x: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: center;
+
+    // justify-content: center;
     gap: $footer-info-gap;
 
     .footer-info-text {
@@ -229,13 +231,12 @@ $footer-social-x: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0
         gap: 0.5rem;
         align-items: flex-start;
         justify-content: center;
+        padding-bottom: clamp(70px, 5vw, 50px);
       }
     }
   }
 
   @media (width <= 405px) {
-    padding: 1.5rem 0 3.5rem;
-
     .container {
       .footer-info-actions {
         align-items: center;
@@ -243,4 +244,9 @@ $footer-social-x: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0
       }
     }
   }
+
+  // @media (width <= 343px) {
+  //   padding: 1.5rem 0 3.5rem;
+  //   min-height: 330px;
+  // }
 }

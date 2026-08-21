@@ -111,11 +111,6 @@ const FooterDocs: React.FC = () => {
                         alt="Logo de Ciudad de Buenos Aires"
                         height="40"
                       />
-                      <img
-                        className="img-vamos-ba"
-                        src={`${basePath}/images/logo-footer-ba.svg`}
-                        alt="Logo de Vamos Buenos Aires"
-                      />
                     </div>
                     <div className="col-12">
                       <ul className="list-inline">
@@ -175,11 +170,6 @@ const FooterDocs: React.FC = () => {
                         src={`${basePath}/images/logo-footer.svg`}
                         alt="Logo de Ciudad de Buenos Aires"
                         height="40"
-                      />
-                      <img
-                        className="img-vamos-ba"
-                        src={`${basePath}/images/logo-footer-ba.svg`}
-                        alt="Logo de Vamos Buenos Aires"
                       />
                     </div>
                     <div className="col-12">
@@ -322,11 +312,6 @@ const FooterDocs: React.FC = () => {
                         src={`${basePath}/images/logo-footer.svg`}
                         alt="Logo de Ciudad de Buenos Aires"
                         height="40"
-                      />
-                      <img
-                        className="img-vamos-ba"
-                        src={`${basePath}/images/logo-footer-ba.svg`}
-                        alt="Logo de Vamos Buenos Aires"
                       />
                     </div>
                     <div className="col-12">

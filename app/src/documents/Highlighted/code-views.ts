@@ -587,7 +587,7 @@ export const HIGHLIGHTED_CONTAINER = `// Fondo blanco
 `;
 
 export const HIGHLIGHTED_DEGRADE = `<div class="container">
-  <div class="panel-horizontal-content panel-horizontal-container bg-gradient-blue p-0">
+  <div class="panel-horizontal-content panel-horizontal-container bg-gradient-blue ">
      <div class="panel-horizontal">
 
       <div class="panel-body">
@@ -617,7 +617,7 @@ export const HIGHLIGHTED_DEGRADE = `<div class="container">
 `;
 
 export const HIGHLIGHTED_DEGRADE_INVERTED = `<div class="container">
-  <div class="panel-horizontal-content panel-horizontal-container bg-gradient-blue p-0">
+  <div class="panel-horizontal-content panel-horizontal-container bg-gradient-blue ">
      <div class="panel-horizontal panel-inverted">
 
       <div class="panel-body">

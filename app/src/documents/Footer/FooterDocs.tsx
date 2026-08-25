@@ -217,8 +217,8 @@ const FooterDocs: React.FC = () => {
               <div className="container">
                 <h3 className="footer-info-text">¿Te fue útil esta página?</h3>
                 <div className="footer-info-actions">
-                  <button className="btn btn-outline-primary">Sí, me fue útil</button>
-                  <button className="btn btn-outline-primary">No me sirvió</button>
+                  <button className="btn btn-outline-light">Sí, me fue útil</button>
+                  <button className="btn btn-outline-light">No me sirvió</button>
                 </div>
               </div>
             </div>

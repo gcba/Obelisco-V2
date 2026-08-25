@@ -19,6 +19,18 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
+      title: 'Versión 1.18.3',
+      date: '25/08/2026',
+      content: (
+        <>
+          <ul className="docs-list">
+            <p>La Versión 1.18.3 contiene lo siguiente: </p>
+            <li>Se actualiza el color del indicador del footer y se centra el contenido.</li>
+          </ul>
+        </>
+      ),
+    },
+    {
       title: 'Versión 1.18.2',
       date: '21/08/2026',
       content: (

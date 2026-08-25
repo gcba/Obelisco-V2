@@ -18089,7 +18089,8 @@ span.form-label {
 }
 
 .footer-info {
-  background-color: #a4d9ff;
+  background-color: #035c80;
+  color: #ffffff;
   padding: 1.5rem 0;
   word-break: break-word;
   border-radius: 64px 64px 0 0;
@@ -18102,6 +18103,7 @@ span.form-label {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
 }
 .footer-info > .container .footer-info-text, .stepper-content .footer-info > .stepper .footer-info-text, .panel-horizontal-content .footer-info > .panel-horizontal .footer-info-text, .panel-horizontal-container .footer-info > .panel-horizontal .footer-info-text {
@@ -18111,7 +18113,6 @@ span.form-label {
   margin: 0;
 }
 .footer-info > .container .footer-info-actions, .stepper-content .footer-info > .stepper .footer-info-actions, .panel-horizontal-content .footer-info > .panel-horizontal .footer-info-actions, .panel-horizontal-container .footer-info > .panel-horizontal .footer-info-actions {
-  flex-basis: 50%;
   display: flex;
   flex-shrink: 0;
   align-items: center;

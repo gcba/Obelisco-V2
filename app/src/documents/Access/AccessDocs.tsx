@@ -798,7 +798,7 @@ const SPECS = [
       <>
         <p className="text-md mb-4">Indica que la persona usuaria seleccionó el acceso</p>
         <Image
-          src={`${basePath}/images/access/accesos_focus.svg`}
+          src={`${basePath}/images/access/accesos_active.svg`}
           alt="Estado en foco del boton"
           width="800"
           height="464"

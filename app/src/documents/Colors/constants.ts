@@ -562,13 +562,13 @@ export const CALENDAR_COLORS: ColorTableArray[] = [
   {
     base: '$blue/950',
     hex: '#000B15',
-    variable: '$day-item/$bg-secondaryhover',
+    variable: '$day-item/$bg-secondary-hover',
     use: 'Es el color de hover del fondo secundario de un día seleccionado.',
   },
 ];
 export const BLOCKQUOTE_COLORS: ColorTableArray[] = [
   {
-    base: '$blue/900',
+    base: '$body-primary',
     hex: '#08202F',
     variable: '$mark',
     use: 'Es el color de la línea de cita dentro del componente.',
@@ -770,39 +770,39 @@ export const BADGE_COLORS_BORDERS: ColorTableArray[] = [
 ];
 export const LINK_COLORS: ColorTableArray[] = [
   {
-    base: '$grayscale/0',
+    base: '$text-white',
     hex: '#FFFFFF',
     variable: '$text-ondark',
     use: 'Es el color de texto del enlace sobre fondos oscuros.',
     customBorder: true,
   },
   {
-    base: '$grayscale/0',
+    base: '$text-white',
     hex: '#FFFFFF',
     variable: '$border-ondark',
     use: 'Es el color del subrayado del enlace sobre fondos oscuros.',
     customBorder: true,
   },
   {
-    base: '$purple/700',
+    base: '$visited',
     hex: '#8A00C3',
     variable: '$text-visited',
     use: 'Es el color para los enlaces visitados sobre fondos claros. ',
   },
   {
-    base: '$purple/700',
+    base: '$visited',
     hex: '#8A00C3',
     variable: '$border-visited',
     use: 'Es el color del subrayado del estado visitado del enlace sobre fondos claros.',
   },
   {
-    base: '$purple/200',
+    base: '$visited-ondark',
     hex: '#EFC4FF',
     variable: '$text-visited-ondark',
     use: 'Es el color para los enlaces visitados sobre fondos oscuros. ',
   },
   {
-    base: '$purple/200',
+    base: '$visited-ondark',
     hex: '#EFC4FF',
     variable: '$border-visited-ondark',
     use: 'Es el color del subrayado del estado visitado del enlace sobre fondos oscuros.',
@@ -817,7 +817,7 @@ export const FORM_COLORS: ColorTableArray[] = [
     customBorder: true,
   },
   {
-    base: '$red/600',
+    base: '$danger',
     hex: '#CB3232',
     variable: '$border-error',
     use: 'Es el color del borde del estado de peligro de todos los campos.',
@@ -844,7 +844,7 @@ export const FORM_COLORS: ColorTableArray[] = [
 ];
 export const SPINNER_COLORS: ColorTableArray[] = [
   {
-    base: '$slate/200',
+    base: '$bg-muted',
     hex: '#C7D4E6',
     variable: '$bg',
     use: 'Es el color del fondo del spinner sobre fondos claros. ',
@@ -856,43 +856,43 @@ export const SPINNER_COLORS: ColorTableArray[] = [
     use: 'Es el color del fondo del spinner sobre fondos oscuros. ',
   },
   {
-    base: '$blue/800',
+    base: '$text-primary',
     hex: '#1D3343',
     variable: '$indicator-primary',
     use: 'Es el color del indicador del spinner primario.',
   },
   {
-    base: '$blue/700',
+    base: '$text-secondary',
     hex: '#035C80',
     variable: '$indicator-secondary',
     use: 'Es el color del indicador del spinner secundario.',
   },
   {
-    base: '$cyan/950',
+    base: '$text-tertiary',
     hex: '#00241F',
     variable: '$indicator-tertiary',
     use: 'Es el color del indicador del spinner terciario.',
   },
   {
-    base: '$green/700',
+    base: '$text-success',
     hex: '#00642F',
     variable: '$indicator-success',
     use: 'Es el color del indicador del spinner de éxito.',
   },
   {
-    base: '$red/600',
+    base: '$text-danger',
     hex: '#CB3232',
     variable: '$indicator-danger',
     use: 'Es el color del indicador del spinner de peligro.',
   },
   {
-    base: '$slate/50',
+    base: '$text-light',
     hex: '#EDF4FF',
     variable: '$indicator-light',
     use: 'Es el color del indicador del spinner claro.',
   },
   {
-    base: '$sky/900',
+    base: '$text-dark',
     hex: '#002230',
     variable: '$indicator-dark',
     use: 'Es el color del indicador del spinner oscuro.',
@@ -900,7 +900,7 @@ export const SPINNER_COLORS: ColorTableArray[] = [
 ];
 export const FOOTER_COLORS: ColorTableArray[] = [
   {
-    base: '$body-secondary',
+    base: '$blue/700',
     hex: '#38485C',
     variable: '$section-divider',
     use: 'Es el color de la línea divisoria de secciones dentro del footer. ',

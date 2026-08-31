@@ -111,11 +111,6 @@ const FooterDocs: React.FC = () => {
                         alt="Logo de Ciudad de Buenos Aires"
                         height="40"
                       />
-                      <img
-                        className="img-vamos-ba"
-                        src={`${basePath}/images/logo-footer-ba.svg`}
-                        alt="Logo de Vamos Buenos Aires"
-                      />
                     </div>
                     <div className="col-12">
                       <ul className="list-inline">
@@ -176,11 +171,6 @@ const FooterDocs: React.FC = () => {
                         alt="Logo de Ciudad de Buenos Aires"
                         height="40"
                       />
-                      <img
-                        className="img-vamos-ba"
-                        src={`${basePath}/images/logo-footer-ba.svg`}
-                        alt="Logo de Vamos Buenos Aires"
-                      />
                     </div>
                     <div className="col-12">
                       <ul className="list-inline">
@@ -227,8 +217,8 @@ const FooterDocs: React.FC = () => {
               <div className="container">
                 <h3 className="footer-info-text">¿Te fue útil esta página?</h3>
                 <div className="footer-info-actions">
-                  <button className="btn btn-outline-primary">Sí, me fue útil</button>
-                  <button className="btn btn-outline-primary">No me sirvió</button>
+                  <button className="btn btn-outline-light">Sí, me fue útil</button>
+                  <button className="btn btn-outline-light">No me sirvió</button>
                 </div>
               </div>
             </div>
@@ -322,11 +312,6 @@ const FooterDocs: React.FC = () => {
                         src={`${basePath}/images/logo-footer.svg`}
                         alt="Logo de Ciudad de Buenos Aires"
                         height="40"
-                      />
-                      <img
-                        className="img-vamos-ba"
-                        src={`${basePath}/images/logo-footer-ba.svg`}
-                        alt="Logo de Vamos Buenos Aires"
                       />
                     </div>
                     <div className="col-12">

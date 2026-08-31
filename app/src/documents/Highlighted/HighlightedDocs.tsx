@@ -796,7 +796,7 @@ const HighlightedDocs: React.FC = () => {
           <CodeBox codeHTML={HIGHLIGHTED_DEGRADE}>
             <div className="container">
               <ZoomContainer>
-                <div className="panel-horizontal-content panel-horizontal-container bg-gradient-blue p-0">
+                <div className="panel-horizontal-content panel-horizontal-container bg-gradient-blue ">
                   <div className="panel-horizontal">
                     <div className="panel-body">
                       <h2 className="panel-title">Título del destacado</h2>
@@ -841,7 +841,7 @@ const HighlightedDocs: React.FC = () => {
           <CodeBox codeHTML={HIGHLIGHTED_DEGRADE_INVERTED}>
             <div className="container">
               <ZoomContainer>
-                <div className="panel-horizontal-content panel-horizontal-container bg-gradient-blue p-0">
+                <div className="panel-horizontal-content panel-horizontal-container bg-gradient-blue ">
                   <div className="panel-horizontal panel-inverted">
                     <div className="panel-body">
                       <h2 className="panel-title">Título del destacado</h2>

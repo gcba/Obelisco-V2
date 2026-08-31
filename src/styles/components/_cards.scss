@@ -148,6 +148,15 @@ $padding-card-icon-sin-borde: 24px;
     box-shadow: none;
     outline-color: transparent;
     background: transparent;
+
+    .card-body {
+      .card-title {
+        &:focus-within {
+          // focus within significa que algún elemento adentro de este, está en estado focus. y cuando eso pase, aplica el estilo
+          overflow: visible;
+        }
+      }
+    }
   }
 
   // Clase para Tarjeta de eventos. Vertical.

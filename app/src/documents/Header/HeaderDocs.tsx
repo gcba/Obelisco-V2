@@ -563,7 +563,7 @@ const HeaderDocs: React.FC = () => {
                     Saltar al contenido principal
                   </LinkClient>
                   <div className="container header-container">
-                    <LinkClient href="https://www.estadisticaciudad.gob.ar/eyc/" className="navbar-brand">
+                    <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
                       <Image
                         className="d-none d-xl-block"
                         src={`${basePath}${logo}`}
@@ -679,7 +679,7 @@ const HeaderDocs: React.FC = () => {
                     Saltar al contenido principal
                   </LinkClient>
                   <div className="container header-container">
-                    <LinkClient href="https://www.estadisticaciudad.gob.ar/eyc/" className="navbar-brand">
+                    <LinkClient href="https://buenosaires.gob.ar" className="navbar-brand">
                       <Image
                         className="d-none d-xl-block"
                         src={`${basePath}${logo}`}

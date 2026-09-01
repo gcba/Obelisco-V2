@@ -204,13 +204,13 @@ export const TEXT_COLORS: ColorTableArray[] = [
     use: 'Se utiliza para textos secundarios o de apoyo.',
   },
   {
-    base: '$blue/800',
+    base: '$primary',
     hex: '#1d3343',
     variable: '$text-primary',
     use: 'Se utiliza en el texto del botón primario en la variante outlined.',
   },
   {
-    base: '$blue/700',
+    base: '$secondary',
     hex: '#035c80',
     variable: '$text-secondary',
     use: 'Se utiliza en el texto del botón secundario en la variante outlined.',
@@ -221,21 +221,21 @@ export const TEXT_COLORS: ColorTableArray[] = [
     variable: '$text-tertiary',
     use: 'Se utiliza en el texto del botón terciario en la variante outlined.',
   },
-  { base: '$sky/600', hex: '#00769a', variable: '$text-info', use: 'Lo utilizan los íconos de información.' },
-  { base: '$orange/500', hex: '#FF9500', variable: '$text-warning', use: 'Lo utilizan los íconos de advertencia.' },
+  { base: '$info', hex: '#00769a', variable: '$text-info', use: 'Lo utilizan los íconos de información.' },
+  { base: '$warning', hex: '#FF9500', variable: '$text-warning', use: 'Lo utilizan los íconos de advertencia.' },
   {
-    base: '$green/700',
+    base: '$success',
     hex: '#00642f',
     variable: '$text-success',
     use: 'Lo utilizan los íconos de éxito y el texto del botón de éxito en la variante outlined. ',
   },
   {
-    base: '$red/600',
+    base: '$danger',
     hex: '#cb3232',
     variable: '$text-danger',
     use: 'Lo utilizan los íconos de peligro y el texto del botón de peligro en la variante outlined. ',
   },
-  { base: '$blue/700', hex: '#035c80', variable: '$text-link', use: 'Es el color predeterminado de los enlaces.' },
+  { base: '$secondary', hex: '#035c80', variable: '$text-link', use: 'Es el color predeterminado de los enlaces.' },
   {
     base: '$slate/700',
     hex: '#4a5766',
@@ -244,20 +244,20 @@ export const TEXT_COLORS: ColorTableArray[] = [
   },
   { base: '$slate/400', hex: '#92a0b1', variable: '$text-disabled', use: 'Es el color de los textos deshabilitados.' },
   {
-    base: '$slate/50',
+    base: '$light',
     hex: '#edf4ff',
     variable: '$text-light',
     use: 'Se utiliza en el texto del botón claro en la variante outlined.',
   },
-  { base: '$sky/900', hex: '#002230', variable: '$text-dark', use: 'Genera contraste con fondos claros.' },
+  { base: '$dark', hex: '#002230', variable: '$text-dark', use: 'Genera contraste con fondos claros.' },
   {
-    base: '$gray/0',
+    base: '$grayscale/0',
     hex: '#FFFFFF',
     variable: '$text-white',
     use: 'Genera contraste con fondos oscuros.',
     customBorder: true,
   },
-  { base: '$gray/950', hex: '#090909', variable: '$text-black', use: 'Genera contraste con fondos claros.' },
+  { base: '$grayscale/950', hex: '#090909', variable: '$text-black', use: 'Genera contraste con fondos claros.' },
 ];
 export const STATES_COLORS: ColorTableArray[] = [
   { base: '$blue/700', hex: '#035c80', variable: '$hover', use: 'Color predeterminado para componentes en hover.' },
@@ -311,6 +311,12 @@ export const STATES_COLORS: ColorTableArray[] = [
     use: 'Se utiliza para el indicador del estado en foco de enlaces sobre fondos oscuros.',
     customBorder: true,
   },
+  {
+    base: '$blue/800',
+    hex: '#08202F',
+    variable: '$focused-tertiary',
+    use: 'Se utiliza para el indicador del estado en foco de elementos con jerarquía terciaria.',
+  },
 ];
 export const BORDER_COLORS: ColorTableArray[] = [
   {
@@ -319,7 +325,7 @@ export const BORDER_COLORS: ColorTableArray[] = [
     variable: '$border-neutral',
     use: 'Es el color predeterminado de todos los bordes de componentes y divisores.',
   },
-  { base: '$blue-700', hex: '#035C80', variable: '$border-link', use: 'Es el color del subrayado para los enlaces.' },
+  { base: '$secondary', hex: '#035C80', variable: '$border-link', use: 'Es el color del subrayado para los enlaces.' },
 ];
 export const BACKGROUND_COLORS: ColorTableArray[] = [
   {
@@ -365,25 +371,25 @@ export const ALERT_COLORS: ColorTableArray[] = [
   { base: '$green/50', hex: '#d0ffda', variable: '$bg-success', use: 'Es el color de fondo de las alertas de éxito.' },
   { base: '$red/50', hex: '#FBEFEF', variable: '$bg-danger', use: 'Es el color de fondo de las alertas de peligro.' },
   {
-    base: '$sky/600',
+    base: '$info',
     hex: '#0086ad',
     variable: '$border-info',
     use: 'Es el color del borde de las alertas de información.',
   },
   {
-    base: '$orange/400',
+    base: '$warning',
     hex: '#e88700',
     variable: '$border-warning',
     use: 'Es el color del borde de las alertas de advertencia.',
   },
   {
-    base: '$green/700',
+    base: '$success',
     hex: '#00642f',
     variable: '$border-success',
     use: 'Es el color del borde de las alertas de éxito.',
   },
   {
-    base: '$red-600',
+    base: '$danger',
     hex: '#cb3232',
     variable: '$border-danger',
     use: 'Es el color del borde de las alertas de peligro.',
@@ -392,7 +398,7 @@ export const ALERT_COLORS: ColorTableArray[] = [
 export const SCROLL_COLORS: ColorTableArray[] = [
   {
     base: '$text-disabled',
-    hex: '#9EAAB8',
+    hex: '#92A0B1',
     variable: '$indicator',
     use: 'Es el color del indicador de la barra de desplazamiento.',
   },
@@ -400,20 +406,20 @@ export const SCROLL_COLORS: ColorTableArray[] = [
 export const PROGRESS_COLORS: ColorTableArray[] = [
   {
     base: '$primary',
-    hex: '#336ACC',
+    hex: '#1D3343',
     variable: '$blue',
     use: 'Es el color del indicador de progreso de la variante azul del componente. ',
   },
   {
     base: '$success',
-    hex: '#26874A',
+    hex: '#00642F',
     variable: '$green',
     use: 'Es el color del indicador de progreso de la variante verde del componente.',
   },
 ];
 export const BUTTON_COLORS: ColorTableArray[] = [
   {
-    base: '$blue/800',
+    base: '$primary',
     hex: '#1D3343',
     variable: '$primary/bg-default',
     use: 'Es el color de fondo del botón primario.',
@@ -425,13 +431,13 @@ export const BUTTON_COLORS: ColorTableArray[] = [
     use: 'Es el color de fondo del botón primario en el estado hover.',
   },
   {
-    base: '$blue/800',
+    base: '$primary',
     hex: '#1D3343',
     variable: '$primary/border-outlined',
     use: 'Es el color del borde del botón primario en su variante outlined.',
   },
   {
-    base: '$blue/700',
+    base: '$secondary',
     hex: '#035C80',
     variable: '$secondary/bg-default',
     use: 'Es el color de fondo del botón secundario.',
@@ -443,13 +449,13 @@ export const BUTTON_COLORS: ColorTableArray[] = [
     use: 'Es el color de fondo del botón secundario en el estado hover.',
   },
   {
-    base: '$blue/700',
+    base: '$secondary',
     hex: '#035C80',
     variable: '$secondary/border-outlined',
     use: 'Es el color del borde del botón secundario en su variante outlined.',
   },
   {
-    base: '$cyan/500',
+    base: '$tertiary',
     hex: '#009688',
     variable: '$tertiary/bg-default',
     use: 'Es el color de fondo del botón terciario.',
@@ -467,25 +473,25 @@ export const BUTTON_COLORS: ColorTableArray[] = [
     use: 'Es el color del borde del botón terciario en su variante outlined.',
   },
   {
-    base: '$slate/50',
+    base: '$bg-light',
     hex: '#EDF4FF',
     variable: '$light/bg-default',
     use: 'Es el color de fondo del botón claro.',
   },
   {
-    base: '$slate/200',
+    base: '$bg-muted',
     hex: '#C7D4E6',
     variable: '$light/bg-hover',
     use: 'Es el color de fondo del botón claro en el estado hover.',
   },
   {
-    base: '$slate/50',
+    base: '$light',
     hex: '#EDF4FF',
     variable: '$light/border-outlined',
     use: 'Es el color del borde del botón claro en su variante outlined.',
   },
   {
-    base: '$green/700',
+    base: '$success',
     hex: '#00642F',
     variable: '$success/bg-default',
     use: 'Es el color de fondo del botón de éxito.',
@@ -497,13 +503,13 @@ export const BUTTON_COLORS: ColorTableArray[] = [
     use: 'Es el color de fondo del botón de éxito en el estado hover.',
   },
   {
-    base: '$green/700',
+    base: '$success',
     hex: '#00642F',
     variable: '$success/border-outlined',
     use: 'Es el color del borde del botón de éxito en su variante outlined.',
   },
   {
-    base: '$red/600',
+    base: '$danger',
     hex: '#CB3232',
     variable: '$danger/bg-default',
     use: 'Es el color de fondo del botón de peligro.',
@@ -515,7 +521,7 @@ export const BUTTON_COLORS: ColorTableArray[] = [
     use: 'Es el color de fondo del botón de peligro en el estado hover.',
   },
   {
-    base: '$red/600',
+    base: '$danger',
     hex: '#CB3232',
     variable: '$danger/border-outlined',
     use: 'Es el color del borde del botón de peligro en su variante outlined.',
@@ -523,7 +529,7 @@ export const BUTTON_COLORS: ColorTableArray[] = [
 ];
 export const CALENDAR_COLORS: ColorTableArray[] = [
   {
-    base: '$grayscale/0',
+    base: '$bg-white',
     hex: '#FFFFFF',
     variable: '$bg-default',
     use: 'Es el color de fondo del calendario y las filas del calendario por defecto.',
@@ -536,7 +542,7 @@ export const CALENDAR_COLORS: ColorTableArray[] = [
     use: 'Es el color de fondo secundario de las filas del calendario.',
   },
   {
-    base: '$blue/800',
+    base: '$primary',
     hex: '#1D3343',
     variable: '$day-item/$bg-primary',
     use: 'Es el color del borde del botón primario en su variante outlined.',
@@ -548,7 +554,7 @@ export const CALENDAR_COLORS: ColorTableArray[] = [
     use: 'Es el color de hover del fondo primario de un día seleccionado.',
   },
   {
-    base: '$blue/700',
+    base: '$secondary',
     hex: '#035C80',
     variable: '$day-item/$bg-secondary',
     use: 'Es el color de fondo secundario de las filas del calendario.',
@@ -556,13 +562,13 @@ export const CALENDAR_COLORS: ColorTableArray[] = [
   {
     base: '$blue/950',
     hex: '#000B15',
-    variable: '$day-item/$bg-secondaryhover',
+    variable: '$day-item/$bg-secondary-hover',
     use: 'Es el color de hover del fondo secundario de un día seleccionado.',
   },
 ];
 export const BLOCKQUOTE_COLORS: ColorTableArray[] = [
   {
-    base: '$blue/900',
+    base: '$body-primary',
     hex: '#08202F',
     variable: '$mark',
     use: 'Es el color de la línea de cita dentro del componente.',
@@ -570,38 +576,38 @@ export const BLOCKQUOTE_COLORS: ColorTableArray[] = [
 ];
 export const BADGE_COLORS: ColorTableArray[] = [
   {
-    base: '$slate/600',
+    base: 'primario/bg-primary',
     hex: '#626E7E',
     variable: '$bg-primary',
     use: 'Es el color de fondo primaria de la etiqueta predeterminada.',
   },
   {
-    base: '$sky/700',
+    base: 'primario/bg-info',
     hex: '#005D7B',
     variable: '$bg-info',
     use: 'Es el color de fondo primaria de la etiqueta de información.  ',
   },
   {
-    base: '$orange/700',
-    hex: '#995900',
-    variable: '$bg-warning',
-    use: 'Es el color de fondo primaria de la etiqueta de advertencia.',
-  },
-  {
-    base: '$green/700',
-    hex: '#237240',
+    base: 'primario/bg-success',
+    hex: '#00642F',
     variable: '$bg-success',
     use: 'Es el color de fondo primaria de la etiqueta de éxito.',
   },
   {
-    base: '$red/700',
-    hex: '#7A1F1F',
+    base: 'primario/bg-warning',
+    hex: '#E88700',
+    variable: '$bg-warning',
+    use: 'Es el color de fondo primaria de la etiqueta de advertencia.',
+  },
+  {
+    base: 'primario/bg-danger',
+    hex: '#AD0B1E',
     variable: '$bg-danger',
     use: 'Es el color de fondo primaria de la etiqueta de peligro.',
   },
   {
-    base: '$purple/700',
-    hex: '#6D0099',
+    base: 'primario/bg-highlight',
+    hex: '#AD00F3',
     variable: '$bg-highlight',
     use: 'Es el color primario de fondo de la etiqueta destacada.',
   },
@@ -609,154 +615,154 @@ export const BADGE_COLORS: ColorTableArray[] = [
 
 export const BADGE_COLORS_HOVER: ColorTableArray[] = [
   {
-    base: '$slate/900',
+    base: 'primario/bg-primary-hover',
     hex: '#121F2C',
-    variable: '$bg-primary',
+    variable: '$primario/bg-primary-hover',
     use: 'Es el color de fondo primaria de la etiqueta predeterminada.',
   },
   {
-    base: '$sky/800',
+    base: 'primario/bg-info-hover',
     hex: '#003548',
-    variable: '$bg-info',
+    variable: '$primario/bg-info-hover',
     use: 'Es el color de fondo primaria de la etiqueta de información.  ',
   },
   {
-    base: '$orange/800',
-    hex: '#4B2800',
-    variable: '$bg-warning',
-    use: 'Es el color de fondo primaria de la etiqueta de advertencia.',
-  },
-  {
-    base: '$green/800',
+    base: 'primario/bg-success-hover',
     hex: '#003A18',
-    variable: '$bg-success',
+    variable: '$primario/bg-success-hover',
     use: 'Es el color de fondo primaria de la etiqueta de éxito.',
   },
   {
-    base: '$red/800',
+    base: 'primario/bg-warning-hover',
+    hex: '#4B2800',
+    variable: '$primario/bg-warning-hover',
+    use: 'Es el color de fondo primaria de la etiqueta de advertencia.',
+  },
+  {
+    base: 'primario/bg-danger-hover',
     hex: '#6A0009',
-    variable: '$bg-danger',
+    variable: '$primario/bg-danger-hover',
     use: 'Es el color de fondo primaria de la etiqueta de peligro.',
   },
   {
-    base: '$purple/800',
+    base: 'primario/bg-highlight-hover',
     hex: '#520077',
-    variable: '$bg-highlight',
+    variable: '$primario/bg-highlight-hover',
     use: 'Es el color primario de fondo de la etiqueta destacada.',
   },
 ];
 
 export const BADGE_COLORS_BG_SECONDARY: ColorTableArray[] = [
   {
-    base: '$slate/100',
-    hex: '#E6EBF0',
-    variable: '$bg-primary',
-    use: 'Es el color de fondo secundario de la etiqueta de información.',
+    base: 'secundario/bg-primary',
+    hex: '#D6E4F6',
+    variable: '$secundario/bg-primary',
+    use: 'Es el color de fondo del tag secundario en su variante primary.',
   },
   {
-    base: '$sky/50',
-    hex: '#E5F9FF',
-    variable: '$bg-info',
-    use: 'Es el color de fondo secundario de la etiqueta de información.',
+    base: 'secundario/bg-info',
+    hex: '#E7F6FF',
+    variable: '$secundario/bg-info',
+    use: 'Es el color de fondo del tag secundario en su variante info.',
   },
   {
-    base: '$orange/50',
-    hex: '#FFF4E5',
-    variable: '$bg-warning',
-    use: 'Es el color de fondo secundario de la etiqueta de advertencia.',
+    base: 'secundario/bg-success',
+    hex: '#D0FFDA',
+    variable: '$secundario/bg-success',
+    use: 'Es el color de fondo del tag secundario en su variante success.',
   },
   {
-    base: '$green/50',
-    hex: '#F2FBF5',
-    variable: '$bg-success',
-    use: 'Es el color de fondo secundario de la etiqueta de éxito.',
+    base: 'secundario/bg-warning',
+    hex: '#FFF1E6',
+    variable: '$secundario/bg-warning',
+    use: 'Es el color de fondo del tag secundario en su variante warning.',
   },
   {
-    base: '$red/50',
-    hex: '#FBEFEF',
-    variable: '$bg-danger',
-    use: 'Es el color de fondo secundario de la etiqueta de peligro.',
+    base: 'secundario/bg-danger',
+    hex: '#FFF0EE',
+    variable: '$secundario/bg-danger',
+    use: 'Es el color de fondo del tag secundario en su variante danger.',
   },
   {
-    base: '$purple/50',
-    hex: '#F7E5FF',
-    variable: '$bg-highlight',
-    use: 'Es el color de fondo secundario de la etiqueta de peligro.',
+    base: 'secundario/bg-highlight',
+    hex: '#FBF0FF',
+    variable: '$secundario/bg-highlight',
+    use: 'Es el color de fondo del tag secundario en su variante highlight.',
   },
 ];
 
 export const BADGE_COLORS_HOVER_BG_SECONDARY: ColorTableArray[] = [
   {
-    base: '$slate/200',
+    base: 'secundario/bg-primary-hover',
     hex: '#C7D4E6',
-    variable: '$bg-primary',
-    use: 'Es el color de fondo secundario de la etiqueta de información.',
+    variable: '$secundario/bg-primary-hover',
+    use: 'Es el color de fondo del tag secundario en su variante primary, en el estado hover.',
   },
   {
-    base: '$sky/100',
+    base: 'secundario/bg-info-hover',
     hex: '#C0E8FF',
-    variable: '$bg-info',
-    use: 'Es el color de fondo secundario de la etiqueta de información.',
-  },
-  {
-    base: '$orange/100',
-    hex: '#FFDCBF',
-    variable: '$bg-warning',
-    use: 'Es el color de fondo secundario de la etiqueta de advertencia.',
+    variable: '$secundario/bg-info-hover',
+    use: 'Es el color de fondo del tag secundario en su variante info, en el estado hover.',
   },
   {
     base: '$green/100',
     hex: '#87FAA9',
     variable: '$bg-success',
-    use: 'Es el color de fondo secundario de la etiqueta de éxito.',
+    use: 'Es el color de fondo del tag secundario en su variante success, en el estado hover.',
   },
   {
-    base: '$red/100',
+    base: 'secundario/bg-warning-hover',
+    hex: '#FFDCBF',
+    variable: '$secundario/bg-warning-hover',
+    use: 'Es el color de fondo del tag secundario en su variante warning, en el estado hover.',
+  },
+  {
+    base: 'secundario/bg-danger-hover',
     hex: '#FFDAD5',
-    variable: '$bg-danger',
-    use: 'Es el color de fondo secundario de la etiqueta de peligro.',
+    variable: '$secundario/bg-danger-hover',
+    use: 'Es el color de fondo del tag secundario en su variante danger, en el estado hover.',
   },
   {
-    base: '$purple/100',
+    base: 'secundario/bg-highlight-hover',
     hex: '#F5D9FF',
-    variable: '$bg-highlight',
-    use: 'Es el color de fondo secundario de la etiqueta de peligro.',
+    variable: '$secundario/bg-highlight-hover',
+    use: 'Es el color de fondo del tag secundario en su variante highlight, en el estado hover.',
   },
 ];
 
 export const BADGE_COLORS_BORDERS: ColorTableArray[] = [
   {
-    base: '$blue/900',
+    base: '$border-primary',
     hex: '#08202F',
     variable: '$border-primary',
     use: 'Es el color del borde de la etiqueta predeterminada.  ',
   },
   {
-    base: '$sky/800',
+    base: '$border-info',
     hex: '#003548',
     variable: '$border-info',
     use: 'Es el color del borde de la etiqueta de información.',
   },
   {
-    base: '$orange/800',
-    hex: '#4B2800',
-    variable: '$border-warning',
-    use: 'Es el color del borde de la etiqueta de advertencia.',
-  },
-  {
-    base: '$green/800',
+    base: '$border-success',
     hex: '#003A18',
     variable: '$border-success',
     use: 'Es el color del borde de la etiqueta de éxito.',
   },
   {
-    base: '$red/800',
+    base: 'border-warning',
+    hex: '#4B2800',
+    variable: '$border-warning',
+    use: 'Es el color del borde de la etiqueta de advertencia.',
+  },
+  {
+    base: '$border-danger',
     hex: '#6A0009',
     variable: '$border-danger',
     use: 'Es el color del borde de la etiqueta de peligro.',
   },
   {
-    base: '$purple/800',
+    base: '$border-highlight',
     hex: '#520077',
     variable: '$border-highlight',
     use: 'Es el color del borde de la etiqueta destacada.',
@@ -764,39 +770,39 @@ export const BADGE_COLORS_BORDERS: ColorTableArray[] = [
 ];
 export const LINK_COLORS: ColorTableArray[] = [
   {
-    base: '$grayscale/0',
+    base: '$text-white',
     hex: '#FFFFFF',
     variable: '$text-ondark',
     use: 'Es el color de texto del enlace sobre fondos oscuros.',
     customBorder: true,
   },
   {
-    base: '$grayscale/0',
+    base: '$text-white',
     hex: '#FFFFFF',
     variable: '$border-ondark',
     use: 'Es el color del subrayado del enlace sobre fondos oscuros.',
     customBorder: true,
   },
   {
-    base: '$purple/700',
+    base: '$visited',
     hex: '#8A00C3',
     variable: '$text-visited',
     use: 'Es el color para los enlaces visitados sobre fondos claros. ',
   },
   {
-    base: '$purple/700',
+    base: '$visited',
     hex: '#8A00C3',
     variable: '$border-visited',
     use: 'Es el color del subrayado del estado visitado del enlace sobre fondos claros.',
   },
   {
-    base: '$purple/200',
+    base: '$visited-ondark',
     hex: '#EFC4FF',
     variable: '$text-visited-ondark',
     use: 'Es el color para los enlaces visitados sobre fondos oscuros. ',
   },
   {
-    base: '$purple/200',
+    base: '$visited-ondark',
     hex: '#EFC4FF',
     variable: '$border-visited-ondark',
     use: 'Es el color del subrayado del estado visitado del enlace sobre fondos oscuros.',
@@ -811,7 +817,7 @@ export const FORM_COLORS: ColorTableArray[] = [
     customBorder: true,
   },
   {
-    base: '$red/600',
+    base: '$danger',
     hex: '#CB3232',
     variable: '$border-error',
     use: 'Es el color del borde del estado de peligro de todos los campos.',
@@ -838,7 +844,7 @@ export const FORM_COLORS: ColorTableArray[] = [
 ];
 export const SPINNER_COLORS: ColorTableArray[] = [
   {
-    base: '$slate/200',
+    base: '$bg-muted',
     hex: '#C7D4E6',
     variable: '$bg',
     use: 'Es el color del fondo del spinner sobre fondos claros. ',
@@ -850,43 +856,43 @@ export const SPINNER_COLORS: ColorTableArray[] = [
     use: 'Es el color del fondo del spinner sobre fondos oscuros. ',
   },
   {
-    base: '$blue/800',
+    base: '$text-primary',
     hex: '#1D3343',
     variable: '$indicator-primary',
     use: 'Es el color del indicador del spinner primario.',
   },
   {
-    base: '$blue/700',
+    base: '$text-secondary',
     hex: '#035C80',
     variable: '$indicator-secondary',
     use: 'Es el color del indicador del spinner secundario.',
   },
   {
-    base: '$cyan/950',
+    base: '$text-tertiary',
     hex: '#00241F',
     variable: '$indicator-tertiary',
     use: 'Es el color del indicador del spinner terciario.',
   },
   {
-    base: '$green/700',
+    base: '$text-success',
     hex: '#00642F',
     variable: '$indicator-success',
     use: 'Es el color del indicador del spinner de éxito.',
   },
   {
-    base: '$red/600',
+    base: '$text-danger',
     hex: '#CB3232',
     variable: '$indicator-danger',
     use: 'Es el color del indicador del spinner de peligro.',
   },
   {
-    base: '$slate/50',
+    base: '$text-light',
     hex: '#EDF4FF',
     variable: '$indicator-light',
     use: 'Es el color del indicador del spinner claro.',
   },
   {
-    base: '$sky/900',
+    base: '$text-dark',
     hex: '#002230',
     variable: '$indicator-dark',
     use: 'Es el color del indicador del spinner oscuro.',
@@ -894,7 +900,7 @@ export const SPINNER_COLORS: ColorTableArray[] = [
 ];
 export const FOOTER_COLORS: ColorTableArray[] = [
   {
-    base: '$body-secondary',
+    base: '$blue/700',
     hex: '#38485C',
     variable: '$section-divider',
     use: 'Es el color de la línea divisoria de secciones dentro del footer. ',
@@ -906,36 +912,36 @@ export const CARDS_COLORS: ColorTableArray[] = [
     base: '$blue/400',
     hex: '#67A5CD',
     variable: '$decoration-blue',
-    use: 'Decorativo para la miscelánea del tarjetas.',
+    use: 'Se utiliza como color de decoración en la variante azul de la card.',
   },
   {
     base: '$sky/400',
     hex: '#00ABDE',
     variable: '$decoration-sky',
-    use: 'Decorativo para la miscelánea del tarjetas.',
+    use: 'Se utiliza como color de decoración en la variante celeste de la card.',
   },
   {
     base: '$cyan/400',
     hex: '#35B0A1',
     variable: '$decoration-cyan',
-    use: 'Decorativo para la miscelánea del tarjetas.',
+    use: 'Se utiliza como color de decoración en la variante cyan de la card.',
   },
   {
-    base: '$purple/400',
-    hex: '#D576FF',
-    variable: '$decoration-purple',
+    base: '$red/400',
+    hex: '#FF7266',
+    variable: 'Se utiliza como color de decoración en la variante roja de la card.',
     use: 'Decorativo para la miscelánea del tarjetas.',
   },
   {
     base: '$yellow/400',
     hex: '#C09A00',
     variable: '$decoration-yellow',
-    use: 'Decorativo para la miscelánea del tarjetas.',
+    use: 'Se utiliza como color de decoración en la variante amarilla de la card.',
   },
   {
-    base: '$red/400',
-    hex: '#FF7266',
-    variable: '$decoration-red',
-    use: 'Decorativo para la miscelánea del tarjetas.',
+    base: '$purple/400',
+    hex: '#D576FF',
+    variable: '$decoration-purple',
+    use: 'Se utiliza como color de decoración en la variante púrpura de la card.',
   },
 ];

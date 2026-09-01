@@ -229,7 +229,7 @@ export const VERTICAL_NOTICE_TRUNCATE = `
 </div>
 `;
 export const VERTICAL_AGENDA = `<div class="card card-eventos">
-    <img alt="descripción de imagen" loading="lazy" width="348" height="196" decoding="async" data-nimg="1" class="card-img" src="/Obelisco-V2/images/tarjetas/tarjetas_img_top.jpg" style="color: transparent;">
+    <img alt="descripción de imagen" loading="lazy" width="348" height="196" decoding="async" data-nimg="1" class="card-img" src="/Obelisco-V2/images/tarjetas/tarjetas_img_top.jpg" />
     <div class="card-body">
         <p class="card-headline">TIPO DE EVENTO</p>
         <div class="mb-3">

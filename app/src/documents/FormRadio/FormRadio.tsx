@@ -304,9 +304,6 @@ const FormRadioDocs = () => {
                 className="img-fluid"
               />
               <div className="d-flex pt-3">
-                {/* <span className="material-symbols-rounded text-info" style={{ backgroundColor: 'none !important;' }}>
-                  info
-                </span> */}
                 <span className="material-symbols-outlined">info</span>
                 <p className="mb-0">
                   La disposición horizontal puede ser útil cuando hay sólo dos opciones con etiquetas cortas.

@@ -40,7 +40,7 @@ export const BANNER_BUTTON = `
           href="#"
           target="_blank"
           rel="noopener noreferrer"
-          class="btn btn-sm btn-primary"
+          class="btn btn-sm btn-secondary"
         >
           Botón
         </a>
@@ -64,7 +64,7 @@ export const BANNER_BUTTON_DARK = `
           href="#"
           target="_blank"
           rel="noopener noreferrer"
-          class="btn btn-sm btn-primary"
+          class="btn btn-sm btn-secondary"
         >
           Botón
         </a>
@@ -88,7 +88,7 @@ export const BANNER_BUTTONS = `
           href="#"
           target="_blank"
           rel="noopener noreferrer"
-          class="btn btn-sm btn-primary"
+          class="btn btn-sm btn-secondary"
         >
           Botón
         </a>
@@ -96,7 +96,7 @@ export const BANNER_BUTTONS = `
           href="#"
           target="_blank"
           rel="noopener noreferrer"
-          class="btn btn-sm btn-outline-primary"
+          class="btn btn-sm btn-outline-secondary"
         >
           Botón
         </a>
@@ -120,7 +120,7 @@ export const BANNER_BUTTONS_DARK = `
           href="#"
           target="_blank"
           rel="noopener noreferrer"
-          class="btn btn-sm btn-primary"
+          class="btn btn-sm btn-secondary"
         >
           Botón
         </a>

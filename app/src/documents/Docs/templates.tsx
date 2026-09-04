@@ -57,7 +57,7 @@ const TemplatesComponents: React.FC = () => {
                   </span>{' '}
                   <div className="card-body">
                     <h3 className="card-title">
-                      <a href={`${basePath}/templates/pagina-simple`} className="card-title-link">
+                      <a href={`${basePath}/templates/paginas-simples`} className="card-title-link">
                         Página simple
                       </a>
                     </h3>
@@ -130,6 +130,23 @@ const TemplatesComponents: React.FC = () => {
                     </h3>
                     <p className="card-text">
                       La usamos para la ficha del perfil institucional del Gobierno de la Ciudad de Buenos Aires.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col">
+                <div className="card h-100">
+                  <span className="material-symbols-rounded card-icon">calendar_check</span>{' '}
+                  <div className="card-body">
+                    <h3 className="card-title">
+                      <a href={`${basePath}/templates/pagina-turnos-inscripciones`} className="card-title-link">
+                        Página de turnos e inscripciones
+                      </a>
+                    </h3>
+                    <p className="card-text">
+                      Página que usamos para gestionar la reserva o la inscripción de turnos y capacitaciones que ofrece
+                      el Gobierno de la Ciudad de Buenos Aires.
                     </p>
                   </div>
                 </div>

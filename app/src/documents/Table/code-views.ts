@@ -1,4 +1,10 @@
 export const WITHOUT_DIVIDERS = `
+<div class="table-title">
+  <h2 class="mb-4">Título de tabla</h2>
+  <p class="text-md">
+    Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+  </p>
+</div>
 <div class="responsive-scroll" tabIndex="0">
     <table class="table table-borderless">
         <thead>
@@ -40,7 +46,7 @@ export const WITHOUT_DIVIDERS = `
                     </label>
                 </div>
             </td>
-            <td><span class="badge badge-default">Texto predeterminado</span></td>
+            <td><span class="badge badge-s-default">Texto predeterminado</span></td>
             </tr>
             <tr>
             <td class="text-right">2</td>
@@ -67,7 +73,7 @@ export const WITHOUT_DIVIDERS = `
                     </label>
                 </div>
             </td>
-            <td><span class="badge badge-danger">Texto predeterminado</span></td>
+            <td><span class="badge badge-s-danger">Texto predeterminado</span></td>
             </tr>
             <tr>
             <td class="text-right">3</td>
@@ -94,7 +100,7 @@ export const WITHOUT_DIVIDERS = `
                     </label>
                 </div>
             </td>
-            <td><span class="badge badge-info">Texto predeterminado</span></td>
+            <td><span class="badge badge-s-info">Texto predeterminado</span></td>
             </tr>
             <tr>
             <td class="text-right">4</td>
@@ -121,13 +127,19 @@ export const WITHOUT_DIVIDERS = `
                     </label>
                 </div>
             </td>
-            <td><span class="badge badge-warning">Texto predeterminado</span></td>
+            <td><span class="badge badge-s-warning">Texto predeterminado</span></td>
             </tr>
         </tbody>
     </table>
 </div>
 `;
 export const WITH_DIVIDERS = `
+<div class="table-title">
+  <h2 class="mb-4">Título de tabla</h2>
+  <p class="text-md">
+    Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+  </p>
+</div>
 <div class="responsive-scroll" tabIndex="0">
     <table class="table">
         <thead>
@@ -166,7 +178,7 @@ export const WITH_DIVIDERS = `
                     </label>
                 </div>
             </td>
-            <td><span class="badge badge-default">Texto predeterminado</span></td>
+            <td><span class="badge badge-s-default">Texto predeterminado</span></td>
             </tr>
             <tr>
             <td class="text-right">2</td>
@@ -193,7 +205,7 @@ export const WITH_DIVIDERS = `
                     </label>
                 </div>
             </td>
-            <td><span class="badge badge-success">Texto predeterminado</span></td>
+            <td><span class="badge badge-s-success">Texto predeterminado</span></td>
             </tr>
             <tr>
             <td class="text-right">3</td>
@@ -220,7 +232,7 @@ export const WITH_DIVIDERS = `
                     </label>
                 </div>
             </td>
-            <td><span class="badge badge-info">Texto predeterminado</span></td>
+            <td><span class="badge badge-s-info">Texto predeterminado</span></td>
             </tr>
             <tr>
             <td class="text-right">4</td>
@@ -247,13 +259,19 @@ export const WITH_DIVIDERS = `
                     </label>
                 </div>
             </td>
-            <td><span class="badge badge-warning">Texto predeterminado</span></td>
+            <td><span class="badge badge-s-warning">Texto predeterminado</span></td>
             </tr>
         </tbody>
     </table>
 </div>
 `;
 export const WITH_ZEBRA = `
+<div class="table-title">
+  <h2 class="mb-4">Título de tabla</h2>
+  <p class="text-md">
+    Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+  </p>
+</div>
 <div class="responsive-scroll" tabIndex="0">
     <table class="table table-striped">
         <thead>
@@ -292,7 +310,7 @@ export const WITH_ZEBRA = `
                     </label>
                 </div>
             </td>
-            <td><span class="badge badge-default">Texto predeterminado</span></td>
+            <td><span class="badge badge-s-default">Texto predeterminado</span></td>
             </tr>
             <tr>
             <td class="text-right">2</td>
@@ -319,7 +337,7 @@ export const WITH_ZEBRA = `
                     </label>
                 </div>
             </td>
-            <td><span class="badge badge-warning">Texto predeterminado</span></td>
+            <td><span class="badge badge-s-warning">Texto predeterminado</span></td>
             </tr>
             <tr>
             <td class="text-right">3</td>
@@ -346,7 +364,7 @@ export const WITH_ZEBRA = `
                     </label>
                 </div>
             </td>
-            <td><span class="badge badge-info">Texto predeterminado</span></td>
+            <td><span class="badge badge-s-info">Texto predeterminado</span></td>
             </tr>
             <tr>
             <td class="text-right">4</td>
@@ -373,13 +391,19 @@ export const WITH_ZEBRA = `
                     </label>
                 </div>
             </td>
-            <td><span class="badge badge-danger">Texto predeterminado</span></td>
+            <td><span class="badge badge-s-danger">Texto predeterminado</span></td>
             </tr>
         </tbody>
     </table>
 </div>
 `;
 export const WITH_CHECKBOX = `
+<div class="table-title">
+  <h2 class="mb-4">Título de tabla</h2>
+  <p class="text-md">
+    Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+  </p>
+</div>
 <div class="responsive-scroll" tabIndex="0">
     <table class="table">
         <thead>
@@ -473,6 +497,12 @@ export const WITH_CHECKBOX = `
 </div>
 `;
 export const TABLE_TEXT = `
+<div class="table-title">
+  <h2 class="mb-4">Título de tabla</h2>
+  <p class="text-md">
+    Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+  </p>
+</div>
 <div class="responsive-scroll" tabIndex="0">
     <table class="table">
         <thead>
@@ -508,6 +538,12 @@ export const TABLE_TEXT = `
 </div>
 `;
 export const TABLE_NUMBER = `
+<div class="table-title">
+  <h2 class="mb-4">Título de tabla</h2>
+  <p class="text-md">
+    Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+  </p>
+</div>
 <div class="responsive-scroll" tabIndex="0">
     <table class="table">
         <thead>
@@ -556,6 +592,12 @@ export const TABLE_NUMBER = `
 </div>
 `;
 export const TABLE_LINK = `
+<div class="table-title">
+  <h2 class="mb-4">Título de tabla</h2>
+  <p class="text-md">
+    Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+  </p>
+</div>
 <div class="responsive-scroll" tabIndex="0">
     <table class="table">
         <thead>
@@ -620,6 +662,12 @@ export const TABLE_LINK = `
 </div>
 `;
 export const TABLE_TAG = `
+<div class="table-title">
+  <h2 class="mb-4">Título de tabla</h2>
+  <p class="text-md">
+    Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+  </p>
+</div>
 <div class="responsive-scroll" tabIndex="0">
     <table class="table">
         <thead>
@@ -640,34 +688,40 @@ export const TABLE_TAG = `
                 <td>Texto predeterminado</td>
                 <td>Texto predeterminado</td>
                 <td>Texto predeterminado</td>
-                <td><span class="badge badge-default">Texto predeterminado</span></td>
+                <td><span class="badge badge-s-default">Texto predeterminado</span></td>
             </tr>
             <tr>
                 <td>Texto predeterminado</td>
                 <td>Texto predeterminado</td>
                 <td>Texto predeterminado</td>
                 <td>Texto predeterminado</td>
-                <td><span class="badge badge-danger">Texto predeterminado</span></td>
+                <td><span class="badge badge-s-danger">Texto predeterminado</span></td>
             </tr>
             <tr>
                 <td>Texto predeterminado</td>
                 <td>Texto predeterminado</td>
                 <td>Texto predeterminado</td>
                 <td>Texto predeterminado</td>
-                <td><span class="badge badge-info">Texto predeterminado</span></td>
+                <td><span class="badge badge-s-info">Texto predeterminado</span></td>
             </tr>
             <tr>
                 <td>Texto predeterminado</td>
                 <td>Texto predeterminado</td>
                 <td>Texto predeterminado</td>
                 <td>Texto predeterminado</td>
-                <td><span class="badge badge-success">Texto predeterminado</span></td>
+                <td><span class="badge badge-s-success">Texto predeterminado</span></td>
             </tr>
         </tbody>
     </table>
 </div>
 `;
 export const TABLE_BUTTON = `
+<div class="table-title">
+  <h2 class="mb-4">Título de tabla</h2>
+  <p class="text-md">
+    Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+  </p>
+</div>
 <div class="responsive-scroll" tabIndex="0">
     <table class="table">
         <thead>
@@ -724,6 +778,12 @@ export const TABLE_BUTTON = `
 </div>
 `;
 export const TABLE_BUTTON_ICON = `
+<div class="table-title">
+  <h2 class="mb-4">Título de tabla</h2>
+  <p class="text-md">
+    Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+  </p>
+</div>
 <div class="responsive-scroll" tabIndex="0">
     <table class="table">
         <thead>
@@ -835,7 +895,14 @@ export const TABLE_BUTTON_ICON = `
 </div>
 `;
 
-export const TABLE_ACCESSIBILTY = `<div class="responsive-scroll" tabIndex="0">
+export const TABLE_ACCESSIBILTY = `
+<div class="table-title">
+  <h2 class="mb-4">Título de tabla</h2>
+  <p class="text-md">
+    Este es un bloque de texto de descripción de la tabla que puede ocupar hasta 2 líneas de párrafo.
+  </p>
+</div>
+<div class="responsive-scroll" tabIndex="0">
     <table class="table table-borderless" aria-describedby="Tabla">
         <thead>
             <tr>

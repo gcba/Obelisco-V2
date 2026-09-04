@@ -95,6 +95,7 @@ const CodeBox = ({ codeHTML, children, codeJS }: { codeHTML: string; children?: 
               role="tab"
               aria-controls={`panel-bg-content-1-${id}`}
               aria-selected="true"
+              tabIndex={0}
               id={`tab-bg-1-${id}`}
             >
               <div className="nav-icon">
@@ -112,6 +113,7 @@ const CodeBox = ({ codeHTML, children, codeJS }: { codeHTML: string; children?: 
               role="tab"
               aria-controls={`panel-bg-content-2-${id}`}
               aria-selected="false"
+              tabIndex={-1}
               id={`tab-bg-2-${id}`}
             >
               <div className="nav-icon">
@@ -130,6 +132,7 @@ const CodeBox = ({ codeHTML, children, codeJS }: { codeHTML: string; children?: 
                 role="tab"
                 aria-controls={`panel-bg-content-3-${id}`}
                 aria-selected="false"
+                tabIndex={-1}
                 id={`tab-bg-3-${id}`}
               >
                 <div className="nav-icon">

@@ -14,7 +14,7 @@ const sections = [
 
         <ul className="list-informative-bullet">
           <li className="mb-3">
-            Longitud: entre <strong>50 y 70 caracteres</strong> (ideal para buscadores y redes sociales).
+            Longitud recomendada: entre <strong>50 y 70 caracteres</strong> (ideal para buscadores y redes sociales).
           </li>
           <li>Evitar siglas poco conocidas y jerga técnica.</li>
         </ul>

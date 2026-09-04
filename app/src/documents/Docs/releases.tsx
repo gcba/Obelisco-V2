@@ -19,6 +19,380 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
+      title: 'Versión 1.18.3',
+      date: '25/08/2026',
+      content: (
+        <>
+          <ul className="docs-list">
+            <p>La Versión 1.18.3 contiene lo siguiente: </p>
+            <li>Se actualiza el color del indicador del footer y se centra el contenido.</li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      title: 'Versión 1.18.2',
+      date: '21/08/2026',
+      content: (
+        <>
+          <ul className="docs-list">
+            <p>La Versión 1.18.2 contiene lo siguiente: </p>
+            <li>Se actualiza el componente Desplegable de navegación y selección.</li>
+            <li>Se actualizan los logos de BA.</li>
+            <li>
+              <strong>Correciones (fix):</strong>
+              <ul>Se corrige la disposición de los botones de footer en responsive.</ul>
+              <ul>
+                Se corrige el estado <code>focus</code> de las Tarjetas horizontales con ícono, sin borde.
+              </ul>
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      title: 'Versión 1.18.1',
+      date: '14/08/2026',
+      content: (
+        <>
+          <ul className="docs-list">
+            <p
+              className="text-body-secondary d-flex text-sm align-items-center gap-1 mb-0"
+              style={{ paddingBottom: '16px' }}
+            >
+              <span className="material-symbols-rounded" aria-hidden="true" style={{ color: '#0086AD' }}>
+                info
+              </span>
+              <span>Esta versión contiene cambios de colores que impactan al sistema en su totalidad.</span>
+            </p>
+            <p>La Versión 1.18.1 contiene lo siguiente: </p>
+            <li>Se crea una nueva paleta de colores. Se modificaron los colores de la rampa.</li>
+            <li>
+              <strong>Correciones (fix):</strong>
+              <ul>
+                <li>
+                  Se corrige el color y tamaño de las flechas de Carrusel en estado <code>focus</code>.
+                </li>
+                <li>Se corrige el indicador del footer en responsive.</li>
+                <li>
+                  Se corrige el <code>padding</code> de disposición de Destacados verticales, en pantallas móviles.{' '}
+                </li>
+                <li>
+                  Se agrega <code> overflow-wrap: break-word;</code> en los parrafos de Colapsables{' '}
+                </li>
+                <li>
+                  Destacado container con degrade:
+                  <ul>
+                    <li>
+                      Se corrige el alto y el alto máximo. Mide por defecto y cómo máximo <code>432px</code>.
+                    </li>
+                    <li>
+                      Se corrige que al tener una imagen ancha, esta no empuje al contenido. Ahora ambos ocupan 50%, sin
+                      importar el tamaño de la imagen.
+                    </li>
+                    <li>Se corrige el destacado container sin multimedia los espaciados en responsive.</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      title: 'Versión 1.18.0',
+      date: '28/07/2026',
+      content: (
+        <>
+          <ul className="docs-list">
+            <p>La Versión 1.18.0 contiene lo siguiente: </p>
+            <li>
+              Se crea una nueva variante de Tarjetas verticales de noticias, sin borde:{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/components/cards#section-dev-10">
+                Tarjetas de noticias sin borde
+              </a>
+              .
+            </li>
+            <li>
+              Se crea una nueva Tarjeta vertical, de cursos:{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/components/cards#section-dev-10">Tarjetas de cursos</a>.
+            </li>
+            <li>
+              Se truncan tarjetas verticales (excepto eventos, impacto visual y noticia sin borde) a 2 líneas en título,
+              3 líneas en descripción.
+            </li>
+            <li>
+              <strong>Correciones (fix):</strong>
+              <ul>
+                <li>
+                  Estado <code>focus</code> en Cabecera de página institucional, con accionable campo buscador.
+                </li>
+                <li>
+                  Carrusel de destacados entre <code>992px</code> y <code>1200px</code>. La disposición pasa a ser
+                  vertical.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      title: 'Versión 1.17.0',
+      date: '27/07/2026',
+      content: (
+        <>
+          <ul className="docs-list">
+            <p>La Versión 1.17.0 contiene lo siguiente: </p>
+            <li>
+              Se crea una nueva variante de Cabecera de Página con multimedia:{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/components/hero-multimedia">Cabecera de Página multimedia</a>.
+            </li>
+            <li>
+              Se creó la sección de{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/components/hero">Cabecera de Página institucional</a>.
+            </li>
+            <li>
+              Se eliminaron las variantes de colores para cabecera institucional, dejando como único color de fondo
+              relacionado al manual de marca <code>bg-blue</code>.
+            </li>
+            <li>
+              Se eliminó la variante &quot;dinámica&quot; para cabeceras con clase <code> wave </code>y sus respectivas
+              variantes de multimedia.
+            </li>
+          </ul>
+          En{' '}
+          <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-8">
+            Cambios en componente
+          </a>{' '}
+          está la documentación de las clases en detalle.
+        </>
+      ),
+    },
+    {
+      title: 'Versión 1.16.0',
+      date: '21/07/2026',
+      content: (
+        <>
+          <ul className="docs-list">
+            <p>La Versión 1.16.0 contiene lo siguiente: </p>
+            <li>
+              Se crea una nueva variante de Tarjetas horizontales:{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/components/cards#section-dev-1">
+                Tarjetas visuales con ícono
+              </a>
+              .
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      title: 'Versión 1.15.0',
+      date: '15/07/2026',
+      content: (
+        <>
+          <ul className="docs-list">
+            <p>La Versión 1.15.0 contiene lo siguiente: </p>
+            <li>Componente Tarjetas, se crea la variante Tarjetas de impacto visual.</li>
+            <li>
+              Componente Carrusel, se crea la variante que utiliza las Tarjetas de impacto visual, tiene una disposición
+              de controles diferente y exclusiva para esta variante.
+            </li>
+            <li>
+              <strong>Correción (fix) en Destacado container</strong>.
+              <ul>
+                <li>
+                  El componente con multimedia pasa a tener una altura mínima de <code>432px</code>y sin multimedia{' '}
+                  <code>264px</code>.
+                </li>
+                <li>
+                  Se crea la clase <code>.panel-img-edge</code> para manipular las imagenes grandes, del mismo o mayor
+                  tamaño que el alto mínimo. Esta nueva clase se utiliza junto con <code>.panel-img</code>.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      title: 'Versión 1.14.0',
+      date: '07/07/2026',
+      content: (
+        <>
+          <ul className="docs-list">
+            <p>La Versión 1.14.0 contiene lo siguiente: </p>
+            <li>
+              Se sumaron nuevas variantes para el componente{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/components/highlighted">Destacado:</a>
+            </li>
+            <ul>
+              <li>Se agrega la variante con color en degrade y ancho contenedor.</li>
+              <li>
+                Se agrega la variante con fondos de color <code>dark</code> y <code>light</code>, para ancho contenedor
+                en destacados horizontales.
+              </li>
+              <li>Se agrega la variante con fondo blanco para destacado vertical.</li>
+              <li>
+                Se agrega la clase <code>panel-inverted</code> para invertir el contenido en los destacados horizontales
+                en todas sus variantes. Se usa así: <code>{'<div class="panel-horizontal panel-inverted">'}</code>
+              </li>
+            </ul>
+            <br />
+            <li>
+              Se modifican los bordes y padding para el componente: <i>Desplegable de navegación y selección</i> y{' '}
+              <i>Navegacion horizontal y vertical.</i>
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      title: 'Versión 1.13.0',
+      date: '30/06/2026',
+      content: (
+        <>
+          <ul className="docs-list">
+            <p>La Versión 1.13.0 contiene lo siguiente: </p>
+            <li>
+              Se crean nuevas clases para las nuevas variantes del componente{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/components/badge">Etiqueta</a>:
+              <ul>
+                <li>
+                  Etiquetas primarias y secundarias.
+                  <br />
+                  <code>.badge-p-{'{color}'}</code> y <code>.badge-s-{'{color}'}</code>
+                </li>
+                <li>
+                  Etiquetas clickeables
+                  <br />
+                  <code>.badge-s-link-{'{color}'}</code>
+                </li>
+                <li>
+                  Etiquetas seleccionables y eliminables
+                  <br />
+                  <code>.badge-select</code> y <code>.badge-remove</code>
+                </li>
+                <li>
+                  Tamaños de etiquetas
+                  <br />
+                  <code>.badge-sm</code> y <code>.badge-lg</code>
+                </li>
+              </ul>
+              En{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-16">
+                Cambios en componente
+              </a>{' '}
+              está la documentación de las nuevas clases en detalle.
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      title: 'Versión 1.12.1',
+      date: '24/06/2026',
+      content: (
+        <>
+          <ul className="docs-list">
+            <p>La Versión 1.12.1 contiene lo siguiente: </p>
+            <li>
+              Al componente Indicador, en Pie de página (Footer), se cambia la clase <code>btn-secondary</code> por{' '}
+              <code>btn-primary</code>.
+            </li>
+            <li>
+              Se corrige el color de los elementos en el componente Alerta de sistema - Advertencia (Warning) por{' '}
+              <code>$primary</code>.
+            </li>
+            <li>
+              Se alinea el ícono informativo de estado en{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/components/form-validation"> Validacion de Inputs</a>.
+            </li>
+            <li>
+              Se cambia el color de <code>$secondary</code> por <code>$primary</code> para item de eventos (simples o
+              múltiples) en componente Calendario.
+            </li>
+            <li>
+              Se cambia la clase <code>bg-primary</code> por <code>bg-secondary</code> en Barra de progreso.
+            </li>
+            <li>
+              Se modifica el radio de borde del botón de carga de archivo. Ahora es <code>$pill</code>, igual que los
+              input.
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      title: 'Versión 1.12.0',
+      date: '22/06/2026',
+      content: (
+        <ul className="docs-list">
+          <p className="text-body-secondary d-flex text-sm align-items-center gap-1">
+            <span className="material-symbols-rounded" aria-hidden="true" style={{ color: '#0086AD' }}>
+              info
+            </span>
+            <span>
+              Esta versión implican cambios de estilos que impactan al sistema en general y todos sus componentes. Se
+              recomienda verificar el buen uso de clases para su correcta visualización.
+            </span>
+          </p>
+          <p>La Versión 1.12.0 contiene lo siguiente: </p>
+          <li>
+            La tipografía principal pasa a ser Archivo. La nueva importación se encuentra en el siguiente{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/getting-started/imports">link</a>.
+          </li>
+          <li>
+            Se agregó en Guías de estilos, una sección de{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/components/borders">Bordes</a>. Allí se indican los nuevos
+            valores y clases para <code>{'border-radius'}</code>.
+          </li>
+          <li>
+            Se invierte el color <code> primario </code> por <code> secundario</code>.
+          </li>
+          <li>
+            El color terciario pasa a ser <code>{'cyan-500'}</code> (<code>{'#64D8C8'}</code> ).
+            <br />
+            El color terciario <strong>outline</strong> , pasa a ser <code>{'cyan-900'}</code> (<code>{'#10413a'}</code>{' '}
+            ).
+          </li>
+          <li>
+            El componente Pie de página (Footer) junto con el componente Indicador, se visualizan con nuevos estilos de
+            radio y color.
+          </li>
+        </ul>
+      ),
+    },
+    {
+      title: 'Versión 1.11.1',
+      date: '04/06/2026',
+      content: (
+        <ul className="docs-list">
+          <p>La Versión 1.11.1 contiene lo siguiente: </p>
+          <li>
+            Se crea el componente{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/components/highlighted-lateral" target="_blank">
+              Destacado lateral
+            </a>
+            . En{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/documentation/update-component#section-change-14">
+              Cambios en componentes
+            </a>{' '}
+            está la documentación de la nueva estructura.
+          </li>
+          <li>Se elimina el componente Bloque de trámite, se lo reemplaza por el componente Destacado lateral.</li>
+          <li>
+            En el componente Mapa se modificó el botón de <code>primario</code> a <code>primario outline</code>
+          </li>
+          <li>Se agrega la posibilidad de tener título y bajada en Tablas.</li>
+          <li>
+            La etiqueta <code>{' <h5>'}</code> pasa a tener peso <code>{'semibold'}</code>.
+          </li>
+        </ul>
+      ),
+    },
+    {
       title: 'Versión 1.11.0',
       content: (
         <ul className="docs-list">
@@ -43,6 +417,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.10.0',
+      date: '09/03/2026',
       content: (
         <ul className="docs-list">
           <p>La Versión 1.10.0 contiene lo siguiente: </p>
@@ -63,6 +438,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.9.1',
+      date: '18/02/2026',
       content: (
         <ul className="docs-list">
           <p>La Versión 1.9.1 contiene lo siguiente: </p>
@@ -88,6 +464,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.9.0',
+      date: '10/02/2026',
       content: (
         <ul className="docs-list">
           <p>La Versión 1.9.0 contiene lo siguiente: </p>
@@ -133,6 +510,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.8.4',
+      date: '10/12/2025',
       content: (
         <ul className="docs-list">
           <p>La Versión 1.8.4 contiene lo siguiente: </p>
@@ -161,6 +539,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.8.3',
+      date: '14/11/2025',
       content: (
         <ul className="docs-list">
           <p>La versión 1.8.3 contiene lo siguiente: </p>
@@ -174,6 +553,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.8.2',
+      date: '11/11/2025',
       content: (
         <ul className="docs-list">
           <p>La versión 1.8.2 contiene lo siguiente: </p>
@@ -190,6 +570,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.8.1',
+      date: '06/11/2025',
       content: (
         <ul className="docs-list">
           <p>La versión 1.8.1 contiene lo siguiente: </p>
@@ -214,6 +595,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.8.0',
+      date: '28/10/2025',
       content: (
         <ul className="docs-list">
           <p>La Versión 1.8.0 contiene lo siguiente: </p>
@@ -237,6 +619,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.7.1',
+      date: '20/10/2025',
       content: (
         <ul className="docs-list">
           <p>La versión 1.7.1 contiene lo siguiente: </p>
@@ -252,6 +635,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.7.0',
+      date: '15/10/2025',
       content: (
         <ul className="docs-list">
           <p>La versión 1.7.0 contiene lo siguiente: </p>
@@ -346,6 +730,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.6.2',
+      date: '09/10/2025',
       content: (
         <ul className="docs-list">
           <p>La versión 1.6.2 contiene lo siguiente: </p>
@@ -361,6 +746,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.6.1',
+      date: '02/09/2025',
       content: (
         <ul className="docs-list">
           <p>La versión 1.6.1 contiene lo siguiente: </p>
@@ -379,6 +765,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.6.0',
+      date: '07/07/2025',
       content: (
         <ul className="docs-list">
           <p>La versión 1.6.0 contiene lo siguiente: </p>
@@ -398,6 +785,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.5.6',
+      date: '28/05/2025',
       content: (
         <ul className="docs-list">
           <p>La versión 1.5.6 contiene lo siguiente: </p>
@@ -417,6 +805,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.5.5',
+      date: '09/05/2025',
       content: (
         <ul className="docs-list">
           <p>
@@ -427,6 +816,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.5.4',
+      date: '08/05/2025',
       content: (
         <ul className="docs-list">
           <p>La versión 1.5.4 contiene lo siguiente: </p>
@@ -441,6 +831,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.5.3',
+      date: '23/04/2025',
       content: (
         <ul className="docs-list">
           <p>La versión 1.5.3 contiene lo siguiente: </p>
@@ -457,6 +848,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.5.2',
+      date: '25/03/2025',
       content: (
         <ul className="docs-list">
           <p>La versión 1.5.2 contiene los siguientes fixes: </p>
@@ -471,6 +863,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.5.1',
+      date: '02/12/2024',
       content: (
         <ul className="docs-list">
           <p>La versión 1.5.1 contiene los siguientes fixes: </p>
@@ -493,6 +886,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.5.0',
+      date: '28/11/2024',
       content: (
         <ul className="docs-list">
           <p>La versión 1.5.0 contiene: </p>
@@ -505,6 +899,7 @@ const ReleasesComponents: React.FC = () => {
     },
     {
       title: 'Versión 1.4.2',
+      date: '25/11/2024',
       content: (
         <ul className="docs-list">
           <p>La versión 1.4.2 es la primer versión estable de Obelisco. Los puntos más destacados de ésta contiene: </p>
@@ -513,6 +908,16 @@ const ReleasesComponents: React.FC = () => {
             Nueva guía de estilos: Modificación de tipografía, grilla y nueva paleta de color enfocada en la
             accesibilidad.
           </li>
+        </ul>
+      ),
+    },
+    // **
+    {
+      title: 'Versión 1.0.0',
+      date: '05/09/2024',
+      content: (
+        <ul className="docs-list">
+          <p>La versión 1.0.0 es la primer versión de Obelisco V2.</p>
         </ul>
       ),
     },
@@ -532,13 +937,13 @@ const ReleasesComponents: React.FC = () => {
         description={[
           'En esta sección se encuentran los versionados de la librería y la documentación de los cambios que se hicieron sobre cada versión de Obelisco.',
           <>
-            <p className="d-flex gap-1">
+            <span className="d-flex gap-1">
               Versión actual:{' '}
               <Link href="https://github.com/gcba/Obelisco-V2/releases" target="blank">
                 {versionPages.text}
               </Link>{' '}
               <i className="bxl bx-github mt-1" style={{ fontSize: '18px' }} />
-            </p>
+            </span>
           </>,
         ]}
         divider={true}

@@ -43,18 +43,6 @@ export const HORIZONTAL_IMG = `
   </div>
 </div>
 
-<div class="card card-horizontal">
-	<div class="d-flex w-100 card-border-left-blue">
-		<img src="/card-img-left.jpg" class="card-img" alt="descripción de imagen" />
-		<div class="card-body">
-			<h3 class="card-title">
-				<a href="#" class="card-title-link">Título de la tarjeta</a>
-			</h3>
-			<p class="card-text">Descripción de la tarjeta</p>
-		</div>
-	</div>
-</div>
-
 <div class="card card-horizontal unbordered">
   <img src="/card-img-left.jpg" class="card-img" alt="descripción de imagen" />
   <div class="card-body">
@@ -68,15 +56,6 @@ export const HORIZONTAL_IMG = `
 export const HORIZONTAL_TEXT = `
 <div class="card card-horizontal">
   <div class="card-body">
-    <h3 class="card-title">
-      <a href="#" class="card-title-link">Título de la tarjeta</a>
-    </h3>
-    <p class="card-text">Descripción de la tarjeta</p>
-  </div>
-</div>
-
-<div class="card card-horizontal">
-  <div class="card-body card-border-left-blue">
     <h3 class="card-title">
       <a href="#" class="card-title-link">Título de la tarjeta</a>
     </h3>
@@ -139,18 +118,8 @@ export const VERTICAL_ICON = `
 `;
 export const VERTICAL_IMG = `
 <div class="card">
-  <img class="card-img" src="/card-img-top.jpg" alt="descripción de imagen" />
+  <img class="card-img" src="/tarjetas/tarjetas_img_top.jpg" alt="descripción de imagen" />
   <div class="card-body">
-    <h3 class="card-title">
-      <a href="#" class="card-title-link">Título de la tarjeta</a>
-    </h3>
-    <p class="card-text">Descripción de la tarjeta</p>
-  </div>
-</div>
-
-<div class="card">
-  <img class="card-img" src="/card-img-top.jpg" alt="descripción de imagen" />
-  <div class="card-body card-border-bottom-blue">
     <h3 class="card-title">
       <a href="#" class="card-title-link">Título de la tarjeta</a>
     </h3>
@@ -160,11 +129,11 @@ export const VERTICAL_IMG = `
 `;
 export const VERTICAL_NOTICE = `
 <div class="card">
-  <img class="card-img" src="/card-img-top.jpg" alt="descripción de imagen" />
+  <img class="card-img" src="/tarjetas/tarjetas_img_top.jpg" alt="descripción de imagen" />
   <div class="card-body">
     <div class="card-badges">
-        <span class="badge badge-default">etiqueta 1</span>
-        <span class="badge badge-default">etiqueta 2</span>
+        <span class="badge badge-p-default badge-sm">Etiqueta</span>
+        <span class="badge badge-s-default badge-sm">Etiqueta</span>
     </div>
     <h3 class="card-title">
       <a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -173,20 +142,75 @@ export const VERTICAL_NOTICE = `
     <div class="card-info">
       <div>
         <small>
-          <span>Fecha de publicación</span>
+          <span>Fecha de publicación: 00/00/00</span>
         </small>
       </div>
     </div>
   </div>
 </div>
 `;
-export const VERTICAL_NOTICE_TRUNCATE = `
+
+export const VERTICAL_CURSOS = `
 <div class="card">
-  <img class="card-img" src="/card-img-top.jpg" alt="descripción de imagen" />
+  <img class="card-img" src="/tarjetas/tarjetas_img_top.jpg" alt="descripción de imagen" />
   <div class="card-body">
     <div class="card-badges">
-        <span class="badge badge-default">etiqueta 1</span>
-        <span class="badge badge-default">etiqueta 2</span>
+        <span class="badge badge-p-default badge-sm">Etiqueta</span>
+        <span class="badge badge-s-default badge-sm">Etiqueta</span>
+    </div>
+    <h3 class="card-title">
+      <a href="#" class="card-title-link">Título de la tarjeta</a>
+    </h3>
+    <p class="card-text">Descripción de la tarjeta</p>
+  </div>
+</div>
+`;
+
+export const VERTICAL_NOTICE_SIN_BORDE = `
+<div class="card card-img-borderless">
+  <img class="card-img" src="/card-img-borderless.svg" alt="descripción de imagen" />
+  <div class="card-body">
+    <div class="card-badges">
+        <span class="badge badge-s-default badge-sm">Etiqueta</span>
+        <span class="badge badge-s-default badge-sm">Etiqueta</span>
+    </div>
+    <h3 class="card-title">
+      <a href="#" class="card-title-link">Título de la tarjeta</a>
+    </h3>
+    <p class="card-text">Descripción de la tarjeta</p>
+    <div class="card-info">
+      <div>
+        <small>
+          <span>Fecha de publicación: 00/00/00</span>
+        </small>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+export const VERTICAL_NOTICE_SIN_BORDE_CURSOS = `
+<div class="card card-img-borderless">
+  <img class="card-img" src="/card-img-borderless.svg" alt="descripción de imagen" />
+  <div class="card-body">
+    <div class="card-badges">
+        <span class="badge badge-s-default badge-sm">Etiqueta</span>
+        <span class="badge badge-s-default badge-sm">Etiqueta</span>
+    </div>
+    <h3 class="card-title">
+      <a href="#" class="card-title-link">Título de la tarjeta</a>
+    </h3>
+    <p class="card-text">Descripción de la tarjeta</p>
+  </div>
+</div>
+`;
+
+export const VERTICAL_NOTICE_TRUNCATE = `
+<div class="card">
+  <img class="card-img" src="/tarjetas/tarjetas_img_top.jpg" alt="descripción de imagen" />
+  <div class="card-body">
+    <div class="card-badges">
+        <span class="badge badge-p-default badge-sm">Etiqueta</span>
+        <span class="badge badge-s-default badge-sm">Etiqueta</span>
     </div>
     <h3 class="card-title">
       <a href="#" class="card-title-link ellipsis-3">
@@ -197,7 +221,7 @@ export const VERTICAL_NOTICE_TRUNCATE = `
     <div class="card-info">
       <div>
         <small>
-          <span>Fecha de publicación</span>
+          <span>Fecha de publicación: 00/00/00</span>
         </small>
       </div>
     </div>
@@ -205,12 +229,12 @@ export const VERTICAL_NOTICE_TRUNCATE = `
 </div>
 `;
 export const VERTICAL_AGENDA = `<div class="card card-eventos">
-    <img alt="descripción de imagen" loading="lazy" width="348" height="196" decoding="async" data-nimg="1" class="card-img" src="/Obelisco-V2/images/card-img-top.jpg" style="color: transparent;">
+    <img alt="descripción de imagen" loading="lazy" width="348" height="196" decoding="async" data-nimg="1" class="card-img" src="/Obelisco-V2/images/tarjetas/tarjetas_img_top.jpg" style="color: transparent;">
     <div class="card-body">
         <p class="card-headline">TIPO DE EVENTO</p>
         <div class="mb-3">
-          <span class="badge badge-default">Etiqueta</span>
-          <span class="badge badge-default">Tipo de público</span>
+          <span class="badge badge-s-default">Etiqueta</span>
+          <span class="badge badge-s-default">Tipo de público</span>
         </div>
         <h3 class="card-title">
           <a href="#" class="card-title-link ellipsis-2" target="_blank" rel="noopener noreferrer">Este es el título del evento que puede contener 2 líneas de texto</a>
@@ -233,67 +257,6 @@ export const VERTICAL_AGENDA = `<div class="card card-eventos">
         </div>
     </div>
 </div>
-`;
-export const VERTICAL_MISCELLANEA = `
-	<div class="card">
-		<img class="card-img" src="./img.jpg" alt="descripción de imagen" />
-		<div class="card-body card-border-bottom-purple">
-			<h3 class="card-title">
-				<a href="#" class="card-title-link">Título de la tarjeta</a>
-			</h3>
-			<p class="card-text">Descripción de la tarjeta</p>
-		</div>
-	</div>
-
-	<div class="card">
-		<img class="card-img" src="./img.jpg" alt="descripción de imagen" />
-		<div class="card-body card-border-bottom-red">
-			<h3 class="card-title">
-				<a href="#" class="card-title-link">Título de la tarjeta</a>
-			</h3>
-			<p class="card-text">Descripción de la tarjeta</p>
-		</div>
-	</div>
-
-	<div class="card">
-		<img class="card-img" src="./img.jpg" alt="descripción de imagen" />
-		<div class="card-body card-border-bottom-sky">
-			<h3 class="card-title">
-				<a href="#" class="card-title-link">Título de la tarjeta</a>
-			</h3>
-			<p class="card-text">Descripción de la tarjeta</p>
-		</div>
-	</div>
-
-	<div class="card">
-		<img class="card-img" src="./img.jpg" alt="descripción de imagen" />
-		<div class="card-body card-border-bottom-yellow">
-			<h3 class="card-title">
-				<a href="#" class="card-title-link">Título de la tarjeta</a>
-			</h3>
-			<p class="card-text">Descripción de la tarjeta</p>
-		</div>
-	</div>
-
-	<div class="card">
-		<img class="card-img" src="./img.jpg" alt="descripción de imagen" />
-		<div class="card-body card-border-bottom-cyan">
-			<h3 class="card-title">
-				<a href="#" class="card-title-link">Título de la tarjeta</a>
-			</h3>
-			<p class="card-text">Descripción de la tarjeta</p>
-		</div>
-	</div>
-
-	<div class="card">
-		<img class="card-img" src="./img.jpg" alt="descripción de imagen" />
-		<div class="card-body card-border-bottom-blue">
-			<h3 class="card-title">
-				<a href="#" class="card-title-link">Título de la tarjeta</a>
-			</h3>
-			<p class="card-text">Descripción de la tarjeta</p>
-		</div>
-	</div>
 `;
 export const SCROLL_DISPOSITION = `
 <div class="responsive-scroll has-card-items">
@@ -478,11 +441,11 @@ export const DISPOSITION_2 = `
 export const DISPOSITION_SCROLL = `
 <div class="responsive-scroll vertical-cards-container" tabindex="0">
   <div class="card">
-    <img class="card-img" src="/card-img-top.jpg" alt="descripción de imagen" />
+    <img class="card-img" src="/tarjetas/tarjetas_img_top.jpg" alt="descripción de imagen" />
     <div class="card-body">
       <div class="card-badges">
-        <span class="badge badge-default">etiqueta 1</span>
-        <span class="badge badge-default">etiqueta 2</span>
+        <span class="badge badge-p-default badge-sm">Etiqueta</span>
+        <span class="badge badge-s-default badge-sm">Etiqueta</span>
       </div>
       <h3 class="card-title">
         <a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -491,18 +454,18 @@ export const DISPOSITION_SCROLL = `
       <div class="card-info">
         <div>
         <small>
-          <span>Fecha de publicación</span>
+          <span>Fecha de publicación: 00/00/00</span>
         </small>
         </div>
       </div>
     </div>
   </div>
   <div class="card">
-    <img class="card-img" src="/card-img-top.jpg" alt="descripción de imagen" />
+    <img class="card-img" src="/tarjetas/tarjetas_img_top.jpg" alt="descripción de imagen" />
     <div class="card-body">
       <div class="card-badges">
-        <span class="badge badge-default">etiqueta 1</span>
-        <span class="badge badge-default">etiqueta 2</span>
+        <span class="badge badge-p-default badge-sm">Etiqueta</span>
+        <span class="badge badge-s-default badge-sm">Etiqueta</span>
       </div>
       <h3 class="card-title">
         <a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -511,18 +474,18 @@ export const DISPOSITION_SCROLL = `
       <div class="card-info">
         <div>
         <small>
-          <span>Fecha de publicación</span>
+          <span>Fecha de publicación: 00/00/00</span>
         </small>
         </div>
       </div>
     </div>
   </div>
   <div class="card">
-    <img class="card-img" src="/card-img-top.jpg" alt="descripción de imagen" />
+    <img class="card-img" src="/tarjetas/tarjetas_img_top.jpg" alt="descripción de imagen" />
     <div class="card-body">
       <div class="card-badges">
-        <span class="badge badge-default">etiqueta 1</span>
-        <span class="badge badge-default">etiqueta 2</span>
+        <span class="badge badge-p-default badge-sm">Etiqueta</span>
+        <span class="badge badge-s-default badge-sm">Etiqueta</span>
       </div>
       <h3 class="card-title">
         <a href="#" class="card-title-link">Título de la tarjeta</a>
@@ -531,7 +494,7 @@ export const DISPOSITION_SCROLL = `
       <div class="card-info">
         <div>
         <small>
-          <span>Fecha de publicación</span>
+          <span>Fecha de publicación: 00/00/00</span>
         </small>
         </div>
       </div>
@@ -555,12 +518,50 @@ export const TARJETAS_ACCESSIBILTY = `
 
 export const TARJETAS_ACCESSIBILTY_2 = `
 <div class="card">
-  <img class="card-img" src="/card-img-top.jpg" alt="Este es el texto descriptivo de la imagen." />
+  <img class="card-img" src="/tarjetas/tarjetas_img_top.jpg" alt="Este es el texto descriptivo de la imagen." />
   <div class="card-body">
     <h3 class="card-title">
       <a href="#" class="card-title-link">Título de la tarjeta</a>
     </h3>
     <p class="card-text">Descripción de la tarjeta</p>
+  </div>
+</div>
+`;
+
+export const TARJETAS_IMPACTO_VISUAL = `<div class="card card-img-bg">
+    <div class="card-badges-bg">
+        <span class="badge badge-s-default">Etiqueta</span>
+        <span class="badge badge-s-default">Etiqueta</span>
+    </div>
+    <img alt="descripción de imagen" loading="lazy" width="348" height="196" src="/Obelisco-V2/images/" >
+    <p class="headline-lg">Título de la tarjeta</p>
+    <a href="#" aria-label="Descripcion de tarjetas"></a>
+  </div>
+`;
+
+export const CARD_VISUAL_SIN_BORDE = `<div class="card card-horizontal visual-icon-borderless bg-light">
+  <div class="visual-icon-container">
+    <span class="material-symbols-rounded card-icon" aria-hidden="true">info</span>
+  </div>
+  <div class="card-body">
+    <h3 class="card-title">
+      <a href="#" class="card-title-link" target="_blank" rel="noopener noreferrer">
+        Título de la tarjeta con más de una línea
+      </a>
+    </h3>
+    <p class="card-text">Descripción de la tarjeta</p>
+  </div>
+</div>
+
+<div class="card card-horizontal visual-icon-borderless">
+  <div class="visual-icon-container">
+    <span class="material-symbols-rounded card-icon" aria-hidden="true">info</span>
+  </div>
+  <div class="card-body">
+    <h3 class="card-title">
+    <a href="#" class="card-title-link" target="_blank" rel="noopener noreferrer">Título de la tarjeta con más de una línea</a>
+  </h3>
+  <p class="card-text">Descripción de la tarjeta</p>
   </div>
 </div>
 `;

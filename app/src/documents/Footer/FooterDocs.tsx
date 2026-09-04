@@ -111,11 +111,6 @@ const FooterDocs: React.FC = () => {
                         alt="Logo de Ciudad de Buenos Aires"
                         height="40"
                       />
-                      <img
-                        className="img-vamos-ba"
-                        src={`${basePath}/images/logo-footer-ba.svg`}
-                        alt="Logo de Vamos Buenos Aires"
-                      />
                     </div>
                     <div className="col-12">
                       <ul className="list-inline">
@@ -176,11 +171,6 @@ const FooterDocs: React.FC = () => {
                         alt="Logo de Ciudad de Buenos Aires"
                         height="40"
                       />
-                      <img
-                        className="img-vamos-ba"
-                        src={`${basePath}/images/logo-footer-ba.svg`}
-                        alt="Logo de Vamos Buenos Aires"
-                      />
                     </div>
                     <div className="col-12">
                       <ul className="list-inline">
@@ -227,8 +217,8 @@ const FooterDocs: React.FC = () => {
               <div className="container">
                 <h3 className="footer-info-text">¿Te fue útil esta página?</h3>
                 <div className="footer-info-actions">
-                  <button className="btn btn-outline-secondary">Sí, me fue útil</button>
-                  <button className="btn btn-outline-secondary">No me sirvió</button>
+                  <button className="btn btn-outline-light">Sí, me fue útil</button>
+                  <button className="btn btn-outline-light">No me sirvió</button>
                 </div>
               </div>
             </div>
@@ -322,11 +312,6 @@ const FooterDocs: React.FC = () => {
                         src={`${basePath}/images/logo-footer.svg`}
                         alt="Logo de Ciudad de Buenos Aires"
                         height="40"
-                      />
-                      <img
-                        className="img-vamos-ba"
-                        src={`${basePath}/images/logo-footer-ba.svg`}
-                        alt="Logo de Vamos Buenos Aires"
                       />
                     </div>
                     <div className="col-12">
@@ -616,8 +601,8 @@ const FooterDocs: React.FC = () => {
             Todos los elementos del pie de página <i>(footer)</i> pueden recorrerse utilizando la navegación por teclado
             u otras herramientas de asistencia como lectores por voz.
           </p>
-          <span className="badge badge-default ms-1">TAB</span>
-          <span className="badge badge-default">ENTER</span>
+          <span className="badge badge-s-default">TAB</span>
+          <span className="badge badge-s-default">ENTER</span>
           <p className="text-md mb-4">
             Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Además, con
             el <i>enter</i>, puede accionar los elementos sobre los que esté posicionada como botones, enlaces, entre

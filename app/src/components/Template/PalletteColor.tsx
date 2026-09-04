@@ -30,18 +30,9 @@ const PalletteColor: React.FC<PalletteColorProps> = ({ title, arrayColor, titleN
           <p className={`box-color-title ${fixedWidth ? 'fixed' : null}`}>{`${titleName}-${name}`}</p>
           <p className={`box-color-hex ${fixedWidth ? 'fixed' : null}`}>{hex.toUpperCase()}</p>
           {danger ? (
-            <span className="badge badge-danger">{accessibility}</span>
+            <span className="badge badge-s-danger">{accessibility}</span>
           ) : (
-            <span
-              className="badge badge-default"
-              style={{
-                backgroundColor: 'transparent',
-                outlineColor: '#101e37',
-                color: '#101e37',
-              }}
-            >
-              {accessibility}
-            </span>
+            <span className="badge badge-s-default">{accessibility}</span>
           )}
         </div>
       ))}

@@ -251,7 +251,14 @@ export default function AreaDos() {
       title: 'Información institucional',
       content: (
         <>
-          <p>Este bloque se compone de la siguiente información.</p>
+          <p>
+            El bloque de información institucional es de uso opcional. Se aplica cuando el área tenga un funcionario a
+            cargo. En caso de que no haya alguna persona con este rol, este bloque de información no debe incluirse y
+            van únicamente las redes sociales.
+            <br />
+            <br />
+            Se compone de la siguiente información.
+          </p>
 
           <div>
             <h3 className="text-xl mb-2">Título: Información Institucional. </h3>

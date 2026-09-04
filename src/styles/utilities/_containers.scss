@@ -89,8 +89,29 @@
 
 .card-items-2,
 .card-items-3 {
-  .col .card {
-    height: 100%;
+  .col {
+    .card {
+      height: 100%;
+
+      &:not(.card-img-bg) {
+        height: 100%;
+      }
+
+      &.card-img-bg {
+        width: 100%;
+        max-width: none;
+
+        @include media-breakpoint-down(sm) {
+          max-width: 100%;
+          margin-inline: auto;
+        }
+      }
+
+      &.card-img-borderless {
+        width: 100%;
+        max-width: none;
+      }
+    }
   }
 }
 
@@ -104,19 +125,16 @@
   @extend .row;
   @extend .row-cols-1;
   @extend .row-cols-xl-2;
+  row-gap: 2rem;
+  align-items: stretch;
+
   @include media-breakpoint-down(md) {
     row-gap: 1rem;
   }
+
   @include media-breakpoint-between(md, xl) {
     row-gap: 1.5rem;
   }
-  row-gap: 2rem;
-  @include media-breakpoint-down(xl) {
-    .col {
-      padding: 0;
-    }
-  }
-  align-items: stretch;
 
   .col {
     display: flex;

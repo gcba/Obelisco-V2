@@ -10,8 +10,10 @@ import SimpleText from './SimpleText';
 export interface Section {
   id?: string;
   title?: string | React.ReactNode;
+  date?: string | React.ReactNode;
   subtitle?: string | React.ReactNode;
   subtitleBold?: string | React.ReactNode;
+  tertiarytitle?: string | React.ReactNode;
   content?: React.ReactNode;
   description?: string;
   firstTitle?: boolean;
@@ -26,7 +28,6 @@ interface DocumentationTemplateProps {
 const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections, type, noScrollButton }) => {
   const sectionRefs = useMemo(() => sections.map(() => React.createRef<HTMLDivElement>()), [sections]);
   const [activeIndex, setActiveIndex] = useState<number>(0);
-
   const handleScroll = useCallback(() => {
     sectionRefs.forEach((ref, index) => {
       const element = ref.current;
@@ -38,14 +39,12 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
       }
     });
   }, [sectionRefs]);
-
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, [handleScroll]);
-
   return (
     <Scrollspy sectionRefs={sectionRefs} offset={84}>
       {() => (
@@ -59,18 +58,32 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
                   id={section.id || `section-${type}-${index + 1}`}
                   ref={sectionRefs[index]}
                 >
-                  {section.title && (
+                  {section.date ? (
+                    <>
+                      <div
+                        className="d-flex mb-3 align-items-baseline"
+                        style={{ marginTop: section.firstTitle ? `0px` : '48px' }}
+                      >
+                        <h2 className="h4 me-3">{section.title}</h2>
+                        <p style={{ color: '#4A5766' }}>{section.date}</p>
+                      </div>
+                    </>
+                  ) : (
                     <h2 className="h4 mb-3" style={{ marginTop: section.firstTitle ? `0px` : '48px' }}>
                       {section.title}
                     </h2>
                   )}
-
                   {section.subtitle && (
                     <h3 className="text-xl mb-2" style={{ marginLeft: '-16px', marginBottom: '8px !important' }}>
                       <ScrollspySubtitle text={section.subtitle} />
                     </h3>
                   )}
-
+                  {section.tertiarytitle && (
+                    <h3 className="text-xl mb-2" style={{ marginLeft: '-16px', marginBottom: '8px !important' }}>
+                      <ScrollspySubtitle text={section.tertiarytitle} tertiaryLevel={true} />{' '}
+                      {/* Con tertiaryLevel aquí */}
+                    </h3>
+                  )}
                   {section.subtitleBold && (
                     <h3
                       className="text-xl mb-2 fw-semibold"
@@ -79,7 +92,6 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
                       <ScrollspySubtitle text={section.subtitleBold} />
                     </h3>
                   )}
-
                   {section.description && <SimpleText description={section.description} />}
                   {section.content && <div style={{ marginBottom: '32px' }}>{section.content}</div>}
                 </section>
@@ -105,9 +117,19 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
                     <li key={`${section.id}-${index}`} className={activeIndex === index ? 'active' : ''}>
                       <a href={`#${section.id || `section-${type}-${index + 1}`}`} className="text-sm">
                         {section.title && section.title}
+
+                        {section.date && <span className="ms-1">- {section.date}</span>}
+
                         {section.subtitle && <ScrollspySubtitle text={section.subtitle} ScrollspyComponent={true} />}
                         {section.subtitleBold && (
                           <ScrollspySubtitle text={section.subtitleBold} ScrollspyComponent={true} />
+                        )}
+                        {section.tertiarytitle && (
+                          <ScrollspySubtitle
+                            text={section.tertiarytitle}
+                            ScrollspyComponent={true}
+                            tertiaryLevel={true}
+                          />
                         )}
                       </a>
                     </li>

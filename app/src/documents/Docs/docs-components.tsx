@@ -114,6 +114,11 @@ const sections = [
         <li>
           Se elimina la clase <code>.card</code>.
         </li>
+
+        <p className="text-md my-4">
+          <strong>Versión 1.11.1 ⬇️</strong>
+        </p>
+        <li>Se elimina el componente, es reemplazado por Destacado lateral</li>
       </ul>
     ),
   },
@@ -234,6 +239,39 @@ const sections = [
           Bootstrap
         </a>
         .
+        <p className="text-md my-4">
+          <strong>Versión 1.17.0 ⬇️</strong>
+        </p>
+        <li>
+          Se elimina la clase <code>wave</code> que pertenecia al encabezado dinámico.
+        </li>
+        <li>
+          Se eliminan las variantes con multimedia para institucional con clase <code>wave</code> o <code>corner </code>
+          y se crea la nueva variante Cabecera de Pagina con multimedia.
+        </li>
+        <li>
+          Se eliminan las clases de colores para el componente encabezado:
+          <ul>
+            <li>
+              <code>bg-content-hero-cyan</code>
+            </li>
+            <li>
+              <code>bg-content-hero-sky</code>
+            </li>
+            <li>
+              <code>bg-content-hero-yellow</code>
+            </li>
+            <li>
+              <code>bg-content-hero-purple</code>
+            </li>
+            <li>
+              <code>bg-content-hero-red</code>
+            </li>
+            <li>
+              Solo queda disponible como único color <code>bg-content-hero-blue</code>
+            </li>
+          </ul>
+        </li>
       </ul>
     ),
   },
@@ -465,25 +503,9 @@ const sections = [
     title: 'Destacado',
     content: (
       <ul className="docs-list">
-        <li>
-          Se eliminan las clases <code>.card</code> y <code>.card-simple</code>.
-        </li>
-        <li>
-          Las clases <code>.card-img</code>, <code>.block-body</code>, <code>.card-title</code> y{' '}
-          <code>.card-text</code> se reemplazan por <code>.panel-img</code>, <code>.panel-body</code>,{' '}
-          <code>.panel-title</code> y <code>.panel-text</code>, respectivamente.
-        </li>
-        <li>
-          Para la disposición de Destacado conjunto, las clases <code>.card-deck</code> y <code>.max-cards-2</code>{' '}
-          quedan deprecadas, se reemplazan por <code>.highlighted-items-2</code>.
-        </li>
-
-        <li className="list-style-none">
-          <p className="text-md my-4">
-            <strong>Versión 1.8.1 ⬇️</strong>
-          </p>
-        </li>
-
+        <p className="text-md my-4">
+          <strong>Versión 1.8.1 ⬇️</strong>
+        </p>
         <p className="text-md mt-4">Común a todas las variantes:</p>
         <li>
           Se agrega la clase <code>ellipsis-2</code> a <code>panel-title</code>{' '}
@@ -502,6 +524,36 @@ const sections = [
           Se crea la clase: <code>panel-sin-multimedia-v</code> y se utiliza en el mismo div donde va:{' '}
           <code>panel-body-dark</code> / <code>panel-body</code>
         </li>
+
+        <p className="text-md my-4">
+          <strong>Previo a 1.8.1 ⬇️</strong>
+        </p>
+        <li>
+          Se eliminan las clases <code>.card</code> y <code>.card-simple</code>.
+        </li>
+        <li>
+          Las clases <code>.card-img</code>, <code>.block-body</code>, <code>.card-title</code> y{' '}
+          <code>.card-text</code> se reemplazan por <code>.panel-img</code>, <code>.panel-body</code>,{' '}
+          <code>.panel-title</code> y <code>.panel-text</code>, respectivamente.
+        </li>
+        <li>
+          Para la disposición de Destacado conjunto, las clases <code>.card-deck</code> y <code>.max-cards-2</code>{' '}
+          quedan deprecadas, se reemplazan por <code>.highlighted-items-2</code>.
+        </li>
+      </ul>
+    ),
+  },
+  {
+    title: 'Destacado lateral',
+    content: (
+      <ul className="docs-list">
+        <p className="text-md my-4">
+          <strong>Versión 1.11.1 ⬇️</strong>
+        </p>
+        <li>
+          Se crea el componente. Puede incluir Etiquetas, descripción, desplegable de detalle, botón, bloque de
+          compartir en redes.
+        </li>
       </ul>
     ),
   },
@@ -519,6 +571,59 @@ const sections = [
     title: 'Etiquetas',
     content: (
       <ul className="docs-list">
+        <p className="text-md mt-4 mb-2">
+          <strong>Versión 1.13.0 ⬇️</strong>
+        </p>
+
+        <li> Se crearon nuevas clases (primarias y secundarias) para etiquetas.</li>
+        <ul>
+          {/* Estáticas */}
+          <li>
+            <code>.badge-p-{'{color}'}</code>
+          </li>
+          <li>
+            <code>.badge-s-{'{color}'}</code>
+          </li>
+          {/* Estáticas */}
+          {/* Clickeables */}
+          <li>
+            <code>.badge-p-link-{'{color}'}</code>
+          </li>
+          <li>
+            <code>.badge-s-link-{'{color}'}</code>
+          </li>
+          <p>
+            Donde <code>{'{color}'}</code> puede ser: <code>default</code>, <code>info</code>, <code>success</code>,{' '}
+            <code>danger</code>, <code>warning</code> o <code>highlight</code>
+          </p>
+        </ul>
+        {/* Clickeables */}
+        <li>Se crearon nuevas clases para tamaños:</li>
+        <ul>
+          {/* Tamaños */}
+          <li>
+            <code>.badge-sm</code>
+          </li>
+          <li>
+            <code>.badge-lg</code>
+          </li>
+          {/* Tamaños */}
+        </ul>
+        <li>Se crearon nuevas variantes de etiquetas Seleccionables y Eliminables:</li>
+        <ul>
+          {/* Seleccionables y eliminables */}
+          <li>
+            <code>.badge-select</code>
+          </li>
+          <li>
+            <code>.badge-remove</code>
+          </li>
+          {/* Seleccionables y eliminables */}
+        </ul>
+
+        <p className="text-md mt-4 mb-2">
+          <strong>Versión 1.6.1 ⬇️</strong>
+        </p>
         <li>
           Se crean las clases <code>.badge-default</code> y <code>.badge-warning</code>.{' '}
         </li>
@@ -918,6 +1023,31 @@ const sections = [
     title: 'Tarjetas',
     content: (
       <ul className="docs-list">
+        <p className="text-md my-4">
+          <strong>Versión 1.8.0 ⬇️</strong>
+        </p>
+        <li>
+          Se crea la clase <code>.card-eventos</code>, para contener los estilos necesarios para la nueva{' '}
+          <a href="https://gcba.github.io/Obelisco-V2/components/cards#section-dev-10">Tarjeta de Eventos</a>.
+        </li>
+        <li>La Tarjeta de Eventos, ahora admite cómo máximo 2 Etiquetas.</li>
+        <li>También, se agregó un ítem de información del evento: Ubicación</li>
+
+        <p className="text-md my-4">
+          <strong>Versión 1.6.1 ⬇️</strong>
+        </p>
+        <li>
+          Se crean las clases <code>{'.card-border-{direction}-{color}'}</code>
+          <br />
+          Donde <code>{'direction'}</code>, es el posicionamiento: <code>left</code> o <code>bottom</code>
+          <br />
+          Donde <code>{'color'}</code>, es la miscelánea de color: <code>purple</code>, <code>red</code>,{' '}
+          <code>sky</code>, <code>yellow</code>, <code>cyan</code> o <code>blue</code>
+        </li>
+
+        <p className="text-md my-4">
+          <strong>Versión 1.6.0 y anterior ⬇️</strong>
+        </p>
         <li>
           Quedan deprecadas las clases <code>.card-simple</code> y <code>.card-lg</code>.
         </li>
@@ -941,34 +1071,6 @@ const sections = [
           Las clases <code>.card-deck</code>, <code>.max-cards-2</code> y <code>.card-column</code> quedan deprecadas y
           se reemplazan por <code>.card-items-2</code>.
         </li>
-
-        <li className="list-style-none">
-          <p className="text-md my-4">
-            <strong>Versión 1.6.1 ⬇️</strong>
-          </p>
-        </li>
-
-        <li>
-          Se crean las clases <code>{'.card-border-{direction}-{color}'}</code>
-          <br />
-          Donde <code>{'direction'}</code>, es el posicionamiento: <code>left</code> o <code>bottom</code>
-          <br />
-          Donde <code>{'color'}</code>, es la miscelánea de color: <code>purple</code>, <code>red</code>,{' '}
-          <code>sky</code>, <code>yellow</code>, <code>cyan</code> o <code>blue</code>
-        </li>
-
-        <li className="list-style-none">
-          <p className="text-md my-4">
-            <strong>Versión 1.8.0 ⬇️</strong>
-          </p>
-        </li>
-
-        <li>
-          Se crea la clase <code>.card-eventos</code>, para contener los estilos necesarios para la nueva{' '}
-          <a href="https://gcba.github.io/Obelisco-V2/components/cards#section-dev-10">Tarjeta de Eventos</a>.
-        </li>
-        <li>La Tarjeta de Eventos, ahora admite cómo máximo 2 Etiquetas.</li>
-        <li>También, se agregó un ítem de información del evento: Ubicación</li>
       </ul>
     ),
   },

@@ -16,7 +16,7 @@ $footer-icon-separation: 0.25rem;
 $footer-icon-size: 1.5rem;
 
 $divider-margin: 1.625rem 0 2.5rem 0;
-$divider-border: 0.125rem solid $slate-700;
+$divider-border: 0.125rem solid $blue-700;
 
 $divider-margin-mobile: 2rem 0 2rem;
 
@@ -33,9 +33,18 @@ $footer-social-x: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0
   background-color: $dark;
   padding: 40px 0;
   outline: 0.25rem solid transparent;
+  border-radius: $border-radius-7xl $border-radius-7xl 0 0;
+  z-index: 2;
+  position: relative;
+
+  @include media-breakpoint-down(lg) {
+    border-radius: $border-radius-6xl $border-radius-6xl 0 0;
+  }
 
   @include media-breakpoint-down(sm) {
     padding: $footer-padding-y-sm 0;
+
+    // top: -25px;
   }
 
   h4,
@@ -168,15 +177,21 @@ $footer-social-x: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0
 }
 
 .footer-info {
-  background-color: $slate-50;
+  background-color: $blue-700;
+  color: $gray-0;
   padding: $footer-info-padding;
   word-break: break-word;
-  border-top: $footer-border-width solid $footer-border-color;
+  border-radius: $border-radius-7xl $border-radius-7xl 0 0;
+  min-height: 160px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: -60px;
 
   > .container {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+    justify-content: center;
     gap: $footer-info-gap;
 
     .footer-info-text {
@@ -187,7 +202,7 @@ $footer-social-x: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0
     }
 
     .footer-info-actions {
-      flex-basis: 50%;
+      // flex-basis: 50%;
       display: flex;
       flex-shrink: 0;
       align-items: center;
@@ -195,7 +210,13 @@ $footer-social-x: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0
     }
   }
 
+  @include media-breakpoint-down(lg) {
+    border-radius: $border-radius-6xl $border-radius-6xl 0 0;
+  }
+
   @include media-breakpoint-down(sm) {
+    bottom: -4px;
+
     .container {
       flex-wrap: wrap;
       gap: $footer-info-gap-mobile;
@@ -209,7 +230,23 @@ $footer-social-x: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0
         flex-shrink: 1;
         gap: 0.5rem;
         align-items: flex-start;
+        justify-content: center;
+        padding-bottom: clamp(70px, 5vw, 50px);
       }
     }
   }
+
+  @media (width <= 405px) {
+    .container {
+      .footer-info-actions {
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+  }
+
+  // @media (width <= 343px) {
+  //   padding: 1.5rem 0 3.5rem;
+  //   min-height: 330px;
+  // }
 }

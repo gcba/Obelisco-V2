@@ -13,7 +13,7 @@ export const OPENSANS_CODE = `<link href="https://fonts.googleapis.com/css2?fami
 export const STYLES_CODE = `<link rel="stylesheet" href="ruta/al/proyecto/dist/styles.css" />`;
 export const STYLES_CODE_CSS = `@import "@gcba/obelisco-v2/dist/styles.css";`;
 export const STYLES_CODE_CSS_WEBPACK4 = `@import "~@gcba/obelisco-v2/dist/styles.css";`;
-export const NUNITO_CODE = `<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet" />`;
+export const NUNITO_CODE = `<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">`;
 export const BOXICONS_CODE = `<link href='https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>`;
 export const MATERIAL_S_CODE_NPM = `npm install material-symbols@latest`;
 export const MATERIAL_SYMBOLS_CODE = `<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet"/>`;

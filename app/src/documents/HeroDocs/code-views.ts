@@ -1,4 +1,4 @@
-export const HERO_INSTITUCIONAL = `<header class="hero">
+export const HERO_INSTITUCIONAL = `<header class="hero bg-content-hero-dark">
   <div class="content corner">
     <div class="d-flex flex-column">
       <nav aria-label="Navegación secundaria">
@@ -16,16 +16,16 @@ export const HERO_INSTITUCIONAL = `<header class="hero">
         </p>
       </div>
       <div class="btn-hero">
-        <button type="button" class="btn btn-secondary">
+        <button type="button" class="btn btn-primary">
           Botón
         </button>
-        <button type="button" class="btn btn-outline-secondary">
+        <button type="button" class="btn btn-outline-primary">
           Botón
         </button>
       </div>
     </div>
   </div>
-  <div class="aside bg-aside-hero-dark"></div>
+  <div class="aside bg-aside-hero-light"></div>
 </header>`;
 
 export const HERO_DINAMICO = `<header class="hero">
@@ -42,7 +42,7 @@ export const HERO_DINAMICO = `<header class="hero">
             </p>
          </div>
 				<div class="btn-hero">
-					<button type="button" class="btn btn-secondary">
+					<button type="button" class="btn btn-primary">
 						Botón
 					</button>
 					<button type="button" class="btn btn-outline-secondary">
@@ -67,7 +67,7 @@ export const HERO_CON_IMAGEN = `<header class="hero">
             <p class="lead m-0">Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.</p>
          </div>
 				<div class="btn-hero">
-					<button type="button" class="btn btn-secondary">
+					<button type="button" class="btn btn-primary">
 						Botón
 					</button>
 					<button type="button" class="btn btn-outline-secondary">
@@ -94,7 +94,7 @@ export const HERO_CON_VIDEO = `<header class="hero">
             <p class="lead m-0">Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.</p>
          </div>
 				<div class="btn-hero">
-					<button type="button" class="btn btn-secondary">
+					<button type="button" class="btn btn-primary">
 						Botón
 					</button>
 					<button type="button" class="btn btn-outline-secondary">
@@ -123,7 +123,7 @@ export const HERO_CON_VIDEO_IFRAME = `<header class="hero">
             <p class="lead m-0">Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.</p>
          </div>
 				<div class="btn-hero">
-					<button type="button" class="btn btn-secondary">
+					<button type="button" class="btn btn-primary">
 						Botón
 					</button>
 					<button type="button" class="btn btn-outline-secondary">
@@ -157,7 +157,7 @@ export const HERO_CON_GIF = `<header class="hero">
             <p class="lead m-0">Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.</p>
          </div>
 				<div class="btn-hero">
-					<button type="button" class="btn btn-secondary">
+					<button type="button" class="btn btn-primary">
 						Botón
 					</button>
 					<button type="button" class="btn btn-outline-secondary">
@@ -171,7 +171,7 @@ export const HERO_CON_GIF = `<header class="hero">
   </div>
 </header>`;
 
-export const HERO_CON_CAMPO_BUSCADOR = `<header class="hero">
+export const HERO_CON_CAMPO_BUSCADOR = `<header class="hero bg-content-hero-light">
   <div class="content corner">
     <div class="d-flex flex-column">
       <nav aria-label="Navegación secundaria">
@@ -227,10 +227,10 @@ export const HERO_CON_CAMPO_BUSCADOR = `<header class="hero">
 			</div>
     </div>
   </div>
-  <div class="aside bg-aside-hero-dark"></div>
+  <div class="aside bg-aside-hero-light"></div>
 </header>`;
 
-export const HERO_CON_ETIQUETAS = `<header class="hero">
+export const HERO_CON_ETIQUETAS = `<header class="hero bg-content-hero-dark">
   <div class="content corner">
     <div class="d-flex flex-column">
       <nav aria-label="Navegación secundaria">
@@ -249,16 +249,16 @@ export const HERO_CON_ETIQUETAS = `<header class="hero">
       </div>
       <div class="d-flex flex-wrap column-gap-2 row-gap-4">
         <span class="me-3 fw-semibold">Texto de las etiquetas: </span>
-        <span class="badge badge-default">Etiqueta</span>
-        <span class="badge badge-default">Etiqueta</span>
-        <span class="badge badge-default">Etiqueta</span>
+        <span class="badge badge-s-default">Etiqueta</span>
+        <span class="badge badge-s-default">Etiqueta</span>
+        <span class="badge badge-s-default">Etiqueta</span>
       </div>
     </div>
   </div>
-  <div class="aside bg-aside-hero-dark"></div>
+  <div class="aside bg-aside-hero-light"></div>
 </header>`;
 
-export const HERO_CON_DESPLEGABLES = `<header class="hero">
+export const HERO_CON_DESPLEGABLES = `<header class="hero bg-content-hero-light">
   <div class="content corner">
     <div class="d-flex flex-column">
       <nav aria-label="Navegación secundaria">
@@ -351,7 +351,7 @@ export const HERO_CON_DESPLEGABLES = `<header class="hero">
       </div>
     </div>
   </div>
-  <div class="aside bg-aside-hero-dark"></div>
+  <div class="aside bg-aside-hero-light"></div>
 </header>`;
 
 export const HERO_NOTICIAS = `<header class="hero">
@@ -392,7 +392,7 @@ export const HERO_NOTICIAS = `<header class="hero">
 </header>`;
 
 export const HERO_COLORES = `<!-- default -->
-<header class="hero bg-content-hero-cyan">
+<header class="hero bg-content-hero-blue">
   <div class="content corner">
     <div class="d-flex flex-column">
       <nav aria-label="Navegación secundaria">
@@ -410,7 +410,7 @@ export const HERO_COLORES = `<!-- default -->
         </p>
       </div>
       <div class="btn-hero">
-        <button type="button" class="btn btn-secondary">
+        <button type="button" class="btn btn-primary">
           Botón
         </button>
         <button type="button" class="btn btn-outline-secondary">
@@ -440,7 +440,7 @@ export const HERO_COLORES = `<!-- default -->
         </p>
       </div>
       <div class="btn-hero">
-        <button type="button" class="btn btn-secondary">
+        <button type="button" class="btn btn-primary">
           Botón
         </button>
         <button type="button" class="btn btn-outline-secondary">
@@ -470,7 +470,7 @@ export const HERO_COLORES = `<!-- default -->
         </p>
       </div>
       <div class="btn-hero">
-        <button type="button" class="btn btn-secondary">
+        <button type="button" class="btn btn-primary">
           Botón
         </button>
         <button type="button" class="btn btn-outline-secondary">
@@ -500,7 +500,7 @@ export const HERO_COLORES = `<!-- default -->
         </p>
       </div>
       <div class="btn-hero">
-        <button type="button" class="btn btn-secondary">
+        <button type="button" class="btn btn-primary">
           Botón
         </button>
         <button type="button" class="btn btn-outline-secondary">
@@ -530,7 +530,7 @@ export const HERO_COLORES = `<!-- default -->
         </p>
       </div>
       <div class="btn-hero">
-        <button type="button" class="btn btn-secondary">
+        <button type="button" class="btn btn-primary">
           Botón
         </button>
         <button type="button" class="btn btn-outline-secondary">
@@ -560,7 +560,7 @@ export const HERO_COLORES = `<!-- default -->
         </p>
       </div>
       <div class="btn-hero">
-        <button type="button" class="btn btn-secondary">
+        <button type="button" class="btn btn-primary">
           Botón
         </button>
         <button type="button" class="btn btn-outline-secondary">
@@ -591,7 +591,7 @@ export const HERO_LIGHT = `<header class="hero bg-content-hero-light">
         </p>
       </div>
       <div class="btn-hero">
-        <button type="button" class="btn btn-secondary">
+        <button type="button" class="btn btn-primary">
           Botón
         </button>
         <button type="button" class="btn btn-outline-secondary">
@@ -667,8 +667,8 @@ export const HERO_REDES_SOCIALES = `<header class="hero bg-content-hero-light">
 			</nav>
 
 			<div class="d-flex flex-wrap align-items-center column-gap-2 row-gap-4">
-				<span class="badge badge-info">Etiqueta</span>
-				<span class="badge badge-info">Etiqueta</span>
+				<span class="badge badge-s-info">Etiqueta</span>
+				<span class="badge badge-s-info">Etiqueta</span>
 			</div>
 
 			<div>
@@ -701,3 +701,5 @@ export const HERO_REDES_SOCIALES = `<header class="hero bg-content-hero-light">
 	<div class="aside bg-aside-hero-light"></div>
 </header>
 `;
+
+export const HERO_MULTIMEDIA = ``;

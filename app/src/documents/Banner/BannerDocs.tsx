@@ -59,7 +59,7 @@ const BannerDocs: React.FC = () => {
                   superen más de una línea de texto.
                 </p>
                 <div className="banner-actions">
-                  <LinkClient className="btn btn-sm btn-primary">Botón</LinkClient>
+                  <LinkClient className="btn btn-sm btn-secondary">Botón</LinkClient>
                 </div>
               </div>
             </div>
@@ -76,7 +76,7 @@ const BannerDocs: React.FC = () => {
                   superen más de una línea de texto.
                 </p>
                 <div className="banner-actions">
-                  <LinkClient className="btn btn-sm btn-primary">Botón</LinkClient>
+                  <LinkClient className="btn btn-sm btn-secondary">Botón</LinkClient>
                 </div>
               </div>
             </div>
@@ -99,8 +99,8 @@ const BannerDocs: React.FC = () => {
                   superen más de una línea de texto.
                 </p>
                 <div className="banner-actions">
-                  <LinkClient className="btn btn-sm btn-primary">Botón</LinkClient>
-                  <LinkClient className="btn btn-sm btn-outline-primary">Botón</LinkClient>
+                  <LinkClient className="btn btn-sm btn-secondary">Botón</LinkClient>
+                  <LinkClient className="btn btn-sm btn-outline-secondary">Botón</LinkClient>
                 </div>
               </div>
             </div>
@@ -117,7 +117,7 @@ const BannerDocs: React.FC = () => {
                   superen más de una línea de texto.
                 </p>
                 <div className="banner-actions">
-                  <LinkClient className="btn btn-sm btn-primary">Botón</LinkClient>
+                  <LinkClient className="btn btn-sm btn-secondary">Botón</LinkClient>
                   <LinkClient className="btn btn-sm btn-outline-light">Botón</LinkClient>
                 </div>
               </div>
@@ -420,8 +420,8 @@ const BannerDocs: React.FC = () => {
             El componente de banner está construido para ser accesible mediante navegación por teclado y reconocible por
             lectores de pantalla, comunicando su estado de forma clara.
           </p>
-          <span className="badge badge-default ms-1">TAB</span>
-          <span className="badge badge-default">ENTER</span>
+          <span className="badge badge-s-default ms-1">TAB</span>
+          <span className="badge badge-s-default">ENTER</span>
           <ul className="list-informative-bullet mt-4 mb-4">
             <li className="mb-3">
               Tab / Shift + Tab <br />

@@ -7,7 +7,8 @@ import ComponentHeader from '@/components/Template/ComponentHeader';
 // import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 // import MainDescription from '@/components/Template/MainDescription';
 
-import { GALLERY_INTERACTIVE } from './code-views';
+import { GALLERY_CAROUSEL_INDICATORS, GALLERY_CAROUSEL_THUMBNAILS, GALLERY_INTERACTIVE } from './code-views';
+import GalleryCarousel from './GalleryCarousel';
 
 export const DATA_GALERY = [
   {
@@ -190,6 +191,29 @@ const GalleryDocs: React.FC = () => {
             </div>
           </div>
         </CodeBox>
+      ),
+    },
+    {
+      title: 'Carrusel',
+      content: (
+        <>
+          <p className="mb-4">
+            Sin sincronización personalizada, la vista ampliada comienza siempre en la primera imagen.
+          </p>
+          <h3 className="mb-3">Galería con miniaturas</h3>
+          <CodeBox codeHTML={GALLERY_CAROUSEL_THUMBNAILS}>
+            <div className="px-3">
+              <GalleryCarousel baseId="galleryThumbnails" images={DATA_GALERY} variant="thumbnails" />
+            </div>
+          </CodeBox>
+          <hr className="my-5" />
+          <h3 className="mb-3">Galería con indicadores</h3>
+          <CodeBox codeHTML={GALLERY_CAROUSEL_INDICATORS}>
+            <div className="px-3">
+              <GalleryCarousel baseId="galleryIndicators" images={DATA_GALERY} variant="indicators" />
+            </div>
+          </CodeBox>
+        </>
       ),
     },
   ];

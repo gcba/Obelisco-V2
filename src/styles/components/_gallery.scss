@@ -148,6 +148,22 @@ $carousel-margin-bottom: 0.25rem * 4;
   }
 }
 
+.carousel.gallery-carousel.gallery-carousel-thumbnails {
+  .gallery-carousel-navigation {
+    gap: 0.75rem;
+
+    > .carousel-control-prev,
+    > .carousel-control-next {
+      flex: 0 0 auto;
+    }
+
+    .carousel-indicators {
+      flex: 1 1 auto;
+      min-width: 0;
+    }
+  }
+}
+
 // Custom styles
 .modal-carousel {
   background: $white;
@@ -393,6 +409,117 @@ $carousel-margin-bottom: 0.25rem * 4;
       > img {
         border-radius: 4px;
       }
+    }
+  }
+}
+
+// Gallery carousel
+.carousel.gallery-carousel {
+  padding: 0 1.5rem;
+  background-color: $white;
+  row-gap: 0;
+
+  .gallery-carousel-image {
+    position: relative;
+
+    img {
+      width: 100%;
+      aspect-ratio: 3 / 2;
+      object-fit: cover;
+      object-position: center;
+      border-radius: $border-radius-lg;
+    }
+  }
+
+  .gallery-carousel-expand {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    color: $body-color;
+    background-color: $white;
+    border: none;
+    border-radius: $border-radius-pill;
+    outline: $outline-border;
+
+    &:hover {
+      background-color: $slate-50;
+    }
+
+    &:focus {
+      box-shadow: $focus-box-shadow;
+      outline: 0.25rem solid transparent;
+    }
+
+    .o-icon {
+      font-size: 1.25rem;
+    }
+  }
+
+  .gallery-carousel-navigation {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 4rem;
+    margin-top: 0.75rem;
+    padding: 0 0.5rem;
+  }
+
+  .carousel-indicators {
+    position: static;
+    flex: 1;
+    justify-content: flex-start;
+  }
+
+  .gallery-carousel-controls {
+    display: flex;
+    gap: 0.75rem;
+    margin-left: auto;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: static;
+    width: 3rem;
+    height: 3rem;
+  }
+
+  &.gallery-carousel-thumbnails {
+    .carousel-indicators {
+      gap: 0.5rem;
+      overflow-x: auto;
+
+      button {
+        flex: 0 0 4rem;
+        width: 4rem;
+        height: 4rem;
+        background-position: center;
+        background-size: cover;
+        border: 0.125rem solid transparent;
+        border-radius: $border-radius-md;
+        opacity: 0.6;
+
+        &:hover,
+        &:focus,
+        &.active {
+          opacity: 1;
+        }
+
+        &.active {
+          border-color: $body-color;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    .gallery-carousel-navigation {
+      align-items: flex-end;
     }
   }
 }

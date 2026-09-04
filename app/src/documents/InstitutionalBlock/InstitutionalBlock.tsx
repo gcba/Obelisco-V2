@@ -1,15 +1,15 @@
 // import Image from 'next/image';
 import React from 'react';
-// const basePath = '/Obelisco-V2';
+const basePath = '/Obelisco-V2';
 // import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 // import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import CodeBox from '@/components/CodeBox';
-import LinkClient from '@/components/LinkClient';
+// import LinkClient from '@/components/LinkClient';
 import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 
-import { LINK_DEFAULT, LINK_EXTERNAL, LINK_DOWNLOAD, LINK_ACCESS } from './code-views';
+import { LINK_DEFAULT } from './code-views';
 
 const InstitutionalBlockDocs: React.FC = () => {
   const SECTIONS_DEV = [
@@ -19,101 +19,33 @@ const InstitutionalBlockDocs: React.FC = () => {
       content: (
         <>
           <CodeBox codeHTML={LINK_DEFAULT}>
-            <div className="container">
-              <p>
-                <LinkClient>enlace en párrafo</LinkClient>
-              </p>
-              <p>
-                <small>
-                  <LinkClient>enlaces en párrafo</LinkClient>
-                </small>
-              </p>
-              <div className="bg-dark p-2">
-                <p>
-                  <LinkClient className="link-white">enlace en párrafo</LinkClient>
-                </p>
-                <p className="mb-0">
-                  <small>
-                    <LinkClient className="link-white">enlaces en párrafo</LinkClient>
-                  </small>
-                </p>
+            <div className="bloque-institucional">
+              <img
+                src={`${basePath}/images/bloque_institucional/avatar_autoridad.svg`}
+                alt="Avatar de la autoridad"
+                className="bloque-institucional-img"
+              />
+              <div className="bloque-institucional-body">
+                <div className="bloque-institucional-autoridad">
+                  <h4>Raúl Piola</h4>
+                  <p className="text-xl">Secretario de Innovación y Transformación Digital</p>
+                </div>
+                <div className="bloque-institucional-contacto">
+                  <p className="headline-lg">Contacto</p>
+                  <p className="text-md">Teléfono: 4323-9380 (int. 4011)</p>
+                  <p className="text-md">Correo electrónico: rpiola@buenosaires.gob.ar </p>
+                </div>
+                <div className="bloque-institucional-redes">
+                  <p className="headline-lg">Seguinos en redes</p>
+                  <div className="iconos-redes">
+                    <i className="o-icon bxl bx-facebook"></i>
+                    <i className="o-icon bxl bx-facebook"></i>
+                    <i className="o-icon bxl bx-facebook"></i>
+                  </div>
+                </div>
               </div>
             </div>
           </CodeBox>
-        </>
-      ),
-    },
-    {
-      title: 'Externo',
-      content: (
-        <>
-          <CodeBox codeHTML={LINK_EXTERNAL}>
-            <div className="container">
-              <div className="p-2">
-                <p>
-                  <LinkClient className="external">enlace externo</LinkClient>
-                </p>
-              </div>
-              <div className="bg-dark p-2">
-                <p className="mb-0">
-                  <LinkClient className="external link-white">enlace externo</LinkClient>
-                </p>
-              </div>
-            </div>
-          </CodeBox>
-        </>
-      ),
-    },
-    {
-      title: 'Descarga',
-      content: (
-        <>
-          <CodeBox codeHTML={LINK_DOWNLOAD}>
-            <div className="container">
-              <div className="p-2">
-                <p>
-                  <LinkClient className="download" download="">
-                    enlace de descarga
-                  </LinkClient>
-                </p>
-              </div>
-
-              <div className="bg-dark p-2">
-                <p className="mb-0">
-                  <LinkClient className="download link-white" download="">
-                    enlace de descarga
-                  </LinkClient>
-                </p>
-              </div>
-              <LinkClient className="btn btn-secondary btn-sm download-link my-3" download="">
-                Descargar
-              </LinkClient>
-            </div>
-          </CodeBox>
-        </>
-      ),
-    },
-    {
-      title: 'Acceso',
-      content: (
-        <>
-          <CodeBox codeHTML={LINK_ACCESS}>
-            <div className="container">
-              <div className="p-2">
-                <p>
-                  <LinkClient className="access">enlace de acceso</LinkClient>
-                </p>
-              </div>
-
-              <div className="bg-dark p-2">
-                <p className="mb-0">
-                  <LinkClient className="access link-white">enlace de acceso</LinkClient>
-                </p>
-              </div>
-            </div>
-          </CodeBox>
-
-          <br />
         </>
       ),
     },
@@ -122,9 +54,9 @@ const InstitutionalBlockDocs: React.FC = () => {
   return (
     <>
       <ComponentHeader
-        title="Enlaces"
+        title="Bloque institucional"
         description={[
-          'Los enlaces son hipervínculos que la persona usuaria utiliza para navegar contenidos en un sitio web. Pueden dirigir tanto a información y recursos dentro de una misma página o sitio web, como también a páginas externas.',
+          'El bloque institucional contiene información de la persona responsable del Ministerio, Secretaría u organismo. Se emplea en las plantillas de páginas de nivel 1 y 2.',
         ]}
       />
       <Tabs sectionDev={SECTIONS_DEV} />

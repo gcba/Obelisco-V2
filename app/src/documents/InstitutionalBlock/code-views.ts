@@ -1,41 +1,63 @@
-export const LINK_DEFAULT = `
-  <a href="#" target="_blank" rel="noopener noreferrer">enlace en párrafo</a>
-  <small>
-    <a href="#" target="_blank" rel="noopener noreferrer">enlaces en párrafo</a>
-  </small>
-
-  <div class="bg-dark">
-    <a href="#" class="link-white" target="_blank" rel="noopener noreferrer">enlace en párrafo</a>
-    <small>
-      <a href="#" class="link-white" target="_blank" rel="noopener noreferrer">enlaces en párrafo</a>
-    </small>
+export const BLOQUE_INSTITUCIONAL = `<div class="container">
+    <div class="bloque-institucional">
+      <img src="/Obelisco-V2/images/bloque_institucional/avatar_autoridad.svg" alt="Avatar de la autoridad" class="bloque-institucional-img">
+      <div class="bloque-institucional-body">
+        <div class="bloque-institucional-autoridad">
+          <h4>Nombre y apellido</h4>
+          <p class="text-xl">Cargo o rol dentro del organismo</p>
+        </div>
+        <div class="bloque-institucional-contacto">
+          <p class="headline-lg">Contacto</p>
+          <p class="text-md">Teléfono: 4000-0000 (int. 4000)</p>
+          <p class="text-md">Correo electrónico: apellido@buenosaires.gob.ar </p>
+        </div>
+        <div class="bloque-institucional-redes">
+          <p class="headline-lg">Seguinos en redes</p>
+          <div class="iconos-redes">
+            <a href="http://">
+              <i class="o-icon bxl bx-facebook"></i>
+            </a>
+            <a href="http://">
+              <i class="o-icon bxl bx-instagram-alt"></i>
+            </a>
+            <a href="http://">
+              <i class="o-icon bxl bx-twitter-x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
   </div>
-`;
-export const LINK_EXTERNAL = `
-  <a class="external" href="#" target="_blank" rel="noopener noreferrer">enlace externo</a>
-                       
-  <div class="bg-dark">
-    <a class="external link-white" href="#" target="_blank" rel="noopener noreferrer">enlace externo</a>
-  </div>
-`;
-export const LINK_DOWNLOAD = `
-  <a class="download" href="#" target="_blank" rel="noopener noreferrer" download="">enlace de descarga</a>
-
-  <div class="bg-dark">
-    <a class="download link-white" href="#" target="_blank" rel="noopener noreferrer" download="">enlace de descarga</a>
-  </div>
-
-  <a class="btn btn-secondary btn-sm download-link" href="#" target="_blank" rel="noopener noreferrer" download="">Descargar</a>
-`;
-export const LINK_ACCESS = `
-  <a class="access" href="#" target="_blank" rel="noopener noreferrer">enlace de acceso</a>
-  
-  <div class="bg-dark">
-    <a class="access link-white" href="#" target="_blank" rel="noopener noreferrer">enlace de acceso</a>
-  </div>
+</div>
 `;
 
-export const LINK_ACCESSIBILTY = `<a href="https://facebook.com/GCBA" aria-label="Ir a la página de Facebook del Gobierno de la Ciudad de Buenos Aires" target="_blank" rel="noopener noreferrer">
-  Facebook
-</a>
+export const BLOQUE_INSTITUCIONAL_SIN_MULTIMEDIA = `<div class="container">
+    <div class="bloque-institucional">
+      
+      <div class="bloque-institucional-body">
+        <div class="bloque-institucional-autoridad">
+          <h4>Nombre y apellido</h4>
+          <p class="text-xl">Cargo o rol dentro del organismo</p>
+        </div>
+        <div class="bloque-institucional-contacto">
+          <p class="headline-lg">Contacto</p>
+          <p class="text-md">Teléfono: 4000-0000 (int. 4000)</p>
+          <p class="text-md">Correo electrónico: apellido@buenosaires.gob.ar </p>
+        </div>
+        <div class="bloque-institucional-redes">
+          <p class="headline-lg">Seguinos en redes</p>
+          <div class="iconos-redes">
+            <a href="http://">
+              <i class="o-icon bxl bx-facebook"></i>
+            </a>
+            <a href="http://">
+              <i class="o-icon bxl bx-instagram-alt"></i>
+            </a>
+            <a href="http://">
+              <i class="o-icon bxl bx-twitter-x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
 `;

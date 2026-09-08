@@ -1,0 +1,103 @@
+.bloque-institucional {
+  background-color: $blue-50;
+  padding: 32px 32px 32px 95px;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  width: 100%;
+  min-height: 236px;
+  height: auto;
+  border-radius: $border-radius-6xl;
+
+  @include media-breakpoint-down(lg) {
+    padding: 32px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 24px;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .bloque-institucional-img {
+    // margin-right: 32px;
+    width: 158px;
+    height: 158px;
+  }
+
+  // Bloque institucional autoridad - nombre, cargo
+  .bloque-institucional-autoridad {
+    margin-bottom: 32px;
+
+    h4 {
+      margin-bottom: 8px;
+    }
+
+    .text-xl {
+      margin-bottom: 0;
+    }
+  }
+
+  // Bloque institucional autoridad - nombre, cargo
+
+  // Bloque institucional body - contacto, telefono, correo
+  .bloque-institucional-body {
+    .bloque-institucional-contacto {
+      margin-bottom: 24px;
+
+      .headline-lg,
+      .text-md {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  // Bloque institucional body - contacto, telefono, correo
+
+  // Bloque institucional redes
+  .bloque-institucional-redes {
+    .headline-lg {
+      margin-bottom: 8px;
+    }
+
+    .iconos-redes {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+
+      a:has(.o-icon) {
+        text-decoration: none;
+
+        .o-icon {
+          padding: 8px 12px;
+          border-radius: $border-radius-6xl;
+          border: 1px solid $blue-700;
+          color: $blue-950;
+          height: 35px;
+          width: 35px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        &:hover {
+          .o-icon {
+            background-color: $blue-200;
+          }
+        }
+
+        &:focus,
+        &:focus-visible {
+          box-shadow: none;
+
+          .o-icon {
+            background-color: none;
+            border: 2px solid $cyan-800;
+          }
+        }
+      }
+    }
+  }
+
+  // Bloque institucional redes
+}

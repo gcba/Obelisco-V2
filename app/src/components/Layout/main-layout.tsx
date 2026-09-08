@@ -47,7 +47,7 @@ export const componentsPages = [
   { text: 'Enlace', url: '/components/link', id: 14 },
   { text: 'Etiquetas', url: '/components/badge', id: 15 },
   { text: 'Galería', url: '/components/gallery', id: 16 },
-  { text: 'Indicador de datos', url: '/components/indicator', id: 17 },
+  { text: 'Indicador', url: '/components/indicator', id: 17 },
   { text: 'Lista de enlaces', url: '/components/list-link', id: 18 },
   { text: 'Lista de pasos', url: '/components/list-step', id: 19 },
   { text: 'Lista informativa', url: '/components/list-informative', id: 20 },

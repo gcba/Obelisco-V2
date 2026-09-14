@@ -57,11 +57,6 @@ const PaginaSimple8ColsDocs: React.FC = () => {
                     </Link>
                     .
                   </li>
-                  <li>
-                    Para agrupar información sobre un mismo tema en subtemas, en este caso recomendamos el uso de la
-                    plantilla de{' '}
-                    <Link href={'https://gcba.github.io/Obelisco-V2/templates/pagina-de-libro'}>página libro</Link>.
-                  </li>
                 </ul>
               </div>
             </div>

@@ -5,7 +5,14 @@ import Tabs from '@/components/Tabs';
 import ComponentHeader from '@/components/Template/ComponentHeader';
 const basePath = '/Obelisco-V2';
 
-import { INDICATOR, INDICATOR_BG, INDICATOR_NO_BORDER, INDICATOR_SIZE, INDICATOR_DISPOSITION } from './code-views';
+import {
+  INDICATOR,
+  INDICATOR_BG,
+  INDICATOR_NO_BORDER,
+  INDICATOR_SIZE,
+  INDICATOR_DISPOSITION_3_COLUMNS,
+  INDICATOR_DISPOSITION_2_COLUMNS,
+} from './code-views';
 
 const SECTIONS_DEV = [
   {
@@ -79,8 +86,11 @@ const SECTIONS_DEV = [
   },
   {
     title: 'Disposición',
+  },
+  {
+    title: 'En tres columnas',
     content: (
-      <CodeBox codeHTML={INDICATOR_DISPOSITION}>
+      <CodeBox codeHTML={INDICATOR_DISPOSITION_3_COLUMNS}>
         <div className="container">
           <div className="indicator-items-3">
             <div className="col">
@@ -106,8 +116,18 @@ const SECTIONS_DEV = [
                 <p className="text-md">Tiempo que se ahorran los vecinos y la administracion Pública</p>
               </div>
             </div>
-
-            <div className="col w-lg-50">
+          </div>
+        </div>
+      </CodeBox>
+    ),
+  },
+  {
+    title: 'En dos columnas',
+    content: (
+      <CodeBox codeHTML={INDICATOR_DISPOSITION_2_COLUMNS}>
+        <div className="container">
+          <div className="highlighted-items-2">
+            <div className="col">
               <div className="indicator bg-light mw-lg-100">
                 <h1>36.578</h1>
                 <p className="headline-lg">Días ahorrados</p>
@@ -115,7 +135,7 @@ const SECTIONS_DEV = [
               </div>
             </div>
 
-            <div className="col w-lg-50">
+            <div className="col">
               <div className="indicator bg-light mw-lg-100">
                 <h1>36.578</h1>
                 <p className="headline-lg">Días ahorrados</p>

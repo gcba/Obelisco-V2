@@ -42,8 +42,8 @@ export const INDICATOR_SIZE = `
 </div>
 `;
 
-export const INDICATOR_DISPOSITION = `
-<div class="card-items-3">
+export const INDICATOR_DISPOSITION_3_COLUMNS = `
+<div class="indicator-items-3">
   <div class="col">
     <div class="indicator">
       <h1>36.578</h1>
@@ -65,14 +65,19 @@ export const INDICATOR_DISPOSITION = `
       <p class="text-md">Tiempo que se ahorran los vecinos y la administracion Pública</p>
     </div>
   </div>
-  <div class="col w-lg-50">
+</div>
+`;
+
+export const INDICATOR_DISPOSITION_2_COLUMNS = `
+<div class="highlighted-items-2">
+  <div class="col">
     <div class="indicator bg-light mw-lg-100">
       <h1>36.578</h1>
       <p class="headline-lg">Días ahorrados</p>
       <p class="text-md">Tiempo que se ahorran los vecinos y la administracion Pública</p>
     </div>
   </div>
-  <div class="col w-lg-50">
+  <div class="col">
     <div class="indicator bg-light mw-lg-100">
       <h1>36.578</h1>
       <p class="headline-lg">Días ahorrados</p>

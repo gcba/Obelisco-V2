@@ -1,13 +1,13 @@
 <svg width="348" height="259" viewBox="0 0 348 259" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="1" y="1.50732" width="346" height="256.099" rx="7" fill="white"/>
-<rect x="1" y="1.50732" width="346" height="256.099" rx="7" stroke="#E6EBF0" stroke-width="2"/>
-<rect x="50" y="32.5073" width="248" height="16.9283" rx="4.27" fill="#E6EBF0"/>
-<rect x="50" y="57.4355" width="248" height="16.9283" rx="4.27" fill="#E6EBF0"/>
-<rect x="50" y="82.3638" width="129" height="17" rx="4.27" fill="#E6EBF0"/>
-<rect x="50" y="119.364" width="129" height="17" rx="4.27" fill="#E6EBF0"/>
-<rect x="50" y="144.364" width="248" height="16.9283" rx="4.27" fill="#E6EBF0"/>
-<rect x="50" y="169.292" width="187" height="17" rx="4.27" fill="#E6EBF0"/>
-<rect x="50" y="206.292" width="74.4846" height="20.314" rx="4.27" fill="#336ACC"/>
-<rect x="131.256" y="207.139" width="72.7918" height="18.6212" rx="3.42358" fill="#F3F6F9" stroke="#336ACC" stroke-width="1.69283"/>
-<path d="M50 21.5073L50 241.507" stroke="#D366FF" stroke-width="2" stroke-dasharray="4 6"/>
+<rect x="1" y="1" width="346" height="256.099" rx="7" fill="white"/>
+<rect x="1" y="1" width="346" height="256.099" rx="7" stroke="#D6E4F6" stroke-width="2"/>
+<rect x="50" y="32" width="248" height="16.9283" rx="4.27" fill="#D6E4F6"/>
+<rect x="50" y="56.9282" width="248" height="16.9283" rx="4.27" fill="#D6E4F6"/>
+<rect x="50" y="81.8564" width="129" height="17" rx="4.27" fill="#D6E4F6"/>
+<rect x="50" y="118.856" width="129" height="17" rx="4.27" fill="#D6E4F6"/>
+<rect x="50" y="143.856" width="248" height="16.9283" rx="4.27" fill="#D6E4F6"/>
+<rect x="50" y="168.785" width="187" height="17" rx="4.27" fill="#D6E4F6"/>
+<path d="M50 215.942C50 210.333 54.5474 205.785 60.157 205.785H114.328C119.937 205.785 124.485 210.333 124.485 215.942C124.485 221.552 119.937 226.099 114.328 226.099H60.157C54.5474 226.099 50 221.552 50 215.942Z" fill="#1D3343"/>
+<path d="M140.567 206.632H194.738C199.88 206.632 204.048 210.8 204.048 215.942C204.048 221.084 199.88 225.253 194.738 225.253H140.567C135.425 225.253 131.256 221.084 131.256 215.942C131.256 210.8 135.425 206.632 140.567 206.632Z" stroke="#1D3343" stroke-width="1.69283"/>
+<path d="M50 21L50 241" stroke="#D366FF" stroke-width="2" stroke-dasharray="4 6"/>
 </svg>

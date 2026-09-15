@@ -25,7 +25,10 @@ const ReleasesComponents: React.FC = () => {
         <>
           <ul className="docs-list">
             <p>La Versión 1.18.3 contiene lo siguiente: </p>
-            <li>Se actualiza el color del indicador del footer y se centra el contenido.</li>
+            <li>
+              Se actualiza el color del indicador del footer y se centra el contenido. Se cambia la clase de los botones
+              a <code>btn-outline-light</code>.
+            </li>
           </ul>
         </>
       ),

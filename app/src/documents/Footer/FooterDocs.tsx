@@ -111,6 +111,18 @@ const FooterDocs: React.FC = () => {
                         alt="Logo de Ciudad de Buenos Aires"
                         height="40"
                       />
+                      <img
+                        className="d-none d-md-inline"
+                        src={`${basePath}/images/footer_escudo_atractiva.svg`}
+                        alt="Logo de Ciudad de Buenos Aires"
+                        height="40"
+                      />
+                      <img
+                        className=" d-md-none"
+                        src={`${basePath}/images/footer_escudo_atractiva_sm.svg`}
+                        alt="Logo de Ciudad de Buenos Aires"
+                        height="40"
+                      />
                     </div>
                     <div className="col-12">
                       <ul className="list-inline">
@@ -168,6 +180,18 @@ const FooterDocs: React.FC = () => {
                       <img
                         className="d-none d-md-inline"
                         src={`${basePath}/images/logo-footer.svg`}
+                        alt="Logo de Ciudad de Buenos Aires"
+                        height="40"
+                      />
+                      <img
+                        className="d-none d-md-inline"
+                        src={`${basePath}/images/footer_escudo_atractiva.svg`}
+                        alt="Logo de Ciudad de Buenos Aires"
+                        height="40"
+                      />
+                      <img
+                        className=" d-md-none"
+                        src={`${basePath}/images/footer_escudo_atractiva_sm.svg`}
                         alt="Logo de Ciudad de Buenos Aires"
                         height="40"
                       />
@@ -310,6 +334,18 @@ const FooterDocs: React.FC = () => {
                       <img
                         className="d-none d-md-inline"
                         src={`${basePath}/images/logo-footer.svg`}
+                        alt="Logo de Ciudad de Buenos Aires"
+                        height="40"
+                      />
+                      <img
+                        className="d-none d-md-inline"
+                        src={`${basePath}/images/footer_escudo_atractiva.svg`}
+                        alt="Logo de Ciudad de Buenos Aires"
+                        height="40"
+                      />
+                      <img
+                        className=" d-md-none"
+                        src={`${basePath}/images/footer_escudo_atractiva_sm.svg`}
                         alt="Logo de Ciudad de Buenos Aires"
                         height="40"
                       />

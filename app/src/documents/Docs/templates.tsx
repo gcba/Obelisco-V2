@@ -69,22 +69,6 @@ const TemplatesComponents: React.FC = () => {
               <div className="col">
                 <div className="card h-100">
                   <span className="material-symbols-rounded card-icon" aria-hidden="true">
-                    menu_book
-                  </span>
-                  <div className="card-body">
-                    <h3 className="card-title">
-                      <a href={`${basePath}/templates/pagina-de-libro`} className="card-title-link">
-                        Página de libro
-                      </a>
-                    </h3>
-                    <p className="card-text">La usamos para agrupar información sobre un mismo tema en subtemas. </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col">
-                <div className="card h-100">
-                  <span className="material-symbols-rounded card-icon" aria-hidden="true">
                     newspaper
                   </span>{' '}
                   <div className="card-body">

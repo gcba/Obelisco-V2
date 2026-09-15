@@ -52,11 +52,6 @@ const PaginaSimple12ColsDocs: React.FC = () => {
                     Para informar sobre la gestión de un trámite, recomendamos usar la plantilla{' '}
                     <Link href={'página de trámites.'}>página de trámites</Link>.
                   </li>
-                  <li>
-                    Para agrupar información sobre un mismo tema en subtemas, en este caso recomendamos el uso de la
-                    plantilla de{' '}
-                    <Link href={'https://gcba.github.io/Obelisco-V2/templates/pagina-de-libro'}>página libro</Link>.
-                  </li>
                 </ul>
               </div>
             </div>

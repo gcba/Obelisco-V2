@@ -118,6 +118,28 @@
 // Disposición de Indicadores
 .indicator-items-3 {
   @extend .max-items-3;
+  justify-content: center;
+}
+
+.indicator-items-2 {
+  @extend .max-items-2;
+  justify-content: center;
+}
+
+.indicator-items-2,
+.indicator-items-3 {
+  @include media-breakpoint-down(xl) {
+    // width: 100%;
+
+    .col {
+      width: 100%;
+
+      .indicator {
+        max-width: none;
+        width: 100%;
+      }
+    }
+  }
 }
 
 // Disposición de Destacado Conjunto

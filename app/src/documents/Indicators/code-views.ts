@@ -69,16 +69,16 @@ export const INDICATOR_DISPOSITION_3_COLUMNS = `
 `;
 
 export const INDICATOR_DISPOSITION_2_COLUMNS = `
-<div class="highlighted-items-2">
+<div class="indicator-items-2">
   <div class="col">
-    <div class="indicator bg-light mw-lg-100">
+    <div class="indicator bg-light">
       <h1>36.578</h1>
       <p class="headline-lg">Días ahorrados</p>
       <p class="text-md">Tiempo que se ahorran los vecinos y la administracion Pública</p>
     </div>
   </div>
   <div class="col">
-    <div class="indicator bg-light mw-lg-100">
+    <div class="indicator bg-light">
       <h1>36.578</h1>
       <p class="headline-lg">Días ahorrados</p>
       <p class="text-md">Tiempo que se ahorran los vecinos y la administracion Pública</p>

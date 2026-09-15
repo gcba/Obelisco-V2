@@ -79,10 +79,11 @@ const sections = [
             <code>data-dismiss=&quot;alert&quot;</code> por <code>data-bs-dismiss=&quot;alert&quot;</code>, y la clase{' '}
             <code>.close</code> se reemplaza por <code>.btn-close</code>.
           </li>
-
-          <p className="text-md my-4">
-            <strong>Versión 1.8.4 ⬇️</strong>
-          </p>
+          <li className="list-style-none">
+            <p className="text-md my-4">
+              <strong>Versión 1.8.4 ⬇️</strong>
+            </p>
+          </li>
 
           <li>
             Para Alertas de Sistema; Se crea la clase <code>.system</code>, que debe usarse junto a{' '}
@@ -158,20 +159,26 @@ const sections = [
     title: 'Cabecera de página',
     content: (
       <ul className="docs-list">
-        <p className="text-md my-4">
-          <strong>Versión 1.7.0 ⬇️</strong>
-        </p>
+        <li className="list-style-none">
+          <p className="text-md my-4">
+            <strong>Versión 1.7.0 ⬇️</strong>
+          </p>
+        </li>{' '}
         <li>Se crea el componente.</li>
-        <p className="text-md my-4">
-          <strong>Versión 1.8.1 ⬇️</strong>
-        </p>
+        <li className="list-style-none">
+          <p className="text-md my-4">
+            <strong>Versión 1.8.1 ⬇️</strong>
+          </p>
+        </li>{' '}
         <li>Se corrige comportamiento en las variantes con multimedia, ahora está centrado el contenido.</li>
         <li>
           Se agregó un alto minimo en <code>.content</code>, para evitar conflictos con estilos externos.
         </li>
-        <p className="text-md my-4">
-          <strong>Versión 1.8.4 ⬇️</strong>
-        </p>
+        <li className="list-style-none">
+          <p className="text-md my-4">
+            <strong>Versión 1.8.4 ⬇️</strong>
+          </p>
+        </li>{' '}
         <li>
           El elemento <code>{'<div class="aside">'}</code>, puede usar alguna de las siguientes clases para alinear la
           multimedia; <code>{'<img>'}</code> y <code>{'<video>'}</code>:
@@ -196,9 +203,11 @@ const sections = [
         <SyntaxHighlighter language="css" style={dracula} wrapLongLines>
           {HERO_EXAMPLE}
         </SyntaxHighlighter>
-        <p className="text-md my-4">
-          <strong>Versión 1.9.1 ⬇️</strong>
-        </p>
+        <li className="list-style-none">
+          <p className="text-md my-4">
+            <strong>Versión 1.9.1 ⬇️</strong>
+          </p>
+        </li>{' '}
         <li>
           Se corrige la versión multimedia para los elementos <code>{'<iframe>'}</code>
         </li>
@@ -276,9 +285,11 @@ const sections = [
         </li>
         <li>La variante con referencias cromáticas queda deprecada.</li>
 
-        <p className="text-md my-4">
-          <strong>Versión 1.10.0 ⬇️</strong>
-        </p>
+        <li className="list-style-none">
+          <p className="text-md my-4">
+            <strong>Versión 1.10.0 ⬇️</strong>
+          </p>
+        </li>
 
         <li>
           Se agrega la clase <code>event-single</code> para fechas de un evento, colocando un círculo.
@@ -836,6 +847,33 @@ const sections = [
           su componente.
         </li>
       </ul>
+    ),
+  },
+  {
+    title: 'Indicadores',
+    content: (
+      <>
+        <ul className="docs-list">
+          <li className="list-style-none">
+            <p className="text-md my-4">
+              <strong>Versión 1.11.0 ⬇️</strong>
+            </p>
+          </li>
+
+          <li>
+            Se crea el componente indicador{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/components/indicator">Indicador</a>.
+          </li>
+
+          <li>
+            Con la clase <code>bigger-title</code>, el título toma un tamaño de 64px.
+          </li>
+
+          <li>
+            Con la clase <code>indicator-start</code>, se alinea <strong>todo</strong> el contenido hacia el inicio.
+          </li>
+        </ul>
+      </>
     ),
   },
   {

@@ -7,8 +7,7 @@ import ComponentHeader from '@/components/Template/ComponentHeader';
 // import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 // import MainDescription from '@/components/Template/MainDescription';
 
-import { GALLERY_CAROUSEL_INDICATORS, GALLERY_CAROUSEL_THUMBNAILS, GALLERY_INTERACTIVE } from './code-views';
-import GalleryCarousel from './GalleryCarousel';
+import { GALLERY_CAROUSEL_THUMBNAILS, GALLERY_INTERACTIVE } from './code-views';
 
 export const DATA_GALERY = [
   {
@@ -194,23 +193,69 @@ const GalleryDocs: React.FC = () => {
       ),
     },
     {
-      title: 'Carrusel',
+      title: 'Galería con miniaturas',
       content: (
         <>
-          <p className="mb-4">
-            Sin sincronización personalizada, la vista ampliada comienza siempre en la primera imagen.
-          </p>
-          <h3 className="mb-3">Galería con miniaturas</h3>
           <CodeBox codeHTML={GALLERY_CAROUSEL_THUMBNAILS}>
-            <div className="px-3">
-              <GalleryCarousel baseId="galleryThumbnails" images={DATA_GALERY} variant="thumbnails" />
-            </div>
-          </CodeBox>
-          <hr className="my-5" />
-          <h3 className="mb-3">Galería con indicadores</h3>
-          <CodeBox codeHTML={GALLERY_CAROUSEL_INDICATORS}>
-            <div className="px-3">
-              <GalleryCarousel baseId="galleryIndicators" images={DATA_GALERY} variant="indicators" />
+            <div className="container">
+              <div className="row justify-content-center">
+                <div className="col-12 d-flex justify-content-center">
+                  <div id="galleryCarousel" className="carousel slide gallery-carousel">
+                    <div className="carousel-inner">
+                      <div className="carousel-item active">
+                        <div className="gallery-carousel-image">
+                          <img
+                            src="https://gcba.github.io/Obelisco/gallery/1.jpg"
+                            alt="Texto alternativo de la imagen"
+                          />
+                          <button type="button" className="gallery-expand-button" aria-label="Ampliar imagen">
+                            <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                              zoom_out_map
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="gallery-image-paginator">
+                      <button
+                        className="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#galleryCarousel"
+                        data-bs-slide="prev"
+                      >
+                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span className="visually-hidden">Anterior</span>
+                      </button>
+
+                      <div className="gallery-thumbnails">
+                        {images.slice(0, 7).map((image, index) => (
+                          <button
+                            key={`${image}-${index}`}
+                            type="button"
+                            className={`gallery-thumbnail${index === 0 ? ' active' : ''}`}
+                            data-bs-target="#galleryCarousel"
+                            data-bs-slide-to={index}
+                            aria-current={index === 0 ? 'true' : undefined}
+                            aria-label={`Ver imagen ${index + 1}`}
+                          >
+                            <img src={image} alt="" />
+                          </button>
+                        ))}
+                      </div>
+
+                      <button
+                        className="carousel-control-next"
+                        type="button"
+                        data-bs-target="#galleryCarousel"
+                        data-bs-slide="next"
+                      >
+                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span className="visually-hidden">Siguiente</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </CodeBox>
         </>

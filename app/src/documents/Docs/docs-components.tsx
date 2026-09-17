@@ -861,8 +861,7 @@ const sections = [
           </li>
 
           <li>
-            Se crea el componente {' '}
-            <a href="https://gcba.github.io/Obelisco-V2/components/indicator">Indicador</a>.
+            Se crea el componente <a href="https://gcba.github.io/Obelisco-V2/components/indicator">Indicador</a>.
           </li>
           <li>
             Con la clase <code>bigger-title</code>, el título toma un tamaño de 64px.
@@ -871,7 +870,8 @@ const sections = [
             Con la clase <code>indicator-start</code>, se alinea <strong>todo</strong> el contenido hacia el inicio.
           </li>
           <li>
-            Las clases <code>indicator-items-3</code> y <code>indicator-items-2</code> indican el máximo de indicadores por fila.
+            Las clases <code>indicator-items-3</code> y <code>indicator-items-2</code> indican el máximo de indicadores
+            por fila.
           </li>
         </ul>
       </>

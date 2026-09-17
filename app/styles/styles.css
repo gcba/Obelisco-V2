@@ -792,7 +792,7 @@ progress {
   --bs-breakpoint-xxl: 1400px;
 }
 
-.row, .highlighted-items-2, .max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .card-items-2, .max-items-3, .indicator-items-3, .card-items-3, .max-items-4 {
+.row, .highlighted-items-2, .max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .indicator-items-2, .card-items-2, .max-items-3, .indicator-items-3, .card-items-3, .max-items-4 {
   --bs-gutter-x: 2rem;
   --bs-gutter-y: 0;
   display: flex;
@@ -801,7 +801,7 @@ progress {
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
-.row > *, .highlighted-items-2 > *, .max-items-1 > *, .access-items-1 > *, .access-items-3 > *, .access-items-4 > *, .max-items-2 > *, .card-items-2 > *, .max-items-3 > *, .indicator-items-3 > *, .card-items-3 > *, .max-items-4 > * {
+.row > *, .highlighted-items-2 > *, .max-items-1 > *, .access-items-1 > *, .access-items-3 > *, .access-items-4 > *, .max-items-2 > *, .indicator-items-2 > *, .card-items-2 > *, .max-items-3 > *, .indicator-items-3 > *, .card-items-3 > *, .max-items-4 > * {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
@@ -819,7 +819,7 @@ progress {
   width: auto;
 }
 
-.row-cols-1 > *, .highlighted-items-2 > *, .max-items-1 > *, .access-items-1 > *, .access-items-3 > *, .access-items-4 > *, .max-items-2 > *, .card-items-2 > *, .max-items-3 > *, .indicator-items-3 > *, .card-items-3 > *, .max-items-4 > * {
+.row-cols-1 > *, .highlighted-items-2 > *, .max-items-1 > *, .access-items-1 > *, .access-items-3 > *, .access-items-4 > *, .max-items-2 > *, .indicator-items-2 > *, .card-items-2 > *, .max-items-3 > *, .indicator-items-3 > *, .card-items-3 > *, .max-items-4 > * {
   flex: 0 0 auto;
   width: 100%;
 }
@@ -1199,7 +1199,7 @@ progress {
     flex: 0 0 auto;
     width: 100%;
   }
-  .row-cols-md-2 > *, .access-items-3 > *, .access-items-4 > *, .max-items-2 > *, .card-items-2 > *, .max-items-3 > *, .indicator-items-3 > *, .card-items-3 > *, .max-items-4 > * {
+  .row-cols-md-2 > *, .access-items-3 > *, .access-items-4 > *, .max-items-2 > *, .indicator-items-2 > *, .card-items-2 > *, .max-items-3 > *, .indicator-items-3 > *, .card-items-3 > *, .max-items-4 > * {
     flex: 0 0 auto;
     width: 50%;
   }
@@ -11960,16 +11960,16 @@ textarea.form-control-lg {
   }
 }
 /* 1.11.1 */
-.max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .card-items-2, .max-items-3, .indicator-items-3, .card-items-3, .max-items-4 {
+.max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .indicator-items-2, .card-items-2, .max-items-3, .indicator-items-3, .card-items-3, .max-items-4 {
   row-gap: 2rem;
 }
 @media (max-width: 767.98px) {
-  .max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .card-items-2, .max-items-3, .indicator-items-3, .card-items-3, .max-items-4 {
+  .max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .indicator-items-2, .card-items-2, .max-items-3, .indicator-items-3, .card-items-3, .max-items-4 {
     row-gap: 1rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1199.98px) {
-  .max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .card-items-2, .max-items-3, .indicator-items-3, .card-items-3, .max-items-4 {
+  .max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .indicator-items-2, .card-items-2, .max-items-3, .indicator-items-3, .card-items-3, .max-items-4 {
     row-gap: 1.5rem;
   }
 }
@@ -11984,11 +11984,11 @@ textarea.form-control-lg {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
-  .row, .highlighted-items-2, .max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .card-items-2, .max-items-3, .indicator-items-3, .card-items-3, .max-items-4 {
+  .row, .highlighted-items-2, .max-items-1, .access-items-1, .access-items-3, .access-items-4, .max-items-2, .indicator-items-2, .card-items-2, .max-items-3, .indicator-items-3, .card-items-3, .max-items-4 {
     margin-left: -0.75rem;
     margin-right: -0.75rem;
   }
-  .row > *, .highlighted-items-2 > *, .max-items-1 > *, .access-items-1 > *, .access-items-3 > *, .access-items-4 > *, .max-items-2 > *, .card-items-2 > *, .max-items-3 > *, .indicator-items-3 > *, .card-items-3 > *, .max-items-4 > * {
+  .row > *, .highlighted-items-2 > *, .max-items-1 > *, .access-items-1 > *, .access-items-3 > *, .access-items-4 > *, .max-items-2 > *, .indicator-items-2 > *, .card-items-2 > *, .max-items-3 > *, .indicator-items-3 > *, .card-items-3 > *, .max-items-4 > * {
     padding-right: 0.75rem;
     padding-left: 0.75rem;
   }
@@ -12017,6 +12017,26 @@ textarea.form-control-lg {
 .card-items-3 .col .card.card-img-borderless {
   width: 100%;
   max-width: none;
+}
+
+.indicator-items-3 {
+  justify-content: center;
+}
+
+.indicator-items-2 {
+  justify-content: center;
+}
+
+@media (max-width: 1199.98px) {
+  .indicator-items-2 .col,
+  .indicator-items-3 .col {
+    width: 100%;
+  }
+  .indicator-items-2 .col .indicator,
+  .indicator-items-3 .col .indicator {
+    max-width: none;
+    width: 100%;
+  }
 }
 
 .highlighted-items-2 {
@@ -18903,7 +18923,7 @@ div.container-headers header.hero-landing .hero-landing-container {
   }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  div.container-headers header.hero-landing .hero-landing-container .row, div.container-headers header.hero-landing .hero-landing-container .max-items-1, div.container-headers header.hero-landing .hero-landing-container .max-items-2, div.container-headers header.hero-landing .hero-landing-container .max-items-3, div.container-headers header.hero-landing .hero-landing-container .max-items-4, div.container-headers header.hero-landing .hero-landing-container .access-items-1, div.container-headers header.hero-landing .hero-landing-container .access-items-3, div.container-headers header.hero-landing .hero-landing-container .access-items-4, div.container-headers header.hero-landing .hero-landing-container .card-items-2, div.container-headers header.hero-landing .hero-landing-container .card-items-3, div.container-headers header.hero-landing .hero-landing-container .indicator-items-3, div.container-headers header.hero-landing .hero-landing-container .highlighted-items-2 {
+  div.container-headers header.hero-landing .hero-landing-container .row, div.container-headers header.hero-landing .hero-landing-container .max-items-1, div.container-headers header.hero-landing .hero-landing-container .max-items-2, div.container-headers header.hero-landing .hero-landing-container .max-items-3, div.container-headers header.hero-landing .hero-landing-container .max-items-4, div.container-headers header.hero-landing .hero-landing-container .access-items-1, div.container-headers header.hero-landing .hero-landing-container .access-items-3, div.container-headers header.hero-landing .hero-landing-container .access-items-4, div.container-headers header.hero-landing .hero-landing-container .card-items-2, div.container-headers header.hero-landing .hero-landing-container .card-items-3, div.container-headers header.hero-landing .hero-landing-container .indicator-items-3, div.container-headers header.hero-landing .hero-landing-container .indicator-items-2, div.container-headers header.hero-landing .hero-landing-container .highlighted-items-2 {
     margin-left: 0;
     margin-right: 0;
   }

@@ -32,9 +32,10 @@ const ReleasesComponents: React.FC = () => {
             está la documentación de las nuevas clases.
           </li>
           <li>
-            Se crearon las clases <code>indicator-items-3</code> y <code>indicator-items-2</code> para la disposición de Indicadores.
+            Se crearon las clases <code>indicator-items-3</code> y <code>indicator-items-2</code> para la disposición de
+            Indicadores.
           </li>
-          
+
           <li>
             Se crearon las clases <code>.w-lg-50</code> y <code>.mw-lg-100</code> para la disposición de Indicadores
             dependiendo la cantidad máxima por fila.{' '}

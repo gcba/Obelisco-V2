@@ -856,21 +856,22 @@ const sections = [
         <ul className="docs-list">
           <li className="list-style-none">
             <p className="text-md my-4">
-              <strong>Versión 1.11.0 ⬇️</strong>
+              <strong>Versión 1.19.0 ⬇️</strong>
             </p>
           </li>
 
           <li>
-            Se crea el componente indicador{' '}
+            Se crea el componente {' '}
             <a href="https://gcba.github.io/Obelisco-V2/components/indicator">Indicador</a>.
           </li>
-
           <li>
             Con la clase <code>bigger-title</code>, el título toma un tamaño de 64px.
           </li>
-
           <li>
             Con la clase <code>indicator-start</code>, se alinea <strong>todo</strong> el contenido hacia el inicio.
+          </li>
+          <li>
+            Las clases <code>indicator-items-3</code> y <code>indicator-items-2</code> indican el máximo de indicadores por fila.
           </li>
         </ul>
       </>

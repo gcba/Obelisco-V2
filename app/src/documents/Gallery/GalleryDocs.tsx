@@ -181,14 +181,14 @@ const GalleryDocs: React.FC = () => {
                         />
                         <div className="carousel-caption">
                           <div className="row mb-4">
-                            <div className="col">
+                            {/* <div className="col">
                               <span className="text-xs">Autor de la imagen.</span>
-                            </div>
+                            </div> */}
                             <div className="col text-end">
                               <span className="text-xs">Imagen {d.id}/3</span>
                             </div>
                           </div>
-                          <h5 className="h2">Título de la imagen {d.id}.</h5>
+                          {/* <h5 className="h2">Título de la imagen {d.id}.</h5> */}
                           <p>
                             Descripción o epígrafe de la imagen.
                             <br />
@@ -317,7 +317,8 @@ const GalleryDocs: React.FC = () => {
               <div className="modal-dialog modal-lg" role="document">
                 <div className="modal-content bg-none">
                   {/* Cerrar modal */}
-                  <a href="#" className="modal-carousel-close-dark" data-bs-dismiss="modal">
+
+                  <a href="#" className="modal-carousel-close" data-bs-dismiss="modal">
                     {' '}
                   </a>
 
@@ -326,12 +327,21 @@ const GalleryDocs: React.FC = () => {
                     <div className="carousel-inner">
                       {DATA_GALERY.map((d, i) => (
                         <div key={d.id} className={`carousel-item ${i === 0 ? 'active' : ''}`}>
-                          <img src={d.src} className="d-block" alt={d.alt} />
+                          <img src={d.src} className="d-block w-100" alt={d.alt} />
                         </div>
                       ))}
                     </div>
                   </div>
-                  {/* CARRUSEL DENTRO DEL MODAL */}
+
+                  {/* info del carrusel */}
+                  <div className="carousel-caption ">
+                    <span className="text-xs">Imagen</span>
+
+                    <p className="headline-lg mb-0">Título</p>
+
+                    <p className="text-md mb-0">Descripción</p>
+                  </div>
+                  {/* info del carrusel */}
 
                   {/* MINIATURA */}
                   <div className="gallery-image-paginator">
@@ -346,32 +356,22 @@ const GalleryDocs: React.FC = () => {
                       <span className="visually-hidden">Anterior</span>
                     </button>
 
-                    <div className="wrapper">
-                      {/* info del carrusel */}
-                      <div className="carousel-caption ">
-                        <span className="text-xs">Imagen</span>
-
-                        <p className="headline-lg mb-0">Título</p>
-
-                        <p className="text-md mb-0">Descripción</p>
-                      </div>
-                      {/* info del carrusel */}
-                      <div className="gallery-thumbnails">
-                        {DATA_GALERY.slice(0, 7).map((image, index) => (
-                          <button
-                            key={image.id}
-                            type="button"
-                            className={`gallery-thumbnail ${index === 0 ? 'active' : ''}`}
-                            data-bs-target="#galleryCarousel"
-                            data-bs-slide-to={index}
-                            aria-current={index === 0 ? 'true' : undefined}
-                            aria-label={`Ver imagen ${index + 1}`}
-                          >
-                            <img src={image.src} alt="" />
-                          </button>
-                        ))}
-                      </div>
+                    <div className="gallery-thumbnails">
+                      {DATA_GALERY.slice(0, 7).map((image, index) => (
+                        <button
+                          key={image.id}
+                          type="button"
+                          className={`gallery-thumbnail ${index === 0 ? 'active' : ''}`}
+                          data-bs-target="#galleryCarousel"
+                          data-bs-slide-to={index}
+                          aria-current={index === 0 ? 'true' : undefined}
+                          aria-label={`Ver imagen ${index + 1}`}
+                        >
+                          <img src={image.src} alt="" />
+                        </button>
+                      ))}
                     </div>
+
                     <button
                       className="carousel-control-next"
                       type="button"

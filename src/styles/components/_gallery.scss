@@ -621,11 +621,6 @@ $carousel-margin-bottom: 0.25rem * 4;
         }
       }
 
-      .wrapper {
-        display: flex;
-        flex-direction: column;
-      }
-
       .carousel-caption {
         display: flex;
         flex-direction: column;
@@ -636,8 +631,9 @@ $carousel-margin-bottom: 0.25rem * 4;
 
       .gallery-image-paginator {
         flex: 0 0 auto;
-        height: 220px;
+        height: auto;
         justify-content: space-evenly;
+        padding: 16px 16px 24px 16px;
       }
     }
   }

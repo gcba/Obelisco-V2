@@ -626,7 +626,17 @@ $carousel-margin-bottom: 0.25rem * 4;
         flex-direction: column;
         justify-content: center;
         position: static;
-        padding: 16px 0;
+        padding: 32px 0 0 0;
+
+        span {
+          margin-bottom: 16px;
+        }
+
+        p.headline-lg,
+        p.text-md {
+          margin: 0;
+          padding: 0;
+        }
       }
 
       .gallery-image-paginator {

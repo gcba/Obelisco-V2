@@ -41,8 +41,32 @@ export const DATA_GALERY = [
     alt: 'Texto alternativo de la imagen',
   },
   {
-    id: 1,
+    id: 6,
     src: 'https://gcba.github.io/Obelisco/gallery/1.jpg',
+    href: 'gallery/1.jpg',
+    alt: 'Texto alternativo de la imagen',
+  },
+  {
+    id: 7,
+    src: 'https://gcba.github.io/Obelisco/gallery/2.jpg',
+    href: 'gallery/1.jpg',
+    alt: 'Texto alternativo de la imagen',
+  },
+  {
+    id: 8,
+    src: 'https://gcba.github.io/Obelisco/gallery/3.jpg',
+    href: 'gallery/1.jpg',
+    alt: 'Texto alternativo de la imagen',
+  },
+  {
+    id: 9,
+    src: 'https://gcba.github.io/Obelisco/gallery/1.jpg',
+    href: 'gallery/1.jpg',
+    alt: 'Texto alternativo de la imagen',
+  },
+  {
+    id: 10,
+    src: 'https://gcba.github.io/Obelisco/gallery/3.jpg',
     href: 'gallery/1.jpg',
     alt: 'Texto alternativo de la imagen',
   },
@@ -334,12 +358,12 @@ const GalleryDocs: React.FC = () => {
                   </div>
 
                   {/* info del carrusel */}
-                  <div className="carousel-caption ">
+                  <div className="carousel-caption mt-0 mb-0">
                     <span className="text-xs">Imagen</span>
 
-                    <p className="headline-lg mb-0">Título</p>
+                    <p className="headline-lg">Título</p>
 
-                    <p className="text-md mb-0">Descripción</p>
+                    <p className="text-md">Descripción</p>
                   </div>
                   {/* info del carrusel */}
 

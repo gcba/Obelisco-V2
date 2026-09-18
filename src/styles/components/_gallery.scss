@@ -16,6 +16,9 @@ $carousel-control-prev-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.o
 $carousel-control-next-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(56,72,92,0.9999);transform: ;msFilter:;"><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"/></svg>');
 
 $carousel-close-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" style="fill: rgba(56,72,92,0.9999);transform: ;msFilter:;"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"/></svg>');
+
+$carousel-close-icon-dark: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" style="fill: rgba(0,0,0,0.9999);transform: ;msFilter:;"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"/></svg>');
+
 $carousel-margin-bottom: 0.25rem * 4;
 
 // Custom variables and mixins
@@ -177,7 +180,8 @@ $carousel-margin-bottom: 0.25rem * 4;
     }
   }
 
-  .modal-carousel-close {
+  .modal-carousel-close,
+  .modal-carousel-close-dark {
     text-align: right;
     margin-bottom: $carousel-margin-bottom;
     width: fit-content;
@@ -192,6 +196,9 @@ $carousel-margin-bottom: 0.25rem * 4;
       min-width: 1.75rem;
       background: transparent $carousel-close-icon no-repeat center center;
     }
+  }
+  .modal-carousel-close-dark {
+    background: transparent $carousel-close-icon-dark no-repeat center center;
   }
 
   > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) {
@@ -500,6 +507,42 @@ $carousel-margin-bottom: 0.25rem * 4;
   }
 }
 
+.gallery-image-paginator {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: static;
+    display: flex;
+    flex: 0 0 3rem;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.5rem;
+    background-color: $white;
+    border: $outline-border;
+    border-radius: $border-radius-pill;
+    opacity: 1;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .gallery-thumbnails {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    gap: 0.5rem;
+    min-width: 0;
+  }
+}
+
 .gallery-thumbnail {
   width: 5rem;
   height: 5rem;
@@ -520,5 +563,82 @@ $carousel-margin-bottom: 0.25rem * 4;
   &.active {
     border-color: $body-color;
     opacity: 1;
+  }
+}
+// MODAL
+.modal.modal-gallery-carousel {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  padding: 0;
+  overflow: hidden;
+
+  .modal-dialog {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    .modal-content {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      max-height: 100vh;
+      padding: 4rem 0 0;
+      overflow: hidden;
+      background-color: transparent;
+      align-items: center;
+      position: relative;
+
+      .carousel {
+        flex: 1 1 auto;
+        min-height: 0;
+        width: calc(100% - clamp(0px, 27.78vw, 400px));
+        margin-inline: auto;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      .carousel-inner {
+        width: 100%;
+        height: 100%;
+      }
+
+      .carousel-item {
+        width: 100%;
+        height: 100%;
+
+        > img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          object-position: center;
+        }
+      }
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .carousel-caption {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: static;
+        padding: 16px 0;
+      }
+
+      .gallery-image-paginator {
+        flex: 0 0 auto;
+        height: 220px;
+        justify-content: space-evenly;
+      }
+    }
   }
 }

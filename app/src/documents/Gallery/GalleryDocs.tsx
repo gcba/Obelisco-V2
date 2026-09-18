@@ -28,6 +28,24 @@ export const DATA_GALERY = [
     href: 'gallery/3.jpg',
     alt: 'Texto alternativo de la imagen',
   },
+  {
+    id: 4,
+    src: 'https://gcba.github.io/Obelisco/gallery/4.jpg',
+    href: 'gallery/4.jpg',
+    alt: 'Texto alternativo de la imagen',
+  },
+  {
+    id: 5,
+    src: 'https://gcba.github.io/Obelisco/gallery/5.jpg',
+    href: 'gallery/5.jpg',
+    alt: 'Texto alternativo de la imagen',
+  },
+  {
+    id: 1,
+    src: 'https://gcba.github.io/Obelisco/gallery/1.jpg',
+    href: 'gallery/1.jpg',
+    alt: 'Texto alternativo de la imagen',
+  },
 ];
 
 const GalleryGrid: React.FC<{ images: string[]; maxColumns: number }> = ({ images, maxColumns }) => (
@@ -115,6 +133,7 @@ const GalleryDocs: React.FC = () => {
             <div className="row">
               <div className="p-0 col-12 col-md-8 offset-md-2">
                 <div className="gallery-grid gallery-max-3">
+                  {/* cada imagen es un enlace: cuando se hace click acá (a), abrir el elemento con el id#modalGallery */}
                   {DATA_GALERY.map((d) => (
                     <a
                       key={d.id}
@@ -131,12 +150,17 @@ const GalleryDocs: React.FC = () => {
             </div>
           </div>
 
+          {/* este es el elemento con el id modalGallery */}
+          {/* data-bs-backdrop="static - hace que el usuario no pueda cerrar el modal haciendo click afuera del modal. */}
           <div className="modal modal-carousel" data-bs-backdrop="static" tabIndex={-1} role="dialog" id="modalGallery">
             <div className="modal-dialog modal-lg" role="document">
               <div className="modal-content">
                 <a href="#" className="modal-carousel-close" data-bs-dismiss="modal">
                   Cerrar ventana
                 </a>
+                {/* carousel */}
+                {/* el id modalGalleryControls lo usan los controles de siguiente y previo  */}
+                {/* data-bs-interval="false", que no deslice automaticamente */}
                 <div
                   id="modalGalleryControls"
                   className="carousel slide"
@@ -146,7 +170,15 @@ const GalleryDocs: React.FC = () => {
                   <div className="carousel-inner">
                     {DATA_GALERY.map((d, i) => (
                       <div key={d.id} className={`carousel-item ${i === 0 ? 'active' : ''} `} data-bs-interval="3000">
-                        <img src={d.src} className="d-block w-100" alt={d.alt} />
+                        <img
+                          src={d.src}
+                          key={d.id}
+                          // href={d.href}
+                          className="d-block gallery-grid-item"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modalGallery"
+                          alt={d.alt}
+                        />
                         <div className="carousel-caption">
                           <div className="row mb-4">
                             <div className="col">
@@ -181,11 +213,13 @@ const GalleryDocs: React.FC = () => {
                     type="button"
                     data-bs-target="#modalGalleryControls"
                     data-bs-slide="next"
+                    data-bs-interval="false"
                   >
                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
                     <span className="visually-hidden">Siguiente</span>
                   </button>
                 </div>
+                {/* carousel */}
               </div>
             </div>
           </div>
@@ -200,22 +234,33 @@ const GalleryDocs: React.FC = () => {
             <div className="container">
               <div className="row justify-content-center">
                 <div className="col-12 d-flex justify-content-center">
-                  <div id="galleryCarousel" className="carousel slide gallery-carousel">
+                  {/* CARRUSEL default */}
+                  <div id="galleryCarousel" className="carousel slide gallery-carousel galeria-mniaturas">
                     <div className="carousel-inner">
-                      <div className="carousel-item active">
-                        <div className="gallery-carousel-image">
-                          <img
-                            src="https://gcba.github.io/Obelisco/gallery/1.jpg"
-                            alt="Texto alternativo de la imagen"
-                          />
-                          <button type="button" className="gallery-expand-button" aria-label="Ampliar imagen">
-                            <span className="material-symbols-rounded o-icon" aria-hidden="true">
-                              zoom_out_map
-                            </span>
-                          </button>
+                      {DATA_GALERY.map((d, i) => (
+                        <div key={d.id} className={`carousel-item ${i === 0 ? 'active' : ''}`}>
+                          <div className="gallery-carousel-image">
+                            {/* Imagen */}
+                            <img src={d.src} alt={d.alt} />
+
+                            {/* Botón para abrir el modal */}
+                            <button
+                              type="button"
+                              className="gallery-expand-button"
+                              data-bs-toggle="modal"
+                              data-bs-target="#modalGallery1"
+                              aria-label="Ampliar imagen"
+                            >
+                              <span className="material-symbols-rounded o-icon" aria-hidden="true">
+                                zoom_out_map
+                              </span>
+                            </button>
+                          </div>
                         </div>
-                      </div>
+                      ))}
                     </div>
+
+                    {/* PAGINADOR / MINIATURA */}
                     <div className="gallery-image-paginator">
                       <button
                         className="carousel-control-prev"
@@ -224,21 +269,22 @@ const GalleryDocs: React.FC = () => {
                         data-bs-slide="prev"
                       >
                         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+
                         <span className="visually-hidden">Anterior</span>
                       </button>
 
                       <div className="gallery-thumbnails">
-                        {images.slice(0, 7).map((image, index) => (
+                        {DATA_GALERY.slice(0, 7).map((image, index) => (
                           <button
-                            key={`${image}-${index}`}
+                            key={image.id}
                             type="button"
-                            className={`gallery-thumbnail${index === 0 ? ' active' : ''}`}
+                            className={`gallery-thumbnail ${index === 0 ? 'active' : ''}`}
                             data-bs-target="#galleryCarousel"
                             data-bs-slide-to={index}
                             aria-current={index === 0 ? 'true' : undefined}
                             aria-label={`Ver imagen ${index + 1}`}
                           >
-                            <img src={image} alt="" />
+                            <img src={image.src} alt="" />
                           </button>
                         ))}
                       </div>
@@ -250,13 +296,98 @@ const GalleryDocs: React.FC = () => {
                         data-bs-slide="next"
                       >
                         <span className="carousel-control-next-icon" aria-hidden="true"></span>
+
                         <span className="visually-hidden">Siguiente</span>
                       </button>
                     </div>
+                    {/* PAGINADOR / MINIATURA */}
                   </div>
+                  {/* CARRUSEL default */}
                 </div>
               </div>
             </div>
+            {/* MODAL */}
+            <div
+              className="modal modal-carousel bg-dark modal-gallery-carousel"
+              data-bs-backdrop="static"
+              tabIndex={-1}
+              role="dialog"
+              id="modalGallery1"
+            >
+              <div className="modal-dialog modal-lg" role="document">
+                <div className="modal-content bg-none">
+                  {/* Cerrar modal */}
+                  <a href="#" className="modal-carousel-close-dark" data-bs-dismiss="modal">
+                    {' '}
+                  </a>
+
+                  {/* CARRUSEL DENTRO DEL MODAL */}
+                  <div id="modalGalleryControls1" className="carousel slide" data-bs-ride="false">
+                    <div className="carousel-inner">
+                      {DATA_GALERY.map((d, i) => (
+                        <div key={d.id} className={`carousel-item ${i === 0 ? 'active' : ''}`}>
+                          <img src={d.src} className="d-block" alt={d.alt} />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  {/* CARRUSEL DENTRO DEL MODAL */}
+
+                  {/* MINIATURA */}
+                  <div className="gallery-image-paginator">
+                    <button
+                      className="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#modalGalleryControls1"
+                      data-bs-slide="prev"
+                    >
+                      <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                      <span className="visually-hidden">Anterior</span>
+                    </button>
+
+                    <div className="wrapper">
+                      {/* info del carrusel */}
+                      <div className="carousel-caption ">
+                        <span className="text-xs">Imagen</span>
+
+                        <p className="headline-lg mb-0">Título</p>
+
+                        <p className="text-md mb-0">Descripción</p>
+                      </div>
+                      {/* info del carrusel */}
+                      <div className="gallery-thumbnails">
+                        {DATA_GALERY.slice(0, 7).map((image, index) => (
+                          <button
+                            key={image.id}
+                            type="button"
+                            className={`gallery-thumbnail ${index === 0 ? 'active' : ''}`}
+                            data-bs-target="#galleryCarousel"
+                            data-bs-slide-to={index}
+                            aria-current={index === 0 ? 'true' : undefined}
+                            aria-label={`Ver imagen ${index + 1}`}
+                          >
+                            <img src={image.src} alt="" />
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                    <button
+                      className="carousel-control-next"
+                      type="button"
+                      data-bs-target="#modalGalleryControls1"
+                      data-bs-slide="next"
+                    >
+                      <span className="carousel-control-next-icon" aria-hidden="true"></span>
+
+                      <span className="visually-hidden">Siguiente</span>
+                    </button>
+                  </div>
+                  {/* MINIATURA */}
+                </div>
+              </div>
+            </div>
+            {/* MODAL */}
           </CodeBox>
         </>
       ),

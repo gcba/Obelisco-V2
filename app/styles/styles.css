@@ -16893,13 +16893,15 @@ span.form-label {
     padding-top: 1.5rem;
   }
 }
-.modal-carousel .modal-carousel-close {
+.modal-carousel .modal-carousel-close,
+.modal-carousel .modal-carousel-close-dark {
   text-align: right;
   margin-bottom: 1rem;
   width: fit-content;
   margin-left: auto;
 }
-.modal-carousel .modal-carousel-close::after {
+.modal-carousel .modal-carousel-close::after,
+.modal-carousel .modal-carousel-close-dark::after {
   vertical-align: middle;
   content: "";
   display: inline-block;
@@ -16907,6 +16909,9 @@ span.form-label {
   width: 1.75rem;
   min-width: 1.75rem;
   background: transparent url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" style="fill: rgba(56,72,92,0.9999);transform: ;msFilter:;"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"/></svg>') no-repeat center center;
+}
+.modal-carousel .modal-carousel-close-dark {
+  background: transparent url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" style="fill: rgba(0,0,0,0.9999);transform: ;msFilter:;"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"/></svg>') no-repeat center center;
 }
 .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) {
   background: none;
@@ -17115,94 +17120,201 @@ span.form-label {
 }
 
 .carousel.gallery-carousel {
-  padding: 0 1.5rem;
-  background-color: #ffffff;
-  row-gap: 0;
+  width: 100%;
+  max-width: 45.5rem;
+  background-color: transparent;
+  row-gap: 1rem;
+}
+.carousel.gallery-carousel .carousel-inner {
+  border-radius: 8px;
+}
+.carousel.gallery-carousel .carousel-inner .carousel-item {
+  padding: 0;
 }
 .carousel.gallery-carousel .gallery-carousel-image {
   position: relative;
+  width: 100%;
+  aspect-ratio: 728/384;
 }
 .carousel.gallery-carousel .gallery-carousel-image img {
+  display: block;
   width: 100%;
-  aspect-ratio: 3/2;
+  height: 100%;
   object-fit: cover;
   object-position: center;
-  border-radius: 6px;
 }
-.carousel.gallery-carousel .gallery-carousel-expand {
+.carousel.gallery-carousel .gallery-carousel-image .gallery-expand-button {
   position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
+  top: 1rem;
+  right: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 2rem;
   height: 2rem;
-  padding: 0;
+  padding: 0.625rem;
   color: #08202f;
   background-color: #ffffff;
-  border: none;
+  border: 0.125rem solid #d6e4f6;
   border-radius: 9999px;
-  outline: 0.125rem solid #d6e4f6;
 }
-.carousel.gallery-carousel .gallery-carousel-expand:hover {
-  background-color: #edf4ff;
+.carousel.gallery-carousel .gallery-carousel-image .gallery-expand-button .o-icon {
+  font-size: 0.75rem;
+  line-height: 1;
 }
-.carousel.gallery-carousel .gallery-carousel-expand:focus {
-  box-shadow: 0 0 0 0.25rem #003832;
-  outline: 0.25rem solid transparent;
-}
-.carousel.gallery-carousel .gallery-carousel-expand .o-icon {
-  font-size: 1.25rem;
-}
-.carousel.gallery-carousel .gallery-carousel-navigation {
-  position: relative;
+.carousel.gallery-carousel .gallery-image-paginator {
   display: flex;
   align-items: center;
-  min-height: 4rem;
-  margin-top: 0.75rem;
-  padding: 0 0.5rem;
+  width: 100%;
 }
-.carousel.gallery-carousel .carousel-indicators {
+.carousel.gallery-carousel .gallery-image-paginator .carousel-control-prev,
+.carousel.gallery-carousel .gallery-image-paginator .carousel-control-next {
   position: static;
-  flex: 1;
-  justify-content: flex-start;
-}
-.carousel.gallery-carousel .gallery-carousel-controls {
   display: flex;
-  gap: 0.75rem;
-  margin-left: auto;
-}
-.carousel.gallery-carousel .carousel-control-prev,
-.carousel.gallery-carousel .carousel-control-next {
-  position: static;
+  flex: 0 0 3rem;
+  align-items: center;
+  justify-content: center;
   width: 3rem;
   height: 3rem;
-}
-.carousel.gallery-carousel.gallery-carousel-thumbnails .carousel-indicators {
-  gap: 0.5rem;
-  overflow-x: auto;
-}
-.carousel.gallery-carousel.gallery-carousel-thumbnails .carousel-indicators button {
-  flex: 0 0 4rem;
-  width: 4rem;
-  height: 4rem;
-  background-position: center;
-  background-size: cover;
-  border: 0.125rem solid transparent;
-  border-radius: 4px;
-  opacity: 0.6;
-}
-.carousel.gallery-carousel.gallery-carousel-thumbnails .carousel-indicators button:hover, .carousel.gallery-carousel.gallery-carousel-thumbnails .carousel-indicators button:focus, .carousel.gallery-carousel.gallery-carousel-thumbnails .carousel-indicators button.active {
+  padding: 0.5rem;
+  background-color: #ffffff;
+  border: 0.125rem solid #d6e4f6;
+  border-radius: 9999px;
   opacity: 1;
 }
-.carousel.gallery-carousel.gallery-carousel-thumbnails .carousel-indicators button.active {
-  border-color: #08202f;
+.carousel.gallery-carousel .gallery-image-paginator .carousel-control-prev-icon,
+.carousel.gallery-carousel .gallery-image-paginator .carousel-control-next-icon {
+  width: 1.5rem;
+  height: 1.5rem;
 }
-@media (max-width: 575.98px) {
-  .carousel.gallery-carousel .gallery-carousel-navigation {
-    align-items: flex-end;
-  }
+.carousel.gallery-carousel .gallery-image-paginator .gallery-thumbnails {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.gallery-image-paginator {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.gallery-image-paginator .carousel-control-prev,
+.gallery-image-paginator .carousel-control-next {
+  position: static;
+  display: flex;
+  flex: 0 0 3rem;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem;
+  background-color: #ffffff;
+  border: 0.125rem solid #d6e4f6;
+  border-radius: 9999px;
+  opacity: 1;
+}
+.gallery-image-paginator .carousel-control-prev-icon,
+.gallery-image-paginator .carousel-control-next-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.gallery-image-paginator .gallery-thumbnails {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.gallery-thumbnail {
+  width: 5rem;
+  height: 5rem;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+  border: 0.125rem solid transparent;
+  border-radius: 4px;
+  opacity: 0.3;
+}
+.gallery-thumbnail img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery-thumbnail.active {
+  border-color: #08202f;
+  opacity: 1;
+}
+
+.modal.modal-gallery-carousel {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+.modal.modal-gallery-carousel .modal-dialog {
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.modal.modal-gallery-carousel .modal-dialog .modal-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+  padding: 4rem 0 0;
+  overflow: hidden;
+  background-color: transparent;
+  align-items: center;
+  position: relative;
+}
+.modal.modal-gallery-carousel .modal-dialog .modal-content .carousel {
+  flex: 1 1 auto;
+  min-height: 0;
+  width: calc(100% - clamp(0px, 27.78vw, 400px));
+  margin-inline: auto;
+  padding: 0;
+  overflow: hidden;
+}
+.modal.modal-gallery-carousel .modal-dialog .modal-content .carousel-inner {
+  width: 100%;
+  height: 100%;
+}
+.modal.modal-gallery-carousel .modal-dialog .modal-content .carousel-item {
+  width: 100%;
+  height: 100%;
+}
+.modal.modal-gallery-carousel .modal-dialog .modal-content .carousel-item > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.modal.modal-gallery-carousel .modal-dialog .modal-content .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.modal.modal-gallery-carousel .modal-dialog .modal-content .carousel-caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: static;
+  padding: 16px 0;
+}
+.modal.modal-gallery-carousel .modal-dialog .modal-content .gallery-image-paginator {
+  flex: 0 0 auto;
+  height: 220px;
+  justify-content: space-evenly;
 }
 
 .pagination {

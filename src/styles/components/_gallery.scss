@@ -240,7 +240,6 @@ $carousel-margin-bottom: 0.25rem * 4;
         max-width: 85%;
         margin: 0 auto;
       }
-
     }
   }
 
@@ -261,7 +260,6 @@ $carousel-margin-bottom: 0.25rem * 4;
     }
   }
 }
-
 
 // Gallery grid
 .gallery-grid {
@@ -382,7 +380,6 @@ $carousel-margin-bottom: 0.25rem * 4;
       }
     }
   }
-
 }
 
 .gallery-image-paginator {
@@ -471,6 +468,7 @@ $carousel-margin-bottom: 0.25rem * 4;
     min-width: 0;
     padding-inline: 0.6875rem;
     overflow: hidden;
+    margin: 0 16px;
 
     &:has(.gallery-thumbnail:nth-child(8)) {
       justify-content: flex-start;
@@ -608,7 +606,8 @@ $carousel-margin-bottom: 0.25rem * 4;
           justify-content: center;
           max-width: none;
           padding-inline: 0;
-          overflow: visible;
+          // overflow: visible;
+          margin: 0 16px;
         }
 
         .carousel-control-prev,

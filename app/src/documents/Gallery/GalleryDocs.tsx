@@ -8,6 +8,7 @@ import ComponentHeader from '@/components/Template/ComponentHeader';
 // import MainDescription from '@/components/Template/MainDescription';
 
 import { GALLERY_CAROUSEL_THUMBNAILS, GALLERY_INTERACTIVE } from './code-views';
+const basePath = '/Obelisco-V2';
 
 export const DATA_GALERY = [
   {
@@ -59,6 +60,52 @@ const DATA_GALLERY_CAROUSEL = [
   {
     id: 8,
     src: 'https://gcba.github.io/Obelisco/gallery/3.jpg',
+    href: 'gallery/1.jpg',
+    alt: 'Texto alternativo de la imagen',
+  },
+  {
+    id: 9,
+    src: 'https://gcba.github.io/Obelisco/gallery/1.jpg',
+    href: 'gallery/1.jpg',
+    alt: 'Texto alternativo de la imagen',
+  },
+  {
+    id: 10,
+    src: 'https://gcba.github.io/Obelisco/gallery/3.jpg',
+    href: 'gallery/1.jpg',
+    alt: 'Texto alternativo de la imagen',
+  },
+];
+
+const DATA_GALLERY_CAROUSEL_1 = [
+  ...DATA_GALERY,
+  {
+    id: 4,
+    src: `${basePath}/images/galeria/galeria_323_173.svg`,
+    href: 'gallery/4.jpg',
+    alt: 'Texto alternativo de la imagen',
+  },
+  {
+    id: 5,
+    src: `${basePath}/images/galeria/galeria_728_384.svg`,
+    href: 'gallery/5.jpg',
+    alt: 'Texto alternativo de la imagen',
+  },
+  {
+    id: 6,
+    src: `${basePath}/images/galeria/galeria_941_563.svg`,
+    href: 'gallery/1.jpg',
+    alt: 'Texto alternativo de la imagen',
+  },
+  {
+    id: 7,
+    src: `${basePath}/images/galeria/galeria_1278_785.svg`,
+    href: 'gallery/1.jpg',
+    alt: 'Texto alternativo de la imagen',
+  },
+  {
+    id: 8,
+    src: `${basePath}/images/galeria/galeria_728_384.svg`,
     href: 'gallery/1.jpg',
     alt: 'Texto alternativo de la imagen',
   },
@@ -268,7 +315,7 @@ const GalleryDocs: React.FC = () => {
                   {/* CARRUSEL default */}
                   <div id="galleryCarousel" className="carousel slide gallery-carousel">
                     <div className="carousel-inner">
-                      {DATA_GALLERY_CAROUSEL.map((d, i) => (
+                      {DATA_GALLERY_CAROUSEL_1.map((d, i) => (
                         <div key={d.id} className={`carousel-item ${i === 0 ? 'active' : ''}`}>
                           <div className="gallery-carousel-image">
                             {/* Imagen */}
@@ -305,7 +352,7 @@ const GalleryDocs: React.FC = () => {
                       </button>
 
                       <div className="carousel-indicators gallery-thumbnails">
-                        {DATA_GALLERY_CAROUSEL.map((image, index) => (
+                        {DATA_GALLERY_CAROUSEL_1.map((image, index) => (
                           <button
                             key={image.id}
                             type="button"
@@ -340,7 +387,7 @@ const GalleryDocs: React.FC = () => {
             </div>
             {/* MODAL */}
             <div
-              className="modal modal-carousel bg-dark modal-gallery-carousel"
+              className="modal modal-carousel bg-dark modal-gallery-carousel pe-0"
               data-bs-backdrop="static"
               tabIndex={-1}
               role="dialog"
@@ -357,9 +404,9 @@ const GalleryDocs: React.FC = () => {
                   {/* CARRUSEL DENTRO DEL MODAL */}
                   <div id="modalGalleryControls1" className="carousel slide" data-bs-ride="false">
                     <div className="carousel-inner">
-                      {DATA_GALLERY_CAROUSEL.map((d, i) => (
+                      {DATA_GALLERY_CAROUSEL_1.map((d, i) => (
                         <div key={d.id} className={`carousel-item ${i === 0 ? 'active' : ''}`}>
-                          <img src={d.src} className="d-block w-100" alt={d.alt} />
+                          <img src={d.src} className="d-block" alt={d.alt} />
                         </div>
                       ))}
                     </div>
@@ -388,7 +435,7 @@ const GalleryDocs: React.FC = () => {
                       </button>
 
                       <div className="carousel-indicators gallery-thumbnails">
-                        {DATA_GALLERY_CAROUSEL.map((image, index) => (
+                        {DATA_GALLERY_CAROUSEL_1.map((image, index) => (
                           <button
                             key={image.id}
                             type="button"

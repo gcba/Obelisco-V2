@@ -106,6 +106,8 @@ const generateCode = (numImages: number): string => {
   </div>`;
 };
 
+// const ZoomContainer = ({ children }: React.PropsWithChildren) => <div style={{ zoom: 0.5 }}>{children}</div>;
+
 const GalleryDocs: React.FC = () => {
   const [selectedGrid, setSelectedGrid] = useState(2);
 
@@ -226,18 +228,18 @@ const GalleryDocs: React.FC = () => {
                   <button
                     className="carousel-control-prev"
                     type="button"
-                    data-bs-target="#modalGalleryControls"
+                    data-bs-target="#carousel"
                     data-bs-slide="prev"
                   >
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span className="visually-hidden">Anterior</span>
                   </button>
+
                   <button
                     className="carousel-control-next"
                     type="button"
-                    data-bs-target="#modalGalleryControls"
+                    data-bs-target="#carousel"
                     data-bs-slide="next"
-                    data-bs-interval="false"
                   >
                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
                     <span className="visually-hidden">Siguiente</span>
@@ -256,6 +258,7 @@ const GalleryDocs: React.FC = () => {
         <>
           <CodeBox codeHTML={GALLERY_CAROUSEL_THUMBNAILS}>
             <div className="container">
+              {/* <ZoomContainer> */}
               <div className="row justify-content-center">
                 <div className="col-12 d-flex justify-content-center">
                   {/* CARRUSEL default */}
@@ -329,6 +332,7 @@ const GalleryDocs: React.FC = () => {
                   {/* CARRUSEL default */}
                 </div>
               </div>
+              {/* </ZoomContainer> */}
             </div>
             {/* MODAL */}
             <div
@@ -342,7 +346,7 @@ const GalleryDocs: React.FC = () => {
                 <div className="modal-content bg-none">
                   {/* Cerrar modal */}
 
-                  <a href="#" className="modal-carousel-close" data-bs-dismiss="modal">
+                  <a href="#" className="modal-carousel-close-dark" data-bs-dismiss="modal">
                     {' '}
                   </a>
 
@@ -367,7 +371,7 @@ const GalleryDocs: React.FC = () => {
                   </div>
                   {/* info del carrusel */}
 
-                  {/* MINIATURA */}
+                  {/* MINIATURA - MODAL */}
                   <div className="gallery-image-paginator">
                     <button
                       className="carousel-control-prev"
@@ -386,7 +390,7 @@ const GalleryDocs: React.FC = () => {
                           key={image.id}
                           type="button"
                           className={`gallery-thumbnail ${index === 0 ? 'active' : ''}`}
-                          data-bs-target="#galleryCarousel"
+                          data-bs-target="#modalGalleryControls1"
                           data-bs-slide-to={index}
                           aria-current={index === 0 ? 'true' : undefined}
                           aria-label={`Ver imagen ${index + 1}`}
@@ -407,7 +411,7 @@ const GalleryDocs: React.FC = () => {
                       <span className="visually-hidden">Siguiente</span>
                     </button>
                   </div>
-                  {/* MINIATURA */}
+                  {/* MINIATURA - MODAL */}
                 </div>
               </div>
             </div>

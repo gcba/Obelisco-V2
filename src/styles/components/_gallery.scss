@@ -1,3 +1,5 @@
+@import './carousel';
+
 // Variable and mixins overides
 
 $carousel-control-padding: 0.25rem * 3;
@@ -17,7 +19,7 @@ $carousel-control-next-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.o
 
 $carousel-close-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" style="fill: rgba(56,72,92,0.9999);transform: ;msFilter:;"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"/></svg>');
 
-$carousel-close-icon-dark: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" style="fill: rgba(0,0,0,0.9999);transform: ;msFilter:;"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"/></svg>');
+$carousel-close-icon-dark: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" style="fill: rgb(255,255,255);transform: ;msFilter:;"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"/></svg>');
 
 $carousel-margin-bottom: 0.25rem * 4;
 
@@ -180,8 +182,7 @@ $carousel-margin-bottom: 0.25rem * 4;
     }
   }
 
-  .modal-carousel-close,
-  .modal-carousel-close-dark {
+  .modal-carousel-close {
     text-align: right;
     margin-bottom: $carousel-margin-bottom;
     width: fit-content;
@@ -197,60 +198,68 @@ $carousel-margin-bottom: 0.25rem * 4;
       background: transparent $carousel-close-icon no-repeat center center;
     }
   }
+
   .modal-carousel-close-dark {
-    background: transparent $carousel-close-icon-dark no-repeat center center;
+    @extend .modal-carousel-close;
+    position: relative;
+    right: 48px;
+
+    &::after {
+      background: transparent $carousel-close-icon-dark no-repeat center center;
+      padding: 15px;
+    }
   }
 
   > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) {
     background: none;
 
-    .carousel-control-prev,
-    .carousel-control-next {
-      display: block;
-      width: $carousel-control-size;
-      height: $carousel-control-size;
-      padding: $carousel-control-padding;
-      background-color: #f4f6f9;
-      top: $carousel-control-space-top-mobile;
-      transform: translateY(-$carousel-control-space-top-mobile);
-      border-radius: $carousel-control-border-radius;
-      opacity: 0.75;
-      outline: 0.125rem solid $slate-100;
+    // .carousel-control-prev,
+    // .carousel-control-next {
+    //   display: block;
+    //   width: $carousel-control-size;
+    //   height: $carousel-control-size;
+    //   padding: $carousel-control-padding;
+    //   background-color: #f4f6f9;
+    //   top: $carousel-control-space-top-mobile;
+    //   transform: translateY(-$carousel-control-space-top-mobile);
+    //   border-radius: $carousel-control-border-radius;
+    //   opacity: 0.75;
+    //   outline: 0.125rem solid $slate-100;
 
-      &:hover,
-      &:focus,
-      &:active {
-        box-shadow: unset;
-        outline: 0.125rem solid $slate-100;
-        outline-offset: unset;
-      }
-    }
+    //   &:hover,
+    //   &:focus,
+    //   &:active {
+    //     box-shadow: unset;
+    //     outline: 0.125rem solid $slate-100;
+    //     outline-offset: unset;
+    //   }
+    // }
 
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      width: $carousel-control-icon-size;
-      height: $carousel-control-icon-size;
-      background: none;
-      background-image: inherit;
-    }
+    // .carousel-control-prev-icon,
+    // .carousel-control-next-icon {
+    //   width: $carousel-control-icon-size;
+    //   height: $carousel-control-icon-size;
+    //   background: none;
+    //   background-image: inherit;
+    // }
 
-    .carousel-control-prev {
-      left: $carousel-control-space-x-mobile;
+    // .carousel-control-prev {
+    //   left: $carousel-control-space-x-mobile;
 
-      .carousel-control-prev-icon {
-        background-image: $carousel-control-prev-icon;
-        content: unset;
-      }
-    }
+    //   .carousel-control-prev-icon {
+    //     background-image: $carousel-icon-left;
+    //     content: unset;
+    //   }
+    // }
 
-    .carousel-control-next {
-      right: $carousel-control-space-x-mobile;
+    // .carousel-control-next {
+    //   right: $carousel-control-space-x-mobile;
 
-      .carousel-control-next-icon {
-        background-image: $carousel-control-next-icon;
-        content: unset;
-      }
-    }
+    //   .carousel-control-next-icon {
+    //     background-image: $carousel-icon-right;
+    //     content: unset;
+    //   }
+    // }
 
     .carousel-inner {
       border-radius: $border-radius-lg;
@@ -280,74 +289,44 @@ $carousel-margin-bottom: 0.25rem * 4;
         margin: 0 auto;
       }
 
-      .carousel-control-prev,
-      .carousel-control-next {
-        top: $carousel-control-space-top;
-        opacity: 1;
-      }
+      // .carousel-control-prev,
+      // .carousel-control-next {
+      //   top: $carousel-control-space-top;
+      //   opacity: 1;
+      // }
 
-      .carousel-control-prev {
-        left: $carousel-control-space-x;
-      }
+      // .carousel-control-prev {
+      //   left: $carousel-control-space-x;
+      // }
 
-      .carousel-control-next {
-        right: $carousel-control-space-x;
-      }
+      // .carousel-control-next {
+      //   right: $carousel-control-space-x;
     }
+  }
 
-    @include media-breakpoint-up(md) {
-      &.carousel {
-        max-width: 100%;
-        margin: 0;
-      }
+  @include media-breakpoint-up(md) {
+    &.carousel {
+      max-width: 100%;
+      margin: 0;
     }
+  }
 
-    @include media-breakpoint-up(lg) {
-      .carousel-control-prev,
-      .carousel-control-next {
-        top: calc(50% - 86px);
-      }
+  @include media-breakpoint-up(lg) {
+    // .carousel-control-prev,
+    // .carousel-control-next {
+    //   top: calc(50% - 86px);
+    // }
 
-      .carousel-inner {
-        max-width: 100%;
+    .carousel-inner {
+      max-width: 100%;
 
-        .carousel-item {
-          padding: 0;
-        }
+      .carousel-item {
+        padding: 0;
       }
     }
   }
 }
 
-// Modal
-// .modal-carousel {
-//   background: $white;
-
-//   .modal-content {
-//     padding: 10px 0 0;
-//     border: none;
-
-//     @include media-breakpoint-up(xl) {
-//       padding-top: 1.5rem;
-//     }
-//   }
-
-//   .modal-carousel-close {
-//     text-align: right;
-//     margin-bottom: $carousel-margin-bottom;
-//     width: fit-content;
-//     margin-left: auto;
-
-//     &::after {
-//       vertical-align: middle;
-//       content: '';
-//       display: inline-block;
-//       height: 1.75rem;
-//       width: 1.75rem;
-//       min-width: 1.75rem;
-//       background: transparent $carousel-close-icon no-repeat center center;
-//     }
-//   }
 // }
 
 // Gallery grid
@@ -471,38 +450,13 @@ $carousel-margin-bottom: 0.25rem * 4;
   }
 
   .gallery-image-paginator {
-    display: flex;
-    align-items: center;
-    width: 100%;
-
     .carousel-control-prev,
     .carousel-control-next {
-      position: static;
-      display: flex;
       flex: 0 0 3rem;
-      align-items: center;
-      justify-content: center;
       width: 3rem;
       height: 3rem;
-      padding: 0.5rem;
-      background-color: $white;
-      border: $outline-border;
-      border-radius: $border-radius-pill;
-      opacity: 1;
-    }
-
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      width: 1.5rem;
-      height: 1.5rem;
-    }
-
-    .gallery-thumbnails {
-      display: flex;
-      flex: 1;
-      justify-content: center;
-      gap: 0.5rem;
-      min-width: 0;
+      min-width: 3rem;
+      min-height: 3rem;
     }
   }
 }
@@ -516,27 +470,72 @@ $carousel-margin-bottom: 0.25rem * 4;
   .carousel-control-next {
     position: static;
     display: flex;
-    flex: 0 0 3rem;
     align-items: center;
     justify-content: center;
+    flex: 0 0 3rem;
     width: 3rem;
     height: 3rem;
-    padding: 0.5rem;
+    min-width: 3rem;
+    min-height: 3rem;
+    padding: 0;
+    box-sizing: border-box;
     background-color: $white;
     border: $outline-border;
-    border-radius: $border-radius-pill;
+    border-radius: 50%;
     opacity: 1;
+
+    // HOVER
+    &:hover {
+      background-color: $carousel-bg-hover;
+    }
+
+    // FOCUS
+    &:focus {
+      box-shadow: $focus-box-shadow;
+      background-color: $carousel-bg;
+      outline: 0.25rem solid transparent;
+      outline-offset: unset;
+    }
+
+    // ACTIVE
+    &:active {
+      box-shadow: 0 0 0 0.125rem $slate-100;
+      background-color: $carousel-active-bg;
+      outline: 0.25rem solid transparent;
+      outline-offset: -2px;
+
+      .carousel-control-prev-icon {
+        background-image: $carousel-icon-left-active;
+      }
+
+      .carousel-control-next-icon {
+        background-image: $carousel-icon-right-active;
+      }
+    }
   }
 
+  // ÍCONO
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
+    display: block;
     width: 1.5rem;
     height: 1.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+
+  .carousel-control-prev-icon {
+    background-image: $carousel-icon-left;
+  }
+
+  .carousel-control-next-icon {
+    background-image: $carousel-icon-right;
   }
 
   .gallery-thumbnails {
     display: flex;
-    flex: 1;
+    flex: 1 1 auto;
     justify-content: center;
     gap: 0.5rem;
     min-width: 0;
@@ -565,6 +564,7 @@ $carousel-margin-bottom: 0.25rem * 4;
     opacity: 1;
   }
 }
+
 // MODAL
 .modal.modal-gallery-carousel {
   position: fixed;
@@ -626,7 +626,7 @@ $carousel-margin-bottom: 0.25rem * 4;
         flex-direction: column;
         justify-content: center;
         position: static;
-        padding: 32px 0 0 0;
+        padding: 32px 0 0;
 
         span {
           margin-bottom: 16px;
@@ -643,7 +643,7 @@ $carousel-margin-bottom: 0.25rem * 4;
         flex: 0 0 auto;
         height: auto;
         justify-content: space-evenly;
-        padding: 16px 16px 24px 16px;
+        padding: 16px 16px 24px;
       }
     }
   }

@@ -14009,14 +14009,14 @@ a:focus, a.focus {
   box-shadow: 0 0 0 0.125rem #003832;
   outline: 0.125rem solid transparent;
 }
-a.list-group-item, a.btn:not(.btn-block), a.badge, a.modal-carousel-close, a.gallery-grid-item, a.nav-link, a.page-link, a.card, a.navbar-brand {
+a.list-group-item, a.btn:not(.btn-block), a.badge, a.modal-carousel-close, .modal-carousel a.modal-carousel-close-dark, a.gallery-grid-item, a.nav-link, a.page-link, a.card, a.navbar-brand {
   width: auto;
 }
-a.list-group-item:focus, a.btn:not(.btn-block):focus, a.badge:focus, a.modal-carousel-close:focus, a.gallery-grid-item:focus, a.nav-link:focus, a.page-link:focus, a.card:focus, a.navbar-brand:focus {
+a.list-group-item:focus, a.btn:not(.btn-block):focus, a.badge:focus, a.modal-carousel-close:focus, .modal-carousel a.modal-carousel-close-dark:focus, a.gallery-grid-item:focus, a.nav-link:focus, a.page-link:focus, a.card:focus, a.navbar-brand:focus {
   box-shadow: 0 0 0 0.25rem #003832;
   outline: 0.25rem solid transparent;
 }
-a.list-group-item.btn-warning:focus, a.list-group-item.btn-dark:focus, a.list-group-item.btn-outline-warning:focus, a.list-group-item.btn-outline-dark:focus, a.btn:not(.btn-block).btn-warning:focus, a.btn:not(.btn-block).btn-dark:focus, a.btn:not(.btn-block).btn-outline-warning:focus, a.btn:not(.btn-block).btn-outline-dark:focus, a.badge.btn-warning:focus, a.badge.btn-dark:focus, a.badge.btn-outline-warning:focus, a.badge.btn-outline-dark:focus, a.modal-carousel-close.btn-warning:focus, a.modal-carousel-close.btn-dark:focus, a.modal-carousel-close.btn-outline-warning:focus, a.modal-carousel-close.btn-outline-dark:focus, a.gallery-grid-item.btn-warning:focus, a.gallery-grid-item.btn-dark:focus, a.gallery-grid-item.btn-outline-warning:focus, a.gallery-grid-item.btn-outline-dark:focus, a.nav-link.btn-warning:focus, a.nav-link.btn-dark:focus, a.nav-link.btn-outline-warning:focus, a.nav-link.btn-outline-dark:focus, a.page-link.btn-warning:focus, a.page-link.btn-dark:focus, a.page-link.btn-outline-warning:focus, a.page-link.btn-outline-dark:focus, a.card.btn-warning:focus, a.card.btn-dark:focus, a.card.btn-outline-warning:focus, a.card.btn-outline-dark:focus, a.navbar-brand.btn-warning:focus, a.navbar-brand.btn-dark:focus, a.navbar-brand.btn-outline-warning:focus, a.navbar-brand.btn-outline-dark:focus {
+a.list-group-item.btn-warning:focus, a.list-group-item.btn-dark:focus, a.list-group-item.btn-outline-warning:focus, a.list-group-item.btn-outline-dark:focus, a.btn:not(.btn-block).btn-warning:focus, a.btn:not(.btn-block).btn-dark:focus, a.btn:not(.btn-block).btn-outline-warning:focus, a.btn:not(.btn-block).btn-outline-dark:focus, a.badge.btn-warning:focus, a.badge.btn-dark:focus, a.badge.btn-outline-warning:focus, a.badge.btn-outline-dark:focus, a.modal-carousel-close.btn-warning:focus, .modal-carousel a.btn-warning.modal-carousel-close-dark:focus, a.modal-carousel-close.btn-dark:focus, .modal-carousel a.btn-dark.modal-carousel-close-dark:focus, a.modal-carousel-close.btn-outline-warning:focus, .modal-carousel a.btn-outline-warning.modal-carousel-close-dark:focus, a.modal-carousel-close.btn-outline-dark:focus, .modal-carousel a.btn-outline-dark.modal-carousel-close-dark:focus, a.gallery-grid-item.btn-warning:focus, a.gallery-grid-item.btn-dark:focus, a.gallery-grid-item.btn-outline-warning:focus, a.gallery-grid-item.btn-outline-dark:focus, a.nav-link.btn-warning:focus, a.nav-link.btn-dark:focus, a.nav-link.btn-outline-warning:focus, a.nav-link.btn-outline-dark:focus, a.page-link.btn-warning:focus, a.page-link.btn-dark:focus, a.page-link.btn-outline-warning:focus, a.page-link.btn-outline-dark:focus, a.card.btn-warning:focus, a.card.btn-dark:focus, a.card.btn-outline-warning:focus, a.card.btn-outline-dark:focus, a.navbar-brand.btn-warning:focus, a.navbar-brand.btn-dark:focus, a.navbar-brand.btn-outline-warning:focus, a.navbar-brand.btn-outline-dark:focus {
   box-shadow: none;
 }
 a.external::after {
@@ -16869,6 +16869,470 @@ span.form-label {
   margin-bottom: 0.5rem;
 }
 
+.carousel {
+  background-color: #edf4ff;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  padding: 24px 16px;
+}
+.carousel .carousel-inner {
+  border-radius: 8px;
+}
+.carousel .carousel-indicators {
+  position: relative;
+  margin: 0;
+  align-items: center;
+  column-gap: 8px;
+}
+.carousel .carousel-indicators button {
+  margin: 0;
+  background-color: transparent;
+  border: solid 1px #08202f;
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  border-radius: 50%;
+}
+.carousel .carousel-indicators button.active {
+  background-color: #08202f;
+}
+.carousel .carousel-control-next,
+.carousel .carousel-control-prev {
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  border-radius: 9999px;
+  border: none;
+  outline: 0.125rem solid #d6e4f6;
+  background-color: #ffffff;
+}
+.carousel .carousel-control-next .carousel-control-prev-icon,
+.carousel .carousel-control-prev .carousel-control-prev-icon {
+  background-image: none;
+  content: url('data:image/svg+xml,<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.4433 8.79H4.55L11.0567 2.28333C11.5767 1.76333 11.5767 0.91 11.0567 0.39C10.5367 -0.13 9.69667 -0.13 9.17667 0.39L0.39 9.17667C-0.13 9.69667 -0.13 10.5367 0.39 11.0567L9.17667 19.8433C9.69667 20.3633 10.5367 20.3633 11.0567 19.8433C11.5767 19.3233 11.5767 18.4833 11.0567 17.9633L4.55 11.4567H19.4433C20.1767 11.4567 20.7767 10.8567 20.7767 10.1233C20.7767 9.39 20.1767 8.79 19.4433 8.79Z" fill="%231D3343"/></svg>');
+}
+.carousel .carousel-control-next .carousel-control-next-icon,
+.carousel .carousel-control-prev .carousel-control-next-icon {
+  background-image: none;
+  content: url('data:image/svg+xml,<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.33333 11.4567H16.2267L9.72 17.9633C9.2 18.4833 9.2 19.3367 9.72 19.8567C10.24 20.3767 11.08 20.3767 11.6 19.8567L20.3867 11.07C20.9067 10.55 20.9067 9.71 20.3867 9.19L11.6133 0.39C11.0933 -0.13 10.2533 -0.13 9.73333 0.39C9.21333 0.91 9.21333 1.75 9.73333 2.27L16.2267 8.79H1.33333C0.6 8.79 0 9.39 0 10.1233C0 10.8567 0.6 11.4567 1.33333 11.4567Z" fill="%231D3343"/></svg>');
+}
+.carousel .carousel-control-next:hover,
+.carousel .carousel-control-prev:hover {
+  background-color: #edf4ff;
+}
+.carousel .carousel-control-next:focus,
+.carousel .carousel-control-prev:focus {
+  box-shadow: 0 0 0 0.25rem #003832;
+  background-color: #ffffff;
+  outline: 0.25rem solid transparent;
+}
+.carousel .carousel-control-next:focus .carousel-control-prev-icon,
+.carousel .carousel-control-prev:focus .carousel-control-prev-icon {
+  content: url('data:image/svg+xml,<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.4433 8.79H4.55L11.0567 2.28333C11.5767 1.76333 11.5767 0.91 11.0567 0.39C10.5367 -0.13 9.69667 -0.13 9.17667 0.39L0.39 9.17667C-0.13 9.69667 -0.13 10.5367 0.39 11.0567L9.17667 19.8433C9.69667 20.3633 10.5367 20.3633 11.0567 19.8433C11.5767 19.3233 11.5767 18.4833 11.0567 17.9633L4.55 11.4567H19.4433C20.1767 11.4567 20.7767 10.8567 20.7767 10.1233C20.7767 9.39 20.1767 8.79 19.4433 8.79Z" fill="%231D3343"/></svg>');
+}
+.carousel .carousel-control-next:focus .carousel-control-next-icon,
+.carousel .carousel-control-prev:focus .carousel-control-next-icon {
+  content: url('data:image/svg+xml,<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.33333 11.4567H16.2267L9.72 17.9633C9.2 18.4833 9.2 19.3367 9.72 19.8567C10.24 20.3767 11.08 20.3767 11.6 19.8567L20.3867 11.07C20.9067 10.55 20.9067 9.71 20.3867 9.19L11.6133 0.39C11.0933 -0.13 10.2533 -0.13 9.73333 0.39C9.21333 0.91 9.21333 1.75 9.73333 2.27L16.2267 8.79H1.33333C0.6 8.79 0 9.39 0 10.1233C0 10.8567 0.6 11.4567 1.33333 11.4567Z" fill="%231D3343"/></svg>');
+}
+.carousel .carousel-control-next:active,
+.carousel .carousel-control-prev:active {
+  box-shadow: none;
+  background-color: #035c80;
+  outline: 0.25rem solid transparent;
+  outline-offset: -2px;
+  box-shadow: 0 0 0 0.125rem #d6e4f6;
+}
+.carousel .carousel-control-next:active .carousel-control-prev-icon,
+.carousel .carousel-control-prev:active .carousel-control-prev-icon {
+  content: url('data:image/svg+xml,<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.4433 8.79H4.55L11.0567 2.28333C11.5767 1.76333 11.5767 0.91 11.0567 0.39C10.5367 -0.13 9.69667 -0.13 9.17667 0.39L0.39 9.17667C-0.13 9.69667 -0.13 10.5367 0.39 11.0567L9.17667 19.8433C9.69667 20.3633 10.5367 20.3633 11.0567 19.8433C11.5767 19.3233 11.5767 18.4833 11.0567 17.9633L4.55 11.4567H19.4433C20.1767 11.4567 20.7767 10.8567 20.7767 10.1233C20.7767 9.39 20.1767 8.79 19.4433 8.79Z" fill="%23FFFFFF"/></svg>');
+}
+.carousel .carousel-control-next:active .carousel-control-next-icon,
+.carousel .carousel-control-prev:active .carousel-control-next-icon {
+  content: url('data:image/svg+xml,<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.33333 11.4567H16.2267L9.72 17.9633C9.2 18.4833 9.2 19.3367 9.72 19.8567C10.24 20.3767 11.08 20.3767 11.6 19.8567L20.3867 11.07C20.9067 10.55 20.9067 9.71 20.3867 9.19L11.6133 0.39C11.0933 -0.13 10.2533 -0.13 9.73333 0.39C9.21333 0.91 9.21333 1.75 9.73333 2.27L16.2267 8.79H1.33333C0.6 8.79 0 9.39 0 10.1233C0 10.8567 0.6 11.4567 1.33333 11.4567Z" fill="%23FFFFFF"/></svg>');
+}
+.carousel .carousel-indicators {
+  justify-content: start;
+  height: 48px;
+}
+.carousel .carousel-control-next,
+.carousel .carousel-control-prev {
+  top: auto;
+  bottom: 12px;
+  width: 48px;
+  height: 48px;
+}
+.carousel .carousel-control-next .carousel-control-prev-icon,
+.carousel .carousel-control-next .carousel-control-next-icon,
+.carousel .carousel-control-prev .carousel-control-prev-icon,
+.carousel .carousel-control-prev .carousel-control-next-icon {
+  width: 21px;
+  height: 21px;
+}
+.carousel .carousel-control-next {
+  right: 32px;
+}
+.carousel .carousel-control-prev {
+  left: auto;
+  right: 100px;
+}
+.carousel .title {
+  display: flex;
+  column-gap: 2rem;
+  align-items: center;
+}
+.carousel .title a {
+  position: absolute;
+  left: 16px;
+  bottom: 24px;
+}
+.carousel:has(.title > a) {
+  padding-bottom: 64px;
+}
+.carousel .panel-horizontal-content, .carousel .panel-horizontal-container {
+  background-color: transparent;
+}
+.carousel .panel-horizontal-content .panel-horizontal, .carousel .panel-horizontal-container .panel-horizontal {
+  padding: 0;
+  max-width: 100%;
+  row-gap: 24px;
+}
+.carousel .panel-horizontal-content .panel-horizontal .panel-footer a, .carousel .panel-horizontal-container .panel-horizontal .panel-footer a {
+  width: 100%;
+}
+.carousel .panel-horizontal-content .panel-horizontal img, .carousel .panel-horizontal-container .panel-horizontal img {
+  max-width: 100%;
+}
+.carousel.dark {
+  background-color: #002230;
+  color: #ffffff;
+}
+.carousel.dark .carousel-indicators button {
+  border-color: #ffffff;
+}
+.carousel.dark .carousel-indicators button.active {
+  background-color: #ffffff;
+}
+.carousel.white {
+  background-color: #ffffff;
+}
+.carousel.cards {
+  background-color: white;
+}
+.carousel.cards.bg-dark .title,
+.carousel.cards.bg-dark .carousel-link {
+  color: white;
+}
+.carousel.cards.bg-dark .carousel-indicators button {
+  border-color: #ffffff;
+}
+.carousel.cards.bg-dark .carousel-indicators button.active {
+  background-color: #ffffff;
+}
+.carousel.cards.controls-top .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.carousel.cards.controls-top .carousel-navigation {
+  display: flex;
+  gap: 12px;
+}
+.carousel.cards.controls-top .carousel-control-prev,
+.carousel.cards.controls-top .carousel-control-next {
+  position: static;
+  transform: none;
+}
+@media (width < 768px) {
+  .carousel.cards .carousel-inner {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto hidden;
+    column-gap: 24px;
+    padding: 2px 2px 24px;
+    align-items: stretch;
+  }
+  .carousel.cards .carousel-inner .carousel-item {
+    display: contents;
+  }
+  .carousel.cards .carousel-inner .carousel-item .card-items {
+    display: contents;
+  }
+  .carousel.cards .carousel-inner .carousel-item .card-items .card {
+    flex: 0 0 auto;
+    width: 296px;
+  }
+  .carousel.cards .carousel-inner .carousel-item .card-items .card.card-img-bg {
+    flex: 0 0 auto;
+    width: 300px;
+    min-width: 300px;
+  }
+  .carousel.cards .carousel-control-next,
+  .carousel.cards .carousel-control-prev,
+  .carousel.cards .carousel-indicators {
+    display: none;
+  }
+}
+@media (width >= 576px) {
+  .carousel {
+    padding: 32px;
+  }
+  .carousel .title a {
+    left: 32px;
+  }
+  .carousel .panel-horizontal-content .panel-horizontal .panel-footer a, .carousel .panel-horizontal-container .panel-horizontal .panel-footer a {
+    width: auto;
+  }
+}
+@media (width >= 768px) {
+  .carousel.cards .carousel-inner {
+    overflow-x: hidden;
+  }
+  .carousel.cards .carousel-inner .carousel-item .card-items {
+    display: flex;
+    column-gap: 24px;
+    align-items: stretch;
+    justify-content: center;
+  }
+  .carousel.cards .carousel-inner .carousel-item .card-items .card {
+    max-width: 33%;
+  }
+  .carousel:has(.title > a) {
+    padding-bottom: 32px;
+  }
+  .carousel .title a {
+    position: unset;
+  }
+}
+@media (width >= 992px) {
+  .carousel {
+    padding: 48px 0 32px;
+  }
+  .carousel .carousel-indicators {
+    justify-content: center;
+    height: auto;
+  }
+  .carousel .carousel-control-next,
+  .carousel .carousel-control-prev {
+    top: 50%;
+    bottom: auto;
+    width: 64px;
+    height: 64px;
+    opacity: 1;
+  }
+  .carousel .carousel-control-next .carousel-control-prev-icon,
+  .carousel .carousel-control-next .carousel-control-next-icon,
+  .carousel .carousel-control-prev .carousel-control-prev-icon,
+  .carousel .carousel-control-prev .carousel-control-next-icon {
+    width: 21px;
+    height: 21px;
+  }
+  .carousel .carousel-control-prev {
+    left: 28px;
+    right: auto;
+  }
+  .carousel .carousel-control-next {
+    right: 28px;
+    left: auto;
+  }
+  .carousel .carousel-control-prev {
+    left: max(16px, (100% - 890px) / 2 - 24px);
+  }
+  .carousel .carousel-control-next {
+    right: max(16px, (100% - 890px) / 2 - 24px);
+  }
+  .carousel .carousel-inner {
+    border-radius: 16px;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  .carousel .carousel-inner .carousel-item {
+    padding: 2px 8px;
+  }
+  .carousel .title,
+  .carousel .carousel-link {
+    padding-left: calc((100% - 1000px) / 2 + 0.75rem);
+    padding-right: calc((100% - 1010px) / 2 + 0.75rem);
+  }
+  .carousel .panel-horizontal-content, .carousel .panel-horizontal-container {
+    padding: 0;
+  }
+  .carousel .panel-horizontal-content .panel-horizontal, .carousel .panel-horizontal-container .panel-horizontal {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .carousel .panel-horizontal-content .panel-horizontal img, .carousel .panel-horizontal-container .panel-horizontal img {
+    max-width: 50%;
+  }
+}
+@media (width >= 992px) and (width < 1200px) {
+  .carousel {
+    padding: 32px;
+  }
+  .carousel:has(.panel-horizontal-content, .panel-horizontal-container) .carousel-inner {
+    width: 100%;
+    margin: auto;
+  }
+  .carousel:has(.panel-horizontal-content, .panel-horizontal-container) .carousel-inner .carousel-item .panel-horizontal-content .panel-horizontal, .carousel:has(.panel-horizontal-content, .panel-horizontal-container) .carousel-inner .carousel-item .panel-horizontal-container .panel-horizontal {
+    flex-direction: column;
+  }
+  .carousel:has(.panel-horizontal-content, .panel-horizontal-container) .carousel-inner .carousel-item .panel-horizontal-content .panel-horizontal .panel-img, .carousel:has(.panel-horizontal-content, .panel-horizontal-container) .carousel-inner .carousel-item .panel-horizontal-container .panel-horizontal .panel-img {
+    max-width: 100%;
+  }
+  .carousel:has(.panel-horizontal-content, .panel-horizontal-container) .carousel-indicators {
+    justify-content: start;
+    padding-left: calc((100% - 1010px) / 2 + 0.75rem);
+  }
+  .carousel:has(.panel-horizontal-content, .panel-horizontal-container) .carousel-control-next,
+  .carousel:has(.panel-horizontal-content, .panel-horizontal-container) .carousel-control-prev {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    border-radius: 9999px;
+    border: none;
+    outline: 0.125rem solid #e6ebf0;
+    background-color: #ffffff;
+    top: auto;
+    bottom: 12px;
+    width: 48px;
+    height: 48px;
+  }
+  .carousel:has(.panel-horizontal-content, .panel-horizontal-container) .carousel-control-next .carousel-control-next-icon,
+  .carousel:has(.panel-horizontal-content, .panel-horizontal-container) .carousel-control-next .carousel-control-prev-icon,
+  .carousel:has(.panel-horizontal-content, .panel-horizontal-container) .carousel-control-prev .carousel-control-next-icon,
+  .carousel:has(.panel-horizontal-content, .panel-horizontal-container) .carousel-control-prev .carousel-control-prev-icon {
+    width: 21px;
+    height: 21px;
+  }
+  .carousel:has(.panel-horizontal-content, .panel-horizontal-container) .carousel-control-prev {
+    left: auto;
+    right: calc((100% - 870px) / 2 + 0.75rem);
+  }
+  .carousel:has(.panel-horizontal-content, .panel-horizontal-container) .carousel-control-next {
+    right: calc((100% - 1000px) / 2 + 0.75rem);
+  }
+}
+@media (width >= 992px) and (width < 1200px) {
+  .carousel.cards .carousel-control-prev {
+    left: 64px;
+  }
+  .carousel.cards .carousel-control-next {
+    right: 64px;
+  }
+}
+@media (width >= 1200px) {
+  .carousel {
+    padding: 24px 16px;
+  }
+  .carousel .carousel-indicators {
+    justify-content: start;
+    height: 48px;
+  }
+  .carousel .carousel-control-next,
+  .carousel .carousel-control-prev {
+    top: auto;
+    bottom: 12px;
+    width: 48px;
+    height: 48px;
+  }
+  .carousel .carousel-control-next .carousel-control-prev-icon,
+  .carousel .carousel-control-next .carousel-control-next-icon,
+  .carousel .carousel-control-prev .carousel-control-prev-icon,
+  .carousel .carousel-control-prev .carousel-control-next-icon {
+    width: 21px;
+    height: 21px;
+  }
+  .carousel .carousel-control-next {
+    right: 32px;
+  }
+  .carousel .carousel-control-prev {
+    left: auto;
+    right: 100px;
+  }
+  .carousel .carousel-indicators {
+    padding-left: calc((100% - 1140px) / 2 + 0.75rem);
+  }
+  .carousel .carousel-control-next {
+    right: max(22px, (100% - 1140px) / 2 + 0.75rem);
+  }
+  .carousel .carousel-control-prev {
+    right: max(86px, (100% - 1140px) / 2 + 0.75rem + 64px);
+  }
+  .carousel .carousel-inner {
+    max-width: 1140px;
+  }
+  .carousel .title {
+    padding-left: calc((100% - 1140px) / 2 + 0.75rem);
+  }
+  .carousel.cards.controls-top .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: calc((100% - 1140px) / 2 + 0.75rem);
+    flex: 1 1 auto;
+    width: 100%;
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  .carousel.cards.controls-top .carousel-indicators {
+    justify-content: center;
+    padding-left: 0;
+    margin-inline: auto;
+  }
+  .carousel.cards.controls-top .carousel-link {
+    display: flex;
+    padding-left: calc((100% - 1140px) / 2 + 0.75rem);
+    text-align: left;
+    justify-content: start;
+    align-items: start;
+  }
+}
+@media (width >= 1400px) {
+  .carousel {
+    padding: 48px 0 32px;
+  }
+  .carousel .carousel-indicators {
+    justify-content: center;
+    height: auto;
+  }
+  .carousel .carousel-control-next,
+  .carousel .carousel-control-prev {
+    top: 50%;
+    bottom: auto;
+    width: 64px;
+    height: 64px;
+    opacity: 1;
+  }
+  .carousel .carousel-control-next .carousel-control-prev-icon,
+  .carousel .carousel-control-next .carousel-control-next-icon,
+  .carousel .carousel-control-prev .carousel-control-prev-icon,
+  .carousel .carousel-control-prev .carousel-control-next-icon {
+    width: 21px;
+    height: 21px;
+  }
+  .carousel .carousel-control-prev {
+    left: 28px;
+    right: auto;
+  }
+  .carousel .carousel-control-next {
+    right: 28px;
+    left: auto;
+  }
+  .carousel .carousel-indicators {
+    padding-left: 0;
+  }
+  .carousel .carousel-control-prev {
+    left: max(5px, (100% - 1140px) / 2 + 0.75rem - 114px);
+  }
+  .carousel .carousel-control-next {
+    right: max(5px, (100% - 1140px) / 2 + 0.75rem - 114px);
+  }
+}
+
 .carousel.gallery-carousel.gallery-carousel-thumbnails .gallery-carousel-navigation {
   gap: 0.75rem;
 }
@@ -16893,15 +17357,13 @@ span.form-label {
     padding-top: 1.5rem;
   }
 }
-.modal-carousel .modal-carousel-close,
-.modal-carousel .modal-carousel-close-dark {
+.modal-carousel .modal-carousel-close, .modal-carousel .modal-carousel-close-dark {
   text-align: right;
   margin-bottom: 1rem;
   width: fit-content;
   margin-left: auto;
 }
-.modal-carousel .modal-carousel-close::after,
-.modal-carousel .modal-carousel-close-dark::after {
+.modal-carousel .modal-carousel-close::after, .modal-carousel .modal-carousel-close-dark::after {
   vertical-align: middle;
   content: "";
   display: inline-block;
@@ -16911,52 +17373,15 @@ span.form-label {
   background: transparent url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" style="fill: rgba(56,72,92,0.9999);transform: ;msFilter:;"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"/></svg>') no-repeat center center;
 }
 .modal-carousel .modal-carousel-close-dark {
-  background: transparent url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" style="fill: rgba(0,0,0,0.9999);transform: ;msFilter:;"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"/></svg>') no-repeat center center;
+  position: relative;
+  right: 48px;
+}
+.modal-carousel .modal-carousel-close-dark::after {
+  background: transparent url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" style="fill: rgb(255,255,255);transform: ;msFilter:;"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"/></svg>') no-repeat center center;
+  padding: 15px;
 }
 .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) {
   background: none;
-}
-.modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-control-prev,
-.modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-control-next {
-  display: block;
-  width: 3rem;
-  height: 3rem;
-  padding: 0.75rem;
-  background-color: #f4f6f9;
-  top: 25%;
-  transform: translateY(-25%);
-  border-radius: 100%;
-  opacity: 0.75;
-  outline: 0.125rem solid #d6e4f6;
-}
-.modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-control-prev:hover, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-control-prev:focus, .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-control-prev:active,
-.modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-control-next:hover,
-.modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-control-next:focus,
-.modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-control-next:active {
-  box-shadow: unset;
-  outline: 0.125rem solid #d6e4f6;
-  outline-offset: unset;
-}
-.modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-control-prev-icon,
-.modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-control-next-icon {
-  width: 1.5rem;
-  height: 1.5rem;
-  background: none;
-  background-image: inherit;
-}
-.modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-control-prev {
-  left: 1.5rem;
-}
-.modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-control-prev .carousel-control-prev-icon {
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(56,72,92,0.9999);transform: ;msFilter:;"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"/></svg>');
-  content: unset;
-}
-.modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-control-next {
-  right: 1.5rem;
-}
-.modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-control-next .carousel-control-next-icon {
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(56,72,92,0.9999);transform: ;msFilter:;"><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"/></svg>');
-  content: unset;
 }
 .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-inner {
   border-radius: 6px;
@@ -16982,33 +17407,18 @@ span.form-label {
     max-width: 85%;
     margin: 0 auto;
   }
-  .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-control-prev,
-  .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-control-next {
-    top: 12.5rem;
-    opacity: 1;
-  }
-  .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-control-prev {
-    left: -4.5rem;
-  }
-  .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-control-next {
-    right: -4.5rem;
-  }
 }
 @media (min-width: 768px) {
-  .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white).carousel {
+  .modal-carousel.carousel {
     max-width: 100%;
     margin: 0;
   }
 }
 @media (min-width: 992px) {
-  .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-control-prev,
-  .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-control-next {
-    top: calc(50% - 86px);
-  }
-  .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-inner {
+  .modal-carousel .carousel-inner {
     max-width: 100%;
   }
-  .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .carousel-inner .carousel-item {
+  .modal-carousel .carousel-inner .carousel-item {
     padding: 0;
   }
 }
@@ -17162,38 +17572,6 @@ span.form-label {
   font-size: 0.75rem;
   line-height: 1;
 }
-.carousel.gallery-carousel .gallery-image-paginator {
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-.carousel.gallery-carousel .gallery-image-paginator .carousel-control-prev,
-.carousel.gallery-carousel .gallery-image-paginator .carousel-control-next {
-  position: static;
-  display: flex;
-  flex: 0 0 3rem;
-  align-items: center;
-  justify-content: center;
-  width: 3rem;
-  height: 3rem;
-  padding: 0.5rem;
-  background-color: #ffffff;
-  border: 0.125rem solid #d6e4f6;
-  border-radius: 9999px;
-  opacity: 1;
-}
-.carousel.gallery-carousel .gallery-image-paginator .carousel-control-prev-icon,
-.carousel.gallery-carousel .gallery-image-paginator .carousel-control-next-icon {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-.carousel.gallery-carousel .gallery-image-paginator .gallery-thumbnails {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  gap: 0.5rem;
-  min-width: 0;
-}
 
 .gallery-image-paginator {
   display: flex;
@@ -17204,31 +17582,109 @@ span.form-label {
 .gallery-image-paginator .carousel-control-next {
   position: static;
   display: flex;
-  flex: 0 0 3rem;
   align-items: center;
   justify-content: center;
+  flex: 0 0 3rem;
   width: 3rem;
   height: 3rem;
-  padding: 0.5rem;
+  min-width: 3rem;
+  min-height: 3rem;
+  padding: 0;
+  box-sizing: border-box;
   background-color: #ffffff;
   border: 0.125rem solid #d6e4f6;
-  border-radius: 9999px;
+  border-radius: 50%;
   opacity: 1;
+  z-index: 3;
+}
+.gallery-image-paginator .carousel-control-prev:hover,
+.gallery-image-paginator .carousel-control-next:hover {
+  background-color: #edf4ff;
+}
+.gallery-image-paginator .carousel-control-prev:focus,
+.gallery-image-paginator .carousel-control-next:focus {
+  box-shadow: 0 0 0 0.25rem #003832;
+  background-color: #ffffff;
+  outline: 0.25rem solid transparent;
+  outline-offset: unset;
+}
+.gallery-image-paginator .carousel-control-prev:active,
+.gallery-image-paginator .carousel-control-next:active {
+  box-shadow: 0 0 0 0.125rem #d6e4f6;
+  background-color: #035c80;
+  outline: 0.25rem solid transparent;
+  outline-offset: -2px;
+}
+.gallery-image-paginator .carousel-control-prev:active .carousel-control-prev-icon,
+.gallery-image-paginator .carousel-control-next:active .carousel-control-prev-icon {
+  background-image: url('data:image/svg+xml,<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.4433 8.79H4.55L11.0567 2.28333C11.5767 1.76333 11.5767 0.91 11.0567 0.39C10.5367 -0.13 9.69667 -0.13 9.17667 0.39L0.39 9.17667C-0.13 9.69667 -0.13 10.5367 0.39 11.0567L9.17667 19.8433C9.69667 20.3633 10.5367 20.3633 11.0567 19.8433C11.5767 19.3233 11.5767 18.4833 11.0567 17.9633L4.55 11.4567H19.4433C20.1767 11.4567 20.7767 10.8567 20.7767 10.1233C20.7767 9.39 20.1767 8.79 19.4433 8.79Z" fill="%23FFFFFF"/></svg>');
+}
+.gallery-image-paginator .carousel-control-prev:active .carousel-control-next-icon,
+.gallery-image-paginator .carousel-control-next:active .carousel-control-next-icon {
+  background-image: url('data:image/svg+xml,<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.33333 11.4567H16.2267L9.72 17.9633C9.2 18.4833 9.2 19.3367 9.72 19.8567C10.24 20.3767 11.08 20.3767 11.6 19.8567L20.3867 11.07C20.9067 10.55 20.9067 9.71 20.3867 9.19L11.6133 0.39C11.0933 -0.13 10.2533 -0.13 9.73333 0.39C9.21333 0.91 9.21333 1.75 9.73333 2.27L16.2267 8.79H1.33333C0.6 8.79 0 9.39 0 10.1233C0 10.8567 0.6 11.4567 1.33333 11.4567Z" fill="%23FFFFFF"/></svg>');
 }
 .gallery-image-paginator .carousel-control-prev-icon,
 .gallery-image-paginator .carousel-control-next-icon {
+  display: block;
   width: 1.5rem;
   height: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 }
-.gallery-image-paginator .gallery-thumbnails {
+.gallery-image-paginator .carousel-control-prev-icon {
+  background-image: url('data:image/svg+xml,<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.4433 8.79H4.55L11.0567 2.28333C11.5767 1.76333 11.5767 0.91 11.0567 0.39C10.5367 -0.13 9.69667 -0.13 9.17667 0.39L0.39 9.17667C-0.13 9.69667 -0.13 10.5367 0.39 11.0567L9.17667 19.8433C9.69667 20.3633 10.5367 20.3633 11.0567 19.8433C11.5767 19.3233 11.5767 18.4833 11.0567 17.9633L4.55 11.4567H19.4433C20.1767 11.4567 20.7767 10.8567 20.7767 10.1233C20.7767 9.39 20.1767 8.79 19.4433 8.79Z" fill="%231D3343"/></svg>');
+}
+.gallery-image-paginator .carousel-control-next-icon {
+  background-image: url('data:image/svg+xml,<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.33333 11.4567H16.2267L9.72 17.9633C9.2 18.4833 9.2 19.3367 9.72 19.8567C10.24 20.3767 11.08 20.3767 11.6 19.8567L20.3867 11.07C20.9067 10.55 20.9067 9.71 20.3867 9.19L11.6133 0.39C11.0933 -0.13 10.2533 -0.13 9.73333 0.39C9.21333 0.91 9.21333 1.75 9.73333 2.27L16.2267 8.79H1.33333C0.6 8.79 0 9.39 0 10.1233C0 10.8567 0.6 11.4567 1.33333 11.4567Z" fill="%231D3343"/></svg>');
+}
+.gallery-image-paginator .carousel-indicators.gallery-thumbnails {
+  --gallery-thumbnail-offset: 0;
+  position: static;
+  box-sizing: border-box;
   display: flex;
-  flex: 1;
+  flex: 1 1 auto;
   justify-content: center;
   gap: 0.5rem;
+  height: auto;
+  margin: 0;
   min-width: 0;
+  padding-inline: 0.6875rem;
+  overflow: hidden;
+  margin: 0 16px;
+}
+.gallery-image-paginator .carousel-indicators.gallery-thumbnails:has(.gallery-thumbnail:nth-child(8)) {
+  justify-content: flex-start;
+}
+.gallery-image-paginator .carousel-indicators.gallery-thumbnails:has(.gallery-thumbnail:nth-child(8).active) {
+  --gallery-thumbnail-offset: 1;
+}
+.gallery-image-paginator .carousel-indicators.gallery-thumbnails:has(.gallery-thumbnail:nth-child(9).active) {
+  --gallery-thumbnail-offset: 2;
+}
+.gallery-image-paginator .carousel-indicators.gallery-thumbnails:has(.gallery-thumbnail:nth-child(10).active) {
+  --gallery-thumbnail-offset: 3;
+}
+.gallery-image-paginator .carousel-indicators.gallery-thumbnails:has(.gallery-thumbnail:nth-child(11).active) {
+  --gallery-thumbnail-offset: 4;
+}
+.gallery-image-paginator .carousel-indicators.gallery-thumbnails:has(.gallery-thumbnail:nth-child(12).active) {
+  --gallery-thumbnail-offset: 5;
+}
+.gallery-image-paginator .carousel-indicators.gallery-thumbnails:has(.gallery-thumbnail:nth-child(13).active) {
+  --gallery-thumbnail-offset: 6;
+}
+.gallery-image-paginator .carousel-indicators.gallery-thumbnails:has(.gallery-thumbnail:nth-child(14).active) {
+  --gallery-thumbnail-offset: 7;
+}
+.gallery-image-paginator .carousel-indicators.gallery-thumbnails:has(.gallery-thumbnail:nth-child(15).active) {
+  --gallery-thumbnail-offset: 8;
 }
 
-.gallery-thumbnail {
+.gallery-thumbnail,
+.carousel .carousel-indicators .gallery-thumbnail {
+  box-sizing: border-box;
+  flex: 0 0 5rem;
   width: 5rem;
   height: 5rem;
   padding: 0;
@@ -17237,14 +17693,19 @@ span.form-label {
   border: 0.125rem solid transparent;
   border-radius: 4px;
   opacity: 0.3;
+  transform: translateX(calc(var(--gallery-thumbnail-offset, 0) * -5.5rem));
+  transition: transform 0.3s ease;
 }
-.gallery-thumbnail img {
+.gallery-thumbnail img,
+.carousel .carousel-indicators .gallery-thumbnail img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.gallery-thumbnail.active {
+.gallery-thumbnail.active,
+.carousel .carousel-indicators .gallery-thumbnail.active {
+  background-color: transparent;
   border-color: #08202f;
   opacity: 1;
 }
@@ -17280,14 +17741,16 @@ span.form-label {
 .modal.modal-gallery-carousel .modal-dialog .modal-content .carousel {
   flex: 1 1 auto;
   min-height: 0;
-  width: calc(100% - clamp(0px, 27.78vw, 400px));
+  width: 100%;
   margin-inline: auto;
   padding: 0;
   overflow: hidden;
+  row-gap: 0;
 }
 .modal.modal-gallery-carousel .modal-dialog .modal-content .carousel-inner {
-  width: 100%;
-  height: 100%;
+  flex: 1 1 auto;
+  height: auto;
+  min-height: 0;
 }
 .modal.modal-gallery-carousel .modal-dialog .modal-content .carousel-item {
   width: 100%;
@@ -17297,24 +17760,64 @@ span.form-label {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
 }
-.modal.modal-gallery-carousel .modal-dialog .modal-content .wrapper {
+.modal.modal-gallery-carousel .modal-dialog .modal-content .carousel > .carousel-caption {
   display: flex;
   flex-direction: column;
-}
-.modal.modal-gallery-carousel .modal-dialog .modal-content .carousel-caption {
-  display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
   position: static;
-  padding: 16px 0;
+  width: 100%;
+  padding: 32px 0 0;
+  color: #ffffff;
+  text-align: center;
+}
+.modal.modal-gallery-carousel .modal-dialog .modal-content .carousel > .carousel-caption span {
+  margin-bottom: 16px;
+}
+.modal.modal-gallery-carousel .modal-dialog .modal-content .carousel > .carousel-caption p.headline-lg, .modal.modal-gallery-carousel .modal-dialog .modal-content .carousel > .carousel-caption p.list-steps-item::before, .modal.modal-gallery-carousel .modal-dialog .modal-content .carousel > .carousel-caption .navbar.o-header .header-container .navbar-collapse .navbar-content-extended p.navbar-sections-title, .navbar.o-header .header-container .navbar-collapse .navbar-content-extended .modal.modal-gallery-carousel .modal-dialog .modal-content .carousel > .carousel-caption p.navbar-sections-title, .modal.modal-gallery-carousel .modal-dialog .modal-content .carousel > .carousel-caption .navbar.o-header .header-container .navbar-collapse .navbar-user-mobile p.navbar-user-mobile-title, .navbar.o-header .header-container .navbar-collapse .navbar-user-mobile .modal.modal-gallery-carousel .modal-dialog .modal-content .carousel > .carousel-caption p.navbar-user-mobile-title, .modal.modal-gallery-carousel .modal-dialog .modal-content .carousel > .carousel-caption .navbar.o-header .header-container .navbar-collapse .navbar-content .navbar-sections p.navbar-sections-title, .navbar.o-header .header-container .navbar-collapse .navbar-content .navbar-sections .modal.modal-gallery-carousel .modal-dialog .modal-content .carousel > .carousel-caption p.navbar-sections-title, .modal.modal-gallery-carousel .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption p.h5, .modal.modal-gallery-carousel .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption .panel-horizontal-container .panel-horizontal .panel-body p.panel-title, .panel-horizontal-container .panel-horizontal .panel-body .modal.modal-gallery-carousel .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption p.panel-title, .modal.modal-gallery-carousel .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption .panel-lateral .panel-body p.panel-title.h2, .panel-lateral .panel-body .modal.modal-gallery-carousel .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption p.panel-title.h2, .modal.modal-gallery-carousel .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body p.panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .modal.modal-gallery-carousel .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption p.panel-title.h2, .modal.modal-gallery-carousel .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption .panel-vertical .panel-body p.panel-title, .panel-vertical .panel-body .modal.modal-gallery-carousel .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption p.panel-title,
+.modal.modal-gallery-carousel .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption .panel-vertical .panel-body-dark p.panel-title,
+.panel-vertical .panel-body-dark .modal.modal-gallery-carousel .group-access .card-access .card-access-body .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption p.panel-title, .group-access .card-access .card-access-body .modal.modal-gallery-carousel .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption p.h5, .group-access .card-access .card-access-body .modal.modal-gallery-carousel .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption .panel-horizontal-container .panel-horizontal .panel-body p.panel-title, .panel-horizontal-container .panel-horizontal .panel-body .group-access .card-access .card-access-body .modal.modal-gallery-carousel .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption p.panel-title, .group-access .card-access .card-access-body .modal.modal-gallery-carousel .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption .panel-lateral .panel-body p.panel-title.h2, .panel-lateral .panel-body .group-access .card-access .card-access-body .modal.modal-gallery-carousel .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption p.panel-title.h2, .group-access .card-access .card-access-body .modal.modal-gallery-carousel .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption .panel-horizontal-content .panel-horizontal .panel-body p.panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .group-access .card-access .card-access-body .modal.modal-gallery-carousel .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption p.panel-title.h2, .group-access .card-access .card-access-body .modal.modal-gallery-carousel .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption .panel-vertical .panel-body p.panel-title, .panel-vertical .panel-body .group-access .card-access .card-access-body .modal.modal-gallery-carousel .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption p.panel-title,
+.group-access .card-access .card-access-body .modal.modal-gallery-carousel .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption .panel-vertical .panel-body-dark p.panel-title,
+.panel-vertical .panel-body-dark .group-access .card-access .card-access-body .modal.modal-gallery-carousel .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption p.panel-title, .modal.modal-gallery-carousel .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption .group-access .card-access .card-access-body p.h5, .modal.modal-gallery-carousel .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption .group-access .card-access .card-access-body .panel-horizontal-container .panel-horizontal .panel-body p.panel-title, .panel-horizontal-container .panel-horizontal .panel-body .modal.modal-gallery-carousel .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption .group-access .card-access .card-access-body p.panel-title, .modal.modal-gallery-carousel .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption .group-access .card-access .card-access-body .panel-lateral .panel-body p.panel-title.h2, .panel-lateral .panel-body .modal.modal-gallery-carousel .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption .group-access .card-access .card-access-body p.panel-title.h2, .modal.modal-gallery-carousel .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption .group-access .card-access .card-access-body .panel-horizontal-content .panel-horizontal .panel-body p.panel-title.h2, .panel-horizontal-content .panel-horizontal .panel-body .modal.modal-gallery-carousel .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption .group-access .card-access .card-access-body p.panel-title.h2, .modal.modal-gallery-carousel .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption .group-access .card-access .card-access-body .panel-vertical .panel-body p.panel-title, .panel-vertical .panel-body .modal.modal-gallery-carousel .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption .group-access .card-access .card-access-body p.panel-title,
+.modal.modal-gallery-carousel .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption .group-access .card-access .card-access-body .panel-vertical .panel-body-dark p.panel-title,
+.panel-vertical .panel-body-dark .modal.modal-gallery-carousel .modal-carousel > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) .modal-content .carousel > .carousel-caption .group-access .card-access .card-access-body p.panel-title,
+.modal.modal-gallery-carousel .modal-dialog .modal-content .carousel > .carousel-caption p.text-md,
+.modal.modal-gallery-carousel .modal-dialog .modal-content .carousel > .carousel-caption p {
+  margin: 0;
+  padding: 0;
 }
 .modal.modal-gallery-carousel .modal-dialog .modal-content .gallery-image-paginator {
   flex: 0 0 auto;
-  height: 220px;
-  justify-content: space-evenly;
+  height: auto;
+  justify-content: space-between;
+  padding: 16px 16px 24px;
+}
+.modal.modal-gallery-carousel .modal-dialog .modal-content .gallery-image-paginator .carousel-indicators.gallery-thumbnails {
+  --gallery-thumbnail-offset: 0;
+  flex: 1 1 auto;
+  justify-content: center;
+  max-width: none;
+  padding-inline: 0;
+  margin: 0 16px;
+}
+.modal.modal-gallery-carousel .modal-dialog .modal-content .gallery-image-paginator .carousel-control-prev,
+.modal.modal-gallery-carousel .modal-dialog .modal-content .gallery-image-paginator .carousel-control-next {
+  position: static;
+  display: flex;
+  inset: auto;
+  flex: 0 0 3rem;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem;
+  background-color: #ffffff;
+  border: 0.125rem solid #d6e4f6;
+  border-radius: 9999px;
+  outline: 0;
+  transform: none;
+  opacity: 1;
 }
 
 .pagination {

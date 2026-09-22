@@ -240,7 +240,6 @@ $carousel-margin-bottom: 0.25rem * 4;
         max-width: 85%;
         margin: 0 auto;
       }
-
     }
   }
 
@@ -261,7 +260,6 @@ $carousel-margin-bottom: 0.25rem * 4;
     }
   }
 }
-
 
 // Gallery grid
 .gallery-grid {
@@ -382,7 +380,6 @@ $carousel-margin-bottom: 0.25rem * 4;
       }
     }
   }
-
 }
 
 .gallery-image-paginator {
@@ -407,6 +404,7 @@ $carousel-margin-bottom: 0.25rem * 4;
     border: $outline-border;
     border-radius: 50%;
     opacity: 1;
+    z-index: 3;
 
     // HOVER
     &:hover {
@@ -471,6 +469,7 @@ $carousel-margin-bottom: 0.25rem * 4;
     min-width: 0;
     padding-inline: 0.6875rem;
     overflow: hidden;
+    margin: 0 16px;
 
     &:has(.gallery-thumbnail:nth-child(8)) {
       justify-content: flex-start;
@@ -554,10 +553,10 @@ $carousel-margin-bottom: 0.25rem * 4;
 
       .carousel-inner {
         flex: 1 1 auto;
-        width: calc(100% - clamp(0px, 27.78vw, 400px));
+        // width: calc(100% - clamp(0px, 27.78vw, 400px));
         height: auto;
         min-height: 0;
-        margin-inline: auto;
+        // margin-inline: auto;
       }
 
       .carousel-item {
@@ -568,7 +567,7 @@ $carousel-margin-bottom: 0.25rem * 4;
           display: block;
           width: 100%;
           height: 100%;
-          object-fit: contain;
+          object-fit: cover;
           object-position: center;
         }
       }
@@ -608,7 +607,8 @@ $carousel-margin-bottom: 0.25rem * 4;
           justify-content: center;
           max-width: none;
           padding-inline: 0;
-          overflow: visible;
+          // overflow: visible;
+          margin: 0 16px;
         }
 
         .carousel-control-prev,

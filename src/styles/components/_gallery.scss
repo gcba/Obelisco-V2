@@ -213,54 +213,6 @@ $carousel-margin-bottom: 0.25rem * 4;
   > .modal-dialog > .modal-content > .carousel:not(.cards, .dark, .white) {
     background: none;
 
-    // .carousel-control-prev,
-    // .carousel-control-next {
-    //   display: block;
-    //   width: $carousel-control-size;
-    //   height: $carousel-control-size;
-    //   padding: $carousel-control-padding;
-    //   background-color: #f4f6f9;
-    //   top: $carousel-control-space-top-mobile;
-    //   transform: translateY(-$carousel-control-space-top-mobile);
-    //   border-radius: $carousel-control-border-radius;
-    //   opacity: 0.75;
-    //   outline: 0.125rem solid $slate-100;
-
-    //   &:hover,
-    //   &:focus,
-    //   &:active {
-    //     box-shadow: unset;
-    //     outline: 0.125rem solid $slate-100;
-    //     outline-offset: unset;
-    //   }
-    // }
-
-    // .carousel-control-prev-icon,
-    // .carousel-control-next-icon {
-    //   width: $carousel-control-icon-size;
-    //   height: $carousel-control-icon-size;
-    //   background: none;
-    //   background-image: inherit;
-    // }
-
-    // .carousel-control-prev {
-    //   left: $carousel-control-space-x-mobile;
-
-    //   .carousel-control-prev-icon {
-    //     background-image: $carousel-icon-left;
-    //     content: unset;
-    //   }
-    // }
-
-    // .carousel-control-next {
-    //   right: $carousel-control-space-x-mobile;
-
-    //   .carousel-control-next-icon {
-    //     background-image: $carousel-icon-right;
-    //     content: unset;
-    //   }
-    // }
-
     .carousel-inner {
       border-radius: $border-radius-lg;
 
@@ -289,18 +241,6 @@ $carousel-margin-bottom: 0.25rem * 4;
         margin: 0 auto;
       }
 
-      // .carousel-control-prev,
-      // .carousel-control-next {
-      //   top: $carousel-control-space-top;
-      //   opacity: 1;
-      // }
-
-      // .carousel-control-prev {
-      //   left: $carousel-control-space-x;
-      // }
-
-      // .carousel-control-next {
-      //   right: $carousel-control-space-x;
     }
   }
 
@@ -312,11 +252,6 @@ $carousel-margin-bottom: 0.25rem * 4;
   }
 
   @include media-breakpoint-up(lg) {
-    // .carousel-control-prev,
-    // .carousel-control-next {
-    //   top: calc(50% - 86px);
-    // }
-
     .carousel-inner {
       max-width: 100%;
 
@@ -327,7 +262,6 @@ $carousel-margin-bottom: 0.25rem * 4;
   }
 }
 
-// }
 
 // Gallery grid
 .gallery-grid {

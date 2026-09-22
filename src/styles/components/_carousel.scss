@@ -136,8 +136,6 @@ $max-width: 1000px;
     align-items: center;
     justify-content: center;
     opacity: 1;
-
-    // border-radius: $border-radius-lg;
     border-radius: $border-radius-pill;
     border: none;
     outline: $outline-border;
@@ -153,29 +151,8 @@ $max-width: 1000px;
       content: $carousel-icon-right;
     }
 
-    // &:focus {
-
-    //   @include carousel-navigation-states(
-
-    //     $focus-box-shadow,
-
-    //     $carousel-bg,
-
-    //     $carousel-icon-left,
-
-    //     $carousel-icon-right
-
-    //   );
-
-    //   outline: 0.25rem solid transparent;
-
-    // }
-
     &:hover {
-      // @include carousel-navigation-states(none, $carousel-bg);
       background-color: $carousel-bg-hover;
-
-      // outline: $hover-outline;
     }
 
     &:focus {

@@ -28,6 +28,10 @@ export const DATA_GALERY = [
     href: 'gallery/3.jpg',
     alt: 'Texto alternativo de la imagen',
   },
+];
+
+const DATA_GALLERY_CAROUSEL = [
+  ...DATA_GALERY,
   {
     id: 4,
     src: 'https://gcba.github.io/Obelisco/gallery/4.jpg',
@@ -259,9 +263,9 @@ const GalleryDocs: React.FC = () => {
               <div className="row justify-content-center">
                 <div className="col-12 d-flex justify-content-center">
                   {/* CARRUSEL default */}
-                  <div id="galleryCarousel" className="carousel slide gallery-carousel galeria-mniaturas">
+                  <div id="galleryCarousel" className="carousel slide gallery-carousel">
                     <div className="carousel-inner">
-                      {DATA_GALERY.map((d, i) => (
+                      {DATA_GALLERY_CAROUSEL.map((d, i) => (
                         <div key={d.id} className={`carousel-item ${i === 0 ? 'active' : ''}`}>
                           <div className="gallery-carousel-image">
                             {/* Imagen */}
@@ -297,8 +301,8 @@ const GalleryDocs: React.FC = () => {
                         <span className="visually-hidden">Anterior</span>
                       </button>
 
-                      <div className="gallery-thumbnails">
-                        {DATA_GALERY.slice(0, 7).map((image, index) => (
+                      <div className="carousel-indicators gallery-thumbnails">
+                        {DATA_GALLERY_CAROUSEL.map((image, index) => (
                           <button
                             key={image.id}
                             type="button"
@@ -349,65 +353,65 @@ const GalleryDocs: React.FC = () => {
                   {/* CARRUSEL DENTRO DEL MODAL */}
                   <div id="modalGalleryControls1" className="carousel slide" data-bs-ride="false">
                     <div className="carousel-inner">
-                      {DATA_GALERY.map((d, i) => (
+                      {DATA_GALLERY_CAROUSEL.map((d, i) => (
                         <div key={d.id} className={`carousel-item ${i === 0 ? 'active' : ''}`}>
                           <img src={d.src} className="d-block w-100" alt={d.alt} />
                         </div>
                       ))}
                     </div>
-                  </div>
 
-                  {/* info del carrusel */}
-                  <div className="carousel-caption mt-0 mb-0">
-                    <span className="text-xs">Imagen</span>
+                    {/* info del carrusel */}
+                    <div className="carousel-caption mt-0 mb-0">
+                      <span className="text-xs">Imagen 1/{DATA_GALLERY_CAROUSEL.length}</span>
 
-                    <p className="headline-lg">Título</p>
+                      <p className="headline-lg">Título</p>
 
-                    <p className="text-md">Descripción</p>
-                  </div>
-                  {/* info del carrusel */}
-
-                  {/* MINIATURA */}
-                  <div className="gallery-image-paginator">
-                    <button
-                      className="carousel-control-prev"
-                      type="button"
-                      data-bs-target="#modalGalleryControls1"
-                      data-bs-slide="prev"
-                    >
-                      <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-
-                      <span className="visually-hidden">Anterior</span>
-                    </button>
-
-                    <div className="gallery-thumbnails">
-                      {DATA_GALERY.slice(0, 7).map((image, index) => (
-                        <button
-                          key={image.id}
-                          type="button"
-                          className={`gallery-thumbnail ${index === 0 ? 'active' : ''}`}
-                          data-bs-target="#galleryCarousel"
-                          data-bs-slide-to={index}
-                          aria-current={index === 0 ? 'true' : undefined}
-                          aria-label={`Ver imagen ${index + 1}`}
-                        >
-                          <img src={image.src} alt="" />
-                        </button>
-                      ))}
+                      <p className="text-md">Descripción</p>
                     </div>
+                    {/* info del carrusel */}
 
-                    <button
-                      className="carousel-control-next"
-                      type="button"
-                      data-bs-target="#modalGalleryControls1"
-                      data-bs-slide="next"
-                    >
-                      <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                    {/* MINIATURA */}
+                    <div className="gallery-image-paginator">
+                      <button
+                        className="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#modalGalleryControls1"
+                        data-bs-slide="prev"
+                      >
+                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
 
-                      <span className="visually-hidden">Siguiente</span>
-                    </button>
+                        <span className="visually-hidden">Anterior</span>
+                      </button>
+
+                      <div className="carousel-indicators gallery-thumbnails">
+                        {DATA_GALLERY_CAROUSEL.map((image, index) => (
+                          <button
+                            key={image.id}
+                            type="button"
+                            className={`gallery-thumbnail ${index === 0 ? 'active' : ''}`}
+                            data-bs-target="#modalGalleryControls1"
+                            data-bs-slide-to={index}
+                            aria-current={index === 0 ? 'true' : undefined}
+                            aria-label={`Ver imagen ${index + 1}`}
+                          >
+                            <img src={image.src} alt="" />
+                          </button>
+                        ))}
+                      </div>
+
+                      <button
+                        className="carousel-control-next"
+                        type="button"
+                        data-bs-target="#modalGalleryControls1"
+                        data-bs-slide="next"
+                      >
+                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+
+                        <span className="visually-hidden">Siguiente</span>
+                      </button>
+                    </div>
+                    {/* MINIATURA */}
                   </div>
-                  {/* MINIATURA */}
                 </div>
               </div>
             </div>

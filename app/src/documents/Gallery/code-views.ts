@@ -283,7 +283,7 @@ export const GALLERY_CAROUSEL_THUMBNAILS = `<div class="container">
                 <div class="carousel-item "><img src="https://gcba.github.io/Obelisco/gallery/3.jpg"
                     class="d-block" alt="Texto alternativo de la imagen"></div>
               </div>
-              <div class="carousel-caption mt-0 mb-0"><span class="text-xs">Imagen 1/<!-- -->10</span>
+              <div class="carousel-caption mt-0 mb-0"><span class="text-xs gallery-image-counter">Imagen 1/10</span>
                 <p class="headline-lg">Título</p>
                 <p class="text-md">Descripción</p>
               </div>
@@ -324,3 +324,26 @@ export const GALLERY_CAROUSEL_THUMBNAILS = `<div class="container">
           </div>
         </div>
       </div>`;
+
+export const GALLERY_CAROUSEL_THUMBNAILS_JS = `const mainCarousel = document.getElementById('galleryCarousel');
+const modalCarousel = document.getElementById('modalGalleryControls1');
+const modal = document.getElementById('modalGallery1');
+const counter = modalCarousel?.querySelector('.gallery-image-counter');
+const total = modalCarousel?.querySelectorAll('.carousel-item').length;
+
+if (counter) counter.textContent = \`Imagen 1/\${total}\`;
+
+const goToSlide = (carousel, index) => {
+  carousel?.querySelector(\`[data-bs-slide-to="\${index}"]\`)?.click();
+};
+
+modal?.addEventListener('show.bs.modal', () => {
+  const slides = mainCarousel?.querySelectorAll('.carousel-item');
+  const activeIndex = slides ? [...slides].findIndex((slide) => slide.classList.contains('active')) : 0;
+  goToSlide(modalCarousel, activeIndex);
+});
+
+modalCarousel?.addEventListener('slid.bs.carousel', (event) => {
+  goToSlide(mainCarousel, event.to);
+  if (counter) counter.textContent = \`Imagen \${event.to + 1}/\${total}\`;
+});`;

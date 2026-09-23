@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import CodeBox from '@/components/CodeBox';
 import Tabs from '@/components/Tabs';
@@ -7,7 +7,7 @@ import ComponentHeader from '@/components/Template/ComponentHeader';
 // import DocumentationTemplate from '@/components/Template/DocumentationTemplate';
 // import MainDescription from '@/components/Template/MainDescription';
 
-import { GALLERY_CAROUSEL_THUMBNAILS, GALLERY_INTERACTIVE } from './code-views';
+import { GALLERY_CAROUSEL_THUMBNAILS, GALLERY_CAROUSEL_THUMBNAILS_JS, GALLERY_INTERACTIVE } from './code-views';
 const basePath = '/Obelisco-V2';
 
 export const DATA_GALERY = [
@@ -162,6 +162,46 @@ const generateCode = (numImages: number): string => {
 const GalleryDocs: React.FC = () => {
   const [selectedGrid, setSelectedGrid] = useState(2);
 
+  useEffect(() => {
+    const mainCarousel = document.getElementById('galleryCarousel');
+    const modalCarousel = document.getElementById('modalGalleryControls1');
+    const modal = document.getElementById('modalGallery1');
+    const counter = modalCarousel?.querySelector('.gallery-image-counter');
+    const total = modalCarousel?.querySelectorAll('.carousel-item').length;
+
+    if (counter) counter.textContent = `Imagen 1/${total}`;
+
+    const updateCounter = (event: Event) => {
+      const { to } = event as Event & { to: number };
+      if (counter) counter.textContent = `Imagen ${to + 1}/${total}`;
+    };
+
+    const goToSlide = (carousel: HTMLElement | null, index: number) => {
+      carousel?.querySelector<HTMLButtonElement>(`[data-bs-slide-to="${index}"]`)?.click();
+    };
+
+    const syncModal = () => {
+      const slides = mainCarousel?.querySelectorAll('.carousel-item');
+      const activeIndex = slides ? Array.from(slides).findIndex((slide) => slide.classList.contains('active')) : 0;
+      goToSlide(modalCarousel, activeIndex);
+    };
+
+    const syncMain = (event: Event) => {
+      const { to } = event as Event & { to: number };
+      goToSlide(mainCarousel, to);
+    };
+
+    modal?.addEventListener('show.bs.modal', syncModal);
+    modalCarousel?.addEventListener('slid.bs.carousel', syncMain);
+    modalCarousel?.addEventListener('slid.bs.carousel', updateCounter);
+
+    return () => {
+      modal?.removeEventListener('show.bs.modal', syncModal);
+      modalCarousel?.removeEventListener('slid.bs.carousel', syncMain);
+      modalCarousel?.removeEventListener('slid.bs.carousel', updateCounter);
+    };
+  }, []);
+
   const images = [
     'https://gcba.github.io/Obelisco/gallery/1.jpg',
     'https://gcba.github.io/Obelisco/gallery/2.jpg',
@@ -307,7 +347,7 @@ const GalleryDocs: React.FC = () => {
       title: 'Galería con miniaturas',
       content: (
         <>
-          <CodeBox codeHTML={GALLERY_CAROUSEL_THUMBNAILS}>
+          <CodeBox codeHTML={GALLERY_CAROUSEL_THUMBNAILS} codeJS={GALLERY_CAROUSEL_THUMBNAILS_JS}>
             <div className="container">
               {/* <ZoomContainer> */}
               <div className="row justify-content-center">
@@ -413,7 +453,7 @@ const GalleryDocs: React.FC = () => {
 
                     {/* info del carrusel */}
                     <div className="carousel-caption mt-0 mb-0">
-                      <span className="text-xs">Imagen 1/{DATA_GALLERY_CAROUSEL.length}</span>
+                      <span className="text-xs gallery-image-counter">Imagen 1/{DATA_GALLERY_CAROUSEL_1.length}</span>
 
                       <div className="caption-wrapper">
                         <p className="headline-lg">Título</p>

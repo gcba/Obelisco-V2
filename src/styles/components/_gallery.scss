@@ -611,14 +611,16 @@ $carousel-margin-bottom: 0.25rem * 4;
         padding: 16px 16px 24px;
 
         .carousel-indicators.gallery-thumbnails {
-          --gallery-thumbnail-offset: 0;
           flex: 1 1 auto;
           justify-content: center;
-          max-width: none;
+          width: 100%;
+          max-width: 38rem;
           padding-inline: 0;
-
-          // overflow: visible;
           margin: 0 16px;
+
+          &:has(.gallery-thumbnail:nth-child(8)) {
+            justify-content: flex-start;
+          }
         }
 
         .carousel-control-prev,

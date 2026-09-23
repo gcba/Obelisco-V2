@@ -263,25 +263,25 @@ export const GALLERY_CAROUSEL_THUMBNAILS = `<div class="container">
             <div id="modalGalleryControls1" class="carousel slide" data-bs-ride="false">
               <div class="carousel-inner">
                 <div class="carousel-item active"><img src="https://gcba.github.io/Obelisco/gallery/1.jpg"
-                    class="d-block w-100" alt="Texto alternativo de la imagen"></div>
+                    class="d-block" alt="Texto alternativo de la imagen"></div>
                 <div class="carousel-item "><img src="https://gcba.github.io/Obelisco/gallery/2.jpg"
-                    class="d-block w-100" alt="Texto alternativo de la imagen"></div>
+                    class="d-block" alt="Texto alternativo de la imagen"></div>
                 <div class="carousel-item "><img src="https://gcba.github.io/Obelisco/gallery/3.jpg"
-                    class="d-block w-100" alt="Texto alternativo de la imagen"></div>
+                    class="d-block" alt="Texto alternativo de la imagen"></div>
                 <div class="carousel-item "><img src="https://gcba.github.io/Obelisco/gallery/4.jpg"
-                    class="d-block w-100" alt="Texto alternativo de la imagen"></div>
+                    class="d-block" alt="Texto alternativo de la imagen"></div>
                 <div class="carousel-item "><img src="https://gcba.github.io/Obelisco/gallery/5.jpg"
-                    class="d-block w-100" alt="Texto alternativo de la imagen"></div>
+                    class="d-block" alt="Texto alternativo de la imagen"></div>
                 <div class="carousel-item "><img src="https://gcba.github.io/Obelisco/gallery/1.jpg"
-                    class="d-block w-100" alt="Texto alternativo de la imagen"></div>
+                    class="d-block" alt="Texto alternativo de la imagen"></div>
                 <div class="carousel-item "><img src="https://gcba.github.io/Obelisco/gallery/2.jpg"
-                    class="d-block w-100" alt="Texto alternativo de la imagen"></div>
+                    class="d-block" alt="Texto alternativo de la imagen"></div>
                 <div class="carousel-item "><img src="https://gcba.github.io/Obelisco/gallery/3.jpg"
-                    class="d-block w-100" alt="Texto alternativo de la imagen"></div>
+                    class="d-block" alt="Texto alternativo de la imagen"></div>
                 <div class="carousel-item "><img src="https://gcba.github.io/Obelisco/gallery/1.jpg"
-                    class="d-block w-100" alt="Texto alternativo de la imagen"></div>
+                    class="d-block" alt="Texto alternativo de la imagen"></div>
                 <div class="carousel-item "><img src="https://gcba.github.io/Obelisco/gallery/3.jpg"
-                    class="d-block w-100" alt="Texto alternativo de la imagen"></div>
+                    class="d-block" alt="Texto alternativo de la imagen"></div>
               </div>
               <div class="carousel-caption mt-0 mb-0"><span class="text-xs">Imagen 1/<!-- -->10</span>
                 <p class="headline-lg">Título</p>

@@ -415,9 +415,10 @@ const GalleryDocs: React.FC = () => {
                     <div className="carousel-caption mt-0 mb-0">
                       <span className="text-xs">Imagen 1/{DATA_GALLERY_CAROUSEL.length}</span>
 
-                      <p className="headline-lg">Título</p>
-
-                      <p className="text-md">Descripción</p>
+                      <div className="caption-wrapper">
+                        <p className="headline-lg">Título</p>
+                        <p className="text-md">Descripción</p>
+                      </div>
                     </div>
                     {/* info del carrusel */}
 

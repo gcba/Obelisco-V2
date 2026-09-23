@@ -330,7 +330,7 @@ $carousel-margin-bottom: 0.25rem * 4;
   }
 }
 
-// Galería con miniaturas
+// Estilos de Galería con miniaturas
 .carousel.gallery-carousel {
   width: 100%;
   max-width: 45.5rem;
@@ -518,8 +518,9 @@ $carousel-margin-bottom: 0.25rem * 4;
     opacity: 1;
   }
 }
+// Estilos de Galería con miniaturas
 
-// MODAL
+// MODAL - GALERIA CON MINIATURA
 .modal.modal-gallery-carousel {
   position: fixed;
   inset: 0;
@@ -594,10 +595,12 @@ $carousel-margin-bottom: 0.25rem * 4;
           margin-bottom: 16px;
         }
 
-        p.headline-lg,
-        p.text-md {
-          margin: 0;
-          padding: 0;
+        div.caption-wrapper {
+          p.headline-lg,
+          p.text-md {
+            margin: 0;
+            padding: 0;
+          }
         }
       }
 
@@ -659,9 +662,69 @@ $carousel-margin-bottom: 0.25rem * 4;
               background-image: $carousel-icon-right-active;
             }
           }
-          
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    .modal-dialog {
+      .modal-content {
+        .carousel.slide {
+          display: flex;
+          flex-direction: column;
+          flex: 1 1 auto;
+          min-height: 0;
+
+          .carousel-inner {
+            width: 100%;
+            margin-inline: unset;
+            flex: 1 1 auto; // !
+            min-height: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .carousel-item {
+            width: 100%;
+            height: auto;
+            flex: 0 0 100%;
+            margin: 0;
+
+            > img {
+              display: block;
+              width: 100%;
+              height: auto;
+              max-height: min(300px, calc(100vh - 250px));
+              object-fit: contain;
+            }
+          }
+        }
+
+        .carousel > .carousel-caption {
+          position: static;
+          display: flex;
+          flex: 0 0 auto;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+          width: 100%;
+          min-height: 0;
+          padding: 0;
+          text-align: left;
+
+          span.text-xs {
+            margin: 16px 0 16px 0;
+          }
+        }
+
+        .gallery-image-paginator {
+          flex: 0 0 auto;
+          margin-top: auto;
         }
       }
     }
   }
 }
+// MODAL - GALERIA CON MINIATURA

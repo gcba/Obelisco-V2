@@ -1,11 +1,10 @@
-@import './carousel';
+@import "./carousel";
 
 // Variable and mixins overides
 
 $carousel-control-padding: 0.25rem * 3;
 $carousel-control-icon-size: 0.25rem * 6;
-$carousel-control-size: $carousel-control-icon-size + $carousel-control-padding *
-  2;
+$carousel-control-size: $carousel-control-icon-size + $carousel-control-padding * 2;
 $carousel-control-border-radius: 100%;
 
 $carousel-control-space-x-mobile: $carousel-control-size * 0.5;
@@ -190,7 +189,7 @@ $carousel-margin-bottom: 0.25rem * 4;
 
     &::after {
       vertical-align: middle;
-      content: '';
+      content: "";
       display: inline-block;
       height: 1.75rem;
       width: 1.75rem;
@@ -380,6 +379,17 @@ $carousel-margin-bottom: 0.25rem * 4;
       }
     }
   }
+
+  .gallery-image-paginator {
+    .carousel-control-prev,
+    .carousel-control-next {
+      flex: 0 0 3rem;
+      width: 3rem;
+      height: 3rem;
+      min-width: 3rem;
+      min-height: 3rem;
+    }
+  }
 }
 
 .gallery-image-paginator {
@@ -456,7 +466,6 @@ $carousel-margin-bottom: 0.25rem * 4;
 
   .carousel-indicators.gallery-thumbnails {
     --gallery-thumbnail-offset: 0;
-
     position: static;
     box-sizing: border-box;
     display: flex;
@@ -464,7 +473,6 @@ $carousel-margin-bottom: 0.25rem * 4;
     justify-content: center;
     gap: 0.5rem;
     height: auto;
-    margin: 0;
     min-width: 0;
     padding-inline: 0.6875rem;
     overflow: hidden;
@@ -601,11 +609,11 @@ $carousel-margin-bottom: 0.25rem * 4;
 
         .carousel-indicators.gallery-thumbnails {
           --gallery-thumbnail-offset: 0;
-
           flex: 1 1 auto;
           justify-content: center;
           max-width: none;
           padding-inline: 0;
+
           // overflow: visible;
           margin: 0 16px;
         }
@@ -625,6 +633,33 @@ $carousel-margin-bottom: 0.25rem * 4;
           outline: 0;
           transform: none;
           opacity: 1;
+
+          &:hover {
+            background-color: $carousel-bg-hover;
+          }
+
+          &:focus {
+            box-shadow: $focus-box-shadow;
+            background-color: $carousel-bg;
+            outline: 0.25rem solid transparent;
+            outline-offset: unset;
+          }
+
+          &:active {
+            box-shadow: 0 0 0 0.125rem $slate-100;
+            background-color: $carousel-active-bg;
+            outline: 0.25rem solid transparent;
+            outline-offset: -2px;
+
+            .carousel-control-prev-icon {
+              background-image: $carousel-icon-left-active;
+            }
+
+            .carousel-control-next-icon {
+              background-image: $carousel-icon-right-active;
+            }
+          }
+          
         }
       }
     }

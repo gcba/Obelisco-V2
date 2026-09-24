@@ -32,52 +32,6 @@ export const DATA_GALERY = [
   },
 ];
 
-const DATA_GALLERY_CAROUSEL = [
-  ...DATA_GALERY,
-  {
-    id: 4,
-    src: 'https://gcba.github.io/Obelisco/gallery/4.jpg',
-    href: 'gallery/4.jpg',
-    alt: 'Texto alternativo de la imagen',
-  },
-  {
-    id: 5,
-    src: 'https://gcba.github.io/Obelisco/gallery/5.jpg',
-    href: 'gallery/5.jpg',
-    alt: 'Texto alternativo de la imagen',
-  },
-  {
-    id: 6,
-    src: 'https://gcba.github.io/Obelisco/gallery/1.jpg',
-    href: 'gallery/1.jpg',
-    alt: 'Texto alternativo de la imagen',
-  },
-  {
-    id: 7,
-    src: 'https://gcba.github.io/Obelisco/gallery/2.jpg',
-    href: 'gallery/1.jpg',
-    alt: 'Texto alternativo de la imagen',
-  },
-  {
-    id: 8,
-    src: 'https://gcba.github.io/Obelisco/gallery/3.jpg',
-    href: 'gallery/1.jpg',
-    alt: 'Texto alternativo de la imagen',
-  },
-  {
-    id: 9,
-    src: 'https://gcba.github.io/Obelisco/gallery/1.jpg',
-    href: 'gallery/1.jpg',
-    alt: 'Texto alternativo de la imagen',
-  },
-  {
-    id: 10,
-    src: 'https://gcba.github.io/Obelisco/gallery/3.jpg',
-    href: 'gallery/1.jpg',
-    alt: 'Texto alternativo de la imagen',
-  },
-];
-
 const DATA_GALLERY_CAROUSEL_1 = [
   ...DATA_GALERY,
   {
@@ -677,8 +631,8 @@ const GalleryDocs: React.FC = () => {
           <p className="text-xl fw-semibold mb-2">Título y descripción de la imagen</p>
           <p className="text-md mb-4">
             El título de la imagen es opcional, tiene que ser breve y descriptivo, y no debe exceder los 80 caracteres,
-            equivalente a 2 líneas de texto en desktop. La descripción aporta información adicional o contexto sobre
-            la imagen y no debe exceder los 180 caracteres, equivalente a 3 líneas de texto en desktop. Si se supera el
+            equivalente a 2 líneas de texto en desktop. La descripción aporta información adicional o contexto sobre la
+            imagen y no debe exceder los 180 caracteres, equivalente a 3 líneas de texto en desktop. Si se supera el
             límite, el texto se trunca.
           </p>
 
@@ -826,8 +780,8 @@ const GalleryDocs: React.FC = () => {
 
           <p className="text-xl fw-semibold mb-2 mt-4">Miniaturas</p>
           <p className="text-md mb-4">
-            Cada miniatura combina dos propiedades independientes: si está seleccionada, es decir si es la imagen que
-            se muestra en grande, y si tiene el foco del teclado. El ejemplo muestra las cuatro combinaciones posibles.
+            Cada miniatura combina dos propiedades independientes: si está seleccionada, es decir si es la imagen que se
+            muestra en grande, y si tiene el foco del teclado. El ejemplo muestra las cuatro combinaciones posibles.
           </p>
           <Image
             src={`${basePath}/images/galeria/galeria_5_3.svg`}
@@ -880,12 +834,14 @@ const GalleryDocs: React.FC = () => {
           </p>
 
           <span className="badge badge-s-default">Esc</span>
-          <p className="text-md mt-2 mb-4">Cierra la vista expandida y devuelve el foco a la imagen desde la que se abrió.</p>
+          <p className="text-md mt-2 mb-4">
+            Cierra la vista expandida y devuelve el foco a la imagen desde la que se abrió.
+          </p>
 
           <p className="text-xl fw-semibold mb-2">Lectores de pantalla</p>
           <p className="text-md">
-            Los botones de navegación incluyen etiquetas como &quot;Anterior&quot; y &quot;Siguiente&quot; para lectores de
-            pantalla, y cada imagen requiere su propio texto alternativo.
+            Los botones de navegación incluyen etiquetas como &quot;Anterior&quot; y &quot;Siguiente&quot; para lectores
+            de pantalla, y cada imagen requiere su propio texto alternativo.
           </p>
         </>
       ),

@@ -1,10 +1,11 @@
-@import "./carousel";
+@import './carousel';
 
 // Variable and mixins overides
 
 $carousel-control-padding: 0.25rem * 3;
 $carousel-control-icon-size: 0.25rem * 6;
-$carousel-control-size: $carousel-control-icon-size + $carousel-control-padding * 2;
+$carousel-control-size: $carousel-control-icon-size + $carousel-control-padding *
+  2;
 $carousel-control-border-radius: 100%;
 
 $carousel-control-space-x-mobile: $carousel-control-size * 0.5;
@@ -189,7 +190,7 @@ $carousel-margin-bottom: 0.25rem * 4;
 
     &::after {
       vertical-align: middle;
-      content: "";
+      content: '';
       display: inline-block;
       height: 1.75rem;
       width: 1.75rem;
@@ -553,7 +554,8 @@ $carousel-margin-bottom: 0.25rem * 4;
       .carousel {
         flex: 1 1 auto;
         min-height: 0;
-        width: 100%;
+        // width: 100%;
+        width: calc(100% - clamp(0px, 27.78vw, 400px));
         margin-inline: auto;
         padding: 0;
         overflow: hidden;
@@ -562,7 +564,8 @@ $carousel-margin-bottom: 0.25rem * 4;
 
       .carousel-inner {
         flex: 1 1 auto;
-        width: calc(100% - clamp(0px, 27.78vw, 400px));
+        // width: calc(100% - clamp(0px, 27.78vw, 400px));
+        width: 100%;
         height: auto;
         min-height: 0;
         margin-inline: auto;

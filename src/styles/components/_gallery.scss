@@ -600,6 +600,11 @@ $carousel-margin-bottom: 0.25rem * 4;
         }
 
         div.caption-wrapper {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          
           p.headline-lg,
           p.text-md {
             margin: 0;

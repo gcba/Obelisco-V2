@@ -1019,20 +1019,20 @@ const GalleryDocs: React.FC = () => {
         description="Permite a las personas usuarias explorar un conjunto de imágenes a través de una cuadrícula de miniaturas y una vista ampliada tipo carrusel."
       />
       <Tabs
-        sectionUx={SECTION_UX}
+        // sectionUx={SECTION_UX}
         sectionDev={SECTIONS_DEV}
-        customSections={[
-          {
-            title: 'Especificaciones',
-            id: 'section-specs',
-            sectionContent: SPECS,
-          },
-          {
-            title: 'Accesibilidad',
-            id: 'section-accessibility',
-            sectionContent: ACCESSIBILITY,
-          },
-        ]}
+        // customSections={[
+        //   {
+        //     title: 'Especificaciones',
+        //     id: 'section-specs',
+        //     sectionContent: SPECS,
+        //   },
+        //   {
+        //     title: 'Accesibilidad',
+        //     id: 'section-accessibility',
+        //     sectionContent: ACCESSIBILITY,
+        //   },
+        // ]}
       />
     </>
   );

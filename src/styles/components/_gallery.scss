@@ -604,7 +604,7 @@ $carousel-margin-bottom: 0.25rem * 4;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          
+
           p.headline-lg,
           p.text-md {
             margin: 0;
@@ -686,6 +686,10 @@ $carousel-margin-bottom: 0.25rem * 4;
           flex-direction: column;
           flex: 1 1 auto;
           min-height: 0;
+          margin-inline: 0;
+          margin: 0;
+          padding: 0;
+          width: 100%;
 
           .carousel-inner {
             width: 100%;
@@ -726,7 +730,7 @@ $carousel-margin-bottom: 0.25rem * 4;
           text-align: left;
 
           span.text-xs {
-            margin: 16px 0;
+            margin: 16px 0 16px 0;
           }
         }
 

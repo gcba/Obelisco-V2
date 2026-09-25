@@ -551,6 +551,8 @@ $carousel-margin-bottom: 0.25rem * 4;
       position: relative;
 
       .carousel {
+        display: flex;
+        flex-direction: column;
         flex: 1 1 auto;
         min-height: 0;
         width: 100%;
@@ -569,15 +571,20 @@ $carousel-margin-bottom: 0.25rem * 4;
       }
 
       .carousel-item {
-        width: 100%;
         height: 100%;
+        padding: 0;
 
-        > img {
-          display: block;
+        .gallery-carousel-image {
           width: 100%;
           height: 100%;
-          object-fit: contain;
-          object-position: center;
+
+          img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+          }
         }
       }
 
@@ -678,30 +685,16 @@ $carousel-margin-bottom: 0.25rem * 4;
           flex-direction: column;
           flex: 1 1 auto;
           min-height: 0;
+          align-items: center;
 
           .carousel-inner {
             width: 100%;
             margin-inline: unset;
-            flex: 1 1 auto; // !
             min-height: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
           }
 
           .carousel-item {
-            width: 100%;
-            height: auto;
-            flex: 0 0 100%;
-            margin: 0;
-
-            > img {
-              display: block;
-              width: 100%;
-              height: auto;
-              max-height: min(300px, calc(100vh - 250px));
-              object-fit: contain;
-            }
+            padding: 0;
           }
         }
 

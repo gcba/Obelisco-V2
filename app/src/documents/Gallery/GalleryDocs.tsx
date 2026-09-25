@@ -124,13 +124,6 @@ const GalleryDocs: React.FC = () => {
     const counter = modalCarousel?.querySelector('.gallery-image-counter');
     const total = modalCarousel?.querySelectorAll('.carousel-item').length;
 
-    if (counter) counter.textContent = `Imagen 1/${total}`;
-
-    const updateCounter = (event: Event) => {
-      const { to } = event as Event & { to: number };
-      if (counter) counter.textContent = `Imagen ${to + 1}/${total}`;
-    };
-
     const goToSlide = (carousel: HTMLElement | null, index: number) => {
       carousel?.querySelector<HTMLButtonElement>(`[data-bs-slide-to="${index}"]`)?.click();
     };
@@ -141,19 +134,18 @@ const GalleryDocs: React.FC = () => {
       goToSlide(modalCarousel, activeIndex);
     };
 
-    const syncMain = (event: Event) => {
+    const updateGallery = (event: Event) => {
       const { to } = event as Event & { to: number };
+      if (counter) counter.textContent = `Imagen ${to + 1}/${total}`;
       goToSlide(mainCarousel, to);
     };
 
     modal?.addEventListener('show.bs.modal', syncModal);
-    modalCarousel?.addEventListener('slid.bs.carousel', syncMain);
-    modalCarousel?.addEventListener('slid.bs.carousel', updateCounter);
+    modalCarousel?.addEventListener('slid.bs.carousel', updateGallery);
 
     return () => {
       modal?.removeEventListener('show.bs.modal', syncModal);
-      modalCarousel?.removeEventListener('slid.bs.carousel', syncMain);
-      modalCarousel?.removeEventListener('slid.bs.carousel', updateCounter);
+      modalCarousel?.removeEventListener('slid.bs.carousel', updateGallery);
     };
   }, []);
 
@@ -401,7 +393,9 @@ const GalleryDocs: React.FC = () => {
                     <div className="carousel-inner">
                       {DATA_GALLERY_CAROUSEL_1.map((d, i) => (
                         <div key={d.id} className={`carousel-item ${i === 0 ? 'active' : ''}`}>
-                          <img src={d.src} className="d-block" alt={d.alt} />
+                          <div className="gallery-carousel-image">
+                            <img src={d.src} alt={d.alt} />
+                          </div>
                         </div>
                       ))}
                     </div>

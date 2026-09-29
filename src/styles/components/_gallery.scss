@@ -565,6 +565,15 @@ $carousel-margin-bottom: 0.25rem * 4;
         row-gap: 0;
       }
 
+      .gallery-content {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        align-items: center;
+        width: 100%;
+        min-height: 0;
+      }
+
       .carousel-inner {
         flex: 1 1 auto;
         width: calc(100% - clamp(0px, 27.78vw, 400px));
@@ -591,7 +600,7 @@ $carousel-margin-bottom: 0.25rem * 4;
         }
       }
 
-      .carousel > .carousel-caption {
+      .gallery-content > .carousel-caption {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -692,7 +701,7 @@ $carousel-margin-bottom: 0.25rem * 4;
     }
   }
 
-  @include media-breakpoint-down(xs) {
+  @include media-breakpoint-down(sm) {
     .modal-dialog {
       .modal-content {
         .carousel.slide {
@@ -716,24 +725,29 @@ $carousel-margin-bottom: 0.25rem * 4;
               width: 100%;
               margin-inline: unset;
               min-height: 0;
-              flex: 1 1 auto;
-              display: flex;
-              align-items: center;
-              justify-content: center;
+              flex: 2 1 0;
             }
 
             .carousel-item {
               padding: 0;
-              margin-right: 0%;
+
+              .gallery-carousel-image {
+                display: flex;
+                align-items: flex-end;
+
+                img {
+                  height: auto;
+                }
+              }
             }
 
             .carousel-caption {
               position: static;
               display: flex;
-              flex: 0 0 auto;
+              flex: 1 1 0;
               flex-direction: column;
               align-items: center;
-              justify-content: flex-start;
+              justify-content: space-between;
               width: 100%;
               min-height: 0;
               padding: 0;

@@ -383,10 +383,10 @@ const GalleryDocs: React.FC = () => {
               <div className="modal-dialog modal-lg" role="document">
                 <div className="modal-content bg-none">
                   {/* Cerrar modal */}
-
                   <a href="#" className="modal-carousel-close-dark" data-bs-dismiss="modal">
                     {' '}
                   </a>
+                  {/* Cerrar modal */}
 
                   {/* CARRUSEL DENTRO DEL MODAL */}
                   <div id="modalGalleryControls1" className="carousel slide" data-bs-ride="false">
@@ -411,7 +411,7 @@ const GalleryDocs: React.FC = () => {
                     </div>
                     {/* info del carrusel */}
 
-                    {/* MINIATURA */}
+                    {/* PAGINADOR / MINIATURA */}
                     <div className="gallery-image-paginator">
                       <button
                         className="carousel-control-prev"
@@ -451,8 +451,9 @@ const GalleryDocs: React.FC = () => {
                         <span className="visually-hidden">Siguiente</span>
                       </button>
                     </div>
-                    {/* MINIATURA */}
+                    {/* PAGINADOR / MINIATURA */}
                   </div>
+                  {/* CARRUSEL DENTRO DEL MODAL */}
                 </div>
               </div>
             </div>

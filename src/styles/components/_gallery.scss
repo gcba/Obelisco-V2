@@ -685,7 +685,7 @@ $carousel-margin-bottom: 0.25rem * 4;
     }
   }
 
- @include media-breakpoint-down(lg) {
+  @include media-breakpoint-down(lg) {
     .modal-carousel-close-dark {
       right: 16px;
       top: 16px;
@@ -701,36 +701,48 @@ $carousel-margin-bottom: 0.25rem * 4;
           flex: 1 1 auto;
           min-height: 0;
           align-items: center;
-          margin-inline: 0;
           margin: 0;
           padding: 0;
           width: 100%;
 
-          .carousel-inner {
-            width: 100%;
-            margin-inline: unset;
+          .gallery-content {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 auto;
             min-height: 0;
-          }
+            width: 100%;
 
-          .carousel-item {
-            padding: 0;
-          }
-        }
+            .carousel-inner {
+              width: 100%;
+              margin-inline: unset;
+              min-height: 0;
+              flex: 1 1 auto;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
 
-        .carousel > .carousel-caption {
-          position: static;
-          display: flex;
-          flex: 0 0 auto;
-          flex-direction: column;
-          align-items: center;
-          justify-content: flex-start;
-          width: 100%;
-          min-height: 0;
-          padding: 0;
-          text-align: left;
+            .carousel-item {
+              padding: 0;
+              margin-right: 0%;
+            }
 
-          span.text-xs {
-            margin: 16px 0 16px 0;
+            .carousel-caption {
+              position: static;
+              display: flex;
+              flex: 0 0 auto;
+              flex-direction: column;
+              align-items: center;
+              justify-content: flex-start;
+              width: 100%;
+              min-height: 0;
+              padding: 0;
+              color: white;
+
+              span.text-xs {
+                margin: 16px 0 16px 0;
+              }
+            }
           }
         }
 

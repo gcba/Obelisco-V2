@@ -390,27 +390,30 @@ const GalleryDocs: React.FC = () => {
 
                   {/* CARRUSEL DENTRO DEL MODAL */}
                   <div id="modalGalleryControls1" className="carousel slide" data-bs-ride="false">
-                    <div className="carousel-inner">
-                      {DATA_GALLERY_CAROUSEL_1.map((d, i) => (
-                        <div key={d.id} className={`carousel-item ${i === 0 ? 'active' : ''}`}>
-                          <div className="gallery-carousel-image">
-                            <img src={d.src} alt={d.alt} />
+                    <div className="gallery-content">
+                      {/* img del carrusel */}
+                      <div className="carousel-inner">
+                        {DATA_GALLERY_CAROUSEL_1.map((d, i) => (
+                          <div key={d.id} className={`carousel-item ${i === 0 ? 'active' : ''}`}>
+                            <div className="gallery-carousel-image">
+                              <img src={d.src} alt={d.alt} />
+                            </div>
                           </div>
-                        </div>
-                      ))}
-                    </div>
-
-                    {/* info del carrusel */}
-                    <div className="carousel-caption mt-0 mb-0">
-                      <span className="text-xs gallery-image-counter">Imagen 1/{DATA_GALLERY_CAROUSEL_1.length}</span>
-
-                      <div className="caption-wrapper">
-                        <p className="headline-lg">Título</p>
-                        <p className="text-md">Descripción</p>
+                        ))}
                       </div>
-                    </div>
-                    {/* info del carrusel */}
+                      {/* img del carrusel */}
 
+                      {/* info del carrusel */}
+                      <div className="carousel-caption mt-0 mb-0">
+                        <span className="text-xs gallery-image-counter">Imagen 1/{DATA_GALLERY_CAROUSEL_1.length}</span>
+
+                        <div className="caption-wrapper">
+                          <p className="headline-lg">Título</p>
+                          <p className="text-md">Descripción</p>
+                        </div>
+                      </div>
+                      {/* info del carrusel */}
+                    </div>
                     {/* PAGINADOR / MINIATURA */}
                     <div className="gallery-image-paginator">
                       <button

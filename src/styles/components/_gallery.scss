@@ -201,8 +201,10 @@ $carousel-margin-bottom: 0.25rem * 4;
 
   .modal-carousel-close-dark {
     @extend .modal-carousel-close;
-    position: relative;
+    position: absolute;
+    margin-bottom: 0;
     right: 48px;
+    top: 24px;
 
     &::after {
       background: transparent $carousel-close-icon-dark no-repeat center center;
@@ -680,6 +682,13 @@ $carousel-margin-bottom: 0.25rem * 4;
           }
         }
       }
+    }
+  }
+
+ @include media-breakpoint-down(lg) {
+    .modal-carousel-close-dark {
+      right: 16px;
+      top: 16px;
     }
   }
 

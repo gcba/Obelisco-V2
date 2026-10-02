@@ -583,12 +583,12 @@ const GalleryDocs: React.FC = () => {
       title: 'Ejemplos de uso',
       content: (
         <>
-          <p className="text-md mb-4">
+          <p className="text-md" style={{ marginBottom: '32px' }}>
             La galería admite distintos tipos de contenido visual: fotografías, gráficos o tapas de publicaciones,
             adaptándose sin romper el diseño.
           </p>
 
-          <p className="text-xl fw-semibold mb-2">Fotografía</p>
+          <p className="text-xl mb-2">Fotografía</p>
           <p className="text-md mb-4">Imágenes fotográficas a pantalla completa, el caso de uso más habitual.</p>
           <Image
             src={`${basePath}/images/galeria/galeria_1.svg`}
@@ -598,7 +598,7 @@ const GalleryDocs: React.FC = () => {
             className="img-fluid"
           />
 
-          <p className="text-xl fw-semibold mb-2 mt-4">Imágenes verticales</p>
+          <p className="text-xl mb-2 mt-4">Imágenes verticales</p>
           <p className="text-md mb-4">
             Las imágenes con otra relación de aspecto, como una tapa de libro, no rompen el diseño.
           </p>
@@ -610,7 +610,7 @@ const GalleryDocs: React.FC = () => {
             className="img-fluid"
           />
 
-          <p className="text-xl fw-semibold mb-2 mt-4">Gráficos e ilustraciones</p>
+          <p className="text-xl mb-2 mt-4">Gráficos e ilustraciones</p>
           <p className="text-md mb-4">También admite piezas gráficas o logos, no solo fotografías.</p>
           <Image
             src={`${basePath}/images/galeria/galeria_1_2.svg`}
@@ -620,7 +620,7 @@ const GalleryDocs: React.FC = () => {
             className="img-fluid"
           />
 
-          <p className="text-xl fw-semibold mb-2 mt-4">Múltiples Fotos = No</p>
+          <p className="text-xl mb-2 mt-4">Múltiples Fotos = No</p>
           <p className="text-md mb-4">Una sola imagen, sin miniaturas ni controles de paginado.</p>
           <Image
             src={`${basePath}/images/galeria/galeria_1_3.svg`}
@@ -630,7 +630,7 @@ const GalleryDocs: React.FC = () => {
             className="img-fluid"
           />
 
-          <p className="text-xl fw-semibold mb-2 mt-4">Múltiples Fotos = Sí</p>
+          <p className="text-xl mb-2 mt-4">Múltiples Fotos = Sí</p>
           <p className="text-md mb-4">
             Varias imágenes con miniaturas y controles de anterior/siguiente para navegar entre ellas.
           </p>
@@ -642,7 +642,7 @@ const GalleryDocs: React.FC = () => {
             className="img-fluid"
           />
 
-          <p className="text-xl fw-semibold mb-2 mt-4">Múltiples Fotos = Sí (pocas imágenes)</p>
+          <p className="text-xl mb-2 mt-4">Múltiples Fotos = Sí (pocas imágenes)</p>
           <p className="text-md mb-4">
             Varias imágenes, pero pocas para llenar la fila: las miniaturas se mantienen centradas entre los controles
             de anterior y siguiente. A medida que se agregan imágenes, la fila crece hacia los costados hasta ocupar
@@ -667,7 +667,7 @@ const GalleryDocs: React.FC = () => {
             expandida, que las muestra en un modal a pantalla completa.
           </p>
 
-          <p className="text-xl fw-semibold mb-2">Grilla</p>
+          <p className="text-xl mb-2">Grilla</p>
           <p className="text-md mb-4">
             Muestra la imagen principal, sus miniaturas y el botón para expandirla, embebida dentro del flujo de la
             página. Si la galería tiene una sola imagen, las miniaturas se ocultan automáticamente.
@@ -680,7 +680,7 @@ const GalleryDocs: React.FC = () => {
             className="img-fluid"
           />
 
-          <p className="text-xl fw-semibold mb-2 mt-4">Vista expandida</p>
+          <p className="text-xl mb-2 mt-4">Vista expandida</p>
           <p className="text-md mb-4">
             Muestra la imagen seleccionada en un modal a pantalla completa, con su título, descripción, contador y
             navegación entre imágenes.
@@ -704,14 +704,14 @@ const GalleryDocs: React.FC = () => {
             horizontales sin romper el diseño, y un máximo de 15 imágenes.
           </p>
 
-          <p className="text-xl fw-semibold mb-2">Título de la grilla</p>
+          <p className="text-xl mb-2">Título de la grilla</p>
           <p className="text-md mb-4">
             La grilla se presenta bajo un título que nombra al conjunto de imágenes. Tiene que ser breve y descriptivo,
             y no debe exceder los 80 caracteres. Es opcional: si se incluye y no se personaliza, muestra por defecto
             &quot;Galería de imágenes&quot;. No forma parte del componente: se compone en la página que lo contiene.
           </p>
 
-          <p className="text-xl fw-semibold mb-2">Título y descripción de la imagen</p>
+          <p className="text-xl mb-2">Título y descripción de la imagen</p>
           <p className="text-md mb-4">
             El título de la imagen es opcional, tiene que ser breve y descriptivo, y no debe exceder los 80 caracteres,
             equivalente a 2 líneas de texto en desktop. La descripción aporta información adicional o contexto sobre la
@@ -719,7 +719,7 @@ const GalleryDocs: React.FC = () => {
             límite, el texto se trunca.
           </p>
 
-          <p className="text-xl fw-semibold mb-2">Textos alternativos</p>
+          <p className="text-xl mb-2">Textos alternativos</p>
           <p className="text-md">
             Cada imagen debe incluir un texto alternativo que describa su contenido: lo utilizan los lectores de
             pantalla y se muestra si la imagen no llega a cargar.
@@ -792,7 +792,7 @@ const GalleryDocs: React.FC = () => {
         <>
           <p className="text-md mb-4">La galería varía según el dispositivo.</p>
 
-          <p className="text-xl fw-semibold mb-2">Grilla: Desktop / Tablet / Mobile</p>
+          <p className="text-xl mb-2">Grilla: Desktop / Tablet / Mobile</p>
           <p className="text-md mb-4">
             Ajusta la cantidad de miniaturas visibles y el tamaño de la imagen principal según el ancho de pantalla.
           </p>
@@ -804,7 +804,7 @@ const GalleryDocs: React.FC = () => {
             className="img-fluid"
           />
 
-          <p className="text-xl fw-semibold mb-2 mt-4">Vista expandida: Desktop / Tablet / Mobile</p>
+          <p className="text-xl mb-2 mt-4">Vista expandida: Desktop / Tablet / Mobile</p>
           <Image
             src={`${basePath}/images/galeria/galeria_4_1.svg`}
             alt="Variantes de la galería expandida para desktop, tablet y mobile"
@@ -823,7 +823,7 @@ const GalleryDocs: React.FC = () => {
             Estados de interacción de los controles de la galería, tanto en la grilla como en la vista expandida.
           </p>
 
-          <p className="text-xl fw-semibold mb-2">Hover</p>
+          <p className="text-xl mb-2">Hover</p>
           <p className="text-md mb-4">
             El control se destaca con un fondo tenue cuando el puntero se posa sobre él. No aplica en dispositivos
             táctiles.
@@ -836,7 +836,7 @@ const GalleryDocs: React.FC = () => {
             className="img-fluid"
           />
 
-          <p className="text-xl fw-semibold mb-2 mt-4">Focus</p>
+          <p className="text-xl mb-2 mt-4">Focus</p>
           <p className="text-md mb-4">
             El control muestra un anillo de foco visible al recibir el foco del teclado. Es el estado que permite
             recorrer la galería sin mouse.
@@ -849,7 +849,7 @@ const GalleryDocs: React.FC = () => {
             className="img-fluid"
           />
 
-          <p className="text-xl fw-semibold mb-2 mt-4">Deshabilitado</p>
+          <p className="text-xl mb-2 mt-4">Deshabilitado</p>
           <p className="text-md mb-4">
             El control se atenúa y deja de responder cuando no hay una imagen a la que avanzar en esa dirección.
           </p>
@@ -861,7 +861,7 @@ const GalleryDocs: React.FC = () => {
             className="img-fluid"
           />
 
-          <p className="text-xl fw-semibold mb-2 mt-4">Miniaturas</p>
+          <p className="text-xl mb-2 mt-4">Miniaturas</p>
           <p className="text-md mb-4">
             Cada miniatura combina dos propiedades independientes: si está seleccionada, es decir si es la imagen que se
             muestra en grande, y si tiene el foco del teclado. El ejemplo muestra las cuatro combinaciones posibles.
@@ -921,7 +921,7 @@ const GalleryDocs: React.FC = () => {
             Cierra la vista expandida y devuelve el foco a la imagen desde la que se abrió.
           </p>
 
-          <p className="text-xl fw-semibold mb-2">Lectores de pantalla</p>
+          <p className="text-xl mb-2">Lectores de pantalla</p>
           <p className="text-md">
             Los botones de navegación incluyen etiquetas como &quot;Anterior&quot; y &quot;Siguiente&quot; para lectores
             de pantalla, y cada imagen requiere su propio texto alternativo.

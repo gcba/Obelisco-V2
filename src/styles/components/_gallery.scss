@@ -1,4 +1,5 @@
 @import './carousel';
+@import '../variables/colors';
 
 // Variable and mixins overides
 
@@ -333,7 +334,7 @@ $carousel-margin-bottom: 0.25rem * 4;
   }
 }
 
-// Estilos de Galería con miniaturas
+// Estilos de Galería con miniaturas. Sin abrir MODAL
 .carousel.gallery-carousel {
   width: 100%;
   max-width: 45.5rem;
@@ -342,6 +343,7 @@ $carousel-margin-bottom: 0.25rem * 4;
 
   .carousel-inner {
     border-radius: 8px;
+    background-color: $light;
 
     .carousel-item {
       padding: 0;
@@ -357,7 +359,7 @@ $carousel-margin-bottom: 0.25rem * 4;
       display: block;
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
       object-position: center;
     }
 
@@ -553,9 +555,9 @@ $carousel-margin-bottom: 0.25rem * 4;
   }
 }
 
-// Estilos de Galería con miniaturas
+// Estilos de Galería con miniaturas. Sin abrir MODAL
 
-// MODAL - GALERIA CON MINIATURA
+// MODAL ABIERTO - GALERIA CON MINIATURA
 .modal.modal-gallery-carousel {
   position: fixed;
   inset: 0;
@@ -565,6 +567,7 @@ $carousel-margin-bottom: 0.25rem * 4;
   padding: 0;
   overflow: hidden;
 
+  // Estos son los estilos del MODAL ABIERTO
   .modal-dialog {
     width: 100%;
     max-width: none;
@@ -615,7 +618,7 @@ $carousel-margin-bottom: 0.25rem * 4;
 
       .carousel-item {
         height: 100%;
-        padding: 0;
+        padding: 0 8px;
 
         .gallery-carousel-image {
           width: 100%;
@@ -725,10 +728,20 @@ $carousel-margin-bottom: 0.25rem * 4;
     }
   }
 
+  // Estos son los estilos del MODAL ABIERTO
+
   @include media-breakpoint-down(lg) {
     .modal-carousel-close-dark {
       right: 16px;
       top: 16px;
+    }
+
+    .modal-dialog {
+      .modal-content {
+        .carousel-inner {
+          width: calc(100% - clamp(0px, 7.78vw, 400px));
+        }
+      }
     }
   }
 
@@ -828,4 +841,4 @@ $carousel-margin-bottom: 0.25rem * 4;
   }
 }
 
-// MODAL - GALERIA CON MINIATURA
+// MODAL ABIERTO - GALERIA CON MINIATURA

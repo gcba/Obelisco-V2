@@ -128,6 +128,82 @@ const GalleryDocs: React.FC = () => {
       carousel?.querySelector<HTMLButtonElement>(`[data-bs-slide-to="${index}"]`)?.click();
     };
 
+    const scrollActiveThumbnail = (carousel: HTMLElement | null) => {
+      carousel?.querySelector<HTMLElement>('.gallery-thumbnail.active')?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+        inline: 'nearest',
+      });
+    };
+
+    const enableThumbnailDrag = (carousel: HTMLElement | null) => {
+      const thumbnails = carousel?.querySelector<HTMLElement>('.gallery-thumbnails');
+      if (!thumbnails) return () => undefined;
+
+      let isDragging = false;
+      let hasMoved = false;
+      let startX = 0;
+      let startScrollLeft = 0;
+
+      const handlePointerDown = (event: PointerEvent) => {
+        if (event.pointerType !== 'mouse' || event.button !== 0) return;
+
+        isDragging = true;
+        hasMoved = false;
+        startX = event.clientX;
+        startScrollLeft = thumbnails.scrollLeft;
+      };
+
+      const handlePointerMove = (event: PointerEvent) => {
+        if (!isDragging) return;
+
+        const distance = event.clientX - startX;
+        if (Math.abs(distance) > 4 && !hasMoved) {
+          hasMoved = true;
+          thumbnails.setPointerCapture(event.pointerId);
+          thumbnails.classList.add('is-dragging');
+        }
+        if (!hasMoved) return;
+
+        event.preventDefault();
+        thumbnails.scrollLeft = startScrollLeft - distance;
+      };
+
+      const stopDragging = (event: PointerEvent) => {
+        if (!isDragging) return;
+
+        isDragging = false;
+        thumbnails.classList.remove('is-dragging');
+        if (thumbnails.hasPointerCapture(event.pointerId)) thumbnails.releasePointerCapture(event.pointerId);
+      };
+
+      const preventClickAfterDrag = (event: MouseEvent) => {
+        if (!hasMoved) return;
+
+        event.preventDefault();
+        event.stopPropagation();
+        hasMoved = false;
+      };
+
+      const preventImageDrag = (event: DragEvent) => event.preventDefault();
+
+      thumbnails.addEventListener('pointerdown', handlePointerDown);
+      thumbnails.addEventListener('pointermove', handlePointerMove);
+      thumbnails.addEventListener('pointerup', stopDragging);
+      thumbnails.addEventListener('pointercancel', stopDragging);
+      thumbnails.addEventListener('click', preventClickAfterDrag, true);
+      thumbnails.addEventListener('dragstart', preventImageDrag);
+
+      return () => {
+        thumbnails.removeEventListener('pointerdown', handlePointerDown);
+        thumbnails.removeEventListener('pointermove', handlePointerMove);
+        thumbnails.removeEventListener('pointerup', stopDragging);
+        thumbnails.removeEventListener('pointercancel', stopDragging);
+        thumbnails.removeEventListener('click', preventClickAfterDrag, true);
+        thumbnails.removeEventListener('dragstart', preventImageDrag);
+      };
+    };
+
     const syncModal = () => {
       const slides = mainCarousel?.querySelectorAll('.carousel-item');
       const activeIndex = slides ? Array.from(slides).findIndex((slide) => slide.classList.contains('active')) : 0;
@@ -138,14 +214,23 @@ const GalleryDocs: React.FC = () => {
       const { to } = event as Event & { to: number };
       if (counter) counter.textContent = `Imagen ${to + 1}/${total}`;
       goToSlide(mainCarousel, to);
+      scrollActiveThumbnail(modalCarousel);
     };
 
+    const updateMainThumbnails = () => scrollActiveThumbnail(mainCarousel);
+    const disableMainThumbnailDrag = enableThumbnailDrag(mainCarousel);
+    const disableModalThumbnailDrag = enableThumbnailDrag(modalCarousel);
+
     modal?.addEventListener('show.bs.modal', syncModal);
+    mainCarousel?.addEventListener('slid.bs.carousel', updateMainThumbnails);
     modalCarousel?.addEventListener('slid.bs.carousel', updateGallery);
 
     return () => {
       modal?.removeEventListener('show.bs.modal', syncModal);
+      mainCarousel?.removeEventListener('slid.bs.carousel', updateMainThumbnails);
       modalCarousel?.removeEventListener('slid.bs.carousel', updateGallery);
+      disableMainThumbnailDrag();
+      disableModalThumbnailDrag();
     };
   }, []);
 
@@ -338,7 +423,7 @@ const GalleryDocs: React.FC = () => {
                         <span className="visually-hidden">Anterior</span>
                       </button>
 
-                      <div className="carousel-indicators gallery-thumbnails">
+                      <div className="carousel-indicators gallery-thumbnails responsive-scroll" tabIndex={0}>
                         {DATA_GALLERY_CAROUSEL_1.map((image, index) => (
                           <button
                             key={image.id}
@@ -427,7 +512,7 @@ const GalleryDocs: React.FC = () => {
                         <span className="visually-hidden">Anterior</span>
                       </button>
 
-                      <div className="carousel-indicators gallery-thumbnails">
+                      <div className="carousel-indicators gallery-thumbnails responsive-scroll" tabIndex={0}>
                         {DATA_GALLERY_CAROUSEL_1.map((image, index) => (
                           <button
                             key={image.id}

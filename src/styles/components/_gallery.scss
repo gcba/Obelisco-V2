@@ -468,7 +468,6 @@ $carousel-margin-bottom: 0.25rem * 4;
   }
 
   .carousel-indicators.gallery-thumbnails {
-    --gallery-thumbnail-offset: 0;
     position: static;
     box-sizing: border-box;
     display: flex;
@@ -477,17 +476,51 @@ $carousel-margin-bottom: 0.25rem * 4;
     gap: 0.5rem;
     height: auto;
     min-width: 0;
+    padding-block: 0;
     padding-inline: 0.6875rem;
-    overflow: hidden;
+    overflow: auto hidden;
     margin: 0 16px;
+    border-radius: 0;
+    cursor: grab;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    touch-action: pan-x pan-y;
+    user-select: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &.is-dragging {
+      cursor: grabbing;
+      scroll-behavior: auto;
+    }
 
     &:has(.gallery-thumbnail:nth-child(8)) {
       justify-content: flex-start;
     }
+  }
+}
 
-    @for $index from 8 through 15 {
-      &:has(.gallery-thumbnail:nth-child(#{$index}).active) {
-        --gallery-thumbnail-offset: #{$index - 7};
+@include media-breakpoint-between(sm, lg) {
+  .carousel.gallery-carousel {
+    .gallery-image-paginator {
+      .carousel-indicators.gallery-thumbnails {
+        &:has(.gallery-thumbnail:nth-child(7)) {
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .carousel.gallery-carousel {
+    .gallery-image-paginator {
+      .carousel-indicators.gallery-thumbnails {
+        &:has(.gallery-thumbnail:nth-child(3)) {
+          justify-content: flex-start;
+        }
       }
     }
   }
@@ -505,8 +538,6 @@ $carousel-margin-bottom: 0.25rem * 4;
   border: 0.125rem solid transparent;
   border-radius: $border-radius-md;
   opacity: 0.3;
-  transform: translateX(calc(var(--gallery-thumbnail-offset, 0) * -5.5rem));
-  transition: transform 0.3s ease;
 
   img {
     display: block;
@@ -701,6 +732,20 @@ $carousel-margin-bottom: 0.25rem * 4;
     }
   }
 
+  @include media-breakpoint-between(sm, lg) {
+    .modal-dialog {
+      .modal-content {
+        .gallery-image-paginator {
+          .carousel-indicators.gallery-thumbnails {
+            &:has(.gallery-thumbnail:nth-child(7)) {
+              justify-content: flex-start;
+            }
+          }
+        }
+      }
+    }
+  }
+
   @include media-breakpoint-down(sm) {
     .modal-dialog {
       .modal-content {
@@ -762,7 +807,7 @@ $carousel-margin-bottom: 0.25rem * 4;
               }
 
               span.text-xs {
-                margin: 16px 0 16px 0;
+                margin: 16px 0;
               }
             }
           }
@@ -771,6 +816,12 @@ $carousel-margin-bottom: 0.25rem * 4;
         .gallery-image-paginator {
           flex: 0 0 auto;
           margin-top: auto;
+
+          .carousel-indicators.gallery-thumbnails {
+            &:has(.gallery-thumbnail:nth-child(4)) {
+              justify-content: flex-start;
+            }
+          }
         }
       }
     }

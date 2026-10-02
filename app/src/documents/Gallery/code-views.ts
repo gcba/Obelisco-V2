@@ -253,7 +253,7 @@ export const GALLERY_CAROUSEL_THUMBNAILS = `<div class="container">
                   data-bs-target="#galleryCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"
                     aria-hidden="true"></span><span class="visually-hidden">Anterior</span>
                     </button>
-                <div class="carousel-indicators gallery-thumbnails">
+                <div class="carousel-indicators gallery-thumbnails responsive-scroll" tabindex="0">
                   <button type="button"
                     class="gallery-thumbnail active" data-bs-target="#galleryCarousel" data-bs-slide-to="0"
                     aria-current="true" aria-label="Ver imagen 1">
@@ -415,7 +415,7 @@ export const GALLERY_CAROUSEL_THUMBNAILS = `<div class="container">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Anterior</span>
                   </button>
-                  <div class="carousel-indicators gallery-thumbnails">
+                  <div class="carousel-indicators gallery-thumbnails responsive-scroll" tabindex="0">
                     <button type="button" class="gallery-thumbnail active" data-bs-target="#modalGalleryControls1" data-bs-slide-to="0"
                       aria-current="true" aria-label="Ver imagen 1">
                       <img src="https://gcba.github.io/Obelisco/gallery/1.jpg" alt="">
@@ -485,6 +485,74 @@ const goToSlide = (carousel, index) => {
   carousel?.querySelector(\`[data-bs-slide-to="\${index}"]\`)?.click();
 };
 
+const scrollActiveThumbnail = (carousel) => {
+  carousel?.querySelector('.gallery-thumbnail.active')?.scrollIntoView({
+    behavior: 'smooth',
+    block: 'nearest',
+    inline: 'nearest',
+  });
+};
+
+const enableThumbnailDrag = (carousel) => {
+  const thumbnails = carousel?.querySelector('.gallery-thumbnails');
+  if (!thumbnails) return;
+
+  let isDragging = false;
+  let hasMoved = false;
+  let startX = 0;
+  let startScrollLeft = 0;
+
+  thumbnails.addEventListener('pointerdown', (event) => {
+    if (event.pointerType !== 'mouse' || event.button !== 0) return;
+
+    isDragging = true;
+    hasMoved = false;
+    startX = event.clientX;
+    startScrollLeft = thumbnails.scrollLeft;
+  });
+
+  thumbnails.addEventListener('pointermove', (event) => {
+    if (!isDragging) return;
+
+    const distance = event.clientX - startX;
+    if (Math.abs(distance) > 4 && !hasMoved) {
+      hasMoved = true;
+      thumbnails.setPointerCapture(event.pointerId);
+      thumbnails.classList.add('is-dragging');
+    }
+    if (!hasMoved) return;
+
+    event.preventDefault();
+    thumbnails.scrollLeft = startScrollLeft - distance;
+  });
+
+  const stopDragging = (event) => {
+    if (!isDragging) return;
+
+    isDragging = false;
+    thumbnails.classList.remove('is-dragging');
+    if (thumbnails.hasPointerCapture(event.pointerId)) thumbnails.releasePointerCapture(event.pointerId);
+  };
+
+  thumbnails.addEventListener('pointerup', stopDragging);
+  thumbnails.addEventListener('pointercancel', stopDragging);
+  thumbnails.addEventListener('dragstart', (event) => event.preventDefault());
+  thumbnails.addEventListener(
+    'click',
+    (event) => {
+      if (!hasMoved) return;
+
+      event.preventDefault();
+      event.stopPropagation();
+      hasMoved = false;
+    },
+    true
+  );
+};
+
+enableThumbnailDrag(mainCarousel);
+enableThumbnailDrag(modalCarousel);
+
 modal?.addEventListener('show.bs.modal', () => {
   const slides = mainCarousel?.querySelectorAll('.carousel-item');
   const activeIndex = slides ? [...slides].findIndex((slide) => slide.classList.contains('active')) : 0;
@@ -494,4 +562,9 @@ modal?.addEventListener('show.bs.modal', () => {
 modalCarousel?.addEventListener('slid.bs.carousel', (event) => {
   goToSlide(mainCarousel, event.to);
   if (counter) counter.textContent = \`Imagen \${event.to + 1}/\${total}\`;
+  scrollActiveThumbnail(modalCarousel);
+});
+
+mainCarousel?.addEventListener('slid.bs.carousel', () => {
+  scrollActiveThumbnail(mainCarousel);
 });`;

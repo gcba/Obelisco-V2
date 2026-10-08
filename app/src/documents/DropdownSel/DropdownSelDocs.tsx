@@ -682,7 +682,7 @@ const SECTION_UX = [
           className="img-fluid"
         />
 
-        <p className="text-xl fw-semibold mb-1 mt-4">Despegable con incono</p>
+        <p className="text-xl fw-semibold mb-1 mt-4">Despegable con icono</p>
         <p className="text-md mb-3">
           El ícono utilizado puede ser una referencia visual para complementar el título del desplegable y así darle más
           información sobre el contexto a la persona usuaria.

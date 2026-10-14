@@ -1,23 +1,35 @@
 // Titulos | Headings
 // font-size Titulos
 
-$h1-font-size: 2.5rem;
-$h2-font-size: 2.25rem;
-$h3-font-size: 2rem;
-$h4-font-size: 1.75rem;
-$h5-font-size: 1.5rem;
-$h6-font-size: 1.25rem;
-$h1-font-size-mobile: 2.375rem;
-$h2-font-size-mobile: 2.125rem;
-$h3-font-size-mobile: 1.875rem;
+// $h1-font-size: 2.5rem; // 40px
+// $h2-font-size: 2.25rem; // 36px
+// $h3-font-size: 2rem; // 32px
+// $h4-font-size: 1.75rem; // 28px
+// $h5-font-size: 1.5rem; // 24px
+// $h6-font-size: 1.25rem; // 20px
+
+// $h1-font-size-mobile: 2.375rem; // 38px
+// $h2-font-size-mobile: 2.125rem; // 34px
+// $h3-font-size-mobile: 1.875rem; // 30px
+
+$h1-font-size: 2.75rem; // 44px
+$h2-font-size: 2.25rem; // 36px
+$h3-font-size: 2rem; // 32px
+$h4-font-size: 1.75rem; // 28px
+$h5-font-size: 1.5rem; // 24px
+$h6-font-size: 1.25rem; // 20px
+
+$h1-font-size-mobile: 2rem; // 32px
+$h2-font-size-mobile: 1.75rem; // 28px
+$h3-font-size-mobile: 1.5rem; // 24px
 
 // line-height Titulos
-$h1-line-height: 3rem;
-$h2-line-height: 2.75rem;
-$h3-line-height: 2.75rem;
-$h4-line-height: 2.25rem;
-$h5-line-height: 2rem;
-$h6-line-height: 1.75rem;
+$h1-line-height: 3.25rem; // 52px
+$h2-line-height: 2.75rem; // 44px
+$h3-line-height: 2.25rem; // 36px
+$h4-line-height: 2rem; // 32px
+$h5-line-height: 1.75rem; // 28px
+$h6-line-height: 1.75rem; // 28px
 
 // font-weight Titulos
 $h1-font-weight: $font-weight-bold;
@@ -31,38 +43,39 @@ $heading-styles: (
   1: (
     font-size: $h1-font-size,
     line-height: $h1-line-height,
-    font-weight: $h1-font-weight,
+    font-weight: $h1-font-weight
   ),
   2: (
     font-size: $h2-font-size,
     line-height: $h2-line-height,
-    font-weight: $h2-font-weight,
+    font-weight: $h2-font-weight
   ),
   3: (
     font-size: $h3-font-size,
     line-height: $h3-line-height,
-    font-weight: $h3-font-weight,
+    font-weight: $h3-font-weight
   ),
   4: (
     font-size: $h4-font-size,
     line-height: $h4-line-height,
-    font-weight: $h4-font-weight,
+    font-weight: $h4-font-weight
   ),
   5: (
     font-size: $h5-font-size,
     line-height: $h5-line-height,
-    font-weight: $h5-font-weight,
+    font-weight: $h5-font-weight
   ),
   6: (
     font-size: $h6-font-size,
     line-height: $h6-line-height,
-    font-weight: $h6-font-weight,
-  ),
+    font-weight: $h6-font-weight
+  )
 );
+
 $heading-sizes-mobile: (
   1: $h1-font-size-mobile,
   2: $h2-font-size-mobile,
-  3: $h3-font-size-mobile,
+  3: $h3-font-size-mobile
 );
 
 // === Titulares ===
@@ -85,18 +98,18 @@ $headline-styles: (
   lg: (
     font-size: $lg-headline-fs,
     line-height: $lg-headline-lh,
-    font-weight: $lg-headline-fw,
+    font-weight: $lg-headline-fw
   ),
   md: (
     font-size: $md-headline-fs,
     line-height: $md-headline-lh,
-    font-weight: $md-headline-fw,
+    font-weight: $md-headline-fw
   ),
   sm: (
     font-size: $sm-headline-fs,
     line-height: $sm-headline-lh,
-    font-weight: $sm-headline-fw,
-  ),
+    font-weight: $sm-headline-fw
+  )
 );
 
 // Cuerpo
@@ -126,28 +139,28 @@ $body-styles: (
   xl: (
     font-size: $xl-body-fs,
     line-height: $xl-body-lh,
-    font-weight: $xl-body-fw,
+    font-weight: $xl-body-fw
   ),
   lg: (
     font-size: $lg-body-fs,
     line-height: $lg-body-lh,
-    font-weight: $lg-body-fw,
+    font-weight: $lg-body-fw
   ),
   md: (
     font-size: $md-body-fs,
     line-height: $md-body-lh,
-    font-weight: $md-body-fw,
+    font-weight: $md-body-fw
   ),
   sm: (
     font-size: $sm-body-fs,
     line-height: $sm-body-lh,
-    font-weight: $sm-body-fw,
+    font-weight: $sm-body-fw
   ),
   xs: (
     font-size: $xs-body-fs,
     line-height: $xs-body-lh,
-    font-weight: $xs-body-fw,
-  ),
+    font-weight: $xs-body-fw
+  )
 );
 
 // Body - variables de Bootstrap

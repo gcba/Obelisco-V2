@@ -10,7 +10,7 @@ const sections = [
     firstTitle: true,
     content: (
       <div className="col-12">
-        <div className="list-informative">
+        <div>
           <ul className="list-informative-bullet">
             <li>
               <strong>Diseño atómico y modular:</strong> pensar y mantener un sistema atómico permite generar bloques de

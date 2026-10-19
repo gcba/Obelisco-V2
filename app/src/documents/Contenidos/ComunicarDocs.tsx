@@ -13,7 +13,7 @@ const VOZ_Y_TONO = [
           La voz del Gobierno de la Ciudad es participativa, simple y clara. Buscamos que nuestros visitantes se sientan
           acompañados durante la estadía dentro del sitio y que reconozcan que detrás de lo que leen hay personas reales
         </p>
-        <div className="list-informative">
+        <div>
           <ul className="list-informative-bullet">
             <li>
               <strong>Participativa</strong>: Buscamos empatía pensando el contenido para nuestros visitantes,

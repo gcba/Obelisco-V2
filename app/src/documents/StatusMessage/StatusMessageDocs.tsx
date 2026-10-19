@@ -16,7 +16,7 @@ const SECTION_UX = [
     firstTitle: true,
     content: (
       <>
-        <div className="list-informative">
+        <div>
           <p className="text-xl">Cuándo usar</p>
           <ul className="list-informative-bullet">
             <li>Cuando no hay contenido para mostrar en una pantalla, o cuando una búsqueda no arroja resultados.</li>

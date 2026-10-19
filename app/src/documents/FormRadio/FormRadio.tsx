@@ -237,13 +237,13 @@ const FormRadioDocs = () => {
       content: (
         <>
           <section className="d-flex flex-column  gap-4">
-            <div className="list-informative">
+            <div>
               <p className="text-xl">Cuándo usar</p>
               <ul className="list-informative-bullet">
                 <li>Cuando se requiere una única respuesta dentro de una lista de cinco o menos opciones.</li>
               </ul>
             </div>
-            <div className="list-informative">
+            <div>
               <p className="text-xl">Cuándo no usar</p>
               <ul className="list-informative-bullet">
                 <li>

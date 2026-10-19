@@ -1,4 +1,4 @@
-// import Image from 'next/image';
+import Image from 'next/image';
 // import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 // import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
@@ -693,15 +693,227 @@ const HeroMultimediaDocs: React.FC = () => {
       ),
     },
   ];
+
+  const SECTION_UX = [
+    {
+      title: 'Uso',
+      firstTitle: true,
+      content: (
+        <>
+          <p className="text-xl">Cuándo usar</p>
+          <ul className="list-informative-bullet mb-3">
+            <li>
+              Opcionalmente puede estar presente en las páginas de área que requieran un componente principal que
+              funcione como introducción al contenido multimedia (video o imagen), y que inmediatamente capte la
+              atención de la persona usuaria.
+            </li>
+          </ul>
+
+          <p className="text-xl">Cuándo no usar</p>
+          <ul className="list-informative-bullet">
+            <li>
+              En caso de que no se cuente con una imagen o video de calidad que representen el área, se debe utilizar el
+              componente Cabecera institucional (ver documentación).
+            </li>
+          </ul>
+        </>
+      ),
+    },
+    {
+      title: 'Disposición',
+      content: (
+        <>
+          <p className="text-md" style={{ marginTop: '32px' }}>
+            Se ubica siempre en la parte superior del sitio, inmediatamente debajo del Encabezado <i>(header)</i>{' '}
+            principal, actuando como punto de inicio y orientación del contenido de la página.
+          </p>
+        </>
+      ),
+    },
+    {
+      subtitle: <>Imagen y Video</>,
+      content: '',
+    },
+    {
+      tertiarytitle: (
+        <>
+          En dispositivos <i>desktop</i>
+        </>
+      ),
+      content: (
+        <>
+          <p className="text-md mb-4">
+            El contenedor de la cabecera ocupa el 100% del ancho de la pantalla, manteniendo el orden de lectura de
+            izquierda a derecha en sentido horizontal de los elementos como formas y multimedia.
+          </p>
+          <Image
+            src={`${basePath}/images/hero/hero_disposicion.svg`}
+            alt="Cabecera de página disposición desktop"
+            width="800"
+            height="200"
+            className="img-fluid"
+            style={{ marginBottom: '32px' }}
+          />
+
+          <p className="text-md fw-bold mb-4">Responsive en tamaños de pantalla grandes</p>
+
+          <p className="text-md">
+            <strong>Entre 1200 a 1400px</strong>: Hasta pantallas de 1400px. las alineaciones de texto y forma de la
+            cabecera van a estar en sincronía con las alineaciones del encabezado <i>(header)</i> para compensar los
+            pesos visuales del componente en la interfaz.
+          </p>
+
+          <Image
+            src={`${basePath}/images/hero/hero_disposicion_1.svg`}
+            alt="Cabecera de página disposición desktop"
+            width="800"
+            height="200"
+            className="img-fluid mb-4"
+          />
+
+          <p className="text-md">
+            <strong>Entre 1400 a 1920px</strong>: Entre estas resoluciones el margen de la cabecera va a ser ligeramente
+            mayor al del Encabezado <i>(header)</i> para mantener las proporciones en tamaños de pantalla mayores.
+          </p>
+
+          <Image
+            src={`${basePath}/images/hero/hero_disposicion_2.svg`}
+            alt="Cabecera de página disposición desktop"
+            width="800"
+            height="200"
+            className="img-fluid mb-4"
+          />
+
+          <p className="text-md">
+            <strong>Mayor a 1920px</strong>: Para pantallas con resoluciones mayores a 1920 px., la página mantiene un
+            ancho fijo y se extienden márgenes en blanco para ocupar el espacio disponible de la pantalla.
+          </p>
+
+          <Image
+            src={`${basePath}/images/hero/hero_disposicion_3.svg`}
+            alt="Cabecera de página disposición desktop"
+            width="800"
+            height="200"
+            className="img-fluid"
+          />
+        </>
+      ),
+    },
+    {
+      subtitle: (
+        <>
+          En dispositivos <i>tablet</i>
+        </>
+      ),
+      content: (
+        <>
+          <p className="text-md mb-4">
+            La cabecera ocupa el 100% del ancho de la pantalla, incluyendo los márgenes, manteniendo una disposición
+            vertical de la estructura. Esto quiere decir que, en el orden de lectura, el contenido textual, tanto título
+            como descripción, se van a ubicar primeros, y por debajo la multimedia.
+          </p>
+          <Image
+            src={`${basePath}/images/hero/hero_disposicion_4.svg`}
+            alt="Cabecera de página disposición tablet"
+            width="800"
+            height="200"
+            className="img-fluid"
+          />
+        </>
+      ),
+    },
+    {
+      subtitle: (
+        <>
+          En dispositivos <i>Mobile</i>
+        </>
+      ),
+      content: (
+        <>
+          <p className="text-md mb-4">
+            Al igual que en dispositivos <i>tablet</i> , la cabecera ocupa el 100% del ancho de la pantalla, incluyendo
+            los márgenes, manteniendo una disposición vertical de la estructura.
+          </p>
+          <Image
+            src={`${basePath}/images/hero/hero_disposicion_5.svg`}
+            alt="Cabecera de página disposición mobile"
+            width="800"
+            height="200"
+            className="img-fluid"
+          />
+        </>
+      ),
+    },
+    {
+      title: 'Personalización',
+      content: (
+        <>
+          <Image
+            src={`${basePath}/images/hero/hero_disposicion_6.svg`}
+            alt="Personalización"
+            width="800"
+            height="200"
+            className="img-fluid mt-2"
+            style={{ marginBottom: '32px' }}
+          />
+
+          <p className="d-flex text-md fw-semibold mt-4">
+            <span className="pe-1 material-symbols-rounded" aria-hidden="true">
+              info
+            </span>
+            Uso del componente en Figma
+          </p>
+
+          <p className="text-md">
+            Para los diseñadores en Figma, el componente tiene la posibilidad de intercambiar el color de fondo por
+            alguno de los seis colores definidos que pertenecen a la paleta de colores de Obelisco. Para hacerlo deben
+            seguir los siguientes pasos:
+          </p>
+
+          <ol>
+            <li>
+              Seleccionar el tema denominado &quot;Color&quot; desde las propiedades del componente. Por defecto, les
+              aparecerá el color cyan.{' '}
+            </li>
+            <li>
+              Con el componente seleccionado, dirigirse a las propiedades de color del componente donde van a encontrar
+              la variables d colores asignados al texto, al fondo y otros. Entre ellas van a encontrar una variable
+              funcional llamada &quot;hero/bg-cyan&quot;.
+            </li>
+            <li>
+              Intercambiá el <i>slot</i>, utilizando la propiedad de <i>instance swap</i> del encabezado <i>(header)</i>
+              , por el logo de la marca o el activo digital.
+            </li>
+          </ol>
+        </>
+      ),
+    },
+  ];
+
   return (
     <>
       <ComponentHeader
         title="Cabecera de página multimedia"
         description={[
-          'La cabecera de página es el área destacada y principal de una página, pensada para captar la atención inmediata de la persona usuaria. Puede contener accionables como botones o campos de búsqueda.',
+          'La Cabecera de página Multimedia es el área principal de una página que brinda información introductoria para orientar a la persona usuaria en el propósito de la misma. El componente principal es un elemento multimedia qué puede ser de tipo imagen o video. También, puede contener accionables como botones, campos de búsqueda y otros.',
         ]}
       />
-      <Tabs sectionDev={SECTIONS_DEV} />
+      <Tabs
+        sectionDev={SECTIONS_DEV}
+        sectionUx={SECTION_UX}
+        // customSections={[
+        //   {
+        //     title: 'Especificaciones',
+        //     id: 'section-specs',
+        //     sectionContent: SPECS,
+        //   },
+        //   {
+        //     title: 'Accesibilidad',
+        //     id: 'section-accessibility',
+        //     sectionContent: ACCESSIBILITY,
+        //   },
+        // ]}
+      />
     </>
   );
 };

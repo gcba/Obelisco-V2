@@ -411,7 +411,7 @@ const ButtonDocs: React.FC = () => {
       firstTitle: true,
       content: (
         <>
-          <div className="list-informative">
+          <div>
             <p className="text-xl">Cuándo usar</p>
             <ul className="list-informative-bullet">
               <li>
@@ -684,7 +684,7 @@ const ButtonDocs: React.FC = () => {
             </div>
           </div>
 
-          <div className="list-informative">
+          <div>
             <p className="text-lg">Posición</p>
             <ul className="list-informative-bullet">
               <li>

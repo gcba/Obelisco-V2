@@ -261,7 +261,7 @@ const FormCheckDocs = () => {
       content: (
         <>
           <section className="d-flex flex-column  gap-4">
-            <div className="list-informative">
+            <div>
               <p className="text-xl">Cuándo usar</p>
               <ul className="list-informative-bullet">
                 <li>Se usan cuando las personas usuarias pueden elegir una o más opciones entre varias disponibles.</li>
@@ -271,7 +271,7 @@ const FormCheckDocs = () => {
                 </li>
               </ul>
             </div>
-            <div className="list-informative">
+            <div>
               <p className="text-xl">Cuándo no usar</p>
               <ul className="list-informative-bullet">
                 <li>

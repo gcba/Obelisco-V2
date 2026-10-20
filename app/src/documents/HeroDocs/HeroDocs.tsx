@@ -17,7 +17,6 @@ import {
   HERO_INSTITUCIONAL,
   HERO_LIGHT,
   HERO_ACCESIBILITY,
-  HERO_ACCESIBILITY_2,
   HERO_REDES_SOCIALES,
   // HERO_MULTIMEDIA,
 } from './code-views';
@@ -639,8 +638,8 @@ const HeroHeaderDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md" style={{ marginTop: '32px' }}>
-            Se ubica siempre en la parte superior del sitio, inmediatamente debajo del Encabezado <i>(header)</i>{' '}
-            principal, actuando como punto de inicio y orientación del contenido de la página.
+            Se ubica siempre en la parte superior del sitio, inmediatamente debajo del Encabezado (header) principal,
+            actuando como punto de inicio y orientación del contenido de la página.
           </p>
         </>
       ),
@@ -655,7 +654,7 @@ const HeroHeaderDocs: React.FC = () => {
         <>
           <p className="text-md mb-4">
             El contenedor de la cabecera ocupa el 100% del ancho de la pantalla, manteniendo el orden de lectura de
-            izquierda a derecha en sentido horizontal de los elementos como formas y multimedia.
+            izquierda a derecha en sentido horizontal de los elementos.
           </p>
           <Image
             src={`${basePath}/images/hero/hero_disposicion.svg`}
@@ -720,8 +719,8 @@ const HeroHeaderDocs: React.FC = () => {
         <>
           <p className="text-md mb-4">
             La cabecera ocupa el 100% del ancho de la pantalla, incluyendo los márgenes, manteniendo una disposición
-            vertical de la estructura. Esto quiere decir que, en el orden de lectura, el contenido textual, tanto título
-            como descripción, se van a ubicar primeros, y por debajo la multimedia.
+            vertical de la estructura. Esto quiere decir que, en el orden de lectura, el contenido textual, tanto migas
+            de pan, título, como descripción, se van a ubicar primeros y luego, los accionables.
           </p>
           <Image
             src={`${basePath}/images/hero/hero_disposicion_4.svg`}
@@ -742,8 +741,10 @@ const HeroHeaderDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md mb-4">
-            Al igual que en dispositivos <i>tablet</i> , la cabecera ocupa el 100% del ancho de la pantalla, incluyendo
-            los márgenes, manteniendo una disposición vertical de la estructura.
+            Al igual que en dispositivos <i>tablet</i>, la cabecera ocupa el 100% del ancho de la pantalla, incluyendo
+            los márgenes, manteniendo una disposición vertical de la estructura y los accionables deben ocupar el 100%
+            del ancho de la pantalla. El desplegable va a tener el texto centrado y la flecha de despliegue a la derecha
+            del accionable.
           </p>
           <Image
             src={`${basePath}/images/hero/hero_disposicion_5.svg`}
@@ -756,46 +757,84 @@ const HeroHeaderDocs: React.FC = () => {
       ),
     },
     {
-      title: 'Personalización',
+      title: <>Contexto de uso</>,
       content: (
         <>
-          <Image
-            src={`${basePath}/images/hero/hero_disposicion_6.svg`}
-            alt="Personalización"
-            width="800"
-            height="200"
-            className="img-fluid mt-2"
-            style={{ marginBottom: '32px' }}
-          />
-
-          <p className="d-flex text-md fw-semibold mt-4">
-            <span className="pe-1 material-symbols-rounded" aria-hidden="true">
-              info
-            </span>
-            Uso del componente en Figma
-          </p>
-
           <p className="text-md">
-            Para los diseñadores en Figma, el componente tiene la posibilidad de intercambiar el color de fondo por
-            alguno de los seis colores definidos que pertenecen a la paleta de colores de Obelisco. Para hacerlo deben
-            seguir los siguientes pasos:
+            La cabecera de página (hero) se utiliza de manera consistente según el tipo de página, con el objetivo de
+            brindar jerarquía, orientación y contexto al contenido principal.
           </p>
+          <p className="text-md fw-semibold">Variante Dark:</p>
+          <ul className="list-informative-bullet mb-3">
+            <li>
+              El color tiene demasiado peso visual. Puede funcionar para las páginas que requieran un impacto a primer
+              vista.
+            </li>
+            <li>El usuario ingresa al sitio y el header oscuro se presenta como el principal foco e impacto visual.</li>
+            <li>El color es demasiado expresivo.</li>
+            <li>Visualmente atractivo y dominante.</li>
+            <li>Se usaría únicamente para secciones de alta jerarquía.</li>
+          </ul>
 
-          <ol>
+          <p className="text-md fw-semibold">Variante Light:</p>
+          <ul className="list-informative-bullet">
             <li>
-              Seleccionar el tema denominado &quot;Color&quot; desde las propiedades del componente. Por defecto, les
-              aparecerá el color cyan.{' '}
+              Color con un leve componente azul que genera personalidad sin convertirse en un color protagonista, esto
+              permite conseguir neutralidad más identidad.
             </li>
+            <li>No compite con el contenido sino que lo destaca por su contraste.</li>
             <li>
-              Con el componente seleccionado, dirigirse a las propiedades de color del componente donde van a encontrar
-              la variables d colores asignados al texto, al fondo y otros. Entre ellas van a encontrar una variable
-              funcional llamada &quot;hero/bg-cyan&quot;.
+              Cumple con el objetivo de la sobriedad, personalidad y neutralidad (revisar concepto de sobriedad respecto
+              de los requisitos).
             </li>
-            <li>
-              Intercambiá el <i>slot</i>, utilizando la propiedad de <i>instance swap</i> del encabezado <i>(header)</i>
-              , por el logo de la marca o el activo digital.
-            </li>
-          </ol>
+            <li>Respeta la jerarquía del contenido (bajo riesgo de competir con el mismo).</li>
+            <li>Tiene un contraste correcto entre fondo y frente.</li>
+          </ul>
+
+          <div className="responsive-scroll mt-4" tabIndex={0}>
+            <table className="table">
+              <thead>
+                <tr>
+                  <th scope="col" className="tb-text">
+                    Tipo de página
+                  </th>
+                  <th scope="col" className="tb-text">
+                    Consideraciones principales
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Página de inicio</td>
+                  <td>Variante Dark o Multimedia</td>
+                </tr>
+                <tr>
+                  <td>Página de área</td>
+                  <td>Variante Dark</td>
+                </tr>
+                <tr>
+                  <td>Página simple</td>
+                  <td>Variante Light</td>
+                </tr>
+                <tr>
+                  <td>Página turnos e inscripciones</td>
+                  <td>Variante Light</td>
+                </tr>
+                <tr>
+                  <td>Página trámites</td>
+                  <td>Variante Light</td>
+                </tr>
+                <tr>
+                  <td>Perfil institucional</td>
+                  <td>Variante Light</td>
+                </tr>
+                <tr>
+                  <td>Perfil noticias</td>
+                  <td>Variante Light</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </>
       ),
     },
@@ -829,24 +868,20 @@ const HeroHeaderDocs: React.FC = () => {
               </thead>
               <tbody>
                 <tr>
-                  <td>Migas de pan</td>
+                  <td>1. Migas de pan</td>
                   <td>Opcional en páginas de inicio. Obligatorio en páginas internas forman una ruta de navegación.</td>
                 </tr>
                 <tr>
-                  <td>Titulo de la cabecera</td>
+                  <td>2. Titulo de la cabecera</td>
                   <td>Obligatorio, todas las páginas deben contener un título.</td>
                 </tr>
                 <tr>
-                  <td>Subtitulo de la cabecera</td>
+                  <td>3. Subtitulo de la cabecera</td>
                   <td>Opcional, puede ser un texto de apoyo al título principal.</td>
                 </tr>
                 <tr>
-                  <td>Acciones </td>
+                  <td>4. Acciones </td>
                   <td>Opcional, pueden incluir botones, desplegables, etiquetas, campos de búsqueda o ninguno.</td>
-                </tr>
-                <tr>
-                  <td>Multimedia</td>
-                  <td>Opcional, puede incluir una imagen, video, audio o ninguno.</td>
                 </tr>
               </tbody>
             </table>
@@ -855,138 +890,29 @@ const HeroHeaderDocs: React.FC = () => {
       ),
     },
     {
-      title: 'Especificaciones sobre la multimedia',
-    },
-    {
-      subtitle: 'Multimedia con imagen',
-      content: (
-        <>
-          <p className="text-lg fw-semibold mb-2">Formatos recomendados </p>
-
-          <ul className="list-informative-bullet" style={{ marginBottom: '12px' }}>
-            <li>
-              <p className="text-md fw-bold d-inline">JPEG</p>: Es la opción más conocida, y ofrece buena
-              compatibilidad, y relación tamaño/peso. Los archivos suelen tener las extensiones .jpg, .jpeg
-            </li>
-            <li>
-              <p className="text-md fw-bold d-inline">WebP</p>: Es poco conocido, pero ofrece buena calidad con
-              compresión eficiente. Los archivos tienen la extensión &quot;.WEBP&quot;.
-            </li>
-            <li>
-              <p className="text-md fw-bold d-inline">AVIF</p>: Mayor compresión que formatos JPG/JPEG y alta calidad de
-              imagen. Es compatible en la mayoría de los principales navegadores como Chrome, Firefox y Safari.
-            </li>
-          </ul>
-
-          <p className="text-lg fw-semibold mb-2">Tamaños recomendados </p>
-          <p className="text-lg">Resolución base de 1600x900 (16:9) con peso menor a 400 KB</p>
-
-          <ul className="list-informative-bullet">
-            <li>
-              <p className="text-md fw-bold d-inline">Mobile</p>: 640x480px. (proporción 4:3). Peso máximo sugerido:{' '}
-              {'<100 KB'}
-            </li>
-            <li>
-              <p className="text-md fw-bold d-inline">Tablet</p>: 1024x768 (proporción 4:3). Peso máximo sugerido:{' '}
-              {'<150 KB'}
-            </li>
-            <li>
-              <p className="text-md fw-bold d-inline">Desktop</p>: 1600x900px. resolución máxima recomendada (proporción
-              16:9). Peso sugerido {'<250 KB'}
-            </li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      subtitle: 'Multimedia con video',
-      content: (
-        <>
-          <p className="text-lg fw-semibold mb-2 mt-4">Formatos recomendados </p>
-
-          <ul className="list-informative-bullet" style={{ marginBottom: '12px' }}>
-            <li>
-              <p className="text-md fw-bold d-inline">MP4</p>: Formato de video ampliamente soportado. Adecuado para
-              videos cortos, fondos animados o clips promocionales. No soporta transparencia; requiere fallback estático
-              si el autoplay falla.
-            </li>
-            <li>
-              <p className="text-md fw-bold d-inline">WebM</p>: Formato de video optimizado para la web, alternativa
-              libre a MP4. Soporte limitado en navegadores antiguos o entornos legacy.
-            </li>
-          </ul>
-
-          <p className="text-lg fw-semibold mb-2">Tamaños recomendados </p>
-          <p className="text-lg">Resolución base de 1600x900 (16:9) con peso menor a 400 KB</p>
-
-          <li>
-            <p className="text-md fw-bold d-inline">Mobile</p>: 720x480 px. (proporción 4:3). Peso máximo sugerido:{' '}
-            {'<2 MB'}
-          </li>
-          <li>
-            <p className="text-md fw-bold d-inline">Tablet</p>: 1280x720 px (proporción 4:3). Peso máximo sugerido:{' '}
-            {'<2 MB'}
-          </li>
-          <li>
-            <p className="text-md fw-bold d-inline">Desktop</p>: 1920x1080 px. resolución máxima recomendada (proporción
-            16:9). Peso sugerido {'<2 MB'}
-          </li>
-        </>
-      ),
-    },
-    {
-      subtitle: 'Multimedia con GIF',
-      content: (
-        <>
-          <p className="text-lg fw-semibold mb-2">Formatos recomendados </p>
-
-          <ul className="list-informative-bullet" style={{ marginBottom: '12px' }}>
-            <li>
-              <p className="text-md fw-bold d-inline">GIF</p>: Formato de animación simple basado en imágenes de 8 bits.
-              Evitar fondos complejos o loops largos.
-            </li>
-          </ul>
-
-          <p className="text-lg fw-semibold mb-2">Tamaños recomendados </p>
-          <li>
-            <p className="text-md fw-bold d-inline">Mobile</p>: 360×240 px (proporción 4:3). Peso máximo sugerido:{' '}
-            {'<100 KB'}
-          </li>
-          <li>
-            <p className="text-md fw-bold d-inline">Tablet</p>: 728×400 px (proporción 4:3). Peso máximo sugerido:{' '}
-            {'<150 KB'}
-          </li>
-          <li>
-            <p className="text-md fw-bold d-inline">Desktop</p>: 1366×600 px resolución máxima recomendada (proporción
-            16:9). Peso sugerido {'<250 KB'}
-          </li>
-        </>
-      ),
-    },
-    {
       title: 'Variantes',
     },
     {
-      subtitle: 'Tipos de formas',
+      subtitle: 'Institucional',
       content: (
         <>
           <p className="text-md fw-semibold" style={{ marginBottom: '12px' }}>
-            Forma dinámica
+            Variante Dark{' '}
           </p>
           <Image
-            src={`${basePath}/images/hero/hero_forma_dinamica.svg`}
-            alt="Forma dinámica del hero"
+            src={`${basePath}/images/hero/hero_institucional_dark.svg`}
+            alt="hero institucional dark"
             width="738"
             height="400"
             className="img-fluid mb-4"
           />
 
           <p className="text-md fw-semibold" style={{ marginBottom: '12px' }}>
-            Forma institucional
+            Variante Light{' '}
           </p>
           <Image
-            src={`${basePath}/images/hero/hero_forma_institucional.svg`}
-            alt="Forma institucional del hero"
+            src={`${basePath}/images/hero/hero_institucional_light.svg`}
+            alt="hero institucional light"
             width="738"
             height="400"
             className="img-fluid mb-4"
@@ -994,50 +920,7 @@ const HeroHeaderDocs: React.FC = () => {
         </>
       ),
     },
-    {
-      subtitle: 'Con multimedia',
-      content: (
-        <>
-          <p className="text-md mb-4">
-            Los enlaces dentro de una alerta se utilizan para una llamada a la acción. Todos los enlaces a la
-            documentación o información deben abrirse en una nueva pestaña.
-          </p>
 
-          <p className="text-md fw-semibold" style={{ marginBottom: '12px' }}>
-            Con imagen
-          </p>
-          <Image
-            src={`${basePath}/images/hero/hero_forma_con_imagen.svg`}
-            alt="Forma con imagen del hero"
-            width="738"
-            height="400"
-            className="img-fluid mb-4"
-          />
-
-          <p className="text-md fw-semibold" style={{ marginBottom: '12px' }}>
-            Con video
-          </p>
-          <Image
-            src={`${basePath}/images/hero/hero_forma_con_video.svg`}
-            alt="Forma con video del hero"
-            width="738"
-            height="400"
-            className="img-fluid mb-4"
-          />
-
-          <p className="text-md fw-semibold" style={{ marginBottom: '12px' }}>
-            Con gif
-          </p>
-          <Image
-            src={`${basePath}/images/hero/hero_forma_con_gif.svg`}
-            alt="Forma con gif del hero"
-            width="738"
-            height="400"
-            className="img-fluid mb-4"
-          />
-        </>
-      ),
-    },
     {
       subtitle: 'Accionables',
       content: (
@@ -1082,6 +965,17 @@ const HeroHeaderDocs: React.FC = () => {
           />
 
           <p className="text-md fw-semibold" style={{ marginBottom: '12px' }}>
+            Con desplegables de selección y botón
+          </p>
+          <Image
+            src={`${basePath}/images/hero/hero_accionables_con_desplegables_de_seleccion_y_boton.svg`}
+            alt="Accionables con desplegables de selección del hero"
+            width="738"
+            height="400"
+            className="img-fluid mb-4"
+          />
+
+          <p className="text-md fw-semibold" style={{ marginBottom: '12px' }}>
             Con etiquetas
           </p>
           <Image
@@ -1091,102 +985,106 @@ const HeroHeaderDocs: React.FC = () => {
             height="400"
             className="img-fluid mb-4"
           />
-        </>
-      ),
-    },
-    {
-      subtitle: 'Modos de color',
-      content: (
-        <>
-          <p className="text-md mb-2">El componente ofrece 3 modos de color que definen el fondo del Hero:</p>
+
+          <p className="text-xl fw-semibold">Modos de color</p>
+
+          <p className="text-">
+            El componente ofrece 2 modos de color que definen la combinación de colores de la cabecera:
+          </p>
+
           <ul className="list-informative-bullet mb-3">
             <li>
               <p className="text-md fw-bold d-inline">Dark</p>: Para fondos oscuros y alto contraste.
             </li>
             <li>
-              <p className="text-md fw-bold d-inline">Light</p>: Para fondos claros y lectura sutil.
+              <p className="text-md fw-bold d-inline">Light</p>: para fondos claros y lectura sutil.
             </li>
-            <li>
-              <p className="text-md fw-bold d-inline">Dark</p>: Para fondos con identidad visual.
-            </li>
-          </ul>{' '}
-          <p className="text-md mb-2">
-            El modo Color incluye 6 opciones intercambiables desde las propiedades del componente:
-          </p>
-          <div className="d-flex gap-2">
-            <span className="badge text-bg-light py-1 px-2 text-lowercase">$hero/bg-blue</span>
-            <span className="badge text-bg-light py-1 px-2 text-lowercase">$hero/bg-sky</span>
-            <span className="badge text-bg-light py-1 px-2 text-lowercase">$hero/bg-cyan</span>
-          </div>
-          <div className="d-flex mt-2  gap-2">
-            <span className="badge text-bg-light py-1 px-2 text-lowercase">$hero/bg-yellow</span>
-            <span className="badge text-bg-light py-1 px-2 text-lowercase">$hero/bg-red</span>
-            <span className="badge text-bg-light py-1 px-2 text-lowercase">$hero/bg-purple</span>
-          </div>
+          </ul>
+
           <Image
-            src={`${basePath}/images/hero/hero_color_bg_dark.svg`}
+            src={`${basePath}/images/hero/hero_modos_de_color_dark.svg`}
+            alt="Ejemplos de modos de color, hero dark"
+            width="738"
+            height="400"
+            className="img-fluid mb-4"
+          />
+          <Image
+            src={`${basePath}/images/hero/hero_modos_de_color_light.svg`}
+            alt="Ejemplos de modos de color, hero light"
+            width="738"
+            height="400"
+            className="img-fluid mb-4"
+          />
+        </>
+      ),
+    },
+    {
+      title: 'Página de Noticias',
+      content: (
+        <>
+          <p className="text-md mb-2">
+            Para el template de Noticias se definió la variante Light. La misma prioriza la legibilidad y jerarquía de
+            elementos, evitando así, distracciones visuales. Esta decisión busca mantener coherencia en el texto,
+            accesibilidad y foco en el contenido.
+            <br />
+            <br />
+            Esta variante está compuesta por los siguientes elementos:
+          </p>
+
+          <Image
+            src={`${basePath}/images/hero/pagina_de_noticias.svg`}
             alt="Modo de color dark"
             width="800"
             height="200"
             className="img-fluid"
             style={{ marginTop: '24px' }}
           />
-          <Image
-            src={`${basePath}/images/hero/hero_color_bg_light.svg`}
-            alt="Modo de color light"
-            width="800"
-            height="200"
-            className="img-fluid"
-            style={{ marginTop: '24px' }}
-          />
-          <Image
-            src={`${basePath}/images/hero/hero_color_cyan.svg`}
-            alt="Modo de color cyan"
-            width="800"
-            height="200"
-            className="img-fluid"
-            style={{ marginTop: '24px' }}
-          />
-          <Image
-            src={`${basePath}/images/hero/hero_color_sky.svg`}
-            alt="Modo de color sky"
-            width="800"
-            height="200"
-            className="img-fluid"
-            style={{ marginTop: '24px' }}
-          />
-          <Image
-            src={`${basePath}/images/hero/hero_color_red.svg`}
-            alt="Modo de color red"
-            width="800"
-            height="200"
-            className="img-fluid"
-            style={{ marginTop: '24px' }}
-          />
-          <Image
-            src={`${basePath}/images/hero/hero_color_yellow.svg`}
-            alt="Modo de color yellow"
-            width="800"
-            height="200"
-            className="img-fluid"
-            style={{ marginTop: '24px' }}
-          />
-          <Image
-            src={`${basePath}/images/hero/hero_color_purple.svg`}
-            alt="Modo de color purple"
-            width="800"
-            height="200"
-            className="img-fluid"
-            style={{ marginTop: '24px' }}
-          />
-          <Image
-            src={`${basePath}/images/hero/hero_color_blue.svg`}
-            alt="Modo de color blue"
-            width="800"
-            height="200"
-            className="img-fluid"
-            style={{ marginTop: '24px' }}
-          />
+
+          <div className="responsive-scroll mt-4" tabIndex={0}>
+            <table className="table">
+              <thead>
+                <tr>
+                  <th scope="col" className="tb-text">
+                    Elemento
+                  </th>
+                  <th scope="col" className="tb-text">
+                    Carácter{' '}
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1. Migas de pan</td>
+                  <td>Obligatorio, en página noticia al ser una página interna. Forman una ruta de navegación.</td>
+                </tr>
+                <tr>
+                  <td>2. Etiqueta</td>
+                  <td>Obligatorio, todas las páginas deben contener al menos una etiqueta.</td>
+                </tr>
+                <tr>
+                  <td>3. Fecha de publicación</td>
+                  <td>Obligatorio, todas las páginas deben contener fecha de publicación.</td>
+                </tr>
+                <tr>
+                  <td>4. Titulo de la cabecera</td>
+                  <td>Obligatorio, todas las páginas deben contener un título.</td>
+                </tr>
+                <tr>
+                  <td>5. Subtitulo de la cabecera</td>
+                  <td>Opcional, puede ser un texto de apoyo al título principal.</td>
+                </tr>
+                <tr>
+                  <td>6. Accionables </td>
+                  <td>Compartir en redes</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="text-md mt-3">
+            Para más detalles sobre estructura, jerarquía de contenido y variantes, consultar la documentación del{' '}
+            <a href="https://gcba.github.io/obelisco-demo/noticias/index.html">Template de Noticias</a>, donde se
+            describe el comportamiento completo de este tipo de página.
+          </p>
         </>
       ),
     },
@@ -1231,18 +1129,6 @@ const HeroHeaderDocs: React.FC = () => {
           </p>
           <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
             {HERO_ACCESIBILITY}
-          </SyntaxHighlighter>
-          <p className="text-md mt-4">
-            Para las variantes con multimedia, el atributo <i>alt</i> es el texto alternativo que reemplaza lo visual y
-            describe el propósito del contenido sin necesidad de verlo.
-            <br />
-            <br />
-            Si la multimedia es sólo decorativa, es decir que no aporta información clave, el atributo <i>alt</i> puede
-            estar vacío para que el lector de pantalla lo ignore, por ejemplo:{' '}
-            <code>{'<img alt="" aria-hidden="true">'}</code>
-          </p>
-          <SyntaxHighlighter language="html" style={dracula} wrapLongLines>
-            {HERO_ACCESIBILITY_2}
           </SyntaxHighlighter>
         </>
       ),
@@ -1418,9 +1304,9 @@ const HeroHeaderDocs: React.FC = () => {
   return (
     <>
       <ComponentHeader
-        title="Cabecera de Página"
+        title="Cabecera de página institucional"
         description={[
-          'La cabecera de página es el área destacada y principal de una página, pensada para captar la atención inmediata de la persona usuaria. Puede contener accionables como botones o campos de búsqueda.',
+          'La Cabecera de página institucional es el área principal de una página que brinda información introductoria para orientar a la persona usuaria en el propósito de la misma. Puede contener accionables como botones, campos de búsqueda y otros.',
         ]}
       />
       <Tabs

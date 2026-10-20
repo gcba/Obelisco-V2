@@ -95,9 +95,16 @@ export const FOOTER = `<h2 class="sr-only">Navegación de pie de página</h2>
             height="40"
           />
           <img
-            class="img-vamos-ba"
-            src="footer/logo-footer-ba.svg"
-            alt="Logo de Vamos Buenos Aires"
+            class="d-md-none"
+            src="footer/footer_escudo_atractiva_sm"
+            alt="Logo de Ciudad de Buenos Aires"
+            height="48"
+          />
+          <img
+            class="d-none d-md-inline"
+            src="footer/footer_escudo_atractiva.svg"
+            alt="Logo de Ciudad de Buenos Aires"
+            height="40"
           />
         </div>
         <div class="col-12">
@@ -164,9 +171,16 @@ export const FOOTER_LEGALS = `<h2 class="sr-only">Navegación de pie de página<
             height="40"
           />
           <img
-            class="img-vamos-ba"
-            src="footer/logo-footer-ba.svg"
-            alt="Logo de Vamos Buenos Aires"
+            class="d-md-none"
+            src="footer/footer_escudo_atractiva_sm"
+            alt="Logo de Ciudad de Buenos Aires"
+            height="48"
+          />
+          <img
+            class="d-none d-md-inline"
+            src="footer/footer_escudo_atractiva.svg"
+            alt="Logo de Ciudad de Buenos Aires"
+            height="40"
           />
         </div>
         <div class="col-12">
@@ -319,9 +333,16 @@ export const FOOTER_INDICATOR = `<h2 class="sr-only">Navegación de pie de pági
             height="40"
           />
           <img
-            class="img-vamos-ba"
-            src="footer/logo-footer-ba.svg"
-            alt="Logo de Vamos Buenos Aires"
+            class="d-md-none"
+            src="footer/footer_escudo_atractiva_sm"
+            alt="Logo de Ciudad de Buenos Aires"
+            height="48"
+          />
+          <img
+            class="d-none d-md-inline"
+            src="footer/footer_escudo_atractiva.svg"
+            alt="Logo de Ciudad de Buenos Aires"
+            height="40"
           />
         </div>
         <div class="col-12">

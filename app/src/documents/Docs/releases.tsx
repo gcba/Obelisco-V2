@@ -20,6 +20,7 @@ const ReleasesComponents: React.FC = () => {
   const sections = [
     {
       title: 'Versión 1.19.0',
+      date: '17/09/2026',
       content: (
         <ul className="docs-list">
           <p>La Versión 1.19.0 contiene lo siguiente: </p>

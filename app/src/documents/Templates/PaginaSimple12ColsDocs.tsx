@@ -505,7 +505,7 @@ const PaginaSimple12ColsDocs: React.FC = () => {
         </ol>
       </nav>
       <ComponentHeader
-        title="Página simple"
+        title="Página simple - 12 columnas"
         description={[
           `
           Las usamos para transmitir información estática de menor jerarquía, en comparación a una página de área, y con menor cantidad de contenido.

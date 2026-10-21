@@ -633,18 +633,35 @@ export const HERO_DARK = `<header class="hero bg-content-hero-dark">
   <div class="aside bg-aside-hero-light"></div>
 </header>`;
 
-export const HERO_ACCESIBILITY = `<header class="hero">
-   <div class="content wave">
-      <div class="d-flex flex-column">
-         <nav aria-label="Navegación secundaria">... </nav>
-         <div>
-            <h1 class="mb-3">Encabezado único de la página</h1>
-            <p class="lead m-0">Subtítulo de la página</p>
-         </div>
+export const HERO_ACCESIBILITY = `<header class="hero bg-content-hero-dark">
+  <div class="content corner">
+    <div class="d-flex flex-column">
+      <nav aria-label="Navegación secundaria">
+        <ol class="breadcrumb m-0">
+          <li class="breadcrumb-item">
+            <a href="#">Inicio</a>
+          </li>
+        </ol>
+      </nav>
+      <div>
+        <h1 class="mb-3">Encabezado de la página</h1>
+        <p class="lead m-0">
+          Brinda las herramientas necesarias para lograr el bienestar de perros y gatos, además de la
+          convivencia armónica y responsable de las mascotas y sus responsables en el espacio público.
+        </p>
       </div>
-   </div>
-</header>
-`;
+      <div class="btn-hero">
+        <button type="button" class="btn btn-light">
+          Botón
+        </button>
+        <button type="button" class="btn btn-outline-light">
+          Botón
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="aside bg-aside-hero-light"></div>
+</header>`;
 
 export const HERO_ACCESIBILITY_2 = `<header class="hero"> 
   <div class="content wave"> ... </div> 

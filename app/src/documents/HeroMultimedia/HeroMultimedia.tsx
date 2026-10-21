@@ -796,7 +796,6 @@ const HeroMultimediaDocs: React.FC = () => {
         </>
       ),
     },
-
     {
       subtitle: 'Accionables',
       content: (

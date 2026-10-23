@@ -58,7 +58,14 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
                   id={section.id || `section-${type}-${index + 1}`}
                   ref={sectionRefs[index]}
                 >
-                  {section.date ? (
+                  {section.title && !section.date ? (
+                    <>
+                      {' '}
+                      <h2 className="h4 mb-3" style={{ marginTop: section.firstTitle ? `0px` : '48px' }}>
+                        {section.title}
+                      </h2>
+                    </>
+                  ) : section.title && section.date ? (
                     <>
                       <div
                         className="d-flex mb-3 align-items-baseline"
@@ -69,10 +76,9 @@ const DocumentationTemplate: React.FC<DocumentationTemplateProps> = ({ sections,
                       </div>
                     </>
                   ) : (
-                    <h2 className="h4 mb-3" style={{ marginTop: section.firstTitle ? `0px` : '48px' }}>
-                      {section.title}
-                    </h2>
+                    <></>
                   )}
+
                   {section.subtitle && (
                     <h3 className="text-xl mb-2" style={{ marginLeft: '-16px', marginBottom: '8px !important' }}>
                       <ScrollspySubtitle text={section.subtitle} />

@@ -617,7 +617,7 @@ const HeroHeaderDocs: React.FC = () => {
       firstTitle: true,
       content: (
         <>
-          <div className="list-informative">
+          <div>
             <p className="text-xl">Cuándo usar</p>
             <ul className="list-informative-bullet">
               <li>
@@ -626,7 +626,7 @@ const HeroHeaderDocs: React.FC = () => {
               </li>
               <li>
                 Para captar la atención de la persona usuaria en páginas de contenido cultural, de turismo, de eventos u
-                otro.
+                otras.
               </li>
             </ul>
           </div>
@@ -741,10 +741,10 @@ const HeroHeaderDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md mb-4">
-            Al igual que en dispositivos <i>tablet</i>, la cabecera ocupa el 100% del ancho de la pantalla, incluyendo
-            los márgenes, manteniendo una disposición vertical de la estructura y los accionables deben ocupar el 100%
-            del ancho de la pantalla. El desplegable va a tener el texto centrado y la flecha de despliegue a la derecha
-            del accionable.
+            Al igual que en dispositivos tablet, la cabecera ocupa el 100% del ancho de la pantalla, incluyendo los
+            márgenes, manteniendo una disposición vertical de la estructura y los accionables deben ocupar el 100% del
+            ancho de la pantalla. El desplegable va a tener el texto centrado y la flecha de despliegue a la derecha del
+            accionable.
           </p>
           <Image
             src={`${basePath}/images/hero/hero_disposicion_5.svg`}
@@ -757,15 +757,17 @@ const HeroHeaderDocs: React.FC = () => {
       ),
     },
     {
-      title: <>Contexto de uso</>,
+      title: 'Contexto de uso',
       content: (
         <>
           <p className="text-md">
             La cabecera de página (hero) se utiliza de manera consistente según el tipo de página, con el objetivo de
             brindar jerarquía, orientación y contexto al contenido principal.
           </p>
+
           <p className="text-md fw-semibold">Variante Dark:</p>
-          <ul className="list-informative-bullet mb-3">
+
+          <ul className="list-informative-bullet">
             <li>
               El color tiene demasiado peso visual. Puede funcionar para las páginas que requieran un impacto a primer
               vista.
@@ -776,7 +778,8 @@ const HeroHeaderDocs: React.FC = () => {
             <li>Se usaría únicamente para secciones de alta jerarquía.</li>
           </ul>
 
-          <p className="text-md fw-semibold">Variante Light:</p>
+          <p className="text-md fw-semibold mt-3">Variante Light:</p>
+
           <ul className="list-informative-bullet">
             <li>
               Color con un leve componente azul que genera personalidad sin convertirse en un color protagonista, esto
@@ -829,7 +832,7 @@ const HeroHeaderDocs: React.FC = () => {
                   <td>Variante Light</td>
                 </tr>
                 <tr>
-                  <td>Perfil noticias</td>
+                  <td>Página noticias</td>
                   <td>Variante Light</td>
                 </tr>
               </tbody>
@@ -880,7 +883,7 @@ const HeroHeaderDocs: React.FC = () => {
                   <td>Opcional, puede ser un texto de apoyo al título principal.</td>
                 </tr>
                 <tr>
-                  <td>4. Acciones </td>
+                  <td>4. Acciones</td>
                   <td>Opcional, pueden incluir botones, desplegables, etiquetas, campos de búsqueda o ninguno.</td>
                 </tr>
               </tbody>
@@ -893,36 +896,31 @@ const HeroHeaderDocs: React.FC = () => {
       title: 'Variantes',
     },
     {
-      subtitle: 'Institucional',
+      subtitleBold: 'Institucional',
       content: (
         <>
-          <p className="text-md fw-semibold" style={{ marginBottom: '12px' }}>
-            Variante Dark{' '}
-          </p>
+          <p className="text-md fw-semibold mb-2">Variante Dark </p>
           <Image
-            src={`${basePath}/images/hero/hero_institucional_dark.svg`}
+            src={`${basePath}/images/hero/hero_dark.svg`}
             alt="hero institucional dark"
-            width="738"
-            height="400"
-            className="img-fluid mb-4"
+            width="800"
+            height="280"
+            className="img-fluid"
           />
 
-          <p className="text-md fw-semibold" style={{ marginBottom: '12px' }}>
-            Variante Light{' '}
-          </p>
+          <p className="text-md fw-semibold mb-2">Variante Light </p>
           <Image
-            src={`${basePath}/images/hero/hero_institucional_light.svg`}
+            src={`${basePath}/images/hero/hero_light.svg`}
             alt="hero institucional light"
-            width="738"
-            height="400"
-            className="img-fluid mb-4"
+            width="800"
+            height="280"
+            className="img-fluid"
           />
         </>
       ),
     },
-
     {
-      subtitle: 'Accionables',
+      subtitleBold: 'Accionables',
       content: (
         <>
           <p className="text-md mb-4">
@@ -930,39 +928,6 @@ const HeroHeaderDocs: React.FC = () => {
             función es ofrecer al usuario caminos directos para resolver la situación comunicada, sin interrumpir la
             lectura del mensaje.
           </p>
-
-          <p className="text-md fw-semibold" style={{ marginBottom: '12px' }}>
-            Con botones
-          </p>
-          <Image
-            src={`${basePath}/images/hero/hero_accionables_con_botones.svg`}
-            alt="Accionables con botones del hero"
-            width="738"
-            height="400"
-            className="img-fluid mb-4"
-          />
-
-          <p className="text-md fw-semibold" style={{ marginBottom: '12px' }}>
-            Con campo de búsqueda
-          </p>
-          <Image
-            src={`${basePath}/images/hero/hero_accionables_con_campo_de_busqueda.svg`}
-            alt="Accionables con campo de búsqueda del hero"
-            width="738"
-            height="400"
-            className="img-fluid mb-4"
-          />
-
-          <p className="text-md fw-semibold" style={{ marginBottom: '12px' }}>
-            Con desplegables de selección
-          </p>
-          <Image
-            src={`${basePath}/images/hero/hero_accionables_con_desplegables_de_seleccion.svg`}
-            alt="Accionables con desplegables de selección del hero"
-            width="738"
-            height="400"
-            className="img-fluid mb-4"
-          />
 
           <p className="text-md fw-semibold" style={{ marginBottom: '12px' }}>
             Con desplegables de selección y botón
@@ -1008,6 +973,10 @@ const HeroHeaderDocs: React.FC = () => {
             height="400"
             className="img-fluid mb-4"
           />
+
+          <p className="text-md fw-semibold" style={{ marginBottom: '12px' }}>
+            Con desplegables de selección y botón
+          </p>
           <Image
             src={`${basePath}/images/hero/hero_modos_de_color_light.svg`}
             alt="Ejemplos de modos de color, hero light"
@@ -1019,18 +988,20 @@ const HeroHeaderDocs: React.FC = () => {
       ),
     },
     {
-      title: 'Página de Noticias',
+      subtitleBold: 'Modos de color',
       content: (
         <>
           <p className="text-md mb-2">
-            Para el template de Noticias se definió la variante Light. La misma prioriza la legibilidad y jerarquía de
-            elementos, evitando así, distracciones visuales. Esta decisión busca mantener coherencia en el texto,
-            accesibilidad y foco en el contenido.
-            <br />
-            <br />
-            Esta variante está compuesta por los siguientes elementos:
+            El componente ofrece 2 modos de color que definen la combinación de colores de la cabecera:
           </p>
-
+          <ul className="list-informative-bullet mb-3">
+            <li>
+              <p className="text-md fw-bold d-inline">Dark</p>: Para fondos oscuros y alto contraste.
+            </li>
+            <li>
+              <p className="text-md fw-bold d-inline">Light</p>: Para fondos claros y lectura sutil.
+            </li>
+          </ul>{' '}
           <Image
             src={`${basePath}/images/hero/pagina_de_noticias.svg`}
             alt="Modo de color dark"
@@ -1039,16 +1010,46 @@ const HeroHeaderDocs: React.FC = () => {
             className="img-fluid"
             style={{ marginTop: '24px' }}
           />
+          <Image
+            src={`${basePath}/images/hero/hero_color_bg_light.svg`}
+            alt="Modo de color light"
+            width="800"
+            height="200"
+            className="img-fluid"
+            style={{ marginTop: '24px' }}
+          />
+        </>
+      ),
+    },
+    {
+      title: 'Página de noticias',
+      content: (
+        <>
+          <p className="text-md">
+            Para el template de Noticias se definió la variante Light. La misma prioriza la legibilidad y jerarquía de
+            elementos, evitando así, distracciones visuales. Esta decisión busca mantener coherencia en el texto,
+            accesibilidad y foco en el contenido.
+            <br />
+            Esta variante está compuesta por los siguientes elementos:
+          </p>
+
+          <Image
+            src={`${basePath}/images/hero/hero_noticias.svg`}
+            alt="hero en página de noticias"
+            width="800"
+            height="200"
+            className="img-fluid"
+          />
 
           <div className="responsive-scroll mt-4" tabIndex={0}>
             <table className="table">
               <thead>
                 <tr>
                   <th scope="col" className="tb-text">
-                    Elemento
+                    Tipo de página
                   </th>
                   <th scope="col" className="tb-text">
-                    Carácter{' '}
+                    Consideraciones principales
                   </th>
                 </tr>
               </thead>
@@ -1074,15 +1075,16 @@ const HeroHeaderDocs: React.FC = () => {
                   <td>Opcional, puede ser un texto de apoyo al título principal.</td>
                 </tr>
                 <tr>
-                  <td>6. Accionables </td>
+                  <td>6. Accionables</td>
                   <td>Compartir en redes</td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <p className="text-md mt-3">
-            Para más detalles sobre estructura, jerarquía de contenido y variantes, consultar la documentación del{' '}
-            <a href="https://gcba.github.io/obelisco-demo/noticias/index.html">Template de Noticias</a>, donde se
+
+          <p className="text-md">
+            Para más detalles sobre estructura, jerarquía de contenido y variantes, consultar la documentación del
+            <a href="https://gcba.github.io/Obelisco-V2/templates/pagina-de-noticias">Template de Noticias</a>, donde se
             describe el comportamiento completo de este tipo de página.
           </p>
         </>
@@ -1103,8 +1105,9 @@ const HeroHeaderDocs: React.FC = () => {
           <span className="badge badge-s-default ms-1">TAB</span>
           <span className="badge badge-s-default">ENTER</span>
           <p className="text-md">
-            Acciones como accionar botones botones o abrir desplegables se pueden realizar con las teclas <i>Enter</i> o{' '}
-            <i>space</i>, y controlar con las flechas del teclado.
+            Utilizando el tab la persona usuaria puede navegar a través de elementos de la interfaz. Acciones como
+            accionar botones o abrir desplegables se pueden realizar con las teclas Enter o space, y controlar con las
+            flechas del teclado.
           </p>
 
           <Image
@@ -1304,7 +1307,7 @@ const HeroHeaderDocs: React.FC = () => {
   return (
     <>
       <ComponentHeader
-        title="Cabecera de página institucional"
+        title="Cabecera de Página institucional"
         description={[
           'La Cabecera de página institucional es el área principal de una página que brinda información introductoria para orientar a la persona usuaria en el propósito de la misma. Puede contener accionables como botones, campos de búsqueda y otros.',
         ]}

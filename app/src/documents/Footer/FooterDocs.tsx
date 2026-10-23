@@ -393,7 +393,7 @@ const FooterDocs: React.FC = () => {
       firstTitle: true,
       content: (
         <>
-          <div className="list-informative">
+          <div>
             <p className="text-xl">Cuándo usar</p>
             <ul className="list-informative-bullet">
               <li>
@@ -409,7 +409,7 @@ const FooterDocs: React.FC = () => {
       title: 'Contextos de uso',
       content: (
         <>
-          <div className="list-informative">
+          <div>
             <p className="">El componente puede contener los siguientes elementos: </p>
             <ul className="list-informative-bullet">
               <li>Enlaces de utilidad (teléfonos de emergencias, atención ciudadana, entre otros). </li>

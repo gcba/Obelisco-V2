@@ -57,6 +57,18 @@ const PaginaSimple8ColsDocs: React.FC = () => {
                     </Link>
                     .
                   </li>
+                  <li>
+                    Para detallar el turno de trámites o inscripción a cursos y actividades, recomendamos emplear la
+                    plantilla{' '}
+                    <a href="https://gcba.github.io/Obelisco-V2/templates/pagina-turnos-inscripciones">
+                      página turnos e inscripciones
+                    </a>
+                    .
+                  </li>
+                  <li>
+                    Para compartir noticias, recomendamos utilizar la plantilla{' '}
+                    <a href="https://gcba.github.io/Obelisco-V2/templates/pagina-de-noticias">noticias</a>.
+                  </li>
                 </ul>
               </div>
             </div>
@@ -212,6 +224,8 @@ const PaginaSimple8ColsDocs: React.FC = () => {
     },
     {
       title: 'Componentes utilizados',
+    },
+    {
       subtitleBold: 'Galería de imágenes',
       content: (
         <>
@@ -219,7 +233,7 @@ const PaginaSimple8ColsDocs: React.FC = () => {
             Las imágenes se utilizan como complemento figurativo o ilustrativo de la información del párrafo de texto
             anterior o posterior, por eso sugerimos que su uso se limite a brindar mayor contexto a la persona usuaria.
           </p>
-          <p className="text-md">
+          <p className="text-md mb-2">
             En una página simple, las imágenes se ubican antes, después, o entre párrafos de texto, y pueden ser parte
             de una <Link href={'https://gcba.github.io/Obelisco-V2/components/gallery'}>galería de imágenes</Link> a
             través de una cuadrícula de fotos interactivas y de una vista ampliada con el formato de carrusel. El{' '}

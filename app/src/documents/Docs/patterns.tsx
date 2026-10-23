@@ -21,9 +21,9 @@ const PatternsComponents: React.FC = () => {
       firstTitle: true,
       content: (
         <>
-          <div className="list-informative">
+          <div>
             <p className="text-xl">Cuándo usar</p>
-            <div className="list-informative">
+            <div>
               <ul className="list-informative-bullet">
                 <li>Para crear una cuenta o iniciar sesión.</li>
                 <li>Para registrarse en un servicio, programa o beneficio.</li>
@@ -556,7 +556,7 @@ const PatternsComponents: React.FC = () => {
             del formulario: campos de entrada, títulos, subtítulos y botones. Este contenedor se adapta al ancho máximo
             disponible según el dispositivo:
           </p>
-          <div className="list-informative">
+          <div>
             <ul className="list-informative-bullet">
               <li>
                 En <i>desktop</i>, se ubica dentro de 8 columnas.
@@ -740,7 +740,7 @@ const PatternsComponents: React.FC = () => {
             Para reforzar la comprensión del formulario es recomendado agrupar los temas relacionados en secciones con
             encabezados.
           </p>
-          <div className="list-informative">
+          <div>
             <ul className="list-informative-bullet">
               <li>
                 <strong>Utilice el nivel de encabezado adecuado</strong>. Para los títulos de las secciones de un
@@ -857,7 +857,7 @@ const PatternsComponents: React.FC = () => {
       content: (
         <>
           <p className="text-md">Dependiendo del tipo de campo puede haber lineamientos adicionales.</p>
-          <div className="list-informative">
+          <div>
             <ul className="list-informative-bullet">
               <li>
                 Los campos de formulario siempre deben contar con un Label identificador visible y legible por los

@@ -12,7 +12,7 @@ const ListInformativeDocs: React.FC = () => {
       content: (
         <CodeBox codeHTML={LIST_INFORMATIVE_BULLET}>
           <div className="container">
-            <div className="list-informative">
+            <div>
               <h3 className="list-informative-subtitle">Este es el subtítulo de una lista general</h3>
               <ul className="list-informative-bullet">
                 <li>Este es el contenido de un ítem de una lista general.</li>
@@ -33,7 +33,7 @@ const ListInformativeDocs: React.FC = () => {
       content: (
         <CodeBox codeHTML={LIST_INFORMATIVE_CHECK}>
           <div className="container">
-            <div className="list-informative">
+            <div>
               <h3 className="list-informative-subtitle">Este es el subtítulo de una lista de requisitos</h3>
               <ul className="list-informative-check">
                 <li>Este es el contenido de un ítem de una lista de requisitos.</li>

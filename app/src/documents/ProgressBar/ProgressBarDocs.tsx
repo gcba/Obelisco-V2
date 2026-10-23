@@ -21,7 +21,7 @@ const ProgressBarDocs: React.FC = () => {
       firstTitle: true,
       content: (
         <>
-          <div className="list-informative">
+          <div>
             <p className="text-xl">Cuándo usar</p>
             <ul className="list-informative-bullet" style={{ marginBottom: '32px' }}>
               <li>
@@ -30,7 +30,7 @@ const ProgressBarDocs: React.FC = () => {
               </li>
             </ul>
           </div>
-          <div className="list-informative">
+          <div>
             <p className="text-xl">Cuándo no usar</p>
             <ul className="list-informative-bullet">
               <li>

@@ -86,13 +86,13 @@ export default function FormSelect() {
       content: (
         <>
           <section className="d-flex flex-column  gap-4">
-            <div className="list-informative">
+            <div>
               <p className="text-xl">Cuándo usar</p>
               <ul className="list-informative-bullet">
                 <li>Cuando la persona usuaria debe seleccionar una opción de una lista de más de 3 opciones.</li>
               </ul>
             </div>
-            <div className="list-informative">
+            <div>
               <p className="text-xl">Cuándo no usar</p>
               <ul className="list-informative-bullet">
                 <li>

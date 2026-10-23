@@ -638,8 +638,8 @@ const HeroHeaderDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md" style={{ marginTop: '32px' }}>
-            Se ubica siempre en la parte superior del sitio, inmediatamente debajo del Encabezado <i>(header)</i>{' '}
-            principal, actuando como punto de inicio y orientación del contenido de la página.
+            Se ubica siempre en la parte superior del sitio, inmediatamente debajo del Encabezado (header) principal,
+            actuando como punto de inicio y orientación del contenido de la página.
           </p>
         </>
       ),
@@ -930,33 +930,45 @@ const HeroHeaderDocs: React.FC = () => {
           </p>
 
           <p className="text-md fw-semibold" style={{ marginBottom: '12px' }}>
-            Con botones
+            Con desplegables de selección y botón
           </p>
           <Image
-            src={`${basePath}/images/hero/hero_accionables_con_botones.svg`}
-            alt="Accionables con botones del hero"
-            width="738"
-            height="400"
-            className="img-fluid mb-4"
-          />
-
-          <p className="text-md fw-semibold" style={{ marginBottom: '12px' }}>
-            Con campo de búsqueda
-          </p>
-          <Image
-            src={`${basePath}/images/hero/hero_accionables_con_campo_de_busqueda.svg`}
-            alt="Accionables con campo de búsqueda del hero"
-            width="738"
-            height="400"
-            className="img-fluid mb-4"
-          />
-
-          <p className="text-md fw-semibold" style={{ marginBottom: '12px' }}>
-            Con desplegables de selección
-          </p>
-          <Image
-            src={`${basePath}/images/hero/hero_accionables_con_desplegables_de_seleccion.svg`}
+            src={`${basePath}/images/hero/hero_accionables_con_desplegables_de_seleccion_y_boton.svg`}
             alt="Accionables con desplegables de selección del hero"
+            width="738"
+            height="400"
+            className="img-fluid mb-4"
+          />
+
+          <p className="text-md fw-semibold" style={{ marginBottom: '12px' }}>
+            Con etiquetas
+          </p>
+          <Image
+            src={`${basePath}/images/hero/hero_accionables_con_etiquetas.svg`}
+            alt="Accionables con etiquetas"
+            width="738"
+            height="400"
+            className="img-fluid mb-4"
+          />
+
+          <p className="text-xl fw-semibold">Modos de color</p>
+
+          <p className="text-">
+            El componente ofrece 2 modos de color que definen la combinación de colores de la cabecera:
+          </p>
+
+          <ul className="list-informative-bullet mb-3">
+            <li>
+              <p className="text-md fw-bold d-inline">Dark</p>: Para fondos oscuros y alto contraste.
+            </li>
+            <li>
+              <p className="text-md fw-bold d-inline">Light</p>: para fondos claros y lectura sutil.
+            </li>
+          </ul>
+
+          <Image
+            src={`${basePath}/images/hero/hero_modos_de_color_dark.svg`}
+            alt="Ejemplos de modos de color, hero dark"
             width="738"
             height="400"
             className="img-fluid mb-4"
@@ -966,8 +978,8 @@ const HeroHeaderDocs: React.FC = () => {
             Con desplegables de selección y botón
           </p>
           <Image
-            src={`${basePath}/images/hero/hero_accionables_con_etiquetas.svg`}
-            alt="Accionables con etiquetas"
+            src={`${basePath}/images/hero/hero_modos_de_color_light.svg`}
+            alt="Ejemplos de modos de color, hero light"
             width="738"
             height="400"
             className="img-fluid mb-4"
@@ -991,7 +1003,7 @@ const HeroHeaderDocs: React.FC = () => {
             </li>
           </ul>{' '}
           <Image
-            src={`${basePath}/images/hero/hero_color_bg_dark.svg`}
+            src={`${basePath}/images/hero/pagina_de_noticias.svg`}
             alt="Modo de color dark"
             width="800"
             height="200"
@@ -1297,7 +1309,7 @@ const HeroHeaderDocs: React.FC = () => {
       <ComponentHeader
         title="Cabecera de Página institucional"
         description={[
-          'La cabecera de página es el área destacada y principal de una página, pensada para captar la atención inmediata de la persona usuaria. Puede contener accionables como botones o campos de búsqueda.',
+          'La Cabecera de página institucional es el área principal de una página que brinda información introductoria para orientar a la persona usuaria en el propósito de la misma. Puede contener accionables como botones, campos de búsqueda y otros.',
         ]}
       />
       <Tabs

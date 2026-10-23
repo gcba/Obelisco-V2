@@ -112,14 +112,14 @@ const FooterDocs: React.FC = () => {
                         height="40"
                       />
                       <img
-                        className="d-none d-md-inline"
-                        src={`${basePath}/images/footer_escudo_atractiva.svg`}
+                        className=" d-md-none"
+                        src={`${basePath}/images/footer_escudo_atractiva_sm.svg`}
                         alt="Logo de Ciudad de Buenos Aires"
                         height="40"
                       />
                       <img
-                        className=" d-md-none"
-                        src={`${basePath}/images/footer_escudo_atractiva_sm.svg`}
+                        className="d-none d-md-inline"
+                        src={`${basePath}/images/footer_escudo_atractiva.svg`}
                         alt="Logo de Ciudad de Buenos Aires"
                         height="40"
                       />

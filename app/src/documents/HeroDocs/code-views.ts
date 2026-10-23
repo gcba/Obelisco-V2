@@ -669,8 +669,8 @@ export const HERO_ACCESIBILITY_2 = `<header class="hero">
     <img alt="Festival de música al aire libre en Buenos Aires, con banda tocando en escenario" 
     loading="lazy" decoding="async" data-nimg="fill" src="/images/hero/multimedia-hero.jpg">
   </div>
-</header>
-`;
+  <div class="aside bg-aside-hero-light"></div>
+</header>`;
 
 export const HERO_REDES_SOCIALES = `<header class="hero bg-content-hero-light">
 	<div class="content corner">

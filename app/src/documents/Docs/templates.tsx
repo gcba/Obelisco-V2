@@ -91,7 +91,7 @@ const TemplatesComponents: React.FC = () => {
                   </span>{' '}
                   <div className="card-body">
                     <h3 className="card-title">
-                      <a href={`${basePath}/templates/paginas-de-areas`} className="card-title-link">
+                      <a href={`${basePath}/templates/formularios`} className="card-title-link">
                         Formularios
                       </a>
                     </h3>

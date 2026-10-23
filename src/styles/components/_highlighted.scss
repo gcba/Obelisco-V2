@@ -173,7 +173,7 @@ Destacado vertical
     }
 
     .panel-title {
-      @extend .h5;
+      @extend .h4;
       @extend .ellipsis-2;
     }
   }
@@ -221,7 +221,7 @@ Destacado vertical
 
     .panel-body {
       h2.panel-title {
-        @extend .h5;
+        @extend .h4;
 
         // @extend .ellipsis-2;
       }
@@ -276,7 +276,7 @@ Destacado vertical
 
   .panel-body {
     h2.panel-title {
-      @extend .h5;
+      @extend .h4;
 
       // @extend .ellipsis-2;
     }
@@ -434,7 +434,7 @@ $gradient-text-colors: (
       color: $body-color;
 
       p.panel-title {
-        @extend .h5;
+        @extend .h4;
 
         // @extend .ellipsis-2;
       }

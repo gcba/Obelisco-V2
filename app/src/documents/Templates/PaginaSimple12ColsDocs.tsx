@@ -53,8 +53,12 @@ const PaginaSimple12ColsDocs: React.FC = () => {
                     <Link href={'página de trámites.'}>página de trámites</Link>.
                   </li>
                   <li>
-                    Para detallar el turno de trámites o inscripción a cursos y actividades, recomendamos emplear la plantilla página {' '}
-                    <a href="https://gcba.github.io/Obelisco-V2/templates/pagina-turnos-inscripciones">turnos e inscripciones.</a>.
+                    Para detallar el turno de trámites o inscripción a cursos y actividades, recomendamos emplear la
+                    plantilla página{' '}
+                    <a href="https://gcba.github.io/Obelisco-V2/templates/pagina-turnos-inscripciones">
+                      turnos e inscripciones.
+                    </a>
+                    .
                   </li>
                   <li>
                     Para compartir noticias, recomendamos utilizar la plantilla{' '}

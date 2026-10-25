@@ -122,7 +122,7 @@ const TemplatePaginaNoticiasDocs: React.FC = () => {
     {
       subtitleBold: 'Elementos de párrafo',
       content: (
-        <>          
+        <>
           <p className="text-md">
             Opciones disponibles para redactar, estructurar y dar forma al contenido textual de la noticia:
           </p>
@@ -169,7 +169,7 @@ const TemplatePaginaNoticiasDocs: React.FC = () => {
     {
       subtitleBold: 'Elementos de multimedia',
       content: (
-        <>            
+        <>
           <p className="text-md">
             Opciones disponibles para incorporar recursos audiovisuales que complementan el contenido de la noticia:{' '}
           </p>
@@ -253,28 +253,29 @@ const TemplatePaginaNoticiasDocs: React.FC = () => {
       content: (
         <>
           <p className="text-md">
-            Componente que permite resaltar información puntual dentro de la noticia. 
-            Incluye un título y una bajada contextual, además de un accionable que puede ser un botón o enlace externo. 
+            Componente que permite resaltar información puntual dentro de la noticia. Incluye un título y una bajada
+            contextual, además de un accionable que puede ser un botón o enlace externo.
           </p>
           <ul className="list-informative-bullet">
             <li>Título obligatorio con una extensión máxima sugerida de 70 caracteres.</li>
             <li>Bajada obligatoria con una extensión máxima sugerida de 150 caracteres.</li>
             <li>Accionable se puede seleccionar entre un botón, 2 botones o un enlace externo.</li>
-            <li>El botón o los botones se utilizan en el caso de que se busqué resaltar una acción resultante de la noticia. Para redactar el contenido del botón, chequear la documentación de {' '}
-              <a
-                  href="https://gcba.github.io/Obelisco-V2/components/button"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+            <li>
+              El botón o los botones se utilizan en el caso de que se busqué resaltar una acción resultante de la
+              noticia. Para redactar el contenido del botón, chequear la documentación de{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/components/button" target="_blank" rel="noopener noreferrer">
                 Botones
-              </a>.</li>
-            <li>El enlace externo se usa para enlazar contenido a un sitio web externo por fuera del dominio actual. Para redactar el contenido del enlace, chequear la documentación de {' '} 
-              <a
-                  href="https://gcba.github.io/Obelisco-V2/components/button"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >Enlace
-              </a>.</li>
+              </a>
+              .
+            </li>
+            <li>
+              El enlace externo se usa para enlazar contenido a un sitio web externo por fuera del dominio actual. Para
+              redactar el contenido del enlace, chequear la documentación de{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/components/button" target="_blank" rel="noopener noreferrer">
+                Enlace
+              </a>
+              .
+            </li>
           </ul>
           <Image
             src={`${basePath}/images/templates/noticias/img4.svg`}
@@ -312,7 +313,10 @@ const TemplatePaginaNoticiasDocs: React.FC = () => {
           </div>
           <div className="d-flex gap-2" style={{ marginBottom: '12px' }}>
             <span className="material-symbols-rounded text-success">check</span>
-            <p className="mb-0">En caso de incluir un o dos botones, que sea un llamado a la acción claro y breve, por ejemplo: &quot;<strong>Ir al sitio</strong>&quot;, &quot;<strong>Conocer el servicio</strong>&quot;.</p>
+            <p className="mb-0">
+              En caso de incluir un o dos botones, que sea un llamado a la acción claro y breve, por ejemplo: &quot;
+              <strong>Ir al sitio</strong>&quot;, &quot;<strong>Conocer el servicio</strong>&quot;.
+            </p>
           </div>
           <div className="d-flex gap-2" style={{ marginBottom: '12px' }}>
             <span className="material-symbols-rounded text-success">check</span>
@@ -344,12 +348,15 @@ const TemplatePaginaNoticiasDocs: React.FC = () => {
       title: 'Apartado',
       content: (
         <>
-          <p className="text-md mb-0" >
-            En caso de tener que agregar archivos con información complementaria, se puede incluir de forma opcional el componente Descargable. Se ubica en la columna derecha de la página.
+          <p className="text-md mb-0">
+            En caso de tener que agregar archivos con información complementaria, se puede incluir de forma opcional el
+            componente Descargable. Se ubica en la columna derecha de la página.
           </p>
           <br></br>
-          <p style={{ marginBottom: '32px' }}>  
-            Se pueden adjuntar hasta 2 archivos para descargar en el componente. El nombre del archivo se visualizará como título. En caso de necesitar adjuntar más de 2 archivos, se podrá ingresar una lista de descarga de forma opcional al final de la noticia.
+          <p style={{ marginBottom: '32px' }}>
+            Se pueden adjuntar hasta 2 archivos para descargar en el componente. El nombre del archivo se visualizará
+            como título. En caso de necesitar adjuntar más de 2 archivos, se podrá ingresar una lista de descarga de
+            forma opcional al final de la noticia.
           </p>
         </>
       ),
@@ -383,11 +390,9 @@ const TemplatePaginaNoticiasDocs: React.FC = () => {
             width="800"
             height="295"
             className="img-fluid"
-            style={{ marginTop: '32px'}}
+            style={{ marginTop: '32px' }}
           />
-          <p className="text-xs mt-1">
-            Se pueden agregar hasta 2 archivos para descargar.
-          </p>
+          <p className="text-xs mt-1">Se pueden agregar hasta 2 archivos para descargar.</p>
           <Image
             src={`${basePath}/images/templates/noticias/img6.svg`}
             alt="Ejemplo de noticias"

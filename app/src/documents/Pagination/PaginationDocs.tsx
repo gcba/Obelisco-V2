@@ -256,7 +256,7 @@ const PaginationDocs: React.FC = () => {
       firstTitle: true,
       content: (
         <>
-          <div className="list-informative">
+          <div>
             <p className="text-xl">Cuándo usar</p>
             <ul className="list-informative-bullet">
               <li>
@@ -329,7 +329,7 @@ const PaginationDocs: React.FC = () => {
             height="148"
             className="img-fluid"
           />
-          <div className="list-informative">
+          <div>
             <p className="text-xl fw-semibold" style={{ marginTop: '32px' }}>
               Comportamiento del paginado numerado
             </p>

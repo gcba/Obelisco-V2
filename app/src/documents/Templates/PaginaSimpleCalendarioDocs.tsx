@@ -183,7 +183,7 @@ const PaginaSimpleCalendarioDocs: React.FC = () => {
         </ol>
       </nav>
       <ComponentHeader
-        title="Página simple"
+        title="Página simple - calendario"
         description={[
           `
           Las usamos para transmitir información estática de menor jerarquía, en comparación a una página de área, y con menor cantidad de contenido.

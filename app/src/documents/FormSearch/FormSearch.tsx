@@ -128,7 +128,7 @@ const FormSearchDocs: React.FC = () => {
       content: (
         <>
           <section className="d-flex flex-column  gap-4">
-            <div className="list-informative">
+            <div>
               <p className="text-xl">Cuándo usar</p>
               <ul className="list-informative-bullet">
                 <li>
@@ -141,7 +141,7 @@ const FormSearchDocs: React.FC = () => {
                 </li>
               </ul>
             </div>
-            <div className="list-informative">
+            <div>
               <p className="text-xl">Cuándo no usar</p>
               <ul className="list-informative-bullet">
                 <li>Para consultas complejas que involucran varias palabras clave o una sintaxis específica.</li>

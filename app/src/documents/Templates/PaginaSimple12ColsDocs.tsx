@@ -52,6 +52,18 @@ const PaginaSimple12ColsDocs: React.FC = () => {
                     Para informar sobre la gestión de un trámite, recomendamos usar la plantilla{' '}
                     <Link href={'página de trámites.'}>página de trámites</Link>.
                   </li>
+                  <li>
+                    Para detallar el turno de trámites o inscripción a cursos y actividades, recomendamos emplear la
+                    plantilla página{' '}
+                    <a href="https://gcba.github.io/Obelisco-V2/templates/pagina-turnos-inscripciones">
+                      turnos e inscripciones.
+                    </a>
+                    .
+                  </li>
+                  <li>
+                    Para compartir noticias, recomendamos utilizar la plantilla{' '}
+                    <a href="https://gcba.github.io/Obelisco-V2/templates/pagina-de-noticias">noticias</a>.
+                  </li>
                 </ul>
               </div>
             </div>
@@ -168,6 +180,38 @@ const PaginaSimple12ColsDocs: React.FC = () => {
               className="img-fluid"
             />
           </div>
+        </>
+      ),
+    },
+    {
+      subtitleBold: 'Acceso',
+      content: (
+        <>
+          <h6 className="fw-semibold">Contexto de uso</h6>
+          <p className="text-md">
+            El propósito de la sección es acercar al usuario las principales acciones de la pantalla que se consideren
+            relevantes para interactuar, que pueda acceder a otras áreas o secciones relacionadas con la página. Es
+            importante mencionar que cuantas más opciones haya, más va a demorar la persona usuaria en decidirse por la
+            acción, por lo tanto es primordial realizar una elección clara del contenido de los accesos.
+          </p>
+          <h6 className="fw-semibold">Encabezado</h6>
+          <p className="text-md">
+            En caso de ser necesario, incluir un título descriptivo del grupo de componentes accesos. Cada uno de los
+            accesos, tiene un título obligatorio y descripción opcional breves que orientan a la persona usuaria para
+            acceder a otra sección. Se utilizan en grilla mínima de tres accesos por fila o columna.
+          </p>
+          <p className="text-md">
+            Podés consultar la{' '}
+            <a href="https://gcba.github.io/Obelisco-V2/components/access">documentación de accesos</a> para conocer más
+            sobre el uso y variantes del componente.
+          </p>
+          <Image
+            src={`${basePath}/images/templates/pagina_simple/12-columns-card-hierarchy.svg`}
+            alt="Ejemplo uso de tarjetas"
+            width="800"
+            height="295"
+            className="img-fluid"
+          />
         </>
       ),
     },
@@ -505,7 +549,7 @@ const PaginaSimple12ColsDocs: React.FC = () => {
         </ol>
       </nav>
       <ComponentHeader
-        title="Página simple"
+        title="Página simple - 12 columnas"
         description={[
           `
           Las usamos para transmitir información estática de menor jerarquía, en comparación a una página de área, y con menor cantidad de contenido.

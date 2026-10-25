@@ -46,7 +46,7 @@ const TemplatePaginaNoticiasDocs: React.FC = () => {
                   Etiqueta de categoría{' '}
                 </a>
                 , que identifica el tema o área temática a la que pertenece la noticia. Se utiliza para orientar y
-                facilitar la exploración de contenidos relacionados.
+                facilitar la exploración de contenidos relacionados. Se sugiere incluir hasta 2 etiquetas de categoría.
               </li>{' '}
               <li>Título, texto principal que resume de qué trata la noticia. Extensión máxima: 115 caracteres.</li>
               <li>
@@ -57,7 +57,7 @@ const TemplatePaginaNoticiasDocs: React.FC = () => {
             </ul>
           </div>
           <Image
-            src={`${basePath}/images/templates/noticias/1.svg`}
+            src={`${basePath}/images/templates/noticias/img1.svg`}
             alt="Ejemplo de noticias"
             width="800"
             height="295"
@@ -116,7 +116,13 @@ const TemplatePaginaNoticiasDocs: React.FC = () => {
             Este módulo tiene como objetivo concentrar el contenido principal de la noticia. Permite organizar la
             información y sumar recursos complementarios. Está compuesto por los siguientes elementos:{' '}
           </p>
-          <h6 className="fw-700">Elementos de párrafo</h6>
+        </>
+      ),
+    },
+    {
+      subtitleBold: 'Elementos de párrafo',
+      content: (
+        <>
           <p className="text-md">
             Opciones disponibles para redactar, estructurar y dar forma al contenido textual de la noticia:
           </p>
@@ -150,14 +156,20 @@ const TemplatePaginaNoticiasDocs: React.FC = () => {
             </li>
           </ul>
           <Image
-            src={`${basePath}/images/templates/noticias/2.svg`}
+            src={`${basePath}/images/templates/noticias/img2.svg`}
             alt="Ejemplo de noticias"
             width="800"
             height="295"
             className="img-fluid"
             style={{ marginTop: '32px', marginBottom: '32px' }}
           />
-          <h6>Elementos multimedia</h6>
+        </>
+      ),
+    },
+    {
+      subtitleBold: 'Elementos de multimedia',
+      content: (
+        <>
           <p className="text-md">
             Opciones disponibles para incorporar recursos audiovisuales que complementan el contenido de la noticia:{' '}
           </p>
@@ -184,7 +196,7 @@ const TemplatePaginaNoticiasDocs: React.FC = () => {
             </li>
           </ul>
           <Image
-            src={`${basePath}/images/templates/noticias/3.svg`}
+            src={`${basePath}/images/templates/noticias/img3_1.svg`}
             alt="Ejemplo de noticias"
             width="800"
             height="295"
@@ -192,7 +204,7 @@ const TemplatePaginaNoticiasDocs: React.FC = () => {
             style={{ marginTop: '32px', marginBottom: '32px' }}
           />
           <Image
-            src={`${basePath}/images/templates/noticias/4.svg`}
+            src={`${basePath}/images/templates/noticias/img3.svg`}
             alt="Ejemplo de noticias"
             width="800"
             height="295"
@@ -242,16 +254,31 @@ const TemplatePaginaNoticiasDocs: React.FC = () => {
         <>
           <p className="text-md">
             Componente que permite resaltar información puntual dentro de la noticia. Incluye un título y una bajada
-            contextual, y puede incorporar un enlace en caso de ser necesario.
+            contextual, además de un accionable que puede ser un botón o enlace externo.
           </p>
           <ul className="list-informative-bullet">
-            <li>El enlace de acceso se utiliza para ver más información dentro del mismo sitio.</li>
+            <li>Título obligatorio con una extensión máxima sugerida de 70 caracteres.</li>
+            <li>Bajada obligatoria con una extensión máxima sugerida de 150 caracteres.</li>
+            <li>Accionable se puede seleccionar entre un botón, 2 botones o un enlace externo.</li>
             <li>
-              El enlace externo se usa para enlazar contenido a un sitio web externo por fuera del dominio actual.
+              El botón o los botones se utilizan en el caso de que se busqué resaltar una acción resultante de la
+              noticia. Para redactar el contenido del botón, chequear la documentación de{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/components/button" target="_blank" rel="noopener noreferrer">
+                Botones
+              </a>
+              .
+            </li>
+            <li>
+              El enlace externo se usa para enlazar contenido a un sitio web externo por fuera del dominio actual. Para
+              redactar el contenido del enlace, chequear la documentación de{' '}
+              <a href="https://gcba.github.io/Obelisco-V2/components/button" target="_blank" rel="noopener noreferrer">
+                Enlace
+              </a>
+              .
             </li>
           </ul>
           <Image
-            src={`${basePath}/images/templates/noticias/5.svg`}
+            src={`${basePath}/images/templates/noticias/img4.svg`}
             alt="Ejemplo de noticias"
             width="800"
             height="295"
@@ -287,6 +314,13 @@ const TemplatePaginaNoticiasDocs: React.FC = () => {
           <div className="d-flex gap-2" style={{ marginBottom: '12px' }}>
             <span className="material-symbols-rounded text-success">check</span>
             <p className="mb-0">
+              En caso de incluir un o dos botones, que sea un llamado a la acción claro y breve, por ejemplo: &quot;
+              <strong>Ir al sitio</strong>&quot;, &quot;<strong>Conocer el servicio</strong>&quot;.
+            </p>
+          </div>
+          <div className="d-flex gap-2" style={{ marginBottom: '12px' }}>
+            <span className="material-symbols-rounded text-success">check</span>
+            <p className="mb-0">
               En caso de incluir un enlace, que sea un llamado a la acción claro y breve, por ejemplo: &quot;
               <strong>Ir al formulario</strong>&quot;, &quot;<strong>Conocé más</strong>&quot;, &quot;
               <strong>Accedé al trámite</strong>&quot;.
@@ -314,10 +348,23 @@ const TemplatePaginaNoticiasDocs: React.FC = () => {
       title: 'Apartado',
       content: (
         <>
-          <p className="text-md mb-0" style={{ marginBottom: '32px' }}>
-            Se ubica en la columna derecha de la página y permite incorporar información complementaria a la noticia.
+          <p className="text-md mb-0">
+            En caso de tener que agregar archivos con información complementaria, se puede incluir de forma opcional el
+            componente Descargable. Se ubica en la columna derecha de la página.
           </p>
-          <h6>Documentación adjunta</h6>
+          <br></br>
+          <p style={{ marginBottom: '32px' }}>
+            Se pueden adjuntar hasta 2 archivos para descargar en el componente. El nombre del archivo se visualizará
+            como título. En caso de necesitar adjuntar más de 2 archivos, se podrá ingresar una lista de descarga de
+            forma opcional al final de la noticia.
+          </p>
+        </>
+      ),
+    },
+    {
+      subtitleBold: 'Documentación adjunta',
+      content: (
+        <>
           <p className="text-md">Permite incorporar archivos complementarios a la noticia para su descarga.</p>
           <ul className="list-informative-bullet">
             <li>
@@ -338,17 +385,35 @@ const TemplatePaginaNoticiasDocs: React.FC = () => {
             </li>
           </ul>
           <Image
-            src={`${basePath}/images/templates/noticias/6.svg`}
+            src={`${basePath}/images/templates/noticias/img5.svg`}
             alt="Ejemplo de información institucional"
             width="800"
             height="295"
             className="img-fluid"
-            style={{ marginTop: '32px', marginBottom: '32px' }}
+            style={{ marginTop: '32px' }}
           />
-          <h6>Mapa de ubicación</h6>
+          <p className="text-xs mt-1">Se pueden agregar hasta 2 archivos para descargar.</p>
+          <Image
+            src={`${basePath}/images/templates/noticias/img6.svg`}
+            alt="Ejemplo de noticias"
+            width="800"
+            height="295"
+            className="img-fluid"
+            style={{ marginTop: '32px' }}
+          />
+          <p className="text-xs mt-1">
+            En caso de tener más de 2 archivos para adjuntar, se puede emplear una lista de descarga.
+          </p>
+        </>
+      ),
+    },
+    {
+      subtitleBold: 'Mapa de ubicación',
+      content: (
+        <>
           <p className="text-md">Permite indicar una ubicación física relevante asociada a la noticia. </p>
           <Image
-            src={`${basePath}/images/templates/noticias/7.svg`}
+            src={`${basePath}/images/templates/noticias/img7.svg`}
             alt="Ejemplo de noticias"
             width="800"
             height="295"

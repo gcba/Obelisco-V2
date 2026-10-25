@@ -1172,7 +1172,7 @@ const SECTION_UX = [
     firstTitle: true,
     content: (
       <>
-        <div className="list-informative">
+        <div>
           <p className="text-xl">Cuándo usar</p>
           <ul className="list-informative-bullet">
             <li>Cuando necesites mostrar contenido estructurado en filas y columnas. </li>

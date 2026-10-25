@@ -103,7 +103,7 @@ const ScrollBarDocs: React.FC = () => {
       firstTitle: true,
       content: (
         <>
-          <div className="list-informative">
+          <div>
             <p className="text-xl">Cuándo usar</p>
             <ul className="list-informative-bullet">
               <li>Cuando el contenido de un elemento supera el área visible disponible.</li>

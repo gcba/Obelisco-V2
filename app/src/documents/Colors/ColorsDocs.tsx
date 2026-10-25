@@ -512,7 +512,7 @@ const ColorsDocs: React.FC = () => {
           <p className="mb-4">
             Construimos nuestra paleta en base a diferentes capas que van asignando roles a cada color:
           </p>
-          <div className="list-informative">
+          <div>
             <ul className="list-informative-bullet">
               <li>
                 <span className="fw-semibold">Color base</span>: es el código hexadecimal puro y no se toma aún dentro

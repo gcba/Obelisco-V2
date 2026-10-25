@@ -76,7 +76,7 @@ const BreadcrumbDocs: React.FC = () => {
       firstTitle: true,
       content: (
         <>
-          <div className="list-informative">
+          <div>
             <p className="text-xl">Cuándo usar</p>
             <ul className="list-informative-bullet">
               <li>

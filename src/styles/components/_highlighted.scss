@@ -251,7 +251,7 @@ Destacado vertical
 
     .panel-horizontal {
       .panel-body {
-        h5.panel-title,
+        h2.panel-title,
         .panel-text {
           color: $white;
         }
@@ -277,8 +277,6 @@ Destacado vertical
   .panel-body {
     h2.panel-title {
       @extend .h4;
-
-      // @extend .ellipsis-2;
     }
 
     .accordion.plain {
@@ -323,43 +321,6 @@ Destacado vertical
   }
 }
 
-/* COMPONENTE DEPRECADO - BLOQUE DE TRAMITE */
-.block {
-  outline: $outline-border;
-  border-radius: $border-radius-lg;
-  border: none;
-  background-color: $white;
-
-  .block-body {
-    padding: 1.5rem;
-    @include media-breakpoint-down(md) {
-      padding: 1rem;
-    }
-
-    .block-title {
-      margin-bottom: 0;
-      @extend .headline-lg;
-    }
-
-    .block-text {
-      margin-bottom: 0;
-      margin-top: 0.25rem;
-    }
-
-    .btn {
-      margin-top: 1rem;
-
-      &.btn-block {
-        width: 100%;
-      }
-    }
-
-    .progress {
-      margin-top: 1rem;
-    }
-  }
-}
-/* COMPONENTE DEPRECADO - BLOQUE DE TRAMITE */
 // DESTACADO CONTAINER GRADIENTE
 $gradient-colors: (
   'blue': (
@@ -405,8 +366,6 @@ $gradient-text-colors: (
       .panel-body {
         p.panel-title {
           color: $white;
-
-          // @extend .ellipsis-2;
         }
       }
     }
@@ -435,8 +394,6 @@ $gradient-text-colors: (
 
       p.panel-title {
         @extend .h4;
-
-        // @extend .ellipsis-2;
       }
 
       p.panel-text {
@@ -468,7 +425,7 @@ $gradient-text-colors: (
       overflow: hidden;
 
       .panel-horizontal {
-        // Destacado container con multimedia
+        // Destacado container gradiente con multimedia
         &:has(.panel-img) {
           height: 432px;
           max-height: 432px;
@@ -619,3 +576,41 @@ $gradient-text-colors: (
     }
   }
 }
+
+/* COMPONENTE DEPRECADO - BLOQUE DE TRAMITE */
+.block {
+  outline: $outline-border;
+  border-radius: $border-radius-lg;
+  border: none;
+  background-color: $white;
+
+  .block-body {
+    padding: 1.5rem;
+    @include media-breakpoint-down(md) {
+      padding: 1rem;
+    }
+
+    .block-title {
+      margin-bottom: 0;
+      @extend .headline-lg;
+    }
+
+    .block-text {
+      margin-bottom: 0;
+      margin-top: 0.25rem;
+    }
+
+    .btn {
+      margin-top: 1rem;
+
+      &.btn-block {
+        width: 100%;
+      }
+    }
+
+    .progress {
+      margin-top: 1rem;
+    }
+  }
+}
+/* COMPONENTE DEPRECADO - BLOQUE DE TRAMITE */

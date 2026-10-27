@@ -8,11 +8,13 @@
     font-weight: map-get($styles, font-weight);
   }
 }
+
 @each $i, $size in $heading-sizes-mobile {
   @include media-breakpoint-down(md) {
     .h#{$i},
     h#{$i} {
       font-size: $size;
+      line-height: map-get($heading-line-heights-mobile, $i);
     }
   }
 }

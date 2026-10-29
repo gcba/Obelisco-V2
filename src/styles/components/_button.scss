@@ -16,14 +16,14 @@ $theme-colors: map-merge(
   $theme-colors,
   (
     'link': $blue-900,
-    'tertiary': $cyan-500,
+    'tertiary': $cyan-600,
   )
 );
 
 $theme-color-btn-bg-hover: (
   primary: $blue-950,
   secondary: $blue-900,
-  tertiary: $cyan-600,
+  tertiary: $cyan-700,
   light: $slate-200,
   danger: $red-600,
   success: $green-700,
@@ -304,10 +304,6 @@ $theme-color-btn-bg-hover: (
     &:focus:not(:focus-visible) {
       color: $white;
 
-      // @if $color == 'tertiary' {
-      // 	color: $blue-900;
-      // }
-
       //Estilos para link
       @include btn-specific-color($color, 'link');
 
@@ -325,18 +321,19 @@ $theme-color-btn-bg-hover: (
     background-color: map-get($theme-colors, $color);
 
     @if $color == 'tertiary' {
-      color: $blue-900;
+      color: $white;
 
-      // &:hover {
-      // 	color: $blue-900;
-      // }
+      &:hover,
+      &.hover {
+        color: $white;
+      }
     }
   }
 }
 
 .btn-outline-tertiary {
-  outline: 0.125rem solid $cyan-900;
-  color: $cyan-900;
+  outline: 0.125rem solid $cyan-950;
+  color: $cyan-950;
 }
 
 a.btn {

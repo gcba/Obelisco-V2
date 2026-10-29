@@ -65,8 +65,6 @@ $padding-card-icon-sin-borde: 24px;
   outline: $outline-border;
   width: 100%;
   position: relative;
-
-  // border-radius: 30px;
   border-radius: $border-radius-6xl;
 
   .card-body {
@@ -136,7 +134,6 @@ $padding-card-icon-sin-borde: 24px;
   }
 
   .card-img {
-    // border-radius: $border-radius-lg $border-radius-lg 0 0;
     border-radius: $border-radius-6xl $border-radius-6xl 0 0;
     aspect-ratio: 16 / 9;
     object-fit: cover;
@@ -206,6 +203,7 @@ $padding-card-icon-sin-borde: 24px;
 
     .card-icon {
       @extend .card-img;
+      border-radius: $border-radius-5xl;
     }
 
     .card-body {

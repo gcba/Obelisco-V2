@@ -322,6 +322,7 @@ $theme-color-btn-bg-hover: (
 
     @if $color == 'tertiary' {
       color: $white;
+
       &:hover,
       &.hover {
         color: $white;

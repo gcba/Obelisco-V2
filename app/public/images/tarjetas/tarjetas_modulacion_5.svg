@@ -1,33 +1,48 @@
-<svg width="728" height="457" viewBox="0 0 728 457" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="1" y="1.58398" width="726" height="454" rx="7" fill="#F3F6F9"/>
-<rect x="1" y="1.58398" width="726" height="454" rx="7" stroke="#E6EBF0" stroke-width="2"/>
+<svg width="728" height="456" viewBox="0 0 728 456" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect x="1" y="1" width="726" height="454" rx="7" fill="#EDF4FF"/>
+<rect x="1" y="1" width="726" height="454" rx="7" stroke="#D6E4F6" stroke-width="2"/>
 <g clip-path="url(#clip0_1133_10390)">
-<rect x="256" y="48.584" width="216" height="360" rx="8" fill="white"/>
-<rect x="265" y="127.084" width="178" height="175" rx="7" fill="white"/>
-<rect x="265" y="127.084" width="178" height="175" rx="7" stroke="#E6EBF0" stroke-width="2"/>
-<rect x="276" y="138.084" width="156" height="88" rx="4.59574" fill="#E2F8F5"/>
-<rect x="276.75" y="238.834" width="46.5" height="10.5" rx="1.25" fill="white" stroke="#E6EBF0" stroke-width="1.5"/>
-<rect x="332.75" y="238.834" width="46.5" height="10.5" rx="1.25" fill="white" stroke="#E6EBF0" stroke-width="1.5"/>
-<rect x="276" y="262.084" width="78.9894" height="12" rx="6" fill="#B8C1CC"/>
-<rect x="276" y="279.084" width="156" height="12" rx="6" fill="#D1D8E0"/>
-<rect x="457" y="127.084" width="178" height="175" rx="7" fill="white"/>
-<rect x="457" y="127.084" width="178" height="175" rx="7" stroke="#E6EBF0" stroke-width="2"/>
-<rect x="468" y="138.084" width="156" height="88" rx="4.59574" fill="#E2F8F5"/>
-<rect x="468.75" y="238.834" width="46.5" height="10.5" rx="1.25" fill="white" stroke="#E6EBF0" stroke-width="1.5"/>
-<rect x="468" y="262.084" width="78.9894" height="12" rx="6" fill="#B8C1CC"/>
-<rect x="468" y="279.084" width="156" height="12" rx="6" fill="#D1D8E0"/>
+<rect x="256" y="48" width="216" height="360" rx="8" fill="white"/>
+<path d="M280 128.5H428C436.284 128.5 443 135.216 443 143.5V288.5C443 296.784 436.284 303.5 428 303.5H280C271.716 303.5 265 296.784 265 288.5V143.5C265 135.216 271.716 128.5 280 128.5Z" fill="white"/>
+<path d="M280 128.5H428C436.284 128.5 443 135.216 443 143.5V288.5C443 296.784 436.284 303.5 428 303.5H280C271.716 303.5 265 296.784 265 288.5V143.5C265 135.216 271.716 128.5 280 128.5Z" stroke="#D6E4F6" stroke-width="2"/>
+<path d="M264 143.203C264 134.367 271.163 127.203 280 127.203H428C436.837 127.203 444 134.367 444 143.203V222.607C444 225.146 441.942 227.203 439.404 227.203H268.596C266.058 227.203 264 225.146 264 222.607V143.203Z" fill="#83F6E5"/>
+<use xlink:href="#stroke0_1133_10390" fill="white"/>
+<mask id="stroke1_1133_10390" fill="white">
+<use xlink:href="#stroke0_1133_10390"/>
+</mask>
+<path d="M280 251.5H320C322.209 251.5 324 249.709 324 247.5V243.5C324 241.291 322.209 239.5 320 239.5H280C277.791 239.5 276 241.291 276 243.5V247.5C276 249.709 277.791 251.5 280 251.5Z" stroke-width="3" stroke="#D6E4F6" mask="url(#stroke1_1133_10390)"/>
+<use xlink:href="#stroke2_1133_10390" fill="white"/>
+<mask id="stroke3_1133_10390" fill="white">
+<use xlink:href="#stroke2_1133_10390"/>
+</mask>
+<path d="M336 251.5H376C378.209 251.5 380 249.709 380 247.5V243.5C380 241.291 378.209 239.5 376 239.5H336C333.791 239.5 332 241.291 332 243.5V247.5C332 249.709 333.791 251.5 336 251.5Z" stroke-width="3" stroke="#D6E4F6" mask="url(#stroke3_1133_10390)"/>
+<rect x="276" y="263.5" width="78.9894" height="12" rx="2" fill="#D6E4F6"/>
+<rect x="276" y="280.5" width="156" height="12" rx="2" fill="#D6E4F6"/>
+<path d="M472 128.5H620C628.284 128.5 635 135.216 635 143.5V288.5C635 296.784 628.284 303.5 620 303.5H472C463.716 303.5 457 296.784 457 288.5V143.5C457 135.216 463.716 128.5 472 128.5Z" fill="white"/>
+<path d="M472 128.5H620C628.284 128.5 635 135.216 635 143.5V288.5C635 296.784 628.284 303.5 620 303.5H472C463.716 303.5 457 296.784 457 288.5V143.5C457 135.216 463.716 128.5 472 128.5Z" stroke="#D6E4F6" stroke-width="2"/>
+<path d="M456 143.203C456 134.367 463.163 127.203 472 127.203H607C615.837 127.203 623 134.367 623 143.203V227.203H456V143.203Z" fill="#E2F8F5"/>
+<use xlink:href="#stroke4_1133_10390" fill="white"/>
+<mask id="stroke5_1133_10390" fill="white">
+<use xlink:href="#stroke4_1133_10390"/>
+</mask>
+<path d="M472 251.5H512C514.209 251.5 516 249.709 516 247.5V243.5C516 241.291 514.209 239.5 512 239.5H472C469.791 239.5 468 241.291 468 243.5V247.5C468 249.709 469.791 251.5 472 251.5Z" stroke-width="3" stroke="#D6E4F6" mask="url(#stroke5_1133_10390)"/>
+<rect x="468" y="263.5" width="78.9894" height="12" rx="2" fill="#D6E4F6"/>
+<rect x="468" y="280.5" width="156" height="12" rx="2" fill="#D6E4F6"/>
 <g clip-path="url(#clip1_1133_10390)">
-<rect x="264" y="315.084" width="328" height="16" rx="8" fill="#F3F6F9"/>
-<rect x="264" y="315.084" width="124" height="16" rx="8" fill="#9EAAB8"/>
+<rect x="264" y="316.5" width="246" height="12" rx="6" fill="#EDF4FF"/>
+<rect x="264" y="316.5" width="93" height="12" rx="6" fill="#92A0B1"/>
 </g>
 </g>
-<rect x="254" y="46.584" width="220" height="364" rx="10" stroke="#333333" stroke-width="4"/>
+<rect x="254" y="46" width="220" height="364" rx="10" stroke="#313131" stroke-width="4"/>
 <defs>
 <clipPath id="clip0_1133_10390">
-<rect x="256" y="48.584" width="216" height="360" rx="8" fill="white"/>
+<rect x="256" y="48" width="216" height="360" rx="8" fill="white"/>
 </clipPath>
+<path id="stroke0_1133_10390" d="M276 243.5C276 241.291 277.791 239.5 280 239.5H320C322.209 239.5 324 241.291 324 243.5V247.5C324 249.709 322.209 251.5 320 251.5H280C277.791 251.5 276 249.709 276 247.5V243.5Z"/>
+<path id="stroke2_1133_10390" d="M332 243.5C332 241.291 333.791 239.5 336 239.5H376C378.209 239.5 380 241.291 380 243.5V247.5C380 249.709 378.209 251.5 376 251.5H336C333.791 251.5 332 249.709 332 247.5V243.5Z"/>
+<path id="stroke4_1133_10390" d="M468 243.5C468 241.291 469.791 239.5 472 239.5H512C514.209 239.5 516 241.291 516 243.5V247.5C516 249.709 514.209 251.5 512 251.5H472C469.791 251.5 468 249.709 468 247.5V243.5Z"/>
 <clipPath id="clip1_1133_10390">
-<rect x="264" y="315.084" width="328" height="16" rx="8" fill="white"/>
+<rect x="264" y="316.5" width="246" height="12" rx="6" fill="white"/>
 </clipPath>
 </defs>
 </svg>

@@ -360,12 +360,12 @@ const SECTIONS_DEV = [
       <>
         <CodeBox codeHTML={HEADINGS}>
           <div className="container">
-            <h1>Headings h1 - Archivo, 40px, IL 48px</h1>
-            <h2>Headings h2 - Archivo, 36px, IL 44px</h2>
-            <h3>Headings h3 - Archivo, 32px, IL 44px</h3>
-            <h4>Headings h4 - Archivo, 28px, IL 36px</h4>
-            <h5>Headings h5 - Archivo, 24px, IL 32px</h5>
-            <h6>Headings h6 - Archivo, 20px, IL 28px</h6>
+            <h1>Headings h1 - Archivo, 44px, IL 52px</h1>
+            <h2>Headings h2 - Archivo, 32px, IL 44px</h2>
+            <h3>Headings h3 - Archivo, 28px, IL 36px</h3>
+            <h4>Headings h4 - Archivo, 24px, IL 32px</h4>
+            <h5>Headings h5 - Archivo, 20px, IL 28px</h5>
+            <h6>Headings h6 - Archivo, 18px, IL 28px</h6>
             <p className="text-sm fst-italic mt-4 mb-0 text-body-secondary">* IL: interlineado</p>
           </div>
         </CodeBox>

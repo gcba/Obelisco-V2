@@ -1041,8 +1041,43 @@ const CardDocs: React.FC = () => {
             </div>
             <div className="col">
               <Image
-                src={`${basePath}/images/tarjetas/tarjetas_vertical_agenda.svg`}
+                src={`${basePath}/images/tarjetas/tarjetas_vertical_eventos.svg`}
                 alt="Tarjeta vertical de eventos"
+                width="800"
+                height="200"
+                className="img-fluid"
+              />
+            </div>
+          </div>
+
+          <div className="max-items-2 mt-4" style={{ marginTop: '32px' }}>
+            <div className="col">
+              <p className="text-xl mb-2">Curso</p>
+              <p className="text-md">Se utiliza para informar sobre detalles de curso.</p>
+            </div>
+            <div className="col">
+              <Image
+                src={`${basePath}/images/tarjetas/tarjeta_vertical_cursos.svg`}
+                alt="Tarjeta vertical de cursos"
+                width="800"
+                height="200"
+                className="img-fluid"
+              />
+            </div>
+          </div>
+
+          <div className="max-items-2 mt-4" style={{ marginTop: '32px' }}>
+            <div className="col">
+              <p className="text-xl mb-2">Impacto visual</p>
+              <p className="text-md">
+                Se utiliza para mostrar de forma resumida y con gran impacto en la imagen, diferentes noticias, eventos
+                con breve información en páginas de áreas.
+              </p>
+            </div>
+            <div className="col">
+              <Image
+                src={`${basePath}/images/tarjetas/tarjeta_vertical_impacto_visual.svg`}
+                alt="Tarjeta vertical de Impacto visuals"
                 width="800"
                 height="200"
                 className="img-fluid"
@@ -1059,10 +1094,7 @@ const CardDocs: React.FC = () => {
           <div className="max-items-2" style={{ marginTop: '32px' }}>
             <div className="col">
               <p className="text-xl mb-2">Predeterminada</p>
-              <p className="text-md">
-                Contiene información que no precisa de imágenes descriptivas. Dentro del entorno de Buenos Aires se
-                utiliza, por ejemplo, para agrupar programas o servicios de un área.{' '}
-              </p>
+              <p className="text-md">Contiene información que no precisa de imágenes descriptivas.</p>
             </div>
             <div className="col">
               <Image
@@ -1078,9 +1110,7 @@ const CardDocs: React.FC = () => {
           <div className="max-items-2" style={{ marginTop: '32px' }}>
             <div className="col">
               <p className="text-xl mb-2">Temática</p>
-              <p className="text-md">
-                Se utiliza en la página de inicio de Buenos Aires para redirigir a los principales trámites y servicios.
-              </p>
+              <p className="text-md">Se utiliza para destacar y enlazar a sitios externos del sector o área.</p>
             </div>
             <div className="col">
               <Image
@@ -1101,7 +1131,8 @@ const CardDocs: React.FC = () => {
         <>
           <p className="text-md mb-4">
             Las tarjetas se utilizan en grupo para organizar la navegación y redirección a contenidos relacionados de un
-            mismo sitio web.
+            mismo sitio web. Para orientar a las personas usuarias, se puede agregar de forma optativa un título
+            descriptivo en cada grupo de tarjetas.
           </p>
           <Image
             src={`${basePath}/images/tarjetas/tarjetas_agrupacion_si_usar_1.svg`}
@@ -1127,111 +1158,6 @@ const CardDocs: React.FC = () => {
           <div className="d-flex">
             <span className="material-symbols-rounded text-danger">close</span>
             <p className="mb-0">No combinar la disposición y/o los tipos de tarjetas dentro de un mismo grupo.</p>
-          </div>
-        </>
-      ),
-    },
-    {
-      title: 'Modulación',
-      content: (
-        <>
-          <p className="text-md">
-            Las tarjetas y sus variantes cuentan con un ancho fijo establecido. Dependiendo del tipo y el dispositivo,
-            se modulan de diferentes maneras. En desktop, las tarjetas verticales pueden agruparse hasta un máximo de 3
-            por línea.
-          </p>
-
-          <Image
-            src={`${basePath}/images/tarjetas/tarjetas_modulacion_1.svg`}
-            alt="Tarjetas modulacion ej 1"
-            width="800"
-            height="200"
-            className="img-fluid"
-          />
-
-          <p className="text-md" style={{ marginTop: '32px' }}>
-            En <i>desktop</i>, las tarjetas horizontales de 4 columnas pueden agruparse hasta un máximo de 3 por línea,
-            mientras que las de 6 columnas pueden hasta un máximo de 2 por línea.
-          </p>
-
-          <Image
-            src={`${basePath}/images/tarjetas/tarjetas_modulacion_2.svg`}
-            alt="Tarjetas modulacion ej 2"
-            width="800"
-            height="200"
-            className="img-fluid"
-          />
-
-          <Image
-            src={`${basePath}/images/tarjetas/tarjetas_modulacion_3.svg`}
-            alt="Tarjetas modulacion ej 4"
-            width="800"
-            height="200"
-            className="img-fluid mt-3"
-          />
-
-          <p className="text-md" style={{ marginTop: '32px' }}>
-            En <i>mobile</i>, todas las tarjetas van una debajo de la otra y ocupan el ancho total de la grilla del
-            dispositivo.
-          </p>
-
-          <Image
-            src={`${basePath}/images/tarjetas/tarjetas_modulacion_4.svg`}
-            alt="Tarjetas modulacion ej 4"
-            width="800"
-            height="200"
-            className="img-fluid"
-          />
-
-          <p className="text-md" style={{ marginTop: '32px' }}>
-            En mobile, las tarjetas de noticias forman un carrusel horizontal para facilitar su visualización.
-          </p>
-
-          <Image
-            src={`${basePath}/images/tarjetas/tarjetas_modulacion_5.svg`}
-            alt="Tarjetas modulacion ej 4"
-            width="800"
-            height="200"
-            className="img-fluid"
-          />
-        </>
-      ),
-    },
-    {
-      subtitle: 'Ejemplos de uso',
-      content: (
-        <>
-          <Image
-            src={`${basePath}/images/tarjetas/tarjetas_modulacion_si_usar.svg`}
-            alt="Tarjeta horizontal tematica"
-            width="800"
-            height="200"
-            className="img-fluid"
-          />
-          <div className="d-flex mt-2">
-            <span className="material-symbols-rounded text-success">check</span>
-            <p className="mb-0">
-              Respetar la modulación según la disposición y el tipo de tarjeta, independientemente del espacio
-              disponible en la página.
-            </p>
-          </div>
-
-          <Image
-            src={`${basePath}/images/tarjetas/tarjetas_modulacion_no_usar.svg`}
-            alt="Tarjeta horizontal tematica"
-            width="800"
-            height="200"
-            className="img-fluid"
-            style={{ marginTop: '32px' }}
-          />
-
-          <div className="d-flex mt-2">
-            <span className="material-symbols-rounded text-danger">close</span>
-            <p className="mb-0">
-              No estirar o cambiar la modulación de las tarjetas únicamente por rellenar el espacio en blanco. Cambiar
-              la composición del componente genera rupturas en el contenido, que afectan la legibilidad y la
-              escaneabilidad de la información.
-            </p>
           </div>
         </>
       ),
@@ -1346,7 +1272,7 @@ const CardDocs: React.FC = () => {
 
           <p className="text-md mb-1 fw-semibold">Fecha de publicación:</p>
           <p className="text-md">
-            Debe mostrarse en formato accesible (ej. “12 de septiembre de 2025”) y visible en el nivel superior del
+            Debe mostrarse en formato accesible (ej. “12 de septiembre de 2026”) y visible en el nivel superior del
             contenido.
           </p>
 
@@ -1511,6 +1437,7 @@ const CardDocs: React.FC = () => {
         </>
       ),
     },
+
     {
       title: 'Estados',
     },
@@ -1573,6 +1500,72 @@ const CardDocs: React.FC = () => {
             alt="Estado de tarjeta en foco (focus)"
             width="800"
             height="285"
+            className="img-fluid"
+          />
+        </>
+      ),
+    },
+    {
+      title: 'Modulación',
+      content: (
+        <>
+          <p className="text-md">
+            Las tarjetas y sus variantes cuentan con un ancho fijo establecido. Dependiendo del tipo y el dispositivo,
+            se modulan de diferentes maneras. En desktop, las tarjetas verticales pueden agruparse hasta un máximo de 3
+            por línea.
+          </p>
+
+          <Image
+            src={`${basePath}/images/tarjetas/tarjetas_modulacion_1.svg`}
+            alt="Tarjetas modulacion ej 1"
+            width="800"
+            height="200"
+            className="img-fluid"
+          />
+
+          <p className="text-md" style={{ marginTop: '32px' }}>
+            En <i>desktop</i>, las tarjetas horizontales de 4 columnas pueden agruparse hasta un máximo de 3 por línea,
+            mientras que las de 6 columnas pueden hasta un máximo de 2 por línea.
+          </p>
+
+          <Image
+            src={`${basePath}/images/tarjetas/tarjetas_modulacion_2.svg`}
+            alt="Tarjetas modulacion ej 2"
+            width="800"
+            height="200"
+            className="img-fluid"
+          />
+
+          <Image
+            src={`${basePath}/images/tarjetas/tarjetas_modulacion_3.svg`}
+            alt="Tarjetas modulacion ej 4"
+            width="800"
+            height="200"
+            className="img-fluid mt-3"
+          />
+
+          <p className="text-md" style={{ marginTop: '32px' }}>
+            En <i>mobile</i>, todas las tarjetas van una debajo de la otra y ocupan el ancho total de la grilla del
+            dispositivo.
+          </p>
+
+          <Image
+            src={`${basePath}/images/tarjetas/tarjetas_modulacion_4.svg`}
+            alt="Tarjetas modulacion ej 4"
+            width="800"
+            height="200"
+            className="img-fluid"
+          />
+
+          <p className="text-md" style={{ marginTop: '32px' }}>
+            En mobile, las tarjetas de noticias forman un carrusel horizontal para facilitar su visualización.
+          </p>
+
+          <Image
+            src={`${basePath}/images/tarjetas/tarjetas_modulacion_5.svg`}
+            alt="Tarjetas modulacion ej 4"
+            width="800"
+            height="200"
             className="img-fluid"
           />
         </>

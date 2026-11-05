@@ -36,7 +36,10 @@ const TemplateTurnosInscripciones: React.FC = () => {
                 </a>
                 , que nos indican el recorrido de la persona usuaria hasta la página actual.
               </li>
-              <li>Título del turno o inscripción.</li>
+              <li>
+                Título del turno o inscripción. Extensión máxima: 115 caracteres, si el nombre del servicio es más largo
+                explicar en la bajada.
+              </li>
               <li>Una breve descripción del turno o inscripción.</li>
               <li>La modalidad del turno o incripción identificada con la etiqueta respectiva.</li>
             </ul>
@@ -91,14 +94,8 @@ const TemplateTurnosInscripciones: React.FC = () => {
             <p className="headline-sm mt-3">No usar cuando:</p>
 
             <ul className="list-informative-bullet">
-              <li>
-                Hay que continuar el trámite a través de un llamado telefónico, indicar en el contenido de la pantalla a
-                que número de teléfono y en que horario tiene que llamar la persona usuaria.
-              </li>
-              <li>
-                Se deba chatear con Boti para seguir los pasos de trámite, indicar en el contenido de la pantalla las
-                referencias para que la persona usuaria empiece la conversación.
-              </li>
+              <li>Se debe completar la reserva de turno o la inscripción de forma presencial.</li>
+              <li>Los pasos no se pueden sintetizar en una sola acción virtual.</li>
             </ul>
           </div>
         </>
@@ -489,14 +486,21 @@ const TemplateTurnosInscripciones: React.FC = () => {
                 Cada colapsable puede tener un máximo de 800 caracteres (contando espacios) para su descripción.
               </p>
             </div>
+            <div className="d-flex gap-2" style={{ marginBottom: '12px' }}>
+              <span className="material-symbols-rounded text-success">check</span>
+              <p className="mb-0">
+                En la sección, tener un mínimo de 2 colapsables. Si las preguntas y el texto de las respuestas son
+                breves, se puede reemplazar por un párrafo de texto.{' '}
+              </p>
+            </div>
             <p className="text-xl" style={{ marginBottom: '12px', marginTop: '32px;' }}>
               Malas prácticas
             </p>{' '}
             <div className="d-flex gap-2" style={{ marginBottom: '12px' }}>
               <span className="material-symbols-rounded text-danger">close</span>
               <p className="mb-0">
-                No utilizar un colapsable para el contenido que es necesario que esté visible. No ocultarlo dentro de un
-                colapsable.
+                En la sección, tener un mínimo de 2 colapsables. Si las preguntas y el texto de las respuestas son
+                breves, se puede reemplazar por un párrafo de texto.
               </p>
             </div>
             <div className="d-flex gap-2" style={{ marginBottom: '12px' }}>
@@ -554,8 +558,10 @@ const TemplateTurnosInscripciones: React.FC = () => {
         <>
           <div className="d-flex flex-column gap-2 mb-3 mt-2">
             <p className="text-md">
-              Estos títulos son independientes a los componentes dentro del template y sirven para dividir e identificar
-              cada una de las secciones y su contenido. Utilizan la etiqueta H2.
+              Los títulos son independientes a los componentes dentro del template y sirven para dividir e identificar
+              cada una de las secciones y su contenido. Pueden ir de &quot;Encabezado 2&quot; a &quot;Encabezado
+              6&quot;, utilizados para organizar y jerarquizar el contenido en secciones, especialmente en textos
+              extensos.
             </p>
           </div>
         </>

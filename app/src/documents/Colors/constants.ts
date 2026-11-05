@@ -158,8 +158,8 @@ export const PRINCIPALS_COLORS: ColorTableArray[] = [
     use: 'Se utiliza en acciones de menor importancia que las primarias y genera jerarquía dentro de la interfaz.',
   },
   {
-    base: '$cyan/500',
-    hex: '#009688',
+    base: '$cyan/600',
+    hex: '#007B6F',
     variable: '$tertiary',
     use: 'Añade un tercer nivel de jerarquía dentro de la interfaz y se utiliza en acciones complementarias o repetitivas.',
   },
@@ -217,7 +217,7 @@ export const TEXT_COLORS: ColorTableArray[] = [
   },
   {
     base: '$cyan/950',
-    hex: '#000d0a',
+    hex: '#000D0A',
     variable: '$text-tertiary',
     use: 'Se utiliza en el texto del botón terciario en la variante outlined.',
   },
@@ -461,14 +461,14 @@ export const BUTTON_COLORS: ColorTableArray[] = [
     use: 'Es el color de fondo del botón terciario.',
   },
   {
-    base: '$cyan/600',
-    hex: '#007B6F',
+    base: '$cyan/700',
+    hex: '#006157',
     variable: '$tertiary/bg-hover',
     use: 'Es el color de fondo del botón terciario en el estado hover.',
   },
   {
-    base: '$cyan/900',
-    hex: '#00241F',
+    base: '$cyan/950',
+    hex: '#000D0A',
     variable: '$tertiary/border-outlined',
     use: 'Es el color del borde del botón terciario en su variante outlined.',
   },

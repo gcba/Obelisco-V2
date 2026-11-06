@@ -24,8 +24,9 @@ const ReleasesComponents: React.FC = () => {
       content: (
         <ul className="docs-list">
           <p>La Versión 1.19.1 contiene lo siguiente: </p>
-          <li>Se modifican las variables que definen los tamaños de los encabezados para desktop y mobile. 
-            Este cambio impacta automáticamente en algunos componentes de la librería, como <code>Destacados</code>
+          <li>
+            Se modifican las variables que definen los tamaños de los encabezados para desktop y mobile. Este cambio
+            impacta automáticamente en algunos componentes de la librería, como <code>Destacados</code>
           </li>
           <li>Se modifica el borde radius del componente etiquetas (fix)</li>
           <li>Se modifica el color del botón terciario.</li>

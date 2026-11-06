@@ -19,6 +19,20 @@ const ReleasesComponents: React.FC = () => {
   const versionPages = { text: ` ${version}`, url: 'https://github.com/gcba/Obelisco-V2/releases/latest', id: 1 };
   const sections = [
     {
+      title: 'Versión 1.19.1',
+      date: '06/10/2026',
+      content: (
+        <ul className="docs-list">
+          <p>La Versión 1.19.1 contiene lo siguiente: </p>
+          <li>Se modifican las variables que definen los tamaños de los encabezados para desktop y mobile. 
+            Este cambio impacta automáticamente en algunos componentes de la librería, como <code>Destacados</code>
+          </li>
+          <li>Se modifica el borde radius del componente etiquetas (fix)</li>
+          <li>Se modifica el color del botón terciario.</li>
+        </ul>
+      ),
+    },
+    {
       title: 'Versión 1.19.0',
       date: '17/09/2026',
       content: (

@@ -475,15 +475,15 @@ const TemplateTurnosInscripciones: React.FC = () => {
             <div className="d-flex gap-2" style={{ marginBottom: '12px' }}>
               <span className="material-symbols-rounded text-success">check</span>
               <p className="mb-0">
-                Mantener títulos breves y claros. El encabezado es lo primero que capta la atención de la mayoría de las
-                personas usuarias. Es fundamental que el contenido del colapsable se exprese de manera clara para que
-                las personas usuarias puedan decidir si desean expandirlo o no.
+                Mantener títulos breves y claros, es lo primero que capta la atención de la mayoría de las personas
+                usuarias. Es fundamental que el contenido del colapsable se exprese de manera clara para que las
+                personas usuarias puedan decidir si desean expandirlo o no.
               </p>
             </div>
             <div className="d-flex gap-2" style={{ marginBottom: '12px' }}>
               <span className="material-symbols-rounded text-success">check</span>
               <p className="mb-0">
-                Cada colapsable puede tener un máximo de 800 caracteres (contando espacios) para su descripción.
+                Cada colapsable puede tener un máximo de 800 caracteres (contando espacios) para su descripción.{' '}
               </p>
             </div>
             <div className="d-flex gap-2" style={{ marginBottom: '12px' }}>
@@ -499,15 +499,15 @@ const TemplateTurnosInscripciones: React.FC = () => {
             <div className="d-flex gap-2" style={{ marginBottom: '12px' }}>
               <span className="material-symbols-rounded text-danger">close</span>
               <p className="mb-0">
-                En la sección, tener un mínimo de 2 colapsables. Si las preguntas y el texto de las respuestas son
-                breves, se puede reemplazar por un párrafo de texto.
+                No utilizar un colapsable para el contenido que es necesario que esté visible. No ocultarlo dentro de un
+                colapsable.
               </p>
             </div>
             <div className="d-flex gap-2" style={{ marginBottom: '12px' }}>
               <span className="material-symbols-rounded text-danger">close</span>
               <p className="mb-0">
-                No utilizar más de 5 colapsables para sumar información. En todo caso, lo recomendable es buscar otros
-                componentes que se adapten mejor al contenido o hacer bajadas sencillas de título y texto.
+                No utilizar más de 6 colapsables para sumar información. En todo caso, lo recomendable es buscar otros
+                componentes que se adapten mejor al contenido o hacer bajadas sencillas de título y texto.{' '}
               </p>
             </div>
             <div className="d-flex gap-2" style={{ marginBottom: '12px' }}>
@@ -553,7 +553,7 @@ const TemplateTurnosInscripciones: React.FC = () => {
       ),
     },
     {
-      subtitle: 'Título',
+      subtitle: 'Títulos y subtítulos',
       content: (
         <>
           <div className="d-flex flex-column gap-2 mb-3 mt-2">

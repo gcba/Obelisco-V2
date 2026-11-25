@@ -87,6 +87,23 @@
   @extend .max-items-3;
 }
 
+.static-content-items-3 {
+  @extend .max-items-3;
+}
+
+.static-content-items-2 {
+  @extend .max-items-2;
+
+  // los col que tengan un div.static-content.card.unbordered de hijo
+  .col:has(div.static-content) {
+    max-width: 50%;
+
+    @media (width <= 768px) {
+      max-width: 100%;
+    }
+  }
+}
+
 .card-items-2,
 .card-items-3 {
   .col {

@@ -516,6 +516,11 @@ pre {
   }
 }
 
+// Contenedor para contenido estatico
+.box-sizing-static-content {
+  zoom: 0.8;
+}
+
 //Contenedores para barra de desplazamiento
 .horizontal-example {
   min-width: 1200px;

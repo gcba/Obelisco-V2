@@ -45,7 +45,7 @@ $system-content-colors: (
 @mixin alert-icon($type) {
   &::before {
     mask: map-get($alert-icons, $type) no-repeat center;
-    /*color de los íconos de alertas*/
+    /* color de los íconos de alertas */
     background-color: map-get($theme-colors, $type);
   }
 }

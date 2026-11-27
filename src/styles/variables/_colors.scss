@@ -169,7 +169,16 @@ $theme-colors: (
   'dark': $dark,
 );
 
-$semantic-colors-light-bg: (
+// mapa/array Theme-color alertas de contexto
+$theme-colors-icono-alertas-de-contexto: (
+  'success': $green-600,
+  'tertiary': $tertiary,
+  'info': $blue-800,
+  'warning': $orange-400,
+  'danger': $red-600,
+);
+
+$alerts-semantic-colors-light-bg: (
   'success': $green-50,
   'danger': $red-50,
   'warning': $orange-50,

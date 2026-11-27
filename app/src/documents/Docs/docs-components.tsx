@@ -449,6 +449,52 @@ const sections = [
     ),
   },
   {
+    title: 'Contenido estático',
+    content: (
+      <>
+        <p className="text-md my-4">
+          <strong>Versión 1.20.0 ⬇️</strong>
+        </p>
+        <p className="text-md">El componente debe llevar obligatoriamente las clases:</p>
+        <ul className="docs-list">
+          <li>
+            <code>.static-content</code>
+          </li>
+          <li>
+            <code> .card</code>
+          </li>
+          <li>
+            <code> .unbordered</code>
+          </li>
+        </ul>
+
+        <p>
+          Estas clases son adicionales, y van en el mismo <code> div </code> que las anteriores. Para agregarle fondo
+          claro, o centrar el contenido:
+        </p>
+        <ul className="docs-list">
+          <li>
+            Para agregar fondo claro:
+            <code> .bg-light</code>
+          </li>
+          <li>
+            Para centrar el contenido: <code> .align-center</code>
+          </li>
+        </ul>
+
+        <p className="text-md">El componente cuenta con 2 modos de disposición:</p>
+        <ul className="docs-list">
+          <li>
+            Para disposición en 2 columnas: <code> .static-content-items-2</code>
+          </li>
+          <li>
+            Para disposición en 3 columnas: <code> .static-content-items-3</code>
+          </li>
+        </ul>
+      </>
+    ),
+  },
+  {
     title: 'Desplegables de navegación y selección',
     content: (
       <>

@@ -962,7 +962,7 @@ const FormTextDocs: React.FC = () => {
             navegación por teclado o lectores por voz.
           </p>
           <span className="badge badge-s-default">TAB</span>
-          <span className="badge badge-s-default">ENTER</span>
+          <span className="badge badge-s-default">Enter</span>
           <p className="text-md">
             Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Además, con
             el <i>enter</i>, puede accionar los elementos sobre los que esté posicionada como botones, enlaces, entre

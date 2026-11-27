@@ -490,7 +490,7 @@ const FormCheckDocs = () => {
           <div className="flex flex-column gap-3">
             <div>
               <span className="badge badge-s-default">TAB</span>
-              <span className="badge badge-s-default">ENTER</span>
+              <span className="badge badge-s-default">Enter</span>
             </div>
             <p>
               Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Además,

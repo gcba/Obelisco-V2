@@ -260,11 +260,11 @@ Destacado vertical
   }
 }
 
-// ESTILOS PARA PANEL LATERAL
+// ESTILOS PARA PANEL LATERAL. DESTACADO LATERAL
 .panel-lateral {
   @include panel-content(column, xl);
   padding: 2rem 1.5rem;
-  border-radius: 0.5rem;
+  border-radius: $border-radius-6xl;
 
   &:not(.bg-light) {
     outline: $outline-border;

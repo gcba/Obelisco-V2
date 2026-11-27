@@ -1552,8 +1552,8 @@ const ACCESSIBILITY = [
           El componente de tabla está construido para ser reconocido por herramientas de asistencia como la navegación
           por teclado o lectores por voz.
         </p>
-        <span className="badge badge-s-default ms-1">TAB</span>
-        <span className="badge badge-s-default">ENTER</span>
+        <span className="badge badge-s-default ms-1">Tab</span>
+        <span className="badge badge-s-default">Enter</span>
         <p className="text-md mb-4">
           Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Además, con el{' '}
           <i>enter</i>, puede accionar los elementos sobre el item en el que la persona está posicionada.
@@ -1659,7 +1659,7 @@ const ACCESSIBILITY = [
           target="_blank"
           rel="noopener noreferrer"
         >
-          1.4.12 Text Spacing (Level AA)
+          Success Criterion 1.4.12 Text Spacing (Level AA)
         </a>
         <p>
           No se produce pérdida de contenido ni funcionalidad al configurar todo lo siguiente y no cambiar ninguna otra

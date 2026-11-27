@@ -1,0 +1,24 @@
+// Por defecto, sin clases extras todo se ve alineado a la izquierda/start. Y sin fondo
+
+div.static-content {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 32px 24px;
+
+  &.align-center {
+    text-align: center;
+    align-items: center;
+
+    .card-icon {
+      text-align: center;
+    }
+  }
+
+  .card-icon {
+    background-color: transparent;
+    margin: 0;
+    text-align: start;
+  }
+}

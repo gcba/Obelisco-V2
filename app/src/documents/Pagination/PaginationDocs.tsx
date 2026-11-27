@@ -572,7 +572,7 @@ const PaginationDocs: React.FC = () => {
             por lectores de pantalla, comunicando sus diferentes estados de forma clara.
           </p>
           <span className="badge badge-s-default">TAB</span>
-          <span className="badge badge-s-default">ENTER</span>
+          <span className="badge badge-s-default">Enter</span>
           <p className="text-md mt-2 mb-4">
             Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Además, con
             el <i>enter</i>, puede accionar los elementos sobre el item en el que la persona está posicionada.

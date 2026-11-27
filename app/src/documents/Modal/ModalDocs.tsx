@@ -355,11 +355,11 @@ const ModalDocs: React.FC = () => {
             El componente de modal está construido para ser accesible mediante navegación por teclado y reconocible por
             lectores de pantalla, comunicando su estado de forma clara.
           </p>
-          <span className="badge badge-s-default ms-1">TAB</span>
+          <span className="badge badge-s-default ms-1">Tab</span>
           <span className="badge badge-s-default">SHIFT + TAB</span>
-          <span className="badge badge-s-default">ENTER</span>
-          <span className="badge badge-s-default">SPACE</span>
-          <span className="badge badge-s-default">SCAPE</span>
+          <span className="badge badge-s-default">Enter</span>
+          <span className="badge badge-s-default">Space</span>
+          <span className="badge badge-s-default">Scape</span>
           <ul className="list-informative-bullet my-4">
             <li>
               Tab / Shift + Tab

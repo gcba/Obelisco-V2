@@ -909,10 +909,10 @@ const SECTION_ACCESSIBILITY = [
           El componente de desplegable de selección está construido para ser accesible mediante navegación por teclado y
           reconocible por lectores de pantalla, comunicando su estado de forma clara.
         </p>
-        <span className="badge badge-s-default ms-1">TAB</span>
-        <span className="badge badge-s-default">ENTER</span>
-        <span className="badge badge-s-default">SPACE</span>
-        <span className="badge badge-s-default">SCAPE</span>
+        <span className="badge badge-s-default ms-1">Tab</span>
+        <span className="badge badge-s-default">Enter</span>
+        <span className="badge badge-s-default">Space</span>
+        <span className="badge badge-s-default">Scape</span>
         <p className="text-md my-4">
           Utilizando el <i>tab</i> la persona usuaria puede llegar hasta el campo de selección. Con la{' '}
           <i>barra espaciadora</i> (space), las <i>flechas</i> para arriba o abajo puede abrir el desplegable donde

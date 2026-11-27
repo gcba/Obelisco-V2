@@ -182,8 +182,8 @@ export default function FormSelect() {
           <div className="flex flex-column gap-3">
             <div>
               <span className="badge badge-s-default">TAB</span>
-              <span className="badge badge-s-default">ENTER</span>
-              <span className="badge badge-s-default">SPACE</span>
+              <span className="badge badge-s-default">Enter</span>
+              <span className="badge badge-s-default">Space</span>
             </div>
             <p>
               Utilizando el <i>tab</i> la persona usuaria puede llegar hasta el campo de selección. Con la{' '}

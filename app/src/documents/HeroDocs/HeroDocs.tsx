@@ -1102,8 +1102,8 @@ const HeroHeaderDocs: React.FC = () => {
             El componente Cabecera de página está construido para ser accesible mediante navegación por teclado y
             reconocible por lectores de pantalla.{' '}
           </p>
-          <span className="badge badge-s-default ms-1">TAB</span>
-          <span className="badge badge-s-default">ENTER</span>
+          <span className="badge badge-s-default ms-1">Tab</span>
+          <span className="badge badge-s-default">Enter</span>
           <p className="text-md">
             Utilizando el tab la persona usuaria puede navegar a través de elementos de la interfaz. Acciones como
             accionar botones o abrir desplegables se pueden realizar con las teclas Enter o space, y controlar con las

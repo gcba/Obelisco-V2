@@ -259,7 +259,7 @@ const BreadcrumbDocs: React.FC = () => {
             navegación por teclado o lectores por voz.
           </p>
           <span className="badge badge-s-default">TAB</span>
-          <span className="badge badge-s-default">ENTER</span>
+          <span className="badge badge-s-default">Enter</span>
 
           <p className="text-md mt-4">
             Utilizando el <i>tab</i> la persona usuaria puede navegar a través de elementos de la interfaz. Además, con
